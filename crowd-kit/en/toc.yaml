@@ -1,0 +1,8 @@
+title: Crowd-Kit Documentation
+href: README.md
+items:
+  - name: Reference
+    include:
+      path: reference/toc.yaml
+      mode: link
+base: en
