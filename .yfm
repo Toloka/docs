@@ -1,7 +1,7 @@
 langs: [en]
 
 docs-viewer:
-  project: toloka
+  project-name: toloka
   langs: [en]
 
 allowHTML: true
