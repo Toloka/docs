@@ -1,0 +1,8 @@
+langs: [en]
+
+docs-viewer:
+  project: toloka
+  langs: [en]
+
+allowHTML: true
+breaks: false
