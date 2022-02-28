@@ -2,6 +2,7 @@ title: Crowd-Kit Documentation
 href: index.md
 items:
   - name: Reference
+    expanded: true
     include:
       path: reference/toc.yaml
       mode: link

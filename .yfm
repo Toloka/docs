@@ -1,8 +1,20 @@
 langs: [en]
+allowHTML: true
+breaks: false
 
 docs-viewer:
   project-name: toloka
   langs: [en]
+  favicon-src: https://avatars.mds.yandex.net/get-lpc/1520633/6d7eb5a1-a693-4f8a-bb21-e6f5daabc3d3/orig
+  github-url-prefix: https://github.com/Toloka/docs/blob/main/
+  no-index: true
 
-allowHTML: true
-breaks: false
+  show-toc-header: true
+  themes: [light]
+  logo-options:
+    title: Toloka
+    src: https://avatars.mds.yandex.net/get-lpc/1364677/8e11e5ce-d6c2-4779-aed2-0ebeb41002dd/orig
+    src-mobile: https://avatars.mds.yandex.net/get-lpc/1364677/8e11e5ce-d6c2-4779-aed2-0ebeb41002dd/orig
+    src-preview: https://storage.yandexcloud.net/docs-external/toloka/assets/orig.svg
+    img-has:
+      offset: true
