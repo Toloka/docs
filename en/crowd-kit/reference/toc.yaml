@@ -1,6 +1,7 @@
 title: Crowd-Kit Reference
 items:
 - name: Aggregations
+  expanded: true
   items:
   - name: BradleyTerry
     items:
