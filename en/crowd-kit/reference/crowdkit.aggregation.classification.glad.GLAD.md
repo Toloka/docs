@@ -25,7 +25,7 @@ an inverse task's difficulty, $z_j$ be a latent variable representing the true t
 be a performer's response that we observe. The relationships between this variables and parameters according
 to GLAD are represented by the following latent label model:
 
-![GLAD latent label model](http://tlk.s3.yandex.net/crowd-kit/docs/glad_llm.png)
+![GLAD latent label model](https://tlk.s3.yandex.net/crowd-kit/docs/glad_llm.png)
 
 
 The prior probability of $z_j$ being equal to $c$ is

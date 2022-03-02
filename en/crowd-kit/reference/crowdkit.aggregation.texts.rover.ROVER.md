@@ -15,7 +15,7 @@ Recognizer Output Voting Error Reduction (ROVER).
 
 This method uses dynamic programming to align sequences. Next, aligned sequences are used
 to construct the Word Transition Network (WTN):
-![ROVER WTN scheme](http://tlk.s3.yandex.net/crowd-kit/docs/rover.png)
+![ROVER WTN scheme](https://tlk.s3.yandex.net/crowd-kit/docs/rover.png)
 Finally, the aggregated sequence is the result of majority voting on each edge of the WTN.
 
 J. G. Fiscus,

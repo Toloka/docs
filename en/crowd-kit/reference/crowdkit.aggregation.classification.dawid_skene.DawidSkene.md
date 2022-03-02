@@ -19,7 +19,7 @@ $p$ be a vector of prior classes probabilities, $z_j$ be a true task's label, an
 answer for the task $j$. The relationships between these parameters are represented by the following latent
 label model.
 
-![Dawid-Skene latent label model](http://tlk.s3.yandex.net/crowd-kit/docs/ds_llm.png)
+![Dawid-Skene latent label model](https://tlk.s3.yandex.net/crowd-kit/docs/ds_llm.png)
 
 Here the prior true label probability is
 $$
