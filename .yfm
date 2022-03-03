@@ -10,7 +10,6 @@ docs-viewer:
   no-index: true
 
   show-toc-header: true
-  themes: [light]
   logo-options:
     title: Toloka
     url: /crowd-kit
