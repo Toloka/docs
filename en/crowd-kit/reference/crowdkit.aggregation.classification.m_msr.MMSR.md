@@ -1,4 +1,5 @@
 # MMSR
+
 `crowdkit.aggregation.classification.m_msr.MMSR`
 
 ```python
@@ -21,7 +22,6 @@ MMSR(
 
 Matrix Mean-Subsequence-Reduced Algorithm.
 
-
 The M-MSR assumes that performers have different level of expertise and associated
 with a vector of "skills" $\boldsymbol{s}$ which entries $s_i$ show the probability
 of the performer $i$ to answer correctly to the given task. Having that, we can show that
@@ -33,7 +33,6 @@ where $M$ is the total number of classes, $\widetilde{C}$ is a covariation matri
 performers, and $\boldsymbol{1}\boldsymbol{1}^T$ is the all-ones matrix which has the same
 size as $\widetilde{C}$.
 
-
 So, the problem of recovering the skills vector $\boldsymbol{s}$ becomes equivalent to the
 rank-one matrix completion problem. The M-MSR algorithm is an iterative algorithm for *rubust*
 rank-one matrix completion, so its result is an estimator of the vector $\boldsymbol{s}$.
@@ -44,7 +43,7 @@ Matrix Mean-Subsequence-Reduced Algorithm. Qianqian Ma and Alex Olshevsky.
 Adversarial Crowdsourcing Through Robust Rank-One Matrix Completion.
 *34th Conference on Neural Information Processing Systems (NeurIPS 2020)*
 
-https://arxiv.org/abs/2010.12181
+<https://arxiv.org/abs/2010.12181>
 
 ## Parameters Description
 
@@ -66,6 +65,7 @@ df, gt = load_dataset('relevance-2')
 mmsr = MMSR()
 result = mmsr.fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

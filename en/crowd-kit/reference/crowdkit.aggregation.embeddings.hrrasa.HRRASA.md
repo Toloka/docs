@@ -1,4 +1,5 @@
 # HRRASA
+
 `crowdkit.aggregation.embeddings.hrrasa.HRRASA`
 
 ```python
@@ -15,7 +16,6 @@ HRRASA(
 ```
 
 Hybrid Reliability and Representation Aware Sequence Aggregation.
-
 
 At the first step, the HRRASA estimates *local* performers reliabilities that represent how good is a
 performer's answer to *one particular task*. The local reliability of the performer $k$ on the task $i$ is
@@ -40,6 +40,7 @@ $$
 The HRRASA also estimates *global* performers' reliabilities $\beta$ that are initialized by ones.
 
 Next, the algorithm iteratively performs two steps:
+
 1. For each task, estimate the aggregated embedding: $\hat{e}_i = \frac{\sum_k \gamma_i^k
 \beta_k e_i^k}{\sum_k \gamma_i^k \beta_k}$
 2. For each performer, estimate the global reliability: $\beta_k = \frac{\chi^2_{(\alpha/2,
@@ -57,7 +58,7 @@ Jiyi Li. Crowdsourced Text Sequence Aggregation based on Hybrid Reliability and 
 *Proceedings of the 43rd International ACM SIGIR Conference on Research and Development
 in Information Retrieval (SIGIR ’20)*, July 25–30, 2020, Virtual Event, China. ACM, New York, NY, USA,
 
-https://doi.org/10.1145/3397271.3401239
+<https://doi.org/10.1145/3397271.3401239>
 
 ## Parameters Description
 
@@ -85,6 +86,7 @@ df = pd.DataFrame(
 )
 result = HRRASA().fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

@@ -1,4 +1,5 @@
 # predict
+
 `crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.predict`
 
 ```python

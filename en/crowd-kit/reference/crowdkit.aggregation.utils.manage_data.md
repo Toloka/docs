@@ -1,4 +1,5 @@
 # manage_data
+
 `crowdkit.aggregation.utils.manage_data`
 
 ```python

@@ -1,4 +1,5 @@
 # DawidSkene
+
 `crowdkit.aggregation.classification.dawid_skene.DawidSkene`
 
 ```python
@@ -10,7 +11,6 @@ DawidSkene(
 ```
 
 Dawid-Skene aggregation model.
-
 
 Probabilistic model that parametrizes performers' level of expertise through confusion matrices.
 
@@ -36,7 +36,7 @@ Parameters $p$ and $e^w$ and latent variables $z$ are optimized through the Expe
 A. Philip Dawid and Allan M. Skene. Maximum Likelihood Estimation of Observer Error-Rates Using the EM Algorithm.
 *Journal of the Royal Statistical Society. Series C (Applied Statistics), Vol. 28*, 1 (1979), 20–28.
 
-https://doi.org/10.2307/2346806
+<https://doi.org/10.2307/2346806>
 
 ## Parameters Description
 
@@ -57,6 +57,7 @@ df, gt = load_dataset('relevance-2')
 ds = DawidSkene(100)
 result = ds.fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

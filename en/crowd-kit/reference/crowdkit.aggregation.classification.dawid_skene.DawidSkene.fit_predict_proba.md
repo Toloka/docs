@@ -1,4 +1,5 @@
 # fit_predict_proba
+
 `crowdkit.aggregation.classification.dawid_skene.DawidSkene.fit_predict_proba`
 
 ```python

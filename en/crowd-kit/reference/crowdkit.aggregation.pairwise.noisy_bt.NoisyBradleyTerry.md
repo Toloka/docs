@@ -1,4 +1,5 @@
 # NoisyBradleyTerry
+
 `crowdkit.aggregation.pairwise.noisy_bt.NoisyBradleyTerry`
 
 ```python
@@ -11,8 +12,6 @@ NoisyBradleyTerry(
 ```
 
 A modification of Bradley-Terry with parameters for performers' skills and
-
-
 their biases.
 
 ## Parameters Description
@@ -21,7 +20,8 @@ their biases.
 | :----------| :----| :-----------|
 `scores_`|**Series**|<p>&#x27;Labels&#x27; scores. A pandas.Series index by labels and holding corresponding label&#x27;s scores</p>
 `skills_`|**Series**|<p>Performers&#x27; skills. A pandas.Series index by performers and holding corresponding performer&#x27;s skill</p>
-`biases_`|**Series**|<p>Predicted biases for each performer. Indicates the probability of a performer to choose the left item.. A series of performers&#x27; biases indexed by performers</p>
+`biases_`|**Series**|<p>Predicted biases for each performer. Indicates the probability of a performer to choose the left item. A series of performers&#x27; biases indexed by performers</p>
+
 ## Methods summary
 
 | Method | Description |

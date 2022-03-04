@@ -1,4 +1,5 @@
 # fit
+
 `crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage.fit`
 
 ```python

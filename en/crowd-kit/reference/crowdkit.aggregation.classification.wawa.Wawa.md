@@ -1,4 +1,5 @@
 # Wawa
+
 `crowdkit.aggregation.classification.wawa.Wawa`
 
 ```python
@@ -7,11 +8,11 @@ Wawa(self)
 
 Worker Agreement with Aggregate.
 
-
 This algorithm does three steps:
+
 1. Calculate the majority vote label
 2. Estimate performers' skills as a fraction of responses that are equal to the majority vote
-3. Calculate the weigthed majority vote based on skills from the previous step
+3. Calculate the weighted majority vote based on skills from the previous step
 
 ## Parameters Description
 
@@ -29,6 +30,7 @@ from crowdkit.datasets import load_dataset
 df, gt = load_dataset('relevance-2')
 result = Wawa().fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

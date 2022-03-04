@@ -1,4 +1,5 @@
 # fit_predict_proba
+
 `crowdkit.aggregation.classification.glad.GLAD.fit_predict_proba`
 
 ```python

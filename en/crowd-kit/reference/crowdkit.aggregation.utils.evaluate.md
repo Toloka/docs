@@ -1,4 +1,5 @@
 # evaluate
+
 `crowdkit.aggregation.utils.evaluate`
 
 ```python
@@ -8,4 +9,3 @@ evaluate(
     evaluate_func: Callable[[Series], int] = evaluate_in
 )
 ```
-

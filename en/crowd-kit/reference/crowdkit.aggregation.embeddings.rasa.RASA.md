@@ -1,4 +1,5 @@
 # RASA
+
 `crowdkit.aggregation.embeddings.rasa.RASA`
 
 ```python
@@ -12,10 +13,10 @@ RASA(
 
 Reliability Aware Sequence Aggregation.
 
-
 RASA estimates *global* performers' reliabilities $\beta$ that are initialized by ones.
 
 Next, the algorithm iteratively performs two steps:
+
 1. For each task, estimate the aggregated embedding: $\hat{e}_i = \frac{\sum_k
 \beta_k e_i^k}{\sum_k \beta_k}$
 2. For each performer, estimate the global reliability: $\beta_k = \frac{\chi^2_{(\alpha/2,
@@ -29,6 +30,7 @@ Jiyi Li.
 A Dataset of Crowdsourced Word Sequences: Collections and Answer Aggregation for Ground Truth Creation.
 *Proceedings of the First Workshop on Aggregating and Analysing Crowdsourced Annotations for NLP*,
 pages 24–28 Hong Kong, China, November 3, 2019.
+
 <http://doi.org/10.18653/v1/D19-5904>
 
 ## Parameters Description
@@ -55,6 +57,7 @@ df = pd.DataFrame(
 )
 result = RASA().fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

@@ -1,4 +1,5 @@
 # fit
+
 `crowdkit.aggregation.base.BaseEmbeddingsAggregator.fit`
 
 ```python

@@ -1,4 +1,5 @@
 # fit_predict_proba
+
 `crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.fit_predict_proba`
 
 ```python

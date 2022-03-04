@@ -1,4 +1,5 @@
 # fit
+
 `crowdkit.aggregation.embeddings.hrrasa.HRRASA.fit`
 
 ```python

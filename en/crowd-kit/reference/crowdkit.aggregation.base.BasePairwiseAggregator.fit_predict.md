@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.base.BasePairwiseAggregator.fit_predict`
 
 ```python

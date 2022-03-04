@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.texts.text_hrrasa.TextHRRASA.fit_predict`
 
 ```python

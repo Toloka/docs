@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.texts.rover.ROVER.fit_predict`
 
 ```python

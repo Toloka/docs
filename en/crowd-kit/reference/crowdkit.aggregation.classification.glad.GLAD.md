@@ -1,4 +1,5 @@
 # GLAD
+
 `crowdkit.aggregation.classification.glad.GLAD`
 
 ```python
@@ -17,7 +18,6 @@ GLAD(
 
 Generative model of Labels, Abilities, and Difficulties.
 
-
 A probabilistic model that parametrizes performers' abilities and tasks' dificulties.
 Let's consider a case of $K$ class classification. Let $p$ be a vector of prior class probabilities,
 $\alpha_i \in (-\infty, +\infty)$ be a performer's ability parameter, $\beta_j \in (0, +\infty)$ be
@@ -26,7 +26,6 @@ be a performer's response that we observe. The relationships between this variab
 to GLAD are represented by the following latent label model:
 
 ![GLAD latent label model](https://tlk.s3.yandex.net/crowd-kit/docs/glad_llm.png)
-
 
 The prior probability of $z_j$ being equal to $c$ is
 $$
@@ -45,12 +44,11 @@ $$
 
 Parameters $p$, $\alpha$, $\beta$ and latent variables $z$ are optimized through the Expectation-Minimization algorithm.
 
-
 J. Whitehill, P. Ruvolo, T. Wu, J. Bergsma, and J. Movellan.
 Whose Vote Should Count More: Optimal Integration of Labels from Labelers of Unknown Expertise.
 *Proceedings of the 22nd International Conference on Neural Information Processing Systems*, 2009
 
-https://proceedings.neurips.cc/paper/2009/file/f899139df5e1059396431415e770c6dd-Paper.pdf
+<https://proceedings.neurips.cc/paper/2009/file/f899139df5e1059396431415e770c6dd-Paper.pdf>
 
 ## Parameters Description
 
@@ -78,6 +76,7 @@ df, gt = load_dataset('relevance-2')
 glad = GLAD()
 result = glad.fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

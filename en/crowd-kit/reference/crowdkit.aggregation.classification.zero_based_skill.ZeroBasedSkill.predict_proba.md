@@ -1,4 +1,5 @@
 # predict_proba
+
 `crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill.predict_proba`
 
 ```python

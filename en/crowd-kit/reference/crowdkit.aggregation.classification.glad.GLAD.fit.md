@@ -1,4 +1,5 @@
 # fit
+
 `crowdkit.aggregation.classification.glad.GLAD.fit`
 
 ```python

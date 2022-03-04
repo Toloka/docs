@@ -1,4 +1,5 @@
 # ZeroBasedSkill
+
 `crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill`
 
 ```python
@@ -13,7 +14,6 @@ ZeroBasedSkill(
 ```
 
 The Zero-Based Skill aggregation model.
-
 
 Performs weighted majority voting on tasks. After processing a pool of tasks,
 re-estimates performers' skills through a gradient descend step of optimization
@@ -43,6 +43,7 @@ from crowdkit.datasets import load_dataset
 df, gt = load_dataset('relevance-2')
 result = ZeroBasedSkill().fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

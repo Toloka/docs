@@ -78,7 +78,7 @@ aggregated_labels = DawidSkene(n_iter=100).fit_predict(df)
 | Method | Status |
 | -------------- | :---------------------: |
 | [Bradley-Terry](reference/crowdkit.aggregation.pairwise.bradley_terry.BradleyTerry.md) | ✅ |
-| [Noisy  Bradley-Terry](reference/crowdkit.aggregation.pairwise.noisy_bt.NoisyBradleyTerry.md) | ✅ |
+| [Noisy Bradley-Terry](reference/crowdkit.aggregation.pairwise.noisy_bt.NoisyBradleyTerry.md) | ✅ |
 
 ## Questions and Bug Reports
 

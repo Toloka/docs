@@ -1,4 +1,5 @@
 # fit_predict_scores
+
 `crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage.fit_predict_scores`
 
 ```python

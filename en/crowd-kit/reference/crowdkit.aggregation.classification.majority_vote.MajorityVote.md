@@ -1,4 +1,5 @@
 # MajorityVote
+
 `crowdkit.aggregation.classification.majority_vote.MajorityVote`
 
 ```python
@@ -11,12 +12,10 @@ MajorityVote(
 
 Majority Vote aggregation algorithm.
 
-
 Majority vote is a straightforward approach for categorical aggregation: for each task,
 it outputs a label which has the largest number of responses. Additionaly, the majority vote
 can be used when different weights assigned for performers' votes. In this case, the
 resulting label will be the one with the largest sum of weights.
-
 
 **Note:** in case when two or more labels have the largest number of votes, the resulting
 label will be the same for all tasks which have the same set of labels with equal count of votes.
@@ -34,6 +33,7 @@ label will be the same for all tasks which have the same set of labels with equa
 **Examples:**
 
 Basic majority voting:
+
 ```python
 from crowdkit.aggregation import MajorityVote
 from crowdkit.datasets import load_dataset
@@ -42,6 +42,7 @@ result = MajorityVote().fit_predict(df)
 ```
 
 Weighted majority vote:
+
 ```python
 import pandas as pd
 from crowdkit.aggregation import MajorityVote
@@ -59,6 +60,7 @@ df = pd.DataFrame(
 skills = pd.Series({'p1': 0.5, 'p2': 0.7, 'p3': 0.4})
 result = MajorityVote.fit_predict(df, skills)
 ```
+
 ## Methods summary
 
 | Method | Description |

@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill.fit_predict`
 
 ```python

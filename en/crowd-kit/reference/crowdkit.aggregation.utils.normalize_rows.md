@@ -1,4 +1,5 @@
 # normalize_rows
+
 `crowdkit.aggregation.utils.normalize_rows`
 
 ```python

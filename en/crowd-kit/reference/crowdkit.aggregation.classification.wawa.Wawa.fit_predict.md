@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.classification.wawa.Wawa.fit_predict`
 
 ```python

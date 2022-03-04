@@ -1,12 +1,12 @@
 # ClosestToAverage
+
 `crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage`
 
 ```python
 ClosestToAverage(self, distance: Callable[[ndarray, ndarray], float])
 ```
 
-Closest to Average - chooses the output with the embedding closest to the average embedding.
-
+Closest to Average &mdash; chooses the output with the embedding closest to the average embedding.
 
 This method takes a `DataFrame` containing four columns: `task`, `performer`, `output`, and `embedding`.
 Here the `embedding` is a vector containing a representation of the `output`. The `output` might be any
@@ -20,6 +20,7 @@ embedding is the closest one to the average embedding of the task's responses.
 `distance`|**Callable\[\[ndarray, ndarray\], float\]**|<p>A callable that takes two NumPy arrays and returns a single `float` number — the distance between these two vectors.</p>
 `embeddings_and_outputs_`|**DataFrame**|<p>Tasks&#x27; embeddings and outputs. A pandas.DataFrame indexed by `task` with `embedding` and `output` columns.</p>
 `scores_`|**DataFrame**|<p>Tasks&#x27; label scores. A pandas.DataFrame indexed by `task` such that `result.loc[task, label]` is the score of `label` for `task`.</p>
+
 ## Methods summary
 
 | Method | Description |

@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM.fit_predict`
 
 ```python

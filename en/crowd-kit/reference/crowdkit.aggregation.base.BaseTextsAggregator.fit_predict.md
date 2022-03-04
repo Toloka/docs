@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.base.BaseTextsAggregator.fit_predict`
 
 ```python

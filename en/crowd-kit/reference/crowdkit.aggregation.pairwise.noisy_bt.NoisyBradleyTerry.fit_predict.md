@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.pairwise.noisy_bt.NoisyBradleyTerry.fit_predict`
 
 ```python

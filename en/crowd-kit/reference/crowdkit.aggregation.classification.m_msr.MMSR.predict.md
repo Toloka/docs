@@ -1,4 +1,5 @@
 # predict
+
 `crowdkit.aggregation.classification.m_msr.MMSR.predict`
 
 ```python

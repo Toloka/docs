@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.texts.text_summarization.TextSummarization.fit_predict`
 
 ```python

@@ -1,4 +1,5 @@
 # TextHRRASA
+
 `crowdkit.aggregation.texts.text_hrrasa.TextHRRASA`
 
 ```python
@@ -16,7 +17,6 @@ TextHRRASA(
 ```
 
 HRRASA on text embeddings.
-
 
 Given a sentence encoder, encodes texts provided by performers and runs the HRRASA algorithm for embedding
 aggregation.
@@ -45,6 +45,7 @@ df, gt = load_dataset('crowdspeech-test-clean')
 df['text'] = df['text'].apply(lambda s: s.lower())
 result = hrrasa.fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

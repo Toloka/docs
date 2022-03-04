@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA.fit_predict`
 
 ```python

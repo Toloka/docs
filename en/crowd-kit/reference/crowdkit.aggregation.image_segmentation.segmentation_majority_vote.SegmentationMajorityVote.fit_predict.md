@@ -1,4 +1,5 @@
 # fit_predict
+
 `crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote.fit_predict`
 
 ```python

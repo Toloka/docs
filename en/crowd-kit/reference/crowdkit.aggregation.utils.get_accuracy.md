@@ -1,4 +1,5 @@
 # get_accuracy
+
 `crowdkit.aggregation.utils.get_accuracy`
 
 ```python

@@ -1,4 +1,5 @@
 # TextRASA
+
 `crowdkit.aggregation.texts.text_rasa.TextRASA`
 
 ```python
@@ -12,7 +13,6 @@ TextRASA(
 ```
 
 RASA on text embeddings.
-
 
 Given a sentence encoder, encodes texts provided by performers and runs the RASA algorithm for embedding
 aggregation.
@@ -28,6 +28,7 @@ aggregation.
 **Examples:**
 
 We suggest to use sentence encoders provided by [Sentence Transformers](https://www.sbert.net).
+
 ```python
 from crowdkit.datasets import load_dataset
 from crowdkit.aggregation import TextRASA
@@ -38,6 +39,7 @@ df, gt = load_dataset('crowdspeech-test-clean')
 df['text'] = df['text'].apply(lambda s: s.lower())
 result = hrrasa.fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

@@ -1,4 +1,5 @@
 # fit
+
 `crowdkit.aggregation.classification.m_msr.MMSR.fit`
 
 ```python

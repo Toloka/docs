@@ -1,4 +1,5 @@
 # Annotation
+
 `crowdkit.aggregation.annotations.Annotation`
 
 ```python

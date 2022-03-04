@@ -1,4 +1,5 @@
 # predict_proba
+
 `crowdkit.aggregation.classification.wawa.Wawa.predict_proba`
 
 ```python

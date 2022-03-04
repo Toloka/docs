@@ -1,4 +1,5 @@
 # fit_predict_scores
+
 `crowdkit.aggregation.embeddings.rasa.RASA.fit_predict_scores`
 
 ```python

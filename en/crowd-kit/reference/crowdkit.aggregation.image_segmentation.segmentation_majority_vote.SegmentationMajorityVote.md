@@ -1,4 +1,5 @@
 # SegmentationMajorityVote
+
 `crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote`
 
 ```python
@@ -9,8 +10,7 @@ SegmentationMajorityVote(
 )
 ```
 
-Segmentation Majority Vote - chooses a pixel if more than half of performers voted.
-
+Segmentation Majority Vote &mdash; chooses a pixel if more than half of performers voted.
 
 This method implements a straightforward approach to the image segmentations aggregation:
 it assumes that if pixel is not inside in the performer's segmentation, this vote counts
@@ -21,6 +21,7 @@ The method also supports weighted majority voting if `skills` were provided to `
 
 Doris Jung-Lin Lee. 2018.
 Quality Evaluation Methods for Crowdsourced Image Segmentation
+
 <http://ilpubs.stanford.edu:8090/1161/1/main.pdf>
 
 ## Parameters Description
@@ -47,6 +48,7 @@ df = pd.DataFrame(
 )
 result = SegmentationMajorityVote().fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |

@@ -1,4 +1,5 @@
 # BaseTextsAggregator
+
 `crowdkit.aggregation.base.BaseTextsAggregator`
 
 ```python
@@ -12,6 +13,7 @@ This is a base class for all texts aggregators
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `texts_`|**Series**|<p>Tasks&#x27; texts. A pandas.Series indexed by `task` such that `result.loc[task, text]` is the task&#x27;s text.</p>
+
 ## Methods summary
 
 | Method | Description |

@@ -1,4 +1,5 @@
 # SegmentationEM
+
 `crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM`
 
 ```python
@@ -11,7 +12,6 @@ SegmentationEM(
 
 The EM algorithm for the image segmentation task.
 
-
 This method performs a categorical aggregation task for each pixel: should
 it be included to the resulting aggregate or no. This task is solved by
 the single coin Dawid-Skene algorithm. Each performer has a latent parameter
@@ -19,9 +19,9 @@ the single coin Dawid-Skene algorithm. Each performer has a latent parameter
 Skills and true pixels' labels are optimized by the Expectation-Maximization
 algorithm.
 
-
 Doris Jung-Lin Lee. 2018.
 Quality Evaluation Methods for Crowdsourced Image Segmentation
+
 <http://ilpubs.stanford.edu:8090/1161/1/main.pdf>
 
 ## Parameters Description
@@ -47,6 +47,7 @@ df = pd.DataFrame(
 )
 result = SegmentationEM().fit_predict(df)
 ```
+
 ## Methods summary
 
 | Method | Description |
