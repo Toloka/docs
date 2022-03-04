@@ -87,7 +87,7 @@ aggregated_labels = DawidSkene(n_iter=100).fit_predict(df)
 
 ## Source code
 
-* [Crowd-Kit on GitHub](https://github.com/Toloka/crowd-kit)&nbsp;&nbsp;[![Crowd-Kit on GitHub](../../_images/github-icon.svg "Crowd-Kit on GitHub" =20x20)](https://github.com/Toloka/crowd-kit)
+* [Crowd-Kit on GitHub](https://github.com/Toloka/crowd-kit)
 
 ## License
 

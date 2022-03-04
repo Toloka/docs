@@ -1,6 +1,6 @@
 # DawidSkene
 
-`crowdkit.aggregation.classification.dawid_skene.DawidSkene` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/dawid_skene.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/dawid_skene.py)
+`crowdkit.aggregation.classification.dawid_skene.DawidSkene` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/dawid_skene.py)
 
 ```python
 DawidSkene(

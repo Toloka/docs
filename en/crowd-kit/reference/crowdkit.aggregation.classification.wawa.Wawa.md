@@ -1,6 +1,6 @@
 # Wawa
 
-`crowdkit.aggregation.classification.wawa.Wawa` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/wawa.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/wawa.py)
+`crowdkit.aggregation.classification.wawa.Wawa` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/wawa.py)
 
 ```python
 Wawa(self)

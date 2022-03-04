@@ -1,6 +1,6 @@
 # HRRASA
 
-`crowdkit.aggregation.embeddings.hrrasa.HRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/embeddings/hrrasa.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/embeddings/hrrasa.py)
+`crowdkit.aggregation.embeddings.hrrasa.HRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/embeddings/hrrasa.py)
 
 ```python
 HRRASA(

@@ -1,6 +1,6 @@
 # RASA
 
-`crowdkit.aggregation.embeddings.rasa.RASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/embeddings/rasa.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/embeddings/rasa.py)
+`crowdkit.aggregation.embeddings.rasa.RASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/embeddings/rasa.py)
 
 ```python
 RASA(

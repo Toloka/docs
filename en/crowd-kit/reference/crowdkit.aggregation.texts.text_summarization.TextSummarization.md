@@ -1,6 +1,6 @@
 # TextSummarization
 
-`crowdkit.aggregation.texts.text_summarization.TextSummarization` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/text_summarization.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/text_summarization.py)
+`crowdkit.aggregation.texts.text_summarization.TextSummarization` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/text_summarization.py)
 
 ```python
 TextSummarization(

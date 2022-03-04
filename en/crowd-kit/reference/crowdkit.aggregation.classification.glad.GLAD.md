@@ -1,6 +1,6 @@
 # GLAD
 
-`crowdkit.aggregation.classification.glad.GLAD` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/glad.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/glad.py)
+`crowdkit.aggregation.classification.glad.GLAD` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/glad.py)
 
 ```python
 GLAD(
