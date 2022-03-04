@@ -1,7 +1,9 @@
 title: Crowd-Kit Documentation
 href: index.md
 items:
-  - name: Reference
+  - name: Overview
+    href: index.md
+  - name: Aggregations
     expanded: true
     include:
       path: reference/toc.yaml
