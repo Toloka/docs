@@ -1,6 +1,6 @@
 # ZeroBasedSkill
 
-`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill`
+`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/zero_based_skill.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/zero_based_skill.py)
 
 ```python
 ZeroBasedSkill(

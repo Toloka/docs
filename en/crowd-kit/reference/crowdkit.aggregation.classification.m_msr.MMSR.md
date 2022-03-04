@@ -1,6 +1,6 @@
 # MMSR
 
-`crowdkit.aggregation.classification.m_msr.MMSR`
+`crowdkit.aggregation.classification.m_msr.MMSR` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/m_msr.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/m_msr.py)
 
 ```python
 MMSR(

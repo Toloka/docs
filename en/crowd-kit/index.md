@@ -85,6 +85,10 @@ aggregated_labels = DawidSkene(n_iter=100).fit_predict(df)
 * For reporting bugs please use the [Toloka/bugreport](https://github.com/Toloka/crowdlib/issues) page.
 * Join our English-speaking [slack community](https://toloka.ai/community) for both tech and abstract questions.
 
+## Source code
+
+* [Crowd-Kit on GitHub](https://github.com/Toloka/crowd-kit)&nbsp;&nbsp;[![Crowd-Kit on GitHub](../../_images/github-icon.svg "Crowd-Kit on GitHub" =20x20)](https://github.com/Toloka/crowd-kit)
+
 ## License
 
 © YANDEX LLC, 2020-2022. Licensed under the Apache License, Version 2.0. See LICENSE file for more details.

@@ -1,6 +1,6 @@
 # TextRASA
 
-`crowdkit.aggregation.texts.text_rasa.TextRASA`
+`crowdkit.aggregation.texts.text_rasa.TextRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/text_rasa.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/text_rasa.py)
 
 ```python
 TextRASA(

@@ -1,6 +1,6 @@
 # GoldMajorityVote
 
-`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote`
+`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/gold_majority_vote.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/gold_majority_vote.py)
 
 ```python
 GoldMajorityVote(self)

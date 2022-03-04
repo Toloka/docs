@@ -1,6 +1,6 @@
 # NoisyBradleyTerry
 
-`crowdkit.aggregation.pairwise.noisy_bt.NoisyBradleyTerry`
+`crowdkit.aggregation.pairwise.noisy_bt.NoisyBradleyTerry` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/pairwise/noisy_bt.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/pairwise/noisy_bt.py)
 
 ```python
 NoisyBradleyTerry(

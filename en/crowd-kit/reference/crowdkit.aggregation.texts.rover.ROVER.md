@@ -1,6 +1,6 @@
 # ROVER
 
-`crowdkit.aggregation.texts.rover.ROVER`
+`crowdkit.aggregation.texts.rover.ROVER` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/rover.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/rover.py)
 
 ```python
 ROVER(

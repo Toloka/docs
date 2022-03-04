@@ -1,6 +1,6 @@
 # MajorityVote
 
-`crowdkit.aggregation.classification.majority_vote.MajorityVote`
+`crowdkit.aggregation.classification.majority_vote.MajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/majority_vote.py)&nbsp;[![Source code](../../../_images/github-icon.svg "Source code" =20x20)](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/classification/majority_vote.py)
 
 ```python
 MajorityVote(
