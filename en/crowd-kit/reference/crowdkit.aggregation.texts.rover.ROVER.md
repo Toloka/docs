@@ -47,7 +47,7 @@ detokenizer = lambda tokens: ' '.join(tokens)
 result = ROVER(tokenizer, detokenizer).fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

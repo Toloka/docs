@@ -65,7 +65,7 @@ skills = pd.Series({'p1': 0.5, 'p2': 0.7, 'p3': 0.4})
 result = MajorityVote.fit_predict(df, skills)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

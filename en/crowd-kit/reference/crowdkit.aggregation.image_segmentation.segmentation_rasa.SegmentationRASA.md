@@ -47,7 +47,7 @@ df = pd.DataFrame(
 result = SegmentationRASA().fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

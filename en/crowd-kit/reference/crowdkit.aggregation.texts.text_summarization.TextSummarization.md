@@ -64,7 +64,7 @@ agg = TextSummarization(tokenizer, model, device=device)
 result = agg.fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

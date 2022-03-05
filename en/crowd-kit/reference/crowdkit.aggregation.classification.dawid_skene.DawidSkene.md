@@ -58,7 +58,7 @@ ds = DawidSkene(100)
 result = ds.fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

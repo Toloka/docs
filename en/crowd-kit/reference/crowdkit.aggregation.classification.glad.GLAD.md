@@ -77,7 +77,7 @@ glad = GLAD()
 result = glad.fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

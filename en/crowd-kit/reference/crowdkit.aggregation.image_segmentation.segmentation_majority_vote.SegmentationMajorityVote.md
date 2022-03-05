@@ -49,7 +49,7 @@ df = pd.DataFrame(
 result = SegmentationMajorityVote().fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

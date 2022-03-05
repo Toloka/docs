@@ -58,7 +58,7 @@ df = pd.DataFrame(
 result = RASA().fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

@@ -66,7 +66,7 @@ mmsr = MMSR()
 result = mmsr.fit_predict(df)
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

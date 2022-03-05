@@ -14,7 +14,7 @@ This is a base class for all classification aggregators
 | :----------| :----| :-----------|
 `labels_`|**Optional\[Series\]**|<p>Tasks&#x27; labels. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s most likely true label.</p>
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

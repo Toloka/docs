@@ -65,7 +65,7 @@ df = pd.DataFrame(
 )
 ```
 
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|
