@@ -1065,9 +1065,6 @@ items:
     - name: Project.AssignmentsIssuingViewConfig
       href: toloka.client.project.Project.AssignmentsIssuingViewConfig.md
       hidden: true
-    - name: Project.AssignmentsIssuingViewConfig.MapProvider
-      href: toloka.client.project.Project.AssignmentsIssuingViewConfig.MapProvider.md
-      hidden: true
     - name: Project.ProjectStatus
       href: toloka.client.project.Project.ProjectStatus.md
       hidden: true

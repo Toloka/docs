@@ -32,26 +32,14 @@ new_bonuses=[
     UserBonus(
         user_id='1',
         amount=decimal.Decimal('0.50'),
-        public_title={
-            'EN': 'Perfect job!',
-            'RU': 'Прекрасная работа!',
-        },
-        public_message={
-            'EN': 'You are the best performer!',
-            'RU': 'Молодец!',
-        },
+        public_title='Perfect job!',
+        public_message='You are the best performer!',
         assignment_id='1'),
     UserBonus(
         user_id='2',
         amount=decimal.Decimal('1.0'),
-        public_title={
-            'EN': 'Excellent work!',
-            'RU': 'Отличная работа!',
-        },
-        public_message={
-            'EN': 'You have completed all tasks!',
-            'RU': 'Сделаны все задания!',
-        },
+        public_title='Excellent work!',
+        public_message='You completed all the tasks!',
         assignment_id='2')
 ]
 toloka_client.create_user_bonuses(new_bonuses)
