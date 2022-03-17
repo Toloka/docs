@@ -5,7 +5,7 @@ items:
     href: index.md
   - name: Quick Start
     href: quick-start.md
-  - name: Toloka Client
+  - name: TolokaClient
     href: reference/toloka.client.TolokaClient.md
   - name: Reference
     expanded: true
