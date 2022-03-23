@@ -1,6 +1,5 @@
 # ROVER
-
-`crowdkit.aggregation.texts.rover.ROVER` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/texts/rover.py)
+`crowdkit.aggregation.texts.rover.ROVER` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/texts/rover.py#L31)
 
 ```python
 ROVER(
@@ -13,18 +12,16 @@ ROVER(
 
 Recognizer Output Voting Error Reduction (ROVER).
 
+
 This method uses dynamic programming to align sequences. Next, aligned sequences are used
 to construct the Word Transition Network (WTN):
-
-![ROVER WTN scheme](https://tlk.s3.yandex.net/crowd-kit/docs/rover.png)
-
+![ROVER WTN scheme](http://tlk.s3.yandex.net/crowd-kit/docs/rover.png)
 Finally, the aggregated sequence is the result of majority voting on each edge of the WTN.
 
 J. G. Fiscus,
 "A post-processing system to yield reduced word error rates: Recognizer Output Voting Error Reduction (ROVER),"
 *1997 IEEE Workshop on Automatic Speech Recognition and Understanding Proceedings*, 1997, pp. 347-354.
-
-<https://doi.org/10.1109/ASRU.1997.659110>
+https://doi.org/10.1109/ASRU.1997.659110
 
 ## Parameters Description
 
@@ -41,13 +38,12 @@ J. G. Fiscus,
 from crowdkit.aggregation import load_dataset
 from crowdkit.aggregation import ROVER
 df, gt = load_dataset('crowdspeech-test-clean')
-df['text'] = df['text'].apply(lambda s: s.lower())
+df['text'] = df['text].apply(lambda s: s.lower())
 tokenizer = lambda s: s.split(' ')
 detokenizer = lambda tokens: ' '.join(tokens)
 result = ROVER(tokenizer, detokenizer).fit_predict(df)
 ```
-
-## Methods Summary
+## Methods summary
 
 | Method | Description |
 | :------| :-----------|

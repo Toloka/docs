@@ -1,6 +1,5 @@
 # SegmentationRASA
-
-`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/image_segmentation/segmentation_rasa.py)
+`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L15)
 
 ```python
 SegmentationRASA(
@@ -10,9 +9,10 @@ SegmentationRASA(
 )
 ```
 
-Segmentation RASA &mdash; chooses a pixel if sum of weighted votes of each performers' more than 0.5.
+Segmentation RASA - chooses a pixel if sum of weighted votes of each workers' more than 0.5.
 
-Algorithm works iteratively, at each step, the performers are reweighted in proportion to their distances
+
+Algorithm works iteratively, at each step, the workers are reweighted in proportion to their distances
 to the current answer estimation. The distance is considered as $1 - IOU$. Modification of the RASA method
 for texts.
 
@@ -20,7 +20,6 @@ Jiyi Li.
 A Dataset of Crowdsourced Word Sequences: Collections and Answer Aggregation for Ground Truth Creation.
 *Proceedings of the First Workshop on Aggregating and Analysing Crowdsourced Annotations for NLP*,
 pages 24–28 Hong Kong, China, November 3, 2019.
-
 <http://doi.org/10.18653/v1/D19-5904>
 
 ## Parameters Description
@@ -42,12 +41,11 @@ df = pd.DataFrame(
         ['t1', 'p2', np.array([[0, 1], [1, 1]])],
         ['t1', 'p3', np.array([[0, 1], [1, 1]])]
     ],
-    columns=['task', 'performer', 'segmentation']
+    columns=['task', 'worker', 'segmentation']
 )
 result = SegmentationRASA().fit_predict(df)
 ```
-
-## Methods Summary
+## Methods summary
 
 | Method | Description |
 | :------| :-----------|

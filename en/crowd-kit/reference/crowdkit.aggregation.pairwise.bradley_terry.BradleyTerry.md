@@ -1,6 +1,5 @@
 # BradleyTerry
-
-`crowdkit.aggregation.pairwise.bradley_terry.BradleyTerry` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/pairwise/bradley_terry.py)
+`crowdkit.aggregation.pairwise.bradley_terry.BradleyTerry` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/pairwise/bradley_terry.py#L16)
 
 ```python
 BradleyTerry(
@@ -11,6 +10,7 @@ BradleyTerry(
 ```
 
 Bradley-Terry, the classic algorithm for aggregating pairwise comparisons.
+
 
 This algorithm constructs an items' ranking based on pairwise comparisons. Given
 a pair of two items $i$ and $j$, the probability of $i$ to be ranked higher is,
@@ -25,11 +25,7 @@ L(\boldsymbol{p}) = \sum_{i=1}^n\sum_{j=1}^n[w_{ij}\ln p_i - w_{ij}\ln (p_i + p_
 $$
 where $w_{ij}$ denotes the number of comparisons of $i$ and $j$ "won" by $i$.
 
-{% note info %}
-
-The Bradley-Terry model needs the comparisons graph to be **strongly connected**.
-
-{% endnote %}
+**Note:** the Bradley-Terry model needs the comparisons graph to be **strongly connected**.
 
 David R. Hunter.
 MM algorithms for generalized Bradley-Terry models
@@ -64,8 +60,7 @@ df = pd.DataFrame(
     columns=['left', 'right', 'label']
 )
 ```
-
-## Methods Summary
+## Methods summary
 
 | Method | Description |
 | :------| :-----------|
