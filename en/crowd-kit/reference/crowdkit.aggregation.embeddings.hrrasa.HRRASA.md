@@ -85,7 +85,7 @@ df = pd.DataFrame(
 )
 result = HRRASA().fit_predict(df)
 ```
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|

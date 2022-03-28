@@ -60,7 +60,7 @@ df = pd.DataFrame(
     columns=['left', 'right', 'label']
 )
 ```
-## Methods summary
+## Methods Summary
 
 | Method | Description |
 | :------| :-----------|
