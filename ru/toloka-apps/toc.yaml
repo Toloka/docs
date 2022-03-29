@@ -1,0 +1,86 @@
+title: Решения Ready-to-go
+href: concepts/index.md
+items:
+  - name: Руководство
+    expanded: true
+    items:
+      - href: concepts/index.md
+        name: О сервисе
+      - href: concepts/unwanted.md
+        name: "Какие задания нельзя размещать в Яндекс\_Толоке"
+      - href: concepts/quickstart.md
+        name: Начало работы
+      - name: Где хранить данные
+        items:
+          - href: concepts/cloud-storage.md
+            name: Хранилища данных
+          - href: concepts/amazon-cloud-storage.md
+            name: Amazon S3
+          - href: concepts/azure-cloud-storage.md
+            name: Azure Blob Storage
+          - href: concepts/google-cloud-storage.md
+            name: Google Cloud Storage
+          - href: concepts/use-object-storage.md
+            name: Yandex Object Storage
+      - href: concepts/add-task.md
+        name: Загрузка элементов разметки
+      - href: concepts/view-progress.md
+        hidden: true
+        name: Запуск и остановка разметки
+      - href: concepts/download-results.md
+        name: Скачивание результатов
+      - href: concepts/glossary.md
+        name: Термины и определения
+      - href: concepts/troubleshooting.md
+        name: Решение проблем
+  - name: API решений Ready-to-go
+    items:
+      - name: Как пользоваться
+        items:
+          - href: https://toloka.ai/docs/toloka-apps/api/concepts/authorization.html
+            name: Доступ к API
+          - href: https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html
+            name: Быстрый старт API
+      - name: Справочник API
+        items:
+          - href:
+            name: API Toloka Apps external
+          - name: app
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_get.html
+                name: Получить список шаблонов Апп-проектов (Apps)
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_app_id_get.html
+                name: Информация о шаблоне Апп-проекта
+          - name: app-project
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html
+                name: Архивировать проект
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_post.html
+                name: Создать новый проект
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_get.html
+                name: Получить список проектов
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
+                name: Получить информацию о проекте
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.html
+                name: Разархивировать проект
+          - name: batch
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
+                name: Получить информацию о пакете данных
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.html
+                name: Создать новый пакет данных с первой пачкой элементов
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.html
+                name: Получить список пакетов данных в проекте
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.html
+                name: Запустить обработку пакета данных
+          - name: item
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_post.html
+                name: Добавить новый элемент в пакет данных
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.html
+                name: Добавить несколько элементов в пакет данных
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html
+                name: Получить информацию об элементе разметки
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html
+                name: Получить список всех элементов в проекте
+base: ru

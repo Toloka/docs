@@ -1,0 +1,1 @@
+[Написать в службу поддержки](https://toloka.ai/ru/docs/guide/troubleshooting/support.html#troubleshooting__new_1)
