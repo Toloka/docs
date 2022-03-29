@@ -47,7 +47,12 @@ your_oauth_token = input('Enter your token:')
 toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch to 'SANDBOX' environment
 ```
 
-**Note**: `toloka_client` instance will be used to pass all API calls later on.
+{% note info %}
+
+`toloka_client` instance will be used to pass all API calls later on.
+
+{% endnote %}
+
 ## Methods Summary
 
 | Method | Description |

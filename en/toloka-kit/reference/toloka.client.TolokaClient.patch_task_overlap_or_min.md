@@ -27,4 +27,8 @@ Set an infinite overlap for a specific task in training.
 toloka_client.patch_task_overlap_or_min(task_id='1', infinite_overlap=True)
 ```
 
-**Note**: you can't set infinite overlap in a regular pool.
+{% note info %}
+
+You can't set infinite overlap in a regular pool.
+
+{% endnote %}
