@@ -17,12 +17,13 @@ it outputs a label which has the largest number of responses. Additionaly, the m
 can be used when different weights assigned for workers' votes. In this case, the
 resulting label will be the one with the largest sum of weights.
 
+
 {% note info %}
 
-In case when two or more labels have the largest number of votes, the resulting
-label will be the same for all tasks which have the same set of labels with equal count of votes.
+ In case when two or more labels have the largest number of votes, the resulting
+ label will be the same for all tasks which have the same set of labels with equal count of votes.
 
-{% endnote %}
+ {% endnote %}
 
 ## Parameters Description
 
