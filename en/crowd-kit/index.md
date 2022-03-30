@@ -8,8 +8,6 @@ Currently, Crowd-Kit contains:
 * metrics of uncertainty, consistency, and agreement with aggregate
 * loaders for popular crowdsourced datasets
 
-*The library is currently in a heavy development state, and interfaces are subject to change.*
-
 ## Installing
 
 Installing Crowd-Kit is as easy as `pip install crowd-kit`
@@ -27,14 +25,14 @@ from crowdkit.datasets import load_dataset
 import pandas as pd
 ````
 
-Then, you need to read your annotations into Pandas DataFrame with columns `task`, `performer`, `label`. Alternatively, you can download an example dataset.
+Then, you need to read your annotations into Pandas DataFrame with columns `task`, `worker`, `label`. Alternatively, you can download an example dataset.
 
 ````python
-df = pd.read_csv('results.csv')  # should contain columns: task, performer, label
+df = pd.read_csv('results.csv')  # should contain columns: task, worker, label
 # df, ground_truth = load_dataset('relevance-2')  # or download an example dataset
 ````
 
-Then you can aggregate the performer responses as easily as in scikit-learn:
+Then you can aggregate the worker responses as easily as in scikit-learn:
 
 ````python
 aggregated_labels = DawidSkene(n_iter=100).fit_predict(df)
@@ -43,6 +41,8 @@ aggregated_labels = DawidSkene(n_iter=100).fit_predict(df)
 [More usage examples](https://github.com/Toloka/crowd-kit/tree/main/examples)
 
 ## Implemented Aggregation Methods
+
+Below is the list of currently implemented methods, including the already available (✅) and in progress (🟡).
 
 ### Categorical Responses
 

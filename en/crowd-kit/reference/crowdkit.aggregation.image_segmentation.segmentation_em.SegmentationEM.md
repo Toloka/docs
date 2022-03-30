@@ -1,6 +1,5 @@
 # SegmentationEM
-
-`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM` | [Source code](https://github.com/Toloka/crowd-kit/blob/main/src/aggregation/image_segmentation/segmentation_em.py)
+`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/image_segmentation/segmentation_em.py#L12)
 
 ```python
 SegmentationEM(
@@ -12,17 +11,18 @@ SegmentationEM(
 
 The EM algorithm for the image segmentation task.
 
+
 This method performs a categorical aggregation task for each pixel: should
 it be included to the resulting aggregate or no. This task is solved by
-the single coin Dawid-Skene algorithm. Each performer has a latent parameter
-"skill" that shows the probability of this performer to answer correctly.
+the single coin Dawid-Skene algorithm. Each worker has a latent parameter
+"skill" that shows the probability of this worker to answer correctly.
 Skills and true pixels' labels are optimized by the Expectation-Maximization
 algorithm.
 
+
 Doris Jung-Lin Lee. 2018.
 Quality Evaluation Methods for Crowdsourced Image Segmentation
-
-<http://ilpubs.stanford.edu:8090/1161/1/main.pdf>
+<https://ilpubs.stanford.edu:8090/1161/1/main.pdf>
 
 ## Parameters Description
 
@@ -43,11 +43,10 @@ df = pd.DataFrame(
         ['t1', 'p2', np.array([[0, 1], [1, 1]])],
         ['t1', 'p3', np.array([[0, 1], [1, 1]])]
     ],
-    columns=['task', 'performer', 'segmentation']
+    columns=['task', 'worker', 'segmentation']
 )
 result = SegmentationEM().fit_predict(df)
 ```
-
 ## Methods Summary
 
 | Method | Description |
