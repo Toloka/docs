@@ -1,5 +1,11 @@
 # Troubleshooting
 
+[Ready-to-go](#app-projects)
+
+[Labeling results](#results)
+
+[Uploading data for labeling](#add-items)
+
 ## Ready-to-go {#app-projects}
 
 I didn't find a suitable ready-to-go solution

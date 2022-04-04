@@ -1,5 +1,15 @@
 # Azure Blob Storage
 
+[Steps to follow](#workflow)
+
+[Create a storage account](#create-account)
+
+[Create a container](#container)
+
+[Upload your files to the container](#upload)
+
+[Copy links](#get-files)
+
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}
@@ -84,7 +94,7 @@ You can set up the lifetime of files in the container so that they are automatic
 
     {% endcut %}
 
-    {% note warning %}
+    {% note alert %}
 
     The name can't contain spaces. Files can't be accessed by link.
 

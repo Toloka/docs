@@ -1,5 +1,7 @@
 # Yandex Object Storage
 
+[Steps to follow](#plan)
+
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}
@@ -14,21 +16,19 @@ Trial length | Free storage size | Grant amount
 ------------ | ----------------- | ------------
 60 days | 5 TB | $50
 
-## Steps to follow {#concept_ebz_yz4_nlb}
+## Steps to follow {#plan}
 
 To use files from Yandex.Cloud:
 
 1. Create a bucket in Object Storage. To learn how to do this, go to [Getting started](https://cloud.yandex.com/docs/storage/quickstart).
 
-    {% note info %}
+    {% note tip %}
 
     Create a bucket with public access. This way you won't need to generate a link to each file separately.
 
     {% endnote %}
 
-1. Select a bucket and upload your files.
-
-    {% include [storage-hash](_includes/cloud-storage/hash.md) %}
+1. Select a bucket and upload your files. Files will be accessible to anyone with a link. We recommend using hashed file names to keep your files secure. You can generate hashes using online tools (for example, [Online MD5 Hash Generator](https://en.wikipedia.org/wiki/Hash_function)). Learn more about [hashing](https://en.wikipedia.org/wiki/Hash_function).
 
     {% note info %}
 

@@ -1,5 +1,13 @@
 # Amazon S3
 
+[Steps to follow](#workflow)
+
+[Create a bucket](#create-bucket)
+
+[Upload files to the bucket](#upload)
+
+[Copy links](#get-files)
+
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}

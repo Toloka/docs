@@ -1,5 +1,15 @@
 # Azure Blob Storage
 
+[Порядок действий](#workflow)
+
+[Создайте учетную запись хранения](#create-account)
+
+[Создайте контейнер](#container)
+
+[Загрузите файлы в контейнер](#upload)
+
+[Скопируйте ссылки](#get-files)
+
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}
@@ -48,7 +58,7 @@
 
 1. Дождитесь окончания развертывания. Нажмите **Перейти к ресурсу.**
 
-    ![Развертывание выполнено](../_images/tutorials/cloud-storage/azure/deployment-complete.png =600x358)
+    ![Развертывание выполнено](../_images/tutorials/cloud-storage/azure/deployment-complete.png =450x269)
 
 ## Создайте контейнер {#container}
 
@@ -92,7 +102,7 @@
 
     {% endcut %}
 
-    {% note warning %}
+    {% note alert %}
 
     В имени файлов не должно быть пробелов. Файлы будут недоступны по ссылке.
 

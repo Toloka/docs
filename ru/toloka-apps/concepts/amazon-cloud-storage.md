@@ -1,5 +1,13 @@
 # Amazon S3
 
+[Порядок действий](#workflow)
+
+[Создайте бакет](#create-bucket)
+
+[Загрузите файлы в бакет](#upload)
+
+[Скопируйте ссылки](#get-files)
+
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}

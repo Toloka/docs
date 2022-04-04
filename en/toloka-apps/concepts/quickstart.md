@@ -1,5 +1,19 @@
 # Getting started
 
+[Choose a ready-to-go solution](#choose-app-project)
+
+[Fill out a form](#set-application)
+
+[Upload work items](#new-batch)
+
+[Send the data for labeling](#section_fr2_gfv_wqb)
+
+[Are there any errors?](#errors)
+
+[What's next](#whats-next)
+
+[Troubleshooting](#troubleshooting)
+
 {% include [index-abstract-quickstart](_includes/index/id-index/abstract-quickstart.md) %}
 
 ## Choose a ready-to-go solution {#choose-app-project}
@@ -13,9 +27,15 @@ Once you choose a ready-to-go solution, you need to fill out a form. In the form
 
 It will take about 30 minutes to fill out the form. To make sure you get good results, fill out the application form carefully.
 
-Once you fill out the form, you'll see your project on the **Ready-to-go** tab in the **Pending** status. You don't have to wait until it's moderated and can immediately start uploading task items.
+Once you fill out the form, you'll see your project on the **Ready-to-go** tab in the **Pending** status. You don't have to wait until it's moderated and can immediately start uploading work items.
 
-## Upload task items {#new-batch}
+{% cut "Work items" %}
+
+A work item is a labeling unit – in other words, data uploaded to a batch. The batch consists of work items, and the project consists of batches.
+
+{% endcut %}
+
+## Upload work items {#new-batch}
 
 Your items are uploaded to a batch. A batch is a set of data for labeling that you'll assign to performers at a time. You'll get labeling results separately for each batch, too.
 
@@ -48,9 +68,9 @@ If there are errors in the project, its status changes to **Rejected**. No worri
 1. Click **Show errors**. Read the error description.
 1. Click **Clone project** to create a duplicate for editing and fix the errors in it.
 
-{% note info %}
+{% note tip %}
 
-If you need help with setting up your project, [contact us](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1).
+If you need help setting up your project, [contact us](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1).
 
 {% endnote %}
 

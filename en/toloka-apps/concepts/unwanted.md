@@ -1,5 +1,9 @@
 # What tasks can't be placed in Toloka?
 
+[Guidelines for tasks](#requirements-for-tasks)
+
+[Requirements for task names and descriptions](#requirements-for-description)
+
 Toloka **isn't intended** for tasks that could harm performers, other requesters, or the Toloka platform. Your account may get blocked for posting such tasks.
 
 ## Guidelines for tasks {#requirements-for-tasks}
