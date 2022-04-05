@@ -20,15 +20,17 @@ Before creating a pull request, build the docs locally for checking your changes
 
    `npm i @doc-tools/docs -g`
 
-   To update the version of **yfm-docs**, use the  `npm i @doc-tools/docs@latest -g` command.
+   To update the version of **yfm-docs**, use the `npm i @doc-tools/docs@latest -g` command.
 
-2. Switch to the folder with the documentation you want to contribute to, for example:
+2. Switch to the folder with the documentation:
 
-   `cd ./crowd-kit/en`
+   `cd ./docs`
 
 3. Build the docs:
 
-   `yfm -i ./Toloka/docs/crowd-kit/en -o ./docs-gen`, where `docs/crowd-kit/en` is a folder with the source texts, `docs-gen` is a folder with the generated documentation.
+   `yfm -i ./en/crowd-kit -o ./docs-gen`, where `en/crowd-kit` is a folder with the source texts you want to contribute to, `docs-gen` is a folder with the generated documentation.
+
+4. Open the `index.html` file from the output folder (in our case it is `docs-gen`) in your favorite browser and see if everything is okay.
 
 ## Licenses
 
