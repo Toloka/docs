@@ -1,20 +1,20 @@
 # Terms and definitions
 
-Ready-to-go solution
+Batch for labeling
 
-: A ready-to-go solution is an example of a standard task that you can solve using Toloka. Unlike [customizable project](https://toloka.ai/docs/guide/concepts/overview.html#project) templates, you don't have to set up everything yourself.
+: A batch of data that you send for labeling at a time. The batch consists of work items.
 
 Ready-to-go project
 
 : A ready-to-go project is based on a ready-made solution with the parameters that you specified. The interface and quality controls are pre-configured, decomposition is already done, and everything is ready to use: all you need is to upload work items to batches and send them for labeling.
 
-Batch for labeling
+Ready-to-go solution
 
-: A batch of data that you send for labeling at a time. The batch consists of work items.
+: A ready-to-go solution is an example of a standard task that you can solve using Toloka. Unlike [customizable project](https://toloka.ai/ru/docs/guide/concepts/overview.html#project) templates, you don't have to set up everything yourself.
 
-Work item
+Task item
 
-: A work item is a labeling unit &mdash; in other words, data uploaded to a batch. The batch consists of work items, and the project consists of batches.
+: A task item is a labeling unit &mdash; in other words, data uploaded to a batch. The batch consists of work items, and the project consists of batches.
 
 TSV-file
 

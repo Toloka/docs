@@ -1,9 +1,5 @@
 # Starting and stopping labeling
 
-[Start labeling](#start-batch)
-
-[Stop labeling](#stop-batch)
-
 ## Start labeling {#start-batch}
 
 You can start labeling after uploading work items to a project's batch.

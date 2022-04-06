@@ -1,15 +1,5 @@
 # Azure Blob Storage
 
-[Steps to follow](#workflow)
-
-[Create a storage account](#create-account)
-
-[Create a container](#container)
-
-[Upload your files to the container](#upload)
-
-[Copy links](#get-files)
-
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}

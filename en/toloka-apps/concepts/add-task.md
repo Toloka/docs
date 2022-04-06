@@ -1,13 +1,5 @@
 # Uploading work items
 
-[Creating a new batch](#new-batch)
-
-[Adding items to an existing batch](#edit)
-
-[What's next](#whats-next)
-
-[Troubleshooting](#troubleshooting)
-
 You can add data to a ready-to-go project with the **Active** or **Pending** status.
 
 ## Creating a new batch {#new-batch}

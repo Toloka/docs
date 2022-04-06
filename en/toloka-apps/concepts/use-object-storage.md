@@ -1,7 +1,5 @@
 # Yandex Object Storage
 
-[Steps to follow](#plan)
-
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}
@@ -28,7 +26,9 @@ To use files from Yandex.Cloud:
 
     {% endnote %}
 
-1. Select a bucket and upload your files. Files will be accessible to anyone with a link. We recommend using hashed file names to keep your files secure. You can generate hashes using online tools (for example, [Online MD5 Hash Generator](https://en.wikipedia.org/wiki/Hash_function)). Learn more about [hashing](https://en.wikipedia.org/wiki/Hash_function).
+1. Select a bucket and upload your files.
+
+    {% include [storage-hash](_includes/cloud-storage/hash.md) %}
 
     {% note info %}
 

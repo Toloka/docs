@@ -1,13 +1,5 @@
 # Google Cloud Storage
 
-[Steps to follow](#workflow)
-
-[Create a bucket](#create-account)
-
-[Upload files](#upload)
-
-[Copy links](#get-files)
-
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}
@@ -41,7 +33,7 @@ To get links to files:
 
 1. Select a project and click ![Create bucket](../_images/tutorials/cloud-storage/google-cloud/create-bucket-icon.png) **Create bucket**.
 
-    ![Create bucket](../_images/tutorials/cloud-storage/google-cloud/choose-project.png =500x268)
+    ![Create bucket](../_images/tutorials/cloud-storage/google-cloud/choose-project.png =600x322)
 
 1. Enter the bucket name. The name should be unique and contain only lower-case Latin letters, numbers, hyphens, and underscores.
 
@@ -53,7 +45,7 @@ To get links to files:
 
 1. In **Choose how to control access to objects**, disable the option **Enforce public access prevention on this bucket**.
 
-    ![Choose how to control access to objects](../_images/tutorials/cloud-storage/google-cloud/enforce-access.png =400x133)
+    ![Choose how to control access to objects](../_images/tutorials/cloud-storage/google-cloud/enforce-access.png =600x200)
 
 1. Click **Create**.
 
@@ -69,7 +61,7 @@ To get links to files:
 
 1. Select **Cloud Storage → Storage Object Viewer**.
 
-    ![Storage Object Viewer](../_images/tutorials/cloud-storage/google-cloud/public-access.png =500x201)
+    ![Storage Object Viewer](../_images/tutorials/cloud-storage/google-cloud/public-access.png =600x241)
 
 1. Click **Save → Allow public access**.
 
@@ -99,7 +91,7 @@ On the **Object** tab, click **Create folder** and enter the folder name.
 
 {% endcut %}
 
-![Загрузите файлы](../_images/tutorials/cloud-storage/google-cloud/upload-files.png =500x158)
+![Upload files](../_images/tutorials/cloud-storage/google-cloud/upload-files.png =600x190)
 
 {% note info %}
 

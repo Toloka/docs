@@ -1,8 +1,5 @@
 # Yandex Object Storage
 
-[Порядок действий](#plan)
-
-
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}
@@ -29,7 +26,9 @@
 
     {% endnote %}
 
-1. Выберите бакет и загрузите в него ваши файлы. Файлы по ссылке будут доступны всем. В целях безопасности рекомендуем использовать хешированные имена файлов. Для хеширования вы можете использовать онлайн генератор (например, [Online MD5 Hash Generator](https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F)). Подробнее о [хеш-функции](https://ru.wikipedia.org/wiki/%D0%A5%D0%B5%D1%88-%D1%84%D1%83%D0%BD%D0%BA%D1%86%D0%B8%D1%8F).
+1. Выберите бакет и загрузите в него ваши файлы.
+
+    {% include [storage-hash](_includes/cloud-storage/hash.md) %}
 
     {% note info %}
 

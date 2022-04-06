@@ -1,19 +1,5 @@
 # Начало работы
 
-[Выберите Ready-to-go-решение](#choose-app-project)
-
-[Заполните форму](#set-application)
-
-[Загрузите элементы разметки](#new-batch)
-
-[Отправьте данные на разметку](#section_fr2_gfv_wqb)
-
-[Возникли ошибки?](#errors)
-
-[Что дальше](#whats-next)
-
-[Решение проблем](#troubleshooting)
-
 {% include [index-abstract-quickstart](_includes/index/id-index/abstract-quickstart.md) %}
 
 ## Выберите Ready-to-go-решение {#choose-app-project}
@@ -50,7 +36,7 @@
 1. Введите название пакета данных.
 1. Загрузите элементы разметки одним из способов:
 
-    - Загрузите готовый tsv-файл.
+    - Загрузите готовый TSV-файл.
 
     - Внесите данные в текстовом формате.
 

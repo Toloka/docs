@@ -1,13 +1,5 @@
 # Google Cloud Storage
 
-[Порядок действий](#workflow)
-
-[Создайте бакет](#create-account)
-
-[Загрузите файлы](#upload)
-
-[Скопируйте ссылки](#get-files)
-
 {% note info %}
 
 {% include [photo-hosting](_includes/cloud-storage/photo-hosting.md) %}
@@ -39,7 +31,7 @@
 
 1. Выберите проект и нажмите ![Create bucket](../_images/tutorials/cloud-storage/google-cloud/create-bucket-icon.png) **Create bucket**.
 
-    ![Create bucket](../_images/tutorials/cloud-storage/google-cloud/choose-project.png =500x268)
+    ![Create bucket](../_images/tutorials/cloud-storage/google-cloud/choose-project.png =600x322)
 
 1. Введите имя бакета. Имя должно быть уникальным и содержать только латинские строчные буквы, цифры, подчеркивания и дефисы.
 
@@ -51,7 +43,7 @@
 
 1. В разделе **Choose how to control access to objects** отключите опцию **Enforce public access prevention on this bucket**.
 
-    ![Choose how to control access to objects](../_images/tutorials/cloud-storage/google-cloud/enforce-access.png =400x133)
+    ![Choose how to control access to objects](../_images/tutorials/cloud-storage/google-cloud/enforce-access.png =600x200)
 
 1. Нажмите **Create**.
 
@@ -67,7 +59,7 @@
 
 1. Выберите роль **Cloud Storage → Storage Object Viewer**.
 
-    ![Storage Object Viewer](../_images/tutorials/cloud-storage/google-cloud/public-access.png =500x201)
+    ![Storage Object Viewer](../_images/tutorials/cloud-storage/google-cloud/public-access.png =600x241)
 
 1. Нажмите **Save → Allow public access**.
 
@@ -97,7 +89,7 @@
 
 {% endcut %}
 
-![Загрузите файлы](../_images/tutorials/cloud-storage/google-cloud/upload-files.png =500x158)
+![Загрузите файлы](../_images/tutorials/cloud-storage/google-cloud/upload-files.png =600x190)
 
 {% note info %}
 

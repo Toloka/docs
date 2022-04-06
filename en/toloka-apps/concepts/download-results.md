@@ -6,14 +6,6 @@ You can only download the results from a batch with the **Completed** status.
 
 {% endnote %}
 
-[Download all results](#download-all)
-
-[View the results by item](#objects)
-
-[Analyzing the results](#analysis)
-
-[Troubleshooting](#troubleshooting)
-
 ## Download all results {#download-all}
 
 1. Open your ready-to-go project and go to the appropriate batch.
