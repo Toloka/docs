@@ -1,6 +1,6 @@
 # Downloading the results
 
-{% note info %}
+{% note warning %}
 
 You can only download the results from a batch with the **Completed** status.
 
@@ -57,7 +57,7 @@ where:
 
 If there are several estimates, the most popular response is determined by adding together ![](../_images/qi.svg) of the performers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate ![](../_images/zj.svg).
 
-[Using Bayes' theorem](https://ru.wikipedia.org/wiki/Теорема_Байеса), we calculate the posterior probability that the estimate ![](../_images/zj.svg) is correct.
+[Using Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), we calculate the posterior probability that the estimate ![](../_images/zj.svg) is correct.
 
 A uniform distribution of estimates is assumed a priori. For the ![](../_images/zx.svg) the a priori probability is calculated as
 

@@ -84,7 +84,7 @@ You can set up the lifetime of files in the container so that they are automatic
 
     {% endcut %}
 
-    {% note warning %}
+    {% note alert %}
 
     The name can't contain spaces. Files can't be accessed by link.
 

@@ -25,7 +25,6 @@ items:
       - href: concepts/add-task.md
         name: Загрузка элементов разметки
       - href: concepts/view-progress.md
-        hidden: true
         name: Запуск и остановка разметки
       - href: concepts/download-results.md
         name: Скачивание результатов

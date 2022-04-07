@@ -13,7 +13,7 @@ Ready-to-go подходит для тех, кто хочет быстро вы�
 
 Скачайте файл с результатами разметки
 
-**[Авторизация в API](https://toloka.ai/docs/toloka-apps/api/concepts/authorization.html)**
+**[Авторизация в API](https://toloka.ai/ru/docs/toloka-apps/api/concepts/authorization.html)**
 
 Получите токен для работы с API
 
@@ -23,15 +23,15 @@ Ready-to-go подходит для тех, кто хочет быстро вы�
 
 Создайте новый пакет данных и загрузите в него элементы разметки
 
-**[Справочник API](https://toloka.ai/docs/toloka-apps/api/ref/index.html)**
+**[Справочник API](https://toloka.ai/ru/docs/toloka-apps/api/ref/index.html)**
 
 Описание методов HTTP API
 
-**[Быстрый старт API](https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html)**
+**[Быстрый старт API](https://toloka.ai/ru/docs/toloka-apps/api/concepts/quickstart-api.html)**
 
 Пошаговый запуск Ready-to-go-проекта на примере
 
-**[Служба поддержки](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1)**
+**[Служба поддержки](https://toloka.ai/ru/docs/guide/troubleshooting/support.html#troubleshooting__new_1)**
 
 Если у вас возникли проблемы, напишите нам||
 |#
