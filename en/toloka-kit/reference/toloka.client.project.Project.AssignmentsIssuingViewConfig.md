@@ -1,12 +1,13 @@
 # AssignmentsIssuingViewConfig
-`toloka.client.project.Project.AssignmentsIssuingViewConfig`
+`toloka.client.project.Project.AssignmentsIssuingViewConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.24/src/client/project/__init__.py#L141)
 
 ```python
 AssignmentsIssuingViewConfig(
     self,
     *,
     title_template: Optional[str] = None,
-    description_template: Optional[str] = None
+    description_template: Optional[str] = None,
+    map_provider: Optional[MapProvider] = None
 )
 ```
 

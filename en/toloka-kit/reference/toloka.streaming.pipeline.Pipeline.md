@@ -1,5 +1,5 @@
 # Pipeline
-`toloka.streaming.pipeline.Pipeline`
+`toloka.streaming.pipeline.Pipeline` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.24/src/streaming/pipeline.py#L65)
 
 ```python
 Pipeline(
@@ -67,5 +67,6 @@ await pipeline.run()  # Save state after each iteration. Try to load saved at st
 
 | Method | Description |
 | :------| :-----------|
+[observers_iter](toloka.streaming.pipeline.Pipeline.observers_iter.md)| Iterate over registered observers.
 [register](toloka.streaming.pipeline.Pipeline.register.md)| Register given observer.
 [run](toloka.streaming.pipeline.Pipeline.run.md)| None
