@@ -11,7 +11,7 @@ Iterate over registered observers.
 * **Returns:**
 
   An iterator over all registered observers except deleted ones.
-May contain observers sheduled to deletion and not deleted yet.
+Might contain observers scheduled for deletion and not deleted yet.
 
 * **Return type:**
 

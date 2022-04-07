@@ -7,5 +7,5 @@ Map provider for assignments_issuing_view_config:
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`YANDEX`|'YANDEX'|<p>Use Yandex.Maps as a map provider</p>
+`YANDEX`|'YANDEX'|<p>Use Yandex Maps as a map provider</p>
 `GOOGLE`|'GOOGLE'|<p>Use Google Maps as a map provider</p>
