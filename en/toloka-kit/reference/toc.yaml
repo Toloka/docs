@@ -690,8 +690,6 @@ items:
     - name: Profile.Key
       href: toloka.client.filter.Profile.Key.md
       hidden: true
-    - name: Rating
-      href: toloka.client.filter.Rating.md
     - name: RegionByIp
       href: toloka.client.filter.RegionByIp.md
     - name: RegionByPhone
@@ -1834,6 +1832,14 @@ items:
         href: toloka.client.project.template_builder.view.LinkGroupViewV1.md
       - name: ListViewV1
         href: toloka.client.project.template_builder.view.ListViewV1.md
+      - name: MapViewV1.Marker
+        href: toloka.client.project.template_builder.view.MapViewV1.Marker.md
+        hidden: true
+      - name: MapViewV1.Polygon
+        href: toloka.client.project.template_builder.view.MapViewV1.Polygon.md
+        hidden: true
+      - name: MapViewV1
+        href: toloka.client.project.template_builder.view.MapViewV1.md
       - name: MarkdownViewV1
         href: toloka.client.project.template_builder.view.MarkdownViewV1.md
       - name: TextViewV1
@@ -2109,6 +2115,15 @@ items:
     - name: BaseObserver
       href: toloka.streaming.observer.BaseObserver.md
       hidden: true
+    - name: BaseObserver.delete
+      href: toloka.streaming.observer.BaseObserver.delete.md
+      hidden: true
+    - name: BaseObserver.disable
+      href: toloka.streaming.observer.BaseObserver.disable.md
+      hidden: true
+    - name: BaseObserver.enable
+      href: toloka.streaming.observer.BaseObserver.enable.md
+      hidden: true
     - name: BaseObserver.run
       href: toloka.streaming.observer.BaseObserver.run.md
       hidden: true
@@ -2163,11 +2178,11 @@ items:
       hidden: true
   - name: pipeline
     items:
-    - name: Pipeline.inject
-      href: toloka.streaming.pipeline.Pipeline.inject.md
-      hidden: true
     - name: Pipeline
       href: toloka.streaming.pipeline.Pipeline.md
+    - name: Pipeline.observers_iter
+      href: toloka.streaming.pipeline.Pipeline.observers_iter.md
+      hidden: true
     - name: Pipeline.register
       href: toloka.streaming.pipeline.Pipeline.register.md
       hidden: true

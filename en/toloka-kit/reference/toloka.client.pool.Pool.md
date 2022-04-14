@@ -1,5 +1,5 @@
 # Pool
-`toloka.client.pool.Pool`
+`toloka.client.pool.Pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.24/src/client/pool/__init__.py#L33)
 
 ```python
 Pool(
@@ -90,7 +90,7 @@ new_pool = toloka.pool.Pool(
     project_id=existing_project_id,
     private_name='Pool 1',
     may_contain_adult_content=False,
-    will_expire=datetime.datetime.utcnow() + datetime.timedelta(days=365),
+    will_expire=datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=365),
     reward_per_assignment=0.01,
     assignment_max_duration_seconds=60*20,
     defaults=toloka.pool.Pool.Defaults(default_overlap_for_new_task_suites=3),
@@ -119,6 +119,6 @@ print(new_pool.id)
 [set_mixer_config](toloka.client.pool.codegen_setter_for_mixer_config.md)| A shortcut setter for mixer_config
 [set_owner](toloka.client.pool.codegen_setter_for_owner.md)| A shortcut setter for owner
 [set_quality_control](toloka.client.pool.codegen_setter_for_quality_control.md)| A shortcut setter for quality_control
-[set_quality_control_configs](toloka.client.pool.codegen_setter_for_quality_control_configs.md)| A shortcut method for setting
+[set_quality_control_configs](toloka.client.pool.codegen_setter_for_quality_control_configs.md)| A shortcut method for setting 
 [set_training_config](toloka.client.pool.codegen_setter_for_training_config.md)| A shortcut setter for training_config
 [set_training_requirement](toloka.client.pool.codegen_setter_for_quality_control_training_requirement.md)| A shortcut setter for quality_control.training_requirement
