@@ -2,6 +2,12 @@
 
 If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the TSV, CSV, JSON, or XLSX-file.
 
+{% cut "TSV" %}
+
+TSV (tab-separated values) is a text file format, in which data is separated by tab symbols, and strings — with the newline symbol.
+
+{% endcut %}
+
 If you need to add less than 10 images, use photo hosting. If you need to add more images, or audio and video files, use cloud storage.
 
 ## Photo hosting {#image-hosting}

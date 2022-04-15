@@ -25,7 +25,6 @@ items:
       - href: concepts/add-task.md
         name: Uploading work items
       - href: concepts/view-progress.md
-        hidden: true
         name: Starting and stopping labeling
       - href: concepts/download-results.md
         name: Downloading the results

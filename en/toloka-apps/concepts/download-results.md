@@ -1,6 +1,6 @@
 # Downloading the results
 
-{% note info %}
+{% note warning %}
 
 You can only download the results from a batch with the **Completed** status.
 
