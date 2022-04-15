@@ -42,44 +42,44 @@ To the second task, the first and third performers responded with **OK**, and th
 
 Terms:
 
-- ![](../_images/qi.svg) is a performer's accuracy.
-- ![](../_images/k.svg) is a smoothing constant.
-- ![](../_images/zj.svg) is the most popular response.
-- ![](../_images/zx.svg) is the probability that the estimate is correct.
+- $q[i]$ is a performer's accuracy.
+- $K$ is a smoothing constant.
+- $z[j]$ is the most popular response.
+- $z[x]$ is the probability that the estimate is correct.
 
-A performer's accuracy![](../_images/qi.svg) is calculated as follows:
+A performer's accuracy $q[i]$ is calculated as follows:
 
-![](../_images/q-formula.svg),
-
-where:
-
-![](../_images/k.svg) is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
-
-If there are several estimates, the most popular response is determined by adding together ![](../_images/qi.svg) of the performers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate ![](../_images/zj.svg).
-
-[Using Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), we calculate the posterior probability that the estimate ![](../_images/zj.svg) is correct.
-
-A uniform distribution of estimates is assumed a priori. For the ![](../_images/zx.svg) the a priori probability is calculated as
-
-![](../_images/p-formula.svg),
+$q[i] = \frac{K+correct.golden.sets[i]}{2×K+total.golden.sets[i]}$,
 
 where:
 
-![](../_images/Y.svg) is the number of response options.
+$K$ is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
 
-Next, we calculate the probability that the estimate ![](../_images/zj.svg) is correct.
+If there are several estimates, the most popular response is determined by adding together $q[i]$ of the performers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate $z[j]$.
 
-If the performer responded ![](../_images/zj.svg), then the probability of this is equal to the performer's accuracy ![](../_images/qi.svg). If they responded differently, then the probability of this is:
+[Using Bayes' theorem](https://en.wikipedia.org/wiki/Bayes%27_theorem), we calculate the posterior probability that the estimate $z[j]$ is correct.
 
-![](../_images/1-q.svg),
+A uniform distribution of estimates is assumed a priori. For the $z[x]$ the a priori probability is calculated as
+
+$P(z[x]) = \frac{1}{Y}$,
 
 where:
 
-![](../_images/1-q.svg) is the remaining probability.
+$Y$ is the number of response options.
+
+Next, we calculate the probability that the estimate $z[j]$ is correct.
+
+If the performer responded $z[j]$, then the probability of this is equal to the performer's accuracy $q[i]$. If they responded differently, then the probability of this is:
+
+$\frac{1-q[i]}{Y-1}$,
+
+where:
+
+$(1 - q[i])$ is the remaining probability.
 
 It ensures that the probability of an error is distributed evenly among the remaining estimates.
 
-We take all performers' responses and, for example, option ![](../_images/zx.svg) and calculate the probability that performers will select this response, provided that the correct response is ![](../_images/zx.svg):
+We take all performers' responses and, for example, option $z[x]$ and calculate the probability that performers will select this response, provided that the correct response is $z[x]$:
 
 ```go
 func z_prob(x int) : float {
@@ -93,7 +93,7 @@ func z_prob(x int) : float {
 }
 ```
 
-Next, using Bayes' theorem, we calculate the probability that the response ![](../_images/zj.svg) is correct:
+Next, using Bayes' theorem, we calculate the probability that the response $z[j]$ is correct:
 
 ```go
 r = 0
