@@ -10,6 +10,10 @@ items:
         name: What tasks can't be placed in Toloka?
       - href: concepts/quickstart.md
         name: Getting started
+      - name: Ready-to-go solutions
+        items:
+          - href: concepts/product-search-relevance.md
+            name: Product search relevance
       - name: Where to store data
         items:
           - href: concepts/cloud-storage.md
