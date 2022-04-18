@@ -105,7 +105,7 @@ To get links to files:
 
 1. All file links are created by the same template.
 
-    Links look like this:
+    The link looks like this:
 
     ```
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<file-name>
@@ -114,12 +114,12 @@ To get links to files:
     The link in the folder looks like this:
 
     ```
-    <bucket-name>.s3.<region-code>.amazonaws.com/<file-name>
+    https://<bucket-name>.s3.<region-code>.amazonaws.com/<file-path>/<file-name>
     ```
 
     {% note info %}
 
-    To get links to other files quickly, copy the link to one of them and replace `<file-name>` with the names of other files.
+    To quickly get links to other files, copy the link to one of them and replace `<file-name>` with the names of other files.
 
     {% endnote %}
 

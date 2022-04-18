@@ -23,6 +23,12 @@ A task item is a labeling unit – in other words, data uploaded to a batch. The
 
 ## Upload task items {#new-batch}
 
+{% note info %}
+
+Before uploading work items to a batch, you need to upload them to photo hosting or cloud storage. Learn more in the [Where to store data](cloud-storage.md) section.
+
+{% endnote %}
+
 Your items are uploaded to a batch. A batch is a set of data for labeling that you'll assign to performers at a time. You'll get labeling results separately for each batch, too.
 
 1. Select your project on the **Ready-to-go** tab.

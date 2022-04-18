@@ -1,6 +1,6 @@
 # Where to store files
 
-If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the TSV, CSV, JSON, or XLSX-file.
+If your task items include images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the TSV,  CSV, or XLSX file, or in JSON format.
 
 {% cut "TSV" %}
 
@@ -12,7 +12,7 @@ If you need to add less than 10 images, use photo hosting. If you need to add mo
 
 ## Photo hosting {#image-hosting}
 
-Some photo hosting services are free and don't require registration. This way you can quickly and easily upload your files and get links to them. But they have limitations. For example, [wampi](https://wampi.ru/?lang=en) doesn't allow people to use their service for commercial purposes. Images uploaded without creating an account can be deleted if they are not accessed for a year. We recommend you to read the terms of use before using photo hosting services.
+Some photo hosting services are free and don't require registration. This way you can quickly and easily upload your files and get links to them. But they have limitations. For example, [wampi](https://wampi.ru/?lang=en) doesn't allow people to use their service for commercial purposes. Images uploaded without creating an account can be deleted if they are not accessed for a year. We recommend that you read the terms of use before using photo hosting services.
 
 {% note info %}
 
@@ -73,20 +73,20 @@ Storage type | Trial length | Free storage size | Grant amount | Additional info
 
 For example, Amazon S3:
 
-1. Sign up for [Amazon Web Services](https://aws.amazon.com/getting-started/hands-on/backup-files-to-amazon-s3/?nc1=h_ls).
-1. Enter the [console](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin).
-1. Enter the [Amazon S3](https://s3.console.aws.amazon.com/s3/home) service.
-1. Create the bucket.
+1. Sign up to [Amazon Web Services](https://aws.amazon.com/getting-started/hands-on/backup-files-to-amazon-s3/?nc1=h_ls).
+1. Go to the [Console](https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin).
+1. Log in to [Amazon S3](https://s3.console.aws.amazon.com/s3/home) service.
+1. Create a bucket.
 1. Upload files to the bucket.
-1. Copy the links.
+1. Copy links.
 
-## Creating a markup element {#tsv-create}
+## Creating a task item {#tsv-create}
 
 {% include [tsv-create-create-tsv](_includes/cloud-storage/id-tsv-create/create-tsv.md) %}
 
 {% note info %}
 
-Field names may vary for different ready-to-go solutions.
+In different ready-to-go solutions, the names of the fields may differ.
 
 {% endnote %}
 

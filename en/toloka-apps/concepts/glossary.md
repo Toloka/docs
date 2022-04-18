@@ -18,6 +18,6 @@ Task item
 
 TSV-file
 
-: TSV (tab-separated values) is a text file format, in which data is separated by tab symbols, and strings &mdash; with the newline symbol.
+: TSV (tab-separated values) is a text file format, in which data is separated by a tab, and lines are separated by a newline symbol.
 
 {% include [contact-support](_includes/contact-support.md) %}
