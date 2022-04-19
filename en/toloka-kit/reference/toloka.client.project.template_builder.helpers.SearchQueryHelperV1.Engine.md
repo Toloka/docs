@@ -14,7 +14,7 @@ An enumeration.
 `WIKIPEDIA`|'wikipedia'|<p></p>
 `YANDEX_COLLECTIONS`|'yandex/collections'|<p></p>
 `YANDEX_VIDEO`|'yandex/video'|<p></p>
-`YANDEX_IMAGES`|'yandex/_images'|<p></p>
-`GOOGLE_IMAGES`|'google/_images'|<p></p>
+`YANDEX_IMAGES`|'yandex/images'|<p></p>
+`GOOGLE_IMAGES`|'google/images'|<p></p>
 `YANDEX_NEWS`|'yandex/news'|<p></p>
 `GOOGLE_NEWS`|'google/news'|<p></p>
