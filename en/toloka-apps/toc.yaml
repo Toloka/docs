@@ -51,40 +51,44 @@ items:
           - name: app
             items:
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_get.html
-                name: Getting a list of Apps
+                name: Get the list of ready-to-go project templates (Apps)
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_app_id_get.html
-                name: Information about the App
+                name: Information about the project template
           - name: app-project
             items:
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html
-                name: Archiving the project
+                name: Archive the project
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_post.html
-                name: Creating a new project
+                name: Create a new project
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
+                name: Get information about the project
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_get.html
                 name: Get the list of projects
-              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
-                name: Project information
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.html
-                name: Unarchiving the project
+                name: Unarchive the project
           - name: batch
             items:
-              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
-                name: Batch information
               - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.html
-                name: Creating a new batch
+                name: Create a new batch with the first set of items
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
+                name: Get information about the batch
               - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.html
-                name: List of batches in the project
+                name: Get the list of batches in the project
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_resume_post.html
+                name: Resume processing the batch
               - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.html
                 name: Start processing the batch
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_stop_post.html
+                name: Stop processing the batch
           - name: item
             items:
               - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_post.html
-                name: Adding a new work item
+                name: Add a new item to the batch
               - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.html
-                name: Creating a batch of new items
+                name: Add multiple items to the batch
               - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html
-                name: Information about one work item
+                name: Get information about the work item
               - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html
-                name: List of work items in the project
+                name: Get the list of all items in the project
 
 base: en
