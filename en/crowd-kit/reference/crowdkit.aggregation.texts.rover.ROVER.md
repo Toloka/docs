@@ -38,7 +38,7 @@ J. G. Fiscus,
 from crowdkit.aggregation import load_dataset
 from crowdkit.aggregation import ROVER
 df, gt = load_dataset('crowdspeech-test-clean')
-df['text'] = df['text].apply(lambda s: s.lower())
+df['text'] = df['text'].apply(lambda s: s.lower())
 tokenizer = lambda s: s.split(' ')
 detokenizer = lambda tokens: ' '.join(tokens)
 result = ROVER(tokenizer, detokenizer).fit_predict(df)
