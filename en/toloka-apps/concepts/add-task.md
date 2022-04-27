@@ -1,4 +1,4 @@
-# Uploading work items
+# Uploading task items
 
 You can add data to a ready-to-go project with the **Active** or **Pending** status.
 
@@ -7,7 +7,7 @@ You can add data to a ready-to-go project with the **Active** or **Pending** sta
 1. Open the project.
 1. Click **Create batch**.
 1. Enter a unique name for the batch.
-1. Add work items in one of the following ways:
+1. Add task items in one of the following ways:
 
     - Upload a ready-made TSV file.
     - Enter the data in text format.
@@ -18,7 +18,7 @@ You can add data to a ready-to-go project with the **Active** or **Pending** sta
 
 1. Open the project and go to the appropriate batch.
 1. Click **Add items** on the right.
-1. Add work items in one of the following ways:
+1. Add task items in one of the following ways:
 
     - Upload a ready-made TSV file.
     - Enter the data in text format.
@@ -42,9 +42,9 @@ id  image_url
 
 {% endcut %}
 
-{% cut "My project is being moderated. Can I add work items to it?" %}
+{% cut "My project is being moderated. Can I add task items to it?" %}
 
-Yes. You can add work items to projects in the **Active** or **Pending** status.
+Yes. You can add task items to projects in the **Active** or **Pending** status.
 
 {% endcut %}
 

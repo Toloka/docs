@@ -21,7 +21,7 @@ Get a token to work with the API
 
 Frequently asked questions about the service|**[Uploading data for labeling](add-task.md)**
 
-Create a new batch and upload work items to it
+Create a new batch and upload task items to it
 
 **[API reference](https://toloka.ai/docs/toloka-apps/api/ref/index.html)**
 

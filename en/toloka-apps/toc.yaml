@@ -17,7 +17,7 @@ items:
       - name: Where to store data
         items:
           - href: concepts/cloud-storage.md
-            name: Where to store files
+            name: Data storage
           - href: concepts/amazon-cloud-storage.md
             name: Amazon S3
           - href: concepts/azure-cloud-storage.md
@@ -27,7 +27,7 @@ items:
           - href: concepts/use-object-storage.md
             name: Yandex Object Storage
       - href: concepts/add-task.md
-        name: Uploading work items
+        name: Uploading task items
       - href: concepts/view-progress.md
         name: Starting and stopping labeling
       - href: concepts/download-results.md

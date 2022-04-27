@@ -38,9 +38,17 @@ To get links to files:
 
 1. Select the region closest to your performers. For example, for performers from Germany: **Region → (Europe) West Central Germany**.
 
+    {% cut "What it looks like in the interface" %}
+
+    ![What it looks like in the interface](../_images/tutorials/cloud-storage/azure/create-storage-account.png =600x177)
+
+    {% endcut %}
+
 1. Leave other fields unchanged. Click **Review + create**.
 
-1. Wait till it opens. Click **Go to resource.**
+1. Wait till it opens. Click **Go to resource**.
+
+    ![Go to resource](../_images/tutorials/cloud-storage/azure/deployment-complete.png =350x199)
 
 ## Create a container {#container}
 

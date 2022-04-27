@@ -2,7 +2,7 @@
 
 ## Start labeling {#start-batch}
 
-You can start labeling after uploading work items to a project's batch.
+You can start labeling after uploading task items to a project's batch.
 
 The following project statuses are supported:
 
@@ -39,7 +39,7 @@ You can stop labeling if it isn't completed.
 
 {% note info %}
 
-Work items in the **Processing** status will continue to be labeled and you'll be charged for them. These tasks are already reserved for performers and are being executed, so it isn't possible to stop their labeling.
+Task items in the **Processing** status will continue to be labeled and you'll be charged for them. These tasks are already reserved for performers and are being executed, so it isn't possible to stop their labeling.
 
 {% endnote %}
 

@@ -26,7 +26,7 @@ Toloka **isn't intended** for tasks that could harm performers, other requesters
 
     - Request data that can be used to identify the performer (for example, their phone number, email address, first and last name, place of residence, or bank card details).
 
-    - Make performers take pictures or videos of people in the street, cars, and other vehicles with license plates. Such tasks are prohibited by the [User Agreement](https://yandex.com/legal/toloka_useragreement/index.html). Mention this in the instructions for performers. If you receive these types of photos or videos in responses, don't use them. However, you can ask performers to take a selfie or a video of themselves.
+    - Make performers take pictures or videos of people in the street, cars, and other vehicles with license plates. Such tasks are prohibited by the [User Agreement](https://toloka.ai/tolokers/legal/user-agreement). Mention this in the instructions for performers. If you receive these types of photos or videos in responses, don't use them. However, you can ask performers to take a selfie or a video of themselves.
 
 1. **Could harm the performer, other requesters, or the Toloka platform.** Don't post tasks if they:
 
@@ -86,7 +86,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
   - Request data that can be used to identify the performer (for example, their phone number, email address, first and last name, place of residence, or bank card details).
 
-  - Make performers take pictures or videos of people in the street, cars, and other vehicles with license plates. Such tasks are prohibited by the [User Agreement](https://yandex.com/legal/toloka_useragreement/index.html). Mention this in the instructions for performers. If you receive these types of photos or videos in responses, don't use them. However, you can ask performers to take a selfie or a video of themselves.
+  - Make performers take pictures or videos of people in the street, cars, and other vehicles with license plates. Such tasks are prohibited by the [User Agreement](https://toloka.ai/tolokers/legal/user-agreement). Mention this in the instructions for performers. If you receive these types of photos or videos in responses, don't use them. However, you can ask performers to take a selfie or a video of themselves.
 
 - **Could harm the performer.** Don't post tasks if they:
 
