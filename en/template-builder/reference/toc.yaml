@@ -1,0 +1,195 @@
+title: List of components
+items:
+- name: List of components
+  href: index.md
+- name: Layouts
+  items:
+  - name: List of layouts
+    href: layouts.md
+  - name: layout.bars
+    href: layout.bars.md
+  - name: layout.columns
+    href: layout.columns.md
+  - name: layout.compare
+    href: layout.compare.md
+  - name: layout.side-by-side
+    href: layout.side-by-side.md
+  - name: layout.sidebar
+    href: layout.sidebar.md
+- name: Views
+  items:
+  - name: List of views
+    href: views.md
+  - name: view.action-button
+    href: view.action-button.md
+  - name: view.alert
+    href: view.alert.md
+  - name: view.audio
+    href: view.audio.md
+  - name: view.collapse
+    href: view.collapse.md
+  - name: view.device-frame
+    href: view.device-frame.md
+  - name: view.divider
+    href: view.divider.md
+  - name: view.group
+    href: view.group.md
+  - name: view.iframe
+    href: view.iframe.md
+  - name: view.image
+    href: view.image.md
+  - name: view.labeled-list
+    href: view.labeled-list.md
+  - name: view.link
+    href: view.link.md
+  - name: view.link-group
+    href: view.link-group.md
+  - name: view.list
+    href: view.list.md
+  - name: view.map
+    href: view.map.md
+  - name: view.markdown
+    href: view.markdown.md
+  - name: view.text
+    href: view.text.md
+  - name: view.video
+    href: view.video.md
+- name: Fields
+  items:
+  - name: List of fields
+    href: fields.md
+  - name: field.audio
+    href: field.audio.md
+  - name: field.button-radio
+    href: field.button-radio.md
+  - name: field.button-radio-group
+    href: field.button-radio-group.md
+  - name: field.checkbox
+    href: field.checkbox.md
+  - name: field.checkbox-group
+    href: field.checkbox-group.md
+  - name: field.date
+    href: field.date.md
+  - name: field.email
+    href: field.email.md
+  - name: field.file
+    href: field.file.md
+  - name: field.image-annotation
+    href: field.image-annotation.md
+  - name: field.list
+    href: field.list.md
+  - name: field.media-file
+    href: field.media-file.md
+  - name: field.number
+    href: field.number.md
+  - name: field.phone-number
+    href: field.phone-number.md
+  - name: field.radio-group
+    href: field.radio-group.md
+  - name: field.select
+    href: field.select.md
+  - name: field.text
+    href: field.text.md
+  - name: field.text-annotation
+    href: field.text-annotation.md
+  - name: field.textarea
+    href: field.textarea.md
+- name: Conditions
+  items:
+  - name: List of conditions
+    href: conditions.md
+  - name: condition.all
+    href: condition.all.md
+  - name: condition.any
+    href: condition.any.md
+  - name: condition.empty
+    href: condition.empty.md
+  - name: condition.equals
+    href: condition.equals.md
+  - name: condition.link-opened
+    href: condition.link-opened.md
+  - name: condition.not
+    href: condition.not.md
+  - name: condition.played
+    href: condition.played.md
+  - name: condition.played-fully
+    href: condition.played-fully.md
+  - name: condition.required
+    href: condition.required.md
+  - name: condition.same-domain
+    href: condition.same-domain.md
+  - name: condition.schema
+    href: condition.schema.md
+  - name: condition.sub-array
+    href: condition.sub-array.md
+  - name: condition.distance
+    href: condition.distance.md
+- name: Helpers
+  items:
+  - name: List of helpers
+    href: helpers.md
+  - name: helper.concat-arrays
+    href: helper.concat-arrays.md
+  - name: helper.entries2object
+    href: helper.entries2object.md
+  - name: helper.if
+    href: helper.if.md
+  - name: helper.join
+    href: helper.join.md
+  - name: helper.object2entries
+    href: helper.object2entries.md
+  - name: helper.replace
+    href: helper.replace.md
+  - name: helper.search-query
+    href: helper.search-query.md
+  - name: helper.switch
+    href: helper.switch.md
+  - name: helper.text-transform
+    href: helper.text-transform.md
+  - name: helper.transform
+    href: helper.transform.md
+  - name: helper.translate
+    href: helper.translate.md
+  - name: helper.proxy
+    href: helper.proxy.md
+- name: Plugins
+  items:
+  - name: List of plugins
+    href: plugins.md
+  - name: plugin.field.image-annotation.hotkeys
+    href: plugin.field.image-annotation.hotkeys.md
+  - name: plugin.field.text-annotation.hotkeys
+    href: plugin.field.text-annotation.hotkeys.md
+  - name: plugin.hotkeys
+    href: plugin.hotkeys.md
+  - name: plugin.toloka
+    href: plugin.toloka.md
+  - name: plugin.trigger
+    href: plugin.trigger.md
+- name: Data sources
+  items:
+  - name: List of data sources
+    href: datas.md
+  - name: data.location
+    href: data.location.md
+- name: Actions
+  items:
+  - name: List of actions
+    href: actions.md
+  - name: action.bulk
+    href: action.bulk.md
+  - name: action.notify
+    href: action.notify.md
+  - name: action.open-close
+    href: action.open-close.md
+  - name: action.open-link
+    href: action.open-link.md
+  - name: action.play-pause
+    href: action.play-pause.md
+  - name: action.rotate
+    href: action.rotate.md
+  - name: action.set
+    href: action.set.md
+  - name: action.toggle
+    href: action.toggle.md
+base: en

@@ -1,0 +1,102 @@
+title: Конструктор шаблонов
+items:
+  - href: index.md
+    name: Обзор
+  - href: quickstart.md
+    name: Быстрый старт
+  - href: glossary.md
+    name: Термины и определения
+  - href: concepts/types.md
+    hidden: true
+    name: Типы свойств
+  - name: Готовые шаблоны
+    items:
+      - href: templates/index.md
+        name: Готовые шаблоны
+      - name: Обогащение данных
+        items:
+          - href: templates/survey.md
+            name: Опрос
+          - href: templates/data-search.md
+            name: Поиск данных в сети
+      - name: Аудио
+        items:
+          - href: templates/audio-transcript.md
+            name: Транскрипция аудио
+          - href: templates/sbs-audio.md
+            name: Попарное сравнение аудио
+      - name: Видео
+        items:
+          - href: templates/video-moderation.md
+            name: Оценка видео
+      - name: Изображения
+        items:
+          - href: templates/image-classification.md
+            name: Классификация изображений
+      - name: Тексты
+        items:
+          - href: templates/copywriting.md
+            name: Копирайтинг
+  - name: Инструкции
+    items:
+      - href: operations/all.md
+        name: Список инструкций
+      - name: Входные и выходные данные
+        items:
+          - href: operations/work-with-data.md
+            name: Работа с данными
+          - href: operations/input-output-data.md
+            name: Чтение и запись
+          - href: operations/create-specs.md
+            name: Создание спецификации
+          - href: operations/clear-data.md
+            name: Очистка введенных значений
+      - name: Аудио и видео
+        items:
+          - href: operations/play-audio.md
+            name: Воспроизвести аудио
+          - href: operations/insert-videos.md
+            name: Вставить видео
+          - href: operations/sbs-video.md
+            name: Сравнить видеоклипы
+      - name: Работа с текстом и числами
+        items:
+          - href: operations/components-for-texts.md
+            name: Компоненты для работы с текстом
+          - href: operations/text-formatting.md
+            name: Форматирование текста
+          - href: operations/components-for-numbers.md
+            name: Поле для ввода чисел
+      - name: Работа с картинками
+        items:
+          - href: operations/insert-images.md
+            name: Вставка картинок
+          - href: operations/select-areas.md
+            name: Выделение объектов на картинке
+      - name: Настройки отображения
+        items:
+          - href: operations/set-plugin-toloka.md
+            name: Отображение заданий
+          - href: operations/rtl-ltr.md
+            name: Направление написания
+      - href: operations/internet-search.md
+        name: Вставка ссылок
+  - name: Советы и рекомендации
+    items:
+      - href: best-practices/hotkeys.md
+        name: Настройте горячие клавиши
+      - href: best-practices/conditions.md
+        name: Проверяйте ответы автоматически
+      - href: best-practices/show-hints.md
+        name: Показывайте подсказки
+      - href: best-practices/reuse.md
+        name: Переиспользуйте код
+  - name: Справочник компонентов
+    include:
+      path: reference/toc.yaml
+      mode: link
+  - href: troubleshooting/troubleshooting.md
+    name: Решение проблем
+  - href: concepts/support.md
+    name: Служба поддержки
+base: ru
