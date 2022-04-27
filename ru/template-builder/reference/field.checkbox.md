@@ -1,0 +1,19 @@
+# field.checkbox
+
+Переключатель в виде галочки.
+
+Если вам нужно добавить группу переключателей, используйте [field.checkbox-group](field.checkbox-group.md).
+
+[Посмотреть пример в песочнице](https://clck.ru/T6Vii).
+
+## Свойства компонента {#properties}
+
+| Название                                 | Тип                                                                                    | Описание                                                                                                                                                                                                                                                                  |
+| ---------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `type`<span style="color: red">\*</span> | "field.checkbox"                                                                       | <p>Задает тип компонента.</p>                                                                                                                                                                                                                                             |
+| `data`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/writable">writable</a>   | <p>Данные, значения которых будут обработаны или изменены.</p>                                                                                                                                                                                                            |
+| `label`                                  | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Надпись над компонентом.</p>                                                                                                                                                                                                                                           |
+| `disabled`                               | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Свойство, которое отключает компонент. При `true` компонент будет недоступен.</p>                                                                                                                                                                                      |
+| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Текст подсказки.</p>                                                                                                                                                                                                                                                   |
+| `preserveFalse`                          | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Свойство указывающее, надо ли возвращать значения `false` в результатах. По умолчанию, если компонент возвращает `false`, то в выходные данные этот результат не будет добавлен. Чтобы в результаты добавлялись значения `false`, укажите `"preserveFalse": true`.</p> |
+| `validation`                             | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Валидация на основе условия <em>(condition)</em>.</p>                                                                                                                                                                                                                  |
