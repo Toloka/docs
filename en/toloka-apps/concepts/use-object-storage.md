@@ -51,7 +51,7 @@ To use files from Yandex.Cloud:
     The link in the folder looks like this:
 
     ```
-    https://storage.yandexcloud.net/<bucket-name>/<path-to-file>/<file-name>
+    https://storage.yandexcloud.net/<bucket-name>/<file-path>/<file-name>
     ```
 
     {% note info %}

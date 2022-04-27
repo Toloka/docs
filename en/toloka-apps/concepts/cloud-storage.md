@@ -1,10 +1,10 @@
-# Where to store files
+# Data storage
 
 If your task items include images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the TSV,  CSV, or XLSX file, or in JSON format.
 
 {% cut "TSV" %}
 
-TSV (tab-separated values) is a text file format, in which data is separated by tab symbols, and strings — with the newline symbol.
+TSV (tab-separated values) is a text file format in which data is separated by a tab, and lines are separated by a newline symbol.
 
 {% endcut %}
 

@@ -2,11 +2,11 @@
 
 Batch for labeling
 
-: A batch of data that you send for labeling at a time. The batch consists of work items.
+: A batch of data that you send for labeling at a time. The batch consists of task items.
 
 Ready-to-go project
 
-: A ready-to-go project is based on a ready-made solution with the parameters that you specified. The interface and quality controls are pre-configured, decomposition is already done, and everything is ready to use: all you need is to upload work items to batches and send them for labeling.
+: A ready-to-go project is based on a ready-made solution with the parameters that you specified. The interface and quality controls are pre-configured, decomposition is already done, and everything is ready to use: all you need is to upload task items to batches and send them for labeling.
 
 Ready-to-go solution
 
@@ -14,9 +14,9 @@ Ready-to-go solution
 
 Task item
 
-: A task item is a labeling unit &mdash; in other words, data uploaded to a batch. The batch consists of work items, and the project consists of batches.
+: A task item is a labeling unit &mdash; in other words, data uploaded to a batch. The batch consists of task items, and the project consists of batches.
 
-TSV-file
+TSV file
 
 : TSV (tab-separated values) is a text file format, in which data is separated by a tab, and lines are separated by a newline symbol.
 

@@ -25,7 +25,7 @@ What should I add to a batch?
   1   https://yastat.net/s3/tb/static/file-examples/special/street.jpg
   ```
 
-My project is being moderated. Can I add work items to it?
-: Yes. You can add work items to projects in the **Active** or **Pending** status.
+My project is being moderated. Can I add task items to it?
+: Yes. You can add task items to projects in the **Active** or **Pending** status.
 
 {% include [contact-support](_includes/contact-support.md) %}

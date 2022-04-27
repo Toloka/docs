@@ -25,7 +25,7 @@ A task item is a labeling unit – in other words, data uploaded to a batch. The
 
 {% note info %}
 
-Before uploading work items to a batch, you need to upload them to photo hosting or cloud storage. Learn more in the [Where to store data](cloud-storage.md) section.
+Before uploading task items to a batch, you need to upload them to photo hosting or cloud storage. Learn more in the [Where to store data](cloud-storage.md) section.
 
 {% endnote %}
 
@@ -37,13 +37,13 @@ Your items are uploaded to a batch. A batch is a set of data for labeling that y
 
 1. Enter a name for the batch.
 
-1. Upload work items in one of the following ways:
+1. Upload task items in one of the following ways:
 
     - Upload a ready-made TSV file.
 
     - Enter the data in text format.
 
-      Each line with data is a work item. You can later view each item's status.
+      Each line with data is a task item. You can later view each item's status.
 
 1. Click **Create batch** again. Done! You created a batch.
 
