@@ -1,0 +1,1 @@
+Files will be accessible to anyone with a link. We recommend using hashed file names to keep your files secure. You can generate hashes using online tools (for example, [Online MD5 Hash Generator](https://en.wikipedia.org/wiki/Hash_function)). Learn more about [hashing](https://en.wikipedia.org/wiki/Hash_function).

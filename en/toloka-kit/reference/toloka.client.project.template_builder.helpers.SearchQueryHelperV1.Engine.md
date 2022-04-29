@@ -6,7 +6,7 @@ An enumeration.
 ## Attributes Description
 
 | Name | Value | Description |
-| :------| :-----------| :----------| 
+| :------| :-----------| :----------|
 `YANDEX`|'yandex'|<p></p>
 `GOOGLE`|'google'|<p></p>
 `BING`|'bing'|<p></p>

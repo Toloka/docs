@@ -1,0 +1,94 @@
+title: Ready-to-go solutions
+href: concepts/index.md
+items:
+  - name: Guide
+    expanded: true
+    items:
+      - href: concepts/index.md
+        name: About
+      - href: concepts/unwanted.md
+        name: What tasks can't be placed in Toloka?
+      - href: concepts/quickstart.md
+        name: Getting started
+      - name: Ready-to-go solutions
+        items:
+          - href: concepts/product-search-relevance.md
+            name: Product search relevance
+      - name: Where to store data
+        items:
+          - href: concepts/cloud-storage.md
+            name: Data storage
+          - href: concepts/amazon-cloud-storage.md
+            name: Amazon S3
+          - href: concepts/azure-cloud-storage.md
+            name: Azure Blob Storage
+          - href: concepts/google-cloud-storage.md
+            name: Google Cloud Storage
+          - href: concepts/use-object-storage.md
+            name: Yandex Object Storage
+      - href: concepts/add-task.md
+        name: Uploading task items
+      - href: concepts/view-progress.md
+        name: Starting and stopping labeling
+      - href: concepts/download-results.md
+        name: Downloading the results
+      - href: concepts/glossary.md
+        name: Terms and definitions
+      - href: concepts/troubleshooting.md
+        name: Troubleshooting
+  - name: Ready-to-go solutions API
+    items:
+      - name: How to use
+        items:
+          - href: https://toloka.ai/docs/toloka-apps/api/concepts/authorization.html
+            name: Accessing the API
+          - href: https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html
+            name: API quick start
+      - name: API reference
+        items:
+          - href:
+            name: API Toloka Apps external
+          - name: app
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_get.html
+                name: Get the list of ready-to-go project templates (Apps)
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_app_id_get.html
+                name: Information about the project template
+          - name: app-project
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html
+                name: Archive the project
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_post.html
+                name: Create a new project
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
+                name: Get information about the project
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_get.html
+                name: Get the list of projects
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.html
+                name: Unarchive the project
+          - name: batch
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.html
+                name: Create a new batch with the first set of items
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
+                name: Get information about the batch
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.html
+                name: Get the list of batches in the project
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_resume_post.html
+                name: Resume processing the batch
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.html
+                name: Start processing the batch
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_stop_post.html
+                name: Stop processing the batch
+          - name: item
+            items:
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_post.html
+                name: Add a new item to the batch
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.html
+                name: Add multiple items to the batch
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html
+                name: Get information about the work item
+              - href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html
+                name: Get the list of all items in the project
+
+base: en
