@@ -6,6 +6,8 @@ items:
     items:
       - href: concepts/index.md
         name: О сервисе
+      - href: concepts/details.md
+        name: Как устроен сервис
       - href: concepts/unwanted.md
         name: "Какие задания нельзя размещать в Яндекс\_Толоке"
       - href: concepts/quickstart.md
