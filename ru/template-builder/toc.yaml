@@ -1,7 +1,6 @@
 title: Конструктор шаблонов
+href: index.md
 items:
-  - href: index.md
-    name: Обзор
   - href: quickstart.md
     name: Быстрый старт
   - href: glossary.md
@@ -12,7 +11,7 @@ items:
   - name: Готовые шаблоны
     items:
       - href: templates/index.md
-        name: Готовые шаблоны
+        name: Список
       - name: Обогащение данных
         items:
           - href: templates/survey.md

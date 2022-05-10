@@ -18,9 +18,9 @@
 }
 ```
 
-#### Пример основного синтаксиса Markdown
+{% cut "Пример основного синтаксиса Markdown" %}
 
-Ниже представлен код, охватывающий основной синтаксис Markdown. Посмотрите в , как можно использовать этот код в компоненте [view.markdown](../reference/view.markdown.md).
+Ниже представлен код, охватывающий основной синтаксис Markdown. Посмотрите в [песочнице](https://clck.ru/QZMDA), как можно использовать этот код в компоненте [view.markdown](../reference/view.markdown.md).
 
 Обратите внимание, что код перед вставкой в конструктор шаблонов был отредактирован в соответствии с [ограничениями](#specs).
 ```
@@ -104,9 +104,9 @@ Indented code
 
 Block code "fences"
 
-```
+'''
 Sample text here...
-```
+'''
 
 ## Tables
 
@@ -146,6 +146,8 @@ With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 ```
+
+{% endcut %}
 
 ## Особенности вставки кода в разметке Markdown {#specs}
 

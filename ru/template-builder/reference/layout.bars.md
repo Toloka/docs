@@ -8,10 +8,12 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                    | Тип                                                                                    | Описание                                                          |
-| ------------------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>    | "layout.bars"                                                                          | <p>Задает тип компонента.</p>                                     |
-| `barAfter`                                  | <a class="xref popup-link" href="../concepts/types.dita#types/view">view</a>           | <p>Панель, которая отображается у нижней границы компонента.</p>  |
-| `barBefore`                                 | <a class="xref popup-link" href="../concepts/types.dita#types/view">view</a>           | <p>Панель, которая отображается у верхней границы компонента.</p> |
-| `content`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/view">view</a>           | <p>Основной контент.</p>                                          |
-| `validation`                                | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Валидация на основе условия <em>(condition)</em>.</p>          |
+#|
+||**Название**|**Тип**|**Описание**||
+
+||`type*`|"layout.bars"|Задает тип компонента.||
+||`barAfter`|view|Панель, которая отображается у нижней границы компонента.||
+||`barBefore`|view|Панель, которая отображается у верхней границы компонента.||
+||`content*`|view|Основной контент.||
+||`validation`|condition|Валидация на основе условия _(condition)_.||
+|#
