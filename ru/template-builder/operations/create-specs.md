@@ -279,12 +279,12 @@
   - Буквы и символы без цифр
   
       ```json
-        "my_number_string": {
-            "type": "string",
-            "required": true,
-            "min_length": 10,
-            "max_length": 100,
-            "pattern": "[^0-9]+"
+      "my_number_string": {
+          "type": "string",
+          "required": true,
+          "min_length": 10,
+          "max_length": 100,
+          "pattern": "[^0-9]+"
       }
       ```
 
