@@ -1,12 +1,10 @@
 title: Справочник компонентов
 items:
-- name: Список компонентов
+- name: Справочник компонентов
   href: index.md
-- name: Работа с данными
-  href: work-with-data.md
 - name: Варианты расстановки элементов (layouts)
   items:
-  - name: Список вариантов расстановки
+  - name: List of варианты расстановки элементов (layouts)
     href: layouts.md
   - name: layout.bars
     href: layout.bars.md

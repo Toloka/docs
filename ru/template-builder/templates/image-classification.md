@@ -10,9 +10,9 @@
 - [plugin.toloka](../reference/plugin.toloka.md) — настраивает внешний вид задания;
 - [plugin.hotkeys](../reference/plugin.hotkeys.md) — [горячие клавиши](../best-practices/hotkeys.md).
 
-{% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
-
 {% endcut %}
+
+{% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
 ## Что еще можно настроить {#add-more}
 

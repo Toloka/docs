@@ -56,21 +56,23 @@
 
 - Радиокнопки
 
-Используйте компонент [field.radio-group](../reference/field.radio-group.md).
+  Используйте компонент [field.radio-group](../reference/field.radio-group.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2wD)
   
 - Кнопки
 
-Используйте компонент [field.button-radio-group](../reference/field.button-radio-group.md).
+  Используйте компонент [field.button-radio-group](../reference/field.button-radio-group.md).
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2ws)
   
 - Чекбокс
 
-Используйте компонент [field.checkbox](../reference/field.checkbox.md).
+  Используйте компонент [field.checkbox](../reference/field.checkbox.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2vc)
-  
+
+{% endlist %}
+
 ## Пользователь добавляет поля для ввода {#dynamic-field-add}
 
 Это сложный пример, который состоит из четырех основных частей:

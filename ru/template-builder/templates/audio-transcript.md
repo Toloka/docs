@@ -24,7 +24,7 @@
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/T324W)
   
-- Пригодится для коротких аудио — поставьте их на повтор, добавив в свойства компонента [view.audio](../reference/view.audio.md)`loop: true`.
+- Пригодится для коротких аудио — поставьте их на повтор, добавив в свойства компонента [view.audio](../reference/view.audio.md) `loop: true`.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/T3279)
   
