@@ -244,80 +244,87 @@
 
       ```json
       "my_string": {
-      "type": "string",
-      "required": true,
-      "min_length": 10,
-      "max_length": 100
+          "type": "string",
+          "required": true,
+          "min_length": 10,
+          "max_length": 100
       }
       ```
 
 
   - Только русские буквы и цифры
+  
       ```json
       "my_ru_string": {
-      "type": "string",
-      "required": true,
-      "min_length": 10,
-      "max_length": 100,
-      "pattern": "[а-яА-Я0-9]+"
+          "type": "string",
+          "required": true,
+          "min_length": 10,
+          "max_length": 100,
+          "pattern": "[а-яА-Я0-9]+"
       }
       ```
 
   - Только латинские буквы и цифры
+  
       ```json
       "my_en_string": {
-      "type": "string",
-      "required": true,
-      "min_length": 10,
-      "max_length": 100,
-      "pattern": "[a-zA-Z0-9]+"
+          "type": "string",
+          "required": true,
+          "min_length": 10,
+          "max_length": 100,
+          "pattern": "[a-zA-Z0-9]+"
       }
       ```
 
   - Буквы и символы без цифр
+  
       ```json
-      "my_number_string": {
-      "type": "string",
-      "required": true,
-      "min_length": 10,
-      "max_length": 100,
-      "pattern": "[^0-9]+"
+        "my_number_string": {
+            "type": "string",
+            "required": true,
+            "min_length": 10,
+            "max_length": 100,
+            "pattern": "[^0-9]+"
       }
       ```
 
   - Ссылка с определенного сайта
+  
       ```json
       "my_url": {
-      "type": "string",
-      "required": true,
-      "pattern": "(?:http(?:s)?:\\/\\/)?(?:[a-zA-z-]+(\\.)+)*(?:yandex\\.ru){1}(\\/|\\/[a-zA-Z-\\._~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]+)?"
+          "type": "string",
+          "required": true,
+          "pattern": "(?:http(?:s)?:\\/\\/)?(?:[a-zA-z-]+(\\.)+)*(?:yandex\\.ru){1}(\\/|\\/[a-zA-Z-\\._~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]+)?"
       }
       ```
 
   - Номер телефона с символами `+`, `-` и пробелом
+  
       ```json
       "my_phone_string": {
-      "type": "string",
-      "required": true,
-      "pattern": "\\+?[0-9\\s-]{4,}"
+          "type": "string",
+          "required": true,
+          "pattern": "\\+?[0-9\\s-]{4,}"
       }
       ```
 
   - Электронная почта с символами `@`, `-` и `.`
+  
       ```json
       "my_mail_string": {
-      "type": "string",
-      "required": true,
-      "pattern": "[a-zA-Z]{1}[a-zA-Z0-9\\.\\-_]+@[a-zA-Z0-9\\.\\-_]+\\.[a-zA-Z]{2,}"
+          "type": "string",
+          "required": true,
+          "pattern": "[a-zA-Z]{1}[a-zA-Z0-9\\.\\-_]+@[a-zA-Z0-9\\.\\-_]+\\.[a-zA-Z]{2,}"
       }
       ```
 
   - Месяц
+  
       ```json
       "my_month_string": {
-      "type": "string",
-      "required": true,
-      "allowed_values": ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь" "ноябрь", "декабрь"]
+          "type": "string",
+          "required": true,
+          "allowed_values": ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь" "ноябрь", "декабрь"]
       }
       ```
 
@@ -349,42 +356,46 @@
   {% cut "Числа" %}
 
   - Целое число из указанного диапазона:
+  
       ```json
       "my_integer": {
-      "type": "integer",
-      "required": true,
-      "min_value": 1,
-      "max_value": 100
+          "type": "integer",
+          "required": true,
+          "min_value": 1,
+          "max_value": 100
       }
       ```
 
   - Целое число со списком допустимых значений:
+  
       ```json
       "my_integer": {
-      "type": "integer",
-      "required": true,
-      "allowed_values": [10, 20, 30]
+          "type": "integer",
+          "required": true,
+          "allowed_values": [10, 20, 30]
       }
       ```
 
   - Дробное число:
+  
       ```json
       "my_float": {
-      "type": "float",
-      "required": true,
-      "min_value": 10.11,
-      "max_value": 65.51
+          "type": "float",
+          "required": true,
+          "min_value": 10.11,
+          "max_value": 65.51
       }
       ```
 
   - Число с 0, 1 или 2 знаками после запятой.
 
       Для этого надо выбрать тип **строка** и проверять с помощью регулярного выражения. Обратите внимание, что разделитель дробной части — запятая:
+      
       ```json
       "my_mail_string": {
-      "type": "string",
-      "required": true,
-      "pattern": "^([0-9]+)(,([0-9]){1,2})?$"
+          "type": "string",
+          "required": true,
+          "pattern": "^([0-9]+)(,([0-9]){1,2})?$"
       }
       ```
 
@@ -499,7 +510,7 @@
 ||**Массив**|`array_<тип>`|Массив объектов одного типа. Используется, например, для загрузки нескольких фотографий исполнителем.
 В режиме JSON массив — это отдельный тип данных. Например: `"type": "array_file"`.||
 ||**Мин. элементов**|`min_size`|Минимальное число элементов в массиве.||
-||** Макс. элементов **|`max_size`|Максимальное число элементов в массиве.||
+||**Макс. элементов**|`max_size`|Максимальное число элементов в массиве.||
 ||**Допустимые значения**|`allowed_values`|Допустимые значения для строк, дробных и целых чисел, логического типа данных.||
 ||**Мин. длина**|`min_length`|Минимальная длина строки.||
 ||**Макс. длина**|`max_length`|Максимальная длина строки||
