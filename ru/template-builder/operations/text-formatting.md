@@ -18,12 +18,13 @@
 }
 ```
 
-#### Пример основного синтаксиса Markdown
+{% cut "Пример основного синтаксиса Markdown" %}
 
-Ниже представлен код, охватывающий основной синтаксис Markdown. Посмотрите в , как можно использовать этот код в компоненте [view.markdown](../reference/view.markdown.md).
+Ниже представлен код, охватывающий основной синтаксис Markdown. Посмотрите в [песочнице](https://clck.ru/QZMDA), как можно использовать этот код в компоненте [view.markdown](../reference/view.markdown.md).
 
 Обратите внимание, что код перед вставкой в конструктор шаблонов был отредактирован в соответствии с [ограничениями](#specs).
-```
+
+````
 # h1 Heading
 ## h2 Heading
 ### h3 Heading
@@ -145,7 +146,9 @@ Like links, Images also have a footnote style syntax
 With a reference later in the document defining the URL location:
 
 [id]: https://octodex.github.com/images/dojocat.jpg  "The Dojocat"
-```
+````
+
+{% endcut %}
 
 ## Особенности вставки кода в разметке Markdown {#specs}
 
