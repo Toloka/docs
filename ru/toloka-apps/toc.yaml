@@ -42,6 +42,8 @@ items:
             name: Доступ к API
           - href: https://toloka.ai/ru/docs/toloka-apps/api/concepts/quickstart-api.html
             name: Быстрый старт API
+          - href: api/concepts/streaming-items.md
+            name: Потоковая обработка элементов разметки
       - name: Справочник API
         items:
           - href:
