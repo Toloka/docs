@@ -8,7 +8,7 @@
 
 ### HTTP-запрос {#create-item-request}
 
-```json
+```http
 POST /app-projects/{app_project_id}/items/bulk
 Host: https://toloka.yandex.ru
 Authorization: OAuth <OAuth token>
@@ -63,7 +63,7 @@ ID проекта.||
 
 ### HTTP-запрос {#get-result-request}
 
-```json
+```http
 GET /app-projects/{app_project_id}/items?sort=finished&after_id={last_saved_item_id}
 Host: https://toloka.yandex.ru
 Authorization: OAuth <OAuth token>
