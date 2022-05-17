@@ -12,6 +12,10 @@ items:
         name: "Какие задания нельзя размещать в Яндекс\_Толоке"
       - href: concepts/quickstart.md
         name: Начало работы
+      - name: Ready-to-go-решения
+        items:
+          - href: concepts/product-search-relevance.md
+            name: Оценка релевантности товара поисковому запросу
       - name: Где хранить данные
         items:
           - href: concepts/cloud-storage.md
