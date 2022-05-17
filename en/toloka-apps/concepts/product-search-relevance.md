@@ -1,6 +1,6 @@
 # Product search relevance
 
-This [Ready-to-go solution](https://toloka.ai/ready-to-go) helps you solve product search relevance task.
+This Ready-to-go solution helps you solve product search relevance task.
 
 ## Use cases {#use_cases}
 
@@ -100,8 +100,6 @@ Provide a search query and a link to the product page.
 {% endcut %}
 
 {% cut "Screenshots" %}
-
-#### Screenshots
 
 You may use screenshots of pages instead of links to them.
 
