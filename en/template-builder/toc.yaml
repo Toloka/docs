@@ -1,7 +1,6 @@
 title: Toloka Template Builder
+href: index.md
 items:
-  - href: index.md
-    name: Overview
   - href: quickstart.md
     name: Quick start
   - href: glossary.md
@@ -12,7 +11,7 @@ items:
   - name: Preset templates
     items:
       - href: templates/index.md
-        name: Preset templates
+        name: List
       - name: Data enrichment
         items:
           - href: templates/survey.md

@@ -27,48 +27,51 @@ To allow users to select areas in pictures, use the [field.image-annotation](../
 
 The component offers three labeling modes: rectangle, polygon, and point markup. All three modes are available by default. You can choose to use just one or two of them.
 
-#### Rectangles
+{% list tabs %}
 
-To allow users to select areas only with rectangles, add the `rectangle` key to the `shapes` property and set its value to `true`.
+- Rectangles
 
-```json
-{
-  "shapes": {
-    "rectangle": true
+  To allow users to select areas only with rectangles, add the `rectangle` key to the `shapes` property and set its value to `true`.
+
+  ```json
+  {
+    "shapes": {
+      "rectangle": true
+    }
   }
-}
-```
+  ```
 
-[View example in the sandbox](https://clck.ru/Rna3F).
+  [View example in the sandbox](https://clck.ru/Rna3F).
 
-#### Polygons
+- Polygons
 
-To allow users to select areas only with polygons, add the `polygon` key to the `shapes` property and set its value to `true`.
+  To allow users to select areas only with polygons, add the `polygon` key to the `shapes` property and set its value to `true`.
 
-```json
-{
-  "shapes": {
-    "polygon": true
+  ```json
+  {
+    "shapes": {
+      "polygon": true
+    }
   }
-}
-```
+  ```
 
-[View example in the sandbox](https://clck.ru/RnZtm).
+  [View example in the sandbox](https://clck.ru/RnZtm).
 
-#### Points
+- Points
 
-To allow users to select areas only with points, add the `point` key to the `shapes` property and set its value to `true`.
+  To allow users to select areas only with points, add the `point` key to the `shapes` property and set its value to `true`.
 
-```json
-{
-  "shapes": {
-    "point": true
+  ```json
+  {
+    "shapes": {
+      "point": true
+    }
   }
-}
-```
+  ```
 
-[View example in the sandbox](https://clck.ru/RnZyt).
+  [View example in the sandbox](https://clck.ru/RnZyt).
 
+{% endlist %}
 
 ## Classify areas {#labels}
 
@@ -88,7 +91,7 @@ You can allow users to select objects by type. For example, you may want all car
 }
 ```
 
-.
+[View example in the sandbox](https://clck.ru/TqvPR).
 
 For each new object of the `labels` property, a button is added to the editor that allows users to select the corresponding area type. Different values of the `value` property let users label areas with different colors.
 
@@ -99,60 +102,63 @@ To help performers work faster, you can add keyboard shortcuts using the [plugin
 
 If you install the shortcut plugin without assigning keys, they are assigned automatically (see the [example](https://clck.ru/RnbbS)). You can change them as described below. If you don't need some of the shortcuts, leave their value fields empty.
 
-#### Select area types
+{% list tabs %}
 
-If you use at least two types of areas in your task, list the shortcuts for them in the array of the `labels` property, separating them with commas. They will be assigned to the area selection buttons in the order they are displayed.
+- Select area types
 
-```json
-{
-  "type": "plugin.field.image-annotation.hotkeys",
-  "labels": [
-      "1",
-      "2"
-  ]
-}
-```
+  If you use at least two types of areas in your task, list the shortcuts for them in the array of the `labels` property, separating them with commas. They will be assigned to the area selection buttons in the order they are displayed.
 
-.
-
-#### Select labeling modes
-
-You can let users switch between different labeling modes using shortcuts. Add the corresponding key to the `modes` property and assign a shortcut to it:
-- `select`: For selecting shapes and points.
-- `point`: For selecting areas using points.
-- `rectangle`: For selecting areas using rectangles.
-- `polygon`: For selecting areas using polygons.
-
-```json
-{
-  "type": "plugin.field.image-annotation.hotkeys",
-  "modes": {
-    "select": "q",
-    "point": "w",
-    "rectangle": "e",
-    "polygon": "r"
+  ```json
+  {
+    "type": "plugin.field.image-annotation.hotkeys",
+    "labels": [
+        "1",
+        "2"
+    ]
   }
-}
-```
+  ```
 
-.
+  [View example in the sandbox](https://clck.ru/TqvWA).
 
-#### Confirm or cancel area creation
+- Select labeling modes
 
-You can set up shortcuts to let users confirm or cancel area creation. Assign shortcuts to properties:
-- `confirm`: Confirm.
-- `cancel`: Cancel.
+  You can let users switch between different labeling modes using shortcuts. Add the corresponding key to the `modes` property and assign a shortcut to it:
+  - `select`: For selecting shapes and points.
+  - `point`: For selecting areas using points.
+  - `rectangle`: For selecting areas using rectangles.
+  - `polygon`: For selecting areas using polygons.
 
-```json
-{
-  "type": "plugin.field.image-annotation.hotkeys",
-  "confirm": "x",
-  "cancel": "z"
-}
-```
+  ```json
+  {
+    "type": "plugin.field.image-annotation.hotkeys",
+    "modes": {
+      "select": "q",
+      "point": "w",
+      "rectangle": "e",
+      "polygon": "r"
+    }
+  }
+  ```
 
-.
+  [View example in the sandbox](https://clck.ru/TqvYU).
 
+- Confirm or cancel area creation
+
+  You can set up shortcuts to let users confirm or cancel area creation. Assign shortcuts to properties:
+  - `confirm`: Confirm.
+  - `cancel`: Cancel.
+
+  ```json
+  {
+    "type": "plugin.field.image-annotation.hotkeys",
+    "confirm": "x",
+    "cancel": "z"
+  }
+  ```
+
+  [View example in the sandbox](https://clck.ru/Tqvai).
+
+{% endlist %}
 
 ## Create a task {#create-task}
 
@@ -164,7 +170,6 @@ To create a template for area selection tasks, use the following components:
 - [condition.required](../reference/condition.required.md): To make sure that the user selected at least one area.
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
-.
+[View example in the sandbox](https://clck.ru/Tqvd5).
 
-
-[![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

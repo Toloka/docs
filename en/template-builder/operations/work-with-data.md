@@ -12,40 +12,22 @@ To work with data, use the components with the type `data.*`:
 ## List of properties {#properties}
 
 The list of properties is the same for all components.
-**Title:** `type`
 
-**Type:**
-{% cut "string" %}
-
-A string enclosed in quotation marks. For example: `"Hello world"`.
-
-{% endcut %}
-
-
-
-**Overview:** Name of the component.
-
-**Title:** `path`
-
-**Type:**
-{% cut "string" %}
+#|
+||**Title**|**Type**|**Overview**||
+||`type`|{% cut "string" %}
 
 A string enclosed in quotation marks. For example: `"Hello world"`.
 
-{% endcut %}
+{% endcut %}|Name of the component.||
+||`path`|{% cut "string" %}
 
+A string enclosed in quotation marks. For example: `"Hello world"`.
 
+{% endcut %}|Path to the property containing data. Dots are used as separators: `path.to.some.element`
 
-**Overview:**
-Path to the property containing data. Dots are used as separators: `path.to.some.element`
-
-To specify the path to the array element, specify its sequence number starting from zero, for example: `items.0`
-
-
-**Title:** `default`
-
-**Type:**
-{% cut "any" %}
+To specify the path to the array element, specify its sequence number starting from zero, for example: `items.0`||
+||`default`|{% cut "any" %}
 
 Any value. Those might be:
 - Standard JSON elements: string, number, `true`, `false`, object, or array.
@@ -53,14 +35,9 @@ Any value. Those might be:
 - Other components, if allowed in the configuration.
 - References to other places in the configuration using the structure `{ "$ref": "path.to.element" }`. Use this type of linking for [code reuse](../best-practices/reuse.md).
 
-{% endcut %}
-
-
-
-**Overview:**
-The value to use as the default data.
-This value will be shown in the interface, so it might hide some placeholders, for example, in the [field.text](../reference/field.text.md) component.
-
+{% endcut %}|The value to use as the default data.
+This value will be shown in the interface, so it might hide some placeholders, for example, in the [field.text](../reference/field.text.md) component.||
+|#
 
 ## What's next {#concept_esd_q1h_ymb}
 
@@ -69,4 +46,4 @@ This value will be shown in the interface, so it might hide some placeholders, f
 - [Learn how to clear the entered data](clear-data.md).
 
 
-[![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

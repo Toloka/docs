@@ -28,4 +28,4 @@
 - [Inserting links](internet-search.md)
 
 
-[![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
