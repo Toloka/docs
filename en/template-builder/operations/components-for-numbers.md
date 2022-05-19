@@ -18,6 +18,9 @@ By default, this field can contain decimal numbers. To enter integers, use valid
 ```
 
 
+[View example in the sandbox](https://clck.ru/U3CAu).
+
+
 ## Prohibit negative numbers {#number-positive-only}
 
 By default, you can enter both positive and negative numbers in this field. To prohibit negative numbers, use the `minimum` property:
@@ -27,4 +30,7 @@ By default, you can enter both positive and negative numbers in this field. To p
 ```
 
 
-[![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+[View example in the sandbox](https://clck.ru/U7NNo).
+
+
+[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

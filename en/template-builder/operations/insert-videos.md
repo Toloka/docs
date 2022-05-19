@@ -9,27 +9,26 @@ To add a video file to the task interface, use the [view.video](../reference/vie
 
 If you want to add several videos to a page, see the examples in [Comparing video clips](sbs-video.md).
 
-{% note info %}
+{% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-You can add
-{% cut "media files" %}
-
-audio files, videos, images
-
-{% endcut %}
-
- from your own server, [Yandex.Disk](../reference/helper.proxy.md), or a cloud storage like [Yandex.Cloud]({{ toloka-requester-concepts-yacloud-dita }}), Google Cloud, or Amazon AWS.
-
-{% endnote %}
-
-
+[View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0hAJkRHgA0mGrQCuAJwA2bKqNqMWbPDwCGdVZzhQmYukJGi8TdQAtlBOHwEhDOAL41D9zPZCCQ23XRRp0EwzxefgtTOjomAGdkAHoY+CkiAFoiAA9VAFsmRMikyAzOBDg6UzEAIy0IGLFsiFUeSJiAJgAGAEYAdhiWgBZ4uESAfTTM7KJBgFkABR7BgDYelsGAZgmAcU4snrx-VxB7IA).
 
 ## Make sure that the user watched the video {#condition.played}
 
-#### Started watching
-To make sure that the user played the video, in the `validation` property use the `condition.played` component.
-#### Viewed completely
-To make sure that the user viewed the video completely, in the `validation` property use the `condition.played-fully` component.
+{% list tabs %}
 
+- Started watching
 
-[![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+  To make sure that the user played the video, in the `validation` property use the `condition.played` component.
+
+  [View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0hAJkRHgA0mGrQA2AQwBGRMWzwAVAE4MsYMXDABrOFARYAygFcpAWzh0scU6aI84EurNUkLACwhHLAZzoSldLr6dG5EWLz8nEIiNHhGSnIotG50dEzeyAD0mfBiRAC0RAAeEqZMed75kKacCO4mnHAQmUblEBI83pkATAAMAIwA7Jm9ACw5cHkA+sWl5URTALIACqNTAGyjvVMAzIsA4pxlo9HUOHj4Eho8jk1QbFSi5-TMrEl4kFD2gdCc5RIMOynJ7JXR0eQgACaniwUCIdiwdAgWF8-ksITCEWR-0BSjwMRwAF8YsSoISQIIQLomF4UGhyYSgA).
+
+- Viewed completely
+
+  To make sure that the user viewed the video completely, in the `validation` property use the `condition.played-fully` component.
+
+  [View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0hAJkRHgA0mGrQA2AQwBGRMWzwAVAE4MsAZzoSldOFARY6ACyJZe-LBKg8sYMXDABrXfoDKAVykBbOHSwkfhhBuviQSdGCGzlg+WG5QOmIGxlhEVpxCIjR4bkpyKLSGdHRMasgA9GXwYkQAtEQAHhKeTNVqNZCenAgBHpxwEGVuLRASPGplAEwADACMAOxlUwAslXDVAPoNTS1E6wCyAApL6wBsS1PrAMx7AOKczUsZ1Dh4+BJ2PGH9UGxUoi-0ZisfJ4SBWHzfTgtCQMIg8GowNxiMQMJ7-Aq6OjyEAATSCWCgRDhBggfjCESSJjMpNscCYsXia0pKSseEyOAAvpkuVAOSBBCBdExgig0HyOUA).
+
+{% endlist %}
+
+[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
