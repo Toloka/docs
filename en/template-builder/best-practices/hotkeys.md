@@ -34,7 +34,7 @@ Use a separate plugin to configure shortcuts: [plugin.hotkeys](../reference/plug
 
 In this example, pressing **P** triggers the [action.play-pause](../reference/action.play-pause.md) action. It starts or pauses playback in the player. The player is specified in the `view` property by using the [$ref](reuse.md) structure, which links to another place in the configuration.
 
-[View example in the sandbox](https).
+[View example in the sandbox](https://clck.ru/TR7Vs).
 
 {% note tip %}
 
