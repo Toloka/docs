@@ -26,6 +26,8 @@ In ready-to-go projects, only automatic acceptance is available. You can't rejec
 
 {% endnote %}
 
+All Tasks performed during the term specified in the Tasks shall be deemed automatically accepted by the Customer from the moment when every particular Task is completed by the User, and the Services shall be deemed duly provided by Toloka and subject to payment regardless of any other conditions. If the Customer chooses automatic acceptance, no discrepancy between results of the Task and the requirements set by Toloka in the Instruction shall constitute a basis for refusing to accept the relevant Services.
+
 The result of labeling is a TSV file with responses. The `CONFIDENCE` field shows the level of confidence in a response. In this case, it shows the probability that the response is correct.
 
 {% cut "Example" %}
