@@ -29,7 +29,7 @@ To start with Toloka-Kit:
 
 * Complete one of the [tutorials](https://toloka.ai/docs/guide/concepts/usecases.html) to get acquainted with Toloka web interface.
 * Try [Toloka-Kit usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#toloka-kit-usage-examples).
-* Read the package reference starting with [TolokaClient](https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.html).
+* Read the package reference starting with [TolokaClient](reference/toloka.client.TolokaClient.md).
 * Study [Toloka API documentation](https://toloka.ai/docs/api/concepts/about.html/).
 * See other features in [Toloka requester's guide](https://toloka.ai/docs/guide/index.html).
 * Contribute to [Toloka-Kit on GitHub](https://github.com/Toloka/toloka-kit): open pull requests, report bugs or share your [usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#need-more-examples).
