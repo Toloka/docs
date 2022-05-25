@@ -18,7 +18,7 @@ You can only download the results from a batch with the **Completed** status.
 1. Select an item and click on it. This opens a block of labeling results in JSON format.
 1. Click **Copy** on the right. This adds the block with labeled data to the clipboard.
 
-## Analyzing the results {#analysis}
+## Procedure of acceptance of services {#acceptance-procedure}
 
 {% note info %}
 
