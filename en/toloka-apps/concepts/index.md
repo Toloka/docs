@@ -9,7 +9,7 @@ Select the problem to solve, fill out an application form for creating a project
 
 Create your first ready-to-go project
 
-**[Downloading the results](download-results.html)**
+**[Downloading the results](download-results.md)**
 
 Download a file with the labeling results
 
@@ -17,7 +17,7 @@ Download a file with the labeling results
 
 Get a token to work with the API
 
-**[Troubleshooting](troubleshooting.html)**
+**[Troubleshooting](troubleshooting.md)**
 
 Frequently asked questions about the service|**[Uploading data for labeling](add-task.md)**
 
