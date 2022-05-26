@@ -22,8 +22,7 @@ MixerConfig(
 
 Parameters for automatically creating a task suite ("smart mixing").
 
-
-For more information about creating task see Yandex.Toloka Requester's guide.
+For more information about creating task see Toloka Requester's guide.
 
 ## Parameters Description
 

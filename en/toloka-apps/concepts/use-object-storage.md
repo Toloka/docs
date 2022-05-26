@@ -6,7 +6,7 @@
 
 {% endnote %}
 
-To try out [Yandex.Cloud](https://cloud.yandex.com/docs/storage/quickstart), you can activate a [Free trial](https://cloud.yandex.com/en-ru/docs/free-trial/).
+To try out [Yandex&#160;Cloud](https://cloud.yandex.com/docs/storage/quickstart), you can activate a [Free trial](https://cloud.yandex.com/en-ru/docs/free-trial/).
 
 #### Trial terms
 
@@ -16,7 +16,7 @@ Trial length | Free storage size | Grant amount
 
 ## Steps to follow {#plan}
 
-To use files from Yandex.Cloud:
+To use files from Yandex&#160;Cloud:
 
 1. Create a bucket in Object Storage. To learn how to do this, go to [Getting started](https://cloud.yandex.com/docs/storage/quickstart).
 

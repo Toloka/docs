@@ -164,7 +164,7 @@
 
 - Подразумевают создание противозаконных материалов.
 
-Подробнее читайте в [Соглашении с заказчиком](https://yandex.com/legal/toloka_customeragreement/).
+Подробнее читайте в [Соглашении с заказчиком](https://toloka.ai/legal/customeragreement/).
 
 {% endcut %}
 
