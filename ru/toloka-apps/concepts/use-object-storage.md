@@ -6,7 +6,7 @@
 
 {% endnote %}
 
-Чтобы опробовать возможности [Яндекс.Облака](https://cloud.yandex.ru/docs/storage/quickstart), вы можете активировать [Пробный период](https://cloud.yandex.ru/docs/free-trial/).
+Чтобы опробовать возможности [Яндекс&#160;Облака](https://cloud.yandex.ru/docs/storage/quickstart), вы можете активировать [Пробный период](https://cloud.yandex.ru/docs/free-trial/).
 
 #### Условия пробного периода
 
@@ -16,7 +16,7 @@
 
 ## Порядок действий {#plan}
 
-Чтобы использовать файлы с Яндекс.Облака:
+Чтобы использовать файлы с Яндекс&#160;Облака:
 
 1. Создайте бакет в сервисе Object Storage. Для этого воспользуйтесь разделом [Начало работы](https://cloud.yandex.ru/docs/storage/quickstart).
 
