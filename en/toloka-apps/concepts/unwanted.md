@@ -164,7 +164,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 - Involve the creation of illegal materials.
 
-Read more in the [Requester agreement](https://yandex.com/legal/toloka_customeragreement/).
+Read more in the [Requester agreement](https://toloka.ai/legal/customeragreement/).
 
 {% endcut %}
 

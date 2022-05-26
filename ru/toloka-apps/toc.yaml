@@ -9,7 +9,7 @@ items:
       - href: concepts/details.md
         name: Как устроен сервис
       - href: concepts/unwanted.md
-        name: "Какие задания нельзя размещать в Яндекс\_Толоке"
+        name: "Какие задания нельзя размещать в Толоке"
       - href: concepts/quickstart.md
         name: Начало работы
       - name: Ready-to-go-решения
