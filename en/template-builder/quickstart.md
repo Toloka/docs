@@ -20,7 +20,7 @@ Open Template Builder.
       ![image](_images/where-is-it.png)
 
      {% endcut %}
-  
+
 - In the Template Builder sandbox
 
   [Link]({{ template-builder }}) to the Template Builder sandbox.
@@ -55,7 +55,7 @@ To view all the available commands and shortcuts, click **F1**. Main shortcuts:
 - **Tab**: Get auto-completion hints.
 - **Ctrl**+**S**: Use for automatic formatting (alignment of text indents).
 
-{% note note %}
+{% note info %}
 
 If you use [VS Code]({{ visualstudio }}), the editor will be familiar to you because most of its shortcuts are the same as in VS Code.
 
@@ -67,7 +67,7 @@ If you use [VS Code]({{ visualstudio }}), the editor will be familiar to you bec
 If you haven't written in JSON before, you might have some difficulties like unclosed brackets or missing commas and quotation marks.
 
 {% cut "Learn how JSON works" %}
- 
+
 Objects are the main elements in JSON. They are enclosed in curly brackets, `{}`. An object contains `"key":value` pairs separated by commas.
 ```json
 {
@@ -76,7 +76,7 @@ Objects are the main elements in JSON. They are enclosed in curly brackets, `{}`
 }
 ```
 
-{% note tip %}
+{% note info %}
 
 JSON is insensitive to spaces and line breaks between JSON elements. You may omit line breaks. When you click **Ctrl**+**S** in the editor, the code is formatted automatically.
 
@@ -86,7 +86,7 @@ JSON is insensitive to spaces and line breaks between JSON elements. You may omi
 Values may contain different data types:
 - `string`: A string enclosed in double quotes, such as `"Hello world"`.
     To add a quotation mark `"` or a backslash `\` to a string, add another backslash `\` to it. Don't escape quotation marks `” “` and `/`.
-    
+
     {% cut "Examples" %}
 
     Input data|Result
@@ -95,7 +95,7 @@ Values may contain different data types:
     `"“Before youpour your heart out, make sure that the“vessel” doesn'tleak”. /George Bernard Shaw"`|`“Before you pour your heart out, make sure that the “vessel” doesn't leak”. /George Bernard Shaw`
 
     {% endcut %}
-    
+
   To add a line break, paste ``\n`` in the appropriate spot. Paste `\t` to add a tab.
 
 - `number`: A number without quotation marks, like `"age": 25`.
@@ -187,9 +187,9 @@ If something goes wrong during the creation process, you can [view the correct c
     If you're working in Template Builder, not in the Toloka interface, use the [empty template](https://clck.ru/TfifV).
 
     The `view` block has the[view.list](reference/view.list.md) component to display data in a list. We'll use it to create the interface we need.
-    
+
     ![](_images/practice-empty-conf.png)
-    
+
     {% note tip %}
 
     To see additional information about a component, hover over it in the list of components or in the editor.
@@ -212,7 +212,7 @@ If something goes wrong during the creation process, you can [view the correct c
 1. Add the next element. To do this, place the cursor behind the curly bracket that closes the `view.text` component, type a comma, and click **Tab**. A list will appear where you need to select the [view.image](reference/view.image.md) component. It is used to display the image. Its `url` property contains a link to the image. Delete the link and the quotation marks and click **Tab**. A list will appear where you need to select the [data.input](operations/work-with-data.md) component. It is used to get values from the sample input data.
 
     ![](_images/practice-data-input.png)
-    
+
 1. Change the value of the `path` property in the `data.input` component to `"image"`. The image from the sample input data will appear on the **Preview** panel.
 
 1. The next interface element is the [field.button-radio-group](reference/field.button-radio-group.md) component that adds a group of buttons. Its `label` property contains the text that will be displayed above the answer options. Change its value to `"What is the cat's mood?"`.
@@ -306,15 +306,15 @@ Shortcuts are not part of visual components. They are added via a separate plugi
 1. Shortcuts are added to the `plugins` section. Place the cursor after the square bracket that opens the`plugins` section and press **Tab**. In the list that appears, select `plugin.hotkeys`.
 
     ![](_images/practice-plugin-hotkeys.png)
-    
+
 1. The `plugins.hotkeys` component is now empty. Fill it with the desired values. To do this, place the cursor after the opening curly bracket and click **Tab**. Two lists will appear in the following order: the first for selecting a shortcut, and the second for setting an action. In the first list, select the `"1"` shortcut; in the second, the [action.set](reference/action.set.md) action.
 
     ![](_images/practice-hotkey-1.png)![](_images/practice-action-set.png)
-    
+
 1. Add two more shortcuts. To do this, place the cursor at the end of the `"1"` shortcut block (after the closing curly bracket and comma) and press **Tab**. Add the `"2"` shortcut with the same `action.set` action. Then add the `"3"` shortcut in the same way.
 
     ![](_images/practice-hotkey-2.png)
-    
+
 1. Each shortcut block has a `data` property that specifies the output data format. Change the value of its `path` property to `"result"` for each shortcut. The output data path should be the same for shortcuts as for the buttons that you assign them to.
 
 1. Each shortcut also has a `payload` property with the value to be passed to the output data when this button is selected. Change this property for the three buttons to `"ok"`, `"bad"`, and `"error"`.
