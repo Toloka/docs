@@ -13,9 +13,9 @@ The `else` property is optional. For example, let's say you ask the user "did yo
 
 ## Component properties {#properties}
 
-| Name                                          | Type                                                                                   | Description                                                                                                    |
-| --------------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>      | "helper.if"                                                                            | <p>Set component type</p>                                                                                      |
-| `condition`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Condition to check.</p>                                                                                     |
-| `else`                                        | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>             | <p>The element that is returned if the condition from the `condition` property is false (returns `false`).</p> |
-| `then`<span style="color: red">\*</span>      | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>             | <p>The element that is returned if the condition from the `condition` property is true (returns `true`).</p>   |
+| Name                                          | Type        | Description                                                                                                    |
+| --------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- |
+| `type`<span style="color: red">\*</span>      | "helper.if" | <p>Set component type</p>                                                                                      |
+| `condition`<span style="color: red">\*</span> | _condition_ | <p>Condition to check.</p>                                                                                     |
+| `else`                                        | _any_       | <p>The element that is returned if the condition from the `condition` property is false (returns `false`).</p> |
+| `then`<span style="color: red">\*</span>      | _any_       | <p>The element that is returned if the condition from the `condition` property is true (returns `true`).</p>   |

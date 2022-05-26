@@ -10,13 +10,13 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                 | Тип                                                                                    | Описание                                                       |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "field.number"                                                                         | <p>Задает тип компонента.</p>                                  |
-| `data`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/writable">writable</a>   | <p>Данные, значения которых будут обработаны или изменены.</p> |
-| `label`                                  | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Надпись над компонентом.</p>                                |
-| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Текст подсказки.</p>                                        |
-| `maximum`                                | <a class="xref popup-link" href="../concepts/types.dita#types/integer">integer</a>     | <p>Максимальное число, которое можно ввести.</p>               |
-| `minimum`                                | <a class="xref popup-link" href="../concepts/types.dita#types/integer">integer</a>     | <p>Минимальное число, которое можно ввести.</p>                |
-| `placeholder`                            | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Полупрозрачная надпись, отображающаяся в пустом поле.</p>   |
-| `validation`                             | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Валидация на основе условия <em>(condition)</em>.</p>       |
+| Название                                 | Тип            | Описание                                                       |
+| ---------------------------------------- | -------------- | -------------------------------------------------------------- |
+| `type`<span style="color: red">\*</span> | "field.number" | <p>Задает тип компонента.</p>                                  |
+| `data`<span style="color: red">\*</span> | _writable_     | <p>Данные, значения которых будут обработаны или изменены.</p> |
+| `label`                                  | _string_       | <p>Надпись над компонентом.</p>                                |
+| `hint`                                   | _string_       | <p>Текст подсказки.</p>                                        |
+| `maximum`                                | _integer_      | <p>Максимальное число, которое можно ввести.</p>               |
+| `minimum`                                | _integer_      | <p>Минимальное число, которое можно ввести.</p>                |
+| `placeholder`                            | _string_       | <p>Полупрозрачная надпись, отображающаяся в пустом поле.</p>   |
+| `validation`                             | _condition_    | <p>Валидация на основе условия <em>(condition)</em>.</p>       |

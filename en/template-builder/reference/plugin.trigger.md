@@ -10,10 +10,10 @@ You can also set conditions in the `conditions` property that must be met in ord
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                                   | Description                                                                                      |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "plugin.trigger"                                                                       | <p>Set component type</p>                                                                        |
-| `action`                                 | <a class="xref popup-link" href="../concepts/types.dita#types/action">action</a>       | <p>The action to perform when the trigger fires.</p>                                             |
-| `condition`                              | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>The condition that must be met in order to fire the trigger.</p>                              |
-| `fireImmediately`                        | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Flag indicating whether the trigger should be fired immediately after the task is loaded.</p> |
-| `onChangeOf`                             | <a class="xref popup-link" href="../concepts/types.dita#types/reactive">reactive</a>   | <p>The data that triggers the action when changed.</p>                                           |
+| Name                                     | Type             | Description                                                                                      |
+| ---------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------ |
+| `type`<span style="color: red">\*</span> | "plugin.trigger" | <p>Set component type</p>                                                                        |
+| `action`                                 | _action_         | <p>The action to perform when the trigger fires.</p>                                             |
+| `condition`                              | _condition_      | <p>The condition that must be met in order to fire the trigger.</p>                              |
+| `fireImmediately`                        | _boolean_        | <p>Flag indicating whether the trigger should be fired immediately after the task is loaded.</p> |
+| `onChangeOf`                             | _reactive_       | <p>The data that triggers the action when changed.</p>                                           |

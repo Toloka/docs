@@ -12,11 +12,11 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                 | Тип                                                                                    | Описание                                                 |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "view.link"                                                                            | <p>Задает тип компонента.</p>                            |
-| `label`                                  | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Надпись над компонентом.</p>                          |
-| `content`                                | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Текст ссылки, который видит пользователь.</p>         |
-| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Текст подсказки.</p>                                  |
-| `url`<span style="color: red">\*</span>  | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Адрес ссылки.</p>                                     |
-| `validation`                             | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Валидация на основе условия <em>(condition)</em>.</p> |
+| Название                                 | Тип         | Описание                                                 |
+| ---------------------------------------- | ----------- | -------------------------------------------------------- |
+| `type`<span style="color: red">\*</span> | "view.link" | <p>Задает тип компонента.</p>                            |
+| `label`                                  | _string_    | <p>Надпись над компонентом.</p>                          |
+| `content`                                | _string_    | <p>Текст ссылки, который видит пользователь.</p>         |
+| `hint`                                   | _string_    | <p>Текст подсказки.</p>                                  |
+| `url`<span style="color: red">\*</span>  | _string_    | <p>Адрес ссылки.</p>                                     |
+| `validation`                             | _condition_ | <p>Валидация на основе условия <em>(condition)</em>.</p> |

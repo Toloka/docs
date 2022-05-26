@@ -8,16 +8,16 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                            | Тип                                                                                    | Описание                                                                                                  |
-| --------------------------------------------------- | -------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>            | "field.radio-group"                                                                    | <p>Задает тип компонента.</p>                                                                             |
-| `data`<span style="color: red">\*</span>            | <a class="xref popup-link" href="../concepts/types.dita#types/writable">writable</a>   | <p>Данные, значения которых будут обработаны или изменены.</p>                                            |
-| `label`                                             | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Надпись над компонентом.</p>                                                                           |
-| `disabled`                                          | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Свойство запрещает нажимать кнопки. Если значение - `true`, пользователю будет недоступно нажатие.</p> |
-| `hint`                                              | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Текст подсказки.</p>                                                                                   |
-| `options`<span style="color: red">\*</span>         | <a class="xref popup-link" href="../concepts/types.dita#types/array">array</a>         | <p>Массив кнопок.</p>                                                                                     |
-| `options[]`                                         | <a class="xref popup-link" href="../concepts/types.dita#types/object">object</a>       | <p>Кнопка.</p>                                                                                            |
-| `options[].hint`                                    | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Текст с дополнительной информацией.</p>                                                                |
-| `options[].label`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Название опции.</p>                                                                                    |
-| `options[].value`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>             | <p>Возвращаемое значение.</p>                                                                             |
-| `validation`                                        | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Валидация на основе условия <em>(condition)</em>.</p>                                                  |
+| Название                                            | Тип                 | Описание                                                                                                  |
+| --------------------------------------------------- | ------------------- | --------------------------------------------------------------------------------------------------------- |
+| `type`<span style="color: red">\*</span>            | "field.radio-group" | <p>Задает тип компонента.</p>                                                                             |
+| `data`<span style="color: red">\*</span>            | _writable_          | <p>Данные, значения которых будут обработаны или изменены.</p>                                            |
+| `label`                                             | _string_            | <p>Надпись над компонентом.</p>                                                                           |
+| `disabled`                                          | _boolean_           | <p>Свойство запрещает нажимать кнопки. Если значение - `true`, пользователю будет недоступно нажатие.</p> |
+| `hint`                                              | _string_            | <p>Текст подсказки.</p>                                                                                   |
+| `options`<span style="color: red">\*</span>         | _array_             | <p>Массив кнопок.</p>                                                                                     |
+| `options[]`                                         | _object_            | <p>Кнопка.</p>                                                                                            |
+| `options[].hint`                                    | _string_            | <p>Текст с дополнительной информацией.</p>                                                                |
+| `options[].label`<span style="color: red">\*</span> | _string_            | <p>Название опции.</p>                                                                                    |
+| `options[].value`<span style="color: red">\*</span> | _any_               | <p>Возвращаемое значение.</p>                                                                             |
+| `validation`                                        | _condition_         | <p>Валидация на основе условия <em>(condition)</em>.</p>                                                  |

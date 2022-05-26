@@ -8,9 +8,9 @@ If you only need one out of several conditions to be met, use the [condition.any
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                                   | Description                                            |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.all"                                                                        | <p>Set component type</p>                              |
-| `conditions`                             | <a class="xref popup-link" href="../concepts/types.dita#types/array">array</a>         | <p>A set of conditions that must be met.</p>           |
-| `conditions[]`                           | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Required condition.</p>                             |
-| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Validation error message that the user will see</p> |
+| Name                                     | Type            | Description                                            |
+| ---------------------------------------- | --------------- | ------------------------------------------------------ |
+| `type`<span style="color: red">\*</span> | "condition.all" | <p>Set component type</p>                              |
+| `conditions`                             | _array_         | <p>A set of conditions that must be met.</p>           |
+| `conditions[]`                           | _condition_     | <p>Required condition.</p>                             |
+| `hint`                                   | _string_        | <p>Validation error message that the user will see</p> |

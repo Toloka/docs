@@ -10,7 +10,7 @@ Select the component that you want to add, such as [view.image](view.image.md) f
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                             | Description                                                                                |
-| ---------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "@yandex-toloka/helper.proxy"                                                    | <p>Set component type</p>                                                                  |
-| `path`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a> | <p>Path to the file in the `/&lt;Proxy name&gt;/&lt;File name&gt;.&lt;type&gt;` format</p> |
+| Name                                     | Type                          | Description                                                                                |
+| ---------------------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------ |
+| `type`<span style="color: red">\*</span> | "@yandex-toloka/helper.proxy" | <p>Set component type</p>                                                                  |
+| `path`<span style="color: red">\*</span> | _string_                      | <p>Path to the file in the `/&lt;Proxy name&gt;/&lt;File name&gt;.&lt;type&gt;` format</p> |

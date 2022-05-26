@@ -10,8 +10,8 @@ This condition can be used in the [view.link](view.link.md) component and also a
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                             | Description                                            |
-| ---------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.link-opened"                                                          | <p>Set component type</p>                              |
-| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a> | <p>Validation error message that the user will see</p> |
-| `url`                                    | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a> | <p>The link that must be clicked.</p>                  |
+| Name                                     | Type                    | Description                                            |
+| ---------------------------------------- | ----------------------- | ------------------------------------------------------ |
+| `type`<span style="color: red">\*</span> | "condition.link-opened" | <p>Set component type</p>                              |
+| `hint`                                   | _string_                | <p>Validation error message that the user will see</p> |
+| `url`                                    | _string_                | <p>The link that must be clicked.</p>                  |

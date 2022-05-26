@@ -6,7 +6,7 @@ The name of the component is specified in the `type` property in the format: `<c
 
 Categories:
 
-- [data](#datas): Components used for working with data: input, output, or intermediate.
+- [data](../operations/work-with-data.dita): Components used for working with data: input, output, or intermediate.
 - [layout](#layouts): Options for positioning elements in the interface, such as in columns or side-by-side. If you have more than one element in the interface, these components will help you arrange them the way you want.
 - [view](#views): Elements displayed in the interface, such as text, list, audio player, or image.
 - [field](#fields): Fields for entering data, such as a text field or drop-down list.
@@ -53,7 +53,7 @@ Categories:
 
 | Component                                               | Description                                                                                                                                                                                                           |
 | ------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [field.audio](field.audio.md)                           | Component for recording audio. Works in the [Toloka app for mobile devices](https://toloka.ai/tolokers/docs/mobile/?lang=en). In a browser, this component opens a window for uploading an audio file.         |
+| [field.audio](field.audio.md)                           | Component for recording audio. Works in the [Toloka app for mobile devices](https://toloka.ai/tolokers/docs/mobile/?lang=en). In a browser, this component opens a window for uploading an audio file.                |
 | [field.button-radio](field.button-radio.md)             | Adds a button. This is useful for creating an optional answer.                                                                                                                                                        |
 | [field.button-radio-group](field.button-radio-group.md) | Adds buttons for selecting an answer option. This is useful if there are several options. You can add just one button, but it's easier to use [field.button-radio](field.button-radio.md) for that.                   |
 | [field.checkbox](field.checkbox.md)                     | A checkbox.                                                                                                                                                                                                           |

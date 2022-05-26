@@ -6,7 +6,7 @@ Opens a new tab in the browser with the specified web page. For example, you can
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                             | Description                 |
-| ---------------------------------------- | -------------------------------------------------------------------------------- | --------------------------- |
-| `type`<span style="color: red">\*</span> | "action.open-link"                                                               | <p>Set component type</p>   |
-| `payload`                                | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a> | <p>URL of the web page.</p> |
+| Name                                     | Type               | Description                 |
+| ---------------------------------------- | ------------------ | --------------------------- |
+| `type`<span style="color: red">\*</span> | "action.open-link" | <p>Set component type</p>   |
+| `payload`                                | _string_           | <p>URL of the web page.</p> |

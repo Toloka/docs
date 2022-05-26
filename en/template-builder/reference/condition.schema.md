@@ -11,9 +11,9 @@ This component is useful in the following cases:
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                                                                    | Description                                            |
-| ---------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.schema"                                                                                                      | <p>Set component type</p>                              |
-| `data`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>                                              | <p>Data that should be checked.</p>                    |
-| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>                                        | <p>Validation error message that the user will see</p> |
-| `schema`                                 | <a class="xref popup-link" href=https://json-schema.org/learn/getting-started-step-by-step.html>JSON Schema draft 7</a> | <p>The schema for validating data.</p>                 |
+| Name                                     | Type                  | Description                                            |
+| ---------------------------------------- | --------------------- | ------------------------------------------------------ |
+| `type`<span style="color: red">\*</span> | "condition.schema"    | <p>Set component type</p>                              |
+| `data`                                   | _any_                 | <p>Data that should be checked.</p>                    |
+| `hint`                                   | _string_              | <p>Validation error message that the user will see</p> |
+| `schema`                                 | _JSON Schema draft 7_ | <p>The schema for validating data.</p>                 |

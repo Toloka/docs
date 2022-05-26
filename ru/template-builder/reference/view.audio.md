@@ -6,11 +6,11 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                 | Тип                                                                                    | Описание                                                 |
-| ---------------------------------------- | -------------------------------------------------------------------------------------- | -------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "view.audio"                                                                           | <p>Задает тип компонента.</p>                            |
-| `label`                                  | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Надпись над компонентом.</p>                          |
-| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Текст подсказки.</p>                                  |
-| `loop`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Автоматически повторять аудио.</p>                    |
-| `url`<span style="color: red">\*</span>  | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Ссылка на аудио.</p>                                  |
-| `validation`                             | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Валидация на основе условия <em>(condition)</em>.</p> |
+| Название                                 | Тип          | Описание                                                 |
+| ---------------------------------------- | ------------ | -------------------------------------------------------- |
+| `type`<span style="color: red">\*</span> | "view.audio" | <p>Задает тип компонента.</p>                            |
+| `label`                                  | _string_     | <p>Надпись над компонентом.</p>                          |
+| `hint`                                   | _string_     | <p>Текст подсказки.</p>                                  |
+| `loop`                                   | _boolean_    | <p>Автоматически повторять аудио.</p>                    |
+| `url`<span style="color: red">\*</span>  | _string_     | <p>Ссылка на аудио.</p>                                  |
+| `validation`                             | _condition_  | <p>Валидация на основе условия <em>(condition)</em>.</p> |

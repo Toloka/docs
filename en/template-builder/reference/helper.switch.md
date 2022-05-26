@@ -17,11 +17,11 @@ How the helper works:
 
 ## Component properties {#properties}
 
-| Name                                                  | Type                                                                                   | Description                                                                                                  |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
-| `type`<span style="color: red">\*</span>              | "helper.switch"                                                                        | <p>Set component type</p>                                                                                    |
-| `cases`<span style="color: red">\*</span>             | <a class="xref popup-link" href="../concepts/types.dita#types/array">array</a>         | <p>An array of objects consisting of `condition` and `result` property pairs.</p>                            |
-| `cases[]`                                             | <a class="xref popup-link" href="../concepts/types.dita#types/object">object</a>       | <p>Object parameters.</p>                                                                                    |
-| `cases[].condition`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Condition to check.</p>                                                                                   |
-| `cases[].result`<span style="color: red">\*</span>    | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>             | <p>The element that is returned if the condition from the `condition` property is true (returns `true`).</p> |
-| `default`                                             | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>             | <p>Element that is returned if none of the checked conditions returned `true`.</p>                           |
+| Name                                                  | Type            | Description                                                                                                  |
+| ----------------------------------------------------- | --------------- | ------------------------------------------------------------------------------------------------------------ |
+| `type`<span style="color: red">\*</span>              | "helper.switch" | <p>Set component type</p>                                                                                    |
+| `cases`<span style="color: red">\*</span>             | _array_         | <p>An array of objects consisting of `condition` and `result` property pairs.</p>                            |
+| `cases[]`                                             | _object_        | <p>Object parameters.</p>                                                                                    |
+| `cases[].condition`<span style="color: red">\*</span> | _condition_     | <p>Condition to check.</p>                                                                                   |
+| `cases[].result`<span style="color: red">\*</span>    | _any_           | <p>The element that is returned if the condition from the `condition` property is true (returns `true`).</p> |
+| `default`                                             | _any_           | <p>Element that is returned if none of the checked conditions returned `true`.</p>                           |

@@ -14,8 +14,8 @@ As another example, you can use this component to count the number of clicks on 
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                                 | Description                                                |
-| ---------------------------------------- | ------------------------------------------------------------------------------------ | ---------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "action.set"                                                                         | <p>Set component type</p>                                  |
-| `data`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/writable">writable</a> | <p>Data with values that will be processed or changed.</p> |
-| `payload`                                | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>           | <p>The value to write to the data.</p>                     |
+| Name                                     | Type         | Description                                                |
+| ---------------------------------------- | ------------ | ---------------------------------------------------------- |
+| `type`<span style="color: red">\*</span> | "action.set" | <p>Set component type</p>                                  |
+| `data`                                   | _writable_   | <p>Data with values that will be processed or changed.</p> |
+| `payload`                                | _any_        | <p>The value to write to the data.</p>                     |

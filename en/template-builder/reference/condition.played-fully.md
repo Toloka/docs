@@ -6,7 +6,7 @@ This component checks for the end of playback. Validation is passed if playback 
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                             | Description                                            |
-| ---------------------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.played-fully"                                                         | <p>Set component type</p>                              |
-| `hint`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a> | <p>Validation error message that the user will see</p> |
+| Name                                     | Type                     | Description                                            |
+| ---------------------------------------- | ------------------------ | ------------------------------------------------------ |
+| `type`<span style="color: red">\*</span> | "condition.played-fully" | <p>Set component type</p>                              |
+| `hint`                                   | _string_                 | <p>Validation error message that the user will see</p> |

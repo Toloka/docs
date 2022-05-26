@@ -30,7 +30,7 @@ It will be converted to an array whose objects will pair data from the source ob
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                                                       | Description                   |
-| ---------------------------------------- | -------------------------------------------------------------------------- | ----------------------------- |
-| `type`<span style="color: red">\*</span> | "helper.object2entries"                                                    | <p>Set component type</p>     |
-| `data`                                   | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a> | <p>The object to convert.</p> |
+| Name                                     | Type                    | Description                   |
+| ---------------------------------------- | ----------------------- | ----------------------------- |
+| `type`<span style="color: red">\*</span> | "helper.object2entries" | <p>Set component type</p>     |
+| `data`                                   | _any_                   | <p>The object to convert.</p> |

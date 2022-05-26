@@ -8,10 +8,10 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                    | Тип                                                                                    | Описание                                                          |
-| ------------------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>    | "layout.bars"                                                                          | <p>Задает тип компонента.</p>                                     |
-| `barAfter`                                  | <a class="xref popup-link" href="../concepts/types.dita#types/view">view</a>           | <p>Панель, которая отображается у нижней границы компонента.</p>  |
-| `barBefore`                                 | <a class="xref popup-link" href="../concepts/types.dita#types/view">view</a>           | <p>Панель, которая отображается у верхней границы компонента.</p> |
-| `content`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/view">view</a>           | <p>Основной контент.</p>                                          |
-| `validation`                                | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Валидация на основе условия <em>(condition)</em>.</p>          |
+| Название                                    | Тип           | Описание                                                          |
+| ------------------------------------------- | ------------- | ----------------------------------------------------------------- |
+| `type`<span style="color: red">\*</span>    | "layout.bars" | <p>Задает тип компонента.</p>                                     |
+| `barAfter`                                  | _view_        | <p>Панель, которая отображается у нижней границы компонента.</p>  |
+| `barBefore`                                 | _view_        | <p>Панель, которая отображается у верхней границы компонента.</p> |
+| `content`<span style="color: red">\*</span> | _view_        | <p>Основной контент.</p>                                          |
+| `validation`                                | _condition_   | <p>Валидация на основе условия <em>(condition)</em>.</p>          |

@@ -17,11 +17,11 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                              | Тип                                                                                    | Описание                                                                                                                |
-| ----------------------------------------------------- | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>              | "helper.switch"                                                                        | <p>Задает тип компонента.</p>                                                                                           |
-| `cases`<span style="color: red">\*</span>             | <a class="xref popup-link" href="../concepts/types.dita#types/array">array</a>         | <p>Массив объектов, состоящих из пар свойств `condition` и `result`.</p>                                                |
-| `cases[]`                                             | <a class="xref popup-link" href="../concepts/types.dita#types/object">object</a>       | <p>Параметры объекта.</p>                                                                                               |
-| `cases[].condition`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Условие, которое проверяется.</p>                                                                                    |
-| `cases[].result`<span style="color: red">\*</span>    | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>             | <p>Элемент, который будет возвращен, если условие из соответствующего свойства `condition` истинно (вернет `true`).</p> |
-| `default`                                             | <a class="xref popup-link" href="../concepts/types.dita#types/any">any</a>             | <p>Элемент, который будет возвращен, если ни одно из проверенных условий не вернуло `true`.</p>                         |
+| Название                                              | Тип             | Описание                                                                                                                |
+| ----------------------------------------------------- | --------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `type`<span style="color: red">\*</span>              | "helper.switch" | <p>Задает тип компонента.</p>                                                                                           |
+| `cases`<span style="color: red">\*</span>             | _array_         | <p>Массив объектов, состоящих из пар свойств `condition` и `result`.</p>                                                |
+| `cases[]`                                             | _object_        | <p>Параметры объекта.</p>                                                                                               |
+| `cases[].condition`<span style="color: red">\*</span> | _condition_     | <p>Условие, которое проверяется.</p>                                                                                    |
+| `cases[].result`<span style="color: red">\*</span>    | _any_           | <p>Элемент, который будет возвращен, если условие из соответствующего свойства `condition` истинно (вернет `true`).</p> |
+| `default`                                             | _any_           | <p>Элемент, который будет возвращен, если ни одно из проверенных условий не вернуло `true`.</p>                         |
