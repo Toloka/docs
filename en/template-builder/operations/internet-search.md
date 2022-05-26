@@ -29,7 +29,7 @@ For some tasks, you may need to create a link that opens the entered query in th
   "url": {
     "type": "helper.search-query",
     "query": "search query",
-    "engine": "yandex"
+    "engine": "google"
   }
 }
 ```

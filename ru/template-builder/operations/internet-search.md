@@ -29,7 +29,7 @@
   "url": {
     "type": "helper.search-query",
     "query": "текст поискового запроса",
-    "engine": "yandex"
+    "engine": "google"
   }
 }
 ```

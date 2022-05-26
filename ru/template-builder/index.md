@@ -1,6 +1,6 @@
 # Конструктор шаблонов
 
-[Конструктор шаблонов]({{ template-builder }}) позволит вам создать шаблонный интерфейс веб-страницы, а затем использовать его, подставляя только входные данные. Например, чтобы в [Яндекс Толоке]({{ toloka-requester-index-dita }}) создать интерфейс задания по разметке объектов на картинках.
+[Конструктор шаблонов]({{ template-builder }}) позволит вам создать шаблонный интерфейс веб-страницы, а затем использовать его, подставляя только входные данные. Например, чтобы в [Толоке]({{ toloka-requester-index-dita }}) создать интерфейс задания по разметке объектов на картинках.
 
 - [Быстрый старт](quickstart.md)
 Научитесь создавать интерфейсы в конструкторе шаблонов.
@@ -23,4 +23,3 @@
 ## Следите за нами в социальных сетях
 
 [![](_images/SocialNetwork/youtube.svg)]({{ toloka-youtube }})[![](_images/SocialNetwork/facebook.svg)]({{ toloka-facebook }})[![](_images/SocialNetwork/slack.svg)]({{ toloka-slack }})[![](_images/SocialNetwork/linkedin.svg)]({{ toloka-linkedin }})[![](_images/SocialNetwork/twitter.svg)]({{ toloka-twitter }})[![](_images/SocialNetwork/github.svg)]({{ toloka-github }})[![](_images/SocialNetwork/StackOverflow.svg)]({{ toloka-stackoverflow }})[![](_images/SocialNetwork/blog.svg)]({{ toloka-blog }})
-

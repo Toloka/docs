@@ -2159,7 +2159,7 @@ default:
   ui_requester_add-rules: Добавить блок контроля качества
   ui_requester_add_proxy_yandex_disk_oauth_error: Невозможно добавить прокси, поскольку
     используемый Oauth-токен недействителен. Нажмите кнопку «Обновить токен» в строке
-    «ИНТЕГРАЦИЯ C ЯНДЕКС.ДИСКОМ»
+    «ИНТЕГРАЦИЯ C ЯНДЕКС ДИСКОМ»
   ui_requester_adp__attach__ttl: Скачать вложения
   ui_requester_adp__dwnld: Скачать результаты
   ui_requester_adp__error__file_too_big: Запрашиваемый файл превышает допустимый размер
@@ -2184,7 +2184,6 @@ default:
   ui_requester_applicationTemplates-modal-bannerText1: Если это приложение не подходит,
     заполните __form__. Мы учтём ваши пожелания при разработке новых решений
   ui_requester_applicationTemplates-modal-bannerText1Form: форму
-  ui_requester_applicationTemplates-modal-bannerText1FormLink: https://forms.yandex-team.ru/surveys/64390/
   ui_requester_applicationTemplates-modal-dataFormat: Формат данных для разметки
   ui_requester_applicationTemplates-modal-downloadSampleData: Скачать пример данных
   ui_requester_applicationTemplates-modal-hint1: Создайте Ready-to-go-проект и опишите
@@ -2701,11 +2700,11 @@ default:
   ui_requester_intgrtn-proxy-type-lbl: Тип
   ui_requester_intgrtn-prx-name-err-regexp: Допустимы латинские буквы, цифры и знак
     минуса (–)
-  ui_requester_intgrtn-yd-connect: Подключить Яндекс.Диск
+  ui_requester_intgrtn-yd-connect: Подключить Яндекс Диск
   ui_requester_intgrtn-yd-content: Подключите, чтобы хранить медиафайлы для инструкций
     и заданий
-  ui_requester_intgrtn-yd-header: Яндекс.Диск
-  ui_requester_intgrtn-yd-ttl: Интеграция c Яндекс.Диском
+  ui_requester_intgrtn-yd-header: Яндекс Диск
+  ui_requester_intgrtn-yd-ttl: Интеграция c Яндекс Диском
   ui_requester_intgrtn-yd-update: Обновить токен
   ui_requester_io-spec-editor-validation-uniq-name: Это название уже используется.
     Введите другое
@@ -2720,37 +2719,30 @@ default:
   ui_requester_label__search_skills: Найти навык
   ui_requester_labs_promo_audio_transcript_description: Любые задачи, где необходимо
     расшифровать аудиозаписи
-  ui_requester_labs_promo_audio_transcript_link: https://forms.yandex-team.ru/surveys/64368/
   ui_requester_labs_promo_audio_transcript_title: Расшифровка аудиозаписей
   ui_requester_labs_promo_audio_transcript_unit: руб/минута
   ui_requester_labs_promo_images_and_text_description: Любые задачи, где нужно отнести
     изображение с текстом к одному или нескольким классам
-  ui_requester_labs_promo_images_and_text_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/259
   ui_requester_labs_promo_images_and_text_title: Изображение + текст
   ui_requester_labs_promo_images_description: Любые задачи, где нужно отнести изображение
     к одному или нескольким классам
-  ui_requester_labs_promo_images_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/257
   ui_requester_labs_promo_images_title: Изображения
   ui_requester_labs_promo_objects_per_day: объектов/24ч
   ui_requester_labs_promo_price: Стоимость
   ui_requester_labs_promo_price_per_object: руб/объект
   ui_requester_labs_promo_search_information_description: Любые задачи, где нужно
     найти информацию на различных сайтах
-  ui_requester_labs_promo_search_information_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/262
   ui_requester_labs_promo_search_information_title: Поиск информации на сайте
   ui_requester_labs_promo_show_all_solutions: Показать все решения
   ui_requester_labs_promo_speed: Скорость
   ui_requester_labs_promo_text_classification_description: Любые задачи, где нужно
     отнести текст к одному или нескольким классам
-  ui_requester_labs_promo_text_classification_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/401
   ui_requester_labs_promo_text_classification_title: Классификация текста
   ui_requester_labs_promo_video_and_text_description: Любые задачи, где нужно отнести
     видео с текстом к одному или нескольким классам
-  ui_requester_labs_promo_video_and_text_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/392
   ui_requester_labs_promo_video_and_text_title: Видео + текст
   ui_requester_labs_promo_web_page_and_text_description: Задачи, где нужно отнести
     веб-страницу и описание к ней к одному или нескольким классам
-  ui_requester_labs_promo_web_page_and_text_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/260
   ui_requester_labs_promo_web_page_and_text_title: Веб-страница + текст
   ui_requester_legal_entity_changed_accept: Accept
   ui_requester_legal_entity_changed_header: We've changed our legal entity
@@ -4821,8 +4813,8 @@ default:
   ui_requester_prjt__product_photo__product_title: 'наименование:'
   ui_requester_prjt__product_photo__sku: 'артикул:'
   ui_requester_prjt__product_photo__ttl: Поиск фотографий товаров
-  ui_requester_prjt__product_photo__ya_pics: Яндекс.Картинки
-  ui_requester_prjt__product_photo__ya_search: Яндекс.Поиск
+  ui_requester_prjt__product_photo__ya_pics: Яндекс Картинки
+  ui_requester_prjt__product_photo__ya_search: Яндекс Поиск
   ui_requester_prjt__sbs__desc: Посмотрите на иконки и определите какие нравятся больше
   ui_requester_prjt__sbs__name: Сравнение изображений
   ui_requester_prjt__sbs__ttl: Сравнение изображений (Side-by-side)
@@ -5471,7 +5463,7 @@ default:
     исполнителем
   ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_google: Карты
     Google
-  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Яндекс.Карты
+  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Яндекс Карты
   ui_requester_project_wizard_assignment_issuing_settings_title: Настройки отображения
     пешеходных заданий
   ui_requester_project_wizard_assignment_issuing_title_setting: Формат заголовка
@@ -5598,8 +5590,8 @@ default:
   ui_requester_proxy-PRIVATE: Приватный
   ui_requester_proxy-PUBLIC: Публичный
   ui_requester_proxy-type-HTTP: HTTP
-  ui_requester_proxy-type-YANDEX_DISK: Яндекс.Диск
-  ui_requester_proxy_popup_disk_space_overflow: У вас на Яндекс.Диске закончилось
+  ui_requester_proxy-type-YANDEX_DISK: Яндекс Диск
+  ui_requester_proxy_popup_disk_space_overflow: У вас на Яндекс Диске закончилось
     место
   ui_requester_proxy_pup_error__unique_proxy_name: Данное имя уже занято вами или
     другим заказчиком. Укажите другое имя, пожалуйста
@@ -6271,7 +6263,6 @@ default:
   ui_requester_tltp_pool_edit_ms_nrm: Количество основных заданий на странице
   ui_requester_tltp_pool_edit_ms_trn: Количество обучающих заданий на странице
   ui_requester_to: По
-  ui_requester_toloka-labs-all-solutions: https://wiki.yandex-team.ru/assessment/toloka/tolokalabs/tolokalabs-for-users/
   ui_requester_toloka_lab_action_button: Перейти в лабораторию
   ui_requester_too-early-ban-expiration-date: Дата разблокировки не может быть раньше,
     чем сегодняшнее число
@@ -6298,7 +6289,7 @@ default:
     шаблонов и создать свой первый проект
   ui_requester_tutorial-projects-page_create_title: Создать проект
   ui_requester_tutorial-projects-page_profile_content: Обновите информацию, пополните
-    баланс, подключите Яндекс.Диск и настройте уведомления
+    баланс, подключите Яндекс Диск и настройте уведомления
   ui_requester_tutorial-projects-page_profile_title: Личные данные и настройки
   ui_requester_tutorial-projects-page_user-name_content: Это ваше имя в Толоке — его
     будут видеть исполнители. Изменить имя можно в Профиле

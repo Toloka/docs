@@ -10,7 +10,7 @@ In the task review mode, the uploaded images will appear automatically. You can 
 
 [View example in the sandbox](https://clck.ru/asSVc).
 
-## Using the Yandex.Toloka mobile app
+## Using the Toloka mobile app
 
 In the Toloka mobile app, the photo and video buttons open the camera, and the gallery and file manager buttons open the corresponding apps.
 

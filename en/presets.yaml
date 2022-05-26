@@ -1,5 +1,5 @@
 default:
-  toloka: 'https://toloka.yandex.com/'
+  toloka: 'https://toloka.ai/'
   visualstudio: 'https://code.visualstudio.com/'
   json: 'https://www.json.org/json-en.html'
   json-schema: 'https://json-schema.org/learn/getting-started-step-by-step.html'
@@ -21,7 +21,7 @@ default:
   toloka-linkedin: 'https://www.linkedin.com/company/toloka/'
   toloka-twitter: 'https://twitter.com/TolokaAI'
   toloka-github: 'https://github.com/toloka'
-  toloka-blog: 'https://yandex.ru/blog/toloka'
+  toloka-blog: 'https://toloka.ai/blog/'
   toloka-stackoverflow: 'https://stackoverflow.com/questions/tagged/toloka'
   ui_labs_add_items-add: Add items
   ui_labs_add_items-added: Items added to batch
@@ -2244,7 +2244,7 @@ default:
   ui_requester_add-filter: Add filter
   ui_requester_add-rules: Add Quality Control Rule
   ui_requester_add_proxy_yandex_disk_oauth_error: Can't add a proxy because an invalid
-    OAuth token is used. Click "Refresh token" next to "Yandex.Disk Integration"
+    OAuth token is used. Click "Refresh token" next to "Yandex Disk Integration"
   ui_requester_adp__attach__ttl: Download attachments
   ui_requester_adp__dwnld: Download results
   ui_requester_adp__error__file_too_big: The file is too big (4 GB max). You can select
@@ -2272,7 +2272,6 @@ default:
     needs, please fill out the __form__. We'll use your suggestions when developing
     new solutions
   ui_requester_applicationTemplates-modal-bannerText1Form: form
-  ui_requester_applicationTemplates-modal-bannerText1FormLink: https://forms.yandex-team.ru/surveys/64390/
   ui_requester_applicationTemplates-modal-dataFormat: The format of data to be labeled
   ui_requester_applicationTemplates-modal-downloadSampleData: Download sample data
   ui_requester_applicationTemplates-modal-hint1: Create an Ready-to-go project and
@@ -2787,10 +2786,10 @@ default:
   ui_requester_intgrtn-proxy-type-lbl: Type
   ui_requester_intgrtn-prx-name-err-regexp: Allowed characters are Latin letters,
     numbers, and the minus sign (–)
-  ui_requester_intgrtn-yd-connect: Connect Yandex.Disk
+  ui_requester_intgrtn-yd-connect: Connect Yandex Disk
   ui_requester_intgrtn-yd-content: Store media files for instructions and tasks
-  ui_requester_intgrtn-yd-header: Yandex.Disk
-  ui_requester_intgrtn-yd-ttl: Yandex.Disk integration
+  ui_requester_intgrtn-yd-header: Yandex Disk
+  ui_requester_intgrtn-yd-ttl: Yandex Disk integration
   ui_requester_intgrtn-yd-update: Refresh token
   ui_requester_io-spec-editor-validation-uniq-name: This title is already in use.
     Enter a different one.
@@ -2805,37 +2804,30 @@ default:
   ui_requester_label__search_skills: Find skill
   ui_requester_labs_promo_audio_transcript_description: Any tasks where performers
     transcribe audio recordings
-  ui_requester_labs_promo_audio_transcript_link: https://forms.yandex-team.ru/surveys/64368/
   ui_requester_labs_promo_audio_transcript_title: Audio transcription
   ui_requester_labs_promo_audio_transcript_unit: rubles per minute
   ui_requester_labs_promo_images_and_text_description: Any tasks where performers
     assign an image with text to one or more classes
-  ui_requester_labs_promo_images_and_text_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/259
   ui_requester_labs_promo_images_and_text_title: Image with text
   ui_requester_labs_promo_images_description: Any tasks where performers assign an
     image to one or more classes
-  ui_requester_labs_promo_images_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/257
   ui_requester_labs_promo_images_title: Images
   ui_requester_labs_promo_objects_per_day: objects per 24 hours
   ui_requester_labs_promo_price: Price
   ui_requester_labs_promo_price_per_object: rubles per object
   ui_requester_labs_promo_search_information_description: Any tasks where performers
     search for information on various sites
-  ui_requester_labs_promo_search_information_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/262
   ui_requester_labs_promo_search_information_title: Search for information on a site
   ui_requester_labs_promo_show_all_solutions: Show all solutions
   ui_requester_labs_promo_speed: Speed
   ui_requester_labs_promo_text_classification_description: Any tasks where performers
     assign a text to one or more classes
-  ui_requester_labs_promo_text_classification_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/401
   ui_requester_labs_promo_text_classification_title: Text classification
   ui_requester_labs_promo_video_and_text_description: Any tasks where performers assign
     a video with text to one or more classes
-  ui_requester_labs_promo_video_and_text_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/392
   ui_requester_labs_promo_video_and_text_title: Video with text
   ui_requester_labs_promo_web_page_and_text_description: Tasks where performers assign
     a web page and its description to one or more classes
-  ui_requester_labs_promo_web_page_and_text_link: https://nirvana.yandex-team.ru/domain/toloka_boxes/start/260
   ui_requester_labs_promo_web_page_and_text_title: Web page and text
   ui_requester_legal_entity_changed_accept: Accept
   ui_requester_legal_entity_changed_header: We've changed our legal entity
@@ -4911,8 +4903,8 @@ default:
   ui_requester_prjt__product_photo__product_title: 'product name:'
   ui_requester_prjt__product_photo__sku: 'vendor code:'
   ui_requester_prjt__product_photo__ttl: Product photo search
-  ui_requester_prjt__product_photo__ya_pics: Yandex.Images
-  ui_requester_prjt__product_photo__ya_search: Yandex.Search
+  ui_requester_prjt__product_photo__ya_pics: Yandex Images
+  ui_requester_prjt__product_photo__ya_search: Yandex Search
   ui_requester_prjt__sbs__desc: Look at the icons and decide which one you like more
   ui_requester_prjt__sbs__details: Compare two images and evaluate how relevant they
     are or select which one is better. The labeling interface includes two images
@@ -5554,7 +5546,7 @@ default:
     by performer
   ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_google: Google
     Maps
-  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Yandex.Maps
+  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Yandex Maps
   ui_requester_project_wizard_assignment_issuing_settings_title: Settings for displaying
     field tasks
   ui_requester_project_wizard_assignment_issuing_title_setting: Title format
@@ -5678,9 +5670,9 @@ default:
   ui_requester_proxy-PRIVATE: Private
   ui_requester_proxy-PUBLIC: Public
   ui_requester_proxy-type-HTTP: HTTP
-  ui_requester_proxy-type-YANDEX_DISK: Yandex.Disk
+  ui_requester_proxy-type-YANDEX_DISK: Yandex Disk
   ui_requester_proxy_popup_disk_space_overflow: You've run out of storage space on
-    Yandex.Disk
+    Yandex Disk
   ui_requester_proxy_pup_error__unique_proxy_name: This proxy name is already used
     by you or another requester. Please enter another name
   ui_requester_qual_adj__abs_top_n__help: Specify the maximum number of top-rated
@@ -6356,7 +6348,7 @@ default:
     more&lt;/3&gt;
   ui_requester_tltp-profile-oauth: To work with Toloka via the API, you need to get
     an OAuth token.&lt;br&gt;This is required for authorization
-  ui_requester_tltp-profile-proxy: List of Yandex.Disk proxies added
+  ui_requester_tltp-profile-proxy: List of Yandex Disk proxies added
   ui_requester_tltp-skills-is_visible: Public skills are visible to all users
   ui_requester_tltp-wrkr-rating: The rating is based on the user's performance on
     all projects.&lt;br&gt;The higher the rating, the better
@@ -6380,7 +6372,6 @@ default:
   ui_requester_tltp_pool_edit_ms_nrm: Number of general tasks per suite
   ui_requester_tltp_pool_edit_ms_trn: Number of training tasks per suite
   ui_requester_to: To
-  ui_requester_toloka-labs-all-solutions: https://wiki.yandex-team.ru/assessment/toloka/tolokalabs/tolokalabs-for-users/
   ui_requester_toloka_lab_action_button: Go to Labs
   ui_requester_too-early-ban-expiration-date: Can't unblock the user earlier than
     today
@@ -6405,7 +6396,7 @@ default:
     and create your first project
   ui_requester_tutorial-projects-page_create_title: Create a project
   ui_requester_tutorial-projects-page_profile_content: Update your information, top
-    up your balance, connect Yandex.Disk, and manage your notification settings
+    up your balance, connect Yandex Disk, and manage your notification settings
   ui_requester_tutorial-projects-page_profile_title: Personal information and settings
   ui_requester_tutorial-projects-page_user-name_content: This is your Toloka name
     that is visible to performers. You can change your name in your Profile
@@ -6508,7 +6499,7 @@ default:
   ui_requester_wf-preset-predicate__os-family_mobiles: iOS or Android
   ui_requester_wlcm-header: Let's get started
   ui_requester_wlcm-help: In case of difficulties
-  ui_requester_wlcm-help-callsupport: Contact the Yandex.Toloka team via %s
+  ui_requester_wlcm-help-callsupport: Contact the Toloka team via %s
   ui_requester_wlcm-help-readdocs: Read the &lt;a data-pass target="_blank" href="https://toloka.ai/ru/docs/guide/"&gt;documentation&lt;/a&gt;
   ui_requester_wlcm-help-support: Support
   ui_requester_wlcm-help-terminology: glossary

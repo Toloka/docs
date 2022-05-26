@@ -1,6 +1,6 @@
 # field.audio
 
-Component for recording audio. Works in the [Yandex.Toloka app for mobile devices](https://toloka.ai/tolokers/docs/mobile/?lang=en). In a browser, this component opens a window for uploading an audio file.
+Component for recording audio. Works in the [Toloka app for mobile devices](https://toloka.ai/tolokers/docs/mobile/?lang=en). In a browser, this component opens a window for uploading an audio file.
 
 [View example in sandbox](https://clck.ru/So3w7).
 

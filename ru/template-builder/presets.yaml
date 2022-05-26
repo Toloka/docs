@@ -1,5 +1,5 @@
 default:
-  toloka: 'https://toloka.yandex.com/'
+  toloka: 'https://toloka.ai/'
   visualstudio: 'https://code.visualstudio.com/'
   json: 'https://www.json.org/json-en.html'
   json-schema: 'https://json-schema.org/learn/getting-started-step-by-step.html'
@@ -1249,7 +1249,6 @@ default:
   ui_requester_advanced_suite_sizing_params__show_list: Показать дополнительные настройки
   ui_requester_applicationTemplates-description: Подходят только для Ready-to-go-проектов
   ui_requester_applicationTemplates-modal-bannerText1Form: форму
-  ui_requester_applicationTemplates-modal-bannerText1FormLink: https://forms.yandex-team.ru/surveys/64390/
   ui_requester_applicationTemplates-modal-dataFormat: Формат данных для разметки
   ui_requester_applicationTemplates-modal-downloadSampleData: Скачать пример данных
   ui_requester_applicationTemplates-modal-hint2Description: Проверка может занять
@@ -1627,7 +1626,7 @@ default:
   ui_requester_hlp-lnk-req-api: https://toloka.ai/ru/docs/api/
   ui_requester_hlp-lnk-what-tlk-req: https://toloka.ai/ru/docs/guide/
   ui_requester_hlp-ttl-blog: Блог Толоки
-  ui_requester_hlp-ttl-blog-link: https://yandex.ru/blog/toloka
+  ui_requester_hlp-ttl-blog-link: https://toloka.ai/blog/
   ui_requester_hlp-ttl-news: Новости
   ui_requester_hlp-ttl-req-api: API
   ui_requester_html_meta__title_requester: 'Toloka: Data solution to drive AI'
@@ -1665,9 +1664,9 @@ default:
   ui_requester_intgrtn-proxy-delete-title: Удалить прокси
   ui_requester_intgrtn-proxy-path-lbl: 'URL:'
   ui_requester_intgrtn-proxy-type-lbl: Тип
-  ui_requester_intgrtn-yd-connect: Подключить Яндекс.Диск
-  ui_requester_intgrtn-yd-header: Яндекс.Диск
-  ui_requester_intgrtn-yd-ttl: Интеграция c Яндекс.Диском
+  ui_requester_intgrtn-yd-connect: Подключить Яндекс Диск
+  ui_requester_intgrtn-yd-header: Яндекс Диск
+  ui_requester_intgrtn-yd-ttl: Интеграция c Яндекс Диском
   ui_requester_intgrtn-yd-update: Обновить токен
   ui_requester_io-spec-editor-validation-uniq-name: Это название уже используется.
     Введите другое
@@ -1678,7 +1677,6 @@ default:
   ui_requester_known_solution__count_zero: Не используется ни в одном задании
   ui_requester_known_solution__expand: Показать остальные значения
   ui_requester_label__search_skills: Найти навык
-  ui_requester_labs_promo_audio_transcript_link: https://forms.yandex-team.ru/surveys/64368/
   ui_requester_labs_promo_audio_transcript_title: Расшифровка аудиозаписей
   ui_requester_labs_promo_audio_transcript_unit: руб/минута
   ui_requester_labs_promo_images_and_text_title: Изображение + текст
@@ -3127,8 +3125,8 @@ default:
   ui_requester_prjt__product_photo__product_title: 'наименование:'
   ui_requester_prjt__product_photo__sku: 'артикул:'
   ui_requester_prjt__product_photo__ttl: Поиск фотографий товаров
-  ui_requester_prjt__product_photo__ya_pics: Яндекс.Картинки
-  ui_requester_prjt__product_photo__ya_search: Яндекс.Поиск
+  ui_requester_prjt__product_photo__ya_pics: Яндекс Картинки
+  ui_requester_prjt__product_photo__ya_search: Яндекс Поиск
   ui_requester_prjt__sbs__name: Сравнение изображений
   ui_requester_prjt__sbs__ttl: Сравнение изображений (Side-by-side)
   ui_requester_prjt__search__desc: Найдите номер телефона и адрес электронной почты
@@ -3564,7 +3562,7 @@ default:
     исполнителем
   ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_google: Карты
     Google
-  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Яндекс.Карты
+  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Яндекс Карты
   ui_requester_project_wizard_assignment_issuing_settings_title: Настройки отображения
     пешеходных заданий
   ui_requester_project_wizard_assignment_issuing_title_setting: Формат заголовка
@@ -3668,8 +3666,8 @@ default:
   ui_requester_proxy-PRIVATE: Приватный
   ui_requester_proxy-PUBLIC: Публичный
   ui_requester_proxy-type-HTTP: HTTP
-  ui_requester_proxy-type-YANDEX_DISK: Яндекс.Диск
-  ui_requester_proxy_popup_disk_space_overflow: У вас на Яндекс.Диске закончилось
+  ui_requester_proxy-type-YANDEX_DISK: Яндекс Диск
+  ui_requester_proxy_popup_disk_space_overflow: У вас на Яндекс Диске закончилось
     место
   ui_requester_qual_adj__expl__avail_zero: Задание недоступно для активных пользователей
   ui_requester_qual_adj__expl__top: Выбрано &lt;strong&gt;%s&lt;/strong&gt; лучших
