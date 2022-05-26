@@ -6,10 +6,11 @@ Groups components visually into framed blocks.
 
 ## Component properties {#properties}
 
-| Name                                     | Type         | Description                                                              |
-| ---------------------------------------- | ------------ | ------------------------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "view.group" | <p>Set component type</p>                                                |
-| `label`                                  | _string_     | <p>Group heading.</p>                                                    |
-| `content`                                | _view_       | <p>Content of a group block.</p>                                         |
-| `hint`                                   | _string_     | <p>Explanation of the group heading. To insert a new line, use `\n`.</p> |
-| `validation`                             | _condition_  | <p>Validation based on condition.</p>                                    |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "view.group" | Set component type ||
+|| `label` | _string_ | Group heading. ||
+|| `content` | _view_ | Content of a group block. ||
+|| `hint` | _string_ | Explanation of the group heading. To insert a new line, use `\n`. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

@@ -10,11 +10,12 @@ If you set the `defaultOpened` property to `true`, the block is expanded immedia
 
 ## Component properties {#properties}
 
-| Name                                        | Type            | Description                                                                                                          |
-| ------------------------------------------- | --------------- | -------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>    | "view.collapse" | <p>Set component type</p>                                                                                            |
-| `label`<span style="color: red">\*</span>   | _string_        | <p>Block heading.</p>                                                                                                |
-| `content`<span style="color: red">\*</span> | _view_          | <p>Content hidden in the block.</p>                                                                                  |
-| `defaultOpened`                             | _boolean_       | <p>If `true`, the block is immediately displayed in expanded form. By default, `false` (the block is collapsed).</p> |
-| `hint`                                      | _string_        | <p>Hint text.</p>                                                                                                    |
-| `validation`                                | _condition_     | <p>Validation based on condition.</p>                                                                                |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "view.collapse" | Set component type ||
+|| `label`<span style="color: red">\*</span> | _string_ | Block heading. ||
+|| `content`<span style="color: red">\*</span> | _view_ | Content hidden in the block. ||
+|| `defaultOpened` | _boolean_ | If `true`, the block is immediately displayed in expanded form. By default, `false` (the block is collapsed). ||
+|| `hint` | _string_ | Hint text. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

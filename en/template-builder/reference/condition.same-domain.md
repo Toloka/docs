@@ -17,9 +17,10 @@ How to pass a link address:
 
 ## Component properties {#properties}
 
-| Name                                         | Type                    | Description                                                                                                                                                         |
-| -------------------------------------------- | ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>     | "condition.same-domain" | <p>Set component type</p>                                                                                                                                           |
-| `data`                                       | _any_                   | <p>The link address to be checked. If you don't specify it, the value returned by the parent component (the one that contains `condition.same-domain`) is used.</p> |
-| `hint`                                       | _string_                | <p>Validation error message that the user will see</p>                                                                                                              |
-| `original`<span style="color: red">\*</span> | _any_                   | <p>The link address that your link is compared to.</p>                                                                                                              |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.same-domain" | Set component type ||
+|| `data` | _any_ | The link address to be checked. If you don't specify it, the value returned by the parent component (the one that contains `condition.same-domain`) is used. ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|| `original`<span style="color: red">\*</span> | _any_ | The link address that your link is compared to. ||
+|#

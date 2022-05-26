@@ -6,9 +6,10 @@ Checks that the array in `data` is a subarray for `parent`.
 
 ## Component properties {#properties}
 
-| Name                                     | Type                  | Description                                            |
-| ---------------------------------------- | --------------------- | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.sub-array" | <p>Set component type</p>                              |
-| `data`                                   | _any_                 | <p>Subarray that is checked for in `parent`</p>        |
-| `hint`                                   | _string_              | <p>Validation error message that the user will see</p> |
-| `parent`                                 | _any_                 | <p>The array where `data` is searched for</p>          |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.sub-array" | Set component type ||
+|| `data` | _any_ | Subarray that is checked for in `parent` ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|| `parent` | _any_ | The array where `data` is searched for ||
+|#

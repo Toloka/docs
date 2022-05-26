@@ -30,7 +30,8 @@ Usage example:
 
 ## Component properties {#properties}
 
-| Name                                     | Type               | Description                                                                    |
-| ---------------------------------------- | ------------------ | ------------------------------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "helper.translate" | <p>Set component type</p>                                                      |
-| `key`<span style="color: red">\*</span>  | _string_           | <p>The key for a text property that you will translate to other languages.</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "helper.translate" | Set component type ||
+|| `key`<span style="color: red">\*</span> | _string_ | The key for a text property that you will translate to other languages. ||
+|#

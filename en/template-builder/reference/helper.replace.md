@@ -8,9 +8,11 @@ Because the `helper.replace` helper returns a string, it can be used in properti
 
 ## Component properties {#properties}
 
-| Name                                        | Type             | Description                                                                                                                        |
-| ------------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>    | "helper.replace" | <p>Set component type</p>                                                                                                          |
-| `data`<span style="color: red">\*</span>    | _any_            | <p>Data to perform the replacement on.</p>                                                                                         |
-| `find`<span style="color: red">\*</span>    | _string_         | <p>The value to search for — the string whose occurrences must be found in `data` and replaced with the string from `replace`.</p> |
-| `replace`<span style="color: red">\*</span> | _string_         | <p>The value to insert in place of the matches of the `find` value.</p>                                                            |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "helper.replace" | Set component type ||
+|| `data`<span style="color: red">\*</span> | _any_ | Data to perform the replacement on.
+||
+|| `find`<span style="color: red">\*</span> | _string_ | The value to search for — the string whose occurrences must be found in `data` and replaced with the string from `replace`. ||
+|| `replace`<span style="color: red">\*</span> | _string_ | The value to insert in place of the matches of the `find` value. ||
+|#

@@ -6,16 +6,19 @@ If you don't need labels, use [view.list](view.list.md).
 
 ## Component properties {#properties}
 
-| Name                                                | Type                | Description                                                                                                                                                                                                                                                        |
-| --------------------------------------------------- | ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `type`<span style="color: red">\*</span>            | "view.labeled-list" | <p>Set component type</p>                                                                                                                                                                                                                                          |
-| `label`                                             | _string_            | <p>Label above the component.</p>                                                                                                                                                                                                                                  |
-| `hint`                                              | _string_            | <p>Hint text.</p>                                                                                                                                                                                                                                                  |
-| `items`<span style="color: red">\*</span>           | _array_             | <p>An array of list items.</p>                                                                                                                                                                                                                                     |
-| `items[]`                                           | _object_            | <p>Parameters of a list item.</p>                                                                                                                                                                                                                                  |
-| `items[].centerLabel`                               | _boolean_           | <p>If `true`, a `label` is center-aligned relative to the content of a list item (`content`). Use it if the list consists of large items, such as images or multi-line text.</p><p>By default, `false` (the label is aligned to the top of the content block).</p> |
-| `items[].content`<span style="color: red">\*</span> | _view_              | <p>List item content.</p>                                                                                                                                                                                                                                          |
-| `items[].hint`                                      | _string_            | <p>A pop-up hint displayed next to a label.</p>                                                                                                                                                                                                                    |
-| `items[].label`<span style="color: red">\*</span>   | _string_            | <p>A label displayed next to a list item.</p>                                                                                                                                                                                                                      |
-| `minWidth`                                          | _number_            | <p>The minimum width of list content. If the component width is less than the specified value, it switches to compact mode.</p>                                                                                                                                    |
-| `validation`                                        | _condition_         | <p>Validation based on condition.</p>                                                                                                                                                                                                                              |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "view.labeled-list" | Set component type ||
+|| `label` | _string_ | Label above the component. ||
+|| `hint` | _string_ | Hint text. ||
+|| `items`<span style="color: red">\*</span> | _array_ | An array of list items. ||
+|| `items[]` | _object_ | Parameters of a list item. ||
+|| `items[].centerLabel` | _boolean_ | If `true`, a `label` is center-aligned relative to the content of a list item (`content`). Use it if the list consists of large items, such as images or multi-line text.
+
+By default, `false` (the label is aligned to the top of the content block). ||
+|| `items[].content`<span style="color: red">\*</span> | _view_ | List item content. ||
+|| `items[].hint` | _string_ | A pop-up hint displayed next to a label. ||
+|| `items[].label`<span style="color: red">\*</span> | _string_ | A label displayed next to a list item. ||
+|| `minWidth` | _number_ | The minimum width of list content. If the component width is less than the specified value, it switches to compact mode. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

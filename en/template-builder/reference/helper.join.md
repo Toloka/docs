@@ -4,9 +4,10 @@ The component combines two or more strings into one. You can add a delimiter to 
 
 ## Component properties {#properties}
 
-| Name                                      | Type          | Description                                                                                  |
-| ----------------------------------------- | ------------- | -------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>  | "helper.join" | <p>Set component type</p>                                                                    |
-| `by`                                      | _any_         | <p>Delimiter for joining strings. You can use any number of characters in the delimiter.</p> |
-| `items`<span style="color: red">\*</span> | _array_       | <p>Array of strings to join.</p>                                                             |
-| `items[]`                                 | _string_      | <p>String parameters.</p>                                                                    |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "helper.join" | Set component type ||
+|| `by` | _any_ | Delimiter for joining strings. You can use any number of characters in the delimiter. ||
+|| `items`<span style="color: red">\*</span> | _array_ | Array of strings to join. ||
+|| `items[]` | _string_ | String parameters. ||
+|#

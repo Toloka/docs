@@ -2,7 +2,7 @@
 
 Sets the value from `payload` in the data in the `data` property.
 
-[Learn more about working with data](../operations/work-with-data.dita).
+[Learn more about working with data](../operations/work-with-data.md).
 
 For example, let's say you want to add shortcuts for the [field.radio-group](field.radio-group.md) option. You need the shortcut to perform the same action as the selected option, which is to set the specified value in the data. To set this action, use `action.set`.
 
@@ -14,8 +14,9 @@ As another example, you can use this component to count the number of clicks on 
 
 ## Component properties {#properties}
 
-| Name                                     | Type         | Description                                                |
-| ---------------------------------------- | ------------ | ---------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "action.set" | <p>Set component type</p>                                  |
-| `data`                                   | _writable_   | <p>Data with values that will be processed or changed.</p> |
-| `payload`                                | _any_        | <p>The value to write to the data.</p>                     |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "action.set" | Set component type ||
+|| `data` | _writable_ | Data with values that will be processed or changed. ||
+|| `payload` | _any_ | The value to write to the data. ||
+|#

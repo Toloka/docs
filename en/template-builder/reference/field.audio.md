@@ -6,11 +6,15 @@ Component for recording audio. Works in the [Toloka app for mobile devices](http
 
 ## Component properties {#properties}
 
-| Name                                     | Type          | Description                                                                                                                                             |
-| ---------------------------------------- | ------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "field.audio" | <p>Set component type</p>                                                                                                                               |
-| `data`<span style="color: red">\*</span> | _writable_    | <p>Data with values that will be processed or changed.</p>                                                                                              |
-| `label`                                  | _string_      | <p>Label above the component.</p>                                                                                                                       |
-| `hint`                                   | _string_      | <p>Hint text.</p>                                                                                                                                       |
-| `multiple`                               | _boolean_     | <p>Determines whether multiple audio files can be recorded (or uploaded):</p><ul><li>`false` (default) — forbidden.</li><li>`true` — allowed.</li></ul> |
-| `validation`                             | _condition_   | <p>Validation based on condition.</p>                                                                                                                   |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "field.audio" | Set component type ||
+|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `label` | _string_ | Label above the component. ||
+|| `hint` | _string_ | Hint text. ||
+|| `multiple` | _boolean_ | Determines whether multiple audio files can be recorded (or uploaded):
+
+- `false` (default) — forbidden.
+- `true` — allowed. ||
+  || `validation` | _condition_ | Validation based on condition. ||
+  |#

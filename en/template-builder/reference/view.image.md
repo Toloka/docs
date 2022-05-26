@@ -2,24 +2,35 @@
 
 Displays an image.
 
-[Learn more about inserting images](../operations/insert-images.dita).
+[Learn more about inserting images](../operations/insert-images.md).
 
 ## Component properties {#properties}
 
-| Name                                     | Type         | Description                                                                                                                                                                                                                                                                                                    |
-| ---------------------------------------- | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "view.image" | <p>Set component type</p>                                                                                                                                                                                                                                                                                      |
-| `label`                                  | _string_     | <p>Label above the component.</p>                                                                                                                                                                                                                                                                              |
-| `fullHeight`                             | _boolean_    | <p>If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels.</p>                                                                                                                                                                                      |
-| `hint`                                   | _string_     | <p>Hint text.</p>                                                                                                                                                                                                                                                                                              |
-| `maxWidth`                               | _number_     | <p>Maximum width of the element in pixels, must be greater than `minWidth`.</p>                                                                                                                                                                                                                                |
-| `minWidth`                               | _number_     | <p>Minimum width of the element in pixels. Takes priority over `maxWidth`.</p>                                                                                                                                                                                                                                 |
-| `noBorder`                               | _boolean_    | <p>Controls the display of a frame around an image. By default, `true` (the frame is hidden). Set `false` to display the frame.</p>                                                                                                                                                                            |
-| `noLazyLoad`                             | _boolean_    | <p>Disables lazy loading.</p><p>If `true`, images start loading immediately, even if they aren't in the viewport. Useful for icons.</p><p>By default, `false` (lazy loading is enabled). In this mode, images start loading only when they get in the user's field of view.</p>                                |
-| `popup`                                  | _boolean_    | <p>Specifies whether opening a full-size image with a click is allowed. By default, it is `true` (allowed).</p>                                                                                                                                                                                                |
-| `ratio`                                  | _array_      | <p>An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number).</p><p>Not valid if `"fullHeight": true`.</p>                                                                                                                                        |
-| `ratio[]`                                | _number_     | <p>Relative size of one side.</p>                                                                                                                                                                                                                                                                              |
-| `rotatable`                              | _boolean_    | <p>If enabled, an image can be rotated.</p>                                                                                                                                                                                                                                                                    |
-| `scrollable`                             | _boolean_    | <p>When set to `true`, an image has scroll bars if it doesn't fit in the parent element.</p><p>If `false`, the image fits in the parent element and, when clicked, opens in its original size in the module window.</p><p>Images in SVG format with no size specified always fit in their parent elements.</p> |
-| `url`<span style="color: red">\*</span>  | _string_     | <p>Image link.</p>                                                                                                                                                                                                                                                                                             |
-| `validation`                             | _condition_  | <p>Validation based on condition.</p>                                                                                                                                                                                                                                                                          |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "view.image" | Set component type ||
+|| `label` | _string_ | Label above the component. ||
+|| `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||
+|| `hint` | _string_ | Hint text. ||
+|| `maxWidth` | _number_ | Maximum width of the element in pixels, must be greater than `minWidth`. ||
+|| `minWidth` | _number_ | Minimum width of the element in pixels. Takes priority over `maxWidth`. ||
+|| `noBorder` | _boolean_ | Controls the display of a frame around an image. By default, `true` (the frame is hidden). Set `false` to display the frame. ||
+|| `noLazyLoad` | _boolean_ | Disables lazy loading.
+
+If `true`, images start loading immediately, even if they aren't in the viewport. Useful for icons.
+
+By default, `false` (lazy loading is enabled). In this mode, images start loading only when they get in the user's field of view. ||
+|| `popup` | _boolean_ | Specifies whether opening a full-size image with a click is allowed. By default, it is `true` (allowed). ||
+|| `ratio` | _array_ | An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number).
+
+Not valid if `"fullHeight": true`. ||
+|| `ratio[]` | _number_ | Relative size of one side. ||
+|| `rotatable` | _boolean_ | If enabled, an image can be rotated. ||
+|| `scrollable` | _boolean_ | When set to `true`, an image has scroll bars if it doesn't fit in the parent element.
+
+If `false`, the image fits in the parent element and, when clicked, opens in its original size in the module window.
+
+Images in SVG format with no size specified always fit in their parent elements. ||
+|| `url`<span style="color: red">\*</span> | _string_ | Image link. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

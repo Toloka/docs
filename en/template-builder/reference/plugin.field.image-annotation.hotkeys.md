@@ -8,15 +8,16 @@ You can set hotkeys to select area types and selection modes and to confirm or c
 
 ## Component properties {#properties}
 
-| Name                                     | Type                                    | Description                                                                                                                                                         |
-| ---------------------------------------- | --------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "plugin.field.image-annotation.hotkeys" | <p>Set component type</p>                                                                                                                                           |
-| `cancel`                                 | _string_                                | <p>Keyboard shortcut for canceling area creation.</p>                                                                                                               |
-| `confirm`                                | _string_                                | <p>Keyboard shortcut for confirming area creation.</p>                                                                                                              |
-| `labels`                                 | _array_                                 | <p>Keyboard shortcuts for choosing area types. They're assigned to buttons in the order they are shown if you enabled the option to choose multiple area types.</p> |
-| `labels[]`                               | _string_                                | <p>A keyboard shortcut.</p>                                                                                                                                         |
-| `modes`                                  | _object_                                | <p>Keyboard shortcuts for choosing selection modes.</p>                                                                                                             |
-| `modes.point`                            | _string_                                | <p>Keyboard shortcut for selecting areas using points.</p>                                                                                                          |
-| `modes.polygon`                          | _string_                                | <p>Keyboard shortcut for selecting areas using polygons.</p>                                                                                                        |
-| `modes.rectangle`                        | _string_                                | <p>Keyboard shortcut for selecting areas using rectangles.</p>                                                                                                      |
-| `modes.select`                           | _string_                                | <p>Keyboard shortcut for selecting shapes and points.</p>                                                                                                           |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "plugin.field.image-annotation.hotkeys" | Set component type ||
+|| `cancel` | _string_ | Keyboard shortcut for canceling area creation. ||
+|| `confirm` | _string_ | Keyboard shortcut for confirming area creation. ||
+|| `labels` | _array_ | Keyboard shortcuts for choosing area types. They're assigned to buttons in the order they are shown if you enabled the option to choose multiple area types. ||
+|| `labels[]` | _string_ | A keyboard shortcut. ||
+|| `modes` | _object_ | Keyboard shortcuts for choosing selection modes. ||
+|| `modes.point` | _string_ | Keyboard shortcut for selecting areas using points. ||
+|| `modes.polygon` | _string_ | Keyboard shortcut for selecting areas using polygons. ||
+|| `modes.rectangle` | _string_ | Keyboard shortcut for selecting areas using rectangles. ||
+|| `modes.select` | _string_ | Keyboard shortcut for selecting shapes and points. ||
+|#

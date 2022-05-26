@@ -13,14 +13,16 @@ Differences from [layout.side-by-side](layout.side-by-side.md):
 
 ## Component properties {#properties}
 
-| Name                                      | Type             | Description                                                                                                                                                                                                                                    |
-| ----------------------------------------- | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>  | "layout.compare" | <p>Set component type</p>                                                                                                                                                                                                                      |
-| `commonControls`                          | _view_           | <p>The common fields of the component. Add information blocks that are common to all the elements being compared.</p>                                                                                                                          |
-| `items`<span style="color: red">\*</span> | _array_          | <p>An array with properties of the elements being compared. Set the appearance of the component blocks.</p>                                                                                                                                    |
-| `items[]`                                 | _object_         | <p>The compared element.</p>                                                                                                                                                                                                                   |
-| `items[].content`                         | _view_           | <p>The content of the element that's being compared. Add images, audio recordings, videos, links, or other types of data.</p>                                                                                                                  |
-| `items[].controls`                        | _view_           | <p>Configure the input fields to make the user select an item.</p>                                                                                                                                                                             |
-| `minWidth`                                | _number_         | <p>Minimum width of the element in pixels. Default: 400 pixels.</p>                                                                                                                                                                            |
-| `validation`                              | _condition_      | <p>Validation based on condition.</p>                                                                                                                                                                                                          |
-| `wideCommonControls`                      | _boolean_        | <p>This property increases the common field size of the elements being compared.It's set to `false` by default: the common fields are displayed in the center, not stretched. If `true`, the fields are wider than with the default value.</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "layout.compare" | Set component type ||
+|| `commonControls` | _view_ | The common fields of the component. Add information blocks that are common to all the elements being compared. ||
+|| `items`<span style="color: red">\*</span> | _array_ | An array with properties of the elements being compared. Set the appearance of the component blocks. ||
+|| `items[]` | _object_ | The compared element. ||
+|| `items[].content` | _view_ | The content of the element that's being compared. Add images, audio recordings, videos, links, or other types of data. ||
+|| `items[].controls` | _view_ | Configure the input fields to make the user select an item. ||
+|| `minWidth` | _number_ | Minimum width of the element in pixels. Default: 400 pixels. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|| `wideCommonControls` | _boolean_ | This property increases the common field size of the elements being compared.
+It's set to `false` by default: the common fields are displayed in the center, not stretched. If `true`, the fields are wider than with the default value. ||
+|#

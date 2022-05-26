@@ -12,11 +12,12 @@ To insert a link with a search query, use [helper.search-query](helper.search-qu
 
 ## Component properties {#properties}
 
-| Name                                     | Type        | Description                             |
-| ---------------------------------------- | ----------- | --------------------------------------- |
-| `type`<span style="color: red">\*</span> | "view.link" | <p>Set component type</p>               |
-| `label`                                  | _string_    | <p>Label above the component.</p>       |
-| `content`                                | _string_    | <p>Link text displayed to the user.</p> |
-| `hint`                                   | _string_    | <p>Hint text.</p>                       |
-| `url`<span style="color: red">\*</span>  | _string_    | <p>Link URL.</p>                        |
-| `validation`                             | _condition_ | <p>Validation based on condition.</p>   |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "view.link" | Set component type ||
+|| `label` | _string_ | Label above the component. ||
+|| `content` | _string_ | Link text displayed to the user. ||
+|| `hint` | _string_ | Hint text. ||
+|| `url`<span style="color: red">\*</span> | _string_ | Link URL. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

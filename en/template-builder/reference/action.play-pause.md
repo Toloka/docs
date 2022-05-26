@@ -12,7 +12,8 @@ You can also stop or start playback for some event ([plugin.trigger](plugin.trig
 
 ## Component properties {#properties}
 
-| Name                                     | Type                | Description                                               |
-| ---------------------------------------- | ------------------- | --------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "action.play-pause" | <p>Set component type</p>                                 |
-| `view`                                   | _ref_               | <p>Points to the component that plays audio or video.</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "action.play-pause" | Set component type ||
+|| `view` | _ref_ | Points to the component that plays audio or video. ||
+|#

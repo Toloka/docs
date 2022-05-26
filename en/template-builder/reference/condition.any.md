@@ -8,9 +8,10 @@ If you need all conditions to be met, use the [condition.all](condition.all.md) 
 
 ## Component properties {#properties}
 
-| Name                                     | Type            | Description                                                    |
-| ---------------------------------------- | --------------- | -------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "condition.any" | <p>Set component type</p>                                      |
-| `conditions`                             | _array_         | <p>A set of conditions, at least one of which must be met.</p> |
-| `conditions[]`                           | _condition_     | <p>Condition.</p>                                              |
-| `hint`                                   | _string_        | <p>Validation error message that the user will see</p>         |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.any" | Set component type ||
+|| `conditions` | _array_ | A set of conditions, at least one of which must be met. ||
+|| `conditions[]` | _condition_ | Condition. ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|#

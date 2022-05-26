@@ -15,12 +15,13 @@ To add an extra panel with controls, use the `extraControls` property.
 
 ## Component properties {#properties}
 
-| Name                                         | Type             | Description                                                                                                                                                                          |
-| -------------------------------------------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| `type`<span style="color: red">\*</span>     | "layout.sidebar" | <p>Set component type</p>                                                                                                                                                            |
-| `content`<span style="color: red">\*</span>  | _view_           | <p>Content placed in the main area.</p>                                                                                                                                              |
-| `controls`<span style="color: red">\*</span> | _view_           | <p>Content of the control panel.</p>                                                                                                                                                 |
-| `controlsWidth`                              | _number_         | <p>The width of the control panel in widescreen mode. In compact mode, the panel takes up the entire available width. Default: 200 pixels.</p>                                       |
-| `extraControls`                              | _view_           | <p>An additional panel with controls. Located below the main panel.</p>                                                                                                              |
-| `minWidth`                                   | _number_         | <p>The minimum width, in pixels, for widescreen mode. If the component width becomes less than the specified value, the interface switches to compact mode. Default: 400 pixels.</p> |
-| `validation`                                 | _condition_      | <p>Validation based on condition.</p>                                                                                                                                                |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "layout.sidebar" | Set component type ||
+|| `content`<span style="color: red">\*</span> | _view_ | Content placed in the main area. ||
+|| `controls`<span style="color: red">\*</span> | _view_ | Content of the control panel. ||
+|| `controlsWidth` | _number_ | The width of the control panel in widescreen mode. In compact mode, the panel takes up the entire available width. Default: 200 pixels. ||
+|| `extraControls` | _view_ | An additional panel with controls. Located below the main panel. ||
+|| `minWidth` | _number_ | The minimum width, in pixels, for widescreen mode. If the component width becomes less than the specified value, the interface switches to compact mode. Default: 400 pixels. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

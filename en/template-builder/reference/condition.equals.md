@@ -8,9 +8,24 @@ When substituting values, you can refer to `data.*` or another element using `$r
 
 ## Component properties {#properties}
 
-| Name                                     | Type               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
-| ---------------------------------------- | ------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "condition.equals" | <p>Set component type</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-| `data`                                   | _any_              | <p>Original value. If not specified, it uses the value returned by the parent component (the component that contains `condition.equals`).</p><p>How to pass a value:</p><ul><li>Specify the value itself, like the number 42 or a string.</li><li><a href="../operations/work-with-data.dita">Get the value from your data</a>.</li><li>Refer to another element using `$ref`.</li><li>Use <a href="helpers.md">helpers</a> and <a href="conditions.md">conditions</a> to get the value.</li></ul> |
-| `hint`                                   | _string_           | <p>Validation error message that the user will see</p>                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| `to`<span style="color: red">\*</span>   | _any_              | <p>The value to compare with the original.</p><p>How to pass a value:</p><ul><li>Specify the value itself, like the number 42 or a string.</li><li><a href="../operations/work-with-data.dita">Get the value from your data</a>.</li><li>Refer to another element using `$ref`.</li><li>Use <a href="helpers.md">helpers</a> and <a href="conditions.md">conditions</a> to get the value.</li></ul>                                                                                                |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.equals" | Set component type ||
+|| `data` | _any_ | Original value. If not specified, it uses the value returned by the parent component (the component that contains `condition.equals`).
+
+How to pass a value:
+
+- Specify the value itself, like the number 42 or a string.
+- [Get the value from your data](../operations/work-with-data.md).
+- Refer to another element using `$ref`.
+- Use [helpers](helpers.md) and [conditions](conditions.md) to get the value. ||
+  || `hint` | _string_ | Validation error message that the user will see ||
+  || `to`<span style="color: red">\*</span> | _any_ | The value to compare with the original.
+
+How to pass a value:
+
+- Specify the value itself, like the number 42 or a string.
+- [Get the value from your data](../operations/work-with-data.md).
+- Refer to another element using `$ref`.
+- Use [helpers](helpers.md) and [conditions](conditions.md) to get the value. ||
+  |#

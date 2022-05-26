@@ -8,8 +8,9 @@ If used inside the `validation` property, you can omit the `data` property and t
 
 ## Component properties {#properties}
 
-| Name                                     | Type                 | Description                                                                                                                                           |
-| ---------------------------------------- | -------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "condition.required" | <p>Set component type</p>                                                                                                                             |
-| `data`                                   | _any_                | <p>Data to be filled in. If the property is not specified, the data of the parent component (the one that contains `condition.required`) is used.</p> |
-| `hint`                                   | _string_             | <p>Validation error message that the user will see</p>                                                                                                |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.required" | Set component type ||
+|| `data` | _any_ | Data to be filled in. If the property is not specified, the data of the parent component (the one that contains `condition.required`) is used. ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|#

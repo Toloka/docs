@@ -11,9 +11,10 @@ This component is useful in the following cases:
 
 ## Component properties {#properties}
 
-| Name                                     | Type                  | Description                                            |
-| ---------------------------------------- | --------------------- | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.schema"    | <p>Set component type</p>                              |
-| `data`                                   | _any_                 | <p>Data that should be checked.</p>                    |
-| `hint`                                   | _string_              | <p>Validation error message that the user will see</p> |
-| `schema`                                 | _JSON Schema draft 7_ | <p>The schema for validating data.</p>                 |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.schema" | Set component type ||
+|| `data` | _any_ | Data that should be checked. ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|| `schema` | _JSON Schema draft 7_ | The schema for validating data. ||
+|#

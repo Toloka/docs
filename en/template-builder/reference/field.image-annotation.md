@@ -12,24 +12,45 @@ You can disable labeling using the `disabled` property. For example, use this if
 
 ## Component properties {#properties}
 
-| Name                                               | Type                     | Description                                                                                                                                                                                                                                                                                                                                                      |
-| -------------------------------------------------- | ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>           | "field.image-annotation" | <p>Set component type</p>                                                                                                                                                                                                                                                                                                                                        |
-| `data`<span style="color: red">\*</span>           | _writable_               | <p>Data with values that will be processed or changed.</p>                                                                                                                                                                                                                                                                                                       |
-| `label`                                            | _string_                 | <p>Label above the component.</p>                                                                                                                                                                                                                                                                                                                                |
-| `disabled`                                         | _boolean_                | <p>Determines whether adding and deleting areas is allowed:</p><ul><li>`false` (default) — Allowed.</li><li>`true` — Not allowed.</li></ul><p>You can use this feature when creating an interface to check whether the selection is correct, or if you need to allow selection only when a certain <a href="../reference/helper.if.md">condition</a> is met.</p> |
-| `fullHeight`                                       | _boolean_                | <p>If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels.</p>                                                                                                                                                                                                                                        |
-| `hint`                                             | _string_                 | <p>Hint text.</p>                                                                                                                                                                                                                                                                                                                                                |
-| `image`<span style="color: red">\*</span>          | _string_                 | <p>The image you want to select areas in.</p>                                                                                                                                                                                                                                                                                                                    |
-| `labels`                                           | _array_                  | <p>Labels for classifying areas.</p><p>Each array element creates a button in the interface for selecting a label.</p><p>If you use labels, you need to add at least two.</p>                                                                                                                                                                                    |
-| `labels[]`                                         | _object_                 | <p>`labels` array area:</p><ul><li>`"label": "button text"`; </li><li>`"value": "value"`. </li></ul><p>At least two objects must be added to the array.</p>                                                                                                                                                                                                      |
-| `labels[].label`<span style="color: red">\*</span> | _string_                 | <p>Text on the label selection button.</p>                                                                                                                                                                                                                                                                                                                       |
-| `labels[].value`<span style="color: red">\*</span> | _string_                 | <p>A value that corresponds to the label and is sent in the output.</p>                                                                                                                                                                                                                                                                                          |
-| `minWidth`                                         | _number_                 | <p>Minimum width of the element in pixels. Takes priority over `maxWidth`.</p>                                                                                                                                                                                                                                                                                   |
-| `ratio`                                            | _array_                  | <p>An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number).</p><p>Not valid if `"fullHeight": true`.</p>                                                                                                                                                                                          |
-| `ratio[]`                                          | _number_                 | <p>Relative size of one side.</p>                                                                                                                                                                                                                                                                                                                                |
-| `shapes`                                           | _object_                 | <p>Setting up labeling modes that are available to the user.</p><p>By default, all three selection modes are available: points, rectangles, and polygons.</p><p>Modes with the `true` value are available to the user.</p>                                                                                                                                       |
-| `shapes.point`                                     | _boolean_                | <p>Point selector.</p>                                                                                                                                                                                                                                                                                                                                           |
-| `shapes.polygon`                                   | _boolean_                | <p>Labeling with polygons.</p>                                                                                                                                                                                                                                                                                                                                   |
-| `shapes.rectangle`                                 | _boolean_                | <p>Rectangle selector.</p>                                                                                                                                                                                                                                                                                                                                       |
-| `validation`                                       | _condition_              | <p>Validation based on condition.</p>                                                                                                                                                                                                                                                                                                                            |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "field.image-annotation" | Set component type ||
+|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `label` | _string_ | Label above the component. ||
+|| `disabled` | _boolean_ | Determines whether adding and deleting areas is allowed:
+
+- `false` (default) — Allowed.
+- `true` — Not allowed.
+
+You can use this feature when creating an interface to check whether the selection is correct, or if you need to allow selection only when a certain [condition](../reference/helper.if.md) is met. ||
+|| `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||
+|| `hint` | _string_ | Hint text. ||
+|| `image`<span style="color: red">\*</span> | _string_ | The image you want to select areas in. ||
+|| `labels` | _array_ | Labels for classifying areas.
+
+Each array element creates a button in the interface for selecting a label.
+
+If you use labels, you need to add at least two. ||
+|| `labels[]` | _object_ | `labels` array area:
+
+- `"label": "button text"`;
+- `"value": "value"`.
+
+At least two objects must be added to the array. ||
+|| `labels[].label`<span style="color: red">\*</span> | _string_ | Text on the label selection button. ||
+|| `labels[].value`<span style="color: red">\*</span> | _string_ | A value that corresponds to the label and is sent in the output. ||
+|| `minWidth` | _number_ | Minimum width of the element in pixels. Takes priority over `maxWidth`. ||
+|| `ratio` | _array_ | An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number).
+
+Not valid if `"fullHeight": true`. ||
+|| `ratio[]` | _number_ | Relative size of one side. ||
+|| `shapes` | _object_ | Setting up labeling modes that are available to the user.
+
+By default, all three selection modes are available: points, rectangles, and polygons.
+
+Modes with the `true` value are available to the user. ||
+|| `shapes.point` | _boolean_ | Point selector. ||
+|| `shapes.polygon` | _boolean_ | Labeling with polygons. ||
+|| `shapes.rectangle` | _boolean_ | Rectangle selector. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

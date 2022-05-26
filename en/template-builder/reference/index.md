@@ -6,7 +6,7 @@ The name of the component is specified in the `type` property in the format: `<c
 
 Categories:
 
-- [data](../operations/work-with-data.dita): Components used for working with data: input, output, or intermediate.
+- [data](../operations/work-with-data.md): Components used for working with data: input, output, or intermediate.
 - [layout](#layouts): Options for positioning elements in the interface, such as in columns or side-by-side. If you have more than one element in the interface, these components will help you arrange them the way you want.
 - [view](#views): Elements displayed in the interface, such as text, list, audio player, or image.
 - [field](#fields): Fields for entering data, such as a text field or drop-down list.
@@ -87,7 +87,7 @@ Categories:
 | [helper.text-transform](helper.text-transform.md) | Allows you to change the case of the text, like make all letters uppercase.                                                                                                                                             |
 | [helper.transform](helper.transform.md)           | Creates a new array by transforming each of the elements in the original array.                                                                                                                                         |
 | [helper.translate](helper.translate.md)           | Component for translating interface elements to other languages. More details in [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate). |
-| [helper.proxy](helper.proxy.md)                   | You can use this component to download files from Yandex.Disk.                                                                                                                                                          |
+| [helper.proxy](helper.proxy.md)                   | You can use this component to download files from Yandex&#160;Disk.                                                                                                                                                          |
 
 ## Conditions {#conditions}
 

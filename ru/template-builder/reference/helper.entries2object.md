@@ -27,10 +27,11 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                            | Тип                     | Описание                                       |
-| --------------------------------------------------- | ----------------------- | ---------------------------------------------- |
-| `type`<span style="color: red">\*</span>            | "helper.entries2object" | <p>Задает тип компонента.</p>                  |
-| `entries`                                           | _array_                 | <p>Исходный массив пар вида ключ-значение.</p> |
-| `entries[]`                                         | _object_                | <p>Параметры объекта.</p>                      |
-| `entries[].key`<span style="color: red">\*</span>   | _string_                | <p>Ключ.</p>                                   |
-| `entries[].value`<span style="color: red">\*</span> | _any_                   | <p>Значение.</p>                               |
+#|
+|| **Название** | **Тип** | **Описание** ||
+|| `type`<span style="color: red">\*</span> | "helper.entries2object" | Задает тип компонента. ||
+|| `entries` | _array_ | Исходный массив пар вида ключ-значение. ||
+|| `entries[]` | _object_ | Параметры объекта. ||
+|| `entries[].key`<span style="color: red">\*</span> | _string_ | Ключ. ||
+|| `entries[].value`<span style="color: red">\*</span> | _any_ | Значение. ||
+|#

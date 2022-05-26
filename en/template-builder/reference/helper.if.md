@@ -13,9 +13,10 @@ The `else` property is optional. For example, let's say you ask the user "did yo
 
 ## Component properties {#properties}
 
-| Name                                          | Type        | Description                                                                                                    |
-| --------------------------------------------- | ----------- | -------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>      | "helper.if" | <p>Set component type</p>                                                                                      |
-| `condition`<span style="color: red">\*</span> | _condition_ | <p>Condition to check.</p>                                                                                     |
-| `else`                                        | _any_       | <p>The element that is returned if the condition from the `condition` property is false (returns `false`).</p> |
-| `then`<span style="color: red">\*</span>      | _any_       | <p>The element that is returned if the condition from the `condition` property is true (returns `true`).</p>   |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "helper.if" | Set component type ||
+|| `condition`<span style="color: red">\*</span> | _condition_ | Condition to check. ||
+|| `else` | _any_ | The element that is returned if the condition from the `condition` property is false (returns `false`). ||
+|| `then`<span style="color: red">\*</span> | _any_ | The element that is returned if the condition from the `condition` property is true (returns `true`). ||
+|#

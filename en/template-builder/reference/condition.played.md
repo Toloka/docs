@@ -6,7 +6,8 @@ Checks the start of playback. Validation will be passed if playback is started. 
 
 ## Component properties {#properties}
 
-| Name                                     | Type               | Description                                            |
-| ---------------------------------------- | ------------------ | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.played" | <p>Set component type</p>                              |
-| `hint`                                   | _string_           | <p>Validation error message that the user will see</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.played" | Set component type ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|#

@@ -9,7 +9,8 @@ This component changes the display mode of another component by opening or closi
 
 ## Component properties {#properties}
 
-| Name                                     | Type                | Description                                                |
-| ---------------------------------------- | ------------------- | ---------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "action.open-close" | <p>Set component type</p>                                  |
-| `view`                                   | _ref_               | <p>Points to the component to perform the action with.</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "action.open-close" | Set component type ||
+|| `view` | _ref_ | Points to the component to perform the action with. ||
+|#

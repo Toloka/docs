@@ -6,9 +6,10 @@ You can place extra elements in the center of the delimiter, like a popup `hint`
 
 ## Component properties {#properties}
 
-| Name                                     | Type           | Description                                                                   |
-| ---------------------------------------- | -------------- | ----------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "view.divider" | <p>Set component type</p>                                                     |
-| `label`                                  | _string_       | <p>A label in the center of the delimiter. Line breaks are not supported.</p> |
-| `hint`                                   | _string_       | <p>Hint text.</p>                                                             |
-| `validation`                             | _condition_    | <p>Validation based on condition.</p>                                         |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "view.divider" | Set component type ||
+|| `label` | _string_ | A label in the center of the delimiter. Line breaks are not supported. ||
+|| `hint` | _string_ | Hint text. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

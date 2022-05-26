@@ -13,11 +13,14 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                     | Тип                   | Описание                                                                                                                                                                                                                                  |
-| -------------------------------------------- | --------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>     | "layout.side-by-side" | <p>Задает тип компонента.</p>                                                                                                                                                                                                             |
-| `controls`<span style="color: red">\*</span> | _view_                | <p>Компоненты, которые позволят пользователю совершить требуемые от него действия.</p><p>Например: <a href="field.checkbox-group.md">field.checkbox-group</a> или <a href="field.button-radio-group.md">field.button-radio-group</a>.</p> |
-| `items`<span style="color: red">\*</span>    | _array_               | <p>Массив блоков информации.</p>                                                                                                                                                                                                          |
-| `items[]`                                    | _view_                | <p>Компонент вывода или ввода информации. Например — <a href="view.image.md">view.image</a>.</p>                                                                                                                                          |
-| `minItemWidth`                               | _number_              | <p>Минимальная ширина блока информации, не менее 400 пикселей.</p>                                                                                                                                                                        |
-| `validation`                                 | _condition_           | <p>Валидация на основе условия <em>(condition)</em>.</p>                                                                                                                                                                                  |
+#|
+|| **Название** | **Тип** | **Описание** ||
+|| `type`<span style="color: red">\*</span> | "layout.side-by-side" | Задает тип компонента. ||
+|| `controls`<span style="color: red">\*</span> | _view_ | Компоненты, которые позволят пользователю совершить требуемые от него действия.
+
+Например: [field.checkbox-group](field.checkbox-group.md) или [field.button-radio-group](field.button-radio-group.md). ||
+|| `items`<span style="color: red">\*</span> | _array_ | Массив блоков информации. ||
+|| `items[]` | _view_ | Компонент вывода или ввода информации. Например — [view.image](view.image.md). ||
+|| `minItemWidth` | _number_ | Минимальная ширина блока информации, не менее 400 пикселей. ||
+|| `validation` | _condition_ | Валидация на основе условия _(condition)_. ||
+|#

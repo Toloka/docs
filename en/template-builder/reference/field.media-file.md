@@ -18,17 +18,23 @@ After the performer submits the task, the files are saved in the app and gradual
 
 ## Component properties {#properties}
 
-| Name                                       | Type                                                                                   | Description                                                                                                                                                                                                                   |
-| ------------------------------------------ | -------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>   | "field.media-file"                                                                     | <p>Set component type</p>                                                                                                                                                                                                     |
-| `data`<span style="color: red">\*</span>   | <a class="xref popup-link" href="../concepts/types.dita#types/writable">writable</a>   | <p>Data with values that will be processed or changed.</p>                                                                                                                                                                    |
-| `label`                                    | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Label above the component.</p>                                                                                                                                                                                             |
-| `accept`<span style="color: red">\*</span> | <a class="xref popup-link" href="../concepts/types.dita#types/object">object</a>       | <p>Adds different buttons for four types of uploads. Pass the `true` value for the ones that you need. </p><p>For example, if you need a button for uploading files from the gallery, add the `"gallery": true` property.</p> |
-| `accept.fileSystem`                        | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Adds a button for uploading files from the file manager.</p>                                                                                                                                                               |
-| `accept.gallery`                           | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Adds a button for uploading files from the gallery.</p>                                                                                                                                                                    |
-| `accept.photo`                             | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Adds a button for uploading images.</p>                                                                                                                                                                                    |
-| `accept.video`                             | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Adds a button for uploading videos.</p>                                                                                                                                                                                    |
-| `hint`                                     | <a class="xref popup-link" href="../concepts/types.dita#types/string">string</a>       | <p>Hint text.</p>                                                                                                                                                                                                             |
-| `multiple`                                 | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>Determines whether multiple files can be uploaded:</p><ul><li>`false` (default) — forbidden.</li><li>`true` — allowed.</li></ul>                                                                                           |
-| `requiredCoordinates`                      | <a class="xref popup-link" href="../concepts/types.dita#types/boolean">boolean</a>     | <p>If the value is `true`, a file without geotag can not be uploaded.</p>                                                                                                                                                     |
-| `validation`                               | <a class="xref popup-link" href="../concepts/types.dita#types/condition">condition</a> | <p>Validation based on condition.</p>                                                                                                                                                                                         |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "field.media-file" | Set component type ||
+|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `label` | _string_ | Label above the component. ||
+|| `accept`<span style="color: red">\*</span> | _object_ | Adds different buttons for four types of uploads. Pass the `true` value for the ones that you need.
+
+For example, if you need a button for uploading files from the gallery, add the `"gallery": true` property. ||
+|| `accept.fileSystem` | _boolean_ | Adds a button for uploading files from the file manager. ||
+|| `accept.gallery` | _boolean_ | Adds a button for uploading files from the gallery. ||
+|| `accept.photo` | _boolean_ | Adds a button for uploading images. ||
+|| `accept.video` | _boolean_ | Adds a button for uploading videos. ||
+|| `hint` | _string_ | Hint text. ||
+|| `multiple` | _boolean_ | Determines whether multiple files can be uploaded:
+
+- `false` (default) — forbidden.
+- `true` — allowed. ||
+  || `requiredCoordinates` | _boolean_ | If the value is `true`, a file without geotag can not be uploaded. ||
+  || `validation` | _condition_ | Validation based on condition. ||
+  |#

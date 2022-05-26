@@ -8,10 +8,11 @@ The top bar is located at the top edge of the component, and the bottom one is a
 
 ## Component properties {#properties}
 
-| Name                                        | Type          | Description                                                   |
-| ------------------------------------------- | ------------- | ------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>    | "layout.bars" | <p>Set component type</p>                                     |
-| `barAfter`                                  | _view_        | <p>The bar displayed at the bottom edge of the component.</p> |
-| `barBefore`                                 | _view_        | <p>The bar displayed at the top edge of the component.</p>    |
-| `content`<span style="color: red">\*</span> | _view_        | <p>The main content.</p>                                      |
-| `validation`                                | _condition_   | <p>Validation based on condition.</p>                         |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "layout.bars" | Set component type ||
+|| `barAfter` | _view_ | The bar displayed at the bottom edge of the component. ||
+|| `barBefore` | _view_ | The bar displayed at the top edge of the component. ||
+|| `content`<span style="color: red">\*</span> | _view_ | The main content. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

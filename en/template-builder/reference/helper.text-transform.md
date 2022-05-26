@@ -8,8 +8,14 @@ This component is available in property values with the `string` type, for examp
 
 ## Component properties {#properties}
 
-| Name                                               | Type                    | Description                                                                                                                                                                                                                                                                                                                                                                                     |
-| -------------------------------------------------- | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>           | "helper.text-transform" | <p>Set component type</p>                                                                                                                                                                                                                                                                                                                                                                       |
-| `data`<span style="color: red">\*</span>           | _any_                   | <p>The text string in which you want to change the case.</p>                                                                                                                                                                                                                                                                                                                                    |
-| `transformation`<span style="color: red">\*</span> | _string_                | <p>Conversion mode:</p><ul><li>`uppercase` — Makes all letters uppercase.</li><li>`lowercase` — Makes all letters lowercase.</li><li>`capitalize` — Capitalizes <strong>the first</strong> letter in the text, and leaves the rest lowercase. The text is not divided into sentences: there will be only one uppercase letter in the entire text, even if you have several sentences.</li></ul> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "helper.text-transform" | Set component type ||
+|| `data`<span style="color: red">\*</span> | _any_ | The text string in which you want to change the case. ||
+|| `transformation`<span style="color: red">\*</span> | _string_ | Conversion mode:
+
+- `uppercase` — Makes all letters uppercase.
+- `lowercase` — Makes all letters lowercase.
+- `capitalize` — Capitalizes **the first** letter in the text, and leaves the rest lowercase. The text is not divided into sentences: there will be only one uppercase letter in the entire text, even if you have several sentences.
+  ||
+  |#

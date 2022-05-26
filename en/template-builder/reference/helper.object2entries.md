@@ -30,7 +30,8 @@ It will be converted to an array whose objects will pair data from the source ob
 
 ## Component properties {#properties}
 
-| Name                                     | Type                    | Description                   |
-| ---------------------------------------- | ----------------------- | ----------------------------- |
-| `type`<span style="color: red">\*</span> | "helper.object2entries" | <p>Set component type</p>     |
-| `data`                                   | _any_                   | <p>The object to convert.</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "helper.object2entries" | Set component type ||
+|| `data` | _any_ | The object to convert. ||
+|#

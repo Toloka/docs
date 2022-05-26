@@ -8,16 +8,17 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                            | Тип                 | Описание                                                                                                  |
-| --------------------------------------------------- | ------------------- | --------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>            | "field.radio-group" | <p>Задает тип компонента.</p>                                                                             |
-| `data`<span style="color: red">\*</span>            | _writable_          | <p>Данные, значения которых будут обработаны или изменены.</p>                                            |
-| `label`                                             | _string_            | <p>Надпись над компонентом.</p>                                                                           |
-| `disabled`                                          | _boolean_           | <p>Свойство запрещает нажимать кнопки. Если значение - `true`, пользователю будет недоступно нажатие.</p> |
-| `hint`                                              | _string_            | <p>Текст подсказки.</p>                                                                                   |
-| `options`<span style="color: red">\*</span>         | _array_             | <p>Массив кнопок.</p>                                                                                     |
-| `options[]`                                         | _object_            | <p>Кнопка.</p>                                                                                            |
-| `options[].hint`                                    | _string_            | <p>Текст с дополнительной информацией.</p>                                                                |
-| `options[].label`<span style="color: red">\*</span> | _string_            | <p>Название опции.</p>                                                                                    |
-| `options[].value`<span style="color: red">\*</span> | _any_               | <p>Возвращаемое значение.</p>                                                                             |
-| `validation`                                        | _condition_         | <p>Валидация на основе условия <em>(condition)</em>.</p>                                                  |
+#|
+|| **Название** | **Тип** | **Описание** ||
+|| `type`<span style="color: red">\*</span> | "field.radio-group" | Задает тип компонента. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | Данные, значения которых будут обработаны или изменены. ||
+|| `label` | _string_ | Надпись над компонентом. ||
+|| `disabled` | _boolean_ | Свойство запрещает нажимать кнопки. Если значение - `true`, пользователю будет недоступно нажатие. ||
+|| `hint` | _string_ | Текст подсказки. ||
+|| `options`<span style="color: red">\*</span> | _array_ | Массив кнопок. ||
+|| `options[]` | _object_ | Кнопка. ||
+|| `options[].hint` | _string_ | Текст с дополнительной информацией. ||
+|| `options[].label`<span style="color: red">\*</span> | _string_ | Название опции. ||
+|| `options[].value`<span style="color: red">\*</span> | _any_ | Возвращаемое значение. ||
+|| `validation` | _condition_ | Валидация на основе условия _(condition)_. ||
+|#

@@ -6,11 +6,14 @@ You can set the minimum width for data blocks.
 
 ## Component properties {#properties}
 
-| Name                                         | Type                  | Description                                                                                                                                                                                                         |
-| -------------------------------------------- | --------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>     | "layout.side-by-side" | <p>Set component type</p>                                                                                                                                                                                           |
-| `controls`<span style="color: red">\*</span> | _view_                | <p>Components that let users perform the required actions.</p><p>For example: <a href="field.checkbox-group.md">field.checkbox-group</a> or <a href="field.button-radio-group.md">field.button-radio-group</a>.</p> |
-| `items`<span style="color: red">\*</span>    | _array_               | <p>An array of data blocks.</p>                                                                                                                                                                                     |
-| `items[]`                                    | _view_                | <p>A component for data output or input. For example, <a href="view.image.md">view.image</a>.</p>                                                                                                                   |
-| `minItemWidth`                               | _number_              | <p>The minimum width of a data block, at least 400 pixels.</p>                                                                                                                                                      |
-| `validation`                                 | _condition_           | <p>Validation based on condition.</p>                                                                                                                                                                               |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "layout.side-by-side" | Set component type ||
+|| `controls`<span style="color: red">\*</span> | _view_ | Components that let users perform the required actions.
+
+For example: [field.checkbox-group](field.checkbox-group.md) or [field.button-radio-group](field.button-radio-group.md). ||
+|| `items`<span style="color: red">\*</span> | _array_ | An array of data blocks. ||
+|| `items[]` | _view_ | A component for data output or input. For example, [view.image](view.image.md). ||
+|| `minItemWidth` | _number_ | The minimum width of a data block, at least 400 pixels. ||
+|| `validation` | _condition_ | Validation based on condition. ||
+|#

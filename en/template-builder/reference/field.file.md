@@ -12,13 +12,19 @@ In the task review mode, the uploaded images will appear automatically. You can 
 
 ## Component properties {#properties}
 
-| Name                                     | Type         | Description                                                                                                                                                                                                                                                                                                                                                     |
-| ---------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "field.file" | <p>Set component type</p>                                                                                                                                                                                                                                                                                                                                       |
-| `data`<span style="color: red">\*</span> | _writable_   | <p>Data with values that will be processed or changed.</p>                                                                                                                                                                                                                                                                                                      |
-| `label`                                  | _string_     | <p>Label above the component.</p>                                                                                                                                                                                                                                                                                                                               |
-| `accept`                                 | _array_      | <p>A list of file types that will be suggested to the user when uploading. By default, you can upload any files.</p><p>Specify the types in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">MIME Type</a> format. For example, you can suggest uploading images by adding the `image/jpeg` and `image/png` types.</p> |
-| `accept[]`                               | _string_     | <p>File type in the <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types">MIME Type</a> format.</p>                                                                                                                                                                                                                             |
-| `hint`                                   | _string_     | <p>Hint text.</p>                                                                                                                                                                                                                                                                                                                                               |
-| `multiple`                               | _boolean_    | <p>Determines whether multiple files can be uploaded:</p><ul><li>`false` (default) — forbidden.</li><li>`true` — allowed.</li></ul>                                                                                                                                                                                                                             |
-| `validation`                             | _condition_  | <p>Validation based on condition.</p>                                                                                                                                                                                                                                                                                                                           |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "field.file" | Set component type ||
+|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `label` | _string_ | Label above the component. ||
+|| `accept` | _array_ | A list of file types that will be suggested to the user when uploading. By default, you can upload any files.
+
+Specify the types in the [MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) format. For example, you can suggest uploading images by adding the `image/jpeg` and `image/png` types. ||
+|| `accept[]` | _string_ | File type in the [MIME Type](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types) format. ||
+|| `hint` | _string_ | Hint text. ||
+|| `multiple` | _boolean_ | Determines whether multiple files can be uploaded:
+
+- `false` (default) — forbidden.
+- `true` — allowed. ||
+  || `validation` | _condition_ | Validation based on condition. ||
+  |#

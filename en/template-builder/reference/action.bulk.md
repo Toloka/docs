@@ -8,8 +8,9 @@ Actions are invoked in the order in which they are listed. This means that if tw
 
 ## Component properties {#properties}
 
-| Name                                     | Type          | Description                                       |
-| ---------------------------------------- | ------------- | ------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "action.bulk" | <p>Set component type</p>                         |
-| `payload`                                | _array_       | <p>An array of actions that you want to call.</p> |
-| `payload[]`                              | _action_      | <p>Action.</p>                                    |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "action.bulk" | Set component type ||
+|| `payload` | _array_ | An array of actions that you want to call. ||
+|| `payload[]` | _action_ | Action. ||
+|#

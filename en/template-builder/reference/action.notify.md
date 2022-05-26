@@ -6,11 +6,20 @@ You can set the how long the message will be active, the delay before displaying
 
 ## Component properties {#properties}
 
-| Name                                                | Type            | Description                                                                                                                                                                                                                                    |
-| --------------------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>            | "action.notify" | <p>Set component type</p>                                                                                                                                                                                                                      |
-| `payload`<span style="color: red">\*</span>         | _object_        | <p>Parameters for the message.</p>                                                                                                                                                                                                             |
-| `payload.content`<span style="color: red">\*</span> | _string_        | <p>Message text.</p>                                                                                                                                                                                                                           |
-| `payload.delay`                                     | _number_        | <p>The duration of the delay (in milliseconds) before the message appears.</p>                                                                                                                                                                 |
-| `payload.duration`                                  | _number_        | <p>The duration of the message activity (in milliseconds), which includes the duration of the delay before displaying it.</p><p>For example, if `duration` is 1000 and `delay` is 400, the message will be displayed for 600 milliseconds.</p> |
-| `payload.theme`<span style="color: red">\*</span>   | _string_        | <p>The background color of the message: </p><ul><li>`info` — blue.</li><li>`success` — green.</li><li>`warning` — yellow.</li><li>`danger` — red.</li></ul>                                                                                    |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "action.notify" | Set component type ||
+|| `payload`<span style="color: red">\*</span> | _object_ | Parameters for the message. ||
+|| `payload.content`<span style="color: red">\*</span> | _string_ | Message text. ||
+|| `payload.delay` | _number_ | The duration of the delay (in milliseconds) before the message appears. ||
+|| `payload.duration` | _number_ | The duration of the message activity (in milliseconds), which includes the duration of the delay before displaying it.
+
+For example, if `duration` is 1000 and `delay` is 400, the message will be displayed for 600 milliseconds. ||
+|| `payload.theme`<span style="color: red">\*</span> | _string_ | The background color of the message:
+
+- `info` — blue.
+- `success` — green.
+- `warning` — yellow.
+- `danger` — red.
+  ||
+  |#

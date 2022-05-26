@@ -8,11 +8,18 @@ You can use both plain text and other visual components inside it.
 
 ## Component properties {#properties}
 
-| Name                                     | Type         | Description                                                                                                                                                 |
-| ---------------------------------------- | ------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "view.alert" | <p>Set component type</p>                                                                                                                                   |
-| `label`                                  | _string_     | <p>Label above the component.</p>                                                                                                                           |
-| `content`                                | _view_       | <p>Content of the block with important information.</p>                                                                                                     |
-| `hint`                                   | _string_     | <p>Hint text.</p>                                                                                                                                           |
-| `theme`                                  | _string_     | <p>Determines the block color:</p><ul><li>`info` (default) — Blue.</li><li>`success` — Green.</li><li>`warning` — Yellow.</li><li>`danger` — Red.</li></ul> |
-| `validation`                             | _condition_  | <p>Validation based on condition.</p>                                                                                                                       |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "view.alert" | Set component type ||
+|| `label` | _string_ | Label above the component. ||
+|| `content` | _view_ | Content of the block with important information. ||
+|| `hint` | _string_ | Hint text. ||
+|| `theme` | _string_ | Determines the block color:
+
+- `info` (default) — Blue.
+- `success` — Green.
+- `warning` — Yellow.
+- `danger` — Red.
+  ||
+  || `validation` | _condition_ | Validation based on condition. ||
+  |#

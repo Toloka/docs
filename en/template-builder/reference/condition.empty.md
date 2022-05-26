@@ -6,8 +6,9 @@ Checks that the data didn't get a value. If it did, returns `false`. This is use
 
 ## Component properties {#properties}
 
-| Name                                     | Type              | Description                                                                                               |
-| ---------------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span> | "condition.empty" | <p>Set component type</p>                                                                                 |
-| `data`                                   | _any_             | <p>Data to check. If not specified, data is checked in the component that contains `condition.empty`.</p> |
-| `hint`                                   | _string_          | <p>Validation error message that the user will see</p>                                                    |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.empty" | Set component type ||
+|| `data` | _any_ | Data to check. If not specified, data is checked in the component that contains `condition.empty`. ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|#

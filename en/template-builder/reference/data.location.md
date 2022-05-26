@@ -10,6 +10,7 @@ To find out if the transmitted coordinates match the ones that you specified, us
 
 ## Component properties {#properties}
 
-| Name                                     | Type                           | Description               |
-| ---------------------------------------- | ------------------------------ | ------------------------- |
-| `type`<span style="color: red">\*</span> | "@yandex-toloka/data.location" | <p>Set component type</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "@yandex-toloka/data.location" | Set component type ||
+|#

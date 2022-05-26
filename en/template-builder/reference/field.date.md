@@ -6,16 +6,35 @@ You can set a list of dates that the user cannot select.
 
 ## Component properties {#properties}
 
-| Name                                       | Type         | Description                                                                                                                                                                                                                                              |
-| ------------------------------------------ | ------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>   | "field.date" | <p>Set component type</p>                                                                                                                                                                                                                                |
-| `data`<span style="color: red">\*</span>   | _writable_   | <p>Data with values that will be processed or changed.</p>                                                                                                                                                                                               |
-| `label`                                    | _string_     | <p>Label above the component.</p>                                                                                                                                                                                                                        |
-| `blockList`                                | _array_      | <p>List of dates that the user cannot select.</p>                                                                                                                                                                                                        |
-| `blockList[]`                              | _string_     | <p>Date that the user cannot select.</p>                                                                                                                                                                                                                 |
-| `format`<span style="color: red">\*</span> | _string_     | <p>Format of the date entered by the user:</p><ul><li>`date-time` — date and time.</li><li>`date` — date only.</li></ul>                                                                                                                                 |
-| `hint`                                     | _string_     | <p>Hint text.</p>                                                                                                                                                                                                                                        |
-| `max`                                      | _string_     | <p>The latest date and time in the YYYY-MM-DD hh:mm format that the user can select. Where:</p><ul><li>YYYY is the year.</li><li>MM is the month.</li><li>DD is the day.</li><li>hh is the time in hours.</li><li>mm is the time in minutes.</li></ul>   |
-| `min`                                      | _string_     | <p>The earliest date and time in the YYYY-MM-DD hh:mm format that the user can select. Where:</p><ul><li>YYYY is the year.</li><li>MM is the month.</li><li>DD is the day.</li><li>hh is the time in hours.</li><li>mm is the time in minutes.</li></ul> |
-| `placeholder`                              | _string_     | <p>A semi-transparent label that is shown in the box when it is empty.</p>                                                                                                                                                                               |
-| `validation`                               | _condition_  | <p>Validation based on condition.</p>                                                                                                                                                                                                                    |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "field.date" | Set component type ||
+|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `label` | _string_ | Label above the component. ||
+|| `blockList` | _array_ | List of dates that the user cannot select. ||
+|| `blockList[]` | _string_ | Date that the user cannot select. ||
+|| `format`<span style="color: red">\*</span> | _string_ | Format of the date entered by the user:
+
+- `date-time` — date and time.
+- `date` — date only.
+  ||
+  || `hint` | _string_ | Hint text. ||
+  || `max` | _string_ | The latest date and time in the YYYY-MM-DD hh:mm format that the user can select. Where:
+
+- YYYY is the year.
+- MM is the month.
+- DD is the day.
+- hh is the time in hours.
+- mm is the time in minutes.
+  ||
+  || `min` | _string_ | The earliest date and time in the YYYY-MM-DD hh:mm format that the user can select. Where:
+
+- YYYY is the year.
+- MM is the month.
+- DD is the day.
+- hh is the time in hours.
+- mm is the time in minutes.
+  ||
+  || `placeholder` | _string_ | A semi-transparent label that is shown in the box when it is empty. ||
+  || `validation` | _condition_ | Validation based on condition. ||
+  |#

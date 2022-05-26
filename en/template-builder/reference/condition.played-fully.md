@@ -6,7 +6,8 @@ This component checks for the end of playback. Validation is passed if playback 
 
 ## Component properties {#properties}
 
-| Name                                     | Type                     | Description                                            |
-| ---------------------------------------- | ------------------------ | ------------------------------------------------------ |
-| `type`<span style="color: red">\*</span> | "condition.played-fully" | <p>Set component type</p>                              |
-| `hint`                                   | _string_                 | <p>Validation error message that the user will see</p> |
+#|
+|| **Name** | **Type** | **Description** ||
+|| `type`<span style="color: red">\*</span> | "condition.played-fully" | Set component type ||
+|| `hint` | _string_ | Validation error message that the user will see ||
+|#

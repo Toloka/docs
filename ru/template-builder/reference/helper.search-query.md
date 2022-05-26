@@ -8,8 +8,22 @@
 
 ## Свойства компонента {#properties}
 
-| Название                                  | Тип                                             | Описание                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
-| ----------------------------------------- | ----------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `type`<span style="color: red">\*</span>  | "helper.search-query"                           | <p>Задает тип компонента.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-| `engine`                                  | _string_ или _object_ или _object_ или _object_ | <p>Поисковые системы. Для указания поисковой системы используйте соответствующее ей значение: </p><ul><li>`yandex` — https://yandex.ru</li><li>`google` — https://www.google.ru</li><li>`bing` — https://www.bing.com</li><li>`mail.ru` — https://go.mail.ru</li><li>`wikipedia` — https://ru.wikipedia.org</li><li>`yandex/collections` — https://yandex.ru/collections</li><li>`yandex/video` — https://yandex.ru/video</li><li>`yandex/images` — https://yandex.ru/images</li><li>`google/images` — https://google.ru/images</li><li>`yandex/news` — https://news.yandex.ru</li><li>`google/news` — https://news.google.com</li></ul> |
-| `query`<span style="color: red">\*</span> | _string_                                        | <p>Поисковый запрос.</p>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+#|
+|| **Название** | **Тип** | **Описание** ||
+|| `type`<span style="color: red">\*</span> | "helper.search-query" | Задает тип компонента. ||
+|| `engine` | _string_ или _object_ или _object_ или _object_ | Поисковые системы. Для указания поисковой системы используйте соответствующее ей значение:
+
+- `yandex` — https://yandex.ru
+- `google` — https://www.google.ru
+- `bing` — https://www.bing.com
+- `mail.ru` — https://go.mail.ru
+- `wikipedia` — https://ru.wikipedia.org
+- `yandex/collections` — https://yandex.ru/collections
+- `yandex/video` — https://yandex.ru/video
+- `yandex/images` — https://yandex.ru/images
+- `google/images` — https://google.ru/images
+- `yandex/news` — https://news.yandex.ru
+- `google/news` — https://news.google.com
+  ||
+  || `query`<span style="color: red">\*</span> | _string_ | Поисковый запрос. ||
+  |#
