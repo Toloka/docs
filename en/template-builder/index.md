@@ -2,28 +2,31 @@
 
 Use [Template Builder]({{ template-builder }}) to create an interface for your web page that you can reuse with different input data. For example, you can use Template Builder to create a task interface for labeling images in [Toloka]({{ toloka-requester-index-dita }}).
 
-- [Quick start](quickstart.md)
-Learn how to create interfaces in Template Builder.
+#|
+||**[Quick start](quickstart.md)**
 
+Learn how to create interfaces in Template Builder
 
-- [List of instructions](operations/all.md)
-Look up the instructions and examples for popular tasks.
+**[Preset templates](templates/index.md)**
 
+Check out the list of ready-made templates
 
-- [Preset templates](templates/index.md)
-Check out the list of ready-made templates.
+**[Troubleshooting](troubleshooting/troubleshooting.md)**
 
-- [Component reference guide](reference/index.md)
-Find a detailed description for the component you are interested in.
+Find the solution in the list of frequently asked questions|
 
+**[List of instructions](operations/all.md)**
 
-- [Troubleshooting](troubleshooting/troubleshooting.md)
-Find the solution in the list of frequently asked questions.
+Look up the instructions and examples for popular tasks
 
+**[Component reference guide](reference/index.md)**
 
-- [Support](concepts/support.md)
-Email us if you have any problems.
+Find a detailed description for the component you are interested in
 
+**[Support](concepts/support.md)**
+
+Email us if you have any problems||
+|#
 
 ## Toloka global community
 

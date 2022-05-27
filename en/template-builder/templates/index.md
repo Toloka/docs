@@ -2,19 +2,26 @@
 
 Create projects faster with ready-made templates. Use standard templates or adapt them to your data and response formats.
 
-- **Data enrichment**
-  [Survey](survey.md)
-  [Search for information online](data-search.md)
+## Data enrichment
 
-- **Audio**
-[Audio transcription](audio-transcript.md)
-[Side-by-side audio comparison](sbs-audio.md)
+- [Survey](survey.md)
 
-- **Video**
-  [Video moderation](video-moderation.md)
-  
-- **Images**
-[Image classification](image-classification.md)
+- [Search for information online](data-search.md)
 
-- **Texts**
-  [Copywriting](copywriting.md)
+## Audio
+
+- [Audio transcription](audio-transcript.md)
+
+- [Side-by-side audio comparison](sbs-audio.md)
+
+## Video
+
+- [Video moderation](video-moderation.md)
+
+## Images
+
+- [Image classification](image-classification.md)
+
+## Texts
+
+- [Copywriting](copywriting.md)
