@@ -18,13 +18,15 @@ You can only download the results from a batch with the **Completed** status.
 1. Select an item and click on it. This opens a block of labeling results in JSON format.
 1. Click **Copy** on the right. This adds the block with labeled data to the clipboard.
 
-## Analyzing the results {#analysis}
+## Procedure of acceptance of services {#acceptance-procedure}
 
 {% note info %}
 
 In ready-to-go projects, only automatic acceptance is available. You can't reject responses manually.
 
 {% endnote %}
+
+All Tasks performed during the term specified in the Tasks shall be deemed automatically accepted by the Customer from the moment when every particular Task is completed by the User, and the Services shall be deemed duly provided by Toloka and subject to payment regardless of any other conditions. No discrepancy between results of the Task and the requirement set by Toloka in the Instruction shall constitute a basis for refusing to accept the relevant Services.
 
 The result of labeling is a TSV file with responses. The `CONFIDENCE` field shows the level of confidence in a response. In this case, it shows the probability that the response is correct.
 
