@@ -1,0 +1,101 @@
+title: Toloka Template Builder
+href: index.md
+items:
+  - href: quickstart.md
+    name: Quick start
+  - href: glossary.md
+    name: Terms and definitions
+  - href: concepts/types.md
+    hidden: true
+    name: Property types
+  - name: Preset templates
+    items:
+      - href: templates/index.md
+        name: List
+      - name: Data enrichment
+        items:
+          - href: templates/survey.md
+            name: Survey
+          - href: templates/data-search.md
+            name: Search for information online
+      - name: Audio
+        items:
+          - href: templates/audio-transcript.md
+            name: Audio transcription
+          - href: templates/sbs-audio.md
+            name: Side-by-side audio comparison
+      - name: Video
+        items:
+          - href: templates/video-moderation.md
+            name: Video analysis
+      - name: Images
+        items:
+          - href: templates/image-classification.md
+            name: Image classification
+      - name: Texts
+        items:
+          - href: templates/copywriting.md
+            name: Copywriting
+  - name: Instructions
+    items:
+      - href: operations/all.md
+        name: List of instructions
+      - name: Input and output data
+        items:
+          - href: operations/work-with-data.md
+            name: Working with data
+          - href: operations/input-output-data.md
+            name: Read and write
+          - href: operations/create-specs.md
+            name: Creating specifications
+          - href: operations/clear-data.md
+            name: Clearing the entered values
+      - name: Audio and video
+        items:
+          - href: operations/play-audio.md
+            name: Playing back audio
+          - href: operations/insert-videos.md
+            name: Inserting videos
+          - href: operations/sbs-video.md
+            name: Comparing video clips
+      - name: Working with text and numbers
+        items:
+          - href: operations/components-for-texts.md
+            name: Components for working with text
+          - href: operations/text-formatting.md
+            name: Text formatting
+          - href: operations/components-for-numbers.md
+            name: Number input field
+      - name: Working with pictures
+        items:
+          - href: operations/insert-images.md
+            name: Inserting images
+          - href: operations/select-areas.md
+            name: Object selection in an image
+      - name: Display settings
+        items:
+          - href: operations/set-plugin-toloka.md
+            name: Task display
+          - href: operations/rtl-ltr.md
+            name: Writing direction
+      - href: operations/internet-search.md
+        name: Inserting links
+  - name: Tips and recommendations
+    items:
+      - href: best-practices/hotkeys.md
+        name: Configure keyboard shortcuts
+      - href: best-practices/conditions.md
+        name: Reviewing assignments automatically
+      - href: best-practices/show-hints.md
+        name: Show hints
+      - href: best-practices/reuse.md
+        name: Reuse code
+  - name: Component reference guide
+    include:
+      path: reference/toc.yaml
+      mode: link
+  - href: troubleshooting/troubleshooting.md
+    name: Troubleshooting
+  - href: concepts/support.md
+    name: Support
+base: en
