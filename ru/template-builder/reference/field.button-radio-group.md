@@ -13,7 +13,7 @@
 || `type`<span style="color: red">\*</span> | "field.button-radio-group" | Задает тип компонента. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Данные, значения которых будут обработаны или изменены. ||
 || `label` | _string_ | Надпись над компонентом. ||
-|| `disabled` | _boolean_ | Свойство запрещает нажимать кнопки. Если значение — `true`, пользователю будет недоступно нажатие. ||
+|| `disabled` | _boolean_ | Свойство запрещает нажимать кнопки. Если значение — `true`, исполнителю будет недоступно нажатие. ||
 || `hint` | _string_ | Текст подсказки. ||
 || `options`<span style="color: red">\*</span> | _array_ | Массив кнопок. ||
 || `options[]` | _object_ | Кнопка. ||

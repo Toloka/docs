@@ -16,7 +16,7 @@
 || **Название** | **Тип** | **Описание** ||
 || `type`<span style="color: red">\*</span> | "view.link" | Задает тип компонента. ||
 || `label` | _string_ | Надпись над компонентом. ||
-|| `content` | _string_ | Текст ссылки, который видит пользователь. ||
+|| `content` | _string_ | Текст ссылки, который видит исполнитель. ||
 || `hint` | _string_ | Текст подсказки. ||
 || `url`<span style="color: red">\*</span> | _string_ | Адрес ссылки. ||
 || `validation` | _condition_ | Валидация на основе условия _(condition)_. ||

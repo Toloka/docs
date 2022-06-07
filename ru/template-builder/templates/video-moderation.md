@@ -5,7 +5,7 @@
 {% cut "Из каких компонентов состоит этот пример" %}
 
 - [view.video](../reference/view.video.md) — видеоплеер;
-- [condition.played](../reference/condition.played.md) — проверяет, что пользователь начал смотреть видео;
+- [condition.played](../reference/condition.played.md) — проверяет, что исполнитель начал смотреть видео;
 - [field.button-radio-group](../reference/field.button-radio-group.md) — кнопки вариантов ответа;
 - [condition.required](../reference/condition.required.md) — проверяет, что выбран хотя бы один вариант;
 - [plugin.toloka](../reference/plugin.toloka.md) — настраивает внешний вид задания;
@@ -80,7 +80,7 @@
 
 ## Добавить уточняющие вопросы к одному из вариантов {#add-addition}
 
-С помощью [helper.switch](../reference/helper.switch.md) можно показывать любой элемент интерфейса только при выборе определенного ответа. В этом примере отметить верные утверждения о видео можно только если пользователь подтверждает, что оно загрузилось.
+С помощью [helper.switch](../reference/helper.switch.md) можно показывать любой элемент интерфейса только при выборе определенного ответа. В этом примере отметить верные утверждения о видео можно только если исполнитель подтверждает, что оно загрузилось.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/Tgf2e)
   

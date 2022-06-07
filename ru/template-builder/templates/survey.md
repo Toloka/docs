@@ -13,7 +13,7 @@
 {% endcut %}
 ## Что еще можно настроить {#examples}
 
-- Если от пользователя требуется вводить длинный текст, то добавьте поле для многострочного текста [field.textarea](../reference/field.textarea.md) вместо [field.text](../reference/field.text.md).
+- Если от исполнителя требуется вводить длинный текст, то добавьте поле для многострочного текста [field.textarea](../reference/field.textarea.md) вместо [field.text](../reference/field.text.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TPoXh)
 
@@ -46,7 +46,7 @@
 
 ## Добавить кнопки и зависимые от них варианты ответа {#add-buttons-radio}
 
-С помощью [helper.switch](../reference/helper.switch.md) можно показывать элемент интерфейса только при выборе определенного ответа. В примере после нажатия одной из двух кнопок пользователю предлагается соответствующий список вариантов.
+С помощью [helper.switch](../reference/helper.switch.md) можно показывать элемент интерфейса только при выборе определенного ответа. В примере после нажатия одной из двух кнопок исполнителю предлагается соответствующий список вариантов.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TTUeE)
 

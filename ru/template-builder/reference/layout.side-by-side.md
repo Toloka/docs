@@ -16,7 +16,7 @@
 #|
 || **Название** | **Тип** | **Описание** ||
 || `type`<span style="color: red">\*</span> | "layout.side-by-side" | Задает тип компонента. ||
-|| `controls`<span style="color: red">\*</span> | _view_ | Компоненты, которые позволят пользователю совершить требуемые от него действия.
+|| `controls`<span style="color: red">\*</span> | _view_ | Компоненты, которые позволят исполнителю совершить требуемые от него действия.
 
 Например: [field.checkbox-group](field.checkbox-group.md) или [field.button-radio-group](field.button-radio-group.md). ||
 || `items`<span style="color: red">\*</span> | _array_ | Массив блоков информации. ||

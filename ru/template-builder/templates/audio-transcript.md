@@ -5,7 +5,7 @@
 {% cut "Из каких компонентов состоит этот пример" %}
 
 - [view.audio](../reference/view.audio.md) — аудиоплеер;
-- [condition.played-fully](../reference/condition.played.md) — проверяет, что пользователь дослушал аудио до конца;
+- [condition.played-fully](../reference/condition.played.md) — проверяет, что исполнитель дослушал аудио до конца;
 - [field.button-radio-group](../reference/field.button-radio-group.md) — кнопки вариантов ответа;
 - [field.textarea](../reference/field.textarea.md) — поле для ввода текста;
 - [condition.required](../reference/condition.required.md) — проверяет, что поле для текста заполнено;
@@ -34,7 +34,7 @@
 
 ## Другие варианты кнопок {#options}
 
-Выберите, может ли пользователь выбрать несколько вариантов ответа или только один:
+Выберите, может ли исполнитель выбрать несколько вариантов ответа или только один:
 
 {% list tabs %}
 
