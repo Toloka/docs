@@ -8,7 +8,7 @@
 
 - [view.audio](../reference/view.audio.md) — аудиоплеер;
 - [layout.columns](../reference/layout.columns.md) — размещает аудиодорожки справа и слева друг от друга;
-- [condition.played](../reference/condition.played.md) — проверяет, что пользователь начал слушать аудио;
+- [condition.played](../reference/condition.played.md) — проверяет, что исполнитель начал слушать аудио;
 - [field.button-radio-group](../reference/field.button-radio-group.md) — кнопки вариантов ответа;
 - [condition.required](../reference/condition.required.md) — проверяет, что выбран хотя бы один вариант;
 - [plugin.toloka](../reference/plugin.toloka.md) — настраивает внешний вид задания;
