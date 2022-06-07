@@ -1,8 +1,8 @@
 # Reviewing assignments automatically
 
-Define clear conditions for your task to ensure that you get the desired output. The conditions check that the performer did the required actions.
+Define clear conditions for your task to ensure that you get the desired output. The conditions check that the annotator did the required actions.
 
-In [Toloka]({{ toloka-requester-index-dita }}), you can use conditions to automate the assignment review process. For example, the performer can't submit an assignment before they meet your required conditions.
+In [Toloka]({{ toloka-requester-index-dita }}), you can use conditions to automate the assignment review process. For example, the annotator can't submit an assignment before they meet your required conditions.
 
 ## Review features {#features}
 

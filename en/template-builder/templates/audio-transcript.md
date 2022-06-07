@@ -52,7 +52,7 @@ Choose whether a user can select only one or multiple answer options:
 
 ## Add pre-recognized text {#text}
 
-  You can add text from input data to audio transcription tasks. For example, this is useful if an audio recording was recognized automatically, and now you need performers to correct errors in the text. To do this, use the [view.text](../reference/view.text.md) component and refer to the number of the element in the input data array in the `content` property.
+  You can add text from input data to audio transcription tasks. For example, this is useful if an audio recording was recognized automatically, and now you need annotators to correct errors in the text. To do this, use the [view.text](../reference/view.text.md) component and refer to the number of the element in the input data array in the `content` property.
  
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TqtBP)
   

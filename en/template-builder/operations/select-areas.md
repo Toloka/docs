@@ -98,7 +98,7 @@ For each new object of the `labels` property, a button is added to the editor th
 
 ## Add keyboard shortcuts {#hotkeys}
 
-To help performers work faster, you can add keyboard shortcuts using the [plugin.field.image-annotation.hotkeys](../reference/plugin.field.image-annotation.hotkeys.md) component. Shortcuts can be assigned to the up and down arrows (`up`,`down`), numbers, and Latin letters.
+To help annotators work faster, you can add keyboard shortcuts using the [plugin.field.image-annotation.hotkeys](../reference/plugin.field.image-annotation.hotkeys.md) component. Shortcuts can be assigned to the up and down arrows (`up`,`down`), numbers, and Latin letters.
 
 If you install the shortcut plugin without assigning keys, they are assigned automatically (see the [example](https://clck.ru/RnbbS)). You can change them as described below. If you don't need some of the shortcuts, leave their value fields empty.
 

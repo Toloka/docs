@@ -29,7 +29,7 @@ If this template doesn't meet your needs, see other examples in this section.
 
 ## Other options for buttons {#add-variants}
 
-Decide whether the performer can select only one or multiple answer options:
+Decide whether the annotator can select only one or multiple answer options:
 
 {% list tabs %}
 

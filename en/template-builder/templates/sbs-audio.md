@@ -42,7 +42,7 @@ If this template doesn't meet your needs, see other examples in this section.
 
 ## Add a response field {#add-text-area}
 
-If you need comments from the performer, add a text field using [field.textarea](../reference/field.textarea.md). In this example, additional validation is set up that requires you to enter text if one of two audio tracks is selected.
+If you need comments from the annotator, add a text field using [field.textarea](../reference/field.textarea.md). In this example, additional validation is set up that requires you to enter text if one of two audio tracks is selected.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tqtw9)
 
