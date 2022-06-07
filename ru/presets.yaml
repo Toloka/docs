@@ -2654,7 +2654,7 @@ default:
   ui_requester_hlp-lnk-req-api: https://toloka.ai/ru/docs/api/
   ui_requester_hlp-lnk-what-tlk-req: https://toloka.ai/ru/docs/guide/
   ui_requester_hlp-ttl-blog: Блог Толоки
-  ui_requester_hlp-ttl-blog-link: https://yandex.ru/blog/toloka
+  ui_requester_hlp-ttl-blog-link: https://toloka.ai/blog/
   ui_requester_hlp-ttl-news: Новости
   ui_requester_hlp-ttl-req-api: API
   ui_requester_html_meta__description_requester: Your one-stop data labeling platform.
@@ -5722,7 +5722,7 @@ default:
   ui_requester_requester_help__telegram_chat: Чат поддержки в Telegram
   ui_requester_requester_help__telegram_chat_link: https://t.me/joinchat/JFLdm1DfOvLUHU2D8VWPYQ
   ui_requester_requester_help_blog_label: Блог Толоки
-  ui_requester_requester_help_blog_link: https://yandex.ru/blog/toloka
+  ui_requester_requester_help_blog_link: https://toloka.ai/blog/
   ui_requester_requester_help_training_label: Курс по краудсорсингу
   ui_requester_requester_help_training_link: https://toloka.ai/academy/self-study-guide
   ui_requester_requesters__table__balance__title: Баланс
