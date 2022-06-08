@@ -14,9 +14,9 @@ Configuration
 
 Input and output data {#input-output-data}
 
-: _Input data_ is the source data you want to display or use. For example, links to images that will be shown to performers. Use the `data.input` component to access the input data.
+: _Input data_ is the source data you want to display or use. For example, links to images that will be shown to annotators. Use the `data.input` component to access the input data.
 
-: _Output_ is the data you receive after the task is completed, like the performer's answers to your questions. Use the `data.output` component to access the output data.
+: _Output_ is the data you receive after the task is completed, like the annotator's answers to your questions. Use the `data.output` component to access the output data.
 
 : See the [Read and write](operations/input-output-data.md) instructions to learn about working with data.
 

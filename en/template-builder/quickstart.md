@@ -410,7 +410,7 @@ Shortcuts are not part of visual components. They are added via a separate plugi
 
 ### Configuring validation {#validation}
 
-Validation lets you check the values that users enter. The next part of the code in this section checks that performers select one of the options.
+Validation lets you check the values that users enter. The next part of the code in this section checks that annotators select one of the options.
 
 To enable this, add the`validation` property with the [condition.required](reference/condition.required.md) component to the component's code. In the examples above, this code has already been added.
 

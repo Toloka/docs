@@ -2,7 +2,7 @@
 
 Add keyboard shortcuts for the frequently used interface elements. This will help users because keyboard combinations are somewhat faster than mouse clicks.
 
-In [Toloka]({{ toloka-requester-index-dita }}), shortcuts are particularly helpful because performers will do your tasks faster and you can pay less for them. If your project has a low score for “Interface usability“, adding shortcuts will help improve the rating.
+In [Toloka]({{ toloka-requester-index-dita }}), shortcuts are particularly helpful because annotators will do your tasks faster and you can pay less for them. If your project has a low score for “Interface usability“, adding shortcuts will help improve the rating.
 
 ## Shortcut features {#hotkeys-features}
 
