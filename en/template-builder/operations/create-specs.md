@@ -501,7 +501,7 @@ By default, the field is visible — `false`.
 Hidden fields are not available in the task interface, even through JS or the template code in the constructor.
 
 {% endnote %}||
-||**Array**|`array_<тип>`|Array of objects of the same type. Used, for example, for multiple photos uploaded by a annotator.
+||**Array**|`array_<тип>`|Array of objects of the same type. Used, for example, for multiple photos uploaded by an annotator.
 In JSON mode, there is a separate data type for the array. For example: `"type": "array_file"`.||
 ||**Min size**|`min_size`|Minimum number of items in the array.||
 ||**Max size**|`max_size`|Maximum number of items in the array.||
