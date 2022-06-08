@@ -4,7 +4,7 @@ This component can be used for uploading files. It's displayed in the interface 
 
 You can list in the `accept` property the file types that will be suggested to the user when uploading. By default, only one file can be uploaded, but you can allow multiple files in the `multiple` property.
 
-If a user logs in from a mobile device, it's more convenient to use [field.media-file](field.media-file.md) — it's adapted for mobile devices and makes it easier to upload photos and videos.
+If an annotator logs in from a mobile device, it's more convenient to use [field.media-file](field.media-file.md) — it's adapted for mobile devices and makes it easier to upload photos and videos.
 
 In the task review mode, the uploaded images will appear automatically. You can view, rotate, and switch among the images.
 

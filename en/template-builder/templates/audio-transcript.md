@@ -32,7 +32,7 @@ If this template doesn't meet your needs, see other examples in this section.
 
 ## Other options for buttons {#options}
 
-Choose whether a user can select only one or multiple answer options:
+Choose whether an annotator can select only one or multiple answer options:
 
 {% list tabs %}
 

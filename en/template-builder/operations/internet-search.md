@@ -90,7 +90,7 @@ To assign a [shortcut](../best-practices/hotkeys.md) to a button, use the [plugi
 
 To check if the user clicked on the link, use the [condition.link-opened](../reference/condition.link-opened.md) component by specifying it in the `validation` property.
 
-Remember that the condition only works if a user clicks the link in the interface. If the link is opened via the address bar, the condition doesn't work.
+Remember that the condition only works if an annotator clicks the link in the interface. If the link is opened via the address bar, the condition doesn't work.
 
 [View example in the sandbox](https://clck.ru/Tqux9).
 

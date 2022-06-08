@@ -6,7 +6,7 @@ To clear the entered values, use the [action.set](../reference/action.set.md) ac
 
 ## Example {#section_t1s_fgt_xmb}
 
-Let's say you ask a user whether they prefer cats or dogs. Then you ask them to select their favorite breed, and this field is mandatory.
+Let's say you ask annotators whether they prefer cats or dogs. Then you ask them to select their favorite breed, and this field is mandatory.
 
 It's possible that after selecting a breed, the user changes their choice of animal, and you get this response: animal — cat, breed — dachshund.
 

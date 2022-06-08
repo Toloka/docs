@@ -9,7 +9,7 @@ Take a look at the example: there are two audio tracks and buttons to choose an
 
 - [view.audio](../reference/view.audio.md): An audio player.
 - [layout.columns](../reference/layout.columns.md): Arranges audio tracks side by side.
-- [condition.played](../reference/condition.played.md): Checks if a user has started listening to the audio.
+- [condition.played](../reference/condition.played.md): Checks if an annotator has started listening to the audio.
 - [field.button-radio-group](../reference/field.button-radio-group.md): Buttons for answer options.
 - [condition.required](../reference/condition.required.md): Checks if at least one option is selected.
 - [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
