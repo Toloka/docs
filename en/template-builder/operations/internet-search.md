@@ -1,6 +1,6 @@
 # Inserting links
 
-In this section, you will learn how to add a link or a search engine query and how to check whether the Toloker has clicked on them. Links can be opened when a certain event occurs. You can also group links together and set shortcuts for them to allow Tolokers to work faster.
+In this section, you will learn how to add a link or a search engine query and how to check whether a Toloker has clicked on them. Links can be opened when a certain event occurs. You can also group links together and set shortcuts for them to allow Tolokers to work faster.
 
 
 ## Insert a normal link {#view.link}
@@ -118,7 +118,7 @@ Learn more about shortcuts in [Configure keyboard shortcuts](../best-practices/
 
 ## Use event-driven links {#plugin.trigger}
 
-You can set a link to open when a certain event occurs. For example, when the Toloker chooses an option, this can open a specific search query. To do this, use the [plugin.trigger](../reference/plugin.trigger.md) plugin.
+You can set a link to open when a certain event occurs. For example, when a Toloker chooses an option, this can open a specific search query. To do this, use the [plugin.trigger](../reference/plugin.trigger.md) plugin.
 
 [View example in the sandbox](https://clck.ru/Tqv5B).
 

@@ -78,7 +78,7 @@ Decide how you want to display the options: with radio buttons, regular buttons,
 
 {% endlist %}
 
-## An Toloker adds input fields {#dynamic-field-add}
+## A Toloker adds input fields {#dynamic-field-add}
 
 This is a complex example that consists of four main parts:
 - [view.image](../reference/view.image.md): Image.

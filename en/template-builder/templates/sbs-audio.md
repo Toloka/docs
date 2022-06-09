@@ -60,7 +60,7 @@ You can add a field with a source text using the [view.text](../reference/view
 
 ## Add a layout {#add-color}
 
-To enhance Toloker experience, you can also highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the source text is highlighted with a blue border, and the buttons are highlighted with a yellow one.
+To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the source text is highlighted with a blue border, and the buttons are highlighted with a yellow one.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TquFn)
 
