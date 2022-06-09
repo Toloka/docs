@@ -1,6 +1,6 @@
 # Playing back audio
 
-In this section, we'll show how you can [embed an audio player](#insert-to-interface) into the interface, and how you can make sure that an annotator [listened](#validate-listened) to your file.
+In this section, we'll show how you can [embed an audio player](#insert-to-interface) into the interface, and how you can make sure that a Toloker [listened](#validate-listened) to your file.
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
@@ -22,13 +22,13 @@ To loop audio playback automatically, put `true` in the `loop` property.
 [View example in the sandbox](https://tb.yandex.net/editor?config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNgG1RYyoqW1GLNng4lOAQwCuAEzgRhKpXn0AnbppAALOnSZ9kAejfxuRALREAHrpSTN58PpBSnAgS9voARpwmbvohELqGfG4ATAAMAIwA7G55eZ5w3gD6AUEhRBUAsgAKAMwVBTk5ANIAQpzBzWbUqnjcEBBMbHRW+qxDNAC+5gC6iotQ8yBCIHBQTPp0KGgb80A&locale=en).
 
 
-## Make sure that the annotator listened to the audio {#validate-listened}
+## Make sure that the Toloker listened to the audio {#validate-listened}
 
 {% list tabs %}
 
 - Started listening
 
-  To make sure that the annotator played back the audio and at least started listening to it, use the `condition.played` component in the `validation` property.
+  To make sure that the Toloker played back the audio and at least started listening to it, use the `condition.played` component in the `validation` property.
   ```json
   {
     "type": "view.audio",
@@ -44,7 +44,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
 
 - Listened completely
 
-  To make sure that the annotator listened to the entire recording, use the `condition.played-fully` component in the `validation` property.
+  To make sure that the Toloker listened to the entire recording, use the `condition.played-fully` component in the `validation` property.
   ```json
   {
     "type": "view.audio",
@@ -62,9 +62,9 @@ To loop audio playback automatically, put `true` in the `loop` property.
 
 ## Record audio {#record-audio}
 
-To allow annotators to upload their audio files, use the [field.audio](../reference/field.audio.md) component.
+To allow Tolokers to upload their audio files, use the [field.audio](../reference/field.audio.md) component.
 
-On the website, `field.audio` allows annotators to upload audio files, and in the app, it opens the sound recorder.
+On the website, `field.audio` allows Tolokers to upload audio files, and in the app, it opens the sound recorder.
 
 ```json
 {
@@ -83,8 +83,8 @@ On the website, `field.audio` allows annotators to upload audio files, and in th
 
 To create a template for audio transcription tasks, we used the following components:
 
-- [condition.played](../reference/condition.played.md): To make sure that an annotator listened to the audio.
-- [condition.required](../reference/condition.required.md): To make sure that an annotator entered text into the multiline field ([field.textarea](../reference/field.textarea.md)).
+- [condition.played](../reference/condition.played.md): To make sure that a Toloker listened to the audio.
+- [condition.required](../reference/condition.required.md): To make sure that a Toloker entered text into the multiline field ([field.textarea](../reference/field.textarea.md)).
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
 

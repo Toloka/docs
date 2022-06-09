@@ -14,7 +14,7 @@ In the task review mode, the uploaded images will appear automatically. You can 
 
 In the Toloka mobile app, the photo and video buttons open the camera, and the gallery and file manager buttons open the corresponding apps.
 
-After an annotator submits the task, the files are saved in the app and gradually uploaded to Toloka when there's a Wi-Fi connection. While there's no connection, the task status remains "Submitting via Wi-Fi".
+After a Toloker submits the task, the files are saved in the app and gradually uploaded to Toloka when there's a Wi-Fi connection. While there's no connection, the task status remains "Submitting via Wi-Fi".
 
 ## Component properties {#properties}
 

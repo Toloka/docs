@@ -2,7 +2,7 @@
 
 To work with data, use the components with the type `data.*`:
 
-- `data.input`: The input data. For example, links to images that will be shown to annotators. In the Template Builder sandbox, you can set an example of input data.
+- `data.input`: The input data. For example, links to images that will be shown to Tolokers. In the Template Builder sandbox, you can set an example of input data.
 - `data.output`: The output data. This is what you get when you click the **Send** button.
 - `data.internal`: The data available only from within the task. This data is not saved to the results. Use this data to calculate or store intermediate values.
 - `data.local`: The local data available only from inside the component. This data is used in some auxiliary components, such as [helper.transform](../reference/helper.transform.md).

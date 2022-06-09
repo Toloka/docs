@@ -4,7 +4,7 @@ Adds a map to your task.
 
 Use this component to set the targets for the tasks with the markers, select the areas with polygons. Specify the position and colors for the elements on the map.
 
-You can set the following map properties: scale, position of the map center, label, and hint for annotators.
+You can set the following map properties: scale, position of the map center, label, and hint for Tolokers.
 
 [View example in the sandbox](https://clck.ru/bmsjT).
 

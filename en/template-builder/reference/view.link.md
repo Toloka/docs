@@ -16,7 +16,7 @@ To insert a link with a search query, use [helper.search-query](helper.search-qu
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "view.link" | Set component type ||
 || `label` | _string_ | Label above the component. ||
-|| `content` | _string_ | Link text displayed to an annotator. ||
+|| `content` | _string_ | Link text displayed to a Toloker. ||
 || `hint` | _string_ | Hint text. ||
 || `url`<span style="color: red">\*</span> | _string_ | Link URL. ||
 || `validation` | _condition_ | Validation based on condition. ||

@@ -443,7 +443,7 @@ There are two ways to edit a specification in project settings: you can do it ei
 
   {% cut "Hidden field" %}
   
-  The string an annotator can't access:
+  The string a Toloker can't access:
   ```json
   "my_string": {
       "type": "string",
@@ -481,10 +481,10 @@ There are two ways to edit a specification in project settings: you can do it ei
 For arrays, add the `array_` prefix to the field type in JSON mode. For example: `array_file`.||
 ||**Required**|`required`|Whether the field must be filled when uploading the tasks for the input data.
 
-Whether the annotator's response is required in the output data.
+Whether the Toloker's response is required in the output data.
 
 By default, fields are optional — `false`.||
-||**Hidden**|`hidden`|Allows you to hide data from an annotator. If this is not done, annotators can get the field value programmatically. You can configure this parameter in JSON mode.
+||**Hidden**|`hidden`|Allows you to hide data from a Toloker. If this is not done, Tolokers can get the field value programmatically. You can configure this parameter in JSON mode.
 
 For example, you can hide the `assigment_id` identifier you will need when reviewing assignments in a separate project.
 
@@ -501,7 +501,7 @@ By default, the field is visible — `false`.
 Hidden fields are not available in the task interface, even through JS or the template code in the constructor.
 
 {% endnote %}||
-||**Array**|`array_<тип>`|Array of objects of the same type. Used, for example, for multiple photos uploaded by an annotator.
+||**Array**|`array_<тип>`|Array of objects of the same type. Used, for example, for multiple photos uploaded by a Toloker.
 In JSON mode, there is a separate data type for the array. For example: `"type": "array_file"`.||
 ||**Min size**|`min_size`|Minimum number of items in the array.||
 ||**Max size**|`max_size`|Maximum number of items in the array.||
@@ -522,10 +522,10 @@ The default value is `false`.||
 
 - If you edit a required field, the changes apply only to new task [pools](../glossary.md#pool). For example, if you need to fix an error in a project, [clone the pool](https://toloka.ai/docs/guide/concepts/pool-main.html) or [create a new one](https://toloka.ai/docs/guide/concepts/pool-main.html). Existing task pools will continue using the previous version of the project.
 
-- In the output, use value validation and don't forget to mark the field as required if an annotator has to fill it in.
+- In the output, use value validation and don't forget to mark the field as required if a Toloker has to fill it in.
 - Hidden fields are intended only for requesters and are not available in the task interface. The values of hidden fields can't be used either in the JS code or in the template constructor.
 
-    Let's say you pass product data (like articles or batch numbers) that annotators don't need in order to complete the task. Or you are moderating comments and you need the authors' personal data in the results for further data processing, but annotators shouldn't have access to personal data.
+    Let's say you pass product data (like articles or batch numbers) that Tolokers don't need in order to complete the task. Or you are moderating comments and you need the authors' personal data in the results for further data processing, but Tolokers shouldn't have access to personal data.
 
     To create a hidden field, add it to the specification yourself and then add the `"hidden": true` parameter to this field in JSON mode. You should do this in Toloka when configuring your project. The hidden field remains when the specification is re-generated using the Template Builder.
 

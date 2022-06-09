@@ -2,7 +2,7 @@
 
 Component for image labeling.
 
-The interface lets you select areas using points, rectangles, and polygons. You can use the `shapes` property to configure labeling modes that are available to an annotator.
+The interface lets you select areas using points, rectangles, and polygons. You can use the `shapes` property to configure labeling modes that are available to a Toloker.
 
 If you need to categorize selected items, create labels for each category using the `labels` property.
 
@@ -44,11 +44,11 @@ At least two objects must be added to the array. ||
 
 Not valid if `"fullHeight": true`. ||
 || `ratio[]` | _number_ | Relative size of one side. ||
-|| `shapes` | _object_ | Setting up labeling modes that are available to an annotator.
+|| `shapes` | _object_ | Setting up labeling modes that are available to a Toloker.
 
 By default, all three selection modes are available: points, rectangles, and polygons.
 
-Modes with the `true` value are available to an annotator. ||
+Modes with the `true` value are available to a Toloker. ||
 || `shapes.point` | _boolean_ | Point selector. ||
 || `shapes.polygon` | _boolean_ | Labeling with polygons. ||
 || `shapes.rectangle` | _boolean_ | Rectangle selector. ||

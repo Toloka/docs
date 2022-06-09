@@ -8,7 +8,7 @@ Errors may occur when playing back the linked media files. The preview window sh
 
 #|
 ||**Error message**|**Cause and fix**||
-||Playback was interrupted|**Cause:** Getting and downloading the media file has been interrupted by an annotator.
+||Playback was interrupted|**Cause:** Getting and downloading the media file has been interrupted by a Toloker.
 
 **How to fix:** Refresh the page.||
 ||Can't download video/audio due to network problems|**Cause:** The media file can't be downloaded because the network connection is down or unstable.
@@ -26,7 +26,7 @@ This might happen if the media file format mismatches the device codec or the fi
 
   **How to fix:** Make sure that you provided a correct media file link.
 
-- **Cause:** The media file format is not supported. File format support depends on the annotator's browser, OS, and device.
+- **Cause:** The media file format is not supported. File format support depends on the Toloker's browser, OS, and device.
 
   **How to fix:** Try using files in one of the specified formats.
   

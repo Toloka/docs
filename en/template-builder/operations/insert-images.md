@@ -74,7 +74,7 @@ If you don't know the size of your array with images in advance or you have so m
 
 ## Zooming in on an image {#zoom-image}
 
-To zoom in on an image by pressing a shortcut key, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) component. Specify which key triggers [action.open-close](../reference/action.open-close.md). The image is specified in the `view` property using the [$ref](../best-practices/reuse.md) structure. The action is performed when an annotator presses the selected key.
+To zoom in on an image by pressing a shortcut key, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) component. Specify which key triggers [action.open-close](../reference/action.open-close.md). The image is specified in the `view` property using the [$ref](../best-practices/reuse.md) structure. The action is performed when a Toloker presses the selected key.
 
 [View example in the sandbox](https://clck.ru/U3RyK).
 

@@ -15,6 +15,6 @@ This component is useful in the following cases:
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "condition.schema" | Set component type ||
 || `data` | _any_ | Data that should be checked. ||
-|| `hint` | _string_ | Validation error message that an annotator will see ||
+|| `hint` | _string_ | Validation error message that a Toloker will see ||
 || `schema` | _JSON Schema draft 7_ | The schema for validating data. ||
 |#

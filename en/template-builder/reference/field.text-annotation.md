@@ -16,10 +16,10 @@ You can use [plugin.field.text-annotation.hotkeys](plugin.field.text-annotation.
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `adjust` | _string_ | If the property value is set to `words`, only words can be selected in the text. If you don't use this property, any part of a line can be selected. ||
-|| `content`<span style="color: red">\*</span> | _string_ | The text where an annotator has to select part of a line. ||
-|| `disabled` | _boolean_ | This property blocks the component. If `true`, the component is unavailable to an annotator. The default value is `false`. ||
+|| `content`<span style="color: red">\*</span> | _string_ | The text where a Toloker has to select part of a line. ||
+|| `disabled` | _boolean_ | This property blocks the component. If `true`, the component is unavailable to a Toloker. The default value is `false`. ||
 || `hint` | _string_ | Hint text. ||
-|| `labels`<span style="color: red">\*</span> | _array_ | An array of categories that an annotator uses to label parts of the text. ||
+|| `labels`<span style="color: red">\*</span> | _array_ | An array of categories that a Toloker uses to label parts of the text. ||
 || `labels[]` | _object_ | A category. ||
 || `labels[].label`<span style="color: red">\*</span> | _string_ | Specify the category name in the `label` property. ||
 || `labels[].value`<span style="color: red">\*</span> | _string_ | Specify the category value in the `value` property. ||

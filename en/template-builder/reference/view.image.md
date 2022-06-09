@@ -19,7 +19,7 @@ Displays an image.
 
 If `true`, images start loading immediately, even if they aren't in the viewport. Useful for icons.
 
-By default, `false` (lazy loading is enabled). In this mode, images start loading only when they get in an annotator's field of view. ||
+By default, `false` (lazy loading is enabled). In this mode, images start loading only when they get in a Toloker's field of view. ||
 || `popup` | _boolean_ | Specifies whether opening a full-size image with a click is allowed. By default, it is `true` (allowed). ||
 || `ratio` | _array_ | An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number).
 
