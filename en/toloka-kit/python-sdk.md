@@ -10,7 +10,7 @@ These powerful software development kits make your work with Toloka much easier 
         <p>An open source Python library that allows you to access <a href="https://toloka.ai/docs/api/concepts/about.html">Toloka API</a> with the help of classes and methods that seamlessly integrate with your Python application.</p>
         <div style="display: flex;">
             <p style="margin-right: auto;"><a href="https://github.com/Toloka/toloka-kit"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/github.svg" alt="View source code on GitHub" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Source code on GitHub</a></p>
-            <p style="margin-left: auto;"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/jupyter.svg" alt="View integration examples" style="border: 0; vertical-align: middle; margin-right: 7px;" /> <a href="https://github.com/Toloka/toloka-kit/tree/main/examples">Integration examples</a></p>
+            <p style="margin-left: auto;"><a href="https://github.com/Toloka/toloka-kit/tree/main/examples"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/jupyter.svg" alt="View integration examples" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Integration examples</a></p>
         </div>
     </div>
     <div style="width: 50%; padding: 0 0 0 30px;">
@@ -18,7 +18,7 @@ These powerful software development kits make your work with Toloka much easier 
         <p>An open source Python library that implements commonly-used aggregation methods for crowdsourced annotation and offers relevant metrics and datasets.</p>
         <div style="display: flex;">
             <p style="margin-right: auto;"><a href="https://github.com/Toloka/crowd-kit"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/github.svg" alt="View source code on GitHub" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Source code on GitHub</a></p>
-            <p style="margin-left: auto;"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/jupyter.svg" alt="View integration examples" style="border: 0; vertical-align: middle; margin-right: 7px;" /> <a href="https://github.com/Toloka/crowd-kit/tree/main/examples">Integration examples</a></p>
+            <p style="margin-left: auto;"><a href="https://github.com/Toloka/crowd-kit/tree/main/examples"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/jupyter.svg" alt="View integration examples" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Integration examples</a></p>
         </div>
     </div>
 </div>
