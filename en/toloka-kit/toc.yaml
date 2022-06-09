@@ -1,7 +1,7 @@
 title: Toloka-Kit Documentation
 href: index.md
 items:
-  - href: ../python-sdk.md
+  - href: python-sdk.md
     name: Python SDK
     hidden: true
   - name: Overview
