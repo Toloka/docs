@@ -64,7 +64,7 @@ Put your reused code into `vars` so that you don't have to change the path in th
 
 ## Multiple actions {#bulk-actions}
 
-For the annotator to trigger multiple actions by pressing a button, add the [action.bulk](../reference/action.bulk.md) component. For example, you can use it to show multiple notifications.
+For an annotator to trigger multiple actions by pressing a button, add the [action.bulk](../reference/action.bulk.md) component. For example, you can use it to show multiple notifications.
 
 [View example in the sandbox](https://clck.ru/TR7bK).
 
@@ -74,7 +74,7 @@ If you use a condition ([helper.if](../reference/helper.if.md) or [helper.switch
 
 If you set up a shortcut without a condition, the shortcut will still work, but won't be visualized. This might cause errors.
 
-Here is an example of an error. In this example, if the annotator responds **Yes**, they see another question. But they can use a keyboard shortcut to respond to it, even if it's not shown in the interface.
+Here is an example of an error. In this example, if annotators respond **Yes**, they see another question. But they can use a keyboard shortcut to respond to it, even if it's not shown in the interface.
 
 [View example with error in the sandbox](https://clck.ru/TR8kq).
 

@@ -24,7 +24,7 @@ Take a look at the example: there are two audio tracks and buttons to choose an
 
 ## What else can be configured {#add-more}
 
-- To [check](../best-practices/conditions.md) whether the annotator watched the whole video, replace the [condition.played](../reference/condition.played.md) component with [condition.played-fully](../reference/condition.played-fully.md).
+- To [check](../best-practices/conditions.md) whether an annotator watched the whole video, replace the [condition.played](../reference/condition.played.md) component with [condition.played-fully](../reference/condition.played-fully.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tqtpk)
   

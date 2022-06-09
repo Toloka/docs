@@ -1,13 +1,13 @@
 # Show hints
 
-Use hints to convey [important information](#fixed-notifications) to the annotators, help them [resolve issues](#errors) and [fill out fields](#hints) correctly, and [alert](#notifications) them when they attempt certain actions. Template Builder provides auxiliary components for different needs.
+Use hints to convey [important information](#fixed-notifications) to annotators, help them [resolve issues](#errors) and [fill out fields](#hints) correctly, and [alert](#notifications) them when they attempt certain actions. Template Builder provides auxiliary components for different needs.
 
 
 ## Add fixed alerts at the top of the screen {#fixed-notifications}
 
 To keep annotators aware of important information, add fixed alerts above the tasks: this is the text at the top of the screen that never disappears when annotators navigate between the task suites.
 
-For example, such messages can be helpful when the requester edits the instructions and wants to keep the annotators updated.
+For example, such messages can be helpful when the requester edits the instructions and wants to keep annotators updated.
 
 Use the [plugin.toloka](../reference/plugin.toloka.md) plugin to add fixed alerts. To add one or more messages, specify them in the `notifications` property.
 

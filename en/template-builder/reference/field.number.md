@@ -1,10 +1,10 @@
 # field.number
 
-A component that allows the annotator to enter a number.
+A component that allows an annotator to enter a number.
 
-Only numbers and decimal separators can be entered in the field. The annotator can enter a dot or a comma as a separator, but the dot is always used in the output.
+Only numbers and decimal separators can be entered in the field. An annotator can enter a dot or a comma as a separator, but the dot is always used in the output.
 
-When the annotator enters a number, the separator automatically changes to the one specified in the regional settings. For Russia, the separator is a comma.
+When an annotator enters a number, the separator automatically changes to the one specified in the regional settings. For Russia, the separator is a comma.
 
 You can also set up validation, for example, disable negative or fractional numbers. [Learn more](../operations/components-for-numbers.md).
 

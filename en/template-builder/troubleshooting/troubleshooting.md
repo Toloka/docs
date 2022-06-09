@@ -8,7 +8,7 @@ Errors may occur when playing back the linked media files. The preview window sh
 
 #|
 ||**Error message**|**Cause and fix**||
-||Playback was interrupted|**Cause:** Getting and downloading the media file has been interrupted by the annotator.
+||Playback was interrupted|**Cause:** Getting and downloading the media file has been interrupted by an annotator.
 
 **How to fix:** Refresh the page.||
 ||Can't download video/audio due to network problems|**Cause:** The media file can't be downloaded because the network connection is down or unstable.

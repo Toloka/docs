@@ -414,7 +414,7 @@ Validation lets you check the values that annotators enter. The next part of the
 
 To enable this, add the `validation` property with the [condition.required](reference/condition.required.md) component to the component's code. In the examples above, this code has already been added.
 
-You can also add a hint to this code telling the annotator what they need to correct to pass validation. To do this, add a `hint` property with the hint so that it looks like this:
+You can also add a hint to this code telling annotators what they need to correct to pass validation. To do this, add a `hint` property with the hint so that it looks like this:
 ```json
 {
   "validation": {

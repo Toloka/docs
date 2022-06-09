@@ -1,6 +1,6 @@
 # Search for information online
 
-For this type of project, you can use the **Data search** template ([view code in the sandbox](https://clck.ru/USPmt)). It has pre-configured validation and task layout. In this template, the annotator needs to enter the organization's contact information found online.
+For this type of project, you can use the **Data search** template ([view code in the sandbox](https://clck.ru/USPmt)). It has pre-configured validation and task layout. In this template, an annotator needs to enter the organization's contact information found online.
 
 {% cut "Components used in the example" %}
 
@@ -32,7 +32,7 @@ For this type of project, you can use the **Data search** template ([view code i
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBXF)
   
-- If the annotator needs to find and submit a link to a specific page from the website, add the [condition.same-domain](../reference/condition.same-domain.md) component. The component checks that the link is from the required domain.
+- If an annotator needs to find and submit a link to a specific page from the website, add the [condition.same-domain](../reference/condition.same-domain.md) component. The component checks that the link is from the required domain.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBm5)
 
@@ -41,7 +41,7 @@ If this  template doesn't meet your needs, see other examples in this section.
 
 ## Add a field for selecting response options {#add-radio-group}
 
-If the annotator needs to click on the search link and answer a question, add the [field.radio-group](../reference/field.radio-group.md) field for selecting one of the response options.
+If an annotator needs to click on the search link and answer a question, add the [field.radio-group](../reference/field.radio-group.md) field for selecting one of the response options.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/TtSs6)
 
@@ -59,7 +59,7 @@ In this example, the following fields are added:
 
 ## Divide the task interface into columns {#add-layout-columns}
 
-Another version of the task, in which the annotator needs to find information about the organization.
+Another version of the task, in which an annotator needs to find information about the organization.
 
 In this example, the following fields are added:
 

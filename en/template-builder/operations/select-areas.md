@@ -167,7 +167,7 @@ To create a template for area selection tasks, use the following components:
 - [field.image-annotation](../reference/field.image-annotation.md): To add the area selection editor.
 - [plugin.field.image-annotation.hotkeys](../reference/plugin.field.image-annotation.hotkeys.md): To add keyboard shortcuts.
 - [view.text](../reference/view.text.md): To add a description to the task.
-- [condition.required](../reference/condition.required.md): To make sure that the annotator selected at least one area.
+- [condition.required](../reference/condition.required.md): To make sure that an annotator selected at least one area.
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
 [View example in the sandbox](https://clck.ru/Tqvd5).

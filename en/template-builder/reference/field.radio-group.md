@@ -13,7 +13,7 @@ The minimum number of buttons is one. Any type of data can be returned.
 || `type`<span style="color: red">\*</span> | "field.radio-group" | Set component type ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
-|| `disabled` | _boolean_ | This property prevents clicking the button. If the value is `true`, the button is not active (the annotator will not be able to click it). ||
+|| `disabled` | _boolean_ | This property prevents clicking the button. If the value is `true`, the button is not active (an annotator will not be able to click it). ||
 || `hint` | _string_ | Hint text. ||
 || `options`<span style="color: red">\*</span> | _array_ | An array of buttons. ||
 || `options[]` | _object_ | A button. ||

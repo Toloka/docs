@@ -19,7 +19,7 @@ Note that formatting is not available in the text box.
 || `hint` | _string_ | Hint text. ||
 || `placeholder` | _string_ | A semi-transparent label that is shown when the box is empty. Use it to provide an example or a hint for the response. ||
 || `requiredMark` | _boolean_ | Show "\*" next to the label ||
-|| `resizable` | _boolean_ | Changing the box size. When set to `true` (the default value), the annotator can change the height. To prevent resizing, set the value to `false`. ||
+|| `resizable` | _boolean_ | Changing the box size. When set to `true` (the default value), an annotator can change the height. To prevent resizing, set the value to `false`. ||
 || `rows` | _number_ | The height of the text box in lines. ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 

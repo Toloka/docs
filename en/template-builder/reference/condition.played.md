@@ -9,5 +9,5 @@ Checks the start of playback. Validation will be passed if playback is started. 
 #|
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "condition.played" | Set component type ||
-|| `hint` | _string_ | Validation error message that the annotator will see ||
+|| `hint` | _string_ | Validation error message that an annotator will see ||
 |#

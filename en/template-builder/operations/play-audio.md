@@ -1,6 +1,6 @@
 # Playing back audio
 
-In this section, we'll show how you can [embed an audio player](#insert-to-interface) into the interface, and how you can make sure that the annotator [listened](#validate-listened) to your file.
+In this section, we'll show how you can [embed an audio player](#insert-to-interface) into the interface, and how you can make sure that an annotator [listened](#validate-listened) to your file.
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
@@ -83,8 +83,8 @@ On the website, `field.audio` allows annotators to upload audio files, and in th
 
 To create a template for audio transcription tasks, we used the following components:
 
-- [condition.played](../reference/condition.played.md): To make sure that the annotator listened to the audio.
-- [condition.required](../reference/condition.required.md): To make sure that the annotator entered text into the multiline field ([field.textarea](../reference/field.textarea.md)).
+- [condition.played](../reference/condition.played.md): To make sure that an annotator listened to the audio.
+- [condition.required](../reference/condition.required.md): To make sure that an annotator entered text into the multiline field ([field.textarea](../reference/field.textarea.md)).
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
 

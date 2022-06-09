@@ -5,7 +5,7 @@ For this type of project, you can use the **Audio Transcription** template ([vie
 {% cut "Components used in the example" %}
 
 - [view.audio](../reference/view.audio.md): An audio player.
-- [condition.played-fully](../reference/condition.played.md): Checks if the annotator listened to the entire audio track.
+- [condition.played-fully](../reference/condition.played.md): Checks if an annotator listened to the entire audio track.
 - [field.button-radio-group](../reference/field.button-radio-group.md): Buttons for answer options.
 - [field.textarea](../reference/field.textarea.md): Text input field.
 - [condition.required](../reference/condition.required.md): Checks if the text field is filled in.
