@@ -18,21 +18,21 @@ For this type of project, you can use the **Data search** template ([view code i
 
 ## What else can be configured {#examples}
 
-- To let users enter long texts, add the [field.textarea](../reference/field.textarea.md) field.
+- To let annotators enter long texts, add the [field.textarea](../reference/field.textarea.md) field.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQAkj)
   
-- To let users enter numbers, add the [field.number](../reference/field.number.md) field.
+- To let annotators enter numbers, add the [field.number](../reference/field.number.md) field.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQDQS)
   
-- To let users search for files online, add the file selection field [field.file](../reference/field.file.md). For example, use this if they need to upload a photo with a certain object in it.
+- To let annotators search for files online, add the file selection field [field.file](../reference/field.file.md). For example, use this if they need to upload a photo with a certain object in it.
 
     In task verification mode, the uploaded images will appear automatically. You can view, rotate, and switch between images.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBXF)
   
-- If the user needs to find and submit a link to a specific page from the website, add the [condition.same-domain](../reference/condition.same-domain.md) component. The component checks that the link is from the required domain.
+- If the annotator needs to find and submit a link to a specific page from the website, add the [condition.same-domain](../reference/condition.same-domain.md) component. The component checks that the link is from the required domain.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBm5)
 
@@ -41,7 +41,7 @@ If this  template doesn't meet your needs, see other examples in this section.
 
 ## Add a field for selecting response options {#add-radio-group}
 
-If the user needs to click on the search link and answer a question, add the [field.radio-group](../reference/field.radio-group.md) field for selecting one of the response options.
+If the annotator needs to click on the search link and answer a question, add the [field.radio-group](../reference/field.radio-group.md) field for selecting one of the response options.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/TtSs6)
 
@@ -59,7 +59,7 @@ In this example, the following fields are added:
 
 ## Divide the task interface into columns {#add-layout-columns}
 
-Another version of the task, in which the user needs to find information about the organization.
+Another version of the task, in which the annotator needs to find information about the organization.
 
 In this example, the following fields are added:
 

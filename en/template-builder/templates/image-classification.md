@@ -60,7 +60,7 @@ Decide whether the annotator can select only one or multiple answer options:
 
 ## Add conditions {#dependencies}
 
-The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. For example, it lets the user select correct statements about an image only if the image loaded.
+The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. For example, it lets the annotator select correct statements about an image only if the image loaded.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC62t)
 

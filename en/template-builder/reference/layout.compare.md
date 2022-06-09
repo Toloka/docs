@@ -20,7 +20,7 @@ Differences from [layout.side-by-side](layout.side-by-side.md):
 || `items`<span style="color: red">\*</span> | _array_ | An array with properties of the elements being compared. Set the appearance of the component blocks. ||
 || `items[]` | _object_ | The compared element. ||
 || `items[].content` | _view_ | The content of the element that's being compared. Add images, audio recordings, videos, links, or other types of data. ||
-|| `items[].controls` | _view_ | Configure the input fields to make the user select an item. ||
+|| `items[].controls` | _view_ | Configure the input fields to make the annotator select an item. ||
 || `minWidth` | _number_ | Minimum width of the element in pixels. Default: 400 pixels. ||
 || `validation` | _condition_ | Validation based on condition. ||
 || `wideCommonControls` | _boolean_ | This property increases the common field size of the elements being compared.

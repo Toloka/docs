@@ -1,12 +1,12 @@
 # Configure keyboard shortcuts
 
-Add keyboard shortcuts for the frequently used interface elements. This will help users because keyboard combinations are somewhat faster than mouse clicks.
+Add keyboard shortcuts for the frequently used interface elements. This will help annotators because keyboard combinations are somewhat faster than mouse clicks.
 
 In [Toloka]({{ toloka-requester-index-dita }}), shortcuts are particularly helpful because annotators will do your tasks faster and you can pay less for them. If your project has a low score for “Interface usability“, adding shortcuts will help improve the rating.
 
 ## Shortcut features {#hotkeys-features}
 
-Shortcuts are digits or letters shown next to buttons. Shortcuts help users do an action by pressing a key.
+Shortcuts are digits or letters shown next to buttons. Shortcuts help annotators do an action by pressing a key.
 
 ![image](../_images/hotkeys-example.png)
 
@@ -38,7 +38,7 @@ In this example, pressing **P** triggers the [action.play-pause](../reference/ac
 
 {% note tip %}
 
-Mind the keyboard layout when setting up shortcuts: if you choose a character that looks similar in the Cyrillic and Latin layouts, this might confuse Russian users.
+Mind the keyboard layout when setting up shortcuts: if you choose a character that looks similar in the Cyrillic and Latin layouts, this might confuse Russian annotators.
 
 {% endnote %}
 
@@ -64,7 +64,7 @@ Put your reused code into `vars` so that you don't have to change the path in th
 
 ## Multiple actions {#bulk-actions}
 
-For the user to trigger multiple actions by pressing a button, add the [action.bulk](../reference/action.bulk.md) component. For example, you can use it to show multiple notifications.
+For the annotator to trigger multiple actions by pressing a button, add the [action.bulk](../reference/action.bulk.md) component. For example, you can use it to show multiple notifications.
 
 [View example in the sandbox](https://clck.ru/TR7bK).
 
@@ -74,7 +74,7 @@ If you use a condition ([helper.if](../reference/helper.if.md) or [helper.switch
 
 If you set up a shortcut without a condition, the shortcut will still work, but won't be visualized. This might cause errors.
 
-Here is an example of an error. In this example, if the user responds **Yes**, they see another question. But they can use a keyboard shortcut to respond to it, even if it's not shown in the interface.
+Here is an example of an error. In this example, if the annotator responds **Yes**, they see another question. But they can use a keyboard shortcut to respond to it, even if it's not shown in the interface.
 
 [View example with error in the sandbox](https://clck.ru/TR8kq).
 

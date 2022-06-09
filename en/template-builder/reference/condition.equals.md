@@ -19,7 +19,7 @@ How to pass a value:
 - [Get the value from your data](../operations/work-with-data.md).
 - Refer to another element using `$ref`.
 - Use [helpers](helpers.md) and [conditions](conditions.md) to get the value. ||
-  || `hint` | _string_ | Validation error message that the user will see ||
+  || `hint` | _string_ | Validation error message that the annotator will see ||
   || `to`<span style="color: red">\*</span> | _any_ | The value to compare with the original.
 
 How to pass a value:

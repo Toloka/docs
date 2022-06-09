@@ -5,7 +5,7 @@ This section describes how to add the area selection editor to an image and spee
 
 ## Add the area selection editor {#add-select}
 
-To allow users to select areas in pictures, use the [field.image-annotation](../reference/field.image-annotation.md) component.
+To allow annotators to select areas in pictures, use the [field.image-annotation](../reference/field.image-annotation.md) component.
 
 ```json
 {
@@ -31,7 +31,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
 
 - Rectangles
 
-  To allow users to select areas only with rectangles, add the `rectangle` key to the `shapes` property and set its value to `true`.
+  To allow annotators to select areas only with rectangles, add the `rectangle` key to the `shapes` property and set its value to `true`.
 
   ```json
   {
@@ -45,7 +45,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
 
 - Polygons
 
-  To allow users to select areas only with polygons, add the `polygon` key to the `shapes` property and set its value to `true`.
+  To allow annotators to select areas only with polygons, add the `polygon` key to the `shapes` property and set its value to `true`.
 
   ```json
   {
@@ -59,7 +59,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
 
 - Points
 
-  To allow users to select areas only with points, add the `point` key to the `shapes` property and set its value to `true`.
+  To allow annotators to select areas only with points, add the `point` key to the `shapes` property and set its value to `true`.
 
   ```json
   {
@@ -75,7 +75,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
 
 ## Classify areas {#labels}
 
-You can allow users to select objects by type. For example, you may want all cars selected in the picture to be labeled as one type, and all road signs as another.
+You can allow annotators to select objects by type. For example, you may want all cars selected in the picture to be labeled as one type, and all road signs as another.
 
 ```json
 {
@@ -93,7 +93,7 @@ You can allow users to select objects by type. For example, you may want all car
 
 [View example in the sandbox](https://clck.ru/TqvPR).
 
-For each new object of the `labels` property, a button is added to the editor that allows users to select the corresponding area type. Different values of the `value` property let users label areas with different colors.
+For each new object of the `labels` property, a button is added to the editor that allows annotators to select the corresponding area type. Different values of the `value` property let annotators label areas with different colors.
 
 
 ## Add keyboard shortcuts {#hotkeys}
@@ -122,7 +122,7 @@ If you install the shortcut plugin without assigning keys, they are assigned aut
 
 - Select labeling modes
 
-  You can let users switch between different labeling modes using shortcuts. Add the corresponding key to the `modes` property and assign a shortcut to it:
+  You can let annotators switch between different labeling modes using shortcuts. Add the corresponding key to the `modes` property and assign a shortcut to it:
   - `select`: For selecting shapes and points.
   - `point`: For selecting areas using points.
   - `rectangle`: For selecting areas using rectangles.
@@ -144,7 +144,7 @@ If you install the shortcut plugin without assigning keys, they are assigned aut
 
 - Confirm or cancel area creation
 
-  You can set up shortcuts to let users confirm or cancel area creation. Assign shortcuts to properties:
+  You can set up shortcuts to let annotators confirm or cancel area creation. Assign shortcuts to properties:
   - `confirm`: Confirm.
   - `cancel`: Cancel.
 
@@ -167,7 +167,7 @@ To create a template for area selection tasks, use the following components:
 - [field.image-annotation](../reference/field.image-annotation.md): To add the area selection editor.
 - [plugin.field.image-annotation.hotkeys](../reference/plugin.field.image-annotation.hotkeys.md): To add keyboard shortcuts.
 - [view.text](../reference/view.text.md): To add a description to the task.
-- [condition.required](../reference/condition.required.md): To make sure that the user selected at least one area.
+- [condition.required](../reference/condition.required.md): To make sure that the annotator selected at least one area.
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
 [View example in the sandbox](https://clck.ru/Tqvd5).

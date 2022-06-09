@@ -21,7 +21,7 @@ In [Toloka]({{ toloka-requester-index-dita }}), you can use conditions to automa
 
 To check that the data is filled in, add the [condition.required](../reference/condition.required.md) component.
 
-In this example, the user must fill in the text field, otherwise the “Submit” button won't work. The [condition.empty](../reference/condition.empty.md) component works the opposite way: it checks if the data is empty and returns `false` if the data has a value.
+In this example, the annotator must fill in the text field, otherwise the “Submit” button won't work. The [condition.empty](../reference/condition.empty.md) component works the opposite way: it checks if the data is empty and returns `false` if the data has a value.
 
 [View example in the sandbox](https://clck.ru/QR9Qq).
 
@@ -31,7 +31,7 @@ In this example, the user must fill in the text field, otherwise the “Submit�
 
 To check that the preset value and output value are equal, use the component [condition.equals](../reference/condition.equals.md).
 
-In this example, if the user responds “No”, a text entry field appears.
+In this example, if the annotator responds “No”, a text entry field appears.
 
 [View example in the sandbox](https://clck.ru/TR5Zy).
 
@@ -65,7 +65,7 @@ In this example, the uses has to do two actions: fill out the text field and cli
 
 To check that at least one of the conditions is met, list the conditions in the `condition` property of the [condition.any](../reference/condition.any.md) component.
 
-In this example, the user has to perform at least one of the two actions: select “Nothing is written there” or fill out the “What is written on the image?” field. The “Submit” button won't work until one of the conditions is met.
+In this example, the annotator has to perform at least one of the two actions: select “Nothing is written there” or fill out the “What is written on the image?” field. The “Submit” button won't work until one of the conditions is met.
 
 [View example in the sandbox](https://clck.ru/TR6Mk).
 
@@ -73,7 +73,7 @@ In this example, the user has to perform at least one of the two actions: select
 
 Some conditions work only with certain [components](../glossary.md#component-ru). For example, [condition.link-opened](../reference/condition.link-opened.md) works only with `view.link`.
 
-In this example, the user has to click the link in the interface, otherwise the “Submit” button won't work.
+In this example, the annotator has to click the link in the interface, otherwise the “Submit” button won't work.
 
 [View example in the sandbox](https://clck.ru/TR7KZ).
 

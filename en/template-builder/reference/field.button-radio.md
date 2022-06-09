@@ -15,7 +15,7 @@ The button size depends on the length of the text.
 || `type`<span style="color: red">\*</span> | "field.button-radio" | Set component type ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
-|| `disabled` | _boolean_ | This property prevents clicking the button. If the value is `true`, the button is not active (the user will not be able to click it). ||
+|| `disabled` | _boolean_ | This property prevents clicking the button. If the value is `true`, the button is not active (the annotator will not be able to click it). ||
 || `hint` | _string_ | Hint text. ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 

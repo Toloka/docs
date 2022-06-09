@@ -1,8 +1,8 @@
 # field.list
 
-A component that allows the user to add and remove list items, such as text fields to fill in.
+A component that allows the annotator to add and remove list items, such as text fields to fill in.
 
-This way you can allow the user to give multiple answers to a question.
+This way you can allow the annotator to give multiple answers to a question.
 
 [View example in the sandbox](https://clck.ru/asSUJ).
 
@@ -12,9 +12,9 @@ The list items can contain any component, including a list of other components. 
 
 ## Managing components
 
-To add a new list item, the user clicks the button. To remove an item, they click on the x on the right (it appears when hovering over a list item).
+To add a new list item, the annotator clicks the button. To remove an item, they click on the x on the right (it appears when hovering over a list item).
 
-To prevent the user from adding too many list items, set the maximum list length. You can also use the `editable` property to block users from changing a component, like when a certain event occurs.
+To prevent the annotator from adding too many list items, set the maximum list length. You can also use the `editable` property to block annotators from changing a component, like when a certain event occurs.
 
 ## Component properties {#properties}
 

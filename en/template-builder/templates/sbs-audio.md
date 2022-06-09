@@ -24,7 +24,7 @@ Take a look at the example: there are two audio tracks and buttons to choose an
 
 ## What else can be configured {#add-more}
 
-- To [check](../best-practices/conditions.md) whether the user watched the whole video, replace the [condition.played](../reference/condition.played.md) component with [condition.played-fully](../reference/condition.played-fully.md).
+- To [check](../best-practices/conditions.md) whether the annotator watched the whole video, replace the [condition.played](../reference/condition.played.md) component with [condition.played-fully](../reference/condition.played-fully.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tqtpk)
   
@@ -60,7 +60,7 @@ You can add a field with a source text using the [view.text](../reference/view
 
 ## Add a layout {#add-color}
 
-To enhance user experience, you can also highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the source text is highlighted with a blue border, and the buttons are highlighted with a yellow one.
+To enhance annotator experience, you can also highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the source text is highlighted with a blue border, and the buttons are highlighted with a yellow one.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TquFn)
 

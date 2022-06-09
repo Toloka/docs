@@ -2,7 +2,7 @@
 
 The component plays audio.
 
-Format support depends on the user's browser, OS, and device. We recommend using MP3.
+Format support depends on the annotator's browser, OS, and device. We recommend using MP3.
 
 ## Component properties {#properties}
 
