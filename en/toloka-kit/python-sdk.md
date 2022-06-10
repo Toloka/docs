@@ -1,11 +1,25 @@
 # Toloka Python SDK
 
+<style scoped>
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 30px;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+</style>
+
 Toloka provides access to its open source Python libraries: [Toloka-Kit](index.md) and [Crowd-Kit](../crowd-kit/index.md).
 
 These powerful software development kits make your work with Toloka much easier and provide various methods for interaction with Toloka API and its integration into your own Python applications.
 
-<div style="display: flex; align-items: stretch; padding: 50px 0 40px; gap: 60px;">
-    <div style="width: 50%;">
+<div class="grid-container">
+    <div class="grid-item">
         <h2><a href="./">Toloka-Kit</a></h2>
         <p>An open source Python library that allows you to access <a href="https://toloka.ai/docs/api/concepts/about.html">Toloka API</a> with the help of classes and methods that seamlessly integrate with your Python application.</p>
         <div style="display: flex;">
@@ -13,7 +27,7 @@ These powerful software development kits make your work with Toloka much easier 
             <p style="margin-left: auto;"><a style="display: flex; align-items: center;" href="https://github.com/Toloka/toloka-kit/tree/main/examples"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/jupyter.svg" alt="View integration examples" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Integration examples</a></p>
         </div>
     </div>
-    <div style="width: 50%;">
+    <div class="grid-item">
         <h2><a href="../crowd-kit/">Crowd-Kit</a></h2>
         <p>An open source Python library that implements commonly-used aggregation methods for crowdsourced annotation and offers relevant metrics and datasets.</p>
         <div style="display: flex;">
@@ -25,8 +39,8 @@ These powerful software development kits make your work with Toloka much easier 
 
 ## Related pages
 
-<div style="display: flex; align-items: stretch; padding: 10px 0 50px; gap: 30px;">
-    <div style="width: calc(100% / 3);">
+<div class="grid-container">
+    <div class="grid-item">
         <h3>Get started with Toloka</h3>
         <ul>
             <li><a href="https://toloka.ai/docs/guide/concepts/overview.html">How does Toloka work?</a></li>
@@ -34,14 +48,14 @@ These powerful software development kits make your work with Toloka much easier 
             <li><a href="https://toloka.ai/docs/guide/concepts/first-project.html">Your first project</a></li>
         </ul>
     </div>
-    <div style="width: calc(100% / 3);">
+    <div class="grid-item">
         <h3>API reference</h3>
         <ul>
             <li><a href="https://toloka.ai/docs/api/concepts/about.html">Toloka API</a></li>
             <li><a href="https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html">Ready-to-go API</a></li>
         </ul>
     </div>
-    <div style="width: calc(100% / 3);">
+    <div class="grid-item">
         <h3>Support</h3>
         <ul>
             <li><a href="https://github.com/Toloka/toloka-kit/issues">Toloka-Kit GitHub issues</a></li>
