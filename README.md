@@ -28,7 +28,7 @@ Before creating a pull request, build the docs locally for checking your changes
 
 3. Build the docs:
 
-   `yfm -i ./en/crowd-kit -o ./docs-gen`, where `en/crowd-kit` is a folder with the source texts you want to contribute to, `docs-gen` is a folder with the generated documentation.
+   `yfm -c .yfm -i ./en/crowd-kit -o ./docs-gen`, where `en/crowd-kit` is a folder with the source texts you want to contribute to, `docs-gen` is a folder with the generated documentation.
 
 4. Open the `index.html` file from the output folder (in our case it is `docs-gen`) in your favorite browser and see if everything is okay.
 
