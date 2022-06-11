@@ -1,16 +1,37 @@
 # Creating specifications
 
-A Toloka project must include specifications for [input and output data](../glossary.md#input-output-data). If you use Template Builder in the Toloka interface, the specification is created automatically.
+Project settings in Toloka must include specifications for the [input and output data](../glossary.md#input-output-data). If you use Template Builder in the Toloka interface, the specification is created automatically by default.
 
 {% note alert %}
 
-Creating a specification is in test mode, so double check the results. If you have any problems, please contact [support](../concepts/support.md).
+Specifications are currently created in test mode. After saving the project, check the input and output data specifications. If you have any problems, please contact [support](../concepts/support.md).
 
 {% endnote %}
 
+## Specification setting modes {#data-spec-mode}
+
+You can configure the specification automatically or manually. You can change the way the specification is configured using the **Define data specification manually** option.
+
+{% list tabs %}
+
+- Option disabled
+
+  The specifications of input and output data are generated automatically depending on the task interface settings.
+
+- Option enabled
+
+  You can configure the specification manually. In this case, automatic detection of input and output data doesn't work.
+  You may need to enable this option if:
+  * You don't want the specification version to be affected by changes in the instructions or other project fields.
+  * You have fields that you need but they become optional or are deleted after automatic generation.
+
+{% endlist %}
+
+  This option is disabled by default.
+
 ## Filling in input data {#input-data-create}
 
-Input data fields are created from the code on the **Example of input data** tab. Provide a detailed example to get a ready-to-use specification. If you have optional fields, include them also.
+If automatic generation of specifications is enabled, the input data fields are created from the configuration code. Provide a detailed example to get a ready-to-use specification. If you have optional fields, include them also.
 
 **Examples:**
 
@@ -79,14 +100,14 @@ Input data fields are created from the code on the **Example of input data** tab
 
 {% note info %}
 
-By default, all the input data fields are marked as required in the specification. To make the field optional, in the [data.input](work-with-data.md) configuration component specify the `default` property.
+By default, all the input data fields are marked as required in the specification. To make the field optional, specify the `default` property in the [data.input](work-with-data.md) configuration component.
 
 {% endnote %}
 
 
 ## Filling in output data {#output-data-create}
 
-The output data fields depend on the components that use `data.output` and values supported by it.
+If automatic generation of specifications is enabled, the output data fields are created from the configuration code. It takes into account the components that use `data.output` as well as the values supported by it.
 
 **Examples:**
 
@@ -223,7 +244,13 @@ If there are different types of values in the output, the **JSON** type will be 
 
 ## How to edit the specification {#manual-setting}
 
-There are two ways to edit a specification in project settings: you can do it either in regular mode or in JSON mode. JSON mode gives you more options — you can hide input data and use regular expressions to validate output data.
+{% note info %}
+
+Specification editing is available only when the **Define data specification manually** option is enabled.
+
+{% endnote %}
+
+There are two ways to edit the specification in project settings: using either regular mode or JSON mode. JSON mode gives you more options — you can hide input data and use regular expressions to validate output data.
 
 {% list tabs %}
 
@@ -320,7 +347,7 @@ There are two ways to edit a specification in project settings: you can do it ei
       "my_month_string": {
           "type": "string",
           "required": true,
-          "allowed_values": ["January", "February", "March", "April",, "May", "June", "July", "August", "September", "October" "November", "December"]
+          "allowed_values": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October" "November", "December"]
       }
       ```
 
@@ -453,6 +480,7 @@ There are two ways to edit a specification in project settings: you can do it ei
   {% endcut %}
   
 {% endlist %}
+
 
 {% cut "Explanations for configuring fields" %}
 
