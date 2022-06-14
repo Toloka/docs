@@ -2,7 +2,7 @@
 
 Box for entering multi-line text. Use in tasks that require an extended response. For single-line responses, use the [field.text](field.text.md) component.
 
-The size of the box does not automatically adjust to the length of the text. Users can change the height by dragging the lower-right corner. To change the default size of the box, use the `rows` property.
+The size of the box does not automatically adjust to the length of the text. Tolokers can change the height by dragging the lower-right corner. To change the default size of the box, use the `rows` property.
 
 Note that formatting is not available in the text box.
 
@@ -19,7 +19,7 @@ Note that formatting is not available in the text box.
 || `hint` | _string_ | Hint text. ||
 || `placeholder` | _string_ | A semi-transparent label that is shown when the box is empty. Use it to provide an example or a hint for the response. ||
 || `requiredMark` | _boolean_ | Show "\*" next to the label ||
-|| `resizable` | _boolean_ | Changing the box size. When set to `true` (the default value), the user can change the height. To prevent resizing, set the value to `false`. ||
+|| `resizable` | _boolean_ | Changing the box size. When set to `true` (the default value), a Toloker can change the height. To prevent resizing, set the value to `false`. ||
 || `rows` | _number_ | The height of the text box in lines. ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 

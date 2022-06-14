@@ -15,7 +15,7 @@ For this type of project, you can use the **Survey** template ([view code in the
 
 ## What else can be configured {#examples}
 
-- To let users enter long texts, replace the [field.textarea](../reference/field.textarea.md) component with [field.text](../reference/field.text.md).
+- To let Tolokers enter long texts, replace the [field.textarea](../reference/field.textarea.md) component with [field.text](../reference/field.text.md).
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvkY)
   

@@ -1,6 +1,6 @@
 # Inserting links
 
-In this section, you will learn how to add a link or a search engine query and how to check whether the user has clicked on them. Links can be opened when a certain event occurs. You can also group links together and set shortcuts for them to allow users to work faster.
+In this section, you will learn how to add a link or a search engine query and how to check whether a Toloker has clicked on them. Links can be opened when a certain event occurs. You can also group links together and set shortcuts for them to allow Tolokers to work faster.
 
 
 ## Insert a normal link {#view.link}
@@ -88,16 +88,16 @@ To assign a [shortcut](../best-practices/hotkeys.md) to a button, use the [plugi
 
 ## Check if the link was clicked on {#condition.link-opened}
 
-To check if the user clicked on the link, use the [condition.link-opened](../reference/condition.link-opened.md) component by specifying it in the `validation` property.
+To check if the Toloker clicked on the link, use the [condition.link-opened](../reference/condition.link-opened.md) component by specifying it in the `validation` property.
 
-Remember that the condition only works if a user clicks the link in the interface. If the link is opened via the address bar, the condition doesn't work.
+Remember that the condition only works if a Toloker clicks the link in the interface. If the link is opened via the address bar, the condition doesn't work.
 
 [View example in the sandbox](https://clck.ru/Tqux9).
 
 
 ## Add keyboard shortcuts {#hotkeys}
 
-You can add keyboard shortcuts for links. Shortcuts allow users to open links by pressing a keyboard key, which helps them work faster.
+You can add keyboard shortcuts for links. Shortcuts allow Tolokers to open links by pressing a keyboard key, which helps them work faster.
 
 To add a shortcut, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) plugin. Select a key and assign it to open the link, using the [action.open-link](../reference/action.open-link.md) component.
 
@@ -118,7 +118,7 @@ Learn more about shortcuts in [Configure keyboard shortcuts](../best-practices/
 
 ## Use event-driven links {#plugin.trigger}
 
-You can set a link to open when a certain event occurs. For example, when the user chooses an option, this can open a specific search query. To do this, use the [plugin.trigger](../reference/plugin.trigger.md) plugin.
+You can set a link to open when a certain event occurs. For example, when a Toloker chooses an option, this can open a specific search query. To do this, use the [plugin.trigger](../reference/plugin.trigger.md) plugin.
 
 [View example in the sandbox](https://clck.ru/Tqv5B).
 
