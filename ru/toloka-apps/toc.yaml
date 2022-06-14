@@ -50,7 +50,7 @@ items:
             name: Потоковая обработка элементов разметки
       - name: Справочник API
         items:
-          - href:
+          - href: https://toloka.ai/docs/toloka-apps/api/ref/index.html
             name: API Toloka Apps external
           - name: app
             items:
