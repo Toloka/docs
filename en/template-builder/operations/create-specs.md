@@ -75,9 +75,9 @@ If automatic generation of specifications is enabled, the input data fields are 
   {
       ...
       "registration_address": {
-          "country": "Russia",
-          "city": "Moscow",
-          "address": "Tverskaya str, 3-53"
+          "country": "UK",
+          "city": "London",
+          "address": "221b Baker St"
       }
   }
   ```
@@ -281,6 +281,18 @@ There are two ways to edit the specification in project settings: using either r
       ```
 
 
+  - Only Latin letters and numbers
+      ```json
+      "my_en_string": {
+          "type": "string",
+          "required": true,
+          "min_length": 10,
+          "max_length": 100,
+          "pattern": "[a-zA-Z0-9]+"
+      }
+      ```
+
+
   - Only Russian letters and numbers
       ```json
       "my_ru_string": {
@@ -292,16 +304,6 @@ There are two ways to edit the specification in project settings: using either r
       }
       ```
 
-  - Only Latin letters and numbers
-      ```json
-      "my_en_string": {
-          "type": "string",
-          "required": true,
-          "min_length": 10,
-          "max_length": 100,
-          "pattern": "[a-zA-Z0-9]+"
-      }
-      ```
 
   - Letters and characters without numbers
       ```json
@@ -319,7 +321,7 @@ There are two ways to edit the specification in project settings: using either r
       "my_url": {
           "type": "string",
           "required": true,
-          "pattern": "(?:http(?:s)?:\\/\\/)?(?:[a-zA-z-]+(\\.)+)*(?:yandex\\.ru){1}(\\/|\\/[a-zA-Z-\\._~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]+)?"
+          "pattern": "(?:http(?:s)?:\\/\\/)?(?:[a-zA-z-]+(\\.)+)*(?:google\\.com){1}(\\/|\\/[a-zA-Z-\\._~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]+)?"
       }
       ```
 
