@@ -8,7 +8,7 @@ Specifications are currently created in test mode. After saving the project, che
 
 {% endnote %}
 
-## Specification setting modes {#data-spec-mode}
+## Specification setting modes {#create_specs__data-spec-mode}
 
 You can configure the specification automatically or manually. You can change the way the specification is configured using the **Define data specification manually** option.
 
