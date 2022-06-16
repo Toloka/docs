@@ -6,10 +6,19 @@
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   gap: 30px;
 }
-
 .grid-item {
   display: flex;
   flex-direction: column;
+}
+@media only screen and (max-width: 1024px) {
+  h2 {
+    padding-top: 32px !important;
+    margin-top: 0 !important;
+  }
+  h3 {
+    padding-top: 16px !important;
+    margin-top: 0 !important;
+  }
 }
 </style>
 
