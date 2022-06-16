@@ -10,7 +10,7 @@ Specifications are currently created in test mode. After saving the project, che
 
 ## Specification setting modes {#create_specs__data-spec-mode}
 
-You can configure the specification automatically or manually. You can change the way the specification is configured using the **Define data specification manually** option.
+You can configure the specification automatically or manually. You can change the way the specification is configured using the **Define data specification manually** option. This option is disabled by default.
 
 {% list tabs %}
 
@@ -26,8 +26,6 @@ You can configure the specification automatically or manually. You can change th
   * You have fields that you need but they become optional or are deleted after automatic generation.
 
 {% endlist %}
-
-  This option is disabled by default.
 
 ## Filling in input data {#input-data-create}
 
