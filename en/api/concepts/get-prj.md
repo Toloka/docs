@@ -1,0 +1,44 @@
+# Get project properties
+
+Gets project properties.
+
+You can get the project ID from the [list of projects](get-prj-list.md).
+
+## Request {#request}
+
+{% list tabs %}
+
+- Production version
+
+	```json
+	GET https://toloka.yandex.com/api/v1/projects/<project_id>
+	Authorization: OAuth <OAuth token>
+	```
+
+- Sandbox
+
+	```json
+	GET https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
+	Authorization: OAuth <OAuth token>
+	```
+
+{% endlist %}
+
+## Path parameters {#path-params}
+
+Parameter | Overview
+----- | -----
+**project_id** | Project ID.
+
+
+## Headers {#headers}
+
+Title | Overview
+----- | -----
+**Authorization** | A token for account authorization. Add OAuth as a prefix.
+
+
+## Response {#response}
+
+Contains project properties in JSON format (see the [sample project](create-prj.md#body)).
+
