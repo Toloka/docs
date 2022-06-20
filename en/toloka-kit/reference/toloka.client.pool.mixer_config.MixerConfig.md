@@ -1,5 +1,5 @@
 # MixerConfig
-`toloka.client.pool.mixer_config.MixerConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.24/src/client/pool/mixer_config.py#L7)
+`toloka.client.pool.mixer_config.MixerConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/pool/mixer_config.py#L7)
 
 ```python
 MixerConfig(
@@ -22,7 +22,8 @@ MixerConfig(
 
 Parameters for automatically creating a task suite ("smart mixing").
 
-For more information about creating task see Toloka Requester's guide.
+
+For more information about creating task see Yandex.Toloka Requester's guide.
 
 ## Parameters Description
 
