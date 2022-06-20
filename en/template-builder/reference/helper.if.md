@@ -7,7 +7,7 @@ For example, if you want to conduct a survey, you can use the `helper.if` compon
 **How it works:**
 If the condition in `if` is true (returns `true`), the code specified in the `then` property will be executed. Otherwise (the condition is false and returns `false`) the code specified in `else` will be executed.
 
-The `else` property is optional. For example, let's say you ask the user "did you Like the image". You can make a comment field appear when a negative response is received, but nothing happens when a positive response is received.
+The `else` property is optional. For example, you ask a Toloker "do you like the image?". You can make a comment field appear when a negative response is selected. And if a positive response is selected then nothing happens.
 
 [View example in the sandbox](https://clck.ru/asSdk).
 

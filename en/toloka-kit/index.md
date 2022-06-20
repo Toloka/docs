@@ -19,7 +19,7 @@ To use the library you need to:
 * [Register](https://toloka.ai/docs/guide/concepts/access.html) as a requester in Toloka or in the Sandbox – the Toloka testing environment.
 * [Top up your account](https://toloka.ai/docs/guide/concepts/refill.html) or use a promo code **TOLOKAKIT1**. You can also test your pipelines in the Sandbox for free.
 
-## Support
+## Support and bug reports
 
-* Join the [slack community](https://toloka.ai/community).
-* [Contact support](https://toloka.ai/docs/guide/troubleshooting/support.html/?lang=en#troubleshooting__project-setting).
+* For support and reporting bugs please use the [Toloka-Kit bugreport](https://github.com/Toloka/toloka-kit/issues) page.
+* Join our English-speaking [slack community](https://toloka.ai/community).

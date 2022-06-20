@@ -1,6 +1,6 @@
 # List of views
 
-Use the components named `view.*` for the elements displayed in the interface, such as text, list, audio player, or image. The user can't change these components. Use the [data entry components](fields.md) (fields) where you want users to enter something.
+Use the components named `view.*` for the elements displayed in the interface, such as text, list, audio player, or image. A Toloker can't change these components. Use the [data entry components](fields.md) (fields) where you want Tolokers to enter something.
 
 | Component                                   | Description                                                                                                                     |
 | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- |

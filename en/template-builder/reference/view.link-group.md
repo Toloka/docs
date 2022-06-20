@@ -17,7 +17,7 @@ This only groups links, unlike [view.group](view.group.md).
 || `hint` | _string_ | Hint text. ||
 || `links`<span style="color: red">\*</span> | _array_ | Array of links that make up a group. ||
 || `links[]` | _object_ | Link parameters. ||
-|| `links[].content`<span style="color: red">\*</span> | _string_ | Link text that's displayed to the user. Unviewed links are blue and underlined, and clicked links are purple. ||
+|| `links[].content`<span style="color: red">\*</span> | _string_ | Link text that's displayed to a Toloker. Unviewed links are blue and underlined, and clicked links are purple. ||
 || `links[].theme` | _string_ | Defines the appearance of the link. If you specify `"theme": "primary"`, it's a button, otherwise it's a text link. ||
 || `links[].url`<span style="color: red">\*</span> | _string_ | Link address. Inserts a link with the search query when [helper. search-query](helper.search-query.md) is used. ||
 || `validation` | _condition_ | Validation based on condition. ||

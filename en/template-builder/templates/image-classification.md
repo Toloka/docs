@@ -24,7 +24,7 @@ For this type of project, you can use the **Image classification** template ([vi
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC54f)
 
-- To let annotators leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
+- To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC59c)
 
@@ -38,7 +38,7 @@ If these templates don't meet your needs, see other examples in this section.
 
 ## Other options for buttons {#mult-ans-options}
 
-Decide whether the annotator can select only one or multiple answer options:
+Decide whether a Toloker can select only one or multiple answer options:
 
 {% list tabs %}
 
@@ -60,7 +60,7 @@ Decide whether the annotator can select only one or multiple answer options:
 
 ## Add conditions {#dependencies}
 
-The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. For example, it lets the user select correct statements about an image only if the image loaded.
+The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. For example, it lets a Toloker select correct statements about an image only if the image is loaded.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC62t)
 
@@ -68,7 +68,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 #### Does the image match the search query
 
-Add a button that opens the search results and generate a search query link using the [helper.search-query](../reference/helper.search-query.md) component. To make sure that the annotator clicked on the link and checked its contents, configure validation, as in the example.
+Add a button that opens the search results and generate a search query link using the [helper.search-query](../reference/helper.search-query.md) component. To make sure that a Toloker clicked on the link and checked its contents, configure validation, as in the example.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC66Y)
 

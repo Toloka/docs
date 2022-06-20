@@ -4,7 +4,7 @@ If you want to insert some formatted text, table, or list, use the [view.markdow
 
 {% note info %}
 
-The [view.markdown](../reference/view.markdown.md) component is resource-intensive and may overload low-end user devices.
+The [view.markdown](../reference/view.markdown.md) component is resource-intensive and may overload low-end Toloker devices.
 
 Don't use this component to display plain text. If you need to display text without formatting, use the [view.text](../reference/view.text.md) component. Use [view.link](../reference/view.link.md) to insert a link and [view.image](../reference/view.image.md) to insert an image.
 
