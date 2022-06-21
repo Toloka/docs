@@ -29,3 +29,5 @@ Create projects faster with ready-made templates. Use standard templates or adap
 ## Texts
 
 - [Copywriting](copywriting.md)
+
+- [Side-by-side text comparison](sbs-text.md)

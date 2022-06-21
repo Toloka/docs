@@ -40,6 +40,8 @@ items:
         items:
           - href: templates/copywriting.md
             name: Копирайтинг
+          - href: templates/sbs-text.md
+            name: Попарное сравнение текста
   - name: Инструкции
     items:
       - href: operations/all.md
