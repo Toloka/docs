@@ -215,8 +215,6 @@ Toloker responses are returned in the `items` array in the following format:
 }
 ```
 
-Click on the parameter in the sample response to see its brief description.
-
 
 ## Learn more {#links-qs-results}
 

@@ -153,7 +153,7 @@ Use the `POST /api/v1/projects` method:
 {% endlist %}
 
 
-The example shows the basic parameters that are necessary to create a simple project. Click on the parameter to see its brief description. For a more detailed description of all request parameters, see [Create a project](create-prj.md).
+The example shows the basic parameters that are necessary to create a simple project. For a more detailed description of all request parameters, see [Create a project](create-prj.md).
 
 ### Response {#project-response}
 
@@ -357,7 +357,7 @@ Next, send a POST request to `/api/v1/pools`:
 
 {% endlist %}
 
-The example shows the basic parameters that are necessary to create a simple pool. Click on the parameter to see its brief description. For a more detailed description of all request parameters, see [Create a pool](create-pool.md).
+The example shows the basic parameters that are necessary to create a simple pool. For a more detailed description of all request parameters, see [Create a pool](create-pool.md).
 
 ### Response {#pool-response}
 
@@ -471,7 +471,7 @@ Next, send a POST request to `/api/v1/tasks`:
 
 {% endlist %}
 
-The example shows the basic parameters that are necessary to upload simple tasks. Click on the parameter to see its brief description. For a more detailed description of each task parameter, see [Create one or multiple tasks](create-task.md).
+The example shows the basic parameters that are necessary to upload simple tasks. For a more detailed description of each task parameter, see [Create one or multiple tasks](create-task.md).
 
 
 ## Start the pool {#pool-run}
