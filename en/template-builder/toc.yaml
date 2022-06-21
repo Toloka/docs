@@ -28,10 +28,14 @@ items:
         items:
           - href: templates/video-moderation.md
             name: Video analysis
+          - href: templates/sbs-video.md
+            name: Side-by-side video comparison
       - name: Images
         items:
           - href: templates/image-classification.md
             name: Image classification
+          - href: templates/sbs-image.md
+            name: Side-by-side image comparison
       - name: Texts
         items:
           - href: templates/copywriting.md

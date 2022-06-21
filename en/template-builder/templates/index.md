@@ -21,6 +21,7 @@ Create projects faster with ready-made templates. Use standard templates or adap
 ## Images
 
 - [Image classification](image-classification.md)
+- [Side-by-side image comparison](sbs-image.md)
 
 ## Texts
 

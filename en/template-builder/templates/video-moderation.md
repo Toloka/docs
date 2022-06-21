@@ -15,9 +15,6 @@ For this type of project, you can use the **Video moderation** template ([view c
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-
-
-
 ## What else can be configured {#add-more}
 
 - To [check](../best-practices/conditions.md) whether a Toloker watched the whole video, replace the [condition.played](../reference/condition.played.md) component with [condition.played-fully](../reference/condition.played-fully.md).
@@ -25,7 +22,6 @@ For this type of project, you can use the **Video moderation** template ([view c
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6SW)
 
 If this template doesn't meet your needs, see other examples in this section.
-
 
 ## Other options for buttons {#add-variants}
 
@@ -38,7 +34,7 @@ Decide whether a Toloker can select only one or multiple answer options:
   Add a group of checkboxes using the [field.checkbox-group](../reference/field.checkbox-group.md) component.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6Zo)
-  
+
 - One option (a radio button)
 
   The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2-4 short answer options.
@@ -54,7 +50,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 Add an image using the [view.image](../reference/view.image.md) component. Place the video next to the image using the [layout.columns](../reference/layout.columns.md) component.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6fw)
-  
+
 Place the video next to the text or audio using the [view.list](../reference/view.list.md) component.
 
 {% list tabs %}
@@ -64,13 +60,13 @@ Place the video next to the text or audio using the [view.list](../reference/vi
   Add the [view.text](../reference/view.text.md) component.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6jd)
-  
+
 - Compare audio tracks
 
   Add the [view.audio](../reference/view.audio.md) component.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6n2)
-  
+
 {% endlist %}
 
 ## Compare the video with search results {#compare-results}

@@ -28,10 +28,14 @@ items:
         items:
           - href: templates/video-moderation.md
             name: Оценка видео
+          - href: templates/sbs-video.md
+            name: Попарное сравнение видео
       - name: Изображения
         items:
           - href: templates/image-classification.md
             name: Классификация изображений
+          - href: templates/sbs-image.md
+            name: Попарное сравнение изображений
       - name: Тексты
         items:
           - href: templates/copywriting.md

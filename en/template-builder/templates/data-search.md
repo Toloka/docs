@@ -21,23 +21,22 @@ For this type of project, you can use the **Data search** template ([view code i
 - To let Tolokers enter long texts, add the [field.textarea](../reference/field.textarea.md) field.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQAkj)
-  
+
 - To let Tolokers enter numbers, add the [field.number](../reference/field.number.md) field.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQDQS)
-  
+
 - To let Tolokers search for files online, add the file selection field [field.file](../reference/field.file.md). For example, use this if they need to upload a photo with a certain object in it.
 
     In task verification mode, the uploaded images will appear automatically. You can view, rotate, and switch between images.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBXF)
-  
+
 - If a Toloker needs to find and submit a link to a specific page from the website, add the [condition.same-domain](../reference/condition.same-domain.md) component. The component checks that the link is from the required domain.
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBm5)
 
 If this  template doesn't meet your needs, see other examples in this section.
-
 
 ## Add a field for selecting response options {#add-radio-group}
 
