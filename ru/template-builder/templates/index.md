@@ -8,20 +8,24 @@
 
 - [Поиск данных в сети](data-search.md)
 
-## Видео
-
-- [Оценка видео](video-moderation.md)
-
-## Тексты
-
-- [Копирайтинг](copywriting.md)
-
 ## Аудио
 
 - [Транскрипция аудио](audio-transcript.md)
 
 - [Попарное сравнение аудио](sbs-audio.md)
 
+## Видео
+
+- [Оценка видео](video-moderation.md)
+
+- [Попарное сравнение видео](sbs-video.md)
+
 ## Изображения
 
 - [Классификация изображений](image-classification.md)
+
+- [Попарное сравнение изображений](sbs-image.md)
+
+## Тексты
+
+- [Копирайтинг](copywriting.md)

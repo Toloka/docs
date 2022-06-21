@@ -4,19 +4,15 @@ For this type of project, you can use the **Image classification** template ([vi
 
 {% cut "Components used in the example" %}
 
-
 - [view.image](../reference/view.image.md): Image.
 - [field.button-radio-group](../reference/field.button-radio-group.md): Buttons for answer options.
 - [condition.required](../reference/condition.required.md): Checks if at least one option is selected.
 - [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
 - [plugin.hotkeys](../reference/plugin.hotkeys.md): [Keyboard shortcuts](../best-practices/hotkeys.md).
 
-
 {% endcut %}
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
- 
-
 
 ## What else can be configured {#add-more}
 
@@ -32,9 +28,7 @@ For this type of project, you can use the **Image classification** template ([vi
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC5Jw)
 
-
 If these templates don't meet your needs, see other examples in this section.
-
 
 ## Other options for buttons {#mult-ans-options}
 
@@ -87,6 +81,5 @@ This is a more complex example that compares the image with the results of a sea
 - [layout.side-by-side](../reference/layout.side-by-side.md): Places the image and the search results window next to each other.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6L8)
-
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

@@ -4,7 +4,6 @@ For this type of project, you can use the **Copywriting** template ([view code i
 
 {% cut "Components used in the example" %}
 
-
 - [view.image](../reference/view.image.md): Image.
 - [layout.columns](../reference/layout.columns.md): Places the image in a separate column to the left of other interface elements.
 - [view.text](../reference/view.text.md): Shows the text from the task input data.
@@ -28,16 +27,13 @@ For this type of project, you can use the **Copywriting** template ([view code i
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC3wn)
 
-
 If this template doesn't meet your needs, see other examples in this section.
-
 
 ## Example without an image {#text-answer-only}
 
 A simplified example without an image or columns It can be used for tasks that don't require visual display, such as translations.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC3zu)
-
 
 ## Multiple columns {#several-columns}
 
@@ -46,7 +42,6 @@ To compare two texts, place them in adjacent columns using the [layout.columns]
 The [view.group](../reference/view.group.md) component adds frames around the texts to visually separate them from each other and make them easier to read.
 
 The third column in the example contains two input fields for Tolokers to write their text.
-
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC48n)
 
@@ -91,6 +86,5 @@ What's unique about this example is that a Toloker can add and remove text inpu
 In addition, the example checks that each line has at least three characters, including Russian or English letters and spaces. The condition is implemented using [condition.schema](../reference/condition.schema.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC4QG)
-
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
