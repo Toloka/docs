@@ -160,6 +160,7 @@ items:
           - name: Unblock access
             href: concepts/ban-delete.md    
   - name: HTTP proxy
+    hidden: true    
     items:
       - name: Overview
         href: concepts/httpproxy.md
