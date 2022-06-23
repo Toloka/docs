@@ -2,18 +2,18 @@
 
 {% include [index-abstract-quickstart](_includes/index/id-index/abstract-quickstart.md) %}
 
-## Choose a ready-to-go solution {#choose-app-project}
+## Choose a bespoke solution {#choose-app-project}
 
 1. Open the [page](https://toloka.yandex.com/requester/templates) with examples of tasks that are available in Toloka.
 1. Choose a solution that fits your task.
 
 ## Fill out a form {#set-application}
 
-Once you choose a ready-to-go solution, you need to fill out a form. In the form, you'll be requested any information that is necessary to create a project: its name, instructions, sample tasks, and so on.
+Once you choose a bespoke solution, you need to fill out a form. In the form, you'll be requested any information that is necessary to create a project: its name, instructions, sample tasks, and so on.
 
 It will take about 30 minutes to fill out the form. To make sure you get good results, fill out the application form carefully.
 
-Once you fill out the form, you'll see your project on the **Ready-to-go** tab in the **Pending** status. You don't have to wait until it's moderated and can immediately start uploading task items.
+Once you fill out the form, you'll see your project on the **Bespoke** tab in the **Pending** status. You don't have to wait until it's moderated and can immediately start uploading task items.
 
 {% cut "Task items" %}
 
@@ -25,13 +25,13 @@ A task item is a labeling unit – in other words, data uploaded to a batch. The
 
 {% note info %}
 
-Before uploading task items to a batch, you need to upload them to photo hosting or cloud storage. Learn more in the [Where to store data](cloud-storage.md) section.
+Before uploading task items to a batch, you need to upload them to photo hosting or cloud storage. Learn more in the [Where to store data](https://toloka.ai/docs/guide/concepts/cloud-storage.html) section.
 
 {% endnote %}
 
 Your items are uploaded to a batch. A batch is a set of data for labeling that you'll assign to performers at a time. You'll get labeling results separately for each batch, too.
 
-1. Select your project on the **Ready-to-go** tab.
+1. Select your project on the **Bespoke** tab.
 
 1. Click **Create batch**.
 
@@ -62,7 +62,7 @@ If there are errors in the project, its status changes to **Rejected**. No worri
 
 {% note tip %}
 
-If you need help with setting up your project, [contact us](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1).
+If you need help with setting up your project, [contact us](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
 
 {% endnote %}
 
@@ -74,9 +74,9 @@ If you need help with setting up your project, [contact us](https://toloka.ai/do
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "I didn't find a suitable ready-to-go solution" %}
+{% cut "I didn't find a suitable bespoke solution" %}
 
-If you can't find a solution that fits your goals, [contact us](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1).
+If you can't find a solution that fits your goals, [contact us](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
 
 {% endcut %}
 

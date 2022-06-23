@@ -66,23 +66,23 @@ default:
   ui_labs_applicationTemplates-modal-choose_app: Выбрать решение
   ui_labs_applicationTemplates-modal-price: за элемент разметки
   ui_labs_applicationTemplates-modal-price_info: Вы можете начать разметку с 1 элементом
-  ui_labs_applications-actionButtonText: Перейти в Ready-to-go-решения
+  ui_labs_applications-actionButtonText: Перейти в Bespoke-решения
   ui_labs_applications-createApplication: Создать проект
   ui_labs_applications-create_batch: Создать пакет
-  ui_labs_applications-emptyStateDescription: 'Ready-to-go-решения подходят вам, если:'
+  ui_labs_applications-emptyStateDescription: 'Bespoke-решения подходят вам, если:'
   ui_labs_applications-searchApplications: Поиск Apps
   ui_labs_applications-statuses-archive: Архивный
   ui_labs_applications-statuses-archived: Архивный
   ui_labs_applications-statuses-creating: В обработке
   ui_labs_applications-statuses-error: Отклонен
   ui_labs_applications-statuses-ready: Активный
-  ui_labs_applications_table-applications: Ready-to-go-проекты
-  ui_labs_applications_table-create_app_button: Выбрать Ready-to-go-решение
+  ui_labs_applications_table-applications: Bespoke-проекты
+  ui_labs_applications_table-create_app_button: Выбрать Bespoke-решение
   ui_labs_applications_table-created: Дата создания
   ui_labs_applications_table-items_failed: Не удалось добавить элементы разметки
   ui_labs_applications_table-name: Название
   ui_labs_applications_table-status: Статус
-  ui_labs_applications_table-template_type: Тип Ready-to-go-проекта
+  ui_labs_applications_table-template_type: Тип Bespoke-проекта
   ui_labs_applications_table-try_again: Добавить снова
   ui_labs_apps-forms--app-name-label: Название проекта
   ui_labs_apps-forms--app1--add-params-header: Добавьте параметры задания
@@ -895,12 +895,12 @@ default:
   ui_labs_create_application-create: Создать проект
   ui_labs_create_application-create_project: Создать проект
   ui_labs_create_application-created: Проект успешно создан
-  ui_labs_create_application-error-not_found-button_link: Выберите другое Ready-to-go-решение
+  ui_labs_create_application-error-not_found-button_link: Выберите другое Bespoke-решение
   ui_labs_create_application-form_not_valid: Невалидная форма создания проекта
   ui_labs_create_application-go_to_final: Перейти к Финальной проверке
   ui_labs_create_application-go_to_instruction: Перейти к Настройке инструкции
   ui_labs_create_application-if_you_need_help: Если вам нужна помощь,
-  ui_labs_create_application-select_template: Выбрать Ready-to-go-решение
+  ui_labs_create_application-select_template: Выбрать Bespoke-решение
   ui_labs_create_application-step_final_check: Финальная проверка
   ui_labs_create_application-step_instruction: Настройка инструкции
   ui_labs_create_application-step_setup: Настройка проекта
@@ -949,10 +949,10 @@ default:
   ui_labs_introducing_apps-modal-advantages_4: ''
   ui_labs_introducing_apps-modal-advantages_info: ''
   ui_labs_introducing_apps-modal-advantages_title: 'Вам стоит использовать его, если:'
-  ui_labs_introducing_apps-modal-create_app_project: Посмотреть все доступные Ready-to-go-решения
+  ui_labs_introducing_apps-modal-create_app_project: Посмотреть все доступные Bespoke-решения
   ui_labs_introducing_apps-modal-got_it: Понятно
   ui_labs_introducing_apps-modal-remind_later: Напомнить позже
-  ui_labs_introducing_apps-modal-title: 'Новое в Толоке: Ready-to-go Solutions'
+  ui_labs_introducing_apps-modal-title: 'Новое в Толоке: Bespoke Solutions'
   ui_labs_item-copy: Скопировать
   ui_labs_item-copy_success: Успешно скопировано
   ui_labs_item-markup_results: Результаты разметки в JSON
@@ -968,7 +968,7 @@ default:
   ui_labs_items_table-status-new: Загружен
   ui_labs_items_table-status-processing: Размечается
   ui_labs_items_table-status-stopped: Приостановлен
-  ui_labs_labs-app: Ready-to-go-проект
+  ui_labs_labs-app: Bespoke-проект
   ui_labs_labs-app_create: Создание проекта
   ui_labs_labs-apps: Apps β
   ui_labs_labs-batch: пакет данных
@@ -1247,7 +1247,7 @@ default:
   ui_requester_adp_st__SUBMITTED: Непроверенные
   ui_requester_advanced_suite_sizing_params__hide_list: Скрыть дополнительные настройки
   ui_requester_advanced_suite_sizing_params__show_list: Показать дополнительные настройки
-  ui_requester_applicationTemplates-description: Подходят только для Ready-to-go-проектов
+  ui_requester_applicationTemplates-description: Подходят только для Bespoke-проектов
   ui_requester_applicationTemplates-modal-bannerText1Form: форму
   ui_requester_applicationTemplates-modal-dataFormat: Формат данных для разметки
   ui_requester_applicationTemplates-modal-downloadSampleData: Скачать пример данных
@@ -1261,12 +1261,12 @@ default:
   ui_requester_applicationTemplates-solutions: Apps
   ui_requester_applicationTemplates-tasksExamples: Примеры задач
   ui_requester_applications-statuses-draft: Черновик
-  ui_requester_applications_table-app_project: Ready-to-go
+  ui_requester_applications_table-app_project: Bespoke
   ui_requester_applications_table-batch: __count__ пакет данных
   ui_requester_applications_table-comment: Приватный комментарий
   ui_requester_applications_table-name: Название
   ui_requester_applications_table-pool: __count__ пул
-  ui_requester_applications_table-pro_project: Customizable
+  ui_requester_applications_table-pro_project: Self-service
   ui_requester_applications_table-processing: В обработке
   ui_requester_approvedAssignmentsRate: процент принятых ответов
   ui_requester_areas_highlight_title: Выделение областей прямоугольниками под ключ
@@ -1512,9 +1512,9 @@ default:
   ui_requester_deposit-amount: Сумма перевода, $
   ui_requester_dfda2d5b699d8bbd2a4d09344a7f826c: Ошибка при сохранении спецификаций
   ui_requester_discovery-for_advanced_users: Для продвинутых пользователей
-  ui_requester_discovery-menu-customizable: Customizable
+  ui_requester_discovery-menu-customizable: Self-service
   ui_requester_discovery-menu-new: Новое
-  ui_requester_discovery-menu-ready-to-go: Ready-to-go
+  ui_requester_discovery-menu-ready-to-go: Bespoke
   ui_requester_discovery-preset_sidebar-choose_solution: Выбрать решение
   ui_requester_discovery-preset_sidebar-demo_btn: Запустить демо
   ui_requester_discovery-preset_sidebar-download_sample_files: Скачать примеры
@@ -1532,10 +1532,10 @@ default:
   ui_requester_discovery-preset_sidebar-success_stories: Успешные бизнес-кейсы
   ui_requester_discovery-preset_sidebar-use_template: Использовать решение
   ui_requester_discovery-preset_sidebar-view_all_btn: Посмотреть все
-  ui_requester_discovery-tabs-apps: Ready-to-go
-  ui_requester_discovery-tabs-diy: Customizable
-  ui_requester_discovery-type-title-customizable: Customizable-решения
-  ui_requester_discovery-type-title-ready-to-go: Ready-to-go-решения
+  ui_requester_discovery-tabs-apps: Bespoke
+  ui_requester_discovery-tabs-diy: Self-service
+  ui_requester_discovery-type-title-customizable: Self-service-решения
+  ui_requester_discovery-type-title-ready-to-go: Bespoke-решения
   ui_requester_dl_case__audio_transcription: Расшифровка аудио
   ui_requester_dl_case__bounding_box: Разметка прямоугольниками
   ui_requester_dl_case__image_classification: Классификация изображений
@@ -1752,9 +1752,9 @@ default:
   ui_requester_newProjects-itemsTemplate-searchProjects: Поиск проектов
   ui_requester_newProjects-itemsTemplate-searchProjectsAndApps: Искать по проектам
   ui_requester_newProjects-nothingFoundPlaceholder-nothingFound: Ничего не найдено
-  ui_requester_newProjects-projectTypes-apps: Ready-to-go
-  ui_requester_newProjects-projectTypes-pro: Customizable
-  ui_requester_newProjects-sidebar-applications: Ready-to-go
+  ui_requester_newProjects-projectTypes-apps: Bespoke
+  ui_requester_newProjects-projectTypes-pro: Self-service
+  ui_requester_newProjects-sidebar-applications: Bespoke
   ui_requester_newProjects-sidebar-docs-buttonText: Узнать больше
   ui_requester_newProjects-sidebar-onlyActive: Только с активными пулами или пакетами
   ui_requester_newProjects-sidebar-ownership-clear: Сбросить
@@ -1766,7 +1766,7 @@ default:
   ui_requester_newProjects-sidebar-ownership-showAll: Показать всё
   ui_requester_newProjects-sidebar-ownership-showLess: Свернуть
   ui_requester_newProjects-sidebar-ownership-wholeCompany: Вся компания
-  ui_requester_newProjects-sidebar-projects: Customizable
+  ui_requester_newProjects-sidebar-projects: Self-service
   ui_requester_newProjects-sidebar-status: Статус
   ui_requester_newProjects-sidebar-type: Тип
   ui_requester_newProjects-statuses-active: Активный
@@ -1774,7 +1774,7 @@ default:
   ui_requester_newProjects-statuses-draft: Черновик
   ui_requester_newProjects-statuses-pending: На рассмотрении
   ui_requester_newProjects-statuses-rejected: Отклонен
-  ui_requester_new_expenses_app_project: Ready-to-go-проект
+  ui_requester_new_expenses_app_project: Bespoke-проект
   ui_requester_new_expenses_blocked: Зарезервированные деньги
   ui_requester_new_expenses_bonus: Бонус
   ui_requester_new_expenses_column_fee: Комиссия, $

@@ -1,13 +1,13 @@
 # About
 
-Ready-to-go is useful if you need to quickly solve a problem and don't want to spend time on running a project on the platform itself.
+Bespoke solutions are useful if you need to quickly solve a problem and don't want to spend time on running a project on the platform itself.
 
 Select the problem to solve, fill out an application form for creating a project, and upload your data: the service will configure the project for you, create a task interface, and find performers. All you have to do is run your project and get the labeling results.
 
 #|
 ||**[Getting started](concepts/quickstart.md)**
 
-Create your first ready-to-go project
+Create your first bespoke project
 
 **[Downloading the results](concepts/download-results.md)**
 
@@ -29,9 +29,9 @@ HTTP API method descriptions
 
 **[API quick start](https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html)**
 
-Step-by-step instructions for running a sample ready-to-go project
+Step-by-step instructions for running a sample bespoke project
 
-**[Support](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1)**
+**[Support](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1)**
 
 If you have any issues, contact us||
 |#

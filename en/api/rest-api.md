@@ -22,31 +22,17 @@
 }
 </style>
 
-Manage customizable projects and ready-to-go solutions using Toloka API. Integrate Toloka methods into your own applications and automate your interaction with the Toloka platform.
+Manage projects using Toloka API. Integrate Toloka methods into your own applications and automate your interaction with the Toloka platform.
 
-<div class="grid-container">
-    <div class="grid-item">
-        <h2><a href="https://toloka.ai/docs/api/concepts/about.html">Toloka API</a></h2>
-        <p>Get access to customizable projects with the help of Toloka API. Manage projects, pool, upload tasks, and get the results.</p>
-        <ul>
-            <li><a href="https://toloka.ai/docs/api/concepts/access.html">Accessing the API</a></li>
-            <li><a href="https://toloka.ai/docs/api/concepts/quickstart.html">Quick start</a></li>
-            <li><a href="https://toloka.ai/docs/api/concepts/project.html">Projects</a></li>
-            <li><a href="https://toloka.ai/docs/api/concepts/pool.html">Pools</a></li>
-            <li><a href="https://toloka.ai/docs/api/concepts/download-tasks.html">Tasks</a></li>
-        </ul>
-    </div>
-    <div class="grid-item">
-        <h2><a href="https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html">Ready-to-go API</a></h2>
-        <p>Ready-to-go solutions API has all the means to run your project and get the labeling results programmatically.</p>
-        <ul>
-            <li><a href="https://toloka.ai/docs/toloka-apps/api/concepts/authorization.html">Accessing the API</a></li>
-            <li><a href="https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html">Quick start</a></li>
-            <li><a href="https://toloka.ai/docs/toloka-apps/api/concepts/streaming-items.html">Stream processing of task items</a></li>
-            <li><a href="https://toloka.ai/docs/toloka-apps/api/ref/index.html">API reference</a></li>
-        </ul>
-    </div>
-</div>
+## [Toloka API](https://toloka.ai/docs/api/concepts/about.html)
+
+Get access to projects with the help of Toloka API. Manage projects, pool, upload tasks, and get the results.
+
+- [Accessing the API](https://toloka.ai/docs/api/concepts/access.html)
+- [Quick start](https://toloka.ai/docs/api/concepts/quickstart.html)
+- [Projects](https://toloka.ai/docs/api/concepts/project.html)
+- [Pools](https://toloka.ai/docs/api/concepts/pool.html)
+- [Tasks](https://toloka.ai/docs/api/concepts/download-tasks.html)
 
 ## Related pages
 
@@ -57,24 +43,16 @@ Manage customizable projects and ready-to-go solutions using Toloka API. Integra
             <li><a href="https://toloka.ai/docs/guide/concepts/overview.html">How does Toloka work?</a></li>
             <li><a href="https://toloka.ai/docs/guide/concepts/access.html">Registration</a></li>
             <li><a href="https://toloka.ai/docs/guide/concepts/first-project.html">Your first project</a></li>
+            <li><a href="https://toloka.ai/docs/guide/concepts/data-security.html">Data security</a></li>
         </ul>
     </div>
     <div class="grid-item">
-        <h3>Customizable projects</h3>
+        <h3>Projects</h3>
         <ul>
             <li><a href="https://toloka.ai/docs/guide/concepts/main-steps.html">Starting and tuning a project</a></li>
             <li><a href="https://toloka.ai/docs/guide/concepts/pool-main.html">Managing a pool</a></li>
             <li><a href="https://toloka.ai/docs/guide/concepts/pool.html">Adding tasks to a pool</a></li>
             <li><a href="https://toloka.ai/docs/guide/concepts/result-of-eval.html">Receiving responses</a></li>
-        </ul>
-    </div>
-    <div class="grid-item">
-        <h3>Ready-to-go solutions</h3>
-        <ul>
-            <li><a href="https://toloka.ai/en/docs/toloka-apps/concepts/quickstart">Getting started</a></li>
-            <li><a href="https://toloka.ai/en/docs/toloka-apps/concepts/product-search-relevance">Product search relevance</a></li>
-            <li><a href="https://toloka.ai/en/docs/toloka-apps/concepts/add-task">Uploading task items</a></li>
-            <li><a href="https://toloka.ai/en/docs/toloka-apps/concepts/download-results">Downloading the results</a></li>
         </ul>
     </div>
 </div>

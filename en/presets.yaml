@@ -73,7 +73,7 @@ default:
   ui_labs_application-show_errors: Show errors
   ui_labs_application-unarchive: Unarchive
   ui_labs_application-unarchive_modal_title: Unarchive project?
-  ui_labs_applicationTemplates-intranetInfo: Ready-to-go solutions are available only
+  ui_labs_applicationTemplates-intranetInfo: Bespoke solutions are available only
     on the intranet
   ui_labs_applicationTemplates-modal-choose_app: Choose solution
   ui_labs_applicationTemplates-modal-price: per item
@@ -84,22 +84,22 @@ default:
   ui_labs_applications-bullet3: You want to get your data labeled for a fixed price
   ui_labs_applications-createApplication: Create project
   ui_labs_applications-create_batch: Create batch
-  ui_labs_applications-emptyStateDescription: 'Ready-to-go solutions work great if:'
+  ui_labs_applications-emptyStateDescription: 'Bespoke solutions work great if:'
   ui_labs_applications-emptyStateTitle: Launch your data labeling faster and easier
-    with ready-to-go solutions
-  ui_labs_applications-searchApplications: Search ready-to-go solutions
+    with bespoke solutions
+  ui_labs_applications-searchApplications: Search bespoke solutions
   ui_labs_applications-statuses-archive: Archived
   ui_labs_applications-statuses-archived: Archived
   ui_labs_applications-statuses-creating: Pending
   ui_labs_applications-statuses-error: Rejected
   ui_labs_applications-statuses-ready: Active
-  ui_labs_applications_table-applications: Ready-to-go projects
+  ui_labs_applications_table-applications: Bespoke projects
   ui_labs_applications_table-create_app_button: Choose solution
   ui_labs_applications_table-created: Created
   ui_labs_applications_table-items_failed: Couldn't add items
   ui_labs_applications_table-name: Title
   ui_labs_applications_table-status: Status
-  ui_labs_applications_table-template_type: Type of ready-to-go project
+  ui_labs_applications_table-template_type: Type of bespoke project
   ui_labs_applications_table-try_again: Try again
   ui_labs_apps-forms--app-name-hint: 'Briefly describe the task. Example: "Rate how
     much you like the picture"'
@@ -1717,7 +1717,7 @@ default:
   ui_labs_create_application-cancel_modal_continue: Stay and continue
   ui_labs_create_application-cancel_modal_quit: Quit
   ui_labs_create_application-cancel_modal_text: '&lt;0&gt;All data will be lost. &lt;/0&gt;
-    &lt;1&gt;You''ll be able to save ready-to-go projects as drafts in upcoming product
+    &lt;1&gt;You''ll be able to save bespoke projects as drafts in upcoming product
     versions&lt;/1&gt;'
   ui_labs_create_application-cancel_modal_title: Quit project creation?
   ui_labs_create_application-contact_us: contact us
@@ -1728,11 +1728,11 @@ default:
   ui_labs_create_application-error-exceeded_apps_limit: You exceeded the limit for
     creating projects. Please wait until our team verifies one of your projects, or
     try again in an hour
-  ui_labs_create_application-error-not_found-button_link: Explore other ready-to-go
+  ui_labs_create_application-error-not_found-button_link: Explore other bespoke
     solutions
   ui_labs_create_application-error-not_found-recommendation: '&lt;0&gt;You can explore
-    other ready-to-go solutions or contact our &lt;/0&gt;&lt;1&gt;support team&lt;/1&gt;'
-  ui_labs_create_application-error-not_found-title: Sorry, this ready-to-go solution
+    other bespoke solutions or contact our &lt;/0&gt;&lt;1&gt;support team&lt;/1&gt;'
+  ui_labs_create_application-error-not_found-title: Sorry, this bespoke solution
     is not available in Toloka right now
   ui_labs_create_application-error-validation_error: A project cannot be created.
     Some required information is missing or incomplete. Please check your form and
@@ -1805,11 +1805,11 @@ default:
   ui_labs_introducing_apps-modal-advantages_4: Project management without the need
     for your supervision.
   ui_labs_introducing_apps-modal-advantages_title: How it works
-  ui_labs_introducing_apps-modal-create_app_project: See all available Ready-to-go
+  ui_labs_introducing_apps-modal-create_app_project: See all available bespoke
     solutions
   ui_labs_introducing_apps-modal-got_it: Got it
   ui_labs_introducing_apps-modal-remind_later: Remind me later
-  ui_labs_introducing_apps-modal-title: Introducing ready-to-go solutions
+  ui_labs_introducing_apps-modal-title: Introducing bespoke solutions
   ui_labs_item-copy: Copy
   ui_labs_item-copy_success: Сopied successfully
   ui_labs_item-markup_results: Labeling results in JSON
@@ -1825,7 +1825,7 @@ default:
   ui_labs_items_table-status-new: New
   ui_labs_items_table-status-processing: Processing
   ui_labs_items_table-status-stopped: Paused
-  ui_labs_labs-app: Ready-to-go project
+  ui_labs_labs-app: Bespoke project
   ui_labs_labs-app_create: Project creation
   ui_labs_labs-apps: Apps β
   ui_labs_labs-batch: batch
@@ -2263,7 +2263,7 @@ default:
   ui_requester_adp_st__SUBMITTED: Submitted
   ui_requester_advanced_suite_sizing_params__hide_list: Hide advanced settings
   ui_requester_advanced_suite_sizing_params__show_list: Show advanced settings
-  ui_requester_applicationTemplates-description: Only suitable for creating Ready-to-go
+  ui_requester_applicationTemplates-description: Only suitable for creating bespoke
     projects
   ui_requester_applicationTemplates-modal-bannerText: If this app doesn't meet your
     needs, please fill out the form. We'll use your suggestions when developing new
@@ -2274,15 +2274,15 @@ default:
   ui_requester_applicationTemplates-modal-bannerText1Form: form
   ui_requester_applicationTemplates-modal-dataFormat: The format of data to be labeled
   ui_requester_applicationTemplates-modal-downloadSampleData: Download sample data
-  ui_requester_applicationTemplates-modal-hint1: Create an Ready-to-go project and
+  ui_requester_applicationTemplates-modal-hint1: Create a bespoke project and
     describe the task for performers
   ui_requester_applicationTemplates-modal-hint2: Upload the data to be labeled while
-    the Ready-to-go project is being reviewed
+    the bespoke project is being reviewed
   ui_requester_applicationTemplates-modal-hint2Description: The review may take up
     to 40 minutes
   ui_requester_applicationTemplates-modal-hint3: Run the task
   ui_requester_applicationTemplates-modal-hint3Description: If we find errors in your
-    Ready-to-go project, you'll have to fix them first
+    bespoke project, you'll have to fix them first
   ui_requester_applicationTemplates-modal-hint4: Download the labeling results
   ui_requester_applicationTemplates-modal-howItWorks: How does it work?
   ui_requester_applicationTemplates-modal-restrictions: Limitations
@@ -2290,12 +2290,12 @@ default:
   ui_requester_applicationTemplates-solutions: Apps
   ui_requester_applicationTemplates-tasksExamples: Task examples
   ui_requester_applications-statuses-draft: Draft
-  ui_requester_applications_table-app_project: Ready-to-go
+  ui_requester_applications_table-app_project: Bespoke
   ui_requester_applications_table-batch: __count__ batch
   ui_requester_applications_table-comment: Private comment
   ui_requester_applications_table-name: Title
   ui_requester_applications_table-pool: __count__ pool
-  ui_requester_applications_table-pro_project: Customizable
+  ui_requester_applications_table-pro_project: Self-service
   ui_requester_applications_table-processing: Processing
   ui_requester_approvedAssignmentsRate: accepted responses (%)
   ui_requester_areas_highlight_description: To save time, have Toloka Labs handle
@@ -2605,9 +2605,9 @@ default:
   ui_requester_deposit-amount: Transfer amount, $
   ui_requester_dfda2d5b699d8bbd2a4d09344a7f826c: Error saving description
   ui_requester_discovery-for_advanced_users: For advanced users
-  ui_requester_discovery-menu-customizable: Customizable
+  ui_requester_discovery-menu-customizable: Self-service
   ui_requester_discovery-menu-new: New
-  ui_requester_discovery-menu-ready-to-go: Ready-to-go
+  ui_requester_discovery-menu-ready-to-go: Bespoke
   ui_requester_discovery-preset_sidebar-choose_solution: Choose solution
   ui_requester_discovery-preset_sidebar-demo_btn: Launch demo
   ui_requester_discovery-preset_sidebar-download_sample_files: Download sample files
@@ -2631,10 +2631,10 @@ default:
   ui_requester_discovery-preset_sidebar-success_stories: Success stories
   ui_requester_discovery-preset_sidebar-use_template: Use solution
   ui_requester_discovery-preset_sidebar-view_all_btn: View all
-  ui_requester_discovery-tabs-apps: Ready-to-go
-  ui_requester_discovery-tabs-diy: Customizable
-  ui_requester_discovery-type-title-customizable: Customizable solutions
-  ui_requester_discovery-type-title-ready-to-go: Ready-to-go solutions
+  ui_requester_discovery-tabs-apps: Bespoke
+  ui_requester_discovery-tabs-diy: Self-service
+  ui_requester_discovery-type-title-customizable: Self-service solutions
+  ui_requester_discovery-type-title-ready-to-go: Bespoke solutions
   ui_requester_distribution_editor__interval__to_validation: The value must be an
     integer greater than the left bound of the interval
   ui_requester_dl_case__audio_transcription: Audio transcription
@@ -2907,12 +2907,12 @@ default:
   ui_requester_newProjects-nothingFoundPlaceholder-nothingFound: Nothing found
   ui_requester_newProjects-nothingFoundPlaceholder-nothingFoundDescription: Try other
     search terms or check for typos
-  ui_requester_newProjects-projectTypes-apps: Ready-to-go
-  ui_requester_newProjects-projectTypes-pro: Customizable
-  ui_requester_newProjects-sidebar-applications: Ready-to-go
+  ui_requester_newProjects-projectTypes-apps: Bespoke
+  ui_requester_newProjects-projectTypes-pro: Self-service
+  ui_requester_newProjects-sidebar-applications: Bespoke
   ui_requester_newProjects-sidebar-docs-buttonText: Learn more
   ui_requester_newProjects-sidebar-docs-text: Automate batch uploads — try the API
-    for Ready-to-go projects
+    for bespoke projects
   ui_requester_newProjects-sidebar-onlyActive: Only with active pools or packages
   ui_requester_newProjects-sidebar-ownership-clear: Reset filters
   ui_requester_newProjects-sidebar-ownership-onlyMine: Only me
@@ -2923,7 +2923,7 @@ default:
   ui_requester_newProjects-sidebar-ownership-showAll: Show all
   ui_requester_newProjects-sidebar-ownership-showLess: Show less
   ui_requester_newProjects-sidebar-ownership-wholeCompany: Everyone in the company
-  ui_requester_newProjects-sidebar-projects: Customizable
+  ui_requester_newProjects-sidebar-projects: Self-service
   ui_requester_newProjects-sidebar-status: Status
   ui_requester_newProjects-sidebar-type: Type
   ui_requester_newProjects-statuses-active: Active
@@ -2931,7 +2931,7 @@ default:
   ui_requester_newProjects-statuses-draft: Draft
   ui_requester_newProjects-statuses-pending: Pending
   ui_requester_newProjects-statuses-rejected: Rejected
-  ui_requester_new_expenses_app_project: Ready-to-go project
+  ui_requester_new_expenses_app_project: Bespoke project
   ui_requester_new_expenses_blocked: Reserved money
   ui_requester_new_expenses_blocked_hint: Funds reserved for the tasks waiting to
     be reviewed

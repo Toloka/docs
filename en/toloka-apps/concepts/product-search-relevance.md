@@ -1,6 +1,6 @@
 # Product search relevance
 
-This Ready-to-go solution helps you solve product search relevance task.
+This Bespoke solution helps you solve product search relevance task.
 
 ## Use cases {#use_cases}
 
@@ -16,7 +16,7 @@ Choose one of available types for your input data. Supported data formats with e
 
 {% note info %}
 
-This feature is disabled by default. [Contact our support team](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1) to get access to it.
+This feature is disabled by default. [Contact our support team](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1) to get access to it.
 
 {% endnote %}
 
@@ -145,7 +145,7 @@ You may use screenshots of pages instead of links to them.
 
 ## How to run the solution {#how-to-use}
 
-1. Go to **Projects → Create a project → Ready-to-go**.
+1. Go to **Projects → Create a project → Bespoke**.
 
 1. In the **Images** section select the **Product Search Relevance** solution.
 
@@ -165,7 +165,7 @@ You may use screenshots of pages instead of links to them.
 
 ## More features {#another}
 
-You may [ask to add more features](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1) to the project:
+You may [ask to add more features](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1) to the project:
 
 - To search a product on your platform with our search engine.
 - To use meta information. For example, to handle the location of a performer.
@@ -179,6 +179,6 @@ Item count | Base price per labeled item
 Up to 10,000 | $0.25
 10,001 - 100,000 | $0.20
 100,001 - 500,000 | $0.17
-Over 500,000 | [Contact support](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1) to get special offer.
+Over 500,000 | [Contact support](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1) to get special offer.
 
 {% include [contact-support](_includes/contact-support.md) %}

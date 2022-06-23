@@ -1,1 +1,1 @@
-[![Написать в службу поддержки](../../_images/contact-support.svg)](https://toloka.ai/ru/docs/guide/troubleshooting/support.html#troubleshooting__new_1)
+[![Написать в службу поддержки](../../_images/contact-support.svg)](../../concepts/support.md)

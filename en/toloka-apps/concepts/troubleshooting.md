@@ -1,9 +1,9 @@
 # Troubleshooting
 
-## Ready-to-go {#app-projects}
+## Bespoke {#app-projects}
 
-I didn't find a suitable ready-to-go solution
-: If you can't find a solution that fits your goals, [contact us](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1).
+I didn't find a suitable bespoke solution
+: If you can't find a solution that fits your goals, [contact us](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
 
 ## Labeling results {#results}
 

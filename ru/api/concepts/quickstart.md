@@ -21,7 +21,7 @@
 1. Разместите задания.
 
     - [Выберите платформу и получите токен](qs-placement.md).
-    - [Создайте customizable-проект](qs-placement.md) (`POST /api/v1/projects`).
+    - [Создайте проект](qs-placement.md) (`POST /api/v1/projects`).
     - [Добавьте пул](qs-placement.md) (`POST /api/v1/pools`).
     - [Загрузите задания](qs-placement.md) (`POST /api/v1/tasks`).
     - [Запустите (откройте) пул](qs-placement.md) (`POST /api/v1/pools/<pool_id>/open`).

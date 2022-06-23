@@ -69,7 +69,7 @@ default:
   ui_labs_applicationTemplates-modal-choose_app: Выбрать решение
   ui_labs_applicationTemplates-modal-price: за элемент разметки
   ui_labs_applicationTemplates-modal-price_info: Вы можете начать разметку с 1 элементом
-  ui_labs_applications-actionButtonText: Перейти в Ready-to-go-решения
+  ui_labs_applications-actionButtonText: Перейти в Bespoke-решения
   ui_labs_applications-bullet1: Вы хотите получить результаты быстро и в хорошем качестве
   ui_labs_applications-bullet2: Вы не хотите тратить много времени на создание и запуск
     проекта
@@ -77,7 +77,7 @@ default:
     цене
   ui_labs_applications-createApplication: Создать проект
   ui_labs_applications-create_batch: Создать пакет
-  ui_labs_applications-emptyStateDescription: 'Ready-to-go-решения подходят вам, если:'
+  ui_labs_applications-emptyStateDescription: 'Bespoke-решения подходят вам, если:'
   ui_labs_applications-emptyStateTitle: Запускайте разметку данных быстрее и проще
     с помощью App Services
   ui_labs_applications-searchApplications: Поиск Apps
@@ -86,13 +86,13 @@ default:
   ui_labs_applications-statuses-creating: В обработке
   ui_labs_applications-statuses-error: Отклонен
   ui_labs_applications-statuses-ready: Активный
-  ui_labs_applications_table-applications: Ready-to-go-проекты
-  ui_labs_applications_table-create_app_button: Выбрать Ready-to-go-решение
+  ui_labs_applications_table-applications: Bespoke-проекты
+  ui_labs_applications_table-create_app_button: Выбрать Bespoke-решение
   ui_labs_applications_table-created: Дата создания
   ui_labs_applications_table-items_failed: Не удалось добавить элементы разметки
   ui_labs_applications_table-name: Название
   ui_labs_applications_table-status: Статус
-  ui_labs_applications_table-template_type: Тип Ready-to-go-проекта
+  ui_labs_applications_table-template_type: Тип Bespoke-проекта
   ui_labs_applications_table-try_again: Добавить снова
   ui_labs_apps-forms--app-name-hint: 'Кратко опишите вашу задачу, например: «Оцените
     привлекательность картинки»'
@@ -1650,7 +1650,7 @@ default:
   ui_labs_create_application-cancel_modal_continue: Остаться и продолжить
   ui_labs_create_application-cancel_modal_quit: Выйти
   ui_labs_create_application-cancel_modal_text: '&lt;0&gt;Все данные будут удалены.&lt;/0&gt;
-    &lt;1&gt;В следующих обновлениях продукта вы сможете сохранять черновики Ready-to-go-проектов
+    &lt;1&gt;В следующих обновлениях продукта вы сможете сохранять черновики Bespoke-проектов
     &lt;/1&gt;'
   ui_labs_create_application-cancel_modal_title: Выйти из создания проекта?
   ui_labs_create_application-contact_us: свяжитесь с нами
@@ -1662,11 +1662,11 @@ default:
   ui_labs_create_application-error-exceeded_apps_limit: Превышен лимит на создание
     проектов. Подождите, пока один из ваших проектов будет принят или попробуйте создать
     новый через час
-  ui_labs_create_application-error-not_found-button_link: Выберите другое Ready-to-go-решение
+  ui_labs_create_application-error-not_found-button_link: Выберите другое Bespoke-решение
   ui_labs_create_application-error-not_found-recommendation: '&lt;0&gt;Пожалуйста,
-    попробуйте выбрать другое Ready-to-go-решение или напишите в &lt;/0&gt;&lt;1&gt;Команду
+    попробуйте выбрать другое Bespoke-решение или напишите в &lt;/0&gt;&lt;1&gt;Команду
     Поддержки&lt;/1&gt;'
-  ui_labs_create_application-error-not_found-title: Извините, это Ready-to-go-решение
+  ui_labs_create_application-error-not_found-title: Извините, это Bespoke-решение
     сейчас недоступно в Толоке
   ui_labs_create_application-error-validation_error: Проект не может быть создан.
     Форма заполнена не полностью. Пожалуйста, проверьте форму и повторите попытку
@@ -1674,7 +1674,7 @@ default:
   ui_labs_create_application-go_to_final: Перейти к Финальной проверке
   ui_labs_create_application-go_to_instruction: Перейти к Настройке инструкции
   ui_labs_create_application-if_you_need_help: Если вам нужна помощь,
-  ui_labs_create_application-select_template: Выбрать Ready-to-go-решение
+  ui_labs_create_application-select_template: Выбрать Bespoke-решение
   ui_labs_create_application-step_final_check: Финальная проверка
   ui_labs_create_application-step_instruction: Настройка инструкции
   ui_labs_create_application-step_setup: Настройка проекта
@@ -1741,13 +1741,13 @@ default:
   ui_labs_introducing_apps-modal-advantages_4: ''
   ui_labs_introducing_apps-modal-advantages_info: ''
   ui_labs_introducing_apps-modal-advantages_title: 'Вам стоит использовать его, если:'
-  ui_labs_introducing_apps-modal-create_app_project: Посмотреть все доступные Ready-to-go-решения
+  ui_labs_introducing_apps-modal-create_app_project: Посмотреть все доступные Bespoke-решения
   ui_labs_introducing_apps-modal-got_it: Понятно
-  ui_labs_introducing_apps-modal-info_text_beginning: Мы запустили Ready-to-go Solutions
+  ui_labs_introducing_apps-modal-info_text_beginning: Мы запустили Bespoke Solutions
     — набор готовых решений для самых популярных задач. Он автоматизирует разметку
     и экономит время
   ui_labs_introducing_apps-modal-remind_later: Напомнить позже
-  ui_labs_introducing_apps-modal-title: 'Новое в Толоке: Ready-to-go Solutions'
+  ui_labs_introducing_apps-modal-title: 'Новое в Толоке: Bespoke Solutions'
   ui_labs_item-copy: Скопировать
   ui_labs_item-copy_success: Успешно скопировано
   ui_labs_item-markup_results: Результаты разметки в JSON
@@ -1763,7 +1763,7 @@ default:
   ui_labs_items_table-status-new: Загружен
   ui_labs_items_table-status-processing: Размечается
   ui_labs_items_table-status-stopped: Приостановлен
-  ui_labs_labs-app: Ready-to-go-проект
+  ui_labs_labs-app: Bespoke-проект
   ui_labs_labs-app_create: Создание проекта
   ui_labs_labs-apps: Apps β
   ui_labs_labs-batch: пакет данных
@@ -2194,7 +2194,7 @@ default:
   ui_requester_adp_st__SUBMITTED: Непроверенные
   ui_requester_advanced_suite_sizing_params__hide_list: Скрыть дополнительные настройки
   ui_requester_advanced_suite_sizing_params__show_list: Показать дополнительные настройки
-  ui_requester_applicationTemplates-description: Подходят только для Ready-to-go-проектов
+  ui_requester_applicationTemplates-description: Подходят только для Bespoke-проектов
   ui_requester_applicationTemplates-modal-bannerText: Если это приложение не подходит,
     заполните форму. Мы учтём ваши пожелания при разработке новых решений
   ui_requester_applicationTemplates-modal-bannerText1: Если это приложение не подходит,
@@ -2202,15 +2202,15 @@ default:
   ui_requester_applicationTemplates-modal-bannerText1Form: форму
   ui_requester_applicationTemplates-modal-dataFormat: Формат данных для разметки
   ui_requester_applicationTemplates-modal-downloadSampleData: Скачать пример данных
-  ui_requester_applicationTemplates-modal-hint1: Создайте Ready-to-go-проект и опишите
+  ui_requester_applicationTemplates-modal-hint1: Создайте Bespoke-проект и опишите
     задание исполнителям
   ui_requester_applicationTemplates-modal-hint2: Загрузите данные для разметки, пока
-    Ready-to-go-проект проверяется
+    Bespoke-проект проверяется
   ui_requester_applicationTemplates-modal-hint2Description: Проверка может занять
     до 40 минут
   ui_requester_applicationTemplates-modal-hint3: Запустите задание
   ui_requester_applicationTemplates-modal-hint3Description: Если мы найдем ошибки
-    в Ready-to-go-проекте, то сначала нужно будет их исправить
+    в Bespoke-проекте, то сначала нужно будет их исправить
   ui_requester_applicationTemplates-modal-hint4: Скачайте результаты разметки
   ui_requester_applicationTemplates-modal-howItWorks: Как это работает
   ui_requester_applicationTemplates-modal-restrictions: Ограничения
@@ -2218,12 +2218,12 @@ default:
   ui_requester_applicationTemplates-solutions: Apps
   ui_requester_applicationTemplates-tasksExamples: Примеры задач
   ui_requester_applications-statuses-draft: Черновик
-  ui_requester_applications_table-app_project: Ready-to-go
+  ui_requester_applications_table-app_project: Bespoke
   ui_requester_applications_table-batch: __count__ пакет данных
   ui_requester_applications_table-comment: Приватный комментарий
   ui_requester_applications_table-name: Название
   ui_requester_applications_table-pool: __count__ пул
-  ui_requester_applications_table-pro_project: Customizable
+  ui_requester_applications_table-pro_project: Self-service
   ui_requester_applications_table-processing: В обработке
   ui_requester_approvedAssignmentsRate: процент принятых ответов
   ui_requester_areas_highlight_description: Чтобы сэкономить время, закажите выделение
@@ -2532,9 +2532,9 @@ default:
   ui_requester_deposit-amount: Сумма перевода, $
   ui_requester_dfda2d5b699d8bbd2a4d09344a7f826c: Ошибка при сохранении спецификаций
   ui_requester_discovery-for_advanced_users: Для продвинутых пользователей
-  ui_requester_discovery-menu-customizable: Customizable
+  ui_requester_discovery-menu-customizable: Self-service
   ui_requester_discovery-menu-new: Новое
-  ui_requester_discovery-menu-ready-to-go: Ready-to-go
+  ui_requester_discovery-menu-ready-to-go: Bespoke
   ui_requester_discovery-preset_sidebar-choose_solution: Выбрать решение
   ui_requester_discovery-preset_sidebar-demo_btn: Запустить демо
   ui_requester_discovery-preset_sidebar-download_sample_files: Скачать примеры
@@ -2556,10 +2556,10 @@ default:
   ui_requester_discovery-preset_sidebar-success_stories: Успешные бизнес-кейсы
   ui_requester_discovery-preset_sidebar-use_template: Использовать решение
   ui_requester_discovery-preset_sidebar-view_all_btn: Посмотреть все
-  ui_requester_discovery-tabs-apps: Ready-to-go
-  ui_requester_discovery-tabs-diy: Customizable
-  ui_requester_discovery-type-title-customizable: Customizable-решения
-  ui_requester_discovery-type-title-ready-to-go: Ready-to-go-решения
+  ui_requester_discovery-tabs-apps: Bespoke
+  ui_requester_discovery-tabs-diy: Self-service
+  ui_requester_discovery-type-title-customizable: Self-service-решения
+  ui_requester_discovery-type-title-ready-to-go: Bespoke-решения
   ui_requester_distribution_editor__interval__to_validation: Значение должно быть
     целым числом, превышающим левую границу интервала
   ui_requester_dl_case__audio_transcription: Расшифровка аудио
@@ -2839,12 +2839,12 @@ default:
   ui_requester_newProjects-nothingFoundPlaceholder-nothingFound: Ничего не найдено
   ui_requester_newProjects-nothingFoundPlaceholder-nothingFoundDescription: Попробуйте
     искать по другим ключевым словам или проверьте наличие опечаток
-  ui_requester_newProjects-projectTypes-apps: Ready-to-go
-  ui_requester_newProjects-projectTypes-pro: Customizable
-  ui_requester_newProjects-sidebar-applications: Ready-to-go
+  ui_requester_newProjects-projectTypes-apps: Bespoke
+  ui_requester_newProjects-projectTypes-pro: Self-service
+  ui_requester_newProjects-sidebar-applications: Bespoke
   ui_requester_newProjects-sidebar-docs-buttonText: Узнать больше
   ui_requester_newProjects-sidebar-docs-text: Настройте автоматическую отправку заданий
-    на разметку с помощью API Ready-to-go-решений
+    на разметку с помощью API Bespoke-решений
   ui_requester_newProjects-sidebar-onlyActive: Только с активными пулами или пакетами
   ui_requester_newProjects-sidebar-ownership-clear: Сбросить
   ui_requester_newProjects-sidebar-ownership-onlyMine: Только я
@@ -2855,7 +2855,7 @@ default:
   ui_requester_newProjects-sidebar-ownership-showAll: Показать всё
   ui_requester_newProjects-sidebar-ownership-showLess: Свернуть
   ui_requester_newProjects-sidebar-ownership-wholeCompany: Вся компания
-  ui_requester_newProjects-sidebar-projects: Customizable
+  ui_requester_newProjects-sidebar-projects: Self-service
   ui_requester_newProjects-sidebar-status: Статус
   ui_requester_newProjects-sidebar-type: Тип
   ui_requester_newProjects-statuses-active: Активный
@@ -2863,7 +2863,7 @@ default:
   ui_requester_newProjects-statuses-draft: Черновик
   ui_requester_newProjects-statuses-pending: На рассмотрении
   ui_requester_newProjects-statuses-rejected: Отклонен
-  ui_requester_new_expenses_app_project: Ready-to-go-проект
+  ui_requester_new_expenses_app_project: Bespoke-проект
   ui_requester_new_expenses_blocked: Зарезервированные деньги
   ui_requester_new_expenses_blocked_hint: Деньги, зарезервированные на задания на
     отложенной приемке

@@ -4,13 +4,13 @@ Batch for labeling
 
 : A batch of data that you send for labeling at a time. The batch consists of task items.
 
-Ready-to-go project
+Bespoke project
 
-: A ready-to-go project is based on a ready-made solution with the parameters that you specified. The interface and quality controls are pre-configured, decomposition is already done, and everything is ready to use: all you need is to upload task items to batches and send them for labeling.
+: A bespoke project is based on a ready-made solution with the parameters that you specified. The interface and quality controls are pre-configured, decomposition is already done, and everything is ready to use: all you need is to upload task items to batches and send them for labeling.
 
-Ready-to-go solution
+Bespoke solution
 
-: A ready-to-go solution is an example of a standard task that you can solve using Toloka. Unlike [customizable project](https://toloka.ai/docs/guide/concepts/overview.html#project) templates, you don't have to set up everything yourself.
+: A bespoke solution is an example of a standard task that you can solve using Toloka. Unlike [self-service project](https://toloka.ai/ru/docs/guide/concepts/overview.html#project) templates, you don't have to set up everything yourself.
 
 Task item
 

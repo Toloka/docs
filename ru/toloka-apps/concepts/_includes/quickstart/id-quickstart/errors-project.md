@@ -7,6 +7,6 @@
 
 {% note info %}
 
-Если вам требуется помощь в настройке проекта, [свяжитесь с нами](https://toloka.ai/ru/docs/guide/troubleshooting/support.html#troubleshooting__new_1).
+Если вам требуется помощь в настройке проекта, [свяжитесь с нами](https://toloka.ai/ru/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
 
 {% endnote %}
