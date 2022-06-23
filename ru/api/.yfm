@@ -1,0 +1,22 @@
+allowHTML: true
+
+docs-viewer:
+  project-name: toloka api
+  show-revision: false
+  releasers:
+  - 
+
+  index-page:
+    hidden: false
+    title: Толока API
+    description: API Толоки позволяет создавать или удалять customizable-проекты, максимально точно настраивать и получать их списки.
+    url:
+      testing: https://testing.toloka.ai/ru/docs/api/
+      production: https://toloka.ai/ru/docs/api/
+
+  feedback:
+    notifications:
+    interval: weekly
+    receivers:
+      - 
+

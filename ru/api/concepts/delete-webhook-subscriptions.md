@@ -1,0 +1,39 @@
+# Удалить подписку
+
+Удаляет подписку.
+
+## Запрос {#request}
+
+{% list tabs %}
+
+- Боевая версия
+
+  ```json
+  DELETE https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+  Authorization: OAuth <OAuth token>
+  ```
+
+- Песочница
+
+  ```json
+  DELETE https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+  Authorization: OAuth <OAuth token>
+  ```
+{% endlist %}
+
+## Path-параметры {#path-params}
+
+Параметр | Описание
+----- | -----
+**subscription_id** | Идентификатор подписки.
+
+
+## Заголовки {#headers}
+
+{% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
+
+
+## Ответ {#response}
+
+Если запрос выполнен успешно, сервер возвращает HTTP-статус выполнения операции: «204 No Content» или «404 Not Found».
+

@@ -1,0 +1,93 @@
+default:
+  requester: 'https://toloka.ai/docs/guide/?lang=en'
+  requester-access: 'https://toloka.ai/docs/guide/concepts/access.html?lang=en'
+  requester-attachments: 'https://toloka.ai/docs/guide/concepts/advanced-features-attach.html'
+  requester-aggregations: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html'
+  requester-js-class-task: 'https://toloka.ai/docs/guide/concepts/js/task.html'
+  requester-result: 'https://toloka.ai/docs/guide/concepts/result-of-eval.html?'
+  requester-quality: 'https://toloka.ai/docs/guide/concepts/check-performers.html'
+  requester-skills: 'https://toloka.ai/docs/guide/concepts/nav.html'
+  requester-skills-global: 'https://toloka.ai/docs/guide/concepts/nav-cross-project.html'
+  requester-assign-skills: 'https://toloka.ai/docs/guide/concepts/nav-assign.html'
+  requester-users: 'https://toloka.ai/docs/guide/concepts/users.html'
+  requester-pool-main: 'https://toloka.ai/docs/guide/concepts/pool-main.html?lang=en'
+  requester-main-steps: 'https://toloka.ai/docs/guide/concepts/main-steps.html?lang=en'
+  requester-dynamic-pricing: >-
+    https://toloka.ai/docs/guide/concepts/dynamic-pricing.html?lang=en#dynamic-pricing__section_ucl_3hl_vlb
+  requester-task-upload: 'https://toloka.ai/docs/guide/concepts/task_upload.html?lang=en'
+  requester-train: 'https://toloka.ai/docs/guide/concepts/train.html?lang=en'
+  requester-result-aggregation: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html?lang=en'
+  requester-troubleshooting: 'https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html?lang=en'
+  requester-support: >-
+    https://toloka.ai/docs/guide/troubleshooting/support.html/?lang=en#troubleshooting__project-setting
+  requester-image-annotation: >-
+    https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/?lang=en
+  requester-project-languages: 'https://toloka.ai/ru/docs/guide/concepts/project-languages.html?lang=en'
+  requester-bonus: 'https://toloka.ai/docs/guide/concepts/bonus.html?lang=en'
+  requester-ban: 'https://toloka.ai/docs/guide/concepts/ban.html?lang=en'
+  requester-prj: 'https://toloka.ai/docs/guide/concepts/project.html?lang=en'
+  requester-ban-platform: 'https://toloka.ai/docs/guide/concepts/ban.html?lang=en#ban__ban-platform'
+  requester-interface-translate: >-
+    https://toloka.ai/docs/guide/concepts/project-languages.html?lang=en#project-languages__interface-translate
+  requester-messaging: 'https://toloka.ai/docs/guide/concepts/messaging.html#private'
+  requester-help: >-
+    https://toloka.ai/docs/guide/troubleshooting/support.html?lang=en#troubleshooting__help
+  requester-refill: 'https://toloka.ai/docs/guide/concepts/refill.html?lang=en'
+  requester-instruction: 'https://toloka.ai/docs/guide/concepts/instruction.html?lang=en'
+  requester-html: 'https://toloka.ai/docs/guide/concepts/spec.html#interface-section?lang=en'
+  requester-solution-architecture: 'https://toloka.ai/docs/guide/concepts/solution-architecture.html?lang=en'
+  requester-filters: 'https://toloka.ai/docs/guide/concepts/filters.html?lang=en'
+  requester-overlap: 'https://toloka.ai/docs/guide/concepts/overlap-faq.html?lang=en'
+  requester-dynamic-overlap: 'https://toloka.ai/docs/guide/concepts/dynamic-overlap.html?lang=en'
+  requester-proxy: >-
+    https://toloka.ai/docs/guide/concepts/prepare-data.html?lang=en#prepare-data__connect
+  requester-escaping: 'https://toloka.ai/docs/guide/concepts/pool_csv.html?lang=en#pool_csv__string'
+  requester-mixing: >-
+    https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html?lang=en#distribute-tasks-by-pages__smart-mixing
+  requester-aggregation: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html?lang=en'
+  requester-random-check: >-
+    https://toloka.ai/docs/guide/concepts/selective-mvote.html#selective-mvote__theory?lang=en
+  requester-speed-quality-balance: 'https://toloka.ai/docs/guide/concepts/adjust.html?lang=en'
+  tb-help: 'https://toloka.ai/docs/template-builder/index.html/?lang=en'
+  toloka-web-register: 'https://toloka.ai/tolokers/docs/web/register.html#register'
+  sandbox-profile: 'https://sandbox.toloka.yandex.com/requester/profile'
+  requester-profile-integration: 'https://toloka.yandex.com/requester/profile/integration'
+  sandbox-requester-profile-integration: 'https://sandbox.toloka.yandex.com/requester/profile/integration'
+  requester-main: 'https://toloka.yandex.com/for-requesters?lang=en'
+  requester-sandbox: 'https://sandbox.toloka.yandex.com/for-requesters?lang=en'
+  sandbox-requester: 'https://sandbox.toloka.yandex.com/requester'
+  sandbox: 'https://sandbox.toloka.yandex.com'
+  sandbox-workers: 'https://sandbox.toloka.yandex.com/requester/workers'
+  toloka-profile: 'https://toloka.yandex.ru/requester/profile'
+  dg-regions: 'https://tech.yandex.com/xml/doc/dg/reference/regions-docpage/'
+  rfc4122: 'https://tools.ietf.org/html/rfc4122'
+  uadetector-dev-category: >-
+    http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/ReadableDeviceCategory.Category.html
+  uadetector-os-family: >-
+    http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/OperatingSystemFamily.html
+  uadetector-useragent-type: >-
+    http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentType.html
+  uadetector-useragent-family: >-
+    http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentFamily.html
+  iso-search: 'https://www.iso.org/obp/ui/#search'
+  iso-lang: 'https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes'
+  handlebarsjs-com: 'http://handlebarsjs.com/'
+  toloka-kit-doc: 'https://toloka.ai/docs/toloka-kit/'
+  tk-create-task: >-
+    https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task
+  tk-create-tasks: >-
+    https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks
+  tk-create-tasks-async: >-
+    https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks_async
+  tk-create-tasks-suite: >-
+    https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suite
+  tk-create-tasks-suites: >-
+    https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites
+  tk-create-tasks-suites-async: >-
+    https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites_async
+  crowd-kit: 'https://github.com/Toloka/crowd-kit'
+  toloka-kit: 'https://github.com/Toloka/toloka-kit'
+internal:
+  audience: internal
+external:
+  audience: external
