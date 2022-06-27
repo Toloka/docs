@@ -1,6 +1,9 @@
 title: Toloka API
 href: index.md
 items:
+  - name: Toloka REST API
+    href: rest-api.md
+    hidden: true
   - name: Accessing the API
     href: concepts/access.md
   - name: Basic concepts
@@ -96,71 +99,71 @@ items:
       - name: Skills
         items:
           - name: Overview
-            href: concepts/skill.md    
+            href: concepts/skill.md
           - name: Create a skill
-            href: concepts/create-skill.md    
+            href: concepts/create-skill.md
           - name: Edit a skill
-            href: concepts/edit-skill.md    
+            href: concepts/edit-skill.md
           - name: Get the list of skills
-            href: concepts/get-skill-list.md    
+            href: concepts/get-skill-list.md
           - name: Get the skill ID
-            href: concepts/get-skill.md    
+            href: concepts/get-skill.md
           - name: Set the skill value
-            href: concepts/set-skill.md    
+            href: concepts/set-skill.md
           - name: Get a list of Toloker skills
-            href: concepts/get-user-skill-list.md    
+            href: concepts/get-user-skill-list.md
           - name: Get a Toloker's skill value
-            href: concepts/get-user-skill.md    
+            href: concepts/get-user-skill.md
           - name: Remove a skill for a Toloker
-            href: concepts/delete-skill.md    
+            href: concepts/delete-skill.md
       - name: Quality control rules
         items:
           - name: Overview
-            href: concepts/quality_control.md    
+            href: concepts/quality_control.md
           - name: Control tasks
-            href: concepts/goldenset.md    
+            href: concepts/goldenset.md
           - name: Majority vote
-            href: concepts/mv.md    
+            href: concepts/mv.md
           - name: Entering captchas
-            href: concepts/captcha.md    
+            href: concepts/captcha.md
           - name: Compensation amount
-            href: concepts/earn_limit.md    
-          - name: Skipped assignments 
-            href: concepts/skipped.md    
+            href: concepts/earn_limit.md
+          - name: Skipped assignments
+            href: concepts/skipped.md
           - name: Number of tasks completed
-            href: concepts/completed.md    
+            href: concepts/completed.md
           - name: Fast responses
-            href: concepts/fast.md    
+            href: concepts/fast.md
           - name: Rejected tasks
-            href: concepts/accept_ban.md    
+            href: concepts/accept_ban.md
           - name: Processing rejected and accepted assignments
-            href: concepts/reassessment.md    
+            href: concepts/reassessment.md
           - name: Recompletion of assignments
-            href: concepts/restore-task-overlap.md    
+            href: concepts/restore-task-overlap.md
       - name: Filters
         items:
           - name: Overview
-            href: concepts/filters.md    
+            href: concepts/filters.md
           - name: Filter by profile data
-            href: concepts/filter-profile.md    
+            href: concepts/filter-profile.md
           - name: Filter by computed data
-            href: concepts/filter-computed.md    
+            href: concepts/filter-computed.md
           - name: Filter by skills
-            href: concepts/filter-skill.md    
+            href: concepts/filter-skill.md
       - name: Block access to tasks
         items:
           - name: Overview
-            href: concepts/ban.md    
+            href: concepts/ban.md
           - name: Block access to tasks
-            href: concepts/ban-create.md    
+            href: concepts/ban-create.md
           - name: Get a list of bans
-            href: concepts/ban-get-list.md    
+            href: concepts/ban-get-list.md
           - name: Get information about a ban
-            href: concepts/ban-get-info.md    
+            href: concepts/ban-get-info.md
           - name: Unblock access
-            href: concepts/ban-delete.md    
+            href: concepts/ban-delete.md
   - name: HTTP proxy
-    hidden: true    
+    hidden: true
     items:
       - name: Overview
         href: concepts/httpproxy.md
@@ -174,7 +177,7 @@ items:
         href: concepts/httpproxy-delete.md
   - name: Ways to upload tasks
     href: concepts/download-tasks.md
-    
+
   - name: Tasks
     items:
       - name: Overview
@@ -208,75 +211,75 @@ items:
       - name: Change task suite priority
         href: concepts/edit-order.md
       - name: Stop assigning a task suite
-        href: concepts/set-min-suite-overlap.md        
+        href: concepts/set-min-suite-overlap.md
   - name: Tracking operations
     items:
       - name: Overview
-        href: concepts/operations.md        
+        href: concepts/operations.md
       - name: Get the list of operations
-        href: concepts/get-operations-list.md        
+        href: concepts/get-operations-list.md
       - name: Get operation details
-        href: concepts/get-operation.md        
+        href: concepts/get-operation.md
       - name: Get the operation log
-        href: concepts/get-operation-log.md        
+        href: concepts/get-operation-log.md
   - name: Getting responses
     items:
       - name: Overview
-        href: concepts/get-response.md        
+        href: concepts/get-response.md
       - name: Get responses
-        href: concepts/result.md        
+        href: concepts/result.md
       - name: Get response properties
-        href: concepts/get-assignment-id.md        
+        href: concepts/get-assignment-id.md
       - name: Files in responses
         items:
           - name: Overview
-            href: concepts/attachments.md            
+            href: concepts/attachments.md
           - name: Get the list of files
-            href: concepts/get-attachment-list.md            
+            href: concepts/get-attachment-list.md
           - name: Get file metadata
-            href: concepts/get-attachment.md            
+            href: concepts/get-attachment.md
           - name: Download file
-            href: concepts/download-attachment.md            
+            href: concepts/download-attachment.md
       - name: Aggregated responses
         items:
           - name: Overview
-            href: concepts/aggregated-solutions.md            
+            href: concepts/aggregated-solutions.md
           - name: Aggregate responses in a pool
-            href: concepts/aggregate-by-pool.md            
+            href: concepts/aggregate-by-pool.md
           - name: Aggregate responses to a single task
-            href: concepts/aggregate-by-task.md            
+            href: concepts/aggregate-by-task.md
           - name: Get aggregate responses
-            href: concepts/get-aggregated-result.md          
+            href: concepts/get-aggregated-result.md
   - name: Checking completed tasks
-    href: concepts/accept.md    
+    href: concepts/accept.md
   - name: Rewards
     items:
       - name: Overview
-        href: concepts/bonus.md        
+        href: concepts/bonus.md
       - name: Issue rewards
-        href: concepts/create-bonus.md        
+        href: concepts/create-bonus.md
       - name: Get a list of rewards issued
-        href: concepts/get-bonus-list.md        
+        href: concepts/get-bonus-list.md
       - name: Get reward properties
-        href: concepts/get-one-bonus.md      
+        href: concepts/get-one-bonus.md
   - name: Messages for Tolokers
     items:
       - name: Overview
-        href: concepts/messages.md        
+        href: concepts/messages.md
       - name: To send a message
-        href: concepts/message-send.md        
+        href: concepts/message-send.md
       - name: Get a list of message threads
-        href: concepts/get-chain-list.md        
+        href: concepts/get-chain-list.md
       - name: Reply to message thread
-        href: concepts/reply-message.md        
+        href: concepts/reply-message.md
       - name: Move a message thread
-        href: concepts/move-message.md        
+        href: concepts/move-message.md
   - name: Get user metadata
-    href: concepts/get-user-metadata.md    
+    href: concepts/get-user-metadata.md
   - name: Account balance
-    href: concepts/balance.md   
+    href: concepts/balance.md
   - name: Handling errors
-    href: concepts/errors.md    
+    href: concepts/errors.md
   - name: Standard query parameters
     href: concepts/standard-query-parameters.md
   - name: Sorting the list of objects
