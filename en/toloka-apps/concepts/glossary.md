@@ -10,7 +10,7 @@ Ready-to-go project
 
 Ready-to-go solution
 
-: A ready-to-go solution is an example of a standard task that you can solve using Toloka. Unlike [customizable project](https://toloka.ai/ru/docs/guide/concepts/overview.html#project) templates, you don't have to set up everything yourself.
+: A ready-to-go solution is an example of a standard task that you can solve using Toloka. Unlike [customizable project](https://toloka.ai/docs/guide/concepts/overview.html#project) templates, you don't have to set up everything yourself.
 
 Task item
 
