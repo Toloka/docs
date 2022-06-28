@@ -2136,7 +2136,7 @@ default:
   ui_requester_pool_aggregation_more-link: Больше агрегаций в Crowd-Kit
   ui_requester_pool_aggregation_more-tooltip: Агрегируйте и загружайте результаты
     с помощью API
-  ui_requester_pool_aggregation_more-url: https://toloka.ai/docs/crowd-kit/
+  ui_requester_pool_aggregation_more-url: https://toloka.ai/en/docs/crowd-kit/
   ui_requester_pool_aggregation_wdo__popup_cancel: Отмена
   ui_requester_pool_aggregation_wdo__popup_fields: Выходные поля для агрегации
   ui_requester_pool_aggregation_wdo__popup_skill: Навык

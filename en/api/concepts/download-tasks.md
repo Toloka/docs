@@ -9,7 +9,7 @@ Toloka provides two ways of uploading tasks using the API:
 Choose this method if:
 
 - You [created a pool](create-pool.md) using ["smart mixing"](https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html?lang=en#distribute-tasks-by-pages__smart-mixing) (the `mixer_config` parameter).
-    
+
 - Apart from the general tasks, the pool will contain control or training tasks.
 
 With this method, Toloka will split tasks into suites according to the "smart mixing" settings. When uploading tasks this way, use the [ POST /tasks](create-task.md) request.
@@ -65,12 +65,12 @@ Request body:
             "like": true
          },
          "confidence_weight": 1
-      } 
-   ], 
+      }
+   ],
    "message_on_unknown_solution": "The cat is in a good mood.",
    "overlap": 3,
    "infinite_overlap": false,
-   "reserved_for": [], 
+   "reserved_for": [],
    "unavailable_for": []
 }
 ```
@@ -82,9 +82,9 @@ Request body:
 Choose this method if you:
 
 - Create task suites yourself.
-    
+
 - Determine yourself which tasks to include in each suite.
-    
+
 
 This method won't work if you created a pool using [smart mixing](https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html?lang=en#distribute-tasks-by-pages__smart-mixing). When uploading tasks this way, use the [POST /task-suites](create-task-suite.md) request.
 
@@ -155,24 +155,22 @@ Request body:
     "automerged": false,
     "created": "2016-04-18T12:43:04.988"
 }
-     
+
 ```
 
 {% endcut %}
 
 ## Uploading tasks using the Python SDK {#download-tasks-python}
 
-If you're developing Python apps, you can create API requests using [Toloka Kit](https://toloka.ai/docs/toloka-kit/) methods to achieve a result with less effort and avoid possible errors.
+If you're developing Python apps, you can create API requests using [Toloka Kit](https://toloka.ai/en/docs/toloka-kit/) methods to achieve a result with less effort and avoid possible errors.
 
 Ways to upload tasks using Toloka Kit:
 
 Way | Method
 ----- | -----
-Creates a new task. | [create_task](https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task)
-Creates multiple tasks within a single request. | [create_tasks](https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks)
+Creates a new task. | [create_task](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task)
+Creates multiple tasks within a single request. | [create_tasks](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks)
 Creates multiple tasks asynchronously. | [create_tasks_async](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks_async)
 Creates a task suite. | [create_tasks_suite](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suite)
 Creates multiple task suites within a single request. | [create_tasks_suites](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites)
 Creates multiple task suites asynchronously. | [create_tasks_suites_async](https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites_async)
-
-

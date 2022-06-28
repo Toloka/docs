@@ -38,7 +38,7 @@ You can send a maximum of 20 requests of this kind per minute and a maximum o
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
@@ -63,7 +63,7 @@ Title | Overview
       "result": {
         "type": "string",
         "required": true,
-        "hidden": false                
+        "hidden": false
       }
     },
     "view_spec": {
@@ -168,13 +168,13 @@ Comments that are only visible to the requester. ||
 How to assign tasks:
 
 - `AUTOMATED` — The Toloker is assigned a task suite from the pool. You can [configure](create-pool.md#issue_task_suites_in_creation_order) the order for assigning task suites.
-    
+
 - `MAP_SELECTOR` — The Toloker chooses a task suite on the map. If you are using `MAP_SELECTOR`, specify the text to display in the map name and description in the `assignments_issuing_view_config` key:
-    ```json 
+    ```json
       "assignments_issuing_view_config": {
       "title_template": "<task name>",
       "description_template": "<brief description of the task>",
-      "map_provider": "YANDEX"}  
+      "map_provider": "YANDEX"}
     ```
 
 The default value is `AUTOMATED`. ||
@@ -185,9 +185,9 @@ This parameter is available when the project has `"assignments_issuing_type": "M
 Map provider for tasks:
 
 - `GOOGLE` — Google Maps.
-    
+
 - `YANDEX` — Yandex Maps.
-    
+
 
 If the parameter is not set, then the Toloker selects the map. ||
 || **assignments_automerge_ enabled** | **boolean**
@@ -206,7 +206,7 @@ The quality control rule. ||
 
 Block of translations to other languages. For a complete list of parameters, see [Translations to other languages](#localization-config).
 
-For more information about translation, see [Translations to other languages](https://toloka.ai/ru/docs/guide/concepts/project-languages.html?lang=en). ||
+For more information about translation, see [Translations to other languages](https://toloka.ai/docs/guide/concepts/project-languages.html). ||
 |#
 
 ## Input and output data (input_spec and output_spec) {#in-out}
@@ -218,26 +218,26 @@ The `input_spec` and `output_spec` parameters contain JSON with the input data p
 || **\<ID\>** | **object \| required**
 
 - For input data,  the ID of the object to display in the task, and its properties.
-    
+
 - For output data, the ID of the response input field and response validation parameters. ||
 || **type** | **string \| required**
 
 Data type:
 
 - `url` — URL of an image, page, and so on.
-    
+
 - `boolean` — Boolean data type (`true`/`false`).
-    
+
 - `integer` — Integer.
-    
+
 - `string` — String.
-    
+
 - `float` — Floating-point number.
-    
+
 - `json` — JSON object.
-    
+
 - `file` — File (only for output data).
-    
+
 - `coordinates` — Geographical coordinates, such as "53.910236, 27.531110"). ||
 || **required** | **boolean**
 
@@ -306,10 +306,10 @@ Toloka assets:
 - `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (see  [Image with area selection](https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/?lang=en) in the Requester's guide).
 
 Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters:
-``` 
-  "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js", 
-  "$TOLOKA_ASSETS/js/image-annotation.js"] 
-``` 
+```
+  "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
+  "$TOLOKA_ASSETS/js/image-annotation.js"]
+```
 ||
 || **assets.style_urls[]** | **array of strings**
 
@@ -388,9 +388,9 @@ This parameter is available when the project has `"assignments_issuing_type": "M
 Map provider for tasks:
 
 - `GOOGLE` — Google Maps.
-    
+
 - `YANDEX` — Yandex Maps.
-    
+
 
 If the parameter is not set, then the Toloker selects the map. ||
 |#
@@ -497,10 +497,9 @@ Project ID (assigned automatically). ||
 Status of the project:
 
 - `ACTIVE` — Active.
-    
+
 - `ARCHIVED` — Archived. ||
 || **created** | **string**
 
 The UTC date and time the project was created, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
 |#
-

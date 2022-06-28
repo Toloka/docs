@@ -3390,7 +3390,7 @@ default:
   ui_requester_pool_aggregation_more-link: Больше агрегаций в Crowd-Kit
   ui_requester_pool_aggregation_more-tooltip: Агрегируйте и загружайте результаты
     с помощью API
-  ui_requester_pool_aggregation_more-url: https://toloka.ai/docs/crowd-kit/
+  ui_requester_pool_aggregation_more-url: https://toloka.ai/en/docs/crowd-kit/
   ui_requester_pool_aggregation_wdo__popup_cancel: Отмена
   ui_requester_pool_aggregation_wdo__popup_fields: Выходные поля для агрегации
   ui_requester_pool_aggregation_wdo__popup_skill: Навык
@@ -5603,7 +5603,7 @@ default:
     активному пользователю
   ui_requester_qual_adj__desc: Обратите внимание, чем меньше исполнителей выбрано,
     тем ниже скорость выполнения пула
-  ui_requester_qual_adj__docLink: https://toloka.ai/ru/docs/guide/concepts/adjust.html?lang=ru
+  ui_requester_qual_adj__docLink: https://toloka.ai/ru/docs/guide/concepts/adjust.html
   ui_requester_qual_adj__expl__avail: Задание доступно для выполнения &lt;strong&gt;
     __count__ &lt;/strong&gt; активному пользователю
   ui_requester_qual_adj__expl__avail_zero: Задание недоступно для активных пользователей
