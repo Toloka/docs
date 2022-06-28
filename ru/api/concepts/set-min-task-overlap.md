@@ -6,21 +6,25 @@
 
 ## Запрос {#request}
 
-#### Песочница
+{% list tabs %}
 
-```json
-PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
-Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
-```
+- Песочница
 
-#### Боевая версия
+  ```json
+  PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
+  ```
 
-```json
-PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
-Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
-```
+- Боевая версия
+
+  ```json
+  PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
+  ```
+
+{% endlist %}
 
 ## Path-параметры {#path-params}
 

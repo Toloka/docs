@@ -26,6 +26,7 @@
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
   ```
+
 {% endlist %}
 
 ## Заголовки {#headers}

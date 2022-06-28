@@ -11,25 +11,29 @@
 
 ## Запрос {#request}
 
-#### Боевая версия
+{% list tabs %}
 
-```json
-POST https://toloka.yandex.com/api/v1/projects
-Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
+- Боевая версия
 
-{<project parameters>}
-```
+  ```json
+  POST https://toloka.yandex.com/api/v1/projects
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-#### Песочница
+  {<project parameters>}
+  ```
 
-```json
-POST https://sandbox.toloka.yandex.com/api/v1/projects
-Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
+- Песочница
 
-{<project parameters>}
-```
+  ```json
+  POST https://sandbox.toloka.yandex.com/api/v1/projects
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
+
+  {<project parameters>}
+  ```
+
+{% endlist %}
 
 ## Заголовки {#headers}
 
@@ -159,10 +163,15 @@ Content-Type: application/JSON
 Способ выдачи заданий:
 
 - `AUTOMATED` — исполнителю выдается страница заданий из пула. Вы можете [настроить](create-pool.md#issue_task_suites_in_creation_order), в каком порядке выдаются страницы заданий.
-- `MAP_SELECTOR` — исполнитель выбирает страницу заданий на карте. При выборе способа `MAP_SELECTOR` укажите текст для отображения в названии и описании карты в ключе `assignments_issuing_view_config`:<br/>    ```json "assignments_issuing_view_config": {
-    "title_template": "<task name>",
-    "description_template": "<brief description of the task>",
-    "map_provider": "YANDEX"}  ```<br/><br/>По умолчанию значение `AUTOMATED`.||
+- `MAP_SELECTOR` — исполнитель выбирает страницу заданий на карте. При выборе способа `MAP_SELECTOR` укажите текст для отображения в названии и описании карты в ключе `assignments_issuing_view_config`:<br/>    
+  ```json 
+  "assignments_issuing_view_config": {
+      "title_template": "<task name>",
+      "description_template": "<brief description of the task>",
+      "map_provider": "YANDEX"}  
+  ```
+  
+  По умолчанию значение `AUTOMATED`.||
 ||**assignments_issuing_view_config.map_provider** | **string**
 
 Параметр можно использовать, если в проекте `"assignments_issuing_type": "MAP_SELECTOR"`.<br/><br/>Провайдер карт для выполнения задач:
@@ -188,7 +197,7 @@ Content-Type: application/JSON
 
 Блок перевода на другие языки. Полный список параметров приведен в таблице [Переводы на другие языки](#localization-config).
 
-Подробнее о переводе см. в документе [Перевод на другие языки]({{ requester-project-languages }).||
+Подробнее о переводе см. в документе [Перевод на другие языки]({{ requester-project-languages }}).||
 |#
 
 
@@ -275,8 +284,12 @@ CSS-интерфейс задания.
 - `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — хелперы Handlebars (см. [описание на сайте шаблонизатора]({{ handlebarsjs-com }}));
 - `$TOLOKA_ASSETS/js/image-annotation.js` — интерфейс разметки картинок (см. в разделе [Картинка с возможностью выделения областей]({{ requester-image-annotation }}) Руководства заказчика).
 
-Интерфейс разметки картинок нужно подключать только вместе с хелперами Handlebars. Порядок подключения важен:``` "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js", 
- "$TOLOKA_ASSETS/js/image-annotation.js"] ```||
+Интерфейс разметки картинок нужно подключать только вместе с хелперами Handlebars. Порядок подключения важен:
+``` 
+ "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js", 
+ "$TOLOKA_ASSETS/js/image-annotation.js"] 
+```
+||
 ||**assets.style_urls[]** | **array of strings**
 
 Ссылки на CSS-библиотеки.||
@@ -355,7 +368,7 @@ CSS-интерфейс задания.
 ||Параметр | Описание||
 ||**default_ language** | **string**
 
-Исходный язык, на котором заполнены 
+Исходный язык, на котором заполнены:
 - **public_name** (**string \| обязательный** — название проекта. Его увидят исполнители)
 - **public_description** (**string \| обязательный** — описание проекта. Его увидят исполнители)
 - **public_instructions** (**string** — инструкция по выполнению заданий. В инструкции можно использовать любую HTML-разметку)||

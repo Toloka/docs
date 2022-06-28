@@ -16,7 +16,7 @@
 
 Подробнее про «умное смешивание» читайте в [Руководстве заказчика]({{ requester-mixing }}).
 
-#### Пример запроса
+{% cut "Пример запроса" %}
 
 ```json
 POST https://toloka.yandex.com/api/v1/tasks
@@ -78,6 +78,8 @@ Content-Type: application/JSON
 }
 ```
 
+{% endcut %}
+
 #### Загрузить задания, сгруппированные по страницам
 
 Выбирайте этот способ, если вы:
@@ -89,7 +91,7 @@ Content-Type: application/JSON
 
 Этот способ не подойдет, если при создании пула вы применили [«умное смешивание»]({{ requester-mixing }}). При загрузке заданий этим способом используйте запрос [POST /task-suites](create-task-suite.md).
 
-#### Пример запроса
+{% cut "Пример запроса" %}
 
 ```json
 POST https://toloka.yandex.com/api/v1/task-suites
@@ -158,6 +160,8 @@ Content-Type: application/JSON
 }
      
 ```
+
+{% endcut %}
 
 ## Загрузка заданий с помощью Python SDK {#download-tasks-python}
 

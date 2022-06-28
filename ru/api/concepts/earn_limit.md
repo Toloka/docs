@@ -53,58 +53,61 @@
 
 Чтобы задать другой период блокировки, измените значение соответствующего [параметра](goldenset.md#configs-rules-action-parameters-duration) ключа `action`:
 
-#### на 12 часов
+{% list tabs %}
+- на 12 часов
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "ALL_PROJECTS",
-                     "duration_unit": "HOURS",
-                     "duration": 12,
-                     "private_comment": "Too many tasks have been completed"
-                  }
-               }
-   ...
-}
-```
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "ALL_PROJECTS",
+                       "duration_unit": "HOURS",
+                       "duration": 12,
+                       "private_comment": "Too many tasks have been completed"
+                    }
+                 }
+     ...
+  }
+  ```
 
-#### на 30 минут
+- на 30 минут
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "ALL_PROJECTS",
-                     "duration_unit": "MINUTES",
-                     "duration": 30,
-                     "private_comment": "Too many tasks have been completed"
-                  }
-               }
-   ...
-}
-```
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "ALL_PROJECTS",
+                       "duration_unit": "MINUTES",
+                       "duration": 30,
+                       "private_comment": "Too many tasks have been completed"
+                    }
+                 }
+     ...
+  }
+  ```
 
-#### навсегда
+- навсегда
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "ALL_PROJECTS",
-                     "duration_unit": "PERMANENT",
-                     "private_comment": "Too many tasks have been completed"
-                  }
-               }
-   ...
-}
-```
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "ALL_PROJECTS",
+                       "duration_unit": "PERMANENT",
+                       "private_comment": "Too many tasks have been completed"
+                    }
+                 }
+     ...
+  }
+  ```
+
+{% endlist %}
 
 #|
 ||**Параметр**| **Описание**||

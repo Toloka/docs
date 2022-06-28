@@ -23,7 +23,7 @@
 
 {% include [create-task-suite-create-one](../_includes/concepts/create-task-suite/id-create-task-suite/create-one.md) %}
 ||
-||POST | [/task-suites](create-task-suite-batch.md) | 
+||POST | [/task-suites](create-task-suite.md) | 
 
 {% include [create-task-suite-batch-create-batch](../_includes/concepts/create-task-suite-batch/id-create-task-suite-batch/create-batch.md) %}
 ||

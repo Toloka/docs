@@ -106,49 +106,49 @@
     
     ```json
     {
-    "public_name": "Cat or dog",
-    "public_description": "What kind of animal is on the picture?",
-    "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
-    "task_spec": {
-    "input_spec": {
-    "image": {
-    "type": "url",
-    "required": true,
-    "hidden": false
-    }
-    },
-    "output_spec": {
-    "result": {
-    "type": "string",
-    "required": true,
-    "hidden": false,
-    "allowed_values": ["cat","dog"]
-    }
-    },
-    "view_spec": {
-    "lock": {
-    "core": "1.7.0",
-    "view.list": "1.0.5",
-    "view.image": "1.2.0",
-    "plugin.toloka": "1.1.8",
-    "field.radio-group": "1.1.10",
-    "condition.required": "1.1.5"
-    },
-    "type": "tb",
-    "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
-    "settings": {
-    "showSkip": true,
-    "showTimer": true,
-    "showTitle": true,
-    "showFinish": true,
-    "showSubmit": true,
-    "showMessage": true,
-    "showFullscreen": true,
-    "showInstructions": true
-    }
-    }
-    },
-    "assignments_issuing_type": "AUTOMATED"
+       "public_name": "Cat or dog",
+       "public_description": "What kind of animal is on the picture?",
+       "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
+       "task_spec": {
+         "input_spec": {
+             "image": {
+                "type": "url",
+                "required": true,
+                "hidden": false
+             }
+          },
+          "output_spec": {
+             "result": {
+                "type": "string",
+                "required": true,
+                "hidden": false,
+                "allowed_values": ["cat","dog"]
+             }
+          },
+          "view_spec": {
+             "lock": {
+                "core": "1.7.0",
+                "view.list": "1.0.5",
+                "view.image": "1.2.0",
+                "plugin.toloka": "1.1.8",
+                "field.radio-group": "1.1.10",
+                "condition.required": "1.1.5"
+             },
+             "type": "tb",
+             "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
+             "settings": {
+                "showSkip": true,
+                "showTimer": true,
+                "showTitle": true,
+                "showFinish": true,
+                "showSubmit": true,
+                "showMessage": true,
+                "showFullscreen": true,
+                "showInstructions": true
+             }
+          }
+       },
+       "assignments_issuing_type": "AUTOMATED"
     }
     ```
 

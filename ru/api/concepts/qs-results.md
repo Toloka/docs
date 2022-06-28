@@ -23,33 +23,37 @@
 
 Затем воспользуйтесь методом `GET`:
 
-#### cURL
+{% list tabs %}
 
-{% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
+- cURL
 
-
-```json
-curl -X GET \
-     -H 'Authorization: OAuth <OAuth token>' \
-https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
-```
-
-#### Postman
-
-{% include [project-postman-fields](../_includes/concepts/qs-placement/id-project/postman-fields.md) %}
+  {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
 
-1. Request URL
+  ```json
+  curl -X GET \
+       -H 'Authorization: OAuth <OAuth token>' \
+  https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
+  ```
+
+- Postman
+
+  {% include [project-postman-fields](../_includes/concepts/qs-placement/id-project/postman-fields.md) %}
+
+
+  1. Request URL
     
-    ```json
-    https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
-    ```
+      ```json
+      https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
+      ```
     
-1. Headers
+  1. Headers
     
-    ```json
-    Authorization: OAuth <OAuth token>
-    ```
+      ```json
+      Authorization: OAuth <OAuth token>
+      ```
+
+{% endlist %}
 
 ### Ответ {#get-responses}
 

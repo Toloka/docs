@@ -215,7 +215,7 @@
 
 ## Ответ {#response}
 
-#### Одна страница заданий
+{% cut "Одна страница заданий" %}
 
 Включает:
 
@@ -246,66 +246,109 @@
 Дата и время создания страницы заданий по UTC в формате ISO 8601 YYYY-MM-DDThh:mm:ss[.sss].||
 |#
 
-
-#### Несколько страниц заданий
-
-Формат ответа зависит от значения query-параметра 
-{% cut "async_mode" %}
-
-**async_mode** | **boolean**<br/><br/>Способ обработки запроса:<br/><br/>- `true` — отложенный. В результате запроса создается асинхронная операция, выполняемая в фоновом режиме. Ответ содержит сведения об операции (время начала и окончания, статус).<br/>    <br/>- `false` — синхронный. Ответ содержит сведения об одной или о нескольких созданных страницах заданий.<br/>    <br/><br/>По умолчанию значение `false`.
-
 {% endcut %}
 
-.
+{% cut "Несколько страниц заданий" %}
 
-#### Страницы заданий (async_mode=false)
+Формат ответа зависит от значения query-параметра **async_mode**:
 
-```json
-{
-  "items": {
-    "0": {<task suite>},
-    "2": {<task suite>}, ...
-    "<n>": {<task suite N>}
-  },
-  "validation_errors": {
-    "1": {<validation errors for the task suite>},
-    "3": {<validation errors for the task suite>}, ...
-    "<n>": {<validation errors for task suite N>}
+#|
+||**async_mode** | **boolean**
+
+Способ обработки запроса:
+- `true` — отложенный. В результате запроса создается асинхронная операция, выполняемая в фоновом режиме. Ответ содержит сведения об операции (время начала и окончания, статус).
+- `false` — синхронный. Ответ содержит сведения об одной или о нескольких созданных страницах заданий.
+
+По умолчанию значение `false`.||
+|#
+
+{% list tabs %}
+
+- Страницы заданий (async_mode=false)
+
+  ```json
+  {
+    "items": {
+      "0": {<task suite>},
+      "2": {<task suite>}, ...
+      "<n>": {<task suite N>}
+    },
+    "validation_errors": {
+      "1": {<validation errors for the task suite>},
+      "3": {<validation errors for the task suite>}, ...
+      "<n>": {<validation errors for task suite N>}
+    }
   }
-}
-```
+  ```
+  #|
+  ||**Параметр** |**Описание**||
+  ||**items** | **object**
 
-Параметр | Описание
------ | -----
-**items** | **object**<br/><br/>Объект с созданными страницами заданий.
-**validation_errors** | **object**<br/><br/>Объект с ошибками на страницах заданий. Возвращается, если в запросе используется параметр `skip_invalid_items=true`.
-**<n>** | **object**<br/><br/>Порядковый номер страницы заданий в массиве при создании (начиная с 0).
+  Объект с созданными страницами заданий.||
+  ||**validation_errors** | **object**
 
-#### Сведения об операции (async_mode=true)
+  Объект с ошибками на страницах заданий. Возвращается, если в запросе используется параметр `skip_invalid_items=true`.||
+  ||**<n>** | **object**
 
-```json
-{
-  "id": "26e130ad3652443a3dc5094791e48ef9",
-  "type": "TASK_SUITE.BATCH.CREATE",
-  "status": "FAIL",
-  "submitted": "2015-12-13T23:32:01",
-  "started": "2015-12-13T23:33:00",
-  "finished": "2015-12-13T23:34:12",
-  "details": {
-    "success_count": 0,
-    "failed_count": 2
+  Порядковый номер страницы заданий в массиве при создании (начиная с 0).||
+  |#
+
+- Сведения об операции (async_mode=true)
+
+  ```json
+  {
+    "id": "26e130ad3652443a3dc5094791e48ef9",
+    "type": "TASK_SUITE.BATCH.CREATE",
+    "status": "FAIL",
+    "submitted": "2015-12-13T23:32:01",
+    "started": "2015-12-13T23:33:00",
+    "finished": "2015-12-13T23:34:12",
+    "details": {
+      "success_count": 0,
+      "failed_count": 2
+    }
   }
-}
-```
+  ```
 
-Параметр | Описание
------ | -----
-**id** | **string**<br/><br/>Идентификатор операции.
-**type** | **string**<br/><br/>Тип операции:<br/><br/>- `POOL.OPEN` — открытие пула;<br/>    <br/>- `POOL.CLOSE` — закрытие пула;<br/>    <br/>- `PROJECT.ARCHIVE` — отправка проекта в архив;<br/>    <br/>- `POOL.ARCHIVE` — отправка пула в архив;<br/>    <br/>- `TASK_SUITE.BATCH_CREATE` — создание нескольких страниц заданий.
-**status** | **string**<br/><br/>Статус операции:<br/><br/>- `PENDING` — выполнение не началось;<br/>    <br/>- `RUNNING` — выполняется;<br/>    <br/>- `SUCCESS` — успешно выполнена;<br/>    <br/>- `FAIL` — не выполнена.
-**submitted** | **string**<br/><br/>Дата и время отправки запроса по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
-**started** | **string**<br/><br/>Дата и время начала операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
-**finished** | **string**<br/><br/>Дата и время окончания операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
-**details. success_count** | **integer**<br/><br/>Количество загруженных страниц заданий.
-**details. failed_count** | **integer**<br/><br/>Количество страниц заданий, которые не были загружены.
+  #|
+  ||**Параметр** |**Описание**||
+  ||**id** | **string**
+  
+  Идентификатор операции.||
+  ||**type** | **string**
+  
+  Тип операции:
+  - `POOL.OPEN` — открытие пула;
+  - `POOL.CLOSE` — закрытие пула;
+  - `PROJECT.ARCHIVE` — отправка проекта в архив;
+  - `POOL.ARCHIVE` — отправка пула в архив;
+  - `TASK_SUITE.BATCH_CREATE` — создание нескольких страниц заданий.||
+  ||**status** | **string**
+  
+  Статус операции:
+  - `PENDING` — выполнение не началось;
+  - `RUNNING` — выполняется;
+  - `SUCCESS` — успешно выполнена;
+  - `FAIL` — не выполнена.||
+  ||**submitted** | **string**
+  
+  Дата и время отправки запроса по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+ ||**started** | **string**
+ 
+ Дата и время начала операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+  ||**finished** | **string**
+  
+  Дата и время окончания операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+  ||**details. success_count** | **integer**
+  
+  Количество загруженных страниц заданий.||
+  ||**details. failed_count** | **integer**
+  
+  Количество страниц заданий, которые не были загружены.||
+  |#
 
+
+
+{% endlist %}
+
+{% endcut %}

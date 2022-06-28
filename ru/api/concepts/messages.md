@@ -27,6 +27,7 @@
 {% include [move-message-remove-message-thread](../_includes/concepts/move-message/id-move-message/remove-message-thread.md) %}
 ||
 |#
+
 ## Узнайте больше
 
 - [Получение и отправка сообщений]({{ requester-messaging }})

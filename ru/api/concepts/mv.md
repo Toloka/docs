@@ -84,58 +84,62 @@
 
 Чтобы задать другой период блокировки, измените значение соответствующего [параметра](goldenset.md#configs-rules-action-parameters-duration) ключа `action`:
 
-#### на 12 часов
+{% list tabs %}
 
-```json
-{
-   ...
-               "action": {
-                  "type":"RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "HOURS",
-                     "duration": 12,
-                     "private_comment": "Does not correspond to the opinion of the majority"
-                  }
-               }
-   ...
-}
-```
+- на 12 часов
 
-#### на 30 минут
+  ```json
+  {
+     ...
+                 "action": {
+                    "type":"RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "HOURS",
+                       "duration": 12,
+                       "private_comment": "Does not correspond to the opinion of the majority"
+                    }
+                 }
+     ...
+  }
+  ```
 
-```json
-{
-   ...
-               "action": {
-                  "type":"RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "MINUTES",
-                     "duration": 30,
-                     "private_comment": "Does not correspond to the opinion of the majority"
-                  }
-               }
-   ...
-}
-```
+- на 30 минут
 
-#### навсегда
+  ```json
+  {
+     ...
+                 "action": {
+                    "type":"RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "MINUTES",
+                       "duration": 30,
+                       "private_comment": "Does not correspond to the opinion of the majority"
+                    }
+                 }
+     ...
+  }
+  ```
 
-```json
-{
-   ...
-               "action": {
-                  "type":"RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "PERMANENT",
-                     "private_comment": "Does not correspond to the opinion of the majority"
-                  }
-               }
-   ...
-}
-```
+- навсегда
+
+  ```json
+  {
+     ...
+                 "action": {
+                    "type":"RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "PERMANENT",
+                       "private_comment": "Does not correspond to the opinion of the majority"
+                    }
+                 }
+     ...
+  }
+  ```
+
+{% endlist %}
 
 #|
 ||**Параметр**| **Описание**||

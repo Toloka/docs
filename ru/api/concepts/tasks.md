@@ -20,7 +20,7 @@
 
 {% include [create-task-create](../_includes/concepts/create-task/id-create-task/create.md) %}
 ||
-||POST | [/tasks](create-tasks-batch.md) | 
+||POST | [/tasks](create-task.md) | 
 
 {% include [create-tasks-batch-create](../_includes/concepts/create-tasks-batch/id-create-tasks-batch/create.md) %}
 ||

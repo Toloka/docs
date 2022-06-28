@@ -80,58 +80,62 @@
 
 Чтобы задать другой период блокировки, измените значение соответствующего [параметра](#configs-rules-action-parameters-duration) ключа `action`:
 
-#### на 12 часов
+{% list tabs %}
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "HOURS",
-                     "duration": 12,
-                     "private_comment": "Control tasks were not completed"
-                  }
-               }
-   ...
-}
-```
+- на 12 часов
 
-#### на 30 минут
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "HOURS",
+                       "duration": 12,
+                       "private_comment": "Control tasks were not completed"
+                    }
+                 }
+     ...
+  }
+  ```
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "MINUTES",
-                     "duration": 30,
-                     "private_comment": "Control tasks were not completed"
-                  }
-               }
-   ...
-}
-```
+- на 30 минут
 
-#### навсегда
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "MINUTES",
+                       "duration": 30,
+                       "private_comment": "Control tasks were not completed"
+                    }
+                 }
+     ...
+  }
+  ```
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "PERMANENT",
-                     "private_comment": "Control tasks were not completed"
-                  }
-               }
-   ...
-}
-```
+- навсегда
+
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "PERMANENT",
+                       "private_comment": "Control tasks were not completed"
+                    }
+                 }
+     ...
+  }
+  ```
+
+{% endlist %}
 
 #|
 ||**Параметр**| **Описание**||

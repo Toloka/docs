@@ -54,58 +54,62 @@
 
 Чтобы задать другой период блокировки, измените значение соответствующего [параметра](goldenset.md#configs-rules-action-parameters-duration) ключа `action`:
 
-#### на 12 часов
+{% list tabs %}
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "HOURS",
-                     "duration": 12,
-                     "private_comment": "The requester rejected 40% of the tasks"
-                  }
-               }
-   ...
-}
-```
+- на 12 часов
 
-#### на 30 минут
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "HOURS",
+                       "duration": 12,
+                       "private_comment": "The requester rejected 40% of the tasks"
+                    }
+                 }
+     ...
+  }
+  ```
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "MINUTES",
-                     "duration": 30,
-                     "private_comment": "The requester rejected 40% of the tasks"
-                  }
-               }
-   ...
-}
-```
+- на 30 минут
 
-#### навсегда
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "MINUTES",
+                       "duration": 30,
+                       "private_comment": "The requester rejected 40% of the tasks"
+                    }
+                 }
+     ...
+  }
+  ```
 
-```json
-{
-   ...
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "PERMANENT",
-                     "private_comment": "The requester rejected 40% of the tasks"
-                  }
-               }
-   ...
-}
-```
+- навсегда
+
+  ```json
+  {
+     ...
+                 "action": {
+                    "type": "RESTRICTION_V2",
+                    "parameters": {
+                       "scope": "PROJECT",
+                       "duration_unit": "PERMANENT",
+                       "private_comment": "The requester rejected 40% of the tasks"
+                    }
+                 }
+     ...
+  }
+  ```
+
+{% endlist %}
 
 #|
 ||**Параметр**| **Описание**||
