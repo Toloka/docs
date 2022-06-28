@@ -11,9 +11,9 @@ default:
   wiki-ogg: 'https://en.wikipedia.org/wiki/Ogg'
   wiki-opus: 'https://en.wikipedia.org/wiki/Opus_(audio_format)'
   wiki-wav: 'https://en.wikipedia.org/wiki/WAV'
-  toloka-requester-index-dita: 'https://toloka.ai/docs/guide/index.html?lang=en'
-  toloka-requester-concepts-yacloud-dita: 'https://toloka.ai/docs/guide/concepts/use-object-storage.html?lang=en'
-  toloka-requester-create-tsv: 'https://toloka.ai/docs/guide/concepts/pool_csv.html?lang=en'
+  toloka-requester-index-dita: 'https://toloka.ai/ru/docs/guide/index.html'
+  toloka-requester-concepts-yacloud-dita: 'https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html'
+  toloka-requester-create-tsv: 'https://toloka.ai/ru/docs/guide/concepts/pool_csv.html'
   template-builder: 'https://tb.yandex.net/editor'
   toloka-facebook: 'https://www.facebook.com/tolokaglobal/'
   toloka-slack: >-
