@@ -36,6 +36,8 @@ items:
             name: Классификация изображений
           - href: templates/sbs-image.md
             name: Попарное сравнение изображений
+          - href: templates/product-search-relevance.md
+            name: Релевантность поиска товаров
       - name: Тексты
         items:
           - href: templates/copywriting.md
