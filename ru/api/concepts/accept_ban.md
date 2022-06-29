@@ -196,7 +196,9 @@
 Значение определяет, на сколько изменить перекрытие.||
 ||**configs.rules.action. parameters.public_comment** | **string \| обязательный при условии**
 
-Обязателен, если `type=REJECT_ALL_ASSIGNMENTS`.<br/><br/>Комментарий (причина отклонения ответов). Доступен заказчику и исполнителю.||
+Обязателен, если `type=REJECT_ALL_ASSIGNMENTS`.
+
+Комментарий (причина отклонения ответов). Доступен заказчику и исполнителю.||
 ||**configs.collector_config. parameters** | **object \| обязательный при условии**
 
 Обязательный, если `configs.collector_config.type=``GOLDEN_SET`, `MAJORITY_VOTE`, `CAPTCHA`, `ASSIGNMENT_SUBMIT_TIME`.

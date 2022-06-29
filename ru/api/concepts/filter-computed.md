@@ -49,7 +49,8 @@
 
 Тип устройства:
 - `PERSONAL_COMPUTER` — персональный компьютер;
-- `SMARTPHONE` — смартфон;<br/>    <br/>- `TABLET` — планшет.
+- `SMARTPHONE` — смартфон;
+- `TABLET` — планшет.
 Полный список доступен на странице библиотеки [UADetector]({{ uadetector-dev-category }}).
 
 Значение operator:

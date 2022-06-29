@@ -186,7 +186,8 @@
 Фиксированное значение, которое нужно присвоить навыку (число от 0 до 100).||
 ||**configs.rules.action. parameters.delta** | **integer \| обязательный при условии**
 
-Обязателен, если `type=CHANGE_OVERLAP`.<br/>Значение определяет, на сколько изменить перекрытие.||
+Обязателен, если `type=CHANGE_OVERLAP`.
+Значение определяет, на сколько изменить перекрытие.||
 ||**configs.rules.action. parameters.public_comment** | **string \| обязательный при условии**
 
 Обязателен, если `type=REJECT_ALL_ASSIGNMENTS`.

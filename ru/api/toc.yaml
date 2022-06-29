@@ -162,6 +162,19 @@ items:
             href: concepts/ban-delete.md
   - name: Способы загрузки заданий
     href: concepts/download-tasks.md           
+  - name: HTTP proxy
+    hidden: true
+    items:
+      - name: Обзор
+        href: concepts/httpproxy.md
+      - name: Зарегистрировать прокси-сервер
+        href: concepts/httpproxy-registration.md
+      - name: Получить информацию о зарегистрированном прокси-сервере
+        href: concepts/httpproxy-get-info.md
+      - name: Редактировать данные прокси-сервера
+        href: concepts/httpproxy-edit.md
+      - name: Удалить регистрацию прокси-сервера
+        href: concepts/httpproxy-delete.md
   - name: Задания
     items:
       - name: Обзор

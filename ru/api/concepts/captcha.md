@@ -180,7 +180,9 @@
 Параметры для сбора данных (зависят от блока контроля качества, указанного в ключе `type`).||
 ||**configs.rules.action. parameters.skill_id** | **string \| обязательный при условии**
 
-Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.<br/><br/>Идентификатор навыка, который необходимо обновлять по мере выполнения заданий.||
+Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
+
+Идентификатор навыка, который необходимо обновлять по мере выполнения заданий.||
 ||**configs.rules.action. parameters.from_field** | **string \| обязательный при условии**
 
 Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
@@ -193,7 +195,8 @@
 Фиксированное значение, которое нужно присвоить навыку (число от 0 до 100).||
 ||**configs.rules.action. parameters.delta** | **integer \| обязательный при условии**
 
-Обязателен, если `type=CHANGE_OVERLAP`.<br/>Значение определяет, на сколько изменить перекрытие.||
+Обязателен, если `type=CHANGE_OVERLAP`.
+Значение определяет, на сколько изменить перекрытие.||
 ||**configs.rules.action. parameters.public_comment** | **string \| обязательный при условии**
 
 Обязателен, если `type=REJECT_ALL_ASSIGNMENTS`.
