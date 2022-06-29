@@ -292,72 +292,72 @@
     
     ```json
     {
-    "project_id": "<project id>",
-    "private_name": "Cat pool 1",
-    "may_contain_adult_content": true,
-    "will_expire": "<close date>",
-    "reward_per_assignment": 0.02,
-    "assignment_max_duration_seconds": 60,
-    "filter": {
-    "and": [
-    {
-    "or": [
-    {
-    "category": "profile",
-    "key": "languages",
-    "operator": "IN",
-    "value": "RU"
-    }
-    ]
-    }
-    ]
-    },
-    "quality_control": {
-    "captcha_frequency": "LOW",
-    "configs": [
-    {
-    "collector_config": {
-    "type": "CAPTCHA",
-    "parameters": {
-    "history_size": 10
-    }
-    },
-    "rules": [
-    {
-    "conditions": [
-    {
-    "key": "stored_results_count",
-    "operator": "EQ",
-    "value": 10
-    },
-    {
-    "key": "success_rate",
-    "operator": "LTE",
-    "value": 70.0
-    }
-    ],
-    "action": {
-    "type": "RESTRICTION_V2",
-    "parameters": {
-    "scope": "PROJECT",
-    "duration_unit": "DAYS",
-    "duration": 3,
-    "private_comment": "Incorrect captcha input"
-    }
-    }
-    }
-    ]
-    }
-    ]
-    },
-    "mixer_config": {
-    "real_tasks_count": 3,
-    "golden_tasks_count": 0,
-    "training_tasks_count": 0
-    },
-    "defaults": {
-    "default_overlap_for_new_task_suites": 3
-    }
+     "project_id": "<project id>",
+       "private_name": "Cat pool 1",
+       "may_contain_adult_content": true,
+       "will_expire": "<close date>",
+       "reward_per_assignment": 0.02,
+       "assignment_max_duration_seconds": 60,
+       "filter": {
+          "and": [
+            {
+              "or": [
+                {
+                  "category": "profile",
+                  "key": "languages",
+                  "operator": "IN",
+                  "value": "RU"
+                }
+              ]
+            }
+          ]
+       },
+       "quality_control": {
+          "captcha_frequency": "LOW",
+          "configs": [
+             {
+                "collector_config": {
+                   "type": "CAPTCHA",
+                   "parameters": {
+                      "history_size": 10
+                   }
+                },
+                "rules": [
+                   {
+                      "conditions": [
+                         {
+                            "key": "stored_results_count",
+                            "operator": "EQ",
+                            "value": 10
+                         },
+                         {
+                            "key": "success_rate",
+                            "operator": "LTE",
+                            "value": 70.0
+                         }
+                      ],
+                      "action": {
+                         "type": "RESTRICTION_V2",
+                         "parameters": {
+                            "scope": "PROJECT",
+                            "duration_unit": "DAYS",
+                            "duration": 3,
+                            "private_comment": "Incorrect captcha input"
+                         }
+                      }
+                   }
+                ]
+             }
+          ]
+       },
+       "mixer_config": {
+          "real_tasks_count": 3,
+          "golden_tasks_count": 0,
+          "training_tasks_count": 0
+       },
+       "defaults": {
+          "default_overlap_for_new_task_suites": 3
+       }
     }
     ```
 {% endlist %}
@@ -455,27 +455,27 @@
     
     ```json
     [
-    {
-    "input_values": {
-    "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
-    },
-    "pool_id": "<pool id>",
-    "overlap": 2
-    },
-    {
-    "input_values": {
-    "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
-    },
-    "pool_id": "<pool id>",
-    "overlap": 2
-    },
-    {
-    "input_values": {
-    "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
-    },
-    "pool_id": "<pool id>",
-    "overlap": 2
-    }
+       {
+          "input_values": {
+             "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+          },
+          "pool_id": "<pool id>",
+          "overlap": 2
+       },
+       {
+          "input_values": {
+             "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+          },
+          "pool_id": "<pool id>",
+          "overlap": 2
+       },
+       {
+          "input_values": {
+             "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+          },
+          "pool_id": "<pool id>",
+          "overlap": 2
+       }
     ]
     ```
 {% endlist %}
