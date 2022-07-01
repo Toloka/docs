@@ -1,6 +1,6 @@
 # Search for information online
 
-For this type of project, you can use the **Data search** template ([view code in the sandbox](https://clck.ru/USPmt)). It has pre-configured validation and task layout. In this template, a Toloker needs to enter the organization's contact information found online.
+For this type of project, you can use the **Mining business contacts** template ([view code in the sandbox](https://clck.ru/USPmt)). It has pre-configured validation and task layout. In this template, a Toloker needs to enter the organization's contact information found online.
 
 {% cut "Components used in the example" %}
 

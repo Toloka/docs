@@ -1,6 +1,6 @@
 # Video analysis
 
-For this type of project, you can use the **Video moderation** template ([view code in the sandbox](https://clck.ru/TJ73B)). Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+For this type of project, you can use the **Hand gesture classification** template ([view code in the sandbox](https://clck.ru/TJ73B)). Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 {% cut "Components used in the example" %}
 

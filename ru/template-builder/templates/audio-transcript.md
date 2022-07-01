@@ -1,6 +1,6 @@
 # Транскрипция аудио
 
-В Толоке есть шаблон **Транскрипция аудио** ([посмотреть код в песочнице](https://clck.ru/SsYtF)). В нем уже настроена валидация, внешний вид задания и горячие клавиши.
+В Толоке есть шаблон **Расшифровка аудиозаписей** ([посмотреть код в песочнице](https://clck.ru/SsYtF)). В нем уже настроена валидация, внешний вид задания и горячие клавиши.
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -23,11 +23,11 @@
 - Если вам важно [проверить](../best-practices/conditions.md), что аудио запускалось — замените компонент [condition.played-fully](../reference/condition.played-fully.md) на [condition.played](../reference/condition.played.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/T324W)
-  
+
 - Пригодится для коротких аудио — поставьте их на повтор, добавив в свойства компонента [view.audio](../reference/view.audio.md) `loop: true`.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/T3279)
-  
+
 
 Если вам не подходит этот шаблон, посмотрите другие примеры в этом разделе.
 
@@ -43,13 +43,13 @@
   Используйте компонент [field.checkbox-group](../reference/field.checkbox-group.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/SWicE)
-  
+
 - Один (радиокнопка)
 
   Используйте компонент [field.radio-group](../reference/field.radio-group.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/T2zwe)
-  
+
 {% endlist %}
 
 ## Добавить предварительно распознанный текст {#text}

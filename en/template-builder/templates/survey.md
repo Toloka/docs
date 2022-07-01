@@ -1,6 +1,6 @@
 # Survey
 
-For this type of project, you can use the **Survey** template ([view code in the sandbox](https://clck.ru/TPoRH)). It has pre-configured validation and task layout.
+For this type of project, you can use the **Customer survey** template ([view code in the sandbox](https://clck.ru/TPoRH)). It has pre-configured validation and task layout.
 
 {% cut "Components used in the example" %}
 

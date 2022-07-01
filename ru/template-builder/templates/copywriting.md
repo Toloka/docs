@@ -1,6 +1,6 @@
 # Копирайтинг
 
-В Толоке есть шаблон Копирайтинг ([посмотреть код в песочнице](https://clck.ru/TJ6on)). В нем уже настроена валидация и внешний вид задания.
+В Толоке есть шаблон **Копирайтинг** ([посмотреть код в песочнице](https://clck.ru/TJ6on)). В нем уже настроена валидация и внешний вид задания.
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -18,15 +18,15 @@
 - Чтобы задать необходимую длину текста, вместо [condition.required](../reference/condition.required.md) используйте компонент [condition.schema](../reference/condition.schema.md). Он не даст отправить ответ, если введенный текст будет короче или длиннее, чем вы указали.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2fm)
-  
+
 - Для ввода короткого текста в одну строку вместо [field.textarea](../reference/field.textarea.md) удобно использовать [field.text](../reference/field.text.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2gi)
-  
+
 - Если для выполнения задания нужно что-то найти в интернете, добавьте компонент [helper.search-query](../reference/helper.search-query.md). Поисковый запрос можно составить из слов, взятых из входных данных.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2h9)
-  
+
 Если вам не подходит этот шаблон, посмотрите другие примеры в этом разделе.
 
 
@@ -59,12 +59,12 @@
   Используйте компонент [field.radio-group](../reference/field.radio-group.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2wD)
-  
+
 - Кнопки
 
   Используйте компонент [field.button-radio-group](../reference/field.button-radio-group.md).
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2ws)
-  
+
 - Чекбокс
 
   Используйте компонент [field.checkbox](../reference/field.checkbox.md).
@@ -86,5 +86,5 @@
 Дополнительно в примере действует проверка, чтобы в каждой строке было не менее трех символов: русских или английских букв и пробелов. Условие реализуется с помощью [condition.schema](../reference/condition.schema.md).
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TULJM)
-  
+
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

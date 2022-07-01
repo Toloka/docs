@@ -1,5 +1,7 @@
 # Side-by-side audio comparison
 
+For this type of project, you can use the **Audio comparison (Side-by-side)** template.
+
 Take a look at the example: there are two audio tracks and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/8yWU6Tq-3TYPx8)
@@ -217,7 +219,7 @@ If this template doesn't meet your needs, see other examples in this section.
 
 If you need comments from the Toloker, add a text field using [field.textarea](../reference/field.textarea.md). In this example, additional validation is set up that requires you to enter text if one of two audio tracks is selected.
 
-  {% cut "Show code" %}
+{% cut "Show code" %}
 
   ```json
   {
@@ -234,21 +236,21 @@ If you need comments from the Toloker, add a text field using [field.textarea
   }
   ```
 
-  {% endcut %}
+{% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/aBZZXCvm3TYZCw)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/aBZZXCvm3TYZCw)
 
 ## Arrange audio tracks vertically {#top-bottom}
 
 Audio tracks can be arranged in a single column, top to bottom. This interface is better suited for comparing more than two audio recordings.
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/eqx3jrHj3TYaTy)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eqx3jrHj3TYaTy)
 
 ## Add a source text {#add-original-text}
 
 You can add a field with a source text using the [view.text](../reference/view.text.md) component. For example, this might be useful if you want to find out which of the audio recordings best matches the description.
 
-  {% cut "Show code" %}
+{% cut "Show code" %}
 
   ```json
   {
@@ -258,15 +260,15 @@ You can add a field with a source text using the [view.text](../reference/view
   }
   ```
 
-  {% endcut %}
+{% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/m1b1YPvB3TYbYi)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/m1b1YPvB3TYbYi)
 
 ## Add a layout {#add-color}
 
 To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the source text is highlighted with a blue border, and the buttons are highlighted with a yellow one.
 
-  {% cut "Show code" %}
+{% cut "Show code" %}
 
   ```json
   {
@@ -296,8 +298,8 @@ To enhance Toloker's experience, you can highlight different types of data with�
   }
   ```
 
-  {% endcut %}
+{% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/PinrwG2E3TYcTx)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/PinrwG2E3TYcTx)
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

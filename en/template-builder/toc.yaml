@@ -36,6 +36,8 @@ items:
             name: Image classification
           - href: templates/sbs-image.md
             name: Side-by-side image comparison
+          - href: templates/product-search-relevance.md
+            name: Product search relevance
       - name: Texts
         items:
           - href: templates/copywriting.md
