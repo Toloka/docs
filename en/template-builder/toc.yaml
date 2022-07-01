@@ -40,6 +40,8 @@ items:
         items:
           - href: templates/copywriting.md
             name: Copywriting
+          - href: templates/sbs-text.md
+            name: Side-by-side text comparison
   - name: Instructions
     items:
       - href: operations/all.md
