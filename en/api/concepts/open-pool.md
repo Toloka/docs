@@ -12,14 +12,14 @@ An operation is created when you send a request. To track the progress of the op
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools/<pool_id>/open
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
   Authorization: OAuth <OAuth token>
   ```
@@ -29,14 +29,14 @@ An operation is created when you send a request. To track the progress of the op
 ## Path parameters {#path-params}
 
 Parameter | Overview
------ | ----- 
+----- | -----
 **pool_id** | Pool ID.
 
 
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -95,4 +95,3 @@ The percentage of the operation completed. ||
 || **parameters.pool_id** | **string**
 Pool ID. ||
 |#
-

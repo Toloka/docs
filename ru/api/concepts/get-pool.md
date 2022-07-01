@@ -10,14 +10,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/pools/<pool_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -38,4 +38,3 @@
 ## Ответ {#response}
 
 Содержит параметры пула (см. описание в разделе [Создать пул](create-pool.md#response)).
-

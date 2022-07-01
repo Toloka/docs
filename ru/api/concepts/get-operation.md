@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/operations/<operation_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -106,4 +106,3 @@
 |#
 
 Подробного описания ошибок в ответе нет. Если произошла ошибка, [запросите лог операции](get-operation-log.md).
-

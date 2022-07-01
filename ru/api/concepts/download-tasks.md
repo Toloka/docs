@@ -9,7 +9,7 @@
 Выбирайте этот способ, если:
 
 - при [создании пула](create-pool.md) вы применили «умное смешивание» (параметр `mixer_config`);
-    
+
 - в пуле кроме основных будут контрольные или обучающие задания.
 
 При этом способе Толока разобьет задания на страницы в соответствии с настройками «умного смешивания». При загрузке заданий этим способом используйте запрос [ POST /tasks](create-task.md).
@@ -18,7 +18,7 @@
 
 {% cut "Пример запроса" %}
 
-```json
+```bash
 POST https://toloka.yandex.com/api/v1/tasks
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON
@@ -68,12 +68,12 @@ Content-Type: application/JSON
             "like": true
          },
          "confidence_weight": 1
-      } 
-   ], 
+      }
+   ],
    "message_on_unknown_solution": "The cat is in a good mood.",
    "overlap": 3,
    "infinite_overlap": false,
-   "reserved_for": [], 
+   "reserved_for": [],
    "unavailable_for": []
 }
 ```
@@ -85,15 +85,15 @@ Content-Type: application/JSON
 Выбирайте этот способ, если вы:
 
 - самостоятельно формируете страницы заданий;
-    
+
 - сами определяете, какие именно задания будут находиться на каждой странице.
-    
+
 
 Этот способ не подойдет, если при создании пула вы применили [«умное смешивание»]({{ requester-mixing }}). При загрузке заданий этим способом используйте запрос [POST /task-suites](create-task-suite.md).
 
 {% cut "Пример запроса" %}
 
-```json
+```bash
 POST https://toloka.yandex.com/api/v1/task-suites
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON
@@ -158,7 +158,7 @@ Content-Type: application/JSON
     "automerged": false,
     "created": "2016-04-18T12:43:04.988"
 }
-     
+
 ```
 
 {% endcut %}
@@ -177,5 +177,3 @@ Content-Type: application/JSON
 Создает страницу заданий. | [сreate_tasks_suite]({{ tk-create-tasks-suite }})
 Создает несколько страниц заданий в рамках одного запроса. | [create_tasks_suites]({{ tk-create-tasks-suites }})
 Создает несколько страниц заданий асинхронно. | [create_tasks_suites_async]({{ tk-create-tasks-suites-async }})
-
-

@@ -8,16 +8,16 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-restrictions
-  Authorization: OAuth <OAuth token> 
+  Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions
-  Authorization: OAuth <OAuth token> 
+  Authorization: OAuth <OAuth token>
   ```
 {% endlist %}
 
@@ -58,9 +58,8 @@
 - `id` — идентификатор;
 - `created` — дата создания по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
-||**Стандартные query-параметры** | 
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
+||**Стандартные query-параметры** |
 - **limit** (**integer** — ограничение на количество возвращаемых результатов. По умолчанию — 50, максимум — 300)
 - **id_gt** (**string** — объекты с идентификатором больше указанного значения)
 - **id_gte** (**string** — объекты с идентификатором больше или равным указанному значению)
@@ -80,24 +79,24 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
   Authorization: OAuth <OAuth token>
   ```
@@ -111,4 +110,3 @@
 ```json
 {"items" : [{ban parameters 1}, {ban parameters 2}, ... {ban parameters n}], "has_more": true}
 ```
-

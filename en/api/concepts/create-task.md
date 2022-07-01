@@ -10,7 +10,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 t
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/tasks
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -22,7 +22,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 t
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/tasks
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -53,9 +53,9 @@ Specified in the link after the question mark; separated by `&`.
 Mode for request processing:
 
 - `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The response contains information about the operation (start and completion time, status, number of task suites).
-    
+
 - `false` — Synchronous. The response contains information about one or more created tasks. Maximum of 5000 tasks per request.
-    
+
 
 The default value is `false`. ||
 || **allow_defaults** | **boolean**
@@ -63,9 +63,9 @@ The default value is `false`. ||
 Overlap settings:
 
 - `true` — Use the overlap that is set in the pool parameters (in the [defaults.default_overlap_for_new_tasks](create-pool.md#default-overlap-tasks) key).
-    
+
 - `false` — Use the overlap that is set in the task parameters (in the [overlap](#overlap) field).
-    
+
 
 The default value is `false`. ||
 || **skip_invalid_items** | **boolean**
@@ -73,9 +73,9 @@ The default value is `false`. ||
 Validation parameters for JSON objects:
 
 - `true` — Create the tasks that passed validation. Skip the rest of the tasks (errors will be listed in the response to the request).
-    
+
 - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
-    
+
 
 The default value is `false`. ||
 || **open_pool** | **boolean**
@@ -130,12 +130,12 @@ You can use this ID in the future to [get information about the operation](opera
             "like": true
          },
          "confidence_weight": 1
-      } 
-   ], 
+      }
+   ],
    "message_on_unknown_solution": "The cat is in a good mood.",
    "overlap": 3,
    "infinite_overlap": false,
-   "reserved_for": [], 
+   "reserved_for": [],
    "unavailable_for": []
 }
 ```
@@ -148,30 +148,30 @@ ID of the pool that the task is uploaded to. ||
 || **input_values** | **object \| required**
 
 Input data for a task. List of pairs:
-```no-highlight 
+```no-highlight
   "<ID of field 1>": "<value of field 1>",
   "<ID of field 2>": "<value of field 2>",
   ...
-  "<ID of field N>": "<value of field N>" 
-``` 
+  "<ID of field N>": "<value of field N>"
+```
 ||
 || **known_solutions[].output_values** | **object \| required**
 
 Output data values to check. You should specify values for all required output data fields.
-```no-highlight 
+```no-highlight
   "<ID of field 1>": "<correct response>",
   "<ID of field 2>": "<correct response>",
-  ...          
-``` 
+  ...
+```
 ||
 || **baseline_solutions[].output_values** | **object \| required**
 
 Output data values for preliminary responses.
-```no-highlight 
+```no-highlight
   "<ID of field 1>": "<preliminary response>",
   "<ID of field 2>": "<preliminary response>",
-  ... 
-``` 
+  ...
+```
 ||
 || **baseline_solutions[].confidence_weight** | **float \| required**
 
@@ -216,7 +216,7 @@ Hint for the task (for training tasks). ||
 
 Assigns tasks with infinite overlap. For instance, you can use this for training tasks when you want to assign them to all Tolokers:
 - `true` — Use infinite overlap.
-    
+
 - `false` — Use the overlap that is set for the task or pool.
 
 The default value is `false`. ||
@@ -287,11 +287,11 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   The status of the operation:
 
   - `PENDING` — Not started yet.
-      
+
   - `RUNNING` — In progress.
-      
+
   - `SUCCESS` — Completed successfully.
-      
+
   - `FAIL` — Not completed. ||
   || **submitted** | **string**
 
@@ -310,9 +310,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   Overlap settings:
 
   - `true` — Use the overlap that is set in the pool parameters (in the [defaults.default_overlap_for_new_tasks](create-pool.md#default-overlap-tasks) key).
-      
+
   - `false` — Use the overlap that is set in the task parameters (in the [overlap](#overlap) field).
-      
+
 
   The default value is `false`. ||
   || **parameters.skip_invalid_items** | **boolean**
@@ -320,9 +320,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   Validation parameters for JSON objects:
 
   - `true` — Create the tasks that passed validation. Skip the rest of the tasks (errors will be listed in the response to the request).
-      
+
   - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
-      
+
 
   The default value is `false`. ||
   |#
@@ -424,11 +424,11 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   The status of the operation:
 
   - `PENDING` — Not started yet.
-      
+
   - `RUNNING` — In progress.
-      
+
   - `SUCCESS` — Completed successfully.
-      
+
   - `FAIL` — Not completed. ||
   || **submitted** | **string**
 
@@ -444,9 +444,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   Validation parameters for JSON objects:
 
   - `true` — Create the tasks that passed validation. Skip the rest of the tasks.
-      
+
   - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
-      
+
 
   The default value is `false`. ||
   || **details.total_count** | **string**

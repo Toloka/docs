@@ -1,4 +1,4 @@
-# Создать навык 
+# Создать навык
 
 Создает навык.
 
@@ -15,7 +15,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/skills
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -23,7 +23,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/skills
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -138,4 +138,3 @@
 - `true` — навык [глобальный]({{ requester-skills-global }}), показывает общие компетенции исполнителей, доступен всем исполнителям;
 - `false` — навык создан заказчиком, может быть [назначен]({{ requester-assign-skills }}) исполнителям как вручную, так и автоматически: с помощью правил контроля качества или после прохождения обучения.||
 |#
-

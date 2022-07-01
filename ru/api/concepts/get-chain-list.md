@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/message-threads
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/message-threads
   Authorization: OAuth <OAuth token>
   ```
@@ -35,8 +35,7 @@
 ||**Параметр**|**Описание**||
 ||**folder** | **string**
 
-{% include [messages-folder-list](../_includes/concepts/message-send/id-messages/folder-list.md) %}
-||
+{% include [messages-folder-list](../_includes/concepts/message-send/id-messages/folder-list.md) %}||
 ||**folder_ne** | **string**
 Папки, в которых не искать цепочку. Можно указать несколько значений через запятую.||
 ||**sort** | **string**
@@ -45,8 +44,7 @@
 - `id` — идентификатор страницы заданий;
 - `created` — дата создания страницы заданий по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**Стандартные query-параметры** |
 - **limit** (**integer** — ограничение на количество возвращаемых результатов. По умолчанию — 50, максимум — 300)
 - **id_gt** (**string** — объекты с идентификатором больше указанного значения)
@@ -58,4 +56,3 @@
 - **created_lt** (**string** — объекты, выданные или созданные до указанной даты)
 - **created_lte** (**string** — объекты, выданные или созданные до указанной даты включительно)||
 |#
-

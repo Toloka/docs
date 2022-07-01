@@ -10,23 +10,23 @@ In the request body, specify **all** the parameters for the project being update
 
 - Production version
 
-	```json
-	PUT https://toloka.yandex.com/api/v1/projects/<project_id>
-	Authorization: OAuth <OAuth token>
-	Content-Type: application/JSON
+  ```bash
+  PUT https://toloka.yandex.com/api/v1/projects/<project_id>
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-	{<project parameters, including updated ones>}
-	```
+  {<project parameters, including updated ones>}
+  ```
 
 - Sandbox
 
-	```json
-	PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
-	Authorization: OAuth <OAuth token>
-	Content-Type: application/JSON
+  ```bash
+  PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-	{<project parameters, including updated ones>}
-	```
+  {<project parameters, including updated ones>}
+  ```
 
 {% endlist %}
 
@@ -48,4 +48,3 @@ Title | Overview
 ## Response {#response}
 
 Contains updated information about the project in JSON format (see the [sample project](create-prj.md#body)).
-

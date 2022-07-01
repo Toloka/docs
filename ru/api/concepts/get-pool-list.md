@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/pools
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/pools
   Authorization: OAuth <OAuth token>
   ```
@@ -48,9 +48,8 @@
 - `created` — дата создания пула по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss];
 - `last_started` — дата последнего запуска пула в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
-||**Стандартные query-параметры** | 
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
+||**Стандартные query-параметры** |
 - **limit** (**integer** - ограничение на количество возвращаемых результатов. По умолчанию — 50, максимум — 300)
 - **id_gt** (**string** - объекты с идентификатором больше указанного значения)
 - **id_gte** (**string** - объекты с идентификатором больше или равным указанному значению)
@@ -81,14 +80,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -99,15 +98,15 @@
 {% list tabs %}
 
 - Боевая версия
- 
-  ```json
+
+  ```bash
   GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
   Authorization: OAuth <OAuth token>
   ```
@@ -120,4 +119,3 @@
 ```json
 {"items": [{parameters_of_pool_1}, {parameters_of_pool_2}, ... {parameters_of_pool__n_}], "has_more": false}
 ```
-

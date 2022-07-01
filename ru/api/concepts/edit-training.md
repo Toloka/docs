@@ -15,21 +15,21 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PUT https://toloka.yandex.com/api/v1/trainings/<training_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
-            
+
   {<training parameters, including updated ones>}
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   PUT https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
-            
+
   {<training parameters, including updated ones>}
   ```
 {% endlist %}
@@ -53,4 +53,3 @@
 ## Ответ {#response}
 
 Содержит сведения об измененном обучающем пуле (см. описание в разделе [Создать обучение](create-training.md#response)).
-

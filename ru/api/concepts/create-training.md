@@ -24,7 +24,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/trainings
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -32,7 +32,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/trainings
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -152,4 +152,3 @@
 
 Дата и время создания обучающего пула по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
 |#
-

@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -37,4 +37,3 @@
 ## Ответ {#response}
 
 Содержит [страницу заданий в формате JSON](create-task-suite.md#body).
-

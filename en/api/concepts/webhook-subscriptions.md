@@ -22,6 +22,4 @@ PUT | [/webhook-subscriptions](put-webhook-subscriptions.md) | Creates one or mo
 GET | [/webhook-subscriptions/<subscription_id>](get-webhook-subscriptions.md) | Gets subscription data.
 GET | [/webhook-subscriptions](get-webhook-subscriptions-list.md) | Gets data for multiple active subscriptions.
 DELETE | [/webhook-subscriptions/<subscription_id>](delete-webhook-subscriptions.md) | Deletes a subscription.
-POST | [api/v1/webhook-subscriptions/<subscription_id>/test](post-webhook-subscriptions.md) | Sends a test notification to the URL specified in the subscription.
-
-
+POST | [/webhook-subscriptions/<subscription_id>/test](post-webhook-subscriptions.md) | Sends a test notification to the URL specified in the subscription.

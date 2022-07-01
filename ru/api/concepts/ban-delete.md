@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   DELETE https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   DELETE https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -31,5 +31,3 @@
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
-

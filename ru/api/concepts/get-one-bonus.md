@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -49,7 +49,7 @@
   "public_message": {
     "EN": "10 tasks successfully completed"
   },
-  "without_message": false,            
+  "without_message": false,
   "id": "2092",
   "created": "2021-02-12T10:37:36.631"
 }
@@ -87,4 +87,3 @@
 
 Дата выдачи бонуса по UTC в формате ISO 8601 YYYY-MM-DDThh:mm:ss[.sss]||
 |#
-

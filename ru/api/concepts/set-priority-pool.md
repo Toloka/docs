@@ -12,7 +12,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PATCH https://toloka.yandex.com/api/v1/pools/<pool_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -20,7 +20,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   PATCH https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -44,7 +44,7 @@
 ```json
 {
    "priority": <from 0 to 100>
-} 
+}
 ```
 #|
 ||**Параметр** | **Описание**||
@@ -66,4 +66,3 @@
 
 
 Содержит обновленную информацию о пуле (см. описание в разделе [Создать пул](create-pool.md#response)).
-

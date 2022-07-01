@@ -8,14 +8,14 @@ Sends a test notification to the URL specified in the subscription.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
   Authorization: OAuth <OAuth token>
   ```
@@ -32,7 +32,7 @@ Parameter | Overview
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -112,4 +112,3 @@ Status code of the response from the subscription URL. ||
 
 Array of unique event numbers. ||
 |#
-

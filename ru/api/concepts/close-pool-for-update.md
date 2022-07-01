@@ -7,7 +7,7 @@
 {% note info %}
 
 Если после редактирования не открыть пул вручную, он откроется автоматически через 15 минут.
- 			В этом случае не производятся проверки, способные заблокировать открытие пула.
+       В этом случае не производятся проверки, способные заблокировать открытие пула.
 
 {% endnote %}
 
@@ -18,14 +18,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
   Authorization: OAuth <OAuth token>
   ```
@@ -95,4 +95,3 @@
 ||**parameters.pool_id** | **string**
 Идентификатор пула.||
 |#
-

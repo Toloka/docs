@@ -14,14 +14,14 @@ Exams with automatic acceptance by accuracy, where tasks with insufficient accur
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools/<pool_id>/archive
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/archive
   Authorization: OAuth <OAuth token>
   ```
@@ -97,4 +97,3 @@ The percentage of the operation completed. ||
 || **parameters.pool_id** | **string**
 Pool ID. ||
 |#
-

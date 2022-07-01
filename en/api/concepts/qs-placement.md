@@ -34,7 +34,7 @@ Use the `POST /api/v1/projects` method:
 
     Send a request from the command line using the cURL utility:
 
-    ```json
+    ```bash
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \
          -H 'Content-Type: application/JSON' \
@@ -91,16 +91,16 @@ Use the `POST /api/v1/projects` method:
     Fill in the fields:
 
     1. Request URL
-        ```json
+        ```bash
         https://sandbox.toloka.yandex.com/api/v1/projects
         ```
-        
+
     1. Headers
-        ```json
+        ```bash
         Authorization: OAuth <OAuth token>
         Content-Type: application/JSON
         ```
-        
+
     1. Body
         ```json
         {
@@ -193,7 +193,7 @@ Next, send a POST request to `/api/v1/pools`:
 
     Send a request from the command line using the cURL utility:
 
-    ```json
+    ```bash
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \
          -H 'Content-Type: application/JSON' \
@@ -273,16 +273,16 @@ Next, send a POST request to `/api/v1/pools`:
     Fill in the fields:
 
     1. Request URL
-        ```json
+        ```bash
         https://sandbox.toloka.yandex.com/api/v1/pools
         ```
-        
+
     1. Headers
-        ```json
+        ```bash
         Authorization: OAuth <OAuth token>
         Content-Type: application/JSON
         ```
-        
+
     1. Body
         ```json
         {
@@ -352,7 +352,7 @@ Next, send a POST request to `/api/v1/pools`:
            "defaults": {
               "default_overlap_for_new_task_suites": 3
            }
-        }        
+        }
         ```
 
 {% endlist %}
@@ -397,7 +397,7 @@ Next, send a POST request to `/api/v1/tasks`:
 
     Send a request from the command line using the cURL utility:
 
-    ```json
+    ```bash
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \
          -H 'Content-Type: application/JSON' \
@@ -432,16 +432,16 @@ Next, send a POST request to `/api/v1/tasks`:
     Fill in the fields:
 
     1. Request URL
-        ```json
+        ```bash
         https://sandbox.toloka.yandex.com/api/v1/tasks
         ```
-        
+
     1. Headers
-        ```json
+        ```bash
         Authorization: OAuth <OAuth token>
         Content-Type: application/JSON
         ```
-        
+
     1. Body
         ```json
         [
@@ -502,12 +502,12 @@ In the `<pool_id>` path parameter, insert the ID of the pool to start (the ID re
     Fill in the fields:
 
     1. Request URL
-        ```json
+        ```bash
         https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
         ```
-        
-    1. Headers        
-        ```json
+
+    1. Headers
+        ```bash
         Authorization: OAuth <OAuth token>
         Content-Type: application/JSON
         ```
@@ -529,4 +529,3 @@ Read the [instructions on how to get results](qs-results.md).
 - [HTTP methods for working with projects](project.md).
 - [HTTP methods for working with pools](pool.md).
 - [HTTP methods for uploading tasks](tasks.md).
-

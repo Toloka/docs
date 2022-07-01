@@ -12,42 +12,16 @@
 
 #|
 ||**Метод** | **Эндпоинт** | **Описание**||
-||POST | [/trainings](create-training.md) | 
-
-{% include [create-training-create](../_includes/concepts/create-training/id-create-training/create.md) %}
-||
-||PUT | [/trainings/<training_pool_id>](edit-training.md) | 
-
-{% include [edit-training-edit](../_includes/concepts/edit-training/id-edit-training/edit.md) %}
-||
-||POST | [/trainings/<training_pool_id>/open](open-training.md) | 
-
-{% include [open-training-open](../_includes/concepts/open-training/id-open-training/open.md) %}
-||
-||POST | [/trainings/<training_pool_id>/close](close-training.md) | 
-
-{% include [close-training-close](../_includes/concepts/close-training/id-close-training/close.md) %}
-||
-||POST | [/training/<training_pool_id>/archive](archive-training.md) | 
-
-{% include [archive-training-archive](../_includes/concepts/archive-training/id-archive-training/archive.md) %}
-||
-||POST | [/training/<training_pool_id>/clone](clone-training.md) | 
-
-{% include [clone-training-clone](../_includes/concepts/clone-training/id-clone-training/clone.md) %}
-||
-||GET | [/trainings](get-training-list.md) | 
-
-{% include [get-training-list-get-list](../_includes/concepts/get-training-list/id-get-training-list/get-list.md) %}
-||
-||GET | [/trainings/<training_pool_id>](get-training.md) | 
-
-{% include [get-training-get-settings](../_includes/concepts/get-training/id-get-training/get-settings.md) %}
-||
+||POST | [/trainings](create-training.md) |{% include [create-training-create](../_includes/concepts/create-training/id-create-training/create.md) %}||
+||PUT | [/trainings/<training_pool_id>](edit-training.md) |{% include [edit-training-edit](../_includes/concepts/edit-training/id-edit-training/edit.md) %}||
+||POST | [/trainings/<training_pool_id>/open](open-training.md) |{% include [open-training-open](../_includes/concepts/open-training/id-open-training/open.md) %}||
+||POST | [/trainings/<training_pool_id>/close](close-training.md) |{% include [close-training-close](../_includes/concepts/close-training/id-close-training/close.md) %}||
+||POST | [/training/<training_pool_id>/archive](archive-training.md) |{% include [archive-training-archive](../_includes/concepts/archive-training/id-archive-training/archive.md) %}||
+||POST | [/training/<training_pool_id>/clone](clone-training.md) |{% include [clone-training-clone](../_includes/concepts/clone-training/id-clone-training/clone.md) %}||
+||GET | [/trainings](get-training-list.md) |{% include [get-training-list-get-list](../_includes/concepts/get-training-list/id-get-training-list/get-list.md) %}||
+||GET | [/trainings/<training_pool_id>](get-training.md) |{% include [get-training-get-settings](../_includes/concepts/get-training/id-get-training/get-settings.md) %}||
 |#
-
 
 ## Узнайте больше {#links}
 
 - [Подробнее о обучающих пулах]({{ requester-train }})
-

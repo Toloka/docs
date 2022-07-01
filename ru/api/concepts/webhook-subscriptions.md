@@ -18,26 +18,9 @@
 
 #|
 ||**Метод** | **Эндпоинт** | **Описание** ||
-||PUT | [/webhook-subscriptions](put-webhook-subscriptions.md) | 
-
-{% include [put-webhook-subscriptions-create](../_includes/concepts/put-webhook-subscriptions/id-put-webhook-subscriptions/create.md) %}
-||
-||GET | [/webhook-subscriptions/<subscription_id>](get-webhook-subscriptions.md) | 
-
-{% include [get-webhook-subscriptions-get-subscription](../_includes/concepts/get-webhook-subscriptions/id-get-webhook-subscriptions/get-subscription.md) %}
-||
-||GET | [/webhook-subscriptions](get-webhook-subscriptions-list.md) | 
-
-{% include [get-webhook-subscriptions-list-get-list](../_includes/concepts/get-webhook-subscriptions-list/id-get-webhook-subscriptions-list/get-list.md) %}
-||
-||DELETE | [/webhook-subscriptions/<subscription_id>](delete-webhook-subscriptions.md) | 
-
-{% include [delete-webhook-subscriptions-delete-subscription](../_includes/concepts/delete-webhook-subscriptions/id-delete-webhook-subscriptions/delete-subscription.md) %}
-||
-||POST | [api/v1/webhook-subscriptions/<subscription_id>/test](post-webhook-subscriptions.md) | 
-
-{% include [post-subscription](../_includes/concepts/post-webhook-subscriptions/post-subscription.md) %}
-||
+||PUT | [/webhook-subscriptions](put-webhook-subscriptions.md) | {% include [put-webhook-subscriptions-create](../_includes/concepts/put-webhook-subscriptions/id-put-webhook-subscriptions/create.md) %}||
+||GET | [/webhook-subscriptions/<subscription_id>](get-webhook-subscriptions.md) | {% include [get-webhook-subscriptions-get-subscription](../_includes/concepts/get-webhook-subscriptions/id-get-webhook-subscriptions/get-subscription.md) %}||
+||GET | [/webhook-subscriptions](get-webhook-subscriptions-list.md) | {% include [get-webhook-subscriptions-list-get-list](../_includes/concepts/get-webhook-subscriptions-list/id-get-webhook-subscriptions-list/get-list.md) %}||
+||DELETE | [/webhook-subscriptions/<subscription_id>](delete-webhook-subscriptions.md) | {% include [delete-webhook-subscriptions-delete-subscription](../_includes/concepts/delete-webhook-subscriptions/id-delete-webhook-subscriptions/delete-subscription.md) %}||
+||POST | [/webhook-subscriptions/<subscription_id>/test](post-webhook-subscriptions.md) | {% include [post-subscription](../_includes/concepts/post-webhook-subscriptions/post-subscription.md) %}||
 |#
-
-

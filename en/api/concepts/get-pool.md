@@ -10,17 +10,17 @@ You can get the pool ID from the [list of pools](get-pool-list.md).
 
 - Production version
 
-	```json
-	GET https://toloka.yandex.com/api/v1/pools/<pool_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://toloka.yandex.com/api/v1/pools/<pool_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	GET https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+  Authorization: OAuth <OAuth token>
+  ```
 {% endlist %}
 
 ## Path parameters {#path-params}
@@ -40,4 +40,3 @@ Title | Overview
 ## Response {#response}
 
 Contains pool parameters (see the description in the [Create a pool](create-pool.md#response) section).
-

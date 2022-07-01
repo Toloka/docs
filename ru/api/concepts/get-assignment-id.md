@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/assignments/<response_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/assignments/<response_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -109,28 +109,32 @@
 
 Для обучающих заданий. Первоначальные ответы исполнителя в обучающем задании (только если эти ответы были неправильными). Если исполнитель ответил правильно с первой попытки, массив `first_declined_solution_attempt` отсутствует.
 Массивы с ответами (`output_values`) расположены в том же порядке, что и данные заданий в массиве `tasks`.
-```json {
-       "output_values": {
-         "<field 1>": <response>,
-         "<field 2>": <response>
- ...
-         "<field N>": <response>
-       },
- ...
-     } 
+
+```json
+{
+  "output_values": {
+    "<field 1>": <response>,
+    "<field 2>": <response>
+     ...
+    "<field N>": <response>
+  },
+  ...
+}
 ```
 ||
 ||**solutions[]** | **array of objects**
 Ответы исполнителя. Расположены в том же порядке, что и данные заданий в массиве `tasks`.
-```json {
-       "output_values": {
-         "<field 1>": <response>,
-         "<field 2>": <response>
- ...
-         "<field N>": <response>
-       },
- ...
-     } 
+
+```json
+{
+  "output_values": {
+    "<field 1>": <response>,
+    "<field 2>": <response>
+    ...
+    "<field N>": <response>
+  },
+  ...
+}
 ```
 ||
 ||**mixed** | **boolean**
@@ -174,5 +178,3 @@
 - `true` — исполнителю, чей OAuth-токен указан в запросе;
 - `false` — другому аккаунту (сотруднику или владельцу).||
 |#
-
-

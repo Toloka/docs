@@ -15,23 +15,23 @@ Learn about editing a main pool in the section [Edit pool](edit-pool.md).
 
 - Production version
 
-	```json
-	PUT https://toloka.yandex.com/api/v1/trainings/<training_id>
-	Authorization: OAuth <OAuth token>
-	Content-Type: application/JSON
-	            
-	{<training parameters, including updated ones>}
-	```
+  ```bash
+  PUT https://toloka.yandex.com/api/v1/trainings/<training_id>
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
+
+  {<training parameters, including updated ones>}
+  ```
 
 - Sandbox
 
-	```json
-	PUT https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
-	Authorization: OAuth <OAuth token>
-	Content-Type: application/JSON
-	            
-	{<training parameters, including updated ones>}
-	```
+  ```bash
+  PUT https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
+
+  {<training parameters, including updated ones>}
+  ```
 {% endlist %}
 
 ## Path parameters {#path-params}
@@ -56,4 +56,3 @@ In the request body, specify **all** the pool [parameters](create-training.md#tr
 ## Response {#response}
 
 Contains information about a modified training pool (see the description in the [Create a training pool](create-training.md#response) section).
-

@@ -24,7 +24,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -32,7 +32,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -659,5 +659,3 @@
 Устаревший параметр.
 Тип пула. Всегда имеет значение `REGULAR` — обычный пул.||
 |#
-
-

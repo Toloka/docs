@@ -8,7 +8,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -33,7 +33,7 @@
 ```json
 {
   "pool_id": "283",
-  "type": "WEIGHTED_DYNAMIC_OVERLAP", 
+  "type": "WEIGHTED_DYNAMIC_OVERLAP",
   "answer_weight_skill_id": "1289",
   "fields": [
     {
@@ -114,5 +114,3 @@
 
 Параметры операции в запросе.||
 |#
-
-

@@ -4,7 +4,7 @@ To edit the server data, log in as a requester and send an AJAX request from you
 
 ## Request {#request}
 
-```json
+```js
 $.ajax({
       url: '/api/new/requester/proxy/proxy/{id}',
       method: 'PATCH',
@@ -22,7 +22,7 @@ $.ajax({
 });
 ```
 
-#| 
+#|
 || Parameter | Overview ||
 || **id** | **string \| required**
 
@@ -32,24 +32,24 @@ The requester's server ID. ||
 Level of access to files hosted on the requester's server. Acceptable values:
 
 - ASSIGNMENT_PRIVATE — Access is only granted to the Tolokers whose tasks contain a server link. Suitable for task content.
-    
+
     #### Example
-    
+
     The following is called in Toloka: `toloka.yandex.com/api/proxy/test-proxy/test-path`.
-    
+
     If the task contains an input field with the URL or String type and its value is:
     - `proxy/test-proxy/example-id`,
-    
+
     - `test-proxy/example-id`,
-    
+
     - `example-id`,
-    
+
     the request will be proxied to the requester's server.
-    
+
     If the task does not have a field with one of these values, no request proxying is done.
-    
+
 - PRIVATE — Access is only granted to Tolokers who are doing tasks for this requester (server owner). The task itself is not checked for a link to the server. Appropriate for general actions in tasks.
-    
+
 - PUBLIC — Access is granted to all Toloka Tolokers. Appropriate for files with instructions. ||
 || **type** | **string \| required**
 
@@ -84,4 +84,3 @@ Additional parameters that will be passed in the request to the requester's serv
 ## Response {#response}
 
 Contains server parameters (both updated and not) in JSON format.
-

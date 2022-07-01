@@ -8,17 +8,17 @@ Gets task data.
 
 - Production version
 
-	```json
-	GET https://toloka.yandex.com/api/v1/tasks/<task_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://toloka.yandex.com/api/v1/tasks/<task_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	GET https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -39,4 +39,3 @@ Title | Overview
 ## Response {#response}
 
 Contains [task data in JSON format](create-task.md#body).
-

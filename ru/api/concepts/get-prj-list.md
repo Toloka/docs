@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/projects
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/projects
   Authorization: OAuth <OAuth token>
   ```
@@ -45,8 +45,7 @@
 - `public_name` — название проекта;
 - `private_comment` — комментарий к проекту.
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**owner** | **string**
 
 Идентификатор заказчика.||
@@ -75,14 +74,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -94,14 +93,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<ID of the last project from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<id of the last project from the previous response>
   Authorization: OAuth <OAuth token>
   ```
@@ -114,4 +113,3 @@
 ```json
 {"items": [{properties of project 1}, {properties of project 2}, ... {properties of project n}], "has_more": false}
 ```
-

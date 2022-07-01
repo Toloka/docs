@@ -8,7 +8,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -51,5 +51,3 @@
 ||**text** | **string**
 Текст сообщения. Можно привести текст на нескольких языках (сообщение придет на языке исполнителя). Формат: `"<язык RU/EN/TR/ID/FR>": "<текст сообщения>"`.||
 |#
-
-

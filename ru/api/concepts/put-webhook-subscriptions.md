@@ -8,7 +8,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PUT https://toloka.yandex.com/api/v1/webhook-subscriptions
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   PUT https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -151,5 +151,3 @@ URL, на который будут приходить уведомления.||
 
 Объект с валидационными ошибками.||
 |#
-
-

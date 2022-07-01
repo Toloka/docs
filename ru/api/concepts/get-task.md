@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/tasks/<task_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -37,4 +37,3 @@
 ## Ответ {#response}
 
 Содержит [данные задания в формате JSON](create-task.md#body).
-

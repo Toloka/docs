@@ -8,7 +8,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -71,4 +71,3 @@
 ## Ответ {#response}
 
 Содержит [страницу заданий в формате JSON](task-suite.md).
-

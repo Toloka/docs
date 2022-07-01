@@ -10,7 +10,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -18,7 +18,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -50,4 +50,3 @@
 ## Ответ {#response}
 
 Содержит [данные задания в формате JSON](create-task.md#body).
-

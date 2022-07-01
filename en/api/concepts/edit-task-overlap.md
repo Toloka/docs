@@ -6,7 +6,7 @@ You can:
 - Set a [numeric value](create-task.md#overlap) or an [infinite overlap](create-task.md#infinite) to assign a task to all Tolokers (for example, for training tasks).
 - Add preliminary responses or change [their values](create-task.md#baseline) if they were set.
     Preliminary responses are used to calculate  response confidence when dynamic overlap (incremental relabeling, IRL) is enabled.
-    
+
 - Make [control](./glossary.md#control) and [training](./glossary.md#training-tasks) tasks from regular ones or edit [responses](create-task.md#known) and [hints](create-task.md#message) for existing tasks.
 
 ## Request {#request}
@@ -15,7 +15,7 @@ You can:
 
 - Production version
 
-  ```json
+  ```bash
   PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -23,7 +23,7 @@ You can:
 
 - Sandbox
 
-  ```json
+  ```bash
   PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task ID>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -95,4 +95,3 @@ Parameter | Overview
 ## Response {#response}
 
 Contains [task data in JSON format](create-task.md#body).
-

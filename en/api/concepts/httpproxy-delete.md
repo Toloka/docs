@@ -4,7 +4,7 @@ To delete a registered requester server, log in as a requester and send an AJAX 
 
 ## Request {#request}
 
-```json
+```js
 $.ajax({
       url: '/api/new/requester/proxy/proxy/{id}',
       method: 'DELETE'
@@ -14,4 +14,3 @@ $.ajax({
 ## Response {#response}
 
 If the request is successful, the server returns the "204 No Content" or "404 Not Found" HTTP operation status.
-

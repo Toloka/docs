@@ -8,14 +8,14 @@ Gets information about a ban.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -25,14 +25,14 @@ Gets information about a ban.
 ## Path parameters {#path-params}
 
 Parameter | Overview
------ | ----- 
+----- | -----
 **ban_id** | ID of the ban.
 
 
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -59,9 +59,9 @@ Contains ban parameters in JSON format. Example:
 The scope of the ban:
 
 - `ALL_PROJECTS` — All the requester's projects.
-    
+
 - `PROJECT` — A single project (specify the `project_id`).
-    
+
 - `POOL` — A pool (specify the `pool_id`). ||
 || **user_id** | **string**
 

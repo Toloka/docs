@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/task-suites
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/task-suites
   Authorization: OAuth <OAuth token>
   ```
@@ -48,8 +48,7 @@
 - `id` — идентификатор страницы заданий;
 - `created` — дата создания страницы заданий по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**overlap** | **integer**
 
 Страницы с перекрытием, равным указанному значению.||
@@ -82,14 +81,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -102,14 +101,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
   Authorization: OAuth <OAuth token>
   ```
@@ -123,4 +122,3 @@
 ```json
 {"items" : [{task suite 1}, {task suite 2}, ... {task suite n}], "has_more": true}
 ```
-

@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -77,5 +77,3 @@ URL, на который будут приходить уведомления.||
 
 Дата и время по создания подписки (по UTC). Формат даты ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
 |#
-
-

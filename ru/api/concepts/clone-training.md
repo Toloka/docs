@@ -10,14 +10,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/training/<training_id>/clone
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/clone
   Authorization: OAuth <OAuth token>
   ```
@@ -83,5 +83,3 @@
 ||**details.training_id** | **string**
 Идентификатор нового обучающего пула.||
 |#
-
-

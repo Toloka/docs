@@ -13,14 +13,14 @@ When you send requests, an operation is created. To track the progress of the op
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/trainings/<training_id>/close
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/close
   Authorization: OAuth <OAuth token>
   ```
@@ -94,4 +94,3 @@ ID of the training pool. ||
 || **details** | **object**
 Details of the operation completion. ||
 |#
-

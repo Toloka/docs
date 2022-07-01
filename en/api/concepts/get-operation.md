@@ -8,14 +8,14 @@ Gets operation details.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/operations/<operation_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -74,16 +74,16 @@ Operation ID. ||
 Operation type:
 
 - `POOL.OPEN` — Opening a pool.
-    
+
 - `POOL.CLOSE` — Closing a pool.
-    
+
 - `PROJECT.ARCHIVE` — Archiving a project.
-    
+
 - `POOL.ARCHIVE` — Archiving a pool.
-    
+
 - `SOLUTION.AGGREGATE` — Aggregating responses.
 - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites.
-    
+
 - `KNOWN_SOLUTIONS.GENERATE` — Generating control tasks.
 ||
 || **status** | **string \| mandatory**
@@ -91,12 +91,12 @@ Operation type:
 The status of the operation:
 
 - `PENDING` — Not started yet.
-    
+
 - `RUNNING` — In progress.
-    
+
 - `SUCCESS` — Completed successfully.
-    
-- `FAIL` — Not completed. 
+
+- `FAIL` — Not completed.
 ||
 || **submitted** | **string \| mandatory**
 
@@ -119,4 +119,4 @@ Details of the operation completion. ||
 |#
 
 
-The response doesn't provide a detailed error description. If an error has occurred, [request the operation log](get-operation-log.md). 
+The response doesn't provide a detailed error description. If an error has occurred, [request the operation log](get-operation-log.md).

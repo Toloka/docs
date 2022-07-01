@@ -8,14 +8,14 @@ Gets user data by `user_id`.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-metadata/<user_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-metadata/<user_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -63,4 +63,3 @@ Contains user metadata in JSON format.
   }
 }
 ```
-

@@ -8,15 +8,15 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/tasks
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
-  GET https://sandbox.toloka.yandex.com/api/v1/tasks 
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/tasks
   Authorization: OAuth <OAuth token>
   ```
 
@@ -64,7 +64,7 @@
 |#
 
 ## Пример запроса {#request-example}
- Можно настроить показ списка заданий частями (например, по 10 заданий): 
+ Можно настроить показ списка заданий частями (например, по 10 заданий):
 1. Показать первые 10 заданий, начиная с подписки с наименьшим идентификатором.
 1. Показывать оставшиеся задания по 10 штук в порядке возрастания.
 
@@ -74,14 +74,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -94,14 +94,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
   Authorization: OAuth <OAuth token>
   ```
@@ -115,4 +115,3 @@
 ```json
 {"items" : [{task 1}, {task 2}, ... {task n}], "has_more": true}
 ```
-

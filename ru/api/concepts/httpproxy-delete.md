@@ -4,7 +4,7 @@
 
 ## Запрос {#request}
 
-```json
+```js
 $.ajax({
       url: '/api/new/requester/proxy/proxy/{id}',
       method: 'DELETE'
@@ -14,4 +14,3 @@ $.ajax({
 ## Ответ {#response}
 
 Если запрос выполнен успешно, сервер возвращает HTTP-статус выполнения операции: «204 No Content» или «404 Not Found».
-

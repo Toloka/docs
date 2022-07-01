@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
   Authorization: OAuth <OAuth token>
   ```
@@ -106,5 +106,3 @@
 
 Массив уникальных номеров события.||
 |#
-
-

@@ -24,7 +24,7 @@ Learn about creating a main pool in [Create a pool](create-pool.md).
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/trainings
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -32,7 +32,7 @@ Learn about creating a main pool in [Create a pool](create-pool.md).
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/trainings
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -43,7 +43,7 @@ Learn about creating a main pool in [Create a pool](create-pool.md).
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
@@ -157,4 +157,3 @@ Training pool status:
 
 The UTC date and time when the training pool was created, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
 |#
-

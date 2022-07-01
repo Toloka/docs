@@ -5,9 +5,9 @@ Moves a training pool to the archive.
 If a training pool isn't in use, it can be moved to the archive. Before archiving, check two conditions:
 
 - The training pool must have the "closed" status.
-    
+
 - All the main pools that the training pool is linked to must be [sent to the archive](archive-pool.md).
-    
+
 
 ## Request {#request}
 
@@ -15,14 +15,14 @@ If a training pool isn't in use, it can be moved to the archive. Before archivin
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/training/<training_id>/archive
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/archive
   Authorization: OAuth <OAuth token>
   ```
@@ -95,4 +95,3 @@ ID of the training pool. ||
 || **details** | **object**
 Details of the operation completion. ||
 |#
-

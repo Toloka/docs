@@ -15,7 +15,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/projects
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -25,7 +25,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/projects
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -60,7 +60,7 @@
       "result": {
         "type": "string",
         "required": true,
-        "hidden": false                
+        "hidden": false
       }
     },
     "view_spec": {
@@ -164,14 +164,14 @@
 
 - `AUTOMATED` — исполнителю выдается страница заданий из пула. Вы можете [настроить](create-pool.md#issue_task_suites_in_creation_order), в каком порядке выдаются страницы заданий.
 - `MAP_SELECTOR` — исполнитель выбирает страницу заданий на карте. При выборе способа `MAP_SELECTOR` укажите текст для отображения в названии и описании карты в ключе `assignments_issuing_view_config`:
-   
-  ```json 
+
+  ```json
   "assignments_issuing_view_config": {
       "title_template": "<task name>",
       "description_template": "<brief description of the task>",
-      "map_provider": "YANDEX"}  
+      "map_provider": "YANDEX"}
   ```
-  
+
   По умолчанию значение `AUTOMATED`.||
 ||**assignments_issuing_view_config.map_provider** | **string**
 
@@ -288,9 +288,9 @@ CSS-интерфейс задания.
 - `$TOLOKA_ASSETS/js/image-annotation.js` — интерфейс разметки картинок (см. в разделе [Картинка с возможностью выделения областей]({{ requester-image-annotation }}) Руководства заказчика).
 
 Интерфейс разметки картинок нужно подключать только вместе с хелперами Handlebars. Порядок подключения важен:
-``` 
- "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js", 
- "$TOLOKA_ASSETS/js/image-annotation.js"] 
+```
+ "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
+ "$TOLOKA_ASSETS/js/image-annotation.js"]
 ```
 ||
 ||**assets.style_urls[]** | **array of strings**
@@ -309,8 +309,7 @@ CSS-интерфейс задания.
 
 Ключи на исходном языке.
 
-{% include [create-prj-requester-interface-translate](../_includes/concepts/create-prj/id-create-prj/requester-interface-translate.md) %}
-||
+{% include [create-prj-requester-interface-translate](../_includes/concepts/create-prj/id-create-prj/requester-interface-translate.md) %}||
 ||**settings.showTimer** | **boolean**
 
 Показывать таймер. По умолчанию значение `true`.||
@@ -452,5 +451,3 @@ CSS-интерфейс задания.
 
 Дата и время создания проекта по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
 |#
-
-

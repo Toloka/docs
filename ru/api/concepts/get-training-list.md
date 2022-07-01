@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/trainings
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/trainings
   Authorization: OAuth <OAuth token>
   ```
@@ -47,8 +47,7 @@
 - `created` — дата создания обучающего пула по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss];
 - `last_started` — дата последнего запуска обучающего пула в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**Стандартные query-параметры** |
 - **limit** (**integer** — ограничение на количество возвращаемых результатов. По умолчанию — 50, максимум — 300)
 - **id_gt** (**string** — объекты с идентификатором больше указанного значения)
@@ -79,14 +78,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -98,14 +97,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
   Authorization: OAuth <OAuth token>
   ```
@@ -118,4 +117,3 @@
 ```no-highlight
 {"items" : [{parameters_of_training_pool_1}, {parameters_of_training_pool_2}, ... {parameters_of_training_pool__n_}], "has_more": false}
 ```
-

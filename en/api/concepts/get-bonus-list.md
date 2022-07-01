@@ -8,24 +8,24 @@ Gets a list of rewards issued.
 
 - Production version
 
-	```json
-	GET https://toloka.yandex.com/api/v1/user-bonuses
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://toloka.yandex.com/api/v1/user-bonuses
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -52,7 +52,7 @@ Parameters to sort by:
 - `created` — The date when the reward was awarded, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** | 
+|| **Standard query parameters** |
 [limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte). ||
 |#
 
@@ -70,17 +70,17 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 
 - Production version
 
-	```json
-	GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -91,18 +91,18 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 
 - Production version
 
-	```json
-	GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 
 - Sandbox
 
-	```json
-	GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -113,4 +113,3 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 ```json
 {"items" : [{bonus #1}, {bonus #2}, ... {bonus #n}], "has_more": true}
 ```
-
