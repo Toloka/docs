@@ -10,14 +10,14 @@ If a project isn't being used, you can send it to the archive. To do this, al
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
   Authorization: OAuth <OAuth token>
   ```
@@ -34,7 +34,7 @@ Parameter | Overview
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -72,11 +72,11 @@ Operation type:
 The status of the operation:
 
 - `PENDING` — Not started yet.
-    
+
 - `RUNNING` — In progress.
-    
+
 - `SUCCESS` — Completed successfully.
-    
+
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
@@ -96,4 +96,3 @@ Project ID. ||
 |#
 
 You can check the operation status by sending requests to the `/operations` resource. For more information, see [Overview](operations.md).
-

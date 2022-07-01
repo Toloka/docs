@@ -4,7 +4,7 @@
 
 ## Запрос {#request}
 
-```json
+```js
 $.ajax({
       url: '/api/new/requester/proxy/proxy',
       method: 'POST',

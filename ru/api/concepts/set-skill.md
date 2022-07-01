@@ -15,7 +15,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PUT https://toloka.yandex.com/api/v1/user-skills
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -23,7 +23,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   PUT https://sandbox.toloka.yandex.com/api/v1/user-skills
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -104,5 +104,3 @@
 
 Дата и время по UTC, когда изменился уровень навыка у исполнителя. Формат даты ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
 |#
-
-

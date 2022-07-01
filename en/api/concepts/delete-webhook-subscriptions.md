@@ -8,17 +8,17 @@ Deletes a subscription.
 
 - Production version
 
-	```json
-	DELETE https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  DELETE https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	DELETE https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  DELETE https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -39,4 +39,3 @@ Title | Overview
 ## Response {#response}
 
 If the request is successful, the server returns the "204 No Content" or "404 Not Found" HTTP operation status.
-

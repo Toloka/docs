@@ -8,14 +8,14 @@ Gets the properties of a response.
 
 - Production version
 
-    ```json
+    ```bash
     GET https://toloka.yandex.com/api/v1/assignments/<response_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
-    ```json
+    ```bash
     GET https://sandbox.toloka.yandex.com/api/v1/assignments/<response_id>
     Authorization: OAuth <OAuth token>
     ```
@@ -25,14 +25,14 @@ Gets the properties of a response.
 ## Path parameters {#path-params}
 
 Parameter | Overview
------ | ----- 
+----- | -----
 **response_id** | ID of the task suite assignment to a Toloker.
 
 
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -91,15 +91,15 @@ ID of the Toloker who was assigned the task suite. ||
 Status of an assigned task suite:
 
 - `ACTIVE` — Being completed by a Toloker.
-    
+
 - `SUBMITTED` — Completed but not checked.
-    
+
 - `ACCEPTED` — Accepted by the requester.
-    
+
 - `REJECTED` — Rejected by the requester.
-    
+
 - `SKIPPED` — Skipped by the Toloker.
-    
+
 - `EXPIRED` — The time for completing the tasks expired. ||
 || **reward** | **integer**
 
@@ -120,7 +120,7 @@ Maximum length: 2048 characters. ||
 For training tasks. The Toloker's first responses in the training task (only if these were the wrong answers). If the Toloker answered correctly on the first try, the `first_declined_solution_attempt` array is omitted.
 
 Arrays with the responses (`output_values`) are arranged in the same order as the task data in the `tasks` array.
-```json 
+```json
 {
        "output_values": {
          "<field 1>": <response>,
@@ -129,13 +129,13 @@ Arrays with the responses (`output_values`) are arranged in the same order as th
          "<field N>": <response>
        },
 ...
-} 
-``` 
+}
+```
 ||
 || **solutions[]** | **array of objects**
 Toloker responses. Arranged in the same order as the data for tasks in the `tasks` array.
 
-```json 
+```json
 {
        "output_values": {
          "<field 1>": <response>,
@@ -144,17 +144,17 @@ Toloker responses. Arranged in the same order as the data for tasks in the `task
          "<field N>": <response>
        },
 ...
-} 
-``` 
+}
+```
 ||
 || **mixed** | **boolean**
 
 Type of operation for creating a task suite:
 
 - `true` — Automatic ("smart mixing").
-    
+
 - — Manually.
-    
+
 
 The default value is `false`.
 
@@ -199,8 +199,7 @@ Checks who the object belongs to:
 
 The requester's company ID.
 
-{% endif %} 
+{% endif %}
 
 ||
 |#
-

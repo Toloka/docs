@@ -16,7 +16,7 @@ Adds a message thread to a folder.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -24,7 +24,7 @@ Adds a message thread to a folder.
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -39,7 +39,7 @@ Deletes a message thread from a folder.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -47,7 +47,7 @@ Deletes a message thread from a folder.
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -84,4 +84,3 @@ Title | Overview
 
 Folders to add a message thread to or remove a message thread from. ||
 |#
-

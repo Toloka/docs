@@ -3,13 +3,13 @@
 Приведенный пример создавался в песочнице, поэтому для дальнейшей обработки результатов необходимо выполнить задания от лица доверенного пользователя:
 
 1. Зарегистрируйтесь в [песочнице Толоки]({{ sandbox }}) в качестве заказчика.
-    
+
 1. Зайдите в песочницу с логином заказчика и перейдите по ссылке  на странице [Пользователи]({{ sandbox-workers }}).
-    
+
 1. Нажмите кнопку  и введите логин созданного аккаунта.
-    
+
 1. Выполните задания в песочнице с логином доверенного пользователя.
-    
+
 
 Если выполнено хотя бы одно задание из пула, вы можете получить ответы.
 
@@ -30,7 +30,7 @@
   {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
 
-  ```json
+  ```bash
   curl -X GET \
        -H 'Authorization: OAuth <OAuth token>' \
   https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
@@ -42,14 +42,14 @@
 
 
   1. Request URL
-    
-      ```json
+
+      ```bash
       https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
       ```
-    
+
   1. Headers
-    
-      ```json
+
+      ```bash
       Authorization: OAuth <OAuth token>
       ```
 
@@ -226,4 +226,3 @@
 - [HTTP-методы для обработки файлов в ответах исполнителей](attachments.md).
 - [Агрегация ответов](aggregated-solutions.md).
 - [Использование библиотек](libraries.md).
-

@@ -17,14 +17,14 @@ If you don't open the pool manually after editing, it opens automatically in 15 
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
   Authorization: OAuth <OAuth token>
   ```
@@ -34,7 +34,7 @@ If you don't open the pool manually after editing, it opens automatically in 15 
 ## Path parameters {#path-params}
 
 Parameter | Overview
------ | ----- 
+----- | -----
 **pool_id** | Pool ID.
 
 
@@ -98,4 +98,3 @@ The percentage of the operation completed. ||
 || **parameters.pool_id** | **string**
 Pool ID. ||
 |#
-

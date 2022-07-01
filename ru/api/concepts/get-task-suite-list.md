@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/task-suites
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/task-suites
   Authorization: OAuth <OAuth token>
   ```
@@ -81,14 +81,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -101,14 +101,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
   Authorization: OAuth <OAuth token>
   ```

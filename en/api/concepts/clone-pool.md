@@ -10,14 +10,14 @@ An empty pool will be created with the same parameters.
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/clone
   Authorization: OAuth <OAuth token>
   ```
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools/<pool_id>/clone
   Authorization: OAuth <OAuth token>
   ```
@@ -89,4 +89,3 @@ Source pool ID. ||
 || **details.pool_id** | **string**
 New pool ID. ||
 |#
-

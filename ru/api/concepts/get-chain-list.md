@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/message-threads
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/message-threads
   Authorization: OAuth <OAuth token>
   ```

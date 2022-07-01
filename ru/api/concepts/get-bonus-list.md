@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-bonuses
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
   Authorization: OAuth <OAuth token>
   ```
@@ -73,14 +73,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -92,14 +92,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
   Authorization: OAuth <OAuth token>
   ```

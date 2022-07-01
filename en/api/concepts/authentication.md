@@ -21,24 +21,24 @@ To verify that requests were sent via the Toloka API:
     ```
     Toloka-Signature : {v=1, ts=946728000000, sign=d3...ab}
     ```
-    
+
 1. Concatenate the values of the **ts** and **v** fields with the request payload string. Use a dot as the separator.
     ```
     946728000000.1.{"events":...}
     ```
-    
+
 1. With the HMAC Sha256 algorithm, generate a signature from the concatenated string and your secret key.
     ```
     hmac_sha256(secret_key, '946728000000.1.{"events":...}')
     ```
-    
+
 1. Compare the generated signature and the signature from the **Toloka-Signature** header. If they match, the requests were sent using the Toloka API.
 
 ## Validation example {#example-validation}
 
 Let's take a look at a sample event notification sent by the Toloka API:
 
-```json
+```bash
 POST /webhook_endpoint HTTP/1.1
 Host: client_api
 Toloka-Signature: {v=1, ts=946728000000, sign=609af3eefd4c12b6afad30ab456efcd21f}
@@ -71,7 +71,7 @@ import hashlib
 
 def is_valid_signature(secret_key, request_payload, toloka_header_ts,
     toloka_header_v, toloka_header_sign):
-    data = str(toloka_header_ts) + '.' + str(toloka_header_v) + '.' 
+    data = str(toloka_header_ts) + '.' + str(toloka_header_v) + '.'
     + request_payload signature = hmac.new(bytearray(secret_key.encode()),
     bytearray(data.encode()), hashlib.sha256)
     return signature.hexdigest() == toloka_header_sign
@@ -79,7 +79,7 @@ def is_valid_signature(secret_key, request_payload, toloka_header_ts,
 # the secret key used when creating a subscription
 secret_key = '12345'
 
-# the body of the request received from the Toloka API 
+# the body of the request received from the Toloka API
 request_payload = "{\"events\":[{\"event_time\":
     \"2000-01-01T12:00:00\",
     \"project_id\":\"project-1\",
@@ -89,7 +89,7 @@ request_payload = "{\"events\":[{\"event_time\":
     \"assignment_id\":\"assignment-1\",
     \"webhook_subscription_id\":\"subscription-1\",
     \"type\":\"ASSIGNMENT_APPROVED\"}]}"
-                
+
 # the "ts" field value from the incoming Toloka-Signature header               toloka_header_ts = 946728000000
 
 # the "v" field value from the incoming Toloka-Signature header   toloka_header_v = 1
@@ -103,4 +103,3 @@ else:
     print('Invalid signature')
 
 ```
-

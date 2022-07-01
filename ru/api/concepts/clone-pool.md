@@ -10,14 +10,14 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/clone
   Authorization: OAuth <OAuth token>
   ```
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools/<pool_id>/clone
   Authorization: OAuth <OAuth token>
   ```
@@ -84,4 +84,3 @@
 ||**details.pool_id** | **string**
 Идентификатор нового пула.||
 |#
-

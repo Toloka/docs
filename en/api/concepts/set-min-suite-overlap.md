@@ -8,7 +8,7 @@ Stops assigning a task suite to Tolokers.
 
 - Production version
 
-   ```json
+   ```bash
    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -16,7 +16,7 @@ Stops assigning a task suite to Tolokers.
 
 - Sandbox
 
-   ```json
+   ```bash
    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -58,4 +58,3 @@ Task suite overlap. ||
 ## Response {#response}
 
 Contains the [task suite data in JSON format](create-task-suite.md#overlap).
-

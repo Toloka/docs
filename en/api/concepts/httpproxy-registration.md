@@ -4,7 +4,7 @@ To register a new proxy server, log in as a requester and send an AJAX request f
 
 ## Request {#request}
 
-```json
+```js
 $.ajax({
       url: '/api/new/requester/proxy/proxy',
       method: 'POST',
@@ -29,24 +29,24 @@ $.ajax({
 Level of access to files hosted on the requester's server. Acceptable values:
 
 - ASSIGNMENT_PRIVATE — Access is only granted to the Tolokers whose tasks contain a server link. Suitable for task content.
-    
+
     #### Example
-    
+
     The following is called in Toloka: `toloka.yandex.com/api/proxy/test-proxy/test-path`.
-    
+
     If the task contains an input field with the URL or String type and its value is:
     - `proxy/test-proxy/example-id`,
-    
+
     - `test-proxy/example-id`,
-    
+
     - `example-id`,
-    
+
     the request will be proxied to the requester's server.
-    
+
     If the task does not have a field with one of these values, no request proxying is done.
-    
+
 - PRIVATE — Access is only granted to Tolokers who are doing tasks for this requester (server owner). The task itself is not checked for a link to the server. Appropriate for general actions in tasks.
-    
+
 - PUBLIC — Access is granted to all Toloka Tolokers. Appropriate for files with instructions. ||
 || **type** | **string \| required**
 
@@ -89,4 +89,3 @@ To get the full URL for accessing data on the created server, use the `getProxyU
 ## Response {#response}
 
 Contains the `id` and parameters in JSON format passed during server registration.
-

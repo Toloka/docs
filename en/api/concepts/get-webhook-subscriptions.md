@@ -8,14 +8,14 @@ Gets subscription data.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -25,14 +25,14 @@ Gets subscription data.
 ## Path parameters {#path-params}
 
 Parameter | Overview
------ | ----- 
+----- | -----
 **subscription_id** | ID of the subscription.
 
 
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -82,4 +82,3 @@ ID of the subscription. Generated automatically. ||
 
 The date and time when the subscription was created (UTC). It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
 |#
-

@@ -4,7 +4,7 @@ To get information about all servers registered for a particular requester, log 
 
 ## Request {#request}
 
-```json
+```js
 $.ajax({
       url: '/api/new/requester/proxy/proxy',
       method: 'GET'
@@ -14,4 +14,3 @@ $.ajax({
 ## Response {#response}
 
 Contains a list and parameters of all servers registered for the requester, in JSON format.
-

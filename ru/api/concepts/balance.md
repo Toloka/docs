@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/requester
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/requester
   Authorization: OAuth <OAuth token>
   ```
@@ -35,7 +35,7 @@
   "balance": 121.30,
   "id": "566ec2b0ff0deeaae5f9d500",
   "public_name": {
-    "EN": "Ya.Shield"   
+    "EN": "Ya.Shield"
   }
 }
 ```
@@ -53,4 +53,3 @@
 
 Имя заказчика в Толоке.||
 |#
-

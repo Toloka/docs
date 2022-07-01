@@ -15,8 +15,8 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 {% list tabs %}
 
 - Production version
-        
-    ```json
+
+    ```bash
     POST https://toloka.yandex.com/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
@@ -26,7 +26,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 
 - Sandbox
 
-    ```json
+    ```bash
     POST https://sandbox.toloka.yandex.com/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
@@ -39,7 +39,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix. ||
 **Content-Type** | Specifies the data format in the request body.
 
@@ -55,9 +55,9 @@ Specified in the link after the question mark; separated by `&`.
 Mode for request processing:
 
 - `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The [response](#response) contains information about the operation (start and  completion time, status).
-    
+
 - `false` — Synchronous. The [response](#response) contains information about one or multiple task suites created.
-    
+
 
 The default value is `false`. ||
 || **allow_defaults** | **boolean**
@@ -65,9 +65,9 @@ The default value is `false`. ||
 Overlap settings:
 
 - `true` — Use the overlap that is set in the pool parameters (in the [defaults.default_overlap_for_new_task_suites](create-pool.md#default_overlap_for_new_task_suites) key).
-    
+
 - `false` — Use the overlap that is set in the task suite parameters (in the [overlap](create-task-suite.md#overlap) field).
-    
+
 
 The default value is `false`. ||
 || **skip_invalid_items** | **boolean**
@@ -75,9 +75,9 @@ The default value is `false`. ||
 Validation parameters for JSON objects:
 
 - `true` — Create the task suites that passed validation.
-    
+
 - `false` — If at least one of the task suites didn't pass validation, stop the operation and don't create the task suites.
-    
+
 
 The default value is `false`. ||
 || **open_pool** | **boolean**
@@ -159,24 +159,24 @@ The response format depends on the value of [async_mode](#async_mode).
     Operation type:
 
     - `POOL.OPEN` — Opening a pool.
-        
+
     - `POOL.CLOSE` — Closing a pool.
-        
+
     - `PROJECT.ARCHIVE` — Archiving a project.
-        
+
     - `POOL.ARCHIVE` — Archiving a pool.
-        
+
     - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites. ||
     || **status** | **string**
 
     The status of the operation:
 
     - `PENDING` — Not started yet.
-        
+
     - `RUNNING` — In progress.
-        
+
     - `SUCCESS` — Completed successfully.
-        
+
     - `FAIL` — Not completed. ||
     || **submitted** | **string**
 
@@ -196,4 +196,3 @@ The response format depends on the value of [async_mode](#async_mode).
     |#
 
 {% endlist %}
-

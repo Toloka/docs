@@ -8,7 +8,7 @@ Changes the priority of a task suite in the pool.
 
 - Production version
 
-   ```json
+   ```bash
    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -16,13 +16,13 @@ Changes the priority of a task suite in the pool.
 
 - Sandbox
 
-   ```json
+   ```bash
    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
    ```
 
-{% endlist %}   
+{% endlist %}
 
 
 ## Path parameters {#path-params}
@@ -75,4 +75,3 @@ The default value is `0`. ||
 ## Response {#response}
 
 Contains a [task suite in JSON format](task-suite.md).
-

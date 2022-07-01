@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/attachments/<file_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -82,5 +82,3 @@
 
 MIME-тип данных.||
 |#
-
-

@@ -15,7 +15,7 @@ You can send a maximum of 10 requests of this kind per minute and a maximum of 1
 
 - Production version
 
-    ```json
+    ```bash
     POST https://toloka.yandex.com/api/v1/skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
@@ -23,7 +23,7 @@ You can send a maximum of 10 requests of this kind per minute and a maximum of 1
 
 - Sandbox
 
-    ```json
+    ```bash
     POST https://sandbox.toloka.yandex.com/api/v1/skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
@@ -34,8 +34,8 @@ You can send a maximum of 10 requests of this kind per minute and a maximum of 1
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
-**Authorization** | A token for account authorization. Add OAuth as a prefix. 
+----- | -----
+**Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
 
@@ -63,9 +63,9 @@ Comments on the skill (only visible to the requester). ||
 Access to information about the skill (the name and value) for Tolokers:
 
 - `true` — Hidden (access closed).
-    
+
 - `false` — Not hidden (access open).
-    
+
 
 The default value is `true`. ||
 || **skill_ttl_hours** | **integer**
@@ -110,9 +110,9 @@ Comments on the skill (only visible to the requester). ||
 Access to information about the skill (the name and value) for Tolokers:
 
 - `true` — Hidden (access closed).
-    
+
 - `false` — Not hidden (access open).
-    
+
 
 The default value is `true`. ||
 || **skill_ttl_hours** | **integer**
@@ -123,7 +123,7 @@ The skill's "time to live" after the last update (in hours). The skill is remove
 Terminating skill support by its creator:
 
 - `true`— The skill is no longer supported and needs to be replaced.
-    
+
 - `false` — The skill is supported and up-to-date. ||
 || **owner** | **object**
 
@@ -136,7 +136,7 @@ Requester ID. ||
 Checks who the object belongs to:
 
 - `true` — The Toloker whose OAuth token is specified in the request.
-    
+
 - `false` — Another account (employee or owner).
 {% if audience == "internal" %}**owner.company_id** | **string**
 
@@ -146,7 +146,7 @@ The requester's company ID.{% endif %} ||
 Whether the skill is related to a training pool:
 
 - `true` — The skill level is calculated from training pool tasks.
-    
+
 - `false` — The skill isn't related to a training pool. ||
 || **created** | **string**
 
@@ -156,6 +156,6 @@ The UTC date and time when the skill was created, in ISO 8601 format: YYYY-MM-DD
 An indicator of a global skill:
 
 - `true` — The skill is global, shows general competencies of Tolokers, and is available to all Tolokers.
-    
+
 - `false` — The skill is created by the requester and can be assigned to Tolokers both manually and automatically: using quality control rules or after training. ||
 |#

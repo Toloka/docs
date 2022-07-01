@@ -10,7 +10,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PUT https://toloka.yandex.com/api/v1/projects/<project_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -20,7 +20,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -45,4 +45,3 @@
 ## Ответ {#response}
 
 Содержит обновленную информацию о проекте в формате JSON (см. [пример проекта](create-prj.md#body)).
-

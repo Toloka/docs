@@ -4,7 +4,7 @@
 
 ## Запрос {#request}
 
-```json
+```js
 $.ajax({
       url: '/api/new/requester/proxy/proxy',
       method: 'GET'
@@ -14,4 +14,3 @@ $.ajax({
 ## Ответ {#response}
 
 Содержит перечень и параметры всех серверов, зарегистрированных для данного заказчика, в формате JSON.
-

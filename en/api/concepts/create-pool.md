@@ -24,7 +24,7 @@ Learn about creating a training pool in [Create a training pool](create-training
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -32,7 +32,7 @@ Learn about creating a training pool in [Create a training pool](create-training
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -43,7 +43,7 @@ Learn about creating a training pool in [Create a training pool](create-training
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
@@ -552,7 +552,7 @@ Whether tasks must be checked manually:
 
 - `true` — Automatic task acceptance (manual checking isn't necessary).
 - — The requester will check the tasks.
-    
+
 
 The default value is `true`. ||
 || **auto_accept_period_day** | **integer**
@@ -604,7 +604,7 @@ The frequency of showing captchas:
 
 - `LOW` — Show one for every 20 tasks.
 - `MEDIUM`, `HIGH` — Show one for every 10 tasks.
-    
+
 
 By default, captchas aren't displayed. ||
 || **quality_control.configs** | **object**
@@ -666,7 +666,7 @@ Setting for the last task suite in the pool, if less than the minimum remaining 
 
 - `true` — Assign an incomplete task suite.
 - `false` — Don't assign tasks. This option can be used if you are adding tasks after the pool is started.
-    
+
 
 The default value is `true`.
 
@@ -682,7 +682,7 @@ The order used to add tasks to suites:
 
 - `true` — Add tasks to suites in the order in which they were uploaded. For example, in a pool with an overlap of 5, the first uploaded task will be included in the first 5 task suites. They will be assigned to 5 Tolokers.
 - `false` — Add tasks to suites in random order.
-    
+
 
 The default value is `false`. ||
 || **mixer_config. shuffle_tasks_in_task_suite** | **boolean**
@@ -691,7 +691,7 @@ The order of tasks within a suite:
 
 - `true` — Random.
 - `false` — The order in which tasks were uploaded.
-    
+
 
 The default value is `true`. ||
 || **mixer_config.golden_task_ distribution_function** | **object**
@@ -757,5 +757,4 @@ The date and time when the pool was last stopped, in UTC in ISO 8601 format: YYY
 Deprecated parameter.
 
 Pool type. The value is always `REGULAR` indicating a normal pool. ||
-|# 
-
+|#

@@ -12,14 +12,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close
   Authorization: OAuth <OAuth token>
   ```
@@ -88,4 +88,3 @@
 ||**parameters.pool_id** | **string**
 Идентификатор пула.||
 |#
-

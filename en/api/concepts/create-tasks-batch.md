@@ -10,7 +10,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/tasks
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -20,8 +20,8 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 
 - Sandbox
 
-  ```json
-  POST https://sandbox.toloka.yandex.com/api/v1/tasks 
+  ```bash
+  POST https://sandbox.toloka.yandex.com/api/v1/tasks
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
 
@@ -49,9 +49,9 @@ Specified in the link after the question mark; separated by `&`.
 Mode for request processing:
 
 - `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The response contains information about the operation (start and completion time, status, number of task suites).
-    
+
 - `false` — Synchronous. The response contains information about one or more created tasks. Maximum of 5000 tasks per request.
-    
+
 
 The default value is `false`. ||
 || **allow_defaults** | **boolean**
@@ -59,9 +59,9 @@ The default value is `false`. ||
 Overlap settings:
 
 - `true` — Use the overlap that is set in the pool parameters (in the [defaults.default_overlap_for_new_tasks](create-pool.md#default-overlap-tasks) key).
-    
+
 - `false` — Use the overlap that is set in the task parameters (in the [overlap](#overlap) field).
-    
+
 
 The default value is `false`. ||
 || **skip_invalid_items** | **boolean**
@@ -69,9 +69,9 @@ The default value is `false`. ||
 Validation parameters for JSON objects:
 
 - `true` — Create the tasks that passed validation. Skip the rest of the tasks (errors will be listed in the response to the request).
-    
+
 - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
-    
+
 
 The default value is `false`. ||
 || **open_pool** | **boolean**
@@ -185,11 +185,11 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   The status of the operation:
 
   - `PENDING` — Not started yet.
-      
+
   - `RUNNING` — In progress.
-      
+
   - `SUCCESS` — Completed successfully.
-      
+
   - `FAIL` — Not completed. ||
   || **submitted** | **string**
 
@@ -205,9 +205,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   Validation parameters for JSON objects:
 
   - `true` — Create the tasks that passed validation. Skip the rest of the tasks.
-      
+
   - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
-      
+
 
   The default value is `false`. ||
   || **details.total_count** | **string**

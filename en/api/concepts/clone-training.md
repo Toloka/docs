@@ -10,14 +10,14 @@ An empty training pool will be created with the same parameters.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/training/<training_id>/clone
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/clone
   Authorization: OAuth <OAuth token>
   ```
@@ -85,4 +85,3 @@ ID of the source training pool. ||
 || **details.training_id** | **string**
 ID of the new training pool. ||
 |#
-

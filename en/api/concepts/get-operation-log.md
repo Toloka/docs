@@ -19,14 +19,14 @@ If the operation was successful, the log contains `IDs` of the created objects, 
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/operations/<operation_id>/log
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>/log
   Authorization: OAuth <OAuth token>
   ```
@@ -35,14 +35,14 @@ If the operation was successful, the log contains `IDs` of the created objects, 
 ## Path parameters {#path-params}
 
 Parameter | Overview
------ | ----- 
+----- | -----
 **operation_id** | Operation ID.
 
 
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -51,14 +51,14 @@ Title | Overview
 Contains a JSON array describing each step of the operation.
 
 ```json
-[ 
+[
   {
     "type": <action type>,
     "success": <true/false>,
-    "input": { 
+    "input": {
       <input values at the operation step>
     },
-    "output": { 
+    "output": {
       <output values at the operation step or error details>
     }
   },
@@ -109,7 +109,7 @@ Data in the `output` for a failed operation:
 |#
 
 
-{% cut "Example of a log when a reward was issued successfully" %} 
+{% cut "Example of a log when a reward was issued successfully" %}
 
 ```json
 [
@@ -142,7 +142,7 @@ Data in the `output` for a failed operation:
 {% endcut %}
 
 {% cut "Example of a log when issuing a reward failed" %}
- 
+
 
 ```json
 [

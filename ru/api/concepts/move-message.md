@@ -16,7 +16,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -24,7 +24,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -39,7 +39,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -47,7 +47,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -81,5 +81,3 @@
 
 Папки, в которые нужно добавить или из которых надо удалить цепочку сообщений.||
 |#
-
-

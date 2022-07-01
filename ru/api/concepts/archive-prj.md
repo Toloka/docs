@@ -10,14 +10,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
   Authorization: OAuth <OAuth token>
   ```
@@ -87,4 +87,3 @@
 |#
 
 В дальнейшем статус операции можно отслеживать с помощью запросов к ресурсу `/operations`. Подробнее см. в разделе [Обзор](operations.md).
-

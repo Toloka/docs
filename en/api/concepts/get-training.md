@@ -10,18 +10,18 @@ You can get the training pool ID from the [list of training pools](get-training-
 
 - Production version
 
-	```json
-	GET https://toloka.yandex.com/api/v1/trainings/<training_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://toloka.yandex.com/api/v1/trainings/<training_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	GET https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
-	Authorization: OAuth <OAuth token>
-	```
-	
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
+  Authorization: OAuth <OAuth token>
+  ```
+
 {% endlist %}
 
 ## Path parameters {#path-params}
@@ -41,4 +41,3 @@ Title | Overview
 ## Response {#response}
 
 Contains information about a training pool (see the description in the [Create a training pool](create-training.md#response) section).
-

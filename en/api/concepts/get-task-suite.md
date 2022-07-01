@@ -8,17 +8,17 @@ Gets a task suite.
 
 - Production version
 
-	```json
-	GET https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	GET https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  GET https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -39,4 +39,3 @@ Title | Overview
 ## Response {#response}
 
 Contains a [task suite in JSON format](create-task-suite.md#body).
-

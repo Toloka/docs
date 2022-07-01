@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/attachments
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/attachments
   Authorization: OAuth <OAuth token>
   ```
@@ -80,14 +80,14 @@
 {% list tabs %}
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/attachments?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/attachments?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -99,14 +99,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/attachments?sort=id&limit=10&id_gt=<ID of the last file from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/attachments?sort=id&limit=10&id_gt=<ID of the last file from the previous response>
   Authorization: OAuth <OAuth token>
   ```

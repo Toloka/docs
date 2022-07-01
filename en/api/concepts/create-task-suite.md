@@ -14,8 +14,8 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,0
 {% list tabs %}
 
 - Production version
-        
-    ```json
+
+    ```bash
     POST https://toloka.yandex.com/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
@@ -27,7 +27,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,0
 
 - Sandbox
 
-    ```json
+    ```bash
     POST https://sandbox.toloka.yandex.com/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
@@ -42,7 +42,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,0
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix. ||
 **Content-Type** | Specifies the data format in the request body.
 
@@ -58,9 +58,9 @@ Specified in the link after the question mark; separated by `&`.
 Mode for request processing:
 
 - `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The response contains information about the operation (start and  completion time, status).
-    
+
 - `false` — Synchronous. The response contains information about one or multiple task suites created.
-    
+
 
 The default value is `false`. ||
 || **allow_defaults** | **boolean**
@@ -68,9 +68,9 @@ The default value is `false`. ||
 Overlap settings:
 
 - `true` — Use the overlap that is set in the pool parameters (in the [defaults.default_overlap_for_new_task_suites](create-pool.md#default_overlap_for_new_task_suites) key).
-    
+
 - `false` — Use the overlap that is set in the task suite parameters (in the [overlap](create-task-suite.md#overlap) field).
-    
+
 
 The default value is `false`. ||
 || **skip_invalid_items** | **boolean**
@@ -78,9 +78,9 @@ The default value is `false`. ||
 Validation parameters for JSON objects:
 
 - `true` — Create the task suites that passed validation.
-    
+
 - `false` — If at least one of the task suites didn't pass validation, stop the operation and don't create the task suites.
-    
+
 
 The default value is `false`. ||
 || **open_pool** | **boolean**
@@ -150,7 +150,7 @@ You can use this ID in the future to [get information about the operation](ope
     "automerged": false,
     "created": "2016-04-18T12:43:04.988"
 }
-     
+
 ```
 
 
@@ -165,12 +165,13 @@ Data for the tasks. ||
 || **tasks[].input_values** | **object \| required**
 
 Input data for a task. List of pairs:
-```json 
+
+```json
     "<ID of field 1>": "<value of field 1>",
     "<ID of field 2>": "<value of field 2>",
     ...
-    "<ID of field N>": "<value of field N>" 
-``` 
+    "<ID of field N>": "<value of field N>"
+```
 ||
 || **overlap** {#overlap} | **integer \| required if**
 
@@ -193,12 +194,13 @@ Responses and hints for control tasks and training tasks. ||
 || **tasks[].known_solutions.output_values** | **object**
 
 Correct responses in a task (for control tasks). If multiple correct responses are possible, define `output_values` for each possible response and set the weight for the correct response (the `correctness_weight` key).
-```json 
+
+```json
     "<ID of field 1>": "<correct response>",
     "<ID of field 2>": "<correct response>",
     ...
-    "<ID of field N>": "<correct response N>" 
-``` 
+    "<ID of field N>": "<correct response N>"
+```
 ||
 || **tasks[].known_solutions.correctness_weight** | **float**
 
@@ -210,7 +212,7 @@ Hint for the task (for training tasks). ||
 
 Assigning a task suite with infinite overlap. This option is used, for instance, for suites of training tasks when you want to assign them to all Tolokers:
 - `true` — Use infinite overlap.
-    
+
 - `false` — Use the overlap that is set for the task suite or pool. ||
 || **reserved_for[]** | **array of integer**
 
@@ -232,8 +234,8 @@ The default value is `0`. ||
 Type of operation for creating a task suite:
 
 - `true` — Automatically with the "smart mixing" option (for more information, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/task_upload.html?lang=en)).
-    
-- — Manually. 
+
+- — Manually.
 ||
 |#
 
@@ -344,24 +346,24 @@ The response format depends on the value of [async_mode](#async_mode).
     Operation type:
 
     - `POOL.OPEN` — Opening a pool.
-        
+
     - `POOL.CLOSE` — Closing a pool.
-        
+
     - `PROJECT.ARCHIVE` — Archiving a project.
-        
+
     - `POOL.ARCHIVE` — Archiving a pool.
-        
+
     - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites. ||
     || **status** | **string**
 
     The status of the operation:
 
     - `PENDING` — Not started yet.
-        
+
     - `RUNNING` — In progress.
-        
+
     - `SUCCESS` — Completed successfully.
-        
+
     - `FAIL` — Not completed. ||
     || **submitted** | **string**
 

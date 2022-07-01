@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -68,14 +68,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -87,14 +87,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
   Authorization: OAuth <OAuth token>
   ```
@@ -108,4 +108,3 @@
 ```json
 {"items" : [{task #1}, {task #2}, ... {task #n}], "has_more": true}
 ```
-

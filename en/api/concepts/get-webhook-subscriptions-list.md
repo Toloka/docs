@@ -8,14 +8,14 @@ Gets data for multiple active subscriptions.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/webhook-subscriptions
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
   Authorization: OAuth <OAuth token>
   ```
@@ -56,14 +56,14 @@ ID of the pool that subscription information is requested for. ||
 Parameters to sort by:
 
 - `id` — Subscription ID.
-    
+
 - `created` — The subscription creation date in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-    
+
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** |  
+|| **Standard query parameters** |
 [limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte). ||
-|# 
+|#
 
 ## Query example {#request-example}
 
@@ -77,14 +77,14 @@ You can set up the display of the list of subscriptions in parts (for example, 1
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
@@ -96,14 +96,14 @@ You can set up the display of the list of subscriptions in parts (for example, 1
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
   Authorization: OAuth <OAuth token>
   ```
@@ -117,14 +117,14 @@ Contains a list of subscriptions with information about each of them in JSON for
 ```json
 {
   items: [
-    {  
+    {
        "webhook_url": "https://awesome-requester.com/toloka-webhook",
        "event_type": "ASSIGNMENT_CREATED",
        "pool_id": "121212",
        "id": "webhook-subscription-1",
        "created": "2020-02-03T15:00:00"
     },
-    {  
+    {
        "webhook_url": "https://awesome-requester.com/toloka-webhook",
        "event_type": "POOL_CLOSED",
        "pool_id": "121212",
@@ -132,7 +132,7 @@ Contains a list of subscriptions with information about each of them in JSON for
        "created": "2020-02-03T15:00:00"
     }
   ],
-  has_more: false  
+  has_more: false
 }
 ```
 
@@ -174,7 +174,6 @@ Shows whether the list is complete.
 Acceptable values:
 
 - `true` — Not all elements are included in the output due to restrictions in the `limit` parameter.
-    
+
 - `false` — The output lists all the items. ||
 |#
-

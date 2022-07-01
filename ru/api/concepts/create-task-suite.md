@@ -15,7 +15,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/task-suites
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -29,7 +29,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/task-suites
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -137,7 +137,7 @@
     "automerged": false,
     "created": "2016-04-18T12:43:04.988"
 }
-     
+
 ```
 
 #|
@@ -151,11 +151,11 @@
 ||**tasks[].input_values** | **object \| обязательный**
 
 Входные данные для задания. Список пар:
-```json 
+```json
  "<ID of field 1>": "<value of field 1>",
  "<ID of field 2>": "<value of field 2>",
  ...
- "<ID of field N>": "<value of field N>" 
+ "<ID of field N>": "<value of field N>"
 ```
 ||
 ||**overlap** | **integer \| обязательный при условии**
@@ -176,11 +176,11 @@
 ||**tasks[].known_solutions.output_values** | **object**
 
 Правильные ответы в задании (для контрольных заданий). Если есть несколько правильных вариантов ответа, для каждого варианта нужно определить `output_values` и привести вес правильного ответа (ключ `correctness_weight`).
-```json 
+```json
  "<ID of field 1>": "<correct response>",
  "<ID of field 2>": "<correct response>",
  ...
- "<ID of field N>": "<correct response N>" 
+ "<ID of field N>": "<correct response N>"
 ```
 ||
 ||**tasks[].known_solutions.correctness_weight** | **float**
@@ -316,10 +316,10 @@
   #|
   ||**Параметр** |**Описание**||
   ||**id** | **string**
-  
+
   Идентификатор операции.||
   ||**type** | **string**
-  
+
   Тип операции:
   - `POOL.OPEN` — открытие пула;
   - `POOL.CLOSE` — закрытие пула;
@@ -327,26 +327,26 @@
   - `POOL.ARCHIVE` — отправка пула в архив;
   - `TASK_SUITE.BATCH_CREATE` — создание нескольких страниц заданий.||
   ||**status** | **string**
-  
+
   Статус операции:
   - `PENDING` — выполнение не началось;
   - `RUNNING` — выполняется;
   - `SUCCESS` — успешно выполнена;
   - `FAIL` — не выполнена.||
   ||**submitted** | **string**
-  
+
   Дата и время отправки запроса по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
  ||**started** | **string**
- 
+
  Дата и время начала операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
   ||**finished** | **string**
-  
+
   Дата и время окончания операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
   ||**details. success_count** | **integer**
-  
+
   Количество загруженных страниц заданий.||
   ||**details. failed_count** | **integer**
-  
+
   Количество страниц заданий, которые не были загружены.||
   |#
 

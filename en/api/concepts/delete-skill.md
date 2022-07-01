@@ -8,17 +8,17 @@ Removes a skill for a Toloker.
 
 - Production version
 
-	```json
-	DELETE https://toloka.yandex.com/api/v1/user-skills/<id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  DELETE https://toloka.yandex.com/api/v1/user-skills/<id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```json
-	DELETE https://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
-	Authorization: OAuth <OAuth token>
-	```
+  ```bash
+  DELETE https://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -34,5 +34,3 @@ Parameter | Overview
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
-

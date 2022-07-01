@@ -8,7 +8,7 @@ Starts aggregating responses to all completed tasks in the pool.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@ Starts aggregating responses to all completed tasks in the pool.
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -27,7 +27,7 @@ Starts aggregating responses to all completed tasks in the pool.
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix. ||
 **Content-Type** | Specifies the data format in the request body.
 
@@ -37,7 +37,7 @@ Title | Overview
 ```json
 {
   "pool_id": "283",
-  "type": "WEIGHTED_DYNAMIC_OVERLAP", 
+  "type": "WEIGHTED_DYNAMIC_OVERLAP",
   "answer_weight_skill_id": "1289",
   "fields": [
     {
@@ -99,13 +99,13 @@ Operation ID. ||
 Operation type:
 
 - `POOL.OPEN` — Opening a pool.
-    
+
 - `POOL.CLOSE` — Closing a pool.
-    
+
 - `PROJECT.ARCHIVE` — Archiving a project.
-    
+
 - `POOL.ARCHIVE` — Archiving a pool.
-    
+
 - `SOLUTION.AGGREGATE` — Aggregating responses.
 - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites. ||
 || **status** | **string**
@@ -126,4 +126,3 @@ The percentage of the operation completed. ||
 
 Parameters of the operation in the request. ||
 |#
-

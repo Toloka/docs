@@ -8,7 +8,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -34,7 +34,7 @@
 {
   "task_id": "afd1234d-12314a-cfd1424d-31214b",
   "pool_id": "283",
-  "type": "WEIGHTED_DYNAMIC_OVERLAP", 
+  "type": "WEIGHTED_DYNAMIC_OVERLAP",
   "answer_weight_skill_id": "1289",
   "fields": [
     {
@@ -77,7 +77,7 @@
   "confidence": 0.937152,
   "output_values": {
     "result": "OK"
-  }, 
+  },
   "pool_id": "283",
   "task_id": "afd1234d-12314a-cfd1424d-31214b"
 }
@@ -97,5 +97,3 @@
 
 Идентификатор задания.||
 |#
-
-

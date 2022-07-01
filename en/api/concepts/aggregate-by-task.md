@@ -8,7 +8,7 @@ Starts aggregating responses to a single task.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@ Starts aggregating responses to a single task.
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -39,7 +39,7 @@ Title | Overview
 {
   "task_id": "afd1234d-12314a-cfd1424d-31214b",
   "pool_id": "283",
-  "type": "WEIGHTED_DYNAMIC_OVERLAP", 
+  "type": "WEIGHTED_DYNAMIC_OVERLAP",
   "answer_weight_skill_id": "1289",
   "fields": [
     {
@@ -82,7 +82,7 @@ Contains the aggregated task response.
   "confidence": 0.937152,
   "output_values": {
     "result": "OK"
-  }, 
+  },
   "pool_id": "283",
   "task_id": "afd1234d-12314a-cfd1424d-31214b"
 }
@@ -102,4 +102,3 @@ Pool ID. ||
 
 Task ID. ||
 |#
-

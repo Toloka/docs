@@ -8,7 +8,7 @@ Replies to a message thread.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@ Replies to a message thread.
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -48,10 +48,9 @@ Title | Overview
 }
 ```
 
-#| 
+#|
 || Parameter | Overview ||
 || **text** | **string**
 
 Message text. You can enter the text in multiple languages (the message is sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
 |#
-

@@ -8,14 +8,14 @@ Gets the properties of a file attached to a task response.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/attachments/<file_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -85,4 +85,3 @@ The date when the file was uploaded to Toloka. ||
 
 MIME type of the data. ||
 |#
-

@@ -8,14 +8,14 @@ Gets the properties of the reward issued.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -51,7 +51,7 @@ Information about a reward.
   "public_message": {
     "EN": "10 tasks successfully completed"
   },
-  "without_message": false,            
+  "without_message": false,
   "id": "2092",
   "created": "2021-02-12T10:37:36.631"
 }
@@ -89,4 +89,3 @@ Reward ID. ||
 
 Date the reward was awarded, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss] ||
 |#
-

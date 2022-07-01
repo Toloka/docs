@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   DELETE https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   DELETE https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -36,4 +36,3 @@
 ## Ответ {#response}
 
 Если запрос выполнен успешно, сервер возвращает HTTP-статус выполнения операции: «204 No Content» или «404 Not Found».
-

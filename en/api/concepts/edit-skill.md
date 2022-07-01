@@ -8,23 +8,23 @@ Changes the name, comment, and access to the skill.
 
 - Production version
 
-	```json
-	PUT https://toloka.yandex.com/api/v1/skills/<skill id>
-	Authorization: OAuth <OAuth token>
-	Content-Type: application/JSON
-	            
-	{<skill parameters, including updated ones>}
-	```
+  ```bash
+  PUT https://toloka.yandex.com/api/v1/skills/<skill id>
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
+
+  {<skill parameters, including updated ones>}
+  ```
 
 - Sandbox
 
-	```json
-	PUT https://sandbox.toloka.yandex.com/api/v1/skills/<skill id>
-	Authorization: OAuth <OAuth token>
-	Content-Type: application/JSON
+  ```bash
+  PUT https://sandbox.toloka.yandex.com/api/v1/skills/<skill id>
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-	{<skill parameters, including updated ones>}
-	```
+  {<skill parameters, including updated ones>}
+  ```
 
 {% endlist %}
 
@@ -38,7 +38,7 @@ Parameter | Overview
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
@@ -50,4 +50,3 @@ In the request body, specify **all** [the skill parameters](create-skill.md#body
 ## Response {#response}
 
 Contains updated information about the skill (see the description in the [Create a skill](create-skill.md#response) section).
-

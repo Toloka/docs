@@ -10,7 +10,7 @@ You can specify a [numeric value](#number_overlap) or set [infinite overlap](#in
 
 - Production version
 
-   ```json
+   ```bash
    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -19,14 +19,14 @@ You can specify a [numeric value](#number_overlap) or set [infinite overlap](#in
 
 - Sandbox
 
-   ```json
+   ```bash
    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
 
    ```
 
-{% endlist %}   
+{% endlist %}
 
 ## Path parameters {#path-params}
 
@@ -85,7 +85,7 @@ Task suite overlap. ||
 
 Assigning a task suite with infinite overlap. This option is used, for instance, for suites of training tasks when you want to assign them to all Tolokers:
 - `true` — Use infinite overlap.
-    
+
 - `false` — Use the overlap that is set for the task suite or pool.
 ||
 |#
@@ -93,4 +93,3 @@ Assigning a task suite with infinite overlap. This option is used, for instance
 ## Response {#response}
 
 Contains a [task suite in JSON format](create-task-suite.md#body).
-

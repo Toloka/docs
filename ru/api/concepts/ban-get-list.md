@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-restrictions
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions
   Authorization: OAuth <OAuth token>
   ```
@@ -79,24 +79,24 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
   Authorization: OAuth <OAuth token>
   ```
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
   Authorization: OAuth <OAuth token>
   ```

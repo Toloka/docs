@@ -33,7 +33,7 @@
 
   Отправьте запрос из командной строки с помощью утилиты cURL:
 
-  ```json
+  ```bash
   curl -X POST \
      -H 'Authorization: OAuth <OAuth token>' \
      -H 'Content-Type: application/JSON' \
@@ -90,20 +90,20 @@
   Заполните поля:
 
   1. Request URL
-    
-    ```json
+
+    ```bash
     https://sandbox.toloka.yandex.com/api/v1/projects
     ```
-    
+
   1. Headers
-    
-    ```json
+
+    ```bash
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
-    
+
   1. Body
-    
+
     ```json
     {
        "public_name": "Cat or dog",
@@ -195,7 +195,7 @@
   {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
 
-  ```json
+  ```bash
   curl -X POST \
      -H 'Authorization: OAuth <OAuth token>' \
      -H 'Content-Type: application/JSON' \
@@ -276,20 +276,20 @@
 
 
   1. Request URL
-    
-    ```json
+
+    ```bash
     https://sandbox.toloka.yandex.com/api/v1/pools
     ```
-    
+
   1. Headers
-    
-    ```json
+
+    ```bash
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
-    
+
   1. Body
-    
+
     ```json
     {
      "project_id": "<project id>",
@@ -403,7 +403,7 @@
   {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
 
-  ```json
+  ```bash
   curl -X POST \
      -H 'Authorization: OAuth <OAuth token>' \
      -H 'Content-Type: application/JSON' \
@@ -439,20 +439,20 @@
 
 
   1. Request URL
-    
-    ```json
+
+    ```bash
     https://sandbox.toloka.yandex.com/api/v1/tasks
     ```
-    
+
   1. Headers
-    
-    ```json
+
+    ```bash
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
-    
+
   1. Body
-    
+
     ```json
     [
        {
@@ -513,14 +513,14 @@
 
 
   1. Request URL
-    
-    ```json
+
+    ```bash
     https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
     ```
-    
+
   1. Headers
-    
-    ```json
+
+    ```bash
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -528,7 +528,7 @@
 
 ## Проверьте задания {#check}
 
-После запуска пула убедитесь, что все настройки и отображение заданий 
+После запуска пула убедитесь, что все настройки и отображение заданий
  корректны. Для этого [зайдите в Толоку под логином исполнителя]({{ toloka-web-register }) и откройте карточку с созданными заданиями.
 
 
@@ -542,4 +542,3 @@
 - [HTTP-методы для работы с проектами](project.md).
 - [HTTP-методы для работы с пулами](pool.md).
 - [HTTP-методы для загрузки заданий](tasks.md).
-

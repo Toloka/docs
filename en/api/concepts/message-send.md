@@ -13,7 +13,7 @@ The sent message is added to a new [message thread](messages.md).
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/message-threads/compose
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -21,7 +21,7 @@ The sent message is added to a new [message thread](messages.md).
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/message-threads/compose
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -32,7 +32,7 @@ The sent message is added to a new [message thread](messages.md).
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
@@ -42,7 +42,7 @@ Title | Overview
 {% list tabs %}
 
 - Message with a list of recipients {#spis}
-  
+
 
   ```json
   {
@@ -59,7 +59,7 @@ Title | Overview
     "answerable": true
   }
   ```
-  
+
 
   #|
   || Parameter  | Overview ||
@@ -71,9 +71,9 @@ Title | Overview
     Whether the message can be responded to:
 
     - `true` — Users can respond to the message.
-    
+
     - `false` —Users can't respond to the  message.
-    
+
 
     The default value is `true`. ||
   || **text** | **object \| required**
@@ -84,9 +84,9 @@ Title | Overview
     Method for selecting recipients:
 
     - `DIRECT` — Specify Toloker IDs.
-        
+
     - `FILTER` — Use a [filter](filters.md) to select Tolokers.
-        
+
     - `ALL` — Send the message to all Tolokers who have tried to complete your tasks at least once. ||
   || **recipients_ids** | **object \| required if**
 
@@ -94,7 +94,7 @@ Title | Overview
   |#
 
 - Filter message {#didi}
-  
+
   ```json
     {
       "topic": {
@@ -116,8 +116,8 @@ Title | Overview
       },
       "answerable": true
     }
-  ``` 
-    
+  ```
+
 
   #|
   || Parameter  | Overview ||
@@ -129,22 +129,22 @@ Title | Overview
     Whether the message can be responded to:
 
     - `true` — Users can respond to the message.
-        
+
     - `false` —Users can't respond to the  message.
-      
+
 
     The default value is `true`. ||
   || **text** | **object \| required**
 
-    Message text. You can enter the text in multiple languages (the message is sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. || 
+    Message text. You can enter the text in multiple languages (the message is sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
   || **recipients_select_type** | **string \| required**
 
     Method for selecting recipients:
 
     - `DIRECT` — Specify Toloker IDs.
-        
+
     - `FILTER` — Use a [filter](filters.md) to select Tolokers.
-        
+
     - `ALL` — Send the message to all Tolokers who have tried to complete your tasks at least once. ||
   || **recipients_filter** | **object \| required if**
 
@@ -228,7 +228,7 @@ Message thread title. ||
 Access to information about the sender and recipients.
 
 - `true` — Information is available in the `interlocutors` field.
-    
+
 - `false` — Information is available in a separate request. ||
 || **interlocutors** | **object**
 
@@ -241,11 +241,11 @@ ID of the sender or recipient. ||
 Role of the sender or recipient in Toloka:
 
 - `USER` — Toloker.
-    
+
 - `REQUESTER` — Requester.
-    
+
 - `ADMINISTRATOR` — Admin.
-    
+
 - `SYSTEM` — For messages sent automatically. ||
 || **interlocutors.myself** | **boolean**
 
@@ -255,7 +255,7 @@ Indicates a sender or recipient with your ID. If this is your ID, it is set to `
 Access to message threads:
 
 - `true` — The message is available in the `messages` field.
-    
+
 - `false` — The message is available in a separate request. ||
 || **messages** | **object**
 
@@ -274,11 +274,11 @@ The sender's ID. ||
 The sender's role in Toloka:
 
 - `USER` — Toloker.
-    
+
 - `REQUESTER` — Requester.
-    
+
 - `ADMINISTRATOR` — Admin.
-    
+
 - `SYSTEM` — For messages sent automatically. ||
 || **messages.from.myself** | **boolean**
 
@@ -294,9 +294,9 @@ For messages that you sent: details of the POST request for creating the message
 Method for selecting recipients:
 
 - `DIRECT` — Specify Toloker IDs.
-    
+
 - `FILTER` — Use a [filter](filters.md) to select Tolokers.
-    
+
 - `ALL` — Send the message to all Tolokers who have tried to complete a task at least once. ||
 || **compose_details.recipients_ ids** | **object**
 
@@ -309,7 +309,7 @@ The list of IDs of Tolokers who will receive the message. ||
 Whether the message can be responded to:
 
 - `true` — The Toloker can respond to the message.
-    
+
 - `false` — The Toloker cannot respond to the message. ||
 || **folders**[] | **array of objects**
 
@@ -323,4 +323,3 @@ Folders where the thread is located:
 
 Date the first message in the thread was created. ||
 |#
-

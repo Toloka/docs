@@ -3,11 +3,11 @@
 Проверить задания вручную и отклонить их, если задание выполнено неудовлетворительно. Чтобы принять или отклонить полученные ответы, измените статус страницы заданий с помощью PATCH-запроса к ресурсу `/assignments/<id выдачи страницы заданий>`:
 
 - Принять ответы: измените статус `SUBMITTED` на `ACCEPTED`.
-    
+
 - Отклонить ответы: измените статус `SUBMITTED` на `REJECTED`.
-    
+
 - Изменить решение об отклонении: измените статус `REJECTED` на `ACCEPTED`.
-    
+
 
 Чтобы отклоненные задания отправлялись на повторное выполнение другим исполнителям, добавьте в пул блок контроля качества (см. [Повторное выполнение заданий](restore-task-overlap.md)).
 
@@ -17,7 +17,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PATCH https://toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -25,7 +25,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   PATCH https://sandbox.toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -103,5 +103,3 @@
 
 Идентификаторы выплаченных бонусов.||
 |#
-
-

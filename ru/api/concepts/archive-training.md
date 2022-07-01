@@ -5,9 +5,9 @@
 Если обучение не используется, его можно перенести в архив. Перед архивацией проверьте два условия:
 
 - Обучающий пул должен быть в статусе «закрыт».
-    
+
 - Все основные пулы, к которым привязан обучающий пул, должны быть [отправлены в архив](archive-pool.md).
-    
+
 
 ## Запрос {#request}
 
@@ -15,18 +15,18 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/training/<training_id>/archive
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/archive
   Authorization: OAuth <OAuth token>
   ```
-  
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -95,5 +95,3 @@
 ||**details** | **object**
 Детали выполнения операции.||
 |#
-
-

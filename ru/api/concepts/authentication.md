@@ -22,24 +22,24 @@ API Toloka отправляет уведомления о событиях, ко
     ```
     Toloka-Signature : {v=1, ts=946728000000, sign=d3...ab}
     ```
-    
+
 1. Объедините значения **ts**, **v** и строки полезной нагрузки запроса. В качестве разделителя используйте точку.
     ```
     946728000000.1.{"events":...}
     ```
-    
+
 1. С помощью алгоритма HMAC Sha256 сгенерируйте подпись из объединенной строки и вашего секретного ключа.
     ```
     hmac_sha256(secret_key, '946728000000.1.{"events":...}')
     ```
-    
+
 1. Сравните сгенерированную подпись и подпись из заголовка **Toloka-Signature**. Если они совпадают, запросы были отправлены с помощью API Toloka.
 
 ## Пример валидации {#example-validation}
 
 В качестве примера рассмотрим уведомление о событии, отправленное API Toloka:
 
-```json
+```bash
 POST /webhook_endpoint HTTP/1.1
 Host: client_api
 Toloka-Signature: {v=1, ts=946728000000, sign=609af3eefd4c12b6afad30ab456efcd21f}
@@ -72,7 +72,7 @@ import hashlib
 
 def is_valid_signature(secret_key, request_payload, toloka_header_ts,
     toloka_header_v, toloka_header_sign):
-    data = str(toloka_header_ts) + '.' + str(toloka_header_v) + '.' 
+    data = str(toloka_header_ts) + '.' + str(toloka_header_v) + '.'
     + request_payload signature = hmac.new(bytearray(secret_key.encode()),
     bytearray(data.encode()), hashlib.sha256)
     return signature.hexdigest() == toloka_header_sign
@@ -80,7 +80,7 @@ def is_valid_signature(secret_key, request_payload, toloka_header_ts,
 # секретный ключ, которые используется при создании подписки
 secret_key = '12345'
 
-# тело запроса, приходящего от Toloka API 
+# тело запроса, приходящего от Toloka API
 request_payload = "{\"events\":[{\"event_time\":
     \"2000-01-01T12:00:00\",
     \"project_id\":\"project-1\",
@@ -90,14 +90,14 @@ request_payload = "{\"events\":[{\"event_time\":
     \"assignment_id\":\"assignment-1\",
     \"webhook_subscription_id\":\"subscription-1\",
     \"type\":\"ASSIGNMENT_APPROVED\"}]}"
-                
-# значение поля "ts", из входящего заголовка Toloka-Signature              
+
+# значение поля "ts", из входящего заголовка Toloka-Signature
 toloka_header_ts = 946728000000
 
-# значение поля "v", из входящего заголовка Toloka-Signature   
+# значение поля "v", из входящего заголовка Toloka-Signature
 toloka_header_v = 1
 
-# значение поля "sign", из входящего заголовка Toloka-Signature   
+# значение поля "sign", из входящего заголовка Toloka-Signature
 toloka_header_sign = '609af3eefd4c12b6afad30ab456efcd21f'
 
 if (is_valid_signature(secret_key, request_payload, toloka_header_ts,
@@ -107,4 +107,3 @@ else:
     print('Invalid signature')
 
 ```
-

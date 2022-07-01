@@ -18,7 +18,7 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/user-bonuses
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -26,7 +26,7 @@
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON

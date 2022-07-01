@@ -10,14 +10,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/skills/<skill_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/skills/<skill_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -57,5 +57,3 @@
 ```
 
 {% include [create-skill-params-table-response](../_includes/concepts/create-skill/id-create-skill/params-table-response.md) %}
-
-

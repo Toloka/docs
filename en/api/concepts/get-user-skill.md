@@ -8,14 +8,14 @@ Gets a Toloker's skill value.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-skills/<id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
   Authorization: OAuth <OAuth token>
   ```
@@ -25,14 +25,14 @@ Gets a Toloker's skill value.
 ## Path parameters {#path-params}
 
 Parameter | Overview
------ | ----- 
+----- | -----
 **id** | The ID of a Toloker's skill that is assigned to the "skill-Toloker" pair.
 
 
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
 
@@ -76,4 +76,3 @@ The date and time in UTC when the Toloker was first assigned the skill with the 
 
 The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
 |#
-

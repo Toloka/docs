@@ -12,7 +12,7 @@ Priority is a number on a scale from 0 to 100. The larger the number, the faster
 
 - Production version
 
-   ```json
+   ```bash
    PATCH https://toloka.yandex.com/api/v1/pools/<pool_id>
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -20,7 +20,7 @@ Priority is a number on a scale from 0 to 100. The larger the number, the faster
 
 - Sandbox
 
-   ```json
+   ```bash
    PATCH https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -47,7 +47,7 @@ Title | Overview
 ```json
 {
    "priority": <from 0 to 100>
-} 
+}
 ```
 
 #|
@@ -71,4 +71,3 @@ If the pool is archived, an empty response with status 409 is returned.
 
 
 Contains updated information about the pool (see the description in the [Create a pool](create-pool.md#response) section).
-

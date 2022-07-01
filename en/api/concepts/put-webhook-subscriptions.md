@@ -8,7 +8,7 @@ Creates one or more subscriptions.
 
 - Production version
 
-   ```json
+   ```bash
    PUT https://toloka.yandex.com/api/v1/webhook-subscriptions
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -16,7 +16,7 @@ Creates one or more subscriptions.
 
 - Sandbox
 
-   ```json
+   ```bash
    PUT https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
    Authorization: OAuth <OAuth token>
    Content-Type: application/JSON
@@ -159,4 +159,3 @@ The date and time when the subscription was created (UTC). It uses ISO 8601 form
 
 Object with validation errors. ||
 |#
-

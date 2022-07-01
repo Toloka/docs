@@ -17,21 +17,21 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   PUT https://toloka.yandex.com/api/v1/pools/<pool_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
-            
+
   {<pool parameters, including updated ones>}
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   PUT https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
-            
+
   {<pool parameters, including updated ones>}
   ```
 {% endlist %}
@@ -55,4 +55,3 @@
 ## Ответ {#response}
 
 Содержит обновленную информацию о пуле (см. описание в разделе [Создать пул](create-pool.md#response)).
-

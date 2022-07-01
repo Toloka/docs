@@ -17,7 +17,7 @@ You can send a maximum of 10,000 requests of this kind per day.
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/user-bonuses
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -25,7 +25,7 @@ You can send a maximum of 10,000 requests of this kind per day.
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -36,7 +36,7 @@ You can send a maximum of 10,000 requests of this kind per day.
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
+----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix. ||
 **Content-Type** | Specifies the data format in the request body.
 

@@ -16,7 +16,7 @@ With this method, Toloka will split tasks into suites according to the "smart mi
 
 {% cut "Sample request" %}
 
-```json
+```bash
 POST https://toloka.yandex.com/api/v1/tasks
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON
@@ -91,7 +91,7 @@ This method won't work if you created a pool using [smart mixing](https://toloka
 
 {% cut "Sample request" %}
 
-```json
+```bash
 POST https://toloka.yandex.com/api/v1/task-suites
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON

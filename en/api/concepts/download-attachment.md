@@ -8,17 +8,17 @@ Downloads a file attached to a task response.
 
 - Production version
 
-	```no-highlight
-	GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
-	Authorization: OAuth <OAuth token>
-	```
+  ```no-highlight
+  GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-	```no-highlight
-	GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
-	Authorization: OAuth <OAuth token>
-	```
+  ```no-highlight
+  GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -39,4 +39,3 @@ Title | Overview
 ## Response {#response}
 
 The file is saved to your computer.
-

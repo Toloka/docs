@@ -15,7 +15,7 @@ You can send a maximum of 20 requests of this kind per minute and a maximum o
 
 - Production version
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/projects
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -25,7 +25,7 @@ You can send a maximum of 20 requests of this kind per minute and a maximum o
 
 - Sandbox
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/projects
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -170,6 +170,7 @@ How to assign tasks:
 - `AUTOMATED` — The Toloker is assigned a task suite from the pool. You can [configure](create-pool.md#issue_task_suites_in_creation_order) the order for assigning task suites.
 
 - `MAP_SELECTOR` — The Toloker chooses a task suite on the map. If you are using `MAP_SELECTOR`, specify the text to display in the map name and description in the `assignments_issuing_view_config` key:
+
     ```json
       "assignments_issuing_view_config": {
       "title_template": "<task name>",

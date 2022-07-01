@@ -12,14 +12,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   POST https://toloka.yandex.com/api/v1/trainings/<training_id>/open
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/open
   Authorization: OAuth <OAuth token>
   ```
@@ -91,5 +91,3 @@
 ||**details** | **object**
 Детали выполнения операции.||
 |#
-
-

@@ -19,14 +19,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/operations/<operation_id>/log
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>/log
   Authorization: OAuth <OAuth token>
   ```
@@ -49,14 +49,14 @@
 Содержит JSON-массив с описанием каждого шага операции.
 
 ```json
-[ 
+[
   {
     "type": <action type>,
     "success": <true/false>,
-    "input": { 
+    "input": {
       <input values at the operation step>
     },
-    "output": { 
+    "output": {
       <output values at the operation step or error details>
     }
   },

@@ -10,14 +10,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/projects/<project_id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
   Authorization: OAuth <OAuth token>
   ```
@@ -38,4 +38,3 @@
 ## Ответ {#response}
 
 Содержит свойства проекта в формате JSON (см. [пример проекта](create-prj.md#body)).
-

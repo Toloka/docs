@@ -8,14 +8,14 @@
 
 - Боевая версия
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/user-skills/<id>
   Authorization: OAuth <OAuth token>
   ```
 
 - Песочница
 
-  ```json
+  ```bash
   GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
   Authorization: OAuth <OAuth token>
   ```
@@ -39,5 +39,3 @@
 Содержит свойства навыка в формате JSON.
 
 {% include [set-skill-user-skill-id](../_includes/concepts/set-skill/id-set-skill/user-skill-id.md) %}
-
-

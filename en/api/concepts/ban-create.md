@@ -8,7 +8,7 @@ Blocks a Toloker from accessing tasks.
 
 - Production version
 
-  ```json
+  ```bash
   PUT https://toloka.yandex.com/api/v1/user-restrictions
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -16,7 +16,7 @@ Blocks a Toloker from accessing tasks.
 
 - Sandbox
 
-  ```json
+  ```bash
   PUT https://sandbox.toloka.yandex.com/api/v1/user-restrictions
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
@@ -27,8 +27,8 @@ Blocks a Toloker from accessing tasks.
 ## Headers {#headers}
 
 Title | Overview
------ | ----- 
-**Authorization** | A token for account authorization. Add OAuth as a prefix. 
+----- | -----
+**Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
 
@@ -51,9 +51,9 @@ Title | Overview
 The scope of the ban:
 
 - `ALL_PROJECTS` — All the requester's projects.
-    
+
 - `PROJECT` — A single project (specify the `project_id`).
-    
+
 - `POOL` — A pool (specify the `pool_id`). ||
 || **user_id** | **string \| required**
 
@@ -101,9 +101,9 @@ Contains the ban ID and parameters, and the date when access was blocked.
 The scope of the ban:
 
 - `ALL_PROJECTS` — All the requester's projects.
-    
+
 - `PROJECT` — A single project (specify the `project_id`).
-    
+
 - `POOL` — A pool (specify the `pool_id`). ||
 || **user_id** | **string**
 
@@ -133,4 +133,3 @@ The UTC date and time of the ban, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
 
 ID of the ban. ||
 |#
-

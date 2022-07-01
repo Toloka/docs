@@ -8,14 +8,14 @@ Gets information about the account balance.
 
 - Production version
 
-  ```json
+  ```bash
   GET https://toloka.yandex.com/api/v1/requester
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
-  ```json
+  ```bash
   GET https://sandbox.toloka.yandex.com/api/v1/requester
   Authorization: OAuth <OAuth token>
   ```
@@ -38,7 +38,7 @@ Contains information about the requester and the account balance:
   "balance": 121.30,
   "id": "566ec2b0ff0deeaae5f9d500",
   "public_name": {
-    "EN": "Ya.Shield"   
+    "EN": "Ya.Shield"
   }
 }
 ```
@@ -55,4 +55,3 @@ Requester ID. ||
 
 The requester's name in Toloka. ||
 |#
-
