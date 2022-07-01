@@ -43,8 +43,7 @@
 - `id` — идентификатора навыка;
 - `created` — дата создания навыка по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**Стандартные query-параметры** |
 - **limit** (**integer** — ограничение на количество возвращаемых результатов. По умолчанию — 50, максимум — 300)
 - **id_gt** (**string** — объекты с идентификатором больше указанного значения)
@@ -59,7 +58,7 @@
 
 ## Пример запроса {#request-example}
 
-Можно настроить показ списка навыков частями (например, по 10 навыков): 
+Можно настроить показ списка навыков частями (например, по 10 навыков):
 1. Показать первые 10 навыков, начиная с навыка с наименьшим идентификатором.
 1. Показывать оставшиеся навыков по 10 штук в порядке возрастания.
 
@@ -110,4 +109,3 @@
 ```json
 {"items": [{skill 1}, {skill 2}, ... {skill n}], "has_more": false}
 ```
-

@@ -10,25 +10,17 @@
 
 #|
 ||**Метод** | **Эндпоинт** | **Описание**||
-||POST | [/message-threads/compose](message-send.md) | 
-
-{% include [messages-send](../_includes/concepts/message-send/id-messages/send.md) %}
-||
-||POST | [/message-threads/<thread_id>/reply](reply-message.md) | 
-{% include [reply-message-threads](../_includes/concepts/reply-message/id-reply/message-threads.md) %}
-||
-||GET | [/message-threads](get-chain-list.md) | 
-{% include [get-chain-list-chain-list](../_includes/concepts/get-chain-list/id-get-chain-list/chain-list.md) %}
-||
-||POST | [/message-threads/<thread_id>/add-to-folders](move-message.md) | 
-{% include [move-message-add-message-thread](../_includes/concepts/move-message/id-move-message/add-message-thread.md) %}
-||
-||POST | [/message-threads/<thread_id>/remove-from-folders](move-message.md) | 
-{% include [move-message-remove-message-thread](../_includes/concepts/move-message/id-move-message/remove-message-thread.md) %}
-||
+||POST | [/message-threads/compose](message-send.md) | {% include [messages-send](../_includes/concepts/message-send/id-messages/send.md) %}||
+||POST | [/message-threads/<thread_id>/reply](reply-message.md) |
+{% include [reply-message-threads](../_includes/concepts/reply-message/id-reply/message-threads.md) %}||
+||GET | [/message-threads](get-chain-list.md) |
+{% include [get-chain-list-chain-list](../_includes/concepts/get-chain-list/id-get-chain-list/chain-list.md) %}||
+||POST | [/message-threads/<thread_id>/add-to-folders](move-message.md) |
+{% include [move-message-add-message-thread](../_includes/concepts/move-message/id-move-message/add-message-thread.md) %}||
+||POST | [/message-threads/<thread_id>/remove-from-folders](move-message.md) |
+{% include [move-message-remove-message-thread](../_includes/concepts/move-message/id-move-message/remove-message-thread.md) %}||
 |#
 
 ## Узнайте больше
 
 - [Получение и отправка сообщений]({{ requester-messaging }})
-

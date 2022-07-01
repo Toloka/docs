@@ -16,32 +16,13 @@
 
 #|
 ||**Метод** | **Эндпоинт** | **Описание**||
-||POST | [/tasks](create-task.md) | 
-
-{% include [create-task-create](../_includes/concepts/create-task/id-create-task/create.md) %}
-||
-||POST | [/tasks](create-task.md) | 
-
-{% include [create-tasks-batch-create](../_includes/concepts/create-tasks-batch/id-create-tasks-batch/create.md) %}
-||
-||GET | [/tasks/<task_id>](get-task.md) | 
-
-{% include [get-task-get](../_includes/concepts/get-task/id-get-task/get.md) %}
-||
-||GET | [/tasks](get-tasks-list.md) | 
-
-{% include [get-tasks-list-get-list](../_includes/concepts/get-tasks-list/id-get-tasks-list/get-list.md) %}
-||
-||PATCH | [/tasks/<task_id>](edit-task-overlap.md) | 
-
-{% include [edit-task-overlap-edit-overlap](../_includes/concepts/edit-task-overlap/id-edit-task-overlap/edit-overlap.md) %}
-||
-||PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) | 
-
-{% include [set-min-task-overlap-set-min-overlap](../_includes/concepts/set-min-task-overlap/id-set-min-task-overlap/set-min-overlap.md) %}
-||
+||POST | [/tasks](create-task.md) |{% include [create-task-create](../_includes/concepts/create-task/id-create-task/create.md) %}||
+||POST | [/tasks](create-task.md) |{% include [create-tasks-batch-create](../_includes/concepts/create-tasks-batch/id-create-tasks-batch/create.md) %}||
+||GET | [/tasks/<task_id>](get-task.md) |{% include [get-task-get](../_includes/concepts/get-task/id-get-task/get.md) %}||
+||GET | [/tasks](get-tasks-list.md) |{% include [get-tasks-list-get-list](../_includes/concepts/get-tasks-list/id-get-tasks-list/get-list.md) %}||
+||PATCH | [/tasks/<task_id>](edit-task-overlap.md) |{% include [edit-task-overlap-edit-overlap](../_includes/concepts/edit-task-overlap/id-edit-task-overlap/edit-overlap.md) %}||
+||PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) |{% include [set-min-task-overlap-set-min-overlap](../_includes/concepts/set-min-task-overlap/id-set-min-task-overlap/set-min-overlap.md) %}||
 |#
-
 
 ## Слияние заданий {#task-merge}
 
@@ -69,4 +50,4 @@
 Чтобы активировать слияние заданий в проекте, нужно в [проекте](project.md) указать флаг `"assignments_automerge_enabled": true`.
 
 ## Узнайте больше {#links}
- Подробнее о формировании страниц заданий см. в документе [Руководство заказчика]({{ requester-pool-main }}). 
+ Подробнее о формировании страниц заданий см. в документе [Руководство заказчика]({{ requester-pool-main }}).

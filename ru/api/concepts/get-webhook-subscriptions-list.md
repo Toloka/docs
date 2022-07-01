@@ -55,8 +55,7 @@
 - `id` — идентификатор подписки;
 - `created` — дата создания подписки по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**Стандартные query-параметры** |
 - **limit**  (**integer** — ограничение на количество возвращаемых результатов. По умолчанию — 50, максимум — 300)
 - **id_gt**  (**string** — объекты с идентификатором больше указанного значения)
@@ -70,7 +69,7 @@
 |#
 
 ## Пример запроса {#request-example}
- Можно настроить показ перечня подписок частями (например, по 10 подписок): 
+ Можно настроить показ перечня подписок частями (например, по 10 подписок):
 1. Показать первые 10 подписок, начиная с подписки с наименьшим идентификатором.
 1. Показывать оставшиеся подписки по 10 штук в порядке возрастания.
 
@@ -120,14 +119,14 @@
 ```json
 {
   items: [
-    {  
+    {
        "webhook_url": "https://awesome-requester.com/toloka-webhook",
        "event_type": "ASSIGNMENT_CREATED",
        "pool_id": "121212",
        "id": "webhook-subscription-1",
        "created": "2020-02-03T15:00:00"
     },
-    {  
+    {
        "webhook_url": "https://awesome-requester.com/toloka-webhook",
        "event_type": "POOL_CLOSED",
        "pool_id": "121212",
@@ -135,7 +134,7 @@
        "created": "2020-02-03T15:00:00"
     }
   ],
-  has_more: false  
+  has_more: false
 }
 ```
 
@@ -177,5 +176,3 @@ URL, на который будут приходить уведомления.||
 - `false` — выдача включает в себя исчерпывающий список элементов.
 ||
 |#
-
-

@@ -12,18 +12,11 @@
 
 #|
 ||**Метод** | **Эндпоинт** | **Описание**||
-||GET | [/assignments](result.md) | 
-
-{% include [result-get-result](../_includes/concepts/result/id-result/get-result.md) %}
-||
-||GET | [/assignments/<response_id>](get-assignment-id.md) | 
-
-{% include [get-assignment-id-get-result](../_includes/concepts/get-assignment-id/id-get-assignment-id/get-result.md) %}
-||
+||GET | [/assignments](result.md) | {% include [result-get-result](../_includes/concepts/result/id-result/get-result.md) %}||
+||GET | [/assignments/<response_id>](get-assignment-id.md) | {% include [get-assignment-id-get-result](../_includes/concepts/get-assignment-id/id-get-assignment-id/get-result.md) %}||
 |#
 
 
 ## Узнайте больше {#links}
 
 - [Описание получения результатов в Руководстве заказчика]({{ requester-result }})
-

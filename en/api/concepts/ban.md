@@ -10,11 +10,10 @@ Method | Endpoint | Overview
 ----- | ----- | -----
 PUT | [/user-restrictions](ban-create.md) | Blocks a Toloker from accessing tasks.
 GET | [/user-restrictions](ban-get-list.md) | Gets the list of Toloker bans.
-GET | [/api/v1/user-restrictions/<ban_id>](ban-get-info.md) | Gets information about a ban.
-DELETE | [/api/v1/user-restrictions/<ban_id>](ban-delete.md) | Removes a ban.
+GET | [/user-restrictions/<ban_id>](ban-get-info.md) | Gets information about a ban.
+DELETE | [/user-restrictions/<ban_id>](ban-delete.md) | Removes a ban.
 
 
 ## Learn more {#links}
 
 - [Description of bans in the Requester's guide](https://toloka.ai/docs/guide/concepts/ban.html?lang=en)
-

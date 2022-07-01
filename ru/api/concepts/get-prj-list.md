@@ -45,8 +45,7 @@
 - `public_name` — название проекта;
 - `private_comment` — комментарий к проекту.
 
-{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}
-||
+{% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**owner** | **string**
 
 Идентификатор заказчика.||
@@ -114,4 +113,3 @@
 ```json
 {"items": [{properties of project 1}, {properties of project 2}, ... {properties of project n}], "has_more": false}
 ```
-
