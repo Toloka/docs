@@ -1,5 +1,7 @@
 # Side-by-side video comparison
 
+For this type of project, you can use the **Video comparison (Side-by-side)** template.
+
 Take a look at the example: there are two videos and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/vSBnRFLf3TXf7r)

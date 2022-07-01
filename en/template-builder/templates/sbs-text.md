@@ -1,5 +1,7 @@
 # Side-by-side text comparison
 
+For this type of project, you can use the **Are these the same product?** template.
+
 Take a look at the example: there are two texts and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Sf4lo2yk3TaD9n)

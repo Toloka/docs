@@ -1,6 +1,6 @@
 # Оценка видео
 
-В Толоке есть шаблон **Оценка видео** ([посмотреть код в песочнице](https://clck.ru/TJ6zR)). В нем уже настроена валидация, горячие клавиши и внешний вид задания.
+В Толоке есть шаблон **Классификация жестов рук** ([посмотреть код в песочнице](https://clck.ru/TJ6zR)). В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -51,7 +51,7 @@
 Добавьте картинку с помощью компонента [view.image](../reference/view.image.md). Расположите видео рядом с картинкой через компонент [layout.columns](../reference/layout.columns.md).
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/Tdkxc)
-  
+
 Расположите видео рядом с текстом или аудио с помощью компонента [view.list](../reference/view.list.md).
 
 {% list tabs %}
@@ -61,7 +61,7 @@
   Добавьте компонент [view.text](../reference/view.text.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TggSq)
-  
+
 - Сравнить аудиодорожки
 
   Добавьте компонент [view.audio](../reference/view.audio.md).
@@ -83,5 +83,5 @@
 С помощью [helper.switch](../reference/helper.switch.md) можно показывать любой элемент интерфейса только при выборе определенного ответа. В этом примере отметить верные утверждения о видео можно только если исполнитель подтверждает, что оно загрузилось.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/Tgf2e)
-  
+
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

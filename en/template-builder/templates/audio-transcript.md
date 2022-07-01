@@ -1,6 +1,6 @@
 # Audio transcription
 
-For this type of project, you can use the **Audio Transcription** template ([view code in the sandbox](https://clck.ru/TqsSX)). It has pre-configured validation, task layout, and shortcuts.
+For this type of project, you can use the **Transcribing audio recordings** template ([view code in the sandbox](https://clck.ru/TqsSX)). It has pre-configured validation, task layout, and shortcuts.
 
 {% cut "Components used in the example" %}
 
