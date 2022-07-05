@@ -1,6 +1,6 @@
 # Side-by-side audio comparison
 
-For this type of project, you can use the **Audio comparison (Side-by-side)** template.
+For this type of project, you can use the **Audio comparison (Side-by-side)** preset.
 
 Take a look at the example: there are two audio tracks and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
@@ -213,7 +213,7 @@ Take a look at the example: there are two audio tracks and buttons to choose an
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/cQixkxxh3TYX5u)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Add a response field {#add-text-area}
 

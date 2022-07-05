@@ -7,9 +7,9 @@ Use [Template Builder]({{ template-builder }}) to create an interface for your w
 
 Learn how to create interfaces in Template Builder
 
-**[Preset templates](templates/index.md)**
+**[Presets](templates/index.md)**
 
-Check out the list of ready-made templates
+Check out the list of ready-made presets
 
 **[Troubleshooting](troubleshooting/troubleshooting.md)**
 

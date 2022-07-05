@@ -8,7 +8,7 @@ items:
   - href: concepts/types.md
     hidden: true
     name: Типы свойств
-  - name: Готовые шаблоны
+  - name: Готовые пресеты
     items:
       - href: templates/index.md
         name: Список

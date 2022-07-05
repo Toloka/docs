@@ -1,6 +1,6 @@
 # Side-by-side image comparison
 
-For this type of project, you can use the **Image comparison (Side-by-side)** template.
+For this type of project, you can use the **Image comparison (Side-by-side)** preset.
 
 Take a look at the example: there are two images and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
@@ -148,7 +148,7 @@ Take a look at the example: there are two images and buttons to choose an answe
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/IP_OifxG3TUbMm)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Add a layout {#add-color}
 

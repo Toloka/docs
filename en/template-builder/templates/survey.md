@@ -1,6 +1,6 @@
 # Survey
 
-For this type of project, you can use the **Customer survey** template ([view code in the sandbox](https://clck.ru/TPoRH)). It has pre-configured validation and task layout.
+For this type of project, you can use the **Customer survey** preset ([view code in the sandbox](https://clck.ru/TPoRH)). It has pre-configured validation and task layout.
 
 {% cut "Components used in the example" %}
 
@@ -22,7 +22,7 @@ For this type of project, you can use the **Customer survey** template ([view co
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvnQ)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Group questions together {#add-group-divider}
 

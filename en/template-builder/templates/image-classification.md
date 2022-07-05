@@ -1,6 +1,6 @@
 # Image classification
 
-For this type of project, you can use the **Image classification** template ([view code in the sandbox](https://clck.ru/TJ7X3)). Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+For this type of project, you can use the **Image classification** preset ([view code in the sandbox](https://clck.ru/TJ7X3)). Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 {% cut "Components used in the example" %}
 
@@ -28,7 +28,7 @@ For this type of project, you can use the **Image classification** template ([vi
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC5Jw)
 
-If these templates don't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Other options for buttons {#mult-ans-options}
 

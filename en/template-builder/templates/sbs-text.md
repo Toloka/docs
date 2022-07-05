@@ -1,6 +1,6 @@
 # Side-by-side text comparison
 
-For this type of project, you can use the **Are these the same product?** template.
+For this type of project, you can use the **Are these the same product?** preset.
 
 Take a look at the example: there are two texts and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
@@ -153,7 +153,7 @@ Take a look at the example: there are two texts and buttons to choose an answer
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/PDf1QLoJ3TaHDy)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Add a layout {#add-color}
 

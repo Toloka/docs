@@ -1,6 +1,6 @@
 # Copywriting
 
-For this type of project, you can use the **Copywriting** template ([view code in the sandbox](https://clck.ru/TJ6qN)). It has pre-configured validation and task layout.
+For this type of project, you can use the **Copywriting** preset ([view code in the sandbox](https://clck.ru/TJ6qN)). It has pre-configured validation and task layout.
 
 {% cut "Components used in the example" %}
 
@@ -27,7 +27,7 @@ For this type of project, you can use the **Copywriting** template ([view code i
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC3wn)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Example without an image {#text-answer-only}
 

@@ -1,6 +1,6 @@
 # Video analysis
 
-For this type of project, you can use the **Hand gesture classification** template ([view code in the sandbox](https://clck.ru/TJ73B)). Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+For this type of project, you can use the **Hand gesture classification** preset ([view code in the sandbox](https://clck.ru/TJ73B)). Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 {% cut "Components used in the example" %}
 
@@ -21,7 +21,7 @@ For this type of project, you can use the **Hand gesture classification** templa
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6SW)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Other options for buttons {#add-variants}
 

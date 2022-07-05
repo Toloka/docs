@@ -8,7 +8,7 @@ items:
   - href: concepts/types.md
     hidden: true
     name: Property types
-  - name: Preset templates
+  - name: Presets
     items:
       - href: templates/index.md
         name: List
