@@ -47,14 +47,13 @@ Title | Overview
 
 ```json
 {
-  "public_name": "Elephant color",
-  "public_description": "What color is the elephant in the picture?",
-  "public_instructions": "<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\"disc/img1.png>\"",
-  "private_comment": "My first project",
+  "public_name": "Image classification",
+  "public_description": "Look at the picture and determine the category of shoes",
+  "public_instructions": "<div> In this task you will see images of different shoes.<br /><br />  You need to determine their category.<br /><br />  To complete the task faster, use the hotkeys 1, 2, 3, and arrows, if you are performing the task on a desktop computer or laptop.<br /><br />  How to complete the task: <ol><li>Look carefully at the image.</li><li>Click the <strong>Rotate</strong> button if you need to turn the picture, it can be on one side or upside down.</li><li>Choose one of the answer options. If the image doesn&#39;t correspond to any of the categories press <strong>Other</strong>.</li><li>Skip the tasks if the image doesn’t load or loads only partly.</li></ol> </div>",
   "task_spec": {
     "input_spec": {
       "image": {
-        "type": "URL",
+        "type": "url",
         "required": true,
         "hidden": false
       }
@@ -63,72 +62,48 @@ Title | Overview
       "result": {
         "type": "string",
         "required": true,
-        "hidden": false
+        "hidden": false,
+		"allowed_values": [
+		  "boots",
+		  "sneakers",
+		  "other"
+		]
       }
     },
     "view_spec": {
-      "assets": {
-        "script_urls": ["library1.js", "library2.js"]
-      },
-      "markup": "<task interface code>",
-      "script": "<JavaScript code>",
-      "styles": "<CSS code>",
+	  "type": "tb",
       "settings": {
+	    "showSubmit": true,
         "showSkip": true,
+		"showFinish": true,
         "showTimer": true,
         "showTitle": true,
-        "showSubmit": true,
-        "showFullscreen": true,
-        "showInstructions": true,
-        "showFinish": true,
-        "showMessage": true,
-        "showReward": true
+        "permissions": [],
+		"showMessage": true,
+		"showReward": true,
+		"showFullscreen": true,
+		"showInstructions": true
       }
+	  "config": {...},
+	  "inputExample": {
+		"image": "https://labs-images-testing.s3.yandex.net/presets/for%20tb%20and%20dataset/leather-boots.jpg"
+	  },
+	  "lock": {
+	    "core": "1.13.1",
+		"view.list": "1.2.0",
+		"action.set": "1.0.8",
+		"view.image": "1.4.0",
+		"plugin.toloka": "1.1.8",
+		"plugin.hotkeys": "1.3.0",
+		"condition.required": "1.1.6",
+		"field.button-radio-group": "1.3.1"
+	  },
+	  "localization_Config": {
+	    "keys": []
+	  }
     }
   },
   "assignments_issuing_type": "AUTOMATED",
-  "assignments_automerge_enabled": false,
-  "max_active_assignments_count": 15,
-  "quality_control": {
-    "configs": [{
-      "collector_config": {
-        "type": "SKIPPED_IN_ROW_ASSIGNMENTS"
-      },
-      "rules": [{
-        "conditions": [{
-          "key": "skipped_in_row_count",
-          "operator": "GTE",
-          "value": 10
-        }],
-        "action": {
-          "type": "REJECT_ALL_ASSIGNMENTS",
-          "parameters": {
-            "public_comment": "Skipped more than 10 task suites in a row"
-          }
-        }
-      }]
-    }]
-  },
-  "localization_config": {
-    "default_language": "EN",
-    "additional_languages": [
-      {
-        "language": "RU",
-        "public_name": {
-          "value": "Цвет слона",
-          "source": "REQUESTER"
-        },
-        "public_description": {
-          "value": "Какого цвета слон на картинке?",
-          "source": "REQUESTER"
-        },
-        "public_instructions": {
-          "value": "<p>Рассмотрите изображение и определите цвет слона.</p> Картинку можно увеличить или уменьшить при помощи кнопок:</p> <img src=\"disc/img1.png>\"",
-          "source": "REQUESTER"
-        }
-      }
-    ]
-  }
 }
 ```
 
@@ -136,10 +111,10 @@ Title | Overview
 || Parameter {#prj-param} | Overview ||
 || **public_name** {#public_name} | **string \| required**
 
-Name of the project. Visible to Tolokers. ||
+Name of the project. It will be shown to Tolokers. ||
 || **public_description** {#public_description} | **string \| required**
 
-Description of the project. Visible to Tolokers. ||
+Description of the project. It will be shown to Tolokers. ||
 || **task_spec** | **object \| required**
 
 Parameters for input and output data and the task interface. ||
@@ -169,7 +144,7 @@ How to assign tasks:
 
 - `AUTOMATED` — The Toloker is assigned a task suite from the pool. You can [configure](create-pool.md#issue_task_suites_in_creation_order) the order for assigning task suites.
 
-- `MAP_SELECTOR` — The Toloker chooses a task suite on the map. If you are using `MAP_SELECTOR`, specify the text to display in the map name and description in the `assignments_issuing_view_config` key:
+- `MAP_SELECTOR` — The Toloker selects a task suite on the map. If you are using `MAP_SELECTOR`, specify the text to display in the map name and description in the `assignments_issuing_view_config` key:
 
     ```json
       "assignments_issuing_view_config": {
@@ -245,7 +220,7 @@ Data type:
 Whether the object or input field is required. The default value is `true`. ||
 || **hidden** | **boolean**
 
-Whether to hide the input value from the Toloker or not. The default value is `false`.
+Whether to hide field with the input value from the Toloker or not. The default value is `false`.
 
 For output data, always `false`. ||
 || **min_value** | **float**
@@ -267,22 +242,22 @@ Minimum length of the string. ||
 Maximum length of the string. ||
 || **current_location** | **string**
 
-Only for the output data of the `coordinates` type: put the Toloker's current coordinates in the field (`true`/`false`). Used in tasks for the mobile app. ||
+Only for output data of the `coordinates` type: populate the field with the Toloker's current coordinates in the field (`true`/`false`). Used in tasks for the mobile app. ||
 |#
 
 ## Task interface (view_spec) {#view-spec-section}
 
 #|
 || Parameter | Overview ||
-|| **markup** | **string \| required**
+|| **markup** | **string**
 
 For more information, see the [Requester's guide](https://toloka.ai/docs/guide/?lang=en). ||
-|| **script** | **string \| required**
+|| **script** | **string**
 
 JavaScript interface for the task.
 
 For more information, see the [Requester's guide](https://toloka.ai/docs/guide/?lang=en). ||
-|| **styles** | **string \| required**
+|| **styles** | **string**
 
 CSS task interface.
 
@@ -290,6 +265,9 @@ For more information, see the [Requester's guide](https://toloka.ai/docs/guide/?
 || **settings** | **object \| required**
 
 Whether to display standard UI elements in the task. ||
+||**config[]** | **array of objects**
+
+[Configuration for Template Builder](https://toloka.ai/docs/api/concepts/tb-config.html?lang=en) ||
 || **assets** | **object**
 
 Linked files:
@@ -376,12 +354,12 @@ Show the price per task suite. The default value is `true`. ||
 
 Required if `assignments_issuing_type=MAP_SELECTOR`.
 
-Name of the task. Users will see it in the task preview. ||
+Name of the task. Tolokers will see it in the task preview. ||
 || **description_template** | **string \| required if**
 
 Required if `assignments_issuing_type=MAP_SELECTOR`.
 
-A description of the task. Users will see it in the task preview. ||
+A description of the task. Tolokers will see it in the task preview. ||
 || **map_provider** | **string**
 
 This parameter is available when the project has `"assignments_issuing_type": "MAP_SELECTOR"`.
@@ -485,7 +463,7 @@ Parameters to sort by: ||
 || **owner.myself** | **boolean**
 
 Checks who the object belongs to:
-- `true` — The Toloker whose OAuth token is specified in the request.
+- `true` — The user whose OAuth token is specified in the request.
 - `false` — Another account (employee or owner).
 {% if audience == "internal" %}**owner.company_id** | **string**
 
