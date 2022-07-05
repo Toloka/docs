@@ -1,8 +1,8 @@
 # Product search relevance
 
-For this type of project, you can use the **Product search relevance** template.
+For this type of project, you can use the **Product search relevance** preset.
 
-This template helps you improve ecommerce search page results by rating how relevant products are to specific search queries.
+This preset helps you improve ecommerce search page results by rating how relevant products are to specific search queries.
 
 Take a look at the example: the labeling interface includes an image, a box for the search query, and radio buttons for evaluating relevance. Note that validation and task layout are already configured in this example.
 
@@ -183,7 +183,7 @@ Take a look at the example: the labeling interface includes an image, a box for
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Add a response field {#add-text-area}
 

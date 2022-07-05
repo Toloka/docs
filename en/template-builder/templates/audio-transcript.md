@@ -1,6 +1,6 @@
 # Audio transcription
 
-For this type of project, you can use the **Transcribing audio recordings** template ([view code in the sandbox](https://clck.ru/TqsSX)). It has pre-configured validation, task layout, and shortcuts.
+For this type of project, you can use the **Transcribing audio recordings** preset ([view code in the sandbox](https://clck.ru/TqsSX)). It has pre-configured validation, task layout, and shortcuts.
 
 {% cut "Components used in the example" %}
 
@@ -26,7 +26,7 @@ For this type of project, you can use the **Transcribing audio recordings** temp
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TqsfS)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Other options for buttons {#options}
 

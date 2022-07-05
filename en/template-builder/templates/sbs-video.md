@@ -1,6 +1,6 @@
 # Side-by-side video comparison
 
-For this type of project, you can use the **Video comparison (Side-by-side)** template.
+For this type of project, you can use the **Video comparison (Side-by-side)** preset.
 
 Take a look at the example: there are two videos and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
@@ -184,7 +184,7 @@ Take a look at the example: there are two videos and buttons to choose an answe
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/X_bdCg0m3TXkwV)
 
-If this template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Add a layout {#add-color}
 

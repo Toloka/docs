@@ -1,6 +1,6 @@
 # Search for information online
 
-For this type of project, you can use the **Mining business contacts** template ([view code in the sandbox](https://clck.ru/USPmt)). It has pre-configured validation and task layout. In this template, a Toloker needs to enter the organization's contact information found online.
+For this type of project, you can use the **Mining business contacts** preset ([view code in the sandbox](https://clck.ru/USPmt)). It has pre-configured validation and task layout. In this preset, a Toloker needs to enter the organization's contact information found online.
 
 {% cut "Components used in the example" %}
 
@@ -36,7 +36,7 @@ For this type of project, you can use the **Mining business contacts** template 
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBm5)
 
-If this  template doesn't meet your needs, see other examples in this section.
+If this preset doesn't meet your needs, see other examples in this section.
 
 ## Add a field for selecting response options {#add-radio-group}
 
