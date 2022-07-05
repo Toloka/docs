@@ -2,7 +2,7 @@
 
 Issues rewards to Tolokers.
 
-The reward amount can be from $0.001 to $100 per Toloker per time.
+The size of the reward can range between $0.001 and $100 per Toloker at a time.
 
 {% note alert %}
 
@@ -10,6 +10,20 @@ You can send a maximum of 10,000 requests of this kind per day.
 
 {% endnote %}
 
+You can't use one request to pass multiple rewards with the same price, name, and message to the same annotator. A response with the status 409 will be returned.
+
+{% cut "Sample error with HTTP status code 409" %}
+
+```json
+{
+  "user_id": {
+    "code": "ENTITY_CONFLICT",
+    "message": "It is not allowed to apply multiple bonuses with the same amount, title, message and comment to same user in single operation"
+  }
+}
+```
+
+{% endcut %}
 
 ## Request {#request}
 
@@ -108,7 +122,7 @@ Comments that are only visible to the requester. ||
 The subject of the message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: "`"<language RU/EN/TR/ID/FR>": "<title text>"`. ||
 || **public_message** | **object**
 
-Message text for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
+The text of message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
 || **without_message** | **boolean**
 
 Allows you not to send a reward message to the Toloker. The default value is `false`.

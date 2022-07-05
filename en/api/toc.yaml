@@ -21,7 +21,11 @@ items:
       - name: Overview
         href: concepts/project.md
       - name: Create a project
-        href: concepts/create-prj.md
+        items:
+          - name: Overview
+            href: concepts/create-prj.md
+          - name: Configuration for Template Builder
+            href: concepts/tb-config.md
       - name: Edit a project
         href: concepts/edit-prj.md
       - name: Get the list of projects
