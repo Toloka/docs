@@ -3,8 +3,8 @@ href: index.md
 items:
   - href: quickstart.md
     name: Quick start
-  - href: glossary.md
-    name: Terms and definitions
+  - href: visual-editor.md
+    name: Visual editor
   - href: concepts/types.md
     hidden: true
     name: Property types
@@ -102,6 +102,8 @@ items:
     include:
       path: reference/toc.yaml
       mode: link
+  - href: glossary.md
+    name: Glossary
   - href: troubleshooting/troubleshooting.md
     name: Troubleshooting
   - href: concepts/support.md
