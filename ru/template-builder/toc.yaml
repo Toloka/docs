@@ -3,8 +3,8 @@ href: index.md
 items:
   - href: quickstart.md
     name: Быстрый старт
-  - href: glossary.md
-    name: Термины и определения
+  - href: visual-editor.md
+    name: Визуальный редактор
   - href: concepts/types.md
     hidden: true
     name: Типы свойств
@@ -102,6 +102,8 @@ items:
     include:
       path: reference/toc.yaml
       mode: link
+  - href: glossary.md
+    name: Глоссарий
   - href: troubleshooting/troubleshooting.md
     name: Решение проблем
   - href: concepts/support.md

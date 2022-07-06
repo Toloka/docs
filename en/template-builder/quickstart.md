@@ -34,6 +34,7 @@ We recommend that you read these sections to get familiar with Template Builder:
 ### Template Builder interface {#interface}
 
 The Template Builder interface consists of four vertical panels:
+
 1. **Configuration**: for editing the task interface in JSON format. It supports auto-completion with hints and preset code snippets.
 
 1. **Example of input data**: for editing input data in JSON format. The input data specification is automatically generated based on this field.
@@ -46,12 +47,18 @@ The Template Builder interface consists of four vertical panels:
 
 To hide or display the first three panels, use the ![](_images/show-hide-buttons.png) buttons in the upper-right corner.
 
-If you opened Template Builder in Toloka, click ![](_images/fullscreen-button.png) in the upper-right corner to switch to full-screen mode. If you opened the Template Builder sandbox, it is already displayed full-screen.
+{% note info %}
 
+For some Toloka presets, the visual editor is available. Refer to the [Visual editor](visual-editor.md) section to learn more about how to edit the task interface using it.
+
+{% endnote %}
+
+If you opened Template Builder in Toloka, click ![](_images/fullscreen-button.png) in the upper-right corner to switch to full-screen mode. If you opened the Template Builder sandbox, it is already displayed full-screen.
 
 ### Shortcuts {#editor}
 
 To view all the available commands and shortcuts, click **F1**. Main shortcuts:
+
 - **Tab**: Get auto-completion hints.
 - **Ctrl**+**S**: Use for automatic formatting (alignment of text indents).
 
@@ -61,7 +68,6 @@ If you use [VS Code]({{ visualstudio }}), the editor will be familiar to you bec
 
 {% endnote %}
 
-
 ### If you're not familiar with JSON {#json-guide}
 
 If you haven't written in JSON before, you might have some difficulties like unclosed brackets or missing commas and quotation marks.
@@ -69,6 +75,7 @@ If you haven't written in JSON before, you might have some difficulties like unc
 {% cut "Learn how JSON works" %}
 
 Objects are the main elements in JSON. They are enclosed in curly brackets, `{}`. An object contains `"key":value` pairs separated by commas.
+
 ```json
 {
   "name": "John",
@@ -82,8 +89,8 @@ JSON is insensitive to spaces and line breaks between JSON elements. You may omi
 
 {% endnote %}
 
-
 Values may contain different data types:
+
 - `string`: A string enclosed in double quotes, such as `"Hello world"`.
     To add a quotation mark `"` or a backslash `\` to a string, add another backslash `\` to it. Don't escape quotation marks `” “` and `/`.
 
@@ -101,6 +108,7 @@ Values may contain different data types:
 - `number`: A number without quotation marks, like `"age": 25`.
 - `boolean`: A Boolean value without quotation marks (`true` or `false`).
 - `object`: Another object, for example:
+
     ```json
     {
       "person": {
@@ -111,6 +119,7 @@ Values may contain different data types:
     ```
 
 - `array`: An array of comma-separated elements. You can use absolutely anything as an element, like a string, a number, a Boolean value, or an object. An array is enclosed in square brackets, `[]`:
+
     ```json
     "cities": ["Moscow", "Tokyo", "New York"]
     ```
@@ -147,6 +156,7 @@ If you have more questions, see the documentation on the [json.org]({{ json }}) 
 ```
 
 There are 3 elements at the top configuration level:
+
 - `view`: The component to be displayed, such as an image or list of nested components.
 
     In the `type` property, specify the name of the component, then list the other properties. Each component has its own set of properties. See the hints in the editor and the component descriptions in the [Component reference guide](reference/index.md).
@@ -154,6 +164,7 @@ There are 3 elements at the top configuration level:
 - `plugins`: An array of added [plugins](reference/plugins.md). These are special components that provide additional functionality, such as shortcuts.
 
 - `vars`: Variables with JSON code that can be [reused](best-practices/reuse.md) anywhere in the configuration using the $ref structure as follows:
+
     ```json
     {
       "view": {
@@ -168,7 +179,6 @@ There are 3 elements at the top configuration level:
     }
     ```
 
-
 ## Practice {#practice}
 
 In this section, you will create a task interface for an image. The interface will consist of three elements: a title with the task description, a picture, and a group of three buttons with answer options.
@@ -178,7 +188,6 @@ In this section, you will create a task interface for an image. The interface wi
 If something goes wrong during the creation process, you can [view the correct code in the sandbox](https://clck.ru/UC4df).
 
 {% endnote %}
-
 
 ### Creating a task interface {#create-interface}
 
@@ -209,6 +218,7 @@ If something goes wrong during the creation process, you can [view the correct c
 1. Go back to the **Configuration** panel. Add the array of elements of the future interface to the `items` property of the `view.list` component. To do this, place the cursor inside the square brackets and click **Tab**. A list will appear where you need to select the [view.text](reference/view.text.md) component. Change the value of the `content` property to `"Look at the picture and answer the question."`. This text will appear above the image as the task title.
 
     ![](_images/practice-view-text.png)
+
 1. Add the next element. To do this, place the cursor behind the curly bracket that closes the `view.text` component, type a comma, and click **Tab**. A list will appear where you need to select the [view.image](reference/view.image.md) component. It is used to display the image. Its `url` property contains a link to the image. Delete the link and the quotation marks and click **Tab**. A list will appear where you need to select the [data.input](operations/work-with-data.md) component. It is used to get values from the sample input data.
 
     ![](_images/practice-data-input.png)
@@ -224,6 +234,7 @@ If something goes wrong during the creation process, you can [view the correct c
 1. The next property after the group of buttons is `data`. It determines what the output data will look like ([data.output](operations/work-with-data.md)). The output data is the values that take the responses to the task questions.
 
 1. The [plugin.toloka](reference/plugin.toloka.md) component at the end of the code specifies the additional task settings. Change the value of the `taskWidth` property (the width of the task block) to 500.
+
 1. The task is ready to use. Try to complete it in the **Preview** window and click **Submit** to view the result.
 
 {% cut "Full configuration code" %}
@@ -293,8 +304,6 @@ To view the list of snippets for a property, delete the property value, position
 
 {% endnote %}
 
-
-
 ### Adding shortcuts {#add-hotkeys}
 
 To help Tolokers complete your tasks faster, add shortcuts to the interface.
@@ -320,7 +329,6 @@ Shortcuts are not part of visual components. They are added via a separate plugi
 1. Each shortcut also has a `payload` property with the value to be passed to the output data when this button is selected. Change this property for the three buttons to `"ok"`, `"bad"`, and `"error"`.
 
 1. Go to the **Preview** panel and click anywhere on the panel to move the cursor away from the editor. Now you can test the shortcuts.
-
 
 {% cut "Full configuration code" %}
 
@@ -415,6 +423,7 @@ Validation lets you check the values that Tolokers enter. The next part of the c
 To enable this, add the `validation` property with the [condition.required](reference/condition.required.md) component to the component's code. In the examples above, this code has already been added.
 
 You can also add a hint to this code telling Tolokers what they need to correct to pass validation. To do this, add a `hint` property with the hint so that it looks like this:
+
 ```json
 {
   "validation": {
@@ -428,18 +437,15 @@ Go to the **Preview** panel and try submitting the task without selecting any of
 
 Learn more about automated checks in [Reviewing assignments automatically](best-practices/conditions.md).
 
-
 ### Checking the data specifications {#check-specs}
 
 After you configure the task interface, check the input and output data specifications in the **Data specification** field. It's located right below the field for choosing an editor. Specifications are generated automatically, but errors are possible.
 
 After that, you can continue creating or editing the project in Toloka.
 
-
 ## What's next {#what-next}
 
 - See [instructions](operations/all.md) for popular tasks.
 - Check the [list of available components](reference/index.md).
-
 
 [![](_images/buttons/contact-support.svg)](concepts/support.md)
