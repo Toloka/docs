@@ -4590,7 +4590,7 @@ default:
   ui_requester_wf-key-preset_mobile_apps: "Mobile app for Android or iOS"
   ui_requester_wlcm-header: "Let's get started"
   ui_requester_wlcm-help: "In case of difficulties"
-  ui_requester_wlcm-help-callsupport: "Contact the Yandex Toloka team via %s"
+  ui_requester_wlcm-help-callsupport: "Contact the Toloka team via %s"
   ui_requester_wlcm-help-readdocs: "Read the &lt;a data-pass target=\"_blank\" href=\"https://toloka.ai/docs/guide/\"&gt;documentation&lt;/a&gt;"
   ui_requester_wlcm-help-support: "Support"
   ui_requester_wlcm-help-terminology: "glossary"
