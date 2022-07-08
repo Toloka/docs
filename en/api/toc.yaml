@@ -6,8 +6,6 @@ items:
     hidden: true
   - name: Accessing the API
     href: concepts/access.md
-  - name: Basic concepts
-    href: concepts/glossary.md
   - name: Quick start
     items:
       - name: Overview
@@ -181,7 +179,6 @@ items:
         href: concepts/httpproxy-delete.md
   - name: Ways to upload tasks
     href: concepts/download-tasks.md
-
   - name: Tasks
     items:
       - name: Overview
@@ -288,6 +285,8 @@ items:
     href: concepts/standard-query-parameters.md
   - name: Sorting the list of objects
     href: concepts/sorting.md
+  - name: Glossary
+    href: concepts/glossary.md
   - name: Libraries
     href: concepts/libraries.md
 base: en

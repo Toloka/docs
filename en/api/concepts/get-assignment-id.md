@@ -161,7 +161,7 @@ The default value is `false`.
 For more information about creating task suites, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html?lang=en). ||
 || **automerged** | **boolean**
 
-Flag of the response received as a result of [ merging identical tasks](tasks.md#task-merge) . Value:
+Flag of the response received as a result of [merging identical tasks](tasks.md#task-merge). Value:
 
 - `true` — The response was recorded when identical tasks were merged.
 - `false` — Normal Toloker response. ||

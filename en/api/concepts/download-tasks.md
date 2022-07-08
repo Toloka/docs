@@ -12,7 +12,7 @@ Choose this method if:
 
 - Apart from the general tasks, the pool will contain control or training tasks.
 
-With this method, Toloka will split tasks into suites according to the "smart mixing" settings. When uploading tasks this way, use the [ POST /tasks](create-task.md) request.
+With this method, Toloka will split tasks into suites according to the "smart mixing" settings. When uploading tasks this way, use the [POST /tasks](create-task.md) request.
 
 {% cut "Sample request" %}
 
