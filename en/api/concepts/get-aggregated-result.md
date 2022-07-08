@@ -8,17 +8,17 @@ Gets aggregated responses.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **operation_id** | Operation ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Query parameters {#query-params}
 
@@ -47,7 +45,6 @@ Specified in the link after the question mark; separated by `&`.
 Parameters for sorting in ascending order:
 
 - `task_id` — Task ID.
-
 
 To change the sorting direction to descending, add a hyphen before the parameter: `sort=-task_id`. ||
 || **Standard query parameters** |
@@ -67,17 +64,17 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -87,17 +84,17 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

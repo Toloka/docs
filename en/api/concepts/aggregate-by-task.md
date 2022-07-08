@@ -8,22 +8,21 @@ Starts aggregating responses to a single task.
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
-
 
 ## Headers {#headers}
 
@@ -31,7 +30,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
@@ -67,7 +65,7 @@ Aggregation type.
 A skill that determines the weight of the Toloker's response. ||
 || **fields** | **object**
 
-[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html?lang=en) to use for aggregating responses. For best results, each of these fields must have a limited number of response options. ||
+[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html) to use for aggregating responses. For best results, each of these fields must have a limited number of response options. ||
 || **fields.name** | **string**
 
 The output data field name. ||

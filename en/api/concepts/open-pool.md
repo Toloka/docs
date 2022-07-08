@@ -12,17 +12,17 @@ An operation is created when you send a request. To track the progress of the op
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/pools/<pool_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -32,13 +32,11 @@ Parameter | Overview
 ----- | -----
 **pool_id** | Pool ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -49,7 +47,6 @@ If the pool is already open, an empty response with status 204 is returned.
 If the pool cannot be opened, a response is returned with an error description and the status 409.
 
 {% endnote %}
-
 
 ```json
 {
@@ -84,12 +81,12 @@ The status of the operation:
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**
 
-The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
-The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
 The percentage of the operation completed. ||
 || **parameters.pool_id** | **string**

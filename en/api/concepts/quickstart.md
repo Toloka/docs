@@ -2,13 +2,11 @@
 
 {% note info %}
 
-To better understand how Toloka works, first try setting up tasks in the Toloka interface using the [Requester's guide](https://toloka.ai/docs/guide/concepts/main-steps.html?lang=en) and then proceed to setting them up in the API.
+To better understand how Toloka works, first try setting up tasks in the Toloka interface using the [Requester's guide](https://toloka.ai/docs/guide/concepts/main-steps.html) and then proceed to setting them up in the API.
 
 {% endnote %}
 
-
 For example, create a project with tasks where Tolokers will determine the type of animal.
-
 
 {% cut "Sample result" %}
 
@@ -33,8 +31,6 @@ The sample project described under "Quick start" is for the sandbox. To set up t
 
     - [Get responses](qs-results.md) (`GET /api/v1/assignments?pool_id=<pool ID>`).
     - [Download attachments](get-attachment-list.md) (`GET /api/v1/attachments`).
-
-
 
 ## What's next {#what-next}
 

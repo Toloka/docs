@@ -8,17 +8,17 @@ Sends a test notification to the URL specified in the subscription.
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **subscription_id** | ID of the subscription.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Example of the notification body {#body}
 

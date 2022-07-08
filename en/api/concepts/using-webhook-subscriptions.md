@@ -6,13 +6,12 @@ Notifications are sent in JSON format.
 
 ```json
 {
-    "events":
-    [
-      {Event data 1},
-      {Event data 2},
-      {Event data N}
-    ]
-  }
+  "events":[
+    {Event data 1},
+    {Event data 2},
+    {Event data N}
+  ]
+}
 ```
 
 Data included in a notification depends on the [event type](./put-webhook-subscriptions.md#event).

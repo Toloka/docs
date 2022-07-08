@@ -449,5 +449,5 @@ CSS-интерфейс задания.
 - `ARCHIVED` — архивный.||
 ||**created** | **string**
 
-Дата и время создания проекта по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+Дата и время создания проекта по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 |#

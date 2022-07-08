@@ -55,8 +55,8 @@
 
 Параметры для сортировки:
 - `id` — идентификатор операции;
-- `submitted` — дата и время отправки запроса по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss];
-- `finished` — дата и время завершения операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
+- `submitted` — дата и время отправки запроса по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`;
+- `finished` — дата и время завершения операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 {% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**Стандартные query-параметры** |

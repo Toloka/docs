@@ -8,17 +8,17 @@ Gets the list of created training pools (including archived pools).
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/trainings
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/trainings
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/trainings
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/trainings
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,7 +28,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
-
 ## Query parameters {#query-params}
 
 Specified in the link after the question mark; separated by `&`.
@@ -37,6 +36,7 @@ Specified in the link after the question mark; separated by `&`.
 || Parameter | Overview  ||
 || **status** | **string**
 Training pool status:
+
 - `OPEN` — Open.
 - `CLOSED` — Closed.
 - `LOCKED` — No possible actions.
@@ -45,9 +45,10 @@ Training pool status:
 ID of the project that the training pool is linked to. ||
 || **sort** | **string**
 Parameters for sorting in ascending order:
+
 - `id` — ID of the training pool.
-- `created` — The date when the training pool was created, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-- `last_started` — The date when the training pool was last started, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
+- `created` — The date when the training pool was created, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+- `last_started` — The date when the training pool was last started, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |
@@ -67,17 +68,18 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Show the remaining tasks sorted by ascending ID**
@@ -86,24 +88,24 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
-{% endlist %}
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
+{% endlist %}
 
 ## Response {#response}
 
 Contains a list of training pools and their properties in the `items` array:
 
-```no-highlight
+```json
 {"items" : [{parameters_of_training_pool_1}, {parameters_of_training_pool_2}, ... {parameters_of_training_pool__n_}], "has_more": false}
 ```

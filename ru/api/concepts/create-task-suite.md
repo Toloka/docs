@@ -246,7 +246,7 @@
 - `false` — обычная страница заданий, созданная «умным смешиванием» или заказчиком.||
 ||**created** | **string**
 
-Дата и время создания страницы заданий по UTC в формате ISO 8601 YYYY-MM-DDThh:mm:ss[.sss].||
+Дата и время создания страницы заданий по UTC в формате ISO 8601 `YYYY-MM-DDThh:mm:ss[.sss]`.||
 |#
 
 {% endcut %}
@@ -335,13 +335,13 @@
   - `FAIL` — не выполнена.||
   ||**submitted** | **string**
 
-  Дата и время отправки запроса по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+  Дата и время отправки запроса по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
  ||**started** | **string**
 
- Дата и время начала операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+ Дата и время начала операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
   ||**finished** | **string**
 
-  Дата и время окончания операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+  Дата и время окончания операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
   ||**details. success_count** | **integer**
 
   Количество загруженных страниц заданий.||

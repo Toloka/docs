@@ -12,17 +12,17 @@ An operation is created when you send a request. To track the progress of the op
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/trainings/<training_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -32,13 +32,11 @@ Parameter | Overview
 ----- | -----
 **training_id** | Pool ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -47,7 +45,6 @@ Title | Overview
 If the current training pool status is the same as the requested status, an empty response with status 204 is returned.
 
 {% endnote %}
-
 
 ```json
 {
@@ -74,18 +71,19 @@ User ID. ||
 Type of operation: `TRAINING.OPEN` — Open a training pool. ||
 || **status** | **string**
 The status of the operation:
+
 - `PENDING` — Not started yet.
 - `RUNNING` — In progress.
 - `SUCCESS` — Completed successfully.
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**
 
-The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
-The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
 The percentage of the operation completed. ||
 || **parameters.training_id** | **string**

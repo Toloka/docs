@@ -8,17 +8,17 @@ Downloads a file attached to a task response.
 
 - Production version
 
-  ```no-highlight
-  GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
-  Authorization: OAuth <OAuth token>
-  ```
+    ```no-highlight
+    GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```no-highlight
-  GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
-  Authorization: OAuth <OAuth token>
-  ```
+    ```no-highlight
+    GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **file_id** | File ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 

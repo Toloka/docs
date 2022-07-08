@@ -8,17 +8,17 @@ Gets user data by `user_id`.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-metadata/<user_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-metadata/<user_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-metadata/<user_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-metadata/<user_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,19 +28,17 @@ Parameter | Overview
 ----- | -----
 **user_id** | User ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
-
 ## Response {#response}
 
 Contains user metadata in JSON format.
 
-```
+```json
 {
   "id": "123cdfggh",
   "country": "EN",

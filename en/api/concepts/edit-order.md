@@ -8,22 +8,21 @@ Changes the priority of a task suite in the pool.
 
 - Production version
 
-   ```bash
-   PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
-   ```
+    ```bash
+    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-   ```bash
-   PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
-   ```
+    ```bash
+    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
-
 
 ## Path parameters {#path-params}
 
@@ -31,14 +30,12 @@ Parameter | Overview
 ----- | -----
 **task_suite_id** | ID of a task suite.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Query parameters {#query-params}
 
@@ -55,7 +52,7 @@ Open the pool immediately after the operation is completed, if the pool is close
 
 ```json
 {
-   "issuing_order_override": <new value>
+  "issuing_order_override": <new value>
 }
 ```
 

@@ -3,17 +3,18 @@
 ## Overview {#about}
 
 You can use this rule to:
+
 - Resend rejected task suites for recompletion to other Tolokers.
-    
+
     If you rejected a task suite, you may want it to be completed by a different Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](./glossary.md#overlap) for this task suite only. This is especially helpful if you have the overlap value set to 1.
-    
+
 - Save money on re-completing task suites that you have already accepted.
-    
+
     If you reviewed and accepted a task suite, it may not make sense for other Tolokers to complete it. To avoid this, you can reduce the overlap only for accepted task suites.
 
 ## Request body {#body}
 
-** Re-assign task suites that didn't pass non-automatic acceptance.**
+**Re-assign task suites that didn't pass non-automatic acceptance.**
 
 ```json
 {
@@ -30,7 +31,7 @@ You can use this rule to:
         {
           "key": "assessment_event",
           "operator": "EQ",
-          "value": "REJECT" 
+          "value": "REJECT"
         }
       ],
       "action": {
@@ -58,23 +59,14 @@ Parameters for collecting statistics (for example, the number of tasks skipped i
 Criteria for the quality control rule:
 
 - `GOLDEN_SET` — The number of correct and incorrect responses in the control tasks.
-    
 - `MAJORITY_VOTE` — The percentage of responses that matched the majority vote.
-    
 - `CAPTCHA` — The number of captchas entered successfully and unsuccessfully.
-    
 - `INCOME` — Payment for tasks completed by the Toloker over the past 24 hours.
-    
 - `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
-    
 - `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
-    
 - `ASSIGNMENT_SUBMIT_TIME` — The number of "fast" responses (the minimum response speed is set in the parameters).
-    
 - `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during non-automatic acceptance.
-    
 - `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with non-automatic acceptance enabled.
-    
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
 || **configs.collector_config. parameters.history_size** | **integer \| required**
 
@@ -89,24 +81,17 @@ Conditions (for example, 10 task suites skipped in a row). Multiple conditions a
 Values that are checked in the condition:
 
 - `pending_assignments_count` — The number of task suites that are completed and awaiting review.
-    
 - `accepted_assignments_count` — The number of task suites accepted after the review.
-    
 - `rejected_assignments_count` — The number of task suites rejected after the review. ||
 || **configs.rules.conditions. operator** | **string \| required**
 
 Comparison operator (the `key` data is compared with the threshold value from `value`):
 
 - `EQ` ("Equal") — Equal to.
-    
 - `NE` ("Not equal to") — Not equal to.
-    
 - `GT` ("Greater than") — Greater than.
-    
 - `LT` ("Less than") — Less than.
-    
 - `GTE` ("Greater than equal to") — Greater than or equal to.
-    
 - `LTE` ("Less than equal to") — Less than or equal to. ||
 || **configs.rules.conditions. value** | **string \| required**
 
@@ -125,9 +110,7 @@ Action parameters. ||
 Scope:
 
 - `POOL` — pool. Affects the Toloker's rating.
-    
 - `PROJECT` — The project. Affects the Toloker's rating.
-    
 - `ALL_PROJECTS` — All the requester's projects. ||
 || **configs.collector_config. parameters** | **object \| required if**
 
@@ -146,7 +129,6 @@ Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.
 The value to assign to the skill:
 
 - `correct_answers_rate` — The percentage of correct responses.
-    
 - `wrong_answers_rate` — The percentage of incorrect responses. ||
 || **configs.rules.action. parameters.skill_value** | **integer \| required if**
 
@@ -173,11 +155,8 @@ The value can be `ACCEPT`, `ACCEPT_AFTER_REJECT`, or `REJECT` (task suites get a
 Ban duration unit:
 
 - `MINUTES` — Minutes
-    
 - `HOURS` — Hours
-    
 - `DAYS` — Days
-    
 - `PERMANENT` — Permanent ban ||
 || **configs.rules.action. parameters.duration** | **integer**
 
@@ -190,8 +169,5 @@ Comments (the reason for blocking access). Visible only to the requester. ||
 Determines whether to re-open a closed pool:
 
 - `true` — Open the pool after making changes if it is closed.
-- `false` — Don't open the pool after making changes, if it is closed.
-||
+- `false` — Don't open the pool after making changes, if it is closed.||
 |#
-
-

@@ -10,13 +10,11 @@ You can send a maximum of 20 requests of this kind per minute and 100 requests p
 
 {% endnote %}
 
-
 {% note info %}
 
 Learn about creating a main pool in [Create a pool](create-pool.md).
 
 {% endnote %}
-
 
 ## Request {#request}
 
@@ -24,19 +22,19 @@ Learn about creating a main pool in [Create a pool](create-pool.md).
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/trainings
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/trainings
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/trainings
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/trainings
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -46,7 +44,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
@@ -94,11 +91,13 @@ Instructions for completing a training task. You can use any HTML markup. ||
 The time allowed for completing a task suite, in seconds. We recommend allowing no more than 60 seconds per task suite (including the time for loading the page and submitting responses). ||
 || **mix_tasks_in_creation_ order** | **boolean**
 Whether training tasks are issued in their upload order:
+
 - `true` — Tasks are grouped into task suites in the order of rows in the uploaded file (top-to-bottom).
 - `false` — Tasks are taken at random.
 The default value is `true`. ||
 || **shuffle_tasks_in_task_suite** | **boolean**
 Whether training tasks are shuffled within each task suite:
+
 - `true` — Yes.
 - `false` — No, they are listed in their upload order.
 The default value is `true`. ||
@@ -146,14 +145,16 @@ ID of the training pool. ||
 Requester ID. ||
 || **owner.myself** | **boolean**
 Checks who the object belongs to:
+
 - `true` — The user who made the request.
 - `false` — Another account (employee or owner). ||
 || **status** | **string**
 Training pool status:
+
 - `OPEN` — Open.
 - `CLOSED` — Closed.
 - `ARCHIVED` — Archived. ||
 || **created** | **string**
 
-The UTC date and time when the training pool was created, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time when the training pool was created, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#

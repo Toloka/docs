@@ -3,11 +3,8 @@
 You can manually check tasks and reject responses of poor quality. To accept or reject received responses, change the status of the task suite using a PATCH request to the resource `/assignments/<task suite assignment ID>`:
 
 - Accept responses: change `SUBMITTED` to `ACCEPTED`.
-
 - Reject responses: change `SUBMITTED` to `REJECTED`.
-
 - Change a rejection decision: change `REJECTED` to `ACCEPTED`.
-
 
 To resend rejected tasks to be completed by other Tolokers, add a quality control rule to the pool (see [Recompletion of assignments](restore-task-overlap.md)).
 
@@ -17,19 +14,19 @@ To resend rejected tasks to be completed by other Tolokers, add a quality contro
 
 - Production version
 
-  ```bash
-  PATCH https://toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PATCH https://toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  PATCH https://sandbox.toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PATCH https://sandbox.toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -39,14 +36,12 @@ Parameter | Overview
 ----- | -----
 **task_suite_assignment_id** | ID of the task suite assignment.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
@@ -64,15 +59,10 @@ Title | Overview
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
 - `ACTIVE` — Being completed by a Toloker.
-
 - `SUBMITTED` — Completed but not checked.
-
 - `ACCEPTED` — Accepted by the requester.
-
 - `REJECTED` — Rejected by the requester.
-
 - `SKIPPED` — Skipped by the Toloker.
-
 - `EXPIRED` — The time for completing the tasks expired.
 ||
 || **public_comment** | **string**
@@ -101,15 +91,10 @@ The response contains the changed values of fields:
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
 - `ACTIVE` — Being completed by a Toloker.
-
 - `SUBMITTED` — Completed but not checked.
-
 - `ACCEPTED` — Accepted by the requester.
-
 - `REJECTED` — Rejected by the requester.
-
 - `SKIPPED` — Skipped by the Toloker.
-
 - `EXPIRED` — The time for completing the tasks expired.
 ||
 || **public_comment** | **string**

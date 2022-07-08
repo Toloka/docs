@@ -10,23 +10,23 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/tasks
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    POST https://toloka.yandex.com/api/v1/tasks
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  [{task 1}, {task 2},... {task n}]
-  ```
+    [{task 1}, {task 2},... {task n}]
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/tasks
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/tasks
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  [{task 1}, {task 2},... {task n}]
-  ```
+    [{task 1}, {task 2},... {task n}]
+    ```
 
 {% endlist %}
 
@@ -49,9 +49,7 @@ Specified in the link after the question mark; separated by `&`.
 Mode for request processing:
 
 - `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The response contains information about the operation (start and completion time, status, number of task suites).
-
 - `false` — Synchronous. The response contains information about one or more created tasks. Maximum of 5000 tasks per request.
-
 
 The default value is `false`. ||
 || **allow_defaults** | **boolean**
@@ -59,9 +57,7 @@ The default value is `false`. ||
 Overlap settings:
 
 - `true` — Use the overlap that is set in the pool parameters (in the [defaults.default_overlap_for_new_tasks](create-pool.md#default-overlap-tasks) key).
-
 - `false` — Use the overlap that is set in the task parameters (in the [overlap](#overlap) field).
-
 
 The default value is `false`. ||
 || **skip_invalid_items** | **boolean**
@@ -69,9 +65,7 @@ The default value is `false`. ||
 Validation parameters for JSON objects:
 
 - `true` — Create the tasks that passed validation. Skip the rest of the tasks (errors will be listed in the response to the request).
-
 - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
-
 
 The default value is `false`. ||
 || **open_pool** | **boolean**
@@ -90,37 +84,35 @@ You can use this ID in the future to [get information about the operation](opera
 
 ## Response {#response}
 
-
 Depending on the [async_mode](#async_mode) value in the request, the response contains:
 
 {% list tabs %}
 
-
 - Data for the tasks (`async_mode=false`)
 
-  ```json
-  {
-    "items": {
-      "0": {
-        "id": "f432cac2-7184-47a3-8220-12ce362cb208",
-        "pool_id": "21",
-        "input_values": {
-          "image": "http://images.com/1.png"
-        },
-        "overlap": 3,
-        "created": "2016-09-29T18:04:00"
-      }
-    },
-    "validation_errors": {
-      "1": {
-        "input_values.image": {
-          "code": "VALUE_REQUIRED",
-          "message": "Value must be present and not equal to null"
+    ```json
+    {
+      "items": {
+        "0": {
+          "id": "f432cac2-7184-47a3-8220-12ce362cb208",
+          "pool_id": "21",
+          "input_values": {
+            "image": "http://images.com/1.png"
+          },
+          "overlap": 3,
+          "created": "2016-09-29T18:04:00"
+        }
+      },
+      "validation_errors": {
+        "1": {
+          "input_values.image": {
+            "code": "VALUE_REQUIRED",
+            "message": "Value must be present and not equal to null"
+          }
         }
       }
     }
-  }
-  ```
+    ```
 
   #|
   || Parameter | Overview ||
@@ -141,7 +133,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   Task suite overlap. ||
   || **created** | **string**
 
-  The UTC date and time when the task suite was created, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+  The UTC date and time when the task suite was created, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
   || **validation_errors** | **object**
 
   An object with errors in tasks. Returned if the request has the parameter `skip_invalid_items=true`. ||
@@ -149,28 +141,28 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 - Information about the operation (`async_mode=true`)
 
-  ```json
-  {
-    "id": "26e130ad3652443a3dc5094791e48ef9",
-    "type": "TASK.BATCH_CREATE",
-    "status": "FAIL",
-    "submitted": "2015-12-13T23:32:01",
-    "started": "2015-12-13T23:33:00",
-    "finished": "2015-12-13T23:34:12",
-    "parameters": {
-      "allow_defaults": false,
-      "skip_invalid_items": false,
-      "open_pool": false
-    },
-    "details": {
-      "total_count": 2,
-      "valid_count": 1,
-      "not_valid_count": 1,
-      "success_count": 0,
-      "failed_count": 2
+    ```json
+    {
+      "id": "26e130ad3652443a3dc5094791e48ef9",
+      "type": "TASK.BATCH_CREATE",
+      "status": "FAIL",
+      "submitted": "2015-12-13T23:32:01",
+      "started": "2015-12-13T23:33:00",
+      "finished": "2015-12-13T23:34:12",
+      "parameters": {
+        "allow_defaults": false,
+        "skip_invalid_items": false,
+        "open_pool": false
+      },
+      "details": {
+        "total_count": 2,
+        "valid_count": 1,
+        "not_valid_count": 1,
+        "success_count": 0,
+        "failed_count": 2
+      }
     }
-  }
-  ```
+    ```
 
   #|
   || Parameter | Overview ||
@@ -185,29 +177,24 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   The status of the operation:
 
   - `PENDING` — Not started yet.
-
   - `RUNNING` — In progress.
-
   - `SUCCESS` — Completed successfully.
-
   - `FAIL` — Not completed. ||
   || **submitted** | **string**
 
-  The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+  The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
   || **started** | **string**
 
-  The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+  The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
   || **finished** | **string**
 
-  The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+  The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
   || **parameters.skip_invalid_items** | **boolean**
 
   Validation parameters for JSON objects:
 
   - `true` — Create the tasks that passed validation. Skip the rest of the tasks.
-
   - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
-
 
   The default value is `false`. ||
   || **details.total_count** | **string**

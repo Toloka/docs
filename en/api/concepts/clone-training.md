@@ -10,17 +10,18 @@ An empty training pool will be created with the same parameters.
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/training/<training_id>/clone
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/training/<training_id>/clone
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/clone
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/clone
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path parameters {#path-params}
@@ -29,13 +30,11 @@ Parameter | Overview
 ----- | -----
 **training_id** | Pool ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -66,18 +65,19 @@ User ID. ||
 Type of operation: `TRAINING.CLONE` — Clone a training pool. ||
 || **status** | **string**
 The status of the operation:
+
 - `PENDING` — Not started yet.
 - `RUNNING` — In progress.
 - `SUCCESS` — Completed successfully.
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**
 
-The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
-The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
 The percentage of the operation completed. ||
 || **parameters.training_id** | **string**

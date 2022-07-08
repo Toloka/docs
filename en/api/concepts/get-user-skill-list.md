@@ -8,17 +8,17 @@ Gets a list of Toloker skills.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -27,7 +27,6 @@ Gets a list of Toloker skills.
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Query parameters {#query-params}
 
@@ -46,9 +45,7 @@ Skill ID. ||
 Parameters to sort by:
 
 - `id` — Skill ID.
-
 - `created` — The date when the skill was created, in UTC in the YYYY-MM-DD format.
-
 - `created` — The date when the skill was changed, in UTC in the YYYY-MM-DD format.
 
 
@@ -60,9 +57,9 @@ To learn how to configure sorting, see [Sorting the list of objects](sorting.md)
 ## Query example {#request-example}
 
 You can set up the display of the list of skills in parts (for example, 10 skills at a time):
+
 1. Show the first 10 skills, starting with the skill with the lowest ID.
 1. Show the remaining skills (10 at a time) in ascending order.
-
 
 **Show the first 10 skills**
 
@@ -70,17 +67,17 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -90,17 +87,17 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

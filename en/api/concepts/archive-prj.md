@@ -10,17 +10,17 @@ If a project isn't being used, you can send it to the archive. To do this, al
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -30,13 +30,11 @@ Parameter | Overview
 ----- | -----
 **project_id** | Project ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -72,21 +70,18 @@ Operation type:
 The status of the operation:
 
 - `PENDING` — Not started yet.
-
 - `RUNNING` — In progress.
-
 - `SUCCESS` — Completed successfully.
-
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**
 
-The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
 
-The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **float**
 
 The percentage of the operation completed. ||

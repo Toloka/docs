@@ -28,7 +28,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
-
 ## Query parameters {#query-params}
 
 Specified in the link after the question mark; separated by `&`.
@@ -38,6 +37,7 @@ Specified in the link after the question mark; separated by `&`.
 || **folder** | **string**
 
 Folders where the thread is located:
+
 - `INBOX` — Inbox.
 - `OUTBOX` — Sent.
 - `AUTOMATIC_NOTIFICATION` — Notifications.
@@ -50,9 +50,7 @@ Folders to not search for the thread: You can specify multiple comma-separated v
 Parameters to sort by:
 
 - `id` — The ID of a task suite.
-
-- `created` — The task suite creation date in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-
+- `created` — The task suite creation date in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |

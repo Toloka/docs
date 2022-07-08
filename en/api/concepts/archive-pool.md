@@ -14,19 +14,19 @@ Exams with automatic acceptance by accuracy, where tasks with insufficient accur
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/pools/<pool_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
-{% endlist %}
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
+{% endlist %}
 
 ## Path parameters {#path-params}
 
@@ -34,13 +34,11 @@ Parameter | Overview
 ----- | -----
 **pool_id** | Pool ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -49,7 +47,6 @@ Title | Overview
 If the pool is already archived, attempting to archive it again returns an empty response with status 204.
 
 {% endnote %}
-
 
 Contains information about the results of the operation.
 
@@ -86,12 +83,12 @@ The status of the operation:
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**
 
-The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
-The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
 The percentage of the operation completed. ||
 || **parameters.pool_id** | **string**

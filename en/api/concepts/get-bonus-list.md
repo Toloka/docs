@@ -8,17 +8,17 @@ Gets a list of rewards issued.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -27,7 +27,6 @@ Gets a list of rewards issued.
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Query parameters {#query-params}
 
@@ -49,7 +48,7 @@ Comments that are only visible to the requester. ||
 Parameters to sort by:
 
 - `id` — Reward ID.
-- `created` — The date when the reward was awarded, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
+- `created` — The date when the reward was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |
@@ -63,27 +62,25 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 1. Show the first 10 rewards, starting with the one with the lowest ID.
 1. Show the remaining rewards (10 at a time) in ascending order.
 
-
 **Show the first 10 rewards**
 
 {% list tabs %}
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
-
 
 **Show the remaining tasks sorted by ascending ID**
 
@@ -91,18 +88,17 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
-
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

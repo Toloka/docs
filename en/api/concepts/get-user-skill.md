@@ -8,17 +8,17 @@ Gets a Toloker's skill value.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-skills/<id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-skills/<id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **id** | The ID of a Toloker's skill that is assigned to the "skill-Toloker" pair.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -71,8 +69,8 @@ The integer value of that skill (`exact_value`, rounded to the nearest integer).
 Fractional value of the skill. Minimum — 0, maximum — 100. ||
 || **created** | **string**
 
-The date and time in UTC when the Toloker was first assigned the skill with the specified value. It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time in UTC when the Toloker was first assigned the skill with the specified value. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **modified** | **string**
 
-The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#

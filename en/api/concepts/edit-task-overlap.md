@@ -3,8 +3,11 @@
 Changes the task overlap.
 
 You can:
+
 - Set a [numeric value](create-task.md#overlap) or an [infinite overlap](create-task.md#infinite) to assign a task to all Tolokers (for example, for training tasks).
+
 - Add preliminary responses or change [their values](create-task.md#baseline) if they were set.
+
     Preliminary responses are used to calculate  response confidence when dynamic overlap (incremental relabeling, IRL) is enabled.
 
 - Make [control](./glossary.md#control) and [training](./glossary.md#training-tasks) tasks from regular ones or edit [responses](create-task.md#known) and [hints](create-task.md#message) for existing tasks.
@@ -15,19 +18,19 @@ You can:
 
 - Production version
 
-  ```bash
-  PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task ID>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task ID>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -38,13 +41,11 @@ Title | Overview
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
-
 ## Path parameters {#path-params}
 
 Parameter | Overview
 ----- | -----
 **task_id** | Task ID.
-
 
 ## Request body {#body}
 
@@ -52,8 +53,8 @@ Parameter | Overview
 
 ```json
 {
-   "overlap": <new overlap value>,
-   "infinite_overlap": false
+  "overlap": <new overlap value>,
+  "infinite_overlap": false
 }
 ```
 
@@ -61,8 +62,8 @@ Parameter | Overview
 
 ```json
 {
-   "overlap": null,
-   "infinite_overlap": true
+  "overlap": null,
+  "infinite_overlap": true
 }
 ```
 
@@ -75,7 +76,8 @@ Parameter | Overview
       "output_values":{<output data values>},
       "confidence_weight":<from 0 to 1>
     }
-]}
+  ]
+}
 ```
 
 #### Responses and hints for control tasks and training tasks

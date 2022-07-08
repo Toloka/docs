@@ -8,17 +8,18 @@ Gets a list of created pools (including archived pools).
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/pools
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/pools
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/pools
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/pools
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Headers {#headers}
@@ -26,7 +27,6 @@ Gets a list of created pools (including archived pools).
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Query parameters {#query-params}
 
@@ -49,8 +49,8 @@ ID of the project to which the pool is attached. ||
 Parameters to sort by:
 
 - `id` — Pool ID.
-- `created` — The date when the pool was created, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-- `last_started` — The date when the pool was last started, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
+- `created` — The date when the pool was created, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+- `last_started` — The date when the pool was last started, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |
@@ -66,22 +66,22 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 
 **Show the first 10 pools**
 
-
 {% list tabs %}
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Show the remaining tasks sorted by ascending ID**
@@ -90,17 +90,18 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Response {#response}
