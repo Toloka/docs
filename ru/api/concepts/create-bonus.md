@@ -4,13 +4,26 @@
 
 {% include [bonus-sum](../_includes/concepts/bonus/id-bonus/sum.md) %}
 
-
 {% note alert %}
 
 Вы можете отправить не более 10 000 таких запросов в день.
 
 {% endnote %}
 
+В одном запросе нельзя передавать одному толокеру несколько бонусов с одинаковой ценой, названием и сообщением. Будет возвращен ответ со статусом 409.
+
+{% cut "Пример ошибки c HTTP статусом 409" %}
+
+```json
+{
+  "user_id": {
+    "code": "ENTITY_CONFLICT",
+    "message": "It is not allowed to apply multiple bonuses with the same amount, title, message and comment to same user in single operation"
+  }
+}
+```
+
+{% endcut %}
 
 ## Запрос {#request}
 
@@ -31,6 +44,7 @@
   Authorization: OAuth <OAuth token>
   Content-Type: application/JSON
   ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
@@ -115,107 +129,111 @@
 
 Формат ответа зависит от значения query-параметра `async_mode`.
 
-#### Сведения о бонусах (async_mode=false)
+{% list tabs %}
 
-```json
-{
-  "items": {
-    "0": {details of a reward #0},
-    "2": {details of a reward #2},
-    "<N>": {details of a reward #N}
-   },
-  "validation_errors": {
-    "1": {validation errors for a reward #1},
-    "3": {validation errors for a reward #3},
-    "<N>": {validation errors for a reward #N}
-   }
-}
-```
+- Сведения о бонусах (async_mode=false)
 
-#|
-||**Параметр**| **Описание**||
-||**items** | **string**
-
-Объект со сведениями о выданных бонусах.||
-||**validation_errors** | **string**
-
-Объект с ошибками валидации. Возвращается, если в запросе используется параметр `skip_invalid_items=true`.||
-|#
-
-#### Сведения об операции (async_mode=true)
-
-```json
-{
-  "id": "26e130ad3652443a3dc5094791e48ef9",
-  "type": "USER_BONUS.BATCH_CREATE",
-  "status": "SUCCESS",
-  "submitted": "2020-12-13T23:32:01",
-  "started": "2020-12-13T23:33:00",
-  "finished": "2020-12-13T23:34:12",
-  "parameters": {
-    "skip_invalid_items": true
-  },
-  "details": {
-    "total_count": 2,
-    "valid_count": 2,
-    "not_valid_count": 0,
-    "success_count": 2,
-    "failed_count": 0
+  ```json
+  {
+    "items": {
+      "0": {details of a reward #0},
+      "2": {details of a reward #2},
+      "<N>": {details of a reward #N}
+    },
+    "validation_errors": {
+      "1": {validation errors for a reward #1},
+      "3": {validation errors for a reward #3},
+      "<N>": {validation errors for a reward #N}
+    }
   }
-}
-```
+  ```
 
-#|
-||**Параметр**| **Описание**||
-||**id** | **string**
+  #|
+  ||**Параметр**| **Описание**||
+  ||**items** | **string**
 
-Идентификатор операции.||
-||**type** | **string**
+  Объект со сведениями о выданных бонусах.||
+  ||**validation_errors** | **string**
 
-Тип операции `USER_BONUS.BATCH_CREATE` — выплата бонусов нескольким исполнителям.||
-||**status** | **string**
+  Объект с ошибками валидации. Возвращается, если в запросе используется параметр `skip_invalid_items=true`.||
+  |#
 
-Статус операции:
-- `PENDING` — выполнение не началось;
-- `RUNNING` — выполняется;
-- `SUCCESS` — успешно выполнена;
-- `FAIL` — не выполнена.||
-||**submitted** | **string**
+- Сведения об операции (async_mode=true)
 
-Дата и время отправки запроса по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
-||**started** | **string**
+  ```json
+  {
+    "id": "26e130ad3652443a3dc5094791e48ef9",
+    "type": "USER_BONUS.BATCH_CREATE",
+    "status": "SUCCESS",
+    "submitted": "2020-12-13T23:32:01",
+    "started": "2020-12-13T23:33:00",
+    "finished": "2020-12-13T23:34:12",
+    "parameters": {
+      "skip_invalid_items": true
+    },
+    "details": {
+      "total_count": 2,
+      "valid_count": 2,
+      "not_valid_count": 0,
+      "success_count": 2,
+      "failed_count": 0
+    }
+  }
+  ```
 
-Дата и время начала операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
-||**finished** | **string**
+  #|
+  ||**Параметр**| **Описание**||
+  ||**id** | **string**
 
-Дата и время окончания операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
-||**parameters** | **object**
+  Идентификатор операции.||
+  ||**type** | **string**
 
-Параметры операции в запросе.||
-||**skip_invalid_items** | **boolean**
+  Тип операции `USER_BONUS.BATCH_CREATE` — выплата бонусов нескольким исполнителям.||
+  ||**status** | **string**
 
-Параметры валидации JSON-объектов:
+  Статус операции:
+  - `PENDING` — выполнение не началось;
+  - `RUNNING` — выполняется;
+  - `SUCCESS` — успешно выполнена;
+  - `FAIL` — не выполнена.||
+  ||**submitted** | **string**
 
-- `true` — выдать бонус, если JSON-объект со сведениями о бонусе прошел валидацию. В противном случае пропустить выдачу бонуса.
-- `false` — остановить операцию и не выдавать бонусы, если хотя бы один JSON-объект не прошел валидацию.
+  Дата и время отправки запроса по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+  ||**started** | **string**
 
-По умолчанию значение `false`.||
-||**details** | **object**
+  Дата и время начала операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+  ||**finished** | **string**
 
-Сведения о выполнении операции.||
-||**details.total_count** | **integer**
+  Дата и время окончания операции по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+  ||**parameters** | **object**
 
-Количество бонусов в запросе.||
-||**details.valid_count** | **integer**
+  Параметры операции в запросе.||
+  ||**skip_invalid_items** | **boolean**
 
-Количество JSON-объектов со сведениями о бонусе, которые прошли валидацию.||
-||**details.not_valid_count** | **integer**
+  Параметры валидации JSON-объектов:
 
-Количество JSON-объектов со сведениями о бонусе, которые не прошли валидацию.||
-||**details.success_count** | **integer**
+  - `true` — выдать бонус, если JSON-объект со сведениями о бонусе прошел валидацию. В противном случае пропустить выдачу бонуса.
+  - `false` — остановить операцию и не выдавать бонусы, если хотя бы один JSON-объект не прошел валидацию.
 
-Количество выданных бонусов.||
-||**details.failed_count** | **integer**
+  По умолчанию значение `false`.||
+  ||**details** | **object**
 
-Количество бонусов, которые не были выданы.||
-|#
+  Сведения о выполнении операции.||
+  ||**details.total_count** | **integer**
+
+  Количество бонусов в запросе.||
+  ||**details.valid_count** | **integer**
+
+  Количество JSON-объектов со сведениями о бонусе, которые прошли валидацию.||
+  ||**details.not_valid_count** | **integer**
+
+  Количество JSON-объектов со сведениями о бонусе, которые не прошли валидацию.||
+  ||**details.success_count** | **integer**
+
+  Количество выданных бонусов.||
+  ||**details.failed_count** | **integer**
+
+  Количество бонусов, которые не были выданы.||
+  |#
+
+{% endlist %}
