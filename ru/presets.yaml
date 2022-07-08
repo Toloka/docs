@@ -1,4 +1,20 @@
 default:
+  toloka: 'https://toloka.ai/ru/'
+  visualstudio: 'https://code.visualstudio.com/'
+  json: 'https://www.json.org/json-ru.html'
+  json-schema: 'https://json-schema.org/learn/getting-started-step-by-step.html'
+  toloka-requester-index-dita: 'https://toloka.ai/ru/docs/guide/index.html'
+  toloka-requester-concepts-yacloud-dita: 'https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html'
+  toloka-requester-create-tsv: 'https://toloka.ai/ru/docs/guide/concepts/pool_csv.html'
+  template-builder: 'https://clck.ru/SMCHv'
+  toloka-facebook: 'https://www.facebook.com/tolokaglobal/'
+  toloka-slack: 'https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg'
+  toloka-youtube: 'https://www.youtube.com/channel/UC3ECut-9h01eI1qsnx-GHKA/videos'
+  toloka-linkedin: 'https://www.linkedin.com/company/toloka/'
+  toloka-twitter: 'https://twitter.com/TolokaAI'
+  toloka-github: 'https://github.com/toloka'
+  toloka-blog: 'https://toloka.ai/blog/'
+  toloka-stackoverflow: 'https://stackoverflow.com/questions/tagged/toloka'
   ui_labs_add_items-add: Добавить элементы разметки
   ui_labs_add_items-added: Элементы разметки добавлены в пакет данных
   ui_labs_add_items-modal: Добавляются элементы разметки...
