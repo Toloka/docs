@@ -10,30 +10,29 @@ Learn about editing a training pool in the section [Edit a training pool](edit-t
 
 {% endnote %}
 
-
 ## Request {#request}
 
 {% list tabs %}
 
 - Production version
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/pools/<pool_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/pools/<pool_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<pool parameters, including updated ones>}
-  ```
+    {<pool parameters, including updated ones>}
+    ```
 
 - Sandbox
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<pool parameters, including updated ones>}
-  ```
+    {<pool parameters, including updated ones>}
+    ```
 
 {% endlist %}
 
@@ -43,14 +42,12 @@ Parameter | Overview
 ----- | -----
 **pool_id** | Pool ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 

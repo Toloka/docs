@@ -8,17 +8,17 @@ Gets the list of tasks in the pool.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/tasks
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/tasks
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/tasks
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/tasks
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -27,7 +27,6 @@ Gets the list of tasks in the pool.
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Query parameters {#query-params}
 
@@ -43,9 +42,7 @@ ID of the pool to get tasks from. ||
 Parameters to sort by:
 
 - `id` — Task ID.
-
-- `created` — The task creation date in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-
+- `created` — The task creation date in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **overlap** | **integer**
@@ -58,6 +55,7 @@ Tasks with an overlap equal to the specified value. ||
 ## Query example {#request-example}
 
 You can set up the display of the list of tasks in parts (for example, 10 tasks at a time):
+
 1. Show the first 10 tasks, starting with the task with the lowest ID.
 1. Show the remaining tasks (10 at a time) in ascending order.
 
@@ -67,17 +65,18 @@ You can set up the display of the list of tasks in parts (for example, 10 tasks 
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Show the remaining tasks sorted by ascending ID**
@@ -86,17 +85,18 @@ You can set up the display of the list of tasks in parts (for example, 10 tasks 
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Response {#response}

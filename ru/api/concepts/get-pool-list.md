@@ -45,8 +45,8 @@
 
 Параметры для сортировки:
 - `id` — идентификатор пула;
-- `created` — дата создания пула по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss];
-- `last_started` — дата последнего запуска пула в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
+- `created` — дата создания пула по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`;
+- `last_started` — дата последнего запуска пула в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 {% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**Стандартные query-параметры** |

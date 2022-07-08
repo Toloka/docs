@@ -10,17 +10,17 @@ You can get the project ID from the [list of projects](get-prj-list.md).
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/projects/<project_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/projects/<project_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -30,13 +30,11 @@ Parameter | Overview
 ----- | -----
 **project_id** | Project ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 

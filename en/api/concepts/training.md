@@ -1,7 +1,5 @@
 # Overview
 
-## Overview {#description}
-
 [A training pool](./glossary.md#training-tasks) includes unpaid task suites. The training pool must be linked to the main pool.
 
 After completing the training pool, the Toloker is assigned a skill equal to the percentage of correct responses. If the percentage is higher than or equal to the **Level required** value in the linked pool, the Toloker gets access to the main pool.
@@ -19,8 +17,6 @@ POST | [/training/<training_pool_id>/clone](clone-training.md) | Creates a dupli
 GET | [/trainings](get-training-list.md) | Gets the list of created training pools (including archived pools).
 GET | [/trainings/<training_pool_id>](get-training.md) | Gets the properties of a training pool.
 
-
 ## Learn more {#links}
 
-- [More details about training pools](https://toloka.ai/docs/guide/concepts/train.html?lang=en)
-
+- [More details about training pools](https://toloka.ai/docs/guide/concepts/train.html)

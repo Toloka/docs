@@ -8,19 +8,19 @@ Creates one or more subscriptions.
 
 - Production version
 
-   ```bash
-   PUT https://toloka.yandex.com/api/v1/webhook-subscriptions
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
-   ```
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/webhook-subscriptions
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-   ```bash
-   PUT https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
-   ```
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -31,21 +31,20 @@ Title | Overview
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
-
 ## Request body {#body}
 
 ```json
 [
   {
-     "webhook_url": "https://awesome-requester.com/toloka-webhook",
-     "event_type": "ASSIGNMENT_CREATED",
-     "pool_id": "121212"
+    "webhook_url": "https://awesome-requester.com/toloka-webhook",
+    "event_type": "ASSIGNMENT_CREATED",
+    "pool_id": "121212"
   },
   {
-     "webhook_url": "https://awesome-requester.com/toloka-webhook",
-     "event_type": "POOL_CLOSED",
-     "pool_id": "121212",
-     "secret_key": "12345"
+    "webhook_url": "https://awesome-requester.com/toloka-webhook",
+    "event_type": "POOL_CLOSED",
+    "pool_id": "121212",
+    "secret_key": "12345"
   }
 ]
 ```
@@ -84,41 +83,42 @@ Contains information about created subscriptions in JSON format. Each subscripti
 
 - When creating a single subscription
 
-   ```json
-   [
-     {
+    ```json
+    [
+      {
         "webhook_url": "https://awesome-requester.com/toloka-webhook",
         "event_type": "ASSIGNMENT_CREATED",
         "pool_id": "121212",
         "id": "webhook-subscription-1",
         "created": "2020-02-03T15:00:00"
-     }
-   ]
-   ```
+      }
+    ]
+    ```
 
 - When creating multiple subscriptions
 
-   ```json
-   {
+    ```json
+    {
       "items": [
-         "0": {
-            "webhook_url": "https://awesome-requester.com/toloka-webhook",
-            "event_type": "ASSIGNMENT_CREATED",
-            "pool_id": "121212",
-            "id": "webhook-subscription-1",
-            "created": "2020-02-03T15:00:00"
-         },
-         "1": {
-            "webhook_url": "https://awesome-requester.com/toloka-webhook",
-            "event_type": "POOL_CLOSED",
-            "pool_id": "121212",
-            "id": "webhook-subscription-2",
-            "created": "2020-02-03T15:00:00"
-         }
+        "0": {
+          "webhook_url": "https://awesome-requester.com/toloka-webhook",
+          "event_type": "ASSIGNMENT_CREATED",
+          "pool_id": "121212",
+          "id": "webhook-subscription-1",
+          "created": "2020-02-03T15:00:00"
+        },
+        "1": {
+          "webhook_url": "https://awesome-requester.com/toloka-webhook",
+          "event_type": "POOL_CLOSED",
+          "pool_id": "121212",
+          "id": "webhook-subscription-2",
+          "created": "2020-02-03T15:00:00"
+        }
       ],
       "validation_errors": {}
-   }
-   ```
+    }
+    ```
+
 {% endlist %}
 
 #|
@@ -154,7 +154,7 @@ ID of the pool that the subscription was created for. ||
 ID of the subscription. Generated automatically. ||
 || **created** | **string**
 
-The date and time when the subscription was created (UTC). It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time when the subscription was created (UTC). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **validation_errors** | **object**
 
 Object with validation errors. ||

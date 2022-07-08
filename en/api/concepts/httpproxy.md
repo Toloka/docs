@@ -36,6 +36,7 @@ If the type of data in the requester's server response is different from the one
 #### Headers
 
 When proxying the requester's server responses, the following HTTP headers are ignored:
+
 - `connection`
 - `keep-alive`
 - `transfer-encoding`
@@ -43,6 +44,7 @@ When proxying the requester's server responses, the following HTTP headers are i
 - `content-type`
 
 When proxying requests to the requester's server, the following HTTP headers are ignored:
+
 - `cookie`
 - `x-csrf-token`
 - `authorization`
@@ -51,8 +53,8 @@ When proxying requests to the requester's server, the following HTTP headers are
 - `x-real-ip`
 
 You can use the API to:
+
 - [Register](httpproxy-registration.md) servers of requesters.
 - [Get information](httpproxy-get-info.md) about all registered servers of a requester.
 - [Update](httpproxy-edit.md) the data of a previously registered server.
 - [Remove](httpproxy-delete.md) a server registration if you no longer need it.
-

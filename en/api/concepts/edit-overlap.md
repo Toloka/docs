@@ -10,21 +10,21 @@ You can specify a [numeric value](#number_overlap) or set [infinite overlap](#in
 
 - Production version
 
-   ```bash
-   PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
+    ```bash
+    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-   ```
+    ```
 
 - Sandbox
 
-   ```bash
-   PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
+    ```bash
+    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-   ```
+    ```
 
 {% endlist %}
 
@@ -34,14 +34,12 @@ Parameter | Overview
 ----- | -----
 **task_suite_id** | ID of a task suite.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Query parameters {#query-params}
 
@@ -53,15 +51,14 @@ Parameter | Overview
 
 Open the pool immediately after the operation is completed, if the pool is closed. The default value is `false`.
 
-
 ## Request body {#body}
 
 #### Numeric overlap value {#number_overlap}
 
 ```json
 {
-   "overlap": <new overlap value>,
-   "infinite_overlap": false
+  "overlap": <new overlap value>,
+  "infinite_overlap": false
 }
 ```
 
@@ -69,8 +66,8 @@ Open the pool immediately after the operation is completed, if the pool is close
 
 ```json
 {
-   "overlap": null,
-   "infinite_overlap": true
+  "overlap": null,
+  "infinite_overlap": true
 }
 ```
 
@@ -84,10 +81,9 @@ Task suite overlap. ||
 || **infinite_overlap** | **boolean \| required**
 
 Assigning a task suite with infinite overlap. This option is used, for instance, for suites of training tasks when you want to assign them to all Tolokers:
-- `true` — Use infinite overlap.
 
-- `false` — Use the overlap that is set for the task suite or pool.
-||
+- `true` — Use infinite overlap.
+- `false` — Use the overlap that is set for the task suite or pool.||
 |#
 
 ## Response {#response}

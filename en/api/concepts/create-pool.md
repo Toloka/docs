@@ -10,13 +10,11 @@ You can send a maximum of 20 requests of this kind per minute and 100 requests p
 
 {% endnote %}
 
-
 {% note info %}
 
 Learn about creating a training pool in [Create a training pool](create-training.md).
 
 {% endnote %}
-
 
 ## Request {#request}
 
@@ -24,19 +22,19 @@ Learn about creating a training pool in [Create a training pool](create-training
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/pools
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/pools
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/pools
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/pools
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -46,7 +44,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
@@ -235,7 +232,7 @@ Name of the pool (only visible to the requester). ||
 Whether the tasks contain adult content. ||
 || **will_expire** | **string \| mandatory**
 
-The date and time in UTC when the pool needs to be closed (even if not all task suites have been completed). It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time in UTC when the pool needs to be closed (even if not all task suites have been completed). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **reward_per_assignment** | **float \| mandatory**
 
 Payment per task suite in U.S. dollars. For cents, use the dot (".") as the separator. The minimum payment is $0.01.
@@ -287,12 +284,13 @@ Required if dynamic pricing is used. The price per task suite for a Toloker with
 Required if selective review is used. Overlap in tasks with selective review. ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function** | **object \| required if**
 
-Required if selective review is used. Distribution of tasks with selective review. For more information about how verification tasks are assigned, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html?lang=en). ||
+Required if selective review is used. Distribution of tasks with selective review. For more information about how verification tasks are assigned, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html). ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function. scope** | **string \| required if**
 
 Required if selective review is used.
 
 How to count tasks completed by the Toloker:
+
 - `POOL` — Count completed pool tasks.
 - `PROJECT` — Count completed project tasks. ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function. distribution** | **string \| required if**
@@ -340,6 +338,7 @@ Distribution of control tasks with selective review. ||
 Required if selective review is used.
 
 How to count tasks completed by the Toloker:
+
 - `POOL` — Count completed pool tasks.
 - `PROJECT` — Count completed project tasks. ||
 || **quality_control. checkpoints_config. golden_settings. task_distribution_function** | **string \| required if**
@@ -379,6 +378,7 @@ Required if selective review is used. Distribution of training tasks with select
 Required if selective review is used.
 
 How to count tasks completed by the Toloker:
+
 - `POOL` — Count completed pool tasks.
 - `PROJECT` — Count completed project tasks. ||
 || **quality_control. checkpoints_config. training_settings. task_distribution_function. distribution** | **string \| required if**
@@ -435,7 +435,7 @@ A skill that determines the weight of the Toloker's response. For best results, 
 
 Required if dynamic overlap is used.
 
-[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html?lang=en) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
+[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
 
 Don't specify several fields if their values depend on each other. ||
 || **dynamic_overlap_config. fields.name** | **string \| required if**
@@ -470,6 +470,7 @@ Number of training tasks per suite. ||
 Required if control tasks are assigned at a variable rate.
 
 How to count tasks completed by the Toloker:
+
 - `POOL` — Count completed pool tasks.
 - `PROJECT` — Count completed project tasks. ||
 || **mixer_config.golden_task_ distribution_function. distribution** | **string \| required if**
@@ -505,6 +506,7 @@ Frequency of control tasks in an interval. The first task in an interval is a co
 Required if training tasks are assigned at a variable rate.
 
 How to count tasks completed by the Toloker:
+
 - `POOL` — Count completed pool tasks.
 - `PROJECT` — Count completed project tasks. ||
 || **mixer_config.training_task_ distribution_function. distribution** | **string \| required if**
@@ -545,14 +547,13 @@ Comments on the pool (only visible to the requester). ||
 Description for Tolokers. If it is filled in, the text will be displayed instead of the project's `public_description` in the list of tasks for Tolokers. ||
 || **dynamic_pricing_config** | **object**
 
-[Dynamic pricing](https://toloka.ai/docs/guide/concepts/dynamic-pricing.html?lang=en#dynamic-pricing__section_ucl_3hl_vlb) settings. ||
+[Dynamic pricing](https://toloka.ai/docs/guide/concepts/dynamic-pricing.html#dynamic-pricing__section_ucl_3hl_vlb) settings. ||
 || **auto_accept_solutions** | **boolean**
 
 Whether tasks must be checked manually:
 
 - `true` — Automatic task acceptance (manual checking isn't necessary).
 - — The requester will check the tasks.
-
 
 The default value is `true`. ||
 || **auto_accept_period_day** | **integer**
@@ -563,6 +564,7 @@ Time (number of days) for the requester to review the task. If the requester doe
 Waiting time (in seconds) before automatic closure of the pool after all tasks are completed. Minimum — 0, maximum — 259 200 seconds (three days). The default value is 0.
 
 Use it if:
+
 - Your data processing is close to real time.
 - You need an open pool where you upload tasks.
 - Dynamic overlap is enabled in the pool (`dynamic_overlap_config`). ||
@@ -605,7 +607,6 @@ The frequency of showing captchas:
 - `LOW` — Show one for every 20 tasks.
 - `MEDIUM`, `HIGH` — Show one for every 10 tasks.
 
-
 By default, captchas aren't displayed. ||
 || **quality_control.configs** | **object**
 
@@ -628,7 +629,7 @@ Selective review of control tasks. To make sure selective review is enabled, don
 Selective review of training tasks. To make sure selective review is enabled, don't forget to set up display of this type of task in [mixer_config](#mixer_config). ||
 || **speed_quality_balance** | **object**
 
-[Speed/quality balance](https://toloka.ai/docs/guide/concepts/adjust.html?lang=en). ||
+[Speed/quality balance](https://toloka.ai/docs/guide/concepts/adjust.html). ||
 || **speed_quality_balance. type** | **string**
 
 Balance type. Possible values:
@@ -667,7 +668,6 @@ Setting for the last task suite in the pool, if less than the minimum remaining 
 - `true` — Assign an incomplete task suite.
 - `false` — Don't assign tasks. This option can be used if you are adding tasks after the pool is started.
 
-
 The default value is `true`.
 
 This parameter only applies to general tasks. The number of control and training tasks in the last suite must be complete (`mixer_config.golden_tasks_count`, `mixer_config.training_tasks_count`). ||
@@ -683,7 +683,6 @@ The order used to add tasks to suites:
 - `true` — Add tasks to suites in the order in which they were uploaded. For example, in a pool with an overlap of 5, the first uploaded task will be included in the first 5 task suites. They will be assigned to 5 Tolokers.
 - `false` — Add tasks to suites in random order.
 
-
 The default value is `false`. ||
 || **mixer_config. shuffle_tasks_in_task_suite** | **boolean**
 
@@ -691,7 +690,6 @@ The order of tasks within a suite:
 
 - `true` — Random.
 - `false` — The order in which tasks were uploaded.
-
 
 The default value is `true`. ||
 || **mixer_config.golden_task_ distribution_function** | **object**
@@ -745,13 +743,13 @@ The reason for closing the pool the last time:
 - `FOR_UPDATE` — The pool is closed for editing. ||
 || **created** | **string**
 
-The UTC date and time when the pool was created, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time when the pool was created, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **last_started** | **string**
 
-The date and time when the pool was last started, in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time when the pool was last started, in UTC in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **last_stopped** | **string**
 
-The date and time when the pool was last stopped, in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time when the pool was last stopped, in UTC in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **type** | **string**
 
 Deprecated parameter.

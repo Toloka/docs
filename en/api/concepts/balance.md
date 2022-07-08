@@ -8,17 +8,17 @@ Gets information about the account balance.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/requester
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/requester
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/requester
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/requester
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -27,7 +27,6 @@ Gets information about the account balance.
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 

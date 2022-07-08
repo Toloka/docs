@@ -10,19 +10,19 @@ Set the `overlap` field to `0`. For tasks with infinite overlap, change the valu
 
 - Sandbox
 
-   ```bash
-   PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
-   ```
+    ```bash
+    PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Production version
 
-   ```bash
-   PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
-   Authorization: OAuth <OAuth token>
-   Content-Type: application/JSON
-   ```
+    ```bash
+    PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -32,7 +32,6 @@ Parameter | Overview
 ----- | -----
 **task_id** | Task ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
@@ -40,13 +39,12 @@ Title | Overview
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
-
 ## Request body {#body}
 
 ```json
 {
-   "overlap": 0,
-   "infinite_overlap": false
+  "overlap": 0,
+  "infinite_overlap": false
 }
 ```
 

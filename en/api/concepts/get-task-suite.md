@@ -8,17 +8,17 @@ Gets a task suite.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **task_suite_id** | ID of a task suite.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 

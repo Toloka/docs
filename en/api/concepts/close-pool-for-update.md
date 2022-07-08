@@ -10,24 +10,23 @@ If you don't open the pool manually after editing, it opens automatically in 15 
 
 {% endnote %}
 
-
 ## Request {#request}
 
 {% list tabs %}
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -37,13 +36,11 @@ Parameter | Overview
 ----- | -----
 **pool_id** | Pool ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -52,7 +49,6 @@ Title | Overview
 If the current pool status is the same as the  requested status, an empty response with status 204 is returned.
 
 {% endnote %}
-
 
 ```json
 {
@@ -87,12 +83,12 @@ The status of the operation:
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**
 
-The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
-The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
 The percentage of the operation completed. ||
 || **parameters.pool_id** | **string**

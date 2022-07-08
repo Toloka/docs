@@ -53,7 +53,7 @@
 
 Параметры для сортировки:
 - `id` — идентификатор подписки;
-- `created` — дата создания подписки по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
+- `created` — дата создания подписки по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 {% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**Стандартные query-параметры** |
@@ -167,7 +167,7 @@ URL, на который будут приходить уведомления.||
 Идентификатор подписки.||
 ||**created** | **string**
 
-Дата и время по создания подписки (по UTC). Формат даты ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].||
+Дата и время по создания подписки (по UTC). Формат даты ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 ||**has_more** | **boolean**
 
 Полнота списка.

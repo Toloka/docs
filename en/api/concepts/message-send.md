@@ -13,19 +13,19 @@ The sent message is added to a new [message thread](messages.md).
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/message-threads/compose
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/message-threads/compose
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/message-threads/compose
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/compose
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -36,7 +36,6 @@ Title | Overview
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
 
-
 ## Request body {#body}
 
 {% list tabs %}
@@ -44,22 +43,21 @@ Title | Overview
 - Message with a list of recipients {#spis}
 
 
-  ```json
-  {
-    "topic": {
-      "EN": "You have got a bonus!"
-    },
-    "text": {
-      "EN": "The bonus was awarded for good job!"
-    },
-    "recipients_select_type": "DIRECT",
-    "recipients_ids": [
-      "2225cfb24c15b7d691818f5ac9d07f70"
-    ],
-    "answerable": true
-  }
-  ```
-
+    ```json
+    {
+      "topic": {
+        "EN": "You have got a bonus!"
+      },
+      "text": {
+        "EN": "The bonus was awarded for good job!"
+      },
+      "recipients_select_type": "DIRECT",
+      "recipients_ids": [
+        "2225cfb24c15b7d691818f5ac9d07f70"
+      ],
+      "answerable": true
+    }
+    ```
 
   #|
   || Parameter  | Overview ||
@@ -71,9 +69,7 @@ Title | Overview
     Whether the message can be responded to:
 
     - `true` — Users can respond to the message.
-
     - `false` —Users can't respond to the  message.
-
 
     The default value is `true`. ||
   || **text** | **object \| required**
@@ -84,9 +80,7 @@ Title | Overview
     Method for selecting recipients:
 
     - `DIRECT` — Specify Toloker IDs.
-
     - `FILTER` — Use a [filter](filters.md) to select Tolokers.
-
     - `ALL` — Send the message to all Tolokers who have tried to complete your tasks at least once. ||
   || **recipients_ids** | **object \| required if**
 
@@ -95,29 +89,28 @@ Title | Overview
 
 - Filter message {#didi}
 
-  ```json
-    {
-      "topic": {
-        "EN": "You have got a bonus!"
-      },
-      "text": {
-        "EN": "The bonus was awarded for good job!"
-      },
-      "recipients_select_type": "FILTER",
-      "recipients_filter": {
-        "and": [
-          {
-            "category": "skill",
-            "key": "2022",
-            "operator": "GT",
-            "value": 90
-          }
-        ]
-      },
-      "answerable": true
-    }
-  ```
-
+    ```json
+      {
+        "topic": {
+          "EN": "You have got a bonus!"
+        },
+        "text": {
+          "EN": "The bonus was awarded for good job!"
+        },
+        "recipients_select_type": "FILTER",
+        "recipients_filter": {
+          "and": [
+            {
+              "category": "skill",
+              "key": "2022",
+              "operator": "GT",
+              "value": 90
+            }
+          ]
+        },
+        "answerable": true
+      }
+    ```
 
   #|
   || Parameter  | Overview ||
@@ -129,9 +122,7 @@ Title | Overview
     Whether the message can be responded to:
 
     - `true` — Users can respond to the message.
-
     - `false` —Users can't respond to the  message.
-
 
     The default value is `true`. ||
   || **text** | **object \| required**
@@ -142,9 +133,7 @@ Title | Overview
     Method for selecting recipients:
 
     - `DIRECT` — Specify Toloker IDs.
-
     - `FILTER` — Use a [filter](filters.md) to select Tolokers.
-
     - `ALL` — Send the message to all Tolokers who have tried to complete your tasks at least once. ||
   || **recipients_filter** | **object \| required if**
 
@@ -228,7 +217,6 @@ Message thread title. ||
 Access to information about the sender and recipients.
 
 - `true` — Information is available in the `interlocutors` field.
-
 - `false` — Information is available in a separate request. ||
 || **interlocutors** | **object**
 
@@ -241,11 +229,8 @@ ID of the sender or recipient. ||
 Role of the sender or recipient in Toloka:
 
 - `USER` — Toloker.
-
 - `REQUESTER` — Requester.
-
 - `ADMINISTRATOR` — Admin.
-
 - `SYSTEM` — For messages sent automatically. ||
 || **interlocutors.myself** | **boolean**
 
@@ -255,7 +240,6 @@ Indicates a sender or recipient with your ID. If this is your ID, it is set to `
 Access to message threads:
 
 - `true` — The message is available in the `messages` field.
-
 - `false` — The message is available in a separate request. ||
 || **messages** | **object**
 
@@ -274,11 +258,8 @@ The sender's ID. ||
 The sender's role in Toloka:
 
 - `USER` — Toloker.
-
 - `REQUESTER` — Requester.
-
 - `ADMINISTRATOR` — Admin.
-
 - `SYSTEM` — For messages sent automatically. ||
 || **messages.from.myself** | **boolean**
 
@@ -294,9 +275,7 @@ For messages that you sent: details of the POST request for creating the message
 Method for selecting recipients:
 
 - `DIRECT` — Specify Toloker IDs.
-
 - `FILTER` — Use a [filter](filters.md) to select Tolokers.
-
 - `ALL` — Send the message to all Tolokers who have tried to complete a task at least once. ||
 || **compose_details.recipients_ ids** | **object**
 
@@ -309,7 +288,6 @@ The list of IDs of Tolokers who will receive the message. ||
 Whether the message can be responded to:
 
 - `true` — The Toloker can respond to the message.
-
 - `false` — The Toloker cannot respond to the message. ||
 || **folders**[] | **array of objects**
 

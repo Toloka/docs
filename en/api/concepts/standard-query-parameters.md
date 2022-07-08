@@ -43,12 +43,11 @@ Tasks with an ID less than the specified value. ||
 Tasks with an ID less than or equal to the specified value. ||
 |#
 
-
 ## Parameters with a date {#date-parameters}
 
 {% note info %}
 
-The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
+The date is specified in UTC in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 {% endnote %}
 
@@ -163,4 +162,3 @@ Objects that expire before the specified date. ||
 
 Objects that expire before or on the specified date. ||
 |#
-

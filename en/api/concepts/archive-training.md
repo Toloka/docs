@@ -5,9 +5,7 @@ Moves a training pool to the archive.
 If a training pool isn't in use, it can be moved to the archive. Before archiving, check two conditions:
 
 - The training pool must have the "closed" status.
-
 - All the main pools that the training pool is linked to must be [sent to the archive](archive-pool.md).
-
 
 ## Request {#request}
 
@@ -15,17 +13,18 @@ If a training pool isn't in use, it can be moved to the archive. Before archivin
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/training/<training_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/training/<training_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path parameters {#path-params}
@@ -34,13 +33,11 @@ Parameter | Overview
 ----- | -----
 **training_id** | Pool ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -49,7 +46,6 @@ Title | Overview
 If the training pool is already archived, attempting to archive it again returns an empty response with status 204.
 
 {% endnote %}
-
 
 ```json
 {
@@ -76,18 +72,19 @@ User ID. ||
 Type of operation: `TRAINING.ARCHIVE` — Archive a training pool. ||
 || **status** | **string**
 The status of the operation:
+
 - `PENDING` — Not started yet.
 - `RUNNING` — In progress.
 - `SUCCESS` — Completed successfully.
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**
 
-The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
-The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
 The percentage of the operation completed. ||
 || **parameters.training_id** | **string**

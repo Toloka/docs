@@ -33,15 +33,9 @@ Fractional value of the skill. Minimum — 0, maximum — 100.
 Value of "operator":
 
 - `EQ` — Equal to.
-    
 - `NE` — Not equal to.
-    
 - `GT` — Greater than.
-    
 - `LT` — Less than.
-    
 - `GTE` — Greater than or equal to.
-    
-- `LTE` — Less than or equal to.
-||
+- `LTE` — Less than or equal to.||
 |#
