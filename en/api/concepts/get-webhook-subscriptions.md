@@ -8,17 +8,17 @@ Gets subscription data.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **subscription_id** | ID of the subscription.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -43,14 +41,13 @@ Contains information about the requested subscription in JSON format.
 ```json
 [
   {
-     "webhook_url": "https://awesome-requester.com/toloka-webhook",
-     "event_type": "ASSIGNMENT_CREATED",
-     "pool_id": "121212",
-     "id": "webhook-subscription-1",
-     "created": "2020-02-03T15:00:00"
+    "webhook_url": "https://awesome-requester.com/toloka-webhook",
+    "event_type": "ASSIGNMENT_CREATED",
+    "pool_id": "121212",
+    "id": "webhook-subscription-1",
+    "created": "2020-02-03T15:00:00"
   }
 ]
-
 ```
 
 #|
@@ -80,5 +77,5 @@ ID of the pool that the subscription was created for. ||
 ID of the subscription. Generated automatically. ||
 || **created** | **string**
 
-The date and time when the subscription was created (UTC). It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time when the subscription was created (UTC). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#

@@ -19,6 +19,7 @@ Gets the list of operations.
     GET https://sandbox.toloka.yandex.com/api/v1/operations
     Authorization: OAuth <OAuth token>
     ```
+
 {% endlist %}
 
 ## Headers {#headers}
@@ -26,7 +27,6 @@ Gets the list of operations.
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Query parameters {#query-params}
 
@@ -39,37 +39,26 @@ Specified in the link after the question mark; separated by `&`.
 Operation type:
 
 - `POOL.OPEN` — Opening a pool.
-
 - `POOL.CLOSE` — Closing a pool.
-
 - `PROJECT.ARCHIVE` — Archiving a project.
-
 - `POOL.ARCHIVE` — Archiving a pool.
-
 - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites.
-
 - `KNOWN_SOLUTIONS.GENERATE` — Generating control tasks. ||
 || **status** | **string**
 
 The status of the operation:
 
 - `PENDING` — Not started yet.
-
 - `RUNNING` — In progress.
-
 - `SUCCESS` — Completed successfully.
-
 - `FAIL` — Not completed. ||
 || **sort** | **string**
 
 Parameters to sort by:
 
 - `id` — Operation ID.
-
-- `submitted` — The UTC date and time when the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-
-- `finished` — The UTC date and time when the operation was finished, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-
+- `submitted` — The UTC date and time when the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+- `finished` — The UTC date and time when the operation was finished, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |

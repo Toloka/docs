@@ -8,17 +8,17 @@ Gets information about a ban.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **ban_id** | ID of the ban.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -59,9 +57,7 @@ Contains ban parameters in JSON format. Example:
 The scope of the ban:
 
 - `ALL_PROJECTS` — All the requester's projects.
-
 - `PROJECT` — A single project (specify the `project_id`).
-
 - `POOL` — A pool (specify the `pool_id`). ||
 || **user_id** | **string**
 
@@ -83,12 +79,11 @@ Comments with the reason for blocking access.
 Maximum length: 499 characters. ||
 || **will_expire** | **string**
 
-The UTC date and time when access will be restored. It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time when access will be restored. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **created** | **string**
 
-The UTC date and time of the ban, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time of the ban, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **id** | **string**
 
 ID of the ban. ||
-
 |#

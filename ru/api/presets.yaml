@@ -1,6 +1,6 @@
 default:
-  requester: 'https://toloka.ai/docs/guide/?lang=en'
-  requester-access: 'https://toloka.ai/docs/guide/concepts/access.html?lang=en'
+  requester: 'https://toloka.ai/docs/guide/'
+  requester-access: 'https://toloka.ai/docs/guide/concepts/access.html'
   requester-attachments: 'https://toloka.ai/docs/guide/concepts/advanced-features-attach.html'
   requester-aggregations: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html'
   requester-js-class-task: 'https://toloka.ai/docs/guide/concepts/js/task.html'
@@ -10,51 +10,51 @@ default:
   requester-skills-global: 'https://toloka.ai/docs/guide/concepts/nav-cross-project.html'
   requester-assign-skills: 'https://toloka.ai/docs/guide/concepts/nav-assign.html'
   requester-users: 'https://toloka.ai/docs/guide/concepts/users.html'
-  requester-pool-main: 'https://toloka.ai/docs/guide/concepts/pool-main.html?lang=en'
-  requester-main-steps: 'https://toloka.ai/docs/guide/concepts/main-steps.html?lang=en'
+  requester-pool-main: 'https://toloka.ai/docs/guide/concepts/pool-main.html'
+  requester-main-steps: 'https://toloka.ai/docs/guide/concepts/main-steps.html'
   requester-dynamic-pricing: >-
-    https://toloka.ai/docs/guide/concepts/dynamic-pricing.html?lang=en#dynamic-pricing__section_ucl_3hl_vlb
-  requester-task-upload: 'https://toloka.ai/docs/guide/concepts/task_upload.html?lang=en'
-  requester-train: 'https://toloka.ai/docs/guide/concepts/train.html?lang=en'
-  requester-result-aggregation: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html?lang=en'
-  requester-troubleshooting: 'https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html?lang=en'
+    https://toloka.ai/docs/guide/concepts/dynamic-pricing.html#dynamic-pricing__section_ucl_3hl_vlb
+  requester-task-upload: 'https://toloka.ai/docs/guide/concepts/task_upload.html'
+  requester-train: 'https://toloka.ai/docs/guide/concepts/train.html'
+  requester-result-aggregation: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html'
+  requester-troubleshooting: 'https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html'
   requester-support: >-
-    https://toloka.ai/docs/guide/troubleshooting/support.html/?lang=en#troubleshooting__project-setting
+    https://toloka.ai/docs/guide/troubleshooting/support.html/#troubleshooting__project-setting
   requester-image-annotation: >-
-    https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/?lang=en
-  requester-project-languages: 'https://toloka.ai/ru/docs/guide/concepts/project-languages.html?lang=en'
-  requester-bonus: 'https://toloka.ai/docs/guide/concepts/bonus.html?lang=en'
-  requester-ban: 'https://toloka.ai/docs/guide/concepts/ban.html?lang=en'
-  requester-prj: 'https://toloka.ai/docs/guide/concepts/project.html?lang=en'
-  requester-ban-platform: 'https://toloka.ai/docs/guide/concepts/ban.html?lang=en#ban__ban-platform'
+    https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/
+  requester-project-languages: 'https://toloka.ai/ru/docs/guide/concepts/project-languages.html'
+  requester-bonus: 'https://toloka.ai/docs/guide/concepts/bonus.html'
+  requester-ban: 'https://toloka.ai/docs/guide/concepts/ban.html'
+  requester-prj: 'https://toloka.ai/docs/guide/concepts/project.html'
+  requester-ban-platform: 'https://toloka.ai/docs/guide/concepts/ban.html#ban__ban-platform'
   requester-interface-translate: >-
-    https://toloka.ai/docs/guide/concepts/project-languages.html?lang=en#project-languages__interface-translate
+    https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate
   requester-messaging: 'https://toloka.ai/docs/guide/concepts/messaging.html#private'
   requester-help: >-
-    https://toloka.ai/docs/guide/troubleshooting/support.html?lang=en#troubleshooting__help
-  requester-refill: 'https://toloka.ai/docs/guide/concepts/refill.html?lang=en'
-  requester-instruction: 'https://toloka.ai/docs/guide/concepts/instruction.html?lang=en'
-  requester-html: 'https://toloka.ai/docs/guide/concepts/spec.html#interface-section?lang=en'
-  requester-solution-architecture: 'https://toloka.ai/docs/guide/concepts/solution-architecture.html?lang=en'
-  requester-filters: 'https://toloka.ai/docs/guide/concepts/filters.html?lang=en'
-  requester-overlap: 'https://toloka.ai/docs/guide/concepts/overlap-faq.html?lang=en'
-  requester-dynamic-overlap: 'https://toloka.ai/docs/guide/concepts/dynamic-overlap.html?lang=en'
+    https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__help
+  requester-refill: 'https://toloka.ai/docs/guide/concepts/refill.html'
+  requester-instruction: 'https://toloka.ai/docs/guide/concepts/instruction.html'
+  requester-html: 'https://toloka.ai/docs/guide/concepts/spec.html#interface-section'
+  requester-solution-architecture: 'https://toloka.ai/docs/guide/concepts/solution-architecture.html'
+  requester-filters: 'https://toloka.ai/docs/guide/concepts/filters.html'
+  requester-overlap: 'https://toloka.ai/docs/guide/concepts/overlap-faq.html'
+  requester-dynamic-overlap: 'https://toloka.ai/docs/guide/concepts/dynamic-overlap.html'
   requester-proxy: >-
-    https://toloka.ai/docs/guide/concepts/prepare-data.html?lang=en#prepare-data__connect
-  requester-escaping: 'https://toloka.ai/docs/guide/concepts/pool_csv.html?lang=en#pool_csv__string'
+    https://toloka.ai/docs/guide/concepts/prepare-data.html#prepare-data__connect
+  requester-escaping: 'https://toloka.ai/docs/guide/concepts/pool_csv.html#pool_csv__string'
   requester-mixing: >-
-    https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html?lang=en#distribute-tasks-by-pages__smart-mixing
-  requester-aggregation: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html?lang=en'
+    https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html#distribute-tasks-by-pages__smart-mixing
+  requester-aggregation: 'https://toloka.ai/docs/guide/concepts/result-aggregation.html'
   requester-random-check: >-
-    https://toloka.ai/docs/guide/concepts/selective-mvote.html#selective-mvote__theory?lang=en
-  requester-speed-quality-balance: 'https://toloka.ai/docs/guide/concepts/adjust.html?lang=en'
-  tb-help: 'https://toloka.ai/docs/template-builder/index.html/?lang=en'
+    https://toloka.ai/docs/guide/concepts/selective-mvote.html#selective-mvote__theory
+  requester-speed-quality-balance: 'https://toloka.ai/docs/guide/concepts/adjust.html'
+  tb-help: 'https://toloka.ai/docs/template-builder/index.html/'
   toloka-web-register: 'https://toloka.ai/tolokers/docs/web/register.html#register'
   sandbox-profile: 'https://sandbox.toloka.yandex.com/requester/profile'
   requester-profile-integration: 'https://toloka.yandex.com/requester/profile/integration'
   sandbox-requester-profile-integration: 'https://sandbox.toloka.yandex.com/requester/profile/integration'
-  requester-main: 'https://toloka.yandex.com/for-requesters?lang=en'
-  requester-sandbox: 'https://sandbox.toloka.yandex.com/for-requesters?lang=en'
+  requester-main: 'https://toloka.yandex.com/for-requesters'
+  requester-sandbox: 'https://sandbox.toloka.yandex.com/for-requesters'
   sandbox-requester: 'https://sandbox.toloka.yandex.com/requester'
   sandbox: 'https://sandbox.toloka.yandex.com'
   sandbox-workers: 'https://sandbox.toloka.yandex.com/requester/workers'

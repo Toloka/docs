@@ -33,8 +33,8 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 
     [{task suite 1}, {task suite 2},... {task suite N}]
     ```
-{% endlist %}
 
+{% endlist %}
 
 ## Headers {#headers}
 
@@ -42,7 +42,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix. ||
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Query parameters {#query-params}
 
@@ -55,9 +54,7 @@ Specified in the link after the question mark; separated by `&`.
 Mode for request processing:
 
 - `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The [response](#response) contains information about the operation (start and  completion time, status).
-
 - `false` — Synchronous. The [response](#response) contains information about one or multiple task suites created.
-
 
 The default value is `false`. ||
 || **allow_defaults** | **boolean**
@@ -65,9 +62,7 @@ The default value is `false`. ||
 Overlap settings:
 
 - `true` — Use the overlap that is set in the pool parameters (in the [defaults.default_overlap_for_new_task_suites](create-pool.md#default_overlap_for_new_task_suites) key).
-
 - `false` — Use the overlap that is set in the task suite parameters (in the [overlap](create-task-suite.md#overlap) field).
-
 
 The default value is `false`. ||
 || **skip_invalid_items** | **boolean**
@@ -75,9 +70,7 @@ The default value is `false`. ||
 Validation parameters for JSON objects:
 
 - `true` — Create the task suites that passed validation.
-
 - `false` — If at least one of the task suites didn't pass validation, stop the operation and don't create the task suites.
-
 
 The default value is `false`. ||
 || **open_pool** | **boolean**
@@ -94,7 +87,6 @@ The ID should conform to the [RFC4122 standard](https://tools.ietf.org/html/rfc4
 You can use this ID in the future to [get information about the operation](operations.md). ||
 |#
 
-
 ## Response {#response}
 
 The response format depends on the value of [async_mode](#async_mode).
@@ -109,12 +101,12 @@ The response format depends on the value of [async_mode](#async_mode).
         "0": {<task suite>},
         "2": {<task suite>}, ...
         "<n>": {<task suite N>}
-         },
+      },
       "validation_errors": {
         "1": {<validation errors for the task suite>},
         "3": {<validation errors for the task suite>}, ...
         "<n>": {<validation errors for task suite N>}
-         }
+      }
     }
     ```
 
@@ -130,7 +122,6 @@ The response format depends on the value of [async_mode](#async_mode).
 
     Sequential number of the task suite in the array (starting from 0). ||
     |#
-
 
 - Information about the operation (async_mode=true)
 
@@ -159,34 +150,27 @@ The response format depends on the value of [async_mode](#async_mode).
     Operation type:
 
     - `POOL.OPEN` — Opening a pool.
-
     - `POOL.CLOSE` — Closing a pool.
-
     - `PROJECT.ARCHIVE` — Archiving a project.
-
     - `POOL.ARCHIVE` — Archiving a pool.
-
     - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites. ||
     || **status** | **string**
 
     The status of the operation:
 
     - `PENDING` — Not started yet.
-
     - `RUNNING` — In progress.
-
     - `SUCCESS` — Completed successfully.
-
     - `FAIL` — Not completed. ||
     || **submitted** | **string**
 
-    The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+    The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
     || **started** | **string**
 
-    The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+    The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
     || **finished** | **string**
 
-    The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+    The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
     || **details. success_count** | **integer**
 
     The number of task suites uploaded. ||

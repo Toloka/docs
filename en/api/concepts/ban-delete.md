@@ -8,17 +8,17 @@ Removes a ban.
 
 - Production version
 
-  ```bash
-  DELETE https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    DELETE https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  DELETE https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    DELETE https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -27,7 +27,6 @@ Removes a ban.
 Parameter | Overview
 ----- | -----
 **ban_id** | ID of the ban.
-
 
 ## Headers {#headers}
 

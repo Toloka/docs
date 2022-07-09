@@ -85,5 +85,5 @@
 Идентификатор бонуса.||
 ||**created** | **string**
 
-Дата выдачи бонуса по UTC в формате ISO 8601 YYYY-MM-DDThh:mm:ss[.sss]||
+Дата выдачи бонуса по UTC в формате ISO 8601 `YYYY-MM-DDThh:mm:ss[.sss]`||
 |#

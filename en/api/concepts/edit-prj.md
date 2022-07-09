@@ -10,23 +10,23 @@ In the request body, specify **all** the parameters for the project being update
 
 - Production version
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/projects/<project_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/projects/<project_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters, including updated ones>}
-  ```
+    {<project parameters, including updated ones>}
+    ```
 
 - Sandbox
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters, including updated ones>}
-  ```
+    {<project parameters, including updated ones>}
+    ```
 
 {% endlist %}
 
@@ -36,14 +36,12 @@ Parameter | Overview
 ----- | -----
 **project_id** | Project ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Response {#response}
 

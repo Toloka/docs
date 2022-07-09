@@ -6,8 +6,8 @@ To delete a registered requester server, log in as a requester and send an AJAX 
 
 ```js
 $.ajax({
-      url: '/api/new/requester/proxy/proxy/{id}',
-      method: 'DELETE'
+    url: '/api/new/requester/proxy/proxy/{id}',
+    method: 'DELETE'
 });
 ```
 

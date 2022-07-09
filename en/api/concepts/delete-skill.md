@@ -8,17 +8,17 @@ Removes a skill for a Toloker.
 
 - Production version
 
-  ```bash
-  DELETE https://toloka.yandex.com/api/v1/user-skills/<id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    DELETE https://toloka.yandex.com/api/v1/user-skills/<id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  DELETE https://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    DELETE https://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -27,7 +27,6 @@ Removes a skill for a Toloker.
 Parameter | Overview
 ----- | -----
 **id** | The ID of a Toloker's skill that is assigned to the "skill-Toloker" pair.
-
 
 ## Headers {#headers}
 

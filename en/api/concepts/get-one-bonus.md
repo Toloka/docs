@@ -8,17 +8,18 @@ Gets the properties of the reward issued.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path parameters {#path-params}
@@ -27,13 +28,11 @@ Parameter | Overview
 ----- | -----
 **bonus_id** | ID of the reward issued.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
-
 
 ## Response {#response}
 
@@ -87,5 +86,5 @@ To issue a reward without a message, specify `null` for `public_title` and `publ
 Reward ID. ||
 || **created** | **string**
 
-Date the reward was awarded, in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss] ||
+Date the reward was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]` ||
 |#

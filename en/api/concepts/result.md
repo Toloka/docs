@@ -8,17 +8,17 @@ Gets responses for all the pool's task suites.
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/assignments
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/assignments
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/assignments
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/assignments
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -40,15 +40,10 @@ Specified in the link after the question mark; separated by `&`.
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
 - `ACTIVE` — Being completed by a Toloker.
-
 - `SUBMITTED` — Completed but not checked.
-
 - `ACCEPTED` — Accepted by the requester.
-
 - `REJECTED` — Rejected by the requester.
-
 - `SKIPPED` — Skipped by the Toloker.
-
 - `EXPIRED` — The time for completing the tasks expired. ||
 || **task_id** | **string**
 
@@ -73,26 +68,18 @@ Toloker ID. ||
 Parameters to sort by:
 
 - `id` — ID of the task suite assignment.
-
 - `created` — The date the task suite was assigned.
-
 - `submitted` — The date the task suite was completed.
-
 - `skipped` — The date the task suite was skipped.
-
 - `expired` — The date the task suite expired.
-
 - `accepted` — The date the task suite was accepted by the requester.
-
 - `rejected` — The date the task suite was rejected by the requester.
-
 
 {% note info %}
 
-All dates use the ISO 8601 format YYYY-MM-DDThh:mm:ss[.sss].
+All dates use the ISO 8601 format `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 {% endnote %}
-
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |
@@ -119,17 +106,17 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -139,17 +126,17 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Sandbox
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

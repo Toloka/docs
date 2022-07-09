@@ -8,26 +8,25 @@ You can send a maximum of 100,000 requests of this kind per day.
 
 {% endnote %}
 
-
 ## Request {#request}
 
 {% list tabs %}
 
 - Production version
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -37,7 +36,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
@@ -101,8 +99,8 @@ The integer value of that skill (`exact_value`, rounded to the nearest integer).
 Fractional value of the skill. Minimum — 0, maximum — 100. ||
 || **created** | **string**
 
-The date and time in UTC when the Toloker was first assigned the skill with the specified value. It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time in UTC when the Toloker was first assigned the skill with the specified value. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **modified** | **string**
 
-The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#

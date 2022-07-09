@@ -8,30 +8,29 @@ You can send a maximum of 20 requests of this kind per minute and a maximum o
 
 {% endnote %}
 
-
 ## Request {#request}
 
 {% list tabs %}
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/projects
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    POST https://toloka.yandex.com/api/v1/projects
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters>}
-  ```
+    {<project parameters>}
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/projects
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/projects
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters>}
-  ```
+    {<project parameters>}
+    ```
 
 {% endlist %}
 
@@ -41,7 +40,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
@@ -63,47 +61,47 @@ Title | Overview
         "type": "string",
         "required": true,
         "hidden": false,
-		"allowed_values": [
-		  "boots",
-		  "sneakers",
-		  "other"
-		]
+        "allowed_values": [
+          "boots",
+          "sneakers",
+          "other"
+        ]
       }
     },
     "view_spec": {
-	  "type": "tb",
+      "type": "tb",
       "settings": {
-	    "showSubmit": true,
+        "showSubmit": true,
         "showSkip": true,
-		"showFinish": true,
+        "showFinish": true,
         "showTimer": true,
         "showTitle": true,
         "permissions": [],
-		"showMessage": true,
-		"showReward": true,
-		"showFullscreen": true,
-		"showInstructions": true
+        "showMessage": true,
+        "showReward": true,
+        "showFullscreen": true,
+        "showInstructions": true
+      },
+      "config": {...},
+      "inputExample": {
+        "image": "https://labs-images-testing.s3.yandex.net/presets/for%20tb%20and%20dataset/leather-boots.jpg"
+      },
+      "lock": {
+        "core": "1.13.1",
+        "view.list": "1.2.0",
+        "action.set": "1.0.8",
+        "view.image": "1.4.0",
+        "plugin.toloka": "1.1.8",
+        "plugin.hotkeys": "1.3.0",
+        "condition.required": "1.1.6",
+        "field.button-radio-group": "1.3.1"
+      },
+      "localization_Config": {
+        "keys": []
       }
-	  "config": {...},
-	  "inputExample": {
-		"image": "https://labs-images-testing.s3.yandex.net/presets/for%20tb%20and%20dataset/leather-boots.jpg"
-	  },
-	  "lock": {
-	    "core": "1.13.1",
-		"view.list": "1.2.0",
-		"action.set": "1.0.8",
-		"view.image": "1.4.0",
-		"plugin.toloka": "1.1.8",
-		"plugin.hotkeys": "1.3.0",
-		"condition.required": "1.1.6",
-		"field.button-radio-group": "1.3.1"
-	  },
-	  "localization_Config": {
-	    "keys": []
-	  }
     }
   },
-  "assignments_issuing_type": "AUTOMATED",
+  "assignments_issuing_type": "AUTOMATED"
 }
 ```
 
@@ -148,9 +146,10 @@ How to assign tasks:
 
     ```json
       "assignments_issuing_view_config": {
-      "title_template": "<task name>",
-      "description_template": "<brief description of the task>",
-      "map_provider": "YANDEX"}
+        "title_template": "<task name>",
+        "description_template": "<brief description of the task>",
+        "map_provider": "YANDEX"
+      }
     ```
 
 The default value is `AUTOMATED`. ||
@@ -161,9 +160,7 @@ This parameter is available when the project has `"assignments_issuing_type": "M
 Map provider for tasks:
 
 - `GOOGLE` — Google Maps.
-
 - `YANDEX` — Yandex Maps.
-
 
 If the parameter is not set, then the Toloker selects the map. ||
 || **assignments_automerge_ enabled** | **boolean**
@@ -194,26 +191,18 @@ The `input_spec` and `output_spec` parameters contain JSON with the input data p
 || **\<ID\>** | **object \| required**
 
 - For input data,  the ID of the object to display in the task, and its properties.
-
 - For output data, the ID of the response input field and response validation parameters. ||
 || **type** | **string \| required**
 
 Data type:
 
 - `url` — URL of an image, page, and so on.
-
 - `boolean` — Boolean data type (`true`/`false`).
-
 - `integer` — Integer.
-
 - `string` — String.
-
 - `float` — Floating-point number.
-
 - `json` — JSON object.
-
 - `file` — File (only for output data).
-
 - `coordinates` — Geographical coordinates, such as "53.910236, 27.531110"). ||
 || **required** | **boolean**
 
@@ -251,26 +240,27 @@ Only for output data of the `coordinates` type: populate the field with the Tolo
 || Parameter | Overview ||
 || **markup** | **string**
 
-For more information, see the [Requester's guide](https://toloka.ai/docs/guide/?lang=en). ||
+For more information, see the [Requester's guide](https://toloka.ai/docs/guide/). ||
 || **script** | **string**
 
 JavaScript interface for the task.
 
-For more information, see the [Requester's guide](https://toloka.ai/docs/guide/?lang=en). ||
+For more information, see the [Requester's guide](https://toloka.ai/docs/guide/). ||
 || **styles** | **string**
 
 CSS task interface.
 
-For more information, see the [Requester's guide](https://toloka.ai/docs/guide/?lang=en). ||
+For more information, see the [Requester's guide](https://toloka.ai/docs/guide/). ||
 || **settings** | **object \| required**
 
 Whether to display standard UI elements in the task. ||
 ||**config[]** | **array of objects**
 
-[Configuration for Template Builder](https://toloka.ai/docs/api/concepts/tb-config.html?lang=en) ||
+[Configuration for Template Builder](https://toloka.ai/docs/api/concepts/tb-config.html) ||
 || **assets** | **object**
 
 Linked files:
+
 - CSS styles
 - JavaScript libraries
 - Toloka assets with the `$TOLOKA_ASSETS` prefix.
@@ -282,10 +272,11 @@ Links to JavaScript libraries and Toloka assets.
 Toloka assets:
 
 - `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — Handlebars (see the [description on the template engine website](http://handlebarsjs.com/)).
-- `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (see  [Image with area selection](https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/?lang=en) in the Requester's guide).
+- `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (see  [Image with area selection](https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/) in the Requester's guide).
 
 Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters:
-```
+
+```json
   "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
   "$TOLOKA_ASSETS/js/image-annotation.js"]
 ```
@@ -304,18 +295,17 @@ Editor configuration.
 
 In the Template Builder, add to this field the keys for the properties of text components that you need to translate into other languages.
 
-For more information, see [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html?lang=en#project-languages__interface-translate). ||
+For more information, see [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate). ||
 || **localizationConfig.keys** | **string**
 
 Keys in the source language.
 
-```
+```json
   "key": "<key name>",
   "defaultValue": "<source text>"
 ```
 
-
-For more information, see [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html?lang=en#project-languages__interface-translate). ||
+For more information, see [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate). ||
 || **settings.showTimer** | **boolean**
 
 Show the timer. The default value is `true`. ||
@@ -347,7 +337,6 @@ Show the price per task suite. The default value is `true`. ||
 
 ## Settings for displaying field tasks (assignments_issuing_view_ config) {#assignments-issuing-view-config-section}
 
-
 #|
 || Parameter | Overview ||
 || **title_template** | **string \| required if**
@@ -367,9 +356,7 @@ This parameter is available when the project has `"assignments_issuing_type": "M
 Map provider for tasks:
 
 - `GOOGLE` — Google Maps.
-
 - `YANDEX` — Yandex Maps.
-
 
 If the parameter is not set, then the Toloker selects the map. ||
 |#
@@ -391,7 +378,7 @@ Target language. ||
 
 Translation of the project name.
 
-```
+```json
   "value": "<target text>",
   "source": "<source text>"
 ```
@@ -403,11 +390,10 @@ Translation source:
 
 Translation of the project description.
 
-```
+```json
   "value": "<target text>",
   "source": "<source text>"
 ```
-
 
 Translation source:
 
@@ -416,7 +402,7 @@ Translation source:
 
 Translation of instructions for completing tasks.
 
-```
+```json
   "value": "<target text>",
   "source": "<source text>"
 ```
@@ -431,7 +417,7 @@ Translating the task interface. ||
 
 Keys with the translation of the task interface elements.
 
-```
+```json
   "key": "<key name>",
   "value": "<target text>",
   "source": "<source text>"
@@ -463,6 +449,7 @@ Parameters to sort by: ||
 || **owner.myself** | **boolean**
 
 Checks who the object belongs to:
+
 - `true` — The user whose OAuth token is specified in the request.
 - `false` — Another account (employee or owner).
 {% if audience == "internal" %}**owner.company_id** | **string**
@@ -476,9 +463,8 @@ Project ID (assigned automatically). ||
 Status of the project:
 
 - `ACTIVE` — Active.
-
 - `ARCHIVED` — Archived. ||
 || **created** | **string**
 
-The UTC date and time the project was created, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the project was created, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#

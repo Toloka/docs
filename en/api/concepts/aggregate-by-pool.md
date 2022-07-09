@@ -8,21 +8,21 @@ Starts aggregating responses to all completed tasks in the pool.
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
-{% endlist %}
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
+{% endlist %}
 
 ## Headers {#headers}
 
@@ -30,7 +30,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix. ||
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
@@ -64,7 +63,7 @@ A skill that determines the weight of the Toloker's response.
 Required if the `WEIGHTED_DYNAMIC_OVERLAP` aggregation type is selected. ||
 || **fields** | **object**
 
-[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html?lang=en) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
+[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
 
 If the `DAWID_SKENE` aggregation type is selected, you can only specify one value. ||
 || **fields.name** | **string**
@@ -99,13 +98,9 @@ Operation ID. ||
 Operation type:
 
 - `POOL.OPEN` — Opening a pool.
-
 - `POOL.CLOSE` — Closing a pool.
-
 - `PROJECT.ARCHIVE` — Archiving a project.
-
 - `POOL.ARCHIVE` — Archiving a pool.
-
 - `SOLUTION.AGGREGATE` — Aggregating responses.
 - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites. ||
 || **status** | **string**
@@ -118,7 +113,7 @@ The status of the operation:
 - `FAIL` — Not completed. ||
 || **submitted** | **string**
 
-The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
+The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
 
 The percentage of the operation completed. ||

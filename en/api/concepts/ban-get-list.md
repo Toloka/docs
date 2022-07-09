@@ -28,7 +28,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 
-
 ## Query parameters {#query-params}
 
 Specified in the link after the question mark; separated by `&`.
@@ -40,12 +39,9 @@ Specified in the link after the question mark; separated by `&`.
 The scope of the ban:
 
 - `ALL_PROJECTS` — All the requester's projects.
-
 - `PROJECT` — A single project (specify the `project_id`).
-
 - `POOL` — A pool (specify the `pool_id`).
-
-- `SYSTEM` — Users that performed the requester's tasks but were [banned on the platform](https://toloka.ai/docs/guide/concepts/ban.html?lang=en#ban__ban-platform). ||
+- `SYSTEM` — Users that performed the requester's tasks but were [banned on the platform](https://toloka.ai/docs/guide/concepts/ban.html#ban__ban-platform). ||
 || **user_id** | **string**
 
 Toloker ID. ||
@@ -64,9 +60,7 @@ The ID of the pool that is blocked. ||
 Parameters to sort by:
 
 - `id` — The ID.
-
-- `created` — The creation date in UTC using ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].
-
+- `created` — The creation date in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |

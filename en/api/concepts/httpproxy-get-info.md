@@ -6,8 +6,8 @@ To get information about all servers registered for a particular requester, log 
 
 ```js
 $.ajax({
-      url: '/api/new/requester/proxy/proxy',
-      method: 'GET'
+    url: '/api/new/requester/proxy/proxy',
+    method: 'GET'
 });
 ```
 

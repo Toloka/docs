@@ -4,7 +4,7 @@ Any error returned by Toloka has an HTTP response status and response body with 
 
 Sample error with HTTP status code 409:
 
-```http
+```json
 {
   "request_id": "337d68d1-974d-42b1-a2d0-6234f6373eed",
   "code": "INAPPROPRIATE_STATUS",
@@ -19,6 +19,7 @@ Sample error with HTTP status code 409:
 ```
 
 Each error text has the following fields:
+
 - **request_id**: Internal ID of the HTTP request where the error occurred. It needs to be specified when contacting support.
 - **code**: String error code. Errors specific to different operations have the same codes. Different error codes can be used for the same HTTP status. Specific errors for specific operations have their own unique codes.
 - **message**: Error details. The content of the field may be different for the same error code.
@@ -30,7 +31,7 @@ The following HTTP status codes describe error classes, with examples of common 
 
 #### 400: Error in the data that is passed in the request.
 
-```http
+```json
 {
   "code": "VALIDATION_ERROR",
   "message": "Validation failed",
@@ -39,7 +40,7 @@ The following HTTP status codes describe error classes, with examples of common 
 
 #### 403: No permission to perform the operation.
 
-```http
+```json
 {
   "code": "ACCESS_DENIED",
   "message": "Access denied"
@@ -48,7 +49,7 @@ The following HTTP status codes describe error classes, with examples of common 
 
 #### 404: The requested object doesn't exist.
 
-```http
+```json
 {
   "code": "DOES_NOT_EXIST",
   "message": "There are no results for such parameters"
@@ -57,7 +58,7 @@ The following HTTP status codes describe error classes, with examples of common 
 
 #### 409: The operation can't be performed due to its logic. For example, you can't open a pool that is archived.
 
-```http
+```json
 {
   "code": "CONFLICT_STATE",
   "message": "Conflict state"
@@ -66,16 +67,16 @@ The following HTTP status codes describe error classes, with examples of common 
 
 #### 429: The allowed number of requests per time unit exceeded.
 
-```http
+```json
 {
   "code": "TOO_MANY_REQUESTS",
   "message": "Too many requests"
 }
 ```
 
-#### 500: An unexpected error in the service. To fix it, [contact support](https://toloka.ai/docs/guide/troubleshooting/support.html?lang=en#troubleshooting__help) and specify the request_id.
+#### 500: An unexpected error in the service. To fix it, [contact support](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__help) and specify the request_id.
 
-```http
+```json
 {
   "code": "INTERNAL_ERROR",
   "message": "Internal Error"
@@ -84,10 +85,9 @@ The following HTTP status codes describe error classes, with examples of common 
 
 #### 503: The service is temporarily unavailable, you can repeat the request in a little while.
 
-```http
+```json
 {
   "code": "REMOTE_SERVICE_UNAVAILABLE",
   "message": "Service is temporary unavailable"
 }
 ```
-

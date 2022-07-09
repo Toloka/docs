@@ -31,19 +31,19 @@ You can't use one request to pass multiple rewards with the same price, name, an
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -53,7 +53,6 @@ Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix. ||
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Query parameters {#query-params}
 
@@ -138,108 +137,108 @@ The response format depends on the value of `async_mode`.
 
 - Information about rewards (async_mode=false)
 
-  ```json
-  {
-    "items": {
-      "0": {details of a reward #0},
-      "2": {details of a reward #2},
-      "<N>": {details of a reward #N}
-     },
-    "validation_errors": {
-      "1": {validation errors for a reward #1},
-      "3": {validation errors for a reward #3},
-      "<N>": {validation errors for a reward #N}
-     }
-  }
-  ```
+    ```json
+    {
+      "items": {
+        "0": {details of a reward #0},
+        "2": {details of a reward #2},
+        "<N>": {details of a reward #N}
+      },
+      "validation_errors": {
+        "1": {validation errors for a reward #1},
+        "3": {validation errors for a reward #3},
+        "<N>": {validation errors for a reward #N}
+      }
+    }
+    ```
 
-  #|
-  || Parameter | Overview ||
-  || **items** | **string**
+    #|
+    || Parameter | Overview ||
+    || **items** | **string**
 
-  Object with information about rewards issued. ||
-  || **validation_errors** | **string**
+    Object with information about rewards issued. ||
+    || **validation_errors** | **string**
 
-  An object with validation errors. Returned if the request has the parameter `skip_invalid_items=true`. ||
-  |#
+    An object with validation errors. Returned if the request has the parameter `skip_invalid_items=true`. ||
+    |#
 
 - Information about the operation (async_mode=true)
 
-  ```json
-  {
-    "id": "26e130ad3652443a3dc5094791e48ef9",
-    "type": "USER_BONUS.BATCH_CREATE",
-    "status": "SUCCESS",
-    "submitted": "2020-12-13T23:32:01",
-    "started": "2020-12-13T23:33:00",
-    "finished": "2020-12-13T23:34:12",
-    "parameters": {
-      "skip_invalid_items": true
-    },
-    "details": {
-      "total_count": 2,
-      "valid_count": 2,
-      "not_valid_count": 0,
-      "success_count": 2,
-      "failed_count": 0
+    ```json
+    {
+      "id": "26e130ad3652443a3dc5094791e48ef9",
+      "type": "USER_BONUS.BATCH_CREATE",
+      "status": "SUCCESS",
+      "submitted": "2020-12-13T23:32:01",
+      "started": "2020-12-13T23:33:00",
+      "finished": "2020-12-13T23:34:12",
+      "parameters": {
+        "skip_invalid_items": true
+      },
+      "details": {
+        "total_count": 2,
+        "valid_count": 2,
+        "not_valid_count": 0,
+        "success_count": 2,
+        "failed_count": 0
+      }
     }
-  }
-  ```
+    ```
 
-  #|
-  || Parameter | Overview ||
-  || **id** | **string**
+    #|
+    || Parameter | Overview ||
+    || **id** | **string**
 
-  Operation ID. ||
-  || **type** | **string**
+    Operation ID. ||
+    || **type** | **string**
 
-  Type of operation: `USER_BONUS.BATCH_CREATE` — Issuing a reward to multiple Tolokers. ||
-  || **status** | **string**
+    Type of operation: `USER_BONUS.BATCH_CREATE` — Issuing a reward to multiple Tolokers. ||
+    || **status** | **string**
 
-  The status of the operation:
+    The status of the operation:
 
-  - `PENDING` — Not started yet.
-  - `RUNNING` — In progress.
-  - `SUCCESS` — Completed successfully.
-  - `FAIL` — Not completed. ||
-  || **submitted** | **string**
+    - `PENDING` — Not started yet.
+    - `RUNNING` — In progress.
+    - `SUCCESS` — Completed successfully.
+    - `FAIL` — Not completed. ||
+    || **submitted** | **string**
 
-  The UTC date and time the request was sent, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
-  || **started** | **string**
+    The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+    || **started** | **string**
 
-  The UTC date and time the operation started, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
-  || **finished** | **string**
+    The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+    || **finished** | **string**
 
-  The UTC date and time the operation was completed, in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss]. ||
-  || **parameters** | **object**
+    The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+    || **parameters** | **object**
 
-  Parameters of the operation in the request. ||
-  || **skip_invalid_items** | **boolean**
+    Parameters of the operation in the request. ||
+    || **skip_invalid_items** | **boolean**
 
-  Validation parameters for JSON objects:
+    Validation parameters for JSON objects:
 
-  - `true` — Issue a reward if the JSON object with reward information passed validation. Otherwise, skip the reward.
-  - `false` — Stop the operation and don't issue rewards if at least one JSON object didn't pass validation.
+    - `true` — Issue a reward if the JSON object with reward information passed validation. Otherwise, skip the reward.
+    - `false` — Stop the operation and don't issue rewards if at least one JSON object didn't pass validation.
 
-  The default value is `false`. ||
-  || **details** | **object**
+    The default value is `false`. ||
+    || **details** | **object**
 
-  Information about the completed operation. ||
-  || **details.total_count** | **integer**
+    Information about the completed operation. ||
+    || **details.total_count** | **integer**
 
-  The number of rewards in the request. ||
-  || **details.valid_count** | **integer**
+    The number of rewards in the request. ||
+    || **details.valid_count** | **integer**
 
-  The number of JSON objects with reward information that passed validation. ||
-  || **details.not_valid_count** | **integer**
+    The number of JSON objects with reward information that passed validation. ||
+    || **details.not_valid_count** | **integer**
 
-  The number of invalid JSON objects with reward information. ||
-  || **details.success_count** | **integer**
+    The number of invalid JSON objects with reward information. ||
+    || **details.success_count** | **integer**
 
-  The number of rewards issued. ||
-  || **details.failed_count** | **integer**
+    The number of rewards issued. ||
+    || **details.failed_count** | **integer**
 
-  The number of rewards that weren't issued. ||
-  |#
+    The number of rewards that weren't issued. ||
+    |#
 
 {% endlist %}

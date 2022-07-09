@@ -3,9 +3,6 @@ href: index.md
 items:
   - name: Доступ к API
     href: concepts/access.md
-    
-  - name: Основные понятия
-    href: concepts/glossary.md
   - name: Быстрый старт
     items:
       - name: Обзор
@@ -15,7 +12,7 @@ items:
       - name: Получение результатов
         href: concepts/qs-results.md
   - name: Проект
-    items:    
+    items:
       - name: Обзор
         href: concepts/project.md
       - name: Создать проект
@@ -33,7 +30,7 @@ items:
       - name: Отправить проект в архив
         href: concepts/archive-prj.md
   - name: Пулы
-    items:      
+    items:
       - name: Обзор
         href: concepts/pool.md
       - name: Создать пул
@@ -57,7 +54,7 @@ items:
       - name: Изменить приоритет пула
         href: concepts/set-priority-pool.md
   - name: Обучения
-    items:    
+    items:
       - name: Обзор
         href: concepts/training.md
       - name: Создать обучение
@@ -77,7 +74,7 @@ items:
       - name: Получить свойства обучения
         href: concepts/get-training.md
   - name: Подписки на события
-    items:     
+    items:
       - name: Обзор
         href: concepts/webhook-subscriptions.md
       - name: Создать подписку
@@ -95,11 +92,11 @@ items:
       - name: Аутентификация событий
         href: concepts/authentication.md
   - name: Отбор исполнителей
-    items: 
+    items:
       - name: Обзор
         href: concepts/my_users.md
       - name: Навыки
-        items:  
+        items:
           - name: Обзор
             href: concepts/skill.md
           - name: 'Создать навык '
@@ -119,7 +116,7 @@ items:
           - name: Удалить навык у исполнителя
             href: concepts/delete-skill.md
       - name: Блоки контроля качества
-        items:  
+        items:
           - name: Обзор
             href: concepts/quality_control.md
           - name: Контрольные задания
@@ -165,7 +162,7 @@ items:
           - name: Разблокировать доступ
             href: concepts/ban-delete.md
   - name: Способы загрузки заданий
-    href: concepts/download-tasks.md           
+    href: concepts/download-tasks.md
   - name: HTTP proxy
     hidden: true
     items:
@@ -218,7 +215,7 @@ items:
       - name: Получить сведения об операции
         href: concepts/get-operation.md
       - name: Получить лог операции
-        href: concepts/get-operation-log.md       
+        href: concepts/get-operation-log.md
   - name: Получение ответов
     items:
       - name: Обзор
@@ -281,7 +278,8 @@ items:
     href: concepts/standard-query-parameters.md
   - name: Сортировка списка объектов
     href: concepts/sorting.md
+  - name: Глоссарий
+    href: concepts/glossary.md
   - name: Библиотеки
     href: concepts/libraries.md
-
-
+base: ru

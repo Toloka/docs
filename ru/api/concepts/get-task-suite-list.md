@@ -46,7 +46,7 @@
 
 Параметры для сортировки:
 - `id` — идентификатор страницы заданий;
-- `created` — дата создания страницы заданий по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss].
+- `created` — дата создания страницы заданий по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 {% include [get-tasks-list-about-sorting](../_includes/concepts/get-tasks-list/id-get-tasks-list/about-sorting.md) %}||
 ||**overlap** | **integer**

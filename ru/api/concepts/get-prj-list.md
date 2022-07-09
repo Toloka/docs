@@ -41,7 +41,7 @@
 
 Параметры для сортировки:
 - `id` — идентификатор проекта;
-- `created` — дата создания проекта по UTC в формате ISO 8601: YYYY-MM-DDThh:mm:ss[.sss];
+- `created` — дата создания проекта по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`;
 - `public_name` — название проекта;
 - `private_comment` — комментарий к проекту.
 

@@ -16,19 +16,20 @@ Adds a message thread to a folder.
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
+
 {% endlist %}
 
 #### Remove from a folder
@@ -39,19 +40,19 @@ Deletes a message thread from a folder.
 
 - Production version
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Sandbox
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -61,14 +62,12 @@ Parameter | Overview
 ----- | -----
 **thread_id** | Message thread ID.
 
-
 ## Headers {#headers}
 
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
 **Content-Type** | Specifies the data format in the request body.
-
 
 ## Request body {#body}
 
