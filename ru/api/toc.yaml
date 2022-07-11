@@ -16,7 +16,11 @@ items:
       - name: Обзор
         href: concepts/project.md
       - name: Создать проект
-        href: concepts/create-prj.md
+        items:
+          - name: Обзор
+            href: concepts/create-prj.md
+          - name: Конфиг для конструктора шаблонов
+            href: concepts/tb-config.md
       - name: Редактировать проект
         href: concepts/edit-prj.md
       - name: Получить список проектов
