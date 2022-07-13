@@ -8,7 +8,6 @@ docs-viewer:
   langs: [en,ru]
   favicon-src: https://avatars.mds.yandex.net/get-lpc/1520633/6d7eb5a1-a693-4f8a-bb21-e6f5daabc3d3/orig
   github-url-prefix: https://github.com/Toloka/docs/blob/main/
-  no-index: true
   feedback:
     notifications:
       interval: daily
