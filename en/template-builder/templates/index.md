@@ -30,7 +30,7 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Product search relevance](product-search-relevance.md)
 
-- [Object recognition & detection](object-recognition.md)
+- [Object recognition and area selection](object-recognition.md)
 
 ## Texts
 
