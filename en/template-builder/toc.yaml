@@ -39,7 +39,7 @@ items:
           - href: templates/product-search-relevance.md
             name: Product search relevance
           - href: templates/object-recognition.md
-            name: Object recognition & detection
+            name: Object recognition and area selection
       - name: Texts
         items:
           - href: templates/copywriting.md
