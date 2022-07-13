@@ -10,23 +10,23 @@
 
 - Боевая версия
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/projects/<project_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/projects/<project_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters, including updated ones>}
-  ```
+    {<project parameters, including updated ones>}
+    ```
 
 - Песочница
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters, including updated ones>}
-  ```
+    {<project parameters, including updated ones>}
+    ```
 
 {% endlist %}
 
@@ -36,11 +36,9 @@
 ----- | -----
 **project_id** | Идентификатор проекта.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Ответ {#response}
 

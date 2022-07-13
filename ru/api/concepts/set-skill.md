@@ -8,33 +8,31 @@
 
 {% endnote %}
 
-
 ## Запрос {#request}
 
 {% list tabs %}
 
 - Боевая версия
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -46,6 +44,7 @@
   "reason": "High-quality performance of tasks"
 }
 ```
+
 #|
 ||**Параметр** | **Описание**||
 ||**skill_id** | **string \| обязательный**
@@ -61,7 +60,6 @@
 
 Причина изменения или назначения навыка.||
 |#
-
 
 ## Ответ {#response}
 

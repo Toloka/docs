@@ -8,37 +8,35 @@
 
 {% endnote %}
 
-
 ## Запрос {#request}
 
 {% list tabs %}
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/projects
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    POST https://toloka.yandex.com/api/v1/projects
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters>}
-  ```
+    {<project parameters>}
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/projects
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/projects
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<project parameters>}
-  ```
+    {<project parameters>}
+    ```
 
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -157,6 +155,7 @@
 
 Инструкция по выполнению заданий. В инструкции можно использовать любую HTML-разметку.||
 ||**private_comment** | **string**
+
 Комментарий, доступный только заказчику.||
 ||**assignments_issuing_type** | **string**
 
@@ -167,9 +166,10 @@
 
   ```json
   "assignments_issuing_view_config": {
-      "title_template": "<task name>",
-      "description_template": "<brief description of the task>",
-      "map_provider": "YANDEX"}
+    "title_template": "<task name>",
+    "description_template": "<brief description of the task>",
+    "map_provider": "YANDEX"
+  }
   ```
 
   По умолчанию значение `AUTOMATED`.||
@@ -180,7 +180,6 @@
 Провайдер карт для выполнения задач:
 
 - `GOOGLE` — Карты Google.
-
 - `YANDEX` — Яндекс Карты.
 
 Если параметр не задан, то выбор карты определяется исполнителем.||
@@ -203,7 +202,6 @@
 Подробнее о переводе см. в документе [Перевод на другие языки]({{ requester-project-languages }}).||
 |#
 
-
 ## Входные и выходные данные (input_spec и output_spec) {#in-out}
 
 Параметры `input_spec` и `output_spec` содержат JSON со свойствами входных данных и параметрами для валидации ответов. В них нужно определить тип данных (строка, число, url и т.д.) и указать параметры для валидации (например, длина строки).
@@ -217,6 +215,7 @@
 ||**type** | **string \| обязательный**
 
 Тип данных:
+
 - `url` — URL картинки, страницы и т. д.;
 - `boolean` — логический тип данных (`true`/`false`);
 - `integer` — целое число;
@@ -231,6 +230,7 @@
 ||**hidden** | **boolean**
 
 Скрыть ли от исполнителя поле с входным значением. По умолчанию значение `false`.
+
 Для выходных данных всегда `false`.||
 ||**min_value** | **float**
 
@@ -241,6 +241,7 @@
 ||**allowed_values[]** | **array of strings, array of integers, array of floats**
 
 Допустимые значения.
+
 Задание допустимых значений повышает качество [агрегации результатов](aggregated-solutions.md).||
 ||**min_length** | **integer**
 
@@ -252,7 +253,6 @@
 
 Только в выходных данных типа `coordinates`: заполнение поля текущими координатами исполнителя (`true`/`false`). Используется в заданиях для мобильного приложения.||
 |#
-
 
 ## Интерфейс задания (view_spec) {#view-spec-section}
 
@@ -276,21 +276,25 @@ CSS-интерфейс задания.
 Необходимость отображения стандартных элементов интерфейса в задании.||
 ||**assets** | **object**
 Подключенные файлы:
+
 - CSS-стили;
 - JavaScript-библиотеки;
 - ресурсы Толоки с префиксом `$TOLOKA_ASSETS`.
 
- Добавляйте элементы в том порядке, в котором они должны подключаться при запуске интерфейса задания.||
+Добавляйте элементы в том порядке, в котором они должны подключаться при запуске интерфейса задания.||
 ||**assets.script_urls[]** | **array of strings**
 Ссылки на JavaScript-библиотеки и ресурсы Толоки.
+
 Ресурсы Толоки:
+
 - `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — хелперы Handlebars (см. [описание на сайте шаблонизатора]({{ handlebarsjs-com }}));
 - `$TOLOKA_ASSETS/js/image-annotation.js` — интерфейс разметки картинок (см. в разделе [Картинка с возможностью выделения областей]({{ requester-image-annotation }}) Руководства заказчика).
 
 Интерфейс разметки картинок нужно подключать только вместе с хелперами Handlebars. Порядок подключения важен:
-```
- "script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
- "$TOLOKA_ASSETS/js/image-annotation.js"]
+
+```json
+"script_urls": ["$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
+"$TOLOKA_ASSETS/js/image-annotation.js"]
 ```
 ||
 ||**assets.style_urls[]** | **array of strings**
@@ -299,11 +303,14 @@ CSS-интерфейс задания.
 ||**type** | **string**
 
 Тип редактора:
+
 - `tb` — конструктор шаблонов.||
 ||**localizationConfig** | **object**
 
 Конфигурация редактора.
+
 В конструкторе шаблонов добавьте в это поле ключи для свойств текстовых компонентов, которые вам нужно перевести на другие языки.
+
 Подробнее см. в разделе [Перевод интерфейса задания]({{ requester-interface-translate }}).||
 ||**localizationConfig.keys** | **string**
 
@@ -346,6 +353,7 @@ CSS-интерфейс задания.
 ||**title_template** | **string \| обязательный при условии**
 
 Обязателен, если `assignments_issuing_type=MAP_SELECTOR`.
+
 Название задания. Исполнители увидят его в режиме предпросмотра задания.||
 ||**description_template** | **string \| обязательный при условии**
 
@@ -357,12 +365,12 @@ CSS-интерфейс задания.
 Параметр можно использовать, если в проекте `"assignments_issuing_type": "MAP_SELECTOR"`.
 
 Провайдер карт для выполнения задач:
+
 - `GOOGLE` — Карты Google.
 - `YANDEX` — Яндекс Карты.
 
 Если параметр не задан, то выбор карты определяется исполнителем.||
 |#
-
 
 ## Переводы на другие языки (localization_config) {#localization-config-section}
 
@@ -371,6 +379,7 @@ CSS-интерфейс задания.
 ||**default_ language** | **string**
 
 Исходный язык, на котором заполнены:
+
 - **public_name** (**string \| обязательный** — название проекта. Его увидят исполнители)
 - **public_description** (**string \| обязательный** — описание проекта. Его увидят исполнители)
 - **public_instructions** (**string** — инструкция по выполнению заданий. В инструкции можно использовать любую HTML-разметку)||
@@ -385,6 +394,7 @@ CSS-интерфейс задания.
 Перевод названия проекта.
 
 Источник перевода:
+
 - `REQUESTER` — заказчик сам установил значение.||
 ||**additional_languages[]. public_description** | **object**
 
@@ -418,7 +428,6 @@ CSS-интерфейс задания.
 - `REQUESTER` — заказчик сам установил значение.||
 |#
 
-
 ## Ответ {#response}
 
 Содержит информацию о загруженном проекте в формате JSON. Проекту автоматически присваивается идентификатор.
@@ -439,12 +448,16 @@ CSS-интерфейс задания.
 ||**owner.myself** | **boolean**
 
 Проверяет, кому принадлежит объект:
+
 - `true` — пользователю, чей OAuth token указан в запросе;
 - `false` — другому аккаунту (сотруднику или владельцу).||
 ||**id** | **string**
+
 Идентификатор проекта (присваивается автоматически).||
 ||**status** | **string**
+
 Статус проекта:
+
 - `ACTIVE` — активный;
 - `ARCHIVED` — архивный.||
 ||**created** | **string**

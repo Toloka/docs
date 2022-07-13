@@ -8,23 +8,23 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/trainings
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/trainings
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/trainings
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/trainings
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Query-параметры {#query-params}
 
@@ -34,7 +34,9 @@
 #|
 ||**Параметр**| **Описание**||
 ||**status** | **string**
+
 Статус обучающего пула:
+
 - `OPEN` — открыт;
 - `CLOSED` — закрыт;
 - `LOCKED` — заблокирован: невозможны никакие действия;
@@ -42,7 +44,9 @@
 ||**project_id** | **string**
 Идентификатор проекта, к которому относится обучающий пул.||
 ||**sort** | **string**
+
 Параметры для сортировки по возрастанию:
+
 - `id` — идентификатор обучающего пула;
 - `created` — дата создания обучающего пула по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`;
 - `last_started` — дата последнего запуска обучающего пула в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
@@ -64,7 +68,6 @@
 - **last_started_lte** (**string** — объекты, которые были в последний раз открыты раньше указанной даты включительно)||
 |#
 
-
 ## Пример запроса {#request-example}
 
 Можно настроить показ списка обучающих пулов частями (например, по 10 пулов):
@@ -78,17 +81,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Показывать остальные части с сортировкой по возрастанию идентификатора**
@@ -97,23 +101,24 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Ответ {#response}
 
 Содержит список обучающих пулов и их свойств в массиве `items`:
 
-```no-highlight
+```json
 {"items" : [{parameters_of_training_pool_1}, {parameters_of_training_pool_2}, ... {parameters_of_training_pool__n_}], "has_more": false}
 ```

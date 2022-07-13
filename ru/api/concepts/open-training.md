@@ -12,17 +12,18 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/trainings/<training_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -31,11 +32,9 @@
 ----- | -----
 **training_id** | Идентификатор пула.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -44,7 +43,6 @@
 Если текущий статус обучающего пула совпадает с запрашиваемым, то возвращается пустой ответ со статусом 204.
 
 {% endnote %}
-
 
 ```json
 {

@@ -8,19 +8,20 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -29,11 +30,9 @@
 ----- | -----
 **thread_id** | Идентификатор цепочки сообщений.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -44,7 +43,6 @@
   }
 }
 ```
-
 
 #|
 ||**Параметр**| **Описание**||

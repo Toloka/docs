@@ -10,7 +10,6 @@
 
 ## Блоки контроля качества {#quality-control-blocks}
 
-
 - [{#T}](goldenset.md)
 - [{#T}](mv.md)
 - [{#T}](captcha.md)
@@ -25,4 +24,3 @@
 ## Узнайте больше {#links}
 
 - [Правила контроля качества в Руководстве заказчика]({{ requester-quality }})
-

@@ -11,6 +11,7 @@
 Вы можете агрегировать ответы двумя способами:
 
 - да — агрегируйте по навыку (`WEIGHTED_DYNAMIC_OVERLAP`);
+
 - нет — агрегируйте методом Дэвида — Скина (`DAWID_SKENE`).
 
     Агрегация Дэвида — Скина работает с контрольными и обучающими заданиями так же, как и с основными. Существует вероятность того, что заданные для контрольных заданий ответы не совпадут с реальными ответами на это задание, если исполнители будут часто давать на него неверный ответ.
@@ -33,7 +34,6 @@
 ||POST | [/aggregated-solutions/aggregate-by-task](aggregate-by-task.md) | {% include [aggregate-by-task-aggregate](../_includes/concepts/aggregate-by-task/id-aggregate-by-task/aggregate.md) %}||
 ||GET | [/aggregated-solutions/<operation_id>](get-aggregated-result.md) | {% include [get-aggregated-result-get](../_includes/concepts/get-aggregated-result/id-get-aggregated-result/get.md) %}||
 |#
-
 
 ## Узнайте больше {#links}
 

@@ -4,7 +4,7 @@
 
 #### Пример запроса
 
-```
+```bash
 GET https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=12345
 Authorization: OAuth <OAuth token>
 ```
@@ -14,7 +14,6 @@ Authorization: OAuth <OAuth token>
 - Для запросов к песочнице: `https://sandbox.toloka.yandex.com/api/v1/<путь к ресурсу>`.
 
 - Для запросов к боевой версии: `https://toloka.yandex.com/api/v1/<путь к ресурсу>`.
-
 
 ## Получение OAuth-токена {#token}
 

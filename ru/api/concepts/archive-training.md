@@ -8,24 +8,23 @@
 
 - Все основные пулы, к которым привязан обучающий пул, должны быть [отправлены в архив](archive-pool.md).
 
-
 ## Запрос {#request}
 
 {% list tabs %}
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/training/<training_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/training/<training_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -35,11 +34,9 @@
 ----- | -----
 **training_id** | Идентификатор пула.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -48,7 +45,6 @@
 Если обучающий пул уже архивирован, при попытке повторно отправить его в архив будет возвращен пустой ответ со статусом 204.
 
 {% endnote %}
-
 
 ```json
 {
@@ -72,8 +68,10 @@
 
 Идентификатор исполнителя.||
 ||**type** | **string**
+
 Тип операции: `TRAINING.ARCHIVE` — отправить обучение в архив.||
 ||**status** | **string**
+
 Статус операции:
 
 - `PENDING` — выполнение не началось;
@@ -87,11 +85,15 @@
 
 Дата и время начала операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 ||**finished** | **string**
+
 Дата и время окончания операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 ||**progress** | **integer**
+
 Ход выполнения операции в процентах.||
 ||**parameters.training_id** | **string**
+
 Идентификатор обучающего пула.||
 ||**details** | **object**
+
 Детали выполнения операции.||
 |#

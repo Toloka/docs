@@ -8,17 +8,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-skills
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-skills
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -26,11 +26,9 @@
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 #|
 ||**Параметр** | **Описание**||
@@ -43,6 +41,7 @@
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатора навыка;
 - `created` — дата создания навыка по UTC в формате YYYY-MM-DD;
 - `modified` — дата изменения навыка по UTC в формате YYYY-MM-DD.
@@ -65,10 +64,10 @@
 - **modified_lte** (**string** — объекты, измененные до указанной даты включительно)||
 |#
 
-
 ## Пример запроса {#request-example}
 
 Можно настроить показ списка навыков частями (например, по 10 навыков):
+
 1. Показать первые 10 навыков, начиная с навыка с наименьшим идентификатором.
 1. Показывать оставшиеся навыков по 10 штук в порядке возрастания.
 
@@ -78,17 +77,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-skills?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -98,17 +97,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

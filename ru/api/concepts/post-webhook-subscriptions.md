@@ -8,17 +8,17 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,11 +28,9 @@
 ----- | -----
 **subscription_id** | Идентификатор подписки.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Пример тела уведомления {#body}
 
@@ -92,7 +90,9 @@
 ||**errorType** | **string**
 
 Тип ошибки.
+
 Возможные значения:
+
 - `WRONG_STATUS_CODE` — неверный код состояния.
 - `TOO_MANY_CONNECTIONS` — превышен лимит соединений.
 - `REQUEST_TIMEOUT` — таймаут запроса.

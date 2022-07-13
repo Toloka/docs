@@ -6,6 +6,7 @@
 
 - задать [числовое значение](create-task.md#overlap) или установить [бесконечное перекрытие](create-task.md#infinite), чтобы выдавать задание всем исполнителям (например, для обучающих заданий);
 - добавить предварительные ответы или изменить [их значения](create-task.md#baseline), если они уже были заданы.
+
   Предварительные ответы используются для расчета уверенности в ответе при динамическом перекрытии (incremental relabeling, IRL);
 
 - сделать из обычных заданий контрольные и тренировочные или отредактировать [ответы](create-task.md) и [подсказки](create-task.md) для уже существующих заданий.
@@ -20,19 +21,19 @@
 
 - Боевая версия
 
-  ```bash
-  PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task ID>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task ID>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -40,13 +41,11 @@
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
 
-
 ## Path-параметры {#path-params}
 
 Параметр | Описание
 ----- | -----
 **task_id** | Идентификатор задания.
-
 
 ## Тело запроса {#body}
 
@@ -54,8 +53,8 @@
 
 ```json
 {
-   "overlap": <new overlap value>,
-   "infinite_overlap": false
+  "overlap": <new overlap value>,
+  "infinite_overlap": false
 }
 ```
 
@@ -63,8 +62,8 @@
 
 ```json
 {
-   "overlap": null,
-   "infinite_overlap": true
+  "overlap": null,
+  "infinite_overlap": true
 }
 ```
 

@@ -12,45 +12,44 @@
 
 {% endnote %}
 
-
 ## Пример фильтра в JSON {#request-example}
 
 В примере для выполнения заданий отобраны исполнители из России и Украины (учитывается регион, определенный по IP исполнителя и страна, указанная в профиле). исполнители должны иметь навык по результатам контрольной страницы со значением не менее 60.
 
 ```json
 {
-   "filter" : {
-      "and":[
-         {
-            "or":[
-               {
-                  "category":"computed",
-                  "key":"region_by_ip",
-                  "operator":"IN",
-                  "value":225
-               },
-               {
-                  "category":"computed",
-                  "key":"region_by_ip",
-                  "operator":"IN",
-                  "value":187
-               }
-            ]
-         },
-         {
-                  "category":"profile",
-                  "key":"country",
-                  "operator":"EQ",
-                  "value":"RU"
-              },
-         {
-                  "category":"skill",
-                  "key":"2",
-                  "operator":"GTE",
-                  "value":"60"
-           }
-      ]
-   }
+  "filter": {
+    "and": [
+      {
+        "or": [
+          {
+            "category": "computed",
+            "key": "region_by_ip",
+            "operator": "IN",
+            "value": 225
+          },
+          {
+            "category": "computed",
+            "key": "region_by_ip",
+            "operator": "IN",
+            "value": 187
+          }
+        ]
+      },
+      {
+        "category": "profile",
+        "key": "country",
+        "operator": "EQ",
+        "value": "RU"
+      },
+      {
+        "category": "skill",
+        "key": "2",
+        "operator": "GTE",
+        "value": "60"
+      }
+    ]
+  }
 }
 ```
 
@@ -62,12 +61,12 @@
 
 {% endnote %}
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**category** | **string \| обязательный**
 
 Группа данных для фильтрации:
+
 - `skill` — навык;
 - `profile` — данные профиля;
 - `computed` — вычислимые данные (например, регион исполнителя, определенный по IP-адресу).||
@@ -88,5 +87,3 @@
 
 Значение признака из поля `key`. Например, идентификатор региона, указанного в профиле, или минимальное значение навыка. Чтобы правильно выбрать значение, см. описание фильтров в подразделах [Фильтр по данным профиля](filter-profile.md), [Фильтр по вычислимым данным](filter-computed.md), [Фильтр по навыкам](filter-skill.md).||
 |#
-
-

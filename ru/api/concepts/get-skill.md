@@ -10,17 +10,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/skills/<skill_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/skills/<skill_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/skills/<skill_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/skills/<skill_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,11 +28,9 @@
 
 {% include [edit-skill-skill-id-table](../_includes/concepts/edit-skill/id-edit-skill/skill-id-table.md) %}
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -40,19 +38,19 @@
 
 ```json
 {
-    "id": "9238",
-    "name": "Determining the color of an elephant",
-    "private_comment": "Skill for my pool",
-    "hidden": true,
-    "skill_ttl_hours": 240,
-    "deprecated": false,
-    "owner": {
-        "id": "c3a50f44cd3e1b8202465569ced289eb",
-        "myself": true
-    },
-    "training": true,
-    "created": "2021-12-01T08:37:03.387",
-    "global": false
+  "id": "9238",
+  "name": "Determining the color of an elephant",
+  "private_comment": "Skill for my pool",
+  "hidden": true,
+  "skill_ttl_hours": 240,
+  "deprecated": false,
+  "owner": {
+    "id": "c3a50f44cd3e1b8202465569ced289eb",
+    "myself": true
+  },
+  "training": true,
+  "created": "2021-12-01T08:37:03.387",
+  "global": false
 }
 ```
 

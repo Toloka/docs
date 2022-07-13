@@ -7,6 +7,7 @@
 Логи доступны только за последний месяц. Чтобы получить логи за более ранний период, обратитесь в [службу поддержки]({{ requester-troubleshooting }}).
 
 Лог операции можно получить при:
+
 - создании [одного или нескольких](create-task.md) заданий;
 - создании [одной или нескольких](create-task-suite.md) страниц заданий;
 - [выдаче бонусов](create-bonus.md) исполнителям.
@@ -19,17 +20,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/operations/<operation_id>/log
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/operations/<operation_id>/log
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>/log
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>/log
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 ## Path-параметры {#path-params}
@@ -38,11 +39,9 @@
 ----- | -----
 **operation_id** | Идентификатор операции.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -69,9 +68,12 @@
 ||**type** | **string**
 
 Тип действия на шаге операции. Зависит от:
+
 - типа операции, по которой запрашивается лог;
 - результата выполнения (`success: true/false`).
+
 Значения `type` при успешной асинхронной операции:
+
 - `USER_BONUS_PERSIST` — выдача бонуса.
 - `TASK_CREATE` — создание задания.
 - `TASK_SUITE_CREATE` — создание страницы заданий.
@@ -79,10 +81,12 @@
 - `USER_BONUS_VALIDATE` — выдача бонуса.
 - `TASK_VALIDATE` — создание задания.
 - `TASK_SUITE_VALIDATE` — создание страницы заданий.
+
 От типа операции зависят значения `input` и `output`.||
 ||**success** | **boolean**
 
 Результат выполнения шага:
+
 - `true` — действие выполнено успешно;
 - `false` — действие не выполнено.||
 ||**input** | **JSON**
@@ -91,12 +95,15 @@
 ||**output** | **JSON**
 
 Выходные данные шага операции.
+
 Данные в `output` при успешной операции:
+
 - Для действия `USER_BONUS_PERSIST` — `user_bonus_id` (`id` выданного бонуса).
 - Для действия `TASK_CREATE` — `task_id` (`id` созданного задания).
 - Для действия `TASK_SUITE_CREATE` — `task_suite_id` (`id` созданной страницы заданий).
 
 Данные в `output` при неуспешной операции:
+
 - `code` — имя ошибки.
 - `message` — пояснение, как исправить ошибку.
 - `payload` — при `code = VALIDATION_ERROR` уточняет причину ошибки.||

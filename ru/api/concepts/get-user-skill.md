@@ -8,17 +8,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-skills/<id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-skills/<id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,11 +28,9 @@
 ----- | -----
 **id** | Идентификатор навыка исполнителя, который присваивается паре «навык-исполнитель».
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
