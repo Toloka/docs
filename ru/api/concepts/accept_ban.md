@@ -14,41 +14,41 @@
 
 ```json
 {
-   "configs": [
-      {
-         "collector_config": {
-            "type": "ACCEPTANCE_RATE",
-            "parameters": {
-               "history_size": 10
-            }
-         },
-         "rules": [
+  "configs": [
+    {
+      "collector_config": {
+        "type": "ACCEPTANCE_RATE",
+        "parameters": {
+          "history_size": 10
+        }
+      },
+      "rules": [
+        {
+          "conditions": [
             {
-               "conditions": [
-                  {
-                     "key": "total_assignments_count",
-                     "operator": "GTE",
-                     "value": 10
-                  },
-                  {
-                     "key": "rejected_assignments_rate",
-                     "operator": "GT",
-                     "value": 0.4
-                  }
-               ],
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "PROJECT",
-                     "duration_unit": "DAYS",
-                     "duration": 10,
-                     "private_comment": "The requester rejected 40% of the tasks"
-                  }
-               }
+              "key": "total_assignments_count",
+              "operator": "GTE",
+              "value": 10
+            },
+            {
+              "key": "rejected_assignments_rate",
+              "operator": "GT",
+              "value": 0.4
             }
-         ]
-      }
-   ]
+          ],
+          "action": {
+            "type": "RESTRICTION_V2",
+            "parameters": {
+              "scope": "PROJECT",
+              "duration_unit": "DAYS",
+              "duration": 10,
+              "private_comment": "The requester rejected 40% of the tasks"
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -58,56 +58,56 @@
 
 - на 12 часов
 
-  ```json
-  {
-     ...
-                 "action": {
-                    "type": "RESTRICTION_V2",
-                    "parameters": {
-                       "scope": "PROJECT",
-                       "duration_unit": "HOURS",
-                       "duration": 12,
-                       "private_comment": "The requester rejected 40% of the tasks"
-                    }
-                 }
-     ...
-  }
-  ```
+    ```json
+    {
+      ...
+        "action": {
+          "type": "RESTRICTION_V2",
+          "parameters": {
+            "scope": "PROJECT",
+            "duration_unit": "HOURS",
+            "duration": 12,
+            "private_comment": "The requester rejected 40% of the tasks"
+          }
+        }
+      ...
+    }
+    ```
 
 - на 30 минут
 
-  ```json
-  {
-     ...
-                 "action": {
-                    "type": "RESTRICTION_V2",
-                    "parameters": {
-                       "scope": "PROJECT",
-                       "duration_unit": "MINUTES",
-                       "duration": 30,
-                       "private_comment": "The requester rejected 40% of the tasks"
-                    }
-                 }
-     ...
-  }
-  ```
+    ```json
+    {
+      ...
+        "action": {
+          "type": "RESTRICTION_V2",
+          "parameters": {
+            "scope": "PROJECT",
+            "duration_unit": "MINUTES",
+            "duration": 30,
+            "private_comment": "The requester rejected 40% of the tasks"
+          }
+        }
+      ...
+    }
+    ```
 
 - навсегда
 
-  ```json
-  {
-     ...
-                 "action": {
-                    "type": "RESTRICTION_V2",
-                    "parameters": {
-                       "scope": "PROJECT",
-                       "duration_unit": "PERMANENT",
-                       "private_comment": "The requester rejected 40% of the tasks"
-                    }
-                 }
-     ...
-  }
-  ```
+    ```json
+    {
+      ...
+        "action": {
+          "type": "RESTRICTION_V2",
+          "parameters": {
+            "scope": "PROJECT",
+            "duration_unit": "PERMANENT",
+            "private_comment": "The requester rejected 40% of the tasks"
+          }
+        }
+      ...
+    }
+    ```
 
 {% endlist %}
 
@@ -122,6 +122,7 @@
 ||**configs.collector_config.type** | **string \| обязательный**
 
 Критерий, на котором основан блок качества:
+
 - `GOLDEN_SET` — количество правильных и неправильных ответов в контрольных заданиях.
 - `MAJORITY_VOTE` — доля ответов, которые совпали с мнением большинства.
 - `CAPTCHA` — количество успешно и неуспешно введенных капч.
@@ -137,15 +138,17 @@
 ||**configs.rules.conditions.key** | **string \| обязательный**
 
 Значения, которые проверяются в условии:
+
 - `total_assignments_count` — количество заданий пула, которое
  выполнил исполнитель.
- - `accepted_assignments_rate` — доля заданий пула, выполненных
+- `accepted_assignments_rate` — доля заданий пула, выполненных
  исполнителем и принятых при отложенной приемке.
- - `rejected_assignments_rate` — доля заданий пула, выполненных
+- `rejected_assignments_rate` — доля заданий пула, выполненных
  исполнителем и отклоненных при отложенной приемке.||
 ||**configs.rules.conditions. operator** | **string \| обязательный**
 
 Оператор сравнения (данные `key` сравниваются с пороговым значением из `value`):
+
 - `EQ` («Equal») — равно.
 - `NE` («Not equal to») — не равно.
 - `GT` («Greater than») — больше чем.
@@ -161,6 +164,7 @@
 ||**configs.rules.action.type** | **string \| обязательный**
 
 Тип действия:
+
 - `RESTRICTION_V2` — заблокировать доступ к проектам или пулам.
 - `SET_SKILL_FROM_OUTPUT_FIELD` — присвоить навыку значение «доля правильных ответов» (используется в блоках [Контрольный набор](goldenset.md) и [Мнение большинства](mv.md)).
     Значение навыка можно использовать для отбора исполнителей.
@@ -174,6 +178,7 @@
 ||**configs.rules.action. parameters.scope** | **string \| обязательный**
 
 Уровень ограничения:
+
 - `POOL` — пул. Не влияет на рейтинг исполнителя.
 - `PROJECT` — проект. Влияет на рейтинг исполнителя.
 - `ALL_PROJECTS` — все проекты заказчика.||
@@ -183,16 +188,20 @@
 ||**configs.rules.action. parameters.from_field** | **string \| обязательный при условии**
 
 Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
+
 Значение, которое нужно присвоить навыку:
+
 - `correct_answers_rate` — доля правильных ответов;
 - `wrong_answers_rate` — доля неправильных ответов.||
 ||**configs.rules.action. parameters.skill_value** | **integer \| обязательный при условии**
 
 Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
+
 Фиксированное значение, которое нужно присвоить навыку (число от 0 до 100).||
 ||**configs.rules.action. parameters.delta** | **integer \| обязательный при условии**
 
 Обязателен, если `type=CHANGE_OVERLAP`.
+
 Значение определяет, на сколько изменить перекрытие.||
 ||**configs.rules.action. parameters.public_comment** | **string \| обязательный при условии**
 
@@ -202,9 +211,11 @@
 ||**configs.collector_config. parameters** | **object \| обязательный при условии**
 
 Обязательный, если `configs.collector_config.type=``GOLDEN_SET`, `MAJORITY_VOTE`, `CAPTCHA`, `ASSIGNMENT_SUBMIT_TIME`.
+
 Параметры для сбора данных (зависят от блока контроля качества, указанного в ключе `type`).||
 ||**configs.rules.action. parameters.duration_unit** | **string**
 Единица измерения длительности блокировки:
+
 - `MINUTES` — минуты;
 - `HOURS` — часы;
 - `DAYS` — дни;
@@ -218,12 +229,12 @@
 ||**configs.rules.action. parameters.open_pool** | **boolean**
 
 Определяет, нужно ли открыть закрытый пул:
+
 - `true` — открыть пул после изменения, если он закрыт.
 - `false` — не открывать пул после изменения, если он закрыт.||
 ||**configs.collector_config. parameters.history_size** | **integer**
 
 Максимальное количество последних заданий, выполненных исполнителем в проекте, которое нужно учитывать при подсчете.
+
 Если поле отсутствует, в расчете учитываются все задания, выполненные исполнителем в пуле.||
 |#
-
-

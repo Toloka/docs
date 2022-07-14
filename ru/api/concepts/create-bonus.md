@@ -31,19 +31,19 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
@@ -51,19 +51,19 @@
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 #|
 ||**Параметр**| **Описание**||
 ||**async_mode** | **boolean**
 
 Способ обработки запроса:
+
 - `true` — отложенный. В результате запроса создается асинхронная операция, выполняемая в фоновом режиме. Ответ содержит сведения об операции (время начала и окончания, статус, количество бонусов).
 - `false` — синхронный. Ответ содержит сведения о выданных бонусах. В одном запросе можно отправить не более 100 бонусов.
+
 По умолчанию значение `false`.||
 ||**assignment_id** | **string**
 
@@ -71,6 +71,7 @@
 ||**skip_invalid_items** | **boolean**
 
 Параметры валидации JSON-объектов:
+
 - `true` — выдать бонус, если JSON-объект со сведениями о бонусе прошел валидацию. В противном случае пропустить выдачу бонуса.
 - `false` — остановить операцию и не выдавать бонусы, если хотя бы один JSON-объект не прошел валидацию.
 
@@ -79,7 +80,6 @@
 
 Идентификатор операции. Можно использовать при любом способе обработки запроса.||
 |#
-
 
 ## Тело запроса {#body}
 
@@ -122,6 +122,7 @@
 ||**without_message** | **boolean**
 
 Позволяет не отправлять исполнителю сообщение о бонусе. По умолчанию `false`.
+
 Для того чтобы выдать бонус без сообщения, нужно указать `null` для `public_title` и `public_message` и `true` для `without_message`.||
 |#
 
@@ -192,6 +193,7 @@
   ||**status** | **string**
 
   Статус операции:
+
   - `PENDING` — выполнение не началось;
   - `RUNNING` — выполняется;
   - `SUCCESS` — успешно выполнена;

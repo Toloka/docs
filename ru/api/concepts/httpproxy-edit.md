@@ -6,19 +6,19 @@
 
 ```js
 $.ajax({
-      url: '/api/new/requester/proxy/proxy/{id}',
-      method: 'PATCH',
-      contentType: 'application/json',
-      data: JSON.stringify({
-        "params": {
-          "accessRights": "ASSIGNMENT_PRIVATE",
-          "type": "HTTP",
-          "additionalHeaders": {},
-          "additionalQueryArgs": {},
-          "baseUrl": "example.com/some-path"
-        },
-        "name": "test-proxy"
-      })
+    url: '/api/new/requester/proxy/proxy/{id}',
+    method: 'PATCH',
+    contentType: 'application/json',
+    data: JSON.stringify({
+      "params": {
+        "accessRights": "ASSIGNMENT_PRIVATE",
+        "type": "HTTP",
+        "additionalHeaders": {},
+        "additionalQueryArgs": {},
+        "baseUrl": "example.com/some-path"
+      },
+      "name": "test-proxy"
+    })
 });
 ```
 
@@ -34,12 +34,17 @@ $.ajax({
 - ASSIGNMENT_PRIVATE — доступ имеют только исполнители в задании которых присутствует ссылка на сервер. Подходит для контента заданий.
 
   {% cut "Пример" %}
+
   В Толоке выполняется вызов: `toloka.yandex.com/api/proxy/test-proxy/test-path`.
+
   Если задание при этом содержит входное поле с типом aдрес (url) или cтрока (string), и оно имеет значение:
+
   - `proxy/test-proxy/example-id`,
   - `test-proxy/example-id`,
   - `example-id`,
+
   запрос будет проксирован на сервер заказчика.
+
   Если в задании нет поля с таким значением, запрос проксирован не будет.
 
   {% endcut %}
@@ -47,13 +52,16 @@ $.ajax({
 - PRIVATE — доступ имеют только исполнители, которые выполняют задание соответствующего заказчика (владельца сервера). При этом не выполняется проверка на наличие в задании ссылки на сервер). Подходит для общих действий в заданиях.
 - PUBLIC — доступ имеют все исполнители Толоки. Подходит для файлов в инструкциях.||
 ||**type** | **string \| обязательный**
+
 Протокол передачи данных. Возможное значение: `HTTP`.||
 ||**baseUrl** | **string \| обязательный**
 
 URL, по которому находится сервер заказчика.
 
 Например, сервер с [именем](#name) «test-proxy» размещен по URL `example.com/some-path`.
+
 В этом случае при вызове в Толоке HTTP-метода по URL `toloka.yandex.com/api/proxy/test-proxy/test-path`, запрос к серверу заказчика будет сделан по URL `example.com/some-path/test-path`.
+
 Если вызов выполнен в рамках шаблона, к URL дополнительно будет добавлен **assignment_id**. Таким образом на сервер заказчика также будет передана информация в рамках какого задания был сделан запрос. Например: `example.com/some-path/test-path?assignmentId=12831298712937213`.
 
 **assignment_id** — **string** Идентификатор выдачи страницы заданий.
@@ -61,18 +69,27 @@ URL, по которому находится сервер заказчика.
 ||**name** | **string \| обязательный**
 
 Название сервера заказчика. Будет включено в URL запроса. Допустимые символы в названии: латинские буквы, цифры, дефис «-».
+
 Должно быть уникально в рамках системы.
+
 Например, сервер с именем «test-proxy» будет доступен в Толоке по URL: `toloka.yandex.com/api/proxy/test-proxy`.||
 ||**additionalHeaders[]** | **array of strings**
 
-Дополнительные заголовки, которые будут переданы в запросе на сервер заказчика. Например: ``` "additionalHeaders":{"Authorization":["Basic--//--TOKEN--//--"]} ```
+Дополнительные заголовки, которые будут переданы в запросе на сервер заказчика. Например:
+
+```bash
+"additionalHeaders":{"Authorization":["Basic--//--TOKEN--//--"]}
+```
 ||
 ||**additionalQueryArgs[]** | **array of strings**
 
-Дополнительные параметры, которые будут переданы в запросе на сервер заказчика. Например:<br/>``` "additionalQueryArgs":{"test-arg":["12345"]} ```
+Дополнительные параметры, которые будут переданы в запросе на сервер заказчика. Например:
+
+```bash
+"additionalQueryArgs":{"test-arg":["12345"]}
+```
 ||
 |#
-
 
 ## Ответ {#response}
 

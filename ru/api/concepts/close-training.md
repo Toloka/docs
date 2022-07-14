@@ -12,17 +12,18 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/trainings/<training_id>/close
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/close
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/close
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/close
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -31,11 +32,9 @@
 ----- | -----
 **training_id** | Идентификатор пула.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -44,7 +43,6 @@
 Если текущий статус обучающего пула совпадает с запрашиваемым, то возвращается пустой ответ со статусом 204.
 
 {% endnote %}
-
 
 ```json
 {
@@ -68,9 +66,12 @@
 
 Идентификатор исполнителя.||
 ||**type** | **string**
-ип операции: `TRAINING.CLOSE` — закрыть обучение.||
+
+Тип операции: `TRAINING.CLOSE` — закрыть обучение.||
 ||**status** | **string**
+
 Статус операции:
+
 - `PENDING` — выполнение не началось;
 - `RUNNING` — выполняется;
 - `SUCCESS` — успешно выполнена;
@@ -82,11 +83,15 @@
 
 Дата и время начала операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 ||**finished** | **string**
+
 Дата и время окончания операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 ||**progress** | **integer**
+
 Ход выполнения операции в процентах.||
 ||**parameters.training_id** | **string**
+
 Идентификатор обучающего пула.||
 ||**details** | **object**
+
 Детали выполнения операции.||
 |#

@@ -8,17 +8,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/operations/<operation_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/operations/<operation_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -27,11 +28,9 @@
 ----- | -----
 **operation_id** | Идентификатор операции.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -61,7 +60,6 @@
 }
 ```
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**id** | **string \| обязательный**
@@ -70,6 +68,7 @@
 ||**type** | **string \| обязательный**
 
 Тип операции:
+
 - `POOL.OPEN` — открытие пула.
 - `POOL.CLOSE` — закрытие пула.
 - `PROJECT.ARCHIVE` — отправка проекта в архив.
@@ -80,11 +79,11 @@
 ||**status** | **string \| обязательный**
 
 Статус операции:
+
 - `PENDING` — выполнение не началось.
 - `RUNNING` — выполняется.
 - `SUCCESS` — успешно выполнена.
-- `FAIL` — не выполнена.
-||
+- `FAIL` — не выполнена.||
 ||**submitted** | **string \| обязательный**
 
 Дата и время отправки запроса по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||

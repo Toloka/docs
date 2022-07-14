@@ -31,59 +31,59 @@
 
 - cURL
 
-  Отправьте запрос из командной строки с помощью утилиты cURL:
+    Отправьте запрос из командной строки с помощью утилиты cURL:
 
-  ```bash
-  curl -X POST \
-     -H 'Authorization: OAuth <OAuth token>' \
-     -H 'Content-Type: application/JSON' \
-     -d '{
-         "public_name": "Cat or dog",
-         "public_description": "What kind of animal is on the picture?",
-         "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
-         "task_spec": {
-           "input_spec": {
-               "image": {
-                  "type": "url",
-                  "required": true,
-                  "hidden": false
-               }
-            },
-            "output_spec": {
-               "result": {
-                  "type": "string",
-                  "required": true,
-                  "hidden": false,
-                  "allowed_values": ["cat","dog"]
-               }
-            },
-            "view_spec": {
-               "lock": {
-                  "core": "1.7.0",
-                  "view.list": "1.0.5",
-                  "view.image": "1.2.0",
-                  "plugin.toloka": "1.1.8",
-                  "field.radio-group": "1.1.10",
-                  "condition.required": "1.1.5"
+    ```bash
+    curl -X POST \
+         -H 'Authorization: OAuth <OAuth token>' \
+         -H 'Content-Type: application/JSON' \
+         -d '{
+               "public_name": "Cat or dog",
+               "public_description": "What kind of animal is on the picture?",
+               "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
+               "task_spec": {
+                 "input_spec": {
+                   "image": {
+                     "type": "url",
+                     "required": true,
+                     "hidden": false
+                   }
+                 },
+                 "output_spec": {
+                   "result": {
+                     "type": "string",
+                     "required": true,
+                     "hidden": false,
+                     "allowed_values": ["cat","dog"]
+                   }
+                 },
+                 "view_spec": {
+                   "lock": {
+                     "core": "1.7.0",
+                     "view.list": "1.0.5",
+                     "view.image": "1.2.0",
+                     "plugin.toloka": "1.1.8",
+                     "field.radio-group": "1.1.10",
+                     "condition.required": "1.1.5"
+                   },
+                   "type": "tb",
+                   "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
+                   "settings": {
+                     "showSkip": true,
+                     "showTimer": true,
+                     "showTitle": true,
+                     "showFinish": true,
+                     "showSubmit": true,
+                     "showMessage": true,
+                     "showFullscreen": true,
+                     "showInstructions": true
+                   }
+                 }
                },
-               "type": "tb",
-               "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
-               "settings": {
-                  "showSkip": true,
-                  "showTimer": true,
-                  "showTitle": true,
-                  "showFinish": true,
-                  "showSubmit": true,
-                  "showMessage": true,
-                  "showFullscreen": true,
-                  "showInstructions": true
-               }
-            }
-         },
-         "assignments_issuing_type": "AUTOMATED"
-         }' \
-  https://sandbox.toloka.yandex.com/api/v1/projects
-  ```
+               "assignments_issuing_type": "AUTOMATED"
+             }' \
+    https://sandbox.toloka.yandex.com/api/v1/projects
+    ```
 
 - Postman
 
@@ -104,39 +104,42 @@
 
   1. Body
 
-    ```json
-    {
-       "public_name": "Cat or dog",
-       "public_description": "What kind of animal is on the picture?",
-       "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
-       "task_spec": {
-         "input_spec": {
-             "image": {
+        ```json
+        {
+          "public_name": "Cat or dog",
+          "public_description": "What kind of animal is on the picture?",
+          "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
+          "task_spec": {
+            "input_spec": {
+              "image": {
                 "type": "url",
                 "required": true,
                 "hidden": false
-             }
-          },
-          "output_spec": {
-             "result": {
+              }
+            },
+            "output_spec": {
+              "result": {
                 "type": "string",
                 "required": true,
                 "hidden": false,
-                "allowed_values": ["cat","dog"]
-             }
-          },
-          "view_spec": {
-             "lock": {
+                "allowed_values": [
+                  "cat",
+                  "dog"
+                ]
+              }
+            },
+            "view_spec": {
+              "lock": {
                 "core": "1.7.0",
                 "view.list": "1.0.5",
                 "view.image": "1.2.0",
                 "plugin.toloka": "1.1.8",
                 "field.radio-group": "1.1.10",
                 "condition.required": "1.1.5"
-             },
-             "type": "tb",
-             "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
-             "settings": {
+              },
+              "type": "tb",
+              "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
+              "settings": {
                 "showSkip": true,
                 "showTimer": true,
                 "showTitle": true,
@@ -145,12 +148,12 @@
                 "showMessage": true,
                 "showFullscreen": true,
                 "showInstructions": true
-             }
-          }
-       },
-       "assignments_issuing_type": "AUTOMATED"
-    }
-    ```
+              }
+            }
+          },
+          "assignments_issuing_type": "AUTOMATED"
+        }
+        ```
 
 {% endlist %}
 
@@ -162,10 +165,10 @@
 
 ```json
 {
-   "id": "12345",
-   "public_name": "Cat or dog",
-   "public_description": "What kind of animal is on the picture?",
-   ...
+  "id": "12345",
+  "public_name": "Cat or dog",
+  "public_description": "What kind of animal is on the picture?",
+  ...
 }
 ```
 
@@ -174,8 +177,6 @@
 `id` потребуется для создания пулов в проекте — укажите его в запросе на добавление пула.
 
 {% endnote %}
-
-
 
 ## Добавьте пул {#pool}
 
@@ -192,88 +193,86 @@
 
 - cURL
 
-  {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
+    {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
-
-  ```bash
-  curl -X POST \
-     -H 'Authorization: OAuth <OAuth token>' \
-     -H 'Content-Type: application/JSON' \
-     -d '{
-         "project_id": "<project id>",
-         "private_name": "Cat pool 1",
-         "may_contain_adult_content": true,
-         "will_expire": "<close date>",
-         "reward_per_assignment": 0.02,
-         "assignment_max_duration_seconds": 60,
-         "filter": {
-            "and": [
-              {
-                "or": [
-                  {
-                    "category": "profile",
-                    "key": "languages",
-                    "operator": "IN",
-                    "value": "RU"
-                  }
-                ]
-              }
-            ]
-         },
-         "quality_control": {
-            "captcha_frequency": "LOW",
-            "configs": [
-               {
-                  "collector_config": {
-                     "type": "CAPTCHA",
-                     "parameters": {
-                        "history_size": 10
-                     }
-                  },
-                  "rules": [
-                     {
-                        "conditions": [
+    ```bash
+    curl -X POST \
+         -H 'Authorization: OAuth <OAuth token>' \
+         -H 'Content-Type: application/JSON' \
+         -d '{
+               "project_id": "<project id>",
+               "private_name": "Cat pool 1",
+               "may_contain_adult_content": true,
+               "will_expire": "<close date>",
+               "reward_per_assignment": 0.02,
+               "assignment_max_duration_seconds": 60,
+               "filter": {
+                 "and": [
+                   {
+                     "or": [
+                       {
+                         "category": "profile",
+                         "key": "languages",
+                         "operator": "IN",
+                         "value": "RU"
+                       }
+                     ]
+                   }
+                 ]
+               },
+               "quality_control": {
+                 "captcha_frequency": "LOW",
+                 "configs": [
+                   {
+                     "collector_config": {
+                       "type": "CAPTCHA",
+                       "parameters": {
+                         "history_size": 10
+                       }
+                     },
+                     "rules": [
+                       {
+                         "conditions": [
                            {
-                              "key": "stored_results_count",
-                              "operator": "EQ",
-                              "value": 10
+                             "key": "stored_results_count",
+                             "operator": "EQ",
+                             "value": 10
                            },
                            {
-                              "key": "success_rate",
-                              "operator": "LTE",
-                              "value": 70.0
+                             "key": "success_rate",
+                             "operator": "LTE",
+                             "value": 70.0
                            }
-                        ],
-                        "action": {
+                         ],
+                         "action": {
                            "type": "RESTRICTION_V2",
                            "parameters": {
-                              "scope": "PROJECT",
-                              "duration_unit": "DAYS",
-                              "duration": 3,
-                              "private_comment": "Incorrect captcha input"
+                             "scope": "PROJECT",
+                             "duration_unit": "DAYS",
+                             "duration": 3,
+                             "private_comment": "Incorrect captcha input"
                            }
-                        }
-                     }
-                  ]
+                         }
+                       }
+                     ]
+                   }
+                 ]
+               },
+               "mixer_config": {
+                 "real_tasks_count": 3,
+                 "golden_tasks_count": 0,
+                 "training_tasks_count": 0
+               },
+               "defaults": {
+                 "default_overlap_for_new_task_suites": 3
                }
-            ]
-         },
-         "mixer_config": {
-            "real_tasks_count": 3,
-            "golden_tasks_count": 0,
-            "training_tasks_count": 0
-         },
-         "defaults": {
-            "default_overlap_for_new_task_suites": 3
-         }
-      }' \
-  https://sandbox.toloka.yandex.com/api/v1/pools
-  ```
+             }' \
+    https://sandbox.toloka.yandex.com/api/v1/pools
+    ```
 
 - Postman
 
-  {% include [project-postman-fields](../_includes/concepts/qs-placement/id-project/postman-fields.md) %}
-
+    {% include [project-postman-fields](../_includes/concepts/qs-placement/id-project/postman-fields.md) %}
 
   1. Request URL
 
@@ -290,76 +289,77 @@
 
   1. Body
 
-    ```json
-    {
-     "project_id": "<project id>",
-       "private_name": "Cat pool 1",
-       "may_contain_adult_content": true,
-       "will_expire": "<close date>",
-       "reward_per_assignment": 0.02,
-       "assignment_max_duration_seconds": 60,
-       "filter": {
-          "and": [
-            {
-              "or": [
-                {
-                  "category": "profile",
-                  "key": "languages",
-                  "operator": "IN",
-                  "value": "RU"
-                }
-              ]
-            }
-          ]
-       },
-       "quality_control": {
-          "captcha_frequency": "LOW",
-          "configs": [
-             {
+        ```json
+        {
+          "project_id": "<project id>",
+          "private_name": "Cat pool 1",
+          "may_contain_adult_content": true,
+          "will_expire": "<close date>",
+          "reward_per_assignment": 0.02,
+          "assignment_max_duration_seconds": 60,
+          "filter": {
+            "and": [
+              {
+                "or": [
+                  {
+                    "category": "profile",
+                    "key": "languages",
+                    "operator": "IN",
+                    "value": "RU"
+                  }
+                ]
+              }
+            ]
+          },
+          "quality_control": {
+            "captcha_frequency": "LOW",
+            "configs": [
+              {
                 "collector_config": {
-                   "type": "CAPTCHA",
-                   "parameters": {
-                      "history_size": 10
-                   }
+                  "type": "CAPTCHA",
+                  "parameters": {
+                    "history_size": 10
+                  }
                 },
                 "rules": [
-                   {
-                      "conditions": [
-                         {
-                            "key": "stored_results_count",
-                            "operator": "EQ",
-                            "value": 10
-                         },
-                         {
-                            "key": "success_rate",
-                            "operator": "LTE",
-                            "value": 70.0
-                         }
-                      ],
-                      "action": {
-                         "type": "RESTRICTION_V2",
-                         "parameters": {
-                            "scope": "PROJECT",
-                            "duration_unit": "DAYS",
-                            "duration": 3,
-                            "private_comment": "Incorrect captcha input"
-                         }
+                  {
+                    "conditions": [
+                      {
+                        "key": "stored_results_count",
+                        "operator": "EQ",
+                        "value": 10
+                      },
+                      {
+                        "key": "success_rate",
+                        "operator": "LTE",
+                        "value": 70
                       }
-                   }
+                    ],
+                    "action": {
+                      "type": "RESTRICTION_V2",
+                      "parameters": {
+                        "scope": "PROJECT",
+                        "duration_unit": "DAYS",
+                        "duration": 3,
+                        "private_comment": "Incorrect captcha input"
+                      }
+                    }
+                  }
                 ]
-             }
-          ]
-       },
-       "mixer_config": {
-          "real_tasks_count": 3,
-          "golden_tasks_count": 0,
-          "training_tasks_count": 0
-       },
-       "defaults": {
-          "default_overlap_for_new_task_suites": 3
-       }
-    }
-    ```
+              }
+            ]
+          },
+          "mixer_config": {
+            "real_tasks_count": 3,
+            "golden_tasks_count": 0,
+            "training_tasks_count": 0
+          },
+          "defaults": {
+            "default_overlap_for_new_task_suites": 3
+          }
+        }
+        ```
+
 {% endlist %}
 
 В примере приведены основные параметры, которые необходимы для создания простейшего пула. Более подробное описание всех параметров запроса содержится в разделе [Создать пул](create-pool.md).
@@ -370,10 +370,10 @@
 
 ```json
 {
-   "id": "9876543",
-   "project_id": "12345",
-      "private_name": "Cat pool 1",
-      ...
+  "id": "9876543",
+  "project_id": "12345",
+    "private_name": "Cat pool 1",
+    ...
 }
 ```
 
@@ -382,8 +382,6 @@
 `id` потребуется для добавления заданий в пул — укажите его в запросе на загрузку заданий.
 
 {% endnote %}
-
-
 
 ## Загрузите задания {#task}
 
@@ -403,40 +401,39 @@
   {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
 
-  ```bash
-  curl -X POST \
-     -H 'Authorization: OAuth <OAuth token>' \
-     -H 'Content-Type: application/JSON' \
-     -d '[
-           {
-             "input_values": {
-                 "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
-             },
-             "pool_id": "<pool id>",
-             "overlap": 2
-           },
-           {
-             "input_values": {
-                 "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
-             },
-             "pool_id": "<pool id>",
-             "overlap": 2
-           },
-           {
-             "input_values": {
-                 "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
-             },
-             "pool_id": "<pool id>",
-             "overlap": 2
-           }
-         ]' \
-  https://sandbox.toloka.yandex.com/api/v1/tasks
-  ```
+    ```bash
+    curl -X POST \
+         -H 'Authorization: OAuth <OAuth token>' \
+         -H 'Content-Type: application/JSON' \
+         -d '[
+               {
+                 "input_values": {
+                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+                 },
+                 "pool_id": "<pool id>",
+                 "overlap": 2
+               },
+               {
+                 "input_values": {
+                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+                 },
+                 "pool_id": "<pool id>",
+                 "overlap": 2
+               },
+               {
+                 "input_values": {
+                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+                 },
+                 "pool_id": "<pool id>",
+                 "overlap": 2
+               }
+             ]' \
+    https://sandbox.toloka.yandex.com/api/v1/tasks
+    ```
 
 - Postman
 
   {% include [project-postman-fields](../_includes/concepts/qs-placement/id-project/postman-fields.md) %}
-
 
   1. Request URL
 
@@ -453,35 +450,35 @@
 
   1. Body
 
-    ```json
-    [
-       {
-          "input_values": {
-             "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+        ```json
+        [
+          {
+            "input_values": {
+              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+            },
+            "pool_id": "<pool id>",
+            "overlap": 2
           },
-          "pool_id": "<pool id>",
-          "overlap": 2
-       },
-       {
-          "input_values": {
-             "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+          {
+            "input_values": {
+              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+            },
+            "pool_id": "<pool id>",
+            "overlap": 2
           },
-          "pool_id": "<pool id>",
-          "overlap": 2
-       },
-       {
-          "input_values": {
-             "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
-          },
-          "pool_id": "<pool id>",
-          "overlap": 2
-       }
-    ]
-    ```
+          {
+            "input_values": {
+              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+            },
+            "pool_id": "<pool id>",
+            "overlap": 2
+          }
+        ]
+        ```
+
 {% endlist %}
 
 В примере приведены основные параметры, которые необходимы для загрузки простейших заданий. Более подробное описание всех параметров заданий приведено в разделе [Создать одно или несколько заданий](create-task.md).
-
 
 ## Запустите пул {#pool-run}
 
@@ -499,31 +496,30 @@
 
   {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
-
-  ```bash
-  curl -X POST \
-     -H 'Authorization: OAuth <OAuth token>' \
-     -H 'Content-Type: application/JSON' \
-  https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
-  ```
+    ```bash
+    curl -X POST \
+      -H 'Authorization: OAuth <OAuth token>' \
+      -H 'Content-Type: application/JSON' \
+    https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+    ```
 
 - Postman
 
   {% include [project-postman-fields](../_includes/concepts/qs-placement/id-project/postman-fields.md) %}
 
-
   1. Request URL
 
-    ```bash
-    https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
-    ```
+        ```bash
+        https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+        ```
 
   1. Headers
 
-    ```bash
-    Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
-    ```
+        ```bash
+        Authorization: OAuth <OAuth token>
+        Content-Type: application/JSON
+        ```
+
 {% endlist %}
 
 ## Проверьте задания {#check}
@@ -531,14 +527,12 @@
 После запуска пула убедитесь, что все настройки и отображение заданий
  корректны. Для этого [зайдите в Толоку под логином исполнителя]({{ toloka-web-register }) и откройте карточку с созданными заданиями.
 
-
 ## Что дальше {#what-next}
 
 Почитайте [инструкцию по получению результатов](qs-results.md).
 
-
 ## Узнайте больше {#links-qs-placement}
 
-- [HTTP-методы для работы с проектами](project.md).
-- [HTTP-методы для работы с пулами](pool.md).
-- [HTTP-методы для загрузки заданий](tasks.md).
+- [HTTP-методы для работы с проектами](project.md)
+- [HTTP-методы для работы с пулами](pool.md)
+- [HTTP-методы для загрузки заданий](tasks.md)

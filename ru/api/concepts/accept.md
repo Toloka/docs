@@ -8,7 +8,6 @@
 
 - Изменить решение об отклонении: измените статус `REJECTED` на `ACCEPTED`.
 
-
 Чтобы отклоненные задания отправлялись на повторное выполнение другим исполнителям, добавьте в пул блок контроля качества (см. [Повторное выполнение заданий](restore-task-overlap.md)).
 
 ## Запрос {#request}
@@ -17,21 +16,21 @@
 
 - Боевая версия
 
-  ```bash
-  PATCH https://toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PATCH https://toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  PATCH https://sandbox.toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
-{% endlist %}
+    ```bash
+    PATCH https://sandbox.toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
+{% endlist %}
 
 ## Path-параметры {#path-params}
 
@@ -39,11 +38,9 @@
 ----- | -----
 **task_suite_assignment_id** | Идентификатор выдачи страницы заданий.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -59,6 +56,7 @@
 ||**status** | **string**
 
 Статус выданной страницы заданий. Можно перечислить несколько статусов через запятую:
+
 - `ACTIVE` — выполняется исполнителем;
 - `SUBMITTED` — выполнена, но не проверена;
 - `ACCEPTED` — принята заказчиком;
@@ -70,7 +68,6 @@
 Комментарий исполнителю.
 Максимальная длина: 2048 символов.||
 |#
-
 
 ## Ответ {#response}
 
@@ -89,6 +86,7 @@
 ||**status** | **string**
 
 Статус выданной страницы заданий. Можно перечислить несколько статусов через запятую:
+
 - `ACTIVE` — выполняется исполнителем;
 - `SUBMITTED` — выполнена, но не проверена;
 - `ACCEPTED` — принята заказчиком;

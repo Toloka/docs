@@ -6,8 +6,8 @@
 
 ```js
 $.ajax({
-      url: '/api/new/requester/proxy/proxy',
-      method: 'GET'
+    url: '/api/new/requester/proxy/proxy',
+    method: 'GET'
 });
 ```
 

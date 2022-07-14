@@ -8,23 +8,23 @@
 
 - Боевая версия
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/skills/<skill id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/skills/<skill id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<skill parameters, including updated ones>}
-  ```
+    {<skill parameters, including updated ones>}
+    ```
 
 - Песочница
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/skills/<skill id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/skills/<skill id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<skill parameters, including updated ones>}
-  ```
+    {<skill parameters, including updated ones>}
+    ```
 
 {% endlist %}
 
@@ -34,11 +34,9 @@
 ----- | -----
 **skill_id** | Идентификатор навыка.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 

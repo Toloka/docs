@@ -8,25 +8,25 @@
 
 - Боевая версия
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/webhook-subscriptions
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/webhook-subscriptions
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -72,7 +72,6 @@ URL, на который будут приходить уведомления.||
 Секретный ключ, который позволяет проверить, что входящие запросы были отправлены с помощью API Toloka. Подробнее см. в разделе [Аутентификация событий](authentication.md).||
 |#
 
-
 ## Ответ {#response}
 
 Содержит информацию о созданных подписках в формате JSON. Каждой подписке присваивается уникальный идентификатор (`id`) и дата создания (`created`).
@@ -95,23 +94,23 @@ URL, на который будут приходить уведомления.||
 
 ```json
 {
-   "items": [
-      "0": {
-         "webhook_url": "https://awesome-requester.com/toloka-webhook",
-         "event_type": "ASSIGNMENT_CREATED",
-         "pool_id": "121212",
-         "id": "webhook-subscription-1",
-         "created": "2020-02-03T15:00:00"
-      },
-      "1": {
-         "webhook_url": "https://awesome-requester.com/toloka-webhook",
-         "event_type": "POOL_CLOSED",
-         "pool_id": "121212",
-         "id": "webhook-subscription-2",
-         "created": "2020-02-03T15:00:00"
-      }
-   ],
-   "validation_errors": {}
+  "items": [
+    "0": {
+      "webhook_url": "https://awesome-requester.com/toloka-webhook",
+      "event_type": "ASSIGNMENT_CREATED",
+      "pool_id": "121212",
+      "id": "webhook-subscription-1",
+      "created": "2020-02-03T15:00:00"
+    },
+    "1": {
+      "webhook_url": "https://awesome-requester.com/toloka-webhook",
+      "event_type": "POOL_CLOSED",
+      "pool_id": "121212",
+      "id": "webhook-subscription-2",
+      "created": "2020-02-03T15:00:00"
+    }
+  ],
+  "validation_errors": {}
 }
 ```
 
@@ -129,7 +128,9 @@ URL, на который будут приходить уведомления.||
 ||**event_type** | **string**
 
 Тип события.
+
 Возможные значения:
+
 - `POOL_CLOSED` — пул закрыт.
 - `DYNAMIC_OVERLAP_COMPLETED` — появилась агрегированная оценка по динамическому перекрытию.
 - `ASSIGNMENT_CREATED` — задание создано.

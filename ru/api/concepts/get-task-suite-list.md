@@ -8,17 +8,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/task-suites
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/task-suites
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/task-suites
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/task-suites
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -26,25 +26,26 @@
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 #|
 ||**Параметр**| **Описание**||
 ||**pool_id** | **string**
 
 Идентификатор пула, из которого нужно получить страницы заданий.
+
 Обязательно указать `task_id`, либо`pool_id`.||
 ||**task_id** | **string**
 
 Идентификатор задания на страницах, сформированных автоматически (с помощью «умного смешивания»). Вы получите страницы заданий, на которых есть указанное задание.
+
 Обязательно указать `task_id`, либо`pool_id`.||
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор страницы заданий;
 - `created` — дата создания страницы заданий по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
@@ -81,17 +82,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -101,17 +102,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

@@ -8,17 +8,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -27,11 +28,9 @@
 ----- | -----
 **subscription_id** | Идентификатор подписки.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -40,14 +39,13 @@
 ```json
 [
   {
-     "webhook_url": "https://awesome-requester.com/toloka-webhook",
-     "event_type": "ASSIGNMENT_CREATED",
-     "pool_id": "121212",
-     "id": "webhook-subscription-1",
-     "created": "2020-02-03T15:00:00"
+    "webhook_url": "https://awesome-requester.com/toloka-webhook",
+    "event_type": "ASSIGNMENT_CREATED",
+    "pool_id": "121212",
+    "id": "webhook-subscription-1",
+    "created": "2020-02-03T15:00:00"
   }
 ]
-
 ```
 
 #|
@@ -58,7 +56,9 @@ URL, на который будут приходить уведомления.||
 ||**event_type** | **string**
 
 Тип события.
+
 Возможные значения:
+
 - `POOL_CLOSED` — пул закрыт.
 - `DYNAMIC_OVERLAP_COMPLETED` — появилась агрегированная оценка по динамическому перекрытию.
 - `ASSIGNMENT_CREATED` — задание создано.

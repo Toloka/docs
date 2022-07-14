@@ -8,17 +8,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -27,22 +28,20 @@
 ----- | -----
 **operation_id** | Идентификатор операции.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 #|
 ||**Параметр**| **Описание**||
 ||**sort** | **string**
 
 Параметры для сортировки по возрастанию:
+
 - `task_id` — идентификатор задания.
 
 Чтобы изменить направление сортировки (сортировать по убыванию), добавьте знак дефиса перед параметром: `sort=-task_id`.||
@@ -51,8 +50,7 @@
 - **task_id_gt** (**string** — задания с идентификатором больше указанного значения)
 - **task_id_gte** (**string** — задания с идентификатором, больше или равным указанному значению)
 - **task_id_lt** (**string** — задания с идентификатором меньше указанного значения)
-- **task_id_lte** (**string** — задания с идентификатором, меньше или равным указанному значению)
-||
+- **task_id_lte** (**string** — задания с идентификатором, меньше или равным указанному значению)||
 |#
 
 ## Пример запроса {#request-example}
@@ -68,17 +66,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Показывать остальные части с сортировкой по возрастанию идентификатора**
@@ -87,17 +86,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

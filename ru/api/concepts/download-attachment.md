@@ -8,18 +8,18 @@
 
 - Боевая версия
 
-  ```no-highlight
-  GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
-  Authorization: OAuth <OAuth token>
-  ```
+    ```no-highlight
+    GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```no-highlight
-  GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
-  Authorization: OAuth <OAuth token>
-  ```
-  
+    ```no-highlight
+    GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -28,13 +28,10 @@
 ----- | -----
 **file_id** | Идентификатор файла.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Ответ {#response}
 
 Файл сохраняется на ваш компьютер.
-

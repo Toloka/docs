@@ -8,28 +8,27 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/message-threads
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/message-threads
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/message-threads
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/message-threads
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 #|
 ||**Параметр**|**Описание**||
@@ -37,10 +36,12 @@
 
 {% include [messages-folder-list](../_includes/concepts/message-send/id-messages/folder-list.md) %}||
 ||**folder_ne** | **string**
+
 Папки, в которых не искать цепочку. Можно указать несколько значений через запятую.||
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор страницы заданий;
 - `created` — дата создания страницы заданий по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 

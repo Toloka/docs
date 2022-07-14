@@ -8,17 +8,18 @@
 
 - Боевая версия
 
-  ```bash
-  DELETE https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    DELETE https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  DELETE https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    DELETE https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -27,11 +28,9 @@
 ----- | -----
 **subscription_id** | Идентификатор подписки.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 

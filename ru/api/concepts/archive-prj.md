@@ -10,17 +10,18 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -29,11 +30,9 @@
 ----- | -----
 **project_id** | Идентификатор проекта.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -53,6 +52,7 @@
   }
 }
 ```
+
 #|
 ||Параметр | Описание||
 ||**id** | **string**
@@ -61,10 +61,12 @@
 ||**type** | **string**
 
 Тип операции:
+
 - `PROJECT.ARCHIVE` — отправка проекта в архив;||
 ||**status** | **string**
 
 Статус операции:
+
 - `PENDING` — выполнение не началось;
 - `RUNNING` — выполняется;
 - `SUCCESS` — успешно выполнена;

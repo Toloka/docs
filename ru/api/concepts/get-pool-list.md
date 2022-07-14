@@ -8,23 +8,23 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/pools
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/pools
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/pools
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/pools
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Query-параметры {#query-params}
 
@@ -35,15 +35,18 @@
 ||**status** | **string**
 
 Статус пула:
+
 - `OPEN` — открыт;
 - `CLOSED` — закрыт;
 - `LOCKED` — заблокирован: невозможны никакие действия;
 - `ARCHIVED` — архивный.||
 ||**project_id** | **string**
+
 Идентификатор проекта, к которому относится пул.||
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор пула;
 - `created` — дата создания пула по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`;
 - `last_started` — дата последнего запуска пула в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
@@ -62,10 +65,8 @@
 - **last_started_gt** (**string** - объекты, которые были в последний раз открыты после указанной даты)
 - **last_started_gte** (**string** - объекты, которые были в последний раз открыты после указанной даты включительно)
 - **last_started_lt** (**string** - объекты, которые были в последний раз открыты до указанной даты)
-- **last_started_lte** (**string** - объекты, которые были в последний раз открыты раньше указанной даты включительно)
-||
+- **last_started_lte** (**string** - объекты, которые были в последний раз открыты раньше указанной даты включительно)||
 |#
-
 
 ## Пример запроса {#request-example}
 
@@ -80,17 +81,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Показывать остальные части с сортировкой по возрастанию идентификатора**
@@ -99,17 +101,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Ответ {#response}

@@ -8,28 +8,27 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 #|
 ||**Параметр**| **Описание**||
@@ -45,6 +44,7 @@
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор бонуса;
 - `created` — дата выдачи бонуса по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
@@ -61,9 +61,10 @@
 - **created_lte** (**string** — объекты, выданные или созданные до указанной даты включительно)||
 |#
 
-
 ## Пример запроса {#request-example}
- Можно настроить показ списка бонусов частями (например, по 10 бонусов):
+
+Можно настроить показ списка бонусов частями (например, по 10 бонусов):
+
 1. Показать первые 10 бонусов, начиная с бонуса с наименьшим идентификатором.
 1. Показывать оставшиеся бонусы по 10 штук в порядке возрастания.
 
@@ -73,17 +74,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Показывать остальные части с сортировкой по возрастанию идентификатора**
@@ -92,17 +94,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Ответ {#response}

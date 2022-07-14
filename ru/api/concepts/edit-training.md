@@ -8,30 +8,30 @@
 
 {% endnote %}
 
-
 ## Запрос {#request}
 
 {% list tabs %}
 
 - Боевая версия
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/trainings/<training_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/trainings/<training_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<training parameters, including updated ones>}
-  ```
+    {<training parameters, including updated ones>}
+    ```
 
 - Песочница
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
 
-  {<training parameters, including updated ones>}
-  ```
+    {<training parameters, including updated ones>}
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -40,11 +40,9 @@
 ----- | -----
 **training_id** | Идентификатор пула.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 

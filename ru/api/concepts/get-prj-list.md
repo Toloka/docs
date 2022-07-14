@@ -8,23 +8,23 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/projects
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/projects
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/projects
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/projects
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Query-параметры {#query-params}
 
@@ -35,11 +35,13 @@
 ||**status** | **string**
 
 Статус проекта:
+
 - `ACTIVE` — активный;
 - `ARCHIVED` — архивный.||
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор проекта;
 - `created` — дата создания проекта по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`;
 - `public_name` — название проекта;
@@ -74,17 +76,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 **Показывать остальные части с сортировкой по возрастанию идентификатора**
@@ -93,17 +96,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<ID of the last project from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<ID of the last project from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<id of the last project from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<id of the last project from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Ответ {#response}

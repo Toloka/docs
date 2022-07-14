@@ -5,9 +5,8 @@
 Вы можете ограничить сумму вознаграждения на каждого исполнителя в пуле: при достижении установленной суммы исполнитель потеряет доступ к заданиям. Ограничение позволяет:
 
 - получить ответы как можно большего числа работников (в этом случае устанавливается низкий порог, например, равный стоимости одной страницы заданий);
-    
+
 - обеспечить защиту от роботов (в этом случае порог должен быть выше, например, 10% от стоимости всего пула).
-    
 
 Задайте значения ключей в массиве `quality_control.configs` в настройках пула.
 
@@ -21,91 +20,92 @@
 
 ```json
 {
-   "configs": [
-      {
-         "collector_config": {
-            "type": "INCOME"
-            },
-         "rules": [
+  "configs": [
+    {
+      "collector_config": {
+        "type": "INCOME"
+      },
+      "rules": [
+        {
+          "conditions": [
             {
-               "conditions": [
-                  {
-                     "key": "income_sum_for_last_24_hours",
-                     "operator": "GTE",
-                     "value": 20.0
-                  }
-               ],
-               "action": {
-                  "type": "RESTRICTION_V2",
-                  "parameters": {
-                     "scope": "ALL_PROJECTS",
-                     "duration_unit": "DAYS",
-                     "duration": 10,
-                     "private_comment": "Too many tasks have been completed"
-                  }
-               }
+              "key": "income_sum_for_last_24_hours",
+              "operator": "GTE",
+              "value": 20
             }
-         ]
-      }
-   ]
+          ],
+          "action": {
+            "type": "RESTRICTION_V2",
+            "parameters": {
+              "scope": "ALL_PROJECTS",
+              "duration_unit": "DAYS",
+              "duration": 10,
+              "private_comment": "Too many tasks have been completed"
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
 Чтобы задать другой период блокировки, измените значение соответствующего [параметра](goldenset.md#configs-rules-action-parameters-duration) ключа `action`:
 
 {% list tabs %}
+
 - на 12 часов
 
-  ```json
-  {
-     ...
-                 "action": {
-                    "type": "RESTRICTION_V2",
-                    "parameters": {
-                       "scope": "ALL_PROJECTS",
-                       "duration_unit": "HOURS",
-                       "duration": 12,
-                       "private_comment": "Too many tasks have been completed"
-                    }
-                 }
-     ...
-  }
-  ```
+    ```json
+    {
+      ...
+        "action": {
+          "type": "RESTRICTION_V2",
+          "parameters": {
+            "scope": "ALL_PROJECTS",
+            "duration_unit": "HOURS",
+            "duration": 12,
+            "private_comment": "Too many tasks have been completed"
+          }
+        }
+      ...
+    }
+    ```
 
 - на 30 минут
 
-  ```json
-  {
-     ...
-                 "action": {
-                    "type": "RESTRICTION_V2",
-                    "parameters": {
-                       "scope": "ALL_PROJECTS",
-                       "duration_unit": "MINUTES",
-                       "duration": 30,
-                       "private_comment": "Too many tasks have been completed"
-                    }
-                 }
-     ...
-  }
-  ```
+    ```json
+    {
+      ...
+        "action": {
+          "type": "RESTRICTION_V2",
+          "parameters": {
+            "scope": "ALL_PROJECTS",
+            "duration_unit": "MINUTES",
+            "duration": 30,
+            "private_comment": "Too many tasks have been completed"
+          }
+        }
+      ...
+    }
+    ```
 
 - навсегда
 
-  ```json
-  {
-     ...
-                 "action": {
-                    "type": "RESTRICTION_V2",
-                    "parameters": {
-                       "scope": "ALL_PROJECTS",
-                       "duration_unit": "PERMANENT",
-                       "private_comment": "Too many tasks have been completed"
-                    }
-                 }
-     ...
-  }
-  ```
+    ```json
+    {
+      ...
+        "action": {
+          "type": "RESTRICTION_V2",
+          "parameters": {
+            "scope": "ALL_PROJECTS",
+            "duration_unit": "PERMANENT",
+            "private_comment": "Too many tasks have been completed"
+          }
+        }
+      ...
+    }
+    ```
 
 {% endlist %}
 
@@ -120,6 +120,7 @@
 ||**configs.collector_config.type** | **string \| обязательный**
 
 Критерий, на котором основан блок качества:
+
 - `GOLDEN_SET` — количество правильных и неправильных ответов в контрольных заданиях.
 - `MAJORITY_VOTE` — доля ответов, которые совпали с мнением большинства.
 - `CAPTCHA` — количество успешно и неуспешно введенных капч.
@@ -140,6 +141,7 @@
 ||**configs.rules.conditions. operator** | **string \| обязательный**
 
 Оператор сравнения (данные `key` сравниваются с пороговым значением из `value`):
+
 - `EQ` («Equal») — равно.
 - `NE` («Not equal to») — не равно.
 - `GT` («Greater than») — больше чем.
@@ -155,40 +157,53 @@
 ||**configs.rules.action.type** | **string \| обязательный**
 
 Тип действия:
+
 - `RESTRICTION_V2` — заблокировать доступ к проектам или пулам.
 - `SET_SKILL_FROM_OUTPUT_FIELD` — присвоить навыку значение «доля правильных ответов» (используется в блоках [Контрольный набор](goldenset.md) и [Мнение большинства](mv.md)).
+
     Значение навыка можно использовать для отбора исполнителей.
+
 - `CHANGE_OVERLAP` — изменить перекрытие. Например, чтобы повторно отправить страницу заданий на выполнение другим исполнителям или отменить повторное выполнение уже принятых заданий.
 - `REJECT_ALL_ASSIGNMENTS` — отклонить все ответы исполнителя. Например, спустя несколько ответов исполнителя стало понятно, что он некачественно выполняет задания.
 - `APPROVE_ALL_ASSIGNMENTS` — принять все ответы исполнителя. Например, если исполнитель выполняет большинство заданий качественно и вас устраивает такой результат.
 - `SET_SKILL` — присвоить навыку указанное константное значение.||
 ||**configs.rules.action. parameters** | **object \| обязательный**
+
 Параметры действия.||
 ||**configs.rules.action. parameters.scope** | **string \| обязательный**
+
 Уровень ограничения:
+
 - `POOL` — пул. Не влияет на рейтинг исполнителя.
 - `PROJECT` — проект. Влияет на рейтинг исполнителя.
 - `ALL_PROJECTS` — все проекты заказчика.||
 ||**configs.collector_config. parameters** | **object \| обязательный при условии**
 
 Обязательный, если `configs.collector_config.type=``GOLDEN_SET`, `MAJORITY_VOTE`, `CAPTCHA`, `ASSIGNMENT_SUBMIT_TIME`.
+
 Параметры для сбора данных (зависят от блока контроля качества, указанного в ключе `type`).||
 ||**configs.rules.action. parameters.skill_id** | **string \| обязательный при условии**
 
 Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
+
 Идентификатор навыка, который необходимо обновлять по мере выполнения заданий.||
 ||**configs.rules.action. parameters.from_field** | **string \| обязательный при условии**
 
 Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
+
 Значение, которое нужно присвоить навыку:
+
 - `correct_answers_rate` — доля правильных ответов;
 - `wrong_answers_rate` — доля неправильных ответов.||
 ||**configs.rules.action. parameters.skill_value** | **integer \| обязательный при условии**
 
 Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
+
 Фиксированное значение, которое нужно присвоить навыку (число от 0 до 100).||
 ||**configs.rules.action. parameters.delta** | **integer \| обязательный при условии**
+
 Обязателен, если `type=CHANGE_OVERLAP`.
+
 Значение определяет, на сколько изменить перекрытие.||
 ||**configs.rules.action. parameters.public_comment** | **string \| обязательный при условии**
 
@@ -196,11 +211,13 @@
 ||**configs.rules.action. parameters.open_pool** | **boolean**
 
 Определяет, нужно ли открыть закрытый пул:
+
 - `true` — открыть пул после изменения, если он закрыт.
 - `false` — не открывать пул после изменения, если он закрыт.||
 ||**configs.rules.action. parameters.duration_unit** | **string**
 
 Единица измерения длительности блокировки:
+
 - `MINUTES` — минуты;
 - `HOURS` — часы;
 - `DAYS` — дни;
@@ -212,5 +229,3 @@
 
 Комментарий (причина блокировки). Доступен только заказчику.||
 |#
-
-

@@ -8,25 +8,25 @@
 
 - Боевая версия
 
-  ```bash
-  PUT https://toloka.yandex.com/api/v1/user-restrictions
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://toloka.yandex.com/api/v1/user-restrictions
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  PUT https://sandbox.toloka.yandex.com/api/v1/user-restrictions
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    PUT https://sandbox.toloka.yandex.com/api/v1/user-restrictions
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -40,12 +40,12 @@
 }
 ```
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**scope** | **string \| обязательный**
 
 Область блокировки:
+
 - `ALL_PROJECTS` — все проекты заказчика;
 - `PROJECT` — проект (указывается `project_id`);
 - `POOL` — пул (указывается `pool_id`).||
@@ -55,10 +55,12 @@
 ||**project_id** | **string \| обязательный при условии**
 
 Обязателен, если `scope=PROJECT`.
+
 Идентификатор проекта, к которому заблокирован доступ.||
 ||**pool_id** | **string \| обязательный при условии**
 
 Обязателен, если `scope=POOL`.
+
 Идентификатор пула, к которому заблокирован доступ.||
 ||**private_comment** | **string**
 
@@ -69,7 +71,6 @@
 
 Дата и время по UTC, когда доступ будет восстановлен. Формат даты ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 |#
-
 
 ## Ответ {#response}
 
@@ -87,12 +88,12 @@
 }
 ```
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**scope** | **string**
 
 Область блокировки:
+
 - `ALL_PROJECTS` — все проекты заказчика;
 - `PROJECT` — проект (указывается `project_id`);
 - `POOL` — пул (указывается `pool_id`).||
@@ -102,14 +103,17 @@
 ||**project_id** | **string**
 
 Указывается, если `scope=PROJECT`.
+
 Идентификатор проекта, к которому заблокирован доступ.||
 ||**pool_id** | **string**
 
 Указывается, если `scope=POOL`.
+
 Идентификатор пула, к которому заблокирован доступ.||
 ||**private_comment** | **string**
 
 Комментарий с причиной ограничения доступа.
+
 Максимальная длина: 499 символов.||
 ||**will_expire** | **string**
 

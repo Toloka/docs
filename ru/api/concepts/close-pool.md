@@ -12,17 +12,18 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -31,11 +32,9 @@
 ----- | -----
 **pool_id** | Идентификатор пула.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -44,7 +43,6 @@
 Если текущий статус пула совпадает с запрашиваемым, возвращается пустой ответ со статусом 204.
 
 {% endnote %}
-
 
 ```json
 {
@@ -60,6 +58,7 @@
   }
 }
 ```
+
 #|
 ||**Параметр** | **Описание**||
 ||**id** | **string**
@@ -71,6 +70,7 @@
 ||**status** | **string**
 
 Статус операции:
+
 - `PENDING` — выполнение не началось;
 - `RUNNING` — выполняется;
 - `SUCCESS` — успешно выполнена;
@@ -82,8 +82,10 @@
 
 Дата и время начала операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 ||**finished** | **string**
+
 Дата и время окончания операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.||
 ||**progress** | **integer**
+
 Ход выполнения операции в процентах.||
 ||**parameters.pool_id** | **string**
 Идентификатор пула.||

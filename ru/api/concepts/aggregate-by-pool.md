@@ -8,25 +8,25 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -46,15 +46,18 @@
 #|
 ||**Параметр**| **Описание**||
 ||**pool_id** | **string**
+
 Идентификатор пула.||
 ||**type** | **string**
 
 Способ агрегации результатов:
+
 - `WEIGHTED_DYNAMIC_OVERLAP` — агрегация ответов в пуле на основе навыка исполнителя.
 - `DAWID_SKENE` — агрегация ответов в пуле без динамического перекрытия. Ключ `answer_weight_skill_id` для этого типа агрегации игнорируется.||
 ||**answer_weight_skill_id** | **string**
 
 Навык, который определяет вес ответа исполнителя.
+
 Обязателен, если выбран тип агрегации `WEIGHTED_DYNAMIC_OVERLAP`.||
 ||**fields** | **object**
 
@@ -91,6 +94,7 @@
 ||**type** | **string**
 
 Тип операции:
+
 - `POOL.OPEN` — открытие пула.
 - `POOL.CLOSE` — закрытие пула.
 - `PROJECT.ARCHIVE` — отправка проекта в архив.
@@ -100,6 +104,7 @@
 ||**status** | **string**
 
 Статус операции:
+
 - `PENDING` — выполнение не началось;
 - `RUNNING` — выполняется;
 - `SUCCESS` — успешно выполнена;

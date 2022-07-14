@@ -8,17 +8,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/operations
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/operations
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/operations
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/operations
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -26,11 +26,9 @@
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 
 #|
@@ -38,6 +36,7 @@
 ||**type** | **string**
 
 Тип операции:
+
 - `POOL.OPEN` — открытие пула;
 - `POOL.CLOSE` — закрытие пула;
 - `PROJECT.ARCHIVE` — отправка проекта в архив;
@@ -47,6 +46,7 @@
 ||**status** | **string**
 
 Статус операции:
+
 - `PENDING` — выполнение не началось;
 - `RUNNING` — выполняется;
 - `SUCCESS` — успешно выполнена;
@@ -54,6 +54,7 @@
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор операции;
 - `submitted` — дата и время отправки запроса по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`;
 - `finished` — дата и время завершения операции по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
@@ -74,7 +75,6 @@
 - **finished_lt** (**string** — объекты, завершенные до указанной даты)
 - **finished_lte** (**string** — объекты, завершенные до указанной даты включительно)||
 |#
-
 
 ## Ответ {#response}
 

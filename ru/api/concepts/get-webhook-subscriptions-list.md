@@ -8,17 +8,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/webhook-subscriptions
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/webhook-subscriptions
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -26,18 +26,18 @@
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
 
 #|
 ||**Параметр**| **Описание**||
 ||**event_type** | **string**
 
 Тип события.
+
 Возможные значения:
+
 - `POOL_CLOSED` — пул закрыт.
 - `DYNAMIC_OVERLAP_COMPLETED` — появилась агрегированная оценка по динамическому перекрытию.
 - `ASSIGNMENT_CREATED` — задание создано.
@@ -52,6 +52,7 @@
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор подписки;
 - `created` — дата создания подписки по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
@@ -69,7 +70,9 @@
 |#
 
 ## Пример запроса {#request-example}
- Можно настроить показ перечня подписок частями (например, по 10 подписок):
+
+Можно настроить показ перечня подписок частями (например, по 10 подписок):
+
 1. Показать первые 10 подписок, начиная с подписки с наименьшим идентификатором.
 1. Показывать оставшиеся подписки по 10 штук в порядке возрастания.
 
@@ -79,17 +82,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -99,17 +102,18 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Ответ {#response}
@@ -118,23 +122,23 @@
 
 ```json
 {
-  items: [
+  "items": [
     {
-       "webhook_url": "https://awesome-requester.com/toloka-webhook",
-       "event_type": "ASSIGNMENT_CREATED",
-       "pool_id": "121212",
-       "id": "webhook-subscription-1",
-       "created": "2020-02-03T15:00:00"
+      "webhook_url": "https://awesome-requester.com/toloka-webhook",
+      "event_type": "ASSIGNMENT_CREATED",
+      "pool_id": "121212",
+      "id": "webhook-subscription-1",
+      "created": "2020-02-03T15:00:00"
     },
     {
-       "webhook_url": "https://awesome-requester.com/toloka-webhook",
-       "event_type": "POOL_CLOSED",
-       "pool_id": "121212",
-       "id": "webhook-subscription-2",
-       "created": "2020-02-03T15:00:00"
+      "webhook_url": "https://awesome-requester.com/toloka-webhook",
+      "event_type": "POOL_CLOSED",
+      "pool_id": "121212",
+      "id": "webhook-subscription-2",
+      "created": "2020-02-03T15:00:00"
     }
   ],
-  has_more: false
+  "has_more": false
 }
 ```
 
@@ -149,7 +153,9 @@ URL, на который будут приходить уведомления.||
 ||**event_type** | **string**
 
 Тип события.
+
 Возможные значения:
+
 - `POOL_CLOSED` — пул закрыт.
 - `DYNAMIC_OVERLAP_COMPLETED` — появилась агрегированная оценка по динамическому перекрытию.
 - `ASSIGNMENT_CREATED` — задание создано.
@@ -171,8 +177,9 @@ URL, на который будут приходить уведомления.||
 ||**has_more** | **boolean**
 
 Полнота списка.
+
 Возможные значения:
+
 - `true` — в выдачу включены не все элементы из-за ограничения параметра `limit`;
-- `false` — выдача включает в себя исчерпывающий список элементов.
-||
+- `false` — выдача включает в себя исчерпывающий список элементов.||
 |#

@@ -8,35 +8,34 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-restrictions
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-restrictions
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
 
-
 ## Query-параметры {#query-params}
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
-
-
 
 #|
 ||**Параметр**| **Описание**||
 ||**scope** | **string**
 
 Область блокировки:
+
 - `ALL_PROJECTS` — все проекты заказчика;
 - `PROJECT` — проект (указывается `project_id`);
 - `POOL` — пул (указывается `pool_id`);
@@ -47,14 +46,17 @@
 ||**project_id** | **string \| обязательный при условии**
 
 Обязателен, если `scope=PROJECT`.
+
 Идентификатор проекта, к которому заблокирован доступ.||
 ||**pool_id** | **string \| обязательный при условии**
 
 Обязателен, если `scope=POOL`.
+
 Идентификатор пула, к которому заблокирован доступ.||
 ||**sort** | **string**
 
 Параметры для сортировки:
+
 - `id` — идентификатор;
 - `created` — дата создания по UTC в формате ISO 8601: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
@@ -79,27 +81,27 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
+    Authorization: OAuth <OAuth token>
+    ```
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 

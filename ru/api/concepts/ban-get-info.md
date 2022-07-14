@@ -8,17 +8,17 @@
 
 - Боевая версия
 
-  ```bash
-  GET https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    Authorization: OAuth <OAuth token>
+    ```
 
 {% endlist %}
 
@@ -28,11 +28,9 @@
 ----- | -----
 **ban_id** | Идентификатор блокировки.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -50,12 +48,12 @@
 }
 ```
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**scope** | **string**
 
 Область блокировки:
+
 - `ALL_PROJECTS` — все проекты заказчика;
 - `PROJECT` — проект (указывается `project_id`);
 - `POOL` — пул (указывается `pool_id`).||
@@ -65,14 +63,17 @@
 ||**project_id** | **string**
 
 Указывается, если `scope=PROJECT`.
+
 Идентификатор проекта, к которому заблокирован доступ.||
 ||**pool_id** | **string**
 
 Указывается, если `scope=POOL`.
+
 Идентификатор пула, к которому заблокирован доступ.||
 ||**private_comment** | **string**
 
 Комментарий с причиной ограничения доступа.
+
 Максимальная длина: 499 символов.||
 ||**will_expire** | **string**
 

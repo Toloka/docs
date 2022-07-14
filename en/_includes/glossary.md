@@ -309,7 +309,7 @@ Training
 
 Training pool {#training-pool}
 
-: A [pool](#pool) of zero-cost tasks for training Tolokers. Training tasks contain correct responses and hints that are shown if the Toloker answers incorrectly.
+: A [pool](#pool) of zero-price tasks for training Tolokers. Training tasks contain correct responses and hints that are shown if the Toloker answers incorrectly.
 
   To improve the quality of results, you can add a training pool and choose only those Tolokers who pass training successfully. [Learn more](https://toloka.ai/docs/guide/concepts/train.html)
 
@@ -326,7 +326,7 @@ Training task {#training-task}
 
 : A task that contains the correct response and a hint. If the Toloker responds incorrectly, they will see a hint and won't be able to go to the next [task suite](#task-suite) until they complete all tasks correctly. Only the first response to the task is taken into account for [quality control](#quality-control) and [skill](#skill) calculation.
 
-  Training tasks can be used in zero-cost [training pools](#training-pool) to choose Tolokers who pass training.
+  Training tasks can be used in zero-price [training pools](#training-pool) to choose Tolokers who pass training.
 
   They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and ban Tolokers who respond poorly. To do this, use the [Control tasks](https://toloka.ai/docs/guide/concepts/goldenset.html) rule.
 

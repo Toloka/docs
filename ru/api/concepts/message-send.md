@@ -13,26 +13,25 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/message-threads/compose
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/message-threads/compose
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/message-threads/compose
-  Authorization: OAuth <OAuth token>
-  Content-Type: application/JSON
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/compose
+    Authorization: OAuth <OAuth token>
+    Content-Type: application/JSON
+    ```
 
 {% endlist %}
 
 ## Заголовки {#headers}
 
 {% include [reusables-auth-content](../_includes/reusables/id-reusables/auth-content.md) %}
-
 
 ## Тело запроса {#body}
 
@@ -59,20 +58,25 @@
 ||**topic** | **object \| обязательный**
 
 Заголовок сообщения. Можно привести заголовок на нескольких языках (сообщение придет на языке исполнителя). Формат:
+
  `"<язык RU/EN/TR/ID/FR>": "<текст заголовка>"`.||
 ||**answerable** | **boolean \| обязательный**
 
 Возможность ответить на сообщение:
+
 - `true` — исполнитель может ответить на сообщение.
 - `false` —исполнитель не может ответить на сообщение.
+
 По умолчанию значение `true.`||
 ||**text** | **object \| обязательный**
 
 Текст сообщения. Можно привести текст на нескольких языках (сообщение придет на языке исполнителя). Формат:
+
  `"<язык RU/EN/TR/ID/FR>": "<текст сообщения>"`.||
 ||**recipients_select_type** | **string \| обязательный**
 
 Способ указания адресатов:
+
 - `DIRECT` — указать идентификаторы
  исполнителей.
  - `FILTER` — отобрать исполнителей с помощью [фильтра](filters.md).
@@ -81,7 +85,6 @@
 
 Обязателен, если `recipients_select_typ`. Список идентификаторов исполнителей, которым будет отправлено сообщение.||
 |#
-
 
 #### Сообщение с фильтром
 
@@ -108,26 +111,30 @@
 }
 ```
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**topic** | **object \| обязательный**
 
 Заголовок сообщения. Можно привести заголовок на нескольких языках (сообщение придет на языке исполнителя). Формат:
+
  `"<язык RU/EN/TR/ID/FR>": "<текст заголовка>"`.||
 ||**answerable** | **boolean \| обязательный**
 
 Возможность ответить на сообщение:
+
 - `true` — исполнитель может ответить на сообщение.
 - `false` —исполнитель не может ответить на сообщение.
+
 По умолчанию значение `true.`||
 ||**text** | **object \| обязательный**
 
 Текст сообщения. Можно привести текст на нескольких языках (сообщение придет на языке исполнителя). Формат:
+
  `"<язык RU/EN/TR/ID/FR>": "<текст сообщения>"`.||
 ||**recipients_select_type** | **string \| обязательный**
 
 Способ указания адресатов:
+
 - `DIRECT` — указать идентификаторы
  исполнителей.
  - `FILTER` — отобрать исполнителей с помощью [фильтра](filters.md).
@@ -135,6 +142,7 @@
 ||**recipients_filter** | **object \| обязательный при условии**
 
 Обязателен, если `recipients_select_type=FILTER`.
+
 [Фильтр](filters.md) для отбора адресатов||
 |#
 
@@ -198,7 +206,6 @@
 }
 ```
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**id** | **string**
@@ -210,6 +217,7 @@
 ||**interlocutors_inlined** | **boolean**
 
 Доступ к сведениям об отправителе и адресатах.
+
 - `true` — сведения доступны в поле `interlocutors`.
 - `false` — сведения доступны по отдельному запросу.||
 ||**interlocutors** | **object**
@@ -221,6 +229,7 @@
 ||**interlocutors.role** | **string**
 
 Роль отправителя или адресата в Толоке:
+
 - `USER` — исполнитель.
 - `REQUESTER` — заказчик.
 - `ADMINISTRATOR` — администратор.
@@ -231,6 +240,7 @@
 ||**messages_inlined** | **boolean**
 
 Доступ к сообщениям цепочки:
+
 - `true` — сообщение доступно в поле `messages`.
 - `false` — сообщение доступно по отдельному запросу.||
 ||**messages** | **object**
@@ -248,6 +258,7 @@
 ||**messages.from.role** | **string**
 
 Роль отправителя в Толоке:
+
 - `USER` — исполнитель.
 - `REQUESTER` — заказчик.
 - `ADMINISTRATOR` — администратор.
@@ -264,6 +275,7 @@
 ||**compose_details.recipients_ select_type** | **string**
 
 Способ указания адресатов:
+
 - `DIRECT` — указать идентификаторы исполнителей.
 - `FILTER` — отобрать исполнителей с помощью [фильтра](filters.md).
 - `ALL` — отправить сообщение всем исполнителям, которые хотя бы раз пытались выполнять ваши задания.||
@@ -276,11 +288,13 @@
 ||**answerable** | **boolean**
 
 Возможность ответить на сообщение:
+
 - `true` — исполнитель может ответить на сообщение.
 - `false` — исполнитель не может ответить на сообщение.||
 ||**folders[]** | **array of objects**
 
 Папки, в которых находится цепочка:
+
 - `INBOX` — Входящие.
 - `OUTBOX` — Отправленные.
 - `AUTOMATIC_NOTIFICATION` — Уведомления.

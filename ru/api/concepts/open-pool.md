@@ -12,17 +12,18 @@
 
 - Боевая версия
 
-  ```bash
-  POST https://toloka.yandex.com/api/v1/pools/<pool_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
 
 - Песочница
 
-  ```bash
-  POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
-  Authorization: OAuth <OAuth token>
-  ```
+    ```bash
+    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+    Authorization: OAuth <OAuth token>
+    ```
+
 {% endlist %}
 
 ## Path-параметры {#path-params}
@@ -31,11 +32,9 @@
 ----- | -----
 **pool_id** | Идентификатор пула.
 
-
 ## Заголовки {#headers}
 
 {% include [reusables-auth](../_includes/reusables/id-reusables/auth.md) %}
-
 
 ## Ответ {#response}
 
@@ -46,7 +45,6 @@
 Если пул не может быть открыт, то возвращается ответ с описанием ошибки и статусом 409.
 
 {% endnote %}
-
 
 ```json
 {
@@ -62,6 +60,7 @@
   }
 }
 ```
+
 #|
 ||**Параметр** | **Описание**||
 ||**id** | **string**
@@ -73,6 +72,7 @@
 ||**status** | **string**
 
 Статус операции:
+
 - `PENDING` — выполнение не началось;
 - `RUNNING` — выполняется;
 - `SUCCESS` — успешно выполнена;

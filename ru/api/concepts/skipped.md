@@ -12,27 +12,33 @@
 
 ```json
 {
-    "configs": [{
-        "collector_config": {
-            "type": "SKIPPED_IN_ROW_ASSIGNMENTS"
-        },
-        "rules": [{
-            "conditions": [{
-                "key": "skipped_in_row_count",
-                "operator": "GTE",
-                "value": 10
-            }],
-            "action": {
-                "type": "RESTRICTION_V2",
-                "parameters": {
-                    "scope": "PROJECT",
-                    "duration_unit": "DAYS",
-                    "duration": 10,
-                    "private_comment": "Skipped more than 10 pages in a row"
-                }
+  "configs": [
+    {
+      "collector_config": {
+        "type": "SKIPPED_IN_ROW_ASSIGNMENTS"
+      },
+      "rules": [
+        {
+          "conditions": [
+            {
+              "key": "skipped_in_row_count",
+              "operator": "GTE",
+              "value": 10
             }
-        }]
-    }]
+          ],
+          "action": {
+            "type": "RESTRICTION_V2",
+            "parameters": {
+              "scope": "PROJECT",
+              "duration_unit": "DAYS",
+              "duration": 10,
+              "private_comment": "Skipped more than 10 pages in a row"
+            }
+          }
+        }
+      ]
+    }
+  ]
 }
 ```
 
@@ -42,56 +48,56 @@
 
 - на 12 часов
 
-  ```json
-  {
-      ...
-                      "action": {
-                          "type": "RESTRICTION_V2",
-                          "parameters": {
-                              "scope": "PROJECT",
-                              "duration_unit": "HOURS",
-                              "duration": 12,
-                              "private_comment": "Skipped more than 10 pages in a row"
-                          }
-                      }
-      ...
-  }
-  ```
+    ```json
+    {
+        ...
+        "action": {
+            "type": "RESTRICTION_V2",
+            "parameters": {
+            "scope": "PROJECT",
+            "duration_unit": "HOURS",
+            "duration": 12,
+            "private_comment": "Skipped more than 10 pages in a row"
+        }
+        }
+        ...
+    }
+    ```
 
 - на 30 минут
 
-  ```json
-  {
-      ...
-                      "action": {
-                          "type": "RESTRICTION_V2",
-                          "parameters": {
-                              "scope": "PROJECT",
-                              "duration_unit": "MINUTES",
-                              "duration": 30,
-                              "private_comment": "Skipped more than 10 pages in a row"
-                          }
-                      }
-      ...
-  }
-  ```
+    ```json
+    {
+        ...
+          "action": {
+            "type": "RESTRICTION_V2",
+            "parameters": {
+                "scope": "PROJECT",
+                "duration_unit": "MINUTES",
+                "duration": 30,
+                "private_comment": "Skipped more than 10 pages in a row"
+            }
+          }
+        ...
+    }
+    ```
 
 - навсегда
 
-  ```json
-  {
-      ...
-                      "action": {
-                          "type": "RESTRICTION_V2",
-                          "parameters": {
-                              "scope": "PROJECT",
-                              "duration_unit": "PERMANENT",
-                              "private_comment": "Skipped more than 10 pages in a row"
-                          }
-                      }
-      ...
-  }
-  ```
+    ```json
+    {
+        ...
+            "action": {
+            "type": "RESTRICTION_V2",
+            "parameters": {
+                "scope": "PROJECT",
+                "duration_unit": "PERMANENT",
+                "private_comment": "Skipped more than 10 pages in a row"
+            }
+            }
+        ...
+    }
+    ```
 
 {% endlist %}
 
@@ -106,6 +112,7 @@
 ||**configs.collector_config.type** | **string \| обязательный**
 
 Критерий, на котором основан блок качества:
+
 - `GOLDEN_SET` — количество правильных и неправильных ответов в контрольных заданиях.
 - `MAJORITY_VOTE` — доля ответов, которые совпали с мнением большинства.
 - `CAPTCHA` — количество успешно и неуспешно введенных капч.
@@ -122,9 +129,11 @@
 ||**configs.rules.conditions.key** | **string \| обязательный**
 
 Значения, которые проверяются в условии:
+
 - `skipped_in_row_count` — количество пропущенных подряд заданий.||
 ||**configs.rules.conditions. operator** | **string \| обязательный**
 Оператор сравнения (данные `key` сравниваются с пороговым значением из `value`):
+
 - `EQ` («Equal») — равно.
 - `NE` («Not equal to») — не равно.
 - `GT` («Greater than») — больше чем.
@@ -140,9 +149,12 @@
 ||**configs.rules.action.type** | **string \| обязательный**
 
 Тип действия:
+
 - `RESTRICTION_V2` — заблокировать доступ к проектам или пулам.
 - `SET_SKILL_FROM_OUTPUT_FIELD` — присвоить навыку значение «доля правильных ответов» (используется в блоках [Контрольный набор](goldenset.md) и [Мнение большинства](mv.md)).
+
     Значение навыка можно использовать для отбора исполнителей.
+
 - `CHANGE_OVERLAP` — изменить перекрытие. Например, чтобы повторно отправить страницу заданий на выполнение другим исполнителям или отменить повторное выполнение уже принятых заданий.
 - `REJECT_ALL_ASSIGNMENTS` — отклонить все ответы исполнителя. Например, спустя несколько ответов исполнителя стало понятно, что он некачественно выполняет задания.
 - `APPROVE_ALL_ASSIGNMENTS` — принять все ответы исполнителя. Например, если исполнитель выполняет большинство заданий качественно и вас устраивает такой результат.
@@ -153,6 +165,7 @@
 ||**configs.rules.action. parameters.scope** | **string \| обязательный**
 
 Уровень ограничения:
+
 - `POOL` — пул. Не влияет на рейтинг исполнителя.
 - `PROJECT` — проект. Влияет на рейтинг исполнителя.
 - `ALL_PROJECTS` — все проекты заказчика.||
@@ -167,7 +180,9 @@
 ||**configs.rules.action. parameters.from_field** | **string \| обязательный при условии**
 
 Обязателен, если `type=SET_SKILL_FROM_OUTPUT_FIELD`.
+
 Значение, которое нужно присвоить навыку:
+
 - `correct_answers_rate` — доля правильных ответов;
 - `wrong_answers_rate` — доля неправильных ответов.||
 ||**configs.rules.action. parameters.skill_value** | **integer \| обязательный при условии**
@@ -185,6 +200,7 @@
 ||**configs.rules.action. parameters.duration_unit** | **string**
 
 Единица измерения длительности блокировки:
+
 - `MINUTES` — минуты;
 - `HOURS` — часы;
 - `DAYS` — дни;
@@ -199,8 +215,7 @@
 ||**configs.rules.action. parameters.open_pool** | **boolean**
 
 Определяет, нужно ли открыть закрытый пул:
+
 - `true` — открыть пул после изменения, если он закрыт.
 - `false` — не открывать пул после изменения, если он закрыт.||
 |#
-
-

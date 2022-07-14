@@ -6,8 +6,8 @@
 
 ```js
 $.ajax({
-      url: '/api/new/requester/proxy/proxy/{id}',
-      method: 'DELETE'
+    url: '/api/new/requester/proxy/proxy/{id}',
+    method: 'DELETE'
 });
 ```
 
