@@ -17,7 +17,7 @@ To insert an image passed in the input data, use the `data.input` component in t
 To place two images side-by-side, use the [layout.side-by-side](../reference/layout.side-by-side.md) component.
 
 
-[View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IAOANgK4JxQDOeyWA2pjjhtozngAzVbOut4AuAT3wBTLngCGYfnGgA6CiP54ANA15sQAEwn8JXHhsYDhYlLm26JciMX747q9UYv5dAC3EgATiIrFCZRBnXgBfNRYNPDdBQggJLS8YCTgSXzwQnHDMiwBGAxzNIVEvKRl5RSCIlzwdPQLIoxMS81qrGzsHKsLjAg8vX39AjMbWbNHemLiE0pGNcaiQACYGmpBisxpJaVkoBSUnCc06-XNDNY2vE477RxBql1d+1p8-AKCehaa+2PjEl4ARnMwg8+OtTF4iKRyHJ3BB+ABrESCKjBRqhdQAXQeeAAbnARAB3Va9S4vQgSQS2fgKOBaEQAWgBggZFDpZlBFjg-BEAFtUTR6BNzrxmpsLPiiXI4LyJAgOT08MRvIQSRcIS9ruQuodHk9+J4XjK5SIAPqnT6csEwAKEAASIkQ7iCNH43mIYgmX1YIrBZK2IElhOlsvluu+ytVZx6RQ1Aa1UB19xj+sNAeN8tNQLRLm9opANsI9sdCGdXDdHpyGMa2JCeEgUDdEEIAu4OTFXiDckIcAo3QmeG5fNbQpcvvz-os8BEhC0cm8CVkDIQ3ls+HDawpAJnXgA6u44GB3Fh8HD+BAsFoL1TiFge0isNu+wB+DffCD4cqULijvVto7fFuO4vAAgm+ep4hIJDipIwJ6nmY4pmCQFRgGABC4GPJB0FeNmSFYAhRjjpuEjbqhFgAJKhn4l50lAADk-B3n8mFrLiUGVi8ySpMqZj4dWeq1gBxxWGqWHgi08btNSSZWt8bgGgMbzDDmjwCUYhFMCmHZcQSs5yDyAAeei+KccnIaRwEBgACoQIgSIoWAiIZRApNghLuLoWA3necAPqR1JYNycisb0JxieqkkWNcMl3OZ+YKWmFgeYIcEafFmjsT2dS7BF3yTvW0BaNyuzziIACOxBwL4-wZb0B6Nl4AAqB4UFgvLEH2j4iFg8BFiIWhBVAaXzJ8OSYiE6nVqE9wgNqdgoGg6iDtR5peM69gUMgAD020Zn4ciiIZM4UHIkC8ttp7whAFDbbkACsSy5AAzOwAAsl3OSdDJXeeDIPU9r1vXIABWogIOGK0mlm638JtO17dRp1HSdZ0QBdv03Xdj0vewABsn3HS2P1nhA-0469eOg+DIwzaEQA&locale=en). For a detailed analysis of the example, see [Quick start](../quickstart.md).
+[View example in the sandbox](https://clck.ru/sCTGi). For a detailed analysis of the example, see [Quick start](../quickstart.md).
 
 
 ## Array of images {#array}
