@@ -3,4 +3,6 @@ href: tutorials/image-classification.md
 items:
   - href: tutorials/image-classification.md
     name: Image classification
+  - href: tutorials/side-by-side.md
+    name: Image comparison (Side-by-side)
 base: en

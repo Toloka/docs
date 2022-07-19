@@ -22,11 +22,11 @@ We recommend starting with a project preset for easier configuration and better 
 
    1. In the main menu, choose the **Projects** tab, and click **Create a project**.
 
-      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/choose-preset-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/choose-preset-step-1.png" alt="Choose a preset. Step 1" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/choose-preset-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/choose-preset-step-1.png" alt="Choose a preset. Step 1" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
    1. Select the **Image classification** preset.
 
-1. Click **Choose preset** in the pop-up tab.
+1. Click **Choose solution** in the pop-up tab.
 
 ## Create a project
 
@@ -34,7 +34,7 @@ Set up how your tasks will look for Tolokers. Tolokers are people around the wor
 
 1. Under **General information**, add the project name and description.
 
-   - **Name to show performers**: In 2-5 words, state the general idea of the project.
+   - **Name to show performers**: In 2–5 words, state the general idea of the project.
 
    - **Description for performers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
@@ -60,7 +60,7 @@ Set up how your tasks will look for Tolokers. Tolokers are people around the wor
 
       - **Name in labeling results**: This is the value you will see in the file with the labeling results.
 
-   1. Raw task data and labeling results are stored in TSV files. The **Data specification** section determines which columns these files might have.
+   1. Raw task data and labeling results are stored in a table format. The **Data specification** section determines which columns these files might have.
 
       Click **Show specifications** and check the values:
 
@@ -76,13 +76,13 @@ Set up how your tasks will look for Tolokers. Tolokers are people around the wor
 
    {% note tip %}
 
-   When writing instructions, remember that most performers don’t know anything about your tasks beforehand. Make sure your instructions are as clear as possible, but not too wordy. For successful data labeling, try to strike a balance between covering all the essentials and keeping it short. Learn more in our [knowledge base](https://toloka.ai/knowledgebase/instruction/).
+   When writing instructions, remember that most Tolokers don’t know anything about your tasks beforehand. Make sure your instructions are as clear as possible, but not too wordy. For successful data labeling, try to strike a balance between covering all the essentials and keeping it short. Learn more in our [knowledge base](https://toloka.ai/knowledgebase/instruction/).
 
    {% endnote %}
 
 1. To save your data and continue, click **Create a project**.
 
-   <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-project-step-4.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-project-step-4.png" alt="Create a project. Step 4" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+   <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-project-step-4.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-project-step-4.png" alt="Create a project. Step 4" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 ## Create a pool
 
@@ -98,7 +98,7 @@ A _pool_ is a set of tasks sent out to Tolokers at the same time. One project ca
 
    1. To select Tolokers based on their language, location, age, gender, and other parameters, click the **Add filter** button. For example, add the **Languages** filter:
 
-      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-pool-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-pool-step-3.2.png" alt="Create a pool. Step 3.2" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-pool-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/create-pool-step-3.2.png" alt="Create a pool. Step 3.2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
    1. Use the **Speed/quality balance** slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
@@ -112,7 +112,7 @@ A _pool_ is a set of tasks sent out to Tolokers at the same time. One project ca
 
 1. In **Price**, set up how much a single task will cost for you.
 
-   1. In **Price per task suite**, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10-20 tasks per suite.
+   1. In **Price per task suite**, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–20 tasks per suite.
 
    1. In the **Overlap** field, define how many Tolokers must do each task. The default value (`3`) means that each task will have 3 responses.
 
@@ -128,7 +128,7 @@ At this step, upload your task data to Toloka.
 
 1. Create the tasks for Tolokers:
 
-   1. To download a template, click **Template for general tasks in TSV**.
+   1. To download a template, click **Template for general tasks in XLSX** or **Template for general tasks in TSV**.
 
       For this type of project, the TSV file with tasks must have one column. The header of the column equals `INPUT:image`, and the column values are links to the images.
 
@@ -147,9 +147,9 @@ At this step, upload your task data to Toloka.
 
 1. Tasks are shown to Tolokers in suites. A suite is a single page with multiple tasks. Define how many tasks to include per suite:
 
-   - **Number of general tasks**: These are the tasks for Tolokers to label.
-   - **Number of training tasks**: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
-   - **Number of control tasks**: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
+   - **General tasks**: These are the tasks for Tolokers to label.
+   - **Control tasks**: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
+   - **Training tasks**: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
 
       For example, you can add 9 general tasks and 1 control task per suite:
 
@@ -161,15 +161,15 @@ At this step, upload your task data to Toloka.
 
    1. Click **Edit**.
 
-      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png" alt="Upload your file. Step 3.1" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png" alt="Upload your file. Step 3.1" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
    1. On the **Edit tasks page**, click **Create control tasks**.
 
-      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png" alt="Upload your file. Step 3.2" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png" alt="Upload your file. Step 3.2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
    1. Check the **result** checkbox, and select the correct answer for a task. Then, click the **Save and go to next** button. Add several control tasks this way.
 
-      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png" alt="Upload your file. Step 3.3" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png" alt="Upload your file. Step 3.3" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
       {% note tip %}
 
@@ -183,7 +183,7 @@ At this step, upload your task data to Toloka.
 
    1. When you are done adding control tasks, click the pool name in the menu.
 
-      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png" alt="Upload your file. Step 3.5" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+      <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png" alt="Upload your file. Step 3.5" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 ## Start labeling
 
@@ -191,7 +191,7 @@ At this step, upload your task data to Toloka.
 
 1. To send the tasks to Tolokers and begin the labeling process, click **Start labeling**.
 
-   <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png" alt="Start labeling. Step 2" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+   <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png" alt="Start labeling. Step 2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -203,7 +203,7 @@ At this step, upload your task data to Toloka.
 
 1. When the labeling is complete, click the arrow next to the **Download results** button and choose **Run Dawid-Skene model** from the drop-down menu. Click **Yes** in the pop-up window.
 
-   <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/see-results-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/see-results-step-2.png" alt="See the results. Step 2" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+   <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/see-results-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/guide/tutorials/image-classification/see-results-step-2.png" alt="See the results. Step 2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. Open the same drop-down menu again, and click **View aggregations list**.
 
