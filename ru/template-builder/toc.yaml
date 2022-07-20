@@ -38,6 +38,8 @@ items:
             name: Попарное сравнение изображений
           - href: templates/product-search-relevance.md
             name: Релевантность поиска товаров
+          - href: templates/object-recognition.md
+            name: Распознавание объектов и выделение областей           
       - name: Тексты
         items:
           - href: templates/copywriting.md
