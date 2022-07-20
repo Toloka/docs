@@ -147,7 +147,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/izf2rY-d3VoZgc)
 
-## Add a layout
+## Add a layout {#add-layout}
 
 To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the `field.image-annotation` component.
 
