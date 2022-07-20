@@ -2,10 +2,13 @@
 
 For some Toloka presets, Template builder allows you to edit its template using a visual editor. It might be useful, if you do not know anything about JSON formatting or usage and you do not feel experienced enough for the code editor, and want to start working with Template Builder right away.
 
-Currently, presets with visual editor include:
+Currently, presets with the visual editor include:
 
 - [Image classification](https://toloka.yandex.com/requester/new/project?templateId=image_classification)
 - [Hand gesture classification](https://toloka.yandex.com/requester/new/project?templateId=videoModeration)
+- [Clickbait or not?](https://toloka.yandex.com/requester/new/project?templateId=checkbox_dynamic)
+- [Object recognition & detection](https://toloka.yandex.com/requester/new/project?templateId=polygon)
+- [Product search relevance](https://toloka.yandex.com/requester/new/project?templateId=categorize)
 
 When you choose to create a project that supports configuring the task interface through the visual editor, it will be opened by default.
 
@@ -27,6 +30,12 @@ The interface of the visual editor looks like this:
 
     - Use **Error answer** for Tolokers to choose **Failed to load** if they have technical issues (for example, the image or video didn't load).
 
+    {% note info %}
+
+    The fields in the **Config** section can differ depending on the template parameters. Follow the links in the list above to view the presets which support the visual editor and their available configuration settings.
+
+    {% endnote %}
+
 1. After you enter all the values, choose one of the options in **Preview** and click **Submit** to try and send the task data.
 
 1. You will see the result in the **Submitted data** panel. Click **Reset** to clear the sent data and start anew.
@@ -36,5 +45,7 @@ The interface of the visual editor looks like this:
 - [Your first project](https://toloka.ai/docs/guide/concepts/first-project.html)
 - [Image classification preset](templates/image-classification.md)
 - [Hand gesture classification preset](templates/video-moderation.md)
+- [Object recognition & detection preset](templates/object-recognition.md)
+- [Product search relevance](templates/product-search-relevance.md)
 
 [![Contact support](_images/buttons/contact-support.svg)](concepts/support.md)
