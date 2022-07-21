@@ -37,3 +37,5 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 - [Copywriting](copywriting.md)
 
 - [Side-by-side text comparison](sbs-text.md)
+
+- [Text classification](text-classification.md)

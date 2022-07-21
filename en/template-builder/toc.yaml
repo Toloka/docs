@@ -46,6 +46,8 @@ items:
             name: Copywriting
           - href: templates/sbs-text.md
             name: Side-by-side text comparison
+          - href: templates/text-classification.md
+            name: Text classification
   - name: Instructions
     items:
       - href: operations/all.md
