@@ -46,7 +46,7 @@ Contains user metadata in JSON format.
     "en",
     "fr"
     ],
-  "adultAllowed": true,
+  "adult_allowed": true,
   "attributes": {
     "country_by_phone": "EN",
     "country_by_ip": "EN",
