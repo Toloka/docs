@@ -6,7 +6,7 @@ This preset helps you classify any kind of text for training classifiers and NLP
 
 Take a look at the example:Â the labeling interface includes a text box and radio buttons for categories. Note thatÂ validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/0Ydw7RZr3WjzFP)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/GCr6AzRu3Wk6so)
 
 {% cut "Components used in the example" %}
 
@@ -37,7 +37,7 @@ Take a look at the example:Â the labeling interface includes a text box and radi
     "validation": {
       "type": "condition.required"
     },
-    "label": "Is this headline clickbait? ",
+    "label": "Is this headline clickbait?",
     "options": [
       {
         "label": "Clickbait",
@@ -79,7 +79,7 @@ Take a look at the example:Â the labeling interface includes a text box and radi
     "type": "plugin.toloka",
     "layout": {
       "kind": "scroll",
-      "taskWidth": 600
+      "taskWidth": 500
     }
   }
   ```
@@ -135,7 +135,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/NJ4KpHQT3Wjzje)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vHxwcfNM3Wk7BK)
 
 ## Add a response field {#add-text-area}
 
@@ -157,7 +157,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/EzN29jBV3Wjzxe)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/tqcXy_dh3Wk7XR)
 
 ## Add a layout {#add-layout}
 
@@ -171,7 +171,7 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
   "theme": "info",
   "content": {
     "type": "view.text",
-    "content": "Look at the text and tell if is clickbait."
+    "content": "Look at the text and tell if it is clickbait."
   }
 },
 {
@@ -191,7 +191,7 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
       "type": "condition.required",
       "hint": "Select an option"
     },
-    "label": "Is this headline clickbait? ",
+    "label": "Is this headline clickbait?",
     "options": [
       {
         "label": "Clickbait",
@@ -212,7 +212,7 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 
 {% endcut %}  
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/b7Juojtb3Wk24V)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1d9wVk0A3Wk7hq)
 
 ## Other options for buttons {#mult-ans-options}
 
@@ -240,8 +240,8 @@ Decide whether a Toloker can select only one or multiple answer options:
       "value": "long"
       },
       {
-        "label": "Unclear",
-        "value": "unclear"
+        "label": "Gramatically incorrect",
+        "value": "bad-grammar"
       },
       {
         "label": "None of this",
@@ -261,7 +261,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/pSKWBWzN3Wk2EB)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/WqUYAVJ_3Wk87q)
 
 - One option (a radio button)
 
@@ -283,10 +283,6 @@ Decide whether a Toloker can select only one or multiple answer options:
       {
         "label": "Too long",
         "value": "long"
-      },
-      {
-        "label": "Unclear",
-        "value": "unclear"
       },
       {
         "label": "Grammatically incorrect",
@@ -314,7 +310,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/t2U1S9Da3Wk2Uz)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/772Lk77T3Wk8bu)
 
 {% endlist %}
 
@@ -345,11 +341,11 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
       },
       {
         "label": "It's too long",
-        "value": "rude"
+        "value": "long"
       },
       {
-        "label": "It's unclear",
-        "value": "unclear"
+        "label": "It's grammarly incorrect",
+        "value": "bad-grammar"
       },
       {
         "label": "Other",
@@ -370,7 +366,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/la9hJBU13Wk2ZQ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FwDPOVZ_3Wk8zy)
 
 ## Text and search query comparison {#search}
 
