@@ -30,6 +30,8 @@
 
 - [Релевантность поиска товаров](product-search-relevance.md)
 
+- [Распознавание объектов и выделение областей](object-recognition.md)
+
 ## Тексты
 
 - [Копирайтинг](copywriting.md)
