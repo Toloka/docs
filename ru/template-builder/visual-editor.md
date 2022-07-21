@@ -45,6 +45,7 @@
 - [Первый проект](https://toloka.ai/ru/docs/guide/concepts/first-project.html)
 - [Пресет «Классификация изображений»](templates/image-classification.md)
 - [Пресет «Классификация жестов рук»](templates/video-moderation.md)
+- [Пресет «Распознавание объектов и выделение областей»](templates/object-recognition.md)
 - [Пресет «Релевантность поиска товаров»](templates/product-search-relevance.md)
 
 [![Написать в службу поддержки](_images/buttons/contact-support.svg)](concepts/support.md)
