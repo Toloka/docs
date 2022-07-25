@@ -19,21 +19,21 @@ You can set a list of dates that a Toloker can't select.
 - `date` — date only.
   ||
   || `hint` | _string_ | Hint text. ||
-  || `max` | _string_ | The latest date and time in the YYYY-MM-DD hh:mm format that a Toloker can select. Where:
+  || `max` | _string_ | The latest date and time in the `YYYY-MM-DD hh:mm` format that a Toloker can select. Where:
 
-- YYYY is the year.
-- MM is the month.
-- DD is the day.
-- hh is the time in hours.
-- mm is the time in minutes.
+- `YYYY` is the year.
+- `MM` is the month.
+- `DD` is the day.
+- `hh` is the time in hours.
+- `mm` is the time in minutes.
   ||
-  || `min` | _string_ | The earliest date and time in the YYYY-MM-DD hh:mm format that a Toloker can select. Where:
+  || `min` | _string_ | The earliest date and time in the `YYYY-MM-DD hh:mm` format that a Toloker can select. Where:
 
-- YYYY is the year.
-- MM is the month.
-- DD is the day.
-- hh is the time in hours.
-- mm is the time in minutes.
+- `YYYY` is the year.
+- `MM` is the month.
+- `DD` is the day.
+- `hh` is the time in hours.
+- `mm` is the time in minutes.
   ||
   || `placeholder` | _string_ | A semi-transparent label that is shown in the box when it is empty. ||
   || `validation` | _condition_ | Validation based on condition. ||
