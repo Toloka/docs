@@ -162,5 +162,4 @@ Since Template Builder is JSON-based, there are some restrictions for inserting 
 }
 ```
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

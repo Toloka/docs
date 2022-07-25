@@ -29,7 +29,7 @@ This might happen if the media file format mismatches the device codec or the fi
 - **Cause:** The media file format is not supported. File format support depends on the Toloker's browser, OS, and device.
 
   **How to fix:** Try using files in one of the specified formats.
-  
+
   {% cut "Video formats" %}
 
     - [MP4]({{ wiki-mp4 }}) in the H.264 or H.265 encoding is the recommended format.
@@ -45,9 +45,9 @@ This might happen if the media file format mismatches the device codec or the fi
     - [OGG]({{ wiki-ogg }});
     - [OPUS]({{ wiki-opus }});
     - [WAV]({{ wiki-wav }}).
-  
+
   {% endcut %}
-  
+
 - **Cause:** The server that hosts the media file fails to send it to the task suite. It returns an empty output or the "Access denied" message, because the downloaded file is detected at an unknown domain.
 
   **How to fix:** Refine the settings of your server or change the domain that sends the request for the media file download.
@@ -87,3 +87,5 @@ Keep in mind the following:
 #### How to add quotation marks and slashes in JSON
 
 {% include [json-guide-escaping_json](../_includes/quickstart/id-json-guide/escaping_json.md) %}
+
+{% include [contact-support](../_includes/contact-support.md) %}

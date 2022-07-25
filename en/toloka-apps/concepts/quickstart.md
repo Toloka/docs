@@ -1,6 +1,6 @@
 # Getting started
 
-{% include [index-abstract-quickstart](_includes/index/id-index/abstract-quickstart.md) %}
+{% include [index-abstract-quickstart](../_includes/abstract-quickstart.md) %}
 
 ## Choose a bespoke solution {#choose-app-project}
 
@@ -62,7 +62,7 @@ If there are errors in the project, its status changes to **Rejected**. No worri
 
 {% note tip %}
 
-If you need help with setting up your project, [contact us](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
+If you need help with setting up your project, [contact us](support.md).
 
 {% endnote %}
 
@@ -76,8 +76,8 @@ If you need help with setting up your project, [contact us](https://toloka.ai/do
 
 {% cut "I didn't find a suitable bespoke solution" %}
 
-If you can't find a solution that fits your goals, [contact us](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
+If you can't find a solution that fits your goals, [contact us](support.md).
 
 {% endcut %}
 
-{% include [contact-support](_includes/contact-support.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

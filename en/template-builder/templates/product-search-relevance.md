@@ -207,4 +207,4 @@ If you need comments from the Toloker, add a text field using [field.textarea
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Ryo07JaT3UYB9k)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

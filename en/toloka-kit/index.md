@@ -1,6 +1,6 @@
 # Introduction
 
-Toloka-Kit is an open source Python library allowing you to access [Toloka API](https://toloka.ai/docs/api/concepts/about.html).
+Toloka-Kit is an open source Python library allowing you to access [Toloka API](../api/index.md).
 
 [Toloka](https://toloka.ai) is a cloud-based crowdsourcing platform that helps you to collect and analyze data for machine learning and other business purposes.
 

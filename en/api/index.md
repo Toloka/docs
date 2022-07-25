@@ -18,10 +18,6 @@ Requests are sent to the Toloka API over the HTTPS protocol. The service returns
 
 For debugging tasks, Toloka provides a testing environment – the [sandbox](https://sandbox.toloka.yandex.ru). Once you have tested the settings, you can use the project and pool in the production version of Toloka (the only thing you need to change is the [request URL and the OAuth token](./concepts/access.md)).
 
-## Toloka global community
+{% include [global-community](../_includes/global-community.md) %}
 
-Stay informed about updates to the platform and open-source libraries — connect with the Toloka team in our [Global Community](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg) for announcements, discussions, and invites to events.
-
-## Follow us in social media
-
-[![](_images/SocialNetwork/youtube.svg)]({{ toloka-youtube }})[![](_images/SocialNetwork/facebook.svg)]({{ toloka-facebook }})[![](_images/SocialNetwork/slack.svg)]({{ toloka-slack }})[![](_images/SocialNetwork/linkedin.svg)]({{ toloka-linkedin }})[![](_images/SocialNetwork/twitter.svg)]({{ toloka-twitter }})[![](_images/SocialNetwork/github.svg)]({{ toloka-github }})[![](_images/SocialNetwork/StackOverflow.svg)]({{ toloka-stackoverflow }})[![](_images/SocialNetwork/blog.svg)]({{ toloka-blog }})
+{% include [social-media](../_includes/social-media.md) %}

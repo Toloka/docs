@@ -52,5 +52,4 @@ To change the text, such as all uppercase letters or insert a variable value, us
 
   [View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNgG1RYyoqW1GLNng4lOkgB6CQI6qryQoki2yqqxedaxS0AFkW4sATpwBWEOFGEVWzwJaVknBRNbHDwAdWcAQzosMCSiBAgPBiwAEwgiPlx0PECo6JtopXtmRwo8HKSEzn8mAFdDY0qqkCYk500QKASpRyDogF9OrtpivCwAIzdoBCw6CAB+ErKlAF0p6Lx5hgGtibGsSfOK03oagfg3HM4+NyIwDvOYkG4Exe4BgDCzggEBeWASWCGdDg0AS3BSrX4-kc+26TB+YCIwO4OSIHgGADkIHRnP4VvwsC9uG9JDlSgcQBAmNDoOEKJEutdKngfn8BgApBK9KAFIhYGAgulGT7dfBw1q1WjeJinSqXbZiLkM3luAYAMQ8RCgYGc4sl9OmWnlirwMHxIBlOHVnMdNB5v11TjwACEPBJ+KaJRApaiGXLuAqBvN7a7xjK9jL6o1rK7qhovSAGnQmhB2m0Phq3T0+gM+BARpxcUQmJXGs9Xu9Vao49sW2IdooW+MjCAWu0UGhFHghiMBgBlVp8UlbbvjIA).
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

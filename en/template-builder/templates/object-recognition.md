@@ -57,11 +57,11 @@ Take a look at the example: the labeling interface includes an image with bound
     "layout": {
       "kind": "pager"
     }
-  }  
+  }
   ```
 
   {% endcut %}
-  
+
 - [plugin.field.image-annotation.hotkeys](../reference/plugin.field.image-annotation.hotkeys.md): Sets hotkeys to select area types and selection modes and to confirm or cancel area creation.
 
   {% cut "Show code" %}
@@ -151,7 +151,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the `field.image-annotation` component.
 
-In this example, the text is highlighted with a yellow border. 
+In this example, the text is highlighted with a yellow border.
 
 {% cut "Show code" %}
 
@@ -166,8 +166,8 @@ In this example, the text is highlighted with a yellow border.
 }
 ```
 
-{% endcut %}  
+{% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/eLCcS7Tz3VvzPT)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

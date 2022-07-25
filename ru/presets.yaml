@@ -1,20 +1,89 @@
 default:
-  toloka: 'https://toloka.ai/ru/'
-  visualstudio: 'https://code.visualstudio.com/'
-  json: 'https://www.json.org/json-ru.html'
-  json-schema: 'https://json-schema.org/learn/getting-started-step-by-step.html'
-  toloka-requester-index-dita: 'https://toloka.ai/ru/docs/guide/index.html'
-  toloka-requester-concepts-yacloud-dita: 'https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html'
-  toloka-requester-create-tsv: 'https://toloka.ai/ru/docs/guide/concepts/pool_csv.html'
-  template-builder: 'https://clck.ru/SMCHv'
-  toloka-facebook: 'https://www.facebook.com/tolokaglobal/'
-  toloka-slack: 'https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg'
-  toloka-youtube: 'https://www.youtube.com/channel/UC3ECut-9h01eI1qsnx-GHKA/videos'
-  toloka-linkedin: 'https://www.linkedin.com/company/toloka/'
-  toloka-twitter: 'https://twitter.com/TolokaAI'
-  toloka-github: 'https://github.com/toloka'
-  toloka-blog: 'https://toloka.ai/blog/'
-  toloka-stackoverflow: 'https://stackoverflow.com/questions/tagged/toloka'
+  crowd-kit: https://github.com/Toloka/crowd-kit
+  dg-regions: https://tech.yandex.com/xml/doc/dg/reference/regions-docpage/
+  handlebarsjs-com: http://handlebarsjs.com/
+  iso-lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+  iso-search: https://www.iso.org/obp/ui/#search
+  json: https://www.json.org/json-ru.html
+  json-schema: https://json-schema.org/learn/getting-started-step-by-step.html
+  requester: https://toloka.ai/docs/guide/
+  requester-access: https://toloka.ai/docs/guide/concepts/access.html
+  requester-aggregation: https://toloka.ai/docs/guide/concepts/result-aggregation.html
+  requester-aggregations: https://toloka.ai/docs/guide/concepts/result-aggregation.html
+  requester-assign-skills: https://toloka.ai/docs/guide/concepts/nav-assign.html
+  requester-attachments: https://toloka.ai/docs/guide/concepts/advanced-features-attach.html
+  requester-ban: https://toloka.ai/docs/guide/concepts/ban.html
+  requester-ban-platform: https://toloka.ai/docs/guide/concepts/ban.html#ban__ban-platform
+  requester-bonus: https://toloka.ai/docs/guide/concepts/bonus.html
+  requester-dynamic-overlap: https://toloka.ai/docs/guide/concepts/dynamic-overlap.html
+  requester-dynamic-pricing: https://toloka.ai/docs/guide/concepts/dynamic-pricing.html#dynamic-pricing__section_ucl_3hl_vlb
+  requester-escaping: https://toloka.ai/docs/guide/concepts/pool_csv.html#pool_csv__string
+  requester-filters: https://toloka.ai/docs/guide/concepts/filters.html
+  requester-help: https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__help
+  requester-html: https://toloka.ai/docs/guide/concepts/spec.html#interface-section
+  requester-image-annotation: https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/
+  requester-instruction: https://toloka.ai/docs/guide/concepts/instruction.html
+  requester-interface-translate: https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate
+  requester-js-class-task: https://toloka.ai/docs/guide/concepts/js/task.html
+  requester-main: https://toloka.yandex.com/for-requesters
+  requester-main-steps: https://toloka.ai/docs/guide/concepts/main-steps.html
+  requester-messaging: https://toloka.ai/docs/guide/concepts/messaging.html#private
+  requester-mixing: https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html#distribute-tasks-by-pages__smart-mixing
+  requester-overlap: https://toloka.ai/docs/guide/concepts/overlap-faq.html
+  requester-pool-main: https://toloka.ai/docs/guide/concepts/pool-main.html
+  requester-prj: https://toloka.ai/docs/guide/concepts/project.html
+  requester-profile-integration: https://toloka.yandex.com/requester/profile/integration
+  requester-project-languages: https://toloka.ai/ru/docs/guide/concepts/project-languages.html
+  requester-proxy: https://toloka.ai/docs/guide/concepts/prepare-data.html#prepare-data__connect
+  requester-quality: https://toloka.ai/docs/guide/concepts/check-performers.html
+  requester-random-check: https://toloka.ai/docs/guide/concepts/selective-mvote.html#selective-mvote__theory
+  requester-refill: https://toloka.ai/docs/guide/concepts/refill.html
+  requester-result: https://toloka.ai/docs/guide/concepts/result-of-eval.html?
+  requester-result-aggregation: https://toloka.ai/docs/guide/concepts/result-aggregation.html
+  requester-sandbox: https://sandbox.toloka.yandex.com/for-requesters
+  requester-skills: https://toloka.ai/docs/guide/concepts/nav.html
+  requester-skills-global: https://toloka.ai/docs/guide/concepts/nav-cross-project.html
+  requester-solution-architecture: https://toloka.ai/docs/guide/concepts/solution-architecture.html
+  requester-speed-quality-balance: https://toloka.ai/docs/guide/concepts/adjust.html
+  requester-support: https://toloka.ai/docs/guide/troubleshooting/support.html/#troubleshooting__project-setting
+  requester-task-upload: https://toloka.ai/docs/guide/concepts/task_upload.html
+  requester-train: https://toloka.ai/docs/guide/concepts/train.html
+  requester-troubleshooting: https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html
+  requester-users: https://toloka.ai/docs/guide/concepts/users.html
+  rfc4122: https://tools.ietf.org/html/rfc4122
+  sandbox: https://sandbox.toloka.yandex.com
+  sandbox-profile: https://sandbox.toloka.yandex.com/requester/profile
+  sandbox-requester: https://sandbox.toloka.yandex.com/requester
+  sandbox-requester-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
+  sandbox-workers: https://sandbox.toloka.yandex.com/requester/workers
+  tb-help: https://toloka.ai/docs/template-builder/index.html/
+  template-builder: https://clck.ru/SMCHv
+  tk-create-task: https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task
+  tk-create-tasks: https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks
+  tk-create-tasks-async: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks_async
+  tk-create-tasks-suite: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suite
+  tk-create-tasks-suites: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites
+  tk-create-tasks-suites-async: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites_async
+  toloka: https://toloka.ai/ru/
+  toloka-blog: https://toloka.ai/blog/
+  toloka-facebook: https://www.facebook.com/tolokaglobal/
+  toloka-github: https://github.com/toloka
+  toloka-kit: https://github.com/Toloka/toloka-kit
+  toloka-kit-doc: https://toloka.ai/docs/toloka-kit/
+  toloka-linkedin: https://www.linkedin.com/company/toloka/
+  toloka-profile: https://toloka.yandex.ru/requester/profile
+  toloka-requester-concepts-yacloud-dita: https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html
+  toloka-requester-create-tsv: https://toloka.ai/ru/docs/guide/concepts/pool_csv.html
+  toloka-requester-index-dita: https://toloka.ai/ru/docs/guide/index.html
+  toloka-slack: https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg
+  toloka-stackoverflow: https://stackoverflow.com/questions/tagged/toloka
+  toloka-twitter: https://twitter.com/TolokaAI
+  toloka-web-register: https://toloka.ai/tolokers/docs/web/register.html#register
+  toloka-youtube: https://www.youtube.com/channel/UC3ECut-9h01eI1qsnx-GHKA/videos
+  uadetector-dev-category: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/ReadableDeviceCategory.Category.html
+  uadetector-os-family: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/OperatingSystemFamily.html
+  uadetector-useragent-family: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentFamily.html
+  uadetector-useragent-type: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentType.html
   ui_labs_add_items-add: Добавить элементы разметки
   ui_labs_add_items-added: Элементы разметки добавлены в пакет данных
   ui_labs_add_items-modal: Добавляются элементы разметки...
@@ -2255,6 +2324,24 @@ default:
   ui_requester_assigment__rejection_submit: Отправить
   ui_requester_assigments__count: __current__ из __total__ ответов
   ui_requester_audio_classification_category: Аудио
+  ui_requester_auto-honeypot-advice-button: Попробовать бесплатно
+  ui_requester_auto-honeypot-advice-title: Мы можем сделать контрольные задания за
+    вас
+  ui_requester_auto-honeypot-modal-cancel-button: Отменить
+  ui_requester_auto-honeypot-modal-order-button: Заказать
+  ui_requester_auto-honeypot-modal-title: Заказ контрольных заданий
+  ui_requester_auto-honeypot-modal-title-beta-footer: Бесплатный Beta-режим
+  ui_requester_auto-honeypot-modal-title-beta-sign: β
+  ui_requester_auto-honeypot-ready-advice-title: Контрольные задания готовы
+  ui_requester_auto-honeypot-restriction-few-tasks: Загрузите более __minTasks__ заданий
+    в пул
+  ui_requester_auto-honeypot-restriction-no-mixer: Загрузите задания с помощью умного
+    смешивания
+  ui_requester_auto-honeypot-restriction-pool-archived: Создайте новый пул. Этот пул
+    заархивирован
+  ui_requester_auto-honeypot-restriction-pool-not-closed: Остановите разметку пула
+  ui_requester_auto-honeypot-restriction-pool-open: Остановите разметку пула
+  ui_requester_auto-honeypot-restrictions-title: Для заказа контрольных заданий
   ui_requester_b4177cf2ed85f35fbb900d7b9aecff1d: Вы уверены, что хотите удалить пул
     "%s"?
   ui_requester_b4aa2cceaba0e69638a2aa24a8abc7ca: Среднее значение
@@ -2425,6 +2512,15 @@ default:
   ui_requester_common_grade__title: Выполнили бы ещё такое же?
   ui_requester_company-order-log: История транзакций базового счета
   ui_requester_company-requesters: Заказчики
+  ui_requester_connect-billing-form-country: Страна проживания
+  ui_requester_connect-billing-form-email: Электронная почта
+  ui_requester_connect-billing-form-first-name: Имя
+  ui_requester_connect-billing-form-last-name: Фамилия
+  ui_requester_connect-billing-form-patronymic: Отчество
+  ui_requester_connect-billing-form-phone: Телефон
+  ui_requester_connect-billing-form-requester-switcher-leg: Юридическое лицо
+  ui_requester_connect-billing-form-requester-switcher-ph: Физическое лицо
+  ui_requester_connect-billing-form-title: Укажите данные для пополнения счёта
   ui_requester_correctAnswersRate: процент правильных ответов
   ui_requester_create_asset__add: Добавить
   ui_requester_create_project_wiz__info__header: 'Шаг 3: Информация о проекте'
@@ -5479,7 +5575,8 @@ default:
     исполнителем
   ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_google: Карты
     Google
-  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Яндекс Карты
+  ui_requester_project_wizard_assignment_issuing_map_provider_setting_value_yandex: Яндекс
+    Карты
   ui_requester_project_wizard_assignment_issuing_settings_title: Настройки отображения
     пешеходных заданий
   ui_requester_project_wizard_assignment_issuing_title_setting: Формат заголовка
@@ -6546,3 +6643,12 @@ default:
   ui_requester_yang__quotas__table__skill: Навык
   ui_requester_yang__quotas__table__used_quota: Израсходовано
   ui_requester_yang__quotas__title: Квоты
+  visualstudio: https://code.visualstudio.com/
+  wiki-flac: https://en.wikipedia.org/wiki/FLAC
+  wiki-mp3: https://en.wikipedia.org/wiki/MP3
+  wiki-mp4: https://en.wikipedia.org/wiki/MPEG-4_Part_14
+  wiki-mpeg: https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group
+  wiki-ogg: https://en.wikipedia.org/wiki/Ogg
+  wiki-opus: https://en.wikipedia.org/wiki/Opus_(audio_format)
+  wiki-wav: https://en.wikipedia.org/wiki/WAV
+  wiki-webm: https://en.wikipedia.org/wiki/WebM

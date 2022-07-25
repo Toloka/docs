@@ -302,4 +302,4 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/PinrwG2E3TYcTx)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

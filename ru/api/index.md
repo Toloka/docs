@@ -18,6 +18,4 @@ API Толоки позволяет создавать или удалять п�
 
 Для отладки заданий в Толоке используется тестовая среда — [песочница](https://sandbox.toloka.yandex.ru). После отладки настройки проекта и пула можно без изменений использовать в боевой версии Толоки (изменив [URL запроса и OAuth-токен](concepts/access.md)).
 
-## Следите за нами в социальных сетях
-
-[![](_images/SocialNetwork/youtube.svg)]({{ toloka-youtube }})[![](_images/SocialNetwork/facebook.svg)]({{ toloka-facebook }})[![](_images/SocialNetwork/slack.svg)]({{ toloka-slack }})[![](_images/SocialNetwork/linkedin.svg)]({{ toloka-linkedin }})[![](_images/SocialNetwork/twitter.svg)]({{ toloka-twitter }})[![](_images/SocialNetwork/github.svg)]({{ toloka-github }})[![](_images/SocialNetwork/StackOverflow.svg)]({{ toloka-stackoverflow }})[![](_images/SocialNetwork/blog.svg)]({{ toloka-blog }})
+{% include [social-media](../_includes/social-media.md) %}

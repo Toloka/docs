@@ -45,5 +45,4 @@ This value will be shown in the interface, so it might hide some placeholders, f
 - [Read about creating specifications in Toloka](create-specs.md).
 - [Learn how to clear the entered data](clear-data.md).
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

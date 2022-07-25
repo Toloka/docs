@@ -70,4 +70,4 @@ In this example, the following fields are added:
 
 [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQCUZ)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

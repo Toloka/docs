@@ -55,7 +55,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
   }
   ```
 
-  
+
 [View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNgG1RYyoqW1GLNng4lOAQwCuAEzgRhKpXm66ARkW6aQAFQBODLAN3O6cKAix0ACyIsA2MIEKhDLDBeMABrHz8AZX1rKQksEgkAiH06LF4BIihE-3DA4OLvZ2CayGdjX04zalU8fWd7FFoAujomPmQAeiH4biIAWiIAD10pJnG+CcgpTgRs1M4TIf0FiF1DPiGAJgAGAEYAdiHz89G4cYB9GbmFokeAWQAFAGZHy9OpwA0gAhTjzH4tVQ4LS6XiGXTeaBsKjQmh4dSsbp4SCRCQmKCcBa6BhEQwTGD6bjcBhQtE9HyCbEgACauSwUCIZLKWGJbgqISMJmivCYPIFxUMzRA5jEAF9ZVgFa0sABdRTKuUgIQgHxMPIoNBauVAA).
 
 {% endlist %}
@@ -90,5 +90,4 @@ To create a template for audio transcription tasks, we used the following compon
 
 [View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNgG1RYyoqW1uAQwBGRbmzwAZfpOx0IWOgAsiWdQFcAJnDNheTTsJVK8jFnoLESTjtHCA9qVTxbACddFGVw1VofVji8e3U6dU44KCZbQRARBIiQJgyLP2CnPE8xAF8ixPZ1XnS6Jyg2Kiacb2YUijxIKEd26E4mDQYiezCe2gscgsGQAE0IWywoIhnzM0n1BnMrGwcnLBc4NxrimjrarAaH7sS+31SQeB17TkkAD0yUSI6jmrxAGm0sRWABV+sdrP86FgGBssFZ1FEsDl4acQhdXO5Cg9eiA2iC4i8mm8BrQyZwNnQ8gVGj08GVLH4gXxbNwCsTHiySvgWnA2h0uvySck-MNRh1OECAI62OBA2ZE25iPCLKDLWjQxZ8LBSWwCLDaLDwbjcXY5G5Ne63R1iAC6iie1DZ3FsCBysjiCgSlJo1L8kx9OV+EG4EAA1uTBSHwYcGRLNbRYzl1Ss+GAotHYomtfR1HxYwB1UUcuIAVgADHWHs67oo3VA6oUQDkmSg0Io8FVQh8LHRGXxkAB6CdWogAWiIf3UUkmRD4s8gUk4vsstk02QgE9skwg6nsfAnACY6wBGADsE+v1+ncBtAH0F0uV6+ALIABQAzK+t4NgA0gAQpwy7-jcHZ1EAA).
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

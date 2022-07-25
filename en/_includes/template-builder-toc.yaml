@@ -1,0 +1,113 @@
+items:
+  - name: Overview
+    href: ../template-builder/index.md
+  - name: Quick start
+    href: ../template-builder/quickstart.md
+  - name: Visual editor
+    href: ../template-builder/visual-editor.md
+  - name: Property types
+    href: ../template-builder/concepts/types.md
+    hidden: true
+  - name: Presets
+    items:
+      - name: List
+        href: ../template-builder/templates/index.md
+      - name: Data enrichment
+        items:
+          - name: Survey
+            href: ../template-builder/templates/survey.md
+          - name: Search for information online
+            href: ../template-builder/templates/data-search.md
+      - name: Audio
+        items:
+          - name: Audio transcription
+            href: ../template-builder/templates/audio-transcript.md
+          - name: Side-by-side audio comparison
+            href: ../template-builder/templates/sbs-audio.md
+      - name: Video
+        items:
+          - name: Video analysis
+            href: ../template-builder/templates/video-moderation.md
+          - name: Side-by-side video comparison
+            href: ../template-builder/templates/sbs-video.md
+      - name: Images
+        items:
+          - name: Image classification
+            href: ../template-builder/templates/image-classification.md
+          - name: Side-by-side image comparison
+            href: ../template-builder/templates/sbs-image.md
+          - name: Product search relevance
+            href: ../template-builder/templates/product-search-relevance.md
+          - name: Object recognition and area selection
+            href: ../template-builder/templates/object-recognition.md
+      - name: Texts
+        items:
+          - name: Copywriting
+            href: ../template-builder/templates/copywriting.md
+          - name: Side-by-side text comparison
+            href: ../template-builder/templates/sbs-text.md
+          - name: Text classification
+            href: ../template-builder/templates/text-classification.md
+  - name: Instructions
+    items:
+      - name: List of instructions
+        href: ../template-builder/operations/all.md
+      - name: Input and output data
+        items:
+          - name: Working with data
+            href: ../template-builder/operations/work-with-data.md
+          - name: Read and write
+            href: ../template-builder/operations/input-output-data.md
+          - name: Creating specifications
+            href: ../template-builder/operations/create-specs.md
+          - name: Clearing the entered values
+            href: ../template-builder/operations/clear-data.md
+      - name: Audio and video
+        items:
+          - name: Playing back audio
+            href: ../template-builder/operations/play-audio.md
+          - name: Inserting videos
+            href: ../template-builder/operations/insert-videos.md
+          - name: Comparing video clips
+            href: ../template-builder/operations/sbs-video.md
+      - name: Working with text and numbers
+        items:
+          - name: Components for working with text
+            href: ../template-builder/operations/components-for-texts.md
+          - name: Text formatting
+            href: ../template-builder/operations/text-formatting.md
+          - name: Number input field
+            href: ../template-builder/operations/components-for-numbers.md
+      - name: Working with pictures
+        items:
+          - name: Inserting images
+            href: ../template-builder/operations/insert-images.md
+          - name: Object selection in an image
+            href: ../template-builder/operations/select-areas.md
+      - name: Display settings
+        items:
+          - name: Task display
+            href: ../template-builder/operations/set-plugin-toloka.md
+          - name: Writing direction
+            href: ../template-builder/operations/rtl-ltr.md
+      - name: Inserting links
+        href: ../template-builder/operations/internet-search.md
+  - name: Tips and recommendations
+    items:
+      - name: Configure keyboard shortcuts
+        href: ../template-builder/best-practices/hotkeys.md
+      - name: Reviewing assignments automatically
+        href: ../template-builder/best-practices/conditions.md
+      - name: Show hints
+        href: ../template-builder/best-practices/show-hints.md
+      - name: Reuse code
+        href: ../template-builder/best-practices/reuse.md
+  - name: Component reference guide
+    include:
+      path: template-builder-reference-toc.yaml
+      mode: link
+  - name: Troubleshooting
+    href: ../template-builder/troubleshooting/troubleshooting.md
+  - name: Support
+    href: ../template-builder/concepts/support.md
+base: en

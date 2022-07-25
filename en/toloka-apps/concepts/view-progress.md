@@ -43,4 +43,4 @@ Task items in the **Processing** status will continue to be labeled and you'll b
 
 {% endnote %}
 
-{% include [contact-support](_includes/contact-support.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

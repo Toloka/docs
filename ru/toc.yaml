@@ -1,0 +1,513 @@
+title: Документация Толоки
+href: index.md
+items:
+  - name: С чего начать
+    items:
+      - name: Как устроена Толока
+        href: https://toloka.ai/ru/docs/guide/concepts/overview.html
+      - name: Регистрация
+        href: https://toloka.ai/ru/docs/guide/concepts/access.html
+      - name: Первый проект
+        href: https://toloka.ai/ru/docs/guide/concepts/first-project.html
+      - name: Безопасность данных
+        href: https://toloka.ai/ru/docs/guide/concepts/data-security.html
+  - name: Важные советы
+    items:
+      - name: Какие задания нельзя размещать в Толоке
+        href: https://toloka.ai/ru/docs/guide/concepts/unwanted.html
+      - name: Защитите свои данные
+        href: https://toloka.ai/ru/docs/guide/concepts/protect-your-data.html
+      - name: Частые ошибки заказчиков
+        href: https://toloka.ai/ru/docs/guide/concepts/frequent-customer-errors.html
+      - name: Как сэкономить
+        href: https://toloka.ai/ru/docs/guide/concepts/save-money.html
+      - name: Песочница
+        href: https://toloka.ai/ru/docs/guide/concepts/sandbox.html
+  - name: Туториалы
+    items:
+      - name: Список примеров
+        href: https://toloka.ai/ru/docs/guide/concepts/usecases.html
+      - name: Изображения
+        items:
+          - name: Классификация изображений
+            href: https://toloka.ai/ru/docs/guide/concepts/categorization.html
+          - name: Сравнение изображений (Side-by-side)
+            href: https://toloka.ai/ru/docs/guide/concepts/side-by-side.html
+          - name: Распознавание объектов и выделение областей
+            href: https://toloka.ai/ru/docs/guide/concepts/selection.html
+          - name: Распознавание объектов и выделение областей (пример с декомпозицией)
+            items:
+              - name: Обзор
+                href: https://toloka.ai/ru/docs/guide/concepts/image-segmentation-overview.html
+              - name: Проект 1. Содержит ли изображение определенный объект
+                href: https://toloka.ai/ru/docs/guide/concepts/image-segmentation-project1.html
+              - name: Проект 2. Выделить объект на изображении
+                href: https://toloka.ai/ru/docs/guide/concepts/image-segmentation-project2.html
+              - name: Проект 3. Верно ли выделены объекты на изображении
+                href: https://toloka.ai/ru/docs/guide/concepts/image-segmentation-project3.html
+              - name: 'Приложение: полный код всех проектов'
+                href: https://toloka.ai/ru/docs/guide/concepts/image-segmentation-appendix.html
+      - name: Видео
+        items:
+          - name: Классификация видео
+            href: https://toloka.ai/ru/docs/guide/concepts/video-moderation.html
+      - name: Аудио
+        items:
+          - name: Транскрипция аудио
+            href: https://toloka.ai/ru/docs/guide/concepts/transcript-audio.html
+          - name: Запись речи
+            href: https://toloka.ai/ru/docs/guide/concepts/transcript-audio.html
+      - name: Тексты
+        items:
+          - name: Анализ тональности и модерация контента
+            href: https://toloka.ai/ru/docs/guide/concepts/content-moderation.html
+      - name: Обогащение данных
+        items:
+          - name: Опросы
+            href: https://toloka.ai/ru/docs/guide/concepts/questionnaire.html
+          - name: Поиск характеристик товара
+            href: https://toloka.ai/ru/docs/guide/concepts/internet-search.html
+          - name: Поиск фотографий товаров (пример с декомпозицией)
+            items:
+              - name: Обзор
+                href: https://toloka.ai/ru/docs/guide/concepts/data-collection.html
+              - name: Проект 1. Содержит ли фотография определенный объект?
+                href: https://toloka.ai/ru/docs/guide/concepts/contain_item.html
+              - name: Проект 2. Найти похожий объект в интернет-магазине
+                href: https://toloka.ai/ru/docs/guide/concepts/find_an_item_in_store.html
+              - name: Проект 3. Похож ли найденный объект на исходный?
+                href: https://toloka.ai/ru/docs/guide/concepts/item_look_similar.html
+              - name: Проект 4. Какой из найденных объектов больше похож на исходный?
+                href: https://toloka.ai/ru/docs/guide/concepts/item_more_similar.html
+              - name: 'Приложение: полный код всех проектов'
+                href: https://toloka.ai/ru/docs/guide/concepts/appendix-expanded-code.html
+      - name: Полевые задачи
+        items:
+          - name: Сбор офлайн-данных
+            href: https://toloka.ai/ru/docs/guide/concepts/walk.html
+          - name: Мониторинг цен
+            href: https://toloka.ai/ru/docs/guide/concepts/price-tag.html
+          - name: Мониторинг товаров
+            href: https://toloka.ai/ru/docs/guide/concepts/audit-of-planogram-of-product-placement-in-store.html
+          - name: 'Сбор данных: организации'
+            href: https://toloka.ai/ru/docs/guide/concepts/monitoring-objects-in-organizations.html
+          - name: Мониторинг объектов в полях
+            href: https://toloka.ai/ru/docs/guide/concepts/monitoring.html
+          - name: Примеры кастомизации
+            items:
+              - name: Обзор
+                href: https://toloka.ai/ru/docs/guide/concepts/advanced-features.html
+              - name: Добавить кнопку
+                href: https://toloka.ai/ru/docs/guide/concepts/advanced-features-button.html
+              - name: Прикрепление файлов
+                href: https://toloka.ai/ru/docs/guide/concepts/advanced-features-attach.html
+              - name: Добавить поля с описанием
+                href: https://toloka.ai/ru/docs/guide/concepts/advanced-features-input-data.html
+              - name: Добавить картинку
+                href: https://toloka.ai/ru/docs/guide/concepts/advanced-features-show-pic.html
+              - name: Добавить текстовое поле
+                href: https://toloka.ai/ru/docs/guide/concepts/advanced-features-input-string.html
+              - name: Добавить варианты ответа
+                href: https://toloka.ai/ru/docs/guide/concepts/advanced-features-input-selector.html
+  - name: Проекты
+    items:
+      - name: Порядок действий
+        href: https://toloka.ai/ru/docs/guide/concepts/main-steps.html
+      - name: Декомпозиция задания
+        href: https://toloka.ai/ru/docs/guide/concepts/solution-architecture.html
+      - name: Начальные настройки проекта
+        items:
+          - name: Создание проекта
+            href: https://toloka.ai/ru/docs/guide/concepts/project.html
+          - name: Редактирование проекта
+            href: https://toloka.ai/ru/docs/guide/concepts/edit-project.html
+          - name: Написание инструкции
+            href: https://toloka.ai/ru/docs/guide/concepts/instruction.html
+          - name: Интерфейс задания
+            items:
+              - name: Конструктор шаблонов
+                items:
+                  - include:
+                      path: _includes/template-builder-toc.yaml
+                      mode: link
+              - name: Редактор HTML/CSS/JS
+                items:
+                  - name: Интерфейс задания
+                    href: https://toloka.ai/ru/docs/guide/concepts/spec.html
+                  - name: Адаптировать задание для мобильных устройств
+                    href: https://toloka.ai/ru/docs/guide/concepts/mobile.html
+                  - name: HTML
+                    items:
+                      - name: Список компонентов
+                        href: https://toloka.ai/ru/docs/guide/concepts/t-components.html
+                      - name: Handlebars
+                        items:
+                          - name: Выражения и хелперы
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/handlebars.html
+                          - name: Дополнительные хелперы
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/helpers.html
+                      - name: Компоненты для решения популярных задач
+                        items:
+                          - name: Поле для ввода строки
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/string.html
+                          - name: Поле для ввода текста
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/text.html
+                          - name: Поле для ввода строки с саджестом
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/suggest.html
+                          - name: Переключатель
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/radiobuttons.html
+                          - name: Флажок
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/checkboxes.html
+                          - name: Выпадающий список
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/list.html
+                          - name: Кнопка для загрузки файла
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/upload-file.html
+                          - name: Кнопка для загрузки картинки
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/upload-picture.html
+                          - name: Кнопка для записи и загрузки видео
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/upload-video.html
+                          - name: Кнопка для записи и загрузки аудио
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/upload-audio.html
+                          - name: Кнопка с проверкой перехода по ссылке
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/button-link.html
+                          - name: Картинка с возможностью выделения областей
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/image-annotation.html
+                          - name: Редактор для сегментации текста
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/segmentation-editor.html
+                          - name: Картинка
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/img.html
+                          - name: Кнопка
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/button.html
+                          - name: Встроенный фрейм
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/iframe.html
+                          - name: Отформатированный текст в HTML
+                            href: https://toloka.ai/ru/docs/guide/concepts/t-components/html.html
+                  - name: JS
+                    items:
+                      - name: Как использовать JavaScript-расширения
+                        href: https://toloka.ai/ru/docs/guide/concepts/spec-advanced.html
+                      - name: Класс Task
+                        href: https://toloka.ai/ru/docs/guide/concepts/js/task.html
+                      - name: Класс TaskSuite
+                        href: https://toloka.ai/ru/docs/guide/concepts/js/tasksuite.html
+                      - name: Сервисы для решения специфических задач
+                        href: https://toloka.ai/ru/docs/guide/concepts/js/services.html
+          - name: Входные и выходные данные
+            href: https://toloka.ai/ru/docs/guide/concepts/incoming.html
+          - name: Настройка контроля качества
+            href: https://toloka.ai/ru/docs/guide/concepts/project-qa.html
+          - name: Перевод на другие языки
+            href: https://toloka.ai/ru/docs/guide/concepts/project-languages.html
+          - name: Возврат к предыдущей версии проекта
+            href: https://toloka.ai/ru/docs/guide/concepts/project-back-to-version.html
+          - name: Промежуточная статистика
+            href: https://toloka.ai/ru/docs/guide/concepts/project-interim-statistics.html
+      - name: Настройки пула
+        items:
+          - name: Общая информация
+            items:
+              - name: Создание пула
+                href: https://toloka.ai/ru/docs/guide/concepts/pool-main.html
+              - name: Редактирование пула
+                href: https://toloka.ai/ru/docs/guide/concepts/pool-edit.html
+          - name: Выбор аудитории
+            items:
+              - name: Фильтры
+                href: https://toloka.ai/ru/docs/guide/concepts/filters.html
+          - name: Ценообразование
+            items:
+              - name: Настройка ценообразования
+                href: https://toloka.ai/ru/docs/guide/concepts/dynamic-pricing.html
+          - name: Контроль качества
+            items:
+              - name: Настройка контроля качества
+                href: https://toloka.ai/ru/docs/guide/concepts/qa-pool-settings.html
+              - name: Правила контроля качества
+                items:
+                  - name: 'Как проверять исполнителей: правила контроля качества'
+                    href: https://toloka.ai/ru/docs/guide/concepts/check-performers.html
+                  - name: Список правил
+                    href: https://toloka.ai/ru/docs/guide/concepts/control.html
+                  - name: Параметр «Помнить значений»
+                    href: https://toloka.ai/ru/docs/guide/concepts/remember-values.html
+                  - name: Контрольные задания
+                    href: https://toloka.ai/ru/docs/guide/concepts/goldenset.html
+                  - name: Мнение большинства
+                    href: https://toloka.ai/ru/docs/guide/concepts/mvote.html
+                  - name: Быстрые ответы
+                    href: https://toloka.ai/ru/docs/guide/concepts/quick-answers.html
+                  - name: Капча
+                    href: https://toloka.ai/ru/docs/guide/concepts/captcha.html
+                  - name: Пропуск заданий
+                    href: https://toloka.ai/ru/docs/guide/concepts/skipped-assignments.html
+                  - name: Заработок
+                    href: https://toloka.ai/ru/docs/guide/concepts/income.html
+                  - name: Выполненные задания
+                    href: https://toloka.ai/ru/docs/guide/concepts/submitted-answers.html
+                  - name: Результаты проверки
+                    href: https://toloka.ai/ru/docs/guide/concepts/reviewing-assignments.html
+                  - name: Повторное выполнение заданий после блокировки исполнителя
+                    href: https://toloka.ai/ru/docs/guide/concepts/restore-task-overlap.html
+                  - name: Обработка отклоненных и принятых заданий
+                    href: https://toloka.ai/ru/docs/guide/concepts/reassessment-after-accepting.html
+              - name: Настройки перекрытия
+                items:
+                  - name: Что такое перекрытие
+                    href: https://toloka.ai/ru/docs/guide/concepts/overlap-faq.html
+                  - name: Динамическое перекрытие
+                    href: https://toloka.ai/ru/docs/guide/concepts/dynamic-overlap.html
+                  - name: Выборочная проверка мнением большинства
+                    href: https://toloka.ai/ru/docs/guide/concepts/selective-mvote.html
+              - name: Соотношение скорости и качества
+                href: https://toloka.ai/ru/docs/guide/concepts/adjust.html
+          - name: Дополнительные настройки
+            items:
+              - name: Отложенная приемка
+                href: https://toloka.ai/ru/docs/guide/concepts/offline-accept.html
+              - name: Отправка пула в архив
+                href: https://toloka.ai/ru/docs/guide/concepts/pool-archive.html
+              - name: Промежуточная статистика
+                href: https://toloka.ai/ru/docs/guide/concepts/pool-interim-statistic.html
+      - name: Задания
+        items:
+          - name: Порядок действий
+            href: https://toloka.ai/ru/docs/guide/concepts/pool.html
+          - name: Создание файла с заданиями
+            href: https://toloka.ai/ru/docs/guide/concepts/pool_csv.html
+          - name: Загрузка заданий в пул
+            items:
+              - name: Как загрузить задания
+                href: https://toloka.ai/ru/docs/guide/concepts/task_upload.html
+              - name: Способы распределения заданий
+                href: https://toloka.ai/ru/docs/guide/concepts/distribute-tasks-by-pages.html
+              - name: Сохранить порядок заданий
+                href: https://toloka.ai/ru/docs/guide/concepts/save-order.html
+          - name: Разметка заданий
+            items:
+              - name: Обзор
+                href: https://toloka.ai/ru/docs/guide/concepts/task_markup.html
+              - name: Самостоятельная разметка
+                href: https://toloka.ai/ru/docs/guide/concepts/task-markup-by-yourself.html
+      - name: Добавление обучения (опционально)
+        href: https://toloka.ai/ru/docs/guide/concepts/train.html
+      - name: Пополнение счета
+        items:
+        - name: Для резидентов России
+          href: https://toloka.ai/ru/docs/guide/steps/refill-russia.html
+        - name: Для нерезидентов России
+          href: https://toloka.ai/ru/docs/guide/steps/refill.html
+      - name: Запуск и остановка пула
+        href: https://toloka.ai/ru/docs/guide/concepts/pool-run-and-stop.html
+      - name: Результаты
+        items:
+          - name: Получение результатов
+            href: https://toloka.ai/ru/docs/guide/concepts/result-of-eval.html
+          - name: Проверка ответов исполнителей
+            href: https://toloka.ai/ru/docs/guide/concepts/accept.html
+          - name: Агрегация результатов
+            href: https://toloka.ai/ru/docs/guide/concepts/result-aggregation.html
+      - name: Анализ проекта
+        items:
+          - name: Рейтинг проекта
+            href: https://toloka.ai/ru/docs/guide/concepts/project_rating_stat.html
+          - name: Статистика по проекту
+            href: https://toloka.ai/ru/docs/guide/concepts/project-statistic.html
+          - name: Статистика по пулу
+            href: https://toloka.ai/ru/docs/guide/concepts/pool_statistic-pool.html
+  - name: Bespoke-решения
+    hidden: true
+    items:
+      - include:
+          path: _includes/toloka-apps-toc.yaml
+          mode: link
+  - name: Настройки Толоки
+    items:
+      - name: Пользователи
+        items:
+          - name: Просмотр исполнителей
+            href: https://toloka.ai/ru/docs/guide/concepts/users.html
+          - name: Бонусы
+            href: https://toloka.ai/ru/docs/guide/concepts/bonus.html
+          - name: Общение
+            href: https://toloka.ai/ru/docs/guide/concepts/messaging.html
+          - name: Блокировка
+            href: https://toloka.ai/ru/docs/guide/concepts/ban.html
+      - name: Навыки
+        items:
+          - name: Как пользоваться навыками
+            href: https://toloka.ai/ru/docs/guide/concepts/nav.html
+          - name: Глобальные навыки
+            href: https://toloka.ai/ru/docs/guide/concepts/nav-cross-project.html
+          - name: Создание навыка
+            href: https://toloka.ai/ru/docs/guide/concepts/nav-create.html
+          - name: Назначение навыка
+            href: https://toloka.ai/ru/docs/guide/concepts/nav-assign.html
+          - name: Использование навыка
+            href: https://toloka.ai/ru/docs/guide/concepts/nav-use.html
+          - name: Редактирование навыка
+            href: https://toloka.ai/ru/docs/guide/concepts/nav-edit.html
+          - name: Удаление навыка
+            href: https://toloka.ai/ru/docs/guide/concepts/nav-delete.html
+          - name: История изменений навыка
+            href: https://toloka.ai/ru/docs/guide/concepts/nav-history.html
+      - name: Профиль
+        items:
+          - name: Про деньги
+            items:
+              - name: Об управлении счетом
+                href: https://toloka.ai/ru/docs/guide/concepts/budget.html
+              - name: Пополнение счета
+                items:
+                - name: Для резидентов России
+                  href: https://toloka.ai/ru/docs/guide/concepts/refill-russia.html
+                - name: Для нерезидентов России
+                  href: https://toloka.ai/ru/docs/guide/concepts/refill.html
+              - name: Промокоды
+                href: https://toloka.ai/ru/docs/guide/concepts/promocodes.html
+              - name: Возврат средств
+                href: https://toloka.ai/ru/docs/guide/concepts/refund.html
+              - name: Отчетные документы
+                href: https://toloka.ai/ru/docs/guide/concepts/documents.html
+              - name: Вопросы и ответы
+                href: https://toloka.ai/ru/docs/guide/concepts/questions.html
+          - name: Совместный доступ к аккаунту заказчика
+            href: https://toloka.ai/ru/docs/guide/concepts/multiple-access.html
+  - name: Рекомендации
+    items:
+      - name: Хранение данных
+        items:
+          - name: Где разместить файлы
+            href: https://toloka.ai/ru/docs/guide/concepts/cloud-storage.html
+          - name: Amazon S3
+            href: https://toloka.ai/ru/docs/guide/concepts/amazon-cloud-storage.html
+          - name: Azure Blob Storage
+            href: https://toloka.ai/ru/docs/guide/concepts/azure-cloud-storage.html
+          - name: Google Cloud Storage
+            href: https://toloka.ai/ru/docs/guide/concepts/google-cloud-storage.html
+          - name: Yandex Object Storage
+            href: https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html
+      - name: Советы по составлению заданий
+        href: https://toloka.ai/ru/docs/guide/concepts/faq.html
+      - name: Использование экзаменов
+        href: https://toloka.ai/ru/docs/guide/concepts/how-to-use-exams.html
+      - name: Полезные статьи про Толоку
+        href: https://toloka.ai/ru/docs/guide/useful-articles/useful-articles-about-toloka.html
+      - name: Критерии качественного проекта
+        items:
+          - name: Общие критерии
+            href: https://toloka.ai/ru/docs/guide/concepts/additionals-q.html
+          - name: Дополнительные критерии для разных типов заданий
+            href: https://toloka.ai/ru/docs/guide/concepts/task-types-q.html
+  - name: Разработчикам
+    items:
+      - name: REST API
+        items:
+          - name: API Толоки
+            items:
+              - include:
+                  path: _includes/toloka-api-toc.yaml
+                  mode: link
+          - name: API Bespoke-решений
+            hidden: true
+            items:
+              - name: Как пользоваться
+                items:
+                  - name: Доступ к API
+                    href: https://toloka.ai/ru/docs/toloka-apps/api/concepts/authorization.html
+                  - name: Быстрый старт API
+                    href: https://toloka.ai/ru/docs/toloka-apps/api/concepts/quickstart-api.html
+                  - name: Потоковая обработка элементов разметки
+                    href: https://toloka.ai/ru/docs/toloka-apps/api/concepts/streaming-items.html
+              - name: Справочник
+                items:
+                  - name: API Toloka Apps external
+                    href: https://toloka.ai/ru/docs/toloka-apps/api/ref/index.html
+                  - name: app
+                    items:
+                      - name: Получить список шаблонов проектов (Apps)
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app/apps_get.html
+                      - name: Информация о шаблоне проекта
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app/apps_app_id_get.html
+                  - name: app-project
+                    items:
+                      - name: Архивировать проект
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html
+                      - name: Создать новый проект
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_post.html
+                      - name: Получить информацию о проекте
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
+                      - name: Получить список проектов
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_get.html
+                      - name: Разархивировать проект
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.html
+                  - name: batch
+                    items:
+                      - name: Обновить имя пакета данных
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_patch.html
+                      - name: Создать новый пакет данных с первой пачкой элементов
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.html
+                      - name: Получить информацию о пакете данных
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
+                      - name: Получить список пакетов данных в проекте
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.html
+                      - name: Возобновить обработку пакета данных
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_resume_post.html
+                      - name: Запустить обработку пакета данных
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.html
+                      - name: Остановить обработку пакета данных
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_stop_post.html
+                  - name: item
+                    items:
+                      - name: Добавить новый элемент в пакет данных
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_post.html
+                      - name: Добавить несколько элементов в пакет данных
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.html
+                      - name: Получить информацию об элементе разметки
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html
+                      - name: Получить список всех элементов в проекте
+                        href: https://toloka.ai/ru/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html
+      - name: Python SDK
+        items:
+          - name: Crowd-Kit
+            items:
+              - name: Обзор
+                href: https://toloka.ai/en/docs/crowd-kit/
+          - name: Toloka-Kit
+            items:
+              - name: Обзор
+                href: https://toloka.ai/en/docs/toloka-kit/
+  - name: Решение проблем и поддержка
+    items:
+      - name: Получить помощь
+        href: https://toloka.ai/ru/docs/guide/concepts/get-help.html
+      - name: Все вопросы на одной странице
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/troubleshooting.html
+      - name: Регистрация и начало работы
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/register-and-start.html
+      - name: Песочница
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/sandbox.html
+      - name: Настройка проекта
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/project-settings.html
+      - name: Настройка пула
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/pool-setup.html
+      - name: Добавление заданий в пул
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/adding-tasks-to-the-pool.html
+      - name: Работа с результатами
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/result-questions.html
+      - name: Архивация пулов и проектов
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/pool-n-project-archive.html
+      - name: Финансы
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/finance.html
+      - name: Исполнители
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/users.html
+      - name: Вопросы о шаблонах
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/questions-about-templates.html
+      - name: Служба поддержки
+        href: https://toloka.ai/ru/docs/guide/troubleshooting/support.html
+  - name: Истории успеха
+    href: https://toloka.ai/success-stories/
+  - name: Глоссарий
+    href: glossary.md
+  - name: История изменений
+    href: https://toloka.ai/changelog/
+base: ru

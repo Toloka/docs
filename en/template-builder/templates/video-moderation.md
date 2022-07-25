@@ -83,4 +83,4 @@ The [helper.switch](../reference/helper.switch.md) component displays an interfa
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6tt)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

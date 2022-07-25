@@ -44,4 +44,4 @@ TSV-файл
 
 : Элемент разметки — это единица разметки, данные, которые загружаются в пакет данных. Пакет данных состоит из элементов разметки, проект — из пакетов.
 
-{% include [contact-support](_includes/contact-support.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

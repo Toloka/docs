@@ -1,6 +1,6 @@
 # Начало работы
 
-{% include [index-abstract-quickstart](_includes/index/id-index/abstract-quickstart.md) %}
+{% include [index-abstract-quickstart](../_includes/abstract-quickstart.md) %}
 
 ## Выберите Bespoke-решение {#choose-app-project}
 
@@ -59,7 +59,7 @@
 
 {% note tip %}
 
-Если вам требуется помощь в настройке проекта, [свяжитесь с нами](https://toloka.ai/ru/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
+Если вам требуется помощь в настройке проекта, [свяжитесь с нами](support.md).
 
 {% endnote %}
 
@@ -73,8 +73,8 @@
 
 {% cut "Я не нашел подходящее Bespoke-решение" %}
 
-Если вы не нашли решение, которое бы подходило под ваши цели, [напишите нам](https://toloka.ai/ru/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
+Если вы не нашли решение, которое бы подходило под ваши цели, [напишите нам](support.md).
 
 {% endcut %}
 
-{% include [contact-support](_includes/contact-support.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

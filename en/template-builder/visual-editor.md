@@ -48,4 +48,4 @@ The interface of the visual editor looks like this:
 - [Object recognition & detection preset](templates/object-recognition.md)
 - [Product search relevance](templates/product-search-relevance.md)
 
-[![Contact support](_images/buttons/contact-support.svg)](concepts/support.md)
+{% include [contact-support](_includes/contact-support.md) %}
