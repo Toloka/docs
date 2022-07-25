@@ -1,6 +1,6 @@
 # condition.required
 
-Checks that the data is filled in. This way you can get a Toloker to answer all the required questions.
+Checks that the field which must contain the data is present in the response. This way you can get a Toloker to answer all the required questions.
 
 If used inside the `validation` property, you can omit the `data` property and the same property will be used from the parent component [field](fields.md) (the one that contains the `condition.required` component).
 

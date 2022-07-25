@@ -2,7 +2,14 @@
 
 The component displays several data blocks of the same width on a single horizontal panel. For example, you can use this to compare several photos.
 
-You can set the minimum width for data blocks.
+You can add selection buttons or a field for comment under the compared elements.
+
+[View example in the sandbox](https://ya.cc/t/c9D7Dl0K3X6bm2).
+
+Differences from the [layout.compare](layout.compare.md) component:
+
+- You can add buttons which allow hiding the elements. Use it if you need to compare, for example, 5 photos at once and need to choose between two.
+- You can configure only common control elements. You can't add separate buttons under each of the compared element.
 
 ## Component properties {#properties}
 

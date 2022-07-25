@@ -12,7 +12,7 @@ The list items can contain any component, including a list of other components. 
 
 ## Managing components
 
-To add a new list item, Tolokers click the button. To remove an item, they click on the `x` icon. The icon appears when hovering over the list item.
+To add a new list item, Tolokers click the button. To remove an item, they click the `x` icon. The icon appears when hovering over the list item.
 
 To prevent a Toloker from adding too many list items, set the maximum list length. You can also use the `editable` property to block Tolokers from changing a component, like when a certain event occurs.
 

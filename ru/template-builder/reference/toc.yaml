@@ -78,6 +78,8 @@ items:
     href: field.image-annotation.md
   - name: field.list
     href: field.list.md
+  - name: field.map
+    href: field.map.md
   - name: field.media-file
     href: field.media-file.md
   - name: field.number
