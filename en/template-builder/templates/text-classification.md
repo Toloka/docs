@@ -4,7 +4,7 @@ For this type of project, you can use the **Clickbait or not?** preset.
 
 This preset helps you classify any kind of text for training classifiers and NLP models.
 
-Take a look at the example: the labeling interface includes a text box and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+Take a look at the example: the labeling interface includes a text box, and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GCr6AzRu3Wk6so)
 
@@ -135,7 +135,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vHxwcfNM3Wk7BK)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/5GdOsaHz3XFSUH)
 
 ## Add a response field {#add-text-area}
 
@@ -236,8 +236,8 @@ Decide whether a Toloker can select only one or multiple answer options:
         "value": "clickbate"
       },
       {
-      "label": "Too long",
-      "value": "long"
+        "label": "Too long",
+        "value": "long"
       },
       {
         "label": "Gramatically incorrect",
@@ -265,7 +265,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
 - One option (a radio button)
 
-  The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2-4 short answer options.
+  The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2–4 short answer options.
 
   If there are more answer options, or they are long, it's better to use [field.radio-group](../reference/field.radio-group.md), as in the example.
 
@@ -378,13 +378,17 @@ Add a button that opens the search results and generate a search query link usin
 
 ```json
 {
-  "type": "helper.search-query",
-  "engine": "bing",
-  "query": {
-    "type": "data.input",
-    "path": "link"
+  "type": "condition.link-opened",
+  "hint": "Follow the link",
+  "url": {
+    "type": "helper.search-query",
+    "query": {
+      "type": "data.input",
+      "path": "link"
+    },
+    "engine": "bing"
   }
-}  
+}
 ```
 
 {% endcut %}
