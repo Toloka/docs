@@ -1,5 +1,5 @@
 # HRRASA
-`crowdkit.aggregation.embeddings.hrrasa.HRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/embeddings/hrrasa.py#L34)
+`crowdkit.aggregation.embeddings.hrrasa.HRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/embeddings/hrrasa.py#L27)
 
 ```python
 HRRASA(
@@ -10,7 +10,7 @@ HRRASA(
     lambda_out: float = 0.5,
     alpha: float = 0.05,
     calculate_ranks: bool = False,
-    output_similarity=glue_similarity
+    output_similarity: Callable[[str, List[List[str]]], float] = glue_similarity
 )
 ```
 
@@ -70,6 +70,7 @@ in Information Retrieval (SIGIR ’20)*, July 25–30, 2020, Virtual Event, Chin
 `calculate_ranks`|**bool**|<p>If true, calculate additional attribute `ranks_`.</p>
 
 **Examples:**
+
 
 ```python
 import numpy as np

@@ -1,5 +1,5 @@
 # GLAD
-`crowdkit.aggregation.classification.glad.GLAD` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/classification/glad.py#L31)
+`crowdkit.aggregation.classification.glad.GLAD` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/glad.py#L24)
 
 ```python
 GLAD(
@@ -70,6 +70,7 @@ Whose Vote Should Count More: Optimal Integration of Labels from Labelers of Unk
 `betas_`|**Series**|<p>Tasks&#x27; beta parameters. A pandas.Series indexed by `task` that contains estimated beta parameters.</p>
 
 **Examples:**
+
 
 ```python
 from crowdkit.aggregation import GLAD

@@ -1,5 +1,5 @@
 # evaluate
-`crowdkit.aggregation.utils.evaluate` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/utils.py#L36)
+`crowdkit.aggregation.utils.evaluate` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/utils.py#L35)
 
 ```python
 evaluate(

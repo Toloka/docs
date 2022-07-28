@@ -1,11 +1,11 @@
-# predict
-`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/gold_majority_vote.py#L90)
+# fit_predict
+`crowdkit.aggregation.classification.mace.MACE.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/mace.py#L234)
 
 ```python
-predict(self, data: DataFrame)
+fit_predict(self, data: DataFrame)
 ```
 
-Infer the true labels when the model is fitted.
+Fits the MACE model and returns the labels.
 
 ## Parameters Description
 

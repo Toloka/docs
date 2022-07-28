@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/texts/text_hrrasa.py#L67)
+`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/texts/text_hrrasa.py#L76)
 
 ```python
 fit_predict(

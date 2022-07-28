@@ -1,11 +1,11 @@
-# predict
-`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/gold_majority_vote.py#L90)
+# fit_predict
+`crowdkit.aggregation.classification.kos.KOS.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/kos.py#L107)
 
 ```python
-predict(self, data: DataFrame)
+fit_predict(self, data: DataFrame)
 ```
 
-Infer the true labels when the model is fitted.
+Fit the model and return aggregated results.
 
 ## Parameters Description
 
@@ -17,8 +17,8 @@ Infer the true labels when the model is fitted.
 
   Tasks' labels.
 A pandas.Series indexed by `task` such that `labels.loc[task]`
-is the tasks's most likely true label.
+is the tasks' most likely true label.
 
 * **Return type:**
 
-  Series
+  DataFrame

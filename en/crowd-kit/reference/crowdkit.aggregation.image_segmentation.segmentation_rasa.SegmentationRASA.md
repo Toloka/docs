@@ -1,5 +1,5 @@
 # SegmentationRASA
-`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L15)
+`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L15)
 
 ```python
 SegmentationRASA(
@@ -30,6 +30,7 @@ pages 24–28 Hong Kong, China, November 3, 2019.
 `segmentations_`|**Series**|<p>Tasks&#x27; segmentations. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s aggregated segmentation.</p>
 
 **Examples:**
+
 
 ```python
 import numpy as np

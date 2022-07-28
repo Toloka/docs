@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/zero_based_skill.py#L66)
+`crowdkit.aggregation.classification.kos.KOS.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/kos.py#L58)
 
 ```python
 fit(self, data: DataFrame)
@@ -19,4 +19,4 @@ Fit the model.
 
 * **Return type:**
 
-  [ZeroBasedSkill](crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill.md)
+  [KOS](crowdkit.aggregation.classification.kos.KOS.md)

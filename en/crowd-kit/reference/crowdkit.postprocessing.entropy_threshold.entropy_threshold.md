@@ -1,5 +1,5 @@
 # entropy_threshold
-`crowdkit.postprocessing.entropy_threshold.entropy_threshold` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/postprocessing/entropy_threshold.py#L11)
+`crowdkit.postprocessing.entropy_threshold.entropy_threshold` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/postprocessing/entropy_threshold.py#L13)
 
 ```python
 entropy_threshold(
@@ -31,7 +31,7 @@ clicking one button.
 
 * **Return type:**
 
-  
+  DataFrame
 
 **Examples:**
 
@@ -50,3 +50,6 @@ answers = pd.DataFrame.from_records(
 )
 entropy_threshold(answers)
 ```
+0    1         A  (dog)
+2    2         A  (cat)
+4    3         A  (dog)

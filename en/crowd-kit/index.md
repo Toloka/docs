@@ -80,9 +80,9 @@ Below is the list of currently implemented methods, including the already availa
 | [Bradley-Terry](reference/crowdkit.aggregation.pairwise.bradley_terry.BradleyTerry.md) | ✅ |
 | [Noisy Bradley-Terry](reference/crowdkit.aggregation.pairwise.noisy_bt.NoisyBradleyTerry.md) | ✅ |
 
-## Support and Bug Reports
+## Questions and Bug Reports
 
-* For support and reporting bugs please use the [Crowd-Kit bugreport](https://github.com/Toloka/crowd-kit/issues) page.
+* For reporting bugs please use the [Toloka/bugreport](https://github.com/Toloka/crowdlib/issues) page.
 * Join our English-speaking [slack community](https://toloka.ai/community) for both tech and abstract questions.
 
 ## Source Code
@@ -92,3 +92,7 @@ Below is the list of currently implemented methods, including the already availa
 ## Toloka Global Community
 
 Stay informed about updates to the platform and open-source libraries — connect with the Toloka team in our [Global Community](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg) for announcements, discussions, and invites to events.
+
+## License
+
+© YANDEX LLC, 2020-2022. Licensed under the Apache License, Version 2.0. See LICENSE file for more details.

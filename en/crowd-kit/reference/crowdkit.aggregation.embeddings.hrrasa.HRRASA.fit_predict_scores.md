@@ -1,5 +1,5 @@
 # fit_predict_scores
-`crowdkit.aggregation.embeddings.hrrasa.HRRASA.fit_predict_scores` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/embeddings/hrrasa.py#L162)
+`crowdkit.aggregation.embeddings.hrrasa.HRRASA.fit_predict_scores` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/embeddings/hrrasa.py#L159)
 
 ```python
 fit_predict_scores(

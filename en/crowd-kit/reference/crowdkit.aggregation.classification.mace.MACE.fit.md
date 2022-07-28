@@ -1,11 +1,11 @@
 # fit
-`crowdkit.aggregation.classification.wawa.Wawa.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/wawa.py#L53)
+`crowdkit.aggregation.classification.mace.MACE.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/mace.py#L145)
 
 ```python
 fit(self, data: DataFrame)
 ```
 
-Fit the model.
+Fits the MACE model.
 
 ## Parameters Description
 
@@ -15,8 +15,8 @@ Fit the model.
 
 * **Returns:**
 
-  self.
+  The fitted MACE model.
 
 * **Return type:**
 
-  [Wawa](crowdkit.aggregation.classification.wawa.Wawa.md)
+  [MACE](crowdkit.aggregation.classification.mace.MACE.md)

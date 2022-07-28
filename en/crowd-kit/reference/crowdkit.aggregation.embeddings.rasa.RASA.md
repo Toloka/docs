@@ -1,5 +1,5 @@
 # RASA
-`crowdkit.aggregation.embeddings.rasa.RASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/embeddings/rasa.py#L22)
+`crowdkit.aggregation.embeddings.rasa.RASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/embeddings/rasa.py#L21)
 
 ```python
 RASA(
@@ -40,6 +40,7 @@ pages 24–28 Hong Kong, China, November 3, 2019.
 `embeddings_and_outputs_`|**DataFrame**|<p>Tasks&#x27; embeddings and outputs. A pandas.DataFrame indexed by `task` with `embedding` and `output` columns.</p>
 
 **Examples:**
+
 
 ```python
 import numpy as np
