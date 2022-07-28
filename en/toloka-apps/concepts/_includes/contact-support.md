@@ -1,1 +1,1 @@
-[![Contact support](../../_images/contact-support.svg)](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__new_1)
+[![Contact support](../../_images/contact-support.svg)](../../concepts/support.md)

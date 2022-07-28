@@ -21,7 +21,7 @@ The sample project described under "Quick start" is for the sandbox. To set up t
 1. Post your tasks.
 
     - [Choose a platform and get a token](./qs-placement.md#start).
-    - [Create a customizable project](./qs-placement.md#project) (`POST /api/v1/projects`).
+    - [Create a project](./qs-placement.md#project) (`POST /api/v1/projects`).
     - [Add a pool](./qs-placement.md#pool) (`POST /api/v1/pools`).
     - [Upload the tasks](./qs-placement.md#task) (`POST /api/v1/tasks`).
     - [Start (open) the pool](./qs-placement.md#pool-run) (`POST /api/v1/pools/<pool_id>/open`).

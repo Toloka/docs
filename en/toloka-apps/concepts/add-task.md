@@ -1,6 +1,6 @@
 # Uploading task items
 
-You can add data to a ready-to-go project with the **Active** or **Pending** status.
+You can add data to a bespoke project with the **Active** or **Pending** status.
 
 ## Creating a new batch {#new-batch}
 

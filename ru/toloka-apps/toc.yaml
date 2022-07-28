@@ -1,33 +1,21 @@
-title: Решения Ready-to-go
+title: Bespoke-решения
 href: index.md
 items:
   - name: Руководство
-    expanded: true
+    hidden: true
     items:
       - href: concepts/index.md
-        name: Ready-to-go
+        name: Bespoke
       - href: concepts/details.md
         name: Как устроен сервис
       - href: concepts/unwanted.md
         name: "Какие задания нельзя размещать в Толоке"
       - href: concepts/quickstart.md
         name: Начало работы
-      - name: Ready-to-go-решения
+      - name: Bespoke-решения
         items:
           - href: concepts/product-search-relevance.md
             name: Оценка релевантности товара поисковому запросу
-      - name: Где хранить данные
-        items:
-          - href: concepts/cloud-storage.md
-            name: Хранилища данных
-          - href: concepts/amazon-cloud-storage.md
-            name: Amazon S3
-          - href: concepts/azure-cloud-storage.md
-            name: Azure Blob Storage
-          - href: concepts/google-cloud-storage.md
-            name: Google Cloud Storage
-          - href: concepts/use-object-storage.md
-            name: Yandex Object Storage
       - href: concepts/add-task.md
         name: Загрузка элементов разметки
       - href: concepts/view-progress.md
@@ -38,7 +26,10 @@ items:
         name: Термины и определения
       - href: concepts/troubleshooting.md
         name: Решение проблем
-  - name: API решений Ready-to-go
+      - href: concepts/support.md
+        name: Служба поддержки
+  - name: API Bespoke-решений
+    hidden: true
     items:
       - name: Как пользоваться
         items:
@@ -57,7 +48,7 @@ items:
               - href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app/apps_app_id_get.html
                 name: Информация о шаблоне Апп-проекта
               - href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app/apps_get.html
-                name: Получить список шаблонов Ready-to-go-проектов (Apps)
+                name: Получить список шаблонов Bespoke-проектов (Apps)
           - name: app-project
             items:
               - href: https://toloka.ai/ru/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html

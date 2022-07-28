@@ -1,6 +1,6 @@
 # Оценка релевантности товара поисковому запросу
 
-Это Ready-to-go-решение поможет определить релевантность товара поисковому запросу.
+Это Bespoke-решение поможет определить релевантность товара поисковому запросу.
 
 ## Сценарии использования {#use_cases}
 
@@ -16,7 +16,7 @@
 
 {% note info %}
 
-По умолчанию эта функция отключена. Чтобы ее активировать, [свяжитесь с нами](https://toloka.ai/ru/docs/guide/troubleshooting/support.html#troubleshooting__new_1).
+По умолчанию эта функция отключена. Чтобы ее активировать, [свяжитесь с нами](https://toloka.ai/ru/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
 
 {% endnote %}
 
@@ -145,7 +145,7 @@
 
 ## Как запустить решение {#how-to-use}
 
-1. Нажмите **Проекты → Создать проект → Ready-to-go**.
+1. Нажмите **Проекты → Создать проект → Bespoke**.
 
 1. В разделе **Изображения** выберите **Оценка релевантности товара поисковому запросу**.
 
@@ -165,7 +165,7 @@
 
 ## Дополнительные возможности {#another}
 
-[Обратитесь к нам](https://toloka.ai/ru/docs/guide/troubleshooting/support.html#troubleshooting__new_1), чтобы подключить дополнительные возможности:
+[Обратитесь к нам](https://toloka.ai/ru/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1), чтобы подключить дополнительные возможности:
 
 - Поиск товара на вашей платформе с помощью нашей поисковой системы.
 - Использование метаданных. Например, для определения местонахождения исполнителя.
@@ -179,6 +179,6 @@
 До 10 000 | 0,25 $
 10 001 - 100 000 | 0,20 $
 100 001 - 500 000 | 0,17 $
-Более 500 000 | [Обратитесь к нам](https://toloka.ai/ru/docs/guide/troubleshooting/support.html#troubleshooting__new_1), чтобы получить особое предложение.
+Более 500 000 | [Обратитесь к нам](https://toloka.ai/ru/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1), чтобы получить особое предложение.
 
 {% include [contact-support](_includes/contact-support.md) %}

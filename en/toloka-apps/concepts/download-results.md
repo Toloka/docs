@@ -8,13 +8,13 @@ You can only download the results from a batch with the **Completed** status.
 
 ## Download all results {#download-all}
 
-1. Open your ready-to-go project and go to the appropriate batch.
+1. Open your bespoke project and go to the appropriate batch.
 1. Click **Download results** on the right.
 1. Wait until the data export is completed.
 
 ## View the results by item {#objects}
 
-1. Open your ready-to-go project and go to the appropriate batch. You'll see a list of labeled items.
+1. Open your bespoke project and go to the appropriate batch. You'll see a list of labeled items.
 1. Select an item and click on it. This opens a block of labeling results in JSON format.
 1. Click **Copy** on the right. This adds the block with labeled data to the clipboard.
 
@@ -22,7 +22,7 @@ You can only download the results from a batch with the **Completed** status.
 
 {% note info %}
 
-In ready-to-go projects, only automatic acceptance is available. You can't reject responses manually.
+In bespoke projects, only automatic acceptance is available. You can't reject responses manually.
 
 {% endnote %}
 

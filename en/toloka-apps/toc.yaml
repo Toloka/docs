@@ -1,8 +1,8 @@
-title: Ready-to-go solutions
+title: Bespoke solutions
 href: index.md
 items:
   - name: Guide
-    expanded: true
+    hidden: true
     items:
       - href: concepts/index.md
         name: About
@@ -10,22 +10,10 @@ items:
         name: What tasks can't be placed in Toloka?
       - href: concepts/quickstart.md
         name: Getting started
-      - name: Ready-to-go solutions
+      - name: Bespoke solutions
         items:
           - href: concepts/product-search-relevance.md
             name: Product search relevance
-      - name: Where to store data
-        items:
-          - href: concepts/cloud-storage.md
-            name: Data storage
-          - href: concepts/amazon-cloud-storage.md
-            name: Amazon S3
-          - href: concepts/azure-cloud-storage.md
-            name: Azure Blob Storage
-          - href: concepts/google-cloud-storage.md
-            name: Google Cloud Storage
-          - href: concepts/use-object-storage.md
-            name: Yandex Object Storage
       - href: concepts/add-task.md
         name: Uploading task items
       - href: concepts/view-progress.md
@@ -36,7 +24,10 @@ items:
         name: Terms and definitions
       - href: concepts/troubleshooting.md
         name: Troubleshooting
-  - name: Ready-to-go solutions API
+      - href: concepts/support.md
+        name: Support
+  - name: Bespoke solutions API
+    hidden: true
     items:
       - name: How to use
         items:
@@ -53,7 +44,7 @@ items:
           - name: app
             items:
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_get.html
-                name: Get the list of ready-to-go project templates (Apps)
+                name: Get the list of project templates (Apps)
               - href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_app_id_get.html
                 name: Information about the project template
           - name: app-project

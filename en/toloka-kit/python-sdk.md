@@ -60,7 +60,7 @@ These powerful software development kits make your work with Toloka much easier 
         <h3>API reference</h3>
         <ul>
             <li><a href="https://toloka.ai/docs/api/concepts/about.html">Toloka API</a></li>
-            <li><a href="https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html">Ready-to-go API</a></li>
+            <li><a href="https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html">Bespoke API</a></li>
         </ul>
     </div>
     <div class="grid-item">

@@ -1,6 +1,6 @@
 # Introduction
 
-The Toloka API lets you create or delete customizable projects, configure them as accurately as possible, and receive a list of these projects. Learn more about using ready-to-go projects and performing operations with them in the [API for ready-to-go projects](https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html) documentation.
+The Toloka API lets you create or delete projects, configure them as accurately as possible, and receive a list of these projects.
 
 You can:
 
