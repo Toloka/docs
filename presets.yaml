@@ -24,7 +24,7 @@ default:
   requester-mixing: https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html#distribute-tasks-by-pages__smart-mixing
   requester-pool-main: https://toloka.ai/docs/guide/concepts/pool-main.html
   requester-prj: https://toloka.ai/docs/guide/concepts/project.html
-  requester-profile-integration: https://toloka.yandex.com/requester/profile/integration
+  requester-profile-integration: https://platform.toloka.ai/requester/profile/integration
   requester-project-languages: https://toloka.ai/docs/guide/concepts/project-languages.html
   requester-quality: https://toloka.ai/docs/guide/concepts/check-performers.html
   requester-result: https://toloka.ai/docs/guide/concepts/result-of-eval.html
@@ -56,7 +56,7 @@ default:
   toloka-kit: https://github.com/Toloka/toloka-kit
   toloka-kit-doc: https://toloka.ai/en/docs/toloka-kit/
   toloka-linkedin: https://www.linkedin.com/company/toloka/
-  toloka-profile: https://toloka.yandex.ru/requester/profile
+  toloka-profile: https://platform.toloka.ai/requester/profile
   toloka-requester-concepts-yacloud-dita: https://toloka.ai/docs/guide/concepts/use-object-storage.html
   toloka-requester-create-tsv: https://toloka.ai/docs/guide/concepts/pool_csv.html
   toloka-requester-index-dita: https://toloka.ai/docs/guide/index.html

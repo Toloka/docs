@@ -21,6 +21,6 @@ Working with the Toloka API requires an OAuth access token. [Register](https://t
 
 - In the sandbox for debugging tasks: [https://sandbox.toloka.yandex.com/requester/profile/integration](https://sandbox.toloka.yandex.com/requester/profile/integration).
 
-- In the production version of Toloka: [https://toloka.yandex.com/requester/profile/integration](https://toloka.yandex.com/requester/profile/integration).
+- In the production version of Toloka: [https://platform.toloka.ai/requester/profile/integration](https://platform.toloka.ai/requester/profile/integration).
 
 <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/api/get-oauth-token.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/api/get-oauth-token.png" alt="Accessing the API" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>

@@ -132,7 +132,7 @@ Filters {#filters}
 
 : Criteria for choosing Tolokers. For example, you can select only Tolokers who speak English or have a certain skill.
 
-  Filters are used in the [pool](#pool) settings on the [Users](https://toloka.yandex.com/en/requester/workers) page and for [sending messages](https://toloka.ai/docs/guide/concepts/messaging.html) to a group of users. [Learn more](https://toloka.ai/docs/guide/concepts/filters.html)
+  Filters are used in the [pool](#pool) settings on the [Users](https://platform.toloka.ai/requester/workers) page and for [sending messages](https://toloka.ai/docs/guide/concepts/messaging.html) to a group of users. [Learn more](https://toloka.ai/docs/guide/concepts/filters.html)
 
 ### G
 

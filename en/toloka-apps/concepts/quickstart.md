@@ -4,7 +4,7 @@
 
 ## Choose a bespoke solution {#choose-app-project}
 
-1. Open the [page](https://toloka.yandex.com/requester/templates) with examples of tasks that are available in Toloka.
+1. Open the [page](https://platform.toloka.ai/requester/templates) with examples of tasks that are available in Toloka.
 1. Choose a solution that fits your task.
 
 ## Fill out a form {#set-application}

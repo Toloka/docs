@@ -361,7 +361,7 @@ API Толоки {#toloka-api}
 
 : Критерии отбора исполнителей. Например, чтобы отобрать только русскоязычных исполнителей или исполнителей с каким-то навыком.
 
-  Фильтры используются в настройках [пула](#pool), на странице [Пользователи](https://toloka.yandex.ru/ru/requester/workers) и при [отправке сообщений](https://toloka.ai/ru/docs/guide/concepts/messaging.html) группе пользователей. [Подробнее](https://toloka.ai/ru/docs/guide/concepts/filters.html)
+  Фильтры используются в настройках [пула](#pool), на странице [Пользователи](https://platform.toloka.ai/ru/requester/workers) и при [отправке сообщений](https://toloka.ai/ru/docs/guide/concepts/messaging.html) группе пользователей. [Подробнее](https://toloka.ai/ru/docs/guide/concepts/filters.html)
 
 ### Х
 

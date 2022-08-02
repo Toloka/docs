@@ -4,7 +4,7 @@
 
 ## Выберите Bespoke-решение {#choose-app-project}
 
-1. Откройте [страницу](https://toloka.yandex.ru/requester/templates) с примерами задач, которые можно решить в Толоке.
+1. Откройте [страницу](https://platform.toloka.ai/ru/requester/templates) с примерами задач, которые можно решить в Толоке.
 1. Выберите решение, которое подходит под вашу задачу.
 
 ## Заполните форму {#set-application}
