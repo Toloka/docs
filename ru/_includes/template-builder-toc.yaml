@@ -46,6 +46,8 @@ items:
             href: ../template-builder/templates/copywriting.md
           - name: Попарное сравнение текста
             href: ../template-builder/templates/sbs-text.md
+          - name: Классификация текстов
+            href: ../template-builder/templates/text-classification.md
   - name: Инструкции
     items:
       - name: Список инструкций
