@@ -35,7 +35,7 @@ h3 {
         <h2>Tutorials</h2>
         <p><a href="https://toloka.ai/docs/guide/tutorials/image-classification.html">Images</a></p>
         <p><a href="https://toloka.ai/docs/guide/concepts/video-moderation.html">Video</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/transcript-audio.html">Audio</a></p>
+        <p><a href="https://toloka.ai/docs/guide/tutorials/transcript-audio.html">Audio</a></p>
         <p><a href="https://toloka.ai/docs/guide/concepts/content-moderation.html">Texts</a></p>
         <p><a href="https://toloka.ai/docs/guide/concepts/questionnaire.html">Data enrichment</a></p>
         <p><a href="https://toloka.ai/docs/guide/concepts/walk.html">Field tasks</a></p>

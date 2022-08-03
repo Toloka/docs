@@ -34,7 +34,7 @@ items:
           - name: Image comparison (Side-by-side)
             href: https://toloka.ai/docs/guide/tutorials/side-by-side.html
           - name: Object recognition & detection
-            href: https://toloka.ai/docs/guide/concepts/selection.html
+            href: https://toloka.ai/docs/guide/tutorials/selection.html
           - name: Object recognition and area selection (example with decomposition)
             items:
               - name: Overview
@@ -54,7 +54,7 @@ items:
       - name: Audio
         items:
           - name: Audio transcription
-            href: https://toloka.ai/docs/guide/concepts/transcript-audio.html
+            href: https://toloka.ai/docs/guide/tutorials/transcript-audio.html
           - name: Voice recording
             href: https://toloka.ai/docs/guide/concepts/transcript-audio.html
       - name: Texts
