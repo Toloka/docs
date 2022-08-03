@@ -87,4 +87,4 @@ In addition, the example checks that each line has at least three characters, 
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC4QG)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

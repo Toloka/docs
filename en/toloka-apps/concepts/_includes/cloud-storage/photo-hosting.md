@@ -1,1 +1,0 @@
-You can use any photo hosting service to add a small number of images, such as [wampi](https://wampi.ru/?lang=en), [imgbb](https://imgbb.com/), [ImageShack](https://imageshack.com/), or [imgur](https://imgur.com/). This way you can quickly get direct links to your images to add them to the task file or instructions.

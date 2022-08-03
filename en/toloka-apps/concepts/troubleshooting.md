@@ -3,7 +3,7 @@
 ## Bespoke {#app-projects}
 
 I didn't find a suitable bespoke solution
-: If you can't find a solution that fits your goals, [contact us](https://toloka.ai/docs/guide/troubleshooting/support-solution.html#troubleshooting__new_1).
+: If you can't find a solution that fits your goals, [contact us](support.md).
 
 ## Labeling results {#results}
 
@@ -28,4 +28,4 @@ What should I add to a batch?
 My project is being moderated. Can I add task items to it?
 : Yes. You can add task items to projects in the **Active** or **Pending** status.
 
-{% include [contact-support](_includes/contact-support.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

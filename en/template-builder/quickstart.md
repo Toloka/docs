@@ -448,4 +448,4 @@ After that, you can continue creating or editing the project in Toloka.
 - See [instructions](operations/all.md) for popular tasks.
 - Check the [list of available components](reference/index.md).
 
-[![](_images/buttons/contact-support.svg)](concepts/support.md)
+{% include [contact-support](_includes/contact-support.md) %}

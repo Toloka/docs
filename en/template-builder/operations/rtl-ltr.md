@@ -23,4 +23,4 @@ The setting is available in the following blocks: `view.text`, `field.button-rad
 
 [View example in the sandbox](https://clck.ru/amHA8).
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

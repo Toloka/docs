@@ -192,4 +192,4 @@ You can publish any tasks that require analyzing or creating content. Toloka **i
 
 {% endcut %}
 
-{% include [contact-support](_includes/contact-support.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

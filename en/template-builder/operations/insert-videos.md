@@ -31,4 +31,4 @@ If you want to add several videos to a page, see the examples in [Comparing vide
 
 {% endlist %}
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

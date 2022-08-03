@@ -6,7 +6,7 @@ You can use this rule to:
 
 - Resend rejected task suites for recompletion to other Tolokers.
 
-    If you rejected a task suite, you may want it to be completed by a different Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](./glossary.md#overlap) for this task suite only. This is especially helpful if you have the overlap value set to 1.
+    If you rejected a task suite, you may want it to be completed by a different Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](../../glossary.md#overlap) for this task suite only. This is especially helpful if you have the overlap value set to 1.
 
 - Save money on re-completing task suites that you have already accepted.
 

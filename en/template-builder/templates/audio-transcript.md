@@ -54,4 +54,4 @@ Choose whether a Toloker can select only one or multiple answer options:
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TqtBP)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

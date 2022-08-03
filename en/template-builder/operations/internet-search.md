@@ -131,5 +131,4 @@ Just like any piece of the code, the code for opening the link and its address c
 
 Learn more about reusing the code in [Reuse code](../best-practices/reuse.md).
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

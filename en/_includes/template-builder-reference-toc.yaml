@@ -1,0 +1,196 @@
+items:
+- name: List of components
+  href: ../template-builder/reference/index.md
+- name: Layouts
+  items:
+  - name: List of layouts
+    href: ../template-builder/reference/layouts.md
+  - name: layout.bars
+    href: ../template-builder/reference/layout.bars.md
+  - name: layout.columns
+    href: ../template-builder/reference/layout.columns.md
+  - name: layout.compare
+    href: ../template-builder/reference/layout.compare.md
+  - name: layout.side-by-side
+    href: ../template-builder/reference/layout.side-by-side.md
+  - name: layout.sidebar
+    href: ../template-builder/reference/layout.sidebar.md
+- name: Views
+  items:
+  - name: List of views
+    href: ../template-builder/reference/views.md
+  - name: view.action-button
+    href: ../template-builder/reference/view.action-button.md
+  - name: view.alert
+    href: ../template-builder/reference/view.alert.md
+  - name: view.audio
+    href: ../template-builder/reference/view.audio.md
+  - name: view.collapse
+    href: ../template-builder/reference/view.collapse.md
+  - name: view.device-frame
+    href: ../template-builder/reference/view.device-frame.md
+  - name: view.divider
+    href: ../template-builder/reference/view.divider.md
+  - name: view.group
+    href: ../template-builder/reference/view.group.md
+  - name: view.iframe
+    href: ../template-builder/reference/view.iframe.md
+  - name: view.image
+    href: ../template-builder/reference/view.image.md
+  - name: view.labeled-list
+    href: ../template-builder/reference/view.labeled-list.md
+  - name: view.link
+    href: ../template-builder/reference/view.link.md
+  - name: view.link-group
+    href: ../template-builder/reference/view.link-group.md
+  - name: view.list
+    href: ../template-builder/reference/view.list.md
+  - name: view.map
+    href: ../template-builder/reference/view.map.md
+  - name: view.markdown
+    href: ../template-builder/reference/view.markdown.md
+  - name: view.text
+    href: ../template-builder/reference/view.text.md
+  - name: view.video
+    href: ../template-builder/reference/view.video.md
+- name: Fields
+  items:
+  - name: List of fields
+    href: ../template-builder/reference/fields.md
+  - name: field.audio
+    href: ../template-builder/reference/field.audio.md
+  - name: field.button-radio
+    href: ../template-builder/reference/field.button-radio.md
+  - name: field.button-radio-group
+    href: ../template-builder/reference/field.button-radio-group.md
+  - name: field.checkbox
+    href: ../template-builder/reference/field.checkbox.md
+  - name: field.checkbox-group
+    href: ../template-builder/reference/field.checkbox-group.md
+  - name: field.date
+    href: ../template-builder/reference/field.date.md
+  - name: field.email
+    href: ../template-builder/reference/field.email.md
+  - name: field.file
+    href: ../template-builder/reference/field.file.md
+  - name: field.image-annotation
+    href: ../template-builder/reference/field.image-annotation.md
+  - name: field.list
+    href: ../template-builder/reference/field.list.md
+  - name: field.map
+    href: ../template-builder/reference/field.map.md
+  - name: field.media-file
+    href: ../template-builder/reference/field.media-file.md
+  - name: field.number
+    href: ../template-builder/reference/field.number.md
+  - name: field.phone-number
+    href: ../template-builder/reference/field.phone-number.md
+  - name: field.radio-group
+    href: ../template-builder/reference/field.radio-group.md
+  - name: field.select
+    href: ../template-builder/reference/field.select.md
+  - name: field.text
+    href: ../template-builder/reference/field.text.md
+  - name: field.text-annotation
+    href: ../template-builder/reference/field.text-annotation.md
+  - name: field.textarea
+    href: ../template-builder/reference/field.textarea.md
+- name: Conditions
+  items:
+  - name: List of conditions
+    href: ../template-builder/reference/conditions.md
+  - name: condition.all
+    href: ../template-builder/reference/condition.all.md
+  - name: condition.any
+    href: ../template-builder/reference/condition.any.md
+  - name: condition.empty
+    href: ../template-builder/reference/condition.empty.md
+  - name: condition.equals
+    href: ../template-builder/reference/condition.equals.md
+  - name: condition.link-opened
+    href: ../template-builder/reference/condition.link-opened.md
+  - name: condition.not
+    href: ../template-builder/reference/condition.not.md
+  - name: condition.played
+    href: ../template-builder/reference/condition.played.md
+  - name: condition.played-fully
+    href: ../template-builder/reference/condition.played-fully.md
+  - name: condition.required
+    href: ../template-builder/reference/condition.required.md
+  - name: condition.same-domain
+    href: ../template-builder/reference/condition.same-domain.md
+  - name: condition.schema
+    href: ../template-builder/reference/condition.schema.md
+  - name: condition.sub-array
+    href: ../template-builder/reference/condition.sub-array.md
+  - name: condition.distance
+    href: ../template-builder/reference/condition.distance.md
+- name: Helpers
+  items:
+  - name: List of helpers
+    href: ../template-builder/reference/helpers.md
+  - name: helper.concat-arrays
+    href: ../template-builder/reference/helper.concat-arrays.md
+  - name: helper.entries2object
+    href: ../template-builder/reference/helper.entries2object.md
+  - name: helper.if
+    href: ../template-builder/reference/helper.if.md
+  - name: helper.join
+    href: ../template-builder/reference/helper.join.md
+  - name: helper.object2entries
+    href: ../template-builder/reference/helper.object2entries.md
+  - name: helper.replace
+    href: ../template-builder/reference/helper.replace.md
+  - name: helper.search-query
+    href: ../template-builder/reference/helper.search-query.md
+  - name: helper.switch
+    href: ../template-builder/reference/helper.switch.md
+  - name: helper.text-transform
+    href: ../template-builder/reference/helper.text-transform.md
+  - name: helper.transform
+    href: ../template-builder/reference/helper.transform.md
+  - name: helper.translate
+    href: ../template-builder/reference/helper.translate.md
+  - name: helper.proxy
+    href: ../template-builder/reference/helper.proxy.md
+- name: Plugins
+  items:
+  - name: List of plugins
+    href: ../template-builder/reference/plugins.md
+  - name: plugin.field.image-annotation.hotkeys
+    href: ../template-builder/reference/plugin.field.image-annotation.hotkeys.md
+  - name: plugin.field.text-annotation.hotkeys
+    href: ../template-builder/reference/plugin.field.text-annotation.hotkeys.md
+  - name: plugin.hotkeys
+    href: ../template-builder/reference/plugin.hotkeys.md
+  - name: plugin.toloka
+    href: ../template-builder/reference/plugin.toloka.md
+  - name: plugin.trigger
+    href: ../template-builder/reference/plugin.trigger.md
+- name: Data sources
+  items:
+  - name: List of data sources
+    href: ../template-builder/reference/datas.md
+  - name: data.location
+    href: ../template-builder/reference/data.location.md
+- name: Actions
+  items:
+  - name: List of actions
+    href: ../template-builder/reference/actions.md
+  - name: action.bulk
+    href: ../template-builder/reference/action.bulk.md
+  - name: action.notify
+    href: ../template-builder/reference/action.notify.md
+  - name: action.open-close
+    href: ../template-builder/reference/action.open-close.md
+  - name: action.open-link
+    href: ../template-builder/reference/action.open-link.md
+  - name: action.play-pause
+    href: ../template-builder/reference/action.play-pause.md
+  - name: action.rotate
+    href: ../template-builder/reference/action.rotate.md
+  - name: action.set
+    href: ../template-builder/reference/action.set.md
+  - name: action.toggle
+    href: ../template-builder/reference/action.toggle.md
+base: en

@@ -32,5 +32,4 @@ By default, you can enter both positive and negative numbers in this field. To p
 
 [View example in the sandbox](https://clck.ru/U7NNo).
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

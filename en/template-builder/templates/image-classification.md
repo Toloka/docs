@@ -82,4 +82,4 @@ This is a more complex example that compares the image with the results of a sea
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6L8)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

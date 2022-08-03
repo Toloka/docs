@@ -1,0 +1,29 @@
+items:
+  - name: Обзор
+    href: ../toloka-apps/index.md
+  - name: Обзор
+    href: ../toloka-apps/concepts/index.md
+    hidden: true
+  - name: Как устроен сервис
+    href: ../toloka-apps/concepts/details.md
+  - name: "Какие задания нельзя размещать в Толоке"
+    href: ../toloka-apps/concepts/unwanted.md
+  - name: Начало работы
+    href: ../toloka-apps/concepts/quickstart.md
+  - name: Bespoke-решения
+    items:
+      - name: Оценка релевантности товара поисковому запросу
+        href: ../toloka-apps/concepts/product-search-relevance.md
+  - name: Загрузка элементов разметки
+    href: ../toloka-apps/concepts/add-task.md
+  - name: Запуск и остановка разметки
+    href: ../toloka-apps/concepts/view-progress.md
+  - name: Скачивание результатов
+    href: ../toloka-apps/concepts/download-results.md
+  - name: Термины и определения
+    href: ../toloka-apps/concepts/glossary.md
+  - name: Решение проблем
+    href: ../toloka-apps/concepts/troubleshooting.md
+  - name: Служба поддержки
+    href: ../toloka-apps/concepts/support.md
+base: ru

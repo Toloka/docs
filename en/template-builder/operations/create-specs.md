@@ -1,6 +1,6 @@
 # Creating specifications
 
-Project settings in Toloka must include specifications for the [input and output data](../glossary.md#input-output-data). If you use Template Builder in the Toloka interface, the specification is created automatically by default.
+Project settings in Toloka must include specifications for the [input and output data](../../glossary.md#input-output-data). If you use Template Builder in the Toloka interface, the specification is created automatically by default.
 
 {% note alert %}
 
@@ -265,7 +265,7 @@ There are two ways to edit the specification in project settings: using either r
   **Examples of fields:**
 
   {% cut "Text in different formats" %}
-  
+
 
   - String of a certain length
 
@@ -355,7 +355,7 @@ There are two ways to edit the specification in project settings: using either r
   {% endcut %}
 
   {% cut "Link" %}
-  
+
 
 
   ```json
@@ -379,7 +379,7 @@ There are two ways to edit the specification in project settings: using either r
   {% endcut %}
 
   {% cut "Numbers" %}
-  
+
   - Integer from the specified range:
       ```json
       "my_integer": {
@@ -469,7 +469,7 @@ There are two ways to edit the specification in project settings: using either r
   {% endcut %}
 
   {% cut "Hidden field" %}
-  
+
   The string a Toloker can't access:
   ```json
   "my_string": {
@@ -478,7 +478,7 @@ There are two ways to edit the specification in project settings: using either r
   }
   ```
   {% endcut %}
-  
+
 {% endlist %}
 
 
@@ -518,7 +518,7 @@ For example, you can hide the `assigment_id` identifier you will need when revie
 
 {% cut "Reviewing assignments" %}
 
-A [pool](../glossary.md#pool) setting that allows you to check responses so you don't have to pay for poorly completed tasks.
+A [pool](../../glossary.md#pool) setting that allows you to check responses so you don't have to pay for poorly completed tasks.
 
 {% endcut %}
 
@@ -548,7 +548,7 @@ The default value is `false`.||
 
 ## Recommendations {#recomendations}
 
-- If you edit a required field, the changes apply only to new task [pools](../glossary.md#pool). For example, if you need to fix an error in a project, [clone the pool](https://toloka.ai/docs/guide/concepts/pool-main.html) or [create a new one](https://toloka.ai/docs/guide/concepts/pool-main.html). Existing task pools will continue using the previous version of the project.
+- If you edit a required field, the changes apply only to new task [pools](../../glossary.md#pool). For example, if you need to fix an error in a project, [clone the pool](https://toloka.ai/docs/guide/concepts/pool-main.html) or [create a new one](https://toloka.ai/docs/guide/concepts/pool-main.html). Existing task pools will continue using the previous version of the project.
 
 - In the output, use value validation and don't forget to mark the field as required if a Toloker has to fill it in.
 - Hidden fields are intended only for requesters and are not available in the task interface. The values of hidden fields can't be used either in the JS code or in the template constructor.
@@ -563,5 +563,4 @@ The default value is `false`.||
 - [See examples of data read and write](input-output-data.md).
 - [Learn how to clear the entered data](clear-data.md).
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

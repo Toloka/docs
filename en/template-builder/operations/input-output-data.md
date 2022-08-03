@@ -10,7 +10,7 @@ For more information on how to add a quotation mark `"`, backslash `\`, line bre
 
 Let's say you want to display the question text from the input data and write the response to the output data. Sample input data:
 ```json
-{  
+{
   "question": "Would you buy an elephant?"
 }
 ```
@@ -134,7 +134,7 @@ Similarly to reading elements from an array, you can also write the results to a
 
 ## Related information
 
-- [Creating specifications](https://toloka.ai/docs/template-builder/operations/create-specs.html)
-- [Clearing the entered values](https://toloka.ai/docs/template-builder/operations/clear-data.html)
+- [Creating specifications](create-specs.md)
+- [Clearing the entered values](clear-data.md)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

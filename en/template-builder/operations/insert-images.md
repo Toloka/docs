@@ -78,5 +78,4 @@ To zoom in on an image by pressing a shortcut key, use the [plugin.hotkeys](../r
 
 [View example in the sandbox](https://clck.ru/U3RyK).
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

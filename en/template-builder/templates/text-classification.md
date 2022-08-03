@@ -210,7 +210,7 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 }
 ```
 
-{% endcut %}  
+{% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/1d9wVk0A3Wk7hq)
 
@@ -467,4 +467,4 @@ This is a more complex example that compares the text with the results of a sear
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/09flUkZu3WjxyP)
 
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

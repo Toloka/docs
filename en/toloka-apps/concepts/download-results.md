@@ -121,4 +121,4 @@ Select the desired batch. The section on the right will show all available stati
 
 {% endcut %}
 
-{% include [contact-support](_includes/contact-support.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

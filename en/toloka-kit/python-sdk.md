@@ -10,15 +10,13 @@
   display: flex;
   flex-direction: column;
 }
-@media only screen and (max-width: 1024px) {
-  h2 {
-    padding-top: 32px !important;
-    margin-top: 0 !important;
-  }
-  h3 {
-    padding-top: 16px !important;
-    margin-top: 0 !important;
-  }
+h2 {
+  padding-top: 32px !important;
+  margin-top: 0 !important;
+}
+h3 {
+  padding-top: 16px !important;
+  margin-top: 0 !important;
 }
 </style>
 
@@ -29,7 +27,7 @@ These powerful software development kits make your work with Toloka much easier 
 <div class="grid-container">
     <div class="grid-item">
         <h2><a href="./">Toloka-Kit</a></h2>
-        <p>An open source Python library that allows you to access <a href="https://toloka.ai/docs/api/concepts/about.html">Toloka API</a> with the help of classes and methods that seamlessly integrate with your Python application.</p>
+        <p>An open source Python library that allows you to access <a href="../api/">Toloka API</a> with the help of classes and methods that seamlessly integrate with your Python application.</p>
         <div style="display: flex;">
             <p style="margin-right: auto;"><a style="display: flex; align-items: center;" href="https://github.com/Toloka/toloka-kit"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/github.svg" alt="View source code on GitHub" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Source code on GitHub</a></p>
             <p style="margin-left: auto;"><a style="display: flex; align-items: center;" href="https://github.com/Toloka/toloka-kit/tree/main/examples"><img src="https://yastatic.net/s3/doc-binary/src/toloka/SocialNetwork/jupyter.svg" alt="View integration examples" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Integration examples</a></p>
@@ -59,7 +57,7 @@ These powerful software development kits make your work with Toloka much easier 
     <div class="grid-item">
         <h3>API reference</h3>
         <ul>
-            <li><a href="https://toloka.ai/docs/api/concepts/about.html">Toloka API</a></li>
+            <li><a href="../api/concepts/about">Toloka API</a></li>
             <li><a href="https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html">Bespoke API</a></li>
         </ul>
     </div>
@@ -72,10 +70,6 @@ These powerful software development kits make your work with Toloka much easier 
     </div>
 </div>
 
-## Toloka global community
+{% include [global-community](../_includes/global-community.md) %}
 
-Stay informed about updates to the platform and open-source libraries — connect with the Toloka team in our [Global Community](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg) for announcements, discussions, and invites to events.
-
-## Follow us in social media
-
-[![Toloka on Facebook](../../_images/SocialNetwork/facebook.svg)](https://www.facebook.com/tolokaglobal/) [![Toloka on YouTube](../../_images/SocialNetwork/youtube.svg)](https://www.youtube.com/channel/UC3ECut-9h01eI1qsnx-GHKA/videos) [![Toloka in Slack](../../_images/SocialNetwork/slack.svg)](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg) [![Toloka in LinkedIn](../../_images/SocialNetwork/linkedin.svg)](https://www.linkedin.com/company/toloka/) [![Toloka in Twitter](../../_images/SocialNetwork/twitter.svg)](https://twitter.com/TolokaAI) [![Toloka on GitHub](../../_images/SocialNetwork/github.svg)](https://github.com/toloka) [![Toloka on StackOverflow](../../_images/SocialNetwork/StackOverflow.svg)](https://stackoverflow.com/questions/tagged/toloka) [![Toloka Blog](../../_images/SocialNetwork/blog.svg)](https://toloka.ai/blog)
+{% include [social-media](../_includes/social-media.md) %}

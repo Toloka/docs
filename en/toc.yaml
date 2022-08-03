@@ -1,0 +1,497 @@
+title: Toloka documentation
+href: index.md
+items:
+  - name: Getting started
+    items:
+      - name: How does Toloka work?
+        href: https://toloka.ai/docs/guide/concepts/overview.html
+      - name: Registration
+        href: https://toloka.ai/docs/guide/concepts/access.html
+      - name: Your first project
+        href: https://toloka.ai/docs/guide/concepts/first-project.html
+      - name: Data security
+        href: https://toloka.ai/docs/guide/concepts/data-security.html
+  - name: Important tips
+    items:
+      - name: What tasks can't be placed in Toloka?
+        href: https://toloka.ai/docs/guide/concepts/unwanted.html
+      - name: Protect your data
+        href: https://toloka.ai/docs/guide/concepts/protect-your-data.html
+      - name: Common mistakes made by requesters
+        href: https://toloka.ai/docs/guide/concepts/frequent-customer-errors.html
+      - name: How to save your budget
+        href: https://toloka.ai/docs/guide/concepts/save-money.html
+      - name: Sandbox
+        href: https://toloka.ai/docs/guide/concepts/sandbox.html
+  - name: Tutorials
+    items:
+      - name: List of examples
+        href: https://toloka.ai/docs/guide/concepts/usecases.html
+      - name: Images
+        items:
+          - name: Image classification
+            href: https://toloka.ai/docs/guide/tutorials/image-classification.html
+          - name: Image comparison (Side-by-side)
+            href: https://toloka.ai/docs/guide/tutorials/side-by-side.html
+          - name: Object recognition & detection
+            href: https://toloka.ai/docs/guide/tutorials/selection.html
+          - name: Object recognition and area selection (example with decomposition)
+            items:
+              - name: Overview
+                href: https://toloka.ai/docs/guide/concepts/image-segmentation-overview.html
+              - name: Project 1. Does the image contain a specific object?
+                href: https://toloka.ai/docs/guide/concepts/image-segmentation-project1.html
+              - name: Project 2. Select an object in the image
+                href: https://toloka.ai/docs/guide/concepts/image-segmentation-project2.html
+              - name: Project 3. Are the bounding boxes correct?
+                href: https://toloka.ai/docs/guide/concepts/image-segmentation-project3.html
+              - name: 'Appendix: Complete code for all projects'
+                href: https://toloka.ai/docs/guide/concepts/image-segmentation-appendix.html
+      - name: Video
+        items:
+          - name: Video classification
+            href: https://toloka.ai/docs/guide/concepts/video-moderation.html
+      - name: Audio
+        items:
+          - name: Audio transcription
+            href: https://toloka.ai/docs/guide/tutorials/transcript-audio.html
+          - name: Voice recording
+            href: https://toloka.ai/docs/guide/concepts/transcript-audio.html
+      - name: Texts
+        items:
+          - name: Sentiment analysis and content moderation
+            href: https://toloka.ai/docs/guide/concepts/content-moderation.html
+      - name: Data enrichment
+        items:
+          - name: Survey
+            href: https://toloka.ai/docs/guide/concepts/questionnaire.html
+          - name: Searching for product characteristics
+            href: https://toloka.ai/docs/guide/concepts/internet-search.html
+          - name: Product photo search (example with decomposition)
+            items:
+              - name: Overview
+                href: https://toloka.ai/docs/guide/concepts/data-collection.html
+              - name: Project 1. Does the photo contain a certain object?
+                href: https://toloka.ai/docs/guide/concepts/contain_item.html
+              - name: Project 2. Find a similar item in an online store
+                href: https://toloka.ai/docs/guide/concepts/find_an_item_in_store.html
+              - name: Project 3. Does the item found look similar to the original?
+                href: https://toloka.ai/docs/guide/concepts/item_look_similar.html
+              - name: Project 4. Which of the found items is most similar to the original?
+                href: https://toloka.ai/docs/guide/concepts/item_more_similar.html
+              - name: 'Appendix: Complete code for all projects'
+                href: https://toloka.ai/docs/guide/concepts/appendix-expanded-code.html
+      - name: Field tasks
+        items:
+          - name: Collecting offline data
+            href: https://toloka.ai/docs/guide/concepts/walk.html
+          - name: Price monitoring
+            href: https://toloka.ai/docs/guide/concepts/price-tag.html
+          - name: Product monitoring
+            href: https://toloka.ai/docs/guide/concepts/audit-of-planogram-of-product-placement-in-store.html
+          - name: 'Data collection: Organizations'
+            href: https://toloka.ai/docs/guide/concepts/monitoring-objects-in-organizations.html
+          - name: Monitor outdoor items of interest
+            href: https://toloka.ai/docs/guide/concepts/monitoring.html
+          - name: Customization examples
+            items:
+              - name: Overview
+                href: https://toloka.ai/docs/guide/concepts/advanced-features.html
+              - name: Add a button
+                href: https://toloka.ai/docs/guide/concepts/advanced-features-button.html
+              - name: Attaching files
+                href: https://toloka.ai/docs/guide/concepts/advanced-features-attach.html
+              - name: Add description fields
+                href: https://toloka.ai/docs/guide/concepts/advanced-features-input-data.html
+              - name: Add a picture
+                href: https://toloka.ai/docs/guide/concepts/advanced-features-show-pic.html
+              - name: Add a text field
+                href: https://toloka.ai/docs/guide/concepts/advanced-features-input-string.html
+              - name: Add response options
+                href: https://toloka.ai/docs/guide/concepts/advanced-features-input-selector.html
+  - name: Projects
+    items:
+      - name: Steps to follow
+        href: https://toloka.ai/docs/guide/concepts/main-steps.html
+      - name: Decomposition of the task
+        href: https://toloka.ai/docs/guide/concepts/solution-architecture.html
+      - name: Initial project settings
+        items:
+          - name: Create a project
+            href: https://toloka.ai/docs/guide/concepts/project.html
+          - name: Editing a project
+            href: https://toloka.ai/docs/guide/concepts/edit-project.html
+          - name: Writing instructions
+            href: https://toloka.ai/docs/guide/concepts/instruction.html
+          - name: Task interface
+            items:
+              - name: Template Builder
+                items:
+                  - include:
+                      path: _includes/template-builder-toc.yaml
+                      mode: link
+              - name: HTML/CSS/JS editor
+                items:
+                  - name: Task interface
+                    href: https://toloka.ai/docs/guide/concepts/spec.html
+                  - name: Adapt a task for mobile devices
+                    href: https://toloka.ai/docs/guide/concepts/mobile.html
+                  - name: HTML
+                    items:
+                      - name: List of components
+                        href: https://toloka.ai/docs/guide/concepts/t-components.html
+                      - name: Handlebars
+                        items:
+                          - name: Expressions and helpers
+                            href: https://toloka.ai/docs/guide/concepts/t-components/handlebars.html
+                          - name: Additional helpers
+                            href: https://toloka.ai/docs/guide/concepts/t-components/helpers.html
+                      - name: Components for solving common problems
+                        items:
+                          - name: String input field
+                            href: https://toloka.ai/docs/guide/concepts/t-components/string.html
+                          - name: Text input field
+                            href: https://toloka.ai/docs/guide/concepts/t-components/text.html
+                          - name: String input with suggest list
+                            href: https://toloka.ai/docs/guide/concepts/t-components/suggest.html
+                          - name: Radio button
+                            href: https://toloka.ai/docs/guide/concepts/t-components/radiobuttons.html
+                          - name: Checkbox
+                            href: https://toloka.ai/docs/guide/concepts/t-components/checkboxes.html
+                          - name: Drop-down list
+                            href: https://toloka.ai/docs/guide/concepts/t-components/list.html
+                          - name: Button for file upload
+                            href: https://toloka.ai/docs/guide/concepts/t-components/upload-file.html
+                          - name: Button for image file upload
+                            href: https://toloka.ai/docs/guide/concepts/t-components/upload-picture.html
+                          - name: Button for recording and uploading a video file
+                            href: https://toloka.ai/docs/guide/concepts/t-components/upload-video.html
+                          - name: Button for recording and uploading an audio file
+                            href: https://toloka.ai/docs/guide/concepts/t-components/upload-audio.html
+                          - name: Button with click validation
+                            href: https://toloka.ai/docs/guide/concepts/t-components/button-link.html
+                          - name: Image with area selection
+                            href: https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html
+                          - name: Text segmentation editor
+                            href: https://toloka.ai/docs/guide/concepts/t-components/segmentation-editor.html
+                          - name: Image
+                            href: https://toloka.ai/docs/guide/concepts/t-components/img.html
+                          - name: Button
+                            href: https://toloka.ai/docs/guide/concepts/t-components/button.html
+                          - name: Iframe
+                            href: https://toloka.ai/docs/guide/concepts/t-components/iframe.html
+                          - name: Text formatted in HTML
+                            href: https://toloka.ai/docs/guide/concepts/t-components/html.html
+                  - name: JS
+                    items:
+                      - name: How to use JavaScript extensions
+                        href: https://toloka.ai/docs/guide/concepts/spec-advanced.html
+                      - name: Task class
+                        href: https://toloka.ai/docs/guide/concepts/js/task.html
+                      - name: TaskSuite class
+                        href: https://toloka.ai/docs/guide/concepts/js/tasksuite.html
+                      - name: Services for specific purposes
+                        href: https://toloka.ai/docs/guide/concepts/js/services.html
+          - name: Input and output data
+            href: https://toloka.ai/docs/guide/concepts/incoming.html
+          - name: Setting up quality control
+            href: https://toloka.ai/docs/guide/concepts/project-qa.html
+          - name: Translations
+            href: https://toloka.ai/docs/guide/concepts/project-languages.html
+          - name: Returning to a previous version of a project
+            href: https://toloka.ai/docs/guide/concepts/project-back-to-version.html
+          - name: Interim statistics
+            href: https://toloka.ai/docs/guide/concepts/project-interim-statistics.html
+      - name: Pool settings
+        items:
+          - name: General information
+            items:
+              - name: Creating a pool
+                href: https://toloka.ai/docs/guide/concepts/pool-main.html
+              - name: Editing a pool
+                href: https://toloka.ai/docs/guide/concepts/pool-edit.html
+          - name: Audience selection
+            items:
+              - name: Filters
+                href: https://toloka.ai/docs/guide/concepts/filters.html
+          - name: Pricing
+            items:
+              - name: Setting up pricing
+                href: https://toloka.ai/docs/guide/concepts/dynamic-pricing.html
+          - name: Quality control
+            items:
+              - name: Setting up quality control
+                href: https://toloka.ai/docs/guide/concepts/qa-pool-settings.html
+              - name: Quality control rules
+                items:
+                  - name: 'How to check Tolokers: quality control rules'
+                    href: https://toloka.ai/docs/guide/concepts/check-performers.html
+                  - name: List of rules
+                    href: https://toloka.ai/docs/guide/concepts/control.html
+                  - name: “Remember values” parameter
+                    href: https://toloka.ai/docs/guide/concepts/remember-values.html
+                  - name: Control tasks
+                    href: https://toloka.ai/docs/guide/concepts/goldenset.html
+                  - name: Majority vote
+                    href: https://toloka.ai/docs/guide/concepts/mvote.html
+                  - name: Fast responses
+                    href: https://toloka.ai/docs/guide/concepts/quick-answers.html
+                  - name: Captcha
+                    href: https://toloka.ai/docs/guide/concepts/captcha.html
+                  - name: Skipped assignments
+                    href: https://toloka.ai/docs/guide/concepts/skipped-assignments.html
+                  - name: Earnings
+                    href: https://toloka.ai/docs/guide/concepts/income.html
+                  - name: Submitted answers
+                    href: https://toloka.ai/docs/guide/concepts/submitted-answers.html
+                  - name: Review results
+                    href: https://toloka.ai/docs/guide/concepts/reviewing-assignments.html
+                  - name: Recompletion of assignments from banned users
+                    href: https://toloka.ai/docs/guide/concepts/restore-task-overlap.html
+                  - name: Processing rejected and accepted assignments
+                    href: https://toloka.ai/docs/guide/concepts/reassessment-after-accepting.html
+              - name: Overlap settings
+                items:
+                  - name: What is overlap?
+                    href: https://toloka.ai/docs/guide/concepts/overlap-faq.html
+                  - name: Dynamic overlap
+                    href: https://toloka.ai/docs/guide/concepts/dynamic-overlap.html
+                  - name: Selective majority vote check
+                    href: https://toloka.ai/docs/guide/concepts/selective-mvote.html
+              - name: Speed/quality balance
+                href: https://toloka.ai/docs/guide/concepts/adjust.html
+          - name: Additional settings
+            items:
+              - name: Non-automatic acceptance
+                href: https://toloka.ai/docs/guide/concepts/offline-accept.html
+              - name: Archiving a pool
+                href: https://toloka.ai/docs/guide/concepts/pool-archive.html
+              - name: Interim statistics
+                href: https://toloka.ai/docs/guide/concepts/pool-interim-statistic.html
+      - name: Tasks
+        items:
+          - name: Steps to follow
+            href: https://toloka.ai/docs/guide/concepts/pool.html
+          - name: Creating a TSV file with tasks
+            href: https://toloka.ai/docs/guide/concepts/pool_csv.html
+          - name: Uploading tasks to a pool
+            items:
+              - name: How to upload tasks
+                href: https://toloka.ai/docs/guide/concepts/task_upload.html
+              - name: Ways to combine tasks in suites
+                href: https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html
+              - name: Keep task order
+                href: https://toloka.ai/docs/guide/concepts/save-order.html
+          - name: Task markup
+            items:
+              - name: Overview
+                href: https://toloka.ai/docs/guide/concepts/task_markup.html
+              - name: How to edit tasks by yourself
+                href: https://toloka.ai/docs/guide/concepts/task-markup-by-yourself.html
+      - name: Adding a training (optional)
+        href: https://toloka.ai/docs/guide/concepts/train.html
+      - name: Adding funds to your account
+        href: https://toloka.ai/docs/guide/steps/refill.html
+      - name: Starting and stopping a pool
+        href: https://toloka.ai/docs/guide/concepts/pool-run-and-stop.html
+      - name: Results
+        items:
+          - name: Receiving responses
+            href: https://toloka.ai/docs/guide/concepts/result-of-eval.html
+          - name: Reviewing Tolokers' responses
+            href: https://toloka.ai/docs/guide/concepts/accept.html
+          - name: Aggregation of results
+            href: https://toloka.ai/docs/guide/concepts/result-aggregation.html
+      - name: Project analysis
+        items:
+          - name: Project rating
+            href: https://toloka.ai/docs/guide/concepts/project_rating_stat.html
+          - name: Project statistics
+            href: https://toloka.ai/docs/guide/concepts/project-statistic.html
+          - name: Pool statistics
+            href: https://toloka.ai/docs/guide/concepts/pool_statistic-pool.html
+  - name: Bespoke solutions
+    hidden: true
+    items:
+      - include:
+          path: _includes/toloka-apps-toc.yaml
+          mode: link
+  - name: Toloka settings
+    items:
+      - name: Users
+        items:
+          - name: Viewing Tolokers
+            href: https://toloka.ai/docs/guide/concepts/users.html
+          - name: Rewards
+            href: https://toloka.ai/docs/guide/concepts/bonus.html
+          - name: Communication
+            href: https://toloka.ai/docs/guide/concepts/messaging.html
+          - name: Ban
+            href: https://toloka.ai/docs/guide/concepts/ban.html
+      - name: Skills
+        items:
+          - name: How do I use skills?
+            href: https://toloka.ai/docs/guide/concepts/nav.html
+          - name: Global skills
+            href: https://toloka.ai/docs/guide/concepts/nav-cross-project.html
+          - name: Creating a skill
+            href: https://toloka.ai/docs/guide/concepts/nav-create.html
+          - name: Assigning the skill
+            href: https://toloka.ai/docs/guide/concepts/nav-assign.html
+          - name: Using the skill
+            href: https://toloka.ai/docs/guide/concepts/nav-use.html
+          - name: Editing a skill
+            href: https://toloka.ai/docs/guide/concepts/nav-edit.html
+          - name: Removing a skill
+            href: https://toloka.ai/docs/guide/concepts/nav-delete.html
+          - name: History of skill changes
+            href: https://toloka.ai/docs/guide/concepts/nav-history.html
+      - name: Profile
+        items:
+          - name: About money
+            items:
+              - name: About account management
+                href: https://toloka.ai/docs/guide/concepts/budget.html
+              - name: Topping up your account
+                href: https://toloka.ai/docs/guide/concepts/refill.html
+              - name: Promo codes
+                href: https://toloka.ai/docs/guide/concepts/promocodes.html
+              - name: Refund
+                href: https://toloka.ai/docs/guide/concepts/refund.html
+              - name: Payment documents
+                href: https://toloka.ai/docs/guide/concepts/documents.html
+              - name: Questions and answers
+                href: https://toloka.ai/docs/guide/concepts/questions.html
+          - name: Shared access to the requester's account
+            href: https://toloka.ai/docs/guide/concepts/multiple-access.html
+  - name: Useful recommendations
+    items:
+      - name: Data storage
+        items:
+          - name: Where to store files
+            href: https://toloka.ai/docs/guide/concepts/cloud-storage.html
+          - name: Amazon S3
+            href: https://toloka.ai/docs/guide/concepts/amazon-cloud-storage.html
+          - name: Azure Blob Storage
+            href: https://toloka.ai/docs/guide/concepts/azure-cloud-storage.html
+          - name: Google Cloud Storage
+            href: https://toloka.ai/docs/guide/concepts/google-cloud-storage.html
+          - name: Yandex Object Storage
+            href: https://toloka.ai/docs/guide/concepts/use-object-storage.html
+      - name: Tips for designing tasks
+        href: https://toloka.ai/docs/guide/concepts/faq.html
+      - name: Using exams
+        href: https://toloka.ai/docs/guide/concepts/how-to-use-exams.html
+  - name: For developers
+    items:
+      - name: REST API
+        items:
+          - name: Toloka API
+            items:
+              - include:
+                  path: _includes/toloka-api-toc.yaml
+                  mode: link
+          - name: Bespoke API
+            hidden: true
+            items:
+              - name: How to use
+                items:
+                  - name: Accessing the API
+                    href: https://toloka.ai/docs/toloka-apps/api/concepts/authorization.html
+                  - name: API quick start
+                    href: https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html
+                  - name: Stream processing of task items
+                    href: https://toloka.ai/docs/toloka-apps/api/concepts/streaming-items.html
+              - name: API reference
+                items:
+                  - name: API Toloka Apps external
+                    href: https://toloka.ai/docs/toloka-apps/api/ref/index.html
+                  - name: app
+                    items:
+                      - name: Get the list of project templates (Apps)
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_get.html
+                      - name: Information about the project template
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_app_id_get.html
+                  - name: app-project
+                    items:
+                      - name: Archive the project
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html
+                      - name: Create a new project
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_post.html
+                      - name: Get information about the project
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
+                      - name: Get the list of projects
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_get.html
+                      - name: Unarchive the project
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.html
+                  - name: batch
+                    items:
+                      - name: Create a new batch with the first set of items
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.html
+                      - name: Get information about the batch
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
+                      - name: Get the list of batches in the project
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.html
+                      - name: Resume processing the batch
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_resume_post.html
+                      - name: Start processing the batch
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.html
+                      - name: Stop processing the batch
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_stop_post.html
+                  - name: item
+                    items:
+                      - name: Add a new item to the batch
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_post.html
+                      - name: Add multiple items to the batch
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.html
+                      - name: Get information about the work item
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html
+                      - name: Get the list of all items in the project
+                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html
+      - name: Python SDK
+        items:
+          - name: Toloka-Kit
+            items:
+              - include:
+                  path: _includes/toloka-kit-toc.yaml
+                  mode: link
+          - name: Crowd-Kit
+            items:
+              - include:
+                  path: _includes/crowd-kit-toc.yaml
+                  mode: link
+  - name: Troubleshooting and support
+    items:
+      - name: Get help
+        href: https://toloka.ai/docs/guide/concepts/get-help.html
+      - name: All questions on one page
+        href: https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html
+      - name: Registration and getting started
+        href: https://toloka.ai/docs/guide/troubleshooting/register-and-start.html
+      - name: Sandbox
+        href: https://toloka.ai/docs/guide/troubleshooting/sandbox.html
+      - name: Setting up a project
+        href: https://toloka.ai/docs/guide/troubleshooting/project-settings.html
+      - name: Setting up a pool
+        href: https://toloka.ai/docs/guide/troubleshooting/pool-setup.html
+      - name: Adding tasks to a pool
+        href: https://toloka.ai/docs/guide/troubleshooting/adding-tasks-to-the-pool.html
+      - name: Working with results
+        href: https://toloka.ai/docs/guide/troubleshooting/result-questions.html
+      - name: Archiving pools and projects
+        href: https://toloka.ai/docs/guide/troubleshooting/pool-n-project-archive.html
+      - name: Payments
+        href: https://toloka.ai/docs/guide/troubleshooting/finance.html
+      - name: Tolokers
+        href: https://toloka.ai/docs/guide/troubleshooting/users.html
+      - name: Questions about templates
+        href: https://toloka.ai/docs/guide/troubleshooting/questions-about-templates.html
+      - name: Support
+        href: https://toloka.ai/docs/guide/troubleshooting/support.html
+  - name: Success stories
+    href: https://toloka.ai/success-stories/
+  - name: Glossary
+    href: glossary.md
+  - name: Changelog
+    href: https://toloka.ai/changelog/
+base: en

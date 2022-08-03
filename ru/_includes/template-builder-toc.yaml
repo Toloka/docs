@@ -1,0 +1,111 @@
+items:
+  - name: Обзор
+    href: ../template-builder/index.md
+  - name: Быстрый старт
+    href: ../template-builder/quickstart.md
+  - name: Визуальный редактор
+    href: ../template-builder/visual-editor.md
+  - name: Типы свойств
+    href: ../template-builder/concepts/types.md
+    hidden: true
+  - name: Готовые пресеты
+    items:
+      - name: Список
+        href: ../template-builder/templates/index.md
+      - name: Обогащение данных
+        items:
+          - name: Опрос
+            href: ../template-builder/templates/survey.md
+          - name: Поиск данных в сети
+            href: ../template-builder/templates/data-search.md
+      - name: Аудио
+        items:
+          - name: Транскрипция аудио
+            href: ../template-builder/templates/audio-transcript.md
+          - name: Попарное сравнение аудио
+            href: ../template-builder/templates/sbs-audio.md
+      - name: Видео
+        items:
+          - name: Оценка видео
+            href: ../template-builder/templates/video-moderation.md
+          - name: Попарное сравнение видео
+            href: ../template-builder/templates/sbs-video.md
+      - name: Изображения
+        items:
+          - name: Классификация изображений
+            href: ../template-builder/templates/image-classification.md
+          - name: Попарное сравнение изображений
+            href: ../template-builder/templates/sbs-image.md
+          - name: Релевантность поиска товаров
+            href: ../template-builder/templates/product-search-relevance.md
+          - name: Распознавание объектов и выделение областей
+            href: ../template-builder/templates/object-recognition.md
+      - name: Тексты
+        items:
+          - name: Копирайтинг
+            href: ../template-builder/templates/copywriting.md
+          - name: Попарное сравнение текста
+            href: ../template-builder/templates/sbs-text.md
+  - name: Инструкции
+    items:
+      - name: Список инструкций
+        href: ../template-builder/operations/all.md
+      - name: Входные и выходные данные
+        items:
+          - name: Работа с данными
+            href: ../template-builder/operations/work-with-data.md
+          - name: Чтение и запись
+            href: ../template-builder/operations/input-output-data.md
+          - name: Создание спецификации
+            href: ../template-builder/operations/create-specs.md
+          - name: Очистка введенных значений
+            href: ../template-builder/operations/clear-data.md
+      - name: Аудио и видео
+        items:
+          - name: Воспроизвести аудио
+            href: ../template-builder/operations/play-audio.md
+          - name: Вставить видео
+            href: ../template-builder/operations/insert-videos.md
+          - name: Сравнить видеоклипы
+            href: ../template-builder/operations/sbs-video.md
+      - name: Работа с текстом и числами
+        items:
+          - name: Компоненты для работы с текстом
+            href: ../template-builder/operations/components-for-texts.md
+          - name: Форматирование текста
+            href: ../template-builder/operations/text-formatting.md
+          - name: Поле для ввода чисел
+            href: ../template-builder/operations/components-for-numbers.md
+      - name: Работа с картинками
+        items:
+          - name: Вставка картинок
+            href: ../template-builder/operations/insert-images.md
+          - name: Выделение объектов на картинке
+            href: ../template-builder/operations/select-areas.md
+      - name: Настройки отображения
+        items:
+          - name: Отображение заданий
+            href: ../template-builder/operations/set-plugin-toloka.md
+          - name: Направление написания
+            href: ../template-builder/operations/rtl-ltr.md
+      - name: Вставка ссылок
+        href: ../template-builder/operations/internet-search.md
+  - name: Советы и рекомендации
+    items:
+      - name: Настройте горячие клавиши
+        href: ../template-builder/best-practices/hotkeys.md
+      - name: Проверяйте ответы автоматически
+        href: ../template-builder/best-practices/conditions.md
+      - name: Показывайте подсказки
+        href: ../template-builder/best-practices/show-hints.md
+      - name: Переиспользуйте код
+        href: ../template-builder/best-practices/reuse.md
+  - name: Справочник компонентов
+    include:
+      path: template-builder-reference-toc.yaml
+      mode: link
+  - name: Решение проблем
+    href: ../template-builder/troubleshooting/troubleshooting.md
+  - name: Служба поддержки
+    href: ../template-builder/concepts/support.md
+base: ru

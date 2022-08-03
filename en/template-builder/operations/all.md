@@ -27,5 +27,4 @@
 - [Configuring task display](set-plugin-toloka.md)
 - [Inserting links](internet-search.md)
 
-
-[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+{% include [contact-support](../_includes/contact-support.md) %}

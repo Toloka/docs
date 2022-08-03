@@ -106,7 +106,7 @@
 
 ## Узнайте больше
 
-- [Создание спецификации](https://toloka.ai/ru/docs/template-builder/operations/create-specs.html)
-- [Очистка введенных значений](https://toloka.ai/ru/docs/template-builder/operations/clear-data.html)
+- [Создание спецификации](create-specs.md)
+- [Очистка введенных значений](clear-data.md)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

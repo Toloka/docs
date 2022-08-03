@@ -256,7 +256,7 @@ For more information, see the [Requester's guide](https://toloka.ai/docs/guide/)
 Whether to display standard UI elements in the task. ||
 ||**config[]** | **array of objects**
 
-[Configuration for Template Builder](https://toloka.ai/docs/api/concepts/tb-config.html) ||
+[Configuration for Template Builder](tb-config.md) ||
 || **assets** | **object**
 
 Linked files:
