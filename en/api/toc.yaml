@@ -4,6 +4,9 @@ items:
   - name: Toloka REST API
     href: rest-api.md
     hidden: true
+  - name: Overview
+    href: concepts/about.md
+    hidden: true
   - name: Accessing the API
     href: concepts/access.md
   - name: Quick start

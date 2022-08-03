@@ -1,6 +1,9 @@
 title: Toloka
 href: index.md
 items:
+  - name: Обзор
+    href: concepts/about.md
+    hidden: true
   - name: Доступ к API
     href: concepts/access.md
   - name: Быстрый старт
