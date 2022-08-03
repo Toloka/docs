@@ -1,5 +1,5 @@
 # DawidSkene
-`crowdkit.aggregation.classification.dawid_skene.DawidSkene` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/classification/dawid_skene.py#L17)
+`crowdkit.aggregation.classification.dawid_skene.DawidSkene` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/dawid_skene.py#L19)
 
 ```python
 DawidSkene(
@@ -49,6 +49,7 @@ A. Philip Dawid and Allan M. Skene. Maximum Likelihood Estimation of Observer Er
 `errors_`|**Optional\[DataFrame\]**|<p>Workers&#x27; error matrices. A pandas.DataFrame indexed by `worker` and `label` with a column for every label_id found in `data` such that `result.loc[worker, observed_label, true_label]` is the probability of `worker` producing an `observed_label` given that a task&#x27;s true label is `true_label`</p>
 
 **Examples:**
+
 
 ```python
 from crowdkit.aggregation import DawidSkene

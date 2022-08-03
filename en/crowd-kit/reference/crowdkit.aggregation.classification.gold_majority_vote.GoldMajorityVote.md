@@ -1,5 +1,5 @@
 # GoldMajorityVote
-`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/classification/gold_majority_vote.py#L12)
+`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/gold_majority_vote.py#L12)
 
 ```python
 GoldMajorityVote(self)
@@ -25,10 +25,11 @@ It's necessary that:
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `labels_`|**Optional\[Series\]**|<p>Tasks&#x27; labels. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s most likely true label.</p>
-`skills_`|**Optional\[Series\]**|<p>workers&#x27; skills. A pandas.Series index by workers and holding corresponding worker&#x27;s skill</p>
-`probas_`|**Optional\[DataFrame\]**|<p>Tasks&#x27; label probability distributions. A pandas.DataFrame indexed by `task` such that `result.loc[task, label]` is the probability of `task`&#x27;s true label to be equal to `label`. Each probability is between 0 and 1, all task&#x27;s probabilities should sum up to 1</p>
+`skills_`|**Series**|<p>workers&#x27; skills. A pandas.Series index by workers and holding corresponding worker&#x27;s skill</p>
+`probas_`|**DataFrame**|<p>Tasks&#x27; label probability distributions. A pandas.DataFrame indexed by `task` such that `result.loc[task, label]` is the probability of `task`&#x27;s true label to be equal to `label`. Each probability is between 0 and 1, all task&#x27;s probabilities should sum up to 1</p>
 
 **Examples:**
+
 
 ```python
 import pandas as pd

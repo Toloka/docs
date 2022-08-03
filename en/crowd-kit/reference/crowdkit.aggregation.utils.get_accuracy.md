@@ -1,5 +1,5 @@
 # get_accuracy
-`crowdkit.aggregation.utils.get_accuracy` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/utils.py#L84)
+`crowdkit.aggregation.utils.get_accuracy` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/utils.py#L106)
 
 ```python
 get_accuracy(

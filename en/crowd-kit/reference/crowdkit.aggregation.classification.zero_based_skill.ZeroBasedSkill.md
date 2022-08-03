@@ -1,5 +1,5 @@
 # ZeroBasedSkill
-`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/classification/zero_based_skill.py#L13)
+`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/zero_based_skill.py#L14)
 
 ```python
 ZeroBasedSkill(
@@ -12,7 +12,7 @@ ZeroBasedSkill(
 )
 ```
 
-The Zero-Based Skill aggregation model.
+The Zero-Based Skill aggregation model aka ZBS.
 
 
 Performs weighted majority voting on tasks. After processing a pool of tasks,
@@ -36,6 +36,7 @@ the dataset that was sent to 'fit'.
 `eps`|**float**|<p>A convergence threshold.</p>
 
 **Examples:**
+
 
 ```python
 from crowdkit.aggregation import ZeroBasedSkill

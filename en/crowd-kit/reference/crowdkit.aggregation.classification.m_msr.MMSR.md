@@ -1,5 +1,5 @@
 # MMSR
-`crowdkit.aggregation.classification.m_msr.MMSR` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/classification/m_msr.py#L17)
+`crowdkit.aggregation.classification.m_msr.MMSR` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/m_msr.py#L17)
 
 ```python
 MMSR(
@@ -13,9 +13,9 @@ MMSR(
     n_workers: int = 0,
     n_tasks: int = 0,
     n_labels: int = 0,
-    labels_mapping: dict = ...,
-    workers_mapping: dict = ...,
-    tasks_mapping: dict = ...
+    labels_mapping: Dict[Any, int] = ...,
+    workers_mapping: Dict[Any, int] = ...,
+    tasks_mapping: Dict[Any, int] = ...
 )
 ```
 
@@ -58,6 +58,7 @@ Adversarial Crowdsourcing Through Robust Rank-One Matrix Completion.
 `scores_`|**Optional\[DataFrame\]**|<p>Tasks&#x27; label scores. A pandas.DataFrame indexed by `task` such that `result.loc[task, label]` is the score of `label` for `task`.</p>
 
 **Examples:**
+
 
 ```python
 from crowdkit.aggregation import MMSR

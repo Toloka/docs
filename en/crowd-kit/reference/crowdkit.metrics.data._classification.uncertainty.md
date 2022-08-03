@@ -1,5 +1,5 @@
 # uncertainty
-`crowdkit.metrics.data._classification.uncertainty` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/metrics/data/_classification.py#L94)
+`crowdkit.metrics.data._classification.uncertainty` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/metrics/data/_classification.py#L102)
 
 ```python
 uncertainty(
@@ -65,6 +65,9 @@ uncertainty(pd.DataFrame.from_records([
 workers_skills=pd.Series([1, 1], index=['A', 'B']),
 compute_by="task", aggregate=False)
 ```
+X    0.693147
+Y    0.000000
+dtype: float64
 
 Uncertainty by worker
 
@@ -78,3 +81,6 @@ uncertainty(pd.DataFrame.from_records([
 workers_skills=pd.Series([1, 1], index=['A', 'B']),
 compute_by="worker", aggregate=False)
 ```
+A    0.000000
+B    0.693147
+dtype: float64

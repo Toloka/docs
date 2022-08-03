@@ -1,5 +1,5 @@
 # SegmentationEM
-`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/image_segmentation/segmentation_em.py#L12)
+`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/image_segmentation/segmentation_em.py#L13)
 
 ```python
 SegmentationEM(
@@ -32,6 +32,7 @@ Quality Evaluation Methods for Crowdsourced Image Segmentation
 `segmentations_`|**Series**|<p>Tasks&#x27; segmentations. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s aggregated segmentation.</p>
 
 **Examples:**
+
 
 ```python
 import numpy as np

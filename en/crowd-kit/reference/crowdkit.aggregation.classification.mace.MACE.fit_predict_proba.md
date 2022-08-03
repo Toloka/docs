@@ -1,11 +1,11 @@
-# predict_proba
-`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill.predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/zero_based_skill.py#L110)
+# fit_predict_proba
+`crowdkit.aggregation.classification.mace.MACE.fit_predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/mace.py#L249)
 
 ```python
-predict_proba(self, data: DataFrame)
+fit_predict_proba(self, data: DataFrame)
 ```
 
-Return probability distributions on labels for each task when the model is fitted.
+Fits the MACE model and returns the label probability distributions.
 
 ## Parameters Description
 

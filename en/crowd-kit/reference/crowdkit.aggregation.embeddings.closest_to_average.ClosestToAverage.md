@@ -1,5 +1,5 @@
 # ClosestToAverage
-`crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/embeddings/closest_to_average.py#L12)
+`crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/embeddings/closest_to_average.py#L13)
 
 ```python
 ClosestToAverage(self, distance: Callable[[ndarray, ndarray], float])

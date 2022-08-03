@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.classification.glad.GLAD.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/glad.py#L275)
+`crowdkit.aggregation.classification.dawid_skene.OneCoinDawidSkene.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/dawid_skene.py#L316)
 
 ```python
 fit(self, data: DataFrame)
@@ -19,4 +19,4 @@ Fit the model through the EM-algorithm.
 
 * **Return type:**
 
-  [GLAD](crowdkit.aggregation.classification.glad.GLAD.md)
+  [OneCoinDawidSkene](crowdkit.aggregation.classification.dawid_skene.OneCoinDawidSkene.md)

@@ -1,5 +1,5 @@
 # TextSummarization
-`crowdkit.aggregation.texts.text_summarization.TextSummarization` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/texts/text_summarization.py#L15)
+`crowdkit.aggregation.texts.text_summarization.TextSummarization` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/texts/text_summarization.py#L16)
 
 ```python
 TextSummarization(
@@ -49,6 +49,7 @@ Proceedings of the 2nd Crowd Science Workshop: Trust, Ethics, and Excellence in 
 `texts_`|**Series**|<p>Tasks&#x27; texts. A pandas.Series indexed by `task` such that `result.loc[task, text]` is the task&#x27;s text.</p>
 
 **Examples:**
+
 
 ```python
 import torch

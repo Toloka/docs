@@ -1,17 +1,17 @@
 # TextHRRASA
-`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.0.0/crowdkit/aggregation/texts/text_hrrasa.py#L14)
+`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/texts/text_hrrasa.py#L11)
 
 ```python
 TextHRRASA(
     self,
-    encoder: Callable,
+    encoder: Callable[[str], Union[_SupportsArray[dtype], _NestedSequence[_SupportsArray[dtype]], bool, int, float, complex, str, bytes, _NestedSequence[Union[bool, int, float, complex, str, bytes]]]],
     n_iter: int = 100,
     tol: float = 1e-05,
     lambda_emb: float = 0.5,
     lambda_out: float = 0.5,
     alpha: float = 0.05,
     calculate_ranks: bool = False,
-    output_similarity: Callable = glue_similarity
+    output_similarity: Callable[[str, List[List[str]]], float] = glue_similarity
 )
 ```
 
@@ -25,7 +25,7 @@ aggregation.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`encoder`|**Callable**|<p>A callable that takes a text and returns a NumPy array containing the corresponding embedding.</p>
+`encoder`|**Callable\[\[str\], Union\[_SupportsArray\[dtype\], _NestedSequence\[_SupportsArray\[dtype\]\], bool, int, float, complex, str, bytes, _NestedSequence\[Union\[bool, int, float, complex, str, bytes\]\]\]\]**|<p>A callable that takes a text and returns a NumPy array containing the corresponding embedding.</p>
 `n_iter`|**int**|<p>A number of HRRASA iterations.</p>
 `lambda_emb`|**float**|<p>A weight of reliability calculated on embeddigs.</p>
 `lambda_out`|**float**|<p>A weight of reliability calculated on outputs.</p>
