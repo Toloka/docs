@@ -66,7 +66,7 @@
 
   Добавьте компонент [view.audio](../reference/view.audio.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tggas)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/lA-Ccrax3YCsaY)
 
 {% endlist %}
 
