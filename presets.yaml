@@ -1334,7 +1334,7 @@ default:
   ui_labs_apps-forms--app8--new--examples--header: Add examples for each class you’ve
     added
   ui_labs_apps-forms--app8--new--examples--label--storage: Learn more
-  ui_labs_apps-forms--app8--new--examples--label--storage--link: https://toloka.ai/docs/toloka-apps/concepts/cloud-storage.html
+  ui_labs_apps-forms--app8--new--examples--label--storage--link: https://toloka.ai/docs/guide/concepts/cloud-storage.html
   ui_labs_apps-forms--app8--new--examples--template--description: Explain why the
     example belongs to this class or classes
   ui_labs_apps-forms--app8--new--examples--template--header: Example
@@ -2782,7 +2782,7 @@ default:
   ui_requester_header_main_balance: Your main balance is __balance__
   ui_requester_header_promo_balance: Promo codes — __balance__
   ui_requester_header_reserved_balance_hint: Reserved money
-  ui_requester_hlp-lnk-req-api: https://toloka.ai/docs/api/
+  ui_requester_hlp-lnk-req-api: https://toloka.ai/en/docs/api/
   ui_requester_hlp-lnk-what-tlk-req: https://toloka.ai/docs/guide/
   ui_requester_hlp-ttl-blog: Toloka blog
   ui_requester_hlp-ttl-blog-link: https://toloka.ai/blog
@@ -5364,7 +5364,7 @@ default:
   ui_requester_project-preview__file-uploader__fail__toggler: Learn more
   ui_requester_project-preview__file-uploader__label: Upload file
   ui_requester_project-preview__json-editor__description: The task format is described
-    in the &lt;a href="https://toloka.ai/docs/api/concepts/tasks.html" target="_blank"&gt;API
+    in the &lt;a href="https://toloka.ai/en/docs/api/concepts/tasks" target="_blank"&gt;API
     documentation&lt;/a&gt;
   ui_requester_project-preview__notice-text: Project preview
   ui_requester_project-preview__notice-text_v2: Project preview. This is how performers
