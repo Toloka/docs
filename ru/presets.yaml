@@ -58,8 +58,8 @@ default:
   sandbox-workers: https://sandbox.toloka.yandex.com/requester/workers
   tb-help: https://toloka.ai/docs/template-builder/index.html/
   template-builder: https://clck.ru/SMCHv
-  tk-create-task: https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task
-  tk-create-tasks: https://toloka.ai/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks
+  tk-create-task: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task
+  tk-create-tasks: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks
   tk-create-tasks-async: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks_async
   tk-create-tasks-suite: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suite
   tk-create-tasks-suites: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites
@@ -69,7 +69,7 @@ default:
   toloka-facebook: https://www.facebook.com/tolokaglobal/
   toloka-github: https://github.com/toloka
   toloka-kit: https://github.com/Toloka/toloka-kit
-  toloka-kit-doc: https://toloka.ai/docs/toloka-kit/
+  toloka-kit-doc: https://toloka.ai/en/docs/toloka-kit/
   toloka-linkedin: https://www.linkedin.com/company/toloka/
   toloka-profile: https://toloka.yandex.ru/requester/profile
   toloka-requester-concepts-yacloud-dita: https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html
@@ -5341,7 +5341,7 @@ default:
   ui_requester_project-preview__file-uploader__fail__toggler: Подробнее
   ui_requester_project-preview__file-uploader__label: Загрузить файл
   ui_requester_project-preview__json-editor__description: Формат задания соответствует
-    описанному в &lt;a href="https://toloka.ai/ru/docs/api/concepts/tasks.html" target="_blank"&gt;документации
+    описанному в &lt;a href="https://toloka.ai/ru/docs/api/concepts/tasks" target="_blank"&gt;документации
     по API&lt;/a&gt;
   ui_requester_project-preview__notice-text: Предпросмотр проекта
   ui_requester_project-preview__notice-text_v2: Предпросмотр проекта. Так выглядит
