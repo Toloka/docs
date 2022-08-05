@@ -15,7 +15,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/RvckN).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RvckN)
 
 
 ## Создать поисковой запрос {#helper.search-query}
@@ -41,18 +41,18 @@
 {% endnote %}
 
 
-[Посмотреть пример в песочнице](https://nda.ya.ru/t/pArYIypP3XBTUX).
+[![](../_images/buttons/view-example.svg)](https://nda.ya.ru/t/pArYIypP3XBTUX)
 
 Если нужной вам поисковой системы нет в свойстве `engine`, то оставьте это поле пустым и введите запрос в `query` с помощью компонента [helper.join](../reference/helper.join.md).
 
-[Посмотреть пример в песочнице](https://clck.ru/RvdNy).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RvdNy)
 
 
 ## Объединить ссылки в группу {#view.link-group}
 
 Чтобы объединить несколько ссылок в группу, используйте компонент [view.link-group](../reference/view.link-group.md). Ссылки будут отображаться подчеркнутым текстом. Одну из ссылок можно выделить рамкой и убрать подчеркивание: для этой ссылки в свойстве `theme` установите значение `primary`.
 
-[Посмотреть пример в песочнице](https://clck.ru/TYUZE).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/TYUZE)
 
 
 ## Создать ссылку на кнопке {#action.open-link}
@@ -79,11 +79,11 @@
 
 При добавлении нескольких кнопок можно поменять их расположение с вертикального на горизонтальное в свойстве `direction`.
 
-[Посмотреть пример в песочнице](https://clck.ru/Rvx2C).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/Rvx2C)
 
 Чтобы назначить кнопке [горячую клавишу](../best-practices/hotkeys.md), используйте компонент [plugin.hotkeys](../reference/plugin.hotkeys.md).
 
-[Посмотреть пример в песочнице](https://clck.ru/TjrKy).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/TjrKy)
 
 
 ## Проверить переход по ссылке {#condition.link-opened}
@@ -92,7 +92,7 @@
 
 Помните, что условие сработает, только если исполнитель перейдет из интерфейса. Оно не сработает при открытии ссылки через адресную строку.
 
-[Посмотреть пример в песочнице](https://clck.ru/RveLE).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RveLE)
 
 
 ## Добавить горячие клавиши {#hotkeys}
@@ -111,7 +111,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/Rx3LX).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/Rx3LX)
 
 Подробнее о работе горячих клавиш читайте в разделе [Настройте горячие клавиши](../best-practices/hotkeys.md).
 
@@ -120,14 +120,14 @@
 
 Вы можете настроить открытие ссылки при наступлении события. Например, чтобы в зависимости от нажатого переключателя исполнителю открывался определенный поисковый запрос. Для этого используйте плагин [plugin.trigger](../reference/plugin.trigger.md).
 
-[Посмотреть пример в песочнице](https://clck.ru/Rx5YK).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/Rx5YK)
 
 
 ## Переиспользовать код {#vars}
 
 Как и любое место кода, открытие ссылки и ее адрес можно переиспользовать с помощью конструкции `{"$ref": "path.to.element"}`. Это пригодится при добавлении горячих клавиш: чтобы не дублировать код для визуального отображения ссылки и для [plugin.hotkeys](../reference/plugin.hotkeys.md), его можно один раз прописать в `vars`.
 
-[Посмотреть пример в песочнице](https://clck.ru/Rx5NP).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/Rx5NP)
 
 Подробнее о переиспользовании читайте в разделе [Переиспользуйте код](../best-practices/reuse.md).
 

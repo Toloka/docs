@@ -21,6 +21,6 @@
 
 Настройка доступна в блоках `view.text`, `field.button-radio-group`, `field.text` и `field.textarea`.
 
-[Посмотреть пример в песочнице](https://clck.ru/g54Xz).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/g54Xz)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

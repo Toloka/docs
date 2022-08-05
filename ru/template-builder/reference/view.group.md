@@ -2,7 +2,7 @@
 
 Объединяет любые компоненты в визуальные группы — блоки с рамкой.
 
-[Посмотреть пример в песочнице](https://clck.ru/QRZF6).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QRZF6)
 
 ## Свойства компонента {#properties}
 

@@ -6,7 +6,7 @@
 
 В отличие от [view.group](view.group.md) объединяет только ссылки.
 
-[Посмотреть пример в песочнице](https://ya.cc/t/YoOueC4dHZHJh).
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/YoOueC4dHZHJh)
 
 ## Свойства компонента {#properties}
 

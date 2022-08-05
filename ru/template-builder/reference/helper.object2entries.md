@@ -26,7 +26,7 @@
 ]
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/QRgqs).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QRgqs)
 
 ## Свойства компонента {#properties}
 

@@ -5,7 +5,7 @@
 - [view.image](view.image.md) — разворачивает картинку на весь экран.
 - [view.collapse](view.collapse.md) — показывает или скрывает контент под катом.
 
-[Посмотреть пример в песочнице](https://ya.cc/t/IgNgEoHR3YCrj7).
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/IgNgEoHR3YCrj7)
 
 ## Свойства компонента {#properties}
 

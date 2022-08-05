@@ -63,6 +63,7 @@
 - Кнопки
 
   Используйте компонент [field.button-radio-group](../reference/field.button-radio-group.md).
+  
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2ws)
 
 - Чекбокс

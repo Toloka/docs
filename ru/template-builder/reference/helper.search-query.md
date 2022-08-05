@@ -4,7 +4,7 @@
 
 Список доступных поисковых систем указан в свойстве `engine`.
 
-[Посмотреть пример в песочнице](https://clck.ru/QLF3o).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QLF3o)
 
 ## Свойства компонента {#properties}
 

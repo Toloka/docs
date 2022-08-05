@@ -2,7 +2,7 @@
 
 Позволяет задавать горячие клавиши для компонента [field.text-annotation](field.text-annotation.md).
 
-[Посмотреть пример в песочнице](https://clck.ru/TeqjT).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/TeqjT)
 
 ## Свойства компонента {#properties}
 

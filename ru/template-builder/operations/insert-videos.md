@@ -11,7 +11,7 @@
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-[Посмотреть пример в песочнице](https://ya.cc/t/FOXAVSwG3YCgaE).
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FOXAVSwG3YCgaE)
 
 ## Убедиться, что исполнитель посмотрел видео {#condition.played}
 
@@ -21,13 +21,13 @@
 
   Чтобы убедиться, что исполнитель запускал видео, в свойстве `validation` используйте компонент `condition.played`.
 
-  [Посмотреть пример в песочнице](https://ya.cc/t/KUpry3ii3YCgnL).
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/KUpry3ii3YCgnL)
 
 - Посмотрел до конца
 
   Чтобы убедиться, что исполнитель посмотрел видео полностью, в свойстве `validation` используйте компонент `condition.played-fully`.
 
-  [Посмотреть пример в песочнице](https://ya.cc/t/sxyLBwnx3YCgyu).
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/sxyLBwnx3YCgyu)
 
 {% endlist %}
 

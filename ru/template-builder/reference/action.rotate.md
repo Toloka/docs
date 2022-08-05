@@ -4,7 +4,7 @@
 
 По умолчанию — вправо, но можно указать направление в свойстве `payload`.
 
-[Посмотреть пример в песочнице](https://clck.ru/T9arg).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/T9arg)
 
 ## Свойства компонента {#properties}
 
