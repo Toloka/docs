@@ -37,3 +37,5 @@
 - [Копирайтинг](copywriting.md)
 
 - [Попарное сравнение текста](sbs-text.md)
+
+- [Классификация текстов](text-classification.md)
