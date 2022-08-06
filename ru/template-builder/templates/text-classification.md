@@ -86,7 +86,7 @@
 
   {% endcut %}
 
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): [горячие клавиши](../best-practices/hotkeys.md).
+- [plugin.hotkeys](../reference/plugin.hotkeys.md) — [горячие клавиши](../best-practices/hotkeys.md).
 
   {% cut "Показать код" %}
 

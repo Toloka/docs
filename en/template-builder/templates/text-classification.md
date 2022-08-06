@@ -4,7 +4,7 @@ For this type of project, you can use the **Clickbait or not?** preset.
 
 This preset helps you classify any kind of text for training classifiers and NLP models.
 
-Take a look at the example: the labeling interface includes a text box, and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+Take a look at the example: the labeling interface includes a text block, and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GCr6AzRu3Wk6so)
 
