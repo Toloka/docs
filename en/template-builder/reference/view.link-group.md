@@ -6,7 +6,7 @@ The most important link in a group can be highlighted with a border: set the `th
 
 This only groups links, unlike [view.group](view.group.md).
 
-[View example in the sandbox](https://ya.cc/t/M1VwlI_RHZNkC).
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/M1VwlI_RHZNkC)
 
 ## Component properties {#properties}
 

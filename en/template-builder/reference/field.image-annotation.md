@@ -8,7 +8,7 @@ If you need to categorize selected items, create labels for each category using 
 
 You can disable labeling using the `disabled` property. For example, use this if you need to create a task to check labeled images, or if you want to allow labeling only after a certain [condition](helper.if.md) has been met.
 
-[See example in the sandbox](https://clck.ru/asSTF).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSTF)
 
 ## Component properties {#properties}
 

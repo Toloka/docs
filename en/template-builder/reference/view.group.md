@@ -2,7 +2,7 @@
 
 Groups components visually into framed blocks.
 
-[View example in the sandbox](https://clck.ru/T9bJ5).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/T9bJ5)
 
 ## Component properties {#properties}
 

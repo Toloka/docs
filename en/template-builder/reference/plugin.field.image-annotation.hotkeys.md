@@ -4,7 +4,7 @@ Used to set hotkeys for the [field.image-annotation](field.image-annotation.md) 
 
 You can set hotkeys to select area types and selection modes and to confirm or cancel area creation. When setting hotkeys, you can use the up and down arrows (`up`,`down`), numbers, and Latin letters.
 
-[View example in the sandbox](https://clck.ru/asSTF).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSTF)
 
 ## Component properties {#properties}
 

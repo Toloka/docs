@@ -4,7 +4,7 @@ Checks that the data didn't get a value. If it did, returns `false`. This is use
 
 The component checks that the value of the sent data is equal to a zero-length string, an array without elements, an object without keys and values, or is equal to `null`.
 
-[View example in the sandbox](https://clck.ru/asRzy).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asRzy)
 
 ## Component properties {#properties}
 

@@ -2,7 +2,7 @@
 
 Use this to set keyboard shortcuts for the [field.text-annotation](field.text-annotation.md) component.
 
-[View example in the sandbox](https://clck.ru/asSoy).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSoy)
 
 ## Component properties {#properties}
 

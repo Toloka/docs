@@ -6,7 +6,7 @@ Use this component to set the targets for the tasks with the markers, select the
 
 You can set the following map properties: scale, position of the map center, label, and hint for Tolokers.
 
-[View example in the sandbox](https://clck.ru/bmsjT).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/bmsjT)
 
 ## Component properties {#properties}
 

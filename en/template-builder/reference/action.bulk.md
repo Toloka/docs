@@ -2,7 +2,7 @@
 
 Use this component to call multiple actions at the same time, like to show more than one notification when a button is clicked.
 
-[View example in the sandbox](https://clck.ru/Rf2Z4).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rf2Z4)
 
 Actions are invoked in the order in which they are listed. This means that if two actions write a value to the same variable, the variable will always have the second value.
 

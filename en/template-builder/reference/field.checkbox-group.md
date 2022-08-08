@@ -2,7 +2,7 @@
 
 Adds a group of checkboxes for selecting independent answer options. This is useful if there are several options. You can add just one checkbox, but it's easier to use [field.checkbox](field.checkbox.md) for that.
 
-[View example in the sandbox](https://clck.ru/asSMB).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSMB)
 
 ## Component properties {#properties}
 

@@ -26,7 +26,7 @@ It will be converted to an array whose objects will pair data from the source ob
 ]
 ```
 
-[View example in the sandbox](https://clck.ru/RnsKc).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/RnsKc)
 
 ## Component properties {#properties}
 

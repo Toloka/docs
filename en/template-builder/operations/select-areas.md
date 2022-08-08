@@ -20,7 +20,7 @@ To allow Tolokers to select areas in pictures, use the [field.image-annotation](
 }
 ```
 
-[View example in the sandbox](https://clck.ru/RnZox).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/RnZox)
 
 
 ## Configure labeling modes {#shapes}
@@ -41,7 +41,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/Rna3F).
+  [![image](../_images/buttons/view-example.svg)](https://clck.ru/Rna3F)
 
 - Polygons
 
@@ -55,7 +55,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/RnZtm).
+  [![image](../_images/buttons/view-example.svg)](https://clck.ru/RnZtm)
 
 - Points
 
@@ -69,7 +69,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/RnZyt).
+  [![image](../_images/buttons/view-example.svg)](https://clck.ru/RnZyt)
 
 {% endlist %}
 
@@ -91,7 +91,7 @@ You can allow Tolokers to select objects by type. For example, you may want all 
 }
 ```
 
-[View example in the sandbox](https://clck.ru/TqvPR).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvPR)
 
 For each new object of the `labels` property, a button is added to the editor that allows Tolokers to select the corresponding area type. Different values of the `value` property let Tolokers label areas with different colors.
 
@@ -118,7 +118,7 @@ If you install the shortcut plugin without assigning keys, they are assigned aut
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/TqvWA).
+  [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvWA)
 
 - Select labeling modes
 
@@ -140,7 +140,7 @@ If you install the shortcut plugin without assigning keys, they are assigned aut
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/TqvYU).
+  [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvYU)
 
 - Confirm or cancel area creation
 
@@ -156,7 +156,7 @@ If you install the shortcut plugin without assigning keys, they are assigned aut
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/Tqvai).
+  [![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqvai)
 
 {% endlist %}
 
@@ -170,6 +170,6 @@ To create a template for area selection tasks, use the following components:
 - [condition.required](../reference/condition.required.md): To make sure that a Toloker selected at least one area.
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
-[View example in the sandbox](https://clck.ru/Tqvd5).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqvd5)
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -4,7 +4,7 @@ The component creates a color block to highlight important information.
 
 You can use both plain text and other visual components inside it.
 
-[View example in the sandbox](https://clck.ru/RfBPM).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/RfBPM)
 
 ## Component properties {#properties}
 

@@ -23,7 +23,7 @@ To check that the data is filled in, add the [condition.required](../reference/c
 
 In this example, a Toloker must fill in the text field, otherwise the “Submit” button won't work. The [condition.empty](../reference/condition.empty.md) component works the opposite way: it checks if the data is empty and returns `false` if the data has a value.
 
-[View example in the sandbox](https://clck.ru/QR9Qq).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/QR9Qq)
 
 ## Comparing values {#condition-equals-or-not}
 
@@ -33,7 +33,7 @@ To check that the preset value and output value are equal, use the component [co
 
 In this example, if a Toloker responds “No”, a text entry field appears.
 
-[View example in the sandbox](https://clck.ru/TR5Zy).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR5Zy)
 
 #### Checking that values are not equal
 
@@ -41,7 +41,7 @@ To return the values that don't meet the specified conditions, list them in the 
 
 In this example, if the `condition.equals` condition is met and returns `true`, `condition.not` returns `false` and hides the text entry field.
 
-[View example in the sandbox](https://clck.ru/TR5eS).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR5eS)
 
 #### When there are multiple correct responses
 
@@ -49,7 +49,7 @@ To check that an array in `data` is a subarray for `parent`, add the component [
 
 In this example, the component checks that the values `animal` and `human` are part of the `objects` array. If the responses “Human” and “Animal” are selected, the `helper.if` logical component displays the question: “Do the human and animal interact?”.
 
-[View example in the sandbox](https://clck.ru/TR5pC).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR5pC)
 
 ## Checking multiple conditions {#multiple-conditions}
 
@@ -59,7 +59,7 @@ To check that multiple conditions are met, list them in the `condition` property
 
 In this example, a Toloker has to do two actions: to fill in the text field and to click the link in the interface. The “Submit” button won't work until both conditions are met.
 
-[View example in the sandbox](https://clck.ru/TR7Do).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR7Do)
 
 #### Meeting at least one of the conditions
 
@@ -67,7 +67,7 @@ To check that at least one of the conditions is met, list the conditions in the 
 
 In this example, a Toloker has to perform at least one of the two actions: to select “Nothing is written there” or to fill in the “What is written on the image?” field. The “Submit” button won't work until one of the conditions is met.
 
-[View example in the sandbox](https://clck.ru/TR6Mk).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR6Mk)
 
 ## Checking conditions for specific components {#component}
 
@@ -75,7 +75,7 @@ Some conditions work only with certain [components](../../glossary.md#component-
 
 In this example, a Toloker has to click the link in the interface, otherwise the “Submit” button won't work.
 
-[View example in the sandbox](https://clck.ru/TR7KZ).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR7KZ)
 
 ## Can't find the desired component? {#schema}
 

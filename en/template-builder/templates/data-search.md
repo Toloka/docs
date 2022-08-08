@@ -1,6 +1,8 @@
 # Search for information online
 
-For this type of project, you can use the **Mining business contacts** preset ([view code in the sandbox](https://clck.ru/USPmt)). It has pre-configured validation and task layout. In this preset, a Toloker needs to enter the organization's contact information found online.
+For this type of project, you can use the **Mining business contacts** preset. It has pre-configured validation and task layout. In this preset, a Toloker needs to enter the organization's contact information found online.
+
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/USPmt)
 
 {% cut "Components used in the example" %}
 

@@ -2,7 +2,7 @@
 
 Checks that a Toloker clicked the link.
 
-[View example in the sandbox](https://clck.ru/asS5W).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asS5W)
 
 **Important:** To trigger the condition, the Toloker must follow the link from the Toloka interface — you must give Tolokers this option. The condition will not work if the Toloker opens the link from the browser address bar.
 

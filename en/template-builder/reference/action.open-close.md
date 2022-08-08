@@ -5,7 +5,7 @@ This component changes the display mode of another component by opening or closi
 - [view.image](view.image.md) — expands the image to full screen.
 - [view.collapse](view.collapse.md) — expands or collapses a collapsible section of content.
 
-[View example in the sandbox](https://clck.ru/Rf2c3).
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sOO_1WeT3YbLBM)
 
 ## Component properties {#properties}
 
