@@ -1,18 +1,18 @@
-# Text classification
+# Классификация текстов
 
-For this type of project, you can use the **Clickbait or not?** preset.
+Для такого проекта в Толоке есть пресет **Кликбейт или нет?**
 
-This preset helps you classify any kind of text for training classifiers and NLP models.
+Пресет помогает классифицировать любой тип текста для обучения классификаторов и NLP-моделей.
 
-Take a look at the example: the labeling interface includes a text block, and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+Посмотрите пример — интерфейс разметки включает блок текста и радиокнопки для разных категорий. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GCr6AzRu3Wk6so)
 
-{% cut "Components used in the example" %}
+{% cut "Из каких компонентов состоит этот пример" %}
 
-- [view.text](../reference/view.text.md): The text that you want to classify.
+- [view.text](../reference/view.text.md) — текст, который вы хотите классифицировать.
 
-  {% cut "Show code" %}
+  {% cut "Показать код" %}
 
   ```json
   {
@@ -27,9 +27,9 @@ Take a look at the example: the labeling interface includes a text block, and r
 
   {% endcut %}
 
-- [field.button-radio-group](../reference/field.button-radio-group.md): Adds buttons for selecting an answer option.
+- [field.button-radio-group](../reference/field.button-radio-group.md) — добавляет кнопки для выбора варианта ответа.
 
-  {% cut "Show code" %}
+  {% cut "Показать код" %}
 
   ```json
   {
@@ -57,9 +57,9 @@ Take a look at the example: the labeling interface includes a text block, and r
 
   {% endcut %}
 
-- [condition.required](../reference/condition.required.md): Checks if at least one option is selected.
+- [condition.required](../reference/condition.required.md) — проверяет, что выбран хотя бы один вариант.
 
-  {% cut "Show code" %}
+  {% cut "Показать код" %}
 
   ```json
   {
@@ -70,9 +70,9 @@ Take a look at the example: the labeling interface includes a text block, and r
 
   {% endcut %}
 
-- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+- [plugin.toloka](../reference/plugin.toloka.md) — настраивает внешний вид задания.
 
-  {% cut "Show code" %}
+  {% cut "Показать код" %}
 
   ```json
   {
@@ -86,9 +86,9 @@ Take a look at the example: the labeling interface includes a text block, and r
 
   {% endcut %}
 
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): [Keyboard shortcuts](../best-practices/hotkeys.md).
+- [plugin.hotkeys](../reference/plugin.hotkeys.md) — [горячие клавиши](../best-practices/hotkeys.md).
 
-  {% cut "Show code" %}
+  {% cut "Показать код" %}
 
   ```json
   {
@@ -118,13 +118,13 @@ Take a look at the example: the labeling interface includes a text block, and r
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-If this preset doesn't meet your needs, see other examples in this section.
+Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
 
-## Add a description {#add-description}
+## Добавить описание {#add-description}
 
-To add a detailed description to the task, use the [view.text](../reference/view.text.md) component.
+Чтобы добавить подробное описание к заданию, используйте компонент [view.text](../reference/view.text.md).
 
-{% cut "Show code" %}
+{% cut "Показать код" %}
 
 ```json
 {
@@ -137,11 +137,11 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/5GdOsaHz3XFSUH)
 
-## Add a response field {#add-text-area}
+## Добавить поле для ввода ответа {#add-text-area}
 
-To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
+Если вам нужны комментарии от исполнителя, то добавьте поле для ввода текста с помощью компонента [field.textarea](../reference/field.textarea.md).
 
-{% cut "Show code" %}
+{% cut "Показать код" %}
 
 ```json
 {
@@ -159,11 +159,11 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/tqcXy_dh3Wk7XR)
 
-## Add a layout {#add-layout}
+## Добавить оформление {#add-layout}
 
-To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the description is highlighted with a blue border, and the buttons are highlighted with a yellow one.
+Чтобы исполнитель легче ориентировался в задании, вы можете оформлять цветом разные типы данных с помощью компонента [view.alert](../reference/view.alert.md). В этом примере описание выделено синей рамкой, а кнопки — желтой.
 
-{% cut "Show code" %}
+{% cut "Показать код" %}
 
 ```json
 {
@@ -214,17 +214,17 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/1d9wVk0A3Wk7hq)
 
-## Other options for buttons {#mult-ans-options}
+## Другие варианты кнопок {#mult-ans-options}
 
-Decide whether a Toloker can select only one or multiple answer options:
+Определите, может ли исполнитель выбрать несколько вариантов ответа или только один:
 
 {% list tabs %}
 
-- Multiple options (checkboxes)
+- Несколько (чекбокс)
 
-  If there are several possible answers to the question, use [field.checkbox-group](../reference/field.checkbox-group.md) checkboxes.
+  Если ответов на вопрос может быть несколько — настройте чекбоксы [field.checkbox-group](../reference/field.checkbox-group.md).
 
-  {% cut "Show code" %}
+  {% cut "Показать код" %}
 
   ```json
   {
@@ -263,13 +263,13 @@ Decide whether a Toloker can select only one or multiple answer options:
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/WqUYAVJ_3Wk87q)
 
-- One option (a radio button)
+- Один (радиокнопка)
 
-  The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2–4 short answer options.
+  Компонент [field.button-radio-group](../reference/field.button-radio-group.md) отображается в виде цельных кнопок. Такие кнопки лучше подходят, когда в вопросе 2–4 варианта с короткими названиями.
 
-  If there are more answer options, or they are long, it's better to use [field.radio-group](../reference/field.radio-group.md), as in the example.
+  Если вариантов ответа много или названия длинные, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md), как в примере.
 
-  {% cut "Show code" %}
+  {% cut "Показать код" %}
 
   ```json
   {
@@ -314,11 +314,11 @@ Decide whether a Toloker can select only one or multiple answer options:
 
 {% endlist %}
 
-## Add conditions {#dependencies}
+## Добавить условия {#dependencies}
 
-The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected.
+С помощью [helper.if](../reference/helper.if.md) можно показывать любой элемент интерфейса только при выборе определенного ответа.
 
-{% cut "Show code" %}
+{% cut "Показать код" %}
 
 ```json
 {
@@ -368,13 +368,13 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/FwDPOVZ_3Wk8zy)
 
-## Text and search query comparison {#search}
+## Сравнение текста и поискового запроса {#search}
 
-#### Does the text match the search query
+#### Подходит ли текст под поисковый запрос
 
-Add a button that opens the search results and generate a search query link using the [helper.search-query](../reference/helper.search-query.md) component. To make sure that a Toloker clicked on the link and checked its contents, configure validation, as in the example.
+Добавьте кнопку, по которой исполнители будут открывать результаты поиска, и сформируйте ссылку поискового запроса с помощью компонента [helper.search-query](../reference/helper.search-query.md). Чтобы убедиться, что исполнитель перешел по ссылке и проверил ее содержимое, настройте валидацию, как в примере.
 
-{% cut "Show code" %}
+{% cut "Показать код" %}
 
 ```json
 {
@@ -395,11 +395,11 @@ Add a button that opens the search results and generate a search query link usin
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/XjJKrKAq3Wk2gG)
 
-#### Side-by-side text and web page comparison
+#### Попарное сравнение с веб-страницей
 
-You can display the web page in the built-in window using the [view.iframe](../reference/view.iframe.md) component. Place the text next to it using [layout.side-by-side](../reference/layout.side-by-side.md).
+С помощью компонента [view.iframe](../reference/view.iframe.md) вы можете отобразить веб-страницу во встроенном окне. Расположите рядом текст, используя [layout.side-by-side](../reference/layout.side-by-side.md).
 
-{% cut "Show code" %}
+{% cut "Показать код" %}
 
 ```json
 {
@@ -421,15 +421,15 @@ You can display the web page in the built-in window using the [view.iframe](../r
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/IV7KDhXz3Wjv6u)
 
-#### Side-by-side text and mobile web page comparison
+#### Попарное сравнение с веб-страницей в рамке мобильного устройства
 
-This is a more complex example that compares the text with the results of a search query. The following components are added:
+Это более сложный пример, который сравнивает текст с результатами поискового запроса. В нем используются компоненты:
 
-- [view.iframe](../reference/view.iframe.md): Displays the web page in an embedded window.
-- [view.device-frame](../reference/view.device-frame.md): Wraps the window in a smartphone frame.
-- [layout.side-by-side](../reference/layout.side-by-side.md): Places the text and the search results window next to each other.
+- [view.iframe](../reference/view.iframe.md) — отображает веб-страницу во встроенном окне;
+- [view.device-frame](../reference/view.device-frame.md) — оборачивает окно в рамку смартфона;
+- [layout.side-by-side](../reference/layout.side-by-side.md) — располагает картинку и окно с результатами запроса рядом друг с другом.
 
-{% cut "Show code" %}
+{% cut "Показать код" %}
 
 ```json
 {
@@ -467,4 +467,4 @@ This is a more complex example that compares the text with the results of a sear
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/09flUkZu3WjxyP)
 
-{% include [contact-support](../_includes/contact-support.md) %}
+[![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
