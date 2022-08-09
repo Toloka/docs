@@ -1,5 +1,7 @@
 # Клонировать пул
 
+{% include [announce](../_includes/announce.md) %}
+
 Создает дубликат пула.
 
 Будет создан пустой пул с теми же параметрами.
@@ -11,14 +13,14 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/clone
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/clone
+    POST https://toloka.dev/api/v1/pools/<pool_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 

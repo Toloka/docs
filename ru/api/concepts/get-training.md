@@ -1,5 +1,7 @@
 # Получить свойства обучения
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает свойства обучающего пула.
 
 Идентификатор обучающего пула можно узнать из [списка обучающих пулов](get-training-list.md).
@@ -11,14 +13,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/trainings/<training_id>
+    GET https://toloka.dev/api/v1/trainings/<training_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
+    GET https://sandbox.toloka.dev/api/v1/trainings/<training_id>
     Authorization: OAuth <OAuth token>
     ```
 

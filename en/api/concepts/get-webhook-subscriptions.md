@@ -1,5 +1,7 @@
 # Get a subscription
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets subscription data.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets subscription data.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    GET https://toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
     Authorization: OAuth <OAuth token>
     ```
 

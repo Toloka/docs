@@ -1,5 +1,7 @@
 # Get training properties
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the properties of a training pool.
 
 You can get the training pool ID from the [list of training pools](get-training-list.md).
@@ -11,14 +13,14 @@ You can get the training pool ID from the [list of training pools](get-training-
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/trainings/<training_id>
+    GET https://toloka.dev/api/v1/trainings/<training_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
+    GET https://sandbox.toloka.dev/api/v1/trainings/<training_id>
     Authorization: OAuth <OAuth token>
     ```
 

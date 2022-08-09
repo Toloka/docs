@@ -1,5 +1,7 @@
 # Get reward properties
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the properties of the reward issued.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the properties of the reward issued.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
+    GET https://toloka.dev/api/v1/user-bonuses/<bonus_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses/<bonus_id>
+    GET https://sandbox.toloka.dev/api/v1/user-bonuses/<bonus_id>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Отправить проект в архив
 
+{% include [announce](../_includes/announce.md) %}
+
 Отправляет проект в архив.
 
 Если проект не используется, его можно отправить в архив. Для выполнения операции все пулы в проекте должны быть [архивированы](archive-pool.md). Идентификатор проекта можно узнать из [списка проектов](get-prj-list.md).
@@ -11,14 +13,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
+    POST https://toloka.dev/api/v1/projects/<project_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
+    POST https://sandbox.toloka.dev/api/v1/projects/<project_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 

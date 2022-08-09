@@ -1,5 +1,7 @@
 # Получить список цепочек сообщений
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает список цепочек сообщений.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/message-threads
+    GET https://toloka.dev/api/v1/message-threads
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/message-threads
+    GET https://sandbox.toloka.dev/api/v1/message-threads
     Authorization: OAuth <OAuth token>
     ```
 

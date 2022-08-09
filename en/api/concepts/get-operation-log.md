@@ -1,5 +1,7 @@
 # Get the operation log
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the operation log.
 
 You can get logs for asynchronous operations (`async_mode = true`). Such operations run in the background.
@@ -21,14 +23,14 @@ If the operation was successful, the log contains `IDs` of the created objects, 
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/operations/<operation_id>/log
+    GET https://toloka.dev/api/v1/operations/<operation_id>/log
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>/log
+    GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>/log
     Authorization: OAuth <OAuth token>
     ```
 

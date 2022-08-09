@@ -1,5 +1,7 @@
 # Reply to message thread
 
+{% include [announce](../_includes/announce.md) %}
+
 Replies to a message thread.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Replies to a message thread.
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
+    POST https://toloka.dev/api/v1/message-threads/<thread_id>/reply
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@ Replies to a message thread.
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
+    POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/reply
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

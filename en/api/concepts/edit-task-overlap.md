@@ -1,5 +1,7 @@
 # Edit a task
 
+{% include [announce](../_includes/announce.md) %}
+
 Changes the task overlap.
 
 You can:
@@ -19,7 +21,7 @@ You can:
 - Production version
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>
+    PATCH https://toloka.dev/api/v1/tasks/<task_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -27,7 +29,7 @@ You can:
 - Sandbox
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task ID>
+    PATCH https://sandbox.toloka.dev/api/v1/tasks/<task ID>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

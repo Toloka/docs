@@ -1,5 +1,7 @@
 # Получить сведения об операции
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает сведения об операции.
 
 ## Запрос {#query}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/operations/<operation_id>
+    GET https://toloka.dev/api/v1/operations/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>
+    GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Issue rewards
 
+{% include [announce](../_includes/announce.md) %}
+
 Issues rewards to Tolokers.
 
 The size of the reward can range between $0.001 and $100 per Toloker at a time.
@@ -32,7 +34,7 @@ You can't use one request to pass multiple rewards with the same price, name, an
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/user-bonuses
+    POST https://toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -40,7 +42,7 @@ You can't use one request to pass multiple rewards with the same price, name, an
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+    POST https://sandbox.toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

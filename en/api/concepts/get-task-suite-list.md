@@ -1,5 +1,7 @@
 # Get the list of task suites
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the list of task suites in the pool.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the list of task suites in the pool.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/task-suites
+    GET https://toloka.dev/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/task-suites
+    GET https://sandbox.toloka.dev/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     ```
 
@@ -73,14 +75,14 @@ You can set up the display of the list of task suites in parts (for example, 10 
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
+    GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -93,14 +95,14 @@ You can set up the display of the list of task suites in parts (for example, 10 
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+    GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

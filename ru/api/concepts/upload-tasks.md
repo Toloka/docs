@@ -1,5 +1,7 @@
 # Способы загрузки заданий
 
+{% include [announce](../_includes/announce.md) %}
+
 ## Загрузка заданий с помощью API {#download-tasks-api}
 
 В Толоке с помощью API задания можно загрузить двумя способами:
@@ -18,7 +20,7 @@
 {% cut "Пример запроса" %}
 
 ```bash
-POST https://toloka.yandex.com/api/v1/tasks
+POST https://toloka.dev/api/v1/tasks
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON
 
@@ -91,7 +93,7 @@ Content-Type: application/JSON
 {% cut "Пример запроса" %}
 
 ```bash
-POST https://toloka.yandex.com/api/v1/task-suites
+POST https://toloka.dev/api/v1/task-suites
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON
 

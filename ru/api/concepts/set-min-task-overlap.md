@@ -1,5 +1,7 @@
 # Остановить выдачу задания
 
+{% include [announce](../_includes/announce.md) %}
+
 Останавливает выдачу задания исполнителям.
 
 В поле `overlap` укажите значение `0`. Для заданий с бесконечным перекрытием измените значение в поле `infinite_overlap` на `false`.
@@ -11,7 +13,7 @@
 - Песочница
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+    PATCH https://sandbox.toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -19,7 +21,7 @@
 - Боевая версия
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+    PATCH https://toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

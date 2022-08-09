@@ -1,5 +1,7 @@
 # Send a test notification
 
+{% include [announce](../_includes/announce.md) %}
+
 Sends a test notification to the URL specified in the subscription.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Sends a test notification to the URL specified in the subscription.
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    POST https://toloka.dev/api/v1/webhook-subscriptions/<subscription_id>/test
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    POST https://sandbox.toloka.dev/api/v1/webhook-subscriptions/<subscription_id>/test
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Aggregate responses in a pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Starts aggregating responses to all completed tasks in the pool.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Starts aggregating responses to all completed tasks in the pool.
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    POST https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@ Starts aggregating responses to all completed tasks in the pool.
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    POST https://sandbox.toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

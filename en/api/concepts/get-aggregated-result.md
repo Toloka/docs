@@ -1,5 +1,7 @@
 # Get aggregate responses
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets aggregated responses.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets aggregated responses.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 
@@ -65,14 +67,14 @@ You can set up the display of the list of responses in parts (for example, 10 re
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -85,14 +87,14 @@ You can set up the display of the list of responses in parts (for example, 10 re
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

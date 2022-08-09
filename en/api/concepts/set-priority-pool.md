@@ -1,5 +1,7 @@
 # Change pool priority
 
+{% include [announce](../_includes/announce.md) %}
+
 Changes the priority of a pool.
 
 If you have multiple pools and want Tolokers to be offered one pool before another, change the pool priority. You don't need to stop the pool for that, it must have the "open" or "closed" status.
@@ -13,7 +15,7 @@ Priority is a number on a scale from 0 to 100. The larger the number, the faster
 - Production version
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/pools/<pool_id>
+    PATCH https://toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -21,7 +23,7 @@ Priority is a number on a scale from 0 to 100. The larger the number, the faster
 - Sandbox
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+    PATCH https://sandbox.toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

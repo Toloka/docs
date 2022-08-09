@@ -1,5 +1,7 @@
 # Размещение заданий
 
+{% include [announce](../_includes/announce.md) %}
+
 ## Перед началом работы {#start}
 
 Выберите платформу, чтобы получить OAuth token:
@@ -10,13 +12,13 @@
 
   1. [Зарегистрируйтесь]({{ requester-access }}) на выбранной платформе, если вы не делали этого ранее.
   1. Получите OAuth-токен в [кабинете заказчика](https://sandbox.toloka.yandex.com/ru/requester/profile/integration).
-  1. Во всех примерах используется URL песочницы: `https://sandbox.toloka.yandex.com/api/v1/<путь к ресурсу>`. Если решите переключиться на основную версию, замените URL ресурса на `https://toloka.yandex.com/api/v1/<путь к ресурсу>`.
+  1. Во всех примерах используется URL песочницы: `https://sandbox.toloka.dev/api/v1/<путь к ресурсу>`. Если решите переключиться на основную версию, замените URL ресурса на `https://toloka.dev/api/v1/<путь к ресурсу>`.
 
 - Основная версия
 
   1. [Зарегистрируйтесь]({{ requester-access }}) на выбранной платформе, если вы не делали этого ранее.
   1. Получите OAuth-токен в [кабинете заказчика](https://platform.toloka.ai/ru/requester/profile/integration).
-  1. Для отправки запросов замените в примерах URL ресурса на `https://toloka.yandex.com/api/v1/<путь к ресурсу>`, потому что все примеры приведены для песочницы.
+  1. Для отправки запросов замените в примерах URL ресурса на `https://toloka.dev/api/v1/<путь к ресурсу>`, потому что все примеры приведены для песочницы.
   1. Для публикации в основной версии Толоки необходимо предварительно [пополнить баланс счета]({{ requester-refill }}).
 
 {% endlist %}
@@ -82,7 +84,7 @@
                },
                "assignments_issuing_type": "AUTOMATED"
              }' \
-    https://sandbox.toloka.yandex.com/api/v1/projects
+    https://sandbox.toloka.dev/api/v1/projects
     ```
 
 - Postman
@@ -92,7 +94,7 @@
   1. Request URL
 
     ```bash
-    https://sandbox.toloka.yandex.com/api/v1/projects
+    https://sandbox.toloka.dev/api/v1/projects
     ```
 
   1. Headers
@@ -267,7 +269,7 @@
                  "default_overlap_for_new_task_suites": 3
                }
              }' \
-    https://sandbox.toloka.yandex.com/api/v1/pools
+    https://sandbox.toloka.dev/api/v1/pools
     ```
 
 - Postman
@@ -277,7 +279,7 @@
   1. Request URL
 
     ```bash
-    https://sandbox.toloka.yandex.com/api/v1/pools
+    https://sandbox.toloka.dev/api/v1/pools
     ```
 
   1. Headers
@@ -408,27 +410,27 @@
          -d '[
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
                  },
                  "pool_id": "<pool id>",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
                  },
                  "pool_id": "<pool id>",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
                  },
                  "pool_id": "<pool id>",
                  "overlap": 2
                }
              ]' \
-    https://sandbox.toloka.yandex.com/api/v1/tasks
+    https://sandbox.toloka.dev/api/v1/tasks
     ```
 
 - Postman
@@ -438,7 +440,7 @@
   1. Request URL
 
     ```bash
-    https://sandbox.toloka.yandex.com/api/v1/tasks
+    https://sandbox.toloka.dev/api/v1/tasks
     ```
 
   1. Headers
@@ -454,21 +456,21 @@
         [
           {
             "input_values": {
-              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
             },
             "pool_id": "<pool id>",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
             },
             "pool_id": "<pool id>",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
             },
             "pool_id": "<pool id>",
             "overlap": 2
@@ -500,7 +502,7 @@
     curl -X POST \
       -H 'Authorization: OAuth <OAuth token>' \
       -H 'Content-Type: application/JSON' \
-    https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+    https://sandbox.toloka.dev/api/v1/pools/<pool_id>/open
     ```
 
 - Postman
@@ -510,7 +512,7 @@
   1. Request URL
 
         ```bash
-        https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+        https://sandbox.toloka.dev/api/v1/pools/<pool_id>/open
         ```
 
   1. Headers

@@ -36,7 +36,7 @@ default:
   requester-troubleshooting: https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html
   requester-users: https://toloka.ai/docs/guide/concepts/users.html
   rfc4122: https://tools.ietf.org/html/rfc4122
-  sandbox: https://sandbox.toloka.yandex.com
+  sandbox: https://sandbox.toloka.dev
   sandbox-profile: https://sandbox.toloka.yandex.com/requester/profile
   sandbox-requester: https://sandbox.toloka.yandex.com/requester
   sandbox-requester-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration

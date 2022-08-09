@@ -1,5 +1,7 @@
 # Stop assigning a task
 
+{% include [announce](../_includes/announce.md) %}
+
 Stops assigning a task to Tolokers.
 
 Set the `overlap` field to `0`. For tasks with infinite overlap, change the value of `infinite_overlap` to `false`.
@@ -11,7 +13,7 @@ Set the `overlap` field to `0`. For tasks with infinite overlap, change the valu
 - Sandbox
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+    PATCH https://sandbox.toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -19,7 +21,7 @@ Set the `overlap` field to `0`. For tasks with infinite overlap, change the valu
 - Production version
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/tasks/<task_id>/set-overlap-or-min
+    PATCH https://toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

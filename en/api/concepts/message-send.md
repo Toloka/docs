@@ -1,5 +1,7 @@
 # To send a message
 
+{% include [announce](../_includes/announce.md) %}
+
 Sends a message to Tolokers.
 
 - [Specify recipients in a list](#spis).
@@ -14,7 +16,7 @@ The sent message is added to a new [message thread](messages.md).
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/compose
+    POST https://toloka.dev/api/v1/message-threads/compose
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -22,7 +24,7 @@ The sent message is added to a new [message thread](messages.md).
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/compose
+    POST https://sandbox.toloka.dev/api/v1/message-threads/compose
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

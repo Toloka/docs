@@ -1,5 +1,7 @@
 # Get the list of operations
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the list of operations.
 
 ## Request {#query}
@@ -9,14 +11,14 @@ Gets the list of operations.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/operations
+    GET https://toloka.dev/api/v1/operations
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/operations
+    GET https://sandbox.toloka.dev/api/v1/operations
     Authorization: OAuth <OAuth token>
     ```
 

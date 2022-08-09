@@ -1,5 +1,7 @@
 # Get the list of skills
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the list of created skills.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the list of created skills.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/skills
+    GET https://toloka.dev/api/v1/skills
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/skills
+    GET https://sandbox.toloka.dev/api/v1/skills
     Authorization: OAuth <OAuth token>
     ```
 
@@ -63,14 +65,14 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/skills?sort=id&limit=10
+    GET https://toloka.dev/api/v1/skills?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/skills?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -83,14 +85,14 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+    GET https://toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

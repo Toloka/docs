@@ -1,5 +1,7 @@
 # Создать пул
 
+{% include [announce](../_includes/announce.md) %}
+
 Создает пул.
 
 Созданному пулу автоматически присваивается идентификатор.
@@ -23,7 +25,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools
+    POST https://toloka.dev/api/v1/pools
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -31,7 +33,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools
+    POST https://sandbox.toloka.dev/api/v1/pools
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

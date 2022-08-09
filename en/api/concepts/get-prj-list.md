@@ -1,5 +1,7 @@
 # Get the list of projects
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the list of projects.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the list of projects.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/projects
+    GET https://toloka.dev/api/v1/projects
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/projects
+    GET https://sandbox.toloka.dev/api/v1/projects
     Authorization: OAuth <OAuth token>
     ```
 
@@ -72,14 +74,14 @@ You can set up the display of the list of projects in parts (for example, 10 pro
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10
+    GET https://toloka.dev/api/v1/projects?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/projects?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -92,14 +94,14 @@ You can set up the display of the list of projects in parts (for example, 10 pro
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<ID of the last project from the previous response>
+    GET https://toloka.dev/api/v1/projects?sort=id&limit=10&id_gt=<ID of the last project from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/projects?sort=id&limit=10&id_gt=<id of the last project from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/projects?sort=id&limit=10&id_gt=<id of the last project from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

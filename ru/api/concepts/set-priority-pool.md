@@ -1,5 +1,7 @@
 # Изменить приоритет пула
 
+{% include [announce](../_includes/announce.md) %}
+
 Изменяет приоритет пула.
 
 Если у вас несколько пулов и вы хотите, чтобы исполнителям один пул предлагался раньше другого — измените приоритет пула. Останавливать пул при этом не надо, пул должен быть в статусе «открыт» или «закрыт».
@@ -13,7 +15,7 @@
 - Боевая версия
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/pools/<pool_id>
+    PATCH https://toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -21,7 +23,7 @@
 - Песочница
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+    PATCH https://sandbox.toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

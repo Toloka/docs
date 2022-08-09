@@ -1,5 +1,7 @@
 # Получить свойства ответа
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает свойства данного ответа.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/assignments/<response_id>
+    GET https://toloka.dev/api/v1/assignments/<response_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments/<response_id>
+    GET https://sandbox.toloka.dev/api/v1/assignments/<response_id>
     Authorization: OAuth <OAuth token>
     ```
 

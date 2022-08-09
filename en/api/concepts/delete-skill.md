@@ -1,5 +1,7 @@
 # Remove a skill for a Toloker
 
+{% include [announce](../_includes/announce.md) %}
+
 Removes a skill for a Toloker.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Removes a skill for a Toloker.
 - Production version
 
     ```bash
-    DELETE https://toloka.yandex.com/api/v1/user-skills/<id>
+    DELETE https://toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    DELETE https://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+    DELETE https://sandbox.toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 

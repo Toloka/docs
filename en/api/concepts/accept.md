@@ -1,5 +1,7 @@
 # Checking completed tasks
 
+{% include [announce](../_includes/announce.md) %}
+
 You can manually check tasks and reject responses of poor quality. To accept or reject received responses, change the status of the task suite using a PATCH request to the resource `/assignments/<task suite assignment ID>`:
 
 - Accept responses: change `SUBMITTED` to `ACCEPTED`.
@@ -15,7 +17,7 @@ To resend rejected tasks to be completed by other Tolokers, add a quality contro
 - Production version
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    PATCH https://toloka.dev/api/v1/assignments/<task_suite_assignment_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -23,7 +25,7 @@ To resend rejected tasks to be completed by other Tolokers, add a quality contro
 - Sandbox
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    PATCH https://sandbox.toloka.dev/api/v1/assignments/<task_suite_assignment_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

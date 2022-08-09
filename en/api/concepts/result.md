@@ -1,5 +1,7 @@
 # Get responses
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets responses for all the pool's task suites.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets responses for all the pool's task suites.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/assignments
+    GET https://toloka.dev/api/v1/assignments
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments
+    GET https://sandbox.toloka.dev/api/v1/assignments
     Authorization: OAuth <OAuth token>
     ```
 
@@ -107,14 +109,14 @@ You can set up the display of the list of responses in parts (for example, 10 re
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10
+    GET https://toloka.dev/api/v1/assignments?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -127,14 +129,14 @@ You can set up the display of the list of responses in parts (for example, 10 re
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+    GET https://toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

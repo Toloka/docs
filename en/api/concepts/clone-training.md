@@ -1,5 +1,7 @@
 # Clone a training pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates a duplicate training pool.
 
 An empty training pool will be created with the same parameters.
@@ -11,14 +13,14 @@ An empty training pool will be created with the same parameters.
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/clone
+    POST https://toloka.dev/api/v1/trainings/<training_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/clone
+    POST https://sandbox.toloka.dev/api/v1/trainings/<training_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 

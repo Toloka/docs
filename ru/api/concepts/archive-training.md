@@ -1,5 +1,7 @@
 # Отправить обучение в архив
 
+{% include [announce](../_includes/announce.md) %}
+
 Переносит обучающий пул в архив.
 
 Если обучение не используется, его можно перенести в архив. Перед архивацией проверьте два условия:
@@ -15,14 +17,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/archive
+    POST https://toloka.dev/api/v1/trainings/<training_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/archive
+    POST https://sandbox.toloka.dev/api/v1/trainings/<training_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 

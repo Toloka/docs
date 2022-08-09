@@ -1,19 +1,21 @@
 # Доступ к API
 
+{% include [announce](../_includes/announce.md) %}
+
 В запросах к API Толоки нужно указать URL ресурса и OAuth-токен.
 
 #### Пример запроса
 
 ```bash
-GET https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=12345
+GET https://sandbox.toloka.dev/api/v1/assignments?pool_id=12345
 Authorization: OAuth <OAuth token>
 ```
 
 ## URL ресурса {#urls}
 
-- Для запросов к песочнице: `https://sandbox.toloka.yandex.com/api/v1/<путь к ресурсу>`.
+- Для запросов к песочнице: `https://sandbox.toloka.dev/api/v1/<путь к ресурсу>`.
 
-- Для запросов к боевой версии: `https://toloka.yandex.com/api/v1/<путь к ресурсу>`.
+- Для запросов к боевой версии: `https://toloka.dev/api/v1/<путь к ресурсу>`.
 
 ## Получение OAuth-токена {#token}
 

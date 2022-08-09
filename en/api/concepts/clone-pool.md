@@ -1,5 +1,7 @@
 # Clone a pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates a duplicate pool.
 
 An empty pool will be created with the same parameters.
@@ -11,14 +13,14 @@ An empty pool will be created with the same parameters.
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/clone
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/clone
+    POST https://toloka.dev/api/v1/pools/<pool_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 

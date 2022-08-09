@@ -1,5 +1,7 @@
 # Переместить цепочку сообщений
 
+{% include [announce](../_includes/announce.md) %}
+
 Добавляет или удаляет цепочку сообщений из папки.
 
 Цепочки сообщений, которые находятся в папке `UNREAD`, в интерфейсе отмечены как непрочитанные.
@@ -17,7 +19,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
+    POST https://toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -25,7 +27,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
+    POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -41,7 +43,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
+    POST https://toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -49,7 +51,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
+    POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

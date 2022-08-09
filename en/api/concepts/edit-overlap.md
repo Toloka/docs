@@ -1,5 +1,7 @@
 # Change the task suite overlap
 
+{% include [announce](../_includes/announce.md) %}
+
 Changes the task suite overlap.
 
 You can specify a [numeric value](#number_overlap) or set [infinite overlap](#infinite) to assign the task suite to all Tolokers (this is useful for training tasks).
@@ -11,7 +13,7 @@ You can specify a [numeric value](#number_overlap) or set [infinite overlap](#in
 - Production version
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    PATCH https://toloka.dev/api/v1/task-suites/<task_suite_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -20,7 +22,7 @@ You can specify a [numeric value](#number_overlap) or set [infinite overlap](#in
 - Sandbox
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    PATCH https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

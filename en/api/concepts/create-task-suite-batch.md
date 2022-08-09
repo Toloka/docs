@@ -1,5 +1,7 @@
 # Create multiple task suites
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates multiple task suites.
 
 {% note alert %}
@@ -17,7 +19,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/task-suites
+    POST https://toloka.dev/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -27,7 +29,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/task-suites
+    POST https://sandbox.toloka.dev/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

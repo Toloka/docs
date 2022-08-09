@@ -1,5 +1,7 @@
 # Account balance
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets information about the account balance.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets information about the account balance.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/requester
+    GET https://toloka.dev/api/v1/requester
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/requester
+    GET https://sandbox.toloka.dev/api/v1/requester
     Authorization: OAuth <OAuth token>
     ```
 

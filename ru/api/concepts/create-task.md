@@ -1,5 +1,7 @@
 # Создать одно или несколько заданий
 
+{% include [announce](../_includes/announce.md) %}
+
 Создает одно или несколько заданий.
 
 Вы можете создать не более 100 000 заданий в минуту и не более 2 000 000 в день.
@@ -10,7 +12,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/tasks
+    POST https://toloka.dev/api/v1/tasks
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -24,7 +26,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/tasks
+    POST https://sandbox.toloka.dev/api/v1/tasks
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

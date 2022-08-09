@@ -1,5 +1,7 @@
 # Download file
 
+{% include [announce](../_includes/announce.md) %}
+
 Downloads a file attached to a task response.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Downloads a file attached to a task response.
 - Production version
 
     ```no-highlight
-    GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
+    GET https://toloka.dev/api/v1/attachments/<file_id>/download
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```no-highlight
-    GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
+    GET https://sandbox.toloka.dev/api/v1/attachments/<file_id>/download
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Aggregate responses to a single task
 
+{% include [announce](../_includes/announce.md) %}
+
 Starts aggregating responses to a single task.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Starts aggregating responses to a single task.
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
+    POST https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@ Starts aggregating responses to a single task.
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
+    POST https://sandbox.toloka.dev/api/v1/aggregated-solutions/aggregate-by-task
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

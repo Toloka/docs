@@ -1,5 +1,7 @@
 # Get a list of bans
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the list of Toloker bans.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the list of Toloker bans.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions
+    GET https://toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     ```
 
@@ -76,24 +78,24 @@ To get the list of bans in parts (for example, 10 bans at a time), use a combin
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
+    GET https://toloka.dev/api/v1/user-restrictions?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
+    GET https://toloka.dev/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
     Authorization: OAuth <OAuth token>
     ```
 

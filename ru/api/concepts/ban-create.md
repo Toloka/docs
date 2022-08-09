@@ -1,5 +1,7 @@
 # Заблокировать доступ к заданиям
 
+{% include [announce](../_includes/announce.md) %}
+
 Создает блокировку для исполнителя.
 
 ## Запрос {#request}
@@ -9,7 +11,7 @@
 - Боевая версия
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/user-restrictions
+    PUT https://toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@
 - Песочница
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/user-restrictions
+    PUT https://sandbox.toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

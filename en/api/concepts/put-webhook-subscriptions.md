@@ -1,5 +1,7 @@
 # Create a subscription
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates one or more subscriptions.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Creates one or more subscriptions.
 - Production version
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/webhook-subscriptions
+    PUT https://toloka.dev/api/v1/webhook-subscriptions
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@ Creates one or more subscriptions.
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
+    PUT https://sandbox.toloka.dev/api/v1/webhook-subscriptions
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

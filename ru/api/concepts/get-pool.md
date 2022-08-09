@@ -1,5 +1,7 @@
 # Получить свойства пула
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает свойства пула.
 
 Идентификатор пула можно узнать из [списка пулов](get-pool-list.md).
@@ -11,14 +13,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/pools/<pool_id>
+    GET https://toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+    GET https://sandbox.toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     ```
 

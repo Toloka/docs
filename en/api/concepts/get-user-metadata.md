@@ -1,5 +1,7 @@
 # Get user metadata
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets user data by `user_id`.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets user data by `user_id`.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-metadata/<user_id>
+    GET https://toloka.dev/api/v1/user-metadata/<user_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-metadata/<user_id>
+    GET https://sandbox.toloka.dev/api/v1/user-metadata/<user_id>
     Authorization: OAuth <OAuth token>
     ```
 

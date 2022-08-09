@@ -1,5 +1,7 @@
 # Получить список блокировок
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает список блокировок исполнителя.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions
+    GET https://toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     ```
 
@@ -82,24 +84,24 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
+    GET https://toloka.dev/api/v1/user-restrictions?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
+    GET https://toloka.dev/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
     Authorization: OAuth <OAuth token>
     ```
 

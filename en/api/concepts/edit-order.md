@@ -1,5 +1,7 @@
 # Change task suite priority
 
+{% include [announce](../_includes/announce.md) %}
+
 Changes the priority of a task suite in the pool.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Changes the priority of a task suite in the pool.
 - Production version
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    PATCH https://toloka.dev/api/v1/task-suites/<task_suite_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@ Changes the priority of a task suite in the pool.
 - Sandbox
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    PATCH https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
