@@ -30,7 +30,7 @@ Get access to projects with the help of Toloka API. Manage projects, pool, uploa
 - [Quick start](concepts/quickstart.md)
 - [Projects](concepts/project.md)
 - [Pools](concepts/pool.md)
-- [Tasks](concepts/download-tasks.md)
+- [Tasks](concepts/upload-tasks.md)
 
 ## Related pages
 

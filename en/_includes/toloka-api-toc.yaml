@@ -181,7 +181,10 @@ items:
       - name: Remove a proxy server registration
         href: ../api/concepts/httpproxy-delete.md
   - name: Ways to upload tasks
+    href: ../api/concepts/upload-tasks.md
+  - name: Ways to upload tasks
     href: ../api/concepts/download-tasks.md
+    hidden: true
   - name: Tasks
     items:
       - name: Overview
