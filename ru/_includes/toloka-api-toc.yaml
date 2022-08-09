@@ -165,7 +165,10 @@ items:
           - name: Разблокировать доступ
             href: ../api/concepts/ban-delete.md
   - name: Способы загрузки заданий
+    href: ../api/concepts/upload-tasks.md
+  - name: Способы загрузки заданий
     href: ../api/concepts/download-tasks.md
+    hidden: true
   - name: HTTP proxy
     hidden: true
     items:

@@ -43,8 +43,8 @@ Contains user metadata in JSON format.
   "id": "123cdfggh",
   "country": "EN",
   "languages": [
-    "en",
-    "fr"
+    "EN",
+    "FR"
     ],
   "adult_allowed": true,
   "attributes": {
