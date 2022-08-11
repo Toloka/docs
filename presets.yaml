@@ -37,10 +37,10 @@ default:
   requester-users: https://toloka.ai/docs/guide/concepts/users.html
   rfc4122: https://tools.ietf.org/html/rfc4122
   sandbox: https://sandbox.toloka.yandex.com
-  sandbox-profile: https://sandbox.toloka.yandex.com/requester/profile
-  sandbox-requester: https://sandbox.toloka.yandex.com/requester
-  sandbox-requester-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
-  sandbox-workers: https://sandbox.toloka.yandex.com/requester/workers
+  sandbox-profile: https://platform.sandbox.toloka.ai/requester/profile
+  sandbox-requester: https://platform.sandbox.toloka.ai/requester
+  sandbox-requester-profile-integration: https://platform.sandbox.toloka.ai/requester/profile/integration
+  sandbox-workers: https://platform.sandbox.toloka.ai/requester/workers
   template-builder: https://clck.ru/SMCHv
   tk-create-task: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task
   tk-create-tasks: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks

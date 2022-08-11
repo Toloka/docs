@@ -9,7 +9,7 @@
 - Песочница
 
   1. [Зарегистрируйтесь]({{ requester-access }}) на выбранной платформе, если вы не делали этого ранее.
-  1. Получите OAuth-токен в [кабинете заказчика](https://sandbox.toloka.yandex.com/ru/requester/profile/integration).
+  1. Получите OAuth-токен в [кабинете заказчика](https://platform.sandbox.toloka.ai/ru/requester/profile/integration).
   1. Во всех примерах используется URL песочницы: `https://sandbox.toloka.yandex.com/api/v1/<путь к ресурсу>`. Если решите переключиться на основную версию, замените URL ресурса на `https://toloka.yandex.com/api/v1/<путь к ресурсу>`.
 
 - Основная версия

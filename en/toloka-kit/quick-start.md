@@ -2,7 +2,7 @@
 
 To start with Toloka-Kit:
 
-1. Get an OAuth token in your [profile](https://platform.toloka.ai/requester/profile/integration) or in the [Sandbox profile](https://sandbox.toloka.yandex.com/requester/profile/integration).
+1. Get an OAuth token in your [profile](https://platform.toloka.ai/requester/profile/integration) or in the [Sandbox profile](https://platform.sandbox.toloka.ai/requester/profile/integration).
 
 2. Install the Toloka-Kit package:
 
