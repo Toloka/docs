@@ -155,6 +155,9 @@ items:
             href: ../api/concepts/filter-computed.md
           - name: Filter by skills
             href: ../api/concepts/filter-skill.md
+          - name: Regions and their codes
+            href: ../api/concepts/regions.md
+            hidden: true
       - name: Block access to tasks
         items:
           - name: Overview

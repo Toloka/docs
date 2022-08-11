@@ -32,7 +32,7 @@ This example selects Tolokers with the Windows OS and Yandex Browser.
 || Key parameter | Value description ||
 || **region_by_phone** | **integer**
 
-The Toloker's region detected from the mobile phone number (the [region ID in the search database](https://tech.yandex.com/xml/doc/dg/reference/regions-docpage/)).
+The Toloker's region detected from the mobile phone number (the [region ID in the search database](regions.md)).
 
 Value of "operator":
 
@@ -42,7 +42,7 @@ Value of "operator":
 Value of "value" if data couldn't be extracted — `null`. ||
 || **region_by_ip** | **integer**
 
-The Toloker's region detected from the IP address (the [region ID in the search database](https://tech.yandex.com/xml/doc/dg/reference/regions-docpage/)).
+The Toloker's region detected from the IP address (the [region ID in the search database](regions.md)).
 
 Value of "operator":
 
