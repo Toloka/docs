@@ -93,7 +93,7 @@ Value of "operator":
 - `LTE` — Less than or equal to. ||
 || **city** | **integer**
 
-The Toloker's city ([the region ID in the search database](https://tech.yandex.com/xml/doc/dg/reference/regions-docpage/)).
+The Toloker's city ([the region ID in the search database](regions.md)).
 
 Value of "operator":
 

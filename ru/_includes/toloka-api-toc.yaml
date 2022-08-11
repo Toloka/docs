@@ -152,6 +152,9 @@ items:
             href: ../api/concepts/filter-computed.md
           - name: Фильтр по навыкам
             href: ../api/concepts/filter-skill.md
+          - name: Список регионов и кодов
+            href: ../api/concepts/regions.md
+            hidden: true
       - name: Блокировка доступа к заданиям
         items:
           - name: Обзор

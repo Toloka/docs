@@ -1,6 +1,5 @@
 default:
   crowd-kit: https://github.com/Toloka/crowd-kit
-  dg-regions: https://tech.yandex.com/xml/doc/dg/reference/regions-docpage/
   handlebarsjs-com: http://handlebarsjs.com/
   iso-lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   iso-search: https://www.iso.org/obp/ui/#search
