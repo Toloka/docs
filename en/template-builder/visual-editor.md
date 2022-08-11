@@ -4,11 +4,11 @@ For some Toloka presets, Template builder allows you to edit its template using 
 
 Currently, presets with the visual editor include:
 
-- [Image classification](https://toloka.yandex.com/requester/new/project?templateId=image_classification)
-- [Hand gesture classification](https://toloka.yandex.com/requester/new/project?templateId=videoModeration)
-- [Clickbait or not?](https://toloka.yandex.com/requester/new/project?templateId=checkbox_dynamic)
-- [Object recognition & detection](https://toloka.yandex.com/requester/new/project?templateId=polygon)
-- [Product search relevance](https://toloka.yandex.com/requester/new/project?templateId=categorize)
+- [Image classification](https://platform.toloka.ai/requester/new/project?templateId=image_classification)
+- [Hand gesture classification](https://platform.toloka.ai/requester/new/project?templateId=videoModeration)
+- [Clickbait or not?](https://platform.toloka.ai/requester/new/project?templateId=checkbox_dynamic)
+- [Object recognition & detection](https://platform.toloka.ai/requester/new/project?templateId=polygon)
+- [Product search relevance](https://platform.toloka.ai/requester/new/project?templateId=categorize)
 
 When you choose to create a project that supports configuring the task interface through the visual editor, it will be opened by default.
 

@@ -4,11 +4,11 @@
 
 В настоящее время визуальный редактор доступен в следующих пресетах:
 
-- [Классификация изображений](https://toloka.yandex.com/requester/new/project?templateId=image_classification)
-- [Классификация жестов рук](https://toloka.yandex.com/requester/new/project?templateId=videoModeration)
-- [Кликбейт или нет?](https://toloka.yandex.com/requester/new/project?templateId=checkbox_dynamic)
-- [Распознавание объектов и выделение областей](https://toloka.yandex.com/requester/new/project?templateId=polygon)
-- [Релевантность поиска товаров](https://toloka.yandex.com/requester/new/project?templateId=categorize)
+- [Классификация изображений](https://platform.toloka.ai/requester/new/project?templateId=image_classification)
+- [Классификация жестов рук](https://platform.toloka.ai/requester/new/project?templateId=videoModeration)
+- [Кликбейт или нет?](https://platform.toloka.ai/requester/new/project?templateId=checkbox_dynamic)
+- [Распознавание объектов и выделение областей](https://platform.toloka.ai/requester/new/project?templateId=polygon)
+- [Релевантность поиска товаров](https://platform.toloka.ai/requester/new/project?templateId=categorize)
 
 В случае, если вы выбираете проект, который поддерживает настройку интерфейса заданий с помощью визуального редактора, он откроется по умолчанию.
 

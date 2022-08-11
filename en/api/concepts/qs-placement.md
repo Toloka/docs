@@ -9,13 +9,13 @@ Choose a platform to get an OAuth token:
 - Sandbox
 
     1. [Register](https://toloka.ai/docs/guide/concepts/access.html) on the selected platform if you haven't done this before.
-    1. Get an OAuth token in the [requester interface](https://sandbox.toloka.yandex.ru/requester/profile/integration).
+    1. Get an OAuth token in the [requester interface](https://sandbox.toloka.yandex.com/requester/profile/integration).
     1. All examples use the sandbox URL: `https://sandbox.toloka.yandex.com/api/v1/<resource path>`. If you decide to switch to the production version, replace the resource URL with `https://toloka.yandex.com/api/v1/<resource path>`.
 
 - Production version
 
     1. [Register](https://toloka.ai/docs/guide/concepts/access.html) on the selected platform if you haven't done this before.
-    1. Get an OAuth token in the [requester interface](https://toloka.yandex.ru/requester/profile/integration).
+    1. Get an OAuth token in the [requester interface](https://platform.toloka.ai/requester/profile/integration).
     1. To send requests, replace the resource URL in the examples with `https://toloka.yandex.com/api/v1/<resource path>`, since all the examples are given for the sandbox.
     1. To post tasks in Toloka's production version, first top up your account balance.
 
