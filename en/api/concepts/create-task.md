@@ -220,10 +220,10 @@ The default value is `false`. ||
 || **origin_task_id** | **string**
 
 ID of the task it was copied from. ||
-|| **reserved_for[]** | **array of integer**
+|| **reserved_for[]** | **array of strings**
 
 IDs of Tolokers who will have access to the task. ||
-|| **unavailable_for[]** | **array of integer**
+|| **unavailable_for[]** | **array of strings**
 
 IDs of Tolokers who shouldn't have access to the task. ||
 |#
