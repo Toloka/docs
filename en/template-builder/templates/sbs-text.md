@@ -1,6 +1,8 @@
 # Side-by-side text comparison
 
-For this type of project, you can use the **Are these the same product?** preset.
+For this type of project, you can use the preset **Comparison of products**.
+
+This preset allows you to compare two names and determine whether they belong to different products or the same.
 
 Take a look at the example: there are two texts and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 

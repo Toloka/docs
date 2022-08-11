@@ -76,9 +76,13 @@ If you set up a shortcut without a condition, the shortcut will still work, but 
 
 Here is an example of an error. In this example, if Tolokers respond **Yes**, they see another question. But they can use a keyboard shortcut to respond to it, even if it's not shown in the interface.
 
-[View example with error in the sandbox](https://clck.ru/TR8kq).
+View example with error in the sandbox.
 
-[View corrected example in the sandbox](https://clck.ru/TR8j4).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR8kq)
+
+View corrected example in the sandbox.
+
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR8j4)
 
 ## Troubleshooting {#troubleshooting}
 
