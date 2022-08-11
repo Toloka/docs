@@ -206,10 +206,10 @@ Assigning a task suite with infinite overlap. This option is used, for instance
 
 - `true` — Use infinite overlap.
 - `false` — Use the overlap that is set for the task suite or pool. ||
-|| **reserved_for[]** | **array of integer**
+|| **reserved_for[]** | **array of strings**
 
 IDs of Tolokers who will have access to the task suites. ||
-|| **unavailable_for[]** | **array of integer**
+|| **unavailable_for[]** | **array of strings**
 
 IDs of Tolokers who shouldn't have access to the task suite. ||
 || **issuing_order_override** | **float**

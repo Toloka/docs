@@ -206,10 +206,10 @@
 
 - `true` — установить бесконечное перекрытие;
 - `false` — оставить перекрытие, указанное для страницы заданий или пула.||
-||**reserved_for[]** | **array of integer**
+||**reserved_for[]** | **array of strings**
 
 Идентификаторы исполнителей, которым будет доступна страница.||
-||**unavailable_for[]** | **array of integer**
+||**unavailable_for[]** | **array of strings**
 
 Идентификаторы исполнителей, для которых страница должна быть недоступна.
 ||**issuing_order_override** | **float**

@@ -225,10 +225,10 @@
 ||**origin_task_id** | **string**
 
 Идентификатор задания, с которого оно скопировано.||
-||**reserved_for[]** | **array of integer**
+||**reserved_for[]** | **array of strings**
 
 Идентификаторы исполнителей, которым задание будет доступно.||
-||**unavailable_for[]** | **array of integer**
+||**unavailable_for[]** | **array of strings**
 
 Идентификаторы исполнителей, для которых задание должно быть недоступно.||
 |#
