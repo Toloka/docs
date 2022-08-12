@@ -2,7 +2,7 @@
 
 Проверяет, что массив в `data` является подмассивом для `parent`.
 
-[Посмотреть пример в песочнице](https://clck.ru/T9a4k).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/T9a4k)
 
 ## Свойства компонента {#properties}
 

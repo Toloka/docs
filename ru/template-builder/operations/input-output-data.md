@@ -47,7 +47,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/Qi9VF).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/Qi9VF)
 
 ## Чтение входных данных с типом JSON {#read-json}
 
@@ -73,13 +73,13 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/QiC9S).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QiC9S)
 
 ## Запись данных с типом JSON {#write-json}
 
 Аналогично осуществляется запись в выходные данные. Если вы укажете путь через точку, то в спецификации поле с выходными данными будет иметь тип объект.
 
-[Посмотреть пример в песочнице](https://clck.ru/QiEt3).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QiEt3)
 
 ## Чтение данных с типом "массив" {#read-array}
 
@@ -90,7 +90,7 @@
 
 Например, вы можете преобразовать массив ссылок на изображения в массив компонентов [view.image](../reference/view.image.md), чтобы отобразить их в интерфейсе.
 
-[Посмотреть пример в песочнице](https://tb.yandex.net/editor?config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNlTE48jFmzwALItxYAnTnW0BDKHxgRtU4aIV4J02SkpWFtZawd4AJgboHOcKEwAroIgItTOeEzeaqogcFIGCET2TjQAvmERcVB0EHKpYkrMbhR4HCR+CUmW4dYggdrc+bVZrrFePjwQYAZNoQV1UXQx7nGSFiADOGkDM7Vz05hpodlBdChoVjZVyWwA2qnqdHRMfMgA9OdgHlCcAt0A1nxQBkx+EOfxCAC0w4FSACM+OcAJwANgADCRznwGjAiNpviQDPgiAB9ADMABEAEIAeQAmjiAAo4jEADU4ACsmAgaoUQGpjqcLlcbndcmAni83nAPl9fmp-kDQZDofA+BpzEZvnw4Nw1BBAkRjuiAKoAQSxaoAMgAlPUACQAogBpam0+k0I4nM6Xa63e5c56vd6fKQ-P6A4HgqHnCDcDzfJiK3JogDixoAigAmADseIA6gAtABqqYtdMm1AAuksQGkgA).
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/sjyWXYxE3YEtWG)
 
 ## Запись данных с типом "массив" {#write-array}
 
@@ -102,7 +102,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/QiCPA).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QiCPA)
 
 ## Узнайте больше
 

@@ -2,7 +2,7 @@
 
 Поле для ввода короткого текста, не больше одной строки. Чтобы добавить поле, где можно ввести много строк текста, используйте [field.textarea](field.textarea.md).
 
-[Посмотреть пример в песочнице](https://clck.ru/T7Ykn).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/T7Ykn)
 
 ## Свойства компонента {#properties}
 
@@ -17,7 +17,7 @@
 || `requiredMark` | _boolean_ | Показывать "\*" рядом с надписью над компонентом ||
 || `rtl` | _object_ | Тексты на арабском, иврите и некоторых других языках принято писать слева направо. Используйте это свойство, чтобы задать правильный режим отображения для компонента.
 
-[Посмотреть пример в песочнице](https://clck.ru/amHBJ).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/amHBJ)
 
 [Подробнее про RTL-языки](https://www.w3.org/International/questions/qa-scripts).
 ||

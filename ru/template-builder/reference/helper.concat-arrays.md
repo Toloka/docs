@@ -14,7 +14,7 @@
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/QRfHv).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QRfHv)
 
 ## Свойства компонента {#properties}
 

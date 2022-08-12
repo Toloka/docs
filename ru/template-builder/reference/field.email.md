@@ -4,7 +4,7 @@
 
 Проверяет, что в тексте есть символ `@`. Другие условия [настройте самостоятельно](../best-practices/conditions.md).
 
-[Посмотреть пример в песочнице](https://clck.ru/RYXrb).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RYXrb)
 
 ## Свойства компонента {#properties}
 

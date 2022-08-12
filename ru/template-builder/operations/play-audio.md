@@ -20,7 +20,7 @@
 
 Чтобы аудио автоматически воспроизводилось повторно, в свойстве `loop` укажите `true`.
 
-[Посмотреть пример в песочнице](https://clck.ru/QuusY).
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/2rezzVye3YCbJE)
 
 
 ## Убедиться, что исполнитель прослушал аудио {#validate-listened}
@@ -40,7 +40,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/Quuzb).
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/FRTyjPpy3YCdkv)
 
 - Прослушал до конца
 
@@ -55,7 +55,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/Quv4p).
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GGV9jn6o3YCebe)
 
 {% endlist %}
 
@@ -75,7 +75,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/TEDEW).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/TEDEW)
 
 
 ## Создать задание, в котором нужно превратить аудио в текст {#transform-to-text}
@@ -86,7 +86,7 @@
 - [condition.required](../reference/condition.required.md) — чтобы убедиться, что исполнитель ввел текст в многострочное поле ([field.textarea](../reference/field.textarea.md));
 - [plugin.toloka](../reference/plugin.toloka.md) — чтобы настроить внешний вид задания.
 
-[Посмотреть пример в песочнице](https://clck.ru/QpFYn).
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/zTKF08K93YCfsC)
 
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

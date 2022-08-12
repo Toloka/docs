@@ -13,13 +13,13 @@
 
   Чтобы подставить текст из входных данных, используйте компонент `data.input`.
 
-  [Посмотреть пример в песочнице](https://clck.ru/R6TpZ).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/R6TpZ)
 
 - Из выходных данных
 
   Чтобы подставить текст из выходных данных, используйте компонент `data.output`.
 
-  [Посмотреть пример в песочнице](https://clck.ru/R6TqN).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/R6TqN)
 
 {% endlist %}
 
@@ -30,7 +30,7 @@
 
 Чтобы добавить поле для ввода однострочного текста, используйте компонент [field.text](../reference/field.text.md), для многострочного — [field.textarea](../reference/field.textarea.md).
 
-[Посмотреть пример в песочнице](https://clck.ru/R6Tqr).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/R6Tqr)
   
 ## Изменить текст {#text-transform}
 
@@ -40,14 +40,15 @@
     - `uppercase` — сделает все буквы заглавными.
     - `lowercase` —сделает все буквы строчными.
     - `capitalize` — сделает первую букву текста заглавной, а все последующие — строчными.
-  [Посмотреть пример в песочнице](https://clck.ru/R6Ts8).
+
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/R6Ts8)
   
 - [helper.replace](../reference/helper.replace.md) — позволяет заменить одни части строки на другие. Для этого укажите в свойстве `find` значение, которое будет заменено на значение свойства `replace`.
 
-  [Посмотреть пример в песочнице](https://clck.ru/R6PD2).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/R6PD2)
   
 - [helper.join](../reference/helper.join.md) — позволяет соединить несколько строк в одну, в том числе через пробел или запятую.
 
-  [Посмотреть пример в песочнице](https://clck.ru/R6Tsa).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/R6Tsa)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

@@ -17,7 +17,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/U3AuE).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/U3AuE)
   
 ## Запретить отрицательные числа {#number-positive-only}
 
@@ -27,6 +27,6 @@
 "minimum": 0
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/U7Mzt).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/U7Mzt)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

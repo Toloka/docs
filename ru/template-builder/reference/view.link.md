@@ -6,7 +6,9 @@
 
 Рекомендуем использовать этот компонент, если вам нужно вставить ссылку без дополнительного форматирования.
 
-Если вы хотите вставить кнопку, по которой будет открываться ссылка, используйте компоненты [view.action-button](view.action-button.md) и [action.open-link](action.open-link.md). [Посмотреть пример в песочнице](https://clck.ru/QLEtD).
+Если вы хотите вставить кнопку, по которой будет открываться ссылка, используйте компоненты [view.action-button](view.action-button.md) и [action.open-link](action.open-link.md). 
+
+[![](../_images/buttons/view-example.svg)](https://clck.ru/QLEtD)
 
 Чтобы вставить ссылку с поисковым запросом, используйте [helper.search-query](helper.search-query.md). [Посмотреть пример в песочнице](https://clck.ru/QLF3o).
 

@@ -20,7 +20,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/RnZox).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RnZox)
 
 
 ## Настроить режимы разметки {#shapes}
@@ -41,7 +41,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/Rna3F).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/Rna3F)
 
 - Многоугольниками
 
@@ -55,7 +55,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/RnZtm).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/RnZtm)
 
 - Точками
 
@@ -69,7 +69,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/RnZyt).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/RnZyt)
 
 {% endlist %}
 
@@ -91,7 +91,7 @@
 }
 ```
 
-[Посмотреть пример в песочнице](https://clck.ru/RnaUY).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RnaUY)
 
 Каждый новый объект свойства `labels` добавляет в редакторе кнопку для выбора типа области, а разное значение `value` дает возможность выделить область уникальным цветом.
 
@@ -100,7 +100,11 @@
 
 Чтобы помочь исполнителю работать быстрее, добавьте горячие клавиши с помощью компонента [plugin.field.image-annotation.hotkeys](../reference/plugin.field.image-annotation.hotkeys.md). Горячие клавиши можно назначить на стрелки вверх и вниз (`up`,`down`), цифры и латинские буквы.
 
-Если вы добавите плагин для горячих клавиш без уточнения значений, то они будут проставлены по умолчанию (как в этом [примере](https://clck.ru/RnbbS)). Поменяйте их как описано ниже, если вам они не подходят. Если вам не нужен какой-то вид горячих клавиш, то передайте ему пустое значение.
+Если вы добавите плагин для горячих клавиш без уточнения значений, то они будут проставлены по умолчанию.
+
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RnbbS)
+
+Поменяйте их как описано ниже, если вам они не подходят. Если вам не нужен какой-то вид горячих клавиш, то передайте ему пустое значение.
 
 {% list tabs %}
 
@@ -118,7 +122,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/RncKs).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/RncKs)
 
 - Выбрать режимы разметки
 
@@ -140,7 +144,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/RncQL).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/RncQL)
 
 - Подтвердить или отменить создание области
 
@@ -156,7 +160,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/RncSC).
+  [![](../_images/buttons/view-example.svg)](https://clck.ru/RncSC)
 
 {% endlist %}
 
@@ -170,7 +174,7 @@
 - [condition.required](../reference/condition.required.md) — чтобы убедиться, что исполнитель выделил хотя бы одну область;
 - [plugin.toloka](../reference/plugin.toloka.md) — чтобы настроить внешний вид задания.
 
-[Посмотреть пример в песочнице](https://clck.ru/RncTq).
+[![](../_images/buttons/view-example.svg)](https://clck.ru/RncTq)
 
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)
