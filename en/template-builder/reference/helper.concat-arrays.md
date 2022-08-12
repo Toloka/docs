@@ -14,7 +14,7 @@ Their elements can be combined into a single array to show simultaneously:
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-[View example in the sandbox](https://clck.ru/Rnruy).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rnruy)
 
 ## Component properties {#properties}
 

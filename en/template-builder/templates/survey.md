@@ -1,6 +1,8 @@
 # Survey
 
-For this type of project, you can use the **Customer survey** preset ([view code in the sandbox](https://clck.ru/TPoRH)). It has pre-configured validation and task layout.
+For this type of project, you can use the **Customer survey** preset. It has pre-configured validation and task layout.
+
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TPoRH)
 
 {% cut "Components used in the example" %}
 

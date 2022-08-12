@@ -3,7 +3,7 @@
 Returns the inverse of the specified condition. For example, if the specified condition is met (returns `true`), then
 `condition.not` will return `false`.
 
-[View example in the sandbox](https://clck.ru/asS6S).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asS6S)
 
 ## Component properties {#properties}
 

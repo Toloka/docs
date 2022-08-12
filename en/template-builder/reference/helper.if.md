@@ -9,7 +9,7 @@ If the condition in `if` is true (returns `true`), the code specified in the `th
 
 The `else` property is optional. For example, you ask a Toloker "do you like the image?". You can make a comment field appear when a negative response is selected. And if a positive response is selected then nothing happens.
 
-[View example in the sandbox](https://clck.ru/asSdk).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSdk)
 
 ## Component properties {#properties}
 

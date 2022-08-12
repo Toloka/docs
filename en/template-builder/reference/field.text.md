@@ -2,7 +2,7 @@
 
 A field for entering a short text, not more than a line. To add a field for entering multiple lines of text, use [field.textarea](field.textarea.md).
 
-[View example in the sandbox](https://clck.ru/asSa5).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSa5)
 
 ## Component properties {#properties}
 
@@ -17,7 +17,7 @@ A field for entering a short text, not more than a line. To add a field for ente
 || `requiredMark` | _boolean_ | Show "\*" next to the label ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 
-[View example in the sandbox](https://clck.ru/amHA8).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/amHA8)
 
 [Learn more about RTL languages](https://www.w3.org/International/questions/qa-scripts). ||
 || `rtl.mode` | _string_ | Display mode:

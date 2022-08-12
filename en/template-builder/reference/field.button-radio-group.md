@@ -4,7 +4,7 @@ Adds buttons for selecting an answer option. This is useful if there are several
 
 The button size depends on the length of the text.
 
-[View example in the sandbox](https://clck.ru/asSHw).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSHw)
 
 ## Component properties {#properties}
 
@@ -22,7 +22,7 @@ The button size depends on the length of the text.
 || `options[].value`<span style="color: red">\*</span> | _any_ | Returned value. ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 
-[View example in the sandbox](https://clck.ru/amHA8).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/amHA8)
 
 [Learn more about RTL languages](https://www.w3.org/International/questions/qa-scripts). ||
 || `rtl.mode` | _string_ | Display mode:

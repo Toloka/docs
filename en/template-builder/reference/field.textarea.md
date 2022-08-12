@@ -6,7 +6,7 @@ The size of the box does not automatically adjust to the length of the text. Tol
 
 Note that formatting is not available in the text box.
 
-[View example in the sandbox](https://clck.ru/asSas).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSas)
 
 ## Component properties {#properties}
 
@@ -23,7 +23,7 @@ Note that formatting is not available in the text box.
 || `rows` | _number_ | The height of the text box in lines. ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 
-[View example in the sandbox](https://clck.ru/amHA8).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/amHA8)
 
 [Learn more about RTL languages](https://www.w3.org/International/questions/qa-scripts). ||
 || `rtl.mode` | _string_ | Display mode:

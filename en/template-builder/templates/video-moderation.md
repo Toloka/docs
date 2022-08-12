@@ -1,6 +1,8 @@
 # Video analysis
 
-For this type of project, you can use the **Hand gesture classification** preset ([view code in the sandbox](https://clck.ru/TJ73B)). Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+For this type of project, you can use the **Hand gesture classification** preset. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/TJ73B)
 
 {% cut "Components used in the example" %}
 

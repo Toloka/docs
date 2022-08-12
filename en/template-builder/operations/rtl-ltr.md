@@ -21,6 +21,6 @@ The direction of writing is set in the `mode` property:
 
 The setting is available in the following blocks: `view.text`, `field.button-radio-group`, `field.text`, and `field.textarea`.
 
-[View example in the sandbox](https://clck.ru/amHA8).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/amHA8)
 
 {% include [contact-support](../_includes/contact-support.md) %}

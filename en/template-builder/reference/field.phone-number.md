@@ -4,7 +4,7 @@ Creates a field for entering a phone number.
 
 Allows entering numbers, spaces, and the `+`, `( )`, `-` characters. Only numbers and the `+` character at the beginning will remain in the data. For example, if you enter `+7 (012) 345-67-89`, the data gets the `+70123456789` value.
 
-[View example in the sandbox](https://clck.ru/asSY2).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSY2)
 
 ## Component properties {#properties}
 

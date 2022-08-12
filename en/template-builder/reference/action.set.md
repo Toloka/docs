@@ -6,11 +6,11 @@ Sets the value from `payload` in the data in the `data` property.
 
 For example, let's say you want to add shortcuts for the [field.radio-group](field.radio-group.md) option. You need the shortcut to perform the same action as the selected option, which is to set the specified value in the data. To set this action, use `action.set`.
 
-[View example in the sandbox](https://clck.ru/asRw2).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asRw2)
 
 As another example, you can use this component to count the number of clicks on an option and write the value in the output data. When the page is refreshed, set the value to 0.
 
-[View example in the sandbox](https://clck.ru/asRwg).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/asRwg)
 
 ## Component properties {#properties}
 

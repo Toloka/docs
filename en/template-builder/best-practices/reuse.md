@@ -8,7 +8,7 @@ You can insert a code snippet from another part of the configuration anywhere in
 
 This is useful when you need to insert the same snippet at multiple places in your code. For example, if you need to run the same action using multiple buttons, put this action in a variable and call it using `$ref`.
 
-[View example in the sandbox](https://tb.yandex.net/editor?locale=en&config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNgG1RYyoqW1GLNng4lOkgB6CQI6qryQoki5pAAVABZE+RLACMArnTrQ+WPnYgkWHQOvgCGUs5QEHRw8GChMdB4KjQAvsaqVKo4eOqsKOzEOrwCwilieBLSsgUKJtlZ2RX0zPkUWkWcoWCJUAC07p5JRuXZeNyhLkTc1gBCHl7YAIxl9U143b1sjU3NACQATkQw1vihB3xdPXDDo6qpd2kZuzu7ua2nnZs3-YOLq7saONJtM5gtoFgAEwAwG0b7DCivQF4Q7HU7nS7wqDJNbZB64sT4poAXWephAABM4EdrgjaP4DnAAF7QOihGYgUZEmjExTpRRaDHbFIbWnYgpItQfAqi3qcKIxGAMGHNJihBjcCChCnCglqBwRaxwWAQFVKMysohWGUgACSdAA5D5gs4+OFnMFjQgsER8EQDgwgnBDZzcdycNz8akjCBjUwPCg0NHUkA).
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/9OnIyOf13YZUvG)
 
 {% note tip %}
 
@@ -28,7 +28,7 @@ Some components have properties with the type ref or something similar, like [ac
 
 A pointer to a visual component using the construction `{ "$ref": "path.to.element" }`.
 
-[View example in the sandbox](https://clck.ru/ReUWS).
+[![image](../_images/buttons/view-example.svg)](https://clck.ru/ReUWS)
 
 {% note warning %}
 
