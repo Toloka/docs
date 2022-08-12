@@ -1,6 +1,6 @@
 # Copywriting
 
-For this type of project, you can use the **Copywriting** preset. It has pre-configured validation and task layout.
+For this type of project, you can use the **Generating product descriptions** preset. It has pre-configured validation and task layout.
 
 [![image](../_images/buttons/view-example.svg)](https://clck.ru/TJ6qN)
 

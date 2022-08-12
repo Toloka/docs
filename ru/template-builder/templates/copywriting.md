@@ -1,6 +1,6 @@
 # Копирайтинг
 
-В Толоке есть пресет **Копирайтинг**. В нем уже настроена валидация и внешний вид задания.
+В Толоке есть пресет **Генерация описаний товаров**. В нем уже настроена валидация и внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TJ6on)
 
@@ -65,7 +65,7 @@
 - Кнопки
 
   Используйте компонент [field.button-radio-group](../reference/field.button-radio-group.md).
-  
+
   [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2ws)
 
 - Чекбокс
