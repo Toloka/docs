@@ -14,14 +14,14 @@ If a training pool isn't in use, it can be moved to the archive. Before archivin
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/training/<training_id>/archive
+    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/archive
+    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 
