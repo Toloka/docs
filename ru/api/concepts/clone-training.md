@@ -11,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/training/<training_id>/clone
+    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/training/<training_id>/clone
+    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 
