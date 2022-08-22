@@ -1,5 +1,7 @@
 # Get a Toloker's skill value
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets a Toloker's skill value.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets a Toloker's skill value.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-skills/<id>
+    GET https://toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+    GET ihttps://sandbox.toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -32,7 +32,7 @@ Level of access to files hosted on the requester's server. Acceptable values:
 
     #### Example
 
-    The following is called in Toloka: `toloka.yandex.com/api/proxy/test-proxy/test-path`.
+    The following is called in Toloka: `toloka.dev/api/proxy/test-proxy/test-path`.
 
     If the task contains an input field with the URL or String type and its value is:
 
@@ -56,7 +56,7 @@ The requester's server URL.
 
 For example, a server [named](#name) "test-proxy" is hosted at `example.com/some-path`.
 
-In this case, when calling an HTTP method in Toloka at the URL `toloka.yandex.com/api/proxy/test-proxy/test-path`, a request to the requester's server will be sent to the URL `example.com/some-path/test-path`.
+In this case, when calling an HTTP method in Toloka at the URL `toloka.dev/api/proxy/test-proxy/test-path`, a request to the requester's server will be sent to the URL `example.com/some-path/test-path`.
 
 If a method call is made within a template, [assignmentId](#assignmentId) will be added to the URL. This ensures that information about the task the request was made within is also passed to the requester's server. Example: `example.com/some-path/test-path?assignmentId=12831298712937213`. ||
 || **name** {#name} | **string \| required**
@@ -65,7 +65,7 @@ The name of the requester's server. The name will be inserted in the request URL
 
 Must be unique within Toloka.
 
-For example, a server named "test-proxy" can be accessed in Toloka at: `toloka.yandex.com/api/proxy/test-proxy`. ||
+For example, a server named "test-proxy" can be accessed in Toloka at: `toloka.dev/api/proxy/test-proxy`. ||
 || **additionalHeaders[]** | **array of strings**
 
 Additional headers that will be passed in the request to the requester's server. Example:

@@ -1,5 +1,7 @@
 # Set the skill value
 
+{% include [announce](../_includes/announce.md) %}
+
 Sets the skill value.
 
 {% note alert %}
@@ -15,7 +17,7 @@ You can send a maximum of 100,000 requests of this kind per day.
 - Production version
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/user-skills
+    PUT https://toloka.dev/api/v1/user-skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -23,7 +25,7 @@ You can send a maximum of 100,000 requests of this kind per day.
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/user-skills
+    PUT https://sandbox.toloka.dev/api/v1/user-skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

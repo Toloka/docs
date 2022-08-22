@@ -1,5 +1,7 @@
 # Get a task suite
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets a task suite.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets a task suite.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    GET https://toloka.dev/api/v1/task-suites/<task_suite_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>
+    GET https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Скачать файл
 
+{% include [announce](../_includes/announce.md) %}
+
 Скачивает прикрепленный к ответу в задании файл.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```no-highlight
-    GET https://toloka.yandex.com/api/v1/attachments/<file_id>/download
+    GET https://toloka.dev/api/v1/attachments/<file_id>/download
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```no-highlight
-    GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>/download
+    GET https://sandbox.toloka.dev/api/v1/attachments/<file_id>/download
     Authorization: OAuth <OAuth token>
     ```
 

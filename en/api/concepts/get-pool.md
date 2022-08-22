@@ -1,5 +1,7 @@
 # Get properties of a pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the properties of a pool.
 
 You can get the pool ID from the [list of pools](get-pool-list.md).
@@ -11,14 +13,14 @@ You can get the pool ID from the [list of pools](get-pool-list.md).
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/pools/<pool_id>
+    GET https://toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+    GET https://sandbox.toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     ```
 

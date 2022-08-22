@@ -1,5 +1,7 @@
 # Ответить на цепочку сообщений
 
+{% include [announce](../_includes/announce.md) %}
+
 Отвечает на цепочку сообщений.
 
 ## Запрос {#request}
@@ -9,7 +11,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
+    POST https://toloka.dev/api/v1/message-threads/<thread_id>/reply
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/reply
+    POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/reply
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

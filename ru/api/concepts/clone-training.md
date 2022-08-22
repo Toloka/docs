@@ -1,5 +1,7 @@
 # Клонировать обучение
 
+{% include [announce](../_includes/announce.md) %}
+
 Создает дубликат обучающего пула.
 
 Будет создан пустой обучающий пул с теми же параметрами.
@@ -11,14 +13,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/clone
+    POST https://toloka.dev/api/v1/trainings/<training_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/clone
+    POST https://sandbox.toloka.dev/api/v1/trainings/<training_id>/clone
     Authorization: OAuth <OAuth token>
     ```
 

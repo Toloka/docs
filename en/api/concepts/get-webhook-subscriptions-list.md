@@ -1,5 +1,7 @@
 # Get a list of subscriptions
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets data for multiple active subscriptions.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets data for multiple active subscriptions.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/webhook-subscriptions
+    GET https://toloka.dev/api/v1/webhook-subscriptions
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions
+    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions
     Authorization: OAuth <OAuth token>
     ```
 
@@ -77,14 +79,14 @@ You can set up the display of the list of subscriptions in parts (for example, 1
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
+    GET https://toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -97,14 +99,14 @@ You can set up the display of the list of subscriptions in parts (for example, 1
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
+    GET https://toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

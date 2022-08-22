@@ -1,5 +1,7 @@
 # Get a task
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets task data.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets task data.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/tasks/<task_id>
+    GET https://toloka.dev/api/v1/tasks/<task_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/tasks/<task_id>
+    GET https://sandbox.toloka.dev/api/v1/tasks/<task_id>
     Authorization: OAuth <OAuth token>
     ```
 

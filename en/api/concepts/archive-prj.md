@@ -1,5 +1,7 @@
 # Archive a project
 
+{% include [announce](../_includes/announce.md) %}
+
 Sends the project to the archive.
 
 If a project isn't being used, you can send it to the archive. To do this, all the pools in the project must be [archived](archive-pool.md). You can get the project ID from the [list of projects](get-prj-list.md).
@@ -11,14 +13,14 @@ If a project isn't being used, you can send it to the archive. To do this, al
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/projects/<project_id>/archive
+    POST https://toloka.dev/api/v1/projects/<project_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>/archive
+    POST https://sandbox.toloka.dev/api/v1/projects/<project_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 

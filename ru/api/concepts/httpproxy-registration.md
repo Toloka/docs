@@ -32,7 +32,7 @@ $.ajax({
 
   {% cut "Пример" %}
 
-  В Толоке выполняется вызов: `toloka.yandex.com/api/proxy/test-proxy/test-path`.
+  В Толоке выполняется вызов: `toloka.dev/api/proxy/test-proxy/test-path`.
 
   Если задание при этом содержит входное поле с типом aдрес (url) или cтрока (string), и оно имеет значение:
 
@@ -57,7 +57,7 @@ URL, по которому находится сервер заказчика.
 
 Например, сервер с [именем](#name) «test-proxy» размещен по URL `example.com/some-path`.
 
-В этом случае при вызове в Толоке HTTP-метода по URL `toloka.yandex.com/api/proxy/test-proxy/test-path`, запрос к серверу заказчика будет сделан по URL `example.com/some-path/test-path`.
+В этом случае при вызове в Толоке HTTP-метода по URL `toloka.dev/api/proxy/test-proxy/test-path`, запрос к серверу заказчика будет сделан по URL `example.com/some-path/test-path`.
 
 Если вызов выполнен в рамках шаблона, к URL дополнительно будет добавлен **assignment_id**. Таким образом на сервер заказчика также будет передана информация в рамках какого задания был сделан запрос. Например: `example.com/some-path/test-path?assignmentId=12831298712937213`.
 
@@ -69,7 +69,7 @@ URL, по которому находится сервер заказчика.
 
 Должно быть уникально в рамках системы.
 
-Например, сервер с именем «test-proxy» будет доступен в Толоке по URL: `toloka.yandex.com/api/proxy/test-proxy`.||
+Например, сервер с именем «test-proxy» будет доступен в Толоке по URL: `toloka.dev/api/proxy/test-proxy`.||
 ||**additionalHeaders[]** | **array of strings**
 
 Дополнительные заголовки, которые будут переданы в запросе на сервер заказчика. Например: ``` "additionalHeaders":{"Authorization":["Basic--//--TOKEN--//--"]} ```

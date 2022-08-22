@@ -1,5 +1,7 @@
 # Get a list of rewards issued
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets a list of rewards issued.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets a list of rewards issued.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-bonuses
+    GET https://toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+    GET https://sandbox.toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
     ```
 
@@ -69,14 +71,14 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+    GET https://toloka.dev/api/v1/user-bonuses?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/user-bonuses?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -89,14 +91,14 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+    GET https://toloka.dev/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Get operation details
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets operation details.
 
 ## Request {#query}
@@ -9,14 +11,14 @@ Gets operation details.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/operations/<operation_id>
+    GET https://toloka.dev/api/v1/operations/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>
+    GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Получить сведения о блокировке
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает сведения о блокировке.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    GET https://toloka.dev/api/v1/user-restrictions/<ban_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions/<ban_id>
     Authorization: OAuth <OAuth token>
     ```
 

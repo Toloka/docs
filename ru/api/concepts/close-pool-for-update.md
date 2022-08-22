@@ -1,5 +1,7 @@
 # Закрыть пул для редактирования
 
+{% include [announce](../_includes/announce.md) %}
+
 Закрывает пул для редактирования.
 
 Чтобы внести изменения в пул, закройте его для редактирования.
@@ -19,14 +21,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
+    POST https://toloka.dev/api/v1/pools/<pool_id>/close-for-update
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/close-for-update
     Authorization: OAuth <OAuth token>
     ```
 

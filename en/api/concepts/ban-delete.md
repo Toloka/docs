@@ -1,5 +1,7 @@
 # Unblock access
 
+{% include [announce](../_includes/announce.md) %}
+
 Removes a ban.
 
 ## Request {#query-params}
@@ -9,14 +11,14 @@ Removes a ban.
 - Production version
 
     ```bash
-    DELETE https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    DELETE https://toloka.dev/api/v1/user-restrictions/<ban_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    DELETE https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    DELETE https://sandbox.toloka.dev/api/v1/user-restrictions/<ban_id>
     Authorization: OAuth <OAuth token>
     ```
 

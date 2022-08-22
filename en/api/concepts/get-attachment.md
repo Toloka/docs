@@ -1,5 +1,7 @@
 # Get file metadata
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the properties of a file attached to a task response.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the properties of a file attached to a task response.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/attachments/<file_id>
+    GET https://toloka.dev/api/v1/attachments/<file_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/attachments/<file_id>
+    GET https://sandbox.toloka.dev/api/v1/attachments/<file_id>
     Authorization: OAuth <OAuth token>
     ```
 

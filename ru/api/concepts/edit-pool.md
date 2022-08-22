@@ -1,5 +1,7 @@
 # Редактировать пул
 
+{% include [announce](../_includes/announce.md) %}
+
 Вносит изменения в пул.
 
 Пул нельзя редактировать, если он открыт. [Закройте пул](close-pool-for-update.md) для редактирования перед внесением изменений.
@@ -17,7 +19,7 @@
 - Боевая версия
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/pools/<pool_id>
+    PUT https://toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -27,7 +29,7 @@
 - Песочница
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+    PUT https://sandbox.toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

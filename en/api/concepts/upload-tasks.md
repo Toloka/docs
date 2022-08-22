@@ -1,5 +1,7 @@
 # Ways to upload tasks
 
+{% include [announce](../_includes/announce.md) %}
+
 ## Uploading tasks using the API {#download-tasks-api}
 
 Toloka provides two ways of uploading tasks using the API:
@@ -17,7 +19,7 @@ With this method, Toloka will split tasks into suites according to the "smart mi
 {% cut "Sample request" %}
 
 ```bash
-POST https://toloka.yandex.com/api/v1/tasks
+POST https://toloka.dev/api/v1/tasks
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON
 
@@ -89,7 +91,7 @@ This method won't work if you created a pool using [smart mixing](https://toloka
 {% cut "Sample request" %}
 
 ```bash
-POST https://toloka.yandex.com/api/v1/task-suites
+POST https://toloka.dev/api/v1/task-suites
 Authorization: OAuth <OAuth token>
 Content-Type: application/JSON
 

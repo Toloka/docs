@@ -1,5 +1,7 @@
 # Create a skill
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates a skill.
 
 {% note alert %}
@@ -15,7 +17,7 @@ You can send a maximum of 10 requests of this kind per minute and a maximum of 1
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/skills
+    POST https://toloka.dev/api/v1/skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -23,7 +25,7 @@ You can send a maximum of 10 requests of this kind per minute and a maximum of 1
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/skills
+    POST https://sandbox.toloka.dev/api/v1/skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

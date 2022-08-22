@@ -1,19 +1,21 @@
 # Accessing the API
 
+{% include [announce](../_includes/announce.md) %}
+
 All requests to the Toloka API must specify the resource URL and the OAuth token.
 
 #### Query example
 
 ```bash
-GET https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=12345
+GET https://sandbox.toloka.dev/api/v1/assignments?pool_id=12345
 Authorization: OAuth <OAuth token>
 ```
 
 ## Resource URL {#urls}
 
-- For requests to the sandbox: `https://sandbox.toloka.yandex.com/api/v1/<the path to the resource>`.
+- For requests to the sandbox: `https://sandbox.toloka.dev/api/v1/<the path to the resource>`.
 
-- For requests to the production version: `https://toloka.yandex.com/api/v1/<the path to the resource>`.
+- For requests to the production version: `https://toloka.dev/api/v1/<the path to the resource>`.
 
 ## Getting an OAuth token {#token}
 

@@ -1,5 +1,7 @@
 # Получить список заданий
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает список заданий в пуле.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/tasks
+    GET https://toloka.dev/api/v1/tasks
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/tasks
+    GET https://sandbox.toloka.dev/api/v1/tasks
     Authorization: OAuth <OAuth token>
     ```
 
@@ -76,14 +78,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10
+    GET https://toloka.dev/api/v1/tasks?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/tasks?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -96,14 +98,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
+    GET https://toloka.dev/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Edit a training pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Makes changes to a training pool.
 
 {% note info %}
@@ -15,7 +17,7 @@ Learn about editing a main pool in the section [Edit pool](edit-pool.md).
 - Production version
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/trainings/<training_id>
+    PUT https://toloka.dev/api/v1/trainings/<training_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -25,7 +27,7 @@ Learn about editing a main pool in the section [Edit pool](edit-pool.md).
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>
+    PUT https://sandbox.toloka.dev/api/v1/trainings/<training_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

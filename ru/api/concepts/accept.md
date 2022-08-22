@@ -1,5 +1,7 @@
 # Проверка заданий
 
+{% include [announce](../_includes/announce.md) %}
+
 Проверить задания вручную и отклонить их, если задание выполнено неудовлетворительно. Чтобы принять или отклонить полученные ответы, измените статус страницы заданий с помощью PATCH-запроса к ресурсу `/assignments/<id выдачи страницы заданий>`:
 
 - Принять ответы: измените статус `SUBMITTED` на `ACCEPTED`.
@@ -17,7 +19,7 @@
 - Боевая версия
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    PATCH https://toloka.dev/api/v1/assignments/<task_suite_assignment_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -25,7 +27,7 @@
 - Песочница
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/assignments/<task_suite_assignment_id>
+    PATCH https://sandbox.toloka.dev/api/v1/assignments/<task_suite_assignment_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

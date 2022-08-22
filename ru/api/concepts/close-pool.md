@@ -1,5 +1,7 @@
 # Закрыть пул
 
+{% include [announce](../_includes/announce.md) %}
+
 Закрывает пул.
 
 Чтобы перестать раздавать задания исполнителям, закройте пул.
@@ -13,14 +15,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close
+    POST https://toloka.dev/api/v1/pools/<pool_id>/close
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/close
     Authorization: OAuth <OAuth token>
     ```
 

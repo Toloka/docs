@@ -1,5 +1,7 @@
 # Получить ответы
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает ответы во всех страницах заданий пула.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/assignments
+    GET https://toloka.dev/api/v1/assignments
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments
+    GET https://sandbox.toloka.dev/api/v1/assignments
     Authorization: OAuth <OAuth token>
     ```
 
@@ -124,14 +126,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10
+    GET https://toloka.dev/api/v1/assignments?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -144,14 +146,14 @@
 - Боевая версия
 
     ```bash
-    GET >https://toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+    GET >https://toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

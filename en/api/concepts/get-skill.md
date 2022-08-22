@@ -1,5 +1,7 @@
 # Get the skill ID
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the properties of a skill.
 
 You can get the skill ID from the [list of skills](get-skill-list.md).
@@ -11,14 +13,14 @@ You can get the skill ID from the [list of skills](get-skill-list.md).
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/skills/<skill_id>
+    GET https://toloka.dev/api/v1/skills/<skill_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/skills/<skill_id>
+    GET https://sandbox.toloka.dev/api/v1/skills/<skill_id>
     Authorization: OAuth <OAuth token>
     ```
 

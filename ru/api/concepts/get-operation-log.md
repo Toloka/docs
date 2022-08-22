@@ -1,5 +1,7 @@
 # Получить лог операции
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает лог операции.
 
 Логи можно получить для асинхронных операций (`async_mode = true`). Такие операции выполняются в фоновом режиме.
@@ -21,14 +23,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/operations/<operation_id>/log
+    GET https://toloka.dev/api/v1/operations/<operation_id>/log
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/operations/<operation_id>/log
+    GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>/log
     Authorization: OAuth <OAuth token>
     ```
 

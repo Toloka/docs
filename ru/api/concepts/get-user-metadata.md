@@ -1,5 +1,7 @@
 # Получить метаданные пользователей
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает данные пользователя через `user_id`.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-metadata/<user_id>
+    GET https://toloka.dev/api/v1/user-metadata/<user_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-metadata/<user_id>
+    GET https://sandbox.toloka.dev/api/v1/user-metadata/<user_id>
     Authorization: OAuth <OAuth token>
     ```
 

@@ -1,5 +1,7 @@
 # Block access to tasks
 
+{% include [announce](../_includes/announce.md) %}
+
 Blocks a Toloker from accessing tasks.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Blocks a Toloker from accessing tasks.
 - Production version
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/user-restrictions
+    PUT https://toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@ Blocks a Toloker from accessing tasks.
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/user-restrictions
+    PUT https://sandbox.toloka.dev/api/v1/user-restrictions
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

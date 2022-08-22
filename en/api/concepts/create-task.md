@@ -1,5 +1,7 @@
 # Create one or multiple tasks
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates one or multiple tasks.
 
 You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day.
@@ -11,7 +13,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 t
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/tasks
+    POST https://toloka.dev/api/v1/tasks
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -23,7 +25,7 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 t
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/tasks
+    POST https://sandbox.toloka.dev/api/v1/tasks
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

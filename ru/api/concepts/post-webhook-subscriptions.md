@@ -1,5 +1,7 @@
 # Отправить тестовое уведомление
 
+{% include [announce](../_includes/announce.md) %}
+
 Отправляет тестовое уведомление на URL, который указан в подписке.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    POST https://toloka.dev/api/v1/webhook-subscriptions/<subscription_id>/test
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>/test
+    POST https://sandbox.toloka.dev/api/v1/webhook-subscriptions/<subscription_id>/test
     Authorization: OAuth <OAuth token>
     ```
 

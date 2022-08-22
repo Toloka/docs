@@ -1,5 +1,7 @@
 # Выдать бонусы
 
+{% include [announce](../_includes/announce.md) %}
+
 Выдает бонусы исполнителям.
 
 {% include [bonus-sum](../_includes/concepts/bonus/id-bonus/sum.md) %}
@@ -32,7 +34,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/user-bonuses
+    POST https://toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -40,7 +42,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/user-bonuses
+    POST https://sandbox.toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

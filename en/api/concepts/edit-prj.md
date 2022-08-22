@@ -1,5 +1,7 @@
 # Edit a project
 
+{% include [announce](../_includes/announce.md) %}
+
 Edits a project.
 
 In the request body, specify **all** the parameters for the project being updated. You can get the project ID from the [list of projects](get-prj-list.md).
@@ -11,7 +13,7 @@ In the request body, specify **all** the parameters for the project being update
 - Production version
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/projects/<project_id>
+    PUT https://toloka.dev/api/v1/projects/<project_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -21,7 +23,7 @@ In the request body, specify **all** the parameters for the project being update
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
+    PUT https://sandbox.toloka.dev/api/v1/projects/<project_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

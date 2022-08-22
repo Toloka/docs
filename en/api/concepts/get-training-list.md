@@ -1,5 +1,7 @@
 # Get a list of training pools
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the list of created training pools (including archived pools).
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the list of created training pools (including archived pools).
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/trainings
+    GET https://toloka.dev/api/v1/trainings
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/trainings
+    GET https://sandbox.toloka.dev/api/v1/trainings
     Authorization: OAuth <OAuth token>
     ```
 
@@ -69,14 +71,14 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10
+    GET https://toloka.dev/api/v1/trainings?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/trainings?sort=id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -89,14 +91,14 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
+    GET https://toloka.dev/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

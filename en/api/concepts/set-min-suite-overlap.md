@@ -1,5 +1,7 @@
 # Stop assigning a task suite
 
+{% include [announce](../_includes/announce.md) %}
+
 Stops assigning a task suite to Tolokers.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Stops assigning a task suite to Tolokers.
 - Production version
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
+    PATCH https://toloka.dev/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@ Stops assigning a task suite to Tolokers.
 - Sandbox
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
+    PATCH https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

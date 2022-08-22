@@ -1,5 +1,7 @@
 # Агрегировать ответы на одно задание
 
+{% include [announce](../_includes/announce.md) %}
+
 Запускает агрегацию ответов на одно задание.
 
 ## Запрос {#request}
@@ -9,7 +11,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
+    POST https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-task
+    POST https://sandbox.toloka.dev/api/v1/aggregated-solutions/aggregate-by-task
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

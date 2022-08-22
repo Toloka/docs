@@ -1,5 +1,7 @@
 # Получить свойства навыка
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает свойства навыка.
 
 Идентификатор навыка можно узнать из [списка навыков](get-skill-list.md).
@@ -11,14 +13,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/skills/<skill_id>
+    GET https://toloka.dev/api/v1/skills/<skill_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/skills/<skill_id>
+    GET https://sandbox.toloka.dev/api/v1/skills/<skill_id>
     Authorization: OAuth <OAuth token>
     ```
 

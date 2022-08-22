@@ -1,5 +1,7 @@
 # Создать навык
 
+{% include [announce](../_includes/announce.md) %}
+
 Создает навык.
 
 {% note alert %}
@@ -15,7 +17,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/skills
+    POST https://toloka.dev/api/v1/skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -23,7 +25,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/skills
+    POST https://sandbox.toloka.dev/api/v1/skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

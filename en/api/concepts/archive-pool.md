@@ -1,5 +1,7 @@
 # Move a pool to the archive
 
+{% include [announce](../_includes/announce.md) %}
+
 Moves a pool to the archive.
 
 If a pool isn't in use, it can be moved to the archive. The pool must have the "closed" status.
@@ -15,14 +17,14 @@ Exams with automatic acceptance by accuracy, where tasks with insufficient accur
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/archive
+    POST https://toloka.dev/api/v1/pools/<pool_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/archive
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/archive
     Authorization: OAuth <OAuth token>
     ```
 

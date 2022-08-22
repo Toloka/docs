@@ -1,5 +1,7 @@
 # Отправить сообщение
 
+{% include [announce](../_includes/announce.md) %}
+
 Рассылает сообщение исполнителям.
 
 - [Указать адресатов списком](#spis).
@@ -14,7 +16,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/compose
+    POST https://toloka.dev/api/v1/message-threads/compose
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -22,7 +24,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/compose
+    POST https://sandbox.toloka.dev/api/v1/message-threads/compose
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

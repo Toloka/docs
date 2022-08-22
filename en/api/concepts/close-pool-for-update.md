@@ -1,5 +1,7 @@
 # Close a pool for editing
 
+{% include [announce](../_includes/announce.md) %}
+
 Closes a pool for editing.
 
 To make changes to a pool, close it before editing.
@@ -17,14 +19,14 @@ If you don't open the pool manually after editing, it opens automatically in 15 
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
+    POST https://toloka.dev/api/v1/pools/<pool_id>/close-for-update
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close-for-update
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/close-for-update
     Authorization: OAuth <OAuth token>
     ```
 

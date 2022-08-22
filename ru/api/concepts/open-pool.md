@@ -1,5 +1,7 @@
 # Открыть пул
 
+{% include [announce](../_includes/announce.md) %}
+
 Открывает пул.
 
 Задания будут доступными для исполнителей, только если пул открыт.
@@ -13,14 +15,14 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/open
+    POST https://toloka.dev/api/v1/pools/<pool_id>/open
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/open
     Authorization: OAuth <OAuth token>
     ```
 

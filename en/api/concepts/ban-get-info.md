@@ -1,5 +1,7 @@
 # Get information about a ban
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets information about a ban.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets information about a ban.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    GET https://toloka.dev/api/v1/user-restrictions/<ban_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/user-restrictions/<ban_id>
+    GET https://sandbox.toloka.dev/api/v1/user-restrictions/<ban_id>
     Authorization: OAuth <OAuth token>
     ```
 

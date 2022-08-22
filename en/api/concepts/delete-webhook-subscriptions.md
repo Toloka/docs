@@ -1,5 +1,7 @@
 # Delete a subscription
 
+{% include [announce](../_includes/announce.md) %}
+
 Deletes a subscription.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Deletes a subscription.
 - Production version
 
     ```bash
-    DELETE https://toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    DELETE https://toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    DELETE https://sandbox.toloka.yandex.com/api/v1/webhook-subscriptions/<subscription_id>
+    DELETE https://sandbox.toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
     Authorization: OAuth <OAuth token>
     ```
 

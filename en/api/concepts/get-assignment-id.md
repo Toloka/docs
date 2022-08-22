@@ -1,5 +1,7 @@
 # Get response properties
 
+{% include [announce](../_includes/announce.md) %}
+
 Gets the properties of a response.
 
 ## Request {#request}
@@ -9,14 +11,14 @@ Gets the properties of a response.
 - Production version
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/assignments/<response_id>
+    GET https://toloka.dev/api/v1/assignments/<response_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/assignments/<response_id>
+    GET https://sandbox.toloka.dev/api/v1/assignments/<response_id>
     Authorization: OAuth <OAuth token>
     ```
 

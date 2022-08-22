@@ -1,5 +1,7 @@
 # Редактировать проект
 
+{% include [announce](../_includes/announce.md) %}
+
 Редактирует проект.
 
 В теле запроса укажите **все** параметры обновляемого проекта. Идентификатор проекта можно узнать из [списка проектов](get-prj-list.md).
@@ -11,7 +13,7 @@
 - Боевая версия
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/projects/<project_id>
+    PUT https://toloka.dev/api/v1/projects/<project_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -21,7 +23,7 @@
 - Песочница
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/projects/<project_id>
+    PUT https://sandbox.toloka.dev/api/v1/projects/<project_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

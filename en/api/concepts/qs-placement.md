@@ -1,5 +1,7 @@
 # Posting tasks
 
+{% include [announce](../_includes/announce.md) %}
+
 ## Before you start {#start}
 
 Choose a platform to get an OAuth token:
@@ -10,13 +12,13 @@ Choose a platform to get an OAuth token:
 
     1. [Register](https://toloka.ai/docs/guide/concepts/access.html) on the selected platform if you haven't done this before.
     1. Get an OAuth token in the [requester interface](https://sandbox.toloka.yandex.com/requester/profile/integration).
-    1. All examples use the sandbox URL: `https://sandbox.toloka.yandex.com/api/v1/<resource path>`. If you decide to switch to the production version, replace the resource URL with `https://toloka.yandex.com/api/v1/<resource path>`.
+    1. All examples use the sandbox URL: `https://sandbox.toloka.dev/api/v1/<resource path>`. If you decide to switch to the production version, replace the resource URL with `https://toloka.dev/api/v1/<resource path>`.
 
 - Production version
 
     1. [Register](https://toloka.ai/docs/guide/concepts/access.html) on the selected platform if you haven't done this before.
     1. Get an OAuth token in the [requester interface](https://platform.toloka.ai/requester/profile/integration).
-    1. To send requests, replace the resource URL in the examples with `https://toloka.yandex.com/api/v1/<resource path>`, since all the examples are given for the sandbox.
+    1. To send requests, replace the resource URL in the examples with `https://toloka.dev/api/v1/<resource path>`, since all the examples are given for the sandbox.
     1. To post tasks in Toloka's production version, first top up your account balance.
 
 {% endlist %}
@@ -82,7 +84,7 @@ Use the `POST /api/v1/projects` method:
                },
                "assignments_issuing_type": "AUTOMATED"
              }' \
-    https://sandbox.toloka.yandex.com/api/v1/projects
+    https://sandbox.toloka.dev/api/v1/projects
     ```
 
 - Postman
@@ -92,7 +94,7 @@ Use the `POST /api/v1/projects` method:
     1. Request URL
 
         ```bash
-        https://sandbox.toloka.yandex.com/api/v1/projects
+        https://sandbox.toloka.dev/api/v1/projects
         ```
 
     1. Headers
@@ -267,7 +269,7 @@ Next, send a POST request to `/api/v1/pools`:
                  "default_overlap_for_new_task_suites": 3
                }
              }' \
-    https://sandbox.toloka.yandex.com/api/v1/pools
+    https://sandbox.toloka.dev/api/v1/pools
     ```
 
 - Postman
@@ -277,7 +279,7 @@ Next, send a POST request to `/api/v1/pools`:
     1. Request URL
 
         ```bash
-        https://sandbox.toloka.yandex.com/api/v1/pools
+        https://sandbox.toloka.dev/api/v1/pools
         ```
 
     1. Headers
@@ -407,27 +409,27 @@ Next, send a POST request to `/api/v1/tasks`:
          -d '[
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
                  },
                  "pool_id": "<pool id>",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
                  },
                  "pool_id": "<pool id>",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
                  },
                  "pool_id": "<pool id>",
                  "overlap": 2
                }
              ]' \
-    https://sandbox.toloka.yandex.com/api/v1/tasks
+    https://sandbox.toloka.dev/api/v1/tasks
     ```
 
 - Postman
@@ -437,7 +439,7 @@ Next, send a POST request to `/api/v1/tasks`:
     1. Request URL
 
         ```bash
-        https://sandbox.toloka.yandex.com/api/v1/tasks
+        https://sandbox.toloka.dev/api/v1/tasks
         ```
 
     1. Headers
@@ -453,21 +455,21 @@ Next, send a POST request to `/api/v1/tasks`:
         [
           {
             "input_values": {
-              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
             },
             "pool_id": "<pool id>",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
             },
             "pool_id": "<pool id>",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.yandex.com/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
             },
             "pool_id": "<pool id>",
             "overlap": 2
@@ -499,7 +501,7 @@ In the `<pool_id>` path parameter, insert the ID of the pool to start (the ID re
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \
          -H 'Content-Type: application/JSON' \
-    https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+    https://sandbox.toloka.dev/api/v1/pools/<pool_id>/open
     ```
 
 - Postman
@@ -509,7 +511,7 @@ In the `<pool_id>` path parameter, insert the ID of the pool to start (the ID re
     1. Request URL
 
         ```bash
-        https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/open
+        https://sandbox.toloka.dev/api/v1/pools/<pool_id>/open
         ```
 
     1. Headers

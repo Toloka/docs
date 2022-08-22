@@ -1,5 +1,7 @@
 # Остановить выдачу страницы заданий
 
+{% include [announce](../_includes/announce.md) %}
+
 Останавливает выдачу страницы заданий исполнителям.
 
 ## Запрос {#request}
@@ -9,7 +11,7 @@
 - Боевая версия
 
     ```bash
-    PATCH https://toloka.yandex.com/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
+    PATCH https://toloka.dev/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@
 - Песочница
 
     ```bash
-    PATCH https://sandbox.toloka.yandex.com/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
+    PATCH https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

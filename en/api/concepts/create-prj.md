@@ -1,5 +1,7 @@
 # Create a project
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates a project.
 
 {% note alert %}
@@ -15,7 +17,7 @@ You can send a maximum of 20 requests of this kind per minute and a maximum o
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/projects
+    POST https://toloka.dev/api/v1/projects
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -25,7 +27,7 @@ You can send a maximum of 20 requests of this kind per minute and a maximum o
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/projects
+    POST https://sandbox.toloka.dev/api/v1/projects
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

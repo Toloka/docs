@@ -1,5 +1,7 @@
 # Create a pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Creates a pool.
 
 The pool is automatically assigned an ID.
@@ -23,7 +25,7 @@ Learn about creating a training pool in [Create a training pool](create-training
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools
+    POST https://toloka.dev/api/v1/pools
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -31,7 +33,7 @@ Learn about creating a training pool in [Create a training pool](create-training
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools
+    POST https://sandbox.toloka.dev/api/v1/pools
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

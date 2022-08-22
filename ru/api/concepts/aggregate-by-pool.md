@@ -1,5 +1,7 @@
 # Агрегировать ответы в пуле
 
+{% include [announce](../_includes/announce.md) %}
+
 Запускает агрегацию ответов на все выполненные задания в пуле.
 
 ## Запрос {#request}
@@ -9,7 +11,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    POST https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -17,7 +19,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/aggregate-by-pool
+    POST https://sandbox.toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

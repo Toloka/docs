@@ -1,5 +1,7 @@
 # Задать значение навыка
 
+{% include [announce](../_includes/announce.md) %}
+
 Задает значение навыка.
 
 {% note alert %}
@@ -15,7 +17,7 @@
 - Боевая версия
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/user-skills
+    PUT https://toloka.dev/api/v1/user-skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -23,7 +25,7 @@
 - Песочница
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/user-skills
+    PUT https://sandbox.toloka.dev/api/v1/user-skills
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```

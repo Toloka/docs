@@ -1,5 +1,7 @@
 # Удалить навык у исполнителя
 
+{% include [announce](../_includes/announce.md) %}
+
 Удаляет навык у исполнителя.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    DELETE https://toloka.yandex.com/api/v1/user-skills/<id>
+    DELETE https://toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    DELETE https://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+    DELETE https://sandbox.toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 

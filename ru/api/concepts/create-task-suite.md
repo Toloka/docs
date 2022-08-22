@@ -1,5 +1,7 @@
 # Создать одну или несколько страниц заданий
 
+{% include [announce](../_includes/announce.md) %}
+
 Создает одну или несколько страниц заданий.
 
 {% note alert %}
@@ -15,7 +17,7 @@
 - Боевая версия
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/task-suites
+    POST https://toloka.dev/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -29,7 +31,7 @@
 - Песочница
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/task-suites
+    POST https://sandbox.toloka.dev/api/v1/task-suites
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

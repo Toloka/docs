@@ -1,5 +1,7 @@
 # Edit a pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Makes changes to a pool.
 
 The pool can't be edited if it's open. [Close the pool](close-pool-for-update.md) before editing.
@@ -17,7 +19,7 @@ Learn about editing a training pool in the section [Edit a training pool](edit-t
 - Production version
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/pools/<pool_id>
+    PUT https://toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -27,7 +29,7 @@ Learn about editing a training pool in the section [Edit a training pool](edit-t
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>
+    PUT https://sandbox.toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

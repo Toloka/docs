@@ -1,5 +1,7 @@
 # Получить агрегированные ответы
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает агрегированные ответы.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>
+    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>
     Authorization: OAuth <OAuth token>
     ```
 
@@ -67,14 +69,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
     Authorization: OAuth <OAuth token>
     ```
 
@@ -87,14 +89,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.yandex.com/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
     Authorization: OAuth <OAuth token>
     ```
 

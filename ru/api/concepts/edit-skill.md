@@ -1,5 +1,7 @@
 # Редактировать навык
 
+{% include [announce](../_includes/announce.md) %}
+
 Изменяет название, комментарий и уровень доступа к навыку.
 
 ## Запрос {#request}
@@ -9,7 +11,7 @@
 - Боевая версия
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/skills/<skill id>
+    PUT https://toloka.dev/api/v1/skills/<skill id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -19,7 +21,7 @@
 - Песочница
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/skills/<skill id>
+    PUT https://sandbox.toloka.dev/api/v1/skills/<skill id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

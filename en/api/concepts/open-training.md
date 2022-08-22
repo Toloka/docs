@@ -1,5 +1,7 @@
 # Open a training
 
+{% include [announce](../_includes/announce.md) %}
+
 Opens a training pool.
 
 Training tasks will be available to Tolokers only if a training pool is open.
@@ -13,14 +15,14 @@ An operation is created when you send a request. To track the progress of the op
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/trainings/<training_id>/open
+    POST https://toloka.dev/api/v1/trainings/<training_id>/open
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/trainings/<training_id>/open
+    POST https://sandbox.toloka.dev/api/v1/trainings/<training_id>/open
     Authorization: OAuth <OAuth token>
     ```
 

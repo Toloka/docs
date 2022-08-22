@@ -1,5 +1,7 @@
 # Edit a skill
 
+{% include [announce](../_includes/announce.md) %}
+
 Changes the name, comment, and access to the skill.
 
 ## Request {#request}
@@ -9,7 +11,7 @@ Changes the name, comment, and access to the skill.
 - Production version
 
     ```bash
-    PUT https://toloka.yandex.com/api/v1/skills/<skill id>
+    PUT https://toloka.dev/api/v1/skills/<skill id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -19,7 +21,7 @@ Changes the name, comment, and access to the skill.
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.yandex.com/api/v1/skills/<skill id>
+    PUT https://sandbox.toloka.dev/api/v1/skills/<skill id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 

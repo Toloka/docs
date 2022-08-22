@@ -1,5 +1,7 @@
 # Close a pool
 
+{% include [announce](../_includes/announce.md) %}
+
 Closes a pool.
 
 To stop assigning tasks to Tolokers, close the pool.
@@ -13,14 +15,14 @@ When you send requests, an operation is created. To track the progress of the op
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/pools/<pool_id>/close
+    POST https://toloka.dev/api/v1/pools/<pool_id>/close
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/pools/<pool_id>/close
+    POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/close
     Authorization: OAuth <OAuth token>
     ```
 

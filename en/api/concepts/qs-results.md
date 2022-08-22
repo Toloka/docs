@@ -1,5 +1,7 @@
 # Receiving responses
 
+{% include [announce](../_includes/announce.md) %}
+
 This example was created in the sandbox. Therefore, you need to perform tasks as a trusted user to process the results:
 
 1. Register as a Toloker in the [Toloka sandbox](https://sandbox.toloka.yandex.com/).
@@ -31,7 +33,7 @@ Next, use the `GET` method:
     ```bash
     curl -X GET \
          -H 'Authorization: OAuth <OAuth token>' \
-    https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
+    https://sandbox.toloka.dev/api/v1/assignments?pool_id=<pool id>
     ```
 
 - Postman
@@ -41,7 +43,7 @@ Next, use the `GET` method:
     1. Request URL
 
         ```bash
-        https://sandbox.toloka.yandex.com/api/v1/assignments?pool_id=<pool id>
+        https://sandbox.toloka.dev/api/v1/assignments?pool_id=<pool id>
         ```
 
     1. Headers
@@ -70,7 +72,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5bc",
           "input_values": {
-            "image": "https://sandbox.toloka.yandex.com/api/proxy/thgn1/photos/3.jpg"
+            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/3.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -83,7 +85,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbaa52cc70d7118c5b8",
           "input_values": {
-            "image": "https://sandbox.toloka.yandex.com/api/proxy/thgn1/photos/1.jpg"
+            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/1.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -96,7 +98,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5ba",
           "input_values": {
-            "image": "https://sandbox.toloka.yandex.com/api/proxy/thgn1/photos/2.jpg"
+            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/2.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -145,7 +147,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5ba",
           "input_values": {
-            "image": "https://sandbox.toloka.yandex.com/api/proxy/thgn1/photos/2.jpg"
+            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/2.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -158,7 +160,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5bc",
           "input_values": {
-            "image": "https://sandbox.toloka.yandex.com/api/proxy/thgn1/photos/3.jpg"
+            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/3.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -171,7 +173,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbaa52cc70d7118c5b8",
           "input_values": {
-            "image": "https://sandbox.toloka.yandex.com/api/proxy/thgn1/photos/1.jpg"
+            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/1.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,

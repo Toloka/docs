@@ -1,5 +1,7 @@
 # Получить значение навыка исполнителя
 
+{% include [announce](../_includes/announce.md) %}
+
 Получает значение навыка исполнителя.
 
 ## Запрос {#request}
@@ -9,14 +11,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.yandex.com/api/v1/user-skills/<id>
+    GET https://toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET ihttps://sandbox.toloka.yandex.com/api/v1/user-skills/<id>
+    GET ihttps://sandbox.toloka.dev/api/v1/user-skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 

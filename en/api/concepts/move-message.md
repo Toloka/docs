@@ -1,5 +1,7 @@
 # Move a message thread
 
+{% include [announce](../_includes/announce.md) %}
+
 Adds or removes a message thread from a folder.
 
 Message threads located in the `UNREAD` folder are marked as unread in the interface.
@@ -17,7 +19,7 @@ Adds a message thread to a folder.
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
+    POST https://toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -25,7 +27,7 @@ Adds a message thread to a folder.
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/add-to-folders
+    POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -41,7 +43,7 @@ Deletes a message thread from a folder.
 - Production version
 
     ```bash
-    POST https://toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
+    POST https://toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
@@ -49,7 +51,7 @@ Deletes a message thread from a folder.
 - Sandbox
 
     ```bash
-    POST https://sandbox.toloka.yandex.com/api/v1/message-threads/<thread_id>/remove-from-folders
+    POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
     ```
