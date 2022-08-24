@@ -1,0 +1,2 @@
+
+To select Tolokers based on their language, location, age, gender, and other parameters, click the {% if locale == "en-com" %}**Add filter**{% endif %} button.

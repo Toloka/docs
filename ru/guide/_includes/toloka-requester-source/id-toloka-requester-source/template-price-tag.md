@@ -1,0 +1,2 @@
+
+Выберите шаблон {% if locale == "ru-ru" %}**Фото товара и ценника**{% endif %}{% if locale == "en-com" %}**Photos of product and price tag**{% endif %}.

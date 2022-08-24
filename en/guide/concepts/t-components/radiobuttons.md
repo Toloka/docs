@@ -1,0 +1,51 @@
+# Radio button
+
+{% note info %}
+
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a radio button in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/field.radio-group){% endif %}.
+
+{% endnote %}
+
+
+To add radio buttons to the task, use the `{{field type="radio" name="<[output field](../incoming.md) name>"}}` component. For example, a set of two radio buttons:
+ {% if locale == "en-com" %}
+```no-highlight
+{{field type="radio" name="result" label="Yes" value="Yes" hotkey="1"}}
+{{field type="radio" name="result" label="No" value="No" hotkey="2"}}
+```
+{% endif %}
+Add a field of `string` type in the [output data description](../incoming.md). Example:
+
+```no-highlight
+{
+  "result": {
+    "type": "string",
+    "required": true
+  }
+}
+```
+
+#### Parameters
+
+
+Parameter
+ |
+Description
+ |
+Required
+ |
+Default value
+
+----- | ----- | ----- | -----
+``` type ``` | Field type: `radio` — Radio button. | yes | no
+``` name ``` | Attribute for the output data field. Contains the output field name. | yes | no
+``` label ``` | Signature. For example, `label="Yes"`. | no | no
+``` value ``` | The value to pass (written to the output file). | no | no
+``` hotkey ``` | The shortcut for selecting a value. | no | no
+``` validation-show ``` | The position of popup hints (displayed if the response didn't pass validation). The position is relative to the input field.<br/><br/>Supported values:<br/><br/>- Above the input field: `"top-left"`, `"top-center"`, `"top-right"`.<br/>    <br/>- Below the input field: `"bottom-left"`, `"bottom-center"`, `"bottom-right"`.<br/>    <br/>- To the left of the input field: `"left-top"`, `"left-center"`, `"left-bottom"`.<br/>    <br/>- To the right of the input field: `"right-top"`, `"right-center"`, `"right-bottom"`.<br/>    <br/>- Don't display the message (`"false"`). | no | ``` "top-left" ```
+``` checked ``` | The state of the radio button when the page is displayed:<br/><br/>- `checked=true` — Selected.<br/>    <br/>- `checked=false` — Deselected. | no | ``` false ```
+``` size ``` | Size of the field.<br/><br/>Supported values: `"M"`, `"L"`. | no | ``` "L" ```
+``` width ``` | Width of the field. Set in the following units:<br/><br/>- Pixels. For example, `width="100px"`.<br/>    <br/>- Percentage of the size of the parent element. For example, `width="100%"`.<br/>    <br/><br/>You can also use a formula for setting the width. For example, `width="calc(100%-30px)"`. | no | depends on the length of the signature
+``` class ``` | The CSS class for the field. For example, `class="annotation"`. | no | ``` ".field" ".field_type_radio" ```
+
+{% include [contact-support](../../_includes/contact-support-help.md) %}

@@ -1,0 +1,2 @@
+
+Click {% if locale == "en-com" %}**Show specifications**{% endif %} and check the values:
