@@ -11,7 +11,9 @@ An exam is a [pool](../../glossary.md#pool-ru) that contains only [control tasks
 ## Features {#features}
 
 - The number of tasks in the exam must be a multiple of the number of tasks per suite. Otherwise, the Tolokers won't receive the last suite and won't be able to complete the exam.
+
     #### Example
+
     If the exam consisted of two suites, 10 tasks each, and you increased the number of tasks per suite to 12, there won't be enough tasks for two full suites. Tolokers won't receive the second suite and won't be able to complete the exam.
 
 - Set the same price per task suite for the exam and the main pool. If the price doesn't match, Tolokers won't be able to immediately start completing general tasks after passing the exam.
@@ -25,25 +27,34 @@ An exam is a [pool](../../glossary.md#pool-ru) that contains only [control tasks
 1. [Add tasks](pool.md) to the pool.
 1. Set the skill filter in the main pool to filter out fraudulent users.
 
-
 ## Troubleshooting {#troubleshooting}
 
-#### Get initial consultation
+{% cut "Get initial consultation" %}
 
-#### What's the difference between the exam pool that I pay for and the main pool?
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8745/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% cut "What's the difference between the exam pool that I pay for and the main pool?" %}
 
 Exam is a pool that contains only the control tasks. Usually it's small and intended to check how users learned to do your tasks after they read the instructions and completed the training.
 
 Unlike your main pool, you already know correct responses for every task. You can set the price to zero. Based on the results of responses to control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
 
-#### How do I set up an exam so that different people can take it without running out of tasks?
+{% endcut %}
+
+{% cut "How do I set up an exam so that different people can take it without running out of tasks?" %}
 
 When you load tasks, use smart mixing. In this case, you'll have infinite overlap in your exam.
 
 However, this poses the risk that you might spend a lot of money on the exam. You might want to open this pool only when the main pool opens, and close it when labeling of the main pool ends.
 
-#### Request for training in crowdsourcing and working with Toloka
- {% if locale == "en-com" %}{% endif %}
+{% endcut %}
 
+{% cut "Request for training in crowdsourcing and working with Toloka" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-new.md) %}

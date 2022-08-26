@@ -86,3 +86,9 @@ But you can do it yourself if you want. When downloading the results, select the
 #### My project has a trusted user who was banned by the system
 
 Unfortunately, this Toloker has violated the user agreement and will no longer be able to complete tasks. You can find new Tolokers or customize [filters](../concepts/filters.md) so that they better match the project requirements.
+
+{% cut "Contact support" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}

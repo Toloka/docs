@@ -119,3 +119,9 @@
 Автоматически отклонить ответы заблокированного исполнителя нельзя.
 
 {% include [quality-control-tasks-after-too-fast-ban-delete-answers](../_includes/troubleshooting/pool-setup/id-quality-control/tasks-after-too-fast-ban-delete-answers.md) %}
+
+{% cut "Написать в службу поддержки" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}

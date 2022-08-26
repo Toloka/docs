@@ -1,17 +1,53 @@
 # Служба поддержки
 
-#### Получить первичную консультацию
+{% cut "Получить первичную консультацию" %}
 
-#### Проблемы с настройкой проекта
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8745/?lang=ru&iframe=1&service=toloka-ai"></iframe>
 
-#### Вопрос по работе в песочнице
- {% if locale == "ru-ru" %}
-#### Проблемы с подключением Яндекс Диска
+{% endcut %}
+
+{% cut "Проблемы с настройкой проекта" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8744/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% cut "Вопрос по работе в песочнице" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015613/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% if locale == "ru-ru" %}
+
+{% cut "Проблемы с подключением Яндекс Диска" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015616/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
 {% endif %}
-#### Вернуть средства, перечисленные на счет в Толоку
 
-#### Получить закрывающие документы и акты
+{% cut "Вернуть средства, перечисленные на счет в Толоку" %}
 
-#### Заявка на обучение краудсорсингу и работе с Толокой
- {% if locale == "ru-ru" %}{% endif %}{% if locale == "en-com" %}{% endif %}
-#### Сообщить о недобросовестных исполнителях в проектах
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% cut "Получить закрывающие документы и акты" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% cut "Заявка на обучение краудсорсингу и работе с Толокой" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% cut "Сообщить о недобросовестных исполнителях в проектах" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}

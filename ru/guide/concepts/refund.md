@@ -24,6 +24,8 @@
 
 1. Заполните поля формы:
 
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
 1. Скачайте образец заявления, который находится в форме на возврат средств. Заполните заявление.
 
 1. Сделайте цветные фотографии банковской карты с обеих сторон. На фотографии _лицевой стороны_ карты должны быть видны первые 6 и последние 4 цифры номера карты. На фотографии _оборотной стороны_ должен быть закрыт код проверки подлинности карты CVV / CVC.
@@ -35,6 +37,8 @@
 #### Юридическое лицо
 
 1. Заполните поля формы:
+
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
 
 1. {% include [refund-to-card-p_pf2_btw_lkb](../_includes/concepts/refund/id-refund-to-card/p_pf2_btw_lkb.md) %}
 
@@ -56,6 +60,8 @@
 
 1. Заполните поля формы:
 
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
 1. {% include [refund-to-card-p_pf2_btw_lkb](../_includes/concepts/refund/id-refund-to-card/p_pf2_btw_lkb.md) %}
 
 1. Если вы переводили деньги в Толоку с помощью банковского перевода, сделайте копию платежной квитанции.
@@ -69,6 +75,8 @@
 #### Юридическое лицо
 
 1. Заполните поля формы:
+
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
 
 1. {% include [refund-to-card-p_pf2_btw_lkb](../_includes/concepts/refund/id-refund-to-card/p_pf2_btw_lkb.md) %}
 
@@ -95,3 +103,9 @@
 - Способ пополнения счета PayPal;
 - Номер вашего счета в [**Яндекс Балансе**]({{ balance }}) (на вкладке **Счета**);
 - Номер кошелька PayPal, с которого вы переводили средства в Толоку.
+
+{% cut "Заполнить форму на возврат средств" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}

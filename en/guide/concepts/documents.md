@@ -29,6 +29,8 @@ If you don't want to top up your account, don't click **Create a billing invoice
 
     You can also request original service invoices via the form below.
 
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
 - Extended report
 
     Contains data on all invoices and payments. Available only in electronic form.
@@ -69,3 +71,9 @@ You can edit your email address, the actual address for the correspondence deliv
 1. Click the **Save** button.
 
 You can also send a request to change payment details to the document workflow group at: `docs-project@support.yandex.com`. In the request, specify a list of new and old payment details, the email you used to register in Toloka, and attach a copy of the document that confirms the changes (signed by the head of organization and with the organization's seal).
+
+{% cut "Fill out the form for receiving closing documents and acts" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}

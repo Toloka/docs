@@ -112,3 +112,9 @@ The results show the responses of all users, including those who are banned. To 
 You can't automatically reject the responses of a banned Toloker.
 
 But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned users to other Tolokers using the [Re-completion of assignments from banned users](restore-task-overlap.md) rule.
+
+{% cut "Contact support" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}

@@ -24,6 +24,8 @@ The steps for getting a refund are different for individuals and businesses:
 
 1. Fill in the form fields:
 
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
 1. Download the sample application that is in the refund form. Fill in the application.
 
 1. Take color photos of the bank card on both sides. On the _front_ side of the card, the first 6 and last 4 digits of the card number must be visible. On the _reverse side_ of the card, the CVV/ CVC card authentication code must be covered.
@@ -35,6 +37,8 @@ The steps for getting a refund are different for individuals and businesses:
 #### Legal entity
 
 1. Fill in the form fields:
+
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
 1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -55,6 +59,8 @@ The steps for getting a refund are different for individuals and businesses:
 
 1. Fill in the form fields:
 
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
 1. Download the sample application that is in the refund form. Fill in the application.
 
 1. If you transferred money to Toloka using a bank transfer, make a copy of the payment receipt.
@@ -68,6 +74,8 @@ The steps for getting a refund are different for individuals and businesses:
 #### Legal entity
 
 1. Fill in the form fields:
+
+    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
 1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -94,3 +102,9 @@ To return funds transferred using PayPal, fill in the form below. Make sure to s
 - That you added funds from your PayPal account.
 - Your account number in [**Yandex.Balance**]({{ balance }}) (in the **Accounts** tab).
 - The number of the PayPal wallet from which you transferred funds to Toloka.
+
+{% cut "Fill in the refund form" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}

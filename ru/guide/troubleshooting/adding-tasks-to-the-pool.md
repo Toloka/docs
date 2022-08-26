@@ -2,7 +2,6 @@
 
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
-
 ## Загрузка заданий {#concept_iy1_3kh_5mb}
 
 #### Сколько заданий должно быть на странице?

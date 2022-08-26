@@ -11,15 +11,12 @@ To register, you need a Yandex ID with a linked and confirmed phone number. If y
 
 {% endnote %}
 
-
-
 ## Where should I register? {#register}
 
 There are two versions of Toloka. You need to register separately in each of them:
 
 - [Production version]({{ toloka-ai }}) of Toloka for requesters.
 - [Sandbox]({{ sandbox }}). You don't have to register in the sandbox, but it's useful for testing complex [projects](../../glossary.md#project-ru) before launching them. Learn more about [working in the sandbox](sandbox.md).
-
 
 ## Recommendations {#concept_pkf_nks_vlb}
 
@@ -28,15 +25,12 @@ There are two versions of Toloka. You need to register separately in each of the
 - Use [shared access](multiple-access.md) if:
 
     - You want to be able to quickly switch from the Toloker account to the requester account.
-
     - You are planning to share projects with coworkers.
     - You need help setting up the project.
-
 
 ## What's next {#what-next}
 
 - [Learn how to post tasks](first-project.md)
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -69,7 +63,6 @@ If you don't have access to the old number, it takes a month to replace it. For 
 
 {% endnote %}
 
-
 #### How do I change my account type from <q>Requester</q> to <q>Toloker</q>?
 
 You can't change the account type from <q>Requester</q> to <q>Toloker</q>.
@@ -77,6 +70,7 @@ You can't change the account type from <q>Requester</q> to <q>Toloker</q>.
 If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
 
 To create a Toloker account:
+
 1. Log out of your requester account.
 1. Go to the [Toloka]({{ toloka-index }}) home page.
 1. Click **Join**.
@@ -88,14 +82,28 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% endnote %}
 
-#### Get initial consultation
+{% cut "Get initial consultation" %}
 
-#### Question about working in the sandbox
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8745/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
-#### Issues with project settings
+{% endcut %}
 
-#### Request for training in crowdsourcing and working with Toloka
- {% if locale == "en-com" %}{% endif %}
+{% cut "Question about working in the sandbox" %}
 
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015613/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% cut "Issues with project settings" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8744/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
+
+{% cut "Request for training in crowdsourcing and working with Toloka" %}
+
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=en&iframe=1&service=toloka-ai"></iframe>
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-new.md) %}
