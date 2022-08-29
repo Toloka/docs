@@ -45,7 +45,7 @@ Let's take a look at a sample event notification sent by the Toloka API:
 ```bash
 POST /webhook_endpoint HTTP/1.1
 Host: client_api
-Toloka-Signature: {v=1, ts=946728000000, sign=609af3eefd4c12b6afad30ab456efcd21f}
+Toloka-Signature: {v=1, ts=946728000000, sign=609af3eefd4c12b6afad30ab456efcd21fe82f4247d3340151a3ca0c97a6cbcb}
 Content-Type: application/json
 Content-Length: 355
 
@@ -92,11 +92,14 @@ request_payload = "{\"events\":[{\"event_time\":
     \"webhook_subscription_id\":\"subscription-1\",
     \"type\":\"ASSIGNMENT_APPROVED\"}]}"
 
-# the "ts" field value from the incoming Toloka-Signature header               toloka_header_ts = 946728000000
+# the "ts" field value from the incoming Toloka-Signature header
+toloka_header_ts = 946728000000
 
-# the "v" field value from the incoming Toloka-Signature header   toloka_header_v = 1
+# the "v" field value from the incoming Toloka-Signature header
+toloka_header_v = 1
 
-# the "sign" field value from the incoming Toloka-Signature header    toloka_header_sign = '609af3eefd4c12b6afad30ab456efcd21f'
+# the "sign" field value from the incoming Toloka-Signature header
+toloka_header_sign = '609af3eefd4c12b6afad30ab456efcd21fe82f4247d3340151a3ca0c97a6cbcb'
 
 if (is_valid_signature(secret_key, request_payload, toloka_header_ts,
     toloka_header_v, toloka_header_sign)):
