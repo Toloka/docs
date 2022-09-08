@@ -14,15 +14,14 @@ If you want to create the task suites yourself, follow the instructions in [Over
 
 ## Methods {#methods}
 
-#|
-||**Method** | **Endpoint** | **Description**||
-||POST | [/tasks](create-task.md) |{% include [create-task-create](../_includes/concepts/create-task/id-create-task/create.md) %}||
-||POST | [/tasks](create-task.md) |{% include [create-tasks-batch-create](../_includes/concepts/create-tasks-batch/id-create-tasks-batch/create.md) %}||
-||GET | [/tasks/<task_id>](get-task.md) |{% include [get-task-get](../_includes/concepts/get-task/id-get-task/get.md) %}||
-||GET | [/tasks](get-tasks-list.md) |{% include [get-tasks-list-get-list](../_includes/concepts/get-tasks-list/id-get-tasks-list/get-list.md) %}||
-||PATCH | [/tasks/<task_id>](edit-task-overlap.md) |{% include [edit-task-overlap-edit-overlap](../_includes/concepts/edit-task-overlap/id-edit-task-overlap/edit-overlap.md) %}||
-||PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) |{% include [set-min-task-overlap-set-min-overlap](../_includes/concepts/set-min-task-overlap/id-set-min-task-overlap/set-min-overlap.md) %}||
-|#
+Method | Endpoint | Overview
+----- | ----- | -----
+POST | [/tasks](create-task.md) | Creates one or multiple tasks.
+POST | [/tasks](create-tasks-batch.md) | Creates multiple tasks.
+GET | [/tasks/<task_id>](get-task.md) | Gets task data.
+GET | [/tasks](get-tasks-list.md) | Gets the list of tasks in the pool.
+PATCH | [/tasks/<task_id>](edit-task-overlap.md) | Changes the task overlap.
+PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) | Stops assigning a task to Tolokers.
 
 ## Merging tasks {#task-merge}
 
@@ -52,4 +51,3 @@ To activate task merging in a  project, specify `"assignments_automerge_enable
 ## Learn more {#links}
 
 For more information about creating task suites, see the [Requester's guide]({{ requester-pool-main }}).
-
