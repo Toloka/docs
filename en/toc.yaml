@@ -385,6 +385,8 @@ items:
     items:
       - name: REST API
         items:
+          - name: Overview
+            href: api/rest-api.md
           - name: Toloka API
             items:
               - include:
@@ -408,6 +410,8 @@ items:
                   mode: link
       - name: Python SDK
         items:
+          - name: Overview
+            href: toloka-kit/python-sdk.md
           - name: Toloka-Kit
             items:
               - include:

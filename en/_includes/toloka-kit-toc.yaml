@@ -1,7 +1,4 @@
 items:
-  - name: Python SDK
-    href: ../toloka-kit/python-sdk.md
-    hidden: true
   - name: Overview
     href: ../toloka-kit/index.md
   - name: Quick Start
