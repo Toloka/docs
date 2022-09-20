@@ -1,7 +1,0 @@
-common:
-  - from: /api/concepts/download-tasks.md
-    to: /api/concepts/upload-tasks.md
-
-ru:
-  - from: /api/concepts/download-tasks.md
-    to: /api/concepts/upload-tasks.md
