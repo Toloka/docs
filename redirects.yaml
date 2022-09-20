@@ -1,0 +1,7 @@
+common:
+  - from: /api/concepts/about.md
+    to: /api/index.md
+
+ru:
+  - from: /api/concepts/about.md
+    to: /api/index.md
