@@ -397,6 +397,9 @@ items:
             items:
               - name: How to use
                 items:
+                  - name: Bespoke API
+                    href: toloka-apps/api/concepts/index.md
+                    hidden: true
                   - name: Accessing the API
                     href: toloka-apps/api/concepts/authorization.md
                   - name: API quick start
