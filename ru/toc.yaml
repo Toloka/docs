@@ -411,6 +411,9 @@ items:
             items:
               - name: Как пользоваться
                 items:
+                  - name: API Bespoke-решений
+                    href: toloka-apps/api/concepts/index.md
+                    hidden: true
                   - name: Доступ к API
                     href: toloka-apps/api/concepts/authorization.md
                   - name: Быстрый старт API
