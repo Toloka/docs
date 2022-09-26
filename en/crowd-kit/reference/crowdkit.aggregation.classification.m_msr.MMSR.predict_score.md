@@ -1,5 +1,5 @@
 # predict_score
-`crowdkit.aggregation.classification.m_msr.MMSR.predict_score` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/m_msr.py#L126)
+`crowdkit.aggregation.classification.m_msr.MMSR.predict_score` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/m_msr.py#L126)
 
 ```python
 predict_score(self, data: DataFrame)

@@ -1,5 +1,5 @@
 # predict
-`crowdkit.aggregation.classification.wawa.Wawa.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/wawa.py#L70)
+`crowdkit.aggregation.classification.wawa.Wawa.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/wawa.py#L70)
 
 ```python
 predict(self, data: DataFrame)

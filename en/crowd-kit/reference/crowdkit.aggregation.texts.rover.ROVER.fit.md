@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.texts.rover.ROVER.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/texts/rover.py#L71)
+`crowdkit.aggregation.texts.rover.ROVER.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/texts/rover.py#L71)
 
 ```python
 fit(self, data: DataFrame)

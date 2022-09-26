@@ -1,5 +1,5 @@
 # KOS
-`crowdkit.aggregation.classification.kos.KOS` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/kos.py#L14)
+`crowdkit.aggregation.classification.kos.KOS` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/kos.py#L14)
 
 ```python
 KOS(

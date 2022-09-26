@@ -1,5 +1,5 @@
 # MMSR
-`crowdkit.aggregation.classification.m_msr.MMSR` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/m_msr.py#L17)
+`crowdkit.aggregation.classification.m_msr.MMSR` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/m_msr.py#L17)
 
 ```python
 MMSR(
@@ -7,9 +7,9 @@ MMSR(
     n_iter: int = 10000,
     tol: float = 1e-10,
     random_state: Optional[int] = 0,
-    observation_matrix: ndarray = ...,
-    covariation_matrix: ndarray = ...,
-    n_common_tasks: ndarray = ...,
+    observation_matrix: ... = ...,
+    covariation_matrix: ... = ...,
+    n_common_tasks: ... = ...,
     n_workers: int = 0,
     n_tasks: int = 0,
     n_labels: int = 0,

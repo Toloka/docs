@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.classification.kos.KOS.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/kos.py#L107)
+`crowdkit.aggregation.classification.kos.KOS.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/kos.py#L107)
 
 ```python
 fit_predict(self, data: DataFrame)

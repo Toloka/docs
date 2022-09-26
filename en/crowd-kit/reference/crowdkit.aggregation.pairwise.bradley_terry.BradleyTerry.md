@@ -1,5 +1,5 @@
 # BradleyTerry
-`crowdkit.aggregation.pairwise.bradley_terry.BradleyTerry` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/pairwise/bradley_terry.py#L15)
+`crowdkit.aggregation.pairwise.bradley_terry.BradleyTerry` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/pairwise/bradley_terry.py#L15)
 
 ```python
 BradleyTerry(
