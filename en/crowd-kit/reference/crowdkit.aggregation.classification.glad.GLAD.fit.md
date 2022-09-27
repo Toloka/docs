@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.classification.glad.GLAD.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/glad.py#L275)
+`crowdkit.aggregation.classification.glad.GLAD.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/glad.py#L275)
 
 ```python
 fit(self, data: DataFrame)

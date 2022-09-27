@@ -1,5 +1,5 @@
 # alpha_krippendorff
-`crowdkit.metrics.data._classification.alpha_krippendorff` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/metrics/data/_classification.py#L209)
+`crowdkit.metrics.data._classification.alpha_krippendorff` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/metrics/data/_classification.py#L209)
 
 ```python
 alpha_krippendorff(answers: DataFrame, distance: Callable[[Hashable, Hashable], float] = binary_distance)

@@ -1,5 +1,5 @@
 # uncertainty
-`crowdkit.metrics.data._classification.uncertainty` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/metrics/data/_classification.py#L102)
+`crowdkit.metrics.data._classification.uncertainty` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/metrics/data/_classification.py#L102)
 
 ```python
 uncertainty(

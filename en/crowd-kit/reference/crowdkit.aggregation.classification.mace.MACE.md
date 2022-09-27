@@ -1,5 +1,5 @@
 # MACE
-`crowdkit.aggregation.classification.mace.MACE` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/mace.py#L67)
+`crowdkit.aggregation.classification.mace.MACE` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/mace.py#L67)
 
 ```python
 MACE(

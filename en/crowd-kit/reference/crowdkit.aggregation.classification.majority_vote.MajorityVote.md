@@ -1,5 +1,5 @@
 # MajorityVote
-`crowdkit.aggregation.classification.majority_vote.MajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/majority_vote.py#L12)
+`crowdkit.aggregation.classification.majority_vote.MajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/majority_vote.py#L12)
 
 ```python
 MajorityVote(

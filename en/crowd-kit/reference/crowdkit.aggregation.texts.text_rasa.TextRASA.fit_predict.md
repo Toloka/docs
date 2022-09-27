@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.texts.text_rasa.TextRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/texts/text_rasa.py#L83)
+`crowdkit.aggregation.texts.text_rasa.TextRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/texts/text_rasa.py#L83)
 
 ```python
 fit_predict(

@@ -1,5 +1,5 @@
 # SegmentationMajorityVote
-`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L13)
+`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L13)
 
 ```python
 SegmentationMajorityVote(
