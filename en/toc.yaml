@@ -1,5 +1,8 @@
 title: Toloka documentation
 items:
+  - name: Toloka documentation
+    href: index.md
+    hidden: true
   - name: Getting started
     items:
       - name: How does Toloka work?
@@ -49,23 +52,23 @@ items:
       - name: Video
         items:
           - name: Video classification
-            href: https://toloka.ai/docs/guide/concepts/video-moderation.html
+            href: https://toloka.ai/docs/guide/tutorials/video-moderation.html
       - name: Audio
         items:
           - name: Audio transcription
             href: https://toloka.ai/docs/guide/tutorials/transcript-audio.html
           - name: Voice recording
-            href: https://toloka.ai/docs/guide/concepts/transcript-audio.html
+            href: https://toloka.ai/docs/guide/tutorials/record-audio.html
+          - name: Audio classification
+            href: https://toloka.ai/docs/guide/tutorials/audio-classification.html
       - name: Texts
         items:
           - name: Sentiment analysis and content moderation
-            href: https://toloka.ai/docs/guide/concepts/content-moderation.html
+            href: https://toloka.ai/docs/guide/tutorials/content-moderation.html
       - name: Data enrichment
         items:
-          - name: Survey
-            href: https://toloka.ai/docs/guide/concepts/questionnaire.html
           - name: Searching for product characteristics
-            href: https://toloka.ai/docs/guide/concepts/internet-search.html
+            href: https://toloka.ai/docs/guide/tutorials/internet-search.html
           - name: Product photo search (example with decomposition)
             items:
               - name: Overview
@@ -80,10 +83,16 @@ items:
                 href: https://toloka.ai/docs/guide/concepts/item_more_similar.html
               - name: 'Appendix: Complete code for all projects'
                 href: https://toloka.ai/docs/guide/concepts/appendix-expanded-code.html
+      - name: Surveys
+        items:
+          - name: Survey with Toloka template
+            href: https://toloka.ai/docs/guide/tutorials/questionnaire-toloka.html
+          - name: Survey on third-party platform
+            href: https://toloka.ai/docs/guide/tutorials/questionnaire-other.html
       - name: Field tasks
         items:
           - name: Collecting offline data
-            href: https://toloka.ai/docs/guide/concepts/walk.html
+            href: https://toloka.ai/docs/guide/tutorials/walk.html
           - name: Price monitoring
             href: https://toloka.ai/docs/guide/concepts/price-tag.html
           - name: Product monitoring
@@ -185,10 +194,12 @@ items:
                     items:
                       - name: How to use JavaScript extensions
                         href: https://toloka.ai/docs/guide/concepts/spec-advanced.html
-                      - name: Task class
-                        href: https://toloka.ai/docs/guide/concepts/js/task.html
+                      - name: Assignment class
+                        href: https://toloka.ai/docs/guide/concepts/js/assignment.html
                       - name: TaskSuite class
                         href: https://toloka.ai/docs/guide/concepts/js/tasksuite.html
+                      - name: Task class
+                        href: https://toloka.ai/docs/guide/concepts/js/task.html
                       - name: Services for specific purposes
                         href: https://toloka.ai/docs/guide/concepts/js/services.html
           - name: Input and output data
@@ -271,16 +282,14 @@ items:
         items:
           - name: Steps to follow
             href: https://toloka.ai/docs/guide/concepts/pool.html
-          - name: Creating a TSV file with tasks
+          - name: Creating a file with tasks
             href: https://toloka.ai/docs/guide/concepts/pool_csv.html
           - name: Uploading tasks to a pool
             items:
               - name: How to upload tasks
                 href: https://toloka.ai/docs/guide/concepts/task_upload.html
-              - name: Ways to combine tasks in suites
+              - name: Ways to group tasks in suites
                 href: https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html
-              - name: Keep task order
-                href: https://toloka.ai/docs/guide/concepts/save-order.html
           - name: Task markup
             items:
               - name: Overview
@@ -309,6 +318,16 @@ items:
             href: https://toloka.ai/docs/guide/concepts/project-statistic.html
           - name: Pool statistics
             href: https://toloka.ai/docs/guide/concepts/pool_statistic-pool.html
+          - name: Efficiency metrics
+            items:
+              - name: Overview
+                href: https://toloka.ai/docs/guide/concepts/efficiency-metrics/index.html
+              - name: Control tasks
+                href: https://toloka.ai/docs/guide/concepts/efficiency-metrics/control-tasks-share.html
+              - name: Rejected tasks
+                href: https://toloka.ai/docs/guide/concepts/efficiency-metrics/rejected-tasks.html
+              - name: Submission rate
+                href: https://toloka.ai/docs/guide/concepts/efficiency-metrics/submitting-tasks.html
   - name: Bespoke solutions
     hidden: true
     items:

@@ -34,11 +34,12 @@ h3 {
     <div class="grid-item">
         <h2>Tutorials</h2>
         <p><a href="https://toloka.ai/docs/guide/tutorials/image-classification.html">Images</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/video-moderation.html">Video</a></p>
+        <p><a href="https://toloka.ai/docs/guide/tutorials/video-moderation.html">Video</a></p>
         <p><a href="https://toloka.ai/docs/guide/tutorials/transcript-audio.html">Audio</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/content-moderation.html">Texts</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/questionnaire.html">Data enrichment</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/walk.html">Field tasks</a></p>
+        <p><a href="https://toloka.ai/docs/guide/tutorials/content-moderation.html">Texts</a></p>
+        <p><a href="https://toloka.ai/docs/guide/tutorials/internet-search.html">Data enrichment</a></p>
+        <p><a href="https://toloka.ai/docs/guide/tutorials/questionnaire-toloka.html">Surveys</a></p>
+        <p><a href="https://toloka.ai/docs/guide/tutorials/walk.html">Field tasks</a></p>
     </div>
     <div class="grid-item">
         <h2>Projects</h2>

@@ -1,5 +1,8 @@
 title: Документация Толоки
 items:
+  - name: Документация Толоки
+    href: index.md
+    hidden: true
   - name: С чего начать
     items:
       - name: Как устроена Толока
@@ -185,10 +188,12 @@ items:
                     items:
                       - name: Как использовать JavaScript-расширения
                         href: https://toloka.ai/ru/docs/guide/concepts/spec-advanced.html
-                      - name: Класс Task
-                        href: https://toloka.ai/ru/docs/guide/concepts/js/task.html
+                      - name: Класс Assignment
+                        href: https://toloka.ai/ru/docs/guide/concepts/js/assignment.html
                       - name: Класс TaskSuite
                         href: https://toloka.ai/ru/docs/guide/concepts/js/tasksuite.html
+                      - name: Класс Task
+                        href: https://toloka.ai/ru/docs/guide/concepts/js/task.html
                       - name: Сервисы для решения специфических задач
                         href: https://toloka.ai/ru/docs/guide/concepts/js/services.html
           - name: Входные и выходные данные
@@ -279,8 +284,6 @@ items:
                 href: https://toloka.ai/ru/docs/guide/concepts/task_upload.html
               - name: Способы распределения заданий
                 href: https://toloka.ai/ru/docs/guide/concepts/distribute-tasks-by-pages.html
-              - name: Сохранить порядок заданий
-                href: https://toloka.ai/ru/docs/guide/concepts/save-order.html
           - name: Разметка заданий
             items:
               - name: Обзор
@@ -313,6 +316,16 @@ items:
             href: https://toloka.ai/ru/docs/guide/concepts/project-statistic.html
           - name: Статистика по пулу
             href: https://toloka.ai/ru/docs/guide/concepts/pool_statistic-pool.html
+          - name: Метрики эффективности
+            items:
+              - name: Обзор
+                href: https://toloka.ai/ru/docs/guide/concepts/efficiency-metrics/index.html
+              - name: Контрольные задания
+                href: https://toloka.ai/ru/docs/guide/concepts/efficiency-metrics/control-tasks-share.html
+              - name: Отклоненные задания
+                href: https://toloka.ai/ru/docs/guide/concepts/efficiency-metrics/rejected-tasks.html
+              - name: Выполнение заданий
+                href: https://toloka.ai/ru/docs/guide/concepts/efficiency-metrics/submitting-tasks.html
   - name: Bespoke-решения
     hidden: true
     items:
