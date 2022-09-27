@@ -1,5 +1,5 @@
 # load_dataset
-`crowdkit.datasets.load_dataset.load_dataset` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/datasets/load_dataset.py#L12)
+`crowdkit.datasets.load_dataset.load_dataset` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/datasets/load_dataset.py#L12)
 
 ```python
 load_dataset(dataset: str, data_dir: Optional[str] = None)

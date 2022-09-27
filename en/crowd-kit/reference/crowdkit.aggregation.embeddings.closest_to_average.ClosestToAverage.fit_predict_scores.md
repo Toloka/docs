@@ -1,5 +1,5 @@
 # fit_predict_scores
-`crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage.fit_predict_scores` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/embeddings/closest_to_average.py#L86)
+`crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage.fit_predict_scores` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/embeddings/closest_to_average.py#L86)
 
 ```python
 fit_predict_scores(

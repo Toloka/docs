@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.classification.mace.MACE.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/mace.py#L145)
+`crowdkit.aggregation.classification.mace.MACE.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/mace.py#L145)
 
 ```python
 fit(self, data: DataFrame)

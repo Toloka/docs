@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/embeddings/closest_to_average.py#L39)
+`crowdkit.aggregation.embeddings.closest_to_average.ClosestToAverage.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/embeddings/closest_to_average.py#L39)
 
 ```python
 fit(

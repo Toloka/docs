@@ -1,5 +1,5 @@
 # predict
-`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/zero_based_skill.py#L95)
+`crowdkit.aggregation.classification.zero_based_skill.ZeroBasedSkill.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/zero_based_skill.py#L95)
 
 ```python
 predict(self, data: DataFrame)

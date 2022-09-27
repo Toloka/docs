@@ -1,5 +1,5 @@
 # entropy_threshold
-`crowdkit.postprocessing.entropy_threshold.entropy_threshold` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/postprocessing/entropy_threshold.py#L13)
+`crowdkit.postprocessing.entropy_threshold.entropy_threshold` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/postprocessing/entropy_threshold.py#L13)
 
 ```python
 entropy_threshold(

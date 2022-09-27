@@ -1,5 +1,5 @@
 # TextHRRASA
-`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/texts/text_hrrasa.py#L11)
+`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/texts/text_hrrasa.py#L11)
 
 ```python
 TextHRRASA(
