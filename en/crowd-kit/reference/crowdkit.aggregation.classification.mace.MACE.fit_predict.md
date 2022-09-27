@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.classification.mace.MACE.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/mace.py#L234)
+`crowdkit.aggregation.classification.mace.MACE.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/mace.py#L234)
 
 ```python
 fit_predict(self, data: DataFrame)

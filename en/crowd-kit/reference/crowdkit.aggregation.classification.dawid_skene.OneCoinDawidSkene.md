@@ -1,5 +1,5 @@
 # OneCoinDawidSkene
-`crowdkit.aggregation.classification.dawid_skene.OneCoinDawidSkene` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/dawid_skene.py#L220)
+`crowdkit.aggregation.classification.dawid_skene.OneCoinDawidSkene` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc4/crowdkit/aggregation/classification/dawid_skene.py#L221)
 
 ```python
 OneCoinDawidSkene(
