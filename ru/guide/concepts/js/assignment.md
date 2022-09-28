@@ -14,12 +14,15 @@
 Конструктор базового класса списка заданий.
 
 Параметры:
+
 - `options.assignment` — модель списка задания `Assignment`.
 - `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data-ru), интерфейса заданий.
 - `options.workspaceOptions` — параметры инициализации рабочего пространства исполнителя.
 
 #### destroy()
+
 Вызывает [`TaskSuite.destroy()`](tasksuite.md#destroy), удаляет из DOM все элементы шаблона, закрывает канал обмена сообщениями, останавливает опрос горячих клавиш и геолокацию, вызывает `onDestroy`.
+
 #### initHotkeys()
 
 Инициализатор обработчиков горячих клавиш:
@@ -28,7 +31,9 @@
 - При нажатии клавиши Enter вызывает метод [`submit()`](#Submit).
 
 #### getId()
+
 Возвращает `assignmentId` в виде строки или `undefined`, если вы отлаживаете задание в режиме превью или открыли предпросмотр пула.
+
 #### getOptions()
 
 Возвращает объект с набором параметров, переданных методу `constructor()` при инициализации.
@@ -36,7 +41,7 @@
 #### Пример
 
 ```javascript
-// получаем спецификации всех обязательных к заполнению полей:
+// getting specifications for all required fields:
 let outputSpec = this.getOptions().specs.output_spec,
      requiredFields = Object.keys(outputSpec)
                             .filter(key => outputSpec[key].required)
@@ -50,18 +55,22 @@ let outputSpec = this.getOptions().specs.output_spec,
 #### Пример
 
 ```javascript
-// подпишемся на все сообщения и покажем их
+// subscribe to all messages and show them
 this.getSandboxChannel().on('*', (name, message) => console.log(message));
 
-// попросим родительскую страницу показать инструкцию к заданию
-// обратите внимание — для этого также есть отдельный сервис TaskInterface
+// ask the parent page to show task instructions
+// there is also a separate service for this TaskInterface
 this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 ```
 
 #### getTaskSuite()
+
 Возвращает ссылку на экземпляр [TaskSuite](tasksuite.md).
+
 #### getTaskSuiteContainer()
+
 Возвращает `document.body` рабочего пространства исполнителя.
+
 #### getWorkspaceOptions()
 
 Возвращает объект с настройками рабочего пространства исполнителя.
@@ -69,13 +78,15 @@ this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 Наиболее важные настройки:
 
 - `agent` — для заданий в полной версии принимает значение `FRONTEND`, в мобильном приложении для Android — `ANDROID` и т. д.
-- `isReadOnly` — флаг режима <q>только для чтения</q> (например, просмотр истории выполненных заданий).
+- `isReadOnly` — флаг режима «только для чтения» (например, просмотр истории выполненных заданий).
 - `isReviewMode` — флаг режима ревью (например, приемка выполненных заданий). Этой настройкой и `isReadOnly` удобно пользоваться, если вы, например, захотите изменить компоновку шаблона в режиме просмотра истории.
 - `language` — двухбуквенный код языка, выбранного исполнителем в настройках Толоки. Им удобно пользоваться для создания многоязычных шаблонов.
 - `origin` — FQDN родительской страницы.
 
 #### pause()
+
 Приостанавливает выполнение задания (например, по команде `request:assignment:pause` от головной страницы), вызывает `onPause`.
+
 #### provideSolutions(strategy)
 
 Собирает ответы на все задания ([`TolokaTaskSuite.getSolutions()`](tasksuite.md#getSolutions)), валидирует их ([`TolokaTaskSuite.validate()`](tasksuite.md#validate)). При успешной валидации вызывает `strategy`, при неуспешной — отправляет запрос `assignment:validation:fail` и объект со списком ошибок, который вернул валидатор. Параметр:
@@ -105,19 +116,27 @@ provideSolutions(strategy = function(solutions) {
 ```
 
 #### resume()
+
 Продолжает выполнение задания, вызывает `onResume` и [`start`](#Start).
+
 #### skip()
+
 Позволяет пропустить текущее задание, эквивалентно нажатию кнопки **Пропустить**.
+
 #### start()
+
 Выполняет все необходимые действия при запуске набора заданий — добавляет в `document.body` отрендеренный интерфейс заданий, инициализирует горячие клавиши для всего интерфейса исполнителя ([`InitHotkeys`](#InitHotkeys)), вызывает `onStart`.
+
 #### submit
+
 Собирает, валидирует и отправляет выполненные задания, для этого вызывается [`provideSolutions`](#ProvideSolutions).
+
 #### Пример
 
 ```javascript
-// в некоторых сценариях нужно разрешить отправку только через какое-то время
-// в этом случае можно спрятать в настройках проекта кнопку отправки и делать это программно,
-// например, из TolokaTask
+// in some scenarios, you might need to set delayed sending
+// in that case, you can programmatically hide the send button in the project settings
+// for example, from TolokaTask
 this.getDOMElement().querySelector('.my_submit_button').addEventListener('click', (event) => this.getAssignment().submit());
 ```
 

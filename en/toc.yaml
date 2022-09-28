@@ -33,9 +33,6 @@ items:
         items:
           - name: Image classification
             href: guide/tutorials/image-classification.md
-          - name: Image classification
-            href: guide/concepts/categorization.md
-            hidden: true
           - name: Image comparison (Side-by-side)
             href: guide/tutorials/side-by-side.md
           - name: Object recognition & detection
@@ -55,23 +52,23 @@ items:
       - name: Video
         items:
           - name: Video classification
-            href: guide/concepts/video-moderation.md
+            href: guide/tutorials/video-moderation.md
       - name: Audio
         items:
           - name: Audio transcription
             href: guide/tutorials/transcript-audio.md
           - name: Voice recording
-            href: guide/concepts/record-audio.md
+            href: guide/tutorials/record-audio.md
+          - name: Audio classification
+            href: guide/tutorials/audio-classification.md
       - name: Texts
         items:
           - name: Sentiment analysis and content moderation
-            href: guide/concepts/content-moderation.md
+            href: guide/tutorials/content-moderation.md
       - name: Data enrichment
         items:
-          - name: Survey
-            href: guide/concepts/questionnaire.md
           - name: Searching for product characteristics
-            href: guide/concepts/internet-search.md
+            href: guide/tutorials/internet-search.md
           - name: Product photo search (example with decomposition)
             items:
               - name: Overview
@@ -86,10 +83,16 @@ items:
                 href: guide/concepts/item_more_similar.md
               - name: 'Appendix: Complete code for all projects'
                 href: guide/concepts/appendix-expanded-code.md
+      - name: Surveys
+        items:
+          - name: Survey with Toloka template
+            href: guide/tutorials/questionnaire-toloka.md
+          - name: Survey on third-party platform
+            href: guide/tutorials/questionnaire-other.md
       - name: Field tasks
         items:
           - name: Collecting offline data
-            href: guide/concepts/walk.md
+            href: guide/tutorials/walk.md
           - name: Price monitoring
             href: guide/concepts/price-tag.md
           - name: Product monitoring
@@ -191,10 +194,12 @@ items:
                     items:
                       - name: How to use JavaScript extensions
                         href: guide/concepts/spec-advanced.md
-                      - name: Task class
-                        href: guide/concepts/js/task.md
+                      - name: Assignment class
+                        href: guide/concepts/js/assignment.md
                       - name: TaskSuite class
                         href: guide/concepts/js/tasksuite.md
+                      - name: Task class
+                        href: guide/concepts/js/task.md
                       - name: Services for specific purposes
                         href: guide/concepts/js/services.md
           - name: Input and output data
@@ -277,16 +282,14 @@ items:
         items:
           - name: Steps to follow
             href: guide/concepts/pool.md
-          - name: Creating a TSV file with tasks
+          - name: Creating a file with tasks
             href: guide/concepts/pool_csv.md
           - name: Uploading tasks to a pool
             items:
               - name: How to upload tasks
                 href: guide/concepts/task_upload.md
-              - name: Ways to combine tasks in suites
+              - name: Ways to group tasks in suites
                 href: guide/concepts/distribute-tasks-by-pages.md
-              - name: Keep task order
-                href: guide/concepts/save-order.md
           - name: Task markup
             items:
               - name: Overview
@@ -315,6 +318,16 @@ items:
             href: guide/concepts/project-statistic.md
           - name: Pool statistics
             href: guide/concepts/pool_statistic-pool.md
+          - name: Efficiency metrics
+            items:
+              - name: Overview
+                href: guide/concepts/efficiency-metrics/index.md
+              - name: Control tasks
+                href: guide/concepts/efficiency-metrics/control-tasks-share.md
+              - name: Rejected tasks
+                href: guide/concepts/efficiency-metrics/rejected-tasks.md
+              - name: Submission rate
+                href: guide/concepts/efficiency-metrics/submitting-tasks.md
   - name: Bespoke solutions
     hidden: true
     items:

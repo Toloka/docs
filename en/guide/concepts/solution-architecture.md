@@ -39,14 +39,14 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 - Do I need to filter my data?
 
-    Let's say you want to create a task titled <q>Select road signs in an image</q>, but you aren't sure that all images contain road signs. Create a separate project with a task titled <q>Are there road signs in an image?</q> to filter out unnecessary images.
+    Let's say you want to create a task titled "Select road signs in an image", but you aren't sure that all images contain road signs. Create a separate project with a task titled "Are there road signs in an image?" to filter out unnecessary images.
 
     A data filtering task is usually cheap and can help you save on the most important task and simplify the task instructions and interface.
 
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled <q>Find similar products</q>, enable [assignment review](../../glossary.md#left-off-acceptance-ru) in this project and create a separate project with the <q>Are these items similar?</q> task to review responses, reject incorrect responses, and avoid paying for them.
+- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled "Find similar products", enable [assignment review](../../glossary.md#left-off-acceptance-ru) in this project and create a separate project with the "Are these items similar?" task to review responses, reject incorrect responses, and avoid paying for them.
 
     {% note warning %}
 
@@ -70,7 +70,7 @@ The easier the task, the better the results. If your task contains more than one
 
 - If some questions in the task need additional filtering.
 
-    For example, if you show a Toloker a photo of a cat and ask them to answer questions like <q>What color is the cat?</q> and <q>Is the cat asleep?</q>, it's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
+    For example, if you show a Toloker a photo of a cat and ask them to answer questions like "What color is the cat?" and "Is the cat asleep?", it's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
 
 - If different Toloker skills are required to answer different questions of the task.
 
@@ -107,20 +107,6 @@ If your task contains many objects of different types, you should break it down.
 The simpler the task, the cheaper it is and the better the quality of the final result. Set the cost of labeling a single class of objects in photos at about $0.01.
 
 [Use](../tutorials/selection.md) the **Object selection in an image** template. You can open this template in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](t-components/image-annotation.md#annotation) (**Dropdown list** tab).
-
-#### How do I make a voice recording of a text in a single audio file, but use about 1000 people to record it?
-
-You need to break down your task for Toloka. If you have a 30-minute task intended for one person and containing all the phrases, the best approach is to divide it into individual phrases, which you can give to different Tolokers. The template for voice recording tasks doesn't require that the Toloker installs a separate voice recorder app.
-
-Refer to our step-by-step guide for creating a [voice recording task](record-audio.md).
-
-In the input data, you can pass the phrase for the Toloker to record ("enable navigation"), and the speech speed (normal speed). This is the data you need to save in the TSV file. See the [Guide](pool_csv.md) to learn about creating a TSV file and its structure.
-
-The preview contains 4 tasks per suite by default. You can specify the number of tasks for your project when you upload the task file. [Learn more about the preview](spec.md).
-
-For example, if you want one person to say the same phrase 10 times, create 10 tasks in a suite. The cost is specified per task suite. To define how many people should say a particular phrase, use the overlap in the pool. By the way, don't forget to set up filters in your pool. This way you can select only the Tolokers who speak a certain language and use mobile devices: client = mobile Toloka.
-
-You can delegate review of the voice recordings to other Tolokers by creating a separate project. Find brief instructions on how to do this [here](record-audio.md).
 
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

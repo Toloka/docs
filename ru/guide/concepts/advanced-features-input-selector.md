@@ -2,14 +2,14 @@
 
 Добавьте новые варианты ответа: флажки, переключатели и выпадающие списки. Переключатель или выпадающий список подойдут, когда вы хотите предоставить один вариант ответа из нескольких предложенных. А флажки подходят, чтобы предоставить выбор любого сочетания из предложенных ответов.
 
-#### Как это выглядит на примере шаблона <q>Фото товара и ценника</q>
+#### Как это выглядит на примере шаблона «Фото товара и ценника»
 
 Было:
 ![](../_images/tutorials/advanced-features/af-input-selector-1.png)
 Стало:
 ![](../_images/tutorials/advanced-features/af-input-selector-2.png)
 
-Для вашего удобства мы подготовили код для шаблона <q>Фото товара и ценника</q>, в котором каждое из полей добавлено по одному разу в первую кнопку для ответа. Используйте этот код для самопроверки. Наши вставки в этом коде вы можете найти поиском слова <q>кастомизация</q>.
+Для вашего удобства мы подготовили код для шаблона «Фото товара и ценника», в котором каждое из полей добавлено по одному разу в первую кнопку для ответа. Используйте этот код для самопроверки. Наши вставки в этом коде вы можете найти поиском слова «кастомизация».
 
 #### Готовый код
 
@@ -558,7 +558,7 @@
     </div>
 {{/if}}
 ```
-{% endif %}{% if locale == "en-com" %}
+{% elsif locale == "en-com" %}
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -1758,7 +1758,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
-{% endif %}{% if locale == "en-com" %}
+{% elsif locale == "en-com" %}
 ```javascript
 var texts = {
     'task_title': 'Product and price tag photo',
@@ -2440,7 +2440,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
@@ -2448,9 +2448,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     ```
     {% endif %}
-1. Найдите блок `main` (он начинается со строки `<div class="main">`). Внутри него расположены блоки `main__block`, каждый из которых описывает одну из кнопок. Например, в шаблоне <q>Фото товара и ценника</q> есть 4 кнопки для ответа, значит, в блоке `main` у этого шаблона будет 4 блока `main__block` для каждой из кнопок.
+1. Найдите блок `main` (он начинается со строки `<div class="main">`). Внутри него расположены блоки `main__block`, каждый из которых описывает одну из кнопок. Например, в шаблоне «Фото товара и ценника» есть 4 кнопки для ответа, значит, в блоке `main` у этого шаблона будет 4 блока `main__block` для каждой из кнопок.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне <q>Фото товара и ценника</q> 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новые поля.
+    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новые поля.
 
     Внутри блока `main__block` расположен блок `main__content`, который содержит все поля для выбранной кнопки. Описание каждого отдельного поля расположено в блоках `main__content-block`.
 
@@ -2470,7 +2470,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- checkbox -->
     <div class="main__content-block">
@@ -2493,7 +2493,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ```
     {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
     ```
@@ -2518,7 +2518,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     {{/if}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
@@ -2532,7 +2532,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {% endif %}
     Переменная `verdict` указана в выходной спецификации, в нее будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
 
-    Например, в шаблоне <q>Фото товара и ценника</q> для четырех кнопок описаны четыре значения: `ok`, `no_price`, `no_item` и `no_shop`.
+    Например, в шаблоне «Фото товара и ценника» для четырех кнопок описаны четыре значения: `ok`, `no_price`, `no_item` и `no_shop`.
 
     Блоки `review__block` содержат описание каждого из полей для данной кнопки.
 
@@ -2549,7 +2549,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- checkbox -->
     <div class="review__block">
@@ -2569,7 +2569,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ```
     {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
     ```
@@ -2590,7 +2590,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ```
     'свойство': 'значение'
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     'property': 'value'
     ```
@@ -2599,9 +2599,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне <q>Фото товара и ценника</q> 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
+    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
 
-    Например, в шаблоне <q>Фото товара и ценника</q> тексты для кнопки `btn_ok` расположены в следующем блоке кода:
+    Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
     {% if locale == "ru-ru" %}
     ```javascript
     var texts = {
@@ -2619,7 +2619,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
     },
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     var texts = {
     //<common header text>
@@ -2645,7 +2645,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     'description': 'Выберите ответ'
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     'question_new_checkbox': {
     'title': 'Checkbox',
@@ -2687,7 +2687,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
@@ -2719,7 +2719,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- radio button -->
     <div class="main__content-block">
@@ -2744,7 +2744,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
     {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
     {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
@@ -2768,7 +2768,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     {{/if}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
@@ -2782,7 +2782,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {% endif %}
     Переменная `verdict` указана в выходной спецификации, в нее будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
 
-    Например, в шаблоне <q>Фото товара и ценника</q> для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
+    Например, в шаблоне «Фото товара и ценника» для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
 
     Блоки `review__block` содержат описание каждого из полей для данной кнопки.
 
@@ -2800,7 +2800,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- radio button -->
     <div class="review__block">
@@ -2822,7 +2822,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
     {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
     {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
@@ -2842,7 +2842,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ```
     'свойство': 'значение'
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     'property': 'value'
     ```
@@ -2851,9 +2851,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне <q>Фото товара и ценника</q> 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
+    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
 
-    Например, в шаблоне <q>Фото товара и ценника</q> тексты для кнопки `btn_ok` расположены в следующем блоке кода:
+    Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
     {% if locale == "ru-ru" %}
     ```javascript
     var texts = {
@@ -2871,7 +2871,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
     },
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     var texts = {
     //<common header text>
@@ -2897,7 +2897,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     'description': 'Выберите ответ'
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     'question_new_radio': {
     'title': 'Radio buttons',
@@ -2909,7 +2909,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 1. Добавьте валидацию.
 
-    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне <q>Фото товара и ценника</q> этот код выглядит так:
+    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне «Фото товара и ценника» этот код выглядит так:
     {% if locale == "ru-ru" %}
     ```
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {
@@ -2938,7 +2938,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     // код проверки полей кнопки no_shop
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {
     this.errors = this.addError('No answer selected', "verdict", this.errors);
@@ -2976,7 +2976,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     // код проверки поля
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     if (!solution... ) {
     // field validation code
@@ -2990,7 +2990,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     this.errors = this.addError('Это обязательное поле', 'radio_result', this.errors);
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     if (!solution.output_values.radio_result) {
     this.errors = this.addError('This is a required field', 'radio_result', this.errors);
@@ -3020,7 +3020,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
@@ -3054,7 +3054,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- drop-down list -->
     <div class="main__content-block">
@@ -3081,7 +3081,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{select_item value="Yes" text="Да"}}
     {{select_item value="No" text="Нет"}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{select_item value="Yes" text="Yes"}}
     {{select_item value="No" text="No"}}
@@ -3105,7 +3105,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     {{/if}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
@@ -3119,7 +3119,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {% endif %}
     Поле `verdict` указано в выходной спецификации, в него будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
 
-    Например, в шаблоне <q>Фото товара и ценника</q> для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
+    Например, в шаблоне «Фото товара и ценника» для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
 
     Блоки `review__block` содержат описание каждого из полей для данной кнопки.
 
@@ -3139,7 +3139,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- drop-down list -->
     <div class="review__block">
@@ -3169,7 +3169,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ```
     'свойство': 'значение'
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     'property': 'value'
     ```
@@ -3178,9 +3178,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне <q>Фото товара и ценника</q> 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
+    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
 
-    Например, в шаблоне <q>Фото товара и ценника</q> тексты для кнопки `btn_ok` расположены в следующем блоке кода:
+    Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
     {% if locale == "ru-ru" %}
     ```javascript
     var texts = {
@@ -3198,7 +3198,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
     },
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     var texts = {
     //<common header text>
@@ -3224,7 +3224,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     'description': 'Выберите ответ'
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     'question_new_select': {
     'title': 'Drop-down list',
@@ -3236,7 +3236,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 1. Добавьте валидацию.
 
-    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне <q>Фото товара и ценника</q> этот код выглядит так:
+    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне «Фото товара и ценника» этот код выглядит так:
     {% if locale == "ru-ru" %}
     ```
     else if (solution.output_values.verdict === 'ok') {
@@ -3264,7 +3264,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
 
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     else if (solution.output_values.verdict === 'ok') {
     // code for checking the ok button fields
@@ -3301,7 +3301,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     // код проверки поля
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     if (!solution... ) {
     // field validation code
@@ -3315,7 +3315,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     this.errors = this.addError('Это обязательное поле', 'select_result', this.errors);
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     if (!solution.output_values.select_result) {
     this.errors = this.addError('This is a required field', 'select_result', this.errors);

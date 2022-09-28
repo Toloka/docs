@@ -108,7 +108,7 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
     Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
 
-    1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+    1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
     {% note info %}
 
@@ -118,7 +118,7 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
     1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
 
-    1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . If there were errors when testing, check the code blocks that you entered.
+    1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
 
 1. Save the changes.
 
@@ -178,11 +178,18 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 1. Click {% if locale == "en-com" %}**Create a pool**{% endif %}.
 
 
-## Upload a file with tasks. {#upload-file}
+## Upload tasks {#upload-file}
 
-Prepare your own task file. Check out the example in [the demo file](https://download.cdn.yandex.net/from/yandex.ru/support/ru/toloka-requester/files/dataset-street.tsv). In the Toloka interface under the pool name, there are links to **file** templates for regular, control, and training tasks.
+Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
 
-1. On the pool page, click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can also download a sample file by clicking **Sample file for uploading tasks**.
+1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
+    #### Use sample data
+
+    If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool.
+
+    Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+
+    Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
 1. In the window that opens, configure the file upload settings:
 
@@ -251,15 +258,14 @@ Prepare your own task file. Check out the example in [the demo file](https://dow
 
     {% endnote %}
 
-1. When the operation is complete, download the file with the results. To do this, click {% if locale == "en-com" %}**Download**{% endif %} in the {% if locale == "en-com" %}**Files**{% endif %} column.
+1. When the operation is complete, download the results file. To do this, click {% if locale == "en-com" %}**Download**{% endif %} in the {% if locale == "en-com" %}**Files**{% endif %} column.
 
-1. Use the TSV file with the results in [project 2](image-segmentation-project2.md).
+1. Use the results file in [project 2](image-segmentation-project2.md).
 
 
 
 ## What's next {#what-next}
 
 - Create [Project 2](image-segmentation-project2.md) to select objects.
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -1,0 +1,2 @@
+
+On the {% if locale == "en-com" %}**Edit tasks**{% endif %} page, click {% if locale == "en-com" %}**Create control tasks**{% endif %}.

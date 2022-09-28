@@ -4,7 +4,7 @@ Captchas and the [Fast responses](quick-answers.md) rule provide a high level of
 
 To show a captcha to Tolokers, set {% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} in the [pool](../../glossary.md#pool-ru) settings.
 
-In Toloka, a captcha is normally shown once every 10 assignments. This is usually enough. If responses are given quickly and captchas get in the way, they can be shown every 20 assignments.
+In Toloka, a captcha is normally shown once every 10 assignments. If responses are given quickly and captchas get in the way, they can be shown every 20 assignments.
 
 ## When to use {#when-use}
 
@@ -15,7 +15,7 @@ Restrict access to tasks for Tolokers who fail to enter captcha several times in
 - There aren't very many tasks in the pools. For example, if the task is a survey on a single page, a captcha won't help you control the quality, since the minimum frequency of captcha display is every 10 assignments.
 - It's difficult or impossible to automate user actions: selecting areas, performing field tasks or any tasks where Tolokers need to attach files or write meaningful texts.
 
-## Rule settings {#rule}
+## How to configure {#rule}
 
 {% note warning %}
 
@@ -30,9 +30,9 @@ Field
 Overview
 
 ----- | -----
-{% if locale == "en-com" %}**Recent values to use**{% endif %} | The number of times the Toloker was shown a captcha recently.<br/><br/>If this field is not filled in, the calculation includes only captcha entries from the pool to which the rule is applied.<br/><br/>If the field is filled in, the corresponding number of captcha entries is used. The rule takes into account captcha entries from both this pool and other pools where this field is filled in.<br/><br/>[Learn more](remember-values.md) about how this field works.
+{% if locale == "en-com" %}**Recent captchas to use**{% endif %} | The number of times the Toloker was shown a captcha recently.<br/><br/>If this field is not filled in, the calculation includes only captcha entries from the pool to which the rule is applied.<br/><br/>If the field is filled in, the corresponding number of captcha entries is used. The rule takes into account captcha entries from both this pool and other pools where this field is filled in.<br/><br/>[Learn more](remember-values.md) about how this field works.
 {% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:<br/>- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of entered captchas (less than or equal to the number in the {% if locale == "en-com" %}**Recent values to use**{% endif %} field).<br/>    <br/>- {% if locale == "en-com" %}**correct responses (%)**{% endif %} — The percentage of correct responses (from 0 to 100).<br/>    <br/>- {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses (from 0 to 100).<br/><br/>To add multiple conditions, click ![](../_images/add.svg).
-{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correctly entered captchas in tasks as a [skill](nav.md) value.<br/>    <br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.<br/>    <br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
+{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.<br/>    <br/>- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correctly entered captchas in tasks as a [skill](nav.md) value.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**accept all assignments from this performer in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.<br/>    <br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
 
 
 ## Rule example {#examples}
@@ -106,8 +106,8 @@ Show a captcha after every 20 assignments.
 #### Average/High
 Show a captcha after every 10 assignments.
 
-#### I found the following terms related to captcha in Help: <q>Percentage of correct responses</q> and <q>Percentage of incorrect responses</q>. Are they determined from the control sample?
+#### I found the following terms related to captcha in Help: "Percentage of correct responses" and "Percentage of incorrect responses". Are they determined from the control sample?
 
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the <q>range</q> specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
+The percentage of correct responses is based on the total number of captchas processed by the Toloker within the "range" specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

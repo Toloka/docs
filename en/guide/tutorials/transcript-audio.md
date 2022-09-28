@@ -13,10 +13,10 @@ You may need additional projects for your task, such as dataset pre-check or che
 
 ## Prerequisites {#prerequisites}
 
-Before you begin make sure that:
+Before you begin:
 
-- You are [registered](../concepts/access.md) in Toloka as a requester.
-- You have [topped up](../concepts/refill.md) your Toloka account. If you are unsure about the budget, you can do that later in this tutorial. Toloka will display the budget estimate for your project.
+- Make sure you are [registered](../concepts/access.md) in Toloka as a requester.
+- [Top up](../concepts/refill.md) your Toloka account. If you are unsure about the budget, you can do that later in this tutorial. Toloka will display the budget estimate for your project.
 
 ## Choose a preset {#preset}
 
@@ -78,7 +78,7 @@ Before you begin make sure that:
 1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-    1. Uncheck {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
+    1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
     - For example, add the {% if locale == "en-com" %}**Languages**{% endif %} filter:
@@ -108,14 +108,14 @@ Before you begin make sure that:
     #### The additional quality control rules
 
     1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}, and add the second {% if locale == "en-com" %}**Fast responses**{% endif %} rule. It will help detect Tolokers who retype texts carelessly, make mistakes, skip words, or don't take the task seriously enough.
-    In this case, the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} value depends on the length of recordings and their number per task page, as well as on how difficult the task is (it's hard to hear, it contains jargon, it has special rules for transcribing, and so on). Ban Tolokers after three fast responses.
+    In this case, the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} value depends on the length of recordings and their number per task suite, as well as on how difficult the task is (it's hard to hear, it contains jargon, it has special rules for transcribing, and so on). Ban Tolokers after three fast responses.
 
     This means that a user who gives a minimum of 3 responses in less than 30 seconds will be banned for 5 days and won't be able to complete your tasks.
 
     1. Add the {% if locale == "en-com" %}**Results of assignment review**{% endif %} quality control rule and enter the following values:
     This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
-    1. Add the [Processing rejected and accepted assignments](../concepts/reassessment-after-accepting.md) rule. When the overlap value is {% if locale == "en-com" %}**1**{% endif %}, you should resend assignments to the pool for other Tolokers to redo them.
+    1. Add the [Processing rejected and accepted assignments](../concepts/reassessment-after-accepting.md) rule:
     This means that if you reject assignments during the review, they'll be sent for re-completion, but to another Toloker.
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
@@ -127,8 +127,6 @@ Before you begin make sure that:
     1. {% include [toloka-requester-source-overlap-settings](../_includes/toloka-requester-source/id-toloka-requester-source/overlap-settings.md) %}
 
     For the speech transcription, overlap is 1, as a rule. This means that each task will have 1 response.
-
-    1. At the bottom of the {% if locale == "en-com" %}**Price**{% endif %} section, you see {% if locale == "en-com" %}**Price per 1 task**{% endif %}. This is the amount of money paid per task.
 
 1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify the {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
 

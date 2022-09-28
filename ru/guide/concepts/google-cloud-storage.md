@@ -90,22 +90,22 @@
 
     {% if locale == "ru-ru" %}
     ```
-    https://storage.googleapis.com/<бакет>/<имя файла>
+    https://storage.googleapis.com/<бакет>/<имя-файла>
     ```
     {% endif %}{% if locale == "en-com" %}
     ```
-    https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
+    https://storage.googleapis.com/<bucket>/<file-name>
     ```
     {% endif %}
     {% include [get-files-link-from-folder](../_includes/concepts/amazon-cloud-storage/id-get-files/link-from-folder.md) %}
 
     {% if locale == "ru-ru" %}
     ```
-    https://storage.googleapis.com/<бакет>/<путь к файлу>/<имя файла>
+    https://storage.googleapis.com/<бакет>/<путь-к-файлу>/<имя-файла>
     ```
     {% endif %}{% if locale == "en-com" %}
     ```
-    https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
+    https://storage.googleapis.com/<bucket>/<file-path>/<file-name>
     ```
     {% endif %}
     {% include [get-files-files-links-create](../_includes/concepts/amazon-cloud-storage/id-get-files/files-links-create.md) %}
@@ -119,6 +119,5 @@
     https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
     https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
     ```
-
 
 {% include [contact-support](../_includes/contact-support-new.md) %}

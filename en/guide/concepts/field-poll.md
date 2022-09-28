@@ -164,19 +164,13 @@ A pool is a set of paid tasks sent out for completion at the same time.
 1. Save the pool.
 
 ## Upload tasks {#tasks_upload}
+ {% if locale == "en-com" %}
+Download the sample upload file on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file with tasks](../../glossary.md#tsv-file-definition-ru).
+{% endif %}
 
-1. Click **Upload**. In the window that opens, you can also download a sample TSV file by clicking **Sample file for uploading tasks**.
+1. Click **Upload**. In the window that opens, you can also download a sample file.
 
-    #### What is TSV?
-    A TSV file presents a table as a text file in which columns are separated by tabs.
-    You can work with it both in a table editor and a text editor, and then save it to the desired format. [More about working with a TSV file](pool_csv.md). There is a CSV format that is similar to TSV, but you should use a TSV file for uploading.
-    {% note info %}
-
-    Before uploading the file, make sure it is saved in UTF-8 encoding.
-
-    {% endnote %}
-
-1. Add input data in it. The header of the input data column contains the word `INPUT`. For field tasks, you also need to specify the latitude `AI:latitude` and longitude `AI:longitude` of the point. You can use a service like [Yandex.Maps]({{ ya-maps-object-search }}) to get the coordinates![](../_images/field-poll/field-poll-table-result.png)
+1. Add input data in it. The header of the input data column contains the word `INPUT`. For field tasks, you also need to specify the latitude `AI:latitude` and longitude `AI:longitude` of the point. You can use a service like [Yandex Maps]({{ ya-maps-object-search }}) to get the coordinates![](../_images/field-poll/field-poll-table-result.png)
 1. Upload the tasks by choosing **Set manually** and set 1 task per suite.
 
 ## Start the pool and get the results {#launch}

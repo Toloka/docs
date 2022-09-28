@@ -11,7 +11,7 @@ Don't use this rule in [pools](../../glossary.md#pool-ru) with [dynamic overlap]
 
 ## When to use {#when-use}
 
-If you want to get <q>high-quality</q> Tolokers' responses to each task in the given overlap and you don't mind paying more for this.
+If you want to get "high-quality" Tolokers' responses to each task in the given overlap and you don't mind paying more for this.
 
 {% note warning %}
 
@@ -86,7 +86,7 @@ If the Toloker no longer meets the requirements of the skill filter and their re
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from <q>3</q> to <q>5</q> is enough. If the tasks are simple, overlap of <q>3</q> is likely to be enough. For tasks that are reviewed, set overlap to <q>1</q>.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from "3" to "5" is enough. If the tasks are simple, overlap of "3" is likely to be enough. For tasks that are reviewed, set overlap to "1".
 
 #### Can I change overlap after the pool is started?
 
@@ -113,7 +113,7 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
 
-#### What output format do I use for the review results to filter out mismatching users based on the <q>Majority vote</q>?
+#### What output format do I use for the review results to filter out mismatching users based on the "Majority vote"?
 
 To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](mvote.md) to the pool.
 

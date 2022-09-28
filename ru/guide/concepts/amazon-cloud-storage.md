@@ -2,7 +2,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}Если вы хотите разместить небольшое количество картинок, вы можете воспользоваться любым фотохостингом, например: [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}) или [imgur]({{ imgur }}). {% endif %}{% if locale == "ru-ru" %}Если вы хотите разместить небольшое количество картинок, вы можете воспользоваться любым фотохостингом, например: [wampi]({{ wampi }}), [imgbb]({{ imgbb }}) или [ImageShack]({{ imageshack }}). {% endif %} Так вы сможете быстро получить прямые ссылки на ваши картинки, которые можно добавить в файл с заданиями или в инструкцию.
+{% if locale == "en-com" %}Если вы хотите разместить небольшое количество картинок, вы можете воспользоваться любым фотохостингом, например: [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}) или [imgur]({{ imgur }}). {% elsif locale == "ru-ru" %}Если вы хотите разместить небольшое количество картинок, вы можете воспользоваться любым фотохостингом, например: [imgbb]({{ imgbb }}) или [ImageShack]({{ imageshack }}). {% endif %} Так вы сможете быстро получить прямые ссылки на ваши картинки, которые можно добавить в файл с заданиями или в инструкцию.
 
 {% endnote %}
 
@@ -102,7 +102,7 @@
     ```
     https://<имя-бакета>.s3.<код-региона>.amazonaws.com/<имя-файла>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
     ```
@@ -112,7 +112,7 @@
     ```
     https://<имя-бакета>.s3.<код-региона>.amazonaws.com/<путь-к-файлу>/<имя-файла>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
     ```

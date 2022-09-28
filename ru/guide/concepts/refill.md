@@ -1,4 +1,4 @@
-#  {% if locale == "en-com" %}Пополнение счета{% endif %}{% if locale == "ru-ru" %}Для нерезидентов России{% endif %}
+#  {% if locale == "en-com" %}Пополнение счета{% endif %} {% if locale == "ru-ru" %}Для нерезидентов России{% endif %}
  {% if locale == "ru-ru" %}
 Нерезиденты России могут пополнять счет в Толоке в долларах США. Минимальная сумма пополнения — 1 доллар.
 {% endif %}
@@ -209,7 +209,7 @@
 
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Подключиться**{% endif %}{% if locale == "en-com" %}**Connect**{% endif %}.
 
-1. Введите сумму перевода. {% if locale == "ru-ru" %}Минимальная сумма пополнения — 1 доллар.{% endif %}
+1. Введите сумму перевода.
     Максимальная сумма пополнения с банковской карты — 3500 долларов.
 
 1. Выберите способ оплаты: {% if locale == "ru-ru" %}**Банковской картой**{% endif %}{% if locale == "en-com" %}**Bank card**{% endif %} или {% if locale == "ru-ru" %}**Банковский перевод или Paypal**{% endif %}{% if locale == "en-com" %}**Bank transfer or Paypal**{% endif %}.
@@ -283,6 +283,6 @@
 
 [Вернуть средства, перечисленные на счет в Толоку](../troubleshooting/support.md#feedback_khw_wc3_qjb)
 
-
 Если деньги не поступили на счет в течение указанного срока:
+
 {% include [contact-support](../_includes/contact-support-help.md) %}

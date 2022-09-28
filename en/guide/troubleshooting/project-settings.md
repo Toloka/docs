@@ -89,7 +89,7 @@ If you want to pass different label values in different tasks or the number of c
 
 You can hide text in an expandable section by using CSS styles, both in the task itself and in the instructions. You can see the sample code [here]({{ text-under-the-cut }}).
 
-#### How do I pass the value of the input variable to the <q>Button with click validation</q>?
+#### How do I pass the value of the input variable to the "Button with click validation"?
 
 Specify the name of the input field where you pass the link, without the brackets:{% if locale == "en-com" %}
 ```
@@ -114,17 +114,17 @@ The names of the output fields must differ: each checkbox must have its own uniq
 
 #### How do I add assignment validation depending on a checkbox, so that if an object is in the image, it must be selected, otherwise, a checkbox must be selected?
 
-You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the <q>Search for information online</q> template.
+You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the "Search for information online" template.
 
 #### How do I insert a calendar?
 
 You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
 
 To add libraries:
-1. Click the <q>gear button</q> in project editing mode.
+1. Click the "gear button" in project editing mode.
 1. In the field that opens on the left, enter the links and press **Enter**.
 
-#### Why doesn't the <q>Submit</q> button work in the task?
+#### Why doesn't the "Submit" button work in the task?
 
 The issue is probably in the JS block. Try deleting its content, then test the **Submit** button in the preview mode.
 
@@ -142,7 +142,7 @@ You can't deselect a radio button. You can only select another radio button as a
 
 #### How do I, depending on the option selected, show a photo and make it mandatory or hide it and make it optional?
 
-In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the <q>Text classification</q> template.
+In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the "Text classification" template.
 
 #### How do I prevent adding photos from the gallery so that when the Toloker clicks the add photo button the camera opens, rather than the gallery/camera choice?
 
@@ -173,9 +173,9 @@ Learn more about the template's JS extension [here](../concepts/spec-advanced.md
 
 To avoid conflict between the Vue markup and the Handlebars syntax, disable the "toloka-handlebars-templates" library and inherit from the Task/TaskSuite classes.
 
-#### In the <q>Side-by-side image comparison</q> template, where do I specify a proxy for the task interface to create a task with three image options?
+#### In the "Side-by-side image comparison" template, where do I specify a proxy for the task interface to create a task with three image options?
 
-The <q>Side-by-side image comparison</q> template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](../concepts/t-components/img.md): `{{img src=(proxy image)}}`.
+The "Side-by-side image comparison" template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](../concepts/t-components/img.md): `{{img src=(proxy image)}}`.
 
 #### How do I change the task background from the standard white color to a different color?
 
@@ -203,7 +203,7 @@ You can also add a regular expression to the `input` field with the **string** t
 
 #### How do I add assignment validation depending on a checkbox?
 
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the <q>Search for information online</q> template.
+You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the "Search for information online" template.
 
 #### How do I enter a list of words line-by-line, display an element for each of them, and save the result to the output array?
 
@@ -253,7 +253,7 @@ For more information about using the component, see the [Requester's guide](../c
 #### Can I use my own JS to build an interface in Toloka?
 
 You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
-- Click the <q>gear button</q> to open the settings.
+- Click the "gear button" to open the settings.
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
 See the [Requester's guide](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
 
@@ -290,22 +290,8 @@ There are four options:
     Mention this in your instructions for reviewers.
 
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
-- Add the <q>No object</q> checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
+- Add the "No object" checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
     For control purposes, add information about the value of this checkbox to the task interface.
-
-#### How do I make a voice recording of a text in a single audio file, but use about 1000 people to record it?
-
-You need to break down your task for Toloka. If you have a 30-minute task intended for one person and containing all the phrases, the best approach is to divide it into individual phrases, which you can give to different Tolokers. The template for voice recording tasks doesn't require that the Toloker installs a separate voice recorder app.
-
-Refer to our step-by-step guide for creating a [voice recording task](../concepts/record-audio.md).
-
-In the input data, you can pass the phrase for the Toloker to record ("enable navigation"), and the speech speed (normal speed). This is the data you need to save in the file. See the [Guide](../concepts/pool_csv.md) to learn about creating a file and its structure.
-
-The preview contains 4 tasks per suite by default. You can specify the number of tasks for your project when you upload the task file. [Learn more about the preview](../concepts/spec.md).
-
-For example, if you want one person to say the same phrase 10 times, create 10 tasks in a suite. The cost is specified per task suite. To define how many people should say a particular phrase, use the overlap in the pool. By the way, don't forget to set up filters in your pool. This way you can select only the Tolokers who speak a certain language and use mobile devices: client = mobile Toloka.
-
-You can delegate review of the voice recordings to other Tolokers by creating a separate project. Find brief instructions on how to do this [here](../concepts/record-audio.md).
 
 [Other questions](support.md#help)
 
@@ -318,7 +304,7 @@ You can find an example of the task template for selecting image groups at this 
 
 #### How do I add a mask for the input field, like dd.mm.yyyy for the date field or numbers only (10 or 12) for INN (Taxpayer Identification Number)?
 
-To validate the input data format, you can use the output field type, specifying the acceptable or minimum/maximum values. For example, create an output field for the taxpayer number with the <q>string</q> type and enter its minimum and maximum length (like 10 and 12). To use a more sophisticated validation in the template, use RegExp.
+To validate the input data format, you can use the output field type, specifying the acceptable or minimum/maximum values. For example, create an output field for the taxpayer number with the "string" type and enter its minimum and maximum length (like 10 and 12). To use a more sophisticated validation in the template, use RegExp.
 
 To enter a date, you can add a calendar to the task interface. See an [example of a calendar]({{ how-to-insert-a-calendar }}).
 

@@ -60,7 +60,7 @@ If you have images with selected objects and you want to upload them to the task
     - The `polygon` field with the **json** type to pass the coordinates of the selected area.
 
 1. Add the `result` field with the **json** type in the output data. A field for recording results is required for this component. If the Toloker edits the selected area, the updated coordinates are recorded there.
-1. [Escape](../pool_csv.md#json) JSON with point coordinates and add it to the [TSV file](../../../glossary.md#tsv-file-definition-ru) with tasks.
+1. [Escape](../pool_csv.md#json) JSON with point coordinates and add it to the [file with tasks](../../../glossary.md#tsv-file-definition-ru).
 
 #### Parameters
 

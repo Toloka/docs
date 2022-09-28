@@ -34,7 +34,7 @@ There are two versions of Toloka. You need to register separately in each of the
 
 ## Troubleshooting {#troubleshooting}
 
-#### I can't complete registration as an <q>individual requester</q>. I'm not getting an SMS code.
+#### I can't complete registration as an "individual requester". I'm not getting an SMS code.
 
 1. Check the number you entered. You might have mistyped it.
 1. Check the number in Yandex ID. It must be set as your main number. If a different number is specified in Yandex ID, an SMS code will be sent to that number.
@@ -63,9 +63,9 @@ If you don't have access to the old number, it takes a month to replace it. For 
 
 {% endnote %}
 
-#### How do I change my account type from <q>Requester</q> to <q>Toloker</q>?
+#### How do I change my account type from "Requester" to "Toloker"?
 
-You can't change the account type from <q>Requester</q> to <q>Toloker</q>.
+You can't change the account type from "Requester" to "Toloker".
 
 If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
 

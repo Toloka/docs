@@ -67,7 +67,7 @@ The settings for [quality control](../../glossary.md#quality-control-ru) rules d
 
 - If the Toloker has to choose between options (for example, by selecting checkboxes), check the answers using [majority vote](mvote.md) or [control tasks](goldenset.md).
 
-- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, <q>Is this phrase translated correctly?</q>) and possible responses (for example, <q>yes</q>/<q>no</q>). Set up [overlap](dynamic-overlap.md) and [majority vote](mvote.md) check.
+- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, "Is this phrase translated correctly?") and possible responses (for example, "yes"/"no"). Set up [overlap](dynamic-overlap.md) and [majority vote](mvote.md) check.
 
 - If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote-ru) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task-ru) with artificial examples where the choice is evident.
 
@@ -103,7 +103,7 @@ Yes, if they can access both pools, they can do both of them. To restrict access
 
 #### Have I understood correctly that if I use `set the the skill value = 1` with the `percentage of accepted responses >= 75` and `10 recent values to use`, for every 8 correctly completed tasks out of 10 the Toloker is given 1 skill point?
 
-No, this is incorrect. With these settings, each time a rule condition is met, the Toloker gets `skill = 1`. To change the skill value in the process of task review, you need a <q>multi-step</q> rule, which has multiple identical rules with different values of **Total reviewed responses**.
+No, this is incorrect. With these settings, each time a rule condition is met, the Toloker gets `skill = 1`. To change the skill value in the process of task review, you need a "multi-step" rule, which has multiple identical rules with different values of **Total reviewed responses**.
 
 #### Is the time specified per task suite in the fast response settings?
 
@@ -277,9 +277,9 @@ Show a captcha after every 20 assignments.
 #### Average/High
 Show a captcha after every 10 assignments.
 
-#### I found the following terms related to captcha in Help: <q>Percentage of correct responses</q> and <q>Percentage of incorrect responses</q>. Are they determined from the control sample?
+#### I found the following terms related to captcha in Help: "Percentage of correct responses" and "Percentage of incorrect responses". Are they determined from the control sample?
 
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the <q>range</q> specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
+The percentage of correct responses is based on the total number of captchas processed by the Toloker within the "range" specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
 
 #### Majority vote
 
@@ -287,11 +287,11 @@ The percentage of correct responses is based on the total number of captchas pro
 
 Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
 
-#### My task uses a form with multiple fields. When there is an overlap and <q>Majority vote</q> is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?
+#### My task uses a form with multiple fields. When there is an overlap and "Majority vote" is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?
 
 All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
 
-#### What output format do I use for the review results to filter out mismatching users based on the <q>Majority vote</q>?
+#### What output format do I use for the review results to filter out mismatching users based on the "Majority vote"?
 
 To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](mvote.md) to the pool.
 

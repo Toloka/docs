@@ -1,9 +1,20 @@
 # Как загрузить задания
- {% if locale == "ru-ru" %}{% endif %}
+
 Чтобы загрузить [файл с заданиями](../../glossary.md#tsv-file-definition-ru) в [пул](pool-main.md):
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить данные**{% endif %}{% if locale == "en-com" %}**Upload data**{% endif %}.
 
 1. Скачайте шаблон и добавьте свои данные.
+
+    #### Использовать пример данных
+    Если вы хотите посмотреть, как ваш проект будет выглядеть после запуска, но у вас еще нет заданий для разметки, вы можете загрузить в пул готовый пример данных. Примеры данных доступны для шаблонов:
+    - {% if locale == "ru-ru" %}**Классификация изображений**{% endif %}{% if locale == "en-com" %}**Image classification**{% endif %}
+    - {% if locale == "ru-ru" %}**Релевантность поиска товаров**{% endif %}{% if locale == "en-com" %}**Product search relevance**{% endif %}
+    - {% if locale == "ru-ru" %}**Распознавание объектов и выделение областей**{% endif %}{% if locale == "en-com" %}**Object recognition & detection**{% endif %}
+    - {% if locale == "ru-ru" %}**Кликбейт или нет?**{% endif %}{% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+
+    Нажмите {% if locale == "ru-ru" %}**Использовать пример данных**{% endif %}{% if locale == "en-com" %}**Use sample data**{% endif %} справа от надписи {% if locale == "ru-ru" %}**Прикрепите подготовленный файл с данными**{% endif %}{% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. Это позволит избежать дополнительных действий с файлами.
+
+    После того, как вы поработали с примером данных и вас все устроило, подготовьте свои данные и загрузите их в пул.
 
 1. Прикрепите файл с заданиями.
 
@@ -55,7 +66,7 @@
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **Не указано значение обязательного поля входных данных.** | Проверьте, что заполнены все столбцы с обязательными полями входных данных.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Данные в поле с типом <q>ссылка</q> (<q>url</q>) некорректны.** | Проверьте, что:<br/>- Все ссылки начинаются с префикса `http://`, `https://` или `www`.<br/>- {% if locale == "ru-ru" %}<br/>- При [загрузке файла с Яндекс Диска](prepare-data.md) по относительной ссылке, указан тип данных **строка** для [поля входных данных](incoming.md).<br/>- {% endif %}
+**Данные в поле с типом «ссылка» («url») некорректны.** | Проверьте, что:<br/>- Все ссылки начинаются с префикса `http://`, `https://` или `www`.<br/>- {% if locale == "ru-ru" %}<br/>- При [загрузке файла с Яндекс Диска](prepare-data.md) по относительной ссылке, указан тип данных **строка** для [поля входных данных](incoming.md).<br/>- {% endif %}
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **В строке стоит непарная кавычка.** | Проверьте, что все кавычки [экранированы](pool_csv.md#string).
 

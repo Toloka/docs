@@ -8,10 +8,10 @@ Tolokers look at the image and select the objects that you need to detect. After
 
 ## Prerequisites {#prerequisites}
 
-Before you begin make sure that:
+Before you begin:
 
-- You are [registered](../concepts/access.md) in Toloka as a requester.
-- You have [topped up](../concepts/refill.md) your Toloka account. If you are unsure about the budget, you can do that later in this tutorial. Toloka will display the budget estimate for your project.
+- Make sure you are [registered](../concepts/access.md) in Toloka as a requester.
+- [Top up](../concepts/refill.md) your Toloka account. If you are unsure about the budget, you can do that later in this tutorial. Toloka will display the budget estimate for your project.
 
 ## Choose a preset {#preset}
 
@@ -74,7 +74,7 @@ Before you begin make sure that:
 1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-    1. Uncheck {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
+    1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
     For example, add the {% if locale == "en-com" %}**Languages**{% endif %} filter:
@@ -89,7 +89,7 @@ Before you begin make sure that:
 
     The non-automatic acceptance option allows you to review completed assignments before accepting them and paying for them. If the Toloker didn't follow the instructions, you can reject the assignment.
 
-    1. Keep the pre-configured {% if locale == "en-com" %}**Fast responses**{% endif %} rule as is. This rule filters out Tolokers who complete tasks too fast. The default settings mean that Tolokers are banned from the project for 1 day if they respond to 4 out of 5 tasks in less than 15 seconds.
+    1. Keep the pre-configured {% if locale == "en-com" %}**Fast responses**{% endif %} rule as is. This rule filters out Tolokers who complete tasks too fast. The default settings mean that Tolokers are banned from the project for 1 day if they complete tasks in 4 out of 5 task suites in less than 15 seconds.
     1. Delete the pre-configured {% if locale == "en-com" %}**Majority vote**{% endif %} rule.
     1. Click {% if locale == "en-com" %}{% endif %}, and enter the following values:
     This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
@@ -104,8 +104,6 @@ Before you begin make sure that:
     1. {% include [toloka-requester-source-overlap-settings](../_includes/toloka-requester-source/id-toloka-requester-source/overlap-settings.md) %}
 
     For image area selection tasks, it is usually 1. This means that each task will have 1 response.
-
-    1. At the bottom of the {% if locale == "en-com" %}**Price**{% endif %} section, you see {% if locale == "en-com" %}**Price per 1 task**{% endif %}. This is the amount of money paid per task.
 
 1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 

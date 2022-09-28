@@ -1,6 +1,6 @@
 # Photos of organizations
 
-Walking surveys (field tasks) are completed in the Toloka mobile apps for [Android]({{ android-app }}) and [iOS]({{ ios-app }}). They get a task with a point on the map where they need to come and take a photo (or, for example, [check for anything](walk.md)).
+Walking surveys (field tasks) are completed in the Toloka mobile apps for [Android]({{ android-app }}) and [iOS]({{ ios-app }}). They get a task with a point on the map where they need to come and take a photo (or, for example, [check for anything](../tutorials/walk.md)).
 
 You may need additional settings for your project, like to add a new button with a particular scenario or a section for attaching files. Learn more in [Customization examples](advanced-features.md).
 
@@ -99,7 +99,7 @@ In the project, you define what the task will look like for the Toloker.
     - **CSS** and **JS** are used to describe the task logic. Also, the main content of this task is embedded in Java Script for ease of editing.
     - In this project, in a variable `texts` texts are stored for the block with information and two text variants for task completion (in case the Toloker found or didn't find home).
     - The `MAX_DISTANCE` variable specifies the maximum distance from a designated point, where the toloker can move during the task completion, in kilometers. Specify the appropriate value.
-    - In this template, at least four photos of the building is required. If you want to change this, enter any other number instead <q> 4</q>:
+    - In this template, at least four photos of the building is required. If you want to change this, enter any other number instead " 4":
     - `if (solution.output_values.imgs_facade.length < 4)`
 
     {% note info %}
@@ -145,17 +145,10 @@ A pool is a set of paid tasks sent out for completion at the same time.
 1. Save the pool.
 
 ## Upload tasks {#tasks_upload}
-
-1. Click **Upload**. In the window that opens, you can also download a sample TSV file by clicking **Sample file for uploading tasks**.
-
-    #### What is TSV?
-    A TSV file presents a table as a text file in which columns are separated by tabs.
-    You can work with it both in a table editor and a text editor, and then save it to the desired format. [More about working with a TSV file](pool_csv.md). There is a CSV format that is similar to TSV, but you should use a TSV file for uploading.
-    {% note info %}
-
-    Before uploading the file, make sure it is saved in UTF-8 encoding.
-
-    {% endnote %}
+ {% if locale == "en-com" %}
+Download the sample upload file on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file with tasks](../../glossary.md#tsv-file-definition-ru).
+{% endif %}
+1. Click **Upload**. In the window that opens, you can also download a sample file.
 
 1. Add input data in it. The header of the input data column contains the word `INPUT`. For field tasks, you also need to specify the latitude `AI:latitude` and longitude `AI:longitude` of the point. You can use a service like [Yandex.Maps]({{ ya-maps-object-search }}) to get the coordinates.
 1. Upload the tasks by choosing **Set manually** and set 1 task per suite.
@@ -172,6 +165,5 @@ A pool is a set of paid tasks sent out for completion at the same time.
     After the specified time period, all responses are automatically accepted, regardless of their quality.
 
     {% endnote %}
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

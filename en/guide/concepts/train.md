@@ -52,7 +52,7 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
     #### What should be a good hint?
 
-    Avoid wordings like: <q>You answered incorrectly, please provide the correct response</q>. The Toloker learns when the hint explains the essence of their mistake.
+    Avoid wordings like: "You answered incorrectly, please provide the correct response". The Toloker learns when the hint explains the essence of their mistake.
 
     Make the hints clear. Explain which response should be chosen and why.
 
@@ -73,7 +73,7 @@ Field
 {% if locale == "en-com" %}**Adult content**{% endif %} | Whether the training tasks have porn content.
 {% if locale == "en-com" %}**Time on task**{% endif %} | The time allowed for completing a [task suite](../../glossary.md#task-page-ru), in seconds.
 {% if locale == "en-com" %}**Retry after**{% endif %} | The number of days after which the Toloker can access the training again. If not specified, [training skill](../../glossary.md#train-skill-ru) is issued for an indefinite time, and the value is fixed.<br/>[Learn more about how it works](train.md).
-{% if locale == "en-com" %}** Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [TSV file](../../glossary.md#tsv-file-definition-ru).
+{% if locale == "en-com" %}**Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [file with tasks](../../glossary.md#tsv-file-definition-ru).
 {% if locale == "en-com" %}**Shuffle on page**{% endif %} | If this option is enabled, tasks on the page are shown to the Toloker in random order.
 {% if locale == "en-com" %}**Complete passing**{% endif %} | If this option is enabled, the Toloker must complete all the tasks in this pool to pass the training.<br/>You can load more training tasks than required for passing the training and specify the number of pages required for setting the skill and accessing the linked pools.
 {% if locale == "en-com" %}**Required for passing**{% endif %} | The number of assignments the Toloker must complete to pass the training.
@@ -139,7 +139,7 @@ Tolokers will get access only to those pools for which their skill value is high
 
 ## How to archive a training pool {#archive-train}
 
-A pool with the {% if locale == "en-com" %}<q>Archived</q>{% endif %} status can't be started or edited.
+A pool with the {% if locale == "en-com" %}"Archived"{% endif %} status can't be started or edited.
 
 By default, archived training pools are not visible in the list of project trainings. To view them:
 1. Open the project page.
@@ -245,7 +245,7 @@ Yes, it is.
 
 Training is designed to select Tolokers for the general task. That's why training must be linked to the main pool and become inactive as soon as the main pool closes.
 
-The Toloker is trained to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, <q>optional</q> training can be based on a main pool that includes some training tasks.
+The Toloker is trained to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, "optional" training can be based on a main pool that includes some training tasks.
 
 To show the training separately from other pools, disable **Use project description** and use this field to specify that this is an optional set of training tasks. In the pool settings, select the **Training** type.
 
@@ -300,7 +300,7 @@ You can create a retry pool similarly to an exam pool. In the pool settings, sel
 
 For example, if the main pool admits users with a skill of 70 or higher, then you can route the people with a skill between 40 and 69 to the retry pool.
 
-To get a valid <q>range</q>, enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
+To get a valid "range", enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
 We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10-20 tasks is enough, depending on complexity.
 #### How do I create an exam with a preset number of correct responses?
 
@@ -317,6 +317,5 @@ If your task uses assignment review (non-automatic acceptance), to set up such a
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
 Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

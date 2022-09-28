@@ -4,14 +4,14 @@ The standard templates contain links to examples of photos that the Toloker need
 
 The easiest way to do this is to use the standard Toloka component described in the [Image](t-components/img.md) section.
 
-#### See what it looks like in the example of the <q>Photos of product and price tag</q> template
+#### See what it looks like in the example of the "Photos of product and price tag" template
 
 Before:
 ![](../_images/tutorials/advanced-features/af-show-pic-1.png)
 After:
 ![](../_images/tutorials/advanced-features/af-show-pic-2.png)
 
-For your convenience, here is ready-made code for the <q>Photos of product and price tag</q> template with an image added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word <q>customization</q>.
+For your convenience, here is ready-made code for the "Photos of product and price tag" template with an image added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word "customization".
 
 #### Ready-made code
 
@@ -886,9 +886,9 @@ For your convenience, here is ready-made code for the <q>Photos of product and p
     </div>
     ```
     {% endif %}
-1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the <q>Photos of product and price tag</q> template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the "Photos of product and price tag" template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
-    Each button has a name for accessing its properties. For example, the buttons in the <q>Photos of product and price tag</q> template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
+    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
 
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 

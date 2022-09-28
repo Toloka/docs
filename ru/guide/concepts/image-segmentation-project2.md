@@ -151,7 +151,7 @@
     1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
 
     1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**задание становится отклоненным**{% endif %}{% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, то {% if locale == "ru-ru" %}**увеличить перекрытие**{% endif %}{% if locale == "en-com" %}**extend overlap by**{% endif %} на **1**. А также включите опцию {% if locale == "ru-ru" %}**Открыть пул, если закрыт**{% endif %}{% if locale == "en-com" %}**Open pool if closed**{% endif %}.
-    {% if locale == "ru-ru" %}![](../_images/other/rejected-accepted-tasks.png){% endif %}
+
     Это означает, что отклоненное задание будет возвращено в пул и показано еще одному исполнителю.
 
     - {% if locale == "ru-ru" %}**Выполненные задания**{% endif %}{% if locale == "en-com" %}**Submitted responses**{% endif %} — позволяет ограничить количество заданий, которое доступно исполнителю в пуле за сутки.
@@ -161,7 +161,7 @@
     1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Выполненные задания**{% endif %}{% if locale == "en-com" %}**Submitted responses**{% endif %}.
 
     1. Задайте правило для выполненного задания: если {% if locale == "ru-ru" %}**отправленных страниц заданий**{% endif %}{% if locale == "en-com" %}**submitted assignments**{% endif %} **≥ 1**, то {% if locale == "ru-ru" %}**установить значение навыка**{% endif %}{% if locale == "en-com" %}**assign skill value**{% endif %} **Выделение областей** равным **1**.
-    {% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/select-object-tutorial2.png){% endif %}
+
     Такие параметры позволят отметить исполнителя, выполнившего хотя бы одно задание в пуле.
 
     {% note info %}
@@ -179,7 +179,7 @@
     1. В поле {% if locale == "ru-ru" %}**Учитывать последних страниц заданий**{% endif %}{% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `5`.
     1. В поле {% if locale == "ru-ru" %}**Минимальное время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} укажите время в секундах. Например, `20`.
     1. Задайте правило для быстрого ответа: если {% if locale == "ru-ru" %}**количество быстрых ответов**{% endif %}{% if locale == "en-com" %}**number of fast responses**{% endif %}**≥ 1**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Быстрые ответы**.
-    {% if locale == "ru-ru" %}![](../_images/other/fast-answers2.png){% endif %}
+
     Это означает, что если исполнитель выполнит хотя бы одну [страницу заданий](../../glossary.md#task-page-ru) быстрее чем за 20 секунд, он будет заблокирован и не сможет больше выполнять ваши задания 10 дней.
 
     - {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %} — ограничивает доступ к пулу исполнителей, которые часто ошибаются.
@@ -189,7 +189,7 @@
     1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %}.
 
     1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**количество проверенных ответов**{% endif %}{% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** и {% if locale == "ru-ru" %}**процент отклоненных ответов**{% endif %}{% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35** то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**15 дней**{% endif %}{% if locale == "en-com" %}**15 days**{% endif %}.
-    {% if locale == "ru-ru" %}![](../_images/other/offline-accept.png){% endif %}
+
     Это означает, что если 35% и более ответов исполнителя будут отклонены, он будет заблокирован и не сможет больше выполнять ваши задания 15 дней. Правило начинает действовать после проверки 3 ответов исполнителя.
 
     [Контрольные задания](../../glossary.md#control-task-ru) и [мнение большинства](../../glossary.md#majority-vote-ru) не используются для такого типа проектов, так как разметка областей, предоставленная исполнителями, должна совпадать (что практически невозможно). Подробнее о контроле качества читайте в разделе [Контроль качества](control.md).
@@ -260,7 +260,7 @@
 
     1. В блоке {% if locale == "ru-ru" %}**Поля**{% endif %}{% if locale == "en-com" %}**Columns**{% endif %} оставьте включенной только опцию {% if locale == "ru-ru" %}**id ответа**{% endif %}{% if locale == "en-com" %}**assignment ID**{% endif %}.
 
-    1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.{% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png){% endif %}
+    1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.
 
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
 

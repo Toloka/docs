@@ -2,14 +2,14 @@
 
 Add an additional text field if you want the Toloker to enter an open-ended response.
 
-#### See what it looks like in the example of the <q>Photos of product and price tag</q> template
+#### See what it looks like in the example of the "Photos of product and price tag" template
 
 Before:
 ![](../_images/tutorials/advanced-features/af-input-string-1.png)
 After:
 ![](../_images/tutorials/advanced-features/af-input-string-2.png)
 
-For your convenience, here is ready-made code for the <q>Photos of product and price tag</q> template, in which the text field is added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word <q>customization</q>.
+For your convenience, here is ready-made code for the "Photos of product and price tag" template, in which the text field is added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word "customization".
 
 #### Ready-made code
 
@@ -1175,9 +1175,9 @@ The template uses a special component to simplify development. Learn more in [St
     </div>
     ```
     {% endif %}
-1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the <q>Photos of product and price tag</q> template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the "Photos of product and price tag" template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
-    Each button has a name for accessing its properties. For example, the buttons in the <q>Photos of product and price tag</q> template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
+    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
 
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
@@ -1229,7 +1229,7 @@ The template uses a special component to simplify development. Learn more in [St
     {% endif %}
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
-    For example, in the <q>Photos of product and price tag</q> template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
+    For example, in the "Photos of product and price tag" template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
 
     The `review__block` blocks contain a description of each field for this button.
 
@@ -1276,9 +1276,9 @@ The template uses a special component to simplify development. Learn more in [St
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
 
-    Each button has a name for accessing its properties. For example, the buttons in the <q>Photos of product and price tag</q> template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
+    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
-    For example, in the <q>Photos of product and price tag</q> template, the texts for the `btn_ok` button are located in the following code block:
+    For example, in the "Photos of product and price tag" template, the texts for the `btn_ok` button are located in the following code block:
     {% if locale == "en-com" %}
     ```javascript
     var texts = {
@@ -1310,7 +1310,7 @@ The template uses a special component to simplify development. Learn more in [St
 
 1. Add validation.
 
-    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the <q>Photos of product and price tag</q> template, the code looks like this:
+    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the "Photos of product and price tag" template, the code looks like this:
     {% if locale == "en-com" %}
     ```
     else if (solution.output_values.verdict === 'ok') {

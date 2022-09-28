@@ -76,8 +76,11 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition-ru):
     - Training — tasks with correct answers and hints. It is used for training Tolokers to complete a task.
 
 1. Add the tasks data to the template. For a trial pool, 10–100 tasks is enough.
-1. Attach the prepared file with data.Click {% if locale == "en-com" %}**Continue**{% endif %}.
-    Choose how to divide tasks into task suites: **Smart mixing**, **Set manually**. For more information, see [Ways to combine tasks in suites](distribute-tasks-by-pages.md).
+1. Attach the file with the tasks.
+
+    Click {% if locale == "en-com" %}**Continue**{% endif %}.
+
+    Choose a way to put tasks into suites: {% if locale == "en-com" %}**Smart mixing**{% endif %} or {% if locale == "en-com" %}**Set manually**{% endif %}. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
     Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
