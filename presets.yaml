@@ -97,6 +97,7 @@ default:
   phones: https://passport.toloka.ai/profile/phones
   pics-st: https://pics.st/
   postimages: https://postimages.org/
+  price-tag-preset: https://platform.toloka.ai/requester/templates?choosedCard=Dj0L7k2EekLSnykv5PDv
   production-version: https://platform.toloka.ai/requester/
   profile: https://platform.toloka.ai/requester/profile
   project-with-checkboxes: https://codepen.io/Toloka_projects/pen/ErzmaM

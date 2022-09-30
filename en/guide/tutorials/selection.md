@@ -110,11 +110,7 @@ Before you begin:
 
     1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
 
-        {% cut "What is non-automatic acceptance (assignment review)?" %}
-
-        The non-automatic acceptance option allows you to review completed assignments before accepting them and paying for them. If the Toloker didn't follow the instructions, you can reject the assignment.
-
-        {% endcut %}
+        {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
     1. Keep the pre-configured {% if locale == "en-com" %}**Fast responses**{% endif %} rule as is. This rule filters out Tolokers who complete tasks too fast. The default settings mean that Tolokers are banned from the project for 1 day if they complete tasks in 4 out of 5 task suites in less than 15 seconds.
 

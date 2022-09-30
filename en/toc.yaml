@@ -94,7 +94,7 @@ items:
           - name: Collecting offline data
             href: guide/tutorials/walk.md
           - name: Price monitoring
-            href: guide/concepts/price-tag.md
+            href: guide/tutorials/price-tag.md
           - name: Product monitoring
             href: guide/concepts/audit-of-planogram-of-product-placement-in-store.md
           - name: 'Data collection: Organizations'

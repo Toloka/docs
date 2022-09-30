@@ -104,11 +104,7 @@ Before you begin:
 
     1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 21).
 
-        {% cut "What is non-automatic acceptance (assignment review)?" %}
-
-        The non-automatic acceptance option allows you to review completed assignments before accepting them and paying for them. If the Toloker didn't follow the instructions, you can reject the assignment.
-
-        {% endcut %}
+        {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
     1. The {% if locale == "en-com" %}**Voice recording**{% endif %} preset has the pre-configured quality control rules:
 

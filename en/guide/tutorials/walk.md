@@ -48,7 +48,7 @@ Before you begin:
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the  and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
+    1. Copy the code of the [example](https://ya.cc/t/ZFj9dvvG3Zg9Xw) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
 
         <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png" alt="Create a project. Config section" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
@@ -119,11 +119,7 @@ Before you begin:
 1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
     1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
 
-        {% cut "What is non-automatic acceptance (assignment review)?" %}
-
-        The non-automatic acceptance option allows you to review completed assignments before accepting them and paying for them. If the Toloker didn't follow the instructions, you can reject the assignment.
-
-        {% endcut %}
+        {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
     1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of assignment review**{% endif %}, and enter the following values:
 

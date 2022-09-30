@@ -39,7 +39,7 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
     Field tasks are completed in the Toloka mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
 
     - [Collect offline data](../tutorials/walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
-    - [Monitor prices](price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
+    - [Monitor prices](../tutorials/price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
     - [Monitor products](audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
     - [Collect data on businesses](monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
     - [Monitor outdoor objects of interest](monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
@@ -64,7 +64,7 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
     Field tasks are completed in the Toloka mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
 
     - [Collect offline data](../tutorials/walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
-    - [Monitor prices](price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
+    - [Monitor prices](../tutorials/price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
     - [Monitor products](audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
     - [Collect data on businesses](monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
     - [Monitor outdoor objects of interest](monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
