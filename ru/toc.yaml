@@ -328,6 +328,14 @@ items:
                 href: guide/concepts/efficiency-metrics/rejected-tasks.md
               - name: Выполнение заданий
                 href: guide/concepts/efficiency-metrics/submitting-tasks.md
+              - name: Блокировки
+                href: guide/concepts/efficiency-metrics/ban-rate.md
+              - name: Доступные исполнители
+                href: guide/concepts/efficiency-metrics/available-performers.md
+              - name: Сбалансированность контрольных заданий
+                href: guide/concepts/efficiency-metrics/control-tasks-balance.md
+              - name: Качество инструкции
+                href: guide/concepts/efficiency-metrics/instruction-quality.md
   - name: Bespoke-решения
     hidden: true
     items:
