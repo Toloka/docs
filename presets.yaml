@@ -20,6 +20,7 @@ default:
   application-form-partner: https://forms.yandex.ru/surveys/10018179.e2ca2fccf212977fb71828ddecbf3bfa86938292/
   apps-api: https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html
   apps-guide: https://toloka.ai/en/docs/toloka-apps/concepts/
+  audio-classification-preset: https://platform.toloka.ai/requester/templates?choosedCard=1JV9zP0e3eKSxlWVMePn
   audio-transcription-preset: https://platform.toloka.ai/requester/templates?choosedCard=EMeqje9erBrCPq7REDBB
   authorization-phone: https://yandex.com/support/passport/authorization/phone.html
   aws: https://aws.amazon.com/getting-started/hands-on/backup-files-to-amazon-s3/?nc1=h_ls
@@ -37,7 +38,9 @@ default:
   certified-agencies-ru: https://toloka.ai/ru/certified-agencies
   certified-specialists-ru: https://toloka.ai/ru/certified-specialists
   change-phone: https://yandex.com/support/passport/authorization/phone.html#change
+  collect-offline-data-preset: https://platform.toloka.ai/requester/templates?choosedCard=gM8zE48P2WLh7qa9qn4j
   confidential: https://toloka.ai/legal/confidential/
+  content-moderation-preset: https://platform.toloka.ai/requester/templates?choosedCard=0D5z8gk1LjqSEDzMPdYZ
   contestregulation-ru: https://yandex.ru/legal/toloka_partners_contestregulation/
   crowd-kit: https://toloka.ai/en/docs/crowd-kit/
   customeragreement: https://toloka.ai/legal/customeragreement/
@@ -67,6 +70,7 @@ default:
   imgur: https://imgur.com/
   instr-in-form-of-side-window: https://codepen.io/Toloka_projects/pen/YONRWq
   integration: https://platform.toloka.ai/requester/profile/integration
+  internet-search-preset: https://platform.toloka.ai/requester/templates?choosedCard=axZaOYyyyQ1F0RZkJ0Zy
   invoices: https://balance.yandex.ru/persons.xml?LANG=en
   ios-app: https://apps.apple.com/us/app/yandex-toloka/id1282350367
   iso-lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
@@ -91,6 +95,8 @@ default:
   persons: https://balance.yandex.ru/invoices.xml?LANG=en
   phone-problems__no-code: https://yandex.com/support/passport/troubleshooting/phone-problems.html#phone-problems__no-code
   phones: https://passport.toloka.ai/profile/phones
+  pics-st: https://pics.st/
+  postimages: https://postimages.org/
   production-version: https://platform.toloka.ai/requester/
   profile: https://platform.toloka.ai/requester/profile
   project-with-checkboxes: https://codepen.io/Toloka_projects/pen/ErzmaM
@@ -143,6 +149,8 @@ default:
   skills: https://platform.toloka.ai/requester/quality
   statistical-significance: https://en.wikipedia.org/wiki/Statistical_significance
   support-balance-ru: https://yandex.ru/support/balance/index.html
+  survey-other-preset: https://platform.toloka.ai/requester/templates?choosedCard=zrOz1vqLM52i562Ed0A5
+  survey-toloka-preset: https://platform.toloka.ai/requester/templates?choosedCard=O5QMrPP48RPUyne5aaLV
   tb-audio-transcript: https://toloka.ai/en/docs/template-builder/templates/audio-transcript
   tb-conditions: https://toloka.ai/en/docs/template-builder/best-practices/conditions
   tb-create-specs: https://toloka.ai/en/docs/template-builder/operations/create-specs
@@ -6834,9 +6842,11 @@ default:
   users: https://platform.toloka.ai/requester/workers
   using-files-yandex-disk: https://toloka.ai/ru/docs/guide/concepts/prepare-data
   video-how-to-specify-links: https://youtu.be/hIJ6IGaDgeU
+  video-moderation-preset: https://platform.toloka.ai/requester/templates?choosedCard=KpP25Ep6DQMSwpLMZr55
   videocourse: https://www.youtube.com/playlist?list=PLn5HE0j5a7mm_WblI3dDngDFnivJ8lmEG&utm_source=support&utm_medium=online&utm_compaign=help&utm_content=requesters
   videocourse-about-decomposition: https://www.youtube.com/playlist?list=PLn5HE0j5a7ml6W0w6GAeAk_8CeyvthJq8&utm_source=support&utm_medium=online&utm_compaign=help&utm_content=requesters
   visualstudio: https://code.visualstudio.com/
+  voice-recording-preset: https://platform.toloka.ai/requester/templates?choosedCard=xNndbVZQR3KCgabyAQyY
   wampi: https://wampi.ru/?lang=en
   wiki-flac: https://en.wikipedia.org/wiki/FLAC
   wiki-mp3: https://en.wikipedia.org/wiki/MP3

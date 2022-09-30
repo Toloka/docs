@@ -1,0 +1,1 @@
+Make sure you are [registered](../../concepts/access.md) in Toloka as a requester.

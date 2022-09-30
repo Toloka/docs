@@ -1,0 +1,1 @@
+<a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-pool-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-pool-step-3.2.png" alt="Create a pool. Step 3.2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>

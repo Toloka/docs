@@ -1,4 +1,3 @@
-
 To download a template, click one of the buttons:
 
 - {% if locale == "en-com" %}**Template in XLSX**{% endif %}
