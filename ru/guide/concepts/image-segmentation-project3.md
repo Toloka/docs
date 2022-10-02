@@ -1,6 +1,6 @@
 # Проект 3. Верно ли выделены объекты на изображении
 
-В этом [проекте](../../glossary.md#project-ru) исполнители будут определять, верно ли на изображениях из [первого проекта](image-segmentation-project1.md) были выделены дорожные знаки во [втором проекте](image-segmentation-project2.md).
+В этом [проекте](../../glossary.md#project) исполнители будут определять, верно ли на изображениях из [первого проекта](image-segmentation-project1.md) были выделены дорожные знаки во [втором проекте](image-segmentation-project2.md).
 
 ## Создайте проект {#create-project}
 
@@ -20,175 +20,179 @@
 
 1. Отредактируйте интерфейс задания. От редактора интерфейса зависит формат выходных данных, поэтому выберите тот же редактор, что и в [Проекте 2](image-segmentation-project2.md#interface-tb-html).
 
-    #### Конструктор шаблонов
+    {% list tabs %}
 
-    1. Создайте шаблон на основе примера [Проверка выделенной области](https://clck.ru/sFyNY), в котором используется [Компонент для разметки изображений]({{ tb-image-annotation }}).
+    - Конструктор шаблонов
 
-    1. Чтобы увидеть поля входных и выходных данных, в разделе {% if locale == "ru-ru" %}**Спецификация данных**{% endif %}{% if locale == "en-com" %}**Data specification**{% endif %} нажмите {% if locale == "ru-ru" %}**Показать спецификации**{% endif %}{% if locale == "en-com" %}**Show specifications**{% endif %}.
+      1. Создайте шаблон на основе примера [Проверка выделенной области](https://clck.ru/sFyNY), в котором используется Компонент для разметки изображений.
 
-    Поля входных данных, которые используются в проекте:
+      1. Чтобы увидеть поля входных и выходных данных, в разделе {% if locale == "ru-ru" %}**Спецификация данных**{% endif %}{% if locale == "en-com" %}**Data specification**{% endif %} нажмите {% if locale == "ru-ru" %}**Показать спецификации**{% endif %}{% if locale == "en-com" %}**Show specifications**{% endif %}.
 
-    - `image` — адрес картинки;
-    - `result` — массив с координатами выделенной области;
-    - `assignment_id` — идентификатор задания.
+          Поля входных данных, которые используются в проекте:
 
-    В поле выходных данных `verdict` будет записан ответ исполнителя.
+          - `image` — адрес картинки;
+          - `result` — массив с координатами выделенной области;
+          - `assignment_id` — идентификатор задания.
 
-    1. Включите опцию **Настроить спецификацию вручную**.
+          В поле выходных данных `verdict` будет записан ответ исполнителя.
 
-    1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
+      1. Включите опцию **Настроить спецификацию вручную**.
 
-    1. {% include [image-segmentation-project3-del-input-temp](../_includes/concepts/image-segmentation-project3/id-image-segmentation-project3/del-input-temp.md) %}
+      1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
 
-    ```
-    {
-    "image": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
-    "result": {
-    "type": "array_json",
-    "hidden": false,
-    "required": false
-    },
-    "assignment_id": {
-    "type": "string",
-    "hidden": true,
-    "required": true
-    }
-    }
-    ```
+      1. {% include [image-segmentation-project3-del-input-temp](../_includes/concepts/image-segmentation-project3/id-image-segmentation-project3/del-input-temp.md) %}
 
-    1. {% include [image-segmentation-project3-del-output-temp](../_includes/concepts/image-segmentation-project3/id-image-segmentation-project3/del-output-temp.md) %}
+          ```
+          {
+          "image": {
+          "type": "url",
+          "hidden": false,
+          "required": true
+          },
+          "result": {
+          "type": "array_json",
+          "hidden": false,
+          "required": false
+          },
+          "assignment_id": {
+          "type": "string",
+          "hidden": true,
+          "required": true
+          }
+          }
+          ```
 
-    ```
-    {
-    "verdict": {
-    "type": "string",
-    "hidden": false,
-    "required": true,
-    "allowed_values": [
-    "OK",
-    "BAD"
-    ]
-    }
-    }
-    ```
+      1. {% include [image-segmentation-project3-del-output-temp](../_includes/concepts/image-segmentation-project3/id-image-segmentation-project3/del-output-temp.md) %}
 
-    #### Редактор HTML/CSS/JS
+          ```
+          {
+          "verdict": {
+          "type": "string",
+          "hidden": false,
+          "required": true,
+          "allowed_values": [
+          "OK",
+          "BAD"
+          ]
+          }
+          }
+          ```
 
-    1. Подготовьте {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %}:
+    - Редактор HTML/CSS/JS
 
-    1. {% include [image-annotation-p_tgf_nsv_wlb](../_includes/concepts/t-components/image-annotation/id-image-annotation/p_tgf_nsv_wlb.md) %}
+      1. Подготовьте {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %}:
 
-    1. В блоке **HTML** замените текущий код на следующий:
-    {% if locale == "ru-ru" %}
-    ```
-    <!-- редактор для выделения областей с возможностью заранее добавить область -->
-    {{field type="image-annotation" name="object" src=image annotations=selection}}
+      1. {% include [image-annotation-p_tgf_nsv_wlb](../_includes/concepts/t-components/image-annotation/id-image-annotation/p_tgf_nsv_wlb.md) %}
 
-    <!-- кнопки для ответов -->
-    {{field type="radio" name="result" value="OK" label="Верно" hotkey="1"}}
-    {{field type="radio" name="result" value="BAD" label="Неверно" hotkey="2"}}
-    ```
-    {% endif %}{% if locale == "en-com" %}
-    ```
-    <!-- editor for selecting objects that lets you add an area in advance -->
-    {{field type="image-annotation" name="object" src=image annotations=selection}}
+      1. В блоке **HTML** замените текущий код на следующий:
+          {% if locale == "ru-ru" %}
+          ```
+          <!-- редактор для выделения областей с возможностью заранее добавить область -->
+          {{field type="image-annotation" name="object" src=image annotations=selection}}
 
-    <!-- buttons for responses -->
-    {{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
-    {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
-    ```
-    {% endif %}
-    1. В блоке **CSS** замените текущий код на следующий:
-    {% if locale == "ru-ru" %}
-    ```
-    /* скрыть кнопку для выделения полигоном */
-    .image-annotation-editor__shape-polygon {
-    display: none;
-    }
+          <!-- кнопки для ответов -->
+          {{field type="radio" name="result" value="OK" label="Верно" hotkey="1"}}
+          {{field type="radio" name="result" value="BAD" label="Неверно" hotkey="2"}}
+          ```
+          {% endif %}{% if locale == "en-com" %}
+          ```
+          <!-- editor for selecting objects that lets you add an area in advance -->
+          {{field type="image-annotation" name="object" src=image annotations=selection}}
 
-    /* настроить высоту интерфейса */
-    .image-annotation-editor__annotation-layer {
-    height: max-content;
-    }
-    ```
-    {% endif %}{% if locale == "en-com" %}
-    ```
-    /* hide the button for polygon selection */
-    .image-annotation-editor__shape-polygon {
-    display: none;
-    }
+          <!-- buttons for responses -->
+          {{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
+          {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
+          ```
+        {% endif %}
+      1. В блоке **CSS** замените текущий код на следующий:
+          {% if locale == "ru-ru" %}
+          ```
+          /* скрыть кнопку для выделения полигоном */
+          .image-annotation-editor__shape-polygon {
+          display: none;
+          }
 
-    /* adjust the interface height */
-    .image-annotation-editor__annotation-layer {
-    height: max-content;
-    }
-    ```
-    {% endif %}
+          /* настроить высоту интерфейса */
+          .image-annotation-editor__annotation-layer {
+          height: max-content;
+          }
+          ```
+          {% endif %}{% if locale == "en-com" %}
+          ```
+          /* hide the button for polygon selection */
+          .image-annotation-editor__shape-polygon {
+          display: none;
+          }
 
-    1. Настройте раздел **Спецификация данных**:
+          /* adjust the interface height */
+          .image-annotation-editor__annotation-layer {
+          height: max-content;
+          }
+          ```
+        {% endif %}
 
-    1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
+      1. Настройте раздел **Спецификация данных**:
 
-    1. Удалите шаблонный код из поля {% if locale == "ru-ru" %}**Входные данные**{% endif %}{% if locale == "en-com" %}**Input data**{% endif %} и введите следующий код:
+      1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
 
-    ```
-    {
-    "image": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
-    "selection": {
-    "type": "array_json",
-    "hidden": false,
-    "required": false
-    },
-    "assignment_id": {
-    "type": "string",
-    "hidden": true,
-    "required": true
-    }
-    }
-    ```
+      1. Удалите шаблонный код из поля {% if locale == "ru-ru" %}**Входные данные**{% endif %}{% if locale == "en-com" %}**Input data**{% endif %} и введите следующий код:
 
-    1. Удалите шаблонный код из поля {% if locale == "ru-ru" %}**Выходные данные**{% endif %}{% if locale == "en-com" %}**Output data**{% endif %} и введите следующий код:
+          ```
+          {
+          "image": {
+          "type": "url",
+          "hidden": false,
+          "required": true
+          },
+          "selection": {
+          "type": "array_json",
+          "hidden": false,
+          "required": false
+          },
+          "assignment_id": {
+          "type": "string",
+          "hidden": true,
+          "required": true
+          }
+          }
+          ```
 
-    ```
-    {
-    "result": {
-    "type": "string",
-    "hidden": false,
-    "required": true,
-    "allowed_values": [
-    "OK",
-    "BAD"
-    ]
-    }
-    }
-    ```
+      1. Удалите шаблонный код из поля {% if locale == "ru-ru" %}**Выходные данные**{% endif %}{% if locale == "en-com" %}**Output data**{% endif %} и введите следующий код:
 
-    Подробнее о параметрах {% if locale == "ru-ru" %}**Спецификации**{% endif %}{% if locale == "en-com" %}**Specifications**{% endif %} читайте в разделе [Входные и выходные данные](incoming.md).
+          ```
+          {
+          "result": {
+          "type": "string",
+          "hidden": false,
+          "required": true,
+          "allowed_values": [
+          "OK",
+          "BAD"
+          ]
+          }
+          }
+          ```
 
-    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+          Подробнее о параметрах {% if locale == "ru-ru" %}**Спецификации**{% endif %}{% if locale == "en-com" %}**Specifications**{% endif %} читайте в разделе [Входные и выходные данные](incoming.md).
 
-    {% note info %}
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
-    В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
+          {% note tip %}
 
-    {% endnote %}
+          В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
 
-    1. Нажмите **Изменить входные данные**.
-    1. В поле **selection** добавьте пример входных данных:
-    ```
-    [{"data":{"p1":{"x":0.472,"y":0.413},"p2":{"x":0.932,"y":0.877}},"type":"rectangle"},
-    {"data":[{"x":0.143,"y":0.807},{"x":0.317,"y":0.87},{"x":0.511,"y":0.145},{"x":0.328,"y":0.096},{"x":0.096,"y":0.554}],"type":"polygon"}]
-    ```
+          {% endnote %}
 
-    1. Если все в порядке, закройте вкладку с предпросмотром. Если нет — проверьте данные, которые вы вставляли в блоки кода.
+      1. Нажмите **Изменить входные данные**.
+      1. В поле **selection** добавьте пример входных данных:
+          ```
+          [{"data":{"p1":{"x":0.472,"y":0.413},"p2":{"x":0.932,"y":0.877}},"type":"rectangle"},
+          {"data":[{"x":0.143,"y":0.807},{"x":0.317,"y":0.87},{"x":0.511,"y":0.145},{"x":0.328,"y":0.096},{"x":0.096,"y":0.554}], "type":"polygon"}]
+          ```
+
+      1. Если все в порядке, закройте вкладку с предпросмотром. Если нет — проверьте данные, которые вы вставляли в блоки кода.
+
+    {% endlist %}
 
 1. Напишите инструкцию для исполнителей:
 
@@ -209,7 +213,7 @@
     ```
     {% endif %}
 
-    {% note info %}
+    {% note tip %}
 
     Если вы хотите добавить в инструкцию примеры выполнения задания, выполните его самостоятельно в режиме предпросмотра. Сделайте скриншоты, загрузите их на фотохостинг{% if locale == "ru-ru" %}, ваш Яндекс Диск{% endif %} или в облачное хранилище и вставьте ссылки на изображения в инструкцию, нажав кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) на панели инструментов.
 
@@ -262,7 +266,7 @@
 
     {% note info %}
 
-    Правило начинает действовать, когда количество ответов на задание равно [перекрытию](../../glossary.md#overlap-ru).
+    Правило начинает действовать, когда количество ответов на задание равно [перекрытию](../../glossary.md#overlap).
 
     {% endnote %}
 
@@ -281,7 +285,7 @@
 
 ## Подготовьте и загрузите файл с результатами {#upload_file}
 
-1. Подготовьте [файл](../../glossary.md#tsv-file-definition-ru) с заданиями:
+1. Подготовьте [файл](../../glossary.md#tsv-file-definition) с заданиями:
 
     1. Откройте в редакторе текста или электронных таблиц файл, полученный после агрегации результатов во [втором проекте](image-segmentation-project2.md).
     1. Столбец `INPUT:image` оставьте без изменений.
@@ -298,7 +302,7 @@
     ```
     и сохраните файл в формате `tsv`.
 
-    {% note info %}
+    {% note tip %}
 
     Вы можете подготовить файл в программе {% if locale == "ru-ru" %}**Блокнот**{% endif %}{% if locale == "en-com" %}**Notepad**{% endif %}. Чтобы перенести данные в **Microsoft Excel**, используйте {% if locale == "ru-ru" %}**Мастер импорта текста**{% endif %}{% if locale == "en-com" %}**Text Import Wizard**{% endif %}, отключив опцию {% if locale == "ru-ru" %}**Ограничитель текста**{% endif %}{% if locale == "en-com" %}**Text qualifier**{% endif %}.
 
@@ -322,7 +326,7 @@
 
     1. На странице пула нажмите кнопку {% if locale == "ru-ru" %}**Предпросмотр**{% endif %}{% if locale == "en-com" %}**Preview**{% endif %}. Убедитесь, что в задании отображаются изображения с выделенными объектами.
 
-    {% note info %}
+    {% note tip %}
 
     Если выделенных объектов нет, проверьте, правильно ли выставлены кавычки в файле в столбце **INPUT:selection**. Убедитесь, что [параметры интерфейса](#task-interface) заданы верно.
 
@@ -330,7 +334,7 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note warning %}
+    {% note alarm %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
@@ -367,76 +371,85 @@
 - В файле с результатами.
 - В интерфейсе пула.
 
-#### Проверить задания в файле с результатами
+{% list tabs %}
 
-1. Откройте в редакторе текста или электронных таблиц файл, полученный после агрегации результатов.
+- Проверить задания в файле с результатами
 
-1. Подготовьте файл:
+  1. Откройте в редакторе текста или электронных таблиц файл, полученный после агрегации результатов.
 
-    1. Добавьте столбец `ACCEPT:verdict` — результат проверки.
+      {% note tip %}
 
-    1. Добавьте столбец `ACCEPT:comment` — комментарий для исполнителя, если ответ был отклонен. Например, какая часть инструкций не была выполнена.
+      Вы можете воспользоваться онлайн-редактором электронных таблиц. Перейдите на [Яндекс Диск]({{ yadisk-client }}), подключенный к вашему аккаунту заказчика. Нажмите {% if locale == "ru-ru" %}**Создать → Таблицу**{% endif %}{% if locale == "en-com" %}**Create → Spreadsheet**{% endif %}. Скопируйте в таблицу агрегированные данные из файла.
 
-    1. Измените имя столбца `INPUT:assignment_id` на `ASSIGNMENT:assignment_id`.
+      {% endnote %}
 
-1. Заполните столбцы `ACCEPT:verdict:` и `ACCEPT:comment:`:
+  1. Подготовьте файл:
 
-    - Если агрегированный результат задания правильный, поставьте `+`, и задание будет принято.
-    - Если агрегированный результат задания неправильный или не открывается, поставьте `-`, и задание будет отклонено. Введите причину отклонения задания в поле `ACCEPT:comment:`, например, `Объект не выделен или выделен неверно.`
+      1. Добавьте столбец `ACCEPT:verdict` — результат проверки.
 
-    {% note info %}
+      1. Добавьте столбец `ACCEPT:comment` — комментарий для исполнителя, если ответ был отклонен. Например, какая часть инструкций не была выполнена.
 
-    Для отбора изображений на устройствах с Linux и MacOS вы можете воспользоваться командами awk:
+      1. Измените имя столбца `INPUT:assignment_id` на `ASSIGNMENT:assignment_id`.
 
-    {% if locale == "ru-ru" %}
+  1. Заполните столбцы `ACCEPT:verdict:` и `ACCEPT:comment:`:
 
-    ```shell
-    awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "Объект не выделен или выделен неверно.";}}' <post_accept_res>.tsv > <review_res>.tsv
-    ```
+      - Если агрегированный результат задания правильный, поставьте `+`, и задание будет принято.
+      - Если агрегированный результат задания неправильный или не открывается, поставьте `-`, и задание будет отклонено. Введите причину отклонения задания в поле `ACCEPT:comment:`, например, `Объект не выделен или выделен неверно.`
 
-    {% endif %}{% if locale == "en-com" %}
+      {% note tip %}
 
-    ```shell
-    awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
-    ```
+      Для отбора изображений на устройствах с Linux и MacOS вы можете воспользоваться командами awk:
 
-    {% endif %}
+      {% if locale == "ru-ru" %}
 
-    {% endnote %}
+      ```shell
+      awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "Объект не выделен или выделен неверно.";}}' <post_accept_res>.tsv > <review_res>.tsv
+      ```
 
-1. Удалите все остальные столбцы.
+      {% endif %}{% if locale == "en-com" %}
 
-1. Сохраните файл в формате `tsv`.
+      ```shell
+      awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
+      ```
 
-1. Откройте страницу пула во [втором проекте](image-segmentation-project2.md).
+      {% endif %}
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Проверить задания**{% endif %}{% if locale == "en-com" %}**Review assignments**{% endif %}.
+      {% endnote %}
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить результаты**{% endif %}{% if locale == "en-com" %}**Upload results**{% endif %}.
+  1. Удалите все остальные столбцы.
 
-1. В открывшемся окне выберите файл с результатами для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
+  1. Сохраните файл в формате `tsv`.
 
-1. В открывшемся окне сравните количество заданий в поле {% if locale == "ru-ru" %}**Успешно обработано**{% endif %}{% if locale == "en-com" %}**Processed successfully**{% endif %} с полем {% if locale == "ru-ru" %}**Всего выполненных заданий**{% endif %}{% if locale == "en-com" %}**Total submitted**{% endif %} на странице пула.
+  1. Откройте страницу пула во [втором проекте](image-segmentation-project2.md).
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Добавить**{% endif %}{% if locale == "en-com" %}**Add**{% endif %}.
+  1. Нажмите кнопку {% if locale == "ru-ru" %}**Проверить задания**{% endif %}{% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-1. В открывшемся окне нажмите кнопку {% if locale == "ru-ru" %}**Закрыть**{% endif %}{% if locale == "en-com" %}**Close**{% endif %}.
+  1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить результаты**{% endif %}{% if locale == "en-com" %}**Upload results**{% endif %}.
 
-1. При настройке пула во [втором проекте](image-segmentation-project2.md) вы включили опцию {% if locale == "ru-ru" %}**Повторное выполнение отклонённых заданий**{% endif %}{% if locale == "en-com" %}**Recompletion of the rejected tasks**{% endif %}.
+  1. В открывшемся окне выберите файл с результатами для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
+
+  1. В открывшемся окне сравните количество заданий в поле {% if locale == "ru-ru" %}**Успешно обработано**{% endif %}{% if locale == "en-com" %}**Processed successfully**{% endif %} с полем {% if locale == "ru-ru" %}**Всего выполненных заданий**{% endif %}{% if locale == "en-com" %}**Total submitted**{% endif %} на странице пула.
+
+  1. Нажмите кнопку {% if locale == "ru-ru" %}**Добавить**{% endif %}{% if locale == "en-com" %}**Add**{% endif %}.
+
+  1. В открывшемся окне нажмите кнопку {% if locale == "ru-ru" %}**Закрыть**{% endif %}{% if locale == "en-com" %}**Close**{% endif %}.
+
+  1. При настройке пула во [втором проекте](image-segmentation-project2.md) вы включили опцию {% if locale == "ru-ru" %}**Повторное выполнение отклонённых заданий**{% endif %}{% if locale == "en-com" %}**Recompletion of the rejected tasks**{% endif %}.
 
     При повторном выполнении задания пул автоматически открывается снова, и задания передаются другим исполнителям. Когда задания будут выполнены, отправьте результаты на проверку. Затем скачайте результаты, проверьте их и загрузите проверенные результаты. Вы можете отклонять задания столько раз, сколько захотите, чтобы получить более точные результаты.
 
 
-#### Проверить задания в интерфейсе пула
+- Проверить задания в интерфейсе пула
 
-1. Откройте страницу пула во [втором проекте](image-segmentation-project2.md).
+  1. Откройте страницу пула во [втором проекте](image-segmentation-project2.md).
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Просмотреть задания**{% endif %}{% if locale == "en-com" %}**View assignments**{% endif %}.
+  1. Нажмите кнопку {% if locale == "ru-ru" %}**Просмотреть задания**{% endif %}{% if locale == "en-com" %}**View assignments**{% endif %}.
 
-1. Наведите курсор на строку с заданием, которое хотите проверить.
+  1. Наведите курсор на строку с заданием, которое хотите проверить.
 
-1. В столбце {% if locale == "ru-ru" %}**Статус**{% endif %}{% if locale == "en-com" %}**Status**{% endif %} появятся кнопки, чтобы принять (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) или отклонить (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) выполненное задание. Если вы отклоняете задание, в открывшемся окне введите комментарий и нажмите кнопку {% if locale == "ru-ru" %}**Готово**{% endif %}{% if locale == "en-com" %}**Done**{% endif %}.
+  1. В столбце {% if locale == "ru-ru" %}**Статус**{% endif %}{% if locale == "en-com" %}**Status**{% endif %} появятся кнопки, чтобы принять (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) или отклонить (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) выполненное задание. Если вы отклоняете задание, в открывшемся окне введите комментарий и нажмите кнопку {% if locale == "ru-ru" %}**Готово**{% endif %}{% if locale == "en-com" %}**Done**{% endif %}.
 
+{% endlist %}
 
 ## Что дальше {#what-next}
 
