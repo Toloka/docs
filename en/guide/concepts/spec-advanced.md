@@ -11,7 +11,7 @@ All aspects of the task's [lifecycle](#lifecycle) are controlled by two JavaScri
 
 - [Task](js/task.md) is responsible for rendering and validating an individual task. Typically, you should extend this class if a task needs to have non-standard behavior.
 
-- [TaskSuite](js/tasksuite.md) is a <q>wrapper class</q> for the [task suite](../../glossary.md#task-page-ru) interface. You can redefine this class, like if you need to display a shared element on the page.
+- [TaskSuite](js/tasksuite.md) is a “wrapper class” for the [task suite](../../glossary.md#task-page-ru) interface. You can redefine this class, like if you need to display a shared element on the page.
 
 
 You can use [services](js/services.md) for specific needs (such as subscribing to keyboard presses or getting the Toloker's GPS coordinates).

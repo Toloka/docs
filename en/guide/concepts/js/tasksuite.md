@@ -7,7 +7,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 {% endnote %}
 
 
-<q>Wrapper class</q> for [task suites](../../../glossary.md#task-page-ru) creates instances of task classes. You can redefine this class (for example, if you need to display a shared element on the page with tasks or get more control over tasks, like custom keyboard shortcuts).
+“Wrapper class” for [task suites](../../../glossary.md#task-page-ru) creates instances of task classes. You can redefine this class (for example, if you need to display a shared element on the page with tasks or get more control over tasks, like custom keyboard shortcuts).
 
 The main purpose of the `TaskSuite` class is to render tasks on the page (`[render()](#render)`). It is also used for collecting responses (`[getSolutions()](#getSolutions)`), validating them (`[validate(solutions)](#validate)`) nd managing keyboard shortcuts ([`focusNextTask()`](#focusNextTask), [`onKey(key)`](#onKey), and so on).
 

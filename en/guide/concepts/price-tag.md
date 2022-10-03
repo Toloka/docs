@@ -13,7 +13,7 @@ You may need additional projects for your task, such as dataset pre-check or che
 
 You may need additional settings for your project, like to add a new button with a particular scenario or a section for attaching files. Learn more in [Customization examples](advanced-features.md).
 
-Use the <q>Product and price tag photo</q> template when you need to:
+Use the “Product and price tag photo” template when you need to:
 - Check if prices are up-to-date at specific retail outlets.
 - Compare competitors' pricing and stocking policies.
 - Monitor promotions and special offers.

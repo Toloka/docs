@@ -110,9 +110,9 @@ To accept or reject responses:
 
     - `ACCEPT:verdict` — Review result:
 
-    - <q>+</q> if you accept the responses.
+    - “+” if you accept the responses.
 
-    - <q>-</q> if you reject the responses.
+    - “-” if you reject the responses.
 
     - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction-ru) wasn't followed).
 

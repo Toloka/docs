@@ -12,7 +12,7 @@ This is a special type of skills in Toloka that show the general competencies of
 - Requesters don't create this type of skills.
 - Global skills are created by the system based on user responses to the projects of the same type.
 - Toloker skills are updated daily by the Toloka team.
-- Restrictions of the `skill >80` type are used to select <q>Tolokers who completed similar projects better on average than 80% of other Tolokers</q>.
+- Restrictions of the `skill >80` type are used to select “Tolokers who completed similar projects better on average than 80% of other Tolokers”.
 
 To use this feature, select  and specify the restriction for the selected skill in the added filter.
 

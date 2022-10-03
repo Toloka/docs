@@ -36,7 +36,7 @@ This method is useful if the created pool:
 
 {% note warning %}
 
-If you upload a file via <q>Smart mixing</q>, you won't be able to use other ways of task distribution on the pages in this pool.
+If you upload a file via “Smart mixing”, you won't be able to use other ways of task distribution on the pages in this pool.
 
 {% endnote %}
 
@@ -151,7 +151,7 @@ The third thing to consider is quality control and assignment review. If you use
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be <q>reassessed</q>.
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 

@@ -1,4 +1,4 @@
-# <q>Remember values</q> parameter
+# “Remember values” parameter
 
 Some quality control rules have the **Remember values** parameter. It sets the dynamic window equal to N, which the values are recalculated within. Depending on the rule, the dynamic window is measured:
 
@@ -72,7 +72,7 @@ Overview
 
 The rule works as in Example 1 with the exception that:
 
-- The Toloker isn't assigned a skill. Toloka performs all calculations <q>remotely</q>.
+- The Toloker isn't assigned a skill. Toloka performs all calculations “remotely”.
 - After each completed control task, it checks whether the percentage of correct responses is more than 60 or not. If not, it bans the Toloker.
 
 With this rule, it's difficult to understand why the Toloker was banned because you can't see how their skill changes. Therefore, we often use a combination of two rules (Example 3).

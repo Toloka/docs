@@ -8,6 +8,7 @@ We also advise that you read our [recommendations for data protection in Toloka.
 
 - The rights to the results with labeled data belong to the requester, and no one else.
 - The data that the requester sends to Toloka is strictly confidential. Support staff have access to this data. The list of employees granted this access is regularly reviewed and their activities are monitored by our team.
+
     {% note warning %}
 
     If necessary, the requester may grant [access](multiple-access.md#ul_pyj_v3k_xlb) to their account to other users, for example, to their employees.
@@ -31,12 +32,12 @@ For tasks that use recognition of passports or questionnaires with personal info
 - [Learn how to post tasks](first-project.md#ol_x2q_yb3_wmb)
 - See the documents governing interaction with Toloka
     - For the requester:
-    - [Agreement for requesters registered in the USA]({{ customeragreement-usa }})
-    - [Customer Service Agreement]({{ customeragreement }})
+      - [Agreement for requesters registered in the USA]({{ customeragreement-usa }})
+      - [Customer Service Agreement]({{ customeragreement }})
 
     - For Tolokers:
-    - [User Agreement]({{ useragreement }})
-    - [License agreement for use of the Toloka app for mobile devices]({{ mobile-agreement }})
+      - [User Agreement]({{ useragreement }})
+      - [License agreement for use of the Toloka app for mobile devices]({{ mobile-agreement }})
 
     - [Privacy Policy]({{ confidential }})
 
@@ -44,9 +45,9 @@ For tasks that use recognition of passports or questionnaires with personal info
 
 ## Troubleshooting {#troubleshooting}
 
-#### How do I change my account type from <q>Requester</q> to <q>Toloker</q>?
+{% cut "How do I change my account type from “Requester” to “Toloker”?" %}
 
-You can't change the account type from <q>Requester</q> to <q>Toloker</q>.
+You can't change the account type from “Requester” to “Toloker”.
 
 If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
 
@@ -62,7 +63,9 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% endnote %}
 
-#### The phone number belongs to another user
+{% endcut %}
+
+{% cut "The phone number belongs to another user" %}
 
 If you see this warning, make sure you entered the phone number correctly.
 
@@ -74,7 +77,9 @@ If you don't remember your credentials in Toloka, use [Restoring access]({{ rest
 
 If you deleted your Toloka account, create a new Yandex ID and register in Toloka.
 
-#### How do I change the phone number in my account?
+{% endcut %}
+
+{% cut "How do I change the phone number in my account?" %}
 
 To change your phone number, go to [Yandex ID]({{ phones }}) and change your main number.
 
@@ -83,5 +88,7 @@ To change your phone number, go to [Yandex ID]({{ phones }}) and change your mai
 If you don't have access to the old number, it takes a month to replace it. For more information about changing the phone number, see [Yandex ID Help]({{ change-phone }}).
 
 {% endnote %}
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-initial-consultation.md) %}

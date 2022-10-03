@@ -19,7 +19,7 @@ Use control tasks to assign a [skill](../../glossary.md#skill-ru) to Tolokers ba
 - Tolokers need to attach a file to their assignment.
 - Tolokers need to transcribe text.
 - Tolokers need to select objects in a photo.
-- Tasks don't have a correct or incorrect response. For example: <q>Which image do you like best?</q> or <q>Choose the page design option that you like best</q>.
+- Tasks don't have a correct or incorrect response. For example: “Which image do you like best?” or “Choose the page design option that you like best”.
 
 ## Rule settings {#rule-golden}
 

@@ -12,7 +12,7 @@ When setting up a pool, you can use skills in [filters](filters.md) to:
 
 For example, you can select only those Tolokers whose skill is more than 66 or is missing:
 ![](../_images/other/qcr-control_example_filter.png)
-For [global skills](nav-cross-project.md), the restrictions of the `skill >80`type are used to select <q>Tolokers who completed similar projects 80% better on average than other Tolokers</q>.
+For [global skills](nav-cross-project.md), the restrictions of the `skill >80`type are used to select “Tolokers who completed similar projects 80% better on average than other Tolokers”.
 
 ## Extra rewards {#awarding}
 

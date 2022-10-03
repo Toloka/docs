@@ -39,7 +39,7 @@ To create a control task, add:
 
 {% note info %}
 
-You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [<q>smart mixing</q>](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
 {% endnote %}
 
@@ -58,7 +58,7 @@ For training tasks, it is convenient to create a [separate pool](train.md).
 
 {% note info %}
 
-You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use [<q>smart mixing</q>](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
 {% endnote %}
 
@@ -124,7 +124,7 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 ----- | ----- | ----- | -----
 {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` "monitor 24"" buy" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
 {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` correct, but the quotes won't be displayed ```{% endif %} | {% if locale == "en-com" %}``` book All about dogs ```{% endif %}
-{% if locale == "en-com" %}``` book <q>All about dogs</q> ```{% endif %} | {% if locale == "en-com" %}``` "book <q>All about dogs</q>" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book <q>All about dogs</q> ```{% endif %}
+{% if locale == "en-com" %}``` book “All about dogs” ```{% endif %} | {% if locale == "en-com" %}``` "book “All about dogs”" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book “All about dogs” ```{% endif %}
 {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
 
 
@@ -255,7 +255,7 @@ Overview | How to fix
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a <q>link</q> (<q>url</q>) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).
 
@@ -319,7 +319,7 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be <q>reassessed</q>.
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 

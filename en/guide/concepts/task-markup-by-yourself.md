@@ -4,13 +4,13 @@ You can turn a general task into a [control task](../../glossary.md#control-task
 
 #### What makes a good hint?
 
-Avoid wordings like: <q>You answered incorrectly, please provide the correct response</q>. The Toloker learns when the hint explains the essence of their mistake.
+Avoid wordings like: “You answered incorrectly, please provide the correct response”. The Toloker learns when the hint explains the essence of their mistake.
 
 Make the hints clear. Explain which response should be chosen and why.
 
 {% note alert %}
 
-Task markup is available only for [training pools](train.md) and pools uploaded with [<q>smart mixing</q>](distribute-tasks-by-pages.md#smart-mixing).
+Task markup is available only for [training pools](train.md) and pools uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endnote %}
 
@@ -110,7 +110,7 @@ Overview | How to fix
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a <q>link</q> (<q>url</q>) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).
 
@@ -174,7 +174,7 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be <q>reassessed</q>.
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 

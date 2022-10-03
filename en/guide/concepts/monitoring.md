@@ -13,7 +13,7 @@ You may need additional projects for your task, such as dataset pre-check or che
 
 You may need additional settings for your project, like to add a new button with a particular scenario or a section for attaching files. Learn more in [Customization examples](advanced-features.md).
 
-Use the <q>Monitoring outdoor objects of interest</q> template when you need to:
+Use the “Monitoring outdoor objects of interest” template when you need to:
 
 - Monitor equipment quality and condition.
 

@@ -96,7 +96,7 @@ You can't accept the correct answers and pay for this part ($0.08). Response pag
 
 #### How can I notify the Toloker of changes in the instructions?
 
-Add the notification to the project description (for example: <q>Attention! The instructions changed</q>) and send a message to all the people who completed your tasks. To do this:
+Add the notification to the project description (for example: “Attention! The instructions changed”) and send a message to all the people who completed your tasks. To do this:
 - Assign them a hidden skill, or use an existing [skill](nav-assign.md) linked to the pool.
 - Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
@@ -104,21 +104,21 @@ Add the notification to the project description (for example: <q>Attention! The 
 #### How can I increase the project's rating?
 
 The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
-#### Low rating for <q>Will you take similar tasks in the future</q>
+#### Low rating for “Will you take similar tasks in the future”
 
 Perhaps the Tolokers found your tasks too difficult. Try to simplify them.
 
-#### Low rating for <q>Clarity of instructions</q>
+#### Low rating for “Clarity of instructions”
 
 Shorten instructions and rewrite using simpler language. Add pictures and examples.
 
-#### Low rating for <q>Task interface usability</q>
+#### Low rating for “Task interface usability”
 
 Make the interface [more user-friendly](spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
 
 Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
 
-#### Low rating for <q>Communication with the requester</q>
+#### Low rating for “Communication with the requester”
 
 Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
 If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.

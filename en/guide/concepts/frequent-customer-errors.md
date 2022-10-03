@@ -11,7 +11,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 - The project instructions are long and complicated.
 - High entry threshold: at the beginning of the project, there is complex [training](../../glossary.md#training-pool-ru) and strict selection of Tolokers.
 
-#### Solutions
+{% cut "Solutions" %}
 
 #### Decompose tasks
 
@@ -36,6 +36,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 [Learn more](instruction.md) about how to write clear instructions.
 
+{% endcut %}
 
 ## Errors related to the task interface {#interface-mistakes}
 
@@ -43,7 +44,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 - Inconvenient interface: too many questions or unnecessary elements, empty spaces, non-obvious task design, or instructions inside the interface.
 - The Toloker's actions are not checked: users can submit incorrectly filled or empty output data fields for verification or they can submit a response with no video or audio in media content tasks.
 
-#### Solutions
+{% cut "Solutions" %}
 
 #### Check the tasks before launching your project
 
@@ -80,6 +81,7 @@ You can try creating a task interface in the [Template Builder]({{ tb-quickstart
 
     If you use links to external resources, make sure the Toloker followed them.
 
+{% endcut %}
 
 ## Mistakes related to uploading tasks {#loading-tasks-mistakes}
 
@@ -87,7 +89,7 @@ You can try creating a task interface in the [Template Builder]({{ tb-quickstart
 - Too many tasks on a page, which reduces the quality of task completion.
 - Incorrect distribution of [control tasks](../../glossary.md#control-task-ru).
 
-#### Solutions
+{% cut "Solutions" %}
 
 - Use the [TSV](../../glossary.md#tsv-file-definition-ru) format and UTF8 encoding.
 - Use file templates. You can find them on the pool page.
@@ -95,13 +97,14 @@ You can try creating a task interface in the [Template Builder]({{ tb-quickstart
 - Use [smart mixing](../../glossary.md#smart-mixing-ru). The algorithm will distribute training, control tasks, and general tasks across the page on its own.
 - Check the tasks in the pool preview. Make sure they are displayed correctly and it doesn't take too long to complete a single task suite.
 
+{% endcut %}
 
 ## Mistakes in quality control settings {#quality-control-mistakes}
 
 - There are no Toloker filters and tasks are available even to users who can't complete them.
 - [Quality control rules](../../glossary.md#quality-control-rules-ru) are not used, or they are configured incorrectly.
 
-#### Solutions
+{% cut "Solutions" %}
 
 #### Select Tolokers
 
@@ -133,22 +136,25 @@ Using [filters](../../glossary.md#filtering-ru), you can filter out Tolokers who
 - Check whether the rule works as you intended. To do this, run a small pool with sample data or practice in the [Sandbox](../../glossary.md#sandbox-ru).
 - See examples of settings on the pages from the [list](control.md) of quality control rules.
 
+{% endcut %}
 
 ## Examples of problems {#examples-of-errors}
 
-#### New users aren't joining the project
+### New users aren't joining the project
 
 #### Reason
 The project has a pool that can only be accessed through [training](train.md), but the training itself is closed.
 
-#### Solutions
+{% cut "Solutions" %}
 
 - If you disabled the training on purpose or you plan to open it periodically because you don't need a large flow of users, then everything is fine.
 - When labeling has stopped for the project and you are no longer selecting users for the [exam pool](../../glossary.md#exam-ru), just close it.
 - If you don't need regular labeling and you don't want users to go through training for no reason, close the pool that the training is associated with.
 - If you didn't plan to close the training or didn't know that the training should be open, make the necessary changes to the project settings.
 
-#### Tolokers are leaving the project
+{% endcut %}
+
+### Tolokers are leaving the project
 
 #### Reasons
 
@@ -158,13 +164,14 @@ The project has a pool that can only be accessed through [training](train.md), b
 - The instructions are complicated and confusing.
 - The tasks are not displayed or are displayed incorrectly.
 
-#### Solutions
+{% cut "Solutions" %}
 
 - Reread the [Requester Agreement]({{ customeragreement }}) to make sure that your project meets the requirements.
 - Decompose the task.
 - Rewrite the instructions to make them clear and easy to understand.
 - Try to complete your task in the pool preview, or even better, in the Sandbox. Make sure everything is working correctly.
 
+{% endcut %}
 
 See also:
 

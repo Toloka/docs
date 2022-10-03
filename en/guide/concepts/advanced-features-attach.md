@@ -9,7 +9,7 @@ Before:
 After:
 ![](../_images/tutorials/advanced-features/af-attach-2.png)
 
-For your convenience, here is ready-made code for the <q>Monitoring items at businesses</q> template, in which each of the fields is added to the first response button once. Use it to check your own code. You can find our additions to the code by searching for the word <q>customization</q>.
+For your convenience, here is ready-made code for the “Monitoring items at businesses” template, in which each of the fields is added to the first response button once. Use it to check your own code. You can find our additions to the code by searching for the word “customization”.
 
 #### Ready-made code
 
@@ -39,7 +39,7 @@ For your convenience, here is ready-made code for the <q>Monitoring items at bus
             {{/if}}
         </div>
     </div>
-{{else}}
+  not_var{{else}}
     <div class="header">
         {{texts.task_title}}
     </div>
@@ -53,7 +53,7 @@ For your convenience, here is ready-made code for the <q>Monitoring items at bus
                     {{texts.info_name}}
                 </div>
                 <div class="info__content">
-                    {{name}}
+                    not_var{{name}}
                 </div>
             </div>
             <div class="info__review-block">
@@ -1576,7 +1576,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 #### Editing the output specification
 
-Add new variables of the <q>file</q> type to the output specification. They will be used to save the files uploaded by the Toloker. If you want the Toloker to be able to upload more than one file, set the variable type to <q>array</q>.
+Add new variables of the “file” type to the output specification. They will be used to save the files uploaded by the Toloker. If you want the Toloker to be able to upload more than one file, set the variable type to “array”.
 
 `imgs` — An array of photos.
 
@@ -1599,9 +1599,9 @@ Special components are used to upload files. You can read more about them in the
     </div>
     ```
     {% endif %}
-1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the <q>Monitoring items in businesses</q> template has 3 response buttons, which means that the `main` block should contain 3 `main__block` blocks for the buttons.
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Monitoring items in businesses” template has 3 response buttons, which means that the `main` block should contain 3 `main__block` blocks for the buttons.
 
-    Each button has a name for accessing its properties. For example, in the <q>Monitoring items in businesses</q> template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new fields to in the code.
+    Each button has a name for accessing its properties. For example, in the “Monitoring items in businesses” template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new fields to in the code.
 
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
@@ -1670,7 +1670,7 @@ Special components are used to upload files. You can read more about them in the
     {% endif %}
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
-    For example, in the <q>Monitoring items in businesses</q> template, three output values are described for three buttons: `ok`, `no_obj`, and `no_org`.
+    For example, in the “Monitoring items in businesses” template, three output values are described for three buttons: `ok`, `no_obj`, and `no_org`.
 
     The `review__block` blocks contain a description of each field for this button.
 
@@ -1745,9 +1745,9 @@ Special components are used to upload files. You can read more about them in the
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
 
-    Each button has a name for accessing its properties. For example, in the <q>Monitoring items in businesses</q> template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new text to in the code.
+    Each button has a name for accessing its properties. For example, in the “Monitoring items in businesses” template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new text to in the code.
 
-    For example, in the <q>Monitoring items in businesses</q> template, the texts for the `btn_ok` button are located in the following code block:
+    For example, in the “Monitoring items in businesses” template, the texts for the `btn_ok` button are located in the following code block:
     {% if locale == "en-com" %}
     ```
     var texts = {
@@ -1821,7 +1821,7 @@ Special components are used to upload files. You can read more about them in the
     {% endif %}
 1. Add validation.
 
-    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the <q>Monitoring items in businesses</q> template, the code looks like this:
+    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Monitoring items in businesses” template, the code looks like this:
     {% if locale == "en-com" %}
     ```
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {

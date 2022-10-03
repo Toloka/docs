@@ -95,7 +95,7 @@ The name of the task must match its content, description, and instructions.
 
 Toloka reserves the right to check the platform's public resources and block tasks that do not meet the aforementioned conditions.
 
-#### Requirements in effect prior to 7:59 on March 9, 2022 (Moscow time)
+{% cut "Requirements in effect prior to 7:59 on March 9, 2022 (Moscow time)"  %}
 
 **You can't post tasks that:**
 
@@ -135,7 +135,9 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 1. **Serve as recruiting** or assigning tasks to people who work for the requester. Don't make Tolokers do work outside the platform and don't post tasks for your employees.
 
-#### Requirements in effect prior to 7:59 on October 14, 2021 (Moscow time)
+{% endcut %}
+
+{% cut "Requirements in effect prior to 7:59 on October 14, 2021 (Moscow time)" %}
 
 **You can't post tasks that:**
 
@@ -169,7 +171,9 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 - Serve for recruitment or giving tasks to people who work for the requester.
 
-#### Requirements in effect prior to 7:59 on February 20, 2021 (Moscow time)
+{% endcut %}
+
+{% cut "Requirements in effect prior to 7:59 on February 20, 2021 (Moscow time)" %}
 
 **You can't post tasks that:**
 
@@ -196,7 +200,9 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 Read more in the [Requester agreement]({{ customeragreement }}).
 
-#### Requirements in effect prior to 7:59 on January 23, 2019 (Moscow time)
+{% endcut %}
+
+{% cut "Requirements in effect prior to 7:59 on January 23, 2019 (Moscow time)" %}
 You can publish any tasks that require analyzing or creating content (see [Tips for designing tasks](faq.md)). Toloka **isn't intended** for tasks that could harm Tolokers. Your account might be blocked if tasks:
 - Are oriented toward advertising and promoting websites. In a task, don't ask Tolokers to:
 
@@ -213,6 +219,7 @@ You can publish any tasks that require analyzing or creating content (see [Tips 
 - Allow third parties to access the Toloker's account in Toloka.
 - Involve the creation of illegal materials.
 
+{% endcut %}
 
 ## What's next {#what_next}
 
