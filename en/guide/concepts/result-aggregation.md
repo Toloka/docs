@@ -126,13 +126,13 @@ Analyzes responses based on the level of confidence in the Toloker. The confiden
 
 #### Features
 
-Each user skill has "weight". The higher the skill, the more we trust the Toloker and believe that their responses are correct.
+Each user skill has “weight”. The higher the skill, the more we trust the Toloker and believe that their responses are correct.
 
 The result of aggregation is a TSV file with responses. `CONFIDENCE: <field name [output](incoming.md)>` indicates the confidence in the aggregated response. In this case, it shows the probability that the response is correct.
 
 #### Example
 
-Tasks were labeled by three Tolokers with different "My skill" values: the first Toloker has a skill of 70, the second has 80, and the third has 90.
+Tasks were labeled by three Tolokers with different “My skill” values: the first Toloker has a skill of 70, the second has 80, and the third has 90.
 
 All three Tolokers responded to the first task with **OK**. In this case, we are 100% sure that **OK** is the correct response.
 
@@ -254,7 +254,7 @@ You can run aggregation by skill if the pool meets the following requirements:
 
     The allowed value must match the `value` parameter in the corresponding interface element.
 
-1. The tasks were uploaded in the pool with ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing).
+1. The tasks were uploaded in the pool with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
 
 ## Troubleshooting {#troubleshooting}

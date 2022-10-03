@@ -2,7 +2,7 @@
 
 {% note alert %}
 
-Task markup is available only for [training pools](train.md) and pools uploaded with ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing).
+Task markup is available only for [training pools](train.md) and pools uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endnote %}
 
@@ -58,7 +58,7 @@ Don't make changes to the project or pool while tasks are being edited. Markup w
 1. In the {% if locale == "en-com" %}**We can label control tasks for you**{% endif %} section, click {% if locale == "en-com" %}**Try it for free**{% endif %}.
 1. Click {% if locale == "en-com" %}**Order**{% endif %}. Your pool data will be sent for markup to expert Tolokers. For better quality, we use algorithms that select tasks that can be used as control tasks.
 1. Wait until the markup is completed. This process usually takes about 6 hours. The estimated time of markup completion is indicated in the **Edit tasks** section.
-1. After the markup is completed, the tasks are uploaded back to the pool. In the {% if locale == "en-com" %}**Edit tasks**{% endif %} section on the {% if locale == "en-com" %}**Control tasks**{% endif %} tab, you'll see the following message: "Control tasks are ready". You can [edit](task-markup-by-yourself.md#task-edit) and [delete](task-markup-by-yourself.md#delete-task) the control tasks you received.
+1. After the markup is completed, the tasks are uploaded back to the pool. In the {% if locale == "en-com" %}**Edit tasks**{% endif %} section on the {% if locale == "en-com" %}**Control tasks**{% endif %} tab, you'll see the following message: “Control tasks are ready”. You can [edit](task-markup-by-yourself.md#task-edit) and [delete](task-markup-by-yourself.md#delete-task) the control tasks you received.
 
 {% note info %}
 

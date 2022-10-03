@@ -99,7 +99,7 @@ In the project, you define what the task will look like for the Toloker.
     - **CSS** and **JS** are used to describe the task logic. Also, the main content of this task is embedded in Java Script for ease of editing.
     - In this project, in a variable `texts` texts are stored for the block with information and two text variants for task completion (in case the Toloker found or didn't find home).
     - The `MAX_DISTANCE` variable specifies the maximum distance from a designated point, where the toloker can move during the task completion, in kilometers. Specify the appropriate value.
-    - In this template, at least four photos of the building is required. If you want to change this, enter any other number instead " 4":
+    - In this template, at least four photos of the building is required. If you want to change this, enter any other number instead “ 4”:
     - `if (solution.output_values.imgs_facade.length < 4)`
 
     {% note info %}

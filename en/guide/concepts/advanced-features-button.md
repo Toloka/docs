@@ -1,8 +1,8 @@
 # Add a button
 
-If you have multiple response buttons, you can add another one. For example, in the "Photos of product and price tag" task, you can add the response option "There is a different store at this address".
+If you have multiple response buttons, you can add another one. For example, in the “Photos of product and price tag” task, you can add the response option “There is a different store at this address”.
 
-Let's add a new button to the "Photos of product and price tag" task template, in which the Toloker will need to upload several photos and write a comment.
+Let's add a new button to the “Photos of product and price tag” task template, in which the Toloker will need to upload several photos and write a comment.
 
 #### What does it look like?
 
@@ -13,7 +13,7 @@ After:
 When the Toloker clicks the new button:
 ![](../_images/tutorials/advanced-features/af-button-3.png)
 
-For your convenience, here is ready-made code with the new button for the "Photos of product and price tag" template. Use this code for self-check. You can find our additions to the code by searching for the word "customization".
+For your convenience, here is ready-made code with the new button for the “Photos of product and price tag” template. Use this code for self-check. You can find our additions to the code by searching for the word “customization”.
 
 #### Ready-made code
 
@@ -1250,9 +1250,9 @@ Add 2 new fields to the output data specification:
     </div>
     ```
     {% endif %}
-1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the "Photos of product and price tag" template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
-    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Add a new button with the name `btn_new`. To do this, paste the following code after the last `main__block` block. It will add a new button for uploading photos and writing a comment.
+    Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Add a new button with the name `btn_new`. To do this, paste the following code after the last `main__block` block. It will add a new button for uploading photos and writing a comment.
     {% if locale == "en-com" %}
     ```html
     <div class="main__block">
@@ -1306,7 +1306,7 @@ Add 2 new fields to the output data specification:
     {% endif %}
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
-    For example, in the "Photos of product and price tag" template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`. Let's add a `new_verdict` output value for the new button `btn_new`.
+    For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`. Let's add a `new_verdict` output value for the new button `btn_new`.
 
     Find the desired button by searching for the string `{{#if (equal verdict "response_button_value")}}` then find the `review`field where you want to add a new field and insert the following code after it:
     {% if locale == "en-com" %}
@@ -1378,9 +1378,9 @@ Add 2 new fields to the output data specification:
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
 
-    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`.
+    Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`.
 
-    For example, in the "Photos of product and price tag" template, the texts for the `btn_ok` button are located in the following code block:
+    For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
     {% if locale == "en-com" %}
     ```
     var texts = {
@@ -1416,7 +1416,7 @@ Add 2 new fields to the output data specification:
     }
     ```
     {% endif %}Change the values of the `title`, `description`, and `example_link_1` properties. The `title` property contains a title displayed above the field; the `description` property contains a question or a hint for Tolokers, and the `example_link_1` property contains a link to the example of an image.
-1. Find the `verdictsOut` variable. In the "Photos of product and price tag" template, it looks like this:
+1. Find the `verdictsOut` variable. In the “Photos of product and price tag” template, it looks like this:
 
     ```
     var verdictsOut = ['ok', 'no_price', 'no_item', 'no_shop'];
@@ -1451,7 +1451,7 @@ Add 2 new fields to the output data specification:
 
 1. Add validation.
 
-    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the "Photos of product and price tag" template, the code looks like this:
+    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
     {% if locale == "en-com" %}
     ```
     else if (solution.output_values.verdict === 'ok') {

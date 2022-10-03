@@ -9,7 +9,7 @@ Before:
 After:
 ![](../_images/tutorials/advanced-features/af-input-data-2.png)
 
-For your convenience, here is ready-made code for the "Monitoring field objects" template with two new input fields added. Use it to check your own code. You can find our additions to the code by searching for the word "customization".
+For your convenience, here is ready-made code for the “Monitoring field objects” template with two new input fields added. Use it to check your own code. You can find our additions to the code by searching for the word “customization”.
 
 #### Ready-made code
 

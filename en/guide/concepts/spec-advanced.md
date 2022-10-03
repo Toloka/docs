@@ -11,7 +11,7 @@ All aspects of the task's [lifecycle](#lifecycle) are controlled by three JavaSc
 
 - The [Assignment](js/assignment.md) class manages task progress, processes the task page's commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of [TaskSuite](js/tasksuite.md).
 
-- [TaskSuite](js/tasksuite.md) is a "wrapper class" for the [task suite](../../glossary.md#task-page-ru) interface. You can redefine this class, like if you need to display a shared element on the page.
+- [TaskSuite](js/tasksuite.md) is a “wrapper class” for the [task suite](../../glossary.md#task-page-ru) interface. You can redefine this class, like if you need to display a shared element on the page.
 
 - [Task](js/task.md) is responsible for rendering and validating an individual task. Typically, you should extend this class if a task needs to have non-standard behavior.
 

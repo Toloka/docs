@@ -13,7 +13,7 @@ Configure the [Fast responses](quick-answers.md) rule to filter out cheating Tol
 ![](../_images/cp-quick_answers.png)
 #### Limit on skipped assignments
 
-Another "optimization" technique that cheaters use is skipping certain assignments. They pick out the ones that seem easier to them, while other Tolokers reliably complete all the assignments they receive. However, both get paid in the same way.
+Another “optimization” technique that cheaters use is skipping certain assignments. They pick out the ones that seem easier to them, while other Tolokers reliably complete all the assignments they receive. However, both get paid in the same way.
 
 Configure the [Skipped assignments](skipped-assignments.md) rule to avoid this situation. It will restrict access for those Tolokers who skip too many assignments, like more than three in a row.
 ![](../_images/cp-skipped_assignments.png)
@@ -25,7 +25,7 @@ To protect against robots, use the Captcha rule. In Toloka, a captcha is shown e
 
 Limits are also useful when you need as many different Tolokers as possible, like to collect statistics for a survey or choosing the best version of a logo. Another case is personal descriptions for a [dating service](https://rb.ru/opinion/chat-bot-dataset/). If texts are all written by the same person, they are likely to turn out monotonous and boring.
 
-You can engage more participants if you limit the number of assignments "per Toloker". You can do this by setting a limit on the number of tasks available to each Toloker or a limit on daily earnings in a single project. Use the [Submitted responses](submitted-answers.md) and [Earnings](income.md) rules.
+You can engage more participants if you limit the number of assignments “per Toloker”. You can do this by setting a limit on the number of tasks available to each Toloker or a limit on daily earnings in a single project. Use the [Submitted responses](submitted-answers.md) and [Earnings](income.md) rules.
 ![](../_images/cp-submitted_answers.png)
 
 

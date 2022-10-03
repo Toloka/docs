@@ -55,9 +55,13 @@ In this case, you can set up automatic acceptance of tasks and automatic rejecti
 1. Add the **Control tasks** quality control block and set the condition **if the percentage of correct responses ≥ N** and **the number of responses = N**, then accept all the Toloker's responses.
 1. Add a description of the new rule to the instructions.
 
-#### Sample settings
+{% cut "Sample settings" %}
+
 ![](../_images/tips-recommendations/free-exam.png)
+
 In this case, if the percentage of correct responses is greater than or equal to 70, all the Toloker's responses are automatically accepted. All unverified responses are rejected.
+
+{% endcut %}
 
 ## Compress images. {#pictures}
 

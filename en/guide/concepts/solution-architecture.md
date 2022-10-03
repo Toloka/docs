@@ -39,14 +39,14 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 - Do I need to filter my data?
 
-    Let's say you want to create a task titled "Select road signs in an image", but you aren't sure that all images contain road signs. Create a separate project with a task titled "Are there road signs in an image?" to filter out unnecessary images.
+    Let's say you want to create a task titled “Select road signs in an image”, but you aren't sure that all images contain road signs. Create a separate project with a task titled “Are there road signs in an image?” to filter out unnecessary images.
 
     A data filtering task is usually cheap and can help you save on the most important task and simplify the task instructions and interface.
 
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled "Find similar products", enable [assignment review](../../glossary.md#left-off-acceptance-ru) in this project and create a separate project with the "Are these items similar?" task to review responses, reject incorrect responses, and avoid paying for them.
+- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#left-off-acceptance-ru) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
     {% note warning %}
 
@@ -70,7 +70,7 @@ The easier the task, the better the results. If your task contains more than one
 
 - If some questions in the task need additional filtering.
 
-    For example, if you show a Toloker a photo of a cat and ask them to answer questions like "What color is the cat?" and "Is the cat asleep?", it's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
+    For example, if you show a Toloker a photo of a cat and ask them to answer questions like “What color is the cat?” and “Is the cat asleep?”, it's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
 
 - If different Toloker skills are required to answer different questions of the task.
 

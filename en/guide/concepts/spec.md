@@ -219,7 +219,7 @@ You can hide text in an expandable section by using CSS styles, both in the task
 You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
 
 To add libraries:
-1. Click the "gear button" in project editing mode.
+1. Click the “gear button” in project editing mode.
 1. In the field that opens on the left, enter the links and press **Enter**.
 
 #### How do I enable loading audio files in preview mode?
@@ -258,13 +258,13 @@ See the sample projects that can help you build an interface:
 - [with radio buttons]({{ project-with-radiobutton }})
 If you pass an array of values to the input field, use commas to separate the array elements. A response option will be generated for each of them in the interface. Input/output data for the sample projects are provided in the comments at codepen.io.
 
-#### Why doesn't the "Submit" button work in the task?
+#### Why doesn't the “Submit” button work in the task?
 
 The issue is probably in the JS block. Try deleting its content, then test the **Submit** button in the preview mode.
 
 #### How do I add assignment validation depending on a checkbox, so that if an object is in the image, it must be selected, otherwise, a checkbox must be selected?
 
-You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the "Search for information online" template.
+You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the “Search for information online” template.
 
 #### How do I use different numbers of response options for different questions?
 
@@ -280,7 +280,7 @@ You can't deselect a radio button. You can only select another radio button as a
 
 #### How do I add assignment validation depending on a checkbox?
 
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the "Search for information online" template.
+You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” template.
 
 #### How do I change the task background from the standard white color to a different color?
 
@@ -323,7 +323,7 @@ You can't expand the HTML window. To expand the JS and CSS fields, click any are
 #### Can I use my own JS to build an interface in Toloka?
 
 You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
-- Click the "gear button" to open the settings.
+- Click the “gear button” to open the settings.
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
 See the [Requester's guide](spec-advanced.md) for descriptions of the structure of classes and how they work.
 
@@ -343,7 +343,7 @@ However, in the context of TolokaHandlebars editability, there are no difference
 
 Try to disable extensions in your browser. They might block iframe loading.
 
-#### How do I pass the value of the input variable to the "Button with click validation"?
+#### How do I pass the value of the input variable to the “Button with click validation”?
 
 Specify the name of the input field where you pass the link, without the brackets:{% if locale == "en-com" %}
 ```
@@ -447,7 +447,7 @@ If you need to further modify the area-selection editor, use [this library](http
 
 #### How do I, depending on the option selected, show a photo and make it mandatory or hide it and make it optional?
 
-In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the "Text classification" template.
+In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the “Text classification” template.
 
 #### How do I prevent adding photos from the gallery so that when the Toloker clicks the add photo button the camera opens, rather than the gallery/camera choice?
 
@@ -457,9 +457,9 @@ Add `sources="CAMERA"` to the attributes of the image loading component. This di
 
 You can create a selection and drop-down list with category selection. See how it is implemented on [this page](t-components/image-annotation.md) (**Dropdown list** tab).
 
-#### In the "Side-by-side image comparison" template, where do I specify a proxy for the task interface to create a task with three image options?
+#### In the “Side-by-side image comparison” template, where do I specify a proxy for the task interface to create a task with three image options?
 
-The "Side-by-side image comparison" template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](t-components/img.md): `{{img src=(proxy image)}}`.
+The “Side-by-side image comparison” template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](t-components/img.md): `{{img src=(proxy image)}}`.
 
 #### What should the Toloker do if there is no selectable object in the image in an area selection task?
 
@@ -469,7 +469,7 @@ There are four options:
     Mention this in your instructions for reviewers.
 
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
-- Add the "No object" checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
+- Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
     For control purposes, add information about the value of this checkbox to the task interface.
 
 
