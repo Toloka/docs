@@ -38,7 +38,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-project-step-1.png" alt="Create a project. Step 1" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-project-step-1.png" alt="Create a project. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -147,7 +147,7 @@ At this step, upload your task data to Toloka.
 
     For example, you can add 9 general tasks and 1 control task per suite:
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.png" alt="Upload your file. Step 3" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.png" alt="Upload your file. Step 3" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -155,25 +155,25 @@ At this step, upload your task data to Toloka.
 
     1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png" alt="Upload your file. Step 5.1" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png" alt="Upload your file. Step 5.1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. {% include [toloka-requester-source-create-control-button](../_includes/toloka-requester-source/id-toloka-requester-source/create-control-button.md) %}
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png" alt="Upload your file. Step 5.2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.2.png" alt="Upload your file. Step 5.2" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. Check the {% if locale == "en-com" %}**result**{% endif %} checkbox, and select the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png" alt="Upload your file. Step 5.3" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.3.png" alt="Upload your file. Step 5.3" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
     1. Note the {% if locale == "en-com" %}**Distribution of correct responses for control tasks**{% endif %} graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png" alt="Upload your file. Step 5.4" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:420px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png" alt="Upload your file. Step 5.4" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:420px;" /></a>
 
     1. When you are done adding control tasks, click the pool name in the menu.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png" alt="Upload your file. Step 5.5" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.5.png" alt="Upload your file. Step 5.5" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 ## Start labeling {#labeling}
 
@@ -181,7 +181,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png" alt="Start labeling. Step 2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/start-labeling-step-2.png" alt="Start labeling. Step 2" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -189,11 +189,11 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-labeling-progress](../_includes/toloka-requester-source/id-toloka-requester-source/labeling-progress.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-1.png" alt="See the results. Step 1" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-1.png" alt="See the results. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. When the labeling is complete, click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button and choose {% if locale == "en-com" %}**Run Dawid-Skene model**{% endif %} from the drop-down menu. Click {% if locale == "en-com" %}**Yes**{% endif %} in the pop-up window.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png" alt="See the results. Step 2" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png" alt="See the results. Step 2" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. Open the same drop-down menu again, and click {% if locale == "en-com" %}**View aggregations list**{% endif %}.
 

@@ -42,7 +42,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png" alt="Create a project. Step 1" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png" alt="Create a project. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like.
 
@@ -50,15 +50,15 @@ Before you begin:
 
     1. Copy the code of the [example](https://ya.cc/t/ZFj9dvvG3Zg9Xw) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png" alt="Create a project. Config section" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png" alt="Create a project. Config section" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. You can edit the code. For example, to configure the text above the {% if locale == "en-com" %}**Take photo**{% endif %} section, replace the sample text with your value in the `label` property.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png" alt="Create a project. Config text" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png" alt="Create a project. Config text" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. The Toloker will be able to submit the response when they are within 50 meters of the specified location. To change this condition, replace the value of the `max` property with the desired distance:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-distance.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-distance.png" alt="Create a project. Config distance" style="border-radius:6px;cursor:zoom-in;width:560px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-distance.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-distance.png" alt="Create a project. Config distance" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:560px;" /></a>
 
         {% note info %}
 
@@ -108,7 +108,7 @@ Before you begin:
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png" alt="Create a pool. Languages filter" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png" alt="Create a pool. Languages filter" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. Tasks in pools are available in the web version of Toloka and the mobile app by default. Make your tasks available in the mobile app only: add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the {% if locale == "en-com" %}**Toloka for mobile**{% endif %} option.
 
@@ -123,13 +123,13 @@ Before you begin:
 
     1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of assignment review**{% endif %}, and enter the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png" alt="Create a pool. Results of assignment review rule" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png" alt="Create a pool. Results of assignment review rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
     1. Add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. When the overlap value is {% if locale == "en-com" %}**1**{% endif %}, you should resend assignments to the pool for other Tolokers to redo them.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png" alt="Create a pool. Processing rejected and accepted assignments rule" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png" alt="Create a pool. Processing rejected and accepted assignments rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         This means that if you reject assignments during the review, they’ll be sent for re-completion to another Toloker.
 
@@ -190,7 +190,7 @@ At this step, upload your task data to Toloka.
 
     1. In this type of project, the task suite must contain only one task:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png" alt="Upload data. Tasks in suite" style="border-radius:6px;cursor:zoom-in;width:570px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png" alt="Upload data. Tasks in suite" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:570px;" /></a>
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -200,7 +200,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png" alt="Start labeling" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png" alt="Start labeling" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -212,7 +212,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png" alt="See the results. Review assignments" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png" alt="See the results. Review assignments" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. Choose an assignment.
 
@@ -226,13 +226,13 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. After checking all the assignments, click {% if locale == "en-com" %}**Download results**{% endif %}.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png" alt="See the results. Download results" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png" alt="See the results. Download results" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     You will get the TSV file with the labeling results.
 
 1. To download the files Tolokers attached to the tasks, go to the pool page and click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button. Choose {% if locale == "en-com" %}**Download attachments**{% endif %} from the drop-down menu.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png" alt="See the results. Download attachments" style="border-radius:6px;cursor:zoom-in;width:484px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png" alt="See the results. Download attachments" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:484px;" /></a>
 
 ## Troubleshooting {#troubleshooting}
 

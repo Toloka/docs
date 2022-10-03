@@ -48,7 +48,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png" alt="Create a project. Step 1" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png" alt="Create a project. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like.
 
@@ -62,7 +62,7 @@ Before you begin:
 
         - `value`: This is the value you will see in the file with the survey results.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-answer.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-answer.png" alt="Create a project. Config question answer" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-answer.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-answer.png" alt="Create a project. Config question answer" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         {% note info %}
 
@@ -72,7 +72,7 @@ Before you begin:
 
     1. The example code contains one question with an obvious answer to check how attentive a Toloker is. You can change this question if needed:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png" alt="Create a project. Config question attention" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png" alt="Create a project. Config question attention" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. Click {% if locale == "en-com" %}**Data specification → Show specifications**{% endif %}. In the following sections, you will see the parameters which match the task interface you set up in {% if locale == "en-com" %}**Template Builder**{% endif %}:
 
@@ -102,7 +102,7 @@ Before you begin:
 
     1. Select Tolokers who knows the language of your survey:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png" alt="Create a pool. Languages filter" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png" alt="Create a pool. Languages filter" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         Also you can select Tolokers based on their location, age, gender, and other parameters. Use the {% if locale == "en-com" %}**Add filter**{% endif %} button and configure the filters you need.
 
@@ -112,11 +112,11 @@ Before you begin:
 
         1. Click the {% if locale == "en-com" %}**Add skill**{% endif %} button. Enter the skill name and description, and leave the skill not public.
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png" alt="Create a pool. Add skill" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:405px;" /></a>
+            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png" alt="Create a pool. Add skill" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:405px;" /></a>
 
         1. Click {% if locale == "en-com" %}**Add filter → My skills**{% endif %} and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png" alt="Create a pool. My skills" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png" alt="Create a pool. My skills" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
 
@@ -128,7 +128,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, click {% if locale == "en-com" %}**Add a quality control rule → Fast responses**{% endif %}. Specify the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png" alt="Create a pool. Fast responses rule" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png" alt="Create a pool. Fast responses rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         These settings mean that a Toloker who completes a task suite in less than 15 seconds will be blocked and won’t be able to access your tasks anymore.
 
@@ -142,17 +142,17 @@ Before you begin:
 
     1. Add the rule which assigns a skill after one submitted survey. As you’ve set the filter to select Tolokers without this skill in step 3.4, the rule allows you to filter out Tolokers who have already completed your survey.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png" alt="Create a pool. Submitted responses rule" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png" alt="Create a pool. Submitted responses rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. To get the required number of responses, add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. Enter the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png" alt="Create a pool. Processing rejected and accepted assignments rule" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png" alt="Create a pool. Processing rejected and accepted assignments rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
 
     1. To automatically accept tasks from those who give correct answers to the attention check question, use the {% if locale == "en-com" %}**Control tasks**{% endif %} rule:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png" alt="Create a pool. Control tasks rule" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png" alt="Create a pool. Control tasks rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         The rule will work if you specify the correct answer to the attention check question in the file with tasks. You will do that later in this tutorial.
 
@@ -192,7 +192,7 @@ At this step, upload your task data to Toloka.
 
         Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png" alt="Upload data. Tasks per suite" style="border-radius:6px;cursor:zoom-in;width:570px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png" alt="Upload data. Tasks per suite" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:570px;" /></a>
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -206,7 +206,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png" alt="Start labeling" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png" alt="Start labeling" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -220,7 +220,7 @@ Review the rest of the tasks during the time period specified in the {% if local
 
 1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png" alt="See the results. Review assignments" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png" alt="See the results. Review assignments" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. Choose an assignment.
 
@@ -230,7 +230,7 @@ Review the rest of the tasks during the time period specified in the {% if local
 
 1. After checking all the assignments, сlick the {% if locale == "en-com" %}**Download results**{% endif %} button.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png" alt="See the results. Download results" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png" alt="See the results. Download results" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the {% if locale == "en-com" %}**Download results**{% endif %} dialog, do the following:
 
@@ -242,7 +242,7 @@ Review the rest of the tasks during the time period specified in the {% if local
 
     1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png" alt="See the results. Download settings" style="border-radius:6px;cursor:zoom-in;width:458px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png" alt="See the results. Download settings" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:458px;" /></a>
 
 You will get the TSV file. To process the survey results, you can open the file in Excel and save it in the XLSX format.
 
