@@ -22,6 +22,7 @@ default:
   apps-guide: https://toloka.ai/en/docs/toloka-apps/concepts/
   audio-classification-preset: https://platform.toloka.ai/requester/templates?choosedCard=1JV9zP0e3eKSxlWVMePn
   audio-transcription-preset: https://platform.toloka.ai/requester/templates?choosedCard=EMeqje9erBrCPq7REDBB
+  audit-preset: https://platform.toloka.ai/requester/templates?choosedCard=1DwQlJ0L6p4urdwxEM4k
   authorization-phone: https://yandex.com/support/passport/authorization/phone.html
   aws: https://aws.amazon.com/getting-started/hands-on/backup-files-to-amazon-s3/?nc1=h_ls
   azure-blob: https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction

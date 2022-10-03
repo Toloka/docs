@@ -38,7 +38,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png" alt="Create a project. Step 1" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png" alt="Create a project. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -48,7 +48,7 @@ Before you begin:
 
         1. Write a question Tolokers will see in your task. All tasks in a project use the same question.
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-question.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-question.png" alt="Create a project. Config question" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-question.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-question.png" alt="Create a project. Config question" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         1. Set answer options. In the {% if locale == "en-com" %}`options`{% endif %} list, replace the sample answers with your values in the following properties:
 
@@ -56,11 +56,11 @@ Before you begin:
 
             - {% if locale == "en-com" %}`value`{% endif %}: This is the value you will see in the file with the labeling results.
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-answers.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-answers.png" alt="Create a project. Config answers" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-answers.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-answers.png" alt="Create a project. Config answers" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         1. Configure keyboard shortcuts for the answers. Replace the values of the {% if locale == "en-com" %}`payload`{% endif %} properties with the values you’ve already specified in the {% if locale == "en-com" %}`value`{% endif %} properties.
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-shortcuts.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-shortcuts.png" alt="Create a project. Config shortcuts" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-shortcuts.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-config-shortcuts.png" alt="Create a project. Config shortcuts" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         {% note info %}
 
@@ -70,7 +70,7 @@ Before you begin:
 
     1. In the {% if locale == "en-com" %}**Input data example**{% endif %} section, add a link to a sample audio. This audio is only used to display the task interface preview on the right.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-input-example.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-input-example.png" alt="Create a project. Input data example" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-input-example.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-input-example.png" alt="Create a project. Input data example" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. {% include [toloka-requester-source-specification-definition](../_includes/toloka-requester-source/id-toloka-requester-source/specification-definition.md) %}
 
@@ -108,7 +108,7 @@ Before you begin:
 
         If you need Tolokers who understand the speech in your audio recordings, use the {% if locale == "en-com" %}**Languages**{% endif %} filter.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-language-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-language-filter.png" alt="Create a pool. Languages filter" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-language-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-language-filter.png" alt="Create a pool. Languages filter" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
     1. Use the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
@@ -118,7 +118,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, edit the pre-configured {% if locale == "en-com" %}**Fast responses**{% endif %} rule. Specify the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-fast-responses.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-fast-responses.png" alt="Create a pool. Fast responses" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-fast-responses.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-fast-responses.png" alt="Create a pool. Fast responses" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         These settings mean that a Toloker who completes 3 or more task suites in less than 15 seconds will be blocked and won't be able to access your tasks anymore.
 
@@ -134,13 +134,13 @@ Before you begin:
 
         - If your tasks don’t have the only right answers, use the pre-configured {% if locale == "en-com" %}**Majority vote**{% endif %} rule. It accepts the most popular response as the correct one. Specify the following values:
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-majority-vote.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-majority-vote.png" alt="Create a pool. Majority vote" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-majority-vote.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-majority-vote.png" alt="Create a pool. Majority vote" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
             These settings mean that Tolokers who give correct responses to less than 40% of tasks are banned from the project for 7 days. {% if locale == "en-com" %}**Accept as majority**{% endif %} set to `2` means that 2 similar responses out of all responses given to a single task will be considered as the correct answer.
 
         - If your tasks have the only right answers, add the **Control tasks** rule. Set the following values:
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-control-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-control-rule.png" alt="Create a pool. Control tasks" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-control-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-control-rule.png" alt="Create a pool. Control tasks" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
             This means that if a Toloker completed more than three control tasks and gave incorrect answers in more than 60% of them, they will be blocked and won't be able to complete tasks on this project for 10 days.
 
@@ -148,7 +148,7 @@ Before you begin:
 
     1. Restrict access for Tolokers who skip multiple task suites in a row. Click {% if locale == "en-com" %}**Add a quality control rule → Skipped assignments**{% endif %} and enter the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-skipped.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-skipped.png" alt="Create a pool. Skipped assignments" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-skipped.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-skipped.png" alt="Create a pool. Skipped assignments" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         This means that if a Toloker skips more than two task suites in a row, they will be blocked and won't be able to complete tasks on this project for 1 day.
 
@@ -200,7 +200,7 @@ At this step, upload your task data to Toloka.
 
     For example, you can add 9 general tasks and 1 control task per suite:
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png" alt="Upload data. Tasks per suite" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:600px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png" alt="Upload data. Tasks per suite" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:600px;" /></a>
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -208,25 +208,25 @@ At this step, upload your task data to Toloka.
 
     1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-edit.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-edit.png" alt="Upload data. Edit" style="border-radius:6px;cursor:zoom-in;width:610px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-edit.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-edit.png" alt="Upload data. Edit" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:610px;" /></a>
 
     1. {% include [toloka-requester-source-create-control-button](../_includes/toloka-requester-source/id-toloka-requester-source/create-control-button.md) %}
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-control-button.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-control-button.png" alt="Upload data. Create control tasks" style="border-radius:6px;cursor:zoom-in;width:500px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-control-button.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-control-button.png" alt="Upload data. Create control tasks" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:500px;" /></a>
 
     1. Check the {% if locale == "en-com" %}**result**{% endif %} checkbox, and select the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-creating-control-task.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-creating-control-task.png" alt="Upload data. Create control tasks" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-creating-control-task.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-creating-control-task.png" alt="Upload data. Create control tasks" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
     1. Note the {% if locale == "en-com" %}**Distribution of correct responses for control tasks**{% endif %} graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png" alt="Upload data. Distribution of correct responses for control tasks" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:330px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png" alt="Upload data. Distribution of correct responses for control tasks" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:330px;" /></a>
 
     1. When you are done adding control tasks, click the pool name in the menu.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-pool-name.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-pool-name.png" alt="Upload data. Click pool name" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-pool-name.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-pool-name.png" alt="Upload data. Click pool name" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 ## Start labeling {#labeling}
 
@@ -234,7 +234,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-start-labeling.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-start-labeling.png" alt="Start labeling" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-start-labeling.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-start-labeling.png" alt="Start labeling" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -242,11 +242,11 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-labeling-progress](../_includes/toloka-requester-source/id-toloka-requester-source/labeling-progress.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-see-results-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-see-results-step-1.png" alt="See the results. Step 1" style="border:1px solid #ccc;border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-see-results-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-see-results-step-1.png" alt="See the results. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. When the labeling is complete, click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button and choose {% if locale == "en-com" %}**Run Dawid-Skene model**{% endif %} from the drop-down menu. Click {% if locale == "en-com" %}**Yes**{% endif %} in the pop-up window.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-step-2.png" alt="See the results. Download results" style="border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-step-2.png" alt="See the results. Download results" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
 
 1. Open the same drop-down menu again, and click {% if locale == "en-com" %}**View aggregations list**{% endif %}.
 

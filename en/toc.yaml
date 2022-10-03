@@ -96,7 +96,7 @@ items:
           - name: Price monitoring
             href: guide/tutorials/price-tag.md
           - name: Product monitoring
-            href: guide/concepts/audit-of-planogram-of-product-placement-in-store.md
+            href: guide/tutorials/audit-of-planogram-of-product-placement-in-store.md
           - name: 'Data collection: Organizations'
             href: guide/concepts/monitoring-objects-in-organizations.md
           - name: Monitor outdoor items of interest
