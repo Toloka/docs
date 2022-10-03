@@ -79,38 +79,41 @@
 
 Например, если вы хотите использовать картинки в поле `image`, то укажите ссылки на файлы в столбце `INPUT:image`:
 
-#### Amazon S3
+{% list tabs %}
 
-```
-INPUT:image
-https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
-https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png
-```
+- Amazon S3
 
-#### Azure Blob Storage
+  ```
+  INPUT:image
+  https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
+  https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png
+  ```
 
-```
-INPUT:image
-https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image1.png
-https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
-```
+- Azure Blob Storage
 
-#### Google Cloud Storage
+  ```
+  INPUT:image
+  https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image1.png
+  https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
+  ```
 
-```
-INPUT:image
-https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
-https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
-```
+- Google Cloud Storage
 
-#### Yandex Object Storage
+  ```
+  INPUT:image
+  https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
+  https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
+  ```
 
-```
-INPUT:image
-https://storage.yandexcloud.net/my-bucket/1.jpg
-https://storage.yandexcloud.net/my-bucket/2.jpg
-```
+- Yandex Object Storage
 
+  ```
+  INPUT:image
+  https://storage.yandexcloud.net/my-bucket/1.jpg
+  https://storage.yandexcloud.net/my-bucket/2.jpg
+  ```
+
+{% endlist %}
 
 Если эти рекомендации не помогли:
 

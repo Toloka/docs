@@ -30,24 +30,29 @@
 
 1. Выберите проект и нажмите ![](../_images/tutorials/cloud-storage/google-cloud/create-bucket-icon.png)**Create bucket**.
 
+    ![](../_images/tutorials/cloud-storage/google-cloud/choose-project.png)
+
 1. Введите имя бакета. Имя должно быть уникальным и содержать только латинские строчные буквы, цифры, дефисы и подчеркивания.
     Подробнее о [Правилах наименования бакетов]({{ google-cloud-about-bucket }}).
-1. В разделе **Choose where to store your data** выберите  и наиболее близкий к вашим исполнителям регион. Например, для исполнителей из Германии: .
+1. В разделе **Choose where to store your data** выберите **Location type** → **Region** и наиболее близкий к вашим исполнителям регион. Например, для исполнителей из Германии: **Location** → **europe-west3 (Frankfurt)**.
 
 1. Раздел **Choose a default storage class for your data** оставьте без изменений.
 
 1. В разделе **Choose how to control access to objects** отключите опцию **Enforce public access prevention on this bucket**.
 
+    ![](../_images/tutorials/cloud-storage/google-cloud/enforce-access.png)
+
 1. Нажмите **Create**.
 
 1. Чтобы сделать объекты доступными по ссылке, на вкладке **Permissions** нажмите ![](../_images/tutorials/cloud-storage/google-cloud/add-permission.png)**Add**.
+
     {% include [create-bucket-use-hash-note](../_includes/concepts/amazon-cloud-storage/id-create-bucket/use-hash-note.md) %}
 
 1. В поле **New members** введите **allUsers**.
 
 1. Выберите роль .
 
-1. Нажмите .
+1. Нажмите **Save** → **Allow public access**.
 
 
 {% note info %}
@@ -60,17 +65,25 @@
 
 ## Загрузите файлы {#upload}
 
-#### Загрузить файлы
+{% cut "Загрузить файлы" %}
 
 На вкладке **Object** нажмите **Upload files** и выберите файлы на компьютере.
 
-#### Загрузить папку с файлами
+{% endcut %}
+
+{% cut "Загрузить папку с файлами" %}
 
 На вкладке **Object** нажмите **Upload folder** и выберите папку на компьютере.
 
-#### Создать папку
+{% endcut %}
+
+{% cut "Создать папку" %}
 
 На вкладке **Object** нажмите **Create folder** и укажите имя папки.
+
+{% endcut %}
+
+![](../_images/tutorials/cloud-storage/google-cloud/upload-files.png)
 
 {% note info %}
 
@@ -83,6 +96,8 @@
 ## Скопируйте ссылки {#get-files}
 
 1. Выберите загруженный файл и в столбце **Public access** нажмите **Copy URL**.
+
+    ![](../_images/tutorials/cloud-storage/google-cloud/copy-link.png)
 
 1. {% include [get-files-link-form](../_includes/concepts/amazon-cloud-storage/id-get-files/link-form.md) %}
 
