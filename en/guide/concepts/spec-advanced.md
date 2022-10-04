@@ -7,19 +7,21 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 {% endnote %}
 
 
-All aspects of the task's [lifecycle](#lifecycle) are controlled by two JavaScript classes:
+All aspects of the task's [lifecycle](#lifecycle) are controlled by three JavaScript classes:
+
+- The [Assignment](js/assignment.md) class manages task progress, processes the task page's commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of [TaskSuite](js/tasksuite.md).
+
+- [TaskSuite](js/tasksuite.md) is a "wrapper class" for the [task suite](../../glossary.md#task-page-ru) interface. You can redefine this class, like if you need to display a shared element on the page.
 
 - [Task](js/task.md) is responsible for rendering and validating an individual task. Typically, you should extend this class if a task needs to have non-standard behavior.
 
-- [TaskSuite](js/tasksuite.md) is a “wrapper class” for the [task suite](../../glossary.md#task-page-ru) interface. You can redefine this class, like if you need to display a shared element on the page.
 
-
-You can use [services](js/services.md) for specific needs (such as subscribing to keyboard presses or getting the Toloker's GPS coordinates).
+You can use [services](js/services.md) for more nuanced needs like subscribing to keypress events or getting the Toloker's GPS coordinates.
 
 
 ## Lifecycle of a task {#lifecycle}
 
-When a user starts a task, the workspace is initialized in the iframe. First, the list of tasks is requested. Then the received list is passed to the [`TaskSuite`](js/tasksuite.md) class. It creates an instance of the [`Task`](js/task.md) class for each task.
+When a Toloker starts a task, their workspace is initialized in an iframe. A messaging channel is created between the Toloka head page and the iframe. First, a list of tasks is requested and an [`Assignment`](js/assignment.md) instance is created. Then the received list is passed to the [`TaskSuite`](js/tasksuite.md) class. It creates an instance of the [`Task`](js/task.md) class for each task.
 
 #### Rendering
 
@@ -136,7 +138,5 @@ Value
 ----- | -----
 `task_id` | Task ID.
 `errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`. Example:{% if locale == "en-com" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
-
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

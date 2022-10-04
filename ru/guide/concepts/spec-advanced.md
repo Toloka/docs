@@ -7,7 +7,7 @@
 
 - [Assignment](js/assignment.md) управляет ходом выполнения задания, обрабатывает команды страницы заданий на отправку ответов, пропуск, приостановку задания и т. п. Также он создает экземпляр класса [TaskSuite](js/tasksuite.md).
 
-- [TaskSuite](js/tasksuite.md) — <q>класс-обертка</q> для интерфейса [страницы заданий](../../glossary.md#task-page-ru). Вы можете переопределить этот класс, чтобы, например, отобразить общий элемент на этой странице.
+- [TaskSuite](js/tasksuite.md) — «класс-обертка» для интерфейса [страницы заданий](../../glossary.md#task-page-ru). Вы можете переопределить этот класс, чтобы, например, отобразить общий элемент на этой странице.
 
 - [Task](js/task.md) отвечает за отрисовку и валидацию отдельного задания. Если от задания требуется нестандартное поведение, как правило, следует расширять именно его.
 
@@ -166,7 +166,6 @@ var ChildClass = extend(ParentClass, function() {
 
 ----- | -----
 `task_id` | Идентификатор задания.
-`errors` | Ошибки в формате: `"<id поля ввода>": {code: "<код ошибки>", message: "<сообщение об ошибке>"}`. Пример: {% if locale == "ru-ru" %}```no-highlight "errors": {     "colour": {     "code": "REQUIRED",     "message": "Обязательное поле"   } } ```{% endif %}{% if locale == "en-com" %}```no-highlight "errors": {     "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
-
+`errors` | Ошибки в формате: `"<id поля ввода>": {code: "<код ошибки>", message: "<сообщение об ошибке>"}`. Пример: {% if locale == "ru-ru" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Обязательное поле"   } } ```{% endif %} {% if locale == "en-com" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

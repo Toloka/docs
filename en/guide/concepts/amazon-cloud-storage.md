@@ -2,7 +2,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). {% endif %} This way you can quickly get direct links to your images to add them to the task file or instructions.
+{% if locale == "en-com" %}You can use any photo hosting service to add a small number of images, such as [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). {% endif %} This way you can quickly get direct links to your images to add them to the task file or instructions.
 
 {% endnote %}
 
@@ -115,7 +115,7 @@ You can set the lifetime of files in the bucket so that they are automatically d
 
     {% endnote %}
 
-1. In the[TSV file with tasks](pool_csv.md), paste the links in the column that matches the input data field to which this data is passed.
+1. In the [file with tasks](pool_csv.md), paste the links in the column that matches the input data field to which this data is passed.
 
     For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 

@@ -129,9 +129,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     Tolokers get paid for completing the entire task suite.
 
-    The number of tasks per suite is set when [uploading tasks](categorization.md#smart-mixing).
-	
-	{% endcut %}
+    The number of tasks per suite is set when uploading tasks.
 
     {% cut "What is a fair price for a task suite?" %}
 
@@ -237,7 +235,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. Name it `INPUT:image`. If you want to set a different name, rename the column in the source file with the results, too.
 
-    1. Save the file in `TSV` format.
+    1. Save the file.
 
 1. Upload the tasks file:
 

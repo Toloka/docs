@@ -97,13 +97,13 @@ All spaces and symbols in the file names will be replaced with codes.
     Links look like this:
     {% if locale == "en-com" %}
     ```
-    https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
+    https://storage.googleapis.com/<bucket>/<file-name>
     ```
     {% endif %}
     The link in the folder looks like this:
     {% if locale == "en-com" %}
     ```
-    https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
+    https://storage.googleapis.com/<bucket>/<file-path>/<file-name>
     ```
     {% endif %}
     {% note info %}
@@ -112,7 +112,7 @@ All spaces and symbols in the file names will be replaced with codes.
 
     {% endnote %}
 
-1. In the[TSV file with tasks](pool_csv.md), paste the links in the column that matches the input data field to which this data is passed.
+1. In the [file with tasks](pool_csv.md), paste the links in the column that matches the input data field to which this data is passed.
 
     For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 
@@ -121,7 +121,5 @@ All spaces and symbols in the file names will be replaced with codes.
     https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
     https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
     ```
-
-
 
 {% include [contact-support](../_includes/contact-support-new.md) %}

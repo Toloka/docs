@@ -4,7 +4,7 @@
 
 {% note info %}
 
-To save time, you can opt for having your control tasks [edited by Toloka experts](task_markup.md#auto-markup). In this case, markup is performed within the pool.
+To save time, you can opt for having your control tasks edited by [Toloka experts](task_markup.md#auto-markup). In this case, markup is performed within the pool.
 
 {% endnote %}
 
@@ -19,9 +19,9 @@ Use control tasks to assign a [skill](../../glossary.md#skill-ru) to Tolokers ba
 - Tolokers need to attach a file to their assignment.
 - Tolokers need to transcribe text.
 - Tolokers need to select objects in a photo.
-- Tasks don't have a correct or incorrect response. For example: “Which image do you like best?” or “Choose the page design option that you like best”.
+- Tasks don't have a correct or incorrect response. For example: "Which image do you like best?" or "Choose the page design option that you like best".
 
-## Rule settings {#rule-golden}
+## How to configure {#rule-golden}
 
 {% note warning %}
 
@@ -38,7 +38,7 @@ Overview
 ----- | -----
 {% if locale == "en-com" %}**Recent control and training task responses to use**{% endif %} | The number of the Toloker's last responses to control tasks.<br/><br/>If this field is not filled in, the calculation includes only control task responses in the pool to which the rule applies.<br/><br/>If the field is filled in, the corresponding number of control task responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.<br/><br/>[Learn more](remember-values.md) about how this field works.
 {% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:<br/>- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed control and [training](../../glossary.md#training-task-ru) tasks.<br/>    <br/>- {% if locale == "en-com" %}**correct responses (%)**{% endif %} — The percentage of correct responses in training and control tasks (from 0 to 100).<br/>    <br/>- {% if locale == "en-com" %}**incorrect responses (%)**{% endif %} — The percentage of incorrect responses in training and control tasks (from 0 to 100).<br/>    <br/>- {% if locale == "en-com" %}**number of control responses**{% endif %} — The number of completed control tasks.<br/>- {% if locale == "en-com" %}**correct control responses (%)**{% endif %} — The percentage of correct responses in control tasks (from 0 to 100).<br/>- {% if locale == "en-com" %}**incorrect control responses (%)**{% endif %} — The percentage of incorrect responses in control tasks (from 0 to 100).<br/><br/>To add multiple conditions, click ![](../_images/add.svg).
-{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in control tasks as a skill value.<br/>    <br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).<br/>    <br/>- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
+{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in control tasks as a skill value.<br/>    <br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the Toloker's [skill](nav.md).<br/>    <br/>- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
 
 
 ## Examples of rules {#examples}
@@ -56,7 +56,7 @@ Solutions:
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if you don't reject them manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -122,7 +122,7 @@ We recommend adding at least 1% of control tasks in the pool. And for small pool
 
 #### Why's that?
 
-Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
+Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites that the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same degree.
 
 There shouldn't be too few pages available. Otherwise:
 
@@ -133,21 +133,21 @@ There shouldn't be too few pages available. Otherwise:
 
 #### A large pool with 1% of control tasks (good)
 
-There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, a user can complete up to 100 suites.
+There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 100 suites.
 
 #### A small pool with 1% control tasks (bad)
 
-There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can only complete 1 suite.
+There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means each Toloker can only complete 1 suite.
 
 #### A small pool with 10% control tasks (good)
 
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
+There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 10 suites.
 
 If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
 
 #### What for
 
-In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
+In a large pool with few control tasks, there might be a situation when a Toloker who has completed a lot of tasks in the project stops getting new task suites. This happens when the Toloker completes all control tasks in the pool.
 
 {% note info %}
 
@@ -160,7 +160,7 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task-ru) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
-As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
+As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control and training task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
 
 #### Should I create a skill for every pool?
 
@@ -172,11 +172,11 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
 
     - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
 
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
+    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control and training task responses to use** field empty.
 
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
+    This option is available only for skills on control tasks. To use it, fill in the **Recent control and training task responses to use** field in pool quality control rules.
 
 
 #### Can I use a skill beyond a particular pool or project and apply it to other projects as well?
@@ -191,7 +191,7 @@ To download only the control tasks (if you completed them in the interface), go 
 
 #### If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?
 
-If the Toloker already got paid for the tasks, the money can't be refunded to you.
+If the Toloker already got paid for the tasks, you can't get your money back.
 
 #### When I export a project from the Sandbox, the task files are not exported. Is this how it's supposed to work? I suddenly lost the markup of the control tasks that I created in the sandbox.
 
@@ -200,6 +200,5 @@ The tasks themselves are not exported, only the project configuration and the se
 #### If I upload tasks using smart mixing, does it mean that the same file should contain both the control tasks and general tasks, or can I upload them separately?
 
 Smart mixing is set up when you upload tasks to the pool. After creating a pool, click **Upload** and select the method for generating task suites. You can upload them using separate files or one file, arranging them in any order.
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

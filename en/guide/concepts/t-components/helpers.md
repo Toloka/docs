@@ -62,7 +62,7 @@ For example, the values of the two text input fields are written as JSON objects
 {{field type="input" name="result.input2"}}
 ```
 
-The [TSV file](../../../glossary.md#tsv-file-definition-ru) with responses will contain the following in the `result` column:{% if locale == "en-com" %}
+The file with responses will contain the following in the `result` column:{% if locale == "en-com" %}
 ```
 {result {"input1": "<Toloker's response", "input2": "Toloker's response>"}}
 ```

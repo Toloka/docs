@@ -16,7 +16,7 @@ Set up the process to avoid storing data on Yandex servers. To do this:
 1. Set up a server to return the task content based on IDs.
 1. In the task interface, add code that sends IDs to the server and displays the content received.
 
-For instance, you can store text comments on your server and use the TSV file with tasks to pass only the comment IDs. As a result, only the ID+result pairs are saved in the Toloka database, but these pairs don't have any commercial value in the absence of input data.
+For instance, you can store text comments on your server and use the file with tasks to pass only the comment IDs. As a result, only the ID+result pairs are saved in the Toloka database, but these pairs don't have any commercial value in the absence of input data.
 
 ## Get more features on request {#help-by-request}
 
@@ -28,7 +28,5 @@ For instance, you can store text comments on your server and use the TSV file wi
     - You need images or other files for your tasks, and you want to store them on your own server.
     - You need to load dynamic data in the tasks.
     - You want to log user actions.
-
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

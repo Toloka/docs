@@ -2,7 +2,6 @@
 
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-
 Базовый класс `Task` отвечает за [интерфейс задания](../../../glossary.md#task-interface-ru). Класс доступен в глобальной переменной `window.TolokaTask`.
 
 Методы:
@@ -16,12 +15,15 @@
 Конструктор [интерфейса задания](../spec.md).
 
 Параметры:
+
 - `options.task` — модель задания [Task](../spec-advanced.md#obj-task).
 - `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data-ru), интерфейса заданий.
 - `options.workspaceOptions` — параметры инициализации рабочего пространства исполнителя.
 
 #### destroy()
+
 Освобождает занятые в глобальном пространстве ресурсы, сервисы, обработчики событий. Вызывает [`onDestroy()`](#onDestroy).
+
 #### focus()
 
 Реализует логику установки фокуса на задание, вызывает метод `[onFocus()](#onFocus)`.
@@ -48,17 +50,12 @@ this.getAssignment().skip()
 #### Пример
 
 ```javascript
-// получаем спецификации всех обязательных к заполнению полей:
+// getting specifications for all required fields:
 let outputSpec = this.getOptions().specs.output_spec,
      requiredFields = Object.keys(outputSpec)
                             .filter(key => outputSpec[key].required)
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
-
-#### getProxyUrl(path)
-
-Возвращает полный URL для доступа к данным на прокси-сервере. Параметр:
-- `path` — относительный путь к файлу.
 
 #### getSavedState()
 
@@ -122,72 +119,43 @@ let myId = this.getTask().id
 ```
 
 #### onBlur()
+
 Вызывается после удаления фокуса.
+
 #### onDestroy()
+
 Вызывается после уничтожения задания (`[destroy()](#destroy)`). Наиболее подходящий метод для очистки занятой памяти, удаления глобальных обработчиков событий, DOM-элементов и т. п.
+
 #### onFocus()
+
 Вызывается после установки фокуса.
+
 #### onKey(key)
 Передает нажатую клавишу. Параметр:
+
 - `key` — буквенно-числовой символ, нажатый на клавиатуре. Может быть использован как горячая клавиша.
 
 #### onPause()
+
 Вызывается после приостановки выполнения задания.
+
 #### onRender()
+
 Вызывается после отрисовки задания (`[render()](#render)`). Все манипуляции с DOM-элементом задания следует производить здесь.
+
 #### onResume(savedState)
+
 Вызывается после возобновления выполнения задания.
+
 #### onValidationFail(errors)
+
 Вызывается после неудачной валидации ответа исполнителя. Параметр:
+
 - `errors` — ошибки валидации ответа исполнителя `[SolutionValidationError](../spec-advanced.md#obj-solutionvalidationerror)`.
 
 #### pause()
 
 Приостанавливает выполнение задания. Сохраняет промежуточное состояние в локальном хранилище браузера (`saveState`) и вызывает метод `onPause`.
-
-#### proxy(path, options)
-
-Создает GET- или POST-запрос через прокси.
-
-Параметры:
-
-- `path` — путь для запроса (строка).
-- `options` — параметры запроса (объект). Подробнее читайте в описании параметров [Jquery Ajax](https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).
-
-Возвращает объект `promise`.
-
-{% note info %}
-
-Некоторые возможности (например, таймауты или кастомные заголовки) не поддерживаются.
-
-{% endnote %}
-
-
-#### Пример
-
-```javascript
-// need to find user logins which start with 'jones' and 'smith' (not more than 10 of each instance)
-// we make two POST requests to the search service
-// then wait for results
-
-let promises = [],
-     patterns = ['jones*', 'smith*'];
-
-patterns.forEach(pattern => promises.push(Promise.resolve(this.proxy('myproxy/search', {
-   type: 'POST',
-   contentType: 'application/json',
-   dataType: 'json',
-   data: JSON.stringify({
-       query: pattern,
-       limit: 10
-   }),
-   processData: false
-}))));
-
-Promise.all(promises)
-       .then(results => console.log(results))
-       .catch(error => console.error(error));
-```
 
 #### render()
 
@@ -204,6 +172,7 @@ Promise.all(promises)
 #### setSolution(solution)
 
 Устанавливает ответы. Параметр:
+
 - `solution` — ответ исполнителя на задание (`[Solution](../spec-advanced.md#obj-solution)`).
 
 #### setSolutionOutputValue(fieldName, value)
@@ -228,11 +197,13 @@ Promise.all(promises)
 #### template(data)
 
 Шаблонизатор задания. В [HTML-интерфейсе](../spec.md) задания заменяет вхождения типа `${fieldX}` на соответствующее значение с ключем `fieldX` из параметра `data`. Возвращает HTML-интерфейс задания в виде строки. Параметр:
+
 - `data` — объект с данными для подстановки в шаблон.
 
 #### validate(solution)
 
 Валидирует ответы согласно параметрам выходных данных. Возращает [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror), если ответы не корректные, или `null`. Параметр:
+
 - `solution` — ответ исполнителя на задание. Если не передан, то используется текущее ([`getSolution()`](#getSolution)).
 
 {% include [contact-support](../../_includes/contact-support-help.md) %}

@@ -9,7 +9,7 @@
 Стало:
 ![](../_images/tutorials/advanced-features/af-attach-2.png)
 
-Для вашего удобства мы подготовили код для шаблона <q>Мониторинг объектов в организациях</q>, в котором каждое из полей добавлено по одному разу в первую кнопку для ответа. Используйте этот код для самопроверки. Наши вставки в этом коде вы можете найти поиском слова <q>кастомизация</q>.
+Для вашего удобства мы подготовили код для шаблона «Мониторинг объектов в организациях», в котором каждое из полей добавлено по одному разу в первую кнопку для ответа. Используйте этот код для самопроверки. Наши вставки в этом коде вы можете найти поиском слова «кастомизация».
 
 #### Готовый код
 
@@ -495,7 +495,7 @@
     </div>
 {{/if}}
 ```
-{% endif %}{% if locale == "en-com" %}
+{% elsif locale == "en-com" %}
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -1637,7 +1637,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
-{% endif %}{% if locale == "en-com" %}
+{% elsif locale == "en-com" %}
 ```javascript
 var texts = {
     'task_title': 'Monitoring objects in organizations',
@@ -2716,7 +2716,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 #### Редактирование выходной спецификации
 
-Добавьте новые переменные с типом <q>файл</q> в выходную спецификацию. В них будут записываться загружаемые исполнителем файлы. Если необходимо, чтобы исполнитель имел возможность загрузить больше одного файла, то отметьте специальный флажок <q>массив</q> для переменной.
+Добавьте новые переменные с типом «файл» в выходную спецификацию. В них будут записываться загружаемые исполнителем файлы. Если необходимо, чтобы исполнитель имел возможность загрузить больше одного файла, то отметьте специальный флажок «массив» для переменной.
 
 `new_imgs` — массив файлов для фотографий;
 
@@ -2738,7 +2738,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
@@ -2746,9 +2746,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     ```
     {% endif %}
-1. Найдите блок `main` (он начинается со строки `<div class="main">`). Внутри него расположены блоки `main__block`, каждый из которых описывает одну из кнопок. Например, в шаблоне <q>Мониторинг объектов в организациях</q> есть 3 кнопки для ответа, значит, в блоке `main` у этого шаблона будет 3 блока `main__block` для каждой из кнопок.
+1. Найдите блок `main` (он начинается со строки `<div class="main">`). Внутри него расположены блоки `main__block`, каждый из которых описывает одну из кнопок. Например, в шаблоне «Мониторинг объектов в организациях» есть 3 кнопки для ответа, значит, в блоке `main` у этого шаблона будет 3 блока `main__block` для каждой из кнопок.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне <q>Мониторинг объектов в организациях</q> 3 кнопки называются `btn_ok`, `btn_no_obj` и `btn_no_org`. Запомните наименование той кнопки, в код которой добавляете новые поля.
+    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Мониторинг объектов в организациях» 3 кнопки называются `btn_ok`, `btn_no_obj` и `btn_no_org`. Запомните наименование той кнопки, в код которой добавляете новые поля.
 
     Внутри блока `main__block` расположен блок `main__content`, который содержит все поля для выбранной кнопки. Описание каждого отдельного поля расположено в блоках `main__content-block`.
 
@@ -2797,7 +2797,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- photo -->
     <div class="main__content-block">
@@ -2858,7 +2858,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     {{/if}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
@@ -2872,7 +2872,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {% endif %}
     Переменная `verdict` указана в выходной спецификации, в нее будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
 
-    Например, в шаблоне <q>Мониторинг объектов в организациях</q> для трех кнопок описаны три выходных значения: `ok`, `no_obj` и `no_org`.
+    Например, в шаблоне «Мониторинг объектов в организациях» для трех кнопок описаны три выходных значения: `ok`, `no_obj` и `no_org`.
 
     Блоки `review__block` содержат описание каждого из полей для данной кнопки.
 
@@ -2929,7 +2929,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- photo -->
     <div class="review__block">
@@ -2994,7 +2994,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ```
     'свойство': 'значение'
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     'property': 'value'
     ```
@@ -3003,9 +3003,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне <q>Мониторинг объектов в организациях</q> 3 кнопки называются `btn_ok`, `btn_no_obj` и `btn_no_org`. Запомните наименование той кнопки, в код которой добавляете новый текст.
+    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Мониторинг объектов в организациях» 3 кнопки называются `btn_ok`, `btn_no_obj` и `btn_no_org`. Запомните наименование той кнопки, в код которой добавляете новый текст.
 
-    Например, в шаблоне <q>Мониторинг объектов в организациях</q> тексты для кнопки `btn_ok` расположены в следующем блоке кода:
+    Например, в шаблоне «Мониторинг объектов в организациях» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
     {% if locale == "ru-ru" %}
     ```
     var texts = {
@@ -3020,7 +3020,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
     },
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     var texts = {
     //<common header text>
@@ -3052,7 +3052,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     'description': 'Запишите аудио'
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     'question_new_imgs': {
     'title': 'Photos',
@@ -3078,7 +3078,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     if (<field checking condition>) {
     ...
@@ -3114,7 +3114,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     // photo
     if (outputValues.new_imgs && outputValues.new_imgs.length > 0) {
@@ -3143,7 +3143,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {% endif %}
 1. Добавьте валидацию.
 
-    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне <q>Мониторинг объектов в организациях</q> этот код выглядит так:
+    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне «Мониторинг объектов в организациях» этот код выглядит так:
     {% if locale == "ru-ru" %}
     ```
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {
@@ -3164,7 +3164,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     // код проверки полей кнопки no_org
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {
     this.errors = this.addError('No answer selected', "verdict", this.errors);
@@ -3194,7 +3194,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     // код проверки поля
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     if (!solution... ) {
     // field validation code
@@ -3218,7 +3218,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     this.errors = this.addError('Нужно приложить аудио', 'new_audio', this.errors);
     }
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     if (!solution.output_values.new_imgs || solution.output_values.new_imgs.length === 0) {
     this.errors = this.addError('Attach photos', "new_imgs", this.errors);

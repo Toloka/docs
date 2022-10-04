@@ -158,7 +158,7 @@ Select this filter if the browser type determines whether Tolokers match your pr
 
 Requesters can't see the full details about specific Tolokers. So you can't see information like the date of birth, gender, last name, or first name. However, you can use filters by date of birth and gender (in the pool settings). This way you can select a group of Tolokers without accessing the personal information of individual Tolokers. This decreases the risk of user de-anonymization.
 
-#### Can I set up a task to be visible to Tolokers with certain demographic and geo parameters? For example, “Moscow only, 30-45 years old”.
+#### Can I set up a task to be visible to Tolokers with certain demographic and geo parameters? For example, "Moscow only, 30-45 years old".
 
 You can do that. To select Tolokers for the pool, use [filters](filters.md).
 
@@ -170,7 +170,7 @@ If the Toloker mismatches your preset filter, they can't see the task. You can o
 
 Tasks from an open pool are available to all Tolokers matching your pool [filters](filters.md). You can restrict access, like by using a skill.
 
-#### Can I select Tolokers from a specific city of residence or is the only option “Region by IP”?
+#### Can I select Tolokers from a specific city of residence or is the only option "Region by IP"?
 
 Yes, you can do that. In the [filters](filters.md), select . Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
 
@@ -180,7 +180,7 @@ Yes, of course — you can use the same skill for different projects. But most o
 
 #### Skill
 
-#### I want to calculate a skill based on performance in multiple projects. Is that possible? If it is, can I use “Aggregation by skill”?
+#### I want to calculate a skill based on performance in multiple projects. Is that possible? If it is, can I use "Aggregation by skill"?
 
 If you mean multiple different projects, you can't do that.
 
@@ -204,7 +204,7 @@ Your Tolokers will need to complete the training again.
 
 You can assign a skill to these people based on their performance in the previous pools. Use this skill as a [filter](filters.md) in the new pool.
 
-#### How do I set up a filter so that the pool is available to Tolokers who don't have a specific skill (like a “spammer”)?
+#### How do I set up a filter so that the pool is available to Tolokers who don't have a specific skill (like a "spammer")?
 
 Specify this skill as a [filter](filters.md), but leave the value field empty (this is equivalent to absence of the skill).
 

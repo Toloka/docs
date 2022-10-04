@@ -1,14 +1,14 @@
 # Receiving responses
 
-You can [download Tolokers' responses in a TSV file](../../glossary.md#tsv-file-definition-ru) as tasks are completed.
+You can download Tolokers' responses in a file as tasks are completed.
 
 If tasks were distributed with an [overlap](../../glossary.md#overlap-ru) of more than 2, run [aggregation](result-aggregation.md). Toloka will process all Tolokers' responses for the task and form the resulting response.
 
-## Getting the TSV file with responses {#tsv}
+## Getting the file with responses {#tsv}
 
-To get a TSV file with Tolokers' responses, click the {% if locale == "en-com" %}**Download results**{% endif %} button on the [pool](../../glossary.md#pool-ru) page.
+To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**Download results**{% endif %} button on the [pool](../../glossary.md#pool-ru) page.
 
-#### Fields in the TSV file with responses
+#### Fields in the file with responses
 
 - `INPUT:<name of the [input data](incoming.md) field>` — Input data for tasks.
 
@@ -31,7 +31,7 @@ To get a TSV file with Tolokers' responses, click the {% if locale == "en-com" %
     - `ASSIGNMENT:status` — Task status: `SUBMITTED` — completed, `APPROVED` — accepted, `REJECTED` — declined.
 
 
-#### Sample TSV file
+#### Sample file
 ![](../_images/results/tsv-result.png)
 
 {% note warning %}
@@ -44,7 +44,7 @@ The responses submitted by the banned Toloker before the ban will be taken into 
 
 ## Getting files {#file-download}
 
-If the Tolokers were asked to upload files, the TSV file with responses will contain IDs of the files received from Tolokers. To download files on your computer, click the  button on the pool page.
+If the Tolokers were asked to upload files, the file with responses will contain IDs of the files received from Tolokers. To download files on your computer, click the  button on the pool page.
 
 You can download all files in the pool in one archive up to 4 GB in size. If the archive is too large (more than 4 GB), use the following tips:
 
@@ -96,7 +96,7 @@ You can't accept the correct answers and pay for this part ($0.08). Response pag
 
 #### How can I notify the Toloker of changes in the instructions?
 
-Add the notification to the project description (for example: “Attention! The instructions changed”) and send a message to all the people who completed your tasks. To do this:
+Add the notification to the project description (for example: "Attention! The instructions changed") and send a message to all the people who completed your tasks. To do this:
 - Assign them a hidden skill, or use an existing [skill](nav-assign.md) linked to the pool.
 - Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
@@ -104,26 +104,26 @@ Add the notification to the project description (for example: “Attention! The 
 #### How can I increase the project's rating?
 
 The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
-#### Low rating for “Will you take similar tasks in the future”
+#### Low rating for "Will you take similar tasks in the future"
 
 Perhaps the Tolokers found your tasks too difficult. Try to simplify them.
 
-#### Low rating for “Clarity of instructions”
+#### Low rating for "Clarity of instructions"
 
 Shorten instructions and rewrite using simpler language. Add pictures and examples.
 
-#### Low rating for “Task interface usability”
+#### Low rating for "Task interface usability"
 
 Make the interface [more user-friendly](spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
 
 Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
 
-#### Low rating for “Communication with the requester”
+#### Low rating for "Communication with the requester"
 
 Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
 If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
 
-#### Why do I get blank spaces inside my TSV file?
+#### Why do I get blank spaces inside my file?
 
 When you upload a file with rows, double quotes indicate an area where you can use special characters (tabs or line breaks). Toloka merges everything in between the quotes into one row to make up one task. To use double quotes inside such an area, you need to escape them with another quote. [Read more here](pool_csv.md#string).
 
@@ -136,6 +136,5 @@ The results show the responses of all users, including those who are banned. To 
 #### Can I get the exact start and end time from the Toloker with the results of the task?
 
 When you download the results file, select the **Start time** and **Submit time** checkboxes. The downloaded file will include the exact UTC date and time when the Toloker accepted the assignment and submitted it.
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

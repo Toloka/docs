@@ -45,9 +45,9 @@ For tasks that use recognition of passports or questionnaires with personal info
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I change my account type from “Requester” to “Toloker”?" %}
+#### How do I change my account type from "Requester" to "Toloker"?
 
-You can't change the account type from “Requester” to “Toloker”.
+You can't change the account type from "Requester" to "Toloker".
 
 If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
 

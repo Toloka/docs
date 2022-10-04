@@ -13,7 +13,7 @@ You may need additional projects for your task, such as dataset pre-check or che
 
 You may need additional settings for your project, like to add a new button with a particular scenario or a section for attaching files. Learn more in [Customization examples](advanced-features.md).
 
-Use the “Monitoring outdoor objects of interest” template when you need to:
+Use the "Monitoring outdoor objects of interest" template when you need to:
 
 - Monitor equipment quality and condition.
 
@@ -253,7 +253,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Upload tasks {#download-task}
  {% if locale == "en-com" %}
-Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file with tasks](../../glossary.md#tsv-file-definition-ru).
 {% endif %}
 1. Click **Upload**. In the window that opens, you can also download a sample file.
 

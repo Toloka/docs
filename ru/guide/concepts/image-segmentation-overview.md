@@ -15,7 +15,7 @@
 
 1. **Создание [пула заданий](../../glossary.md#pool-ru) в проекте.** В пуле вы настраиваете [контроль качества](../../glossary.md#quality-control-ru) и [фильтры](../../glossary.md#filtering-ru) по исполнителям.
 
-1. **Загрузка [TSV-файла](https://tlk.s3.yandex.net/wsdm2020/dataset_1.tsv) с заданиями в пул.**
+1. **Загрузка [файла с заданиями](https://tlk.s3.yandex.net/wsdm2020/dataset_1.tsv) в пул.**
 
 1. **Запуск пула.**
 

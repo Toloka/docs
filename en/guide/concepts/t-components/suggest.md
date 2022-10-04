@@ -106,7 +106,7 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
     }
     ```
 
-1. [Escape](../pool_csv.md#json) the data and add it to the [TSV file with tasks](../../../glossary.md#tsv-file-definition-ru).
+1. [Escape](../pool_csv.md#json) the data and add it to the [file with tasks](../../../glossary.md#tsv-file-definition-ru).
     #### Example
     ![](../../_images/location-job/pool_csv/main_tsv2.png)
 

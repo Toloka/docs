@@ -52,7 +52,7 @@
     "value": "bad"
     },
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```json
     "label": "What is the cat's mood?",
     "options": [
@@ -80,7 +80,7 @@
     "value": "bad"
     },
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```json
     "label": "Are there shoes in the image?",
     "options": [
@@ -126,7 +126,7 @@
     {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
     {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
 
@@ -140,7 +140,7 @@
 
     Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% elsif locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
     {% note info %}
 
@@ -161,7 +161,7 @@
     Если нет, нажмите **Нет**.
     Например, на фотографии есть обувь, поэтому правильный ответ **Да**.
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     Look at the picture and determine if there are **shoes** in the picture.
     If there are, click **Yes**.
@@ -203,7 +203,7 @@
 
     {% include [toloka-requester-source-filter-client-about](../_includes/toloka-requester-source/id-toloka-requester-source/filter-client-about.md) %}
 
-1. (опционально) В разделе {% if locale == "ru-ru" %}**Соотношение скорости и качества**{% endif %}{% if locale == "en-com" %}**Speed/quality balance**{% endif %} укажите желаемый уровень качества. Повышение уровня качества может снизить скорость выполнения заданий, так как пул будет доступен меньшему числу исполнителей. Подробнее об этом читайте в разделе [Соотношение скорости и качества](adjust.md).
+1. (опционально) В разделе {% if locale == "ru-ru" %}**Соотношение скорости и качества**{% elsif locale == "en-com" %}**Speed/quality balance**{% endif %} укажите желаемый уровень качества. Повышение уровня качества может снизить скорость выполнения заданий, так как пул будет доступен меньшему числу исполнителей. Подробнее об этом читайте в разделе [Соотношение скорости и качества](adjust.md).
 
 1. В блоке **Цена** в поле **Цена за страницу заданий** укажите `0.01`.
 

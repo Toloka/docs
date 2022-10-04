@@ -4,13 +4,13 @@ You can turn a general task into a [control task](../../glossary.md#control-task
 
 #### What makes a good hint?
 
-Avoid wordings like: “You answered incorrectly, please provide the correct response”. The Toloker learns when the hint explains the essence of their mistake.
+Avoid wordings like: "You answered incorrectly, please provide the correct response". The Toloker learns when the hint explains the essence of their mistake.
 
 Make the hints clear. Explain which response should be chosen and why.
 
 {% note alert %}
 
-Task markup is available only for [training pools](train.md) and pools uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
+Task markup is available only for [training pools](train.md) and pools uploaded with ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endnote %}
 
@@ -104,13 +104,13 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 Overview | How to fix
 ----- | -----
 ``` "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" ```
-**Extra tabs.**<br/><br/>If the TSV file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you will get en error message.<br/><br/>For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the TSV file after the link, you get 3 columns, 2 of which are extra. | Remove extra column separators in the above example — both `\t\t` characters.
+**Extra tabs.**<br/><br/>If the file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you will get en error message.<br/><br/>For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are extra. | Remove extra column separators in the above example — both `\t\t` characters.
 ``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```
 **The number of fields in the header and in the row doesn't match.** | Make sure that:<br/><br/>- The number of tabs in the file structure is correct.<br/>- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+**Invalid data in a "link" ("url") field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).
 
@@ -122,7 +122,7 @@ You can specify the number of tasks on the page when you upload your tasks to th
 
 Use the button **Upload review results** to upload your file. You can see the format [here](accept.md).
 
-Assignments are reviewed in a TSV file.
+Assignments are reviewed in a file.
 
 #### Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?
 
@@ -136,7 +136,7 @@ If you are creating control tasks, fill out the `GOLDEN` columns with the correc
 
 If you are creating a training task, you also need to fill in the `HINT:text` column. For the general tasks you don't need any columns other than `INPUT`, so feel free to delete them.
 
-The file format must be TSV, and the encoding must be UTF-8.
+The file format must be TSV, XLSX or JSON, and the encoding must be UTF-8.
 
 For more information about creating the file, see the [Guide](pool_csv.md). If there are errors during the upload, look up the error description on this [page](task_upload.md).
 
@@ -174,7 +174,7 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be "reassessed".
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 
@@ -227,6 +227,5 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task-ru) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
 As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -193,7 +193,7 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
     ```
 	
     {% endif %}
-	
+
     {% note info %}
 
     If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) button on the toolbar.
@@ -280,7 +280,7 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
     ```
     [{""type"":""rectangle"",""data"":{""p1"":{""x"":0.2421,""y"":0.98871},""p2"":{""x"":0.93663,""y"":0.8776}}}]
     ```
-    and save the file in `TSV` format.
+    and save the file.
 
     {% note info %}
 
@@ -305,6 +305,7 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
     1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
 
     1. On the pool page, click {% if locale == "en-com" %}**Preview**{% endif %}. Make sure that the task displays images with the selected objects.
+
     {% note info %}
 
     If there are no outlined objects, make sure that quotes are properly used in the **INPUT:selection** column in the file. Make sure that the [interface parameters](#task-interface) are set correctly.
@@ -415,6 +416,5 @@ You can check the results in two ways:
 ## What's next {#what-next}
 
 - Learn more about [decomposition](solution-architecture.md).
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

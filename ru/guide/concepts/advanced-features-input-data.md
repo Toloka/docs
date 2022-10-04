@@ -9,7 +9,7 @@
 Стало:
 ![](../_images/tutorials/advanced-features/af-input-data-2.png)
 
-Для вашего удобства мы подготовили код для шаблона <q>Мониторинг объектов в полях</q>, в котором добавлено два новых входных поля. Используйте этот код для самопроверки. Наши вставки в этом коде вы можете найти поиском слова <q>кастомизация</q>.
+Для вашего удобства мы подготовили код для шаблона «Мониторинг объектов в полях», в котором добавлено два новых входных поля. Используйте этот код для самопроверки. Наши вставки в этом коде вы можете найти поиском слова «кастомизация».
 
 #### Готовый код
 
@@ -459,7 +459,7 @@
     </div>
 {{/if}}
 ```
-{% endif %}{% if locale == "en-com" %}
+{% elsif locale == "en-com" %}
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -1652,7 +1652,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
-{% endif %}{% if locale == "en-com" %}
+{% elsif locale == "en-com" %}
 ```javascript
 var texts = {
     'task_title': 'Field objects monitoring',
@@ -2422,7 +2422,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ...
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
@@ -2476,7 +2476,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- In one line in acceptance mode -->
     <div class="info__review-block">
@@ -2518,7 +2518,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     </div>
     </div>
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```html
     <!-- One after another in performer mode -->
     <div class="info__block">
@@ -2549,7 +2549,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     ```
     'свойство': 'значение'
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```
     'property': 'value'
     ```
@@ -2562,7 +2562,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     'new_input_1__title': 'Входное поле 1:',
     'new_input_2__title': 'Входное поле 2:',
     ```
-    {% endif %}{% if locale == "en-com" %}
+    {% elsif locale == "en-com" %}
     ```javascript
     'new_input_1__title': 'Input field 1:',
     'new_input_2__title': 'Input field 2:',

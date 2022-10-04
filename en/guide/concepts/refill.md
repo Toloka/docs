@@ -141,7 +141,7 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
 1. Click {% if locale == "en-com" %}**Top up**{% endif %}.
 
-    #### Map
+    #### Сard
 
     1. Enter your card details.
 
@@ -180,7 +180,7 @@ The full list can be found on the site of the [USA Department of the Treasury](h
     If you chose , you will receive an invoice with payment details.
 
     1. Click the {% if locale == "en-com" %}**Pay**{% endif %} button.
-    If you chose as the , you will be redirected to the PayPal site for payment.
+    If you chose , you will be redirected to the PayPal site for payment.
 
     If you chose , enter your bank card information and complete the payment. The money will be converted at your bank's rate if the card currency is not dollars.
 

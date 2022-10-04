@@ -2,8 +2,7 @@
 
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-
-<q>Класс-обертка</q> для [страницы заданий](../../../glossary.md#task-page-ru), создает экземпляры классов заданий. Вы можете переопределить этот класс, например, чтобы отобразить общий элемент на странице с заданиями или получить больший контроль над заданиями (нестандартные горячие клавиши или т.п.).
+«Класс-обертка» для [страницы заданий](../../../glossary.md#task-page-ru), создает экземпляры классов заданий. Вы можете переопределить этот класс, например, чтобы отобразить общий элемент на странице с заданиями или получить больший контроль над заданиями (нестандартные горячие клавиши или т.п.).
 
 Основная задача класса `TaskSuite` — отрисовать задания на странице (`[render()](#render)`). Через него также происходит сбор ответов (`[getSolutions()](#getSolutions)`), валидация (`[validate(solutions)](#validate)`) и управление горячими клавишами ([`focusNextTask()`](#focusNextTask), [`onKey(key)`](#onKey) и т. д.).
 
@@ -16,6 +15,7 @@
 Конструктор базового класса страницы заданий.
 
 Параметры:
+
 - `options.task` — массив моделей задания [Task](../spec-advanced.md#obj-task).
 - `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data-ru), интерфейса заданий.
 - `options.assignmentId` — идентификаторы заданий на странице.
@@ -24,13 +24,21 @@
 - `options.solutions` — массив ответов [`Solution`](../spec-advanced.md#obj-solution). Может быть пуст.
 
 #### destroy()
+
 Уничтожает все задания страницы. Освобождает занятые в глобальном пространстве ресурсы, сервисы, обработчики событий. Вызывает [`onDestroy()`](#onDestroy).
+
 #### focusNextTask()
+
 Устанавливает фокус на следующее задание.
+
 #### focusPreviousTask()
+
 Устанавливает фокус на предыдущее задание.
+
 #### focusTask(index)
+
 Устанавливает фокус на задание по индексу. Параметр:
+
 - `index` — индекс задания на странице.
 
 #### getAssignment()
@@ -67,17 +75,12 @@ elements.forEach(el => el.classList.remove('some_class'));
 #### Пример
 
 ```javascript
-// получаем спецификации всех обязательных к заполнению полей:
+// getting specifications for all required fields:
 let outputSpec = this.getOptions().specs.output_spec,
      requiredFields = Object.keys(outputSpec)
                             .filter(key => outputSpec[key].required)
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
-
-#### getProxyUrl(path)
-
-Возвращает полный URL для доступа к данным на [прокси-сервере](../prepare-data.md). Параметр:
-- `path` — относительный путь к файлу.
 
 #### getSolutions()
 
@@ -96,7 +99,9 @@ let outputSpec = this.getOptions().specs.output_spec,
 Возвращает DOM-элемент набора заданий (`div.task-suite`). Если DOM-элемент отсутствует, то метод создает его.
 
 #### getTasksIndexed()
+
 Возвращает задания, индексированные по идентификаторам: `"<taskId>": [Task](../spec-advanced.md#obj-task), …`
+
 #### getWorkspaceOptions()
 
 Возвращает объект с настройками рабочего пространства исполнителя.
@@ -104,72 +109,49 @@ let outputSpec = this.getOptions().specs.output_spec,
 Наиболее важные настройки:
 
 - `agent` — для заданий в полной версии принимает значение `FRONTEND`, в мобильном приложении для Android — `ANDROID` и т. д.
-- `isReadOnly` — флаг режима <q>только для чтения</q> (например, просмотр истории выполненных заданий).
+- `isReadOnly` — флаг режима «только для чтения» (например, просмотр истории выполненных заданий).
 - `isReviewMode` — флаг режима ревью (например, приемка выполненных заданий). Этой настройкой и `isReadOnly` удобно пользоваться, если вы, например, захотите изменить компоновку шаблона в режиме просмотра истории.
 - `language` — двухбуквенный код языка, выбранного исполнителем в настройках Толоки. Им удобно пользоваться для создания многоязычных шаблонов.
 - `origin` — FQDN родительской страницы.
 
 #### initHotkeys()
+
 Инициализатор обработчиков горячих клавиш:
+
 - Устанавливает фокус на предыдущее задание по стрелке влево/вверх.
 - Устанавливает фокус на следующее задание по стрелке вправо/вниз.
 - Передает нажимаемые клавиши активному заданию.
 - Устанавливает фокус на первое задание.
 
 #### onDestroy()
+
 Метод, который вы можете переопределить, чтобы выполнить свой код при уничтожении набора заданий. Вызывается после уничтожения страницы (`[destroy()](#destroy)`). Наиболее подходящий метод для очистки занятой памяти, удаления глобальных обработчиков событий, DOM-элементов и т. п.
+
 #### onKey(key)
+
 Передает нажатую клавишу активному заданию.
+
 #### onPause()
+
 Метод, который вы можете переопределить, чтобы выполнить свой код при остановке работы страницы заданий.
+
 #### onRender()
+
 Метод, который вы можете переопределить, чтобы выполнить свой код при отрисовке страницы заданий. Вызывается после отрисовки страницы (`[render()](#render)`). Все манипуляции с DOM-элементом задания следует производить здесь.
+
 #### onResume()
+
 Метод, который вы можете переопределить, чтобы выполнить свой код при возобновлении работы страницы заданий.
+
 #### onValidationFail(errors)
+
 Вызывается после неудачной валидации с описанием ошибок в параметре. Параметр:
+
 - `errors` — массив ошибок [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror).
 
 #### pause()
+
 Вызывает метод `pause()` для каждого задания в наборе. Также вызывает метод `[onPause()](#onPause)`.
-#### proxy(path, options)
-
-Делает GET/POST запрос через прокси. Возвращает результат запроса в виде объекта. Параметры:
-- Строка `path` — путь запроса.
-- Объект `options` — параметры запроса, см. [описание параметров](https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings) Jquery Ajax.
-
-{% note warning %}
-
-Некоторые возможности (например, таймауты или кастомные заголовки) не поддерживаются.
-
-{% endnote %}
-
-
-#### Пример
-
-```javascript
-// we need to find usernames starting with 'ivanov' and 'egorov' (no more than 10 of each)
-// we make two POST requests to the search service
-// then wait for results
-
-let promises = [],
-patterns = ['jones*', 'smith*'];
-
-patterns.forEach(pattern => promises.push(Promise.resolve(this.proxy('myproxy/search', {
-   type: 'POST',
-   contentType: 'application/json',
-   dataType: 'json',
-   data: JSON.stringify({
-      query: pattern,
-      limit: 10
-   }),
-   processData: false
-}))));
-
-Promise.all(promises)
-.then(results => console.log(results))
-.catch(error => console.error(error));
-```
 
 #### render()
 
@@ -178,6 +160,7 @@ Promise.all(promises)
 #### validate(solutions)
 
 Валидирует ответы согласно параметрам выходных данных. Возращает объект `promise` с массивом ошибок [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror), если ответы некорректные, или `null`. Параметр:
+
 - `solutions` — массив ответ исполнителя на задания. Если не передан, то используются текущие ([`getSolutions()`](#getSolutions)).
 
 {% include [contact-support](../../_includes/contact-support-help.md) %}

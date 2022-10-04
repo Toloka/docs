@@ -34,7 +34,7 @@ A _task_ is the data you need to mark up. Each image or comment is a separate ta
 
 There are different types of tasks: general, control (with correct responses), and training (with hints).
 
-You upload tasks to Toloka as a [TSV file](../../glossary.md#tsv-file-definition-ru). The file structure must match the input and output data specification that you set up in the project.
+You upload tasks to Toloka as a [file](../../glossary.md#tsv-file-definition-ru). The file structure must match the input and output data specification that you set up in the project.
 
 {% note info %}
 
@@ -73,7 +73,7 @@ Each task in a task suite is part of a web page that can include various objects
 
 {% note info %}
 
-Tolokers don't know the difference between pools, tasks, or task suites. They might call all this a “task”.
+Tolokers don't know the difference between pools, tasks, or task suites. They might call all this a "task".
 
 {% endnote %}
 
@@ -92,6 +92,5 @@ You can also [give a reward](bonus.md) to one or more Tolokers.
 If you need to frequently post similar tasks, automate this process with the [Toloka API]({{ toloka-api }}).
 
 If you want more flexibility when posting tasks, the Toloka API has additional features that are not yet available in the interface. For example, use the API to specify overlap for individual tasks and add multiple correct responses to control tasks.
-
 
 {% include [contact-support](../_includes/contact-support-new.md) %}

@@ -6,7 +6,7 @@ You can start a [pool](../../glossary.md#pool-ru) if:
 
 To start the pool, click ![](../_images/other/b-start-pool.png) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-play.png) in the list of pools on the [project](../../glossary.md#project-ru) page.
 
-A started pool has the status {% if locale == "en-com" %}“Open”{% endif %}. When all pool tasks are completed, the pool automatically switches to the {% if locale == "en-com" %}“Closed”{% endif %} status.
+A started pool has the status {% if locale == "en-com" %}"Open"{% endif %}. When all pool tasks are completed, the pool automatically switches to the {% if locale == "en-com" %}"Closed"{% endif %} status.
 
 To stop assigning the pool tasks before all of them are completed, click ![](../_images/other/b-pause-pool.png) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-pause.png) in the list of pools on the project page.
 
@@ -31,7 +31,7 @@ Toloka lets you know that something is wrong with the project. The blank screen 
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from "3" to "5" is enough. If the tasks are simple, overlap of "3" is likely to be enough. For tasks that are reviewed, set overlap to "1".
 
 #### Can I change overlap after the pool is started?
 

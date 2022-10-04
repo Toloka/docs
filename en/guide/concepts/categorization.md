@@ -1,6 +1,6 @@
 # Image classification
 
-[projects](../../glossary.md#project-ru) of the classification type are intended for tasks with a finite number of response options. Examples are moderating content or grouping images by category.
+[Projects](../../glossary.md#project-ru) of the classification type are intended for tasks with multiple choice. Examples are moderating content or grouping images by category.
 
 You may need additional projects for your task, such as dataset pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](solution-architecture.md).
 
@@ -89,7 +89,8 @@ The project defines what the task will look like for a Toloker.
 
     1. Edit the **HTML** block in the **Task interface**. After the image line, add the question:{% if locale == "en-com" %}
     ```html
-    {{img src=image width="100%" height="400px"}} <div>What's the cat's mood</b>?<div>
+    {{img src=image width="100%" height="400px"}}
+    <div>What's the cat's mood</b>?<div>
     ```
     {% endif %}
     1. For this project, leave the **JS** and **CSS** blocks unchanged.
@@ -163,13 +164,23 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Upload tasks {#tasks_upload}
 
-Prepare your own task file. Check out the example in [the demo file](https://download.cdn.yandex.net/from/yandex.ru/support/ru/toloka-requester/files/categorization-cats.tsv). In the Toloka interface under the pool name, there are links to **file** templates for regular, control, and training tasks.
+Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
 
-1. Click **Upload**. In the window that opens, you can also download a sample file.
+1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
 
-1. Add input data in it. The header of the input data column contains the word `INPUT`. Leave the other columns empty.
-1. Upload the tasks using **Smart mixing** and enter the number of tasks per suite. For example: 9 [general tasks](../../glossary.md#general-task-ru) and 1 control task.
-    #### What is smart mixing? {#smart-mixing}
+    #### Use sample data
+
+    If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool.
+
+    Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+
+    Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+
+1. Add input data in the file. The header of the input data column contains the word `INPUT`. Leave the other columns empty.
+    ![](../_images/tutorials/categorization/cats_tsv_text.png)
+
+1. Upload the tasks using **Smart mixing** and enter the number of tasks per suite. For example: 9 [general tasks](../glossary.md#general-task-ru) and 1 control task.
+    #### What is smart mixing?
     **Smart mixing** randomly generates pages with tasks so that tasks are not repeated for each Toloker.
 
 1. Add control tasks. To do this, click the **Edit** button and give the correct responses for several tasks.
@@ -200,9 +211,9 @@ When you [clone a project](project.md), its quality control settings aren't tran
 
 1. #### Pool
 
-    Go to pool editing (the **Edit** button in the upper-right corner of the page) and click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
+    Go to pool editing (the ![](../_images/location-job/project/edit-project.svg) button in the upper-right corner of the page), find the {% if locale == "en-com" %}**Quality control**{% endif %} section, and click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
 
-    You can copy quality control settings from another pool. To do this, click {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} in the {% if locale == "en-com" %}**Audience**{% endif %} section.
+    You can copy quality control settings from another pool. To do this, go to the {% if locale == "en-com" %}**Audience**{% endif %} section and click {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %}.
 
     #### Project
 
@@ -221,7 +232,7 @@ When you [clone a project](project.md), its quality control settings aren't tran
 
 1. Add a restriction for **Fast responses**.
 
-    The **Minimum time per page** value depends on the number of tasks on this page. It takes 2-4 seconds to identify the cat's mood. This means that a page with 10 tasks may take 20-30 seconds to complete.
+    The **Minimum time per suite** value depends on the number of tasks on this page. It takes 2-4 seconds to identify the cat's mood. This means that a page with 10 tasks may take 20-30 seconds to complete.
 
     A Toloker can make an accidental mistake once in a while, but after 2-3 repeated mistakes you can ban the Toloker for a while.
 
@@ -229,7 +240,7 @@ When you [clone a project](project.md), its quality control settings aren't tran
 
     {% note warning %}
 
-    The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using non-automatic acceptance. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+    The assignments submitted by banned Tolokers will be taken into account if you don't reject them manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
     {% endnote %}
 
@@ -238,7 +249,7 @@ When you [clone a project](project.md), its quality control settings aren't tran
 
 Create a [training pool](../../glossary.md#training-pool-ru):
 
-1. Open the [Project](../../glossary.md#project-ru) page.
+1. Open the [project](../../glossary.md#project-ru) page.
 
 1. Go to the {% if locale == "en-com" %}**Training**{% endif %} tab.
 
@@ -247,15 +258,17 @@ Create a [training pool](../../glossary.md#training-pool-ru):
 1. Fill in the [training settings](train.md) fields.
     You can use the {% if locale == "en-com" %}**Retry after**{% endif %} field to set up [repeated training](train.md).
 1. Click {% if locale == "en-com" %}**Save training**{% endif %}.
+
 After you create a training pool:
-1. Get the **task template** or edit the one you used for uploading the main pool tasks.
+
+1. Get the **task template (TSV)** or edit the one you used for uploading the main pool tasks.
     {% note info %}
 
-    Files for all project pools have the same structure.
+    Task files for all project pools have the same structure.
 
     {% endnote %}
 
-1. Add links to images for the training tasks in the file.
+1. Add image URLs for the training tasks to the task file.
 1. Upload the file and specify the number of tasks on the page. For example, 10. This number must not exceed the number of tasks per suite in the main pool.
 1. Click **Download** and enter the number of training tasks on the page.
 1. Click **Add**.
@@ -290,7 +303,7 @@ There may be two reasons:
 
 #### I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?
 
-Toloka will split the links to images in the uploaded file into task suites depending on the method you specified when uploading the file. For more information about the three upload methods, see the [Guide](distribute-tasks-by-pages.md).
+Toloka will group the uploaded image links in the file into suites depending on the task distribution method you use. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
 #### How do I make an image expand to its maximum size on click?
 

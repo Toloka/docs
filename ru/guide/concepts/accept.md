@@ -27,13 +27,13 @@
 
 Чтобы принять или отклонить одно задание:
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Проверить задания**{% endif %}{% if locale == "en-com" %}**Review assignments**{% endif %} на странице пула.
+1. Нажмите кнопку {% if locale == "ru-ru" %}**Проверить задания**{% elsif locale == "en-com" %}**Review assignments**{% endif %} на странице пула.
 
 1. Выберите задание.
 
-    Если в ответах содержатся файлы, отправленные исполнителями, нажмите {% if locale == "ru-ru" %}{% endif %}{% if locale == "en-com" %}{% endif %}, чтобы скачать их. Чтобы скачать все файлы из непроверенных ответов в ZIP-архиве, нажмите {% if locale == "ru-ru" %}{% endif %}{% if locale == "en-com" %}{% endif %} на странице проверки заданий.
+    Если в ответах содержатся файлы, отправленные исполнителями, нажмите {% if locale == "ru-ru" %}{% elsif locale == "en-com" %}{% endif %}, чтобы скачать их. Чтобы скачать все файлы из непроверенных ответов в ZIP-архиве, нажмите {% if locale == "ru-ru" %}{% elsif locale == "en-com" %}{% endif %} на странице проверки заданий.
 
-1. Проверьте ответы, нажмите {% if locale == "ru-ru" %}**Принять**{% endif %}{% if locale == "en-com" %}**Accept**{% endif %} или {% if locale == "ru-ru" %}**Отказать**{% endif %}{% if locale == "en-com" %}**Decline**{% endif %}. Для отклоненных ответов введите комментарий (укажите причину).
+1. Проверьте ответы, нажмите {% if locale == "ru-ru" %}**Принять**{% elsif locale == "en-com" %}**Accept**{% endif %} или {% if locale == "ru-ru" %}**Отказать**{% elsif locale == "en-com" %}**Decline**{% endif %}. Для отклоненных ответов введите комментарий (укажите причину).
 
 
 #### В файле с результатами — он понадобится для фильтрации результатов и их программной обработки.
@@ -51,21 +51,21 @@
 
 Чтобы принять или отклонить ответы:
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Проверить задания**{% endif %}{% if locale == "en-com" %}**Review assignments**{% endif %} на странице пула.
+1. Нажмите кнопку {% if locale == "ru-ru" %}**Проверить задания**{% elsif locale == "en-com" %}**Review assignments**{% endif %} на странице пула.
 
-1. Чтобы скачать ответы, которые вы еще не проверяли: на странице пула нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}. В открывшемся окне:
+1. Чтобы скачать ответы, которые вы еще не проверяли: на странице пула нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% elsif locale == "en-com" %}**Download results**{% endif %}. В открывшемся окне:
 
-    1. В блоке {% if locale == "ru-ru" %}**Статус**{% endif %}{% if locale == "en-com" %}**Status**{% endif %} оставьте включенной только опцию {% if locale == "ru-ru" %}**Не проверенные**{% endif %}{% if locale == "en-com" %}**Submitted**{% endif %}.
+    1. В блоке {% if locale == "ru-ru" %}**Статус**{% elsif locale == "en-com" %}**Status**{% endif %} оставьте включенной только опцию {% if locale == "ru-ru" %}**Не проверенные**{% elsif locale == "en-com" %}**Submitted**{% endif %}.
 
-    1. В блоке {% if locale == "ru-ru" %}**Поля**{% endif %}{% if locale == "en-com" %}**Columns**{% endif %} оставьте включенной только опцию {% if locale == "ru-ru" %}**id ответа**{% endif %}{% if locale == "en-com" %}**assignment ID**{% endif %}.
+    1. В блоке {% if locale == "ru-ru" %}**Поля**{% elsif locale == "en-com" %}**Columns**{% endif %} оставьте включенной только опцию {% if locale == "ru-ru" %}**id ответа**{% elsif locale == "en-com" %}**assignment ID**{% endif %}.
 
-    1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.{% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png){% endif %}
+    1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% elsif locale == "en-com" %}**Separate assignments with empty row**{% endif %}.
 
-    1. Нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
+    1. Нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% elsif locale == "en-com" %}**Download results**{% endif %}.
 
 1. Если по условию задания толокеры должны были отправить вам картинки/видео/аудио, скачайте их для проверки отдельным архивом следующим образом.
 
-    Нажмите {% if locale == "ru-ru" %}{% endif %}{% if locale == "en-com" %}{% endif %}.
+    Нажмите {% if locale == "ru-ru" %}{% elsif locale == "en-com" %}{% endif %}.
 
     {% note info %}
 
@@ -110,9 +110,9 @@
 
     - `ACCEPT:verdict` — результат проверки:
 
-    - <q>+</q>, если ответы приняты;
+    - «+», если ответы приняты;
 
-    - <q>-</q>, если ответы отклонены.
+    - «-», если ответы отклонены.
 
     - `ACCEPT:comment` — комментарий для исполнителя в случае отклонения ответов (например, укажите несоблюденный пункт [инструкции](../../glossary.md#task-instruction-ru)).
 

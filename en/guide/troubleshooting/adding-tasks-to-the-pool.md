@@ -61,11 +61,11 @@ If you are creating control tasks, fill out the `GOLDEN` columns with the correc
 
 If you are creating a training task, you also need to fill in the `HINT:text` column. For the general tasks you don't need any columns other than `INPUT`, so feel free to delete them.
 
-You have to use TSV or XLSX file format and UTF-8 encoding.
+You have to use the TSV, XLSX or JSON file format and UTF-8 encoding.
 
 For more information about creating the file, see the [Guide](../concepts/pool_csv.md). If there are errors during the upload, look up the error description on this [page](../concepts/task_upload.md).
 
-#### Why do I see a syntax error when I upload a task where a user has to view an image and write feedback?
+#### Why do I see a syntax error when I upload a task where a Toloker has to view an image and write feedback?
 
 The error might occur if the expected input type is URL, but a string is received.
 
@@ -77,11 +77,11 @@ There may be two reasons:
 
 It depends on the task. Technically, you can use as many tasks you want.
 
-But users don't like to take lengthy tasks. They'd rather do 10 tasks that take one minute each than one task that takes 10 minutes.
+But Tolokers don't like to take lengthy tasks. They'd rather do 10 tasks that take one minute each than one task that takes 10 minutes.
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 #### I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?
 
@@ -97,7 +97,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 #### Where is my file added if I upload it to the running pool?
 
-If you have the **Keep task order** option enabled, labeling will start after the previously uploaded tasks are taken by users. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
+If the **Keep task order** option enabled in the settings of the pool, labeling will start after the previously uploaded tasks. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
 
 #### How do I write an array to the input file?
 
@@ -165,7 +165,7 @@ Overview | How to fix
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+**Invalid data in a "link" ("url") field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](../concepts/pool_csv.md#string).
 
@@ -173,7 +173,7 @@ Overview | How to fix
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be "reassessed".
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 
@@ -190,7 +190,7 @@ If the text is in the HTML block of the task template, then clone the project. T
 
 #### How do I precede my task with mandatory control questions to check that the Toloker understood my instructions? Would such training or control tasks be similar to the general tasks?
 
-The training and control questions must meet your project specification. However, you can create a separate project with your instructions, survey, and sample videos. Then you can assign a skill to users based on their responses. You can use this skill to admit Tolokers to the main project.
+The training and control questions must meet your project specification. However, you can create a separate project with your instructions, survey, and sample videos. Then you can assign a skill to Tolokers based on their responses. You can use this skill to admit Tolokers to the main project.
 
 #### More Tolokers were trained than the training skill shows
 
@@ -241,7 +241,7 @@ Smart mixing is set up when you upload tasks to the pool. After creating a pool,
 
 #### Can I automatically pause accepting applications for the training pool if the necessary number of Tolokers have been trained and are already doing the tasks?
 
-You can close the pool manually at any time using the interface. However, you can't set the number of users that should complete the training pool for it to close automatically.
+You can close the pool manually at any time using the interface. However, you can't set the number of Tolokers that should complete the training pool for it to close automatically.
 
 #### How do I check that the Tolokers don't cheat during training?
 
@@ -275,9 +275,9 @@ Create a main pool of the **Training** type. Add only [training tasks](../../glo
 
 However, we don't advise giving access to general tasks to Tolokers who failed training.
 
-#### Do users have to complete all the tasks in the training pool?
+#### Do Tolokers have to complete all the tasks in the training pool?
 
-If you enabled incomplete training and specified the number of training pages required, users don't have to fully complete the training in order to pass. If you didn't make these settings, the Tolokers have to complete all the tasks in the training pool to get a training skill.
+If you enabled incomplete training and specified the number of training pages required, Tolokers don't have to fully complete the training in order to pass. If you didn't make these settings, the Tolokers have to complete all the tasks in the training pool to get a training skill.
 
 #### How do I set up a retry pool for my project?
 
@@ -285,7 +285,7 @@ You can create a retry pool similarly to an exam pool. In the pool settings, sel
 
 For example, if the main pool admits Tolokers with a skill of 70 or higher, then you can route the people with a skill between 40 and 69 to the retry pool.
 
-To get a valid “range”, enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
+To get a valid "range", enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
 We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10-20 tasks is enough, depending on complexity.
 #### Is the training considered an active pool when the main pool is closed?
 
@@ -295,7 +295,7 @@ Yes, it is.
 
 Training is designed to select Tolokers for the general task. That's why training must be linked to the main pool and become inactive as soon as the main pool closes.
 
-Tolokers take the training to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, “optional” training can be based on a main pool that includes some training tasks.
+Tolokers take the training to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, "optional" training can be based on a main pool that includes some training tasks.
 
 To show the training separately from other pools, disable **Use project description** and use this field to specify that this is an optional set of training tasks. In the pool settings, select the **Training** type.
 
@@ -344,7 +344,7 @@ If you change the time allocated for a task, the time value will apply to the ta
 
 #### How do I edit or delete tasks uploaded to the pool?
 
-If you uploaded tasks to the pool using “smart mixing”, you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
+If you uploaded tasks to the pool using "smart mixing", you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
 
 If you uploaded them using a different method, clone your pool and upload the new file with the corrected list of data to be labeled.
 

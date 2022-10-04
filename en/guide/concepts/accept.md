@@ -14,7 +14,7 @@ To accept or reject responses:
 
 If you set [non-automatic acceptance](offline-accept.md) in the pool settings, you need to review the Tolokers' responses within the time limit set in the **Deadline** field. Tolokers may challenge a rejected response by submitting an [appeal](#appeal).
 
-You can review assignments online or upload review results in a [TSV file](../../glossary.md#tsv-file-definition-ru).
+You can review assignments online or upload review results in a file.
 
 {% note info %}
 
@@ -110,9 +110,9 @@ To accept or reject responses:
 
     - `ACCEPT:verdict` — Review result:
 
-    - “+” if you accept the responses.
+    - "+" if you accept the responses.
 
-    - “-” if you reject the responses.
+    - "-" if you reject the responses.
 
     - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction-ru) wasn't followed).
 

@@ -8,7 +8,7 @@
 
 
 В проектах этого типа исполнители ищут в сети объект или информацию о нем. Вы можете использовать их для:
-- поиска объекта по описанию, например товара ли услуги;
+- поиска объекта по описанию, например товара или услуги;
 - поиска информации на определенном сайте, например городов доставки на сайте магазина;
 - поиска информации об объекте в интернете, например контактных данных организации.
 
@@ -615,7 +615,7 @@
     1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Контрольные задания**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
 
     1. Задайте правило для контрольного задания: если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %} на контрольные вопросы **≥ 3** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%)**{% endif %} на контрольные вопросы **< 60**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %} исполнителя {% if locale == "ru-ru" %}**на проекте на 10 дней**{% endif %}{% if locale == "en-com" %}**on project**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В качестве причины укажите **Контрольное задание**.
-    {% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png){% endif %}
+
     Это означает, что если исполнитель выполнил более трех контрольных заданий и дал неправильные ответы более чем в 60% из них, он будет заблокирован и не сможет выполнять задания на этом проекте в течение 10 дней.
 
     1. {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Fast responses**{% endif %} — отсеивает исполнителей, которые отвечают слишком быстро.
@@ -623,20 +623,20 @@
     1. В поле {% if locale == "ru-ru" %}**Учитывать последних страниц заданий**{% endif %}{% if locale == "en-com" %}**Recent task suites to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `10`.
     1. В поле {% if locale == "ru-ru" %}**Минимальное время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} укажите время в секундах. Например, `20`.
     1. Задайте правило для быстрого ответа: если {% if locale == "ru-ru" %}**количество быстрых ответов**{% endif %}{% if locale == "en-com" %}**number of fast responses**{% endif %}** ≥ 1**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Быстрые ответы**.
-    {% if locale == "ru-ru" %}![](../_images/other/fast-answers2.png){% endif %}
+
     Это означает, что если исполнитель выполнит хотя бы одну страницу заданий быстрее, чем за 20 секунд, он не сможет выполнять ваши задания 10 дней.
 
     1. {% if locale == "ru-ru" %}**Капча**{% endif %}{% if locale == "en-com" %}**Captcha**{% endif %} — предотвращает выполнение заданий роботами.
 
     1. В поле {% if locale == "ru-ru" %}**Учитывать последних вводов капчи**{% endif %}{% if locale == "en-com" %}**Recent captchas to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `10`.
     1. Задайте правило для капчи: если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %}** ≥ 5** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%) **{% endif %}**< 65**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**на проекте**{% endif %}{% if locale == "en-com" %}**on project**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Капча**.
-    {% if locale == "ru-ru" %}![](../_images/control-rules/captcha/qcr-captcha_example1.png){% endif %}
+
     Это означает, что если исполнитель верно вводит капчу менее чем в 65% случаев, он не сможет выполнять задания на проекте в течение 10 дней.
 
     1. {% if locale == "ru-ru" %}**Пропуск заданий**{% endif %}{% if locale == "en-com" %}**Skipped assignments**{% endif %} — отсеивает исполнителей, которые пропускают несколько страниц заданий подряд.
 
     Задайте правило для [пропущенных заданий](pool_statistic-pool.md#skipped-tasks): если {% if locale == "ru-ru" %}**пропущенных подряд страниц заданий**{% endif %}{% if locale == "en-com" %}**task pages skipped in a row**{% endif %}** ≥ 4**, то {% if locale == "ru-ru" %}**приостановить**{% endif %}{% if locale == "en-com" %}**suspend**{% endif %}{% if locale == "ru-ru" %}**в пуле**{% endif %}{% if locale == "en-com" %}**in pull**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Пропуск заданий**.
-    {% if locale == "ru-ru" %}![](../_images/other/skipped.png){% endif %}
+
     Это означает, что если исполнитель пропустит 4 и более страниц заданий, он потеряет доступ к пулу на 10 дней.
 
     1. Установите перекрытие — количество исполнителей, которые должны выполнить задание. В блоке {% if locale == "ru-ru" %}**Контроль качества**{% endif %} {% if locale == "en-com" %}**Quality control**{% endif %} в разделе {% if locale == "ru-ru" %}**Перекрытие задания**{% endif %}{% if locale == "en-com" %}**Task overlap**{% endif %} укажите значение поля {% if locale == "ru-ru" %}**Количество исполнителей, которые должны выполнить каждое задание**{% endif %}{% if locale == "en-com" %}**The number of performers to complete every task**{% endif %}. Для заданий этого типа, как правило, `3-5`.
@@ -660,13 +660,13 @@
     1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
 
     1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**задание становится отклоненным**{% endif %}{% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, то {% if locale == "ru-ru" %}**увеличить перекрытие на**{% endif %}{% if locale == "en-com" %}**extend overlap by**{% endif %} **1**. А также включите опцию {% if locale == "ru-ru" %}**Открыть пул, если закрыт**{% endif %}{% if locale == "en-com" %}**Open pool if closed**{% endif %}.
-    {% if locale == "ru-ru" %}![](../_images/other/rejected-accepted-tasks.png){% endif %}
+
     Это означает, что отклоненное задание будет возвращено в пул и показано еще одному исполнителю.
 
     - {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %} — ограничивает доступ к пулу исполнителей, которые часто ошибаются.
 
     Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**количество проверенных ответов**{% endif %}{% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** и {% if locale == "ru-ru" %}**процент отклоненных ответов**{% endif %}{% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35** то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**15 дней**{% endif %}{% if locale == "en-com" %}**15 days**{% endif %}.
-    {% if locale == "ru-ru" %}![](../_images/other/offline-accept.png){% endif %}
+
     Это означает, что если 35% и более ответов исполнителя будут отклонены, он будет заблокирован и не сможет больше выполнять ваши задания 15 дней. Правило начинает действовать после проверки 3 ответов исполнителя.
 
     {% note info %}
@@ -764,7 +764,7 @@
 
     1. В блоке {% if locale == "ru-ru" %}**Поля**{% endif %}{% if locale == "en-com" %}**Columns**{% endif %} оставьте включенной только опцию {% if locale == "ru-ru" %}**id ответа**{% endif %}{% if locale == "en-com" %}**assignment ID**{% endif %}.
 
-    1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.{% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png){% endif %}
+    1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.
 
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
 
@@ -772,7 +772,7 @@
 
 Если в проекте по поиску информации в интернете вы использовали {% if locale == "ru-ru" %}**Отложенную приемку**{% endif %}{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}, отдайте результаты на проверку исполнителям в качестве задания. [Подробнее](offline-accept.md) об отложенной приемке.
 
-1. Создайте еще один проект с помощью [Пустого]({{ blank }) шаблона. О том, какие настройки нужно задать для этого проекта, написано ниже.
+1. Создайте еще один проект с помощью [Пустого]({{ blank }}) шаблона. О том, какие настройки нужно задать для этого проекта, написано ниже.
 1. Создайте интерфейс задания, чтобы исполнитель увидел:
     - название организации;
     - электронную почту и номер телефона организации;

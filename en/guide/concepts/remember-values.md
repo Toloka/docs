@@ -1,17 +1,17 @@
-# “Remember values” parameter
+# "Remember values" parameter
 
 Some quality control rules have the **Remember values** parameter. It sets the dynamic window equal to N, which the values are recalculated within. Depending on the rule, the dynamic window is measured:
 
 - In tasks: the [Review results](reviewing-assignments.md) and [Majority vote](mvote.md) rules, the **Recent tasks to use** field.
-- In control tasks: the [Control tasks](goldenset.md) rule, the **Recent control and training task responses to use** field.
-- In task suites: the [Fast responses](quick-answers.md) rule, the **Recent task suites to use** field.
-- In captcha entries: the [Captcha](captcha.md) rule, the ** Recent captchas to use** field.
-
-The **Remember values** parameter works the same way for all rules.
+- In [control tasks](../../glossary.md#control-task-ru): the [Control tasks](goldenset.md) rule, the **Recent control and training task responses to use** field.
+- In [task suites](../../glossary.md#task-page-ru): the [Fast responses](quick-answers.md) rule, the **Recent task suites to use** field.
+- In [captcha entries](../../glossary.md#captcha-rule-ru): the [Captcha](captcha.md) rule, the ** Recent captchas to use** field.
 
 ## How it works {#how-field-works}
 
-Let's see how this parameter works with the [Control tasks](goldenset.md) rule. Go to the project settings and select this quality control rule.
+The **Remember values** parameter works the same way for all rules.
+
+Let's see how this parameter works with the [Control tasks](goldenset.md) rule. Go to the project or [pool](../../glossary.md#pool-ru) settings and select this quality control rule.
 
 In our example, the **Remember values** parameter is set in the **Recent control and training task responses to use** field.
 
@@ -49,9 +49,9 @@ The rule conditions set in the pool:
 
 
 Task
- | Correct response to the control task | 
+ | Correct response to the control task |
 Skill change
- | 
+ |
 Overview
 
 ----- | ----- | ----- | -----
@@ -72,7 +72,7 @@ Overview
 
 The rule works as in Example 1 with the exception that:
 
-- The Toloker isn't assigned a skill. Toloka performs all calculations “remotely”.
+- The Toloker isn't assigned a skill. Toloka performs all calculations "remotely".
 - After each completed control task, it checks whether the percentage of correct responses is more than 60 or not. If not, it bans the Toloker.
 
 With this rule, it's difficult to understand why the Toloker was banned because you can't see how their skill changes. Therefore, we often use a combination of two rules (Example 3).
@@ -99,13 +99,13 @@ The rule conditions set in the pool:
 
 
 Task
- | Correct response to the control task | 
+ | Correct response to the control task |
 Ban check
- | 
+ |
 Skill change
- | 
+ |
 Comment on the ban
- | 
+ |
 Comment on the skill
 
 ----- | ----- | ----- | ----- | ----- | -----
@@ -147,5 +147,3 @@ When the ban or pause is lifted and the Toloker starts performing tasks, the cal
 Only the history of the rule which triggered the ban will be cleared.
 
 {% endnote %}
-
-

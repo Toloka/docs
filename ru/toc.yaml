@@ -188,7 +188,7 @@ items:
                     items:
                       - name: Как использовать JavaScript-расширения
                         href: guide/concepts/spec-advanced.md
-                      - name: Класс Assingment
+                      - name: Класс Assignment
                         href: guide/concepts/js/assignment.md
                       - name: Класс TaskSuite
                         href: guide/concepts/js/tasksuite.md
@@ -254,7 +254,6 @@ items:
                     href: guide/concepts/restore-task-overlap.md
                   - name: Обработка отклоненных и принятых заданий
                     href: guide/concepts/reassessment-after-accepting.md
-                    hidden: true
               - name: Настройки перекрытия
                 items:
                   - name: Что такое перекрытие
@@ -301,7 +300,6 @@ items:
           href: guide/concepts/refill.md
         - name: Примечания
           href: guide/concepts/notes.md
-          hidden: true
       - name: Запуск и остановка пула
         href: guide/concepts/pool-run-and-stop.md
       - name: Результаты
@@ -320,6 +318,24 @@ items:
             href: guide/concepts/project-statistic.md
           - name: Статистика по пулу
             href: guide/concepts/pool_statistic-pool.md
+          - name: Метрики эффективности
+            items:
+              - name: Обзор
+                href: guide/concepts/efficiency-metrics/index.md
+              - name: Контрольные задания
+                href: guide/concepts/efficiency-metrics/control-tasks-share.md
+              - name: Отклоненные задания
+                href: guide/concepts/efficiency-metrics/rejected-tasks.md
+              - name: Выполнение заданий
+                href: guide/concepts/efficiency-metrics/submitting-tasks.md
+              - name: Блокировки
+                href: guide/concepts/efficiency-metrics/ban-rate.md
+              - name: Доступные исполнители
+                href: guide/concepts/efficiency-metrics/available-performers.md
+              - name: Сбалансированность контрольных заданий
+                href: guide/concepts/efficiency-metrics/control-tasks-balance.md
+              - name: Качество инструкции
+                href: guide/concepts/efficiency-metrics/instruction-quality.md
   - name: Bespoke-решения
     hidden: true
     items:

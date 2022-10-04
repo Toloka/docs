@@ -17,13 +17,18 @@ Implements the logic for removing the focus from the task and calls the [`onBlur
 
 #### constructor(options)
 
-The [task UI](../spec.md) constructor. Parameters:
+The [task UI](../spec.md) constructor.
+
+Parameters:
+
 - `options.task` — The [Task](../spec-advanced.md#obj-task) task model.
-- `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data-ru) and the task interface. See the [`task_spec`](https://tech.yandex.ru/toloka/doc/concepts/project-docpage/) object format.
-- `options.workspaceOptions` — [Sandbox](../../../glossary.md#sandbox-ru) initialization parameters {{isReadOnly: boolean}}
+- `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data-ru) and the task interface.
+- `options.workspaceOptions` — Toloker's workspace initialization parameters.
 
 #### destroy()
+
 Releases resources, services, and event handlers used in the global space. Calls [`onDestroy()`](#onDestroy).
+
 #### focus()
 
 Implements the logic for setting the focus on the task by calling the `[onFocus()](#onFocus)` method.
@@ -45,12 +50,17 @@ Returns the DOM element of the task.
 
 #### getOptions()
 
-Returns the parameters passed to the `constructor()` method.
+Returns an object with a set of parameters passed to the `[constructor()](#constructor)` method during initialization.
 
-#### getProxyUrl(path)
+#### Example
 
-Returns the full URL for accessing data on the proxy server. Parameter:
-- `path` — Relative file path.
+```javascript
+// getting specifications for all required fields:
+let outputSpec = this.getOptions().specs.output_spec,
+     requiredFields = Object.keys(outputSpec)
+                            .filter(key => outputSpec[key].required)
+                            .reduce((item, key) => (item[key] = outputSpec[key], item), {});
+```
 
 #### getSavedState()
 
@@ -76,7 +86,7 @@ Returns the object received by the template engine before compiling the task tem
 
 The method is available in toloka-handlebars-templates. It returns a set of fields and their values passed to the task input: `return this.getTask().input_values`.
 
-The method allows you to process the existing values or pass new custom parameters to the template engine. For example, you can pass strings to localize a template and use the same project for Russian-speaking and English-speaking users.
+The method allows you to process the existing values or pass new custom parameters to the template engine. For example, you can pass strings for localizing a template and use the same project for Russian-speaking and English-speaking Tolokers.
 
 #### Example
 
@@ -97,7 +107,7 @@ getTemplateData: function() {
 
 #### getWorkspaceOptions()
 
-Returns the sandbox initialization parameters passed to the `constructor()` method.
+Returns the Toloker's workspace initialization parameters passed to the `constructor()` method.
 
 #### hideTaskError()
 
@@ -114,72 +124,44 @@ let myId = this.getTask().id
 ```
 
 #### onBlur()
+
 Called after removing the focus.
+
 #### onDestroy()
+
 Called after the task is destroyed (`[destroy()](#destroy)`). The best method for releasing memory, deleting global event handlers and DOM elements, and so on.
+
 #### onFocus()
+
 Called after setting the focus.
+
 #### onKey(key)
+
 Passes the pressed key. Parameter:
+
 - `key` — Alphanumeric character pressed on the keyboard. Can be used as a shortcut.
 
 #### onPause()
+
 Called after the task is put on pause.
+
 #### onRender()
+
 Called after the task is rendered (`[render()](#render)`). All manipulations with the DOM element of a task should be performed here.
+
 #### onResume(savedState)
+
 Called after the task is resumed.
+
 #### onValidationFail(errors)
+
 Called when the Toloker's response validation fails. Parameter:
+
 - `errors` — Validation errors in the Toloker's response `[SolutionValidationError](../spec-advanced.md#obj-solutionvalidationerror)`.
 
 #### pause()
 
 Pauses task completion. Saves the intermediate state of the task in the browser's local storage (`saveState`) and calls the `onPause` method.
-
-#### proxy(path, options)
-
-Creates a GET or POST request via proxy.
-
-Parameters:
-
-- `path` — Request path (string).
-- `options` — Request parameters (object). Read more in [Jquery Ajax](https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).
-
-Returns a `promise` object.
-
-{% note info %}
-
-Some features (such as timeouts or custom headers) are not supported.
-
-{% endnote %}
-
-
-#### Example
-
-```javascript
-// need to find user logins which start with 'jones' and 'smith' (not more than 10 of each instance)
-// we make two POST requests to the search service
-// then wait for results
-
-let promises = [],
-     patterns = ['jones*', 'smith*'];
-
-patterns.forEach(pattern => promises.push(Promise.resolve(this.proxy('myproxy/search', {
-   type: 'POST',
-   contentType: 'application/json',
-   dataType: 'json',
-   data: JSON.stringify({
-       query: pattern,
-       limit: 10
-   }),
-   processData: false
-}))));
-
-Promise.all(promises)
-       .then(results => console.log(results))
-       .catch(error => console.error(error));
-```
 
 #### render()
 
@@ -196,6 +178,7 @@ Checks `assignmentId`to make sure that the task is working in Toloker mode and n
 #### setSolution(solution)
 
 Sets the responses. Parameter:
+
 - `solution` — The Toloker's response to the task (`[Solution](../spec-advanced.md#obj-solution)`).
 
 #### setSolutionOutputValue(fieldName, value)
@@ -220,11 +203,13 @@ Forcibly shows a global error in the task (only if the toloka-handlebars-templat
 #### template(data)
 
 Template engine for the task. In the task's [HTML interface](../spec.md), it replaces occurrences such as `${fieldX}` with the corresponding value and the `fieldX` key from the `data` parameter. Returns the task's HTML interface as a string. Parameter:
+
 - `data` — Object with data to insert in the template.
 
 #### validate(solution)
 
 Validates responses according to output data parameters. Returns [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror) if the responses are invalid, otherwise `null`. Parameter:
+
 - `solution` — The Toloker's response to the task. If omitted, the current one is used ([`getSolution()`](#getSolution)).
 
 {% include [contact-support](../../_includes/contact-support-help.md) %}

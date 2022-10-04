@@ -1,2 +1,1 @@
-
 Raw task data is stored in the XSLX, TSV, or JSON format. The labeling results are presented in a TSV file. The {% if locale == "en-com" %}**Data specification**{% endif %} section determines which parameters these files might contain.

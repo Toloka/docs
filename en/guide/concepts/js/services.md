@@ -55,13 +55,16 @@ Method:
 #### on(event, handler, context)
 Subscribes the passed handler to a specific event. Tracks events from the `event` parameter. Parameters:
 - `event`:
-    - `enter` — The “enter” key.
-    - `esc` — The “escape” key.
+    - `enter` — The "enter" key.
+    - `esc` — The "escape" key.
     - `arrow-left`, `arrow-right`, `arrow-up`, `arrow-down` — Arrows.
     - `key` — Alphanumeric keys. Handler (the `handler` parameter) gets the pressed key as the first argument.
 
 - `handler` — The event handler.
 - `context` — `this` for the handler.
+
+#### reset()
+Cancels all previously made links and reinitializes the service.
 
 ## ClientInfo {#clientInfo}
 

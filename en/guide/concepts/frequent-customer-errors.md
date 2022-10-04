@@ -91,7 +91,7 @@ You can try creating a task interface in the [Template Builder]({{ tb-quickstart
 
 {% cut "Solutions" %}
 
-- Use the [TSV](../../glossary.md#tsv-file-definition-ru) format and UTF8 encoding.
+- Use the correct [file](../../glossary.md#tsv-file-definition-ru) format and UTF8 encoding.
 - Use file templates. You can find them on the pool page.
 - Place tasks so that it takes no more than 5 minutes, preferably 1-2 minutes, to complete a single task suite. You can usually place 20-40 simple tasks, 5-10 tasks of medium difficulty, or 1-2 complex tasks on a single page.
 - Use [smart mixing](../../glossary.md#smart-mixing-ru). The algorithm will distribute training, control tasks, and general tasks across the page on its own.

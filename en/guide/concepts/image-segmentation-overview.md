@@ -15,7 +15,7 @@ Each project consists of the following basic steps:
 
 1. **Create a [task pool](../../glossary.md#pool-ru) in the project**. In the pool, you set up [quality control](../../glossary.md#quality-control-ru) and [filters](../../glossary.md#filtering-ru) for Tolokers.
 
-1. **Upload a [TSV file](https://tlk.s3.yandex.net/wsdm2020/dataset_1.tsv) with tasks to the pool**.
+1. **Upload a [file with tasks](https://tlk.s3.yandex.net/wsdm2020/dataset_1.tsv) to the pool**.
 
 1. **Start the pool.**
 
@@ -32,6 +32,5 @@ If you need help rating tasks, read about [setting up pricing](dynamic-pricing.m
 - Create [Project 2](image-segmentation-project2.md) to select objects.
 - Create [Project 3](image-segmentation-project3.md) to check the results.
 - Learn more about [decomposition](solution-architecture.md).
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

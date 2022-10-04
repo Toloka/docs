@@ -256,7 +256,7 @@ The editor's output fields need to be marked as optional because JS checks that 
 
 The editor uses:
 
-- The `input` field with the “line” type where the markup text is substituted.
+- The `input` field with the "line" type where the markup text is substituted.
 - The `result` field in the JSON format. It passes information about the task result.
 - The `text_review_mode` is auxiliary. It is needed to display tags in the task review mode.
 

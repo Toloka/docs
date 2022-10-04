@@ -255,7 +255,7 @@ A _pool_ is a set of tasks sent out to Tolokers at the same time. One project ca
 1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
 1. Under {% if locale == "en-com" %}**Audience**{% endif %}, set up filters to select Tolokers for your pool.
 
-    1. Uncheck {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
+    1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
     1. To select Tolokers based on their language, location, age, gender, and other parameters, click the {% if locale == "en-com" %}**Add filter**{% endif %} button.
 
     1. Use the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
@@ -273,9 +273,9 @@ Step 4. Upload data
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 1. Create the tasks for Tolokers:
     1. To download a template, click one of the buttons:
-    - {% if locale == "en-com" %}**Template for general tasks in XLSX**{% endif %}
-    - {% if locale == "en-com" %}**Template for general tasks in TSV**{% endif %}
-    - {% if locale == "en-com" %}**Template for general tasks in JSON**{% endif %}
+    - {% if locale == "en-com" %}**Template in XLSX**{% endif %}
+    - {% if locale == "en-com" %}**Template in TSV**{% endif %}
+    - {% if locale == "en-com" %}**Template in JSON**{% endif %}
 
     1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
     1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
@@ -294,10 +294,6 @@ Step 4. Upload data
 
     {% endnote %}
 
-    1. Note the {% if locale == "en-com" %}**Distribution of correct responses for control tasks**{% endif %} graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
-
-    1. When you are done adding control tasks, click the pool name in the menu.
-
 
 Step 5. Start labeling
 
@@ -308,13 +304,9 @@ Step 5. Start labeling
 
 Step 6. See the results
 
-1. You can see the labeling progress on the pool page. Wait until the labeling is completed. Refresh the page to check the progress.
+1. You can see the labeling progress on the pool page. Wait until the labeling is completed.
 
 1. Open the same drop-down menu again, and click {% if locale == "en-com" %}**View aggregations list**{% endif %}.
 
-## Prerequisites {#prerequisites}
-
-Before you begin make sure that:
-
-- You are [registered](concepts/access.md) in Toloka as a requester.
-- You have [topped up](concepts/refill.md) your Toloka account. If you are unsure about the budget, you can do that later in this tutorial. Toloka will display the budget estimate for your project.
+- Make sure you are [registered](concepts/access.md) in Toloka as a requester.
+- [Top up](concepts/refill.md) your Toloka account. If you are unsure about the budget, you can do that later in this tutorial. Toloka will display the budget estimate for your project.

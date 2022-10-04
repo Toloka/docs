@@ -1,21 +1,28 @@
 # Fast responses
 
-This rule is necessary to filter out cheating Tolokers who don't pay attention to what they're doing and complete tasks too quickly. You can also use it to provide protection against robots that can distort the final results in the pool.
+This rule is necessary to filter out cheating Tolokers who complete tasks too quickly and carelessly. You can also use it to provide protection against robots that can distort the final results in the pool.
+
+{% note info %}
 
 If you need additional protection from robots, use [captchas](captcha.md).
+
+{% endnote %}
+
 
 ## When to use {#when-use}
 
 Restrict the pool access for Tolokers who respond too quickly to:
-- Suspend access for Tolokers who cheat in their responses (in this case, set the time required to complete a [task suite](../../glossary.md#task-page-ru) giving random responses).
 
-- Provide protection from robots (in this case, the time for completing the task suite should be 2 times less).
+- Restrict access for Tolokers who cheat in their responses. In this case, set the time required to complete a [task suite](../../glossary.md#task-page-ru) when giving random responses.
+
+- Provide anti-robot protection. In this case, set twice as little time for task suite completion.
 
 To estimate the time required to complete a task suite:
-- [Complete a task in the sandbox](sandbox.md#self), if you didn't start the tasks yet.
-- Look up the {% if locale == "en-com" %}**Average submit time**{% endif %} in [pool statistics](pool_statistic-pool.md#avgtime), if the tasks are already started.
 
-## Rule settings {#rule}
+- [Complete a task in the sandbox](sandbox.md#self), if you didn't start the tasks yet.
+- Look up the {% if locale == "en-com" %}**Average assignment completion time**{% endif %} in [pool statistics](pool_statistic-pool.md#avgtime) if the tasks are already running.
+
+## How do I set it up? {#rule}
 
 
 Field
@@ -23,10 +30,10 @@ Field
 Overview
 
 ----- | -----
-{% if locale == "en-com" %}**Recent values to use**{% endif %} | The number of recent assignments submitted by the Toloker.<br/><br/>If this field is not filled in, the calculation includes only recent task suites from the pool to which the rule applies.<br/><br/>If the field is filled in, the corresponding number of task suites is used. The rule takes into account the task suites from both this pool and other pools where this field is filled in.<br/><br/>[Learn more](remember-values.md) about how this field works.
+{% if locale == "en-com" %}**Recent task suites to use**{% endif %} | The number of recent assignments submitted by the Toloker.<br/><br/>If this field is not filled in, the calculation includes only recent task suites from the pool to which the rule applies.<br/><br/>If the field is filled in, the corresponding number of task suites is used. The rule takes into account the task suites from both this pool and other pools where this field is filled in.<br/><br/>To learn more about how this field works, go to [Parameter "Remember values"](remember-values.md).
 {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} | The task suite completion time (in seconds). Everything that is completed faster is considered a fast response.
-{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:<br/>- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of the Toloker's recent responses (less than or equal to the number in the {% if locale == "en-com" %}**Recent values to use**{% endif %} field).<br/>    <br/>- {% if locale == "en-com" %}**number of fast responses**{% endif %} — Allowed number of fast responses (out of the recent ones).<br/><br/>To add multiple conditions, click ![](../_images/add.svg).
-{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).<br/>    <br/>- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
+{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:<br/>- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of the Toloker's recent responses (less than or equal to the number in the {% if locale == "en-com" %}**Recent task suites to use**{% endif %} field).<br/>    <br/>- {% if locale == "en-com" %}**number of fast responses**{% endif %} — Allowed number of fast responses (out of the recent ones).<br/><br/>To add multiple conditions, click ![](../_images/add.svg).
+{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the Toloker's [skill](nav.md).<br/>    <br/>- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
 
 
 ## Examples of rules {#examples}
@@ -37,7 +44,7 @@ Examples are provided for simple [classification](../tutorials/image-classificat
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if you don't reject them manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -50,7 +57,7 @@ A Toloker who completes a task suite in less than 10 seconds will be banned and 
 
 #### Incorrect settings
 ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1_1.png)
-This rule will never take effect because the number of responses counted ({% if locale == "en-com" %}**Recent values to use**{% endif %}) is less than the number of recent responses in the rule ({% if locale == "en-com" %}**number of responses**{% endif %}).
+This rule will never take effect because the number of responses counted ({% if locale == "en-com" %}**Recent task suites to use**{% endif %}) is less than the number of recent responses in the rule ({% if locale == "en-com" %}**number of responses**{% endif %}).
 
 #### Suspension in the pool for fast responses
 ![](../_images/control-rules/quick-answers/qcr-quick_answers_example2.png)
@@ -71,11 +78,11 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
 
     - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
 
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
+    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control and training task responses to use** field empty.
 
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
+    This option is available only for skills on control tasks. To use it, fill in the **Recent control and training task responses to use** field in pool quality control rules.
 
 
 #### Can I use a skill beyond a particular pool or project and apply it to other projects as well?
@@ -86,11 +93,10 @@ Yes, of course — you can use the same skill for different projects. But most o
 
 Yes, the [fast response](quick-answers.md) settings specify the time per task suite.
 
-#### How can I ban a user and reject all their responses?
+#### How can I ban a Toloker and reject all their responses?
 
 You can't automatically reject the responses of a banned Toloker.
 
-But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned users to other Tolokers using the [Re-completion of assignments from banned users](restore-task-overlap.md) rule.
-
+But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned Tolokers to other Tolokers using the [Re-completion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

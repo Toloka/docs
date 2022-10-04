@@ -1,8 +1,19 @@
 # Creating a file with tasks
 
-Tasks are uploaded to the [pool](pool-main.md) in the [tasks file](../../glossary.md#tsv-file-definition-ru).
+Tasks are uploaded to the [pool](pool-main.md) in [the tasks file](../../glossary.md#tsv-file-definition-ru_1).
 
-Download the file template for your [project](../../glossary.md#project-ru) on the [pool](../../glossary.md#pool-ru) page. Use the template to create your own task file and upload it to the pool.
+Download the file template for your [project](../../glossary.md#project) on the [pool](../../glossary.md#pool-ru) page. Use the template to create your own task file and upload it to the pool.
+
+#### Use sample data
+If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
+- {% if locale == "en-com" %}**Image classification**{% endif %}
+- {% if locale == "en-com" %}**Product search relevance**{% endif %}
+- {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
+- {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+
+Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+
+Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
 If you need to add different task types to the pool, upload multiple files, one for each task type.
 
@@ -14,7 +25,7 @@ The first line of the file contains the column headers:
 - `GOLDEN:<name of the [output data field](incoming.md)>` — Responses for [control tasks](../../glossary.md#control-task-ru).
 - `HINT:text` — Hints for [training tasks](../../glossary.md#training-task-ru). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
-- Point coordinates for [field tasks](walk.md):
+- Point coordinates for [field tasks](../tutorials/walk.md):
     - `Al:latitude` — Latitude.
 
     - `Al:longitude` — Longitude.
@@ -39,7 +50,7 @@ To create a control task, add:
 
 {% note info %}
 
-You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
 {% endnote %}
 
@@ -58,7 +69,7 @@ For training tasks, it is convenient to create a [separate pool](train.md).
 
 {% note info %}
 
-You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
 {% endnote %}
 
@@ -88,7 +99,9 @@ In popular spreadsheet editors, you can import and export data in TSV or XLSX:
 - [LibreOffice]({{ libre-office }})
 - [Google Documents]({{ google-docs }}).
 
-You can work with data in a spreadsheet and then save it to the desired format.
+A text editor is good for JSON files (for example, {% if locale == "en-com" %}Notepad{% endif %} on Windows or TextEdit on Mac OS).
+
+You can work with data in an editor and then save it in the desired format.
 
 #### TSV
 
@@ -102,6 +115,12 @@ You can work with data in a spreadsheet and then save it to the desired format.
 1. Create a spreadsheet with [appropriate headings](#structure) or copy them from the template.
 1. Add data for tasks.
 1. Save the file in `XLSX`.
+
+#### JSON
+
+1. Download the file template in `JSON`.
+1. Open the template in a text editor and add your data.
+1. Save the file.
 
 The maximum file size is 100 MB.
 
@@ -124,7 +143,7 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 ----- | ----- | ----- | -----
 {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` "monitor 24"" buy" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
 {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` correct, but the quotes won't be displayed ```{% endif %} | {% if locale == "en-com" %}``` book All about dogs ```{% endif %}
-{% if locale == "en-com" %}``` book “All about dogs” ```{% endif %} | {% if locale == "en-com" %}``` "book “All about dogs”" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book “All about dogs” ```{% endif %}
+{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` "book "All about dogs"" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %}
 {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
 
 
@@ -255,7 +274,7 @@ Overview | How to fix
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+**Invalid data in a "link" ("url") field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).
 
@@ -281,11 +300,11 @@ If you are creating control tasks, fill out the `GOLDEN` columns with the correc
 
 If you are creating a training task, you also need to fill in the `HINT:text` column. For the general tasks you don't need any columns other than `INPUT`, so feel free to delete them.
 
-You have to use TSV or XLSX file format and UTF-8 encoding.
+You have to use the TSV, XLSX or JSON file format and UTF-8 encoding.
 
 For more information about creating the file, see the [Guide](pool_csv.md). If there are errors during the upload, look up the error description on this [page](task_upload.md).
 
-#### Why do I see a syntax error when I upload a task where a user has to view an image and write feedback?
+#### Why do I see a syntax error when I upload a task where a Toloker has to view an image and write feedback?
 
 The error might occur if the expected input type is URL, but a string is received.
 
@@ -297,11 +316,11 @@ There may be two reasons:
 
 It depends on the task. Technically, you can use as many tasks you want.
 
-But users don't like to take lengthy tasks. They'd rather do 10 tasks that take one minute each than one task that takes 10 minutes.
+But Tolokers don't like to take lengthy tasks. They'd rather do 10 tasks that take one minute each than one task that takes 10 minutes.
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 #### How do I specify smart mixing settings in the interface when uploading a file?
 
@@ -319,7 +338,7 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be "reassessed".
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 
@@ -337,7 +356,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 #### Where is my file added if I upload it to the running pool?
 
-If you have the **Keep task order** option enabled, labeling will start after the previously uploaded tasks are taken by users. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
+If the **Keep task order** option enabled in the settings of the pool, labeling will start after the previously uploaded tasks. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
 
 #### How do I properly structure the file used for data upload if the input includes JSON data?
 
@@ -386,6 +405,5 @@ Usually, if you copy site links from the browser, the copied links have the same
 Check the links that you use. There are several ways to unify links:
 - Add requirements for the link format in your instructions and hints in your training pool.
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

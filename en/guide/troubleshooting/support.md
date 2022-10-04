@@ -1,5 +1,10 @@
 # Support
 
+#### Find answers to questions
+
+- [All questions on one page](troubleshooting.md)
+- [Join our Slack community](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg)
+
 {% cut "Get initial consultation" %}
 
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8745/?lang=en&iframe=1&service=toloka-ai"></iframe>

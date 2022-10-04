@@ -80,7 +80,7 @@ In the project, you define what the task will look like for the Toloker.
     In this case they are:
 
     - Input data: `comment` field, text for checking.
-    - Output data: the `quality` string to record the selected response option from the field “Are there any violations in the text?”. Other fields: types of violations. You can use this list of fields or customize it for your tasks.
+    - Output data: the `quality` string to record the selected response option from the field "Are there any violations in the text?". Other fields: types of violations. You can use this list of fields or customize it for your tasks.
 
     #### Graphic mode
     ![](../_images/tutorials/content-moderation/cm-specification.png)
@@ -184,7 +184,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. On your new project page, click **Add pool**.
 1. Give the pool any convenient name and description. They are available only to you, the Toloker sees only the project name and description.
-1. In the **Audience** block, add **Filters** to select Tolokers. If the instructions, the task interface and the comments themselves are in Russian, use the “Russian-speaking Tolokers” set. If you plan to analyze comments in English or another language, add the `Language = English` filter to them
+1. In the **Audience** block, add **Filters** to select Tolokers. If the instructions, the task interface and the comments themselves are in Russian, use the "Russian-speaking Tolokers" set. If you plan to analyze comments in English or another language, add the `Language = English` filter to them
 
     Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 

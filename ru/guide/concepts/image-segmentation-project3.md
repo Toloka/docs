@@ -258,7 +258,7 @@
     1. В поле {% if locale == "ru-ru" %}**Считать большинством**{% endif %}{% if locale == "en-com" %}**Accept as majority**{% endif %} укажите `2`.
 
     1. Задайте правило: если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %} **≥ 10** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%)**{% endif %} **< 50**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %} исполнителя {% if locale == "ru-ru" %}**на проекте на 10 дней**{% endif %}{% if locale == "en-com" %}**on project**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В качестве причины укажите **Не совпадает с большинством**.
-    {% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/majority-vote.png){% endif %}
+
 
     {% note info %}
 
@@ -370,12 +370,6 @@
 #### Проверить задания в файле с результатами
 
 1. Откройте в редакторе текста или электронных таблиц файл, полученный после агрегации результатов.
-
-    {% note info %}
-
-    Вы можете воспользоваться онлайн-редактором электронных таблиц. Перейдите на [Яндекс Диск]({{ yadisk-client }}), подключенный к вашему аккаунту заказчика. Нажмите {% if locale == "ru-ru" %}**Создать → Таблицу**{% endif %}{% if locale == "en-com" %}**Create → Spreadsheet**{% endif %}. Скопируйте в таблицу агрегированные данные из файла.
-
-    {% endnote %}
 
 1. Подготовьте файл:
 
