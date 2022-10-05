@@ -44,7 +44,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](../_images/tutorials/walk/walk-create-project-step-1.png =700x)](../_images/tutorials/walk/walk-create-project-step-1.png)
+    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png)
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like.
 
@@ -52,15 +52,15 @@ Before you begin:
 
     1. Copy the code of the [example](https://ya.cc/t/ZFj9dvvG3Zg9Xw) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
 
-        [![Create a project. Config section](../_images/tutorials/walk/walk-config-section.png =700x)](../_images/tutorials/walk/walk-config-section.png)
+        [![Create a project. Config section](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png)
 
     1. You can edit the code. For example, to configure the text above the {% if locale == "en-com" %}**Take photo**{% endif %} section, replace the sample text with your value in the `label` property.
 
-        [![Create a project. Config text](../_images/tutorials/walk/walk-config-text.png =700x)](../_images/tutorials/walk/walk-config-text.png)
+        [![Create a project. Config text](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png)
 
     1. The Toloker will be able to submit the response when they are within 50 meters of the specified location. To change this condition, replace the value of the `max` property with the desired distance:
 
-        [![Create a project. Config distance](../_images/tutorials/walk/walk-config-distance.png =560x)](../_images/tutorials/walk/walk-config-distance.png)
+        [![Create a project. Config distance](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-distance.png =560x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-distance.png)
 
         {% note info %}
 
@@ -110,7 +110,7 @@ Before you begin:
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
-        [![Create a pool. Languages filter](../_images/tutorials/walk/walk-language-filter.png =700x)](../_images/tutorials/walk/walk-language-filter.png)
+        [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png)
 
     1. Tasks in pools are available in the web version of Toloka and the mobile app by default. Make your tasks available in the mobile app only: add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the {% if locale == "en-com" %}**Toloka for mobile**{% endif %} option.
 
@@ -125,13 +125,13 @@ Before you begin:
 
     1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of assignment review**{% endif %}, and enter the following values:
 
-        [![Create a pool. Results of assignment review rule](../_images/tutorials/walk/walk-results-rule.png =700x)](../_images/tutorials/walk/walk-results-rule.png)
+        [![Create a pool. Results of assignment review rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png)
 
         This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
     1. Add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. When the overlap value is {% if locale == "en-com" %}**1**{% endif %}, you should resend assignments to the pool for other Tolokers to redo them.
 
-        [![Create a pool. Processing rejected and accepted assignments rule](../_images/tutorials/walk/walk-rejected.png =700x)](../_images/tutorials/walk/walk-rejected.png)
+        [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png)
 
         This means that if you reject assignments during the review, they’ll be sent for re-completion to another Toloker.
 
@@ -192,7 +192,7 @@ At this step, upload your task data to Toloka.
 
     1. In this type of project, the task suite must contain only one task:
 
-        [![Upload data. Tasks in suite](../_images/tutorials/walk/walk-number-tasks.png =570x)](../_images/tutorials/walk/walk-number-tasks.png)
+        [![Upload data. Tasks in suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png)
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -202,7 +202,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling](../_images/tutorials/walk/walk-start-labeling-step-2.png =700x)](../_images/tutorials/walk/walk-start-labeling-step-2.png)
+    [![Start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png)
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -214,7 +214,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-    [![See the results. Review assignments](../_images/tutorials/walk/walk-review-results.png =700x)](../_images/tutorials/walk/walk-review-results.png)
+    [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png)
 
 1. Choose an assignment.
 
@@ -228,13 +228,13 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. After checking all the assignments, click {% if locale == "en-com" %}**Download results**{% endif %}.
 
-    [![See the results. Download results](../_images/tutorials/walk/walk-results-download.png =700x)](../_images/tutorials/walk/walk-results-download.png)
+    [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png)
 
     You will get the TSV file with the labeling results.
 
 1. To download the files Tolokers attached to the tasks, go to the pool page and click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button. Choose {% if locale == "en-com" %}**Download attachments**{% endif %} from the drop-down menu.
 
-    [![See the results. Download attachments](../_images/tutorials/walk/walk-results-download-attachments.png =484x)](../_images/tutorials/walk/walk-results-download-attachments.png)
+    [![See the results. Download attachments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png =484x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png)
 
 ## Troubleshooting {#troubleshooting}
 

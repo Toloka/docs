@@ -6,7 +6,7 @@ In this tutorial, you will learn how to run content moderation in Toloka. We wil
 
 Content moderation is a type of data labeling task with a text and a number of response options. Tolokers read the text and choose one of the given answer options. After that, they can specify their answer using an additional question with checkboxes.
 
-[![Sentiment analysis and content moderation](../_images/tutorials/content-moderation/content-moderation-preview-interface.png =400x)](../_images/tutorials/content-moderation/content-moderation-preview-interface.png)
+[![Sentiment analysis and content moderation](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-preview-interface.png =400x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-preview-interface.png)
 
 Use this preset when you need to:
 
@@ -48,7 +48,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](../_images/tutorials/content-moderation/content-moderation-create-project-step-1.png =700x)](../_images/tutorials/content-moderation/content-moderation-create-project-step-1.png)
+    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-create-project-step-1.png)
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -56,7 +56,7 @@ Before you begin:
 
     1. Write the first question Tolokers will see in your task. All tasks in a project use the same question.
 
-        [![Create a project. Config question](../_images/tutorials/content-moderation/content-moderation-config-question-1.png =700x)](../_images/tutorials/content-moderation/content-moderation-config-question-1.png)
+        [![Create a project. Config question](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-question-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-question-1.png)
 
     1. Set answer options. In the {% if locale == "en-com" %}`options`{% endif %} list, replace the sample answers with your values in the following properties:
 
@@ -64,19 +64,19 @@ Before you begin:
 
         - {% if locale == "en-com" %}`value`{% endif %}: This is the value you will see in the file with the labeling results.
 
-        [![Create a project. Config answer options](../_images/tutorials/content-moderation/content-moderation-config-answer-options-1.png =700x)](../_images/tutorials/content-moderation/content-moderation-config-answer-options-1.png)
+        [![Create a project. Config answer options](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-answer-options-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-answer-options-1.png)
 
     1. When a Toloker selects an option which requires additional information, the second question with checkboxes appears. You can change the condition under which the additional question becomes visible. To to that, replace the value of the {% if locale == "en-com" %}`to`{% endif %} propertу with one of the values you’ve already specified in the {% if locale == "en-com" %}`value`{% endif %} properties in the previous step:
 
-        [![Create a project. Config answer options](../_images/tutorials/content-moderation/content-moderation-config-condition.png =700x)](../_images/tutorials/content-moderation/content-moderation-config-condition.png)
+        [![Create a project. Config answer options](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-condition.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-condition.png)
 
     1. Configure the text and the answer options for the additional question:
 
-        [![Create a project. Config condition](../_images/tutorials/content-moderation/config-answer-options-2.png =700x)](../_images/tutorials/content-moderation/config-answer-options-2.png)
+        [![Create a project. Config condition](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/config-answer-options-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/config-answer-options-2.png)
 
     1. In the {% if locale == "en-com" %}**Input data example**{% endif %} section, add a sample text. It is only used to display the task interface preview on the right.
 
-        [![Create a project. Input data example](../_images/tutorials/content-moderation/content-moderation-input-example.png =700x)](../_images/tutorials/content-moderation/content-moderation-input-example.png)
+        [![Create a project. Input data example](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-input-example.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-input-example.png)
 
     1. {% include [toloka-requester-source-specification-definition](../_includes/toloka-requester-source/id-toloka-requester-source/specification-definition.md) %}
 
@@ -113,7 +113,7 @@ Before you begin:
 
         For example, add the {% if locale == "en-com" %}**Languages**{% endif %} filter:
 
-        [![Create a pool. Languages filter](../_images/tutorials/content-moderation/content-moderation-language-filter.png =700x)](../_images/tutorials/content-moderation/content-moderation-language-filter.png)
+        [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-language-filter.png)
 
     1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
@@ -125,7 +125,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, edit the pre-configured {% if locale == "en-com" %}**Fast responses**{% endif %} rule. Specify the following values:
 
-        [![Create a pool. Fast responses rule](../_images/tutorials/content-moderation/content-moderation-fast-responses.png =700x)](../_images/tutorials/content-moderation/content-moderation-fast-responses.png)
+        [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-fast-responses.png)
 
         These settings mean that a Toloker who completes a task suite in less than 20 seconds will be suspended and won't be able to access your tasks for 10 days.
 
@@ -141,7 +141,7 @@ Before you begin:
 
     1. Click {% if locale == "en-com" %}**Add a quality control rule → Control tasks**{% endif %}, and enter the following values:
 
-        [![Create a pool. Control tasks rule](../_images/tutorials/content-moderation/content-moderation-control-rule.png =700x)](../_images/tutorials/content-moderation/content-moderation-control-rule.png)
+        [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-control-rule.png)
 
         This means that a Toloker who gives more than 40% of incorrect responses will be blocked and won't be able to complete tasks in this project for 10 days.
 
@@ -192,7 +192,7 @@ At this step, upload your task data to Toloka.
 
     For example, you can add 9 general tasks and 1 control task per suite:
 
-    [![Upload data. Tasks per suite](../_images/tutorials/content-moderation/content-moderation-smart-mixing.png =700x)](../_images/tutorials/content-moderation/content-moderation-smart-mixing.png)
+    [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-smart-mixing.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-smart-mixing.png)
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -200,23 +200,23 @@ At this step, upload your task data to Toloka.
 
     1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
 
-        [![Upload data. Click Edit](../_images/tutorials/content-moderation/content-moderation-edit-button.png =610x)](../_images/tutorials/content-moderation/content-moderation-edit-button.png)
+        [![Upload data. Click Edit](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-edit-button.png =610x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-edit-button.png)
 
     1. On the {% if locale == "en-com" %}**Edit tasks**{% endif %} page, click {% if locale == "en-com" %}**Create control tasks**{% endif %}.
 
-        [![Upload data. Create control tasks](../_images/tutorials/content-moderation/content-moderation-create-control-button.png =500x)](../_images/tutorials/content-moderation/content-moderation-create-control-button.png)
+        [![Upload data. Create control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-create-control-button.png =500x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-create-control-button.png)
 
     1. Select all the checkboxes, and specify the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
 
-        [![Upload data. Create control tasks](../_images/tutorials/content-moderation/content-moderation-creating-control-task.png =700x)](../_images/tutorials/content-moderation/content-moderation-creating-control-task.png)
+        [![Upload data. Create control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-creating-control-task.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-creating-control-task.png)
 
     1. Note the {% if locale == "en-com" %}**Distribution of correct responses for control tasks**{% endif %} graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
-        [![Upload data. Distribution of correct responses for control tasks](../_images/tutorials/content-moderation/content-moderation-distibution.png =440x)](../_images/tutorials/content-moderation/content-moderation-distibution.png)
+        [![Upload data. Distribution of correct responses for control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-distibution.png =440x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-distibution.png)
 
     1. When you are done adding control tasks, click the pool name in the menu.
 
-        [![Upload data. Click pool name](../_images/tutorials/content-moderation/content-moderation-pool-name.png =600x)](../_images/tutorials/content-moderation/content-moderation-pool-name.png)
+        [![Upload data. Click pool name](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-pool-name.png =600x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-pool-name.png)
 
 ## Start labeling {#labeling}
 
@@ -224,7 +224,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling. Step 2](../_images/tutorials/content-moderation/content-moderation-start-labeling.png =700x)](../_images/tutorials/content-moderation/content-moderation-start-labeling.png)
+    [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-start-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-start-labeling.png)
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -232,11 +232,11 @@ At this step, upload your task data to Toloka.
 
 1. You can see the labeling progress on the pool page. Wait until the labeling is completed. Refresh the page to check the progress.
 
-    [![See the results. Step 1](../_images/tutorials/content-moderation/content-moderation-see-results-step-1.png =700x)](../_images/tutorials/content-moderation/content-moderation-see-results-step-1.png)
+    [![See the results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-1.png)
 
 1. When the labeling is complete, click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button and choose {% if locale == "en-com" %}**Run Dawid-Skene model**{% endif %} from the drop-down menu. Click {% if locale == "en-com" %}**Yes**{% endif %} in the pop-up window.
 
-    [![See the results. Step 2](../_images/tutorials/content-moderation/content-moderation-see-results-step-2.png =700x)](../_images/tutorials/content-moderation/content-moderation-see-results-step-2.png)
+    [![See the results. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-2.png)
 
 1. Open the same drop-down menu again, and click {% if locale == "en-com" %}**View aggregations list**{% endif %}.
 

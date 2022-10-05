@@ -44,7 +44,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](../_images/tutorials/transcript-audio/transcript-audio-create-project-step-1.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-create-project-step-1.png)
+    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-create-project-step-1.png)
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with layout and validation pre-configured. The Toloker won't be able to submit the response without listening to the audio recording and adding the text.
 
@@ -52,7 +52,7 @@ Before you begin:
 
     1. In the {% if locale == "en-com" %}**Config**{% endif %} section, you can change the texts Tolokers will see in your task. All tasks in a project use the same texts.
 
-        [![Create a project. Config texts](../_images/tutorials/transcript-audio/transcript-audio-config-texts.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-config-texts.png)
+        [![Create a project. Config texts](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-config-texts.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-config-texts.png)
 
         {% note info %}
 
@@ -62,7 +62,7 @@ Before you begin:
 
     1. In the {% if locale == "en-com" %}**Input data example**{% endif %} section, add a link to a sample audio. This audio is only used to display the task interface preview on the right.
 
-        [![Create a project. Input data example](../_images/tutorials/transcript-audio/transcript-audio-input-example.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-input-example.png)
+        [![Create a project. Input data example](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-input-example.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-input-example.png)
 
     1. {% include [toloka-requester-source-specification-definition](../_includes/toloka-requester-source/id-toloka-requester-source/specification-definition.md) %}
 
@@ -100,7 +100,7 @@ Before you begin:
 
         - For example, add the {% if locale == "en-com" %}**Languages**{% endif %} filter:
 
-            [![Create a pool. Language filter](../_images/tutorials/transcript-audio/transcript-audio-language-filter.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-language-filter.png)
+            [![Create a pool. Language filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-language-filter.png)
 
         - It is best to launch transcription tasks in the Toloka web version so that Tolokers can use the keyboard for typing. Add the {% if locale == "en-com" %}**Device type**{% endif %} filter, and set its value to {% if locale == "en-com" %}**Personal computer**{% endif %}.
 
@@ -126,7 +126,7 @@ Before you begin:
 
         To catch bots, set 10–15 seconds per response. Ban Tolokers after two fast responses.
 
-        [![Create a pool. Fast answers filter](../_images/tutorials/transcript-audio/transcript-audio-fast-answers.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-fast-answers.png)
+        [![Create a pool. Fast answers filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-fast-answers.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-fast-answers.png)
 
         This means that a user who completes two or more task suites in less than 10 seconds will be banned for 10 days and won't be able to access your tasks.
 
@@ -138,19 +138,19 @@ Before you begin:
 
             In this case, the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} value depends on the length of recordings and their number per task suite, as well as on how difficult the task is (it's hard to hear, it contains jargon, it has special rules for transcribing, and so on). Ban Tolokers after three fast responses.
 
-            [![Create a pool. Fast answers control rule](../_images/tutorials/transcript-audio/transcript-audio-fast-answers2.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-fast-answers2.png)
+            [![Create a pool. Fast answers control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-fast-answers2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-fast-answers2.png)
 
             This means that a user who gives a minimum of 3 responses in less than 30 seconds will be banned for 5 days and won't be able to complete your tasks.
 
         1. Add the {% if locale == "en-com" %}**Results of assignment review**{% endif %} quality control rule and enter the following values:
 
-            [![Create a pool. Assignments review control rule](../_images/tutorials/transcript-audio/transcript-audio-offline-accept.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-offline-accept.png)
+            [![Create a pool. Assignments review control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-offline-accept.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-offline-accept.png)
 
             This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
         1. Add the [Processing rejected and accepted assignments](../concepts/reassessment-after-accepting.md) rule:
 
-            [![Create a pool. Processing rejected and accepted assignments control rule](../_images/tutorials/transcript-audio/qcr-reassessment-after-accepting_example1.png =700x)](../_images/tutorials/transcript-audio/qcr-reassessment-after-accepting_example1.png)
+            [![Create a pool. Processing rejected and accepted assignments control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/qcr-reassessment-after-accepting_example1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/qcr-reassessment-after-accepting_example1.png)
 
             This means that if you reject assignments during the review, they'll be sent for re-completion, but to another Toloker.
 
@@ -207,7 +207,7 @@ At this step, upload your task data to Toloka. We recommend that all the recordi
 
     For example, you can add 5 general tasks per suite:
 
-    [![Upload data. Tasks per suite](../_images/tutorials/transcript-audio/transcript-audio-upload-data.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-upload-data.png)
+    [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-upload-data.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-upload-data.png)
 
     This means that there will be 5 audio recordings per suit, each recording with a text field for transcription.
 
@@ -219,7 +219,7 @@ At this step, upload your task data to Toloka. We recommend that all the recordi
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling. Step 2](../_images/tutorials/transcript-audio/transcript-audio-start-labeling-step-2.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-start-labeling-step-2.png)
+    [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-start-labeling-step-2.png)
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -231,7 +231,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-    [![See the results. Review assignments](../_images/tutorials/transcript-audio/transcript-audio-review-results.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-review-results.png)
+    [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-review-results.png)
 
 1. Choose an assignment.
 
@@ -245,7 +245,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. After checking all the assignments, click {% if locale == "en-com" %}**Download results**{% endif %}.
 
-    [![See the results. Download results](../_images/tutorials/transcript-audio/transcript-audio-results-download.png =700x)](../_images/tutorials/transcript-audio/transcript-audio-results-download.png)
+    [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-results-download.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-results-download.png)
 
     You will get the TSV file with the labeling results.
 

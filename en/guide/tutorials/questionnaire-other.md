@@ -56,7 +56,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](../_images/tutorials/questionnaire/survey-create-project-step-1.png =700x)](../_images/tutorials/questionnaire/survey-create-project-step-1.png)
+    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1.png)
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with validation and task layout pre-configured.
 
@@ -64,7 +64,7 @@ Before you begin:
 
     1. In the {% if locale == "en-com" %}**Config**{% endif %} section, you can edit the pre-configured code. For example, to change the description, replace the sample text with your value in the `label` property.
 
-        [![Create a project. Config question description](../_images/tutorials/questionnaire/survey-config-question-description.png =700x)](../_images/tutorials/questionnaire/survey-config-question-description.png)
+        [![Create a project. Config question description](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-description.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-description.png)
 
         {% note info %}
 
@@ -74,7 +74,7 @@ Before you begin:
 
     1. In the {% if locale == "en-com" %}**Input data example**{% endif %} section, you can see a sample link.
 
-        [![Create a project. Input example external](../_images/tutorials/questionnaire/survey-input-example-external.png =700x)](../_images/tutorials/questionnaire/survey-input-example-external.png)
+        [![Create a project. Input example external](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-input-example-external.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-input-example-external.png)
 
         It is only an example used to display the task interface preview on the right. You will add a link to your survey later while uploading a task file.
 
@@ -118,7 +118,7 @@ Before you begin:
 
     1. Select Tolokers who knows the language of your survey:
 
-        [![Create a pool. Languages filter](../_images/tutorials/questionnaire/survey-language-filter.png =700x)](../_images/tutorials/questionnaire/survey-language-filter.png)
+        [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png)
 
         Additionally, you can select Tolokers based on their location, age, gender, and other parameters. Use the {% if locale == "en-com" %}**Add filter**{% endif %} button and configure the filters you need.
 
@@ -128,11 +128,11 @@ Before you begin:
 
         1. Click the {% if locale == "en-com" %}**Add skill**{% endif %} button. Enter the skill name and description, and leave the skill not public.
 
-            [![Create a pool. Add skill](../_images/tutorials/questionnaire/survey-skill-add.png =405x)](../_images/tutorials/questionnaire/survey-skill-add.png)
+            [![Create a pool. Add skill](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png =405x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png)
 
         1. Click {% if locale == "en-com" %}**Add filter → My skills**{% endif %} and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
 
-            [![Create a pool. My skills](../_images/tutorials/questionnaire/survey-skill-filter.png =700x)](../_images/tutorials/questionnaire/survey-skill-filter.png)
+            [![Create a pool. My skills](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png)
 
         You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
 
@@ -144,7 +144,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, edit the pre-configured **Fast responses** rule. Specify the following values:
 
-        [![Create a pool. Fast responses rule](../_images/tutorials/questionnaire/survey-fast-responses.png =700x)](../_images/tutorials/questionnaire/survey-fast-responses.png)
+        [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png)
 
         These settings mean that a Toloker who completes a task suite in less than 15 seconds will be blocked and won’t be able to access your tasks anymore.
 
@@ -160,17 +160,17 @@ Before you begin:
 
     1. To get the required number of responses, add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. Enter the following values:
 
-        [![Create a pool. Processing rejected and accepted assignments rule](../_images/tutorials/questionnaire/survey-rejected.png =700x)](../_images/tutorials/questionnaire/survey-rejected.png)
+        [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png)
 
         This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
 
     1. Add the rule which assigns a skill after one submitted survey. As you’ve set the filter to select Tolokers without this skill in step 3.4, the rule allows you to filter out Tolokers who have already completed your survey.
 
-        [![Create a pool. Submitted responses rule](../_images/tutorials/questionnaire/survey-accomplished.png =700x)](../_images/tutorials/questionnaire/survey-accomplished.png)
+        [![Create a pool. Submitted responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png)
 
     1. To automatically accept tasks from those who entered a completion code correctly, use the {% if locale == "en-com" %}**Control tasks**{% endif %} rule:
 
-        [![Create a pool. Control tasks rule](../_images/tutorials/questionnaire/survey-control-rule.png =700x)](../_images/tutorials/questionnaire/survey-control-rule.png)
+        [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png)
 
         The rule will work if you specify the correct completion code in the file with tasks. You will do that later in this tutorial.
 
@@ -285,7 +285,7 @@ At this step, upload your task data to Toloka.
 
         Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
 
-        [![Upload data. Tasks per suite](../_images/tutorials/questionnaire/survey-number-tasks.png =570x)](../_images/tutorials/questionnaire/survey-number-tasks.png)
+        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png)
 
     1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -303,7 +303,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling](../_images/tutorials/questionnaire/survey-start-labeling.png =700x)](../_images/tutorials/questionnaire/survey-start-labeling.png)
+    [![Start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling.png)
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -317,7 +317,7 @@ Review the rest of the tasks during the time period specified in the {% if local
 
 1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-    [![See the results. Review assignments](../_images/tutorials/questionnaire/survey-review-results.png =700x)](../_images/tutorials/questionnaire/survey-review-results.png)
+    [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png)
 
 1. Choose an assignment.
 
