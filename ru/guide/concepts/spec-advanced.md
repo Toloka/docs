@@ -90,10 +90,7 @@ var ChildClass = extend(ParentClass, function() {
 ```
 {% endif %}
 
-Ключ
- |
-Значение
-
+Ключ|Значение
 ----- | -----
 `id` | Идентификатор задания.
 `input_values` | Входные данные задания в формате `"<id поля>":"<значение поля>"`. Пример:```no-highlight "input_values": {   "image": "http://images.com/1.png" } ```
@@ -122,10 +119,7 @@ var ChildClass = extend(ParentClass, function() {
 ```
 {% endif %}
 
-Ключ
- |
-Значение
-
+Ключ|Значение
 ----- | -----
 `task_id` | Идентификатор задания.
 `output_values` | Ответы в формате `"<id поля ввода>":"<значение>"`. Пример: ```no-highlight "outputValues": {   "colour": "white",   "comment": "So white" } ```
@@ -160,10 +154,7 @@ var ChildClass = extend(ParentClass, function() {
 ```
 {% endif %}
 
-Ключ
- |
-Значение
-
+Ключ|Значение
 ----- | -----
 `task_id` | Идентификатор задания.
 `errors` | Ошибки в формате: `"<id поля ввода>": {code: "<код ошибки>", message: "<сообщение об ошибке>"}`. Пример: {% if locale == "ru-ru" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Обязательное поле"   } } ```{% endif %} {% if locale == "en-com" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}

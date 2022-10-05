@@ -16,7 +16,7 @@
 Параметры:
 
 - `options.assignment` — модель списка задания `Assignment`.
-- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data-ru), интерфейса заданий.
+- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data), интерфейса заданий.
 - `options.workspaceOptions` — параметры инициализации рабочего пространства исполнителя.
 
 #### destroy()
@@ -38,7 +38,7 @@
 
 Возвращает объект с набором параметров, переданных методу `constructor()` при инициализации.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // getting specifications for all required fields:
@@ -48,11 +48,13 @@ let outputSpec = this.getOptions().specs.output_spec,
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
 
+{% endcut %}
+
 #### getSandboxChannel()
 
 Возвращает ссылку на активный канал для обмена сообщениями между родительской страницей и фреймом задания. Если канала нет, создает его.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // subscribe to all messages and show them
@@ -62,6 +64,8 @@ this.getSandboxChannel().on('*', (name, message) => console.log(message));
 // there is also a separate service for this TaskInterface
 this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 ```
+
+{% endcut %}
 
 #### getTaskSuite()
 
@@ -93,7 +97,7 @@ this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 
 - `strategy`: функция, которая отправляет в родительскую страницу сообщение об отправке результатов (`assignment:submit`), массив ответов и `assignmentId`.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 provideSolutions(strategy = function(solutions) {
@@ -114,6 +118,8 @@ provideSolutions(strategy = function(solutions) {
             });
     }
 ```
+
+{% endcut %}
 
 #### resume()
 

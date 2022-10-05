@@ -58,7 +58,7 @@
 {{field type="input" name="result.input2"}}
 ```
 
-[TSV-файл](../../../glossary.md#tsv-file-definition-ru) с ответами в столбце `result` будет содержать данные в виде:{% if locale == "ru-ru" %}
+[TSV-файл](../../../glossary.md#tsv-file-definition) с ответами в столбце `result` будет содержать данные в виде:{% if locale == "ru-ru" %}
 ```
 {result {"input1": "<ответ исполнителя>", "input2": "<ответ исполнителя>"}}
 ```

@@ -40,7 +40,7 @@
 
 ## TaskInterface {#TaskInterface}
 
-[Интерфейс задания](../../../glossary.md#task-interface-ru). В `TaskSuite` и `Task` доступен через `this.taskInterface`.
+[Интерфейс задания](../../../glossary.md#task-interface). В `TaskSuite` и `Task` доступен через `this.taskInterface`.
 
 Методы:
 

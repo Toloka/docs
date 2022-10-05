@@ -2,7 +2,7 @@
 
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-«Класс-обертка» для [страницы заданий](../../../glossary.md#task-page-ru), создает экземпляры классов заданий. Вы можете переопределить этот класс, например, чтобы отобразить общий элемент на странице с заданиями или получить больший контроль над заданиями (нестандартные горячие клавиши или т.п.).
+«Класс-обертка» для [страницы заданий](../../../glossary.md#task-page), создает экземпляры классов заданий. Вы можете переопределить этот класс, например, чтобы отобразить общий элемент на странице с заданиями или получить больший контроль над заданиями (нестандартные горячие клавиши или т.п.).
 
 Основная задача класса `TaskSuite` — отрисовать задания на странице (`[render()](#render)`). Через него также происходит сбор ответов (`[getSolutions()](#getSolutions)`), валидация (`[validate(solutions)](#validate)`) и управление горячими клавишами ([`focusNextTask()`](#focusNextTask), [`onKey(key)`](#onKey) и т. д.).
 
@@ -17,7 +17,7 @@
 Параметры:
 
 - `options.task` — массив моделей задания [Task](../spec-advanced.md#obj-task).
-- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data-ru), интерфейса заданий.
+- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data), интерфейса заданий.
 - `options.assignmentId` — идентификаторы заданий на странице.
 - `options.workspaceOptions` — параметры инициализации рабочего пространства исполнителя.
 - `options.TaskClass` — массив классов создаваемых заданий.
@@ -45,12 +45,14 @@
 
 Возвращает ссылку на экземпляр класса [`Assignment`](assignment.md). После этого вы можете использовать все свойства и методы экземпляра класса.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // skip current assignment
 this.getAssignment().skip();
 ```
+
+{% endcut %}
 
 #### getDOMElement()
 
@@ -60,7 +62,7 @@ this.getAssignment().skip();
 
 Возвращает ссылку на активное задание. Получает индекс активного задания из приватного свойства `_focusedTaskIndex` и возвращает ссылку на это задание с помощью `[getTasks()](#getTasks)`.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // remove the class .some_class from all elements of the active task
@@ -68,11 +70,13 @@ let elements = Array.from(this.getFocusedTask().getDOMElement().querySelectorAll
 elements.forEach(el => el.classList.remove('some_class'));
 ```
 
+{% endcut %}
+
 #### getOptions()
 
 Возвращает объект с набором параметров, переданных методу `[constructor()](#constructor)` при инициализации.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // getting specifications for all required fields:
@@ -81,6 +85,14 @@ let outputSpec = this.getOptions().specs.output_spec,
                             .filter(key => outputSpec[key].required)
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
+
+{% endcut %}
+
+#### getProxyUrl(path)
+
+Возвращает полный URL для доступа к данным на [прокси-сервере](../prepare-data.md). Параметр:
+
+- `path` — относительный путь к файлу.
 
 #### getSolutions()
 
@@ -152,6 +164,46 @@ let outputSpec = this.getOptions().specs.output_spec,
 #### pause()
 
 Вызывает метод `pause()` для каждого задания в наборе. Также вызывает метод `[onPause()](#onPause)`.
+#### proxy(path, options)
+
+Делает GET/POST запрос через прокси. Возвращает результат запроса в виде объекта. Параметры:
+
+- Строка `path` — путь запроса.
+- Объект `options` — параметры запроса, см. [описание параметров](https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings) Jquery Ajax.
+
+{% note alarm %}
+
+Некоторые возможности (например, таймауты или кастомные заголовки) не поддерживаются.
+
+{% endnote %}
+
+{% cut "Пример" %}
+
+```javascript
+// we need to find usernames starting with 'ivanov' and 'egorov' (no more than 10 of each)
+// we make two POST requests to the search service
+// then wait for results
+
+let promises = [],
+patterns = ['jones*', 'smith*'];
+
+patterns.forEach(pattern => promises.push(Promise.resolve(this.proxy('myproxy/search', {
+   type: 'POST',
+   contentType: 'application/json',
+   dataType: 'json',
+   data: JSON.stringify({
+      query: pattern,
+      limit: 10
+   }),
+   processData: false
+}))));
+
+Promise.all(promises)
+.then(results => console.log(results))
+.catch(error => console.error(error));
+```
+
+{% endcut %}
 
 #### render()
 

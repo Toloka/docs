@@ -2,7 +2,7 @@
 
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-Базовый класс `Task` отвечает за [интерфейс задания](../../../glossary.md#task-interface-ru). Класс доступен в глобальной переменной `window.TolokaTask`.
+Базовый класс `Task` отвечает за [интерфейс задания](../../../glossary.md#task-interface). Класс доступен в глобальной переменной `window.TolokaTask`.
 
 Методы:
 
@@ -17,7 +17,7 @@
 Параметры:
 
 - `options.task` — модель задания [Task](../spec-advanced.md#obj-task).
-- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data-ru), интерфейса заданий.
+- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data), интерфейса заданий.
 - `options.workspaceOptions` — параметры инициализации рабочего пространства исполнителя.
 
 #### destroy()
@@ -32,12 +32,14 @@
 
 Возвращает ссылку на экземпляр класса `TolokaAssignment`. После этого можно обращаться ко всем его свойствам и методам.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // skip current assignment
 this.getAssignment().skip()
 ```
+
+{% endcut %}
 
 #### getDOMElement()
 
@@ -47,7 +49,7 @@ this.getAssignment().skip()
 
 Возвращает объект с набором параметров, переданных методу `[constructor()](#constructor)` при инициализации.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // getting specifications for all required fields:
@@ -56,6 +58,14 @@ let outputSpec = this.getOptions().specs.output_spec,
                             .filter(key => outputSpec[key].required)
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
+
+{% endcut %}
+
+#### getProxyUrl(path)
+
+Возвращает полный URL для доступа к данным на прокси-сервере. Параметр:
+
+- `path` — относительный путь к файлу.
 
 #### getSavedState()
 
@@ -83,7 +93,7 @@ let outputSpec = this.getOptions().specs.output_spec,
 
 Метод позволяет обрабатывать существующие значения или передавать в шаблонизатор новые кастомные параметры. Например, можно передать строки для локализации шаблона и использовать один и тот же проект для русскоязычных и англоязычных исполнителей.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // if the user completes the assignment under iOS, we show additional layout
@@ -100,6 +110,8 @@ getTemplateData: function() {
 }
 ```
 
+{% endcut %}
+
 #### getWorkspaceOptions()
 
 Возвращает параметры инициализации рабочего пространства исполнителя, переданные методу `constructor()`.
@@ -112,11 +124,13 @@ Cкрывает глобальную ошибку (только если под�
 
 Содержит `id` текущего задания.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 let myId = this.getTask().id
 ```
+
+{% endcut %}
 
 #### onBlur()
 
@@ -156,6 +170,51 @@ let myId = this.getTask().id
 #### pause()
 
 Приостанавливает выполнение задания. Сохраняет промежуточное состояние в локальном хранилище браузера (`saveState`) и вызывает метод `onPause`.
+
+#### proxy(path, options)
+
+Создает GET- или POST-запрос через прокси.
+
+Параметры:
+
+- `path` — путь для запроса (строка).
+- `options` — параметры запроса (объект). Подробнее читайте в описании параметров [Jquery Ajax](https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings).
+
+Возвращает объект `promise`.
+
+{% note info %}
+
+Некоторые возможности (например, таймауты или кастомные заголовки) не поддерживаются.
+
+{% endnote %}
+
+{% cut "Пример" %}
+
+```javascript
+// need to find user logins which start with 'jones' and 'smith' (not more than 10 of each instance)
+// we make two POST requests to the search service
+// then wait for results
+
+let promises = [],
+     patterns = ['jones*', 'smith*'];
+
+patterns.forEach(pattern => promises.push(Promise.resolve(this.proxy('myproxy/search', {
+   type: 'POST',
+   contentType: 'application/json',
+   dataType: 'json',
+   data: JSON.stringify({
+       query: pattern,
+       limit: 10
+   }),
+   processData: false
+}))));
+
+Promise.all(promises)
+       .then(results => console.log(results))
+       .catch(error => console.error(error));
+```
+
+{% endcut %}
 
 #### render()
 
