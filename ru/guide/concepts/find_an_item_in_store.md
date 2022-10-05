@@ -26,150 +26,154 @@
 
 1. {% include [toloka-requester-source-edit-interface](../_includes/toloka-requester-source/id-toloka-requester-source/edit-interface.md) %}
 
-    #### Конструктор шаблонов
+    {% list tabs %}
 
-    1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TvWtm){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fSC){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+    - Конструктор шаблонов
 
-    Исполнитель не сможет отправить задание, если:
+      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TvWtm){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fSC){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
 
-    - не перейдет по кнопке в интернет-магазин;
-    - не добавит ссылку на найденный товар;
-    - не загрузит изображение товара.
+          Исполнитель не сможет отправить задание, если:
 
-    1. {% include [toloka-requester-source-tb-view-specifications](../_includes/toloka-requester-source/id-toloka-requester-source/tb-view-specifications.md) %}
+          - не перейдет по кнопке в интернет-магазин;
+          - не добавит ссылку на найденный товар;
+          - не загрузит изображение товара.
 
-    - Поле входных данных: `image` — ссылка для загрузки картинки.
+      1. {% include [toloka-requester-source-tb-view-specifications](../_includes/toloka-requester-source/id-toloka-requester-source/tb-view-specifications.md) %}
 
-    - Поля выходных данных:
+          - Поле входных данных: `image` — ссылка для загрузки картинки.
 
-    - `found_link` — для ссылки на товар, найденный исполнителем в интернет-магазине;
-    - `found_image` — для загрузки изображения этого товара.
+          - Поля выходных данных:
 
-    #### Редактор HTML/CSS/JS
+          - `found_link` — для ссылки на товар, найденный исполнителем в интернет-магазине;
+          - `found_image` — для загрузки изображения этого товара.
 
-    1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
-    {% if locale == "ru-ru" %}
-    ```
-    {{img src=image width="50%" height="400px"}}
-    <div class='answers'>
-    <p>Найти похожую <b>обувь</b> в интернет-магазине ASOS</p>
-    {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
-    <p>Обувь должна быть похожа по цвету, материалу, длине и стилю.</p>
-    <p>Вставьте ссылку</p>
-    {{field width="100%" type="input" name="found_link"}}
-    <p>Загрузите изображение</p>
-    <div>
-    {{field width="100%" type="file-img" name="found_image" preview=true}}
-    </div>
-    </div>
-    ```
-    {% endif %}{% if locale == "en-com" %}
-    ```
-    {{img src=image width="50%" height="400px"}}
-    <div class='answers'>
-    <p>Find similar shoes <b>shoes</b> in the ASOS online store</p>
-    {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
-    <p>Shoes must be similar in color, material, length, and style.</p>
-    <p>Paste the link here</p>
-    {{field width="100%" type="input" name="found_link"}}
-    <p>Upload the image here</p>    <div>
-    {{field width="100%" type="file-img" name="found_image" preview=true}}
-    </div>
-    </div>
-    ```
-    {% endif %}
-    1. Чтобы проверить корректность ссылки и изображения, предоставленных исполнителем, в 5-ой сроке блока **JS** замените следующий код:
+    - Редактор HTML/CSS/JS
 
-    `if (!solution.output_values.image && !solution.output_values.no_image) {`
+      1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
+          {% if locale == "ru-ru" %}
+          ```
+          {{img src=image width="50%" height="400px"}}
+          <div class='answers'>
+          <p>Найти похожую <b>обувь</b> в интернет-магазине ASOS</p>
+          {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
+          <p>Обувь должна быть похожа по цвету, материалу, длине и стилю.</p>
+          <p>Вставьте ссылку</p>
+          {{field width="100%" type="input" name="found_link"}}
+          <p>Загрузите изображение</p>
+          <div>
+          {{field width="100%" type="file-img" name="found_image" preview=true}}
+          </div>
+          </div>
+          ```
+          {% endif %}{% if locale == "en-com" %}
+          ```
+          {{img src=image width="50%" height="400px"}}
+          <div class='answers'>
+          <p>Find similar shoes <b>shoes</b> in the ASOS online store</p>
+          {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
+          <p>Shoes must be similar in color, material, length, and style.</p>
+          <p>Paste the link here</p>
+          {{field width="100%" type="input" name="found_link"}}
+          <p>Upload the image here</p>    <div>
+          {{field width="100%" type="file-img" name="found_image" preview=true}}
+          </div>
+          </div>
+          ```
+          {% endif %}
+      1. Чтобы проверить корректность ссылки и изображения, предоставленных исполнителем, в 5-ой сроке блока **JS** замените следующий код:
 
-    на
+          `if (!solution.output_values.image && !solution.output_values.no_image) {`
 
-    `if (!solution.output_values.found_image) {`
+          на
 
-    {% note warning %}
+          `if (!solution.output_values.found_image) {`
 
-    Будьте внимательны при изменении кода. Если у вас возникли проблемы с предварительным просмотром, обратитесь в **службу поддержки** или сравните ваш код с кодом в [приложении](appendix-expanded-code.md).
+          {% note warning %}
 
-    {% endnote %}
+          Будьте внимательны при изменении кода. Если у вас возникли проблемы с предварительным просмотром, обратитесь в **службу поддержки** или сравните ваш код с кодом в [приложении](appendix-expanded-code.md).
 
-    1. Удалите шаблонный код из блока **CSS** и вставьте следующий код, отвечающий за установку пропорционального размера изображения.
+          {% endnote %}
 
-    ```
-    .task {
-    display: block;
-    height: 500px;
-    width: 800px;
-    }
-    .img {
-    float: left;
-    width: 50%;
-    }
-    .answers {
-    float: left;
-    width: 40%;
-    margin: 5%;
-    }
-    ```
+      1. Удалите шаблонный код из блока **CSS** и вставьте следующий код, отвечающий за установку пропорционального размера изображения.
 
-    1. Отредактируйте [входные и выходные данные](../../glossary.md#input-output-data-ru) в блоке **Спецификация данных**.
+          ```
+          .task {
+          display: block;
+          height: 500px;
+          width: 800px;
+          }
+          .img {
+          float: left;
+          width: 50%;
+          }
+          .answers {
+          float: left;
+          width: 40%;
+          margin: 5%;
+           }
+          ```
 
-    1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
+          1. Отредактируйте [входные и выходные данные](../../glossary.md#input-output-data-ru) в блоке **Спецификация данных**.
 
-    1. В поле **Входные данные** введите:
+          1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
 
-    ```
-    {
-    "image": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+          1. В поле **Входные данные** введите:
 
-    1. В поле **Выходные данные** введите:
+          ```
+          {
+          "image": {
+          "type": "url",
+          "hidden": false,
+          "required": true
+          }
+          }
+          ```
 
-    {% note info %}
+      1. В поле **Выходные данные** введите:
 
-    Если вы хотите выбрать другой интернет-магазин, измените строку с `"pattern": "https://www.asos.com/.*"` на `"pattern": "your_store.*"`.
+          {% note info %}
 
-    {% endnote %}
+          Если вы хотите выбрать другой интернет-магазин, измените строку с `"pattern": "https://www.asos.com/.*"` на `"pattern": "your_store.*"`.
 
-    ```
-    {
-    "button": {
-    "type": "boolean",
-    "hidden": false,
-    "required": true,
-    "allowed_values": [
-    true
-    ]
-    },
-    "found_link": {
-    "type": "string",
-    "hidden": false,
-    "pattern": "https://www.asos.com/.*",
-    "required": true
-    },
-    "found_image": {
-    "type": "file",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+          {% endnote %}
 
-    Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
+          ```
+          {
+          "button": {
+          "type": "boolean",
+          "hidden": false,
+          "required": true,
+          "allowed_values": [
+          true
+          ]
+          },
+          "found_link": {
+          "type": "string",
+          "hidden": false,
+          "pattern": "https://www.asos.com/.*",
+          "required": true
+          },
+          "found_image": {
+          "type": "file",
+          "hidden": false,
+          "required": true
+          }
+          }
+          ```
 
-    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+          Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-    {% note info %}
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
-    В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
+          {% note info %}
 
-    {% endnote %}
+          В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
 
-    1. {% include [toloka-requester-source-test](../_includes/toloka-requester-source/id-toloka-requester-source/test.md) %}
+          {% endnote %}
+
+      1. {% include [toloka-requester-source-test](../_includes/toloka-requester-source/id-toloka-requester-source/test.md) %}
+
+    {% endlist %}
 
 1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
@@ -250,6 +254,7 @@
 
     1. Задайте правило для выполненного задания: если **отправленных страниц заданий****больше или равно 1**, то **установить значение навыка****Found_shoes** равным **1**.
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-2.png)
+
     {% note info %}
 
     Если навык **Found_shoes** не отображается в списке, сохраните пул и откройте его заново для редактирования.
@@ -291,7 +296,7 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note warning %}
+    {% note alarm %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 

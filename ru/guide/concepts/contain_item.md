@@ -1,6 +1,6 @@
 # Проект 1. Содержит ли фотография определенный объект?
 
-В этом [проекте](../../glossary.md#project-ru) вы опросите исполнителей на наличие обуви на фотографии.
+В этом [проекте](../../glossary.md#project) вы опросите исполнителей на наличие обуви на фотографии.
 
 ## Создайте проект {#create_project}
 
@@ -26,133 +26,137 @@
 
 1. {% include [toloka-requester-source-edit-interface](../_includes/toloka-requester-source/id-toloka-requester-source/edit-interface.md) %}
 
-    #### Конструктор шаблонов
+    {% list tabs %}
 
-    1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
+    - Конструктор шаблонов
 
-    В шаблоне уже настроена проверка. Исполнитель не сможет отправить задание, если не выберет варианта ответа.
+      1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
 
-    Подробнее в Справке конструктора шаблонов:
+          В шаблоне уже настроена проверка. Исполнитель не сможет отправить задание, если не выберет варианта ответа.
 
-    - [настройка условий]({{ tb-conditions }});
+          Подробнее в Справке конструктора шаблонов:
 
-    - шаблон [Классификация изображений]({{ tb-image-classification }}).
+          - [настройка условий]({{ tb-conditions }});
 
-    1. На панели **Конфигурация** замените строки кода с 19 по 28:
-    {% if locale == "ru-ru" %}
-    ```json
-    "label": "Какое у кота настроение?",
-    "options": [
-    {
-    "label": "Хорошее",
-    "value": "ok"
-    },
-    {
-    "label": "Плохое",
-    "value": "bad"
-    },
-    ```
-    {% elsif locale == "en-com" %}
-    ```json
-    "label": "What is the cat's mood?",
-    "options": [
-    {
-    "label": "Good",
-    "value": "ok"
-    },
-    {
-    "label": "Bad",
-    "value": "bad"
-    },
-    ```
-    {% endif %}
-    на следующие:
-    {% if locale == "ru-ru" %}
-    ```json
-    "label": "Есть ли обувь на картинке?",
-    "options": [
-    {
-    "label": "Да",
-    "value": "ok"
-    },
-    {
-    "label": "Нет",
-    "value": "bad"
-    },
-    ```
-    {% elsif locale == "en-com" %}
-    ```json
-    "label": "Are there shoes in the image?",
-    "options": [
-    {
-    "label": "Yes",
-    "value": "ok"
-    },
-    {
-    "label": "No",
-    "value": "bad"
-    },
-    ```
-    {% endif %}
-    1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
+          - шаблон [Классификация изображений]({{ tb-image-classification }}).
 
-    - Поле входных данных: `image` — ссылка для загрузки картинки.
+      1. На панели **Конфигурация** замените строки кода с 19 по 28:
+          {% if locale == "ru-ru" %}
+          ```json
+          "label": "Какое у кота настроение?",
+          "options": [
+          {
+          "label": "Хорошее",
+          "value": "ok"
+          },
+          {
+          "label": "Плохое",
+          "value": "bad"
+          },
+          ```
+          {% endif %}{% if locale == "en-com" %}
+          ```json
+          "label": "What is the cat's mood?",
+          "options": [
+          {
+          "label": "Good",
+          "value": "ok"
+          },
+          {
+          "label": "Bad",
+          "value": "bad"
+          },
+          ```
+          {% endif %}
+          на следующие:
+          {% if locale == "ru-ru" %}
+          ```json
+          "label": "Есть ли обувь на картинке?",
+          "options": [
+          {
+          "label": "Да",
+          "value": "ok"
+          },
+          {
+          "label": "Нет",
+          "value": "bad"
+          },
+          ```
+          {% endif %}{% if locale == "en-com" %}
+          ```json
+          "label": "Are there shoes in the image?",
+          "options": [
+          {
+          "label": "Yes",
+          "value": "ok"
+          },
+          {
+          "label": "No",
+          "value": "bad"
+          },
+          ```
+          {% endif %}
+      1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 
-    Измените тип данных на строку, чтобы использовать ссылки на свои файлы{% if locale == "ru-ru" %} или [загружать картинки](prepare-data.md#interface), хранящиеся на Яндекс Диске{% endif %}.
+          - Поле входных данных: `image` — ссылка для загрузки картинки.
 
-    - Поле выходных данных: `result — строка`, в которую будет записан ответ исполнителя.
+          Измените тип данных на строку, чтобы использовать ссылки на свои файлы{% if locale == "ru-ru" %} или [загружать картинки](prepare-data.md#interface), хранящиеся на Яндекс Диске{% endif %}.
 
-    #### Что такое входные и выходные данные?
+          - Поле выходных данных: `result — строка`, в которую будет записан ответ исполнителя.
 
-    {% include [toloka-requester-source-input-data](../_includes/toloka-requester-source/id-toloka-requester-source/input-data.md) %}
+          #### Что такое входные и выходные данные?
 
-    {% include [toloka-requester-source-output-data](../_includes/toloka-requester-source/id-toloka-requester-source/output-data.md) %}
+          {% include [toloka-requester-source-input-data](../_includes/toloka-requester-source/id-toloka-requester-source/input-data.md) %}
 
-    {% include [toloka-requester-source-tb-spec](../_includes/toloka-requester-source/id-toloka-requester-source/tb-spec.md) %}
+          {% include [toloka-requester-source-output-data](../_includes/toloka-requester-source/id-toloka-requester-source/output-data.md) %}
 
-    #### Редактор HTML/CSS/JS
+          {% include [toloka-requester-source-tb-spec](../_includes/toloka-requester-source/id-toloka-requester-source/tb-spec.md) %}
 
-    1. {% include [toloka-requester-source-html-editor](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor.md) %}
+    - Редактор HTML/CSS/JS
 
-    - После строки с изображением добавьте вопрос:
+      1. {% include [toloka-requester-source-html-editor](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor.md) %}
 
-    - Измените надписи на вариантах ответа: **Хорошее** → **Да**, **Плохое** → **Нет**:
-    {% if locale == "ru-ru" %}
-    ```
-    {{img src=image width="100%" height="400px"}}
-    <div>Есть ли <b>обувь</b> на картинке?<div>
+          - После строки с изображением добавьте вопрос:
 
-    {{field type="radio" name="result" value="OK" label="Да" hotkey="1"}}
-    {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
-    {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}
-    ```
-    {% elsif locale == "en-com" %}
-    ```
-    {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
+          - Измените надписи на вариантах ответа: **Хорошее** → **Да**, **Плохое** → **Нет**:
+          {% if locale == "ru-ru" %}
+          ```
+          {{img src=image width="100%" height="400px"}}
+          <div>Есть ли <b>обувь</b> на картинке?<div>
 
-    {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-    {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-    {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
-    ```
-    {% endif %}
+          {{field type="radio" name="result" value="OK" label="Да" hotkey="1"}}
+          {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
+          {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}
+          ```
+          {% endif %}{% if locale == "en-com" %}
+          ```
+          {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
 
-    1. Блоки **JS**, **CSS** и **Спецификация данных** оставьте без изменений.
+          {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
+          {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
+          {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
+          ```
+          {% endif %}
 
-    Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
+      1. Блоки **JS**, **CSS** и **Спецификация данных** оставьте без изменений.
 
-    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% elsif locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+          Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-    {% note info %}
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
-    В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
+          {% note info %}
 
-    {% endnote %}
+          В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
 
-    1. {% include [toloka-requester-source-test](../_includes/toloka-requester-source/id-toloka-requester-source/test.md) %}
+          {% endnote %}
+
+      1. {% include [toloka-requester-source-test](../_includes/toloka-requester-source/id-toloka-requester-source/test.md) %}
+
+    {% endlist %}
 
 1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
-1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction-ru) и добавьте изображение.
+1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction) и добавьте изображение.
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
     ```
@@ -181,7 +185,7 @@
 
 ## Создайте пул {#create_pool}
 
-Чтобы создать [пул](../../glossary.md#pool-ru):
+Чтобы создать [пул](../../glossary.md#pool):
 
 1. Откройте страницу проекта с именем **Есть ли на фотографии обувь?**.
 
@@ -207,14 +211,16 @@
 
 1. В блоке **Цена** в поле **Цена за страницу заданий** укажите `0.01`.
 
-1. В блоке **Контроль качества** задайте настройки [контроля качества](../../glossary.md#quality-control-ru) для пула:
+1. В блоке **Контроль качества** задайте настройки [контроля качества](../../glossary.md#quality-control) для пула:
 
     1. Нажмите **Добавить правило контроля качества**.
 
     1. Найдите в списке блок **Правила** и выберите пункт **Контрольные задания**.
 
     1. Задайте правило для контрольного задания: если **количество ответов** на контрольные вопросы **больше или равно 3** и **процент правильных ответов** на контрольные вопросы **меньше 60**, то **заблокировать** исполнителя **на проекте на 10 дней**. В качестве причины указать **Контрольное задание**.
+
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
+
     Подробнее о контроле качества читайте в разделе [Контроль качества](control.md).
 
 1. В разделе **Перекрытие задания** в поле **Количество исполнителей, которые должны выполнить каждое задание** укажите `3`.
@@ -245,7 +251,7 @@
 
     1. Нажмите кнопку **Загрузить**.
 
-    1. В открывшемся окне выберите [файл](../../glossary.md#tsv-file-definition-ru) с заданиями для загрузки и нажмите кнопку **Открыть**.
+    1. В открывшемся окне выберите [файл](../../glossary.md#tsv-file-definition) с заданиями для загрузки и нажмите кнопку **Открыть**.
 
     1. В открывшемся окне проверьте количество заданий и нажмите кнопку **Добавить**.
 
@@ -267,17 +273,17 @@
 
     1. Нажмите кнопку **Сохранить и перейти к следующему**.
 
-    1. Нажмите **Есть ли на фотографии обувь?**, чтобы выйти из режима [разметки заданий](../../glossary.md#task-markup-ru).
+    1. Нажмите **Есть ли на фотографии обувь?**, чтобы выйти из режима [разметки заданий](../../glossary.md#task-markup).
 
     {% note info %}
 
-    В небольших пулах [контрольные задания](../../glossary.md#control-task-ru) должны составлять 10-20% от всех заданий. Включайте разные варианты правильных ответов в равных количествах. Посмотрите распределение ответов на странице **Разметить задания** на вкладке **Контрольные**.
+    В небольших пулах [контрольные задания](../../glossary.md#control-task) должны составлять 10-20% от всех заданий. Включайте разные варианты правильных ответов в равных количествах. Посмотрите распределение ответов на странице **Разметить задания** на вкладке **Контрольные**.
 
     {% endnote %}
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note warning %}
+    {% note alarm %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 

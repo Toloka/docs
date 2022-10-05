@@ -7,7 +7,7 @@
 {% endnote %}
 
 
-Для создания [интерфейса задания](../../glossary.md#task-interface-ru) в [блоке **HTML**](spec.md) на странице [проекта](../../glossary.md#project-ru) можно использовать:
+Для создания [интерфейса задания](../../glossary.md#task-interface) в [блоке **HTML**](spec.md) на странице [проекта](../../glossary.md#project) можно использовать:
 
 - [Выражения и хелперы Handlebars](t-components/handlebars.md) (см. [описание на сайте шаблонизатора](http://handlebarsjs.com/)).
 

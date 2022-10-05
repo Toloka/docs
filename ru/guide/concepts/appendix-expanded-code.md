@@ -4,7 +4,30 @@
 
 **Спецификации:**
 
-**Входные данные:**```html {   "image": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Выходные данные:**```html {   "result": {     "type": "string",     "hidden": false,     "required": true   } } ```
+#|
+||**Входные данные:**|**Выходные данные:**||
+||
+```html 
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+``` 
+|
+```html
+{
+  "result": {
+    "type": "string",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 
 Блок **HTML:**
@@ -55,7 +78,44 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Спецификации:**
 
-**Входные данные:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Выходные данные:**<br/>```html {   "button": {     "type": "boolean",     "hidden": false,     "required": true,     "allowed_values": [       true     ]   },   "found_link": {     "type": "string",     "hidden": false,     "pattern": "https://www.asos.com/.*",     "required": true   },   "found_image": {     "type": "file",     "hidden": false,     "required": true   } } ```
+#|
+||**Входные данные:**|**Выходные данные:**||
+||
+```html 
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+``` 
+|
+```html
+{
+  "button": {
+    "type": "boolean",
+    "hidden": false,
+    "required": true,
+    "allowed_values": [
+      true
+    ]
+  },
+  "found_link": {
+    "type": "string",
+    "hidden": false,
+    "pattern": "https://www.asos.com/.*",
+    "required": true
+  },
+  "found_image": {
+    "type": "file",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 
 Блок **HTML:**
@@ -158,7 +218,40 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Спецификации:**
 
-**Входные данные:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   },   "found_link": {     "type": "url",     "hidden": false,     "required": true   },   "assignment_id": {     "type": "string",     "hidden": true,     "required": true   } } ``` | **Выходные данные:**<br/>```html {   "result": {     "type": "string",     "hidden": false,     "required": true   } } ```
+#|
+||**Входные данные:**|**Выходные данные:**||
+||
+```html
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "found_link": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "assignment_id": {
+    "type": "string",
+    "hidden": true,
+    "required": true
+  }
+}
+```
+|
+```html
+{
+  "result": {
+    "type": "string",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 
 Блок **HTML:**
@@ -231,7 +324,40 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Спецификации:**
 
-**Входные данные:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   },   "left_link": {     "type": "url",     "hidden": false,     "required": true   },   "right_link": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Выходные данные:**<br/>```html {   "result": {     "type": "url",     "hidden": false,     "required": true   } } ```
+#|
+||**Входные данные:**|**Выходные данные:**||
+||
+```html
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "left_link": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "right_link": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+|
+```html
+{
+  "result": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 
 Блок **HTML:**

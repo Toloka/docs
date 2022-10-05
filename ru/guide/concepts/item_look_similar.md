@@ -1,10 +1,10 @@
 # Проект 3. Похож ли найденный объект на исходный?
 
-В этом [проекте](../../glossary.md#project-ru) исполнители будут сравнивать обувь с исходного изображения (из первого проекта) с обувью, найденной во втором проекте.
+В этом [проекте](../../glossary.md#project) исполнители будут сравнивать обувь с исходного изображения (из первого проекта) с обувью, найденной во втором проекте.
 
 {% note warning %}
 
-Так как в настройках [пула](../../glossary.md#pool-ru) во втором проекте включена опция **Отложенная приёмка** вы должны выполнить все шаги и проверить ответы исполнителей в течение срока, установленного в поле **Срок проверки**.
+Так как в настройках [пула](../../glossary.md#pool) во втором проекте включена опция **Отложенная приёмка** вы должны выполнить все шаги и проверить ответы исполнителей в течение срока, установленного в поле **Срок проверки**.
 
 {% endnote %}
 
@@ -33,125 +33,129 @@
 
 1. {% include [toloka-requester-source-edit-interface](../_includes/toloka-requester-source/id-toloka-requester-source/edit-interface.md) %}
 
-    #### Конструктор шаблонов
+   {% list tabs %}
 
-    1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TvYXc){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fbR){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+    - Конструктор шаблонов
 
-    Исполнитель не сможет отправить задание, если:
+      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TvYXc){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fbR){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
 
-    - не перейдет по кнопке в интернет-магазин;
-    - не выберет один из вариантов ответа.
+          Исполнитель не сможет отправить задание, если:
 
-    1. {% include [toloka-requester-source-tb-view-specifications](../_includes/toloka-requester-source/id-toloka-requester-source/tb-view-specifications.md) %}
+          - не перейдет по кнопке в интернет-магазин;
+          - не выберет один из вариантов ответа.
 
-    - Поля входных данных:
+      1. {% include [toloka-requester-source-tb-view-specifications](../_includes/toloka-requester-source/id-toloka-requester-source/tb-view-specifications.md) %}
 
-    - `image` — ссылка для загрузки изображения исходного товара;
-    - `found_link` — ссылка на товар в интернет-магазине;
-    - `assignment_id` — для связи с предыдущими проектами.
+          - Поля входных данных:
 
-    - Поле выходных данных: `result` — строка, в которую будет записан ответ исполнителя.
+          - `image` — ссылка для загрузки изображения исходного товара;
+          - `found_link` — ссылка на товар в интернет-магазине;
+          - `assignment_id` — для связи с предыдущими проектами.
 
-    #### Редактор HTML/CSS/JS
+          - Поле выходных данных: `result` — строка, в которую будет записан ответ исполнителя.
 
-    1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
-    {% if locale == "ru-ru" %}
-    ```
-    {{img src=image height="400px"}}
-    {{iframe src= found_link height="600px"}}
+          - Редактор HTML/CSS/JS
 
-    <p>Убедитесь, что загруженное изображение соответствует товару из магазина.</p>
-    {{button label="Проверьте товар"  href=found_link action=true}}
+      1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
+          {% if locale == "ru-ru" %}
+          ```
+          {{img src=image height="400px"}}
+          {{iframe src= found_link height="600px"}}
 
-    <p>Эта <b>обувь</b> похожа?</p>
-    <p>Обувь должна быть похожа по цвету, материалу, длине и стилю.</p>
-    {{field type="radio" name="result" value="Yes" label="Да"}}
-    {{field type="radio" name="result" value="No" label="Нет"}}
-    ```
-    {% endif %}{% if locale == "en-com" %}
-    ```
-    {{img src=image height="400px"}}
-    {{iframe src= found_link height="600px"}}
+          <p>Убедитесь, что загруженное изображение соответствует товару из магазина.</p>
+          {{button label="Проверьте товар"  href=found_link action=true}}
 
-    <p>Check that the uploaded image matches the product in the store.</p>
-    {{button label="Check the product"  href=found_link action=true}}
+          <p>Эта <b>обувь</b> похожа?</p>
+          <p>Обувь должна быть похожа по цвету, материалу, длине и стилю.</p>
+          {{field type="radio" name="result" value="Yes" label="Да"}}
+          {{field type="radio" name="result" value="No" label="Нет"}}
+          ```
+          {% endif %}{% if locale == "en-com" %}
+          ```
+          {{img src=image height="400px"}}
+          {{iframe src= found_link height="600px"}}
 
-    <p>Are <b>these shoes</b> similar to each other?</p>
-    <p>The shoes must be similar in color, material, length, and style.</p>
-    {{field type="radio" name="result" value="Yes" label="Yes"}}
-    {{field type="radio" name="result" value="No" label="No"}}
-    ```
-    {% endif %}
-    1. Блок **JS** оставьте без изменений.
+          <p>Check that the uploaded image matches the product in the store.</p>
+          {{button label="Check the product"  href=found_link action=true}}
 
-    1. В блок **CSS** вставьте следующий код, отвечающий за установку пропорционального размера изображения.
+          <p>Are <b>these shoes</b> similar to each other?</p>
+          <p>The shoes must be similar in color, material, length, and style.</p>
+          {{field type="radio" name="result" value="Yes" label="Yes"}}
+          {{field type="radio" name="result" value="No" label="No"}}
+          ```
+          {% endif %}
+      1. Блок **JS** оставьте без изменений.
 
-    ```
-    .task {
-    display: block;
-    }
-    .img {
-    float: left;
-    width: 50%;
-    }
-    .iframe {
-    float: left;
-    width: 50%;
-    }
-    ```
+      1. В блок **CSS** вставьте следующий код, отвечающий за установку пропорционального размера изображения.
+      
+          ```
+          .task {
+          display: block;
+          }
+          .img {
+          float: left;
+          width: 50%;
+          }
+          .iframe {
+          float: left;
+          width: 50%;
+          }
+          ```
 
-    1. Отредактируйте [входные и выходные данные](../../glossary.md#input-output-data-ru) в блоке **Спецификация данных**. ,
+      1. Отредактируйте [входные и выходные данные](../../glossary.md#input-output-data) в блоке **Спецификация данных**. ,
 
-    1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
+      1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
 
-    1. В поле **Входные данные** введите:
-    ```
-    {
-    "image": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
-    "found_link": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
+      1. В поле **Входные данные** введите:
+          ```
+          {
+          "image": {
+          "type": "url",
+          "hidden": false,
+          "required": true
+          },
+          "found_link": {
+          "type": "url",
+          "hidden": false,
+          "required": true
+          },
 
-    "assignment_id": {
-    "type": "string",
-    "hidden": true,
-    "required": true
-    }
-    }
-    ```
+          "assignment_id": {
+          "type": "string",
+          "hidden": true,
+          "required": true
+          }
+          }
+          ```
 
-    1. В поле **Выходные данные** введите:
-    ```
-    {
-    "result": {
-    "type": "string",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+      1. В поле **Выходные данные** введите:
+          ```
+         {
+          "result": {
+          "type": "string",
+          "hidden": false,
+          "required": true
+          }
+          }
+          ```
 
-    Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
+          Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
-    {% note info %}
+          {% note info %}
 
-    В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
+          В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
 
-    {% endnote %}
+          {% endnote %}
+      
+      1. {% include [toloka-requester-source-test](../_includes/toloka-requester-source/id-toloka-requester-source/test.md) %}
 
-    1. {% include [toloka-requester-source-test](../_includes/toloka-requester-source/id-toloka-requester-source/test.md) %}
+    {% endlist %}
 
 1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
-1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction-ru).
+1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction).
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
     ```
@@ -218,7 +222,7 @@
 
     1. Найдите в списке блок **Правила** и выберите пункт **Контрольные задания**.
 
-    1. Задайте правило для [контрольного задания](../../glossary.md#control-task-ru): если **количество ответов** на контрольные вопросы **больше или равно 3** и **процент правильных ответов** на контрольные вопросы **меньше 60**, то **заблокировать** исполнителя **на проекте на 10 дней**. В качестве причины указать **Контрольное задание**.
+    1. Задайте правило для [контрольного задания](../../glossary.md#control-task): если **количество ответов** на контрольные вопросы **больше или равно 3** и **процент правильных ответов** на контрольные вопросы **меньше 60**, то **заблокировать** исполнителя **на проекте на 10 дней**. В качестве причины указать **Контрольное задание**.
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
     1. (опционально) Добавьте еще один блок контроля качества. Нажмите **Добавить правило контроля качества**.
 
@@ -253,11 +257,13 @@
 
     1. В блоке **Поля** оставьте включенной только опцию **id ответа**.
 
-    1. Отключите опцию **Разделять ответы пустой строкой**.![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
+    1. Отключите опцию **Разделять ответы пустой строкой**.
+    
+    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
     1. Нажмите кнопку **Скачать результаты**.
 
-1. Подготовьте [файл](../../glossary.md#tsv-file-definition-ru) с заданиями.
+1. Подготовьте [файл](../../glossary.md#tsv-file-definition) с заданиями.
 
     1. Столбец `INPUT:image` оставьте без изменений.
 
@@ -307,7 +313,7 @@
 
     1. Нажмите кнопку **Сохранить и перейти к следующему**.
 
-    1. Нажмите **Похожа ли обувь?**, чтобы выйти из режима [разметки заданий](../../glossary.md#task-markup-ru).
+    1. Нажмите **Похожа ли обувь?**, чтобы выйти из режима [разметки заданий](../../glossary.md#task-markup).
 
     {% note info %}
 
@@ -348,7 +354,7 @@
 
 #### Проверить задания в файле с результатами
 
-Чтобы проверить [выполненные задания](../../glossary.md#submitted-answers-ru):
+Чтобы проверить [выполненные задания](../../glossary.md#submitted-answers):
 
 1. Откройте в редакторе текста или электронных таблиц файл, полученный после агрегации результатов.
 

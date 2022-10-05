@@ -32,8 +32,7 @@
 #|
 ||**Поле**|**Описание**||
 ||{% if locale == "ru-ru" %}**Если**{% endif %}{% if locale == "en-com" %}**If**{% endif %} | Условие, при котором выполняется действие в поле {% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %}:
-
-- {% if locale == "ru-ru" %}**заработок за 24 часа**{% endif %}{% if locale == "en-com" %}**latest 24 hours income**{% endif %} — сумма заработка исполнителя за [выполненные задания](../../glossary.md#submitted-answers-ru) в пуле за последние 24 часа.||
+- {% if locale == "ru-ru" %}**заработок за 24 часа**{% endif %}{% if locale == "en-com" %}**latest 24 hours income**{% endif %} — сумма заработка исполнителя за [выполненные задания](../../glossary.md#submitted-answers) в пуле за последние 24 часа.||
 ||{% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %} | Действие, выполняемое при условии:
 
 - {% if locale == "ru-ru" %}**установить значение навыка**{% endif %}{% if locale == "en-com" %}**assign skill value**{% endif %} — присвоить исполнителю фиксированное значение [навыка](nav.md).

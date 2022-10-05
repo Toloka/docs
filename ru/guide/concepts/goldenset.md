@@ -39,9 +39,7 @@
 
 Подробнее об этом параметре см. в разделе [Параметр «Помнить значений»](remember-values.md).||
 ||{% if locale == "ru-ru" %}**Если**{% endif %}{% if locale == "en-com" %}**If**{% endif %} | Условие, при котором выполняется действие в поле {% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %}:
-
-- {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %} — количество выполненных [обучающих](../../glossary.md#training-task-ru) и контрольных заданий;
-
+- {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %} — количество выполненных [обучающих](../../glossary.md#training-task) и контрольных заданий;
 - {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%)**{% endif %} — доля правильных ответов на контрольные и обучающие задания (от 0 до 100);
 
 - {% if locale == "ru-ru" %}**процент неправильных ответов**{% endif %}{% if locale == "en-com" %}**incorrect responses (%)**{% endif %} — доля неправильных ответов на контрольные и обучающие задания (от 0 до 100);
