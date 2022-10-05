@@ -10,9 +10,9 @@ Take a look at the example: the labeling interface includes a text and radio bu
 
 {% cut "Components used in the example" %}
 
-- [view.list](../reference/view.list.md): Block for displaying data in a list.
+- [view.list](../reference/view.list.md): Displays data in a list.
 
-- [view.text](../reference/view.text.md): The text that you want to check.
+- [view.text](../reference/view.text.md): Adds the text that you want to check.
 
   {% cut "Show code" %}
 
@@ -28,7 +28,7 @@ Take a look at the example: the labeling interface includes a text and radio bu
 
   {% endcut %}
 
-- [view.alert](../reference/view.alert.md): The color block to highlight important information to enhance Toloker's experience. In this example, the text content is highlighted with a blue border.
+- [view.alert](../reference/view.alert.md): Highlights important information to enhance Toloker's experience. In this example, the text content is highlighted with a blue border.
 
   {% cut "Show code" %}
 
@@ -48,7 +48,7 @@ Take a look at the example: the labeling interface includes a text and radio bu
 
   {% endcut %}
 
-- [view.markdown](../reference/view.markdown.md): Block for displaying text in Markdown.
+- [view.markdown](../reference/view.markdown.md): Displays a text in Markdown.
 
   {% cut "Show code" %}
 
@@ -61,7 +61,7 @@ Take a look at the example: the labeling interface includes a text and radio bu
 
   {% endcut %}
 
-Note that the `view.markdown` component is resource-intensive and might overload weak Toloker devices. Do not use this component to display plain text. If you need to display text without formatting, use the [view.text](../reference/view.text.md) component.
+  Note that the `view.markdown` component is resource-intensive and might overload weak Toloker devices. Do not use this component to display plain text. If you need to display text without formatting, use the [view.text](../reference/view.text.md) component.
 
 
 - [field.radio-group](../reference/field.radio-group.md): Adds radio buttons for selecting an answer option.
@@ -101,6 +101,7 @@ Note that the `view.markdown` component is resource-intensive and might overload
   ```json
   {
     "type": "field.checkbox-group",
+    "label": "Which ones?",
     "options": [
       {
         "label": "Advertising or spam",
@@ -121,19 +122,15 @@ Note that the `view.markdown` component is resource-intensive and might overload
       {
         "label": "Profanity",
         "value": "profanity"
-      },
-      {
-        "label": "None of this",
-        "value": "none"
       }
     ],
     "data": {
       "type": "data.output",
-      "path": "is_infringements"
+      "path": ""
     },
     "validation": {
       "type": "condition.required",
-      "hint": "Choose one of the options"
+      "hint": "Select one or more infringements"
     }
   }
   ```
@@ -153,7 +150,7 @@ Note that the `view.markdown` component is resource-intensive and might overload
 
   {% endcut %}
 
-- [helper.if](../reference/helper.if.md): The component displays an interface element after a specific response is selected.
+- [helper.if](../reference/helper.if.md): Displays an interface element after a specific response is selected.
 
   {% cut "Show code" %}
 
@@ -223,7 +220,7 @@ Note that the `view.markdown` component is resource-intensive and might overload
 
   {% endcut %}
 
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): [Keyboard shortcuts](../best-practices/hotkeys.md).
+- [plugin.hotkeys](../reference/plugin.hotkeys.md): Adds [keyboard shortcuts](../best-practices/hotkeys.md).
 
   {% cut "Show code" %}
 
