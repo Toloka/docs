@@ -1,3 +1,5 @@
+{% include [image-styles](../../_includes/image-styles.md) %}
+
 # Визуальный редактор
 
 В некоторых пресетах Толоки конструктор шаблонов позволяет редактировать шаблоны с помощью визуального редактора. Это может пригодиться, если вы не знаете ничего о форматировании или использовании JSON или думаете, что у вас недостаточно опыта для работы с редактором кода, но при этом хотите начать работу с конструктором шаблонов как можно быстрее.
@@ -14,7 +16,7 @@
 
 Интерфейс визуального редактора выглядит следующим образом:
 
-<a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/ru/template-builder/visual-editor.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/ru/template-builder/visual-editor.png" alt="Интерфейс визуального редактора" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+[![Интерфейс визуального редактора](_images/visual-editor.png =700x)](_images/visual-editor.png)
 
 1. Переключайтесь между визуальным редактором и редактором кода с помощью кнопок в верхней части конструктора шаблонов.
 

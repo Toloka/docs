@@ -1,3 +1,5 @@
+{% include [image-styles](../../../_includes/image-styles.md) %}
+
 # Object recognition & detection
 
 In this tutorial, you will learn how to run object recognition in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -38,7 +40,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-project-step-1.png" alt="Create a project. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![Create a project. Step 1](../_images/tutorials/selection/create-project-step-1.png =700x)](../_images/tutorials/selection/create-project-step-1.png)
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -50,7 +52,7 @@ Before you begin:
 
         - {% if locale == "en-com" %}**Choose the shape for outlining objects in photos**{% endif %}: All tasks in a project use the same shape.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-visual-editor.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-visual-editor.png" alt="Create a project. Visual editor" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a project. Visual editor](../_images/tutorials/selection/selection-visual-editor.png =700x)](../_images/tutorials/selection/selection-visual-editor.png)
 
     1. Select the {% if locale == "en-com" %}**I want to outline multiple types of objects**{% endif %} checkbox if you need to detect more than one category of objects in an image. Replace the samples with your types:
 
@@ -72,7 +74,7 @@ Before you begin:
 
     In this type of project, Tolokers will select objects in images with the shape you’ve specified in the {% if locale == "en-com" %}**Config**{% endif %} section.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-instructions.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-instructions.png" alt="Create a project. Selection instructions" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![Create a project. Selection instructions](../_images/tutorials/selection/selection-instructions.png =700x)](../_images/tutorials/selection/selection-instructions.png)
 
     {% include [toloka-requester-source-instruction-check](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-check.md) %}
 
@@ -98,7 +100,7 @@ Before you begin:
 
         For example, add the {% if locale == "en-com" %}**Languages**{% endif %} filter:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-pool-step-3.2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-pool-step-3.2.png" alt="Create a pool. Step 3.2" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a pool. Step 3.2](../_images/tutorials/selection/create-pool-step-3.2.png =700x)](../_images/tutorials/selection/create-pool-step-3.2.png)
 
     1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
@@ -118,7 +120,7 @@ Before you begin:
 
     1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of assignment review**{% endif %}, and enter the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-rule.png" alt="Create a pool. Selection results rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a pool. Selection results rule](../_images/tutorials/selection/selection-results-rule.png =700x)](../_images/tutorials/selection/selection-results-rule.png)
 
         This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
@@ -171,7 +173,7 @@ At this step, upload your task data to Toloka.
 
     For example, you can add 8 general tasks per suite:
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-upload-data-step-3.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-upload-data-step-3.png" alt="Create a pool. Step 3" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:636px;" /></a>
+    [![Create a pool. Step 3](../_images/tutorials/selection/selection-upload-data-step-3.png =636x)](../_images/tutorials/selection/selection-upload-data-step-3.png)
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -181,7 +183,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/start-labeling-step-2.png" alt="Start labeling. Step 2" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![Start labeling. Step 2](../_images/tutorials/selection/start-labeling-step-2.png =700x)](../_images/tutorials/selection/start-labeling-step-2.png)
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -193,7 +195,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-review-results.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-review-results.png" alt="See results. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![See results. Step 1](../_images/tutorials/selection/selection-review-results.png =700x)](../_images/tutorials/selection/selection-review-results.png)
 
 1. Choose an assignment.
 
@@ -207,7 +209,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. After checking all the assignments, click {% if locale == "en-com" %}**Download results**{% endif %}.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-download.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-download.png" alt="See results. Step 4" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![See results. Step 4](../_images/tutorials/selection/selection-results-download.png =700x)](../_images/tutorials/selection/selection-results-download.png)
 
     You will get the TSV file with the labeling results. The point coordinates in the file are presented in JSON.
 

@@ -1,3 +1,5 @@
+{% include [image-styles](../../../_includes/image-styles.md) %}
+
 # Searching for product characteristics
 
 In this tutorial, you will learn how to run searching for product characteristics in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -46,7 +48,7 @@ Before you begin:
 
     - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-create-project-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-create-project-step-1.png" alt="Create a project. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![Create a project. Step 1](../_images/tutorials/internet-search/internet-search-create-project-step-1.png =700x)](../_images/tutorials/internet-search/internet-search-create-project-step-1.png)
 
 1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like.
 
@@ -54,7 +56,7 @@ Before you begin:
 
     1. In the {% if locale == "en-com" %}**Config**{% endif %} section, you can edit the code to change the appearance and layout of the task elements. For example, to configure the field label which specifies the object Tolokers should find information about, replace the sample text with your value in the `label` property.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-text.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-text.png" alt="Create a project. Config text" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a project. Config text](../_images/tutorials/internet-search/internet-search-config-text.png =700x)](../_images/tutorials/internet-search/internet-search-config-text.png)
 
     1. To configure the sources where Tolokers should search for information, edit the `view.link-group` component.
 
@@ -62,7 +64,7 @@ Before you begin:
 
         - The second and third `url` components contain the links to the search queries. You can change the [search engines](../../template-builder/reference/helper.search-query.md) Tolokers will use in your tasks.
 
-            <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-links.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-links.png" alt="Create a project. Config links" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+            [![Create a project. Config links](../_images/tutorials/internet-search/internet-search-config-links.png =700x)](../_images/tutorials/internet-search/internet-search-config-links.png)
 
             {% note info %}
 
@@ -104,7 +106,7 @@ Before you begin:
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-language-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-language-filter.png" alt="Create a pool. Languages filter" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a pool. Languages filter](../_images/tutorials/internet-search/internet-search-language-filter.png =700x)](../_images/tutorials/internet-search/internet-search-language-filter.png)
 
     1. Use the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
@@ -112,11 +114,11 @@ Before you begin:
 
     1. Click the {% if locale == "en-com" %}**Add skill**{% endif %} button. Enter the skill name and description, and leave the skill not public.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-add.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-add.png" alt="Create a pool. Add skill" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:458px;" /></a>
+        [![Create a pool. Add skill](../_images/tutorials/internet-search/internet-search-skill-add.png =458x)](../_images/tutorials/internet-search/internet-search-skill-add.png)
 
     1. Click {% if locale == "en-com" %}**Add filter → My skills**{% endif %} and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill or those whose skill value is 65 and higher.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-filter.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-filter.png" alt="Create a pool. My skills filter" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a pool. My skills filter](../_images/tutorials/internet-search/internet-search-skill-filter.png =700x)](../_images/tutorials/internet-search/internet-search-skill-filter.png)
 
         Later in this tutorial, you will add a rule that assigns this skill to Tolokers according to how accurate their responses are.
 
@@ -124,7 +126,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, edit the pre-configured {% if locale == "en-com" %}**Fast responses**{% endif %} rule. Specify the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-fast-responses.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-fast-responses.png" alt="Create a pool. Fast responses rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a pool. Fast responses rule](../_images/tutorials/internet-search/internet-search-fast-responses.png =700x)](../_images/tutorials/internet-search/internet-search-fast-responses.png)
 
         These settings mean that a Toloker who completes a task suite in less than 10 seconds will be suspended and won't be able to access tasks of the project for 1 day.
 
@@ -134,7 +136,7 @@ Before you begin:
 
     1. Click {% if locale == "en-com" %}**Add a quality control rule → Control tasks**{% endif %}, and enter the following values:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-rule.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-rule.png" alt="Create a pool. Control tasks rule" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Create a pool. Control tasks rule](../_images/tutorials/internet-search/internet-search-control-rule.png =700x)](../_images/tutorials/internet-search/internet-search-control-rule.png)
 
         This means that a Toloker who gives 3 or more responses to the control tasks will be assigned the skill you’ve created before. The skill value is equal to the percent of correct responses. As you’ve set the filter to select Tolokers whose skill value is 65 or more in step 3.5, the rule allows you to filter out Tolokers who have shown poor results.
 
@@ -191,7 +193,7 @@ At this step, upload your task data to Toloka.
 
         For example, you can add 2 general tasks and 1 control task per suite:
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-data.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-data.png" alt="Upload data. Tasks per suite" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Upload data. Tasks per suite](../_images/tutorials/internet-search/internet-search-upload-data.png =700x)](../_images/tutorials/internet-search/internet-search-upload-data.png)
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -199,21 +201,21 @@ At this step, upload your task data to Toloka.
 
     1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-edit-button.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-edit-button.png" alt="Upload data. Click Edit" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Upload data. Click Edit](../_images/tutorials/internet-search/internet-search-edit-button.png =700x)](../_images/tutorials/internet-search/internet-search-edit-button.png)
 
     1. {% include [toloka-requester-source-create-control-button](../_includes/toloka-requester-source/id-toloka-requester-source/create-control-button.md) %}
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-button.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-button.png" alt="Upload data. Create control tasks" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Upload data. Create control tasks](../_images/tutorials/internet-search/internet-search-control-button.png =700x)](../_images/tutorials/internet-search/internet-search-control-button.png)
 
     1. Select the {% if locale == "en-com" %}**email**{% endif %} and {% if locale == "en-com" %}**phone**{% endif %} checkboxes, and enter the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-create.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-create.png" alt="Upload data. Create control tasks" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Upload data. Create control tasks](../_images/tutorials/internet-search/internet-search-control-create.png =700x)](../_images/tutorials/internet-search/internet-search-control-create.png)
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
     1. When you are done adding control tasks, click the pool name in the menu.
 
-        <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-pool-name.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-pool-name.png" alt="Upload data. Click pool name" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+        [![Upload data. Click pool name](../_images/tutorials/internet-search/internet-search-upload-pool-name.png =700x)](../_images/tutorials/internet-search/internet-search-upload-pool-name.png)
 
 ## Start labeling {#labeling}
 
@@ -221,7 +223,7 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-start-labeling-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-start-labeling-step-2.png" alt="Start labeling" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![Start labeling](../_images/tutorials/internet-search/internet-search-start-labeling-step-2.png =700x)](../_images/tutorials/internet-search/internet-search-start-labeling-step-2.png)
 
 1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
 
@@ -229,11 +231,11 @@ At this step, upload your task data to Toloka.
 
 1. {% include [toloka-requester-source-labeling-progress](../_includes/toloka-requester-source/id-toloka-requester-source/labeling-progress.md) %}
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-1.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-1.png" alt="See the results. Step 1" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![See the results. Step 1](../_images/tutorials/internet-search/internet-search-see-results-step-1.png =700x)](../_images/tutorials/internet-search/internet-search-see-results-step-1.png)
 
 1. Click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button and choose {% if locale == "en-com" %}**Run Dawid-Skene model**{% endif %} from the drop-down menu. Click {% if locale == "en-com" %}**Yes**{% endif %} in the pop-up window.
 
-    <a target="_blank" href="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-2.png"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-2.png" alt="See the results. Step 2" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+    [![See the results. Step 2](../_images/tutorials/internet-search/internet-search-see-results-step-2.png =700x)](../_images/tutorials/internet-search/internet-search-see-results-step-2.png)
 
 1. Open the same drop-down menu again, and click {% if locale == "en-com" %}**View aggregations list**{% endif %}.
 

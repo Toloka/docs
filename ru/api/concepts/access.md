@@ -1,3 +1,5 @@
+{% include [image-styles](../../../_includes/image-styles.md) %}
+
 # Доступ к API
 
 {% include [announce](../_includes/announce.md) %}
@@ -25,4 +27,4 @@ Authorization: OAuth <OAuth token>
 
 - В боевой версии Толоки: [https://platform.toloka.ai/ru/requester/profile/integration]({{ requester-profile-integration }}).
 
-<a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/ru/api/get-oauth-token.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/ru/api/get-oauth-token.png" alt="Доступ к API" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+[![Доступ к API](../_images/get-oauth-token.png =700x)](../_images/get-oauth-token.png)
