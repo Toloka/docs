@@ -4,7 +4,7 @@ For this type of project, you can use the **Sentiment analysis & Content moderat
 
 This preset helps you classify text content by specified categories.
 
-Take a look at the example: the labeling interface includes a text and radio buttons. When the **Yes, there are** option is selected, an additional question with checkboxes appears. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+Take a look at the example: the labeling interface includes a text and radio buttons. When the **Yes, there are** option is selected, an additional question with checkboxes appears. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/d79jOnuS3cQ5xW)
 
@@ -285,7 +285,7 @@ Take a look at the example: the labeling interface includes a text and radio bu
 
 {% endcut %}
 
-If this preset doesn't meet your needs, see other examples in this section.
+If this template doesn't meet your needs, see other examples in the **Text** section.
 
 ## Add a description {#add-description}
 
