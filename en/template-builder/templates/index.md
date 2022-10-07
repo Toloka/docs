@@ -39,3 +39,5 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 - [Side-by-side text comparison](sbs-text.md)
 
 - [Text classification](text-classification.md)
+
+- [Sentiment analysis & Content moderation](content-moderation.md)

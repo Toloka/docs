@@ -48,6 +48,8 @@ items:
             href: ../template-builder/templates/sbs-text.md
           - name: Text classification
             href: ../template-builder/templates/text-classification.md
+          - name: Sentiment analysis & Content moderation
+            href: ../template-builder/templates/content-moderation.md
   - name: Instructions
     items:
       - name: List of instructions

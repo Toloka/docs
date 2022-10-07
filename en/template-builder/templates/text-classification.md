@@ -4,7 +4,7 @@ For this type of project, you can use the **Clickbait or not?** preset.
 
 This preset helps you classify any kind of text for training classifiers and NLP models.
 
-Take a look at the example: the labeling interface includes a text block, and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
+Take a look at the example: the labeling interface includes a text block, and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GCr6AzRu3Wk6so)
 
@@ -118,7 +118,7 @@ Take a look at the example: the labeling interface includes a text block, and r
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-If this preset doesn't meet your needs, see other examples in this section.
+If this template doesn't meet your needs, see other examples in the **Text** section.
 
 ## Add a description {#add-description}
 
