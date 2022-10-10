@@ -129,7 +129,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     Tolokers get paid for completing the entire task suite.
 
-    The number of tasks per suite is set when [uploading tasks](categorization.md#smart-mixing).
+    The number of tasks per suite is set when uploading tasks.
 
 	{% endcut %}
 

@@ -105,11 +105,9 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
 		1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-		   {% if locale == "en-com" %}
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
-		   ```
-		   {{img src=image width="100%" height="400px"}}
-		   <div>Are there <b>traffic signs</b> in the picture?<div>
+	       {% if locale == "en-com" %}
 
 		   {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
 		   {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
@@ -123,17 +121,9 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
 		1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
 
-		   {% note info %}
+   1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
 
-		   The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
-
-		   {% endnote %}
-
-		1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
-
-		1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . If there were errors when testing, check the code blocks that you entered.
-
-	{% endlist %}
+   {% endlist %}
 
 1. Save the changes.
 
