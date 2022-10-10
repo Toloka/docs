@@ -119,6 +119,7 @@ Before you begin:
         {% include [tutorials-speed-filter-image](../_includes/tutorials/speed-filter-image.md) %}
 
 1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+
     1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}

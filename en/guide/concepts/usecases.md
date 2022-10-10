@@ -41,8 +41,8 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
     - [Collect offline data](../tutorials/walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
     - [Monitor prices](../tutorials/price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
     - [Monitor products](../tutorials/audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
-    - [Collect data on businesses](monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
-    - [Monitor outdoor objects of interest](monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
+    - [Collect data on businesses](../tutorials/monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
+    - [Monitoring field objects](../tutorials/monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
 
 
 #### By complexity
@@ -66,8 +66,8 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
     - [Collect offline data](../tutorials/walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
     - [Monitor prices](../tutorials/price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
     - [Monitor products](../tutorials/audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
-    - [Collect data on businesses](monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
-    - [Monitor outdoor objects of interest](monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
+    - [Collect data on businesses](../tutorials/monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
+    - [Monitoring field objects](../tutorials/monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
 
 - **Level 3. Tutorials using several projects** — Learn how to decompose a task.
     - [Object recognition and area selection (example with decomposition)](image-segmentation-overview.md) — An example of dividing a task for selecting objects into three projects: filtering out inappropriate images, selecting objects, and reviewing assignments.

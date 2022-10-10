@@ -85,6 +85,7 @@ default:
   mobile-agreement: https://toloka.ai/tolokers/legal/toloka_mobile_agreement
   mobile-mozilla: https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode
   monitoring-in-org-preset: https://platform.toloka.ai/requester/templates?choosedCard=1DwQlJ0L6p4urdwxEM4k
+  monitoring-preset: https://platform.toloka.ai/requester/templates?choosedCard=R9kqLzpBzDKfJEg8r95O
   ms-excel: https://support.microsoft.com/en-us/office/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba?ui=en-us&rs=en-us&ad=us
   object-recognition-preset: https://platform.toloka.ai/requester/templates?choosedCard=qQAB9dMM7LRSyJRjj0P3
   object-storage: https://cloud.yandex.com/docs/storage/quickstart

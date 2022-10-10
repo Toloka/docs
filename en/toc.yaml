@@ -98,9 +98,9 @@ items:
           - name: Product monitoring
             href: guide/tutorials/audit-of-planogram-of-product-placement-in-store.md
           - name: 'Data collection: Organizations'
-            href: guide/concepts/monitoring-objects-in-organizations.md
-          - name: Monitor outdoor items of interest
-            href: guide/concepts/monitoring.md
+            href: guide/tutorials/monitoring-objects-in-organizations.md
+          - name: Monitoring field objects
+            href: guide/tutorials/monitoring.md
           - name: Customization examples
             items:
               - name: Overview
