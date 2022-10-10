@@ -105,7 +105,9 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
 		1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-    1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+
+	       {% if locale == "en-com" %}
 
 		   {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
 		   {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
@@ -119,7 +121,9 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
 		1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
 
-    1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
+   1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
+	
+   {% endlist %}	
 
 1. Save the changes.
 

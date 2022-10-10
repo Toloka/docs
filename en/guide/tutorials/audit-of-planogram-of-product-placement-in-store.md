@@ -203,7 +203,7 @@ At this step, upload your task data to Toloka.
 
 ## Start labeling {#labeling}
 
-1. Make sure you have [topped up your account](concepts/refill.md).
+1. Make sure you have [topped up your account](../concepts/refill.md).
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
