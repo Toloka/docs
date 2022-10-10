@@ -6,7 +6,7 @@ To send an authorization request to the API, you need an OAuth token.
 
 ```http
 GET /api/app/v0/apps
-Host: https://toloka.yandex.ru
+Host: https://toloka.dev
 Authorization: OAuth <OAuth token>
 ```
 
