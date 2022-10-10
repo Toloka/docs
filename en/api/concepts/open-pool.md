@@ -69,7 +69,7 @@ If the pool cannot be opened, a response is returned with an error description a
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.OPEN` — Opening a pool. ||

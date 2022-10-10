@@ -87,7 +87,9 @@ The status of the operation:
 - `PENDING` — Not started yet.
 - `RUNNING` — In progress.
 - `SUCCESS` — Completed successfully.
-- `FAIL` — Not completed.||
+- `FAIL` — Not completed.
+
+Displayed for all operations except poll creation.||
 || **submitted** | **string \| mandatory**
 
 The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
