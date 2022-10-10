@@ -6,7 +6,7 @@
 
 ```http
 GET /api/app/v0/apps
-Host: https://toloka.yandex.ru
+Host: https://toloka.dev
 Authorization: OAuth <OAuth token>
 ```
 
