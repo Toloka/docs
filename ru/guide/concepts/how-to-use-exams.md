@@ -26,7 +26,12 @@
     {% cut "Как этого избежать" %}
 
     - В режиме редактирования проекта нажмите {% if locale == "ru-ru" %}**Показать общие элементы интерфейса**{% endif %}{% if locale == "en-com" %}**Show common interface elements**{% endif %} и отключите кнопку {% if locale == "ru-ru" %}**Пропустить**{% endif %}{% if locale == "en-com" %}**Skip**{% endif %}.
+        
+        ![](../_images/control-rules/exam/common-interface.png)
+
     - Добавьте в пул больше заданий, чем нужно для расчета навыка, укажите необходимое количество ответов и настройте требование к исполнителям: `<экзаменационный навык> = отсутствует`.
+
+        ![](../_images/control-rules/exam/control-tasks.png)
     - Разместите все задания на одной странице.
 
     {% endcut %}

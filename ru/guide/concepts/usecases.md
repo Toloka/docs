@@ -359,3 +359,11 @@ onKey: function(key) {
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
+
+{% if locale == "ru-ru" %}
+
+## Смотрите также
+
+- [Классификация изображений](https://habr.com/company/ods/blog/358574/)
+
+{% endif %}

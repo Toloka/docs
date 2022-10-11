@@ -12,8 +12,29 @@
 - [Выражения и хелперы Handlebars](t-components/handlebars.md) (см. [описание на сайте шаблонизатора](http://handlebarsjs.com/)).
 
 - Дополнительные хелперы:
+    - [Конкатенация](t-components/helpers.md#concat)
+    - [Операции с объектом](t-components/helpers.md#object)
+    - [Логические операции и сравнения](t-components/helpers.md#equal)
+    - [Запись значений в JSON поля выходных данных](t-components/helpers.md#js_fields)
 
 - Компоненты для решения популярных задач:
+
+    - [Поле для ввода строки](t-components/string.md)
+    - [Поле для ввода текста](t-components/text.md)
+    - [Поле для ввода строки с саджестом](t-components/suggest.md)
+    - [Переключатель](t-components/radiobuttons.md)
+    - [Флажок](t-components/checkboxes.md)
+    - [Выпадающий список](t-components/list.md)
+    - [Кнопка для загрузки файла](t-components/upload-file.md)
+    - [Кнопка для загрузки картинки](t-components/upload-picture.md)
+    - [Кнопка для записи и загрузки аудио](t-components/upload-audio.md)
+    - [Кнопка с проверкой перехода по ссылке](t-components/button-link.md)
+    - [Картинка с возможностью выделения областей](t-components/image-annotation.md)
+    - [Редактор для сегментации текста](t-components/segmentation-editor.md)
+    - [Картинка](t-components/img.md)
+    - [Кнопка](t-components/button.md)
+    - [Встроенный фрейм](t-components/iframe.md)
+    - [Отформатированный текст в HTML](t-components/html.md)
 
 
 Библиотеки для использования Handlebars и специальных компонентов подключены по умолчанию при создании проекта.

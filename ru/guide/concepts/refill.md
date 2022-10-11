@@ -217,6 +217,7 @@
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Подключиться**{% endif %}{% if locale == "en-com" %}**Connect**{% endif %}.
 
 1. Введите сумму перевода.
+    Минимальная сумма пополнения — 1 доллар.
     Максимальная сумма пополнения с банковской карты — 3500 долларов.
 
 1. Выберите способ оплаты: {% if locale == "ru-ru" %}**Банковской картой**{% endif %}{% if locale == "en-com" %}**Bank card**{% endif %} или {% if locale == "ru-ru" %}**Банковский перевод или Paypal**{% endif %}{% if locale == "en-com" %}**Bank transfer or Paypal**{% endif %}.
@@ -271,7 +272,7 @@
 
       {% note info %}
 
-      Если вы используете кошелек в сервисе , то при переходе к оплате у вас могут запросить [платежный пароль](https://yandex.ru/support/money/password/permanent.html).
+      Если вы используете кошелек в сервисе ЮMoney, то при переходе к оплате у вас могут запросить [платежный пароль](https://yandex.ru/support/money/password/permanent.html).
 
       {% endnote %}
 

@@ -62,6 +62,8 @@
 
     1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% elsif locale == "en-com" %}**Separate assignments with empty row**{% endif %}.
 
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
+
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% elsif locale == "en-com" %}**Download results**{% endif %}.
 
 1. Если по условию задания толокеры должны были отправить вам картинки/видео/аудио, скачайте их для проверки отдельным архивом следующим образом.

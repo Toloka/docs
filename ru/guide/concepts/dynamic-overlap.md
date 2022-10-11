@@ -142,6 +142,8 @@ eps = z_prob(j) * (1 / Y) / r
 
 Настройка динамического перекрытия для [простой классификации](categorization.md).
 
+![](../_images/location-job/dynamic-overlap/example.png)
+
 Поле `result` имеет 3 допустимых значения — `OK`, `BAD` и `404`.
 
 #### Задание 1
