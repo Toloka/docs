@@ -2,7 +2,6 @@
 
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
-
 {% cut "Можно ли удалить пул?" %}
 
 Полностью удалить пул невозможно, но можно переместить в архив. Система не удаляет пулы автоматически.

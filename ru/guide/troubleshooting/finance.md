@@ -54,7 +54,6 @@
 
 [Другой вопрос](support.md#new)
 
-
 ## Оплата заданий {#concept-2}
 
 {% cut "Где установить цену задания?" %}
@@ -95,10 +94,10 @@
 
 [Другой вопрос](support.md#new)
 
-
 ## Возврат средств {#concept-3}
 
 [Вернуть средства, перечисленные на счет в Толоку](support.md#feedback_khw_wc3_qjb)
 
+[Другой вопрос](support.md#new)
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -2,6 +2,7 @@
 
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
+## Настройка проекта {#project}
 
 ## Инструкция {#concept_llj_dkp_smb}
 
@@ -10,9 +11,13 @@
 {% cut "Как в инструкцию встроить несколько картинок с помощью ссылок на Яндекс Диск?" %}
 
 Чтобы добавить картинки с помощью ссылок на Яндекс Диск:
+
 1. Используйте ссылку, например: /api/proxy/yadisk/image1.jpg .
+
 1. В настройках профиля заказчика перейдите в .
+
 1. Настройте интеграцию с внешними сервисами.
+
     [Подробно об использовании файлов с Яндекс Диска](../concepts/prepare-data.md).
 
 {% endcut %}
@@ -22,8 +27,11 @@
 {% cut "Как показать исполнителю инструкцию в самом задании, чтобы не нужно было ее открывать/закрывать?" %}
 
 Существуют три основных варианта решения:
+
 - Разместить инструкцию в самом задании так, чтобы она не сильно перегружала интерфейс.
+
 - Сделать инструкцию [в виде бокового окна]({{ instr-in-form-of-side-window }}), чтобы можно было быстро развернуть и скрыть.
+
 - Разместить инструкцию под катом или [добавить подсказки-вопросы к отдельным элементам интерфейса]({{ hints-questions }}).
 Для лучшего результата рекомендуем предварительно отобрать подходящих исполнителей и выставить правила контроля качества.
 
@@ -55,7 +63,6 @@
 
 [Другой вопрос](support.md#help)
 
-
 ## Настройка интерфейса задания {#concept_gss_fkp_smb}
 
 {% cut "Как сделать так, чтобы при нажатии на изображение оно увеличивалось максимально?" %}
@@ -67,7 +74,8 @@
 {% cut "Как в image-annotation добавить горячую клавишу для добавления многоугольника?" %}
 
 Чтобы добавить горячую клавишу, в методе onKey пропишите следующее действие:
-```
+
+```js
 onKey: function(key) {
           var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 
@@ -106,7 +114,8 @@ onKey: function(key) {
 {% cut "Как сделать так, чтобы для разных вопросов было различное количество вариантов ответов?" %}
 
 Используйте [конкатенацию](../concepts/t-components/helpers.md#concat), например:
-```
+
+```html
 {{field type="checkbox" name=(concat "result." @index ) label=(concat "checkbox –
           " @index) size="L"}}
 ```
@@ -118,9 +127,11 @@ onKey: function(key) {
 {% cut "Как обращаться к элементам массива по индексу — к входным и выходным данным?" %}
 
 Если это в JS, то укажите в конце индекс:
-```
+
+```js
 this.getTask().input_values['name'][2]solution.output_values['result'][2]
 ```
+
 Если в интерфейсе, то следующим образом: ![](../_images/troubleshooting/access-elements-of-the-array1.png)
 
 {% endcut %}
@@ -152,32 +163,41 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 {% cut "Как в ссылку перехода для «Кнопка с проверкой перехода по ссылке» передавать значение входной переменной?" %}
 
 Укажите название входного поля, куда передаёте ссылку, без скобок: {% if locale == "ru-ru" %}
-```
+
+```html
 {{field type="button-clicked" name="ads" label="Нажми меня" href=name_escape
             action=true}}
 ```
-{% endif %}{% if locale == "en-com" %}
-```
+
+{% endif %} {% if locale == "en-com" %}
+
+```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
           action=true}}
 ```
+
 {% endif %}
 
 {% endcut %}
 
 {% cut "Как в JS сделать так, чтобы если чекбокс отмечен, то ссылку не запрашивать, а если ссылка вставлена, то галочка стоять не должна?" %}
 
-1. Посмотрите как это реализовано в шаблоне .
+1. Посмотрите как это реализовано в шаблоне [«Поиск данных в сети»](../concepts/internet-search.md).
+
 1. Для решения второй задачи вы можете добавить ещё одну валидацию по аналогии с этой: {% if locale == "ru-ru" %}
-    ```
+
+    ```js
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: 'Вставьте ссылку или отметьте галочкой,что сайта нет'}}}}
     ```
-    {% endif %}{% if locale == "en-com" %}
-    ```
+
+    {% endif %} {% if locale == "en-com" %}
+
+    ```js
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
+
     {% endif %}
 
 {% endcut %}
@@ -199,7 +219,9 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 Посмотреть пример вы можете в комментариях к [проекту]({{ how-to-insert-a-calendar }}). В примере есть формат выходных данных и библиотеки, которые нужно подключить.
 
 Чтобы подключить библиотеки:
+
 1. В режиме редактирования проекта нажмите «шестеренку».
+
 1. В открывшемся поле слева введите ссылки и нажмите **Ввод**.
 
 {% endcut %}
@@ -213,10 +235,15 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 {% cut "Как сделать в задании изменяющиеся варианты ответов и их количество?" %}
 
 Вы можете сделать это с помощью [конкатенации](../concepts/t-components/helpers.md#concat).
+
 Посмотрите примеры проектов, которые могут помочь вам в создании интерфейса:
+
 - [с чекбоксами]({{ project-with-checkboxes }})
+
 - [с выпадающим списком]({{ project-with-drop-down-list }})
+
 - [с радиобаттонами]({{ project-with-radiobutton }})
+
 Во входном поле массив значений необходимо передавать через запятую. Для каждого из них в интерфейсе будет сформирован вариант ответа. Входные/выходные данные к проектам-примерам указаны в комментариях на codepen.io.
 
 {% endcut %}
@@ -242,7 +269,8 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 {% cut "Как запустить валидацию setSolution в OnRender?" %}
 
 Попробуйте добавить условие на наличие второй шкалы:
-```
+
+```js
 setSolution: function(solution) {
 var secondScale = this.getDOMElement().querySelector('.second-scale');
 
@@ -270,7 +298,7 @@ TolokaHandlebarsTask.prototype.setSolution.call(this, solution);
 
 {% endcut %}
 
-{% cut "Где в шаблоне {% if locale == "ru-ru" %}**Сравнение изображений (Side-by-side)**{% endif %}{% if locale == "en-com" %}**Image comparison (Side-by-side)**{% endif %} нужно указать proxy для Интерфейса задания, чтобы сделать задание с выбором из трех вариантов картинок?" %}
+{% cut "Где в шаблоне «Сравнение изображений (Side-by-side)» нужно указать proxy для Интерфейса задания, чтобы сделать задание с выбором из трех вариантов картинок?" %}
 
 В шаблоне {% if locale == "ru-ru" %}**Сравнение изображений (Side-by-side)**{% endif %}{% if locale == "en-com" %}**Image comparison (Side-by-side)**{% endif %} используется не HTML-тег, а компонент. Поэтому нужно подставить прокси в круглых скобках по [образцу](../concepts/t-components/img.md): `{{img src=(proxy image)}}`.
 
@@ -279,7 +307,8 @@ TolokaHandlebarsTask.prototype.setSolution.call(this, solution);
 {% cut "Как в задании поменять фон со стандартного белого на другой цвет?" %}
 
 Установите фон в CSS для элемента `.task` или `.task-suite`. Например, черный:
-```
+
+```css
 .task-suite {
 background-color: #000000;
 }
@@ -287,6 +316,7 @@ background-color: #000000;
 background-color: #000000;
 }
 ```
+
 Также вы можете присвоить класс области интерфейса, где находится изображение, и установить фон только для этой области.
 
 {% endcut %}
@@ -298,7 +328,8 @@ background-color: #000000;
 Например: `var regexp = /^(https://www.myurl.com/).{4,200}$/`.
 
 Или можно добавить регулярное выражение в выходные данные в поле `input` с типом **строка**. Сделайте поле обязательным. Затем добавьте компонент **Поле для ввода текста** в интерфейс задания (в блок HTML) и укажите имя поля в атрибуте `name`:
-```
+
+```html
 {{field type="textarea" name="input" width="270px" rows=5}}
 ```
 
@@ -313,8 +344,10 @@ background-color: #000000;
 {% cut "Как построчно ввести список слов, для каждого отобразить элемент и сохранить результат в выходной массив?" %}
 
 В качестве входного поля передайте массив строк. Например, как показано на скриншоте: ![](../_images/troubleshooting/array-each-words.png)
+
 В HTML используйте специальный handlebar, чтобы итерироваться по этому полю. Конструкция будет выглядеть следующим образом:
-```
+
+```html
 {{#each words}}
 {{field type="radio" name="result" value=this label=this}}
 {{/each}}
@@ -325,10 +358,14 @@ background-color: #000000;
 {% cut " Как в качестве элемента интерфейса использовать ползунки для выбора значения параметра?" %}
 
 В HTML шаблона укажите следующий код: {% if locale == "ru-ru" %}
-```
+
+```html
 <input type=""range"" list=""rng"" class=""res"">
+```
 
 а в JS в onRender прописать следующее:
+
+```js
 onRender: function() {
 // DOM-элемент задания сформирован (доступен через #getDOMElement())
 //Добавляем служебные переменные
@@ -345,9 +382,16 @@ return solution;
 
 }
 ```
-{% endif %}{% if locale == "en-com" %}
+
+{% endif %} {% if locale == "en-com" %}
+
+```html
+<input type=""range"" list=""rng"" class=""res"">
 ```
-<input type=""range"" list=""rng"" class=""res""> and include the following in onRender in your JS:
+
+and include the following in onRender in your JS:
+
+```js
 onRender: function() {
 // Generated DOM element for the task (available via #getDOMElement())
 //Adding auxiliary variables
@@ -364,6 +408,7 @@ return solution;
 
 }
 ```
+
 {% endif %}
 
 {% endcut %}
@@ -391,8 +436,11 @@ return solution;
 {% cut "Возможно в Толоке построить интерфейс с помощью своего JS?" %}
 
 Да, вы можете не использовать наши компоненты для создания интерфейсов, а создать собственный дизайн страницы с заданиями. Для этого удалите библиотеку из шаблона проекта:
+
 - откройте настройки под «шестеренкой».
+
 - удалите `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
+
 В [Руководстве заказчика](../concepts/spec-advanced.md) описана вся структура классов и как они устроены.
 
 {% endcut %}
@@ -416,7 +464,8 @@ return solution;
 Чтобы текст из входного поля отображался с HTML-тегами, можно использовать `<pre>`. Например:`<pre>{{text}}</pre>`.
 
 Так текст будет записан как есть, в одну строку со скроллом.Чтобы убрать скролл и не растягивать карточку с заданием, добавьте в блок CSS:
-```
+
+```css
 .task {
   max-width: 800px;
 }
@@ -431,12 +480,17 @@ pre {
 {% cut "Что делать исполнителю, если в задании по выделению областей на картинке нет предмета, который нужно выделить?" %}
 
 Существуют четыре основных варианта решения:
+
 - [Декомпозировать задачу](../concepts/solution-architecture.md): сначала отбрать картинки с нужными объектами, затем выделить на них области.
+
 - Выделить произвольную область на картинке. Например, поставьте квадрат в правый верхний угол.
+
     Добавьте информацию об этом в инструкцию для проверяющих.
 
 - Предложить исполнителю пропустить задание и сообщить о нём в личном сообщении. Сообщения проверяются заказчиком и, если объекта действительно нет, задание будет удалено из пула (путем обнуления перекрытия).
+
 - Добавить в интерфейс чекбокс «нет объекта» и настройте в JS проверку, что в задании либо выделен объект, либо поставлена галочка.
+
     Для контроля добавьте в интерфейс задания информацию о значении этого чекбокса.
 
 {% endcut %}
@@ -458,7 +512,6 @@ pre {
 {% endcut %}
 
 [Другой вопрос](support.md#help)
-
 
 ## Входные и выходные данные {#concept_cjj_gkp_smb}
 

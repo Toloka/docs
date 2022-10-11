@@ -19,7 +19,7 @@
     - [Как тысячи людей помогают нам делать Яндекс](https://habr.com/ru/company/yandex/blog/358462/)
     - [Краудсорсинг в тестировании](https://habr.com/ru/company/jugru/blog/425247/)
     - [Управление людьми как инженерная задача: экосистема краудсорсинга в Яндексе](https://www.highload.ru/moscow/2018/abstracts/4329)
-    - [<q>Мы хотим монетизировать экспертизу в краудсорсинге</q>](https://rb.ru/longread/yandex-toloka/)
+    - [«Мы хотим монетизировать экспертизу в краудсорсинге»](https://rb.ru/longread/yandex-toloka/)
     - [Новые модели поиска и анализа данных. WSDM 2020 глазами команды Толоки](https://habr.com/ru/company/yandex/blog/496004/)
     - [Как контролировать миллионы исполнителей: инструменты и правила Толоки](https://vc.ru/yandexbusiness/161073-kak-kontrolirovat-milliony-ispolniteley-instrumenty-i-pravila-yandeks-toloki)
 
@@ -50,7 +50,7 @@
 - [Как краудсорсинговая платформа Яндекса помогает обучать Алису и экономить деньги](https://habr.com/ru/company/yandex/blog/430034/) — уточнение Яндекс Справочника, обучение голосового помощника, увеличение выручки перевозчиков, модерация контента.
 - [Как разработчики учат нейросеть искать свободные места на ближайших парковках в Минске](https://dev.by/news/SpotVision) — поиск бесплатных парковок.
 - [«Яндекс Шеф»: как разрабатывался визуальный язык](https://vc.ru/yandex.chef/65291-yandeks-shef-kak-razrabatyvalsya-vizualnyy-yazyk) — выбор названия и визуального оформления нового сервиса.
-- [Деконструкция сложности Толока помогла понять, легко ли читать новости на N + 1](https://nplus1.ru/material/2019/09/19/toloka) — определение <q>читательского</q> уровня сложности материалов сайта.
+- [Деконструкция сложности Толока помогла понять, легко ли читать новости на N + 1](https://nplus1.ru/material/2019/09/19/toloka) — определение «читательского» уровня сложности материалов сайта.
 - [Краудсорсинг для розницы: как измерить пешеходный трафик](https://merchandising.ru/infobank/cases/kraudsorsing-dlya-roznitsy-kak-izmerit-peshekhodnyy-trafik/) — измерение пешеходного трафика.
 - [Продуктовая разработка в «Ауре»: гипотезы, side-by-side и эксперименты](https://vc.ru/growth/125090-produktovaya-razrabotka-v-aure-gipotezy-side-by-side-i-eksperimenty) — улучшение интерфейса социального сервиса.
 - [Команда Dbrain о том, как стартапу найти свое призвание](https://vc.ru/life/128273-ne-slushayte-druzey-slushayte-rynok-komanda-dbrain-o-tom-kak-startapu-nayti-svoe-prizvanie) — распознавание рукописного текста.
