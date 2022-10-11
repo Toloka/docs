@@ -120,7 +120,7 @@ ID of the Toloker's response to the task a reward is issued for. ||
 Comments that are only visible to the requester. ||
 || **public_title** | **object**
 
-The subject of the message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: "`"<language RU/EN/TR/ID/FR>": "<title text>"`. ||
+The subject of the message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<title text>"`. ||
 || **public_message** | **object**
 
 The text of message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||

@@ -64,8 +64,10 @@ Title | Overview
 
 User ID. ||
 || **type** | **string**
+
 Type of operation: `TRAINING.CLONE` — Clone a training pool. ||
 || **status** | **string**
+
 The status of the operation:
 
 - `PENDING` — Not started yet.
@@ -79,11 +81,15 @@ The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:m
 
 The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
+
 The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
+
 The percentage of the operation completed. ||
 || **parameters.training_id** | **string**
+
 ID of the source training pool. ||
 || **details.training_id** | **string**
+
 ID of the new training pool. ||
 |#

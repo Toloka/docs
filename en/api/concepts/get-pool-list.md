@@ -45,6 +45,7 @@ Status of the pool:
 - `LOCKED` — No possible actions.
 - `ARCHIVED` — Archived. ||
 || **project_id** | **string**
+
 ID of the project to which the pool is attached. ||
 || **sort** | **string**
 

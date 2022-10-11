@@ -37,6 +37,7 @@ Specified in the link after the question mark; separated by `&`.
 #|
 || Parameter | Overview  ||
 || **status** | **string**
+
 Training pool status:
 
 - `OPEN` — Open.
@@ -44,8 +45,10 @@ Training pool status:
 - `LOCKED` — No possible actions.
 - `ARCHIVED` — Archived. ||
 || **project_id** | **string**
+
 ID of the project that the training pool is linked to. ||
 || **sort** | **string**
+
 Parameters for sorting in ascending order:
 
 - `id` — ID of the training pool.
