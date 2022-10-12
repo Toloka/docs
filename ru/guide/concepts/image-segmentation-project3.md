@@ -42,7 +42,7 @@
 
       1. {% include [image-segmentation-project3-del-input-temp](../_includes/concepts/image-segmentation-project3/id-image-segmentation-project3/del-input-temp.md) %}
 
-          ```
+          ```json
           {
           "image": {
           "type": "url",
@@ -64,7 +64,7 @@
 
       1. {% include [image-segmentation-project3-del-output-temp](../_includes/concepts/image-segmentation-project3/id-image-segmentation-project3/del-output-temp.md) %}
 
-          ```
+          ```json
           {
           "verdict": {
           "type": "string",
@@ -85,8 +85,10 @@
       1. {% include [image-annotation-p_tgf_nsv_wlb](../_includes/concepts/t-components/image-annotation/id-image-annotation/p_tgf_nsv_wlb.md) %}
 
       1. В блоке **HTML** замените текущий код на следующий:
+
           {% if locale == "ru-ru" %}
-          ```
+
+          ```html
           <!-- редактор для выделения областей с возможностью заранее добавить область -->
           {{field type="image-annotation" name="object" src=image annotations=selection}}
 
@@ -94,8 +96,10 @@
           {{field type="radio" name="result" value="OK" label="Верно" hotkey="1"}}
           {{field type="radio" name="result" value="BAD" label="Неверно" hotkey="2"}}
           ```
+
           {% endif %}{% if locale == "en-com" %}
-          ```
+
+          ```html
           <!-- editor for selecting objects that lets you add an area in advance -->
           {{field type="image-annotation" name="object" src=image annotations=selection}}
 
@@ -103,10 +107,14 @@
           {{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
           {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
           ```
+
         {% endif %}
+
       1. В блоке **CSS** замените текущий код на следующий:
+
           {% if locale == "ru-ru" %}
-          ```
+
+          ```css
           /* скрыть кнопку для выделения полигоном */
           .image-annotation-editor__shape-polygon {
           display: none;
@@ -117,8 +125,10 @@
           height: max-content;
           }
           ```
+
           {% endif %}{% if locale == "en-com" %}
-          ```
+
+          ```css
           /* hide the button for polygon selection */
           .image-annotation-editor__shape-polygon {
           display: none;
@@ -129,6 +139,7 @@
           height: max-content;
           }
           ```
+
         {% endif %}
 
       1. Настройте раздел **Спецификация данных**:
@@ -137,7 +148,7 @@
 
       1. Удалите шаблонный код из поля {% if locale == "ru-ru" %}**Входные данные**{% endif %}{% if locale == "en-com" %}**Input data**{% endif %} и введите следующий код:
 
-          ```
+          ```json
           {
           "image": {
           "type": "url",
@@ -159,7 +170,7 @@
 
       1. Удалите шаблонный код из поля {% if locale == "ru-ru" %}**Выходные данные**{% endif %}{% if locale == "en-com" %}**Output data**{% endif %} и введите следующий код:
 
-          ```
+          ```json
           {
           "result": {
           "type": "string",
@@ -184,8 +195,10 @@
           {% endnote %}
 
       1. Нажмите **Изменить входные данные**.
+
       1. В поле **selection** добавьте пример входных данных:
-          ```
+
+          ```json
           [{"data":{"p1":{"x":0.472,"y":0.413},"p2":{"x":0.932,"y":0.877}},"type":"rectangle"},
           {"data":[{"x":0.143,"y":0.807},{"x":0.317,"y":0.87},{"x":0.511,"y":0.145},{"x":0.328,"y":0.096},{"x":0.096,"y":0.554}], "type":"polygon"}]
           ```
@@ -197,20 +210,25 @@
 1. Напишите инструкцию для исполнителей:
 
     **Текст инструкции:**
+
     {% if locale == "ru-ru" %}
-    ```
+
+    ```plaintext
     Посмотрите на изображение и ответьте на вопрос: **Все ли дорожные знаки выделены верно?**
     Если да, нажмите **Да**.
     Если нет, нажмите **Нет**.
     Например, дорожные знаки выделены верно, поэтому правильный ответ **Да**.
     ```
+
     {% endif %}{% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     Look at the image and answer the question: **Are all traffic signs outlined correctly?**
     If there are, click **Yes**.
     If there isn't, click **No**.
     For example, road signs are outlined correctly, so the correct answer is **Yes**.
     ```
+
     {% endif %}
 
     {% note tip %}
@@ -283,12 +301,12 @@
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать пул**{% endif %}{% if locale == "en-com" %}**Create a pool**{% endif %}.
 
-
 ## Подготовьте и загрузите файл с результатами {#upload_file}
 
 1. Подготовьте [файл](../../glossary.md#tsv-file-definition) с заданиями:
 
     1. Откройте в редакторе текста или электронных таблиц файл, полученный после агрегации результатов во [втором проекте](image-segmentation-project2.md).
+
     1. Столбец `INPUT:image` оставьте без изменений.
 
     1. Измените имя столбца `OUTPUT:result` на `INPUT:selection`.
@@ -298,9 +316,11 @@
     1. Удалите столбцы `ACCEPT:verdict` и `ACCEPT:comment`.
 
     1. Добавьте входные данные, например:
-    ```
-    [{""type"":""rectangle"",""data"":{""p1"":{""x"":0.2421,""y"":0.98871},""p2"":{""x"":0.93663,""y"":0.8776}}}]
-    ```
+
+        ```json
+        [{""type"":""rectangle"",""data"":{""p1"":{""x"":0.2421,""y"":0.98871},""p2"":{""x"":0.93663,""y"":0.8776}}}]
+        ```
+
     и сохраните файл в формате `tsv`.
 
     {% note tip %}
@@ -335,12 +355,11 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note alarm %}
+    {% note alert %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
     {% endnote %}
-
 
 ## Скачайте проверенные результаты  {#get_results}
 
@@ -361,7 +380,6 @@
 1. Когда операция завершится, скачайте файл с результатами. Для этого в столбце {% if locale == "ru-ru" %}**Файлы**{% endif %}{% if locale == "en-com" %}**Files**{% endif %} нажмите {% if locale == "ru-ru" %}**Скачать**{% endif %}{% if locale == "en-com" %}**Download**{% endif %}.
 
 1. Используйте файл с результатами во [втором проекте](image-segmentation-project2.md).
-
 
 ## Проверьте выполненные задания {#check_results}
 
@@ -438,7 +456,6 @@
   1. При настройке пула во [втором проекте](image-segmentation-project2.md) вы включили опцию {% if locale == "ru-ru" %}**Повторное выполнение отклонённых заданий**{% endif %}{% if locale == "en-com" %}**Recompletion of the rejected tasks**{% endif %}.
 
     При повторном выполнении задания пул автоматически открывается снова, и задания передаются другим исполнителям. Когда задания будут выполнены, отправьте результаты на проверку. Затем скачайте результаты, проверьте их и загрузите проверенные результаты. Вы можете отклонять задания столько раз, сколько захотите, чтобы получить более точные результаты.
-
 
 - Проверить задания в интерфейсе пула
 

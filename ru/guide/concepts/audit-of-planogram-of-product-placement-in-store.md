@@ -2,12 +2,9 @@
 
 {% include [categorization-toloka-sandbox-for-conref](../_includes/concepts/categorization/id-categorization/toloka-sandbox-for-conref.md) %}
 
-
 {% include [walk-walk-abstract](../_includes/concepts/walk/id-walk/walk-abstract.md) %}
 
-
 {% include [walk-walk-abstract-decomposing](../_includes/concepts/walk/id-walk/walk-abstract-decomposing.md) %}
-
 
 Возможно, для вашего проекта нужны дополнительные настройки, например, добавление новой кнопки со сценарием выполнения или добавление блока с прикреплением файлов. Подробнее об этом читайте в разделе [Примеры кастомизации](advanced-features.md).
 
@@ -26,10 +23,10 @@
 
 {% include [toloka-requester-source-project-def](../_includes/toloka-requester-source/id-toloka-requester-source/project-def.md) %}
 
-
 #### В интерфейсе:
 
 1. Выберите шаблон:
+
     1. {% include [toloka-requester-source-create-project](../_includes/toloka-requester-source/id-toloka-requester-source/create-project.md) %}
 
     1. Выберите шаблон {% if locale == "ru-ru" %}**Аудит планограммы выкладки товаров в магазине**{% elsif locale == "en-com" %}**Audit of the planogram of products displayed in the store**{% endif %} в блоке {% if locale == "ru-ru" %}**Пешеходные задания**{% elsif locale == "en-com" %}**Spatial Crowdsourcing**{% endif %}.
@@ -167,11 +164,13 @@
 Пул — это набор оплачиваемых заданий, которые одновременно выдаются исполнителям.
 
 1. Откройте проект и нажмите **Добавить пул**.
+
 1. Дайте пулу любое удобное название и описание. Они доступны только вам, исполнитель будет видеть только название и описание проекта.
+
 1. В блоке **Аудитория** добавьте **Фильтры** для отбора исполнителей. Чтобы ваши задания были доступны в мобильных приложениях Толоки исполнителям, владеющих русским языком и находящихся в Москве, установите язык и регион.
 
     ![](../_images/tutorials/walk/region-by-ip.png)
-    
+
 1. В блоке **Цена** установите цену за задание, например 0,2 $. Для пешеходных заданий всегда добавляйте одно задание на страницу.
 
     {% cut "Что такое страница заданий?" %}
@@ -193,6 +192,7 @@
     {% endcut %}
 
 1. В блоке **Контроль качества** установите **Перекрытие** — количество исполнителей, которые должны выполнить задание. Для пешеходных заданий, как правило, 1.
+
 1. В блоке **Контроль качества** включите опцию **Отложенная приемка** и укажите количество дней на проверку для параметра **Срок проверки**. Например, 7.
 
     {% cut "Что такое отложенная приемка?" %}
@@ -202,12 +202,12 @@
     {% endcut %}
 
 1. В блоке **Дополнительные настройки** укажите **Время** на выполнение страницы заданий. Его должно быть достаточно для того, чтобы добраться до места, найти указанную точку и загрузить фотографии. Для пешеходных заданий рекомендуем устанавливать сутки — 86 400 секунд.
+
 1. Сохраните пул.
 
 ## Загрузите задания {#tasks_upload}
 
 {% include [toloka-requester-source-tsv-file](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-file.md) %}
-
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% elsif locale == "en-com" %}**Upload**{% endif %}. В открывшемся окне вы можете скачать шаблон файла.
 
@@ -224,14 +224,19 @@
     ![](../_images/tutorials/audit-place/audit-download.png)
 
 1. Загрузите задания.
+
 1. Выберите {% if locale == "ru-ru" %}**Указать вручную**{% elsif locale == "en-com" %}**Set manually**{% endif %} и установите значение 1 в поле {% if locale == "ru-ru" %}**Кол-во заданий на странице**{% elsif locale == "en-com" %}**Number of tasks per suite**{% endif %}.
+
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Разделить задания на страницы**{% elsif locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
 ## Запустите пул и получите результаты {#launch}
 
 1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.png).
+
 1. Следите за выполнением в блоке **Статистика пула**.
+
 1. Как только получены первые результаты, вы можете начинать проверку.
+
     Чтобы проверить задания, откройте пул и нажмите **Скачать результаты**. Чтобы скачать вложения, нажмите кнопку рядом ![](../_images/drop-down.svg) и выберете **Скачать вложения**.
 
     {% note info %}

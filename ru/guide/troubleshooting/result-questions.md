@@ -24,7 +24,7 @@
 
 {% cut "Где можно увидеть ход агрегации?" %}
 
-На странице пула есть кнопка {% if locale == "ru-ru" %}**К списку операций**{% endif %} {% if locale == "en-com" %}**Lisf of Operations**{% endif %}.
+На странице пула есть кнопка {% if locale == "ru-ru" %}**К списку операций**{% endif %}{% if locale == "en-com" %}**Lisf of Operations**{% endif %}.
 
 {% endcut %}
 
@@ -36,7 +36,7 @@
 
 {% cut "Агрегация по навыку недоступна. При запуске по API, код ошибки — `ONLY_FOR_POOL_WITH_MIXER`. Почему?" %}
 
-Необходимо использовать [«умное смешивание»](../concepts/distribute-tasks-by-pages.md#smart-mixing) .
+Необходимо использовать [«умное смешивание»](../concepts/distribute-tasks-by-pages.md#smart-mixing).
 
 {% endcut %}
 

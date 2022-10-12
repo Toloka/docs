@@ -1,10 +1,8 @@
-
 Чтобы определить какие данные будете передавать исполнителю и получать в ответ, необходимо создать поля входных и выходных данных.
 
 {% cut "Что такое входные и выходные данные?" %}
 
 {% include [toloka-requester-source-input-data](input-data.md) %}
-
 
 {% include [toloka-requester-source-output-data](output-data.md) %}
 

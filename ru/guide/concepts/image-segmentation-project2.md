@@ -45,7 +45,8 @@
       1. Настройте инструменты выделения области. В этом шаблоне используется [Редактор для выделения области](t-components/image-annotation.md). Для него доступны инструменты прямоугольник и многоугольник (по умолчанию).
 
           Чтобы настроить выделение прямоугольником, замените код в блоке **CSS** на указанный:
-          ```
+
+          ```css
           .image-annotation-editor__shape-polygon {
           display: none;
           }
@@ -53,7 +54,7 @@
 
       1. Введите код для настройки высоты интерфейса по размеру изображения:
 
-          ```
+          ```css
           .image-annotation-editor__annotation-layer {
           height: max-content;
           }
@@ -82,6 +83,7 @@
 1. Напишите инструкцию для исполнителей:
 
     #### Текст инструкции
+
     Нажмите кнопку ![](../_images/tutorials/image-segmentation/rectangle-button.png) и обведите прямоугольником все дорожные знаки на изображении.
 
     {% note tip %}
@@ -105,6 +107,7 @@
 1. {% if locale == "ru-ru" %}
     (опционально) Укажите **Приватный комментарий**{% if locale == "en-com" %}**Private comment**{% endif %}. Эта информация доступна только вам.
     {% endif %}
+
 1. В блоке {% if locale == "ru-ru" %}**Аудитория**{% endif %}{% if locale == "en-com" %}**Audience**{% endif %} в разделе {% if locale == "ru-ru" %}**Исполнители**{% endif %}{% if locale == "en-com" %}**Performers**{% endif %} отфильтруйте исполнителей:
 
     1. Нажмите {% if locale == "ru-ru" %}**Добавить фильтр**{% endif %}{% if locale == "en-com" %}**Add filter**{% endif %}.
@@ -154,6 +157,7 @@
         В поле {% if locale == "ru-ru" %}**Срок проверки в днях**{% endif %}{% if locale == "en-com" %}**Review period in days**{% endif %} укажите количество дней на проверку задания.
 
     1. Добавьте следующие правила контроля качества:
+
         - {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — отправляет отклоненные вами задания другим исполнителям по заданным правилам.
 
             1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
@@ -191,8 +195,11 @@
             1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Fast responses**{% endif %}.
 
             1. В поле {% if locale == "ru-ru" %}**Учитывать последних страниц заданий**{% endif %}{% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `5`.
+
             1. В поле {% if locale == "ru-ru" %}**Минимальное время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} укажите время в секундах. Например, `20`.
+
             1. Задайте правило для быстрого ответа: если {% if locale == "ru-ru" %}**количество быстрых ответов**{% endif %}{% if locale == "en-com" %}**number of fast responses**{% endif %}**≥ 1**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Быстрые ответы**.
+
             {% if locale == "ru-ru" %}![](../_images/other/fast-answers2.png){% endif %}
 
             Это означает, что если исполнитель выполнит хотя бы одну [страницу заданий](../../glossary.md#task-page) быстрее чем за 20 секунд, он будет заблокирован и не сможет больше выполнять ваши задания 10 дней.
@@ -204,6 +211,7 @@
             1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %}.
 
             1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**количество проверенных ответов**{% endif %}{% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** и {% if locale == "ru-ru" %}**процент отклоненных ответов**{% endif %}{% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35** то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**15 дней**{% endif %}{% if locale == "en-com" %}**15 days**{% endif %}.
+
             {% if locale == "ru-ru" %}![](../_images/other/offline-accept.png){% endif %}
 
             Это означает, что если 35% и более ответов исполнителя будут отклонены, он будет заблокирован и не сможет больше выполнять ваши задания 15 дней. Правило начинает действовать после проверки 3 ответов исполнителя.
@@ -221,7 +229,6 @@
 1. В блоке {% if locale == "ru-ru" %}**Дополнительные настройки**{% endif %}{% if locale == "en-com" %}**Additional settings**{% endif %} укажите значение поля {% if locale == "ru-ru" %}**Время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Time per task suite**{% endif %}. Времени должно быть достаточно, в том числе для чтения инструкции и загрузки задания. Например, `1200` секунд.
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать пул**{% endif %}{% if locale == "en-com" %}**Create a pool**{% endif %}.
 
-
 ## Подготовьте и загрузите задания {#upload-file}
 
 1. Подготовьте [файл с заданиями](../../glossary.md#tsv-file-definition).
@@ -233,7 +240,8 @@
     {% note tip %}
 
     Для отбора изображений на устройствах с Linux и MacOS вы можете воспользоваться командами awk:
-    ```
+
+    ```shell
     awk 'BEGIN {OFS = FS = "\t";} $2=/OK/ {print $1}' <aggregated_res>.tsv > <filtered_res>.tsv
     ```
 
@@ -261,12 +269,11 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note alarm %}
+    {% note alert %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
     {% endnote %}
-
 
 ## Получите результаты {#get-results}
 
@@ -277,6 +284,7 @@
     1. В блоке {% if locale == "ru-ru" %}**Поля**{% endif %}{% if locale == "en-com" %}**Columns**{% endif %} оставьте включенной только опцию {% if locale == "ru-ru" %}**id ответа**{% endif %}{% if locale == "en-com" %}**assignment ID**{% endif %}.
 
     1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.
+
     {% if locale == "ru-ru" %}
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
     {% endif %}
@@ -284,8 +292,6 @@
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
 
 1. Используйте файл с результатами в [третьем проекте](image-segmentation-project3.md).
-
-
 
 ## Что дальше {#what-next}
 

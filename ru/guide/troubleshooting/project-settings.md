@@ -14,7 +14,7 @@
 
 1. Используйте ссылку, например: /api/proxy/yadisk/image1.jpg .
 
-1. В настройках профиля заказчика перейдите в .
+1. В настройках профиля заказчика перейдите в **Интеграция с внешними сервисами → Настройки прокси**.
 
 1. Настройте интеграцию с внешними сервисами.
 
@@ -75,7 +75,7 @@
 
 Чтобы добавить горячую клавишу, в методе onKey пропишите следующее действие:
 
-```js
+```javascript
 onKey: function(key) {
           var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 
@@ -128,7 +128,7 @@ onKey: function(key) {
 
 Если это в JS, то укажите в конце индекс:
 
-```js
+```javascript
 this.getTask().input_values['name'][2]solution.output_values['result'][2]
 ```
 
@@ -169,7 +169,7 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
             action=true}}
 ```
 
-{% endif %} {% if locale == "en-com" %}
+{% endif %}{% if locale == "en-com" %}
 
 ```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
@@ -186,14 +186,14 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 
 1. Для решения второй задачи вы можете добавить ещё одну валидацию по аналогии с этой: {% if locale == "ru-ru" %}
 
-    ```js
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: 'Вставьте ссылку или отметьте галочкой,что сайта нет'}}}}
     ```
 
-    {% endif %} {% if locale == "en-com" %}
+    {% endif %}{% if locale == "en-com" %}
 
-    ```js
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
@@ -270,7 +270,7 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 
 Попробуйте добавить условие на наличие второй шкалы:
 
-```js
+```javascript
 setSolution: function(solution) {
 var secondScale = this.getDOMElement().querySelector('.second-scale');
 
@@ -365,7 +365,7 @@ background-color: #000000;
 
 а в JS в onRender прописать следующее:
 
-```js
+```javascript
 onRender: function() {
 // DOM-элемент задания сформирован (доступен через #getDOMElement())
 //Добавляем служебные переменные
@@ -383,7 +383,7 @@ return solution;
 }
 ```
 
-{% endif %} {% if locale == "en-com" %}
+{% endif %}{% if locale == "en-com" %}
 
 ```html
 <input type=""range"" list=""rng"" class=""res"">
@@ -391,7 +391,7 @@ return solution;
 
 and include the following in onRender in your JS:
 
-```js
+```javascript
 onRender: function() {
 // Generated DOM element for the task (available via #getDOMElement())
 //Adding auxiliary variables
@@ -421,13 +421,13 @@ return solution;
 
 {% cut "Как использовать входные данные как переменную в HTML-блоке?" %}
 
-Заключите входное поле в двойные фигурные скобки `{{text}}`.
+Заключите входное поле в двойные фигурные скобки `not_var{{text}}`.
 
 {% endcut %}
 
 {% cut "Как отформатированный текст из входных данных отобразить в задании?" %}
 
-Заключите входное поле в тройные фигурные скобки `{{{input_field}}}`.
+Заключите входное поле в тройные фигурные скобки `{not_var{{input_field}}}`.
 
 Подробнее об использовании компонента можно узнать в [Руководстве заказчика](../concepts/t-components/html.md).
 
@@ -461,7 +461,7 @@ return solution;
 
 {% cut "Как сделать, чтобы текст во входном поле отображался в исходном варанте с HTML-тегами?" %}
 
-Чтобы текст из входного поля отображался с HTML-тегами, можно использовать `<pre>`. Например:`<pre>{{text}}</pre>`.
+Чтобы текст из входного поля отображался с HTML-тегами, можно использовать `<pre>`. Например:`<pre>not_var{{text}}</pre>`.
 
 Так текст будет записан как есть, в одну строку со скроллом.Чтобы убрать скролл и не растягивать карточку с заданием, добавьте в блок CSS:
 

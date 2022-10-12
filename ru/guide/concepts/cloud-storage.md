@@ -3,9 +3,13 @@
 Если в задании вы используете картинки, аудио или видео, разместите их на [фотохостинге](#image-hosting) или в [облачном хранилище](#cloud), затем укажите ссылки на них в [файле с заданиями](../../glossary.md#tsv-file-definition).
 
 Если вам необходимо не более 10 изображений, например, для инструкций к заданию или тестирования пула, воспользуйтесь фотохостингом. Если картинок много или для задания необходимы аудио- и видеофайлы, разместите их в облачном хранилище.
- {% if locale == "ru-ru" %}
+
+{% if locale == "ru-ru" %}
+
 Вы можете разместить файлы на Яндекс Диске, но вам потребуется внести изменения в настройки проекта. Подробнее в разделе [Яндекс Диск](prepare-data.md).
+
 {% endif %}
+
 ## Фотохостинги {#image-hosting}
 
 Некоторые фотохостинги не требуют регистрации и размещение бесплатное. Поэтому можно просто и быстро загрузить файлы и получить ссылки на них. Но есть ограничения. Перед использованием рекомендуем ознакомиться с правилами фотохостингов.
@@ -20,15 +24,12 @@
 
 {% endnote %}
 
-
 #### Условия загрузки
 
 Фотохостинг | Максимальный размер изображения | Необходимость регистрации | Длительность пробного периода
 ----- | ----- | ----- | -----
 [imgbb]({{ imgbb }}) | 32 Мб | Нет | —
- {% if locale == "en-com" %}
-[imgur]({{ imgur }}) | 20 Мб | Да | —
-{% endif %}
+{% if locale == "en-com" %}[imgur]({{ imgur }}) | 20 Мб | Да | —{% endif %}
 [pics.st]({{ pics-st }}) | 2 Мб | Нет | —
 [postimages]({{ postimages }}) | 24 Мб | Нет | —
 [ImageShack]({{ imageshack }}) | 25 Мб | Да | 30 дней
@@ -38,10 +39,15 @@
 Например, на [imgbb]({{ imgbb }}):
 
 1. Перейдите на сайт фотохостинга.
+
 1. Нажмите {% if locale == "ru-ru" %}**Начать загрузку**{% elsif locale == "en-com" %}**Start uploading**{% endif %}.
+
 1. Выберите файлы вашем устройстве. Перед загрузкой вы сможете изменить размер изображения, добавить заголовок или описание.
+
 1. Нажмите {% if locale == "ru-ru" %}**Загрузка**{% elsif locale == "en-com" %}**Upload**{% endif %}.
+
 1. В списке {% if locale == "ru-ru" %}**Коды для встраивания**{% elsif locale == "en-com" %}**Embed codes**{% endif %} выберите {% if locale == "ru-ru" %}**HTML-код полноразмерного со ссылкой**{% elsif locale == "en-com" %}**HTML full linked**{% endif %}.
+
 1. Скопируйте ссылку, которая указана в кавычках после `src=` (например, `https://i.ibb.co/HhK1B5J/image.png`), и укажите ее в файле с заданиями.
 
 ## Облачные хранилища {#cloud}
@@ -60,7 +66,6 @@
 
 {% endnote %}
 
-
 #### Условия пробного периода
 
 Способ размещения | Длительность | Размер бесплатного хранилища | Сумма гранта | Дополнительная информация
@@ -69,7 +74,6 @@
 [Azure Blob Storage](azure-cloud-storage.md) | 12 месяцев | 5 ГБ | 200 $ в течение 30 дней | [Бесплатная учетная запись]({{ azure-free }})
 [Google Cloud Storage](google-cloud-storage.md) | 90 дней | 5 ГБ | 300 $ | [Пробный период]({{ google-cloud-free-trial }})
 [Yandex Object Storage](use-object-storage.md) | 60 дней | 5 ТБ | 50 $ | [Пробный период]({{ yandex-cloud-free-trial }})
-
 
 ## Создание файла с заданиями {#tsv-create}
 
@@ -83,7 +87,7 @@
 
 - Amazon S3
 
-  ```
+  ```plaintext
   INPUT:image
   https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
   https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png
@@ -91,7 +95,7 @@
 
 - Azure Blob Storage
 
-  ```
+  ```plaintext
   INPUT:image
   https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image1.png
   https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
@@ -99,7 +103,7 @@
 
 - Google Cloud Storage
 
-  ```
+  ```plaintext
   INPUT:image
   https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
   https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
@@ -107,7 +111,7 @@
 
 - Yandex Object Storage
 
-  ```
+  ```plaintext
   INPUT:image
   https://storage.yandexcloud.net/my-bucket/1.jpg
   https://storage.yandexcloud.net/my-bucket/2.jpg

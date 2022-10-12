@@ -38,7 +38,9 @@
           - шаблон [Классификация изображений]({{ tb-image-classification }}).
 
       1. На панели **Конфигурация** замените строки кода с 19 по 28:
+
           {% if locale == "ru-ru" %}
+
           ```json
           "label": "Какое у кота настроение?",
           "options": [
@@ -51,7 +53,9 @@
           "value": "bad"
           },
           ```
+
           {% endif %}{% if locale == "en-com" %}
+
           ```json
           "label": "What is the cat's mood?",
           "options": [
@@ -64,9 +68,13 @@
           "value": "bad"
           },
           ```
+
           {% endif %}
+
           на:
+
           {% if locale == "ru-ru" %}
+
           ```json
           "label": "Есть ли на картинке дорожные знаки?",
           "options": [
@@ -79,7 +87,9 @@
           "value": "bad"
           },
           ```
+
           {% endif %}{% if locale == "en-com" %}
+
           ```json
           "label": "Are there traffic signs in the picture?",
           "options": [
@@ -92,7 +102,9 @@
           "value": "bad"
           },
           ```
+
           {% endif %}
+
       1. Чтобы увидеть поля входных и выходных данных, нажмите **Показать спецификации**.
 
           Поля входных данных создаются из кода на вкладке **Пример входных данных**.
@@ -123,8 +135,10 @@
       1. После строки с изображением введите вопрос:
 
       1. Измените надписи на вариантах ответа: **Хорошее** → **Да**, **Плохое** → **Нет**:
+
           {% if locale == "ru-ru" %}
-          ```
+
+          ```html
           {{img src=image width="100%" height="400px"}}
           <div>Есть ли на картинке <b>дорожные знаки</b>?<div>
 
@@ -132,8 +146,10 @@
           {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
           {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}
           ```
+
           {% endif %}{% if locale == "en-com" %}
-          ```
+
+          ```html
           {{img src=image width="100%" height="400px"}}
           <div>Are there <b>traffic signs</b> in the picture?<div>
 
@@ -141,6 +157,7 @@
           {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
           {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
           ```
+
           {% endif %}
 
       1. Блоки **JS**, **CSS** и {% if locale == "ru-ru" %}**Спецификация данных**{% endif %}{% if locale == "en-com" %}**Data specification**{% endif %} оставьте без изменений.
@@ -166,22 +183,27 @@
 1. В блоке {% if locale == "ru-ru" %}**Инструкция для исполнителей**{% endif %}{% if locale == "en-com" %}**Instructions for performers**{% endif %} введите [инструкцию](../../glossary.md#task-instruction) и добавьте изображение.
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
-      ```
+
+      ```plaintext
       Посмотрите на изображение и определите, есть ли на нем **дорожные знаки**?
       Если да, нажмите **Да**.
       Если нет, нажмите **Нет**.
       Например, на изображении есть дорожные знаки, поэтому правильный ответ **Да**.
       ```
+
       {% endif %}{% if locale == "en-com" %}
-      ```
+
+      ```plaintext
       Look at the image and answer whether there are any **traffic signs** in it.
       If there are, click **Yes**.
       If there aren't, click **No**.
       For example, there are traffic signs in the image, so the correct answer is **Yes**.
       ```
+
       {% endif %}
 
     1. Чтобы добавить изображение, нажмите кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) и укажите ссылку на изображение, которое вы хотите использовать в качестве примера.
+
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
 1. В правом верхнем углу нажмите кнопку {% if locale == "ru-ru" %}**Завершить**{% endif %}{% if locale == "en-com" %}**Finish**{% endif %}
@@ -216,6 +238,7 @@
     1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Контрольные задания**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
 
     1. Задайте правило для [контрольного задания](../../glossary.md#control-task): если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %} на контрольные вопросы **≥ 3** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%)**{% endif %} на контрольные вопросы **< 60**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %} исполнителя {% if locale == "ru-ru" %}**на проекте на 10 дней**{% endif %}{% if locale == "en-com" %}**on project**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В качестве причины укажите **Контрольное задание**.
+
     {% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png){% endif %}
 
     Подробнее о контроле качества читайте в разделе [Контроль качества](control.md).
@@ -226,13 +249,12 @@
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать пул**{% endif %}{% if locale == "en-com" %}**Create a pool**{% endif %}.
 
-
 ## Загрузите задания {#upload-file}
 
 {% include [toloka-requester-source-tsv-file](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-file.md) %}
 
-
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% endif %}{% if locale == "en-com" %}**Upload**{% endif %}. В открывшемся окне вы можете скачать шаблон файла.
+
     #### Использовать пример данных
 
     Если вы хотите посмотреть, как ваш проект будет выглядеть после запуска, но у вас еще нет заданий для разметки, вы можете загрузить в пул готовый пример данных.
@@ -287,7 +309,7 @@
 
     1. Нажмите **Есть ли на фотографии дорожные знаки?**, чтобы выйти из режима [разметки заданий](../../glossary.md#task-markup).
 
-    {% note alarm %}
+    {% note alert %}
 
     В небольших пулах контрольные задания должны составлять 10-20% от всех заданий. Включайте разные варианты правильных ответов в равных количествах. Посмотрите распределение ответов на странице {% if locale == "ru-ru" %}**Разметить задания**{% endif %}{% if locale == "en-com" %}**Edit tasks**{% endif %} на вкладке {% if locale == "ru-ru" %}**Контрольные**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
 
@@ -295,12 +317,11 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note alarm %}
+    {% note alert %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
     {% endnote %}
-
 
 ## Получите результаты {#get-results}
 
@@ -321,8 +342,6 @@
 1. Когда операция завершится, скачайте файл с результатами. Для этого в столбце {% if locale == "ru-ru" %}**Файлы**{% endif %}{% if locale == "en-com" %}**Files**{% endif %} нажмите {% if locale == "ru-ru" %}**Скачать**{% endif %}{% if locale == "en-com" %}**Download**{% endif %}.
 
 1. Используйте файл с результатами во [втором проекте](image-segmentation-project2.md).
-
-
 
 ## Что дальше {#what-next}
 

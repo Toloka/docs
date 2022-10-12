@@ -6,7 +6,6 @@
 
 {% endnote %}
 
-
 Чтобы опробовать возможности [S3]({{ amazon-s3-about }}), вы можете активировать [пробный период]({{ amazon-s3-free }}).
 
 #### Условия пробного периода
@@ -14,7 +13,6 @@
 Длительность | Размер бесплатного хранилища | Сумма гранта
 ----- | ----- | -----
 12 месяцев | 5 ГБ | —
-
 
 ## Порядок действий {#workflow}
 
@@ -26,7 +24,6 @@
 1. [Создайте бакет](#create-bucket).
 1. [Загрузите файлы в бакет](#upload).
 1. [Скопируйте ссылки](#get-files).
-
 
 ## Создайте бакет {#create-bucket}
 
@@ -58,18 +55,16 @@
 
 1. Нажмите **Create bucket**.
 
-
 {% note info %}
 
 Вы можете настроить время жизни файлов в бакете, чтобы они автоматически удалялись через несколько дней. [Подробнее]({{ amazon-s3-ttl }}).
 
 {% endnote %}
 
-
-
 ## Загрузите файлы в бакет {#upload}
 
 1. В разделе **Buckets** выберите бакет.
+
 1. На вкладке **Objects** нажмите **Upload**.
 
 ![](../_images/tutorials/cloud-storage/amazon/upload.png)
@@ -102,7 +97,6 @@
 
 1. По окончании загрузки нажмите **Close**.
 
-
 ## Скопируйте ссылки {#get-files}
 
 1. Выберите загруженный файл и на вкладке **Object** нажмите **Copy URL**.
@@ -112,25 +106,37 @@
 1. Все ссылки на файлы создаются по одному шаблону.
 
     Ссылка выглядит так:
+
     {% if locale == "ru-ru" %}
-    ```
+
+    ```plaintext
     https://<имя-бакета>.s3.<код-региона>.amazonaws.com/<имя-файла>
     ```
+
     {% elsif locale == "en-com" %}
-    ```
+
+    ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
     ```
+
     {% endif %}
+
     Ссылка в папке выглядит так:
+
     {% if locale == "ru-ru" %}
-    ```
+
+    ```plaintext
     https://<имя-бакета>.s3.<код-региона>.amazonaws.com/<путь-к-файлу>/<имя-файла>
     ```
+
     {% elsif locale == "en-com" %}
-    ```
+
+    ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
     ```
+
     {% endif %}
+
     {% note info %}
 
     Чтобы быстро получить ссылки на другие файлы, скопируйте ссылку на один из них и подставьте вместо `<имя-файла>` имена других загруженных файлов.
@@ -141,11 +147,10 @@
 
     {% include [tsv-create-use-links](../_includes/concepts/cloud-storage/id-tsv-create/use-links.md) %}
 
-    ```
+    ```plaintext
     INPUT:image
     https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
     https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png
     ```
-
 
 {% include [contact-support](../_includes/contact-support-new.md) %}

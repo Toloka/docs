@@ -1,11 +1,17 @@
 # Добавление заданий в пул
 
 Чтобы добавить задания в пул:
+
 1. [Разместите файлы для заданий](cloud-storage.md).
+
 1. [Создайте файл с заданиями](pool_csv.md).
+
 1. [Загрузите задания в пул](task_upload.md).
+
     {% if locale == "ru-ru" %}
+
     Если не любите читать, посмотрите следующее видео: @[YouTube](https://www.youtube.com/embed/eHCHkepn-Pc?rel=0)
+
     {% endif %}
 
     {% note info "Ограничение" %}
@@ -22,17 +28,17 @@
 
     {% endnote %}
 
-
 ## Что дальше {#what_next}
 
 - [Добавьте обучающий пул](train.md).
-- {% if locale == "en-com" %}
-    [Пополните счет](refill.md)
-    {% endif %}{% if locale == "ru-ru" %}
-    Пополните счет:
+
+- {% if locale == "en-com" %}[Пополните счет](refill.md){% endif %}{% if locale == "ru-ru" %}Пополните счет:
+
     - [Инструкция для резидентов РФ](refill-russia.md).
     - [Инструкция для нерезидентов](refill.md).
+
     {% endif %}
+
 - [Запустите пул](pool-run-and-stop.md).
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

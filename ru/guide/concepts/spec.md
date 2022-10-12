@@ -53,13 +53,13 @@
 {% if locale == "ru-ru" %}
 
     ```html
-    <p>Прочитайте текст: {{text}}</p>
+    <p>Прочитайте текст: not_var{{text}}</p>
     ```
 
     {% endif %}{% if locale == "en-com" %}
 
     ```html
-    <p>Read the text: {{text}}</p>
+    <p>Read the text: not_var{{text}}</p>
     ```
 
     {% endif %}
@@ -73,9 +73,22 @@
 - {% if locale == "ru-ru" %}**Оформить ссылку на файл с Яндекс Диска.**
     Если элемент интерфейса будет использоваться для передачи ссылок на файлы с Яндекс Диска, в блоке HTML добавьте к названию поля входных данных слово `proxy`. В зависимости от типа элемента оформление поля будет выглядеть по разному. Например:
 
-    HTML-тег | Компонент
-    ----- | -----
-    Ссылка на аудио: | Ссылка на изображение:
+    #|
+    ||**HTML-тег**|**Компонент**||
+    ||Ссылка на аудио:
+
+    `<audio src="not_var{{audio_link}}" controls>`
+
+    **↓**
+
+    `<audio src="not_var{{proxy audio_link}}" controls>` | Ссылка на изображение:
+
+    `{{img src=image }}`
+
+    **↓**
+
+    `{{img src=(proxy image)}}`||
+    |#
 
     Подробнее в разделе [Яндекс Диск](prepare-data.md).
 
@@ -93,7 +106,7 @@
 
 - **Попросить выбрать одно из значений.** Добавьте в выходные данные поле `result` с типом **строка**. Сделайте поле обязательным и укажите допустимые значения `Yes` и `No`. Затем добавьте компонент [Переключатель](t-components/radiobuttons.md) в интерфейс задания (в блок HTML) и укажите имя поля в атрибуте `name`:
 
-{% if locale == "ru-ru" %}
+    {% if locale == "ru-ru" %}
 
     ```html
     {{field type="radio" name="result" label="Да" value="Yes" hotkey="1"}}
@@ -164,6 +177,7 @@
 - Заполнение таблицы
 
   1. Измените поля с входными данными.
+
         Чтобы сделать задание [контрольным](../../glossary.md#control-task) или [обучающим](../../glossary.md#training-task), добавьте правильные ответы и подсказку (кнопка {% if locale == "ru-ru" %}**Добавить правильные ответы**{% endif %}{% if locale == "en-com" %}**Add correct answers**{% endif %}).
 
         Для перехода к другому заданию, нажмите номер задания внизу таблицы. Чтобы удалить задание, нажмите кнопку ![](../_images/bin.svg).
@@ -331,14 +345,14 @@
 
 {% if locale == "ru-ru" %}
 
-    ```js
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: 'Вставьте ссылку или отметьте галочкой,что сайта нет'}}}}
     ```
 
     {% endif %}{% if locale == "en-com" %}
 
-    ```js
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
@@ -350,6 +364,7 @@
 {% cut "Как сделать в задании изменяющиеся варианты ответов и их количество?" %}
 
 Вы можете сделать это с помощью [конкатенации](t-components/helpers.md#concat).
+
 Посмотрите примеры проектов, которые могут помочь вам в создании интерфейса:
 
 - [с чекбоксами]({{ project-with-checkboxes }})
@@ -424,7 +439,7 @@ background-color: #000000;
 
 а в JS в onRender прописать следующее:
 
-```js
+```javascript
 onRender: function() {
 // DOM-элемент задания сформирован (доступен через #getDOMElement())
 //Добавляем служебные переменные
@@ -450,7 +465,7 @@ return solution;
 
 and include the following in onRender in your JS:
 
-```js
+```javascript
 onRender: function() {
 // Generated DOM element for the task (available via #getDOMElement())
 //Adding auxiliary variables
@@ -513,7 +528,7 @@ return solution;
 
 Если это в JS, то укажите в конце индекс:
 
-```js
+```javascript
 this.getTask().input_values['name'][2]solution.output_values['result'][2]
 ```
 
@@ -567,13 +582,13 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 
 {% cut "Как использовать входные данные как переменную в HTML-блоке?" %}
 
-Заключите входное поле в двойные фигурные скобки `{{text}}`.
+Заключите входное поле в двойные фигурные скобки `not_var{{text}}`.
 
 {% endcut %}
 
 {% cut "Как отформатированный текст из входных данных отобразить в задании?" %}
 
-Заключите входное поле в тройные фигурные скобки `{{{input_field}}}`.
+Заключите входное поле в тройные фигурные скобки `{not_var{{input_field}}}`.
 
 Подробнее об использовании компонента можно узнать в [Руководстве заказчика](t-components/html.md).
 
@@ -587,7 +602,7 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 
 {% cut "Как сделать, чтобы текст во входном поле отображался в исходном варанте с HTML-тегами?" %}
 
-Чтобы текст из входного поля отображался с HTML-тегами, можно использовать `<pre>`. Например:`<pre>{{text}}</pre>`.
+Чтобы текст из входного поля отображался с HTML-тегами, можно использовать `<pre>`. Например:`<pre>not_var{{text}}</pre>`.
 
 Так текст будет записан как есть, в одну строку со скроллом.Чтобы убрать скролл и не растягивать карточку с заданием, добавьте в блок CSS:
 
@@ -618,7 +633,7 @@ pre {
 
 Попробуйте добавить условие на наличие второй шкалы:
 
-```js
+```javascript
 setSolution: function(solution) {
 var secondScale = this.getDOMElement().querySelector('.second-scale');
 
@@ -660,7 +675,7 @@ TolokaHandlebarsTask.prototype.setSolution.call(this, solution);
 
 Чтобы добавить горячую клавишу, в методе onKey пропишите следующее действие:
 
-```js
+```javascript
 onKey: function(key) {
           var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 

@@ -41,24 +41,26 @@
 
           - Поля входных данных:
 
-          - `image` — ссылка для загрузки изображения исходного товара;
-          - `left_link` — ссылка для левой кнопки на товар в интернет-магазине;
-          - `right_link` — ссылка для правой кнопки на товар в интернет-магазине.
+            - `image` — ссылка для загрузки изображения исходного товара;
+            - `left_link` — ссылка для левой кнопки на товар в интернет-магазине;
+            - `right_link` — ссылка для правой кнопки на товар в интернет-магазине.
 
           - Поле выходных данных: `result` — строка, в которую будет записан ответ исполнителя.
 
     - Редактор HTML/CSS/JS
 
       1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
+
           {% if locale == "ru-ru" %}
-          ```
+
+          ```html
           <div class="header">
           <div class="left caption">
           {{button label="Перейдите на сайт" href=uploaded_link_left size="L"}}
-          <p class="url">{{uploaded_link_left}}</p>
+          <p class="url">not_var{{uploaded_link_left}}</p>
           </div>
           <div class="right caption">
-          <p class="url">{{uploaded_link_right}}</p>
+          <p class="url">not_var{{uploaded_link_right}}</p>
           {{button label="Перейдите на сайт" href=uploaded_link_right  size="L"}}
           </div>
           </div>
@@ -79,15 +81,17 @@
           {{field type="radio" name="result" label="Правое изображение лучше" value="result_right" hotkey="2"}}
           </div>
           ```
+
           {% endif %}{% if locale == "en-com" %}
-          ```
+
+          ```html
           <div class="header">
           <div class="left caption">
           {{button label="Go to site" href=uploaded_link_left size="L"}}
-          <p class="url">{{uploaded_link_left}}</p>
+          <p class="url">not_var{{uploaded_link_left}}</p>
           </div>
           <div class="right caption">
-          <p class="url">{{uploaded_link_right}}</p>
+          <p class="url">not_var{{uploaded_link_right}}</p>
           {{button label="Go to site" href=uploaded_link_right  size="L"}}
           </div>
           </div>
@@ -108,16 +112,18 @@
           {{field type="radio" name="result" label="Right image is better" value="result_right" hotkey="2"}}
           </div>
           ```
+
           {% endif %}
+
       1. В блоке **JS** отредактируйте код, добавив следующие строки до строки `OnRender`.
-         
-          {% note alarm %}
+
+          {% note alert %}
 
           Не удаляйте существующий код.
 
           {% endnote %}
 
-          ```
+          ```javascript
           getTemplateData: function() {
           var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments),
           input = this.getTask().input_values;
@@ -144,7 +150,7 @@
 
       1. В блок **CSS** вставьте следующий код, отвечающий за установку пропорционального размера изображения.
 
-          ```
+          ```css
           .task {
           display: block;
           text-align:center;
@@ -213,7 +219,7 @@
 
       1. В поле **Входные данные** введите:
 
-          ```
+          ```json
           {
           "image": {
           "type": "url",
@@ -235,7 +241,7 @@
 
       1. В поле **Выходные данные** введите:
 
-          ```
+          ```json
           {
           "result": {
           "type": "url",
@@ -264,23 +270,26 @@
 1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction).
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
-    ```
-    Посмотрите на две фотографии с разной обувью и решите, какая пара обуви больше похожа на исходную пару.
-    Используйте свое собственное чувство стиля, но помните, что обувь будет выглядеть одинаково, если
-    она похожа по цвету, материалу, длине и стилю.
-    ```
-    {% endif %}{% if locale == "en-com" %}
-    ```
-    Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
-    Rely on your own sense of style, but also remember that the shoes look alike if
-    they are the same color, fabric, length, and style.
-    ```
-    {% endif %}
+
+        ```plaintext
+        Посмотрите на две фотографии с разной обувью и решите, какая пара обуви больше похожа на исходную пару.
+        Используйте свое собственное чувство стиля, но помните, что обувь будет выглядеть одинаково, если
+        она похожа по цвету, материалу, длине и стилю.
+        ```
+
+        {% endif %}{% if locale == "en-com" %}
+
+        ```plaintext
+        Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
+        Rely on your own sense of style, but also remember that the shoes look alike if
+        they are the same color, fabric, length, and style.
+        ```
+
+        {% endif %}
 
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
 1. {% include [toloka-requester-source-end-edit](../_includes/toloka-requester-source/id-toloka-requester-source/end-edit.md) %}
-
 
 Подробнее о работе с проектом читайте в разделе [Проект](project.md).
 
@@ -340,7 +349,6 @@
 
 1. Нажмите кнопку **Создать пул**.
 
-
 ## Загрузите задания {#upload_file}
 
 1. Скачайте файл, полученный в [третьем проекте](item_look_similar.md).
@@ -365,12 +373,11 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note alarm %}
+    {% note alert %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
     {% endnote %}
-
 
 ## Получите результаты {#get_results}
 
@@ -384,10 +391,9 @@
 
 1. Отключите опцию **Разделять ответы пустой строкой**.
 
-![](../_images/tutorials/image-segmentation/wsdm-tutorial-part4-2.png)
+    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part4-2.png)
 
 1. Попробуйте использовать [модель Брэдли-Терри](https://en.wikipedia.org/wiki/Bradley–Terry_model) на полученных результатах. Для примера используйте наши результаты [https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb](https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb).
-
 
 ## Что дальше {#what-next}
 

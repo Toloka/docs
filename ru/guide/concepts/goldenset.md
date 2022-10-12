@@ -8,7 +8,6 @@
 
 {% endnote %}
 
-
 ## Когда использовать {#when-use}
 
 Используйте контрольные задания, чтобы устанавливать исполнителю [навык](../../glossary.md#skill) на основе его ответов и [блокировать](../../glossary.md#banned-worker) доступ исполнителям, которые дают неправильные ответы.
@@ -23,7 +22,7 @@
 
 ## Как настроить {#rule-golden}
 
-{% note alarm %}
+{% note alert %}
 
 Поля {% if locale == "ru-ru" %}**Если**{% endif %}{% if locale == "en-com" %}**If**{% endif %} и {% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %} в этом правиле — обязательные. Если не заполнить хотя бы одно, правило сохранить не получится.
 
@@ -39,7 +38,9 @@
 
 Подробнее об этом параметре см. в разделе [Параметр «Помнить значений»](remember-values.md).||
 ||{% if locale == "ru-ru" %}**Если**{% endif %}{% if locale == "en-com" %}**If**{% endif %} | Условие, при котором выполняется действие в поле {% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %}:
+
 - {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %} — количество выполненных [обучающих](../../glossary.md#training-task) и контрольных заданий;
+
 - {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%)**{% endif %} — доля правильных ответов на контрольные и обучающие задания (от 0 до 100);
 
 - {% if locale == "ru-ru" %}**процент неправильных ответов**{% endif %}{% if locale == "en-com" %}**incorrect responses (%)**{% endif %} — доля неправильных ответов на контрольные и обучающие задания (от 0 до 100);
@@ -80,9 +81,7 @@
 
 - [Заблокировать при доле правильных ответов на контрольные задания меньше 40%](goldenset.md#qcr-control_example3)
 
-
 {% include [ban-banned-user-answers-note](../_includes/concepts/ban/id-ban/banned-user-answers-note.md) %}
-
 
 #### Заблокировать на основе контрольных заданий и доли правильных ответов
 
@@ -90,34 +89,44 @@
 
 - Правильная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example1_1.png)
-  ![](../_images/control-rules/control-tasks/qcr-control_example1_2.png)
+  ![](../_images/control-rules/control-tasks/qcr-control_example1_1.png =700x)
+
+  ![](../_images/control-rules/control-tasks/qcr-control_example1_2.png =700x)
 
   Оба правила работают независимо:
 
   1. Если исполнитель дал не меньше 3 ответов на контрольные задания, то доля правильных ответов будет записана как значение навыка. Это будет полезно в том случае, если вы хотите запретить исполнителям с низким навыком выполнять ваши задания.
+
   1. Если исполнитель дал не меньше 3 ответов на контрольные задания и доля правильных ответов меньше 60%, то он будет заблокирован на проекте.
 
   В расчете используется не более 10 последних ответов исполнителя на контрольные задания в рамках проекта.
 
 - Неправильная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example-1_1.png =700x300)
-  ![](../_images/control-rules/control-tasks/qcr-control_example-1_2.png)
+  ![](../_images/control-rules/control-tasks/qcr-control_example-1_1.png =700)
+
+  ![](../_images/control-rules/control-tasks/qcr-control_example-1_2.png =700x)
 
   Исполнитель будет заблокирован, когда даст первый неправильный ответ на первое, второе или третье контрольное задание. При этом навык не будет установлен. Поскольку причина блокировки не указана, будет невозможно выяснить, почему исполнитель заблокирован.
 
 - Альтернативная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example2a_1.png)
-  ![](../_images/control-rules/control-tasks/qcr-control_example2a_2.png)
-  ![](../_images/control-rules/control-tasks/qcr-control_example2a_3.png)
-  ![](../_images/control-rules/control-tasks/qcr-control_example2a_4.png)
+  ![](../_images/control-rules/control-tasks/qcr-control_example2a_1.png =700x)
+
+  ![](../_images/control-rules/control-tasks/qcr-control_example2a_2.png =700x)
+
+  ![](../_images/control-rules/control-tasks/qcr-control_example2a_3.png =700x)
+
+  ![](../_images/control-rules/control-tasks/qcr-control_example2a_4.png =700x)
 
   Все правила действуют независимо:
+
   1. Если исполнитель дал не меньше 3 ответов на контрольные и обучающие задания, то доля правильных ответов будет записана как значение навыка.
+
   1. Если исполнитель дал 2 неправильных ответа на 3 контрольных задания, то он будет заблокирован в пуле на 10 дней.
+
   1. Если исполнитель дал 2 неправильных ответа на 4 контрольных задания, то он будет заблокирован в пуле на 10 дней.
+
   1. Если исполнитель дал 5 или больше ответов на контрольные задания и доля правильных ответов меньше 80%, то он будет заблокирован в пуле на 10 дней.
 
   Такой набор правил позволяет не блокировать исполнителей за один неправильный ответ и поддерживать высокую точность.
@@ -132,7 +141,7 @@
 
 - Правильная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example2.png)
+  ![](../_images/control-rules/control-tasks/qcr-control_example2.png =700x)
 
   Если исполнитель ответит на 3 контрольных или обучающих задания, ему будет установлен навык. Используйте значение навыка для доступа к другому пулу с помощью [фильтра](filters.md).
 
@@ -144,7 +153,7 @@
 
 - Неправильная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example-2.png)
+  ![](../_images/control-rules/control-tasks/qcr-control_example-2.png =700x)
 
   Это правило никогда не начнет действовать, потому что количество учитываемых ответов ({% if locale == "ru-ru" %}**Учитывать последних ответов на контрольные и обучающие задания**{% endif %}{% if locale == "en-com" %}**Recent control and training task responses to use**{% endif %}) меньше числа ответов в правиле ({% if locale == "ru-ru" %}**количество контрольных ответов**{% endif %}{% if locale == "en-com" %}**number of control responses**{% endif %}).
 
@@ -156,7 +165,7 @@
 
 - Правильная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example3.png)
+  ![](../_images/control-rules/control-tasks/qcr-control_example3.png =700x)
 
   Если доля правильных ответов на контрольные задания меньше 40%, то исполнитель будет заблокирован на проекте на 30 дней.
 
@@ -164,7 +173,7 @@
 
 - Неправильная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example-3.png)
+  ![](../_images/control-rules/control-tasks/qcr-control_example-3.png =700x)
 
   Если доля правильных ответов на контрольные задания меньше 40%, то исполнитель будет заблокирован на проекте на 30 дней. Правило cработает один раз — сразу после пятого ответа на контрольное задание.
 

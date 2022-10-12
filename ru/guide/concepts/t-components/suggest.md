@@ -2,8 +2,8 @@
 
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-
 Саджест — это текстовые подсказки, которые отображаются, когда исполнитель устанавливает курсор в поле ввода строки. Подсказки могут быть:
+
 - одинаковыми во всех заданиях;
 - своими в каждом задании.
 
@@ -16,6 +16,7 @@
       {% cut "Пример 1" %}
 
       {% if locale == "ru-ru" %}
+
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -47,7 +48,9 @@
       return constructorFunction;
       }
       ```
+
       {% endif %}{% if locale == "en-com" %}
+
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -78,6 +81,7 @@
       return constructorFunction;
       }
       ```
+
       {% endif %}
 
       {% endcut %}
@@ -85,6 +89,7 @@
       {% cut "Пример 2" %}
 
       {% if locale == "ru-ru" %}
+
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -114,7 +119,9 @@
       return constructorFunction;
       }
       ```
+
       {% endif %}{% if locale == "en-com" %}
+
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -143,13 +150,14 @@
       return constructorFunction;
       }
       ```
+
       {% endif %}
 
       {% endcut %}
 
   1. Добавьте в блок **HTML** компонент `{{field type="suggest" name="<название [выходного поля](../incoming.md)>" source=<название массива>}}`. Пример:
 
-      ```no-highlight
+      ```plaintext
       {{field type="suggest" name="result" source=countries allowCustomInput=true}}
       ```
 
@@ -157,13 +165,13 @@
 
   1. Добавьте в блок **HTML** компонент `{{field type="suggest" name="<название [выходного поля](../incoming.md)>" source=<название [входного поля](../incoming.md)>}}`. Пример:
 
-      ```no-highlight
+      ```plaintext
       {{field type="suggest" name="result" source=countries allowCustomInput=true}}
       ```
 
   1. Добавьте поле с типом массив строк в описании входных данных. Например:
 
-      ```
+      ```json
       {
       "counries": {
       "type": "array_string",
@@ -191,11 +199,17 @@
 ||`source` | Название массива строк с подсказками. Например: `source=countries`. Массив определяется в JS-коде проекта (метод `getTemplateData`). | да | нет||
 ||`allowCustomInput` | Возможность для исполнителя игнорировать подсказки и ввести свою строку. | нет | `false`||
 ||`validation-show` | Расположение всплывающих подсказок (отображаются, если ответ не прошел валидацию). Расположение указывается относительно поля ввода.
+
 Допустимые значения:
+
 - Над полем ввода: `"top-left"` (слева), `"top-center"` (посередине), `"top-right"` (справа).
+
 - Под полем ввода: `"bottom-left"` (слева), `"bottom-center"` (посередине), `"bottom-right"` (справа).
+
 - Слева от поля ввода: `"left-top"` (сверху), `"left-center"` (посередине), `"left-bottom"` (внизу).
+
 - Справа от поля ввода: `"right-top"` (сверху), `"right-center"` (посередине), `"right-bottom"` (внизу).
+
 - Не показывать сообщение (`"false"`). | нет | `"top-left"`||
 ||`placeholder` | Текст, отображаемый в пустом поле ввода.
 

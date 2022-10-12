@@ -25,51 +25,51 @@ h3 {
 <div class="grid-container">
     <div class="grid-item">
         <h2>С чего начать</h2>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/overview.html">Как устроена Толока</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/unwanted.html">Какие задания нельзя размещать в Толоке</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/access.html">Регистрация</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/first-project.html">Первый проект</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/data-security.html">Безопасность данных</a></p>
+        <p><a href="guide/concepts/overview">Как устроена Толока</a></p>
+        <p><a href="guide/concepts/unwanted">Какие задания нельзя размещать в Толоке</a></p>
+        <p><a href="guide/concepts/access">Регистрация</a></p>
+        <p><a href="guide/concepts/first-project">Первый проект</a></p>
+        <p><a href="guide/concepts/data-security">Безопасность данных</a></p>
     </div>
     <div class="grid-item">
         <h2>Туториалы</h2>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/categorization.html">Изображения</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/video-moderation.html">Видео</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/transcript-audio.html">Аудио</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/content-moderation.html">Тексты</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/questionnaire.html">Обогащение данных</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/walk.html">Полевые задачи</a></p>
+        <p><a href="guide/concepts/categorization">Изображения</a></p>
+        <p><a href="guide/concepts/video-moderation">Видео</a></p>
+        <p><a href="guide/concepts/transcript-audio">Аудио</a></p>
+        <p><a href="guide/concepts/content-moderation">Тексты</a></p>
+        <p><a href="guide/concepts/questionnaire">Обогащение данных</a></p>
+        <p><a href="guide/concepts/walk">Полевые задачи</a></p>
     </div>
     <div class="grid-item">
         <h2>Проекты</h2>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/project.html">Создание проекта</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/pool-main.html">Управление пулами</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/task_upload.html">Размещение заданий</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/result-of-eval.html">Получение результатов</a></p>
+        <p><a href="guide/concepts/project">Создание проекта</a></p>
+        <p><a href="guide/concepts/pool-main">Управление пулами</a></p>
+        <p><a href="guide/concepts/task_upload">Размещение заданий</a></p>
+        <p><a href="guide/concepts/result-of-eval">Получение результатов</a></p>
     </div>
     <div class="grid-item">
         <h2>Интерфейс задания</h2>
         <p><a href="template-builder/">Конструктор шаблонов</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/spec.html">Редактор HTML/CSS/JS</a></p>
+        <p><a href="guide/concepts/spec">Редактор HTML/CSS/JS</a></p>
         <p></p>
         <h2>Настройки Толоки</h2>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/users.html">Пользователи</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/nav.html">Навыки</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/budget.html">Профиль</a></p>
+        <p><a href="guide/concepts/users">Пользователи</a></p>
+        <p><a href="guide/concepts/nav">Навыки</a></p>
+        <p><a href="guide/concepts/budget">Профиль</a></p>
     </div>
     <div class="grid-item">
         <h2>Советы и рекомендации</h2>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/sandbox.html">Песочница</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/cloud-storage.html">Хранение данных</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/control.html">Правила контроля качества</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/train.html">Добавление обучения</a></p>
+        <p><a href="guide/concepts/sandbox">Песочница</a></p>
+        <p><a href="guide/concepts/cloud-storage">Хранение данных</a></p>
+        <p><a href="guide/concepts/control">Правила контроля качества</a></p>
+        <p><a href="guide/concepts/train">Добавление обучения</a></p>
     </div>
     <div class="grid-item">
         <h2>Решение проблем и поддержка</h2>
-        <p><a href="https://toloka.ai/ru/docs/guide/concepts/frequent-customer-errors.html">Частые ошибки заказчиков</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/troubleshooting/troubleshooting.html">Все вопросы на одной странице</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/glossary.html">Глоссарий</a></p>
-        <p><a href="https://toloka.ai/ru/docs/guide/troubleshooting/support.html">Служба поддержки</a></p>
+        <p><a href="guide/concepts/frequent-customer-errors">Частые ошибки заказчиков</a></p>
+        <p><a href="guide/troubleshooting/troubleshooting">Все вопросы на одной странице</a></p>
+        <p><a href="glossary">Глоссарий</a></p>
+        <p><a href="guide/troubleshooting/support">Служба поддержки</a></p>
     </div>
 </div>
 

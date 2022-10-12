@@ -4,7 +4,8 @@
 
 - [Все вопросы на одной странице](troubleshooting.md)
 
-- {% if locale == "en-com" %}[Присоединиться к нам в Slack](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg){% endif %}
+{% if locale == "en-com" %}
+- [Присоединиться к нам в Slack](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg){% endif %}
 
 {% cut "Получить первичную консультацию" %}
 

@@ -56,7 +56,7 @@
 
 Чтобы добавить горячую клавишу, в методе onKey пропишите следующее действие:
 
-```js
+```javascript
 onKey: function(key) {
     var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 

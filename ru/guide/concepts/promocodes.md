@@ -1,6 +1,7 @@
 # Промокоды
 
 Чтобы активировать промокод:
+
 1. На странице [Профиль]({{ profile }}) нажмите кнопку {% if locale == "ru-ru" %}**Ввести промокод**{% endif %}{% if locale == "en-com" %}**Enter promo code**{% endif %}.
 
     ![](../_images/promocodes/find-promocode.png)
@@ -16,6 +17,5 @@
 Один и тот же промокод нельзя активировать дважды.
 
 {% endnote %}
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

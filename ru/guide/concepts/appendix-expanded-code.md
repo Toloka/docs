@@ -1,4 +1,4 @@
-# ****Приложение:** полный код всех проектов**
+# Приложение: полный код всех проектов
 
 ## Проект 1. Содержит ли фотография определенный объект? {#section_yj4_rny_tkb}
 
@@ -7,7 +7,7 @@
 #|
 ||**Входные данные:**|**Выходные данные:**||
 ||
-```html 
+```json
 {
   "image": {
     "type": "url",
@@ -15,9 +15,9 @@
     "required": true
   }
 }
-``` 
+```
 |
-```html
+```json
 {
   "result": {
     "type": "string",
@@ -29,9 +29,10 @@
 ||
 |#
 
-
 Блок **HTML:**
- {% if locale == "ru-ru" %}
+
+{% if locale == "ru-ru" %}
+
 ```html
 {{img src=image width="100%" height="400px"}}
 <div>Есть ли <b>обувь</b> на картинке?<div>
@@ -39,14 +40,18 @@
 {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
 {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}</div>
 ```
+
 {% endif %}{% if locale == "en-com" %}
+
 ```html
 {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
 <div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
 {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
 {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
 ```
+
 {% endif %}
+
 Блок **JavaScript:**
 
 ```javascript
@@ -81,7 +86,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 #|
 ||**Входные данные:**|**Выходные данные:**||
 ||
-```html 
+```json
 {
   "image": {
     "type": "url",
@@ -89,9 +94,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     "required": true
   }
 }
-``` 
+```
 |
-```html
+```json
 {
   "button": {
     "type": "boolean",
@@ -117,9 +122,10 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ||
 |#
 
-
 Блок **HTML:**
- {% if locale == "ru-ru" %}
+
+{% if locale == "ru-ru" %}
+
 ```html
 {{img src=image width="50%" height="400px"}}
 <div class='answers'>
@@ -134,7 +140,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
  </div>
 </div>
 ```
+
 {% endif %}{% if locale == "en-com" %}
+
 ```html
 {{img src=image width="50%" height="400px"}}
 <div class='answers'>
@@ -149,7 +157,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
  </div>
 </div>
 ```
+
 {% endif %}
+
 Блок **JavaScript:**
 
 ```javascript
@@ -195,7 +205,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 Блок **CSS:**
 
-```
+```css
 .task {
     display: block;
     height: 500px;
@@ -253,9 +263,10 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ||
 |#
 
-
 Блок **HTML:**
- {% if locale == "ru-ru" %}
+
+{% if locale == "ru-ru" %}
+
 ```html
 {{img src=image height="400px"}} {{iframe src= found_link height="600px"}}
 <p>Убедитесь, что загруженное изображение соответствует товару из магазина.</p>
@@ -265,7 +276,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 {{field type="radio" name="result" value="Yes" label="Да"}}
 {{field type="radio" name="result" value="No" label="Нет"}}
 ```
+
 {% endif %}{% if locale == "en-com" %}
+
 ```html
 {{img src=image height="400px"}} {{iframe src= found_link height="600px"}}
 <p>Check that the uploaded image matches the product in the store.</p>
@@ -275,7 +288,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 {{field type="radio" name="result" value="Yes" label="Yes"}}
 {{field type="radio" name="result" value="No" label="No"}}
 ```
+
 {% endif %}
+
 Блок **JavaScript:**
 
 ```javascript
@@ -304,7 +319,8 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ```
 
 Блок **CSS:**
-```
+
+```css
 .task {
     display: block;
 }
@@ -359,25 +375,26 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ||
 |#
 
-
 Блок **HTML:**
- {% if locale == "ru-ru" %}
+
+{% if locale == "ru-ru" %}
+
 ```html
 <div class="header">
-    <div class="left caption"> {{button label="Перейдите на сайт" href=left_link size="L"}}
-    <p class="url">{{left_link}}</p>
+    <div class="left caption"> {{ button label="Перейдите на сайт" href=left_link size="L"}}
+    <p class="url">not_var{{left_link}}</p>
     </div>
     <div class="right caption">
-        <p class="url">{{right_link}}</p>
-        {{button label="Перейдите на сайт" href=right_link size="L"}}
+        <p class="url">not_var{{right_link}}</p>
+        {{ button label="Перейдите на сайт" href=right_link size="L"}}
     </div>
 </div> {{img src=image}}
 <div class="content clearfix">
     <div class="left page">
-        {{iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
+        {{ iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
     </div>
     <div class="right page">
-        {{iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
+        {{ iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
     </div>
 </div>
 <div class="footer">
@@ -385,23 +402,25 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{field type="radio" name="result" label="Правое изображение лучше" value=result_right hotkey="2"}}
 </div>
 ```
+
 {% endif %}{% if locale == "en-com" %}
+
 ```html
 <div class="header">
-    <div class="left caption"> {{button label="Go to site" href=left_link size="L"}}
-        <p class="url">{{left_link}}</p>
+    <div class="left caption"> {{ button label="Go to site" href=left_link size="L"}}
+        <p class="url">not_var{{left_link}}</p>
     </div>
     <div class="right caption">
-        <p class="url">{{right_link}}</p>
-        {{button label="Go to site" href=right_link size="L"}}
+        <p class="url">not_var{{right_link}}</p>
+        {{ button label="Go to site" href=right_link size="L"}}
     </div>
 </div> {{img src=image}}
 <div class="content clearfix">
     <div class="left page">
-        {{iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
+        {{ iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
     </div>
     <div class="right page">
-        {{iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
+        {{ iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
     </div>
 </div>
 <div class="footer">
@@ -409,7 +428,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{field type="radio" name="result" label="Right image is better" value=result_right hotkey="2"}}
 </div>
 ```
+
 {% endif %}
+
 Блок **JavaScript:**
 
 ```javascript
@@ -461,7 +482,8 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ```
 
 Блок **CSS:**
-```
+
+```css
 .task {
     display: block;
     text-align: center;

@@ -41,7 +41,9 @@
           - шаблон [Классификация изображений]({{ tb-image-classification }}).
 
       1. На панели **Конфигурация** замените строки кода с 19 по 28:
+
           {% if locale == "ru-ru" %}
+
           ```json
           "label": "Какое у кота настроение?",
           "options": [
@@ -54,7 +56,9 @@
           "value": "bad"
           },
           ```
+
           {% endif %}{% if locale == "en-com" %}
+
           ```json
           "label": "What is the cat's mood?",
           "options": [
@@ -67,9 +71,13 @@
           "value": "bad"
           },
           ```
+
           {% endif %}
+
           на следующие:
+
           {% if locale == "ru-ru" %}
+
           ```json
           "label": "Есть ли обувь на картинке?",
           "options": [
@@ -82,7 +90,9 @@
           "value": "bad"
           },
           ```
+
           {% endif %}{% if locale == "en-com" %}
+
           ```json
           "label": "Are there shoes in the image?",
           "options": [
@@ -95,12 +105,14 @@
           "value": "bad"
           },
           ```
+
           {% endif %}
+
       1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 
           - Поле входных данных: `image` — ссылка для загрузки картинки.
 
-          Измените тип данных на строку, чтобы использовать ссылки на свои файлы{% if locale == "ru-ru" %} или [загружать картинки](prepare-data.md#interface), хранящиеся на Яндекс Диске{% endif %}.
+            Измените тип данных на строку, чтобы использовать ссылки на свои файлы{% if locale == "ru-ru" %} или [загружать картинки](prepare-data.md#interface), хранящиеся на Яндекс Диске{% endif %}.
 
           - Поле выходных данных: `result — строка`, в которую будет записан ответ исполнителя.
 
@@ -121,8 +133,10 @@
               `<div>Есть ли <b>обувь</b> на картинке?<div>`
 
           - Измените надписи на вариантах ответа: **Хорошее** → **Да**, **Плохое** → **Нет**:
+
           {% if locale == "ru-ru" %}
-          ```
+
+          ```html
           {{img src=image width="100%" height="400px"}}
           <div>Есть ли <b>обувь</b> на картинке?<div>
 
@@ -130,14 +144,17 @@
           {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
           {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}
           ```
+
           {% endif %}{% if locale == "en-com" %}
-          ```
+
+          ```html
           {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
 
           {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
           {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
           {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
           ```
+
           {% endif %}
 
       1. Блоки **JS**, **CSS** и **Спецификация данных** оставьте без изменений.
@@ -161,19 +178,23 @@
 1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction) и добавьте изображение.
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
-    ```
+
+    ```plaintext
     Посмотрите на картинку и определите, есть ли на фотографии **обувь**.
     Если есть, нажмите **Да**.
     Если нет, нажмите **Нет**.
     Например, на фотографии есть обувь, поэтому правильный ответ **Да**.
     ```
+
     {% elsif locale == "en-com" %}
-    ```
+
+    ```plaintext
     Look at the picture and determine if there are **shoes** in the picture.
     If there are, click **Yes**.
     If there aren't, click **No**.
     For example, there are shoes in the photo, so the correct answer is **Yes**.
     ```
+
     {% endif %}
 
     1. Чтобы добавить изображение, нажмите кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) и укажите ссылку на изображение, которое вы хотите использовать в качестве примера.
@@ -181,7 +202,6 @@
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
 1. {% include [toloka-requester-source-end-edit](../_includes/toloka-requester-source/id-toloka-requester-source/end-edit.md) %}
-
 
 Подробнее о работе с проектом читайте в разделе [проект](project.md).
 
@@ -231,11 +251,9 @@
 
 1. Нажмите кнопку **Создать пул**.
 
-
 ## Загрузите задания {#upload_file}
 
 {% include [toloka-requester-source-tsv-file](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-file.md) %}
-
 
 Чтобы загрузить задания:
 
@@ -285,12 +303,11 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note alarm %}
+    {% note alert %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
     {% endnote %}
-
 
 ## Получите результаты {#get_results}
 
@@ -313,8 +330,6 @@
 1. Когда операция завершится, скачайте файл с результатами. Для этого в столбце **Файлы** нажмите **Скачать**.
 
 1. Используйте файл с результатами во [втором проекте](find_an_item_in_store.md).
-
-
 
 ## Что дальше {#what-next}
 

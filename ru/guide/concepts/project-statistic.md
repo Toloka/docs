@@ -20,8 +20,11 @@
 ||{% if locale == "ru-ru" %}**Задания**{% endif %}{% if locale == "en-com" %}**Assignments**{% endif %} | На графике показано количество заданий по типам:
 
 - {% if locale == "ru-ru" %}**Отправлено на проверку**{% endif %}{% if locale == "en-com" %}**Submitted**{% endif %} — количество страниц заданий, отправленных на проверку по всем пулам.
+
 - {% if locale == "ru-ru" %}**Принятые**{% endif %}{% if locale == "en-com" %}**Accepted**{% endif %} — количество принятых страниц заданий по всем пулам.
+
 - {% if locale == "ru-ru" %}**Пропущенные**{% endif %}{% if locale == "en-com" %}**Skipped**{% endif %} — количество страниц заданий, [пропущенных исполнителями](pool_statistic-pool.md#skipped-tasks).
+
 - {% if locale == "ru-ru" %}**Просроченные**{% endif %}{% if locale == "en-com" %}**Expired**{% endif %} — число страниц заданий, у которых истек срок выполнения. Учитываются страницы, которые исполнители не смогли выполнить вовремя или отказались от их выполнения.
 
 **Рекомендации**
@@ -50,6 +53,7 @@
 ||{% if locale == "ru-ru" %}**Затраты (комиссия не включена)**{% endif %}{% if locale == "en-com" %}**Spending (excluding fee)**{% endif %} | На графике показана сумма потраченных средств без учета комиссии:
 
 - {% if locale == "ru-ru" %}**Затраты на бонусы**{% endif %}{% if locale == "en-com" %}**Spending on bonuses**{% endif %} — сумма средств, потраченных на бонусы.
+
 - {% if locale == "ru-ru" %}**Затраты на задания**{% endif %}{% if locale == "en-com" %}**Spending on assingments**{% endif %} — сумма средств, потраченных на задания.||
 ||{% if locale == "ru-ru" %}**Средняя стоимость задания**{% endif %}{% if locale == "en-com" %}**Average task price**{% endif %} | Средняя цена разметки одного основного задания в проекте в долларах США с учетом перекрытия.
 

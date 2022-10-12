@@ -50,8 +50,10 @@
     - Редактор HTML/CSS/JS
 
       1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
+
           {% if locale == "ru-ru" %}
-          ```
+
+          ```html
           {{img src=image width="50%" height="400px"}}
           <div class='answers'>
           <p>Найти похожую <b>обувь</b> в интернет-магазине ASOS</p>
@@ -65,8 +67,10 @@
           </div>
           </div>
           ```
+
           {% endif %}{% if locale == "en-com" %}
-          ```
+
+          ```html
           {{img src=image width="50%" height="400px"}}
           <div class='answers'>
           <p>Find similar shoes <b>shoes</b> in the ASOS online store</p>
@@ -79,7 +83,9 @@
           </div>
           </div>
           ```
+
           {% endif %}
+
       1. Чтобы проверить корректность ссылки и изображения, предоставленных исполнителем, в 5-ой сроке блока **JS** замените следующий код:
 
           `if (!solution.output_values.image && !solution.output_values.no_image) {`
@@ -96,7 +102,7 @@
 
       1. Удалите шаблонный код из блока **CSS** и вставьте следующий код, отвечающий за установку пропорционального размера изображения.
 
-          ```
+          ```css
           .task {
           display: block;
           height: 500px;
@@ -119,7 +125,7 @@
 
           1. В поле **Входные данные** введите:
 
-          ```
+          ```json
           {
           "image": {
           "type": "url",
@@ -137,7 +143,7 @@
 
           {% endnote %}
 
-          ```
+          ```json
           {
           "button": {
           "type": "boolean",
@@ -180,23 +186,26 @@
 1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction-ru).
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
-    ```
+
+    ```plaintext
     Посмотрите на одежду, в которую человек одет на фотографии.
     Перейдите в интернет-магазин ASOS и найдите такую же пару обуви.
     Она должна быть похожа по категории, стилю, цвету и длине.
     ```
+
     {% endif %}{% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     Look at what the person is wearing in the picture.
     Then go to the ASOS online store and search for the same pair of shoes.
     It should be similar in category, style, color, and length.
     ```
+
     {% endif %}
 
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
 1. {% include [toloka-requester-source-end-edit](../_includes/toloka-requester-source/id-toloka-requester-source/end-edit.md) %}
-
 
 Подробнее о работе с проектом читайте в разделе [Проект](project.md).
 
@@ -247,13 +256,16 @@
     1. Найдите в списке блок **Правила** и выберите пункт **Обработка отклонённых и принятых заданий**.
 
     1. Задайте правило для отклоненного задания: если **задание становится отклоненным**, то **увеличить перекрытие** на **1**. А также включите опцию **Открыть пул, если закрыт**:
-    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-1.png)
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-1.png)
+
     1. Добавьте еще один блок контроля качества. Нажмите **Добавить правило контроля качества**.
 
     1. Найдите в списке блок **Правила** и выберите пункт **Выполненные задания**.
 
     1. Задайте правило для выполненного задания: если **отправленных страниц заданий****больше или равно 1**, то **установить значение навыка****Found_shoes** равным **1**.
-    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-2.png)
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-2.png)
 
     {% note info %}
 
@@ -266,7 +278,6 @@
 1. В разделе **Перекрытие задания** в поле **Количество исполнителей, которые должны выполнить каждое задание ** укажите `3`.
 
 1. Нажмите кнопку **Создать пул**.
-
 
 ## Загрузите задания {#upload_file}
 
@@ -296,13 +307,11 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note alarm %}
+    {% note alert %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
     {% endnote %}
-
-
 
 ## Что дальше {#what-next}
 

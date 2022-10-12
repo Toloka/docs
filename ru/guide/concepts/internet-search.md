@@ -6,8 +6,8 @@
 
 {% endnote %}
 
-
 В проектах этого типа исполнители ищут в сети объект или информацию о нем. Вы можете использовать их для:
+
 - поиска объекта по описанию, например товара или услуги;
 - поиска информации на определенном сайте, например городов доставки на сайте магазина;
 - поиска информации об объекте в интернете, например контактных данных организации.
@@ -47,14 +47,15 @@
       1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 
           - Поля входных данных:
-          - `title` — строка c названием организации;
 
-          - `url` — адрес сайт организации, тип `url`.
+            - `title` — строка c названием организации;
+            - `url` — адрес сайт организации, тип `url`.
 
           - Поля выходных данных:
-          - `phone` — строка, в которую будет записан номер телефона организации;
-          - `email` — строка, в которую будет записан адрес электронной почты организации;
-          - `not_found` — флажок, обозначающий отсутствие контактов организации.
+
+            - `phone` — строка, в которую будет записан номер телефона организации;
+            - `email` — строка, в которую будет записан адрес электронной почты организации;
+            - `not_found` — флажок, обозначающий отсутствие контактов организации.
 
       1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
@@ -132,14 +133,15 @@
           {% cut "Код для блока **HTML**" %}
 
           {% if locale == "ru-ru" %}
+
           ```html
           <!-- Кнопки для перехода на сайт организации и поиска по ее названию в Яндексе-->
           <div class="left">
-          <div class="title">{{title}}
+          <div class="title">not_var{{title}}
           </div>
           <div class="site-buttons">
           {{button label="Перейти на сайт" action=false href=url}}
-          <a href="https://yandex.ru/search/?text={{title}}" target="_blank" class="btn_ya">Найти в Яндексе</a>
+          <a href="https://yandex.ru/search/?text=not_var{{title}}" target="_blank" class="btn_ya">Найти в Яндексе</a>
           </div>
           <!-- Поля для ввода телефона и электронной почты. Формат данных проверяется с помощью регулярных выражений. Выражение записано в параметр "Паттерн" выходных полей "phone" и "email". -->
           <div class="output-fields">
@@ -152,15 +154,17 @@
           {{field class="site-buttons"type="checkbox" name="not_found" label="Нет контактов"}}
           </div>
           ```
+
           {% endif %}{% if locale == "en-com" %}
+
           ```html
           <!-- Buttons to go to the company's website and search for the company's name in Yandex -->
           <div class="left">
-          <div class="title">{{title}}
+          <div class="title">not_var{{title}}
           </div>
           <div class="site-buttons">
           {{button label="Go to site" action=false href=url}}
-          <a href="https://yandex.ru/search/?text={{title}}" target="_blank" class="btn_ya">Search Yandex</a>
+          <a href="https://yandex.ru/search/?text=not_var{{title}}" target="_blank" class="btn_ya">Search Yandex</a>
           </div>
           <!-- Fields for phone numbers and email addresses. The data format is checked using regular expressions. The expression is written in the "Pattern" parameter of the "phone" and "email" output fields. -->
           <div class="output-fields">
@@ -173,6 +177,7 @@
           {{field class="site-buttons"type="checkbox" name="not_found" label="No contacts"}}
           </div>
           ```
+
           {% endif %}
 
           {% endcut %}
@@ -180,6 +185,7 @@
           {% cut "Код для блока **JS**" %}
 
           {% if locale == "ru-ru" %}
+
           ```javascript
           exports.Task = extend(TolokaHandlebarsTask, function (options) {
           TolokaHandlebarsTask.call(this, options);
@@ -289,7 +295,9 @@
           return constructorFunction;
           }
           ```
+
           {% endif %}{% if locale == "en-com" %}
+
           ```javascript
           exports.Task = extend(TolokaHandlebarsTask, function (options) {
           TolokaHandlebarsTask.call(this, options);
@@ -399,6 +407,7 @@
           return constructorFunction;
           }
           ```
+
           {% endif %}
 
           {% endcut %}
@@ -406,6 +415,7 @@
           {% cut "Код для блока **CSS**" %}
 
           {% if locale == "ru-ru" %}
+
           ```css
           /* Задание на странице */
           .task {
@@ -474,9 +484,10 @@
           width: auto;
           }
           }
-
           ```
+
           {% endif %}{% if locale == "en-com" %}
+
           ```css
           /* Task on the page */
           .task {
@@ -545,19 +556,19 @@
           width: auto;
           }
           }
-
           ```
+
           {% endif %}
 
           {% endcut %}
 
     1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
-    {% note info %}
+        {% note info %}
 
-    В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
+        В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
 
-    {% endnote %}
+        {% endnote %}
 
     1. В открывшемся окне проверьте работу опций задания:
 
@@ -636,31 +647,42 @@
       1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Контрольные задания**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
 
       1. Задайте правило для контрольного задания: если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %} на контрольные вопросы **≥ 3** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%)**{% endif %} на контрольные вопросы **< 60**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %} исполнителя {% if locale == "ru-ru" %}**на проекте на 10 дней**{% endif %}{% if locale == "en-com" %}**on project**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В качестве причины укажите **Контрольное задание**.
-      {% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png){% endif %}
-      Это означает, что если исполнитель выполнил более трех контрольных заданий и дал неправильные ответы более чем в 60% из них, он будет заблокирован и не сможет выполнять задания на этом проекте в течение 10 дней.
+
+        {% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png){% endif %}
+
+        Это означает, что если исполнитель выполнил более трех контрольных заданий и дал неправильные ответы более чем в 60% из них, он будет заблокирован и не сможет выполнять задания на этом проекте в течение 10 дней.
 
       1. {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Fast responses**{% endif %} — отсеивает исполнителей, которые отвечают слишком быстро.
 
       1. В поле {% if locale == "ru-ru" %}**Учитывать последних страниц заданий**{% endif %}{% if locale == "en-com" %}**Recent task suites to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `10`.
+
       1. В поле {% if locale == "ru-ru" %}**Минимальное время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} укажите время в секундах. Например, `20`.
+
       1. Задайте правило для быстрого ответа: если {% if locale == "ru-ru" %}**количество быстрых ответов**{% endif %}{% if locale == "en-com" %}**number of fast responses**{% endif %}** ≥ 1**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Быстрые ответы**.
-      {% if locale == "ru-ru" %}![](../_images/other/fast-answers2.png){% endif %}
-      Это означает, что если исполнитель выполнит хотя бы одну страницу заданий быстрее, чем за 20 секунд, он не сможет выполнять ваши задания 10 дней.
+
+        {% if locale == "ru-ru" %}![](../_images/other/fast-answers2.png){% endif %}
+
+        Это означает, что если исполнитель выполнит хотя бы одну страницу заданий быстрее, чем за 20 секунд, он не сможет выполнять ваши задания 10 дней.
 
       1. {% if locale == "ru-ru" %}**Капча**{% endif %}{% if locale == "en-com" %}**Captcha**{% endif %} — предотвращает выполнение заданий роботами.
 
       1. В поле {% if locale == "ru-ru" %}**Учитывать последних вводов капчи**{% endif %}{% if locale == "en-com" %}**Recent captchas to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `10`.
+
       1. Задайте правило для капчи: если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %}** ≥ 5** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%) **{% endif %}**< 65**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**на проекте**{% endif %}{% if locale == "en-com" %}**on project**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Капча**.
-      {% if locale == "ru-ru" %}![](../_images/control-rules/captcha/qcr-captcha_example1.png){% endif %}
-      Это означает, что если исполнитель верно вводит капчу менее чем в 65% случаев, он не сможет выполнять задания на проекте в течение 10 дней.
+
+        {% if locale == "ru-ru" %}![](../_images/control-rules/captcha/qcr-captcha_example1.png){% endif %}
+
+        Это означает, что если исполнитель верно вводит капчу менее чем в 65% случаев, он не сможет выполнять задания на проекте в течение 10 дней.
 
       1. {% if locale == "ru-ru" %}**Пропуск заданий**{% endif %}{% if locale == "en-com" %}**Skipped assignments**{% endif %} — отсеивает исполнителей, которые пропускают несколько страниц заданий подряд.
 
-      Задайте правило для [пропущенных заданий](pool_statistic-pool.md#skipped-tasks): если {% if locale == "ru-ru" %}**пропущенных подряд страниц заданий**{% endif %}{% if locale == "en-com" %}**task pages skipped in a row**{% endif %}** ≥ 4**, то {% if locale == "ru-ru" %}**приостановить**{% endif %}{% if locale == "en-com" %}**suspend**{% endif %}{% if locale == "ru-ru" %}**в пуле**{% endif %}{% if locale == "en-com" %}**in pull**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Пропуск заданий**.
-      {% if locale == "ru-ru" %}![](../_images/other/skipped.png){% endif %}
-      Это означает, что если исполнитель пропустит 4 и более страниц заданий, он потеряет доступ к пулу на 10 дней.
+        Задайте правило для [пропущенных заданий](pool_statistic-pool.md#skipped-tasks): если {% if locale == "ru-ru" %}**пропущенных подряд страниц заданий**{% endif %}{% if locale == "en-com" %}**task pages skipped in a row**{% endif %}** ≥ 4**, то {% if locale == "ru-ru" %}**приостановить**{% endif %}{% if locale == "en-com" %}**suspend**{% endif %}{% if locale == "ru-ru" %}**в пуле**{% endif %}{% if locale == "en-com" %}**in pull**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Пропуск заданий**.
 
-      1. Установите перекрытие — количество исполнителей, которые должны выполнить задание. В блоке {% if locale == "ru-ru" %}**Контроль качества**{% endif %} {% if locale == "en-com" %}**Quality control**{% endif %} в разделе {% if locale == "ru-ru" %}**Перекрытие задания**{% endif %}{% if locale == "en-com" %}**Task overlap**{% endif %} укажите значение поля {% if locale == "ru-ru" %}**Количество исполнителей, которые должны выполнить каждое задание**{% endif %}{% if locale == "en-com" %}**The number of performers to complete every task**{% endif %}. Для заданий этого типа, как правило, `3-5`.
+        {% if locale == "ru-ru" %}![](../_images/other/skipped.png){% endif %}
+
+        Это означает, что если исполнитель пропустит 4 и более страниц заданий, он потеряет доступ к пулу на 10 дней.
+
+      1. Установите перекрытие — количество исполнителей, которые должны выполнить задание. В блоке {% if locale == "ru-ru" %}**Контроль качества**{% endif %}{% if locale == "en-com" %}**Quality control**{% endif %} в разделе {% if locale == "ru-ru" %}**Перекрытие задания**{% endif %}{% if locale == "en-com" %}**Task overlap**{% endif %} укажите значение поля {% if locale == "ru-ru" %}**Количество исполнителей, которые должны выполнить каждое задание**{% endif %}{% if locale == "en-com" %}**The number of performers to complete every task**{% endif %}. Для заданий этого типа, как правило, `3-5`.
 
     - Для проекта с отложенной приемкой
 
@@ -683,18 +705,22 @@
       1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
 
       1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**задание становится отклоненным**{% endif %}{% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, то {% if locale == "ru-ru" %}**увеличить перекрытие на**{% endif %}{% if locale == "en-com" %}**extend overlap by**{% endif %} **1**. А также включите опцию {% if locale == "ru-ru" %}**Открыть пул, если закрыт**{% endif %}{% if locale == "en-com" %}**Open pool if closed**{% endif %}.
-      {% if locale == "ru-ru" %}![](../_images/other/rejected-accepted-tasks.png){% endif %}
-      Это означает, что отклоненное задание будет возвращено в пул и показано еще одному исполнителю.
+
+        {% if locale == "ru-ru" %}![](../_images/other/rejected-accepted-tasks.png){% endif %}
+
+        Это означает, что отклоненное задание будет возвращено в пул и показано еще одному исполнителю.
 
       - {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %} — ограничивает доступ к пулу исполнителей, которые часто ошибаются.
 
       Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**количество проверенных ответов**{% endif %}{% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** и {% if locale == "ru-ru" %}**процент отклоненных ответов**{% endif %}{% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35** то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**15 дней**{% endif %}{% if locale == "en-com" %}**15 days**{% endif %}.
-      {% if locale == "ru-ru" %}![](../_images/other/offline-accept.png){% endif %}
-      Это означает, что если 35% и более ответов исполнителя будут отклонены, он будет заблокирован и не сможет больше выполнять ваши задания 15 дней. Правило начинает действовать после проверки 3 ответов исполнителя.
+
+        {% if locale == "ru-ru" %}![](../_images/other/offline-accept.png){% endif %}
+
+        Это означает, что если 35% и более ответов исполнителя будут отклонены, он будет заблокирован и не сможет больше выполнять ваши задания 15 дней. Правило начинает действовать после проверки 3 ответов исполнителя.
 
       {% note info %}
 
-      Вы можете скопировать настройки контроля качества из другого пула. Для этого в блоке {% if locale == "ru-ru" %}**Аудитория**{% endif %} {% if locale == "en-com" %}**Audience**{% endif %} в разделе {% if locale == "ru-ru" %}**Исполнители**{% endif %}{% if locale == "en-com" %}**Performers**{% endif %} нажмите {% if locale == "ru-ru" %}**перенесите их из другого пула**{% endif %}{% if locale == "en-com" %}**copy them from another pool**{% endif %}.
+      Вы можете скопировать настройки контроля качества из другого пула. Для этого в блоке {% if locale == "ru-ru" %}**Аудитория**{% endif %}{% if locale == "en-com" %}**Audience**{% endif %} в разделе {% if locale == "ru-ru" %}**Исполнители**{% endif %}{% if locale == "en-com" %}**Performers**{% endif %} нажмите {% if locale == "ru-ru" %}**перенесите их из другого пула**{% endif %}{% if locale == "en-com" %}**copy them from another pool**{% endif %}.
 
       {% endnote %}
 
@@ -706,11 +732,9 @@
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать пул**{% endif %}{% if locale == "en-com" %}**Create a pool**{% endif %}.
 
-
 ## Загрузите задания {#upload-file}
 
 {% include [toloka-requester-source-tsv-file](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-file.md) %}
-
 
 1. На странице пула нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% endif %}{% if locale == "en-com" %}**Upload**{% endif %}. В открывшемся окне вы можете скачать шаблон файла.
 
@@ -720,45 +744,45 @@
 
     - Для проекта с перекрытием больше единицы
 
-       1. 1. Выберите {% if locale == "ru-ru" %}**Умное смешивание**{% endif %}{% if locale == "en-com" %}**Smart mixing**{% endif %}.
+        1. Выберите {% if locale == "ru-ru" %}**Умное смешивание**{% endif %}{% if locale == "en-com" %}**Smart mixing**{% endif %}.
 
-         1. В поле {% if locale == "ru-ru" %}**Основных заданий**{% endif %}{% if locale == "en-com" %}**Main tasks**{% endif %} укажите `9`.
+                1. В поле {% if locale == "ru-ru" %}**Основных заданий**{% endif %}{% if locale == "en-com" %}**Main tasks**{% endif %} укажите `9`.
 
-         1. В поле {% if locale == "ru-ru" %}**Обучающих заданий**{% endif %}{% if locale == "en-com" %}**Training tasks**{% endif %} укажите `0`.
+                1. В поле {% if locale == "ru-ru" %}**Обучающих заданий**{% endif %}{% if locale == "en-com" %}**Training tasks**{% endif %} укажите `0`.
 
-         1. В поле {% if locale == "ru-ru" %}**Контрольных заданий**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %} укажите `1`.
+                1. В поле {% if locale == "ru-ru" %}**Контрольных заданий**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %} укажите `1`.
 
-         1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% endif %}{% if locale == "en-com" %}**Upload**{% endif %}.
+                1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% endif %}{% if locale == "en-com" %}**Upload**{% endif %}.
 
-         1. В открывшемся окне выберите файл с заданиями для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
+                1. В открывшемся окне выберите файл с заданиями для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
 
-         1. В открывшемся окне проверьте количество заданий и нажмите кнопку {% if locale == "ru-ru" %}**Добавить**{% endif %}{% if locale == "en-com" %}**Add**{% endif %}.
+                1. В открывшемся окне проверьте количество заданий и нажмите кнопку {% if locale == "ru-ru" %}**Добавить**{% endif %}{% if locale == "en-com" %}**Add**{% endif %}.
 
-      1. Создайте [контрольное задание](../../glossary.md#control-task):
+        1. Создайте [контрольное задание](../../glossary.md#control-task):
 
-        1. Нажмите кнопку {% if locale == "ru-ru" %}**Разметить**{% endif %}{% if locale == "en-com" %}**Edit**{% endif %}.
+                1. Нажмите кнопку {% if locale == "ru-ru" %}**Разметить**{% endif %}{% if locale == "en-com" %}**Edit**{% endif %}.
 
-            {% note info %}
+                    {% note info %}
 
-            Если вместо **умного смешивания** было выбрано другое, необходимо нажать кнопку **Разметить**. Если такой кнопки нет, удалите файл и загрузите заново.
+                    Если вместо **умного смешивания** было выбрано другое, необходимо нажать кнопку **Разметить**. Если такой кнопки нет, удалите файл и загрузите заново.
 
-           {% endnote %}
+                {% endnote %}
 
-        1. В открывшемся окне нажмите кнопку {% if locale == "ru-ru" %}**Создать контрольные**{% endif %}{% if locale == "en-com" %}**Create control tasks**{% endif %}.
+                1. В открывшемся окне нажмите кнопку {% if locale == "ru-ru" %}**Создать контрольные**{% endif %}{% if locale == "en-com" %}**Create control tasks**{% endif %}.
 
-        1. В открывшемся окне в разделе {% if locale == "ru-ru" %}**Создать контрольное задание**{% endif %}{% if locale == "en-com" %}**Create control task**{% endif %} слева отметьте пункт **result**.
+                1. В открывшемся окне в разделе {% if locale == "ru-ru" %}**Создать контрольное задание**{% endif %}{% if locale == "en-com" %}**Create control task**{% endif %} слева отметьте пункт **result**.
 
-        1. Выберите правильный ответ на вопрос.
+                1. Выберите правильный ответ на вопрос.
 
-        1. Нажмите кнопку {% if locale == "ru-ru" %}**Сохранить и перейти к следующему**{% endif %}{% if locale == "en-com" %}**Save and go to next**{% endif %}.
+                1. Нажмите кнопку {% if locale == "ru-ru" %}**Сохранить и перейти к следующему**{% endif %}{% if locale == "en-com" %}**Save and go to next**{% endif %}.
 
-        1. Выйдите из режима разметки заданий.
+                1. Выйдите из режима разметки заданий.
 
-            {% note info %}
+                    {% note info %}
 
-            В небольших пулах контрольные задания должны составлять около 10% от всех заданий. Включайте разные варианты правильных ответов в равных количествах. Посмотрите распределение ответов на странице {% if locale == "ru-ru" %}**Разметить задания**{% endif %}{% if locale == "en-com" %}**Edit tasks**{% endif %} на вкладке {% if locale == "ru-ru" %}**Контрольные**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
+                    В небольших пулах контрольные задания должны составлять около 10% от всех заданий. Включайте разные варианты правильных ответов в равных количествах. Посмотрите распределение ответов на странице {% if locale == "ru-ru" %}**Разметить задания**{% endif %}{% if locale == "en-com" %}**Edit tasks**{% endif %} на вкладке {% if locale == "ru-ru" %}**Контрольные**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
 
-            {% endnote %}
+                    {% endnote %}
 
     - Для проекта с отложенной приемкой
 
@@ -776,13 +800,12 @@
 
   {% endlist %}
 
-
 ## Получите результаты {#get-results}
 
 Когда исполнители выполнили ваши задания, получите результаты.
 
 {% list tabs %}
-Ы
+
 - Для проекта с перекрытием больше единицы
 
   На странице пула нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}. В открывшемся окне нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
@@ -797,7 +820,7 @@
 
       1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.{% if locale == "ru-ru" %}
 
-      ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
       {% endif %}
 
@@ -810,13 +833,19 @@
 Если в проекте по поиску информации в интернете вы использовали {% if locale == "ru-ru" %}**Отложенную приемку**{% endif %}{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}, отдайте результаты на проверку исполнителям в качестве задания. [Подробнее](offline-accept.md) об отложенной приемке.
 
 1. Создайте еще один проект с помощью [Пустого]({{ blank }}) шаблона. О том, какие настройки нужно задать для этого проекта, написано ниже.
+
 1. Создайте интерфейс задания, чтобы исполнитель увидел:
+
     - название организации;
     - электронную почту и номер телефона организации;
     - переключатель с вариантами ответов:
+
         `Электронная почта и номер телефона указаны верно.`
+
         `Электронная почта указана неверно.`
+
         `Номер телефона указан неверно.`
+
         `Электронная почта и номер телефона указаны неверно.`
 
 1. Добавьте пул и укажите в нем {% if locale == "ru-ru" %}**Перекрытие**{% endif %}{% if locale == "en-com" %}**Overlap**{% endif %} — 3.
@@ -831,16 +860,18 @@
     1. В поле **?** укажите `=`. Поле {% if locale == "ru-ru" %}**Отсутствует**{% endif %}{% if locale == "en-com" %}**Missing**{% endif %} оставьте пустым.
 
 1. Загрузите в пул задания и запустите его.
-1. Когда пул будет полностью выполнен, запустите [агрегацию результатов](result-aggregation.md).
-1. Примите задания по поиску информации, в которых нет ошибок. Остальные отклоните, указав причину. Как только вы отклоните задания, они будут отправлены на повторное выполнение.
 
+1. Когда пул будет полностью выполнен, запустите [агрегацию результатов](result-aggregation.md).
+
+1. Примите задания по поиску информации, в которых нет ошибок. Остальные отклоните, указав причину. Как только вы отклоните задания, они будут отправлены на повторное выполнение.
 
 ## Решение проблем {#troubleshooting}
 
 {% cut "Как сделать так, чтобы для разных вопросов было различное количество вариантов ответов?" %}
 
 Используйте [конкатенацию](t-components/helpers.md#concat), например:
-```
+
+```html
 {{field type="checkbox" name=(concat "result." @index ) label=(concat "checkbox –
           " @index) size="L"}}
 ```
@@ -850,16 +881,23 @@
 {% cut "Как в JS сделать так, чтобы если чекбокс отмечен, то ссылку не запрашивать, а если ссылка вставлена, то галочка стоять не должна?" %}
 
 1. Посмотрите как это реализовано в шаблоне «[Поиск данных в сети](#internet-search__create-project)».
-1. Для решения второй задачи вы можете добавить ещё одну валидацию по аналогии с этой: {% if locale == "ru-ru" %}
-    ```
+
+1. Для решения второй задачи вы можете добавить ещё одну валидацию по аналогии с этой:
+
+{% if locale == "ru-ru" %}
+
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: 'Вставьте ссылку или отметьте галочкой,что сайта нет'}}}}
     ```
+
     {% endif %}{% if locale == "en-com" %}
-    ```
+
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
+
     {% endif %}
 
 {% endcut %}

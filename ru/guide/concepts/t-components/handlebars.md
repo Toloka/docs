@@ -2,10 +2,9 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать интерфейс задания в {% if locale == "ru-ru" %}[Конструкторе шаблонов](https://toloka.ai/ru/docs/template-builder/reference/){% endif %}{% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать интерфейс задания в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/index.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/index.md){% endif %}.
 
 {% endnote %}
-
 
 Handlebars — это шаблонизатор, который упрощает создание HTML за счет использования шаблонов.
 
@@ -13,31 +12,30 @@ Handlebars — это шаблонизатор, который упрощает
 
 По умолчанию в проект подключается библиотека `toloka-handlebars-templates`. Она содержит набор удобных компонентов и предоставляет классы `TolokaHandlebarsTask` и `TolokaHandlebarsTaskSuite`, которые дополняют и расширяют базовые классы `[TolokaTask](../js/task.md)` и `[TolokaTaskSuite](../js/tasksuite.md)`.
 
-
 ## Выражения {#expressions}
 
 Выражения заключены в двойные фигурные скобки. В этом случае их значение автоматически экранируется.
 
 ```html
-<input type="text" placeholder="{{i18n.hint}}" name="{{concat "field_" name}}" value="{{value}}">
+<input type="text" placeholder="not_var{{i18n.hint}}" name="{{concat "field_" name}}" value="not_var{{value}}">
 ```
 
 Если нужно вывести неэкранированное значение вы можете:
 
-- Указать его в тройных скобках: `{{{raw}}}`
+- Указать его в тройных скобках: `{not_var{{raw}}}`
 
 - Написать свой хелпер, который будет возвращать значение в неэкранированном виде: `return new Handlebars.SafeString(value)`
 
-    {% note alarm %}
+    {% note alert %}
 
     Учтите, что это небезопасно! Всегда проверяйте все входные данные, которые вы отображаете в шаблоне. Экранировать данные в хелпере можно с помощью метода `Handlebars.Utils.escapeExpression` .
 
     {% endnote %}
 
-
 Чтобы в выражении Handlebars получить значение вложенного параметра, используйте точку в качестве разделителя между именами параметров.
 
 Например, чтобы из кода в формате JSON
+
 ```json
 {
     "id": 123,
@@ -47,14 +45,14 @@ Handlebars — это шаблонизатор, который упрощает
     }
 }
 ```
+
 подтянуть значения вложенных в `link` параметров `title` и `url`, укажите путь к ним через точку:
 
 ```html
-id: {{id}}<a href="{{link.url}}">{{link.title}}</a>
+id: not_var{{id}}<a href="not_var{{link.url}}">not_var{{link.title}}</a>
 ```
 
 Комментарии тоже являются выражениями Handlebars: `{{!комментарий}}` или `{{!-- комментарий --}}`.
-
 
 ## Хелперы {#helpers}
 
@@ -66,7 +64,6 @@ id: {{id}}<a href="{{link.url}}">{{link.title}}</a>
 
 ```html
 Handlebars.registerHelper('escape', (title, url) => new Handlebars.SafeString(`<a href="${Handlebars.escapeExpression(url)}">${Handlebars.escapeExpression(title)}</a>`));
-
 ```
 
 Вызов хелпера:
@@ -90,12 +87,12 @@ not_var{{escape link.title link.url}}
 {% note info %}
 
 Прежде чем создавать собственный хелпер Handlebars, поищите нужный:
+
 - в списке [доступных компонентов и хелперов Толоки](../t-components.md);
+
 - в [репозитории хелперов Handlebars](https://github.com/helpers/handlebars-helpers).
 
 {% endnote %}
-
-
 
 ## Блочные хелперы {#block-helpers}
 
@@ -114,7 +111,7 @@ not_var{{escape link.title link.url}}
 ```html
 {{#if (equal id "123")}}
     ... {{!Блок кода только для id 123}}
-{{else}}
+not_var{{else}}
     ... {{!Блок кода для всех остальных значений}}
 {{/if}}
 ```
@@ -126,7 +123,7 @@ not_var{{escape link.title link.url}}
 ```html
 {{#unless (equal id "123")}}
     ... {{!Блок кода для всех значений id, отличных от 123}}
-{{else}}
+not_var{{else}}
     ... {{!Блок кода только для id 123}}
 {{/unless}}
 ```
@@ -141,8 +138,8 @@ not_var{{escape link.title link.url}}
 
 {% endnote %}
 
-
 Например, для списка
+
 ```json
 {
     "id": 123,
@@ -152,11 +149,13 @@ not_var{{escape link.title link.url}}
     ]
 }
 ```
+
 хелпер, выводящий значения каждого элемента списка (в данном случае ссылки), будет выглядеть так:
+
 ```html
 {{#each links}}
     ID: {{../id}}
-    <a href="{{this.url}}">{{this.title}}</a>
+    <a href="not_var{{this.url}}">not_var{{this.title}}</a>
 {{/each}}
 ```
 
@@ -168,15 +167,17 @@ not_var{{escape link.title link.url}}
 - `{{@last}}` — true, если это последний элемент массива.
 
 Для приведенного в предыдущем примере [списка](#example-json-2) хелпер
+
 ```html
 {{#each links}}
     Глобальный ID: {{../id}}
-    {{@index}}: <a href="{{this.url}}">{{this.title}}</a>
+    {{@index}}: <a href="not_var{{this.url}}">not_var{{this.title}}</a>
     {{#unless @last}}<hr>{{/unless}}
 {{/each}}
-
 ```
+
 выведет ссылки, при этом:
+
 - ссылки будут пронумерованы;
 - после каждой ссылки, кроме последней, будет добавлен горизонтальный разделитель.
 
@@ -185,6 +186,7 @@ not_var{{escape link.title link.url}}
 Позволяет перепривязать контекст.
 
 Например, для кода
+
 ```json
 {
     "id": 123,
@@ -194,14 +196,15 @@ not_var{{escape link.title link.url}}
     }
 }
 ```
+
 хелпер, который отображает блок в другом контексте, помогая при этом избежать употребления имени родительского параметра, будет выглядеть так:
+
 ```html
-ID: {{id}}
+ID: not_var{{id}}
 {{#with link}}
-    <a href="{{url}}">{{title}}</a>
+    <a href="not_var{{url}}">not_var{{title}}</a>
 {{/with}}
 ```
-
 
 ## Повторное использование шаблонов (partials) {#partials}
 
@@ -217,7 +220,7 @@ Partials позволяют переиспользовать целые секц
 Чтобы избежать копирования кода, можно зарегистрировать новый partial:
 
 ```html
-Handlebars.registerPartial('formInput', '<h3>{{fieldTitle}}</h3>{{field type="input" name=fieldName}}');
+Handlebars.registerPartial('formInput', '<h3>not_var{{fieldTitle}}</h3>{{field type="input" name=fieldName}}');
 ```
 
 Вызов шаблона для вставки верстки в форму:

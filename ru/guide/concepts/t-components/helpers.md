@@ -2,14 +2,13 @@
 
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-
 Хелперы — это функции, которым можно передать любое количество выражений. После обработки результата они возвращают HTML-код.
 
 ## Конкатенация {#concat}
 
 Чтобы сцепить две и более строк в одну, используйте хелпер `{{concat "<строка 1>" … "<строка _n_>"}}`. Например:
 
-```
+```html
 {{#each inputValues}}
   {{field type="input" name=(concat "field_" this)}}
 {{/each}}
@@ -19,14 +18,16 @@
 
 Чтобы получить значение ключа из объекта, используйте хелпер `{{get <объект> "<ключ>"}}`. Например:
 
-```
+```html
 {{get inputValuesObj "key"}}
 ```
 
 ## Логические операции и сравнения {#equal}
 
 Логические операции и операции сравнения возвращают значение `true` либо `false`.
+
 Чтобы применить логическую операцию к булевым значениям, используйте хелперы:
+
 - И: `{{and "a" … "n"}}`,
 - ИЛИ: `{{or "a" … "n"}}`,
 - отрицание: `{{not "a"}}`.
@@ -38,12 +39,12 @@
 - меньше: `{{lt "a" "b"}}`,
 - меньше или равно: `{{lte "a" "b"}}`,
 - равно: `{{equal "a" "b"}}`.
+
     {% note info %}
 
-    Хелпер `{{equal}}` позволяет сравнивать значения любых типов данных.
+    Хелпер `not_var{{equal}}` позволяет сравнивать значения любых типов данных.
 
     {% endnote %}
-
 
 ## Запись значений в JSON поля выходных данных {#js_fields}
 
@@ -53,19 +54,25 @@
 
 Например, значения двух полей для ввода текста будут записаны как JSON-объекты в поле выходных данных `result`:
 
-```
+```html
 {{field type="input" name="result.input1"}}
 {{field type="input" name="result.input2"}}
 ```
 
-[TSV-файл](../../../glossary.md#tsv-file-definition) с ответами в столбце `result` будет содержать данные в виде:{% if locale == "ru-ru" %}
-```
+[TSV-файл](../../../glossary.md#tsv-file-definition) с ответами в столбце `result` будет содержать данные в виде:
+
+{% if locale == "ru-ru" %}
+
+```json
 {result {"input1": "<ответ исполнителя>", "input2": "<ответ исполнителя>"}}
 ```
+
 {% endif %}{% if locale == "en-com" %}
-```
+
+```json
 {result {"input1": "<performer's response", "input2": "performer's response>"}}
 ```
+
 {% endif %}
 
 {% include [contact-support](../../_includes/contact-support-help.md) %}
