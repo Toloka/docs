@@ -29,5 +29,5 @@ Makes changes to the skill
 **Examples:**
 
 ```python
-toloka_client.create_skill(skill_id=old_skill_id, skill=new_skill_object)
+toloka_client.update_skill(skill_id=old_skill_id, skill=new_skill_object)
 ```
