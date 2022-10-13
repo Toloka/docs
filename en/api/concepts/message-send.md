@@ -71,7 +71,7 @@ Title | Overview
     Whether the message can be responded to:
 
     - `true` — Users can respond to the message.
-    - `false` —Users can't respond to the  message.
+    - `false` — Users can't respond to the  message.
 
     The default value is `true`. ||
   || **text** | **object \| required**
@@ -124,7 +124,7 @@ Title | Overview
     Whether the message can be responded to:
 
     - `true` — Users can respond to the message.
-    - `false` —Users can't respond to the  message.
+    - `false` — Users can't respond to the  message.
 
     The default value is `true`. ||
   || **text** | **object \| required**
@@ -220,7 +220,7 @@ Access to information about the sender and recipients.
 
 - `true` — Information is available in the `interlocutors` field.
 - `false` — Information is available in a separate request. ||
-|| **interlocutors** | **object**
+|| **interlocutors[]** | **array of objects**
 
 Information about the sender and recipients, sorted by ID. ||
 || **interlocutors.id** | **string**
@@ -243,7 +243,7 @@ Access to message threads:
 
 - `true` — The message is available in the `messages` field.
 - `false` — The message is available in a separate request. ||
-|| **messages** | **object**
+|| **messages[]** | **array of objects**
 
 Messages in the thread. Messages are sorted by date of creation (newest first). ||
 || **messages.text** | **object**
