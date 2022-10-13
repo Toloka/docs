@@ -29,11 +29,11 @@
 
 #### В интерфейсе:
 
-1. Выберите шаблон:
+1. Выберите пресет:
 
     1. {% include [toloka-requester-source-create-project](../_includes/toloka-requester-source/id-toloka-requester-source/create-project.md) %}
 
-    1. Выберите шаблон {% if locale == "ru-ru" %}**Мониторинг объектов в организациях**{% endif %}{% if locale == "en-com" %}**Monitoring items at businesses **{% endif %} в блоке {% if locale == "ru-ru" %}**Пешеходные задания**{% endif %}{% if locale == "en-com" %}**Spatial Crowdsourcing**{% endif %}.
+    1. Выберите пресет {% if locale == "ru-ru" %}**Мониторинг объектов в организациях**{% endif %}{% if locale == "en-com" %}**Monitoring items at businesses **{% endif %} в блоке {% if locale == "ru-ru" %}**Пешеходные задания**{% endif %}{% if locale == "en-com" %}**Spatial Crowdsourcing**{% endif %}.
 
 1. Заполните общую информацию:
 

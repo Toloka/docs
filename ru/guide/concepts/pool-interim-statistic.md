@@ -8,7 +8,7 @@
 ||{% if locale == "ru-ru" %}**Заданий**{% endif %}{% if locale == "en-com" %}**Tasks**{% endif %} | Число заданий в пуле||
 ||{% if locale == "ru-ru" %}**Обучающее задание**{% endif %}{% if locale == "en-com" %}**Training task**{% endif %} | Количество обучающих заданий в пуле.||
 ||{% if locale == "ru-ru" %}**Контрольное задание**{% endif %}{% if locale == "en-com" %}**Control task**{% endif %} | Количество [контрольных заданий](../../glossary.md#control-task) в пуле.||
-||{% if locale == "ru-ru" %}**Среднее время выполнения страницы заданий**{% endif %}{% if locale == "en-com" %}**Average assignment submit time**{% endif %} | Среднее время выполнения [страницы заданий в пуле](../../glossary.md#task-page). Указывается в секундах.
+||{% if locale == "ru-ru" %}**Среднее время выполнения страницы заданий**{% endif %}{% if locale == "en-com" %}**Average assignment submit time**{% endif %} | Среднее время выполнения [страницы заданий в пуле](../../glossary.md#task-suite). Указывается в секундах.
 
 Вычисляется по 1000 последних выполненных страниц заданий.||
 ||{% if locale == "ru-ru" %}**Приблизительное время завершения**{% endif %}{% if locale == "en-com" %}**Approximate finish time**{% endif %} |
@@ -20,7 +20,7 @@
 ||{% if locale == "ru-ru" %}**Заданий**{% endif %}{% if locale == "en-com" %}**Tasks**{% endif %} | Число заданий в пуле.||
 ||{% if locale == "ru-ru" %}**Обучающих заданий**{% endif %}{% if locale == "en-com" %}**Training tasks**{% endif %} | Количество обучающих заданий в пуле.||
 ||{% if locale == "ru-ru" %}**Контрольных заданий**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %} | Количество [контрольных заданий](../../glossary.md#control-task) в пуле.||
-||{% if locale == "ru-ru" %}**Среднее время выполнения страницы заданий**{% endif %}{% if locale == "en-com" %}**Average assignment submit time**{% endif %} | Среднее время выполнения [страницы заданий в пуле](../../glossary.md#task-page). Указывается в секундах.
+||{% if locale == "ru-ru" %}**Среднее время выполнения страницы заданий**{% endif %}{% if locale == "en-com" %}**Average assignment submit time**{% endif %} | Среднее время выполнения [страницы заданий в пуле](../../glossary.md#task-suite). Указывается в секундах.
 
 Вычисляется по 1000 последних выполненных страниц заданий.||
 ||{% if locale == "ru-ru" %}**Приблизительное время завершения**{% endif %}{% if locale == "en-com" %}**Approximate finish time**{% endif %} | {% include [pool_statistic-pool-expected_execution_time](../_includes/concepts/pool_statistic-pool/id-pool_statistic-pool/expected_execution_time.md) %}||

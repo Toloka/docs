@@ -6,13 +6,13 @@
 
 #### В интерфейсе:
 
-1. Выберите шаблон:
+1. Выберите пресет:
 
     1. Откройте [Толоку для заказчика]({{ yandex-toloka }}).
 
     1. Нажмите кнопку {% if locale == "ru-ru" %}**+ Создать проект**{% endif %}{% if locale == "en-com" %}**+ Create project**{% endif %}.
 
-    1. В открывшемся окне найдите шаблон {% if locale == "ru-ru" %}**Классификация изображений**{% endif %}{% if locale == "en-com" %}**Image classification**{% endif %} и нажмите кнопку {% if locale == "ru-ru" %}**Выбрать**{% endif %}{% if locale == "en-com" %}**Select**{% endif %}.
+    1. В открывшемся окне найдите пресет {% if locale == "ru-ru" %}**Классификация изображений**{% endif %}{% if locale == "en-com" %}**Image classification**{% endif %} и нажмите кнопку {% if locale == "ru-ru" %}**Выбрать**{% endif %}{% if locale == "en-com" %}**Select**{% endif %}.
 
 1. Заполните общую информацию:
 

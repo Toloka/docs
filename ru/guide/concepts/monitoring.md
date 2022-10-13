@@ -12,7 +12,7 @@
 
 Возможно, для вашего проекта нужны дополнительные настройки, например, добавление новой кнопки со сценарием выполнения или добавление блока с прикреплением файлов. Подробнее об этом читайте в разделе [Примеры кастомизации](advanced-features.md).
 
-Примеры задач, которые поможет решить шаблон «Мониторинг объектов в полях»:
+Примеры задач, которые поможет решить пресет {% if locale == "ru-ru" %}**Мониторинг объектов в полях**{% endif %}{% if locale == "en-com" %}**Monitoring field objects**{% endif %}:
 
 - визуальный контроль качества и состояния оборудования;
 
@@ -38,11 +38,11 @@
 
 #### В интерфейсе:
 
-1. Выберите шаблон:
+1. Выберите пресет:
 
     1. {% include [toloka-requester-source-create-project](../_includes/toloka-requester-source/id-toloka-requester-source/create-project.md) %}
 
-    1. Выберите шаблон {% if locale == "ru-ru" %}**Мониторинг объектов в полях**{% endif %}{% if locale == "en-com" %}**Monitoring field objects**{% endif %} в блоке {% if locale == "ru-ru" %}**Пешеходные задания**{% endif %}{% if locale == "en-com" %}**Spatial Crowdsourcing**{% endif %}.
+    1. Выберите пресет {% if locale == "ru-ru" %}**Мониторинг объектов в полях**{% endif %}{% if locale == "en-com" %}**Monitoring field objects**{% endif %} в блоке {% if locale == "ru-ru" %}**Пешеходные задания**{% endif %}{% if locale == "en-com" %}**Spatial Crowdsourcing**{% endif %}.
 
 1. Заполните общую информацию:
 

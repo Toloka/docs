@@ -56,7 +56,7 @@
 
 - {% if locale == "ru-ru" %}**установить значение навыка**{% endif %}{% if locale == "en-com" %}**assign skill value**{% endif %} — присвоить исполнителю фиксированное значение [навыка](nav.md).
 
-- {% if locale == "ru-ru" %}**принять все ответы исполнителя в пуле**{% endif %}{% if locale == "en-com" %}**accept all assignments from this performer in the pool**{% endif %} — требует настройки [отложенной приемки](offline-accept.md).
+- {% if locale == "ru-ru" %}**принять все ответы исполнителя в пуле**{% endif %}{% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — требует настройки [отложенной приемки](offline-accept.md).
 
     Пригодится, если исполнитель выполняет большинство заданий качественно. Пример: исполнитель выполнил больше 80% заданий правильно и вас устраивает такой результат. Правило сработает автоматически — все ответы в пуле будут приняты.
 

@@ -18,7 +18,7 @@
 
 #### В интерфейсе:
 
-1. Выберите шаблон:
+1. Выберите пресет:
 
     1. {% include [toloka-requester-source-create-project](../_includes/toloka-requester-source/id-toloka-requester-source/create-project.md) %}
 

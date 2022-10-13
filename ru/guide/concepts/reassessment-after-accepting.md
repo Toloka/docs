@@ -32,7 +32,7 @@
 ||**Поле**|**Описание**||
 ||{% if locale == "ru-ru" %}**Если**{% endif %}{% if locale == "en-com" %}**If**{% endif %} | Условие, при котором выполняется действие в поле {% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %}:
 
-- {% if locale == "ru-ru" %}**число непроверенных ответов**{% endif %}{% if locale == "en-com" %}**submitted assignments**{% endif %} — количество [страниц заданий](../../glossary.md#task-page), которые выполнены и ожидают проверки.
+- {% if locale == "ru-ru" %}**число непроверенных ответов**{% endif %}{% if locale == "en-com" %}**submitted assignments**{% endif %} — количество [страниц заданий](../../glossary.md#task-suite), которые выполнены и ожидают проверки.
 
 - {% if locale == "ru-ru" %}**число принятых ответов**{% endif %}{% if locale == "en-com" %}**approved assignments**{% endif %} — количество страниц заданий, принятых в результате отложенной приемки.
 
@@ -49,7 +49,7 @@
     {% endnote %}
 
 - {% if locale == "ru-ru" %}**задание становится отклоненным**{% endif %}{% if locale == "en-com" %}**assignment becomes rejected**{% endif %} — в результате отложенной приемки страница заданий отклонена.<br/><br/>Чтобы добавить несколько условий, нажмите ![](../_images/add.svg).||
-||{% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %} | Действие, выполняемое при условии:- {% if locale == "ru-ru" %}**увеличить перекрытие на**{% endif %}{% if locale == "en-com" %}**extend overlap by**{% endif %} — позволяет повторно отправить [страницу заданий](../../glossary.md#task-page) на выполнение другим исполнителям.
+||{% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %} | Действие, выполняемое при условии:- {% if locale == "ru-ru" %}**увеличить перекрытие на**{% endif %}{% if locale == "en-com" %}**extend overlap by**{% endif %} — позволяет повторно отправить [страницу заданий](../../glossary.md#task-suite) на выполнение другим исполнителям.
 
     Чтобы задание было автоматически отправлено на повторное выполнение, даже если ваш пул уже выполнен и закрыт, включите опцию {% if locale == "ru-ru" %}**Открыть пул, если закрыт**{% endif %}{% if locale == "en-com" %}**Open pool if closed**{% endif %}.
 

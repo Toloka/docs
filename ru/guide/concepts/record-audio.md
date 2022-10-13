@@ -25,11 +25,11 @@
 
 #### В интерфейсе:
 
-1. Выберите шаблон:
+1. Выберите пресет:
 
     1. {% include [toloka-requester-source-create-project](../_includes/toloka-requester-source/id-toloka-requester-source/create-project.md) %}
 
-    1. Выберите шаблон {% if locale == "ru-ru" %}**Запись речи на диктофон**{% endif %}{% if locale == "en-com" %}**Voice recording**{% endif %}.
+    1. Выберите пресет {% if locale == "ru-ru" %}**Запись речи на диктофон**{% endif %}{% if locale == "en-com" %}**Voice recording**{% endif %}.
 
 1. Заполните общую информацию:
 
@@ -213,7 +213,7 @@
 
 {% cut "Не загружаются файлы с Яндекс Диска" %}
 
-Если картинки, аудио или видео с Яндекс Диска не отображаются в [инструкции](../../glossary.md#task-instruction) или на [странице задания](../../glossary.md#task-page), убедитесь, что вы правильно подключили Диск и загрузили файлы.
+Если картинки, аудио или видео с Яндекс Диска не отображаются в [инструкции](../../glossary.md#task-instruction) или на [странице задания](../../glossary.md#task-suite), убедитесь, что вы правильно подключили Диск и загрузили файлы.
 
 - [Как подключить Яндекс Диск](prepare-data.md#prepare-data__connect)
 - [Как загрузить файлы для инструкции](prepare-data.md#prepare-data__instruction)

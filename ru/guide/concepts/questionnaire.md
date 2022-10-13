@@ -32,7 +32,7 @@
 
 #### В интерфейсе:
 
-1. Выберите шаблон:
+1. Выберите пресет:
 
     1. {% include [toloka-requester-source-create-project](../_includes/toloka-requester-source/id-toloka-requester-source/create-project.md) %}
 
@@ -216,7 +216,7 @@
 
     {% include [toloka-requester-source-filter-client-about](../_includes/toloka-requester-source/id-toloka-requester-source/filter-client-about.md) %}
 
-1. В блоке **Цена** установите цену в долларах США за [страницу заданий](../../glossary.md#task-page), например, `0.01`. В опросе страница заданий должна содержать одно задание. Если вам нужна помощь в оценке задач, почитайте про [настройку ценообразования](dynamic-pricing.md#section_wb1_lhl_vlb).
+1. В блоке **Цена** установите цену в долларах США за [страницу заданий](../../glossary.md#task-suite), например, `0.01`. В опросе страница заданий должна содержать одно задание. Если вам нужна помощь в оценке задач, почитайте про [настройку ценообразования](dynamic-pricing.md#section_wb1_lhl_vlb).
 
 1. В блоке **Контроль качества** установите {% if locale == "ru-ru" %}**Перекрытие задания**{% endif %}{% if locale == "en-com" %}**Task overlap**{% endif %} — количество исполнителей, которые должны выполнить задание. Для начала установите небольшое количество, например, 100. Если вы видите, что этого недостаточно для выборки, увеличьте перекрытие.
 

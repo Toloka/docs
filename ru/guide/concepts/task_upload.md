@@ -1,7 +1,5 @@
 # Как загрузить задания
 
-{% if locale == "ru-ru" %}{% endif %}
-
 Чтобы загрузить [файл с заданиями](../../glossary.md#tsv-file-definition) в [пул](pool-main.md):
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить данные**{% endif %}{% if locale == "en-com" %}**Upload data**{% endif %}.
@@ -25,7 +23,7 @@
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Продолжить**{% endif %}{% if locale == "en-com" %}**Continue**{% endif %}.
 
-1. Выберите способ распределения заданий по страницам: {% if locale == "ru-ru" %}**Умное смешивание**{% endif %}{% if locale == "en-com" %}**Smart mixing**{% endif %}, {% if locale == "ru-ru" %}**Указать вручную**{% endif %}{% if locale == "en-com" %}**Set manually**{% endif %}. Подробнее о них читайте на странице [Способы распределения заданий](distribute-tasks-by-pages.md).
+1. Выберите способ распределения заданий и укажите количество заданий на странице. Подробнее об этих настройках см. в разделе [Способы распределения заданий](distribute-tasks-by-pages.md).
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Разделить задания на страницы**{% endif %}{% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
