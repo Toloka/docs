@@ -24,6 +24,7 @@ The HTML markup mode allows you to create user-friendly instructions. Declare an
 
 #### CSS styles
 Declare styles in the `style` container or use the `style` attribute in tags to assign a style.
+
 {% note info %}
 
 The `style` container can be placed at the beginning or at the end of the instructions.
@@ -42,15 +43,66 @@ The HTML markup supports basic tags:
 - The `img` and `map` pictures.
 - Text layout. For example: `span`, `strong`, `em`.
 
-#### Full list of supported tags
+{% cut "Full list of supported tags" %}
 
- |  |  |  |  |
+#|
+|| a  
+b  
+big  
+blockquote  
+br  
+center  
+cite  
+code |
+col  
+colgroup  
+dd  
+div  
+dl  
+dt  
+em  
+font |
+h1  
+h2  
+h3  
+h4  
+h5  
+h6  
+hr  
+i |
+img  
+li  
+map  
+ol  
+p  
+pre  
+samp  
+small |
+span  
+strike  
+strong  
+style  
+sub  
+sup  
+table  
+tbody |
+td  
+tfoot  
+th  
+thead  
+tr  
+u  
+ul ||
+|#
+
+{% endcut %}
 
 #### Unsupported HTML tags
 You can't insert the following in the instructions:
 - Scripts.
 - Frames.
 - Objects, audio players, or video players (the `object`, `audio` and `video` elements).
+
     {% note info %}
 
     You can provide links to audio and video.
@@ -62,6 +114,7 @@ Tags that are not supported are removed from the instructions when saving the [p
 ## Editing the instructions {#edit}
 
 To change the instructions, go to project editing, make changes and save the project.
+
 {% note info %}
 
 If you edit instructions in a project that already has completed tasks, you should [notify Tolokers](qa-assign.md).
@@ -82,22 +135,38 @@ If you edit instructions in a project that already has completed tasks, you shou
 
 ## Troubleshooting {#troubleshooting}
 
-#### How do I show my instructions to the Toloker inside the task so that they don't need to open or close it?
+{% cut "How do I show my instructions to the Toloker inside the task so that they don't need to open or close it?" %}
 
 There are three options:
 - Put your instructions inside the task, but make sure that it doesn't clutter the interface.
 - Use [a side window]({{ instr-in-form-of-side-window }}) for your instructions so that the Toloker can quickly expand or collapse them.
 - [Hide the instructions in an expandable section]({{ hints-questions }}) or add hints for the individual interface elements.
 For best results, we recommend that you pre-select the Tolokers that meet your requirements and set up the quality control rules.
-#### Can I add a video player or audio player to my instructions?
+
+{% endcut %}
+
+{% cut "Can I add a video player or audio player to my instructions?" %}
+
 No, but you can add links to them.
-#### Some tags disappear after I save the instructions.
+
+{% endcut %}
+
+{% cut "Some tags disappear after I save the instructions." %}
+
 You can't use unsupported tags because they are deleted when you save the project. [List of supported tags](instruction.md#html).
-#### How do I create different instructions for the training pool and main pools?
+
+{% endcut %}
+
+{% cut "How do I create different instructions for the training pool and main pools?" %}
+
 By default, the project instructions are displayed in the training pool. To use separate instructions for the training pool, deselect **Use project instructions**. Don't forget to update the training instructions if you change something in the general task instructions.
-#### What do I do if the radio button attributes are displayed correctly in the preview, but disappear after saving?
+
+{% endcut %}
+
+{% cut "What do I do if the radio button attributes are displayed correctly in the preview, but disappear after saving?" %}
 
 If the tags or attributes disappear after you save the instructions (for example, `checked="true"`), it means that they are not supported. For the full list of tags that can be used in the instructions, see the [Guide](instruction.md#html-yes).
 
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
