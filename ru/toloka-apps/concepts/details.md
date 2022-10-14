@@ -32,7 +32,7 @@
 
 ## Когда использовать {#when-to-use}
 
-Вы можете выбирать между Bespoke и [Self-service-проектами](https://toloka.ai/ru/docs/guide/concepts/overview.html#project).
+Вы можете выбирать между Bespoke и [Self-service-проектами](../../guide/concepts/overview.md#project).
 
 **В каких случаях стоит выбрать Bespoke:**
 

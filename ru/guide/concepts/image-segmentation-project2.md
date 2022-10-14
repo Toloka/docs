@@ -1,16 +1,16 @@
 # Проект 2. Выделить объект на изображении
 
-В этом [проекте](../../glossary.md#project-ru) исполнители будут выделять области изображений, содержащие дорожный знак. В качестве исходных изображений используйте результаты из [первого проекта](image-segmentation-project1.md).
+В этом [проекте](../../glossary.md#project) исполнители будут выделять области изображений, содержащие дорожный знак. В качестве исходных изображений используйте результаты из [первого проекта](image-segmentation-project1.md).
 
 ## Создайте проект {#create-project}
 
 #### В интерфейсе:
 
-1. Выберите шаблон:
+1. Выберите пресет:
 
-    1. Нажмите кнопку **Создать проект**.
-    1. Выберите шаблон **Распознавание объектов и выделение областей**.
-    1. Нажмите **Использовать решение**.
+    1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать проект**{% endif %}{% if locale == "en-com" %}**Create a project**{% endif %}.
+    1. Выберите пресет {% if locale == "ru-ru" %}**Распознавание объектов и выделение областей**{% endif %}{% if locale == "en-com" %}**Object recognition & detection**{% endif %}.
+    1. Нажмите {% if locale == "ru-ru" %}**Использовать решение**{% endif %}{% if locale == "en-com" %}**Choose solution**{% endif %}.
 
 1. Заполните общую информацию:
 
@@ -20,67 +20,73 @@
 
 1. {% include [toloka-requester-source-edit-interface](../_includes/toloka-requester-source/id-toloka-requester-source/edit-interface.md) %}
 
-    #### Конструктор шаблонов
+    {% list tabs %}
 
-    1. Вы можете воспользоваться {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TwQpa){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+    - Конструктор шаблонов
 
-    Исполнитель не сможет отправить задание, если не выделит области изображений.
+      1. Вы можете воспользоваться {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TwQpa){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
 
-    Подробнее в Справке конструктора о шаблоне [Выделение объектов на картинке]({{ tb-select-areas }}) и о его настройках.
+          Исполнитель не сможет отправить задание, если не выделит области изображений.
 
-    1. Чтобы увидеть поля входных и выходных данных, в разделе {% if locale == "ru-ru" %}**Спецификация данных**{% endif %}{% if locale == "en-com" %}**Data specification**{% endif %} нажмите {% if locale == "ru-ru" %}**Показать спецификации**{% endif %}{% if locale == "en-com" %}**Show specifications**{% endif %}.
+          Подробнее в Справке конструктора о шаблоне [Выделение объектов на картинке]({{ tb-select-areas }}) и о его настройках.
 
-    - Поле входных данных: `image` — строка для загрузки картинки.
+      1. Чтобы увидеть поля входных и выходных данных, в разделе {% if locale == "ru-ru" %}**Спецификация данных**{% endif %}{% if locale == "en-com" %}**Data specification**{% endif %} нажмите {% if locale == "ru-ru" %}**Показать спецификации**{% endif %}{% if locale == "en-com" %}**Show specifications**{% endif %}.
 
-    - Поле выходных данных: `result` — поле, в которое будет занесена информация о разметке загруженного изображения.
+          - Поле входных данных: `image` — строка для загрузки картинки.
 
-    #### Редактор HTML/CSS/JS
+          - Поле выходных данных: `result` — поле, в которое будет занесена информация о разметке загруженного изображения.
 
-    1. В блоке {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} оставьте без изменений блок **HTML**.
+    - Редактор HTML/CSS/JS
 
-    1. Отредактируйте блок **CSS**:
+      1. В блоке {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} оставьте без изменений блок **HTML**.
 
-    1. Настройте инструменты выделения области. В этом шаблоне используется [Редактор для выделения области](t-components/image-annotation.md). Для него доступны инструменты прямоугольник и многоугольник (по умолчанию).
+      1. Отредактируйте блок **CSS**:
 
-    Чтобы настроить выделение прямоугольником, замените код в блоке **CSS** на указанный:
-    ```
-    .image-annotation-editor__shape-polygon {
-    display: none;
-    }
-    ```
+      1. Настройте инструменты выделения области. В этом шаблоне используется [Редактор для выделения области](t-components/image-annotation.md). Для него доступны инструменты прямоугольник и многоугольник (по умолчанию).
 
-    1. Введите код для настройки высоты интерфейса по размеру изображения:
+          Чтобы настроить выделение прямоугольником, замените код в блоке **CSS** на указанный:
 
-    ```
-    .image-annotation-editor__annotation-layer {
-    height: max-content;
-    }
-    ```
+          ```css
+          .image-annotation-editor__shape-polygon {
+          display: none;
+          }
+          ```
 
-    1. **(опционально)** Вы можете попросить исполнителей ввести аннотацию к выделенной области или выбрать ее из списка. Для этого в блоке **JS** добавьте элемент интерфейса. Например, текстовое поле или выпадающий список.
+      1. Введите код для настройки высоты интерфейса по размеру изображения:
 
-    Подробнее об [аннотации](t-components/image-annotation.md#annotation).
+          ```css
+          .image-annotation-editor__annotation-layer {
+          height: max-content;
+          }
+          ```
 
-    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. **(опционально)** Вы можете попросить исполнителей ввести аннотацию к выделенной области или выбрать ее из списка. Для этого в блоке **JS** добавьте элемент интерфейса. Например, текстовое поле или выпадающий список.
 
-    {% note info %}
+          Подробнее об [аннотации](t-components/image-annotation.md#annotation).
 
-    В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
-    {% endnote %}
+          {% note info %}
 
-    1. В открывшемся окне проверьте работу опций задания. И в правом нижнем углу нажмите кнопку {% if locale == "ru-ru" %}**Отправить**{% endif %}{% if locale == "en-com" %}**Submit**{% endif %}.
+          В предварительном просмотре проекта отображается одно задание со стандартными данными. Количество заданий на странице вы сможете настроить далее.
 
-    1. Выйдите из режима предпросмотра. В нижнем левом углу нажмите кнопку {% if locale == "ru-ru" %}**Выйти**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "ru-ru" %}** → Выйти**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . Если при тестировании задания были ошибки — проверьте блоки кода, которые вы вводили.
+          {% endnote %}
+
+      1. В открывшемся окне проверьте работу опций задания. И в правом нижнем углу нажмите кнопку {% if locale == "ru-ru" %}**Отправить**{% endif %}{% if locale == "en-com" %}**Submit**{% endif %}.
+
+      1. Выйдите из режима предпросмотра. В нижнем левом углу нажмите кнопку {% if locale == "ru-ru" %}**Выйти**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "ru-ru" %}** → Выйти**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . Если при тестировании задания были ошибки — проверьте блоки кода, которые вы вводили.
+
+    {% endlist %}
 
 1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
 1. Напишите инструкцию для исполнителей:
 
     #### Текст инструкции
+
     Нажмите кнопку ![](../_images/tutorials/image-segmentation/rectangle-button.png) и обведите прямоугольником все дорожные знаки на изображении.
 
-    {% note info %}
+    {% note tip %}
 
     Если вы хотите добавить в инструкцию примеры выполнения задания, выполните его самостоятельно в режиме предпросмотра. Сделайте скриншоты, загрузите их на фотохостинг{% if locale == "ru-ru" %}, ваш Яндекс Диск{% endif %} или в облачное хранилище и вставьте ссылки на изображения в инструкцию, нажав кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) на панели инструментов.
 
@@ -101,6 +107,7 @@
 1. {% if locale == "ru-ru" %}
     (опционально) Укажите **Приватный комментарий**{% if locale == "en-com" %}**Private comment**{% endif %}. Эта информация доступна только вам.
     {% endif %}
+
 1. В блоке {% if locale == "ru-ru" %}**Аудитория**{% endif %}{% if locale == "en-com" %}**Audience**{% endif %} в разделе {% if locale == "ru-ru" %}**Исполнители**{% endif %}{% if locale == "en-com" %}**Performers**{% endif %} отфильтруйте исполнителей:
 
     1. Нажмите {% if locale == "ru-ru" %}**Добавить фильтр**{% endif %}{% if locale == "en-com" %}**Add filter**{% endif %}.
@@ -119,7 +126,7 @@
 
 1. В блоке {% if locale == "ru-ru" %}**Цена**{% endif %}{% if locale == "en-com" %}**Price**{% endif %} в поле {% if locale == "ru-ru" %}**Цена за страницу заданий**{% endif %}{% if locale == "en-com" %}**Price per task suite**{% endif %} укажите цену. Например, `0.01`.
 
-    #### Что такое страница заданий?
+    {% cut "Что такое страница заданий?" %}
 
     На одной странице может отображаться одно или несколько заданий. Если задания простые, то можно добавлять 10–20 заданий на одну страницу. Не рекомендуем создавать длинные страницы, поскольку это снизит скорость загрузки данных у исполнителя.
 
@@ -127,72 +134,89 @@
 
     Количество заданий на странице вы определите при [загрузке заданий](#smart-mixing).
 
-    #### Как определить справедливую цену?
+    {% endcut %}
+
+    {% cut "Как определить справедливую цену?" %}
 
     Общее правило формирования цены — чем больше времени исполнитель тратит на выполнение, тем выше цена.
 
     Вы можете зарегистрироваться в Толоке как исполнитель и узнать, сколько платят другие заказчики за задания.
 
+    {% endcut %}
+
 1. [Правила контроля качества](control.md) позволяют отсеивать невнимательных исполнителей. В блоке {% if locale == "ru-ru" %}**Контроль качества**{% endif %}{% if locale == "en-com" %}**Quality control**{% endif %} задайте правила для пула:
 
     1. Включите опцию {% if locale == "ru-ru" %}**Отложенная приёмка**{% endif %}{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}.
 
-    #### Что такое отложенная приемка?
+        {% cut "Что такое отложенная приемка?" %}
 
-    [Отложенная приемка](offline-accept.md) позволяет вам просматривать [выполненные страницы заданий](../../glossary.md#submitted-answers-ru) перед тем, как принять их и заплатить исполнителю. Задания, выполненные в несоответствии с инструкцией, можно отклонять. Максимальный срок проверки устанавливается в поле **Срок проверки**.
+        [Отложенная приемка](offline-accept.md) позволяет вам просматривать [выполненные страницы заданий](../../glossary.md#submitted-answers) перед тем, как принять их и заплатить исполнителю. Задания, выполненные в несоответствии с инструкцией, можно отклонять. Максимальный срок проверки устанавливается в поле **Срок проверки**.
 
-    В поле {% if locale == "ru-ru" %}**Срок проверки в днях**{% endif %}{% if locale == "en-com" %}**Review period in days**{% endif %} укажите количество дней на проверку задания.
+        {% endcut %}
+
+        В поле {% if locale == "ru-ru" %}**Срок проверки в днях**{% endif %}{% if locale == "en-com" %}**Review period in days**{% endif %} укажите количество дней на проверку задания.
 
     1. Добавьте следующие правила контроля качества:
-    - {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — отправляет отклоненные вами задания другим исполнителям по заданным правилам.
 
-    1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+        - {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — отправляет отклоненные вами задания другим исполнителям по заданным правилам.
 
-    1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
+            1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-    1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**задание становится отклоненным**{% endif %}{% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, то {% if locale == "ru-ru" %}**увеличить перекрытие**{% endif %}{% if locale == "en-com" %}**extend overlap by**{% endif %} на **1**. А также включите опцию {% if locale == "ru-ru" %}**Открыть пул, если закрыт**{% endif %}{% if locale == "en-com" %}**Open pool if closed**{% endif %}.
+            1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Обработка отклоненных и принятых заданий**{% endif %}{% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
 
-    Это означает, что отклоненное задание будет возвращено в пул и показано еще одному исполнителю.
+            1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**задание становится отклоненным**{% endif %}{% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, то {% if locale == "ru-ru" %}**увеличить перекрытие**{% endif %}{% if locale == "en-com" %}**extend overlap by**{% endif %} на **1**. А также включите опцию {% if locale == "ru-ru" %}**Открыть пул, если закрыт**{% endif %}{% if locale == "en-com" %}**Open pool if closed**{% endif %}.
 
-    - {% if locale == "ru-ru" %}**Выполненные задания**{% endif %}{% if locale == "en-com" %}**Submitted responses**{% endif %} — позволяет ограничить количество заданий, которое доступно исполнителю в пуле за сутки.
+            {% if locale == "ru-ru" %}![](../_images/other/rejected-accepted-tasks.png){% endif %}
 
-    1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+        Это означает, что отклоненное задание будет возвращено в пул и показано еще одному исполнителю.
 
-    1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Выполненные задания**{% endif %}{% if locale == "en-com" %}**Submitted responses**{% endif %}.
+        - {% if locale == "ru-ru" %}**Выполненные задания**{% endif %}{% if locale == "en-com" %}**Submitted responses**{% endif %} — позволяет ограничить количество заданий, которое доступно исполнителю в пуле за сутки.
 
-    1. Задайте правило для выполненного задания: если {% if locale == "ru-ru" %}**отправленных страниц заданий**{% endif %}{% if locale == "en-com" %}**submitted assignments**{% endif %} **≥ 1**, то {% if locale == "ru-ru" %}**установить значение навыка**{% endif %}{% if locale == "en-com" %}**assign skill value**{% endif %} **Выделение областей** равным **1**.
+            1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-    Такие параметры позволят отметить исполнителя, выполнившего хотя бы одно задание в пуле.
+            1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Выполненные задания**{% endif %}{% if locale == "en-com" %}**Submitted responses**{% endif %}.
 
-    {% note info %}
+            1. Задайте правило для выполненного задания: если {% if locale == "ru-ru" %}**отправленных страниц заданий**{% endif %}{% if locale == "en-com" %}**submitted assignments**{% endif %} **≥ 1**, то {% if locale == "ru-ru" %}**установить значение навыка**{% endif %}{% if locale == "en-com" %}**assign skill value**{% endif %} **Выделение областей** равным **1**.
 
-    Если навык **Выделение областей** не отображается в списке, сохраните пул и откройте его заново для редактирования.
+            {% if locale == "ru-ru" %}![](../_images/tutorials/image-segmentation/select-object-tutorial2.png){% endif %}
 
-    {% endnote %}
+            Такие параметры позволят отметить исполнителя, выполнившего хотя бы одно задание в пуле.
 
-    - {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Fast responses**{% endif %} — отсеивает исполнителей, которые отвечают слишком быстро.
+            {% note tip %}
 
-    1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+            Если навык **Выделение областей** не отображается в списке, сохраните пул и откройте его заново для редактирования.
 
-    1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Fast responses**{% endif %}.
+            {% endnote %}
 
-    1. В поле {% if locale == "ru-ru" %}**Учитывать последних страниц заданий**{% endif %}{% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `5`.
-    1. В поле {% if locale == "ru-ru" %}**Минимальное время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} укажите время в секундах. Например, `20`.
-    1. Задайте правило для быстрого ответа: если {% if locale == "ru-ru" %}**количество быстрых ответов**{% endif %}{% if locale == "en-com" %}**number of fast responses**{% endif %}**≥ 1**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Быстрые ответы**.
+        - {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Fast responses**{% endif %} — отсеивает исполнителей, которые отвечают слишком быстро.
 
-    Это означает, что если исполнитель выполнит хотя бы одну [страницу заданий](../../glossary.md#task-page-ru) быстрее чем за 20 секунд, он будет заблокирован и не сможет больше выполнять ваши задания 10 дней.
+            1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-    - {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %} — ограничивает доступ к пулу исполнителей, которые часто ошибаются.
+            1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Fast responses**{% endif %}.
 
-    1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+            1. В поле {% if locale == "ru-ru" %}**Учитывать последних страниц заданий**{% endif %}{% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `5`.
 
-    1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %}.
+            1. В поле {% if locale == "ru-ru" %}**Минимальное время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} укажите время в секундах. Например, `20`.
 
-    1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**количество проверенных ответов**{% endif %}{% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** и {% if locale == "ru-ru" %}**процент отклоненных ответов**{% endif %}{% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35** то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**15 дней**{% endif %}{% if locale == "en-com" %}**15 days**{% endif %}.
+            1. Задайте правило для быстрого ответа: если {% if locale == "ru-ru" %}**количество быстрых ответов**{% endif %}{% if locale == "en-com" %}**number of fast responses**{% endif %}**≥ 1**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Быстрые ответы**.
 
-    Это означает, что если 35% и более ответов исполнителя будут отклонены, он будет заблокирован и не сможет больше выполнять ваши задания 15 дней. Правило начинает действовать после проверки 3 ответов исполнителя.
+            {% if locale == "ru-ru" %}![](../_images/other/fast-answers2.png){% endif %}
 
-    [Контрольные задания](../../glossary.md#control-task-ru) и [мнение большинства](../../glossary.md#majority-vote-ru) не используются для такого типа проектов, так как разметка областей, предоставленная исполнителями, должна совпадать (что практически невозможно). Подробнее о контроле качества читайте в разделе [Контроль качества](control.md).
+            Это означает, что если исполнитель выполнит хотя бы одну [страницу заданий](../../glossary.md#task-suite) быстрее чем за 20 секунд, он будет заблокирован и не сможет больше выполнять ваши задания 10 дней.
+
+        - {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %} — ограничивает доступ к пулу исполнителей, которые часто ошибаются.
+
+            1. Нажмите {% if locale == "ru-ru" %}**Добавить правило контроля качества**{% endif %}{% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+
+            1. Найдите в списке блок {% if locale == "ru-ru" %}**Правила**{% endif %}{% if locale == "en-com" %}**Rules**{% endif %} и выберите пункт {% if locale == "ru-ru" %}**Результаты проверки**{% endif %}{% if locale == "en-com" %}**Results of assignment review**{% endif %}.
+
+            1. Задайте правило для отклоненного задания: если {% if locale == "ru-ru" %}**количество проверенных ответов**{% endif %}{% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** и {% if locale == "ru-ru" %}**процент отклоненных ответов**{% endif %}{% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35** то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**у меня**{% endif %}{% if locale == "en-com" %}**on requester**{% endif %} на {% if locale == "ru-ru" %}**15 дней**{% endif %}{% if locale == "en-com" %}**15 days**{% endif %}.
+
+            {% if locale == "ru-ru" %}![](../_images/other/offline-accept.png){% endif %}
+
+            Это означает, что если 35% и более ответов исполнителя будут отклонены, он будет заблокирован и не сможет больше выполнять ваши задания 15 дней. Правило начинает действовать после проверки 3 ответов исполнителя.
+
+    [Контрольные задания](../../glossary.md#control-task) и [мнение большинства](../../glossary.md#majority-vote) не используются для такого типа проектов, так как разметка областей, предоставленная исполнителями, должна совпадать (что практически невозможно). Подробнее о контроле качества читайте в разделе [Контроль качества](control.md).
 
     {% note info %}
 
@@ -205,19 +229,19 @@
 1. В блоке {% if locale == "ru-ru" %}**Дополнительные настройки**{% endif %}{% if locale == "en-com" %}**Additional settings**{% endif %} укажите значение поля {% if locale == "ru-ru" %}**Время на страницу заданий**{% endif %}{% if locale == "en-com" %}**Time per task suite**{% endif %}. Времени должно быть достаточно, в том числе для чтения инструкции и загрузки задания. Например, `1200` секунд.
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать пул**{% endif %}{% if locale == "en-com" %}**Create a pool**{% endif %}.
 
-
 ## Подготовьте и загрузите задания {#upload-file}
 
-1. Подготовьте [файл с заданиями](../../glossary.md#tsv-file-definition-ru).
+1. Подготовьте [файл с заданиями](../../glossary.md#tsv-file-definition).
 
     1. Откройте в редакторе текста или электронных таблиц файл, полученный после агрегации результатов в [первом проекте](image-segmentation-project1.md).
 
     1. Выберите изображения, подходящие для текущего проекта (значение **OK**).
 
-    {% note info %}
+    {% note tip %}
 
     Для отбора изображений на устройствах с Linux и MacOS вы можете воспользоваться командами awk:
-    ```
+
+    ```shell
     awk 'BEGIN {OFS = FS = "\t";} $2=/OK/ {print $1}' <aggregated_res>.tsv > <filtered_res>.tsv
     ```
 
@@ -245,12 +269,11 @@
 
 1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
 
-    {% note warning %}
+    {% note alert %}
 
     Поставленные задачи выполнят настоящие исполнители Толоки. Перепроверьте конфигурацию вашего проекта перед запуском пула.
 
     {% endnote %}
-
 
 ## Получите результаты {#get-results}
 
@@ -262,11 +285,13 @@
 
     1. Отключите опцию {% if locale == "ru-ru" %}**Разделять ответы пустой строкой**{% endif %}{% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.
 
+    {% if locale == "ru-ru" %}
+    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
+    {% endif %}
+
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
 
 1. Используйте файл с результатами в [третьем проекте](image-segmentation-project3.md).
-
-
 
 ## Что дальше {#what-next}
 

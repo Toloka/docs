@@ -1,2 +1,1 @@
-
-Выберите шаблон {% if locale == "ru-ru" %}**Поиск фотографий товаров**{% endif %}{% if locale == "en-com" %}**Product photo search**{% endif %}.
+Выберите пресет {% if locale == "ru-ru" %}**Поиск фотографий товаров**{% endif %}{% if locale == "en-com" %}**Product photo search**{% endif %}.

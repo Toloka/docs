@@ -2,18 +2,15 @@
 
 {% include [toloka-requester-source-html-editor-tb](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-
 Все аспекты [жизненного цикла](#lifecycle) заданий контролируются тремя JavaScript-классами:
 
 - [Assignment](js/assignment.md) управляет ходом выполнения задания, обрабатывает команды страницы заданий на отправку ответов, пропуск, приостановку задания и т. п. Также он создает экземпляр класса [TaskSuite](js/tasksuite.md).
 
-- [TaskSuite](js/tasksuite.md) — «класс-обертка» для интерфейса [страницы заданий](../../glossary.md#task-page-ru). Вы можете переопределить этот класс, чтобы, например, отобразить общий элемент на этой странице.
+- [TaskSuite](js/tasksuite.md) — «класс-обертка» для интерфейса [страницы заданий](../../glossary.md#task-suite). Вы можете переопределить этот класс, чтобы, например, отобразить общий элемент на этой странице.
 
 - [Task](js/task.md) отвечает за отрисовку и валидацию отдельного задания. Если от задания требуется нестандартное поведение, как правило, следует расширять именно его.
 
-
 Для решения специфических задач, таких как подписка на нажатие клавиш или получение GPS-координат исполнителя, можно использовать [сервисы](js/services.md).
-
 
 ## Жизненный цикл задания {#lifecycle}
 
@@ -34,7 +31,6 @@
 #### Удаление
 
 Когда исполнитель закончил все задания на странице или [пропустил](pool_statistic-pool.md#skipped-tasks) ее, вызывается метод [`destroy()`](js/tasksuite.md#destroy) класса `TaskSuite`. Он вызывает метод [`destroy()`](js/task.md#destroy) класса `Task` для каждого задания. Эти методы освобождают ресурсы и удаляют сервисы и обработчики событий, связанные с заданиями.
-
 
 ## Наследование классов {#inherit}
 
@@ -64,12 +60,13 @@ var ChildClass = extend(ParentClass, function() {
 })
 ```
 
-
 ## Типы данных {#data-spec-adv}
 
 Объект `Task` — задание.
- {% if locale == "ru-ru" %}
-```no-highlight
+
+{% if locale == "ru-ru" %}
+
+```json
 {
     "id": <строка>,
     "input_values": {
@@ -78,8 +75,10 @@ var ChildClass = extend(ParentClass, function() {
      }
 }
 ```
+
 {% endif %}{% if locale == "en-com" %}
-```no-highlight
+
+```json
 {
     "id": <string>,
     "input_values": {
@@ -88,20 +87,29 @@ var ChildClass = extend(ParentClass, function() {
      }
 }
 ```
+
 {% endif %}
 
-Ключ
- |
-Значение
+#|
+||**Ключ**|**Значение**||
+||`id` | Идентификатор задания.||
+||`input_values` | Входные данные задания в формате `"<id поля>":"<значение поля>"`.
 
------ | -----
-`id` | Идентификатор задания.
-`input_values` | Входные данные задания в формате `"<id поля>":"<значение поля>"`. Пример:```no-highlight "input_values": {   "image": "http://images.com/1.png" } ```
+Пример:
 
+```json
+"input_values": {
+    "image": "http://images.com/1.png"
+}
+```
+||
+|#
 
 Объект `Solution` — ответ исполнителя на задание.
- {% if locale == "ru-ru" %}
-```no-highlight
+
+{% if locale == "ru-ru" %}
+
+```json
 {
     "task_id": <строка>,
     "output_values": {
@@ -110,8 +118,10 @@ var ChildClass = extend(ParentClass, function() {
     }
 }
 ```
+
 {% endif %}{% if locale == "en-com" %}
-```no-highlight
+
+```json
 {
     "task_id": <string>,
     "output_values": {
@@ -120,20 +130,30 @@ var ChildClass = extend(ParentClass, function() {
     }
 }
 ```
+
 {% endif %}
 
-Ключ
- |
-Значение
+#|
+||**Ключ**|**Значение**||
+||`task_id` | Идентификатор задания.||
+||`output_values` | Ответы в формате `"<id поля ввода>":"<значение>"`.
 
------ | -----
-`task_id` | Идентификатор задания.
-`output_values` | Ответы в формате `"<id поля ввода>":"<значение>"`. Пример: ```no-highlight "outputValues": {   "colour": "white",   "comment": "So white" } ```
+Пример:
 
+```json
+"outputValues": {
+    "colour": "white",
+    "comment": "So white"
+}
+```
+||
+|#
 
 Объект `SolutionValidationError` — ошибка валидации ответа исполнителя.
- {% if locale == "ru-ru" %}
-```no-highlight
+
+{% if locale == "ru-ru" %}
+
+```json
 {
     "task_id": string,
     "errors": {
@@ -145,8 +165,10 @@ var ChildClass = extend(ParentClass, function() {
     }
 }
 ```
+
 {% endif %}{% if locale == "en-com" %}
-```no-highlight
+
+```json
 {
     "task_id": string,
     "errors": {
@@ -158,14 +180,39 @@ var ChildClass = extend(ParentClass, function() {
     }
 }
 ```
+
 {% endif %}
 
-Ключ
- |
-Значение
+#|
+||**Ключ**|**Значение**||
+||`task_id` | Идентификатор задания.||
+||`errors` | Ошибки в формате: `"<id поля ввода>": {code: "<код ошибки>", message: "<сообщение об ошибке>"}`.
 
------ | -----
-`task_id` | Идентификатор задания.
-`errors` | Ошибки в формате: `"<id поля ввода>": {code: "<код ошибки>", message: "<сообщение об ошибке>"}`. Пример: {% if locale == "ru-ru" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Обязательное поле"   } } ```{% endif %} {% if locale == "en-com" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
+Пример:
+
+{% if locale == "ru-ru" %}
+
+```json
+"errors": {
+    "colour": {
+        "code": "REQUIRED",
+        "message": "Обязательное поле"
+    }
+}
+```
+
+{% endif %}{% if locale == "en-com" %}
+
+```json
+"errors": {
+    "colour": {
+        "code": "REQUIRED",
+        "message": "Required field"
+    }
+}
+```
+
+{% endif %}||
+|#
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -2,7 +2,6 @@
 
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
-
 Этот класс управляет ходом выполнения задания, обрабатывает команды страницы заданий на отправку ответов, пропуск, приостановку задания и т. п. Также он создает экземпляр класса [TaskSuite](tasksuite.md).
 
 Базовый класс `Assignment` доступен в глобальной переменной `window.TolokaAssignment`.
@@ -16,7 +15,9 @@
 Параметры:
 
 - `options.assignment` — модель списка задания `Assignment`.
-- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data-ru), интерфейса заданий.
+
+- `options.specs` — параметры [входных и выходных данных](../../../glossary.md#input-output-data), интерфейса заданий.
+
 - `options.workspaceOptions` — параметры инициализации рабочего пространства исполнителя.
 
 #### destroy()
@@ -28,6 +29,7 @@
 Инициализатор обработчиков горячих клавиш:
 
 - Сбрасывает все горячие клавиши ([`hotkeys.reset`](services.md#reset)).
+
 - При нажатии клавиши Enter вызывает метод [`submit()`](#Submit).
 
 #### getId()
@@ -38,7 +40,7 @@
 
 Возвращает объект с набором параметров, переданных методу `constructor()` при инициализации.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // getting specifications for all required fields:
@@ -48,11 +50,13 @@ let outputSpec = this.getOptions().specs.output_spec,
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
 
+{% endcut %}
+
 #### getSandboxChannel()
 
 Возвращает ссылку на активный канал для обмена сообщениями между родительской страницей и фреймом задания. Если канала нет, создает его.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 // subscribe to all messages and show them
@@ -62,6 +66,8 @@ this.getSandboxChannel().on('*', (name, message) => console.log(message));
 // there is also a separate service for this TaskInterface
 this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 ```
+
+{% endcut %}
 
 #### getTaskSuite()
 
@@ -78,9 +84,13 @@ this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 Наиболее важные настройки:
 
 - `agent` — для заданий в полной версии принимает значение `FRONTEND`, в мобильном приложении для Android — `ANDROID` и т. д.
+
 - `isReadOnly` — флаг режима «только для чтения» (например, просмотр истории выполненных заданий).
+
 - `isReviewMode` — флаг режима ревью (например, приемка выполненных заданий). Этой настройкой и `isReadOnly` удобно пользоваться, если вы, например, захотите изменить компоновку шаблона в режиме просмотра истории.
+
 - `language` — двухбуквенный код языка, выбранного исполнителем в настройках Толоки. Им удобно пользоваться для создания многоязычных шаблонов.
+
 - `origin` — FQDN родительской страницы.
 
 #### pause()
@@ -93,7 +103,7 @@ this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 
 - `strategy`: функция, которая отправляет в родительскую страницу сообщение об отправке результатов (`assignment:submit`), массив ответов и `assignmentId`.
 
-#### Пример
+{% cut "Пример" %}
 
 ```javascript
 provideSolutions(strategy = function(solutions) {
@@ -114,6 +124,8 @@ provideSolutions(strategy = function(solutions) {
             });
     }
 ```
+
+{% endcut %}
 
 #### resume()
 

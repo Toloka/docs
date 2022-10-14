@@ -1,2 +1,1 @@
-
-Напишите краткую и ясную [инструкцию](../../../../glossary.md#task-instruction-ru).
+Напишите краткую и ясную [инструкцию](../../../../glossary.md#task-instruction).

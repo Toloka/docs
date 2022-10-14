@@ -522,7 +522,7 @@ items:
         href: guide/troubleshooting/finance.md
       - name: Исполнители
         href: guide/troubleshooting/users.md
-      - name: Вопросы о шаблонах
+      - name: Вопросы о пресетах
         href: guide/troubleshooting/questions-about-templates.md
       - name: Служба поддержки
         href: guide/troubleshooting/support.md
