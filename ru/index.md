@@ -82,8 +82,8 @@ h3 {
     </div>
     <div class="grid-item">
         <h3>Python SDK</h3>
-        <p><a href="toloka-kit/">Toloka-Kit</a></p>
-        <p><a href="crowd-kit/">Crowd-Kit</a></p>
+        <p><a href="https://toloka.ai/en/docs/toloka-kit/">Toloka-Kit</a></p>
+        <p><a href="https://toloka.ai/en/docs/crowd-kit/">Crowd-Kit</a></p>
     </div>
 </div>
 

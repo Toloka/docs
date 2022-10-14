@@ -80,7 +80,7 @@
 
 [Описание метода Дэвида — Скина](https://www.jstor.org/stable/2346806){% if locale == "ru-ru" %} на английском{% endif %}.
 
-Если вы хотите узнать, как метод Дэвида — Скина реализован в Толоке, ознакомьтесь с [документацией Crowd-Kit](../../../en/crowd-kit/reference/crowdkit.aggregation.classification.dawid_skene.DawidSkene.md).
+Если вы хотите узнать, как метод Дэвида — Скина реализован в Толоке, ознакомьтесь с [документацией Crowd-Kit](https://toloka.ai/en/docs/crowd-kit/reference/crowdkit.aggregation.classification.dawid_skene.DawidSkene.md).
 
 {% endcut %}
 
