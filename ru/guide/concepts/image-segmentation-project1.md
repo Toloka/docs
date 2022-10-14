@@ -112,21 +112,22 @@
           Поля выходных данных создаются на основе того, в каких компонентах используются `data.output`, а также какие значения в нем разрешены.
 
           Подробнее о [полях входных и выходных данных]({{ tb-create-specs }}) в Справке конструктора шаблона.
+
           - Поле входных данных: `image` — ссылка для загрузки картинки.
 
           Измените тип данных на строку, чтобы использовать ссылки на свои файлы{% if locale == "ru-ru" %} или [загружать картинки](prepare-data.md#interface), хранящиеся на Яндекс Диске{% endif %}.
 
           - Поле выходных данных: `result` — строка, в которую будет записан ответ исполнителя.
 
-          {% cut "Что такое входные и выходные данные?" %}
+              {% cut "Что такое входные и выходные данные?" %}
 
-          {% include [toloka-requester-source-input-data](../_includes/toloka-requester-source/id-toloka-requester-source/input-data.md) %}
+              {% include [toloka-requester-source-input-data](../_includes/toloka-requester-source/id-toloka-requester-source/input-data.md) %}
 
-          {% include [toloka-requester-source-output-data](../_includes/toloka-requester-source/id-toloka-requester-source/output-data.md) %}
+              {% include [toloka-requester-source-output-data](../_includes/toloka-requester-source/id-toloka-requester-source/output-data.md) %}
 
-          {% include [toloka-requester-source-tb-spec](../_includes/toloka-requester-source/id-toloka-requester-source/tb-spec.md) %}
+              {% include [toloka-requester-source-tb-spec](../_includes/toloka-requester-source/id-toloka-requester-source/tb-spec.md) %}
 
-          {% endcut %}
+              {% endcut %}
 
     - Редактор HTML/CSS/JS
 
