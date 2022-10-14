@@ -1,87 +1,21 @@
 default:
   region: ru
   locale: ru-ru
-  amazon-console: https://console.aws.amazon.com/console/home?nc2=h_ct&src=header-signin
-  amazon-s3-about: https://aws.amazon.com/s3/?nc1=h_ls
-  amazon-s3-bucket-naming: https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucketnamingrules.html
-  amazon-s3-console: https://s3.console.aws.amazon.com/s3/home
-  amazon-s3-free: https://aws.amazon.com/free
-  amazon-s3-tags: https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html
-  amazon-s3-ttl: https://aws.amazon.com/ru/blogs/aws/amazon-s3-object-expiration/
-  android-app: https://play.google.com/store/apps/details?id=com.yandex.toloka.androidapp
   api-toloka: https://yandex.com/dev/toloka/
-  api-toloka-attachments: https://toloka.ai/en/docs/api/concepts/attachments
-  api-toloka-create-pool: https://toloka.ai/en/docs/api/concepts/create-pool
-  api-toloka-create-task: https://toloka.ai/en/docs/api/concepts/create-task
-  api-toloka-tasks-merge: https://toloka.ai/en/docs/api/concepts/tasks#tasks__task-merge
   appeal: https://toloka.ai/tolokers/docs/web/priemka.html?lang=en#priemka__appeal
-  authorization-phone: https://yandex.com/support/passport/authorization/phone.html
-  aws: https://aws.amazon.com/getting-started/hands-on/backup-files-to-amazon-s3/?nc1=h_ls
-  azure-blob: https://docs.microsoft.com/en-us/azure/storage/blobs/storage-blobs-introduction
-  azure-free: https://azure.microsoft.com/en-us/free/
-  azure-home: https://portal.azure.com/?quickstart=true#home
-  azure-sign-up: https://signup.azure.com/signup
-  azure-ttl: https://docs.microsoft.com/en-us/azure/cdn/cdn-manage-expiration-of-blob-content
-  baies: https://en.wikipedia.org/wiki/Bayes%27_theorem
   balance: https://balance.yandex.com/index.xml?LANG=en
-  balance-acts-settlements: https://yandex.ru/support/balance/operations/acts-settlements.html
-  balance-support: https://yandex.ru/support/balance/index.html
-  blank: https://platform.toloka.ai/requester/new/project/old?templateId=blank
   certified-agencies-ru: https://toloka.ai/ru/certified-agencies
   certified-specialists-ru: https://toloka.ai/ru/certified-specialists
-  change-phone: https://yandex.com/support/passport/authorization/phone.html#change
-  confidential: https://toloka.ai/legal/confidential/
   crowd-kit: https://toloka.ai/en/docs/crowd-kit/
-  customeragreement: https://toloka.ai/legal/customeragreement/
-  customeragreement-probki: https://toloka.ai/legal/customeragreement_probki/
-  customeragreement-usa: https://toloka.ai/legal/terms_of_offer_usa/
   datasets: https://toloka.ai/ru/datasets
-  developer-tools-safari: https://support.apple.com/en-gb/guide/safari/sfri20948/mac
   dollar-rate: https://news.yandex.ru/quotes/1.html
-  error-matrix: https://en.wikipedia.org/wiki/Confusion_matrix
-  get-operations-list: https://toloka.ai/en/docs/api/concepts/get-operations-list
-  google-account: https://cloud.google.com/storage/docs/lifecycle
-  google-cloud-about-bucket: https://cloud.google.com/storage/docs/naming-buckets?_ga=2.31332223.-1978071647.1627855306
-  google-cloud-free-trial: https://cloud.google.com/free?
-  google-cloud-home: https://console.cloud.google.com/projectselector2/storage/browser
-  google-cloud-storage: https://cloud.google.com/storage/docs/introduction
-  google-cloud-ttl: https://myaccount.google.com/
-  google-docs: https://support.google.com/docs/answer/40608?hl=en&ref_topic=1361470
   handlebarsjs-com: http://handlebarsjs.com/
-  hash-function-wiki: https://en.wikipedia.org/wiki/Hash_function
-  hints-questions: https://codepen.io/Toloka_projects/pen/NLvaYm
-  how-to-insert-a-calendar: https://codepen.io/Toloka_projects/pen/PVemPK
-  imageshack: https://imageshack.com/
-  imgbb: https://imgbb.com/
-  imgur: https://imgur.com/
-  instr-in-form-of-side-window: https://codepen.io/Toloka_projects/pen/YONRWq
   integration: https://platform.toloka.ai/requester/profile/integration
   invoices: https://balance.yandex.com/persons.xml?LANG=en
-  ios-app: https://apps.apple.com/us/app/yandex-toloka/id1282350367
   iso-lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   iso-search: https://www.iso.org/obp/ui/#search
-  json: https://www.json.org/json-ru.html
   json-format: https://tech.yandex.com/toloka/doc/concepts/tasks-docpage/?lang=en
-  json-schema: https://json-schema.org/learn/getting-started-step-by-step.html
-  libre-office: https://wiki.documentfoundation.org/Faq/Calc/012
-  link-for-download: https://cloud.yandex.com/docs/storage/operations/objects/link-for-download
-  messages: https://platform.toloka.ai/requester/messages
-  mobile-agreement: https://toloka.ai/tolokers/legal/toloka_mobile_agreement
-  mobile-mozilla: https://developer.mozilla.org/en-US/docs/Tools/Responsive_Design_Mode
-  ms-excel: https://support.microsoft.com/en-us/office/import-or-export-text-txt-or-csv-files-5250ac4c-663c-47ce-937b-339e391393ba?ui=en-us&rs=en-us&ad=us
-  object-storage: https://cloud.yandex.com/docs/storage/quickstart
-  operations: https://platform.toloka.ai/requester/operations
-  passport-profile: https://passport.toloka.ai/profile
-  passport-support: https://yandex.com/support/passport/troubleshooting/problems.html
-  paypal: https://www.paypal.com/home
   persons: https://balance.yandex.com/invoices.xml?LANG=en
-  phones: https://passport.toloka.ai/profile/phones
-  production-version: https://platform.toloka.ai/requester/
-  profile: https://platform.toloka.ai/requester/profile
-  project-with-checkboxes: https://codepen.io/Toloka_projects/pen/ErzmaM
-  project-with-drop-down-list: https://codepen.io/Toloka_projects/pen/eXgKLe
-  project-with-radiobutton: https://codepen.io/Toloka_projects/pen/vYGKZPz
-  register: https://passport.toloka.ai/registration?mode=register&retpath=https://platform.toloka.ai
   requester: https://toloka.ai/docs/guide/
   requester-access: https://toloka.ai/docs/guide/concepts/access.html
   requester-aggregations: https://toloka.ai/docs/guide/concepts/result-aggregation.html
@@ -116,29 +50,14 @@ default:
   requester-train: https://toloka.ai/docs/guide/concepts/train.html
   requester-troubleshooting: https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html
   requester-users: https://toloka.ai/docs/guide/concepts/users.html
-  restore: https://passport.toloka.ai/passport?mode=restore
   rfc4122: https://tools.ietf.org/html/rfc4122
   safari-mobile: https://support.apple.com/ru-ru/guide/safari-developer/dev84bd42758/mac
   sandbox: https://sandbox.toloka.yandex.com/for-requesters
-  sandbox-for-performers: https://sandbox.toloka.yandex.com/tasks
-  sandbox-profile: https://sandbox.toloka.yandex.com/requester/profile
-  sandbox-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
   sandbox-requester-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
   sandbox-workers: https://sandbox.toloka.yandex.com/requester/workers
-  selection-of-images-groups: https://codepen.io/Toloka_projects/pen/KJELbO
-  skills: https://platform.toloka.ai/requester/quality
-  statistical-significance: https://en.wikipedia.org/wiki/Statistical_significance
   tb-audio-transcript: https://toloka.ai/en/docs/template-builder/templates/audio-transcript
-  tb-conditions: https://toloka.ai/en/docs/template-builder/best-practices/conditions
-  tb-create-specs: https://toloka.ai/en/docs/template-builder/operations/create-specs
-  tb-image-classification: https://toloka.ai/en/docs/template-builder/templates/image-classification
-  tb-quickstart: https://toloka.ai/en/docs/template-builder/
-  tb-select-areas: https://toloka.ai/en/docs/template-builder/operations/select-areas
-  tb-video-moderation: https://toloka.ai/en/docs/template-builder/templates/video-moderation
-  template-builder: https://toloka.ai/en/docs/template-builder/
   templates-video: https://platform.toloka.ai/requester/new/project/old?templateId=video
   templates-video-new: https://platform.toloka.ai/requester/new/project/old?templateId=videoModeration
-  text-under-the-cut: https://codepen.io/Toloka_projects/pen/bzGQgX
   time-difference-utc: https://www.yandex.ru/search/?text=utc
   tk-create-task: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task
   tk-create-tasks: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_tasks
@@ -147,18 +66,9 @@ default:
   tk-create-tasks-suites: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites
   tk-create-tasks-suites-async: https://toloka.ai/en/docs/toloka-kit/reference/toloka.client.TolokaClient.create_task_suites_async
   toloka: https://toloka.ai/ru/
-  toloka-ai: https://toloka.ai
-  toloka-api: https://toloka.ai/en/docs/api/
-  toloka-api-stop-assigning-tasks: https://toloka.ai/en/docs/api/concepts/set-min-task-overlap
-  toloka-api-tasks: https://toloka.ai/en/docs/api/concepts/tasks
-  toloka-blog: https://toloka.ai/blog
   toloka-blog-create-tsv-file: https://yandex.ru/blog/toloka/tsv-file
-  toloka-blog-digest-en: https://toloka.ai/blog/toloka-digest
-  toloka-blog-edit-templates: https://yandex.ru/blog/toloka/edit-templates
-  toloka-blog-index: https://toloka.ai/blog/
   toloka-blog-interfaces-1: https://yandex.ru/blog/toloka/interfaces-9-rules-1
   toloka-blog-interfaces-2: https://yandex.ru/blog/toloka/interfaces-9-rules-2
-  toloka-blog-interfaces-en: https://toloka.ai/blog/effective-interface
   toloka-blog-new-templates: https://yandex.ru/blog/toloka/new-templates
   toloka-blog-performers-selection: https://yandex.ru/blog/toloka/performers-selection-training
   toloka-blog-performers-selection-exam: https://yandex.ru/blog/toloka/performers-selection-exam
@@ -168,50 +78,23 @@ default:
   toloka-blog-skill: https://yandex.ru/blog/toloka/skill
   toloka-blog-task-markup: https://yandex.ru/blog/toloka/task-markup
   toloka-blog-template-builder: https://yandex.ru/blog/toloka/template-builder
-  toloka-blog-template-builder-en: https://toloka.ai/blog/template-builder
   toloka-blog-tsv-file: https://yandex.ru/blog/toloka/tsv-file
   toloka-blog-tsv-file-2: https://yandex.ru/blog/toloka/tsv-file-2
   toloka-blog-yadisk: https://yandex.ru/blog/toloka/toloka-yandex-disk
-  toloka-facebook: https://www.facebook.com/tolokaglobal/
   toloka-feedback-sandbox: https://forms.yandex.com/surveys/10015613//?lang=en
-  toloka-github: https://github.com/toloka
-  toloka-index: https://toloka.ai
-  toloka-instruction: https://toloka.ai/knowledgebase/instruction
   toloka-kit: https://toloka.ai/en/docs/toloka-kit/
   toloka-kit-doc: https://toloka.ai/en/docs/toloka-kit/
-  toloka-knowledge-base: https://toloka.ai/knowledgebase/interface
-  toloka-linkedin: https://www.linkedin.com/company/toloka/
   toloka-requester-concepts-yacloud-dita: https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html
   toloka-requester-create-tsv: https://toloka.ai/ru/docs/guide/concepts/pool_csv.html
   toloka-requester-index-dita: https://toloka.ai/ru/docs/guide/index.html
-  toloka-slack: https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg
-  toloka-stackoverflow: https://stackoverflow.com/questions/tagged/toloka
   toloka-support: https://toloka.ai/tolokers/docs/web/troubleshooting/troubleshooting.html/?lang=en
-  toloka-twitter: https://twitter.com/TolokaAI
   toloka-web-register: https://toloka.ai/tolokers/docs/web/register.html#register
-  toloka-youtube: https://www.youtube.com/channel/UCGvsgFPVyOwuN8aJJbMem9A/videos
   uadetector-dev-category: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/ReadableDeviceCategory.Category.html
   uadetector-os-family: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/OperatingSystemFamily.html
   uadetector-useragent-family: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentFamily.html
   uadetector-useragent-type: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentType.html
   user-documentation: https://toloka.ai/tolokers/docs/web/register.html?lang=en
-  useragreement: https://toloka.ai/tolokers/legal/user-agreement
-  users: https://platform.toloka.ai/requester/workers
   using-files-yandex-disk: https://toloka.ai/ru/docs/guide/concepts/prepare-data.html
-  videocourse-about-decomposition: https://www.youtube.com/playlist?list=PLn5HE0j5a7ml6W0w6GAeAk_8CeyvthJq8&utm_source=support&utm_medium=online&utm_compaign=help&utm_content=requesters
-  visualstudio: https://code.visualstudio.com/
-  wiki-flac: https://en.wikipedia.org/wiki/FLAC
-  wiki-mp3: https://en.wikipedia.org/wiki/MP3
-  wiki-mp4: https://en.wikipedia.org/wiki/MPEG-4_Part_14
-  wiki-mpeg: https://en.wikipedia.org/wiki/Moving_Picture_Experts_Group
-  wiki-ogg: https://en.wikipedia.org/wiki/Ogg
-  wiki-opus: https://en.wikipedia.org/wiki/Opus_(audio_format)
-  wiki-wav: https://en.wikipedia.org/wiki/WAV
-  wiki-webm: https://en.wikipedia.org/wiki/WebM
-  ya-maps-object-search: https://yandex.com/support/maps/concept/object-search.html
+  yadisk: https://disk.yandex.com
   yadisk-client: https://disk.yandex.com/client/disk
   yadisk-uploading: https://yandex.com/support/disk/uploading.html
-  yandex-cloud-free-trial: https://cloud.yandex.com/en-ru/docs/free-trial/
-  yandex-id: https://id.yandex.ru/about
-  yandex-toloka: https://platform.toloka.ai/for-requesters/
-  yandex-tts: https://cloud.yandex.com/en-ru/docs/storage/operations/buckets/lifecycles
