@@ -173,7 +173,7 @@ Use this parameter to:
 
     Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap. | {% if locale == "en-com" %}
 
-	**Additional settings**
+    **Additional settings**
 
 {% endif %}
 ||

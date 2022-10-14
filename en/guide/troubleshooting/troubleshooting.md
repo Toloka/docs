@@ -370,11 +370,11 @@ You can't expand the HTML window. To expand the JS and CSS fields, click any are
 
 #### How do I use the input data as a variable in the HTML block?
 
-Enclose the input field in double curly brackets `{{text}}`.
+Enclose the input field in double curly brackets `not_var{{text}}`.
 
 #### How do I display formatted text from input data in the task?
 
-Enclose the input field in triple curly brackets `{{{input_field}}}`.
+Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
 
 For more information about using the component, see the [Requester's guide](../concepts/t-components/html.md).
 
@@ -397,7 +397,7 @@ However, in the context of TolokaHandlebars editability, there are no difference
 
 #### How do I display the text in the input field as in the source (with the HTML tags)?
 
-To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>{{text}}</pre>`.
+To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
 
 In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
 ```

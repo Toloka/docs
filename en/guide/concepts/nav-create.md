@@ -1,6 +1,6 @@
 # Creating a skill
 
-To create a skill, click {% if locale == "en-com" %}**+Add skill**{% endif %} on the [Skills]({{ skill }}) page.
+To create a skill, click {% if locale == "en-com" %}**+Add skill**{% endif %} on the [Skills]({{ skills }}) page.
 
 If you make a skill public, Tolokers can see information about the assigned skill: name and value.
 

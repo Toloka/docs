@@ -53,10 +53,10 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
     <div class="header">
     <div class="left caption">
     {{button label="Go to site" href=uploaded_link_left size="L"}}
-    <p class="url">{{uploaded_link_left}}</p>
+    <p class="url">not_var{{uploaded_link_left}}</p>
     </div>
     <div class="right caption">
-    <p class="url">{{uploaded_link_right}}</p>
+    <p class="url">not_var{{uploaded_link_right}}</p>
     {{button label="Go to site" href=uploaded_link_right  size="L"}}
     </div>
     </div>

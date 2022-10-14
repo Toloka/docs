@@ -34,8 +34,8 @@ In the project, you'll customize an appearance of the tasks.
 
     - **Customer survey**
     Designed to collect information for research purposes.
-	
-	{% endcut %}
+
+    {% endcut %}
 
     If you can't find a preset that works for you, choose **Blank** to set up a project from scratch. To learn how, see the [Initial project settings](project.md) section.
 

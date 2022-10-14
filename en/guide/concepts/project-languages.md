@@ -63,12 +63,12 @@ Interface elements can only be translated in the Template Builder editor.
     - `helper.translate` — the translation component.
     - `key` — the value where the translation will be stored.
     For example, here is how the `label` property looks before:{% if locale == "en-com" %}
-	
+
     ```json
     {  "type": "field.radio-group",  "label": "What is the cat's mood?"
     }
     ```
-	
+
     {% endif %}
     Now, this is how the `label` property looks after adding the translation component and `radio-group-label` key:
 
@@ -81,7 +81,7 @@ Interface elements can only be translated in the Template Builder editor.
     }
     }
     ```
-	
+
     You create the keys yourself, so give them names that indicate:
     - The component that it belongs to.
     - The value that it belongs to within the component.

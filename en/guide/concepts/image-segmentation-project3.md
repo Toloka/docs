@@ -28,13 +28,13 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
 
       1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
 
-	 	 Input data fields used in the project:
+          Input data fields used in the project:
 
-		 - `image` — image address;
-		 - `result` — an array with the selected area coordinates;
-		 - `assignment_id` — task ID.
+         - `image` — image address;
+         - `result` — an array with the selected area coordinates;
+         - `assignment_id` — task ID.
 
-		 The Toloker's response will be recorded in the `verdict` output data field.
+         The Toloker's response will be recorded in the `verdict` output data field.
 
       1. Turn on the **Define data specification manually** option.
 
@@ -42,41 +42,41 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
 
       1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
 
-	     ```
-	     {
-	   	 "image": {
-	   	 "type": "url",
-	  	 "hidden": false,
-	  	 "required": true
-	  	 },
-	   	 "result": {
-	   	 "type": "array_json",
-	   	 "hidden": false,
-	   	 "required": false
-	   	 },
-	   	 "assignment_id": {
-	  	 "type": "string",
-	   	 "hidden": true,
-	   	 "required": true
-	   	 }
-	   	 }
-		 ```
+         ```
+         {
+            "image": {
+            "type": "url",
+           "hidden": false,
+           "required": true
+           },
+            "result": {
+            "type": "array_json",
+            "hidden": false,
+            "required": false
+            },
+            "assignment_id": {
+           "type": "string",
+            "hidden": true,
+            "required": true
+            }
+            }
+         ```
 
       1. Remove the template code from the {% if locale == "en-com" %}**Output data**{% endif %} field and enter the following code:
 
-	 	 ```
-		 {
-		 "verdict": {
-		 "type": "string",
-		 "hidden": false,
-		 "required": true,
-		 "allowed_values": [
-		 "OK",
-		 "BAD"
-		 ]
-		 }
-		 }
-		 ```
+          ```
+         {
+         "verdict": {
+         "type": "string",
+         "hidden": false,
+         "required": true,
+         "allowed_values": [
+         "OK",
+         "BAD"
+         ]
+         }
+         }
+         ```
 
    - HTML/CSS/JS editor
 
@@ -85,34 +85,34 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
          1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](t-components/../../_images/settings.svg) in the **Task interface** block on the project page).
 
          1. In the **html** block, replace the current code with the following:
-	        {% if locale == "en-com" %}
+            {% if locale == "en-com" %}
 
-		    ```
-		    <!-- editor for selecting objects that lets you add an area in advance -->
-		    {{field type="image-annotation" name="object" src=image annotations=selection}}
+            ```
+            <!-- editor for selecting objects that lets you add an area in advance -->
+            {{field type="image-annotation" name="object" src=image annotations=selection}}
 
-		    <!-- buttons for responses -->
-		    {{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
-		    {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
-		    ```
+            <!-- buttons for responses -->
+            {{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
+            {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
+            ```
 
-		    {% endif %}
+            {% endif %}
         1. In the **css** block, replace the code with the following:
-	  	    {% if locale == "en-com" %}
+              {% if locale == "en-com" %}
 
-		   ```
-		   /* hide the button for polygon selection */
-		   .image-annotation-editor__shape-polygon {
-		   display: none;
-		   }
+           ```
+           /* hide the button for polygon selection */
+           .image-annotation-editor__shape-polygon {
+           display: none;
+           }
 
-		   /* adjust the interface height */
-		   .image-annotation-editor__annotation-layer {
-		   height: max-content;
-		   }
-		   ```
+           /* adjust the interface height */
+           .image-annotation-editor__annotation-layer {
+           height: max-content;
+           }
+           ```
 
-		   {% endif %}
+           {% endif %}
 
       1. Configure the **Data specification** section:
 
@@ -121,40 +121,40 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
          1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
 
             ```
-		    {
-		    "image": {
-		    "type": "url",
-		    "hidden": false,
-		    "required": true
-		    },
-		    "selection": {
-		    "type": "array_json",
-		    "hidden": false,
-		    "required": false
-		    },
-		    "assignment_id": {
-		    "type": "string",
-		    "hidden": true,
-		    "required": true
-		    }
-		    }
-		    ```
+            {
+            "image": {
+            "type": "url",
+            "hidden": false,
+            "required": true
+            },
+            "selection": {
+            "type": "array_json",
+            "hidden": false,
+            "required": false
+            },
+            "assignment_id": {
+            "type": "string",
+            "hidden": true,
+            "required": true
+            }
+            }
+            ```
 
          1. Remove the template code from the {% if locale == "en-com" %}**Output data**{% endif %} field and enter the following code:
 
-		    ```
-		    {
+            ```
+            {
             "result": {
-		    "type": "string",
-		    "hidden": false,
-		    "required": true,
-		    "allowed_values": [
-		    "OK",
-		    "BAD"
-		    ]
-		    }
-		    }
-		    ```
+            "type": "string",
+            "hidden": false,
+            "required": true,
+            "allowed_values": [
+            "OK",
+            "BAD"
+            ]
+            }
+            }
+            ```
 
            Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
 
@@ -169,10 +169,10 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
       1. Click **Change input data**.
       1. In the **selection** field, add an example of input data:
 
-	      ```
-		  [{"data":{"p1":{"x":0.472,"y":0.413},"p2":{"x":0.932,"y":0.877}},"type":"rectangle"},
-		  {"data":[{"x":0.143,"y":0.807},{"x":0.317,"y":0.87},{"x":0.511,"y":0.145},{"x":0.328,"y":0.096},{"x":0.096,"y":0.554}],"type":"polygon"}]
-		  ```
+          ```
+          [{"data":{"p1":{"x":0.472,"y":0.413},"p2":{"x":0.932,"y":0.877}},"type":"rectangle"},
+          {"data":[{"x":0.143,"y":0.807},{"x":0.317,"y":0.87},{"x":0.511,"y":0.145},{"x":0.328,"y":0.096},{"x":0.096,"y":0.554}],"type":"polygon"}]
+          ```
 
       1. If everything is OK, close the preview tab. If not, check the data you inserted in the code blocks.
 
@@ -354,62 +354,62 @@ You can check the results in two ways:
 {% list tabs %}
 - Review assignments in the results file
 
-	1. In the text or spreadsheet editor, open the file you received after aggregating the results.
+    1. In the text or spreadsheet editor, open the file you received after aggregating the results.
 
-	1. Prepare the file:
+    1. Prepare the file:
 
-		1. Add a column named `ACCEPT:verdict` with the review results.
+        1. Add a column named `ACCEPT:verdict` with the review results.
 
-		1. Add a column named `ACCEPT:comment` with comments for Tolokers if responses were rejected. For example, comment on which part of the instructions wasn't followed.
+        1. Add a column named `ACCEPT:comment` with comments for Tolokers if responses were rejected. For example, comment on which part of the instructions wasn't followed.
 
-		1. Rename the `INPUT:assignment_id` column to `ASSIGNMENT:assignment_id`.
+        1. Rename the `INPUT:assignment_id` column to `ASSIGNMENT:assignment_id`.
 
-	1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
+    1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
 
-		- If the aggregate result of the assignment is OK, put `+` to accept it.
-		- If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Enter the reason for rejecting the task in the `ACCEPT:comment:` field, for example, `The object isn't selected or is selected incorrectly.`
+        - If the aggregate result of the assignment is OK, put `+` to accept it.
+        - If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Enter the reason for rejecting the task in the `ACCEPT:comment:` field, for example, `The object isn't selected or is selected incorrectly.`
 
-		{% note info %}
+        {% note info %}
 
-		You can use the awk commands to outline images on Linux and MacOS devices:
-		```
-		awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
-		```
+        You can use the awk commands to outline images on Linux and MacOS devices:
+        ```
+        awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
+        ```
 
-		{% endnote %}
+        {% endnote %}
 
-	1. Delete all the other columns.
+    1. Delete all the other columns.
 
-	1. Save the file in `TSV` format.
+    1. Save the file in `TSV` format.
 
-	1. Open the pool page in [project 2](image-segmentation-project2.md).
+    1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-	1. Click {% if locale == "en-com" %}**Review assignments**{% endif %}.
+    1. Click {% if locale == "en-com" %}**Review assignments**{% endif %}.
 
-	1. Click {% if locale == "en-com" %}**Upload results**{% endif %}.
+    1. Click {% if locale == "en-com" %}**Upload results**{% endif %}.
 
-	1. In the window that opens, choose the results file you want to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
+    1. In the window that opens, choose the results file you want to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
 
-	1. In the window that opens, compare the number of tasks in the {% if locale == "en-com" %}**Processed successfully**{% endif %} and {% if locale == "en-com" %}**Total submitted**{% endif %} fields on the pool page.
+    1. In the window that opens, compare the number of tasks in the {% if locale == "en-com" %}**Processed successfully**{% endif %} and {% if locale == "en-com" %}**Total submitted**{% endif %} fields on the pool page.
 
-	1. Click {% if locale == "en-com" %}**Add**{% endif %}.
+    1. Click {% if locale == "en-com" %}**Add**{% endif %}.
 
-	1. In the window that opens, click {% if locale == "en-com" %}**Close**{% endif %}.
+    1. In the window that opens, click {% if locale == "en-com" %}**Close**{% endif %}.
 
-	1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the {% if locale == "en-com" %}**Recompletion of the rejected tasks**{% endif %} option.
+    1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the {% if locale == "en-com" %}**Recompletion of the rejected tasks**{% endif %} option.
 
-		In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
+        In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
 
 
 - Review assignments in the pool interface
 
-	1. Open the pool page in [project 2](image-segmentation-project2.md).
+    1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-	1. Click {% if locale == "en-com" %}**View assignments**{% endif %}.
+    1. Click {% if locale == "en-com" %}**View assignments**{% endif %}.
 
-	1. Hover over the line of the assignment you want to check.
+    1. Hover over the line of the assignment you want to check.
 
-	1. In the {% if locale == "en-com" %}**Status**{% endif %} column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click {% if locale == "en-com" %}**Done**{% endif %}.
+    1. In the {% if locale == "en-com" %}**Status**{% endif %} column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click {% if locale == "en-com" %}**Done**{% endif %}.
 
 {% endlist %}
 

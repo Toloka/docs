@@ -39,26 +39,26 @@ To create a project, follow the instructions:
 
    - Template Builder
 
-	  1. [Create the task interface]({{ tb-quickstart }}).
-	  1. Click **Show specifications** to see the input and output data fields.
+      1. [Create the task interface]({{ tb-quickstart }}).
+      1. Click **Show specifications** to see the input and output data fields.
 
-		 Input data fields are created from the code on the **Example of input data** tab.
+         Input data fields are created from the code on the **Example of input data** tab.
 
-		 The output data fields depend on the components that use `data.output` and values supported by it.
+         The output data fields depend on the components that use `data.output` and values supported by it.
 
-		 Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
+         Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
 
-	  1. Specify the settings for field task display if you use one of the field task templates.
+      1. Specify the settings for field task display if you use one of the field task templates.
 
 
    - HTML/JS/CSS editor
 
-	  1. [Describe the task interface](spec.md).
-	  1. Add fields for [input and output data](incoming.md) in the **Data specification** block.
+      1. [Describe the task interface](spec.md).
+      1. Add fields for [input and output data](incoming.md) in the **Data specification** block.
 
-	  1. Specify the settings for field task display if you use one of the field task templates.
+      1. Specify the settings for field task display if you use one of the field task templates.
 
-	{% endlist %}
+    {% endlist %}
 
 1. [Write {% if locale == "en-com" %}guidelines{% endif %}](instruction.md) for Tolokers.
 

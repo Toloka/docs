@@ -19,12 +19,12 @@ The `toloka-handlebars-templates` library is connected to the project by default
 Expressions are enclosed in double curly brackets. In this case, their value is automatically escaped.
 
 ```html
-<input type="text" placeholder="{{i18n.hint}}" name="{{concat "field_" name}}" value="{{value}}">
+<input type="text" placeholder="not_var{{i18n.hint}}" name="{{concat "field_" name}}" value="not_var{{value}}">
 ```
 
 If you need an unescaped value, you can:
 
-- Put it in triple brackets: `{{{raw}}}`
+- Put it in triple brackets: `{not_var{{raw}}}`
 
 - Write a helper that will return the unescaped value: `return new Handlebars.SafeString(value)`
 
@@ -50,7 +50,7 @@ For example, if you have code in JSON format
 and you want to pull the values of the `title` and `url` parameters nested in `link` from it, specify the path to them using the dot separator:
 
 ```html
-id: {{id}}<a href="{{link.url}}">{{link.title}}</a>
+id: not_var{{id}}<a href="not_var{{link.url}}">not_var{{link.title}}</a>
 ```
 
 Comments are also Handlebars expressions: `{{!comment}}` or `{{!-- comment --}}`.
@@ -114,7 +114,7 @@ Block output by condition. If the argument of this helper returns "false," the b
 ```html
 {{#if (equal id "123")}}
     ... {{!Code block only for id 123}}
-{{else}}
+not_var{{else}}
     ... {{!Code block for all other values}}
 {{/if}}
 ```
@@ -126,7 +126,7 @@ The opposite of the `if` helper. Outputs the block if the argument returns "fals
 ```html
 {{#unless (equal id "123")}}
     ... {{!Code block for all id values different from 123}}
-{{else}}
+not_var{{else}}
     ... {{!Code block only for id 123}}
 {{/unless}}
 ```
@@ -156,7 +156,7 @@ For example, for a list
 ```html
 {{#each links}}
     ID: {{../id}}
-    <a href="{{this.url}}">{{this.title}}</a>
+    <a href="not_var{{this.url}}">not_var{{this.title}}</a>
 {{/each}}
 ```
 
@@ -171,7 +171,7 @@ In the above [list](#example-json-2), the helper
 ```html
 {{#each links}}
     Global ID: {{../id}}
-    {{@index}}: <a href="{{this.url}}">{{this.title}}</a>
+    {{@index}}: <a href="not_var{{this.url}}">not_var{{this.title}}</a>
     {{#unless @last}}<hr>{{/unless}}
 {{/each}}
 
@@ -196,9 +196,9 @@ For example, for code
 ```
 , the helper that displays the block in a different context, which helps to avoid using the name of the parent parameter, will look like this:
 ```html
-ID: {{id}}
+ID: not_var{{id}}
 {{#with link}}
-    <a href="{{url}}">{{title}}</a>
+    <a href="not_var{{url}}">not_var{{title}}</a>
 {{/with}}
 ```
 
@@ -217,7 +217,7 @@ You need to display the same type of layout in several places:
 To avoid copying the code, you can register a new partial:
 
 ```html
-Handlebars.registerPartial('formInput', '<h3>{{fieldTitle}}</h3>{{field type="input" name=fieldName}}');
+Handlebars.registerPartial('formInput', '<h3>not_var{{fieldTitle}}</h3>{{field type="input" name=fieldName}}');
 ```
 
 Calling a template to insert a layout into the form:

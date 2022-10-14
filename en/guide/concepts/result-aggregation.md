@@ -68,7 +68,7 @@ The Dawid-Skene model is a non-trivial aggregation algorithm. Check out its feat
 
 #### How it's calculated
 
-The Dawid-Skene method puts together a [confusion matrix]({{ error-matrix }}) and response popularity for each Toloker. It uses the [EM algorithm]({{ em-algorithm }}).
+The Dawid-Skene method puts together a [confusion matrix]({{ error-matrix }}) and response popularity for each Toloker. It uses the EM algorithm.
 
 The idea is that it collects the most accurate aggregated responses for each task, recording the error matrices and response popularity. It aims to determine the best popularities and error matrices among all responses. The process has several stages. Initially, the majority opinion is used to confirm that the response is correct.
 

@@ -45,7 +45,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 - **Display the text in the task.** Add the `text` field with the **string** type in the input data. Then in the task interface (in the HTML block), you can add this text as a variable, for example:{% if locale == "en-com" %}
     ```html
-    <p>Read the text: {{text}}</p>
+    <p>Read the text: not_var{{text}}</p>
     ```
     {% endif %}
 - ** Upload a file to the task, for example, an image.** Add the `url` field with the **link** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
@@ -364,11 +364,11 @@ In HTML, use a special handlebar to iterate over this field. The code structure 
 
 #### How do I use the input data as a variable in the HTML block?
 
-Enclose the input field in double curly brackets `{{text}}`.
+Enclose the input field in double curly brackets `not_var{{text}}`.
 
 #### How do I display formatted text from input data in the task?
 
-Enclose the input field in triple curly brackets `{{{input_field}}}`.
+Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
 
 For more information about using the component, see the [Requester's guide](t-components/html.md).
 
@@ -378,7 +378,7 @@ To change the number of output fields dynamically, use the recommendations from 
 
 #### How do I display the text in the input field as in the source (with the HTML tags)?
 
-To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>{{text}}</pre>`.
+To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
 
 In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
 ```

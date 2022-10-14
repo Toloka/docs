@@ -130,7 +130,7 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-	
+
 {% endcut %}
 
 {% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}

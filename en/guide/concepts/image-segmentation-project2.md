@@ -20,63 +20,63 @@ In this [project](../../glossary.md#project-ru), Tolokers will select image area
 
 1. Edit the task interface in the editor you selected:
 
-	{% list tabs %}
+    {% list tabs %}
 
     - Template Builder
 
-		1. You can use it for this project with pre-configured validation and task layout.
+        1. You can use it for this project with pre-configured validation and task layout.
 
-			The Toloker won't be able to submit a response without selecting an area in an image.
+            The Toloker won't be able to submit a response without selecting an area in an image.
 
-			For more information about the template and its settings, see [Object selection in an image]({{ tb-select-areas }}) in the Template Builder Help.
+            For more information about the template and its settings, see [Object selection in an image]({{ tb-select-areas }}) in the Template Builder Help.
 
-		1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
+        1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
 
-			- Input data field: `image` — A link to an image.
+            - Input data field: `image` — A link to an image.
 
-			- Output data field: `result` — The field that will contain the information about the labeled image after it is uploaded.
+            - Output data field: `result` — The field that will contain the information about the labeled image after it is uploaded.
 
     - HTML/CSS/JS editor
 
-		1. In {% if locale == "en-com" %}**Task interface**{% endif %}, leave the **HTML** block unchanged.
+        1. In {% if locale == "en-com" %}**Task interface**{% endif %}, leave the **HTML** block unchanged.
 
-		1. Edit the **CSS** block:
+        1. Edit the **CSS** block:
 
-		1. Set up the area selection tools. This template uses [Editor for image area selection](t-components/image-annotation.md). It features rectangle and polygon tools (by default).
+        1. Set up the area selection tools. This template uses [Editor for image area selection](t-components/image-annotation.md). It features rectangle and polygon tools (by default).
 
-	       To set up rectangle selection, replace the code in the **CSS** block with the following:
+           To set up rectangle selection, replace the code in the **CSS** block with the following:
 
-			```
-			.image-annotation-editor__shape-polygon {
-			display: none;
-			}
-			```
+            ```
+            .image-annotation-editor__shape-polygon {
+            display: none;
+            }
+            ```
 
-			1. Enter the code to adjust the interface height to the image size:
+            1. Enter the code to adjust the interface height to the image size:
 
-			```
-			.image-annotation-editor__annotation-layer {
-			height: max-content;
-			}
-			```
+            ```
+            .image-annotation-editor__annotation-layer {
+            height: max-content;
+            }
+            ```
 
-		1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
+        1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
 
-			Learn more about [annotation](t-components/image-annotation.md#annotation).
+            Learn more about [annotation](t-components/image-annotation.md#annotation).
 
-		1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
-			{% note info %}
+            {% note info %}
 
-			The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+            The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
 
-			{% endnote %}
+            {% endnote %}
 
-		1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
+        1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
 
-		1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . If there were errors when testing, check the code blocks that you entered.
+        1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . If there were errors when testing, check the code blocks that you entered.
 
-	{% endlist %}
+    {% endlist %}
 
 1. Save the changes.
 
@@ -131,7 +131,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     The number of tasks per suite is set when uploading tasks.
 
-	{% endcut %}
+    {% endcut %}
 
     {% cut "What is a fair price for a task suite?" %}
 
@@ -139,7 +139,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     You can register in Toloka as a Toloker and find out how much other requesters pay for tasks.
 
-	{% endcut %}
+    {% endcut %}
 
 1. [Quality control rules](control.md) allow you to filter out careless Tolokers. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set the rules for the pool:
 
@@ -151,7 +151,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
 
-	{% endcut %}
+    {% endcut %}
 
     1. Add the following quality control rules:
     - {% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — sends the tasks you rejected to other Tolokers according to the specified rules.
