@@ -44,7 +44,7 @@ To set up quality control:
 
 ## Troubleshooting {#troubleshooting}
 
-#### How do I set quality control in a pool correctly?
+{% cut "How do I set quality control in a pool correctly?" %}
 
 The settings for [quality control](../../glossary.md#quality-control-ru) rules depend on the type of tasks. General recommendations:
 
@@ -58,12 +58,13 @@ The settings for [quality control](../../glossary.md#quality-control-ru) rules d
 
 - If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote-ru) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task-ru) with artificial examples where the choice is evident.
 
+{% endcut %}
 
-#### How many control tasks do I need to add?
+{% cut "How many control tasks do I need to add?" %}
 
 We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
 
-#### Why's that?
+{% cut "Why's that?" %}
 
 Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
 
@@ -72,7 +73,7 @@ There shouldn't be too few pages available. Otherwise:
 - You won't be able to correctly evaluate the quality of the Toloker's responses.
 - The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
 
-#### Example
+{% cut "Example" %}
 
 #### A large pool with 1% of control tasks (good)
 
@@ -84,13 +85,19 @@ There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suit
 
 #### A small pool with 10% control tasks (good)
 
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
+There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites.
+
+{% endcut %}
+
+{% endcut %}
 
 If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
 
-#### What for
+{% cut "What for" %}
 
 In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
+
+{% endcut %}
 
 {% note info %}
 
@@ -98,14 +105,17 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% endnote %}
 
+{% endcut %}
 
-#### How are the correct responses to control questions counted?
+{% cut "How are the correct responses to control questions counted?" %}
 
 The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task-ru) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
 As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
 
-#### Should I create a skill for every pool?
+{% endcut %}
+
+{% cut "Should I create a skill for every pool?" %}
 
 It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
 
@@ -120,16 +130,20 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
+	
+{% endcut %}
 
-
-#### Can I use a skill beyond a particular pool or project and apply it to other projects as well?
+{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
 
-#### Can I disable tasks for Tolokers who do a poor job on tasks?
+{% endcut %}
+
+{% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
 
 You can deny access to the pool if the Toloker's responses are [too fast](quick-answers.md), if they don't match the [majority vote](mvote.md), or if the Toloker makes too many mistakes in [control tasks](goldenset.md). Tasks completed by such Tolokers can be [given to other Tolokers](restore-task-overlap.md).
 
+{% endcut %}
 
 ## What's next {#what_next}
 

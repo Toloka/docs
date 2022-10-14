@@ -64,11 +64,13 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
 
 ## Troubleshooting {#troubleshooting}
 
-#### Where can I set the task price?
+{% cut "Where can I set the task price?" %}
 
 You can set a price for your task **page** on the pool editing page. The minimum price for regular pools is $0.005.
 
-#### How do I set up a budget for my first task in Toloka?
+{% endcut %}
+
+{% cut "How do I set up a budget for my first task in Toloka?" %}
 
 Here's the general rule of pricing: the more time is needed to complete the task, the higher the price is.
 
@@ -78,17 +80,25 @@ If you register in Toloka as a Toloker, you can compare offers from other reques
 
 Define the page price, multiply it by the overlap (it's usually 3-5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
 
-#### How do I pay more to users who fill out optional fields?
+{% endcut %}
+
+{% cut "How do I pay more to users who fill out optional fields?" %}
 
 You can issue rewards after completion and describe the criteria for increased rewards in your task instructions. You can't change the task suite price dynamically based on the completion results.
 
-#### Where do I find the statistics on the awards I paid?
+{% endcut %}
+
+{% cut "Where do I find the statistics on the awards I paid?" %}
 
 Track your money debited for rewards in **Profile** → **Spent** tab.
 
-#### Can there be tasks with different prices in the pool?
+{% endcut %}
+
+{% cut "Can there be tasks with different prices in the pool?" %}
 
 No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](bonus.md) to good Tolokers.
+
+{% endcut %}
 
 [Get closing documents and invoices](../troubleshooting/support.md#feedback_g3b_vj3_qjb)
 

@@ -25,7 +25,12 @@ Changes to the major version of the project don't affect existing [pools](../../
 To go back to the previous version of the project:
 1. Go to the project editing.
 1. Click **Select previous version** at the bottom of the page.
-    #### Project version example
+
+   {% cut "Project version example" %}
+   
+   ![](../_images/location-job/project/project_versions.png)
+   
+   {% endcut %}
 
 1. Choose a version. The project parameters return to the chosen version.
 1. Save the project to use the chosen project version as current.

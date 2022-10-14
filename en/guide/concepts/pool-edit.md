@@ -11,6 +11,7 @@ The cost of a task is registered at the moment when a Toloker accepts it. If the
 
 To edit the pool parameters, click {% if locale == "en-com" %}**Edit**{% endif %} at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project-ru) page.
 ![](../_images/other/pool-settings.png)
+
 ## General information {#pool-general-info}
 
 #### {% if locale == "en-com" %}**Pool name**{% endif %}
@@ -111,7 +112,7 @@ The number of days for reviewing and accepting tasks (max: 21). The Toloker will
 
 You can add other quality control rules by clicking **Add a quality control rule**. You can select ready-made sets of rules or set the rules you need manually. [Learn more](control.md).
 
-#### Optional
+{% cut "Optional" %}
 
 #### Fast responses
 
@@ -140,6 +141,8 @@ This box is only available if you filled in the {% if locale == "en-com" %}**Tra
 Percentage of correct responses in training tasks (from 5 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
 
 The minimum required level that you can set is 5. Tolokers who complete training with apercentage below this level won't have access to tasks.
+
+{% endcut %}
 
 ## Dynamic pricing and overlap {#pool-dynamic-price-info}
 
@@ -200,7 +203,7 @@ If the price per task suite is zero, you must select the pool type.
 
 The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
 
-#### Example
+{% cut "Example" %}
 
 If you specified 2 tasks per suite when uploading the [file](../../glossary.md#tsv-file-definition-ru) with image links to the pool, the system can generate them as follows:
 
@@ -213,11 +216,13 @@ Image 4 |  |  |
 Image 5 |  |  |
 Image 6 |  |  |
 
+{% endcut %}
+
 **Option enabled**
 
 Tasks will be grouped on pages in the order they are listed in the task file.
 
-#### Example
+{% cut "Example" %}
 
 If you specified 2 tasks per suite when uploading the file with image links to the pool, you're equally likely to get pages where the first link goes first and the second goes second, and the other way around:
 
@@ -229,6 +234,8 @@ Image 3 | _or_ | _or_ | _or_
 Image 4 | Image 2 | Image 4 | Image 6
 Image 5 | Image 1 | Image 3 | Image 5
 Image 6 |  |  |
+
+{% endcut %}
 
 If the pool has an overlap, the next task is distributed only when the previous task is completed by the necessary number of Tolokers.
 
@@ -257,23 +264,33 @@ Use this parameter to:
 
 ## Troubleshooting {#troubleshooting}
 
-#### What is the right time limit for the task completion?
+{% cut "What is the right time limit for the task completion?" %}
+
 Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-#### What overlap should I set?
+
+{% endcut %}
+
+{% cut "What overlap should I set?" %}
 
 Overlap defines how many Tolokers complete the same pool task.
 
 The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from "3" to "5" is enough. If the tasks are simple, overlap of "3" is likely to be enough. For tasks that are reviewed, set overlap to "1".
 
-#### Can I change overlap after the pool is started?
+{% endcut %}
+
+{% cut "Can I change overlap after the pool is started?" %}
 
 Yes. Open edit mode for the pool and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
 
-#### How many tasks should be in a suite?
+{% endcut %}
+
+{% cut "How many tasks should be in a suite?" %}
 
 The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
 
-#### Why has the speed of pool completion dropped?
+{% endcut %}
+
+{% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
 - You've stopped the [main pool](../../glossary.md#training-pool-ru). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
@@ -281,22 +298,29 @@ Possible reasons:
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most Tolokers don't have.
 - Too many Tolokers are banned. Ease the quality control rules.
 
-#### How can I speed up the pool completion?
+{% endcut %}
+
+{% cut "How can I speed up the pool completion?" %}
 
 - To motivate Tolokers, assign a [public skill](nav-create.md#public) and use [dynamic pricing](dynamic-pricing.md).
 - Try to [increase the project rating](project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
 - Adjust the [quality-speed ratio](adjust.md).
 - Set a higher [priority](pool_poolparams.md#priority) for the pool among other project pools.
 
-#### If I change the time allocated for one task, will this apply to tasks assigned earlier?
+{% endcut %}
+
+{% cut "If I change the time allocated for one task, will this apply to tasks assigned earlier?" %}
 
 If you change the time allocated for a task, the time value will apply to the tasks that have not yet been taken by the Tolokers. The same applies to the case when you close the pool. A Toloker who has an assignment in the active status can complete the assignment.
 
-#### How do I edit or delete tasks uploaded to the pool?
+{% endcut %}
+
+{% cut "How do I edit or delete tasks uploaded to the pool?" %}
 
 If you uploaded tasks to the pool using "smart mixing", you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
 
 If you uploaded them using a different method, clone your pool and upload the new file with the corrected list of data to be labeled.
 
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
