@@ -64,9 +64,9 @@ The project defines what the task will look like for a Toloker.
 
     - Input data field — The `theme` string to upload a survey. It is not used in the interface and can contain any text.
     - Output data fields:
-    - The required `place` string to record the Toloker's response to the question "Where do you usually have breakfast?".;
-    - The required string `food` to record the Toloker's response to the question "What do you eat for breakfast most often?".;
-    - The required string `drink` to record the Toloker's response to the question "What do you drink for breakfast (besides water)?".
+    - The required `place` string to record the Toloker's response to the question “Where do you usually have breakfast?”.;
+    - The required string `food` to record the Toloker's response to the question “What do you eat for breakfast most often?”.;
+    - The required string `drink` to record the Toloker's response to the question “What do you drink for breakfast (besides water)?”.
 
     1. Save the changes.
 
@@ -86,9 +86,9 @@ The project defines what the task will look like for a Toloker.
 
     - Input data field — The `theme` string to upload a survey. It is not used in the interface and can contain any text.
     - Output data fields:
-    - The required `place` string to record the Toloker's response to the question "Where do you usually have breakfast?".;
-    - The required string `food` to record the Toloker's response to the question "What do you eat for breakfast most often?".;
-    - The required string `drink` to record the Toloker's response to the question "What do you drink for breakfast (besides water)?".
+    - The required `place` string to record the Toloker's response to the question “Where do you usually have breakfast?”.;
+    - The required string `food` to record the Toloker's response to the question “What do you eat for breakfast most often?”.;
+    - The required string `drink` to record the Toloker's response to the question “What do you drink for breakfast (besides water)?”.
 
     #### Graphic mode
     ![](../_images/tutorials/questionnaire/breakfast_input-output.png)

@@ -73,7 +73,7 @@ Each task in a task suite is part of a web page that can include various objects
 
 {% note info %}
 
-Tolokers don't know the difference between pools, tasks, or task suites. They might call all this a "task".
+Tolokers don't know the difference between pools, tasks, or task suites. They might call all this a “task”.
 
 {% endnote %}
 

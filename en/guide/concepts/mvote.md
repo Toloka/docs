@@ -1,6 +1,6 @@
 # Majority vote
 
-Majority vote is a [quality control](../../glossary.md#quality-control-ru) method based on matching responses from the majority of Tolokers who complete the same task. For example, if a task has an [overlap](../../glossary.md#overlap-ru) of "5" and three Tolokers selected the same answer, this is considered indirect confirmation of the correct response.
+Majority vote is a [quality control](../../glossary.md#quality-control-ru) method based on matching responses from the majority of Tolokers who complete the same task. For example, if a task has an [overlap](../../glossary.md#overlap-ru) of “5” and three Tolokers selected the same answer, this is considered indirect confirmation of the correct response.
 
 {% note info %}
 
@@ -39,7 +39,7 @@ The number of tasks per suite doesn't affect how the rule works. Responses are e
 - Tolokers need to attach a file to their assignment.
 - Tolokers need to transcribe text.
 - Tolokers need to select objects in a photo.
-- Tasks don't have a correct or incorrect response. For example: "Which image do you like best?" or "Choose the page design option that you like best".
+- Tasks don't have a correct or incorrect response. For example: “Which image do you like best?” or “Choose the page design option that you like best”.
 
 ## Usage recommendations {#advice}
 
@@ -74,7 +74,7 @@ The Tolokers will be assigned the following skills based on **majority vote**:
 
 {% endcut %}
 
-Let's say the task Toloker has to select at least three matching categories out of twenty or report that the image is not displayed. Since there can be multiple combinations of categories, the rule calculation will mostly include tasks where all the Tolokers responded **Not displayed**. Those might be either correct or "fraudulent" responses from Tolokers who just clicked through the tasks in a hurry. In any case, it would be unreliable to base the skill on these responses.
+Let's say the task Toloker has to select at least three matching categories out of twenty or report that the image is not displayed. Since there can be multiple combinations of categories, the rule calculation will mostly include tasks where all the Tolokers responded **Not displayed**. Those might be either correct or “fraudulent” responses from Tolokers who just clicked through the tasks in a hurry. In any case, it would be unreliable to base the skill on these responses.
 
 Try using [decomposition](solution-architecture.md) or [control tasks](../../glossary.md#control-task-ru). This way you can better assess the quality of your Tolokers.
 
@@ -120,7 +120,11 @@ In this rule, all fields are required except **Recent tasks to use**. If you don
 
 If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.
 
-If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
+----- | -----
+{% if locale == "en-com" %}**Accept as majority**{% endif %} | The number of matching responses that is considered the “majority vote” (for example, 3).
+{% if locale == "en-com" %}**Recent values to use**{% endif %} | How many recent responses from the Toloker to use.<br/><br/>If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.<br/><br/>If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.<br/><br/>[Learn more](remember-values.md) about how this field works.
+{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:<br/>- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed tasks.<br/>    <br/>- {% if locale == "en-com" %}**% correct answers**{% endif %} — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).<br/>    <br/>- {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).<br/><br/>To add multiple conditions, click ![](../_images/add.svg).
+{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).<br/>    <br/>- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.<br/>    <br/>- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
 [Learn more](remember-values.md) about how this field works.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
@@ -269,9 +273,7 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
 
-{% endcut %}
-
-{% cut "What output format do I use for the review results to filter out mismatching users based on the "Majority vote"?" %}
+#### What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?
 
 To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](mvote.md) to the pool.
 
@@ -283,9 +285,7 @@ Don't forget to enable **Keep task order** in the pool parameters. Majority vote
 
 Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
 
-{% endcut %}
-
-{% cut "My task uses a form with multiple fields. When there is an overlap and "Majority vote" is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?" %}
+#### My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?
 
 All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
 

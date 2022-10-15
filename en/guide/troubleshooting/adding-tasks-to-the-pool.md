@@ -165,7 +165,7 @@ Overview | How to fix
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a "link" ("url") field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](../concepts/pool_csv.md#string).
 
@@ -173,7 +173,7 @@ Overview | How to fix
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be "reassessed".
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 
@@ -285,7 +285,7 @@ You can create a retry pool similarly to an exam pool. In the pool settings, sel
 
 For example, if the main pool admits Tolokers with a skill of 70 or higher, then you can route the people with a skill between 40 and 69 to the retry pool.
 
-To get a valid "range", enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
+To get a valid “range”, enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
 We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10-20 tasks is enough, depending on complexity.
 #### Is the training considered an active pool when the main pool is closed?
 
@@ -295,7 +295,7 @@ Yes, it is.
 
 Training is designed to select Tolokers for the general task. That's why training must be linked to the main pool and become inactive as soon as the main pool closes.
 
-Tolokers take the training to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, "optional" training can be based on a main pool that includes some training tasks.
+Tolokers take the training to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, “optional” training can be based on a main pool that includes some training tasks.
 
 To show the training separately from other pools, disable **Use project description** and use this field to specify that this is an optional set of training tasks. In the pool settings, select the **Training** type.
 
@@ -344,7 +344,7 @@ If you change the time allocated for a task, the time value will apply to the ta
 
 #### How do I edit or delete tasks uploaded to the pool?
 
-If you uploaded tasks to the pool using "smart mixing", you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
+If you uploaded tasks to the pool using “smart mixing”, you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
 
 If you uploaded them using a different method, clone your pool and upload the new file with the corrected list of data to be labeled.
 

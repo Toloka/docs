@@ -44,7 +44,7 @@ To compare numeric values, use the helpers:
 - Equal to: `{{equal "a" "b"}}`.
     {% note info %}
 
-    The `{{equal}}` helper lets you compare values of any data type.
+    The `not_var{{equal}}` helper lets you compare values of any data type.
 
     {% endnote %}
 

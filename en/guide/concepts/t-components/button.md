@@ -7,7 +7,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 {% endnote %}
 
 
-To add a button to a task, use the `{{button}}` component. Example:
+To add a button to a task, use the `not_var{{button}}` component. Example:
  {% if locale == "en-com" %}
 ```no-highlight
 {{button label="Click me" href="https://yandex.ru" action=true}}

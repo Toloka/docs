@@ -175,7 +175,7 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
     - When the value is `> 90%`, the average accuracy of the aggregated response doesn't increase, and the labelling costs increase.
 
-    Optimal confidence is at 80% for the best "price/quality" ratio.
+    Optimal confidence is at 80% for the best “price/quality” ratio.
 
 - Upload tasks via **smart mixing**. Otherwise, the tasks are assigned with minimum overlap.
 

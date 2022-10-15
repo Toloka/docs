@@ -9,7 +9,7 @@ Before:
 After:
 ![](../_images/tutorials/advanced-features/af-attach-2.png)
 
-For your convenience, here is ready-made code for the "Monitoring items at businesses" template, in which each of the fields is added to the first response button once. Use it to check your own code. You can find our additions to the code by searching for the word "customization".
+For your convenience, here is ready-made code for the “Monitoring items at businesses” template, in which each of the fields is added to the first response button once. Use it to check your own code. You can find our additions to the code by searching for the word “customization”.
 
 #### Ready-made code
 
@@ -19,29 +19,29 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
 {{#if reviewMode}}
     <div class="header-review">
         <div class="header-review__title">
-            {{texts.task_title}}
+            not_var{{texts.task_title}}
         </div>
         <div class="header-review__buttons">
             {{#if (equal verdict "ok")}}
                 <div class="header-review__btn header-review__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_obj")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_org")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_org.title}}
+                    not_var{{texts.btn_no_org.title}}
                 </div>
             {{/if}}
         </div>
     </div>
   not_var{{else}}
     <div class="header">
-        {{texts.task_title}}
+        not_var{{texts.task_title}}
     </div>
 {{/if}}
 
@@ -50,7 +50,7 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
         <div class="info__review">
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_name}}
+                    not_var{{texts.info_name}}
                 </div>
                 <div class="info__content">
                     not_var{{name}}
@@ -58,42 +58,42 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_address}}
+                    not_var{{texts.info_address}}
                 </div>
                 <div class="info__content">
-                    {{address}}
+                    not_var{{address}}
                 </div>
             </div>
         </div>
-    {{else}}
+    not_var{{else}}
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_name}}
+                not_var{{texts.info_name}}
             </div>
             <div class="info__content">
-                {{name}}
+                not_var{{name}}
             </div>
         </div>
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_address}}
+                not_var{{texts.info_address}}
             </div>
             <div class="info__content">
-                {{address}}
+                not_var{{address}}
             </div>
         </div>
     {{/if}}
     <div class="info__block">
         <div class="info__title">
-            {{texts.info_description}}
+            not_var{{texts.info_description}}
         </div>
         <div class="info__content">
-            {{product}}
+            not_var{{product}}
         </div>
     </div>
     <div class="info__block">
         <div class="info__content">
-            <a href={{image}} target="_blank" class="info__link">Link to the product image</a>
+            <a href=not_var{{image}} target="_blank" class="info__link">Link to the product image</a>
         </div>
     </div>
 </div>
@@ -106,13 +106,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
         {{#if (equal verdict "ok")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_1.title}}
+                    not_var{{texts.btn_ok.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -124,13 +124,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.title}}
+                    not_var{{texts.btn_ok.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -145,13 +145,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             <!-- photo -->
             <div class="review__block">
               <div class="review__title">
-                {{texts.btn_ok.question_new_imgs.title}}
+                not_var{{texts.btn_ok.question_new_imgs.title}}
               </div>
               <div class="review__imgs-grid">
                 {{#each new_imgs}}
                   <div class="review__grid-item">
                     <div class="review__grid-inner">
-                      <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                      <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                       <div class="review__rotate-panel">
                         <span class="review__rotate review__rotate_left">←</span>
                         <span class="review__rotate review__rotate_right">→</span>
@@ -165,13 +165,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             <!-- video -->
             <div class="review__block">
               <div class="review__title">
-                {{texts.btn_ok.question_new_video.title}}
+                not_var{{texts.btn_ok.question_new_video.title}}
               </div>
               <div class="review__video-grid">
                 {{#each new_video}}
                   <div class="review__video-grid-item">
                     <video width="50%" controls>
-                      <source src={{this}} type="video/mp4">
+                      <source src=not_var{{this}} type="video/mp4">
                     </video>
                   </div>
                 {{/each}}
@@ -181,12 +181,12 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             <!-- audio -->
             <div class="review__block">
               <div class="review__title">
-                {{texts.btn_ok.question_new_audio.title}}
+                not_var{{texts.btn_ok.question_new_audio.title}}
               </div>
               <div class="review__audio-grid">
                 {{#each new_audio}}
                   <div class="review__audio-grid-item">
-                    <audio src={{this}} controls type="audio/wav">Audio doesn't play</audio>
+                    <audio src=not_var{{this}} controls type="audio/wav">Audio doesn't play</audio>
                   </div>
                 {{/each}}
               </div>
@@ -197,13 +197,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
         {{#if (equal verdict "no_obj")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_1.title}}
+                    not_var{{texts.btn_no_obj.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -215,13 +215,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_2.title}}
+                    not_var{{texts.btn_no_obj.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_plate_or_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -233,13 +233,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_3.title}}
+                    not_var{{texts.btn_no_obj.question_3.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -252,7 +252,7 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_no_obj.question_4.title}}
+                        not_var{{texts.btn_no_obj.question_4.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -263,13 +263,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
         {{#if (equal verdict "no_org")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_org.question_1.title}}
+                    not_var{{texts.btn_no_org.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_org}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -281,13 +281,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_org.question_2.title}}
+                    not_var{{texts.btn_no_org.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_plate_or_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -299,7 +299,7 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_org.question_3.title}}
+                    not_var{{texts.btn_no_org.question_3.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -307,7 +307,7 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
         {{/if}}
     </div>
-{{else}}
+not_var{{else}}
     <div class="main">
         <div class="main__title">
             Select a task completion option:
@@ -316,18 +316,18 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             <div class="main__popup main__popup_hidden">No answer selected</div>
             <div class="main__block">
                 <div class="main__btn main__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_1.title}}
+                            not_var{{texts.btn_ok.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_1.description}}
+                            not_var{{texts.btn_ok.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true preview=true compress=false validation-show="top-left"}}
@@ -335,13 +335,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_2.title}}
+                            not_var{{texts.btn_ok.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_2.description}}
+                            not_var{{texts.btn_ok.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_obj" camera=true preview=true compress=false validation-show="top-left"}}
@@ -352,13 +352,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             <!-- photo -->
                     <div class="main__content-block">
                       <div class="main__content-title main__content-title_req">
-                        {{texts.btn_ok.question_new_imgs.title}}
+                        not_var{{texts.btn_ok.question_new_imgs.title}}
                       </div>
                       <div class="main__text">
-                        {{texts.btn_ok.question_new_imgs.description}}
+                        not_var{{texts.btn_ok.question_new_imgs.description}}
                       </div>
                       <div class="main__ex">
-                        <a href="{{texts.btn_ok.question_new_imgs.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                        <a href="not_var{{texts.btn_ok.question_new_imgs.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                       </div>
                       <div class="main__imgs">
                         {{field type="file-img" name="new_imgs" camera=true validation-show="top-left"}}
@@ -368,10 +368,10 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     <!-- video -->
                     <div class="main__content-block">
                       <div class="main__content-title main__content-title_req">
-                        {{texts.btn_ok.question_new_video.title}}
+                        not_var{{texts.btn_ok.question_new_video.title}}
                       </div>
                       <div class="main__text">
-                        {{texts.btn_ok.question_new_video.description}}
+                        not_var{{texts.btn_ok.question_new_video.description}}
                       </div>
                       <div class="main__video">
                         {{field type="file" name="new_video" sources="CAMERA GALLERY" fileType="VIDEO" camera=true validation-show="top-left"}}
@@ -381,10 +381,10 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     <!-- audio -->
                     <div class="main__content-block">
                       <div class="main__content-title main__content-title_req">
-                        {{texts.btn_ok.question_new_audio.title}}
+                        not_var{{texts.btn_ok.question_new_audio.title}}
                       </div>
                       <div class="main__text">
-                        {{texts.btn_ok.question_new_audio.description}}
+                        not_var{{texts.btn_ok.question_new_audio.description}}
                       </div>
                       <div class="main__audio">
                         {{field type="file" name="new_audio" sources="RECORDER FILE_MANAGER" fileType="AUDIO" validation-show="top-left"}}
@@ -396,18 +396,18 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_obj.question_1.title}}
+                            not_var{{texts.btn_no_obj.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_obj.question_1.description}}
+                            not_var{{texts.btn_no_obj.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_obj.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_obj.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true validation-show="top-left"}}
@@ -415,13 +415,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_obj.question_2.title}}
+                            not_var{{texts.btn_no_obj.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_obj.question_2.description}}
+                            not_var{{texts.btn_no_obj.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_plate_or_address" camera=true validation-show="top-left"}}
@@ -429,13 +429,13 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_obj.question_3.title}}
+                            not_var{{texts.btn_no_obj.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_obj.question_3.description}}
+                            not_var{{texts.btn_no_obj.question_3.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_obj.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_obj.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_obj" camera=true validation-show="top-left"}}
@@ -443,10 +443,10 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_no_obj.question_4.title}}
+                            not_var{{texts.btn_no_obj.question_4.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_obj.question_4.description}}
+                            not_var{{texts.btn_no_obj.question_4.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -456,12 +456,12 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_org.title}}
+                    not_var{{texts.btn_no_org.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_org.question_1.description}}
+                            not_var{{texts.btn_no_org.question_1.description}}
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_org" camera=true validation-show="top-left"}}
@@ -469,10 +469,10 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_org.question_2.description}}
+                            not_var{{texts.btn_no_org.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_org.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_org.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_plate_or_address" camera=true validation-show="top-left"}}
@@ -480,10 +480,10 @@ For your convenience, here is ready-made code for the "Monitoring items at busin
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_org.question_3.title}}
+                            not_var{{texts.btn_no_org.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_org.question_3.description}}
+                            not_var{{texts.btn_no_org.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -1576,7 +1576,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 #### Editing the output specification
 
-Add new variables of the "file" type to the output specification. They will be used to save the files uploaded by the Toloker. If you want the Toloker to be able to upload more than one file, set the variable type to "array".
+Add new variables of the “file” type to the output specification. They will be used to save the files uploaded by the Toloker. If you want the Toloker to be able to upload more than one file, set the variable type to “array”.
 
 `imgs` — An array of photos.
 
@@ -1599,10 +1599,9 @@ Special components are used to upload files. You can read more about them in the
     </div>
     ```
     {% endif %}
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Monitoring items in businesses” template has 3 response buttons, which means that the `main` block should contain 3 `main__block` blocks for the buttons.
 
-1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the "Monitoring items in businesses" template has 3 response buttons, which means that the `main` block should contain 3 `main__block` blocks for the buttons.
-
-    Each button has a name for accessing its properties. For example, in the "Monitoring items in businesses" template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new fields to in the code.
+    Each button has a name for accessing its properties. For example, in the “Monitoring items in businesses” template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new fields to in the code.
 
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
@@ -1612,13 +1611,13 @@ Special components are used to upload files. You can read more about them in the
     <!-- photo -->
     <div class="main__content-block">
     <div class="main__content-title main__content-title_req">
-    {{texts.btn_ok.question_new_imgs.title}}
+    not_var{{texts.btn_ok.question_new_imgs.title}}
     </div>
     <div class="main__text">
-    {{texts.btn_ok.question_new_imgs.description}}
+    not_var{{texts.btn_ok.question_new_imgs.description}}
     </div>
     <div class="main__ex">
-    <a href="{{texts.btn_ok.question_new_imgs.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+    <a href="not_var{{texts.btn_ok.question_new_imgs.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
     </div>
     <div class="main__imgs">
     {{field type="file-img" name="new_imgs" camera=true validation-show="top-left"}}
@@ -1628,10 +1627,10 @@ Special components are used to upload files. You can read more about them in the
     <!-- video -->
     <div class="main__content-block">
     <div class="main__content-title main__content-title_req">
-    {{texts.btn_ok.question_new_video.title}}
+    not_var{{texts.btn_ok.question_new_video.title}}
     </div>
     <div class="main__text">
-    {{texts.btn_ok.question_new_video.description}}
+    not_var{{texts.btn_ok.question_new_video.description}}
     </div>
     <div class="main__video">
     {{field type="file" name="new_video" sources="CAMERA GALLERY" fileType="VIDEO" camera=true validation-show="top-left"}}
@@ -1641,10 +1640,10 @@ Special components are used to upload files. You can read more about them in the
     <!-- audio -->
     <div class="main__content-block">
     <div class="main__content-title main__content-title_req">
-    {{texts.btn_ok.question_new_audio.title}}
+    not_var{{texts.btn_ok.question_new_audio.title}}
     </div>
     <div class="main__text">
-    {{texts.btn_ok.question_new_audio.description}}
+    not_var{{texts.btn_ok.question_new_audio.description}}
     </div>
     <div class="main__audio">
     {{field type="file" name="new_audio" sources="RECORDER FILE_MANAGER" fileType="AUDIO" validation-show="top-left"}}
@@ -1671,7 +1670,7 @@ Special components are used to upload files. You can read more about them in the
     {% endif %}
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
-    For example, in the "Monitoring items in businesses" template, three output values are described for three buttons: `ok`, `no_obj`, and `no_org`.
+    For example, in the “Monitoring items in businesses” template, three output values are described for three buttons: `ok`, `no_obj`, and `no_org`.
 
     The `review__block` blocks contain a description of each field for this button.
 
@@ -1681,13 +1680,13 @@ Special components are used to upload files. You can read more about them in the
     <!-- photo -->
     <div class="review__block">
     <div class="review__title">
-    {{texts.btn_ok.question_new_imgs.title}}
+    not_var{{texts.btn_ok.question_new_imgs.title}}
     </div>
     <div class="review__imgs-grid">
     {{#each new_imgs}}
     <div class="review__grid-item">
     <div class="review__grid-inner">
-    <img src="{{this}}" class="review__img" data-rotationdeg="0">
+    <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
     <div class="review__rotate-panel">
     <span class="review__rotate review__rotate_left">←</span>
     <span class="review__rotate review__rotate_right">→</span>
@@ -1701,13 +1700,13 @@ Special components are used to upload files. You can read more about them in the
     <!-- video -->
     <div class="review__block">
     <div class="review__title">
-    {{texts.btn_ok.question_new_video.title}}
+    not_var{{texts.btn_ok.question_new_video.title}}
     </div>
     <div class="review__video-grid">
     {{#each new_video}}
     <div class="review__video-grid-item">
     <video width="50%" controls>
-    <source src={{this}} type="video/mp4">
+    <source src=not_var{{this}} type="video/mp4">
     </video>
     </div>
     {{/each}}
@@ -1717,12 +1716,12 @@ Special components are used to upload files. You can read more about them in the
     <!-- audio -->
     <div class="review__block">
     <div class="review__title">
-    {{texts.btn_ok.question_new_audio.title}}
+    not_var{{texts.btn_ok.question_new_audio.title}}
     </div>
     <div class="review__audio-grid">
     {{#each new_audio}}
     <div class="review__audio-grid-item">
-    <audio src={{this}} controls type="audio/wav">Audio doesn't play</audio>
+    <audio src=not_var{{this}} controls type="audio/wav">Audio doesn't play</audio>
     </div>
     {{/each}}
     </div>
@@ -1746,10 +1745,9 @@ Special components are used to upload files. You can read more about them in the
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
 
-    Each button has a name for accessing its properties. For example, in the "Monitoring items in businesses" template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new text to in the code.
+    Each button has a name for accessing its properties. For example, in the “Monitoring items in businesses” template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new text to in the code.
 
-    For example, in the "Monitoring items in businesses" template, the texts for the `btn_ok` button are located in the following code block:
-
+    For example, in the “Monitoring items in businesses” template, the texts for the `btn_ok` button are located in the following code block:
     {% if locale == "en-com" %}
     ```
     var texts = {
@@ -1823,8 +1821,7 @@ Special components are used to upload files. You can read more about them in the
     {% endif %}
 1. Add validation.
 
-    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the "Monitoring items in businesses" template, the code looks like this:
-
+    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Monitoring items in businesses” template, the code looks like this:
     {% if locale == "en-com" %}
     ```
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {

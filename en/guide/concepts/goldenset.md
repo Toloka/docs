@@ -19,7 +19,7 @@ Use control tasks to assign a [skill](../../glossary.md#skill-ru) to Tolokers ba
 - Tolokers need to attach a file to their assignment.
 - Tolokers need to transcribe text.
 - Tolokers need to select objects in a photo.
-- Tasks don't have a correct or incorrect response. For example: "Which image do you like best?" or "Choose the page design option that you like best".
+- Tasks don't have a correct or incorrect response. For example: “Which image do you like best?” or “Choose the page design option that you like best”.
 
 ## How to configure {#rule-golden}
 
@@ -115,11 +115,9 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
   
   If the Toloker completes 3 control or training tasks, they get a skill. Use the skill value to set access to other pools with [filters](filters.md).
 
-  {% cut "Example of filter settings" %}
+  #### Example of filter settings
 
   ![](../_images/other/qcr-control_example_filter.png)
-  
-  {% endcut %}
 
 - Incorrect settings
  

@@ -1,6 +1,6 @@
 # helper.translate
 
-Компонент для перевода элементов интерфейса на другие языки. Подробнее в разделе [Перевод интерфейса задания](https://toloka.ai/ru/docs/guide/concepts/project-languages.html#project-languages__interface-translate).
+Компонент для перевода элементов интерфейса на другие языки. Подробнее в разделе [Перевод интерфейса задания](../../guide/concepts/project-languages.md#project-languages__interface-translate).
 
 В те свойства, которые должны отображаться на разных языках, добавьте:
 

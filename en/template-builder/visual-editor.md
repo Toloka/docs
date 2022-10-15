@@ -1,3 +1,5 @@
+{% include [image-styles](../../_includes/image-styles.md) %}
+
 # Visual editor
 
 For some Toloka presets, Template builder allows you to edit its template using a visual editor. It might be useful, if you do not know anything about JSON formatting or usage and you do not feel experienced enough for the code editor, and want to start working with Template Builder right away.

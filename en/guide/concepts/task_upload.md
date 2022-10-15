@@ -71,7 +71,7 @@ Overview | How to fix
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
 **The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
 ``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a "link" ("url") field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
 ``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
 **Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).
 

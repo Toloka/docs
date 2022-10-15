@@ -54,7 +54,7 @@ The settings for [quality control](../../glossary.md#quality-control-ru) rules d
 
 - If the Toloker has to choose between options (for example, by selecting checkboxes), check the answers using [majority vote](mvote.md) or [control tasks](goldenset.md).
 
-- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, "Is this phrase translated correctly?") and possible responses (for example, "yes"/"no"). Set up [overlap](dynamic-overlap.md) and [majority vote](mvote.md) check.
+- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](dynamic-overlap.md) and [majority vote](mvote.md) check.
 
 - If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote-ru) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task-ru) with artificial examples where the choice is evident.
 
@@ -131,6 +131,8 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
 	
+{% endcut %}
+
 {% endcut %}
 
 {% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}

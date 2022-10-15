@@ -2,46 +2,53 @@
 
 Возможно, вам потребуется изменить входную спецификацию, дополнив ее новыми полями. Это может быть полезно, если локация расположена далеко или если ее сложно найти. В таком случае вы можете добавить поля с подробным описанием расположения локации. Либо дать любую другую дополнительную информацию к каждому заданию.
 
-#### Как это выглядит
+{% cut "Как это выглядит" %}
 
 Было:
+
 ![](../_images/tutorials/advanced-features/af-input-data-1.png)
+
 Стало:
+
 ![](../_images/tutorials/advanced-features/af-input-data-2.png)
+
+{% endcut %}
 
 Для вашего удобства мы подготовили код для шаблона «Мониторинг объектов в полях», в котором добавлено два новых входных поля. Используйте этот код для самопроверки. Наши вставки в этом коде вы можете найти поиском слова «кастомизация».
 
-#### Готовый код
+{% cut "Готовый код" %}
 
-#### Блок HTML
- {% if locale == "ru-ru" %}
+{% cut "Блок HTML" %}
+
+{% if locale == "ru-ru" %}
+
 ```html
 {{#if reviewMode}}
     <div class="header-review">
         <div class="header-review__title">
-            {{texts.task_title}}
+            not_var{{texts.task_title}}
         </div>
         <div class="header-review__buttons">
             {{#if (equal verdict "ok")}}
                 <div class="header-review__btn header-review__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_obj")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_access")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_access.title}}
+                    not_var{{texts.btn_no_access.title}}
                 </div>
             {{/if}}
         </div>
     </div>
-{{else}}
+not_var{{else}}
     <div class="header">
-        {{texts.task_title}}
+        not_var{{texts.task_title}}
     </div>
 {{/if}}
 
@@ -50,70 +57,70 @@
         <div class="info__review">
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_name}}
+                    not_var{{texts.info_name}}
                 </div>
                 <div class="info__content">
-                    {{name}}
+                    not_var{{name}}
                 </div>
             </div>
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_address}}
+                    not_var{{texts.info_address}}
                 </div>
                 <div class="info__content">
-                    {{address}}
+                    not_var{{address}}
                 </div>
             </div>
         </div>
-    {{else}}
+    not_var{{else}}
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_name}}
+                not_var{{texts.info_name}}
             </div>
             <div class="info__content">
-                {{name}}
+                not_var{{name}}
             </div>
         </div>
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_address}}
+                not_var{{texts.info_address}}
             </div>
             <div class="info__content">
-                {{address}}
+                not_var{{address}}
             </div>
         </div>
     {{/if}}
     <div class="info__block">
         <div class="info__title">
-            {{texts.info_description}}
+            not_var{{texts.info_description}}
         </div>
         <div class="info__content">
-            {{product}}
+            not_var{{product}}
         </div>
     </div>
 
     <!-- кастомизация начало фрагмента -->
     <div class="info__block">
       <div class="info__title">
-        {{texts.new_input_1__title}}
+        not_var{{texts.new_input_1__title}}
       </div>
       <div class="info__content">
-        {{new_input_1}}
+        not_var{{new_input_1}}
       </div>
     </div>
     <div class="info__block">
       <div class="info__title">
-        {{texts.new_input_2__title}}
+        not_var{{texts.new_input_2__title}}
       </div>
       <div class="info__content">
-        {{new_input_2}}
+        not_var{{new_input_2}}
       </div>
     </div>
     <!-- кастомизация конец фрагмента -->
 
     <div class="info__block">
         <div class="info__content">
-            <a href={{image}} target="_blank" class="info__link">Ссылка на изображение объекта</a>
+            <a href=not_var{{image}} target="_blank" class="info__link">Ссылка на изображение объекта</a>
         </div>
     </div>
 </div>
@@ -126,13 +133,13 @@
         {{#if (equal verdict "ok")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_1.title}}
+                    not_var{{texts.btn_ok.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">&larr;</span>
                                     <span class="review__rotate review__rotate_right">&rarr;</span>
@@ -144,7 +151,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.title}}
+                    not_var{{texts.btn_ok.question_2.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="more_info.comment" width="100%" rows=5}}
@@ -152,7 +159,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.radios.title}}
+                    not_var{{texts.btn_ok.question_2.radios.title}}
                 </div>
                 <div class="review__fields">
                     {{#each texts.btn_ok.question_2.radios.items}}
@@ -162,7 +169,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.checkboxes.title}}
+                    not_var{{texts.btn_ok.question_2.checkboxes.title}}
                 </div>
                 <div class="review__fields">
                     {{#each texts.btn_ok.question_2.checkboxes.items}}
@@ -172,13 +179,13 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_3.title}}
+                    not_var{{texts.btn_ok.question_3.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">&larr;</span>
                                     <span class="review__rotate review__rotate_right">&rarr;</span>
@@ -191,7 +198,7 @@
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_ok.question_4.title}}
+                        not_var{{texts.btn_ok.question_4.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -202,13 +209,13 @@
         {{#if (equal verdict "no_obj")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_1.title}}
+                    not_var{{texts.btn_no_obj.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">&larr;</span>
                                     <span class="review__rotate review__rotate_right">&rarr;</span>
@@ -220,13 +227,13 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_2.title}}
+                    not_var{{texts.btn_no_obj.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">&larr;</span>
                                     <span class="review__rotate review__rotate_right">&rarr;</span>
@@ -239,7 +246,7 @@
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_no_obj.question_3.title}}
+                        not_var{{texts.btn_no_obj.question_3.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -250,13 +257,13 @@
         {{#if (equal verdict "no_access")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_1.title}}
+                    not_var{{texts.btn_no_access.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_no_access}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">&larr;</span>
                                     <span class="review__rotate review__rotate_right">&rarr;</span>
@@ -268,13 +275,13 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_2.title}}
+                    not_var{{texts.btn_no_access.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">&larr;</span>
                                     <span class="review__rotate review__rotate_right">&rarr;</span>
@@ -286,7 +293,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_3.title}}
+                    not_var{{texts.btn_no_access.question_3.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -294,7 +301,7 @@
             </div>
         {{/if}}
     </div>
-{{else}}
+not_var{{else}}
     <div class="main">
         <div class="main__title">
             Выберите вариант выполнения задания:
@@ -303,18 +310,18 @@
             <div class="main__popup main__popup_hidden">Не выбран ни один вариант ответа</div>
             <div class="main__block">
                 <div class="main__btn main__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_1.title}}
+                            not_var{{texts.btn_ok.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_1.description}}
+                            not_var{{texts.btn_ok.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
+                            <a href="not_var{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_obj" camera=true preview=true compress=false validation-show="top-left"}}
@@ -322,17 +329,17 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_2.title}}
+                            not_var{{texts.btn_ok.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_2.description}}
+                            not_var{{texts.btn_ok.question_2.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="more_info.comment" width="100%" rows=5 validation-show="top-left"}}
                         </div>
                         <div class="main__fields">
                             <div class="main__radios-title">
-                                {{texts.btn_ok.question_2.radios.title}}
+                                not_var{{texts.btn_ok.question_2.radios.title}}
                             </div>
                             <div class="main__radios-items">
                                 {{#each texts.btn_ok.question_2.radios.items}}
@@ -342,7 +349,7 @@
                         </div>
                         <div class="main__fields">
                             <div class="main__checkboxes-title">
-                                {{texts.btn_ok.question_2.checkboxes.title}}
+                                not_var{{texts.btn_ok.question_2.checkboxes.title}}
                             </div>
                             <div class="main__checkboxes-items">
                                 {{#each texts.btn_ok.question_2.checkboxes.items}}
@@ -353,13 +360,13 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_3.title}}
+                            not_var{{texts.btn_ok.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_3.description}}
+                            not_var{{texts.btn_ok.question_3.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
+                            <a href="not_var{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -367,10 +374,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_ok.question_4.title}}
+                            not_var{{texts.btn_ok.question_4.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_4.description}}
+                            not_var{{texts.btn_ok.question_4.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -380,12 +387,12 @@
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_obj.question_1.description}}
+                            not_var{{texts.btn_no_obj.question_1.description}}
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_obj" camera=true validation-show="top-left"}}
@@ -393,10 +400,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_obj.question_2.description}}
+                            not_var{{texts.btn_no_obj.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
+                            <a href="not_var{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -404,10 +411,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_no_obj.question_3.title}}
+                            not_var{{texts.btn_no_obj.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_obj.question_3.description}}
+                            not_var{{texts.btn_no_obj.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -417,15 +424,15 @@
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red main__btn_no-access">
-                    {{texts.btn_no_access.title}}
+                    not_var{{texts.btn_no_access.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_access.question_1.description}}
+                            not_var{{texts.btn_no_access.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_access.question_1.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
+                            <a href="not_var{{texts.btn_no_access.question_1.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_no_access" camera=true validation-show="top-left"}}
@@ -433,10 +440,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_access.question_2.description}}
+                            not_var{{texts.btn_no_access.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_access.question_2.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
+                            <a href="not_var{{texts.btn_no_access.question_2.example_link_1}}" target="_blank" class="main__ex-link">Пример</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -444,10 +451,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_access.question_3.title}}
+                            not_var{{texts.btn_no_access.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_access.question_3.description}}
+                            not_var{{texts.btn_no_access.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -459,34 +466,36 @@
     </div>
 {{/if}}
 ```
+
 {% elsif locale == "en-com" %}
+
 ```html
 {{#if reviewMode}}
     <div class="header-review">
         <div class="header-review__title">
-            {{texts.task_title}}
+            not_var{{texts.task_title}}
         </div>
         <div class="header-review__buttons">
             {{#if (equal verdict "ok")}}
                 <div class="header-review__btn header-review__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_obj")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_access")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_access.title}}
+                    not_var{{texts.btn_no_access.title}}
                 </div>
             {{/if}}
         </div>
     </div>
-{{else}}
+not_var{{else}}
     <div class="header">
-        {{texts.task_title}}
+        not_var{{texts.task_title}}
     </div>
 {{/if}}
 
@@ -495,70 +504,70 @@
         <div class="info__review">
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_name}}
+                    not_var{{texts.info_name}}
                 </div>
                 <div class="info__content">
-                    {{name}}
+                    not_var{{name}}
                 </div>
             </div>
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_address}}
+                    not_var{{texts.info_address}}
                 </div>
                 <div class="info__content">
-                    {{address}}
+                    not_var{{address}}
                 </div>
             </div>
         </div>
-    {{else}}
+    not_var{{else}}
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_name}}
+                not_var{{texts.info_name}}
             </div>
             <div class="info__content">
-                {{name}}
+                not_var{{name}}
             </div>
         </div>
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_address}}
+                not_var{{texts.info_address}}
             </div>
             <div class="info__content">
-                {{address}}
+                not_var{{address}}
             </div>
         </div>
     {{/if}}
     <div class="info__block">
         <div class="info__title">
-            {{texts.info_description}}
+            not_var{{texts.info_description}}
         </div>
         <div class="info__content">
-            {{product}}
+            not_var{{product}}
         </div>
     </div>
 
     <!-- customization fragment start -->
     <div class="info__block">
       <div class="info__title">
-        {{texts.new_input_1__title}}
+        not_var{{texts.new_input_1__title}}
       </div>
       <div class="info__content">
-        {{new_input_1}}
+        not_var{{new_input_1}}
       </div>
     </div>
     <div class="info__block">
       <div class="info__title">
-        {{texts.new_input_2__title}}
+        not_var{{texts.new_input_2__title}}
       </div>
       <div class="info__content">
-        {{new_input_2}}
+        not_var{{new_input_2}}
       </div>
     </div>
     <!-- customization fragment end -->
 
     <div class="info__block">
         <div class="info__content">
-            <a href={{image}} target="_blank" class="info__link">Link to an object image</a>
+            <a href=not_var{{image}} target="_blank" class="info__link">Link to an object image</a>
         </div>
     </div>
 </div>
@@ -571,13 +580,13 @@
         {{#if (equal verdict "ok")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_1.title}}
+                    not_var{{texts.btn_ok.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -589,7 +598,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.title}}
+                    not_var{{texts.btn_ok.question_2.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="more_info.comment" width="100%" rows=5}}
@@ -597,7 +606,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.radios.title}}
+                    not_var{{texts.btn_ok.question_2.radios.title}}
                 </div>
                 <div class="review__fields">
                     {{#each texts.btn_ok.question_2.radios.items}}
@@ -607,7 +616,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.checkboxes.title}}
+                    not_var{{texts.btn_ok.question_2.checkboxes.title}}
                 </div>
                 <div class="review__fields">
                     {{#each texts.btn_ok.question_2.checkboxes.items}}
@@ -617,13 +626,13 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_3.title}}
+                    not_var{{texts.btn_ok.question_3.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -636,7 +645,7 @@
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_ok.question_4.title}}
+                        not_var{{texts.btn_ok.question_4.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -647,13 +656,13 @@
         {{#if (equal verdict "no_obj")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_1.title}}
+                    not_var{{texts.btn_no_obj.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -665,13 +674,13 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_2.title}}
+                    not_var{{texts.btn_no_obj.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -684,7 +693,7 @@
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_no_obj.question_3.title}}
+                        not_var{{texts.btn_no_obj.question_3.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -695,13 +704,13 @@
         {{#if (equal verdict "no_access")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_1.title}}
+                    not_var{{texts.btn_no_access.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_no_access}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -713,13 +722,13 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_2.title}}
+                    not_var{{texts.btn_no_access.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -731,7 +740,7 @@
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_3.title}}
+                    not_var{{texts.btn_no_access.question_3.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -739,7 +748,7 @@
             </div>
         {{/if}}
     </div>
-{{else}}
+not_var{{else}}
     <div class="main">
         <div class="main__title">
             Select a task completion option:
@@ -748,18 +757,18 @@
             <div class="main__popup main__popup_hidden">No answer selected</div>
             <div class="main__block">
                 <div class="main__btn main__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_1.title}}
+                            not_var{{texts.btn_ok.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_1.description}}
+                            not_var{{texts.btn_ok.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_obj" camera=true preview=true compress=false validation-show="top-left"}}
@@ -767,17 +776,17 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_2.title}}
+                            not_var{{texts.btn_ok.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_2.description}}
+                            not_var{{texts.btn_ok.question_2.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="more_info.comment" width="100%" rows=5 validation-show="top-left"}}
                         </div>
                         <div class="main__fields">
                             <div class="main__radios-title">
-                                {{texts.btn_ok.question_2.radios.title}}
+                                not_var{{texts.btn_ok.question_2.radios.title}}
                             </div>
                             <div class="main__radios-items">
                                 {{#each texts.btn_ok.question_2.radios.items}}
@@ -787,7 +796,7 @@
                         </div>
                         <div class="main__fields">
                             <div class="main__checkboxes-title">
-                                {{texts.btn_ok.question_2.checkboxes.title}}
+                                not_var{{texts.btn_ok.question_2.checkboxes.title}}
                             </div>
                             <div class="main__checkboxes-items">
                                 {{#each texts.btn_ok.question_2.checkboxes.items}}
@@ -798,13 +807,13 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_3.title}}
+                            not_var{{texts.btn_ok.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_3.description}}
+                            not_var{{texts.btn_ok.question_3.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -812,10 +821,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_ok.question_4.title}}
+                            not_var{{texts.btn_ok.question_4.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_4.description}}
+                            not_var{{texts.btn_ok.question_4.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -825,12 +834,12 @@
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_obj.question_1.description}}
+                            not_var{{texts.btn_no_obj.question_1.description}}
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_obj" camera=true validation-show="top-left"}}
@@ -838,10 +847,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_obj.question_2.description}}
+                            not_var{{texts.btn_no_obj.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -849,10 +858,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_no_obj.question_3.title}}
+                            not_var{{texts.btn_no_obj.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_obj.question_3.description}}
+                            not_var{{texts.btn_no_obj.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -862,15 +871,15 @@
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red main__btn_no-access">
-                    {{texts.btn_no_access.title}}
+                    not_var{{texts.btn_no_access.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_access.question_1.description}}
+                            not_var{{texts.btn_no_access.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_access.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_access.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_no_access" camera=true validation-show="top-left"}}
@@ -878,10 +887,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_access.question_2.description}}
+                            not_var{{texts.btn_no_access.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_access.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_access.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -889,10 +898,10 @@
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_access.question_3.title}}
+                            not_var{{texts.btn_no_access.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_access.question_3.description}}
+                            not_var{{texts.btn_no_access.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -904,9 +913,15 @@
     </div>
 {{/if}}
 ```
+
 {% endif %}
-#### Блок JS
- {% if locale == "ru-ru" %}
+
+{% endcut %}
+
+{% cut "Блок JS" %}
+
+{% if locale == "ru-ru" %}
+
 ```javascript
 var texts = {
     'task_title': 'Мониторинг объектов в полях',
@@ -1011,7 +1026,6 @@ var texts = {
         }
     }
 };
-
 
 // Максимальная удаленность исполнителя от магазина в километрах.
 var MAX_DISTANCE = 1;
@@ -1602,7 +1616,6 @@ exports.Task = extend(TolokaHandlebarsTask, function (options) {
     }
 });
 
-
 exports.TaskSuite = extend(TolokaHandlebarsTaskSuite, function (options) {
     TolokaHandlebarsTaskSuite.call(this, options);
 }, {
@@ -1652,7 +1665,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
+
 {% elsif locale == "en-com" %}
+
 ```javascript
 var texts = {
     'task_title': 'Field objects monitoring',
@@ -2348,7 +2363,6 @@ exports.Task = extend(TolokaHandlebarsTask, function (options) {
     }
 });
 
-
 exports.TaskSuite = extend(TolokaHandlebarsTaskSuite, function (options) {
     TolokaHandlebarsTaskSuite.call(this, options);
 }, {
@@ -2398,7 +2412,12 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
+
 {% endif %}
+
+{% endcut %}
+
+{% endcut %}
 
 Теперь рассмотрим, как добавить эти поля вручную.
 
@@ -2416,37 +2435,42 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
     Каждый блок оформляется так:
     {% if locale == "ru-ru" %}
+
     ```html
     `<div class="наименование_блока">`
     <!-- код блока, может содержать вложенные блоки -->
     ...
     </div>
     ```
+
     {% elsif locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
+
     {% endif %}
+
 1. Найдите блок `info`, который отвечает за отображение входной спецификации. В нем содержатся блоки `info__block`, которые описывают отдельные поля входной спецификации. Вставьте после нужного поля следующий код:
 
     ```html
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
@@ -2456,88 +2480,99 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 1. Также есть второй вариант, когда для исполнителя два поля отображаются последовательно друг за другом, а для заказчика в одну строку.
 
     В блоке `info` найдите блок `info__review`, который содержит несколько блоков `info__review-block`. После нужного блока `info__review-block` вставьте блоки с новыми входными полями:
+
     {% if locale == "ru-ru" %}
+
     ```html
     <!-- В одну строку в режиме приемки -->
     <div class="info__review-block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__review-block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
+
     {% elsif locale == "en-com" %}
+
     ```html
     <!-- In one line in acceptance mode -->
     <div class="info__review-block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__review-block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
+
     {% endif %}
-    Затем в блоке `info` найдите блоки `info__block`, которые содержатся между строками `{{else}}` и `{{/if}}`. После нужного блока `info__block` вставьте блоки с новыми входными полями:
+
+    Затем в блоке `info` найдите блоки `info__block`, которые содержатся между строками `not_var{{else}}` и `{{/if}}`. После нужного блока `info__block` вставьте блоки с новыми входными полями:
+
     {% if locale == "ru-ru" %}
+
     ```html
     <!-- Друг за другом в обычном режиме -->
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
+
     {% elsif locale == "en-com" %}
+
     ```html
     <!-- One after another in performer mode -->
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
+
     {% endif %}
 
 #### Редактирование JS
@@ -2545,28 +2580,39 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 1. Код JS состоит из блоков, описывающих различные элементы интерфейса. Эти блоки могут быть вложенными (кнопки содержат набор полей, поля содержат набор элементов и т. д.). Каждый блок заключен в фигурные скобки.
 
     В общем виде элементы описываются так:
+
     {% if locale == "ru-ru" %}
-    ```
+
+    ```plaintext
     'свойство': 'значение'
     ```
+
     {% elsif locale == "en-com" %}
-    ```
+
+    ```plaintext
     'property': 'value'
     ```
+
     {% endif %}
+
     Значение тоже может состоять из нескольких свойств, в этом случае оно заключается в фигурные скобки и образует следующий уровень вложенности.
 
 1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты. Добавьте в нее заголовки для новых полей:
+
     {% if locale == "ru-ru" %}
+
     ```javascript
     'new_input_1__title': 'Входное поле 1:',
     'new_input_2__title': 'Входное поле 2:',
     ```
+
     {% elsif locale == "en-com" %}
+
     ```javascript
     'new_input_1__title': 'Input field 1:',
     'new_input_2__title': 'Input field 2:',
     ```
+
     {% endif %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

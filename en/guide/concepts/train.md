@@ -52,7 +52,7 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
     #### What should be a good hint?
 
-    Avoid wordings like: "You answered incorrectly, please provide the correct response". The Toloker learns when the hint explains the essence of their mistake.
+    Avoid wordings like: “You answered incorrectly, please provide the correct response”. The Toloker learns when the hint explains the essence of their mistake.
 
     Make the hints clear. Explain which response should be chosen and why.
 
@@ -139,7 +139,7 @@ Tolokers will get access only to those pools for which their skill value is high
 
 ## How to archive a training pool {#archive-train}
 
-A pool with the {% if locale == "en-com" %}"Archived"{% endif %} status can't be started or edited.
+A pool with the {% if locale == "en-com" %}“Archived”{% endif %} status can't be started or edited.
 
 By default, archived training pools are not visible in the list of project trainings. To view them:
 1. Open the project page.
@@ -245,7 +245,7 @@ Yes, it is.
 
 Training is designed to select Tolokers for the general task. That's why training must be linked to the main pool and become inactive as soon as the main pool closes.
 
-The Toloker is trained to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, "optional" training can be based on a main pool that includes some training tasks.
+The Toloker is trained to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, “optional” training can be based on a main pool that includes some training tasks.
 
 To show the training separately from other pools, disable **Use project description** and use this field to specify that this is an optional set of training tasks. In the pool settings, select the **Training** type.
 
@@ -300,7 +300,7 @@ You can create a retry pool similarly to an exam pool. In the pool settings, sel
 
 For example, if the main pool admits users with a skill of 70 or higher, then you can route the people with a skill between 40 and 69 to the retry pool.
 
-To get a valid "range", enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
+To get a valid “range”, enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
 We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10-20 tasks is enough, depending on complexity.
 #### How do I create an exam with a preset number of correct responses?
 

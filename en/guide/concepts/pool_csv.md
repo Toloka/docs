@@ -59,7 +59,7 @@ Task type depends on which fields are filled in:
 	- The task input data in the columns with the `INPUT` header.
 	- Correct responses in the columns with the `GOLDEN` header.
 
-	{% note info %}
+You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
 	You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
@@ -102,11 +102,7 @@ Task type depends on which fields are filled in:
 	- The task input data in the columns with the `INPUT` header.
 	- Coordinates in the `Al:latitude` and `Al:longitude` columns.
 
-	{% cut "Example" %}
-	
-	![](../_images/tutorials/walk/squirrel_tsv.png)
-	
-	{% endcut %}
+You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
 {% end list %}
 
@@ -164,12 +160,12 @@ To display quotation marks ``"`` in the string type field:
 
 Unescaped quotation marks are removed when processing the file.
 
-| Data | Example of transferring data to a file | Status | What the Toloker will see
-|----- | ----- | ----- | -----
-|{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` "monitor 24"" buy" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
-|{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` correct, but the quotes won't be displayed ```{% endif %} | {% if locale == "en-com" %}``` book All about dogs ```{% endif %}
-|{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` "book "All about dogs"" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %}
-|{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
+Data | Example of transferring data to a file | Status | What the Toloker will see
+----- | ----- | ----- | -----
+{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` "monitor 24"" buy" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
+{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` correct, but the quotes won't be displayed ```{% endif %} | {% if locale == "en-com" %}``` book All about dogs ```{% endif %}
+{% if locale == "en-com" %}``` book “All about dogs” ```{% endif %} | {% if locale == "en-com" %}``` "book “All about dogs”" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book “All about dogs” ```{% endif %}
+{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
 
 {% endcut %}
 
@@ -304,10 +300,18 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 
 #### Processing errors table
 
-#|
-|| **Overview** | **How to fix**||
-||``` "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" ```||
-||**Extra tabs.**
+Overview | How to fix
+----- | -----
+``` "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" ```
+**Extra tabs.**<br/><br/>If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.<br/><br/>For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.
+``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```
+**The number of fields in the header and in the row doesn't match.** | Make sure that:<br/><br/>- The number of tabs in the file structure is correct.<br/>- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
+``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
+**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
+``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
+**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
+``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
+**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).
 
 If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.
 
@@ -407,7 +411,7 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 The same task may appear on different pages if:
 
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be "reassessed".
+- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 

@@ -136,11 +136,11 @@ In these instructions, you'll create a task in which Tolokers will search for da
     ```html
     <!-- Buttons to go to the company's website and search for the company's name in Yandex -->
     <div class="left">
-    <div class="title">{{title}}
+    <div class="title">not_var{{title}}
     </div>
     <div class="site-buttons">
     {{button label="Go to site" action=false href=url}}
-    <a href="https://yandex.ru/search/?text={{title}}" target="_blank" class="btn_ya">Search Yandex</a>
+    <a href="https://yandex.ru/search/?text=not_var{{title}}" target="_blank" class="btn_ya">Search Yandex</a>
     </div>
     <!-- Fields for phone numbers and email addresses. The data format is checked using regular expressions. The expression is written in the "Pattern" parameter of the "phone" and "email" output fields. -->
     <div class="output-fields">

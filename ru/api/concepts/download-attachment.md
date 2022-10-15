@@ -10,14 +10,14 @@
 
 - Боевая версия
 
-    ```no-highlight
+    ```plaintext
     GET https://toloka.dev/api/v1/attachments/<file_id>/download
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
-    ```no-highlight
+    ```plaintext
     GET https://sandbox.toloka.dev/api/v1/attachments/<file_id>/download
     Authorization: OAuth <OAuth token>
     ```

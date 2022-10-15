@@ -264,7 +264,7 @@ You can assign a skill to these people based on their performance in the previou
 
 {% endcut %}
 
-{% cut "How do I set up a filter so that the pool is available to Tolokers who don't have a specific skill (like a "spammer")?" %}
+{% cut "How do I set up a filter so that the pool is available to Tolokers who don't have a specific skill (like a “spammer”)?" %}
 
 Specify this skill as a [filter](filters.md), but leave the value field empty (this is equivalent to absence of the skill).
 

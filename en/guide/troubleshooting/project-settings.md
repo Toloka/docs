@@ -89,7 +89,7 @@ If you want to pass different label values in different tasks or the number of c
 
 You can hide text in an expandable section by using CSS styles, both in the task itself and in the instructions. You can see the sample code [here]({{ text-under-the-cut }}).
 
-#### How do I pass the value of the input variable to the "Button with click validation"?
+#### How do I pass the value of the input variable to the “Button with click validation”?
 
 Specify the name of the input field where you pass the link, without the brackets:{% if locale == "en-com" %}
 ```
@@ -114,17 +114,17 @@ The names of the output fields must differ: each checkbox must have its own uniq
 
 #### How do I add assignment validation depending on a checkbox, so that if an object is in the image, it must be selected, otherwise, a checkbox must be selected?
 
-You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the "Search for information online" template.
+You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the “Search for information online” template.
 
 #### How do I insert a calendar?
 
 You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
 
 To add libraries:
-1. Click the "gear button" in project editing mode.
+1. Click the “gear button” in project editing mode.
 1. In the field that opens on the left, enter the links and press **Enter**.
 
-#### Why doesn't the "Submit" button work in the task?
+#### Why doesn't the “Submit” button work in the task?
 
 The issue is probably in the JS block. Try deleting its content, then test the **Submit** button in the preview mode.
 
@@ -142,7 +142,7 @@ You can't deselect a radio button. You can only select another radio button as a
 
 #### How do I, depending on the option selected, show a photo and make it mandatory or hide it and make it optional?
 
-In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the "Text classification" template.
+In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the “Text classification” template.
 
 #### How do I prevent adding photos from the gallery so that when the Toloker clicks the add photo button the camera opens, rather than the gallery/camera choice?
 
@@ -173,9 +173,9 @@ Learn more about the template's JS extension [here](../concepts/spec-advanced.md
 
 To avoid conflict between the Vue markup and the Handlebars syntax, disable the "toloka-handlebars-templates" library and inherit from the Task/TaskSuite classes.
 
-#### In the "Side-by-side image comparison" template, where do I specify a proxy for the task interface to create a task with three image options?
+#### In the “Side-by-side image comparison” template, where do I specify a proxy for the task interface to create a task with three image options?
 
-The "Side-by-side image comparison" template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](../concepts/t-components/img.md): `{{img src=(proxy image)}}`.
+The “Side-by-side image comparison” template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](../concepts/t-components/img.md): `{{img src=(proxy image)}}`.
 
 #### How do I change the task background from the standard white color to a different color?
 
@@ -203,7 +203,7 @@ You can also add a regular expression to the `input` field with the **string** t
 
 #### How do I add assignment validation depending on a checkbox?
 
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the "Search for information online" template.
+You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” template.
 
 #### How do I enter a list of words line-by-line, display an element for each of them, and save the result to the output array?
 
@@ -242,18 +242,18 @@ You can't expand the HTML window. To expand the JS and CSS fields, click any are
 
 #### How do I use the input data as a variable in the HTML block?
 
-Enclose the input field in double curly brackets `{{text}}`.
+Enclose the input field in double curly brackets `not_var{{text}}`.
 
 #### How do I display formatted text from input data in the task?
 
-Enclose the input field in triple curly brackets `{{{input_field}}}`.
+Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
 
 For more information about using the component, see the [Requester's guide](../concepts/t-components/html.md).
 
 #### Can I use my own JS to build an interface in Toloka?
 
 You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
-- Click the "gear button" to open the settings.
+- Click the “gear button” to open the settings.
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
 See the [Requester's guide](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
 
@@ -269,7 +269,7 @@ However, in the context of TolokaHandlebars editability, there are no difference
 
 #### How do I display the text in the input field as in the source (with the HTML tags)?
 
-To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>{{text}}</pre>`.
+To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
 
 In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
 ```
@@ -290,7 +290,7 @@ There are four options:
     Mention this in your instructions for reviewers.
 
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
-- Add the "No object" checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
+- Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
     For control purposes, add information about the value of this checkbox to the task interface.
 
 [Other questions](support.md#help)
@@ -304,7 +304,7 @@ You can find an example of the task template for selecting image groups at this 
 
 #### How do I add a mask for the input field, like dd.mm.yyyy for the date field or numbers only (10 or 12) for INN (Taxpayer Identification Number)?
 
-To validate the input data format, you can use the output field type, specifying the acceptable or minimum/maximum values. For example, create an output field for the taxpayer number with the "string" type and enter its minimum and maximum length (like 10 and 12). To use a more sophisticated validation in the template, use RegExp.
+To validate the input data format, you can use the output field type, specifying the acceptable or minimum/maximum values. For example, create an output field for the taxpayer number with the “string” type and enter its minimum and maximum length (like 10 and 12). To use a more sophisticated validation in the template, use RegExp.
 
 To enter a date, you can add a calendar to the task interface. See an [example of a calendar]({{ how-to-insert-a-calendar }}).
 

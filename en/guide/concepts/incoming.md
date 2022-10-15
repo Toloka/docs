@@ -30,242 +30,242 @@ There are two ways to edit the specification in project settings: using either r
 
 - JSON mode
 
-	To switch modes, click ![](../_images/code.svg). Examples of fields:
+    To switch modes, click ![](../_images/code.svg). Examples of fields:
 
-	#### Examples of fields:
+    #### Examples of fields:
 
-	   {% cut "Text in different formats" %}
+       {% cut "Text in different formats" %}
 
-	   - String of a certain length
+       - String of a certain length
 
-		   ```json
-		   "my_string": {
-		   "type": "string",
-		   "required": true,
-		   "min_length": 10,
-		   "max_length": 100
-		   }
-		   ```
-
-
-	   - Only Russian letters and numbers
-
-		   ```json
-		   "my_ru_string": {
-		   "type": "string",
-		   "required": true,
-		   "min_length": 10,
-		   "max_length": 100,
-		   "pattern": "[а-яА-Я0-9]+"
-		   }
-		   ```
-
-	   - Only Latin letters and numbers
-
-		   ```json
-		   "my_en_string": {
-		   "type": "string",
-		   "required": true,
-		   "min_length": 10,
-		   "max_length": 100,
-		   "pattern": "[a-zA-Z0-9]+"
-		   }
-		   ```
-
-	   - Letters and characters without numbers
-
-		   ```json
-		   "my_number_string": {
-		   "type": "string",
-		   "required": true,
-		   "min_length": 10,
-		   "max_length": 100,
-		   "pattern": "[^0-9]+"
-		   }
-		   ```
-
-	   - Link from a specific site
-
-		   ```json
-		   "my_url": {
-		   "type": "string",
-		   "required": true,
-		   "pattern": "(?:http(?:s)?:\\/\\/)?(?:[a-zA-z-]+(\\.)+)*(?:yandex\\.ru){1}(\\/|\\/[a-zA-Z-\\._~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]+)?"
-		   }
-		   ```
-
-	   - Phone number with the `+`, `-` and space characters
-
-		   ```json
-		   "my_phone_string": {
-		   "type": "string",
-		   "required": true,
-		   "pattern": "\\+?[0-9\\s-]{4,}"
-		   }
-		   ```
-
-	   - Email with the `@`, `-` and `.` characters
-
-		   ```json
-		   "my_mail_string": {
-		   "type": "string",
-		   "required": true,
-		   "pattern": "[a-zA-Z]{1}[a-zA-Z0-9\\.\\-_]+@[a-zA-Z0-9\\.\\-_]+\\.[a-zA-Z]{2,}"
-		   }
-		   ```
-
-	   - Month {% if locale == "ru-ru" %}
-
-		   ```json
-		   "my_month_string": {
-		   "type": "string",
-		   "required": true,
-		   "allowed_values": ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь" "ноябрь", "декабрь"]
-		   }
-		   ```
-
-		   {% endif %}{% if locale == "en-com" %}
-
-		   ```json
-		   "my_month_string": {
-		   "type": "string",
-		   "required": true,
-		   "allowed_values": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October" "November", "December"] }
-		   ```
-
-		   {% endif %}
-
-		 {% endcut %}	
-
-		 {% cut "Link" %}
-
-		 ```json
-		 "my_url": {
-			 "type": "url",
-			 "required": true
-		 }
-		 ```
-
-		 {% endcut %}
-
-		 {% cut "Boolean" %}
-
-		 ```json
-		 "my_boolean": {
-			 "type": "boolean",
-			 "required": true
-		 }
-		 ```
-
-		 {% endcut %}
-
-		 {% cut "Numbers" %}
-
-		 - Integer from the specified range:
-
-			 ```json
-			 "my_integer": {
-			 "type": "integer",
-			 "required": true,
-			 "min_value": 1,
-			 "max_value": 100
-			 }
-			 ```
-
-		 - Integer with a list of allowed values:
-
-			 ```json
-			 "my_integer": {
-			 "type": "integer",
-			 "required": true,
-			 "allowed_values": [10, 20, 30]
-			 }
-			 ```
-
-		 - Fractional number:
-
-			 ```json
-			 "my_float": {
-			 "type": "float",
-			 "required": true,
-			 "min_value": 10.11,
-			 "max_value": 65.51
-			 }
-			 ```
-
-		 - A number with 0, 1, or 2 decimal places.
-
-			 To do this, choose the **string** type and use regular expression for validation. Note that the decimal separator is a comma:
-
-			 ```json
-			 "my_mail_string": {
-			 "type": "string",
-			 "required": true,
-			 "pattern": "^([0-9]+)(,([0-9]){1,2})?$"
-			 }
-			 ```
+           ```json
+           "my_string": {
+           "type": "string",
+           "required": true,
+           "min_length": 10,
+           "max_length": 100
+           }
+           ```
 
 
-		 {% endcut %}
+       - Only Russian letters and numbers
 
-		 {% cut "File" %}
+           ```json
+           "my_ru_string": {
+           "type": "string",
+           "required": true,
+           "min_length": 10,
+           "max_length": 100,
+           "pattern": "[а-яА-Я0-9]+"
+           }
+           ```
 
-		 ```json
-		 "my_file": {
-			 "type": "file",
-			 "required": true
-		 }
-		 ```
+       - Only Latin letters and numbers
 
-		 {% endcut %}
+           ```json
+           "my_en_string": {
+           "type": "string",
+           "required": true,
+           "min_length": 10,
+           "max_length": 100,
+           "pattern": "[a-zA-Z0-9]+"
+           }
+           ```
 
-		 {% cut "Array of files" %}
+       - Letters and characters without numbers
 
-		 ```json
-		 "my_file_array": {
-			 "type": "array_file",
-			 "required": true,
-			 "max_size": 5
-		 }
-		 ```
+           ```json
+           "my_number_string": {
+           "type": "string",
+           "required": true,
+           "min_length": 10,
+           "max_length": 100,
+           "pattern": "[^0-9]+"
+           }
+           ```
 
-		 {% endcut %}
+       - Link from a specific site
 
-		 {% cut "Coordinates" %}
+           ```json
+           "my_url": {
+           "type": "string",
+           "required": true,
+           "pattern": "(?:http(?:s)?:\\/\\/)?(?:[a-zA-z-]+(\\.)+)*(?:yandex\\.ru){1}(\\/|\\/[a-zA-Z-\\._~:/\\?#\\[\\]@!\\$&'\\(\\)\\*\\+,;=]+)?"
+           }
+           ```
 
-		 ```json
-		 "my_coordinates": {
-			 "type": "coordinates",
-			 "required": true
-		 }
-		 ```
+       - Phone number with the `+`, `-` and space characters
 
-		 {% endcut %}
+           ```json
+           "my_phone_string": {
+           "type": "string",
+           "required": true,
+           "pattern": "\\+?[0-9\\s-]{4,}"
+           }
+           ```
 
-		 {% cut "JSON" %}
+       - Email with the `@`, `-` and `.` characters
 
-		 ```json
-		 "my_json": {
-			 "type": "json",
-			 "required": true
-		 }
-		 ```
+           ```json
+           "my_mail_string": {
+           "type": "string",
+           "required": true,
+           "pattern": "[a-zA-Z]{1}[a-zA-Z0-9\\.\\-_]+@[a-zA-Z0-9\\.\\-_]+\\.[a-zA-Z]{2,}"
+           }
+           ```
 
-		 {% endcut %}
+       - Month {% if locale == "ru-ru" %}
 
-		 {% cut "Hidden field" %}
+           ```json
+           "my_month_string": {
+           "type": "string",
+           "required": true,
+           "allowed_values": ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь" "ноябрь", "декабрь"]
+           }
+           ```
 
-		 The string the Toloker can't access:
+           {% endif %}{% if locale == "en-com" %}
 
-		 ```json
-		 "my_string": {
-			 "type": "string",
-			 "hidden": true
-		 }
-		 ```
+           ```json
+           "my_month_string": {
+           "type": "string",
+           "required": true,
+           "allowed_values": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October" "November", "December"] }
+           ```
 
-		 {% endcut %}
-	  
+           {% endif %}
+
+         {% endcut %}
+
+         {% cut "Link" %}
+
+         ```json
+         "my_url": {
+             "type": "url",
+             "required": true
+         }
+         ```
+
+         {% endcut %}
+
+         {% cut "Boolean" %}
+
+         ```json
+         "my_boolean": {
+             "type": "boolean",
+             "required": true
+         }
+         ```
+
+         {% endcut %}
+
+         {% cut "Numbers" %}
+
+         - Integer from the specified range:
+
+             ```json
+             "my_integer": {
+             "type": "integer",
+             "required": true,
+             "min_value": 1,
+             "max_value": 100
+             }
+             ```
+
+         - Integer with a list of allowed values:
+
+             ```json
+             "my_integer": {
+             "type": "integer",
+             "required": true,
+             "allowed_values": [10, 20, 30]
+             }
+             ```
+
+         - Fractional number:
+
+             ```json
+             "my_float": {
+             "type": "float",
+             "required": true,
+             "min_value": 10.11,
+             "max_value": 65.51
+             }
+             ```
+
+         - A number with 0, 1, or 2 decimal places.
+
+             To do this, choose the **string** type and use regular expression for validation. Note that the decimal separator is a comma:
+
+             ```json
+             "my_mail_string": {
+             "type": "string",
+             "required": true,
+             "pattern": "^([0-9]+)(,([0-9]){1,2})?$"
+             }
+             ```
+
+
+         {% endcut %}
+
+         {% cut "File" %}
+
+         ```json
+         "my_file": {
+             "type": "file",
+             "required": true
+         }
+         ```
+
+         {% endcut %}
+
+         {% cut "Array of files" %}
+
+         ```json
+         "my_file_array": {
+             "type": "array_file",
+             "required": true,
+             "max_size": 5
+         }
+         ```
+
+         {% endcut %}
+
+         {% cut "Coordinates" %}
+
+         ```json
+         "my_coordinates": {
+             "type": "coordinates",
+             "required": true
+         }
+         ```
+
+         {% endcut %}
+
+         {% cut "JSON" %}
+
+         ```json
+         "my_json": {
+             "type": "json",
+             "required": true
+         }
+         ```
+
+         {% endcut %}
+
+         {% cut "Hidden field" %}
+
+         The string the Toloker can't access:
+
+         ```json
+         "my_string": {
+             "type": "string",
+             "hidden": true
+         }
+         ```
+
+         {% endcut %}
+
 {% endlist %}
 
 {% cut "Explanations for configuring fields" %}
@@ -283,7 +283,8 @@ There are two ways to edit the specification in project settings: using either r
 - `file`
 - `coordinates`
 - `json`
-    
+
+		 {% cut "JSON" %}
 
 For arrays, add the `array_` prefix to the field type in JSON mode. For example: `array_file`. ||
 || {% if locale == "ru-ru" %}**Required**{% endif %}{% if locale == "en-com" %}**Required**{% endif %} | `required` | Whether the field must be filled when uploading the tasks for the input data.
@@ -340,7 +341,7 @@ The default value is `false`.||
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
     {% if locale == "ru-ru" %}
-	- [Toloka blog post.]({{ toloka-blog-edit-templates }}) {% endif %}
+    - [Toloka blog post.]({{ toloka-blog-edit-templates }}) {% endif %}
 
 ## Troubleshooting {#troubleshooting}
 
@@ -352,7 +353,7 @@ You can find an example of the task template for selecting image groups at this 
 
 {% cut "How do I add a mask for the input field, like dd.mm.yyyy for the date field or numbers only (10 or 12) for INN (Taxpayer Identification Number)?" %}
 
-To validate the input data format, you can use the output field type, specifying the acceptable or minimum/maximum values. For example, create an output field for the taxpayer number with the "string" type and enter its minimum and maximum length (like 10 and 12). To use a more sophisticated validation in the template, use RegExp.
+To validate the input data format, you can use the output field type, specifying the acceptable or minimum/maximum values. For example, create an output field for the taxpayer number with the “string” type and enter its minimum and maximum length (like 10 and 12). To use a more sophisticated validation in the template, use RegExp.
 
 To enter a date, you can add a calendar to the task interface. See an [example of a calendar]({{ how-to-insert-a-calendar }}).
 

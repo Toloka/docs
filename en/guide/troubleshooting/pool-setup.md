@@ -9,7 +9,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 ## Filters {#filters}
 
-#### Can I select Tolokers from a specific city of residence or is the only option "Region by IP"?
+#### Can I select Tolokers from a specific city of residence or is the only option “Region by IP”?
 
 Yes, you can do that. In the [filters](../concepts/filters.md), select . Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
 
@@ -17,7 +17,7 @@ Yes, you can do that. In the [filters](../concepts/filters.md), select . Please 
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
 
-#### I want to calculate a skill based on performance in multiple projects. Is that possible? If it is, can I use "Aggregation by skill"?
+#### I want to calculate a skill based on performance in multiple projects. Is that possible? If it is, can I use “Aggregation by skill”?
 
 If you mean multiple different projects, you can't do that.
 
@@ -51,7 +51,7 @@ Tasks in pools are automatically available in the web version of Toloka and the 
 
 If the Toloker mismatches your preset filter, they can't see the task. You can only remove the restricting filter from the pool. You can test the task in the [Sandbox](../concepts/sandbox.md) by adding the desired user to your trusted list.
 
-#### Can I set up a task to display it to users with certain demographic and geo parameters? For example, "Moscow only, 30-45 years old".
+#### Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30-45 years old”.
 
 You can do that. To select Tolokers for the pool, use [filters](../concepts/filters.md).
 
@@ -63,7 +63,7 @@ Tasks in pools are automatically available in the web version of Toloka and the 
 
 You can assign a skill to these people based on their performance in the previous pools. Use this skill as a [filter](../concepts/filters.md) in the new pool.
 
-#### How do I set up a filter so that the pool is available to users who don't have a specific skill (like a "spammer")?
+#### How do I set up a filter so that the pool is available to users who don't have a specific skill (like a “spammer”)?
 
 Specify this skill as a [filter](../concepts/filters.md), but leave the value field empty (this is equivalent to absence of the skill).
 
@@ -108,7 +108,7 @@ The settings for [quality control](../../glossary.md#quality-control-ru) rules d
 
 - If the Toloker has to choose between options (for example, by selecting checkboxes), check the answers using [majority vote](../concepts/mvote.md) or [control tasks](../concepts/goldenset.md).
 
-- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](../concepts/accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, "Is this phrase translated correctly?") and possible responses (for example, "yes"/"no"). Set up [overlap](../concepts/dynamic-overlap.md) and [majority vote](../concepts/mvote.md) check.
+- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](../concepts/accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](../concepts/dynamic-overlap.md) and [majority vote](../concepts/mvote.md) check.
 
 - If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote-ru) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task-ru) with artificial examples where the choice is evident.
 
@@ -270,17 +270,17 @@ Show a captcha after every 20 assignments.
 #### Average/High
 Show a captcha after every 10 assignments.
 
-#### I found the following terms related to captcha in Help: "Percentage of correct responses" and "Percentage of incorrect responses". Are they determined from the control sample?
+#### I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?
 
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the "range" specified in the **Recent control and training task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
+The percentage of correct responses is based on the total number of captchas processed by the Toloker within the “range” specified in the **Recent control and training task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
 
-#### My task uses a form with multiple fields. When there is an overlap and "Majority vote" is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?
+#### My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?
 
 All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
 
 #### Have I understood correctly that if I use `set the the skill value = 1` with the `percentage of accepted responses >= 75` and `10 recent values to use`, for every 8 correctly completed tasks out of 10 the Toloker is given 1 skill point?
 
-No, this is incorrect. With these settings, each time a rule condition is met, the Toloker gets `skill = 1`. To change the skill value in the process of task review, you need a "multi-step" rule, which has multiple identical rules with different values of **Total reviewed responses**.
+No, this is incorrect. With these settings, each time a rule condition is met, the Toloker gets `skill = 1`. To change the skill value in the process of task review, you need a “multi-step” rule, which has multiple identical rules with different values of **Total reviewed responses**.
 
 #### I created a training pool with one task containing a hint. The Toloker fails to complete the task on the first attempt, but finally succeeds. The Toloker gets the skill `0`. How do I grant to the Toloker access to my tasks? The minimum required level that you can set is `10`.
 
@@ -312,7 +312,7 @@ The tasks themselves are not exported, only the project configuration and the se
 
 The **Recent control and training task responses to use** field is for the number of recent responses from the Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
-#### What output format do I use for the review results to filter out mismatching users based on the "Majority vote"?
+#### What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?
 
 To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](../concepts/mvote.md) to the pool.
 
@@ -356,7 +356,7 @@ Possible reasons:
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from "3" to "5" is enough. If the tasks are simple, overlap of "3" is likely to be enough. For tasks that are reviewed, set overlap to "1".
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 #### Can I change overlap after the pool is started?
 

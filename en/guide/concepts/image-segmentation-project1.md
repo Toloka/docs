@@ -25,119 +25,119 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 1. Edit the task interface in the editor you selected:
 
     {% list tabs %}
-	
-	- Template Builder
 
-		1. The task interface describes how the elements should be arranged in the task.
+    - Template Builder
 
-		The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
+        1. The task interface describes how the elements should be arranged in the task.
 
-		For more information, see the Template Builder Help:
+        The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
 
-		- [Setting up conditions]({{ tb-conditions }}).
-		- [Image classification]({{ tb-image-classification }}) template.
+        For more information, see the Template Builder Help:
 
-		1. On the **Configuration** panel, replace lines 19 to 28 in the code:
+        - [Setting up conditions]({{ tb-conditions }}).
+        - [Image classification]({{ tb-image-classification }}) template.
 
-		{% if locale == "en-com" %}
+        1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
-		```json
-		"label": "What is the cat's mood?",
-		"options": [
-		{
-		"label": "Good",
-		"value": "ok"
-		},
-		{
-		"label": "Bad",
-		"value": "bad"
-		},
-		```
-		
-		{% endif %}
-		with:
-		{% if locale == "en-com" %}
-		
-		```json
-		"label": "Are there traffic signs in the picture?",
-		"options": [
-		{
-		"label": "Yes",
-		"value": "ok"
-		},
-		{
-		"label": "No",
-		"value": "bad"
-		},
-		```
-		
-		{% endif %}
-		
-		1. Click **Show specifications** to see the input and output data fields.
+        {% if locale == "en-com" %}
 
-		   Input data fields are created from the code on the **Example of input data** tab.
+        ```json
+        "label": "What is the cat's mood?",
+        "options": [
+        {
+        "label": "Good",
+        "value": "ok"
+        },
+        {
+        "label": "Bad",
+        "value": "bad"
+        },
+        ```
 
-		   The output data fields depend on the components that use `data.output` and values supported by it.
+        {% endif %}
+        with:
+        {% if locale == "en-com" %}
 
-		   Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
-		   
-		   - Input data field: `image` — A link to an image.
+        ```json
+        "label": "Are there traffic signs in the picture?",
+        "options": [
+        {
+        "label": "Yes",
+        "value": "ok"
+        },
+        {
+        "label": "No",
+        "value": "bad"
+        },
+        ```
 
-		     Change the data type to string to add links to your files.
+        {% endif %}
 
-		   - Output data field: `result` — string for saving the Toloker's response.
+        1. Click **Show specifications** to see the input and output data fields.
 
-			{% cut "What are input and output data?" %}
+           Input data fields are created from the code on the **Example of input data** tab.
 
-			**Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
+           The output data fields depend on the components that use `data.output` and values supported by it.
 
-			**Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
+           Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
 
-			If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
+           - Input data field: `image` — A link to an image.
 
-			{% endcut %}
+             Change the data type to string to add links to your files.
+
+           - Output data field: `result` — string for saving the Toloker's response.
+
+            {% cut "What are input and output data?" %}
+
+            **Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
+
+            **Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
+
+            If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
+
+            {% endcut %}
 
     - HTML/CSS/JS editor
 
-		1. Edit the **HTML** block in the {% if locale == "en-com" %}**Task interface**{% endif %}.
+        1. Edit the **HTML** block in the {% if locale == "en-com" %}**Task interface**{% endif %}.
 
-		1. After the line with the image, enter the question:
+        1. After the line with the image, enter the question:
 
-		1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
+        1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
         1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
-	       {% if locale == "en-com" %}
+           {% if locale == "en-com" %}
 
-		   {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-		   {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-		   {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
-			```
-		   {% endif %}
+           {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
+           {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
+           {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
+            ```
+           {% endif %}
 
-		1. Leave the **JS**, **CSS**, and {% if locale == "en-com" %}**Data specification**{% endif %} blocks unchanged.
+        1. Leave the **JS**, **CSS**, and {% if locale == "en-com" %}**Data specification**{% endif %} blocks unchanged.
 
-		   Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
+           Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
 
-		1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+        1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
 
    1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
-	
-   {% endlist %}	
+
+   {% endlist %}
 
 1. Save the changes.
 
 1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#task-instruction-ru) and add an image.
 
     1. **Instructions:**{% if locale == "en-com" %}
-	
+
     ```
     Look at the image and answer whether there are any **traffic signs** in it.
     If there are, click **Yes**.
     If there aren't, click **No**.
     For example, there are traffic signs in the image, so the correct answer is **Yes**.
     ```
-	
+
     {% endif %}
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.

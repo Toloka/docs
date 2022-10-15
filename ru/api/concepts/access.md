@@ -1,3 +1,5 @@
+{% include [image-styles](../../../_includes/image-styles.md) %}
+
 # Доступ к API
 
 {% include [announce](../_includes/announce.md) %}

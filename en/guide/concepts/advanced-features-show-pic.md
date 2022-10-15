@@ -4,14 +4,14 @@ The standard templates contain links to examples of photos that the Toloker need
 
 The easiest way to do this is to use the standard Toloka component described in the [Image](t-components/img.md) section.
 
-#### See what it looks like in the example of the "Photos of product and price tag" template
+#### See what it looks like in the example of the “Photos of product and price tag” template
 
 Before:
 ![](../_images/tutorials/advanced-features/af-show-pic-1.png)
 After:
 ![](../_images/tutorials/advanced-features/af-show-pic-2.png)
 
-For your convenience, here is ready-made code for the "Photos of product and price tag" template with an image added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word "customization".
+For your convenience, here is ready-made code for the “Photos of product and price tag” template with an image added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word “customization”.
 
 #### Ready-made code
 
@@ -21,34 +21,34 @@ For your convenience, here is ready-made code for the "Photos of product and pri
 {{#if reviewMode}}
     <div class="header-review">
         <div class="header-review__title">
-            {{texts.task_title}}
+            not_var{{texts.task_title}}
         </div>
         <div class="header-review__buttons">
             {{#if (equal verdict "ok")}}
                 <div class="header-review__btn header-review__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_price")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_price.title}}
+                    not_var{{texts.btn_no_price.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_item")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_item.title}}
+                    not_var{{texts.btn_no_item.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_shop")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_shop.title}}
+                    not_var{{texts.btn_no_shop.title}}
                 </div>
             {{/if}}
         </div>
     </div>
-{{else}}
+not_var{{else}}
     <div class="header">
-        {{texts.task_title}}
+        not_var{{texts.task_title}}
     </div>
 {{/if}}
 
@@ -57,50 +57,50 @@ For your convenience, here is ready-made code for the "Photos of product and pri
         <div class="info__review">
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_name}}
+                    not_var{{texts.info_name}}
                 </div>
                 <div class="info__content">
-                    {{name}}
+                    not_var{{name}}
                 </div>
             </div>
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_address}}
+                    not_var{{texts.info_address}}
                 </div>
                 <div class="info__content">
-                    {{address}}
+                    not_var{{address}}
                 </div>
             </div>
         </div>
-    {{else}}
+    not_var{{else}}
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_name}}
+                not_var{{texts.info_name}}
             </div>
             <div class="info__content">
-                {{name}}
+                not_var{{name}}
             </div>
         </div>
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_address}}
+                not_var{{texts.info_address}}
             </div>
             <div class="info__content">
-                {{address}}
+                not_var{{address}}
             </div>
         </div>
     {{/if}}
     <div class="info__block">
         <div class="info__title">
-            {{texts.info_description}}
+            not_var{{texts.info_description}}
         </div>
         <div class="info__content">
-            {{product}}
+            not_var{{product}}
         </div>
     </div>
     <div class="info__block">
         <div class="info__content">
-            <a href={{image}} target="_blank" class="info__link">Link to the product image</a>
+            <a href=not_var{{image}} target="_blank" class="info__link">Link to the product image</a>
         </div>
     </div>
 </div>
@@ -113,13 +113,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
         {{#if (equal verdict "ok")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_1.title}}
+                    not_var{{texts.btn_ok.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -131,13 +131,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.title}}
+                    not_var{{texts.btn_ok.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_item}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -149,13 +149,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_3.title}}
+                    not_var{{texts.btn_ok.question_3.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_price}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -169,13 +169,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
         {{#if (equal verdict "no_price")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_price.question_1.title}}
+                    not_var{{texts.btn_no_price.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -187,13 +187,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_price.question_2.title}}
+                    not_var{{texts.btn_no_price.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_item}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -207,13 +207,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
         {{#if (equal verdict "no_item")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_item.question_1.title}}
+                    not_var{{texts.btn_no_item.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -225,13 +225,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_item.question_2.title}}
+                    not_var{{texts.btn_no_item.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_shelf}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -244,7 +244,7 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_no_item.question_3.title}}
+                        not_var{{texts.btn_no_item.question_3.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -255,13 +255,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
         {{#if (equal verdict "no_shop")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_shop.question_1.title}}
+                    not_var{{texts.btn_no_shop.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -273,13 +273,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_shop.question_2.title}}
+                    not_var{{texts.btn_no_shop.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -291,7 +291,7 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_shop.question_3.title}}
+                    not_var{{texts.btn_no_shop.question_3.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -299,7 +299,7 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
         {{/if}}
     </div>
-{{else}}
+not_var{{else}}
     <div class="main">
         <div class="main__title">
             Select a task completion option:
@@ -308,18 +308,18 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             <div class="main__popup main__popup_hidden">No response selected</div>
             <div class="main__block">
                 <div class="main__btn main__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_1.title}}
+                            not_var{{texts.btn_ok.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_1.description}}
+                            not_var{{texts.btn_ok.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true preview=true compress=false validation-show="top-left"}}
@@ -327,13 +327,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_2.title}}
+                            not_var{{texts.btn_ok.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_2.description}}
+                            not_var{{texts.btn_ok.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_item" camera=true preview=true compress=false validation-show="top-left"}}
@@ -341,10 +341,10 @@ For your convenience, here is ready-made code for the "Photos of product and pri
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_3.title}}
+                            not_var{{texts.btn_ok.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_3.description}}
+                            not_var{{texts.btn_ok.question_3.description}}
                         </div>
 
                         <!-- customization fragment start -->
@@ -361,18 +361,18 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_price.title}}
+                    not_var{{texts.btn_no_price.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_price.question_1.title}}
+                            not_var{{texts.btn_no_price.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_price.question_1.description}}
+                            not_var{{texts.btn_no_price.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_price.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_price.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true validation-show="top-left"}}
@@ -380,13 +380,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_price.question_2.title}}
+                            not_var{{texts.btn_no_price.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_price.question_2.description}}
+                            not_var{{texts.btn_no_price.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_price.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_price.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_item" camera=true validation-show="top-left"}}
@@ -396,18 +396,18 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_item.title}}
+                    not_var{{texts.btn_no_item.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_item.question_1.title}}
+                            not_var{{texts.btn_no_item.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_item.question_1.description}}
+                            not_var{{texts.btn_no_item.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_item.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_item.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true validation-show="top-left"}}
@@ -415,13 +415,13 @@ For your convenience, here is ready-made code for the "Photos of product and pri
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_item.question_2.title}}
+                            not_var{{texts.btn_no_item.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_item.question_2.description}}
+                            not_var{{texts.btn_no_item.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_item.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_item.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_shelf" camera=true validation-show="top-left"}}
@@ -429,10 +429,10 @@ For your convenience, here is ready-made code for the "Photos of product and pri
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_no_item.question_3.title}}
+                            not_var{{texts.btn_no_item.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_item.question_3.description}}
+                            not_var{{texts.btn_no_item.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -442,12 +442,12 @@ For your convenience, here is ready-made code for the "Photos of product and pri
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_shop.title}}
+                    not_var{{texts.btn_no_shop.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_shop.question_1.description}}
+                            not_var{{texts.btn_no_shop.question_1.description}}
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around" camera=true validation-show="top-left"}}
@@ -455,10 +455,10 @@ For your convenience, here is ready-made code for the "Photos of product and pri
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_shop.question_2.description}}
+                            not_var{{texts.btn_no_shop.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_shop.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_shop.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -466,10 +466,10 @@ For your convenience, here is ready-made code for the "Photos of product and pri
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_shop.question_3.title}}
+                            not_var{{texts.btn_no_shop.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_shop.question_3.description}}
+                            not_var{{texts.btn_no_shop.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -886,9 +886,9 @@ For your convenience, here is ready-made code for the "Photos of product and pri
     </div>
     ```
     {% endif %}
-1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the "Photos of product and price tag" template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
-    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
+    Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
 
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
@@ -896,7 +896,7 @@ For your convenience, here is ready-made code for the "Photos of product and pri
     {% if locale == "en-com" %}
     ```html
     <div class="main__ex">
-    <a href="{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+    <a href="not_var{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
     </div>
     ```
     {% endif %}

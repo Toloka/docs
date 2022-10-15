@@ -1,6 +1,6 @@
 # Editing a pool
 
-You can edit a pool with the "Open" or "Closed" status. While editing, an open pool switches to the "CLOSED_FOR_UPDATE" status. For example, this way you can change the payout amount in a running pool.
+You can edit a pool with the “Open” or “Closed” status. While editing, an open pool switches to the “CLOSED_FOR_UPDATE” status. For example, this way you can change the payout amount in a running pool.
 
 {% note info %}
 
@@ -82,11 +82,11 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 You can choose how often [captchas](../../glossary.md#captcha-rule-ru) are shown to Tolokers:
 
-- "No" — Don't show captchas.
+- “No” — Don't show captchas.
 
-- "Low" — Show a captcha after every 20 assignments.
+- “Low” — Show a captcha after every 20 assignments.
 
-- "Medium"/ "High" — Show a captcha after every 10 assignments.
+- “Medium”/ “High” — Show a captcha after every 10 assignments.
 
 
 To show the captcha to Tolokers, set [the quality control rule](captcha.md).
@@ -274,7 +274,7 @@ Try completing the tasks yourself. Ask your colleagues and friends to complete t
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from "3" to "5" is enough. If the tasks are simple, overlap of "3" is likely to be enough. For tasks that are reviewed, set overlap to "1".
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 {% endcut %}
 
@@ -317,7 +317,7 @@ If you change the time allocated for a task, the time value will apply to the ta
 
 {% cut "How do I edit or delete tasks uploaded to the pool?" %}
 
-If you uploaded tasks to the pool using "smart mixing", you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
+If you uploaded tasks to the pool using “smart mixing”, you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
 
 If you uploaded them using a different method, clone your pool and upload the new file with the corrected list of data to be labeled.
 

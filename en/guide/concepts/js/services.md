@@ -55,8 +55,8 @@ Method:
 #### on(event, handler, context)
 Subscribes the passed handler to a specific event. Tracks events from the `event` parameter. Parameters:
 - `event`:
-    - `enter` — The "enter" key.
-    - `esc` — The "escape" key.
+    - `enter` — The “enter” key.
+    - `esc` — The “escape” key.
     - `arrow-left`, `arrow-right`, `arrow-up`, `arrow-down` — Arrows.
     - `key` — Alphanumeric keys. Handler (the `handler` parameter) gets the pressed key as the first argument.
 

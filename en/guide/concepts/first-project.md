@@ -37,6 +37,8 @@ In the project, you'll customize an appearance of the tasks.
 	
 	{% endcut %}
 
+    {% endcut %}
+
     If you can't find a preset that works for you, choose **Blank** to set up a project from scratch. To learn how, see the [Initial project settings](project.md) section.
 
 1. In the **General information** section, fill in the project name and a brief explanation of what will happen within the project.
