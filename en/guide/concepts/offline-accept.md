@@ -18,7 +18,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 - Put a low rating to your project.
 
 
-#### To get fewer appeals and maintain a high rating for your projects:
+{% cut "To get fewer appeals and maintain a high rating for your projects:" %}
 
 - Write a clear instruction with a clear algorithm of actions, requirements for results and possible reasons for their rejection.
 
@@ -26,18 +26,23 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
 - Reject assignments if the result is largely inconsistent with the instructions.
 
-    #### Example
+    {% cut "Example" %}
 
     If the task is to label 20 pictures according to the instructions, and the Toloker labeled 18 of them correctly, and 2 were incorrect, the result is considered incorrect to a small extent, or mostly correct.
+	
+	{% endcut %}
 
 - Explain the mistake to the Toloker so they can learn and do better next time.
 
+{% endcut %}
+
 You can review responses manually or with the help of Tolokers by posting [a separate review task](find_an_item_in_store.md).
 
-#### Pool status and the review results
+{% cut "Pool status and the review results" %}
 
 30 days after the tasks are completed the pool is automatically sent to the archive. It isn't possible to change the review result in an archive pool, so you won't be able to accept a previously rejected assignment.
 
+{% endcut %}
 
 ## Rejecting responses {#declined}
 
@@ -61,16 +66,21 @@ If your [pool type](pool-main.md#table_n3q_vhz_jlb) is set to **Exam** or **Retr
 
 When setting or editing the pool, enable the **Reject tasks at the end of the review period** option and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
 
-#### Example
+{% cut "Example" %}
+
 ![](../_images/auto-reject.png)
+
+{% endcut %}
 
 #### Automatic acceptance
 
 Leave the option in the **No** position, and the tasks will be automatically accepted.
 
-#### Example
+{% cut "Example" %}
+
 ![](../_images/auto-accept.png)
 
+{% endcut %}
 
 ## How do I turn on assignment review? {#accept-params}
 
@@ -102,7 +112,7 @@ As the Tolokers start completing the tasks, you will start receiving responses.
 
 ## More settings {#additional-params}
 
-#### Send tasks with rejected responses for re-check
+{% cut "Send tasks with rejected responses for re-check" %}
 
 If responses are rejected, Toloka can automatically send the task to other Tolokers. To set it:
 
@@ -111,7 +121,9 @@ If responses are rejected, Toloka can automatically send the task to other Tolok
 
 ![](../_images/control-rules/control-tasks/add-overlap-reject.png)
 
-#### Filter out Tolokers if their responses are often rejected
+{% endcut %}
+
+{% cut "Filter out Tolokers if their responses are often rejected" %}
 
 You can also [filter out Tolokers](control.md) based on the percentage of rejected responses.
 
@@ -123,6 +135,7 @@ You can restrict the Tolokers' access to tasks:
 
 Learn more about this in the [**Review results**](reviewing-assignments.md) rule settings.
 
+{% endcut %}
 
 ## What's next {#next-steps}
 

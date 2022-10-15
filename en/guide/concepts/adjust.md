@@ -3,7 +3,9 @@
 By default, your tasks are available to all Tolokers. If you set [filters](filters.md), they are available only to those who match them.
 
 When there are many Tolokers, you can get results quickly, but the quality of the Tolokers' responses may be poor. The number of [active Tolokers](../../glossary.md#active-workers-ru) (who will see the task if you publish it now) is displayed in the {% if locale == "en-com" %}**TOP %**{% endif %} tab to the left of the slider:
+
 ![](../_images/location-job/adjust_percentage.png)
+
 You can select Tolokers for your task based on a personalized quality forecast.
 
 
@@ -41,7 +43,7 @@ You can select only the best Tolokers using one of the filters in the [personali
 
 ## Troubleshooting {#troubleshooting}
 
-#### Why has the speed of pool completion dropped?
+{% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
 - You've stopped the [main pool](../../glossary.md#training-pool-ru). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
@@ -49,11 +51,15 @@ Possible reasons:
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
 - Too many users are banned. Ease the quality control rules.
 
-#### How can I speed up the pool completion?
+{% endcut %}
+
+{% cut "How can I speed up the pool completion?" %}
 
 - To motivate Tolokers, assign a [public skill](nav-create.md#public) and use [dynamic pricing](dynamic-pricing.md).
 - Try to [increase the project rating](project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
 - Adjust the [quality-speed ratio](adjust.md).
 - Set a higher [priority](pool_poolparams.md#priority) for the pool among other project pools.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
