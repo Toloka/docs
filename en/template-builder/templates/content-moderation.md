@@ -326,7 +326,7 @@ If you want that Tolokers give an extended response, add a text field using the 
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/dYOxus1h3cQ8PT)
 
-#### See also {#see-also}
+## See also {#see-also}
 
 - [Tutorials — sentiment analysis and content moderation](https://toloka.ai/docs/guide/tutorials/content-moderation.html)
 

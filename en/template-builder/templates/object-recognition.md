@@ -170,7 +170,7 @@ In this example, the text is highlighted with a yellow border.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/eLCcS7Tz3VvzPT)
 
-#### See also {#see-also}
+## See also {#see-also}
 
 - [Tutorials — object recognition & detection](https://toloka.ai/docs/guide/tutorials/selection.html)
 

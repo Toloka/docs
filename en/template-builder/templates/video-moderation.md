@@ -87,6 +87,6 @@ The [helper.switch](../reference/helper.switch.md) component displays an interfa
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-#### See also {#see-also}
+## See also {#see-also}
 
 - [Tutorials — video classification](https://toloka.ai/docs/guide/tutorials/video-moderation.html)

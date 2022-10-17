@@ -191,7 +191,7 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/jHaQHSZk3TUZcW)
 
-#### See also {#see-also}
+## See also {#see-also}
 
 - [Tutorials â€” image comparison (side-by-side)](https://toloka.ai/docs/guide/tutorials/side-by-side.html)
 

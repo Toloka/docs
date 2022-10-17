@@ -84,7 +84,7 @@ This is a more complex example that compares the image with the results of a sea
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6L8)
 
-#### See also {#see-also}
+## See also {#see-also}
 
 - [Tutorials — image classification](https://toloka.ai/docs/guide/tutorials/image-classification.html)
 

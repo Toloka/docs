@@ -72,7 +72,7 @@ In this example, the following fields are added:
 
 [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQCUZ)
 
-#### See also {#see-also}
+## See also {#see-also}
 
 - [Tutorials — searching for product characteristics](https://toloka.ai/docs/guide/tutorials/internet-search.html)
 
