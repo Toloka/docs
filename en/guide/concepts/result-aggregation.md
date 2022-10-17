@@ -55,9 +55,11 @@ The Dawid-Skene model is a non-trivial aggregation algorithm. Check out its feat
 
 - The method doesn't guarantee that original Toloker responses will be used for aggregation. The algorithm takes into account Tolokers' quality parameters and response patterns. Consequently, it can produce a result that's different from the Tolokers' responses to this task.
 
-    #### Example
+    {% cut "Example" %}
 
     In an image classification task, all three Tolokers selected the first response option. In another similar task, the same three Tolokers selected the first option, and the fourth Toloker selected the second option. If in the next task, the only response is given by the fourth Toloker, the David-Skene aggregation model might consider it incorrect and return a different result.
+	
+	{% endcut %}
 
 - The Dawid-Skene aggregation model works with [control](../../glossary.md#control-task-ru) and [training](../../glossary.md#training-task-ru) tasks as well as with general tasks. There is a possibility that the `OUTPUT:result` field for the control task in the TSV file won't match the actual response to this task (`GOLDEN:result`).
 
@@ -66,7 +68,7 @@ The Dawid-Skene model is a non-trivial aggregation algorithm. Check out its feat
     For example, you have 1000 tasks. In 999 of them, Tolokers didn't label the `label` field, and one Toloker labeled it as `label=x`. As a result of aggregation, this data field will have `CONFIDENCE = 100%`, since only one task out of a thousand falls under the aggregation conditions.
 
 
-#### How it's calculated
+{% cut "How it's calculated" %}
 
 The Dawid-Skene method puts together a [confusion matrix]({{ error-matrix }}) and response popularity for each Toloker. It uses the EM algorithm.
 
@@ -75,6 +77,8 @@ The idea is that it collects the most accurate aggregated responses for each tas
 [Description of the Dawid-Skene method](https://www.jstor.org/stable/2346806).
 
 If you want to learn how the Dawid-Skene method is implemented in Toloka, check out the [Crowd Kit documentation](https://toloka.ai/en/docs/crowd-kit/reference/crowdkit.aggregation.classification.dawid_skene.DawidSkene).
+
+{% endcut %}
 
 {% note info %}
 
@@ -87,26 +91,30 @@ Aggregation only includes accepted tasks.
 
 The main requirement for this aggregation is the output data fields:
 
-#### Fields that can be aggregated
+{% list tabs %}
 
-- Strings and numbers with allowed values.
+- Fields that can be aggregated
+
+  - Strings and numbers with allowed values.
 
     The allowed value must match the `value` parameter in the corresponding interface element.
 
-- Boolean.
-- Integers with minimum and maximum values. The maximum difference between them is 32.
+  - Boolean.
+  - Integers with minimum and maximum values. The maximum difference between them is 32.
 
     If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
 
-The allowed value must match the `value` parameter in the corresponding interface element.
+  The allowed value must match the `value` parameter in the corresponding interface element.
 
-#### Fields that can't be aggregated
+- Fields that can't be aggregated
 
-- Array.
-- File.
-- Coordinates.
-- JSON object.
+  - Array.
+  - File.
+  - Coordinates.
+  - JSON object.
+
+{% endlist %}
 
 #### How do I check it?
 
@@ -130,7 +138,7 @@ Each user skill has “weight”. The higher the skill, the more we trust the To
 
 The result of aggregation is a TSV file with responses. `CONFIDENCE: <field name [output](incoming.md)>` indicates the confidence in the aggregated response. In this case, it shows the probability that the response is correct.
 
-#### Example
+{% cut "Example" %}
 
 Tasks were labeled by three Tolokers with different “My skill” values: the first Toloker has a skill of 70, the second has 80, and the third has 90.
 
@@ -138,7 +146,9 @@ All three Tolokers responded to the first task with **OK**. In this case, we are
 
 On the second task, the first and third Tolokers responded with **OK**, and the second Toloker responded with **BAD**. In this case, we'll compare the Tolokers' skills and determine the confidence based on the result.
 
-#### How it's calculated
+{% endcut %}
+
+{% cut "How it's calculated" %}
 
 Terms:
 
@@ -206,6 +216,8 @@ eps = z_prob(j) * (1 / Y) / r
 
 ```
 
+{% endcut %}
+
 {% note info %}
 
 Aggregation only includes accepted tasks.
@@ -215,71 +227,94 @@ Aggregation only includes accepted tasks.
 
 #### Requirements
 
-#### Pool with dynamic overlap
+{% list tabs %}
 
-To run aggregation, you must correctly set up dynamic overlap. To do this:
+- Pool with dynamic overlap
 
-1. Select a skill. We recommend to select a skill calculated as the percentage of [correct responses in control tasks](goldenset.md). This will give you the most accurate aggregation results.
-1. Select the output data fields.
-    #### Output data fields that can be aggregated:
+  To run aggregation, you must correctly set up dynamic overlap. To do this:
 
-    - Strings and numbers with allowed values.
+  1. Select a skill. We recommend to select a skill calculated as the percentage of [correct responses in control tasks](goldenset.md). This will give you the most accurate aggregation results.
+  1. Select the output data fields.
+  
+	  {% cut "Output data fields that can be aggregated:" %}
 
-    The allowed value must match the `value` parameter in the corresponding interface element.
+	  - Strings and numbers with allowed values.
 
-    - Boolean.
-    - Integers with minimum and maximum values. The maximum difference between them is 32.
+	  The allowed value must match the `value` parameter in the corresponding interface element.
 
-    If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
+	  - Boolean.
+	  - Integers with minimum and maximum values. The maximum difference between them is 32.
 
-    The allowed value must match the `value` parameter in the corresponding interface element.
+	  If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
+	  The allowed value must match the `value` parameter in the corresponding interface element.
+	  
+	  {% endcut %}
 
-#### Pools without dynamic overlap
+- Pools without dynamic overlap
 
-You can run aggregation by skill if the pool meets the following requirements:
+  You can run aggregation by skill if the pool meets the following requirements:
 
-1. You set a skill that defines the level of confidence in the Toloker's responses. We recommend to use a skill calculated as the percentage of [correct responses in control tasks](goldenset.md).
-1. The [output data fields](incoming.md) have allowed values.
-    #### Output data fields that can be aggregated:
+  1. You set a skill that defines the level of confidence in the Toloker's responses. We recommend to use a skill calculated as the percentage of [correct responses in control tasks](goldenset.md).
+  1. The [output data fields](incoming.md) have allowed values.
+  
+	  {% cut "Output data fields that can be aggregated:" %}
 
-    - Strings and numbers with allowed values.
+	  - Strings and numbers with allowed values.
 
-    The allowed value must match the `value` parameter in the corresponding interface element.
+	  The allowed value must match the `value` parameter in the corresponding interface element.
 
-    - Boolean.
-    - Integers with minimum and maximum values. The maximum difference between them is 32.
+	  - Boolean.
+	  - Integers with minimum and maximum values. The maximum difference between them is 32.
 
-    If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
+	  If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
-    The allowed value must match the `value` parameter in the corresponding interface element.
+	  The allowed value must match the `value` parameter in the corresponding interface element.
+	  
+	  {% endcut %}
 
-1. The tasks were uploaded in the pool with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
+  1. The tasks were uploaded in the pool with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
+  
+{% endlist %}
 
 
 ## Troubleshooting {#troubleshooting}
 
-#### What is the difference between the confidence in the aggregated response in the Dawid-Skene aggregation model and the confidence in aggregation by skill?
+{% cut "What is the difference between the confidence in the aggregated response in the Dawid-Skene aggregation model and the confidence in aggregation by skill?" %}
 
 In the way it's calculated. In both aggregations, confidence means the same thing.
 
-#### How does the Dawid-Skene aggregation model work?
+{% endcut %}
+
+{% cut "How does the Dawid-Skene aggregation model work?" %}
+
 The Dawid-Skene aggregation model analyzes the Toloker responses and creates a confusion matrix for each Toloker. This lets us evaluate the statistical significance of the Toloker in the context of each assignment. [Learn more about the model](https://www.jstor.org/stable/2346806).
-#### Why does the Dawid-Skene aggregation model return a result that the Tolokers didn't select?
+
+{% endcut %}
+
+{% cut "Why does the Dawid-Skene aggregation model return a result that the Tolokers didn't select?" %}
 
 The method doesn't guarantee that original Toloker responses will be used for aggregation. The algorithm takes into account Tolokers' quality parameters and response patterns. Consequently, it can return a result that's different from the Tolokers' responses to this task.
 
-#### Where do I see the aggregation progress?
+{% endcut %}
+
+{% cut "Where do I see the aggregation progress?" %}
 
 The pool page contains the {% if locale == "en-com" %}**List of Operations**{% endif %} button.
 
-#### Why might aggregation by Toloker skill be unavailable?
+{% endcut %}
+
+{% cut "Why might aggregation by Toloker skill be unavailable?" %}
 
 You cannot aggregate by project fields that have no valid values. Specify the possible values for all the fields of all types.
 
-#### You can't aggregate by skill. When running via the API, I get the error code `ONLY_FOR_POOL_WITH_MIXER`. Why?
+{% endcut %}
+
+{% cut "You can't aggregate by skill. When running via the API, I get the error code `ONLY_FOR_POOL_WITH_MIXER`. Why?" %}
 
 You need to use [smart mixing](distribute-tasks-by-pages.md#smart-mixing).
+
+{% endcut %}
 
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -5,6 +5,7 @@ Tasks are uploaded to the [pool](pool-main.md) in [the tasks file](../../glossar
 Download the file template for your [project](../../glossary.md#project) on the [pool](../../glossary.md#pool-ru) page. Use the template to create your own task file and upload it to the pool.
 
 {% cut "Use sample data" %}
+
 If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
 - {% if locale == "en-com" %}**Image classification**{% endif %}
 - {% if locale == "en-com" %}**Product search relevance**{% endif %}
@@ -38,19 +39,19 @@ Task type depends on which fields are filled in:
 
  - General task
 
-	To create a [general task](../../glossary.md#general-task-ru), fill in the columns with the `INPUT` header.
+   To create a [general task](../../glossary.md#general-task-ru), fill in the columns with the `INPUT` header.
 
-	{% cut "Example with a simple object (string, link, and so on)" %}
+   {% cut "Example with a simple object (string, link, and so on)" %}
 	
-	![](../_images/location-job/pool_csv/main_tsv.png)
+   ![](../_images/location-job/pool_csv/main_tsv.png)
 	
-	{% endcut %}
+   {% endcut %}
 	
-	{% cut "Example with a string array" %}
+   {% cut "Example with a string array" %}
 	
-	![](../_images/location-job/pool_csv/main_tsv2.png)
+   ![](../_images/location-job/pool_csv/main_tsv2.png)
 	
-	{% endcut %}
+   {% endcut %}
 
 - Control task
 
@@ -59,9 +60,7 @@ Task type depends on which fields are filled in:
 	- The task input data in the columns with the `INPUT` header.
 	- Correct responses in the columns with the `GOLDEN` header.
 
-You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
-
-	You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+    You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
 	{% endnote %}
 
@@ -104,7 +103,7 @@ You can also add responses when creating a pool in [task markup mode](task_marku
 
 You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
-{% end list %}
+{% endlist %}
 
 The columns with [required input data fields](incoming.md) must be filled. The other columns can be deleted if they are empty.
 
@@ -282,6 +281,8 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
 
+{% endcut %}
+
 {% cut "Errors when uploading tasks in the pool" %}
 
 {% cut "How do I view the processing log?" %}
@@ -294,41 +295,203 @@ To work with a large log conveniently, copy it to the text editor.
 
 {% endnote %}
 
+{% endcut %}
+
 #### Errors in column headers
 
 If the [column headings](pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
 
 #### Processing errors table
 
-Overview | How to fix
------ | -----
-``` "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" ```
-**Extra tabs.**<br/><br/>If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.<br/><br/>For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.
-``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```
-**The number of fields in the header and in the row doesn't match.** | Make sure that:<br/><br/>- The number of tabs in the file structure is correct.<br/>- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
-``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
-**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.
-``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-**Invalid data in a “link” (“url”) field.** | Make sure that:<br/>- Links start with the `http://`, `https://` or `www` prefix.
-``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
-**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).
+<table>
+<tr>
+<th>Overview</th><th>How to fix</th>
+</tr>
+<tr>
+<td colspan="2">
+
+```
+"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", 
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Extra tabs.**
+
+If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.<br/><br/>For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. 
+
+</td>
+<td> 
+
+Remove extra column separators in the above example — both `\t\t` characters. 
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+```"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**The number of fields in the header and in the row doesn't match.** 
+
+</td>
+<td> 
+
+Make sure that:
+
+- The number of tabs in the file structure is correct.
+- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+``` 
+"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" 
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**The value is missing for a required input field.** 
+
+</td>
+<td> Make sure that columns with required input data fields are filled.</td>
+</tr>
+<tr>
+<td colspan="2">
+
+```
+"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" 
+```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Invalid data in a “link” (“url”) field.** 
+
+</td>
+<td> 
+
+Make sure that:
+
+- Links start with the `http://`, `https://` or `www` prefix.
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+```"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Unpaired quotation mark in a string.** 
+
+</td>
+<td> 
+
+Check that all quotation marks are [escaped](pool_csv.md#string).
 
 If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.
 
-For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
-||``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```||
-||**The number of fields in the header and in the row doesn't match.** | Make sure that:
+For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive.
+
+Remove extra column separators in the above example — both `\t\t` characters.
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+```"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**The number of fields in the header and in the row doesn't match.** 
+
+</td>
+<td> Make sure that:
 
 - The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.||
-||``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```||
-||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
-||``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```||
-||**Invalid data in a "link" ("url") field.** | Make sure that:
-- Links start with the `http://`, `https://` or `www` prefix.||
-||``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```||
-||**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).||
-|#
+- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.</td>
+</tr>
+<tr>
+<td colspan="2">
+
+``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**The value is missing for a required input field.** 
+
+</td>
+<td> Make sure that columns with required input data fields are filled.</td>
+</tr>
+<tr>
+<td colspan="2">
+
+``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Invalid data in a "link" ("url") field.** 
+
+</td>
+<td> 
+
+Make sure that:
+- Links start with the `http://`, `https://` or `www` prefix.
+
+</td>
+</tr>
+<tr>
+<td colspan="2">
+
+``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
+
+</td>
+</tr>
+<tr>
+<td>
+
+**Unpaired quotation mark in a string.** 
+
+</td>
+<td> 
+
+Check that all quotation marks are [escaped](pool_csv.md#string).
+
+</tr>
+</table>
+
+
 {% endcut %}
 
 {% cut "How do I know how many tasks a Toloker will see on the page?" %}
@@ -506,6 +669,8 @@ Usually, if you copy site links from the browser, the copied links have the same
 Check the links that you use. There are several ways to unify links:
 - Add requirements for the link format in your instructions and hints in your training pool.
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
+
+{% endcut %}
 
 {% endcut %}
 

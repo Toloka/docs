@@ -2,9 +2,11 @@
 
 There are several ways to combine uploaded tasks into suites. You can choose the way that works best for you and specify additional settings.
 
-#### Why this is important
+{% cut "Why this is important" %}
 
 The Toloker receives payment for a task suite, so the labeling cost and quality depend on optimal task distribution.
+
+{% endcut %}
 
 ## {% if locale == "en-com" %}Set manually{% endif %} {#by-empty-row}
 
@@ -23,8 +25,11 @@ This method is useful if the created pool:
 - Contains [control](../../glossary.md#control-task-ru) or [training](../../glossary.md#training-task-ru) tasks in addition to the [general](../../glossary.md#general-task-ru) tasks.
 - Has [dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL) enabled.
 
-#### Sample settings
+{% cut "Sample settings" %}
+
 ![](../_images/location-job/task-upload/method-uploading-tasks.png)
+
+{% endcut %}
 
 #### Features
 
@@ -47,12 +52,13 @@ After uploading the tasks with **smart mixing** you will be able to [mark up tas
 
 
 ## How to distribute tasks as suites {#smart-mixing}
-Characteristics/upload type | Set manually | Smart mixing
------ | ----- | -----
-To generate task suites, tasks are taken in the order of rows (from top to bottom) in an uploaded file | Yes | No
-Tasks are mixed within a suite | No | Yes
-Task suites are distributed to Tolokers in the same order | No | Yes
-Within identical task suites, control tasks are the same for all Tolokers | Yes | No
+
+| Characteristics/upload type                                                                            | Set manually | Smart mixing |
+|--------------------------------------------------------------------------------------------------------|--------------|--------------|
+| To generate task suites, tasks are taken in the order of rows (from top to bottom) in an uploaded file | Yes          | No           |
+| Tasks are mixed within a suite                                                                         | No           | Yes          |
+| Task suites are distributed to Tolokers in the same order                                              | No           | Yes          |
+| Within identical task suites, control tasks are the same for all Tolokers                              | Yes          | No           |
 
 
 ## Control tasks {#gs}
@@ -61,7 +67,7 @@ Within identical task suites, control tasks are the same for all Tolokers | Yes 
 
 We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
 
-#### Why's that?
+{% cut "Why's that?" %}
 
 Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites that the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same degree.
 
@@ -70,7 +76,7 @@ There shouldn't be too few pages available. Otherwise:
 - You won't be able to correctly evaluate the quality of the Toloker's responses.
 - The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
 
-#### Example
+{% cut "Example" %}
 
 #### A large pool with 1% of control tasks (good)
 
@@ -84,11 +90,17 @@ There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suit
 
 There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 10 suites.
 
+{% endcut %}
+
+{% endcut %}
+
 If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
 
-#### What for
+{% cut "What for" %}
 
 In a large pool with few control tasks, there might be a situation when a Toloker who has completed a lot of tasks in the project stops getting new task suites. This happens when the Toloker completes all control tasks in the pool.
+
+{% endcut %}
 
 {% note info %}
 
@@ -121,13 +133,15 @@ If another overlap value is set, control tasks may end during labeling and the p
 
 ## Troubleshooting {#troubleshooting}
 
-#### How do I specify smart mixing settings in the interface when uploading a file?
+{% cut "How do I specify smart mixing settings in the interface when uploading a file?" %}
 
 Smart mixing settings are specified for the file rather than for the pool.
 
 The settings specified during the first file upload are applied to all the files that are uploaded to this pool later on.
 
-#### What is the maximum number of tasks per suite?
+{% endcut %}
+
+{% cut "What is the maximum number of tasks per suite?" %}
 
 It depends on the task. Technically, you can use as many tasks you want.
 
@@ -137,7 +151,9 @@ In addition, if you use a large number of tasks on the page, there might be issu
 
 The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
-#### The same task appeared on different pages
+{% endcut %}
+
+{% cut "The same task appeared on different pages" %}
 
 The same task may appear on different pages if:
 
@@ -145,10 +161,14 @@ The same task may appear on different pages if:
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 - If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
 
-#### How do I upload the file with the accepted assignments back to Toloka for projects with non-automatic acceptance? Where do I find the format of the upload data?
+{% endcut %}
+
+{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with non-automatic acceptance? Where do I find the format of the upload data?" %}
 
 Use the button **Upload review results** to upload your file. You can see the format [here](accept.md).
 
 Assignments are reviewed in the tasks file.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

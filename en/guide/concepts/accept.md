@@ -8,7 +8,9 @@ You started a pool with [non-automatic acceptance](offline-accept.md), and the T
 
 ## How do I review the tasks? {#acception}
 
-#### In the Toloka interface. This option is suitable for a small number of tasks.
+{% endcut %}
+
+{% cut "In the Toloka interface. This option is suitable for a small number of tasks." %}
 
 To accept or reject responses:
 
@@ -23,7 +25,9 @@ Note that you can't change the task status if the task pool was [archived](pool-
 {% endnote %}
 
 
-#### Online review of one task.
+{% endcut %}
+
+{% cut "Online review of one task." %}
 
 To accept or reject one task:
 
@@ -36,7 +40,9 @@ To accept or reject one task:
 1. Check the responses, click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment (specify the reason).
 
 
-#### In the TSV file with the results. You will need the file to filter the results and process them programmatically.
+{% endcut %}
+
+{% cut "In the TSV file with the results. You will need the file to filter the results and process them programmatically." %}
 
 {% note info %}
 
@@ -116,12 +122,16 @@ To accept or reject responses:
 
     - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction-ru) wasn't followed).
 
-1. Upload the edited TSV file to Toloka ().
+1. Upload the edited TSV file to Toloka (**Import/ Export → Upload results**).
 
 
-#### Delegate assignment review to other Tolokers.
+{% endcut %}
+
+{% cut "Delegate assignment review to other Tolokers." %}
 
 Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements assignment review with the help of Tolokers.
+
+{% endcut %}
 
 {% note info %}
 
@@ -174,26 +184,36 @@ d) the result of the Task does not comply with the Instruction.
 
 ## Troubleshooting {#troubleshooting}
 
-#### Can I ask a Toloker to redo the task if they made mistakes in it?
+{% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
 No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers-ru) incorrectly to a new pool.
 
-#### Can I fix something in a completed task myself?
+{% endcut %}
+
+{% cut "Can I fix something in a completed task myself?" %}
 
 No, you can't fix anything in the task itself. However, you can do this manually in the results file.
 
-#### What should I do if I want to accept a completed task but the pool is already archived or the Toloker wrote to me after the allowed time?
+{% endcut %}
+
+{% cut "What should I do if I want to accept a completed task but the pool is already archived or the Toloker wrote to me after the allowed time?" %}
 
 Simply [give the Toloker a separate reward](bonus.md) without changing the task status. You can't change the task status in the pool in this case.
 
-#### What should I do if I rejected a task for a reason that isn't specified in the instructions?
+{% endcut %}
+
+{% cut "What should I do if I rejected a task for a reason that isn't specified in the instructions?" %}
 
 Accept the task and update the instructions. Otherwise, you violate the [**Requester Agreement**]({{ customeragreement }}) that requires you to clearly state the task requirements and the results expected from the Toloker.
 
-#### Can I reject part of the responses on the page and accept part of them?
+{% endcut %}
+
+{% cut "Can I reject part of the responses on the page and accept part of them?" %}
 
 No. For example, there are 10 tasks in a suite that costs $0.1, and the Toloker did 2 of them incorrectly.
 
 You can't accept the correct answers and pay for this part ($0.08). Response pages are accepted or rejected in their entirety.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -8,7 +8,7 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 Using markup, you can add correct responses and hints to tasks, as well as change task types. You can turn a general task into a [control task](../../glossary.md#control-task-ru) by adding the correct answer, or into a [training task](../../glossary.md#training-task-ru) by adding the correct answer and a hint.
 
-#### Why this is important
+{% cut "Why this is important" %}
 
 Using control tasks, you can track Tolokers' task completion quality: assign skills, select Tolokers for projects, configure dynamic overlap, and set up pricing.
 
@@ -16,6 +16,8 @@ Tolokers' task completion quality may be low in the following cases:
 
 - There are no control tasks in the pool. As a result, dishonest Tolokers and Tolokers with low labeling skill levels may participate in the project.
 - Control tasks in the pool are not updated regularly. As a result, Tolokers can guess correct answers, which makes the effectiveness of quality control decrease.
+
+{% endcut %}
 
 There are two ways to create control tasks:
 
@@ -72,18 +74,18 @@ If the markup process failed for some reason, contact support. Go to the tab for
 
 - [Add a training pool](train.md).
 - {% if locale == "en-com" %}
-    [Top up your account](refill.md)
-    {% endif %}
+  [Top up your account](refill.md)
+  {% endif %}
 - [Start the pool](pool-run-and-stop.md).
 
 
 ## Troubleshooting {#troubleshooting}
 
-#### How many control tasks do I need to add?
+{% cut "How many control tasks do I need to add?" %}
 
 We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
 
-#### Why's that?
+{% cut "Why's that?" %}
 
 Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
 
@@ -92,7 +94,7 @@ There shouldn't be too few pages available. Otherwise:
 - You won't be able to correctly evaluate the quality of the Toloker's responses.
 - The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
 
-#### Example
+{% cut "Example" %}
 
 #### A large pool with 1% of control tasks (good)
 
@@ -106,11 +108,17 @@ There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suit
 
 There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
 
+{% endcut %}
+
+{% endcut %}
+
 If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
 
-#### What for
+{% cut "What for" %}
 
 In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
+
+{% endcut %}
 
 {% note info %}
 
@@ -118,12 +126,20 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% endnote %}
 
+{% endcut %}
 
-#### How long does the markup performed by experts take?
+{% endcut %}
+
+{% cut "How long does the markup performed by experts take?" %}
+
 This process usually takes about 6 hours. The estimated time of the markup completion is indicated in the **Edit tasks** section.
-#### What should I do if the markup process failed?
+
+{% endcut %}
+
+{% cut "What should I do if the markup process failed?" %}
 
 If the markup process failed for one reason or another, contact support. Go to the tab for control tasks or to the pool page and click {% if locale == "en-com" %}**Contact us**{% endif %}. After the problem is solved, you'll be able to order the markup of control tasks again.
 
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
