@@ -1,4 +1,4 @@
-# Side-by-side image comparison
+# Image comparison (Side-by-side)
 
 For this type of project, you can use the **Image comparison (Side-by-side)** preset.
 
@@ -190,5 +190,9 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
   {% endcut %}
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/jHaQHSZk3TUZcW)
+
+#### See also {#see-also}
+
+- [Tutorials â€” image comparison (side-by-side)](https://toloka.ai/docs/guide/tutorials/side-by-side.html)
 
 {% include [contact-support](../_includes/contact-support.md) %}

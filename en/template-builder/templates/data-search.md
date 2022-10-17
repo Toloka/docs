@@ -1,4 +1,4 @@
-# Search for information online
+# Searching for product characteristics
 
 For this type of project, you can use the **Mining business contacts** preset. It has pre-configured validation and task layout. In this preset, a Toloker needs to enter the organization's contact information found online.
 
@@ -71,5 +71,9 @@ In this example, the following fields are added:
 - The [condition.schema](../reference/condition.schema.md) component: Checks the format of the entered data (in this case, the INN and OGRN code formats).
 
 [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQCUZ)
+
+#### See also {#see-also}
+
+- [Tutorials — searching for product characteristics](https://toloka.ai/docs/guide/tutorials/internet-search.html)
 
 {% include [contact-support](../_includes/contact-support.md) %}
