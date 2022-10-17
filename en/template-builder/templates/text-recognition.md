@@ -148,6 +148,70 @@ To add a detailed description to the task, use the `label` property of the [view
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/srUYLJFX3fhJvr)
 
+
+## Add a selection option
+
+Ask the Tolokers to clarify their decision if they have labeled **No business**: add the [field.radio-group](../reference/field.radio-group.md) so they can select one of the suggested options.
+
+{% cut "Show code" %}
+
+```json
+  {
+    "type": "field.radio-group",
+    "label": "To clarify your decision, select one of the options:",
+    "options": [
+      {
+        "label": "No business",
+        "value": "no_business"
+      },
+      {
+        "label": "Photo of bad quality",
+        "value": "bad_quality"
+      },
+      {
+        "label": "The name isn't fully visible",
+        "value": "not_fully_visible"
+      },
+      {
+        "label": "Loading error",
+        "value": "error"
+      }
+    ],
+    "data": {
+      "type": "data.output",
+      "path": "path"
+    },
+    "validation": {
+      "type": "condition.required",
+      "hint": "Select one option"
+    }
+  }
+  ```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/L3D1I7VM3gfg5P)
+
+One possible solution may be to to add a **None of the above** option to the radio button group. Add the [field.textarea](../reference/field.textarea.md) that would allow Tolokers to leave comments with their own version, if this option is selected.
+
+{% cut "Show code" %}
+
+```json
+  {
+    "type": "field.textarea",
+    "label": "Comments",
+    "placeholder": "Enter text",
+    "data": {
+      "type": "data.output",
+      "path": "comment"
+    }
+  }
+  ```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7JAxeo6B3gfh6r)
+
 ## Add a layout {#add-layout}
 
 To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the `view.image` and the `view.text` components.
