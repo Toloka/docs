@@ -52,4 +52,8 @@ The [helper.switch](../reference/helper.switch.md) component displays an interf
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqvs9)
 
+## See also {#see-also}
+
+- [Tutorials — survey with Toloka template](https://toloka.ai/docs/guide/tutorials/questionnaire-toloka.html)
+
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -1,4 +1,4 @@
-# Side-by-side video comparison
+# Video comparison (Side-by-side)
 
 For this type of project, you can use the **Video comparison (Side-by-side)** preset.
 
