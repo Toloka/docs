@@ -2,46 +2,53 @@
 
 You may need to change the input specification by adding new fields to it. For example, if the location is far away or difficult to find, you can add a field for describing the location in detail. Or you can provide any other additional information that is needed in each task.
 
-#### What it looks like
+{% cut "What it looks like" %}
 
 Before:
+
 ![](../_images/tutorials/advanced-features/af-input-data-1.png)
+
 After:
+
 ![](../_images/tutorials/advanced-features/af-input-data-2.png)
 
-For your convenience, here is ready-made code for the "Monitoring field objects" template with two new input fields added. Use it to check your own code. You can find our additions to the code by searching for the word "customization".
+{% endcut %}
 
-#### Ready-made code
+For your convenience, here is ready-made code for the “Monitoring field objects” template with two new input fields added. Use it to check your own code. You can find our additions to the code by searching for the word “customization”.
 
-#### HTML block
- {% if locale == "en-com" %}
+{% cut "Ready-made code" %}
+
+{% cut "HTML block" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{#if reviewMode}}
     <div class="header-review">
         <div class="header-review__title">
-            {{texts.task_title}}
+            not_var{{texts.task_title}}
         </div>
         <div class="header-review__buttons">
             {{#if (equal verdict "ok")}}
                 <div class="header-review__btn header-review__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_obj")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_access")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_access.title}}
+                    not_var{{texts.btn_no_access.title}}
                 </div>
             {{/if}}
         </div>
     </div>
-{{else}}
+not_var{{else}}
     <div class="header">
-        {{texts.task_title}}
+        not_var{{texts.task_title}}
     </div>
 {{/if}}
 
@@ -50,70 +57,70 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
         <div class="info__review">
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_name}}
+                    not_var{{texts.info_name}}
                 </div>
                 <div class="info__content">
-                    {{name}}
+                    not_var{{name}}
                 </div>
             </div>
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_address}}
+                    not_var{{texts.info_address}}
                 </div>
                 <div class="info__content">
-                    {{address}}
+                    not_var{{address}}
                 </div>
             </div>
         </div>
-    {{else}}
+    not_var{{else}}
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_name}}
+                not_var{{texts.info_name}}
             </div>
             <div class="info__content">
-                {{name}}
+                not_var{{name}}
             </div>
         </div>
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_address}}
+                not_var{{texts.info_address}}
             </div>
             <div class="info__content">
-                {{address}}
+                not_var{{address}}
             </div>
         </div>
     {{/if}}
     <div class="info__block">
         <div class="info__title">
-            {{texts.info_description}}
+            not_var{{texts.info_description}}
         </div>
         <div class="info__content">
-            {{product}}
+            not_var{{product}}
         </div>
     </div>
 
     <!-- customization fragment start -->
     <div class="info__block">
       <div class="info__title">
-        {{texts.new_input_1__title}}
+        not_var{{texts.new_input_1__title}}
       </div>
       <div class="info__content">
-        {{new_input_1}}
+        not_var{{new_input_1}}
       </div>
     </div>
     <div class="info__block">
       <div class="info__title">
-        {{texts.new_input_2__title}}
+        not_var{{texts.new_input_2__title}}
       </div>
       <div class="info__content">
-        {{new_input_2}}
+        not_var{{new_input_2}}
       </div>
     </div>
     <!-- customization fragment end -->
 
     <div class="info__block">
         <div class="info__content">
-            <a href={{image}} target="_blank" class="info__link">Link to an object image</a>
+            <a href=not_var{{image}} target="_blank" class="info__link">Link to an object image</a>
         </div>
     </div>
 </div>
@@ -126,13 +133,13 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
         {{#if (equal verdict "ok")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_1.title}}
+                    not_var{{texts.btn_ok.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -144,7 +151,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.title}}
+                    not_var{{texts.btn_ok.question_2.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="more_info.comment" width="100%" rows=5}}
@@ -152,7 +159,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.radios.title}}
+                    not_var{{texts.btn_ok.question_2.radios.title}}
                 </div>
                 <div class="review__fields">
                     {{#each texts.btn_ok.question_2.radios.items}}
@@ -162,7 +169,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.checkboxes.title}}
+                    not_var{{texts.btn_ok.question_2.checkboxes.title}}
                 </div>
                 <div class="review__fields">
                     {{#each texts.btn_ok.question_2.checkboxes.items}}
@@ -172,13 +179,13 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_3.title}}
+                    not_var{{texts.btn_ok.question_3.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -191,7 +198,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_ok.question_4.title}}
+                        not_var{{texts.btn_ok.question_4.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -202,13 +209,13 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
         {{#if (equal verdict "no_obj")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_1.title}}
+                    not_var{{texts.btn_no_obj.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_obj}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -220,13 +227,13 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_obj.question_2.title}}
+                    not_var{{texts.btn_no_obj.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -239,7 +246,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_no_obj.question_3.title}}
+                        not_var{{texts.btn_no_obj.question_3.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -250,13 +257,13 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
         {{#if (equal verdict "no_access")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_1.title}}
+                    not_var{{texts.btn_no_access.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around_no_access}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -268,13 +275,13 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_2.title}}
+                    not_var{{texts.btn_no_access.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -286,7 +293,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_access.question_3.title}}
+                    not_var{{texts.btn_no_access.question_3.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -294,7 +301,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
         {{/if}}
     </div>
-{{else}}
+not_var{{else}}
     <div class="main">
         <div class="main__title">
             Select a task completion option:
@@ -303,18 +310,18 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             <div class="main__popup main__popup_hidden">No answer selected</div>
             <div class="main__block">
                 <div class="main__btn main__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_1.title}}
+                            not_var{{texts.btn_ok.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_1.description}}
+                            not_var{{texts.btn_ok.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_obj" camera=true preview=true compress=false validation-show="top-left"}}
@@ -322,17 +329,17 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_2.title}}
+                            not_var{{texts.btn_ok.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_2.description}}
+                            not_var{{texts.btn_ok.question_2.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="more_info.comment" width="100%" rows=5 validation-show="top-left"}}
                         </div>
                         <div class="main__fields">
                             <div class="main__radios-title">
-                                {{texts.btn_ok.question_2.radios.title}}
+                                not_var{{texts.btn_ok.question_2.radios.title}}
                             </div>
                             <div class="main__radios-items">
                                 {{#each texts.btn_ok.question_2.radios.items}}
@@ -342,7 +349,7 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                         </div>
                         <div class="main__fields">
                             <div class="main__checkboxes-title">
-                                {{texts.btn_ok.question_2.checkboxes.title}}
+                                not_var{{texts.btn_ok.question_2.checkboxes.title}}
                             </div>
                             <div class="main__checkboxes-items">
                                 {{#each texts.btn_ok.question_2.checkboxes.items}}
@@ -353,13 +360,13 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_3.title}}
+                            not_var{{texts.btn_ok.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_3.description}}
+                            not_var{{texts.btn_ok.question_3.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -367,10 +374,10 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_ok.question_4.title}}
+                            not_var{{texts.btn_ok.question_4.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_4.description}}
+                            not_var{{texts.btn_ok.question_4.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -380,12 +387,12 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_obj.title}}
+                    not_var{{texts.btn_no_obj.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_obj.question_1.description}}
+                            not_var{{texts.btn_no_obj.question_1.description}}
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_obj" camera=true validation-show="top-left"}}
@@ -393,10 +400,10 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_obj.question_2.description}}
+                            not_var{{texts.btn_no_obj.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_obj.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -404,10 +411,10 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_no_obj.question_3.title}}
+                            not_var{{texts.btn_no_obj.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_obj.question_3.description}}
+                            not_var{{texts.btn_no_obj.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -417,15 +424,15 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red main__btn_no-access">
-                    {{texts.btn_no_access.title}}
+                    not_var{{texts.btn_no_access.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_access.question_1.description}}
+                            not_var{{texts.btn_no_access.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_access.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_access.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around_no_access" camera=true validation-show="top-left"}}
@@ -433,10 +440,10 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_access.question_2.description}}
+                            not_var{{texts.btn_no_access.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_access.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_access.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -444,10 +451,10 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_access.question_3.title}}
+                            not_var{{texts.btn_no_access.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_access.question_3.description}}
+                            not_var{{texts.btn_no_access.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -459,9 +466,15 @@ For your convenience, here is ready-made code for the "Monitoring field objects"
     </div>
 {{/if}}
 ```
+
 {% endif %}
-#### JavaScript block
- {% if locale == "en-com" %}
+
+{% endcut %}
+
+{% cut "JavaScript block" %}
+
+{% if locale == "en-com" %}
+
 ```javascript
 var texts = {
     'task_title': 'Field objects monitoring',
@@ -566,7 +579,6 @@ var texts = {
         }
     }
 };
-
 
 // Maximum distance of a Toloker from a store (in kilometers).
 var MAX_DISTANCE = 1;
@@ -1157,7 +1169,6 @@ exports.Task = extend(TolokaHandlebarsTask, function (options) {
     }
 });
 
-
 exports.TaskSuite = extend(TolokaHandlebarsTaskSuite, function (options) {
     TolokaHandlebarsTaskSuite.call(this, options);
 }, {
@@ -1207,7 +1218,12 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
+
 {% endif %}
+
+{% endcut %}
+
+{% endcut %}
 
 Now let's see how to add these fields manually.
 
@@ -1224,31 +1240,35 @@ Add two new strings to the input data specification:
 1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
     Each block looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
+
     {% endif %}
+
 1. Find the `info` block responsible for displaying the input specification. It contains the `info__block` blocks that describe individual fields within the input specification. Paste the following code after the required field:
 
     ```html
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
@@ -1258,48 +1278,55 @@ Add two new strings to the input data specification:
 1. There is also a second option when two fields are displayed one after another for the Toloker, and next to each other for the requester.
 
     In the `info` block, find the `info__review` block that contains several `info__review-block` blocks. After the desired `info__review-block` block, insert the blocks with new input fields:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- In one line in acceptance mode -->
     <div class="info__review-block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__review-block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
+
     {% endif %}
-    In the `info` block, find the `info__block` blocks between the strings `{{else}}` and `{{/if}}`. After the desired `info__review-block` block, insert the blocks with new input fields:
+
+    In the `info` block, find the `info__block` blocks between the strings `not_var{{else}}` and `{{/if}}`. After the desired `info__review-block` block, insert the blocks with new input fields:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- One after another in Toloker mode -->
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_1__title}}
+    not_var{{texts.new_input_1__title}}
     </div>
     <div class="info__content">
-    {{new_input_1}}
+    not_var{{new_input_1}}
     </div>
     </div>
     <div class="info__block">
     <div class="info__title">
-    {{texts.new_input_2__title}}
+    not_var{{texts.new_input_2__title}}
     </div>
     <div class="info__content">
-    {{new_input_2}}
+    not_var{{new_input_2}}
     </div>
     </div>
     ```
+
     {% endif %}
 
 #### Editing JS
@@ -1307,19 +1334,26 @@ Add two new strings to the input data specification:
 1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
     The elements are described as follows:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     'property': 'value'
     ```
+
     {% endif %}
+
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
 1. The `texts` constant at the very beginning of the file stores all interface texts. Add the titles of the new fields to it:
+
     {% if locale == "en-com" %}
+
     ```javascript
     'new_input_1__title': 'Input field 1:',
     'new_input_2__title': 'Input field 2:',
     ```
+
     {% endif %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

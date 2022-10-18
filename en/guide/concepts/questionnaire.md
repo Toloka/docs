@@ -11,7 +11,7 @@ Surveys are designed to collect information for research purposes. The number of
 
 You may need additional projects for your task, such as dataset pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](solution-architecture.md).
 
-Suppose you want to know where Russian-speaking respondents have breakfast and what they prefer. To do this, create a single task on a page and in the [pool](../../glossary.md#pool-ru), so the Toloker sees several questions with response options.
+Suppose you want to know where Russian-speaking respondents have breakfast and what they prefer. To do this, create a single task on a page and in the [pool](../../glossary.md#pool), so the Toloker sees several questions with response options.
 
 #### Example of a prepared task
 ![](../_images/tutorials/questionnaire/breakfast_example.png)
@@ -64,9 +64,9 @@ The project defines what the task will look like for a Toloker.
 
     - Input data field — The `theme` string to upload a survey. It is not used in the interface and can contain any text.
     - Output data fields:
-    - The required `place` string to record the Toloker's response to the question "Where do you usually have breakfast?".;
-    - The required string `food` to record the Toloker's response to the question "What do you eat for breakfast most often?".;
-    - The required string `drink` to record the Toloker's response to the question "What do you drink for breakfast (besides water)?".
+    - The required `place` string to record the Toloker's response to the question “Where do you usually have breakfast?”.;
+    - The required string `food` to record the Toloker's response to the question “What do you eat for breakfast most often?”.;
+    - The required string `drink` to record the Toloker's response to the question “What do you drink for breakfast (besides water)?”.
 
     1. Save the changes.
 
@@ -86,9 +86,9 @@ The project defines what the task will look like for a Toloker.
 
     - Input data field — The `theme` string to upload a survey. It is not used in the interface and can contain any text.
     - Output data fields:
-    - The required `place` string to record the Toloker's response to the question "Where do you usually have breakfast?".;
-    - The required string `food` to record the Toloker's response to the question "What do you eat for breakfast most often?".;
-    - The required string `drink` to record the Toloker's response to the question "What do you drink for breakfast (besides water)?".
+    - The required `place` string to record the Toloker's response to the question “Where do you usually have breakfast?”.;
+    - The required string `food` to record the Toloker's response to the question “What do you eat for breakfast most often?”.;
+    - The required string `drink` to record the Toloker's response to the question “What do you drink for breakfast (besides water)?”.
 
     #### Graphic mode
     ![](../_images/tutorials/questionnaire/breakfast_input-output.png)
@@ -143,7 +143,7 @@ The project defines what the task will look like for a Toloker.
 
     1. Save the changes.
 
-1. For a survey, [instructions](../../glossary.md#task-instruction-ru) aren't required. Place the recommendations for filling out the survey in the [task interface](../../glossary.md#task-interface-ru).
+1. For a survey, [instructions](../../glossary.md#task-instruction) aren't required. Place the recommendations for filling out the survey in the [task interface](../../glossary.md#task-interface).
     {% note info %}
 
     Don't leave your contact information. This contradicts the [Requester Agreement]({{ customeragreement }}).
@@ -163,14 +163,14 @@ A pool is a set of paid tasks sent out for completion at the same time.
 1. In the **Audience** block, add {% if locale == "en-com" %}**Filters**{% endif %} to select Tolokers.
     Tasks in pools will be automatically available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
-1. In the **Price** block, set the price per [task suite](../../glossary.md#task-page-ru) in US dollars (for instance, `0.01`). In a survey, a task suite must contain one task. If you need help rating tasks, read about [setting up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
+1. In the **Price** block, set the price per [task suite](../../glossary.md#task-suite) in US dollars (for instance, `0.01`). In a survey, a task suite must contain one task. If you need help rating tasks, read about [setting up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
 1. In the **Quality control** block, set the {% if locale == "en-com" %}**Task overlap**{% endif %}, which is the number of Tolokers to complete the same task. At first, set a small number like 100. If you see that this is not enough for sampling, increase the overlap.
 1. In the **Additional settings** block, specify the {% if locale == "en-com" %}**Time**{% endif %} for task completion (for instance, 600 seconds).
 1. Click **Create a pool**.
 
 ## Upload tasks {#tasks_upload}
  {% if locale == "en-com" %}
-Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 {% endif %}
 1. Click **Upload**. In the window that opens, you can also download a sample file.
 1. Add input data in it. The header of the input data column contains the word `INPUT`. To upload a task, add any text to the `INPUT` column. The string from the input data field isn't used in the interface. Leave the other columns empty.

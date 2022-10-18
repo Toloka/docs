@@ -41,7 +41,11 @@ To get links to files:
 
 1. Select the region closest to your Tolokers. For example, for Tolokers from Germany: .
 
-    #### What it looks like in the interface
+    {% cut "What it looks like in the interface" %}
+	
+	![](../_images/tutorials/cloud-storage/azure/create-storage-account.png)
+	
+	{% endcut %}
 
 1. Leave other fields unchanged. Click **Review + create**.
 
@@ -81,13 +85,17 @@ You can set up the lifetime of files in the container so that they are automatic
 
 1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/send-icon.png)**Send**.
 
-1. #### Upload files
+1. {% cut "Upload files" %}
 
     Select files on your device.
+	
+	{% endcut %}
 
-    #### Upload files to the folder.
+    {% cut "Upload files to the folder." %}
 
     In the **Send to folder** field in the **Additional** section, enter the name of the folder. If the folder doesn't exist, it will be created.
+	
+	{% endcut %}
 
     {% note warning %}
 
@@ -107,15 +115,19 @@ You can set up the lifetime of files in the container so that they are automatic
 
     Links look like this:
     {% if locale == "en-com" %}
+	
     ```
     https://<storage-account>.blob.core.windows.net/<container>/<filename>
     ```
+	
     {% endif %}
     The link in the folder looks like this:
     {% if locale == "en-com" %}
+	
     ```
     https://<storage-account>.blob.core.windows.net/<container>/<file-path>/<filename>
     ```
+	
     {% endif %}
     {% note info %}
 
@@ -123,7 +135,7 @@ You can set up the lifetime of files in the container so that they are automatic
 
     {% endnote %}
 
-1. In the[file with tasks](pool_csv.md), paste the links in the column that matches the input data field to which this data is passed.
+1. In the [file with tasks](pool_csv.md), paste the links in the column that matches the input data field to which this data is passed.
 
     For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 

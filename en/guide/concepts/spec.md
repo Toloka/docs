@@ -45,7 +45,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 - **Display the text in the task.** Add the `text` field with the **string** type in the input data. Then in the task interface (in the HTML block), you can add this text as a variable, for example:{% if locale == "en-com" %}
     ```html
-    <p>Read the text: {{text}}</p>
+    <p>Read the text: not_var{{text}}</p>
     ```
     {% endif %}
 - ** Upload a file to the task, for example, an image.** Add the `url` field with the **link** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
@@ -72,7 +72,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 In the **JS** block, you can add rules for response processing in JavaScript. [Special extensions for task classes](spec-advanced.md) are available for this purpose.
 
-You can also connect JavaScript libraries to create the interface. For example, if you have several [projects](../../glossary.md#project-ru) with similar tasks, save the method descriptions in a separate file and add it as a library.
+You can also connect JavaScript libraries to create the interface. For example, if you have several [projects](../../glossary.md#project) with similar tasks, save the method descriptions in a separate file and add it as a library.
 
 To connect the JavaScript library, click the ![](../_images/settings.svg) button in the {% if locale == "en-com" %}**Task interface**{% endif %} block and add links to libraries in the **JS** field.
 
@@ -99,7 +99,7 @@ Changes to the input and output data, as well as the number of tasks per suite a
 {% endnote %}
 
 
-To view the resulting task, click {% if locale == "en-com" %}**Preview**{% endif %}. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-page-ru). You can also complete one or more tasks and get responses.
+To view the resulting task, click {% if locale == "en-com" %}**Preview**{% endif %}. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-suite). You can also complete one or more tasks and get responses.
 
 #### How do I change the number of standard tasks?
 You can change the number of tasks with standard data on the Preview page:
@@ -117,7 +117,7 @@ Add input data to check if files or text hints are displayed on the task suite. 
 #### Filling in the table
 
 1. Change the input data fields.
-    To change the task type to [control](../../glossary.md#control-task-ru) or [training](../../glossary.md#training-task-ru), add correct responses and a hint (the {% if locale == "en-com" %}**Add correct answers**{% endif %} button).
+    To change the task type to [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task), add correct responses and a hint (the {% if locale == "en-com" %}**Add correct answers**{% endif %} button).
 
     To go to the next task, click the task number at the bottom of the table. To delete a task, click ![](../_images/bin.svg).
 
@@ -154,7 +154,7 @@ To check if the data from text comments or checkboxes is received correctly, fil
 
 {% note info %}
 
-Use the [Sandbox](../../glossary.md#sandbox-ru) to check if files, images, audio, or videos submitted from the task suite are received correctly. To do this, complete the project creation, create the same project in the Sandbox, and [complete](sandbox.md) it from a trusted user account.
+Use the [Sandbox](../../glossary.md#sandbox) to check if files, images, audio, or videos submitted from the task suite are received correctly. To do this, complete the project creation, create the same project in the Sandbox, and [complete](sandbox.md) it from a trusted user account.
 
 {% endnote %}
 
@@ -219,7 +219,7 @@ You can hide text in an expandable section by using CSS styles, both in the task
 You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
 
 To add libraries:
-1. Click the "gear button" in project editing mode.
+1. Click the “gear button” in project editing mode.
 1. In the field that opens on the left, enter the links and press **Enter**.
 
 #### How do I enable loading audio files in preview mode?
@@ -258,13 +258,13 @@ See the sample projects that can help you build an interface:
 - [with radio buttons]({{ project-with-radiobutton }})
 If you pass an array of values to the input field, use commas to separate the array elements. A response option will be generated for each of them in the interface. Input/output data for the sample projects are provided in the comments at codepen.io.
 
-#### Why doesn't the "Submit" button work in the task?
+#### Why doesn't the “Submit” button work in the task?
 
 The issue is probably in the JS block. Try deleting its content, then test the **Submit** button in the preview mode.
 
 #### How do I add assignment validation depending on a checkbox, so that if an object is in the image, it must be selected, otherwise, a checkbox must be selected?
 
-You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the "Search for information online" template.
+You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the “Search for information online” template.
 
 #### How do I use different numbers of response options for different questions?
 
@@ -280,7 +280,7 @@ You can't deselect a radio button. You can only select another radio button as a
 
 #### How do I add assignment validation depending on a checkbox?
 
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the "Search for information online" template.
+You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” template.
 
 #### How do I change the task background from the standard white color to a different color?
 
@@ -323,7 +323,7 @@ You can't expand the HTML window. To expand the JS and CSS fields, click any are
 #### Can I use my own JS to build an interface in Toloka?
 
 You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
-- Click the "gear button" to open the settings.
+- Click the “gear button” to open the settings.
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
 See the [Requester's guide](spec-advanced.md) for descriptions of the structure of classes and how they work.
 
@@ -343,7 +343,7 @@ However, in the context of TolokaHandlebars editability, there are no difference
 
 Try to disable extensions in your browser. They might block iframe loading.
 
-#### How do I pass the value of the input variable to the "Button with click validation"?
+#### How do I pass the value of the input variable to the “Button with click validation”?
 
 Specify the name of the input field where you pass the link, without the brackets:{% if locale == "en-com" %}
 ```
@@ -364,11 +364,11 @@ In HTML, use a special handlebar to iterate over this field. The code structure 
 
 #### How do I use the input data as a variable in the HTML block?
 
-Enclose the input field in double curly brackets `{{text}}`.
+Enclose the input field in double curly brackets `not_var{{text}}`.
 
 #### How do I display formatted text from input data in the task?
 
-Enclose the input field in triple curly brackets `{{{input_field}}}`.
+Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
 
 For more information about using the component, see the [Requester's guide](t-components/html.md).
 
@@ -378,7 +378,7 @@ To change the number of output fields dynamically, use the recommendations from 
 
 #### How do I display the text in the input field as in the source (with the HTML tags)?
 
-To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>{{text}}</pre>`.
+To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
 
 In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
 ```
@@ -447,7 +447,7 @@ If you need to further modify the area-selection editor, use [this library](http
 
 #### How do I, depending on the option selected, show a photo and make it mandatory or hide it and make it optional?
 
-In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the "Text classification" template.
+In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the “Text classification” template.
 
 #### How do I prevent adding photos from the gallery so that when the Toloker clicks the add photo button the camera opens, rather than the gallery/camera choice?
 
@@ -457,9 +457,9 @@ Add `sources="CAMERA"` to the attributes of the image loading component. This di
 
 You can create a selection and drop-down list with category selection. See how it is implemented on [this page](t-components/image-annotation.md) (**Dropdown list** tab).
 
-#### In the "Side-by-side image comparison" template, where do I specify a proxy for the task interface to create a task with three image options?
+#### In the “Side-by-side image comparison” template, where do I specify a proxy for the task interface to create a task with three image options?
 
-The "Side-by-side image comparison" template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](t-components/img.md): `{{img src=(proxy image)}}`.
+The “Side-by-side image comparison” template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](t-components/img.md): `{{img src=(proxy image)}}`.
 
 #### What should the Toloker do if there is no selectable object in the image in an area selection task?
 
@@ -469,7 +469,7 @@ There are four options:
     Mention this in your instructions for reviewers.
 
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
-- Add the "No object" checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
+- Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
     For control purposes, add information about the value of this checkbox to the task interface.
 
 

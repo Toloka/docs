@@ -1,6 +1,6 @@
 # Using exams
 
-An exam is a [pool](../../glossary.md#pool-ru) that contains only [control tasks](../../glossary.md#control-task-ru). A combination of [training tasks](../../glossary.md#training), an exam, and the main pool ensures the required level of quality. Assign [skills](../../glossary.md#skill-ru) to Tolokers based on the exam results.
+An exam is a [pool](../../glossary.md#pool) that contains only [control tasks](../../glossary.md#control-task). A combination of [training tasks](../../glossary.md#training), an exam, and the main pool ensures the required level of quality. Assign [skills](../../glossary.md#skill) to Tolokers based on the exam results.
 
 {% note info %}
 
@@ -10,21 +10,26 @@ If a project has a control pool, Tolokers get access to the general tasks based 
 
 ## When to use {#usage}
 
-Use the exam if your tasks are difficult and you want to check how Tolokers cope with them after completing the [training](../../glossary.md#training-pool-ru).
+Use the exam if your tasks are difficult and you want to check how Tolokers cope with them after completing the [training](../../glossary.md#training-pool).
 ## Features {#features}
 
 - The number of tasks in the exam must be a multiple of the number of tasks per suite. Otherwise, the Tolokers won't receive the last suite and won't be able to complete the exam.
 
-    #### Example
+    {% cut "Example" %}
 
     If the exam consisted of two suites, 10 tasks each, and you increased the number of tasks per suite to 12, there won't be enough tasks for two full suites. Tolokers won't receive the second suite and won't be able to complete the exam.
+	
+	{% endcut %}
 
 - If the Toloker presses the {% if locale == "en-com" %}**Skip**{% endif %} button when taking the exam, the entire page isn't counted. In this case, the system won't have enough completed tasks to assign a skill to the Toloker.
-    #### How to avoid this
+
+    {% cut "How to avoid this" %}
 
     - In project editing mode, click {% if locale == "en-com" %}**Show common interface elements**{% endif %} and disable the {% if locale == "en-com" %}**Skip**{% endif %} button.
     - Add more tasks to the pool than you need to calculate the skill, specify the required number of responses, and set the following Toloker requirement: `<exam skill> = Is missing`.
     - Place all your tasks on one page.
+	
+	{% endcut %}
 
 
 ## Recommendations {#recomend}
@@ -43,9 +48,11 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}, go to the {% if locale == "en-com" %}**Additional settings**{% endif %} section, and select {% if locale == "en-com" %}**Exam**{% endif %} as the pool type.
 1. Link the training to the exam pool. In the {% if locale == "en-com" %}**Quality control**{% endif %} section, specify the name of the training and the level required. This way, you only let Tolokers take the exam if they passed the training pool.
 
-    #### Example
+    {% cut "Example" %}
 
     Tolokers can take the exam if they answered at least `80%` of the training questions correctly.
+	
+	{% endcut %}
 
     {% note info %}
 
@@ -55,9 +62,11 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
 1. To assign a skill based on the percentage of accepted responses, go to the {% if locale == "en-com" %}**Quality control**{% endif %} section and add a [Control tasks](goldenset.md) rule.
 
-    #### Example
+    {% cut "Example" %}
 
     For example, completing 10 tasks is enough to pass the exam. The Toloker will be assigned an exam skill value equal to their percentage of correct responses.
+	
+	{% endcut %}
 
 1. Fill out the {% if locale == "en-com" %}**Price per task suite, $**{% endif %} box. You can set the price for this type of pool to zero, but it's better to make the exam paid.
 1. Click {% if locale == "en-com" %}**Create pool**{% endif %}.
@@ -86,7 +95,7 @@ The Toloker will have 5 attempts to pass the test in this case. If they fail to 
 
 ## Retry {#rehab}
 
-If the Toloker doesn't cope with the general tasks after passing the exam, they're banned. However, you can create a [retry pool](../../glossary.md#reab-pool-ru) for them. When a Toloker becomes good at retry tasks, you can give them access to the general tasks.
+If the Toloker doesn't cope with the general tasks after passing the exam, they're banned. However, you can create a [retry pool](../../glossary.md#reab-pool) for them. When a Toloker becomes good at retry tasks, you can give them access to the general tasks.
 
 {% note info %}
 

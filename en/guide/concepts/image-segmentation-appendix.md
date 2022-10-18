@@ -4,7 +4,35 @@
 
 **Specifications:**
 
-**Input:**```html {   "image": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Output:**```html {   "result": {     "type": "string",     "hidden": false,     "required": true   } } ```
+
+#|
+|| **Input:** | **Output:** ||
+|| 
+
+```html 
+ {
+  "image": {
+   "type": "url",
+   "hidden": false,
+   "required": true
+   }
+ } 
+```
+
+| 
+
+```html
+{
+  "result": {
+   "type": "string",
+   "hidden": false,
+   "required": true
+   } 
+} 
+``` 
+
+||
+|#
 
 
 **HTML:**
@@ -47,8 +75,32 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Specifications:**
 
-**Input:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Output:**<br/>```html {   "result": {     "type": "string",     "hidden": false,     "required": true   } } ```
+#|
+|| **Input:**
 
+```html
+{
+  "image": {
+     "type": "url",
+     "hidden": false,
+     "required": true
+}
+}
+```
+| **Output:**
+
+```html 
+{
+  "result": {
+    "type": "string",
+    "hidden": false,
+    "required": true
+    }
+  }
+
+```
+||
+|#
 
 **HTML:**
 
@@ -89,7 +141,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **CSS:**
 
-```
+```css
 .image-annotation-editor__shape-polygon {
 display: none;
 }
@@ -102,8 +154,42 @@ height: max-content;
 
 **Specifications:**
 
-**Input:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   },   "selection": {     "type": "json",     "hidden": false,     "required": false   },   "assignment_id": {     "type": "string",     "hidden": true,     "required": true   } } ``` | **Output:**<br/>```html {   "result": {     "type": "string",     "hidden": false,     "required": true   } } ```
+#|
+|| **Input:**
 
+```html
+ {
+   "image": {
+     "type": "url",
+     "hidden": false,
+     "required": true
+   },
+   "selection": {
+     "type": "json",
+     "hidden": false,
+     "required": false
+   },
+   "assignment_id": {
+     "type": "string",
+     "hidden": true,
+     "required": true
+   }
+ } 
+```
+
+ | **Output:**
+
+```html
+ {   "result": {
+     "type": "string",
+     "hidden": false,
+     "required": true
+   }
+ } 
+```
+
+||
+|#
 
 **HTML:**
  {% if locale == "en-com" %}

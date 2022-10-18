@@ -6,7 +6,7 @@ All payments between requesters and Tolokers are made in U.S. dollars. The accou
 ![](../_images/other/balance-ru.png)
 - The green number is the account balance.
 
-- Gray indicates funds reserved for the tasks waiting to be [reviewed](../../glossary.md#left-off-acceptance-ru).
+- Gray indicates funds reserved for the tasks waiting to be [reviewed](../../glossary.md#left-off-acceptance).
 
 
 Money in the account is spent on the following items:
@@ -23,7 +23,7 @@ You can [track spending](#track-budget) in your profile. You can also download a
 
 ## Payment per task {#task-payment}
 
-The price of a task is set by the requester in the [pool settings](../../glossary.md#pool-ru). Money is deducted from the account as tasks are completed. If you [review assignments](accept.md) after they are completed, the money for [completed tasks](../../glossary.md#submitted-answers-ru) is first reserved, and then deducted.
+The price of a task is set by the requester in the [pool settings](../../glossary.md#pool). Money is deducted from the account as tasks are completed. If you [review assignments](accept.md) after they are completed, the money for [completed tasks](../../glossary.md#submitted-answers) is first reserved, and then deducted.
 
 
 ## Fees {#comission}
@@ -53,7 +53,7 @@ To get the {% if locale == "en-com" %}Statistics on requester's tasks{% endif %}
 
 1. Click {% if locale == "en-com" %}**Generate report (pdf)**{% endif %} and download the PDF file.
 
-    The report contains data on spending per project (including markup) and [rewards](../../glossary.md#bonus-ru) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
+    The report contains data on spending per project (including markup) and [rewards](../../glossary.md#bonus) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
 
 
 
@@ -78,7 +78,7 @@ Requesters who opted for a paper contract can create main and secondary accounts
 
 #### Keep in mind the following:
 
-- General [skills](../../glossary.md#skill-ru).
+- General [skills](../../glossary.md#skill).
 - Each secondary account has its own password and username.
 - You can't convert a secondary account into the main one.
 - Payments are only available for the main account, from which the funds are distributed to secondary accounts.
@@ -89,7 +89,7 @@ If you want to create main and secondary accounts, [write to support](../trouble
 
 ## Troubleshooting {#troubleshooting}
 
-#### How do I connect to billing from Moscow or Saint Petersburg?
+{% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
 
 If the address is in Saint Petersburg, enter Saint Petersburg in the **Region** field, then specify the street, house number, and postal code. You don't need to fill out the other fields.
 
@@ -97,29 +97,43 @@ If the address is in Moscow, enter Moscow in the **Region** field, then specify 
 
 If it still doesn't work, [enter](../troubleshooting/troubleshooting.md) your full address with the postal code in the feedback form. We'll help you fill out the fields correctly.
 
-#### When I top up my account, I see an amount 1000 times greater than I planned. What happened?
+{% endcut %}
+
+{% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
 
 That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
 
-#### Why do we top up our account in a non-Russian currency?
+{% endcut %}
+
+{% cut "Why do we top up our account in a non-Russian currency?" %}
 
 Toloka is an international platform for users from different countries. The platform is provided by the Swiss company Yandex Services AG.
 
-#### Why do we pay 20% VAT in the invoice?
+{% endcut %}
+
+{% cut "Why do we pay 20% VAT in the invoice?" %}
 
 In accordance with the tax legislation of the Russian Federation, we have included Clause 3.8. in our [Requester agreement]({{ customeragreement-probki }}): the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
 
-#### How long does paying the invoice take?
+{% endcut %}
+
+{% cut "How long does paying the invoice take?" %}
 
 If you pay using a bank card, the money is usually transferred to your Toloka account within a few minutes. If you can't see the top-up amount on your account, [write to us](../troubleshooting/support.md#help) and we'll sort it out. Specify your requester username and account number and use **Account top-up** as your email subject.
 
-#### How do I find out the currency exchange rate that would apply to my account top-up in Toloka?
+{% endcut %}
+
+{% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
 
 You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. The conversion follows the Central Bank of Russia's exchange rate at the time of invoicing (UTC). [Learn more](refill.md) about top-up.
 
-#### How do I add money to Toloka?
+{% endcut %}
+
+{% cut "How do I add money to Toloka?" %}
 
 You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](refill.md#step-by-step) with step-by-step instructions.
+
+{% endcut %}
 
 [Get closing documents and invoices](../troubleshooting/support.md#feedback_g3b_vj3_qjb)
 

@@ -2,7 +2,7 @@
 
 With training pools, Tolokers can practice before getting started. You can provide access to the general task pool only to those Tolokers who passed the training.
 
-The training pool contains only [training tasks](../../glossary.md#training-task-ru). Tasks in the training pool aren't paid for.
+The training pool contains only [training tasks](../../glossary.md#training-task). Tasks in the training pool aren't paid for.
 
 {% note info %}
 
@@ -14,8 +14,8 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 ## How does it work? {#how-it-works}
 
-1. You create a training pool. A [training skill](../../glossary.md#train-skill-ru) is created automatically. Newly created training pools use a skill that was already created.
-1. You upload tasks to the pool and [mark them up](../../glossary.md#task-markup-ru). You can upload tasks that are already marked up.
+1. You create a training pool. A [training skill](../../glossary.md#train-skill) is created automatically. Newly created training pools use a skill that was already created.
+1. You upload tasks to the pool and [mark them up](../../glossary.md#task-markup). You can upload tasks that are already marked up.
 1. You link the training to the main pool.
 1. You run both pools in turn.
 1. The Toloker sees only the training tasks and decides to complete them.
@@ -35,7 +35,7 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 ## How do I create a training pool? {#create-train}
 
-1. Open the [project](../../glossary.md#project-ru) page.
+1. Open the [project](../../glossary.md#project) page.
 
 1. Go to the {% if locale == "en-com" %}**Training**{% endif %} tab.
 
@@ -48,11 +48,11 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 ## After you created a training pool {#after-creating}
 
-1. [Upload tasks to the pool and mark them up](pool.md) (add correct responses and hints). All tasks must be [training](../../glossary.md#training-task-ru). You can upload tasks that are already marked up.
+1. [Upload tasks to the pool and mark them up](pool.md) (add correct responses and hints). All tasks must be [training](../../glossary.md#training-task). You can upload tasks that are already marked up.
 
     #### What should be a good hint?
 
-    Avoid wordings like: "You answered incorrectly, please provide the correct response". The Toloker learns when the hint explains the essence of their mistake.
+    Avoid wordings like: “You answered incorrectly, please provide the correct response”. The Toloker learns when the hint explains the essence of their mistake.
 
     Make the hints clear. Explain which response should be chosen and why.
 
@@ -65,36 +65,37 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 ## Training settings {#parameters}
 
 
-Field
- | Overview
------ | -----
-{% if locale == "en-com" %}**Guidelines**{% endif %} | [Instructions](../../glossary.md#task-instruction-ru) for the training tasks.<br/><br/>By default, the [project instructions](instruction.md) are displayed. To write separate instructions for training, deselect the {% if locale == "en-com" %}**Use project instructions**{% endif %} box.
-{% if locale == "en-com" %}**Training title**{% endif %} | Name of the training pool (not visible to the Toloker).
-{% if locale == "en-com" %}**Adult content**{% endif %} | Whether the training tasks have porn content.
-{% if locale == "en-com" %}**Time on task**{% endif %} | The time allowed for completing a [task suite](../../glossary.md#task-page-ru), in seconds.
-{% if locale == "en-com" %}**Retry after**{% endif %} | The number of days after which the Toloker can access the training again. If not specified, [training skill](../../glossary.md#train-skill-ru) is issued for an indefinite time, and the value is fixed.<br/>[Learn more about how it works](train.md).
-{% if locale == "en-com" %}**Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [file with tasks](../../glossary.md#tsv-file-definition-ru).
-{% if locale == "en-com" %}**Shuffle on page**{% endif %} | If this option is enabled, tasks on the page are shown to the Toloker in random order.
-{% if locale == "en-com" %}**Complete passing**{% endif %} | If this option is enabled, the Toloker must complete all the tasks in this pool to pass the training.<br/>You can load more training tasks than required for passing the training and specify the number of pages required for setting the skill and accessing the linked pools.
-{% if locale == "en-com" %}**Required for passing**{% endif %} | The number of assignments the Toloker must complete to pass the training.
+|Field | Overview
+|----- | -----
+|{% if locale == "en-com" %}**Guidelines**{% endif %} | [Instructions](../../glossary.md#task-instruction) for the training tasks.<br/><br/>By default, the [project instructions](instruction.md) are displayed. To write separate instructions for training, deselect the {% if locale == "en-com" %}**Use project instructions**{% endif %} box.
+|{% if locale == "en-com" %}**Training title**{% endif %} | Name of the training pool (not visible to the Toloker).
+|{% if locale == "en-com" %}**Adult content**{% endif %} | Whether the training tasks have porn content.
+|{% if locale == "en-com" %}**Time on task**{% endif %} | The time allowed for completing a [task suite](../../glossary.md#task-suite), in seconds.
+|{% if locale == "en-com" %}**Retry after**{% endif %} | The number of days after which the Toloker can access the training again. If not specified, [training skill](../../glossary.md#train-skill) is issued for an indefinite time, and the value is fixed.<br/>[Learn more about how it works](train.md).
+|{% if locale == "en-com" %}**Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [file with tasks](../../glossary.md#tsv-file-definition).
+|{% if locale == "en-com" %}**Shuffle on page**{% endif %} | If this option is enabled, tasks on the page are shown to the Toloker in random order.
+|{% if locale == "en-com" %}**Complete passing**{% endif %} | If this option is enabled, the Toloker must complete all the tasks in this pool to pass the training.<br/>You can load more training tasks than required for passing the training and specify the number of pages required for setting the skill and accessing the linked pools.
+|{% if locale == "en-com" %}**Required for passing**{% endif %} | The number of assignments the Toloker must complete to pass the training.
 
 
 
 ## Repeated training {#repeat-train}
 
-After completing the training (successfully or not), the Toloker is assigned a [training skill](../../glossary.md#train-skill-ru), and the value is fixed.
+After completing the training (successfully or not), the Toloker is assigned a [training skill](../../glossary.md#train-skill), and the value is fixed.
 
 New training pools in the project **aren't shown** to the Toloker, as long as they have a training skill.
 
 The lifespan of the skill and the need for retraining depends on what you specify in the {% if locale == "en-com" %}**Retry after**{% endif %} field.
 
-#### How does it work?
+{% cut "How does it work?" %}
 
-#### Repeated training isn't set up
+{% cut "Repeated training isn't set up" %}
 
 The training skill is assigned for an indefinite time, so the training pools in this project are no longer available to the Toloker until you delete the training skill manually.
 
-#### Repeated training
+{% endcut %}
+
+{% cut "Repeated training" %}
 
 The training skill is deleted after the specified number of days if the Toloker didn't complete tasks in the linked pools.
 
@@ -109,9 +110,13 @@ Completing tasks in pools that aren't linked to the training pool isn't taken in
 
 {% endnote %}
 
-#### How do I set it up?
+{% endcut %}
 
-#### Send only inactive Tolokers for retraining
+{% endcut %}
+
+{% cut "How do I set it up?" %}
+
+{% cut "Send only inactive Tolokers for retraining" %}
 
 Repeated training isn't needed if the Toloker already completes tasks in the linked pools.
 
@@ -123,8 +128,9 @@ Don't forget to link the main and training pools. Completing tasks in pools that
 
 {% endnote %}
 
+{% endcut %}
 
-#### Forbid repeated training
+{% cut "Forbid repeated training" %}
 
 Leave the {% if locale == "en-com" %}**Retry after**{% endif %} empty. Then the skill will be assigned to the Toloker for an indefinite time, and the value is fixed.
 
@@ -136,10 +142,13 @@ Tolokers will get access only to those pools for which their skill value is high
 
 {% endnote %}
 
+{% endcut %}
+
+{% endcut %}
 
 ## How to archive a training pool {#archive-train}
 
-A pool with the {% if locale == "en-com" %}"Archived"{% endif %} status can't be started or edited.
+A pool with the {% if locale == "en-com" %}“Archived”{% endif %} status can't be started or edited.
 
 By default, archived training pools are not visible in the list of project trainings. To view them:
 1. Open the project page.
@@ -154,30 +163,34 @@ If these buttons don't work, make sure that all the main pools that the training
 
 ## What's next {#what_next}
 
-- {% if locale == "en-com" %}
-    [Top up your account](refill.md)
-    {% endif %}
+- {% if locale == "en-com" %}[Top up your account](refill.md){% endif %}
 - [Start the pool](pool-run-and-stop.md).
 - To view the training statistics, go to the [Skills]({{ skills }}) page and choose a skill named `<project name> - training`.
 
 
 ## Troubleshooting {#troubleshooting}
 
-#### Setting up training
+{% cut "Setting up training" %}
 
-#### How do I precede my task with mandatory control questions to check that the Toloker understood my instructions? Would such training or control tasks be similar to the general tasks?
+{% cut "How do I precede my task with mandatory control questions to check that the Toloker understood my instructions? Would such training or control tasks be similar to the general tasks?" %}
 
 The training and control questions must meet your project specification. However, you can create a separate project with your instructions, survey, and sample videos. Then you can assign a skill to users based on their responses. You can use this skill to admit Tolokers to the main project.
 
-#### How do I make one parameter mandatory and the other parameters optional in my training task?
+{% endcut %}
+
+{% cut "How do I make one parameter mandatory and the other parameters optional in my training task?" %}
 
 In the task file, leave empty control values for the optional output data.
 
-#### Why do I have an infinite number of pages in the training pool?
+{% endcut %}
+
+{% cut "Why do I have an infinite number of pages in the training pool?" %}
 
 Tasks have infinite overlap in the training pool. As long as the training pool is open and the training is running, users can access the tasks. Learn more about [training pools](train.md).
 
-#### How do I insert a link in the GOLDEN field?
+{% endcut %}
+
+{% cut "How do I insert a link in the GOLDEN field?" %}
 
 Text in the GOLDEN field must match the control text exactly.
 
@@ -187,15 +200,21 @@ Check the links that you use. There are several ways to unify links:
 - Add requirements for the link format in your instructions and hints in your training pool.
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
-#### If I upload tasks using smart mixing, does it mean that the same file should contain both the control tasks and general tasks, or can I upload them separately?
+{% endcut %}
+
+{% cut "If I upload tasks using smart mixing, does it mean that the same file should contain both the control tasks and general tasks, or can I upload them separately?" %}
 
 Smart mixing is set up when you upload tasks to the pool. After creating a pool, click **Upload** and select the method for generating task suites. You can upload them using separate files or one file, arranging them in any order.
 
-#### Can I automatically pause accepting applications for the training pool if the necessary number of Tolokers have been trained and are already doing the tasks?
+{% endcut %}
+
+{% cut "Can I automatically pause accepting applications for the training pool if the necessary number of Tolokers have been trained and are already doing the tasks?" %}
 
 You can close the pool manually at any time using the interface. However, you can't set the number of users that should complete the training pool for it to close automatically.
 
-#### How do I check that the Tolokers don't cheat during training?
+{% endcut %}
+
+{% cut "How do I check that the Tolokers don't cheat during training?" %}
 
 Training helps users learn how to complete your task and figure out the instructions.
 
@@ -207,13 +226,17 @@ Besides the training, be sure to add quality control rules and [control tasks](c
 
 If the task requires that the Tolokers send free-format responses or data files, use **non-automatic acceptance** to pay for tasks after they are reviewed.
 
-#### Why does the training pool allow smart mixing but doesn't allow adding by empty row?
+{% endcut %}
 
-This is a technical limitation of [training pools](../../glossary.md#training-pool-ru). You can only upload tasks to your training pools this way. If you want to upload tasks to the training pool suite-by-suite, create the main pool, set the pool type to **Training**, and set the price to zero.
+{% cut "Why does the training pool allow smart mixing but doesn't allow adding by empty row?" %}
 
-#### How do I create two active training pools: the first one for practice and the second one to admit the Tolokers to the main pool?
+This is a technical limitation of [training pools](../../glossary.md#training-pool). You can only upload tasks to your training pools this way. If you want to upload tasks to the training pool suite-by-suite, create the main pool, set the pool type to **Training**, and set the price to zero.
 
-Create the first pool based on the [training pool](../../glossary.md#training-pool-ru) and the second pool based on the main pool with the pool type set to **Exam**. If a pool contains only control and/or training tasks, the price can be set to zero.
+{% endcut %}
+
+{% cut "How do I create two active training pools: the first one for practice and the second one to admit the Tolokers to the main pool?" %}
+
+Create the first pool based on the [training pool](../../glossary.md#training-pool) and the second pool based on the main pool with the pool type set to **Exam**. If a pool contains only control and/or training tasks, the price can be set to zero.
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `If the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses.`
 
@@ -221,57 +244,81 @@ In your exam user requirements, specify: `<exam skill> <80 or = is missing>`.
 
 In the main pool, set up a filter: `<exam skill> >= 80 and <main skill> >= 70 or = Is missing>`. You can choose the skill values depending on how well the Tolokers handle your task.
 
-#### How do I create a training pool so that the Toloker might fail it but still be admitted to the general task pool?
+{% endcut %}
+
+{% cut "How do I create a training pool so that the Toloker might fail it but still be admitted to the general task pool?" %}
 
 Create a main pool of the **Training** type. Add only [training tasks](../../glossary.md#training-task-ru_1). To assign a skill, use the **Control tasks** rule. To allow access to the general tasks to users with any skill level, set up the following filter in the main pool: `<skill> >= 0` or `<skill> ≠ 0`.
 
 However, we don't advise giving access to general tasks to Tolokers who failed training.
 
-#### How do I create a file with training tasks?
+{% endcut %}
+
+{% cut "How do I create a file with training tasks?" %}
 
 For training tasks, you need to:
 - Select the correct responses in the `GOLDEN:result` column.
 - Fill in the `HINT:text` column. It stores a hint to be shown if the Toloker selects an incorrect response option.
 
-#### Do users have to complete all the tasks in the training pool?
+{% endcut %}
+
+{% cut "Do users have to complete all the tasks in the training pool?" %}
 
 If you enabled incomplete training and specified the number of training pages required, users don't have to fully complete the training in order to pass. If you didn't make these settings, the Tolokers have to complete all the tasks in the training pool to get a training skill.
 
-#### Is the training considered an active pool when the main pool is closed?
+{% endcut %}
+
+{% cut "Is the training considered an active pool when the main pool is closed?" %}
 
 Yes, it is.
 
-#### How do I make the training optional so that Tolokers can decide themselves whether to take it or not?
+{% endcut %}
+
+{% cut "How do I make the training optional so that Tolokers can decide themselves whether to take it or not?" %}
 
 Training is designed to select Tolokers for the general task. That's why training must be linked to the main pool and become inactive as soon as the main pool closes.
 
-The Toloker is trained to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, "optional" training can be based on a main pool that includes some training tasks.
+The Toloker is trained to get access to your paid tasks. If the training is optional, there probably won't be very many people who choose to complete it. Technically, “optional” training can be based on a main pool that includes some training tasks.
 
 To show the training separately from other pools, disable **Use project description** and use this field to specify that this is an optional set of training tasks. In the pool settings, select the **Training** type.
 
-#### Can I create training for projects where it is not possible to formulate the correct response exactly or review it automatically?
+{% endcut %}
+
+{% cut "Can I create training for projects where it is not possible to formulate the correct response exactly or review it automatically?" %}
 
 You can't create a training like this, because for the response to be counted as correct it must exactly match the control text.
 
 For projects using free text input or attached files, you can make a pre-selection task with non-automatic acceptance. You can admit good Tolokers to your main pool based on their skill.
 
-#### Can I implement non-automatic acceptance in the training pool?
+{% endcut %}
+
+{% cut "Can I implement non-automatic acceptance in the training pool?" %}
 
 You can't use non-automatic acceptance in your training pool.
 
 However, you can create a training pool with the **Training** type based on your main pool and enable non-automatic acceptance there.
 
-#### Training skill
+{% endcut %}
 
-#### More than 500 Tolokers passed the training, but the training skill shows only 30.
+{% endcut %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+{% endcut %}
 
-#### More Tolokers were trained than the training skill shows
+{% cut "Training skill" %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+{% cut "More than 500 Tolokers passed the training, but the training skill shows only 30." %}
 
-#### Which parameter affects the skill expiration?
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+
+{% endcut %}
+
+{% cut "More Tolokers were trained than the training skill shows" %}
+
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+
+{% endcut %}
+
+{% cut "Which parameter affects the skill expiration?" %}
 
 Validity period of the training skills is governed by the **Retry after** parameter.
 
@@ -280,29 +327,40 @@ The skill is deleted in the specified number of days if the Toloker:
 - Didn't complete any tasks linked to the training during this period.
 If their skill expires, your users need to complete the training again.
 
-#### How do I know when a particular Toloker got the skill?
+{% endcut %}
+
+{% cut "How do I know when a particular Toloker got the skill?" %}
 
 1. Go to the Toloker card.
 1. Click the **Profile** tab.
 1. Find the required skill in the list and download the history of its changes.
 
-#### Test and retry
+{% endcut %}
 
-#### What's the difference between the exam pool that I pay for and the main pool?
+{% endcut %}
+
+{% cut "Test and retry" %}
+
+{% cut "What's the difference between the exam pool that I pay for and the main pool?" %}
 
 Exam is a pool that contains only the control tasks. Usually it's small and intended to check how users learned to do your tasks after they read the instructions and completed the training.
 
 Unlike your main pool, you already know correct responses for every task. You can set the price to zero. Based on the results of responses to control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
 
-#### How do I set up a retry pool for my project?
+{% endcut %}
+
+{% cut "How do I set up a retry pool for my project?" %}
 
 You can create a retry pool similarly to an exam pool. In the pool settings, select the type **Retry**. In the retry pool filters, specify the upper and lower values of the <main skill> that the Tolokers must get in order to be admitted to the retry pool.
 
 For example, if the main pool admits users with a skill of 70 or higher, then you can route the people with a skill between 40 and 69 to the retry pool.
 
-To get a valid "range", enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
+To get a valid “range”, enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
 We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10-20 tasks is enough, depending on complexity.
-#### How do I create an exam with a preset number of correct responses?
+
+{% endcut %}
+
+{% cut "How do I create an exam with a preset number of correct responses?" %}
 
 To do this, under **Test result**, go to **Recent tasks to use** and specify the number of recent responses from the Toloker.
 
@@ -312,10 +370,16 @@ If your task uses assignment review (non-automatic acceptance), to set up such a
 
 ![](../_images/troubleshooting/number-of-correct-answers.png)
 
-#### How do I create a training and honey pots with an exam to get an output response other than the control value?
+{% endcut %}
+
+{% cut "How do I create a training and honey pots with an exam to get an output response other than the control value?" %}
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
 Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+
+{% endcut %}
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

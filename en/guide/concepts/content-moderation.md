@@ -1,6 +1,6 @@
 # Sentiment analysis and content moderation
 
-This [project template](../../glossary.md#project-template-ru) works well for content moderation, when you need to check the text for compliance.
+This [project template](../../glossary.md#project-template) works well for content moderation, when you need to check the text for compliance.
 
 Use this template when you need to:
 
@@ -80,7 +80,7 @@ In the project, you define what the task will look like for the Toloker.
     In this case they are:
 
     - Input data: `comment` field, text for checking.
-    - Output data: the `quality` string to record the selected response option from the field "Are there any violations in the text?". Other fields: types of violations. You can use this list of fields or customize it for your tasks.
+    - Output data: the `quality` string to record the selected response option from the field “Are there any violations in the text?”. Other fields: types of violations. You can use this list of fields or customize it for your tasks.
 
     #### Graphic mode
     ![](../_images/tutorials/content-moderation/cm-specification.png)
@@ -184,7 +184,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. On your new project page, click **Add pool**.
 1. Give the pool any convenient name and description. They are available only to you, the Toloker sees only the project name and description.
-1. In the **Audience** block, add **Filters** to select Tolokers. If the instructions, the task interface and the comments themselves are in Russian, use the "Russian-speaking Tolokers" set. If you plan to analyze comments in English or another language, add the `Language = English` filter to them
+1. In the **Audience** block, add **Filters** to select Tolokers. If the instructions, the task interface and the comments themselves are in Russian, use the “Russian-speaking Tolokers” set. If you plan to analyze comments in English or another language, add the `Language = English` filter to them
 
     Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
@@ -235,7 +235,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 1. Configure normal or dynamic overlap:
 
     - **Overlap** is the number of Tolokers to complete the same task. For content moderation tasks, 3-5 is an appropriate value. In this case, it makes sense to use [Aggregation of results](result-aggregation.md) to check the reliability of responses.
-    - [Dynamic overlap](../../glossary.md#dynamic-overlap-ru) (incremental relabeling, IRL). It will help you optimize your budget for getting the most reliable responses. [Example of settings](dynamic-overlap.md#example).
+    - [Dynamic overlap](../../glossary.md#dynamic-overlap) (incremental relabeling, IRL). It will help you optimize your budget for getting the most reliable responses. [Example of settings](dynamic-overlap.md#example).
 
     For this parameter to work, you need to load tasks using **Smart mixing**.
 
@@ -244,7 +244,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Uploading tasks {#load_tasks}
  {% if locale == "en-com" %}
-Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 {% endif %}
 1. Click **Upload**. In the window that opens, you can also download a sample file.
 1. Add input data in it. The header of the input data column contains the `INPUT` word. Add the comments you want to check in it. Leave the other columns empty.
@@ -278,7 +278,7 @@ Write clear instructions. Criteria for good and bad comments on different resour
 {% endnote %}
 
 
-1. Open the [project](../../glossary.md#project-ru) page, go to the {% if locale == "en-com" %}**Training**{% endif %} tab and click {% if locale == "en-com" %}**Add training**{% endif %}.
+1. Open the [project](../../glossary.md#project) page, go to the {% if locale == "en-com" %}**Training**{% endif %} tab and click {% if locale == "en-com" %}**Add training**{% endif %}.
 
 1. Give a name to the training pool and set the time for completing a task suite.
 1. Save the pool by clicking **Create training**.

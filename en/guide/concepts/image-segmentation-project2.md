@@ -1,6 +1,6 @@
 # Project 2. Select an object in the image
 
-In this [project](../../glossary.md#project-ru), Tolokers will select image areas that contain a traffic sign. Use the results from [project 1](image-segmentation-project1.md) as source images.
+In this [project](../../glossary.md#project), Tolokers will select image areas that contain a traffic sign. Use the results from [project 1](image-segmentation-project1.md) as source images.
 
 ## Create a project {#create-project}
 
@@ -20,58 +20,63 @@ In this [project](../../glossary.md#project-ru), Tolokers will select image area
 
 1. Edit the task interface in the editor you selected:
 
-    #### Template Builder
+    {% list tabs %}
 
-    1. You can use it for this project with pre-configured validation and task layout.
+    - Template Builder
 
-    The Toloker won't be able to submit a response without selecting an area in an image.
+        1. You can use it for this project with pre-configured validation and task layout.
 
-    For more information about the template and its settings, see [Object selection in an image]({{ tb-select-areas }}) in the Template Builder Help.
+            The Toloker won't be able to submit a response without selecting an area in an image.
 
-    1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
+            For more information about the template and its settings, see [Object selection in an image]({{ tb-select-areas }}) in the Template Builder Help.
 
-    - Input data field: `image` — A link to an image.
+        1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
 
-    - Output data field: `result` — The field that will contain the information about the labeled image after it is uploaded.
+            - Input data field: `image` — A link to an image.
 
-    #### HTML/CSS/JS editor
+            - Output data field: `result` — The field that will contain the information about the labeled image after it is uploaded.
 
-    1. In {% if locale == "en-com" %}**Task interface**{% endif %}, leave the **HTML** block unchanged.
+    - HTML/CSS/JS editor
 
-    1. Edit the **CSS** block:
+        1. In {% if locale == "en-com" %}**Task interface**{% endif %}, leave the **HTML** block unchanged.
 
-    1. Set up the area selection tools. This template uses [Editor for image area selection](t-components/image-annotation.md). It features rectangle and polygon tools (by default).
+        1. Edit the **CSS** block:
 
-    To set up rectangle selection, replace the code in the **CSS** block with the following:
-    ```
-    .image-annotation-editor__shape-polygon {
-    display: none;
-    }
-    ```
+        1. Set up the area selection tools. This template uses [Editor for image area selection](t-components/image-annotation.md). It features rectangle and polygon tools (by default).
 
-    1. Enter the code to adjust the interface height to the image size:
+           To set up rectangle selection, replace the code in the **CSS** block with the following:
 
-    ```
-    .image-annotation-editor__annotation-layer {
-    height: max-content;
-    }
-    ```
+            ```
+            .image-annotation-editor__shape-polygon {
+            display: none;
+            }
+            ```
 
-    1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
+            1. Enter the code to adjust the interface height to the image size:
 
-    Learn more about [annotation](t-components/image-annotation.md#annotation).
+            ```
+            .image-annotation-editor__annotation-layer {
+            height: max-content;
+            }
+            ```
 
-    1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
 
-    {% note info %}
+            Learn more about [annotation](t-components/image-annotation.md#annotation).
 
-    The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
-    {% endnote %}
+            {% note info %}
 
-    1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
+            The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
 
-    1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . If there were errors when testing, check the code blocks that you entered.
+            {% endnote %}
+
+        1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
+
+        1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . If there were errors when testing, check the code blocks that you entered.
+
+    {% endlist %}
 
 1. Save the changes.
 
@@ -118,7 +123,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. In the {% if locale == "en-com" %}**Price**{% endif %} block, find the {% if locale == "en-com" %}**Price per task suite**{% endif %} field and specify the price. For example, `0.01`.
 
-    #### What is a task suite?
+    {% cut "What is a task suite?" %}
 
     A task suite can contain one or several tasks that are shown on the same page. If the tasks are simple, you can add 10-20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers.
 
@@ -126,21 +131,33 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     The number of tasks per suite is set when uploading tasks.
 
-    #### What is a fair price for a task suite?
+	{% endcut %}
+
+    {% endcut %}
+
+    {% cut "What is a fair price for a task suite?" %}
 
     The general rule of pricing is the more time the Toloker spends to complete the task, the higher the price is.
 
     You can register in Toloka as a Toloker and find out how much other requesters pay for tasks.
 
+	{% endcut %}
+
+    {% endcut %}
+
 1. [Quality control rules](control.md) allow you to filter out careless Tolokers. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set the rules for the pool:
 
     1. Turn on the {% if locale == "en-com" %}**Assignment review**{% endif %} option.
 
-    #### What is non-automatic acceptance (assignment review)?
+    {% cut "What is non-automatic acceptance (assignment review)?" %}
 
-    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers-ru) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
     In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
+
+	{% endcut %}
+
+    {% endcut %}
 
     1. Add the following quality control rules:
     - {% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — sends the tasks you rejected to other Tolokers according to the specified rules.
@@ -177,9 +194,9 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. In the {% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} field, enter the number of recent task suites submitted by the Toloker. For example, `5`.
     1. In the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} field, enter the time in seconds. For example, `20`.
-    1. Set a rule for a fast response: if the {% if locale == "en-com" %}**number of fast responses**{% endif %}** ≥ 1**, then {% if locale == "en-com" %}**ban**{% endif %} {% if locale == "en-com" %}**on requester**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. In the {% if locale == "en-com" %}**Reason**{% endif %} field, enter **Fast responses**.
+    1. Set a rule for a fast response: if the {% if locale == "en-com" %}**number of fast responses**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**ban**{% endif %} {% if locale == "en-com" %}**on requester**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. In the {% if locale == "en-com" %}**Reason**{% endif %} field, enter **Fast responses**.
 
-    This means that a user who completes a [task suite](../../glossary.md#task-page-ru) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
+    This means that a user who completes a [task suite](../../glossary.md#task-suite) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
 
     - {% if locale == "en-com" %}**Results of assignment review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
 
@@ -187,11 +204,11 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of assignment review**{% endif %}.
 
-    1. Set a rule for rejected tasks: if {% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** and {% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35**, then {% if locale == "en-com" %}** ban**{% endif %} {% if locale == "en-com" %}** on requester**{% endif %} for {% if locale == "en-com" %}** 15 days**{% endif %}.
+    1. Set a rule for rejected tasks: if {% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** and {% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35**, then {% if locale == "en-com" %} **ban**{% endif %} {% if locale == "en-com" %} **on requester**{% endif %} for {% if locale == "en-com" %} **15 days**{% endif %}.
 
     This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
-    [Control tasks](../../glossary.md#control-task-ru) and [majority vote](../../glossary.md#majority-vote-ru) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](control.md).
+    [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](control.md).
 
     {% note info %}
 
@@ -207,7 +224,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Prepare and upload tasks {#upload-file}
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
 
     1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](image-segmentation-project1.md).
 

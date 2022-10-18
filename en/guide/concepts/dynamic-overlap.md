@@ -21,7 +21,7 @@ Dynamic overlap uses 5 main parameters:
 
 1. **Output fields for aggregation** are output data fields that are used to calculate confidence in the response.
 
-#### How does it work?
+{% cut "How does it work?" %}
 
 Terms
 
@@ -91,11 +91,13 @@ eps = z_prob(j) * (1 / Y) / r
 
 Next, we look at$EPS,$. If the expected result is less than the value of$EPS,$we increase overlap until the result is equal to the confidence in the aggregated response or overlap reaches the maximum.
 
+{% endcut %}
+
 ## Practice {#practice}
 
 Before setting up dynamic overlap, you need to prepare the output data fields.
 
-#### You can use the following fields:
+{% cut "You can use the following fields:" %}
 
 - Strings and numbers with allowed values.
 
@@ -106,12 +108,16 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
     If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
-#### You can't use the following fields:
+{% endcut %}
+
+{% cut "You can't use the following fields:" %}
 
 - Array.
 - File.
 - Coordinates.
 - JSON objects.
+
+{% endcut %}
 
 #### Setting up overlap
 
@@ -132,7 +138,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 {% endnote %}
 
-#### Example
+{% cut "Example" %}
 
 Configuring dynamic overlap for [simple classification](../tutorials/image-classification.md).
 
@@ -155,7 +161,10 @@ Toloker _B_ with a skill value of 90 responded with `BAD`.
 The confidence in the aggregated `BAD` response is 76.1. The overlap is increased by 1.
 
 Toloker _C_ with a skill value of 80 responded with `BAD`.
+
 The confidence in the aggregated `OK` response is 96.2. The task is considered completed.
+
+{% endcut %}
 
 ## Tips and recommendations {#help}
 
@@ -166,11 +175,11 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
     - When the value is `> 90%`, the average accuracy of the aggregated response doesn't increase, and the labelling costs increase.
 
-    Optimal confidence is at 80% for the best "price/quality" ratio.
+    Optimal confidence is at 80% for the best “price/quality” ratio.
 
 - Upload tasks via **smart mixing**. Otherwise, the tasks are assigned with minimum overlap.
 
-    This is necessary for overlap to increase because [control](../../glossary.md#control-task-ru) and [training](../../glossary.md#training-task-ru) tasks uploaded via **smart mixing** have infinite overlap.
+    This is necessary for overlap to increase because [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks uploaded via **smart mixing** have infinite overlap.
 
 - Use a skill calculated as the [percentage of correct responses to control tasks](goldenset.md). This will give you the most accurate results.
 
@@ -188,12 +197,16 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
 ## Troubleshooting {#troubleshooting}
 
-#### Can I change overlap after the pool is started?
+{% cut "Can I change overlap after the pool is started?" %}
 
 Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
 
-#### With dynamic overlap, is it possible that the pool will close before the tasks for minimal overlap run out? The overlap increased, but the pool is closed, and I need to start it manually.
+{% endcut %}
+
+{% cut "With dynamic overlap, is it possible that the pool will close before the tasks for minimal overlap run out? The overlap increased, but the pool is closed, and I need to start it manually." %}
 
 Yes, this might happen. You must set an adequate pool closing interval.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -1,11 +1,11 @@
 # Editing a project
 
-You can view the list of created [projects](../../glossary.md#project-ru) on the **Projects** page. Open the project page to view the [list of pools](pool-main.md), [the project rating](project_rating_stat.md) and [the project statistics](project-statistic.md).
+You can view the list of created [projects](../../glossary.md#project) on the **Projects** page. Open the project page to view the [list of pools](pool-main.md), [the project rating](project_rating_stat.md) and [the project statistics](project-statistic.md).
 
 To edit project parameters, click ![](../_images/location-job/project/edit-project.svg) in the list of projects or  on the project page.
 {% note warning %}
 
-If you edit a [required field](incoming.md#required), the changes apply only to new [pools](pool-main.md). Existing [pools](../../glossary.md#pool-ru) will continue using the previous version of the project.
+If you edit a [required field](incoming.md#required), the changes apply only to new [pools](pool-main.md). Existing [pools](../../glossary.md#pool) will continue using the previous version of the project.
 
 {% endnote %}
 
@@ -13,7 +13,7 @@ If you edit a [required field](incoming.md#required), the changes apply only to 
 
 #### Name to show Tolokers
 
-[Project](../../glossary.md#project-ru) name. You will see it on your **Projects** page.
+[Project](../../glossary.md#project) name. You will see it on your **Projects** page.
 
 #### Description for Tolokers
 
@@ -29,7 +29,7 @@ You can make notes here that only you as a requester need to know about.
 
 #### Editor
 
-In this block, you need to create the [task interface](../../glossary.md#task-interface-ru) for users. You can do it manually (using HTML/CSS/JS) or using [Template Builder]({{ tb-quickstart }}).
+In this block, you need to create the [task interface](../../glossary.md#task-interface) for users. You can do it manually (using HTML/CSS/JS) or using [Template Builder]({{ tb-quickstart }}).
 
 To see an example of task display, click **Task preview**.
 

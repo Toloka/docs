@@ -136,11 +136,11 @@ In these instructions, you'll create a task in which Tolokers will search for da
     ```html
     <!-- Buttons to go to the company's website and search for the company's name in Yandex -->
     <div class="left">
-    <div class="title">{{title}}
+    <div class="title">not_var{{title}}
     </div>
     <div class="site-buttons">
     {{button label="Go to site" action=false href=url}}
-    <a href="https://yandex.ru/search/?text={{title}}" target="_blank" class="btn_ya">Search Yandex</a>
+    <a href="https://yandex.ru/search/?text=not_var{{title}}" target="_blank" class="btn_ya">Search Yandex</a>
     </div>
     <!-- Fields for phone numbers and email addresses. The data format is checked using regular expressions. The expression is written in the "Pattern" parameter of the "phone" and "email" output fields. -->
     <div class="output-fields">
@@ -384,7 +384,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. Find the {% if locale == "en-com" %}**Audience presets**{% endif %} block in the list and choose the {% if locale == "en-com" %}**Russian speaking users**{% endif %} set of filters.
 
-    1. Assign a [skill](../../glossary.md#skill-ru) to Tolokers who participate in the project to search for information online. This ensures that completed assignments are only checked by Tolokers without a skill, meaning those who haven't completed any tasks in this project.
+    1. Assign a [skill](../../glossary.md#skill) to Tolokers who participate in the project to search for information online. This ensures that completed assignments are only checked by Tolokers without a skill, meaning those who haven't completed any tasks in this project.
 
     Click {% if locale == "en-com" %}**+Add skill**{% endif %} and specify the skill name, such as `Search for information`.
 
@@ -404,7 +404,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     Learn more about how to set a [fair price](dynamic-pricing.md#section_wb1_lhl_vlb).
 
-1. [Quality control rules](../../glossary.md#quality-control-ru) allow you to filter out careless Tolokers.
+1. [Quality control rules](../../glossary.md#quality-control) allow you to filter out careless Tolokers.
 
     #### For a project with an overlap greater than one
 
@@ -451,7 +451,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     #### What is non-automatic acceptance (assignment review)?
 
-    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers-ru) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
     In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
 
@@ -488,7 +488,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Upload tasks {#upload-file}
  {% if locale == "en-com" %}
-Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 {% endif %}
 1. On the pool page, click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can also download a sample file.
 
@@ -510,7 +510,7 @@ Download the sample upload file. You can find it on the pool page. There are lin
 
     1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
 
-    1. Create a [control task](../../glossary.md#control-task-ru).
+    1. Create a [control task](../../glossary.md#control-task).
 
     1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
 

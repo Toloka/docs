@@ -2,21 +2,21 @@
 
 Using crowdsourcing can be challenging. It's difficult to get it right when launching your first project. In this section, you will learn what mistakes requesters make most often and how to avoid or fix them.
 
-Depending on the stage of using Toloka, requester mistakes can be related to: project design, task interface, uploading tasks, or setting up [quality control](../../glossary.md#quality-control-ru).
+Depending on the stage of using Toloka, requester mistakes can be related to: project design, task interface, uploading tasks, or setting up [quality control](../../glossary.md#quality-control).
 
 
 ## Mistakes related to project architecture {#mistakes-architecture}
 
 - No decomposition: the requester creates a large task without dividing it into projects and expects Tolokers to infer final conclusions.
 - The project instructions are long and complicated.
-- High entry threshold: at the beginning of the project, there is complex [training](../../glossary.md#training-pool-ru) and strict selection of Tolokers.
+- High entry threshold: at the beginning of the project, there is complex [training](../../glossary.md#training-pool) and strict selection of Tolokers.
 
-#### Solutions
+{% cut "Solutions" %}
 
 #### Decompose tasks
 
 - Vertical decomposition: divide tasks into several projects.
-- Horizontal decomposition: use [non-automatic acceptance](../../glossary.md#left-off-acceptance-ru) with verification by other Tolokers.
+- Horizontal decomposition: use [non-automatic acceptance](../../glossary.md#left-off-acceptance) with verification by other Tolokers.
 - For greater efficiency, combine both methods.
 
     Example: in the first project, Tolokers identify the class of objects in an image, and in the second project, they select areas that have these objects. Other Tolokers check if their responses are correct.
@@ -36,6 +36,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 [Learn more](instruction.md) about how to write clear instructions.
 
+{% endcut %}
 
 ## Errors related to the task interface {#interface-mistakes}
 
@@ -43,11 +44,11 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 - Inconvenient interface: too many questions or unnecessary elements, empty spaces, non-obvious task design, or instructions inside the interface.
 - The Toloker's actions are not checked: users can submit incorrectly filled or empty output data fields for verification or they can submit a response with no video or audio in media content tasks.
 
-#### Solutions
+{% cut "Solutions" %}
 
 #### Check the tasks before launching your project
 
-- Create tasks in the [Sandbox](../../glossary.md#sandbox-ru) and try to do them yourself.
+- Create tasks in the [Sandbox](../../glossary.md#sandbox) and try to do them yourself.
 - Launch the project for a limited audience of Tolokers and analyze their feedback.
 
 #### Develop a user-friendly interface
@@ -80,32 +81,34 @@ You can try creating a task interface in the [Template Builder]({{ tb-quickstart
 
     If you use links to external resources, make sure the Toloker followed them.
 
+{% endcut %}
 
 ## Mistakes related to uploading tasks {#loading-tasks-mistakes}
 
 - Incorrect format, encoding, or structure of the file with tasks.
 - Too many tasks on a page, which reduces the quality of task completion.
-- Incorrect distribution of [control tasks](../../glossary.md#control-task-ru).
+- Incorrect distribution of [control tasks](../../glossary.md#control-task).
 
-#### Solutions
+{% cut "Solutions" %}
 
-- Use the correct [file](../../glossary.md#tsv-file-definition-ru) format and UTF8 encoding.
+- Use the correct [file](../../glossary.md#tsv-file-definition) format and UTF8 encoding.
 - Use file templates. You can find them on the pool page.
 - Place tasks so that it takes no more than 5 minutes, preferably 1-2 minutes, to complete a single task suite. You can usually place 20-40 simple tasks, 5-10 tasks of medium difficulty, or 1-2 complex tasks on a single page.
-- Use [smart mixing](../../glossary.md#smart-mixing-ru). The algorithm will distribute training, control tasks, and general tasks across the page on its own.
+- Use [smart mixing](../../glossary.md#smart-mixing). The algorithm will distribute training, control tasks, and general tasks across the page on its own.
 - Check the tasks in the pool preview. Make sure they are displayed correctly and it doesn't take too long to complete a single task suite.
 
+{% endcut %}
 
 ## Mistakes in quality control settings {#quality-control-mistakes}
 
 - There are no Toloker filters and tasks are available even to users who can't complete them.
-- [Quality control rules](../../glossary.md#quality-control-rules-ru) are not used, or they are configured incorrectly.
+- [Quality control rules](../../glossary.md#quality-control-rules) are not used, or they are configured incorrectly.
 
-#### Solutions
+{% cut "Solutions" %}
 
 #### Select Tolokers
 
-Using [filters](../../glossary.md#filtering-ru), you can filter out Tolokers who are not fit for your tasks.
+Using [filters](../../glossary.md#filtering), you can filter out Tolokers who are not fit for your tasks.
 
 - Use targeting by language and region. Toloka users are located in different countries.
 - Select users based on their profile data, device specifications, or skills.
@@ -122,7 +125,7 @@ Using [filters](../../glossary.md#filtering-ru), you can filter out Tolokers who
     [Learn more](control.md) about quality control rules.
 
 - Choose and combine the rules depending on the content of your project. See examples of how to choose quality control rules in the [tutorials for popular tasks](usecases.md).
-- Specify the reason for [banning Tolokers](../../glossary.md#banned-worker-ru) (it is only visible to you) and the reason for rejecting tasks (the Tolokers will see it).
+- Specify the reason for [banning Tolokers](../../glossary.md#banned-worker) (it is only visible to you) and the reason for rejecting tasks (the Tolokers will see it).
 
 #### Set up quality control rules
 
@@ -130,25 +133,28 @@ Using [filters](../../glossary.md#filtering-ru), you can filter out Tolokers who
 
     Let's say a pool has an overlap of 3, and the **Majority vote** quality control rule says that 5 responses to a task should be considered the majority. With an overlap of 3, the number of responses required to estimate the majority vote will never be achieved.
 
-- Check whether the rule works as you intended. To do this, run a small pool with sample data or practice in the [Sandbox](../../glossary.md#sandbox-ru).
+- Check whether the rule works as you intended. To do this, run a small pool with sample data or practice in the [Sandbox](../../glossary.md#sandbox).
 - See examples of settings on the pages from the [list](control.md) of quality control rules.
 
+{% endcut %}
 
 ## Examples of problems {#examples-of-errors}
 
-#### New users aren't joining the project
+### New users aren't joining the project
 
 #### Reason
 The project has a pool that can only be accessed through [training](train.md), but the training itself is closed.
 
-#### Solutions
+{% cut "Solutions" %}
 
 - If you disabled the training on purpose or you plan to open it periodically because you don't need a large flow of users, then everything is fine.
-- When labeling has stopped for the project and you are no longer selecting users for the [exam pool](../../glossary.md#exam-ru), just close it.
+- When labeling has stopped for the project and you are no longer selecting users for the [exam pool](../../glossary.md#exam), just close it.
 - If you don't need regular labeling and you don't want users to go through training for no reason, close the pool that the training is associated with.
 - If you didn't plan to close the training or didn't know that the training should be open, make the necessary changes to the project settings.
 
-#### Tolokers are leaving the project
+{% endcut %}
+
+### Tolokers are leaving the project
 
 #### Reasons
 
@@ -158,13 +164,14 @@ The project has a pool that can only be accessed through [training](train.md), b
 - The instructions are complicated and confusing.
 - The tasks are not displayed or are displayed incorrectly.
 
-#### Solutions
+{% cut "Solutions" %}
 
 - Reread the [Requester Agreement]({{ customeragreement }}) to make sure that your project meets the requirements.
 - Decompose the task.
 - Rewrite the instructions to make them clear and easy to understand.
 - Try to complete your task in the pool preview, or even better, in the Sandbox. Make sure everything is working correctly.
 
+{% endcut %}
 
 See also:
 

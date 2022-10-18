@@ -19,7 +19,9 @@ Task list base class builder.
 Parameters:
 
 - `options.assignment` — `Assignment` task list model.
-- `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data-ru) and the task interface.
+
+- `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data) and the task interface.
+
 - `options.workspaceOptions` — Toloker's workspace initialization parameters.
 
 #### destroy()
@@ -31,6 +33,7 @@ Calls [`TaskSuite.destroy()`](tasksuite.md#destroy), removes all template elemen
 Hotkey handler initializer:
 
 - Resets all hotkeys ([`hotkeys.reset`](services.md#reset)).
+
 - Calls [`submit()`](#Submit) when the Enter key is pressed.
 
 #### getId()
@@ -41,7 +44,7 @@ Returns `assignmentId` as a string or `undefined` if you are debugging the task 
 
 Returns an object with a set of parameters passed to the `constructor()` method during initialization.
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 // getting specifications for all required fields:
@@ -51,11 +54,13 @@ let outputSpec = this.getOptions().specs.output_spec,
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
 
+{% endcut %}
+
 #### getSandboxChannel()
 
 Returns the link to an active messaging channel between the parent page and the task frame. If there is no channel, the method creates it.
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 // subscribe to all messages and show them
@@ -64,6 +69,8 @@ this.getSandboxChannel().on('*', (name, message) => console.log(message));
 // there is also a separate service for this TaskInterface
 this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 ```
+
+{% endcut %}
 
 #### getTaskSuite()
 
@@ -80,9 +87,13 @@ Returns an object with the Toloker's workspace settings.
 The most important settings:
 
 - `agent` — The value is `FRONTEND` for full task versions, `ANDROID` for the Android app, and so forth.
+
 - `isReadOnly` — "Read-only" mode flag (for example, for viewing the history of completed tasks).
+
 - `isReviewMode` — Review mode flag (for example, assignment review). This setting and `isReadOnly` are useful if you want to do something like change the template layout in history view mode.
+
 - `language` — A two-letter code of the language selected by the Toloker in Toloka settings. It's useful when you want to create multilingual templates.
+
 - `origin` — Parent page FQDN.
 
 #### pause()
@@ -95,14 +106,14 @@ Collects answers to all tasks ([`TolokaTaskSuite.getSolutions()`](tasksuite.md#g
 
 - `strategy` — A function that sends a message about sending results (`assignment:submit`), a response array, and an `assignmentId` to the parent page.
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 provideSolutions(strategy = function(solutions) {
         this.getSandboxChannel().triggerOut('assignment:submit', { solutions, assignmentId: this.getId() });
     }, errorCallback = function(errors) {
         //do nothing by default
-    }}) {
+    }) {
         const solutions = this.getTaskSuite().getSolutions();
 
         Promise.resolve(this.getTaskSuite().validate(solutions))
@@ -117,11 +128,14 @@ provideSolutions(strategy = function(solutions) {
     }
 ```
 
+{% endcut %}
+
 #### resume()
 
 Continues task execution, calls `onResume` and [`start`](#Start).
 
 #### skip()
+
 Lets you skip the current task, the same as clicking the **Skip** button.
 
 #### start()
@@ -132,7 +146,7 @@ Performs all the necessary actions when starting a task suite — adds the rende
 
 Collects, validates and sends completed tasks by calling [`provideSolutions`](#ProvideSolutions).
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 // in some scenarios, you might need to set delayed sending
@@ -140,5 +154,7 @@ Collects, validates and sends completed tasks by calling [`provideSolutions`](#P
 // for example, from TolokaTask
 this.getDOMElement().querySelector('.my_submit_button').addEventListener('click', (event) => this.getAssignment().submit());
 ```
+
+{% endcut %}
 
 {% include [contact-support](../../_includes/contact-support-help.md) %}

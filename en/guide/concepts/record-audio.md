@@ -149,7 +149,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Upload tasks {#tasks_upload}
  {% if locale == "en-com" %}
-Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 {% endif %}
 1. Click **Upload**. In the window that opens, you can also download a sample file.
 1. Add input data in it. The header of the input data column contains the word `INPUT`. Put the text to read outloud in the `INPUT:phrase` column and remove the other columns.

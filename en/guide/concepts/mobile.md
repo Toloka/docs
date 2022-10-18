@@ -56,7 +56,7 @@ Add the following code to the **CSS** block:
 }
 ```
 
-This code changes the [task interface](../../glossary.md#task-interface-ru) for devices with the screen width of less than 800 pixels:
+This code changes the [task interface](../../glossary.md#task-interface) for devices with the screen width of less than 800 pixels:
 - Accommodates all interface elements on the smartphone screen.
 - Makes sure that the hints don't go beyond the screen.
 - Removes keyboard shortcuts.
@@ -112,7 +112,7 @@ Tasks in pools will automatically be available in the web version of Toloka and 
 ## What's next {#what-next}
 
 - [Create a task pool](pool-main.md) in the project.
-- Learn more about how to set up a [project](../../glossary.md#project-ru):
+- Learn more about how to set up a [project](../../glossary.md#project):
     - [Writing instructions](instruction.md).
     - [Input and output data](incoming.md).
     - [Task interface](spec.md).

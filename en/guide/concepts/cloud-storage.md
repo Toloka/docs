@@ -1,6 +1,6 @@
 # Where to store files
 
-If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the [file with tasks](../../glossary.md#tsv-file-definition-ru).
+If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the [file with tasks](../../glossary.md#tsv-file-definition).
 
 If you need less than 10 images (for example, for task instructions or for testing a pool), use photo hosting. If you need to add more images, or audio and video files, use cloud storage.
 
@@ -77,38 +77,40 @@ In the[file with the tasks](pool_csv.md), paste the links into the column that m
 
 For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 
-#### Amazon S3
+{% list tabs %}
 
-```
-INPUT:image
-https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
-https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png
-```
+- Amazon S3
 
-#### Azure Blob Storage
+  ```
+  INPUT:image
+  https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
+  https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png
+  ```
 
-```
-INPUT:image
-https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image1.png
-https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
-```
+- Azure Blob Storage
 
-#### Google Cloud Storage
+  ```
+  INPUT:image
+  https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image1.png
+  https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
+  ```
 
-```
-INPUT:image
-https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
-https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
-```
+- Google Cloud Storage
 
-#### Yandex Object Storage
+  ```
+  INPUT:image
+  https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
+  https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
+  ```
 
-```
-INPUT:image
-https://storage.yandexcloud.net/my-bucket/1.jpg
-https://storage.yandexcloud.net/my-bucket/2.jpg
-```
+- Yandex Object Storage
 
+  ```
+  INPUT:image
+  https://storage.yandexcloud.net/my-bucket/1.jpg
+  https://storage.yandexcloud.net/my-bucket/2.jpg
+  ```
+{% endlist %}
 
 If these recommendations didn't help:
 

@@ -1,6 +1,6 @@
 # Decomposition of the task
 
-Before you start creating a [project](../../glossary.md#project-ru), consider dividing it into several smaller projects. This is called _decomposition_.
+Before you start creating a [project](../../glossary.md#project), consider dividing it into several smaller projects. This is called _decomposition_.
 
 For example, in the [Business information (example with decomposition)](data-collection.md) section, the task can be divided into four projects:
 - [Project 1. Does the photo contain a particular item?](contain_item.md) — This is data preparation (filtering).
@@ -12,15 +12,15 @@ For example, in the [Business information (example with decomposition)](data-col
 ## Benefits of decomposition {#concept_l2j_phn_nlb}
 
 We recommend that you think through the architecture of a solution consisting of several projects in advance, since projects can be linked:
-- The result from one project can be the [input](../../glossary.md#input-output-data-ru) for another project.
-- You can assign a skill to Tolokers in one project and filter Tolokers by this [skill](../../glossary.md#skill-ru) in another project.
+- The result from one project can be the [input](../../glossary.md#input-output-data) for another project.
+- You can assign a skill to Tolokers in one project and filter Tolokers by this [skill](../../glossary.md#skill) in another project.
 
 After you decompose your project:
 
 - Tasks become easier and faster to perform.
 - Tasks require fewer skills.
-- It is easier to set up shortcuts in the [task interface](../../glossary.md#task-interface-ru), which also speeds up the work of Tolokers.
-- Task [instructions](../../glossary.md#task-instruction-ru) will be shorter, clearer, and more Toloker-friendly.
+- It is easier to set up shortcuts in the [task interface](../../glossary.md#task-interface), which also speeds up the work of Tolokers.
+- Task [instructions](../../glossary.md#task-instruction) will be shorter, clearer, and more Toloker-friendly.
 - You can make tasks cheaper for the reasons above.
 - The quality of results is higher and easier to control.
 - It may be easier to design a few simple tasks than a single large task. You'll have less difficulty creating the interface and writing instructions.
@@ -39,18 +39,18 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 - Do I need to filter my data?
 
-    Let's say you want to create a task titled "Select road signs in an image", but you aren't sure that all images contain road signs. Create a separate project with a task titled "Are there road signs in an image?" to filter out unnecessary images.
+    Let's say you want to create a task titled “Select road signs in an image”, but you aren't sure that all images contain road signs. Create a separate project with a task titled “Are there road signs in an image?” to filter out unnecessary images.
 
     A data filtering task is usually cheap and can help you save on the most important task and simplify the task instructions and interface.
 
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled "Find similar products", enable [assignment review](../../glossary.md#left-off-acceptance-ru) in this project and create a separate project with the "Are these items similar?" task to review responses, reject incorrect responses, and avoid paying for them.
+- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#left-off-acceptance) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
     {% note warning %}
 
-    In the assignments review, specify the [review period](../../glossary.md#review-time-ru) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
+    In the assignments review, specify the [review period](../../glossary.md#review-time) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
 
     {% endnote %}
 
@@ -70,7 +70,7 @@ The easier the task, the better the results. If your task contains more than one
 
 - If some questions in the task need additional filtering.
 
-    For example, if you show a Toloker a photo of a cat and ask them to answer questions like "What color is the cat?" and "Is the cat asleep?", it's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
+    For example, if you show a Toloker a photo of a cat and ask them to answer questions like “What color is the cat?” and “Is the cat asleep?”, it's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
 
 - If different Toloker skills are required to answer different questions of the task.
 
@@ -100,7 +100,7 @@ Examples where decomposition is used:
 
 ## Troubleshooting {#problem-solution}
 
-#### I have a complex task. How do I break it down to get high-quality results?
+{% cut "I have a complex task. How do I break it down to get high-quality results?" %}
 
 If your task contains many objects of different types, you should break it down. For example, you can ask users to select numbers in the first project, doorways and windows in the second project, walls in the third project, and plumbing in the fourth project.
 
@@ -108,5 +108,6 @@ The simpler the task, the cheaper it is and the better the quality of the final 
 
 [Use](../tutorials/selection.md) the **Object selection in an image** template. You can open this template in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](t-components/image-annotation.md#annotation) (**Dropdown list** tab).
 
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

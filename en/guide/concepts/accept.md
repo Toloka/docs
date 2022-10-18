@@ -3,12 +3,16 @@
 You started a pool with [non-automatic acceptance](offline-accept.md), and the Tolokers completed all your tasks. What next?
 
 - Review the Tolokers' responses before the end of the **Review period** that you specified. At the end of the period, unchecked responses will be accepted automatically.
+
 - If a Toloker didn't complete the task well, reject their response.
+
 - The Toloker can challenge your decision by submitting an [appeal](#appeal).
 
 ## How do I review the tasks? {#acception}
 
-#### In the Toloka interface. This option is suitable for a small number of tasks.
+{% endcut %}
+
+{% cut "In the Toloka interface. This option is suitable for a small number of tasks." %}
 
 To accept or reject responses:
 
@@ -16,14 +20,15 @@ If you set [non-automatic acceptance](offline-accept.md) in the pool settings, y
 
 You can review assignments online or upload review results in a file.
 
+{% endcut %}
+
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
 
-
-#### Online review of one task.
+{% cut "Online review of one task." %}
 
 To accept or reject one task:
 
@@ -35,8 +40,9 @@ To accept or reject one task:
 
 1. Check the responses, click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment (specify the reason).
 
+{% endcut %}
 
-#### In the TSV file with the results. You will need the file to filter the results and process them programmatically.
+{% cut "In the TSV file with the results. You will need the file to filter the results and process them programmatically." %}
 
 {% note info %}
 
@@ -47,7 +53,6 @@ Example 1: The task uses JS code, and the response contains initially hidden fie
 Example 2: The task where you need to download files attached by the Toloker (for example, video or audio recordings) to check the responses.
 
 {% endnote %}
-
 
 To accept or reject responses:
 
@@ -60,6 +65,8 @@ To accept or reject responses:
     1. In {% if locale == "en-com" %}**Columns**{% endif %} leave only the {% if locale == "en-com" %}**assignment ID**{% endif %} option enabled.
 
     1. Disable the {% if locale == "en-com" %}**Separate assignments with empty row**{% endif %} option.
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
     1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
 
@@ -110,16 +117,17 @@ To accept or reject responses:
 
     - `ACCEPT:verdict` — Review result:
 
-    - "+" if you accept the responses.
+    - “+” if you accept the responses.
 
-    - "-" if you reject the responses.
+    - “-” if you reject the responses.
 
-    - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction-ru) wasn't followed).
+    - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction) wasn't followed).
 
-1. Upload the edited TSV file to Toloka ().
+1. Upload the edited TSV file to Toloka (**Import/ Export → Upload results**).
 
+{% endcut %}
 
-#### Delegate assignment review to other Tolokers.
+{% cut "Delegate assignment review to other Tolokers." %}
 
 Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements assignment review with the help of Tolokers.
 
@@ -129,6 +137,7 @@ Note that you can't change the task status if the task pool was [archived](pool-
 
 {% endnote %}
 
+{% endcut %}
 
 ## Appeal {#appeal}
 
@@ -137,6 +146,7 @@ Within 7 days after the review, the Toloker can challenge the result by [filing 
 You will receive a message from them that contains:
 
 - Toloker ID (`assignment_id`) in the subject.
+
 - Explanation of why responses should be accepted (optional).
 
 To consider an appeal, you need the response ID. If the Toloker wrote to you from the rejected response page, the response ID is automatically attached to their message as a link. If there is no ID, request it from the Toloker.
@@ -145,7 +155,6 @@ Do the following:
 
 - If the responses were mistakenly rejected, accept them.
 - Consider all appeals and respond on time — within 9 days (from the moment when the task was rejected).
-
 
 ## Acceptance procedure {#acceptance-procedure}
 
@@ -174,26 +183,36 @@ d) the result of the Task does not comply with the Instruction.
 
 ## Troubleshooting {#troubleshooting}
 
-#### Can I ask a Toloker to redo the task if they made mistakes in it?
+{% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers-ru) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
 
-#### Can I fix something in a completed task myself?
+{% endcut %}
+
+{% cut "Can I fix something in a completed task myself?" %}
 
 No, you can't fix anything in the task itself. However, you can do this manually in the results file.
 
-#### What should I do if I want to accept a completed task but the pool is already archived or the Toloker wrote to me after the allowed time?
+{% endcut %}
+
+{% cut "What should I do if I want to accept a completed task but the pool is already archived or the Toloker wrote to me after the allowed time?" %}
 
 Simply [give the Toloker a separate reward](bonus.md) without changing the task status. You can't change the task status in the pool in this case.
 
-#### What should I do if I rejected a task for a reason that isn't specified in the instructions?
+{% endcut %}
+
+{% cut "What should I do if I rejected a task for a reason that isn't specified in the instructions?" %}
 
 Accept the task and update the instructions. Otherwise, you violate the [**Requester Agreement**]({{ customeragreement }}) that requires you to clearly state the task requirements and the results expected from the Toloker.
 
-#### Can I reject part of the responses on the page and accept part of them?
+{% endcut %}
+
+{% cut "Can I reject part of the responses on the page and accept part of them?" %}
 
 No. For example, there are 10 tasks in a suite that costs $0.1, and the Toloker did 2 of them incorrectly.
 
 You can't accept the correct answers and pay for this part ($0.08). Response pages are accepted or rejected in their entirety.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

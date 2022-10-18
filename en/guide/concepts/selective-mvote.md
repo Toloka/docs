@@ -8,13 +8,15 @@ To set up **selective majority vote check**, you need a project, a pool, and a f
 
 This function allows you to set up [majority vote check](mvote.md) for only a portion of tasks.
 
-Depending on how many tasks the Toloker completed in `N` days, [overlap](../../glossary.md#overlap-ru) for certain tasks will be higher or lower than in the pool settings.
+Depending on how many tasks the Toloker completed in `N` days, [overlap](../../glossary.md#overlap) for certain tasks will be higher or lower than in the pool settings.
 
-#### How it works
+{% cut "How it works" %}
 
 #### Reducing overlap
 
 The pool's overlap is set to 4. To speed up pool completion and reduce data labeling costs, we'll reduce overlap for every third, fifth, and tenth task.
+
+![](../_images/location-job/selective.png)
 
 Toloker A completed 15 tasks in the last 10 days. Toloker B completed 30 tasks. Toloker C completed 60 tasks.
 
@@ -26,11 +28,15 @@ This way we can reduce overlap for more experienced Tolokers.
 
 The pool's overlap is set to 2. This project has experienced Tolokers who perform tasks well. We want to increase overlap for new Tolokers and check the experienced Tolokers' responses from time to time. To do this, we will increase overlap for every first, third, fifth, and tenth task.
 
+![](../_images/location-job/selective-plus.png)
+
 Toloker A completed 5 tasks in the last 10 days. Toloker B completed 15 tasks. Toloker C completed 25 tasks. Toloker E completed 40 tasks.
 
 For Toloker A, overlap will be set to 5 for every task; for Toloker B — for every third task; for Toloker C — for every fifth task; for Toloker E — for every tenth task.
 
 This way we will increase overlap for inexperienced users and save money on the responses of experienced Tolokers.
+
+{% endcut %}
 
 #### When to use
 
@@ -62,7 +68,11 @@ To add **selective majority vote check**:
 1. Set the intervals of completed tasks and the number of review tasks for each interval.
 
 
-#### Example
+{% cut "Example" %}
+
+![](../_images/location-job/selective.png)
+
+{% endcut %}
 
 ## Tips and recommendations {#help}
 

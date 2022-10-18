@@ -37,17 +37,18 @@ To delete or edit your translation, open the **Translations** page and click ![]
 
 ## Translation parameters {#param}
 
+#|
+|| Parameter | Overview ||
+|| **Source language** | The main language used in the project settings. ||
+||**Translations** | The languages you selected and their translation status.||
+||**Language** | All languages you selected and their current status.
 
-Parameter
- | Overview
------ | -----
-**Source language** | The main language used in the project settings.
-**Translations** | The languages you selected and their translation status.
-**Language** | All languages you selected and their current status.<br/><br/>- ![](../_images/other/project-active.png) — the language is active and will be displayed to users.<br/>    <br/>- ![](../_images/other/project-unactive.png) — the language is inactive. If you added a language but didn't fill in the fields, it is inactive and users don't see it.
-**Name and description** | The current translation status of the project name and description.
-**Instructions** | The current translation status of the project instructions.
-**Task interface** | The current translation status of the task interface.
-
+- ![](../_images/other/project-active.png) — the language is active and will be displayed to users.
+- ![](../_images/other/project-unactive.png) — the language is inactive. If you added a language but didn't fill in the fields, it is inactive and users don't see it.||
+||**Name and description** | The current translation status of the project name and description.||
+||**Instructions** | The current translation status of the project instructions.||
+||**Task interface** | The current translation status of the task interface.||
+|#
 
 ## Translating the task interface {#interface-translate}
 
@@ -62,10 +63,12 @@ Interface elements can only be translated in the Template Builder editor.
     - `helper.translate` — the translation component.
     - `key` — the value where the translation will be stored.
     For example, here is how the `label` property looks before:{% if locale == "en-com" %}
+
     ```json
     {  "type": "field.radio-group",  "label": "What is the cat's mood?"
     }
     ```
+
     {% endif %}
     Now, this is how the `label` property looks after adding the translation component and `radio-group-label` key:
 
@@ -78,6 +81,7 @@ Interface elements can only be translated in the Template Builder editor.
     }
     }
     ```
+
     You create the keys yourself, so give them names that indicate:
     - The component that it belongs to.
     - The value that it belongs to within the component.

@@ -206,10 +206,10 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ```html
 <div class="header">
     <div class="left caption"> {{button label="Go to site" href=left_link size="L"}}
-        <p class="url">{{left_link}}</p>
+        <p class="url">not_var{{left_link}}</p>
     </div>
     <div class="right caption">
-        <p class="url">{{right_link}}</p>
+        <p class="url">not_var{{right_link}}</p>
         {{button label="Go to site" href=right_link size="L"}}
     </div>
 </div> {{img src=image}}

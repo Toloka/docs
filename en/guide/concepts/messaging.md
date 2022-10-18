@@ -1,6 +1,6 @@
 # Communication
 
-Answer questions about tasks. Send out a group message if there are changes in the tasks (for example, the [instructions](../../glossary.md#task-instruction-ru) were edited, or [skill](../../glossary.md#skill-ru) calculation has changed).
+Answer questions about tasks. Send out a group message if there are changes in the tasks (for example, the [instructions](../../glossary.md#task-instruction) were edited, or [skill](../../glossary.md#skill) calculation has changed).
 
 {% note info %}
 
@@ -22,7 +22,7 @@ Recipients can be:
 - Selected Tolokers (specify the Toloker IDs separated with space).
 
 
-If there are changes in the [project](../../glossary.md#project-ru) (for example, you edited the instructions or changed skill calculation), notify all Tolokers who completed your tasks.
+If there are changes in the [project](../../glossary.md#project) (for example, you edited the instructions or changed skill calculation), notify all Tolokers who completed your tasks.
 
 1. [Set the skill level](nav-assign.md) for everyone who completed your tasks. The skill should be private.
 
@@ -34,12 +34,14 @@ You can receive copies of incoming messages by email. Go to the {% if locale == 
 
 ## Troubleshooting {#troubleshooting}
 
-#### How can I notify the Toloker of changes in the instructions?
+{% cut "How can I notify the Toloker of changes in the instructions?" %}
 
-Add the notification to the project description (for example: "Attention! The instructions changed") and send a message to all the people who completed your tasks. To do this:
+Add the notification to the project description (for example: “Attention! The instructions changed”) and send a message to all the people who completed your tasks. To do this:
 - Assign them a hidden skill, or use an existing [skill](nav-assign.md) linked to the pool.
 - Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
+
+{% endcut %}
 
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

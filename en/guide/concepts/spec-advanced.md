@@ -11,7 +11,7 @@ All aspects of the task's [lifecycle](#lifecycle) are controlled by three JavaSc
 
 - The [Assignment](js/assignment.md) class manages task progress, processes the task page's commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of [TaskSuite](js/tasksuite.md).
 
-- [TaskSuite](js/tasksuite.md) is a "wrapper class" for the [task suite](../../glossary.md#task-page-ru) interface. You can redefine this class, like if you need to display a shared element on the page.
+- [TaskSuite](js/tasksuite.md) is a “wrapper class” for the [task suite](../../glossary.md#task-suite) interface. You can redefine this class, like if you need to display a shared element on the page.
 
 - [Task](js/task.md) is responsible for rendering and validating an individual task. Typically, you should extend this class if a task needs to have non-standard behavior.
 
@@ -73,7 +73,7 @@ var ChildClass = extend(ParentClass, function() {
 
 The `Task` object is the task to perform.
  {% if locale == "en-com" %}
-```no-highlight
+```plaintext
 {
     "id": <string>,
     "input_values": {
@@ -90,12 +90,12 @@ Value
 
 ----- | -----
 `id` | Task ID.
-`input_values` | Task input data in the format `"<field ID>":"<field value>"`. Example:```no-highlight "input_values": {   "image": "http://images.com/1.png" } ```
+`input_values` | Task input data in the format `"<field ID>":"<field value>"`. Example:```plaintext "input_values": {   "image": "http://images.com/1.png" } ```
 
 
 The `Solution` object is the Toloker's response in the task.
  {% if locale == "en-com" %}
-```no-highlight
+```plaintext
 {
     "task_id": <string>,
     "output_values": {
@@ -112,12 +112,12 @@ Value
 
 ----- | -----
 `task_id` | Task ID.
-`output_values` | Responses in the format `"<input field ID>":"<value>"`. Example:```no-highlight "outputValues": {   "colour": "white",   "comment": "So white" } ```
+`output_values` | Responses in the format `"<input field ID>":"<value>"`. Example:```plaintext "outputValues": {   "colour": "white",   "comment": "So white" } ```
 
 
 The `SolutionValidationError` object is a validation error for the Toloker's response.
  {% if locale == "en-com" %}
-```no-highlight
+```plaintext
 {
     "task_id": string,
     "errors": {
@@ -137,6 +137,6 @@ Value
 
 ----- | -----
 `task_id` | Task ID.
-`errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`. Example:{% if locale == "en-com" %}```no-highlight "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
+`errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`. Example:{% if locale == "en-com" %}```plaintext "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

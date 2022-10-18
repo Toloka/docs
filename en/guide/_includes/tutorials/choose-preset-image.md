@@ -1,1 +1,1 @@
-[![Choose a preset. Step 1](../../_images/tutorials/image-classification/choose-preset-step-1.png =700x)](../../_images/tutorials/image-classification/choose-preset-step-1.png)
+[![Choose a preset. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/choose-preset-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/choose-preset-step-1.png)

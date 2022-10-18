@@ -12,14 +12,14 @@ When setting up a pool, you can use skills in [filters](filters.md) to:
 
 For example, you can select only those Tolokers whose skill is more than 66 or is missing:
 ![](../_images/other/qcr-control_example_filter.png)
-For [global skills](nav-cross-project.md), the restrictions of the `skill >80`type are used to select "Tolokers who completed similar projects 80% better on average than other Tolokers".
+For [global skills](nav-cross-project.md), the restrictions of the `skill >80`type are used to select “Tolokers who completed similar projects 80% better on average than other Tolokers”.
 
 ## Extra rewards {#awarding}
 
-To select Tolokers by skill and give them [rewards](../../glossary.md#bonus-ru):
+To select Tolokers by skill and give them [rewards](../../glossary.md#bonus):
 
 1. Go to the [Tolokers]({{ users }}) page.
-1. Select Tolokers using the skill filter. To do this, use [filters](../../glossary.md#filtering-ru):
+1. Select Tolokers using the skill filter. To do this, use [filters](../../glossary.md#filtering):
 
     1. Click **Add filter**.
     1. Scroll down and choose **Choose skill**.
@@ -41,8 +41,11 @@ To select Tolokers by skill and give them [rewards](../../glossary.md#bonus-ru):
 
     Before doing this, check the number of people who will receive the reward, and the total amount.
 
-    #### Example
+    {% cut "Example" %}
+	
     ![](../_images/bonus/bonus-group-performers-1.png)
+	
+	{% endcut %}
 
 
 ## Sending out messages {#messaging}
@@ -64,9 +67,9 @@ If necessary, you can:
 
 ## Troubleshooting {#troubleshooting}
 
-#### Should I create a skill for every pool?
+{% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 
@@ -81,13 +84,18 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
 
 
-#### Can I use a skill beyond a particular pool or project and apply it to other projects as well?
+{% endcut %}
+
+{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
 
-#### More than 500 Tolokers passed the training, but the training skill shows only 30.
+{% endcut %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+{% cut "More than 500 Tolokers passed the training, but the training skill shows only 30." %}
 
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -1,49 +1,58 @@
 # Add a button
 
-If you have multiple response buttons, you can add another one. For example, in the "Photos of product and price tag" task, you can add the response option "There is a different store at this address".
+If you have multiple response buttons, you can add another one. For example, in the “Photos of product and price tag” task, you can add the response option “There is a different store at this address”.
 
-Let's add a new button to the "Photos of product and price tag" task template, in which the Toloker will need to upload several photos and write a comment.
+Let's add a new button to the “Photos of product and price tag” task template, in which the Toloker will need to upload several photos and write a comment.
 
-#### What does it look like?
+{% cut "What does it look like?" %}
 
 Before:
+
 ![](../_images/tutorials/advanced-features/af-button-1.png)
+
 After:
+
 ![](../_images/tutorials/advanced-features/af-button-2.png)
+
 When the Toloker clicks the new button:
+
 ![](../_images/tutorials/advanced-features/af-button-3.png)
 
-For your convenience, here is ready-made code with the new button for the "Photos of product and price tag" template. Use this code for self-check. You can find our additions to the code by searching for the word "customization".
+{% endcut %}
 
-#### Ready-made code
+For your convenience, here is ready-made code with the new button for the “Photos of product and price tag” template. Use this code for self-check. You can find our additions to the code by searching for the word “customization”.
 
-#### HTML block
- {% if locale == "en-com" %}
+{% cut "Ready-made code" %}
+
+{% cut "HTML block" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{#if reviewMode}}
     <div class="header-review">
         <div class="header-review__title">
-            {{texts.task_title}}
+            not_var{{texts.task_title}}
         </div>
         <div class="header-review__buttons">
             {{#if (equal verdict "ok")}}
                 <div class="header-review__btn header-review__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_price")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_price.title}}
+                    not_var{{texts.btn_no_price.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_item")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_item.title}}
+                    not_var{{texts.btn_no_item.title}}
                 </div>
             {{/if}}
             {{#if (equal verdict "no_shop")}}
                 <div class="header-review__btn header-review__btn_red">
-                    {{texts.btn_no_shop.title}}
+                    not_var{{texts.btn_no_shop.title}}
                 </div>
             {{/if}}
 
@@ -51,16 +60,16 @@ For your convenience, here is ready-made code with the new button for the "Photo
             <!-- New verdict for the interface header -->
             {{#if (equal verdict "new_verdict")}}
               <div class="header-review__btn header-review__btn_red">
-                {{texts.btn_new.title}}
+                not_var{{texts.btn_new.title}}
               </div>
             {{/if}}
             <!-- customization fragment end -->
 
         </div>
     </div>
-{{else}}
+not_var{{else}}
     <div class="header">
-        {{texts.task_title}}
+        not_var{{texts.task_title}}
     </div>
 {{/if}}
 
@@ -69,50 +78,50 @@ For your convenience, here is ready-made code with the new button for the "Photo
         <div class="info__review">
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_name}}
+                    not_var{{texts.info_name}}
                 </div>
                 <div class="info__content">
-                    {{name}}
+                    not_var{{name}}
                 </div>
             </div>
             <div class="info__review-block">
                 <div class="info__title">
-                    {{texts.info_address}}
+                    not_var{{texts.info_address}}
                 </div>
                 <div class="info__content">
-                    {{address}}
+                    not_var{{address}}
                 </div>
             </div>
         </div>
-    {{else}}
+    not_var{{else}}
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_name}}
+                not_var{{texts.info_name}}
             </div>
             <div class="info__content">
-                {{name}}
+                not_var{{name}}
             </div>
         </div>
         <div class="info__block">
             <div class="info__title">
-                {{texts.info_address}}
+                not_var{{texts.info_address}}
             </div>
             <div class="info__content">
-                {{address}}
+                not_var{{address}}
             </div>
         </div>
     {{/if}}
     <div class="info__block">
         <div class="info__title">
-            {{texts.info_description}}
+            not_var{{texts.info_description}}
         </div>
         <div class="info__content">
-            {{product}}
+            not_var{{product}}
         </div>
     </div>
     <div class="info__block">
         <div class="info__content">
-            <a href={{image}} target="_blank" class="info__link">Link to product image</a>
+            <a href=not_var{{image}} target="_blank" class="info__link">Link to product image</a>
         </div>
     </div>
 </div>
@@ -125,13 +134,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
         {{#if (equal verdict "ok")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_1.title}}
+                    not_var{{texts.btn_ok.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -143,13 +152,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_2.title}}
+                    not_var{{texts.btn_ok.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_item}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -161,13 +170,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_ok.question_3.title}}
+                    not_var{{texts.btn_ok.question_3.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_price}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -181,13 +190,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
         {{#if (equal verdict "no_price")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_price.question_1.title}}
+                    not_var{{texts.btn_no_price.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -199,13 +208,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_price.question_2.title}}
+                    not_var{{texts.btn_no_price.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_item}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -219,13 +228,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
         {{#if (equal verdict "no_item")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_item.question_1.title}}
+                    not_var{{texts.btn_no_item.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_facade}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -237,13 +246,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_item.question_2.title}}
+                    not_var{{texts.btn_no_item.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_shelf}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -256,7 +265,7 @@ For your convenience, here is ready-made code with the new button for the "Photo
             {{#if comment}}
                 <div class="review__block">
                     <div class="review__title">
-                        {{texts.btn_no_item.question_3.title}}
+                        not_var{{texts.btn_no_item.question_3.title}}
                     </div>
                     <div class="review__comment">
                         {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -267,13 +276,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
         {{#if (equal verdict "no_shop")}}
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_shop.question_1.title}}
+                    not_var{{texts.btn_no_shop.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_around}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -285,13 +294,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_shop.question_2.title}}
+                    not_var{{texts.btn_no_shop.question_2.title}}
                 </div>
                 <div class="review__imgs-grid">
                     {{#each imgs_address}}
                         <div class="review__grid-item">
                             <div class="review__grid-inner">
-                                <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                                <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                                 <div class="review__rotate-panel">
                                     <span class="review__rotate review__rotate_left">←</span>
                                     <span class="review__rotate review__rotate_right">→</span>
@@ -303,7 +312,7 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="review__block">
                 <div class="review__title">
-                    {{texts.btn_no_shop.question_3.title}}
+                    not_var{{texts.btn_no_shop.question_3.title}}
                 </div>
                 <div class="review__comment">
                     {{field type="textarea" name="comment" width="100%" rows=5}}
@@ -315,13 +324,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
             {{#if (equal verdict "new_verdict")}}
               <div class="review__block">
                 <div class="review__title">
-                  {{texts.btn_new.question_1.title}}
+                  not_var{{texts.btn_new.question_1.title}}
                 </div>
                 <div class="review__imgs-grid">
                   {{#each imgs}}
                     <div class="review__grid-item">
                       <div class="review__grid-inner">
-                        <img src="{{this}}" class="review__img" data-rotationdeg="0">
+                        <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
                         <div class="review__rotate-panel">
                           <span class="review__rotate review__rotate_left">←</span>
                           <span class="review__rotate review__rotate_right">→</span>
@@ -333,7 +342,7 @@ For your convenience, here is ready-made code with the new button for the "Photo
               </div>
               <div class="review__block">
                 <div class="review__title">
-                  {{texts.btn_new.question_2.title}}
+                  not_var{{texts.btn_new.question_2.title}}
                 </div>
                 <div class="review__comment">
                   {{field type="textarea" name="new_comment" width="100%" rows=5}}
@@ -344,7 +353,7 @@ For your convenience, here is ready-made code with the new button for the "Photo
 
         {{/if}}
     </div>
-{{else}}
+not_var{{else}}
     <div class="main">
         <div class="main__title">
             Select a task completion option:
@@ -353,18 +362,18 @@ For your convenience, here is ready-made code with the new button for the "Photo
             <div class="main__popup main__popup_hidden">No answer selected</div>
             <div class="main__block">
                 <div class="main__btn main__btn_green">
-                    {{texts.btn_ok.title}}
+                    not_var{{texts.btn_ok.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_1.title}}
+                            not_var{{texts.btn_ok.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_1.description}}
+                            not_var{{texts.btn_ok.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true preview=true compress=false validation-show="top-left"}}
@@ -372,13 +381,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_2.title}}
+                            not_var{{texts.btn_ok.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_2.description}}
+                            not_var{{texts.btn_ok.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_item" camera=true preview=true compress=false validation-show="top-left"}}
@@ -386,13 +395,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_ok.question_3.title}}
+                            not_var{{texts.btn_ok.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_ok.question_3.description}}
+                            not_var{{texts.btn_ok.question_3.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_price" camera=true preview=true compress=false validation-show="top-left"}}
@@ -402,18 +411,18 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_price.title}}
+                    not_var{{texts.btn_no_price.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_price.question_1.title}}
+                            not_var{{texts.btn_no_price.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_price.question_1.description}}
+                            not_var{{texts.btn_no_price.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_price.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_price.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true validation-show="top-left"}}
@@ -421,13 +430,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_price.question_2.title}}
+                            not_var{{texts.btn_no_price.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_price.question_2.description}}
+                            not_var{{texts.btn_no_price.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_price.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_price.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_item" camera=true validation-show="top-left"}}
@@ -437,18 +446,18 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_item.title}}
+                    not_var{{texts.btn_no_item.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_item.question_1.title}}
+                            not_var{{texts.btn_no_item.question_1.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_item.question_1.description}}
+                            not_var{{texts.btn_no_item.question_1.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_item.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_item.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_facade" camera=true validation-show="top-left"}}
@@ -456,13 +465,13 @@ For your convenience, here is ready-made code with the new button for the "Photo
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_item.question_2.title}}
+                            not_var{{texts.btn_no_item.question_2.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_item.question_2.description}}
+                            not_var{{texts.btn_no_item.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_item.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_item.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_shelf" camera=true validation-show="top-left"}}
@@ -470,10 +479,10 @@ For your convenience, here is ready-made code with the new button for the "Photo
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title">
-                            {{texts.btn_no_item.question_3.title}}
+                            not_var{{texts.btn_no_item.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_item.question_3.description}}
+                            not_var{{texts.btn_no_item.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -483,12 +492,12 @@ For your convenience, here is ready-made code with the new button for the "Photo
             </div>
             <div class="main__block">
                 <div class="main__btn main__btn_red">
-                    {{texts.btn_no_shop.title}}
+                    not_var{{texts.btn_no_shop.title}}
                 </div>
                 <div class="main__content">
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_shop.question_1.description}}
+                            not_var{{texts.btn_no_shop.question_1.description}}
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_around" camera=true validation-show="top-left"}}
@@ -496,10 +505,10 @@ For your convenience, here is ready-made code with the new button for the "Photo
                     </div>
                     <div class="main__content-block">
                         <div class="main__text main__text_req">
-                            {{texts.btn_no_shop.question_2.description}}
+                            not_var{{texts.btn_no_shop.question_2.description}}
                         </div>
                         <div class="main__ex">
-                            <a href="{{texts.btn_no_shop.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                            <a href="not_var{{texts.btn_no_shop.question_2.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                         </div>
                         <div class="main__imgs">
                             {{field type="file-img" name="imgs_address" camera=true validation-show="top-left"}}
@@ -507,10 +516,10 @@ For your convenience, here is ready-made code with the new button for the "Photo
                     </div>
                     <div class="main__content-block">
                         <div class="main__content-title main__content-title_req">
-                            {{texts.btn_no_shop.question_3.title}}
+                            not_var{{texts.btn_no_shop.question_3.title}}
                         </div>
                         <div class="main__text">
-                            {{texts.btn_no_shop.question_3.description}}
+                            not_var{{texts.btn_no_shop.question_3.description}}
                         </div>
                         <div class="main__comment">
                             {{field type="textarea" name="comment" width="100%" rows=5 validation-show="top-left"}}
@@ -522,18 +531,18 @@ For your convenience, here is ready-made code with the new button for the "Photo
             <!-- customization fragment start -->
             <div class="main__block">
               <div class="main__btn main__btn_red">
-                {{texts.btn_new.title}}
+                not_var{{texts.btn_new.title}}
               </div>
               <div class="main__content">
                 <div class="main__content-block">
                   <div class="main__content-title main__content-title_req">
-                    {{texts.btn_new.question_1.title}}
+                    not_var{{texts.btn_new.question_1.title}}
                   </div>
                   <div class="main__text">
-                    {{texts.btn_new.question_1.description}}
+                    not_var{{texts.btn_new.question_1.description}}
                   </div>
                   <div class="main__ex">
-                    <a href="{{texts.btn_new.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+                    <a href="not_var{{texts.btn_new.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
                   </div>
                   <div class="main__imgs">
                     {{field type="file-img" name="imgs" camera=true validation-show="top-left"}}
@@ -541,10 +550,10 @@ For your convenience, here is ready-made code with the new button for the "Photo
                 </div>
                 <div class="main__content-block">
                   <div class="main__content-title main__content-title_req">
-                    {{texts.btn_new.question_2.title}}
+                    not_var{{texts.btn_new.question_2.title}}
                   </div>
                   <div class="main__text">
-                    {{texts.btn_new.question_2.description}}
+                    not_var{{texts.btn_new.question_2.description}}
                   </div>
                   <div class="main__comment">
                     {{field type="textarea" name="new_comment" width="100%" rows=5 validation-show="top-left"}}
@@ -558,9 +567,15 @@ For your convenience, here is ready-made code with the new button for the "Photo
     </div>
 {{/if}}
 ```
+
 {% endif %}
-#### JavaScript block
- {% if locale == "en-com" %}
+
+{% endcut %}
+
+{% cut "JavaScript block" %}
+
+{% if locale == "en-com" %}
+
 ```javascript
 var texts = {
     'task_title': 'Product and price tag photo',
@@ -648,7 +663,6 @@ var texts = {
     // customization fragment end
 
 };
-
 
 // Maximum distance of a Toloker from a store (in kilometers).
 var MAX_DISTANCE = 1;
@@ -1227,7 +1241,12 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
+
 {% endif %}
+
+{% endcut %}
+
+{% endcut %}
 
 #### Editing the output specification
 
@@ -1242,33 +1261,39 @@ Add 2 new fields to the output data specification:
 1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
     Each block looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
-    {% endif %}
-1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the "Photos of product and price tag" template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
-    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Add a new button with the name `btn_new`. To do this, paste the following code after the last `main__block` block. It will add a new button for uploading photos and writing a comment.
+    {% endif %}
+
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
+
+    Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Add a new button with the name `btn_new`. To do this, paste the following code after the last `main__block` block. It will add a new button for uploading photos and writing a comment.
+
     {% if locale == "en-com" %}
+
     ```html
     <div class="main__block">
     <div class="main__btn main__btn_red">
-    {{texts.btn_new.title}}
+    not_var{{texts.btn_new.title}}
     </div>
     <div class="main__content">
     <div class="main__content-block">
     <div class="main__content-title main__content-title_req">
-    {{texts.btn_new.question_1.title}}
+    not_var{{texts.btn_new.question_1.title}}
     </div>
     <div class="main__text">
-    {{texts.btn_new.question_1.description}}
+    not_var{{texts.btn_new.question_1.description}}
     </div>
     <div class="main__ex">
-    <a href="{{texts.btn_new.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
+    <a href="not_var{{texts.btn_new.question_1.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
     </div>
     <div class="main__imgs">
     {{field type="file-img" name="imgs" camera=true validation-show="top-left"}}
@@ -1276,10 +1301,10 @@ Add 2 new fields to the output data specification:
     </div>
     <div class="main__content-block">
     <div class="main__content-title main__content-title_req">
-    {{texts.btn_new.question_2.title}}
+    not_var{{texts.btn_new.question_2.title}}
     </div>
     <div class="main__text">
-    {{texts.btn_new.question_2.description}}
+    not_var{{texts.btn_new.question_2.description}}
     </div>
     <div class="main__comment">
     {{field type="textarea" name="new_comment" width="100%" rows=5 validation-show="top-left"}}
@@ -1288,12 +1313,16 @@ Add 2 new fields to the output data specification:
     </div>
     </div>
     ```
+
     {% endif %}
+
 1. Update the acceptance mode.
 
     The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
     <div class="review__block">
@@ -1303,25 +1332,29 @@ Add 2 new fields to the output data specification:
     ...
     {{/if}}
     ```
+
     {% endif %}
+
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
-    For example, in the "Photos of product and price tag" template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`. Let's add a `new_verdict` output value for the new button `btn_new`.
+    For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`. Let's add a `new_verdict` output value for the new button `btn_new`.
 
     Find the desired button by searching for the string `{{#if (equal verdict "response_button_value")}}` then find the `review`field where you want to add a new field and insert the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- New verdict with uploaded data -->
     {{#if (equal verdict "new_verdict")}}
     <div class="review__block">
     <div class="review__title">
-    {{texts.btn_new.question_1.title}}
+    not_var{{texts.btn_new.question_1.title}}
     </div>
     <div class="review__imgs-grid">
     {{#each imgs}}
     <div class="review__grid-item">
     <div class="review__grid-inner">
-    <img src="{{this}}" class="review__img" data-rotationdeg="0">
+    <img src="not_var{{this}}" class="review__img" data-rotationdeg="0">
     <div class="review__rotate-panel">
     <span class="review__rotate review__rotate_left">←</span>
     <span class="review__rotate review__rotate_right">→</span>
@@ -1333,7 +1366,7 @@ Add 2 new fields to the output data specification:
     </div>
     <div class="review__block">
     <div class="review__title">
-    {{texts.btn_new.question_2.title}}
+    not_var{{texts.btn_new.question_2.title}}
     </div>
     <div class="review__comment">
     {{field type="textarea" name="new_comment" width="100%" rows=5}}
@@ -1341,27 +1374,32 @@ Add 2 new fields to the output data specification:
     </div>
     {{/if}}
     ```
+
     {% endif %}
+
     Update the interface header in the acceptance mode. Find the `header-review` block that contains such blocks for each button:
 
-    ```
+    ```html
     {{#if (equal verdict "ok")}}
     <div class="header-review__btn header-review__btn_green">
-    {{texts.btn_ok.title}}
+    not_var{{texts.btn_ok.title}}
     </div>
     {{/if}}
     ```
 
     This block describes the `btn_ok` button and its output value `ok`. Paste the following code after the last button block:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- New verdict for the interface header -->
     {{#if (equal verdict "new_verdict")}}
     <div class="header-review__btn header-review__btn_red">
-    {{texts.btn_new.title}}
+    not_var{{texts.btn_new.title}}
     </div>
     {{/if}}
     ```
+
     {% endif %}
 
 #### Editing JS
@@ -1369,20 +1407,26 @@ Add 2 new fields to the output data specification:
 1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
     The elements are described as follows:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     'property': 'value'
     ```
+
     {% endif %}
+
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
 
-    Each button has a name for accessing its properties. For example, the buttons in the "Photos of product and price tag" template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`.
+    Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`.
 
-    For example, in the "Photos of product and price tag" template, the texts for the `btn_ok` button are located in the following code block:
+    For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     var texts = {
     //<common header text>
     'btn_ok': {
@@ -1398,9 +1442,13 @@ Add 2 new fields to the output data specification:
     }
     },
     ```
+
     {% endif %}
+
 1. To add the texts for the new `btn_new` button, put a comma after the curly bracket that closes the last button block and insert the following code:
+
     {% if locale == "en-com" %}
+
     ```javascript
     'btn_new': {
     'title': 'New button',
@@ -1415,29 +1463,37 @@ Add 2 new fields to the output data specification:
     }
     }
     ```
-    {% endif %}Change the values of the `title`, `description`, and `example_link_1` properties. The `title` property contains a title displayed above the field; the `description` property contains a question or a hint for Tolokers, and the `example_link_1` property contains a link to the example of an image.
-1. Find the `verdictsOut` variable. In the "Photos of product and price tag" template, it looks like this:
 
-    ```
+    {% endif %}
+
+    Change the values of the `title`, `description`, and `example_link_1` properties. The `title` property contains a title displayed above the field; the `description` property contains a question or a hint for Tolokers, and the `example_link_1` property contains a link to the example of an image.
+
+1. Find the `verdictsOut` variable. In the “Photos of product and price tag” template, it looks like this:
+
+    ```javascript
     var verdictsOut = ['ok', 'no_price', 'no_item', 'no_shop'];
     ```
 
     Add the `new_verdict` output value to the new button like this:
 
-    ```
+    ```javascript
     var verdictsOut = ['ok', 'no_price', 'no_item', 'no_shop', 'new_verdict'];
     ```
 
 1. Find the `getTemplateData` function. It contains several blocks that look like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     if (<field checking condition>) {
     ...
     <code for displaying the uploaded data>
     ...
     }
     ```
+
     {% endif %}
+
     Paste the following code after any of these blocks. It is used to send the photos uploaded by the Toloker to the input data. You need this to display the data in the acceptance mode:
 
     ```javascript
@@ -1451,9 +1507,11 @@ Add 2 new fields to the output data specification:
 
 1. Add validation.
 
-    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the "Photos of product and price tag" template, the code looks like this:
+    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     else if (solution.output_values.verdict === 'ok') {
     // code for checking the ok button fields
     if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
@@ -1477,11 +1535,14 @@ Add 2 new fields to the output data specification:
     } else if (solution.output_values.verdict === 'no_shop') {
     // code for checking the no_shop button fields
     }
-
     ```
+
     {% endif %}
+
     Paste the following code after the closing curly bracket with the verdict for the last button:
+
     {% if locale == "en-com" %}
+
     ```javascript
     else if (solution.output_values.verdict === 'new_verdict') {
     if (!solution.output_values.imgs || solution.output_values.imgs.length === 0) {
@@ -1495,6 +1556,7 @@ Add 2 new fields to the output data specification:
     }
     }
     ```
+
     {% endif %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
