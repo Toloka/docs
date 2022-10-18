@@ -6,21 +6,21 @@ Quality control rules allow you to get more accurate responses and restrict acce
 ## List of rules {#rules}
 
 - **To keep track of how often Tolokers make mistakes:**
-    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill-ru) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
+    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
     - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same task.
     - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected responses.
 
 - **To protect your project from robots and cheaters:**
-    - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-page-ru).
+    - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
     - [Captcha](captcha.md): Show a captcha from time to time to make sure tasks aren't completed by robots.
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
 - **To attract a variety of Tolokers:**
-    - [Earnings](income.md): Limit the amount each Toloker can earn in the [pool](../../glossary.md#pool-ru) per day.
+    - [Earnings](income.md): Limit the amount each Toloker can earn in the [pool](../../glossary.md#pool) per day.
     - [Submitted assignments](submitted-answers.md): Limit how many assignments each Toloker can submit in the pool per day.
 
 - **To allow recompletion of certain assignments:**
-    - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#submitted-answers-ru) to other Tolokers to redo them if the Toloker was banned.
+    - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#submitted-answers) to other Tolokers to redo them if the Toloker was banned.
     - [Processing of rejected and accepted assignments](reassessment-after-accepting.md): Send rejected assignments to other Tolokers to redo them.
 
 
@@ -72,7 +72,7 @@ You can configure quality control in the [pool](qa-pool-settings.md) and in the 
 
 {% cut "How do I set quality control in a pool correctly?" %}
 
-The settings for [quality control](../../glossary.md#quality-control-ru) rules depend on the type of tasks. General recommendations:
+The settings for [quality control](../../glossary.md#quality-control) rules depend on the type of tasks. General recommendations:
 
 - Always use one or more ways to control quality of answers.
 
@@ -82,13 +82,13 @@ The settings for [quality control](../../glossary.md#quality-control-ru) rules d
 
 - If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](dynamic-overlap.md) and [majority vote](mvote.md) check.
 
-- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote-ru) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task-ru) with artificial examples where the choice is evident.
+- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task) with artificial examples where the choice is evident.
 
 {% endcut %}
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 
@@ -136,7 +136,7 @@ No, this is incorrect. With these settings, each time a rule condition is met, t
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 {% endcut %}
 
@@ -310,7 +310,7 @@ Smart mixing is set up when you upload tasks to the pool. After creating a pool,
 
 {% cut "How are the correct responses to control questions counted?" %}
 
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task-ru) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
+The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
 As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
 
@@ -380,7 +380,7 @@ Then open your pools only to the Tolokers that have a certain skill: use [filter
 
 {% cut "Can I create two active training pools, one for practice and the other for admitting users to the main pool? In other words, one pool is for users to practice and the other pool tests them." %}
 
-Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool-ru) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
+Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool user requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
 
@@ -399,7 +399,7 @@ The **Recent control task responses to use** field is for the number of recent r
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
-- You've stopped the [main pool](../../glossary.md#training-pool-ru). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
+- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
 - Too many users are banned. Ease the quality control rules.

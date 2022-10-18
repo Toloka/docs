@@ -2,19 +2,26 @@
 
 Add new response options: checkboxes, radio buttons, and drop-down lists. Use a radio button or a drop-down list when you want Tolokers to choose one response option out of several suggested ones. Checkboxes let Tolokers select any combination of the suggested responses.
 
-#### See how it looks in the example of the “Photos of product and price tag” template
+{% cut "See how it looks in the example of the “Photos of product and price tag” template" %}
 
 Before:
+
 ![](../_images/tutorials/advanced-features/af-input-selector-1.png)
+
 After:
+
 ![](../_images/tutorials/advanced-features/af-input-selector-2.png)
+
+{% endcut %}
 
 For your convenience, here is the ready-made code for the “Photos of product and price tag” template, in which each of the fields is added to the first response button once. Use this code for self-check. You can find our additions to the code by searching for the word “customization”.
 
-#### Ready-made code
+{% cut "Ready-made code" %}
 
-#### HTML block
- {% if locale == "en-com" %}
+{% cut "HTML block" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -558,9 +565,15 @@ not_var{{else}}
     </div>
 {{/if}}
 ```
+
 {% endif %}
-#### JavaScript block
- {% if locale == "en-com" %}
+
+{% endcut %}
+
+{% cut "JavaScript block" %}
+
+{% if locale == "en-com" %}
+
 ```javascript
 var texts = {
     'task_title': 'Product and price tag photo',
@@ -648,7 +661,6 @@ var texts = {
         }
     }
 };
-
 
 // Maximum distance of a Toloker from a store (in kilometers).
 var MAX_DISTANCE = 1;
@@ -1214,7 +1226,12 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
+
 {% endif %}
+
+{% endcut %}
+
+{% endcut %}
 
 Now let's see how to add each field manually.
 
@@ -1235,14 +1252,18 @@ Add a field for each checkbox you need and give them unique names. For example, 
 1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
     Each block looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
+
     {% endif %}
+
 1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
@@ -1250,7 +1271,9 @@ Add a field for each checkbox you need and give them unique names. For example, 
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
     Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- checkbox -->
     <div class="main__content-block">
@@ -1265,15 +1288,21 @@ Add a field for each checkbox you need and give them unique names. For example, 
     </div>
     </div>
     ```
+
     {% endif %}
+
     In this code, a checkbox is added to the button with the name `btn_ok`. If you added a checkbox to another button, replace `btn_ok` with the relevant button's name.
 
     The checkboxes are listed in the`main__box` blocks as strings:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
     ```
+
     {% endif %}
+
     In the code above, one checkbox is added. The output value will be passed to the `checkbox_result` field that you added to the output specification.
 
     To add multiple checkboxes, paste the same strings in the code for each of the fields you added to the output specification. Change the value of the `name` parameter for each of the checkboxes to what you named them in the output specification. For example, if you added new fields for three checkboxes to the output specification, insert this string three times and then change the `"checkbox_result"` values in each line to what you named them in the specification.
@@ -1283,7 +1312,9 @@ Add a field for each checkbox you need and give them unique names. For example, 
 1. Update the acceptance mode.
 
     The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
+
     {% if locale == "en-com" %}
+
     ```html
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
@@ -1294,7 +1325,9 @@ Add a field for each checkbox you need and give them unique names. For example, 
     ...
     {{/if}}
     ```
+
     {% endif %}
+
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
     For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
@@ -1302,7 +1335,9 @@ Add a field for each checkbox you need and give them unique names. For example, 
     The `review__block` blocks contain a description of each field for this button.
 
     Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- checkbox -->
     <div class="review__block">
@@ -1314,32 +1349,41 @@ Add a field for each checkbox you need and give them unique names. For example, 
     </div>
     </div>
     ```
+
     {% endif %}
+
     In this code, a checkbox is added to the button with the name `btn_ok`. If you added a checkbox to another button, replace `btn_ok` with the relevant button's name.
 
     The checkboxes are listed in the `review__box` block as strings:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
     ```
+
     {% endif %}
+
     In the code above, one checkbox is added. The output value will be passed to the `checkbox_result` field that you added to the output specification.
 
     To add multiple checkboxes, paste the same strings in the code for each of the fields you added to the output specification. Change the value of the `name` parameter for each of the checkboxes to what you named them in the output specification. For example, if you added new fields for three checkboxes to the output specification, insert this string three times and then change the `"checkbox_result"` values in each line to what you named them in the specification.
 
     Change the value of the `label` parameter. It contains a caption displayed next to the checkbox.
 
-
 #### Editing JS
 
 1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
     The elements are described as follows:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     'property': 'value'
     ```
+
     {% endif %}
+
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
@@ -1347,7 +1391,9 @@ Add a field for each checkbox you need and give them unique names. For example, 
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
     For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
+
     {% if locale == "en-com" %}
+
     ```javascript
     var texts = {
     //<common header text>
@@ -1364,16 +1410,22 @@ Add a field for each checkbox you need and give them unique names. For example, 
     }
     },
     ```
+
     {% endif %}
+
 1. To add the texts for checkboxes, put a comma after the curly bracket that closes the last field and paste the following code:
+
     {% if locale == "en-com" %}
+
     ```javascript
     'question_new_checkbox': {
     'title': 'Checkbox',
     'description': 'Select an answer'
     }
     ```
+
     {% endif %}
+
     Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the group of checkboxes, and the `description` property contains a question for Tolokers.
 
 1. Validation.
@@ -1401,14 +1453,18 @@ Add a new field:
 1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
     Each block looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
+
     {% endif %}
+
 1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
@@ -1416,7 +1472,9 @@ Add a new field:
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
     Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- radio button -->
     <div class="main__content-block">
@@ -1432,16 +1490,22 @@ Add a new field:
     </div>
     </div>
     ```
+
     {% endif %}
+
     In this code, a radio button is added to the button with the name `btn_ok`. If you added a radio button to another button, change the name `btn_ok` to the right one.
 
     The radio buttons are listed in the `main__box` block as strings:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
     {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
     ```
+
     {% endif %}
+
     In the code above, a radio button with two elements is added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `radio _result` field that you added to the output specification.
 
     To add new elements, paste the same strings the required number of times and rename the values of `value` (output value) and `label` (caption for a radio button element).
@@ -1449,7 +1513,9 @@ Add a new field:
 1. Update the acceptance mode.
 
     The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
+
     {% if locale == "en-com" %}
+
     ```html
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
@@ -1460,7 +1526,9 @@ Add a new field:
     ...
     {{/if}}
     ```
+
     {% endif %}
+
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
     For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
@@ -1468,7 +1536,9 @@ Add a new field:
     The `review__block` blocks contain a description of each of the fields for this button.
 
     Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- radio button -->
     <div class="review__block">
@@ -1481,31 +1551,40 @@ Add a new field:
     </div>
     </div>
     ```
+
     {% endif %}
+
     In this code, a radio button is added to the button with the name `btn_ok`. If you added a radio button to another button, change the name `btn_ok` to the right one.
 
     The radio buttons are listed in the`review__box` block as strings:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
     {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
     ```
+
     {% endif %}
+
     In the code above, a radio button with two elements is added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `radio _result` field that you added to the output specification.
 
     To add new elements, paste the same strings the required number of times and rename the values of `value` (output value) and `label` (caption for a radio button element).
-
 
 #### Editing JS
 
 1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
     The elements are described as follows:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     'property': 'value'
     ```
+
     {% endif %}
+
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
@@ -1513,7 +1592,9 @@ Add a new field:
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
     For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
+
     {% if locale == "en-com" %}
+
     ```javascript
     var texts = {
     //<common header text>
@@ -1530,23 +1611,31 @@ Add a new field:
     }
     },
     ```
+
     {% endif %}
+
 1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
+
     {% if locale == "en-com" %}
+
     ```javascript
     'question_new_radio': {
     'title': 'Radio buttons',
     'description': 'Select an answer'
     }
     ```
+
     {% endif %}
+
     Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the group of radio buttons, and the `description` property contains a question for Tolokers.
 
 1. Add validation.
 
     Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {
     this.errors = this.addError('No answer selected', "verdict", this.errors);
     } else if (solution.output_values.verdict === 'ok') {
@@ -1573,24 +1662,33 @@ Add a new field:
     // code for checking the no_shop button fields
     }
     ```
+
     {% endif %}
+
     The response values for the buttons in this example, which are passed to the `verdict` output variable, have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
 
     Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     if (!solution... ) {
     // field validation code
     }
     ```
+
     {% endif %}
+
     add the following code:
+
     {% if locale == "en-com" %}
+
     ```javascript
     if (!solution.output_values.radio_result) {
     this.errors = this.addError('This is a required field', 'radio_result', this.errors);
     }
     ```
+
     {% endif %}
 
 #### Add a drop-down list
@@ -1608,14 +1706,18 @@ Add a new field:
 1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
     Each block looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
+
     {% endif %}
+
 1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
@@ -1623,7 +1725,9 @@ Add a new field:
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
     Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- drop-down list -->
     <div class="main__content-block">
@@ -1641,16 +1745,22 @@ Add a new field:
     </div>
     </div>
     ```
+
     {% endif %}
+
     In this code, a drop-down list is added to the button with the name `btn_ok`. If you added a drop-down list to another button, change the name `btn_ok` to the right one.
 
     The drop-down list elements are listed in the `main__box` block as strings:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{select_item value="Yes" text="Yes"}}
     {{select_item value="No" text="No"}}
     ```
+
     {% endif %}
+
     In the code above, only two drop-down list elements are added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `select_result` variable that you added to the output specification.
 
     To add new elements, paste the same strings the required number of times and rename the values of `value` (output value) and `text` (the text displayed in the drop-down list).
@@ -1658,8 +1768,10 @@ Add a new field:
 1. Update the acceptance mode.
 
     The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
     <div class="review__block">
@@ -1669,7 +1781,9 @@ Add a new field:
     ...
     {{/if}}
     ```
+
     {% endif %}
+
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
     For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
@@ -1677,7 +1791,9 @@ Add a new field:
     The `review__block` blocks contain a description of each of the fields for this button.
 
     Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- drop-down list -->
     <div class="review__block">
@@ -1692,22 +1808,27 @@ Add a new field:
     </div>
     </div>
     ```
+
     {% endif %}
+
     Change the name of the `btn_ok` button to the right one.
 
     If you added new elements to the drop-down list (`{{select_item value= ... }}` strings) at the previous step, then add the same strings to this code.
-
 
 #### Editing JS
 
 1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
     The elements are described as follows:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     'property': 'value'
     ```
+
     {% endif %}
+
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
@@ -1715,7 +1836,9 @@ Add a new field:
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
     For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
+
     {% if locale == "en-com" %}
+
     ```javascript
     var texts = {
     //<common header text>
@@ -1732,23 +1855,31 @@ Add a new field:
     }
     },
     ```
+
     {% endif %}
+
 1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     'question_new_select': {
     'title': 'Drop-down list',
     'description': 'Select an answer'
     }
     ```
+
     {% endif %}
+
     Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the drop-down list, and the `description` property contains a question for Tolokers.
 
 1. Add validation.
 
     Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     else if (solution.output_values.verdict === 'ok') {
     // code for checking the ok button fields
     if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
@@ -1772,26 +1903,34 @@ Add a new field:
     } else if (solution.output_values.verdict === 'no_shop') {
     // code for checking the no_shop button fields
     }
-
     ```
+
     {% endif %}
+
     The response values for the buttons that are passed to the `verdict` output field have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
 
     Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     if (!solution... ) {
     // field validation code
     }
     ```
+
     {% endif %}
+
     add the following code:
+
     {% if locale == "en-com" %}
+
     ```javascript
     if (!solution.output_values.select_result) {
     this.errors = this.addError('This is a required field', 'select_result', this.errors);
     }
     ```
+
     {% endif %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

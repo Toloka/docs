@@ -26,7 +26,7 @@ You can merge all the projects into one and use **History size** in the quality 
 You can use **Aggregation by skill**, but you'll need to list all the possible values, which is probably not the best choice. Perhaps you'll find [another method of aggregation](../concepts/result-aggregation.md) helpful.
 
 #### I created a project and a pool, but the Next button doesn't work or the preview shows a blank screen.
-Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface-ru), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
+Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
 #### Are there any easy ways to assign a certain user a skill in Toloka, even if the Toloker didn't do any tasks (like I can do in the Sandbox)?
 
 In the main Toloka version, you can only assign a skill to users who have completed at least one of your tasks. There is no option to assign a skill to an arbitrary user. To limit the audience of users who will see your project, use [filters](../concepts/filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
@@ -100,7 +100,7 @@ You can do that using the [Control tasks](../concepts/goldenset.md) rule.
 
 #### How do I set quality control in a pool correctly?
 
-The settings for [quality control](../../glossary.md#quality-control-ru) rules depend on the type of tasks. General recommendations:
+The settings for [quality control](../../glossary.md#quality-control) rules depend on the type of tasks. General recommendations:
 
 - Always use one or more ways to control quality of answers.
 
@@ -110,7 +110,7 @@ The settings for [quality control](../../glossary.md#quality-control-ru) rules d
 
 - If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](../concepts/accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](../concepts/dynamic-overlap.md) and [majority vote](../concepts/mvote.md) check.
 
-- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote-ru) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task-ru) with artificial examples where the choice is evident.
+- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task) with artificial examples where the choice is evident.
 
 
 #### How many control tasks do I need to add?
@@ -165,13 +165,13 @@ For open pools, we don't recommend creating control tasks from other types of ta
 
 #### How are the correct responses to control questions counted?
 
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task-ru) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
+The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
 As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control and training task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
 
 #### Should I create a skill for every pool?
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 
@@ -254,7 +254,7 @@ But you can do it yourself if you want. When downloading the results, select the
 
 #### Can I create two active training pools, one for practice and the other for admitting users to the main pool? In other words, one pool is for users to practice and the other pool tests them.
 
-Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool-ru) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
+Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool user requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
 
@@ -335,7 +335,7 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 #### Why has the speed of pool completion dropped?
 
 Possible reasons:
-- You've stopped the [main pool](../../glossary.md#training-pool-ru). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
+- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
 - Too many users are banned. Ease the quality control rules.
@@ -356,7 +356,7 @@ Possible reasons:
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 #### Can I change overlap after the pool is started?
 

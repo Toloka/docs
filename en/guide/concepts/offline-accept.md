@@ -1,13 +1,13 @@
 # Non-automatic acceptance
 
-Non-automatic acceptance is a [pool](../../glossary.md#pool-ru) setting that allows you to check responses and not pay for poorly completed tasks.
+Non-automatic acceptance is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
 
 You can find the [Review methods](accept.md#acception) in the  section.
 
 
 ## How does it work? {#how-it-works}
 
-You set up assignment review for your pool in the [project](../../glossary.md#project-ru).
+You set up assignment review for your pool in the [project](../../glossary.md#project).
 
 As the Tolokers complete the tasks, their responses come for review. You can accept or reject a Toloker's response. If you reject responses, the Toloker can:
 
@@ -29,7 +29,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
     {% cut "Example" %}
 
     If the task is to label 20 pictures according to the instructions, and the Toloker labeled 18 of them correctly, and 2 were incorrect, the result is considered incorrect to a small extent, or mostly correct.
-	
+
 	{% endcut %}
 
 - Explain the mistake to the Toloker so they can learn and do better next time.
@@ -48,7 +48,7 @@ You can review responses manually or with the help of Tolokers by posting [a sep
 
 - If **you reject responses, assignments aren't sent automatically** to other Tolokers.
 - You can't **reject (or accept)** one response on the page — **only the entire page** with all responses on it.
-- If [the Toloker is banned](../../glossary.md#banned-worker-ru) by [the quality control rules](../../glossary.md#quality-control-rules-ru), their responses still need to be checked.
+- If [the Toloker is banned](../../glossary.md#banned-worker) by [the quality control rules](../../glossary.md#quality-control-rules), their responses still need to be checked.
 
 {% note info %}
 

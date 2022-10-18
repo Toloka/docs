@@ -46,52 +46,52 @@ The HTML markup supports basic tags:
 {% cut "Full list of supported tags" %}
 
 #|
-|| a  
-b  
-big  
-blockquote  
-br  
-center  
-cite  
+|| a
+b
+big
+blockquote
+br
+center
+cite
 code |
-col  
-colgroup  
-dd  
-div  
-dl  
-dt  
-em  
+col
+colgroup
+dd
+div
+dl
+dt
+em
 font |
-h1  
-h2  
-h3  
-h4  
-h5  
-h6  
-hr  
+h1
+h2
+h3
+h4
+h5
+h6
+hr
 i |
-img  
-li  
-map  
-ol  
-p  
-pre  
-samp  
+img
+li
+map
+ol
+p
+pre
+samp
 small |
-span  
-strike  
-strong  
-style  
-sub  
-sup  
-table  
+span
+strike
+strong
+style
+sub
+sup
+table
 tbody |
-td  
-tfoot  
-th  
-thead  
-tr  
-u  
+td
+tfoot
+th
+thead
+tr
+u
 ul ||
 |#
 
@@ -109,7 +109,7 @@ You can't insert the following in the instructions:
 
     {% endnote %}
 
-Tags that are not supported are removed from the instructions when saving the [project](../../glossary.md#project-ru).
+Tags that are not supported are removed from the instructions when saving the [project](../../glossary.md#project).
 
 ## Editing the instructions {#edit}
 

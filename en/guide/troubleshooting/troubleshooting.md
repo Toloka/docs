@@ -84,11 +84,11 @@ Create and run a task. It will appear in the list of tasks for your trusted user
 
 Make sure that:
 
-1. The [pool](../../glossary.md#pool-ru) is started.
+1. The [pool](../../glossary.md#pool) is started.
 1. The Toloker is added as a trusted user.
 1. The trusted user is registered in the sandbox as a Toloker.
 1. The trusted user didn't use social networks when registering.
-1. Your trusted Toloker matches the [filters](../../glossary.md#filtering-ru) you set.
+1. Your trusted Toloker matches the [filters](../../glossary.md#filtering) you set.
 
 #### How do I see my pool through the eyes of a Toloker?
 
@@ -121,7 +121,7 @@ To download only the control tasks (if you completed them in the interface), go 
 
 #### Is it possible to use the same account for the Sandbox and the public Toloka version?
 
-No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox-ru), [register](../concepts/access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
+No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox), [register](../concepts/access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
 
 #### I can't add a trusted user.
 
@@ -466,7 +466,7 @@ You can merge all the projects into one and use **History size** in the quality 
 You can use **Aggregation by skill**, but you'll need to list all the possible values, which is probably not the best choice. Perhaps you'll find [another method of aggregation](../concepts/result-aggregation.md) helpful.
 
 #### I created a project and a pool, but the Next button doesn't work or the preview shows a blank screen.
-Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface-ru), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
+Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
 #### Are there any easy ways to assign a certain user a skill in Toloka, even if the Toloker didn't do any tasks (like I can do in the Sandbox)?
 
 In the main Toloka version, you can only assign a skill to users who have completed at least one of your tasks. There is no option to assign a skill to an arbitrary user. To limit the audience of users who will see your project, use [filters](../concepts/filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
@@ -540,7 +540,7 @@ You can do that using the [Control tasks](../concepts/goldenset.md) rule.
 
 #### How do I set quality control in a pool correctly?
 
-The settings for [quality control](../../glossary.md#quality-control-ru) rules depend on the type of tasks. General recommendations:
+The settings for [quality control](../../glossary.md#quality-control) rules depend on the type of tasks. General recommendations:
 
 - Always use one or more ways to control quality of answers.
 
@@ -550,7 +550,7 @@ The settings for [quality control](../../glossary.md#quality-control-ru) rules d
 
 - If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](../concepts/accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](../concepts/dynamic-overlap.md) and [majority vote](../concepts/mvote.md) check.
 
-- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote-ru) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task-ru) with artificial examples where the choice is evident.
+- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task) with artificial examples where the choice is evident.
 
 
 #### How many control tasks do I need to add?
@@ -605,13 +605,13 @@ For open pools, we don't recommend creating control tasks from other types of ta
 
 #### How are the correct responses to control questions counted?
 
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task-ru) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
+The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
 As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
 
 #### Should I create a skill for every pool?
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 
@@ -694,7 +694,7 @@ But you can do it yourself if you want. When downloading the results, select the
 
 #### Can I create two active training pools, one for practice and the other for admitting users to the main pool? In other words, one pool is for users to practice and the other pool tests them.
 
-Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool-ru) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
+Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool user requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
 
@@ -775,7 +775,7 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 #### Why has the speed of pool completion dropped?
 
 Possible reasons:
-- You've stopped the [main pool](../../glossary.md#training-pool-ru). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
+- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
 - Too many users are banned. Ease the quality control rules.
@@ -796,7 +796,7 @@ Possible reasons:
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 #### Can I change overlap after the pool is started?
 
@@ -981,7 +981,7 @@ If the [column headings](../concepts/pool_csv.md) are incorrect, the whole file 
 Overview | How to fix
 ----- | -----
 ``` "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" ```
-**Extra tabs.**<br/><br/>If the TSV file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you will get en error message.<br/><br/>For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the TSV file after the link, you get 3 columns, 2 of which are extra. | Remove extra column separators in the above example — both `\t\t` characters.
+**Extra tabs.**<br/><br/>If the TSV file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you will get en error message.<br/><br/>For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the TSV file after the link, you get 3 columns, 2 of which are extra. | Remove extra column separators in the above example — both `\t\t` characters.
 ``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```
 **The number of fields in the header and in the row doesn't match.** | Make sure that:<br/><br/>- The number of tabs in the file structure is correct.<br/>- String values with tab characters are enclosed in [quotation marks](../concepts/pool_csv.md#string)`" "`.
 ``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
@@ -997,7 +997,7 @@ The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-- If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
+- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 #### How do I show two different versions of the text to Tolokers?
 
@@ -1016,7 +1016,7 @@ The training and control questions must meet your project specification. However
 
 #### More Tolokers were trained than the training skill shows
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](../concepts/train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](../concepts/train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 #### What's the difference between the exam pool that I pay for and the main pool?
 
@@ -1079,11 +1079,11 @@ If the task requires that the Tolokers send free-format responses or data files,
 
 #### Why does the training pool allow smart mixing but doesn't allow adding by empty row?
 
-This is a technical limitation of [training pools](../../glossary.md#training-pool-ru). You can only upload tasks to your training pools this way. If you want to upload tasks to the training pool suite-by-suite, create the main pool, set the pool type to **Training**, and set the price to zero.
+This is a technical limitation of [training pools](../../glossary.md#training-pool). You can only upload tasks to your training pools this way. If you want to upload tasks to the training pool suite-by-suite, create the main pool, set the pool type to **Training**, and set the price to zero.
 
 #### How do I create two active training pools: the first one for practice and the second one to admit the Tolokers to the main pool?
 
-Create the first pool based on the [training pool](../../glossary.md#training-pool-ru) and the second pool based on the main pool with the pool type set to **Exam**. If a pool contains only control and/or training tasks, the price can be set to zero.
+Create the first pool based on the [training pool](../../glossary.md#training-pool) and the second pool based on the main pool with the pool type set to **Exam**. If a pool contains only control and/or training tasks, the price can be set to zero.
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `If the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses.`
 
@@ -1416,7 +1416,7 @@ No. The price per task suite is the same for all tasks in the pool. You can crea
 
 #### How do I view information about Tolokers?
 
-You can view information about Tolokers of your tasks on the [Tolokers]({{ users }}) page. To view information about a Toloker, select their ID. The requester can access the following data in the Toloker profile: country and city, age, education, language skills. On the **Metainformation** tab, you can find the versions of the browser and operating system, the User-agent type, region detected by IP, and other Toloker parameters. To select the Tolokers for your [pool](../../glossary.md#pool-ru) based on their profile, device, geo location, and other parameters, use [filters](../concepts/filters.md).
+You can view information about Tolokers of your tasks on the [Tolokers]({{ users }}) page. To view information about a Toloker, select their ID. The requester can access the following data in the Toloker profile: country and city, age, education, language skills. On the **Metainformation** tab, you can find the versions of the browser and operating system, the User-agent type, region detected by IP, and other Toloker parameters. To select the Tolokers for your [pool](../../glossary.md#pool) based on their profile, device, geo location, and other parameters, use [filters](../concepts/filters.md).
 
 #### Do you verify the information entered by the Toloker in the profile?
 
@@ -1432,7 +1432,7 @@ The requester can't see the full details about specific Tolokers. For example, t
 
 #### More than 500 Tolokers passed the training, but the training skill shows only 30.
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 [Other questions](support.md#help)
 
@@ -1458,7 +1458,7 @@ You can deny access to the pool if the Toloker's responses are [too fast](../con
 
 #### Can I ask a Toloker to redo the task if they made mistakes in it?
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers-ru) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
 
 #### Can I fix something in a completed task myself?
 
@@ -1604,7 +1604,7 @@ In the standard template with an area selection editor, you can't use the contro
 
 In the standard template with an area selection editor, you can't use the control tasks, because in order for the assignment to be accepted by the system as correct, the object selected by the Toloker must exactly match the control object. This is almost impossible. Therefore, you can leave the GOLDEN field empty in the task file or simply delete all the columns except INPUT.
 
-You can't use [training](../../glossary.md#training-pool-ru) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
+You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
 
 Such tasks are usually run with non-automatic acceptance: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
 

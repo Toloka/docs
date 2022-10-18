@@ -1,11 +1,11 @@
 # Submitted answers
 
-Sometimes it's important to involve as many Tolokers as possible. You can limit the number of tasks in the [pool](../../glossary.md#pool-ru) per Toloker or [set a limit](income.md) on daily earnings in your [project](../../glossary.md#project-ru).
+Sometimes it's important to involve as many Tolokers as possible. You can limit the number of tasks in the [pool](../../glossary.md#pool) per Toloker or [set a limit](income.md) on daily earnings in your [project](../../glossary.md#project).
 
 ## When to use {#when-use}
 
 Use this rule if you want to:
-- Get responses from as many Tolokers as possible (for this purpose, set a low threshold, such as one [task suite](../../glossary.md#task-page-ru)).
+- Get responses from as many Tolokers as possible (for this purpose, set a low threshold, such as one [task suite](../../glossary.md#task-suite)).
 
 - Protect yourself from robots (for this purpose, the threshold should be higher, such as 10% of the pool's tasks).
 
@@ -29,15 +29,15 @@ All fields in this rule are required. If you don't fill in at least one of them,
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
-    
+
 - {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
-    
+
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
-    
+
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-    
+
 - {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
-    
+
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.||
 |#
 
@@ -67,7 +67,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 

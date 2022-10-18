@@ -1,6 +1,6 @@
 # Pool statistics
 
-You can track task completion on the [pool](../../glossary.md#pool-ru) page or by clicking **Statistics**. You can also get notifications by email, in the browser or on the {% if locale == "en-com" %}**Messages**{% endif %} page. In the [Profile]({{ profile }}), open the {% if locale == "en-com" %}**Notifications**{% endif %} tab and choose which notifications you want to receive and how you want to receive them.
+You can track task completion on the [pool](../../glossary.md#pool) page or by clicking **Statistics**. You can also get notifications by email, in the browser or on the {% if locale == "en-com" %}**Messages**{% endif %} page. In the [Profile]({{ profile }}), open the {% if locale == "en-com" %}**Notifications**{% endif %} tab and choose which notifications you want to receive and how you want to receive them.
 
 #|
 || Field | Overview||
@@ -10,7 +10,7 @@ Formula:$T_{left}={Assign_{left}}\times{T_{assign}}$,
 
 where:
 
-$Assign_{left}$ is the number of task suite remaining uncompleted or those completed with insufficient [overlap](../../glossary.md#overlap-ru).
+$Assign_{left}$ is the number of task suite remaining uncompleted or those completed with insufficient [overlap](../../glossary.md#overlap).
 
 $T_{assign}$ is the average time per task suite. Calculated based on the amount of time since the pool opened and the number of task suites completed.
 
@@ -20,15 +20,15 @@ The time is updated as task suites are completed by Tolokers.
 
 
 - If the time is too long, it's likely you don't have enough Tolokers left in your project. Check the number of [active Tolokers](#active-users) and the average time per task suite.
-    
+
 - If the time has increased since the project started, you may have too many banned Tolokers.
-    
+
 - If the time started out long and it hasn't decreased, and the number of [active Tolokers](#active-users) is small, check the filter settings and training. Perhaps few people can see your tasks or Tolokers can't pass training.
 
 {% endcut %}
 
 ||
-||{% if locale == "en-com" %}**Average assignment submit time**{% endif %} | The average time for completing a [task suite](../../glossary.md#task-page-ru) in the pool. Specified in seconds.
+||{% if locale == "en-com" %}**Average assignment submit time**{% endif %} | The average time for completing a [task suite](../../glossary.md#task-suite) in the pool. Specified in seconds.
 
 Calculated based on 1000 recently completed task suites.
 
@@ -125,7 +125,7 @@ You can also increase or decrease the number of tasks per suite and adjust the p
 {% endcut %}
 
 ||
-||{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | The amount of money spent and expected costs (if all the tasks are completed and all responses are approved). The [fee](../../glossary.md#comission-fee-ru) amount is shown in parentheses.
+||{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | The amount of money spent and expected costs (if all the tasks are completed and all responses are approved). The [fee](../../glossary.md#comission-fee) amount is shown in parentheses.
 
 {% cut "Recommendations" %}
 
@@ -261,7 +261,7 @@ You should also check the [banned Tolokers](#banned-users) and [banned by rules]
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
-- You've stopped the [main pool](../../glossary.md#training-pool-ru). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
+- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most Tolokers don't have.
 - Too many Tolokers are banned. Ease the quality control rules.

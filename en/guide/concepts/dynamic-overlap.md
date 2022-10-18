@@ -107,9 +107,9 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 - Integers with minimum and maximum values. The maximum difference between them is 32.
 
     If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
-	
+
 {% endcut %}
-	
+
 {% cut "You can't use the following fields:" %}
 
 - Array.
@@ -179,7 +179,7 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
 - Upload tasks via **smart mixing**. Otherwise, the tasks are assigned with minimum overlap.
 
-    This is necessary for overlap to increase because [control](../../glossary.md#control-task-ru) and [training](../../glossary.md#training-task-ru) tasks uploaded via **smart mixing** have infinite overlap.
+    This is necessary for overlap to increase because [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks uploaded via **smart mixing** have infinite overlap.
 
 - Use a skill calculated as the [percentage of correct responses to control tasks](goldenset.md). This will give you the most accurate results.
 

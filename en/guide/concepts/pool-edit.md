@@ -9,14 +9,14 @@ The cost of a task is registered at the moment when a Toloker accepts it. If the
 {% endnote %}
 
 
-To edit the pool parameters, click {% if locale == "en-com" %}**Edit**{% endif %} at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project-ru) page.
+To edit the pool parameters, click {% if locale == "en-com" %}**Edit**{% endif %} at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project) page.
 ![](../_images/other/pool-settings.png)
 
 ## General information {#pool-general-info}
 
 #### {% if locale == "en-com" %}**Pool name**{% endif %}
 
-The [pool](../../glossary.md#pool-ru) name shown only to you (as a requester) on the [project](../../glossary.md#project-ru) page.
+The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page.
 
 #### {% if locale == "en-com" %}**Public description**{% endif %}
 
@@ -30,7 +30,7 @@ If necessary, you can add a private comment that will only be available to you.
 
 #### {% if locale == "en-com" %}**Price per task suite, $**{% endif %}
 
-Payment per [task suite](../../glossary.md#task-page-ru) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
+Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
 
 #### Tolokers' interest in the price
 
@@ -46,7 +46,7 @@ The number of Tolokers who should complete each task in the pool.
 
 Configure this parameter if you need several people to complete your task. Overlap is necessary in tasks for collecting photo datasets, recording audio, or conducting surveys. In other types of tasks, it can improve the quality of results.
 
-To save money, you can set up [dynamic overlap](../../glossary.md#dynamic-overlap-ru) (also known as incremental relabeling or IRL).
+To save money, you can set up [dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL).
 
 Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md).
 
@@ -68,7 +68,7 @@ By setting the filters, you choose Tolokers that meet your requirements to compl
 
 If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
 
-If you give [training tasks](../../glossary.md#training-task-ru) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md)
+If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md)
 
 #### {% if locale == "en-com" %}**Speed/quality balance**{% endif %}
 
@@ -80,7 +80,7 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 #### {% if locale == "en-com" %}**Captcha frequency**{% endif %}
 
-You can choose how often [captchas](../../glossary.md#captcha-rule-ru) are shown to Tolokers:
+You can choose how often [captchas](../../glossary.md#captcha-rule) are shown to Tolokers:
 
 - “No” — Don't show captchas.
 
@@ -93,7 +93,7 @@ To show the captcha to Tolokers, set [the quality control rule](captcha.md).
 
 #### {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}
 
-Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#submitted-answers-ru) manually.
+Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#submitted-answers) manually.
 
 Set the time period when you can check the tasks and reject them if the results are poor.
 
@@ -132,7 +132,7 @@ For example: if the number of responses is > 5 and the percentage of correct res
 
 This field is only available if you have training pools in the project.
 
-[Training pool](../../glossary.md#training-pool-ru) that will be linked to the main one.
+[Training pool](../../glossary.md#training-pool) that will be linked to the main one.
 
 #### Level required
 
@@ -148,11 +148,11 @@ The minimum required level that you can set is 5. Tolokers who complete training
 
 #### {% if locale == "en-com" %}**Dynamic pricing**{% endif %}
 
-This parameter allows you to vary the task price depending on the Toloker's [skill](../../glossary.md#skill-ru) level. [Learn more](dynamic-pricing.md).
+This parameter allows you to vary the task price depending on the Toloker's [skill](../../glossary.md#skill) level. [Learn more](dynamic-pricing.md).
 
 #### {% if locale == "en-com" %}**Dynamic overlap**{% endif %}
 
-You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data-ru) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap-ru) for all pool tasks.
+You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap) for all pool tasks.
 
 You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. [Learn more](dynamic-overlap.md).
 
@@ -185,8 +185,8 @@ The date the pool closes. The pool closes automatically on this date, even if th
 Specify the pool type:
 
 - {% if locale == "en-com" %}**General tasks**{% endif %}: The main pool that contains your regular tasks.
-- {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task-ru).
-- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task-ru) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
+- {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).
+- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
 - {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
 - {% if locale == "en-com" %}**Other**{% endif %}: If none of the previous options fit.
 
@@ -205,7 +205,7 @@ The uploaded tasks are grouped in pages and given to Tolokers in random order. W
 
 {% cut "Example" %}
 
-If you specified 2 tasks per suite when uploading the [file](../../glossary.md#tsv-file-definition-ru) with image links to the pool, the system can generate them as follows:
+If you specified 2 tasks per suite when uploading the [file](../../glossary.md#tsv-file-definition) with image links to the pool, the system can generate them as follows:
 
 Tasks in the file | Page 1 | Page 2 | Page 3
 ----- | ----- | ----- | -----
@@ -274,7 +274,7 @@ Try completing the tasks yourself. Ask your colleagues and friends to complete t
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 {% endcut %}
 
@@ -293,7 +293,7 @@ The number of tasks depends on how difficult and time-consuming the tasks are. K
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
-- You've stopped the [main pool](../../glossary.md#training-pool-ru). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
+- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most Tolokers don't have.
 - Too many Tolokers are banned. Ease the quality control rules.

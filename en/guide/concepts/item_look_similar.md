@@ -1,10 +1,10 @@
 # Project 3. Does the item found look similar to the original?
 
-In this [project](../../glossary.md#project-ru), Tolokers will compare shoes from the original image (shown in project 1) with shoes found in project 2.
+In this [project](../../glossary.md#project), Tolokers will compare shoes from the original image (shown in project 1) with shoes found in project 2.
 
 {% note warning %}
 
-Since the **Assignment review** option is enabled in the [pool](../../glossary.md#pool-ru) settings for project 2, you should complete all the steps and check the Tolokers' responses within the time limit set in the **Review period** field.
+Since the **Assignment review** option is enabled in the [pool](../../glossary.md#pool) settings for project 2, you should complete all the steps and check the Tolokers' responses within the time limit set in the **Review period** field.
 
 {% endnote %}
 
@@ -87,7 +87,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
     }
     ```
 
-    1. Edit the [input and output data](../../glossary.md#input-output-data-ru) in the **Data specification** block.
+    1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
     1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
 
@@ -142,7 +142,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction-ru).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
 
     1. **Instructions:**{% if locale == "en-com" %}
     ```
@@ -202,7 +202,7 @@ To create a pool:
 
     1. Find the **Rules** block in the list and choose **Control tasks**.
 
-    1. Set a rule for [control tasks](../../glossary.md#control-task-ru): If the **number of responses** to control questions **is greater than or equal to 3** and the **percentage of correct responses** to control questions **is less than 60**, then **restrict the Toloker's access** to the **project for 10 days**. Specify the **Control task** as a reason.
+    1. Set a rule for [control tasks](../../glossary.md#control-task): If the **number of responses** to control questions **is greater than or equal to 3** and the **percentage of correct responses** to control questions **is less than 60**, then **restrict the Toloker's access** to the **project for 10 days**. Specify the **Control task** as a reason.
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
     1. (optional) Add another quality control rule. Click **Add a quality control rule**.
 
@@ -241,7 +241,7 @@ To create a pool:
 
     1. Click **Download results**.
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
 
     1. Leave the `INPUT:image` column unchanged.
 
@@ -291,7 +291,7 @@ To create a pool:
 
     1. Click **Save and go to next**.
 
-    1. Click **Are these shoes similar to each other?** to exit [task markup](../../glossary.md#task-markup-ru) mode.
+    1. Click **Are these shoes similar to each other?** to exit [task markup](../../glossary.md#task-markup) mode.
 
     {% note info %}
 
@@ -332,7 +332,7 @@ You can check the results in two ways:
 
 #### Review assignments in the file with the results
 
-To review the [submitted assignments](../../glossary.md#submitted-answers-ru):
+To review the [submitted assignments](../../glossary.md#submitted-answers):
 
 1. In the text or spreadsheet editor, open the file that you received after aggregating the results.
 

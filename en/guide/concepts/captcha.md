@@ -2,7 +2,7 @@
 
 Captchas and the [Fast responses](quick-answers.md) rule provide a high level of protection from robots.
 
-To show a captcha to Tolokers, set {% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} in the [pool](../../glossary.md#pool-ru) settings.
+To show a captcha to Tolokers, set {% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} in the [pool](../../glossary.md#pool) settings.
 
 In Toloka, a captcha is normally shown once every 10 assignments. If responses are given quickly and captchas get in the way, they can be shown every 20 assignments.
 
@@ -35,26 +35,26 @@ If the field is filled in, the corresponding number of captcha entries is used. 
 [Learn more](remember-values.md) about how this field works.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 - {% if locale == "en-com" %}**number of responses**{% endif %} — The number of entered captchas (less than or equal to the number in the {% if locale == "en-com" %}**Recent values to use**{% endif %} field).
-    
+
 - {% if locale == "en-com" %}**correct responses (%)**{% endif %} — The percentage of correct responses (from 0 to 100).
-    
+
 - {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
 - {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
-    
+
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
-    
+
 - {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correctly entered captchas in tasks as a [skill](nav.md) value.
-    
+
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-    
+
 - {% if locale == "en-com" %}**accept all assignments from this performer in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
-    
+
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
-    
+
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).||
 |#
 
@@ -76,13 +76,13 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 - Correct settings
 
   ![](../_images/control-rules/captcha/qcr-captcha_example1.png)
-  
+
   If the Toloker entered a captcha at least 5 times and the percentage of correct answers is less than 65%, they are banned and can't complete your tasks for 10 days.
 
 - Incorrect settings
 
   ![](../_images/control-rules/captcha/qcr-captcha_example-1.png)
-  
+
   The Toloker will be banned after the first captcha entry.
 
 {% endlist %}
@@ -92,7 +92,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 

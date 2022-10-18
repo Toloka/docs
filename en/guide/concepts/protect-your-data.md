@@ -5,7 +5,7 @@ We make every effort to ensure the security of your data, but sometimes tasks ar
 ## Protect your data from cheaters {#protect-from-them}
 
 - [Decompose tasks](solution-architecture.md#ul_aqh_tbb_xlb). You can break your tasks down into several projects (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
-- If you use [input](../../glossary.md#input-output-data-ru) fields to transmit data that Tolokers shouldn't see, make the fields with this data hidden. For instance, do this if you moderate comments and you need the authors' personal data in the results for further data processing.
+- If you use [input](../../glossary.md#input-output-data) fields to transmit data that Tolokers shouldn't see, make the fields with this data hidden. For instance, do this if you moderate comments and you need the authors' personal data in the results for further data processing.
 - Use any name or pseudonym to identify yourself for the Tolokers — you don't have to disclose your company name. This is useful for requesters who don't want to attract unnecessary interest from Tolokers.
 - You can use the [Completed tasks](submitted-answers.md#rule) quality control rule to limit the number of task suites each Toloker can complete. This lets you better protect your data from fraud and minimize your risks (scattered data has no commercial value).
 

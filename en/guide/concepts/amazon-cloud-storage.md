@@ -6,7 +6,6 @@
 
 {% endnote %}
 
-
 To try out [S3]({{ amazon-s3-about }}), you can activate a [free trial]({{ amazon-s3-free }}).
 
 #### Trial terms
@@ -14,7 +13,6 @@ To try out [S3]({{ amazon-s3-about }}), you can activate a [free trial]({{ amazo
 Length | Free storage size | Grant amount
 ----- | ----- | -----
 12 months | 5 GB | —
-
 
 ## Steps to follow {#workflow}
 
@@ -27,10 +25,11 @@ To get links to files:
 1. [Upload files to the bucket](#upload).
 1. [Copy links](#get-files).
 
-
 ## Create a bucket {#create-bucket}
 
 1. In the **Buckets** section, click **Create Bucket**.
+
+    ![](../_images/tutorials/cloud-storage/amazon/create-bucket.png)
 
 1. Enter the bucket name. The name must be unique and must not contain spaces or upper-case letters.
 
@@ -48,12 +47,13 @@ To get links to files:
 
 1. Confirm changes.
 
+    ![](../_images/tutorials/cloud-storage/amazon/accept-privacy.png)
+
 1. If you want to enable version control, select .
 
     To make your files easier to navigate, add [tags]({{ amazon-s3-tags }}).
 
 1. Click **Create bucket**.
-
 
 {% note info %}
 
@@ -61,24 +61,31 @@ You can set the lifetime of files in the bucket so that they are automatically d
 
 {% endnote %}
 
-
-
 ## Upload files to the bucket {#upload}
 
 1. In the **Buckets** section, select a bucket.
+
 1. On the**Objects** tab, click **Upload**.
 
-1. #### Upload files
+    ![](../_images/tutorials/cloud-storage/amazon/upload.png)
+
+1. {% cut "Upload files" %}
 
     Select the files on your computer and click **Add files**.
 
-    #### Upload a folder with files
+    {% endcut %}
+
+    {% cut "Upload a folder with files" %}
 
     Select the folder with the files on your computer and click **Add folder**.
 
-    #### Create a folder and upload files
+    {% endcut %}
+
+    {% cut "Create a folder and upload files" %}
 
     To create a folder in the bucket, click **Create folder** and upload files.
+
+    {% endcut %}
 
     {% note info %}
 
@@ -90,25 +97,34 @@ You can set the lifetime of files in the bucket so that they are automatically d
 
 1. After the files are uploaded, click **Close**.
 
-
 ## Copy links. {#get-files}
 
 1. Select the uploaded file and click **Copy URL** on the **Object** tab.
 
+    ![](../_images/tutorials/cloud-storage/amazon/overview.png)
+
 1. All file links are created by the same template.
 
     Links look like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
     ```
+
     {% endif %}
+
     The link in the folder looks like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
     ```
+
     {% endif %}
+
     {% note info %}
 
     To quickly get links to other files, copy the link to one of them and replace `<file-name>` with the names of other files.
@@ -119,7 +135,7 @@ You can set the lifetime of files in the bucket so that they are automatically d
 
     For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 
-    ```
+    ```plaintext
     INPUT:image
     https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
     https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png

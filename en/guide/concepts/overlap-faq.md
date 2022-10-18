@@ -1,6 +1,6 @@
 # What is overlap?
 
-Overlap is the number of Tolokers who should complete each task in the [pool](../../glossary.md#pool-ru).
+Overlap is the number of Tolokers who should complete each task in the [pool](../../glossary.md#pool).
 
 You can set overlap in the pool settings:
 

@@ -2,7 +2,7 @@
 
 You can use filters to select Tolokers for your project. Tasks will only be shown to matching Tolokers rather than all of them. Properly configured filters help you send tasks to a target group of Tolokers. As a result, you'll get your results faster and spend less money.
 
-To select Tolokers for a [pool](../../glossary.md#pool-ru), click {% if locale == "en-com" %}**Add filter**{% endif %} on the pool editing page.
+To select Tolokers for a [pool](../../glossary.md#pool), click {% if locale == "en-com" %}**Add filter**{% endif %} on the pool editing page.
 
 From the drop-down list, select filters by profile data and device specifications.
 
@@ -24,7 +24,7 @@ Tasks in pools are automatically available in the web version of Toloka and the 
 
 ## Skill {#filter-skill}
 
-You can select Tolokers with or without a [skill](../../glossary.md#skill-ru) and filter them by skill value.
+You can select Tolokers with or without a [skill](../../glossary.md#skill) and filter them by skill value.
 
 You can use [global skills](nav-cross-project.md) as a filter to recruit Tolokers who are good at certain types of tasks. To do this, select  and specify the restriction for the selected skill in the filter.
 
@@ -67,7 +67,7 @@ Use filters from this group to select Tolokers by the main profile data.
 
 {% cut "Languages" %}
 
-Make sure to add the {% if locale == "en-com" %}**Languages**{% endif %} filter and specify the language of the [instructions](../../glossary.md#task-instruction-ru) and text in the task.
+Make sure to add the {% if locale == "en-com" %}**Languages**{% endif %} filter and specify the language of the [instructions](../../glossary.md#task-instruction) and text in the task.
 
 If you want to be sure that Tolokers can read and understand the basic vocabulary, select those who passed a language test.
 

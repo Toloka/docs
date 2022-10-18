@@ -4,7 +4,7 @@ Use this rule if the Toloker was banned and you want someone else to complete th
 
 {% note info %}
 
-Don't use this rule in [pools](../../glossary.md#pool-ru) with [dynamic overlap](dynamic-overlap.md). This increases the maximum [overlap](../../glossary.md#overlap-ru) value.
+Don't use this rule in [pools](../../glossary.md#pool) with [dynamic overlap](dynamic-overlap.md). This increases the maximum [overlap](../../glossary.md#overlap) value.
 
 {% endnote %}
 
@@ -50,17 +50,17 @@ All fields in this rule are required. If you don't fill in at least one of them,
 #|
 || **Field** | **Overview**||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
-- {% if locale == "en-com" %}**banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rules-ru) (such as control tasks, majority vote, [fast answers](../../glossary.md#fast-responses-rule-ru), [skipped assignments](../../glossary.md#skipped-tasks-ru), or [captcha](../../glossary.md#captcha-rule-ru)).
-    
+- {% if locale == "en-com" %}**banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rules) (such as control tasks, majority vote, [fast answers](../../glossary.md#fast-responses-rule), [skipped assignments](../../glossary.md#skipped-tasks), or [captcha](../../glossary.md#captcha-rule)).
+
 - {% if locale == "en-com" %}**filtered out**{% endif %} — The Toloker no longer meets one or more [filters](filters.md).
-    
+
 - {% if locale == "en-com" %}**skill**{% endif %} —The Toloker no longer meets the specific skill filter.
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
-- {% if locale == "en-com" %}**extend overlap by**{% endif %} — Resend the [task suite](../../glossary.md#task-page-ru) for completion to other Tolokers.
-    
+- {% if locale == "en-com" %}**extend overlap by**{% endif %} — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
+
     If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option {% if locale == "en-com" %}**Open pool if closed**{% endif %}.||
 |#
 
@@ -73,29 +73,29 @@ To add multiple conditions, click ![](../_images/add.svg).||
 - Correct settings
 
   #### Resending tasks from a banned Toloker
-  
+
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_1.png)
-  
+
   If a Toloker is banned by a quality control rule, their tasks are sent for re-completion to another Toloker.
 
   #### Resending tasks if the Toloker doesn't meet the skill filter
-  
+
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_2.png)
-  
+
   If the Toloker no longer meets the requirements of the skill filter and their responses aren't taken into account, their tasks are sent for re-completion to another Toloker.
-  
+
 - Incorrect settings
 
   #### Resending tasks from a banned Toloker
-  
+
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_3.png)
-  
+
   If a Toloker is banned by a quality control rule, their tasks are not sent for re-completion to another Toloker.
 
   #### Resending tasks if the Toloker doesn't meet the skill filter
-  
+
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_4.png)
-  
+
   If the Toloker no longer meets the requirements of the skill filter and their responses aren't taken into account, their tasks are not sent for re-completion to another Toloker.
 
 {% endlist %}
@@ -106,7 +106,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 {% endcut %}
 
@@ -118,7 +118,7 @@ Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. Yo
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 

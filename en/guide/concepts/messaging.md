@@ -1,6 +1,6 @@
 # Communication
 
-Answer questions about tasks. Send out a group message if there are changes in the tasks (for example, the [instructions](../../glossary.md#task-instruction-ru) were edited, or [skill](../../glossary.md#skill-ru) calculation has changed).
+Answer questions about tasks. Send out a group message if there are changes in the tasks (for example, the [instructions](../../glossary.md#task-instruction) were edited, or [skill](../../glossary.md#skill) calculation has changed).
 
 {% note info %}
 
@@ -22,7 +22,7 @@ Recipients can be:
 - Selected Tolokers (specify the Toloker IDs separated with space).
 
 
-If there are changes in the [project](../../glossary.md#project-ru) (for example, you edited the instructions or changed skill calculation), notify all Tolokers who completed your tasks.
+If there are changes in the [project](../../glossary.md#project) (for example, you edited the instructions or changed skill calculation), notify all Tolokers who completed your tasks.
 
 1. [Set the skill level](nav-assign.md) for everyone who completed your tasks. The skill should be private.
 

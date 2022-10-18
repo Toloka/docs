@@ -1,6 +1,6 @@
 # Keep task order
 
-If you need the Tolokers to receive task suites in the same order that they are within the uploaded [TSV file](../../glossary.md#tsv-file-definition-ru) or quickly reach the overlap to monitor the [majority vote](../../glossary.md#selective-majority-vote-check-ru), set it up with the {% if locale == "en-com" %}**Keep task order**{% endif %} option.
+If you need the Tolokers to receive task suites in the same order that they are within the uploaded [TSV file](../../glossary.md#tsv-file-definition) or quickly reach the overlap to monitor the [majority vote](../../glossary.md#selective-majority-vote-check), set it up with the {% if locale == "en-com" %}**Keep task order**{% endif %} option.
 
 
 ## Theory {#do-not-save}
@@ -45,13 +45,13 @@ Tolokers | Task suite number | Order of tasks on the page:
 
 ## Features including overlap {#with-overlap}
 
-If [overlap](../../glossary.md#overlap-ru) is more than one and the {% if locale == "en-com" %}**Keep task order**{% endif %} option is enabled, then the next task suite will be distributed after it reaches full overlap.
+If [overlap](../../glossary.md#overlap) is more than one and the {% if locale == "en-com" %}**Keep task order**{% endif %} option is enabled, then the next task suite will be distributed after it reaches full overlap.
 
-In this case, if the [user](../../glossary.md#started-workers-ru) has already completed one task suite or there is a new [interested user](../../glossary.md#interested-workers-ru), they will get the next suite that isn't in progress yet, even if the previous one didn't reach full overlap.
+In this case, if the [user](../../glossary.md#started-workers) has already completed one task suite or there is a new [interested user](../../glossary.md#interested-workers), they will get the next suite that isn't in progress yet, even if the previous one didn't reach full overlap.
 
 If a user refuses the issued task suite, it will be given to another user — either someone else who is interested in the pool, or an available user who accepts the task.
 
-If you added the **majority vote** quality control rule, when all completed task suites have reached full overlap, the Toloker will be assigned a [skill](../../glossary.md#skill-ru) using **majority vote**. For example, if overlap 3 is set in the pool settings, the skill is calculated after each of these suites reaches overlap 3, not after the Toloker completes 3 suites.
+If you added the **majority vote** quality control rule, when all completed task suites have reached full overlap, the Toloker will be assigned a [skill](../../glossary.md#skill) using **majority vote**. For example, if overlap 3 is set in the pool settings, the skill is calculated after each of these suites reaches overlap 3, not after the Toloker completes 3 suites.
 
 #### Example
 
@@ -75,12 +75,12 @@ Tolokers | Task suite number | The overlap value achieved | Note
 
 ## How to enable it {#save}
 
-To use this option in your project, turn on the **Keep task order** option in the {% if locale == "en-com" %}**Parameters**{% endif %} settings when creating a new [pool](../../glossary.md#pool-ru).
+To use this option in your project, turn on the **Keep task order** option in the {% if locale == "en-com" %}**Parameters**{% endif %} settings when creating a new [pool](../../glossary.md#pool).
 ![](../_images/control-rules/mvote/save-order-tasks-yes.png)
-You can also set the order of tasks in the [Toloka API](../../glossary.md#api-yandex-toloka-ru).
+You can also set the order of tasks in the [Toloka API](../../glossary.md#api-yandex-toloka).
 
 To do this, use the function `issue_task_suites_in_creation_order: ture/false`
-- `true` — Task suites are distributed in the same order as they are in the uploaded [TSV file](../../glossary.md#tsv-file-definition-ru).
+- `true` — Task suites are distributed in the same order as they are in the uploaded [TSV file](../../glossary.md#tsv-file-definition).
 
 - `false` — Task suites are distributed in random order.
 

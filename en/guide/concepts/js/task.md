@@ -6,8 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-
-The `Task` base class is responsible for the [task interface](../../../glossary.md#task-interface-ru). This class is available in the global variable `window.TolokaTask`.
+The `Task` base class is responsible for the [task interface](../../../glossary.md#task-interface). This class is available in the global variable `window.TolokaTask`.
 
 Methods:
 
@@ -22,7 +21,9 @@ The [task UI](../spec.md) constructor.
 Parameters:
 
 - `options.task` — The [Task](../spec-advanced.md#obj-task) task model.
-- `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data-ru) and the task interface.
+
+- `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data) and the task interface.
+
 - `options.workspaceOptions` — Toloker's workspace initialization parameters.
 
 #### destroy()
@@ -37,12 +38,14 @@ Implements the logic for setting the focus on the task by calling the `[onFocus(
 
 Returns a link to an instance of the `TolokaAssignment` class. After that, you can access all its properties and methods.
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 // skip current assignment
 this.getAssignment().skip()
 ```
+
+{% endcut %}
 
 #### getDOMElement()
 
@@ -52,7 +55,7 @@ Returns the DOM element of the task.
 
 Returns an object with a set of parameters passed to the `[constructor()](#constructor)` method during initialization.
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 // getting specifications for all required fields:
@@ -61,6 +64,14 @@ let outputSpec = this.getOptions().specs.output_spec,
                             .filter(key => outputSpec[key].required)
                             .reduce((item, key) => (item[key] = outputSpec[key], item), {});
 ```
+
+{% endcut %}
+
+#### getProxyUrl(path)
+
+Returns a complete URL to access the data on the proxy server. Parameter:
+
+- `path` — the relative path to the file.
 
 #### getSavedState()
 
@@ -88,14 +99,13 @@ The method is available in toloka-handlebars-templates. It returns a set of fiel
 
 The method allows you to process the existing values or pass new custom parameters to the template engine. For example, you can pass strings for localizing a template and use the same project for Russian-speaking and English-speaking Tolokers.
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 // if the Toloker completes the assignment under iOS, we show additional layout
 getTemplateData: function() {
     let data = TolokaHandlebarsTask.prototype.getTemplateData.call(this),
         userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
 
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         data.ios = true;
@@ -104,6 +114,8 @@ getTemplateData: function() {
     return data;
 }
 ```
+
+{% endcut %}
 
 #### getWorkspaceOptions()
 
@@ -117,11 +129,13 @@ Hides a global error (only if the toloka-handlebars-templates library is connect
 
 Contains the current task's `id`.
 
-#### Example
+{% cut "Example" %}
 
 ```javascript
 let myId = this.getTask().id
 ```
+
+{% endcut %}
 
 #### onBlur()
 
@@ -163,6 +177,52 @@ Called when the Toloker's response validation fails. Parameter:
 
 Pauses task completion. Saves the intermediate state of the task in the browser's local storage (`saveState`) and calls the `onPause` method.
 
+#### proxy(path, options)
+
+Makes a GET or POST request through a proxy.
+
+Parameters:
+
+- `path` — the path for the request (string).
+
+- `options` — the request parameters (object). More information in the [Jquery Ajax](https://api.jquery.com/jquery.ajax/#jQuery-ajax-settings) parameter description.
+
+Returns the `promise` object.
+
+{% note alert %}
+
+Some features are not supported (for example, timeouts and custom headers).
+
+{% endnote %}
+
+{% cut "Example" %}
+
+```javascript
+// need to find user logins which start with 'jones' and 'smith' (not more than 10 of each instance)
+// we make two POST requests to the search service
+// then wait for results
+
+let promises = [],
+     patterns = ['jones*', 'smith*'];
+
+patterns.forEach(pattern => promises.push(Promise.resolve(this.proxy('myproxy/search', {
+   type: 'POST',
+   contentType: 'application/json',
+   dataType: 'json',
+   data: JSON.stringify({
+       query: pattern,
+       limit: 10
+   }),
+   processData: false
+}))));
+
+Promise.all(promises)
+       .then(results => console.log(results))
+       .catch(error => console.error(error));
+```
+
+{% endcut %}
+
 #### render()
 
 Forms the DOM representation of the task interface. Calls `[onRender()](#onRender)`. Returns `this`.
@@ -186,6 +246,7 @@ Sets the responses. Parameter:
 Writes the required value in the specified field. Parameters:
 
 - `fieldName` — A field (string) in the output specification, to which the value is passed.
+
 - `value` — The value of the type set for `fieldName` in the project specification.
 
 #### setSolutionOutputValues(outputValues)

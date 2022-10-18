@@ -4,12 +4,12 @@
 ----- | -----
 img | [Expression to add an image](t-components/img.md)
 src | Attribute for an image link.
-image | The [input data](../../glossary.md#input-output-data-ru) field name.
+image | The [input data](../../glossary.md#input-output-data) field name.
 width | Width in percent or pixels.
 height | Height in percent or pixels.
 radio | [Expression to add a radio button](t-components/radiobuttons.md)
 name | Attribute for the output data field.
-result | The [output data](../../glossary.md#input-output-data-ru) field name.
+result | The [output data](../../glossary.md#input-output-data) field name.
 value | Response choice. It is recorded as the result of the task.
 label | Label that Tolokers will see.
 hotkey | Keyboard shortcut.
@@ -33,4 +33,4 @@ scr2 | File link attribute.
 controls | Attribute for displaying controls in the player.
 controlslist | Attribute for the list of controls.
 nodownload | Hide the audio download button.
-overlap | The number of Tolokers to complete a [pool](../../glossary.md#pool-ru) task.
+overlap | The number of Tolokers to complete a [pool](../../glossary.md#pool) task.

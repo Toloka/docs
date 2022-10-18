@@ -1,9 +1,9 @@
 # Aggregation of results
 
-If tasks were issued with an [overlap](../../glossary.md#overlap-ru) of 2 or higher, run aggregation of results. Toloka will process all Tolokers' responses for the task and issue the resulting response and its confidence level.![](../_images/results/aggregation-scheme.svg)
+If tasks were issued with an [overlap](../../glossary.md#overlap) of 2 or higher, run aggregation of results. Toloka will process all Tolokers' responses for the task and issue the resulting response and its confidence level.![](../_images/results/aggregation-scheme.svg)
 {% note info %}
 
-If you run the [pool](../../glossary.md#pool-ru) with the assignment review, make sure that all responses are [accepted](accept.md).
+If you run the [pool](../../glossary.md#pool) with the assignment review, make sure that all responses are [accepted](accept.md).
 
 {% endnote %}
 
@@ -58,10 +58,10 @@ The Dawid-Skene model is a non-trivial aggregation algorithm. Check out its feat
     {% cut "Example" %}
 
     In an image classification task, all three Tolokers selected the first response option. In another similar task, the same three Tolokers selected the first option, and the fourth Toloker selected the second option. If in the next task, the only response is given by the fourth Toloker, the David-Skene aggregation model might consider it incorrect and return a different result.
-	
+
 	{% endcut %}
 
-- The Dawid-Skene aggregation model works with [control](../../glossary.md#control-task-ru) and [training](../../glossary.md#training-task-ru) tasks as well as with general tasks. There is a possibility that the `OUTPUT:result` field for the control task in the TSV file won't match the actual response to this task (`GOLDEN:result`).
+- The Dawid-Skene aggregation model works with [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks as well as with general tasks. There is a possibility that the `OUTPUT:result` field for the control task in the TSV file won't match the actual response to this task (`GOLDEN:result`).
 
 - If your project has output data marked as `"required": false` and Tolokers don't fill in this field, it won't be included in aggregation.
 
@@ -235,7 +235,7 @@ Aggregation only includes accepted tasks.
 
   1. Select a skill. We recommend to select a skill calculated as the percentage of [correct responses in control tasks](goldenset.md). This will give you the most accurate aggregation results.
   1. Select the output data fields.
-  
+
 	  {% cut "Output data fields that can be aggregated:" %}
 
 	  - Strings and numbers with allowed values.
@@ -248,7 +248,7 @@ Aggregation only includes accepted tasks.
 	  If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
 	  The allowed value must match the `value` parameter in the corresponding interface element.
-	  
+
 	  {% endcut %}
 
 - Pools without dynamic overlap
@@ -257,7 +257,7 @@ Aggregation only includes accepted tasks.
 
   1. You set a skill that defines the level of confidence in the Toloker's responses. We recommend to use a skill calculated as the percentage of [correct responses in control tasks](goldenset.md).
   1. The [output data fields](incoming.md) have allowed values.
-  
+
 	  {% cut "Output data fields that can be aggregated:" %}
 
 	  - Strings and numbers with allowed values.
@@ -270,11 +270,11 @@ Aggregation only includes accepted tasks.
 	  If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
 	  The allowed value must match the `value` parameter in the corresponding interface element.
-	  
+
 	  {% endcut %}
 
   1. The tasks were uploaded in the pool with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
-  
+
 {% endlist %}
 
 

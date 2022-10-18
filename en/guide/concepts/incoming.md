@@ -3,7 +3,7 @@
 {% include [toloka-requester-source-html-editor-tb-spec](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb-spec.md) %}
 
 
-In the **Specifications** field, you set parameters for [input and output data](../../glossary.md#input-output-data-ru). These settings will be valid for all tasks in the [project](../../glossary.md#project-ru).
+In the **Specifications** field, you set parameters for [input and output data](../../glossary.md#input-output-data). These settings will be valid for all tasks in the [project](../../glossary.md#project).
 
 In the specification, add fields for the data used in the task or for the data you need in the results. Reference these fields when you [configure the interface](spec.md).
 
@@ -294,7 +294,7 @@ Whether the Toloker's response is required in the output data.
 By default, fields are optional — `false`.||
 ||{% if locale == "ru-ru" %}**Hidden**{% endif %}{% if locale == "en-com" %}**Hidden**{% endif %} | `hidden` | Allows you to hide data from the Toloker. If this is not done, Tolokers can get the field value programmatically. You can configure this parameter in JSON mode.
 
-For example, you can hide the `assigment_id` identifier you will need when [reviewing assignments](../../glossary.md#left-off-acceptance-ru) in a separate project.
+For example, you can hide the `assigment_id` identifier you will need when [reviewing assignments](../../glossary.md#left-off-acceptance) in a separate project.
 
 By default, the field is visible — `false`.
 
@@ -322,7 +322,7 @@ The default value is `false`.||
 
 ## Recommendations {#recomendations}
 
-- If you edit a required field, the changes apply only to new task [pools](../../glossary.md#pool-ru). For example, if you need to fix an error in a project, [clone the pool](pool-main.md) or [create a new one](pool-main.md). Existing task pools will continue using the previous version of the project.
+- If you edit a required field, the changes apply only to new task [pools](../../glossary.md#pool). For example, if you need to fix an error in a project, [clone the pool](pool-main.md) or [create a new one](pool-main.md). Existing task pools will continue using the previous version of the project.
 
 - In the output, use value validation and don't forget to mark the field as required if the Toloker has to fill it in.
 - Hidden fields are intended only for requesters and are not available in the task interface. The values of hidden fields can't be used either in the JS code or in the template constructor.

@@ -2,25 +2,25 @@
 
 You can download Tolokers' responses in a file as tasks are completed.
 
-If tasks were distributed with an [overlap](../../glossary.md#overlap-ru) of more than 2, run [aggregation](result-aggregation.md). Toloka will process all Tolokers' responses for the task and form the resulting response.
+If tasks were distributed with an [overlap](../../glossary.md#overlap) of more than 2, run [aggregation](result-aggregation.md). Toloka will process all Tolokers' responses for the task and form the resulting response.
 
 ## Getting the file with responses {#tsv}
 
-To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**Download results**{% endif %} button on the [pool](../../glossary.md#pool-ru) page.
+To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**Download results**{% endif %} button on the [pool](../../glossary.md#pool) page.
 
 #### Fields in the file with responses
 
 - `INPUT:<name of the [input data](incoming.md) field>` — Input data for tasks.
 
-- `OUTPUT:<name of the [output data](incoming.md) field>` — The Tolokers' responses. For [training tasks](../../glossary.md#training-task-ru), the field includes first attempted answers.
+- `OUTPUT:<name of the [output data](incoming.md) field>` — The Tolokers' responses. For [training tasks](../../glossary.md#training-task), the field includes first attempted answers.
 
-- `GOLDEN:<name of the [output data](incoming.md) field>` — Responses for [control tasks](../../glossary.md#control-task-ru).
+- `GOLDEN:<name of the [output data](incoming.md) field>` — Responses for [control tasks](../../glossary.md#control-task).
 
 - `HINT:text` — Hints for training tasks.
 
 - Information about the task completion (the same for all tasks on the page):
 
-    - `ASSIGNMENT:link` — Link for viewing the [task suite](../../glossary.md#task-page-ru).
+    - `ASSIGNMENT:link` — Link for viewing the [task suite](../../glossary.md#task-suite).
 
     - `ASSIGNMENT:assignment_id` — ID of the assigned task suite.
 
@@ -67,7 +67,7 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers-ru) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
 
 {% endcut %}
 

@@ -34,7 +34,7 @@ In the project, you'll customize an appearance of the tasks.
 
     - **Customer survey**
     Designed to collect information for research purposes.
-	
+
 	{% endcut %}
 
     {% endcut %}
@@ -68,7 +68,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 A task is the data you want Tolokers to label. Each image or comment is a separate task.
 
-To upload a [file with tasks](../../glossary.md#tsv-file-definition-ru):
+To upload a [file with tasks](../../glossary.md#tsv-file-definition):
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 1. Download the template that matches your task type.

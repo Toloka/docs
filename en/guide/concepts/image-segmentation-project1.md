@@ -1,6 +1,6 @@
 # Project 1. Does the image contain a specific object?
 
-In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo contains traffic signs.
+In this [project](../../glossary.md#project), you ask the Tolokers if a photo contains traffic signs.
 
 ## Create a project {#create-project}
 
@@ -127,7 +127,7 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
 1. Save the changes.
 
-1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#task-instruction-ru) and add an image.
+1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#task-instruction) and add an image.
 
     1. **Instructions:**{% if locale == "en-com" %}
 
@@ -174,7 +174,7 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
     1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Control tasks**{% endif %}.
 
-    1. Set a rule for [control task](../../glossary.md#control-task-ru): if the {% if locale == "en-com" %}**number of responses**{% endif %} to the control questions is **≥ 3** and {% if locale == "en-com" %}**correct responses (%)**{% endif %} to the control questions is **< 60**, then {% if locale == "en-com" %}**ban**{% endif %} the Toloker {% if locale == "en-com" %}**on project**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. Specify the **Control task** as a reason.
+    1. Set a rule for [control task](../../glossary.md#control-task): if the {% if locale == "en-com" %}**number of responses**{% endif %} to the control questions is **≥ 3** and {% if locale == "en-com" %}**correct responses (%)**{% endif %} to the control questions is **< 60**, then {% if locale == "en-com" %}**ban**{% endif %} the Toloker {% if locale == "en-com" %}**on project**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. Specify the **Control task** as a reason.
 
        Learn more in [Quality control](control.md).
 
@@ -187,7 +187,7 @@ In this [project](../../glossary.md#project-ru), you ask the Tolokers if a photo
 
 ## Upload tasks {#upload-file}
 
-Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 
 1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
     #### Use sample data
@@ -210,7 +210,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     1. Click {% if locale == "en-com" %}**Upload**{% endif %}.
 
-    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition-ru) with tasks to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
+    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition) with tasks to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
 
     1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
 
@@ -232,7 +232,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     1. Click {% if locale == "en-com" %}**Save and go to next**{% endif %}.
 
-    1. Click **Are there traffic signs in the photo?** to exit the [task markup](../../glossary.md#task-markup-ru) mode.
+    1. Click **Are there traffic signs in the photo?** to exit the [task markup](../../glossary.md#task-markup) mode.
 
     {% note info %}
 

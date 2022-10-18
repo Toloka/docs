@@ -4,9 +4,9 @@ To view the graphs, go to the project and open the {% if locale == "en-com" %}**
 
 #|
 || Field  | Overview ||
-||{% if locale == "en-com" %}**Open pools**{% endif %} | The number of open [pools](../../glossary.md#pool-ru).||
+||{% if locale == "en-com" %}**Open pools**{% endif %} | The number of open [pools](../../glossary.md#pool).||
 ||{% if locale == "en-com" %}**Pools (total)**{% endif %} | The total number of pools.||
-||{% if locale == "en-com" %}**Submitted responses**{% endif %} | The total number of completed [task suites](../../glossary.md#task-page-ru) (taking [overlap](../../glossary.md#overlap-ru) into account).
+||{% if locale == "en-com" %}**Submitted responses**{% endif %} | The total number of completed [task suites](../../glossary.md#task-suite) (taking [overlap](../../glossary.md#overlap) into account).
 
 There may be few completed tasks if your tasks are only available to a small number of Tolokers. This could be due to incorrectly configured [filters](filters.md) or [skills](nav.md). In this case, some Tolokers don't see your tasks.
 
@@ -98,7 +98,7 @@ If there are too many blocked Tolokers, review and adjust the quality control ru
 {% endcut %}
 
 ||
-||{% if locale == "en-com" %}**Active Tolokers**{% endif %} | The number of Tolokers who started at least one task suite within the last hour and have access to the [project](../../glossary.md#project-ru).||
+||{% if locale == "en-com" %}**Active Tolokers**{% endif %} | The number of Tolokers who started at least one task suite within the last hour and have access to the [project](../../glossary.md#project).||
 ||{% if locale == "en-com" %}**Interested in pool**{% endif %} | The number of Tolokers who started or completed at least one task suite.
 
 It includes both interested and engaged Tolokers.

@@ -10,7 +10,7 @@ The Toloker receives payment for a task suite, so the labeling cost and quality 
 
 ## {% if locale == "en-com" %}Set manually{% endif %} {#by-empty-row}
 
-Enter the number of tasks per suite. Suites are formed in the order the tasks are placed in your [file](../../glossary.md#tsv-file-definition-ru).
+Enter the number of tasks per suite. Suites are formed in the order the tasks are placed in your [file](../../glossary.md#tsv-file-definition).
 
 This method is appropriate if you need your tasks to have a certain number of suites and don't want to divide them into suites yourself.
 
@@ -22,7 +22,7 @@ Specify how many tasks of each type should be in each task suite. For example, 8
 
 This method is useful if the created pool:
 
-- Contains [control](../../glossary.md#control-task-ru) or [training](../../glossary.md#training-task-ru) tasks in addition to the [general](../../glossary.md#general-task-ru) tasks.
+- Contains [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task) tasks in addition to the [general](../../glossary.md#general-task) tasks.
 - Has [dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL) enabled.
 
 {% cut "Sample settings" %}
@@ -39,7 +39,7 @@ This method is useful if the created pool:
 
 - Tasks in the suite are mixed up before the page is shown to the Toloker.
 
-- If there aren't enough general tasks and the {% if locale == "en-com" %}**Assign partial page**{% endif %} option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-page-ru). Please note that the number of control and training tasks in this case must be complete.
+- If there aren't enough general tasks and the {% if locale == "en-com" %}**Assign partial page**{% endif %} option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-page). Please note that the number of control and training tasks in this case must be complete.
 
 {% note warning %}
 
@@ -113,7 +113,7 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 If you upload tasks from the Toloka interface, infinite overlap is set automatically for control and training tasks, so that there is enough to mark up all general tasks.
 
-You can set the overlap via the [Toloka API](../../glossary.md#api-yandex-toloka-ru) or use {% if locale == "en-com" %}**Set manually**{% endif %} for task allocation.
+You can set the overlap via the [Toloka API](../../glossary.md#api-yandex-toloka) or use {% if locale == "en-com" %}**Set manually**{% endif %} for task allocation.
 
 {% note info %}
 
@@ -125,9 +125,9 @@ If another overlap value is set, control tasks may end during labeling and the p
 
 ## Tips and recommendations {#tips}
 
-- If you used {% if locale == "en-com" %}**Set manually**{% endif %}, you can find out the number of tasks per suite in the pool settings. But some suites may be [incomplete](../../glossary.md#incomplete-page-ru).
+- If you used {% if locale == "en-com" %}**Set manually**{% endif %}, you can find out the number of tasks per suite in the pool settings. But some suites may be [incomplete](../../glossary.md#incomplete-page).
 
-- If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#api-yandex-toloka-ru) to check task distribution across suites.
+- If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#api-yandex-toloka) to check task distribution across suites.
 
 
 
@@ -159,7 +159,7 @@ The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-- If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
+- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 

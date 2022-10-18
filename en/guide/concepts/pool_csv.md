@@ -2,7 +2,7 @@
 
 Tasks are uploaded to the [pool](pool-main.md) in [the tasks file](../../glossary.md#tsv-file-definition-ru_1).
 
-Download the file template for your [project](../../glossary.md#project) on the [pool](../../glossary.md#pool-ru) page. Use the template to create your own task file and upload it to the pool.
+Download the file template for your [project](../../glossary.md#project) on the [pool](../../glossary.md#pool) page. Use the template to create your own task file and upload it to the pool.
 
 {% cut "Use sample data" %}
 
@@ -25,8 +25,8 @@ If you need to add different task types to the pool, upload multiple files, one 
 The first line of the file contains the column headers:
 - `INPUT:<name of the [input data field](incoming.md)>` — Input data for tasks.
 
-- `GOLDEN:<name of the [output data field](incoming.md)>` — Responses for [control tasks](../../glossary.md#control-task-ru).
-- `HINT:text` — Hints for [training tasks](../../glossary.md#training-task-ru). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
+- `GOLDEN:<name of the [output data field](incoming.md)>` — Responses for [control tasks](../../glossary.md#control-task).
+- `HINT:text` — Hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
 - Point coordinates for [field tasks](../tutorials/walk.md):
     - `Al:latitude` — Latitude.
@@ -39,18 +39,18 @@ Task type depends on which fields are filled in:
 
  - General task
 
-   To create a [general task](../../glossary.md#general-task-ru), fill in the columns with the `INPUT` header.
+   To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
 
    {% cut "Example with a simple object (string, link, and so on)" %}
-	
+
    ![](../_images/location-job/pool_csv/main_tsv.png)
-	
+
    {% endcut %}
-	
+
    {% cut "Example with a string array" %}
-	
+
    ![](../_images/location-job/pool_csv/main_tsv2.png)
-	
+
    {% endcut %}
 
 - Control task
@@ -65,9 +65,9 @@ Task type depends on which fields are filled in:
 	{% endnote %}
 
 	{% cut "Example" %}
-	
+
 	![](../_images/location-job/pool_csv/controls_tsv.png)
-	
+
 	{% endcut %}
 
 - Training task
@@ -87,9 +87,9 @@ Task type depends on which fields are filled in:
 
 
 	{% cut "Example" %}
-	
+
 	![](../_images/location-job/pool_csv/cats_tsv.png)
-	
+
 	{% endcut %}
 
 - Field task
@@ -139,7 +139,7 @@ You can work with data in an editor and then save it in the desired format.
   1. Download the file template in `JSON`.
   1. Open the template in a text editor and add your data.
   1. Save the file.
-  
+
 {% endlist %}
 
 The maximum file size is 100 MB.
@@ -311,7 +311,7 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 <td colspan="2">
 
 ```
-"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", 
+"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
 "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
 ```
 
@@ -322,12 +322,12 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 
 **Extra tabs.**
 
-If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.<br/><br/>For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. 
+If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.<br/><br/>For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive.
 
 </td>
-<td> 
+<td>
 
-Remove extra column separators in the above example — both `\t\t` characters. 
+Remove extra column separators in the above example — both `\t\t` characters.
 
 </td>
 </tr>
@@ -341,10 +341,10 @@ Remove extra column separators in the above example — both `\t\t` characters.
 <tr>
 <td>
 
-**The number of fields in the header and in the row doesn't match.** 
+**The number of fields in the header and in the row doesn't match.**
 
 </td>
-<td> 
+<td>
 
 Make sure that:
 
@@ -356,8 +356,8 @@ Make sure that:
 <tr>
 <td colspan="2">
 
-``` 
-"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" 
+```
+"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
 ```
 
 </td>
@@ -365,7 +365,7 @@ Make sure that:
 <tr>
 <td>
 
-**The value is missing for a required input field.** 
+**The value is missing for a required input field.**
 
 </td>
 <td> Make sure that columns with required input data fields are filled.</td>
@@ -374,7 +374,7 @@ Make sure that:
 <td colspan="2">
 
 ```
-"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" 
+"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
 ```
 
 </td>
@@ -382,10 +382,10 @@ Make sure that:
 <tr>
 <td>
 
-**Invalid data in a “link” (“url”) field.** 
+**Invalid data in a “link” (“url”) field.**
 
 </td>
-<td> 
+<td>
 
 Make sure that:
 
@@ -403,14 +403,14 @@ Make sure that:
 <tr>
 <td>
 
-**Unpaired quotation mark in a string.** 
+**Unpaired quotation mark in a string.**
 
 </td>
-<td> 
+<td>
 
 Check that all quotation marks are [escaped](pool_csv.md#string).
 
-If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.
+If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
 
 For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive.
 
@@ -428,7 +428,7 @@ Remove extra column separators in the above example — both `\t\t` characters.
 <tr>
 <td>
 
-**The number of fields in the header and in the row doesn't match.** 
+**The number of fields in the header and in the row doesn't match.**
 
 </td>
 <td> Make sure that:
@@ -446,7 +446,7 @@ Remove extra column separators in the above example — both `\t\t` characters.
 <tr>
 <td>
 
-**The value is missing for a required input field.** 
+**The value is missing for a required input field.**
 
 </td>
 <td> Make sure that columns with required input data fields are filled.</td>
@@ -461,10 +461,10 @@ Remove extra column separators in the above example — both `\t\t` characters.
 <tr>
 <td>
 
-**Invalid data in a "link" ("url") field.** 
+**Invalid data in a "link" ("url") field.**
 
 </td>
-<td> 
+<td>
 
 Make sure that:
 - Links start with the `http://`, `https://` or `www` prefix.
@@ -481,10 +481,10 @@ Make sure that:
 <tr>
 <td>
 
-**Unpaired quotation mark in a string.** 
+**Unpaired quotation mark in a string.**
 
 </td>
-<td> 
+<td>
 
 Check that all quotation marks are [escaped](pool_csv.md#string).
 
@@ -576,7 +576,7 @@ The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-- If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
+- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 

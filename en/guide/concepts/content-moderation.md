@@ -1,6 +1,6 @@
 # Sentiment analysis and content moderation
 
-This [project template](../../glossary.md#project-template-ru) works well for content moderation, when you need to check the text for compliance.
+This [project template](../../glossary.md#project-template) works well for content moderation, when you need to check the text for compliance.
 
 Use this template when you need to:
 
@@ -235,7 +235,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 1. Configure normal or dynamic overlap:
 
     - **Overlap** is the number of Tolokers to complete the same task. For content moderation tasks, 3-5 is an appropriate value. In this case, it makes sense to use [Aggregation of results](result-aggregation.md) to check the reliability of responses.
-    - [Dynamic overlap](../../glossary.md#dynamic-overlap-ru) (incremental relabeling, IRL). It will help you optimize your budget for getting the most reliable responses. [Example of settings](dynamic-overlap.md#example).
+    - [Dynamic overlap](../../glossary.md#dynamic-overlap) (incremental relabeling, IRL). It will help you optimize your budget for getting the most reliable responses. [Example of settings](dynamic-overlap.md#example).
 
     For this parameter to work, you need to load tasks using **Smart mixing**.
 
@@ -244,7 +244,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Uploading tasks {#load_tasks}
  {% if locale == "en-com" %}
-Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 {% endif %}
 1. Click **Upload**. In the window that opens, you can also download a sample file.
 1. Add input data in it. The header of the input data column contains the `INPUT` word. Add the comments you want to check in it. Leave the other columns empty.
@@ -278,7 +278,7 @@ Write clear instructions. Criteria for good and bad comments on different resour
 {% endnote %}
 
 
-1. Open the [project](../../glossary.md#project-ru) page, go to the {% if locale == "en-com" %}**Training**{% endif %} tab and click {% if locale == "en-com" %}**Add training**{% endif %}.
+1. Open the [project](../../glossary.md#project) page, go to the {% if locale == "en-com" %}**Training**{% endif %} tab and click {% if locale == "en-com" %}**Add training**{% endif %}.
 
 1. Give a name to the training pool and set the time for completing a task suite.
 1. Save the pool by clicking **Create training**.

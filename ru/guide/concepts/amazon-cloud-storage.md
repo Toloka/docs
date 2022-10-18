@@ -29,7 +29,7 @@
 
 1. В разделе **Buckets** нажмите **Create Bucket**.
 
-![](../_images/tutorials/cloud-storage/amazon/create-bucket.png)
+    ![](../_images/tutorials/cloud-storage/amazon/create-bucket.png)
 
 1. Введите имя бакета. Имя должно быть уникальным и не содержать пробелов и прописных букв.
 
@@ -47,7 +47,7 @@
 
 1. Подтвердите изменения.
 
-![](../_images/tutorials/cloud-storage/amazon/accept-privacy.png)
+    ![](../_images/tutorials/cloud-storage/amazon/accept-privacy.png)
 
 1. Если хотите включить систему контроля версий, выберите .
 
@@ -67,7 +67,7 @@
 
 1. На вкладке **Objects** нажмите **Upload**.
 
-![](../_images/tutorials/cloud-storage/amazon/upload.png)
+    ![](../_images/tutorials/cloud-storage/amazon/upload.png)
 
 1. {% cut "Загрузить файлы" %}
 
@@ -101,7 +101,7 @@
 
 1. Выберите загруженный файл и на вкладке **Object** нажмите **Copy URL**.
 
-![](../_images/tutorials/cloud-storage/amazon/overview.png)
+    ![](../_images/tutorials/cloud-storage/amazon/overview.png)
 
 1. Все ссылки на файлы создаются по одному шаблону.
 

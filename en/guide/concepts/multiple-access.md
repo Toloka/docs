@@ -10,7 +10,7 @@ You can give other users access to your account:
 
   {% note alert %}
 
-  People who are granted full access won't be able to use the Toloka API, connect to Yandex.Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox-ru) to the main version of Toloka.
+  People who are granted full access won't be able to use the Toloka API, connect to Yandex.Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox) to the main version of Toloka.
 
   {% endnote %}
 
