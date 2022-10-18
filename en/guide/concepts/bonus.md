@@ -17,8 +17,12 @@ To issue a reward for a specific pool task, use [online task review](accept.md#a
 1. Choose a task and open it. Please note that a reward can only be issued for an accepted task.
 
 1. Click {% if locale == "en-com" %}{% endif %}
-    #### Example
+    
+	{% cut "Example" %}
+	
     ![](../_images/bonus/bonus-task-1.png)
+	
+	{% endcut %}
 
 1. Fill in the fields in the {% if locale == "en-com" %}**Issue bonus**{% endif %} window that appears:
 
@@ -26,8 +30,12 @@ To issue a reward for a specific pool task, use [online task review](accept.md#a
 
     - {% if locale == "en-com" %}**Topic**{% endif %} and {% if locale == "en-com" %}**Message**{% endif %} for Tolokers. Specify what exactly the reward is credited for. To send messages in different languages, use the button for switching languages.
 
-    #### Example
+    {% cut "Example" %}
+	
     ![](../_images/bonus/bonus-task-2.png)
+	
+	{% endcut %}
+
 
 1. Click {% if locale == "en-com" %}**Grant**{% endif %}.
 
@@ -40,7 +48,7 @@ To issue rewards to Tolokers:
 
 1. Choose the Tolokers who will receive the reward.
 
-    #### How to select Tolokers
+    {% cut "How to select Tolokers"
     {% if audience == "internal" %}
     {% note info %}
 
@@ -49,7 +57,7 @@ To issue rewards to Tolokers:
     {% endnote %}
 
     {% endif %}
-    #### If you know the Toloker IDs
+    {% cut "If you know the Toloker IDs" %}
 
     To select one Toloker, enter their ID in the search field and click **Search**.
 
@@ -69,8 +77,10 @@ To issue rewards to Tolokers:
     To view detailed information about a Toloker, click on their ID.
 
     {% endnote %}
+	
+	{% endcut %}
 
-    #### Show blocked users
+    {% cut "Show blocked users" %}
 
     By default, blocked users aren't displayed. Click the drop-down list for other options:
     - **Project ban** — Tolokers you blocked in one of the project pools, for example based on a quality control rule.
@@ -87,8 +97,10 @@ To issue rewards to Tolokers:
     On the pool statistics page, these Tolokers are listed in the **Interested in pool** field.
 
     The **Completed** field shows the number of completed tasks. If the number is `0`, it means the Toloker only opened a task but didn't complete it.
+	
+	{% endcut %}
 
-    #### Find Tolokers with a skill
+    {% cut "Find Tolokers with a skill" %}
 
     To find Tolokers by skill, use [filters](../../glossary.md#filtering-ru):
 
@@ -97,11 +109,18 @@ To issue rewards to Tolokers:
     1. Specify the skill and the required skill value.
 
     Filters for selecting Tolokers work the same way as in the pool. Learn more in the [Filters](filters.md) section.
+	
+	{% endcut %}
+	
+	{% endcut %}
 
 1. Specify the [project](../../glossary.md#project-ru) or [pool](../../glossary.md#pool-ru) in the corresponding fields in the left part of the page.
 
-    #### Example
+    {% cut "Example" %}
+	
     ![](../_images/bonus/bonus-one-performer-2.png)
+	
+	{% endcut %}
 
 1. To credit rewards to one Toloker, click the link to their ID in the {% if locale == "en-com" %}**Toloker ID**{% endif %} field.
 
@@ -119,26 +138,36 @@ To issue rewards to Tolokers:
 
     Before doing this, check the number of people who will receive the reward, and the total amount.
 
-    #### Example
+    {% cut "Example" %}
+	
     ![](../_images/bonus/bonus-group-performers-1.png)
+	
+	{% endcut %}
 
 
 The Toloker will see rewards for completed tasks, activity and quality of work in projects in their profile (the {% if locale == "en-com" %}**History**{% endif %} tab). The transferred amounts are added to the list of payments.
 
-#### Example
+{% cut "Example" %}
+
 ![](../_images/bonus/bonus-task-3.png)
+
+{% endcut %}
 
 You can track money deducted for extra rewards in your [profile]({{ profile }}) on the {% if locale == "en-com" %}**Expenses**{% endif %} tab.
 
 
 ## Troubleshooting {#troubleshooting}
 
-#### How do I reward Tolokers in addition to the basic task price?
+{% cut "How do I reward Tolokers in addition to the basic task price?" %}
 
 You can increase the basic task price for Tolokers that have a higher skill. To do this, set up [Dynamic pricing](dynamic-pricing.md). If you want to motivate high-quality Tolokers regardless of their skill, use [rewards](../troubleshooting/users.md). In your task instructions, specify the amount and conditions for the Toloker rewards.
 
-#### How can I view statistics on paid rewards?
+{% endcut %}
+
+{% cut "How can I view statistics on paid rewards?" %}
 
 To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Expenses** tab.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

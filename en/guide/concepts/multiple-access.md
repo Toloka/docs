@@ -2,53 +2,58 @@
 
 You can give other users access to your account:
 
-#### Employee
+{% list tabs %}
 
-#### Full access
+- Employee
 
-{% note alert %}
+  #### Full access
 
-People who are granted full access won't be able to use the Toloka API, connect to Yandex.Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox-ru) to the main version of Toloka.
+  {% note alert %}
 
-{% endnote %}
+  People who are granted full access won't be able to use the Toloka API, connect to Yandex.Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox-ru) to the main version of Toloka.
 
-
-- If you need other people in your company to post tasks, give them full access to the main account. They don't need to be registered in Toloka. They can log in with [Yandex ID]({{ yandex-id }}). They will be able to manage your projects and check tasks, and you will manage the finances.
-
-- If you already have a Toloker account, you can quickly switch from it to the requester account. In this case, set up full access to the requester account for your Toloker account.
+  {% endnote %}
 
 
-#### View only
+  - If you need other people in your company to post tasks, give them full access to the main account. They don't need to be registered in Toloka. They can log in with [Yandex ID]({{ yandex-id }}). They will be able to manage your projects and check tasks, and you will manage the finances.
 
-- If you don't want to give full access to your account to your employees, you can limit it to view only.
+  - If you already have a Toloker account, you can quickly switch from it to the requester account. In this case, set up full access to the requester account for your Toloker account.
 
-#### Toloka support
 
-If you need help setting up pools or projects, give Toloka support temporary view-only access to your account to get recommendations. Access will be automatically revoked in 7 days. If necessary, you can revoke access earlier.
+  #### View only
 
-You can view the list of granted permissions on the {% if locale == "en-com" %}**Profile**{% endif %} page in the {% if locale == "en-com" %}**Account access**{% endif %} tab.
+  - If you don't want to give full access to your account to your employees, you can limit it to view only.
 
+- Toloka support
+
+  If you need help setting up pools or projects, give Toloka support temporary view-only access to your account to get recommendations. Access will be automatically revoked in 7 days. If necessary, you can revoke access earlier.
+
+  You can view the list of granted permissions on the {% if locale == "en-com" %}**Profile**{% endif %} page in the {% if locale == "en-com" %}**Account access**{% endif %} tab.
+
+{% endlist %}
 
 ## How do I grant access to my account? {#multiple-access-grant}
 
-#### Employee
+{% list tabs %}
 
-1. Open the [Profile]({{ profile }}) page.
+- Employee
 
-1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Add teammate**{% endif %}.
-1. Enter the case-sensitive [Yandex ID]({{ yandex-id }}).
+  1. Open the [Profile]({{ profile }}) page.
 
-1. In the drop-down list, select {% if locale == "en-com" %}**Full access**{% endif %} or {% if locale == "en-com" %}**View only**{% endif %}.
+  1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Add teammate**{% endif %}.
+  1. Enter the case-sensitive [Yandex ID]({{ yandex-id }}).
 
-1. Click {% if locale == "en-com" %}**Grant access**{% endif %}.
+  1. In the drop-down list, select {% if locale == "en-com" %}**Full access**{% endif %} or {% if locale == "en-com" %}**View only**{% endif %}.
 
+  1. Click {% if locale == "en-com" %}**Grant access**{% endif %}.
 
-#### Toloka support
+- Toloka support
 
-1. Open the [Profile]({{ profile }}) page.
-1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Grant access to Toloka Support**{% endif %}.
-1. Click {% if locale == "en-com" %}**Grant access**{% endif %}.
+  1. Open the [Profile]({{ profile }}) page.
+  1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Grant access to Toloka Support**{% endif %}.
+  1. Click {% if locale == "en-com" %}**Grant access**{% endif %}.
 
+{% endlist %}
 
 ## How to log in to your account {#multiple-access-auth}
 

@@ -17,7 +17,7 @@ To better motivate Tolokers, make the skill public and set [dynamic pricing](../
 
 ## Troubleshooting {#troubleshooting}
 
-#### Should I create a skill for every pool?
+{% cut "Should I create a skill for every pool?" %}
 
 It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
 
@@ -34,13 +34,18 @@ It is better to use one [skill](../../glossary.md#skill-ru) in a project. You ca
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
 
 
-#### Can I use a skill beyond a particular pool or project and apply it to other projects as well?
+{% endcut %}
+
+{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
 
-#### More than 500 Tolokers passed the training, but the training skill shows only 30.
+{% endcut %}
+
+{% cut "More than 500 Tolokers passed the training, but the training skill shows only 30." %}
 
 The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

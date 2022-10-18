@@ -21,38 +21,42 @@ If you don't want to top up your account, don't click **Create a billing invoice
 
 #### List of payment documents
 
-#### For residents of Russia
+{% list tabs %}
 
-- The service delivery report and the tax invoice are formed on the first day of each month following the reporting month for the amount spent in the previous month (excluding the promo code bonus).
+- For residents of Russia
 
-    You can send a copy of the service invoice by e-mail or order the original certificate. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-support }}).
+   - The service delivery report and the tax invoice are formed on the first day of each month following the reporting month for the amount spent in the previous month (excluding the promo code bonus).
 
-    You can also request original service invoices via the form below.
+	   You can send a copy of the service invoice by e-mail or order the original certificate. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-support }}).
 
-    <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
+	   You can also request original service invoices via the form below.
 
-- Extended report
+	   <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
-    Contains data on all invoices and payments. Available only in electronic form.
+   - Extended report
 
-    To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
+	   Contains data on all invoices and payments. Available only in electronic form.
 
-- Reconciliation report
+	   To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
 
-    You can form the service invoice for the desired period. Reconciliation reports are sent to your email address. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-acts-settlements }}).
+   - Reconciliation report
+
+	   You can form the service invoice for the desired period. Reconciliation reports are sent to your email address. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-acts-settlements }}).
 
 
-#### For non-residents of Russia
+- For non-residents of Russia
 
-- The service delivery report and the tax invoice are formed on the first day of each month following the reporting month for the amount spent in the previous month (excluding the promo code bonus).
+   - The service delivery report and the tax invoice are formed on the first day of each month following the reporting month for the amount spent in the previous month (excluding the promo code bonus).
 
-    To download a copy of the service invoice, go to **Invoices** and click the account number. In the **Invoice history** section, click **Printed form**.
+	   To download a copy of the service invoice, go to **Invoices** and click the account number. In the **Invoice history** section, click **Printed form**.
 
-- Extended report
+   - Extended report
 
-    Contains data on all invoices and payments. Available only in electronic form.
+	   Contains data on all invoices and payments. Available only in electronic form.
 
-    To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
+	   To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
+
+{% endlist %}
 
 ## Edit your payment information {#section_obr_lvl_m3b}
 
@@ -64,6 +68,7 @@ You can't edit the dates and amounts of closing documents.
 
 
 #### Edit document delivery addresses and payment details
+
 You can edit your email address, the actual address for the correspondence delivery, and some payment details. To do this:
 1. Go to the [**Payers**]({{ persons }}) page.
 1. Click the **edit** link in the block with the desired payer.

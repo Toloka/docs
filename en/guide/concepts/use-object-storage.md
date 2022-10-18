@@ -43,16 +43,20 @@ To use files from Yandex Cloud:
 
     Links look like this:
     {% if locale == "en-com" %}
+	
     ```
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
     ```
-    {% endif %}
+    
+	{% endif %}
     The link in the folder looks like this:
     {% if locale == "en-com" %}
-    ```
+    
+	```
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
     ```
-    {% endif %}
+    
+	{% endif %}
     {% note info %}
 
     To quickly get links to other files, copy the link to one of them and replace `<filename>` with the names of other files.
