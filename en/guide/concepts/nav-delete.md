@@ -15,7 +15,7 @@ You can remove a skill only manually. It can't be done using quality control rul
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 
@@ -40,7 +40,7 @@ Yes, of course — you can use the same skill for different projects. But most o
 
 {% cut "More than 500 Tolokers passed the training, but the training skill shows only 30." %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 {% endcut %}
 

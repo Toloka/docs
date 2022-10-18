@@ -6,13 +6,11 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-
 Handlebars is a template engine that uses templates to simplify HTML creation.
 
 Templates look like regular HTML code with [Handlebars expressions](#expressions) added to it. When the template is executed, the expressions are replaced with the input parameter values.
 
 The `toloka-handlebars-templates` library is connected to the project by default. It contains a set of components and the `TolokaHandlebarsTask` and `TolokaHandlebarsTaskSuite` classes that are added to the basic `[TolokaTask](../js/task.md)` and `[TolokaTaskSuite](../js/tasksuite.md)` classes and extend them.
-
 
 ## Expressions {#expressions}
 
@@ -34,10 +32,10 @@ If you need an unescaped value, you can:
 
     {% endnote %}
 
-
 To get the value of a nested parameter in the Handlebars expression, separate the parameter names with a dot.
 
 For example, if you have code in JSON format
+
 ```json
 {
     "id": 123,
@@ -47,6 +45,7 @@ For example, if you have code in JSON format
     }
 }
 ```
+
 and you want to pull the values of the `title` and `url` parameters nested in `link` from it, specify the path to them using the dot separator:
 
 ```html
@@ -54,7 +53,6 @@ id: not_var{{id}}<a href="not_var{{link.url}}">not_var{{link.title}}</a>
 ```
 
 Comments are also Handlebars expressions: `{{!comment}}` or `{{!-- comment --}}`.
-
 
 ## Helpers {#helpers}
 
@@ -66,7 +64,6 @@ The helper for escaping the `title` parameter from the above [code in JSON forma
 
 ```html
 Handlebars.registerHelper('escape', (title, url) => new Handlebars.SafeString(`<a href="${Handlebars.escapeExpression(url)}">${Handlebars.escapeExpression(title)}</a>`));
-
 ```
 
 Calling the helper:
@@ -90,12 +87,12 @@ Helpers can have other helpers as input. For this, enclose them in round bracket
 {% note info %}
 
 Before creating your own Handlebars helper, look it up:
+
 - In the list of [available Toloka components and helpers](../t-components.md).
+
 - In the [repository of Handlebars helpers](https://github.com/helpers/handlebars-helpers).
 
 {% endnote %}
-
-
 
 ## Block helpers {#block-helpers}
 
@@ -141,8 +138,8 @@ To access an item that's not in the current block context, go up a level by usin
 
 {% endnote %}
 
-
 For example, for a list
+
 ```json
 {
     "id": 123,
@@ -152,7 +149,9 @@ For example, for a list
     ]
 }
 ```
+
 , the helper that outputs the values of each list item (in this case, links) will look like this:
+
 ```html
 {{#each links}}
     ID: {{../id}}
@@ -168,15 +167,17 @@ Inside the `Each` block, the following auxiliary expressions are available:
 - `{{@last}}` — True if it is the last element of the array.
 
 In the above [list](#example-json-2), the helper
+
 ```html
 {{#each links}}
     Global ID: {{../id}}
     {{@index}}: <a href="not_var{{this.url}}">not_var{{this.title}}</a>
     {{#unless @last}}<hr>{{/unless}}
 {{/each}}
-
 ```
+
 will display links.
+
 - The links will be numbered.
 - A horizontal separator will be added after each link, except the last one.
 
@@ -185,6 +186,7 @@ will display links.
 Rebinds the context.
 
 For example, for code
+
 ```json
 {
     "id": 123,
@@ -194,14 +196,15 @@ For example, for code
     }
 }
 ```
+
 , the helper that displays the block in a different context, which helps to avoid using the name of the parent parameter, will look like this:
+
 ```html
 ID: not_var{{id}}
 {{#with link}}
     <a href="not_var{{url}}">not_var{{title}}</a>
 {{/with}}
 ```
-
 
 ## Reusing templates (partials) {#partials}
 

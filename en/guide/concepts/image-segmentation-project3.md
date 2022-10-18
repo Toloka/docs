@@ -1,6 +1,6 @@
 # Project 3. Are the bounding boxes correct?
 
-In this [project](../../glossary.md#project-ru), Tolokers will determine if traffic signs were selected correctly on the images in [project 1](image-segmentation-project1.md), and submit the responses in [project 2](image-segmentation-project2.md).
+In this [project](../../glossary.md#project), Tolokers will determine if traffic signs were selected correctly on the images in [project 1](image-segmentation-project1.md), and submit the responses in [project 2](image-segmentation-project2.md).
 
 ## Create a project {#create-project}
 
@@ -246,7 +246,7 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
 
     {% note info %}
 
-    The rule takes effect when the number of responses for the task is equal to the [overlap](../../glossary.md#overlap-ru).
+    The rule takes effect when the number of responses for the task is equal to the [overlap](../../glossary.md#overlap).
 
     {% endnote %}
 
@@ -265,7 +265,7 @@ In this [project](../../glossary.md#project-ru), Tolokers will determine if traf
 
 ## Prepare and upload the results file. {#upload_file}
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
 
     1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 2](image-segmentation-project2.md).
     1. Leave the `INPUT:image` column unchanged.

@@ -1,10 +1,10 @@
 # Sandbox
 
-The [Sandbox]({{ sandbox }}) is a testing environment for Toloka. This is where you can test your [project](../../glossary.md#project-ru) settings as a Toloker before moving them to the [Toloka production version]({{ production-version }}) and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
+The [Sandbox]({{ sandbox }}) is a testing environment for Toloka. This is where you can test your [project](../../glossary.md#project) settings as a Toloker before moving them to the [Toloka production version]({{ production-version }}) and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
 
 {% note alert %}
 
-Note that you can move only project and [pool](../../glossary.md#pool-ru) settings. You can't move tasks and responses to them. The project's [quality control](../../glossary.md#quality-control-ru) settings can't be moved, either.
+Note that you can move only project and [pool](../../glossary.md#pool) settings. You can't move tasks and responses to them. The project's [quality control](../../glossary.md#quality-control) settings can't be moved, either.
 
 {% endnote %}
 
@@ -44,7 +44,7 @@ To complete your tasks in the sandbox:
 
     The number of trusted Tolokers required for testing depends on the [overlap settings](dynamic-overlap.md).
 
-    To test your project in the Sandbox, set [overlap](../../glossary.md#overlap-ru) 1. If you increase the overlap, you will need to register more Tolokers and add trusted accounts.
+    To test your project in the Sandbox, set [overlap](../../glossary.md#overlap) 1. If you increase the overlap, you will need to register more Tolokers and add trusted accounts.
 
     When exporting a project to the production version of [Toloka](#export), you can specify the necessary overlap in accordance with your project goals.
 
@@ -85,7 +85,7 @@ To test your task, add yourself as a trusted Toloker in the Sandbox. To do this,
 
 #### Is it possible to use the same account for the Sandbox and the public Toloka version?
 
-No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox-ru), [register](access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
+No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox), [register](access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
 
 #### What do I do if an error occurs on the server when I try to export a project from the Sandbox?
 
@@ -116,11 +116,11 @@ To download only the control tasks (if you completed them in the interface), go 
 
 Make sure that:
 
-1. The [pool](../../glossary.md#pool-ru) is started.
+1. The [pool](../../glossary.md#pool) is started.
 1. The Toloker is added as a trusted.
 1. The trusted user is registered in the sandbox as a Toloker.
 1. The trusted user didn't use social networks when registering.
-1. Your trusted user matches the [filters](../../glossary.md#filtering-ru) you set.
+1. Your trusted user matches the [filters](../../glossary.md#filtering) you set.
 
 #### I can't add a trusted user.
 
@@ -133,7 +133,7 @@ Possible reasons:
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance-ru), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 #### Can I change overlap after the pool is started?
 

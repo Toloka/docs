@@ -11,11 +11,11 @@ To add tasks to a pool:
 
     {% endnote %}
 
-1. If you haven't yet marked up [control](../../glossary.md#control-task-ru) and [training](../../glossary.md#training-task-ru) tasks in the file, [mark up the tasks in the interface](task_markup.md).
+1. If you haven't yet marked up [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks in the file, [mark up the tasks in the interface](task_markup.md).
 
     {% note info %}
 
-    If you created a project in the [sandbox](../../glossary.md#sandbox-ru), keep in mind that when you move a project to the [Toloka production version]({{ production-version }}), tasks aren't moved, including those that are already labeled.
+    If you created a project in the [sandbox](../../glossary.md#sandbox), keep in mind that when you move a project to the [Toloka production version]({{ production-version }}), tasks aren't moved, including those that are already labeled.
 
     {% endnote %}
 

@@ -1,6 +1,6 @@
 # Project 1. Does the photo contain a certain object?
 
-In this [project](../../glossary.md#project-ru), you will ask Tolokers if there are shoes in the photo.
+In this [project](../../glossary.md#project), you will ask Tolokers if there are shoes in the photo.
 
 ## Create a project {#create_project}
 
@@ -127,7 +127,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#task-instruction-ru) and add an image.
+1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#task-instruction) and add an image.
 
     1. **Instructions:**{% if locale == "en-com" %}
     ```
@@ -149,7 +149,7 @@ Learn more about working with the project in the [Project](project.md) section.
 
 ## Create a pool {#create_pool}
 
-To create a [pool](../../glossary.md#pool-ru):
+To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Are there shoes in the photo?**.
 
@@ -175,7 +175,7 @@ To create a [pool](../../glossary.md#pool-ru):
 
 1. Enter `0.01` in the **Price per task suite** field in the **Price** block.
 
-1. In the **Quality control** block, specify [quality control](../../glossary.md#quality-control-ru) settings for the pool:
+1. In the **Quality control** block, specify [quality control](../../glossary.md#quality-control) settings for the pool:
 
     1. Click **Add a quality control rule**.
 
@@ -212,7 +212,7 @@ To upload tasks:
 
     1. Click **Upload**.
 
-    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition-ru) with tasks to upload and click **Open**.
+    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition) with tasks to upload and click **Open**.
 
     1. In the window that opens, check the number of tasks and click **Add**.
 
@@ -234,11 +234,11 @@ To upload tasks:
 
     1. Click **Save and go to next**.
 
-    1. Click **Are there shoes in the photo?** to exit the [task markup](../../glossary.md#task-markup-ru) mode.
+    1. Click **Are there shoes in the photo?** to exit the [task markup](../../glossary.md#task-markup) mode.
 
     {% note info %}
 
-    In small pools, [control tasks](../../glossary.md#control-task-ru) should be 10-20% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
+    In small pools, [control tasks](../../glossary.md#control-task) should be 10-20% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
     {% endnote %}
 

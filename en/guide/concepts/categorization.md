@@ -1,6 +1,6 @@
 # Image classification
 
-[Projects](../../glossary.md#project-ru) of the classification type are intended for tasks with multiple choice. Examples are moderating content or grouping images by category.
+[Projects](../../glossary.md#project) of the classification type are intended for tasks with multiple choice. Examples are moderating content or grouping images by category.
 
 You may need additional projects for your task, such as dataset pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](solution-architecture.md).
 
@@ -164,7 +164,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Upload tasks {#tasks_upload}
 
-Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 
 1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
 
@@ -179,7 +179,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 1. Add input data in the file. The header of the input data column contains the word `INPUT`. Leave the other columns empty.
     ![](../_images/tutorials/categorization/cats_tsv_text.png)
 
-1. Upload the tasks using **Smart mixing** and enter the number of tasks per suite. For example: 9 [general tasks](../glossary.md#general-task-ru) and 1 control task.
+1. Upload the tasks using **Smart mixing** and enter the number of tasks per suite. For example: 9 [general tasks](../glossary.md#general-task) and 1 control task.
     #### What is smart mixing?
     **Smart mixing** randomly generates pages with tasks so that tasks are not repeated for each Toloker.
 
@@ -247,9 +247,9 @@ When you [clone a project](project.md), its quality control settings aren't tran
 
 ## Add training {#training}
 
-Create a [training pool](../../glossary.md#training-pool-ru):
+Create a [training pool](../../glossary.md#training-pool):
 
-1. Open the [project](../../glossary.md#project-ru) page.
+1. Open the [project](../../glossary.md#project) page.
 
 1. Go to the {% if locale == "en-com" %}**Training**{% endif %} tab.
 

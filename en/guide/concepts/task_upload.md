@@ -1,6 +1,6 @@
 # How to upload tasks
 
-To upload a [file with tasks](../../glossary.md#tsv-file-definition-ru) to a [pool](pool-main.md):
+To upload a [file with tasks](../../glossary.md#tsv-file-definition) to a [pool](pool-main.md):
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
 1. Download the template and add your data.
@@ -16,7 +16,7 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition-ru) to a [po
     Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
 
     Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
-	
+
 	{% endcut %}
 
 1. Attach the file with the tasks.
@@ -72,9 +72,9 @@ To work with a large log conveniently, copy it to the text editor.
 <tr>
 <td colspan="2">
 
-``` 
-"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", 
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" 
+```
+"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
 ```
 </td>
 </tr>
@@ -86,7 +86,7 @@ To work with a large log conveniently, copy it to the text editor.
 </td>
 <td>
 
-If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you get an error message.
+If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
 
 For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.
 
@@ -102,9 +102,9 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 <tr>
 <td>
 
-**The number of fields in the header and in the row doesn't match.** 
+**The number of fields in the header and in the row doesn't match.**
 
-</td> 
+</td>
 <td>
 
 Make sure that:
@@ -124,7 +124,7 @@ Make sure that:
 <tr>
 <td>
 
-**The value is missing for a required input field.** 
+**The value is missing for a required input field.**
 
 </td>
 <td>
@@ -142,7 +142,7 @@ Make sure that:
 <tr>
 <td>
 
-**Invalid data in a “link” (“url”) field.** 
+**Invalid data in a “link” (“url”) field.**
 
 </td>
 <td>
@@ -163,7 +163,7 @@ Make sure that:
 <tr>
 <td>
 
-**Unpaired quotation mark in a string.** 
+**Unpaired quotation mark in a string.**
 
 </td>
 <td>
@@ -180,7 +180,7 @@ Check that all quotation marks are [escaped](pool_csv.md#string).
 
 - Learn more about [ways to group tasks in suites](distribute-tasks-by-pages.md).
 
-- If you haven't labeled your [control](../../glossary.md#control-task-ru) and [training](../../glossary.md#training-task-ru) tasks in the file, [edit the tasks in the interface](task_markup.md).
+- If you haven't labeled your [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks in the file, [edit the tasks in the interface](task_markup.md).
 
 
 ## Troubleshooting {#troubleshooting}

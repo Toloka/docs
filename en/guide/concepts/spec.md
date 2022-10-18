@@ -72,7 +72,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 In the **JS** block, you can add rules for response processing in JavaScript. [Special extensions for task classes](spec-advanced.md) are available for this purpose.
 
-You can also connect JavaScript libraries to create the interface. For example, if you have several [projects](../../glossary.md#project-ru) with similar tasks, save the method descriptions in a separate file and add it as a library.
+You can also connect JavaScript libraries to create the interface. For example, if you have several [projects](../../glossary.md#project) with similar tasks, save the method descriptions in a separate file and add it as a library.
 
 To connect the JavaScript library, click the ![](../_images/settings.svg) button in the {% if locale == "en-com" %}**Task interface**{% endif %} block and add links to libraries in the **JS** field.
 
@@ -99,7 +99,7 @@ Changes to the input and output data, as well as the number of tasks per suite a
 {% endnote %}
 
 
-To view the resulting task, click {% if locale == "en-com" %}**Preview**{% endif %}. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-page-ru). You can also complete one or more tasks and get responses.
+To view the resulting task, click {% if locale == "en-com" %}**Preview**{% endif %}. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-suite). You can also complete one or more tasks and get responses.
 
 #### How do I change the number of standard tasks?
 You can change the number of tasks with standard data on the Preview page:
@@ -117,7 +117,7 @@ Add input data to check if files or text hints are displayed on the task suite. 
 #### Filling in the table
 
 1. Change the input data fields.
-    To change the task type to [control](../../glossary.md#control-task-ru) or [training](../../glossary.md#training-task-ru), add correct responses and a hint (the {% if locale == "en-com" %}**Add correct answers**{% endif %} button).
+    To change the task type to [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task), add correct responses and a hint (the {% if locale == "en-com" %}**Add correct answers**{% endif %} button).
 
     To go to the next task, click the task number at the bottom of the table. To delete a task, click ![](../_images/bin.svg).
 
@@ -154,7 +154,7 @@ To check if the data from text comments or checkboxes is received correctly, fil
 
 {% note info %}
 
-Use the [Sandbox](../../glossary.md#sandbox-ru) to check if files, images, audio, or videos submitted from the task suite are received correctly. To do this, complete the project creation, create the same project in the Sandbox, and [complete](sandbox.md) it from a trusted user account.
+Use the [Sandbox](../../glossary.md#sandbox) to check if files, images, audio, or videos submitted from the task suite are received correctly. To do this, complete the project creation, create the same project in the Sandbox, and [complete](sandbox.md) it from a trusted user account.
 
 {% endnote %}
 

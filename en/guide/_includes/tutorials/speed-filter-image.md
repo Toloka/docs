@@ -1,1 +1,1 @@
-[![Create a pool. Step 3.3](../../_images/tutorials/image-classification/create-pool-step-3.3.png =700x)](../../_images/tutorials/image-classification/create-pool-step-3.3.png)
+[![Create a pool. Step 3.3](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-pool-step-3.3.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-pool-step-3.3.png)

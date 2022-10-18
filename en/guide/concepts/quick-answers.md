@@ -13,7 +13,7 @@ If you need additional protection from robots, use [captchas](captcha.md).
 
 Restrict the pool access for Tolokers who respond too quickly to:
 
-- Restrict access for Tolokers who cheat in their responses. In this case, set the time required to complete a [task suite](../../glossary.md#task-page-ru) when giving random responses.
+- Restrict access for Tolokers who cheat in their responses. In this case, set the time required to complete a [task suite](../../glossary.md#task-suite) when giving random responses.
 
 - Provide anti-robot protection. In this case, set twice as little time for task suite completion.
 
@@ -36,22 +36,22 @@ To learn more about how this field works, go to [Parameter "Remember values"](re
 ||{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} | The task suite completion time (in seconds). Everything that is completed faster is considered a fast response.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 - {% if locale == "en-com" %}**number of responses**{% endif %} — The number of the Toloker's recent responses (less than or equal to the number in the {% if locale == "en-com" %}**Recent task suites to use**{% endif %} field).
-    
+
 - {% if locale == "en-com" %}**number of fast responses**{% endif %} — Allowed number of fast responses (out of the recent ones).
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the Toloker's [skill](nav.md).
-    
+
 - {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
-    
+
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.
-    
+
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-    
+
 - {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
-    
+
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
 |#
 
@@ -75,15 +75,15 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 - Correct settings
 
   ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1.png)
-  
+
   A Toloker who completes a task suite in less than 10 seconds will be banned and won't be able to access your tasks.
 
 - Incorrect settings
 
   ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1_1.png)
-  
+
   This rule will never take effect because the number of responses counted ({% if locale == "en-com" %}**Recent task suites to use**{% endif %}) is less than the number of recent responses in the rule ({% if locale == "en-com" %}**number of responses**{% endif %}).
-  
+
 {% endlist %}
 
 #### Suspension in the pool for fast responses
@@ -104,7 +104,7 @@ Try completing the tasks yourself. Ask your colleagues and friends to complete t
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 

@@ -72,7 +72,7 @@ To go back to the {% if locale == "en-com" %}**Projects**{% endif %}page, click 
 
 To go back to the {% if locale == "en-com" %}**Projects**{% endif %}page, click {% if locale == "en-com" %}**Finish**{% endif %}.
 
-Write short and clear [instructions](../glossary.md#task-instruction-ru).
+Write short and clear [instructions](../glossary.md#task-instruction).
 
 Save the changes.
 
@@ -104,7 +104,7 @@ Save the changes.
 1. To add an image, click ![](images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
 
 
-Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../glossary.md#tsv-file-definition-ru) with tasks.
+Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../glossary.md#tsv-file-definition) with tasks.
 
 Click **Show specifications** to see the input and output data fields.
 

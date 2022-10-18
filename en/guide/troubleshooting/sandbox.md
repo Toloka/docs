@@ -21,11 +21,11 @@ Create and run a task. It will appear in the list of tasks for your trusted Tolo
 
 Make sure that:
 
-1. The [pool](../../glossary.md#pool-ru) is started.
+1. The [pool](../../glossary.md#pool) is started.
 1. The Toloker is added as a trusted.
 1. The trusted Toloker is registered in the sandbox as a Toloker.
 1. The trusted Toloker didn't use social networks when registering.
-1. Your trusted Toloker matches the [filters](../../glossary.md#filtering-ru) you set.
+1. Your trusted Toloker matches the [filters](../../glossary.md#filtering) you set.
 
 #### How do I see my pool through the eyes of a Toloker?
 
@@ -58,7 +58,7 @@ To download only the control tasks (if you completed them in the interface), go 
 
 #### Is it possible to use the same account for the Sandbox and the public Toloka version?
 
-No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox-ru), [register](../concepts/access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
+No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox), [register](../concepts/access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
 
 #### I can't add a trusted Toloker.
 

@@ -7,7 +7,7 @@ Tolokers can be banned in two ways:
 
 ## How to ban a Toloker {#ban-yourself}
 
-You can block a Toloker's access to one or more [projects](../../glossary.md#project-ru). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](../../glossary.md#skill-ru) value lower than N and block their access to tasks. You can also unblock access.
+You can block a Toloker's access to one or more [projects](../../glossary.md#project). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](../../glossary.md#skill) value lower than N and block their access to tasks. You can also unblock access.
 
 To block access to tasks for a single Toloker:
 
@@ -20,8 +20,8 @@ To block access to tasks for a single Toloker:
    || {% if locale == "en-com" %}**Ban type**{% endif %} | Where to apply the ban:
 
        - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
-       - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list). 
-	   
+       - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).
+
    ||
    || {% if locale == "en-com" %}**Ban expires**{% endif %} | Set when to lift the ban.
 
@@ -31,16 +31,15 @@ We recommend blocking access temporarily in order to maintain the desired number
 
 To block access to tasks for multiple Tolokers:
 
-1. Select Tolokers by using the [filters](../../glossary.md#filtering-ru) on the [Tolokers]({{ users }}) page or upload a TSV file:
+1. Select Tolokers by using the [filters](../../glossary.md#filtering) on the [Tolokers]({{ users }}) page or upload a TSV file:
     {% if locale == "en-com" %}
-	
-    ```no-highlight
+    ```plaintext
     <annotator id 1>
     <annotator id 2>
     ...
     <annotator id n>
     ```
-	
+
     {% endif %}
 1. Click {% if locale == "en-com" %}**Ban**{% endif %}, then fill in the fields (see the table above).
 
@@ -93,7 +92,7 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers-ru) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
 
 {% endcut %}
 

@@ -27,9 +27,9 @@ See the complete code for all projects in the [Appendix](appendix-expanded-code.
 
 
 Each project consists of the following basic steps:
-1. **Create a project**. In the project, you describe the [input and output data](../../glossary.md#input-output-data-ru), [task interface](../../glossary.md#task-interface-ru), and [instructions](../../glossary.md#task-instruction-ru) for completing a task.
+1. **Create a project**. In the project, you describe the [input and output data](../../glossary.md#input-output-data), [task interface](../../glossary.md#task-interface), and [instructions](../../glossary.md#task-instruction) for completing a task.
 
-1. **Create a [task pool](../../glossary.md#pool-ru) in the project**. In the pool, you set up [quality control](../../glossary.md#quality-control-ru) and [filters](../../glossary.md#filtering-ru) for Tolokers.
+1. **Create a [task pool](../../glossary.md#pool) in the project**. In the pool, you set up [quality control](../../glossary.md#quality-control) and [filters](../../glossary.md#filtering) for Tolokers.
 
 1. **Upload a [file](https://tlk.s3.yandex.net/wsdm2020/dataset_1.tsv) with tasks to the pool**.
 

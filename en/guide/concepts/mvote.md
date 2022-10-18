@@ -1,15 +1,15 @@
 # Majority vote
 
-Majority vote is a [quality control](../../glossary.md#quality-control-ru) method based on matching responses from the majority of Tolokers who complete the same task. For example, if a task has an [overlap](../../glossary.md#overlap-ru) of “5” and three Tolokers selected the same answer, this is considered indirect confirmation of the correct response.
+Majority vote is a [quality control](../../glossary.md#quality-control) method based on matching responses from the majority of Tolokers who complete the same task. For example, if a task has an [overlap](../../glossary.md#overlap) of “5” and three Tolokers selected the same answer, this is considered indirect confirmation of the correct response.
 
 {% note info %}
 
-It only takes into account [regular tasks](../../glossary.md#general-task-p-ru), ignoring the responses to [control](../../glossary.md#control-task-p-ru) and [training](../../glossary.md#training-task-ru_1) tasks.
+It only takes into account [regular tasks](../../glossary.md#general-task-p), ignoring the responses to [control](../../glossary.md#control-task-p) and [training](../../glossary.md#training-task-ru_1) tasks.
 
 {% endnote %}
 
 
-Based on the percentage of correct responses, you can change the value of the Toloker's [skill](../../glossary.md#skill-ru) or block their access to tasks.
+Based on the percentage of correct responses, you can change the value of the Toloker's [skill](../../glossary.md#skill) or block their access to tasks.
 
 The rule is activated when the task overlap is complete.
 
@@ -68,7 +68,7 @@ The Tolokers will be assigned the following skills based on **majority vote**:
 ||Toloker 1 | (1+0+1)/3=66% correct ||
 ||Toloker 2 | (0+1+0)/3=33% correct ||
 ||Toloker 3 | (1+0+1)/3= 66% correct||
-||Toloker 4 | (0+1+0)/3=33% correct || 
+||Toloker 4 | (0+1+0)/3=33% correct ||
 ||Toloker 5 | (1+1+1)/3=100% correct||
 |#
 
@@ -76,7 +76,7 @@ The Tolokers will be assigned the following skills based on **majority vote**:
 
 Let's say the task Toloker has to select at least three matching categories out of twenty or report that the image is not displayed. Since there can be multiple combinations of categories, the rule calculation will mostly include tasks where all the Tolokers responded **Not displayed**. Those might be either correct or “fraudulent” responses from Tolokers who just clicked through the tasks in a hurry. In any case, it would be unreliable to base the skill on these responses.
 
-Try using [decomposition](solution-architecture.md) or [control tasks](../../glossary.md#control-task-ru). This way you can better assess the quality of your Tolokers.
+Try using [decomposition](solution-architecture.md) or [control tasks](../../glossary.md#control-task). This way you can better assess the quality of your Tolokers.
 
 #### Don't set the threshold {% if locale == "en-com" %}**Accept as majority**{% endif %} below 50% of the overlap or equal to the overlap.
 
@@ -129,26 +129,26 @@ If this field is not filled in, the calculation includes only task responses fro
 [Learn more](remember-values.md) about how this field works.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 - {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed tasks.
-    
+
 - {% if locale == "en-com" %}**% correct answers**{% endif %} — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).
-    
+
 - {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
 - {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
-    
+
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
-    
+
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-    
+
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
-    
+
 - {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.
-    
+
 - {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
-    
+
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.||
 |#
 
@@ -171,7 +171,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
   ![](../_images/control-rules/mvote/qcr-mvote_example1_1.png)
   ![](../_images/control-rules/mvote/qcr-mvote_example1_2.png)
-  
+
   Both rules work independently:
 
   1. If the Toloker gives at least 3 responses to the tasks, the percentage of correct answers is written as the skill value.
@@ -183,7 +183,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
    ![](../_images/control-rules/mvote/qcr-mvote_example-1_1.png)
    ![](../_images/control-rules/mvote/qcr-mvote_example-1_2.png)
-   
+
    The Toloker is blocked after the first incorrect response to the first, second or third task. However, the skill isn't set. Since the ban reason is not specified, there is no way to find out why the Toloker is banned.
 
 - Alternative settings
@@ -192,9 +192,9 @@ The assignments submitted by banned Tolokers will be taken into account if they 
   ![](../_images/control-rules/mvote/qcr-mvote_example1a_2.png)
   ![](../_images/control-rules/mvote/qcr-mvote_example1a_3.png)
   ![](../_images/control-rules/mvote/qcr-mvote_example1a_4.png)
-  
+
   All rules are applied independently:
-  
+
   1. If the Toloker gives at least 3 responses to the tasks, the percentage of correct answers is written as the skill value.
   1. If the Toloker gives 2 incorrect responses to 3 tasks, they are blocked in the pool for 10 days.
   1. If the Toloker gives 2 incorrect responses to 4 tasks, they are blocked in the pool for 10 days.
@@ -219,15 +219,15 @@ The assignments submitted by banned Tolokers will be taken into account if they 
   {% cut "Example of filter settings" %}
 
   ![](../_images/other/qcr-control_example_filter.png)
-  
+
   {% endcut %}
 
 - Incorrect settings
 
   ![](../_images/control-rules/mvote/qcr-mvote_example-2.png)
-  
+
   This rule will never take effect because the number of responses counted ({% if locale == "en-com" %}**Recent values to use**{% endif %}) is less than the number of responses in the rule ({% if locale == "en-com" %}**number of responses**{% endif %}).
-  
+
 {% endlist %}
 
 #### Blocking for incorrect responses
@@ -237,13 +237,13 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 - Correct settings
 
   ![](../_images/control-rules/mvote/qcr-mvote_example3.png)
-  
+
   If the percentage of correct responses is less than 40%, the Toloker is blocked on the project for 30 days.
 
 - Incorrect settings
 
   ![](../_images/control-rules/mvote/qcr-mvote_example-3.png)
-  
+
   If the percentage of correct responses is less than 40%, the Toloker is blocked on the project for 30 days. The rule will be applied once, after the fifth response.
 
 {% endlist %}
@@ -252,7 +252,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 

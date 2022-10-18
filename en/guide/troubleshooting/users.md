@@ -11,7 +11,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 #### How do I view information about Tolokers?
 
-You can view information about Tolokers of your tasks on the [Tolokers]({{ users }}) page. To view information about a Toloker, select their ID. The requester can access the following data in the Toloker profile: country and city, age, education, language skills. On the **Metainformation** tab, you can find the versions of the browser and operating system, the User-agent type, region detected by IP, and other Toloker parameters. To select the Tolokers for your [pool](../../glossary.md#pool-ru) based on their profile, device, geo location, and other parameters, use [filters](../concepts/filters.md).
+You can view information about Tolokers of your tasks on the [Tolokers]({{ users }}) page. To view information about a Toloker, select their ID. The requester can access the following data in the Toloker profile: country and city, age, education, language skills. On the **Metainformation** tab, you can find the versions of the browser and operating system, the User-agent type, region detected by IP, and other Toloker parameters. To select the Tolokers for your [pool](../../glossary.md#pool) based on their profile, device, geo location, and other parameters, use [filters](../concepts/filters.md).
 
 #### Do you verify the information entered by the Toloker in the profile?
 
@@ -27,7 +27,7 @@ The requester can't see the full details about specific Tolokers. For example, t
 
 #### More than 500 Tolokers passed the training, but the training skill shows only 30.
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker-ru)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 [Other questions](support.md#help)
 
@@ -53,7 +53,7 @@ You can deny access to the pool if the Toloker's responses are [too fast](../con
 
 #### Can I ask a Toloker to redo the task if they made mistakes in it?
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers-ru) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
 
 #### Can I fix something in a completed task myself?
 

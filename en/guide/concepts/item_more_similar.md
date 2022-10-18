@@ -1,6 +1,6 @@
 # Project 4. Which of the found items is most similar to the original?
 
-In this [project](../../glossary.md#project-ru), Tolokers compare images of shoes with the original image and decide which pair of images is most similar. To make a comparison in the project, add the results from the [second project](find_an_item_in_store.md). To learn how, see **Prepare and upload a [file](../../glossary.md#tsv-file-definition-ru) with tasks**.
+In this [project](../../glossary.md#project), Tolokers compare images of shoes with the original image and decide which pair of images is most similar. To make a comparison in the project, add the results from the [second project](find_an_item_in_store.md). To learn how, see **Prepare and upload a [file](../../glossary.md#tsv-file-definition) with tasks**.
 
 ## Create a project {#create_project}
 
@@ -175,7 +175,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
     }
     ```
 
-    1. Edit the [input and output data](../../glossary.md#input-output-data-ru) in the **Data specification** block.
+    1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
     1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
 
@@ -231,7 +231,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction-ru).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
 
     1. **Instructions:**{% if locale == "en-com" %}
     ```
@@ -250,7 +250,7 @@ Learn more about working with the project in the [Project](project.md) section.
 
 ## Create a pool {#create_pool}
 
-To create a [pool](../../glossary.md#pool-ru):
+To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Which shoes look more alike**.
 

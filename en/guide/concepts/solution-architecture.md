@@ -1,6 +1,6 @@
 # Decomposition of the task
 
-Before you start creating a [project](../../glossary.md#project-ru), consider dividing it into several smaller projects. This is called _decomposition_.
+Before you start creating a [project](../../glossary.md#project), consider dividing it into several smaller projects. This is called _decomposition_.
 
 For example, in the [Business information (example with decomposition)](data-collection.md) section, the task can be divided into four projects:
 - [Project 1. Does the photo contain a particular item?](contain_item.md) — This is data preparation (filtering).
@@ -12,15 +12,15 @@ For example, in the [Business information (example with decomposition)](data-col
 ## Benefits of decomposition {#concept_l2j_phn_nlb}
 
 We recommend that you think through the architecture of a solution consisting of several projects in advance, since projects can be linked:
-- The result from one project can be the [input](../../glossary.md#input-output-data-ru) for another project.
-- You can assign a skill to Tolokers in one project and filter Tolokers by this [skill](../../glossary.md#skill-ru) in another project.
+- The result from one project can be the [input](../../glossary.md#input-output-data) for another project.
+- You can assign a skill to Tolokers in one project and filter Tolokers by this [skill](../../glossary.md#skill) in another project.
 
 After you decompose your project:
 
 - Tasks become easier and faster to perform.
 - Tasks require fewer skills.
-- It is easier to set up shortcuts in the [task interface](../../glossary.md#task-interface-ru), which also speeds up the work of Tolokers.
-- Task [instructions](../../glossary.md#task-instruction-ru) will be shorter, clearer, and more Toloker-friendly.
+- It is easier to set up shortcuts in the [task interface](../../glossary.md#task-interface), which also speeds up the work of Tolokers.
+- Task [instructions](../../glossary.md#task-instruction) will be shorter, clearer, and more Toloker-friendly.
 - You can make tasks cheaper for the reasons above.
 - The quality of results is higher and easier to control.
 - It may be easier to design a few simple tasks than a single large task. You'll have less difficulty creating the interface and writing instructions.
@@ -46,11 +46,11 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#left-off-acceptance-ru) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
+- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#left-off-acceptance) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
     {% note warning %}
 
-    In the assignments review, specify the [review period](../../glossary.md#review-time-ru) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
+    In the assignments review, specify the [review period](../../glossary.md#review-time) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
 
     {% endnote %}
 

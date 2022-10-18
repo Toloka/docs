@@ -6,7 +6,7 @@ All payments between requesters and Tolokers are made in U.S. dollars. The accou
 ![](../_images/other/balance-ru.png)
 - The green number is the account balance.
 
-- Gray indicates funds reserved for the tasks waiting to be [reviewed](../../glossary.md#left-off-acceptance-ru).
+- Gray indicates funds reserved for the tasks waiting to be [reviewed](../../glossary.md#left-off-acceptance).
 
 
 Money in the account is spent on the following items:
@@ -23,7 +23,7 @@ You can [track spending](#track-budget) in your profile. You can also download a
 
 ## Payment per task {#task-payment}
 
-The price of a task is set by the requester in the [pool settings](../../glossary.md#pool-ru). Money is deducted from the account as tasks are completed. If you [review assignments](accept.md) after they are completed, the money for [completed tasks](../../glossary.md#submitted-answers-ru) is first reserved, and then deducted.
+The price of a task is set by the requester in the [pool settings](../../glossary.md#pool). Money is deducted from the account as tasks are completed. If you [review assignments](accept.md) after they are completed, the money for [completed tasks](../../glossary.md#submitted-answers) is first reserved, and then deducted.
 
 
 ## Fees {#comission}
@@ -53,7 +53,7 @@ To get the {% if locale == "en-com" %}Statistics on requester's tasks{% endif %}
 
 1. Click {% if locale == "en-com" %}**Generate report (pdf)**{% endif %} and download the PDF file.
 
-    The report contains data on spending per project (including markup) and [rewards](../../glossary.md#bonus-ru) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
+    The report contains data on spending per project (including markup) and [rewards](../../glossary.md#bonus) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
 
 
 
@@ -78,7 +78,7 @@ Requesters who opted for a paper contract can create main and secondary accounts
 
 #### Keep in mind the following:
 
-- General [skills](../../glossary.md#skill-ru).
+- General [skills](../../glossary.md#skill).
 - Each secondary account has its own password and username.
 - You can't convert a secondary account into the main one.
 - Payments are only available for the main account, from which the funds are distributed to secondary accounts.

@@ -1,6 +1,6 @@
 # Project 2. Select an object in the image
 
-In this [project](../../glossary.md#project-ru), Tolokers will select image areas that contain a traffic sign. Use the results from [project 1](image-segmentation-project1.md) as source images.
+In this [project](../../glossary.md#project), Tolokers will select image areas that contain a traffic sign. Use the results from [project 1](image-segmentation-project1.md) as source images.
 
 ## Create a project {#create-project}
 
@@ -130,7 +130,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
     Tolokers get paid for completing the entire task suite.
 
     The number of tasks per suite is set when uploading tasks.
-	
+
 	{% endcut %}
 
     {% endcut %}
@@ -140,7 +140,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
     The general rule of pricing is the more time the Toloker spends to complete the task, the higher the price is.
 
     You can register in Toloka as a Toloker and find out how much other requesters pay for tasks.
-	
+
 	{% endcut %}
 
     {% endcut %}
@@ -151,10 +151,10 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     {% cut "What is non-automatic acceptance (assignment review)?" %}
 
-    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers-ru) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
     In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
-	
+
 	{% endcut %}
 
     {% endcut %}
@@ -196,7 +196,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
     1. In the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} field, enter the time in seconds. For example, `20`.
     1. Set a rule for a fast response: if the {% if locale == "en-com" %}**number of fast responses**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**ban**{% endif %} {% if locale == "en-com" %}**on requester**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. In the {% if locale == "en-com" %}**Reason**{% endif %} field, enter **Fast responses**.
 
-    This means that a user who completes a [task suite](../../glossary.md#task-page-ru) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
+    This means that a user who completes a [task suite](../../glossary.md#task-suite) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
 
     - {% if locale == "en-com" %}**Results of assignment review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
 
@@ -208,7 +208,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
-    [Control tasks](../../glossary.md#control-task-ru) and [majority vote](../../glossary.md#majority-vote-ru) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](control.md).
+    [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](control.md).
 
     {% note info %}
 
@@ -224,7 +224,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Prepare and upload tasks {#upload-file}
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition-ru) with tasks.
+1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
 
     1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](image-segmentation-project1.md).
 

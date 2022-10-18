@@ -4,19 +4,26 @@ The standard templates contain links to examples of photos that the Toloker need
 
 The easiest way to do this is to use the standard Toloka component described in the [Image](t-components/img.md) section.
 
-#### See what it looks like in the example of the “Photos of product and price tag” template
+{% cut "See what it looks like in the example of the “Photos of product and price tag” template" %}
 
 Before:
+
 ![](../_images/tutorials/advanced-features/af-show-pic-1.png)
+
 After:
+
 ![](../_images/tutorials/advanced-features/af-show-pic-2.png)
+
+{% endcut %}
 
 For your convenience, here is ready-made code for the “Photos of product and price tag” template with an image added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word “customization”.
 
-#### Ready-made code
+{% cut "Ready-made code" %}
 
-#### HTML block
- {% if locale == "en-com" %}
+{% cut "HTML block" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -481,8 +488,12 @@ not_var{{else}}
     </div>
 {{/if}}
 ```
+
 {% endif %}
-#### CSS block
+
+{% endcut %}
+
+{% cut "CSS block" %}
 
 ```css
 .task {
@@ -873,19 +884,27 @@ not_var{{else}}
 }
 ```
 
+{% endcut %}
+
+{% endcut %}
+
 #### Editing HTML
 
 1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
     Each block looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
+
     {% endif %}
+
 1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
@@ -893,13 +912,17 @@ not_var{{else}}
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
     Find the button in `main__block`, then find the `main__content-block` field with a link to the sample image that needs to be replaced with the image itself. The link to the sample image is located in the `main__ex` block and looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     <div class="main__ex">
     <a href="not_var{{texts.btn_ok.question_3.example_link_1}}" target="_blank" class="main__ex-link">Example</a>
     </div>
     ```
+
     {% endif %}
+
     Replace the link with the `img` component so that the code looks like this:
 
     ```html
@@ -911,7 +934,6 @@ not_var{{else}}
     In this code, an image is added to the button with the name `btn_ok`. If you added an image to another button, change the name `btn_ok` to the right one.
 
     Make sure that the `texts.btn_ok.question_3.example_link_1` parameter is the same as it was before replacing the link with the `img` component. This parameter contains the link to the image and is described as a constant in the JS code block.
-
 
 #### Editing CSS
 

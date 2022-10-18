@@ -4,21 +4,30 @@ If you have multiple response buttons, you can add another one. For example, in 
 
 Let's add a new button to the “Photos of product and price tag” task template, in which the Toloker will need to upload several photos and write a comment.
 
-#### What does it look like?
+{% cut "What does it look like?" %}
 
 Before:
+
 ![](../_images/tutorials/advanced-features/af-button-1.png)
+
 After:
+
 ![](../_images/tutorials/advanced-features/af-button-2.png)
+
 When the Toloker clicks the new button:
+
 ![](../_images/tutorials/advanced-features/af-button-3.png)
+
+{% endcut %}
 
 For your convenience, here is ready-made code with the new button for the “Photos of product and price tag” template. Use this code for self-check. You can find our additions to the code by searching for the word “customization”.
 
-#### Ready-made code
+{% cut "Ready-made code" %}
 
-#### HTML block
- {% if locale == "en-com" %}
+{% cut "HTML block" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -558,9 +567,15 @@ not_var{{else}}
     </div>
 {{/if}}
 ```
+
 {% endif %}
-#### JavaScript block
- {% if locale == "en-com" %}
+
+{% endcut %}
+
+{% cut "JavaScript block" %}
+
+{% if locale == "en-com" %}
+
 ```javascript
 var texts = {
     'task_title': 'Product and price tag photo',
@@ -648,7 +663,6 @@ var texts = {
     // customization fragment end
 
 };
-
 
 // Maximum distance of a Toloker from a store (in kilometers).
 var MAX_DISTANCE = 1;
@@ -1227,7 +1241,12 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     return constructorFunction;
 }
 ```
+
 {% endif %}
+
+{% endcut %}
+
+{% endcut %}
 
 #### Editing the output specification
 
@@ -1242,18 +1261,24 @@ Add 2 new fields to the output data specification:
 1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
     Each block looks like this:
+
     {% if locale == "en-com" %}
+
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
+
     {% endif %}
+
 1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Add a new button with the name `btn_new`. To do this, paste the following code after the last `main__block` block. It will add a new button for uploading photos and writing a comment.
+
     {% if locale == "en-com" %}
+
     ```html
     <div class="main__block">
     <div class="main__btn main__btn_red">
@@ -1288,12 +1313,16 @@ Add 2 new fields to the output data specification:
     </div>
     </div>
     ```
+
     {% endif %}
+
 1. Update the acceptance mode.
 
     The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```html
     {{#if (equal verdict "ok")}}
     <!-- code for the "ok" button in acceptance mode -->
     <div class="review__block">
@@ -1303,13 +1332,17 @@ Add 2 new fields to the output data specification:
     ...
     {{/if}}
     ```
+
     {% endif %}
+
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
     For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`. Let's add a `new_verdict` output value for the new button `btn_new`.
 
     Find the desired button by searching for the string `{{#if (equal verdict "response_button_value")}}` then find the `review`field where you want to add a new field and insert the following code after it:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- New verdict with uploaded data -->
     {{#if (equal verdict "new_verdict")}}
@@ -1341,10 +1374,12 @@ Add 2 new fields to the output data specification:
     </div>
     {{/if}}
     ```
+
     {% endif %}
+
     Update the interface header in the acceptance mode. Find the `header-review` block that contains such blocks for each button:
 
-    ```
+    ```html
     {{#if (equal verdict "ok")}}
     <div class="header-review__btn header-review__btn_green">
     not_var{{texts.btn_ok.title}}
@@ -1353,7 +1388,9 @@ Add 2 new fields to the output data specification:
     ```
 
     This block describes the `btn_ok` button and its output value `ok`. Paste the following code after the last button block:
+
     {% if locale == "en-com" %}
+
     ```html
     <!-- New verdict for the interface header -->
     {{#if (equal verdict "new_verdict")}}
@@ -1362,6 +1399,7 @@ Add 2 new fields to the output data specification:
     </div>
     {{/if}}
     ```
+
     {% endif %}
 
 #### Editing JS
@@ -1369,11 +1407,15 @@ Add 2 new fields to the output data specification:
 1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
     The elements are described as follows:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```plaintext
     'property': 'value'
     ```
+
     {% endif %}
+
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
 1. The `texts` constant at the very beginning of the file stores all texts for each button.
@@ -1381,8 +1423,10 @@ Add 2 new fields to the output data specification:
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`.
 
     For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     var texts = {
     //<common header text>
     'btn_ok': {
@@ -1398,9 +1442,13 @@ Add 2 new fields to the output data specification:
     }
     },
     ```
+
     {% endif %}
+
 1. To add the texts for the new `btn_new` button, put a comma after the curly bracket that closes the last button block and insert the following code:
+
     {% if locale == "en-com" %}
+
     ```javascript
     'btn_new': {
     'title': 'New button',
@@ -1415,29 +1463,37 @@ Add 2 new fields to the output data specification:
     }
     }
     ```
-    {% endif %}Change the values of the `title`, `description`, and `example_link_1` properties. The `title` property contains a title displayed above the field; the `description` property contains a question or a hint for Tolokers, and the `example_link_1` property contains a link to the example of an image.
+
+    {% endif %}
+
+    Change the values of the `title`, `description`, and `example_link_1` properties. The `title` property contains a title displayed above the field; the `description` property contains a question or a hint for Tolokers, and the `example_link_1` property contains a link to the example of an image.
+
 1. Find the `verdictsOut` variable. In the “Photos of product and price tag” template, it looks like this:
 
-    ```
+    ```javascript
     var verdictsOut = ['ok', 'no_price', 'no_item', 'no_shop'];
     ```
 
     Add the `new_verdict` output value to the new button like this:
 
-    ```
+    ```javascript
     var verdictsOut = ['ok', 'no_price', 'no_item', 'no_shop', 'new_verdict'];
     ```
 
 1. Find the `getTemplateData` function. It contains several blocks that look like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     if (<field checking condition>) {
     ...
     <code for displaying the uploaded data>
     ...
     }
     ```
+
     {% endif %}
+
     Paste the following code after any of these blocks. It is used to send the photos uploaded by the Toloker to the input data. You need this to display the data in the acceptance mode:
 
     ```javascript
@@ -1452,8 +1508,10 @@ Add 2 new fields to the output data specification:
 1. Add validation.
 
     Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
+
     {% if locale == "en-com" %}
-    ```
+
+    ```javascript
     else if (solution.output_values.verdict === 'ok') {
     // code for checking the ok button fields
     if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
@@ -1477,11 +1535,14 @@ Add 2 new fields to the output data specification:
     } else if (solution.output_values.verdict === 'no_shop') {
     // code for checking the no_shop button fields
     }
-
     ```
+
     {% endif %}
+
     Paste the following code after the closing curly bracket with the verdict for the last button:
+
     {% if locale == "en-com" %}
+
     ```javascript
     else if (solution.output_values.verdict === 'new_verdict') {
     if (!solution.output_values.imgs || solution.output_values.imgs.length === 0) {
@@ -1495,6 +1556,7 @@ Add 2 new fields to the output data specification:
     }
     }
     ```
+
     {% endif %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

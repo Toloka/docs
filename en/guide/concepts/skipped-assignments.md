@@ -1,6 +1,6 @@
 # Skipped assignments
 
-Restrict access to [pool](../../glossary.md#pool-ru) tasks for Tolokers who skip multiple [task suites](../../glossary.md#task-page-ru) in a row.
+Restrict access to [pool](../../glossary.md#pool) tasks for Tolokers who skip multiple [task suites](../../glossary.md#task-suite) in a row.
 
 Tolokers can [skip task suites](pool_statistic-pool.md#skipped-tasks) that seem too large or complex and choose easier tasks. They get paid in the same way. For example, the Toloker is evaluating medical articles for whether they contain prescriptions, dosage, and mentions of specific medications. They might decide to skip long texts and label only short ones that take 10-20 seconds to read.
 
@@ -10,7 +10,7 @@ Before you enable skipping tasks, we recommend that you read the section [Tips f
 
 ## When to use {#when-use}
 
-Restrict access to [pool](../../glossary.md#pool-ru) tasks for Tolokers who skip multiple task suites in a row if:
+Restrict access to [pool](../../glossary.md#pool) tasks for Tolokers who skip multiple task suites in a row if:
 - Tasks are different in volume and Tolokers might skip large tasks in order to only perform short ones;
 - Tasks must be performed in order and skipping tasks may affect the quality.
 
@@ -36,15 +36,15 @@ All fields in this rule are required. If you don't fill in at least one of them,
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
 - {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
-    
+
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
-    
+
 - {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
-    
+
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
-    
+
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-    
+
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).||
 |#
 
@@ -84,7 +84,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../glossary.md#skill-ru) in a project. You can choose the way to calculate the skill:
+It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 

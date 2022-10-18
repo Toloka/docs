@@ -6,7 +6,7 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 {% endnote %}
 
-Using markup, you can add correct responses and hints to tasks, as well as change task types. You can turn a general task into a [control task](../../glossary.md#control-task-ru) by adding the correct answer, or into a [training task](../../glossary.md#training-task-ru) by adding the correct answer and a hint.
+Using markup, you can add correct responses and hints to tasks, as well as change task types. You can turn a general task into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
 
 {% cut "Why this is important" %}
 
@@ -30,7 +30,7 @@ To save time, you can opt for having your control tasks edited by Toloka experts
 
 You can set up automatic markup if the following conditions are met:
 
-- Markup is only available for [control tasks](../../glossary.md#control-task-ru).
+- Markup is only available for [control tasks](../../glossary.md#control-task).
 - By default, markup is supported for object classification projects created with the following templates:
     - **Image classification**
     - **Hand gesture classification**

@@ -1,6 +1,6 @@
 # Project 2. Find a similar item in an online store
 
-In this [project](../../glossary.md#project-ru), Tolokers will search an online store for shoes that are similar to the ones shown in the task. Use the results from [project 1](contain_item.md#get_results) as source images.
+In this [project](../../glossary.md#project), Tolokers will search an online store for shoes that are similar to the ones shown in the task. Use the results from [project 1](contain_item.md#get_results) as source images.
 
 ## Create a project {#create_project}
 
@@ -96,7 +96,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
     }
     ```
 
-    1. Edit the [input and output data](../../glossary.md#input-output-data-ru) in the **Data specification** block.
+    1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
     1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
 
@@ -162,7 +162,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction-ru).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
 
     1. **Instructions:**{% if locale == "en-com" %}
     ```
@@ -181,7 +181,7 @@ Learn more about working with the project in the [Project](project.md) section.
 
 ## Create a pool {#create_pool}
 
-To create a [pool](../../glossary.md#pool-ru):
+To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Find the same or similar shoes in an online store**.
 
@@ -215,7 +215,7 @@ To create a [pool](../../glossary.md#pool-ru):
 
 1. Enter `0.01` in the **Price per task suite** field in the **Price** block.
 
-1. In the **Quality control** block, specify [quality control](../../glossary.md#quality-control-ru) settings for the pool:
+1. In the **Quality control** block, specify [quality control](../../glossary.md#quality-control) settings for the pool:
 
     1. Turn on the **Non-automatic acceptance** option.
 
@@ -239,7 +239,7 @@ To create a [pool](../../glossary.md#pool-ru):
 
     {% endnote %}
 
-    [Control tasks](../../glossary.md#control-task-ru) and [majority vote](../../glossary.md#majority-vote-ru) aren't used in this type of project, because links submitted by Tolokers must match, which is practically impossible. Learn more in [Quality control](control.md).
+    [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used in this type of project, because links submitted by Tolokers must match, which is practically impossible. Learn more in [Quality control](control.md).
 
 1. Enter `3` in the **The number of Tolokers to complete each task ** field in the **Task overlap** section.
 
@@ -258,7 +258,7 @@ To create a [pool](../../glossary.md#pool-ru):
 
 1. Save the file.
 
-1. Upload the resulting [file](../../glossary.md#tsv-file-definition-ru).
+1. Upload the resulting [file](../../glossary.md#tsv-file-definition).
 
     1. Click **Upload**. In the window that opens, configure the file upload settings.
 

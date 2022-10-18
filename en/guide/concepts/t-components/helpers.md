@@ -6,14 +6,13 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-
 Helpers are functions that you can use to pass any number of expressions. After processing the result, they return HTML code.
 
 ## Concatenation {#concat}
 
 To concatenate two or more strings into a single string, use the `{{concat "<string 1> " ... " <string _n_>"}}` helper. Example:
 
-```
+```html
 {{#each inputValues}}
   {{field type="input" name=(concat "field_" this)}}
 {{/each}}
@@ -23,14 +22,16 @@ To concatenate two or more strings into a single string, use the `{{concat "<str
 
 To get the key value from an object, use the `{{get <object> "<key>"}}` helper. Example:
 
-```
+```html
 {{get inputValuesObj "key"}}
 ```
 
 ## Logical operations and comparisons {#equal}
 
 Logical operations and comparison operations return either `true` or `false`.
+
 To apply a logical operation to boolean values, use the helpers:
+
 - AND: `{{and "a" … "n"}}`,
 - AND: `{{or "a" … "n"}}`,
 - Negation: `{{not "a"}}`.
@@ -42,12 +43,12 @@ To compare numeric values, use the helpers:
 - Less than: `{{lt "a" "b"}}`,
 - Less than or equal to: `{{lte "a" "b"}}`,
 - Equal to: `{{equal "a" "b"}}`.
+
     {% note info %}
 
     The `not_var{{equal}}` helper lets you compare values of any data type.
 
     {% endnote %}
-
 
 ## Recording output data field values in JSON {#js_fields}
 
@@ -57,15 +58,17 @@ To do this, specify the output data field in the `name` attribute of the compone
 
 For example, the values of the two text input fields are written as JSON objects in the `result` output data field.
 
-```
+```html
 {{field type="input" name="result.input1"}}
 {{field type="input" name="result.input2"}}
 ```
 
 The file with responses will contain the following in the `result` column:{% if locale == "en-com" %}
-```
+
+```html
 {result {"input1": "<Toloker's response", "input2": "Toloker's response>"}}
 ```
+
 {% endif %}
 
 {% include [contact-support](../../_includes/contact-support-help.md) %}

@@ -43,7 +43,7 @@ In the project, you define what the task will look like for the Toloker.
 
 1. Enter a clear name and write a short description for the project. Tolokers will see this in the task list.
 
-1. Write short and clear [instructions](../../glossary.md#task-instruction-ru).
+1. Write short and clear [instructions](../../glossary.md#task-instruction).
 
     Use HTML tags to insert links, pictures, and so on. Instructions for the field task should be easy to read, even on a mobile phone screen.
 
@@ -139,14 +139,14 @@ A pool is a set of paid tasks sent out for completion at the same time.
 1. In the **Quality control** block, enable the **Non-automatic acceptance** option and specify the number of days for checking the task in the **Review period** parameter. (for example, 7).
     #### What is non-automatic acceptance (assignment review)?
 
-    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers-ru) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
 1. In the **Additional settings** block, specify the **Time** allowed for completing a task suite. It should be enough to get to the place, find the specified point and upload photos. For field tasks, we recommend allocating a day — 86,400 seconds.
 1. Save the pool.
 
 ## Upload tasks {#tasks_upload}
  {% if locale == "en-com" %}
-Download the sample upload file on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file with tasks](../../glossary.md#tsv-file-definition-ru).
+Download the sample upload file on the pool page. There are links to **files** with regular, control, and training tasks. Use it to prepare your own [file with tasks](../../glossary.md#tsv-file-definition).
 {% endif %}
 1. Click **Upload**. In the window that opens, you can also download a sample file.
 

@@ -1,6 +1,6 @@
 # How to edit tasks by yourself
 
-You can turn a general task into a [control task](../../glossary.md#control-task-ru) by adding the correct answer, or into a [training task](../../glossary.md#training-task-ru) by adding the correct answer and a hint.
+You can turn a general task into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
 
 {% cut "What makes a good hint?" %}
 
@@ -123,9 +123,9 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 <tr>
 <td colspan="2">
 
-``` 
-"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", 
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" 
+```
+"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
 ```
 </td>
 </tr>
@@ -134,7 +134,7 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 
 **Extra tabs.**
 
-If the file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data-ru), you will get en error message.
+If the file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you will get en error message.
 
 For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are extra. </td>
 <td> Remove extra column separators in the above example — both `\t\t` characters.
@@ -143,18 +143,18 @@ For example, if 1 column is defined in the input, and two more `\t\t` tabs are a
 <tr>
 <td colspan="2">
 
-``` 
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" 
+```
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
 ```
 </td>
 </tr>
 <tr>
 <td>
 
-**The number of fields in the header and in the row doesn't match.** 
+**The number of fields in the header and in the row doesn't match.**
 
 </td>
-<td> 
+<td>
 Make sure that:
 
 - The number of tabs in the file structure is correct.
@@ -185,10 +185,10 @@ Make sure that:
 <tr>
 <td>
 
-**Invalid data in a “link” (“url”) field.** 
+**Invalid data in a “link” (“url”) field.**
 
 </td>
-<td> 
+<td>
 
 Make sure that:
 - Links start with the `http://`, `https://` or `www` prefix.
@@ -205,9 +205,9 @@ Make sure that:
 <tr>
 <td>
 
-**Unpaired quotation mark in a string.** 
+**Unpaired quotation mark in a string.**
 </td>
-<td> 
+<td>
 
 Check that all quotation marks are [escaped](pool_csv.md#string).
 </td>
@@ -296,7 +296,7 @@ The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-- If a [quality control rule](../../glossary.md#quality-control-rules-ru) changes a task's overlap, it will appear in a different set.
+- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 
@@ -359,7 +359,7 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% cut "How are the correct responses to control questions counted?" %}
 
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task-ru) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
+The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
 As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
 

@@ -1,8 +1,8 @@
 # Archiving a pool
 
-A [pool](../../glossary.md#pool-ru) with the {% if locale == "en-com" %}“Archived”{% endif %} status can't be started or edited and isn't available for the [task review](accept.md).
+A [pool](../../glossary.md#pool) with the {% if locale == "en-com" %}“Archived”{% endif %} status can't be started or edited and isn't available for the [task review](accept.md).
 
-By default, archived pools are not visible in the list of [project](../../glossary.md#project-ru) pools. To view them:
+By default, archived pools are not visible in the list of [project](../../glossary.md#project) pools. To view them:
 1. Open the project page.
 1. In the {% if locale == "en-com" %}**Pools**{% endif %} tab, select {% if locale == "en-com" %}**Archived**{% endif %}.
 The pool is automatically archived if none of the following actions is performed in the pool for a month:

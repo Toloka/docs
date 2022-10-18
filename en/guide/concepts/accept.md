@@ -3,7 +3,9 @@
 You started a pool with [non-automatic acceptance](offline-accept.md), and the Tolokers completed all your tasks. What next?
 
 - Review the Tolokers' responses before the end of the **Review period** that you specified. At the end of the period, unchecked responses will be accepted automatically.
+
 - If a Toloker didn't complete the task well, reject their response.
+
 - The Toloker can challenge your decision by submitting an [appeal](#appeal).
 
 ## How do I review the tasks? {#acception}
@@ -18,14 +20,13 @@ If you set [non-automatic acceptance](offline-accept.md) in the pool settings, y
 
 You can review assignments online or upload review results in a file.
 
+{% endcut %}
+
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
-
-
-{% endcut %}
 
 {% cut "Online review of one task." %}
 
@@ -38,7 +39,6 @@ To accept or reject one task:
     If responses include files uploaded by the Tolokers, click the {% if locale == "en-com" %}{% endif %} button to download them. To download all files from submitted responses in a ZIP archive, click {% if locale == "en-com" %}{% endif %} on the assignments review page.
 
 1. Check the responses, click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment (specify the reason).
-
 
 {% endcut %}
 
@@ -54,7 +54,6 @@ Example 2: The task where you need to download files attached by the Toloker (fo
 
 {% endnote %}
 
-
 To accept or reject responses:
 
 1. Click the {% if locale == "en-com" %}**Review assignments**{% endif %} button on the pool page.
@@ -66,6 +65,8 @@ To accept or reject responses:
     1. In {% if locale == "en-com" %}**Columns**{% endif %} leave only the {% if locale == "en-com" %}**assignment ID**{% endif %} option enabled.
 
     1. Disable the {% if locale == "en-com" %}**Separate assignments with empty row**{% endif %} option.
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
     1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
 
@@ -120,10 +121,9 @@ To accept or reject responses:
 
     - “-” if you reject the responses.
 
-    - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction-ru) wasn't followed).
+    - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction) wasn't followed).
 
 1. Upload the edited TSV file to Toloka (**Import/ Export → Upload results**).
-
 
 {% endcut %}
 
@@ -131,14 +131,13 @@ To accept or reject responses:
 
 Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements assignment review with the help of Tolokers.
 
-{% endcut %}
-
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
 
+{% endcut %}
 
 ## Appeal {#appeal}
 
@@ -147,6 +146,7 @@ Within 7 days after the review, the Toloker can challenge the result by [filing 
 You will receive a message from them that contains:
 
 - Toloker ID (`assignment_id`) in the subject.
+
 - Explanation of why responses should be accepted (optional).
 
 To consider an appeal, you need the response ID. If the Toloker wrote to you from the rejected response page, the response ID is automatically attached to their message as a link. If there is no ID, request it from the Toloker.
@@ -155,7 +155,6 @@ Do the following:
 
 - If the responses were mistakenly rejected, accept them.
 - Consider all appeals and respond on time — within 9 days (from the moment when the task was rejected).
-
 
 ## Acceptance procedure {#acceptance-procedure}
 
@@ -186,7 +185,7 @@ d) the result of the Task does not comply with the Instruction.
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers-ru) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
 
 {% endcut %}
 

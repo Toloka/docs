@@ -8,7 +8,7 @@ To set up **selective majority vote check**, you need a project, a pool, and a f
 
 This function allows you to set up [majority vote check](mvote.md) for only a portion of tasks.
 
-Depending on how many tasks the Toloker completed in `N` days, [overlap](../../glossary.md#overlap-ru) for certain tasks will be higher or lower than in the pool settings.
+Depending on how many tasks the Toloker completed in `N` days, [overlap](../../glossary.md#overlap) for certain tasks will be higher or lower than in the pool settings.
 
 {% cut "How it works" %}
 
