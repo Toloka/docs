@@ -58,7 +58,7 @@ To issue rewards to Tolokers:
 
 1. To credit rewards to one Toloker, click the link to their ID in the {% if locale == "en-com" %}**Toloker ID**{% endif %} field.
 
-    On the page that opens, click {% if locale == "en-com" %}{% endif %}.
+    On the page that opens, click {% if locale == "en-com" %}**Actions → Issue bonus**{% endif %}.
 
     To credit rewards to a group of Tolokers click {% if locale == "en-com" %}**Issue bonus**{% endif %}.
 

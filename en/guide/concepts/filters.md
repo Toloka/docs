@@ -6,12 +6,11 @@ To select Tolokers for a [pool](../../glossary.md#pool), click {% if locale == "
 
 From the drop-down list, select filters by profile data and device specifications.
 
-{% note info %}
+{% note tip %}
 
 To add filters faster, copy them from another pool (the {% if locale == "en-com" %}**Copy settings from…**{% endif %} button).
 
 {% endnote %}
-
 
 All filters added to the pool are applied simultaneously. The criteria within a single filter are combined with the logical OR operator.
 
@@ -20,7 +19,6 @@ All filters added to the pool are applied simultaneously. The criteria within a 
 Tasks in pools are automatically available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
 {% endnote %}
-
 
 ## Skill {#filter-skill}
 
@@ -59,7 +57,6 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 ![](../_images/location-job/filters/filter-skill-4.png)
 
 {% endcut %}
-
 
 ## Toloker profile {#filter-user-profile}
 
@@ -179,14 +176,13 @@ Select this filter if the browser type determines whether Tolokers match your pr
 
 - [Add tasks to the pool](pool.md)
 - Learn more about how to set up a pool:
+
     - [Setting up pricing](dynamic-pricing.md).
     - [Dynamic overlap](dynamic-overlap.md).
     - Selective [majority vote](selective-mvote.md) control.
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
-
-
 
 ### Troubleshooting {#troubleshooting}
 
@@ -251,6 +247,7 @@ In the main Toloka version, you can only assign a skill to Tolokers who have com
 {% cut "The Tolokers completed training for the first pool and got the skill. A week later, we cloned the pool, but all Tolokers lost their skill. Which parameter affects skill expiration? Do all the Tolokers need to complete the training again?" %}
 
 The validity period of the training skills is controlled by the **Retry after** parameter. The skill is deleted after a period specified in days in the **Retry after** field, if the Toloker:
+
 - Has a skill value lower than the one specified in the **Level required** field.
 - Didn't complete any tasks linked to training during this period.
 
@@ -291,8 +288,11 @@ There is no such option. If the skill is public, the Toloker sees it in their pr
 {% cut "How do I automatically assign skills based on Toloker responses to my questions?" %}
 
 You can do that using the [Control tasks](goldenset.md) rule.
+
 1. Upload the task file using **Smart mixing**.
+
 1. Specify `student` as the correct answer to the question. Don't take other questions into account (leave the fields empty or unselected).
+
 1. Add the [Control tasks](goldenset.md) rule to the pool: `if the percentage of correct control answers = 100, then set the skill value Student = 1`.
 
 {% cut "See the screenshot" %}

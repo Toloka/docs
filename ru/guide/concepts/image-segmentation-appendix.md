@@ -4,8 +4,9 @@
 
 **Спецификации:**
 
-**Входные данные:**
-
+#|
+||**Входные данные:**|**Выходные данные:**||
+||
 ```json
 {
     "image": {
@@ -15,9 +16,7 @@
     }
 }
 ```
-
-**Выходные данные:**
-
+|
 ```json {
     "result": {
         "type": "string",
@@ -26,6 +25,8 @@
     }
 }
 ```
+||
+|#
 
 Блок **HTML:**
 
@@ -81,8 +82,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Спецификации:**
 
-**Входные данные:**
-
+#|
+||**Входные данные:**|**Выходные данные:**||
+||
 ```json
 {
     "image": {
@@ -92,9 +94,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
 }
 ```
-
-**Выходные данные:**
-
+|
 ```json
 {
     "result": {
@@ -104,6 +104,8 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     }
 }
 ```
+||
+|#
 
 Блок **HTML:**
 
@@ -156,8 +158,9 @@ height: max-content;
 
 **Спецификации:**
 
-**Входные данные:**
-
+#|
+||**Входные данные:**|**Выходные данные:**||
+||
 ```json
 {
     "image": {
@@ -177,9 +180,7 @@ height: max-content;
     }
 }
 ```
-
-**Выходные данные:**
-
+|
 ```json
 {
     "result": {
@@ -189,6 +190,8 @@ height: max-content;
     }
 }
 ```
+||
+|#
 
 Блок **HTML:**
 

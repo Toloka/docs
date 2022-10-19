@@ -18,15 +18,12 @@ Toloka is not responsible for such changes or for placing them in this section w
 
 {% endnote %}
 
-
 #### Terms of use
 
 Photo hosting | Maximum image size | Registration | Trial period
 ----- | ----- | ----- | -----
 [imgbb]({{ imgbb }}) | 32 MB | No | —
- {% if locale == "en-com" %}
-[imgur]({{ imgur }}) | 20 MB | Yes | —
-{% endif %}
+{% if locale == "en-com" %}[imgur]({{ imgur }}) | 20 MB | Yes | —{% endif %}
 [pics.st]({{ pics-st }}) | 2 MB | No | —
 [postimages]({{ postimages }}) | 24 MB | No | —
 [ImageShack]({{ imageshack }}) | 25 MB | Yes | 30 days
@@ -36,10 +33,15 @@ Photo hosting | Maximum image size | Registration | Trial period
 For example, [imgbb]({{ imgbb }}):
 
 1. Go to the photo hosting website.
+
 1. Click **Start uploading**.
+
 1. Select files from your device. Before uploading, you can change the image size and add a title or description.
+
 1. Click **Upload**.
+
 1. In {% if locale == "en-com" %}**Embed codes**{% endif %} choose {% if locale == "en-com" %}**HTML full linked**{% endif %}.
+
 1. Copy the link, which is indicated in quotation marks after `src=` (for example, `https://i.ibb.co/HhK1B5J/image.png`), and add it to the file with tasks.
 
 ## Cloud storage {#cloud}
@@ -58,7 +60,6 @@ Toloka is not responsible for such changes or for placing them in this section w
 
 {% endnote %}
 
-
 #### Trial terms
 
 Storage type | Trial length | Free storage size | Grant amount | Additional information.
@@ -67,7 +68,6 @@ Storage type | Trial length | Free storage size | Grant amount | Additional info
 [Azure Blob Storage](azure-cloud-storage.md) | 12 months | 5 GB | $200 within 30 days | [Free account]({{ azure-free }})
 [Google Cloud Storage](google-cloud-storage.md) | 90 days | 5 GB | $300 | [Trial period]({{ google-cloud-free-trial }})
 [Yandex Object Storage](use-object-storage.md) | 60 days | 5 TB | $50 | [Trial period]({{ yandex-cloud-free-trial }})
-
 
 ## Creating a file with tasks {#tsv-create}
 
@@ -81,7 +81,7 @@ For example, if you want to use images in the `image` field, specify the file li
 
 - Amazon S3
 
-  ```
+  ```plaintext
   INPUT:image
   https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image1.png
   https://mybucket.s3.eu-north-1.amazonaws.com/newfolder/image2.png
@@ -89,7 +89,7 @@ For example, if you want to use images in the `image` field, specify the file li
 
 - Azure Blob Storage
 
-  ```
+  ```plaintext
   INPUT:image
   https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image1.png
   https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
@@ -97,7 +97,7 @@ For example, if you want to use images in the `image` field, specify the file li
 
 - Google Cloud Storage
 
-  ```
+  ```plaintext
   INPUT:image
   https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
   https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
@@ -105,11 +105,12 @@ For example, if you want to use images in the `image` field, specify the file li
 
 - Yandex Object Storage
 
-  ```
+  ```plaintext
   INPUT:image
   https://storage.yandexcloud.net/my-bucket/1.jpg
   https://storage.yandexcloud.net/my-bucket/2.jpg
   ```
+
 {% endlist %}
 
 If these recommendations didn't help:

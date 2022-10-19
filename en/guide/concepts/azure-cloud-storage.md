@@ -6,7 +6,6 @@
 
 {% endnote %}
 
-
 To try [Microsoft Azure]({{ azure-blob }}), create a [free account]({{ azure-free }}).
 
 #### Trial terms
@@ -14,7 +13,6 @@ To try [Microsoft Azure]({{ azure-blob }}), create a [free account]({{ azure-fre
 Length | Free storage size | Grant amount
 ----- | ----- | -----
 12 months | 5 GB | $200 within 30 days
-
 
 ## Steps to follow {#workflow}
 
@@ -26,14 +24,13 @@ To get links to files:
 1. [Upload files to the container.](#upload)
 1. [Copy links.](#get-files)
 
-
 ## Create a storage account {#create-account}
 
 1. Open the Azure [main page]({{ azure-home }}) and click ![](../_images/tutorials/cloud-storage/azure/more-icon.png) in the top left corner.
 
 1. Select **Storage accounts**.
 
-1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.png)**Create**.
+1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.png) **Create**.
 
 1. On the **Basic** tab, select the subscription for the new storage account.
 
@@ -42,22 +39,22 @@ To get links to files:
 1. Select the region closest to your Tolokers. For example, for Tolokers from Germany: .
 
     {% cut "What it looks like in the interface" %}
-	
-	![](../_images/tutorials/cloud-storage/azure/create-storage-account.png)
-	
-	{% endcut %}
+
+    ![](../_images/tutorials/cloud-storage/azure/create-storage-account.png)
+
+    {% endcut %}
 
 1. Leave other fields unchanged. Click **Review + create**.
 
 1. Wait till it opens. Click **Go to resource.**
 
-
+    ![](../_images/tutorials/cloud-storage/azure/deployment-complete.png)
 
 ## Create a container. {#container}
 
 1. In the **Data storage** section in the left menu, select **Containers**.
 
-1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.png)**Container**.
+1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.png) **Container**.
 
 1. Enter the container name.
 
@@ -70,32 +67,29 @@ To get links to files:
 
 1. Click **Create**.
 
-
 {% note info %}
 
 You can set up the lifetime of files in the container so that they are automatically deleted after a specified number of days. [Learn more]({{ azure-ttl }}).
 
 {% endnote %}
 
-
-
 ## Upload your files to the container. {#upload}
 
 1. To open the container, click on its name.
 
-1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/send-icon.png)**Send**.
+1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/send-icon.png) **Send**.
 
 1. {% cut "Upload files" %}
 
     Select files on your device.
-	
-	{% endcut %}
+
+    {% endcut %}
 
     {% cut "Upload files to the folder." %}
 
     In the **Send to folder** field in the **Additional** section, enter the name of the folder. If the folder doesn't exist, it will be created.
-	
-	{% endcut %}
+
+    {% endcut %}
 
     {% note warning %}
 
@@ -105,8 +99,6 @@ You can set up the lifetime of files in the container so that they are automatic
 
 1. Click **Send**.
 
-
-
 ## Copy links. {#get-files}
 
 1. Select the uploaded file and copy its **URL** from the **Review** section.
@@ -114,21 +106,25 @@ You can set up the lifetime of files in the container so that they are automatic
 1. All file links are created by the same template.
 
     Links look like this:
+
     {% if locale == "en-com" %}
-	
-    ```
+
+    ```plaintext
     https://<storage-account>.blob.core.windows.net/<container>/<filename>
     ```
-	
+
     {% endif %}
+
     The link in the folder looks like this:
+
     {% if locale == "en-com" %}
-	
-    ```
+
+    ```plaintext
     https://<storage-account>.blob.core.windows.net/<container>/<file-path>/<filename>
     ```
-	
+
     {% endif %}
+
     {% note info %}
 
     To quickly get links to other files, copy the link to one of them and replace `<file-name>` with the names of other files.
@@ -139,7 +135,7 @@ You can set up the lifetime of files in the container so that they are automatic
 
     For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 
-    ```
+    ```plaintext
     INPUT:image
     https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image1.png
     https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png

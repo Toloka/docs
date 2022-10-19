@@ -103,7 +103,7 @@
 
 - Неправильная настройка
 
-  ![](../_images/control-rules/control-tasks/qcr-control_example-1_1.png =700)
+  ![](../_images/control-rules/control-tasks/qcr-control_example-1_1.png =700x)
 
   ![](../_images/control-rules/control-tasks/qcr-control_example-1_2.png =700x)
 

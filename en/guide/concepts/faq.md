@@ -7,10 +7,13 @@ This section includes links to sections of the guide and blog posts with tips an
 To make it easier and faster to launch projects in Toloka, we developed a new tool — Template Builder. It is a user-friendly **JSON** interface editor.
 
 Read in the blog:
-- Learn about the benefits of Template Builder and how to use it in the article {% if locale == "en-com" %}[Template Builder in Toloka]({{ toloka-blog-template-builder-en }}){% endif %}.
-- {% if locale == "en-com" %}[Toloka Digest]({{ toloka-blog-digest-en }}){% endif %}.
-You can also read the [Template Builder Help]({{ tb-quickstart }}).
 
+- Learn about the benefits of Template Builder and how to use it in the article {% if locale == "en-com" %}[Template Builder in Toloka]({{ toloka-blog-template-builder-en }}){% endif %}.
+
+{% if locale == "en-com" %}
+- [Toloka Digest]({{ toloka-blog-digest-en }}){% endif %}.
+
+You can also read the [Template Builder Help]({{ tb-quickstart }}).
 
 ## How to create tasks {#how}
 
@@ -23,11 +26,13 @@ Learn more about the benefits of decomposition and when to use it in [Task decom
 You can also read [Mistakes related to project architecture](frequent-customer-errors.md). | A clear and user-friendly interface improves the quality of results, helps Tolokers complete tasks faster, and lets you set a lower price per task.
 
 Read about how to create a good interface in our blog
- {% if locale == "en-com" %}[Guidelines for Effective Interfaces]({{ toloka-blog-interfaces-en }}).{% endif %} 
+
+{% if locale == "en-com" %}[Guidelines for Effective Interfaces]({{ toloka-blog-interfaces-en }}).{% endif %}
+
 Also see the following sections:
 
 - [Mistakes related to the task interface](frequent-customer-errors.md)
-    
+
 - [Adapt a task for mobile devices](mobile.md)||
 |#
 
@@ -36,7 +41,6 @@ Also see the following sections:
 If your tasks are not displayed or are displayed incorrectly, Tolokers are unable to complete them, and you lose time and money.
 
 You can also read [Mistakes related to uploading tasks](frequent-customer-errors.md).
-
 
 ## How to get good responses {#how-to-get}
 

@@ -3,11 +3,12 @@
 To send tasks for completion, you must have money in your Toloka account. {% if locale == "en-com" %}For more information, see [Topping up your account](refill.md).{% endif %}
 
 All payments between requesters and Tolokers are made in U.S. dollars. The account balance is shown in the main menu:
+
 ![](../_images/other/balance-ru.png)
+
 - The green number is the account balance.
 
 - Gray indicates funds reserved for the tasks waiting to be [reviewed](../../glossary.md#left-off-acceptance).
-
 
 Money in the account is spent on the following items:
 
@@ -17,21 +18,17 @@ Money in the account is spent on the following items:
 
 - [Rewards for Tolokers](bonus.md)
 
-
 You can [track spending](#track-budget) in your profile. You can also download a task report in a PDF file. To monitor the funds available in your account, [set up notifications](#money-notification).
-
 
 ## Payment per task {#task-payment}
 
 The price of a task is set by the requester in the [pool settings](../../glossary.md#pool). Money is deducted from the account as tasks are completed. If you [review assignments](accept.md) after they are completed, the money for [completed tasks](../../glossary.md#submitted-answers) is first reserved, and then deducted.
-
 
 ## Fees {#comission}
 
 The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md). It is 30%, but not less than $0.005.
 
 The amount by project is shown in your [profile]({{ profile }}) (on the {% if locale == "en-com" %}**Expenses**{% endif %} tab). You can see total fees for the pool tasks on the pool page (the {% if locale == "en-com" %}**Budget spent (+ markup)**{% endif %} and {% if locale == "en-com" %}**Approximate budget (+ markup)**{% endif %} fields).
-
 
 ## Expenses in the requester's profile {#track-budget}
 
@@ -41,9 +38,7 @@ To see spending data in your profile, go to the {% if locale == "en-com" %}**Exp
 
 - {% if locale == "en-com" %}**Markup**{% endif %}: Fee for using Toloka.
 
-
 You can set up email notifications and get messages when you have less than 5 dollars left on your account.
-
 
 ## Report on tasks {#stat-report}
 
@@ -55,8 +50,6 @@ To get the {% if locale == "en-com" %}Statistics on requester's tasks{% endif %}
 
     The report contains data on spending per project (including markup) and [rewards](../../glossary.md#bonus) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
 
-
-
 ## Notifications of account status {#money-notification}
 
 To get notifications when your account has less than 5 dollars remaining, click {% if locale == "en-com" %}**Edit**{% endif %} in the [requester profile]({{ profile }}). Select options:
@@ -64,8 +57,6 @@ To get notifications when your account has less than 5 dollars remaining, click 
 - {% if locale == "en-com" %}**Enable notifications**{% endif %}.
 
 - {% if locale == "en-com" %}**Send copies of notifications by email**{% endif %}, if you want to get messages by email.
-
-
 
 ## Main and secondary accounts {#parent-child-accounts}
 
@@ -85,7 +76,6 @@ Requesters who opted for a paper contract can create main and secondary accounts
 - Financial reports and closing documents are issued to the main account and are not sent to secondary accounts.
 
 If you want to create main and secondary accounts, [write to support](../troubleshooting/support.md#new).
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -133,10 +123,10 @@ You specify the top-up amount in USD. On the **Balance**, it's converted into ru
 
 You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](refill.md#step-by-step) with step-by-step instructions.
 
-{% endcut %}
-
 [Get closing documents and invoices](../troubleshooting/support.md#feedback_g3b_vj3_qjb)
 
 [Refund money transferred to the Toloka account](../troubleshooting/support.md#feedback_khw_wc3_qjb)
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

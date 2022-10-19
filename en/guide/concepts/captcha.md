@@ -13,6 +13,7 @@ Restrict access to tasks for Tolokers who fail to enter captcha several times in
 #### Don't use it if:
 
 - There aren't very many tasks in the pools. For example, if the task is a survey on a single page, a captcha won't help you control the quality, since the minimum frequency of captcha display is every 10 assignments.
+
 - It's difficult or impossible to automate user actions: selecting areas, performing field tasks or any tasks where Tolokers need to attach files or write meaningful texts.
 
 ## How to configure {#rule}
@@ -22,7 +23,6 @@ Restrict access to tasks for Tolokers who fail to enter captcha several times in
 The **If** and **then** fields in this rule are mandatory. If you don't fill in at least one field, you won't be able to save the rule.
 
 {% endnote %}
-
 
 #|
 || **Field**  | **Overview** ||
@@ -34,6 +34,7 @@ If the field is filled in, the corresponding number of captcha entries is used. 
 
 [Learn more](remember-values.md) about how this field works.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**number of responses**{% endif %} — The number of entered captchas (less than or equal to the number in the {% if locale == "en-com" %}**Recent values to use**{% endif %} field).
 
 - {% if locale == "en-com" %}**correct responses (%)**{% endif %} — The percentage of correct responses (from 0 to 100).
@@ -68,7 +69,6 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
-
 #### Blocking for incorrect captcha entries
 
 {% list tabs %}
@@ -89,7 +89,6 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ## Troubleshooting {#troubleshooting}
 
-
 {% cut "Should I create a skill for every pool?" %}
 
 It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
@@ -105,7 +104,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 
@@ -124,12 +122,18 @@ Indeed, this rule is probably too strict. Even the most careful user can make a 
 {% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
 
 The frequency of issuing [captchas](captcha.md) is set up in the pool.
-#### No
-Don't show captchas.
-#### Low
-Show a captcha after every 20 assignments.
-#### Average/High
-Show a captcha after every 10 assignments.
+
+No
+
+: Don't show captchas.
+
+Low
+
+: Show a captcha after every 20 assignments.
+
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -138,12 +142,18 @@ Show a captcha after every 10 assignments.
 [Captcha](captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
 
 The frequency of issuing captchas is configured in the pool.
-#### No
-Don't show captchas.
-#### Low
-Show a captcha after every 20 assignments.
-#### Average/High
-Show a captcha after every 10 assignments.
+
+No
+
+: Don't show captchas.
+
+Low
+
+: Show a captcha after every 20 assignments.
+
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 

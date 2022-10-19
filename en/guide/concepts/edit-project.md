@@ -3,7 +3,8 @@
 You can view the list of created [projects](../../glossary.md#project) on the **Projects** page. Open the project page to view the [list of pools](pool-main.md), [the project rating](project_rating_stat.md) and [the project statistics](project-statistic.md).
 
 To edit project parameters, click ![](../_images/location-job/project/edit-project.svg) in the list of projects or  on the project page.
-{% note warning %}
+
+{% note alert %}
 
 If you edit a [required field](incoming.md#required), the changes apply only to new [pools](pool-main.md). Existing [pools](../../glossary.md#pool) will continue using the previous version of the project.
 
@@ -69,6 +70,7 @@ If you want labeling to be done by Tolokers from different countries, you can [t
 
 - [Create a task pool](pool-main.md) in the project.
 - Learn more about how to set up a project:
+
     - [Writing instructions](instruction.md).
     - [Input and output data](incoming.md).
     - [Task interface](spec.md).

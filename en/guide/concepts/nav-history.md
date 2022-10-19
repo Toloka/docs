@@ -3,6 +3,7 @@
 To download the history of skill changes:
 
 1. Go to the [Tolokers]({{ users }}) page.
+
 1. Select the Tolokers whose skill changes you want to view.
 
    {% include [select-tolokers](../_includes/select-tolokers.md) %}
@@ -24,7 +25,6 @@ To download the history of skill changes:
 
 To view statistics about use of a skill, select it on the [Skills]({{ skills }}) page.
 
-
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}
@@ -42,7 +42,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 

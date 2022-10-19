@@ -11,6 +11,7 @@ If a project has a control pool, Tolokers get access to the general tasks based 
 ## When to use {#usage}
 
 Use the exam if your tasks are difficult and you want to check how Tolokers cope with them after completing the [training](../../glossary.md#training-pool).
+
 ## Features {#features}
 
 - The number of tasks in the exam must be a multiple of the number of tasks per suite. Otherwise, the Tolokers won't receive the last suite and won't be able to complete the exam.
@@ -18,41 +19,56 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
     {% cut "Example" %}
 
     If the exam consisted of two suites, 10 tasks each, and you increased the number of tasks per suite to 12, there won't be enough tasks for two full suites. Tolokers won't receive the second suite and won't be able to complete the exam.
-	
-	{% endcut %}
+
+    {% endcut %}
 
 - If the Toloker presses the {% if locale == "en-com" %}**Skip**{% endif %} button when taking the exam, the entire page isn't counted. In this case, the system won't have enough completed tasks to assign a skill to the Toloker.
 
     {% cut "How to avoid this" %}
 
     - In project editing mode, click {% if locale == "en-com" %}**Show common interface elements**{% endif %} and disable the {% if locale == "en-com" %}**Skip**{% endif %} button.
-    - Add more tasks to the pool than you need to calculate the skill, specify the required number of responses, and set the following Toloker requirement: `<exam skill> = Is missing`.
-    - Place all your tasks on one page.
-	
-	{% endcut %}
 
+        ![](../_images/control-rules/exam/common-interface.png =700x)
+
+    - Add more tasks to the pool than you need to calculate the skill, specify the required number of responses, and set the following Toloker requirement: `<exam skill> = Is missing`.
+
+        ![](../_images/control-rules/exam/control-tasks.png =700x)
+
+    - Place all your tasks on one page.
+
+    {% endcut %}
 
 ## Recommendations {#recomend}
 
 - Only use tasks with an unambiguous answer to avoid different interpretations.
+
 - Make sure that different response options have about the same frequency in your test.
+
 - After the exam, assign the Toloker a skill equal to their percentage of correct responses.
+
 - Use different skills for your training and control pools. The system will create the training skill automatically. Create the control skill yourself. Come up with a clear skill name and make the skill public. This way you won't get confused yourself or mislead Tolokers.
+
 - Set the same price per task suite for the exam and the main pool. If the price doesn't match, Tolokers won't be able to immediately start completing general tasks after passing the exam.
+
 - Don't add too many control tasks. Three to five pages is enough, depending on task complexity.
+
 - Don't forget to close the test as soon as you have enough Tolokers to label the main pool, or if labeling of the main pool has ended. Otherwise, the Tolokers will waste their time on the test.
 
 ## How do I set it up? {#configure}
 
 1. Open the project and click {% if locale == "en-com" %}**Add a pool**{% endif %}.
+
 1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}, go to the {% if locale == "en-com" %}**Additional settings**{% endif %} section, and select {% if locale == "en-com" %}**Exam**{% endif %} as the pool type.
+
 1. Link the training to the exam pool. In the {% if locale == "en-com" %}**Quality control**{% endif %} section, specify the name of the training and the level required. This way, you only let Tolokers take the exam if they passed the training pool.
 
     {% cut "Example" %}
 
+   ![](../_images/control-rules/exam/training.png =700x)
+
     Tolokers can take the exam if they answered at least `80%` of the training questions correctly.
-	
-	{% endcut %}
+
+    {% endcut %}
 
     {% note info %}
 
@@ -64,12 +80,16 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
     {% cut "Example" %}
 
+    ![](../_images/control-rules/exam/several-tries.png =700x)
+
     For example, completing 10 tasks is enough to pass the exam. The Toloker will be assigned an exam skill value equal to their percentage of correct responses.
-	
-	{% endcut %}
+
+    {% endcut %}
 
 1. Fill out the {% if locale == "en-com" %}**Price per task suite, $**{% endif %} box. You can set the price for this type of pool to zero, but it's better to make the exam paid.
+
 1. Click {% if locale == "en-com" %}**Create pool**{% endif %}.
+
 1. [Add tasks](pool.md) to the pool.
 
 ## Examples of settings {#examples}
@@ -81,17 +101,28 @@ By introducing training and testing, you can ensure that the labeling tasks go t
 Include some control tasks into your main pool (we recommend that they make up at least 1% of the total number of tasks). Set up quality control so that the Toloker is assigned a skill equal to their percentage of correct responses. That's the main skill of the project.
 
 In the {% if locale == "en-com" %}**Audience**{% endif %} section of the main pool, specify the Toloker requirements:
+
 - `<exam skill> ≥ 80`
+
 - `<basic skill> ≥ 70 or = Is missing`.
+
 In this case, your general tasks are only labeled by top-performing Tolokers or those new to your tasks.
+
+![](../_images/control-rules/exam/general-pool.png =700x)
 
 #### Passing the exam in several attempts
 
 Usually the test is passed once. However, you can give multiple chances to your Tolokers. For example, 10 tasks are enough to pass the test. Upload 5 pages, 10 tasks each, to the exam pool. In the pool settings, add a {% if locale == "en-com" %}**Control tasks**{% endif %} rule.
 
+![](../_images/control-rules/exam/several-tries.png =700x)
+
 In the {% if locale == "en-com" %}**Audience**{% endif %} section, specify the Toloker requirement: `<exam skill> < 80 or = Is missing`.
 
+![](../_images/control-rules/exam/exam-filter.png =700x)
+
 The Toloker will have 5 attempts to pass the test in this case. If they fail to reach the threshold value of the skill after completing the first 10 tasks, they may retry. To make the second attempt possible (for example, on another day), add the {% if locale == "en-com" %}**Submitted responses**{% endif %} rule in the pool settings.
+
+![](../_images/control-rules/exam/delayed-attempt.png =700x)
 
 ## Retry {#rehab}
 
@@ -103,12 +134,15 @@ Don't add too many tasks to the retry pool. Otherwise, not all Tolokers will wan
 
 {% endnote %}
 
-
 A retry pool is created similarly to the main pool and consists of control tasks. Go to the project and add a pool of the {% if locale == "en-com" %}**Retry**{% endif %} type. As with the exam, the price for this pool type can be zero.
 
 Use a skill to link the retry pool to the main pool. Use filters to set the main skill values that redirect Tolokers to the retry pool. For example, if the main pool is available to Tolokers with a skill of `70` or higher, send Tolokers to the retry pool if their skill is between `69` and `40`.
 
+![](../_images/control-rules/exam/rehab-filter.png =700x)
+
 Based on the Toloker's responses to the retry pool tasks, recalculate their main skill. In the {% if locale == "en-com" %}**Quality control**{% endif %} section, set a {% if locale == "en-com" %}**Control tasks**{% endif %} rule. Leave the {% if locale == "en-com" %}**Recent control and training task responses to use**{% endif %} box empty so that only the retry tasks are used for recalculation.
+
+![](../_images/control-rules/exam/skill-recalc.png =700x)
 
 A Toloker who gives enough correct responses gets access to the main pool again.
 

@@ -7,7 +7,9 @@ In addition to skills created by requesters, Toloka has [global skills](nav-cros
 ## How do I use skills? {#what-next}
 
 1. [Create a skill](nav-create.md). You create skills yourself.
+
 1. [Assign a skill](nav-assign.md) either manually or automatically.
+
 1. [Use the skill](nav-use.md), for example, to select Tolokers or manage overlap or price.
 
 If necessary, you can:
@@ -15,7 +17,6 @@ If necessary, you can:
 - [Edit](nav-edit.md) the skill value manually.
 - [Remove](nav-delete.md) skill for a specific Toloker.
 - [View the history](nav-history.md) of skill changes.
-
 
 ## Troubleshooting {#troubleshooting}
 

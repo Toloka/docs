@@ -26,225 +26,234 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Edit the task interface in the editor you selected:
 
-    #### Template Builder
+   {% list tabs %}
 
-    1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7feQ){% endif %} for this project with pre-configured validation, keyboard shortcuts, and task layout.
+    - Template Builder
 
-    The Toloker won't be able to submit the response until they:
+      1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7feQ){% endif %} for this project with pre-configured validation, keyboard shortcuts, and task layout.
 
-    - Visit the online store.
-    - Select one of the response options.
+          The Toloker won't be able to submit the response until they:
 
-    1. Click **Show specifications** to see the input and output data fields.
+          - Visit the online store.
+          - Select one of the response options.
 
-    - Input data fields:
+      1. Click **Show specifications** to see the input and output data fields.
 
-    - `image` — A link for uploading the image of the original product.
-    - `left_link` — A link to the product in the online store for the left button.
-    - `right_link` — A link to the product in the online store for the right button.
+          - Input data fields:
 
-    - Output data field: `result` — string for saving the Toloker's response.
+              - `image` — A link for uploading the image of the original product.
+              - `left_link` — A link to the product in the online store for the left button.
+              - `right_link` — A link to the product in the online store for the right button.
 
-    #### HTML/CSS/JS editor
+          - Output data field: `result` — string for saving the Toloker's response.
 
-    1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
-    {% if locale == "en-com" %}
-    ```
-    <div class="header">
-    <div class="left caption">
-    {{button label="Go to site" href=uploaded_link_left size="L"}}
-    <p class="url">not_var{{uploaded_link_left}}</p>
-    </div>
-    <div class="right caption">
-    <p class="url">not_var{{uploaded_link_right}}</p>
-    {{button label="Go to site" href=uploaded_link_right  size="L"}}
-    </div>
-    </div>
+    - HTML/CSS/JS editor
 
-    {{img src=image}}
+      1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-    <div class="content clearfix">
-    <div class="left page">
-    {{iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
-    </div>
-    <div class="right page">
-    {{iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
-    </div>
-    </div>
+          {% if locale == "en-com" %}
 
-    <div class="footer">
-    {{field type="radio" name="result" label="Left image is better" value="result_left" hotkey="1"}}
-    {{field type="radio" name="result" label="Right image is better" value="result_right" hotkey="2"}}
-    </div>
-    ```
-    {% endif %}
-    1. In the **js** block, edit the code by adding the following lines before `OnRender`.
-    {% note warning %}
+          ```html
+          <div class="header">
+          <div class="left caption">
+          {{button label="Go to site" href=uploaded_link_left size="L"}}
+          <p class="url">not_var{{uploaded_link_left}}</p>
+          </div>
+          <div class="right caption">
+          <p class="url">not_var{{uploaded_link_right}}</p>
+          {{button label="Go to site" href=uploaded_link_right  size="L"}}
+          </div>
+          </div>
 
-    Don't remove the existing code.
+          {{img src=image}}
 
-    {% endnote %}
+          <div class="content clearfix">
+          <div class="left page">
+          {{iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
+          </div>
+          <div class="right page">
+          {{iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
+          </div>
+          </div>
 
-    ```
-    getTemplateData: function() {
-    var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments),
-    input = this.getTask().input_values;
-    var left_link = input.left_link;
-    var right_link = input.right_link;
-    var uploaded_link_left = '',
-    uploaded_link_right = ''
-    if (Math.floor(Math.random() * 2)) {
-    uploaded_link_left = left_link
-    uploaded_link_right = right_link
-    } else {
-    uploaded_link_left = right_link
-    uploaded_link_right = left_link
-    }
-    data.uploaded_link_left = uploaded_link_left;
-    data.uploaded_link_right = uploaded_link_right;
-    data.result_left = uploaded_link_left;
-    data.result_right = uploaded_link_right;
+          <div class="footer">
+          {{field type="radio" name="result" label="Left image is better" value="result_left" hotkey="1"}}
+          {{field type="radio" name="result" label="Right image is better" value="result_right" hotkey="2"}}
+          </div>
+          ```
 
-    return data;
+          {% endif %}
 
-    },
-    ```
+      1. In the **js** block, edit the code by adding the following lines before `OnRender`.
 
-    1. In the **css** block, insert the following code that is responsible for setting the proportional image size:
+          {% note warning %}
 
-    ```
-    .task {
-    display: block;
-    text-align:center;
-    }
+          Don't remove the existing code.
 
-    .header {
-    overflow: hidden;
-    background-color: #FFCC00;
-    }
+          {% endnote %}
 
-    .caption {
-    width: 50%;
-    }
+          ```javascript
+          getTemplateData: function() {
+            var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments),
+                input = this.getTask().input_values;
+            var left_link = input.left_link;
+            var right_link = input.right_link;
+            var uploaded_link_left = '',
+                uploaded_link_right = ''
+            if (Math.floor(Math.random() * 2)) {
+              uploaded_link_left = left_link
+              uploaded_link_right = right_link
+            } else {
+              uploaded_link_left = right_link
+              uploaded_link_right = left_link
+            }
+            data.uploaded_link_left = uploaded_link_left;
+            data.uploaded_link_right = uploaded_link_right;
+            data.result_left = uploaded_link_left;
+            data.result_right = uploaded_link_right;
 
-    .url {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+            return data;
+          },
+          ```
 
-    max-width: calc(100% - 182px);
+      1. In the **css** block, insert the following code that is responsible for setting the proportional image size:
 
-    display: inline-block;
-    vertical-align: bottom;
-    }
+          ```css
+          .task {
+            display: block;
+            text-align:center;
+          }
 
-    .button {
-    margin: 10px;
-    max-width: 182px;
-    }
+          .header {
+            overflow: hidden;
+            background-color: #FFCC00;
+          }
 
-    .button__label {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    max-width: 150px;
-    }
+          .caption {
+            width: 50%;
+          }
 
-    .content {
-    margin: 10px 0;
-    }
+          .url {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: calc(100% - 182px);
+            display: inline-block;
+            vertical-align: bottom;
+          }
 
-    .page {
-    display: inline-block;
-    width: 50%;
-    }
+          .button {
+            margin: 10px;
+            max-width: 182px;
+          }
 
-    .left {
-    float: left;
-    text-align: left;
-    }
+          .button__label {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 150px;
+          }
 
-    .right {
-    float: right;
-    text-align: right;
-    }
+          .content {
+            margin: 10px 0;
+          }
 
-    .clearfix {
-    overflow: hidden;
-    width: 100%;
-    }
-    ```
+          .page {
+            display: inline-block;
+            width: 50%;
+          }
 
-    1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
+          .left {
+            float: left;
+            text-align: left;
+          }
 
-    1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          .right {
+            float: right;
+            text-align: right;
+          }
 
-    1. In the **Input data** field, enter:
+          .clearfix {
+            overflow: hidden;
+            width: 100%;
+          }
+          ```
 
-    ```
-    {
-    "image": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
-    "left_link": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
-    "right_link": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+      1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-    1. In the **Output data** field, enter:
+          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
 
-    ```
-    {
-    "result": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+          1. In the **Input data** field, enter:
 
-    Learn more about the **Specification** parameters in [Input and output data](incoming.md).
+              ```json
+              {
+                "image": {
+                  "type": "url",
+                  "hidden": false,
+                  "required": true
+                },
+                "left_link": {
+                  "type": "url",
+                  "hidden": false,
+                  "required": true
+                },
+                "right_link": {
+                  "type": "url",
+                  "hidden": false,
+                  "required": true
+                }
+              }
+              ```
 
-    1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          1. In the **Output data** field, enter:
 
-    {% note info %}
+              ```json
+              {
+                "result": {
+                  "type": "url",
+                  "hidden": false,
+                  "required": true
+                }
+              }
+              ```
 
-    The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+              Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-    {% endnote %}
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
 
-    1. 1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+              {% note info %}
 
-    1. Exit preview mode.
+              The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
 
-    In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+              {% endnote %}
+
+          1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+
+          1. Exit preview mode.
+
+              In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+
+    {% endlist %}
 
 1. Save the changes.
 
 1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
 
-    1. **Instructions:**{% if locale == "en-com" %}
-    ```
-    Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
-    Rely on your own sense of style, but also remember that the shoes look alike if
-    they are the same color, fabric, length, and style.
-    ```
-    {% endif %}
+    1. **Instructions:**
+
+        {% if locale == "en-com" %}
+
+        ```plaintext
+        Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
+        Rely on your own sense of style, but also remember that the shoes look alike if
+        they are the same color, fabric, length, and style.
+        ```
+
+        {% endif %}
 
     1. Save the changes.
 
 1. To go back to the {% if locale == "en-com" %}**Projects**{% endif %} page, click {% if locale == "en-com" %}**Finish editing**{% endif %}.
-
 
 Learn more about working with the project in the [Project](project.md) section.
 
@@ -290,11 +299,13 @@ To create a [pool](../../glossary.md#pool):
 
     1. Find the **Rules** block in the list and choose **Fast responses**.
 
-    1. Set a rule for fast responses: if the **number of fast responses**** is more than 3**, then **restrict the Toloker's access** to **the project for 10 days**. Specify **Fast responses** as the reason for ban.![](../_images/tutorials/image-segmentation/wsdm-tutorial-part4-1.png)
+    1. Set a rule for fast responses: if the **number of fast responses is more than 3**, then **restrict the Toloker's access** to **the project for 10 days**. Specify **Fast responses** as the reason for ban.
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part4-1.png)
 
     Learn more in [Quality control](control.md).
 
-1. Enter `10` in the **The number of Tolokers to complete each task ** field in the **Task overlap** section.
+1. Enter `10` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
 
 1. In the **Additional settings** block:
 
@@ -303,7 +314,6 @@ To create a [pool](../../glossary.md#pool):
     1. Turn on the **Keep task order** option.
 
 1. Click **Create a pool**.
-
 
 ## Prepare and upload a file with tasks {#upload_file}
 
@@ -335,7 +345,6 @@ To create a [pool](../../glossary.md#pool):
 
     {% endnote %}
 
-
 ## Get the results {#get_results}
 
 To get the results:
@@ -346,14 +355,14 @@ To get the results:
 
     1. In the **Fields** block, leave the **link**, **response ID**, and **Toloker ID** options enabled.
 
-1. Disable the **Separate assignments with empty row** option.![](../_images/tutorials/image-segmentation/wsdm-tutorial-part4-2.png)
+1. Disable the **Separate assignments with empty row** option.
 
-1. Try to use the [Bradley-Terry model](https://en.wikipedia.org/wiki/Bradley–Terry_model) based on the results. As an example, you can use our [https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb](https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb)results.
+    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part4-2.png)
 
+1. Try to use the [Bradley-Terry model](https://en.wikipedia.org/wiki/Bradley–Terry_model) based on the results. As an example, you can use our [https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb](https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb) results.
 
 ## What's next {#what-next}
 
 - Learn more about [decomposition](solution-architecture.md).
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

@@ -2,35 +2,46 @@
 
 Quality control rules allow you to get more accurate responses and restrict access to tasks to cheating Tolokers. All rules work independently.
 
-
 ## List of rules {#rules}
 
 - **To keep track of how often Tolokers make mistakes:**
+
     - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
+
     - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same task.
+
     - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected responses.
 
 - **To protect your project from robots and cheaters:**
+
     - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
+
     - [Captcha](captcha.md): Show a captcha from time to time to make sure tasks aren't completed by robots.
+
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
 - **To attract a variety of Tolokers:**
+
     - [Earnings](income.md): Limit the amount each Toloker can earn in the [pool](../../glossary.md#pool) per day.
+
     - [Submitted assignments](submitted-answers.md): Limit how many assignments each Toloker can submit in the pool per day.
 
 - **To allow recompletion of certain assignments:**
+
     - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#submitted-answers) to other Tolokers to redo them if the Toloker was banned.
+
     - [Processing of rejected and accepted assignments](reassessment-after-accepting.md): Send rejected assignments to other Tolokers to redo them.
-
-
 
 ## Quality control presets {#rule-set}
 
 Toloka has presets of quality control rules. Currently, there are three of them:
+
 - **Elementary** — suitable for requesters who need tasks to be completed by a large number of Tolokers in a short time.
+
 - **Basic** — suitable for those who need to balance quality and quantity.
+
 - **Advanced** — a set with a large number of rules required for complex tasks.
+
 The table shows the rules included in each of the sets.
 
 |                | Earnings | Skipped assignments | Control tasks | Majority vote | Submitted answers | Fast responses |
@@ -39,30 +50,29 @@ The table shows the rules included in each of the sets.
 | **Basic**      | +        | +                   | +             | +             | −                 | -              |
 | **Advanced**   | +        | +                   | +             | +             | +                 | +              |
 
-
-
 ## How to set up quality control {#control_how}
 
 You can configure quality control in the [pool](qa-pool-settings.md) and in the [project](project-qa.md).
 
 {% list tabs %}
+
 - Pool
 
-   Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the page) and click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %} in the {% if locale == "en-com" %}**Quality control**{% endif %} section.
+  Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the page) and click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %} in the {% if locale == "en-com" %}**Quality control**{% endif %} section.
 
-   You can copy quality control settings from another pool. To do this, click {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} in the {% if locale == "en-com" %}**Audience**{% endif %} section.
+  You can copy quality control settings from another pool. To do this, click {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} in the {% if locale == "en-com" %}**Audience**{% endif %} section.
 
 - Project
 
-   Open the project page, open the {% if locale == "en-com" %}**Quality control**{% endif %} tab and click {% if locale == "en-com" %}**Set quality control**{% endif %}. Then click {% if locale == "en-com" %}**+ Add Quality Control Rule**{% endif %}.
+  Open the project page, open the {% if locale == "en-com" %}**Quality control**{% endif %} tab and click {% if locale == "en-com" %}**Set quality control**{% endif %}. Then click {% if locale == "en-com" %}**+ Add Quality Control Rule**{% endif %}.
 
-   The rules are applied to all project pools, so you can't change settings in just one of the pools.
+  The rules are applied to all project pools, so you can't change settings in just one of the pools.
 
-   {% note alert %}
+  {% note alert %}
 
-   When you [clone a project](project.md), its quality control settings aren't transferred.
+  When you [clone a project](project.md), its quality control settings aren't transferred.
 
-   {% endnote %}
+  {% endnote %}
 
 {% endlist %}
 
@@ -196,17 +206,17 @@ No, the Tolokers are unaware of the ban.
 
 The frequency of issuing [captchas](captcha.md) is set up in the pool.
 
-#### No
+No
 
-Don't show captchas.
+: Don't show captchas.
 
-#### Low
+Low
 
-Show a captcha after every 20 assignments.
+: Show a captcha after every 20 assignments.
 
-#### Average/High
+Average/High
 
-Show a captcha after every 10 assignments.
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -216,14 +226,17 @@ Show a captcha after every 10 assignments.
 
 The frequency of issuing captchas is configured in the pool.
 
-#### No
-Don't show captchas.
+No
 
-#### Low
-Show a captcha after every 20 assignments.
+: Don't show captchas.
 
-#### Average/High
-Show a captcha after every 10 assignments.
+Low
+
+: Show a captcha after every 20 assignments.
+
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -292,13 +305,13 @@ If there are few control tasks in the open pool, [add new control tasks](../trou
 
 In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
 
-{% endcut %}
-
 {% note info %}
 
 To filter out Tolokers, use the [Control tasks](control.md) quality control rule. To rank Tolokers by the quality of responses in control tasks, use a [skill](nav.md).
 
 {% endnote %}
+
+{% endcut %}
 
 {% endcut %}
 
@@ -399,9 +412,11 @@ The **Recent control task responses to use** field is for the number of recent r
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
+
 - You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
+
 - Too many users are banned. Ease the quality control rules.
 
 {% endcut %}

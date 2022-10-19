@@ -231,7 +231,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 #|
 ||**Входные данные:**|**Выходные данные:**||
 ||
-```html
+```json
 {
   "image": {
     "type": "url",
@@ -251,7 +251,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 }
 ```
 |
-```html
+```json
 {
   "result": {
     "type": "string",
@@ -343,7 +343,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 #|
 ||**Входные данные:**|**Выходные данные:**||
 ||
-```html
+```json
 {
   "image": {
     "type": "url",
@@ -363,7 +363,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 }
 ```
 |
-```html
+```json
 {
   "result": {
     "type": "url",

@@ -21,7 +21,7 @@ The quality control rules feature the following actions:
     - [Captcha](captcha.md)
     - [Review results](reviewing-assignments.md)
 
-	{% endcut %}
+    {% endcut %}
 
 ## After passing the training {#training}
 
@@ -32,18 +32,20 @@ You don't need to create this skill, it is created when you add the first traini
 ## Manually {#manual}
 
 1. Go to the [Tolokers]({{ users }}) page.
+
 1. Select the Tolokers to assign the skill to.
 
    {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
 1. Click {% if locale == "en-com" %}**+Skill**{% endif %}.
+
 1. Choose a skill and specify the skill value. If there is no skill, create it.
+
 1. Click {% if locale == "en-com" %}**Save**{% endif %}.
 
 ## What's next {#what-next}
 
 [Use the skill](nav-use.md), for example, to select Tolokers or manage overlap or price.
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -62,7 +64,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 

@@ -7,6 +7,7 @@ We also advise that you read our [recommendations for data protection in Toloka.
 ## Key principles {#data-security-important_1}
 
 - The rights to the results with labeled data belong to the requester, and no one else.
+
 - The data that the requester sends to Toloka is strictly confidential. Support staff have access to this data. The list of employees granted this access is regularly reviewed and their activities are monitored by our team.
 
     {% note warning %}
@@ -25,23 +26,27 @@ To avoid transmitting personal data, you can anonymize the data yourself. For ex
 
 For tasks that use recognition of passports or questionnaires with personal information, you can cut out data fields and use separate tasks for them. For example, you can send the last name, first name, and middle name separately for recognition.
 
-
 ## What's next {#what-next}
 
 - [Read the data protection recommendations](protect-your-data.md#protect-from-them)
+
 - [Learn how to post tasks](first-project.md#ol_x2q_yb3_wmb)
+
 - See the documents governing interaction with Toloka
+
     - For the requester:
-      - [Agreement for requesters registered in the USA]({{ customeragreement-usa }})
-      - [Customer Service Agreement]({{ customeragreement }})
+
+        - [Agreement for requesters registered in the USA]({{ customeragreement-usa }})
+
+        - [Customer Service Agreement]({{ customeragreement }})
 
     - For Tolokers:
-      - [User Agreement]({{ useragreement }})
-      - [License agreement for use of the Toloka app for mobile devices]({{ mobile-agreement }})
+
+        - [User Agreement]({{ useragreement }})
+
+        - [License agreement for use of the Toloka app for mobile devices]({{ mobile-agreement }})
 
     - [Privacy Policy]({{ confidential }})
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -52,6 +57,7 @@ You can't change the account type from “Requester” to “Toloker”.
 If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
 
 To create a Toloker account:
+
 1. Log out of your requester account.
 1. Go to the [Toloka]({{ toloka-index }}) home page.
 1. Click **Join**.
