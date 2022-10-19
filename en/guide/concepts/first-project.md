@@ -35,7 +35,7 @@ In the project, you'll customize an appearance of the tasks.
     - **Customer survey**
     Designed to collect information for research purposes.
 
-	{% endcut %}
+    {% endcut %}
 
     {% endcut %}
 

@@ -18,8 +18,8 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
     {% cut "Example" %}
 
     If the exam consisted of two suites, 10 tasks each, and you increased the number of tasks per suite to 12, there won't be enough tasks for two full suites. Tolokers won't receive the second suite and won't be able to complete the exam.
-	
-	{% endcut %}
+
+    {% endcut %}
 
 - If the Toloker presses the {% if locale == "en-com" %}**Skip**{% endif %} button when taking the exam, the entire page isn't counted. In this case, the system won't have enough completed tasks to assign a skill to the Toloker.
 
@@ -28,8 +28,8 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
     - In project editing mode, click {% if locale == "en-com" %}**Show common interface elements**{% endif %} and disable the {% if locale == "en-com" %}**Skip**{% endif %} button.
     - Add more tasks to the pool than you need to calculate the skill, specify the required number of responses, and set the following Toloker requirement: `<exam skill> = Is missing`.
     - Place all your tasks on one page.
-	
-	{% endcut %}
+
+    {% endcut %}
 
 
 ## Recommendations {#recomend}
@@ -51,8 +51,8 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
     {% cut "Example" %}
 
     Tolokers can take the exam if they answered at least `80%` of the training questions correctly.
-	
-	{% endcut %}
+
+    {% endcut %}
 
     {% note info %}
 
@@ -65,8 +65,8 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
     {% cut "Example" %}
 
     For example, completing 10 tasks is enough to pass the exam. The Toloker will be assigned an exam skill value equal to their percentage of correct responses.
-	
-	{% endcut %}
+
+    {% endcut %}
 
 1. Fill out the {% if locale == "en-com" %}**Price per task suite, $**{% endif %} box. You can set the price for this type of pool to zero, but it's better to make the exam paid.
 1. Click {% if locale == "en-com" %}**Create pool**{% endif %}.

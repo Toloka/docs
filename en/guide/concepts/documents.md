@@ -27,34 +27,34 @@ If you don't want to top up your account, don't click **Create a billing invoice
 
    - The service delivery report and the tax invoice are formed on the first day of each month following the reporting month for the amount spent in the previous month (excluding the promo code bonus).
 
-	   You can send a copy of the service invoice by e-mail or order the original certificate. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-support }}).
+       You can send a copy of the service invoice by e-mail or order the original certificate. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-support }}).
 
-	   You can also request original service invoices via the form below.
+       You can also request original service invoices via the form below.
 
-	   <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
+       <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
    - Extended report
 
-	   Contains data on all invoices and payments. Available only in electronic form.
+       Contains data on all invoices and payments. Available only in electronic form.
 
-	   To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
+       To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
 
    - Reconciliation report
 
-	   You can form the service invoice for the desired period. Reconciliation reports are sent to your email address. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-acts-settlements }}).
+       You can form the service invoice for the desired period. Reconciliation reports are sent to your email address. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-acts-settlements }}).
 
 
 - For non-residents of Russia
 
    - The service delivery report and the tax invoice are formed on the first day of each month following the reporting month for the amount spent in the previous month (excluding the promo code bonus).
 
-	   To download a copy of the service invoice, go to **Invoices** and click the account number. In the **Invoice history** section, click **Printed form**.
+       To download a copy of the service invoice, go to **Invoices** and click the account number. In the **Invoice history** section, click **Printed form**.
 
    - Extended report
 
-	   Contains data on all invoices and payments. Available only in electronic form.
+       Contains data on all invoices and payments. Available only in electronic form.
 
-	   To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
+       To get the Extended report, go to **Service invoices**, select the reporting period in the **Date from** and **To** fields, enter your email and click **Send by email**.
 
 {% endlist %}
 

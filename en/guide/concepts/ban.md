@@ -15,24 +15,24 @@ To block access to tasks for a single Toloker:
 
 1. Click , then fill in the fields:
 
-   #|
-   || Field | Overview ||
-   || {% if locale == "en-com" %}**Ban type**{% endif %} | Where to apply the ban:
+    #|
+    || Field | Overview ||
+    || {% if locale == "en-com" %}**Ban type**{% endif %} | Where to apply the ban:
 
-       - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
-       - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).
+        - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
+        - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).||
+    || {% if locale == "en-com" %}**Ban expires**{% endif %} | Set when to lift the ban.
 
-   ||
-   || {% if locale == "en-com" %}**Ban expires**{% endif %} | Set when to lift the ban.
+    We recommend blocking access temporarily in order to maintain the desired number of Tolokers for completing tasks.||
+    || {% if locale == "en-com" %}**Reason**{% endif %} | The reason for banning (only seen by the requester).||
+    |#
 
-We recommend blocking access temporarily in order to maintain the desired number of Tolokers for completing tasks.||
-   || {% if locale == "en-com" %}**Reason**{% endif %} | The reason for banning (only seen by the requester).||
-   |#
-
-To block access to tasks for multiple Tolokers:
+    To block access to tasks for multiple Tolokers:
 
 1. Select Tolokers by using the [filters](../../glossary.md#filtering) on the [Tolokers]({{ users }}) page or upload a TSV file:
+
     {% if locale == "en-com" %}
+
     ```plaintext
     <annotator id 1>
     <annotator id 2>
@@ -41,8 +41,8 @@ To block access to tasks for multiple Tolokers:
     ```
 
     {% endif %}
-1. Click {% if locale == "en-com" %}**Ban**{% endif %}, then fill in the fields (see the table above).
 
+1. Click {% if locale == "en-com" %}**Ban**{% endif %}, then fill in the fields (see the table above).
 
 You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the {% if locale == "en-com" %}**Bans**{% endif %} tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.png).
 
@@ -51,7 +51,6 @@ You can view information about access to tasks on the Toloker's page (on the [To
 The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
-
 
 ## Banning on the platform {#ban-platform}
 
@@ -73,8 +72,6 @@ If a Toloker's behavior seems suspicious, [write to support](../troubleshooting/
 You can also [ban](#ban) this Toloker from your project.
 
 {% endnote %}
-
-
 
 ## Troubleshooting {#troubleshooting}
 

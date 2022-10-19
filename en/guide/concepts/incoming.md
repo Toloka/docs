@@ -284,7 +284,7 @@ There are two ways to edit the specification in project settings: using either r
 - `coordinates`
 - `json`
 
-		 {% cut "JSON" %}
+         {% cut "JSON" %}
 
 For arrays, add the `array_` prefix to the field type in JSON mode. For example: `array_file`. ||
 || {% if locale == "ru-ru" %}**Required**{% endif %}{% if locale == "en-com" %}**Required**{% endif %} | `required` | Whether the field must be filled when uploading the tasks for the input data.

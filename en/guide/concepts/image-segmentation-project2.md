@@ -131,7 +131,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     The number of tasks per suite is set when uploading tasks.
 
-	{% endcut %}
+    {% endcut %}
 
     {% endcut %}
 
@@ -141,7 +141,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     You can register in Toloka as a Toloker and find out how much other requesters pay for tasks.
 
-	{% endcut %}
+    {% endcut %}
 
     {% endcut %}
 
@@ -155,7 +155,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
 
-	{% endcut %}
+    {% endcut %}
 
     {% endcut %}
 

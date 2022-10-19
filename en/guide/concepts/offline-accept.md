@@ -30,7 +30,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
     If the task is to label 20 pictures according to the instructions, and the Toloker labeled 18 of them correctly, and 2 were incorrect, the result is considered incorrect to a small extent, or mostly correct.
 
-	{% endcut %}
+    {% endcut %}
 
 - Explain the mistake to the Toloker so they can learn and do better next time.
 

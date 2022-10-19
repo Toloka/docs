@@ -26,7 +26,7 @@ If there are changes in the [project](../../glossary.md#project) (for example, y
 
 1. [Set the skill level](nav-assign.md) for everyone who completed your tasks. The skill should be private.
 
-1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill you set. To do this, use filters ({% if locale == "en-com" %}{% endif %}).
+1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill you set. To do this, use filters ({% if locale == "en-com" %}**Compose → To users group → Add filter**{% endif %}).
 
 
 You can receive copies of incoming messages by email. Go to the {% if locale == "en-com" %}**Notifications**{% endif %} tab in the [requester profile]({{ profile }}) and select the option {% if locale == "en-com" %}**Send copies of messages by email**{% endif %} for the **New message** event.

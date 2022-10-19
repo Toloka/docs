@@ -109,19 +109,19 @@ All spaces and symbols in the file names will be replaced with codes.
 
     Links look like this:
     {% if locale == "en-com" %}
-	
+
     ```
     https://storage.googleapis.com/<bucket>/<file-name>
     ```
-	
+
     {% endif %}
     The link in the folder looks like this:
     {% if locale == "en-com" %}
-	
+
     ```
     https://storage.googleapis.com/<bucket>/<file-path>/<file-name>
     ```
-	
+
     {% endif %}
     {% note info %}
 

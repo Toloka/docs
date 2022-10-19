@@ -27,7 +27,7 @@ To select Tolokers by skill and give them [rewards](../../glossary.md#bonus):
 
 1. To credit rewards to one Toloker, click the link to their ID in the {% if locale == "en-com" %}**Toloker ID**{% endif %} field.
 
-    On the page that opens, click {% if locale == "en-com" %}{% endif %}.
+    On the page that opens, click {% if locale == "en-com" %}**Actions → Issue bonus**{% endif %}.
 
     To credit rewards to a group of Tolokers click {% if locale == "en-com" %}**Issue bonus**{% endif %}.
 
@@ -42,10 +42,10 @@ To select Tolokers by skill and give them [rewards](../../glossary.md#bonus):
     Before doing this, check the number of people who will receive the reward, and the total amount.
 
     {% cut "Example" %}
-	
+
     ![](../_images/bonus/bonus-group-performers-1.png)
-	
-	{% endcut %}
+
+    {% endcut %}
 
 
 ## Sending out messages {#messaging}
@@ -53,7 +53,7 @@ To select Tolokers by skill and give them [rewards](../../glossary.md#bonus):
 To select Tolokers for [sending messages](qa-assign.md) about changes in the project or new tasks:
 
 1. Go to the {% if locale == "en-com" %}**Messages**{% endif %} page.
-1. Click {% if locale == "en-com" %}{% endif %}.
+1. Click {% if locale == "en-com" %}**Compose → To users group → Add filter → Choose skill**{% endif %}.
 1. Enter the skill name.
 
 ## What's next {#what-next}

@@ -4,18 +4,43 @@
 
 **Specifications:**
 
-**Input:**```html {   "image": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Output:**```html {   "result": {     "type": "string",     "hidden": false,     "required": true   } } ```
-
+||**Input:**|**Output:**||
+||
+```json
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+|
+```json
+{
+  "result": {
+    "type": "string",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 **HTML:**
- {% if locale == "en-com" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
 <div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
 {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
 {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
 ```
+
 {% endif %}
+
 **JavaScript:**
 
 ```javascript
@@ -47,11 +72,49 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Specifications:**
 
-**Input:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Output:**<br/>```html {   "button": {     "type": "boolean",     "hidden": false,     "required": true,     "allowed_values": [       true     ]   },   "found_link": {     "type": "string",     "hidden": false,     "pattern": "https://www.asos.com/.*",     "required": true   },   "found_image": {     "type": "file",     "hidden": false,     "required": true   } } ```
-
+#|
+||**Input:**|**Output:**||
+||
+```json
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+|
+```json
+{
+  "button": {
+    "type": "boolean",
+    "hidden": false,
+    "required": true,
+    "allowed_values": [
+      true
+    ]
+  },
+  "found_link": {
+    "type": "string",
+    "hidden": false,
+    "pattern": "https://www.asos.com/.*",
+    "required": true
+  },
+  "found_image": {
+    "type": "file",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 **HTML:**
- {% if locale == "en-com" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{img src=image width="50%" height="400px"}}
 <div class='answers'>
@@ -66,7 +129,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
  </div>
 </div>
 ```
+
 {% endif %}
+
 **JavaScript:**
 
 ```javascript
@@ -112,7 +177,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **CSS:**
 
-```
+```css
 .task {
     display: block;
     height: 500px;
@@ -135,11 +200,45 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Specifications:**
 
-**Input:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   },   "found_link": {     "type": "url",     "hidden": false,     "required": true   },   "assignment_id": {     "type": "string",     "hidden": true,     "required": true   } } ``` | **Output:**<br/>```html {   "result": {     "type": "string",     "hidden": false,     "required": true   } } ```
-
+#|
+||**Input:**|**Output:**||
+||
+```json
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "found_link": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "assignment_id": {
+    "type": "string",
+    "hidden": true,
+    "required": true
+  }
+}
+```
+|
+```json
+{
+  "result": {
+    "type": "string",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 **HTML:**
- {% if locale == "en-com" %}
+
+{% if locale == "en-com" %}
+
 ```html
 {{img src=image height="400px"}} {{iframe src= found_link height="600px"}}
 <p>Check that the uploaded image matches the product in the store.</p>
@@ -149,7 +248,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 {{field type="radio" name="result" value="Yes" label="Yes"}}
 {{field type="radio" name="result" value="No" label="No"}}
 ```
+
 {% endif %}
+
 **JavaScript:**
 
 ```javascript
@@ -178,7 +279,8 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ```
 
 **CSS:**
-```
+
+```css
 .task {
     display: block;
 }
@@ -198,11 +300,45 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **Specifications:**
 
-**Input:**<br/>```html {   "image": {     "type": "url",     "hidden": false,     "required": true   },   "left_link": {     "type": "url",     "hidden": false,     "required": true   },   "right_link": {     "type": "url",     "hidden": false,     "required": true   } } ``` | **Output:**<br/>```html {   "result": {     "type": "url",     "hidden": false,     "required": true   } } ```
-
+#|
+||**Input:**|**Output:**||
+||
+```json
+{
+  "image": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "left_link": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  },
+  "right_link": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+|
+```json
+{
+  "result": {
+    "type": "url",
+    "hidden": false,
+    "required": true
+  }
+}
+```
+||
+|#
 
 **HTML:**
- {% if locale == "en-com" %}
+
+{% if locale == "en-com" %}
+
 ```html
 <div class="header">
     <div class="left caption"> {{button label="Go to site" href=left_link size="L"}}
@@ -226,7 +362,9 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{field type="radio" name="result" label="Right image is better" value=result_right hotkey="2"}}
 </div>
 ```
+
 {% endif %}
+
 **JavaScript:**
 
 ```javascript
@@ -278,7 +416,8 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 ```
 
 **CSS:**
-```
+
+```css
 .task {
     display: block;
     text-align: center;

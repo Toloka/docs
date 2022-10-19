@@ -21,7 +21,7 @@ The quality control rules feature the following actions:
     - [Captcha](captcha.md)
     - [Review results](reviewing-assignments.md)
 
-	{% endcut %}
+    {% endcut %}
 
 ## After passing the training {#training}
 

@@ -36,7 +36,7 @@ To accept or reject one task:
 
 1. Choose an assignment.
 
-    If responses include files uploaded by the Tolokers, click the {% if locale == "en-com" %}{% endif %} button to download them. To download all files from submitted responses in a ZIP archive, click {% if locale == "en-com" %}{% endif %} on the assignments review page.
+    If responses include files uploaded by the Tolokers, click the {% if locale == "en-com" %}**Actions → Download attachments**{% endif %} button to download them. To download all files from submitted responses in a ZIP archive, click {% if locale == "en-com" %}**Download results → Download attachments**{% endif %} on the assignments review page.
 
 1. Check the responses, click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment (specify the reason).
 
@@ -72,7 +72,7 @@ To accept or reject responses:
 
 1. If your task requires Tolokers to submit photos, videos or audio files, download them for review in an archive.
 
-    Click {% if locale == "en-com" %}{% endif %}.
+    Click {% if locale == "en-com" %}**Download results → Download attachments**{% endif %}.
 
     {% note info %}
 
