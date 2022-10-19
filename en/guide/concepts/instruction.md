@@ -23,6 +23,7 @@ To view the instructions as seen by the Toloker, click ![](../_images/preview.sv
 The HTML markup mode allows you to create user-friendly instructions. Declare and apply [CSS styles](#css) and use [allowed HTML tags](#html-yes).
 
 #### CSS styles
+
 Declare styles in the `style` container or use the `style` attribute in tags to assign a style.
 
 {% note info %}
@@ -31,10 +32,10 @@ The `style` container can be placed at the beginning or at the end of the instru
 
 {% endnote %}
 
-
 #### Supported HTML tags
 
 The HTML markup supports basic tags:
+
 - Headers from `h1` to `h6`.
 - Paragraph `p` and the `div`, `pre`, and `blockquote` blocks.
 - The `ol`, `ul`, and `dl` lists.
@@ -46,59 +47,22 @@ The HTML markup supports basic tags:
 {% cut "Full list of supported tags" %}
 
 #|
-|| a
-b
-big
-blockquote
-br
-center
-cite
-code |
-col
-colgroup
-dd
-div
-dl
-dt
-em
-font |
-h1
-h2
-h3
-h4
-h5
-h6
-hr
-i |
-img
-li
-map
-ol
-p
-pre
-samp
-small |
-span
-strike
-strong
-style
-sub
-sup
-table
-tbody |
-td
-tfoot
-th
-thead
-tr
-u
-ul ||
+||`a`|`col`|`h1`|`img`|`span`|`td`||
+||`b`|`colgroup`|`h2`|`li`|`strike`|`tfoot`||
+||`big`|`dd`|`h3`|`map`|`strong`|`th`||
+||`blockquote`|`div`|`h4`|`ol`|`style`|`thead`||
+||`br`|`dl`|`h5`|`p`|`sub`|`tr`||
+||`center`|`dt`|`h6`|`pre`|`sup`|`u`||
+||`cite`|`em`|`hr`|`samp`|`table`|`ul`||
+||`code`|`font`|`i`|`small`|`tbody`| ||
 |#
 
 {% endcut %}
 
 #### Unsupported HTML tags
+
 You can't insert the following in the instructions:
+
 - Scripts.
 - Frames.
 - Objects, audio players, or video players (the `object`, `audio` and `video` elements).
@@ -121,26 +85,26 @@ If you edit instructions in a project that already has completed tasks, you shou
 
 {% endnote %}
 
-
 ## What's next {#what_next}
 
 - [Create a task pool in the project](pool-main.md).
 - Learn more about how to set up a project:
+
     - [Input and output data](incoming.md).
     - [Task interface](spec.md).
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
-
-
 
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How do I show my instructions to the Toloker inside the task so that they don't need to open or close it?" %}
 
 There are three options:
+
 - Put your instructions inside the task, but make sure that it doesn't clutter the interface.
 - Use [a side window]({{ instr-in-form-of-side-window }}) for your instructions so that the Toloker can quickly expand or collapse them.
 - [Hide the instructions in an expandable section]({{ hints-questions }}) or add hints for the individual interface elements.
+
 For best results, we recommend that you pre-select the Tolokers that meet your requirements and set up the quality control rules.
 
 {% endcut %}

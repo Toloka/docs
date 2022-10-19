@@ -4,7 +4,6 @@ Non-automatic acceptance is a [pool](../../glossary.md#pool) setting that allows
 
 You can find the [Review methods](accept.md#acception) in the  section.
 
-
 ## How does it work? {#how-it-works}
 
 You set up assignment review for your pool in the [project](../../glossary.md#project).
@@ -16,7 +15,6 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 - Write to the platform support service.
 
 - Put a low rating to your project.
-
 
 {% cut "To get fewer appeals and maintain a high rating for your projects:" %}
 
@@ -47,7 +45,9 @@ You can review responses manually or with the help of Tolokers by posting [a sep
 ## Rejecting responses {#declined}
 
 - If **you reject responses, assignments aren't sent automatically** to other Tolokers.
+
 - You can't **reject (or accept)** one response on the page — **only the entire page** with all responses on it.
+
 - If [the Toloker is banned](../../glossary.md#banned-worker) by [the quality control rules](../../glossary.md#quality-control-rules), their responses still need to be checked.
 
 {% note info %}
@@ -55,8 +55,6 @@ You can review responses manually or with the help of Tolokers by posting [a sep
 Rejecting the Toloker's responses in one task doesn't result in rejecting responses of this Toloker.
 
 {% endnote %}
-
-
 
 ## Automatic rejection and acceptance of responses {#auto-reject_auto-accept}
 
@@ -98,17 +96,15 @@ Take the following steps before starting the pool:
 
 1. Save the settings — the **Save** button is at the bottom of the pool parameters page.
 
-
 As the Tolokers start completing the tasks, you will start receiving responses.
 
 {% note warning %}
 
 - **Set the deadline so that you have enough time to review the responses.** After the deadline expires, the responses that haven't been reviewed are accepted and paid automatically, except for the cases described [above](#auto-reject_auto-accept).
+
 - **Explain the acceptance criteria in the instructions for Tolokers.** This will improve the quality of the results, as well as reduce the number of appeals and questions about rejection reasons from the Tolokers.
 
 {% endnote %}
-
-
 
 ## More settings {#additional-params}
 
@@ -117,6 +113,7 @@ As the Tolokers start completing the tasks, you will start receiving responses.
 If responses are rejected, Toloka can automatically send the task to other Tolokers. To set it:
 
 1. Add the {% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} quality control rule to the pool.
+
 1. Set the following values in the rule block:
 
 ![](../_images/control-rules/control-tasks/add-overlap-reject.png)
@@ -141,13 +138,12 @@ Learn more about this in the [**Review results**](reviewing-assignments.md) rule
 
 - [Add tasks to the pool](pool.md)
 - Learn more about how to set up a pool:
+
     - [Setting up pricing](dynamic-pricing.md).
     - [Dynamic overlap](dynamic-overlap.md).
     - Selective [majority vote](selective-mvote.md) control.
     - [Filters](filters.md).
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
-
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

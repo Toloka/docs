@@ -26,151 +26,163 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Edit the task interface in the editor you selected:
 
-    #### Template Builder
+    {% list tabs %}
 
-    1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fSC){% endif %} for this project with pre-configured validation and task layout.
+    - Template Builder
 
-    The Toloker won't be able to submit the response until they:
+      1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fSC){% endif %} for this project with pre-configured validation and task layout.
 
-    - Click the button to go to the online store.
-    - Add a link to the product.
-    - Upload an image of the product.
+          The Toloker won't be able to submit the response until they:
 
-    1. Click **Show specifications** to see the input and output data fields.
+          - Click the button to go to the online store.
+          - Add a link to the product.
+          - Upload an image of the product.
 
-    - Input data field: `image` — A link to an image.
+      1. Click **Show specifications** to see the input and output data fields.
 
-    - Output data fields:
+          - Input data field: `image` — A link to an image.
 
-    - `found_link` — The link to the product in the online store.
-    - `found_image` — For uploading the image of the product.
+          - Output data fields:
 
-    #### HTML/CSS/JS editor
+          - `found_link` — The link to the product in the online store.
+          - `found_image` — For uploading the image of the product.
 
-    1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
-    {% if locale == "en-com" %}
-    ```
-    {{img src=image width="50%" height="400px"}}
-    <div class='answers'>
-    <p>Find similar shoes <b>shoes</b> in the ASOS online store</p>
-    {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
-    <p>Shoes must be similar in color, material, length, and style.</p>
-    <p>Paste the link here</p>
-    {{field width="100%" type="input" name="found_link"}}
-    <p>Upload the image here</p>    <div>
-    {{field width="100%" type="file-img" name="found_image" preview=true}}
-    </div>
-    </div>
-    ```
-    {% endif %}
-    1. To check if the link and image submitted by the Toloker are valid, go to line 5 in the **JS** block and replace the following code:
+    - HTML/CSS/JS editor
 
-    `if (!solution.output_values.image && !solution.output_values.no_image) {`
+      1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-    with
+          {% if locale == "en-com" %}
 
-    `if (!solution.output_values.found_image) {`
+          ```html
+          {{img src=image width="50%" height="400px"}}
+          <div class='answers'>
+          <p>Find similar shoes <b>shoes</b> in the ASOS online store</p>
+          {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
+          <p>Shoes must be similar in color, material, length, and style.</p>
+          <p>Paste the link here</p>
+          {{field width="100%" type="input" name="found_link"}}
+          <p>Upload the image here</p>    <div>
+          {{field width="100%" type="file-img" name="found_image" preview=true}}
+          </div>
+          </div>
+          ```
 
-    {% note warning %}
+          {% endif %}
 
-    Be careful when changing the code. If you have issues with the preview, contact **support** or compare your code with the code sample in the [Appendix](appendix-expanded-code.md).
+      1. To check if the link and image submitted by the Toloker are valid, go to line 5 in the **JS** block and replace the following code:
 
-    {% endnote %}
+          `if (!solution.output_values.image && !solution.output_values.no_image) {`
 
-    1. Replace the template code in the **CSS** block with the following code, which is responsible for setting the proportional image size.
+          with
 
-    ```
-    .task {
-    display: block;
-    height: 500px;
-    width: 800px;
-    }
-    .img {
-    float: left;
-    width: 50%;
-    }
-    .answers {
-    float: left;
-    width: 40%;
-    margin: 5%;
-    }
-    ```
+          `if (!solution.output_values.found_image) {`
 
-    1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
+          {% note warning %}
 
-    1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          Be careful when changing the code. If you have issues with the preview, contact **support** or compare your code with the code sample in the [Appendix](appendix-expanded-code.md).
 
-    1. In the **Input data** field, enter:
+          {% endnote %}
 
-    ```
-    {
-    "image": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+      1. Replace the template code in the **CSS** block with the following code, which is responsible for setting the proportional image size.
 
-    1. In the **Output data** field, enter:
+          ```css
+          .task {
+          display: block;
+          height: 500px;
+          width: 800px;
+          }
+          .img {
+          float: left;
+          width: 50%;
+          }
+          .answers {
+          float: left;
+          width: 40%;
+          margin: 5%;
+          }
+          ```
 
-    {% note info %}
+      1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-    If you want to choose a different online store, change `"pattern": "https://www.asos.com/.*"` to `"pattern": "your_store.*"`.
+          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
 
-    {% endnote %}
+          1. In the **Input data** field, enter:
 
-    ```
-    {
-    "button": {
-    "type": "boolean",
-    "hidden": false,
-    "required": true,
-    "allowed_values": [
-    true
-    ]
-    },
-    "found_link": {
-    "type": "string",
-    "hidden": false,
-    "pattern": "https://www.asos.com/.*",
-    "required": true
-    },
-    "found_image": {
-    "type": "file",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+              ```json
+              {
+              "image": {
+              "type": "url",
+              "hidden": false,
+              "required": true
+              }
+              }
+              ```
 
-    Learn more about the **Specification** parameters in [Input and output data](incoming.md).
+          1. In the **Output data** field, enter:
 
-    1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+              {% note info %}
 
-    {% note info %}
+              If you want to choose a different online store, change `"pattern": "https://www.asos.com/.*"` to `"pattern": "your_store.*"`.
 
-    The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+              {% endnote %}
 
-    {% endnote %}
+              ```json
+              {
+              "button": {
+              "type": "boolean",
+              "hidden": false,
+              "required": true,
+              "allowed_values": [
+              true
+              ]
+              },
+              "found_link": {
+              "type": "string",
+              "hidden": false,
+              "pattern": "https://www.asos.com/.*",
+              "required": true
+              },
+              "found_image": {
+              "type": "file",
+              "hidden": false,
+              "required": true
+              }
+              }
+              ```
 
-    1. 1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+              Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-    1. Exit preview mode.
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
 
-    In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+              {% note info %}
+
+              The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+
+              {% endnote %}
+
+          1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+
+          1. Exit preview mode.
+
+              In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+
+    {% endlist %}
 
 1. Save the changes.
 
 1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
 
-    1. **Instructions:**{% if locale == "en-com" %}
-    ```
-    Look at what the person is wearing in the picture.
-    Then go to the ASOS online store and search for the same pair of shoes.
-    It should be similar in category, style, color, and length.
-    ```
-    {% endif %}
+    1. **Instructions:**
+
+        {% if locale == "en-com" %}
+
+        ```plaintext
+        Look at what the person is wearing in the picture.
+        Then go to the ASOS online store and search for the same pair of shoes.
+        It should be similar in category, style, color, and length.
+        ```
+
+        {% endif %}
 
     1. Save the changes.
 

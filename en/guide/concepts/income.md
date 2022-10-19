@@ -13,6 +13,7 @@ The project has a rule set up that bans the Toloker if their earnings exceed $5 
 ## When to use {#when-use}
 
 Limit the Toloker's daily earnings in the [pool](../../glossary.md#pool) if you want to:
+
 - Get responses from as many Tolokers as possible (for this purpose, you might want to set the maximum amount of earnings equal to the price for a single [task suite](../../glossary.md#task-suite)).
 
 - Provide protection from robots (for this purpose, set maximum earnings to a higher amount, like 10% of the entire pool cost).
@@ -23,16 +24,16 @@ Set an amount that Tolokers can realistically earn in a day, otherwise the rule 
 
 ## Rule settings {#rule}
 
-{% note warning %}
+{% note alert %}
 
 All fields in this rule are required. If you don't fill in at least one of them, you won't be able to save the rule.
 
 {% endnote %}
 
-
 #|
 || **Field** | **Overview** ||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**latest 24 hours income**{% endif %} — The Toloker's earnings for [completed tasks](../../glossary.md#submitted-answers) in the pool over the last 24 hours.||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
@@ -55,7 +56,6 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
-
 ## Rule example {#examples}
 
 **Task**: you're conducting a sociological survey. To collect responses from as many Tolokers as possible, set up the **earnings** rule.
@@ -65,7 +65,6 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 ![](../_images/control-rules/income/qcr-income_example1.png)
 
 If the Toloker's earnings exceed 5 dollars in the last 24 hours, they lose access to the pool and can't complete your tasks.
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -84,7 +83,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 

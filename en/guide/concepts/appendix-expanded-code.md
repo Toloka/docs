@@ -1,9 +1,10 @@
-# ****Appendix:** Complete code for all projects**
+# Appendix: Complete code for all projects
 
 ## Project 1. Does the photo contain a certain object? {#section_yj4_rny_tkb}
 
 **Specifications:**
 
+#|
 ||**Input:**|**Output:**||
 ||
 ```json

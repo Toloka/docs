@@ -3,12 +3,14 @@
 ## Theory {#theory}
 
 Dynamic overlap lets you change overlap depending on:
+
 - How well the Tolokers do on the task.
 - How well Tolokers' responses match each other.
 
 First the task is distributed with minimal overlap. As Tolokers complete the task, their responses are assigned confidence. If it is less than specified in the **confidence in aggregated response** field, overlap will be increased until confidence reaches the set value, or overlap reaches the maximum.
 
 Dynamic overlap uses 5 main parameters:
+
 1. **Overlap** is the minimum number of Tolokers who should complete each task in the pool.
 
 1. **Maximum overlap** is the maximum number of Tolokers who should complete each task in the pool.
@@ -30,7 +32,6 @@ Terms
 - $z[j]$is the most popular response.
 - $z[x]$— the probability that the estimate is correct
 - $EPS,$— confidence in the aggregate response
-
 
 A Toloker's accuracy$q[i]$is calculated as:
 
@@ -66,7 +67,7 @@ It ensures that the probability of an error is distributed evenly among the rema
 
 We take all Tolokers' responses and, for example, option$z[x]$and calculate the probability that Tolokers will select this response, provided that the correct response is$z[x] estimate,$:
 
-```
+```javascript
 func z_prob(x int) : float {
     d = 1,0
     for w[i]: workers
@@ -80,13 +81,12 @@ func z_prob(x int) : float {
 
 Next, using Bayes' theorem, we calculate the probability that the response$z[j]$is correct:
 
-```
+```javascript
 r = 0
 for z[i]: answer_options
     r += z_prob(i) * (1 / Y)
 
 eps = z_prob(j) * (1 / Y) / r
-
 ```
 
 Next, we look at$EPS,$. If the expected result is less than the value of$EPS,$we increase overlap until the result is equal to the confidence in the aggregated response or overlap reaches the maximum.
@@ -104,6 +104,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
     The allowed value must match the `value` parameter in the corresponding interface element.
 
 - Boolean.
+
 - Integers with minimum and maximum values. The maximum difference between them is 32.
 
     If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
@@ -122,14 +123,23 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 #### Setting up overlap
 
 1. [Create a pool](pool-main.md) and fill in the [parameters](pool_poolparams.md).
+
 1. Set the minimum overlap in the {% if locale == "en-com" %}**Overlap**{% endif %} field.
+
 1. In the advanced settings, enable the {% if locale == "en-com" %}**Use dynamic overlap**{% endif %} option.
+
 1. Set {% if locale == "en-com" %}**Max overlap**{% endif %}.
+
 1. Specify {% if locale == "en-com" %}**Confidence of aggregated answer**{% endif %}. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
+
 1. Choose {% if locale == "en-com" %}**Skill for users' scoring**{% endif %}.
+
 1. Check {% if locale == "en-com" %}**Output fields for answers agreement**{% endif %}.
+
 1. Save the pool.
+
 1. Upload tasks via [smart mixing](distribute-tasks-by-pages.md#smart-mixing).
+
 1. After the pool is completed, start [Aggregation of results by skill](result-aggregation.md#aggr-by-skill).
 
 {% note info %}
@@ -141,6 +151,8 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 {% cut "Example" %}
 
 Configuring dynamic overlap for [simple classification](../tutorials/image-classification.md).
+
+![](../_images/location-job/dynamic-overlap/example.png)
 
 The `result` has three allowed values: `OK`, `BAD`, and `404`.
 
@@ -171,6 +183,7 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 - Don't use the [Recompletion of assignments from banned users](restore-task-overlap.md) quality control rule together with dynamic overlap. This increases the maximum overlap value.
 
 - Set confidence in the aggregated response at between 70 and 95 percent.
+
     - When the value is `< 70%`, the average accuracy of the aggregated response isn't sufficient to trust the Tolokers' responses.
 
     - When the value is `> 90%`, the average accuracy of the aggregated response doesn't increase, and the labelling costs increase.
@@ -185,15 +198,13 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
 - If you edit a required field, the changes apply only to new pools. Existing pools will continue using the previous version of the project.
 
-
-
 ## What's next {#what-next}
 
 - [Adding tasks](pool.md) in the pool.
+
 - Learn more about how to set up overlap:
+
     - Selective [majority vote](selective-mvote.md) control.
-
-
 
 ## Troubleshooting {#troubleshooting}
 

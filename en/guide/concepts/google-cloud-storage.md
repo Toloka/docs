@@ -6,7 +6,6 @@
 
 {% endnote %}
 
-
 To try out [Google Cloud Storage]({{ google-cloud-storage }}), you can activate [Free trial]({{ google-cloud-free-trial }}).
 
 #### Trial terms
@@ -14,7 +13,6 @@ To try out [Google Cloud Storage]({{ google-cloud-storage }}), you can activate 
 Length | Free storage size | Grant amount
 ----- | ----- | -----
 90 days | 5 GB | $300
-
 
 ## Steps to follow {#workflow}
 
@@ -29,7 +27,6 @@ To get links to files:
 1. [Upload files](#upload).
 1. [Copy links](#get-files).
 
-
 ## Create a bucket {#create-account}
 
 1. Select a project and click ![](../_images/tutorials/cloud-storage/google-cloud/create-bucket-icon.png)**Create bucket**.
@@ -37,7 +34,9 @@ To get links to files:
    ![](../_images/tutorials/cloud-storage/google-cloud/choose-project.png)
 
 1. Enter the bucket name. The name should be unique and contain only lower-case Latin letters, numbers, hyphens, and underscores.
+
     Learn more about the [Bucket naming rules]({{ google-cloud-about-bucket }}).
+
 1. In **Choose where to store your data** select **Location type → Region** and select the region closest to your Tolokers. For example, for Tolokers from Germany: **Location → europe-west3 (Frankfurt)**.
 
 1. Leave the **Choose a default storage class for your data** section unchanged.
@@ -49,6 +48,7 @@ To get links to files:
 1. Click **Create**.
 
 1. To make objects accessible by link, on the **Permissions** tab click ![](../_images/tutorials/cloud-storage/google-cloud/add-permission.png)**Add**.
+
     {% note info %}
 
     Files will be accessible to anyone with a link. We recommend using hashed file names to keep your files secure. You can generate hashes using online tools (for example, [Online MD5 Hash Generator]({{ hash-function-wiki }})). Learn more about [hashing]({{ hash-function-wiki }}).
@@ -61,14 +61,11 @@ To get links to files:
 
 1. Click **Save → Allow public access**.
 
-
 {% note info %}
 
 You can set the lifetime of files in the bucket so that they are automatically deleted after a specified number of days. [Learn more]({{ google-cloud-ttl }}).
 
 {% endnote %}
-
-
 
 ## Upload files {#upload}
 
@@ -88,6 +85,8 @@ On the **Object** tab, click **Upload folder** and select a folder on your compu
 
 On the **Object** tab, click **Create folder** and enter the folder name.
 
+{% endcut %}
+
 ![](../_images/tutorials/cloud-storage/google-cloud/upload-files.png)
 
 {% note info %}
@@ -95,9 +94,6 @@ On the **Object** tab, click **Create folder** and enter the folder name.
 All spaces and symbols in the file names will be replaced with codes.
 
 {% endnote %}
-
-{% endcut %}
-
 
 ## Copy links {#get-files}
 
@@ -108,21 +104,25 @@ All spaces and symbols in the file names will be replaced with codes.
 1. All file links are created by the same template.
 
     Links look like this:
+
     {% if locale == "en-com" %}
 
-    ```
+    ```plaintext
     https://storage.googleapis.com/<bucket>/<file-name>
     ```
 
     {% endif %}
+
     The link in the folder looks like this:
+
     {% if locale == "en-com" %}
 
-    ```
+    ```plaintext
     https://storage.googleapis.com/<bucket>/<file-path>/<file-name>
     ```
 
     {% endif %}
+
     {% note info %}
 
     To quickly get links to other files, copy the link to one of them and replace `<file-name>` with the names of other files.
@@ -133,7 +133,7 @@ All spaces and symbols in the file names will be replaced with codes.
 
     For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 
-    ```
+    ```plaintext
     INPUT:image
     https://storage.googleapis.com/mytolokabucket/newfolder/image1.png
     https://storage.googleapis.com/mytolokabucket/newfolder/image2.png

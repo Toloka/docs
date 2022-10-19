@@ -26,124 +26,146 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Edit the task interface in the editor you selected:
 
-    #### Template Builder
+    {% list tabs %}
 
-    1. The task interface describes how the elements should be arranged in the task.
+    - Template Builder
 
-    The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
+      1. The task interface describes how the elements should be arranged in the task.
 
-    For more information, see the Template Builder Help:
+          The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
 
-    - [Setting up conditions]({{ tb-conditions }}).
+          For more information, see the Template Builder Help:
 
-    - [Image classification]({{ tb-image-classification }}) template.
+          - [Setting up conditions]({{ tb-conditions }}).
 
-    1. On the **Configuration** panel, replace lines 19 to 28 in the code:
-    {% if locale == "en-com" %}
-    ```json
-    "label": "What is the cat's mood?",
-    "options": [
-    {
-    "label": "Good",
-    "value": "ok"
-    },
-    {
-    "label": "Bad",
-    "value": "bad"
-    },
-    ```
-    {% endif %}
-    with the following:
-    {% if locale == "en-com" %}
-    ```json
-    "label": "Are there shoes in the image?",
-    "options": [
-    {
-    "label": "Yes",
-    "value": "ok"
-    },
-    {
-    "label": "No",
-    "value": "bad"
-    },
-    ```
-    {% endif %}
-    1. Click **Show specifications** to see the input and output data fields.
+          - [Image classification]({{ tb-image-classification }}) template.
 
-    Input data fields are created from the code on the **Example of input data** tab.
+      1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
-    The output data fields depend on the components that use `data.output` and values supported by it.
+          {% if locale == "en-com" %}
 
-    Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
+          ```json
+          "label": "What is the cat's mood?",
+          "options": [
+          {
+          "label": "Good",
+          "value": "ok"
+          },
+          {
+          "label": "Bad",
+          "value": "bad"
+          },
+          ```
 
-    - Input data field: `image` — A link to an image.
+          {% endif %}
 
-    Change the data type to string to add links to your files.
+          with the following:
 
-    - Output data field: `result` — string for saving the Toloker's response.
+          {% if locale == "en-com" %}
 
-    #### What are input and output data?
+          ```json
+          "label": "Are there shoes in the image?",
+          "options": [
+          {
+          "label": "Yes",
+          "value": "ok"
+          },
+          {
+          "label": "No",
+          "value": "bad"
+          },
+          ```
 
-    **Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
+          {% endif %}
 
-    **Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
+      1. Click **Show specifications** to see the input and output data fields.
 
-    If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
+          Input data fields are created from the code on the **Example of input data** tab.
 
-    #### HTML/CSS/JS editor
+          The output data fields depend on the components that use `data.output` and values supported by it.
 
-    1. In the **Task interface**, edit the **HTML** block.
+          Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
 
-    - After the image line, add the question:
+          - Input data field: `image` — A link to an image.
 
-    - Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
-    {% if locale == "en-com" %}
-    ```
-    {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
+          Change the data type to string to add links to your files.
 
-    {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-    {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-    {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
-    ```
-    {% endif %}
+          - Output data field: `result` — string for saving the Toloker's response.
 
-    1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
+          {% cut "What are input and output data?" %}
 
-    Learn more about the **Specification** parameters in [Input and output data](incoming.md).
+          **Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
 
-    1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          **Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
 
-    {% note info %}
+          If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
 
-    The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+          {% endcut %}
 
-    {% endnote %}
+    - HTML/CSS/JS editor
 
-    1. 1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+      1. In the **Task interface**, edit the **HTML** block.
 
-    1. Exit preview mode.
+          - After the image line, add the question:
 
-    In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+              `<div>Are there <b>shoes</b> in the picture?<div>`
+
+          - Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
+
+          {% if locale == "en-com" %}
+
+          ```html
+          {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
+
+          {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
+          {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
+          {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
+          ```
+
+          {% endif %}
+
+      1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
+
+          Learn more about the **Specification** parameters in [Input and output data](incoming.md).
+
+      1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+
+          {% note info %}
+
+          The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+
+          {% endnote %}
+
+      1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+
+      1. Exit preview mode.
+
+          In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+
+    {% endlist %}
 
 1. Save the changes.
 
 1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#task-instruction) and add an image.
 
-    1. **Instructions:**{% if locale == "en-com" %}
-    ```
-    Look at the picture and determine if there are **shoes** in the picture.
-    If there are, click **Yes**.
-    If there aren't, click **No**.
-    For example, there are shoes in the photo, so the correct answer is **Yes**.
-    ```
-    {% endif %}
+    1. **Instructions:**
+
+        {% if locale == "en-com" %}
+
+        ```plaintext
+        Look at the picture and determine if there are **shoes** in the picture.
+        If there are, click **Yes**.
+        If there aren't, click **No**.
+        For example, there are shoes in the photo, so the correct answer is **Yes**.
+        ```
+
+        {% endif %}
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
 
     1. Save the changes.
 
 1. To go back to the {% if locale == "en-com" %}**Projects**{% endif %} page, click {% if locale == "en-com" %}**Finish editing**{% endif %}.
-
 
 Learn more about working with the project in the [Project](project.md) section.
 
@@ -182,15 +204,16 @@ To create a [pool](../../glossary.md#pool):
     1. Find the **Rules** block in the list and choose **Control tasks**.
 
     1. Set a rule for control tasks: If the **number of responses** to control questions **is greater than or equal to 3** and the **percentage of correct responses** to control questions **is less than 60**, then **restrict the Toloker's access** to the **project for 10 days**. Specify the **Control task** as a reason.
-    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
-    Learn more in [Quality control](control.md).
 
-1. Enter `3` in the **The number of Tolokers to complete each task ** field in the **Task overlap** section.
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
+
+        Learn more in [Quality control](control.md).
+
+1. Enter `3` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
 
 1. Enter `300` in the **Time per task suite** field in the **Additional settings** block.
 
 1. Click **Create a pool**.
-
 
 ## Upload tasks {#upload_file}
 
@@ -220,11 +243,11 @@ To upload tasks:
 
     1. Click **Edit**.
 
-    {% note info %}
+        {% note info %}
 
-    If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
+        If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
 
-    {% endnote %}
+        {% endnote %}
 
     1. In the window that opens, click **Create control tasks**.
 
@@ -236,11 +259,11 @@ To upload tasks:
 
     1. Click **Are there shoes in the photo?** to exit the [task markup](../../glossary.md#task-markup) mode.
 
-    {% note info %}
+        {% note info %}
 
-    In small pools, [control tasks](../../glossary.md#control-task) should be 10-20% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
+        In small pools, [control tasks](../../glossary.md#control-task) should be 10-20% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
-    {% endnote %}
+        {% endnote %}
 
 1. Click ![](../_images/other/b-start-pool.png) to start the pool.
 
@@ -249,7 +272,6 @@ To upload tasks:
     The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
 
     {% endnote %}
-
 
 ## Get the results {#get_results}
 
@@ -272,8 +294,6 @@ To get the results:
 1. When the operation is complete, download the file with the results. To do this, click **Download** in the **Files** column.
 
 1. Use the file with the results in [project 2](find_an_item_in_store.md).
-
-
 
 ## What's next {#what-next}
 

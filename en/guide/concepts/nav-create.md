@@ -4,7 +4,7 @@ To create a skill, click {% if locale == "en-com" %}**+Add skill**{% endif %} on
 
 If you make a skill public, Tolokers can see information about the assigned skill: name and value.
 
-{% note info %}
+{% note tip %}
 
 To better motivate Tolokers, make the skill public and set [dynamic pricing](../../glossary.md#dynamic-pricing) based on this skill. In the task instructions, write what affects the skill value. Tolokers will know how the skill affects the price, and try to perform the tasks well.
 
@@ -13,7 +13,6 @@ To better motivate Tolokers, make the skill public and set [dynamic pricing](../
 ## What's next {#what-next}
 
 [Assign a skill](nav-assign.md) either manually or automatically.
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -32,7 +31,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 

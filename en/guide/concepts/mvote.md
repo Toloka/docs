@@ -8,7 +8,6 @@ It only takes into account [regular tasks](../../glossary.md#general-task-p), ig
 
 {% endnote %}
 
-
 Based on the percentage of correct responses, you can change the value of the Toloker's [skill](../../glossary.md#skill) or block their access to tasks.
 
 The rule is activated when the task overlap is complete.
@@ -16,6 +15,7 @@ The rule is activated when the task overlap is complete.
 {% cut "Example" %}
 
 Let's say we set up this rule in a pool with `overlap=5`:
+
 ![](../_images/control-rules/mvote/qcr-mvote_example1_2.png)
 
 It is activated when at least three of the tasks completed by the Toloker reach full overlap. When responses have been received from all five task Tolokers, the system determines which response was selected by the majority. If the Toloker's responses to two out of three tasks differ from the responses of the majority, the Toloker is banned from the project for 10 days. To collect all the responses needed to trigger the rule, enable {% if locale == "en-com" %}**Keep task order**{% endif %} in [the pool settings](pool_poolparams.md#keeptaskorder).
@@ -58,7 +58,6 @@ To calculate the **majority vote** for the task, all the responses to all the qu
 | Task 3 | 404       | OK        | 404       | OK        | OK        |
 | Task 4 | OK        | BAD       | OK        | 404       | 404       |
 | Task 5 | OK        | BAD       | OK        | 404       | OK        |
-
 
 The requester has five tasks, each completed by five Tolokers. Each task has one output field with three response options.`Overlap = 3`. In this case, tasks 1, 3, and 5 match the threshold, but the other tasks are not included in the **majority vote** calculation.
 
@@ -112,7 +111,6 @@ In this rule, all fields are required except **Recent tasks to use**. If you don
 
 {% endnote %}
 
-
 #|
 || **Field**  | **Overview** ||
 ||{% if locale == "en-com" %}**Accept as majority**{% endif %} | The number of matching responses that is considered the "majority vote" (for example, 3).||
@@ -120,14 +118,37 @@ In this rule, all fields are required except **Recent tasks to use**. If you don
 
 If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.
 
------ | -----
-{% if locale == "en-com" %}**Accept as majority**{% endif %} | The number of matching responses that is considered the “majority vote” (for example, 3).
-{% if locale == "en-com" %}**Recent values to use**{% endif %} | How many recent responses from the Toloker to use.<br/><br/>If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.<br/><br/>If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.<br/><br/>[Learn more](remember-values.md) about how this field works.
-{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:<br/>- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed tasks.<br/>    <br/>- {% if locale == "en-com" %}**% correct answers**{% endif %} — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).<br/>    <br/>- {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).<br/><br/>To add multiple conditions, click ![](../_images/add.svg).
-{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:<br/><br/>- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.<br/>    <br/>    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.<br/>    <br/>- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.<br/>    <br/>- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).<br/>    <br/>- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.<br/>    <br/>- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.<br/>    <br/>    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
+If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
 [Learn more](remember-values.md) about how this field works.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
+- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed tasks.
+
+- {% if locale == "en-com" %}**% correct answers**{% endif %} — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).
+
+- {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).
+
+To add multiple conditions, click ![](../_images/add.svg).||
+||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+
+- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
+
+- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+
+- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
+
+- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.
+
+- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
+
+[Learn more](remember-values.md) about how this field works.||
+||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed tasks.
 
 - {% if locale == "en-com" %}**% correct answers**{% endif %} — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).
@@ -162,7 +183,6 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
-
 #### Calculating a skill and banning for incorrect responses
 
 {% list tabs %}
@@ -170,6 +190,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 - Correct settings
 
   ![](../_images/control-rules/mvote/qcr-mvote_example1_1.png)
+
   ![](../_images/control-rules/mvote/qcr-mvote_example1_2.png)
 
   Both rules work independently:
@@ -182,6 +203,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 - Incorrect settings
 
    ![](../_images/control-rules/mvote/qcr-mvote_example-1_1.png)
+
    ![](../_images/control-rules/mvote/qcr-mvote_example-1_2.png)
 
    The Toloker is blocked after the first incorrect response to the first, second or third task. However, the skill isn't set. Since the ban reason is not specified, there is no way to find out why the Toloker is banned.
@@ -189,15 +211,21 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 - Alternative settings
 
   ![](../_images/control-rules/mvote/qcr-mvote_example1a_1.png)
+
   ![](../_images/control-rules/mvote/qcr-mvote_example1a_2.png)
+
   ![](../_images/control-rules/mvote/qcr-mvote_example1a_3.png)
+
   ![](../_images/control-rules/mvote/qcr-mvote_example1a_4.png)
 
   All rules are applied independently:
 
   1. If the Toloker gives at least 3 responses to the tasks, the percentage of correct answers is written as the skill value.
+
   1. If the Toloker gives 2 incorrect responses to 3 tasks, they are blocked in the pool for 10 days.
+
   1. If the Toloker gives 2 incorrect responses to 4 tasks, they are blocked in the pool for 10 days.
+
   1. If the Toloker gives 5 or more responses to tasks and the percentage of correct responses is less than 80%, they are blocked in the pool for 10 days.
 
   A set of rules like this prevents Tolokers from being banned for one incorrect response and lets you maintain high accuracy.
@@ -266,14 +294,15 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
 
-
 {% endcut %}
 
 {% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
 
-#### What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?
+{% endcut %}
+
+{% cut "What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?" %}
 
 To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](mvote.md) to the pool.
 
@@ -285,7 +314,9 @@ Don't forget to enable **Keep task order** in the pool parameters. Majority vote
 
 Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
 
-#### My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?
+{% endcut %}
+
+{% cut "My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?" %}
 
 All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
 

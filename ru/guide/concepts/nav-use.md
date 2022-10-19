@@ -66,7 +66,9 @@
 
 {% include [nav-what-next-addit](../_includes/concepts/nav/id-nav/what-next-addit.md) %}
 
-- [изменить](nav-edit.md) значение навыка вручную;[удалить](nav-delete.md) навык для конкретного исполнителя;[просмотреть историю](nav-history.md) изменений навыка.
+- [изменить](nav-edit.md) значение навыка вручную;
+- [удалить](nav-delete.md) навык для конкретного исполнителя;
+- [просмотреть историю](nav-history.md) изменений навыка.
 
 ## Решение проблем {#troubleshooting}
 

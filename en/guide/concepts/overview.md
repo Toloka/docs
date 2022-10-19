@@ -1,6 +1,7 @@
 # How does Toloka work?
 
 To place a task in Toloka, create three different entities: a project, a pool, and your tasks. Each of these entities is responsible for its own task settings block. This section explains why Toloka works this way and what its advantages are.
+
 ![](../_images/other/toloka-overview.svg)
 
 ## Project {#project}
@@ -9,12 +10,14 @@ A _project_ contains instructions, task interface settings, and a specification 
 
 Projects make it easier for you to post similar tasks in the future, because you don't have to re-configure the interface. You can also view aggregate statistics for all tasks in the project.
 
-
 ## Pool {#pool}
 
 A _pool_ is a set of tasks to be assigned to Tolokers simultaneously. Main pool settings: pricing, selection of Tolokers, overlap, and quality control.
+
 ![](../_images/other/pool-settings.png)
+
 Dividing tasks into pools lets you:
+
 - Select various Tolokers for tasks.
 
     For example, text in tasks for comment moderation can be in different languages: some comments in Russian and others in English. You can split these comments into different pools and use filters to specify the language that Tolokers should know.
@@ -26,7 +29,6 @@ Dividing tasks into pools lets you:
 - Manage task priority by assigning one pool before another.
 
 - Group tasks to view separate statistics for each group.
-
 
 ## Task {#task}
 
@@ -41,7 +43,6 @@ You upload tasks to Toloka as a [file](../../glossary.md#tsv-file-definition). T
 If you want multiple Tolokers to complete a task, you don't need to include it in the input data multiple times. Instead, set the [overlap](../../glossary.md#overlap) in the pool settings.
 
 {% endnote %}
-
 
 ## Task suite {#tasks-page}
 
@@ -64,7 +65,6 @@ You can separate tasks on a page yourself. It lets you group tasks, such as by s
 
 {% endnote %}
 
-
 ## What does it look like for Tolokers? {#appearance}
 
 When you start a pool, Tolokers can see it in the **Tasks** section. They select the pool, read the instructions, and complete tasks.
@@ -79,13 +79,11 @@ Tolokers don't know the difference between pools, tasks, or task suites. They mi
 
 For more information, see [How Tolokers see pools](pool-main.md).
 
-
 ## Payment {#payment}
 
 For each accepted task, an amount of money is deducted from your account: payment for the task, plus the [fee for using Toloka](budget.md). The amount to pay for the task is set when [creating a pool](pool-main.md).
 
 You can also [give a reward](bonus.md) to one or more Tolokers.
-
 
 ## Toloka API {#api}
 

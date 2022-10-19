@@ -30,11 +30,11 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
           Input data fields used in the project:
 
-         - `image` — image address;
-         - `result` — an array with the selected area coordinates;
-         - `assignment_id` — task ID.
+          - `image` — image address;
+          - `result` — an array with the selected area coordinates;
+          - `assignment_id` — task ID.
 
-         The Toloker's response will be recorded in the `verdict` output data field.
+          The Toloker's response will be recorded in the `verdict` output data field.
 
       1. Turn on the **Define data specification manually** option.
 
@@ -42,77 +42,79 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
       1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
 
-         ```
-         {
+          ```json
+          {
             "image": {
-            "type": "url",
-           "hidden": false,
-           "required": true
-           },
-            "result": {
-            "type": "array_json",
-            "hidden": false,
-            "required": false
+              "type": "url",
+              "hidden": false,
+              "required": true
             },
-            "assignment_id": {
-           "type": "string",
-            "hidden": true,
-            "required": true
+            "result": {
+              "type": "array_json",
+              "hidden": false,
+              "required": false
+            },
+              "assignment_id": {
+              "type": "string",
+              "hidden": true,
+              "required": true
             }
-            }
-         ```
+          }
+          ```
 
       1. Remove the template code from the {% if locale == "en-com" %}**Output data**{% endif %} field and enter the following code:
 
+          ```json
+          {
+            "verdict": {
+              "type": "string",
+              "hidden": false,
+              "required": true,
+              "allowed_values": [
+                "OK",
+                "BAD"
+              ]
+            }
+          }
           ```
-         {
-         "verdict": {
-         "type": "string",
-         "hidden": false,
-         "required": true,
-         "allowed_values": [
-         "OK",
-         "BAD"
-         ]
-         }
-         }
-         ```
 
-   - HTML/CSS/JS editor
+    - HTML/CSS/JS editor
 
       1. Prepare {% if locale == "en-com" %}**Task interface**{% endif %}:
 
-         1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](t-components/../../_images/settings.svg) in the **Task interface** block on the project page).
+          1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](t-components/../../_images/settings.svg) in the **Task interface** block on the project page).
 
-         1. In the **html** block, replace the current code with the following:
-            {% if locale == "en-com" %}
-
-            ```
-            <!-- editor for selecting objects that lets you add an area in advance -->
-            {{field type="image-annotation" name="object" src=image annotations=selection}}
-
-            <!-- buttons for responses -->
-            {{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
-            {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
-            ```
-
-            {% endif %}
-        1. In the **css** block, replace the code with the following:
+          1. In the **html** block, replace the current code with the following:
               {% if locale == "en-com" %}
 
-           ```
-           /* hide the button for polygon selection */
-           .image-annotation-editor__shape-polygon {
-           display: none;
-           }
+              ```plaintext
+              <!-- editor for selecting objects that lets you add an area in advance -->
+              {{field type="image-annotation" name="object" src=image annotations=selection}}
 
-           /* adjust the interface height */
-           .image-annotation-editor__annotation-layer {
-           height: max-content;
-           }
-           ```
+              <!-- buttons for responses -->
+              {{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
+              {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
+              ```
 
-           {% endif %}
+              {% endif %}
+
+          1. In the **css** block, replace the code with the following:
+
+              {% if locale == "en-com" %}
+
+              ```css
+              /* hide the button for polygon selection */
+              .image-annotation-editor__shape-polygon {
+                  display: none;
+              }
+
+              /* adjust the interface height */
+              .image-annotation-editor__annotation-layer {
+                  height: max-content;
+              }
+              ```
+
+             {% endif %}
 
       1. Configure the **Data specification** section:
 
@@ -120,39 +122,39 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
          1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
 
-            ```
+            ```json
             {
-            "image": {
-            "type": "url",
-            "hidden": false,
-            "required": true
-            },
-            "selection": {
-            "type": "array_json",
-            "hidden": false,
-            "required": false
-            },
-            "assignment_id": {
-            "type": "string",
-            "hidden": true,
-            "required": true
-            }
+              "image": {
+                "type": "url",
+                "hidden": false,
+                "required": true
+              },
+              "selection": {
+                "type": "array_json",
+                "hidden": false,
+                "required": false
+              },
+              "assignment_id": {
+                "type": "string",
+                "hidden": true,
+                "required": true
+              }
             }
             ```
 
          1. Remove the template code from the {% if locale == "en-com" %}**Output data**{% endif %} field and enter the following code:
 
-            ```
+            ```json
             {
-            "result": {
-            "type": "string",
-            "hidden": false,
-            "required": true,
-            "allowed_values": [
-            "OK",
-            "BAD"
-            ]
-            }
+              "result": {
+                "type": "string",
+                "hidden": false,
+                "required": true,
+                "allowed_values": [
+                  "OK",
+                  "BAD"
+                ]
+              }
             }
             ```
 
@@ -183,9 +185,10 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 1. Write instructions for Tolokers:
 
     **Instructions:**
+
     {% if locale == "en-com" %}
 
-    ```
+    ```plaintext
     Look at the image and answer the question: **Are all traffic signs outlined correctly?**
     If there are, click **Yes**.
     If there isn't, click **No**.
@@ -194,7 +197,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     {% endif %}
 
-    {% note info %}
+    {% note tip %}
 
     If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) button on the toolbar.
 
@@ -210,7 +213,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 1. Specify the {% if locale == "en-com" %}**Pool name**{% endif %}.
 
-1. (optional) Add a **Private comment**{% if locale == "en-com" %}**Private comment**{% endif %}. This information is available only to you.
+1. (optional) Add a {% if locale == "en-com" %}**Private comment**{% endif %}. This information is available only to you.
 
 1. Filter Tolokers in the {% if locale == "en-com" %}**Tolokers**{% endif %} section of the {% if locale == "en-com" %}**Audience**{% endif %} block:
 
@@ -244,11 +247,11 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     1. Set the rule: if {% if locale == "en-com" %}**number of responses**{% endif %} **≥ 10** and {% if locale == "en-com" %}**correct responses (%)**{% endif %} **< 50**, then {% if locale == "en-com" %}**ban**{% endif %} the Toloker {% if locale == "en-com" %}**on project**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. Specify the reason **Doesn't match the majority**.
 
-    {% note info %}
+        {% note info %}
 
-    The rule takes effect when the number of responses for the task is equal to the [overlap](../../glossary.md#overlap).
+        The rule takes effect when the number of responses for the task is equal to the [overlap](../../glossary.md#overlap).
 
-    {% endnote %}
+        {% endnote %}
 
     Learn more in [Quality control](control.md).
 
@@ -282,7 +285,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
     ```
     and save the file.
 
-    {% note info %}
+    {% note tip %}
 
     You can prepare the file in {% if locale == "en-com" %}**Notepad**{% endif %}. To transfer data to **Microsoft Excel**, use {% if locale == "en-com" %}**Text Import Wizard**{% endif %} and disable the {% if locale == "en-com" %}**Text qualifier**{% endif %} option.
 
@@ -306,11 +309,11 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     1. On the pool page, click {% if locale == "en-com" %}**Preview**{% endif %}. Make sure that the task displays images with the selected objects.
 
-    {% note info %}
+        {% note tip %}
 
-    If there are no outlined objects, make sure that quotes are properly used in the **INPUT:selection** column in the file. Make sure that the [interface parameters](#task-interface) are set correctly.
+        If there are no outlined objects, make sure that quotes are properly used in the **INPUT:selection** column in the file. Make sure that the [interface parameters](#task-interface) are set correctly.
 
-    {% endnote %}
+        {% endnote %}
 
 1. Click ![](../_images/other/b-start-pool.png) to start the pool.
 
@@ -319,7 +322,6 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
     The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
 
     {% endnote %}
-
 
 ## Download the reviewed results {#get_results}
 
@@ -341,7 +343,6 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 1. Use the results file in [project 2](image-segmentation-project2.md).
 
-
 ## Check the completed tasks {#check_results}
 
 Since the [Non-automatic acceptance](image-segmentation-project2.md) option is enabled in the pool settings for {% if locale == "en-com" %}**project 2**{% endif %}, you should check the Tolokers' responses within the time limit set in the {% if locale == "en-com" %}**Review period**{% endif %} field.
@@ -352,6 +353,7 @@ You can check the results in two ways:
 - In the pool interface.
 
 {% list tabs %}
+
 - Review assignments in the results file
 
     1. In the text or spreadsheet editor, open the file you received after aggregating the results.
@@ -367,12 +369,14 @@ You can check the results in two ways:
     1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
 
         - If the aggregate result of the assignment is OK, put `+` to accept it.
+
         - If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Enter the reason for rejecting the task in the `ACCEPT:comment:` field, for example, `The object isn't selected or is selected incorrectly.`
 
-        {% note info %}
+        {% note tip %}
 
         You can use the awk commands to outline images on Linux and MacOS devices:
-        ```
+
+        ```shell
         awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
         ```
 
@@ -399,7 +403,6 @@ You can check the results in two ways:
     1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the {% if locale == "en-com" %}**Recompletion of the rejected tasks**{% endif %} option.
 
         In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
-
 
 - Review assignments in the pool interface
 

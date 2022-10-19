@@ -8,7 +8,6 @@ Since the **Assignment review** option is enabled in the [pool](../../glossary.m
 
 {% endnote %}
 
-
 ## Create a project {#create_project}
 
 To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
@@ -33,130 +32,142 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Edit the task interface in the editor you selected:
 
-    #### Template Builder
+   {% list tabs %}
 
-    1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fbR){% endif %} for this project with pre-configured validation and task layout.
+    - Template Builder
 
-    The Toloker won't be able to submit the response until they:
+      1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fbR){% endif %} for this project with pre-configured validation and task layout.
 
-    - Click the button to go to the online store.
-    - Select one of the response options.
+          The Toloker won't be able to submit the response until they:
 
-    1. Click **Show specifications** to see the input and output data fields.
+          - Click the button to go to the online store.
+          - Select one of the response options.
 
-    - Input data fields:
+      1. Click **Show specifications** to see the input and output data fields.
 
-    - `image` — A link for uploading the image of the original product.
-    - `found_link` — A link to the product in the online store.
-    - `assignment_id` — A link to previous projects.
+          - Input data fields:
 
-    - Output data field: `result` — string for saving the Toloker's response.
+              - `image` — A link for uploading the image of the original product.
+              - `found_link` — A link to the product in the online store.
+              - `assignment_id` — A link to previous projects.
 
-    #### HTML/CSS/JS editor
+          - Output data field: `result` — string for saving the Toloker's response.
 
-    1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
-    {% if locale == "en-com" %}
-    ```
-    {{img src=image height="400px"}}
-    {{iframe src= found_link height="600px"}}
+    - HTML/CSS/JS editor
 
-    <p>Check that the uploaded image matches the product in the store.</p>
-    {{button label="Check the product"  href=found_link action=true}}
+      1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-    <p>Are <b>these shoes</b> similar to each other?</p>
-    <p>The shoes must be similar in color, material, length, and style.</p>
-    {{field type="radio" name="result" value="Yes" label="Yes"}}
-    {{field type="radio" name="result" value="No" label="No"}}
-    ```
-    {% endif %}
-    1. Leave the **JS** block unchanged.
+          {% if locale == "en-com" %}
 
-    1. In the **css** block, insert the following code that is responsible for setting the proportional image size:
+          ```html
+          {{img src=image height="400px"}}
+          {{iframe src= found_link height="600px"}}
 
-    ```
-    .task {
-    display: block;
-    }
-    .img {
-    float: left;
-    width: 50%;
-    }
-    .iframe {
-    float: left;
-    width: 50%;
-    }
-    ```
+          <p>Check that the uploaded image matches the product in the store.</p>
+          {{button label="Check the product"  href=found_link action=true}}
 
-    1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
+          <p>Are <b>these shoes</b> similar to each other?</p>
+          <p>The shoes must be similar in color, material, length, and style.</p>
+          {{field type="radio" name="result" value="Yes" label="Yes"}}
+          {{field type="radio" name="result" value="No" label="No"}}
+          ```
 
-    1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          {% endif %}
 
-    1. In the **Input data** field, enter:
-    ```
-    {
-    "image": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
-    "found_link": {
-    "type": "url",
-    "hidden": false,
-    "required": true
-    },
+      1. Leave the **JS** block unchanged.
 
-    "assignment_id": {
-    "type": "string",
-    "hidden": true,
-    "required": true
-    }
-    }
-    ```
+      1. In the **css** block, insert the following code that is responsible for setting the proportional image size:
 
-    1. In the **Output data** field, enter:
-    ```
-    {
-    "result": {
-    "type": "string",
-    "hidden": false,
-    "required": true
-    }
-    }
-    ```
+          ```css
+          .task {
+            display: block;
+          }
+          .img {
+            float: left;
+            width: 50%;
+          }
+          .iframe {
+            float: left;
+            width: 50%;
+          }
+          ```
 
-    Learn more about the **Specification** parameters in [Input and output data](incoming.md).
+      1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-    1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
 
-    {% note info %}
+          1. In the **Input data** field, enter:
 
-    The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+              ```json
+              {
+                "image": {
+                  "type": "url",
+                  "hidden": false,
+                  "required": true
+                },
+                "found_link": {
+                  "type": "url",
+                  "hidden": false,
+                  "required": true
+                },
+                "assignment_id": {
+                  "type": "string",
+                  "hidden": true,
+                  "required": true
+                }
+              }
+              ```
 
-    {% endnote %}
+          1. In the **Output data** field, enter:
 
-    1. 1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+              ```json
+              {
+                "result": {
+                  "type": "string",
+                  "hidden": false,
+                  "required": true
+                }
+              }
+              ```
 
-    1. Exit preview mode.
+              Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-    In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+
+              {% note info %}
+
+              The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+
+              {% endnote %}
+
+          1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+
+          1. Exit preview mode.
+
+              In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+
+    {% endlist %}
 
 1. Save the changes.
 
 1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
 
-    1. **Instructions:**{% if locale == "en-com" %}
-    ```
-    Take a look at the pictures that show two pairs of shoes. Decide whether they look similar or not.
+    1. **Instructions:**
 
-    Shoes are considered similar if they have a similar color, fabric, length, and style.
-    If you don't see a pair of shoes in any of the pictures, click **Yes**.
-    ```
-    {% endif %}
+        {% if locale == "en-com" %}
+
+        ```plaintext
+        Take a look at the pictures that show two pairs of shoes. Decide whether they look similar or not.
+
+        Shoes are considered similar if they have a similar color, fabric, length, and style.
+        If you don't see a pair of shoes in any of the pictures, click **Yes**.
+        ```
+
+        {% endif %}
 
     1. Save the changes.
 
 1. To go back to the {% if locale == "en-com" %}**Projects**{% endif %} page, click {% if locale == "en-com" %}**Finish editing**{% endif %}.
-
 
 Learn more about working with the project in the [Project](project.md) section.
 
@@ -203,14 +214,18 @@ To create a pool:
     1. Find the **Rules** block in the list and choose **Control tasks**.
 
     1. Set a rule for [control tasks](../../glossary.md#control-task): If the **number of responses** to control questions **is greater than or equal to 3** and the **percentage of correct responses** to control questions **is less than 60**, then **restrict the Toloker's access** to the **project for 10 days**. Specify the **Control task** as a reason.
-    ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
+
     1. (optional) Add another quality control rule. Click **Add a quality control rule**.
 
     1. Find the **Rules** block in the list and choose **Fast responses**.
 
     1. In the **Minimum time per task suite** field, specify `60`.
 
-    1. Set a rule for fast responses: if the **number of fast responses**** is more than 1**, then **restrict the Toloker's access** to **the project for 10 days**. Specify **Fast responses** as the reason.![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-1.png)
+    1. Set a rule for fast responses: if the **number of fast responses is more than 1**, then **restrict the Toloker's access** to **the project for 10 days**. Specify **Fast responses** as the reason.
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-1.png)
 
     Learn more in [Quality control](control.md).
 
@@ -224,7 +239,6 @@ To create a pool:
 
 1. Click **Create a pool**.
 
-
 ## Prepare and upload a file with the results {#upload_file}
 
 1. Wait for the pool from project 2 to complete.
@@ -237,7 +251,9 @@ To create a pool:
 
     1. In the **Fields** block, only leave the **response ID** option enabled.
 
-    1. Disable the **Separate assignments with empty row** option.![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
+    1. Disable the **Separate assignments with empty row** option.
+
+        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
     1. Click **Download results**.
 
@@ -277,11 +293,11 @@ To create a pool:
 
     1. Click **Edit**.
 
-    {% note info %}
+        {% note info %}
 
-    If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
+        If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
 
-    {% endnote %}
+        {% endnote %}
 
     1. In the window that opens, click **Create control tasks**.
 
@@ -293,12 +309,11 @@ To create a pool:
 
     1. Click **Are these shoes similar to each other?** to exit [task markup](../../glossary.md#task-markup) mode.
 
-    {% note info %}
+        {% note info %}
 
-    In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5-10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
+        In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5-10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
-    {% endnote %}
-
+        {% endnote %}
 
 ## Download the reviewed results {#get_results}
 
@@ -321,7 +336,6 @@ To get the results:
 1. When the operation is complete, download the file with the results. To do this, click **Download** in the **Files** column.
 
 1. Use the file with the results from [project 2](find_an_item_in_store.md#upload_file).
-
 
 ## Check the completed tasks {#check_results}
 
@@ -347,6 +361,7 @@ To review the [submitted assignments](../../glossary.md#submitted-answers):
 1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
 
     - If the aggregate result of the assignment is OK, put `+` to accept it.
+
     - If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Specify the reason for assignment rejection in the `ACCEPT:comment:` field (for example, `The item provided is incorrect or doesn't open.`).
 
 1. Delete all the other columns.
@@ -371,7 +386,6 @@ To review the [submitted assignments](../../glossary.md#submitted-answers):
 
     In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for verification. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
 
-
 #### Review assignments in the pool interface
 
 To check submitted assignments:
@@ -384,10 +398,8 @@ To check submitted assignments:
 
 1. In the **Status** column, you'll see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
 
-
 ## What's next {#what-next}
 
 - Create [Project 4](item_more_similar.md) to compare matching images.
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

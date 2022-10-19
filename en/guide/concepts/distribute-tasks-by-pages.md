@@ -23,6 +23,7 @@ Specify how many tasks of each type should be in each task suite. For example, 8
 This method is useful if the created pool:
 
 - Contains [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task) tasks in addition to the [general](../../glossary.md#general-task) tasks.
+
 - Has [dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL) enabled.
 
 {% cut "Sample settings" %}
@@ -41,15 +42,13 @@ This method is useful if the created pool:
 
 - If there aren't enough general tasks and the {% if locale == "en-com" %}**Assign partial page**{% endif %} option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-page). Please note that the number of control and training tasks in this case must be complete.
 
-{% note warning %}
+{% note alert %}
 
 If you upload a file via “Smart mixing”, you won't be able to use other ways of task distribution on the pages in this pool.
 
 {% endnote %}
 
-
 After uploading the tasks with **smart mixing** you will be able to [mark up tasks](task_markup.md) and set selective [majority vote checking](mvote.md).
-
 
 ## How to distribute tasks as suites {#smart-mixing}
 
@@ -59,7 +58,6 @@ After uploading the tasks with **smart mixing** you will be able to [mark up tas
 | Tasks are mixed within a suite                                                                         | No           | Yes          |
 | Task suites are distributed to Tolokers in the same order                                              | No           | Yes          |
 | Within identical task suites, control tasks are the same for all Tolokers                              | Yes          | No           |
-
 
 ## Control tasks {#gs}
 
@@ -108,7 +106,6 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% endnote %}
 
-
 #### Setting overlap
 
 If you upload tasks from the Toloka interface, infinite overlap is set automatically for control and training tasks, so that there is enough to mark up all general tasks.
@@ -128,8 +125,6 @@ If another overlap value is set, control tasks may end during labeling and the p
 - If you used {% if locale == "en-com" %}**Set manually**{% endif %}, you can find out the number of tasks per suite in the pool settings. But some suites may be [incomplete](../../glossary.md#incomplete-page).
 
 - If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#api-yandex-toloka) to check task distribution across suites.
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -158,7 +153,9 @@ The third thing to consider is quality control and assignment review. If you all
 The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
+
 - If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}

@@ -30,48 +30,50 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
         1. The task interface describes how the elements should be arranged in the task.
 
-        The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
+            The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
 
-        For more information, see the Template Builder Help:
+            For more information, see the Template Builder Help:
 
-        - [Setting up conditions]({{ tb-conditions }}).
-        - [Image classification]({{ tb-image-classification }}) template.
+            - [Setting up conditions]({{ tb-conditions }}).
+            - [Image classification]({{ tb-image-classification }}) template.
 
         1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
-        {% if locale == "en-com" %}
+            {% if locale == "en-com" %}
 
-        ```json
-        "label": "What is the cat's mood?",
-        "options": [
-        {
-        "label": "Good",
-        "value": "ok"
-        },
-        {
-        "label": "Bad",
-        "value": "bad"
-        },
-        ```
+            ```json
+            "label": "What is the cat's mood?",
+            "options": [
+            {
+            "label": "Good",
+            "value": "ok"
+            },
+            {
+            "label": "Bad",
+            "value": "bad"
+            },
+            ```
 
-        {% endif %}
-        with:
-        {% if locale == "en-com" %}
+            {% endif %}
 
-        ```json
-        "label": "Are there traffic signs in the picture?",
-        "options": [
-        {
-        "label": "Yes",
-        "value": "ok"
-        },
-        {
-        "label": "No",
-        "value": "bad"
-        },
-        ```
+            with:
 
-        {% endif %}
+            {% if locale == "en-com" %}
+
+            ```json
+            "label": "Are there traffic signs in the picture?",
+            "options": [
+            {
+            "label": "Yes",
+            "value": "ok"
+            },
+            {
+            "label": "No",
+            "value": "bad"
+            },
+            ```
+
+            {% endif %}
 
         1. Click **Show specifications** to see the input and output data fields.
 
@@ -83,45 +85,58 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
            - Input data field: `image` — A link to an image.
 
-             Change the data type to string to add links to your files.
+                Change the data type to string to add links to your files.
 
            - Output data field: `result` — string for saving the Toloker's response.
 
-            {% cut "What are input and output data?" %}
+                {% cut "What are input and output data?" %}
 
-            **Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
+                **Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
 
-            **Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
+                **Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
 
-            If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
+                If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
 
-            {% endcut %}
+                {% endcut %}
 
     - HTML/CSS/JS editor
 
         1. Edit the **HTML** block in the {% if locale == "en-com" %}**Task interface**{% endif %}.
 
-        1. After the line with the image, enter the question:
+            1. After the line with the image, enter the question:
 
-        1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
+                `<div>Are there <b>traffic signs</b> in the picture?<div>`
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+            1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-           {% if locale == "en-com" %}
+                {% if locale == "en-com" %}
 
-           {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-           {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-           {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
-            ```
-           {% endif %}
+                ```plaintext
+                {{img src=image width="100%" height="400px"}}
+                <div>Are there <b>traffic signs</b> in the picture?<div>
+
+                {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
+                {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
+                {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
+                ```
+
+                {% endif %}
 
         1. Leave the **JS**, **CSS**, and {% if locale == "en-com" %}**Data specification**{% endif %} blocks unchanged.
 
-           Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
+            Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
 
-        1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
-   1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
+            {% note info %}
+
+            The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+
+            {% endnote %}
+
+        1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+
+        1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
 
    {% endlist %}
 
@@ -131,7 +146,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. **Instructions:**{% if locale == "en-com" %}
 
-    ```
+    ```plaintext
     Look at the image and answer whether there are any **traffic signs** in it.
     If there are, click **Yes**.
     If there aren't, click **No**.
@@ -141,9 +156,11 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
     {% endif %}
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
+
     1. Save the changes.
 
 1. In the upper-right corner, click {% if locale == "en-com" %}**Finish**{% endif %}
+
     Learn more about working with the project in the [Project](project.md) section.
 
 ## Create a pool {#create-pool}
@@ -184,19 +201,21 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 1. Click {% if locale == "en-com" %}**Create a pool**{% endif %}.
 
-
 ## Upload tasks {#upload-file}
 
 Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
 
 1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
-    #### Use sample data
+
+    {% cut "Use sample data" %}
 
     If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool.
 
     Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
 
     Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+
+    {% endcut %}
 
 1. In the window that opens, configure the file upload settings:
 
@@ -218,11 +237,11 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
 
-    {% note info %}
+        {% note info %}
 
-    If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
+        If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
 
-    {% endnote %}
+        {% endnote %}
 
     1. In the window that opens, click {% if locale == "en-com" %}**Create control tasks**{% endif %}.
 
@@ -248,7 +267,6 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     {% endnote %}
 
-
 ## Get the results {#get-results}
 
 1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![](../_images/other/drop-down.png).
@@ -268,8 +286,6 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 1. When the operation is complete, download the results file. To do this, click {% if locale == "en-com" %}**Download**{% endif %} in the {% if locale == "en-com" %}**Files**{% endif %} column.
 
 1. Use the results file in [project 2](image-segmentation-project2.md).
-
-
 
 ## What's next {#what-next}
 

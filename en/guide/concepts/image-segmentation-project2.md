@@ -42,27 +42,27 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
         1. Edit the **CSS** block:
 
-        1. Set up the area selection tools. This template uses [Editor for image area selection](t-components/image-annotation.md). It features rectangle and polygon tools (by default).
+            1. Set up the area selection tools. This template uses [Editor for image area selection](t-components/image-annotation.md). It features rectangle and polygon tools (by default).
 
-           To set up rectangle selection, replace the code in the **CSS** block with the following:
+                To set up rectangle selection, replace the code in the **CSS** block with the following:
 
-            ```
-            .image-annotation-editor__shape-polygon {
-            display: none;
-            }
-            ```
+                ```css
+                .image-annotation-editor__shape-polygon {
+                display: none;
+                }
+                ```
 
             1. Enter the code to adjust the interface height to the image size:
 
-            ```
-            .image-annotation-editor__annotation-layer {
-            height: max-content;
-            }
-            ```
+                ```css
+                .image-annotation-editor__annotation-layer {
+                height: max-content;
+                }
+                ```
 
-        1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
+            1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
 
-            Learn more about [annotation](t-components/image-annotation.md#annotation).
+                Learn more about [annotation](t-components/image-annotation.md#annotation).
 
         1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
@@ -82,10 +82,11 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
 1. Write instructions for Tolokers:
 
-    #### Instruction text:
+    #### Instructions text:
+
     Click ![](../_images/tutorials/image-segmentation/rectangle-button.png) and draw a rectangle around all traffic signs in the image.
 
-    {% note info %}
+    {% note tip %}
 
     If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) button on the toolbar.
 
@@ -133,8 +134,6 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     {% endcut %}
 
-    {% endcut %}
-
     {% cut "What is a fair price for a task suite?" %}
 
     The general rule of pricing is the more time the Toloker spends to complete the task, the higher the price is.
@@ -143,84 +142,83 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     {% endcut %}
 
-    {% endcut %}
-
 1. [Quality control rules](control.md) allow you to filter out careless Tolokers. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set the rules for the pool:
 
     1. Turn on the {% if locale == "en-com" %}**Assignment review**{% endif %} option.
 
-    {% cut "What is non-automatic acceptance (assignment review)?" %}
+        {% cut "What is non-automatic acceptance (assignment review)?" %}
 
-    The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
-    In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
+        {% endcut %}
 
-    {% endcut %}
-
-    {% endcut %}
+        In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
 
     1. Add the following quality control rules:
-    - {% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — sends the tasks you rejected to other Tolokers according to the specified rules.
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+        - {% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — sends the tasks you rejected to other Tolokers according to the specified rules.
 
-    1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and select {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
+            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-    1. Set a rule for a rejected task: if {% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, then {% if locale == "en-com" %}**extend overlap by**{% endif %} **1**. Turn on the {% if locale == "en-com" %}**Open pool if closed**{% endif %} option.
+            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and select {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
 
-    This means that the rejected task will be returned to the pool and shown to another Toloker.
+            1. Set a rule for a rejected task: if {% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, then {% if locale == "en-com" %}**extend overlap by**{% endif %} **1**. Turn on the {% if locale == "en-com" %}**Open pool if closed**{% endif %} option.
 
-    - {% if locale == "en-com" %}**Submitted responses**{% endif %} — allows you to limit the number of pool tasks available for the Toloker per day.
+                This means that the rejected task will be returned to the pool and shown to another Toloker.
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+        - {% if locale == "en-com" %}**Submitted responses**{% endif %} — allows you to limit the number of pool tasks available for the Toloker per day.
 
-    1. Find {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Submitted responses**{% endif %}.
+            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-    1. Set a rule for the completed task: if {% if locale == "en-com" %}**submitted assignments**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**assign skill value**{% endif %} **Area selection** equal to **1**.
+            1. Find {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Submitted responses**{% endif %}.
 
-    These parameters allow you to mark the Toloker who completed at least one task in the pool.
+            1. Set a rule for the completed task: if {% if locale == "en-com" %}**submitted assignments**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**assign skill value**{% endif %} **Area selection** equal to **1**.
 
-    {% note info %}
+                These parameters allow you to mark the Toloker who completed at least one task in the pool.
 
-    If the **Area selection** skill isn't displayed in the list, save the pool and reopen it for editing.
+                {% note tip %}
 
-    {% endnote %}
+                If the **Area selection** skill isn't displayed in the list, save the pool and reopen it for editing.
 
-    - {% if locale == "en-com" %}**Fast responses**{% endif %} —Filters out Tolokers who respond too quickly.
+                {% endnote %}
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+        - {% if locale == "en-com" %}**Fast responses**{% endif %} —Filters out Tolokers who respond too quickly.
 
-    1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Fast responses**{% endif %}.
+            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-    1. In the {% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} field, enter the number of recent task suites submitted by the Toloker. For example, `5`.
-    1. In the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} field, enter the time in seconds. For example, `20`.
-    1. Set a rule for a fast response: if the {% if locale == "en-com" %}**number of fast responses**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**ban**{% endif %} {% if locale == "en-com" %}**on requester**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. In the {% if locale == "en-com" %}**Reason**{% endif %} field, enter **Fast responses**.
+            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Fast responses**{% endif %}.
 
-    This means that a user who completes a [task suite](../../glossary.md#task-suite) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
+            1. In the {% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} field, enter the number of recent task suites submitted by the Toloker. For example, `5`.
 
-    - {% if locale == "en-com" %}**Results of assignment review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
+            1. In the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} field, enter the time in seconds. For example, `20`.
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+            1. Set a rule for a fast response: if the {% if locale == "en-com" %}**number of fast responses**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**ban**{% endif %} {% if locale == "en-com" %}**on requester**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. In the {% if locale == "en-com" %}**Reason**{% endif %} field, enter **Fast responses**.
 
-    1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of assignment review**{% endif %}.
+                This means that a user who completes a [task suite](../../glossary.md#task-suite) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
 
-    1. Set a rule for rejected tasks: if {% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** and {% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35**, then {% if locale == "en-com" %} **ban**{% endif %} {% if locale == "en-com" %} **on requester**{% endif %} for {% if locale == "en-com" %} **15 days**{% endif %}.
+        - {% if locale == "en-com" %}**Results of assignment review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
 
-    This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
+            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-    [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](control.md).
+            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of assignment review**{% endif %}.
 
-    {% note info %}
+            1. Set a rule for rejected tasks: if {% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** and {% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35**, then {% if locale == "en-com" %} **ban**{% endif %} {% if locale == "en-com" %} **on requester**{% endif %} for {% if locale == "en-com" %} **15 days**{% endif %}.
 
-    You can copy quality control settings from another pool. To do this, in the {% if locale == "en-com" %}**Tolokers**{% endif %} section of the {% if locale == "en-com" %}**Audience**{% endif %} block, click {% if locale == "en-com" %}**copy them from another pool**{% endif %}.
+                This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
-    {% endnote %}
+        [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](control.md).
+
+        {% note info %}
+
+        You can copy quality control settings from another pool. To do this, in the {% if locale == "en-com" %}**Tolokers**{% endif %} section of the {% if locale == "en-com" %}**Audience**{% endif %} block, click {% if locale == "en-com" %}**copy them from another pool**{% endif %}.
+
+        {% endnote %}
 
 1. In the {% if locale == "en-com" %}**Task overlap**{% endif %} section, find the {% if locale == "en-com" %}**The number of Tolokers to complete every task**{% endif %} field and set the overlap, which is the number of Tolokers to complete the same task. For image area selection tasks, it is usually `1`.
 
 1. In the {% if locale == "en-com" %}**Additional settings**{% endif %} block, specify {% if locale == "en-com" %}**Time per task suite**{% endif %}. The time should be long enough to read the instructions and wait for task data to load. For example, `1200` seconds.
-1. Click {% if locale == "en-com" %}**Create a pool**{% endif %}.
 
+1. Click {% if locale == "en-com" %}**Create a pool**{% endif %}.
 
 ## Prepare and upload tasks {#upload-file}
 
@@ -230,14 +228,15 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. Choose images appropriate for the current project (the **OK** value).
 
-    {% note info %}
+        {% note tip %}
 
-    You can use the awk commands to outline images on Linux and MacOS devices:
-    ```
-    awk 'BEGIN {OFS = FS = "\t";} $2=/OK/ {print $1}' <aggregated_res>.tsv > <filtered_res>.tsv
-    ```
+        You can use the awk commands to outline images on Linux and MacOS devices:
 
-    {% endnote %}
+        ```shell
+        awk 'BEGIN {OFS = FS = "\t";} $2=/OK/ {print $1}' <aggregated_res>.tsv > <filtered_res>.tsv
+        ```
+
+        {% endnote %}
 
     1. Copy the column with the selected links to a new sheet or document.
 
@@ -267,7 +266,6 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     {% endnote %}
 
-
 ## Get the results {#get-results}
 
 1. On the pool page, click {% if locale == "en-com" %}**Download results**{% endif %}. In the window that opens:
@@ -282,11 +280,8 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. Use the results file in [project 3](image-segmentation-project3.md).
 
-
-
 ## What's next {#what-next}
 
 - Create [Project 3](image-segmentation-project3.md) to review assignments.
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

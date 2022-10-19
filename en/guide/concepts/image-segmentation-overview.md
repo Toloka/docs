@@ -7,10 +7,15 @@ Let's say you have photos of streets and you need to select traffic signs in the
 In this example, the solution consists of the following steps:
 
 - [Project 1](image-segmentation-project1.md): Use this project if some images don't contain the intended object and you want to filter them out.
+
 - [Project 2](image-segmentation-project2.md) — in this project, Tolokers will select areas with the desired object in the images. Toloka provides an editor for selecting an image area. It lets the Toloker select a polygon or rectangle area.
+
 - [Project 3](image-segmentation-project3.md) — this project allows you to ask Toloka Tolokers to review the tasks instead of reviewing them yourself.
+
 ![](../_images/tutorials/image-segmentation/image-segmentation.svg)
+
 Each project consists of the following basic steps:
+
 1. **Create a project**. In the project, you describe the [input and output data](../../glossary.md#input-output-data), [task interface](../../glossary.md#task-interface), and [instructions](../../glossary.md#task-instruction) for completing a task.
 
 1. **Create a [task pool](../../glossary.md#pool) in the project**. In the pool, you set up [quality control](../../glossary.md#quality-control) and [filters](../../glossary.md#filtering) for Tolokers.
@@ -24,7 +29,6 @@ Each project consists of the following basic steps:
 Find out how to top up your account in the relevant section: [For non-residents of Russia](refill.md).
 
 If you need help rating tasks, read about [setting up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
-
 
 ## What's next {#what-next}
 
