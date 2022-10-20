@@ -8,23 +8,29 @@ If you run the [pool](../../glossary.md#pool) with the assignment review, make s
 {% endnote %}
 
 1. Open the [pool](pool-main.md).
-1. Click  next to the {% if locale == "en-com" %}**Download results**{% endif %} button.
+
+1. Click ![](../_images/drop-down.svg) next to the {% if locale == "en-com" %}**Download results**{% endif %} button.
+
 1. Choose the aggregation method:
+
     - [Dawid-Skene aggregation model](#dawid-skene)
     - [Aggregation by skill](#aggr-by-skill)
-
 
 Aggregation takes from several minutes to several hours. Track the progress on the [Operations]({{ operations }}) page. When aggregation is complete, download the file with the results.
 
 To receive notifications and emails when results aggregation is completed, set up notifications:
 
 1. Log in to your account.
-1. Go to
-1. Choose the notification method:
-    - Email: Messages will be sent to your email address.
-    - Messages: Notifications will be displayed under **Messages** in your account. Apart from you, those who set up [shared access](multiple-access.md) to your account can see them.
-    - Browser: Notifications will be sent to the devices that you logged in to your account from.
 
+1. Go to **Profile → Notifications → Pool or aggregation completed**
+
+1. Choose the notification method:
+
+    - Email: Messages will be sent to your email address.
+
+    - Messages: Notifications will be displayed under **Messages** in your account. Apart from you, those who set up [shared access](multiple-access.md) to your account can see them.
+
+    - Browser: Notifications will be sent to the devices that you logged in to your account from.
 
 ## Dawid-Skene aggregation model {#dawid-skene}
 
@@ -42,7 +48,6 @@ Because the Dawid-Skene model evaluates `|L|²` parameters for each Toloker, we 
 
 {% endnote %}
 
-
 The result of aggregation is a TSV file with responses. `CONFIDENCE: <field name [output](incoming.md)>` indicates the response significance as a percentage.
 
 #### Benefits
@@ -59,14 +64,13 @@ The Dawid-Skene model is a non-trivial aggregation algorithm. Check out its feat
 
     In an image classification task, all three Tolokers selected the first response option. In another similar task, the same three Tolokers selected the first option, and the fourth Toloker selected the second option. If in the next task, the only response is given by the fourth Toloker, the David-Skene aggregation model might consider it incorrect and return a different result.
 
-	{% endcut %}
+    {% endcut %}
 
 - The Dawid-Skene aggregation model works with [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks as well as with general tasks. There is a possibility that the `OUTPUT:result` field for the control task in the TSV file won't match the actual response to this task (`GOLDEN:result`).
 
 - If your project has output data marked as `"required": false` and Tolokers don't fill in this field, it won't be included in aggregation.
 
     For example, you have 1000 tasks. In 999 of them, Tolokers didn't label the `label` field, and one Toloker labeled it as `label=x`. As a result of aggregation, this data field will have `CONFIDENCE = 100%`, since only one task out of a thousand falls under the aggregation conditions.
-
 
 {% cut "How it's calculated" %}
 
@@ -86,7 +90,6 @@ Aggregation only includes accepted tasks.
 
 {% endnote %}
 
-
 #### Requirements
 
 The main requirement for this aggregation is the output data fields:
@@ -97,13 +100,13 @@ The main requirement for this aggregation is the output data fields:
 
   - Strings and numbers with allowed values.
 
-    The allowed value must match the `value` parameter in the corresponding interface element.
+      The allowed value must match the `value` parameter in the corresponding interface element.
 
   - Boolean.
+
   - Integers with minimum and maximum values. The maximum difference between them is 32.
 
-    If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
-
+      If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
   The allowed value must match the `value` parameter in the corresponding interface element.
 
@@ -193,7 +196,7 @@ It ensures that the probability of an error is distributed evenly among the rema
 
 We take all Tolokers' responses and, for example, option$z[x] estimate,$and calculate the probability that Tolokers will select this response, provided that the correct response is$z[x] estimate,$:
 
-```
+```javascript
 func z_prob(x int) : float {
     d = 1.0
     for w[i]: workers
@@ -207,13 +210,12 @@ func z_prob(x int) : float {
 
 Next, using Bayes' theorem, we calculate the probability that the response$z[j]$is correct:
 
-```
+```javascript
 r = 0
 for z[i]: answer_options
     r += z_prob(i) * (1 / Y)
 
 eps = z_prob(j) * (1 / Y) / r
-
 ```
 
 {% endcut %}
@@ -224,7 +226,6 @@ Aggregation only includes accepted tasks.
 
 {% endnote %}
 
-
 #### Requirements
 
 {% list tabs %}
@@ -234,49 +235,52 @@ Aggregation only includes accepted tasks.
   To run aggregation, you must correctly set up dynamic overlap. To do this:
 
   1. Select a skill. We recommend to select a skill calculated as the percentage of [correct responses in control tasks](goldenset.md). This will give you the most accurate aggregation results.
+
   1. Select the output data fields.
 
-	  {% cut "Output data fields that can be aggregated:" %}
+      {% cut "Output data fields that can be aggregated:" %}
 
-	  - Strings and numbers with allowed values.
+      - Strings and numbers with allowed values.
 
-	  The allowed value must match the `value` parameter in the corresponding interface element.
+      The allowed value must match the `value` parameter in the corresponding interface element.
 
-	  - Boolean.
-	  - Integers with minimum and maximum values. The maximum difference between them is 32.
+      - Boolean.
 
-	  If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
+      - Integers with minimum and maximum values. The maximum difference between them is 32.
 
-	  The allowed value must match the `value` parameter in the corresponding interface element.
+      If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
-	  {% endcut %}
+      The allowed value must match the `value` parameter in the corresponding interface element.
+
+      {% endcut %}
 
 - Pools without dynamic overlap
 
   You can run aggregation by skill if the pool meets the following requirements:
 
   1. You set a skill that defines the level of confidence in the Toloker's responses. We recommend to use a skill calculated as the percentage of [correct responses in control tasks](goldenset.md).
+
   1. The [output data fields](incoming.md) have allowed values.
 
-	  {% cut "Output data fields that can be aggregated:" %}
+      {% cut "Output data fields that can be aggregated:" %}
 
-	  - Strings and numbers with allowed values.
+      - Strings and numbers with allowed values.
 
-	  The allowed value must match the `value` parameter in the corresponding interface element.
+      The allowed value must match the `value` parameter in the corresponding interface element.
 
-	  - Boolean.
-	  - Integers with minimum and maximum values. The maximum difference between them is 32.
+      - Boolean.
 
-	  If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
+      - Integers with minimum and maximum values. The maximum difference between them is 32.
 
-	  The allowed value must match the `value` parameter in the corresponding interface element.
+      If there are too many possible responses in the output field, the dynamic overlap mechanism won't be able to aggregate the data.
 
-	  {% endcut %}
+      The allowed value must match the `value` parameter in the corresponding interface element.
+
+      {% endcut %}
 
   1. The tasks were uploaded in the pool with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endlist %}
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -315,6 +319,5 @@ You cannot aggregate by project fields that have no valid values. Specify the po
 You need to use [smart mixing](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endcut %}
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
