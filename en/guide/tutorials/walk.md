@@ -271,3 +271,5 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/dataset/moscow_metro_entrance_2020_en.tsv)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

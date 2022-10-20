@@ -258,3 +258,5 @@ At this step, upload your task data to Toloka.
 ## Datasets and reference {#datasets}
 
 - [Sample dataset files with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/19_search/EN/sample-files.zip)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}
