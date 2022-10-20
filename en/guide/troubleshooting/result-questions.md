@@ -6,7 +6,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
 ## Aggregation {#results}
 
 {% cut "What is the difference between the confidence in the aggregated response in the Dawid-Skene aggregation model and the confidence in aggregation by skill?" %}
@@ -53,7 +52,6 @@ Yes. To set up notifications in your account, go to [Learn more about setting up
 
 [Other questions](support.md#help)
 
-
 ## Processing the results file {#results_1}
 
 {% cut "Why do I get blank spaces inside my TSV file?" %}
@@ -68,9 +66,7 @@ If a Toloker typed some text and then deleted it, the result is `null`, otherwis
 
 {% endcut %}
 
-
 [Other questions](support.md#help)
-
 
 ## Assignment review {#results_2}
 
@@ -115,8 +111,11 @@ You can't accept the correct answers and pay for this part ($0.08). Response pag
 {% cut "How can I notify the Toloker of changes in the instructions?" %}
 
 Add the notification to the project description (for example: “Attention! The instructions changed”) and send a message to all the people who completed your tasks. To do this:
+
 - Assign them a hidden skill, or use an existing [skill](../concepts/nav-assign.md) linked to the pool.
+
 - Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
+
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 
 {% endcut %}
@@ -155,7 +154,6 @@ If you don't understand what the problem is, run a mini-survey and ask the Tolok
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Statistics {#results_3}
 

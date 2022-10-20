@@ -6,7 +6,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
 ## Data about Tolokers {#user-info}
 
 {% cut "How do I view information about Tolokers?" %}
@@ -41,7 +40,6 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 [Other questions](support.md#help)
 
-
 ## Rewards {#bonuses}
 
 {% cut "How do I reward Tolokers in addition to the basic task price?" %}
@@ -57,7 +55,6 @@ To view your expenses that involve rewards, go to your [profile]({{ profile }}) 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Cheaters {#cheaters}
 
@@ -124,3 +121,7 @@ Unfortunately, this Toloker has violated the Toloker agreement and will no longe
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
 {% endcut %}
+
+[Other questions](support.md#feedback_oyr_m5s_hlb)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

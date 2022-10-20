@@ -10,9 +10,7 @@ The Toloker receives payment for a task suite, so the labeling cost and quality 
 
 ## {% if locale == "en-com" %}Set manually{% endif %} {#by-empty-row}
 
-Enter the number of tasks per suite. Suites are formed in the order the tasks are placed in your [file](../../glossary.md#tsv-file-definition).
-
-This method is appropriate if you need your tasks to have a certain number of suites and don't want to divide them into suites yourself.
+Enter the number of tasks per suite. The order of tasks depends on the [**Keep task order**](pool-main.md) pool setting.
 
 ## {% if locale == "en-com" %}Smart mixing{% endif %} {#smart-mixing}
 
@@ -44,7 +42,7 @@ This method is useful if the created pool:
 
 {% note alert %}
 
-If you upload a file via “Smart mixing”, you won't be able to use other ways of task distribution on the pages in this pool.
+If you upload a file via **Smart mixing**, you won't be able to use other ways of task distribution on the pages in this pool.
 
 {% endnote %}
 

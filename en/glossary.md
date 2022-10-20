@@ -244,9 +244,9 @@ Project {#project}
   - Parameters for input fields.
   - The visual appearance of tasks.
 
-Project template {#project-template}
+Project preset {#project-template}
 
-: The template contains pre-configured [input and output data](#input-output-data) fields and the [task interface](#task-interface), which you can edit.
+: The preset contains description, instruction, pre-configured [input and output data](#input-output-data) fields and the [task interface](#task-interface), which you can edit.
 
 ### Q
 

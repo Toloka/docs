@@ -1,6 +1,6 @@
-# Review results
+# Results of assignment review
 
-If you review Toloker responses yourself and don't want Tolokers who made a lot of mistakes to do your tasks in the future, set up this quality control rule.
+If you don't want Tolokers who made a lot of mistakes to do your tasks in the future, set up this quality control rule.
 
 ## When to use {#when-use}
 
@@ -10,11 +10,9 @@ If [non-automatic acceptance](../../glossary.md#pool) (assignment review) is set
 
 - Block access for Tolokers who give incorrect responses.
 
-Use this rule if you don't want a Toloker who often makes mistakes to complete tasks in your new pools or projects.
-
 To have rejected tasks redistributed to other Tolokers, set up the [Recompletion of rejected assignments](reassessment-after-accepting.md) rule.
 
-## Rule settings {#rule}
+## How to configure {#rule}
 
 {% note warning %}
 
@@ -30,7 +28,7 @@ If this field is not filled in, the calculation includes only task responses fro
 
 If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
-[Learn more](remember-values.md) about how this field works.||
+To learn more about how this field works, go to [“Remember values” parameter](remember-values.md).||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 
 - {% if locale == "en-com" %}**total reviewed responses**{% endif %} — The number of the Toloker's assignments that were reviewed.
@@ -40,21 +38,21 @@ If the field is filled in, the corresponding number of responses is used. The ru
 - {% if locale == "en-com" %}**rejected responses (%)**{% endif %} — The percentage of the Toloker's assignments that were rejected (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition {% if locale == "en-com" %}**If**{% endif %}:
 
-- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.
+- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+
+- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
+
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
 - {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
 
-- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
-
-- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
-
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
-
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.||
+- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.||
 |#
 
 ## Examples of rules {#examples}

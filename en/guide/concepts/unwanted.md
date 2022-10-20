@@ -55,6 +55,7 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
     If you're using a different template and/or are running your survey on a third-party website, the platform's administration may also request that number for verification purposes.
 
 1. The instructions for conducting a survey should contain:
+
     - Its goal and objectives.
     - Requirements for participants.
     - Approximate survey completion time.
@@ -73,11 +74,14 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
     The terms of the survey and any materials included in it should not violate the laws of the countries where the survey is available.
 
 1. The survey should not be used to promote political, ideological, religious, or other views. The questions and other materials included in the survey should not impose the author's point of view on the respondents, offend the proponents of other positions, or stir up discord among users and various groups of people.
-1. The survey should not contain advertising of websites, products, or services.
-1. The Toloker should be able to complete the survey and submit a response:
-    - If your survey is hosted on a third-party website and uses confirmation codes, make sure that all Tolokers receive the code regardless of their responses. You can change the confirmation code depending on the Toloker's responses to attention check questions.
-    - Set sufficient time for survey completion in pool settings.
 
+1. The survey should not contain advertising of websites, products, or services.
+
+1. The Toloker should be able to complete the survey and submit a response:
+
+    - If your survey is hosted on a third-party website and uses confirmation codes, make sure that all Tolokers receive the code regardless of their responses. You can change the confirmation code depending on the Toloker's responses to attention check questions.
+
+    - Set sufficient time for survey completion in pool settings.
 
 ## Requirements for task names and descriptions {#requirements-for-description}
 
@@ -197,13 +201,14 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 - Involve the creation of illegal materials.
 
-
 Read more in the [Requester agreement]({{ customeragreement }}).
 
 {% endcut %}
 
 {% cut "Requirements in effect prior to 7:59 on January 23, 2019 (Moscow time)" %}
+
 You can publish any tasks that require analyzing or creating content (see [Tips for designing tasks](faq.md)). Toloka **isn't intended** for tasks that could harm Tolokers. Your account might be blocked if tasks:
+
 - Are oriented toward advertising and promoting websites. In a task, don't ask Tolokers to:
 
     - Follow links to websites or enter specific search queries.
@@ -225,6 +230,5 @@ You can publish any tasks that require analyzing or creating content (see [Tips 
 
 - [Register in Toloka as a requester](access.md)
 - [Learn how to post tasks](first-project.md)
-
 
 {% include [contact-support](../_includes/contact-support-new.md) %}

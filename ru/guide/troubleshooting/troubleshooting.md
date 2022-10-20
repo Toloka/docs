@@ -2582,3 +2582,5 @@ onKey: function(key) {
 {% endcut %}
 
 [Другой вопрос](support.md#help)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

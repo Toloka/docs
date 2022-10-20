@@ -6,11 +6,11 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-
 The {% if locale == "en-com" %}**task interface**{% endif %} defines the visual appearance of the task for the Toloker and the logic for processing responses.
 
 A user-friendly interface improves the quality of results, helps Tolokers complete tasks faster, and lets you set a lower price per task.
 {% if locale == "en-com" %}
+
 To learn how to create a user-friendly interface, read the article in our [knowledge base]({{ toloka-knowledge-base }}).
 {% endif %}
 
@@ -39,19 +39,25 @@ Add elements for the [input and output data](incoming.md) to display in the task
     Click {% if locale == "en-com" %}**More**{% endif %} to see an example and a full list of parameters.
 
 1. Copy the expression using the ![](../_images/copy.svg) button and paste it into the HTML block.
+
 1. Enter the field name from the input or output data.
 
 {% endcut %}
 
 {% cut "Examples of using input data" %}
 
-- **Display the text in the task.** Add the `text` field with the **string** type in the input data. Then in the task interface (in the HTML block), you can add this text as a variable, for example:{% if locale == "en-com" %}
+- **Display the text in the task.** Add the `text` field with the **string** type in the input data. Then in the task interface (in the HTML block), you can add this text as a variable, for example:
+
+    {% if locale == "en-com" %}
+
     ```html
     <p>Read the text: not_var{{text}}</p>
     ```
+
     {% endif %}
 - ** Upload a file to the task, for example, an image.** Add the `url` field with the **link** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
-    ```
+
+    ```html
     {{img src=url width="400px" height="300px"}}
     ```
 
@@ -60,15 +66,20 @@ Add elements for the [input and output data](incoming.md) to display in the task
 {% cut "Examples of using output data" %}
 
 - **Ask Tolokers to enter the text.** Add the `input` field with the **string** type in the output data. Make the field mandatory. Then add the [Text input field](t-components/text.md) field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
-    ```
+
+    ```html
     {{field type="textarea" name="input" width="270px" rows=5}}
     ```
 
-- **Ask Tolokers to select one of the values.** Add the `result` field with the **string** type in the output data. Make this field mandatory and specify `Yes` and `No` as acceptable values. Then add a component [Radio button](t-components/radiobuttons.md) component in the task interface (in the HTML block) and specify the field name in the `name` attribute:{% if locale == "en-com" %}
-    ```
+- **Ask Tolokers to select one of the values.** Add the `result` field with the **string** type in the output data. Make this field mandatory and specify `Yes` and `No` as acceptable values. Then add a component [Radio button](t-components/radiobuttons.md) component in the task interface (in the HTML block) and specify the field name in the `name` attribute:
+
+    {% if locale == "en-com" %}
+
+    ```html
     {{field type="radio" name="result" label="Yes" value="Yes" hotkey="1"}}
     {{field type="radio" name="result" label="No" value="No" hotkey="2"}}
     ```
+
     {% endif %}
 
 {% endcut %}
@@ -81,12 +92,11 @@ You can also connect JavaScript libraries to create the interface. For example, 
 
 To connect the JavaScript library, click the ![](../_images/settings.svg) button in the {% if locale == "en-com" %}**Task interface**{% endif %} block and add links to libraries in the **JS** field.
 
-
 ## CSS block {#css}
 
 In the **CSS** block, you can declare the design for tags and classes. For example, the indent at the bottom after a text field with the `task-text` class:
 
-```
+```css
 .task-text{
   margin-bottom: 15px;
 };
@@ -94,10 +104,9 @@ In the **CSS** block, you can declare the design for tags and classes. For examp
 
 In addition, you can connect a CSS library. To do this, click the ![](../_images/settings.svg) button in the {% if locale == "en-com" %}**Task interface**{% endif %} block and add links to libraries in the **CSS** filed.
 
-
 ## Preview features {#preview}
 
-{% note alarm %}
+{% note alert %}
 
 Changes to the input and output data, as well as the number of tasks per suite aren't saved after you exit {% if locale == "en-com" %}**Preview**{% endif %}.
 
@@ -108,7 +117,9 @@ To view the resulting task, click {% if locale == "en-com" %}**Preview**{% endif
 {% cut "How do I change the number of standard tasks?" %}
 
 You can change the number of tasks with standard data on the Preview page:
+
 1. Click {% if locale == "en-com" %}**Change input data**{% endif %}.
+
 1. To add a task, click {% if locale == "en-com" %}**Add task**{% endif %}.
 
     To delete a task, click its number, then click ![](../_images/bin.svg).
@@ -126,6 +137,7 @@ Add input data to check if files or text hints are displayed on the task suite. 
 - Filling in the table
 
   1. Change the input data fields.
+
       To change the task type to [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task), add correct responses and a hint (the {% if locale == "en-com" %}**Add correct answers**{% endif %} button).
 
       To go to the next task, click the task number at the bottom of the table. To delete a task, click ![](../_images/bin.svg).
@@ -135,10 +147,15 @@ Add input data to check if files or text hints are displayed on the task suite. 
 - File upload
 
   1. Get the sample upload file here: {% if locale == "en-com" %}**Download example file**{% endif %}.
+
   1. [Add the task data](pool_csv.md) to the file.
+
   1. Save the file in UTF-8 encoding with the [tsv](pool_csv.md) extension.
+
   1. Click the {% if locale == "en-com" %}**Upload file**{% endif %} button and choose the file.
+
   1. Check whether the fields are filled in correctly in the {% if locale == "en-com" %}**Table**{% endif %}.
+
     If the column headers are invalid, you will get the message "Error loading the file".
 
     If the value of the required input field is not specified, or the number of fields in the header and row do not match, the task won't load. Refresh the page to return to viewing, correct the errors in the file, and load it again.
@@ -148,7 +165,9 @@ Add input data to check if files or text hints are displayed on the task suite. 
 - Data in JSON format
 
   1. Choose **JSON**.
+
   1. Fill in the data for verification in [JSON format]({{ json-format }}).
+
     If the box is bordered in red, the JSON is not valid and the data won't be saved.
 
   1. Click {% if locale == "en-com" %}**Apply**{% endif %}.
@@ -186,7 +205,6 @@ By default, the task suite displays:
 
 - The following buttons: {% if locale == "en-com" %}**Message to requester**{% endif %}, {% if locale == "en-com" %}**Guidelines**{% endif %}, {% if locale == "en-com" %}**Fullscreen**{% endif %}, {% if locale == "en-com" %}**Submit**{% endif %}, {% if locale == "en-com" %}**Skip**{% endif %}, {% if locale == "en-com" %}**Exit**{% endif %}.
 
-
 {% note tip %}
 
 {% if locale == "en-com" %}
@@ -200,11 +218,10 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
 - [Adapt the task interface for mobile devices](mobile.md).
 - [Create a task pool in the project](pool-main.md).
 - Learn more about how to set up a project:
+
     - [Writing instructions](instruction.md).
     - [Input and output data](incoming.md).
     - [Setting up quality control](project-qa.md).
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -237,7 +254,9 @@ You can hide text in an expandable section by using CSS styles, both in the task
 You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
 
 To add libraries:
+
 1. Click the “gear button” in project editing mode.
+
 1. In the field that opens on the left, enter the links and press **Enter**.
 
 {% endcut %}
@@ -271,11 +290,16 @@ The names of the output fields must differ: each checkbox must have its own uniq
 {% cut "How can I do it in JS so that if the checkbox is selected, the link is not required, but if the link is inserted, the checkbox is cleared?" %}
 
 1. See how this is implemented in the  template.
-1. To solve the second problem, you can add another validation like this:{% if locale == "en-com" %}
-    ```
+
+1. To solve the second problem, you can add another validation like this:
+
+    {% if locale == "en-com" %}
+
+    ```javascript0
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
+
     {% endif %}
 
 {% endcut %}
@@ -283,10 +307,15 @@ The names of the output fields must differ: each checkbox must have its own uniq
 {% cut "How do I make tasks that have a varying number of response options and different options available?" %}
 
 You can do this using [concatenation](t-components/helpers.md#concat).
+
 See the sample projects that can help you build an interface:
+
 - [with checkboxes]({{ project-with-checkboxes }})
+
 - [with a dropdown list]({{ project-with-drop-down-list }})
+
 - [with radio buttons]({{ project-with-radiobutton }})
+
 If you pass an array of values to the input field, use commas to separate the array elements. A response option will be generated for each of them in the interface. Input/output data for the sample projects are provided in the comments at codepen.io.
 
 {% endcut %}
@@ -306,7 +335,8 @@ You can use JavaScript to add assignment validation depending on the checkbox. A
 {% cut "How do I use different numbers of response options for different questions?" %}
 
 Use [concatenation](t-components/helpers.md#concat), for example:
-```
+
+```html
 {{field type="checkbox" name=(concat "result." @index ) label=(concat "checkbox –
                 " @index) size="L"}}
 ```
@@ -328,7 +358,8 @@ You can use JavaScript to add assignment validation depending on a checkbox. An 
 {% cut "How do I change the task background from the standard white color to a different color?" %}
 
 Use CSS to specify the color for the `.task` or `.task-suite` element. For example, to use a black background:
-```
+
+```css
 .task-suite {
     background-color: #000000;
     }
@@ -336,15 +367,24 @@ Use CSS to specify the color for the `.task` or `.task-suite` element. For examp
     background-color: #000000;
     }
 ```
+
 You can also assign a class to the interface block with the image and set the background for this block only.
 
 {% endcut %}
 
 {% cut "How do I use sliders as interface elements for selecting parameter values?" %}
 
-In the HTML code of the template, enter the following:{% if locale == "en-com" %}
+In the HTML code of the template, enter the following:
+
+{% if locale == "en-com" %}
+
+```html
+<input type=""range"" list=""rng"" class=""res"">
 ```
-<input type=""range"" list=""rng"" class=""res""> and include the following in onRender in your JS:
+
+and include the following in onRender in your JS:
+
+```javascript
 onRender: function() {
 // Generated DOM element for the task (available via #getDOMElement())
 //Adding auxiliary variables
@@ -358,9 +398,9 @@ _this.setSolutionOutputValue('result', range_result);
 
 return solution;
 })
-
 }
 ```
+
 {% endif %}
 
 {% endcut %}
@@ -374,8 +414,11 @@ You can't expand the HTML window. To expand the JS and CSS fields, click any are
 {% cut "Can I use my own JS to build an interface in Toloka?" %}
 
 You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
+
 - Click the “gear button” to open the settings.
+
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
+
 See the [Requester's guide](spec-advanced.md) for descriptions of the structure of classes and how they work.
 
 {% endcut %}
@@ -406,11 +449,15 @@ Try to disable extensions in your browser. They might block iframe loading.
 
 {% cut "How do I pass the value of the input variable to the “Button with click validation”?" %}
 
-Specify the name of the input field where you pass the link, without the brackets:{% if locale == "en-com" %}
-```
+Specify the name of the input field where you pass the link, without the brackets:
+
+{% if locale == "en-com" %}
+
+```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
           action=true}}
 ```
+
 {% endif %}
 
 {% endcut %}
@@ -418,8 +465,10 @@ Specify the name of the input field where you pass the link, without the bracket
 {% cut "How do I enter a list of words line-by-line, display an element for each of them, and save the result to the output array?" %}
 
 Pass an array of strings as the input field. For example, as shown in the screenshot: ![](../_images/troubleshooting/array-each-words.png)
+
 In HTML, use a special handlebar to iterate over this field. The code structure will look like this:
-```
+
+```html
 {{#each words}}
 {{field type="radio" name="result" value=this label=this}}
 {{/each}}
@@ -452,7 +501,8 @@ To change the number of output fields dynamically, use the recommendations from 
 To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
 
 In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
-```
+
+```css
 .task {
   max-width: 800px;
 }
@@ -479,7 +529,8 @@ To avoid conflict between the Vue markup and the Handlebars syntax, disable the 
 {% cut "How do I run setSolution validation in "OnRender"?" %}
 
 Try to add a condition to check for the second progress bar:
-```
+
+```javascript
 setSolution: function(solution) {
 var secondScale = this.getDOMElement().querySelector('.second-scale');
 
@@ -500,7 +551,8 @@ You can check the link format using regular expressions. To do this, add the lin
 For example: `var regexp = /^(https://www.myurl.com/).{4,200}$/`.
 
 You can also add a regular expression to the `input` field with the **string** type in the output data. Make the field mandatory. Then add the **Text input field** field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
-```
+
+```html
 {{field type="textarea" name="input" width="270px" rows=5}}
 ```
 
@@ -519,7 +571,8 @@ To the component that inserts the image, add the parameters: `real-size=true` an
 {% cut "How do I create a shortcut for adding a polygon in "image-annotation"?" %}
 
 To create a shortcut, add the following action to the "onKey" method:
-```
+
+```javascript
 onKey: function(key) {
           var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 
@@ -560,12 +613,17 @@ The “Side-by-side image comparison” template uses a component rather than an
 {% cut "What should the Toloker do if there is no selectable object in the image in an area selection task?" %}
 
 There are four options:
+
 - [ Decompose the task](solution-architecture.md): First select images with the items you need, then select areas in them.
+
 - Select an arbitrary area in the image. For example, put a square in the upper-right corner.
+
     Mention this in your instructions for reviewers.
 
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
+
 - Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
+
     For control purposes, add information about the value of this checkbox to the task interface.
 
 {% endcut %}

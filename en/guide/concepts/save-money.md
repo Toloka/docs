@@ -22,6 +22,7 @@ With this overlap setting, you can save on the number of Tolokers who complete y
 Use **assignment review** if:
 
 - The task requires that users send free-format responses or data files.
+
 - You are sure that you have enough time to review the Tolokers' responses. Otherwise, when the period ends, responses that haven't been reviewed are accepted and paid for automatically.
 
 ## Set up a random majority vote check. {#mvote}
@@ -49,10 +50,15 @@ In Toloka, requesters pay for exams, including those that Tolokers didn't pass. 
 In this case, you can set up automatic acceptance of tasks and automatic rejection of tasks at the end of the review period. To do this, you'll need to:
 
 1. Select **Exam** as the pool type.
+
 1. Enable **Non-automatic acceptance** in the pool settings.
+
 1. Set the option to **Yes** and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
+
 1. Set the assignment review period to one day.
+
 1. Add the **Control tasks** quality control block and set the condition **if the percentage of correct responses ≥ N** and **the number of responses = N**, then accept all the Toloker's responses.
+
 1. Add a description of the new rule to the instructions.
 
 {% cut "Sample settings" %}
@@ -92,6 +98,5 @@ To do this, use the `golden_task_distribution_function` key.
 In addition to **dynamic overlap**, use `baseline_solutions` to speed up the overlap. In `baseline_solutions`, preliminary responses are used, that is, data that simulates Toloker responses. For example, you need to determine what an image shows: a cat or a dog. Suppose your neural network determined that the image may show a dog with a probability of 80% and a cat with a probability of 40%. You can use the neural network's responses. Depending on the responses of Tolokers, the overlap will increase or remain unchanged.
 
 [Learn more]({{ api-toloka-create-task }}).
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

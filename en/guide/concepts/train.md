@@ -13,16 +13,23 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 ## How does it work? {#how-it-works}
 
 1. You create a training pool. A [training skill](../../glossary.md#train-skill) is created automatically. Newly created training pools use a skill that was already created.
+
 1. You upload tasks to the pool and [mark them up](../../glossary.md#task-markup). You can upload tasks that are already marked up.
+
 1. You link the training to the main pool.
+
 1. You run both pools in turn.
+
 1. The Toloker sees only the training tasks and decides to complete them.
 
     If the Toloker makes a mistake, they are shown a hint. To go to the next assignment, they need to answer all questions correctly. If the tips aren't helpful, the Toloker won't be able to complete the training.
 
 1. When the Toloker completes the training, they are assigned a training skill. The skill value is the percentage of correct responses submitted by the Toloker.
+
     Only the first responses of the Toloker are taken into account. Therefore, the correct responses in the hints don't affect the the training skill value.
+
 1. If the percentage of correct responses is higher or equal to the **Level required** value in the **linked** pool, the Toloker will have access to this pool.
+
     Pools that aren't linked to the training pool will be available to everyone unless you set the filters. Regardless of whether the Toloker passed the training or not.
 
     {% note tip %}
@@ -30,7 +37,6 @@ If the training pool functionality doesn't meet your needs, create a main pool a
     You can link multiple pools to one training pool and set different required levels for them. This lets you assign more difficult tasks to more advanced Tolokers.
 
     {% endnote %}
-
 
 ## How do I create a training pool? {#create-train}
 
@@ -43,7 +49,6 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 1. Fill in the [training settings](train.md) fields.
     You can use the {% if locale == "en-com" %}**Retry after**{% endif %} field to set up [repeated training](train.md).
 1. Click {% if locale == "en-com" %}**Save training**{% endif %}.
-
 
 ## After you created a training pool {#after-creating}
 
@@ -58,27 +63,31 @@ If the training pool functionality doesn't meet your needs, create a main pool a
     {% endcut %}
 
 1. Link the training to the main pool. For this, [edit the main pool](pool-edit.md) by filling in the fields:
+
     - {% if locale == "en-com" %}**Training**{% endif %} — Name of the training pool.
+
     - {% if locale == "en-com" %}**Level required**{% endif %} — Percentage of correct responses in training tasks (from 5 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
-
-
 
 ## Training settings {#parameters}
 
+#|
+||**Field** | **Overview**||
+||{% if locale == "en-com" %}**Guidelines**{% endif %} | [Instructions](../../glossary.md#task-instruction) for the training tasks.
 
-|Field | Overview
-|----- | -----
-|{% if locale == "en-com" %}**Guidelines**{% endif %} | [Instructions](../../glossary.md#task-instruction) for the training tasks.<br/><br/>By default, the [project instructions](instruction.md) are displayed. To write separate instructions for training, deselect the {% if locale == "en-com" %}**Use project instructions**{% endif %} box.
-|{% if locale == "en-com" %}**Training title**{% endif %} | Name of the training pool (not visible to the Toloker).
-|{% if locale == "en-com" %}**Adult content**{% endif %} | Whether the training tasks have porn content.
-|{% if locale == "en-com" %}**Time on task**{% endif %} | The time allowed for completing a [task suite](../../glossary.md#task-suite), in seconds.
-|{% if locale == "en-com" %}**Retry after**{% endif %} | The number of days after which the Toloker can access the training again. If not specified, [training skill](../../glossary.md#train-skill) is issued for an indefinite time, and the value is fixed.<br/>[Learn more about how it works](train.md).
-|{% if locale == "en-com" %}**Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [file with tasks](../../glossary.md#tsv-file-definition).
-|{% if locale == "en-com" %}**Shuffle on page**{% endif %} | If this option is enabled, tasks on the page are shown to the Toloker in random order.
-|{% if locale == "en-com" %}**Complete passing**{% endif %} | If this option is enabled, the Toloker must complete all the tasks in this pool to pass the training.<br/>You can load more training tasks than required for passing the training and specify the number of pages required for setting the skill and accessing the linked pools.
-|{% if locale == "en-com" %}**Required for passing**{% endif %} | The number of assignments the Toloker must complete to pass the training.
+By default, the [project instructions](instruction.md) are displayed. To write separate instructions for training, deselect the {% if locale == "en-com" %}**Use project instructions**{% endif %} box.||
+||{% if locale == "en-com" %}**Training title**{% endif %} | Name of the training pool (not visible to the Toloker).||
+||{% if locale == "en-com" %}**Adult content**{% endif %} | Whether the training tasks have porn content.||
+||{% if locale == "en-com" %}**Time on task**{% endif %} | The time allowed for completing a [task suite](../../glossary.md#task-suite), in seconds.||
+||{% if locale == "en-com" %}**Retry after**{% endif %} | The number of days after which the Toloker can access the training again. If not specified, [training skill](../../glossary.md#train-skill) is issued for an indefinite time, and the value is fixed.
 
+[Learn more about how it works](train.md).||
+||{% if locale == "en-com" %}**Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [file with tasks](../../glossary.md#tsv-file-definition).||
+||{% if locale == "en-com" %}**Shuffle on page**{% endif %} | If this option is enabled, tasks on the page are shown to the Toloker in random order.||
+||{% if locale == "en-com" %}**Complete passing**{% endif %} | If this option is enabled, the Toloker must complete all the tasks in this pool to pass the training.
 
+You can load more training tasks than required for passing the training and specify the number of pages required for setting the skill and accessing the linked pools.||
+||{% if locale == "en-com" %}**Required for passing**{% endif %} | The number of assignments the Toloker must complete to pass the training.
+|#
 
 ## Repeated training {#repeat-train}
 
@@ -101,8 +110,11 @@ The training skill is assigned for an indefinite time, so the training pools in 
 The training skill is deleted after the specified number of days if the Toloker didn't complete tasks in the linked pools.
 
 This means that:
+
 - Those who failed to complete the training tasks can complete the training again after the specified number of days.
+
 - Those who didn't complete tasks for a long time have to repeat the training.
+
 - Those who actively perform tasks don't have to spend the time on retraining.
 
 {% note info %}
@@ -152,22 +164,22 @@ Tolokers will get access only to those pools for which their skill value is high
 A pool with the {% if locale == "en-com" %}“Archived”{% endif %} status can't be started or edited.
 
 By default, archived training pools are not visible in the list of project trainings. To view them:
+
 1. Open the project page.
+
 1. In the {% if locale == "en-com" %}**Training**{% endif %} tab, select {% if locale == "en-com" %}**Archived**{% endif %}.
 
 The training pool is automatically archived if no action is performed in it for 30 days.
 
-To archive a training pool manually, click {% if locale == "en-com" %}{% endif %} at the top of the pool page or ![](../_images/other/pool-action-archive.png) in the list of training options on the project page.
+To archive a training pool manually, click {% if locale == "en-com" %}**![](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page or ![](../_images/other/pool-action-archive.png) in the list of training options on the project page.
 
 If these buttons don't work, make sure that all the main pools that the training pool is linked to are [sent to the archive](pool-archive.md).
-
 
 ## What's next {#what_next}
 
 - {% if locale == "en-com" %}[Top up your account](refill.md){% endif %}
 - [Start the pool](pool-run-and-stop.md).
 - To view the training statistics, go to the [Skills]({{ skills }}) page and choose a skill named `<project name> - training`.
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -198,7 +210,9 @@ Text in the GOLDEN field must match the control text exactly.
 Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
 
 Check the links that you use. There are several ways to unify links:
+
 - Add requirements for the link format in your instructions and hints in your training pool.
+
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
 {% endcut %}
@@ -258,7 +272,9 @@ However, we don't advise giving access to general tasks to Tolokers who failed t
 {% cut "How do I create a file with training tasks?" %}
 
 For training tasks, you need to:
+
 - Select the correct responses in the `GOLDEN:result` column.
+
 - Fill in the `HINT:text` column. It stores a hint to be shown if the Toloker selects an incorrect response option.
 
 {% endcut %}
@@ -324,8 +340,11 @@ The pool shows the total number of Tolokers that completed at least one assignme
 Validity period of the training skills is governed by the **Retry after** parameter.
 
 The skill is deleted in the specified number of days if the Toloker:
+
 - Has a skill value lower than in the **Level required** field.
+
 - Didn't complete any tasks linked to the training during this period.
+
 If their skill expires, your users need to complete the training again.
 
 {% endcut %}
@@ -333,7 +352,9 @@ If their skill expires, your users need to complete the training again.
 {% cut "How do I know when a particular Toloker got the skill?" %}
 
 1. Go to the Toloker card.
+
 1. Click the **Profile** tab.
+
 1. Find the required skill in the list and download the history of its changes.
 
 {% endcut %}

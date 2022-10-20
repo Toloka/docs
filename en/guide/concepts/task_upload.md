@@ -1,6 +1,7 @@
 # How to upload tasks
 
 To upload a [file with tasks](../../glossary.md#tsv-file-definition) to a [pool](pool-main.md):
+
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
 1. Download the template and add your data.
@@ -8,6 +9,7 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition) to a [pool]
     {% cut "Use sample data" %}
 
     If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
+
     - {% if locale == "en-com" %}**Image classification**{% endif %}
     - {% if locale == "en-com" %}**Product search relevance**{% endif %}
     - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
@@ -17,13 +19,13 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition) to a [pool]
 
     Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
-	{% endcut %}
+    {% endcut %}
 
 1. Attach the file with the tasks.
 
 1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-1. Choose a way to put tasks into suites: {% if locale == "en-com" %}**Smart mixing**{% endif %} or {% if locale == "en-com" %}**Set manually**{% endif %}. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
+1. Choose a way to put tasks into suites and specify the number of tasks per suite. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
 1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
@@ -37,7 +39,6 @@ You can add up to one million tasks to the pool. To upload more tasks, create an
 
 {% endnote %}
 
-
 ## Tips and recommendations {#tips}
 
 - Set the number of tasks per suite depending on the complexity and time allocated for a task.
@@ -47,8 +48,6 @@ You can add up to one million tasks to the pool. To upload more tasks, create an
 - If you get a processing error, it means that the data file is not formatted correctly. For example, there are unnecessary tabs in the file or some lines, headers, or quotes are missing.
 
     In this case, click {% if locale == "en-com" %}**Cancel**{% endif %}, correct the mistakes, and then upload the file again.
-
-
 
 ## Processing errors {#table-with-errors}
 
@@ -62,116 +61,62 @@ To work with a large log conveniently, copy it to the text editor.
 
 {% endnote %}
 
-{% cut "Processing errors table" %}
+{% cut "Processing errors tables" %}
 
-<table>
-<tr>
-<th>Overview</th><th>How to fix</th>
-</tr>
-<tr>
-<td colspan="2">
-
-```
+```json
 "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
 "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
 ```
-</td>
-</tr>
-<tr>
-<td>
 
-**Extra tabs.**
-
-</td>
-<td>
+#|
+||**Overview**|**How to fix**||
+||**Extra tabs.**
 
 If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
 
-For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.
+For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
+|#
 
-</td>
-</tr>
-<tr>
-<td colspan="2">
+```json
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
+```
 
-``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**The number of fields in the header and in the row doesn't match.**
-
-</td>
-<td>
-
-Make sure that:
+#|
+||**Overview**|**How to fix**||
+||**The number of fields in the header and in the row doesn't match.** | Make sure that:
 
 - The number of tabs in the file structure is correct.
 - String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
+|#
 
-</td>
-</tr>
-<tr>
-<td colspan="2">
+```json
+"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
+```
 
-``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
+#|
+||**Overview**|**How to fix**||
+||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
+|#
 
-</td>
-</tr>
-<tr>
-<td>
+```json
+"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
+```
 
-**The value is missing for a required input field.**
+#|
+||**Overview**|**How to fix**||
+||**Invalid data in a “link” (“url”) field.** | Make sure that:
 
-</td>
-<td>
- Make sure that columns with required input data fields are filled.
+- Links start with the `http://`, `https://` or `www` prefix.||
+|#
 
-</td>
-</tr>
-<tr>
-<td colspan="2">
+```json
+"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
+```
 
-``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**Invalid data in a “link” (“url”) field.**
-
-</td>
-<td>
-
-Make sure that:
-
-- Links start with the `http://`, `https://` or `www` prefix.
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**Unpaired quotation mark in a string.**
-
-</td>
-<td>
-
-Check that all quotation marks are [escaped](pool_csv.md#string).
-
-</td>
-</tr>
-</table>
+#|
+||**Overview**|**How to fix**||
+||**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).||
+|#
 
 {% endcut %}
 
@@ -213,7 +158,9 @@ Try completing the tasks yourself. Ask your colleagues and friends to complete t
 The error might occur if the expected input type is URL, but a string is received.
 
 There may be two reasons:
+
 - The input field has the "link" type.
+
 - The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
 
 {% endcut %}
