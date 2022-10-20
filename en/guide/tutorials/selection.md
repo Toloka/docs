@@ -213,6 +213,98 @@ After the specified time period, all responses are automatically accepted, regar
 
     You will get the TSV file with the labeling results. The point coordinates in the file are presented in JSON.
 
+## Troubleshooting {#troubleshooting}
+
+{% cut "Do I need to convert all the images in the task to the same size or can they be different?" %}
+
+You can use different image sizes.
+
+{% endcut %}
+
+{% cut "How do I mark up triangles so that they close automatically when the third point is selected?" %}
+
+Use the **X** shortcut for closing areas.
+
+You can customize the shortcuts using the properties of the [plugin.field.image-annotation.hotkeys](../../template-builder/reference/plugin.field.image-annotation.hotkeys.md) component.
+
+{% endcut %}
+
+{% cut "How do I create a task for selecting objects in images?" %}
+
+We recommend that you break down your object selection project into three projects in Toloka:
+
+1. Sorting images containing an object.
+
+    1. [Create a task](image-classification.md) using the {% if locale == "en-com" %}**Image classification**{% endif %} preset.
+
+    1. Sort the images containing the object you are looking for.
+
+    1. Show the image to the Toloker and ask if the object is in the image. Response options: Yes/No.
+
+1. Selecting objects in images.
+
+    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+
+    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
+
+1. Reviewing object selection assignments.
+
+    1. Create a task using the {% if locale == "en-com" %}**Object recognition & detection**{% endif %} preset.
+
+    1. Hide the editor and ask whether the object is selected correctly. Response options: Yes/No.
+
+    1. In the input data, pass the images and coordinates of the labeled objects from the previous task.
+
+    Now you can run the resulting pool with an overlap of 3–5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
+
+    To prevent the users who worked on the second project from doing the review, assign a skill to them. Use this skill as a filter in the pools of the third project.
+
+{% endcut %}
+
+{% cut "I have a task for area selection in an image. What should the Toloker do if there is no selectable object in the image?" %}
+
+Main options:
+
+- Select an arbitrary area in the image (for example, put a square in the upper-right corner). In this case, the project instructions for reviewers should also reflect this.
+
+- Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the object is truly missing, the task is deleted from the pool by resetting the overlap.
+
+- Add an additional {% if locale == "en-com" %}**No object**{% endif %} checkbox to the task interface. Make sure that your interface checks that either the object is selected or the checkbox is enabled. In this case, add information about the checkbox value in the review task interface.
+
+{% endcut %}
+
+{% cut "How much would 2000 images with a large number of different types of selectable objects cost? How do I create a task for this amount of work?" %}
+
+In the case of crowdsourcing, it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
+
+Base your task on the {% if locale == "en-com" %}**Object recognition & detection**{% endif %} preset. See the step-by-step guide for creating this type of project in the [tutorial](selection.md).
+
+{% endcut %}
+
+{% cut "How do I implement selection of 3 different areas in an image? Select the name, image, and price in the product page screenshot." %}
+
+In the {% if locale == "en-com" %}**Config**{% endif %} section on the project settings page, use the {% if locale == "en-com" %}**Visual editor**{% endif %} and select the {% if locale == "en-com" %}**I want to outline multiple types of objects**{% endif %} checkbox. Replace the samples with your categories.
+
+{% endcut %}
+
+{% cut "What are the input data in the case of object labeling in an image: the coordinates of the object relative to the image, or the coordinates of the object in the Toloka user window?" %}
+
+The coordinates are relative to the image.
+
+{% endcut %}
+
+{% cut "How do I use control and training tasks in the standard template with an area selection editor?" %}
+
+In the standard template with an area selection editor, you can't use the control tasks, because in order for the assignment to be accepted by the system as correct, the object selected by the user must exactly match the control object. This is almost impossible. Therefore, you can leave the `GOLDEN` field empty in the task file or simply delete all the columns except `INPUT`.
+
+You can't also use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project due to the same reason.
+
+Such tasks are usually run with non-automatic acceptance: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
+
+For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the {% if locale == "en-com" %}**Results of assignment review**{% endif %} rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
+
+{% endcut %}
+
 ## See also {#seealso}
 
 - [Instructions](https://toloka.ai/knowledgebase/instruction/)
@@ -224,3 +316,5 @@ After the specified time period, all responses are automatically accepted, regar
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/toloka-kit/knowledge-base/road_signs.tsv)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

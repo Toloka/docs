@@ -360,3 +360,5 @@ Review the rest of the tasks during the time period specified in the {% if local
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/29_surveyThirdPartyPlatform/EN/sample-files.zip)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

@@ -250,3 +250,5 @@ The `popup` property of the component [view.image](../../template-builder/refere
 - [Instructions](https://toloka.ai/knowledgebase/instruction/)
 - [Quality control](https://toloka.ai/knowledgebase/quality-control/)
 - [Pricing](https://toloka.ai/knowledgebase/pricing/)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

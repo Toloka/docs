@@ -258,3 +258,5 @@ At this step, upload your task data to Toloka.
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/knowledge-base/reviews.tsv)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

@@ -207,6 +207,20 @@ At this step, upload your task data to Toloka.
 
     - {% if locale == "en-com" %}**CONFIDENCE**{% endif %}: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
+## Troubleshooting {#troubleshooting}
+
+{% cut "How do I make an image expand to its maximum size on click?" %}
+
+The `popup` property of the component [view.image](../../template-builder/reference/view.image.md) specifies whether opening a full-size image with a click is allowed. By default, it is `true` (allowed).
+
+{% endcut %}
+
+{% cut "Do I need to convert all the images in the task to the same size or can they be different?" %}
+
+You can use different image sizes.
+
+{% endcut %}
+
 ## See also {#seealso}
 
 - [Instructions](https://toloka.ai/knowledgebase/instruction/)
@@ -218,3 +232,5 @@ At this step, upload your task data to Toloka.
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/toloka-kit/knowledge-base/catsdogs.tsv)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

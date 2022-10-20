@@ -231,6 +231,40 @@ At this step, upload your task data to Toloka.
 
     - {% if locale == "en-com" %}**CONFIDENCE**{% endif %}: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
+## Troubleshooting {#troubleshooting}
+
+{% cut "How do I create a task with a selection out of three image options with the paired image comparison?" %}
+
+1. Use the {% if locale == "en-com" %}**Image comparison (Side-by-side)**{% endif %} preset.
+
+1. In the file, specify the links to the compared images.
+
+1. In the file, create the tasks where all the images will be compared in pairs:
+
+    - Image 1 and Image 2
+
+    - Image 1 and Image 3
+
+    - Image 2 and Image 3
+
+1. Process the results.
+
+You can also edit the project so that the user sees 3 images at once and selects one of them.
+
+{% endcut %}
+
+{% cut "How do I make an image expand to its maximum size on click?" %}
+
+The `popup` property of the component [view.image](../../template-builder/reference/view.image.md) specifies whether opening a full-size image with a click is allowed. By default, it is `true` (allowed).
+
+{% endcut %}
+
+{% cut "Do I need to convert all the images in the task to the same size or can they be different?" %}
+
+You can use different image sizes.
+
+{% endcut %}
+
 ## See also {#seealso}
 
 - [Instructions](https://toloka.ai/knowledgebase/instruction/)
@@ -242,3 +276,5 @@ At this step, upload your task data to Toloka.
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/dataset/toloka_logos/sbs.tsv)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}
