@@ -31,12 +31,11 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition) to a [pool]
 
 To delete all the tasks in the pool, click {% if locale == "en-com" %}**Delete**{% endif %}.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can add up to one million tasks to the pool. To upload more tasks, create another pool.
 
 {% endnote %}
-
 
 
 ## Tips and recommendations {#tips}

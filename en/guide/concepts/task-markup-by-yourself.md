@@ -10,7 +10,7 @@ Make the hints clear. Explain which response should be chosen and why.
 
 {% endcut %}
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 Task markup is available only for [training pools](train.md) and pools uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
@@ -41,7 +41,7 @@ After you have created the control tasks, make sure that different variations of
     The distribution of responses is shown as a percentage.
 
 
-{% note info %}
+{% note tip %}
 
 When creating control tasks, enter only correct responses that answer the question. So for an image classification task, **Image loading error** is not a correct response that answers the task question.
 

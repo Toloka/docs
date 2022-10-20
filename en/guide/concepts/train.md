@@ -10,8 +10,6 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 {% endnote %}
 
-
-
 ## How does it work? {#how-it-works}
 
 1. You create a training pool. A [training skill](../../glossary.md#train-skill) is created automatically. Newly created training pools use a skill that was already created.
@@ -26,7 +24,8 @@ If the training pool functionality doesn't meet your needs, create a main pool a
     Only the first responses of the Toloker are taken into account. Therefore, the correct responses in the hints don't affect the the training skill value.
 1. If the percentage of correct responses is higher or equal to the **Level required** value in the **linked** pool, the Toloker will have access to this pool.
     Pools that aren't linked to the training pool will be available to everyone unless you set the filters. Regardless of whether the Toloker passed the training or not.
-    {% note info %}
+
+    {% note tip %}
 
     You can link multiple pools to one training pool and set different required levels for them. This lets you assign more difficult tasks to more advanced Tolokers.
 
@@ -50,11 +49,13 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 1. [Upload tasks to the pool and mark them up](pool.md) (add correct responses and hints). All tasks must be [training](../../glossary.md#training-task). You can upload tasks that are already marked up.
 
-    #### What should be a good hint?
+    {% cut "What should be a good hint?" %}
 
     Avoid wordings like: “You answered incorrectly, please provide the correct response”. The Toloker learns when the hint explains the essence of their mistake.
 
     Make the hints clear. Explain which response should be chosen and why.
+
+    {% endcut %}
 
 1. Link the training to the main pool. For this, [edit the main pool](pool-edit.md) by filling in the fields:
     - {% if locale == "en-com" %}**Training**{% endif %} — Name of the training pool.

@@ -1,6 +1,6 @@
 # Task markup
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 Task markup is available only for [training pools](train.md) and pools uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
@@ -46,7 +46,7 @@ You can set up automatic markup if the following conditions are met:
 
 ## How does it work? {#how-work}
 
-{% note warning %}
+{% note alarm %}
 
 Don't make changes to the project or pool while tasks are being edited. Markup will continue without these changes taken into account, which may result in discrepancies.
 
