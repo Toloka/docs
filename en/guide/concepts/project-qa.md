@@ -10,37 +10,49 @@ When you [clone a project](project.md), its quality control settings aren't tran
 
 {% endnote %}
 
-
 To set up quality control:
-1. Open the project page.
-1. Go to the {% if locale == "en-com" %}**Quality control**{% endif %} tab.
-1. Click {% if locale == "en-com" %}**Set quality control**{% endif %}.
-1. Click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
-1. In the list that appears, select the appropriate rules. If you aren't sure what quality control rules you need, select a ready-made protection set of rules with default settings.
-1. Make settings for the rules you added. Below is a list of rules with links to detailed information about the rule settings.
 
+1. Open the project page.
+
+1. Go to the {% if locale == "en-com" %}**Quality control**{% endif %} tab.
+
+1. Click {% if locale == "en-com" %}**Set quality control**{% endif %}.
+
+1. Click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
+
+1. In the list that appears, select the appropriate rules. If you aren't sure what quality control rules you need, select a ready-made protection set of rules with default settings.
+
+1. Make settings for the rules you added. Below is a list of rules with links to detailed information about the rule settings.
 
 ## List of rules {#id_z4l_prs_2lb}
 
 - **To keep track of how often Tolokers make mistakes:**
+
     - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
+
     - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same task.
+
     - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected responses.
 
 - **To protect your project from robots and cheaters:**
+
     - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
+
     - [Captcha](captcha.md): Show a captcha from time to time to make sure tasks aren't completed by robots.
+
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
 - **To attract a variety of Tolokers:**
+
     - [Earnings](income.md): Limit the amount each Toloker can earn in the [pool](../../glossary.md#pool) per day.
+
     - [Submitted assignments](submitted-answers.md): Limit how many assignments each Toloker can submit in the pool per day.
 
 - **To allow recompletion of certain assignments:**
+
     - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#submitted-answers) to other Tolokers to redo them if the Toloker was banned.
+
     - [Processing of rejected and accepted assignments](reassessment-after-accepting.md): Send rejected assignments to other Tolokers to redo them.
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -133,8 +145,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 
 {% endcut %}
 
-{% endcut %}
-
 {% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
 
 Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
@@ -151,11 +161,10 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 
 - [Create a task pool](pool-main.md) in the project.
 - Learn more about how to set up a project:
+
     - [Writing instructions](instruction.md).
     - [Input and output data](incoming.md).
     - [Task interface](spec.md).
     - [Adapt a task for mobile devices](mobile.md)
-
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

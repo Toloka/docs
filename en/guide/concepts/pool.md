@@ -1,11 +1,14 @@
 # Adding tasks to a pool
 
 To add tasks to a pool:
+
 1. [Place the files for tasks](cloud-storage.md).
+
 1. [Create a file with tasks](pool_csv.md).
+
 1. [Upload tasks to the pool](task_upload.md).
 
-    {% note alert %}
+    {% note alert "Restriction" %}
 
     You can add up to one million tasks to the pool. To upload more tasks, create another pool.
 
@@ -19,13 +22,13 @@ To add tasks to a pool:
 
     {% endnote %}
 
-
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}
-  [Top up your account](refill.md)
-  {% endif %}
+
+{% if locale == "en-com" %}
+- [Top up your account](refill.md){% endif %}
+
 - [Start the pool](pool-run-and-stop.md).
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

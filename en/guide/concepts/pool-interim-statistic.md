@@ -13,7 +13,7 @@ For your convenience, we put all key statistics on the main pool page. For detai
 Calculated based on 1000 recently completed task suites.||
 ||{% if locale == "en-com" %}**Approximate finish time**{% endif %} | The anticipated time for finishing tasks, in days and hours. Calculated using the average time per task suite.
 
-Formula:$T_{left}={Assign_{left}}\times{T_{assign}}$,
+Formula: $T_{left}={Assign_{left}}\times{T_{assign}}$,
 
 where:
 

@@ -2,7 +2,6 @@
 
 If you already have a project and you want to create an identical one, [clone](project.md) the existing project. If not, create a new project.
 
-
 ## New project {#new-project}
 
 The project defines what the task will look like for a Toloker.
@@ -35,25 +34,26 @@ To create a project, follow the instructions:
 
 1. Edit the task interface:
 
-   {% list tabs %}
+    {% list tabs %}
 
-   - Template Builder
+    - Template Builder
 
       1. [Create the task interface]({{ tb-quickstart }}).
+
       1. Click **Show specifications** to see the input and output data fields.
 
-         Input data fields are created from the code on the **Example of input data** tab.
+          Input data fields are created from the code on the **Example of input data** tab.
 
-         The output data fields depend on the components that use `data.output` and values supported by it.
+          The output data fields depend on the components that use `data.output` and values supported by it.
 
-         Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
+          Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
 
       1. Specify the settings for field task display if you use one of the field task templates.
 
-
-   - HTML/JS/CSS editor
+    - HTML/JS/CSS editor
 
       1. [Describe the task interface](spec.md).
+
       1. Add fields for [input and output data](incoming.md) in the **Data specification** block.
 
       1. Specify the settings for field task display if you use one of the field task templates.
@@ -65,12 +65,14 @@ To create a project, follow the instructions:
     You can prepare instructions in HTML format, then copy and paste into the editor. Click **<>** to switch to HTML mode.
 
 1. Optionally, add translations to other languages.
+
     1. Select the source language and the target languages.
+
     1. Fill in the fields in the table.
+
     1. Click **Finish**.
 
 After creating the project, add a [task pool](pool-main.md) to it. You can also set up [quality control](control.md) in the project.
-
 
 ## Cloning a project {#clone}
 
@@ -84,21 +86,18 @@ Quality control in the project is not cloned.
 
 {% endnote %}
 
-
 If you need to change the project settings, [open edit mode](edit-project.md).
-
 
 ## What's next {#what_next}
 
 - [Create a task pool](pool-main.md) in the project.
 - Learn more about how to set up a project:
+
     - [Writing instructions](instruction.md).
     - [Input and output data](incoming.md).
     - [Task interface](spec.md).
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -145,28 +144,43 @@ Generate the screenshots of pages and manually label areas using the "Object sel
 {% cut "How do I create a task for selecting objects in images?" %}
 
 We recommend that you break down your object selection project into three projects in Toloka:
+
 1. Sorting images containing an object.
+
     1. [Create a task](../tutorials/image-classification.md) using the “Image classification” template.
+
     1. Sort the images containing the object you are looking for.
+
     1. Show the image to the Toloker and ask if the object is in the image. Response options: Yes/No.
 
 1. Selecting objects in images.
+
     1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+
     1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](control.md).
 
 1. Reviewing object selection assignments.
+
     1. Create a task using the object selection template.
+
     1. Hide the editor and ask whether the object is selected correctly. Response options: Yes/No.
+
     1. In the input data, pass the images and coordinates of the labeled objects from the previous task.
+
        Now you can run the resulting pool with an overlap of 3-5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
+
        To prevent the Tolokers who worked on the second project from doing the review, assign a skill to them. Use this skill as a filter in the pools of the third project.
 
 {% endcut %}
 
 {% cut "I have a task for area selection in an image. What should the Toloker do if there is no selectable object in the image?" %}
+
 Main options:
+
 - Select an arbitrary area in the image (for example, put a square in the upper-right corner). In this case, the project instructions for reviewers should also reflect this.
+
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the object is truly missing, the task is deleted from the pool by resetting the overlap.
+
 - Add an additional “No object” checkbox to the interface. Make sure that your JS checks that either the object is selected or the checkbox is enabled. In this case, add information about the checkbox value in the review task interface.
 
 {% endcut %}
@@ -192,8 +206,10 @@ You can also use the [library](https://github.com/vmit/image-annotation) to cust
 {% endcut %}
 
 {% cut "How do I create a shortcut for adding a polygon in ’image-annotation’?" %}
+
 To create a shortcut, add the following action to the "onKey" method:
-```
+
+```javascript
 onKey: function(key) {
     var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 
@@ -230,8 +246,11 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 {% cut "How do I create a task with a selection out of three image options with the paired image comparison?" %}
 
 1. Use the **Image comparison (Side-by-side)** template.
+
 1. In the TSV file, specify the links to the compared images.
+
 1. In the file, create the tasks where all the images will be compared in pairs:
+
     - Image 1 and Image 2
 
     - Image 1 and Image 3
@@ -267,12 +286,19 @@ You can see how it's implemented in the  template where a string-type output fie
 {% cut "How do I create a simple survey with no options, where the Toloker answers an open-ended question?" %}
 
 1. Create a project from an empty template.
+
 1. Write your question in the HTML block.
+
 1. If you need an [extensive](t-components/text.md) response, add the required number of text entry components.
+
 1. If you need a [short](t-components/string.md) response, add the required number of string entry components.
+
 1. Come up with a name for each of the components and create a matching number of string-type output fields with the same names. They will be used to save responses.
+
 1. Make all the output fields mandatory.
+
 1. Make the input field auxiliary. It will only be used to create a file with tasks.
+
 1. Come up with a name for the input field and set the string type for it (see the step-by-step [guide on creating a survey](../tutorials/questionnaire-toloka.md)).
 
 {% endcut %}
@@ -294,8 +320,6 @@ To open the camera instead of the gallery when the Toloker taps the image upload
 In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Google photo (Android). To limit the capacity of adding online images, specify in the component `requiredCoordinates=true`. In this case, the system won't let the Toloker add images without geotags.
 
 [Learn more about setting up the image upload component](t-components/upload-picture.md).
-
-{% endcut %}
 
 {% endcut %}
 
