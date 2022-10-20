@@ -9,12 +9,13 @@ The [project](../../glossary.md#project) rating is the average score given to a 
 
 The project rating is available to Tolokers. By default, the list of tasks is sorted by project rating.
 
-
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How can I increase the project's rating?" %}
 
 The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
+
+{% endcut %}
 
 {% cut "Low rating for “Will you take similar tasks in the future”" %}
 
@@ -40,11 +41,7 @@ Starting from December 15, 2021, tasks in pools are automatically available in t
 
 Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
 
-{% endcut %}
-
 If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
-
-{% endcut %}
 
 {% endcut %}
 

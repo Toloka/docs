@@ -1,7 +1,9 @@
 # Starting and stopping a task pool
 
 You can start a [pool](../../glossary.md#pool) if:
+
 1. You uploaded tasks into it.
+
 1. You have enough money in [your account](budget.md) to pay for the pool tasks, including the [overlap](../../glossary.md#overlap).
 
 To start the pool, click ![](../_images/other/b-start-pool.png) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-play.png) in the list of pools on the [project](../../glossary.md#project) page.
@@ -16,12 +18,9 @@ New tasks can be uploaded to an open or closed pool.
 
 {% endnote %}
 
-
-
 ## What's next {#what_next}
 
 - [Get and process the results](result-of-eval.md).
-
 
 ## Troubleshooting {#troubleshooting}
 

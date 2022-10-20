@@ -8,8 +8,8 @@ The cost of a task is registered at the moment when a Toloker accepts it. If the
 
 {% endnote %}
 
-
 To edit the pool parameters, click {% if locale == "en-com" %}**Edit**{% endif %} at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project) page.
+
 ![](../_images/other/pool-settings.png)
 
 ## General information {#pool-general-info}
@@ -88,7 +88,6 @@ You can choose how often [captchas](../../glossary.md#captcha-rule) are shown to
 
 - “Medium”/ “High” — Show a captcha after every 10 assignments.
 
-
 To show the captcha to Tolokers, set [the quality control rule](captcha.md).
 
 #### {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}
@@ -106,7 +105,6 @@ The number of days for reviewing and accepting tasks (max: 21). The Toloker will
 - In the task information on the Toloka main page.
 
 - In the history of completed tasks.
-
 
 #### Quality control rules
 
@@ -185,9 +183,13 @@ The date the pool closes. The pool closes automatically on this date, even if th
 Specify the pool type:
 
 - {% if locale == "en-com" %}**General tasks**{% endif %}: The main pool that contains your regular tasks.
+
 - {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).
+
 - {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
+
 - {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
+
 - {% if locale == "en-com" %}**Other**{% endif %}: If none of the previous options fit.
 
 {% note info %}
@@ -195,7 +197,6 @@ Specify the pool type:
 If the price per task suite is zero, you must select the pool type.
 
 {% endnote %}
-
 
 #### {% if locale == "en-com" %}**Keep task order**{% endif %}
 
@@ -247,11 +248,11 @@ Use this parameter to:
 
     Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
 
-
 ## What's next {#what_next}
 
 - [Add tasks to the pool](pool.md)
 - Learn more about how to set up a pool:
+
     - [Setting up pricing](dynamic-pricing.md).
     - [Dynamic overlap](dynamic-overlap.md).
     - Selective [majority vote](selective-mvote.md) control.
@@ -259,8 +260,6 @@ Use this parameter to:
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -293,9 +292,11 @@ The number of tasks depends on how difficult and time-consuming the tasks are. K
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
+
 - You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most Tolokers don't have.
+
 - Too many Tolokers are banned. Ease the quality control rules.
 
 {% endcut %}
@@ -303,8 +304,11 @@ Possible reasons:
 {% cut "How can I speed up the pool completion?" %}
 
 - To motivate Tolokers, assign a [public skill](nav-create.md#public) and use [dynamic pricing](dynamic-pricing.md).
+
 - Try to [increase the project rating](project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
+
 - Adjust the [quality-speed ratio](adjust.md).
+
 - Set a higher [priority](pool_poolparams.md#priority) for the pool among other project pools.
 
 {% endcut %}

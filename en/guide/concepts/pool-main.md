@@ -2,7 +2,6 @@
 
 If you already have a [pool](../../glossary.md#pool) and you want to create an identical one, [clone](pool-main.md) the existing pool. If not, create a new pool.
 
-
 ## New pool {#new-pool}
 
 A pool contains the settings of a set of task that are sent out for completion. [The task interface](../../glossary.md#task-interface) is described in the [project](project.md).
@@ -13,7 +12,6 @@ You can first test the pool settings in the [sandbox](sandbox.md) and then [move
 
 {% endnote %}
 
-
 To create a pool, follow the instructions:
 
 1. Click {% if locale == "en-com" %}**Add pool**{% endif %} on the project page.
@@ -21,33 +19,18 @@ To create a pool, follow the instructions:
 1. Set the parameters and click {% if locale == "en-com" %}**Save**{% endif %}.
 
 ![](../_images/other/pool-settings.png)
+
 Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
 ### Pool parameters {#pool-params}
 
-Parameter | Overview | Found in the block
------ | ----- | -----
-{% if locale == "en-com" %}**Pool name**{% endif %} | The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page. | {% if locale == "en-com" %}**General information**{% endif %}
-{% if locale == "en-com" %}**Public description**{% endif %} | Will be displayed instead of the project description in the task list for Tolokers and [linked training](train.md). | {% if locale == "en-com" %}**General information**{% endif %}
-{% if locale == "en-com" %}**Private comment**{% endif %} | If necessary, you can add a private project description that will only be available to you. | {% if locale == "en-com" %}**General information**{% endif %}
-{% if locale == "en-com" %}**Price per task suite, $**{% endif %} | Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md). | {% if locale == "en-com" %}**Price**{% endif %}
-{% if locale == "en-com" %}**Overlap**{% endif %} | The number of Tolokers who should complete each task in the pool.<br/><br/>Configure this parameter if you need several people to complete your task. Overlap is necessary in tasks for collecting photo datasets, recording audio, or conducting surveys. In other types of tasks, it can improve the quality of results.<br/><br/>To save money, you can set up [dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL).<br/><br/>Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md). | {% if locale == "en-com" %}**Price**{% endif %}
-{% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} | Whether the tasks have shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.<br/><br/>If you aren't sure whether the tasks have shocking and pornographic content, enable this option.<br/><br/>Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md). | {% if locale == "en-com" %}**Audience**{% endif %}
-{% if locale == "en-com" %}**Filters**{% endif %} | By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.<br/><br/>If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)<br/><br/>If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md) | {% if locale == "en-com" %}**Audience**{% endif %}
-{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}
-{% if locale == "en-com" %}**Captcha frequency**{% endif %} | The frequency of [captcha](../../glossary.md#captcha-rule) display:<br/><br/>- “No” — Don't show captchas.<br/>    <br/>- “Low” — Show a captcha after every 20 assignments.<br/>    <br/>- “Medium”/ “High” — Show a captcha after every 10 assignments.<br/>    <br/><br/>To show the captcha to Tolokers, set [the quality control rule](captcha.md). | {% if locale == "en-com" %}**Quality control**{% endif %}
-{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#submitted-answers) manually.<br/><br/>Set the time period when you can check the tasks and reject them if the results are poor.<br/><br/>To learn more about non-automatic acceptance, go to [Reviewing assignments](offline-accept.md). | {% if locale == "en-com" %}**Quality control**{% endif %}
-{% if locale == "en-com" %}**Training**{% endif %} | This field is only available if you have training pools in the project.<br/><br/>[Training pool](../../glossary.md#training-pool) that will be linked to the main one. | {% if locale == "en-com" %}**Quality control**{% endif %}
-{% if locale == "en-com" %}**Level required, %**{% endif %} | This field is only available if you have filled in the **Training** field.<br/><br/>Percentage of correct responses in training tasks (from 0 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the performer gave in each task.<br/><br/>The minimum required level that you can set is 5. Tolokers who complete training with apercentage below this level won't have access to tasks. | {% if locale == "en-com" %}**Quality control**{% endif %}
-{% if locale == "en-com" %}**Review period in days**{% endif %} | The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:<br/><br/>- In the task information on the Toloka main page.<br/>    <br/>- In the history of completed tasks. | {% if locale == "en-com" %}**Quality control**{% endif %}
-{% if locale == "en-com" %}**Dynamic pricing**{% endif %} | This parameter allows you to vary the task price depending on the Toloker's [skill](../../glossary.md#skill) level. [Learn more](dynamic-pricing.md) | {% if locale == "en-com" %}**Dynamic pricing and overlap**{% endif %}
-{% if locale == "en-com" %}**Dynamic overlap**{% endif %} | You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap) for all pool tasks.<br/><br/>You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. | {% if locale == "en-com" %}**Dynamic pricing and overlap**{% endif %}
-{% if locale == "en-com" %}**Priority**{% endif %} | Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority. | {% if locale == "en-com" %}**Additional settings**{% endif %}
-{% if locale == "en-com" %}**Time per task suite, sec**{% endif %} | The time allowed for completing a task suite, in seconds. Uncompleted tasks are redistributed to other Tolokers.<br/><br/>We recommend spending no more than 60 seconds per task (including the time for page loading and sending responses).<br/><br/>If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for. | {% if locale == "en-com" %}**Additional settings**{% endif %}
-{% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %} | The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).<br/><br/>For example, you can use this parameter if you need an open pool where you regularly upload new tasks. | {% if locale == "en-com" %}**Additional settings**{% endif %}
-{% if locale == "en-com" %}**Pool closing date**{% endif %} | The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up. | {% if locale == "en-com" %}**Additional settings**{% endif %}
-{% if locale == "en-com" %}**Pool type**{% endif %} | Specify the pool type:<br/><br/>- {% if locale == "en-com" %}**General tasks**{% endif %}: The main pool that contains your regular tasks.<br/>- {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).<br/>- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train performers before performing real tasks if the [training pool](train.md) doesn't work well for your project.<br/>- {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.<br/>- {% if locale == "en-com" %}**Other**{% endif %}: If none of the previous options fit.<br/><br/>{% note info %}<br/><br/>If the price per task suite is zero, you must select the pool type.<br/><br/>{% endnote %} | {% if locale == "en-com" %}**Additional settings**{% endif %}
-{% if locale == "en-com" %}**Keep task order**{% endif %} | **Option disabled (default value)**<br/><br/>The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.<br/><br/>#### Example<br/><br/>If you specified 2 tasks per page when uploading the [TSV file](../../glossary.md#tsv-file-definition) with image links to the pool, the system can generate them as follows:<br/><br/>Tasks in the file | Page 1 | Page 2 | Page 3<br/>----- | ----- | ----- | -----<br/>Image 1 | Image 2 | Image 6 | Image 4<br/>Image 2 | Image 5 | Image 1 | Image 3<br/>Image 3 |  |  | <br/>Image 4 |  |  | <br/>Image 5 |  |  | <br/>Image 6 |  |  |<br/><br/>**Option enabled**<br/>Tasks will be grouped on pages in the order they are listed in the task file.<br/>#### Example<br/><br/>If you specified 2 tasks per page when uploading the file with image links to the pool, you're equally likely to get pages where the first link goes first and the second goes second, and the other way around:<br/><br/>Tasks in the file | Page 1 | Page 2 | Page 3<br/>----- | ----- | ----- | -----<br/>Image 1 | Image 1 | Image 3 | Image 5<br/>Image 2 | Image 2 | Image 4 | Image 6<br/>Image 3 | _or_ | _or_ | _or_<br/>Image 4 | Image 2 | Image 4 | Image 6<br/>Image 5 | Image 1 | Image 3 | Image 5<br/>Image 6 |  |  |<br/><br/>If the pool has an overlap, the next task is distributed only when the previous task is completed by the necessary number of Tolokers.<br/><br/>Use this parameter to:<br/><br/>- Speed up collection of responses for [majority vote](mvote.md) check.<br/>    <br/>- Issue tasks by priority.<br/>    <br/>    Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap. | {% if locale == "en-com" %}**Additional settings**{% endif %}
+#|
+||**Parameter** | **Overview** | **Found in the block**||
+||{% if locale == "en-com" %}**Pool name**{% endif %} | The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page. | {% if locale == "en-com" %}**General information**{% endif %}||
+||{% if locale == "en-com" %}**Public description**{% endif %} | Will be displayed instead of the project description in the task list for Tolokers and [linked training](train.md). | {% if locale == "en-com" %}**General information**{% endif %}||
+||{% if locale == "en-com" %}**Private comment**{% endif %} | If necessary, you can add a private project description that will only be available to you. | {% if locale == "en-com" %}**General information**{% endif %}||
+||{% if locale == "en-com" %}**Price per task suite, $**{% endif %} | Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md). | {% if locale == "en-com" %}**Price**{% endif %}||
+||{% if locale == "en-com" %}**Overlap**{% endif %} | The number of Tolokers who should complete each task in the pool.
 
 Configure this parameter if you need several people to complete your task. Overlap is necessary in tasks for collecting photo datasets, recording audio, or conducting surveys. In other types of tasks, it can improve the quality of results.
 
@@ -67,12 +50,9 @@ If you give [training tasks](../../glossary.md#training-task) to Tolokers, you c
 ||{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Captcha frequency**{% endif %} | The frequency of [captcha](../../glossary.md#captcha-rule) display:
 
-- "No" — Don't show captchas.
-
-- "Low" — Show a captcha after every 20 assignments.
-
-- "Medium"/ "High" — Show a captcha after every 10 assignments.
-
+- “No” — Don't show captchas.
+- “Low” — Show a captcha after every 20 assignments.
+- “Medium”/ “High” — Show a captcha after every 10 assignments.
 
 To show the captcha to Tolokers, set [the quality control rule](captcha.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#submitted-answers) manually.
@@ -91,7 +71,6 @@ The minimum required level that you can set is 5. Tolokers who complete training
 ||{% if locale == "en-com" %}**Review period in days**{% endif %} | The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:
 
 - In the task information on the Toloka main page.
-
 - In the history of completed tasks. | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Dynamic pricing**{% endif %} | This parameter allows you to vary the task price depending on the Toloker's [skill](../../glossary.md#skill) level. [Learn more](dynamic-pricing.md) | {% if locale == "en-com" %}**Dynamic pricing and overlap**{% endif %}||
 ||{% if locale == "en-com" %}**Dynamic overlap**{% endif %} | You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap) for all pool tasks.
@@ -110,9 +89,13 @@ For example, you can use this parameter if you need an open pool where you regul
 ||{% if locale == "en-com" %}**Pool type**{% endif %} | Specify the pool type:
 
 - {% if locale == "en-com" %}**General tasks**{% endif %}: The main pool that contains your regular tasks.
+
 - {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).
+
 - {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train performers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
+
 - {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
+
 - {% if locale == "en-com" %}**Other**{% endif %}: If none of the previous options fit.
 
 {% note info %}
@@ -120,7 +103,6 @@ For example, you can use this parameter if you need an open pool where you regul
 If the price per task suite is zero, you must select the pool type.
 
 {% endnote %}
-
 | {% if locale == "en-com" %}**Additional settings**{% endif %}||
 ||{% if locale == "en-com" %}**Keep task order**{% endif %} | **Option disabled (default value)**
 
@@ -131,7 +113,7 @@ The uploaded tasks are grouped in pages and given to Tolokers in random order. W
 If you specified 2 tasks per page when uploading the [TSV file](../../glossary.md#tsv-file-definition) with image links to the pool, the system can generate them as follows:
 
 #|
-||Tasks in the file | Page 1 | Page 2 | Page 3||
+||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
 ||Image 1 | Image 2 | Image 6 | Image 4||
 ||Image 2 | Image 5 | Image 1 | Image 3||
 ||Image 3 |  |  | ||
@@ -151,14 +133,13 @@ Tasks will be grouped on pages in the order they are listed in the task file.
 If you specified 2 tasks per page when uploading the file with image links to the pool, you're equally likely to get pages where the first link goes first and the second goes second, and the other way around:
 
 #|
-|| Tasks in the file | Page 1 | Page 2 | Page 3||
-||----- | ----- | ----- | -----||
+||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
 ||Image 1 | Image 1 | Image 3 | Image 5||
 ||Image 2 | Image 2 | Image 4 | Image 6||
 ||Image 3 | _or_ | _or_ | _or_||
 ||Image 4 | Image 2 | Image 4 | Image 6||
 ||Image 5 | Image 1 | Image 3 | Image 5||
-||Image 6 |  |  |||
+||Image 6 |  |  | ||
 |#
 
 {% endcut %}
@@ -171,14 +152,9 @@ Use this parameter to:
 
 - Issue tasks by priority.
 
-    Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap. | {% if locale == "en-com" %}
-
-    **Additional settings**
-
-{% endif %}
-||
+    Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
+|{% if locale == "en-com" %}**Additional settings**{% endif %}||
 |#
-
 
 ## How Tolokers see pools {#pool-appear}
 
@@ -210,15 +186,15 @@ In this example, the Toloker has access to two pools with different prices and d
 
 ## Cloning a pool {#clone}
 
-To clone a pool, click {% if locale == "en-com" %}{% endif %} at the top of the pool page or ![](../_images/clone-pool.svg) in the list of pools on the project page.
+To clone a pool, click {% if locale == "en-com" %}**![](../_images/drop-down.svg) → Clone**{% endif %} at the top of the pool page or ![](../_images/clone-pool.svg) in the list of pools on the project page.
 
 If you need to change the pool settings, [open edit mode](pool-edit.md).
-
 
 ## What's next {#what_next}
 
 - [Add tasks to the pool](pool.md)
 - Learn more about how to set up a pool:
+
     - [Setting up pricing](dynamic-pricing.md).
     - [Dynamic overlap](dynamic-overlap.md).
     - Selective [majority vote](selective-mvote.md) control.
@@ -226,8 +202,6 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
-
-
 
 ## Troubleshooting {#troubleshooting}
 
