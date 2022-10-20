@@ -32,7 +32,7 @@
 
 1. Для начисления бонусов одному исполнителю нажмите нужную ссылку на его идентификатор в столбце {% if locale == "ru-ru" %}**ID исполнителя**{% endif %}{% if locale == "en-com" %}**Toloker ID**{% endif %}.
 
-    На открывшейся странице нажмите кнопку {% if locale == "ru-ru" %}{% endif %}{% if locale == "en-com" %}{% endif %}.
+    На открывшейся странице нажмите кнопку {% if locale == "ru-ru" %}**Действия → Выдать бонус**{% endif %}{% if locale == "en-com" %}**Actions → Issue bonus**{% endif %}.
 
     Для начисления бонусов группе исполнителей нажмите кнопку {% if locale == "ru-ru" %}**Выдать бонус**{% endif %}{% if locale == "en-com" %}**Issue bonus**{% endif %}.
 
@@ -58,7 +58,7 @@
 
 1. Перейдите на страницу {% if locale == "ru-ru" %}**Сообщения**{% endif %}{% if locale == "en-com" %}**Messages**{% endif %}.
 
-1. Нажмите {% if locale == "ru-ru" %}{% endif %}{% if locale == "en-com" %}{% endif %}.
+1. Нажмите {% if locale == "ru-ru" %}**Написать → Группе исполнителей → Добавить фильтр → Выбрать свой навык**{% endif %}{% if locale == "en-com" %}**Compose → To users group → Add filter → Choose skill**{% endif %}.
 
 1. Введите название навыка.
 

@@ -132,7 +132,7 @@
 
 {% cut "Заявка на обучение краудсорсингу и работе с Толокой" %}
 
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013202/?lang=ru&iframe=1&service=toloka-ai"></iframe>
 
 {% endcut %}
 
