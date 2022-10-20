@@ -30,18 +30,15 @@ To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**D
 
     - `ASSIGNMENT:status` — Task status: `SUBMITTED` — completed, `APPROVED` — accepted, `REJECTED` — declined.
 
-
 #### Sample file
 
 ![](../_images/results/tsv-result.png)
 
-{% note warning %}
+{% note alert %}
 
 The responses submitted by the banned Toloker before the ban will be taken into account and paid for. To exclude their responses from the results and aggregations, select the option **Exclude assignments from banned users**. It will delete the responses from users who were banned at the moment of downloading the results, not when the pool was labeled.
 
 {% endnote %}
-
-
 
 ## Getting files {#file-download}
 
@@ -60,8 +57,6 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
     Select the responses you need and click . Download the archives in several batches. You can select and download no more than 100 responses at a time.
 
 - Use the [Toloka API]({{ api-toloka-attachments }}) to download files with responses.
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -112,8 +107,11 @@ You can't accept the correct answers and pay for this part ($0.08). Response pag
 {% cut "How can I notify the Toloker of changes in the instructions?" %}
 
 Add the notification to the project description (for example: “Attention! The instructions changed”) and send a message to all the people who completed your tasks. To do this:
+
 - Assign them a hidden skill, or use an existing [skill](nav-assign.md) linked to the pool.
+
 - Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
+
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 
 {% endcut %}
@@ -121,6 +119,8 @@ Add the notification to the project description (for example: “Attention! The 
 {% cut "How can I increase the project's rating?" %}
 
 The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
+
+{% endcut %}
 
 {% cut "Low rating for “Will you take similar tasks in the future”" %}
 
@@ -146,11 +146,7 @@ Starting from December 15, 2021, tasks in pools are automatically available in t
 
 Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
 
-{% endcut %}
-
 If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
-
-{% endcut %}
 
 {% endcut %}
 

@@ -24,7 +24,11 @@
 
   1. Заполните поля формы:
 
+      {% cut "Заполнить форму на возврат средств" %}
+
       <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+      {% endcut %}
 
   1. Скачайте образец заявления, который находится в форме на возврат средств. Заполните заявление.
 
@@ -38,7 +42,11 @@
 
   1. Заполните поля формы:
 
+      {% cut "Заполнить форму на возврат средств" %}
+
       <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+      {% endcut %}
 
   1. {% include [refund-to-card-p_pf2_btw_lkb](../_includes/concepts/refund/id-refund-to-card/p_pf2_btw_lkb.md) %}
 
@@ -64,7 +72,11 @@
 
   1. Заполните поля формы:
 
+      {% cut "Заполнить форму на возврат средств" %}
+
       <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+      {% endcut %}
 
   1. {% include [refund-to-card-p_pf2_btw_lkb](../_includes/concepts/refund/id-refund-to-card/p_pf2_btw_lkb.md) %}
 
@@ -80,7 +92,11 @@
 
   1. Заполните поля формы:
 
+      {% cut "Заполнить форму на возврат средств" %}
+
       <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+
+      {% endcut %}
 
   1. {% include [refund-to-card-p_pf2_btw_lkb](../_includes/concepts/refund/id-refund-to-card/p_pf2_btw_lkb.md) %}
 

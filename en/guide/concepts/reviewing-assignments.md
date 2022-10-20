@@ -5,6 +5,7 @@ If you review Toloker responses yourself and don't want Tolokers who made a lot 
 ## When to use {#when-use}
 
 If [non-automatic acceptance](../../glossary.md#pool) (assignment review) is set in the [pool](offline-accept.md), add a rule to:
+
 - Set the Toloker's [skill](../../glossary.md#skill) based on their responses.
 
 - Block access for Tolokers who give incorrect responses.
@@ -21,7 +22,6 @@ The **If** and **then** fields in this rule are mandatory. If you don't fill in 
 
 {% endnote %}
 
-
 #|
 || **Field** | **Overview** ||
 ||{% if locale == "en-com" %}**Recent values to use**{% endif %} | How many recent responses from the Toloker to use.
@@ -32,6 +32,7 @@ If the field is filled in, the corresponding number of responses is used. The ru
 
 [Learn more](remember-values.md) about how this field works.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**total reviewed responses**{% endif %} — The number of the Toloker's assignments that were reviewed.
 
 - {% if locale == "en-com" %}**accepted responses (%)**{% endif %} — The percentage of the Toloker's assignments that were accepted (from 0 to 100).
@@ -116,7 +117,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
 
-
 {% endcut %}
 
 {% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
@@ -136,7 +136,5 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
 
 {% endcut %}
-
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
