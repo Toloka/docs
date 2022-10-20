@@ -1569,7 +1569,9 @@ In the way it's calculated. In both aggregations, confidence means the same thin
 {% endcut %}
 
 {% cut "How does the Dawid-Skene aggregation model work?" %}
+
 The Dawid-Skene aggregation model analyzes the Toloker responses and creates a confusion matrix for each Toloker. This lets us evaluate the statistical significance of the Toloker in the context of each assignment. [Learn more about the model](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.469.1377&rep=rep1&type=pdf).
+
 {% endcut %}
 
 {% cut "Why does the Dawid-Skene aggregation model return a result that the Tolokers didn't select?" %}
@@ -1764,11 +1766,9 @@ If less than a month passed between the activity in the pool and its archiving, 
 
 {% endcut %}
 
-{% cut "How do I find out the pool archiving parameters?" %}
+{% cut "How do I accept tasks from the archived pool or when the Toloker wrote to me later than the allowed deadline?" %}
 
-To find out the archiving date, get a [list of operations]({{ get-operations-list }}) with the `POOL.ARCHIVE` type. The response will contain the pool number and the archiving date. You can't get the method used to archive the pool via the API.
-
-If less than a month passed between the activity in the pool and its archiving, you can assume that the pool was archived manually, and if it's been one month or more, then it was archived automatically.
+Simply [give the Toloker a separate reward](../concepts/bonus.md) without changing the task status. You can't change the task status in the pool in this case.
 
 {% endcut %}
 
@@ -1823,11 +1823,11 @@ You specify the top-up amount in USD. On the **Balance**, it's converted into ru
 
 You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](../concepts/refill.md#step-by-step) with step-by-step instructions.
 
+{% endcut %}
+
 [Get closing documents and invoices](support.md#feedback_g3b_vj3_qjb)
 
 [Other questions](support.md#new)
-
-{% endcut %}
 
 ### Payment for tasks {#concept-2}
 
