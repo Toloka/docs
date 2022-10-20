@@ -127,7 +127,7 @@ To add a file to the [task interface](spec.md):
 
       {% endcut %}
 
-  1. Provide relative links to Yandex Disk files in the [file with tasks](../../glossary.md#tsv-file-definition-ru) in the following format: `/<proxy name>/<folder name>/<filename>.<type>`. For example, `/my-proxy/example.jpg` or with the folder name — `/my-proxy/photos/example.jpg`.
+  1. Provide relative links to Yandex Disk files in the [file with tasks](../../glossary.md#tsv-file-definition) in the following format: `/<proxy name>/<folder name>/<filename>.<type>`. For example, `/my-proxy/example.jpg` or with the folder name — `/my-proxy/photos/example.jpg`.
 
       {% note info %}
 
