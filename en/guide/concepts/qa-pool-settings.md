@@ -8,50 +8,61 @@ Quality control rules that you set in the [project](../../glossary.md#project) a
 
 {% endnote %}
 
-
 To set up quality control:
-1. Go to the pool editing page
-1. If you already have a pool with the appropriate quality control settings, you can copy it along with the audience settings. To do this, go to {% if locale == "en-com" %}**Tolokers filter**{% endif %} and click {% if locale == "en-com" %}**Copy settings from...**{% endif %} and then {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
-1. Under {% if locale == "en-com" %}**Quality Control**{% endif %}, choose the rules you want to use.
-    If you aren't sure what quality control rules you need, select a quality control preset with default settings.
-1. Make settings for the rules you added. Below is a list of rules with links to detailed information about the rule settings.
-1. Save the pool.
 
+1. Go to the pool editing page
+
+1. If you already have a pool with the appropriate quality control settings, you can copy it along with the audience settings. To do this, go to {% if locale == "en-com" %}**Tolokers filter**{% endif %} and click {% if locale == "en-com" %}**Copy settings from...**{% endif %} and then {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
+
+1. Under {% if locale == "en-com" %}**Quality Control**{% endif %}, choose the rules you want to use.
+
+    If you aren't sure what quality control rules you need, select a quality control preset with default settings.
+
+1. Make settings for the rules you added. Below is a list of rules with links to detailed information about the rule settings.
+
+1. Save the pool.
 
 ## List of rules {#id_z4l_prs_2lb}
 
 - **To keep track of how often Tolokers make mistakes:**
+
     - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
+
     - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same task.
+
     - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected responses.
 
 - **To protect your project from robots and cheaters:**
+
     - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
+
     - [Captcha](captcha.md): Show a captcha from time to time to make sure tasks aren't completed by robots.
+
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
 - **To attract a variety of Tolokers:**
+
     - [Earnings](income.md): Limit the amount each Toloker can earn in the [pool](../../glossary.md#pool) per day.
+
     - [Submitted assignments](submitted-answers.md): Limit how many assignments each Toloker can submit in the pool per day.
 
 - **To allow recompletion of certain assignments:**
+
     - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#submitted-answers) to other Tolokers to redo them if the Toloker was banned.
+
     - [Processing of rejected and accepted assignments](reassessment-after-accepting.md): Send rejected assignments to other Tolokers to redo them.
-
-
 
 ## What's next {#what_next}
 
 - [Add tasks to the pool](pool.md)
 - Learn more about how to set up a pool:
+
     - [Setting up pricing](dynamic-pricing.md).
     - [Dynamic overlap](dynamic-overlap.md).
     - Selective [majority vote](selective-mvote.md) control.
     - [Filters](filters.md).
     - [Speed/quality balance](adjust.md).
     - [Reviewed assignments](offline-accept.md).
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -88,7 +99,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 
@@ -183,21 +193,21 @@ There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each su
 
 {% endcut %}
 
-{% endcut %}
-
 If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
+
+{% endcut %}
 
 {% cut "What for" %}
 
 In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
-
-{% endcut %}
 
 {% note info %}
 
 To filter out Tolokers, use the [Control tasks](control.md) quality control rule. To rank Tolokers by the quality of responses in control tasks, use a [skill](nav.md).
 
 {% endnote %}
+
+{% endcut %}
 
 {% endcut %}
 
@@ -327,16 +337,17 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 The frequency of issuing [captchas](captcha.md) is set up in the pool.
 
-#### No
-Don't show captchas.
+No
 
-#### Low
+: Don't show captchas.
 
-Show a captcha after every 20 assignments.
+Low
 
-#### Average/High
+: Show a captcha after every 20 assignments.
 
-Show a captcha after every 10 assignments.
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -346,17 +357,17 @@ Show a captcha after every 10 assignments.
 
 The frequency of issuing captchas is configured in the pool.
 
-#### No
+No
 
-Don't show captchas.
+: Don't show captchas.
 
-#### Low
+Low
 
-Show a captcha after every 20 assignments.
+: Show a captcha after every 20 assignments.
 
-#### Average/High
+Average/High
 
-Show a captcha after every 10 assignments.
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -397,9 +408,11 @@ Don't forget to enable **Keep task order** in the pool parameters. Majority vote
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
+
 - You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
+
 - Too many users are banned. Ease the quality control rules.
 
 {% endcut %}
@@ -407,8 +420,11 @@ Possible reasons:
 {% cut "How can I speed up the pool completion?" %}
 
 - To motivate Tolokers, assign a [public skill](nav-create.md#public) and use [dynamic pricing](dynamic-pricing.md).
+
 - Try to [increase the project rating](project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
+
 - Adjust the [quality-speed ratio](adjust.md).
+
 - Set a higher [priority](pool_poolparams.md#priority) for the pool among other project pools.
 
 {% endcut %}
