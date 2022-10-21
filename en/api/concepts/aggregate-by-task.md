@@ -67,7 +67,7 @@ Aggregation type.
 A skill that determines the weight of the Toloker's response. ||
 || **fields** | **object**
 
-[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html) to use for aggregating responses. For best results, each of these fields must have a limited number of response options. ||
+[Output data fields](../../guide/concepts/result-aggregation.md) to use for aggregating responses. For best results, each of these fields must have a limited number of response options. ||
 || **fields.name** | **string**
 
 The output data field name. ||

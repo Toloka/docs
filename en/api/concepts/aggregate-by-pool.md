@@ -65,7 +65,7 @@ A skill that determines the weight of the Toloker's response.
 Required if the `WEIGHTED_DYNAMIC_OVERLAP` aggregation type is selected. ||
 || **fields** | **object**
 
-[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
+[Output data fields](../../guide/concepts/result-aggregation.md) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
 
 If the `DAWID_SKENE` aggregation type is selected, you can only specify one value. ||
 || **fields.name** | **string**

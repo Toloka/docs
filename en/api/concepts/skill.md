@@ -17,4 +17,4 @@ DELETE | [/user-skills/\<skill_id\>](delete-skill.md) | Removes a skill for a To
 
 ## Learn more {#links}
 
-- [Description of skills in the Requester's guide](https://toloka.ai/docs/guide/concepts/nav.html)
+- [Description of skills in the Requester's guide](../../guide/concepts/nav.md)

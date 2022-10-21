@@ -25,7 +25,7 @@ A task item is a labeling unit – in other words, data uploaded to a batch. The
 
 {% note info %}
 
-Before uploading task items to a batch, you need to upload them to photo hosting or cloud storage. Learn more in the [Where to store data](https://toloka.ai/docs/guide/concepts/cloud-storage.html) section.
+Before uploading task items to a batch, you need to upload them to photo hosting or cloud storage. Learn more in the [Where to store data](../../guide/concepts/cloud-storage.md) section.
 
 {% endnote %}
 

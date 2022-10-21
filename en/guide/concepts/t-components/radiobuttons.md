@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a radio button in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/field.radio-group){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a radio button in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.radio-group.md){% endif %}.
 
 {% endnote %}
 

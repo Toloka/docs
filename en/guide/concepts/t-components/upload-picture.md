@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for uploading images in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/field.media-file){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for uploading images in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.media-file.md){% endif %}.
 
 {% endnote %}
 

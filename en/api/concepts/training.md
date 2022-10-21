@@ -19,4 +19,4 @@ GET | [/trainings/<training_pool_id>](get-training.md) | Gets the properties of 
 
 ## Learn more {#links}
 
-- [More details about training pools](https://toloka.ai/docs/guide/concepts/train.html)
+- [More details about training pools](../../guide/concepts/train.md)

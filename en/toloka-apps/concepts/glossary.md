@@ -10,7 +10,7 @@ Bespoke project
 
 Bespoke solution
 
-: A bespoke solution is an example of a standard task that you can solve using Toloka. Unlike [self-service project](https://toloka.ai/ru/docs/guide/concepts/overview.html#project) templates, you don't have to set up everything yourself.
+: A bespoke solution is an example of a standard task that you can solve using Toloka. Unlike [self-service project](../../guide/concepts/overview.md#project) templates, you don't have to set up everything yourself.
 
 Task item
 

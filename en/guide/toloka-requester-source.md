@@ -222,7 +222,7 @@ Set up how your tasks will look for Tolokers. Tolokers are people around the wor
 
 1. {% note info %}
 
-    This tutorial uses [Template Builder](https://toloka.ai/en/docs/template-builder/), but you can use the [HTML/JS/CSS editor](concepts/spec.md) for the same purpose.
+    This tutorial uses [Template Builder](../template-builder/index.md), but you can use the [HTML/JS/CSS editor](concepts/spec.md) for the same purpose.
 
     {% endnote %}
 
@@ -233,7 +233,7 @@ Set up how your tasks will look for Tolokers. Tolokers are people around the wor
     - {% if locale == "en-com" %}**Input data**{% endif %}: Parameters in the file with raw task data.
     - {% if locale == "en-com" %}**Output data**{% endif %}: Parameters in the file with labeling results.
 
-    {% if locale == "en-com" %}**Input data**{% endif %} and {% if locale == "en-com" %}**Output data**{% endif %} [match the task interface](https://toloka.ai/en/docs/template-builder/operations/create-specs) you set up in {% if locale == "en-com" %}**Template Builder**{% endif %}. Check that there are fields for all data types you use for your tasks, and for the ones you want to see in the results file.
+    {% if locale == "en-com" %}**Input data**{% endif %} and {% if locale == "en-com" %}**Output data**{% endif %} [match the task interface](../template-builder/operations/create-specs.md) you set up in {% if locale == "en-com" %}**Template Builder**{% endif %}. Check that there are fields for all data types you use for your tasks, and for the ones you want to see in the results file.
 
 1. Under {% if locale == "en-com" %}**Instructions for performers**{% endif %}, add the instructions Tolokers will see when they start doing your tasks. You can add text, tables, and images to your instructions.
 

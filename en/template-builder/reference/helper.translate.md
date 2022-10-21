@@ -1,6 +1,6 @@
 # helper.translate
 
-Component for translating interface elements to other languages. More details in [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate).
+Component for translating interface elements to other languages. More details in [Translating the task interface](../../guide/concepts/project-languages.md#project-languages__interface-translate).
 
 In the properties that should be displayed in different languages, add:
 

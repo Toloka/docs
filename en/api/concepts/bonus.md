@@ -14,4 +14,4 @@ GET | [/user-bonuses/<bonus_id>](get-one-bonus.md) | Gets the properties of the 
 
 ## Learn more {#links}
 
-- [Description of rewards in the Requester's guide](https://toloka.ai/docs/guide/concepts/bonus.html)
+- [Description of rewards in the Requester's guide](../../guide/concepts/bonus.md)

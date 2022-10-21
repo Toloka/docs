@@ -2,7 +2,7 @@ title: Toloka documentation
 items:
   - name: Toloka documentation
     href: index.md
-    # hidden: true
+    hidden: true
   - name: Getting started
     items:
       - name: How does Toloka work?

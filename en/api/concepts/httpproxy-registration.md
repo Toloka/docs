@@ -86,7 +86,7 @@ Additional parameters that will be passed in the request to the requester's serv
 
 {% note info %}
 
-To get the full URL for accessing data on the created server, use the `getProxyUrl(path)` method (see the [Task class](https://toloka.ai/docs/guide/concepts/js/task.html) section in the Requester's guide).
+To get the full URL for accessing data on the created server, use the `getProxyUrl(path)` method (see the [Task class](../../guide/concepts/js/task.md) section in the Requester's guide).
 
 {% endnote %}
 

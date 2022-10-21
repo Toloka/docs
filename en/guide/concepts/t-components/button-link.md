@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button with click validation in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/operations/internet-search#action.open-link){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button with click validation in {% if locale == "en-com" %}[Template Builder](../../../template-builder/operations/internet-search.md#action.open-link){% endif %}.
 
 {% endnote %}
 

@@ -80,7 +80,7 @@ The idea is that it collects the most accurate aggregated responses for each tas
 
 [Description of the Dawid-Skene method](https://www.jstor.org/stable/2346806).
 
-If you want to learn how the Dawid-Skene method is implemented in Toloka, check out the [Crowd Kit documentation](https://toloka.ai/en/docs/crowd-kit/reference/crowdkit.aggregation.classification.dawid_skene.DawidSkene).
+If you want to learn how the Dawid-Skene method is implemented in Toloka, check out the [Crowd Kit documentation](../../crowd-kit/reference/crowdkit.aggregation.classification.dawid_skene.DawidSkene.md).
 
 {% endcut %}
 

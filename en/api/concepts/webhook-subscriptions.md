@@ -10,7 +10,7 @@ The events that you want to be notified about are set when [creating a subscript
 
 Notifications about the events you're subscribed to are sent in JSON format. For a description of notification data, see [Notification format](using-webhook-subscriptions.md).
 
-To create a subscription, leave a request in the [Issues with project settings](https://toloka.ai/docs/guide/troubleshooting/support.html/#troubleshooting__project-setting) form.
+To create a subscription, leave a request in the [Issues with project settings](../../guide/troubleshooting/support.md#troubleshooting__project-setting) form.
 
 ## Methods {#methods}
 

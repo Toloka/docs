@@ -25,4 +25,4 @@ GET | [/aggregated-solutions/<operation_id>](get-aggregated-result.md) | Gets ag
 
 ## Learn more {#links}
 
-- [Description of aggregation in the Requester's guide](https://toloka.ai/docs/guide/concepts/result-aggregation.html)
+- [Description of aggregation in the Requester's guide](../../guide/concepts/result-aggregation.md)

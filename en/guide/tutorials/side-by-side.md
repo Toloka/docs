@@ -74,7 +74,7 @@ Before you begin:
 
         {% note info %}
 
-        To learn about other properties of the {% if locale == "en-com" %}**Config**{% endif %} section, their possible values and the impact on the task interface, see the [Template Builder Help](https://toloka.ai/en/docs/template-builder/templates/sbs-image).
+        To learn about other properties of the {% if locale == "en-com" %}**Config**{% endif %} section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/templates/sbs-image.md).
 
         {% endnote %}
 

@@ -286,7 +286,7 @@ Required if dynamic pricing is used. The price per task suite for a Toloker with
 Required if selective review is used. Overlap in tasks with selective review. ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function** | **object \| required if**
 
-Required if selective review is used. Distribution of tasks with selective review. For more information about how verification tasks are assigned, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html). ||
+Required if selective review is used. Distribution of tasks with selective review. For more information about how verification tasks are assigned, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function. scope** | **string \| required if**
 
 Required if selective review is used.
@@ -437,7 +437,7 @@ A skill that determines the weight of the Toloker's response. For best results, 
 
 Required if dynamic overlap is used.
 
-[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
+[Output data fields](../../guide/concepts/result-aggregation.md) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
 
 Don't specify several fields if their values depend on each other. ||
 || **dynamic_overlap_config. fields.name** | **string \| required if**
@@ -549,7 +549,7 @@ Comments on the pool (only visible to the requester). ||
 Description for Tolokers. If it is filled in, the text will be displayed instead of the project's `public_description` in the list of tasks for Tolokers. ||
 || **dynamic_pricing_config** | **object**
 
-[Dynamic pricing](https://toloka.ai/docs/guide/concepts/dynamic-pricing.html#dynamic-pricing__section_ucl_3hl_vlb) settings. ||
+[Dynamic pricing](../../guide/concepts/dynamic-pricing.md#dynamic-pricing__section_ucl_3hl_vlb) settings. ||
 || **auto_accept_solutions** | **boolean**
 
 Whether tasks must be checked manually:
@@ -631,7 +631,7 @@ Selective review of control tasks. To make sure selective review is enabled, don
 Selective review of training tasks. To make sure selective review is enabled, don't forget to set up display of this type of task in [mixer_config](#mixer_config). ||
 || **speed_quality_balance** | **object**
 
-[Speed/quality balance](https://toloka.ai/docs/guide/concepts/adjust.html). ||
+[Speed/quality balance](../../guide/concepts/adjust.md). ||
 || **speed_quality_balance. type** | **string**
 
 Balance type. Possible values:

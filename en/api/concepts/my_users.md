@@ -19,6 +19,6 @@ You can filter Tolokers by the following criteria:
 
 ## Learn more {#links}
 
-- [Viewing Tolokers in the Requester's guide](https://toloka.ai/docs/guide/concepts/users.html)
-- [Description of skills in the Requester's guide](https://toloka.ai/docs/guide/concepts/nav.html)
-- [Quality control rules in the Requester's guide](https://toloka.ai/docs/guide/concepts/check-performers.html)
+- [Viewing Tolokers in the Requester's guide](../../guide/concepts/users.md)
+- [Description of skills in the Requester's guide](../../guide/concepts/nav.md)
+- [Quality control rules in the Requester's guide](../../guide/concepts/check-performers.md)

@@ -49,9 +49,9 @@ These powerful software development kits make your work with Toloka much easier 
     <div class="grid-item">
         <h3>Get started with Toloka</h3>
         <ul>
-            <li><a href="https://toloka.ai/docs/guide/concepts/overview.html">How does Toloka work?</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/access.html">Registration</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/first-project.html">Your first project</a></li>
+            <li><a href="../guide/concepts/overview">How does Toloka work?</a></li>
+            <li><a href="../guide/concepts/access">Registration</a></li>
+            <li><a href="../guide/concepts/first-project">Your first project</a></li>
         </ul>
     </div>
     <div class="grid-item">
