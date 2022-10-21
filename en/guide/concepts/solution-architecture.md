@@ -48,7 +48,7 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 - You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#left-off-acceptance) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
-    {% note warning %}
+    {% note alarm %}
 
     In the assignments review, specify the [review period](../../glossary.md#review-time) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
 
@@ -56,7 +56,7 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 - If the responses cannot be combined automatically, you can set up a separate project where you ask Tolokers to choose the most appropriate response. An example is if the responses are images of similar items and you only need one image like that.
 
-{% note info %}
+{% note tip %}
 
 Assign a skill to Tolokers who completed tasks in the main project. For checking responses, you can assign the review task only to Tolokers who don't have this skill.
 

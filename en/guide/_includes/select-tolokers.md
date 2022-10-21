@@ -1,4 +1,4 @@
-{% cut "How to select Tolokers" %}
+#### How to select Tolokers
 
 {% if audience == "internal" %}
 
@@ -79,7 +79,5 @@ To find Tolokers by skill, use [filters](../../glossary.md#filtering):
 1. Specify the skill and the required skill value.
 
 Filters for selecting Tolokers work the same way as in the pool. Learn more in the [Filters](../concepts/filters.md) section.
-
-{% endcut %}
 
 {% endcut %}

@@ -9,11 +9,13 @@ Use this rule if you want to:
 
 - Protect yourself from robots (for this purpose, the threshold should be higher, such as 10% of the pool's tasks).
 
-#### Usage recommendations
+{% note tip %}
 
 Don't set large values in pools where Tolokers won't have time to complete the required number of tasks.
 
-## Rule settings {#rule}
+{% endnote %}
+
+## How to configure {#rule}
 
 {% note warning %}
 
@@ -45,9 +47,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 **Task**: you're conducting an opinion poll. To collect responses from as many Tolokers as possible, set up the **Submitted responses** rule.
 
-{% list tabs %}
-
-- Correct settings
+#### Correct settings
 
   ![](../_images/control-rules/submitted-answers/qcr-submitted-answers_example1.png)
 
@@ -55,7 +55,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 {% endlist %}
 
-{% note warning %}
+{% note alarm %}
 
 The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 

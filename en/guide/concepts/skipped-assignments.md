@@ -22,7 +22,7 @@ Restrict access to [pool](../../glossary.md#pool) tasks for Tolokers who skip mu
 
 ## How to configure {#rule}
 
-{% note warning %}
+{% note alarm %}
 
 All fields in this rule are required. If you don't fill in at least one of them, you won't be able to save the rule.
 
@@ -72,7 +72,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 {% endlist %}
 
-{% note warning %}
+{% note alarm %}
 
 The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 

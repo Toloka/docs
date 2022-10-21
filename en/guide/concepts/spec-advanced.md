@@ -6,7 +6,6 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-
 All aspects of the task's [lifecycle](#lifecycle) are controlled by three JavaScript classes:
 
 - The [Assignment](js/assignment.md) class manages task progress, processes the task page's commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of [TaskSuite](js/tasksuite.md).
@@ -84,10 +83,7 @@ The `Task` object is the task to perform.
 ```
 {% endif %}
 
-Key
- |
-Value
-
+Key|Value
 ----- | -----
 `id` | Task ID.
 `input_values` | Task input data in the format `"<field ID>":"<field value>"`. Example:```plaintext "input_values": {   "image": "http://images.com/1.png" } ```
@@ -106,10 +102,7 @@ The `Solution` object is the Toloker's response in the task.
 ```
 {% endif %}
 
-Key
- |
-Value
-
+Key|Value
 ----- | -----
 `task_id` | Task ID.
 `output_values` | Responses in the format `"<input field ID>":"<value>"`. Example:```plaintext "outputValues": {   "colour": "white",   "comment": "So white" } ```
@@ -131,10 +124,7 @@ The `SolutionValidationError` object is a validation error for the Toloker's res
 ```
 {% endif %}
 
-Key
- |
-Value
-
+Key|Value
 ----- | -----
 `task_id` | Task ID.
 `errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`. Example:{% if locale == "en-com" %}```plaintext "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
