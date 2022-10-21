@@ -8,7 +8,6 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 {% endnote %}
 
-
 ## How to run a project in the sandbox {#section_zmz_t4z_mlb}
 
 1. Register in the sandbox as a requester. To do this, follow the [link]({{ sandbox }}).
@@ -20,7 +19,9 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
     {% endnote %}
 
 1. Configure and launch your project:
+
     - A list of instructions is provided in [Tutorials for popular tasks](usecases.md).
+
     - General instructions in the [Starting and tuning a project](main-steps.md) section.
 
 ## How to complete tasks {#self}
@@ -29,12 +30,12 @@ To complete your tasks in the sandbox:
 
 1. Register in the sandbox as a Toloker (see the instructions in the [user documentation]({{ user-documentation }}) ).
 
-    {% note alarm %}
+    {% note alert %}
 
     Authorization via social media isn't allowed, so you need to [register]({{ register }}) a new user in Yandex.
 
     {% endnote %}
-    
+
 1. Log in to the sandbox using the requester account.
 
 1. Open the [Tolokers]({{ users }}) page and click {% if locale == "en-com" %}**Add trusted Tolokers**{% endif %}.
@@ -67,7 +68,6 @@ To move tasks from the sandbox to the production version:
 
     If to the pool has [linked training](train.md), it is exported automatically.
 
-
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How do I work with the Sandbox?" %}
@@ -97,8 +97,11 @@ No, you need a separate account for each version of Toloka. To create a task in 
 {% cut "What do I do if an error occurs on the server when I try to export a project from the Sandbox?" %}
 
 #### Try exporting the project without pools.
+
 Select an exported project and don't select pools in the window that opens.Click **Export**.
+
 #### If the error persists, refresh the token.
+
 Go to [ Yandex ID]({{ passport-profile }}).Under **Sign in and device history**, click **Log out from all devices**.Request new tokens in the Sandbox and main environment.Update the token in the [Sandbox]({{ sandbox-profile-integration }})**Profile **.
 
 {% endcut %}
@@ -134,9 +137,13 @@ To download only the control tasks (if you completed them in the interface), go 
 Make sure that:
 
 1. The [pool](../../glossary.md#pool) is started.
+
 1. The Toloker is added as a trusted.
+
 1. The trusted user is registered in the sandbox as a Toloker.
+
 1. The trusted user didn't use social networks when registering.
+
 1. Your trusted user matches the [filters](../../glossary.md#filtering) you set.
 
 {% endcut %}
@@ -146,6 +153,7 @@ Make sure that:
 Possible reasons:
 
 - The Toloker isn't registered in the sandbox. The account you registered in the Toloka production version won't work. Make sure you have specified the correct _Toloker's_ account as a trusted one.
+
 - The Toloker's account is authorized via social networks.[Register]({{ register }}) a new user in Yandex.
 
 {% endcut %}

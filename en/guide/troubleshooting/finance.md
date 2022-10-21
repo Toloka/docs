@@ -6,7 +6,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
 ## Adding funds to your account {#concept-1}
 
 {% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
@@ -49,7 +48,7 @@ You specify the top-up amount in USD. On the **Balance**, it's converted into ru
 
 {% endcut %}
 
-{% cut "How do I add money to Toloka?" %}
+{% cut "How do I add money to Toloka?
 
 You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](../concepts/refill.md#step-by-step) with step-by-step instructions.
 
@@ -58,7 +57,6 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 [Get closing documents and invoices](support.md#feedback_g3b_vj3_qjb)
 
 [Other questions](support.md#new)
-
 
 ## Payment for tasks {#concept-2}
 
@@ -94,12 +92,11 @@ Track your money debited for rewards in **Profile** → **Spent** tab.
 
 {% cut "Can there be tasks with different prices in the pool?" %}
 
-No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](../concepts/dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](../concepts/bonus.md) to good Tolokers. 
+No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](../concepts/dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](../concepts/bonus.md) to good Tolokers.
 
 {% endcut %}
 
 [Other questions](support.md#new)
-
 
 ## Refund {#concept-3}
 

@@ -117,3 +117,5 @@
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=ru&iframe=1&service=toloka-ai"></iframe>
 
 {% endcut %}
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

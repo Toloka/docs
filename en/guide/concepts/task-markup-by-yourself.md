@@ -19,9 +19,13 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 ## How do I mark up tasks? {#section_czh_fj2_ghb}
 
 1. Make sure the pool isn't running.
+
 1. Click {% if locale == "en-com" %}**Edit**{% endif %} in the {% if locale == "en-com" %}**Pool tasks**{% endif %} block.
+
 1. Open the **General**, **Control**, or **Training** tab. Create a control or a training task from another type of task.
+
 1. Select the responses that should be checked. (The list of the [output data fields](incoming.md) is on the right.)
+
 1. Click **Save and go to next**.
 
 {% cut "Example of task markup" %}
@@ -37,16 +41,16 @@ In this example, the correct response is added for the control task. Only the ch
 After you have created the control tasks, make sure that different variations of correct responses occur with the same frequency. This will help avoid random guessing in responses.
 
 1. Go to the task markup page.
-1. Open the  tab.
-    The distribution of responses is shown as a percentage.
 
+1. Open the  tab.
+
+    The distribution of responses is shown as a percentage.
 
 {% note tip %}
 
 When creating control tasks, enter only correct responses that answer the question. So for an image classification task, **Image loading error** is not a correct response that answers the task question.
 
 {% endnote %}
-
 
 #### Example of response distribution
 
@@ -65,15 +69,21 @@ When creating control tasks, enter only correct responses that answer the questi
 ## How to edit tasks {#task-edit}
 
 1. Make sure the pool isn't running.
+
 1. Click **Edit** in the **Pool tasks** block.
+
 1. Click the tab with the type of the task.
+
 1. Find the task in the list and click ![](../_images/edit.svg) . Editing mode opens.
 
 ## How to delete a task from the pool {#delete-task}
 
 1. Make sure the pool isn't running.
+
 1. Click **Edit** in the **Pool tasks** block.
+
 1. Click the tab with the type of the task.
+
 1. Find the task in the list and click ![](../_images/location-job/task-edit/task-action-delete.png). You can also delete a task from the pool in [editing mode](#task-edit).
 
 {% note info %}
@@ -82,16 +92,11 @@ If you set the overlap to 0 [via the API]({{ toloka-api-stop-assigning-tasks }})
 
 {% endnote %}
 
-
-
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}
-  [Top up your account](refill.md)
-  {% endif %}
+- {% if locale == "en-com" %}[Top up your account](refill.md){% endif %}
 - [Start the pool](pool-run-and-stop.md).
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -114,105 +119,62 @@ To work with a large log conveniently, copy it to the text editor.
 
 If the [column headings](pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
 
-#### Processing errors table
+#### Processing errors tables
 
-<table>
-<tr>
-<th>Overview</th><th>How to fix</th>
-</tr>
-<tr>
-<td colspan="2">
-
-```
+```json
 "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
 "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
 ```
-</td>
-</tr>
-<tr>
-<td>
 
-**Extra tabs.**
+#|
+||**Overview**|**How to fix**||
+||**Extra tabs.**
 
-If the file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you will get en error message.
+If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
 
-For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are extra. </td>
-<td> Remove extra column separators in the above example — both `\t\t` characters.
-</td>
-</tr>
-<tr>
-<td colspan="2">
+For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
+|#
 
-```
+```json
 "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
 ```
-</td>
-</tr>
-<tr>
-<td>
 
-**The number of fields in the header and in the row doesn't match.**
-
-</td>
-<td>
-Make sure that:
+#|
+||**Overview**|**How to fix**||
+||**The number of fields in the header and in the row doesn't match.** | Make sure that:
 
 - The number of tabs in the file structure is correct.
 - String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
+|#
 
-</td>
-</tr>
-<tr>
-<td colspan="2">
+```json
+"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
+```
 
-``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
+#|
+||**Overview**|**How to fix**||
+||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
+|#
 
-</td>
-</tr>
-<tr>
-<td>
+```json
+"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
+```
 
-**The value is missing for a required input field.** </td>
-<td> Make sure that columns with required input data fields are filled.
-</td>
-</tr>
-<tr>
-<td colspan="2">
+#|
+||**Overview**|**How to fix**||
+||**Invalid data in a “link” (“url”) field.** | Make sure that:
 
-``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
-</td>
-</tr>
-<tr>
-<td>
+- Links start with the `http://`, `https://` or `www` prefix.||
+|#
 
-**Invalid data in a “link” (“url”) field.**
+```json
+"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
+```
 
-</td>
-<td>
-
-Make sure that:
-- Links start with the `http://`, `https://` or `www` prefix.
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**Unpaired quotation mark in a string.**
-</td>
-<td>
-
-Check that all quotation marks are [escaped](pool_csv.md#string).
-</td>
-</tr>
-</table>
+#|
+||**Overview**|**How to fix**||
+||**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).||
+|#
 
 {% endcut %}
 
@@ -255,7 +217,9 @@ For more information about creating the file, see the [Guide](pool_csv.md). If t
 The error might occur if the expected input type is URL, but a string is received.
 
 There may be two reasons:
+
 - The input field has the "link" type.
+
 - The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
 
 {% endcut %}
@@ -295,7 +259,9 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
+
 - If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
@@ -321,6 +287,7 @@ Each control task is shown to the Toloker only once. If you use smart mixing, yo
 There shouldn't be too few pages available. Otherwise:
 
 - You won't be able to correctly evaluate the quality of the Toloker's responses.
+
 - The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
 
 {% cut "Example" %}

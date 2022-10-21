@@ -14,9 +14,7 @@ All aspects of the task's [lifecycle](#lifecycle) are controlled by three JavaSc
 
 - [Task](js/task.md) is responsible for rendering and validating an individual task. Typically, you should extend this class if a task needs to have non-standard behavior.
 
-
 You can use [services](js/services.md) for more nuanced needs like subscribing to keypress events or getting the Toloker's GPS coordinates.
-
 
 ## Lifecycle of a task {#lifecycle}
 
@@ -37,7 +35,6 @@ Here you can make an additional review of the Toloker's responses.
 #### Removal
 
 When the Toloker has finished all tasks on the page or [skipped it](pool_statistic-pool.md#skipped-tasks), the [`destroy()`](js/tasksuite.md#destroy) method of the `TaskSuite` class is called. It calls the [`destroy()`](js/task.md#destroy) method of the `Task` class for each task. These methods free up resources and remove the services and event handlers associated with tasks.
-
 
 ## Class inheritance {#inherit}
 
@@ -67,12 +64,13 @@ var ChildClass = extend(ParentClass, function() {
 })
 ```
 
-
 ## Data types {#data-spec-adv}
 
 The `Task` object is the task to perform.
- {% if locale == "en-com" %}
-```plaintext
+
+{% if locale == "en-com" %}
+
+```json
 {
     "id": <string>,
     "input_values": {
@@ -81,17 +79,29 @@ The `Task` object is the task to perform.
      }
 }
 ```
+
 {% endif %}
 
-Key|Value
------ | -----
-`id` | Task ID.
-`input_values` | Task input data in the format `"<field ID>":"<field value>"`. Example:```plaintext "input_values": {   "image": "http://images.com/1.png" } ```
+#|
+||**Key**|**Value**||
+||`id` | Task ID.||
+||`input_values` | Task input data in the format `"<field ID>":"<field value>"`.
 
+Example:
+
+```json
+"input_values": {
+    "image": "http://images.com/1.png"
+}
+```
+||
+|#
 
 The `Solution` object is the Toloker's response in the task.
- {% if locale == "en-com" %}
-```plaintext
+
+{% if locale == "en-com" %}
+
+```json
 {
     "task_id": <string>,
     "output_values": {
@@ -100,17 +110,30 @@ The `Solution` object is the Toloker's response in the task.
     }
 }
 ```
+
 {% endif %}
 
-Key|Value
------ | -----
-`task_id` | Task ID.
-`output_values` | Responses in the format `"<input field ID>":"<value>"`. Example:```plaintext "outputValues": {   "colour": "white",   "comment": "So white" } ```
+#|
+||**Key**|**Value**||
+||`task_id` | Task ID.||
+||`output_values` | Responses in the format `"<input field ID>":"<value>"`.
 
+Example:
+
+```json
+"outputValues": {
+    "colour": "white",
+    "comment": "So white"
+}
+```
+||
+|#
 
 The `SolutionValidationError` object is a validation error for the Toloker's response.
- {% if locale == "en-com" %}
-```plaintext
+
+{% if locale == "en-com" %}
+
+```json
 {
     "task_id": string,
     "errors": {
@@ -122,11 +145,28 @@ The `SolutionValidationError` object is a validation error for the Toloker's res
     }
 }
 ```
+
 {% endif %}
 
-Key|Value
------ | -----
-`task_id` | Task ID.
-`errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`. Example:{% if locale == "en-com" %}```plaintext "errors": {      "colour": {     "code": "REQUIRED",     "message": "Required field"   } } ```{% endif %}
+#|
+||**Key**|**Value**||
+||`task_id` | Task ID.||
+||`errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`.
+
+Example:
+
+{% if locale == "en-com" %}
+
+```json
+"errors": {
+    "colour": {
+        "code": "REQUIRED",
+        "message": "Required field"
+    }
+}
+```
+
+{% endif %}||
+|#
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

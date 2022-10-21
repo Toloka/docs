@@ -6,7 +6,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
 ## Uploading tasks {#concept_iy1_3kh_5mb}
 
 {% cut "How many tasks should be in a suite?" %}
@@ -27,9 +26,9 @@ You can specify the number of tasks on the page when you upload your tasks to th
 
 {% endcut %}
 
-{% cut "Why does the preview display all the photos from the TSV file at once?" %}
+{% cut "Why does the preview display all the photos from the file with tasks at once?" %}
 
-You must use a separate row for each task in your TSV file. For more information, see [here](../concepts/pool_csv.md).
+You must use a separate row for each task in your file with tasks. For more information, see [here](../concepts/pool_csv.md).
 
 When you create a pool, the pool will have settings for the number of tasks per suite.
 
@@ -45,7 +44,7 @@ Escape commas with a backslash (`\`).
 
 Use the button **Upload review results** to upload your file. You can see the format [here](../concepts/accept.md).
 
-Assignments are reviewed in a TSV file.
+Assignments are reviewed in a file with tasks.
 
 {% endcut %}
 
@@ -83,7 +82,7 @@ If you are creating control tasks, fill out the `GOLDEN` columns with the correc
 
 If you are creating a training task, you also need to fill in the `HINT:text` column. For the general tasks you don't need any columns other than `INPUT`, so feel free to delete them.
 
-The file format must be TSV, and the encoding must be UTF-8.
+The file format must be TSV, XLSX or JSON, and the encoding must be UTF-8.
 
 For more information about creating the file, see the [Guide](../concepts/pool_csv.md). If there are errors during the upload, look up the error description on this [page](../concepts/task_upload.md).
 
@@ -94,7 +93,9 @@ For more information about creating the file, see the [Guide](../concepts/pool_c
 The error might occur if the expected input type is URL, but a string is received.
 
 There may be two reasons:
+
 - The input field has the "link" type.
+
 - The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
 
 {% endcut %}
@@ -113,43 +114,43 @@ The third thing to consider is quality control and assignment review. If you use
 
 {% cut "I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?" %}
 
-Toloka will split the links to images in the uploaded file into task suites depending on the method you specified when uploading the TSV file. For more information about the three upload methods, see the [Guide](../concepts/distribute-tasks-by-pages.md).
+Toloka will split the links to images in the uploaded file into task suites depending on the method you specified when uploading the file. For more information, see the [Guide](../concepts/distribute-tasks-by-pages.md).
 
 {% endcut %}
 
-{% cut "Are TSV files sensitive to the order of the INPUT field and GOLDEN fields?" %}
+{% cut "Are files with tasks sensitive to the order of the INPUT field and GOLDEN fields?" %}
 
-TSV files are insensitive to the order of fields. Use your preferred order of fields.
+The files with tasks are insensitive to the order of fields. Use your preferred order of fields.
 
 {% endcut %}
 
-{% cut "How do I add multiple "known_solutions" to a TSV file with a training task?" %}
+{% cut "How do I add multiple "known_solutions" to a file with a training task?" %}
 
 You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API]({{ toloka-api-tasks }}) for that.
 
 {% endcut %}
 
-{% cut "Where is my TSV file added if I upload it to the running pool?" %}
+{% cut "Where is my file added if I upload it to the running pool?" %}
 
 If you have the **Keep task order** option enabled, labeling will start after the previously uploaded tasks are taken by users. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
 
 {% endcut %}
 
-{% cut "How do I write an array to an input TSV file?" %}
+{% cut "How do I write an array to an input file?" %}
 
-The array of strings in the input data must be comma-separated. For example: `INPUT:typestext1, text2, text3, text4`
+The array of strings in the input data must be comma-separated. For example: `INPUT:types   text1, text2, text3, text4`
 
 {% endcut %}
 
-{% cut "How do I properly structure my TSV file used for data upload if there is JSON data among the input?" %}
+{% cut "How do I properly structure my file used for data upload if there is JSON data among the input?" %}
 
 All the values are written to the same column. Make sure to escape quotes. For more information about escaping quotes in JSON format, see the [Guide](../concepts/pool_csv.md#json).
 
 {% endcut %}
 
-{% cut "If there are no headers for some input columns in the TSV file, are they going to be skipped during import? Will they be skipped if they have headers without the "INPUT:.." prefix?" %}
+{% cut "If there are no headers for some input columns in the file with tasks, are they going to be skipped during import? Will they be skipped if they have headers without the "INPUT:.." prefix?" %}
 
-No. If you try to upload a file with missing headers to the pool, the system issues an upload error. All the INPUT fields required in the specification must be present in the TSV file with tasks. There must be no extra fields or columns.
+No. If you try to upload a file with missing headers to the pool, the system issues an upload error. All the INPUT fields required in the specification must be present in the file with tasks. There must be no extra fields or columns.
 
 If you don't want to show some data to Tolokers, but you still need this data in the file, create the optional hidden input fields for such data in the project.
 
@@ -162,7 +163,9 @@ Text in the GOLDEN field must match the control text exactly.
 Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
 
 Check the links that you use. There are several ways to unify links:
+
 - Add requirements for the link format in your instructions and hints in your training pool.
+
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
 {% endcut %}
@@ -175,7 +178,7 @@ The settings specified during the first file upload are applied to all the files
 
 {% endcut %}
 
-{% cut "How do I properly structure my TSV file used for data upload if there is JSON data among the input?" %}
+{% cut "How do I properly structure my file used for data upload if there is JSON data among the input?" %}
 
 All the values are written to the same column. Make sure to escape quotes.
 
@@ -202,30 +205,61 @@ To work with a large log conveniently, copy it to the text editor.
 
 {% endcut %}
 
-#### Errors in column headers
+## Errors in column headers
 
 If the [column headings](../concepts/pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
 
-#### Processing errors table
+## Processing errors tables
+
+```json
+"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
+```
 
 #|
-||**Overview** | **How to fix**||
-||``` "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" ```| ||
-||**Extra tabs.**|
-If the TSV file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you will get en error message.
-For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the TSV file after the link, you get 3 columns, 2 of which are extra. | Remove extra column separators in the above example — both `\t\t` characters.||
-||``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```| ||
-||**The number of fields in the header and in the row doesn't match.** | Make sure that:
-- The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](../concepts/pool_csv.md#string)`" "`.||
-||``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```| ||
-||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
-||``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```| ||
-||**Invalid data in a “link” (“url”) field.** | Make sure that:
-- Links start with the `http://`, `https://` or `www` prefix.||
-||``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```| ||
-||**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](../concepts/pool_csv.md#string).||
+||**Overview**|**How to fix**||
+||**Extra tabs.**
+
+If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
+
+For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
 |#
+
+```json
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
+```
+
+#|
+||**Overview**|**How to fix**||
+||**The number of fields in the header and in the row doesn't match.** | Make sure that:
+
+- The number of tabs in the file structure is correct.
+- String values with tab characters are enclosed in [quotation marks](../concepts/pool_csv.md#string) `" "`.
+|#
+
+```json
+"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
+```
+
+#|
+||**Overview**|**How to fix**||
+||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
+|#
+
+```json
+"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
+```
+
+#|
+||**Overview**|**How to fix**||
+||**Invalid data in a “link” (“url”) field.** | Make sure that:
+
+- Links start with the `http://`, `https://` or `www` prefix.||
+|#
+
+```json
+"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
+```
 
 {% endcut %}
 
@@ -234,7 +268,9 @@ For example, if 1 column is defined in the input, and two more `\t\t` tabs are a
 The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
+
 - If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
@@ -248,7 +284,6 @@ If the text is in the HTML block of the task template, then clone the project. T
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Training-exam-retry {#concept_i2g_kkh_5mb}
 
@@ -277,8 +312,11 @@ Unlike your main pool, you already know correct responses for every task. You ca
 Validity period of the training skills is governed by the **Retry after** parameter.
 
 The skill is deleted in the specified number of days if the Toloker:
+
 - Has a skill value lower than in the **Level required** field.
+
 - Didn't complete any tasks linked to the training during this period.
+
 If their skill expires, your users need to complete the training again.
 
 {% endcut %}
@@ -292,7 +330,9 @@ In the task file, leave empty control values for the optional output data.
 {% cut "How do I know when a particular Toloker got the skill?" %}
 
 1. Go to the Toloker card.
+
 1. Click the **Profile** tab.
+
 1. Find the required skill in the list and download the history of its changes.
 
 {% endcut %}
@@ -310,7 +350,9 @@ Text in the GOLDEN field must match the control text exactly.
 Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
 
 Check the links that you use. There are several ways to unify links:
+
 - Add requirements for the link format in your instructions and hints in your training pool.
+
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
 {% endcut %}
@@ -439,13 +481,14 @@ Another option for selecting Tolokers for a project of this type is assignment r
 {% cut "How do I create a file with training tasks?" %}
 
 For training tasks, you need to:
+
 - Select the correct responses in the `GOLDEN:result` column.
+
 - Fill in the `HINT:text` column. It stores a hint to be shown if the Toloker selects an incorrect response option.
 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Changing a running pool {#concept_olz_kkh_5mb}
 
@@ -468,6 +511,7 @@ If you uploaded them using a different method, clone your pool and upload the ne
 After uploading, all tasks are put into one list and can't be deleted separately.
 
 - **If the pool hasn't started yet**, delete all tasks. To do this, click **Delete** in the **Pool tasks** block. Then upload one file to the pool.
+
 - **If the pool already started**, delete tasks [one-by-one in markup mode](../concepts/task_markup.md#delete-task).
 
 {% endcut %}

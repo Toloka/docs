@@ -6,7 +6,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
 #### If you aren't using Toloka yet and need advice
 
 [Ask a question](support.md#new)
@@ -15,12 +14,12 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 In the section contents, select the stage where you encountered the problem and find the appropriate solution in the list. If not found, select the last item **Other questions**, fill out the form and wait for a response from the support team.
 
-
 ## Registration and getting started {#register-and-start}
 
 {% cut "I can't complete registration as an “individual requester”. I'm not getting an SMS code." %}
 
 1. Check the number you entered. You might have mistyped it.
+
 1. Check the number in Yandex ID. It must be set as your main number. If a different number is specified in Yandex ID, an SMS code will be sent to that number.
 
 You can also use the recommendations in [Yandex ID Help]({{ phone-problems_no-code }}). If this doesn't help, contact [support]({{ passport-support }}).
@@ -34,9 +33,13 @@ You can't change the account type from “Requester” to “Toloker”.
 If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
 
 To create a Toloker account:
+
 1. Log out of your requester account.
+
 1. Go to the [Toloka]({{ toloka-index }}) home page.
+
 1. Click **Join**.
+
 1. Follow the system instructions.
 
 {% note info %}
@@ -75,7 +78,6 @@ If you don't have access to the old number, it takes a month to replace it. For 
 
 [Other questions](support.md#help)
 
-
 ## Sandbox {#sandbox}
 
 {% cut "How do I work with the Sandbox?" %}
@@ -95,9 +97,13 @@ Create and run a task. It will appear in the list of tasks for your trusted user
 Make sure that:
 
 1. The [pool](../../glossary.md#pool) is started.
+
 1. The Toloker is added as a trusted user.
+
 1. The trusted user is registered in the sandbox as a Toloker.
+
 1. The trusted user didn't use social networks when registering.
+
 1. Your trusted Toloker matches the [filters](../../glossary.md#filtering) you set.
 
 {% endcut %}
@@ -111,8 +117,11 @@ To test your task, add yourself as a trusted Toloker in the Sandbox. To do this,
 {% cut "What do I do if an error occurs on the server when I try to export a project from the Sandbox?" %}
 
 #### Try exporting the project without pools.
+
 Select an exported project and don't select pools in the window that opens.Click **Export**.
+
 #### If the error persists, refresh the token.
+
 Go to [ Yandex ID]({{ passport-profile }}).Under **Sign in and device history**, click **Log out from all devices**.Request new tokens in the Sandbox and main environment.Update the token in the [Sandbox]({{ sandbox-profile-integration }})**Profile **.
 
 {% endcut %}
@@ -154,12 +163,12 @@ No, you need a separate account for each version of Toloka. To create a task in 
 Possible reasons:
 
 - The Toloker isn't registered in the sandbox. The account you registered in the Toloka production version won't work. Make sure you have specified the correct _Toloker's_ account as a trusted one.
+
 - The Toloker's account is authorized via social networks.[Register]({{ register }}) a new user in Yandex.
 
 {% endcut %}
 
 [Other questions](support.md#feedback_oyr_m5s_hlb)
-
 
 ## Setting up a project {#project}
 
@@ -168,9 +177,13 @@ Possible reasons:
 {% cut "How do I show my instructions to the Toloker inside the task so that they don't need to open or close it?" %}
 
 There are three options:
+
 - Put your instructions inside the task, but make sure that it doesn't clutter the interface.
+
 - Use [a side window]({{ instr-in-form-of-side-window }}) for your instructions so that the Toloker can quickly expand or collapse them.
+
 - [Hide the instructions in an expandable section]({{ hints-questions }}) or add hints for the individual interface elements.
+
 For best results, we recommend that you pre-select the Tolokers that meet your requirements and set up the quality control rules.
 
 {% endcut %}
@@ -201,7 +214,6 @@ If the tags or attributes disappear after you save the instructions (for example
 
 [Other questions](support.md#help)
 
-
 ### Configuring the task interface {#concept_gss_fkp_smb}
 
 {% cut "How do I make an image expand to its maximum size on click?" %}
@@ -213,7 +225,8 @@ To the component that inserts the image, add the parameters: `real-size=true` an
 {% cut "How do I create a shortcut for adding a polygon in "image-annotation"?" %}
 
 To create a shortcut, add the following action to the "onKey" method:
-```
+
+```javascript
 onKey: function(key) {
           var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 
@@ -252,7 +265,8 @@ You can also use the mobile version of the sandbox. Write to support to get acce
 {% cut "How do I use different numbers of response options for different questions?" %}
 
 Use [concatenation](../concepts/t-components/helpers.md#concat), for example:
-```
+
+```html
 {{field type="checkbox" name=(concat "result." @index ) label=(concat "checkbox –
           " @index) size="L"}}
 ```
@@ -283,11 +297,15 @@ You can hide text in an expandable section by using CSS styles, both in the task
 
 {% cut "How do I pass the value of the input variable to the “Button with click validation”?" %}
 
-Specify the name of the input field where you pass the link, without the brackets:{% if locale == "en-com" %}
-```
+Specify the name of the input field where you pass the link, without the brackets:
+
+{% if locale == "en-com" %}
+
+```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
           action=true}}
 ```
+
 {% endif %}
 
 {% endcut %}
@@ -295,11 +313,16 @@ Specify the name of the input field where you pass the link, without the bracket
 {% cut "How can I do it in JS so that if the checkbox is selected, the link is not required, but if the link is inserted, the checkbox is cleared?" %}
 
 1. See how this is implemented in the  template.
-1. To solve the second problem, you can add another validation like this:{% if locale == "en-com" %}
-    ```
+
+1. To solve the second problem, you can add another validation like this:
+
+    {% if locale == "en-com" %}
+
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
+
     {% endif %}
 
 {% endcut %}
@@ -321,7 +344,9 @@ You can use JavaScript to add assignment validation depending on the checkbox. A
 You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
 
 To add libraries:
+
 1. Click the “gear button” in project editing mode.
+
 1. In the field that opens on the left, enter the links and press **Enter**.
 
 {% endcut %}
@@ -335,10 +360,15 @@ The issue is probably in the JS block. Try deleting its content, then test the *
 {% cut "How do I make tasks that have a varying number of response options and different options available?" %}
 
 You can do this using [concatenation](../concepts/t-components/helpers.md#concat).
+
 See the sample projects that can help you build an interface:
+
 - [with checkboxes]({{ project-with-checkboxes }})
+
 - [with a dropdown list]({{ project-with-drop-down-list }})
+
 - [with radio buttons]({{ project-with-radiobutton }})
+
 If you pass an array of values to the input field, use commas to separate the array elements. A response option will be generated for each of them in the interface. Input/output data for the sample projects are provided in the comments at codepen.io.
 
 {% endcut %}
@@ -364,7 +394,8 @@ Add `sources="CAMERA"` to the attributes of the image loading component. This di
 {% cut "How do I run setSolution validation in "OnRender"?" %}
 
 Try to add a condition to check for the second progress bar:
-```
+
+```javascript
 setSolution: function(solution) {
 var secondScale = this.getDOMElement().querySelector('.second-scale');
 
@@ -401,7 +432,8 @@ The “Side-by-side image comparison” template uses a component rather than an
 {% cut "How do I change the task background from the standard white color to a different color?" %}
 
 Use CSS to specify the color for the `.task` or `.task-suite` element. For example, to use a black background:
-```
+
+```css
 .task-suite {
 background-color: #000000;
 }
@@ -409,6 +441,7 @@ background-color: #000000;
 background-color: #000000;
 }
 ```
+
 You can also assign a class to the interface block with the image and set the background for this block only.
 
 {% endcut %}
@@ -420,7 +453,8 @@ You can check the link format using regular expressions. To do this, add the lin
 For example: `var regexp = /^(https://www.myurl.com/).{4,200}$/`.
 
 You can also add a regular expression to the `input` field with the **string** type in the output data. Make the field mandatory. Then add the **Text input field** field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
-```
+
+```html
 {{field type="textarea" name="input" width="270px" rows=5}}
 ```
 
@@ -435,8 +469,10 @@ You can use JavaScript to add assignment validation depending on a checkbox. An 
 {% cut "How do I enter a list of words line-by-line, display an element for each of them, and save the result to the output array?" %}
 
 Pass an array of strings as the input field. For example, as shown in the screenshot: ![](../_images/troubleshooting/array-each-words.png)
+
 In HTML, use a special handlebar to iterate over this field. The code structure will look like this:
-```
+
+```html
 {{#each words}}
 {{field type="radio" name="result" value=this label=this}}
 {{/each}}
@@ -447,8 +483,14 @@ In HTML, use a special handlebar to iterate over this field. The code structure 
 {% cut "How do I use sliders as interface elements for selecting parameter values?" %}
 
 In the HTML code of the template, enter the following:{% if locale == "en-com" %}
+
+```html
+<input type=""range"" list=""rng"" class=""res"">
 ```
-<input type=""range"" list=""rng"" class=""res""> and include the following in onRender in your JS:
+
+and include the following in onRender in your JS:
+
+```javascript
 onRender: function() {
 // Generated DOM element for the task (available via #getDOMElement())
 //Adding auxiliary variables
@@ -465,6 +507,7 @@ return solution;
 
 }
 ```
+
 {% endif %}
 
 {% endcut %}
@@ -492,8 +535,11 @@ For more information about using the component, see the [Requester's guide](../c
 {% cut "Can I use my own JS to build an interface in Toloka?" %}
 
 You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
+
 - Click the “gear button” to open the settings.
+
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
+
 See the [Requester's guide](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
 
 {% endcut %}
@@ -517,7 +563,8 @@ However, in the context of TolokaHandlebars editability, there are no difference
 To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
 
 In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
-```
+
+```css
 .task {
   max-width: 800px;
 }
@@ -532,12 +579,17 @@ pre {
 {% cut "What should the Toloker do if there is no selectable object in the image in an area selection task?" %}
 
 There are four options:
+
 - [ Decompose the task](../concepts/solution-architecture.md): First select images with the items you need, then select areas in them.
+
 - Select an arbitrary area in the image. For example, put a square in the upper-right corner.
+
     Mention this in your instructions for reviewers.
 
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
+
 - Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
+
     For control purposes, add information about the value of this checkbox to the task interface.
 
 [Other questions](support.md#help)
@@ -574,8 +626,7 @@ You can't use a range as a fixed value.
 
 [Other questions](support.md#help)
 
-
-## Pool settings {#pool-settings}
+## Setting up a pool {#pool-settings}
 
 ### Filters {#filters}
 
@@ -622,7 +673,9 @@ Tasks from an open pool are available to every user that matches your pool [filt
 {% cut "The Tolokers completed training for the first pool and got the skill. A week later, we cloned the pool, but all the Tolokers lost their skill. Which parameter affects skill expiration? Do all the Tolokers need to complete the training again?" %}
 
 The validity period of the training skills is controlled by the **Retry after** parameter. The skill is deleted after a period specified in days in the **Retry after** field, if the Toloker:
+
 - Has a skill value lower than the one specified in the **Level required** field.
+
 - Didn't complete any tasks linked to training during this period.
 
 Your users will need to be trained again.
@@ -692,8 +745,11 @@ Requesters can't see the full details about specific Tolokers. So you can't see 
 {% cut "How do I automatically assign skills based on user responses to my questions?" %}
 
 You can do that using the [Control tasks](../concepts/goldenset.md) rule.
+
 1. Upload the task file using **Smart mixing**.
+
 1. Specify `student` as the correct answer to the question. Don't take other questions into account (leave the fields empty or unselected).
+
 1. Add the [Control tasks](../concepts/goldenset.md) rule to the pool: `if the percentage of correct control answers = 100, then set the skill value Student = 1`.
 
 {% endcut %}
@@ -705,7 +761,6 @@ You can do that using the [Control tasks](../concepts/goldenset.md) rule.
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Quality control {#quality-control}
 
@@ -736,6 +791,7 @@ Each control task is shown to the Toloker only once. If you use smart mixing, yo
 There shouldn't be too few pages available. Otherwise:
 
 - You won't be able to correctly evaluate the quality of the Toloker's responses.
+
 - The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
 
 {% cut "Example" %}
@@ -751,7 +807,6 @@ There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suit
 #### A small pool with 10% control tasks (good)
 
 There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
-
 
 {% endcut %}
 
@@ -778,7 +833,9 @@ To filter out Tolokers, use the [Control tasks](../concepts/control.md) quality 
 To make new task suites available to all users, including those who have already completed tasks in this pool:
 
 1. Stop the pool.
-1. [Upload the TSV file](../concepts/task_upload.md) with new control tasks.
+
+1. [Upload the file](../concepts/task_upload.md) with new control tasks.
+
 1. Start the pool.
 
 For open pools, we don't recommend creating control tasks from other types of tasks that have already been completed. This is because users who have already given their responses to them won't be able to re-complete such tasks as control tasks. In order for these users to continue completing task suites, the control tasks in the pool must be new.
@@ -880,12 +937,18 @@ If the Toloker already got paid for the tasks, the money can't be refunded to yo
 {% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
 
 The frequency of issuing [captchas](../concepts/captcha.md) is set up in the pool.
-#### No
-Don't show captchas.
-#### Low
-Show a captcha after every 20 assignments.
-#### Average/High
-Show a captcha after every 10 assignments.
+
+No
+
+: Don't show captchas.
+
+Low
+
+: Show a captcha after every 20 assignments.
+
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -916,12 +979,18 @@ In the exam pool, you can create a skill reflecting the exam result and granting
 [Captcha](../concepts/captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
 
 The frequency of issuing captchas is configured in the pool.
-#### No
-Don't show captchas.
-#### Low
-Show a captcha after every 20 assignments.
-#### Average/High
-Show a captcha after every 10 assignments.
+
+No
+
+: Don't show captchas.
+
+Low
+
+: Show a captcha after every 20 assignments.
+
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -1018,9 +1087,11 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
+
 - You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
+
 - Too many users are banned. Ease the quality control rules.
 
 {% endcut %}
@@ -1028,14 +1099,16 @@ Possible reasons:
 {% cut "How can I speed up the pool completion?" %}
 
 - To motivate Tolokers, assign a [public skill](../concepts/nav-create.md#public) and use [dynamic pricing](../concepts/dynamic-pricing.md).
+
 - Try to [increase the project rating](../concepts/project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
+
 - Adjust the [quality-speed ratio](../concepts/adjust.md).
+
 - Set a higher [priority](../concepts/pool_poolparams.md#priority) for the pool among other project pools.
 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Overlap {#overlap}
 
@@ -1087,10 +1160,9 @@ The progress bar shows the number of task suites including the overlap. If the o
 
 [Other questions](support.md#help)
 
-
 ## Adding tasks to a pool {#add-task-to-pool}
 
-### TSV file {#concept_iy1_3kh_5mb}
+### Uploading tasks {#concept_iy1_3kh_5mb}
 
 {% cut "How many tasks should be in a suite?" %}
 
@@ -1110,9 +1182,9 @@ You can specify the number of tasks on the page when you upload your tasks to th
 
 {% endcut %}
 
-{% cut "Why does the preview display all the photos from the TSV file at once?" %}
+{% cut "Why does the preview display all the photos from the file with tasks at once?" %}
 
-You must use a separate row for each task in your TSV file. For more information, see [here](../concepts/pool_csv.md).
+You must use a separate row for each task in your file with tasks. For more information, see [here](../concepts/pool_csv.md).
 
 When you create a pool, the pool will have settings for the number of tasks per suite.
 
@@ -1128,7 +1200,7 @@ Escape commas with a backslash (`\`).
 
 Use the button **Upload review results** to upload your file. You can see the format [here](../concepts/accept.md).
 
-Assignments are reviewed in a TSV file.
+Assignments are reviewed in a file with tasks.
 
 {% endcut %}
 
@@ -1166,7 +1238,7 @@ If you are creating control tasks, fill out the `GOLDEN` columns with the correc
 
 If you are creating a training task, you also need to fill in the `HINT:text` column. For the general tasks you don't need any columns other than `INPUT`, so feel free to delete them.
 
-The file format must be TSV, and the encoding must be UTF-8.
+The file format must be TSV, XLSX or JSON, and the encoding must be UTF-8.
 
 For more information about creating the file, see the [Guide](../concepts/pool_csv.md). If there are errors during the upload, look up the error description on this [page](../concepts/task_upload.md).
 
@@ -1177,7 +1249,9 @@ For more information about creating the file, see the [Guide](../concepts/pool_c
 The error might occur if the expected input type is URL, but a string is received.
 
 There may be two reasons:
+
 - The input field has the "link" type.
+
 - The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
 
 {% endcut %}
@@ -1196,43 +1270,43 @@ The third thing to consider is quality control and assignment review. If you use
 
 {% cut "I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?" %}
 
-Toloka will split the links to images in the uploaded file into task suites depending on the method you specified when uploading the TSV file. For more information about the three upload methods, see the [Guide](../concepts/distribute-tasks-by-pages.md).
+Toloka will split the links to images in the uploaded file into task suites depending on the method you specified when uploading the file. For more information, see the [Guide](../concepts/distribute-tasks-by-pages.md).
 
 {% endcut %}
 
-{% cut "Are TSV files sensitive to the order of the INPUT field and GOLDEN fields?" %}
+{% cut "Are files with tasks sensitive to the order of the INPUT field and GOLDEN fields?" %}
 
-TSV files are insensitive to the order of fields. Use your preferred order of fields.
+The files with tasks are insensitive to the order of fields. Use your preferred order of fields.
 
 {% endcut %}
 
-{% cut "How do I add multiple "known_solutions" to a TSV file with a training task?" %}
+{% cut "How do I add multiple "known_solutions" to a file with a training task?" %}
 
 You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API]({{ toloka-api-tasks }}) for that.
 
 {% endcut %}
 
-{% cut "Where is my TSV file added if I upload it to the running pool?" %}
+{% cut "Where is my file added if I upload it to the running pool?" %}
 
 If you have the **Keep task order** option enabled, labeling will start after the previously uploaded tasks are taken by users. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
 
 {% endcut %}
 
-{% cut "How do I write an array to an input TSV file?" %}
+{% cut "How do I write an array to an input file?" %}
 
-The array of strings in the input data must be comma-separated. For example: `INPUT:typestext1, text2, text3, text4`
+The array of strings in the input data must be comma-separated. For example: `INPUT:types   text1, text2, text3, text4`
 
 {% endcut %}
 
-{% cut "How do I properly structure my TSV file used for data upload if there is JSON data among the input?" %}
+{% cut "How do I properly structure my file used for data upload if there is JSON data among the input?" %}
 
 All the values are written to the same column. Make sure to escape quotes. For more information about escaping quotes in JSON format, see the [Guide](../concepts/pool_csv.md#json).
 
 {% endcut %}
 
-{% cut "If there are no headers for some input columns in the TSV file, are they going to be skipped during import? Will they be skipped if they have headers without the "INPUT:.." prefix?" %}
+{% cut "If there are no headers for some input columns in the file with tasks, are they going to be skipped during import? Will they be skipped if they have headers without the "INPUT:.." prefix?" %}
 
-No. If you try to upload a file with missing headers to the pool, the system issues an upload error. All the INPUT fields required in the specification must be present in the TSV file with tasks. There must be no extra fields or columns.
+No. If you try to upload a file with missing headers to the pool, the system issues an upload error. All the INPUT fields required in the specification must be present in the file with tasks. There must be no extra fields or columns.
 
 If you don't want to show some data to Tolokers, but you still need this data in the file, create the optional hidden input fields for such data in the project.
 
@@ -1245,7 +1319,9 @@ Text in the GOLDEN field must match the control text exactly.
 Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
 
 Check the links that you use. There are several ways to unify links:
+
 - Add requirements for the link format in your instructions and hints in your training pool.
+
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
 {% endcut %}
@@ -1258,7 +1334,7 @@ The settings specified during the first file upload are applied to all the files
 
 {% endcut %}
 
-{% cut "How do I properly structure my TSV file used for data upload if there is JSON data among the input?" %}
+{% cut "How do I properly structure my file used for data upload if there is JSON data among the input?" %}
 
 All the values are written to the same column. Make sure to escape quotes.
 
@@ -1289,26 +1365,57 @@ To work with a large log conveniently, copy it to the text editor.
 
 If the [column headings](../concepts/pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
 
-#### Processing errors table
+#### Processing errors tables
+
+```json
+"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
+```
 
 #|
-||**Overview** | **How to fix**||
-||``` "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)" ```| ||
-||**Extra tabs.**|
-If the TSV file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you will get en error message.
-For example, if 1 column is defined in the input, and two more `\t\t` tabs are added in the TSV file after the link, you get 3 columns, 2 of which are extra. | Remove extra column separators in the above example — both `\t\t` characters.||
-||``` "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```| ||
-||**The number of fields in the header and in the row doesn't match.** | Make sure that:
-- The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](../concepts/pool_csv.md#string)`" "`.||
-||``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```| ||
-||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
-||``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```| ||
-||**Invalid data in a “link” (“url”) field.** | Make sure that:
-- Links start with the `http://`, `https://` or `www` prefix.||
-||``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```| ||
-||**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](../concepts/pool_csv.md#string).||
+||**Overview**|**How to fix**||
+||**Extra tabs.**
+
+If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
+
+For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
 |#
+
+```json
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
+```
+
+#|
+||**Overview**|**How to fix**||
+||**The number of fields in the header and in the row doesn't match.** | Make sure that:
+
+- The number of tabs in the file structure is correct.
+- String values with tab characters are enclosed in [quotation marks](../concepts/pool_csv.md#string) `" "`.
+|#
+
+```json
+"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
+```
+
+#|
+||**Overview**|**How to fix**||
+||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
+|#
+
+```json
+"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
+```
+
+#|
+||**Overview**|**How to fix**||
+||**Invalid data in a “link” (“url”) field.** | Make sure that:
+
+- Links start with the `http://`, `https://` or `www` prefix.||
+|#
+
+```json
+"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
+```
 
 {% endcut %}
 
@@ -1317,7 +1424,9 @@ For example, if 1 column is defined in the input, and two more `\t\t` tabs are a
 The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
+
 - If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
@@ -1331,7 +1440,6 @@ If the text is in the HTML block of the task template, then clone the project. T
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Training-exam-retry {#concept_i2g_kkh_5mb}
 
@@ -1360,8 +1468,11 @@ Unlike your main pool, you already know correct responses for every task. You ca
 Validity period of the training skills is governed by the **Retry after** parameter.
 
 The skill is deleted in the specified number of days if the Toloker:
+
 - Has a skill value lower than in the **Level required** field.
+
 - Didn't complete any tasks linked to the training during this period.
+
 If their skill expires, your users need to complete the training again.
 
 {% endcut %}
@@ -1375,7 +1486,9 @@ In the task file, leave empty control values for the optional output data.
 {% cut "How do I know when a particular Toloker got the skill?" %}
 
 1. Go to the Toloker card.
+
 1. Click the **Profile** tab.
+
 1. Find the required skill in the list and download the history of its changes.
 
 {% endcut %}
@@ -1393,7 +1506,9 @@ Text in the GOLDEN field must match the control text exactly.
 Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
 
 Check the links that you use. There are several ways to unify links:
+
 - Add requirements for the link format in your instructions and hints in your training pool.
+
 - Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
 {% endcut %}
@@ -1522,13 +1637,14 @@ Another option for selecting Tolokers for a project of this type is assignment r
 {% cut "How do I create a file with training tasks?" %}
 
 For training tasks, you need to:
+
 - Select the correct responses in the `GOLDEN:result` column.
+
 - Fill in the `HINT:text` column. It stores a hint to be shown if the Toloker selects an incorrect response option.
 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Changing a running pool {#concept_olz_kkh_5mb}
 
@@ -1551,12 +1667,12 @@ If you uploaded them using a different method, clone your pool and upload the ne
 After uploading, all tasks are put into one list and can't be deleted separately.
 
 - **If the pool hasn't started yet**, delete all tasks. To do this, click **Delete** in the **Pool tasks** block. Then upload one file to the pool.
+
 - **If the pool already started**, delete tasks [one-by-one in markup mode](../concepts/task_markup.md#delete-task).
 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Working with results {#result-questions}
 
@@ -1606,7 +1722,6 @@ Yes. To set up notifications in your account, go to [Learn more about setting up
 
 [Other questions](support.md#help)
 
-
 ### Processing the results file {#results_1}
 
 {% cut "Why do I get blank spaces inside my TSV file?" %}
@@ -1622,7 +1737,6 @@ If a Toloker typed some text and then deleted it, the result is `null`, otherwis
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Assignment review {#results_2}
 
@@ -1667,8 +1781,11 @@ You can't accept the correct answers and pay for this part ($0.08). Response pag
 {% cut "How can I notify the Toloker of changes in the instructions?" %}
 
 Add the notification to the project description (for example: “Attention! The instructions changed”) and send a message to all the people who completed your tasks. To do this:
+
 - Assign them a hidden skill, or use an existing [skill](../concepts/nav-assign.md) linked to the pool.
+
 - Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
+
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 
 {% endcut %}
@@ -1708,7 +1825,6 @@ If you don't understand what the problem is, run a mini-survey and ask the Tolok
 
 [Other questions](support.md#help)
 
-
 ### Statistics {#results_3}
 
 {% cut "What is the formula for calculating the percentage of pool completion?" %}
@@ -1736,7 +1852,6 @@ When you download the results file, select the **Start time** and **Submit time*
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Archiving pools and projects {#pool-n-project-archive}
 
@@ -1773,7 +1888,6 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Payments {#finance}
 
@@ -1863,17 +1977,15 @@ Track your money debited for rewards in **Profile** → **Spent** tab.
 
 {% cut "Can there be tasks with different prices in the pool?" %}
 
-No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](../concepts/dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](../concepts/bonus.md) to good Tolokers. 
+No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](../concepts/dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](../concepts/bonus.md) to good Tolokers.
 
 {% endcut %}
 
 [Other questions](support.md#new)
 
-
 ### Refund {#concept-3}
 
 [Refund money transferred to the Toloka account](support.md#feedback_khw_wc3_qjb)
-
 
 ## Tolokers {#annotators}
 
@@ -1911,7 +2023,6 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 [Other questions](support.md#help)
 
-
 ### Rewards {#bonuses}
 
 {% cut "How do I reward Tolokers in addition to the basic task price?" %}
@@ -1927,7 +2038,6 @@ To view your expenses that involve rewards, go to your [profile]({{ profile }}) 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Cheaters {#cheaters}
 
@@ -1989,15 +2099,17 @@ Unfortunately, this Toloker has violated the Toloker agreement and will no longe
 
 {% endcut %}
 
-## Questions about templates {#question-about-templates}
+[Other questions](support.md#feedback_oyr_m5s_hlb)
 
-### Selecting a template {#concept_tfh_pgd_rmb}
+## Questions about presets {#question-about-templates}
+
+### Selecting a preset {#concept_tfh_pgd_rmb}
 
 {% cut "How do I classify texts according to their meanings?" %}
 
 You can structure your text classification task using the source text and radio buttons. It can also be text and checkboxes if you use multiple subjects.
 
-We recommend that you base it on the “Text classification” template.
+We recommend that you base it on the **Sentiment analysis & content moderation** preset.
 
 You can also create your own interface. All the available tools are described in the [Requester's guide](../concepts/spec.md).
 
@@ -2005,19 +2117,19 @@ You can also create your own interface. All the available tools are described in
 
 {% cut "How do I create a task using both input and output text fields?" %}
 
-You can see how it's implemented in the  template where a string-type output field is used. In the “Text recognition from an image” template, you can view how to describe text input fields. Please note that if you later want to use the Dawid-Skene aggregation method, you must specify allowed values.
+You can see how it's implemented in the [Transcribing audio recordings](../tutorials/transcript-audio.md) preset where a string-type output field is used. In the **Text recognition from an image (OCR)** preset, you can view how to describe text input fields. Please note that if you later want to use the Dawid-Skene aggregation method, you must specify allowed values.
 
 {% endcut %}
 
-{% cut "What template do I select so that Tolokers label only irrelevant products in the output?" %}
+{% cut "What preset do I select so that Tolokers label only irrelevant products in the output?" %}
 
-You can create such an assignment based on the classification template. Show a product image and ask the question: "Does the product match the query?" Add two radio buttons for responses: “Yes” and “No”.
+You can create such an assignment based on the classification preset. Show a product image and ask the question: "Does the product match the query?" Add two radio buttons for responses: “Yes” and “No”.
 
 {% endcut %}
 
 {% cut "How do I label elements on web pages?" %}
 
-Generate the screenshots of pages and manually label areas using the “Object selection in an image” template.
+Generate the screenshots of pages and manually label areas using the “Object selection in an image” preset.
 
 {% endcut %}
 
@@ -2027,25 +2139,25 @@ If your task contains many objects of different types, you should break it down.
 
 The simpler the task, the cheaper it is and the better the quality of the final result. Set the cost of labeling a single class of objects in photos at about $0.01.
 
-[Use](../tutorials/selection.md) the **Object selection in an image** template. You can open this template in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](../concepts/t-components/image-annotation.md#annotation) (**Dropdown list** tab).
+[Use](../tutorials/selection.md) the **Object selection in an image** preset. You can open this preset in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](../concepts/t-components/image-annotation.md#annotation) (**Dropdown list** tab).
 
 {% endcut %}
 
 {% cut "How do I add response validation depending on a checkbox?" %}
 
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” template.
+You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” preset.
 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Area selection {#concept_bdk_qgd_rmb}
 
 {% cut "How do I create a shortcut for adding a polygon in "image-annotation"?" %}
 
 To create a shortcut, add the following action to the "onKey" method:
-```
+
+```javascript
 onKey: function(key) {
     var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 
@@ -2068,35 +2180,49 @@ You can also use the [library](https://github.com/vmit/image-annotation) to cust
 {% cut "How do I create a task for selecting objects in images?" %}
 
 We recommend that you break down your object selection project into three projects in Toloka:
+
 1. Sorting images containing an object.
-    1. [Create a task](../tutorials/image-classification.md) using the “Image classification” template.
+
+    1. [Create a task](../tutorials/image-classification.md) using the “Image classification” preset.
+
     1. Sort the images containing the object you are looking for.
+
     1. Show the image to the Toloker and ask if the object is in the image. Response options: Yes/No.
 
 1. Selecting objects in images.
+
     1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+
     1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
 
 1. Reviewing object selection assignments.
+
     1. Create a task using the object selection template.
+
     1. Hide the editor and ask whether the object is selected correctly. Response options: Yes/No.
+
     1. In the input data, pass the images and coordinates of the labeled objects from the previous task.
+
     Now you can run the resulting pool with an overlap of 3-5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
+
     To prevent the Tolokers who worked on the second project from doing the review, assign a skill to them. Use this skill as a filter in the pools of the third project.
 
 {% endcut %}
 
 {% cut "How do I add assignment validation depending on a checkbox?" %}
 
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” template.
+You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” preset.
 
 {% endcut %}
 
 {% cut "I have a task for area selection in an image. What should the Toloker do if there is no selectable object in the image?" %}
 
 Main options:
+
 - Select an arbitrary area in the image (for example, put a square in the upper-right corner). In this case, the project instructions for reviewers should also reflect this.
+
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the object is truly missing, the task is deleted from the pool by resetting the overlap.
+
 - Add an additional “No object” checkbox to the interface. Make sure that your JS checks that either the object is selected or the checkbox is enabled. In this case, add information about the checkbox value in the review task interface.
 
 {% endcut %}
@@ -2105,9 +2231,9 @@ Main options:
 
 In the case of crowdsourcing, it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
 
-​Base your task on the “Object selection in an image” template. See the step-by-step guide for creating this type of project on [this page](../tutorials/selection.md).
+​Base your task on the “Object selection in an image” preset. See the step-by-step guide for creating this type of project on [this page](../tutorials/selection.md).
 
-The editor used in the template lets you add a drop-down list for labeling the selected object. See how to do this in the editor description ([Dropdown list](../concepts/t-components/image-annotation.md) tab).
+The editor used in the preset lets you add a drop-down list for labeling the selected object. See how to do this in the editor description ([Dropdown list](../concepts/t-components/image-annotation.md) tab).
 
 {% endcut %}
 
@@ -2123,15 +2249,9 @@ The coordinates are relative to the image.
 
 {% endcut %}
 
-{% cut "How do I use the control tasks in the standard template with an area selection editor?" %}
+{% cut "How do I use control and training tasks in the standard preset with an area selection editor?" %}
 
-In the standard template with an area selection editor, you can't use the control tasks, because in order for the assignment to be accepted by the system as correct, the object selected by the Toloker must exactly match the control object. This is almost impossible. Therefore, you can leave the GOLDEN field empty in the task file or simply delete all the columns except INPUT.
-
-{% endcut %}
-
-{% cut "How do I use control and training tasks in the standard template with an area selection editor?" %}
-
-In the standard template with an area selection editor, you can't use the control tasks, because in order for the assignment to be accepted by the system as correct, the object selected by the Toloker must exactly match the control object. This is almost impossible. Therefore, you can leave the GOLDEN field empty in the task file or simply delete all the columns except INPUT.
+In the standard preset with an area selection editor, you can't use the control tasks. In order for the assignment to be accepted by the system as correct, the object selected by the Toloker must exactly match the control object. This is almost impossible. Therefore, you can leave the `GOLDEN` field empty in the task file or simply delete all the columns except `INPUT`.
 
 You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
 
@@ -2142,7 +2262,6 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ### Field task {#concept_k1m_rgd_rmb}
 
@@ -2158,14 +2277,16 @@ In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Go
 
 [Other questions](support.md#help)
 
-
 ### Side-by-side image comparison {#side-by-side}
 
 {% cut "How do I create a task with a selection out of three image options with the paired image comparison?" %}
 
-1. Use the “Side-by-side image comparison” template.
-1. In the TSV file, specify the links to the compared images.
+1. Use the “Side-by-side image comparison” preset.
+
+1. In the file, specify the links to the compared images.
+
 1. In the file, create the tasks where all the images will be compared in pairs:
+
     - Image 1 and Image 2
 
     - Image 1 and Image 3
@@ -2180,18 +2301,94 @@ You can also edit the project so that the Toloker sees 3 images at once and sele
 
 [Other questions](support.md#help)
 
+## Survey {#interview}
+
+{% cut "How do I create a simple survey with no options, where the Toloker answers an open-ended question?" %}
+
+1. Create a project from an empty preset.
+
+1. Write your question in the HTML block.
+
+1. If you need an [extensive](../concepts/t-components/text.md) response, add the required number of text entry components.
+
+1. If you need a [short](../concepts/t-components/string.md) response, add the required number of string entry components.
+
+1. Come up with a name for each of the components and create a matching number of string-type output fields with the same names. They will be used to save responses.
+
+1. Make all the output fields mandatory.
+
+1. Make the input field auxiliary. It will only be used to create a file with tasks.
+
+1. Come up with a name for the input field and set the string type for it (see the step-by-step [guide on creating a survey](../tutorials/questionnaire-toloka.md)).
+
+{% endcut %}
+
+{% cut "How do I create a survey with a single question based on the survey preset?" %}
+
+The survey includes an auxiliary input field. You can use it to pass any information, and it won't be visible to Tolokers.
+
+Upload one task and use the overlap parameter to enter the number of people you want to survey.
+
+{% endcut %}
+
+[Other questions](support.md#help)
+
+### Field task {#concept_k1m_rgd_rmb}
+
+{% cut "Can I limit the source of the photo to camera-only in a field task so that the Toloker can't upload a photo from anywhere else?" %}
+
+To open the camera instead of the gallery when the Toloker taps the image upload button, in the **Image upload button **component specify `camera=true`.
+
+In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Google photo (Android). To limit the capacity of adding online images, specify in the component `requiredCoordinates=true`. In this case, the system won't let the Toloker add images without geotags.
+
+[Learn more about setting up the image upload component](../concepts/t-components/upload-picture.md).
+
+{% endcut %}
+
+[Other questions](support.md#help)
+
+### Side-by-side image comparison {#side-by-side}
+
+{% cut "How do I create a task with a selection out of three image options with the paired image comparison?" %}
+
+1. Use the “Side-by-side image comparison” template.
+
+1. In the file, specify the links to the compared images.
+
+1. In the file, create the tasks where all the images will be compared in pairs:
+
+    - Image 1 and Image 2
+
+    - Image 1 and Image 3
+
+    - Image 2 and Image 3
+
+1. Process the results.
+
+You can also edit the project so that the Toloker sees 3 images at once and selects one of them.
+
+{% endcut %}
+
+[Other questions](support.md#help)
 
 ### Survey {#interview}
 
 {% cut "How do I create a simple survey with no options, where the Toloker answers an open-ended question?" %}
 
 1. Create a project from an empty template.
+
 1. Write your question in the HTML block.
+
 1. If you need an [extensive](../concepts/t-components/text.md) response, add the required number of text entry components.
+
 1. If you need a [short](../concepts/t-components/string.md) response, add the required number of string entry components.
+
 1. Come up with a name for each of the components and create a matching number of string-type output fields with the same names. They will be used to save responses.
+
 1. Make all the output fields mandatory.
-1. Make the input field auxiliary. It will only be used to create a TSV file with tasks.
+
+1. Make the input field auxiliary. It will only be used to create a file with tasks.
+
 1. Come up with a name for the input field and set the string type for it (see the step-by-step [guide on creating a survey](../tutorials/questionnaire-toloka.md)).
 
 {% endcut %}
@@ -2205,3 +2402,5 @@ Upload one task and use the overlap parameter to enter the number of people you 
 {% endcut %}
 
 [Other questions](support.md#help)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

@@ -6,17 +6,18 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
-## Instructions {#concept_llj_dkp_smb}
-
-### Instructions {#instruction}
+## Instructions {#instruction}
 
 {% cut "How do I show my instructions to the Toloker inside the task so that they don't need to open or close it?" %}
 
 There are three options:
+
 - Put your instructions inside the task, but make sure that it doesn't clutter the interface.
+
 - Use [a side window]({{ instr-in-form-of-side-window }}) for your instructions so that the Toloker can quickly expand or collapse them.
+
 - [Hide the instructions in an expandable section]({{ hints-questions }}) or add hints for the individual interface elements.
+
 For best results, we recommend that you pre-select the Tolokers that meet your requirements and set up the quality control rules.
 
 {% endcut %}
@@ -47,7 +48,6 @@ If the tags or attributes disappear after you save the instructions (for example
 
 [Other questions](support.md#help)
 
-
 ## Configuring the task interface {#concept_gss_fkp_smb}
 
 {% cut "How do I make an image expand to its maximum size on click?" %}
@@ -59,7 +59,8 @@ To the component that inserts the image, add the parameters: `real-size=true` an
 {% cut "How do I create a shortcut for adding a polygon in "image-annotation"?" %}
 
 To create a shortcut, add the following action to the "onKey" method:
-```
+
+```javascript
 onKey: function(key) {
           var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
 
@@ -98,7 +99,8 @@ You can also use the mobile version of the sandbox. Write to support to get acce
 {% cut "How do I use different numbers of response options for different questions?" %}
 
 Use [concatenation](../concepts/t-components/helpers.md#concat), for example:
-```
+
+```html
 {{field type="checkbox" name=(concat "result." @index ) label=(concat "checkbox –
           " @index) size="L"}}
 ```
@@ -129,11 +131,15 @@ You can hide text in an expandable section by using CSS styles, both in the task
 
 {% cut "How do I pass the value of the input variable to the “Button with click validation”?" %}
 
-Specify the name of the input field where you pass the link, without the brackets:{% if locale == "en-com" %}
-```
+Specify the name of the input field where you pass the link, without the brackets:
+
+{% if locale == "en-com" %}
+
+```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
           action=true}}
 ```
+
 {% endif %}
 
 {% endcut %}
@@ -141,11 +147,16 @@ Specify the name of the input field where you pass the link, without the bracket
 {% cut "How can I do it in JS so that if the checkbox is selected, the link is not required, but if the link is inserted, the checkbox is cleared?" %}
 
 1. See how this is implemented in the  template.
-1. To solve the second problem, you can add another validation like this:{% if locale == "en-com" %}
-    ```
+
+1. To solve the second problem, you can add another validation like this:
+
+    {% if locale == "en-com" %}
+
+    ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
+
     {% endif %}
 
 {% endcut %}
@@ -167,7 +178,9 @@ You can use JavaScript to add assignment validation depending on the checkbox. A
 You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
 
 To add libraries:
+
 1. Click the “gear button” in project editing mode.
+
 1. In the field that opens on the left, enter the links and press **Enter**.
 
 {% endcut %}
@@ -181,10 +194,15 @@ The issue is probably in the JS block. Try deleting its content, then test the *
 {% cut "How do I make tasks that have a varying number of response options and different options available?" %}
 
 You can do this using [concatenation](../concepts/t-components/helpers.md#concat).
+
 See the sample projects that can help you build an interface:
+
 - [with checkboxes]({{ project-with-checkboxes }})
+
 - [with a dropdown list]({{ project-with-drop-down-list }})
+
 - [with radio buttons]({{ project-with-radiobutton }})
+
 If you pass an array of values to the input field, use commas to separate the array elements. A response option will be generated for each of them in the interface. Input/output data for the sample projects are provided in the comments at codepen.io.
 
 {% endcut %}
@@ -210,7 +228,8 @@ Add `sources="CAMERA"` to the attributes of the image loading component. This di
 {% cut "How do I run setSolution validation in "OnRender"?" %}
 
 Try to add a condition to check for the second progress bar:
-```
+
+```javascript
 setSolution: function(solution) {
 var secondScale = this.getDOMElement().querySelector('.second-scale');
 
@@ -247,7 +266,8 @@ The “Side-by-side image comparison” template uses a component rather than an
 {% cut "How do I change the task background from the standard white color to a different color?" %}
 
 Use CSS to specify the color for the `.task` or `.task-suite` element. For example, to use a black background:
-```
+
+```css
 .task-suite {
 background-color: #000000;
 }
@@ -255,6 +275,7 @@ background-color: #000000;
 background-color: #000000;
 }
 ```
+
 You can also assign a class to the interface block with the image and set the background for this block only.
 
 {% endcut %}
@@ -266,7 +287,8 @@ You can check the link format using regular expressions. To do this, add the lin
 For example: `var regexp = /^(https://www.myurl.com/).{4,200}$/`.
 
 You can also add a regular expression to the `input` field with the **string** type in the output data. Make the field mandatory. Then add the **Text input field** field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
-```
+
+```html
 {{field type="textarea" name="input" width="270px" rows=5}}
 ```
 
@@ -281,8 +303,10 @@ You can use JavaScript to add assignment validation depending on a checkbox. An 
 {% cut "How do I enter a list of words line-by-line, display an element for each of them, and save the result to the output array?" %}
 
 Pass an array of strings as the input field. For example, as shown in the screenshot: ![](../_images/troubleshooting/array-each-words.png)
+
 In HTML, use a special handlebar to iterate over this field. The code structure will look like this:
-```
+
+```html
 {{#each words}}
 {{field type="radio" name="result" value=this label=this}}
 {{/each}}
@@ -293,8 +317,14 @@ In HTML, use a special handlebar to iterate over this field. The code structure 
 {% cut "How do I use sliders as interface elements for selecting parameter values?" %}
 
 In the HTML code of the template, enter the following:{% if locale == "en-com" %}
+
+```html
+<input type=""range"" list=""rng"" class=""res"">
 ```
-<input type=""range"" list=""rng"" class=""res""> and include the following in onRender in your JS:
+
+and include the following in onRender in your JS:
+
+```javascript
 onRender: function() {
 // Generated DOM element for the task (available via #getDOMElement())
 //Adding auxiliary variables
@@ -311,6 +341,7 @@ return solution;
 
 }
 ```
+
 {% endif %}
 
 {% endcut %}
@@ -338,8 +369,11 @@ For more information about using the component, see the [Requester's guide](../c
 {% cut "Can I use my own JS to build an interface in Toloka?" %}
 
 You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
+
 - Click the “gear button” to open the settings.
+
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
+
 See the [Requester's guide](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
 
 {% endcut %}
@@ -363,7 +397,8 @@ However, in the context of TolokaHandlebars editability, there are no difference
 To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
 
 In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
-```
+
+```css
 .task {
   max-width: 800px;
 }
@@ -378,20 +413,22 @@ pre {
 {% cut "What should the Toloker do if there is no selectable object in the image in an area selection task?" %}
 
 There are four options:
+
 - [ Decompose the task](../concepts/solution-architecture.md): First select images with the items you need, then select areas in them.
+
 - Select an arbitrary area in the image. For example, put a square in the upper-right corner.
+
     Mention this in your instructions for reviewers.
 
 - Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
+
 - Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
+
     For control purposes, add information about the value of this checkbox to the task interface.
 
 [Other questions](support.md#help)
 
 {% endcut %}
-
-[Other questions](support.md#help)
-
 
 ## Input and output data {#concept_cjj_gkp_smb}
 

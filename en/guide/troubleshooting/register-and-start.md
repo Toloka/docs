@@ -6,10 +6,10 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
 {% cut "I can't complete registration as an “individual requester”. I'm not getting an SMS code." %}
 
 1. Check the number you entered. You might have mistyped it.
+
 1. Check the number in Yandex ID. It must be set as your main number. If a different number is specified in Yandex ID, an SMS code will be sent to that number.
 
 You can also use the recommendations in [Yandex ID Help]({{ phone-problems_no-code }}). If this doesn't help, contact [support]({{ passport-support }}).
@@ -23,9 +23,13 @@ You can't change the account type from “Requester” to “Toloker”.
 If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
 
 To create a Toloker account:
+
 1. Log out of your requester account.
+
 1. Go to the [Toloka]({{ toloka-index }}) home page.
+
 1. Click **Join**.
+
 1. Follow the system instructions.
 
 {% note info %}
@@ -61,8 +65,6 @@ If you don't have access to the old number, it takes a month to replace it. For 
 {% endnote %}
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 [Other questions](support.md#help)
 

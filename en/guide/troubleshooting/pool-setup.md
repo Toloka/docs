@@ -6,7 +6,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-
 ## Filters {#filters}
 
 {% cut "Can I select Tolokers from a specific city of residence or is the only option “Region by IP”?" %}
@@ -52,7 +51,9 @@ Tasks from an open pool are available to every user that matches your pool [filt
 {% cut "The Tolokers completed training for the first pool and got the skill. A week later, we cloned the pool, but all the Tolokers lost their skill. Which parameter affects skill expiration? Do all the Tolokers need to complete the training again?" %}
 
 The validity period of the training skills is controlled by the **Retry after** parameter. The skill is deleted after a period specified in days in the **Retry after** field, if the Toloker:
+
 - Has a skill value lower than the one specified in the **Level required** field.
+
 - Didn't complete any tasks linked to training during this period.
 
 Your users will need to be trained again.
@@ -122,8 +123,11 @@ Requesters can't see the full details about specific Tolokers. So you can't see 
 {% cut "How do I automatically assign skills based on user responses to my questions?" %}
 
 You can do that using the [Control tasks](../concepts/goldenset.md) rule.
+
 1. Upload the task file using **Smart mixing**.
+
 1. Specify `student` as the correct answer to the question. Don't take other questions into account (leave the fields empty or unselected).
+
 1. Add the [Control tasks](../concepts/goldenset.md) rule to the pool: `if the percentage of correct control answers = 100, then set the skill value Student = 1`.
 
 {% endcut %}
@@ -135,7 +139,6 @@ You can do that using the [Control tasks](../concepts/goldenset.md) rule.
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Quality control {#quality-control}
 
@@ -166,6 +169,7 @@ Each control task is shown to the Toloker only once. If you use smart mixing, yo
 There shouldn't be too few pages available. Otherwise:
 
 - You won't be able to correctly evaluate the quality of the Toloker's responses.
+
 - The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
 
 {% cut "Example" %}
@@ -181,7 +185,6 @@ There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suit
 #### A small pool with 10% control tasks (good)
 
 There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
-
 
 {% endcut %}
 
@@ -208,7 +211,9 @@ To filter out Tolokers, use the [Control tasks](../concepts/control.md) quality 
 To make new task suites available to all users, including those who have already completed tasks in this pool:
 
 1. Stop the pool.
-1. [Upload the TSV file](../concepts/task_upload.md) with new control tasks.
+
+1. [Upload the file](../concepts/task_upload.md) with new control tasks.
+
 1. Start the pool.
 
 For open pools, we don't recommend creating control tasks from other types of tasks that have already been completed. This is because users who have already given their responses to them won't be able to re-complete such tasks as control tasks. In order for these users to continue completing task suites, the control tasks in the pool must be new.
@@ -310,12 +315,18 @@ If the Toloker already got paid for the tasks, the money can't be refunded to yo
 {% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
 
 The frequency of issuing [captchas](../concepts/captcha.md) is set up in the pool.
-#### No
-Don't show captchas.
-#### Low
-Show a captcha after every 20 assignments.
-#### Average/High
-Show a captcha after every 10 assignments.
+
+No
+
+: Don't show captchas.
+
+Low
+
+: Show a captcha after every 20 assignments.
+
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -346,12 +357,18 @@ In the exam pool, you can create a skill reflecting the exam result and granting
 [Captcha](../concepts/captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
 
 The frequency of issuing captchas is configured in the pool.
-#### No
-Don't show captchas.
-#### Low
-Show a captcha after every 20 assignments.
-#### Average/High
-Show a captcha after every 10 assignments.
+
+No
+
+: Don't show captchas.
+
+Low
+
+: Show a captcha after every 20 assignments.
+
+Average/High
+
+: Show a captcha after every 10 assignments.
 
 {% endcut %}
 
@@ -448,9 +465,11 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 {% cut "Why has the speed of pool completion dropped?" %}
 
 Possible reasons:
+
 - You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
+
 - Too many users are banned. Ease the quality control rules.
 
 {% endcut %}
@@ -458,14 +477,16 @@ Possible reasons:
 {% cut "How can I speed up the pool completion?" %}
 
 - To motivate Tolokers, assign a [public skill](../concepts/nav-create.md#public) and use [dynamic pricing](../concepts/dynamic-pricing.md).
+
 - Try to [increase the project rating](../concepts/project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
+
 - Adjust the [quality-speed ratio](../concepts/adjust.md).
+
 - Set a higher [priority](../concepts/pool_poolparams.md#priority) for the pool among other project pools.
 
 {% endcut %}
 
 [Other questions](support.md#help)
-
 
 ## Overlap {#overlap}
 

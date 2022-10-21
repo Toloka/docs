@@ -15,6 +15,7 @@ Using control tasks, you can track Tolokers' task completion quality: assign ski
 Tolokers' task completion quality may be low in the following cases:
 
 - There are no control tasks in the pool. As a result, dishonest Tolokers and Tolokers with low labeling skill levels may participate in the project.
+
 - Control tasks in the pool are not updated regularly. As a result, Tolokers can guess correct answers, which makes the effectiveness of quality control decrease.
 
 {% endcut %}
@@ -22,6 +23,7 @@ Tolokers' task completion quality may be low in the following cases:
 There are two ways to create control tasks:
 
 - [Automatic markup](#auto-markup) by Toloka experts.
+
 - [Manual markup](task-markup-by-yourself.md), which allows you to create both control tasks and training tasks.
 
 ## How to set up automatic markup {#auto-markup}
@@ -31,7 +33,9 @@ To save time, you can opt for having your control tasks edited by Toloka experts
 You can set up automatic markup if the following conditions are met:
 
 - Markup is only available for [control tasks](../../glossary.md#control-task).
+
 - By default, markup is supported for object classification projects created with the following templates:
+
     - **Image classification**
     - **Hand gesture classification**
     - **Clickbait or not?**
@@ -39,27 +43,37 @@ You can set up automatic markup if the following conditions are met:
     - **Product search relevance**
 
 - For other types of projects, you can request this feature by contacting [support](#toloka-support).
+
 - The pool must contain more than 100 tasks.
+
 - At least one required output field must be set up in the task interface.
+
 - You can get control tasks only once for each project. This does not apply to cases when task markup failed.
+
 - Control task markup performed by Toloka is only available in the interface. You can't access this feature through the API.
 
 ## How does it work? {#how-work}
 
-{% note alarm %}
+{% note alert %}
 
 Don't make changes to the project or pool while tasks are being edited. Markup will continue without these changes taken into account, which may result in discrepancies.
 
 {% endnote %}
 
-
 1. Make sure the pool isn't running.
+
 1. Make sure that the task instructions are correct.
+
 1. Click {% if locale == "en-com" %}**Edit**{% endif %} in the {% if locale == "en-com" %}**Pool tasks**{% endif %} section.
+
 1. Go to the {% if locale == "en-com" %}**General**{% endif %} tab.
+
 1. In the {% if locale == "en-com" %}**We can label control tasks for you**{% endif %} section, click {% if locale == "en-com" %}**Try it for free**{% endif %}.
+
 1. Click {% if locale == "en-com" %}**Order**{% endif %}. Your pool data will be sent for markup to expert Tolokers. For better quality, we use algorithms that select tasks that can be used as control tasks.
+
 1. Wait until the markup is completed. This process usually takes about 6 hours. The estimated time of markup completion is indicated in the **Edit tasks** section.
+
 1. After the markup is completed, the tasks are uploaded back to the pool. In the {% if locale == "en-com" %}**Edit tasks**{% endif %} section on the {% if locale == "en-com" %}**Control tasks**{% endif %} tab, you'll see the following message: “Control tasks are ready”. You can [edit](task-markup-by-yourself.md#task-edit) and [delete](task-markup-by-yourself.md#delete-task) the control tasks you received.
 
 {% note info %}
@@ -68,16 +82,11 @@ If the markup process failed for some reason, contact support. Go to the tab for
 
 {% endnote %}
 
-
-
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}
-  [Top up your account](refill.md)
-  {% endif %}
+- {% if locale == "en-com" %}[Top up your account](refill.md){% endif %}
 - [Start the pool](pool-run-and-stop.md).
-
 
 ## Troubleshooting {#troubleshooting}
 
