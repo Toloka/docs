@@ -124,8 +124,9 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 
 - Learn more about [ways to group tasks in suites](distribute-tasks-by-pages.md).
 
-- If you haven't labeled your [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks in the file, [edit the tasks in the interface](task_markup.md).
+- Check the project settings and tasks with the help of [special labeling mode](self-labeling.md) before you send them to real Tolokers.
 
+- If you haven't labeled your [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks in the file, [edit the tasks in the interface](task_markup.md).
 
 ## Troubleshooting {#troubleshooting}
 
