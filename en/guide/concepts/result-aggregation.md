@@ -1,6 +1,7 @@
 # Aggregation of results
 
 If tasks were issued with an [overlap](../../glossary.md#overlap) of 2 or higher, run aggregation of results. Toloka will process all Tolokers' responses for the task and issue the resulting response and its confidence level.![](../_images/results/aggregation-scheme.svg)
+
 {% note info %}
 
 If you run the [pool](../../glossary.md#pool) with the assignment review, make sure that all responses are [accepted](accept.md).
@@ -22,7 +23,7 @@ To receive notifications and emails when results aggregation is completed, set u
 
 1. Log in to your account.
 
-1. Go to **Profile → Notifications → Pool or aggregation completed**
+1. Go to {% if locale == "en-com" %}**Profile → Notifications → Pool or aggregation completed**{% endif %}
 
 1. Choose the notification method:
 

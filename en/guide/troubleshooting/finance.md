@@ -48,7 +48,7 @@ You specify the top-up amount in USD. On the **Balance**, it's converted into ru
 
 {% endcut %}
 
-{% cut "How do I add money to Toloka?
+{% cut "How do I add money to Toloka?" %}
 
 You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](../concepts/refill.md#step-by-step) with step-by-step instructions.
 
@@ -86,7 +86,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% cut "Where do I find the statistics on the awards I paid?" %}
 
-Track your money debited for rewards in **Profile** → **Spent** tab.
+Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
 
 {% endcut %}
 

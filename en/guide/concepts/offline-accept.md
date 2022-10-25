@@ -2,7 +2,7 @@
 
 Non-automatic acceptance is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
 
-You can find the [Review methods](accept.md#acception) in the  section.
+You can find the [Review methods](accept.md#acception) in the {% if locale == "en-com" %}**Working with results → Reviewing Tolokers' responses**{% endif %} section.
 
 ## How does it work? {#how-it-works}
 

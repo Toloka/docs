@@ -8,7 +8,7 @@ You can use the following options to add funds to your Toloka account:
 
 The payment is completed within 15 minutes.
 
-If you chose **Profile type → Legal entity** when [registering](access.md) in Toloka, you must use a corporate bank card.
+If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endif %} when [registering](access.md) in Toloka, you must use a corporate bank card.
 
 {% cut "List of countries where bank card transfers are available" %}
 
@@ -191,13 +191,13 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
       1. Click the {% if locale == "en-com" %}**Create a billing invoice**{% endif %} button.
 
-          If you chose **Payment method → Bank deposit in US dollars for non-resident individuals (Switzerland)**, you will receive an invoice with payment details.
+          If you chose {% if locale == "en-com" %}**Payment method → Bank deposit in US dollars for non-resident individuals (Switzerland)**{% endif %}, you will receive an invoice with payment details.
 
       1. Click the {% if locale == "en-com" %}**Pay**{% endif %} button.
 
-          If you chose **Payment method → PayPal**, you will be redirected to the PayPal site for payment.
+          If you chose {% if locale == "en-com" %}**Payment method → PayPal**{% endif %}, you will be redirected to the PayPal site for payment.
 
-          If you chose **Payment method → Banking card in dollars – non residents Switzerland) – US dollars**, enter your bank card information and complete the payment. The money will be converted at your bank's rate if the card currency is not dollars.
+          If you chose {% if locale == "en-com" %}**Payment method → Banking card in dollars – non residents Switzerland) – US dollars**{% endif %}, enter your bank card information and complete the payment. The money will be converted at your bank's rate if the card currency is not dollars.
 
           {% note info %}
 

@@ -57,10 +57,10 @@ items:
         items:
           - name: Audio transcription
             href: guide/tutorials/transcript-audio.md
-          - name: Voice recording
-            href: guide/tutorials/record-audio.md
           - name: Audio classification
             href: guide/tutorials/audio-classification.md
+          - name: Voice recording
+            href: guide/tutorials/record-audio.md
       - name: Texts
         items:
           - name: Sentiment analysis and content moderation
@@ -347,7 +347,7 @@ items:
           mode: link
   - name: Toloka settings
     items:
-      - name: Users
+      - name: Tolokers
         items:
           - name: Viewing Tolokers
             href: guide/concepts/users.md

@@ -68,6 +68,8 @@ Make sure to add the {% if locale == "en-com" %}**Languages**{% endif %} filter 
 
 If you want to be sure that Tolokers can read and understand the basic vocabulary, select those who passed a language test.
 
+![](../_images/location-job/filters/filter-verified-language.png)
+
 {% endcut %}
 
 {% cut "Adult content" %}

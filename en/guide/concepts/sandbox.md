@@ -62,7 +62,7 @@ To move tasks from the sandbox to the production version:
 
     1. Open the same tab in the sandbox on the [profile]({{ sandbox-profile }}) page and paste the copied token into the **Production OAuth token** field.
 
-1. Go to the project page in the sandbox and click .
+1. Go to the project page in the sandbox and click {% if locale == "en-com" %}**Project actions → Export**{% endif %}.
 
 1. Choose the pools to export and click **Export**.
 
@@ -98,11 +98,15 @@ No, you need a separate account for each version of Toloka. To create a task in 
 
 #### Try exporting the project without pools.
 
-Select an exported project and don't select pools in the window that opens.Click **Export**.
+- Select an exported project and don't select pools in the window that opens.
+- Click **Export**.
 
 #### If the error persists, refresh the token.
 
-Go to [ Yandex ID]({{ passport-profile }}).Under **Sign in and device history**, click **Log out from all devices**.Request new tokens in the Sandbox and main environment.Update the token in the [Sandbox]({{ sandbox-profile-integration }})**Profile **.
+- Go to [ Yandex ID]({{ passport-profile }}).
+- Under **Sign in and device history**, click **Log out from all devices**.
+- Request new tokens in the Sandbox and main environment.
+- Update the token in the [Sandbox]({{ sandbox-profile-integration }}) **Profile**.
 
 {% endcut %}
 

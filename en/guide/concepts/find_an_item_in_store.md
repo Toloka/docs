@@ -44,8 +44,8 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           - Output data fields:
 
-          - `found_link` — The link to the product in the online store.
-          - `found_image` — For uploading the image of the product.
+              - `found_link` — The link to the product in the online store.
+              - `found_image` — For uploading the image of the product.
 
     - HTML/CSS/JS editor
 
@@ -238,13 +238,17 @@ To create a [pool](../../glossary.md#pool):
     1. Find the **Rules** block in the list and select **Processing rejected and accepted assignments**.
 
     1. Set a rule for rejected tasks: if **a task is rejected**, **increase overlap** by **1**. In addition, turn on the **Open pool if closed** option:
+
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-1.png)
+
     1. Add another quality control rule. Click **Add a quality control rule**.
 
     1. Find the **Rules** block in the list and choose **Submitted responses**.
 
     1. Set a rule for completed assignments: if the number of **submitted assignments is ****greater than or equal to 1**, **set the value of the ****Found_shoes** skill to **1**.
+
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-2.png)
+
     {% note info %}
 
     If the **Found_shoes** skill is missing from the list, save the pool and reopen it to edit it.
@@ -253,10 +257,9 @@ To create a [pool](../../glossary.md#pool):
 
     [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used in this type of project, because links submitted by Tolokers must match, which is practically impossible. Learn more in [Quality control](control.md).
 
-1. Enter `3` in the **The number of Tolokers to complete each task ** field in the **Task overlap** section.
+1. Enter `3` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
 
 1. Click **Create a pool**.
-
 
 ## Upload tasks {#upload_file}
 
@@ -291,8 +294,6 @@ To create a [pool](../../glossary.md#pool):
     The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
 
     {% endnote %}
-
-
 
 ## What's next {#what-next}
 

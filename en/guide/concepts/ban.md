@@ -13,21 +13,21 @@ To block access to tasks for a single Toloker:
 
 1. Select a Toloker on the [Tolokers]({{ users }}) page.
 
-1. Click , then fill in the fields:
+1. Click {% if locale == "en-com" %}**Actions → Ban**{% endif %}, then fill in the fields:
 
     #|
     || Field | Overview ||
     || {% if locale == "en-com" %}**Ban type**{% endif %} | Where to apply the ban:
 
-        - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
-        - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).||
+    - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
+    - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).||
     || {% if locale == "en-com" %}**Ban expires**{% endif %} | Set when to lift the ban.
 
     We recommend blocking access temporarily in order to maintain the desired number of Tolokers for completing tasks.||
     || {% if locale == "en-com" %}**Reason**{% endif %} | The reason for banning (only seen by the requester).||
     |#
 
-    To block access to tasks for multiple Tolokers:
+To block access to tasks for multiple Tolokers:
 
 1. Select Tolokers by using the [filters](../../glossary.md#filtering) on the [Tolokers]({{ users }}) page or upload a TSV file:
 

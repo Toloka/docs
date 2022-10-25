@@ -15,8 +15,6 @@ The project rating is available to Tolokers. By default, the list of tasks is so
 
 The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
 
-{% endcut %}
-
 {% cut "Low rating for “Will you take similar tasks in the future”" %}
 
 Perhaps the Tolokers found your tasks too difficult. Try to simplify them.
@@ -40,6 +38,8 @@ Starting from December 15, 2021, tasks in pools are automatically available in t
 {% cut "Low rating for “Communication with the requester”" %}
 
 Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
+
+{% endcut %}
 
 If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
 

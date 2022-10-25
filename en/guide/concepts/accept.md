@@ -20,13 +20,13 @@ If you set [non-automatic acceptance](offline-accept.md) in the pool settings, y
 
 You can review assignments online or upload review results in a file.
 
-{% endcut %}
-
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
+
+{% endcut %}
 
 {% cut "Online review of one task." %}
 
@@ -131,13 +131,13 @@ To accept or reject responses:
 
 Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements assignment review with the help of Tolokers.
 
+{% endcut %}
+
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
-
-{% endcut %}
 
 ## Appeal {#appeal}
 

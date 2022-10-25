@@ -632,7 +632,7 @@ You can't use a range as a fixed value.
 
 {% cut "Can I select Tolokers from a specific city of residence or is the only option “Region by IP”?" %}
 
-Yes, you can do that. In the [filters](../concepts/filters.md), select . Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
+Yes, you can do that. In the [filters](../concepts/filters.md), select {% if locale == "en-com" %}**Profile → City**{% endif %}. Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
 
 {% endcut %}
 
@@ -1716,7 +1716,7 @@ You need to use [smart mixing](../concepts/task_upload.md#smart-mixing_1).
 
 {% cut "Can I get notifications when results aggregation finishes?" %}
 
-Yes. To set up notifications in your account, go to [Learn more about setting up notifications.](../concepts/result-aggregation.md#notification)
+Yes. To set up notifications in your account, go to {% if locale == "en-com" %}**Profile → Notifications → Pool or aggregation completed**{% endif %}. [Learn more about setting up notifications.](../concepts/result-aggregation.md#notification)
 
 {% endcut %}
 
@@ -1784,7 +1784,7 @@ Add the notification to the project description (for example: “Attention! The 
 
 - Assign them a hidden skill, or use an existing [skill](../concepts/nav-assign.md) linked to the pool.
 
-- Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
+- Go to **Messages** and click {% if locale == "en-com" %}**Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**{% endif %}.
 
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 
@@ -1933,7 +1933,7 @@ You specify the top-up amount in USD. On the **Balance**, it's converted into ru
 
 {% endcut %}
 
-{% cut "How do I add money to Toloka?
+{% cut "How do I add money to Toloka?" %}
 
 You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](../concepts/refill.md#step-by-step) with step-by-step instructions.
 
@@ -1971,7 +1971,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% cut "Where do I find the statistics on the awards I paid?" %}
 
-Track your money debited for rewards in **Profile** → **Spent** tab.
+Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
 
 {% endcut %}
 

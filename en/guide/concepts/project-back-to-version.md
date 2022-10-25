@@ -9,10 +9,11 @@ The version number (for example, **1.2**) consists of two numbers:
     - Add, remove or rename a required field.
     - Change the field from optional to required.
     - Change the field parameters that aren't compatible with the current specification:
-    - Reduce the maximum or increase the minimum number of items in the array.
-    - Change allowed string values.
-    - Reduce the maximum or increase the minimum length of a string.
-    - Reduce the maximum or increase the minimum value for a number.
+
+        - Reduce the maximum or increase the minimum number of items in the array.
+        - Change allowed string values.
+        - Reduce the maximum or increase the minimum length of a string.
+        - Reduce the maximum or increase the minimum value for a number.
 
 1. The minor version (the second number) appears when you make any other changes to the project.
 
