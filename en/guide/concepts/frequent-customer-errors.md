@@ -58,7 +58,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 #### Develop a user-friendly interface
 
-{% note info %}
+{% note tip %}
 
 You can try creating a task interface in the [Template Builder]({{ tb-quickstart }}).
 

@@ -103,7 +103,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 **You can't post tasks that:**
 
-1. **Advertise and promote websites, products, or services,** involve any type of fraud related to advertising, reviews, clicks, ratings, and so on. In a task, don't ask Tolokers to:
+- **Advertise and promote websites, products, or services,** involve any type of fraud related to advertising, reviews, clicks, ratings, and so on. In a task, don't ask Tolokers to:
 
     - Register on certain websites, apps, or social networks and use your referral link. If the Toloker needs to have an account on a particular social network or website to complete the task, specify this in the task terms or provide them with access (if this is allowed by the terms of use and privacy policy).
 
@@ -117,7 +117,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
     - Write and/or edit reviews of products, services, or organizations and/or post them on websites or social networks. But you can ask Tolokers to moderate and evaluate reviews.
 
-1. **Disclose personal data** of the Toloker or a third party. Don't post tasks that:
+- **Disclose personal data** of the Toloker or a third party. Don't post tasks that:
 
     - Allow the requester or third parties to access the Toloker's account in Toloka.
 
@@ -125,7 +125,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
     - Make Tolokers take pictures or videos of people on the street, cars, and other vehicles with licence plates. Such tasks are prohibited by the [User Agreement]({{ useragreement }}). Mention this in the instructions for Tolokers. If you receive such photos or videos in responses, don't use them. However, you can ask Tolokers to take a selfie or a video of themselves.
 
-1. **Could harm the Toloker.** Don't post tasks if they:
+- **Could harm the Toloker.** Don't post tasks if they:
 
     - Involve illegal activities or creating illegal materials. Please note that Toloka has Tolokers all over the world. The terms of the task and its materials must not violate the laws of their countries.
 
@@ -137,7 +137,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
     - Cause harm to data or any part of the Toloka platform.
 
-1. **Serve as recruiting** or assigning tasks to people who work for the requester. Don't make Tolokers do work outside the platform and don't post tasks for your employees.
+- **Serve as recruiting** or assigning tasks to people who work for the requester. Don't make Tolokers do work outside the platform and don't post tasks for your employees.
 
 {% endcut %}
 

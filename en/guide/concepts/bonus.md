@@ -46,7 +46,11 @@ To issue rewards to Tolokers:
 
 1. Choose the Tolokers who will receive the reward.
 
-    {% include [select-tolokers](../_includes/select-tolokers.md) %}
+    {% cut "How to select Tolokers" %}
+
+    {% include [select-tolokers-internal](../_includes/select-tolokers-internal.md) %}
+
+    {% endcut %}
 
 1. Specify the [project](../../glossary.md#project) or [pool](../../glossary.md#pool) in the corresponding fields in the left part of the page.
 

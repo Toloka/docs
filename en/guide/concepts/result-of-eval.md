@@ -110,7 +110,7 @@ Add the notification to the project description (for example: “Attention! The 
 
 - Assign them a hidden skill, or use an existing [skill](nav-assign.md) linked to the pool.
 
-- Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **<skill name>**.
+- Go to **Messages** and click {% if locale == "en-com" %}**Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**{% endif %}.
 
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 

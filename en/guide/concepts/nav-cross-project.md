@@ -18,6 +18,6 @@ This is a special type of skills in Toloka that show the general competencies of
 
 - Restrictions of the `skill >80` type are used to select “Tolokers who completed similar projects better on average than 80% of other Tolokers”.
 
-To use this feature, select **Add a filter → Skills → Choose a global skill** and specify the restriction for the selected skill in the added filter.
+To use this feature, select {% if locale == "en-com" %}**Add a filter → Skills → Choose a global skill**{% endif %} and specify the restriction for the selected skill in the added filter.
 
 ![](../_images/cross-project-skills/cross-project-skills.png)

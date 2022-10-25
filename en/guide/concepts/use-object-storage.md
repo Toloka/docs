@@ -36,7 +36,7 @@ To use files from Yandex Cloud:
 
 1. If you restricted access to the bucket, you need to get a separate link for each file by following the [instructions]({{ link-for-download }}).
 
-    Select a file and click .
+    Select a file and click {% if locale == "en-com" %}**Get a link → Copy**{% endif %}.
 
     All file links are created by the same template.
 

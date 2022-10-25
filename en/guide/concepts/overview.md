@@ -38,7 +38,7 @@ There are different types of tasks: general, control (with correct responses), a
 
 You upload tasks to Toloka as a [file](../../glossary.md#tsv-file-definition). The file structure must match the input and output data specification that you set up in the project.
 
-{% note info %}
+{% note tip %}
 
 If you want multiple Tolokers to complete a task, you don't need to include it in the input data multiple times. Instead, set the [overlap](../../glossary.md#overlap) in the pool settings.
 
@@ -48,7 +48,7 @@ If you want multiple Tolokers to complete a task, you don't need to include it i
 
 Tasks are assigned to Tolokers page by page. A page may contain one or several tasks. You specify their number when uploading tasks in the pool.
 
-{% note info %}
+{% note alert "Important" %}
 
 - A Toloker can submit responses only after completing all tasks on a page.
 - You specify the price per task suite. Аnnotators are only paid for the entire page of completed tasks.
@@ -59,7 +59,7 @@ Some Tolokers have a slow internet connection, so adding multiple tasks lets the
 
 However, don't include too many tasks on a page: quality will be worse and Tolokers will get tired. Place 5-10 simple tasks or 1-4 complex ones on a single page.
 
-{% note info %}
+{% note tip %}
 
 You can separate tasks on a page yourself. It lets you group tasks, such as by simultaneously assigning all similar photos to Tolokers for annotation. In this case, the number of tasks on each page may differ.
 

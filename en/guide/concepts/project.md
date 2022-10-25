@@ -78,7 +78,7 @@ After creating the project, add a [task pool](pool-main.md) to it. You can also 
 
 You can view the list of created projects on the **Projects** page. Open the project page to view the list of pools, [project rating](project_rating_stat.md), and [project statistics](project-statistic.md).
 
-To clone a project, click ![](../_images/location-job/project/clone-project.svg) in the list of projects or select  on the project page.
+To clone a project, click ![](../_images/location-job/project/clone-project.svg) in the list of projects or select {% if locale == "en-com" %}**Project actions → Clone**{% endif %} on the project page.
 
 {% note warning %}
 

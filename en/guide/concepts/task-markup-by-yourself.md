@@ -32,7 +32,7 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 In this example, the correct response is added for the control task. Only the choice in the `result` field (Good/Bad/Loading error) is checked.
 
-![](../../../ru/guide/_images/location-job/task-edit/task-edit.png)
+![](../_images/location-job/task-edit/task-edit.png)
 
 {% endcut %}
 
@@ -42,7 +42,7 @@ After you have created the control tasks, make sure that different variations of
 
 1. Go to the task markup page.
 
-1. Open the  tab.
+1. Open the {% if locale == "en-com" %}**Training tasks → Distribution of correct responses for control tasks**{% endif %} tab.
 
     The distribution of responses is shown as a percentage.
 

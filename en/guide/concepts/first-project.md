@@ -51,7 +51,7 @@ In the project, you'll customize an appearance of the tasks.
 
     1. Click **Show specifications** to see the generated input and output data fields.
 
-        To learn more, see the [Template Builder Help]({{ tb-quickstart }}).
+    To learn more, see the [Template Builder Help]({{ tb-quickstart }}).
 
 1. In the **Instructions for performers** section, edit the ready-made instructions if needed.
 
@@ -69,7 +69,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
     - Use filters to select Tolokers who will have access to your tasks.
 
-    - Add and configure quality control rules to get more accurate responses. You can use a quality control preset with default settings. In the **Quality Control** section, click **Add a quality control rule** and choose a suitable preset. ![](../_images/first-project/quality-control-presets.png)
+    - Add and configure quality control rules to get more accurate responses. You can use a quality control preset with default settings. In the **Quality Control** section, click **Add a quality control rule** and choose a suitable preset.
 
         ![](../_images/first-project/quality-control-presets.png)
 
@@ -97,17 +97,17 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition):
 
 1. Attach the file with the tasks.
 
-    Click {% if locale == "en-com" %}**Continue**{% endif %}.
+1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-    Choose a way to put tasks into suites: {% if locale == "en-com" %}**Smart mixing**{% endif %} or {% if locale == "en-com" %}**Set manually**{% endif %}. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
+1. Choose a way to put tasks into suites: {% if locale == "en-com" %}**Smart mixing**{% endif %} or {% if locale == "en-com" %}**Set manually**{% endif %}. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
-    Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
 1. Click **Preview** to make sure that your tasks look correctly.
 
 1. Use control tasks to improve Tolokers' task completion quality.
 
-    {% note info %}
+    {% note tip %}
 
     To save time, you can opt for [having your control tasks created](task_markup.md) by Toloka experts.
 
@@ -115,7 +115,7 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition):
 
 ## Step 4. Launch the pool and get the results {#get-results}
 
-1. Start the pool by clicking **Start labeling**. This assigns the tasks to the Tolokers. ![](../_images/first-project/start-pool.png)
+1. Start the pool by clicking **Start labeling**. This assigns the tasks to the Tolokers.
 
     ![](../_images/first-project/start-pool.png)
 

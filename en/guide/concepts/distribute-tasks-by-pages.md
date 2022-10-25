@@ -48,7 +48,7 @@ If you upload a file via **Smart mixing**, you won't be able to use other ways o
 
 After uploading the tasks with **smart mixing** you will be able to [mark up tasks](task_markup.md) and set selective [majority vote checking](mvote.md).
 
-## How to distribute tasks as suites {#smart-mixing}
+#### How to distribute tasks as suites {#smart-mixing}
 
 | Characteristics/upload type                                                                            | Set manually | Smart mixing |
 |--------------------------------------------------------------------------------------------------------|--------------|--------------|
