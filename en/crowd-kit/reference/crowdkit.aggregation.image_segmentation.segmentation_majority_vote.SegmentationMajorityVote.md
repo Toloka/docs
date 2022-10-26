@@ -1,5 +1,5 @@
 # SegmentationMajorityVote
-`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L13)
+`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L13)
 
 ```python
 SegmentationMajorityVote(
@@ -29,7 +29,7 @@ Quality Evaluation Methods for Crowdsourced Image Segmentation
 | :----------| :----| :-----------|
 `default_skill`|**Optional\[float\]**|<p>A default skill value for missing skills.</p>
 `segmentations_`|**Series**|<p>Tasks&#x27; segmentations. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s aggregated segmentation.</p>
-`on_missing_skill`|**str**|<p>How to handle assignments done by workers with unknown skill. Possible values:<ul><li>&quot;error&quot; — raise an exception if there is at least one assignment done by user with unknown skill;</li><li>&quot;ignore&quot; — drop assignments with unknown skill values during prediction. Raise an exception if there is no assignments with known skill for any task;</li><li>value — default value will be used if skill is missing.</li></ul></p>
+`on_missing_skill`|**str**|<p>How to handle assignments done by workers with unknown skill. Possible values:</p> <ul> <li>&quot;error&quot; — raise an exception if there is at least one assignment done by user with unknown skill;</li> <li>&quot;ignore&quot; — drop assignments with unknown skill values during prediction. Raise an exception if there is no assignments with known skill for any task;</li> <li>value — default value will be used if skill is missing.</li> </ul>
 
 **Examples:**
 

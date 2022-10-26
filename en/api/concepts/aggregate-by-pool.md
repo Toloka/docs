@@ -51,6 +51,7 @@ Title | Overview
 #|
 || Parameter | Overview ||
 || **pool_id** | **string**
+
 Pool ID. ||
 || **type** | **string**
 

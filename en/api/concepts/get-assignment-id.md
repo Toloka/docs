@@ -78,6 +78,7 @@ Title | Overview
 #|
 || Parameter | Overview ||
 || **id** | **string**
+
 ID of the task suite assignment to a Toloker. ||
 || **task_suite_id** | **string**
 
@@ -131,6 +132,7 @@ Arrays with the responses (`output_values`) are arranged in the same order as th
 ```
 ||
 || **solutions[]** | **array of objects**
+
 Toloker responses. Arranged in the same order as the data for tasks in the `tasks` array.
 
 ```json

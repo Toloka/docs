@@ -12,42 +12,46 @@ items:
     items:
       - name: List
         href: ../template-builder/templates/index.md
-      - name: Data enrichment
-        items:
-          - name: Survey
-            href: ../template-builder/templates/survey.md
-          - name: Search for information online
-            href: ../template-builder/templates/data-search.md
-      - name: Audio
-        items:
-          - name: Audio transcription
-            href: ../template-builder/templates/audio-transcript.md
-          - name: Side-by-side audio comparison
-            href: ../template-builder/templates/sbs-audio.md
-      - name: Video
-        items:
-          - name: Video analysis
-            href: ../template-builder/templates/video-moderation.md
-          - name: Side-by-side video comparison
-            href: ../template-builder/templates/sbs-video.md
       - name: Images
         items:
           - name: Image classification
             href: ../template-builder/templates/image-classification.md
-          - name: Side-by-side image comparison
+          - name: Image comparison (Side-by-side)
             href: ../template-builder/templates/sbs-image.md
           - name: Product search relevance
             href: ../template-builder/templates/product-search-relevance.md
-          - name: Object recognition and area selection
+          - name: Object recognition & detection
             href: ../template-builder/templates/object-recognition.md
+      - name: Video
+        items:
+          - name: Video classification
+            href: ../template-builder/templates/video-moderation.md
+          - name: Video comparison (Side-by-side)
+            href: ../template-builder/templates/sbs-video.md
       - name: Texts
         items:
           - name: Copywriting
             href: ../template-builder/templates/copywriting.md
-          - name: Side-by-side text comparison
+          - name: Text comparison (Side-by-side)
             href: ../template-builder/templates/sbs-text.md
           - name: Text classification
             href: ../template-builder/templates/text-classification.md
+          - name: Sentiment analysis & Content moderation
+            href: ../template-builder/templates/content-moderation.md
+      - name: Audio
+        items:
+          - name: Audio transcription
+            href: ../template-builder/templates/audio-transcript.md
+          - name: Audio comparison (Side-by-side)
+            href: ../template-builder/templates/sbs-audio.md            
+      - name: Data enrichment
+        items:
+          - name: Searching for product characteristics
+            href: ../template-builder/templates/data-search.md
+      - name: Surveys
+        items:
+          - name: Survey
+            href: ../template-builder/templates/survey.md
   - name: Instructions
     items:
       - name: List of instructions

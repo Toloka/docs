@@ -434,60 +434,19 @@ items:
             items:
               - name: Как пользоваться
                 items:
+                  - name: API Bespoke-решений
+                    href: toloka-apps/api/concepts/index.md
                   - name: Доступ к API
-                    href: https://toloka.ai/docs/toloka-apps/api/concepts/authorization.md
+                    href: toloka-apps/api/concepts/authorization.md
                   - name: Быстрый старт API
-                    href: https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.md
+                    href: toloka-apps/api/concepts/quickstart-api.md
                   - name: Потоковая обработка элементов разметки
-                    href: https://toloka.ai/docs/toloka-apps/api/concepts/streaming-items.md
-              - name: Справочник
-                items:
-                  - name: API Toloka Apps external
-                    href: https://toloka.ai/docs/toloka-apps/api/ref/index.html
-                  - name: app
-                    items:
-                      - name: Получить список шаблонов проектов (Apps)
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_get.html
-                      - name: Информация о шаблоне проекта
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_app_id_get.html
-                  - name: app-project
-                    items:
-                      - name: Архивировать проект
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html
-                      - name: Создать новый проект
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_post.html
-                      - name: Получить информацию о проекте
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
-                      - name: Получить список проектов
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_get.html
-                      - name: Разархивировать проект
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.html
-                  - name: batch
-                    items:
-                      - name: Обновить имя пакета данных
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_patch.html
-                      - name: Создать новый пакет данных с первой пачкой элементов
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.html
-                      - name: Получить информацию о пакете данных
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
-                      - name: Получить список пакетов данных в проекте
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.html
-                      - name: Возобновить обработку пакета данных
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_resume_post.html
-                      - name: Запустить обработку пакета данных
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.html
-                      - name: Остановить обработку пакета данных
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_stop_post.html
-                  - name: item
-                    items:
-                      - name: Добавить новый элемент в пакет данных
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_post.html
-                      - name: Добавить несколько элементов в пакет данных
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.html
-                      - name: Получить информацию об элементе разметки
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html
-                      - name: Получить список всех элементов в проекте
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html
+                    href: toloka-apps/api/concepts/streaming-items.md
+              - name: Справочник API Bespoke
+                include:
+                  path: toloka-apps/api/ref.yaml
+                  includer: openapi
+                  mode: link
       - name: Python SDK
         items:
           - name: Crowd-Kit

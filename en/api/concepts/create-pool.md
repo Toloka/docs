@@ -433,7 +433,7 @@ Minimum confidence of the aggregated response. Values from 0 to 1. ||
 Required if dynamic overlap is used.
 
 A skill that determines the weight of the Toloker's response. For best results, use a skill calculated as the [percentage of correct responses in control tasks](goldenset.md). ||
-|| **dynamic_overlap_config. fields** | **object \| required if**
+|| **dynamic_overlap_config. fields[]** | **array of objects \| required if**
 
 Required if dynamic overlap is used.
 
@@ -575,7 +575,7 @@ Use it if:
 Settings for assigning tasks in the pool. ||
 || **assignments_issuing_config. issue_task_suites_in_ creation_order** {#issue_task_suites_in_creation_order} | **boolean**
 
-For pools that don't use "smart mixing" .
+For pools that don't use "smart mixing".
 
 Assign task suites in the order in which they were uploaded. For example, for a pool with an overlap of 5, the first task suite is assigned to five Tolokers, then the second task suite, and so on.
 
@@ -586,7 +586,7 @@ The priority of the pool in relation to other pools in the project with the same
 
 Possible values: from `-100` to `100`.
 
-By default the value is `0` . ||
+By default the value is `0`. ||
 || **filter** | **object**
 
 Settings for [Toloker selection filters](filters.md). ||

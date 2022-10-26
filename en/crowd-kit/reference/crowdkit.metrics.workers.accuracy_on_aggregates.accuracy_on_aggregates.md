@@ -1,5 +1,5 @@
 # accuracy_on_aggregates
-`crowdkit.metrics.workers.accuracy_on_aggregates.accuracy_on_aggregates` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/metrics/workers/accuracy_on_aggregates.py#L13)
+`crowdkit.metrics.workers.accuracy_on_aggregates.accuracy_on_aggregates` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/metrics/workers/accuracy_on_aggregates.py#L13)
 
 ```python
 accuracy_on_aggregates(

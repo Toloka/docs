@@ -415,6 +415,8 @@ items:
     items:
       - name: REST API
         items:
+          - name: Overview
+            href: api/rest-api.md
           - name: Toloka API
             items:
               - include:
@@ -425,60 +427,24 @@ items:
             items:
               - name: How to use
                 items:
+                  - name: Bespoke API
+                    href: toloka-apps/api/concepts/index.md
+                    hidden: true
                   - name: Accessing the API
-                    href: https://toloka.ai/docs/toloka-apps/api/concepts/authorization.html
+                    href: toloka-apps/api/concepts/authorization.md
                   - name: API quick start
-                    href: https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html
+                    href: toloka-apps/api/concepts/quickstart-api.md
                   - name: Stream processing of task items
-                    href: https://toloka.ai/docs/toloka-apps/api/concepts/streaming-items.html
-              - name: API reference
-                items:
-                  - name: API Toloka Apps external
-                    href: https://toloka.ai/docs/toloka-apps/api/ref/index.html
-                  - name: app
-                    items:
-                      - name: Get the list of project templates (Apps)
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_get.html
-                      - name: Information about the project template
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app/apps_app_id_get.html
-                  - name: app-project
-                    items:
-                      - name: Archive the project
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.html
-                      - name: Create a new project
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_post.html
-                      - name: Get information about the project
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_get.html
-                      - name: Get the list of projects
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_get.html
-                      - name: Unarchive the project
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.html
-                  - name: batch
-                    items:
-                      - name: Create a new batch with the first set of items
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.html
-                      - name: Get information about the batch
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.html
-                      - name: Get the list of batches in the project
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.html
-                      - name: Resume processing the batch
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_resume_post.html
-                      - name: Start processing the batch
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.html
-                      - name: Stop processing the batch
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_stop_post.html
-                  - name: item
-                    items:
-                      - name: Add a new item to the batch
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_post.html
-                      - name: Add multiple items to the batch
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.html
-                      - name: Get information about the work item
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.html
-                      - name: Get the list of all items in the project
-                        href: https://toloka.ai/docs/toloka-apps/api/ref/item/app-projects_app_project_id_items_get.html
+                    href: toloka-apps/api/concepts/streaming-items.md
+              - name: Bespoke API reference
+                include:
+                  path: toloka-apps/api/ref.yaml
+                  includer: openapi
+                  mode: link
       - name: Python SDK
         items:
+          - name: Overview
+            href: toloka-kit/python-sdk.md
           - name: Toloka-Kit
             items:
               - include:

@@ -1,0 +1,1522 @@
+openapi: "3.0.2"
+info:
+  title: API Toloka Apps external
+  version: "0.12"
+servers:
+  - url: https://toloka.dev/api/app/v0
+
+tags:
+  - name: app-project
+    description: Проект с параметрами, которые вы укажете при создании. В нем уже будет настроен за вас интерфейс, контроль качества, выполнена декомпозиция и всё подготовлено — вам остается только загружать пакеты данных и отправлять их на разметку.
+  - name: app
+    description: Тип шаблонной задачи, которую вы хотите решить с помощью Толоки. В отличие от шаблонов проекта вам не придется настраивать всё самостоятельно.
+  - name: item
+    description: Элемент данных для разметки. Загружается в пакет данных вместе с другими элементами и отправляется на разметку вместе с другими элементами.
+  - name: batch
+    description: Пакет данных, который вы отправите на разметку за один раз. Пакет данных состоит из элементов разметки (items).
+
+paths:
+  /app-projects:
+    get:
+      tags:
+        - app-project
+      parameters:
+        - name: app_id
+          in: query
+          description: ID Bespoke-решения, к которому относятся проекты.
+          required: false
+          schema:
+            type: string
+        - name: parent_app_project_id
+          in: query
+          description: ID проекта, который использовался при клонировании. Указывается только если вы создали новый проект с помощью клонирования. Клонировать проекты можно в веб-версии Толоки.
+          required: false
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Статус проекта.
+          required: false
+          schema:
+            type: string
+        - name: after_id
+          in: query
+          description: ID проекта, используемого для курсорной пагинации.
+          required: false
+          schema:
+            type: string
+        - name: id_gt
+          in: query
+          description: Проекты с ID больше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_gte
+          in: query
+          description: Проекты с ID больше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: id_lt
+          in: query
+          description: Проекты с ID меньше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_lte
+          in: query
+          description: Проекты с ID меньше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: name_gt
+          in: query
+          description: Проекты с именем лексикографически больше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: name_gte
+          in: query
+          description: Проекты с именем лексикографически больше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: name_lt
+          in: query
+          description: Проекты с именем лексикографически меньше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: name_lte
+          in: query
+          description: Проекты с именем лексикографически меньше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: created_gt
+          in: query
+          description: Проекты, созданные после указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_gte
+          in: query
+          description: Проекты, созданные после указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_lt
+          in: query
+          description: Проекты, созданные до указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_lte
+          in: query
+          description: Проекты, созданные до указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: 'Порядок и направление сортировки результатов.
+
+            Доступные параметры:
+
+              * `id` - по идентификатору;
+
+              * `name` - по имени;
+
+              * `created` — по дате создания. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+
+            Несколько параметров можно указать через запятую.
+
+            Чтобы изменить направление сортировки (сортировать по убыванию),
+            добавьте знак дефиса перед параметром. Например, sort=-id.'
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: Количество объектов на странице, по умолчанию принимает значение 100. Максимальное значение — 5000.
+          required: false
+          schema:
+            type: string
+        - name: scope
+          in: query
+          description: 'Проекты, созданные указанным диапазоном заказчиков:
+            MY - Только я;
+            COMPANY - Вся компания;
+            REQUESTER_LIST - Заказчики с указанными идентификаторами.'
+          required: false
+          schema:
+            type: string
+        - name: requester_ids
+          in: query
+          description: Список идентификаторов заказчиков, разделенных запятой, для scope = REQUESTER_LIST.
+          required: false
+          schema:
+            type: string
+
+      summary: Получить список проектов
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                  $ref: '#/components/schemas/AppProjectListResult'
+          description: OK
+
+    post:
+      tags:
+        - app-project
+      summary: Создать новый проект
+      requestBody:
+        description: Параметры нового проекта.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppProjectCreateForm'
+      responses:
+        '200':
+          description: Создан проект в статусе CREATING.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppProject'
+
+  /app-projects/{app_project_id}:
+    get:
+      tags:
+        - app-project
+      summary: Получить информацию о проекте
+      parameters:
+      - name: app_project_id
+        in: path
+        description: ID проекта.
+        required: true
+        schema:
+          type: string
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppProject'
+              examples:
+                good:
+                  value:
+                    id: '1'
+                    app_id: '20'
+                    parent_app_project_id: '12'
+                    status: CREATING
+                    created: 2021-04-15 12:30:01.951000
+                    name: My app-project
+                    item_price: 0.2
+                    parameters: { }
+                    errors: []
+                    read_only: false
+                    app:
+                      id: '1'
+                      name: Some app
+
+                bad:
+                  value:
+                    id: '1'
+                    app_id: '20'
+                    parent_app_project_id: ''
+                    status: ERROR
+                    created: 2021-04-15 12:30:01.951000
+                    name: My app-project
+                    item_price: 0.2
+                    parameters: { }
+                    errors:
+                      - code: DOES_NOT_EXIST
+                        message: Проект не существует
+                        payload:
+                          instruction_class: dog
+                          instruction_field: example
+                    read_only: false
+                    app:
+                      id: '1'
+                      name: Some app
+
+
+        '404':
+          description: Проект {app_project_id} не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+  /app-projects/{app_project_id}/archive:
+    post:
+      tags:
+        - app-project
+      summary: Архивировать проект
+      description: Проект переходит в статус ARCHIVE.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: OK
+
+  /app-projects/{app_project_id}/unarchive:
+    post:
+      tags:
+        - app-project
+      summary: Разархивировать проект
+      description: Проект переходит в последний статус, который был перед архивированием.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: OK
+
+  /app-projects/{app_project_id}/items/{item_id}:
+    get:
+      tags:
+        - item
+      summary: Получить информацию об элементе разметки
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: item_id
+          in: path
+          description: ID элемента разметки.
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+          description: OK
+        '404':
+          description: Элемент разметки {item_id} не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+  /app-projects/{app_project_id}/items:
+    get:
+      tags:
+        - item
+      summary: Получить список всех элементов в проекте
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: after_id
+          in: query
+          description: ID элемента разметки, используемого для курсорной пагинации.
+          required: false
+          schema:
+            type: string
+        - name: batch_id
+          in: query
+          description: ID пакета данных.
+          required: false
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Статус элементов.
+          required: false
+          schema:
+            type: string
+        - name: id_gt
+          in: query
+          description: Элементы с ID больше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_gte
+          in: query
+          description: Элементы с ID больше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: id_lt
+          in: query
+          description: Элементы с ID меньше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_lte
+          in: query
+          description: Элементы с ID меньше или равным указанному значению.
+          required: false
+          schema:
+            type: string
+        - name: created_gt
+          in: query
+          description: Элементы, созданные после указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_gte
+          in: query
+          description: Элементы, созданные после указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_lt
+          in: query
+          description: Элементы, созданные до указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_lte
+          in: query
+          description: Элементы, созданные до указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: finished_gt
+          in: query
+          description: Объекты, разметка которых завершилась после указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: finished_gte
+          in: query
+          description: Объекты, разметка которых завершилась после указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: finished_lt
+          in: query
+          description: Объекты, разметка которых завершилась до указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: finished_lte
+          in: query
+          description: Объекты, разметка которых завершилась до указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: 'Порядок и направление сортировки результатов.
+
+            Доступные параметры:
+
+              * `id` — по идентификатору;
+
+              * `created` — по дате создания. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]);
+
+              * `status` — по статусу объекта;
+
+              * `finished` — по времени завершения разметки.
+
+            Несколько параметров можно указать через запятую.
+
+            Чтобы изменить направление сортировки (сортировать по убыванию),
+            добавьте знак дефиса перед параметром. Например, sort=-id.'
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: Количество элементов на странице, по умолчанию установлено значение 100. Максимальное значение — 1000.
+          required: false
+          schema:
+            type: string
+
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/ItemListResult'
+          description: OK
+        '404':
+          description: Элементы не найдены.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+    post:
+      tags:
+        - item
+      summary: Добавить новый элемент в пакет данных
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Параметры нового элемента.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemCreateForm'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+          description: OK
+        '404':
+          description: Элемент разметки не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '400':
+          description: Ошибка в данных запроса.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: Нет прав для выполнения операции.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+  /app-projects/{app_project_id}/items/bulk:
+    post:
+      tags:
+        - item
+      summary: Добавить несколько элементов в пакет данных
+      description: Не более 10 000 элементов в одном запросе.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Параметры новых элементов разметки.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemsBulkCreateForm'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ItemsBulkCreateResponse'
+          description: OK
+        '404':
+          description: Элементы разметки не найдены.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '400':
+          description: Ошибка в данных запроса.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: Нет прав для выполнения операции.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '413':
+          description: Слишком большой запрос. Максимальное количество элементов в запросе – 10 000.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+
+  /app-projects/{app_project_id}/batches:
+    get:
+      tags:
+        - batch
+      summary: Получить список пакетов данных в проекте
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: after_id
+          in: query
+          description: ID пакета данных, используемого для курсорной пагинации.
+          required: false
+          schema:
+            type: string
+        - name: status
+          in: query
+          description: Статус пакетов данных.
+          required: false
+          schema:
+            type: string
+        - name: id_gt
+          in: query
+          description: Пакеты данных с ID больше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_gte
+          in: query
+          description: Пакеты данных с ID больше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: id_lt
+          in: query
+          description: Пакеты данных с ID меньше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_lte
+          in: query
+          description: Пакеты данных с ID меньше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: name_gt
+          in: query
+          description: Пакеты данных с именем лексикографически больше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: name_gte
+          in: query
+          description: Пакеты данных с именем лексикографически больше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: name_lt
+          in: query
+          description: Пакеты данных с именем лексикографически меньше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: name_lte
+          in: query
+          description: Пакеты данных с именем лексикографически меньше или равным указанному значения.
+          required: false
+          schema:
+            type: string
+        - name: created_gt
+          in: query
+          description: Пакеты данных, созданные после указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_gte
+          in: query
+          description: Пакеты данных, созданные после указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_lt
+          in: query
+          description: Пакеты данных, созданные до указанной даты. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: created_lte
+          in: query
+          description: Пакеты данных, созданные до указанной даты включительно. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+          required: false
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: 'Порядок и направление сортировки результатов.
+
+            Доступные параметры:
+
+              * `id` - по идентификатору;
+
+              * `name` - по имени;
+
+              * `created` — по дате создания. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]);
+
+              * `status` - по статусу.
+
+            Несколько параметров можно указать через запятую.
+
+            Чтобы изменить направление сортировки (сортировать по убыванию),
+            добавьте знак дефиса перед параметром. Например, sort=-id.'
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: Количество пакетов данных на странице, по умолчанию установлено значение 100. Максимальное значение — 1000.
+          required: false
+          schema:
+            type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/BatchListResult'
+          description: OK
+        '404':
+          description: Пакет данных не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+    post:
+      tags:
+        - batch
+      summary: Создать новый пакет данных с первой пачкой элементов
+      description: Не более 10 000 элементов в запросе.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Параметры нового пакета данных.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchCreateForm'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/Batch'
+          description: OK
+        '404':
+          description: Пакет данных не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '400':
+          description: Ошибка в данных запроса.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: Нет прав для выполнения операции.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '413':
+          description: Слишком большой запрос. Максимальное количество элементов в запросе – 10 000.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+  /app-projects/{app_project_id}/batches/sync:
+    post:
+      tags:
+        - batch
+      summary: Отправить пакет данных с синхронной загрузкой на разметку
+      description: Используется только для решений с синхронным протоколом.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: Параметры нового пакета данных.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchCreateForm'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchSyncResponse'
+          description: OK
+        '400':
+          description: Ошибка в данных запроса.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: Нет прав для выполнения операции.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+
+  /app-projects/{app_project_id}/batches/{batch_id}:
+    get:
+      tags:
+        - batch
+      summary: Получить информацию о пакете данных
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: batch_id
+          in: path
+          description: ID пакета данных.
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Batch'
+          description: OK
+        '404':
+          description: Пакет данных {batch_id} не найден.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+    patch:
+      tags:
+        - batch
+      summary:  Обновить имя пакета данных
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: batch_id
+          in: path
+          description: ID пакета данных.
+          required: true
+          schema:
+            type: string
+      requestBody:
+          description: Параметры обновления имени пакета данных.
+          required: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchPatchForm'
+      responses:
+          '200':
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Batch'
+            description: OK
+          '404':
+            description: Пакет данных {batch_id} не найден.
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/RequestError'
+
+  /app-projects/{app_project_id}/batches/{batch_id}/start:
+    post:
+      tags:
+        - batch
+      summary: Запустить обработку пакета данных
+      description: Запускается асинхронно.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: batch_id
+          in: path
+          description: ID пакета данных.
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: OK
+
+  /app-projects/{app_project_id}/batches/{batch_id}/stop:
+    post:
+      tags:
+        - batch
+      summary: Остановить обработку пакета данных
+      description: Остановить обработку можно только для пакета данных в статусе **PROCESSING**.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: batch_id
+          in: path
+          description: ID пакета данных.
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: OK
+
+  /app-projects/{app_project_id}/batches/{batch_id}/resume:
+    post:
+      tags:
+        - batch
+      summary: Возобновить обработку пакета данных
+      description: Возобновить обработку можно только для пакета данных в статусе **STOPPING** и **STOPPED**.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: batch_id
+          in: path
+          description: ID пакета данных.
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: OK
+
+  /apps:
+    get:
+      tags:
+        - app
+      parameters:
+        - name: after_id
+          in: query
+          description: Параметр используется для курсорной пагинации и указывает, начиная с какого ID формируется список объектов. Учитывает фильтры и сортировку.
+          required: false
+          schema:
+            type: string
+        - name: id_gt
+          in: query
+          description: Только с ID больше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_gte
+          in: query
+          description: Только с ID больше или равным указанному значению.
+          required: false
+          schema:
+            type: string
+        - name: id_lt
+          in: query
+          description: Только с ID меньше указанного значения.
+          required: false
+          schema:
+            type: string
+        - name: id_lte
+          in: query
+          description: Только с ID меньше или равным указанному значению.
+          required: false
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: 'Порядок и направление сортировки результатов.
+
+            Доступные параметры:
+
+              * `id` - по идентификатору.
+
+            Несколько параметров можно указать через запятую.
+
+            Чтобы изменить направление сортировки (сортировать по убыванию),
+            добавьте знак дефиса перед параметром. Например, sort=-id.'
+          required: false
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: Количество объектов на странице, по умолчанию установлено значение 100. максимальное значение - 1000.
+          required: false
+          schema:
+            type: string
+        - name: lang
+          in: query
+          description: Код языка ISO 639.
+          required: false
+          schema:
+            type: string
+
+      summary: Получить список шаблонов проектов (Apps)
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: '#/components/schemas/AppListResult'
+          description: OK
+
+  /apps/{app_id}:
+    get:
+      tags:
+        - app
+      summary: Информация о шаблоне проекта
+      parameters:
+        - name: app_id
+          in: path
+          description: ID шаблона
+          required: true
+          schema:
+            type: string
+        - name: lang
+          in: query
+          description: Код языка ISO 639.
+          required: false
+          schema:
+            type: string
+
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppResult'
+          description: OK
+
+
+components:
+  schemas:
+    AppProjectListResult:
+      type: object
+      description: Ответ на запрос списка проектов.
+      properties:
+        has_more:
+          type: boolean
+          default: false
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/AppProjectListItem'
+
+    AppProject:
+      type: object
+      description: Bespoke-решение.
+      properties:
+        id:
+          type: string
+          example: "1"
+        app_id:
+          type: string
+          example: "20"
+        parent_app_project_id:
+          type: string
+          description: "2"
+        status:
+          type: string
+          enum:
+            - CREATING
+            - READY
+            - ARCHIVE
+            - ERROR
+          description: Статусы проекта для асинхронного создания.
+        created:
+          type: string
+          format: date-time
+        name:
+          type: string
+          example: "My app-project"
+        item_price:
+          type: number
+          format: double
+          example: 0.05
+        parameters:
+          type: object
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/ItemError'
+        read_only:
+          type: boolean
+        app:
+          $ref: '#/components/schemas/AppLightestResult'
+
+    AppProjectListItem:
+      type: object
+      description: Проект.
+      properties:
+        id:
+          type: string
+          example: "1"
+        app_id:
+          type: string
+          example: "20"
+        parent_app_project_id:
+          type: string
+          description: "2"
+        status:
+          type: string
+          enum:
+            - CREATING
+            - READY
+            - ARCHIVED
+            - ERROR
+          description: Статусы проекта для асинхронного создания.
+        created:
+          type: string
+          format: date-time
+        name:
+          type: string
+          example: "My app-project"
+        item_price:
+          type: number
+          format: double
+          example: 0.05
+        parameters:
+          type: object
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/ItemError'
+        read_only:
+          type: boolean
+        app:
+          $ref: '#/components/schemas/AppLightestResult'
+
+    AppProjectCreateForm:
+      type: object
+      description: Bespoke-решение.
+      properties:
+        app_id:
+          type: string
+          description: ID шаблона проекта
+        parent_app_project_id:
+          type: string
+          description: ID проекта, с которого склонирован данный проект.
+        name:
+          type: string
+          description: Название проекта.
+        parameters:
+          type: object
+          description: Параметры настройки проекта в соответствии с param_spec из шаблона проекта с указанным ID (app_id).
+
+    AppResult:
+      type: object
+      description: Bespoke-решение.
+      properties:
+        id:
+          type: string
+          description: ID шаблона Bespoke-проекта.
+        name:
+          type: string
+          description: Название.
+        image:
+          type: string
+          description: Изображение.
+        description:
+          type: string
+          description: Описание.
+        constraints_description:
+          type: string
+          description: Описание ограничений.
+        default_item_price:
+          type: number
+          format: double
+          description: Цена обработки одного элемента разметки по умолчанию.
+        param_spec:
+          type: object
+          description: Спецификация параметров для создания проекта.
+        input_spec:
+          type: object
+          description: Схема входных данных в формате Толоки.
+        output_spec:
+          type: object
+          description: Схема выходных данных в формате Толоки.
+        examples:
+          type: object
+          description: Примеры задач.
+        input_format_info:
+          type: object
+          description: Информация о формате входных данных
+
+    AppLightestResult:
+      type: object
+      description: Краткая информация о шаблоне проекта.
+      properties:
+        id:
+          type: string
+          description: ID шаблона.
+        name:
+          type: string
+          description: Название шаблона.
+
+    AppListItem:
+      type: object
+      description: Bespoke-решение.
+      properties:
+        id:
+          type: string
+          description: ID шаблона проекта.
+        name:
+          type: string
+          description: Название шаблона.
+        image:
+          type: string
+          description: Изображение.
+        description:
+          type: string
+          description: Описание шаблона.
+        default_item_price:
+          type: number
+          format: double
+          description: Цена обработки элемента разметки по умолчанию.
+        examples:
+          type: array
+          items:
+            type: object
+            description: Информация о возможных примерах использования Bespoke-решения.
+
+    AppListResult:
+      type: object
+      description: Ответ на запрос списка шаблонов проекта (Apps).
+      properties:
+        has_more:
+          type: boolean
+          default: false
+        content:
+          type: array
+          items:
+            $ref: '#/components/schemas/AppListItem'
+
+    ItemListResult:
+      type: object
+      description: Ответ на запрос списка элементов разметки.
+      properties:
+        has_more:
+          type: boolean
+          default: false
+        content:
+          type: array
+          items:
+            $ref: '#/components/schemas/Item'
+
+    Item:
+      type: object
+      description: Элемент с данными для разметки.
+      required:
+        - app_project_id
+        - input_data
+      properties:
+        id:
+          type: string
+          description: ID элемента.
+        app_project_id:
+          type: string
+          description: ID проекта, к которому относится пакет данных с этим элементом разметки.
+        batch_id:
+          type: string
+          description: ID пакета данных, к которому относится элемент разметки.
+        status:
+          type: string
+          description: Состояние обработки. NEW - новый, PROCESSING - обрабатывается, COMPLETED - обработка завершена, ERROR - ошибка при обработке, CANCELLED - обработка отменена, ARCHIVE - айтем архивирован, NO_MONEY - не хватает денег для обработки, и STOPPED - обработка остановлена клиентом.
+          enum:
+            - NEW
+            - PROCESSING
+            - COMPLETED
+            - ERROR
+            - CANCELLED
+            - ARCHIVE
+            - NO_MONEY
+            - STOPPED
+        input_data:
+          type: object
+          description: Данные элемента разметки по схеме из шаблона проекта.
+        output_data:
+          type: object
+          description: Результат обработки.
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/ItemError'
+        created_at:
+          type: string
+          format: date-time
+          description: Дата и время создания элемента разметки. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+        started_at:
+          type: string
+          format: date-time
+          description: Дата и время запуска обработки элемента разметки. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+        finished_at:
+          type: string
+          format: date-time
+          description: Дата и время завершения обработки элемента разметки. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+
+    ItemsBulkCreateResponse:
+      type: array
+      items:
+        type: string
+        description: ID загруженного элемента разметки.
+
+    ItemCreateForm:
+      type: object
+      description: Элемент с данными для разметки.
+      required:
+        - input_data
+      properties:
+        batch_id:
+          type: string
+          description: ID пакета данных.
+        input_data:
+          type: object
+          description: Данные объекта в соответствии с input_spec Bespoke-решения.
+
+    ItemsBulkCreateForm:
+      type: object
+      description: Элементы с данными для разметки. Не более 10 000 элементов в одном запросе.
+      required:
+        - items
+      properties:
+        batch_id:
+          type: string
+          description: ID пакета данных.
+        items:
+          type: array
+          description: Список элементов.
+          items:
+            type: object
+            description: Данные объекта в соответствии с input_spec Bespoke-решения.
+
+    BatchListResult:
+      type: object
+      description: Ответ на запрос списка пакетов данных.
+      properties:
+        has_more:
+          type: boolean
+          default: false
+        content:
+          type: array
+          items:
+            $ref: '#/components/schemas/Batch'
+
+    BatchSyncResponse:
+      type: object
+      description: Ответ на запрос синхронной обработки пакета данных.
+      properties:
+        batch:
+          $ref: '#/components/schemas/Batch'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Item'
+
+    Batch:
+      type: object
+      properties:
+        id:
+          type: string
+          description: ID пакета данных.
+        app_project_id:
+          type: string
+          description: ID проекта.
+        status:
+          type: string
+          description: Состояние пакета данных, вычисляется на основе состояний элементов входящих в его состав.
+          enum:
+            - NEW
+            - PROCESSING
+            - COMPLETED
+            - ERROR
+            - CANCELLED
+            - NO_MONEY
+            - ARCHIVE
+            - LOADING
+            - STOPPING
+            - STOPPED
+        name:
+          type: string
+          description: Название пакета данных.
+        item_count:
+          type: integer
+          description: Количество элементов в пакете данных.
+        item_price:
+          type: number
+          format: double
+          description: Цена обработки одного элемента разметки в пакете данных.
+        cost:
+          type: number
+          format: double
+          description: Стоимость обработки пакета данных.
+        cost_of_processed:
+          type: number
+          format: double
+          description: Стоимость уже обработанных элементов пакета данных.
+        created_at:
+          type: string
+          format: date-time
+          description: Дата и время создания пакета данных. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+        started_at:
+          type: string
+          format: date-time
+          description: Дата и время запуска обработки пакета данных. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+        finished_at:
+          type: string
+          format: date-time
+          description: Дата и время завершения обработки пакета данных. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+        read_only:
+          type: boolean
+        last_items_import:
+          $ref: '#/components/schemas/ItemImport'
+        confidence_avg:
+          type: number
+          format: double
+          description: Среднее качество разметки.
+        items_processed_count:
+          type: integer
+          description: Количество размеченных элементов.
+        eta:
+          type: string
+          format: date-time
+          description: Ожидаемая дата и время завершения обработки пакета данных. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
+        items_per_state:
+          type: object
+          description: Статистика по количеству элементов в каждом состоянии.
+
+    BatchCreateForm:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Название пакета данных.
+          example: Тестовый пакет данных.
+        items:
+          type: array
+          items:
+            type: object
+            description: Данные элемента разметки по схеме из шаблона проекта (input_spec). Не более 10 000 элементов в одном запросе.
+
+    BatchPatchForm:
+      type: object
+      properties:
+        name:
+          type: string
+          description: Название пакета данных.
+          example: Тестовый пакет данных.
+
+    ItemImport:
+      type: object
+      description: Мета-информация по асинхронной операции загрузки элементов (возможна через UI).
+      properties:
+        id:
+          type: string
+        records_count:
+          type: integer
+          description: Количество элементов в операции загрузки.
+        records_processed:
+          type: integer
+          description: Количество успешно загруженных элементов в операции загрузки.
+        errors:
+          type: object
+          description: Ошибки, возникшие в ходе операции загрузки.
+
+    RequestError:
+      type: object
+      required:
+        - request_id
+        - code
+        - message
+      properties:
+        request_id:
+          type: string
+          example: 337d68d1-974d-42b1-a2d0-6234f6373eed
+          description: Внутренний идентификатор HTTP-запроса, в котором произошла ошибка. Его необходимо указывать при обращении в поддержку.
+        code:
+          type: string
+          description: Строковый код ошибки.
+          example: DOES_NOT_EXIST
+        message:
+          type: string
+          description: Подробное описание ошибки.
+          example: Объект не существует
+        payload:
+          type: object
+          description: Дополнительная информация об ошибке. Может иметь разную структуру для разных ошибок.
+          nullable: true
+          example: {
+            "instruction_class": "dog",
+            "instruction_field": "example"
+          }
+
+    ItemError:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: string
+          description: Строковый код ошибки.
+          example: DOES_NOT_EXIST
+        message:
+          type: string
+          description: Подробное описание ошибки.
+          example: Объект не существует
+        payload:
+          type: object
+          description: Дополнительная информация об ошибке. Может иметь разную структуру для разных ошибок.
+          nullable: true
+          example: {
+            "instruction_class": "dog",
+            "instruction_field": "example"
+          }

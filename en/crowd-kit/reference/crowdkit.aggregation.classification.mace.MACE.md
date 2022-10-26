@@ -1,5 +1,5 @@
 # MACE
-`crowdkit.aggregation.classification.mace.MACE` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/mace.py#L67)
+`crowdkit.aggregation.classification.mace.MACE` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/mace.py#L67)
 
 ```python
 MACE(
@@ -53,8 +53,8 @@ In *Proceedings of NAACL-HLT*, Atlanta, GA, USA (2013), 1120–1130.
 `verbose`|**int**|<p>Whether to print progress. 0 — no progress bar, 1 — only for restarts, 2 — for both restarts and optimization. Default: 0.</p>
 `labels_`|**Optional\[Series\]**|<p>Tasks&#x27; labels. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s most likely true label.</p>
 `probas_`|**Optional\[DataFrame\]**|<p>Tasks&#x27; label probability distributions. A pandas.DataFrame indexed by `task` such that `result.loc[task, label]` is the probability of `task`&#x27;s true label to be equal to `label`. Each probability is between 0 and 1, all task&#x27;s probabilities should sum up to 1</p>
-`spamming_`|**ndarray**|<p>Posterior distribution of workers&#x27; spamming states.</p>
-`thetas_`|**ndarray**|<p>Posterior distribution of workers&#x27; spamming labels.</p>
+`spamming_`|**...**|<p>Posterior distribution of workers&#x27; spamming states.</p>
+`thetas_`|**...**|<p>Posterior distribution of workers&#x27; spamming labels.</p>
 
 **Examples:**
 

@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.classification.m_msr.MMSR.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/m_msr.py#L95)
+`crowdkit.aggregation.classification.m_msr.MMSR.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/m_msr.py#L95)
 
 ```python
 fit(self, data: DataFrame)

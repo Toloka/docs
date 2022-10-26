@@ -146,11 +146,13 @@ ID of the training pool. ||
 
 Requester ID. ||
 || **owner.myself** | **boolean**
+
 Checks who the object belongs to:
 
 - `true` — The user who made the request.
 - `false` — Another account (employee or owner). ||
 || **status** | **string**
+
 Training pool status:
 
 - `OPEN` — Open.

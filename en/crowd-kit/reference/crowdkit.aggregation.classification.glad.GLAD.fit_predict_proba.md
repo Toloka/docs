@@ -1,5 +1,5 @@
 # fit_predict_proba
-`crowdkit.aggregation.classification.glad.GLAD.fit_predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/glad.py#L315)
+`crowdkit.aggregation.classification.glad.GLAD.fit_predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/glad.py#L315)
 
 ```python
 fit_predict_proba(self, data: DataFrame)

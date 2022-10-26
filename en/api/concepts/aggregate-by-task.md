@@ -55,6 +55,7 @@ Title | Overview
 
 Task ID. ||
 || **pool_id** | **string**
+
 Pool ID. ||
 || **type** | **string**
 
@@ -97,6 +98,7 @@ Confidence in the aggregate response. ||
 
 Output data fields and aggregate response. ||
 || **pool_id** | **string**
+
 Pool ID. ||
 || **task_id** | **string**
 

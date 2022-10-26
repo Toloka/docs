@@ -179,7 +179,7 @@ The quality control rule. ||
 [Presets](quality_control.md) ||
 || **localization_config** | **object**
 
-Block of translations to other languages. For a complete list of parameters, see [Translations to other languages](#localization-config).
+Block of translations to other languages. The complete list of parameters is shown in the [Translations to other languages](#localization-config-section) table.
 
 For more information about translation, see [Translations to other languages](../../guide/concepts/project-languages.md). ||
 |#
