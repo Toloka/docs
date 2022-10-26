@@ -67,7 +67,7 @@ You can't insert the following in the instructions:
 - Frames.
 - Objects, audio players, or video players (the `object`, `audio` and `video` elements).
 
-    {% note info %}
+    {% note tip %}
 
     You can provide links to audio and video.
 
@@ -102,8 +102,8 @@ If you edit instructions in a project that already has completed tasks, you shou
 There are three options:
 
 - Put your instructions inside the task, but make sure that it doesn't clutter the interface.
-- Use [a side window]({{ instr-in-form-of-side-window }}) for your instructions so that the Toloker can quickly expand or collapse them.
-- [Hide the instructions in an expandable section]({{ hints-questions }}) or add hints for the individual interface elements.
+- Use a side window for your instructions so that the Toloker can quickly expand or collapse them.
+- Hide the instructions in an expandable section or add hints for the individual interface elements.
 
 For best results, we recommend that you pre-select the Tolokers that meet your requirements and set up the quality control rules.
 

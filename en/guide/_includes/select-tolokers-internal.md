@@ -64,7 +64,7 @@ The **Completed** field shows the number of completed tasks. If the number is `0
 
 {% cut "Find Tolokers with a skill" %}
 
-To find Tolokers by skill, use [filters](../../glossary.md#filtering):
+To find Tolokers by skill, use [filters](../../glossary.md#filters):
 
 1. Click **Add filter**.
 

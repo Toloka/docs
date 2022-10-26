@@ -14,7 +14,7 @@ Variations of button use:
 
 - Preventing the Toloker from completing the task if the link was not opened. Add the `"allowed_values":[true]` parameter in the output data description.
 
-To add the button with the link to the [task interface](../../../glossary.md#task-interface), use the `{{field type="button-clicked" name="[output field](../incoming.md) name>"}}` component. Example:
+To add the button with the link to the [task interface](../../../glossary.md#task-interface), use the `{{field type="button-clicked" name="output field name>"}}` component. Example:
 
 {% if locale == "en-com" %}
 
@@ -24,7 +24,7 @@ To add the button with the link to the [task interface](../../../glossary.md#tas
 
 {% endif %}
 
-For a complete list of parameters, see the [table](#table).
+For a complete list of parameters, see the [table](#parameters).
 
 Add a field of `Boolean` type to the output data description. To prevent the Toloker from sending responses without opening the link, add the `"allowed_values":[true]` parameter.
 

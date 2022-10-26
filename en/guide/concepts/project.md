@@ -279,7 +279,7 @@ You can also create your own interface. All the available tools are described in
 
 {% cut "How do I create a task using both input and output text fields?" %}
 
-You can see how it's implemented in the  template where a string-type output field is used. In the “Text recognition from an image” template, you can view how to describe text input fields. Please note that if you later want to use the Dawid-Skene aggregation method, you must specify allowed values.
+You can see how it's implemented in the “[Transcript of audio recordings](../tutorials/transcript-audio.md)” template where a string-type output field is used. In the “Text recognition from an image” template, you can view how to describe text input fields. Please note that if you later want to use the Dawid-Skene aggregation method, you must specify allowed values.
 
 {% endcut %}
 

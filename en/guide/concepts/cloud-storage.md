@@ -1,6 +1,6 @@
 # Where to store files
 
-If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the [file with tasks](../../glossary.md#tsv-file-definition).
+If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the [file with tasks](../../glossary.md#tsv).
 
 If you need less than 10 images (for example, for task instructions or for testing a pool), use photo hosting. If you need to add more images, or audio and video files, use cloud storage.
 

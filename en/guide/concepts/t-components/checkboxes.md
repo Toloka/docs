@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To insert a checkbox in a task, use the `{{field type="checkbox" name="<[output field](../incoming.md)> name"}}` component. For example, a set of three checkboxes:
+To insert a checkbox in a task, use the `{{field type="checkbox" name="<output field> name"}}` component. For example, a set of three checkboxes:
 
 {% if locale == "en-com" %}
 

@@ -170,7 +170,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
 
@@ -273,7 +273,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Save the file.
 
-1. Upload the resulting [file](../../glossary.md#tsv-file-definition).
+1. Upload the resulting [file](../../glossary.md#tsv).
 
     1. Click **Upload**. In the window that opens, configure the file upload settings.
 

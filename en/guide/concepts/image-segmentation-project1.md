@@ -142,7 +142,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 1. Save the changes.
 
-1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#task-instruction) and add an image.
+1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#instructions) and add an image.
 
     1. **Instructions:**{% if locale == "en-com" %}
 
@@ -203,7 +203,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 ## Upload tasks {#upload-file}
 
-Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
+Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv) with tasks.
 
 1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
 
@@ -229,7 +229,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     1. Click {% if locale == "en-com" %}**Upload**{% endif %}.
 
-    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition) with tasks to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
+    1. In the window that opens, choose the [file](../../glossary.md#tsv) with tasks to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
 
     1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
 

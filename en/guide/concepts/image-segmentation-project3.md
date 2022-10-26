@@ -268,7 +268,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 ## Prepare and upload the results file. {#upload_file}
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
+1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
     1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 2](image-segmentation-project2.md).
     1. Leave the `INPUT:image` column unchanged.

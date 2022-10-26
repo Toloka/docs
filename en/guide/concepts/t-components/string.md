@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add a string input field to the task, use the `{{field type="input" name="<[output field](../incoming.md)> name"}}` component. Example:
+To add a string input field to the task, use the `{{field type="input" name="<output field> name"}}` component. Example:
 
 {% if locale == "en-com" %}
 

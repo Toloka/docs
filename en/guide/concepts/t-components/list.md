@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add a dropdown list to the task, use `{{#field type="select" name="<output field [name](../incoming.md)>"}}... {{/field}}`. The entries in the dropdown list are created using the nested expression ``not_var{{select_item}}``. Example:
+To add a dropdown list to the task, use `{{#field type="select" name="<output field name>"}}... {{/field}}`. The entries in the dropdown list are created using the nested expression ``not_var{{select_item}}``. Example:
 
 {% if locale == "en-com" %}
 

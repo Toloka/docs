@@ -8,7 +8,7 @@ Some quality control rules have the **Remember values** parameter. It sets the d
 
 - In [task suites](../../glossary.md#task-suite): the [Fast responses](quick-answers.md) rule, the **Recent task suites to use** field.
 
-- In [captcha entries](../../glossary.md#captcha-rule): the [Captcha](captcha.md) rule, the ** Recent captchas to use** field.
+- In [captcha entries](../../glossary.md#captcha): the [Captcha](captcha.md) rule, the ** Recent captchas to use** field.
 
 ## How it works {#how-field-works}
 
@@ -142,7 +142,7 @@ In our example, the **Remember values** parameter is set in the **Recent control
 
 {% endlist %}
 
-{% note info %}
+{% note alert "Important" %}
 
 - If you have previously filled in the **Recent control and training task responses to use** field, you can't change it to empty. But you can delete the rule and create a new one.
 

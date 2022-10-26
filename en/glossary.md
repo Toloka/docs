@@ -36,7 +36,7 @@ Certified partners {#certified-partners}
 
 : Companies that take on the launch and implementation of your project and help you process the results. These companies have already integrated crowdsourcing into their business processes and offer excellent solutions.
 
-Checking completed tasks
+Checking completed tasks {#checking-completed-tasks}
 
 : Manually checking the responses received by the requester. The requester accepts or rejects the responses. Rejected responses aren't paid for.
 
@@ -341,7 +341,7 @@ Toloker rating {#toloker-rating}
 
 : The Toloker's rating reflects the quality of the Toloker's responses to tasks. It takes into account responses to [control tasks](#control-task), bans, and periods without work. The rating is calculated as the weighted average value for the last few weeks. So the rating can “suddenly” decrease or increase.
 
-Training
+Training {#training}
 
 : A main [pool](#pool) that consists only of [training tasks](#training-task) and can have zero cost.
 

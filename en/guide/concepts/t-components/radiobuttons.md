@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add radio buttons to the task, use the `{{field type="radio" name="<[output field](../incoming.md) name>"}}` component. For example, a set of two radio buttons:
+To add radio buttons to the task, use the `{{field type="radio" name="<output field name>"}}` component. For example, a set of two radio buttons:
 
 {% if locale == "en-com" %}
 

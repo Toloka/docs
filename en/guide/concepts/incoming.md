@@ -288,7 +288,7 @@ Whether the Toloker's response is required in the output data.
 By default, fields are optional — `false`.||
 ||{% if locale == "ru-ru" %}**Hidden**{% endif %}{% if locale == "en-com" %}**Hidden**{% endif %} | `hidden` | Allows you to hide data from the Toloker. If this is not done, Tolokers can get the field value programmatically. You can configure this parameter in JSON mode.
 
-For example, you can hide the `assigment_id` identifier you will need when [reviewing assignments](../../glossary.md#left-off-acceptance) in a separate project.
+For example, you can hide the `assigment_id` identifier you will need when [reviewing assignments](../../glossary.md#assignment-review) in a separate project.
 
 By default, the field is visible — `false`.
 

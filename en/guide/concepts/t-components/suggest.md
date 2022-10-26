@@ -94,7 +94,7 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
 
      {% endcut %}
 
-  1. Add the `{{field type="suggest" name="< [output field](../incoming.md) name>" source=<array name>}}` component to the **HTML** code. Example:
+  1. Add the `{{field type="suggest" name="<output field name>" source=<array name>}}` component to the **HTML** code. Example:
 
       ```plaintext
       {{field type="suggest" name="result" source=countries allowCustomInput=true}}
@@ -102,7 +102,7 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
 
 - Individual suggestions
 
-  1. Add the `{{field type="suggest" name="<[output field](../incoming.md) name>" source=<[input field](../incoming.md) name>}}` component to the **HTML** code. Example:
+  1. Add the `{{field type="suggest" name="<output field name>" source=<input field name>}}` component to the **HTML** code. Example:
 
       ```plaintext
       {{field type="suggest" name="result" source=countries allowCustomInput=true}}
@@ -119,7 +119,7 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
       }
       ```
 
-  1. [Escape](../pool_csv.md#json) the data and add it to the [file with tasks](../../../glossary.md#tsv-file-definition).
+  1. [Escape](../pool_csv.md#json) the data and add it to the [file with tasks](../../../glossary.md#tsv).
 
       {% cut "Example" %}
 

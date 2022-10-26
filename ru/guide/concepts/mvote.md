@@ -4,7 +4,7 @@
 
 {% note info %}
 
-Учитываются только [обычные задания](../../glossary.md#general-task-p), ответы на [контрольные](../../glossary.md#control-task-p) и [обучающие](../../glossary.md#training-task) задания игнорируются.
+Учитываются только [обычные задания](../../glossary.md#general-task), ответы на [контрольные](../../glossary.md#control-task) и [обучающие](../../glossary.md#training-task) задания игнорируются.
 
 {% endnote %}
 

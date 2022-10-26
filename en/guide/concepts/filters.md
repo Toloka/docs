@@ -64,7 +64,7 @@ Use filters from this group to select Tolokers by the main profile data.
 
 {% cut "Languages" %}
 
-Make sure to add the {% if locale == "en-com" %}**Languages**{% endif %} filter and specify the language of the [instructions](../../glossary.md#task-instruction) and text in the task.
+Make sure to add the {% if locale == "en-com" %}**Languages**{% endif %} filter and specify the language of the [instructions](../../glossary.md#instructions) and text in the task.
 
 If you want to be sure that Tolokers can read and understand the basic vocabulary, select those who passed a language test.
 
@@ -148,7 +148,7 @@ If your project contains field tasks, you need to select mobile Toloka users amo
 
 Add this filter to select users of certain operating systems.
 
-{% note info %}
+{% note tip %}
 
 To select the most popular desktop operating systems — MacOS, Windows, and Linux, add the {% if locale == "en-com" %}**Operating system**{% endif %} filter. Use the `=` operator to set the value as `Windows`. Use the ![](../_images/add.svg) button to add the second value, `MacOS`. Then click ![](../_images/add.svg) again and set the third value, `Linux`.
 

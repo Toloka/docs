@@ -156,9 +156,9 @@ Add input data to check if files or text hints are displayed on the task suite. 
 
   1. Check whether the fields are filled in correctly in the {% if locale == "en-com" %}**Table**{% endif %}.
 
-    If the column headers are invalid, you will get the message "Error loading the file".
+      If the column headers are invalid, you will get the message "Error loading the file".
 
-    If the value of the required input field is not specified, or the number of fields in the header and row do not match, the task won't load. Refresh the page to return to viewing, correct the errors in the file, and load it again.
+      If the value of the required input field is not specified, or the number of fields in the header and row do not match, the task won't load. Refresh the page to return to viewing, correct the errors in the file, and load it again.
 
   1. Click {% if locale == "en-com" %}**Apply**{% endif %}.
 
@@ -168,7 +168,7 @@ Add input data to check if files or text hints are displayed on the task suite. 
 
   1. Fill in the data for verification in [JSON format]({{ json-format }}).
 
-    If the box is bordered in red, the JSON is not valid and the data won't be saved.
+      If the box is bordered in red, the JSON is not valid and the data won't be saved.
 
   1. Click {% if locale == "en-com" %}**Apply**{% endif %}.
 
@@ -289,7 +289,7 @@ The names of the output fields must differ: each checkbox must have its own uniq
 
 {% cut "How can I do it in JS so that if the checkbox is selected, the link is not required, but if the link is inserted, the checkbox is cleared?" %}
 
-1. See how this is implemented in the  template.
+1. See how this is implemented in the “[Mining business contacts](../tutorials/internet-search.md)” template.
 
 1. To solve the second problem, you can add another validation like this:
 

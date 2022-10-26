@@ -36,7 +36,7 @@
 ||**Поле**|**Описание**||
 ||{% if locale == "ru-ru" %}**Если**{% endif %}{% if locale == "en-com" %}**If**{% endif %} | Условие, при котором выполняется действие в поле {% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %}:
 
-- {% if locale == "ru-ru" %}**заработок за 24 часа**{% endif %}{% if locale == "en-com" %}**earned in last 24 hours**{% endif %} — сумма заработка исполнителя за [выполненные задания](../../glossary.md#submitted-answers) в пуле за последние 24 часа.||
+- {% if locale == "ru-ru" %}**заработок за 24 часа**{% endif %}{% if locale == "en-com" %}**earned in last 24 hours**{% endif %} — сумма заработка исполнителя за [выполненные задания](../../glossary.md#completed-tasks) в пуле за последние 24 часа.||
 ||{% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %} | Действие, выполняемое при условии:
 
 - {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %} — закрыть доступ к проекту или всем проектам заказчика на указанное количество дней. Причина блокировки отображается только заказчику.

@@ -6,7 +6,7 @@
 
 {% endnote %}
 
-Чтобы добавить в задание кнопку для записи и загрузки аудио, используйте компонент `{{field type="file" sources="RECORDER" fileType="AUDIO" name="<название [выходного поля](../incoming.md)>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. Например:
+Чтобы добавить в задание кнопку для записи и загрузки аудио, используйте компонент `{{field type="file" sources="RECORDER" fileType="AUDIO" name="<название выходного поля>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. Например:
 
 {% if locale == "ru-ru" %}
 
@@ -22,7 +22,7 @@
 
 {% endif %}
 
-Полный список параметров см. в [таблице](#table).
+Полный список параметров см. в [таблице](#parametry).
 
 В описании [выходных данных](../incoming.md) добавьте поле с типом `file`. Например:
 

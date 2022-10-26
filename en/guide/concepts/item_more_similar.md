@@ -1,6 +1,6 @@
 # Project 4. Which of the found items is most similar to the original?
 
-In this [project](../../glossary.md#project), Tolokers compare images of shoes with the original image and decide which pair of images is most similar. To make a comparison in the project, add the results from the [second project](find_an_item_in_store.md). To learn how, see **Prepare and upload a [file](../../glossary.md#tsv-file-definition) with tasks**.
+In this [project](../../glossary.md#project), Tolokers compare images of shoes with the original image and decide which pair of images is most similar. To make a comparison in the project, add the results from the [second project](find_an_item_in_store.md). To learn how, see **Prepare and upload a [file](../../glossary.md#tsv) with tasks**.
 
 ## Create a project {#create_project}
 
@@ -237,7 +237,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
 

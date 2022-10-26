@@ -25,7 +25,7 @@ The time is updated as task suites are completed by Tolokers.||
 ||{% if locale == "en-com" %}**Budget spent (+ fee)**{% endif %} | The amount of money spent in the pool. The [fee](budget.md) amount is shown in parentheses.
 
 Please note that the minimum fee is $0.005.||
-||{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | The amount of money spent and expected costs (if all the tasks are completed and all responses are approved). The [fee](../../glossary.md#comission-fee) amount is shown in parentheses.||
+||{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | The amount of money spent and expected costs (if all the tasks are completed and all responses are approved). The [fee](../../glossary.md#fee) amount is shown in parentheses.||
 ||{% if locale == "en-com" %}**Active Tolokers with access to pool**{% endif %} | The number of Tolokers selected for the pool with [filters](filters.md). The number includes only Tolokers who viewed and completed tasks in Toloka in the recent hour.||
 ||{% if locale == "en-com" %}**Interested in pool**{% endif %} | The number of Tolokers who started or completed at least one task suite.
 

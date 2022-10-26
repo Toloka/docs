@@ -8,6 +8,8 @@ This section describes how to add an area selection editor to an image using the
 
 The editor lets you select an area of the image using either a rectangle or an arbitrary polygon:
 
+![](../../_images/interface-configuration/img-annotation.png)
+
 {% note info %}
 
 Don't add [training or control tasks](../pool.md) to a [project](../../../glossary.md#project) that features an image area selection editor.
@@ -16,54 +18,58 @@ Don't add [training or control tasks](../pool.md) to a [project](../../../glossa
 
 ## Adding the editor {#adding_editor}
 
-#### Picture
+{% list tabs %}
 
-If you need to add an image editor without selected objects:
+- Picture
 
-1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../../_images/settings.svg) in the **Task interface** block on the project page).
+  If you need to add an image editor without selected objects:
 
-1. Include the `{{field type="image-annotation"``name="<[output field](../incoming.md) name>"``src=<image URL>}}` component in the HTML code of the interface. For example:
+  1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../../_images/settings.svg) in the **Task interface** block on the project page).
 
-    ```html
-    {{field type="image-annotation" name="result" src=image}}
-    ```
+  1. Include the `{{field type="image-annotation"``name="<output field name>"``src=<image URL>}}` component in the HTML code of the interface. For example:
 
-    For a complete list of parameters, see the [table](#image-annotation).
+      ```html
+      {{field type="image-annotation" name="result" src=image}}
+      ```
 
-1. Add a field for entering an image link in the [input data](../incoming.md).
+      For a complete list of parameters, see the [table](#parameters).
 
-1. Add the `result` field with the **json** type in the output data.
+  1. Add a field for entering an image link in the [input data](../incoming.md).
 
-The `result` field will be used for a JSON object with the point coordinates. Example:
+  1. Add the `result` field with the **json** type in the output data.
 
-```json
-[{"data":{"p1":{"x":0.472,"y":0.413},"p2":{"x":0.932,"y":0.877}},"type":"rectangle"},
-{"data":[{"x":0.143,"y":0.807},{"x":0.317,"y":0.87},{"x":0.511,"y":0.145},{"x":0.328,"y":0.096},{"x":0.096,"y":0.554}],"type":"polygon"}]
-```
+  The `result` field will be used for a JSON object with the point coordinates. Example:
 
-The _x_ and _y_ values are numbers from 0 to 1. Length and width of the image are taken as 1, with the center of coordinates in the upper-left corner of the image.
+  ```json
+  [{"data":{"p1":{"x":0.472,"y":0.413},"p2":{"x":0.932,"y":0.877}},"type":"rectangle"},
+  {"data":[{"x":0.143,"y":0.807},{"x":0.317,"y":0.87},{"x":0.511,"y":0.145},{"x":0.328,"y":0.096},{"x":0.096,"y":0.554}],"type":"polygon"}]
+  ```
 
-#### Images with selected objects
+  The _x_ and _y_ values are numbers from 0 to 1. Length and width of the image are taken as 1, with the center of coordinates in the upper-left corner of the image.
 
-If you have images with selected objects and you want to upload them to the task:
+- Images with selected objects
 
-1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../../_images/settings.svg) in the **Task interface** block on the project page).
+  If you have images with selected objects and you want to upload them to the task:
 
-1. Include the `{{field type="image-annotation"``name="<[output field](../incoming.md) name>"``src=<image URL>``annotations=<[input field](../incoming.md) name>}}` component in the interface HTML code. Example:
+  1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../../_images/settings.svg) in the **Task interface** block on the project page).
 
-    ```html
-    {{field type="image-annotation" name="result" src=image annotations=polygon}}
-    ```
+  1. Include the `{{field type="image-annotation"``name="<output field name>"``src=<image URL>``annotations=<input field name>}}` component in the interface HTML code. Example:
 
-1. Add the following in the [input data](../incoming.md):
+      ```html
+      {{field type="image-annotation" name="result" src=image annotations=polygon}}
+      ```
 
-    - A field for entering an image link.
+  1. Add the following in the [input data](../incoming.md):
 
-    - The `polygon` field with the **json** type to pass the coordinates of the selected area.
+      - A field for entering an image link.
 
-1. Add the `result` field with the **json** type in the output data. A field for recording results is required for this component. If the Toloker edits the selected area, the updated coordinates are recorded there.
+      - The `polygon` field with the **json** type to pass the coordinates of the selected area.
 
-1. [Escape](../pool_csv.md#json) JSON with point coordinates and add it to the [file with tasks](../../../glossary.md#tsv-file-definition).
+  1. Add the `result` field with the **json** type in the output data. A field for recording results is required for this component. If the Toloker edits the selected area, the updated coordinates are recorded there.
+
+  1. [Escape](../pool_csv.md#json) JSON with point coordinates and add it to the [file with tasks](../../../glossary.md#tsv).
+
+{% endlist %}
 
 #### Parameters
 
@@ -96,7 +102,7 @@ By default, you can use the following keyboard shortcuts in the task:
 
 - **Shift+Tab** moves from the selected point to the previous one.
 
-Tell Tolokers about keyboard shortcuts in the [instructions](../../../glossary.md#task-instruction) to speed up task completion.
+Tell Tolokers about keyboard shortcuts in the [instructions](../../../glossary.md#instructions) to speed up task completion.
 
 ## Selection tools {#selection_tools}
 

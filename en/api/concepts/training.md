@@ -1,6 +1,6 @@
 # Overview
 
-[A training pool](../../glossary.md#training-tasks) includes unpaid task suites. The training pool must be linked to the main pool.
+[A training pool](../../glossary.md#training-task) includes unpaid task suites. The training pool must be linked to the main pool.
 
 After completing the training pool, the Toloker is assigned a skill equal to the percentage of correct responses. If the percentage is higher than or equal to the **Level required** value in the linked pool, the Toloker gets access to the main pool.
 

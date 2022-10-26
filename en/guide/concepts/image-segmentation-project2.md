@@ -148,7 +148,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
         {% cut "What is non-automatic acceptance (assignment review)?" %}
 
-        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
         {% endcut %}
 
@@ -222,7 +222,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Prepare and upload tasks {#upload-file}
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
+1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
     1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](image-segmentation-project1.md).
 

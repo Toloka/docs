@@ -79,6 +79,6 @@
 
 ## Если не нашли нужный компонент {#schema}
 
-В [списке условий](../reference/conditions.md) приведены все доступные компоненты с именем `conditions.*`. Если среди них вы не нашли подходящий или хотите использовать готовую [конфигурацию](../../glossary.md#konfig), то настройте любую проверку через [condition.schema](../reference/condition.schema.md), описав ее в формате [JSON Schema]({{ json-schema }}).
+В [списке условий](../reference/conditions.md) приведены все доступные компоненты с именем `conditions.*`. Если среди них вы не нашли подходящий или хотите использовать готовую [конфигурацию](../../glossary.md#configuration), то настройте любую проверку через [condition.schema](../reference/condition.schema.md), описав ее в формате [JSON Schema]({{ json-schema }}).
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

@@ -1,6 +1,6 @@
 # Как загрузить задания
 
-Чтобы загрузить [файл с заданиями](../../glossary.md#tsv-file-definition) в [пул](pool-main.md):
+Чтобы загрузить [файл с заданиями](../../glossary.md#tsv) в [пул](pool-main.md):
 
 1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить данные**{% endif %}{% if locale == "en-com" %}**Upload data**{% endif %}.
 

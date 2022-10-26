@@ -2,7 +2,7 @@
 
 ## Dynamic overlap {#dynamic-overlap}
 
-[Dynamic overlap](../../glossary.md#dynamic-overlapu) (also known as incremental relabeling or IRL) saves your budget by not setting a fixed [overlap](../../glossary.md#overlap) for all tasks in the [pool](../../glossary.md#pool). An algorithm determines how many Tolokers should complete the same task in order to get a reliable result, based on the Toloker [skill](../../glossary.md#skill) levels and the consistency of their responses. It works well for tasks with response options and an overlap of 2-5 (like [classification](../tutorials/image-classification.md) tasks). [Learn more about dynamic overlap](dynamic-overlap.md)
+[Dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL) saves your budget by not setting a fixed [overlap](../../glossary.md#overlap) for all tasks in the [pool](../../glossary.md#pool). An algorithm determines how many Tolokers should complete the same task in order to get a reliable result, based on the Toloker [skill](../../glossary.md#skill) levels and the consistency of their responses. It works well for tasks with response options and an overlap of 2-5 (like [classification](../tutorials/image-classification.md) tasks). [Learn more about dynamic overlap](dynamic-overlap.md)
 
 ## Toloker selection: training — exam — retry {#selection}
 

@@ -48,14 +48,14 @@ If you are working with Russian-language texts in the task, you don't need to di
 
 If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md) | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Captcha frequency**{% endif %} | The frequency of [captcha](../../glossary.md#captcha-rule) display:
+||{% if locale == "en-com" %}**Captcha frequency**{% endif %} | The frequency of [captcha](../../glossary.md#captcha) display:
 
 - “No” — Don't show captchas.
 - “Low” — Show a captcha after every 20 assignments.
 - “Medium”/ “High” — Show a captcha after every 10 assignments.
 
 To show the captcha to Tolokers, set [the quality control rule](captcha.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
-||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#submitted-answers) manually.
+||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
 Set the time period when you can check the tasks and reject them if the results are poor.
 
@@ -110,7 +110,7 @@ The uploaded tasks are grouped in pages and given to Tolokers in random order. W
 
 {% cut "Example" %}
 
-If you specified 2 tasks per page when uploading the [TSV file](../../glossary.md#tsv-file-definition) with image links to the pool, the system can generate them as follows:
+If you specified 2 tasks per page when uploading the [TSV file](../../glossary.md#tsv) with image links to the pool, the system can generate them as follows:
 
 #|
 ||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
@@ -162,7 +162,7 @@ Tolokers can't see pools inside the project and select specific tasks (except fo
 
 If at least one pool from the project is available to the Toloker, then this project is displayed on the main page as a card with the name, description, and price for the task. After selecting a project, the Toloker is issued a task from the pool. When they complete it, another one is issued, and so on.
 
-A single project card is displayed if the pools in it differ only by name, quality control, or [filters](../../glossary.md#filtering). In the latter case, the project card only includes tasks from the pools that the Toloker has access to.
+A single project card is displayed if the pools in it differ only by name, quality control, or [filters](../../glossary.md#filters). In the latter case, the project card only includes tasks from the pools that the Toloker has access to.
 
 {% cut "Tolokers see one project card" %}
 
@@ -209,7 +209,7 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 {% endcut %}
 

@@ -10,11 +10,11 @@ To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**D
 
 #### Fields in the file with responses
 
-- `INPUT:<name of the [input data](incoming.md) field>` — Input data for tasks.
+- `INPUT:<name of the input data field>` — Input data for tasks.
 
-- `OUTPUT:<name of the [output data](incoming.md) field>` — The Tolokers' responses. For [training tasks](../../glossary.md#training-task), the field includes first attempted answers.
+- `OUTPUT:<name of the output data field>` — The Tolokers' responses. For [training tasks](../../glossary.md#training-task), the field includes first attempted answers.
 
-- `GOLDEN:<name of the [output data](incoming.md) field>` — Responses for [control tasks](../../glossary.md#control-task).
+- `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
 
 - `HINT:text` — Hints for training tasks.
 
@@ -62,7 +62,7 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#completed-tasks) incorrectly to a new pool.
 
 {% endcut %}
 

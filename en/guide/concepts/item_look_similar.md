@@ -150,7 +150,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
 
@@ -257,7 +257,7 @@ To create a pool:
 
     1. Click **Download results**.
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
+1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
     1. Leave the `INPUT:image` column unchanged.
 
@@ -346,7 +346,7 @@ You can check the results in two ways:
 
 #### Review assignments in the file with the results
 
-To review the [submitted assignments](../../glossary.md#submitted-answers):
+To review the [submitted assignments](../../glossary.md#completed-tasks):
 
 1. In the text or spreadsheet editor, open the file that you received after aggregating the results.
 
