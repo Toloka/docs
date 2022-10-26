@@ -30,7 +30,7 @@ After you decompose your project:
 
 - It is easier to set up shortcuts in the [task interface](../../glossary.md#task-interface), which also speeds up the work of Tolokers.
 
-- Task [instructions](../../glossary.md#task-instruction) will be shorter, clearer, and more Toloker-friendly.
+- Task [instructions](../../glossary.md#instructions) will be shorter, clearer, and more Toloker-friendly.
 
 - You can make tasks cheaper for the reasons above.
 
@@ -56,11 +56,11 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#left-off-acceptance) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
+- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#assignment-review) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
     {% note alert %}
 
-    In the assignments review, specify the [review period](../../glossary.md#review-time) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
+    In the assignments review, specify the [review period](../../glossary.md#review-period) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
 
     {% endnote %}
 

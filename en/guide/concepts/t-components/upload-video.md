@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add a video upload button to the task, use the `{{field type= "file" name="[output field name](../incoming.md)> "sources="<sources parameter>" fileType="<fileType parameter>"}}` component.
+To add a video upload button to the task, use the `{{field type= "file" name="output field name> "sources="<sources parameter>" fileType="<fileType parameter>"}}` component.
 
 For example, to add a video recording button, use:
 
@@ -14,7 +14,7 @@ For example, to add a video recording button, use:
 `{{field type="file" name="result" sources="CAMERA" fileType="VIDEO"}}`
 ```
 
-For a complete list of parameters, see the [table](#table_param).
+For a complete list of parameters, see the [table](#parameters).
 
 In the [output data](../incoming.md) description, add one of the fields:
 
@@ -40,7 +40,7 @@ In the [output data](../incoming.md) description, add one of the fields:
     }
     ```
 
-Run tasks with a video recording button on mobile devices, since they have a built-in camera. Set the **Client = Mobile Toloka**[filter](../filters.md) in the [pool](../../../glossary.md#pool).
+Run tasks with a video recording button on mobile devices, since they have a built-in camera. Set the **Client = Mobile Toloka** [filter](../filters.md) in the [pool](../../../glossary.md#pool).
 
 #### Parameters
 

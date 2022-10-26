@@ -126,7 +126,7 @@ The Toloker will have 5 attempts to pass the test in this case. If they fail to 
 
 ## Retry {#rehab}
 
-If the Toloker doesn't cope with the general tasks after passing the exam, they're banned. However, you can create a [retry pool](../../glossary.md#reab-pool) for them. When a Toloker becomes good at retry tasks, you can give them access to the general tasks.
+If the Toloker doesn't cope with the general tasks after passing the exam, they're banned. However, you can create a [retry pool](../../glossary.md#retry-pool) for them. When a Toloker becomes good at retry tasks, you can give them access to the general tasks.
 
 {% note info %}
 

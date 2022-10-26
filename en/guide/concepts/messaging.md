@@ -1,6 +1,6 @@
 # Communication
 
-Answer questions about tasks. Send out a group message if there are changes in the tasks (for example, the [instructions](../../glossary.md#task-instruction) were edited, or [skill](../../glossary.md#skill) calculation has changed).
+Answer questions about tasks. Send out a group message if there are changes in the tasks (for example, the [instructions](../../glossary.md#instructions) were edited, or [skill](../../glossary.md#skill) calculation has changed).
 
 {% note info %}
 

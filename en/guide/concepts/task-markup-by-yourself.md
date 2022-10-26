@@ -86,7 +86,7 @@ When creating control tasks, enter only correct responses that answer the questi
 
 1. Find the task in the list and click ![](../_images/location-job/task-edit/task-action-delete.png). You can also delete a task from the pool in [editing mode](#task-edit).
 
-{% note info %}
+{% note tip %}
 
 If you set the overlap to 0 [via the API]({{ toloka-api-stop-assigning-tasks }}), the task won't be visible to Tolokers, and you won't have to delete it.
 
@@ -262,7 +262,7 @@ The same task may appear on different pages if:
 
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 
-- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
+- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 

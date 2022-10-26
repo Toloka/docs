@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add a multi-line text field to a task, use the `{{field type="textarea" name="<[output field](../incoming.md) name>"}}` component. Example:
+To add a multi-line text field to a task, use the `{{field type="textarea" name="<output field name>"}}` component. Example:
 
 ```plaintext
 {{field type="textarea" name="result" width="270px" rows=5}}

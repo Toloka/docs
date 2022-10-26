@@ -13,7 +13,7 @@ To download the history of skill changes:
 1. Open the downloaded file and choose a pipe `|` as a separator. The file may contain the following fields:
 
     - `worker_id` — Toloker ID.
-    - `pool_id` — ID of the pool where the skill is used as a [filter](../../glossary.md#filtering) or in a [quality control rule](../../glossary.md#quality-control). If the value is empty, it means that the skill was assigned to the Toloker manually.
+    - `pool_id` — ID of the pool where the skill is used as a [filter](../../glossary.md#filters) or in a [quality control rule](../../glossary.md#quality-control). If the value is empty, it means that the skill was assigned to the Toloker manually.
     - `skill_id` — Skill ID.
     - `skill_name` — Skill name.
     - `value` — Skill value.
@@ -53,7 +53,7 @@ Yes, of course — you can use the same skill for different projects. But most o
 
 {% cut "More than 500 Tolokers passed the training, but the training skill shows only 30." %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banning-tolokers)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 {% endcut %}
 

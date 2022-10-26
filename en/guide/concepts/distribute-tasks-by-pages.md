@@ -38,7 +38,7 @@ This method is useful if the created pool:
 
 - Tasks in the suite are mixed up before the page is shown to the Toloker.
 
-- If there aren't enough general tasks and the {% if locale == "en-com" %}**Assign partial page**{% endif %} option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-page). Please note that the number of control and training tasks in this case must be complete.
+- If there aren't enough general tasks and the {% if locale == "en-com" %}**Assign partial page**{% endif %} option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-task-suite). Please note that the number of control and training tasks in this case must be complete.
 
 {% note alert %}
 
@@ -108,9 +108,9 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 If you upload tasks from the Toloka interface, infinite overlap is set automatically for control and training tasks, so that there is enough to mark up all general tasks.
 
-You can set the overlap via the [Toloka API](../../glossary.md#api-yandex-toloka) or use {% if locale == "en-com" %}**Set manually**{% endif %} for task allocation.
+You can set the overlap via the [Toloka API](../../glossary.md#toloka-api) or use {% if locale == "en-com" %}**Set manually**{% endif %} for task allocation.
 
-{% note info %}
+{% note alert "Important" %}
 
 Set infinite overlap for control tasks.
 
@@ -120,9 +120,9 @@ If another overlap value is set, control tasks may end during labeling and the p
 
 ## Tips and recommendations {#tips}
 
-- If you used {% if locale == "en-com" %}**Set manually**{% endif %}, you can find out the number of tasks per suite in the pool settings. But some suites may be [incomplete](../../glossary.md#incomplete-page).
+- If you used {% if locale == "en-com" %}**Set manually**{% endif %}, you can find out the number of tasks per suite in the pool settings. But some suites may be [incomplete](../../glossary.md#incomplete-task-suite).
 
-- If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#api-yandex-toloka) to check task distribution across suites.
+- If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#toloka-api) to check task distribution across suites.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -154,7 +154,7 @@ The same task may appear on different pages if:
 
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 
-- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
+- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 

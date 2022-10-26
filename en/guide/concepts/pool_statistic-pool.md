@@ -115,7 +115,7 @@ You can also increase or decrease the number of tasks per suite and adjust the p
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | The amount of money spent and expected costs (if all the tasks are completed and all responses are approved). The [fee](../../glossary.md#comission-fee) amount is shown in parentheses.
+||{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | The amount of money spent and expected costs (if all the tasks are completed and all responses are approved). The [fee](../../glossary.md#fee) amount is shown in parentheses.
 
 {% cut "Recommendations" %}
 

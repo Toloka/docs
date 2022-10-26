@@ -7,7 +7,7 @@ You can aggregate responses in two ways:
 - Yes — Aggregate responses by skill (`WEIGHTED_DYNAMIC_OVERLAP`).
 - No — Aggregate responses using the Dawid-Skene method (`DAWID_SKENE`).
 
-    The Dawid-Skene aggregation model works with [control](../../glossary.md#control) and [training](../../glossary.md#training-tasks) tasks as well as with general tasks. Responses specified for control tasks might not match the actual responses to the task if Tolokers often submit an incorrect response to it.
+    The Dawid-Skene aggregation model works with [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks as well as with general tasks. Responses specified for control tasks might not match the actual responses to the task if Tolokers often submit an incorrect response to it.
 
     The Dawid-Skene aggregation model automatically evaluates `|L|²` parameters for each Toloker, where `L` is the number of different aggregation values. Note that these parameters are determined automatically and are only used in calculations.
 

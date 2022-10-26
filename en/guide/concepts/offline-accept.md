@@ -48,7 +48,7 @@ You can review responses manually or with the help of Tolokers by posting [a sep
 
 - You can't **reject (or accept)** one response on the page — **only the entire page** with all responses on it.
 
-- If [the Toloker is banned](../../glossary.md#banned-worker) by [the quality control rules](../../glossary.md#quality-control-rules), their responses still need to be checked.
+- If [the Toloker is banned](../../glossary.md#banning-tolokers) by [the quality control rules](../../glossary.md#quality-control-rule), their responses still need to be checked.
 
 {% note info %}
 

@@ -183,7 +183,7 @@
 
 1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
-1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#task-instruction).
+1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#instructions).
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
 
@@ -291,7 +291,7 @@
 
 1. Сохраните файл.
 
-1. Загрузите получившийся [файл](../../glossary.md#tsv-file-definition).
+1. Загрузите получившийся [файл](../../glossary.md#tsv).
 
     1. Нажмите кнопку **Загрузить**. В открывшемся окне настройте параметры загрузки файла.
 

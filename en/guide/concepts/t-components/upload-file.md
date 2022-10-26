@@ -6,13 +6,13 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add a file upload button to the task, use the `{{field type= "file" name="[output field name](../incoming.md)> "sources="<sources parameter>" fileType="<fileType parameter>"}}` component. Example:
+To add a file upload button to the task, use the `{{field type= "file" name="output field name> "sources="<sources parameter>" fileType="<fileType parameter>"}}` component. Example:
 
 ```plaintext
 `{{field type="file" name="result" sources="GALLERY" fileType="IMAGE_OR_VIDEO"}}`
 ```
 
-For a complete list of parameters, see the [table](#table).
+For a complete list of parameters, see the [table](#parameters).
 
 In the [output data](../../../glossary.md#input-output-data) description, add one of the fields:
 

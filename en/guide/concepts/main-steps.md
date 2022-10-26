@@ -34,7 +34,7 @@ If you have a complex project, register in the [sandbox](sandbox.md) and create 
 
     After starting the pool, watch for incoming [messages](messaging.md) from Tolokers during the first hour. Usually Tolokers report problems with tasks quickly.
 
-1. [Check the responses](accept.md) if you chose to [review assignments](../../glossary.md#left-off-acceptance) when configuring the pool.
+1. [Check the responses](accept.md) if you chose to [review assignments](../../glossary.md#assignment-review) when configuring the pool.
 
 1. [Process the results](result-of-eval.md). If the response quality is poor, try to find out why. You may need to edit the instructions or add more tasks to the training.
 

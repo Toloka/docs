@@ -40,7 +40,7 @@ If you're using an empty template:
 
 1. In the **Task interface** block on the project editing page, click ![](../../_images/settings.svg)
 
-1. In the **Libraries ** block, add:
+1. In the **Libraries** block, add:
 
     - JS `toloka-handlebars-templates.js`
 
@@ -211,6 +211,7 @@ You can change the name and color of the tag and the assigned hotkey. You can't 
 {% cut "Example of the JS code with tag descriptions" %}
 
 {% if locale == "en-com" %}
+
 ```javascript
 var tagsData = [
   {

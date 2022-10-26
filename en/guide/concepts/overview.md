@@ -36,7 +36,7 @@ A _task_ is the data you need to mark up. Each image or comment is a separate ta
 
 There are different types of tasks: general, control (with correct responses), and training (with hints).
 
-You upload tasks to Toloka as a [file](../../glossary.md#tsv-file-definition). The file structure must match the input and output data specification that you set up in the project.
+You upload tasks to Toloka as a [file](../../glossary.md#tsv). The file structure must match the input and output data specification that you set up in the project.
 
 {% note tip %}
 

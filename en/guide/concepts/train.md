@@ -12,7 +12,7 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 ## How does it work? {#how-it-works}
 
-1. You create a training pool. A [training skill](../../glossary.md#train-skill) is created automatically. Newly created training pools use a skill that was already created.
+1. You create a training pool. A [training skill](../../glossary.md#training-skill) is created automatically. Newly created training pools use a skill that was already created.
 
 1. You upload tasks to the pool and [mark them up](../../glossary.md#task-markup). You can upload tasks that are already marked up.
 
@@ -72,16 +72,16 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 #|
 ||**Field** | **Overview**||
-||{% if locale == "en-com" %}**Guidelines**{% endif %} | [Instructions](../../glossary.md#task-instruction) for the training tasks.
+||{% if locale == "en-com" %}**Guidelines**{% endif %} | [Instructions](../../glossary.md#instructions) for the training tasks.
 
 By default, the [project instructions](instruction.md) are displayed. To write separate instructions for training, deselect the {% if locale == "en-com" %}**Use project instructions**{% endif %} box.||
 ||{% if locale == "en-com" %}**Training title**{% endif %} | Name of the training pool (not visible to the Toloker).||
 ||{% if locale == "en-com" %}**Adult content**{% endif %} | Whether the training tasks have porn content.||
 ||{% if locale == "en-com" %}**Time on task**{% endif %} | The time allowed for completing a [task suite](../../glossary.md#task-suite), in seconds.||
-||{% if locale == "en-com" %}**Retry after**{% endif %} | The number of days after which the Toloker can access the training again. If not specified, [training skill](../../glossary.md#train-skill) is issued for an indefinite time, and the value is fixed.
+||{% if locale == "en-com" %}**Retry after**{% endif %} | The number of days after which the Toloker can access the training again. If not specified, [training skill](../../glossary.md#training-skill) is issued for an indefinite time, and the value is fixed.
 
 [Learn more about how it works](train.md).||
-||{% if locale == "en-com" %}**Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [file with tasks](../../glossary.md#tsv-file-definition).||
+||{% if locale == "en-com" %}**Issue in task uploading order**{% endif %} | If this option is enabled, tasks are assigned to the Toloker in the order they are listed in the [file with tasks](../../glossary.md#tsv).||
 ||{% if locale == "en-com" %}**Shuffle on page**{% endif %} | If this option is enabled, tasks on the page are shown to the Toloker in random order.||
 ||{% if locale == "en-com" %}**Complete passing**{% endif %} | If this option is enabled, the Toloker must complete all the tasks in this pool to pass the training.
 
@@ -91,7 +91,7 @@ You can load more training tasks than required for passing the training and spec
 
 ## Repeated training {#repeat-train}
 
-After completing the training (successfully or not), the Toloker is assigned a [training skill](../../glossary.md#train-skill), and the value is fixed.
+After completing the training (successfully or not), the Toloker is assigned a [training skill](../../glossary.md#training-skill), and the value is fixed.
 
 New training pools in the project **aren't shown** to the Toloker, as long as they have a training skill.
 
@@ -325,13 +325,13 @@ However, you can create a training pool with the **Training** type based on your
 
 {% cut "More than 500 Tolokers passed the training, but the training skill shows only 30." %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banning-tolokers)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 {% endcut %}
 
 {% cut "More Tolokers were trained than the training skill shows" %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banned-worker)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banning-tolokers)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 {% endcut %}
 

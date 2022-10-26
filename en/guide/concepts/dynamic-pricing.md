@@ -16,7 +16,7 @@ In Toloka, there are two ways to set the task price:
 
 Every Toloker wants to earn more, so it is difficult to give exact figures. To find out the price to set, answer a few questions:
 
-- Turn on the stopwatch and measure how long it will take to read the [instructions](../../glossary.md#task-instruction) and complete several of your tasks. Calculate how many task suites you would complete in an hour and think what price would be fair.
+- Turn on the stopwatch and measure how long it will take to read the [instructions](../../glossary.md#instructions) and complete several of your tasks. Calculate how many task suites you would complete in an hour and think what price would be fair.
 
 - If your task is not urgent, set a minimum price and see how many Tolokers get interested. This way you can determine the optimal price based on the demand for your tasks.
 

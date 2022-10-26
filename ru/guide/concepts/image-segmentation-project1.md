@@ -181,7 +181,7 @@
 
 1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
-1. В блоке {% if locale == "ru-ru" %}**Инструкция для исполнителей**{% endif %}{% if locale == "en-com" %}**Instructions for performers**{% endif %} введите [инструкцию](../../glossary.md#task-instruction) и добавьте изображение.
+1. В блоке {% if locale == "ru-ru" %}**Инструкция для исполнителей**{% endif %}{% if locale == "en-com" %}**Instructions for performers**{% endif %} введите [инструкцию](../../glossary.md#instructions) и добавьте изображение.
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
 
@@ -286,7 +286,7 @@
 
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% endif %}{% if locale == "en-com" %}**Upload**{% endif %}.
 
-    1. В открывшемся окне выберите [файл](../../glossary.md#tsv-file-definition) с заданиями для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
+    1. В открывшемся окне выберите [файл](../../glossary.md#tsv) с заданиями для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
 
     1. В открывшемся окне проверьте количество заданий и нажмите кнопку {% if locale == "ru-ru" %}**Добавить**{% endif %}{% if locale == "en-com" %}**Add**{% endif %}.
 

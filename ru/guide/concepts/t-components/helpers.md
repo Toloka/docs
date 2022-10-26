@@ -59,7 +59,7 @@
 {{field type="input" name="result.input2"}}
 ```
 
-[TSV-файл](../../../glossary.md#tsv-file-definition) с ответами в столбце `result` будет содержать данные в виде:
+[TSV-файл](../../../glossary.md#tsv) с ответами в столбце `result` будет содержать данные в виде:
 
 {% if locale == "ru-ru" %}
 

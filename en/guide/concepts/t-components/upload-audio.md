@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add a button for audio recording and upload to the task, use the `{{field type="file" sources="RECORDER" fileType="AUDIO" name="<[output field](../incoming.md) name>" sources="<sources parameter>" fileType="<fileType parameter>"}}` component. Example:
+To add a button for audio recording and upload to the task, use the `{{field type="file" sources="RECORDER" fileType="AUDIO" name="<output field name>" sources="<sources parameter>" fileType="<fileType parameter>"}}` component. Example:
 
 {% if locale == "en-com" %}
 
@@ -16,7 +16,7 @@ To add a button for audio recording and upload to the task, use the `{{field typ
 
 {% endif %}
 
-For a complete list of parameters, see the [table](#table).
+For a complete list of parameters, see the [table](#parameters).
 
 Add a field with the `file` type in the [output data description](../incoming.md). Example:
 
@@ -29,7 +29,7 @@ Add a field with the `file` type in the [output data description](../incoming.md
 }
 ```
 
-Create tasks for mobile devices if you want to use the button for recording and uploading audio files, because these devices have a built-in voice recorder. Set the **Client = Mobile Toloka**[filter](../filters.md) in the [pool](../../../glossary.md#pool).
+Create tasks for mobile devices if you want to use the button for recording and uploading audio files, because these devices have a built-in voice recorder. Set the **Client = Mobile Toloka** [filter](../filters.md) in the [pool](../../../glossary.md#pool).
 
 #### Parameters
 

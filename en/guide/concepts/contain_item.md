@@ -146,7 +146,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#task-instruction) and add an image.
+1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
 
     1. **Instructions:**
 
@@ -235,7 +235,7 @@ To upload tasks:
 
     1. Click **Upload**.
 
-    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition) with tasks to upload and click **Open**.
+    1. In the window that opens, choose the [file](../../glossary.md#tsv) with tasks to upload and click **Open**.
 
     1. In the window that opens, check the number of tasks and click **Add**.
 

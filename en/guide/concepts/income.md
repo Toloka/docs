@@ -36,7 +36,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 || **Field** | **Overview** ||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 
-- {% if locale == "en-com" %}**earned in last 24 hours**{% endif %} — The Toloker's earnings for [completed tasks](../../glossary.md#submitted-answers) in the pool over the last 24 hours.||
+- {% if locale == "en-com" %}**earned in last 24 hours**{% endif %} — The Toloker's earnings for [completed tasks](../../glossary.md#completed-tasks) in the pool over the last 24 hours.||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).

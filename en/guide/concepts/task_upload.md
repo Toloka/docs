@@ -1,6 +1,6 @@
 # How to upload tasks
 
-To upload a [file with tasks](../../glossary.md#tsv-file-definition) to a [pool](pool-main.md):
+To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
@@ -55,7 +55,7 @@ If an error occurred while uploading the file, use the table.
 
 To view the processing log, click **More on uploading errors**. The processing log is written in JSON format. Objects inside `result` match the line number of the uploaded file. Lines that were processed with an error have the status `"success": false`.
 
-{% note info %}
+{% note tip %}
 
 To work with a large log conveniently, copy it to the text editor.
 

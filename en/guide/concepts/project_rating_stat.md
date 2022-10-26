@@ -3,7 +3,7 @@
 The [project](../../glossary.md#project) rating is the average score given to a project by Tolokers over the last 14 days. There are four evaluation categories:
 
 1. The intention to complete similar tasks.
-1. Clarity of [instructions](../../glossary.md#task-instruction).
+1. Clarity of [instructions](../../glossary.md#instructions).
 1. Convenience of the [task interface](../../glossary.md#task-interface).
 1. Communication with the requester.
 

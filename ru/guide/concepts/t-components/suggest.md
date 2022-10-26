@@ -155,7 +155,7 @@
 
       {% endcut %}
 
-  1. Добавьте в блок **HTML** компонент `{{field type="suggest" name="<название [выходного поля](../incoming.md)>" source=<название массива>}}`. Пример:
+  1. Добавьте в блок **HTML** компонент `{{field type="suggest" name="<название выходного поля>" source=<название массива>}}`. Пример:
 
       ```plaintext
       {{field type="suggest" name="result" source=countries allowCustomInput=true}}
@@ -163,7 +163,7 @@
 
 - Разные подсказки
 
-  1. Добавьте в блок **HTML** компонент `{{field type="suggest" name="<название [выходного поля](../incoming.md)>" source=<название [входного поля](../incoming.md)>}}`. Пример:
+  1. Добавьте в блок **HTML** компонент `{{field type="suggest" name="<название выходного поля>" source=<название входного поля>}}`. Пример:
 
       ```plaintext
       {{field type="suggest" name="result" source=countries allowCustomInput=true}}
@@ -180,7 +180,7 @@
       }
       ```
 
-  1. [Экранируйте](../pool_csv.md#json) данные и добавьте их в [файл с заданиями](../../../glossary.md#tsv-file-definition).
+  1. [Экранируйте](../pool_csv.md#json) данные и добавьте их в [файл с заданиями](../../../glossary.md#tsv).
 
       {% cut "Пример" %}
 

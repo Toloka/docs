@@ -48,7 +48,7 @@ To set up quality control:
 
 - **To allow recompletion of certain assignments:**
 
-    - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#submitted-answers) to other Tolokers to redo them if the Toloker was banned.
+    - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#completed-tasks) to other Tolokers to redo them if the Toloker was banned.
 
     - [Processing of rejected and accepted assignments](reassessment-after-accepting.md): Send rejected assignments to other Tolokers to redo them.
 

@@ -79,7 +79,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 A task is the data you want Tolokers to label. Each image or comment is a separate task.
 
-To upload a [file with tasks](../../glossary.md#tsv-file-definition):
+To upload a [file with tasks](../../glossary.md#tsv):
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 

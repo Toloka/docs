@@ -60,7 +60,7 @@ Helpers are functions that you can use to pass any number of expressions. After 
 
 You can register your helper using the `Handlebars.registerHelper` method. Example:
 
-The helper for escaping the `title` parameter from the above [code in JSON format](#example-json):
+The helper for escaping the `title` parameter from the above [code in JSON format](#expressions):
 
 ```html
 Handlebars.registerHelper('escape', (title, url) => new Handlebars.SafeString(`<a href="${Handlebars.escapeExpression(url)}">${Handlebars.escapeExpression(title)}</a>`));
@@ -166,7 +166,7 @@ Inside the `Each` block, the following auxiliary expressions are available:
 - `{{@first}}` — True if it is the first element of the array.
 - `{{@last}}` — True if it is the last element of the array.
 
-In the above [list](#example-json-2), the helper
+In the above [list](#each), the helper
 
 ```html
 {{#each links}}
