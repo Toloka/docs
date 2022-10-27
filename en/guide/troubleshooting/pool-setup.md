@@ -1,6 +1,6 @@
 # Setting up a pool
 
-{% note info %}
+{% note tip %}
 
 If you are looking for the answer to a specific question, use **Ctrl+F** to search the page (**Cmd+F** on MacOS).
 

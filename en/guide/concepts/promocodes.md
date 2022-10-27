@@ -12,7 +12,7 @@ To activate a promo code:
 
 1. Done! Promo code activated
 
-{% note info %}
+{% note warning %}
 
 The same promo code can't be activated twice.
 
