@@ -16,7 +16,7 @@ You can:
 
 Requests are sent to the Toloka API over the HTTPS protocol. The service returns data in JSON format.
 
-For debugging tasks, Toloka provides a testing environment — the [sandbox](https://sandbox.toloka.yandex.ru). Once you have tested the settings, you can use the project and pool in the production version of Toloka (the only thing you need to change is the [request URL and the OAuth token](concepts/access.md)).
+For debugging tasks, Toloka provides a testing environment — the [sandbox](https://platform.sandbox.toloka.ai). Once you have tested the settings, you can use the project and pool in the production version of Toloka (the only thing you need to change is the [request URL and the OAuth token](concepts/access.md)).
 
 {% include [global-community](../_includes/global-community.md) %}
 

@@ -11,7 +11,7 @@
 - Песочница
 
   1. [Зарегистрируйтесь](../../guide/concepts/access.md) на выбранной платформе, если вы не делали этого ранее.
-  1. Получите OAuth-токен в [кабинете заказчика](https://sandbox.toloka.yandex.com/ru/requester/profile/integration).
+  1. Получите OAuth-токен в [кабинете заказчика](https://platform.sandbox.toloka.ai/requester/profile/integration).
   1. Во всех примерах используется URL песочницы: `https://sandbox.toloka.dev/api/v1/<путь к ресурсу>`. Если решите переключиться на основную версию, замените URL ресурса на `https://toloka.dev/api/v1/<путь к ресурсу>`.
 
 - Основная версия

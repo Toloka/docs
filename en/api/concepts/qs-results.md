@@ -4,9 +4,9 @@
 
 This example was created in the sandbox. Therefore, you need to perform tasks as a trusted user to process the results:
 
-1. Register as a Toloker in the [Toloka sandbox](https://sandbox.toloka.yandex.com/).
+1. Register as a Toloker in the [Toloka sandbox](https://platform.sandbox.toloka.ai/).
 
-1. Log in to the sandbox with the requester's username and follow the **Add trusted users** link on the [Users](https://sandbox.toloka.yandex.com/requester/workers) page.
+1. Log in to the sandbox with the requester's username and follow the **Add trusted users** link on the [Users](https://platform.sandbox.toloka.ai/requester/workers) page.
 
 1. Click **Add user** and enter the username of the account you created.
 

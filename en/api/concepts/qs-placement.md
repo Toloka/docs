@@ -11,7 +11,7 @@ Choose a platform to get an OAuth token:
 - Sandbox
 
     1. [Register](../../guide/concepts/access.md) on the selected platform if you haven't done this before.
-    1. Get an OAuth token in the [requester interface](https://sandbox.toloka.yandex.com/requester/profile/integration).
+    1. Get an OAuth token in the [requester interface](https://platform.sandbox.toloka.ai/requester/profile/integration).
     1. All examples use the sandbox URL: `https://sandbox.toloka.dev/api/v1/<resource path>`. If you decide to switch to the production version, replace the resource URL with `https://toloka.dev/api/v1/<resource path>`.
 
 - Production version

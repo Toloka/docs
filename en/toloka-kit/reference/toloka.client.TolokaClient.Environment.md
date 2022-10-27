@@ -6,6 +6,6 @@ An enumeration.
 ## Attributes Description
 
 | Name | Value | Description |
-| :------| :-----------| :----------| 
-`SANDBOX`|'https://sandbox.toloka.dev'|
-`PRODUCTION`|'https://toloka.dev'|
+| :------| :-----------| :----------|
+`SANDBOX`|'https://platform.sandbox.toloka.ai'|
+`PRODUCTION`|'https://toloka.yandex.com'|
