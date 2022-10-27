@@ -1288,7 +1288,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 {% cut "Where is my file added if I upload it to the running pool?" %}
 
-If you have the **Keep task order** option enabled, labeling will start after the previously uploaded tasks are taken by users. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
+If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
 
 {% endcut %}
 
@@ -1457,15 +1457,15 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 {% cut "What's the difference between the exam pool that I pay for and the main pool?" %}
 
-Exam is a pool that contains only the control tasks. Usually it's small and intended to check how users learned to do your tasks after they read the instructions and completed the training.
+Exam is a pool that contains only the control tasks. Usually it's small, and intended to check how Tolokers have learned to do your tasks after they read the instructions and have completed the training.
 
-Unlike your main pool, you already know correct responses for every task. You can set the price to zero. Based on the results of responses to control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
+Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero. Based on the results of the control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
 
 {% endcut %}
 
 {% cut "Which parameter affects the skill expiration?" %}
 
-Validity period of the training skills is governed by the **Retry after** parameter.
+The validity period of the training skills is controlled by the **Retry after** parameter.
 
 The skill is deleted in the specified number of days if the Toloker:
 
@@ -1473,7 +1473,7 @@ The skill is deleted in the specified number of days if the Toloker:
 
 - Didn't complete any tasks linked to the training during this period.
 
-If their skill expires, your users need to complete the training again.
+If their skill expires, your Tolokers need to complete the training again.
 
 {% endcut %}
 
@@ -1539,9 +1539,9 @@ If the task requires that the Tolokers send free-format responses or data files,
 
 {% endcut %}
 
-{% cut "Why does the training pool allow smart mixing but doesn't allow adding by empty row?" %}
+{% cut "Why is only Smart Mixing available in Training?" %}
 
-This is a technical limitation of [training pools](../../glossary.md#training-pool). You can only upload tasks to your training pools this way. If you want to upload tasks to the training pool suite-by-suite, create the main pool, set the pool type to **Training**, and set the price to zero.
+This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the {% if locale == "en-com" %}**Set manually**{% endif %} option in the training, create the main pool, set the pool type as {% if locale == "en-com" %}**Training**{% endif %}, and set the cost to zero.
 
 {% endcut %}
 
@@ -1551,7 +1551,7 @@ Create the first pool based on the [training pool](../../glossary.md#training-po
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `If the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses.`
 
-In your exam user requirements, specify: `<exam skill> <80 or = is missing>`.
+In your exam pool requirements, specify: `<exam skill> <80 or = is missing>`.
 
 In the main pool, set up a filter: `<exam skill> >= 80 and <main skill> >= 70 or = Is missing>`. You can choose the skill values depending on how well the Tolokers handle your task.
 
@@ -1559,7 +1559,7 @@ In the main pool, set up a filter: `<exam skill> >= 80 and <main skill> >= 70 or
 
 {% cut "How do I create a training pool so that the Toloker might fail it but still be admitted to the general task pool?" %}
 
-Create a main pool of the **Training** type. Add only [training tasks](../../glossary.md#training-task-ru_1). To assign a skill, use the **Control tasks** rule. To allow access to the general tasks to users with any skill level, set up the following filter in the main pool: `<skill> >= 0` or `<skill> ≠ 0`.
+Create a main pool of the **Training** type. Add only [training tasks](../../glossary.md#training-task-ru_1). To assign a skill, use the **Control tasks** rule. To allow access to the general tasks to Tolokers with any skill level, set up the following filter in the main pool: `<skill> >= 0` or `<skill> ≠ 0`.
 
 However, we don't advise giving access to general tasks to Tolokers who failed training.
 
@@ -1579,12 +1579,6 @@ For example, if the main pool admits users with a skill of 70 or higher, then yo
 
 To get a valid “range”, enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
 We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10-20 tasks is enough, depending on complexity.
-
-{% endcut %}
-
-{% cut "Is the training considered an active pool when the main pool is closed?" %}
-
-Yes, it is.
 
 {% endcut %}
 

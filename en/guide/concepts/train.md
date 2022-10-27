@@ -4,6 +4,8 @@ With training pools, Tolokers can practice before getting started. You can provi
 
 The training pool contains only [training tasks](../../glossary.md#training-task). Tasks in the training pool aren't paid for.
 
+The training pool doesn't have its own filters. The Toloker requirements are the same as in the main pool.
+
 {% note info %}
 
 If the training pool functionality doesn't meet your needs, create a main pool and set the pool type to [**Training**](../../glossary.md#training).
@@ -18,7 +20,7 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
 1. You link the training to the main pool.
 
-1. You run both pools in turn.
+1. You start the main pool and the training pool.
 
 1. The Toloker sees only the training tasks and decides to complete them.
 
@@ -66,7 +68,7 @@ If the training pool functionality doesn't meet your needs, create a main pool a
 
     - {% if locale == "en-com" %}**Training**{% endif %} — Name of the training pool.
 
-    - {% if locale == "en-com" %}**Level required**{% endif %} — Percentage of correct responses in training tasks (from 5 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
+    - {% if locale == "en-com" %}**Level required**{% endif %} — Percentage of correct responses in training tasks (from 5 to 100) required to be admitted to the main pool. The calculation is based on the first response the Toloker gave in each task.
 
 ## Training settings {#parameters}
 
@@ -199,7 +201,7 @@ In the task file, leave empty control values for the optional output data.
 
 {% cut "Why do I have an infinite number of pages in the training pool?" %}
 
-Tasks have infinite overlap in the training pool. As long as the training pool is open and the training is running, users can access the tasks. Learn more about [training pools](train.md).
+Tasks have infinite overlap in the training pool. As long as the training pool is open and the training is running, Tolokers can access the tasks. Learn more about [training pools](train.md).
 
 {% endcut %}
 
@@ -231,9 +233,9 @@ You can close the pool manually at any time using the interface. However, you ca
 
 {% cut "How do I check that the Tolokers don't cheat during training?" %}
 
-Training helps users learn how to complete your task and figure out the instructions.
+Training helps Tolokers learn how to complete your task and figure out the instructions.
 
-Based on the training results, you can select Tolokers who did well enough for the main pool.
+Based on the training results, you can select the Tolokers who did well enough to be added to the main pool.
 
 However, the mere fact that a Toloker completes your training pool successfully doesn't guarantee that they will afterwards demonstrate high quality on your general tasks. Tolokers who show a high level of accuracy during the training could have obtained correct responses from others.
 
@@ -243,9 +245,9 @@ If the task requires that the Tolokers send free-format responses or data files,
 
 {% endcut %}
 
-{% cut "Why does the training pool allow smart mixing but doesn't allow adding by empty row?" %}
+{% cut "Why is only Smart Mixing available in Training?" %}
 
-This is a technical limitation of [training pools](../../glossary.md#training-pool). You can only upload tasks to your training pools this way. If you want to upload tasks to the training pool suite-by-suite, create the main pool, set the pool type to **Training**, and set the price to zero.
+This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the {% if locale == "en-com" %}**Set manually**{% endif %} option in the training, create the main pool, set the pool type as {% if locale == "en-com" %}**Training**{% endif %}, and set the cost to zero.
 
 {% endcut %}
 
@@ -255,7 +257,7 @@ Create the first pool based on the [training pool](../../glossary.md#training-po
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `If the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses.`
 
-In your exam user requirements, specify: `<exam skill> <80 or = is missing>`.
+In your exam pool requirements, specify: `<exam skill> <80 or = is missing>`.
 
 In the main pool, set up a filter: `<exam skill> >= 80 and <main skill> >= 70 or = Is missing>`. You can choose the skill values depending on how well the Tolokers handle your task.
 
@@ -263,7 +265,7 @@ In the main pool, set up a filter: `<exam skill> >= 80 and <main skill> >= 70 or
 
 {% cut "How do I create a training pool so that the Toloker might fail it but still be admitted to the general task pool?" %}
 
-Create a main pool of the **Training** type. Add only [training tasks](../../glossary.md#training-task-ru_1). To assign a skill, use the **Control tasks** rule. To allow access to the general tasks to users with any skill level, set up the following filter in the main pool: `<skill> >= 0` or `<skill> ≠ 0`.
+Create a main pool of the **Training** type. Add only [training tasks](../../glossary.md#training-task-ru_1). To assign a skill, use the **Control tasks** rule. To allow access to the general tasks to Tolokers with any skill level, set up the following filter in the main pool: `<skill> >= 0` or `<skill> ≠ 0`.
 
 However, we don't advise giving access to general tasks to Tolokers who failed training.
 
@@ -282,12 +284,6 @@ For training tasks, you need to:
 {% cut "Do users have to complete all the tasks in the training pool?" %}
 
 If you enabled incomplete training and specified the number of training pages required, users don't have to fully complete the training in order to pass. If you didn't make these settings, the Tolokers have to complete all the tasks in the training pool to get a training skill.
-
-{% endcut %}
-
-{% cut "Is the training considered an active pool when the main pool is closed?" %}
-
-Yes, it is.
 
 {% endcut %}
 
@@ -337,7 +333,7 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 {% cut "Which parameter affects the skill expiration?" %}
 
-Validity period of the training skills is governed by the **Retry after** parameter.
+The validity period of the training skills is controlled by the **Retry after** parameter.
 
 The skill is deleted in the specified number of days if the Toloker:
 
@@ -345,7 +341,7 @@ The skill is deleted in the specified number of days if the Toloker:
 
 - Didn't complete any tasks linked to the training during this period.
 
-If their skill expires, your users need to complete the training again.
+If their skill expires, your Tolokers need to complete the training again.
 
 {% endcut %}
 
@@ -365,9 +361,9 @@ If their skill expires, your users need to complete the training again.
 
 {% cut "What's the difference between the exam pool that I pay for and the main pool?" %}
 
-Exam is a pool that contains only the control tasks. Usually it's small and intended to check how users learned to do your tasks after they read the instructions and completed the training.
+Exam is a pool that contains only the control tasks. Usually it's small, and intended to check how Tolokers have learned to do your tasks after they read the instructions and have completed the training.
 
-Unlike your main pool, you already know correct responses for every task. You can set the price to zero. Based on the results of responses to control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
+Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero. Based on the results of the control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
 
 {% endcut %}
 

@@ -484,7 +484,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 {% cut "Where is my file added if I upload it to the running pool?" %}
 
-If the **Keep task order** option enabled in the settings of the pool, labeling will start after the previously uploaded tasks. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
+If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
 
 {% endcut %}
 
