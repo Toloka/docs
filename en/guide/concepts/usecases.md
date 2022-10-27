@@ -14,7 +14,7 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
   - **Images**
 
-      - [Object classification](../tutorials/image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
+      - [Image classification](../tutorials/image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
 
       - [Side-by-side image comparison](../tutorials/side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
 
