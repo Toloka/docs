@@ -32,7 +32,7 @@
 
 Понятный и удобный интерфейс повысит качество результатов и позволит исполнителям делать задания быстрее, а вам — снизить цену за задание.
 
-О том, как сделать хороший интерфейс, читайте в блоге Яндекс.Толоки: {% if locale == "ru-ru" %}[часть 1]({{ toloka-blog-interfaces-1 }}), [часть 2]({{ toloka-blog-interfaces-2 }}).{% endif %}
+О том, как сделать хороший интерфейс, читайте в блоге Толоки: {% if locale == "ru-ru" %}[часть 1]({{ toloka-blog-interfaces-1 }}), [часть 2]({{ toloka-blog-interfaces-2 }}).{% endif %}
 
 {% if locale == "en-com" %}[Guidelines for Effective Interfaces]({{ toloka-blog-interfaces-en }}).{% endif %}
 
