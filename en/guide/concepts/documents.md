@@ -26,7 +26,7 @@ If you don't want to top up your account, don't click **Create a billing invoice
 
   - The service delivery report and the tax invoice are formed on the first day of each month following the reporting month for the amount spent in the previous month (excluding the promo code bonus).
 
-      You can send a copy of the service invoice by e-mail or order the original certificate. Learn more about ordering documents in the Yandex.Balance [Help]({{ balance-support }}).
+      You can send a copy of the service invoice by e-mail or order the original certificate. Learn more about ordering documents in the Yandex Balance [Help]({{ balance-support }}).
 
       You can also request original service invoices via the form below.
 

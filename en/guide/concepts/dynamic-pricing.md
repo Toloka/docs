@@ -20,7 +20,7 @@ Every Toloker wants to earn more, so it is difficult to give exact figures. To f
 
 - If your task is not urgent, set a minimum price and see how many Tolokers get interested. This way you can determine the optimal price based on the demand for your tasks.
 
-- [Register]({{ register-toloka }}) as a Toloker (you will need an additional account on Yandex) and estimate the average earnings per hour for different tasks. Try to find tasks similar to yours.
+- [Register]({{ register }}) as a Toloker (you will need an additional account on Yandex) and estimate the average earnings per hour for different tasks. Try to find tasks similar to yours.
 
 {% note info %}
 

@@ -10,12 +10,12 @@ default:
   datasets: https://toloka.ai/ru/datasets
   dollar-rate: https://news.yandex.ru/quotes/1.html
   handlebarsjs-com: http://handlebarsjs.com/
-  integration: https://platform.toloka.ai/requester/profile/integration
   invoices: https://balance.yandex.com/persons.xml?LANG=en
   iso-lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
   iso-search: https://www.iso.org/obp/ui/#search
   json-format: https://tech.yandex.com/toloka/doc/concepts/tasks-docpage/?lang=en
   persons: https://balance.yandex.com/invoices.xml?LANG=en
+  phone-problems_no-code: https://yandex.ru/dev/id/doc/dg/
   requester: https://toloka.ai/docs/guide/
   requester-access: https://toloka.ai/docs/guide/concepts/access.html
   requester-aggregations: https://toloka.ai/docs/guide/concepts/result-aggregation.html
@@ -95,6 +95,6 @@ default:
   uadetector-useragent-type: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentType.html
   user-documentation: https://toloka.ai/tolokers/docs/web/register.html?lang=en
   using-files-yandex-disk: https://toloka.ai/ru/docs/guide/concepts/prepare-data.html
-  yadisk: https://disk.yandex.com
-  yadisk-client: https://disk.yandex.com/client/disk
+  yadisk-app: https://disk.yandex.ru/promo/download
   yadisk-uploading: https://yandex.com/support/disk/uploading.html
+  yandex-id: https://id.yandex.ru/about
