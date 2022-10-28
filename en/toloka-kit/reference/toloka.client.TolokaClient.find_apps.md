@@ -1,33 +1,33 @@
 # find_apps
-`toloka.client.TolokaClient.find_apps`
+`toloka.client.TolokaClient.find_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3533)
 
-Finds all Apps that match certain rules.
+Finds App solutions that match certain criteria.
 
 
-As a result, it returns an object that contains the first part of the found Apps and whether there
-are any more results.
-It is better to use the "get_apps" method, they allow to iterate trought all results
-and not just the first output.
+The number of returned solutions is limited. To find remaining solutions call `find_apps` with updated search criteria.
+
+To iterate over all matching solutions you may use the [get_apps](toloka.client.TolokaClient.get_apps.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`after_id`|**Optional\[str\]**|<p>The ID of the App used for cursor pagination.</p>
-`id_gt`|**Optional\[str\]**|<p>only with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>only with an ID greater than or equal to the specified value.</p>
-`id_lt`|**Optional\[str\]**|<p>only with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>only with an ID less than or equal to the specified value.</p>
-`name_gt`|**Optional\[str\]**|<p>only with a name lexicographically greater than the specified value.</p>
-`name_gte`|**Optional\[str\]**|<p>only with a name lexicographically greater than or equal to the specified value.</p>
-`name_lt`|**Optional\[str\]**|<p>only with a name lexicographically less than the specified value.</p>
-`name_lte`|**Optional\[str\]**|<p>only with a name lexicographically less than or equal to the specified value.</p>
-`sort`|**Union\[List\[str\], [AppSortItems](toloka.client.search_requests.AppSortItems.md), None\]**|<p>The order and direction of sorting the results.</p>
-`limit`|**Optional\[int\]**|<p>number of objects per page.</p>
+`after_id`|**Optional\[str\]**|<p>The ID of a solution used for cursor pagination.</p>
+`lang`|**Optional\[str\]**|<p>ISO 639 language code.</p>
+`id_gt`|**Optional\[str\]**|<p>Solutions with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Solutions with IDs greater than or equal to the specified value.</p>
+`id_lt`|**Optional\[str\]**|<p>Solutions with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Solutions with IDs less than or equal to the specified value.</p>
+`name_gt`|**-**|<p>Solutions with names lexicographically greater than the specified value.</p>
+`name_gte`|**-**|<p>Solutions with names lexicographically greater than or equal to the specified value.</p>
+`name_lt`|**-**|<p>Solutions with names lexicographically less than the specified value.</p>
+`name_lte`|**-**|<p>Solutions with names lexicographically less than or equal to the specified value.</p>
+`sort`|**Union\[List\[str\], [AppSortItems](toloka.client.search_requests.AppSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
+`limit`|**Optional\[int\]**|<p>Returned solutions limit. The maximum allowed limit is 1000.</p>
 
 * **Returns:**
 
-  The first `limit` Apps in `content`. And a mark that there is more.
+  Found solutions and a flag showing whether there are more matching solutions exceeding the limit.
 
 * **Return type:**
 

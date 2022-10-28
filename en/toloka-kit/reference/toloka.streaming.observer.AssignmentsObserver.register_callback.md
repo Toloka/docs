@@ -1,5 +1,5 @@
 # register_callback
-`toloka.streaming.observer.AssignmentsObserver.register_callback` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/observer.py#L323)
+`toloka.streaming.observer.AssignmentsObserver.register_callback` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/observer.py#L356)
 
 ```python
 register_callback(

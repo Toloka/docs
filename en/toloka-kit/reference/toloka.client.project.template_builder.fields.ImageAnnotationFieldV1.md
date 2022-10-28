@@ -1,5 +1,5 @@
 # ImageAnnotationFieldV1
-`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L248)
+`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L248)
 
 ```python
 ImageAnnotationFieldV1(
@@ -34,7 +34,7 @@ selection modes and hide the rest.
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
 `image`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The image you want to select areas in.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Determines whether adding and deleting areas is allowed:<ul><li>false (default) — Allowed.</li><li>true — Not allowed. You can use this feature when creating an interface to check whether the selection is correct,  or if you need to allow selection only when a certain condition is met.</li></ul></p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Determines whether adding and deleting areas is allowed:</p> <ul> <li>false (default) — Allowed.</li> <li>true — Not allowed. You can use this feature when creating an interface to check whether the selection is correct, or if you need to allow selection only when a certain condition is met.</li> </ul>
 `full_height`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If true, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels.</p>
 `labels`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Label](toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Label.md)\]\]\]\]**|<p>Used to classify areas. You can add several area types. When adding an area type, a button to select it appears in the interface, and when setting a new value, a new area selection color is added. This feature is instrumental if you need to select different types of objects: you can use one color to select cars and a different one for pedestrians.</p>
 `min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Minimum width of the element in pixels. Takes priority over max_width.</p>

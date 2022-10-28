@@ -1,5 +1,5 @@
 # reject_assignment
-`toloka.client.TolokaClient.reject_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.reject_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L706)
 
 ```python
 reject_assignment(
@@ -9,21 +9,18 @@ reject_assignment(
 )
 ```
 
-Marks one assignment as rejected
-
-
-Used then your pool created with auto_accept_solutions=False parametr.
+Rejects an assignment.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`assignment_id`|**str**|<p>What assignment will be rejected.</p>
-`public_comment`|**str**|<p>Message to the performer.</p>
+`assignment_id`|**str**|<p>The ID of the assignment.</p>
+`public_comment`|**str**|<p>A public comment visible to Tolokers.</p>
 
 * **Returns:**
 
-  Object with new status.
+  Assignment object with updated fields.
 
 * **Return type:**
 
@@ -31,8 +28,7 @@ Used then your pool created with auto_accept_solutions=False parametr.
 
 **Examples:**
 
-Reject an assignment that was completed too fast.
 
 ```python
-toloka_client.reject_assignment(assignment_id='1', 'Assignment was completed too fast.')
+toloka_client.reject_assignment(assignment_id='1', 'Some questions skipped')
 ```

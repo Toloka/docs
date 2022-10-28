@@ -1,5 +1,5 @@
 # close_pool_for_update_async
-`toloka.client.TolokaClient.close_pool_for_update_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.close_pool_for_update_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1341)
 
 ```python
 close_pool_for_update_async(self, pool_id: str)
@@ -23,6 +23,7 @@ status. If pool is already closed for update then None is returned.
   Optional\[[PoolCloseOperation](toloka.client.operations.PoolCloseOperation.md)\]
 
 **Examples:**
+
 
 ```python
 close_op = toloka_client.close_pool_for_update_async(pool_id='1')

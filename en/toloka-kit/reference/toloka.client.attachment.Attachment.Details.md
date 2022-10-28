@@ -1,5 +1,5 @@
 # Details
-`toloka.client.attachment.Attachment.Details` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/attachment.py#L33)
+`toloka.client.attachment.Attachment.Details` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/attachment.py#L33)
 
 ```python
 Details(
@@ -11,12 +11,12 @@ Details(
 )
 ```
 
-Information about the pool, task, and user from which the file was received.
+Information about the pool, task, and the Toloker from which the file was received.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>ID of the user from whom the file was received.</p>
-`assignment_id`|**Optional\[str\]**|<p>ID for issuing a set of tasks to the user.</p>
+`user_id`|**Optional\[str\]**|<p>ID of the Toloker from whom the file was received.</p>
+`assignment_id`|**Optional\[str\]**|<p>ID for issuing a set of tasks to the Toloker.</p>
 `pool_id`|**Optional\[str\]**|<p>Pool ID.</p>

@@ -1,5 +1,5 @@
 # QualityControl
-`toloka.client.quality_control.QualityControl` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/quality_control.py#L13)
+`toloka.client.quality_control.QualityControl` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/quality_control.py#L13)
 
 ```python
 QualityControl(
@@ -15,7 +15,7 @@ QualityControl(
 Quality control unit settings and pool ID with training tasks
 
 
-Quality control lets you get more accurate responses and restrict access to tasks for cheating performers.
+Quality control lets you get more accurate responses and restrict access to tasks for cheating users.
 Quality control consists of rules. All rules work independently.
 
 ## Parameters Description
@@ -25,7 +25,7 @@ Quality control consists of rules. All rules work independently.
 `training_requirement`|**Optional\[[TrainingRequirement](toloka.client.quality_control.QualityControl.TrainingRequirement.md)\]**|<p>Parameters of the training pool that is linked to the pool with the main tasks.</p>
 `captcha_frequency`|**Optional\[[CaptchaFrequency](toloka.client.quality_control.QualityControl.CaptchaFrequency.md)\]**|<p>Frequency of captcha display (By default, captcha is not shown): LOW - show every 20 tasks. MEDIUM, HIGH - show every 10 tasks.</p>
 `configs`|**Optional\[List\[[QualityControlConfig](toloka.client.quality_control.QualityControl.QualityControlConfig.md)\]\]**|<p>List of quality control units. See QualityControl.QualityControlConfig</p>
-`checkpoints_config`|**Optional\[[CheckpointsConfig](toloka.client.quality_control.QualityControl.CheckpointsConfig.md)\]**|<p>Random check majority opinion. Datailed description in QualityControl.CheckpointsConfig.</p>
+`checkpoints_config`|**Optional\[[CheckpointsConfig](toloka.client.quality_control.QualityControl.CheckpointsConfig.md)\]**|<p>Random check majority opinion. Detailed description in QualityControl.CheckpointsConfig.</p>
 
 **Examples:**
 

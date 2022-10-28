@@ -1,5 +1,5 @@
 # FileLocker
-`toloka.streaming.locker.FileLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/locker.py#L49)
+`toloka.streaming.locker.FileLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/locker.py#L55)
 
 ```python
 FileLocker(
@@ -30,9 +30,9 @@ Try to lock the same key at the same time..
 locker_1 = FileLocker()
 locker_2 = FileLocker(timeout=0)
 with locker_1('some_key') as lock_1:
-    with locker_2('some_key') as lock_2:  # => raise an error: timeout
-        pass
 ```
+...         pass
+...
 
 Try to lock the same key sequentially.
 
@@ -40,12 +40,16 @@ Try to lock the same key sequentially.
 locker_1 = FileLocker()
 locker_2 = FileLocker()
 with locker_1('some_key'):
-    pass
-with locker_2('some_key'):
-    pass
-with locker_1('some_key'):  # raise an error: NewerInstanceDetectedError
-    pass
 ```
+
+```python
+with locker_2('some_key'):
+```
+
+```python
+with locker_1('some_key'):  # raise an error: NewerInstanceDetectedError
+```
+...
 ## Methods Summary
 
 | Method | Description |

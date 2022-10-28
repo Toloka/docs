@@ -1,5 +1,5 @@
 # UserBonusCreateBatchOperation
-`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/operations.py#L344)
+`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/operations.py#L345)
 
 ```python
 UserBonusCreateBatchOperation(
@@ -16,7 +16,7 @@ UserBonusCreateBatchOperation(
 )
 ```
 
-Operation returned by an asynchronous creating user bonuses via TolokaClient.create_user_bonuses_async()
+Operation returned by the `TolokaClient.create_user_bonuses_async()` method.
 
 
 All parameters are for reference only and describe the initial parameters of the request that this operation monitors.
@@ -33,8 +33,8 @@ All parameters are for reference only and describe the initial parameters of the
 `progress`|**Optional\[int\]**|<p>The percentage of the operation completed.</p>
 `parameters`|**Optional\[[Parameters](toloka.client.operations.UserBonusCreateBatchOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
 `details`|**Optional\[[Details](toloka.client.operations.UserBonusCreateBatchOperation.Details.md)\]**|<p>Details of the operation completion.</p>
-`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:<ul><li>True - Create the user bonuses that passed validation. Skip the rest of the user bonuses.</li><li>False - If at least one of the user bonus didn&#x27;t pass validation, stop the operation and     don&#x27;t create any user bonus.</li></ul></p>
-`pool_id`|**-**|<p></p>
+`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>True - Create rewards using `UserBonus` instances that passed validation. Skip the rest of the `UserBonus` instances.</li> <li>False - If at least one of the `UserBonus` instances didn&#x27;t pass validation, stop the operation and   don&#x27;t create any rewards.</li> </ul>
+`pool_id`|**-**|
 `total_count`|**-**|<p>The number of bonuses in the request.</p>
 `valid_count`|**-**|<p>The number of JSON objects with bonus information that have passed validation.</p>
 `not_valid_count`|**-**|<p>The number of JSON objects with bonus information that failed validation.</p>

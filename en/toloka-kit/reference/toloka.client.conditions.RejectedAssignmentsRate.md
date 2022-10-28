@@ -1,5 +1,5 @@
 # RejectedAssignmentsRate
-`toloka.client.conditions.RejectedAssignmentsRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L248)
+`toloka.client.conditions.RejectedAssignmentsRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L284)
 
 ```python
 RejectedAssignmentsRate(
@@ -9,5 +9,12 @@ RejectedAssignmentsRate(
 )
 ```
 
-Percentage of how many assignments were rejected from this performer out of all checked assignment
+A percentage of rejected assignments submitted by a Toloker.
+
+
+`RejectedAssignmentsRate` is used with collectors:
+- [AcceptanceRate](toloka.client.collectors.AcceptanceRate.md)
+
+See also:
+- [RejectedAssignmentsCount](toloka.client.conditions.RejectedAssignmentsCount.md) — The number of rejected assignments of a task suite.
 

@@ -1,5 +1,5 @@
 # PoolCloseOperation
-`toloka.client.operations.PoolCloseOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/operations.py#L171)
+`toloka.client.operations.PoolCloseOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/operations.py#L172)
 
 ```python
 PoolCloseOperation(

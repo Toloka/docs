@@ -5,21 +5,17 @@
 AssignmentSortItems(self, items=None)
 ```
 
-Parameters for sorting assignment search results
-
-
-You can specify multiple parameters.
-To change the sorting direction (sort in descending order), add a hyphen before the parameter. For example, sort=-id.
+Keys for sorting assignments in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AssignmentSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - ID for issuing a set of tasks (in ascending order).</li><li>created - Date of issue of the set of tasks in UTC in ISO 8601 format YYYY-MM-DDThh:mm:ss[.sss] (ascending).</li><li>submitted - Date of completion of the set of tasks in UTC in ISO 8601 format YYYY-MM-DDThh:mm:ss[.sss] (ascending).</li><li>accepted - Date the set of tasks was accepted in UTC in ISO 8601 format YYYY-MM-DDThh:mm:ss[.sss] (ascending).</li><li>rejected - Date the set of tasks was rejected in UTC in ISO 8601 format YYYY-MM-DDThh:mm:ss[.sss] (ascending).</li><li>skipped - Date the set of tasks was skipped in UTC in ISO 8601 format YYYY-MM-DDThh:mm:ss[.sss] (ascending).</li><li>expired - Date the set of tasks was expired in UTC in ISO 8601 format YYYY-MM-DDThh:mm:ss[.sss] (ascending).</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AssignmentSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — An assignment ID.</li> <li>`&#x27;created&#x27;` — The assigning date of a task suite.</li> <li>`&#x27;submitted&#x27;` — The completion date of a task suite.</li> <li>`&#x27;accepted&#x27;` — The acceptance date of a task suite.</li> <li>`&#x27;rejected&#x27;` — The rejection date a task suite.</li> <li>`&#x27;skipped&#x27;` — The date when a task suite was skipped.</li> <li>`&#x27;expired&#x27;` — The expiration date of a task suite.</li> </ul>
 
 **Examples:**
 
-How to specify and use SortItems.
+The example shows how to find assignments sorted by the completion date in descending order. Assignments with equal completion dates are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.AssignmentSortItems(['-submitted', 'id'])

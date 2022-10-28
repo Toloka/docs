@@ -1,5 +1,5 @@
 # FileSpec
-`toloka.client.project.field_spec.FileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/field_spec.py#L118)
+`toloka.client.project.field_spec.FileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/field_spec.py#L118)
 
 ```python
 FileSpec(
@@ -16,5 +16,5 @@ A file field specification (only for output data)
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`required`|**Optional\[bool\]**|<p>Whether the object or input field is required</p>
-`hidden`|**Optional\[bool\]**|<p>Whether or not to hide the input value field from the user</p>
+`required`|**Optional\[bool\]**|<p>Whether the object or input field is required.</p>
+`hidden`|**Optional\[bool\]**|<p>Whether to hide the input field from Tolokers.</p>

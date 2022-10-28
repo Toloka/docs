@@ -1,5 +1,5 @@
 # UserAgentVersionBugfix
-`toloka.client.filter.UserAgentVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L646)
+`toloka.client.filter.UserAgentVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L731)
 
 ```python
 UserAgentVersionBugfix(
@@ -9,11 +9,11 @@ UserAgentVersionBugfix(
 )
 ```
 
-Use to select users by build number (bugfix version) of the browser.
+Filtering Tolokers by a build number or a bugfix version of their browser.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**Optional\[int\]**|<p>Build number (bugfix version) of the browser.</p>
+`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**Optional\[int\]**|<p>The build number or the bugfix version of the browser.</p>

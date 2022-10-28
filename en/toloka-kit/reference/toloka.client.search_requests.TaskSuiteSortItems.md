@@ -5,23 +5,19 @@
 TaskSuiteSortItems(self, items=None)
 ```
 
-Parameters for sorting task suite search results
-
-
-You can specify multiple parameters.
-To change the sorting direction (sort in descending order), add a hyphen before the parameter. For example, sort=-id.
+Keys for sorting task suites in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.TaskSuiteSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - Task set ID (in ascending order).</li><li>created - Date of creation of the set of tasks in UTC in the format YYYY-MM-DD (ascending).</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.TaskSuiteSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — The ID of a task suite.</li> <li>`&#x27;created&#x27;` — The creation date of a task suite.</li> </ul>
 
 **Examples:**
 
-How to specify and use SortItems.
+The example shows how to find task suites sorted by the creation date in descending order. Task suites with equal creation dates are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.TaskSuiteSortItems(['-created', 'id'])
-result = toloka_client.find_task_suites(pool_id=my_pretty_pool_id, sort=sort, limit=10)
+result = toloka_client.find_task_suites(pool_id=my_pool_id, sort=sort, limit=10)
 ```

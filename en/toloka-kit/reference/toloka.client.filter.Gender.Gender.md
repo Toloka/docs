@@ -1,11 +1,11 @@
 # Gender
-`toloka.client.filter.Gender.Gender` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L231)
+`toloka.client.filter.Gender.Gender` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L256)
 
-User gender.
+Toloker's gender.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`MALE`|'MALE'|<p></p>
-`FEMALE`|'FEMALE'|<p></p>
+`MALE`|'MALE'|
+`FEMALE`|'FEMALE'|

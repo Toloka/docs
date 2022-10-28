@@ -1,5 +1,5 @@
 # GetAssignmentsTsvParameters
-`toloka.client.assignment.GetAssignmentsTsvParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/assignment.py#L110)
+`toloka.client.assignment.GetAssignmentsTsvParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/assignment.py#L125)
 
 ```python
 GetAssignmentsTsvParameters(
@@ -13,18 +13,17 @@ GetAssignmentsTsvParameters(
 )
 ```
 
-Allows you to downloads assignments as pandas.DataFrame
+Parameters for downloading assignments.
 
 
-Used in "TolokaClient.get_assignments_df" method.
-Implements the same behavior as if you download results in web-interface and then read it by pandas.
+These parameters are used in the [TolokaClient.get_assignments_df](toloka.client.TolokaClient.get_assignments_df.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`status`|**Optional\[List\[[Status](toloka.client.assignment.GetAssignmentsTsvParameters.Status.md)\]\]**|<p>Assignments in which statuses will be downloaded.</p>
-`start_time_from`|**Optional\[datetime\]**|<p>Upload assignments submitted after the specified date and time.</p>
-`start_time_to`|**Optional\[datetime\]**|<p>Upload assignments submitted before the specified date and time.</p>
-`exclude_banned`|**Optional\[bool\]**|<p>Exclude answers from banned performers, even if assignments in suitable status &quot;ACCEPTED&quot;.</p>
-`field`|**Optional\[List\[[Field](toloka.client.assignment.GetAssignmentsTsvParameters.Field.md)\]\]**|<p>The names of the fields to be unloaded. Only the field names from the Assignment class, all other fields are added by default.</p>
+`status`|**Optional\[List\[[Status](toloka.client.assignment.GetAssignmentsTsvParameters.Status.md)\]\]**|<p>Statuses of assignments to download.</p>
+`start_time_from`|**Optional\[datetime\]**|<p>Download assignments submitted after the specified date and time.</p>
+`start_time_to`|**Optional\[datetime\]**|<p>Download assignments submitted before the specified date and time.</p>
+`exclude_banned`|**Optional\[bool\]**|<p>Exclude answers from banned Tolokers, even if their assignments have suitable status.</p>
+`field`|**Optional\[List\[[Field](toloka.client.assignment.GetAssignmentsTsvParameters.Field.md)\]\]**|<p>Names of `Assignment` fields to be downloaded. Fields other then from `Assignment` class are always downloaded.</p>

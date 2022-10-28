@@ -1,5 +1,5 @@
 # WorkersByFilterOnPool
-`toloka.metrics.pool_metrics.WorkersByFilterOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/pool_metrics.py#L374)
+`toloka.metrics.pool_metrics.WorkersByFilterOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/pool_metrics.py#L374)
 
 ```python
 WorkersByFilterOnPool(
@@ -14,7 +14,7 @@ WorkersByFilterOnPool(
 )
 ```
 
-The number of active performers matching the pool filters for the last hours (default 1 hour)
+The number of active Tolokers matching the pool filters for the last hours (default 1 hour)
 
 ## Parameters Description
 
@@ -22,7 +22,7 @@ The number of active performers matching the pool filters for the last hours (de
 | :----------| :----| :-----------|
 `pool_id`|**str**|<p>From which pool track metrics.</p>
 `workers_name`|**Optional\[str\]**|<p>Metric name for a count of workers.</p>
-`interval_hours`|**int**|<p>Counts unical workers on this hours interval. Default 1.</p>
+`interval_hours`|**int**|<p>Counts unique workers on this hours interval. Default 1.</p>
 
 **Examples:**
 
@@ -30,9 +30,12 @@ How to collect this metrics:
 ```python
 def print_metric(metric_dict):
     print(metric_dict)
+
 collector = MetricCollector([WorkersByFilterOnPool(pool_id, toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+    'workers_count': [(datetime.datetime(2021, 11, 18, 9, 36, 34, 163000), 2697)],
+}
 ## Methods Summary
 
 | Method | Description |

@@ -1,5 +1,5 @@
 # RegionByPhone
-`toloka.client.filter.RegionByPhone` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L400)
+`toloka.client.filter.RegionByPhone` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L483)
 
 ```python
 RegionByPhone(
@@ -9,11 +9,11 @@ RegionByPhone(
 )
 ```
 
-Use to select users by their region determined by the mobile phone number.
+Filtering Tolokers by a region which is determined by their mobile phone number.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[InclusionOperator](toloka.client.primitives.operators.InclusionOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**int**|<p>The user&#x27;s region.</p>
+`operator`|**[InclusionOperator](toloka.client.primitives.operators.InclusionOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**int**|<p>The ID from the [list of regions](https://toloka.ai/en/docs/api/concepts/regions).</p>

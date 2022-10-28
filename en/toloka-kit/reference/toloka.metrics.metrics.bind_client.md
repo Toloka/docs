@@ -1,5 +1,5 @@
 # bind_client
-`toloka.metrics.metrics.bind_client` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/metrics.py#L35)
+`toloka.metrics.metrics.bind_client` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/metrics.py#L35)
 
 ```python
 bind_client(metrics: List[BaseMetric], toloka_client: Union[TolokaClient, AsyncTolokaClient])
@@ -14,7 +14,9 @@ How to bind same client for all metrics:
 ```python
 import toloka.client as toloka
 from toloka.metrics import AssignmentsInPool, Balance, bind_client, MetricCollector
+
 toloka_client = toloka.TolokaClient(auth_token, 'PRODUCTION')
+
 collector = MetricCollector(
     [
         Balance(),

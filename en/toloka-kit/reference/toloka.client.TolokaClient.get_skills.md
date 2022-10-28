@@ -1,21 +1,22 @@
 # get_skills
-`toloka.client.TolokaClient.get_skills`
+`toloka.client.TolokaClient.get_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2044)
 
-Finds all skills that match certain rules and returns them in an iterable object
+Finds all skills that match certain criteria.
 
 
-Unlike find_skills, returns generator. Does not sort skills.
-While iterating over the result, several requests to the Toloka server is possible.
+`get_skills` returns a generator. You can iterate over all found skills using the generator. Several requests to the Toloka server are possible while iterating.
+
+If you need to sort skills use the [find_skills](toloka.client.TolokaClient.find_skills.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`name`|**Optional\[str\]**|<p>Skill name.</p>
-`id_lt`|**Optional\[str\]**|<p>Skills with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Skills with an ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Skills with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Skills with an ID greater than or equal to the specified value.</p>
+`name`|**Optional\[str\]**|<p>The name of the skill.</p>
+`id_lt`|**Optional\[str\]**|<p>Skills with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Skills with IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Skills with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Skills with IDs greater than or equal to the specified value.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Skills created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Skills created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Skills created after the specified date.</p>
@@ -23,7 +24,7 @@ While iterating over the result, several requests to the Toloka server is possib
 
 * **Yields:**
 
-  The next object corresponding to the request parameters.
+  The next matching skill.
 
 * **Yield type:**
 

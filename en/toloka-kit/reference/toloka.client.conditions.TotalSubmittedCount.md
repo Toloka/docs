@@ -1,5 +1,5 @@
 # TotalSubmittedCount
-`toloka.client.conditions.TotalSubmittedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L303)
+`toloka.client.conditions.TotalSubmittedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L364)
 
 ```python
 TotalSubmittedCount(
@@ -9,5 +9,9 @@ TotalSubmittedCount(
 )
 ```
 
-The number of assignments a specific performer completed
+The number of assignments submitted by a Toloker.
+
+
+`TotalSubmittedCount` is used with collectors:
+- [AssignmentSubmitTime](toloka.client.collectors.AssignmentSubmitTime.md)
 

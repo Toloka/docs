@@ -1,5 +1,5 @@
 # AutoQuality
-`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/autoquality/optimizer.py#L200)
+`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/autoquality/optimizer.py#L212)
 
 ```python
 AutoQuality(
@@ -15,8 +15,7 @@ AutoQuality(
     parameter_distributions: Dict = ...,
     score_func: Callable = default_calc_scores,
     ranking_func: Callable = default_calc_ranks,
-    create_autoquality_pool_func: Callable = _create_autoquality_pool_default,
-    run_id: str = 'AutoQuality Project 2022-06-10 16:05:10'
+    create_autoquality_pool_func: Callable = _create_autoquality_pool_default
 )
 ```
 
@@ -31,8 +30,8 @@ To use `toloka.autoquality` install toloka-kit via `pip install toloka-kit[autoq
 | :----------| :----| :-----------|
 `toloka_client`|**[TolokaClient](toloka.client.TolokaClient.md)**|<p>TolokaClient instance to interact with requester&#x27;s account</p>
 `project_id`|**str**|<p>Toloka project ID</p>
-`base_pool_id`|**str**|<p>Temolate Pool for autoquality pools</p>
-`training_pool_id`|**str**|<p> Training Pool ID</p>
+`base_pool_id`|**str**|<p>Template Pool for autoquality pools</p>
+`training_pool_id`|**str**|<p>Training Pool ID</p>
 `exam_pool_id`|**Optional\[str\]**|<p>Exam Pool ID</p>
 `exam_skill_id`|**Optional\[str\]**|<p>Skill for filtering by exam perfomance</p>
 `label_field`|**str**|<p>Output field name</p>
@@ -44,6 +43,7 @@ To use `toloka.autoquality` install toloka-kit via `pip install toloka-kit[autoq
 `run_id`|**str**|<p>ID of autoquality run</p>
 
 **Examples:**
+
 
 ```python
 aq = AutoQuality(

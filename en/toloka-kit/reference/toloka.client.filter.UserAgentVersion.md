@@ -1,5 +1,5 @@
 # UserAgentVersion
-`toloka.client.filter.UserAgentVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L613)
+`toloka.client.filter.UserAgentVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L695)
 
 ```python
 UserAgentVersion(
@@ -9,11 +9,15 @@ UserAgentVersion(
 )
 ```
 
-Use to select users by full browser version.
+Filtering Tolokers by a browser version.
+
+
+The version consists of major and minor version numbers.
+The version is represented as a single floating point number in conditions.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**Optional\[float\]**|<p>Full browser version. &lt;Major version&gt;.&lt;Minor version&gt;.</p>
+`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**Optional\[float\]**|<p>The version of the browser.</p>

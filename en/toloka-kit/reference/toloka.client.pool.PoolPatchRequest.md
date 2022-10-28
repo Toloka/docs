@@ -1,5 +1,5 @@
 # PoolPatchRequest
-`toloka.client.pool.PoolPatchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/pool/__init__.py#L274)
+`toloka.client.pool.PoolPatchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/pool/__init__.py#L283)
 
 ```python
 PoolPatchRequest(self, priority: Optional[int] = None)
@@ -14,7 +14,7 @@ To do this use TolokaClient.patch_pool(). You can use expanded version, then pas
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first. Possible values: from -100 to 100.</p>
+`priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Tolokers are assigned tasks with a higher priority first. Possible values: from -100 to 100.</p>
 
 **Examples:**
 

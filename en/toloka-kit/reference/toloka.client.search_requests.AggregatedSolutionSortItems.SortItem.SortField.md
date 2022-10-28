@@ -7,4 +7,4 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`TASK_ID`|'task_id'|<p></p>
+`TASK_ID`|'task_id'|

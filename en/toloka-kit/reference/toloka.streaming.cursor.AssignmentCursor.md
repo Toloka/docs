@@ -1,5 +1,5 @@
 # AssignmentCursor
-`toloka.streaming.cursor.AssignmentCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/cursor.py#L217)
+`toloka.streaming.cursor.AssignmentCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/cursor.py#L217)
 
 ```python
 AssignmentCursor(
@@ -59,5 +59,6 @@ Iterate over assignment acceptances events.
 ```python
 it = AssignmentCursor(pool_id='123', event_type='ACCEPTED', toloka_client=toloka_client)
 current_events = list(it)
+# ... new events may occur ...
 new_events = list(it)  # Contains only new events, occured since the previous call.
 ```

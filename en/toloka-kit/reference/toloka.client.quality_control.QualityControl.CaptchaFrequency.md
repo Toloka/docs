@@ -1,5 +1,5 @@
 # CaptchaFrequency
-`toloka.client.quality_control.QualityControl.CaptchaFrequency` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/quality_control.py#L56)
+`toloka.client.quality_control.QualityControl.CaptchaFrequency` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/quality_control.py#L56)
 
 An enumeration.
 
@@ -7,6 +7,6 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`LOW`|'LOW'|<p></p>
-`MEDIUM`|'MEDIUM'|<p></p>
-`HIGH`|'HIGH'|<p></p>
+`LOW`|'LOW'|
+`MEDIUM`|'MEDIUM'|
+`HIGH`|'HIGH'|

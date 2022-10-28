@@ -1,5 +1,5 @@
 # add_message_thread_to_folders
-`toloka.client.TolokaClient.add_message_thread_to_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L323)
+`toloka.client.TolokaClient.add_message_thread_to_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L822)
 
 ```python
 add_message_thread_to_folders(
@@ -27,6 +27,7 @@ Adds a message chain to one or more folders ("unread", "important" etc.)
   [MessageThread](toloka.client.message_thread.MessageThread.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.add_message_thread_to_folders(message_thread_id='1', folders=['IMPORTANT'])

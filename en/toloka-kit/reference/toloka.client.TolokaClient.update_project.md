@@ -1,5 +1,5 @@
 # update_project
-`toloka.client.TolokaClient.update_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.update_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1128)
 
 ```python
 update_project(
@@ -27,6 +27,7 @@ Makes changes to the project
   [Project](toloka.client.project.Project.md)
 
 **Examples:**
+
 
 ```python
 updated_project = toloka_client.update_project(project_id=old_project.id, project=new_project_object)

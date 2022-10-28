@@ -1,5 +1,5 @@
 # PlayedFullyConditionV1
-`toloka.client.project.template_builder.conditions.PlayedFullyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/conditions.py#L204)
+`toloka.client.project.template_builder.conditions.PlayedFullyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/conditions.py#L204)
 
 ```python
 PlayedFullyConditionV1(
@@ -20,4 +20,4 @@ view.audio and view.video. The condition.played-fully check only works in the pl
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`hint`|**Optional\[Any\]**|<p>Validation error message that the user will see.</p>
+`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>

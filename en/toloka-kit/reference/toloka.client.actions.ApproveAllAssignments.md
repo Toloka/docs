@@ -1,19 +1,16 @@
 # ApproveAllAssignments
-`toloka.client.actions.ApproveAllAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/actions.py#L208)
+`toloka.client.actions.ApproveAllAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/actions.py#L205)
 
 ```python
 ApproveAllAssignments(self)
 ```
 
-Approve all replies from the performer
-
-
-The performer is not explicitly installed, the approval occurs on the performer on which the rule will be triggered.
+Accepts all Toloker's assignments in the pool.
 
 
 **Examples:**
 
-How to approve all assignments if performer doing well with golden tasks.
+Accept all assignments if a Toloker gives correct responses for control tasks. Note, that the pool must be configured with non-automatic response acceptance.
 
 ```python
 new_pool = toloka.pool.Pool(....)

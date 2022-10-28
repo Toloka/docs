@@ -1,5 +1,5 @@
 # AssignmentsObserver
-`toloka.streaming.observer.AssignmentsObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/observer.py#L306)
+`toloka.streaming.observer.AssignmentsObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/observer.py#L306)
 
 ```python
 AssignmentsObserver(
@@ -41,6 +41,7 @@ Send submitted assignments for verification.
 def handle_submitted(evets: List[AssignmentEvent]) -> None:
     verification_tasks = [create_veridication_task(item.assignment) for item in evets]
     toloka_client.create_tasks(verification_tasks, open_pool=True)
+
 observer = AssignmentsObserver(toloka_client, pool_id='123')
 observer.on_submitted(handle_submitted)
 ```

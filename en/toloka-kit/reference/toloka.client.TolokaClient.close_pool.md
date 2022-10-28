@@ -1,5 +1,5 @@
 # close_pool
-`toloka.client.TolokaClient.close_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.close_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1272)
 
 ```python
 close_pool(self, pool_id: str)
@@ -25,6 +25,7 @@ If all tasks done, the pool will be closed automatically.
   [Pool](toloka.client.pool.Pool.md)
 
 **Examples:**
+
 
 ```python
 open_pool = next(toloka_client.get_pools(status='OPEN'))

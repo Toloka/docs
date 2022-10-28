@@ -1,5 +1,5 @@
 # IfHelperV1
-`toloka.client.project.template_builder.helpers.IfHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/helpers.py#L72)
+`toloka.client.project.template_builder.helpers.IfHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/helpers.py#L72)
 
 ```python
 IfHelperV1(
@@ -22,7 +22,7 @@ For example, if you want to conduct a survey, you can use the helper.if componen
 respondent and add different sets of questions, depending on whether the respondent is male or female.
 How it works: If the condition in if is true (returns true), the code specified in the then property will be
 executed. Otherwise (the condition is false and returns false) the code specified in else will be executed.
-The else property is optional. For example, let's say you ask the user " did you Like the image". You can make a
+The else property is optional. For example, let's say you ask a Toloker "Do you like the image?". You can make a
 comment field appear when a negative response is received, but nothing happens when a positive response is received.
 
 ## Parameters Description

@@ -1,5 +1,5 @@
 # reply_message_thread
-`toloka.client.TolokaClient.reply_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.reply_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L903)
 
 ```python
 reply_message_thread(
@@ -28,9 +28,13 @@ Replies to a message in thread
 
 **Examples:**
 
+
 ```python
 message_threads = toloka_client.get_message_threads(folder='UNREAD')
 message_reply = {'EN': 'Thank you for your message! I will get back to you soon.'}
 for thread in message_threads:
-    toloka_client.reply_message_thread(message_thread_id=thread.id, reply=toloka.message_thread.MessageThreadReply(text=message_reply))
+    toloka_client.reply_message_thread(
+        message_thread_id=thread.id,
+        reply=toloka.message_thread.MessageThreadReply(text=message_reply)
+    )
 ```

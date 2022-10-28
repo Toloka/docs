@@ -1,5 +1,5 @@
 # AppProject
-`toloka.client.app.AppProject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/app/__init__.py#L31)
+`toloka.client.app.AppProject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/app/__init__.py#L45)
 
 ```python
 AppProject(
@@ -13,26 +13,31 @@ AppProject(
     status: Union[Status, str, None] = None,
     created: Optional[datetime] = None,
     item_price: Optional[Decimal] = None,
-    errors: Optional[List[_AppError]] = None
+    errors: Optional[List[_AppError]] = None,
+    read_only: Optional[bool] = None,
+    app: Optional[AppLightestResult] = None
 )
 ```
 
-An App project with the parameters that you specify when creating it. It will have the interface and quality
+An [App](https://toloka.ai/en/docs/toloka-apps/concepts/) project.
 
 
-control already pre-configured, decomposition done, and everything ready to use: all you need is to upload batches
-and send them for labeling.
+An App project is based on one of App solutions. It is created with a template interface and preconfigured data specification and quality control rules.
+
+To get available App solutions use the [get_apps](toloka.client.TolokaClient.get_apps.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`app_id`|**Optional\[str\]**|<p></p>
-`parent_app_project_id`|**Optional\[str\]**|<p></p>
-`name`|**Optional\[str\]**|<p></p>
-`parameters`|**Optional\[Dict\]**|<p></p>
-`id`|**Optional\[str\]**|<p></p>
-`status`|**Optional\[[Status](toloka.client.app.AppProject.Status.md)\]**|<p>Project statuses for asynchronous creation. Allowed values:<ul><li>CREATING</li><li>READY</li><li>ARCHIVE</li><li>ERROR</li></ul></p>
-`created`|**Optional\[datetime\]**|<p></p>
-`item_price`|**Optional\[Decimal\]**|<p></p>
-`errors`|**Optional\[List\[[_AppError](toloka.client.app._AppError.md)\]\]**|<p></p>
+`app_id`|**Optional\[str\]**|<p>The ID of the App solution used to create the project.</p>
+`parent_app_project_id`|**Optional\[str\]**|<p>The ID of the parent project. It is set if this project is a clone of other project. Otherwise it is empty.</p>
+`name`|**Optional\[str\]**|<p>The project name.</p>
+`parameters`|**Optional\[Dict\]**|<p>Parameters of the solution. The parameters should follow the schema described in the `param_spec` field of the [solution](toloka.client.app.App.md).</p>
+`id`|**Optional\[str\]**|<p>The ID of the project.</p>
+`status`|**Optional\[[Status](toloka.client.app.AppProject.Status.md)\]**|<p>The project status:</p> <ul> <li>`CREATING` — Toloka is checking the project.</li> <li>`READY` — The project is active.</li> <li>`ARCHIVED` — The project was archived.</li> <li>`ERROR` — Project creation failed due to errors.</li> </ul>
+`created`|**Optional\[datetime\]**|<p>The date and time when the project was created.</p>
+`item_price`|**Optional\[Decimal\]**|<p>The price you pay for a processed item.</p>
+`errors`|**Optional\[List\[[_AppError](toloka.client.app._AppError.md)\]\]**|<p>Errors found during a project check.</p>
+`read_only`|**Optional\[bool\]**|
+`app`|**Optional\[[AppLightestResult](toloka.client.app.AppLightestResult.md)\]**|<p>Brief information about the project template.</p>

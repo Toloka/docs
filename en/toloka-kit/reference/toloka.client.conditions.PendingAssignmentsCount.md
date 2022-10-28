@@ -1,5 +1,5 @@
 # PendingAssignmentsCount
-`toloka.client.conditions.PendingAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L213)
+`toloka.client.conditions.PendingAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L242)
 
 ```python
 PendingAssignmentsCount(
@@ -9,5 +9,9 @@ PendingAssignmentsCount(
 )
 ```
 
-Number of Assignments pending checking
+The number of pending assignments that must be checked.
+
+
+`PendingAssignmentsCount` is used with collectors:
+- [AssignmentsAssessment](toloka.client.collectors.AssignmentsAssessment.md)
 

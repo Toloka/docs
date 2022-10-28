@@ -1,5 +1,5 @@
 # MapViewV1
-`toloka.client.project.template_builder.view.MapViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/view.py#L429)
+`toloka.client.project.template_builder.view.MapViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/view.py#L429)
 
 ```python
 MapViewV1(
@@ -22,7 +22,7 @@ Adds a map to your task.
 Use this component to set the targets for the tasks with the markers, select the areas with polygons.
 Specify the position and colors for the elements on the map.
 
-You can set the following map properties: scale, position of the map center, label, and hint for the users.
+You can set the following map properties: scale, position of the map center, label, and hint for Tolokers.
 
 ## Parameters Description
 

@@ -1,5 +1,5 @@
 # TasksCreateOperation
-`toloka.client.operations.TasksCreateOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/operations.py#L266)
+`toloka.client.operations.TasksCreateOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/operations.py#L267)
 
 ```python
 TasksCreateOperation(
@@ -33,6 +33,6 @@ All parameters are for reference only and describe the initial parameters of the
 `parameters`|**Optional\[[Parameters](toloka.client.operations.TasksCreateOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
 `finished`|**Optional\[datetime\]**|<p>The UTC date and time the operation finished.</p>
 `details`|**Optional\[Any\]**|<p>Details of the operation completion.</p>
-`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:<ul><li>True - Create the tasks that passed validation. Skip the rest of the tasks.</li><li>False - If at least one of the tasks didn&#x27;t pass validation, stop the operation and     don&#x27;t create any tasks.</li></ul></p>
-`allow_defaults`|**-**|<p>Overlap settings:<ul><li>True - Use the overlap that is set in the pool parameters     (in the defaults.default_overlap_for_new_tasks key).</li><li>False - Use the overlap that is set in the task parameters (in the overlap field).</li></ul></p>
+`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>True - Create the tasks that passed validation. Skip the rest of the tasks.</li> <li>False - If at least one of the tasks didn&#x27;t pass validation, stop the operation and   don&#x27;t create any tasks.</li> </ul>
+`allow_defaults`|**-**|<p>Overlap settings:</p> <ul> <li>True - Use the overlap that is set in the pool parameters   (in the defaults.default_overlap_for_new_tasks key).</li> <li>False - Use the overlap that is set in the task parameters (in the overlap field).</li> </ul>
 `open_pool`|**-**|<p>Open the pool immediately after creating the tasks, if the pool is closed.</p>

@@ -1,12 +1,12 @@
 # UserAgentType
-`toloka.client.filter.UserAgentType.UserAgentType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L557)
+`toloka.client.filter.UserAgentType.UserAgentType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L639)
 
-User agent type.
+User agent types.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`BROWSER`|'BROWSER'|<p></p>
-`MOBILE_BROWSER`|'MOBILE_BROWSER'|<p></p>
-`OTHER`|'OTHER'|<p></p>
+`BROWSER`|'BROWSER'|
+`MOBILE_BROWSER`|'MOBILE_BROWSER'|
+`OTHER`|'OTHER'|

@@ -1,5 +1,5 @@
 # UserBonusCursor
-`toloka.streaming.cursor.UserBonusCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/cursor.py#L297)
+`toloka.streaming.cursor.UserBonusCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/cursor.py#L297)
 
 ```python
 UserBonusCursor(
@@ -19,21 +19,22 @@ UserBonusCursor(
 )
 ```
 
-Iterator over user bonuses by create time.
+Iterator over `UserBonus` instances by create time.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search user bonuses.</p>
-`request`|**[UserBonusSearchRequest](toloka.client.search_requests.UserBonusSearchRequest.md)**|<p>Base request to search user bonuses by.</p>
+`toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search `UserBonus` instances.</p>
+`request`|**[UserBonusSearchRequest](toloka.client.search_requests.UserBonusSearchRequest.md)**|<p>Base request to search `UserBonus` instances by.</p>
 
 **Examples:**
 
-Iterate over user bonuses.
+Iterate over `UserBonus` instances.
 
 ```python
 it = UserBonusCursor(toloka_client=toloka_client)
 current_bonuses = list(it)
-new_bonuses = list(it)  # Contains only new user bonuses, appeared since the previous call.
+# ... new `UserBonus` instances could appear ...
+new_bonuses = list(it)  # Contains only new `UserBonus` instances, appeared since the previous call.
 ```

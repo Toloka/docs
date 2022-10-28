@@ -1,5 +1,5 @@
 # ActiveWorkersByFilterCountPoolAnalytics
-`toloka.client.analytics_request.ActiveWorkersByFilterCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/analytics_request.py#L147)
+`toloka.client.analytics_request.ActiveWorkersByFilterCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/analytics_request.py#L147)
 
 ```python
 ActiveWorkersByFilterCountPoolAnalytics(
@@ -10,7 +10,7 @@ ActiveWorkersByFilterCountPoolAnalytics(
 )
 ```
 
-The number of active performers matching the pool filters for the last hours
+The number of active Tolokers matching the pool filters for the last hours
 
 ## Parameters Description
 

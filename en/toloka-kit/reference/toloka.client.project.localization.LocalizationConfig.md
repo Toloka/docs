@@ -1,5 +1,5 @@
 # LocalizationConfig
-`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/localization.py#L47)
+`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/localization.py#L47)
 
 ```python
 LocalizationConfig(
@@ -10,11 +10,11 @@ LocalizationConfig(
 )
 ```
 
-Translates the part of the project visible to the performers into different languages
+Translates the part of the project visible to Tolokers into different languages
 
 
-It is used to make it easier for performers from other countries who do not speak the necessary language to
-understand and perform tasks.
+It is used to make it easier for Tolokers from other countries who do not speak the necessary language to
+understand and complete tasks.
 
 ## Parameters Description
 

@@ -1,5 +1,5 @@
 # TasksInPool
-`toloka.metrics.pool_metrics.TasksInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/pool_metrics.py#L286)
+`toloka.metrics.pool_metrics.TasksInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/pool_metrics.py#L286)
 
 ```python
 TasksInPool(
@@ -28,9 +28,12 @@ How to collect this metrics:
 ```python
 def print_metric(metric_dict):
     print(metric_dict)
+
 collector = MetricCollector([TasksInPool(pool_id, toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+    'tasks_count': [(datetime.datetime(2021, 11, 18, 9, 36, 34, 163000), 40)],
+}
 ## Methods Summary
 
 | Method | Description |

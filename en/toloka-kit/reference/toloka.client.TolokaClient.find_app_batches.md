@@ -1,39 +1,38 @@
 # find_app_batches
-`toloka.client.TolokaClient.find_app_batches`
+`toloka.client.TolokaClient.find_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3714)
 
-Finds all batches in the App project that match certain rules.
+Finds batches that match certain criteria in an App project.
 
 
-As a result, it returns an object that contains the first part of the found batches in the App project
-and whether there are any more results.
-It is better to use the "get_app_batches" method, they allow to iterate trought all results
-and not just the first output.
+The number of returned batches is limited. To find remaining batches call `find_app_batches` with updated search criteria.
+
+To iterate over all matching batches you may use the [get_app_batches](toloka.client.TolokaClient.get_app_batches.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`app_project_id`|**str**|<p>Project ID.</p>
-`after_id`|**Optional\[str\]**|<p>ID of the batch used for cursor pagination</p>
-`status`|**Optional\[[AppBatch.Status](toloka.client.app.AppBatch.Status.md)\]**|<p>batches with this status.</p>
-`id_gt`|**Optional\[str\]**|<p>batches with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>batches with an ID greater than or equal to the specified value.</p>
-`id_lt`|**Optional\[str\]**|<p>batches with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>batches with an ID less than or equal to the specified value.</p>
-`name_gt`|**Optional\[str\]**|<p>batches with the name lexicographically greater than the specified value.</p>
-`name_gte`|**Optional\[str\]**|<p>batches with a name lexicographically greater than or equal to the specified value.</p>
-`name_lt`|**Optional\[str\]**|<p>batches with a name lexicographically less than the specified value.</p>
-`name_lte`|**Optional\[str\]**|<p>batches with a name lexicographically less than or equal to the specified value.</p>
-`created_gt`|**-**|<p>batches created after the specified date. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
-`created_gte`|**-**|<p>batches created after the specified date, inclusive. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
-`created_lt`|**-**|<p>batches created before the specified date. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
-`created_lte`|**-**|<p>batches created before the specified date, inclusive. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
-`sort`|**Union\[List\[str\], [AppBatchSortItems](toloka.client.search_requests.AppBatchSortItems.md), None\]**|<p>The order and direction of sorting the results.</p>
-`limit`|**Optional\[int\]**|<p>number of objects per page.</p>
+`app_project_id`|**str**|<p>The ID of the App project.</p>
+`after_id`|**Optional\[str\]**|<p>The ID of the batch used for cursor pagination.</p>
+`status`|**Optional\[[AppBatch.Status](toloka.client.app.AppBatch.Status.md)\]**|<p>Refer to the [AppBatch.Status](toloka.client.app.AppBatch.Status.md) page for more information on the available `status` values.</p>
+`id_gt`|**Optional\[str\]**|<p>Batches with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Batches with IDs greater than or equal to the specified value.</p>
+`id_lt`|**Optional\[str\]**|<p>Batches with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Batches with IDs less than or equal to the specified value.</p>
+`name_gt`|**Optional\[str\]**|<p>Batches with names lexicographically greater than the specified value.</p>
+`name_gte`|**Optional\[str\]**|<p>Batches with names lexicographically greater than or equal to the specified value.</p>
+`name_lt`|**Optional\[str\]**|<p>Batches with names lexicographically less than the specified value.</p>
+`name_lte`|**Optional\[str\]**|<p>Batches with names lexicographically less than or equal to the specified value.</p>
+`created_gt`|**Optional\[datetime\]**|<p>Batches created after the specified date.</p>
+`created_gte`|**Optional\[datetime\]**|<p>Batches created after or on the specified date.</p>
+`created_lt`|**Optional\[datetime\]**|<p>Batches created before the specified date.</p>
+`created_lte`|**Optional\[datetime\]**|<p>Batches created before or on the specified date.</p>
+`sort`|**Union\[List\[str\], [AppBatchSortItems](toloka.client.search_requests.AppBatchSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
+`limit`|**Optional\[int\]**|<p>Returned batches limit. The maximum allowed limit is 1000.</p>
 
 * **Returns:**
 
-  The first `limit` batches in `content`. And a mark that there is more.
+  Found batches and a flag showing whether there are more matching batches exceeding the limit.
 
 * **Return type:**
 

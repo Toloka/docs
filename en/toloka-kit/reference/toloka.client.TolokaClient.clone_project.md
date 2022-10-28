@@ -1,5 +1,5 @@
 # clone_project
-`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1146)
 
 ```python
 clone_project(
@@ -12,7 +12,7 @@ clone_project(
 Synchronously clones the project, all pools and trainings
 
 
-Emulates cloning behaviour via Toloka interface:
+Emulates cloning behavior via Toloka interface:
 - the same skills will be used
 - the same quality control collectors will be used (could be changed by reuse_controllers=False)
 - the expiration date will not be changed in the new project
@@ -38,6 +38,8 @@ Doesn't copy tasks/golden tasks/training tasks.
 
 **Examples:**
 
+
 ```python
 project, pools, trainings = toloka_client.clone_project('123')
+# add tasks in pools and trainings
 ```

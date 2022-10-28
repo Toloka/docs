@@ -1,5 +1,5 @@
 # Operation
-`toloka.client.operations.Operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/operations.py#L50)
+`toloka.client.operations.Operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/operations.py#L51)
 
 ```python
 Operation(

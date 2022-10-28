@@ -1,5 +1,5 @@
 # FailRate
-`toloka.client.conditions.FailRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L158)
+`toloka.client.conditions.FailRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L167)
 
 ```python
 FailRate(
@@ -9,5 +9,9 @@ FailRate(
 )
 ```
 
-Percentage of wrong answers of the performer to the captcha
+The percentage of unsolved captchas.
+
+
+`FailRate` is used with collectors:
+- [Captcha](toloka.client.collectors.Captcha.md)
 

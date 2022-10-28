@@ -1,5 +1,5 @@
 # Project
-`toloka.client.project.Project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/__init__.py#L63)
+`toloka.client.project.Project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/__init__.py#L63)
 
 ```python
 Project(
@@ -32,7 +32,7 @@ than one question, it may be worth dividing it into several projects.
 
 In a project, you set properties for tasks and responses:
 * Input data parameters. These parameters describe the objects to display in a task, such as images or text.
-* Output data parameters. These parameters describe users' responses. They are used for validating the
+* Output data parameters. These parameters describe Tolokers' responses. They are used for validating the
     responses entered: the data type (integer, string, etc.), range of values, string length, and so on.
 * Task interface. For more information about how to define the appearance of tasks, see the document
     Toloka. requester's guide.
@@ -43,14 +43,14 @@ Pools and training pools are related to a project.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`public_name`|**Optional\[str\]**|<p>Name of the project. Visible to users.</p>
-`public_description`|**Optional\[str\]**|<p>Description of the project. Visible to users.</p>
+`public_name`|**Optional\[str\]**|<p>Name of the project. Visible to Tolokers.</p>
+`public_description`|**Optional\[str\]**|<p>Description of the project. Visible to Tolokers.</p>
 `public_instructions`|**Optional\[str\]**|<p>Instructions for completing the task. You can use any HTML markup in the instructions.</p>
 `private_comment`|**Optional\[str\]**|<p>Comments about the project. Visible only to the requester.</p>
 `task_spec`|**Optional\[[TaskSpec](toloka.client.project.task_spec.TaskSpec.md)\]**|<p>Parameters for input and output data and the task interface.</p>
 `assignments_issuing_type`|**[AssignmentsIssuingType](toloka.client.project.Project.AssignmentsIssuingType.md)**|<p>How to assign tasks. The default value is AUTOMATED.</p>
 `assignments_automerge_enabled`|**Optional\[bool\]**|<p>Solve merging identical tasks in the project.</p>
-`max_active_assignments_count`|**Optional\[int\]**|<p>The number of task suites the user can complete simultaneously (“Active” status)</p>
+`max_active_assignments_count`|**Optional\[int\]**|<p>The number of task suites a Toloker can complete simultaneously (“Active” status)</p>
 `quality_control`|**Optional\[[QualityControl](toloka.client.quality_control.QualityControl.md)\]**|<p>The quality control rule.</p>
 `metadata`|**Optional\[Dict\[str, List\[str\]\]\]**|<p>Additional information about project.</p>
 `status`|**Optional\[[ProjectStatus](toloka.client.project.Project.ProjectStatus.md)\]**|<p>Project status.</p>
@@ -68,7 +68,7 @@ toloka_client = toloka.TolokaClient(your_token, 'PRODUCTION')
 new_project = toloka.project.Project(
     public_name='My best project!!!',
     public_description='Look at the instruction and do it well',
-    public_instructions='!Describe your task for performers here!',
+    public_instructions='Describe your task for Tolokers here!',
     task_spec=toloka.project.task_spec.TaskSpec(
         input_spec={'image': toloka.project.field_spec.UrlSpec()},
         output_spec={'result': toloka.project.field_spec.StringSpec(allowed_values=['OK', 'BAD'])},

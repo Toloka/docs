@@ -5,21 +5,17 @@
 SkillSortItems(self, items=None)
 ```
 
-Parameters for sorting skill search results
-
-
-You can specify multiple parameters.
-To change the sorting direction (sort in descending order), add a hyphen before the parameter. For example, sort=-id.
+Keys for sorting skills in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.SkillSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - Skill ID in ascending order.</li><li>created - Skill creation date in UTC in yyyy-MM-DD format (ascending).</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.SkillSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — The ID of a skill.</li> <li>`&#x27;created&#x27;` — A skill creation date.</li> </ul>
 
 **Examples:**
 
-How to specify and use SortItems.
+The example shows how to find skills sorted by creation date in descending order. Skills with equal creation dates are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.SkillSortItems(['-created', 'id'])

@@ -10,14 +10,11 @@ MessageThreadSearchResult(
 )
 ```
 
-The list of found message chains and whether there is something else on the original request
-
-
-It's better to use TolokaClient.get_message_threads(), which already implements the correct handling of the search result.
+The result of searching message threads.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[MessageThread](toloka.client.message_thread.MessageThread.md)\]\]**|<p>List of found MessageThread</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[MessageThread](toloka.client.message_thread.MessageThread.md)\]\]**|<p>A list with found message threads.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching message threads.</p> <ul> <li>`True` — There are more matching message threads, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching message threads.</li> </ul>

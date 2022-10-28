@@ -1,5 +1,5 @@
 # TotalAnswersCount
-`toloka.client.conditions.TotalAnswersCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L287)
+`toloka.client.conditions.TotalAnswersCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L343)
 
 ```python
 TotalAnswersCount(
@@ -9,8 +9,10 @@ TotalAnswersCount(
 )
 ```
 
-The number of completed tasks by the performer
+The number of completed tasks.
 
 
-Be careful, it may have different meanings in different collectors.
+`TotalAnswersCount` is used with collectors:
+- [GoldenSet](toloka.client.collectors.GoldenSet.md)
+- [MajorityVote](toloka.client.collectors.MajorityVote.md)
 

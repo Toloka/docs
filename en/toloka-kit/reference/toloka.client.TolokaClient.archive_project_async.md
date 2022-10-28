@@ -1,5 +1,5 @@
 # archive_project_async
-`toloka.client.TolokaClient.archive_project_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.archive_project_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L997)
 
 ```python
 archive_project_async(self, project_id: str)
@@ -26,6 +26,7 @@ The archived project is not deleted. You can access it when you will need it.
   [ProjectArchiveOperation](toloka.client.operations.ProjectArchiveOperation.md)
 
 **Examples:**
+
 
 ```python
 archive_op = toloka_client.archive_project_async(project_id='1')

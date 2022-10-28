@@ -10,14 +10,11 @@ TaskSearchResult(
 )
 ```
 
-The list of found tasks and whether there is something else on the original request
-
-
-It's better to use TolokaClient.get_tasks(), which already implements the correct handling of the search result.
+The result of searching tasks.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[Task](toloka.client.task.Task.md)\]\]**|<p>List of found tasks</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[Task](toloka.client.task.Task.md)\]\]**|<p>A list with found tasks.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching tasks.</p> <ul> <li>`True` — There are more matching tasks, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching tasks.</li> </ul>

@@ -1,28 +1,33 @@
 # SkippedInRowAssignments
-`toloka.client.collectors.SkippedInRowAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L434)
+`toloka.client.collectors.SkippedInRowAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L438)
 
 ```python
 SkippedInRowAssignments(self, *, uuid: Optional[UUID] = None)
 ```
 
-Skipping tasks is considered an indirect indicator of the quality of responses.
+Counts task suites skipped in a row by a Toloker.
 
 
-You can block access to a pool or project if a user skips multiple task suites in a row.
+Skipping tasks is considered an indirect indicator of quality of responses. You can block access to a pool or project if a Toloker skips multiple task suites in a row.
 
-Used with conditions:
-* SkippedInRowCount - How many tasks in a row the performer skipped.
+The collector can be used with conditions:
+* [SkippedInRowCount](toloka.client.conditions.SkippedInRowCount.md) — How many tasks in a row a Toloker skipped.
 
-Used with actions:
-* RestrictionV2 - Block access to projects or pools.
-* ApproveAllAssignments - Approve all replies from the performer.
-* RejectAllAssignments - Reject all replies from the performer.
-* SetSkill - Set perfmer skill value.
+The collector can be used with actions:
+* [RestrictionV2](toloka.client.actions.RestrictionV2.md) blocks access to projects or pools.
+* [ApproveAllAssignments](toloka.client.actions.ApproveAllAssignments.md) accepts all Toloker's assignments.
+* [RejectAllAssignments](toloka.client.actions.RejectAllAssignments.md) rejects all Toloker's assignments.
+* [SetSkill](toloka.client.actions.SetSkill.md) sets Toloker's skill value.
 
+## Parameters Description
+
+| Parameters | Type | Description |
+| :----------| :----| :-----------|
+`uuid`|**Optional\[UUID\]**|<p>The ID of a collector. Note that when you clone a pool, both pools start using the same collector, because it is not cloned. Usually, it is not an intended behavior. For example, in this case one collector gathers history size from both pools.</p>
 
 **Examples:**
 
-How to ban a performer in this project if he skipped tasks.
+The example shows how to block Toloker's access to the project for 15 days if he skipped more than 3 task suites in a row.
 
 ```python
 new_pool = toloka.pool.Pool(....)
@@ -33,7 +38,7 @@ new_pool.quality_control.add_action(
         scope=toloka.user_restriction.UserRestriction.PROJECT,
         duration=15,
         duration_unit='DAYS',
-        private_comment='Lazy performer',
+        private_comment='Skips too many task suites in a row',
     )
 )
 ```

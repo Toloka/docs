@@ -1,5 +1,5 @@
 # DistanceConditionV1
-`toloka.client.project.template_builder.conditions.DistanceConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/conditions.py#L93)
+`toloka.client.project.template_builder.conditions.DistanceConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/conditions.py#L93)
 
 ```python
 DistanceConditionV1(
@@ -16,7 +16,7 @@ DistanceConditionV1(
 This component checks whether the sent coordinates match the ones that you specified
 
 
-For example, you want the user to take a photo of a specific place. The condition.distance component checks whether
+For example, you want a Toloker to take a photo of a specific place. The condition.distance component checks whether
 the photo was taken at the location that you specified.
 
 ## Parameters Description
@@ -26,11 +26,11 @@ the photo was taken at the location that you specified.
 `from_`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>First point.</p>
 `to_`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Second point.</p>
 `max`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The distance in meters by which the X and Y coordinates may differ.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that the user will see.</p>
+`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
 
 **Examples:**
 
-How to check that performer is in the right place.
+How to check that a Toloker is in the right place.
 
 ```python
 distance_condition = tb.conditions.DistanceConditionV1(

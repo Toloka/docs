@@ -1,23 +1,27 @@
 # aggregate_solutions_by_task
-`toloka.client.TolokaClient.aggregate_solutions_by_task`
+`toloka.client.TolokaClient.aggregate_solutions_by_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L471)
 
-Starts aggregation of solutions to a single task
+Aggregates responses to a single task on the Toloka server.
 
 
-The method only starts the aggregation and returns the operation for further tracking.
+{% note tip %}
+
+Try [crowd-kit library](https://toloka.ai/en/docs/crowd-kit). It has many aggregation methods and executes on your computer.
+
+{% endnote %}
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`task_id`|**Optional\[str\]**|<p>Answers for which task to aggregate.</p>
-`pool_id`|**Optional\[str\]**|<p>In which pool this task.</p>
-`answer_weight_skill_id`|**Optional\[str\]**|<p>A skill that determines the weight of the performer&#x27;s response.</p>
-`fields`|**Optional\[List\[[WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field](toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to use for aggregating responses. For best results, each of these fields must have a limited number of response options.</p>
+`task_id`|**Optional\[str\]**|<p>The ID of the task.</p>
+`pool_id`|**Optional\[str\]**|<p>The ID of the pool containing the task.</p>
+`answer_weight_skill_id`|**Optional\[str\]**|<p>The ID of the skill that determines the weight of the Toloker&#x27;s responses.</p>
+`fields`|**Optional\[List\[[WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field](toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to aggregate. For the best results, each of these fields should have limited number of response options.</p>
 
 * **Returns:**
 
-  Result of aggregation. Also contains input parameters and result confidence.
+  Aggregated response.
 
 * **Return type:**
 
@@ -25,15 +29,15 @@ The method only starts the aggregation and returns the operation for further tra
 
 **Examples:**
 
-How to aggregate solutions to a task.
+The example shows how to aggregate responses to a single task.
 
 ```python
-aggregation_operation = toloka_client.aggregate_solutions_by_task(
-        type=toloka.aggregation.AggregatedSolutionType.WEIGHTED_DYNAMIC_OVERLAP,
-        pool_id=some_existing_pool_id,   # Task in this pool
-        task_id=some_existing_task_id,   # Aggregate on this task
-        answer_weight_skill_id=some_skill_id,   # Aggregate by this skill
-        fields=[toloka.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]  # Aggregate this field
-    )
-print(aggregation_operation.output_values['result'])
+aggregated_response = toloka_client.aggregate_solutions_by_task(
+    type=toloka.aggregation.AggregatedSolutionType.WEIGHTED_DYNAMIC_OVERLAP,
+    pool_id=some_existing_pool_id,
+    task_id=some_existing_task_id,
+    answer_weight_skill_id=some_skill_id,
+    fields=[toloka.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]
+)
+print(aggregated_response.output_values['result'])
 ```

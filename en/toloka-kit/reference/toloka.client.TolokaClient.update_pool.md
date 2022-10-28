@@ -1,5 +1,5 @@
 # update_pool
-`toloka.client.TolokaClient.update_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.update_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1612)
 
 ```python
 update_pool(
@@ -27,6 +27,7 @@ Makes changes to the pool
   [Pool](toloka.client.pool.Pool.md)
 
 **Examples:**
+
 
 ```python
 updated_pool = toloka_client.update_pool(pool_id=old_pool_id, pool=new_pool_object)

@@ -1,5 +1,5 @@
 # BaseTolokaObject
-`toloka.client.primitives.base.BaseTolokaObject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/primitives/base.py#L146)
+`toloka.client.primitives.base.BaseTolokaObject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/primitives/base.py#L146)
 
 ```python
 BaseTolokaObject(self)
