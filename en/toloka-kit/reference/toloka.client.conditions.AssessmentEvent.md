@@ -1,5 +1,5 @@
 # AssessmentEvent
-`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L101)
+`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L105)
 
 ```python
 AssessmentEvent(
@@ -9,20 +9,23 @@ AssessmentEvent(
 )
 ```
 
-Assessment of the assignment changes its status to the specified one
+An assignment status change event.
 
 
-This condition can work only with compare operator '=='.
+Possible values:
+    * `ACCEPT` — An assignment was accepted.
+    * `ACCEPT_AFTER_REJECT` — An assignment with the previously set `REJECTED` status was accepted.
+    * `REJECT` — An assignment was rejected.
 
-## Parameters Description
+`AssessmentEvent` condition can be used with the `==` operator only.
 
-| Parameters | Type | Description |
-| :----------| :----| :-----------|
-`value`|**Optional\[[Type](toloka.client.conditions.AssessmentEvent.Type.md)\]**|<p>Possible values:<ul><li>conditions.AssessmentEvent.ACCEPT</li><li>conditions.AssessmentEvent.ACCEPT_AFTER_REJECT</li><li>conditions.AssessmentEvent.REJECT</li></ul></p>
+`AssessmentEvent` is used with collectors:
+- [AssignmentsAssessment](toloka.client.collectors.AssignmentsAssessment.md).
+
 
 **Examples:**
 
-How to increase task overlap when you reject assignment in delayed mode.
+The example shows how to automatically increase the overlap of a task suite when an assignment was rejected.
 
 ```python
 new_pool = toloka.pool.Pool(....)

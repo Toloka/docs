@@ -1,18 +1,17 @@
 # CollectorConfig
-`toloka.client.collectors.CollectorConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L29)
+`toloka.client.collectors.CollectorConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L29)
 
 ```python
 CollectorConfig(self, *, uuid: Optional[UUID] = None)
 ```
 
-Base class for all collectors
+Base class for all collectors.
 
+## Parameters Description
 
-Attriutes:
-    uuid: Id for this collector. Pay attention! If you clone the pool, you will have same collector in old and new pools.
-        So collectors can behave a little unexpectedly. For example they start gather "history_size" patameter
-        from both pools.
-
+| Parameters | Type | Description |
+| :----------| :----| :-----------|
+`uuid`|**Optional\[UUID\]**|<p>The ID of a collector. Note that when you clone a pool, both pools start using the same collector, because it is not cloned. Usually, it is not an intended behavior. For example, in this case one collector gathers history size from both pools.</p>
 ## Methods Summary
 
 | Method | Description |

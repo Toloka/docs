@@ -1,5 +1,5 @@
 # open_pool_async
-`toloka.client.TolokaClient.open_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.open_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1565)
 
 ```python
 open_pool_async(self, pool_id: str)
@@ -8,7 +8,7 @@ open_pool_async(self, pool_id: str)
 Starts distributing tasks from the pool, asynchronous version
 
 
-Performers will see your tasks only after that call.
+Tolokers will see your tasks only after that call.
 
 ## Parameters Description
 
@@ -27,7 +27,7 @@ already opened then None is returned.
 
 **Examples:**
 
-Open the pool for performers.
+Open the pool for Tolokers.
 
 ```python
 open_pool = toloka_client.open_pool(pool_id='1')

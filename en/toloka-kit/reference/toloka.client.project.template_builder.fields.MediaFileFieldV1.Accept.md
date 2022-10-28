@@ -1,5 +1,5 @@
 # Accept
-`toloka.client.project.template_builder.fields.MediaFileFieldV1.Accept` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L366)
+`toloka.client.project.template_builder.fields.MediaFileFieldV1.Accept` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L367)
 
 ```python
 Accept(

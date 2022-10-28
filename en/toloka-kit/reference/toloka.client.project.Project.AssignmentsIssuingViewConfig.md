@@ -1,5 +1,5 @@
 # AssignmentsIssuingViewConfig
-`toloka.client.project.Project.AssignmentsIssuingViewConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/__init__.py#L141)
+`toloka.client.project.Project.AssignmentsIssuingViewConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/__init__.py#L141)
 
 ```python
 AssignmentsIssuingViewConfig(
@@ -20,5 +20,5 @@ Used only then assignments_issuing_type == MAP_SELECTOR
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`title_template`|**Optional\[str\]**|<p>Name of the task. Users will see it in the task preview mode.</p>
-`description_template`|**Optional\[str\]**|<p>Brief description of the task. Users will see it in the task preview mode.</p>
+`title_template`|**Optional\[str\]**|<p>Name of the task. Tolokers will see it in the task preview mode.</p>
+`description_template`|**Optional\[str\]**|<p>Brief description of the task. Tolokers will see it in the task preview mode.</p>

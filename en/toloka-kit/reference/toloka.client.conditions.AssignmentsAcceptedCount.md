@@ -1,5 +1,5 @@
 # AssignmentsAcceptedCount
-`toloka.client.conditions.AssignmentsAcceptedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L137)
+`toloka.client.conditions.AssignmentsAcceptedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L143)
 
 ```python
 AssignmentsAcceptedCount(
@@ -9,11 +9,12 @@ AssignmentsAcceptedCount(
 )
 ```
 
-How many assignment was accepted from performer
+The number of assignments accepted from a Toloker.
 
 
-Don't be confused!!!
-This condition used only with 'AnswerCount' controller.
-And exist very similar condition 'AcceptedAssignmentsCount', that used only with 'AssignmentsAssessment' controller.
-Sorry about that.
+`AssignmentsAcceptedCount` is used with collectors:
+- [AnswerCount](toloka.client.collectors.AnswerCount.md)
+
+See also:
+- AcceptedAssignmentsCount(toloka.client.conditions.AcceptedAssignmentsCount.md) — The number of accepted assignments of a task suite.
 

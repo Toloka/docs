@@ -1,5 +1,5 @@
 # CorrectAnswersRate
-`toloka.client.conditions.CorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L149)
+`toloka.client.conditions.CorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L156)
 
 ```python
 CorrectAnswersRate(
@@ -9,8 +9,10 @@ CorrectAnswersRate(
 )
 ```
 
-The percentage of correct responses
+The percentage of correct responses.
 
 
-Be careful, it may have different meanings in different collectors.
+`CorrectAnswersRate` is used with collectors:
+- [GoldenSet](toloka.client.collectors.GoldenSet.md)
+- [MajorityVote](toloka.client.collectors.MajorityVote.md)
 

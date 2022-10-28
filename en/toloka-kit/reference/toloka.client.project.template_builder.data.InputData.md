@@ -1,5 +1,5 @@
 # InputData
-`toloka.client.project.template_builder.data.InputData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/data.py#L42)
+`toloka.client.project.template_builder.data.InputData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/data.py#L42)
 
 ```python
 InputData(
@@ -12,7 +12,7 @@ InputData(
 The input data.
 
 
-For example, links to images that will be shown to users. In the Template Builder sandbox, you can
+For example, links to images that will be shown to Tolokers. In the Template Builder sandbox, you can
 set an example of input data.
 
 ## Parameters Description

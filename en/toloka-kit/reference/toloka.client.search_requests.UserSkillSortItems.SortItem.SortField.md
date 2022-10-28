@@ -7,6 +7,6 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`ID`|'id'|<p></p>
-`CREATED`|'created'|<p></p>
-`MODIFIED`|'modified'|<p></p>
+`ID`|'id'|
+`CREATED`|'created'|
+`MODIFIED`|'modified'|

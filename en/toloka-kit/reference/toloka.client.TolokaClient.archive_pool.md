@@ -1,5 +1,5 @@
 # archive_pool
-`toloka.client.TolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1222)
 
 ```python
 archive_pool(self, pool_id: str)
@@ -26,6 +26,7 @@ The archived pool is not deleted. You can access it when you will need it.
   [Pool](toloka.client.pool.Pool.md)
 
 **Examples:**
+
 
 ```python
 closed_pool = next(toloka_client.get_pools(status='CLOSED'))

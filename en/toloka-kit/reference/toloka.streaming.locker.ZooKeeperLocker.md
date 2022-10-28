@@ -1,5 +1,5 @@
 # ZooKeeperLocker
-`toloka.streaming.locker.ZooKeeperLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/locker.py#L109)
+`toloka.streaming.locker.ZooKeeperLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/locker.py#L116)
 
 ```python
 ZooKeeperLocker(
@@ -13,6 +13,16 @@ ZooKeeperLocker(
 
 Apache ZooKeeper-based locker to use with a storage.
 
+
+{% note warning %}
+
+Requires toloka-kit[zookeeper] extras. Install it with the following command:
+
+```shell
+pip install toloka-kit[zookeeper]
+```
+
+{% endnote %}
 
 Two locks cannot be taken simultaneously with the same key.
 If the instance detects that the lock was taken by a newer version, it throws an error.
@@ -31,22 +41,21 @@ If the instance detects that the lock was taken by a newer version, it throws an
 Create lock object.
 
 ```python
-!pip install kazoo
+!pip install toloka-kit[zookeeper]
 from kazoo.client import KazooClient
 zk = KazooClient('127.0.0.1:2181')
 zk.start()
 locker = ZooKeeperLocker(zk, '/my-locks')
 ```
-
 Try to lock the same key at the same time..
 
 ```python
 locker_1 = ZooKeeperLocker(zk, '/locks')
 locker_2 = ZooKeeperLocker(zk, '/locks', timeout=0)
 with locker_1('some_key') as lock_1:
-    with locker_2('some_key') as lock_2:  # => raise an error: timeout
-        pass
 ```
+...         pass
+...
 
 Try to lock the same key sequentially.
 
@@ -54,9 +63,13 @@ Try to lock the same key sequentially.
 locker_1 = ZooKeeperLocker(zk, '/locks')
 locker_2 = ZooKeeperLocker(zk, '/locks')
 with locker_1('some_key'):
-    pass
-with locker_2('some_key'):
-    pass
-with locker_1('some_key'):  # raise an error: NewerInstanceDetectedError
-    pass
 ```
+
+```python
+with locker_2('some_key'):
+```
+
+```python
+with locker_1('some_key'):  # raise an error: NewerInstanceDetectedError
+```
+...

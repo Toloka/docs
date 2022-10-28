@@ -10,7 +10,7 @@ WebhookSubscriptionBatchCreateResult(
 )
 ```
 
-The list with the results of the webhook-subscriptions creation operation.
+A list with the results of the webhook-subscriptions creation operation.
 
 ## Parameters Description
 

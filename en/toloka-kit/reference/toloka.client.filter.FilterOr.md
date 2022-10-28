@@ -1,14 +1,14 @@
 # FilterOr
-`toloka.client.filter.FilterOr` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L86)
+`toloka.client.filter.FilterOr` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L92)
 
 ```python
 FilterOr(self, or_: List[FilterCondition])
 ```
 
-Use to combine multiple filters via "or" logic
+Supports combining filters using the `|` operator.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`or_`|**List\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>list of filters to combine</p>
+`or_`|**List\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>A list of filters.</p>

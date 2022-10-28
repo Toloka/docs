@@ -10,14 +10,11 @@ PoolSearchResult(
 )
 ```
 
-The list of found pools and whether there is something else on the original request
-
-
-It's better to use TolokaClient.get_pools(), which already implements the correct handling of the search result.
+The result of searching pools.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[Pool](toloka.client.pool.Pool.md)\]\]**|<p>List of found pools</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[Pool](toloka.client.pool.Pool.md)\]\]**|<p>A list with found pools.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching pools.</p> <ul> <li>`True` — There are more matching pools, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching pools.</li> </ul>

@@ -1,5 +1,5 @@
 # AppItem
-`toloka.client.app.AppItem` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/app/__init__.py#L100)
+`toloka.client.app.AppItem` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/app/__init__.py#L123)
 
 ```python
 AppItem(
@@ -9,8 +9,6 @@ AppItem(
     input_data: Optional[Dict[str, Any]] = None,
     id: Optional[str] = None,
     app_project_id: Optional[str] = None,
-    created: Optional[datetime] = None,
-    updated: Optional[datetime] = None,
     status: Union[Status, str, None] = None,
     output_data: Optional[Dict[str, Any]] = None,
     errors: Optional[List[_AppError]] = None,
@@ -20,24 +18,22 @@ AppItem(
 )
 ```
 
-A work item with data. It's uploaded into the batch with other items to be collectively sent for labeling.
+A task item.
 
 
-In a TSV file with tasks, each line is a work item.
+Items are uploaded to Toloka and are grouped in batches. After uploading the status of items is set to `NEW`. Items with that status can be edited. Then entire batches are sent for labeling.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`batch_id`|**Optional\[str\]**|<p>ID of the batch that includes the item.</p>
-`input_data`|**Optional\[Dict\[str, Any\]\]**|<p>The item data following the App schema.</p>
-`id`|**Optional\[str\]**|<p>Item ID.</p>
-`app_project_id`|**Optional\[str\]**|<p>ID of the app project that includes the batch with this item.</p>
-`created`|**Optional\[datetime\]**|<p></p>
-`updated`|**Optional\[datetime\]**|<p></p>
-`status`|**Optional\[[Status](toloka.client.app.AppItem.Status.md)\]**|<p>Processing status. If the item has the NEW status, it can be edited. In other statuses, the item is immutable. Allowed values:<ul><li>NEW - new;</li><li>PROCESSING - being processed;</li><li>COMPLETED - processing complete;</li><li>ERROR - error during processing;</li><li>CANCELLED - processing canceled;</li><li>ARCHIVE - item has been archived;</li><li>NO_MONEY - not enough money for processing.</li></ul></p>
-`output_data`|**Optional\[Dict\[str, Any\]\]**|<p>Processing result.</p>
-`errors`|**Optional\[List\[[_AppError](toloka.client.app._AppError.md)\]\]**|<p></p>
-`created_at`|**Optional\[datetime\]**|<p>Date and time when the item was created.</p>
-`started_at`|**Optional\[datetime\]**|<p>Date and time when the item processing started.</p>
-`finished_at`|**Optional\[datetime\]**|<p>Date and time when the item processing was completed.</p>
+`id`|**Optional\[str\]**|<p>The ID of the item.</p>
+`app_project_id`|**Optional\[str\]**|<p>The ID of the project that contains the item.</p>
+`batch_id`|**Optional\[str\]**|<p>The ID of the batch that contains the item.</p>
+`input_data`|**Optional\[Dict\[str, Any\]\]**|<p>Input data. It must follow the solution schema described in `App.input_spec`.</p>
+`status`|**Optional\[[Status](toloka.client.app.AppItem.Status.md)\]**|<p>The item status:</p> <ul> <li>`NEW` — The item is uploaded to Toloka and ready for processing.</li> <li>`PROCESSING` — The item is being processed by Tolokers.</li> <li>`COMPLETED` — Item annotation is completed.</li> <li>`ERROR` — An error occurred during processing.</li> <li>`CANCELLED` — Item processing cancelled.</li> <li>`ARCHIVE` — The item is archived.</li> <li>`NO_MONEY` — There are not enough money for processing.</li> </ul>
+`output_data`|**Optional\[Dict\[str, Any\]\]**|<p>Annotated data.</p>
+`errors`|**Optional\[List\[[_AppError](toloka.client.app._AppError.md)\]\]**|<p>Errors occurred during annotation.</p>
+`created_at`|**Optional\[datetime\]**|<p>The date and time when the item was created.</p>
+`started_at`|**Optional\[datetime\]**|<p>The date and time when the item processing started.</p>
+`finished_at`|**Optional\[datetime\]**|<p>The date and time when the item processing was completed.</p>

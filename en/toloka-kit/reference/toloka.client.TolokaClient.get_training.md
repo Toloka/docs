@@ -1,5 +1,5 @@
 # get_training
-`toloka.client.TolokaClient.get_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1854)
 
 ```python
 get_training(self, training_id: str)
@@ -22,6 +22,7 @@ Reads one specific training
   [Training](toloka.client.training.Training.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.get_training(training_id='1')

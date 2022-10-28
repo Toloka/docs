@@ -1,5 +1,5 @@
 # AcceptanceRate
-`toloka.client.collectors.AcceptanceRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L62)
+`toloka.client.collectors.AcceptanceRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L62)
 
 ```python
 AcceptanceRate(
@@ -10,39 +10,42 @@ AcceptanceRate(
 )
 ```
 
-Results of checking the answers of the performer
+Counts accepted and rejected Toloker's assignments.
 
 
-If non-automatic acceptance (assignment review) is set in the pool, add a rule to:
-- Set the performer's skill based on their responses.
-- Block access for performers who give incorrect responses.
+If non-automatic acceptance is set in the pool, you may use this collector to:
+- Set a Toloker's skill.
+- Block access for Tolokers with too many rejected responses.
 
-Used with conditions:
-* TotalAssignmentsCount - How many assignments from this performer were checked.
-* AcceptedAssignmentsRate - Percentage of how many assignments were accepted from this performer out of all checked assignment.
-* RejectedAssignmentsRate - Percentage of how many assignments were rejected from this performer out of all checked assignment.
+The collector can be used with conditions:
+* [TotalAssignmentsCount](toloka.client.conditions.TotalAssignmentsCount.md) — Total count of checked assignments submitted by a Toloker.
+* [AcceptedAssignmentsRate](toloka.client.conditions.AcceptedAssignmentsRate.md) — A percentage of accepted assignments.
+* [RejectedAssignmentsRate](toloka.client.conditions.RejectedAssignmentsRate.md) — A percentage of rejected assignments.
 
-Used with actions:
-* RestrictionV2 - Block access to projects or pools.
-* ApproveAllAssignments - Approve all replies from the performer.
-* RejectAllAssignments - Reject all replies from the performer.
-* SetSkill - Set perfmer skill value.
-* SetSkillFromOutputField - Set performer skill value from source.
+The collector can be used with actions:
+* [RestrictionV2](toloka.client.actions.RestrictionV2.md) blocks access to projects or pools.
+* [ApproveAllAssignments](toloka.client.actions.ApproveAllAssignments.md) accepts all Toloker's assignments.
+* [RejectAllAssignments](toloka.client.actions.RejectAllAssignments.md) rejects all Toloker's assignments.
+* [SetSkill](toloka.client.actions.SetSkill.md) sets Toloker's skill value.
+* [SetSkillFromOutputField](toloka.client.actions.SetSkillFromOutputField.md) sets Toloker's skill value using an output field.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`history_size`|**Optional\[int\]**|<p>The maximum number of recent tasks that the user completed in the project to use for the calculation. If this field is omitted, the calculation is based on all the tasks that the user completed in the pool.</p>
+`uuid`|**Optional\[UUID\]**|<p>The ID of a collector. Note that when you clone a pool, both pools start using the same collector, because it is not cloned. Usually, it is not an intended behavior. For example, in this case one collector gathers history size from both pools.</p>
+`history_size`|**Optional\[int\]**|<p>The maximum number of recent assignments used to calculate the statistics. If `history_size` is omitted, all Toloker&#x27;s assignments are counted.</p>
 
 **Examples:**
 
-How to ban a performer in this project if he makes mistakes.
+The example shows how to block a Toloker if they make too many mistakes.
+If more than 35% of responses are rejected, then the Toloker is restricted to access the project.
+The rule is applied after collecting 3 or more responses.
 
 ```python
 new_pool = toloka.pool.Pool(....)
 new_pool.quality_control.add_action(
-collector=toloka.collectors.AcceptanceRate(),
+    collector=toloka.collectors.AcceptanceRate(),
     conditions=[
         toloka.conditions.TotalAssignmentsCount > 2,
         toloka.conditions.RejectedAssignmentsRate > 35,
@@ -51,7 +54,7 @@ collector=toloka.collectors.AcceptanceRate(),
         scope=toloka.user_restriction.UserRestriction.PROJECT,
         duration=15,
         duration_unit='DAYS',
-        private_comment='Performer often make mistakes',
+        private_comment='The Toloker often makes mistakes',
     )
 )
 ```

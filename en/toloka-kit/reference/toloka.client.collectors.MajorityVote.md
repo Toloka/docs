@@ -1,5 +1,5 @@
 # MajorityVote
-`toloka.client.collectors.MajorityVote` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L381)
+`toloka.client.collectors.MajorityVote` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L387)
 
 ```python
 MajorityVote(
@@ -11,34 +11,35 @@ MajorityVote(
 )
 ```
 
-Majority vote is a quality control method based on coinciding responses from the majority
+Counts correct responses determined by the majority vote method.
 
 
-The response chosen by the majority is considered correct, and other responses are considered incorrect.
-Depending on the percentage of correct responses, you can either increase the user's skill value, or ban the user from tasks.
+A response chosen by the majority is considered to be correct, and other responses are considered to be incorrect.
+Depending on the percentage of correct responses, you can either increase a Toloker's skill value, or to block the Toloker.
 
-Used with conditions:
-* TotalAnswersCount - The number of completed tasks by the performer.
-* CorrectAnswersRate - The percentage of correct responses.
-* IncorrectAnswersRate - The percentage of incorrect responses.
+The collector can be used with conditions:
+* [TotalAnswersCount](toloka.client.conditions.TotalAnswersCount.md) — The number of completed tasks by the Toloker.
+* [CorrectAnswersRate](toloka.client.conditions.CorrectAnswersRate.md) — The percentage of correct responses.
+* [IncorrectAnswersRate](toloka.client.conditions.IncorrectAnswersRate.md) — The percentage of incorrect responses.
 
-Used with actions:
-* RestrictionV2 - Block access to projects or pools.
-* ApproveAllAssignments - Approve all replies from the performer.
-* RejectAllAssignments - Reject all replies from the performer.
-* SetSkill - Set perfmer skill value.
-* SetSkillFromOutputField - Set performer skill value from source.
+The collector can be used with actions:
+* [RestrictionV2](toloka.client.actions.RestrictionV2.md) blocks access to projects or pools.
+* [ApproveAllAssignments](toloka.client.actions.ApproveAllAssignments.md) accepts all Toloker's assignments.
+* [RejectAllAssignments](toloka.client.actions.RejectAllAssignments.md) rejects all Toloker's assignments.
+* [SetSkill](toloka.client.actions.SetSkill.md) sets Toloker's skill value.
+* [SetSkillFromOutputField](toloka.client.actions.SetSkillFromOutputField.md) sets Toloker's skill value using an output field.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`answer_threshold`|**Optional\[int\]**|<p>The number of users considered the majority (for example, 3 out of 5).</p>
-`history_size`|**Optional\[int\]**|<p>The maximum number of the user&#x27;s recent responses in the project to use for calculating the percentage of correct responses. If this field is omitted, the calculation is based on all the user&#x27;s responses in the pool.</p>
+`uuid`|**Optional\[UUID\]**|<p>The ID of a collector. Note that when you clone a pool, both pools start using the same collector, because it is not cloned. Usually, it is not an intended behavior. For example, in this case one collector gathers history size from both pools.</p>
+`answer_threshold`|**Optional\[int\]**|<p>The number of Tolokers considered the majority.</p>
+`history_size`|**Optional\[int\]**|<p>The maximum number of recent Toloker&#x27;s responses to calculate the statistics. If it is omitted, calculation is based on all collected responses.</p>
 
 **Examples:**
 
-How to ban a performer in this project if he made enough answers (only for pools with post acceptance).
+The example shows how to reject all Toloker's responses if they significantly differ from the majority. The rule is applied after collecting at least 10 responses.
 
 ```python
 new_pool = toloka.pool.Pool(....)

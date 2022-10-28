@@ -1,5 +1,5 @@
 # AdultAllowed
-`toloka.client.filter.AdultAllowed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L291)
+`toloka.client.filter.AdultAllowed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L316)
 
 ```python
 AdultAllowed(
@@ -9,11 +9,19 @@ AdultAllowed(
 )
 ```
 
-Use to select users by their agreement to perform tasks that contain adult content.
+Filtering Tolokers who agreed to work with adult content.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[IdentityOperator](toloka.client.primitives.operators.IdentityOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**bool**|<p>User agreement.</p>
+`operator`|**[IdentityOperator](toloka.client.primitives.operators.IdentityOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**bool**|<ul> <li>`True` — Toloker agrees to work with adult content.</li> <li>`False` — Toloker does not agree to work with adult content.</li> </ul>
+
+**Examples:**
+
+
+```python
+adult_allowed_filter = toloka.client.filter.AdultAllowed == True
+adult_not_allowed_filter = toloka.client.filter.AdultAllowed == False
+```

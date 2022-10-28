@@ -1,5 +1,5 @@
 # open_pool
-`toloka.client.TolokaClient.open_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.open_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1540)
 
 ```python
 open_pool(self, pool_id: str)
@@ -8,7 +8,7 @@ open_pool(self, pool_id: str)
 Starts distributing tasks from the pool
 
 
-Performers will see your tasks only after that call.
+Tolokers will see your tasks only after that call.
 
 ## Parameters Description
 
@@ -26,7 +26,7 @@ Performers will see your tasks only after that call.
 
 **Examples:**
 
-Open the pool for performers.
+Open the pool for Tolokers.
 
 ```python
 toloka_client.open_pool(pool_id='1')

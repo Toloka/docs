@@ -1,5 +1,5 @@
 # Skill
-`toloka.client.filter.Skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L208)
+`toloka.client.filter.Skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L227)
 
 ```python
 Skill(
@@ -10,15 +10,23 @@ Skill(
 )
 ```
 
-Use to select users by skill value.
+Filtering Tolokers by skills.
 
 
-To select users without a skill set the parameter value operator=CompareOperator.EQ and exclude the parameter value.
+Pass the ID of a skill to the filter constructor.
+To select Tolokers without a skill, compare created filter with `None`.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`key`|**str**|<p>Skill ID.</p>
-`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>Comparison operator in the condition.</p>
-`value`|**Optional\[float\]**|<p>Attribute value from the field key.</p>
+`key`|**str**|<p>The ID of a skill.</p>
+`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>An operator in the condition.</p>
+`value`|**Optional\[float\]**|<p>A value to compare the skill with.</p>
+
+**Examples:**
+
+Selecting Tolokers with a skill with ID '224' greater than 70.
+```python
+filter = toloka.client.filter.Skill('224') > 70
+```

@@ -1,5 +1,5 @@
 # get_operation_log
-`toloka.client.TolokaClient.get_operation_log` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_operation_log` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2744)
 
 ```python
 get_operation_log(self, operation_id: str)
@@ -27,6 +27,7 @@ Logs are only available for the last month.
   List\[[OperationLogItem](toloka.client.operation_log.OperationLogItem.md)\]
 
 **Examples:**
+
 
 ```python
 op = toloka_client.get_operation_log(operation_id='1')

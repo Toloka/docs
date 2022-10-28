@@ -1,8 +1,8 @@
 # get_lines
-`toloka.metrics.metrics.BaseMetric.get_lines` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/metrics.py#L70)
+`toloka.metrics.metrics.BaseMetric.get_lines` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/metrics.py#L98)
 
 ```python
-get_lines(self)
+async get_lines(self)
 ```
 
 Gather and return metrics

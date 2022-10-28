@@ -1,5 +1,5 @@
 # accept_assignment
-`toloka.client.TolokaClient.accept_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.accept_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L593)
 
 ```python
 accept_assignment(
@@ -9,21 +9,18 @@ accept_assignment(
 )
 ```
 
-Marks one assignment as accepted
-
-
-Used then your pool created with auto_accept_solutions=False parametr.
+Accepts an assignment.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`assignment_id`|**str**|<p>What assignment will be accepted.</p>
-`public_comment`|**str**|<p>Message to the performer.</p>
+`assignment_id`|**str**|<p>The ID of the assignment.</p>
+`public_comment`|**str**|<p>A comment visible to Tolokers.</p>
 
 * **Returns:**
 
-  Object with new status.
+  The assignment object with the updated status field.
 
 * **Return type:**
 
@@ -31,7 +28,7 @@ Used then your pool created with auto_accept_solutions=False parametr.
 
 **Examples:**
 
-How to accept one assignment.
+Accepting an assignment.
 
 ```python
 toloka_client.accept_assignment(assignment_id, 'Well done!')

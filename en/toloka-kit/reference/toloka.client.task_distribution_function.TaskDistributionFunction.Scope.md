@@ -1,5 +1,5 @@
 # Scope
-`toloka.client.task_distribution_function.TaskDistributionFunction.Scope` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/task_distribution_function.py#L27)
+`toloka.client.task_distribution_function.TaskDistributionFunction.Scope` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/task_distribution_function.py#L27)
 
 An enumeration.
 
@@ -7,5 +7,5 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`PROJECT`|'PROJECT'|<p></p>
-`POOL`|'POOL'|<p></p>
+`PROJECT`|'PROJECT'|
+`POOL`|'POOL'|

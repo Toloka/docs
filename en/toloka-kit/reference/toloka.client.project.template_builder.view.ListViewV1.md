@@ -1,5 +1,5 @@
 # ListViewV1
-`toloka.client.project.template_builder.view.ListViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/view.py#L343)
+`toloka.client.project.template_builder.view.ListViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/view.py#L343)
 
 ```python
 ListViewV1(
@@ -21,7 +21,7 @@ Block for displaying data in a list.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p> Array of list items.</p>
+`items`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p>Array of list items.</p>
 `direction`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListDirection](toloka.client.project.template_builder.base.ListDirection.md)\]\]**|<p>Determines the direction of the list.</p>
 `size`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListSize](toloka.client.project.template_builder.base.ListSize.md)\]\]**|<p>Specifies the size of the margins between elements. Acceptable values in ascending order: s, m (default value).</p>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>

@@ -1,5 +1,5 @@
 # AppItemSearchRequest
-`toloka.client.search_requests.AppItemSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L1067)
+`toloka.client.search_requests.AppItemSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/search_requests.py#L1058)
 
 ```python
 AppItemSearchRequest(
@@ -11,27 +11,35 @@ AppItemSearchRequest(
     id_lte: Optional[str] = None,
     id_gt: Optional[str] = None,
     id_gte: Optional[str] = None,
-    created_at_lt: Optional[datetime] = None,
-    created_at_lte: Optional[datetime] = None,
-    created_at_gt: Optional[datetime] = None,
-    created_at_gte: Optional[datetime] = None
+    created_lt: Optional[datetime] = None,
+    created_lte: Optional[datetime] = None,
+    created_gt: Optional[datetime] = None,
+    created_gte: Optional[datetime] = None,
+    finished_lt: Optional[datetime] = None,
+    finished_lte: Optional[datetime] = None,
+    finished_gt: Optional[datetime] = None,
+    finished_gte: Optional[datetime] = None
 )
 ```
 
-Parameters for searching App items.
+Parameters for searching App task items.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`after_id`|**Optional\[str\]**|<p>ID of the item used for cursor pagination.</p>
-`batch_id`|**Optional\[str\]**|<p>Batch ID.</p>
-`status`|**Optional\[[AppItem.Status](toloka.client.app.AppItem.Status.md)\]**|<p>items in this status.</p>
-`id_gt`|**Optional\[str\]**|<p>items with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>items with an ID greater than or equal to the specified value.</p>
-`id_lt`|**Optional\[str\]**|<p>items with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>items with an ID less than or equal to the specified value.</p>
-`created_gt`|**-**|<p>items created after the specified date. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
-`created_gte`|**-**|<p>items created after the specified date, inclusive. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
-`created_lt`|**-**|<p>items created before the specified date. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
-`created_lte`|**-**|<p>items created before the specified date, inclusive. The date is specified in UTC in ISO 8601 format: YYYY-MM-DDThh:mm:ss[.sss].</p>
+`after_id`|**Optional\[str\]**|<p>The ID of the item used for cursor pagination.</p>
+`batch_id`|**Optional\[str\]**|<p>The ID of the batch to look in.</p>
+`status`|**Optional\[[AppItem.Status](toloka.client.app.AppItem.Status.md)\]**|<p>App task item status. Refer to the [AppItem.Status](toloka.client.app.AppItem.Status.md) page for more information on the available `status` values.</p>
+`id_gt`|**Optional\[str\]**|<p>Items with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Items with IDs greater than or equal to the specified value.</p>
+`id_lt`|**Optional\[str\]**|<p>Items with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Items with IDs less than or equal to the specified value.</p>
+`created_gt`|**Optional\[datetime\]**|<p>Items created after the specified date.</p>
+`created_gte`|**Optional\[datetime\]**|<p>Items created after or on the specified date.</p>
+`created_lt`|**Optional\[datetime\]**|<p>Items created before the specified date.</p>
+`created_lte`|**Optional\[datetime\]**|<p>Items created before or on the specified date.</p>
+`finished_gt`|**Optional\[datetime\]**|<p>Items labeled after the specified date.</p>
+`finished_gte`|**Optional\[datetime\]**|<p>Items labeled after or on the specified date.</p>
+`finished_lt`|**Optional\[datetime\]**|<p>Items labeled before the specified date.</p>
+`finished_lte`|**Optional\[datetime\]**|<p>Items labeled before or on the specified date.</p>

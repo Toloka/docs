@@ -1,24 +1,24 @@
 # unarchive_app_project
-`toloka.client.TolokaClient.unarchive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.unarchive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3514)
 
 ```python
 unarchive_app_project(self, app_project_id: str)
 ```
 
-Unarchiving the project.
+Unarchives an App project.
 
 
-The project changes its status to the last one it had before archiving.
+Previous project status, which was before archiving, is restored.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`app_project_id`|**str**|<p>Project ID.</p>
+`app_project_id`|**str**|<p>The ID of the project.</p>
 
 * **Returns:**
 
-  Object with updated status.
+  The App project with updated status.
 
 * **Return type:**
 

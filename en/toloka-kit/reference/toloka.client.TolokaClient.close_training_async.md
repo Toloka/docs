@@ -1,5 +1,5 @@
 # close_training_async
-`toloka.client.TolokaClient.close_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.close_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1705)
 
 ```python
 close_training_async(self, training_id: str)
@@ -23,6 +23,7 @@ If training is already closed then None is returned.
   Optional\[[TrainingCloseOperation](toloka.client.operations.TrainingCloseOperation.md)\]
 
 **Examples:**
+
 
 ```python
 open_training = next(toloka_client.get_trainings(status='OPEN'))

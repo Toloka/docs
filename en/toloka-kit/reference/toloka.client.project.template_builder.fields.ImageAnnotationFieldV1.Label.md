@@ -1,5 +1,5 @@
 # Label
-`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Label` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L278)
+`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Label` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L278)
 
 ```python
 Label(
@@ -16,4 +16,4 @@ At least two objects must be added to the array.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Text on the button for selecting a selection color.</p>
-`value`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The value to be written to the labels property data. Displayed to users as color options when selecting areas.</p>
+`value`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The value to be written to the labels property data. Displayed to Tolokers as color options when selecting areas.</p>

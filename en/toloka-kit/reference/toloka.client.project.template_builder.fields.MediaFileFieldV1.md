@@ -1,5 +1,5 @@
 # MediaFileFieldV1
-`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L340)
+`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L340)
 
 ```python
 MediaFileFieldV1(
@@ -15,8 +15,10 @@ MediaFileFieldV1(
 )
 ```
 
-Adds buttons for different types of uploads: uploading photos or videos, selecting files from the file manager or choosing from the gallery. In the accept property, select which buttons you need.
+Adds buttons for different types of uploads: uploading photos or videos, selecting files from the file manager or choosing from the gallery.
 
+
+In the accept property, select which buttons you need.
 
 By default, only one file can be uploaded, but you can allow multiple files in the multiple property.
 
@@ -36,7 +38,7 @@ field.file for a more flexible configuration of the file types.
 
 **Examples:**
 
-How to allow performers to upload images and make photos.
+How to allow Tolokers to upload images and make photos.
 
 ```python
 image_loader = tb.fields.MediaFileFieldV1(

@@ -1,5 +1,5 @@
 # AllConditionV1
-`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/conditions.py#L45)
+`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/conditions.py#L45)
 
 ```python
 AllConditionV1(
@@ -24,7 +24,7 @@ these components.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `conditions`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p>A set of conditions that must be met.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that the user will see.</p>
+`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
 
 **Examples:**
 

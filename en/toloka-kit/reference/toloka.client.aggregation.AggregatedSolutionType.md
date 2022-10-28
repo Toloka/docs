@@ -1,5 +1,5 @@
 # AggregatedSolutionType
-`toloka.client.aggregation.AggregatedSolutionType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/aggregation.py#L28)
+`toloka.client.aggregation.AggregatedSolutionType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/aggregation.py#L25)
 
 An enumeration.
 
@@ -7,5 +7,5 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`WEIGHTED_DYNAMIC_OVERLAP`|'WEIGHTED_DYNAMIC_OVERLAP'|<p></p>
-`DAWID_SKENE`|'DAWID_SKENE'|<p></p>
+`WEIGHTED_DYNAMIC_OVERLAP`|'WEIGHTED_DYNAMIC_OVERLAP'|
+`DAWID_SKENE`|'DAWID_SKENE'|

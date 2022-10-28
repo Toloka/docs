@@ -1,5 +1,5 @@
 # TaskAggregatedSolutionRequest
-`toloka.client.aggregation.TaskAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/aggregation.py#L63)
+`toloka.client.aggregation.TaskAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/aggregation.py#L52)
 
 ```python
 TaskAggregatedSolutionRequest(
@@ -10,11 +10,11 @@ TaskAggregatedSolutionRequest(
 )
 ```
 
-Base class for run aggregation on a single task
+Base class with parameters to run aggregation for a single task.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`task_id`|**Optional\[str\]**|<p>Answers for which task to aggregate.</p>
-`pool_id`|**Optional\[str\]**|<p>In which pool this task.</p>
+`task_id`|**Optional\[str\]**|<p>The ID of the task.</p>
+`pool_id`|**Optional\[str\]**|<p>The ID of the pool containing the task.</p>

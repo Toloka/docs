@@ -1,5 +1,5 @@
 # Subject
-`toloka.client.analytics_request.AnalyticsRequest.Subject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/analytics_request.py#L32)
+`toloka.client.analytics_request.AnalyticsRequest.Subject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/analytics_request.py#L32)
 
 An enumeration.
 
@@ -7,4 +7,4 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`POOL`|'POOL'|<p></p>
+`POOL`|'POOL'|

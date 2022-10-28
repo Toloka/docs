@@ -1,5 +1,5 @@
 # Category
-`toloka.client.filter.Condition.Category` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L145)
+`toloka.client.filter.Condition.Category` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L158)
 
 An enumeration.
 
@@ -7,6 +7,6 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`PROFILE`|'profile'|<p></p>
-`COMPUTED`|'computed'|<p></p>
-`SKILL`|'skill'|<p></p>
+`PROFILE`|'profile'|
+`COMPUTED`|'computed'|
+`SKILL`|'skill'|

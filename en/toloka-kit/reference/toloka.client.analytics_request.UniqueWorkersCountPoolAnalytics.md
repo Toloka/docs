@@ -1,11 +1,11 @@
 # UniqueWorkersCountPoolAnalytics
-`toloka.client.analytics_request.UniqueWorkersCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/analytics_request.py#L133)
+`toloka.client.analytics_request.UniqueWorkersCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/analytics_request.py#L133)
 
 ```python
 UniqueWorkersCountPoolAnalytics(self, *, subject_id: str)
 ```
 
-The number of unique performers who took tasks from the pool
+The number of unique Tolokers who took tasks from the pool
 
 ## Parameters Description
 

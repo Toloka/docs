@@ -1,5 +1,5 @@
 # get_project
-`toloka.client.TolokaClient.get_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1082)
 
 ```python
 get_project(self, project_id: str)
@@ -22,6 +22,7 @@ Reads one specific project
   [Project](toloka.client.project.Project.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.get_project(project_id='1')

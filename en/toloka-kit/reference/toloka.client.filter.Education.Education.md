@@ -1,12 +1,12 @@
 # Education
-`toloka.client.filter.Education.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L275)
+`toloka.client.filter.Education.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L300)
 
-User education.
+Toloker's education level.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`BASIC`|'BASIC'|<p></p>
-`MIDDLE`|'MIDDLE'|<p></p>
-`HIGH`|'HIGH'|<p></p>
+`BASIC`|'BASIC'|
+`MIDDLE`|'MIDDLE'|
+`HIGH`|'HIGH'|

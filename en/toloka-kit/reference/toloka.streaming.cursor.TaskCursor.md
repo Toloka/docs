@@ -1,5 +1,5 @@
 # TaskCursor
-`toloka.streaming.cursor.TaskCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/cursor.py#L263)
+`toloka.streaming.cursor.TaskCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/cursor.py#L263)
 
 ```python
 TaskCursor(
@@ -38,5 +38,6 @@ Iterate over tasks.
 ```python
 it = TaskCursor(pool_id='123', toloka_client=toloka_client)
 current_tasks = list(it)
+# ... new tasks could appear ...
 new_tasks = list(it)  # Contains only new tasks, appeared since the previous call.
 ```

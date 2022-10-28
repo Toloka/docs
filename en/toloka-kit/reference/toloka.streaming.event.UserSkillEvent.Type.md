@@ -1,5 +1,5 @@
 # Type
-`toloka.streaming.event.UserSkillEvent.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/event.py#L86)
+`toloka.streaming.event.UserSkillEvent.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/event.py#L86)
 
 An enumeration.
 
@@ -7,5 +7,5 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`CREATED`|'CREATED'|<p></p>
-`MODIFIED`|'MODIFIED'|<p></p>
+`CREATED`|'CREATED'|
+`MODIFIED`|'MODIFIED'|

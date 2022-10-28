@@ -1,5 +1,5 @@
 # App
-`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/app/__init__.py#L71)
+`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/app/__init__.py#L91)
 
 ```python
 App(
@@ -14,26 +14,28 @@ App(
     param_spec: Optional[Dict] = None,
     input_spec: Optional[Dict[str, FieldSpec]] = None,
     output_spec: Optional[Dict[str, FieldSpec]] = None,
-    examples: Optional[Any] = None
+    examples: Optional[Any] = None,
+    input_format_info: Optional[Dict] = None
 )
 ```
 
-An example of a standard task that you want to solve using Toloka. Unlike project templates, you don't have to
+An [App](https://toloka.ai/en/docs/toloka-apps/concepts/) solution.
 
 
-set up everything yourself.
+Each App solution targets specific type of tasks which can be solved using Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>ID of the App.</p>
-`name`|**Optional\[str\]**|<p></p>
-`image`|**Optional\[str\]**|<p>Image.</p>
-`description`|**Optional\[str\]**|<p>Overview.</p>
-`constraints_description`|**Optional\[str\]**|<p>Description of limitations.</p>
-`default_item_price`|**Optional\[Decimal\]**|<p>Default processing cost per work item.</p>
-`param_spec`|**Optional\[Dict\]**|<p>Specification of parameters for creating a project.</p>
-`input_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>Schema of input data in Toloka format.</p>
-`output_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>Schema of output data in Toloka format.</p>
-`examples`|**Optional\[Any\]**|<p>Task examples.</p>
+`id`|**Optional\[str\]**|<p>The ID of the App solution.</p>
+`name`|**Optional\[str\]**|<p>The solution name.</p>
+`image`|**Optional\[str\]**|<p>A link to the solution interface preview image.</p>
+`description`|**Optional\[str\]**|<p>The solution description.</p>
+`constraints_description`|**Optional\[str\]**|<p>The description of limitations.</p>
+`default_item_price`|**Optional\[Decimal\]**|<p>The default cost of one annotated item.</p>
+`param_spec`|**Optional\[Dict\]**|<p>The specification of parameters used to create a project.</p>
+`input_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>The schema of solution input data.</p>
+`output_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>The schema of solution output data.</p>
+`examples`|**Optional\[Any\]**|<p>Example description of tasks which can be solved with this solution.</p>
+`input_format_info`|**Optional\[Dict\]**|<p>Information about the input data format.</p>

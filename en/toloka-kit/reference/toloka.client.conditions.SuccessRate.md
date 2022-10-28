@@ -1,5 +1,5 @@
 # SuccessRate
-`toloka.client.conditions.SuccessRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L280)
+`toloka.client.conditions.SuccessRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L333)
 
 ```python
 SuccessRate(
@@ -9,5 +9,9 @@ SuccessRate(
 )
 ```
 
-Percentage of correct answers of the performer to the captcha
+A percentage of solved captchas out of all entered captchas.
+
+
+`SuccessRate` is used with collectors:
+- [Captcha](toloka.client.collectors.Captcha.md)
 

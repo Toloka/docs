@@ -1,5 +1,5 @@
 # TaskSearchRequest
-`toloka.client.search_requests.TaskSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L523)
+`toloka.client.search_requests.TaskSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/search_requests.py#L496)
 
 ```python
 TaskSearchRequest(
@@ -21,7 +21,7 @@ TaskSearchRequest(
 )
 ```
 
-Parameters for searching tasks
+Parameters for searching tasks.
 
 ## Parameters Description
 
@@ -29,10 +29,10 @@ Parameters for searching tasks
 | :----------| :----| :-----------|
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool to get tasks from.</p>
 `overlap`|**Optional\[int\]**|<p>Tasks with an overlap equal to the specified value.</p>
-`id_lt`|**Optional\[str\]**|<p>Tasks with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Tasks with an ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Tasks with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Tasks with an ID greater than or equal to the specified value.</p>
+`id_lt`|**Optional\[str\]**|<p>Tasks with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Tasks with IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Tasks with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Tasks with IDs greater than or equal to the specified value.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Tasks created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Tasks created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Tasks created after the specified date.</p>

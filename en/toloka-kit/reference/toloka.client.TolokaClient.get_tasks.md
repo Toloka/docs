@@ -1,12 +1,12 @@
 # get_tasks
-`toloka.client.TolokaClient.get_tasks`
+`toloka.client.TolokaClient.get_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2290)
 
 Finds all tasks that match certain criteria.
 
 
-`get_tasks` returns a generator and you can iterate over all found tasks. Several requests to the Toloka server are possible while iterating.
+`get_tasks` returns a generator. You can iterate over all found tasks using the generator. Several requests to the Toloka server are possible while iterating.
 
-Note that tasks can not be sorted. If you need to sort tasks use [find_tasks](toloka.client.TolokaClient.find_tasks.md).
+If you need to sort tasks use the [find_tasks](toloka.client.TolokaClient.find_tasks.md) method.
 
 ## Parameters Description
 
@@ -14,10 +14,10 @@ Note that tasks can not be sorted. If you need to sort tasks use [find_tasks](to
 | :----------| :----| :-----------|
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool to get tasks from.</p>
 `overlap`|**Optional\[int\]**|<p>Tasks with an overlap equal to the specified value.</p>
-`id_lt`|**Optional\[str\]**|<p>Tasks with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Tasks with an ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Tasks with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Tasks with an ID greater than or equal to the specified value.</p>
+`id_lt`|**Optional\[str\]**|<p>Tasks with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Tasks with IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Tasks with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Tasks with IDs greater than or equal to the specified value.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Tasks created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Tasks created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Tasks created after the specified date.</p>
@@ -29,7 +29,7 @@ Note that tasks can not be sorted. If you need to sort tasks use [find_tasks](to
 
 * **Yields:**
 
-  An iterable with found tasks.
+  The next matching task.
 
 * **Yield type:**
 
@@ -40,5 +40,5 @@ Note that tasks can not be sorted. If you need to sort tasks use [find_tasks](to
 Getting all tasks from a single pool.
 
 ```python
-results_list = [task for task in toloka_client.get_tasks(pool_id='1')]
+results_list = list(toloka_client.get_tasks(pool_id='1'))
 ```

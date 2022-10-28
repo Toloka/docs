@@ -1,5 +1,5 @@
 # ImageViewV1
-`toloka.client.project.template_builder.view.ImageViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/view.py#L211)
+`toloka.client.project.template_builder.view.ImageViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/view.py#L211)
 
 ```python
 ImageViewV1(
@@ -33,7 +33,7 @@ Displays an image.
 `max_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Maximum width of the element in pixels, must be greater than min_width.</p>
 `min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Minimum width of the element in pixels. Takes priority over max_width.</p>
 `no_border`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Controls the display of a frame around an image. By default, true (the frame is hidden). Set false to display the frame.</p>
-`no_lazy_load`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Disables lazy loading. If true, images start loading immediately, even if they aren&#x27;t in the viewport. Useful for icons. By default, false (lazy loading is enabled). In this mode, images start loading only when they get in the user&#x27;s field of view.</p>
+`no_lazy_load`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Disables lazy loading. If true, images start loading immediately, even if they aren&#x27;t in the viewport. Useful for icons. By default, false (lazy loading is enabled). In this mode, images start loading only when a Toloker scrolls to them.</p>
 `popup`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Specifies whether opening a full-size image with a click is allowed. By default, it is true (allowed).</p>
 `ratio`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]\]\]**|<p>An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number). Not valid if full_height=true.</p>
 `scrollable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>When set to true, an image has scroll bars if it doesn&#x27;t fit in the parent element. If false, the image fits in the parent element and, when clicked, opens in its original size in the module window. Images in SVG format with no size specified always fit in their parent elements.</p>
