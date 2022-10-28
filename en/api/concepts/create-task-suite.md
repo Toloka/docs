@@ -4,7 +4,7 @@
 
 Creates one or multiple task suites.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day.
 

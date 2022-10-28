@@ -6,7 +6,7 @@ Creates a training pool (training).
 
 The pool is automatically assigned an ID.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can send a maximum of 20 requests of this kind per minute and 100 requests per day.
 

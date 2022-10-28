@@ -6,7 +6,7 @@
 
 {% include [bonus-sum](../_includes/concepts/bonus/id-bonus/sum.md) %}
 
-{% note alert %}
+{% note alert "Ограничение" %}
 
 Вы можете отправить не более 10 000 таких запросов в день.
 

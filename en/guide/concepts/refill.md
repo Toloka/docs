@@ -103,7 +103,7 @@ The payment is completed within 15 minutes.
 
 You will be redirected to the [PayPal]({{ paypal }}) site to complete the payment.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 PayPal transfer isn't available for Swiss residents.
 

@@ -68,7 +68,7 @@ You can configure quality control in the [pool](qa-pool-settings.md) and in the 
 
   The rules are applied to all project pools, so you can't change settings in just one of the pools.
 
-  {% note alert %}
+  {% note alert "Restriction" %}
 
   When you [clone a project](project.md), its quality control settings aren't transferred.
 

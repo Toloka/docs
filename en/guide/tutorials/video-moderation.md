@@ -26,7 +26,7 @@ Before you begin:
 
 - Upload your video clips to a storage from which you can get file links. For example, your own server, a video hosting, or a [cloud storage](../concepts/cloud-storage.md#cloud).
 
-    {% note warning %}
+    {% note alert "Restriction" %}
 
     The video player supports only MP4 format with H.264 or H.265 encoding.
 
