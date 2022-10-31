@@ -2,15 +2,19 @@
 
 {% include [announce](../_includes/announce.md) %}
 
-Gets a list of Tolokers who have skills. With the [query parameters](#query-params) you can filter the data in the response the following way:
+Gets a list of Tolokers who have skills. With the [query parameters](#query-params), you can filter the data in the response the following way:
 
 - Get the list of all the Tolokers who have the specific skill using the `skill_id` query parameter:
 
-    `GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>`
+   ```bash
+   GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>
+   ```
 
 - Get the list of all the skills assigned to the specific Toloker using the `user_id` query parameter:
 
-   `GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>`
+   ```bash
+   GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>
+   ```
 
 ## Request {#request}
 

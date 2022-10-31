@@ -6,11 +6,15 @@
 
 - Получить список всех исполнителей с определенным навыком с помощью query-параметра `skill_id`:
 
-    `GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>`
+   ```bash
+   GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>
+   ```
 
 - Получить список всех навыков определенного исполнителя с помощью query-параметра `user_id`:
 
-   `GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>`
+   ```bash
+   GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>
+   ```
 
 ## Запрос {#request}
 
