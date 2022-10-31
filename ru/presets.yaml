@@ -2,7 +2,7 @@ default:
   crowd-kit: https://github.com/Toloka/crowd-kit
   handlebarsjs-com: http://handlebarsjs.com/
   iso-lang: https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
-  iso-search: https://www.iso.org/obp/ui/#search
+  iso-search: https://www.iso.org/obp/ui/#search/code/
   json: https://www.json.org/json-ru.html
   json-schema: https://json-schema.org/learn/getting-started-step-by-step.html
   requester: https://toloka.ai/docs/guide/
