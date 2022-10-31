@@ -1,94 +1,100 @@
 # How does Toloka work?
 
-To place a task in Toloka, create three different entities: a project, a pool, and your tasks. Each of these entities is responsible for its own task settings block. This section explains why Toloka works this way and what its advantages are.
+Toloka offers a data labeling platform where you can collect any amount of human-labeled data for AI and ML development.
 
-![](../_images/other/toloka-overview.svg)
+Data labeling in Toloka relies on crowdsourcing and technologies for crowd management. In this section, we explain how it works.
+
+## What is crowdsourcing?
+
+Crowdsourcing is the practice of obtaining information or services from a large dispersed group of people. These people perform micro tasks, and their collective work provides valuable input. For example, they can classify images into categories, and the resulting data can be used later to improve search relevance or recommendation systems.
+
+![Task example](../_images/other/task-example.png =430x)
+
+Usually, there are three parties involved in crowdsourcing: requesters, crowd contributors or annotators, and a platform that brings them together.
+
+Requesters are individuals or companies that use the crowdsourcing platform to collect or label data.  For example, they might post tasks to moderate comments, transcribe audio recordings, find road signs on images, or collect photos of local businesses.
+
+Annotators (in Toloka, we call them Tolokers) are people from around the world who get paid for completing these tasks. These people are usually referred to as “the crowd”, which is where the word crowdsourcing comes from.
+
+Toloka provides an open platform where requesters and the crowd can interact.
+
+## Toloka workflow
+
+The data labeling workflow in Toloka looks like this:
+
+![Toloka workflow](../_images/other/how-toloka-works.svg)
+
+1. First, you register in Toloka as a requester.
+
+1. Then you create a project for data labeling. The project involves a specific task, like classifying images by category.
+
+1. In the project, you explain what you want Tolokers to do. You set up the task interface (in our example, you assign categories to buttons for labeling images), and write detailed instructions.
+
+1. For every set of data you want to label (in our example, this might be a batch of photos with traffic signs), you create a task pool. A project can have any number of pools.
+
+1. You upload your data to a pool and launch the labeling.
+
+1. Tolokers access their own Toloka interface, pick the tasks they want to do, and get paid for completed tasks.
+
+1. After Tolokers complete all the tasks in a pool, you download the labeled data. You can process the data using aggregation or verification, or use it as is
+
+No matter what type of data you intend to collect as a requester, you always need to create three main entities: a [project](#project), a [pool](#pool), and [tasks](#task).
+
+![Toloka three main entities](../_images/other/toloka-overview.svg)
 
 ## Project {#project}
 
-A _project_ contains instructions, task interface settings, and a specification for input and output data. You can also set up quality control rules that apply to the entire project.
+A project in Toloka represents a specific data labeling goal. This could be to moderate comments, to classify images, to transcribe audio recordings, or something else.
 
-Projects make it easier for you to post similar tasks in the future, because you don't have to re-configure the interface. You can also view aggregate statistics for all tasks in the project.
+All tasks in a project share the same interface and instructions for Tolokers. You can upload new sets of tasks whenever you need to.
+
+To learn about projects and settings, see [Project](project.md).
 
 ## Pool {#pool}
 
-A _pool_ is a set of tasks to be assigned to Tolokers simultaneously. Main pool settings: pricing, selection of Tolokers, overlap, and quality control.
+A pool represents a set of data to label in a project. You can use the pool settings to select Tolokers, set the price for tasks, and add various quality control rules.
 
-![](../_images/other/pool-settings.png)
+Having multiple pools in the same project is useful because you can reuse the same project settings when you need more data labeled, and tweak the settings for each pool as needed.
 
-Dividing tasks into pools lets you:
-
-- Select various Tolokers for tasks.
-
-    For example, text in tasks for comment moderation can be in different languages: some comments in Russian and others in English. You can split these comments into different pools and use filters to specify the language that Tolokers should know.
-
-- Set a price, the overlap, and configure quality control based on the complexity of tasks.
-
-    For example, tasks for transcribing audio files that are 10-20 seconds and 50-60 seconds long should have a different price.
-
-- Manage task priority by assigning one pool before another.
-
-- Group tasks to view separate statistics for each group.
+To learn about pools and their settings, see [Pool](pool-main.md).
 
 ## Task {#task}
 
-A _task_ is the data you need to mark up. Each image or comment is a separate task.
+A task is created for a single data item that requires labeling, like a photo to classify, or a comment to review.
 
-There are different types of tasks: general, control (with correct responses), and training (with hints).
+In Toloka, there are three types of tasks: general, training, and control tasks. General tasks are the tasks with the actual data you want to get labeled. Training tasks have predefined answers and hints for Tolokers, which help them learn how to do the task correctly. Control tasks have predefined answers, used to check whether Tolokers answer correctly. You need to create training tasks and control tasks using actual data so that they are relevant to your project.
 
-You upload tasks to Toloka as a [file](../../glossary.md#tsv). The file structure must match the input and output data specification that you set up in the project.
+You upload task data to Toloka in a file. Toloka currently supports XLSX, TSV, and JSON file formats for uploading task data.
 
-{% note tip %}
-
-If you want multiple Tolokers to complete a task, you don't need to include it in the input data multiple times. Instead, set the [overlap](../../glossary.md#overlap) in the pool settings.
-
-{% endnote %}
+To learn about tasks, supported task files, and their structure, see [Task](pool_csv.md).
 
 ## Task suite {#tasks-page}
 
-Tasks are assigned to Tolokers page by page. A page may contain one or several tasks. You specify their number when uploading tasks in the pool.
+A task suite is a group of several tasks given to a Toloker to submit all at once. For example, you can show four images on the same page.
 
-{% note alert "Important" %}
-
-- A Toloker can submit responses only after completing all tasks on a page.
-- You specify the price per task suite. Аnnotators are only paid for the entire page of completed tasks.
-
-{% endnote %}
-
-Some Tolokers have a slow internet connection, so adding multiple tasks lets them update a page less often, which means they'll complete your tasks faster.
-
-However, don't include too many tasks on a page: quality will be worse and Tolokers will get tired. Place 5-10 simple tasks or 1-4 complex ones on a single page.
-
-{% note tip %}
-
-You can separate tasks on a page yourself. It lets you group tasks, such as by simultaneously assigning all similar photos to Tolokers for annotation. In this case, the number of tasks on each page may differ.
-
-{% endnote %}
+To learn about task suites and how to use them, see [Task suite](distribute-tasks-by-pages.md).
 
 ## What does it look like for Tolokers? {#appearance}
 
-When you start a pool, Tolokers can see it in the **Tasks** section. They select the pool, read the instructions, and complete tasks.
+Tolokers have their own version of the platform with a browser interface and a mobile app. They see a list of tasks they can choose from. Your tasks become available to Tolokers when you launch a pool.
 
-Each task in a task suite is part of a web page that can include various objects, such as images, text, and input fields.
+Note that Tolokers don't know the difference between projects, pools, tasks, or task suites — and they don't need to. They usually refer to all of it as “tasks”.
 
-{% note info %}
+To learn more, see [How Tolokers see pools](pool-main.md).
 
-Tolokers don't know the difference between pools, tasks, or task suites. They might call all this a “task”.
+## Toloka API and SDK {#api}
 
-{% endnote %}
+If you need to post similar tasks on a regular basis, you can automate working with Toloka by using the [Toloka API](../../api/index.md) and [Python SDK](../../toloka-kit/python-sdk.md).
 
-For more information, see [How Tolokers see pools](pool-main.md).
+The Toloka API has some features that are not yet available in the web interface. For example, you can use the API to specify overlap for individual tasks and add multiple correct responses to control tasks.
 
-## Payment {#payment}
+You can use the Python SDK to integrate the Toloka API into applications written in Python. It already contains all the API classes and methods and there's no need to write new functions for them.
 
-For each accepted task, an amount of money is deducted from your account: payment for the task, plus the [fee for using Toloka](budget.md). The amount to pay for the task is set when [creating a pool](pool-main.md).
+## See also {#see-also}
 
-You can also [give a reward](bonus.md) to one or more Tolokers.
-
-## Toloka API {#api}
-
-If you need to frequently post similar tasks, automate this process with the [Toloka API]({{ toloka-api }}).
-
-If you want more flexibility when posting tasks, the Toloka API has additional features that are not yet available in the interface. For example, use the API to specify overlap for individual tasks and add multiple correct responses to control tasks.
+- [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
+- [What tasks can't be placed in Toloka?](unwanted.md)
+- [Common mistakes made by requesters](frequent-customer-errors.md)
+- [Where to store media files](cloud-storage.md)
 
 {% include [contact-support](../_includes/contact-support-new.md) %}
