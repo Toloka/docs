@@ -9,8 +9,8 @@ Method | Endpoint | Overview
 POST | [/skills](create-skill.md) | Creates a skill.
 PUT | [/skills/\<skill id\>](edit-skill.md) | Changes the name, comment, and access to the skill.
 PUT | [/user-skills](set-skill.md) | Sets the skill value.
-GET | [/user-skills](get-user-skill-list.md) | Gets the list of Toloker skills.
-GET | [/user-skills/\<skill_id\>](get-user-skill.md) | Gets a Toloker's skill value.
+GET | [/user-skills](get-user-skill-list.md) | Gets а list of Tolokers who have skills.
+GET | [/user-skills/\<id\>](get-user-skill.md) | Gets a Toloker's skill value.
 GET | [/skills](get-skill-list.md) | Gets the list of created skills.
 GET | [/skills/\<skill_id\>](get-skill.md) | Gets the properties of a skill.
 DELETE | [/user-skills/\<skill_id\>](delete-skill.md) | Removes a skill for a Toloker.
