@@ -1,11 +1,11 @@
 # UniqueSubmittersCountPoolAnalytics
-`toloka.client.analytics_request.UniqueSubmittersCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/analytics_request.py#L140)
+`toloka.client.analytics_request.UniqueSubmittersCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/analytics_request.py#L140)
 
 ```python
 UniqueSubmittersCountPoolAnalytics(self, *, subject_id: str)
 ```
 
-The number of unique performers who have submitted to the pool
+The number of unique Tolokers who have submitted to the pool
 
 ## Parameters Description
 

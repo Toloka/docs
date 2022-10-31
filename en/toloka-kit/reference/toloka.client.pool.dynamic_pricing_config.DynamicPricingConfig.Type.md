@@ -1,5 +1,5 @@
 # Type
-`toloka.client.pool.dynamic_pricing_config.DynamicPricingConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/pool/dynamic_pricing_config.py#L20)
+`toloka.client.pool.dynamic_pricing_config.DynamicPricingConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/pool/dynamic_pricing_config.py#L20)
 
 Dynamic pricing type
 
@@ -7,4 +7,4 @@ Dynamic pricing type
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`SKILL`|'SKILL'|<p></p>
+`SKILL`|'SKILL'|

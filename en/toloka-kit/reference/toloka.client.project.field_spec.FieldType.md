@@ -1,5 +1,5 @@
 # FieldType
-`toloka.client.project.field_spec.FieldType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/field_spec.py#L27)
+`toloka.client.project.field_spec.FieldType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/field_spec.py#L27)
 
 An enumeration.
 
@@ -7,19 +7,19 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`BOOLEAN`|'boolean'|<p></p>
-`STRING`|'string'|<p></p>
-`FLOAT`|'float'|<p></p>
-`INTEGER`|'integer'|<p></p>
-`URL`|'url'|<p></p>
-`FILE`|'file'|<p></p>
-`COORDINATES`|'coordinates'|<p></p>
-`JSON`|'json'|<p></p>
-`ARRAY_BOOLEAN`|'array_boolean'|<p></p>
-`ARRAY_STRING`|'array_string'|<p></p>
-`ARRAY_INTEGER`|'array_integer'|<p></p>
-`ARRAY_FLOAT`|'array_float'|<p></p>
-`ARRAY_URL`|'array_url'|<p></p>
-`ARRAY_FILE`|'array_file'|<p></p>
-`ARRAY_COORDINATES`|'array_coordinates'|<p></p>
-`ARRAY_JSON`|'array_json'|<p></p>
+`BOOLEAN`|'boolean'|
+`STRING`|'string'|
+`FLOAT`|'float'|
+`INTEGER`|'integer'|
+`URL`|'url'|
+`FILE`|'file'|
+`COORDINATES`|'coordinates'|
+`JSON`|'json'|
+`ARRAY_BOOLEAN`|'array_boolean'|
+`ARRAY_STRING`|'array_string'|
+`ARRAY_INTEGER`|'array_integer'|
+`ARRAY_FLOAT`|'array_float'|
+`ARRAY_URL`|'array_url'|
+`ARRAY_FILE`|'array_file'|
+`ARRAY_COORDINATES`|'array_coordinates'|
+`ARRAY_JSON`|'array_json'|

@@ -7,5 +7,5 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`ID`|'id'|<p></p>
-`CREATED`|'created'|<p></p>
+`ID`|'id'|
+`CREATED`|'created'|

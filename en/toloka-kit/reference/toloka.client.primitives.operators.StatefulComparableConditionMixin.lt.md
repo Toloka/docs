@@ -1,5 +1,5 @@
 # lt
-`toloka.client.primitives.operators.StatefulComparableConditionMixin.lt` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/primitives/operators.py#L147)
+`toloka.client.primitives.operators.StatefulComparableConditionMixin.lt` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/primitives/operators.py#L185)
 
 ```python
 lt(self, value)

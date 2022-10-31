@@ -1,5 +1,5 @@
 # AttachmentSearchRequest
-`toloka.client.search_requests.AttachmentSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L630)
+`toloka.client.search_requests.AttachmentSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/search_requests.py#L596)
 
 ```python
 AttachmentSearchRequest(
@@ -22,24 +22,22 @@ AttachmentSearchRequest(
 )
 ```
 
-Parameters for searching attachment
+Parameters for searching attachments.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`name`|**Optional\[str\]**|<p>File name.</p>
-`type`|**Optional\[[Attachment.Type](toloka.client.attachment.Attachment.Type.md)\]**|<p>Attachment type. Currently the key can have only one value - ASSIGNMENT_ATTACHMENT.</p>
-`user_id`|**Optional\[str\]**|<p>ID of the user who uploaded the file(s).</p>
-`assignment_id`|**Optional\[str\]**|<p>Assignment ID.</p>
-`pool_id`|**Optional\[str\]**|<p>Pool ID.</p>
-`owner_id`|**Optional\[str\]**|<p>Optional[str]</p>
-`owner_company_id`|**Optional\[str\]**|<p>Optional[str]</p>
-`id_lt`|**Optional\[str\]**|<p>Files with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Files with an ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Files with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Files with an ID greater than or equal to the specified value.</p>
-`created_lt`|**Optional\[datetime\]**|<p>Files uploaded by users before the specified date.</p>
-`created_lte`|**Optional\[datetime\]**|<p>Files uploaded by users before or on the specified date.</p>
-`created_gt`|**Optional\[datetime\]**|<p>Files uploaded by users after the specified date.</p>
-`created_gte`|**Optional\[datetime\]**|<p>Files uploaded by users after or on the specified date.</p>
+`name`|**Optional\[str\]**|<p>An attachment file name.</p>
+`type`|**Optional\[[Attachment.Type](toloka.client.attachment.Attachment.Type.md)\]**|<p>An attachment type. Refer to the [Attachment.Type](toloka.client.attachment.Attachment.Type.md) page for more information on the available `type` values.</p>
+`user_id`|**Optional\[str\]**|<p>The ID of a Toloker who uploaded attachments.</p>
+`assignment_id`|**Optional\[str\]**|<p>The ID of an assignment with attachments. Either `assignment_id` of `pool_id` is required in a search request.</p>
+`pool_id`|**Optional\[str\]**|<p>The ID of a pool with attachments. Either `assignment_id` of `pool_id` is required in a search request.</p>
+`id_lt`|**Optional\[str\]**|<p>Attachments with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Attachments with IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Attachments with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Attachments with IDs greater than or equal to the specified value.</p>
+`created_lt`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers before the specified date.</p>
+`created_lte`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers before or on the specified date.</p>
+`created_gt`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers after the specified date.</p>
+`created_gte`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers after or on the specified date.</p>

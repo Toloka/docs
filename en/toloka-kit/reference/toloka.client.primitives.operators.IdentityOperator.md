@@ -1,11 +1,11 @@
 # IdentityOperator
-`toloka.client.primitives.operators.IdentityOperator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/primitives/operators.py#L37)
+`toloka.client.primitives.operators.IdentityOperator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/primitives/operators.py#L67)
 
-An enumeration.
+Supports the `==` and `!=` operators.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`EQ`|'EQ'|<p></p>
-`NE`|'NE'|<p></p>
+`EQ`|'EQ'|
+`NE`|'NE'|

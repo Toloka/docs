@@ -7,10 +7,10 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`ID`|'id'|<p></p>
-`CREATED`|'created'|<p></p>
-`SUBMITTED`|'submitted'|<p></p>
-`ACCEPTED`|'accepted'|<p></p>
-`REJECTED`|'rejected'|<p></p>
-`SKIPPED`|'skipped'|<p></p>
-`EXPIRED`|'expired'|<p></p>
+`ID`|'id'|
+`CREATED`|'created'|
+`SUBMITTED`|'submitted'|
+`ACCEPTED`|'accepted'|
+`REJECTED`|'rejected'|
+`SKIPPED`|'skipped'|
+`EXPIRED`|'expired'|

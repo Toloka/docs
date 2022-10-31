@@ -5,23 +5,19 @@
 AttachmentSortItems(self, items=None)
 ```
 
-Parameters for sorting attachment search results
-
-
-You can specify multiple parameters.
-To change the sorting direction (sort in descending order), add a hyphen before the parameter. For example, sort=-id.
+Keys for sorting attachments in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AttachmentSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - File ID in ascending order.</li><li>created - Date of sending the file in UTC in the yyyy-MM-DD format (ascending).</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AttachmentSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — The ID of an attachment.</li> <li>`&#x27;created&#x27;` — The date of uploading an attachment.</li> </ul>
 
 **Examples:**
 
-How to specify and use SortItems.
+The example shows how to find attachments sorted by uploading date in descending order. Attachments with equal uploading dates are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.AttachmentSortItems(['-created', 'id'])
-result = toloka_client.find_attachments(pool_id=my_pretty_pool_id, sort=sort, limit=10)
+result = toloka_client.find_attachments(pool_id=my_pool_id, sort=sort, limit=10)
 ```

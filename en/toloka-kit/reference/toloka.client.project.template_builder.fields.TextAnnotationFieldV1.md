@@ -1,5 +1,5 @@
 # TextAnnotationFieldV1
-`toloka.client.project.template_builder.fields.TextAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L494)
+`toloka.client.project.template_builder.fields.TextAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L495)
 
 ```python
 TextAnnotationFieldV1(
@@ -31,8 +31,8 @@ You can use plugin.field.text-annotation.hotkeys to assign keyboard shortcuts fo
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
 `adjust`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>If the property value is set to words, only words can be selected in the text. If you don&#x27;t use this property, any part of a line can be selected.</p>
-`content`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The text where the performer has to select part of a line.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>This property blocks the component. If true, the component is unavailable to the performer. The default value is false.</p>
+`content`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The text where the Toloker has to select part of a line.</p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>This property blocks the component. If true, the component is unavailable to the Toloker. The default value is false.</p>
 `labels`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Label](toloka.client.project.template_builder.fields.TextAnnotationFieldV1.Label.md)\]\]\]\]**|<p>A category.</p>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>
 `label`|**Optional\[Any\]**|<p>Label above the component.</p>

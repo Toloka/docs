@@ -1,5 +1,5 @@
 # DashBoard
-`toloka.metrics.jupyter_dashboard.DashBoard` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/jupyter_dashboard.py#L174)
+`toloka.metrics.jupyter_dashboard.DashBoard` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/jupyter_dashboard.py#L184)
 
 ```python
 DashBoard(
@@ -46,7 +46,9 @@ new_dash = DashBoard(
     header='My cool dash',
 )
 metrics.bind_client(new_dash.metrics, toloka_client)
+# Then in new cell:
 new_dash.run_dash()
+# If you want to stop it:
 new_dash.stop_dash()
 ```
 ## Methods Summary

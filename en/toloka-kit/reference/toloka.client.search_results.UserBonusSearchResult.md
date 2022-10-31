@@ -10,14 +10,11 @@ UserBonusSearchResult(
 )
 ```
 
-The list of found user bonuses and whether there is something else on the original request
-
-
-It's better to use TolokaClient.get_user_bonuses(), which already implements the correct handling of the search result.
+The result of searching Tolokers' rewards.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[UserBonus](toloka.client.user_bonus.UserBonus.md)\]\]**|<p>List of found user bonuses</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[UserBonus](toloka.client.user_bonus.UserBonus.md)\]\]**|<p>A list with found rewards.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching rewards.</p> <ul> <li>`True` — There are more matching rewards, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching rewards.</li> </ul>

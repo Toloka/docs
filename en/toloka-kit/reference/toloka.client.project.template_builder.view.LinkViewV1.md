@@ -1,5 +1,5 @@
 # LinkViewV1
-`toloka.client.project.template_builder.view.LinkViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/view.py#L279)
+`toloka.client.project.template_builder.view.LinkViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/view.py#L279)
 
 ```python
 LinkViewV1(
@@ -30,7 +30,7 @@ To insert a link with a search query, use helper.search-query.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `url`|**Optional\[Any\]**|<p>Link URL.</p>
-`content`|**Optional\[Any\]**|<p>Link text displayed to the user.</p>
+`content`|**Optional\[Any\]**|<p>Link text displayed to the Toloker.</p>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>
 `label`|**Optional\[Any\]**|<p>Label above the component.</p>
 `validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>

@@ -1,27 +1,28 @@
 # get_assignment
-`toloka.client.TolokaClient.get_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L641)
 
 ```python
 get_assignment(self, assignment_id: str)
 ```
 
-Reads one specific assignment
+Gets an assignment from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`assignment_id`|**str**|<p>ID of assignment.</p>
+`assignment_id`|**str**|<p>The ID of the assignment.</p>
 
 * **Returns:**
 
-  The solution read as a result.
+  The assignment.
 
 * **Return type:**
 
   [Assignment](toloka.client.assignment.Assignment.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.get_assignment(assignment_id='1')

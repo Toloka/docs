@@ -1,5 +1,5 @@
 # Status
-`toloka.client.assignment.GetAssignmentsTsvParameters.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/assignment.py#L125)
+`toloka.client.assignment.GetAssignmentsTsvParameters.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/assignment.py#L138)
 
 An enumeration.
 
@@ -7,9 +7,9 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`ACTIVE`|'ACTIVE'|<p></p>
-`SUBMITTED`|'SUBMITTED'|<p></p>
-`APPROVED`|'APPROVED'|<p></p>
-`REJECTED`|'REJECTED'|<p></p>
-`SKIPPED`|'SKIPPED'|<p></p>
-`EXPIRED`|'EXPIRED'|<p></p>
+`ACTIVE`|'ACTIVE'|
+`SUBMITTED`|'SUBMITTED'|
+`APPROVED`|'APPROVED'|
+`REJECTED`|'REJECTED'|
+`SKIPPED`|'SKIPPED'|
+`EXPIRED`|'EXPIRED'|

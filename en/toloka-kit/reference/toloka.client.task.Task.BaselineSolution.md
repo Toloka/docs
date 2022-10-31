@@ -1,5 +1,5 @@
 # BaselineSolution
-`toloka.client.task.Task.BaselineSolution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/task.py#L96)
+`toloka.client.task.Task.BaselineSolution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/task.py#L96)
 
 ```python
 BaselineSolution(

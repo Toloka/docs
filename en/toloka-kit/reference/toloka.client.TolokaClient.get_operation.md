@@ -1,5 +1,5 @@
 # get_operation
-`toloka.client.TolokaClient.get_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2608)
 
 ```python
 get_operation(self, operation_id: str)
@@ -26,6 +26,7 @@ All asynchronous actions in Toloka works via operations. If you have some "Opera
   [Operation](toloka.client.operations.Operation.md)
 
 **Examples:**
+
 
 ```python
 op = toloka_client.get_operation(operation_id='1')

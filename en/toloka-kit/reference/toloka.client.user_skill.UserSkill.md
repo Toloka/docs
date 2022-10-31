@@ -1,5 +1,5 @@
 # UserSkill
-`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/user_skill.py#L29)
+`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/user_skill.py#L29)
 
 ```python
 UserSkill(
@@ -15,16 +15,16 @@ UserSkill(
 )
 ```
 
-Describes the value of a specific skill for a specific performer
+Describes the value of a specific skill for a specific Toloker.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>Internal identifier of the user&#x27;s skill value.</p>
+`id`|**Optional\[str\]**|<p>Internal identifier of the Toloker&#x27;s skill value.</p>
 `skill_id`|**Optional\[str\]**|<p>Skill identifier, which skill is installed.</p>
-`user_id`|**Optional\[str\]**|<p>User identifier, to which performer the skill is installed.</p>
+`user_id`|**Optional\[str\]**|<p>Toloker identifier, to which Toloker the skill is installed.</p>
 `value`|**Optional\[int\]**|<p>Skill value (from 0 to 100). Rough presentation.</p>
 `exact_value`|**Optional\[Decimal\]**|<p>Skill value (from 0 to 100). Exact representation.</p>
-`created`|**Optional\[datetime\]**|<p>Date and time when this skill was created for the performer.</p>
-`modified`|**Optional\[datetime\]**|<p>Date and time of the last skill change for the performer.</p>
+`created`|**Optional\[datetime\]**|<p>Date and time when this skill was created for the Toloker.</p>
+`modified`|**Optional\[datetime\]**|<p>Date and time of the last skill change for the Toloker.</p>

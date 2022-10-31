@@ -1,5 +1,5 @@
 # patch_task_suite_overlap_or_min
-`toloka.client.TolokaClient.patch_task_suite_overlap_or_min`
+`toloka.client.TolokaClient.patch_task_suite_overlap_or_min` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2585)
 
 Stops issuing the task suites
 
@@ -18,6 +18,7 @@ Stops issuing the task suites
   [TaskSuite](toloka.client.task_suite.TaskSuite.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.patch_task_suite_overlap_or_min(task_suite_id='1', overlap=100)

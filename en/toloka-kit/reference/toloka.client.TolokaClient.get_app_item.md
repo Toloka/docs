@@ -1,5 +1,5 @@
 # get_app_item
-`toloka.client.TolokaClient.get_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3696)
 
 ```python
 get_app_item(
@@ -9,18 +9,18 @@ get_app_item(
 )
 ```
 
-Information about one work item.
+Gets information from Toloka about an App task item.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`app_project_id`|**str**|<p>Project ID.</p>
-`app_item_id`|**str**|<p>Item ID</p>
+`app_project_id`|**str**|<p>The ID of the App project.</p>
+`app_item_id`|**str**|<p>The ID of the item.</p>
 
 * **Returns:**
 
-  the AppItem.
+  The App task item.
 
 * **Return type:**
 

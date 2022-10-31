@@ -7,7 +7,7 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`ID`|'id'|<p></p>
-`CREATED`|'created'|<p></p>
-`PUBLIC_NAME`|'public_name'|<p></p>
-`PRIVATE_COMMENT`|'private_comment'|<p></p>
+`ID`|'id'|
+`CREATED`|'created'|
+`PUBLIC_NAME`|'public_name'|
+`PRIVATE_COMMENT`|'private_comment'|

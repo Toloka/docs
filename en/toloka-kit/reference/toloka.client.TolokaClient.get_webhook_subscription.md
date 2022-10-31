@@ -1,5 +1,5 @@
 # get_webhook_subscription
-`toloka.client.TolokaClient.get_webhook_subscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_webhook_subscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3288)
 
 ```python
 get_webhook_subscription(self, webhook_subscription_id: str)

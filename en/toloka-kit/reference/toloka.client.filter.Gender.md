@@ -1,5 +1,5 @@
 # Gender
-`toloka.client.filter.Gender` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L223)
+`toloka.client.filter.Gender` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L248)
 
 ```python
 Gender(
@@ -9,11 +9,11 @@ Gender(
 )
 ```
 
-Use to select users by gender.
+Filtering Tolokers by gender.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[IdentityOperator](toloka.client.primitives.operators.IdentityOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**[Gender](toloka.client.filter.Gender.Gender.md)**|<p>User gender.</p>
+`operator`|**[IdentityOperator](toloka.client.primitives.operators.IdentityOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**[Gender](toloka.client.filter.Gender.Gender.md)**|<p>Toloker&#x27;s gender specified in the profile.</p>

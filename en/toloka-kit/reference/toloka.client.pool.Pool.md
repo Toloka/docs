@@ -1,5 +1,5 @@
 # Pool
-`toloka.client.pool.Pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/pool/__init__.py#L35)
+`toloka.client.pool.Pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/pool/__init__.py#L35)
 
 ```python
 Pool(
@@ -42,7 +42,7 @@ Pool(
 A set of tasks that are issued and checked according to the same rules within the project
 
 
-Groups tasks by the following criteria: one-time start-up, which performers can perform tasks, quality control,
+Groups tasks by the following criteria: one-time start-up, which Tolokers can perform tasks, quality control,
 price for TaskSuite's, overlap.
 Tasks, golden tasks and assignments are related to a pool.
 
@@ -54,22 +54,22 @@ Tasks, golden tasks and assignments are related to a pool.
 `private_name`|**Optional\[str\]**|<p>Name of the pool (only visible to the requester).</p>
 `may_contain_adult_content`|**Optional\[bool\]**|<p>Whether the tasks contain adult content.</p>
 `reward_per_assignment`|**Optional\[float\]**|<p>Payment per task suite in U.S. dollars. For cents, use the dot (&quot;.&quot;) as the separator. The minimum payment is $0.01. Only training and control tasks can be uploaded to zero-price pools.</p>
-`assignment_max_duration_seconds`|**Optional\[int\]**|<p>The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other users. We recommend allowing no more than 60 seconds per task suite (including the time for page loading and sending responses).</p>
+`assignment_max_duration_seconds`|**Optional\[int\]**|<p>The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers. We recommend allowing no more than 60 seconds per task suite (including the time for page loading and sending responses).</p>
 `defaults`|**Optional\[[Defaults](toloka.client.pool.Pool.Defaults.md)\]**|<p>Settings that are applied by default when uploading new task suites to a pool.</p>
 `will_expire`|**Optional\[datetime\]**|<p>The date and time in UTC when the pool should be closed (even if all the task suites haven&#x27;t been completed).</p>
 `private_comment`|**Optional\[str\]**|<p>Comments on the pool (only visible to the requester).</p>
-`public_description`|**Optional\[str\]**|<p>Description for users. If it is filled in, the text will be displayed instead of the project&#x27;s public_description in the list of tasks for performers.</p>
+`public_description`|**Optional\[str\]**|<p>Description for Tolokers. If it is filled in, the text will be displayed instead of the project&#x27;s public_description in the list of tasks for Tolokers.</p>
 `public_instructions`|**Optional\[str\]**|<p>Optional[str]</p>
 `auto_close_after_complete_delay_seconds`|**Optional\[int\]**|<p>Waiting time (in seconds) before automatic closure of the pool after all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days). Use it if:     * Your data processing is close to real time.     * You need an open pool where you upload tasks.     * Dynamic overlap is enabled in the pool (dynamic_overlap_config).</p>
 `dynamic_pricing_config`|**Optional\[[DynamicPricingConfig](toloka.client.pool.dynamic_pricing_config.DynamicPricingConfig.md)\]**|<p>The dynamic pricing settings.</p>
-`auto_accept_solutions`|**Optional\[bool\]**|<p>Whether tasks must be checked manually:<ul><li>True - Automatic task acceptance (manual checking isn&#x27;t necessary).</li><li>False - The requester will check the tasks.</li></ul></p>
+`auto_accept_solutions`|**Optional\[bool\]**|<p>Whether tasks must be checked manually:</p> <ul> <li>True - Automatic task acceptance (manual checking isn&#x27;t necessary).</li> <li>False - The requester will check the tasks.</li> </ul>
 `auto_accept_period_day`|**Optional\[int\]**|<p>Optional[int]</p>
 `assignments_issuing_config`|**Optional\[[AssignmentsIssuingConfig](toloka.client.pool.Pool.AssignmentsIssuingConfig.md)\]**|<p>Settings for assigning tasks in the pool.</p>
-`priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first. Possible values: from -100 to 100. If the project has multiple pools, the order for completing them depends on the parameters:<ul><li>Pools with identical filter settings and price per task are assigned to users in the order     in which they were started. The pool that was started earlier will be completed sooner.     You can change the order for completing the pools.</li><li>Pools with different filter settings and/or a different price per task are sent out for completion     when the pool opens.</li></ul></p>
-`filter`|**Optional\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>Settings for user selection filters.</p>
+`priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Tolokers are assigned tasks with a higher priority first. Possible values: from -100 to 100. If the project has multiple pools, the order for completing them depends on the parameters:</p> <ul> <li>Pools with identical filter settings and price per task are assigned to Tolokers in the order   in which they were started. The pool that was started earlier will be completed sooner.   You can change the order for completing the pools.</li> <li>Pools with different filter settings and/or a different price per task are sent out for completion   when the pool opens.</li> </ul>
+`filter`|**Optional\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>Settings for Toloker selection filters.</p>
 `quality_control`|**Optional\[[QualityControl](toloka.client.quality_control.QualityControl.md)\]**|<p>Settings for quality control rules and the ID of the pool with training tasks.</p>
 `speed_quality_balance`|**Optional\[[SpeedQualityBalanceConfig](toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig.md)\]**|<p>Settings for balance between speed and quality of pool done.</p>
-`dynamic_overlap_config`|**Optional\[[DynamicOverlapConfig](toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig.md)\]**|<p>Dynamic overlap setting. Allows you to change the overlap depending on how well the performers handle the task.</p>
+`dynamic_overlap_config`|**Optional\[[DynamicOverlapConfig](toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig.md)\]**|<p>Dynamic overlap setting. Allows you to change the overlap depending on how well Tolokers handle the task.</p>
 `mixer_config`|**Optional\[[MixerConfig](toloka.client.pool.mixer_config.MixerConfig.md)\]**|<p>Parameters for automatically creating a task suite (“smart mixing”).</p>
 `training_config`|**Optional\[[TrainingConfig](toloka.client.pool.Pool.TrainingConfig.md)\]**|<p>Optional[TrainingConfig]</p>
 `metadata`|**Optional\[Dict\[str, List\[str\]\]\]**|<p>Optional[Dict[str, List[str]]]</p>

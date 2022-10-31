@@ -1,5 +1,5 @@
 # AudioViewV1
-`toloka.client.project.template_builder.view.AudioViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/view.py#L107)
+`toloka.client.project.template_builder.view.AudioViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/view.py#L107)
 
 ```python
 AudioViewV1(
@@ -17,7 +17,7 @@ AudioViewV1(
 The component plays audio.
 
 
-Format support depends on the user's browser, OS, and device. We recommend using MP3.
+Format support depends on the Toloker's browser, OS, and device. We recommend using MP3.
 
 ## Parameters Description
 

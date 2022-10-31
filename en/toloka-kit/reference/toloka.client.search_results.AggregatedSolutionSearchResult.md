@@ -10,11 +10,11 @@ AggregatedSolutionSearchResult(
 )
 ```
 
-The list of found AggregatedSolutions and whether there is something else on the original request
+The result of searching aggregated responses.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[AggregatedSolution](toloka.client.aggregation.AggregatedSolution.md)\]\]**|<p>List of found AggregatedSolution</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[AggregatedSolution](toloka.client.aggregation.AggregatedSolution.md)\]\]**|<p>A list with found aggregated responses.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching aggregated responses.</p> <ul> <li>`True` — There are more matching aggregated responses, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching aggregated responses.</li> </ul>

@@ -1,5 +1,5 @@
 # create_pool
-`toloka.client.TolokaClient.create_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.create_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1410)
 
 ```python
 create_pool(self, pool: Pool)
@@ -14,7 +14,7 @@ You can send a maximum of 20 requests of this kind per minute and 100 requests p
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool`|**[Pool](toloka.client.pool.Pool.md)**|<p>New Pool with setted parameters.</p>
+`pool`|**[Pool](toloka.client.pool.Pool.md)**|<p>New Pool with set parameters.</p>
 
 * **Returns:**
 

@@ -1,5 +1,5 @@
 # Scope
-`toloka.client.search_requests.AppProjectSearchRequest.Scope` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/search_requests.py#L984)
+`toloka.client.search_requests.AppProjectSearchRequest.Scope` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/search_requests.py#L981)
 
 An enumeration.
 
@@ -7,6 +7,6 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`MY`|'MY'|<p></p>
-`COMPANY`|'COMPANY'|<p></p>
-`REQUESTER_LIST`|'REQUESTER_LIST'|<p></p>
+`MY`|'MY'|
+`COMPANY`|'COMPANY'|
+`REQUESTER_LIST`|'REQUESTER_LIST'|

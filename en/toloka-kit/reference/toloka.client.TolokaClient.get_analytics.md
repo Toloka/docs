@@ -1,5 +1,5 @@
 # get_analytics
-`toloka.client.TolokaClient.get_analytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_analytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2093)
 
 ```python
 get_analytics(self, stats: List[AnalyticsRequest])
@@ -35,5 +35,5 @@ How to get task completion percentage for one pool.
 from toloka.client.analytics_request import CompletionPercentagePoolAnalytics
 operation = toloka_client.get_analytics([CompletionPercentagePoolAnalytics(subject_id=pool_id)])
 operation = toloka_client.wait_operation(operation)
-print(op.details['value'][0]['result']['value'])
+print(operation.details['value'][0]['result']['value'])
 ```

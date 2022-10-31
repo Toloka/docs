@@ -1,5 +1,5 @@
 # MessageThreadCursor
-`toloka.streaming.cursor.MessageThreadCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/cursor.py#L403)
+`toloka.streaming.cursor.MessageThreadCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/cursor.py#L403)
 
 ```python
 MessageThreadCursor(
@@ -34,5 +34,6 @@ Iterate over all messages.
 ```python
 it = MessageThreadCursor(toloka_client=toloka_client)
 all_messages = list(it)
+# ... new messages could appear ...
 new_messages = list(it)  # Contains only new messages, appeared since the previous call.
 ```

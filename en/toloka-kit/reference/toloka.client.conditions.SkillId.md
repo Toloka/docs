@@ -1,5 +1,5 @@
 # SkillId
-`toloka.client.conditions.SkillId` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L255)
+`toloka.client.conditions.SkillId` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L297)
 
 ```python
 SkillId(
@@ -9,5 +9,11 @@ SkillId(
 )
 ```
 
-The performer no longer meets the specific skill filter
+The ID of a changed skill which caused access blocking.
+
+
+`SkillId` provides details if the [PoolAccessRevokedReason](toloka.client.conditions.PoolAccessRevokedReason.md) condition equals `SKILL_CHANGE`.
+
+`SkillId` is used with collectors:
+- [UsersAssessment](toloka.client.collectors.UsersAssessment.md)
 

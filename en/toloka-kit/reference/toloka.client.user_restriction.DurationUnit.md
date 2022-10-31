@@ -1,5 +1,5 @@
 # DurationUnit
-`toloka.client.user_restriction.DurationUnit` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/user_restriction.py#L17)
+`toloka.client.user_restriction.DurationUnit` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/user_restriction.py#L17)
 
 An enumeration.
 
@@ -7,7 +7,7 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`MINUTES`|'MINUTES'|<p></p>
-`HOURS`|'HOURS'|<p></p>
-`DAYS`|'DAYS'|<p></p>
-`PERMANENT`|'PERMANENT'|<p></p>
+`MINUTES`|'MINUTES'|
+`HOURS`|'HOURS'|
+`DAYS`|'DAYS'|
+`PERMANENT`|'PERMANENT'|

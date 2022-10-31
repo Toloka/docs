@@ -5,13 +5,10 @@
 AggregatedSolutionSortItems(self, items=None)
 ```
 
-Parameters for sorting aggregated solution search results
-
-
-To change the sorting direction (sort in descending order), add a hyphen before the parameter. For example, sort=-id.
+Keys for sorting aggregated responses in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AggregatedSolutionSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>task_id - In ascending order.</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.AggregatedSolutionSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;task_id&#x27;` — The ID of a task.</li> </ul>

@@ -1,5 +1,5 @@
 # Interval
-`toloka.client.pool.dynamic_pricing_config.DynamicPricingConfig.Interval` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/pool/dynamic_pricing_config.py#L25)
+`toloka.client.pool.dynamic_pricing_config.DynamicPricingConfig.Interval` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/pool/dynamic_pricing_config.py#L25)
 
 ```python
 Interval(
@@ -19,4 +19,4 @@ Skill level interval
 | :----------| :----| :-----------|
 `from_`|**Optional\[int\]**|<p>Lower bound of the interval.</p>
 `to`|**Optional\[int\]**|<p>dynamic_pricing_config.intervals.to</p>
-`reward_per_assignment`|**Optional\[float\]**|<p>The price per task page for a performer with the specified skill level.</p>
+`reward_per_assignment`|**Optional\[float\]**|<p>The price per task page for a Toloker with the specified skill level.</p>

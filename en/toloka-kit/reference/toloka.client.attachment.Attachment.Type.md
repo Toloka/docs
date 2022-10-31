@@ -1,5 +1,5 @@
 # Type
-`toloka.client.attachment.Attachment.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/attachment.py#L27)
+`toloka.client.attachment.Attachment.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/attachment.py#L27)
 
 An enumeration.
 
@@ -7,4 +7,4 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`ASSIGNMENT_ATTACHMENT`|'ASSIGNMENT_ATTACHMENT'|<p></p>
+`ASSIGNMENT_ATTACHMENT`|'ASSIGNMENT_ATTACHMENT'|

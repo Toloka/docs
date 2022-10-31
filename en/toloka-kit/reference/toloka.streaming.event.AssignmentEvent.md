@@ -1,5 +1,5 @@
 # AssignmentEvent
-`toloka.streaming.event.AssignmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/event.py#L27)
+`toloka.streaming.event.AssignmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/event.py#L27)
 
 ```python
 AssignmentEvent(
@@ -18,5 +18,5 @@ Assignment-related event.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `event_time`|**Optional\[datetime\]**|<p>Event datetime.</p>
-`event_type`|**Optional\[[Type](toloka.streaming.event.AssignmentEvent.Type.md)\]**|<p>One of the folllowing event types:<ul><li>CREATED</li><li>SUBMITTED</li><li>ACCEPTED</li><li>REJECTED</li><li>SKIPPED</li><li>EXPIRED</li></ul></p>
+`event_type`|**Optional\[[Type](toloka.streaming.event.AssignmentEvent.Type.md)\]**|<p>One of the folllowing event types:</p> <ul> <li>CREATED</li> <li>SUBMITTED</li> <li>ACCEPTED</li> <li>REJECTED</li> <li>SKIPPED</li> <li>EXPIRED</li> </ul>
 `assignment`|**Optional\[[Assignment](toloka.client.assignment.Assignment.md)\]**|<p>Assignment object itself.</p>

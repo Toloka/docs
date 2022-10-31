@@ -1,5 +1,5 @@
 # OSVersionBugfix
-`toloka.client.filter.OSVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L537)
+`toloka.client.filter.OSVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L620)
 
 ```python
 OSVersionBugfix(
@@ -9,14 +9,11 @@ OSVersionBugfix(
 )
 ```
 
-Use to select users by build number (bugfix version) of the operating system.
-
-
-For example: 1
+Filtering Tolokers by a build number or a bugfix version of their OS.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**int**|<p>Build number (bugfix version) of the operating system.</p>
+`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**int**|<p>The build number or the bugfix version of the OS.</p>

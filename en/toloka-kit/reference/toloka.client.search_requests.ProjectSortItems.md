@@ -5,21 +5,17 @@
 ProjectSortItems(self, items=None)
 ```
 
-Parameters for sorting project search results
-
-
-You can specify multiple parameters.
-To change the sorting direction (sort in descending order), add a hyphen before the parameter. For example, sort=-id.
+Keys for sorting projects in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.ProjectSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - Project ID in ascending order.</li><li>created - Project creation date in UTC in yyyy-MM-DD format (ascending).</li><li>public_name - Project name (in alphabetical order).</li><li>private_comment - Comment on the project (in alphabetical order).</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.ProjectSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — A project ID.</li> <li>`&#x27;created&#x27;` — A project creation date.</li> <li>`&#x27;public_name&#x27;` — A project name.</li> <li>`&#x27;private_comment&#x27;` — A project private comment.</li> </ul>
 
 **Examples:**
 
-How to specify and use SortItems.
+The example shows how to find active projects sorted by names in descending order. Projects with equal names are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.ProjectSortItems(['-public_name', 'id'])

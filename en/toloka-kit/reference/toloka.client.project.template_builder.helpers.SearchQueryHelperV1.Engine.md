@@ -1,5 +1,5 @@
 # Engine
-`toloka.client.project.template_builder.helpers.SearchQueryHelperV1.Engine` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/helpers.py#L169)
+`toloka.client.project.template_builder.helpers.SearchQueryHelperV1.Engine` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/helpers.py#L169)
 
 An enumeration.
 
@@ -7,14 +7,14 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`YANDEX`|'yandex'|<p></p>
-`GOOGLE`|'google'|<p></p>
-`BING`|'bing'|<p></p>
-`MAILRU`|'mail.ru'|<p></p>
-`WIKIPEDIA`|'wikipedia'|<p></p>
-`YANDEX_COLLECTIONS`|'yandex/collections'|<p></p>
-`YANDEX_VIDEO`|'yandex/video'|<p></p>
-`YANDEX_IMAGES`|'yandex/images'|<p></p>
-`GOOGLE_IMAGES`|'google/images'|<p></p>
-`YANDEX_NEWS`|'yandex/news'|<p></p>
-`GOOGLE_NEWS`|'google/news'|<p></p>
+`YANDEX`|'yandex'|
+`GOOGLE`|'google'|
+`BING`|'bing'|
+`MAILRU`|'mail.ru'|
+`WIKIPEDIA`|'wikipedia'|
+`YANDEX_COLLECTIONS`|'yandex/collections'|
+`YANDEX_VIDEO`|'yandex/video'|
+`YANDEX_IMAGES`|'yandex/images'|
+`GOOGLE_IMAGES`|'google/images'|
+`YANDEX_NEWS`|'yandex/news'|
+`GOOGLE_NEWS`|'google/news'|

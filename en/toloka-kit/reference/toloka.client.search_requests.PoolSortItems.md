@@ -5,21 +5,17 @@
 PoolSortItems(self, items=None)
 ```
 
-Parameters for sorting pool search results
-
-
-You can specify multiple parameters.
-To change the sorting direction (sort in descending order), add a hyphen before the parameter. For example, sort=-id.
+Keys for sorting pools in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.PoolSortItems.SortItem.md)\]\]**|<p>Fields by which to sort. Possible values:<ul><li>id - Pool ID in ascending order.</li><li>created - Pool creation date in UTC in yyyy-MM-DD format (ascending).</li><li>last_started - The date the pool was last started (ascending).</li></ul></p>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.PoolSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — A pool ID.</li> <li>`&#x27;created&#x27;` — A pool creation date.</li> <li>`&#x27;last_started&#x27;` — The last opening date of a pool.</li> </ul>
 
 **Examples:**
 
-How to specify and use SortItems.
+The example shows how to find opened pools sorted by the last opening date in descending order. Pools with equal opening dates are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.PoolSortItems(['-last_started', 'id'])

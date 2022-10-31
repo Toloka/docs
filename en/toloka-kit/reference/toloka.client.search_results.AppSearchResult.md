@@ -10,15 +10,11 @@ AppSearchResult(
 )
 ```
 
-The list of found Apps and whether there is something else on the original request.
-
-
-It's better to use TolokaClient.get_apps(),
-which already implements the correct handling of the search result.
+The result of searching App solutions.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**-**|<p>List of found Apps.</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`content`|**Optional\[List\[[App](toloka.client.app.App.md)\]\]**|<p>A list with found App solutions.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching App solutions.</p> <ul> <li>`True` — There are more matching App solutions, not included in `content` due to the limit set in the search request.</li> <li>`False` — `content` contains all matching App solutions.</li> </ul>

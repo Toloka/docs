@@ -1,5 +1,5 @@
 # NewUserSkills
-`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/metrics.py#L259)
+`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/metrics.py#L259)
 
 ```python
 NewUserSkills(
@@ -15,7 +15,7 @@ NewUserSkills(
 )
 ```
 
-Tracking the new user skill values
+Tracking Tolokers' skills.
 
 ## Parameters Description
 
@@ -32,6 +32,7 @@ How to collect this metrics:
 ```python
 def print_metric(metric_dict):
     print(metric_dict)
+
 collector = MetricCollector
 (
     [
@@ -45,6 +46,9 @@ collector = MetricCollector
 )
 asyncio.run(collector.run())
 ```
+    'count': [(datetime.datetime(2021, 11, 18, 8, 31, 54, 11000), 1)],
+    'values':  [(datetime.datetime(2021, 11, 18, 8, 31, 54, 11000), Decimal('50.000000000000'))],
+}
 ## Methods Summary
 
 | Method | Description |

@@ -1,5 +1,5 @@
 # AppItemsCreateRequest
-`toloka.client.app.AppItemsCreateRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/app/__init__.py#L152)
+`toloka.client.app.AppItemsCreateRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/app/__init__.py#L172)
 
 ```python
 AppItemsCreateRequest(
@@ -10,11 +10,11 @@ AppItemsCreateRequest(
 )
 ```
 
-Request Body.
+Parameters of a request for creating multiple items.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`batch_id`|**Optional\[str\]**|<p>Batch ID.</p>
-`items`|**Optional\[List\[Dict\[str, Any\]\]\]**|<p>list of items.</p>
+`batch_id`|**Optional\[str\]**|<p>The ID of the batch to place items to.</p>
+`items`|**Optional\[List\[Dict\[str, Any\]\]\]**|<p>A list with items. The items must follow the solution schema described in `App.input_spec`.</p>

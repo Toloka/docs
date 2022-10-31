@@ -1,5 +1,5 @@
 # get_task_suite
-`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2520)
 
 ```python
 get_task_suite(self, task_suite_id: str)
@@ -22,6 +22,7 @@ Reads one specific task suite
   [TaskSuite](toloka.client.task_suite.TaskSuite.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.get_task_suite(task_suite_id='1')

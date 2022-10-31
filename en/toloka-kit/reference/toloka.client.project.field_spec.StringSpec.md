@@ -1,5 +1,5 @@
 # StringSpec
-`toloka.client.project.field_spec.StringSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/field_spec.py#L72)
+`toloka.client.project.field_spec.StringSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/field_spec.py#L72)
 
 ```python
 StringSpec(
@@ -19,8 +19,8 @@ A string field specification
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`required`|**Optional\[bool\]**|<p>Whether the object or input field is required</p>
-`hidden`|**Optional\[bool\]**|<p>Whether or not to hide the input value field from the user</p>
+`required`|**Optional\[bool\]**|<p>Whether the object or input field is required.</p>
+`hidden`|**Optional\[bool\]**|<p>Whether to hide the input field from Tolokers.</p>
 `min_length`|**Optional\[int\]**|<p>Minimum length of the string</p>
 `max_length`|**Optional\[int\]**|<p>Maximum length of the string</p>
 `allowed_values`|**Optional\[List\[str\]\]**|<p>Allowed values</p>

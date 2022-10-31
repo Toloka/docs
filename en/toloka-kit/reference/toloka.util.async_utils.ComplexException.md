@@ -1,5 +1,5 @@
 # ComplexException
-`toloka.util.async_utils.ComplexException` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/util/async_utils.py#L22)
+`toloka.util.async_utils.ComplexException` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/util/async_utils.py#L22)
 
 ```python
 ComplexException(self, exceptions: List[Exception])

@@ -1,5 +1,5 @@
 # BasePoolMetric
-`toloka.metrics.pool_metrics.BasePoolMetric` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/pool_metrics.py#L44)
+`toloka.metrics.pool_metrics.BasePoolMetric` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/pool_metrics.py#L44)
 
 ```python
 BasePoolMetric(

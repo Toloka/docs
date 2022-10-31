@@ -1,5 +1,5 @@
 # RejectedAssignmentsCount
-`toloka.client.conditions.RejectedAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L241)
+`toloka.client.conditions.RejectedAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L274)
 
 ```python
 RejectedAssignmentsCount(
@@ -9,5 +9,9 @@ RejectedAssignmentsCount(
 )
 ```
 
-How many times this assignment was rejected
+The number of rejected assignments of a task suite.
+
+
+`RejectedAssignmentsCount` is used with collectors:
+- [AssignmentsAssessment](toloka.client.collectors.AssignmentsAssessment.md)
 

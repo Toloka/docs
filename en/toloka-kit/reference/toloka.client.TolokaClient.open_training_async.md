@@ -1,5 +1,5 @@
 # open_training_async
-`toloka.client.TolokaClient.open_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.open_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1918)
 
 ```python
 open_training_async(self, training_id: str)
@@ -24,7 +24,7 @@ training is already opened then None is returned.
 
 **Examples:**
 
-Open the training for performers.
+Open the training for Tolokers.
 
 ```python
 open_training = toloka_client.open_training_async(training_id='1')

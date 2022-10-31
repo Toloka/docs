@@ -1,5 +1,5 @@
 # Restriction
-`toloka.client.actions.Restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/actions.py#L38)
+`toloka.client.actions.Restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/actions.py#L38)
 
 ```python
 Restriction(
@@ -11,15 +11,15 @@ Restriction(
 )
 ```
 
-Block access to projects or pools
+Restricts Toloker's access to projects or pools.
 
 
-It's better to use new version: RestrictionV2.
+To have better control over restriction period use [RestrictionV2](toloka.client.actions.RestrictionV2.md).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`scope`|**Union\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md), str, None\]**|<p><ul><li>POOL - Current pool where this rule was triggered. Does not affect the user&#x27;s rating.</li><li>PROJECT - Current project where this rule was triggered. Affects the user&#x27;s rating.</li><li>ALL_PROJECTS - All customer&#x27;s projects.</li></ul></p>
-`duration_days`|**Optional\[int\]**|<p>Blocking period in days. By default, the lock is indefinite.</p>
-`private_comment`|**Optional\[str\]**|<p>Comment (reason for blocking). Available only to the customer.</p>
+`scope`|**Union\[[UserRestriction.Scope](toloka.client.user_restriction.UserRestriction.Scope.md), str, None\]**|<ul> <li>`POOL` — A Toloker can&#x27;t access the pool if the action is applied.</li> <li>`PROJECT` — A Toloker can&#x27;t access the entire project containing the pool.</li> <li>`ALL_PROJECTS` — A Toloker can&#x27;t access any requester&#x27;s project.</li> </ul>
+`duration_days`|**Optional\[int\]**|<p>A blocking period in days. If the `duration_days` is omitted, then the block is permanent.</p>
+`private_comment`|**Optional\[str\]**|<p>A private comment. It is visible only to the requester.</p>

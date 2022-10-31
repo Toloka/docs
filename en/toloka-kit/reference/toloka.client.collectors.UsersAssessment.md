@@ -1,27 +1,29 @@
 # UsersAssessment
-`toloka.client.collectors.UsersAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L483)
+`toloka.client.collectors.UsersAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L487)
 
 ```python
 UsersAssessment(self, *, uuid: Optional[UUID] = None)
 ```
 
-Recompletion of assignments from banned users
+This collector helps you to reassign task suites completed by blocked Tolokers.
 
 
-If you or the system banned a performer and you want someone else to complete their tasks.
-This rule will help you do this automatically.
+The collector can be used with conditions:
+* [PoolAccessRevokedReason](toloka.client.conditions.PoolAccessRevokedReason.md) — The reason why the Toloker has lost access to the pool.
+* [SkillId](toloka.client.conditions.SkillId.md) — The ID of a skill if reason is `SKILL_CHANGE`.
 
-Used with conditions:
-* PoolAccessRevokedReason - Reason for loss of access of the performer to the current pool.
-* SkillId - The performer no longer meets the specific skill filter.
+The collector can be used with actions:
+* [ChangeOverlap](toloka.client.actions.ChangeOverlap.md) changes the overlap of a task suite.
 
-Used with actions:
-* ChangeOverlap - Increase the overlap of the set of tasks.
+## Parameters Description
 
+| Parameters | Type | Description |
+| :----------| :----| :-----------|
+`uuid`|**Optional\[UUID\]**|<p>The ID of a collector. Note that when you clone a pool, both pools start using the same collector, because it is not cloned. Usually, it is not an intended behavior. For example, in this case one collector gathers history size from both pools.</p>
 
 **Examples:**
 
-How to resend rejected assignments for re-completion to other performers.
+The example shows how to reassign rejected assignments to other Tolokers.
 
 ```python
 new_pool = toloka.pool.Pool(....)

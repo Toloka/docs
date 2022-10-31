@@ -1,5 +1,5 @@
 # SetSkill
-`toloka.client.actions.SetSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/actions.py#L160)
+`toloka.client.actions.SetSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/actions.py#L159)
 
 ```python
 SetSkill(
@@ -10,18 +10,18 @@ SetSkill(
 )
 ```
 
-Set performer skill value
+Sets Toloker's skill value.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`skill_id`|**Optional\[str\]**|<p>ID of the skill to update.</p>
-`skill_value`|**Optional\[int\]**|<p>The value to be assigned to the skill.</p>
+`skill_id`|**Optional\[str\]**|<p>The ID of the skill.</p>
+`skill_value`|**Optional\[int\]**|<p>The new value of the skill.</p>
 
 **Examples:**
 
-How to mark performers completing a task so that you can filter them later in the checking project.
+When an answer is accepted, the Toloker gets a skill. Later you can filter Tolokers by that skill.
 
 ```python
 new_pool = toloka.pool.Pool(....)

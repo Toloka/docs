@@ -1,10 +1,10 @@
 # PreloadingHTTPAdapter
-`toloka.client.primitives.retry.PreloadingHTTPAdapter` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/primitives/retry.py#L88)
+`toloka.client.primitives.retry.PreloadingHTTPAdapter` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/primitives/retry.py#L88)
 
 HTTPAdapter subclass that forces preload_content=True during requests
 
 
-As for current version (2.26.0) requests supports body preloading with stream=False, but this behaviour is
+As for current version (2.26.0) requests supports body preloading with stream=False, but this behavior is
 implemented by calling response.content in the end of request process. Such implementation does not support
 retries in case of headers being correctly received by client but body being loaded incorrectly (i.e. when server
 uses chunked transfer encoding and fails during body transmission). Retries are handled on urllib3 level and

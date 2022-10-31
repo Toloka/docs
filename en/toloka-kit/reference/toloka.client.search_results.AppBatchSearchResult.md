@@ -10,15 +10,11 @@ AppBatchSearchResult(
 )
 ```
 
-The list of found batches in the App project and whether there is something else on the original request.
-
-
-It's better to use TolokaClient.get_app_batches(),
-which already implements the correct handling of the search result.
+The result of searching batches in an App project.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**-**|<p>List of found batches in the App project.</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`content`|**Optional\[List\[[AppBatch](toloka.client.app.AppBatch.md)\]\]**|<p>A list with found batches.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching batches.</p> <ul> <li>`True` — There are more matching batches, not included in `content` due to the limit set in the search request.</li> <li>`False` — `content` contains all matching batches.</li> </ul>

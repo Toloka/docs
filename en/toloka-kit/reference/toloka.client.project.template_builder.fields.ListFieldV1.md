@@ -1,5 +1,5 @@
 # ListFieldV1
-`toloka.client.project.template_builder.fields.ListFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L306)
+`toloka.client.project.template_builder.fields.ListFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L306)
 
 ```python
 ListFieldV1(
@@ -19,19 +19,19 @@ ListFieldV1(
 )
 ```
 
-A component that allows the user to add and remove list items, such as text fields to fill in.
+A component that allows a Toloker to add and remove list items, such as text fields to fill in.
 
 
-This way you can allow the user to give multiple answers to a question.
+This way you can allow a Toloker to give multiple answers to a question.
 
 The list items can contain any component, including a list of other components. For example, this allows you to
 create a table where you can add and delete rows.
 
-To add a new list item, the user clicks the button. To remove an item, they click on the x on the right (it appears
+To add a new list item, the Toloker clicks the button. To remove an item, they click on the x on the right (it appears
 when hovering over a list item).
 
-To prevent the user from adding too many list items, set the maximum list length. You can also use the editable
-property to block users from changing a component, like when a certain event occurs.
+To prevent a Toloker from adding too many list items, set the maximum list length. You can also use the editable
+property to block Tolokers from changing a component, like when a certain event occurs.
 
 ## Parameters Description
 

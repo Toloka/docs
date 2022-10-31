@@ -1,26 +1,26 @@
 # get_app_batch
-`toloka.client.TolokaClient.get_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3789)
 
 ```python
 get_app_batch(
     self,
     app_project_id: str,
-    app_batch_id: str
+    batch_id: str
 )
 ```
 
-Batch information.
+Gets information from Toloka about a batch in an App project.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`app_project_id`|**str**|<p>Project ID.</p>
-`app_batch_id`|**str**|<p>Batch ID</p>
+`app_project_id`|**str**|<p>The ID of the project.</p>
+`batch_id`|**str**|<p>The ID of the batch.</p>
 
 * **Returns:**
 
-  the AppBatch.
+  The App batch.
 
 * **Return type:**
 

@@ -1,5 +1,5 @@
 # update_skill
-`toloka.client.TolokaClient.update_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.update_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2073)
 
 ```python
 update_skill(
@@ -27,6 +27,7 @@ Makes changes to the skill
   [Skill](toloka.client.skill.Skill.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.update_skill(skill_id=old_skill_id, skill=new_skill_object)

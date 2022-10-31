@@ -1,5 +1,5 @@
 # Attachment
-`toloka.client.attachment.Attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/attachment.py#L14)
+`toloka.client.attachment.Attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/attachment.py#L14)
 
 ```python
 Attachment(
@@ -17,7 +17,7 @@ Attachment(
 Attachment
 
 
-Files uploaded by users are saved in Toloka.
+Files uploaded by Tolokers are saved in Toloka.
 
 ## Parameters Description
 
@@ -25,7 +25,7 @@ Files uploaded by users are saved in Toloka.
 | :----------| :----| :-----------|
 `id`|**Optional\[str\]**|<p>File ID.</p>
 `name`|**Optional\[str\]**|<p>File name.</p>
-`details`|**Optional\[[Details](toloka.client.attachment.Attachment.Details.md)\]**|<p>Infomation about the pool, the task, and the user who uploaded the file.</p>
+`details`|**Optional\[[Details](toloka.client.attachment.Attachment.Details.md)\]**|<p>Information about the pool, the task, and the Toloker who uploaded the file.</p>
 `created`|**Optional\[datetime\]**|<p>Date the file was uploaded to Toloka.</p>
 `media_type`|**Optional\[str\]**|<p>MIME data type.</p>
 `owner`|**Optional\[[Owner](toloka.client.owner.Owner.md)\]**|<p>Owner</p>

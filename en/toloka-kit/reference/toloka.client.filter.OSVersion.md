@@ -1,5 +1,5 @@
 # OSVersion
-`toloka.client.filter.OSVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L501)
+`toloka.client.filter.OSVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L584)
 
 ```python
 OSVersion(
@@ -9,14 +9,15 @@ OSVersion(
 )
 ```
 
-Use to select users by OS full version.
+Filtering Tolokers by an OS version.
 
 
-For example: 14.4
+The version consists of major and minor version numbers, for example, `14.4`.
+The version is represented as a single floating point number in conditions.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**float**|<p>Full version of the operating system.</p>
+`operator`|**[CompareOperator](toloka.client.primitives.operators.CompareOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**float**|<p>The version of the OS.</p>

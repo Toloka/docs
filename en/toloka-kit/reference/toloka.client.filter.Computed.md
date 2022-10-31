@@ -1,5 +1,5 @@
 # Computed
-`toloka.client.filter.Computed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L179)
+`toloka.client.filter.Computed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L198)
 
 ```python
 Computed(
@@ -10,11 +10,11 @@ Computed(
 )
 ```
 
-Use to select users based on data received or calculated by Toloka.
+A base class for a category of filters that use connection and client information.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**Any**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**Any**|<p>Attribute value from the field key. For example, the ID of the region specified in the profile, or the minimum skill value.</p>
+`operator`|**Any**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**Any**|<p>A value to compare with. For example, the minimum value of some skill, or a language specified in a Toloker&#x27;s profile.</p>

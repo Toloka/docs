@@ -1,5 +1,5 @@
 # clone_pool
-`toloka.client.TolokaClient.clone_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.clone_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1363)
 
 ```python
 clone_pool(self, pool_id: str)
@@ -26,6 +26,7 @@ A new pool will be attached to the same project.
   [Pool](toloka.client.pool.Pool.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.clone_pool(pool_id='1')

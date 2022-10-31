@@ -1,5 +1,5 @@
 # PoolStatusObserver
-`toloka.streaming.observer.PoolStatusObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/observer.py#L151)
+`toloka.streaming.observer.PoolStatusObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/observer.py#L151)
 
 ```python
 PoolStatusObserver(
@@ -40,6 +40,7 @@ Bind to the pool's close to make some aggregations.
 def call_this_on_close(pool: Pool) -> None:
     assignments = client.get_assignments_df(pool_id=pool.id, status=['APPROVED'])
     do_some_aggregation(assignments)
+
 observer = PoolStatusObserver(toloka_client, pool_id='123')
 observer.on_close(call_this_on_close)
 ```

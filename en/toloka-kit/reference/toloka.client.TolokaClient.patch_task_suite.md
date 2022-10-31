@@ -1,5 +1,5 @@
 # patch_task_suite
-`toloka.client.TolokaClient.patch_task_suite`
+`toloka.client.TolokaClient.patch_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2562)
 
 Changes the task suite overlap or priority
 
@@ -8,7 +8,7 @@ Changes the task suite overlap or priority
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `task_suite_id`|**str**|<p>ID of the task suite that will be changed.</p>
-`issuing_order_override`|**Optional\[float\]**|<p>The priority of a task suite among other sets in the pool. Defines the order in which task suites are assigned to performers. The larger the parameter value, the higher the priority. This parameter can be used if the pool has issue_task_suites_in_creation_order: true. Allowed values: from -99999.99999 to 99999.99999.</p>
+`issuing_order_override`|**Optional\[float\]**|<p>The priority of a task suite among other sets in the pool. Defines the order in which task suites are assigned to Tolokers. The larger the parameter value, the higher the priority. This parameter can be used if the pool has issue_task_suites_in_creation_order: true. Allowed values: from -99999.99999 to 99999.99999.</p>
 `open_pool`|**Optional\[bool\]**|<p>Open the pool immediately after changing a task suite, if the pool is closed.</p>
 
 * **Returns:**

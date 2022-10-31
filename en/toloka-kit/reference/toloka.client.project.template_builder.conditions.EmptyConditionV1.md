@@ -1,5 +1,5 @@
 # EmptyConditionV1
-`toloka.client.project.template_builder.conditions.EmptyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/conditions.py#L122)
+`toloka.client.project.template_builder.conditions.EmptyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/conditions.py#L122)
 
 ```python
 EmptyConditionV1(
@@ -25,4 +25,4 @@ You can check:
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `data`|**Optional\[Any\]**|<p>Data to check. If not specified, data is checked in the component that contains condition.empty.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that the user will see.</p>
+`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
