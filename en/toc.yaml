@@ -293,6 +293,8 @@ items:
                 href: guide/concepts/task_upload.md
               - name: Ways to group tasks in suites
                 href: guide/concepts/distribute-tasks-by-pages.md
+          - name: Checking project
+            href: guide/concepts/self-labeling.md
           - name: Task markup
             items:
               - name: Overview
