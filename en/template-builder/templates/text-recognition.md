@@ -12,9 +12,9 @@ Note that validation and task layout are already configured in this Template Bu
 
 {% cut "Components used in the example" %}
 
-- [view.list](../reference/view.list.md): displays data in a list.
+- [view.list](../reference/view.list.md): Displays data in a list.
 
-- [view.image](../reference/view.image.md): displays an image.
+- [view.image](../reference/view.image.md): Adds an image.
 
   {% cut "Show code" %}
 
@@ -31,7 +31,9 @@ Note that validation and task layout are already configured in this Template Bu
   ```
   {% endcut %}
 
-- [view.text](../reference/view.text.md): displays a block with text.
+- [view.text](../reference/view.text.md): Displays a block with text.
+
+  If you need to display text with formatting, use the [view.markdown](../reference/view.markdown.md) component.
 
   {% cut "Show code" %}
 
@@ -46,8 +48,6 @@ Note that validation and task layout are already configured in this Template Bu
   }
   ```
   {% endcut %}
-
-If you need to display text with formatting, use the [view.markdown](../reference/view.markdown.md) component. Note that the `view.markdown` component is resource-intensive and might overload weak Toloker devices.
 
 - A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md): hides the response field if **No business** is selected.
 
@@ -86,7 +86,30 @@ If you need to display text with formatting, use the [view.markdown](../referenc
 
   {% endcut %}
 
-- [field.checkbox](../reference/field.checkbox.md): add a checkbox control.
+- [field.text](../reference/field.checkbox.md): Adds a field for entering a short text.
+
+  Use the [conditions.required](../reference/conditions.md) component inside the `validation` property to check that the Toloker filled in the text field before sending the response to the task.
+
+  {% cut "Show code" %}
+
+  ```json
+  {
+    "type": "field.text",
+    "label": "Business name",
+    "placeholder": "Enter text",
+      "data": {
+        "type": "data.output",
+        "path": "output"
+      }
+    "validation": {
+      "type": "condition.required"
+    }
+  }
+  ```
+
+  {% endcut %}
+
+- [field.checkbox](../reference/field.checkbox.md): Adds a checkbox control.
 
   {% cut "Show code" %}
 
@@ -105,7 +128,7 @@ If you need to display text with formatting, use the [view.markdown](../referenc
 
   {% endcut %}
 
-- [plugin.toloka](../reference/plugin.toloka.md): customizes the task layout.
+- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
 
   {% cut "Show code" %}
 
@@ -134,7 +157,7 @@ To add a detailed description to the task, use the `label` property of the [view
 ```json
   {
     "type": "view.image",
-    "label": "Look at the photo and find a sign with the business's name.",
+    "label": "Look at the photo and find a sign with the business name.",
     "noBorder": true,
     "rotatable": true,
     "url": {
@@ -161,15 +184,15 @@ Ask the Tolokers to clarify their decision if they have labeled **No business**:
     "label": "To clarify your decision, select one of the options:",
     "options": [
       {
-        "label": "No business",
+        "label": "There is no business in the photo",
         "value": "no_business"
       },
       {
-        "label": "Photo of bad quality",
+        "label": "The photo is of bad quality",
         "value": "bad_quality"
       },
       {
-        "label": "The name isn't fully visible",
+        "label": "The name isn not fully visible",
         "value": "not_fully_visible"
       },
       {
@@ -190,9 +213,10 @@ Ask the Tolokers to clarify their decision if they have labeled **No business**:
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/L3D1I7VM3gfg5P)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/6Dj-dc5n3iax5d)
 
-One possible solution may be to to add a **None of the above** option to the radio button group. Add the [field.textarea](../reference/field.textarea.md) that would allow Tolokers to leave comments with their own version, if this option is selected.
+<!--
+One possible solution may be to add a **None of the above** option to the radio button group. Add the [field.textarea](../reference/field.textarea.md) that would allow Tolokers to leave comments with their own version, if this option is selected.
 
 {% cut "Show code" %}
 
@@ -212,9 +236,11 @@ One possible solution may be to to add a **None of the above** option to the rad
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/7JAxeo6B3gfh6r)
 
+-->
+
 ## Add a layout {#add-layout}
 
-To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the `view.image` and the `view.text` components.
+To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the other components.
 
 In this example, the text is highlighted with a blue border.
 
@@ -226,7 +252,7 @@ In this example, the text is highlighted with a blue border.
     "theme": "info",
     "content": {
       "type": "view.text",
-      "content": "Look at the photo and find a sign with the business's name."
+      "content": "Look at the photo and find a sign with the business name."
     }
   }
   ```

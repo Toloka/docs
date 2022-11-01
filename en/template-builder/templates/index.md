@@ -20,6 +20,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Video comparison (Side-by-side)](sbs-video.md)
 
+- [Text recognition from an image (OCR)](text-recognition.md)
+
 ## Texts
 
 - [Copywriting](copywriting.md)
