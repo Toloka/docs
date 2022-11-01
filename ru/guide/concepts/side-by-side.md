@@ -160,7 +160,7 @@
 
           {% endcut %}
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png), чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg), чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -256,7 +256,7 @@
 
 ## Запуск пула и получение результатов {#pull_launch}
 
-1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.png).
+1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.svg).
 
 1. Следите за выполнением в блоке **Статистика пула**.
 

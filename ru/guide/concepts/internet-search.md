@@ -81,7 +81,7 @@
 
       {% endnote %}
 
-      1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
+      1. Нажмите кнопку ![](../_images/other/code.svg), чтобы переключить графический режим на формат JSON.
 
       1. В поле {% if locale == "ru-ru" %}**Входные данные**{% endif %}{% if locale == "en-com" %}**Input data**{% endif %} введите следующий код:
 
@@ -562,7 +562,7 @@
 
           {% endcut %}
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -796,7 +796,7 @@
 
       1. В открывшемся окне проверьте количество заданий и нажмите кнопку {% if locale == "ru-ru" %}**Добавить**{% endif %}{% if locale == "en-com" %}**Add**{% endif %}.
 
-    Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
+    Нажмите кнопку ![](../_images/other/b-start-pool.svg), чтобы запустить пул.
 
   {% endlist %}
 

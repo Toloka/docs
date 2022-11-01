@@ -161,7 +161,7 @@
 
           Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -197,7 +197,7 @@
 
     {% endif %}
 
-    1. Чтобы добавить изображение, нажмите кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) и укажите ссылку на изображение, которое вы хотите использовать в качестве примера.
+    1. Чтобы добавить изображение, нажмите кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) и укажите ссылку на изображение, которое вы хотите использовать в качестве примера.
 
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
@@ -301,7 +301,7 @@
 
     {% endnote %}
 
-1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
+1. Нажмите кнопку ![](../_images/other/b-start-pool.svg), чтобы запустить пул.
 
     {% note alert %}
 
@@ -313,7 +313,7 @@
 
 Чтобы получить результаты:
 
-1. Рядом с кнопкой **Скачать результаты** нажмите кнопку ![](../_images/other/drop-down.png).
+1. Рядом с кнопкой **Скачать результаты** нажмите кнопку ![](../_images/other/drop-down.svg).
 
 1. Выберите пункт списка **Агрегация результатов по методу Дэвида — Скина**. Подробнее об [Агрегации результатов по методу Дэвида — Скина](result-aggregation.md).
 

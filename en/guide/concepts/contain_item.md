@@ -128,7 +128,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-      1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+      1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
           {% note info %}
 
@@ -161,7 +161,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
         {% endif %}
 
-    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
+    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
     1. Save the changes.
 
@@ -265,7 +265,7 @@ To upload tasks:
 
         {% endnote %}
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 
@@ -277,7 +277,7 @@ To upload tasks:
 
 To get the results:
 
-1. Next to the **Download results** button, click ![](../_images/other/drop-down.png).
+1. Next to the **Download results** button, click ![](../_images/other/drop-down.svg).
 
 1. Choose the **Dawid-Skene aggregation model**. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md).
 

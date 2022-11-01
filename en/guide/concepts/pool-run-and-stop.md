@@ -6,11 +6,11 @@ You can start a [pool](../../glossary.md#pool) if:
 
 1. You have enough money in [your account](budget.md) to pay for the pool tasks, including the [overlap](../../glossary.md#overlap).
 
-To start the pool, click ![](../_images/other/b-start-pool.png) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-play.png) in the list of pools on the [project](../../glossary.md#project) page.
+To start the pool, click ![](../_images/other/b-start-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-play.svg) in the list of pools on the [project](../../glossary.md#project) page.
 
 A started pool has the status {% if locale == "en-com" %}“Open”{% endif %}. When all pool tasks are completed, the pool automatically switches to the {% if locale == "en-com" %}“Closed”{% endif %} status.
 
-To stop assigning the pool tasks before all of them are completed, click ![](../_images/other/b-pause-pool.png) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-pause.png) in the list of pools on the project page.
+To stop assigning the pool tasks before all of them are completed, click ![](../_images/other/b-pause-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-pause.svg) in the list of pools on the project page.
 
 {% note tip %}
 

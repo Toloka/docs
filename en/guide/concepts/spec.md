@@ -34,7 +34,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 {% cut "How do I add a component?" %}
 
-1. Open the task interface editor. To do this, find the {% if locale == "en-com" %}**Task interface**{% endif %} section, click ![](../_images/location-job/helper-icon.png), and select the component.
+1. Open the task interface editor. To do this, find the {% if locale == "en-com" %}**Task interface**{% endif %} section, click ![](../_images/location-job/helper-icon.svg), and select the component.
 
     Click {% if locale == "en-com" %}**More**{% endif %} to see an example and a full list of parameters.
 

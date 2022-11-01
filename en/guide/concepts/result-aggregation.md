@@ -49,7 +49,7 @@ Because the Dawid-Skene model evaluates `|L|²` parameters for each Toloker, we 
 
 {% endnote %}
 
-The result of aggregation is a TSV file with responses. `CONFIDENCE: <field name [output](incoming.md)>` indicates the response significance as a percentage.
+The result of aggregation is a TSV file with responses. `CONFIDENCE: <field name output>` indicates the response significance as a percentage.
 
 #### Benefits
 
@@ -140,7 +140,7 @@ Analyzes responses based on the level of confidence in the Toloker. The confiden
 
 Each user skill has “weight”. The higher the skill, the more we trust the Toloker and believe that their responses are correct.
 
-The result of aggregation is a TSV file with responses. `CONFIDENCE: <field name [output](incoming.md)>` indicates the confidence in the aggregated response. In this case, it shows the probability that the response is correct.
+The result of aggregation is a TSV file with responses. `CONFIDENCE: <field name output>` indicates the confidence in the aggregated response. In this case, it shows the probability that the response is correct.
 
 {% cut "Example" %}
 

@@ -44,7 +44,7 @@ To block access to tasks for multiple Tolokers:
 
 1. Click {% if locale == "en-com" %}**Ban**{% endif %}, then fill in the fields (see the table above).
 
-You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the {% if locale == "en-com" %}**Bans**{% endif %} tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.png).
+You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the {% if locale == "en-com" %}**Bans**{% endif %} tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).
 
 {% note warning %}
 

@@ -36,7 +36,7 @@
 
 {% cut "Как добавить компонент" %}
 
-1. Откройте помощник по созданию интерфейса задания. Для этого в блоке {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} нажмите кнопку ![](../_images/location-job/helper-icon.png) и выберите компонент.
+1. Откройте помощник по созданию интерфейса задания. Для этого в блоке {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} нажмите кнопку ![](../_images/location-job/helper-icon.svg) и выберите компонент.
 
     Нажмите {% if locale == "ru-ru" %}**Подробнее**{% endif %}{% if locale == "en-com" %}**More**{% endif %}, чтобы посмотреть пример и полный список параметров.
 

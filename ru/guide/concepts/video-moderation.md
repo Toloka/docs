@@ -125,7 +125,7 @@
 
           - Поле выходных данных: `result` — строка, в которую будет записан ответ исполнителя.
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -311,11 +311,11 @@
 
         {% endnote %}
 
-1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
+1. Нажмите кнопку ![](../_images/other/b-start-pool.svg), чтобы запустить пул.
 
 ## Получите результаты {#get-results}
 
-1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.png).
+1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.svg).
 
 1. Выберите пункт списка {% if locale == "ru-ru" %}**Агрегация результатов по методу Дэвида — Скина**{% endif %}{% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %}. Подробнее об [Агрегации результатов по методу Дэвида — Скина](result-aggregation.md#dawid-skene).
 

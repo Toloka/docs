@@ -25,9 +25,9 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 The first line of the file contains the column headers:
 
-- `INPUT:<name of the [input data field](incoming.md)>` — Input data for tasks.
+- `INPUT:<name of the input data field>` — Input data for tasks.
 
-- `GOLDEN:<name of the [output data field](incoming.md)>` — Responses for [control tasks](../../glossary.md#control-task).
+- `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
 
 - `HINT:text` — Hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
@@ -285,7 +285,7 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 ## What's next {#what_next}
 
-- [Upload tasks to the pool.](task_upload.md).
+- [Upload tasks to the pool](task_upload.md).
 
 ## Troubleshooting {#troubleshooting}
 

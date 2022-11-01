@@ -16,7 +16,7 @@
 - выполнение задания;
 - клонирование через API.
 
-Чтобы архивировать пул, нажмите кнопку {% if locale == "ru-ru" %}![](../_images/drop-down.svg) → **Архивировать**{% endif %}{% if locale == "en-com" %}![](../_images/drop-down.svg) → **Archive**{% endif %} вверху страницы пула или ![](../_images/other/pool-action-archive.png) в списке пулов на странице проекта.
+Чтобы архивировать пул, нажмите кнопку {% if locale == "ru-ru" %}![](../_images/drop-down.svg) → **Архивировать**{% endif %}{% if locale == "en-com" %}![](../_images/drop-down.svg) → **Archive**{% endif %} вверху страницы пула или ![](../_images/other/pool-action-archive.svg) в списке пулов на странице проекта.
 
 {% note info %}
 

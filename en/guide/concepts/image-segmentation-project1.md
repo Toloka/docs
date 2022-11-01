@@ -126,7 +126,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
             Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
             {% note info %}
 
@@ -146,16 +146,16 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. **Instructions:**{% if locale == "en-com" %}
 
-    ```plaintext
-    Look at the image and answer whether there are any **traffic signs** in it.
-    If there are, click **Yes**.
-    If there aren't, click **No**.
-    For example, there are traffic signs in the image, so the correct answer is **Yes**.
-    ```
+        ```plaintext
+        Look at the image and answer whether there are any **traffic signs** in it.
+        If there are, click **Yes**.
+        If there aren't, click **No**.
+        For example, there are traffic signs in the image, so the correct answer is **Yes**.
+        ```
 
-    {% endif %}
+        {% endif %}
 
-    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
+    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
     1. Save the changes.
 
@@ -259,7 +259,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     {% endnote %}
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 
@@ -269,7 +269,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
 ## Get the results {#get-results}
 
-1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![](../_images/other/drop-down.png).
+1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![](../_images/other/drop-down.svg).
 
 1. Choose {% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %} from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 

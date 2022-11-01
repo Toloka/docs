@@ -64,7 +64,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
                 Learn more about [annotation](t-components/image-annotation.md#annotation).
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
             {% note info %}
 
@@ -88,7 +88,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     {% note tip %}
 
-    If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) button on the toolbar.
+    If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) button on the toolbar.
 
     {% endnote %}
 
@@ -258,7 +258,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 

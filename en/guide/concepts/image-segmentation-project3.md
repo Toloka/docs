@@ -38,7 +38,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
       1. Turn on the **Define data specification manually** option.
 
-      1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+      1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
       1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
 
@@ -82,7 +82,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
       1. Prepare {% if locale == "en-com" %}**Task interface**{% endif %}:
 
-          1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](t-components/../../_images/settings.svg) in the **Task interface** block on the project page).
+          1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../_images/settings.svg) in the **Task interface** block on the project page).
 
           1. In the **html** block, replace the current code with the following:
               {% if locale == "en-com" %}
@@ -118,7 +118,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
       1. Configure the **Data specification** section:
 
-         1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+         1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
          1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
 
@@ -160,7 +160,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
            Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
 
-      1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+      1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
          {% note info %}
 
@@ -199,7 +199,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     {% note tip %}
 
-    If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) button on the toolbar.
+    If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) button on the toolbar.
 
     {% endnote %}
 
@@ -315,7 +315,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
         {% endnote %}
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 
@@ -325,7 +325,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 ## Download the reviewed results {#get_results}
 
-1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![](../_images/other/drop-down.png).
+1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![](../_images/other/drop-down.svg).
 
 1. Choose {% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %} from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 
@@ -412,7 +412,7 @@ You can check the results in two ways:
 
     1. Hover over the line of the assignment you want to check.
 
-    1. In the {% if locale == "en-com" %}**Status**{% endif %} column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click {% if locale == "en-com" %}**Done**{% endif %}.
+    1. In the {% if locale == "en-com" %}**Status**{% endif %} column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click {% if locale == "en-com" %}**Done**{% endif %}.
 
 {% endlist %}
 

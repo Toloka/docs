@@ -173,13 +173,13 @@ By default, archived training pools are not visible in the list of project train
 
 The training pool is automatically archived if no action is performed in it for 30 days.
 
-To archive a training pool manually, click {% if locale == "en-com" %}**![](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page or ![](../_images/other/pool-action-archive.png) in the list of training options on the project page.
+To archive a training pool manually, click {% if locale == "en-com" %}**![](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page or ![](../_images/other/pool-action-archive.svg) in the list of training options on the project page.
 
 If these buttons don't work, make sure that all the main pools that the training pool is linked to are [sent to the archive](pool-archive.md).
 
 ## What's next {#what_next}
 
-- {% if locale == "en-com" %}[Top up your account](refill.md){% endif %}
+- {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
 - [Start the pool](pool-run-and-stop.md).
 - To view the training statistics, go to the [Skills]({{ skills }}) page and choose a skill named `<project name> - training`.
 

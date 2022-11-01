@@ -104,7 +104,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
           1. In the **Input data** field, enter:
 
@@ -152,7 +152,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
               Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
               {% note info %}
 
@@ -287,7 +287,7 @@ To create a [pool](../../glossary.md#pool):
 
     1. In the window that opens, check the number of tasks and click **Add**.
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 

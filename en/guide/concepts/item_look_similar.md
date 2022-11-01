@@ -94,7 +94,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
           1. In the **Input data** field, enter:
 
@@ -132,7 +132,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
               Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
               {% note info %}
 
@@ -229,7 +229,7 @@ To create a pool:
 
     Learn more in [Quality control](control.md).
 
-1. Enter `3` in the **The number of Tolokers to complete each task ** field in the **Task overlap** section.
+1. Enter `3` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
 
 1. In the **Additional settings** block:
 
@@ -319,7 +319,7 @@ To create a pool:
 
 To get the results:
 
-1. Next to the **Download results** button, click ![](../_images/other/drop-down.png).
+1. Next to the **Download results** button, click ![](../_images/other/drop-down.svg).
 
 1. Choose the **Dawid-Skene aggregation model**. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 
@@ -396,7 +396,7 @@ To check submitted assignments:
 
 1. Hover over the line of the assignment you want to check.
 
-1. In the **Status** column, you'll see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
+1. In the **Status** column, you'll see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
 
 ## What's next {#what-next}
 

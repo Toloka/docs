@@ -77,7 +77,7 @@
 
           {% include [record-audio-input-output-fields](../_includes/concepts/record-audio/id-record-audio/input-output-fields.md) %}
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -155,7 +155,7 @@
 
 ## Запустите пул и получите результаты {#launch}
 
-1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.png).
+1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.svg).
 
 1. Следите за выполнением в блоке {% if locale == "ru-ru" %}**Статистика пула**{% endif %}{% if locale == "en-com" %}**Pool statistics**{% endif %}.
 

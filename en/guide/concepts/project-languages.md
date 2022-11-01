@@ -31,7 +31,7 @@ Toloka automatically selects the language based on the Toloker's language settin
 
 ## Deleting and editing {#delete-edit}
 
-To delete or edit your translation, open the **Translations** page and click ![](../_images/other/project-delete-b.png) to delete or ![](../_images/other/project-edit-b.png) to edit.
+To delete or edit your translation, open the **Translations** page and click ![](../_images/other/project-delete-b.svg) to delete or ![](../_images/other/project-edit-b.svg) to edit.
 
 ## Translation parameters {#param}
 
@@ -41,9 +41,9 @@ To delete or edit your translation, open the **Translations** page and click ![]
 ||**Translations** | The languages you selected and their translation status.||
 ||**Language** | All languages you selected and their current status.
 
-- ![](../_images/other/project-active.png) — the language is active and will be displayed to users.
+- ![](../_images/other/project-active.svg) — the language is active and will be displayed to users.
 
-- ![](../_images/other/project-unactive.png) — the language is inactive. If you added a language but didn't fill in the fields, it is inactive and users don't see it.||
+- ![](../_images/other/project-unactive.svg) — the language is inactive. If you added a language but didn't fill in the fields, it is inactive and users don't see it.||
 ||**Name and description** | The current translation status of the project name and description.||
 ||**Instructions** | The current translation status of the project instructions.||
 ||**Task interface** | The current translation status of the task interface.||

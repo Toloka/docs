@@ -76,7 +76,7 @@ Write short and clear [instructions](../glossary.md#instructions).
 
 Save the changes.
 
-1. Click the ![](images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+1. Click the ![](images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
     {% note info %}
 
@@ -101,7 +101,7 @@ Save the changes.
 1. Click **Finish**.
 
 
-1. To add an image, click ![](images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
+1. To add an image, click ![](images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
 
 Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../glossary.md#tsv) with tasks.
@@ -149,7 +149,7 @@ The **Name** and **Description** fields are used to help the Toloker distinguish
 
 The **Settings for displaying field tasks** block is used to help the Toloker distinguish one task from another when they select a task on the map. In this project, the **Header format** and **Short description format** fields contain links to the input data fields to show the point's name and address. You can leave these fields unchanged or write something else in them.
 
-1. Click ![](images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+1. Click ![](images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
     {% note info %}
 
@@ -162,7 +162,7 @@ The **Settings for displaying field tasks** block is used to help the Toloker di
     To exit preview mode, click **Exit** in the lower-left corner. If there were errors when testing, check the code blocks that you entered.
 
 
-1. Click ![](images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+1. Click ![](images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
     {% note info %}
 

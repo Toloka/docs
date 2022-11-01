@@ -84,7 +84,7 @@ When creating control tasks, enter only correct responses that answer the questi
 
 1. Click the tab with the type of the task.
 
-1. Find the task in the list and click ![](../_images/location-job/task-edit/task-action-delete.png). You can also delete a task from the pool in [editing mode](#task-edit).
+1. Find the task in the list and click ![](../_images/location-job/task-edit/task-action-delete.svg). You can also delete a task from the pool in [editing mode](#task-edit).
 
 {% note tip %}
 
@@ -95,7 +95,7 @@ If you set the overlap to 0 [via the API]({{ toloka-api-stop-assigning-tasks }})
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}[Top up your account](refill.md){% endif %}
+- {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
 - [Start the pool](pool-run-and-stop.md).
 
 ## Troubleshooting {#troubleshooting}

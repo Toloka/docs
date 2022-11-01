@@ -154,13 +154,13 @@
 
 Обучающий пул архивируется автоматически, если в течение 30 дней в нем не совершались никакие действия.
 
-Чтобы архивировать обучающий пул вручную, нажмите кнопку {% if locale == "ru-ru" %}**![](../_images/drop-down.svg) → Архивировать**{% endif %}{% if locale == "en-com" %}**![](../_images/drop-down.svg) → Archive**{% endif %} вверху страницы пула или ![](../_images/other/pool-action-archive.png) в списке обучений на странице проекта.
+Чтобы архивировать обучающий пул вручную, нажмите кнопку {% if locale == "ru-ru" %}**![](../_images/drop-down.svg) → Архивировать**{% endif %}{% if locale == "en-com" %}**![](../_images/drop-down.svg) → Archive**{% endif %} вверху страницы пула или ![](../_images/other/pool-action-archive.svg) в списке обучений на странице проекта.
 
 Если эти кнопки недоступны, проверьте, что все основные пулы, к которым привязан обучающий, [отправлены в архив](pool-archive.md).
 
 ## Что дальше {#what_next}
 
-- {% if locale == "en-com" %}[Пополните счет](refill.md){% endif %}{% if locale == "ru-ru" %}Пополните счет:
+- {% if locale == "en-com" %}[Пополните счет](refill.md).{% endif %}{% if locale == "ru-ru" %}Пополните счет:
 
     - [Инструкция для резидентов РФ](refill-russia.md).
 

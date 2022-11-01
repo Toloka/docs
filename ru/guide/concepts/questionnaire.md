@@ -180,7 +180,7 @@
 
           Очистите блоки JavaScript и CSS.
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -266,7 +266,7 @@
 
 ## Запустите пул и получите результаты {#launch}
 
-1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.png).
+1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.svg).
 
 1. Следите за выполнением в блоке **Статистика пула**.
 
@@ -280,7 +280,7 @@
 
     {% cut "Как увеличить перекрытие?" %}
 
-    1. Остановите пул, нажав кнопку ![](../_images/other/b-pause-pool.png).
+    1. Остановите пул, нажав кнопку ![](../_images/other/b-pause-pool.svg).
 
     1. В правом верхнем углу нажмите {% if locale == "ru-ru" %}**Редактировать**{% endif %}{% if locale == "en-com" %}**Edit**{% endif %}.
 

@@ -38,7 +38,7 @@
 
       1. Включите опцию **Настроить спецификацию вручную**.
 
-      1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
+      1. Нажмите кнопку ![](../_images/other/code.svg), чтобы переключить графический режим на формат JSON.
 
       1. {% include [image-segmentation-project3-del-input-temp](../_includes/concepts/image-segmentation-project3/id-image-segmentation-project3/del-input-temp.md) %}
 
@@ -144,7 +144,7 @@
 
       1. Настройте раздел **Спецификация данных**:
 
-      1. Нажмите кнопку ![](../_images/other/code.png), чтобы переключить графический режим на формат JSON.
+      1. Нажмите кнопку ![](../_images/other/code.svg), чтобы переключить графический режим на формат JSON.
 
       1. Удалите шаблонный код из поля {% if locale == "ru-ru" %}**Входные данные**{% endif %}{% if locale == "en-com" %}**Input data**{% endif %} и введите следующий код:
 
@@ -186,7 +186,7 @@
 
           Подробнее о параметрах {% if locale == "ru-ru" %}**Спецификации**{% endif %}{% if locale == "en-com" %}**Specifications**{% endif %} читайте в разделе [Входные и выходные данные](incoming.md).
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note tip %}
 
@@ -233,7 +233,7 @@
 
     {% note tip %}
 
-    Если вы хотите добавить в инструкцию примеры выполнения задания, выполните его самостоятельно в режиме предпросмотра. Сделайте скриншоты, загрузите их на фотохостинг{% if locale == "ru-ru" %}, ваш Яндекс Диск{% endif %} или в облачное хранилище и вставьте ссылки на изображения в инструкцию, нажав кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) на панели инструментов.
+    Если вы хотите добавить в инструкцию примеры выполнения задания, выполните его самостоятельно в режиме предпросмотра. Сделайте скриншоты, загрузите их на фотохостинг{% if locale == "ru-ru" %}, ваш Яндекс Диск{% endif %} или в облачное хранилище и вставьте ссылки на изображения в инструкцию, нажав кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) на панели инструментов.
 
     {% endnote %}
 
@@ -353,7 +353,7 @@
 
     {% endnote %}
 
-1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
+1. Нажмите кнопку ![](../_images/other/b-start-pool.svg), чтобы запустить пул.
 
     {% note alert %}
 
@@ -363,7 +363,7 @@
 
 ## Скачайте проверенные результаты  {#get_results}
 
-1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.png).
+1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.svg).
 
 1. Выберите из списка пункт {% if locale == "ru-ru" %}**Агрегация результатов по методу Дэвида — Скина**{% endif %}{% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %}. Подробнее об [Агрегации результатов по методу Дэвида — Скина](result-aggregation.md#dawid-skene).
 
@@ -465,7 +465,7 @@
 
   1. Наведите курсор на строку с заданием, которое хотите проверить.
 
-  1. В столбце {% if locale == "ru-ru" %}**Статус**{% endif %}{% if locale == "en-com" %}**Status**{% endif %} появятся кнопки, чтобы принять (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) или отклонить (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) выполненное задание. Если вы отклоняете задание, в открывшемся окне введите комментарий и нажмите кнопку {% if locale == "ru-ru" %}**Готово**{% endif %}{% if locale == "en-com" %}**Done**{% endif %}.
+  1. В столбце {% if locale == "ru-ru" %}**Статус**{% endif %}{% if locale == "en-com" %}**Status**{% endif %} появятся кнопки, чтобы принять (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) или отклонить (кнопка ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) выполненное задание. Если вы отклоняете задание, в открывшемся окне введите комментарий и нажмите кнопку {% if locale == "ru-ru" %}**Готово**{% endif %}{% if locale == "en-com" %}**Done**{% endif %}.
 
 {% endlist %}
 

@@ -85,7 +85,7 @@ If the markup process failed for some reason, contact support. Go to the tab for
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}[Top up your account](refill.md){% endif %}
+- {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
 - [Start the pool](pool-run-and-stop.md).
 
 ## Troubleshooting {#troubleshooting}

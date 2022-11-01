@@ -106,7 +106,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **JavaScript:**
 
-1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](t-components/../../_images/settings.svg) in the **Task interface** block on the project page).
+1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../_images/settings.svg) in the **Task interface** block on the project page).
 
 1. ```javascript
     exports.Task = extend(TolokaHandlebarsTask, function (options) {

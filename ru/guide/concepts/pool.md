@@ -32,7 +32,7 @@
 
 - [Добавьте обучающий пул](train.md).
 
-- {% if locale == "en-com" %}[Пополните счет](refill.md){% endif %}{% if locale == "ru-ru" %}Пополните счет:
+- {% if locale == "en-com" %}[Пополните счет](refill.md).{% endif %}{% if locale == "ru-ru" %}Пополните счет:
 
     - [Инструкция для резидентов РФ](refill-russia.md).
     - [Инструкция для нерезидентов](refill.md).
