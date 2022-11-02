@@ -1,5 +1,7 @@
 # Добавление заданий в пул
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Чтобы добавить задания в пул:
 
 1. [Разместите файлы для заданий](cloud-storage.md).

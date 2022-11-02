@@ -1,5 +1,7 @@
 # condition.not
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Возвращает значение, обратное заданному условию. Например, если заданное условие выполняется (возвращает значение `true`), то
 `condition.not` вернет `false`.
 

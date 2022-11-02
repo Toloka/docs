@@ -1,5 +1,7 @@
 # Стандартные query-параметры
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 #|
 ||**Параметр** | **Описание**||
 ||**limit** | **integer**

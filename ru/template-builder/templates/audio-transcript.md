@@ -1,5 +1,7 @@
 # Транскрипция аудио
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В Толоке есть пресет **Расшифровка аудиозаписей** . В нем уже настроена валидация, внешний вид задания и горячие клавиши.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/SsYtF)

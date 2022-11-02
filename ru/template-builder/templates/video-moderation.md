@@ -1,5 +1,7 @@
 # Оценка видео
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В Толоке есть пресет **Классификация жестов рук**. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TJ6zR)

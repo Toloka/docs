@@ -1,5 +1,7 @@
 # helper.translate
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компонент для перевода элементов интерфейса на другие языки. Подробнее в разделе [Перевод интерфейса задания](../../guide/concepts/project-languages.md#project-languages__interface-translate).
 
 В те свойства, которые должны отображаться на разных языках, добавьте:

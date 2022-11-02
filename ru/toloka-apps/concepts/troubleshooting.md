@@ -1,5 +1,7 @@
 # Решение проблем
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 ## Bespoke {#app-projects}
 
 Я не нашел подходящее Bespoke-решение

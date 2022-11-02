@@ -1,5 +1,7 @@
 # condition.any
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Проверяет, что **хотя бы одно** из дочерних условий выполняется. Если ни одно условие не выполнено, компонент возвращает `false`.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/S98sm)

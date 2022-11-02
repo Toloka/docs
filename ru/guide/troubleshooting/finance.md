@@ -1,5 +1,7 @@
 # Финансы
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
 ## Пополнение счета {#concept-1}

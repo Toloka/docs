@@ -1,5 +1,7 @@
 # helper.search-query
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компонент создания строки со ссылкой поискового запроса.
 
 Список доступных поисковых систем указан в свойстве `engine`.

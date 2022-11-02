@@ -1,5 +1,7 @@
 # Отложенная приемка
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Отложенная приемка заданий — это параметр настройки [пула](../../glossary.md#pool), который позволяет вам проверять ответы и при этом не платить за задания, которые исполнители сделали некачественно.
 
 [Способы проверки](accept.md#acception) вы найдете в разделе {% if locale == "ru-ru" %}**Работа с результатами** → **Проверка ответов исполнителей**{% endif %}{% if locale == "en-com" %}**Working with results → Reviewing Tolokers' responses**{% endif %}.

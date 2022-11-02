@@ -1,5 +1,7 @@
 # Обзор
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 ## Описание {#description}
 
 Разошлите сообщения исполнителям. Адресатов укажите [списком](message-send.md#spis) или отберите с помощью [фильтра](message-send.md#didi).

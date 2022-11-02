@@ -1,5 +1,7 @@
 # field.select
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Кнопка для выбора из выпадающего списка. Используйте, когда список длинный, а выбрать нужно один вариант.
 
 Для коротких списков (2–4 пункта) лучше подходят [field.radio-group](field.radio-group.md) или [field.button-radio-group](field.button-radio-group.md), в которых все варианты ответов видны сразу.

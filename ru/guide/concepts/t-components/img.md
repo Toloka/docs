@@ -1,5 +1,7 @@
 # Картинка
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать вставить картинку в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/operations/insert-images.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/operations/insert-images.md){% endif %}.

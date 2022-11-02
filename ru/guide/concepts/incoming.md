@@ -1,5 +1,7 @@
 # Входные и выходные данные
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb-spec](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb-spec.md) %}
 
 В **Спецификации** вы задаете параметры [входных и выходных данных](../../glossary.md#input-output-data). Эти настройки будут действовать для всех заданий в [проекте](../../glossary.md#project).

@@ -1,5 +1,7 @@
 # Редактор для сегментации текста
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать редактор для сегментации текста в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.text-annotation.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.text-annotation.md){% endif %}.

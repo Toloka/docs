@@ -1,5 +1,7 @@
 # Адаптировать задание для мобильных устройств
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 По умолчанию задание будет доступно и для веб-версии Толоки и для мобильного приложения.

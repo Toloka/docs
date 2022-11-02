@@ -1,5 +1,7 @@
 # Вставить видео
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В этом разделе описано, как [вставить видео](#insert-videos) и [убедиться, что исполнитель его посмотрел](#condition.played).
 
 

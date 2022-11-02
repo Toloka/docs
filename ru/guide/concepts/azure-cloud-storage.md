@@ -1,5 +1,7 @@
 # Azure Blob Storage
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [amazon-cloud-storage-alternatives-note](../_includes/concepts/amazon-cloud-storage/id-amazon-cloud-storage/alternatives-note.md) %}
 
 Чтобы опробовать возможности [Microsoft Azure]({{ azure-blob }}), создайте [бесплатную учетную запись]({{ azure-free }}).

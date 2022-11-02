@@ -1,5 +1,7 @@
 # action.set
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Устанавливает значение из `payload` в данные в свойстве `data`.
 
 [Подробнее о работе с данными](../operations/work-with-data.md).

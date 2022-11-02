@@ -1,5 +1,7 @@
 # Параметры пула
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 #|
 ||**Параметр** | **Описание** | **Находится в блоке**||
 ||{% if locale == "ru-ru" %}**Название пула**{% endif %}{% if locale == "en-com" %}**Pool name**{% endif %}|Название [пула](../../glossary.md#pool), которое будете видеть только вы (как заказчик) на странице [проекта](../../glossary.md#project).|{% if locale == "ru-ru" %}**Общая информация**{% endif %}{% if locale == "en-com" %}**General information**{% endif %}||

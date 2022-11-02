@@ -1,5 +1,7 @@
 # Класс Assignment
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 Этот класс управляет ходом выполнения задания, обрабатывает команды страницы заданий на отправку ответов, пропуск, приостановку задания и т. п. Также он создает экземпляр класса [TaskSuite](tasksuite.md).

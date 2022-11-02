@@ -1,5 +1,7 @@
 # Список плагинов
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компоненты с названиями `plugin.*` — это плагины, предоставляющие дополнительную функциональность. Например, [plugin.hotkeys](plugin.hotkeys.md) позволяет настроить горячие клавиши.
 
 | Component                                                                         | Description                                                                                            |

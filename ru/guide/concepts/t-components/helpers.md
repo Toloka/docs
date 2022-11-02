@@ -1,5 +1,7 @@
 # Дополнительные хелперы
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 Хелперы — это функции, которым можно передать любое количество выражений. После обработки результата они возвращают HTML-код.

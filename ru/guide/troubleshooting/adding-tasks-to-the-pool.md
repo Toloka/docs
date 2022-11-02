@@ -1,5 +1,7 @@
 # Добавление заданий в пул
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
 ## Загрузка заданий {#concept_iy1_3kh_5mb}

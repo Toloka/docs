@@ -1,5 +1,7 @@
 # Статистика по проекту
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Чтобы посмотреть графики, зайдите в проект и откройте вкладку {% if locale == "ru-ru" %}**Статистика**{% endif %}{% if locale == "en-com" %}**Statistics**{% endif %}.
 
 #|

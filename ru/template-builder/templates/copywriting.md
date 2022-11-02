@@ -1,5 +1,7 @@
 # Копирайтинг
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В Толоке есть пресет **Генерация описаний товаров**. В нем уже настроена валидация и внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TJ6on)

@@ -1,5 +1,7 @@
 # view.group
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Объединяет любые компоненты в визуальные группы — блоки с рамкой.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/QRZF6)

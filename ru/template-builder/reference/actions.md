@@ -1,5 +1,7 @@
 # Список действий
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компоненты с именем `actions.*` позволяют выполнять различные действия, например [показывать уведомления](action.notify.md).
 
 | Component                                 | Description                                                                                                                               |

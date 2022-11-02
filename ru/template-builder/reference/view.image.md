@@ -1,5 +1,7 @@
 # view.image
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Отображает картинку.
 
 [Подробнее про вставку изображений](../operations/insert-images.md).

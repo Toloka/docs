@@ -1,5 +1,7 @@
 # condition.schema
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Позволяет валидировать данные с помощью [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step.html). Это специальный формат, чтобы описывать данные в формате JSON.
 
 Например, вы можете описать тип данных, минимальное и максимальное значение, а также указать, что все значения должны быть уникальными.

@@ -1,5 +1,7 @@
 # Yandex Object Storage
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [amazon-cloud-storage-alternatives-note](../_includes/concepts/amazon-cloud-storage/id-amazon-cloud-storage/alternatives-note.md) %}
 
 Чтобы опробовать возможности [Yandex Cloud]({{ object-storage }}), вы можете активировать [Пробный период]({{ yandex-cloud-free-trial }}).

@@ -1,5 +1,7 @@
 # Отправка пула в архив
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 [Пул](../../glossary.md#pool) в статусе {% if locale == "ru-ru" %}«Архивный»{% endif %}{% if locale == "en-com" %}«Archived»{% endif %} недоступен для запуска и редактирования, а также для [выполнения отложенной приемки](accept.md).
 
 По умолчанию архивные пулы не видны в списке пулов [проекта](../../glossary.md#project). Чтобы увидеть их:
