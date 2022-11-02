@@ -10,7 +10,7 @@ Action (Template Builder) {#action}
 
 Active Tolokers {#active-tolokers}
 
-: Tolokers who viewed or completed tasks during the last hour and match the [filters](#filters) specified in the [pool](#pool) settings. This is the number of Tolokers who will see your task if you publish it now.
+: Tolokers with access to the [pool](#pool) who took tasks during the last hour.
 
 Archive pool {#archive-pool}
 
