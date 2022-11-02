@@ -118,7 +118,7 @@ Before you begin:
 
 1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
 
-1. Check control rules and correct them if necessary in the {% if locale == "en-com" %}**Quality rools**{% endif %} section.
+1. Check control rules and correct them if necessary in the {% if locale == "en-com" %}**Quality control**{% endif %} section.
 
 1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %} and check values of the parameters in this section.
 
