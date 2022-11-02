@@ -109,20 +109,22 @@ Before you begin:
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
 {% cut "Create pool from preset" %}
-  
+
 1. If there are no pools in the project, click {% if locale == "en-com" %}**Create pool from preset for Survey on third-party platform**{% endif %} on {% if locale == "en-com" %}**Pools**{% endif %} tab. Otherwise, click {% if locale == "en-com" %}Add a pool → From Survey on third-party platform preset{% endif %} at right side of the project page.
 
 1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
 
-1. Check pre-configured filters in the {% if locale == "en-com" %}**Audience**{% endif %} section.
+1. Check pre-configured filters and correct them if necessary in the {% if locale == "en-com" %}**Audience**{% endif %} section.
 
 1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
 
 1. Check control rules and correct them if necessary in the {% if locale == "en-com" %}**Quality rools**{% endif %} section.
 
-1. Click {% if locale == "en-com" %}Show advanced settings{% endif %} and check values of the parameters in this section.
+1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %} and check values of the parameters in this section.
 
-1. {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
+1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+    
+    {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
 1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 
@@ -204,11 +206,13 @@ Before you begin:
 
     {% endnote %}
 
-1. {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
+1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+    
+    {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
 1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 
-{% endcut%}
+{% endcut %}
 
 ## Upload data {#upload}
 
