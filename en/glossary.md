@@ -10,7 +10,7 @@ Action (Template Builder) {#action}
 
 Active Tolokers {#active-tolokers}
 
-: Tolokers with access to the [pool](#pool) who have taken tasks in the last hour.
+: Tolokers with access to the [pool](#pool) who took tasks during the last hour.
 
 Archive pool {#archive-pool}
 
