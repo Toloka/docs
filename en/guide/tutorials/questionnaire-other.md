@@ -118,11 +118,11 @@ Before you begin:
 
 1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
 
-1. Check control rules in the {% if locale == "en-com" %}**Quality rools**{% endif %} section.
+1. Check control rules and correct them if necessary in the {% if locale == "en-com" %}**Quality rools**{% endif %} section.
 
-1. Click {% if locale == "en-com" %}Show advanced settings{% endif %} and check values of the parameters.
+1. Click {% if locale == "en-com" %}Show advanced settings{% endif %} and check values of the parameters in this section.
 
-1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+1. {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
 1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 
@@ -204,20 +204,7 @@ Before you begin:
 
     {% endnote %}
 
-1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
-
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay for survey completion by one Toloker.
-
-        In survey projects, a task suite must contain only one task. Otherwise, a Toloker will see several identical surveys on one page. You will set the number of tasks per suite later in this tutorial.
-
-    1. In the {% if locale == "en-com" %}**Overlap**{% endif %} field, define how many respondents for each task you need.
-
-        - If you are going to use one static link to your survey, the overlap should be equal to the number of respondents you need for the survey as a whole.
-        You can also increase overlap when labeling is in progress or when it’s completed.
-
-        - If you are going to provide many survey links and each of them will be given to one Toloker only, the overlap should be set to 1.
-
-        You will prepare the file with one or several survey links in the next step.
+1. {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
 1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 
