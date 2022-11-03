@@ -38,7 +38,7 @@ To create a project, follow the instructions:
 
     - Template Builder
 
-      1. [Create the task interface]({{ tb-quickstart }}).
+      1. [Create the task interface](../../template-builder/index.md).
 
       1. Click **Show specifications** to see the input and output data fields.
 
@@ -46,7 +46,7 @@ To create a project, follow the instructions:
 
           The output data fields depend on the components that use `data.output` and values supported by it.
 
-          Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
+          Learn more about [input and output data fields](../../template-builder/operations/create-specs.md) in the Template Builder Help.
 
       1. Specify the settings for field task display if you use one of the field task templates.
 

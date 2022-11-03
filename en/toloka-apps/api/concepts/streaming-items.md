@@ -53,7 +53,7 @@ Contains an array of IDs assigned to created task items.
 
 {% note info %}
 
-When you upload items without a batch, processing starts immediately. You can learn about the completion of processing from each item's [status](https://toloka.ai/ru/docs/toloka-apps/api/concepts/quickstart-api.html#quickstart-api__check-items).
+When you upload items without a batch, processing starts immediately. You can learn about the completion of processing from each item's [status](quickstart-api.md#quickstart-api__check-items).
 
 {% endnote %}
 

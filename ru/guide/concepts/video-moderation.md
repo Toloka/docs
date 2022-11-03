@@ -77,9 +77,9 @@
 
           Подробнее в Справке конструктора шаблонов:
 
-          - [настройка условий]({{ tb-conditions }});
+          - [настройка условий](../../template-builder/best-practices/conditions.md);
 
-          - настройка шаблона [Оценка видео]({{ tb-video-moderation }}).
+          - настройка шаблона [Оценка видео](../../template-builder/templates/video-moderation.md).
 
       1. {% include [toloka-requester-source-tb-input-output_1](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output_1.md) %}
 
@@ -383,7 +383,7 @@
 
 - Формат относительных ссылок в файле с заданиями указан верно: <уникальное имя>/<путь и имя файла>.
 
-Подробная инструкцию и видео на странице [Использование файлов с Яндекс Диска]({{ using-files-yandex-disk }}).
+Подробная инструкцию и видео на странице [Использование файлов с Яндекс Диска](prepare-data.md).
 
 {% endcut %}
 

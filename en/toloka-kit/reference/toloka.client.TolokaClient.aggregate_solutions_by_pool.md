@@ -16,7 +16,7 @@ Try [crowd-kit library](https://toloka.ai/en/docs/crowd-kit). It has many aggreg
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`type`|**Union\[[AggregatedSolutionType](toloka.client.aggregation.AggregatedSolutionType.md), str, None\]**|<p>Aggregation model:</p> <ul> <li>`WEIGHTED_DYNAMIC_OVERLAP` — [Aggregation](https://toloka.ai/docs/guide/concepts/result-aggregation.html#aggr__aggr-by-skill) based on Tolokers&#x27; skill in a pool with a dynamic overlap.</li> <li>`DAWID_SKENE` — [Dawid-Skene aggregation model](https://toloka.ai/docs/guide/concepts/result-aggregation.html#aggr__dawid-skene). It is used in pools without a dynamic overlap.</li> </ul>
+`type`|**Union\[[AggregatedSolutionType](toloka.client.aggregation.AggregatedSolutionType.md), str, None\]**|<p>Aggregation model:</p> <ul> <li>`WEIGHTED_DYNAMIC_OVERLAP` — [Aggregation](https://toloka.ai/en/docs/guide/concepts/result-aggregation.html#aggr__aggr-by-skill) based on Tolokers&#x27; skill in a pool with a dynamic overlap.</li> <li>`DAWID_SKENE` — [Dawid-Skene aggregation model](https://toloka.ai/en/docs/guide/concepts/result-aggregation.html#aggr__dawid-skene). It is used in pools without a dynamic overlap.</li> </ul>
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool.</p>
 `answer_weight_skill_id`|**Optional\[str\]**|<p>The ID of the skill that determines the weight of the Toloker&#x27;s responses.</p>
 `fields`|**Optional\[List\[[PoolAggregatedSolutionRequest.Field](toloka.client.aggregation.PoolAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to aggregate. For the best results, each of these fields should have limited number of response options.</p>

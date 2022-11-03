@@ -14,7 +14,7 @@ Authorization: OAuth <OAuth token>
 
 ## Getting an OAuth token
 
-- [Register](https://toloka.ai/docs/guide/concepts/access.html) in Toloka.
+- [Register](../../../guide/concepts/access.md) in Toloka.
 
 - Get an OAuth token in the [requester interface](https://platform.toloka.ai/requester/profile/integration).
 

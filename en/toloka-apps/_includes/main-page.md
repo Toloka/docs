@@ -39,15 +39,15 @@ Select the problem to solve, fill out an application form for creating a project
         <p>Download a file with the labeling results</p>
     </div>
     <div class="grid-item">
-        <h3><a href="https://toloka.ai/docs/toloka-apps/api/ref/index.html">API reference</a></h3>
+        <h3><a href="https://toloka.ai/en/docs/toloka-apps/api/ref/index">API reference</a></h3>
         <p>HTTP API method descriptions</p>
     </div>
     <div class="grid-item">
-        <h3><a href="https://toloka.ai/docs/toloka-apps/api/concepts/authorization.html">Authorization in the API</a></h3>
+        <h3><a href="https://toloka.ai/en/docs/toloka-apps/api/concepts/authorization">Authorization in the API</a></h3>
         <p>Get a token to work with the API</p>
     </div>
     <div class="grid-item">
-        <h3><a href="https://toloka.ai/docs/toloka-apps/api/concepts/quickstart-api.html">API quick start</a></h3>
+        <h3><a href="https://toloka.ai/en/docs/toloka-apps/api/concepts/quickstart-api">API quick start</a></h3>
         <p>Step-by-step instructions for running a sample bespoke project</p>
     </div>
     <div class="grid-item">

@@ -2,7 +2,7 @@ default:
   region: ru
   locale: ru-ru
   api-toloka: https://yandex.com/dev/toloka/
-  appeal: https://toloka.ai/tolokers/docs/web/priemka.html?lang=en#priemka__appeal
+  appeal: https://toloka.ai/tolokers/docs/web/priemka.html?lang=ru#priemka__appeal
   balance: https://balance.yandex.com/index.xml?LANG=en
   certified-agencies-ru: https://toloka.ai/ru/certified-agencies
   certified-specialists-ru: https://toloka.ai/ru/certified-specialists
@@ -16,46 +16,12 @@ default:
   json-format: https://tech.yandex.com/toloka/doc/concepts/tasks-docpage/?lang=en
   persons: https://balance.yandex.com/invoices.xml?LANG=en
   phone-problems_no-code: https://yandex.ru/dev/id/doc/dg/
-  requester: https://toloka.ai/docs/guide/
-  requester-access: https://toloka.ai/docs/guide/concepts/access.html
-  requester-aggregations: https://toloka.ai/docs/guide/concepts/result-aggregation.html
-  requester-assign-skills: https://toloka.ai/docs/guide/concepts/nav-assign.html
-  requester-attachments: https://toloka.ai/docs/guide/concepts/advanced-features-attach.html
-  requester-ban: https://toloka.ai/docs/guide/concepts/ban.html
-  requester-ban-platform: https://toloka.ai/docs/guide/concepts/ban.html#ban__ban-platform
-  requester-bonus: https://toloka.ai/docs/guide/concepts/bonus.html
-  requester-dynamic-pricing: https://toloka.ai/docs/guide/concepts/dynamic-pricing.html#dynamic-pricing__section_ucl_3hl_vlb
-  requester-help: https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__help
-  requester-image-annotation: https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/
-  requester-interface-translate: https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate
-  requester-js-class-task: https://toloka.ai/docs/guide/concepts/js/task.html
-  requester-main-steps: https://toloka.ai/docs/guide/concepts/main-steps.html
-  requester-messaging: https://toloka.ai/docs/guide/concepts/messaging.html#private
-  requester-mixing: https://toloka.ai/docs/guide/concepts/distribute-tasks-by-pages.html#distribute-tasks-by-pages__smart-mixing
-  requester-pool-main: https://toloka.ai/docs/guide/concepts/pool-main.html
-  requester-prj: https://toloka.ai/docs/guide/concepts/project.html
   requester-profile-integration: https://platform.toloka.ai/requester/profile/integration
-  requester-project-languages: https://toloka.ai/ru/docs/guide/concepts/project-languages.html
-  requester-proxy: https://toloka.ai/docs/guide/concepts/prepare-data.html#prepare-data__connect
-  requester-quality: https://toloka.ai/docs/guide/concepts/check-performers.html
-  requester-random-check: https://toloka.ai/docs/guide/concepts/selective-mvote.html#selective-mvote__theory
-  requester-refill: https://toloka.ai/docs/guide/concepts/refill.html
-  requester-result: https://toloka.ai/docs/guide/concepts/result-of-eval.html?
-  requester-result-aggregation: https://toloka.ai/docs/guide/concepts/result-aggregation.html
-  requester-skills: https://toloka.ai/docs/guide/concepts/nav.html
-  requester-skills-global: https://toloka.ai/docs/guide/concepts/nav-cross-project.html
-  requester-speed-quality-balance: https://toloka.ai/docs/guide/concepts/adjust.html
-  requester-support: https://toloka.ai/docs/guide/troubleshooting/support.html/#troubleshooting__project-setting
-  requester-task-upload: https://toloka.ai/docs/guide/concepts/task_upload.html
-  requester-train: https://toloka.ai/docs/guide/concepts/train.html
-  requester-troubleshooting: https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html
-  requester-users: https://toloka.ai/docs/guide/concepts/users.html
   rfc4122: https://tools.ietf.org/html/rfc4122
   safari-mobile: https://support.apple.com/ru-ru/guide/safari-developer/dev84bd42758/mac
   sandbox: https://sandbox.toloka.yandex.com/for-requesters
   sandbox-requester-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
   sandbox-workers: https://sandbox.toloka.yandex.com/requester/workers
-  tb-audio-transcript: https://toloka.ai/en/docs/template-builder/templates/audio-transcript
   templates-video: https://platform.toloka.ai/requester/new/project/old?templateId=video
   templates-video-new: https://platform.toloka.ai/requester/new/project/old?templateId=videoModeration
   time-difference-utc: https://www.yandex.ru/search/?text=utc
@@ -84,17 +50,13 @@ default:
   toloka-feedback-sandbox: https://forms.yandex.com/surveys/10015613//?lang=en
   toloka-kit: https://toloka.ai/en/docs/toloka-kit/
   toloka-kit-doc: https://toloka.ai/en/docs/toloka-kit/
-  toloka-requester-concepts-yacloud-dita: https://toloka.ai/ru/docs/guide/concepts/use-object-storage.html
-  toloka-requester-create-tsv: https://toloka.ai/ru/docs/guide/concepts/pool_csv.html
-  toloka-requester-index-dita: https://toloka.ai/ru/docs/guide/index.html
-  toloka-support: https://toloka.ai/tolokers/docs/web/troubleshooting/troubleshooting.html/?lang=en
-  toloka-web-register: https://toloka.ai/tolokers/docs/web/register.html#register
+  toloka-support: https://toloka.ai/tolokers/docs/web/troubleshooting/troubleshooting.html?lang=en
+  toloka-web-register: https://toloka.ai/tolokers/docs/web/register.html?lang=ru#register
   uadetector-dev-category: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/ReadableDeviceCategory.Category.html
   uadetector-os-family: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/OperatingSystemFamily.html
   uadetector-useragent-family: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentFamily.html
   uadetector-useragent-type: http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentType.html
-  user-documentation: https://toloka.ai/tolokers/docs/web/register.html?lang=en
-  using-files-yandex-disk: https://toloka.ai/ru/docs/guide/concepts/prepare-data.html
+  user-documentation: https://toloka.ai/tolokers/docs/web/register.html?lang=ru
   yadisk-app: https://disk.yandex.ru/promo/download
   yadisk-uploading: https://yandex.com/support/disk/uploading.html
   yandex-id: https://id.yandex.ru/about

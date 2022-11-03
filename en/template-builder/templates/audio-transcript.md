@@ -58,6 +58,6 @@ Choose whether a Toloker can select only one or multiple answer options:
 
 ## See also {#see-also}
 
-- [Tutorials — audio transcription](https://toloka.ai/docs/guide/tutorials/transcript-audio.html)
+- [Tutorials — audio transcription](../../guide/tutorials/transcript-audio.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

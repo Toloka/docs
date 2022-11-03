@@ -36,9 +36,9 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           For more information, see the Template Builder Help:
 
-          - [Setting up conditions]({{ tb-conditions }}).
+          - [Setting up conditions](../../template-builder/best-practices/conditions.md).
 
-          - [Image classification]({{ tb-image-classification }}) template.
+          - [Image classification](../../template-builder/templates/image-classification.md) template.
 
       1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
@@ -84,7 +84,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           The output data fields depend on the components that use `data.output` and values supported by it.
 
-          Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
+          Learn more about [input and output data fields](../../template-builder/operations/create-specs.md) in the Template Builder Help.
 
           - Input data field: `image` — A link to an image.
 

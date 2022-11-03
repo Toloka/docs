@@ -67,7 +67,7 @@
           - не загрузит необходимые фотографии товара, ценника и магазина;
           - не напишет комментарий в том случае, если магазин закрыт или отсутствует.
 
-          Подробнее о [настройке условий]({{ tb-conditions }}) в Справке конструктора шаблонов.
+          Подробнее о [настройке условий](../../template-builder/best-practices/conditions.md) в Справке конструктора шаблонов.
 
       1. {% include [toloka-requester-source-tb-input-output_1](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output_1.md) %}
 

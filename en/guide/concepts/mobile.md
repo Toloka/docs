@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a task interface in [Template Builder]({{ tb-quickstart }}).
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a task interface in [Template Builder](../../template-builder/index.md).
 
 {% endnote %}
 
@@ -27,7 +27,7 @@ Tasks that work well on mobile devices include classification, surveys, evaluati
 
 {% cut "Step 2. Improve the display quality for tasks shown on mobile devices." %}
 
-We recommend that you use the [Template Builder]({{ tb-quickstart }}). It will make it easier for you to adapt your tasks for mobile devices.
+We recommend that you use the [Template Builder](../../template-builder/index.md). It will make it easier for you to adapt your tasks for mobile devices.
 
 Add the following code to the **CSS** block:
 

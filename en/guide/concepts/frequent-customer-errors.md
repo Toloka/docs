@@ -60,7 +60,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 {% note tip %}
 
-You can try creating a task interface in the [Template Builder]({{ tb-quickstart }}).
+You can try creating a task interface in the [Template Builder](../../template-builder/index.md).
 
 {% endnote %}
 

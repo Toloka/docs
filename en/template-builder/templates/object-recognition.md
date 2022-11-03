@@ -172,6 +172,6 @@ In this example, the text is highlighted with a yellow border.
 
 ## See also {#see-also}
 
-- [Tutorials — object recognition & detection](https://toloka.ai/docs/guide/tutorials/selection.html)
+- [Tutorials — object recognition & detection](../../guide/tutorials/selection.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
