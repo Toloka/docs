@@ -58,7 +58,7 @@
 
     {% if locale == "ru-ru" %}![](../_images/results/download-result.png){% endif %}
 
-- Используйте [API Толоки]({{ api-toloka-attachments }}) для скачивания файлов с ответами.
+- Используйте [API Толоки](../../api/concepts/attachments.md) для скачивания файлов с ответами.
 
 ## Решение проблем {#troubleshooting}
 

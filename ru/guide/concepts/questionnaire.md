@@ -56,7 +56,7 @@
 
           Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/U7pFn){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC4xu){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, пока не ответит на каждый из вопросов.
 
-          [Подробнее о настройке условий]({{ tb-conditions }}) в конструкторе шаблонов.
+          [Подробнее о настройке условий](../../template-builder/best-practices/conditions.md) в конструкторе шаблонов.
 
       1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 

@@ -88,7 +88,7 @@ When creating control tasks, enter only correct responses that answer the questi
 
 {% note tip %}
 
-If you set the overlap to 0 [via the API]({{ toloka-api-stop-assigning-tasks }}), the task won't be visible to Tolokers, and you won't have to delete it.
+If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overlap.md), the task won't be visible to Tolokers, and you won't have to delete it.
 
 {% endnote %}
 

@@ -12,7 +12,7 @@
 
 - {% if locale == "ru-ru" %}[Новые шаблоны в Толоке на Конструкторе]({{ toloka-blog-new-templates }}){% endif %}{% if locale == "en-com" %}[Toloka Digest]({{ toloka-blog-digest-en }}){% endif %}.
 
-Также советуем изучить [Справку конструктора шаблонов]({{ tb-quickstart }}).
+Также советуем изучить [Справку конструктора шаблонов](../../template-builder/index.md).
 
 ## Как составлять задания {#how}
 

@@ -42,7 +42,7 @@
 
           Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/U8ksm){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC555){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
 
-          [Подробнее о настройке условий]({{ tb-conditions }}) в конструкторе шаблонов.
+          [Подробнее о настройке условий](../../template-builder/best-practices/conditions.md) в конструкторе шаблонов.
 
       1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 

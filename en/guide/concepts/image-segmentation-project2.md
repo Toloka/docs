@@ -28,7 +28,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
             The Toloker won't be able to submit a response without selecting an area in an image.
 
-            For more information about the template and its settings, see [Object selection in an image]({{ tb-select-areas }}) in the Template Builder Help.
+            For more information about the template and its settings, see [Object selection in an image](../../template-builder/operations/select-areas.md) in the Template Builder Help.
 
         1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
 

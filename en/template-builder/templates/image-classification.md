@@ -86,6 +86,6 @@ This is a more complex example that compares the image with the results of a sea
 
 ## See also {#see-also}
 
-- [Tutorials — image classification](https://toloka.ai/docs/guide/tutorials/image-classification.html)
+- [Tutorials — image classification](../../guide/tutorials/image-classification.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

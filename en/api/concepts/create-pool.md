@@ -449,7 +449,7 @@ The output data field name. ||
 
 Required if "smart mixing" is used.
 
-Parameters for automatically creating a task suite ("smart mixing"). For more information about creating task suites, see the [Requester's guide](requester-pool-main). ||
+Parameters for automatically creating a task suite ("smart mixing"). For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
 || **mixer_config. real_tasks_count** | **integer \| required if**
 
 Required if "smart mixing" is used.

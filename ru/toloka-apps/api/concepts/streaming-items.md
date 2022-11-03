@@ -53,7 +53,7 @@ ID проекта.||
 
 {% note info %}
 
-При добавлении элементов без пакета данных обработка начинается сразу. По [статусу](https://toloka.ai/ru/docs/toloka-apps/api/concepts/quickstart-api.html#quickstart-api__check-items) каждого элемента можно узнать о завершении обработки.
+При добавлении элементов без пакета данных обработка начинается сразу. По [статусу](quickstart-api.md#quickstart-api__check-items) каждого элемента можно узнать о завершении обработки.
 
 {% endnote %}
 

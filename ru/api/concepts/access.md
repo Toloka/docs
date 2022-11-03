@@ -21,7 +21,7 @@ Authorization: OAuth <OAuth token>
 
 ## Получение OAuth-токена {#token}
 
-Для работы с API Толоки нужно получить OAuth-токен. [Зарегистрируйтесь]({{ requester-access }}) в Толоке и получите OAuth-токен в кабинете заказчика:
+Для работы с API Толоки нужно получить OAuth-токен. [Зарегистрируйтесь](../../guide/concepts/access.md) в Толоке и получите OAuth-токен в кабинете заказчика:
 
 - В песочнице для отладки заданий: [https://sandbox.toloka.yandex.com/ru/requester/profile/integration]({{ sandbox-requester-profile-integration }}).
 

@@ -36,9 +36,9 @@
 
           Подробнее в Справке конструктора шаблонов:
 
-          - [настройка условий]({{ tb-conditions }});
+          - [настройка условий](../../template-builder/best-practices/conditions.md);
 
-          - шаблон [Классификация изображений]({{ tb-image-classification }}).
+          - шаблон [Классификация изображений](../../template-builder/templates/image-classification.md).
 
       1. На панели **Конфигурация** замените строки кода с 19 по 28:
 

@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a task interface in the [Template Builder]({{ tb-quickstart }}).
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a task interface in the [Template Builder](../../template-builder/index.md).
 
 {% endnote %}
 

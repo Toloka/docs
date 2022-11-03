@@ -2,7 +2,7 @@
 
 {% note info %}
 
-This section describes how to add an area selection editor to an image using the HTML/JS/CSS tools. You can also try creating an [area selection]({{ tb-select-areas }}) editor in Template Builder.
+This section describes how to add an area selection editor to an image using the HTML/JS/CSS tools. You can also try creating an [area selection](../../../template-builder/operations/select-areas.md) editor in Template Builder.
 
 {% endnote %}
 

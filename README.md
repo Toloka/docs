@@ -1,6 +1,6 @@
 # Toloka documentation
 
-Welcome to the Toloka [docs](https://toloka.ai/docs/).
+Welcome to the Toloka [docs](https://toloka.ai/en/docs/).
 
 ## About the docs
 

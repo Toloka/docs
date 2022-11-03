@@ -89,4 +89,4 @@ The [helper.switch](../reference/helper.switch.md) component displays an interfa
 
 ## See also {#see-also}
 
-- [Tutorials — video classification](https://toloka.ai/docs/guide/tutorials/video-moderation.html)
+- [Tutorials — video classification](../../guide/tutorials/video-moderation.md)

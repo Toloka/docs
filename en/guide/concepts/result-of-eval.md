@@ -56,7 +56,7 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
     Select the responses you need and click . Download the archives in several batches. You can select and download no more than 100 responses at a time.
 
-- Use the [Toloka API]({{ api-toloka-attachments }}) to download files with responses.
+- Use the [Toloka API](../../api/concepts/attachments.md) to download files with responses.
 
 ## Troubleshooting {#troubleshooting}
 

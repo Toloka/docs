@@ -13,7 +13,7 @@ Read in the blog:
 {% if locale == "en-com" %}
 - [Toloka Digest]({{ toloka-blog-digest-en }}){% endif %}.
 
-You can also read the [Template Builder Help]({{ tb-quickstart }}).
+You can also read the [Template Builder Help](../../template-builder/index.md).
 
 ## How to create tasks {#how}
 

@@ -83,7 +83,7 @@ Create keyboard shortcuts. This will make it easier for Tolokers to complete you
 
 You can merge tasks that have identical input data. This allows you to save money if the same task was uploaded to different pools.
 
-[Learn more]({{ api-toloka-tasks-merge }}).
+[Learn more](../../api/concepts/tasks.md).
 
 #### Set the frequency of assigning control tasks.
 
@@ -91,12 +91,12 @@ Using the Toloka API, you can set the frequency of assigning control tasks. For 
 
 To do this, use the `golden_task_distribution_function` key.
 
-[Learn more]({{ api-toloka-create-pool }}).
+[Learn more](../../api/concepts/create-pool.md).
 
 #### Set up preliminary responses.
 
 In addition to **dynamic overlap**, use `baseline_solutions` to speed up the overlap. In `baseline_solutions`, preliminary responses are used, that is, data that simulates Toloker responses. For example, you need to determine what an image shows: a cat or a dog. Suppose your neural network determined that the image may show a dog with a probability of 80% and a cat with a probability of 40%. You can use the neural network's responses. Depending on the responses of Tolokers, the overlap will increase or remain unchanged.
 
-[Learn more]({{ api-toloka-create-task }}).
+[Learn more](../../api/concepts/create-task.md).
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

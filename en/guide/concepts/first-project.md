@@ -51,7 +51,7 @@ In the project, you'll customize an appearance of the tasks.
 
     1. Click **Show specifications** to see the generated input and output data fields.
 
-    To learn more, see the [Template Builder Help]({{ tb-quickstart }}).
+    To learn more, see the [Template Builder Help](../../template-builder/index.md).
 
 1. In the **Instructions for performers** section, edit the ready-made instructions if needed.
 
@@ -141,7 +141,7 @@ To upload a [file with tasks](../../glossary.md#tsv):
 
 - If you don't like Template Builder, try out the [HTML/JS/CSS editor](spec.md).
 
-- See the [Toloka API]({{ toloka-api }}) documentation to learn how to manage your projects via the API.
+- See the [Toloka API](../../api/index.md) documentation to learn how to manage your projects via the API.
 
 - If you have questions or problems, see the [Troubleshooting and support](../troubleshooting/troubleshooting.md) section.
 

@@ -38,7 +38,7 @@
 
     - Конструктор шаблонов
 
-      1. [Создайте интерфейс задания]({{ tb-quickstart }}).
+      1. [Создайте интерфейс задания](../../template-builder/index.md).
 
       1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 

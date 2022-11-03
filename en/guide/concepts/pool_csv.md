@@ -478,7 +478,7 @@ When you create a pool, the pool will have settings for the number of tasks per 
 
 {% cut "How do I add multiple "known_solutions" to a training task file?" %}
 
-You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API]({{ toloka-api-tasks }}) for that.
+You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API](../../api/concepts/tasks.md) for that.
 
 {% endcut %}
 

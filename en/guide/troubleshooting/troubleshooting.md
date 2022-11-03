@@ -1282,7 +1282,7 @@ The files with tasks are insensitive to the order of fields. Use your preferred 
 
 {% cut "How do I add multiple "known_solutions" to a file with a training task?" %}
 
-You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API]({{ toloka-api-tasks }}) for that.
+You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API](../../api/concepts/tasks.md) for that.
 
 {% endcut %}
 
@@ -1869,7 +1869,7 @@ Inactive pools are archived after one month. To see them, select **Archived** in
 
 {% cut "How do I find out the pool archiving parameters?" %}
 
-To find out the archiving date, get a [list of operations]({{ get-operations-list }}) with the `POOL.ARCHIVE` type. The response will contain the pool number and the archiving date. You can't get the method used to archive the pool via the API.
+To find out the archiving date, get a [list of operations](../../api/concepts/get-operations-list.md) with the `POOL.ARCHIVE` type. The response will contain the pool number and the archiving date. You can't get the method used to archive the pool via the API.
 
 If less than a month passed between the activity in the pool and its archiving, you can assume that the pool was archived manually, and if it's been one month or more, then it was archived automatically.
 

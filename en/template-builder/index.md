@@ -21,7 +21,7 @@ h3 {
 
 # Template Builder
 
-Use [Template Builder]({{ template-builder }}) to create an interface for your web page that you can reuse with different input data. For example, you can use Template Builder to create a task interface for labeling images in [Toloka]({{ toloka-requester-index-dita }}).
+Use Template Builder to create an interface for your web page that you can reuse with different input data. For example, you can use Template Builder to create a task interface for labeling images in [Toloka](../index.md).
 
 <div class="grid-container">
     <div class="grid-item">

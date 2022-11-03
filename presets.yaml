@@ -7,11 +7,7 @@ default:
   amazon-s3-tags: https://docs.aws.amazon.com/AmazonS3/latest/userguide/CostAllocTagging.html
   amazon-s3-ttl: https://aws.amazon.com/ru/blogs/aws/amazon-s3-object-expiration/
   android-app: https://play.google.com/store/apps/details?id=com.yandex.toloka.androidapp
-  api-toloka-attachments: https://toloka.ai/en/docs/api/concepts/attachments
-  api-toloka-create-pool: https://toloka.ai/en/docs/api/concepts/create-pool
-  api-toloka-create-task: https://toloka.ai/en/docs/api/concepts/create-task
-  api-toloka-tasks-merge: https://toloka.ai/en/docs/api/concepts/tasks#tasks__task-merge
-  appeal: https://we.toloka.ai/docs/web/priemka.html?lang=en#priemka__appeal
+  appeal: https://toloka.ai/tolokers/docs/web/priemka.html?lang=en#priemka__appeal
   audio-classification-preset: https://platform.toloka.ai/requester/templates?choosedCard=1JV9zP0e3eKSxlWVMePn
   audio-transcription-preset: https://platform.toloka.ai/requester/templates?choosedCard=EMeqje9erBrCPq7REDBB
   audit-preset: https://platform.toloka.ai/requester/templates?choosedCard=1DwQlJ0L6p4urdwxEM4k
@@ -36,7 +32,6 @@ default:
   customeragreement-usa: https://toloka.ai/legal/terms_of_offer_usa/
   developer-tools-safari: https://support.apple.com/en-gb/guide/safari/sfri20948/mac
   error-matrix: https://en.wikipedia.org/wiki/Confusion_matrix
-  get-operations-list: https://toloka.ai/en/docs/api/concepts/get-operations-list
   google-account: https://cloud.google.com/storage/docs/lifecycle
   google-cloud-about-bucket: https://cloud.google.com/storage/docs/naming-buckets?_ga=2.31332223.-1978071647.1627855306
   google-cloud-free-trial: https://cloud.google.com/free?
@@ -97,19 +92,9 @@ default:
   statistical-significance: https://en.wikipedia.org/wiki/Statistical_significance
   survey-other-preset: https://platform.toloka.ai/requester/templates?choosedCard=zrOz1vqLM52i562Ed0A5
   survey-toloka-preset: https://platform.toloka.ai/requester/templates?choosedCard=O5QMrPP48RPUyne5aaLV
-  tb-conditions: https://toloka.ai/en/docs/template-builder/best-practices/conditions
-  tb-create-specs: https://toloka.ai/en/docs/template-builder/operations/create-specs
-  tb-image-classification: https://toloka.ai/en/docs/template-builder/templates/image-classification
-  tb-quickstart: https://toloka.ai/en/docs/template-builder/
-  tb-select-areas: https://toloka.ai/en/docs/template-builder/operations/select-areas
-  tb-video-moderation: https://toloka.ai/en/docs/template-builder/templates/video-moderation
-  template-builder: https://toloka.ai/en/docs/template-builder/
   text-under-the-cut: https://codepen.io/Toloka_projects/pen/bzGQgX
   toloka: https://toloka.ai/
   toloka-ai: https://toloka.ai
-  toloka-api: https://toloka.ai/en/docs/api/
-  toloka-api-stop-assigning-tasks: https://toloka.ai/en/docs/api/concepts/set-min-task-overlap
-  toloka-api-tasks: https://toloka.ai/en/docs/api/concepts/tasks
   toloka-blog: https://toloka.ai/blog
   toloka-blog-digest-en: https://toloka.ai/blog/toloka-digest
   toloka-blog-edit-templates: https://yandex.ru/blog/toloka/edit-templates
@@ -123,15 +108,12 @@ default:
   toloka-instruction: https://toloka.ai/knowledgebase/instruction
   toloka-knowledge-base: https://toloka.ai/knowledgebase/interface
   toloka-linkedin: https://www.linkedin.com/company/toloka/
-  toloka-requester-concepts-yacloud-dita: https://toloka.ai/docs/guide/concepts/use-object-storage.html
-  toloka-requester-create-tsv: https://toloka.ai/docs/guide/concepts/pool_csv.html
-  toloka-requester-index-dita: https://toloka.ai/docs/guide/index.html
   toloka-slack: https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg
   toloka-stackoverflow: https://stackoverflow.com/questions/tagged/toloka
-  toloka-support: https://we.toloka.ai/docs/web/troubleshooting/troubleshooting.html/?lang=en
+  toloka-support: https://toloka.ai/tolokers/docs/web/troubleshooting/troubleshooting.html?lang=ru
   toloka-twitter: https://twitter.com/TolokaAI
   toloka-youtube: https://www.youtube.com/channel/UCGvsgFPVyOwuN8aJJbMem9A/videos
-  user-documentation: https://we.toloka.ai/docs/web/register.html?lang=en
+  user-documentation: https://toloka.ai/tolokers/docs/web/register.html?lang=en#register
   useragreement: https://toloka.ai/tolokers/legal/user-agreement
   users: https://platform.toloka.ai/requester/workers
   video-moderation-preset: https://platform.toloka.ai/requester/templates?choosedCard=KpP25Ep6DQMSwpLMZr55

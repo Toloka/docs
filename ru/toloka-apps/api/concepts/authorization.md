@@ -14,7 +14,7 @@ Authorization: OAuth <OAuth token>
 
 ## Получение OAuth-токена
 
-- [Зарегистрируйтесь](https://toloka.ai/ru/docs/guide/concepts/access.html) в Толоке.
+- [Зарегистрируйтесь](../../../guide/concepts/access.md) в Толоке.
 
 - Получите OAuth-токен в [кабинете заказчика](https://platform.toloka.ai/ru/requester/profile/integration).
 
