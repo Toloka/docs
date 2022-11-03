@@ -2,7 +2,7 @@
 
 {% note info %}
 
-To better understand how Toloka works, first try setting up tasks in the Toloka interface using the [Requester's guide](https://toloka.ai/docs/guide/concepts/main-steps.html) and then proceed to setting them up in the API.
+To better understand how Toloka works, first try setting up tasks in the Toloka interface using the [Requester's guide](../../guide/concepts/main-steps.md) and then proceed to setting them up in the API.
 
 {% endnote %}
 

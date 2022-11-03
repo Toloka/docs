@@ -16,4 +16,4 @@ POST | [/message-threads/<thread_id>/remove-from-folders](move-message.md) | Del
 
 ## Learn more {#learn-more}
 
-- [Getting and sending messages](https://toloka.ai/docs/guide/concepts/messaging.html#private)
+- [Getting and sending messages](../../guide/concepts/messaging.md#private)

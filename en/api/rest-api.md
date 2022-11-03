@@ -38,19 +38,19 @@ Get access to projects with the help of Toloka API. Manage projects, pool, uploa
     <div class="grid-item">
         <h3>Get started with Toloka</h3>
         <ul>
-            <li><a href="https://toloka.ai/docs/guide/concepts/overview.html">How does Toloka work?</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/access.html">Registration</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/first-project.html">Your first project</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/data-security.html">Data security</a></li>
+            <li><a href="../guide/concepts/overview">How does Toloka work?</a></li>
+            <li><a href="../guide/concepts/access">Registration</a></li>
+            <li><a href="../guide/concepts/first-project">Your first project</a></li>
+            <li><a href="../guide/concepts/data-security">Data security</a></li>
         </ul>
     </div>
     <div class="grid-item">
         <h3>Projects</h3>
         <ul>
-            <li><a href="https://toloka.ai/docs/guide/concepts/main-steps.html">Starting and tuning a project</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/pool-main.html">Managing a pool</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/pool.html">Adding tasks to a pool</a></li>
-            <li><a href="https://toloka.ai/docs/guide/concepts/result-of-eval.html">Receiving responses</a></li>
+            <li><a href="../guide/concepts/main-steps">Starting and tuning a project</a></li>
+            <li><a href="../guide/concepts/pool-main">Managing a pool</a></li>
+            <li><a href="../guide/concepts/pool">Adding tasks to a pool</a></li>
+            <li><a href="../guide/concepts/result-of-eval">Receiving responses</a></li>
         </ul>
     </div>
 </div>

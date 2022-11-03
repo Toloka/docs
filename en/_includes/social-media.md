@@ -1,3 +1,3 @@
-## Follow us in social media
+## Follow us in social media {#socialmedia}
 
 [![Toloka on Facebook](../../_images/SocialNetwork/facebook.svg)]({{ toloka-facebook }}) [![Toloka on YouTube](../../_images/SocialNetwork/youtube.svg)]({{ toloka-youtube }}) [![Toloka in Slack](../../_images/SocialNetwork/slack.svg)]({{ toloka-slack }}) [![Toloka in LinkedIn](../../_images/SocialNetwork/linkedin.svg)]({{ toloka-linkedin }}) [![Toloka in Twitter](../../_images/SocialNetwork/twitter.svg)]({{ toloka-twitter }}) [![Toloka on GitHub](../../_images/SocialNetwork/github.svg)]({{ toloka-github }}) [![Toloka on StackOverflow](../../_images/SocialNetwork/StackOverflow.svg)]({{ toloka-stackoverflow }}) [![Toloka Blog](../../_images/SocialNetwork/blog.svg)]({{ toloka-blog }})

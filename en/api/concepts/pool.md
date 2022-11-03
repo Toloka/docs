@@ -31,4 +31,4 @@ PATCH | [/pools/pool_id>](set-priority-pool.md) | Changes the priority of a pool
 
 ## Learn more {#links}
 
-- [Description of the pool in the Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html)
+- [Description of the pool in the Requester's guide](../../guide/concepts/pool-main.md)

@@ -6,7 +6,7 @@ Gets the operation log.
 
 You can get logs for asynchronous operations (`async_mode = true`). Such operations run in the background.
 
-Logs are available only for the last month. To get the logs for an earlier period, contact [support](https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html).
+Logs are available only for the last month. To get the logs for an earlier period, contact [support](../../guide/troubleshooting/troubleshooting.md).
 
 You can get the operation log:
 

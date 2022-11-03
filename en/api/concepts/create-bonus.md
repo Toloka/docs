@@ -6,7 +6,7 @@ Issues rewards to Tolokers.
 
 The size of the reward can range between $0.001 and $100 per Toloker at a time.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can send a maximum of 10,000 requests of this kind per day.
 

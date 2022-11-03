@@ -4,7 +4,7 @@
 
 Sets the skill value.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can send a maximum of 100,000 requests of this kind per day.
 

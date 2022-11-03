@@ -25,52 +25,52 @@ h3 {
 <div class="grid-container">
     <div class="grid-item">
         <h2>Getting started</h2>
-        <p><a href="https://toloka.ai/docs/guide/concepts/overview.html">How does Toloka work?</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/unwanted.html">What tasks can't be placed in Toloka?</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/access.html">Registration</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/first-project.html">Your first project</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/data-security.html">Data security</a></p>
+        <p><a href="guide/concepts/overview">How does Toloka work?</a></p>
+        <p><a href="guide/concepts/unwanted">What tasks can't be placed in Toloka?</a></p>
+        <p><a href="guide/concepts/access">Registration</a></p>
+        <p><a href="guide/concepts/first-project">Your first project</a></p>
+        <p><a href="guide/concepts/data-security">Data security</a></p>
     </div>
     <div class="grid-item">
         <h2>Tutorials</h2>
-        <p><a href="https://toloka.ai/docs/guide/tutorials/image-classification.html">Images</a></p>
-        <p><a href="https://toloka.ai/docs/guide/tutorials/video-moderation.html">Video</a></p>
-        <p><a href="https://toloka.ai/docs/guide/tutorials/transcript-audio.html">Audio</a></p>
-        <p><a href="https://toloka.ai/docs/guide/tutorials/content-moderation.html">Texts</a></p>
-        <p><a href="https://toloka.ai/docs/guide/tutorials/internet-search.html">Data enrichment</a></p>
-        <p><a href="https://toloka.ai/docs/guide/tutorials/questionnaire-toloka.html">Surveys</a></p>
-        <p><a href="https://toloka.ai/docs/guide/tutorials/walk.html">Field tasks</a></p>
+        <p><a href="guide/tutorials/image-classification">Images</a></p>
+        <p><a href="guide/tutorials/video-moderation">Video</a></p>
+        <p><a href="guide/tutorials/transcript-audio">Audio</a></p>
+        <p><a href="guide/tutorials/content-moderation">Texts</a></p>
+        <p><a href="guide/tutorials/internet-search">Data enrichment</a></p>
+        <p><a href="guide/tutorials/questionnaire-toloka">Surveys</a></p>
+        <p><a href="guide/tutorials/walk">Field tasks</a></p>
     </div>
     <div class="grid-item">
         <h2>Projects</h2>
-        <p><a href="https://toloka.ai/docs/guide/concepts/project.html">Create projects</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/pool-main.html">Manage pools</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/task_upload.html">Post tasks</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/result-of-eval.html">Get results</a></p>
+        <p><a href="guide/concepts/project">Create projects</a></p>
+        <p><a href="guide/concepts/pool-main">Manage pools</a></p>
+        <p><a href="guide/concepts/task_upload">Post tasks</a></p>
+        <p><a href="guide/concepts/result-of-eval">Get results</a></p>
     </div>
     <div class="grid-item">
         <h2>Task interface</h2>
         <p><a href="template-builder/">Template Builder</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/spec.html">HTML/JS/CSS editor</a></p>
+        <p><a href="guide/concepts/spec">HTML/JS/CSS editor</a></p>
         <p></p>
         <h2>Toloka settings</h2>
-        <p><a href="https://toloka.ai/docs/guide/concepts/users.html">Users</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/nav.html">Skills</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/budget.html">Profile</a></p>
+        <p><a href="guide/concepts/users">Users</a></p>
+        <p><a href="guide/concepts/nav">Skills</a></p>
+        <p><a href="guide/concepts/budget">Profile</a></p>
     </div>
     <div class="grid-item">
         <h2>Tips and recommendations</h2>
-        <p><a href="https://toloka.ai/docs/guide/concepts/sandbox.html">Sandbox</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/cloud-storage.html">Data storage</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/control.html">Quality control rules</a></p>
-        <p><a href="https://toloka.ai/docs/guide/concepts/train.html">Training Tolokers</a></p>
+        <p><a href="guide/concepts/sandbox">Sandbox</a></p>
+        <p><a href="guide/concepts/cloud-storage">Data storage</a></p>
+        <p><a href="guide/concepts/control">Quality control rules</a></p>
+        <p><a href="guide/concepts/train">Training Tolokers</a></p>
     </div>
     <div class="grid-item">
         <h2>Troubleshooting and support</h2>
-        <p><a href="https://toloka.ai/docs/guide/concepts/frequent-customer-errors.html">Common requesters' mistakes</a></p>
-        <p><a href="https://toloka.ai/docs/guide/troubleshooting/troubleshooting.html">All questions on one page</a></p>
-        <p><a href="https://toloka.ai/docs/guide/glossary.html">Glossary</a></p>
-        <p><a href="https://toloka.ai/docs/guide/troubleshooting/support.html">Support</a></p>
+        <p><a href="guide/concepts/frequent-customer-errors">Common requesters' mistakes</a></p>
+        <p><a href="guide/troubleshooting/troubleshooting">All questions on one page</a></p>
+        <p><a href="glossary">Glossary</a></p>
+        <p><a href="guide/troubleshooting/support">Support</a></p>
     </div>
 </div>
 

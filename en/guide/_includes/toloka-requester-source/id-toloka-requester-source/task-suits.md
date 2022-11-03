@@ -1,0 +1,1 @@
+Tasks are shown to Tolokers in suites. A suite is a single page with multiple tasks. Define how many tasks to include per suite:

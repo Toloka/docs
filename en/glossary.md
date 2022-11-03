@@ -10,7 +10,7 @@ Action (Template Builder) {#action}
 
 Active Tolokers {#active-tolokers}
 
-: Tolokers who viewed or completed tasks during the last hour and match the [filters](#filters) specified in the [pool](#pool) settings. This is the number of Tolokers who will see your task if you publish it now.
+: Tolokers with access to the [pool](#pool) who took tasks during the last hour.
 
 Archive pool {#archive-pool}
 
@@ -36,7 +36,7 @@ Certified partners {#certified-partners}
 
 : Companies that take on the launch and implementation of your project and help you process the results. These companies have already integrated crowdsourcing into their business processes and offer excellent solutions.
 
-Checking completed tasks
+Checking completed tasks {#checking-completed-tasks}
 
 : Manually checking the responses received by the requester. The requester accepts or rejects the responses. Rejected responses aren't paid for.
 
@@ -64,12 +64,12 @@ Control task {#control-task}
 
 : A task that contains the correct response. Control tasks are used to monitor the quality of the Toloker's responses.
 
-  For example, you can track the percentage of correct responses and block Tolokers who respond poorly. To do this, use the [Control tasks](https://toloka.ai/docs/guide/concepts/goldenset.html) rule.
+  For example, you can track the percentage of correct responses and block Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) rule.
 
   {% note tip %}
 
-  - Add [at least 1% of control tasks](https://toloka.ai/docs/guide/troubleshooting/pool-setup.html#quality-control__how-many-control-tasks) to the pool.
-  - Design control tasks so that different versions of correct responses are used with the same frequency. [Learn more](https://toloka.ai/docs/guide/concepts/task-markup-by-yourself.html#task-markup-by-yourself__answer_distribution)
+  - Add [at least 1% of control tasks](guide/troubleshooting/pool-setup.md#quality-control__how-many-control-tasks) to the pool.
+  - Design control tasks so that different versions of correct responses are used with the same frequency. [Learn more](guide/concepts/task-markup-by-yourself.md#task-markup-by-yourself__answer_distribution)
 
   {% endnote %}
 
@@ -93,7 +93,7 @@ Dynamic overlap (incremental relabeling, IRL) {#dynamic-overlap}
 
 Dynamic pricing {#dynamic-pricing}
 
-: Allows you to additionally set other prices that depend on the Toloker's [skill](#skill). For example, to pay more to those who have a higher skill. [Learn more](https://toloka.ai/docs/guide/concepts/dynamic-pricing.html)
+: Allows you to additionally set other prices that depend on the Toloker's [skill](#skill). For example, to pay more to those who have a higher skill. [Learn more](guide/concepts/dynamic-pricing.md)
 
 ### E
 
@@ -132,7 +132,7 @@ Filters {#filters}
 
 : Criteria for choosing Tolokers. For example, you can select only Tolokers who speak English or have a certain skill.
 
-  Filters are used in the [pool](#pool) settings on the [Users](https://platform.toloka.ai/requester/workers) page and for [sending messages](https://toloka.ai/docs/guide/concepts/messaging.html) to a group of users. [Learn more](https://toloka.ai/docs/guide/concepts/filters.html)
+  Filters are used in the [pool](#pool) settings on the [Users](https://platform.toloka.ai/requester/workers) page and for [sending messages](guide/concepts/messaging.md) to a group of users. [Learn more](guide/concepts/filters.md)
 
 ### G
 
@@ -184,13 +184,13 @@ Interested users {#interested-users}
 
 Keeping the task order {#keep-task-order}
 
-: Task suites in the [pool](#pool) are distributed in the same order as they are in the uploaded [file](#tsv). The tasks within each suite are shuffled. [Learn more](https://toloka.ai/docs/guide/concepts/save-order.html)
+: Task suites in the [pool](#pool) are distributed in the same order as they are in the uploaded [file](#tsv). The tasks within each suite are shuffled.
 
 ### L
 
 List of target languages {#target-languages}
 
-: Used in the [Translations](https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__how-it-works) section if there is no source language.
+: Used in the [Translations](guide/concepts/project-languages.md#project-languages__how-it-works) section if there is no source language.
 
   Display order:
 
@@ -244,15 +244,15 @@ Project {#project}
   - Parameters for input fields.
   - The visual appearance of tasks.
 
-Project template {#project-template}
+Project preset {#project-template}
 
-: The template contains pre-configured [input and output data](#input-output-data) fields and the [task interface](#task-interface), which you can edit.
+: The preset contains description, instruction, pre-configured [input and output data](#input-output-data) fields and the [task interface](#task-interface), which you can edit.
 
 ### Q
 
 Quality control {#quality-control}
 
-: Quality control lets you get more accurate responses and restrict access to tasks for cheating Tolokers. Quality control consists of rules that are independent from each other. The quality control block allows you to set rules and configure them. [Learn more](https://toloka.ai/docs/guide/concepts/control.html)
+: Quality control lets you get more accurate responses and restrict access to tasks for cheating Tolokers. Quality control consists of rules that are independent from each other. The quality control block allows you to set rules and configure them. [Learn more](guide/concepts/control.md)
 
 Quality control rule {#quality-control-rule}
 
@@ -297,7 +297,7 @@ Selective majority vote check {#selective-majority-vote-check}
 
 Skill {#skill}
 
-: An assessment of the Toloker's quality of task completion on a scale of 0 to 100. The skill can be calculated automatically (for example, based on correct responses to [control tasks](#control-task)), or assigned manually. Skills are used for Toloker selection in a [pool](#pool). [Learn more](https://toloka.ai/docs/guide/concepts/nav.html)
+: An assessment of the Toloker's quality of task completion on a scale of 0 to 100. The skill can be calculated automatically (for example, based on correct responses to [control tasks](#control-task)), or assigned manually. Skills are used for Toloker selection in a [pool](#pool). [Learn more](guide/concepts/nav.md)
 
 Skipping tasks (quality control rule) {#skipping-tasks}
 
@@ -325,7 +325,7 @@ Task markup {#task-markup}
 
 : Task markup lets you add correct responses and hints to the tasks, as well as change task types. You can transform a [general task](#general-task) into a [control task](#control-task) by adding the correct response, or into a [training task](#training-task) by adding the correct response and a hint. Task markup is available only for training pools and pools uploaded with “[smart mixing](#smart-mixing)”.
 
-  [Learn more about task markup](https://toloka.ai/docs/guide/concepts/task_markup.html)
+  [Learn more about task markup](guide/concepts/task_markup.md)
 
 Task suite {#task-suite}
 
@@ -341,7 +341,7 @@ Toloker rating {#toloker-rating}
 
 : The Toloker's rating reflects the quality of the Toloker's responses to tasks. It takes into account responses to [control tasks](#control-task), bans, and periods without work. The rating is calculated as the weighted average value for the last few weeks. So the rating can “suddenly” decrease or increase.
 
-Training
+Training {#training}
 
 : A main [pool](#pool) that consists only of [training tasks](#training-task) and can have zero cost.
 
@@ -351,7 +351,7 @@ Training pool {#training-pool}
 
 : A [pool](#pool) of zero-price tasks for training Tolokers. Training tasks contain correct responses and hints that are shown if the Toloker answers incorrectly.
 
-  To improve the quality of results, you can add a training pool and choose only those Tolokers who pass training successfully. [Learn more](https://toloka.ai/docs/guide/concepts/train.html)
+  To improve the quality of results, you can add a training pool and choose only those Tolokers who pass training successfully. [Learn more](guide/concepts/train.md)
 
 Training skill {#training-skill}
 
@@ -359,8 +359,8 @@ Training skill {#training-skill}
 
 : There is only one training skill for the entire project. If you create new training pools, they will use the same skill.
 
-  - [Learn more about skills](https://toloka.ai/docs/guide/concepts/nav.html)
-  - [Learn more about training pools](https://toloka.ai/docs/guide/concepts/train.html)
+  - [Learn more about skills](guide/concepts/nav.md)
+  - [Learn more about training pools](guide/concepts/train.md)
 
 Training task {#training-task}
 
@@ -368,7 +368,7 @@ Training task {#training-task}
 
   Training tasks can be used in zero-price [training pools](#training-pool) to choose Tolokers who pass training.
 
-  They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and ban Tolokers who respond poorly. To do this, use the [Control tasks](https://toloka.ai/docs/guide/concepts/goldenset.html) rule.
+  They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and ban Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) rule.
 
 TSV file with tasks {#tsv}
 

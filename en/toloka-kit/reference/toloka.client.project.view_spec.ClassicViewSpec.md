@@ -16,7 +16,7 @@ ClassicViewSpec(
 A classic view specification defined with HTML, CSS and JS.
 
 
-For more information, see [Toloka Requester's guide](https://toloka.ai/docs/guide/)
+For more information, see [Toloka Requester's guide](../../guide/concepts/overview.md)
 
 ## Parameters Description
 

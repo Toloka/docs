@@ -13,4 +13,4 @@ DELETE | [/user-restrictions/<ban_id>](ban-delete.md) | Removes a ban.
 
 ## Learn more {#links}
 
-- [Description of bans in the Requester's guide](https://toloka.ai/docs/guide/concepts/ban.html)
+- [Description of bans in the Requester's guide](../../guide/concepts/ban.md)

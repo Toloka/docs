@@ -1,0 +1,1 @@
+Чтобы выйти на страницу {% if locale == "ru-ru" %}**Проекты**{% endif %}{% if locale == "en-com" %}**Projects**{% endif %}, нажмите {% if locale == "ru-ru" %}**Завершить**{% endif %}{% if locale == "en-com" %}**Finish**{% endif %}.

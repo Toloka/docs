@@ -1,0 +1,13 @@
+common:
+  - from: /api/concepts/download-tasks.md
+    to: /api/concepts/upload-tasks.md
+
+ru:
+  - from: /api/concepts/download-tasks.md
+    to: /api/concepts/upload-tasks.md
+
+en:
+  - from: /concepts/photo-org.md
+    to: /tutorials/monitoring-objects-in-organizations.md
+  - from: /concepts/field-poll.md
+    to: /tutorials/questionnaire-toloka.md

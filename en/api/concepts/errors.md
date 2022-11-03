@@ -74,7 +74,7 @@ The following HTTP status codes describe error classes, with examples of common 
 }
 ```
 
-#### 500: An unexpected error in the service. To fix it, [contact support](https://toloka.ai/docs/guide/troubleshooting/support.html#troubleshooting__help) and specify the request_id.
+#### 500: An unexpected error in the service. To fix it, [contact support](../../guide/troubleshooting/support.md#troubleshooting__help) and specify the request_id.
 
 ```json
 {

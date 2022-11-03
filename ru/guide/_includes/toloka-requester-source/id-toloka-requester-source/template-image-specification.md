@@ -1,0 +1,1 @@
+Выберите пресет {% if locale == "ru-ru" %}**Классификация изображений**{% endif %}{% if locale == "en-com" %}**Image classification**{% endif %}.

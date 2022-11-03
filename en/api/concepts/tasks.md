@@ -25,7 +25,7 @@ PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) | Stops a
 
 ## Merging tasks {#task-merge}
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 - You can only merge tasks with identical input data. The order of fields in the JSON object must also match.
 - You can only merge tasks in open pools. If a new pool got a task that was previously completed in a pool that has been closed or archived, the tasks won't be merged.
@@ -44,10 +44,10 @@ The response to the task received will be automatically assigned to another tas
 
 The response will be recorded with a zero price, and the overlap will be reduced by one.
 
-This option is only available for general tasks without  non-automatic acceptance that were uploaded using ["smart mixing"]({{ requester-task-upload }}).
+This option is only available for general tasks without non-automatic acceptance that were uploaded using ["smart mixing"](../../guide/concepts/task_upload.md).
 
 To activate task merging in a  project, specify `"assignments_automerge_enabled": true` in the [project](project.md).
 
 ## Learn more {#links}
 
-For more information about creating task suites, see the [Requester's guide]({{ requester-pool-main }}).
+For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md).

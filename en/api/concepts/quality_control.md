@@ -21,4 +21,4 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 
 ## Learn more {#links}
 
-- [Quality control rules in the Requester's guide](https://toloka.ai/docs/guide/check-performers.html)
+- [Quality control rules in the Requester's guide](../../guide/concepts/check-performers.md)
