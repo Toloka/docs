@@ -108,111 +108,111 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-{% cut "Create pool from preset" %}
+{% list tabs %}
 
-1. If there are no pools in the project, click {% if locale == "en-com" %}**Create pool from preset for Survey on third-party platform**{% endif %} on {% if locale == "en-com" %}**Pools**{% endif %} tab. Otherwise, click {% if locale == "en-com" %}Add a pool → From Survey on third-party platform preset{% endif %} at right side of the project page.
+- Create a pool from the preset
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+    1. If there are no pools in the project, click {% if locale == "en-com" %}**Create pool from preset for Survey on third-party platform**{% endif %} on the {% if locale == "en-com" %}**Pools**{% endif %} tab. Otherwise, click {% if locale == "en-com" %}**Add a pool → From Survey on third-party platform preset**{% endif %} at the right side of the project page.
 
-1. Check pre-configured filters and correct them if necessary in the {% if locale == "en-com" %}**Audience**{% endif %} section.
+    1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
 
-1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
-
-1. Check control rules and correct them if necessary in the {% if locale == "en-com" %}**Quality control**{% endif %} section.
-
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %} and check values of the parameters in this section.
-
-1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
-    
-    {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
-
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
-
-{% endcut %}
-
-{% cut "Create pool from scratch" %}
-
-1. If there are no pools in the project, click {% if locale == "en-com" %}**Create new pool from scratch**{% endif %}. Otherwise, click {% if locale == "en-com" %}Add a pool → From scratch{% endif %} at right side of the project page.
-
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
-
-1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
+    1. Under {% if locale == "en-com" %}**Audience**{% endif %}, check the pre-configured filters and correct them if necessary.
 
     1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
 
-    1. Select Tolokers who knows the language of your survey:
+    1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, check the quality control rules and correct them if necessary.
 
-        [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png)
+    1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %} and check the values of the parameters in this section.
 
-        Additionally, you can select Tolokers based on their location, age, gender, and other parameters. Use the {% if locale == "en-com" %}**Add filter**{% endif %} button and configure the filters you need.
+    1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+        
+        {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
+    1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 
-    1. Filter out Tolokers who have already taken one survey. It helps prevent the situation when a Toloker completes your survey several times.
+- Create a pool from scratch
 
-        1. Click the {% if locale == "en-com" %}**Add skill**{% endif %} button. Enter the skill name and description, and leave the skill not public.
+    1. If there are no pools in the project, click {% if locale == "en-com" %}**Create new pool from scratch**{% endif %} on the {% if locale == "en-com" %}**Pools**{% endif %} tab. Otherwise, click {% if locale == "en-com" %}**Add a pool → From scratch**{% endif %} at the right side of the project page.
 
-            [![Create a pool. Add skill](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png =405x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png)
+    1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
 
-        1. Click {% if locale == "en-com" %}**Add filter → My skills**{% endif %} and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
+    1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-            [![Create a pool. My skills](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png)
+        1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
 
-        You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
+        1. Select Tolokers who knows the language of your survey:
 
-1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+            [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png)
 
-    1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
+            Additionally, you can select Tolokers based on their location, age, gender, and other parameters. Use the {% if locale == "en-com" %}**Add filter**{% endif %} button and configure the filters you need.
 
-        {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
+        1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
-    1. To filter out Tolokers who complete tasks too fast, edit the pre-configured **Fast responses** rule. Specify the following values:
+        1. Filter out Tolokers who have already taken one survey. It helps prevent the situation when a Toloker completes your survey several times.
 
-        [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png)
+            1. Click the {% if locale == "en-com" %}**Add skill**{% endif %} button. Enter the skill name and description, and leave the skill not public.
 
-        These settings mean that a Toloker who completes a task suite in less than 15 seconds will be blocked and won’t be able to access your tasks anymore.
+                [![Create a pool. Add skill](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png =405x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png)
 
-        A task suite is a page with a number of tasks. In survey projects, a task suite must contain only one task (one survey).
+            1. Click {% if locale == "en-com" %}**Add filter → My skills**{% endif %} and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
 
-        {% note tip %}
+                [![Create a pool. My skills](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png)
 
-        To determine the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} value, complete your survey and record the time.
+            You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
+
+    1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+
+        1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
+
+            {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
+
+        1. To filter out Tolokers who complete tasks too fast, edit the pre-configured **Fast responses** rule. Specify the following values:
+
+            [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png)
+
+            These settings mean that a Toloker who completes a task suite in less than 15 seconds will be blocked and won’t be able to access your tasks anymore.
+
+            A task suite is a page with a number of tasks. In survey projects, a task suite must contain only one task (one survey).
+
+            {% note tip %}
+
+            To determine the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} value, complete your survey and record the time.
+
+            {% endnote %}
+
+        1. Delete the pre-configured {% if locale == "en-com" %}**Majority vote**{% endif %} rule.
+
+        1. To get the required number of responses, add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. Enter the following values:
+
+            [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png)
+
+            This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
+
+        1. Add the rule which assigns a skill after one submitted survey. As you’ve set the filter to select Tolokers without this skill in step 3.4, the rule allows you to filter out Tolokers who have already completed your survey.
+
+            [![Create a pool. Submitted responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png)
+
+        1. To automatically accept tasks from those who entered a completion code correctly, use the {% if locale == "en-com" %}**Control tasks**{% endif %} rule:
+
+            [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png)
+
+            The rule will work if you specify the correct completion code in the file with tasks. You will do that later in this tutorial.
+
+    1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
+
+        {% note warning %}
+
+        Time per task suite should be long enough to read the instructions, wait for the task data to load, give the answers on the third-party website, and copy and paste the completion code. Otherwise, Tolokers won’t be able to submit your tasks.
 
         {% endnote %}
 
-    1. Delete the pre-configured {% if locale == "en-com" %}**Majority vote**{% endif %} rule.
+    1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+        
+        {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. To get the required number of responses, add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. Enter the following values:
+    1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 
-        [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png)
-
-        This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
-
-    1. Add the rule which assigns a skill after one submitted survey. As you’ve set the filter to select Tolokers without this skill in step 3.4, the rule allows you to filter out Tolokers who have already completed your survey.
-
-        [![Create a pool. Submitted responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png)
-
-    1. To automatically accept tasks from those who entered a completion code correctly, use the {% if locale == "en-com" %}**Control tasks**{% endif %} rule:
-
-        [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png)
-
-        The rule will work if you specify the correct completion code in the file with tasks. You will do that later in this tutorial.
-
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
-
-    {% note warning %}
-
-    Time per task suite should be long enough to read the instructions, wait for the task data to load, give the answers on the third-party website, and copy and paste the completion code. Otherwise, Tolokers won’t be able to submit your tasks.
-
-    {% endnote %}
-
-1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
-    
-    {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
-
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
-
-{% endcut %}
+{% endlist %}
 
 ## Upload data {#upload}
 
