@@ -148,8 +148,6 @@ Use this filter if you need additional guarantees when selecting Tolokers. Your 
 
 You can select Tolokers with or without a [skill](../../glossary.md#skill) and filter them by skill value.
 
-В качестве фильтра вы можете использовать [глобальные навыки](nav-cross-project.md), чтобы набрать исполнителей, которые хорошо справляются с определенными типами заданий. Для этого выберите **Добавить фильтр → Навыки → Выбрать глобальный навык**, после чего укажите ограничение по выбранному навыку в добавленном фильтре.
-
 You can use [global skills](nav-cross-project.md) as a filter to recruit Tolokers who are good at certain types of tasks. Do that by selecting **Add filter → Skills → Choose global skill**, and then set a skill limit in the filter.
 
 Examples of using a skill filter:
