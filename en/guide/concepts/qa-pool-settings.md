@@ -10,17 +10,29 @@ Quality control rules that you set in the [project](../../glossary.md#project) a
 
 To set up quality control:
 
-1. Go to the pool editing page
+1. Go to the pool editing page.
 
 1. If you already have a pool with the appropriate quality control settings, you can copy it along with the audience settings. To do this, go to {% if locale == "en-com" %}**Tolokers filter**{% endif %} and click {% if locale == "en-com" %}**Copy settings from...**{% endif %} and then {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
 
 1. Under {% if locale == "en-com" %}**Quality Control**{% endif %}, choose the rules you want to use.
 
-    If you aren't sure what quality control rules you need, select a quality control preset with default settings.
+    If you aren't sure which quality control rules you need, use a preset with default settings.
 
-1. Make settings for the rules you added. Below is a list of rules with links to detailed information about the rule settings.
+1. Make settings for the rules you added. For more information, see the [List of rules](#id_z4l_prs_2lb).
 
-1. Save the pool.
+1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+
+{% note info %}
+
+If you already have a pool with the quality control settings you need, you can copy it along with the audience settings:
+
+- In the {% if locale == "en-com" %}**Audience**{% endif %} block, click the {% if locale == "en-com" %}**Copy from another pool**{% endif %} button.
+
+- Select a project and pool.
+
+- Click the {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} button.
+
+{% endnote %}
 
 ## List of rules {#id_z4l_prs_2lb}
 
@@ -54,7 +66,7 @@ To set up quality control:
 
 ## What's next {#what_next}
 
-- [Add tasks to the pool](pool.md)
+- [Add tasks](pool.md) to the pool.
 - Learn more about how to set up a pool:
 
     - [Setting up pricing](dynamic-pricing.md).
@@ -94,11 +106,11 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 
     - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
 
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
+    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control and training task responses to use** field empty.
 
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
+    This option is available only for skills on control tasks. To use it, fill in the **Recent control and training task responses to use** field in pool quality control rules.
 
 {% endcut %}
 
@@ -108,7 +120,7 @@ Yes, of course — you can use the same skill for different projects. But most o
 
 {% endcut %}
 
-{% cut "I set up quality control, then I copied my user requirements. All my quality control settings were deleted and replaced with the copied settings. Is that normal?" %}
+{% cut "I set up quality control, after which I copied my Toloker requirements. All my quality control settings were deleted and replaced with the copied settings. Is that normal?" %}
 
 Yes. When you copy the filter and quality control settings, the settings you previously added manually are overwritten. You should see a warning about this in the copy settings window.
 
@@ -120,7 +132,7 @@ Yes, if they can access both pools, they can do both of them. To restrict access
 
 {% endcut %}
 
-{% cut "Have I understood correctly that if I use `set the the skill value = 1` with the `percentage of accepted responses >= 75` and `10 recent values to use`, for every 8 correctly completed tasks out of 10 the Toloker is given 1 skill point?" %}
+{% cut "Am I correct in understanding that if I use `set the the skill value = 1` with a `percentage of accepted responses >= 75` and `10 recent values to use`, Tolokers will get one skill point for every eight tasks completed correctly out of ten?" %}
 
 No, this is incorrect. With these settings, each time a rule condition is met, the Toloker gets `skill = 1`. To change the skill value in the process of task review, you need a “multi-step” rule, which has multiple identical rules with different values of **Total reviewed responses**.
 
@@ -132,11 +144,11 @@ Yes, the [fast response](quick-answers.md) settings specify the time per task su
 
 {% endcut %}
 
-{% cut "How do I test users to determine which kinds of tasks they do better and assign them relevant tasks?" %}
+{% cut "How do I test Tolokers to see which kinds of tasks they do better and make sure that's what I have them do?" %}
 
 You can add a [training pool](train.md) to test your Tolokers. Based on the test results, assign skills to the Tolokers for the tasks they do best.
 
-Then open your pools only to the Tolokers that have a certain skill: use [filters](filters.md) for this.
+Then limit your pools to Tolokers with a certain skill using [filters](filters.md) for this.
 
 {% endcut %}
 
@@ -148,9 +160,9 @@ Another option for selecting Tolokers for a project of this type is assignment r
 
 {% endcut %}
 
-{% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. So I try to use `3` in the ‘Recent control task responses to use‘ field, but I get an error that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
+{% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. I'm trying to put `3` in the **Recent control and training task responses to use** field, but I'm getting an error telling me that value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
-The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
+The **Recent control and training task responses to use** field is for the number of recent responses from Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
 {% endcut %}
 
@@ -175,21 +187,21 @@ Each control task is shown to the Toloker only once. If you use smart mixing, yo
 There shouldn't be too few pages available. Otherwise:
 
 - You won't be able to correctly evaluate the quality of the Toloker's responses.
-- The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
+- The Toloker won't be motivated to complete such tasks because they'll spend a lot of time studying instructions but won't earn much.
 
 {% cut "Example" %}
 
-#### A large pool with 1% of control tasks (good)
+#### A large pool with 1% control tasks (good)
 
-There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, a user can complete up to 100 suites.
+There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 100 suites.
 
 #### A small pool with 1% control tasks (bad)
 
-There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can only complete 1 suite.
+There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can only complete 1 suite.
 
 #### A small pool with 10% control tasks (good)
 
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
+There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 10 suites.
 
 {% endcut %}
 
@@ -199,7 +211,7 @@ If there are few control tasks in the open pool, [add new control tasks](../trou
 
 {% cut "What for" %}
 
-In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
+In a large pool with few control tasks, there might be a situation when a Toloker who has completed a lot of tasks in the project stops getting new task suites. This happens when the Toloker completes all control tasks in the pool.
 
 {% note info %}
 
@@ -215,7 +227,7 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
 
-As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
+As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control and training task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
 
 {% endcut %}
 
@@ -227,9 +239,9 @@ Your [training](train.md) and control tasks have the same project specification.
 
 {% cut "Isn't the exam a regular pool that I pay for? How does it differ from a regular pool?" %}
 
-An exam pool contains only control tasks. It's usually small and used for checking how well users learned to do your tasks after they read the instructions and completed the [training](additionals-q.md#selection). Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero.
+An exam pool contains only control tasks. They're usually small, only intended to make sure Tolokers know how to complete your tasks after reading the instructions and completing the [training](additionals-q.md#selection). Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero.
 
-Based on the results of responses to control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `MySkill = 80 or = Is missing`. You don't have to create an exam. For simple tasks, the training pool provides enough practice, but many requesters also use exams.
+Based on the results of the control tasks, you can assign a skill to Tolokers and then use it in the main pool as a filter. For example, `MySkill = 80 or = Is missing`. You don't have to create an exam. For simple tasks, the training pool provides enough practice, but many requesters also use exams.
 
 {% endcut %}
 
@@ -251,15 +263,15 @@ Smart mixing is set up when you upload tasks to the pool. After creating a pool,
 
 Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
-In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool user requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
+In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. Here are the requirements you should use for Tolokers in the exam pool: `<skill being tested for> < 80 or = none>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers perform your task.
 
 {% endcut %}
 
-{% cut "I created a training pool with one task containing a hint. The Toloker fails to complete the task on the first attempt, but finally succeeds. The Toloker gets the skill `0`. How do I grant to the Toloker access to my tasks? The minimum required level that you can set is `10`." %}
+{% cut "I created a training pool with one task containing a hint. An Toloker makes a mistake on their first attempt but eventually succeeds. The Toloker gets the skill `0`. How do I grant to the Toloker access to my tasks? The minimum required level that you can set is `10`." %}
 
 Technically, if you have only one task in your training pool, you don't have this option. The skill will be either `0` or `100`. We recommend that you add several tasks, or at least 2 so that the Toloker will practice on the first task and will be able to do the second task correctly. In this case, you can admit users to your main pool starting from the skill value of `50`.
 
-You can also create a training pool based on the main pool. Assign a skill using the [Control tasks](goldenset.md) rule: in this case, you can admit users with any skill level to your main pool, even if the value is zero. But we don't advise giving tasks to people who failed training.
+You can also create a training pool based on the main pool. Assign a skill using the [Control tasks](goldenset.md) rule, in which case, you can admit Tolokers to your main pool with any skill level, zero included. But we don't advise giving tasks to people who failed training.
 
 {% endcut %}
 
@@ -299,19 +311,19 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 
 {% cut "I set up a rule to ban users after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
 
-Indeed, this rule is probably too strict. Even the most careful user can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban users who regularly fail captcha checks in Toloka.
+Indeed, this rule is probably too strict. Even the most attentive Tolokers make mistakes, so you should probably relax the rule. Besides requester-specific bans, we have system processes that ban Tolokers who regularly fail captcha checks in Toloka.
 
 {% endcut %}
 
 {% cut "If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?" %}
 
-If the Toloker already got paid for the tasks, the money can't be refunded to you.
+If the Toloker already got paid for the tasks, you can't get your money back.
 
 {% endcut %}
 
-{% cut "If I ban users from my project so that everyone can complete a maximum of one task, are the Tolokers notified of the ban?" %}
+{% cut "If I ban Tolokers from my project so that everyone can complete a maximum of one task, will they be notified?" %}
 
-No, the Tolokers are unaware of the ban.
+No, Tolokers don't know when they're blocked.
 
 {% endcut %}
 
@@ -319,7 +331,7 @@ No, the Tolokers are unaware of the ban.
 
 No. The responses of these Tolokers aren't automatically excluded from the final results file.
 
-But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned users to other Tolokers using the [Re-completion of assignments from banned users](restore-task-overlap.md) rule.
+But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned Tolokers to other Tolokers using the [Re-completion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endcut %}
 
@@ -373,7 +385,7 @@ Average/High
 
 {% cut "I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?" %}
 
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the “range” specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
+The percentage of correct responses is based on the total number of captchas completed by the Toloker within the “range” specified in the **Recent control and training task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
 
 {% endcut %}
 
@@ -393,9 +405,9 @@ All responses to the task are taken into account. If one response differs from t
 
 {% endcut %}
 
-{% cut "What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?" %}
+{% cut "Which format should I use to review results if I'm looking to filter out mismatching Tolokers based on the "Majority vote"?" %}
 
-To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](mvote.md) to the pool.
+To assign a skill to or ban Tolokers based on the majority vote, add a relevant [rule](mvote.md) to the pool.
 
 Don't forget to enable **Keep task order** in the pool parameters. Majority vote is used in the projects with preset options (radio buttons or checkboxes). This rule won't apply to the text entry or file upload fields.
 
@@ -411,9 +423,9 @@ Possible reasons:
 
 - You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
-- The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
+- The filters you set are too strict. For example, a strong restriction on a certain skill that most Tolokers don't have.
 
-- Too many users are banned. Ease the quality control rules.
+- Too many Tolokers are banned. Ease the quality control rules.
 
 {% endcut %}
 

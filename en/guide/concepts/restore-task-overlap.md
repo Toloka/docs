@@ -18,7 +18,7 @@ This rule can increase the cost of the pool.
 
 {% endnote %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using non-automatic acceptance. They can be reassigned by setting up the corresponding rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [non-automatic acceptance](../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
 
 To download the responses of users who are not blocked:
 

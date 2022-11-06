@@ -38,13 +38,13 @@ Toloka lets you know that something is wrong with the project. The blank screen 
 
 {% cut "Are there any easy ways to assign a certain user a skill in Toloka, even if the Toloker didn't do any tasks (like I can do in the Sandbox)?" %}
 
-In the main Toloka version, you can only assign a skill to users who have completed at least one of your tasks. There is no option to assign a skill to an arbitrary user. To limit the audience of users who will see your project, use [filters](../concepts/filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
+In the main Toloka version, you can only assign a skill to Tolokers who have completed at least one of your tasks. There is no option to assign a skill to an arbitrary user. To limit the audience of users who will see your project, use [filters](../concepts/filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
 
 {% endcut %}
 
-{% cut "Can I somehow limit the number of users that can take tasks from the pool at the same time?" %}
+{% cut "Can I somehow limit the number of Tolokers that can take tasks from the pool at the same time?" %}
 
-Tasks from an open pool are available to every user that matches your pool [filters](../concepts/filters.md). You can restrict access, like by using a skill.
+Tasks from an open pool are available to every Toloker that matches your pool [filters](../concepts/filters.md). You can restrict access, like by using a skill.
 
 {% endcut %}
 
@@ -56,7 +56,7 @@ The validity period of the training skills is controlled by the **Retry after** 
 
 - Didn't complete any tasks linked to training during this period.
 
-Your users will need to be trained again.
+Your Tolokers will need to be trained again.
 
 {% endcut %}
 
@@ -68,7 +68,7 @@ Tasks in pools are automatically available in the web version of Toloka and the 
 
 {% cut "Can I add an arbitrary user as a Toloker?" %}
 
-If the Toloker mismatches your preset filter, they can't see the task. You can only remove the restricting filter from the pool. You can test the task in the [Sandbox](../concepts/sandbox.md) by adding the desired user to your trusted list.
+If the user mismatches your preset filter, they can't see the task. You can only remove the restricting filter from the pool. You can test the task in the [Sandbox](../concepts/sandbox.md) by adding the desired user to your trusted list.
 
 {% endcut %}
 
@@ -86,23 +86,23 @@ Tasks in pools are automatically available in the web version of Toloka and the 
 
 {% cut "Can I select specific Tolokers for my tasks because I liked their results in my previous pools?" %}
 
-You can assign a skill to these people based on their performance in the previous pools. Use this skill as a [filter](../concepts/filters.md) in the new pool.
+You can assign a skill to these Tolokers based on their performance in the previous pools. Use this skill as a [filter](../concepts/filters.md) in the new pool.
 
 {% endcut %}
 
-{% cut "How do I set up a filter so that the pool is available to users who don't have a specific skill (like a “spammer”)?" %}
+{% cut "How do I set up a filter so that the pool is available to Tolokers who don't have a specific skill (like a “spammer”)?" %}
 
 Specify this skill as a [filter](../concepts/filters.md), but leave the value field empty (this is equivalent to absence of the skill).
 
 {% endcut %}
 
-{% cut "How can I raise the skill value for a user, if they already have the skill?" %}
+{% cut "How can I raise the skill value for a Toloker, if they already have the skill?" %}
 
 If the Toloker already has a given skill, you can't add the same skill to them from the task review interface. You can open the Toloker's profile and edit the skill value.
 
 {% endcut %}
 
-{% cut "Can Toloka users see that they were assigned a skill?" %}
+{% cut "Can Tolokers see that they were assigned a skill?" %}
 
 If it's a public or training skill, they see it and they get a message about it.
 
@@ -120,7 +120,7 @@ Requesters can't see the full details about specific Tolokers. So you can't see 
 
 {% endcut %}
 
-{% cut "How do I automatically assign skills based on user responses to my questions?" %}
+{% cut "How do I automatically assign skills based on Toloker responses to my questions?" %}
 
 You can do that using the [Control tasks](../concepts/goldenset.md) rule.
 
