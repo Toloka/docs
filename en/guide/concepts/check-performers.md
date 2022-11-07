@@ -1,6 +1,6 @@
 # How to check Tolokers: quality control rules
 
-Use quality control rules to get better results for tasks and restrict access to unscrupulous Tolokers. Rules are configured for both projects as a whole (the **Quality control** tab) and individual pools.
+Use quality control rules to get better results for tasks and restrict access to fraudulent users. Rules are configured for both projects as a whole (the **Quality control** tab) and individual pools.
 
 ## Monitoring Toloker actions {#control-actions}
 
@@ -28,7 +28,7 @@ Use the [Captcha](captcha.md) rule to protect from robots. In Toloka, a captcha 
 
 #### Limit on available tasks
 
-Limits are also useful when you need as many different Tolokers as possible, for example, to collect data for statistics, run surveys, or pick the best version of a logo. Another case is personal descriptions for a [dating service](https://rb.ru/opinion/chat-bot-dataset/). If texts are all written by the same person, they are likely to turn out monotonous and boring.
+Limits are also useful when you need as many different Tolokers as possible. For example, to collect data for statistics, run surveys, or pick the best version of a logo. Another case is personal descriptions for a [dating service](https://rb.ru/opinion/chat-bot-dataset/). If texts are all written by the same person, they are likely to turn out monotonous and boring.
 
 You can limit the number of tasks in the pool per Toloker or set a limit on daily earnings for your project. Use the [Submitted responses](submitted-answers.md) and [Earnings](income.md) rules.
 
@@ -46,7 +46,7 @@ Mix the control questions in with the general tasks. They should make up at leas
 
 ![](../_images/cp-goldenset.png)
 
-The skill filters will remove anyone who makes a critical number of errors. Pay highly skilled Tolokers (scoring 90+) more. That will encourage everyone to try harder.
+The skill filters will remove anyone who makes a critical number of errors. Pay highly skilled Tolokers more. That will encourage everyone to try harder.
 
 #### Majority vote
 
