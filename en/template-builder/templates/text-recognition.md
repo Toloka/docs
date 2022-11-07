@@ -2,9 +2,9 @@
 
 For this type of project, you can use the **Text recognition from an image (OCR)** preset.
 
-This preset is designed to identify and transcribe text in images for training text recognition algorithms or to verify and fine-tuning the output of your OCR models.
+This preset is used for interpreting information from a photo. 
 
-Take a look at the example: the labeling interface includes an image, matching text, and a response field. The Toloker will be able to select the option **No business** if there is no business in the photo, the photo is of bad quality, the name is not fully visible, the photo didn't load.
+Take a look at the example: the labeling interface includes an image, a response field, and a checkbox for reporting on problems with an image.
 
 Note that validation and task layout are already configured in this Template Builder sample code.
 
@@ -33,7 +33,7 @@ Note that validation and task layout are already configured in this Template Bu
 
 - [view.text](../reference/view.text.md): Displays a block with text.
 
-  If you need to display text with formatting, use the [view.markdown](../reference/view.markdown.md) component.
+  If you need formatted text, use the [view.markdown](../reference/view.markdown.md) component.
 
   {% cut "Show code" %}
 
@@ -49,7 +49,7 @@ Note that validation and task layout are already configured in this Template Bu
   ```
   {% endcut %}
 
-- A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md): hides the response field if **No business** is selected.
+- A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md): Displays the response field when the checkbox is not selected.
 
   {% cut "Show code" %}
 
@@ -86,9 +86,9 @@ Note that validation and task layout are already configured in this Template Bu
 
   {% endcut %}
 
-- [field.text](../reference/field.checkbox.md): Adds a field for entering a short text.
+- [field.text](../reference/field.text.md): Adds a field for entering a short text.
 
-  Use the [conditions.required](../reference/conditions.md) component inside the `validation` property to check that the Toloker filled in the text field before sending the response to the task.
+  Use the [conditions.required](../reference/conditions.md) component inside the `validation` property to check that a Toloker filled in the text field.
 
   {% cut "Show code" %}
 
@@ -109,7 +109,7 @@ Note that validation and task layout are already configured in this Template Bu
 
   {% endcut %}
 
-- [field.checkbox](../reference/field.checkbox.md): Adds a checkbox control.
+- [field.checkbox](../reference/field.checkbox.md): Adds a checkbox.
 
   {% cut "Show code" %}
 
@@ -155,33 +155,43 @@ To add a detailed description to the task, use the `label` property of the [view
 {% cut "Show code" %}
 
 ```json
-  {
-    "type": "view.image",
-    "label": "Look at the photo and find a sign with the business name.",
-    "noBorder": true,
-    "rotatable": true,
-    "url": {
-      "type": "data.input",
-      "path": "image"
-    }
+{
+  "type": "view.image",
+  "label": "Look at the photo and find the business name",
+  "noBorder": true,
+  "rotatable": true,
+  "url": {
+    "type": "data.input",
+    "path": "image"
   }
-  ```
+}
+```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/srUYLJFX3fhJvr)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/a0VMTL3d3jJo3L)
 
 
-## Add a selection option
+## Add a clarifying question
 
-Ask the Tolokers to clarify their decision if they have labeled **No business**: add the [field.radio-group](../reference/field.radio-group.md) so they can select one of the suggested options.
+To ask Tolokers to clarify their choice if they selected the **No business** checkbox, add the [helper.if](../reference/helper.if.md) component which contains [field.radio-group](../reference/field.radio-group.md).
 
 {% cut "Show code" %}
 
 ```json
-  {
+{
+  "type": "helper.if",
+  "condition": {
+    "type": "condition.equals",
+    "data": {
+      "type": "data.output",
+      "path": "not_found"
+     },
+    "to": true
+  },
+  "then": {
     "type": "field.radio-group",
-    "label": "To clarify your decision, select one of the options:",
+    "label": "To clarify your choice, select one of the options:",
     "options": [
       {
         "label": "There is no business in the photo",
@@ -192,7 +202,7 @@ Ask the Tolokers to clarify their decision if they have labeled **No business**:
         "value": "bad_quality"
       },
       {
-        "label": "The name isn not fully visible",
+        "label": "The name is not fully visible",
         "value": "not_fully_visible"
       },
       {
@@ -202,41 +212,19 @@ Ask the Tolokers to clarify their decision if they have labeled **No business**:
     ],
     "data": {
       "type": "data.output",
-      "path": "path"
+      "path": "option"
     },
     "validation": {
       "type": "condition.required",
       "hint": "Select one option"
     }
   }
-  ```
+}
+```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/6Dj-dc5n3iax5d)
-
-<!--
-One possible solution may be to add a **None of the above** option to the radio button group. Add the [field.textarea](../reference/field.textarea.md) that would allow Tolokers to leave comments with their own version, if this option is selected.
-
-{% cut "Show code" %}
-
-```json
-  {
-    "type": "field.textarea",
-    "label": "Comments",
-    "placeholder": "Enter text",
-    "data": {
-      "type": "data.output",
-      "path": "comment"
-    }
-  }
-  ```
-
-{% endcut %}
-
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7JAxeo6B3gfh6r)
-
--->
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3wBl1V853jE3CS)
 
 ## Add a layout {#add-layout}
 
@@ -252,13 +240,71 @@ In this example, the text is highlighted with a blue border.
     "theme": "info",
     "content": {
       "type": "view.text",
-      "content": "Look at the photo and find a sign with the business name."
+      "content": "Look at the photo and find the business name"
     }
   }
   ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/lN3DPZ5X3fkZyX)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/xWtq-Edz3jJsjE)
+
+## Add a field for comments {#add-text-area}
+
+To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "field.textarea",
+  "label": "Comments",
+  "placeholder": "Enter text",
+  "data": {
+    "type": "data.output",
+    "path": "comment"
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/HHLW3YsU3jE99S)
+
+## Add keyboard shortcuts {#add-shortcuts}
+
+Add keyboard shortcuts to rotate and zoom in images in the [plugin.hotkeys](../reference/plugin.hotkeys.md) configuration.
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "plugin.hotkeys",
+  "l": {
+    "type": "action.rotate",
+    "view": {
+      "$ref": "view.items.0"
+    },
+    "payload": "left"
+  },
+  "r": {
+    "type": "action.rotate",
+    "view": {
+      "$ref": "view.items.0"
+    },
+    "payload": "right"
+  },
+  "q": {
+    "type": "action.open-close",
+    "view": {
+      "$ref": "view.items.0"
+    }
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/UlOimVK33jEESZ)
 
 {% include [contact-support](../_includes/contact-support.md) %}

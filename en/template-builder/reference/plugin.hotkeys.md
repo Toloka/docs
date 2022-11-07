@@ -2,7 +2,7 @@
 
 You can use this to set keyboard shortcuts for actions.
 
-[Learn more about hotkeys](../best-practices/hotkeys. dita).
+[Learn more about hotkeys](../best-practices/hotkeys.md).
 
 ## Component properties {#properties}
 
