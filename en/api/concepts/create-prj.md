@@ -242,17 +242,19 @@ Only for output data of the `coordinates` type: populate the field with the Tolo
 || Parameter | Overview ||
 || **markup** | **string**
 
-For more information, see the [Requester's guide](../../guide/concepts/overview.md). ||
+HTML markup of the task.
+
+For more information, see the [HTML block](../../guide/concepts/spec.md#html) section. ||
 || **script** | **string**
 
-JavaScript interface for the task.
+JavaScript code for the task.
 
-For more information, see the [Requester's guide](../../guide/concepts/overview.md). ||
+For more information, see the [JavaScript block](../../guide/concepts/spec.md#js) section. ||
 || **styles** | **string**
 
-CSS task interface.
+CSS styles of the interface.
 
-For more information, see the [Requester's guide](../../guide/concepts/overview.md). ||
+For more information, see the [CSS block](../../guide/concepts/spec.md#css) section. ||
 || **settings** | **object \| required**
 
 Whether to display standard UI elements in the task. ||
