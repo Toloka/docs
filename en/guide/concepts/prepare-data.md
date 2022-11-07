@@ -58,7 +58,7 @@ To add a file to the [task interface](spec.md):
 
   1. In the `"path"` property, enter the structure `/<proxy name>/<file name>.<type>` with your data.
 
-  [View an example with image classification](https://clck.ru/SSbzF).
+  [View an example with image classification](https://clck.ru/SSbzF)
 
   {% note tip %}
 
@@ -78,7 +78,34 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  You can also add links to files in the `/<proxy name>/<file name>.<type>` format to the input data and refer to them in the configuration. Don't forget that array elements start from zero:
+  You can also add links to files in the `/<proxy name>/<file name>.<type>` format to the input data and refer to them in the configuration.
+
+  {% cut "Single image" %}
+
+  ```json
+  {
+  "type": "view.image",
+  "url": {
+    "type": "@yandex-toloka/helper.proxy",
+    "path": {
+      "type": "data.input",
+      "path": "image"
+      }
+    }
+  }
+  ```
+
+  [View example in the sandbox](https://ya.cc/t/Hh04Pei73jKDq4)
+
+  {% endcut %}
+
+  {% cut "Multiple images" %}
+
+  {% note tip %}
+
+  Don't forget that array elements start from zero.
+
+  {% endnote %}
 
   ```json
   {
@@ -93,7 +120,9 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/SP3Bd).
+  [View example in the sandbox](https://clck.ru/SP3Bd)
+
+  {% endcut %}
 
 - HTML/JS/CSS interface editor
 
@@ -105,9 +134,9 @@ To add a file to the [task interface](spec.md):
 
       Add an image in the HTML block using one of the methods:
 
-      - Using the [Picture](t-components/img.md): `{{[img](usecases-keys.md#img) src=(proxy [image](usecases-keys.md#image))}}` component.
+      - Using the [Picture](t-components/img.md): `{{img src=(proxy image)}}` component.
 
-      - Using an HTML tag: `<img src="{{proxy [image](usecases-keys.md#image)}}">`.
+      - Using an HTML tag: `<img src="not_var{{proxy image}}">`.
 
       {% endcut %}
 
@@ -115,15 +144,15 @@ To add a file to the [task interface](spec.md):
 
       Add the HTML tag:
 
-      - To insert an audio recording in the player: `<audio src="{{proxy [audio](usecases-keys.md#image)}}" controls>`,
+      - To insert an audio recording in the player: `<audio src="not_var{{proxy audio}}" controls>`,
 
-      - To embed a video recording in the player: `<video src="{{proxy [video](usecases-keys.md#image)}}" controls>`.
+      - To embed a video recording in the player: `<video src="not_var{{proxy video}}" controls>`.
 
       {% endcut %}
 
       {% cut "Editor for image area selection" %}
 
-      Add [the](t-components/image-annotation.md#adding_editor)`{{[field type="image-annotation"](usecases-keys.md#image-annotation) name="result" src=(proxy [image](usecases-keys.md#image))}}` component.
+      Add [the](t-components/image-annotation.md#adding_editor)`{{field type="image-annotation" name="result" src=(proxy image)}}` component.
 
       {% endcut %}
 
