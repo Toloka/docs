@@ -22,7 +22,7 @@ Use the [Skipped assignments](skipped-assignments.md) rule to restrict access to
 
 #### Captcha
 
-Use the [Captcha](captcha.md) rule to protect yourself from robots. In Toloka, a captcha is shown every 10 assignments. If assignments are completed quickly and captchas get in the way, they can be shown every 20 assignments: specify low captcha frequency in the pool settings.
+Use the [Captcha](captcha.md) rule to protect from robots. In Toloka, a captcha is shown every 10 assignments. If assignments are completed quickly and captchas get in the way, they can be shown every 20 assignments: specify low captcha frequency in the pool settings.
 
 ![](../_images/cp-captcha.png)
 
@@ -42,7 +42,7 @@ Results from conscientious Tolokers should be checked, too. In Toloka, this can 
 
 Tolokers complete tasks by selecting one of multiple possible answers. To check the quality in this type of project, use the [Control tasks](goldenset.md) rule. This involves adding questions where you define the correct response.
 
-Mix the control questions in with the main tasks. They should make up at least 1% of the total tasks. Assign Tolokers a skill level depending on how many answers they get right.
+Mix the control questions in with the general tasks. They should make up at least 1% of the total tasks. Assign Tolokers a skill level depending on how many answers they get right.
 
 ![](../_images/cp-goldenset.png)
 

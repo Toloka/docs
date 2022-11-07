@@ -58,7 +58,7 @@ Add this filter to select users of certain operating systems.
 
 {% note tip %}
 
-If you're looking to select MacOS, Windows, and Linux, the most popular operating systems for PCs, add the {% if locale == "en-com" %}**Operating system**{% endif %} filter. Use the `=` operator to set the value as `Windows`. Use the button ![Button Add](../_images/add.svg) to add the second value, `MacOS`. Then click ![Button Add](../_images/add.svg) again and set the third value, `Linux`.
+If you're looking to select MacOS, Windows, and Linux, the most popular operating systems for PCs, add the {% if locale == "en-com" %}**Operating system**{% endif %} filter. Use the `=` operator to set the value as `Windows`. Use the ![Button Add](../_images/add.svg) button to add the second value, `MacOS`. Then click ![Button Add](../_images/add.svg) again and set the third value, `Linux`.
 
 {% endnote %}
 
