@@ -17,8 +17,6 @@ items:
     items:
       - name: Какие задания нельзя размещать в Толоке
         href: guide/concepts/unwanted.md
-      - name: Защитите свои данные
-        href: guide/concepts/protect-your-data.md
       - name: Частые ошибки заказчиков
         href: guide/concepts/frequent-customer-errors.md
       - name: Как сэкономить
