@@ -1,14 +1,14 @@
 # How to check Tolokers: quality control rules
 
-Quality control rules regulate task completion and Toloker access. They are set up both for a project as a whole on the **Quality control** tab and for each pool individually.
+Use quality control rules to get better results for tasks and restrict access to fraudulent users. Rules are configured for both projects as a whole (the **Quality control** tab) and individual pools.
 
 ## Monitoring Toloker actions {#control-actions}
 
-If your project has a lot of similar tasks, you'll need to protect it from fake users (robots) and cheaters.
+If your project has a lot of similar tasks, you'll need to protect it from fake Tolokers (robots) and cheaters.
 
 #### Limiting fast responses
 
-Configure the [Fast responses](quick-answers.md) rule to filter out cheating Tolokers who don't handle tasks carefully and complete them too quickly. You've tried doing tasks and you know that each task takes at least 15 seconds. You should suspend Tolokers who submit three out of ten assignments in a row faster than the control time.
+Use the [Fast responses](quick-answers.md) rule to weed out Tolokers who perform tasks too quickly and carelessly. You've tried doing tasks and you know that each task takes at least 15 seconds. You should suspend Tolokers who submit three out of ten assignments in a row faster than the control time.
 
 ![](../_images/cp-quick_answers.png)
 
@@ -16,21 +16,21 @@ Configure the [Fast responses](quick-answers.md) rule to filter out cheating Tol
 
 Another “optimization” technique that cheaters use is skipping certain assignments. They pick out the ones that seem easier to them, while other Tolokers reliably complete all the assignments they receive. However, both get paid in the same way.
 
-Configure the [Skipped assignments](skipped-assignments.md) rule to avoid this situation. It will restrict access for those Tolokers who skip too many assignments, like more than three in a row.
+Use the [Skipped assignments](skipped-assignments.md) rule to restrict access to Tolokers who skip several pages of tasks in a row.
 
 ![](../_images/cp-skipped_assignments.png)
 
 #### Captcha
 
-To protect against robots, use the Captcha rule. In Toloka, a captcha is shown every 10 assignments. If assignments are completed quickly and captchas get in the way, they can be shown every 20 assignments: specify low captcha frequency in the pool settings.
+Use the [Captcha](captcha.md) rule to protect from robots. In Toloka, a captcha is shown every 10 assignments. If assignments are completed quickly and captchas get in the way, they can be shown every 20 assignments: specify low captcha frequency in the pool settings.
 
 ![](../_images/cp-captcha.png)
 
 #### Limit on available tasks
 
-Limits are also useful when you need as many different Tolokers as possible, like to collect statistics for a survey or choosing the best version of a logo. Another case is personal descriptions for a [dating service](https://rb.ru/opinion/chat-bot-dataset/). If texts are all written by the same person, they are likely to turn out monotonous and boring.
+Limits are also useful when you need as many different Tolokers as possible. For example, to collect data for statistics, run surveys, or pick the best version of a logo. Another case is personal descriptions for a [dating service](https://rb.ru/opinion/chat-bot-dataset/). If texts are all written by the same person, they are likely to turn out monotonous and boring.
 
-You can engage more participants if you limit the number of assignments “per Toloker”. You can do this by setting a limit on the number of tasks available to each Toloker or a limit on daily earnings in a single project. Use the [Submitted responses](submitted-answers.md) and [Earnings](income.md) rules.
+You can limit the number of tasks in the pool per Toloker or set a limit on daily earnings for your project. Use the [Submitted responses](submitted-answers.md) and [Earnings](income.md) rules.
 
 ![](../_images/cp-submitted_answers.png)
 
@@ -40,13 +40,13 @@ Results from conscientious Tolokers should be checked, too. In Toloka, this can 
 
 #### Control tasks
 
-In some tasks, Tolokers are given a choice of two or more response options. To check the quality in this type of project, use the [Control tasks](goldenset.md) rule. This involves adding questions where you define the correct response.
+Tolokers complete tasks by selecting one of multiple possible answers. To check the quality in this type of project, use the [Control tasks](goldenset.md) rule. This involves adding questions where you define the correct response.
 
-Mix the control questions in with the general tasks. They should make up at least 1% of the total tasks. Based on the number of errors, you'll evaluate Tolokers and assign them a skill level from 0 to 100.
+Mix the control questions in with the general tasks. They should make up at least 1% of the total tasks. Assign Tolokers a skill level depending on how many answers they get right.
 
 ![](../_images/cp-goldenset.png)
 
-Those who make a critical number of errors will be automatically excluded from your tasks by skill filters. Pay more to highly skilled Tolokers (who score 90 and higher) as an incentive. This encourages Tolokers to try harder on tasks.
+The skill filters will remove anyone who makes a critical number of errors. Pay highly skilled Tolokers more. That will encourage everyone to try harder.
 
 #### Majority vote
 
@@ -60,7 +60,7 @@ Use the percentage of matching responses to assign skill levels, control access 
 
 #### Review results
 
-Tasks where each Toloker has to give a unique response, like recording audio, taking a photo, or writing a text, are reviewed by requesters themselves or by other Tolokers. Poor-quality responses are rejected.
+For tasks that aren't multiple-choice, the customer or other Tolokers check the answers. They might include recording audio, taking pictures, or writing something. Poor-quality responses are rejected.
 
 Use the [Review results](reviewing-assignments.md) rule to control Tolokers' access to tasks. The platform calculates the percentage of responses accepted and rejected for each Toloker. Those who often made mistakes will stop getting tasks.
 
@@ -68,25 +68,25 @@ Use the [Review results](reviewing-assignments.md) rule to control Tolokers' acc
 
 ## Recompletion of rejected assignments {#revision-results}
 
-Quality control rules let you minimize the consequences of errors. In Toloka, you can choose to resend for recompletion just individual rejected assignments, or all responses from Tolokers who made too many mistakes.
+Quality control rules let you minimize the consequences of errors. Toloka lets you send individual tasks back to Tolokers to be redone or have them redo all their work if they make too many mistakes.
 
 #### Rejected tasks
 
 For example, you can use Toloka to improve speech recognition algorithms. Tolokers listen to a series of 5–10-second recordings and make a transcription of each of them in order to convert speech to text.
 
-Some of the recordings are transcribed incorrectly. Don't accept incorrect responses. Set up the [Processing rejected and accepted assignments](reassessment-after-accepting.md) rule. The platform will automatically send incorrect transcriptions to other Tolokers for revision.
+In some cases, they get it wrong. Use the [Processing rejected and accepted assignments](reassessment-after-accepting.md) rule to automatically have Tolokers review each other's work.
 
 ![](../_images/cp-reassessment_after_accepting.png)
 
 #### Responses from banned Tolokers
 
-If a user makes mistakes too many times, the platform bans them from taking more tasks. But the responses that they have already provided remain in the database and may get into the final dataset. Send these assignments for recompletion.
+When Tolokers make too many mistakes, the platform bans them from taking on more tasks. But the responses that they have already provided remain in the database and may get into the final dataset. Send these assignments for recompletion.
 
-The [Recompletion of assignments from banned users](restore-task-overlap.md) rule is helpful here. It increases the cost of labeling, but protects the dataset from possible errors.
+The [Recompletion of assignments from banned users](restore-task-overlap.md) rule is helpful here. While the cost will go up, there will be fewer errors.
 
 ![](../_images/cp-restore_task_overlap.png)
 
-As soon as a Toloker loses access to a project, like due to a low skill level, Toloka automatically sends all their completed assignments to other Tolokers for re-labeling.
+When Tolokers are blocked, the tasks they've completed are sent to other Tolokers.
 
 ## Combination of methods {#combination-methods}
 
