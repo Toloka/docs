@@ -2,7 +2,7 @@
 
 The Toloka API sends event notifications that may contain sensitive data. It's important to prevent data leaks and ensure reliable data protection. To do this, make sure that requests are being sent through the Toloka API.
 
-An additional header – **Toloka-Signature** – is used to confirm that the Toloka API is the source of notifications. The header is generated from request parameters. The **HMAC Sha256** hashing algorithm is used for creating the signature.
+An additional header — **Toloka-Signature** — is used to confirm that the Toloka API is the source of notifications. The header is generated from request parameters. The **HMAC Sha256** hashing algorithm is used for creating the signature.
 
 ## Creating a secure subscription {#secure-subscription}
 

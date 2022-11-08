@@ -72,7 +72,7 @@ If the Toloker mismatches your preset filter, they can't see the task. You can o
 
 {% endcut %}
 
-{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30-45 years old”." %}
+{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30–45 years old”." %}
 
 You can do that. To select Tolokers for the pool, use [filters](../concepts/filters.md).
 
@@ -160,7 +160,7 @@ The settings for [quality control](../../glossary.md#quality-control) rules depe
 
 {% cut "How many control tasks do I need to add?" %}
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
+We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
 
 {% cut "Why's that?" %}
 

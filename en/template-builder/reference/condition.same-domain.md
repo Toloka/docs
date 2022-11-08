@@ -4,14 +4,14 @@ Checks if the link that you entered belongs to a specific site. If it does, retu
 
 Links must be specified in full, including the protocol (http, https, ftp).
 
-The `www.` subdomain is ignored when checking, meaning that links to `www.example.ru` and `example.ru` are considered to be the same.
+The `www.` subdomain is ignored when checking, meaning that links to `www.example.com` and `example.com` are considered to be the same.
 
 [![image](../_images/buttons/view-example.svg)](https://clck.ru/apq6v)
 
 How to pass a link address:
 
 - Specify it explicitly as a string.
-- [Get the value from your data](../operations/work-with-data. dita).
+- [Get the value from your data](../operations/work-with-data.md).
 - Refer to another element using `$ref`.
 - Use [helpers](helpers.md) and [conditions](conditions.md) to get the value.
 

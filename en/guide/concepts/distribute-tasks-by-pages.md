@@ -61,7 +61,7 @@ After uploading the tasks with **smart mixing** you will be able to [mark up tas
 
 #### How many control tasks do I need to add?
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
+We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
 
 {% cut "Why's that?" %}
 

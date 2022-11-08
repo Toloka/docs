@@ -197,7 +197,7 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
           If you chose {% if locale == "en-com" %}**Payment method → PayPal**{% endif %}, you will be redirected to the PayPal site for payment.
 
-          If you chose {% if locale == "en-com" %}**Payment method → Banking card in dollars – non residents Switzerland) – US dollars**{% endif %}, enter your bank card information and complete the payment. The money will be converted at your bank's rate if the card currency is not dollars.
+          If you chose {% if locale == "en-com" %}**Payment method → Banking card in dollars — non residents Switzerland) — US dollars**{% endif %}, enter your bank card information and complete the payment. The money will be converted at your bank's rate if the card currency is not dollars.
 
           {% note info %}
 

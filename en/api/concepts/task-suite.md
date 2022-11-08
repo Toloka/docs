@@ -1,6 +1,6 @@
 # Overview
 
-A task suite is a set of tasks grouped on a single web page. If the tasks are simple, you can add 10-20 tasks per suite. Don't make task suites too long because it slows down the loading speed for Tolokers.
+A task suite is a set of tasks grouped on a single web page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down the loading speed for Tolokers.
 
 To create a task suite, upload JSON containing:
 

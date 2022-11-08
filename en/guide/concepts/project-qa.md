@@ -74,7 +74,7 @@ The settings for [quality control](../../glossary.md#quality-control) rules depe
 
 {% cut "How many control tasks do I need to add?" %}
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
+We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
 
 {% cut "Why's that?" %}
 

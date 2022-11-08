@@ -20,7 +20,7 @@ For this type of project, you can use the **Customer survey** preset. It has pre
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvkY)
 
-- The [field.button-radio-group](../reference/field.button-radio-group.md) component adds buttons for selecting answers. It's better to use buttons if the question has 2-4 short answer options. If there are more answer options, it's better to use [field.radio-group](../reference/field.radio-group.md).
+- The [field.button-radio-group](../reference/field.button-radio-group.md) component adds buttons for selecting answers. It's better to use buttons if the question has 2–4 short answer options. If there are more answer options, it's better to use [field.radio-group](../reference/field.radio-group.md).
 
   [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvnQ)
 
