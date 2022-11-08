@@ -17,7 +17,7 @@ Once you fill out the form, you'll see your project on the **Bespoke** tab in th
 
 {% cut "Task items" %}
 
-A task item is a labeling unit – in other words, data uploaded to a batch. The batch consists of task items, and the project consists of batches.
+A task item is a labeling unit — in other words, data uploaded to a batch. The batch consists of task items, and the project consists of batches.
 
 {% endcut %}
 

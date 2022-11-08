@@ -311,7 +311,7 @@ To create a pool:
 
         {% note info %}
 
-        In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5-10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
+        In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5–10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
         {% endnote %}
 

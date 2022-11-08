@@ -16,7 +16,7 @@ Notifications are sent in JSON format.
 
 Data included in a notification depends on the [event type](./put-webhook-subscriptions.md#event).
 
-If the **secret_key** parameter is specified when creating a subscription, an additional header – **Toloka-Signature** – appears in the event notification headers. It confirms that the requests were sent via the Toloka API. For more information, see [Event authentication](authentication.md).
+If the **secret_key** parameter is specified when creating a subscription, an additional header — **Toloka-Signature** — appears in the event notification headers. It confirms that the requests were sent via the Toloka API. For more information, see [Event authentication](authentication.md).
 
 ## Example of the POOL_CLOSED notification body {#pool-closed}
 

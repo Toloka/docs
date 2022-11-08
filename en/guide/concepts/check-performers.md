@@ -72,7 +72,7 @@ Quality control rules let you minimize the consequences of errors. In Toloka, yo
 
 #### Rejected tasks
 
-For example, you can use Toloka to improve speech recognition algorithms. Tolokers listen to a series of 5-10-second recordings and make a transcription of each of them in order to convert speech to text.
+For example, you can use Toloka to improve speech recognition algorithms. Tolokers listen to a series of 5–10-second recordings and make a transcription of each of them in order to convert speech to text.
 
 Some of the recordings are transcribed incorrectly. Don't accept incorrect responses. Set up the [Processing rejected and accepted assignments](reassessment-after-accepting.md) rule. The platform will automatically send incorrect transcriptions to other Tolokers for revision.
 

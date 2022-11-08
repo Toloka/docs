@@ -270,7 +270,7 @@ All responses to the task are taken into account. If one response differs from t
 
 {% cut "How many control tasks do I need to add?" %}
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
+We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
 
 {% endcut %}
 

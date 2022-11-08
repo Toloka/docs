@@ -92,7 +92,7 @@ If the markup process failed for some reason, contact support. Go to the tab for
 
 {% cut "How many control tasks do I need to add?" %}
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
+We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
 
 {% cut "Why's that?" %}
 

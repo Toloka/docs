@@ -184,7 +184,7 @@ We recommend that you break down your object selection project into three projec
 
     1. In the input data, pass the images and coordinates of the labeled objects from the previous task.
 
-    Now you can run the resulting pool with an overlap of 3-5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
+    Now you can run the resulting pool with an overlap of 3–5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
 
     To prevent the Tolokers who worked on the second project from doing the review, assign a skill to them. Use this skill as a filter in the pools of the third project.
 

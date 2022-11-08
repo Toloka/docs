@@ -1448,7 +1448,7 @@ Now let's see how to add each field manually.
 
   Add a new field:
 
-  `radio_result` – A radio button (string type).
+  `radio_result` — A radio button (string type).
 
   #### Editing HTML
 

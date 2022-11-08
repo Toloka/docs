@@ -126,7 +126,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     {% cut "What is a task suite?" %}
 
-    A task suite can contain one or several tasks that are shown on the same page. If the tasks are simple, you can add 10-20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers.
+    A task suite can contain one or several tasks that are shown on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers.
 
     Tolokers get paid for completing the entire task suite.
 

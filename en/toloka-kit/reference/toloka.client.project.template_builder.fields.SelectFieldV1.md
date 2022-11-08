@@ -20,7 +20,7 @@ Button for selecting from a drop-down list.
 
 Use this component when the list is long and only one option can be chosen.
 
-For short lists (2-4 items), it's better to use field.radio-group or field.button-radio-group, where all the
+For short lists (2–4 items), it's better to use field.radio-group or field.button-radio-group, where all the
 options are visible at once.
 
 To allow selecting multiple options, use the field.checkbox-group component.
