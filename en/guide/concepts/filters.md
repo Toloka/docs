@@ -206,7 +206,7 @@ Requesters can't see the full details about specific Tolokers. So you can't see 
 
 {% endcut %}
 
-{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, "Moscow only, 30-45 years old"." %}
+{% cut "Can I set up a task to be visible to Tolokers with certain demographic and geo parameters? For example, ’Moscow only, 30–45 years old’." %}
 
 You can do that. To select Tolokers for the pool, use [filters](filters.md).
 

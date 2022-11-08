@@ -19,7 +19,7 @@
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TPoXh)
 
-- Добавьте компонент [field.button-radio-group](../reference/field.button-radio-group.md) в виде кнопок. Кнопки лучше подходят, когда в вопросе 2-4 варианта с короткими названиями. Если вариантов много, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md).
+- Добавьте компонент [field.button-radio-group](../reference/field.button-radio-group.md) в виде кнопок. Кнопки лучше подходят, когда в вопросе 2–4 варианта с короткими названиями. Если вариантов много, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TWCNH)
 

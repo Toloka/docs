@@ -276,7 +276,7 @@
 
           Если вы выбрали {% if locale == "ru-ru" %}**Способ оплаты → PayPal**{% endif %}{% if locale == "en-com" %}**Payment method → PayPal**{% endif %}, вы будете перенаправлены на сайт платежной системы для совершения платежа.
 
-          Если вы выбрали {% if locale == "ru-ru" %}**Способ оплаты → Банковская карта (для нерезидентов Швейцарии) – доллары**{% endif %}{% if locale == "en-com" %}**Payment method → Banking card in dollars – non residents Switzerland) – US dollars**{% endif %}, введите данные банковской карты и завершите платеж. Деньги будут сконвертированы по курсу вашего банка, если валюта карты не доллары.
+          Если вы выбрали {% if locale == "ru-ru" %}**Способ оплаты → Банковская карта (для нерезидентов Швейцарии) — доллары**{% endif %}{% if locale == "en-com" %}**Payment method → Banking card in dollars — non residents Switzerland) — US dollars**{% endif %}, введите данные банковской карты и завершите платеж. Деньги будут сконвертированы по курсу вашего банка, если валюта карты не доллары.
 
           {% note info %}
 

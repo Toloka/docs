@@ -2446,7 +2446,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
   Добавьте новое поле:
 
-  `checkbox_result` – флажок (логический тип).
+  `checkbox_result` — флажок (логический тип).
 
   Добавьте столько полей, сколько вам требуется флажков, но придумайте им уникальные имена. Например, если вам нужно три флажка, добавьте три поля с именами `checkbox_result1`, `checkbox_result2` и `checkbox_result3`.
 
@@ -2748,7 +2748,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
   Добавьте новое поле:
 
-  `radio_result` – переключатель (тип строка).
+  `radio_result` — переключатель (тип строка).
 
   #### Редактирование HTML
 
@@ -3150,7 +3150,7 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
   Добавьте новое поле:
 
-  `select_result` – выпадающий список (тип строка).
+  `select_result` — выпадающий список (тип строка).
 
   #### Редактирование HTML
 

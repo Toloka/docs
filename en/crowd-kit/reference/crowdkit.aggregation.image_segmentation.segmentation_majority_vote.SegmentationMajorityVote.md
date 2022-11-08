@@ -9,7 +9,7 @@ SegmentationMajorityVote(
 )
 ```
 
-Segmentation Majority Vote - chooses a pixel if more than half of workers voted.
+Segmentation Majority Vote — chooses a pixel if more than half of workers voted.
 
 
 This method implements a straightforward approach to the image segmentations aggregation:

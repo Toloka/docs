@@ -694,7 +694,7 @@ If the Toloker mismatches your preset filter, they can't see the task. You can o
 
 {% endcut %}
 
-{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30-45 years old”." %}
+{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30–45 years old”." %}
 
 You can do that. To select Tolokers for the pool, use [filters](../concepts/filters.md).
 
@@ -782,7 +782,7 @@ The settings for [quality control](../../glossary.md#quality-control) rules depe
 
 {% cut "How many control tasks do I need to add?" %}
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
+We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
 
 {% cut "Why's that?" %}
 
@@ -1578,7 +1578,7 @@ You can create a retry pool similarly to an exam pool. In the pool settings, sel
 For example, if the main pool admits users with a skill of 70 or higher, then you can route the people with a skill between 40 and 69 to the retry pool.
 
 To get a valid “range”, enter the skill twice: with an upper and lower value. For example: `<basic skill > <70 and main skill >=40`.
-We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10-20 tasks is enough, depending on complexity.
+We recommend that you don't make your exam and retry pools too lengthy, because Tolokers don't like to do zero-price tasks. 10–20 tasks is enough, depending on complexity.
 
 {% endcut %}
 
@@ -1953,7 +1953,7 @@ If the task is simple, like if the Toloker spends a few seconds to assess produc
 
 If you register in Toloka as a Toloker, you can compare offers from other requesters.
 
-Define the page price, multiply it by the overlap (it's usually 3-5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
+Define the page price, multiply it by the overlap (it's usually 3–5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
 
 {% endcut %}
 
@@ -2197,7 +2197,7 @@ We recommend that you break down your object selection project into three projec
 
     1. In the input data, pass the images and coordinates of the labeled objects from the previous task.
 
-    Now you can run the resulting pool with an overlap of 3-5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
+    Now you can run the resulting pool with an overlap of 3–5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
 
     To prevent the Tolokers who worked on the second project from doing the review, assign a skill to them. Use this skill as a filter in the pools of the third project.
 

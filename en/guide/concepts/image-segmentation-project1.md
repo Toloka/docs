@@ -255,7 +255,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     {% note info %}
 
-    In small pools, control tasks should be 10-20% of all tasks. Include different versions of correct responses in equal amounts. View the distribution of responses on the {% if locale == "en-com" %}**Edit tasks**{% endif %} page, {% if locale == "en-com" %}**Control tasks**{% endif %} tab.
+    In small pools, control tasks should be 10–20% of all tasks. Include different versions of correct responses in equal amounts. View the distribution of responses on the {% if locale == "en-com" %}**Edit tasks**{% endif %} page, {% if locale == "en-com" %}**Control tasks**{% endif %} tab.
 
     {% endnote %}
 

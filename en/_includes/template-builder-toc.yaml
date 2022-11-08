@@ -22,6 +22,8 @@ items:
             href: ../template-builder/templates/product-search-relevance.md
           - name: Object recognition & detection
             href: ../template-builder/templates/object-recognition.md
+          - name: Text recognition from an image (OCR)
+            href: ../template-builder/templates/text-recognition.md
       - name: Video
         items:
           - name: Video classification
@@ -43,7 +45,7 @@ items:
           - name: Audio transcription
             href: ../template-builder/templates/audio-transcript.md
           - name: Audio comparison (Side-by-side)
-            href: ../template-builder/templates/sbs-audio.md            
+            href: ../template-builder/templates/sbs-audio.md
       - name: Data enrichment
         items:
           - name: Searching for product characteristics

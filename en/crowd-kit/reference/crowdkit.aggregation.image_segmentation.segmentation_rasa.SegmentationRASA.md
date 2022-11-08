@@ -9,7 +9,7 @@ SegmentationRASA(
 )
 ```
 
-Segmentation RASA - chooses a pixel if sum of weighted votes of each workers' more than 0.5.
+Segmentation RASA — chooses a pixel if sum of weighted votes of each workers' more than 0.5.
 
 
 Algorithm works iteratively, at each step, the workers are reweighted in proportion to their distances

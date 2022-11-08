@@ -329,7 +329,7 @@ Task markup {#task-markup}
 
 Task suite {#task-suite}
 
-: A task suite contains one or several tasks that are shown on the same page. If the tasks are simple, you can add 10-20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers. A task suite may consist of a single task.
+: A task suite contains one or several tasks that are shown on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers. A task suite may consist of a single task.
 
 Toloka API {#toloka-api}
 
