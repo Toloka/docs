@@ -132,7 +132,7 @@ Yes, if they can access both pools, they can do both of them. To restrict access
 
 {% endcut %}
 
-{% cut "Am I correct in understanding that if I use `set the the skill value = 1` with a `percentage of accepted responses >= 75` and `10 recent values to use`, Tolokers will get one skill point for every eight tasks completed correctly out of ten?" %}
+{% cut "Am I correct in understanding that if I use “set the the skill value = 1“ with a “percentage of accepted responses >= 75“ and “10 recent values to use“, Tolokers will get one skill point for every eight tasks completed correctly out of ten?" %}
 
 No, this is incorrect. With these settings, each time a rule condition is met, the Toloker gets `skill = 1`. To change the skill value in the process of task review, you need a “multi-step” rule, which has multiple identical rules with different values of **Total reviewed responses**.
 
@@ -160,7 +160,7 @@ Another option for selecting Tolokers for a project of this type is assignment r
 
 {% endcut %}
 
-{% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. I'm trying to put `3` in the **Recent control and training task responses to use** field, but I'm getting an error telling me that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
+{% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. I'm trying to put “3“ in the “Recent control and training task responses to use“ field, but I'm getting an error telling me that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
 The **Recent control and training task responses to use** field is for the number of recent responses from Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
@@ -267,7 +267,7 @@ In the exam pool, you can create a skill reflecting the exam result and granting
 
 {% endcut %}
 
-{% cut "I created a training pool with one task containing a hint. A Toloker makes a mistake on their first attempt but eventually succeeds. The Toloker gets the skill `0`. How do I grant to the Toloker access to my tasks? The minimum required level that you can set is `10`." %}
+{% cut "I created a training pool with one task containing a hint. A Toloker makes a mistake on their first attempt but eventually succeeds. The Toloker gets the skill “0“. How do I grant to the Toloker access to my tasks? The minimum required level that you can set is “10“." %}
 
 Technically, if you have only one task in your training pool, you don't have this option. The skill will be either `0` or `100`. We recommend that you add several tasks, or at least 2 so that the Toloker will practice on the first task and will be able to do the second task correctly. In this case, you can admit users to your main pool starting from the skill value of `50`.
 
