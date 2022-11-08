@@ -503,4 +503,11 @@ items:
   - name: Completing tasks
     href: guide/concepts/qa-assign.md
     hidden: true
+  - name: Toloka SSO authentication
+    hidden: true
+    items:
+      - name: Microsoft SSO authentication
+        href: guide/sso/microsoft-authentication.md
+      - name: Generating API tokens
+        href: guide/sso/api-token.md
 base: en
