@@ -44,7 +44,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Survey on third-party platform**{% endif %} preset.
 
-1. Click {% if locale == "en-com" %}**Choose solution**{% endif %} in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -125,7 +125,7 @@ Before you begin:
     1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %} and check the values of the parameters in this section.
 
     1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
-        
+
         {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
     1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
@@ -207,7 +207,7 @@ Before you begin:
         {% endnote %}
 
     1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
-        
+
         {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
     1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.

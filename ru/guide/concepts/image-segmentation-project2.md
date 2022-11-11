@@ -10,7 +10,7 @@
 
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать проект**{% endif %}{% if locale == "en-com" %}**Create a project**{% endif %}.
     1. Выберите пресет {% if locale == "ru-ru" %}**Распознавание объектов и выделение областей**{% endif %}{% if locale == "en-com" %}**Object recognition & detection**{% endif %}.
-    1. Нажмите {% if locale == "ru-ru" %}**Использовать решение**{% endif %}{% if locale == "en-com" %}**Choose solution**{% endif %}.
+    1. Нажмите {% if locale == "ru-ru" %}**Использовать решение**{% endif %}{% if locale == "en-com" %}**Choose this preset**{% endif %}.
 
 1. Заполните общую информацию:
 

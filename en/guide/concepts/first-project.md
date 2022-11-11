@@ -39,6 +39,19 @@ In the project, you'll customize an appearance of the tasks.
 
     {% endcut %}
 
+    {% note tip %}
+
+    If you unsure which preset to choose, you can ask Toloka experts to create a project for you. To do that,
+
+    - click **Get expert help**,
+    - select the way Toloka can contact you (WhatsApp, Telegram, Viber, email, or phone),
+    - enter your phone number or email address,
+    - briefly describe the project and the results you want to get.
+
+    Toloka engineering team will contact you for more details and explain your further steps.
+
+    {% endnote %}
+
     If you can't find a preset that works for you, choose **Blank** to set up a project from scratch. To learn how, see the [Initial project settings](project.md) section.
 
 1. In the **General information** section, fill in the project name and a brief explanation of what will happen within the project.
