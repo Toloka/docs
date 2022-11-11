@@ -29,7 +29,7 @@ paths:
       parameters:
         - name: app_id
           in: query
-          description: ID of the bespoke solution that the projects belong to.
+          description: ID of the app that the projects belong to.
           required: false
           schema:
             type: string

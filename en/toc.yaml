@@ -434,8 +434,9 @@ items:
               - include:
                   path: _includes/toloka-api-toc.yaml
                   mode: link
-          - name: Bespoke API
-            hidden: true
+#              - name: API reference
+#                href: https://toloka.ai/docs/api/api-reference
+          - name: Apps API
             items:
               - name: How to use
                 items:
