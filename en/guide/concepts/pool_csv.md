@@ -1,6 +1,6 @@
 # Creating a file with tasks
 
-Tasks are uploaded to the [pool](pool-main.md) in [the tasks file](../../glossary.md#tsv-file-definition-ru_1).
+Tasks are uploaded to the [pool](pool-main.md) in [the tasks file](../../glossary.md#tsv).
 
 Download the file template for your [project](../../glossary.md#project) on the [pool](../../glossary.md#pool) page. Use the template to create your own task file and upload it to the pool.
 

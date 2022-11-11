@@ -18,13 +18,26 @@ To create a project, follow the instructions:
 
 #### In the interface:
 
-1. Choose a template:
+1. Choose a preset:
 
     1. Click the {% if locale == "en-com" %}**Create project**{% endif %} button on the {% if locale == "en-com" %}**Projects**{% endif %} page.
 
-    1. Choose a template. The template contains pre-configured [input and output data fields](incoming.md) and [the task interface](spec.md), which you can edit.
+    1. Choose a preset. The preset contains pre-configured [input and output data fields](incoming.md) and [the task interface](spec.md), which you can edit.
 
-    If there is no suitable template, choose an empty template.
+        If there is no suitable preset, choose an empty preset.
+
+        {% note tip %}
+
+        If you unsure which preset to choose, you can ask Toloka experts to create a project for you. To do that,
+
+        - click **Get expert help**,
+        - select the way Toloka can contact you (WhatsApp, Telegram, Viber, email, or phone),
+        - enter your phone number or email address,
+        - briefly describe the project and the results you want to get.
+
+        Toloka engineering team will contact you for more details and explain your further steps.
+
+        {% endnote %}
 
 1. Provide general information:
 
@@ -109,13 +122,13 @@ If your task contains many objects of different types, you should break it down.
 
 The simpler the task, the cheaper it is and the better the quality of the final result. Set the cost of labeling a single class of objects in photos at about $0.01.
 
-[Use](../tutorials/selection.md) the **Object selection in an image** template. You can open this template in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](t-components/image-annotation.md#annotation) (**Dropdown list** tab).
+[Use](../tutorials/selection.md) the **Object selection in an image** preset. You can open this preset in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](t-components/image-annotation.md#annotation) (**Dropdown list** tab).
 
 {% endcut %}
 
 {% cut "How do I add response validation depending on a checkbox?" %}
 
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” template.
+You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” preset.
 
 {% endcut %}
 
@@ -129,15 +142,15 @@ The number of tasks depends on how difficult and time-consuming the tasks are. K
 
 {% cut "Setting up tasks with images" %}
 
-{% cut "What template do I select so that Tolokers label only irrelevant products in the output?" %}
+{% cut "What preset do I select so that Tolokers label only irrelevant products in the output?" %}
 
-You can create such an assignment based on the classification template. Show a product image and ask the question: "Does the product match the query?" Add two radio buttons for responses: “Yes” and “No”.
+You can create such an assignment based on the classification preset. Show a product image and ask the question: "Does the product match the query?" Add two radio buttons for responses: “Yes” and “No”.
 
 {% endcut %}
 
 {% cut "How do I label elements on web pages?" %}
 
-Generate the screenshots of pages and manually label areas using the "Object selection in an image" template.
+Generate the screenshots of pages and manually label areas using the "Object selection in an image" preset.
 
 {% endcut %}
 
@@ -147,7 +160,7 @@ We recommend that you break down your object selection project into three projec
 
 1. Sorting images containing an object.
 
-    1. [Create a task](../tutorials/image-classification.md) using the “Image classification” template.
+    1. [Create a task](../tutorials/image-classification.md) using the “Image classification” preset.
 
     1. Sort the images containing the object you are looking for.
 
@@ -161,7 +174,7 @@ We recommend that you break down your object selection project into three projec
 
 1. Reviewing object selection assignments.
 
-    1. Create a task using the object selection template.
+    1. Create a task using the object selection preset.
 
     1. Hide the editor and ask whether the object is selected correctly. Response options: Yes/No.
 
@@ -225,15 +238,15 @@ onKey: function(key) {
 
 In the case of crowdsourcing, it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
 
-​Base your task on the “Object selection in an image” template. See the step-by-step guide for creating this type of project on [this page](../tutorials/selection.md).
+​Base your task on the “Object selection in an image” preset. See the step-by-step guide for creating this type of project on [this page](../tutorials/selection.md).
 
-The editor used in the template lets you add a drop-down list for labeling the selected object. See how to do this in the editor description ([Dropdown list](t-components/image-annotation.md) tab).
+The editor used in the preset lets you add a drop-down list for labeling the selected object. See how to do this in the editor description ([Dropdown list](t-components/image-annotation.md) tab).
 
 {% endcut %}
 
-{% cut "How do I use control and training tasks in the standard template with an area selection editor?" %}
+{% cut "How do I use control and training tasks in the standard preset with an area selection editor?" %}
 
-In the standard template with an area selection editor, you can't use the control tasks, because in order for the assignment to be accepted by the system as correct, the object selected by the Toloker must exactly match the control object. This is almost impossible. Therefore, you can leave the GOLDEN field empty in the task file or simply delete all the columns except INPUT.
+In the standard preset with an area selection editor, you can't use the control tasks, because in order for the assignment to be accepted by the system as correct, the object selected by the Toloker must exactly match the control object. This is almost impossible. Therefore, you can leave the GOLDEN field empty in the task file or simply delete all the columns except INPUT.
 
 You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
 
@@ -245,7 +258,7 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 
 {% cut "How do I create a task with a selection out of three image options with the paired image comparison?" %}
 
-1. Use the **Image comparison (Side-by-side)** template.
+1. Use the **Image comparison (Side-by-side)** preset.
 
 1. In the TSV file, specify the links to the compared images.
 
@@ -271,7 +284,7 @@ You can also edit the project so that the Toloker sees 3 images at once and sele
 
 You can structure your text classification task using the source text and radio buttons. It can also be text and checkboxes if you use multiple subjects.
 
-We recommend that you base it on the "Text classification" template.
+We recommend that you base it on the "Text classification" preset.
 
 You can also create your own interface. All the available tools are described in the [Requester's guide](spec.md).
 
@@ -279,13 +292,13 @@ You can also create your own interface. All the available tools are described in
 
 {% cut "How do I create a task using both input and output text fields?" %}
 
-You can see how it's implemented in the “[Transcript of audio recordings](../tutorials/transcript-audio.md)” template where a string-type output field is used. In the “Text recognition from an image” template, you can view how to describe text input fields. Please note that if you later want to use the Dawid-Skene aggregation method, you must specify allowed values.
+You can see how it's implemented in the “[Transcript of audio recordings](../tutorials/transcript-audio.md)” preset where a string-type output field is used. In the “Text recognition from an image” preset, you can view how to describe text input fields. Please note that if you later want to use the Dawid-Skene aggregation method, you must specify allowed values.
 
 {% endcut %}
 
 {% cut "How do I create a simple survey with no options, where the Toloker answers an open-ended question?" %}
 
-1. Create a project from an empty template.
+1. Create a project from an empty preset.
 
 1. Write your question in the HTML block.
 
@@ -303,7 +316,7 @@ You can see how it's implemented in the “[Transcript of audio recordings](../t
 
 {% endcut %}
 
-{% cut "How do I create a survey with a single question based on the preset survey template?" %}
+{% cut "How do I create a survey with a single question based on the survey preset?" %}
 
 The survey includes an auxiliary input field. You can use it to pass any information, and it won't be visible to Tolokers.
 

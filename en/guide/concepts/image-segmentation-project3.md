@@ -10,7 +10,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     1. Click **Create project**.
     1. Select the **Object recognition & detection** preset.
-    1. Click **Choose solution**.
+    1. Click **Choose this preset**.
 
 1. Provide general information:
 

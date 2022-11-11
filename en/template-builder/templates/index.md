@@ -2,7 +2,7 @@
 
 Create projects faster with ready-made presets. Use standard presets or adapt them to your data and response formats.
 
-From the Toloka platform interface, select the **Projects** tab, click **Create a project**, and choose a project preset that matches your task. After you click **Choose solution**, you will see the template in the **Task interface** section.
+From the Toloka platform interface, select the **Projects** tab, click **Create a project**, and choose a project preset that matches your task. After you click **Choose this preset**, you will see the template in the **Task interface** section.
 
 ## Images
 
@@ -45,6 +45,3 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 ## Surveys
 
 - [Survey](survey.md)
-
-
-

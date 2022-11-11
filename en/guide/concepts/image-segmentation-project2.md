@@ -6,11 +6,11 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
 #### In the interface:
 
-1. Choose a template:
+1. Choose a preset:
 
     1. Click **Create project**.
-    1. Select the **Object recognition & detection** template.
-    1. Click **Choose solution**.
+    1. Select the **Object recognition & detection** preset.
+    1. Click **Choose this preset**.
 
 1. Provide general information:
 

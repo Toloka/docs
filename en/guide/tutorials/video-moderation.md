@@ -48,7 +48,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Hand gesture classification**{% endif %} preset.
 
-1. Click {% if locale == "en-com" %}**Choose solution**{% endif %} in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 

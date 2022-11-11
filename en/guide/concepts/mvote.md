@@ -4,7 +4,7 @@ Majority vote is a [quality control](../../glossary.md#quality-control) method b
 
 {% note info %}
 
-It only takes into account [regular tasks](../../glossary.md#general-task), ignoring the responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task-ru_1) tasks.
+It only takes into account [regular tasks](../../glossary.md#general-task), ignoring the responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
 
 {% endnote %}
 
