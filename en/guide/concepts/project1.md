@@ -14,9 +14,7 @@ You can first create and test your project for free in the [sandbox](sandbox.md)
 
 {% endnote %}
 
-To create a project **in the platform interface**, follow the instructions in the [next section](#create-project-interface). If you prefer to **use Toloka API**, skip to the [section below](#create-project-api).
-
-### In the interface {#create-project-interface}
+#### In the interface
 
 1. Choose a preset:
 
@@ -87,9 +85,9 @@ To create a project **in the platform interface**, follow the instructions in th
 
 After creating the project, add a [task pool](pool-main.md) to it. You can also set up [quality control](control.md) in the project.
 
-### Using Toloka API {#create-project-api}
+{% note tip "How to work via Toloka API" %}
 
-To create a project via Toloka API, send a `POST` request with the parameters of the project you want to create:
+To create a project using Toloka API, send a `POST` request with the parameters of the project you want to create:
 
 ```bash
 curl -X POST 'https://toloka.dev/api/v1/projects' \
@@ -99,6 +97,8 @@ curl -X POST 'https://toloka.dev/api/v1/projects' \
 ```
 
 Refer to the [Create project](https://toloka.ai/docs/api/api-reference/#post-/projects) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
 
 ## Cloning a project {#clone}
 

@@ -130,6 +130,9 @@ items:
         items:
           - name: Create a project
             href: guide/concepts/project.md
+          - name: Create a project
+            href: guide/concepts/project1.md
+            hidden: true
           - name: Editing a project
             href: guide/concepts/edit-project.md
           - name: Writing instructions
