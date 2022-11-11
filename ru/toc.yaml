@@ -320,20 +320,24 @@ items:
             items:
               - name: Обзор
                 href: guide/concepts/efficiency-metrics/index.md
-              - name: Контрольные задания
-                href: guide/concepts/efficiency-metrics/control-tasks-share.md
-              - name: Отклоненные задания
-                href: guide/concepts/efficiency-metrics/rejected-tasks.md
-              - name: Выполнение заданий
-                href: guide/concepts/efficiency-metrics/submitting-tasks.md
               - name: Блокировки
                 href: guide/concepts/efficiency-metrics/ban-rate.md
+              - name: Выполнение заданий
+                href: guide/concepts/efficiency-metrics/submitting-tasks.md
               - name: Доступные исполнители
                 href: guide/concepts/efficiency-metrics/available-performers.md
-              - name: Сбалансированность контрольных заданий
-                href: guide/concepts/efficiency-metrics/control-tasks-balance.md
               - name: Качество инструкции
                 href: guide/concepts/efficiency-metrics/instruction-quality.md
+              - name: Качество интерфейса
+                href: guide/concepts/efficiency-metrics/interface-quality.md
+              - name: Контрольные задания
+                href: guide/concepts/efficiency-metrics/control-tasks-share.md
+              - name: Общение
+                href: guide/concepts/efficiency-metrics/communication.md
+              - name: Отклоненные задания
+                href: guide/concepts/efficiency-metrics/rejected-tasks.md
+              - name: Сбалансированность контрольных заданий
+                href: guide/concepts/efficiency-metrics/control-tasks-balance.md
   - name: Bespoke-решения
     hidden: true
     items:

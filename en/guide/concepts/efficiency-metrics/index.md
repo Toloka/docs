@@ -10,13 +10,15 @@ Toloka has a set of indicators using which you can estimate if your project is c
 
 You can find this information in the **Efficiency** tab on the pool page:
 
+- [Bans](ban-rate.md)
+- [Communication issues](communication.md)
 - [Control tasks](control-tasks-share.md)
+- [Control task balance](control-tasks-balance.md)
+- [Project availability](available-performers.md)
+- [Quality of instructions](instruction-quality.md)
+- [Quality of interface](interface-quality.md)
 - [Rejected tasks](rejected-tasks.md)
 - [Submission rate](submitting-tasks.md)
-- [Project availability](available-performers.md)
-- [Bans](ban-rate.md)
-- [Control task balance](control-tasks-balance.md)
-- [Quality of instructions](instruction-quality.md)
 
 ## Features {#features}
 

@@ -327,20 +327,24 @@ items:
             items:
               - name: Overview
                 href: guide/concepts/efficiency-metrics/index.md
+              - name: Bans
+                href: guide/concepts/efficiency-metrics/ban-rate.md
+              - name: Communication issues
+                href: guide/concepts/efficiency-metrics/communication.md
               - name: Control tasks
                 href: guide/concepts/efficiency-metrics/control-tasks-share.md
+              - name: Control task balance
+                href: guide/concepts/efficiency-metrics/control-tasks-balance.md
+              - name: Project availability
+                href: guide/concepts/efficiency-metrics/available-performers.md
+              - name: Quality of instructions
+                href: guide/concepts/efficiency-metrics/instruction-quality.md
+              - name: Quality of interface
+                href: guide/concepts/efficiency-metrics/interface-quality.md
               - name: Rejected tasks
                 href: guide/concepts/efficiency-metrics/rejected-tasks.md
               - name: Submission rate
                 href: guide/concepts/efficiency-metrics/submitting-tasks.md
-              - name: Bans
-                href: guide/concepts/efficiency-metrics/ban-rate.md
-              - name: Project availability
-                href: guide/concepts/efficiency-metrics/available-performers.md
-              - name: Control task balance
-                href: guide/concepts/efficiency-metrics/control-tasks-balance.md
-              - name: Quality of instructions
-                href: guide/concepts/efficiency-metrics/instruction-quality.md
   - name: Bespoke solutions
     hidden: true
     items:
