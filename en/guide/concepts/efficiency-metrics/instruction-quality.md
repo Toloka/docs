@@ -18,7 +18,7 @@ where:
 
 - $H_{i}$ is the availability of instructions (0 means available and 1 means not available).
 
-- $CSI$ is the Tolokers&apos; rating, which shows how satisfied they are with the instructions.
+- $CSI$ is the Tolokers' rating, which shows how satisfied they are with the instructions.
 
 #### How to estimate
 

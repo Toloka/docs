@@ -1,6 +1,6 @@
 # Quality of interface
 
-After completing a task, Tolokers rate different aspects of it. In particular, they indicate how the interface is user-friendly. Based on these ratings, an interface quality indicator is generated.
+After completing a task, Tolokers rate different aspects of it. In particular, they indicate whether the interface is user-friendly. Based on these ratings, an interface quality indicator is generated.
 
 {% note info %}
 
@@ -16,7 +16,7 @@ where:
 
 - $Q_{i}$ is the interface quality indicator.
 
-- $CSI$ is the Tolokers&apos; rating, which shows how satisfied they are with the interface.
+- $CSI$ is the Tolokers' rating, which shows how satisfied they are with the interface.
 
 ## How to estimate
 

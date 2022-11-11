@@ -1,8 +1,8 @@
 # Communication issues
 
-After completing a task, Tolokers rate different aspects of it. In particular, they indicate how comfortable was to communicate with the requester. Based on these ratings, an communication issues indicator is generated.
+After completing a task, Tolokers rate different aspects of it. In particular, they indicate how comfortable it was to communicate with the requester. Based on these ratings, a communication issues indicator is generated.
 
-Try to answer promptly to messages and questions because the quality of the markup depends on how well the Tolokers understand the task. If you don't reply to questions promptly, tasks might be completed incorrectly and it will take longer to get results.
+Try to answer promptly to messages and questions because the labeling quality depends on how well the Tolokers understand the task. If you don't reply to questions quickly enough, tasks might be completed incorrectly, and it will take longer to get results.
 
 {% note info %}
 
@@ -18,7 +18,7 @@ where:
 
 - $Q_{i}$ is the communication issues indicator.
 
-- $CSI$ is the Tolokers&apos; rating, which shows how satisfied they are with communication.
+- $CSI$ is the Tolokers' rating, which shows how satisfied they are with the communication process.
 
 ## How to estimate
 
