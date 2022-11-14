@@ -1,5 +1,7 @@
 # plugin.field.image-annotation.hotkeys
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Позволяет задавать горячие клавиши для компонента [field.image-annotation](field.image-annotation.md).
 
 Можно задать горячие клавиши для выбора типов областей, выбора режимов разметки и подтверждения или отмены создания области. Добавить их можно на стрелки вверх и вниз (`up`,`down`), цифры и латинские буквы.

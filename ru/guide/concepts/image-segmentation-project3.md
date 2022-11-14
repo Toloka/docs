@@ -1,5 +1,7 @@
 # Проект 3. Верно ли выделены объекты на изображении
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В этом [проекте](../../glossary.md#project) исполнители будут определять, верно ли на изображениях из [первого проекта](image-segmentation-project1.md) были выделены дорожные знаки во [втором проекте](image-segmentation-project2.md).
 
 ## Создайте проект {#create-project}

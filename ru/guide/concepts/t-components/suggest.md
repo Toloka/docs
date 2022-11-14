@@ -1,5 +1,7 @@
 # Поле для ввода строки с саджестом
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 Саджест — это текстовые подсказки, которые отображаются, когда исполнитель устанавливает курсор в поле ввода строки. Подсказки могут быть:

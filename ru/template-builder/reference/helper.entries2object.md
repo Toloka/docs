@@ -1,5 +1,7 @@
 # helper.entries2object
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Создание объекта из заданного массива пар ключей и значений.
 
 Например, у вас есть такой массив:

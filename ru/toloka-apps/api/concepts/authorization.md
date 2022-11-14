@@ -2,6 +2,8 @@
 
 # Доступ к API
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 При запросах к API для авторизации вам потребуется OAuth-токен.
 
 **Пример запроса**

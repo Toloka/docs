@@ -1,5 +1,7 @@
 # Глоссарий
 
+{% include [deprecate](_includes/deprecate.md) %}
+
 ### А
 
 API Толоки {#toloka-api}

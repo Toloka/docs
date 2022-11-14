@@ -1,5 +1,7 @@
 # Список хелперов
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компоненты с именем `helpers.*` позволяют выполнять различные операции, например реализовать [условия if-then-else](helper.if.md) или [конструкцию switch-case](helper.switch.md).
 
 | Component                                         | Description                                                                                                                                                                                                            |

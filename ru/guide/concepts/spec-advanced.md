@@ -1,5 +1,7 @@
 # Как использовать JavaScript-расширения
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 Все аспекты [жизненного цикла](#lifecycle) заданий контролируются тремя JavaScript-классами:

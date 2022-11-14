@@ -1,5 +1,7 @@
 # Первый проект
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Начните знакомство с Толокой со следующих шагов:
 
 1. [Создайте проект](#create-project).

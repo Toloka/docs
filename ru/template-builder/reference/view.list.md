@@ -1,5 +1,7 @@
 # view.list
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Блок для отображения данных списком.
 
 ## Свойства компонента {#properties}

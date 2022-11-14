@@ -1,5 +1,7 @@
 # @yandex-toloka/data.location
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компонент передает координаты устройства исполнителя.
 
 Чтобы получить координаты, добавьте в свойство нужного компонента тип `@yandex-toloka/data.location`.

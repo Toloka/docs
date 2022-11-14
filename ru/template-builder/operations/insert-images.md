@@ -1,5 +1,7 @@
 # Вставка картинок
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В этом разделе описано, как вставить [одну картинку](insert-images.md), [две картинки рядом](insert-images.md) или [массив картинок](insert-images.md).
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
@@ -19,7 +21,7 @@
 
 Чтобы разместить рядом две картинки, используйте компонент [layout.side-by-side](../reference/layout.side-by-side.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/rcRVK) 
+[![](../_images/buttons/view-example.svg)](https://clck.ru/rcRVK)
 
 Подробный разбор примера в разделе [Быстрый старт](../quickstart.md).
 

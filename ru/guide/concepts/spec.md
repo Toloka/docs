@@ -1,5 +1,7 @@
 # Интерфейс задания
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} определяет внешний вид задания для исполнителя и логику обработки ответов.

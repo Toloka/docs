@@ -1,5 +1,7 @@
 # Сравнить видеоклипы
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В этом разделе описано, как [сравнить два видео](#video-side-by-side), как сделать, чтобы они [запускались и останавливались одновременно](#same-time-video) и как разместить [больше двух видео на странице](#compare-more-video).
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}

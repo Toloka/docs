@@ -1,5 +1,7 @@
 # @yandex-toloka/helper.proxy
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компонент позволяет загружать файлы с Яндекс Диска.
 
 Чтобы использовать `@yandex-toloka/helper.proxy`, подключите Яндекс Диск к своему аккаунту в Толоке и добавьте прокси по [инструкции](../../guide/concepts/prepare-data.md).

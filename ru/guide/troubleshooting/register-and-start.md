@@ -1,5 +1,7 @@
 # Регистрация и начало работы
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
 {% cut "Не могу завершить регистрацию как «заказчик физлицо». Не приходит смс-код." %}

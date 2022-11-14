@@ -1,5 +1,7 @@
 # Размещение и настройка задания
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В этом разделе описан общий порядок действий по размещению задания и даны ссылки на необходимые инструкции.
 
 ![](../_images/location-job/create-project-steps.svg)

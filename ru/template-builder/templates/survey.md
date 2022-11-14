@@ -1,5 +1,7 @@
 # Опрос
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В Толоке есть пресет **Опрос потребителей**. В нем уже настроена валидация и внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TPoP7)

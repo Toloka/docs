@@ -1,5 +1,7 @@
 # action.bulk
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Позволяет одновременно вызывать несколько действий (actions). Например, показать несколько уведомлений при нажатии на кнопку.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/QSxjp)

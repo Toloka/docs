@@ -1,5 +1,7 @@
 # view.action-button
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Кнопка, вызывающая действие.
 
 При нажатии кнопки вызовется действие, указанное в свойстве `action`.

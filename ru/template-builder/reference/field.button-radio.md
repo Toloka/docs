@@ -1,5 +1,7 @@
 # field.button-radio
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Добавляет одну кнопку. Пригодится для оформления необязательного варианта ответа.
 
 Если вы хотите добавить несколько кнопок, используйте [field.button-radio-group](field.button-radio-group.md).

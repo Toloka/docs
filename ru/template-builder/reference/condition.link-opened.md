@@ -1,5 +1,7 @@
 # condition.link-opened
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Проверяет, что исполнитель перешел по ссылке.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/QRauK)

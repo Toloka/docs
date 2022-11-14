@@ -1,5 +1,7 @@
 # Редактирование проекта
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Список созданных [проектов](../../glossary.md#project) доступен на странице **Проекты**. Откройте страницу проекта, чтобы посмотреть [список пулов](pool-main.md), [рейтинг проекта](project_rating_stat.md) и [статистику по проекту](project-statistic.md).
 
 Чтобы редактировать параметры проекта, нажмите кнопку ![](../_images/location-job/project/edit-project.svg) в списке проектов или {% if locale == "ru-ru" %}**Действия над проектом → Редактировать**{% endif %}{% if locale == "en-com" %}**Project actions → Edit**{% endif %} на странице проекта.

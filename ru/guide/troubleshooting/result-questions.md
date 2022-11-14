@@ -1,5 +1,7 @@
 # Работа с результатами
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
 ## Агрегация {#results}

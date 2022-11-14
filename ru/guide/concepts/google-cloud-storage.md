@@ -1,5 +1,7 @@
 # Google Cloud Storage
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [amazon-cloud-storage-alternatives-note](../_includes/concepts/amazon-cloud-storage/id-amazon-cloud-storage/alternatives-note.md) %}
 
 Чтобы ознакомиться с [Google Cloud Storage]({{ google-cloud-storage }}), вы можете активировать [Пробный период]({{ google-cloud-free-trial }}).

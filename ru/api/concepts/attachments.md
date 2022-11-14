@@ -1,5 +1,7 @@
 # Обзор
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 ## Описание {#description}
 
 Файлы, загруженные исполнителями, сохраняются в Толоке.

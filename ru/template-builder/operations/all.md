@@ -1,5 +1,7 @@
 # Список инструкций
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 ## Работа с данными {#section_nrb_t4r_2nb}
 
 - [Чтение и запись](input-output-data.md)

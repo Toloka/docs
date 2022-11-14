@@ -1,5 +1,7 @@
 # Класс TaskSuite
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 «Класс-обертка» для [страницы заданий](../../../glossary.md#task-suite), создает экземпляры классов заданий. Вы можете переопределить этот класс, например, чтобы отобразить общий элемент на странице с заданиями или получить больший контроль над заданиями (нестандартные горячие клавиши или т.п.).

@@ -1,5 +1,7 @@
 # Поле для ввода текста
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать поле для ввода текста в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.textarea.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.textarea.md){% endif %}.

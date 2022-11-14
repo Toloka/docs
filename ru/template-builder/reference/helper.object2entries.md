@@ -1,5 +1,7 @@
 # helper.object2entries
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Создание массива пар вида ключ-значение из заданного объекта.
 
 Например, у вас задан объект вида:

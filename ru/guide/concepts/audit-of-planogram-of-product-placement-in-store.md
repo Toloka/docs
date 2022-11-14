@@ -1,5 +1,7 @@
 # Мониторинг товаров
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [categorization-toloka-sandbox-for-conref](../_includes/concepts/categorization/id-categorization/toloka-sandbox-for-conref.md) %}
 
 {% include [walk-walk-abstract](../_includes/concepts/walk/id-walk/walk-abstract.md) %}
