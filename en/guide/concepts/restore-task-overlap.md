@@ -10,23 +10,21 @@ Don't use this rule in [pools](../../glossary.md#pool) with [dynamic overlap](dy
 
 ## When to use {#when-use}
 
-If you want to get “high-quality” Tolokers' responses to each task in the given overlap and you don't mind paying more for this.
-
 {% note alert %}
 
 This rule can increase the cost of the pool.
 
 {% endnote %}
 
+Use the rule if you want to get responses only from honest Tolokers to each task in the given overlap.
+
 The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [non-automatic acceptance](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
 
 To download the responses of users who are not blocked:
 
-1. Go to the project.
-1. Go to the pool.
-1. Click **Download results** at the top right.
-1. Select **Exclude assignments by banned users**.
-1. Click **Download results**.
+1. On the pool page, click {% if locale == "en-com" %}**Download results**{% endif %} on the right.
+1. Select {% if locale == "en-com" %}**Exclude assignments by banned Tolokers**{% endif %}.
+1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
 
 ![](../_images/control-rules/restore-task-overlap/good-results.png)
 
@@ -34,9 +32,9 @@ To download the responses of users who are not blocked:
 
 - You don't want to increase the overlap for tasks.
 - You don't want the final budget for pool labeling to exceed the initial budget.
-- You're using [dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL). This increases the maximum overlap value.
+- You set up [dynamic overlap](dynamic-overlap.md). This increases the maximum overlap value.
 
-## Rule settings {#rule}
+## How do I set up? {#rule}
 
 {% note alert %}
 
@@ -48,21 +46,23 @@ All fields in this rule are required. If you don't fill in at least one of them,
 || **Field** | **Overview**||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 
-- {% if locale == "en-com" %}**banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as control tasks, majority vote, [fast answers](../../glossary.md#fast-responses), [skipped assignments](../../glossary.md#skipping-tasks), or [captcha](../../glossary.md#captcha)).
+- {% if locale == "en-com" %}**Toloker banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), [skipping tasks](../../glossary.md#skipping-tasks), or entering a [captcha](../../glossary.md#captcha)).
 
-- {% if locale == "en-com" %}**filtered out**{% endif %} — The Toloker no longer meets one or more [filters](filters.md).
+- {% if locale == "en-com" %}**Toloker filtered out**{% endif %} — The Toloker no longer meets one or more [filters](filters.md).
 
-- {% if locale == "en-com" %}**skill**{% endif %} —The Toloker no longer meets the specific skill filter.
+- {% if locale == "en-com" %}**skill**{% endif %} — The Toloker no longer meets the specific skill filter.
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+||{% if locale == "en-com" %}**then**{% endif %} | Action performed under the condition {% if locale == "en-com" %}**If**{% endif %}:
 
 - {% if locale == "en-com" %}**extend overlap by**{% endif %} — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
+
+- {% if locale == "en-com" %}**reduce overlap by**{% endif %} — Ignore the Toloker's response.
 
     If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option {% if locale == "en-com" %}**Open pool if closed**{% endif %}.||
 |#
 
-## Examples of rules {#examples}
+## Examples {#examples}
 
 **Task**: classify photos for a dataset across different categories. If a Toloker is banned by a quality control rule (for example, [fast resposes](quick-answers.md)) or no longer matches the skill, their responses aren't counted and their tasks are sent for re-completion to another Toloker.
 

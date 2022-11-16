@@ -24,21 +24,21 @@ Toloka **isn't intended** for tasks that could harm Tolokers, other requesters, 
 
     - Allow the requester or third parties to access the Toloker's account in Toloka.
 
-    - Request data that can be used to identify the Toloker (for example, their phone number, email address, first and last name, place of residence, or bank card details).
+    - Request or contain data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. Before transmitting personal data to Toloka, pseudonymize or anonymize it. For example, you can cover up people's faces in photos, cut out the document fields that are filled, and change the pitch of the voice in speech recordings.
 
-    - Make Tolokers take pictures or videos of people on the street, cars, and other vehicles with licence plates. Such tasks are prohibited by the [User Agreement]({{ useragreement }}). Mention this in the instructions for Tolokers. If you receive such photos or videos in responses, don't use them. However, you can ask Tolokers to take a selfie or a video of themselves.
+    - Make Tolokers take pictures or videos of people on the street, cars, and other vehicles with licence plates. In accordance with Section 3.5 of the [User Agreement]({{ useragreement }}), such tasks are prohibited. If you're launching field tasks, mention this in the instructions for Tolokers and specify the purpose of collecting information (for example, monitoring prices or checking a company's business hours). If the responses you receive contain photos or videos that violate the terms of Section 3.5 of the [User Agreement]({{ useragreement }}), don't use them. However, you can ask Tolokers to take a selfie or a video of themselves.
 
-1. **Could harm the Toloker, other requesters, or the Toloka platform.** Don't post tasks if they:
+1. **Could harm the Toloka platform, Tolokers, other requesters, or a third party.** Don't post tasks if they:
 
     - Involve illegal activities or creating illegal materials. Please note that Toloka has Tolokers all over the world. The terms of the task and its materials must not violate the laws of their countries.
+
+    - Could cause moral or material harm to Tolokers or mislead them.
 
     - Are offensive or violate ethical and moral norms.
 
     - Encourage downloading or installing software, including malware, on Tolokers' devices. If special software is needed to complete your task, contact support.
 
-    - Could cause moral or material harm to Tolokers or mislead them.
-
-    - Harm the Toloka platform, its reputation, business, infrastructure, data, and more.
+    - Harm the Toloka platform or its underlying technology, other requesters, third parties, the infrastructure, the internet, and more.
 
 1. **Serve as recruiting** or assigning tasks to people who work for the requester. Don't make Tolokers do work outside the platform and don't post tasks for your employees.
 
@@ -50,9 +50,7 @@ Toloka **isn't intended** for tasks that could harm Tolokers, other requesters, 
 
 The guidelines for conducting surveys in Toloka are based on the [Ethical Principles for Medical Research Involving Human Subjects](https://www.wma.net/policies-post/wma-declaration-of-helsinki-ethical-principles-for-medical-research-involving-human-subjects/):
 
-1. Before conducting a survey, make sure that all your content has been checked and approved by the Internal Review Board (IRB). Save the number assigned to your IRB-approved survey. You will need it when launching it through the academic survey template.
-
-    If you're using a different template and/or are running your survey on a third-party website, the platform's administration may also request that number for verification purposes.
+1. Before conducting a survey, make sure that all your content has been checked and approved by the Internal Review Board (IRB). Save the number assigned to your IRB-approved survey. You will need it when launching it through the academic survey template. If you're using a different template and/or are running your survey on a third-party website, the platform's administration may also request that number for verification purposes.
 
 1. The instructions for conducting a survey should contain:
 
@@ -61,17 +59,11 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
     - Approximate survey completion time.
     - A privacy notice explaining how the data will be used in general and for scientific/research purposes specifically.
 
-1. Do not request data that can be used to identify the Toloker (for example, their first and last name, phone number, email address, or registration or residence address).
+1.  Do not request data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. You can ask questions regarding the respondents' gender, age, education level, region/city of residence, and income level. To preserve the anonymity of requesters and annotators, do not disclose the contact details of the survey's organizers in the task or when corresponding with annotators. Make sure you communicate with annotators only via private messages in your Toloka account. Before transmitting personal data to Toloka, pseudonymize or anonymize it. For example, you can cover up people's faces in photos, cut out the document fields that are filled, and change the pitch of the voice in speech recordings.
 
-    You can ask questions regarding the respondents' gender, age, education level, region/city of residence, and income level. To preserve the anonymity of requesters and Tolokers, do not disclose the contact details of the survey's organizers in the task or when corresponding with Tolokers. Make sure you communicate with Tolokers only via private messages in your Toloka account.
+1. The amount that the Toloker earns for completing the survey (including rewards) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
 
-1. The amount that the Toloker earns for completing the survey (including rewards) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria.
-
-    Set the price based on how long it should take performers to complete the survey.
-
-1. Do not include questions or content in your survey that could cause moral, material, or any other type of harm to the Toloker or the Toloka platform.
-
-    The terms of the survey and any materials included in it should not violate the laws of the countries where the survey is available.
+1. Do not include questions or content in your survey that could cause moral, material, or any other type of harm to the Toloker or the Toloka platform. The terms of the survey and any materials included in it should not violate the laws of the countries where the survey is available.
 
 1. The survey should not be used to promote political, ideological, religious, or other views. The questions and other materials included in the survey should not impose the author's point of view on the respondents, offend the proponents of other positions, or stir up discord among users and various groups of people.
 
@@ -96,6 +88,7 @@ The name of the task must match its content, description, and instructions.
 - Contain unreadable characters, code elements, and links.
 - Mention illegal actions or prohibited goods and services.
 - Contradict the applicable legislation.
+- Request or contain data that can be used to identify the annotator or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. Before transmitting personal data to Toloka, pseudonymize or anonymize it. For example, you can cover up people's faces in photos, cut out the document fields that are filled, and change the pitch of the voice in speech recordings.
 
 Toloka reserves the right to check the platform's public resources and block tasks that do not meet the aforementioned conditions.
 
@@ -121,19 +114,19 @@ Toloka reserves the right to check the platform's public resources and block tas
 
     - Allow the requester or third parties to access the Toloker's account in Toloka.
 
-    - Request data that can be used to identify the Toloker (for example, their phone number, email address, first and last name, place of residence, or bank card details).
+    - Request or contain data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. Before transmitting personal data to Toloka, pseudonymize or anonymize it. For example, you can cover up people's faces in photos, cut out the document fields that are filled, and change the pitch of the voice in speech recordings.
 
-    - Make Tolokers take pictures or videos of people on the street, cars, and other vehicles with licence plates. Such tasks are prohibited by the [User Agreement]({{ useragreement }}). Mention this in the instructions for Tolokers. If you receive such photos or videos in responses, don't use them. However, you can ask Tolokers to take a selfie or a video of themselves.
+    - Make Tolokers take pictures or videos of people on the street, cars, and other vehicles with licence plates. In accordance with Section 3.5 of the [User Agreement]({{ useragreement }}), such tasks are prohibited. If you're launching field tasks, mention this in the instructions for Tolokers and specify the purpose of collecting information (for example, monitoring prices or checking a company's business hours). If the responses you receive contain photos or videos that violate the terms of Section 3.5 of the [User Agreement]({{ useragreement }}), don't use them. However, you can ask Tolokers to take a selfie or a video of themselves.
 
 - **Could harm the Toloker.** Don't post tasks if they:
 
     - Involve illegal activities or creating illegal materials. Please note that Toloka has Tolokers all over the world. The terms of the task and its materials must not violate the laws of their countries.
 
+    - Could cause moral or material harm to Tolokers or mislead them.
+
     - Are offensive or violate ethical and moral norms.
 
     - Encourage downloading or installing software, including malware, on Tolokers' devices. If special software is needed to complete your task, contact support.
-
-    - Could cause moral or material harm to Tolokers or mislead them.
 
     - Cause harm to data or any part of the Toloka platform.
 
