@@ -14,7 +14,7 @@ No. After sending a task, the Toloker can't make any changes to it. You can add 
 
 ## How can I notify the Toloker of changes in the instructions? {#notify}
 
-Add a notification to the [project](../../glossary#project) description (for example: “Attention! The [instructions](../../glossary#task-instruction) changed”) and send a message to all the people who completed your tasks.
+Add a notification to the [project](../../glossary#project) description (for example: “Attention! The [instructions](../../glossary#instructions) changed”) and send a message to all the people who completed your tasks.
 
 To do this:
 
