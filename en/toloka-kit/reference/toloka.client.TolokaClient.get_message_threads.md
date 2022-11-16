@@ -1,22 +1,23 @@
 # get_message_threads
-`toloka.client.TolokaClient.get_message_threads`
+`toloka.client.TolokaClient.get_message_threads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L927)
 
-Finds all message threads that match certain rules and returns them in an iterable object
+Finds all message threads that match certain criteria.
 
 
-Unlike find_message_threads, returns generator. Does not sort threads.
-While iterating over the result, several requests to the Toloka server is possible.
+`get_message_threads` returns a generator. You can iterate over all found message threads using the generator. Several requests to the Toloka server are possible while iterating.
+
+If you need to sort message threads use the [find_message_threads](toloka.client.TolokaClient.find_message_threads.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`folder`|**Union\[str, [Folder](toloka.client.message_thread.Folder.md), List\[Union\[str, [Folder](toloka.client.message_thread.Folder.md)\]\], None\]**|<p>Folders to search for the thread</p>
-`folder_ne`|**Union\[str, [Folder](toloka.client.message_thread.Folder.md), List\[Union\[str, [Folder](toloka.client.message_thread.Folder.md)\]\], None\]**|<p>Folders to not search for the thread</p>
-`id_lt`|**Optional\[str\]**|<p>Threads with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Threads with an ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Threads with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Threads with an ID greater than or equal to the specified value.</p>
+`folder`|**Union\[str, [Folder](toloka.client.message_thread.Folder.md), List\[Union\[str, [Folder](toloka.client.message_thread.Folder.md)\]\], None\]**|<p>A folder where to search threads or a list of folders. Refer to the [Folder](toloka.client.message_thread.Folder.md) page for more information on the available `folder` values.</p>
+`folder_ne`|**Union\[str, [Folder](toloka.client.message_thread.Folder.md), List\[Union\[str, [Folder](toloka.client.message_thread.Folder.md)\]\], None\]**|<p>A folder to skip or a list of folders. Supported values are the same as for `folder`.</p>
+`id_lt`|**Optional\[str\]**|<p>Threads with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Threads with IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Threads with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Threads with IDs greater than or equal to the specified value.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Threads created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Threads created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Threads created after the specified date.</p>
@@ -24,7 +25,7 @@ While iterating over the result, several requests to the Toloka server is possib
 
 * **Yields:**
 
-  The next object corresponding to the request parameters.
+  The next matching message thread.
 
 * **Yield type:**
 

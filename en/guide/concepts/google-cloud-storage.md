@@ -59,6 +59,8 @@ To get links to files:
 
 1. Select **Cloud Storage → Storage Object Viewer**.
 
+    ![](../_images/tutorials/cloud-storage/google-cloud/public-access.png)
+
 1. Click **Save → Allow public access**.
 
 {% note info %}

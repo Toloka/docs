@@ -1,21 +1,26 @@
 # get_app
-`toloka.client.TolokaClient.get_app` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.get_app` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3585)
 
 ```python
-get_app(self, app_id: str)
+get_app(
+    self,
+    app_id: str,
+    lang: Optional[str] = None
+)
 ```
 
-Information about the App.
+Gets information from Toloka about an App solution.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`app_id`|**str**|<p>App ID.</p>
+`app_id`|**str**|<p>The ID of the solution.</p>
+`lang`|**Optional\[str\]**|<p>ISO 639 language code.</p>
 
 * **Returns:**
 
-  the App.
+  The App solution.
 
 * **Return type:**
 

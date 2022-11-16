@@ -548,7 +548,7 @@ The default value is `false`.||
 
 ## Recommendations {#recomendations}
 
-- If you edit a required field, the changes apply only to new task [pools](../../glossary.md#pool). For example, if you need to fix an error in a project, [clone the pool](https://toloka.ai/docs/guide/concepts/pool-main.html) or [create a new one](https://toloka.ai/docs/guide/concepts/pool-main.html). Existing task pools will continue using the previous version of the project.
+- If you edit a required field, the changes apply only to new task [pools](../../glossary.md#pool). For example, if you need to fix an error in a project, [clone the pool](../../guide/concepts/pool-main.md) or [create a new one](../../guide/concepts/pool-main.md). Existing task pools will continue using the previous version of the project.
 
 - In the output, use value validation and don't forget to mark the field as required if a Toloker has to fill it in.
 - Hidden fields are intended only for requesters and are not available in the task interface. The values of hidden fields can't be used either in the JS code or in the template constructor.

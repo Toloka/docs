@@ -1,10 +1,10 @@
 # TextRASA
-`crowdkit.aggregation.texts.text_rasa.TextRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/texts/text_rasa.py#L11)
+`crowdkit.aggregation.texts.text_rasa.TextRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/texts/text_rasa.py#L11)
 
 ```python
 TextRASA(
     self,
-    encoder: Callable[[str], ndarray],
+    encoder: Callable[[str], ...],
     n_iter: int = 100,
     tol: float = 1e-05,
     alpha: float = 0.05
@@ -21,7 +21,7 @@ aggregation.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`encoder`|**Callable\[\[str\], ndarray\]**|<p>A callable that takes a text and returns a NumPy array containing the corresponding embedding.</p>
+`encoder`|**Callable\[\[str\], ...\]**|<p>A callable that takes a text and returns a NumPy array containing the corresponding embedding.</p>
 `n_iter`|**int**|<p>A number of RASA iterations.</p>
 `alpha`|**float**|<p>Confidence level of chi-squared distribution quantiles in beta parameter formula.</p>
 

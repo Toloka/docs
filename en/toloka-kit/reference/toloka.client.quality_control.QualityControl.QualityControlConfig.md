@@ -1,5 +1,5 @@
 # QualityControlConfig
-`toloka.client.quality_control.QualityControl.QualityControlConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/quality_control.py#L95)
+`toloka.client.quality_control.QualityControl.QualityControlConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/quality_control.py#L95)
 
 ```python
 QualityControlConfig(
@@ -13,7 +13,7 @@ QualityControlConfig(
 Quality control block
 
 
-Quality control blocks help regulate access to a project or pool: you can filter out users who give incorrect answers
+Quality control blocks help regulate access to a project or pool: you can filter out Tolokers who give incorrect answers
 in control tasks, skip many tasks in a row, and so on.
 
 The block consists of two parts: condition and the action to be performed when the condition is met.

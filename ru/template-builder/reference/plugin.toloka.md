@@ -1,5 +1,7 @@
 # plugin.toloka
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Плагин с дополнительными настройками заданий в Толоке.
 
 ## Свойства компонента {#properties}

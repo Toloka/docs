@@ -1,5 +1,7 @@
 # Интерфейс задания
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} определяет внешний вид задания для исполнителя и логику обработки ответов.
@@ -36,7 +38,7 @@
 
 {% cut "Как добавить компонент" %}
 
-1. Откройте помощник по созданию интерфейса задания. Для этого в блоке {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} нажмите кнопку ![](../_images/location-job/helper-icon.png) и выберите компонент.
+1. Откройте помощник по созданию интерфейса задания. Для этого в блоке {% if locale == "ru-ru" %}**Интерфейс задания**{% endif %}{% if locale == "en-com" %}**Task interface**{% endif %} нажмите кнопку ![](../_images/location-job/helper-icon.svg) и выберите компонент.
 
     Нажмите {% if locale == "ru-ru" %}**Подробнее**{% endif %}{% if locale == "en-com" %}**More**{% endif %}, чтобы посмотреть пример и полный список параметров.
 

@@ -94,7 +94,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
           1. In the **Input data** field, enter:
 
@@ -132,7 +132,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
               Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
               {% note info %}
 
@@ -150,7 +150,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
 
@@ -229,7 +229,7 @@ To create a pool:
 
     Learn more in [Quality control](control.md).
 
-1. Enter `3` in the **The number of Tolokers to complete each task ** field in the **Task overlap** section.
+1. Enter `3` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
 
 1. In the **Additional settings** block:
 
@@ -257,7 +257,7 @@ To create a pool:
 
     1. Click **Download results**.
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
+1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
     1. Leave the `INPUT:image` column unchanged.
 
@@ -311,7 +311,7 @@ To create a pool:
 
         {% note info %}
 
-        In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5-10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
+        In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5–10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
         {% endnote %}
 
@@ -319,7 +319,7 @@ To create a pool:
 
 To get the results:
 
-1. Next to the **Download results** button, click ![](../_images/other/drop-down.png).
+1. Next to the **Download results** button, click ![](../_images/other/drop-down.svg).
 
 1. Choose the **Dawid-Skene aggregation model**. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 
@@ -346,7 +346,7 @@ You can check the results in two ways:
 
 #### Review assignments in the file with the results
 
-To review the [submitted assignments](../../glossary.md#submitted-answers):
+To review the [submitted assignments](../../glossary.md#completed-tasks):
 
 1. In the text or spreadsheet editor, open the file that you received after aggregating the results.
 
@@ -396,7 +396,7 @@ To check submitted assignments:
 
 1. Hover over the line of the assignment you want to check.
 
-1. In the **Status** column, you'll see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.png)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.png)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
+1. In the **Status** column, you'll see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
 
 ## What's next {#what-next}
 

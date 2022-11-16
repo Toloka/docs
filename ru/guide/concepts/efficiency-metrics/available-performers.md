@@ -1,5 +1,7 @@
 # {% if locale == "ru-ru" %}Доступные исполнители{% endif %}{% if locale == "en-com" %}Available Tolokers{% endif %}
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 Эта метрика показывает доступное в данный момент число исполнителей [пула](../../../glossary.md#pool) с учетом фильтров:
 
 - Если исполнителей мало, то стоит пересмотреть условия фильтров.

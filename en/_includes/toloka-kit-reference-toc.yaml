@@ -26,6 +26,8 @@ items:
         href: ../toloka-kit/reference/toloka.client.TolokaClient.archive_app_project.md
       - name: create_app_batch
         href: ../toloka-kit/reference/toloka.client.TolokaClient.create_app_batch.md
+      - name: patch_app_batch
+        href: ../toloka-kit/reference/toloka.client.TolokaClient.patch_app_batch.md
       - name: create_app_item
         href: ../toloka-kit/reference/toloka.client.TolokaClient.create_app_item.md
       - name: create_app_items
@@ -58,6 +60,10 @@ items:
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_apps.md
       - name: start_app_batch
         href: ../toloka-kit/reference/toloka.client.TolokaClient.start_app_batch.md
+      - name: stop_app_batch
+        href: ../toloka-kit/reference/toloka.client.TolokaClient.stop_app_batch.md
+      - name: resume_app_batch
+        href: ../toloka-kit/reference/toloka.client.TolokaClient.resume_app_batch.md
       - name: unarchive_app_project
         href: ../toloka-kit/reference/toloka.client.TolokaClient.unarchive_app_project.md
     - name: assignments
@@ -70,7 +76,7 @@ items:
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_assignment.md
       - name: get_assignments
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_assignments.md
-      - name: get_assignments_df
+      - name: get_assignments_df [pandas]
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_assignments_df.md
       - name: patch_assignment
         href: ../toloka-kit/reference/toloka.client.TolokaClient.patch_assignment.md
@@ -104,6 +110,10 @@ items:
       items:
       - name: get_operation
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_operation.md
+      - name: find_operations
+        href: ../toloka-kit/reference/toloka.client.TolokaClient.find_operations.md
+      - name: get_operations
+        href: ../toloka-kit/reference/toloka.client.TolokaClient.get_operations.md
       - name: get_operation_log
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_operation_log.md
       - name: wait_operation
@@ -276,6 +286,8 @@ items:
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_user_skill.md
       - name: get_user_skills
         href: ../toloka-kit/reference/toloka.client.TolokaClient.get_user_skills.md
+      - name: get_user
+        href: ../toloka-kit/reference/toloka.client.TolokaClient.get_user.md
       - name: set_user_skill
         href: ../toloka-kit/reference/toloka.client.TolokaClient.set_user_skill.md
     - name: webhook subscription
@@ -381,8 +393,8 @@ items:
       href: ../toloka-kit/reference/toloka.client.analytics_request.SkippedAssignmentsCountPoolAnalytics.md
     - name: SpentBudgetPoolAnalytics
       href: ../toloka-kit/reference/toloka.client.analytics_request.SpentBudgetPoolAnalytics.md
-    - name: SubmitedAssignmentsCountPoolAnalytics
-      href: ../toloka-kit/reference/toloka.client.analytics_request.SubmitedAssignmentsCountPoolAnalytics.md
+    - name: SubmittedAssignmentsCountPoolAnalytics
+      href: ../toloka-kit/reference/toloka.client.analytics_request.SubmittedAssignmentsCountPoolAnalytics.md
     - name: UniqueSubmittersCountPoolAnalytics
       href: ../toloka-kit/reference/toloka.client.analytics_request.UniqueSubmittersCountPoolAnalytics.md
     - name: UniqueWorkersCountPoolAnalytics
@@ -394,6 +406,9 @@ items:
       hidden: true
     - name: App
       href: ../toloka-kit/reference/toloka.client.app.App.md
+    - name: AppLightestResult
+      href: ../toloka-kit/reference/toloka.client.app.AppLightestResult.md
+      hidden: true
     - name: AppBatch
       href: ../toloka-kit/reference/toloka.client.app.AppBatch.md
     - name: AppBatch.Status
@@ -401,6 +416,9 @@ items:
       hidden: true
     - name: AppBatchCreateRequest
       href: ../toloka-kit/reference/toloka.client.app.AppBatchCreateRequest.md
+    - name: AppItemImport
+      href: ../toloka-kit/reference/toloka.client.app.AppItemImport.md
+      hidden: true
     - name: AppItem
       href: ../toloka-kit/reference/toloka.client.app.AppItem.md
     - name: AppItem.Status
@@ -1308,6 +1326,12 @@ items:
     - name: WebhookSubscriptionSortItems.SortItem
       href: ../toloka-kit/reference/toloka.client.search_requests.WebhookSubscriptionSortItems.SortItem.md
       hidden: true
+    - name: OperationSortItems.SortItem.SortField
+      href: ../toloka-kit/reference/toloka.client.search_requests.OperationSortItems.SortItem.SortField.md
+      hidden: true
+    - name: OperationSortItems.SortItem
+      href: ../toloka-kit/reference/toloka.client.search_requests.OperationSortItems.SortItem.md
+      hidden: true
     - name: AggregatedSolutionSortItems
       href: ../toloka-kit/reference/toloka.client.search_requests.AggregatedSolutionSortItems.md
     - name: AppBatchSortItems
@@ -1344,6 +1368,8 @@ items:
       href: ../toloka-kit/reference/toloka.client.search_requests.UserSkillSortItems.md
     - name: WebhookSubscriptionSortItems
       href: ../toloka-kit/reference/toloka.client.search_requests.WebhookSubscriptionSortItems.md
+    - name: OperationSortItems
+      href: ../toloka-kit/reference/toloka.client.search_requests.OperationSortItems.md
     - name: BaseSearchRequest
       href: ../toloka-kit/reference/toloka.client.search_requests.BaseSearchRequest.md
       hidden: true
@@ -1443,6 +1469,11 @@ items:
     - name: WebhookSubscriptionSearchRequest.CompareFields
       href: ../toloka-kit/reference/toloka.client.search_requests.WebhookSubscriptionSearchRequest.CompareFields.md
       hidden: true
+    - name: OperationSearchRequest
+      href: ../toloka-kit/reference/toloka.client.search_requests.OperationSearchRequest.md
+    - name: OperationSearchRequest.CompareFields
+      href: ../toloka-kit/reference/toloka.client.search_requests.OperationSearchRequest.CompareFields.md
+      hidden: true
     - name: SearchRequestMetaclass
       href: ../toloka-kit/reference/toloka.client.search_requests.SearchRequestMetaclass.md
       hidden: true
@@ -1487,6 +1518,8 @@ items:
       href: ../toloka-kit/reference/toloka.client.search_results.UserSkillSearchResult.md
     - name: WebhookSubscriptionSearchResult
       href: ../toloka-kit/reference/toloka.client.search_results.WebhookSubscriptionSearchResult.md
+    - name: OperationSearchResult
+      href: ../toloka-kit/reference/toloka.client.search_results.OperationSearchResult.md
   - name: skill
     items:
     - name: Skill
@@ -1885,6 +1918,13 @@ items:
     - name: codegen_setter_for_owner
       href: ../toloka-kit/reference/toloka.client.training.codegen_setter_for_owner.md
       hidden: true
+  - name: user
+    items:
+    - name: User
+      href: ../toloka-kit/reference/toloka.client.user.User.md
+    - name: User.Attributes
+      href: ../toloka-kit/reference/toloka.client.user.User.Attributes.md
+      hidden: true
   - name: user_bonus
     items:
     - name: UserBonus
@@ -1932,7 +1972,7 @@ items:
   - name: AsyncTolokaClient.wait_operation
     href: ../toloka-kit/reference/toloka.async_client.client.AsyncTolokaClient.wait_operation.md
     hidden: true
-- name: toloka.autoquality
+- name: toloka.autoquality [autoquality]
   items:
   - name: optimizer
     items:
@@ -1967,7 +2007,7 @@ items:
       hidden: true
     - name: MetricCollector.run
       href: ../toloka-kit/reference/toloka.metrics.collector.MetricCollector.run.md
-  - name: jupyter_dashboard
+  - name: jupyter_dashboard [jupyter-metrics]
     items:
     - name: Chart
       href: ../toloka-kit/reference/toloka.metrics.jupyter_dashboard.Chart.md
@@ -2116,7 +2156,7 @@ items:
     - name: NewerInstanceDetectedError
       href: ../toloka-kit/reference/toloka.streaming.locker.NewerInstanceDetectedError.md
       hidden: true
-    - name: ZooKeeperLocker
+    - name: ZooKeeperLocker [zookeeper]
       href: ../toloka-kit/reference/toloka.streaming.locker.ZooKeeperLocker.md
       hidden: true
   - name: event
@@ -2230,6 +2270,12 @@ items:
     - name: Pipeline.run
       href: ../toloka-kit/reference/toloka.streaming.pipeline.Pipeline.run.md
       hidden: true
+    - name: Pipeline.run_manually
+      href: ../toloka-kit/reference/toloka.streaming.pipeline.Pipeline.run_manually.md
+      hidden: true
+    - name: IterationMode
+      href: ../toloka-kit/reference/toloka.streaming.pipeline.IterationMode.md
+      hidden: true
   - name: storage
     hidden: true
     items:
@@ -2247,6 +2293,15 @@ items:
     - name: BaseStorage.save
       href: ../toloka-kit/reference/toloka.streaming.storage.BaseStorage.save.md
       hidden: true
+    - name: BucketType
+      href: ../toloka-kit/reference/toloka.streaming.storage.BaseStorage.md
+      hidden: true
+    - name: BucketType.download_fileobj
+      href: ../toloka-kit/reference/toloka.streaming.storage.BucketType.download_fileobj.md
+      hidden: true
+    - name: BucketType.upload_fileobj
+      href: ../toloka-kit/reference/toloka.streaming.storage.BucketType.upload_fileobj.md
+      hidden: true
     - name: JSONLocalStorage.DefaultNearbyFileLocker
       href: ../toloka-kit/reference/toloka.streaming.storage.JSONLocalStorage.DefaultNearbyFileLocker.md
       hidden: true
@@ -2261,13 +2316,16 @@ items:
     - name: JSONLocalStorage.save
       href: ../toloka-kit/reference/toloka.streaming.storage.JSONLocalStorage.save.md
       hidden: true
+    - name: BucketType
+      href: ../toloka-kit/reference/toloka.streaming.storage.BucketType.md
+      hidden: true
     - name: S3Storage.cleanup
       href: ../toloka-kit/reference/toloka.streaming.storage.S3Storage.cleanup.md
       hidden: true
     - name: S3Storage.load
       href: ../toloka-kit/reference/toloka.streaming.storage.S3Storage.load.md
       hidden: true
-    - name: S3Storage
+    - name: S3Storage [s3]
       href: ../toloka-kit/reference/toloka.streaming.storage.S3Storage.md
     - name: S3Storage.save
       href: ../toloka-kit/reference/toloka.streaming.storage.S3Storage.save.md
@@ -2327,4 +2385,3 @@ items:
   - name: pickle_loads_base64
     href: ../toloka-kit/reference/toloka.util.stored.pickle_loads_base64.md
     hidden: true
-base: en

@@ -2,11 +2,11 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for uploading images in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/field.media-file){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for uploading images in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.media-file.md){% endif %}.
 
 {% endnote %}
 
-To add an image upload button ![](../../_images/other/b-image-button.png) to the task, use the `{{field type= "file-img" name="<[output field](../incoming.md) name> "sources="<sources parameter>" fileType="<fileType parameter>"}}`. After the image is uploaded the Toloker will see an icon for image preview. Example:
+To add an image upload button ![](../../_images/other/b-image-button.png) to the task, use the `{{field type= "file-img" name="<output field name> "sources="<sources parameter>" fileType="<fileType parameter>"}}`. After the image is uploaded the Toloker will see an icon for image preview. Example:
 
 ```plaintext
 {{field type="file-img" name="photo" sources="CAMERA" fileType="IMAGE" camera=true}}

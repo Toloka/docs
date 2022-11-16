@@ -1,5 +1,7 @@
 # plugin.field.text-annotation.hotkeys
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Позволяет задавать горячие клавиши для компонента [field.text-annotation](field.text-annotation.md).
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TeqjT)

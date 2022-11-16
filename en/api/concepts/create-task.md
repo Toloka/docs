@@ -183,7 +183,7 @@ Required if the `allow_defaults=true` parameter is not used when creating tasks 
 Task overlap. ||
 || **known_solutions[]** {#known} | **array of objects**
 
-Correct responses to [control](../../glossary.md#control) and [training](../../glossary.md#training-tasks) tasks.
+Correct responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
 
 You can specify several options for a correct task response.
 

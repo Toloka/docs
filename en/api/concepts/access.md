@@ -21,7 +21,7 @@ Authorization: OAuth <OAuth token>
 
 ## Getting an OAuth token {#token}
 
-Working with the Toloka API requires an OAuth access token. [Register](https://toloka.ai/docs/guide/concepts/access.html) in Toloka and get an OAuth token in the requester interface:
+Working with the Toloka API requires an OAuth access token. [Register](../../guide/concepts/access.md) in Toloka and get an OAuth token in the requester interface:
 
 - In the sandbox for debugging tasks: [https://sandbox.toloka.yandex.com/requester/profile/integration](https://sandbox.toloka.yandex.com/requester/profile/integration).
 

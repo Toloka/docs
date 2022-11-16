@@ -1,5 +1,7 @@
 # helper.concat-arrays
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Объединение нескольких массивов в один.
 
 Например, у вас есть несколько массивов:

@@ -1,5 +1,5 @@
 # BaseConditionV1
-`toloka.client.project.template_builder.conditions.BaseConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/conditions.py#L33)
+`toloka.client.project.template_builder.conditions.BaseConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/conditions.py#L33)
 
 ```python
 BaseConditionV1(
@@ -19,4 +19,4 @@ For example, you can check that a text field is filled in.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`hint`|**Optional\[Any\]**|<p>Validation error message that the user will see.</p>
+`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>

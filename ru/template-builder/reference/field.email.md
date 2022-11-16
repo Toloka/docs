@@ -1,5 +1,7 @@
 # field.email
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Создает поле для ввода адреса электронной почты.
 
 Проверяет, что в тексте есть символ `@`. Другие условия [настройте самостоятельно](../best-practices/conditions.md).

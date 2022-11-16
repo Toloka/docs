@@ -1,5 +1,5 @@
 # create_project
-`toloka.client.TolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1018)
 
 ```python
 create_project(self, project: Project)
@@ -11,7 +11,7 @@ Creates a new project
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`project`|**[Project](toloka.client.project.Project.md)**|<p>New Project with setted parameters.</p>
+`project`|**[Project](toloka.client.project.Project.md)**|<p>New Project with set parameters.</p>
 
 * **Returns:**
 

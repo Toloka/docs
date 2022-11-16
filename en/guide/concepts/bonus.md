@@ -1,6 +1,6 @@
 # Rewards
 
-To motivate Tolokers to complete your project tasks quickly and provide high-quality responses, you can give extra rewards for individual tasks, or reward one or more trusted users (in addition to paying them for [task completion](../../glossary.md#submitted-answers)).
+To motivate Tolokers to complete your project tasks quickly and provide high-quality responses, you can give extra rewards for individual tasks, or reward one or more trusted users (in addition to paying them for [task completion](../../glossary.md#completed-tasks)).
 
 The reward amount can be from 0.01 to 100 dollars per Toloker per time.
 
@@ -46,7 +46,11 @@ To issue rewards to Tolokers:
 
 1. Choose the Tolokers who will receive the reward.
 
-    {% include [select-tolokers](../_includes/select-tolokers.md) %}
+    {% cut "How to select Tolokers" %}
+
+    {% include [select-tolokers-internal](../_includes/select-tolokers-internal.md) %}
+
+    {% endcut %}
 
 1. Specify the [project](../../glossary.md#project) or [pool](../../glossary.md#pool) in the corresponding fields in the left part of the page.
 

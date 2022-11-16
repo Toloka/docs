@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button with click validation in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/operations/internet-search#action.open-link){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button with click validation in {% if locale == "en-com" %}[Template Builder](../../../template-builder/operations/internet-search.md#action.open-link){% endif %}.
 
 {% endnote %}
 
@@ -14,7 +14,7 @@ Variations of button use:
 
 - Preventing the Toloker from completing the task if the link was not opened. Add the `"allowed_values":[true]` parameter in the output data description.
 
-To add the button with the link to the [task interface](../../../glossary.md#task-interface), use the `{{field type="button-clicked" name="[output field](../incoming.md) name>"}}` component. Example:
+To add the button with the link to the [task interface](../../../glossary.md#task-interface), use the `{{field type="button-clicked" name="output field name>"}}` component. Example:
 
 {% if locale == "en-com" %}
 
@@ -24,7 +24,7 @@ To add the button with the link to the [task interface](../../../glossary.md#tas
 
 {% endif %}
 
-For a complete list of parameters, see the [table](#table).
+For a complete list of parameters, see the [table](#parameters).
 
 Add a field of `Boolean` type to the output data description. To prevent the Toloker from sending responses without opening the link, add the `"allowed_values":[true]` parameter.
 

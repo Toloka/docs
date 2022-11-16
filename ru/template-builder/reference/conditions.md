@@ -1,5 +1,7 @@
 # Список условий
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компоненты с именем `conditions.*` позволяют проверять, соответствует ли выражение какому-то условию. Например, чтобы проверить, что [поле с текстом заполнено](condition.required.md).
 
 | Component                                           | Description                                                                                                                                                                                                                                        |

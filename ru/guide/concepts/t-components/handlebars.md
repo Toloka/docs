@@ -1,5 +1,7 @@
 # Выражения и хелперы
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать интерфейс задания в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/index.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/index.md){% endif %}.
@@ -60,7 +62,7 @@ id: not_var{{id}}<a href="not_var{{link.url}}">not_var{{link.title}}</a>
 
 Свой хелпер можно зарегистрировать с помощью метода `Handlebars.registerHelper`. Например:
 
-Хелпер для экранирования параметра `title` из приведенного выше [кода в формате JSON](#example-json):
+Хелпер для экранирования параметра `title` из приведенного выше [кода в формате JSON](#expressions):
 
 ```html
 Handlebars.registerHelper('escape', (title, url) => new Handlebars.SafeString(`<a href="${Handlebars.escapeExpression(url)}">${Handlebars.escapeExpression(title)}</a>`));
@@ -166,7 +168,7 @@ not_var{{else}}
 - `{{@first}}` — true, если это первый элемент массива;
 - `{{@last}}` — true, если это последний элемент массива.
 
-Для приведенного в предыдущем примере [списка](#example-json-2) хелпер
+Для приведенного в предыдущем примере [списка](#each) хелпер
 
 ```html
 {{#each links}}

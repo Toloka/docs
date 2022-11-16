@@ -56,4 +56,8 @@ Choose whether a Toloker can select only one or multiple answer options:
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TqtBP)
 
+## See also {#see-also}
+
+- [Tutorials — audio transcription](../../guide/tutorials/transcript-audio.md)
+
 {% include [contact-support](../_includes/contact-support.md) %}

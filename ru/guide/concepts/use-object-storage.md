@@ -1,5 +1,7 @@
 # Yandex Object Storage
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [amazon-cloud-storage-alternatives-note](../_includes/concepts/amazon-cloud-storage/id-amazon-cloud-storage/alternatives-note.md) %}
 
 Чтобы опробовать возможности [Yandex Cloud]({{ object-storage }}), вы можете активировать [Пробный период]({{ yandex-cloud-free-trial }}).
@@ -32,7 +34,7 @@
 
 1. Если вы сделали бакет с ограниченным доступом, то для каждого файла надо будет получить свою ссылку по [инструкции]({{ link-for-download }}).
 
-    Выберите файл и нажмите **Получить ссылку** → **Скопировать**.
+    Выберите файл и нажмите {% if locale == "ru-ru" %}**Получить ссылку** → **Скопировать**{% endif %}{% if locale == "en-com" %}**Get a link → Copy**{% endif %}.
 
     {% include [get-files-link-form](../_includes/concepts/amazon-cloud-storage/id-get-files/link-form.md) %}
 

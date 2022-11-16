@@ -1,5 +1,5 @@
 # open_training
-`toloka.client.TolokaClient.open_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.open_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1896)
 
 ```python
 open_training(self, training_id: str)
@@ -23,7 +23,7 @@ Starts distributing tasks from the training
 
 **Examples:**
 
-Open the training for performers.
+Open the training for Tolokers.
 
 ```python
 toloka_client.open_training(training_id='1')

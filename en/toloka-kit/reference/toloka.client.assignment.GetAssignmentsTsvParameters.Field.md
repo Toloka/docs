@@ -1,5 +1,5 @@
 # Field
-`toloka.client.assignment.GetAssignmentsTsvParameters.Field` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/assignment.py#L134)
+`toloka.client.assignment.GetAssignmentsTsvParameters.Field` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/assignment.py#L147)
 
 An enumeration.
 
@@ -7,16 +7,16 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`LINK`|'ASSIGNMENT:link'|<p></p>
-`ASSIGNMENT_ID`|'ASSIGNMENT:assignment_id'|<p></p>
-`TASK_ID`|'ASSIGNMENT:task_id'|<p></p>
-`TASK_SUITE_ID`|'ASSIGNMENT:task_suite_id'|<p></p>
-`WORKER_ID`|'ASSIGNMENT:worker_id'|<p></p>
-`STATUS`|'ASSIGNMENT:status'|<p></p>
-`STARTED`|'ASSIGNMENT:started'|<p></p>
-`SUBMITTED`|'ASSIGNMENT:submitted'|<p></p>
-`ACCEPTED`|'ASSIGNMENT:accepted'|<p></p>
-`REJECTED`|'ASSIGNMENT:rejected'|<p></p>
-`SKIPPED`|'ASSIGNMENT:skipped'|<p></p>
-`EXPIRED`|'ASSIGNMENT:expired'|<p></p>
-`REWARD`|'ASSIGNMENT:reward'|<p></p>
+`LINK`|'ASSIGNMENT:link'|
+`ASSIGNMENT_ID`|'ASSIGNMENT:assignment_id'|
+`TASK_ID`|'ASSIGNMENT:task_id'|
+`TASK_SUITE_ID`|'ASSIGNMENT:task_suite_id'|
+`WORKER_ID`|'ASSIGNMENT:worker_id'|
+`STATUS`|'ASSIGNMENT:status'|
+`STARTED`|'ASSIGNMENT:started'|
+`SUBMITTED`|'ASSIGNMENT:submitted'|
+`ACCEPTED`|'ASSIGNMENT:accepted'|
+`REJECTED`|'ASSIGNMENT:rejected'|
+`SKIPPED`|'ASSIGNMENT:skipped'|
+`EXPIRED`|'ASSIGNMENT:expired'|
+`REWARD`|'ASSIGNMENT:reward'|

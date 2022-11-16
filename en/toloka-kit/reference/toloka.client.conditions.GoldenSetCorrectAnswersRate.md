@@ -1,5 +1,5 @@
 # GoldenSetCorrectAnswersRate
-`toloka.client.conditions.GoldenSetCorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L179)
+`toloka.client.conditions.GoldenSetCorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L197)
 
 ```python
 GoldenSetCorrectAnswersRate(
@@ -9,5 +9,9 @@ GoldenSetCorrectAnswersRate(
 )
 ```
 
-The percentage of correct responses in control tasks
+The percentage of correct responses to control tasks.
+
+
+`GoldenSetCorrectAnswersRate` is used with collectors:
+- [GoldenSet](toloka.client.collectors.GoldenSet.md)
 

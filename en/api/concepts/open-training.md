@@ -70,8 +70,10 @@ If the current training pool status is the same as the requested status, an emp
 
 User ID. ||
 || **type** | **string**
+
 Type of operation: `TRAINING.OPEN` — Open a training pool. ||
 || **status** | **string**
+
 The status of the operation:
 
 - `PENDING` — Not started yet.
@@ -85,11 +87,15 @@ The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:m
 
 The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
+
 The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
+
 The percentage of the operation completed. ||
 || **parameters.training_id** | **string**
+
 ID of the training pool. ||
 || **details** | **object**
+
 Details of the operation completion. ||
 |#

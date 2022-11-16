@@ -1,5 +1,7 @@
 # Потоковая обработка элементов разметки
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 Для проектов с постоянным потоком новых заданий, которые не нужно группировать в пакеты, элементы разметки можно загружать в потоковом режиме. Они начнут обрабатываться сразу после добавления.
 
 Такой режим подходит, например, для заданий на модерацию.
@@ -10,7 +12,7 @@
 
 ```http
 POST /app-projects/{app_project_id}/items/bulk
-Host: https://toloka.yandex.ru
+Host: https://toloka.dev
 Authorization: OAuth <OAuth token>
 ```
 
@@ -53,7 +55,7 @@ ID проекта.||
 
 {% note info %}
 
-При добавлении элементов без пакета данных обработка начинается сразу. По [статусу](https://toloka.ai/ru/docs/toloka-apps/api/concepts/quickstart-api.html#quickstart-api__check-items) каждого элемента можно узнать о завершении обработки.
+При добавлении элементов без пакета данных обработка начинается сразу. По [статусу](quickstart-api.md#quickstart-api__check-items) каждого элемента можно узнать о завершении обработки.
 
 {% endnote %}
 
@@ -65,7 +67,7 @@ ID проекта.||
 
 ```http
 GET /app-projects/{app_project_id}/items?sort=finished&after_id={last_saved_item_id}
-Host: https://toloka.yandex.ru
+Host: https://toloka.dev
 Authorization: OAuth <OAuth token>
 ```
 

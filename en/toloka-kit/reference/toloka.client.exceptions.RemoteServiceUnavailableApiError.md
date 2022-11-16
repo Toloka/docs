@@ -1,5 +1,5 @@
 # RemoteServiceUnavailableApiError
-`toloka.client.exceptions.RemoteServiceUnavailableApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/exceptions.py#L103)
+`toloka.client.exceptions.RemoteServiceUnavailableApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/exceptions.py#L118)
 
 ## Parameters Description
 

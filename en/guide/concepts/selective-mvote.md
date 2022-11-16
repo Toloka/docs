@@ -41,6 +41,7 @@ This way we will increase overlap for inexperienced users and save money on the 
 #### When to use
 
 Use **selective majority vote check** if:
+
 - There are few or no control tasks in the project.
 
 - You have experienced Tolokers whom you trust.
@@ -67,7 +68,6 @@ To add **selective majority vote check**:
 
 1. Set the intervals of completed tasks and the number of review tasks for each interval.
 
-
 {% cut "Example" %}
 
 ![](../_images/location-job/selective.png)
@@ -77,6 +77,7 @@ To add **selective majority vote check**:
 ## Tips and recommendations {#help}
 
 - Don't use **selective majority vote check** if:
+
     - There are many questions and many response options in the task.
 
     - Tolokers need to attach a file to their assignment.
@@ -85,14 +86,12 @@ To add **selective majority vote check**:
 
 - Use **selective majority vote check** together with the [fast responses](quick-answers.md) and [skipped assignments](skipped-assignments.md) quality control rules. This way, you will eliminate dishonest Tolokers who skip tasks or complete them too quickly, which directly affects the number of completed tasks and overlap.
 
-
-
 ## What's next {#what-next}
 
 - [Add tasks to the pool](pool.md)
+
 - Learn more about how to set up overlap:
+
     - [Dynamic overlap](dynamic-overlap.md)
-
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

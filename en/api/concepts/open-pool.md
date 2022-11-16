@@ -69,7 +69,7 @@ If the pool cannot be opened, a response is returned with an error description a
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.OPEN` — Opening a pool. ||
@@ -88,9 +88,12 @@ The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:m
 
 The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **finished** | **string**
+
 The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **progress** | **integer**
+
 The percentage of the operation completed. ||
 || **parameters.pool_id** | **string**
+
 Pool ID. ||
 |#

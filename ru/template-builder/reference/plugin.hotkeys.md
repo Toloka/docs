@@ -1,5 +1,7 @@
 # plugin.hotkeys
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Позволяет задавать горячие клавиши для выполнения действий.
 
 [Подробнее о горячих клавишах](../best-practices/hotkeys.md).

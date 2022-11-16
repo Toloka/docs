@@ -1,5 +1,5 @@
 # AssignmentPatch
-`toloka.client.assignment.AssignmentPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/assignment.py#L95)
+`toloka.client.assignment.AssignmentPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/assignment.py#L110)
 
 ```python
 AssignmentPatch(
@@ -10,14 +10,14 @@ AssignmentPatch(
 )
 ```
 
-Allows you to accept or reject tasks, and leave a comment
+The new status of an assignment.
 
 
-Used in "TolokaClient.patch_assignment" method.
+It is used in the [patch_assignment](toloka.client.TolokaClient.patch_assignment.md) method to accept or reject an assignment and to leave a comment.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`public_comment`|**Optional\[str\]**|<p>Public comment about an assignment. Why it was accepted or rejected.</p>
-`status`|**Optional\[[Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]**|<p>Status of an assigned task suite.<ul><li>ACCEPTED - Accepted by the requester.</li><li>REJECTED - Rejected by the requester.</li></ul></p>
+`public_comment`|**Optional\[str\]**|<p>The public comment.</p>
+`status`|**Optional\[[Assignment.Status](toloka.client.assignment.Assignment.Status.md)\]**|<p>The new status of an assignment:</p> <ul> <li>`ACCEPTED` — Accepted by the requester.</li> <li>`REJECTED` — Rejected by the requester.</li> </ul>

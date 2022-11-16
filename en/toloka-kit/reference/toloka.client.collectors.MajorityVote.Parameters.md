@@ -1,5 +1,5 @@
 # Parameters
-`toloka.client.collectors.MajorityVote.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L427)
+`toloka.client.collectors.MajorityVote.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L431)
 
 ```python
 Parameters(

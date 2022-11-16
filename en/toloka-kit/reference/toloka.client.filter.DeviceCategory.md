@@ -1,5 +1,5 @@
 # DeviceCategory
-`toloka.client.filter.DeviceCategory` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L422)
+`toloka.client.filter.DeviceCategory` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L505)
 
 ```python
 DeviceCategory(
@@ -9,11 +9,11 @@ DeviceCategory(
 )
 ```
 
-Use to select users by their device category.
+Filtering Tolokers by their device category.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operator`|**[IdentityOperator](toloka.client.primitives.operators.IdentityOperator.md)**|<p>Comparison operator in the condition. For example, for a condition &quot;The user must be 18 years old or older» used date of birth and operator GTE («Greater than or equal»). Possible key values operator depends on the data type in the field value</p>
-`value`|**[DeviceCategory](toloka.client.filter.DeviceCategory.DeviceCategory.md)**|<p>The user&#x27;s device category.</p>
+`operator`|**[IdentityOperator](toloka.client.primitives.operators.IdentityOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
+`value`|**[DeviceCategory](toloka.client.filter.DeviceCategory.DeviceCategory.md)**|<p>The Toloker&#x27;s device category.</p>

@@ -1,8 +1,8 @@
 # Earnings
 
-If you want to have a large number of Tolokers in a project, limit the number of [completed tasks](submitted-answers.md) or daily earnings in the [project](../../glossary.md#project).
+If you want to have a large number of Tolokers in a project, limit the daily earnings in the [project](../../glossary.md#project).
 
-Ban by earnings works for the pool. If you set up a blocking rule for the project, the earnings are calculated separately for each pool.
+Ban by earnings works for the [pool](../../glossary.md#pool). If you set up a blocking rule for the project, the earnings are calculated separately for each pool.
 
 {% cut "Example" %}
 
@@ -12,17 +12,19 @@ The project has a rule set up that bans the Toloker if their earnings exceed $5 
 
 ## When to use {#when-use}
 
-Limit the Toloker's daily earnings in the [pool](../../glossary.md#pool) if you want to:
+Limit the Toloker's daily earnings in the pool if you want to:
 
-- Get responses from as many Tolokers as possible (for this purpose, you might want to set the maximum amount of earnings equal to the price for a single [task suite](../../glossary.md#task-suite)).
+- Get responses from as many Tolokers as possible. For this purpose, you might want to set the maximum amount of earnings equal to the price for a single [task suite](../../glossary.md#task-suite).
 
-- Provide protection from robots (for this purpose, set maximum earnings to a higher amount, like 10% of the entire pool cost).
+- Provide protection from robots. For this purpose, set maximum earnings to a higher amount, like 10% of the entire pool cost.
 
-#### Usage recommendations
+{% note info %}
 
 Set an amount that Tolokers can realistically earn in a day, otherwise the rule will be pointless.
 
-## Rule settings {#rule}
+{% endnote %}
+
+## How to configure {#rule}
 
 {% note alert %}
 
@@ -34,20 +36,20 @@ All fields in this rule are required. If you don't fill in at least one of them,
 || **Field** | **Overview** ||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 
-- {% if locale == "en-com" %}**latest 24 hours income**{% endif %} — The Toloker's earnings for [completed tasks](../../glossary.md#submitted-answers) in the pool over the last 24 hours.||
+- {% if locale == "en-com" %}**earned in last 24 hours**{% endif %} — The Toloker's earnings for [completed tasks](../../glossary.md#completed-tasks) in the pool over the last 24 hours.||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
 
-- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
+
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-
-- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
-
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.||
+- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.||
 |#
 
 {% note warning %}

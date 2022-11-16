@@ -1,5 +1,7 @@
 # Воспроизвести аудио
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В этом разделе мы покажем, как [добавить аудиоплеер](#insert-to-interface) в интерфейс и как убедиться, что исполнитель этот файл [прослушал](#validate-listened).
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}

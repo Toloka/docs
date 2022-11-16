@@ -1,10 +1,13 @@
 # Создание файла с заданиями
 
-Задания загружаются в [пул](pool-main.md) в [файле с заданиями](../../glossary.md#tsv-file-definition).
+{% include [deprecate](../../_includes/deprecate.md) %}
+
+Задания загружаются в [пул](pool-main.md) в [файле с заданиями](../../glossary.md#tsv).
 
 Скачайте шаблон файла для вашего [проекта](../../glossary.md#project) на странице [пула](../../glossary.md#pool). На основе шаблона подготовьте собственный файл с заданиями и загрузите его в пул.
 
-#### Использовать пример данных
+{% cut "Использовать пример данных" %}
+
 Если вы хотите посмотреть, как ваш проект будет выглядеть после запуска, но у вас еще нет заданий для разметки, вы можете загрузить в пул готовый пример данных. Примеры данных доступны для шаблонов:
 
 - {% if locale == "ru-ru" %}**Классификация изображений**{% endif %}{% if locale == "en-com" %}**Image classification**{% endif %}
@@ -16,17 +19,22 @@
 
 После того, как вы поработали с примером данных и вас все устроило, подготовьте свои данные и загрузите их в пул.
 
+{% endcut %}
+
 Если в пул необходимо загрузить задания разных типов, загрузите несколько файлов, каждый из которых будет содержать задания одного типа.
 
 ## Структура файла с заданиями {#structure}
 
 Первая строка файла содержит заголовки столбцов:
-- `INPUT:<имя [поля входных данных](incoming.md)>` — входные данные заданий.
 
-- `GOLDEN:<имя [поля выходных данных](incoming.md)>` — ответы для [контрольных заданий](../../glossary.md#control-task).
+- `INPUT:<имя поля входных данных>` — входные данные заданий.
+
+- `GOLDEN:<имя поля выходных данных>` — ответы для [контрольных заданий](../../glossary.md#control-task).
+
 - `HINT:text` — подсказка для [обучающих заданий](../../glossary.md#training-task). Текст подсказки будет показан исполнителю в верхней части задания на красном фоне, если он в обучающем задании даст ответ, который отличается от указанного правильного.
 
 - Координаты точки для [полевых заданий](walk.md):
+
     - `Al:latitude` — широта.
 
     - `Al:longitude` — долгота.
@@ -56,6 +64,7 @@
   Чтобы создать контрольное задание, добавьте:
 
   - входные данные для задания в столбцы с заголовком `INPUT`;
+
   - правильные ответы в столбцы с заголовком `GOLDEN`.
 
   {% note tip %}
@@ -63,7 +72,6 @@
   Вы также можете добавить ответы при создании пула в [режиме разметки заданий](task_markup.md) (для этого нужно использовать [«умное смешивание»](distribute-tasks-by-pages.md#smart-mixing) при загрузке заданий).
 
   {% endnote %}
-
 
   {% cut "Пример" %}
 
@@ -74,8 +82,11 @@
 - Обучающее
 
   Чтобы создать обучающее задание, добавьте:
+
   - входные данные для задания в столбцы с заголовком `INPUT`;
+
   - правильные ответы в столбцы с заголовком `GOLDEN`;
+
   - подсказку в столбец `HINT:text`.
 
   Для обучающих заданий удобно создавать [специальный пул](train.md).
@@ -99,6 +110,7 @@
   Чтобы создать полевое задание, добавьте:
 
   - входные данные для задания в столбцы с заголовком `INPUT`;
+
   - координаты в столбцы `Al:latitude` и `Al:longitude`.
 
   {% cut "Пример" %}
@@ -128,20 +140,27 @@
 - TSV
 
   1. Создайте электронную таблицу с [нужными заголовками](#structure) или скопируйте их из шаблона файла.
+
   1. Добавьте данные для заданий.
+
   1. Скопируйте всю таблицу. Вставьте ее в простой текстовый редактор (например, {% if locale == "ru-ru" %}Блокнот{% endif %}{% if locale == "en-com" %}Notepad{% endif %} на Windows или TextEdit на Mac OS).
+
   1. Сохраните файл в кодировке UTF-8 с расширением `tsv`.
 
 - XLSX
 
   1. Создайте электронную таблицу с [нужными заголовками](#structure) или скопируйте их из шаблона файла.
+
   1. Добавьте данные для заданий.
+
   1. Сохраните файл в формате `xlsx`.
 
 - JSON
 
   1. Скачайте шаблон файла в формате `json`.
+
   1. Откройте шаблон в текстовом редакторе и добавьте свои данные.
+
   1. Сохраните файл.
 
 {% endlist %}
@@ -156,7 +175,8 @@
 
 {% cut "Данные с типом строка" %}
 
-Чтобы в поле с типом строка отобразить кавычки вида ``"``:
+Чтобы в поле с типом строка отобразить кавычки вида `"`:
+
 - Каждую такую кавычку внутри текстовых данных дополните еще одной. Другие виды кавычек (`« »` и `“ ”`) не экранируйте.
 
 - Заключите поле в кавычки `" "`.
@@ -165,10 +185,10 @@
 
 Данные | Пример передачи в файл | Статус | Что увидит исполнитель
 ----- | ----- | ----- | -----
-{% if locale == "ru-ru" %}``` монитор 24" купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "ru-ru" %}``` "монитор 24"" купить" ```{% endif %}{% if locale == "en-com" %}``` "monitor 24"" buy" ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24" купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
-{% if locale == "ru-ru" %}``` книга "Все о собаках" ```{% endif %}{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "ru-ru" %}``` книга "Все о собаках" ```{% endif %}{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "ru-ru" %}``` корректный, но кавычки пропадут ```{% endif %}{% if locale == "en-com" %}``` correct, but the quotes won't be displayed ```{% endif %} | {% if locale == "ru-ru" %}``` книга Все о собаках ```{% endif %}{% if locale == "en-com" %}``` book All about dogs ```{% endif %}
-{% if locale == "ru-ru" %}``` книга «Все о собаках» ```{% endif %}{% if locale == "en-com" %}``` book «All about dogs» ```{% endif %} | {% if locale == "ru-ru" %}``` "книга «Все о собаках»" ```{% endif %}{% if locale == "en-com" %}``` "book «All about dogs»" ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` книга «Все о собаках» ```{% endif %}{% if locale == "en-com" %}``` book «All about dogs» ```{% endif %}
-{% if locale == "ru-ru" %}``` монитор 24" купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24" купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "ru-ru" %}`монитор 24" купить`{% endif %}{% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "ru-ru" %}`"монитор 24"" купить"`{% endif %}{% if locale == "en-com" %}`"monitor 24"" buy"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`монитор 24" купить`{% endif %}{% if locale == "en-com" %}`monitor 24" buy`{% endif %}
+{% if locale == "ru-ru" %}`книга "Все о собаках"`{% endif %}{% if locale == "en-com" %}`book "All about dogs"`{% endif %} | {% if locale == "ru-ru" %}`книга "Все о собаках"`{% endif %}{% if locale == "en-com" %}`book "All about dogs"`{% endif %} | {% if locale == "ru-ru" %}`корректный, но кавычки пропадут`{% endif %}{% if locale == "en-com" %}`correct, but the quotes won't be displayed`{% endif %} | {% if locale == "ru-ru" %}`книга Все о собаках`{% endif %}{% if locale == "en-com" %}`book All about dogs`{% endif %}
+{% if locale == "ru-ru" %}`книга «Все о собаках»`{% endif %}{% if locale == "en-com" %}`book «All about dogs»`{% endif %} | {% if locale == "ru-ru" %}`"книга «Все о собаках»"`{% endif %}{% if locale == "en-com" %}`"book «All about dogs»"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`книга «Все о собаках»`{% endif %}{% if locale == "en-com" %}`book «All about dogs»`{% endif %}
+{% if locale == "ru-ru" %}`монитор 24" купить`{% endif %}{% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "ru-ru" %}`монитор 24" купить`{% endif %}{% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -176,15 +196,14 @@
 
 {% cut "Чтобы загрузить данные в поле с типом JSON" %}
 
-- Каждую кавычку вида ``"`` дополните еще одной. Другие виды кавычек (`« »` и `“ ”`) не экранируйте.
+- Каждую кавычку вида `"` дополните еще одной. Другие виды кавычек (`« »` и `“ ”`) не экранируйте.
 
 - Заключите поле в  кавычки `" "`.
 
-
 Данные | Пример передачи в файл | Статус | Что увидит исполнитель
 ----- | ----- | ----- | -----
-{% if locale == "ru-ru" %}``` {"query": "монитор 24 дюйма купить"} ```{% endif %}{% if locale == "en-com" %}``` {"query": "monitor 24 inch buy"} ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24 дюйма купить""}" ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch buy""}" ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24 дюйма купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24 inch buy ```{% endif %}
-{% if locale == "ru-ru" %}``` {"query": "монитор 24 дюйма купить"} ```{% endif %}{% if locale == "en-com" %}``` {"query": "monitor 24 inch buy"} ```{% endif %} | {% if locale == "ru-ru" %}``` "{"query": "монитор 24 дюйма купить"}" ```{% endif %}{% if locale == "en-com" %}``` "{"query": "monitor 24 inch buy"}" ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "ru-ru" %}`{"query": "монитор 24 дюйма купить"}`{% endif %}{% if locale == "en-com" %}`{"query": "monitor 24 inch buy"}`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24 дюйма купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24 inch buy""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`монитор 24 дюйма купить`{% endif %}{% if locale == "en-com" %}`monitor 24 inch buy`{% endif %}
+{% if locale == "ru-ru" %}`{"query": "монитор 24 дюйма купить"}`{% endif %}{% if locale == "en-com" %}`{"query": "monitor 24 inch buy"}`{% endif %} | {% if locale == "ru-ru" %}`"{"query": "монитор 24 дюйма купить"}"`{% endif %}{% if locale == "en-com" %}`"{"query": "monitor 24 inch buy"}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -194,14 +213,13 @@
 
 - Заключите поле в кавычки `" "`.
 
-
 Данные | Пример передачи в файл | Статус | Что увидит исполнитель
 ----- | ----- | ----- | -----
-{% if locale == "ru-ru" %}``` {"query": "монитор 24\" купить"} ```{% endif %}{% if locale == "en-com" %}``` {"query": "monitor 24\" buy"} ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24\"" купить""}" ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" buy""}" ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24" купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
-{% if locale == "ru-ru" %}``` {"query": "монитор 24" купить"} ```{% endif %}{% if locale == "en-com" %}``` {"query": "monitor 24" buy"} ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24\"" купить""}" ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" buy""}" ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24" купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
-{% if locale == "ru-ru" %}``` {"query": "книга \"Все о собаках\""} ```{% endif %}{% if locale == "en-com" %}``` {"query": "book \"All about dogs\""} ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""книга \""Все о собаках\""""}" ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""book \""All about dogs\""""}" ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` книга "Все о собаках" ```{% endif %}{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %}
-{% if locale == "ru-ru" %}``` {"query": "монитор 24\" купить"} ```{% endif %}{% if locale == "en-com" %}``` {"query": "monitor 24\" buy"} ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24\"\" купить""}" ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24\"\" buy""}" ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
-{% if locale == "ru-ru" %}``` {"query": "книга \"Все о собаках\""} ```{% endif %}{% if locale == "en-com" %}``` {"query": "book \"All about dogs\""} ```{% endif %} | {% if locale == "ru-ru" %}``` "{"query": "книга \"Все о собаках\""}" ```{% endif %}{% if locale == "en-com" %}``` "{"query": "book \"All about dogs\""}" ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "ru-ru" %}`{"query": "монитор 24\" купить"}`{% endif %}{% if locale == "en-com" %}`{"query": "monitor 24\" buy"}`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24\"" купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24\"" buy""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`монитор 24" купить`{% endif %}{% if locale == "en-com" %}`monitor 24" buy`{% endif %}
+{% if locale == "ru-ru" %}`{"query": "монитор 24" купить"}`{% endif %}{% if locale == "en-com" %}`{"query": "monitor 24" buy"}`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24\"" купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24\"" buy""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`монитор 24" купить`{% endif %}{% if locale == "en-com" %}`monitor 24" buy`{% endif %}
+{% if locale == "ru-ru" %}`{"query": "книга \"Все о собаках\""}`{% endif %}{% if locale == "en-com" %}`{"query": "book \"All about dogs\""}`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""книга \""Все о собаках\""""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""book \""All about dogs\""""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`книга "Все о собаках"`{% endif %}{% if locale == "en-com" %}`book "All about dogs"`{% endif %}
+{% if locale == "ru-ru" %}`{"query": "монитор 24\" купить"}`{% endif %}{% if locale == "en-com" %}`{"query": "monitor 24\" buy"}`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24\"\" купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24\"\" buy""}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
+{% if locale == "ru-ru" %}`{"query": "книга \"Все о собаках\""}`{% endif %}{% if locale == "en-com" %}`{"query": "book \"All about dogs\""}`{% endif %} | {% if locale == "ru-ru" %}`"{"query": "книга \"Все о собаках\""}"`{% endif %}{% if locale == "en-com" %}`"{"query": "book \"All about dogs\""}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -213,8 +231,8 @@
 
 Данные | Пример передачи в файл | Статус | Что увидит исполнитель
 ----- | ----- | ----- | -----
-{% if locale == "ru-ru" %}``` {"query": "множество А\B"} ```{% endif %}``` {"query": "array A\B"} ``` | {% if locale == "ru-ru" %}``` "{""query"": ""множество A\\B""}" ```{% endif %}``` "{""query"": ""array A\\B""}" ``` | {% if locale == "ru-ru" %}``` корректru-ruный ```{% endif %}``` correct ``` | {% if locale == "ru-ru" %}``` множество A\B ```{% endif %}``` array A\B ```
-{% if locale == "ru-ru" %}``` {"query": "множество А\B"} ```{% endif %}{% if locale == "en-com" %}``` {"query": "array A\B"} ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""множество A\B""}" ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""array A\B""}" ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "ru-ru" %}`{"query": "множество А\B"}`{% endif %}`{"query": "array A\B"}`| {% if locale == "ru-ru" %}`"{""query"": ""множество A\\B""}"`{% endif %}`"{""query"": ""array A\\B""}"`| {% if locale == "ru-ru" %}`корректru-ruный`{% endif %}`correct`| {% if locale == "ru-ru" %}`множество A\B`{% endif %}`array A\B`
+{% if locale == "ru-ru" %}`{"query": "множество А\B"}`{% endif %}{% if locale == "en-com" %}`{"query": "array A\B"}`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""множество A\B""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""array A\B""}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -230,13 +248,12 @@
 
 - Заключите поле в кавычки `" "`.
 
-
 Данные | Пример передачи в файл | Статус | Что увидит исполнитель
 ----- | ----- | ----- | -----
-{% if locale == "ru-ru" %}```  [{"query": "монитор 24 дюйма купить"},{"query": "монитор 19 дюймов купить"}] ```{% endif %}{% if locale == "en-com" %}```  [{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}] ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24 дюйма купить""},{""query"": ""монитор 19 дюймов купить""}"  ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"  ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correen-comct ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24 дюймов купить монитор 19 дюймов купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24 inch buy monitor 19 inch buy ```{% endif %}
-{% if locale == "ru-ru" %}``` [{"query": "монитор 24 дюйма\, системный блок купить"},{"query": "монитор 17 дюймов\, системный блок купить"}]  ```{% endif %}{% if locale == "en-com" %}``` [{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]  ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24 дюйма\, системный блок купить""},""query"": ""монитор 19 дюймов\, системный блок купить""}"  ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"  ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24 дюймов, системный блок купить монитор 19 дюймов, системный блок купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24 inch, system unit buy monitor 19 inch, system unit buy ```{% endif %}
-{% if locale == "ru-ru" %}``` [{"query": "монитор 24 дюйма купить"},{"query": "монитор 19 дюймов купить"}]  ```{% endif %}{% if locale == "en-com" %}``` [{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]  ```{% endif %} | {% if locale == "ru-ru" %}``` "{"query": "монитор 24 дюйма купить"},{"query": "монитор 19 дюймов купить"}"  ```{% endif %}{% if locale == "en-com" %}``` "{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"  ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
-{% if locale == "ru-ru" %}``` [{"query": "монитор 24 дюйма, системный блок купить"},"query": "монитор 17 дюймов, системный блок купить"}]  ```{% endif %}{% if locale == "en-com" %}``` [{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]  ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24 дюйма, системный блок купить""},""query"": ""монитор 19 дюймов, системный блок купить""}"  ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"  ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "ru-ru" %}`[{"query": "монитор 24 дюйма купить"},{"query": "монитор 19 дюймов купить"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24 дюйма купить""},{""query"": ""монитор 19 дюймов купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correen-comct`{% endif %} | {% if locale == "ru-ru" %}`монитор 24 дюймов купить монитор 19 дюймов купить`{% endif %}{% if locale == "en-com" %}`monitor 24 inch buy monitor 19 inch buy`{% endif %}
+{% if locale == "ru-ru" %}`[{"query": "монитор 24 дюйма\, системный блок купить"},{"query": "монитор 17 дюймов\, системный блок купить"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24 дюйма\, системный блок купить""},""query"": ""монитор 19 дюймов\, системный блок купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`монитор 24 дюймов, системный блок купить монитор 19 дюймов, системный блок купить`{% endif %}{% if locale == "en-com" %}`monitor 24 inch, system unit buy monitor 19 inch, system unit buy`{% endif %}
+{% if locale == "ru-ru" %}`[{"query": "монитор 24 дюйма купить"},{"query": "монитор 19 дюймов купить"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]`{% endif %} | {% if locale == "ru-ru" %}`"{"query": "монитор 24 дюйма купить"},{"query": "монитор 19 дюймов купить"}"`{% endif %}{% if locale == "en-com" %}`"{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
+{% if locale == "ru-ru" %}`[{"query": "монитор 24 дюйма, системный блок купить"},"query": "монитор 17 дюймов, системный блок купить"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24 дюйма, системный блок купить""},""query"": ""монитор 19 дюймов, системный блок купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -246,11 +263,10 @@
 
 - Заключите поле в кавычки `" "`.
 
-
 Данные | Пример передачи в файл | Статус | Что увидит исполнитель
 ----- | ----- | ----- | -----
-{% if locale == "ru-ru" %}```  [{"query": "монитор 24\" купить"},{"query": "монитор 19\" купить"}] ```{% endif %}{% if locale == "en-com" %}```  [{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}] ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24\"" дюйма купить""},{""query"": ""монитор 19\"" купить""}"  ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"  ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` монитор 24" купить монитор 19" купить ```{% endif %}{% if locale == "en-com" %}``` monitor 24" buy monitor 19" buy ```{% endif %}
-{% if locale == "ru-ru" %}```  [{"query": "монитор 24\" купить"},{"query": "монитор 19\" купить"}] ```{% endif %}{% if locale == "en-com" %}```  [{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}] ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""монитор 24\"" дюйма купить""},{""query"": ""монитор 19\" купить""}"  ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"  ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "ru-ru" %}`[{"query": "монитор 24\" купить"},{"query": "монитор 19\" купить"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24\"" дюйма купить""},{""query"": ""монитор 19\"" купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`монитор 24" купить монитор 19" купить`{% endif %}{% if locale == "en-com" %}`monitor 24" buy monitor 19" buy`{% endif %}
+{% if locale == "ru-ru" %}`[{"query": "монитор 24\" купить"},{"query": "монитор 19\" купить"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""монитор 24\"" дюйма купить""},{""query"": ""монитор 19\" купить""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -260,11 +276,10 @@
 
 - Заключите поле в кавычки `" "`.
 
-
 Данные | Пример передачи в файл | Статус | Что увидит исполнитель
 ----- | ----- | ----- | -----
-{% if locale == "ru-ru" %}```  [{"query": "множество A\B"},{"query": "множество C\B"}] ```{% endif %}{% if locale == "en-com" %}```  [{"query": "array A\B"},{"query": "array C\B"}] ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""множество A\\\B""},{""query"": ""множество C\D""}"  ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""array A\\\B""},{""query"": ""array C\D""}"  ```{% endif %} | {% if locale == "ru-ru" %}``` корректный ```{% endif %}{% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "ru-ru" %}``` множество A\B множество C\D ```{% endif %}{% if locale == "en-com" %}``` array A\B array C\D ```{% endif %}
-{% if locale == "ru-ru" %}```  [{"query": "множество A\B"},{"query": "множество C\B"}] ```{% endif %}{% if locale == "en-com" %}```  [{"query": "array A\B"},{"query": "array C\B"}] ```{% endif %} | {% if locale == "ru-ru" %}``` "{""query"": ""множество A\\B""},{""query"": ""множество C\\D"}"  ```{% endif %}{% if locale == "en-com" %}``` "{""query"": ""array A\\B""},{""query"": ""array C\\D"}"  ```{% endif %} | {% if locale == "ru-ru" %}``` ошибка загрузки ```{% endif %}{% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "ru-ru" %}`[{"query": "множество A\B"},{"query": "множество C\B"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "array A\B"},{"query": "array C\B"}]`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""множество A\\\B""},{""query"": ""множество C\D""}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""array A\\\B""},{""query"": ""array C\D""}"`{% endif %} | {% if locale == "ru-ru" %}`корректный`{% endif %}{% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "ru-ru" %}`множество A\B множество C\D`{% endif %}{% if locale == "en-com" %}`array A\B array C\D`{% endif %}
+{% if locale == "ru-ru" %}`[{"query": "множество A\B"},{"query": "множество C\B"}]`{% endif %}{% if locale == "en-com" %}`[{"query": "array A\B"},{"query": "array C\B"}]`{% endif %} | {% if locale == "ru-ru" %}`"{""query"": ""множество A\\B""},{""query"": ""множество C\\D"}"`{% endif %}{% if locale == "en-com" %}`"{""query"": ""array A\\B""},{""query"": ""array C\\D"}"`{% endif %} | {% if locale == "ru-ru" %}`ошибка загрузки`{% endif %}{% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -274,7 +289,6 @@
 
 - [Загрузите задания в пул](task_upload.md).
 - {% if locale == "ru-ru" %}Прочитайте в блоге о том, как [создать]({{ toloka-blog-create-tsv-file }}) и [подготовить]({{ toloka-blog-prepare-tsv-file }})файл с заданиями.{% endif %}
-
 
 ## Решение проблем {#troubleshooting}
 
@@ -307,7 +321,8 @@
 #### Таблицы ошибок обработки
 
 ```json
-"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t", "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
+"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
 ```
 
 #|
@@ -410,6 +425,7 @@
 Причин может быть две:
 
 - Входное поле имеет тип "ссылка".
+
 - Пул работает на неактуальной версии проекта. То есть создан до того, как вы изменили тип входного поля.
 
 {% endcut %}
@@ -454,7 +470,7 @@ Task — это отдельное задание. Task suite — страниц
 
 - У разных заданий существует разное перекрытие. Те задания, у которых перекрытие указано больше, будут дополнительно показываться в наборах с другими оставшимися заданиями в пуле.
 
-- Если [правило контроля качества](../../glossary.md#quality-control-rules) меняет перекрытие у задания, то оно окажется в другом наборе.
+- Если [правило контроля качества](../../glossary.md#quality-control-rule) меняет перекрытие у задания, то оно окажется в другом наборе.
 
 {% endcut %}
 
@@ -487,7 +503,7 @@ Task — это отдельное задание. Task suite — страниц
 
 {% cut "Как в файле с обучающим заданием прописать несколько known_solutions?" %}
 
-Загрузить в пул задания с разными ответами через интерфейс невозможно. Можно только через [API]({{ toloka-api-tasks }})
+Загрузить в пул задания с разными ответами через интерфейс невозможно. Можно только через [API](../../api/concepts/tasks.md).
 
 {% endcut %}
 
@@ -539,7 +555,7 @@ Task — это отдельное задание. Task suite — страниц
 
 #### Пример
 
-![](../_images/hint.png" id="image-adding-tasks-to-the-pool-hint)
+![](../_images/hint.png)
 
 Если текст из поля `hint` необходимо отразить в несколько строк, то переносы добавляются в файл, а текст заключается в кавычки.
 
@@ -566,6 +582,7 @@ Add your text here — это подсказка, которая говорит 
 Проверьте ссылки, которые используете. Решить задачу с унификацией ссылок можно несколькими способами:
 
 - Добавить требования к формату ссылок в инструкцию и подсказки в обучении.
+
 - Обрезать полученные ссылки в js с помощью regexp и записать результат в новое выходное поле, а после сравнить полученное значение с эталоном.
 
 {% endcut %}

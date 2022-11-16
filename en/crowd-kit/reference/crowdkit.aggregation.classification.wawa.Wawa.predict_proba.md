@@ -1,5 +1,5 @@
 # predict_proba
-`crowdkit.aggregation.classification.wawa.Wawa.predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/wawa.py#L85)
+`crowdkit.aggregation.classification.wawa.Wawa.predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/wawa.py#L85)
 
 ```python
 predict_proba(self, data: DataFrame)

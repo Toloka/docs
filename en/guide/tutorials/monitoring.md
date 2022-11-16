@@ -38,7 +38,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Monitoring field objects**{% endif %} preset.
 
-1. Click  in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -279,3 +279,5 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 - [Quality control](https://toloka.ai/knowledgebase/quality-control/)
 - [Pricing](https://toloka.ai/knowledgebase/pricing/)
 - [Toloka-Kit — spatial crowdsourcing example](https://github.com/Toloka/toloka-kit/blob/main/examples/2.spatial_crowdsourcing/0.simplest_example/spatial_crowdsourcing.ipynb)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

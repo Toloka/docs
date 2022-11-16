@@ -1,5 +1,7 @@
 # action.toggle
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компонент меняет значение в данных с `true` на `false` и наоборот.
 
 ## Свойства компонента {#properties}

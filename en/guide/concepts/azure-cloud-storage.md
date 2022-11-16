@@ -36,7 +36,7 @@ To get links to files:
 
 1. Enter the name of the resource group and your account.
 
-1. Select the region closest to your Tolokers. For example, for Tolokers from Germany: .
+1. Select the region closest to your Tolokers. For example, for Tolokers from Germany: {% if locale == "en-com" %}**Region → (Europe) West Central Germany**{% endif %}.
 
     {% cut "What it looks like in the interface" %}
 
@@ -50,7 +50,7 @@ To get links to files:
 
     ![](../_images/tutorials/cloud-storage/azure/deployment-complete.png)
 
-## Create a container. {#container}
+## Create a container {#container}
 
 1. In the **Data storage** section in the left menu, select **Containers**.
 
@@ -59,6 +59,7 @@ To get links to files:
 1. Enter the container name.
 
 1. In the **Public access level** field, select **Container**.
+
     {% note info %}
 
     Files will be accessible to anyone with a link. We recommend using hashed file names to keep your files secure. You can generate hashes using online tools (for example, [Online MD5 Hash Generator]({{ hash-function-wiki }})). Learn more about [hashing]({{ hash-function-wiki }}).
@@ -73,7 +74,7 @@ You can set up the lifetime of files in the container so that they are automatic
 
 {% endnote %}
 
-## Upload your files to the container. {#upload}
+## Upload your files to the container {#upload}
 
 1. To open the container, click on its name.
 
@@ -99,7 +100,7 @@ You can set up the lifetime of files in the container so that they are automatic
 
 1. Click **Send**.
 
-## Copy links. {#get-files}
+## Copy links {#get-files}
 
 1. Select the uploaded file and copy its **URL** from the **Review** section.
 

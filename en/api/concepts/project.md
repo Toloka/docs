@@ -20,4 +20,4 @@ POST | [/projects/<project_id>/archive](archive-prj.md) | Sends a project to the
 
 ## Learn more {#links}
 
-- [Description of the project in the Requester's guide](https://toloka.ai/docs/guide/concepts/project.html)
+- [Description of the project in the Requester's guide](../../guide/concepts/project.md)

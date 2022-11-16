@@ -6,7 +6,7 @@ Issues rewards to Tolokers.
 
 The size of the reward can range between $0.001 and $100 per Toloker at a time.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can send a maximum of 10,000 requests of this kind per day.
 
@@ -120,7 +120,7 @@ ID of the Toloker's response to the task a reward is issued for. ||
 Comments that are only visible to the requester. ||
 || **public_title** | **object**
 
-The subject of the message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: "`"<language RU/EN/TR/ID/FR>": "<title text>"`. ||
+The subject of the message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<title text>"`. ||
 || **public_message** | **object**
 
 The text of message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||

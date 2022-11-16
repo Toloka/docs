@@ -13,23 +13,23 @@ To block access to tasks for a single Toloker:
 
 1. Select a Toloker on the [Tolokers]({{ users }}) page.
 
-1. Click , then fill in the fields:
+1. Click {% if locale == "en-com" %}**Actions → Ban**{% endif %}, then fill in the fields:
 
     #|
     || Field | Overview ||
     || {% if locale == "en-com" %}**Ban type**{% endif %} | Where to apply the ban:
 
-        - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
-        - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).||
+    - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
+    - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).||
     || {% if locale == "en-com" %}**Ban expires**{% endif %} | Set when to lift the ban.
 
     We recommend blocking access temporarily in order to maintain the desired number of Tolokers for completing tasks.||
     || {% if locale == "en-com" %}**Reason**{% endif %} | The reason for banning (only seen by the requester).||
     |#
 
-    To block access to tasks for multiple Tolokers:
+To block access to tasks for multiple Tolokers:
 
-1. Select Tolokers by using the [filters](../../glossary.md#filtering) on the [Tolokers]({{ users }}) page or upload a TSV file:
+1. Select Tolokers by using the [filters](../../glossary.md#filters) on the [Tolokers]({{ users }}) page or upload a TSV file:
 
     {% if locale == "en-com" %}
 
@@ -44,7 +44,7 @@ To block access to tasks for a single Toloker:
 
 1. Click {% if locale == "en-com" %}**Ban**{% endif %}, then fill in the fields (see the table above).
 
-You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the {% if locale == "en-com" %}**Bans**{% endif %} tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.png).
+You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the {% if locale == "en-com" %}**Bans**{% endif %} tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).
 
 {% note warning %}
 
@@ -89,7 +89,7 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#completed-tasks) incorrectly to a new pool.
 
 {% endcut %}
 

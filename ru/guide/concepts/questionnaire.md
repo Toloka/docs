@@ -1,5 +1,7 @@
 # Опросы
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% note tip %}
 
 Сначала запустите проект в [Песочнице]({{ sandbox }}). Так вы сможете избежать ошибок и потраченных средств, если окажется, что ваше задание не работает.
@@ -56,7 +58,7 @@
 
           Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/U7pFn){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC4xu){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, пока не ответит на каждый из вопросов.
 
-          [Подробнее о настройке условий]({{ tb-conditions }}) в конструкторе шаблонов.
+          [Подробнее о настройке условий](../../template-builder/best-practices/conditions.md) в конструкторе шаблонов.
 
       1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 
@@ -180,7 +182,7 @@
 
           Очистите блоки JavaScript и CSS.
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -192,7 +194,7 @@
 
     {% endlist %}
 
-1. Для опроса [инструкция](../../glossary.md#task-instruction) не требуется. Пожелания и рекомендации по заполнению опроса поместите в [интерфейс задания](../../glossary.md#task-interface).
+1. Для опроса [инструкция](../../glossary.md#instructions) не требуется. Пожелания и рекомендации по заполнению опроса поместите в [интерфейс задания](../../glossary.md#task-interface).
 
     {% note info %}
 
@@ -262,11 +264,11 @@
 
     ![](../_images/tutorials/questionnaire/add-overlap-ban.png)
 
-    Это означает, что если исполнитель заблокирован за [быстрые ответы](../../glossary.md#fast-responses-rule), в результате чего его ответы не учтены, задание этого исполнителя будет [повторно](restore-task-overlap.md) отправлено на выполнение другому исполнителю.
+    Это означает, что если исполнитель заблокирован за [быстрые ответы](../../glossary.md#fast-responses), в результате чего его ответы не учтены, задание этого исполнителя будет [повторно](restore-task-overlap.md) отправлено на выполнение другому исполнителю.
 
 ## Запустите пул и получите результаты {#launch}
 
-1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.png).
+1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.svg).
 
 1. Следите за выполнением в блоке **Статистика пула**.
 
@@ -280,7 +282,7 @@
 
     {% cut "Как увеличить перекрытие?" %}
 
-    1. Остановите пул, нажав кнопку ![](../_images/other/b-pause-pool.png).
+    1. Остановите пул, нажав кнопку ![](../_images/other/b-pause-pool.svg).
 
     1. В правом верхнем углу нажмите {% if locale == "ru-ru" %}**Редактировать**{% endif %}{% if locale == "en-com" %}**Edit**{% endif %}.
 

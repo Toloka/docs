@@ -1,5 +1,5 @@
 # AssignmentsInPool
-`toloka.metrics.pool_metrics.AssignmentsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/pool_metrics.py#L201)
+`toloka.metrics.pool_metrics.AssignmentsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/pool_metrics.py#L201)
 
 ```python
 AssignmentsInPool(
@@ -37,9 +37,14 @@ How to collect this metrics:
 ```python
 def print_metric(metric_dict):
     print(metric_dict)
+
 collector = MetricCollector([AssignmentsInPool(pool_id, toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+    'rejected_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 44, 895232), 0)],
+    'submitted_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 45, 321904), 75)],
+    'accepted_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 45, 951156), 75)],
+}
 ## Methods Summary
 
 | Method | Description |

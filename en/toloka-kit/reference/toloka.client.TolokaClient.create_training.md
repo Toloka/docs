@@ -1,5 +1,5 @@
 # create_training
-`toloka.client.TolokaClient.create_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.create_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1775)
 
 ```python
 create_training(self, training: Training)
@@ -11,7 +11,7 @@ Creates a new training
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training`|**[Training](toloka.client.training.Training.md)**|<p>New Training with setted parameters.</p>
+`training`|**[Training](toloka.client.training.Training.md)**|<p>New Training with set parameters.</p>
 
 * **Returns:**
 

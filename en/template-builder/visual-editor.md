@@ -16,7 +16,7 @@ When you choose to create a project that supports configuring the task interface
 
 The interface of the visual editor looks like this:
 
-<a target="_blank" href="https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png"><img src="https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png" alt="Visual editor interface" style="box-shadow: 1px 1px 15px rgba(30,33,38,.12);border-radius:6px;cursor:zoom-in;width:700px;" /></a>
+[![Visual editor interface](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png)
 
 1. Switch between the visual editor and code editor using the buttons in the upper part of Template Builder.
 
@@ -24,7 +24,7 @@ The interface of the visual editor looks like this:
 
     - **Question performers will see in your task** displays the main question that you want Tolokers to answer. It is displayed right below the image.
 
-    - The **Paste link to a sample image** field contains the link to some [web storage](https://toloka.ai/docs/guide/concepts/cloud-storage.html) where you uploaded your image. Make sure the link is publicly accessible, otherwise Tolokers will not see it.
+    - The **Paste link to a sample image** field contains the link to some [web storage](../guide/concepts/cloud-storage.md) where you uploaded your image. Make sure the link is publicly accessible, otherwise Tolokers will not see it.
 
     - The **Set answer options** section contains the possible responses to the question which you ask Tolokers. By default, it has a specific number of options (two to five), but you can add or remove as many as you need using the **Add answer option** button.
 
@@ -44,7 +44,7 @@ The interface of the visual editor looks like this:
 
 ## See also {#what-next}
 
-- [Your first project](https://toloka.ai/docs/guide/concepts/first-project.html)
+- [Your first project](../guide/concepts/first-project.md)
 - [Image classification preset](templates/image-classification.md)
 - [Hand gesture classification preset](templates/video-moderation.md)
 - [Object recognition & detection preset](templates/object-recognition.md)

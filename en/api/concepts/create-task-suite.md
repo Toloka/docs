@@ -4,7 +4,7 @@
 
 Creates one or multiple task suites.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day.
 
@@ -227,7 +227,7 @@ The default value is `0`. ||
 
 Type of operation for creating a task suite:
 
-- `true` — Automatically with the "smart mixing" option (for more information, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/task_upload.html)).
+- `true` — Automatically with the "smart mixing" option (for more information, see the [Requester's guide](../../guide/concepts/task_upload.md)).
 - `false` — Manually.||
 |#
 
@@ -247,7 +247,7 @@ It includes:
 ID of a task suite. ||
 || **tasks[].id** | **string**
 
-Task ID if the task suite is created automatically with the "smart mixing" option (for more information, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/task_upload.html)). ||
+Task ID if the task suite is created automatically with the "smart mixing" option (for more information, see the [Requester's guide](../../guide/concepts/task_upload.md)). ||
 || **tasks[].origin_task_id** | **string**
 
 The ID of a task from another pool from which this task was copied for majority vote verification.

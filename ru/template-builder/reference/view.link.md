@@ -1,12 +1,14 @@
 # view.link
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Универсальный способ добавить ссылку.
 
 Такая ссылка изменит цвет после перехода по ней.
 
 Рекомендуем использовать этот компонент, если вам нужно вставить ссылку без дополнительного форматирования.
 
-Если вы хотите вставить кнопку, по которой будет открываться ссылка, используйте компоненты [view.action-button](view.action-button.md) и [action.open-link](action.open-link.md). 
+Если вы хотите вставить кнопку, по которой будет открываться ссылка, используйте компоненты [view.action-button](view.action-button.md) и [action.open-link](action.open-link.md).
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/QLEtD)
 

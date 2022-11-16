@@ -1,5 +1,7 @@
 # view.iframe
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Отображает веб-страницу по URL-адресу во встроенном окне.
 
 ## Свойства компонента {#properties}

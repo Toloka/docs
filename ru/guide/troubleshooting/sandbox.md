@@ -1,5 +1,7 @@
 # Песочница
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [troubleshooting-key-combination](../_includes/troubleshooting/troubleshooting/id-troubleshooting/key-combination.md) %}
 
 {% cut "Как работать с Песочницей?" %}
@@ -26,7 +28,7 @@
 
 1. Доверенный исполнитель не использовал социальные сети при регистрации.
 
-1. Доверенный исполнитель подходит под установленные [фильтры](../../glossary.md#filtering).
+1. Доверенный исполнитель подходит под установленные [фильтры](../../glossary.md#filters).
 
 {% endcut %}
 
@@ -91,3 +93,5 @@
 {% endcut %}
 
 [Другой вопрос](support.md#feedback_oyr_m5s_hlb)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

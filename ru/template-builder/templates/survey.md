@@ -1,5 +1,7 @@
 # Опрос
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В Толоке есть пресет **Опрос потребителей**. В нем уже настроена валидация и внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/TPoP7)
@@ -19,7 +21,7 @@
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TPoXh)
 
-- Добавьте компонент [field.button-radio-group](../reference/field.button-radio-group.md) в виде кнопок. Кнопки лучше подходят, когда в вопросе 2-4 варианта с короткими названиями. Если вариантов много, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md).
+- Добавьте компонент [field.button-radio-group](../reference/field.button-radio-group.md) в виде кнопок. Кнопки лучше подходят, когда в вопросе 2–4 варианта с короткими названиями. Если вариантов много, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/TWCNH)
 

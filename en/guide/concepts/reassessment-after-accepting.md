@@ -4,7 +4,7 @@ You can enable the [Non-automatic acceptance](offline-accept.md) option to [reje
 
 {% note info %}
 
-After the end of the review period specified in the **Non-automatic acceptance** option, assignments are accepted automatically.
+Once the review period in the {% if locale == "en-com" %}**Review period in days**{% endif %} field runs out, tasks are accepted automatically.
 
 {% endnote %}
 
@@ -18,7 +18,7 @@ This rule is helpful when you need to:
 
 - Save money on re-completing assignments that you have already accepted.
 
-    If you reviewed and accepted an assignment, it may not make sense for other users to complete the same assignment. To avoid this, you can reduce the overlap for accepted assignments only.
+    If you've reviewed and accepted a task, it may not make sense for other Tolokers to also complete it. To avoid this, you can reduce the overlap for accepted assignments only.
 
 ## Rule settings {#rule}
 
@@ -87,7 +87,7 @@ The task is to send rejected and recompleted assignments for review. Or assign t
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 {% endcut %}
 

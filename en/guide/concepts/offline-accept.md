@@ -2,7 +2,7 @@
 
 Non-automatic acceptance is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
 
-You can find the [Review methods](accept.md#acception) in the  section.
+You can find the [Review methods](accept.md#acception) in the {% if locale == "en-com" %}**Working with results → Reviewing Tolokers' responses**{% endif %} section.
 
 ## How does it work? {#how-it-works}
 
@@ -48,7 +48,7 @@ You can review responses manually or with the help of Tolokers by posting [a sep
 
 - You can't **reject (or accept)** one response on the page — **only the entire page** with all responses on it.
 
-- If [the Toloker is banned](../../glossary.md#banned-worker) by [the quality control rules](../../glossary.md#quality-control-rules), their responses still need to be checked.
+- If [the Toloker is banned](../../glossary.md#banning-tolokers) by [the quality control rules](../../glossary.md#quality-control-rule), their responses still need to be checked.
 
 {% note info %}
 

@@ -1,4 +1,4 @@
-# Video analysis
+# Video classification
 
 For this type of project, you can use the **Hand gesture classification** preset. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
@@ -39,7 +39,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
 - One option (a radio button)
 
-  The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2-4 short answer options.
+  The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2–4 short answer options.
 
   If there are more answer options, or they are long, it's better to use [field.radio-group](../reference/field.radio-group.md), as in the example.
 
@@ -86,3 +86,7 @@ The [helper.switch](../reference/helper.switch.md) component displays an interfa
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6tt)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+## See also {#see-also}
+
+- [Tutorials — video classification](../../guide/tutorials/video-moderation.md)

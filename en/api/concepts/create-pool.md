@@ -6,7 +6,7 @@ Creates a pool.
 
 The pool is automatically assigned an ID.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can send a maximum of 20 requests of this kind per minute and 100 requests per day.
 
@@ -286,7 +286,7 @@ Required if dynamic pricing is used. The price per task suite for a Toloker with
 Required if selective review is used. Overlap in tasks with selective review. ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function** | **object \| required if**
 
-Required if selective review is used. Distribution of tasks with selective review. For more information about how verification tasks are assigned, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html). ||
+Required if selective review is used. Distribution of tasks with selective review. For more information about how verification tasks are assigned, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function. scope** | **string \| required if**
 
 Required if selective review is used.
@@ -433,11 +433,11 @@ Minimum confidence of the aggregated response. Values from 0 to 1. ||
 Required if dynamic overlap is used.
 
 A skill that determines the weight of the Toloker's response. For best results, use a skill calculated as the [percentage of correct responses in control tasks](goldenset.md). ||
-|| **dynamic_overlap_config. fields** | **object \| required if**
+|| **dynamic_overlap_config. fields[]** | **array of objects \| required if**
 
 Required if dynamic overlap is used.
 
-[Output data fields](https://toloka.ai/docs/guide/concepts/result-aggregation.html) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
+[Output data fields](../../guide/concepts/result-aggregation.md) to use for aggregating responses. For best results, each of these fields must have a limited number of response options.
 
 Don't specify several fields if their values depend on each other. ||
 || **dynamic_overlap_config. fields.name** | **string \| required if**
@@ -449,7 +449,7 @@ The output data field name. ||
 
 Required if "smart mixing" is used.
 
-Parameters for automatically creating a task suite ("smart mixing"). For more information about creating task suites, see the [Requester's guide](requester-pool-main). ||
+Parameters for automatically creating a task suite ("smart mixing"). For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
 || **mixer_config. real_tasks_count** | **integer \| required if**
 
 Required if "smart mixing" is used.
@@ -549,7 +549,7 @@ Comments on the pool (only visible to the requester). ||
 Description for Tolokers. If it is filled in, the text will be displayed instead of the project's `public_description` in the list of tasks for Tolokers. ||
 || **dynamic_pricing_config** | **object**
 
-[Dynamic pricing](https://toloka.ai/docs/guide/concepts/dynamic-pricing.html#dynamic-pricing__section_ucl_3hl_vlb) settings. ||
+[Dynamic pricing](../../guide/concepts/dynamic-pricing.md#dynamic-pricing__section_ucl_3hl_vlb) settings. ||
 || **auto_accept_solutions** | **boolean**
 
 Whether tasks must be checked manually:
@@ -575,7 +575,7 @@ Use it if:
 Settings for assigning tasks in the pool. ||
 || **assignments_issuing_config. issue_task_suites_in_ creation_order** {#issue_task_suites_in_creation_order} | **boolean**
 
-For pools that don't use "smart mixing" .
+For pools that don't use "smart mixing".
 
 Assign task suites in the order in which they were uploaded. For example, for a pool with an overlap of 5, the first task suite is assigned to five Tolokers, then the second task suite, and so on.
 
@@ -586,7 +586,7 @@ The priority of the pool in relation to other pools in the project with the same
 
 Possible values: from `-100` to `100`.
 
-By default the value is `0` . ||
+By default the value is `0`. ||
 || **filter** | **object**
 
 Settings for [Toloker selection filters](filters.md). ||
@@ -631,7 +631,7 @@ Selective review of control tasks. To make sure selective review is enabled, don
 Selective review of training tasks. To make sure selective review is enabled, don't forget to set up display of this type of task in [mixer_config](#mixer_config). ||
 || **speed_quality_balance** | **object**
 
-[Speed/quality balance](https://toloka.ai/docs/guide/concepts/adjust.html). ||
+[Speed/quality balance](../../guide/concepts/adjust.md). ||
 || **speed_quality_balance. type** | **string**
 
 Balance type. Possible values:

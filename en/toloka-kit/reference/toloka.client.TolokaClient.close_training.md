@@ -1,5 +1,5 @@
 # close_training
-`toloka.client.TolokaClient.close_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.close_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1684)
 
 ```python
 close_training(self, training_id: str)
@@ -22,6 +22,7 @@ Stops distributing tasks from the training
   [Training](toloka.client.training.Training.md)
 
 **Examples:**
+
 
 ```python
 open_training = next(toloka_client.get_trainings(status='OPEN'))

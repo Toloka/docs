@@ -2,7 +2,7 @@
 
 By default, your tasks are available to all Tolokers. If you set [filters](filters.md), they are available only to those who match them.
 
-When there are many Tolokers, you can get results quickly, but the quality of the Tolokers' responses may be poor. The number of [active Tolokers](../../glossary.md#active-workers) (who will see the task if you publish it now) is displayed in the {% if locale == "en-com" %}**TOP %**{% endif %} tab to the left of the slider:
+When there are many Tolokers, you can get results quickly, but the quality of the Tolokers' responses may be poor. The number of [active Tolokers](../../glossary.md#active-tolokers) (who will see the task if you publish it now) is displayed in the {% if locale == "en-com" %}**TOP %**{% endif %} tab to the left of the slider:
 
 ![](../_images/location-job/adjust_percentage.png)
 
@@ -14,7 +14,7 @@ A personalized quality forecast is based on a large amount of data about user be
 
 ## Improve the quality of results {#concept_cgm_vzq_xlb}
 
-You can select only the best Tolokers using one of the filters in the [personalized quality forecast](../../glossary.md#worker-quality-prediction):
+You can select only the best Tolokers using one of the filters in the [personalized quality forecast](../../glossary.md#personilized-quality-forecast):
 
 - {% if locale == "en-com" %}**TOP %**{% endif %} — Allows you to set the percentage of the best Tolokers who will have access to your task.
 

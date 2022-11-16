@@ -1,5 +1,7 @@
 # Разметка заданий
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% note alert "Ограничение" %}
 
 Разметка заданий доступна только для [обучающих пулов](train.md) и пулов, загруженных при помощи [«умного смешивания»](distribute-tasks-by-pages.md#smart-mixing).
@@ -86,7 +88,7 @@
 
 - [Добавьте обучающий пул](train.md).
 
-- {% if locale == "en-com" %}[Пополните счет](refill.md){% endif %}{% if locale == "ru-ru" %}Пополните счет:
+- {% if locale == "en-com" %}[Пополните счет](refill.md).{% endif %}{% if locale == "ru-ru" %}Пополните счет:
 
     - [Инструкция для резидентов РФ](refill-russia.md).
 

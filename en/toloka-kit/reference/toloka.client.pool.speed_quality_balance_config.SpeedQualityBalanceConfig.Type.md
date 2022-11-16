@@ -1,5 +1,5 @@
 # Type
-`toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/pool/speed_quality_balance_config.py#L14)
+`toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/pool/speed_quality_balance_config.py#L14)
 
 The type of speed quality balance:
 
@@ -7,5 +7,5 @@ The type of speed quality balance:
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`TOP_PERCENTAGE_BY_QUALITY`|'TOP_PERCENTAGE_BY_QUALITY'|<p>get top XX% performers by quality.</p>
-`BEST_CONCURRENT_USERS_BY_QUALITY`|'BEST_CONCURRENT_USERS_BY_QUALITY'|<p>get top x performers by quality.</p>
+`TOP_PERCENTAGE_BY_QUALITY`|'TOP_PERCENTAGE_BY_QUALITY'|<p>get top XX% Tolokers by quality.</p>
+`BEST_CONCURRENT_USERS_BY_QUALITY`|'BEST_CONCURRENT_USERS_BY_QUALITY'|<p>get top x Tolokers by quality.</p>

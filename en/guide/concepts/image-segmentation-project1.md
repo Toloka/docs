@@ -34,8 +34,8 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
             For more information, see the Template Builder Help:
 
-            - [Setting up conditions]({{ tb-conditions }}).
-            - [Image classification]({{ tb-image-classification }}) template.
+            - [Setting up conditions](../../template-builder/best-practices/conditions.md).
+            - [Image classification](../../template-builder/templates/image-classification.md) template.
 
         1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
@@ -81,7 +81,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
            The output data fields depend on the components that use `data.output` and values supported by it.
 
-           Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
+           Learn more about [input and output data fields](../../template-builder/operations/create-specs.md) in the Template Builder Help.
 
            - Input data field: `image` — A link to an image.
 
@@ -126,7 +126,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
             Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
             {% note info %}
 
@@ -142,20 +142,20 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 1. Save the changes.
 
-1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#task-instruction) and add an image.
+1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#instructions) and add an image.
 
     1. **Instructions:**{% if locale == "en-com" %}
 
-    ```plaintext
-    Look at the image and answer whether there are any **traffic signs** in it.
-    If there are, click **Yes**.
-    If there aren't, click **No**.
-    For example, there are traffic signs in the image, so the correct answer is **Yes**.
-    ```
+        ```plaintext
+        Look at the image and answer whether there are any **traffic signs** in it.
+        If there are, click **Yes**.
+        If there aren't, click **No**.
+        For example, there are traffic signs in the image, so the correct answer is **Yes**.
+        ```
 
-    {% endif %}
+        {% endif %}
 
-    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
+    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
     1. Save the changes.
 
@@ -203,7 +203,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 ## Upload tasks {#upload-file}
 
-Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv-file-definition) with tasks.
+Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv) with tasks.
 
 1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
 
@@ -229,7 +229,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     1. Click {% if locale == "en-com" %}**Upload**{% endif %}.
 
-    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition) with tasks to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
+    1. In the window that opens, choose the [file](../../glossary.md#tsv) with tasks to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
 
     1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
 
@@ -255,11 +255,11 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     {% note info %}
 
-    In small pools, control tasks should be 10-20% of all tasks. Include different versions of correct responses in equal amounts. View the distribution of responses on the {% if locale == "en-com" %}**Edit tasks**{% endif %} page, {% if locale == "en-com" %}**Control tasks**{% endif %} tab.
+    In small pools, control tasks should be 10–20% of all tasks. Include different versions of correct responses in equal amounts. View the distribution of responses on the {% if locale == "en-com" %}**Edit tasks**{% endif %} page, {% if locale == "en-com" %}**Control tasks**{% endif %} tab.
 
     {% endnote %}
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 
@@ -269,7 +269,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
 ## Get the results {#get-results}
 
-1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![](../_images/other/drop-down.png).
+1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![](../_images/other/drop-down.svg).
 
 1. Choose {% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %} from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 

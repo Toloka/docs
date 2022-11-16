@@ -1,5 +1,7 @@
 # Служба поддержки
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% if audience == "internal" %}
 #### Проблемы с Bespoke
 

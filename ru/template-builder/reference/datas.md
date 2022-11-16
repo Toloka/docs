@@ -1,5 +1,7 @@
 # Список источников данных
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компоненты с именем `data.*` позволяют прочитать специальные данные.
 
 | Component                         | Description                                           |

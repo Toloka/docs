@@ -1,5 +1,5 @@
 # ButtonRadioGroupFieldV1
-`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L115)
+`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L115)
 
 ```python
 ButtonRadioGroupFieldV1(
@@ -14,7 +14,7 @@ ButtonRadioGroupFieldV1(
 )
 ```
 
-A component with buttons that allow the user to choose between the specified values.
+A component with buttons that allow the Toloker to choose between the specified values.
 
 
 The minimum number of elements is one. Any type of data can be returned.

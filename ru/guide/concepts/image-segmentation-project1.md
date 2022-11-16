@@ -1,5 +1,7 @@
 # Проект 1. Содержит ли изображение определенный объект
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 В этом [проекте](../../glossary.md#project) вы опросите исполнителей на наличие дорожных знаков на фотографии.
 
 ## Создайте проект {#create-project}
@@ -34,8 +36,8 @@
 
           Подробнее в Справке конструктора:
 
-          - [настройка условий]({{ tb-conditions }});
-          - шаблон [Классификация изображений]({{ tb-image-classification }}).
+          - [настройка условий](../../template-builder/best-practices/conditions.md);
+          - шаблон [Классификация изображений](../../template-builder/templates/image-classification.md).
 
       1. На панели **Конфигурация** замените строки кода с 19 по 28:
 
@@ -111,7 +113,7 @@
 
           Поля выходных данных создаются на основе того, в каких компонентах используются `data.output`, а также какие значения в нем разрешены.
 
-          Подробнее о [полях входных и выходных данных]({{ tb-create-specs }}) в Справке конструктора шаблона.
+          Подробнее о [полях входных и выходных данных](../../template-builder/operations/create-specs.md) в Справке конструктора шаблона.
 
           - Поле входных данных: `image` — ссылка для загрузки картинки.
 
@@ -165,7 +167,7 @@
 
           Подробнее о параметрах {% if locale == "ru-ru" %}**Спецификации**{% endif %}{% if locale == "en-com" %}**Specifications**{% endif %} читайте в разделе [Входные и выходные данные](incoming.md).
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -181,33 +183,34 @@
 
 1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
-1. В блоке {% if locale == "ru-ru" %}**Инструкция для исполнителей**{% endif %}{% if locale == "en-com" %}**Instructions for performers**{% endif %} введите [инструкцию](../../glossary.md#task-instruction) и добавьте изображение.
+1. В блоке {% if locale == "ru-ru" %}**Инструкция для исполнителей**{% endif %}{% if locale == "en-com" %}**Instructions for performers**{% endif %} введите [инструкцию](../../glossary.md#instructions) и добавьте изображение.
 
     1. **Текст инструкции:**{% if locale == "ru-ru" %}
 
-      ```plaintext
-      Посмотрите на изображение и определите, есть ли на нем **дорожные знаки**?
-      Если да, нажмите **Да**.
-      Если нет, нажмите **Нет**.
-      Например, на изображении есть дорожные знаки, поэтому правильный ответ **Да**.
-      ```
+        ```plaintext
+        Посмотрите на изображение и определите, есть ли на нем **дорожные знаки**?
+        Если да, нажмите **Да**.
+        Если нет, нажмите **Нет**.
+        Например, на изображении есть дорожные знаки, поэтому правильный ответ **Да**.
+        ```
 
-      {% endif %}{% if locale == "en-com" %}
+        {% endif %}{% if locale == "en-com" %}
 
-      ```plaintext
-      Look at the image and answer whether there are any **traffic signs** in it.
-      If there are, click **Yes**.
-      If there aren't, click **No**.
-      For example, there are traffic signs in the image, so the correct answer is **Yes**.
-      ```
+        ```plaintext
+        Look at the image and answer whether there are any **traffic signs** in it.
+        If there are, click **Yes**.
+        If there aren't, click **No**.
+        For example, there are traffic signs in the image, so the correct answer is **Yes**.
+        ```
 
-      {% endif %}
+        {% endif %}
 
-    1. Чтобы добавить изображение, нажмите кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) и укажите ссылку на изображение, которое вы хотите использовать в качестве примера.
+    1. Чтобы добавить изображение, нажмите кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) и укажите ссылку на изображение, которое вы хотите использовать в качестве примера.
 
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 
 1. В правом верхнем углу нажмите кнопку {% if locale == "ru-ru" %}**Завершить**{% endif %}{% if locale == "en-com" %}**Finish**{% endif %}
+
     Подробнее о работе с проектом читайте в разделе [Проект](project.md).
 
 ## Создайте пул {#create-pool}
@@ -286,7 +289,7 @@
 
     1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% endif %}{% if locale == "en-com" %}**Upload**{% endif %}.
 
-    1. В открывшемся окне выберите [файл](../../glossary.md#tsv-file-definition) с заданиями для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
+    1. В открывшемся окне выберите [файл](../../glossary.md#tsv) с заданиями для загрузки и нажмите кнопку {% if locale == "ru-ru" %}**Открыть**{% endif %}{% if locale == "en-com" %}**Open**{% endif %}.
 
     1. В открывшемся окне проверьте количество заданий и нажмите кнопку {% if locale == "ru-ru" %}**Добавить**{% endif %}{% if locale == "en-com" %}**Add**{% endif %}.
 
@@ -312,11 +315,11 @@
 
     {% note alert %}
 
-    В небольших пулах контрольные задания должны составлять 10-20% от всех заданий. Включайте разные варианты правильных ответов в равных количествах. Посмотрите распределение ответов на странице {% if locale == "ru-ru" %}**Разметить задания**{% endif %}{% if locale == "en-com" %}**Edit tasks**{% endif %} на вкладке {% if locale == "ru-ru" %}**Контрольные**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
+    В небольших пулах контрольные задания должны составлять 10–20% от всех заданий. Включайте разные варианты правильных ответов в равных количествах. Посмотрите распределение ответов на странице {% if locale == "ru-ru" %}**Разметить задания**{% endif %}{% if locale == "en-com" %}**Edit tasks**{% endif %} на вкладке {% if locale == "ru-ru" %}**Контрольные**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %}.
 
     {% endnote %}
 
-1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
+1. Нажмите кнопку ![](../_images/other/b-start-pool.svg), чтобы запустить пул.
 
     {% note alert %}
 
@@ -326,7 +329,7 @@
 
 ## Получите результаты {#get-results}
 
-1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.png).
+1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.svg).
 
 1. Выберите пункт списка {% if locale == "ru-ru" %}**Агрегация результатов по методу Дэвида — Скина**{% endif %}{% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %}. Подробнее об [Агрегации результатов по методу Дэвида — Скина](result-aggregation.md#dawid-skene).
 

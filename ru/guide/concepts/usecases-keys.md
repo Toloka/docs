@@ -1,5 +1,7 @@
 # Ключи
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
  |
 ----- | -----
 img | [Выражение для вставки картинки](t-components/img.md)

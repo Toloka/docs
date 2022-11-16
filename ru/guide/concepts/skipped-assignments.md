@@ -1,5 +1,7 @@
 # Пропуск заданий
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Ограничьте доступ к заданиям в [пуле](../../glossary.md#pool) исполнителям, которые пропускают несколько [страниц заданий](../../glossary.md#task-suite) подряд.
 
 {% note alert %}

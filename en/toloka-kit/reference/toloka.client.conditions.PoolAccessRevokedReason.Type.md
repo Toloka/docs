@@ -1,5 +1,5 @@
 # Type
-`toloka.client.conditions.PoolAccessRevokedReason.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L230)
+`toloka.client.conditions.PoolAccessRevokedReason.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L263)
 
 An enumeration.
 
@@ -7,5 +7,5 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`SKILL_CHANGE`|'SKILL_CHANGE'|<p></p>
-`RESTRICTION`|'RESTRICTION'|<p></p>
+`SKILL_CHANGE`|'SKILL_CHANGE'|
+`RESTRICTION`|'RESTRICTION'|

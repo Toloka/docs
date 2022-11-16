@@ -36,9 +36,9 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           For more information, see the Template Builder Help:
 
-          - [Setting up conditions]({{ tb-conditions }}).
+          - [Setting up conditions](../../template-builder/best-practices/conditions.md).
 
-          - [Image classification]({{ tb-image-classification }}) template.
+          - [Image classification](../../template-builder/templates/image-classification.md) template.
 
       1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
@@ -84,7 +84,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           The output data fields depend on the components that use `data.output` and values supported by it.
 
-          Learn more about [input and output data fields]({{ tb-create-specs }}) in the Template Builder Help.
+          Learn more about [input and output data fields](../../template-builder/operations/create-specs.md) in the Template Builder Help.
 
           - Input data field: `image` — A link to an image.
 
@@ -128,7 +128,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-      1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+      1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
           {% note info %}
 
@@ -146,7 +146,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#task-instruction) and add an image.
+1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
 
     1. **Instructions:**
 
@@ -161,7 +161,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
         {% endif %}
 
-    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) and provide a link to the image you want to use as an example.
+    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
     1. Save the changes.
 
@@ -235,7 +235,7 @@ To upload tasks:
 
     1. Click **Upload**.
 
-    1. In the window that opens, choose the [file](../../glossary.md#tsv-file-definition) with tasks to upload and click **Open**.
+    1. In the window that opens, choose the [file](../../glossary.md#tsv) with tasks to upload and click **Open**.
 
     1. In the window that opens, check the number of tasks and click **Add**.
 
@@ -265,7 +265,7 @@ To upload tasks:
 
         {% endnote %}
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 
@@ -277,7 +277,7 @@ To upload tasks:
 
 To get the results:
 
-1. Next to the **Download results** button, click ![](../_images/other/drop-down.png).
+1. Next to the **Download results** button, click ![](../_images/other/drop-down.svg).
 
 1. Choose the **Dawid-Skene aggregation model**. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md).
 

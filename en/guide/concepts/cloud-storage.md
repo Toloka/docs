@@ -1,6 +1,6 @@
 # Where to store files
 
-If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the [file with tasks](../../glossary.md#tsv-file-definition).
+If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the [file with tasks](../../glossary.md#tsv).
 
 If you need less than 10 images (for example, for task instructions or for testing a pool), use photo hosting. If you need to add more images, or audio and video files, use cloud storage.
 
@@ -73,7 +73,7 @@ Storage type | Trial length | Free storage size | Grant amount | Additional info
 
 To use a file in the task interface, you should have a field of **link** type in your project's [input data](incoming.md). You'll need the name of this field later when creating a file.
 
-In the[file with the tasks](pool_csv.md), paste the links into the column that matches the input data field to which this data is passed.
+In the [file with the tasks](pool_csv.md), paste the links into the column that matches the input data field to which this data is passed.
 
 For example, if you want to use images in the `image` field, specify the file links in the `INPUT:image` column:
 

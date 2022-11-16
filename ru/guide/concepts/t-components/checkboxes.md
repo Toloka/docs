@@ -1,12 +1,14 @@
 # Флажок
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать флажок в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.checkbox.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.checkbox.md){% endif %}.
 
 {% endnote %}
 
-Чтобы вставить в задание флажок, используйте компонент `{{field type="checkbox" name="<название [выходного поля](../incoming.md)>"}}`. Например (набор из трех флажков):
+Чтобы вставить в задание флажок, используйте компонент `{{field type="checkbox" name="<название выходного поля>"}}`. Например (набор из трех флажков):
 
 {% if locale == "ru-ru" %}
 

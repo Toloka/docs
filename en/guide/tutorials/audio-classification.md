@@ -28,7 +28,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Audio classification**{% endif %} preset.
 
-1. Click {% if locale == "en-com" %}**Choose solution**{% endif %} in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -269,3 +269,5 @@ At this step, upload your task data to Toloka.
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/28_audioClassification/EN/sample-files.zip)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

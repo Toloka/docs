@@ -18,7 +18,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 - Vertical decomposition: divide tasks into several projects.
 
-- Horizontal decomposition: use [non-automatic acceptance](../../glossary.md#left-off-acceptance) with verification by other Tolokers.
+- Horizontal decomposition: use [non-automatic acceptance](../../glossary.md#assignment-review) with verification by other Tolokers.
 
 - For greater efficiency, combine both methods.
 
@@ -58,9 +58,9 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 #### Develop a user-friendly interface
 
-{% note info %}
+{% note tip %}
 
-You can try creating a task interface in the [Template Builder]({{ tb-quickstart }}).
+You can try creating a task interface in the [Template Builder](../../template-builder/index.md).
 
 {% endnote %}
 
@@ -102,11 +102,11 @@ You can try creating a task interface in the [Template Builder]({{ tb-quickstart
 
 {% cut "Solutions" %}
 
-- Use the correct [file](../../glossary.md#tsv-file-definition) format and UTF8 encoding.
+- Use the correct [file](../../glossary.md#tsv) format and UTF8 encoding.
 
 - Use file templates. You can find them on the pool page.
 
-- Place tasks so that it takes no more than 5 minutes, preferably 1-2 minutes, to complete a single task suite. You can usually place 20-40 simple tasks, 5-10 tasks of medium difficulty, or 1-2 complex tasks on a single page.
+- Place tasks so that it takes no more than 5 minutes, preferably 1–2 minutes, to complete a single task suite. You can usually place 20–40 simple tasks, 5–10 tasks of medium difficulty, or 1–2 complex tasks on a single page.
 
 - Use [smart mixing](../../glossary.md#smart-mixing). The algorithm will distribute training, control tasks, and general tasks across the page on its own.
 
@@ -118,13 +118,13 @@ You can try creating a task interface in the [Template Builder]({{ tb-quickstart
 
 - There are no Toloker filters and tasks are available even to users who can't complete them.
 
-- [Quality control rules](../../glossary.md#quality-control-rules) are not used, or they are configured incorrectly.
+- [Quality control rules](../../glossary.md#quality-control-rule) are not used, or they are configured incorrectly.
 
 {% cut "Solutions" %}
 
 #### Select Tolokers
 
-Using [filters](../../glossary.md#filtering), you can filter out Tolokers who are not fit for your tasks.
+Using [filters](../../glossary.md#filters), you can filter out Tolokers who are not fit for your tasks.
 
 - Use targeting by language and region. Toloka users are located in different countries.
 
@@ -144,7 +144,7 @@ Using [filters](../../glossary.md#filtering), you can filter out Tolokers who ar
 
 - Choose and combine the rules depending on the content of your project. See examples of how to choose quality control rules in the [tutorials for popular tasks](usecases.md).
 
-- Specify the reason for [banning Tolokers](../../glossary.md#banned-worker) (it is only visible to you) and the reason for rejecting tasks (the Tolokers will see it).
+- Specify the reason for [banning Tolokers](../../glossary.md#banning-tolokers) (it is only visible to you) and the reason for rejecting tasks (the Tolokers will see it).
 
 #### Set up quality control rules
 

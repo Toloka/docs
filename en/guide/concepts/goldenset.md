@@ -10,7 +10,7 @@ To save time, you can opt for having your control tasks edited by [Toloka expert
 
 ## When to use {#when-use}
 
-Use control tasks to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses and [ban](../../glossary.md#banned-worker) Tolokers who submit incorrect responses.
+Use control tasks to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses and [ban](../../glossary.md#banning-tolokers) Tolokers who submit incorrect responses.
 
 #### Don't use it if:
 

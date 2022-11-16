@@ -1,10 +1,12 @@
 # Регистрация
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 ## Перед началом {#concept_ntn_h5l_vlb}
 
 Для регистрации необходим Яндекс ID с привязанным и подтвержденным номером телефона. Если Яндекс ID нет, зарегистрируйте его.
 
-{% note alert %}
+{% note alert "Ограничение" %}
 
 - Если вы уже зарегистрированы в качестве исполнителя, понадобится другой Яндекс ID.
 
@@ -132,7 +134,7 @@
 
 {% cut "Заявка на обучение краудсорсингу и работе с Толокой" %}
 
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=ru&iframe=1&service=toloka-ai"></iframe>
+<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013202/?lang=ru&iframe=1&service=toloka-ai"></iframe>
 
 {% endcut %}
 

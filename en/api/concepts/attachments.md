@@ -12,4 +12,4 @@ GET | [/attachments/<file_id>/download](download-attachment.md) | Downloads a fi
 
 ## Learn more {#links}
 
-- [Description of attached files in the Requester's guide](https://toloka.ai/docs/guide/concepts/advanced-features-attach.html)
+- [Description of attached files in the Requester's guide](../../guide/concepts/advanced-features-attach.md)

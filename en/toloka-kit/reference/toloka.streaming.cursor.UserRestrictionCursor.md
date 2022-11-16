@@ -1,5 +1,5 @@
 # UserRestrictionCursor
-`toloka.streaming.cursor.UserRestrictionCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/cursor.py#L369)
+`toloka.streaming.cursor.UserRestrictionCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/cursor.py#L369)
 
 ```python
 UserRestrictionCursor(
@@ -20,21 +20,22 @@ UserRestrictionCursor(
 )
 ```
 
-Iterator over user restrictions by create time.
+Iterator over Toloker restrictions by create time.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search user restrictions.</p>
-`request`|**[UserRestrictionSearchRequest](toloka.client.search_requests.UserRestrictionSearchRequest.md)**|<p>Base request to search user restrictions.</p>
+`toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search Toloker restrictions.</p>
+`request`|**[UserRestrictionSearchRequest](toloka.client.search_requests.UserRestrictionSearchRequest.md)**|<p>Base request to search Toloker restrictions.</p>
 
 **Examples:**
 
-Iterate over user restrictions in project.
+Iterate over Toloker restrictions in a project.
 
 ```python
 it = UserRestrictionCursor(toloka_client=toloka_client, project_id=my_proj_id)
 current_restrictions = list(it)
-new_restrictions = list(it)  # Contains only new user restrictions, appeared since the previous call.
+# ... new restrictions could appear ...
+new_restrictions = list(it)  # Contains only new restrictions, appeared since the previous call.
 ```

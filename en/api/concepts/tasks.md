@@ -1,6 +1,8 @@
 # Overview
 
-In order to upload tasks to a pool, you need to create JSON objects that contain:
+## Description {#description}
+
+To upload tasks to a pool, you need to create JSON objects that contain:
 
 - The input data for the tasks (such as text or image URLs).
 - Correct responses (for control tasks).
@@ -23,14 +25,15 @@ PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) | Stops a
 
 ## Merging tasks {#task-merge}
 
-Tasks with identical input data can be merged. This allows you to save money if the same task was uploaded to different pools.
+{% note alert "Restriction" %}
 
-{% note alert %}
-
+- You can only merge tasks with identical input data. The order of fields in the JSON object must also match.
 - You can only merge tasks in open pools. If a new pool got a task that was previously completed in a pool that has been closed or archived, the tasks won't be merged.
 - You can only merge your general tasks.
 
 {% endnote %}
+
+Merging saves you money if the same task was uploaded to different pools.
 
 The response to the task received will be automatically assigned to another task if:
 
@@ -41,10 +44,10 @@ The response to the task received will be automatically assigned to another tas
 
 The response will be recorded with a zero price, and the overlap will be reduced by one.
 
-This option is only available for general tasks without  automatic acceptance that were uploaded using ["smart mixing"](https://toloka.ai/docs/guide/concepts/task_upload.html).
+This option is only available for general tasks without non-automatic acceptance that were uploaded using ["smart mixing"](../../guide/concepts/task_upload.md).
 
 To activate task merging in a  project, specify `"assignments_automerge_enabled": true` in the [project](project.md).
 
 ## Learn more {#links}
 
-For more information about creating task suites, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html).
+For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md).

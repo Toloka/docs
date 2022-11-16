@@ -1,5 +1,5 @@
 # AggregatedSolution
-`toloka.client.aggregation.AggregatedSolution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/aggregation.py#L95)
+`toloka.client.aggregation.AggregatedSolution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/aggregation.py#L83)
 
 ```python
 AggregatedSolution(
@@ -12,13 +12,13 @@ AggregatedSolution(
 )
 ```
 
-Aggregated response to the task
+An aggregated response to a task.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**Optional\[str\]**|<p>In which pool the results were aggregated.</p>
-`task_id`|**Optional\[str\]**|<p>The answer for which task was aggregated.</p>
-`confidence`|**Optional\[float\]**|<p>Confidence in the aggregate response.</p>
-`output_values`|**Optional\[Dict\[str, Any\]\]**|<p>Output data fields and aggregate response.</p>
+`pool_id`|**Optional\[str\]**|<p>The ID of the pool containing the task.</p>
+`task_id`|**Optional\[str\]**|<p>The ID of the task.</p>
+`confidence`|**Optional\[float\]**|<p>The confidence level for the aggregated response.</p>
+`output_values`|**Optional\[Dict\[str, Any\]\]**|<p>Output data fields with aggregated responses.</p>

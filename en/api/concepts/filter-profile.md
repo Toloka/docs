@@ -45,7 +45,7 @@ Value of "operator":
 - `NE` — Not equal to. ||
 || **country** | **string**
 
-The Toloker's country of residence (the two-letter code from the [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search) standard).
+The Toloker's country of residence (the two-letter code from the [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/) standard).
 
 Value of "operator":
 
@@ -53,7 +53,7 @@ Value of "operator":
 - `NE` — Not equal to. ||
 || **citizenship** | **string**
 
-The Toloker's country of citizenship (the two-letter code from the [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search) standard).
+The Toloker's country of citizenship (the two-letter code from the [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/) standard).
 
 Value of "operator":
 

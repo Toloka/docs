@@ -1,5 +1,7 @@
 # condition.sub-array
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Проверяет, что массив в `data` является подмассивом для `parent`.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/T9a4k)

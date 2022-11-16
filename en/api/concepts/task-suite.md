@@ -1,6 +1,6 @@
 # Overview
 
-A task suite is a set of tasks grouped on a single web page. If the tasks are simple, you can add 10-20 tasks per suite. Don't make task suites too long because it slows down the loading speed for Tolokers.
+A task suite is a set of tasks grouped on a single web page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down the loading speed for Tolokers.
 
 To create a task suite, upload JSON containing:
 
@@ -23,5 +23,5 @@ PATCH | [/task-suites/<task_suite_id>/set-overlap-or-min](set-min-suite-overlap.
 
 ## Learn more {#links}
 
-- [Creating a pool](https://toloka.ai/docs/guide/concepts/pool-main.html) in the Requester's guide
-- [Uploading tasks to the pool](https://toloka.ai/docs/guide/concepts/task_upload.html) in the Requester's guide
+- [Creating a pool](../../guide/concepts/pool-main.md) in the Requester's guide
+- [Uploading tasks to the pool](../../guide/concepts/task_upload.md) in the Requester's guide

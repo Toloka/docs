@@ -1,5 +1,5 @@
 # MetricCollector
-`toloka.metrics.collector.MetricCollector` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/collector.py#L18)
+`toloka.metrics.collector.MetricCollector` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/collector.py#L18)
 
 ```python
 MetricCollector(
@@ -19,9 +19,13 @@ How to gather metrics and sends it to zabbix:
 ```python
 import toloka.client as toloka
 from toloka.metrics import MetricCollector, Balance, AssignmentsInPool
+
 toloka_client = toloka.TolokaClient(token, 'PRODUCTION')
+
 def send_metric_to_zabbix(metric_dict):
+    ### do something
     pass
+
 collector = MetricCollector(
     [
         Balance(),
@@ -29,7 +33,9 @@ collector = MetricCollector(
     ],
     send_metric_to_zabbix,
 )
+
 bind_client(collector.metrics, toloka_client)
+
 asyncio.run(collector.run())
 ```
 ## Methods Summary

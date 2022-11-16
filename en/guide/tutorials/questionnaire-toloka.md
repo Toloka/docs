@@ -38,7 +38,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Survey with Toloka template**{% endif %} preset.
 
-1. Click {% if locale == "en-com" %}**Choose solution**{% endif %} in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -252,9 +252,9 @@ You will get the TSV file. To process the survey results, you can open the file 
 
 - You can conduct a survey in two stages. For example, it can be useful when the general filters of the {% if locale == "en-com" %}**Audience**{% endif %} section are not enough to select Tolokers you need. Use skills:
 
-    1. In the first survey, [assign the skill](../concepts/nav-assign.md) to the relevant Tolokers.
+    - In the first survey, [assign the skill](../concepts/nav-assign.md) to the relevant Tolokers.
 
-    1. In the second survey, specify the skill in the {% if locale == "en-com" %}**Audience**{% endif %} section to make the survey available to the relevant Tolokers from the first stage.
+    - In the second survey, specify the skill in the {% if locale == "en-com" %}**Audience**{% endif %} section to make the survey available to the relevant Tolokers from the first stage.
 
     You can notify Tolokers about the second survey using [messages](../concepts/messaging.md) to those of them who have the necessary skill.
 
@@ -279,3 +279,5 @@ In the task interface settings, use the `field.text` or `field.textarea` compone
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/knowledge-base/tasks_for_survey.tsv)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

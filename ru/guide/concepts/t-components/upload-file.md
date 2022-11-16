@@ -1,18 +1,20 @@
 # Кнопка для загрузки файла
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку для загрузки файла в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.media-file.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.media-file.md){% endif %}.
 
 {% endnote %}
 
-Чтобы добавить в задание кнопку для загрузки файла, используйте компонент `{{field type="file" name="<название [выходного поля](../incoming.md)>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. Например:
+Чтобы добавить в задание кнопку для загрузки файла, используйте компонент `{{field type="file" name="<название выходного поля>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. Например:
 
 ```plaintext
 `{{field type="file" name="result" sources="GALLERY" fileType="IMAGE_OR_VIDEO"}}`
 ```
 
-Полный список параметров в [таблице](#table).
+Полный список параметров в [таблице](#parametry).
 
 В описании [выходных данных](../../../glossary.md#input-output-data) добавьте одно из полей:
 

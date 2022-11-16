@@ -1,5 +1,5 @@
 # Cooldown
-`toloka.util.async_utils.Cooldown` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/util/async_utils.py#L174)
+`toloka.util.async_utils.Cooldown` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/util/async_utils.py#L174)
 
 ```python
 Cooldown(self, cooldown_time)
@@ -14,6 +14,7 @@ Cooldown(self, cooldown_time)
 `cooldown_time`|**-**|<p>seconds between calls</p>
 
 **Examples:**
+
 
 ```python
 coldown = toloka.util.Cooldown(5)

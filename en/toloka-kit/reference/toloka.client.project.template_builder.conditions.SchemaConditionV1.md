@@ -1,5 +1,5 @@
 # SchemaConditionV1
-`toloka.client.project.template_builder.conditions.SchemaConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/conditions.py#L265)
+`toloka.client.project.template_builder.conditions.SchemaConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/conditions.py#L265)
 
 ```python
 SchemaConditionV1(
@@ -28,4 +28,4 @@ This component is useful in the following cases:
 | :----------| :----| :-----------|
 `data`|**Optional\[Any\]**|<p>Data that should be checked.</p>
 `schema`|**Optional\[Dict\]**|<p>The schema for validating data.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that the user will see.</p>
+`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>

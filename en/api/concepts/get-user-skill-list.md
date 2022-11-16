@@ -1,8 +1,20 @@
-# Get a list of Toloker skills
+# Get a list of Tolokers who have skills
 
 {% include [announce](../_includes/announce.md) %}
 
-Gets a list of Toloker skills.
+Gets a list of Tolokers who have skills. With the [query parameters](#query-params), you can filter the data in the response the following way:
+
+- Get the list of all the Tolokers who have the specific skill using the `skill_id` query parameter:
+
+   ```bash
+   GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>
+   ```
+
+- Get the list of all the skills assigned to the specific Toloker using the `user_id` query parameter:
+
+   ```bash
+   GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>
+   ```
 
 ## Request {#request}
 
@@ -38,10 +50,10 @@ Specified in the link after the question mark; separated by `&`.
 || Parameter | Overview ||
 || **user_id** | **string**
 
-Toloker ID. ||
+Toloker ID. It is used to get the list of the skills assigned to the specific Toloker.||
 || **skill_id** | **string**
 
-Skill ID. ||
+Skill ID. It is used to get the list of the Tolokers who have the specific skill.||
 || **sort** | **string**
 
 Parameters to sort by:
@@ -108,5 +120,5 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 [Skill properties](get-user-skill.md) in the `items` array:
 
 ```json
-{"items" : [{<Toloker skill 1>}, {<Toloker skill 2>}, ... {<Toloker skill n>}], "has_more": false}
+{"items" : [{<Toloker 1 skill 1 >}, {<Toloker 1 skill 2>}, ... {<Toloker 1 skill n>}, ... {<Toloker n skill 1>}, {<Toloker n skill 2>}, ... {<Toloker n skill n>}], "has_more": false}
 ```

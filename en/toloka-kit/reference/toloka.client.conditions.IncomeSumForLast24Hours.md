@@ -1,5 +1,5 @@
 # IncomeSumForLast24Hours
-`toloka.client.conditions.IncomeSumForLast24Hours` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/conditions.py#L193)
+`toloka.client.conditions.IncomeSumForLast24Hours` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L217)
 
 ```python
 IncomeSumForLast24Hours(
@@ -9,5 +9,9 @@ IncomeSumForLast24Hours(
 )
 ```
 
-The performer earnings for completed tasks in the pool over the last 24 hours
+The Toloker's earnings for completed tasks in the pool during the last 24 hours.
+
+
+`IncomeSumForLast24Hours` is used with collectors:
+- [Income](toloka.client.collectors.Income.md)
 

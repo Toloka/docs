@@ -1,5 +1,7 @@
 # Мониторинг цен
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% note tip %}
 
 Сначала запустите проект в [Песочнице](https://sandbox.toloka.yandex.com/ru/). Так вы сможете избежать ошибок и потраченных средств, если окажется, что ваше задание не работает.
@@ -67,7 +69,7 @@
           - не загрузит необходимые фотографии товара, ценника и магазина;
           - не напишет комментарий в том случае, если магазин закрыт или отсутствует.
 
-          Подробнее о [настройке условий]({{ tb-conditions }}) в Справке конструктора шаблонов.
+          Подробнее о [настройке условий](../../template-builder/best-practices/conditions.md) в Справке конструктора шаблонов.
 
       1. {% include [toloka-requester-source-tb-input-output_1](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output_1.md) %}
 
@@ -132,7 +134,7 @@
 
           {% include [price-tag-input-output-data](../_includes/concepts/price-tag/id-price-tag/input-output-data.md) %}
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -192,7 +194,7 @@
 
     {% cut "Что такое отложенная приемка?" %}
 
-    [Отложенная приемка](offline-accept.md) позволяет вам просматривать [выполненные страницы заданий](../../glossary.md#submitted-answers) перед тем, как принять их и заплатить исполнителю. Задания, выполненные в несоответствии с инструкцией, можно отклонять. Максимальный срок проверки устанавливается в поле **Срок проверки**.
+    [Отложенная приемка](offline-accept.md) позволяет вам просматривать [выполненные страницы заданий](../../glossary.md#completed-tasks) перед тем, как принять их и заплатить исполнителю. Задания, выполненные в несоответствии с инструкцией, можно отклонять. Максимальный срок проверки устанавливается в поле **Срок проверки**.
 
     {% endcut %}
 
@@ -226,7 +228,7 @@
 
 ## Запустите пул и получите результаты {#launch}
 
-1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.png).
+1. Запустите пул, нажав кнопку ![](../_images/other/b-start-pool.svg).
 
 1. Следите за выполнением в блоке **Статистика пула**.
 

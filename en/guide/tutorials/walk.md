@@ -32,7 +32,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Spatial Crowdsourcing**{% endif %} preset.
 
-1. Click {% if locale == "en-com" %}**Choose solution**{% endif %} in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -271,3 +271,5 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/dataset/moscow_metro_entrance_2020_en.tsv)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

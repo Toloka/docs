@@ -1,5 +1,7 @@
 # Azure Blob Storage
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [amazon-cloud-storage-alternatives-note](../_includes/concepts/amazon-cloud-storage/id-amazon-cloud-storage/alternatives-note.md) %}
 
 Чтобы опробовать возможности [Microsoft Azure]({{ azure-blob }}), создайте [бесплатную учетную запись]({{ azure-free }}).
@@ -32,7 +34,7 @@
 
 1. Введите имя группы ресурсов и учетной записи.
 
-1. Выберите наиболее близкий к исполнителям регион. Например, для исполнителей из Германии: **Регион** → **(Europe) Центрально-Западная Германия**.
+1. Выберите наиболее близкий к исполнителям регион. Например, для исполнителей из Германии: {% if locale == "ru-ru" %}**Регион** → **(Europe) Центрально-Западная Германия**{% elsif locale == "en-com" %}**Region → (Europe) West Central Germany**{% endif %}.
 
     {% cut "Как это выглядит в интерфейсе" %}
 

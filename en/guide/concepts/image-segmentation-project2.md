@@ -6,11 +6,11 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
 #### In the interface:
 
-1. Choose a template:
+1. Choose a preset:
 
     1. Click **Create project**.
-    1. Select the **Object recognition & detection** template.
-    1. Click **Choose solution**.
+    1. Select the **Object recognition & detection** preset.
+    1. Click **Choose this preset**.
 
 1. Provide general information:
 
@@ -28,7 +28,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
             The Toloker won't be able to submit a response without selecting an area in an image.
 
-            For more information about the template and its settings, see [Object selection in an image]({{ tb-select-areas }}) in the Template Builder Help.
+            For more information about the template and its settings, see [Object selection in an image](../../template-builder/operations/select-areas.md) in the Template Builder Help.
 
         1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
 
@@ -64,7 +64,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
                 Learn more about [annotation](t-components/image-annotation.md#annotation).
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
 
             {% note info %}
 
@@ -74,7 +74,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
         1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
 
-        1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}{% if locale == "en-com" %}**Exit**{% endif %} . If there were errors when testing, check the code blocks that you entered.
+        1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
 
     {% endlist %}
 
@@ -88,7 +88,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     {% note tip %}
 
-    If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.png) button on the toolbar.
+    If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) button on the toolbar.
 
     {% endnote %}
 
@@ -126,7 +126,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     {% cut "What is a task suite?" %}
 
-    A task suite can contain one or several tasks that are shown on the same page. If the tasks are simple, you can add 10-20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers.
+    A task suite can contain one or several tasks that are shown on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers.
 
     Tolokers get paid for completing the entire task suite.
 
@@ -148,7 +148,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
         {% cut "What is non-automatic acceptance (assignment review)?" %}
 
-        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#submitted-answers) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
         {% endcut %}
 
@@ -222,7 +222,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 ## Prepare and upload tasks {#upload-file}
 
-1. Prepare a [file](../../glossary.md#tsv-file-definition) with tasks.
+1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
     1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](image-segmentation-project1.md).
 
@@ -258,7 +258,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 

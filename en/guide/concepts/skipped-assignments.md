@@ -2,7 +2,7 @@
 
 Restrict access to [pool](../../glossary.md#pool) tasks for Tolokers who skip multiple [task suites](../../glossary.md#task-suite) in a row.
 
-Tolokers can [skip task suites](pool_statistic-pool.md#skipped-tasks) that seem too large or complex and choose easier tasks. They get paid in the same way. For example, the Toloker is evaluating medical articles for whether they contain prescriptions, dosage, and mentions of specific medications. They might decide to skip long texts and label only short ones that take 10-20 seconds to read.
+Tolokers can [skip task suites](pool_statistic-pool.md#skipped-tasks) that seem too large or complex and choose easier tasks. They get paid in the same way. For example, the Toloker is evaluating medical articles for whether they contain prescriptions, dosage, and mentions of specific medications. They might decide to skip long texts and label only short ones that take 10–20 seconds to read.
 
 You can set up this rule to restrict Toloker access to a pool.
 
@@ -11,27 +11,31 @@ Before you enable skipping tasks, we recommend that you read the section [Tips f
 ## When to use {#when-use}
 
 Restrict access to [pool](../../glossary.md#pool) tasks for Tolokers who skip multiple task suites in a row if:
+
 - Tasks are different in volume and Tolokers might skip large tasks in order to only perform short ones;
+
 - Tasks must be performed in order and skipping tasks may affect the quality.
 
 #### Don't use it if:
 
 - There aren't very many tasks in the pools. For example, if a task is a survey on a single page and the Toloker skips this page, they will no longer be able to perform tasks in the pool, which means there is no need to ban them.
+
 - Tasks are the same in volume.
+
 - The task complexity can't be estimated, which means the Tolokers won't be willing to skip tasks in search of easier ones.
 
 ## How to configure {#rule}
 
-{% note warning %}
+{% note alert %}
 
 All fields in this rule are required. If you don't fill in at least one of them, you won't be able to save the rule.
 
 {% endnote %}
 
-
 #|
 || Field  | Overview||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**task suites skipped in a row**{% endif %} — The number of task suites skipped in a row.||
 ||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
 
@@ -72,13 +76,11 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 {% endlist %}
 
-{% note warning %}
+{% note alert %}
 
 The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
-
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -97,7 +99,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 

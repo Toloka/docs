@@ -1,5 +1,7 @@
 # Классификация видео
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% note tip %}
 
 Сначала запустите проект в [Песочнице]({{ sandbox }}). Так вы сможете избежать ошибок и потраченных средств, если окажется, что ваше задание не работает.
@@ -77,9 +79,9 @@
 
           Подробнее в Справке конструктора шаблонов:
 
-          - [настройка условий]({{ tb-conditions }});
+          - [настройка условий](../../template-builder/best-practices/conditions.md);
 
-          - настройка шаблона [Оценка видео]({{ tb-video-moderation }}).
+          - настройка шаблона [Оценка видео](../../template-builder/templates/video-moderation.md).
 
       1. {% include [toloka-requester-source-tb-input-output_1](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output_1.md) %}
 
@@ -125,7 +127,7 @@
 
           - Поле выходных данных: `result` — строка, в которую будет записан ответ исполнителя.
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.png) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -311,11 +313,11 @@
 
         {% endnote %}
 
-1. Нажмите кнопку ![](../_images/other/b-start-pool.png), чтобы запустить пул.
+1. Нажмите кнопку ![](../_images/other/b-start-pool.svg), чтобы запустить пул.
 
 ## Получите результаты {#get-results}
 
-1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.png).
+1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.svg).
 
 1. Выберите пункт списка {% if locale == "ru-ru" %}**Агрегация результатов по методу Дэвида — Скина**{% endif %}{% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %}. Подробнее об [Агрегации результатов по методу Дэвида — Скина](result-aggregation.md#dawid-skene).
 
@@ -357,7 +359,7 @@
 
 {% cut "Не загружаются файлы с Яндекс Диска" %}
 
-Если картинки, аудио или видео с Яндекс Диска не отображаются в [инструкции](../../glossary.md#task-instruction) или на [странице задания](../../glossary.md#task-suite), убедитесь, что вы правильно подключили Диск и загрузили файлы.
+Если картинки, аудио или видео с Яндекс Диска не отображаются в [инструкции](../../glossary.md#instructions) или на [странице задания](../../glossary.md#task-suite), убедитесь, что вы правильно подключили Диск и загрузили файлы.
 
 - [Как подключить Яндекс Диск](prepare-data.md#prepare-data__connect)
 - [Как загрузить файлы для инструкции](prepare-data.md#prepare-data__instruction)
@@ -383,7 +385,7 @@
 
 - Формат относительных ссылок в файле с заданиями указан верно: <уникальное имя>/<путь и имя файла>.
 
-Подробная инструкцию и видео на странице [Использование файлов с Яндекс Диска]({{ using-files-yandex-disk }}).
+Подробная инструкцию и видео на странице [Использование файлов с Яндекс Диска](prepare-data.md).
 
 {% endcut %}
 
@@ -393,7 +395,7 @@
 
 - В настройках проекта в поле **Входные данные** указан тип _ссылка_. Необходимо выбрать тип _строка_.
 
-- В [файле с заданиями](../../glossary.md#tsv-file-definition) указаны абсолютные ссылки на файлы для заданий. Необходимо вставить ссылку вида `<уникальное имя>/<путь и имя файла>`. Например: `yadisk/image1.jpg` или `yadisk/photos/image1.png`.
+- В [файле с заданиями](../../glossary.md#tsv) указаны абсолютные ссылки на файлы для заданий. Необходимо вставить ссылку вида `<уникальное имя>/<путь и имя файла>`. Например: `yadisk/image1.jpg` или `yadisk/photos/image1.png`.
 
 - Фото с Яндекс Диска используются в инструкции к заданию в мобильном приложении. Чтобы фото отобразилось в инструкции, используйте только прямые ссылки.
 

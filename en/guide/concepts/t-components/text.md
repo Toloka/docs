@@ -2,11 +2,11 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a text input field in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/field.textarea){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a text input field in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.textarea.md){% endif %}.
 
 {% endnote %}
 
-To add a multi-line text field to a task, use the `{{field type="textarea" name="<[output field](../incoming.md) name>"}}` component. Example:
+To add a multi-line text field to a task, use the `{{field type="textarea" name="<output field name>"}}` component. Example:
 
 ```plaintext
 {{field type="textarea" name="result" width="270px" rows=5}}

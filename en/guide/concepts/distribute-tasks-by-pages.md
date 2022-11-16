@@ -10,9 +10,7 @@ The Toloker receives payment for a task suite, so the labeling cost and quality 
 
 ## {% if locale == "en-com" %}Set manually{% endif %} {#by-empty-row}
 
-Enter the number of tasks per suite. Suites are formed in the order the tasks are placed in your [file](../../glossary.md#tsv-file-definition).
-
-This method is appropriate if you need your tasks to have a certain number of suites and don't want to divide them into suites yourself.
+Enter the number of tasks per suite. The order of tasks depends on the [**Keep task order**](pool-main.md) pool setting.
 
 ## {% if locale == "en-com" %}Smart mixing{% endif %} {#smart-mixing}
 
@@ -40,17 +38,17 @@ This method is useful if the created pool:
 
 - Tasks in the suite are mixed up before the page is shown to the Toloker.
 
-- If there aren't enough general tasks and the {% if locale == "en-com" %}**Assign partial page**{% endif %} option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-page). Please note that the number of control and training tasks in this case must be complete.
+- If there aren't enough general tasks and the {% if locale == "en-com" %}**Assign partial page**{% endif %} option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-task-suite). Please note that the number of control and training tasks in this case must be complete.
 
 {% note alert %}
 
-If you upload a file via “Smart mixing”, you won't be able to use other ways of task distribution on the pages in this pool.
+If you upload a file via **Smart mixing**, you won't be able to use other ways of task distribution on the pages in this pool.
 
 {% endnote %}
 
 After uploading the tasks with **smart mixing** you will be able to [mark up tasks](task_markup.md) and set selective [majority vote checking](mvote.md).
 
-## How to distribute tasks as suites {#smart-mixing}
+#### How to distribute tasks as suites {#smart-mixing}
 
 | Characteristics/upload type                                                                            | Set manually | Smart mixing |
 |--------------------------------------------------------------------------------------------------------|--------------|--------------|
@@ -63,7 +61,7 @@ After uploading the tasks with **smart mixing** you will be able to [mark up tas
 
 #### How many control tasks do I need to add?
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5-10%.
+We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
 
 {% cut "Why's that?" %}
 
@@ -110,9 +108,9 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 If you upload tasks from the Toloka interface, infinite overlap is set automatically for control and training tasks, so that there is enough to mark up all general tasks.
 
-You can set the overlap via the [Toloka API](../../glossary.md#api-yandex-toloka) or use {% if locale == "en-com" %}**Set manually**{% endif %} for task allocation.
+You can set the overlap via the [Toloka API](../../glossary.md#toloka-api) or use {% if locale == "en-com" %}**Set manually**{% endif %} for task allocation.
 
-{% note info %}
+{% note alert "Important" %}
 
 Set infinite overlap for control tasks.
 
@@ -122,9 +120,9 @@ If another overlap value is set, control tasks may end during labeling and the p
 
 ## Tips and recommendations {#tips}
 
-- If you used {% if locale == "en-com" %}**Set manually**{% endif %}, you can find out the number of tasks per suite in the pool settings. But some suites may be [incomplete](../../glossary.md#incomplete-page).
+- If you used {% if locale == "en-com" %}**Set manually**{% endif %}, you can find out the number of tasks per suite in the pool settings. But some suites may be [incomplete](../../glossary.md#incomplete-task-suite).
 
-- If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#api-yandex-toloka) to check task distribution across suites.
+- If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#toloka-api) to check task distribution across suites.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -156,7 +154,7 @@ The same task may appear on different pages if:
 
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
 
-- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
+- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 

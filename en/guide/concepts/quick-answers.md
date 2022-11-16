@@ -8,7 +8,6 @@ If you need additional protection from robots, use [captchas](captcha.md).
 
 {% endnote %}
 
-
 ## When to use {#when-use}
 
 Restrict the pool access for Tolokers who respond too quickly to:
@@ -20,12 +19,13 @@ Restrict the pool access for Tolokers who respond too quickly to:
 To estimate the time required to complete a task suite:
 
 - [Complete a task in the sandbox](sandbox.md#self), if you didn't start the tasks yet.
+
 - Look up the {% if locale == "en-com" %}**Average assignment completion time**{% endif %} in [pool statistics](pool_statistic-pool.md#avgtime) if the tasks are already running.
 
 ## How do I set it up? {#rule}
 
 #|
-|| Field | Overview||
+|| **Field** | **Overview**||
 ||{% if locale == "en-com" %}**Recent task suites to use**{% endif %} | The number of recent assignments submitted by the Toloker.
 
 If this field is not filled in, the calculation includes only recent task suites from the pool to which the rule applies.
@@ -35,6 +35,7 @@ If the field is filled in, the corresponding number of task suites is used. The 
 To learn more about how this field works, go to [Parameter "Remember values"](remember-values.md).||
 ||{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} | The task suite completion time (in seconds). Everything that is completed faster is considered a fast response.||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**number of responses**{% endif %} — The number of the Toloker's recent responses (less than or equal to the number in the {% if locale == "en-com" %}**Recent task suites to use**{% endif %} field).
 
 - {% if locale == "en-com" %}**number of fast responses**{% endif %} — Allowed number of fast responses (out of the recent ones).
@@ -67,7 +68,6 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endnote %}
 
-
 #### Blocking for fast responses
 
 {% list tabs %}
@@ -92,9 +92,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 A Toloker who completes two task suites in less than 20 seconds is suspended from accessing the pool and can't complete your tasks for 10 days.
 
-
 ## Troubleshooting {#troubleshooting}
-
 
 {% cut "What is the right time limit for the task completion?" %}
 

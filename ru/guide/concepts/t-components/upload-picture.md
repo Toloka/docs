@@ -1,12 +1,14 @@
 # Кнопка для загрузки картинки
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку для загрузки картинки в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.media-file.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.media-file.md){% endif %}.
 
 {% endnote %}
 
-Чтобы добавить в задание кнопку для загрузки картинки ![](../../_images/other/b-image-button.png), используйте компонент `{{field type="file-img" name="<название [выходного поля](../incoming.md)>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. После загрузки картинки исполнитель увидит иконку для предварительного просмотра изображения. Например:
+Чтобы добавить в задание кнопку для загрузки картинки ![](../../_images/other/b-image-button.png), используйте компонент `{{field type="file-img" name="<название выходного поля>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. После загрузки картинки исполнитель увидит иконку для предварительного просмотра изображения. Например:
 
 ```plaintext
 {{field type="file-img" name="photo" sources="CAMERA" fileType="IMAGE" camera=true}}

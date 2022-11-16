@@ -1,6 +1,6 @@
 # Project 4. Which of the found items is most similar to the original?
 
-In this [project](../../glossary.md#project), Tolokers compare images of shoes with the original image and decide which pair of images is most similar. To make a comparison in the project, add the results from the [second project](find_an_item_in_store.md). To learn how, see **Prepare and upload a [file](../../glossary.md#tsv-file-definition) with tasks**.
+In this [project](../../glossary.md#project), Tolokers compare images of shoes with the original image and decide which pair of images is most similar. To make a comparison in the project, add the results from the [second project](find_an_item_in_store.md). To learn how, see **Prepare and upload a [file](../../glossary.md#tsv) with tasks**.
 
 ## Create a project {#create_project}
 
@@ -181,7 +181,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
           1. In the **Input data** field, enter:
 
@@ -219,7 +219,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
               Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
               {% note info %}
 
@@ -237,7 +237,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
 
@@ -337,7 +337,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. In the window that opens, choose the file with tasks to upload and click **Open**.
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 

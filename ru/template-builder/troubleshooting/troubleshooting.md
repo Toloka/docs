@@ -1,5 +1,7 @@
 # Решение проблем
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 ## Видео и аудио {#media}
 
 {% cut "Не воспроизводится видео или аудио" %}

@@ -16,11 +16,11 @@ In Toloka, there are two ways to set the task price:
 
 Every Toloker wants to earn more, so it is difficult to give exact figures. To find out the price to set, answer a few questions:
 
-- Turn on the stopwatch and measure how long it will take to read the [instructions](../../glossary.md#task-instruction) and complete several of your tasks. Calculate how many task suites you would complete in an hour and think what price would be fair.
+- Turn on the stopwatch and measure how long it will take to read the [instructions](../../glossary.md#instructions) and complete several of your tasks. Calculate how many task suites you would complete in an hour and think what price would be fair.
 
 - If your task is not urgent, set a minimum price and see how many Tolokers get interested. This way you can determine the optimal price based on the demand for your tasks.
 
-- [Register]({{ register-toloka }}) as a Toloker (you will need an additional account on Yandex) and estimate the average earnings per hour for different tasks. Try to find tasks similar to yours.
+- [Register]({{ register }}) as a Toloker (you will need an additional account on Yandex) and estimate the average earnings per hour for different tasks. Try to find tasks similar to yours.
 
 {% note info %}
 
@@ -84,7 +84,7 @@ If the task is simple, like if the Toloker spends a few seconds to assess produc
 
 If you register in Toloka as a Toloker, you can compare offers from other requesters.
 
-Define the page price, multiply it by the overlap (it's usually 3-5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
+Define the page price, multiply it by the overlap (it's usually 3–5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
 
 {% endcut %}
 
@@ -96,7 +96,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% cut "Where do I find the statistics on the awards I paid?" %}
 
-Track your money debited for rewards in **Profile** → **Spent** tab.
+Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
 
 {% endcut %}
 

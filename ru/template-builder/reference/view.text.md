@@ -1,5 +1,7 @@
 # view.text
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Блок для отображения текста.
 
 Если вам нужен отформатированный текст, используйте компонент [view.markdown](view.markdown.md).

@@ -10,7 +10,7 @@ UserBonusBatchCreateResult(
 )
 ```
 
-The list with the results of the user bonuses creation operation.
+A list with the results of creating rewards for Tolokers.
 
 ## Parameters Description
 

@@ -8,19 +8,17 @@ Don't use this rule in [pools](../../glossary.md#pool) with [dynamic overlap](dy
 
 {% endnote %}
 
-
 ## When to use {#when-use}
 
 If you want to get “high-quality” Tolokers' responses to each task in the given overlap and you don't mind paying more for this.
 
-{% note warning %}
+{% note alert %}
 
 This rule can increase the cost of the pool.
 
 {% endnote %}
 
-
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using non-automatic acceptance. They can be reassigned by setting up the corresponding rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [non-automatic acceptance](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
 
 To download the responses of users who are not blocked:
 
@@ -40,17 +38,17 @@ To download the responses of users who are not blocked:
 
 ## Rule settings {#rule}
 
-{% note warning %}
+{% note alert %}
 
 All fields in this rule are required. If you don't fill in at least one of them, you won't be able to save the rule.
 
 {% endnote %}
 
-
 #|
 || **Field** | **Overview**||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
-- {% if locale == "en-com" %}**banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rules) (such as control tasks, majority vote, [fast answers](../../glossary.md#fast-responses-rule), [skipped assignments](../../glossary.md#skipped-tasks), or [captcha](../../glossary.md#captcha-rule)).
+
+- {% if locale == "en-com" %}**banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as control tasks, majority vote, [fast answers](../../glossary.md#fast-responses), [skipped assignments](../../glossary.md#skipping-tasks), or [captcha](../../glossary.md#captcha)).
 
 - {% if locale == "en-com" %}**filtered out**{% endif %} — The Toloker no longer meets one or more [filters](filters.md).
 
@@ -106,7 +104,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 Overlap defines how many Tolokers complete the same pool task.
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#left-off-acceptance), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
 
 {% endcut %}
 
@@ -131,7 +129,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 - Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
 
 {% endcut %}
 

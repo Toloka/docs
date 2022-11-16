@@ -1,5 +1,5 @@
 # NewMessageThreads
-`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/metrics.py#L342)
+`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/metrics.py#L342)
 
 ```python
 NewMessageThreads(
@@ -36,6 +36,7 @@ How to collect this metrics:
 ```python
 def print_metric(metric_dict):
     print(metric_dict)
+
 collector = MetricCollector
 (
     [
@@ -51,6 +52,16 @@ collector = MetricCollector
 )
 asyncio.run(collector.run())
 ```
+    # all messages in all projects and pools
+    'messages_count': [(datetime.datetime(2021, 11, 19, 9, 40, 15, 970000), 10)],
+    # messages on this exact pool
+    'my_train_pool': [(datetime.datetime(2021, 11, 19, 12, 42, 50, 554830), 4)],
+    # with 'join_events=True' it will be zero if no messages
+    'my_working_pool': [(datetime.datetime(2021, 11, 19, 12, 42, 50, 554830), 0)],
+    'pedestrian_proj': [(datetime.datetime(2021, 11, 19, 12, 42, 50, 554830), 1)],
+    # total count != sum of other counts, because could exist different pools and projects
+    'checking_proj': [(datetime.datetime(2021, 11, 19, 12, 42, 50, 554830), 1)],
+}
 ## Methods Summary
 
 | Method | Description |

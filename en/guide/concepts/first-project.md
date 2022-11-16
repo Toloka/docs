@@ -39,6 +39,19 @@ In the project, you'll customize an appearance of the tasks.
 
     {% endcut %}
 
+    {% note tip %}
+
+    If you unsure which preset to choose, you can ask Toloka experts to create a project for you. To do that,
+
+    - click **Get expert help**,
+    - select the way Toloka can contact you (WhatsApp, Telegram, Viber, email, or phone),
+    - enter your phone number or email address,
+    - briefly describe the project and the results you want to get.
+
+    Toloka engineering team will contact you for more details and explain your further steps.
+
+    {% endnote %}
+
     If you can't find a preset that works for you, choose **Blank** to set up a project from scratch. To learn how, see the [Initial project settings](project.md) section.
 
 1. In the **General information** section, fill in the project name and a brief explanation of what will happen within the project.
@@ -51,7 +64,7 @@ In the project, you'll customize an appearance of the tasks.
 
     1. Click **Show specifications** to see the generated input and output data fields.
 
-        To learn more, see the [Template Builder Help]({{ tb-quickstart }}).
+    To learn more, see the [Template Builder Help](../../template-builder/index.md).
 
 1. In the **Instructions for performers** section, edit the ready-made instructions if needed.
 
@@ -69,7 +82,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
     - Use filters to select Tolokers who will have access to your tasks.
 
-    - Add and configure quality control rules to get more accurate responses. You can use a quality control preset with default settings. In the **Quality Control** section, click **Add a quality control rule** and choose a suitable preset. ![](../_images/first-project/quality-control-presets.png)
+    - Add and configure quality control rules to get more accurate responses. You can use a quality control preset with default settings. In the **Quality Control** section, click **Add a quality control rule** and choose a suitable preset.
 
         ![](../_images/first-project/quality-control-presets.png)
 
@@ -79,7 +92,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 A task is the data you want Tolokers to label. Each image or comment is a separate task.
 
-To upload a [file with tasks](../../glossary.md#tsv-file-definition):
+To upload a [file with tasks](../../glossary.md#tsv):
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
@@ -97,17 +110,17 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition):
 
 1. Attach the file with the tasks.
 
-    Click {% if locale == "en-com" %}**Continue**{% endif %}.
+1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-    Choose a way to put tasks into suites: {% if locale == "en-com" %}**Smart mixing**{% endif %} or {% if locale == "en-com" %}**Set manually**{% endif %}. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
+1. Choose a way to put tasks into suites: {% if locale == "en-com" %}**Smart mixing**{% endif %} or {% if locale == "en-com" %}**Set manually**{% endif %}. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
-    Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
 1. Click **Preview** to make sure that your tasks look correctly.
 
 1. Use control tasks to improve Tolokers' task completion quality.
 
-    {% note info %}
+    {% note tip %}
 
     To save time, you can opt for [having your control tasks created](task_markup.md) by Toloka experts.
 
@@ -115,7 +128,7 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition):
 
 ## Step 4. Launch the pool and get the results {#get-results}
 
-1. Start the pool by clicking **Start labeling**. This assigns the tasks to the Tolokers. ![](../_images/first-project/start-pool.png)
+1. Start the pool by clicking **Start labeling**. This assigns the tasks to the Tolokers.
 
     ![](../_images/first-project/start-pool.png)
 
@@ -141,7 +154,7 @@ To upload a [file with tasks](../../glossary.md#tsv-file-definition):
 
 - If you don't like Template Builder, try out the [HTML/JS/CSS editor](spec.md).
 
-- See the [Toloka API]({{ toloka-api }}) documentation to learn how to manage your projects via the API.
+- See the [Toloka API](../../api/index.md) documentation to learn how to manage your projects via the API.
 
 - If you have questions or problems, see the [Troubleshooting and support](../troubleshooting/troubleshooting.md) section.
 

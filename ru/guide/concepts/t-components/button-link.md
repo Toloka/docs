@@ -1,5 +1,7 @@
 # Кнопка с проверкой перехода по ссылке
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку с проверкой перехода по ссылке в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/operations/internet-search.md#action.open-link){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/template-builder/operations/internet-search.md#action.open-link){% endif %}.
@@ -14,7 +16,7 @@
 
 - Запрет на выполнение задания без перехода по ссылке. Для этого добавьте параметр `"allowed_values":[true]` в описание выходных данных.
 
-Чтобы добавить кнопку со ссылкой в [интерфейс задания](../../../glossary.md#task-interface), используйте компонент `{{field type="button-clicked" name="<название [выходного поля](../incoming.md)>"}}`. Например:
+Чтобы добавить кнопку со ссылкой в [интерфейс задания](../../../glossary.md#task-interface), используйте компонент `{{field type="button-clicked" name="<название выходного поля>"}}`. Например:
 
 {% if locale == "ru-ru" %}
 
@@ -30,7 +32,7 @@
 
 {% endif %}
 
-Полный список параметров см. в [таблице](#table).
+Полный список параметров см. в [таблице](#parametry).
 
 В описании выходных данных добавьте поле с типом `boolean`. Чтобы запретить отправку ответов без перехода по ссылке, добавьте параметр `"allowed_values":[true]`.
 

@@ -4,7 +4,7 @@
 
 Creates a project.
 
-{% note alert %}
+{% note alert "Restriction" %}
 
 You can send a maximum of 20 requests of this kind per minute and a maximum of 100 requests per day.
 
@@ -179,9 +179,9 @@ The quality control rule. ||
 [Presets](quality_control.md) ||
 || **localization_config** | **object**
 
-Block of translations to other languages. For a complete list of parameters, see [Translations to other languages](#localization-config).
+Block of translations to other languages. The complete list of parameters is shown in the [Translations to other languages](#localization-config-section) table.
 
-For more information about translation, see [Translations to other languages](https://toloka.ai/docs/guide/concepts/project-languages.html). ||
+For more information about translation, see [Translations to other languages](../../guide/concepts/project-languages.md). ||
 |#
 
 ## Input and output data (input_spec and output_spec) {#in-out}
@@ -242,17 +242,19 @@ Only for output data of the `coordinates` type: populate the field with the Tolo
 || Parameter | Overview ||
 || **markup** | **string**
 
-For more information, see the [Requester's guide](https://toloka.ai/docs/guide/). ||
+HTML markup of the task.
+
+For more information, see the [HTML block](../../guide/concepts/spec.md#html) section.||
 || **script** | **string**
 
-JavaScript interface for the task.
+JavaScript code of the task.
 
-For more information, see the [Requester's guide](https://toloka.ai/docs/guide/). ||
+For more information, see the [JavaScript block](../../guide/concepts/spec.md#js) section.||
 || **styles** | **string**
 
-CSS task interface.
+CSS styles of the task.
 
-For more information, see the [Requester's guide](https://toloka.ai/docs/guide/). ||
+For more information, see the [CSS block](../../guide/concepts/spec.md#css) section.||
 || **settings** | **object \| required**
 
 Whether to display standard UI elements in the task. ||
@@ -274,7 +276,7 @@ Links to JavaScript libraries and Toloka assets.
 Toloka assets:
 
 - `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — Handlebars (see the [description on the template engine website](http://handlebarsjs.com/)).
-- `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (see  [Image with area selection](https://toloka.ai/docs/guide/concepts/t-components/image-annotation.html/) in the Requester's guide).
+- `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (see  [Image with area selection](../../guide/concepts/t-components/image-annotation.md/) in the Requester's guide).
 
 Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters:
 
@@ -297,7 +299,7 @@ Editor configuration.
 
 In the Template Builder, add to this field the keys for the properties of text components that you need to translate into other languages.
 
-For more information, see [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate). ||
+For more information, see [Translating the task interface](../../guide/concepts/project-languages.md#project-languages__interface-translate). ||
 || **localizationConfig.keys** | **string**
 
 Keys in the source language.
@@ -307,7 +309,7 @@ Keys in the source language.
   "defaultValue": "<source text>"
 ```
 
-For more information, see [Translating the task interface](https://toloka.ai/docs/guide/concepts/project-languages.html#project-languages__interface-translate). ||
+For more information, see [Translating the task interface](../../guide/concepts/project-languages.md#project-languages__interface-translate). ||
 || **settings.showTimer** | **boolean**
 
 Show the timer. The default value is `true`. ||

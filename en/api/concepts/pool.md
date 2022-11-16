@@ -8,6 +8,12 @@ If the project has multiple pools, the order for completing them depends on the 
 
 - Pools with different filter settings and/or a different price per task are sent out for completion when the [pool opens](open-pool.md).
 
+{% note info %}
+
+Wait for the operation completion (changing its [status](get-operation.md) to `SUCCESS` or `FAIL`) before performing any other operation except pool creation.
+
+{% endnote %}
+
 ## Methods {#methods}
 
 Method | Endpoint | Overview
@@ -25,4 +31,4 @@ PATCH | [/pools/pool_id>](set-priority-pool.md) | Changes the priority of a pool
 
 ## Learn more {#links}
 
-- [Description of the pool in the Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html)
+- [Description of the pool in the Requester's guide](../../guide/concepts/pool-main.md)

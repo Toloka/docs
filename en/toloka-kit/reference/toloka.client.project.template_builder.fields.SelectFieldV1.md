@@ -1,5 +1,5 @@
 # SelectFieldV1
-`toloka.client.project.template_builder.fields.SelectFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/fields.py#L451)
+`toloka.client.project.template_builder.fields.SelectFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L452)
 
 ```python
 SelectFieldV1(
@@ -20,7 +20,7 @@ Button for selecting from a drop-down list.
 
 Use this component when the list is long and only one option can be chosen.
 
-For short lists (2-4 items), it's better to use field.radio-group or field.button-radio-group, where all the
+For short lists (2–4 items), it's better to use field.radio-group or field.button-radio-group, where all the
 options are visible at once.
 
 To allow selecting multiple options, use the field.checkbox-group component.

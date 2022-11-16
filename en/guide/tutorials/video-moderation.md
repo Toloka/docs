@@ -26,7 +26,7 @@ Before you begin:
 
 - Upload your video clips to a storage from which you can get file links. For example, your own server, a video hosting, or a [cloud storage](../concepts/cloud-storage.md#cloud).
 
-    {% note warning %}
+    {% note alert "Restriction" %}
 
     The video player supports only MP4 format with H.264 or H.265 encoding.
 
@@ -48,7 +48,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Hand gesture classification**{% endif %} preset.
 
-1. Click {% if locale == "en-com" %}**Choose solution**{% endif %} in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -273,3 +273,5 @@ At this step, upload your task data to Toloka.
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/06_videoModeration/EN/sample-files.zip)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

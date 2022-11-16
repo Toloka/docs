@@ -1,5 +1,7 @@
 # field.checkbox
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Переключатель в виде галочки.
 
 Если вам нужно добавить группу переключателей, используйте [field.checkbox-group](field.checkbox-group.md).

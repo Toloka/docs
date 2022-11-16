@@ -12,7 +12,7 @@ You can:
 
     Preliminary responses are used to calculate  response confidence when dynamic overlap (incremental relabeling, IRL) is enabled.
 
-- Make [control](../../glossary.md#control) and [training](../../glossary.md#training-tasks) tasks from regular ones or edit [responses](create-task.md#known) and [hints](create-task.md#message) for existing tasks.
+- Make [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks from regular ones or edit [responses](create-task.md#known) and [hints](create-task.md#message) for existing tasks.
 
 ## Request {#request}
 

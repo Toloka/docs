@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.classification.wawa.Wawa.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/wawa.py#L53)
+`crowdkit.aggregation.classification.wawa.Wawa.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/wawa.py#L53)
 
 ```python
 fit(self, data: DataFrame)

@@ -3,12 +3,11 @@
 The [project](../../glossary.md#project) rating is the average score given to a project by Tolokers over the last 14 days. There are four evaluation categories:
 
 1. The intention to complete similar tasks.
-1. Clarity of [instructions](../../glossary.md#task-instruction).
+1. Clarity of [instructions](../../glossary.md#instructions).
 1. Convenience of the [task interface](../../glossary.md#task-interface).
 1. Communication with the requester.
 
 The project rating is available to Tolokers. By default, the list of tasks is sorted by project rating.
-
 
 ## Troubleshooting {#troubleshooting}
 
@@ -43,8 +42,6 @@ Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedba
 {% endcut %}
 
 If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
-
-{% endcut %}
 
 {% endcut %}
 

@@ -8,7 +8,7 @@ All payments between requesters and Tolokers are made in U.S. dollars. The accou
 
 - The green number is the account balance.
 
-- Gray indicates funds reserved for the tasks waiting to be [reviewed](../../glossary.md#left-off-acceptance).
+- Gray indicates funds reserved for the tasks waiting to be [reviewed](../../glossary.md#assignment-review).
 
 Money in the account is spent on the following items:
 
@@ -22,7 +22,7 @@ You can [track spending](#track-budget) in your profile. You can also download a
 
 ## Payment per task {#task-payment}
 
-The price of a task is set by the requester in the [pool settings](../../glossary.md#pool). Money is deducted from the account as tasks are completed. If you [review assignments](accept.md) after they are completed, the money for [completed tasks](../../glossary.md#submitted-answers) is first reserved, and then deducted.
+The price of a task is set by the requester in the [pool settings](../../glossary.md#pool). Money is deducted from the account as tasks are completed. If you [review assignments](accept.md) after they are completed, the money for [completed tasks](../../glossary.md#completed-tasks) is first reserved, and then deducted.
 
 ## Fees {#comission}
 
@@ -48,7 +48,7 @@ To get the {% if locale == "en-com" %}Statistics on requester's tasks{% endif %}
 
 1. Click {% if locale == "en-com" %}**Generate report (pdf)**{% endif %} and download the PDF file.
 
-    The report contains data on spending per project (including markup) and [rewards](../../glossary.md#bonus) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
+    The report contains data on spending per project (including markup) and [rewards](../../glossary.md#reward) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
 
 ## Notifications of account status {#money-notification}
 

@@ -1,1 +1,1 @@
-Подробнее см. в разделе [Перевод интерфейса задания]({{ requester-interface-translate }}).
+Подробнее см. в разделе [Перевод интерфейса задания](../../../../../guide/concepts/project-languages.md#interface-translate).

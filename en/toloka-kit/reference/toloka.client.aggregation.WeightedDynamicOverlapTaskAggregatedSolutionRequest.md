@@ -1,5 +1,5 @@
 # WeightedDynamicOverlapTaskAggregatedSolutionRequest
-`toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/aggregation.py#L75)
+`toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/aggregation.py#L64)
 
 ```python
 WeightedDynamicOverlapTaskAggregatedSolutionRequest(
@@ -12,13 +12,13 @@ WeightedDynamicOverlapTaskAggregatedSolutionRequest(
 )
 ```
 
-Request that allows you to run WeightedDynamicOverlap aggregation on a single task
+Parameters to run weighted aggregation for a single task with a dynamic overlap.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`task_id`|**Optional\[str\]**|<p>Answers for which task to aggregate.</p>
-`pool_id`|**Optional\[str\]**|<p>In which pool this task.</p>
-`answer_weight_skill_id`|**Optional\[str\]**|<p>A skill that determines the weight of the performer&#x27;s response.</p>
-`fields`|**Optional\[List\[[Field](toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to use for aggregating responses. For best results, each of these fields must have a limited number of response options.</p>
+`task_id`|**Optional\[str\]**|<p>The ID of the task.</p>
+`pool_id`|**Optional\[str\]**|<p>The ID of the pool containing the task.</p>
+`answer_weight_skill_id`|**Optional\[str\]**|<p>The ID of the skill that determines the weight of the Toloker&#x27;s responses.</p>
+`fields`|**Optional\[List\[[Field](toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to aggregate. For the best results, each of these fields should have limited number of response options.</p>

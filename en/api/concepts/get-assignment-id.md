@@ -78,6 +78,7 @@ Title | Overview
 #|
 || Parameter | Overview ||
 || **id** | **string**
+
 ID of the task suite assignment to a Toloker. ||
 || **task_suite_id** | **string**
 
@@ -131,6 +132,7 @@ Arrays with the responses (`output_values`) are arranged in the same order as th
 ```
 ||
 || **solutions[]** | **array of objects**
+
 Toloker responses. Arranged in the same order as the data for tasks in the `tasks` array.
 
 ```json
@@ -154,7 +156,7 @@ Type of operation for creating a task suite:
 
 The default value is `false`.
 
-For more information about creating task suites, see the [Requester's guide](https://toloka.ai/docs/guide/concepts/pool-main.html). ||
+For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
 || **automerged** | **boolean**
 
 Flag of the response received as a result of [merging identical tasks](tasks.md#task-merge). Value:

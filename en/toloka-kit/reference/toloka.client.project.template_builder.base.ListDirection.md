@@ -1,5 +1,5 @@
 # ListDirection
-`toloka.client.project.template_builder.base.ListDirection` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/base.py#L206)
+`toloka.client.project.template_builder.base.ListDirection` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/base.py#L206)
 
 An enumeration.
 
@@ -7,5 +7,5 @@ An enumeration.
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`HORIZONTAL`|'horizontal'|<p></p>
-`VERTICAL`|'vertical'|<p></p>
+`HORIZONTAL`|'horizontal'|
+`VERTICAL`|'vertical'|

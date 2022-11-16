@@ -44,8 +44,8 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           - Output data fields:
 
-          - `found_link` — The link to the product in the online store.
-          - `found_image` — For uploading the image of the product.
+              - `found_link` — The link to the product in the online store.
+              - `found_image` — For uploading the image of the product.
 
     - HTML/CSS/JS editor
 
@@ -104,7 +104,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. Edit the [input and output data](../../glossary.md#input-output-data) in the **Data specification** block.
 
-          1. Click ![](../_images/other/code.png) to switch graphic mode to JSON format.
+          1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
           1. In the **Input data** field, enter:
 
@@ -152,7 +152,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
               Learn more about the **Specification** parameters in [Input and output data](incoming.md).
 
-          1. Click ![](../_images/tutorials/image-segmentation/preview-button.png) to see the Toloker's view of the task.
+          1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
               {% note info %}
 
@@ -170,7 +170,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Save the changes.
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#task-instruction).
+1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
 
@@ -238,13 +238,17 @@ To create a [pool](../../glossary.md#pool):
     1. Find the **Rules** block in the list and select **Processing rejected and accepted assignments**.
 
     1. Set a rule for rejected tasks: if **a task is rejected**, **increase overlap** by **1**. In addition, turn on the **Open pool if closed** option:
+
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-1.png)
+
     1. Add another quality control rule. Click **Add a quality control rule**.
 
     1. Find the **Rules** block in the list and choose **Submitted responses**.
 
     1. Set a rule for completed assignments: if the number of **submitted assignments is ****greater than or equal to 1**, **set the value of the ****Found_shoes** skill to **1**.
+
     ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part2-2.png)
+
     {% note info %}
 
     If the **Found_shoes** skill is missing from the list, save the pool and reopen it to edit it.
@@ -253,10 +257,9 @@ To create a [pool](../../glossary.md#pool):
 
     [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used in this type of project, because links submitted by Tolokers must match, which is practically impossible. Learn more in [Quality control](control.md).
 
-1. Enter `3` in the **The number of Tolokers to complete each task ** field in the **Task overlap** section.
+1. Enter `3` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
 
 1. Click **Create a pool**.
-
 
 ## Upload tasks {#upload_file}
 
@@ -270,7 +273,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Save the file.
 
-1. Upload the resulting [file](../../glossary.md#tsv-file-definition).
+1. Upload the resulting [file](../../glossary.md#tsv).
 
     1. Click **Upload**. In the window that opens, configure the file upload settings.
 
@@ -284,15 +287,13 @@ To create a [pool](../../glossary.md#pool):
 
     1. In the window that opens, check the number of tasks and click **Add**.
 
-1. Click ![](../_images/other/b-start-pool.png) to start the pool.
+1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
     {% note warning %}
 
     The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
 
     {% endnote %}
-
-
 
 ## What's next {#what-next}
 

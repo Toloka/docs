@@ -1,19 +1,19 @@
 # UserAgentFamily
-`toloka.client.filter.UserAgentFamily.UserAgentFamily` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/filter.py#L581)
+`toloka.client.filter.UserAgentFamily.UserAgentFamily` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L663)
 
-User agent family.
+User agent families.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`IE`|'IE'|<p></p>
-`CHROMIUM`|'CHROMIUM'|<p></p>
-`CHROME`|'CHROME'|<p></p>
-`FIREFOX`|'FIREFOX'|<p></p>
-`SAFARI`|'SAFARI'|<p></p>
-`YANDEX_BROWSER`|'YANDEX_BROWSER'|<p></p>
-`IE_MOBILE`|'IE_MOBILE'|<p></p>
-`CHROME_MOBILE`|'CHROME_MOBILE'|<p></p>
-`MOBILE_FIREFOX`|'MOBILE_FIREFOX'|<p></p>
-`MOBILE_SAFARI`|'MOBILE_SAFARI'|<p></p>
+`IE`|'IE'|
+`CHROMIUM`|'CHROMIUM'|
+`CHROME`|'CHROME'|
+`FIREFOX`|'FIREFOX'|
+`SAFARI`|'SAFARI'|
+`YANDEX_BROWSER`|'YANDEX_BROWSER'|
+`IE_MOBILE`|'IE_MOBILE'|
+`CHROME_MOBILE`|'CHROME_MOBILE'|
+`MOBILE_FIREFOX`|'MOBILE_FIREFOX'|
+`MOBILE_SAFARI`|'MOBILE_SAFARI'|

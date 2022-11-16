@@ -1,12 +1,14 @@
 # Поле для ввода текста
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать поле для ввода текста в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.textarea.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.textarea.md){% endif %}.
 
 {% endnote %}
 
-Чтобы добавить в задание поле для ввода многострочного текста, используйте компонент `{{field type="textarea" name="<название [выходного поля](../incoming.md)>"}}`. Например:
+Чтобы добавить в задание поле для ввода многострочного текста, используйте компонент `{{field type="textarea" name="<название выходного поля>"}}`. Например:
 
 ```plaintext
 {{field type="textarea" name="result" width="270px" rows=5}}

@@ -1,5 +1,7 @@
 # field.audio
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Компонент для записи аудио. Работает в приложении [Толока для мобильных](https://toloka.ai/tolokers/docs/mobile/?lang=ru). В браузере открывает окно для загрузки аудиофайла.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/Sbxas)

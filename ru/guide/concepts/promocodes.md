@@ -1,5 +1,7 @@
 # Промокоды
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Чтобы активировать промокод:
 
 1. На странице [Профиль]({{ profile }}) нажмите кнопку {% if locale == "ru-ru" %}**Ввести промокод**{% endif %}{% if locale == "en-com" %}**Enter promo code**{% endif %}.

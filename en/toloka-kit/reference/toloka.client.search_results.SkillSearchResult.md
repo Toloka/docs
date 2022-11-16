@@ -10,14 +10,11 @@ SkillSearchResult(
 )
 ```
 
-The list of found skills and whether there is something else on the original request
-
-
-It's better to use TolokaClient.get_skill(), which already implements the correct handling of the search result.
+The result of searching skills.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[Skill](toloka.client.skill.Skill.md)\]\]**|<p>List of found skills</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[Skill](toloka.client.skill.Skill.md)\]\]**|<p>A list with found skills.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching skills.</p> <ul> <li>`True` — There are more matching skills, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching skills.</li> </ul>

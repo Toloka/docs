@@ -1,5 +1,5 @@
 # ChangeOverlap
-`toloka.client.actions.ChangeOverlap` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/actions.py#L131)
+`toloka.client.actions.ChangeOverlap` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/actions.py#L131)
 
 ```python
 ChangeOverlap(
@@ -10,21 +10,21 @@ ChangeOverlap(
 )
 ```
 
-Increase the overlap of the set of tasks (or tasks, if the option is used "smart mixing")
+Increases the overlap of a task.
 
 
-You can use this rule only with collectors.UsersAssessment and collectors.AssignmentsAssessment.
+You can use this rule only with [UsersAssessment](toloka.client.collectors.UsersAssessment) and [AssignmentsAssessment](toloka.client.collectors.AssignmentsAssessment) collectors.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`delta`|**Optional\[int\]**|<p>The number by which you want to increase the overlap of the task set (or the task if the option is used &quot;smart mixing&quot;).</p>
-`open_pool`|**Optional\[bool\]**|<p>Changing the pool status:<ul><li>True - Open the pool after changing if it is closed.</li><li>False - Do not open the pool after the change if it is closed.</li></ul></p>
+`delta`|**Optional\[int\]**|<p>An overlap increment.</p>
+`open_pool`|**Optional\[bool\]**|<ul> <li>`True` — Open the pool after changing the overlap value.</li> <li>`False` — Don&#x27;t reopen the pool if it is closed.</li> </ul>
 
 **Examples:**
 
-How to increase task overlap when you reject assignment in delayed mode.
+The example shows how to increase task overlap when you reject assignments.
 
 ```python
 new_pool = toloka.pool.Pool(....)

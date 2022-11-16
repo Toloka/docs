@@ -1,5 +1,7 @@
 # view.labeled-list
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Отображение компонентов в виде списка с подписями. Подписи располагаются слева.
 
 Если вам не нужны подписи, используйте компонент [view.list](view.list.md).

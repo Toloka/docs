@@ -14,9 +14,9 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
   - **Images**
 
-      - [Object classification](../tutorials/image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
+      - [Image classification](../tutorials/image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
 
-  - [Side-by-side image comparison](../tutorials/side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
+      - [Side-by-side image comparison](../tutorials/side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
 
       - [Object recognition and area selection](../tutorials/selection.md) — The Toloker labels the areas on an image that contain the specified object. These tasks are easier to run in the web version.
 
@@ -42,7 +42,7 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
       - [Searching for product characteristics](../tutorials/internet-search.md) — A task in which Tolokers search for data about businesses online.
 
-      - [Business information (example with decomposition)](data-collection.md) — Type of task for searching and processing relevant data. For example, find similar shoes in an online store or determine which of the found objects is more similar to the original one.
+      - [Product photo search (example with decomposition)](data-collection.md) — Type of task for searching and processing relevant data. For example, find similar shoes in an online store or determine which of the found objects is more similar to the original one.
 
   - **Surveys**
 
@@ -68,7 +68,7 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
   - **Level 1. Tutorials using a single project** are suitable for beginners. Go through **at least one** tutorial that is most similar to your task.
 
-      - [Object classification](../tutorials/image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
+      - [Image classification](../tutorials/image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
 
       - [Side-by-side image comparison](../tutorials/side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
 
@@ -184,7 +184,7 @@ We recommend that you break down your object selection project into three projec
 
     1. In the input data, pass the images and coordinates of the labeled objects from the previous task.
 
-    Now you can run the resulting pool with an overlap of 3-5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
+    Now you can run the resulting pool with an overlap of 3–5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
 
     To prevent the Tolokers who worked on the second project from doing the review, assign a skill to them. Use this skill as a filter in the pools of the third project.
 

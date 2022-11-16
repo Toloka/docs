@@ -1,5 +1,7 @@
 # Класс Task
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 {% include [toloka-requester-source-html-editor-tb](../../_includes/toloka-requester-source/id-toloka-requester-source/html-editor-tb.md) %}
 
 Базовый класс `Task` отвечает за [интерфейс задания](../../../glossary.md#task-interface). Класс доступен в глобальной переменной `window.TolokaTask`.

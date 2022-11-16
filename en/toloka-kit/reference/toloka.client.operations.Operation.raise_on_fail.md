@@ -1,5 +1,5 @@
 # raise_on_fail
-`toloka.client.operations.Operation.raise_on_fail` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/operations.py#L111)
+`toloka.client.operations.Operation.raise_on_fail` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/operations.py#L112)
 
 ```python
 raise_on_fail(self)

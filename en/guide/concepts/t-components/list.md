@@ -2,11 +2,11 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a drop-down list in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/field.select){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a drop-down list in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.select.md){% endif %}.
 
 {% endnote %}
 
-To add a dropdown list to the task, use `{{#field type="select" name="<output field [name](../incoming.md)>"}}... {{/field}}`. The entries in the dropdown list are created using the nested expression ``not_var{{select_item}}``. Example:
+To add a dropdown list to the task, use `{{#field type="select" name="<output field name>"}}... {{/field}}`. The entries in the dropdown list are created using the nested expression ``not_var{{select_item}}``. Example:
 
 {% if locale == "en-com" %}
 

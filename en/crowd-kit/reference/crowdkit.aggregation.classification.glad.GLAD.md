@@ -1,5 +1,5 @@
 # GLAD
-`crowdkit.aggregation.classification.glad.GLAD` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0.rc2/crowdkit/aggregation/classification/glad.py#L24)
+`crowdkit.aggregation.classification.glad.GLAD` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/glad.py#L24)
 
 ```python
 GLAD(

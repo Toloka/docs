@@ -1,5 +1,5 @@
 # CheckpointsConfig
-`toloka.client.quality_control.QualityControl.CheckpointsConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/quality_control.py#L62)
+`toloka.client.quality_control.QualityControl.CheckpointsConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/quality_control.py#L62)
 
 ```python
 CheckpointsConfig(
@@ -20,7 +20,7 @@ Spot check saves money and speeds up pool execution.
 
 You can reduce the frequency of checks over time.
 
-Example settings: in the first 25 tasks completed by the user in the pool, issue every fifth task with an overlap "5"
+Example settings: in the first 25 tasks completed by the Toloker in the pool, issue every fifth task with an overlap "5"
 to check the answers. In subsequent tasks issue each 25 task with an overlap "5".
 
 ## Parameters Description

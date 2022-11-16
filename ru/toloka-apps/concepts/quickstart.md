@@ -1,5 +1,7 @@
 # Начало работы
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% include [index-abstract-quickstart](../_includes/abstract-quickstart.md) %}
 
 ## Выберите Bespoke-решение {#choose-app-project}

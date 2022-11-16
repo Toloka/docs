@@ -1,5 +1,7 @@
 # Специальные компоненты и хелперы
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 {% note info %}
 
 Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать интерфейс задания в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../template-builder/reference/index.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../en/template-builder/reference/index.md){% endif %}.

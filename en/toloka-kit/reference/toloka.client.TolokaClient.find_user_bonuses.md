@@ -1,36 +1,34 @@
 # find_user_bonuses
-`toloka.client.TolokaClient.find_user_bonuses`
+`toloka.client.TolokaClient.find_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2923)
 
-Finds all user bonuses that match certain rules
+Finds Tolokers' rewards that match certain criteria.
 
 
-As a result, it returns an object that contains the first part of the found user bonuses and whether there
-are any more results.
-It is better to use the "get_user_bonuses" method, they allow to iterate trought all results
-and not just the first output.
+The number of returned rewards is limited. To find remaining rewards call `find_user_bonuses` with updated search criteria.
+
+To iterate over all matching Tolokers' rewards you may use the [get_user_bonuses](toloka.client.TolokaClient.get_user_bonuses.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_id`|**Optional\[str\]**|<p>Performer ID.</p>
-`assignment_id`|**Optional\[str\]**|<p>ID of the performer&#x27;s response to the task a reward is issued for.</p>
-`private_comment`|**Optional\[str\]**|<p>Comments for the requester.</p>
-`id_lt`|**Optional\[str\]**|<p>Bonuses with an ID less than the specified value.</p>
-`id_lte`|**Optional\[str\]**|<p>Bonuses with an ID less than or equal to the specified value.</p>
-`id_gt`|**Optional\[str\]**|<p>Bonuses with an ID greater than the specified value.</p>
-`id_gte`|**Optional\[str\]**|<p>Bonuses with an ID greater than or equal to the specified value.</p>
-`created_lt`|**Optional\[datetime\]**|<p>Bonuses awarded before the specified date.</p>
-`created_lte`|**Optional\[datetime\]**|<p>Bonuses awarded before or on the specified date.</p>
-`created_gt`|**Optional\[datetime\]**|<p>Bonuses awarded after the specified date.</p>
-`created_gte`|**Optional\[datetime\]**|<p>Bonuses awarded after or on the specified date.</p>
-`sort`|**Union\[List\[str\], [UserBonusSortItems](toloka.client.search_requests.UserBonusSortItems.md), None\]**|<p>How to sort result. Defaults to None.</p>
-`limit`|**Optional\[int\]**|<p>Limit on the number of results returned.</p>
+`user_id`|**Optional\[str\]**|<p>The ID of a Toloker.</p>
+`assignment_id`|**Optional\[str\]**|<p>The ID of an assignment a reward was granted for.</p>
+`private_comment`|**Optional\[str\]**|<p>Rewards with specified comment.</p>
+`id_lt`|**Optional\[str\]**|<p>Rewards with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Rewards with IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Rewards with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Rewards with IDs greater than or equal to the specified value.</p>
+`created_lt`|**Optional\[datetime\]**|<p>Rewards given before the specified date.</p>
+`created_lte`|**Optional\[datetime\]**|<p>Rewards given before or on the specified date.</p>
+`created_gt`|**Optional\[datetime\]**|<p>Rewards given after the specified date.</p>
+`created_gte`|**Optional\[datetime\]**|<p>Rewards given after or on the specified date.</p>
+`sort`|**Union\[List\[str\], [UserBonusSortItems](toloka.client.search_requests.UserBonusSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
+`limit`|**Optional\[int\]**|<p>Returned Tolokers&#x27; rewards limit. The maximum allowed limit is 300.</p>
 
 * **Returns:**
 
-  The first `limit` user bonuses in `items`.
-And a mark that there is more.
+  Found Tolokers' rewards and a flag showing whether there are more matching rewards exceeding the limit.
 
 * **Return type:**
 
@@ -38,8 +36,7 @@ And a mark that there is more.
 
 **Examples:**
 
+
 ```python
 toloka_client.find_user_bonuses(user_id='1', sort=['-created', '-id'], limit=3)
 ```
-
-If method finds more objects than custom or system `limit` allows to operate, it will also show an indicator `has_more=True`.

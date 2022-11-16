@@ -1,34 +1,36 @@
 # AssignmentsAssessment
-`toloka.client.collectors.AssignmentsAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/collectors.py#L151)
+`toloka.client.collectors.AssignmentsAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L153)
 
 ```python
 AssignmentsAssessment(self, *, uuid: Optional[UUID] = None)
 ```
 
-Processing rejected and accepted assignments
+Counts accepted and rejected assignments for every task suite.
 
 
-This rule is helpful when you need to:
-- Resend rejected assignments for re-completion to other performers. If you rejected an assignment, you may want it
-to be completed by another performer instead of the one whose response you rejected. To do this, you can increase
-the overlap for this assignment only. This is especially helpful if you have the overlap value set to 1.
-- Save money on re-completing assignments that you have already accepted. If you reviewed and accepted an assignment,
-it may not make sense for other users to complete the same assignment. To avoid this, you can reduce the overlap for
-accepted assignments only.
+Collector use cases.
+- To reassign rejected task suite to other Tolokers increase
+the overlap of the task suite. It is essential if the default overlap value is 1.
+- You accept an assignment and don't need to collect more responses for that task suite. To save money stop assigning the task suite.
 
-Used with conditions:
-* PendingAssignmentsCount - Number of Assignments pending checking.
-* AcceptedAssignmentsCount - How many times this assignment was accepted.
-* RejectedAssignmentsCount - How many times this assignment was rejected.
-* AssessmentEvent - Assessment of the assignment changes its status to the specified one.
+The collector can be used with conditions:
+* [PendingAssignmentsCount](toloka.client.conditions.PendingAssignmentsCount.md) — The number of pending assignments that must be checked.
+* [AcceptedAssignmentsCount](toloka.client.conditions.AcceptedAssignmentsCount.md) — The number of accepted assignments for a task suite.
+* [RejectedAssignmentsCount](toloka.client.conditions.RejectedAssignmentsCount.md) — The number of rejected assignments for a task suite.
+* [AssessmentEvent](toloka.client.conditions.AssessmentEvent.md) — An assignment status change event.
 
-Used with actions:
-* ChangeOverlap - Increase the overlap of the set of tasks.
+The collector can be used with actions:
+* [ChangeOverlap](toloka.client.actions.ChangeOverlap.md) changes the overlap of a task suite.
 
+## Parameters Description
+
+| Parameters | Type | Description |
+| :----------| :----| :-----------|
+`uuid`|**Optional\[UUID\]**|<p>The ID of a collector. Note that when you clone a pool, both pools start using the same collector, because it is not cloned. Usually, it is not an intended behavior. For example, in this case one collector gathers history size from both pools.</p>
 
 **Examples:**
 
-How to resend rejected assignments for re-completion to other performers.
+The example shows how to reassign rejected task suites to other Tolokers.
 
 ```python
 new_pool = toloka.pool.Pool(....)

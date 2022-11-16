@@ -2,7 +2,7 @@
 
 Define clear conditions for your task to ensure that you get the desired output. The conditions check that a Toloker did the required actions.
 
-In [Toloka]({{ toloka-requester-index-dita }}), you can use conditions to automate the assignment review process. For example, a Toloker can't submit an assignment before they meet your required conditions.
+In [Toloka](../../index.md), you can use conditions to automate the assignment review process. For example, a Toloker can't submit an assignment before they meet your required conditions.
 
 ## Review features {#features}
 
@@ -71,7 +71,7 @@ In this example, a Toloker has to perform at least one of the two actions: to se
 
 ## Checking conditions for specific components {#component}
 
-Some conditions work only with certain [components](../../glossary.md#component-ru). For example, [condition.link-opened](../reference/condition.link-opened.md) works only with `view.link`.
+Some conditions work only with certain [components](../../glossary.md#component). For example, [condition.link-opened](../reference/condition.link-opened.md) works only with `view.link`.
 
 In this example, a Toloker has to click the link in the interface, otherwise the “Submit” button won't work.
 
@@ -79,7 +79,7 @@ In this example, a Toloker has to click the link in the interface, otherwise the
 
 ## Can't find the desired component? {#schema}
 
-In the [list of conditions](../reference/conditions.md), you can see all the available components with the name `conditions.*`. If you can't find the desired component in the list or want to use a preset [configuration](../../glossary.md#konfig-ru), define a review in the [JSON Schema]({{ json-schema }}) format using [condition.schema](../reference/condition.schema.md).
+In the [list of conditions](../reference/conditions.md), you can see all the available components with the name `conditions.*`. If you can't find the desired component in the list or want to use a preset [configuration](../../glossary.md#configuration), define a review in the [JSON Schema]({{ json-schema }}) format using [condition.schema](../reference/condition.schema.md).
 
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

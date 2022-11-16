@@ -1,5 +1,5 @@
 # PoolCompletedPercentage
-`toloka.metrics.pool_metrics.PoolCompletedPercentage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/metrics/pool_metrics.py#L155)
+`toloka.metrics.pool_metrics.PoolCompletedPercentage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/pool_metrics.py#L155)
 
 ```python
 PoolCompletedPercentage(
@@ -32,9 +32,12 @@ How to collect this metric:
 ```python
 def print_metric(metric_dict):
     print(metric_dict)
+
 collector = MetricCollector([PoolCompletedPercentage(pool_id, toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+    'completion_percentage': [(datetime.datetime(2021, 8, 11, 15, 13, 4, 31000), 55)],
+}
 ## Methods Summary
 
 | Method | Description |

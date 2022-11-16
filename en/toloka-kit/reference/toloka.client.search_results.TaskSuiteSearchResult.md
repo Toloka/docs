@@ -10,14 +10,11 @@ TaskSuiteSearchResult(
 )
 ```
 
-The list of found sets of tasks and whether there is something else on the original request
-
-
-It's better to use TolokaClient.get_task_suites(), which already implements the correct handling of the search result.
+The result of searching task suites.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[TaskSuite](toloka.client.task_suite.TaskSuite.md)\]\]**|<p>List of found sets of tasks</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:<ul><li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li><li>False - The output lists all the items.</li></ul></p>
+`items`|**Optional\[List\[[TaskSuite](toloka.client.task_suite.TaskSuite.md)\]\]**|<p>A list with found task suites.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching task suites.</p> <ul> <li>`True` — There are more matching task suites, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching task suites.</li> </ul>

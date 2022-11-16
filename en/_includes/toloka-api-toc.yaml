@@ -1,9 +1,6 @@
 items:
   - name: Overview
     href: ../api/index.md
-  - name: Toloka REST API
-    href: ../api/rest-api.md
-    hidden: true
   - name: Overview
     href: ../api/concepts/about.md
     hidden: true

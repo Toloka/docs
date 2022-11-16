@@ -1,6 +1,7 @@
 # Promo codes
 
 To activate a promo code:
+
 1. On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Enter promo code**{% endif %}.
 
     ![](../_images/promocodes/find-promocode.png)
@@ -11,12 +12,10 @@ To activate a promo code:
 
 1. Done! Promo code activated
 
-{% note info %}
+{% note warning %}
 
 The same promo code can't be activated twice.
 
 {% endnote %}
-
-
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

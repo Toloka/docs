@@ -1,5 +1,7 @@
 # Добавить варианты ответа
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Добавьте новые варианты ответа: флажки, переключатели и выпадающие списки. Переключатель или выпадающий список подойдут, когда вы хотите предоставить один вариант ответа из нескольких предложенных. А флажки подходят, чтобы предоставить выбор любого сочетания из предложенных ответов.
 
 {% cut "Как это выглядит на примере шаблона «Фото товара и ценника»" %}
@@ -2436,1094 +2438,1098 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 Теперь рассмотрим, как добавить каждое поле вручную.
 
-#### Добавить флажок
+{% list tabs %}
 
-В шаблоне используется специальный компонент, облегчающий разработку. Подробнее о нем можно прочитать в разделе [Флажок](t-components/checkboxes.md).
+- Добавить флажок
 
-#### Редактирование выходной спецификации
+  В шаблоне используется специальный компонент, облегчающий разработку. Подробнее о нем можно прочитать в разделе [Флажок](t-components/checkboxes.md).
 
-Добавьте новое поле:
+  #### Редактирование выходной спецификации
 
-`checkbox_result` – флажок (логический тип).
+  Добавьте новое поле:
 
-Добавьте столько полей, сколько вам требуется флажков, но придумайте им уникальные имена. Например, если вам нужно три флажка, добавьте три поля с именами `checkbox_result1`, `checkbox_result2` и `checkbox_result3`.
+  `checkbox_result` — флажок (логический тип).
 
-#### Редактирование HTML
+  Добавьте столько полей, сколько вам требуется флажков, но придумайте им уникальные имена. Например, если вам нужно три флажка, добавьте три поля с именами `checkbox_result1`, `checkbox_result2` и `checkbox_result3`.
 
-1. Код HTML состоит из блоков, описывающих различные элементы интерфейса. Каждый блок может содержать внутри себя другие блоки. Таких уровней вложенности может быть несколько. Например, блок с описанием кнопки ответа содержит в себе блоки с полями для заполнения. Каждое поле тоже содержит в себе другие элементы, например, заголовок и поле для комментария.
+  #### Редактирование HTML
 
-    Каждый блок оформляется так:
+  1. Код HTML состоит из блоков, описывающих различные элементы интерфейса. Каждый блок может содержать внутри себя другие блоки. Таких уровней вложенности может быть несколько. Например, блок с описанием кнопки ответа содержит в себе блоки с полями для заполнения. Каждое поле тоже содержит в себе другие элементы, например, заголовок и поле для комментария.
 
-    {% if locale == "ru-ru" %}
+      Каждый блок оформляется так:
 
-    ```html
-    `<div class="наименование_блока">`
-    <!-- код блока, может содержать вложенные блоки -->
-    ...
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      `<div class="наименование_блока">`
+      <!-- код блока, может содержать вложенные блоки -->
+      ...
+      </div>
+      ```
 
-    ```html
-    `<div class="block_name">`
-    <!-- code for the block that may contain nested blocks -->
-    ...
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      `<div class="block_name">`
+      <!-- code for the block that may contain nested blocks -->
+      ...
+      </div>
+      ```
 
-1. Найдите блок `main` (он начинается со строки `<div class="main">`). Внутри него расположены блоки `main__block`, каждый из которых описывает одну из кнопок. Например, в шаблоне «Фото товара и ценника» есть 4 кнопки для ответа, значит, в блоке `main` у этого шаблона будет 4 блока `main__block` для каждой из кнопок.
+      {% endif %}
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новые поля.
+  1. Найдите блок `main` (он начинается со строки `<div class="main">`). Внутри него расположены блоки `main__block`, каждый из которых описывает одну из кнопок. Например, в шаблоне «Фото товара и ценника» есть 4 кнопки для ответа, значит, в блоке `main` у этого шаблона будет 4 блока `main__block` для каждой из кнопок.
 
-    Внутри блока `main__block` расположен блок `main__content`, который содержит все поля для выбранной кнопки. Описание каждого отдельного поля расположено в блоках `main__content-block`.
+      У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новые поля.
 
-    Найдите нужную кнопку `main__block`, в ней найдите поле `main__content-block`, после которого вы хотите добавить новое поле и вставьте после него следующий код:
+      Внутри блока `main__block` расположен блок `main__content`, который содержит все поля для выбранной кнопки. Описание каждого отдельного поля расположено в блоках `main__content-block`.
 
-    {% if locale == "ru-ru" %}
+      Найдите нужную кнопку `main__block`, в ней найдите поле `main__content-block`, после которого вы хотите добавить новое поле и вставьте после него следующий код:
 
-    ```html
-    <!-- флажок -->
-    <div class="main__content-block">
-    <div class="main__content-title main__content-title_req">
-    not_var{{texts.btn_ok.question_new_checkbox.title}}
-    </div>
-    <div class="main__text">
-    not_var{{texts.btn_ok.question_new_checkbox.description}}
-    </div>
-    <div class="main__box">
-    {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
-    </div>
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      <!-- флажок -->
+      <div class="main__content-block">
+      <div class="main__content-title main__content-title_req">
+      not_var{{texts.btn_ok.question_new_checkbox.title}}
+      </div>
+      <div class="main__text">
+      not_var{{texts.btn_ok.question_new_checkbox.description}}
+      </div>
+      <div class="main__box">
+      {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
+      </div>
+      </div>
+      ```
 
-    ```html
-    <!-- checkbox -->
-    <div class="main__content-block">
-    <div class="main__content-title main__content-title_req">
-    not_var{{texts.btn_ok.question_new_checkbox.title}}
-    </div>
-    <div class="main__text">
-    not_var{{texts.btn_ok.question_new_checkbox.description}}
-    </div>
-    <div class="main__box">
-    {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-    </div>
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      <!-- checkbox -->
+      <div class="main__content-block">
+      <div class="main__content-title main__content-title_req">
+      not_var{{texts.btn_ok.question_new_checkbox.title}}
+      </div>
+      <div class="main__text">
+      not_var{{texts.btn_ok.question_new_checkbox.description}}
+      </div>
+      <div class="main__box">
+      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
+      </div>
+      </div>
+      ```
 
-    В этом коде флажок добавляется для кнопки с наименованием `btn_ok`. Если вы добавили флажок для другой кнопки, измените наименование `btn_ok` на нужное.
+      {% endif %}
 
-    Флажки перечислены в блоке `main__box` в виде строк:
+      В этом коде флажок добавляется для кнопки с наименованием `btn_ok`. Если вы добавили флажок для другой кнопки, измените наименование `btn_ok` на нужное.
 
-    {% if locale == "ru-ru" %}
+      Флажки перечислены в блоке `main__box` в виде строк:
 
-    ```html
-    {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
+      ```
 
-    ```html
-    {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
+      ```
 
-    В коде выше добавлен один флажок. Выходное значение будет передано в поле `checkbox_result`, которое вы добавили в выходную спецификацию.
+      {% endif %}
 
-    Чтобы добавить несколько флажков, вставьте такие же строки столько раз, сколько новых полей этого типа вы добавили в выходную спецификацию. Измените значение параметра `name` для каждого из флажков так, как вы их назвали в выходной спецификации. Например, если вы добавили в выходную спецификацию новые поля для трех флажков, то вставьте эту строку три раза, а затем измените значения `"checkbox_result"` в каждой строке так, как назвали их в спецификации.
+      В коде выше добавлен один флажок. Выходное значение будет передано в поле `checkbox_result`, которое вы добавили в выходную спецификацию.
 
-    Измените значения параметра `label`. Он содержит подпись, которая отображается рядом с флажком.
+      Чтобы добавить несколько флажков, вставьте такие же строки столько раз, сколько новых полей этого типа вы добавили в выходную спецификацию. Измените значение параметра `name` для каждого из флажков так, как вы их назвали в выходной спецификации. Например, если вы добавили в выходную спецификацию новые поля для трех флажков, то вставьте эту строку три раза, а затем измените значения `"checkbox_result"` в каждой строке так, как назвали их в спецификации.
 
-1. Обновите режим приемки.
+      Измените значения параметра `label`. Он содержит подпись, которая отображается рядом с флажком.
 
-    Блок `review` содержит в себе код для каждой кнопки в режиме приемки. Этот код расположен в таких блоках:
+  1. Обновите режим приемки.
 
-    {% if locale == "ru-ru" %}
+      Блок `review` содержит в себе код для каждой кнопки в режиме приемки. Этот код расположен в таких блоках:
 
-    ```html
-    {{#if (equal verdict "ok")}}
-    <!-- код для кнопки "ok" в режиме приемки -->
-    <div class="review__block">
-    <!-- код для поля внутри кнопки "ok" в режиме приемки -->
-    ...
-    </div>
-    ...
-    {{/if}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{#if (equal verdict "ok")}}
+      <!-- код для кнопки "ok" в режиме приемки -->
+      <div class="review__block">
+      <!-- код для поля внутри кнопки "ok" в режиме приемки -->
+      ...
+      </div>
+      ...
+      {{/if}}
+      ```
 
-    ```html
-    {{#if (equal verdict "ok")}}
-    <!-- code for the "ok" button in acceptance mode -->
-    <div class="review__block">
-    <!-- code for the "ok" button field in acceptance mode -->
-    ...
-    </div>
-    ...
-    {{/if}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{#if (equal verdict "ok")}}
+      <!-- code for the "ok" button in acceptance mode -->
+      <div class="review__block">
+      <!-- code for the "ok" button field in acceptance mode -->
+      ...
+      </div>
+      ...
+      {{/if}}
+      ```
 
-    Переменная `verdict` указана в выходной спецификации, в нее будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
+      {% endif %}
 
-    Например, в шаблоне «Фото товара и ценника» для четырех кнопок описаны четыре значения: `ok`, `no_price`, `no_item` и `no_shop`.
+      Переменная `verdict` указана в выходной спецификации, в нее будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
 
-    Блоки `review__block` содержат описание каждого из полей для данной кнопки.
+      Например, в шаблоне «Фото товара и ценника» для четырех кнопок описаны четыре значения: `ok`, `no_price`, `no_item` и `no_shop`.
 
-    Найдите нужную кнопку по строке `{{#if (equal verdict "значение_ответа_кнопки")}}`, в ней найдите поле `review__block`, после которого вы хотите добавить новое поле, и вставьте после него следующий код:
+      Блоки `review__block` содержат описание каждого из полей для данной кнопки.
 
-    {% if locale == "ru-ru" %}
+      Найдите нужную кнопку по строке `{{#if (equal verdict "значение_ответа_кнопки")}}`, в ней найдите поле `review__block`, после которого вы хотите добавить новое поле, и вставьте после него следующий код:
 
-    ```html
-    <!-- флажок -->
-    <div class="review__block">
-    <div class="review__title">
-    not_var{{texts.btn_ok.question_new_checkbox.title}}
-    </div>
-    <div class="review__box">
-    {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
-    </div>
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      <!-- флажок -->
+      <div class="review__block">
+      <div class="review__title">
+      not_var{{texts.btn_ok.question_new_checkbox.title}}
+      </div>
+      <div class="review__box">
+      {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
+      </div>
+      </div>
+      ```
 
-    ```html
-    <!-- checkbox -->
-    <div class="review__block">
-    <div class="review__title">
-    not_var{{texts.btn_ok.question_new_checkbox.title}}
-    </div>
-    <div class="review__box">
-    {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-    </div>
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      <!-- checkbox -->
+      <div class="review__block">
+      <div class="review__title">
+      not_var{{texts.btn_ok.question_new_checkbox.title}}
+      </div>
+      <div class="review__box">
+      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
+      </div>
+      </div>
+      ```
 
-    {% include [advanced-features-input-selector-html-add-checkbox-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-checkbox-1.md) %}
+      {% endif %}
 
-    Флажки перечислены в блоке `review__box` в виде строк:
+      {% include [advanced-features-input-selector-html-add-checkbox-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-checkbox-1.md) %}
 
-    {% if locale == "ru-ru" %}
+      Флажки перечислены в блоке `review__box` в виде строк:
 
-    ```html
-    {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{field type="checkbox" name="checkbox_result" label="флажок" size="L"}}
+      ```
 
-    ```html
-    {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
+      ```
 
-    {% include [advanced-features-input-selector-html-add-checkbox-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-checkbox-2.md) %}
+      {% endif %}
 
-    {% include [advanced-features-input-selector-html-add-checkbox-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-checkbox-3.md) %}
+      {% include [advanced-features-input-selector-html-add-checkbox-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-checkbox-2.md) %}
 
-    {% include [advanced-features-input-selector-html-checkbox-label](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-checkbox-label.md) %}
+      {% include [advanced-features-input-selector-html-add-checkbox-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-checkbox-3.md) %}
 
-#### Редактирование JS
+      {% include [advanced-features-input-selector-html-checkbox-label](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-checkbox-label.md) %}
 
-1. Код JS состоит из блоков, описывающих различные элементы интерфейса. Эти блоки могут быть вложенными (кнопки содержат набор полей, поля содержат набор элементов и т. д.). Каждый блок заключен в фигурные скобки.
+  #### Редактирование JS
 
-    В общем виде элементы описываются так:
+  1. Код JS состоит из блоков, описывающих различные элементы интерфейса. Эти блоки могут быть вложенными (кнопки содержат набор полей, поля содержат набор элементов и т. д.). Каждый блок заключен в фигурные скобки.
 
-    {% if locale == "ru-ru" %}
+      В общем виде элементы описываются так:
 
-    ```plaintext
-    'свойство': 'значение'
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```plaintext
+      'свойство': 'значение'
+      ```
 
-    ```plaintext
-    'property': 'value'
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```plaintext
+      'property': 'value'
+      ```
 
-    Значение тоже может состоять из нескольких свойств, в этом случае оно заключается в фигурные скобки и образует следующий уровень вложенности.
+      {% endif %}
 
-1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
+      Значение тоже может состоять из нескольких свойств, в этом случае оно заключается в фигурные скобки и образует следующий уровень вложенности.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
+  1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
 
-    Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
+      У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
 
-    {% if locale == "ru-ru" %}
+      Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
 
-    ```javascript
-    var texts = {
-    //<общий текст для заголовков>
-    'btn_ok': {
-    'title': 'Я нашел ценник на нужный товар',
-    'question_1': {
-    //<тексты для первого поля (фото фасада магазина)>
-    },
-    'question_2': {
-    //<тексты для второго поля (фото товара)>
-    },
-    'question_3': {
-    //<тексты для третьего поля (фото ценника)>
-    }
-    },
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      var texts = {
+      //<общий текст для заголовков>
+      'btn_ok': {
+      'title': 'Я нашел ценник на нужный товар',
+      'question_1': {
+      //<тексты для первого поля (фото фасада магазина)>
+      },
+      'question_2': {
+      //<тексты для второго поля (фото товара)>
+      },
+      'question_3': {
+      //<тексты для третьего поля (фото ценника)>
+      }
+      },
+      ```
 
-    ```javascript
-    var texts = {
-    //<common header text>
-    'btn_ok': {
-    'title': 'I found the price tag for the product',
-    'question_1': {
-    //<texts for the first field (photos of the store's front)>
-    },
-    'question_2': {
-    //<texts for the second field (product photos)>
-    },
-    'question_3': {
-    //<texts for the third field (photo of the price tag)>
-    }
-    },
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      var texts = {
+      //<common header text>
+      'btn_ok': {
+      'title': 'I found the price tag for the product',
+      'question_1': {
+      //<texts for the first field (photos of the store's front)>
+      },
+      'question_2': {
+      //<texts for the second field (product photos)>
+      },
+      'question_3': {
+      //<texts for the third field (photo of the price tag)>
+      }
+      },
+      ```
 
-1. Чтобы добавить нужные тексты для флажков, поставьте запятую после закрывающей фигурной скобки последнего поля и вставьте следующий код:
+      {% endif %}
 
-    {% if locale == "ru-ru" %}
+  1. Чтобы добавить нужные тексты для флажков, поставьте запятую после закрывающей фигурной скобки последнего поля и вставьте следующий код:
 
-    ```javascript
-    'question_new_checkbox': {
-    'title': 'Флажок',
-    'description': 'Выберите ответ'
-    }
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      'question_new_checkbox': {
+      'title': 'Флажок',
+      'description': 'Выберите ответ'
+      }
+      ```
 
-    ```javascript
-    'question_new_checkbox': {
-    'title': 'Checkbox',
-    'description': 'Select an answer'
-    }
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      'question_new_checkbox': {
+      'title': 'Checkbox',
+      'description': 'Select an answer'
+      }
+      ```
 
-    Измените значения свойств `title` и `description`. Свойство `title` содержит заголовок, который будет отображаться над всей группой флажков, а `description` — вопрос для исполнителя.
+      {% endif %}
 
-1. Валидация.
+      Измените значения свойств `title` и `description`. Свойство `title` содержит заголовок, который будет отображаться над всей группой флажков, а `description` — вопрос для исполнителя.
 
-    Флажок может быть снят или установлен, оба значения допустимы, поэтому отдельные правила валидации для флажка не нужны.
+  1. Валидация.
 
-    {% note info %}
+      Флажок может быть снят или установлен, оба значения допустимы, поэтому отдельные правила валидации для флажка не нужны.
 
-    Если вы укажете в выходной спецификации поле с флажком как обязательное, это не значит, что оно должно быть заполнено. Флажок имеет логический тип и принимает одно из двух значений: `true` или `false`.
+      {% note info %}
 
-    {% endnote %}
+      Если вы укажете в выходной спецификации поле с флажком как обязательное, это не значит, что оно должно быть заполнено. Флажок имеет логический тип и принимает одно из двух значений: `true` или `false`.
 
-#### Добавить переключатель
+      {% endnote %}
 
-В шаблоне используется специальный компонент, облегчающий разработку. Подробнее о нем можно прочитать в разделе [Переключатель](t-components/radiobuttons.md).
+- Добавить переключатель
 
-#### Редактирование выходной спецификации
+  В шаблоне используется специальный компонент, облегчающий разработку. Подробнее о нем можно прочитать в разделе [Переключатель](t-components/radiobuttons.md).
 
-Добавьте новое поле:
+  #### Редактирование выходной спецификации
 
-`radio_result` – переключатель (тип строка).
+  Добавьте новое поле:
 
-#### Редактирование HTML
+  `radio_result` — переключатель (тип строка).
 
-1. Код HTML состоит из блоков, описывающих различные элементы интерфейса. Каждый блок может содержать внутри себя другие блоки. Таких уровней вложенности может быть несколько. Например, блок с описанием кнопки ответа содержит в себе блоки с полями для заполнения. Каждое поле тоже содержит в себе другие элементы, например, заголовок и поле для комментария.
+  #### Редактирование HTML
 
-    Каждый блок оформляется так:
+  1. Код HTML состоит из блоков, описывающих различные элементы интерфейса. Каждый блок может содержать внутри себя другие блоки. Таких уровней вложенности может быть несколько. Например, блок с описанием кнопки ответа содержит в себе блоки с полями для заполнения. Каждое поле тоже содержит в себе другие элементы, например, заголовок и поле для комментария.
 
-    {% if locale == "ru-ru" %}
+      Каждый блок оформляется так:
 
-    ```html
-    `<div class="наименование_блока">`
-    <!-- код блока, может содержать вложенные блоки -->
-    ...
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      `<div class="наименование_блока">`
+      <!-- код блока, может содержать вложенные блоки -->
+      ...
+      </div>
+      ```
 
-    ```html
-    `<div class="block_name">`
-    <!-- code for the block that may contain nested blocks -->
-    ...
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      `<div class="block_name">`
+      <!-- code for the block that may contain nested blocks -->
+      ...
+      </div>
+      ```
 
-1. {% include [advanced-features-input-selector-html-main-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-1.md) %}
+      {% endif %}
 
-    {% include [advanced-features-input-selector-html-main-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-2.md) %}
+  1. {% include [advanced-features-input-selector-html-main-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-1.md) %}
 
-    {% include [advanced-features-input-selector-html-main-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-3.md) %}
+      {% include [advanced-features-input-selector-html-main-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-2.md) %}
 
-    {% include [advanced-features-input-selector-html-main-4](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-4.md) %}
+      {% include [advanced-features-input-selector-html-main-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-3.md) %}
 
-    {% if locale == "ru-ru" %}
+      {% include [advanced-features-input-selector-html-main-4](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-4.md) %}
 
-    ```html
-    <!-- переключатель -->
-    <div class="main__content-block">
-    <div class="main__content-title main__content-title_req">
-    not_var{{texts.btn_ok.question_new_radio.title}}
-    </div>
-    <div class="main__text">
-    not_var{{texts.btn_ok.question_new_radio.description}}
-    </div>
-    <div class="main__box">
-    {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
-    </div>
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      <!-- переключатель -->
+      <div class="main__content-block">
+      <div class="main__content-title main__content-title_req">
+      not_var{{texts.btn_ok.question_new_radio.title}}
+      </div>
+      <div class="main__text">
+      not_var{{texts.btn_ok.question_new_radio.description}}
+      </div>
+      <div class="main__box">
+      {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
+      </div>
+      </div>
+      ```
 
-    ```html
-    <!-- radio button -->
-    <div class="main__content-block">
-    <div class="main__content-title main__content-title_req">
-    not_var{{texts.btn_ok.question_new_radio.title}}
-    </div>
-    <div class="main__text">
-    not_var{{texts.btn_ok.question_new_radio.description}}
-    </div>
-    <div class="main__box">
-    {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-    </div>
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      <!-- radio button -->
+      <div class="main__content-block">
+      <div class="main__content-title main__content-title_req">
+      not_var{{texts.btn_ok.question_new_radio.title}}
+      </div>
+      <div class="main__text">
+      not_var{{texts.btn_ok.question_new_radio.description}}
+      </div>
+      <div class="main__box">
+      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
+      </div>
+      </div>
+      ```
 
-    В этом коде переключатель добавляется для кнопки с наименованием `btn_ok`. Если вы добавили переключатель для другой кнопки, измените наименование `btn_ok` на нужное.
+      {% endif %}
 
-    Переключатели перечислены в блоке `main__box` в виде строк:
+      В этом коде переключатель добавляется для кнопки с наименованием `btn_ok`. Если вы добавили переключатель для другой кнопки, измените наименование `btn_ok` на нужное.
 
-    {% if locale == "ru-ru" %}
+      Переключатели перечислены в блоке `main__box` в виде строк:
 
-    ```html
-    {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
+      ```
 
-    ```html
-    {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
+      ```
 
-    В коде выше добавлен переключатель из двух элементов: **Да** и **Нет** с выходными значениями `Yes` и `No`. Выходное значение будет передано в поле `radio_result`, которое вы добавили в выходную спецификацию.
+      {% endif %}
 
-    Чтобы добавить новые элементы, вставьте такие же строки нужное количество раз, затем переименуйте значения параметров `value` (выходное значение) и `label` (подпись для элемента переключателя).
+      В коде выше добавлен переключатель из двух элементов: **Да** и **Нет** с выходными значениями `Yes` и `No`. Выходное значение будет передано в поле `radio_result`, которое вы добавили в выходную спецификацию.
 
-1. Обновите режим приемки.
+      Чтобы добавить новые элементы, вставьте такие же строки нужное количество раз, затем переименуйте значения параметров `value` (выходное значение) и `label` (подпись для элемента переключателя).
 
-    Блок `review` содержит в себе код для каждой кнопки в режиме приемки. Этот код расположен в таких блоках:
+  1. Обновите режим приемки.
 
-    {% if locale == "ru-ru" %}
+      Блок `review` содержит в себе код для каждой кнопки в режиме приемки. Этот код расположен в таких блоках:
 
-    ```html
-    {{#if (equal verdict "ok")}}
-    <!-- код для кнопки "ok" в режиме приемки -->
-    <div class="review__block">
-    <!-- код для поля внутри кнопки "ok" в режиме приемки -->
-    ...
-    </div>
-    ...
-    {{/if}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{#if (equal verdict "ok")}}
+      <!-- код для кнопки "ok" в режиме приемки -->
+      <div class="review__block">
+      <!-- код для поля внутри кнопки "ok" в режиме приемки -->
+      ...
+      </div>
+      ...
+      {{/if}}
+      ```
 
-    ```html
-    {{#if (equal verdict "ok")}}
-    <!-- code for the "ok" button in acceptance mode -->
-    <div class="review__block">
-    <!-- code for the "ok" button field in acceptance mode -->
-    ...
-    </div>
-    ...
-    {{/if}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{#if (equal verdict "ok")}}
+      <!-- code for the "ok" button in acceptance mode -->
+      <div class="review__block">
+      <!-- code for the "ok" button field in acceptance mode -->
+      ...
+      </div>
+      ...
+      {{/if}}
+      ```
 
-    Переменная `verdict` указана в выходной спецификации, в нее будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
+      {% endif %}
 
-    Например, в шаблоне «Фото товара и ценника» для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
+      Переменная `verdict` указана в выходной спецификации, в нее будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
 
-    Блоки `review__block` содержат описание каждого из полей для данной кнопки.
+      Например, в шаблоне «Фото товара и ценника» для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
 
-    Найдите нужную кнопку по строке `{{#if (equal verdict "значение_ответа_кнопки")}}`, в ней найдите поле `review__block`, после которого вы хотите добавить новое поле и вставьте после него следующий код:
+      Блоки `review__block` содержат описание каждого из полей для данной кнопки.
 
-    {% if locale == "ru-ru" %}
+      Найдите нужную кнопку по строке `{{#if (equal verdict "значение_ответа_кнопки")}}`, в ней найдите поле `review__block`, после которого вы хотите добавить новое поле и вставьте после него следующий код:
 
-    ```html
-    <!-- переключатель -->
-    <div class="review__block">
-    <div class="review__title">
-    not_var{{texts.btn_ok.question_new_radio.title}}
-    </div>
-    <div class="review__box">
-    {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
-    </div>
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      <!-- переключатель -->
+      <div class="review__block">
+      <div class="review__title">
+      not_var{{texts.btn_ok.question_new_radio.title}}
+      </div>
+      <div class="review__box">
+      {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
+      </div>
+      </div>
+      ```
 
-    ```html
-    <!-- radio button -->
-    <div class="review__block">
-    <div class="review__title">
-    not_var{{texts.btn_ok.question_new_radio.title}}
-    </div>
-    <div class="review__box">
-    {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-    </div>
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      <!-- radio button -->
+      <div class="review__block">
+      <div class="review__title">
+      not_var{{texts.btn_ok.question_new_radio.title}}
+      </div>
+      <div class="review__box">
+      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
+      </div>
+      </div>
+      ```
 
-    {% include [advanced-features-input-selector-html-add-radio-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-radio-1.md) %}
+      {% endif %}
 
-    Переключатели перечислены в блоке `review__box` в виде строк:
+      {% include [advanced-features-input-selector-html-add-radio-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-radio-1.md) %}
 
-    {% if locale == "ru-ru" %}
+      Переключатели перечислены в блоке `review__box` в виде строк:
 
-    ```html
-    {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{field type="radio" name="radio_result" label="Да" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="Нет" value="No" size="L" validation-show="top-left"}}
+      ```
 
-    ```html
-    {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-    {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
+      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
+      ```
 
-    {% include [advanced-features-input-selector-html-add-radio-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-radio-2.md) %}
+      {% endif %}
 
-    {% include [advanced-features-input-selector-html-add-radio-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-radio-3.md) %}
+      {% include [advanced-features-input-selector-html-add-radio-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-radio-2.md) %}
 
-#### Редактирование JS
+      {% include [advanced-features-input-selector-html-add-radio-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-add-radio-3.md) %}
 
-1. Код JS состоит из блоков, описывающих различные элементы интерфейса. Эти блоки могут быть вложенными (кнопки содержат набор полей, поля содержат набор элементов и т. д.). Каждый блок заключен в фигурные скобки.
+  #### Редактирование JS
 
-    В общем виде элементы описываются так:
+  1. Код JS состоит из блоков, описывающих различные элементы интерфейса. Эти блоки могут быть вложенными (кнопки содержат набор полей, поля содержат набор элементов и т. д.). Каждый блок заключен в фигурные скобки.
 
-    {% if locale == "ru-ru" %}
+      В общем виде элементы описываются так:
 
-    ```plaintext
-    'свойство': 'значение'
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```plaintext
+      'свойство': 'значение'
+      ```
 
-    ```plaintext
-    'property': 'value'
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```plaintext
+      'property': 'value'
+      ```
 
-    Значение тоже может состоять из нескольких свойств, в этом случае оно заключается в фигурные скобки и образует следующий уровень вложенности.
+      {% endif %}
 
-1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
+      Значение тоже может состоять из нескольких свойств, в этом случае оно заключается в фигурные скобки и образует следующий уровень вложенности.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
+  1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
 
-    Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
+      У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
 
-    {% if locale == "ru-ru" %}
+      Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
 
-    ```javascript
-    var texts = {
-    //<общий текст для заголовков>
-    'btn_ok': {
-    'title': 'Я нашел ценник на нужный товар',
-    'question_1': {
-    //<тексты для первого поля (фото фасада магазина)>
-    },
-    'question_2': {
-    //<тексты для второго поля (фото товара)>
-    },
-    'question_3': {
-    //<тексты для третьего поля (фото ценника)>
-    }
-    },
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      var texts = {
+      //<общий текст для заголовков>
+      'btn_ok': {
+      'title': 'Я нашел ценник на нужный товар',
+      'question_1': {
+      //<тексты для первого поля (фото фасада магазина)>
+      },
+      'question_2': {
+      //<тексты для второго поля (фото товара)>
+      },
+      'question_3': {
+      //<тексты для третьего поля (фото ценника)>
+      }
+      },
+      ```
 
-    ```javascript
-    var texts = {
-    //<common header text>
-    'btn_ok': {
-    'title': 'I found the price tag for the product',
-    'question_1': {
-    //<texts for the first field (photos of the store's front)>
-    },
-    'question_2': {
-    //<texts for the second field (product photos)>
-    },
-    'question_3': {
-    //<texts for the third field (photo of the price tag)>
-    }
-    },
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      var texts = {
+      //<common header text>
+      'btn_ok': {
+      'title': 'I found the price tag for the product',
+      'question_1': {
+      //<texts for the first field (photos of the store's front)>
+      },
+      'question_2': {
+      //<texts for the second field (product photos)>
+      },
+      'question_3': {
+      //<texts for the third field (photo of the price tag)>
+      }
+      },
+      ```
 
-1. Чтобы добавить нужные тексты, поставьте запятую после закрывающей фигурной скобки последнего поля и вставьте следующий код:
+      {% endif %}
 
-    {% if locale == "ru-ru" %}
+  1. Чтобы добавить нужные тексты, поставьте запятую после закрывающей фигурной скобки последнего поля и вставьте следующий код:
 
-    ```javascript
-    'question_new_radio': {
-    'title': 'Переключатели',
-    'description': 'Выберите ответ'
-    }
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      'question_new_radio': {
+      'title': 'Переключатели',
+      'description': 'Выберите ответ'
+      }
+      ```
 
-    ```javascript
-    'question_new_radio': {
-    'title': 'Radio buttons',
-    'description': 'Select an answer'
-    }
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      'question_new_radio': {
+      'title': 'Radio buttons',
+      'description': 'Select an answer'
+      }
+      ```
 
-    Измените значения свойств `title` и `description`. Свойство `title` содержит заголовок, который будет отображаться над всей группой переключателей, а `description` — вопрос для исполнителя.
+      {% endif %}
 
-1. Добавьте валидацию.
+      Измените значения свойств `title` и `description`. Свойство `title` содержит заголовок, который будет отображаться над всей группой переключателей, а `description` — вопрос для исполнителя.
 
-    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне «Фото товара и ценника» этот код выглядит так:
+  1. Добавьте валидацию.
 
-    {% if locale == "ru-ru" %}
+      Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне «Фото товара и ценника» этот код выглядит так:
 
-    ```javascript
-    if (!solution.output_values.verdict || solution.output_values.verdict === '') {
-    this.errors = this.addError('Не выбран ни один вариант ответа', "verdict", this.errors);
-    } else if (solution.output_values.verdict === 'ok') {
-    // код проверки полей кнопки ok
-    if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
-    // код проверки поля imgs_facade
-    }
+      {% if locale == "ru-ru" %}
 
-    if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
-    // код проверки поля imgs_item
-    }
+      ```javascript
+      if (!solution.output_values.verdict || solution.output_values.verdict === '') {
+      this.errors = this.addError('Не выбран ни один вариант ответа', "verdict", this.errors);
+      } else if (solution.output_values.verdict === 'ok') {
+      // код проверки полей кнопки ok
+      if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
+      // код проверки поля imgs_facade
+      }
 
-    if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
-    // код проверки поля imgs_price
-    }
+      if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
+      // код проверки поля imgs_item
+      }
 
-    } else if (solution.output_values.verdict === 'no_price') {
-    // код проверки полей кнопки no_price
-    }
-    } else if (solution.output_values.verdict === 'no_item') {
-    // код проверки полей кнопки no_item
-    }
-    } else if (solution.output_values.verdict === 'no_shop') {
-    // код проверки полей кнопки no_shop
-    }
-    ```
+      if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
+      // код проверки поля imgs_price
+      }
 
-    {% elsif locale == "en-com" %}
+      } else if (solution.output_values.verdict === 'no_price') {
+      // код проверки полей кнопки no_price
+      }
+      } else if (solution.output_values.verdict === 'no_item') {
+      // код проверки полей кнопки no_item
+      }
+      } else if (solution.output_values.verdict === 'no_shop') {
+      // код проверки полей кнопки no_shop
+      }
+      ```
 
-    ```javascript
-    if (!solution.output_values.verdict || solution.output_values.verdict === '') {
-    this.errors = this.addError('No answer selected', "verdict", this.errors);
-    } else if (solution.output_values.verdict === 'ok') {
-    // code for checking the ok button fields
-    if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
-    // code for checking the imgs_facade field
-    }
+      {% elsif locale == "en-com" %}
 
-    if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
-    // code for checking the imgs_item field
-    }
+      ```javascript
+      if (!solution.output_values.verdict || solution.output_values.verdict === '') {
+      this.errors = this.addError('No answer selected', "verdict", this.errors);
+      } else if (solution.output_values.verdict === 'ok') {
+      // code for checking the ok button fields
+      if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
+      // code for checking the imgs_facade field
+      }
 
-    if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
-    // code for checking the imgs_price field
-    }
+      if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
+      // code for checking the imgs_item field
+      }
 
-    } else if (solution.output_values.verdict === 'no_price') {
-    //  code for checking the no_price button fields
-    }
-    } else if (solution.output_values.verdict === 'no_item') {
-    //  code for checking the no_item button fields
-    }
-    } else if (solution.output_values.verdict === 'no_shop') {
-    // code for checking the no_shop button fields
-    }
-    ```
+      if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
+      // code for checking the imgs_price field
+      }
 
-    {% endif %}
+      } else if (solution.output_values.verdict === 'no_price') {
+      //  code for checking the no_price button fields
+      }
+      } else if (solution.output_values.verdict === 'no_item') {
+      //  code for checking the no_item button fields
+      }
+      } else if (solution.output_values.verdict === 'no_shop') {
+      // code for checking the no_shop button fields
+      }
+      ```
 
-    Значения ответа для кнопок в этом примере, которые передаются в выходную переменную `verdict`, называются так же, как на шаге обновления режима приемки: `ok`, `no_price`, `no_item` и `no_shop`.
+      {% endif %}
 
-    Найдите блок проверки нужной кнопки и внутри него после любого блока проверки поля вида
+      Значения ответа для кнопок в этом примере, которые передаются в выходную переменную `verdict`, называются так же, как на шаге обновления режима приемки: `ok`, `no_price`, `no_item` и `no_shop`.
 
-    {% if locale == "ru-ru" %}
+      Найдите блок проверки нужной кнопки и внутри него после любого блока проверки поля вида
 
-    ```javascript
-    if (!solution... ) {
-    // код проверки поля
-    }
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      if (!solution... ) {
+      // код проверки поля
+      }
+      ```
 
-    ```javascript
-    if (!solution... ) {
-    // field validation code
-    }
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      if (!solution... ) {
+      // field validation code
+      }
+      ```
 
-    добавьте следующий код:
+      {% endif %}
 
-    {% if locale == "ru-ru" %}
+      добавьте следующий код:
 
-    ```javascript
-    if (!solution.output_values.radio_result) {
-    this.errors = this.addError('Это обязательное поле', 'radio_result', this.errors);
-    }
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      if (!solution.output_values.radio_result) {
+      this.errors = this.addError('Это обязательное поле', 'radio_result', this.errors);
+      }
+      ```
 
-    ```javascript
-    if (!solution.output_values.radio_result) {
-    this.errors = this.addError('This is a required field', 'radio_result', this.errors);
-    }
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      if (!solution.output_values.radio_result) {
+      this.errors = this.addError('This is a required field', 'radio_result', this.errors);
+      }
+      ```
 
-#### Добавить выпадающий список
+      {% endif %}
 
-В шаблоне используется специальный компонент, облегчающий разработку. Подробнее о нем можно прочитать в разделе [Выпадающий список](t-components/list.md).
+- Добавить выпадающий список
 
-#### Редактирование выходной спецификации
+  В шаблоне используется специальный компонент, облегчающий разработку. Подробнее о нем можно прочитать в разделе [Выпадающий список](t-components/list.md).
 
-Добавьте новое поле:
+  #### Редактирование выходной спецификации
 
-`select_result` – выпадающий список (тип строка).
+  Добавьте новое поле:
 
-#### Редактирование HTML
+  `select_result` — выпадающий список (тип строка).
 
-1. Код HTML состоит из блоков, описывающих различные элементы интерфейса. Каждый блок может содержать внутри себя другие блоки. Таких уровней вложенности может быть несколько. Например, блок с описанием кнопки ответа содержит в себе блоки с полями для заполнения. Каждое поле тоже содержит в себе другие элементы, например, заголовок и поле для комментария.
+  #### Редактирование HTML
 
-    Каждый блок оформляется так:
+  1. Код HTML состоит из блоков, описывающих различные элементы интерфейса. Каждый блок может содержать внутри себя другие блоки. Таких уровней вложенности может быть несколько. Например, блок с описанием кнопки ответа содержит в себе блоки с полями для заполнения. Каждое поле тоже содержит в себе другие элементы, например, заголовок и поле для комментария.
 
-    {% if locale == "ru-ru" %}
+      Каждый блок оформляется так:
 
-    ```html
-    `<div class="наименование_блока">`
-    <!-- код блока, может содержать вложенные блоки -->
-    ...
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      `<div class="наименование_блока">`
+      <!-- код блока, может содержать вложенные блоки -->
+      ...
+      </div>
+      ```
 
-    ```html
-    `<div class="block_name">`
-    <!-- code for the block that may contain nested blocks -->
-    ...
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      `<div class="block_name">`
+      <!-- code for the block that may contain nested blocks -->
+      ...
+      </div>
+      ```
 
-1. {% include [advanced-features-input-selector-html-main-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-1.md) %}
+      {% endif %}
 
-    {% include [advanced-features-input-selector-html-main-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-2.md) %}
+  1. {% include [advanced-features-input-selector-html-main-1](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-1.md) %}
 
-    {% include [advanced-features-input-selector-html-main-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-3.md) %}
+      {% include [advanced-features-input-selector-html-main-2](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-2.md) %}
 
-    {% include [advanced-features-input-selector-html-main-4](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-4.md) %}
+      {% include [advanced-features-input-selector-html-main-3](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-3.md) %}
 
-    {% if locale == "ru-ru" %}
+      {% include [advanced-features-input-selector-html-main-4](../_includes/concepts/advanced-features-input-selector/id-advanced-features-input-selector/html-main-4.md) %}
 
-    ```html
-    <!-- выпадающий список -->
-    <div class="main__content-block">
-    <div class="main__content-title main__content-title_req">
-    not_var{{texts.btn_ok.question_new_select.title}}
-    </div>
-    <div class="main__text">
-    not_var{{texts.btn_ok.question_new_select.description}}
-    </div>
-    <div class="main__box">
-    {{#field type="select" name="select_result" placeholder="Выберите ответ" validation-show="top-left"}}
-    {{select_item value="Yes" text="Да"}}
-    {{select_item value="No" text="Нет"}}
-    {{/field}}
-    </div>
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      <!-- выпадающий список -->
+      <div class="main__content-block">
+      <div class="main__content-title main__content-title_req">
+      not_var{{texts.btn_ok.question_new_select.title}}
+      </div>
+      <div class="main__text">
+      not_var{{texts.btn_ok.question_new_select.description}}
+      </div>
+      <div class="main__box">
+      {{#field type="select" name="select_result" placeholder="Выберите ответ" validation-show="top-left"}}
+      {{select_item value="Yes" text="Да"}}
+      {{select_item value="No" text="Нет"}}
+      {{/field}}
+      </div>
+      </div>
+      ```
 
-    ```html
-    <!-- drop-down list -->
-    <div class="main__content-block">
-    <div class="main__content-title main__content-title_req">
-    not_var{{texts.btn_ok.question_new_select.title}}
-    </div>
-    <div class="main__text">
-    not_var{{texts.btn_ok.question_new_select.description}}
-    </div>
-    <div class="main__box">
-    {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
-    {{select_item value="Yes" text="Yes"}}
-    {{select_item value="No" text="No"}}
-    {{/field}}
-    </div>
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      <!-- drop-down list -->
+      <div class="main__content-block">
+      <div class="main__content-title main__content-title_req">
+      not_var{{texts.btn_ok.question_new_select.title}}
+      </div>
+      <div class="main__text">
+      not_var{{texts.btn_ok.question_new_select.description}}
+      </div>
+      <div class="main__box">
+      {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
+      {{select_item value="Yes" text="Yes"}}
+      {{select_item value="No" text="No"}}
+      {{/field}}
+      </div>
+      </div>
+      ```
 
-    В этом коде выпадающий список добавляется для кнопки с наименованием `btn_ok`. Если вы добавили выпадающий список для другой кнопки, измените наименование `btn_ok` на нужное.
+      {% endif %}
 
-    Элементы выпадающего списка перечислены в блоке `main__box` в виде строк:
+      В этом коде выпадающий список добавляется для кнопки с наименованием `btn_ok`. Если вы добавили выпадающий список для другой кнопки, измените наименование `btn_ok` на нужное.
 
-    {% if locale == "ru-ru" %}
+      Элементы выпадающего списка перечислены в блоке `main__box` в виде строк:
 
-    ```html
-    {{select_item value="Yes" text="Да"}}
-    {{select_item value="No" text="Нет"}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{select_item value="Yes" text="Да"}}
+      {{select_item value="No" text="Нет"}}
+      ```
 
-    ```html
-    {{select_item value="Yes" text="Yes"}}
-    {{select_item value="No" text="No"}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{select_item value="Yes" text="Yes"}}
+      {{select_item value="No" text="No"}}
+      ```
 
-    В коде выше добавлено всего два элемента списка: **Да** и **Нет** с выходными значениями `Yes` и `No`. Выходное значение будет передано в переменную `select_result`, которую вы добавили в выходную спецификацию.
+      {% endif %}
 
-    Чтобы добавить новые элементы, вставьте такие же строки нужное количество раз и переименуйте значения параметров `value` (выходное значение) и `text` (этот текст будет отображаться в самом выпадающем списке).
+      В коде выше добавлено всего два элемента списка: **Да** и **Нет** с выходными значениями `Yes` и `No`. Выходное значение будет передано в переменную `select_result`, которую вы добавили в выходную спецификацию.
 
-1. Обновите режим приемки.
+      Чтобы добавить новые элементы, вставьте такие же строки нужное количество раз и переименуйте значения параметров `value` (выходное значение) и `text` (этот текст будет отображаться в самом выпадающем списке).
 
-    Блок `review` содержит в себе код для каждой кнопки в режиме приемки. Этот код расположен в таких блоках:
+  1. Обновите режим приемки.
 
-    {% if locale == "ru-ru" %}
+      Блок `review` содержит в себе код для каждой кнопки в режиме приемки. Этот код расположен в таких блоках:
 
-    ```html
-    {{#if (equal verdict "ok")}}
-    <!-- код для кнопки "ok" в режиме приемки -->
-    <div class="review__block">
-    <!-- код для поля внутри кнопки "ok" в режиме приемки -->
-    ...
-    </div>
-    ...
-    {{/if}}
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      {{#if (equal verdict "ok")}}
+      <!-- код для кнопки "ok" в режиме приемки -->
+      <div class="review__block">
+      <!-- код для поля внутри кнопки "ok" в режиме приемки -->
+      ...
+      </div>
+      ...
+      {{/if}}
+      ```
 
-    ```html
-    {{#if (equal verdict "ok")}}
-    <!-- code for the "ok" button in acceptance mode -->
-    <div class="review__block">
-    <!-- code for the "ok" button field in acceptance mode -->
-    ...
-    </div>
-    ...
-    {{/if}}
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      {{#if (equal verdict "ok")}}
+      <!-- code for the "ok" button in acceptance mode -->
+      <div class="review__block">
+      <!-- code for the "ok" button field in acceptance mode -->
+      ...
+      </div>
+      ...
+      {{/if}}
+      ```
 
-    Поле `verdict` указано в выходной спецификации, в него будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
+      {% endif %}
 
-    Например, в шаблоне «Фото товара и ценника» для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
+      Поле `verdict` указано в выходной спецификации, в него будет передаваться значение ответа для той кнопки, которую нажал исполнитель.
 
-    Блоки `review__block` содержат описание каждого из полей для данной кнопки.
+      Например, в шаблоне «Фото товара и ценника» для 4 кнопок описаны 4 значения: `ok`, `no_price`, `no_item` и `no_shop`.
 
-    Найдите нужную кнопку по строке `{{#if (equal verdict "значение_ответа_кнопки")}}`, в ней найдите поле `review__block`, после которого вы хотите добавить новое поле и вставьте после него следующий код:
+      Блоки `review__block` содержат описание каждого из полей для данной кнопки.
 
-    {% if locale == "ru-ru" %}
+      Найдите нужную кнопку по строке `{{#if (equal verdict "значение_ответа_кнопки")}}`, в ней найдите поле `review__block`, после которого вы хотите добавить новое поле и вставьте после него следующий код:
 
-    ```html
-    <!-- выпадающий список -->
-    <div class="review__block">
-    <div class="review__title">
-    not_var{{texts.btn_ok.question_new_select.title}}
-    </div>
-    <div class="review__box">
-    {{#field type="select" name="select_result" placeholder="Выберите ответ" validation-show="top-left"}}
-    {{select_item value="Yes" text="Да"}}
-    {{select_item value="No" text="Нет"}}
-    {{/field}}
-    </div>
-    </div>
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```html
+      <!-- выпадающий список -->
+      <div class="review__block">
+      <div class="review__title">
+      not_var{{texts.btn_ok.question_new_select.title}}
+      </div>
+      <div class="review__box">
+      {{#field type="select" name="select_result" placeholder="Выберите ответ" validation-show="top-left"}}
+      {{select_item value="Yes" text="Да"}}
+      {{select_item value="No" text="Нет"}}
+      {{/field}}
+      </div>
+      </div>
+      ```
 
-    ```html
-    <!-- drop-down list -->
-    <div class="review__block">
-    <div class="review__title">
-    not_var{{texts.btn_ok.question_new_select.title}}
-    </div>
-    <div class="review__box">
-    {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
-    {{select_item value="Yes" text="Yes"}}
-    {{select_item value="No" text="No"}}
-    {{/field}}
-    </div>
-    </div>
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```html
+      <!-- drop-down list -->
+      <div class="review__block">
+      <div class="review__title">
+      not_var{{texts.btn_ok.question_new_select.title}}
+      </div>
+      <div class="review__box">
+      {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
+      {{select_item value="Yes" text="Yes"}}
+      {{select_item value="No" text="No"}}
+      {{/field}}
+      </div>
+      </div>
+      ```
 
-    Переименуйте наименование кнопки `btn_ok` на нужное.
+      {% endif %}
 
-    Если на предыдущем шаге вы добавили в выпадающий список новые элементы (строки `{{select_item value= ... }}`), то добавьте в этот код такие же строки.
+      Переименуйте наименование кнопки `btn_ok` на нужное.
 
-#### Редактирование JS
+      Если на предыдущем шаге вы добавили в выпадающий список новые элементы (строки `{{select_item value= ... }}`), то добавьте в этот код такие же строки.
 
-1. Код JS состоит из блоков, описывающих различные элементы интерфейса. Эти блоки могут быть вложенными (кнопки содержат набор полей, поля содержат набор элементов и т. д.). Каждый блок заключен в фигурные скобки.
+  #### Редактирование JS
 
-    В общем виде элементы описываются так:
+  1. Код JS состоит из блоков, описывающих различные элементы интерфейса. Эти блоки могут быть вложенными (кнопки содержат набор полей, поля содержат набор элементов и т. д.). Каждый блок заключен в фигурные скобки.
 
-    {% if locale == "ru-ru" %}
+      В общем виде элементы описываются так:
 
-    ```plaintext
-    'свойство': 'значение'
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```plaintext
+      'свойство': 'значение'
+      ```
 
-    ```plaintext
-    'property': 'value'
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```plaintext
+      'property': 'value'
+      ```
 
-    Значение тоже может состоять из нескольких свойств, в этом случае оно заключается в фигурные скобки и образует следующий уровень вложенности.
+      {% endif %}
 
-1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
+      Значение тоже может состоять из нескольких свойств, в этом случае оно заключается в фигурные скобки и образует следующий уровень вложенности.
 
-    У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
+  1. В самом начале файла находится константа `texts`, в которой хранятся все необходимые для интерфейса тексты для каждой кнопки.
 
-    Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
+      У каждой из кнопок есть наименование для обращения к ее свойствам. Например, в шаблоне «Фото товара и ценника» 4 кнопки называются `btn_ok`, `btn_no_price`, `btn_no_item` и `btn_no_shop`. Запомните наименование той кнопки, в код которой добавляете новый текст.
 
-    {% if locale == "ru-ru" %}
+      Например, в шаблоне «Фото товара и ценника» тексты для кнопки `btn_ok` расположены в следующем блоке кода:
 
-    ```javascript
-    var texts = {
-    //<общий текст для заголовков>
-    'btn_ok': {
-    'title': 'Я нашел ценник на нужный товар',
-    'question_1': {
-    //<тексты для первого поля (фото фасада магазина)>
-    },
-    'question_2': {
-    //<тексты для второго поля (фото товара)>
-    },
-    'question_3': {
-    //<тексты для третьего поля (фото ценника)>
-    }
-    },
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      var texts = {
+      //<общий текст для заголовков>
+      'btn_ok': {
+      'title': 'Я нашел ценник на нужный товар',
+      'question_1': {
+      //<тексты для первого поля (фото фасада магазина)>
+      },
+      'question_2': {
+      //<тексты для второго поля (фото товара)>
+      },
+      'question_3': {
+      //<тексты для третьего поля (фото ценника)>
+      }
+      },
+      ```
 
-    ```javascript
-    var texts = {
-    //<common header text>
-    'btn_ok': {
-    'title': 'I found the price tag for the product',
-    'question_1': {
-    //<texts for the first field (photos of the store's front)>
-    },
-    'question_2': {
-    //<texts for the second field (product photos)>
-    },
-    'question_3': {
-    //<texts for the third field (photo of the price tag)>
-    }
-    },
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      var texts = {
+      //<common header text>
+      'btn_ok': {
+      'title': 'I found the price tag for the product',
+      'question_1': {
+      //<texts for the first field (photos of the store's front)>
+      },
+      'question_2': {
+      //<texts for the second field (product photos)>
+      },
+      'question_3': {
+      //<texts for the third field (photo of the price tag)>
+      }
+      },
+      ```
 
-1. Чтобы добавить нужные тексты, поставьте запятую после закрывающей фигурной скобки последнего поля и вставьте следующий код:
+      {% endif %}
 
-    {% if locale == "ru-ru" %}
+  1. Чтобы добавить нужные тексты, поставьте запятую после закрывающей фигурной скобки последнего поля и вставьте следующий код:
 
-    ```plaintext
-    'question_new_select': {
-    'title': 'Выпадающий список',
-    'description': 'Выберите ответ'
-    }
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```plaintext
+      'question_new_select': {
+      'title': 'Выпадающий список',
+      'description': 'Выберите ответ'
+      }
+      ```
 
-    ```plaintext
-    'question_new_select': {
-    'title': 'Drop-down list',
-    'description': 'Select an answer'
-    }
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```plaintext
+      'question_new_select': {
+      'title': 'Drop-down list',
+      'description': 'Select an answer'
+      }
+      ```
 
-    Измените значения свойств `title` и `description`. Свойство `title` содержит заголовок, который будет отображаться над выпадающим списком, а `description` — вопрос для исполнителя.
+      {% endif %}
 
-1. Добавьте валидацию.
+      Измените значения свойств `title` и `description`. Свойство `title` содержит заголовок, который будет отображаться над выпадающим списком, а `description` — вопрос для исполнителя.
 
-    Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне «Фото товара и ценника» этот код выглядит так:
+  1. Добавьте валидацию.
 
-    {% if locale == "ru-ru" %}
+      Найдите функцию `validate`. В ней находится код для проверки заполнения полей для каждой из кнопок. Например, в шаблоне «Фото товара и ценника» этот код выглядит так:
 
-    ```javascript
-    else if (solution.output_values.verdict === 'ok') {
-    // код проверки полей кнопки ok
-    if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
-    // код проверки поля imgs_facade
-    }
+      {% if locale == "ru-ru" %}
 
-    if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
-    // код проверки поля imgs_item
-    }
+      ```javascript
+      else if (solution.output_values.verdict === 'ok') {
+      // код проверки полей кнопки ok
+      if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
+      // код проверки поля imgs_facade
+      }
 
-    if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
-    // код проверки поля imgs_price
-    }
+      if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
+      // код проверки поля imgs_item
+      }
 
-    } else if (solution.output_values.verdict === 'no_price') {
-    // код проверки полей кнопки no_price
-    }
-    } else if (solution.output_values.verdict === 'no_item') {
-    // код проверки полей кнопки no_item
-    }
-    } else if (solution.output_values.verdict === 'no_shop') {
-    // код проверки полей кнопки no_shop
-    }
-    ```
+      if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
+      // код проверки поля imgs_price
+      }
 
-    {% elsif locale == "en-com" %}
+      } else if (solution.output_values.verdict === 'no_price') {
+      // код проверки полей кнопки no_price
+      }
+      } else if (solution.output_values.verdict === 'no_item') {
+      // код проверки полей кнопки no_item
+      }
+      } else if (solution.output_values.verdict === 'no_shop') {
+      // код проверки полей кнопки no_shop
+      }
+      ```
 
-    ```javascript
-    else if (solution.output_values.verdict === 'ok') {
-    // code for checking the ok button fields
-    if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
-    // code for checking the imgs_facade field
-    }
+      {% elsif locale == "en-com" %}
 
-    if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
-    // code for checking the imgs_item field
-    }
+      ```javascript
+      else if (solution.output_values.verdict === 'ok') {
+      // code for checking the ok button fields
+      if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
+      // code for checking the imgs_facade field
+      }
 
-    if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
-    // code for checking the imgs_price field
-    }
+      if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
+      // code for checking the imgs_item field
+      }
 
-    } else if (solution.output_values.verdict === 'no_price') {
-    //  code for checking the no_price button fields
-    }
-    } else if (solution.output_values.verdict === 'no_item') {
-    //  code for checking the no_item button fields
-    }
-    } else if (solution.output_values.verdict === 'no_shop') {
-    // code for checking the no_shop button fields
-    }
-    ```
+      if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
+      // code for checking the imgs_price field
+      }
 
-    {% endif %}
+      } else if (solution.output_values.verdict === 'no_price') {
+      //  code for checking the no_price button fields
+      }
+      } else if (solution.output_values.verdict === 'no_item') {
+      //  code for checking the no_item button fields
+      }
+      } else if (solution.output_values.verdict === 'no_shop') {
+      // code for checking the no_shop button fields
+      }
+      ```
 
-    Значения ответа для кнопок в этом примере, которые передаются в выходное поле `verdict`, называются точно, как на шаге обновления режима приемки: `ok`, `no_price`, `no_item` и `no_shop`.
+      {% endif %}
 
-    Найдите блок проверки нужной кнопки и внутри него после любого блока проверки поля вида
+      Значения ответа для кнопок в этом примере, которые передаются в выходное поле `verdict`, называются точно, как на шаге обновления режима приемки: `ok`, `no_price`, `no_item` и `no_shop`.
 
-    {% if locale == "ru-ru" %}
+      Найдите блок проверки нужной кнопки и внутри него после любого блока проверки поля вида
 
-    ```javascript
-    if (!solution... ) {
-    // код проверки поля
-    }
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      if (!solution... ) {
+      // код проверки поля
+      }
+      ```
 
-    ```javascript
-    if (!solution... ) {
-    // field validation code
-    }
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      if (!solution... ) {
+      // field validation code
+      }
+      ```
 
-    добавьте следующий код:
+      {% endif %}
 
-    {% if locale == "ru-ru" %}
+      добавьте следующий код:
 
-    ```javascript
-    if (!solution.output_values.select_result) {
-    this.errors = this.addError('Это обязательное поле', 'select_result', this.errors);
-    }
-    ```
+      {% if locale == "ru-ru" %}
 
-    {% elsif locale == "en-com" %}
+      ```javascript
+      if (!solution.output_values.select_result) {
+      this.errors = this.addError('Это обязательное поле', 'select_result', this.errors);
+      }
+      ```
 
-    ```javascript
-    if (!solution.output_values.select_result) {
-    this.errors = this.addError('This is a required field', 'select_result', this.errors);
-    }
-    ```
+      {% elsif locale == "en-com" %}
 
-    {% endif %}
+      ```javascript
+      if (!solution.output_values.select_result) {
+      this.errors = this.addError('This is a required field', 'select_result', this.errors);
+      }
+      ```
+
+      {% endif %}
+
+{% endlist %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}

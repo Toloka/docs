@@ -2,7 +2,7 @@
 
 You can view the list of created [projects](../../glossary.md#project) on the **Projects** page. Open the project page to view the [list of pools](pool-main.md), [the project rating](project_rating_stat.md) and [the project statistics](project-statistic.md).
 
-To edit project parameters, click ![](../_images/location-job/project/edit-project.svg) in the list of projects or  on the project page.
+To edit project parameters, click ![](../_images/location-job/project/edit-project.svg) in the list of projects or {% if locale == "en-com" %}**Project actions → Edit**{% endif %} on the project page.
 
 {% note alert %}
 
@@ -30,7 +30,7 @@ You can make notes here that only you as a requester need to know about.
 
 #### Editor
 
-In this block, you need to create the [task interface](../../glossary.md#task-interface) for users. You can do it manually (using HTML/CSS/JS) or using [Template Builder]({{ tb-quickstart }}).
+In this block, you need to create the [task interface](../../glossary.md#task-interface) for users. You can do it manually (using HTML/CSS/JS) or using [Template Builder](../../template-builder/index.md).
 
 To see an example of task display, click **Task preview**.
 

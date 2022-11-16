@@ -2,11 +2,11 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a checkbox in {% if locale == "en-com" %}[Template Builder](https://toloka.ai/en/docs/template-builder/reference/field.checkbox){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a checkbox in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.checkbox.md){% endif %}.
 
 {% endnote %}
 
-To insert a checkbox in a task, use the `{{field type="checkbox" name="<[output field](../incoming.md)> name"}}` component. For example, a set of three checkboxes:
+To insert a checkbox in a task, use the `{{field type="checkbox" name="<output field> name"}}` component. For example, a set of three checkboxes:
 
 {% if locale == "en-com" %}
 

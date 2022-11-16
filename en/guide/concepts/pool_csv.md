@@ -1,12 +1,13 @@
 # Creating a file with tasks
 
-Tasks are uploaded to the [pool](pool-main.md) in [the tasks file](../../glossary.md#tsv-file-definition-ru_1).
+Tasks are uploaded to the [pool](pool-main.md) in [the tasks file](../../glossary.md#tsv).
 
 Download the file template for your [project](../../glossary.md#project) on the [pool](../../glossary.md#pool) page. Use the template to create your own task file and upload it to the pool.
 
 {% cut "Use sample data" %}
 
 If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
+
 - {% if locale == "en-com" %}**Image classification**{% endif %}
 - {% if locale == "en-com" %}**Product search relevance**{% endif %}
 - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
@@ -23,12 +24,15 @@ If you need to add different task types to the pool, upload multiple files, one 
 ## Tasks file structure {#structure}
 
 The first line of the file contains the column headers:
-- `INPUT:<name of the [input data field](incoming.md)>` — Input data for tasks.
 
-- `GOLDEN:<name of the [output data field](incoming.md)>` — Responses for [control tasks](../../glossary.md#control-task).
+- `INPUT:<name of the input data field>` — Input data for tasks.
+
+- `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
+
 - `HINT:text` — Hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
 - Point coordinates for [field tasks](../tutorials/walk.md):
+
     - `Al:latitude` — Latitude.
 
     - `Al:longitude` — Longitude.
@@ -37,71 +41,81 @@ Task type depends on which fields are filled in:
 
 {% list tabs %}
 
- - General task
+- General task
 
-   To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
+  To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
 
-   {% cut "Example with a simple object (string, link, and so on)" %}
+  {% cut "Example with a simple object (string, link, and so on)" %}
 
-   ![](../_images/location-job/pool_csv/main_tsv.png)
+  ![](../_images/location-job/pool_csv/main_tsv.png)
 
-   {% endcut %}
+  {% endcut %}
 
-   {% cut "Example with a string array" %}
+  {% cut "Example with a string array" %}
 
-   ![](../_images/location-job/pool_csv/main_tsv2.png)
+  ![](../_images/location-job/pool_csv/main_tsv2.png)
 
-   {% endcut %}
+  {% endcut %}
 
 - Control task
 
-	To create a control task, add:
+  To create a control task, add:
 
-	- The task input data in the columns with the `INPUT` header.
-	- Correct responses in the columns with the `GOLDEN` header.
+  - The task input data in the columns with the `INPUT` header.
 
-    You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+  - Correct responses in the columns with the `GOLDEN` header.
 
-	{% endnote %}
+  {% note tip %}
 
-	{% cut "Example" %}
+  You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
-	![](../_images/location-job/pool_csv/controls_tsv.png)
+  {% endnote %}
 
-	{% endcut %}
+  {% cut "Example" %}
+
+  ![](../_images/location-job/pool_csv/controls_tsv.png)
+
+  {% endcut %}
 
 - Training task
 
-	To create a training task, add:
-	- The task input data in the columns with the `INPUT` header.
-	- Correct responses in the columns with the `GOLDEN` header.
-	- A hint in the `HINT:text` column.
+  To create a training task, add:
 
-	For training tasks, it is convenient to create a [separate pool](train.md).
+  - The task input data in the columns with the `INPUT` header.
 
-	{% note info %}
+  - Correct responses in the columns with the `GOLDEN` header.
 
-	You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+  - A hint in the `HINT:text` column.
 
-	{% endnote %}
+  For training tasks, it is convenient to create a [separate pool](train.md).
 
+  {% note info %}
 
-	{% cut "Example" %}
+  You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
-	![](../_images/location-job/pool_csv/cats_tsv.png)
+  {% endnote %}
 
-	{% endcut %}
+  {% cut "Example" %}
+
+  ![](../_images/location-job/pool_csv/cats_tsv.png)
+
+  {% endcut %}
 
 - Field task
 
-	The task that the Toloker chooses on the map in the Toloka mobile app.
+  The task that the Toloker chooses on the map in the Toloka mobile app.
 
-	To create a field task, add:
+  To create a field task, add:
 
-	- The task input data in the columns with the `INPUT` header.
-	- Coordinates in the `Al:latitude` and `Al:longitude` columns.
+  - The task input data in the columns with the `INPUT` header.
 
-You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+  - Coordinates in the `Al:latitude` and `Al:longitude` columns.
+
+  {% cut "Example" %}
+
+  ![](../_images/tutorials/walk/squirrel_tsv.png)
+
+  {% endcut %}
 
 {% endlist %}
 
@@ -124,20 +138,27 @@ You can work with data in an editor and then save it in the desired format.
 - TSV
 
   1. Create a spreadsheet with [appropriate headings](#structure) or copy them from the template.
+
   1. Add data for tasks.
+
   1. Copy the entire spreadsheet. Paste it into a simple text editor (such as {% if locale == "en-com" %}Notepad{% endif %} in Windows or TextEdit in Mac).
+
   1. Save the file in UTF-8 encoding with the `tsv` extension.
 
 - XLSX
 
   1. Create a spreadsheet with [appropriate headings](#structure) or copy them from the template.
+
   1. Add data for tasks.
+
   1. Save the file in `XLSX`.
 
 - JSON
 
   1. Download the file template in `JSON`.
+
   1. Open the template in a text editor and add your data.
+
   1. Save the file.
 
 {% endlist %}
@@ -152,7 +173,8 @@ The type of input data determines how control characters are escaped. Determine 
 
 {% cut "String type data" %}
 
-To display quotation marks ``"`` in the string type field:
+To display quotation marks `"` in the string type field:
+
 - The quotation marks of this type come in pairs. Don't escape other types of quotation marks (`« »` and `“ ”`).
 
 - Enclose the field in quotation marks `" "`.
@@ -161,10 +183,10 @@ Unescaped quotation marks are removed when processing the file.
 
 Data | Example of transferring data to a file | Status | What the Toloker will see
 ----- | ----- | ----- | -----
-{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` "monitor 24"" buy" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
-{% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %} | {% if locale == "en-com" %}``` correct, but the quotes won't be displayed ```{% endif %} | {% if locale == "en-com" %}``` book All about dogs ```{% endif %}
-{% if locale == "en-com" %}``` book “All about dogs” ```{% endif %} | {% if locale == "en-com" %}``` "book “All about dogs”" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book “All about dogs” ```{% endif %}
-{% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
+{% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "en-com" %}`"monitor 24"" buy"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %}
+{% if locale == "en-com" %}`book "All about dogs"`{% endif %} | {% if locale == "en-com" %}`book "All about dogs"`{% endif %} | {% if locale == "en-com" %}`correct, but the quotes won't be displayed`{% endif %} | {% if locale == "en-com" %}`book All about dogs`{% endif %}
+{% if locale == "en-com" %}`book “All about dogs”`{% endif %} | {% if locale == "en-com" %}`"book “All about dogs”"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`book “All about dogs”`{% endif %}
+{% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -172,16 +194,14 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 {% cut "To load data in a field with the json type" %}
 
-- Add another quotation mark to each ``"`` type of quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
+- Add another quotation mark to each `"` type of quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
 
 - Enclose the field in quotation marks `" "`.
 
-
 | Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}``` {"query": "monitor 24 inch buy"} ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch buy""}" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24 inch buy ```{% endif %}
-|{% if locale == "en-com" %}``` {"query": "monitor 24 inch buy"} ```{% endif %} | {% if locale == "en-com" %}``` "{"query": "monitor 24 inch buy"}" ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
-
+|{% if locale == "en-com" %}`{"query": "monitor 24 inch buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24 inch buy`{% endif %}
+|{% if locale == "en-com" %}`{"query": "monitor 24 inch buy"}`{% endif %} | {% if locale == "en-com" %}`"{"query": "monitor 24 inch buy"}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -193,11 +213,11 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}``` {"query": "monitor 24\" buy"} ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" buy""}" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
-|{% if locale == "en-com" %}``` {"query": "monitor 24" buy"} ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" buy""}" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy ```{% endif %}
-|{% if locale == "en-com" %}``` {"query": "book \"All about dogs\""} ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""book \""All about dogs\""""}" ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` book "All about dogs" ```{% endif %}
-|{% if locale == "en-com" %}``` {"query": "monitor 24\" buy"} ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24\"\" buy""}" ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
-|{% if locale == "en-com" %}``` {"query": "book \"All about dogs\""} ```{% endif %} | {% if locale == "en-com" %}``` "{"query": "book \"All about dogs\""}" ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
+|{% if locale == "en-com" %}`{"query": "monitor 24\" buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %}
+|{% if locale == "en-com" %}`{"query": "monitor 24" buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %}
+|{% if locale == "en-com" %}`{"query": "book \"All about dogs\""}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""book \""All about dogs\""""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`book "All about dogs"`{% endif %}
+|{% if locale == "en-com" %}`{"query": "monitor 24\" buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"\" buy""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|{% if locale == "en-com" %}`{"query": "book \"All about dogs\""}`{% endif %} | {% if locale == "en-com" %}`"{"query": "book \"All about dogs\""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -207,11 +227,10 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 - Enclose the field in quotation marks `" "`.
 
-
 | Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|``` {"query": "array A\B"} ``` | ``` "{""query"": ""array A\\B""}" ``` | ``` correct ``` | ``` array A\B ```
-|{% if locale == "en-com" %}``` {"query": "array A\B"} ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""array A\B""}" ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
+|`{"query": "array A\B"}` |`"{""query"": ""array A\\B""}"` |`correct` |`array A\B`
+|{% if locale == "en-com" %}`{"query": "array A\B"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""array A\B""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -227,13 +246,12 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 - Enclose the field in quotation marks `" "`.
 
-
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}```  [{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}] ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"  ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24 inch buy monitor 19 inch buy ```{% endif %}
-|{% if locale == "en-com" %}``` [{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]  ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"  ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24 inch, system unit buy monitor 19 inch, system unit buy ```{% endif %}
-|{% if locale == "en-com" %}``` [{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]  ```{% endif %} | {% if locale == "en-com" %}``` "{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"  ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
-|{% if locale == "en-com" %}``` [{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]  ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"  ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
+|{% if locale == "en-com" %}`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24 inch buy monitor 19 inch buy`{% endif %}
+|{% if locale == "en-com" %}`[{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24 inch, system unit buy monitor 19 inch, system unit buy`{% endif %}
+|{% if locale == "en-com" %}`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]`{% endif %} | {% if locale == "en-com" %}`"{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|{% if locale == "en-com" %}`[{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -243,12 +261,10 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 - Enclose the field in quotation marks `" "`.
 
-
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}```  [{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}] ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"  ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` monitor 24" buy monitor 19" buy ```{% endif %}
-|{% if locale == "en-com" %}```  [{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}] ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"  ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
-
+|{% if locale == "en-com" %}`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy monitor 19" buy`{% endif %}
+|{% if locale == "en-com" %}`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -258,11 +274,10 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 - Enclose the field in quotation marks `" "`.
 
-
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}```  [{"query": "array A\B"},{"query": "array C\B"}] ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""array A\\\B""},{""query"": ""array C\D""}"  ```{% endif %} | {% if locale == "en-com" %}``` correct ```{% endif %} | {% if locale == "en-com" %}``` array A\B array C\D ```{% endif %}
-|{% if locale == "en-com" %}```  [{"query": "array A\B"},{"query": "array C\B"}] ```{% endif %} | {% if locale == "en-com" %}``` "{""query"": ""array A\\B""},{""query"": ""array C\\D"}"  ```{% endif %} | {% if locale == "en-com" %}``` loading error ```{% endif %} |
+|{% if locale == "en-com" %}`[{"query": "array A\B"},{"query": "array C\B"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""array A\\\B""},{""query"": ""array C\D""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`array A\B array C\D`{% endif %}
+|{% if locale == "en-com" %}`[{"query": "array A\B"},{"query": "array C\B"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""array A\\B""},{""query"": ""array C\\D"}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
 
 {% endcut %}
 
@@ -270,8 +285,7 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 ## What's next {#what_next}
 
-- [Upload tasks to the pool.](task_upload.md).
-
+- [Upload tasks to the pool](task_upload.md).
 
 ## Troubleshooting {#troubleshooting}
 
@@ -301,196 +315,62 @@ To work with a large log conveniently, copy it to the text editor.
 
 If the [column headings](pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
 
-#### Processing errors table
+#### Processing errors tables
 
-<table>
-<tr>
-<th>Overview</th><th>How to fix</th>
-</tr>
-<tr>
-<td colspan="2">
-
-```
+```json
 "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
 "exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
 ```
 
-</td>
-</tr>
-<tr>
-<td>
-
-**Extra tabs.**
-
-If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.<br/><br/>For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive.
-
-</td>
-<td>
-
-Remove extra column separators in the above example — both `\t\t` characters.
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-```"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**The number of fields in the header and in the row doesn't match.**
-
-</td>
-<td>
-
-Make sure that:
-
-- The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-```
-"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
-```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**The value is missing for a required input field.**
-
-</td>
-<td> Make sure that columns with required input data fields are filled.</td>
-</tr>
-<tr>
-<td colspan="2">
-
-```
-"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
-```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**Invalid data in a “link” (“url”) field.**
-
-</td>
-<td>
-
-Make sure that:
-
-- Links start with the `http://`, `https://` or `www` prefix.
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-```"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**Unpaired quotation mark in a string.**
-
-</td>
-<td>
-
-Check that all quotation marks are [escaped](pool_csv.md#string).
+#|
+||**Overview**|**How to fix**||
+||**Extra tabs.**
 
 If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
 
-For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive.
+For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
+|#
 
-Remove extra column separators in the above example — both `\t\t` characters.
+```json
+"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
+```
 
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-```"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)" ```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**The number of fields in the header and in the row doesn't match.**
-
-</td>
-<td> Make sure that:
+#|
+||**Overview**|**How to fix**||
+||**The number of fields in the header and in the row doesn't match.** | Make sure that:
 
 - The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.</td>
-</tr>
-<tr>
-<td colspan="2">
+- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
+|#
 
-``` "code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null" ```
+```json
+"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
+```
 
-</td>
-</tr>
-<tr>
-<td>
+#|
+||**Overview**|**How to fix**||
+||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
+|#
 
-**The value is missing for a required input field.**
+```json
+"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
+```
 
-</td>
-<td> Make sure that columns with required input data fields are filled.</td>
-</tr>
-<tr>
-<td colspan="2">
+#|
+||**Overview**|**How to fix**||
+||**Invalid data in a “link” (“url”) field.** | Make sure that:
 
-``` "code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format" ```
+- Links start with the `http://`, `https://` or `www` prefix.||
+|#
 
-</td>
-</tr>
-<tr>
-<td>
+```json
+"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
+```
 
-**Invalid data in a "link" ("url") field.**
-
-</td>
-<td>
-
-Make sure that:
-- Links start with the `http://`, `https://` or `www` prefix.
-
-</td>
-</tr>
-<tr>
-<td colspan="2">
-
-``` "exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4" ```
-
-</td>
-</tr>
-<tr>
-<td>
-
-**Unpaired quotation mark in a string.**
-
-</td>
-<td>
-
-Check that all quotation marks are [escaped](pool_csv.md#string).
-
-</tr>
-</table>
-
+#|
+||**Overview**|**How to fix**||
+||**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).||
+|#
 
 {% endcut %}
 
@@ -533,7 +413,9 @@ For more information about creating the file, see the [Guide](pool_csv.md). If t
 The error might occur if the expected input type is URL, but a string is received.
 
 There may be two reasons:
+
 - The input field has the "link" type.
+
 - The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
 
 {% endcut %}
@@ -575,8 +457,10 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 The same task may appear on different pages if:
 
 - Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
+
 - Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-- If a [quality control rule](../../glossary.md#quality-control-rules) changes a task's overlap, it will appear in a different set.
+
+- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 
@@ -594,13 +478,13 @@ When you create a pool, the pool will have settings for the number of tasks per 
 
 {% cut "How do I add multiple "known_solutions" to a training task file?" %}
 
-You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API]({{ toloka-api-tasks }}) for that.
+You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API](../../api/concepts/tasks.md) for that.
 
 {% endcut %}
 
 {% cut "Where is my file added if I upload it to the running pool?" %}
 
-If the **Keep task order** option enabled in the settings of the pool, labeling will start after the previously uploaded tasks. If this option is disabled, we can't guarantee that the tasks are assigned in their sequence order.
+If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
 
 {% endcut %}
 
@@ -644,6 +528,10 @@ Escape commas with a backslash (`\`).
 
 The text from the `hint`field will be shown to the Toloker in a red box at the top of the page if they give a response to the control task that differs from the correct one.
 
+#### Example
+
+![](../_images/hint.png)
+
 If you need to display the text from the `hint` field in several lines, add hyphens to the file and enclose the text in quotation marks.
 
 {% endcut %}
@@ -667,10 +555,10 @@ Text in the GOLDEN field must match the control text exactly.
 Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
 
 Check the links that you use. There are several ways to unify links:
-- Add requirements for the link format in your instructions and hints in your training pool.
-- Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
-{% endcut %}
+- Add requirements for the link format in your instructions and hints in your training pool.
+
+- Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
 
 {% endcut %}
 

@@ -1,5 +1,5 @@
 # clone_training
-`toloka.client.TolokaClient.clone_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.clone_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1728)
 
 ```python
 clone_training(self, training_id: str)
@@ -26,6 +26,7 @@ A new training will be attached to the same project.
   [Training](toloka.client.training.Training.md)
 
 **Examples:**
+
 
 ```python
 toloka_client.clone_training(training_id='1')

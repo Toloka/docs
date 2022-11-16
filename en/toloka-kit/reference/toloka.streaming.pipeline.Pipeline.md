@@ -1,11 +1,12 @@
 # Pipeline
-`toloka.streaming.pipeline.Pipeline` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/pipeline.py#L65)
+`toloka.streaming.pipeline.Pipeline` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/pipeline.py#L78)
 
 ```python
 Pipeline(
     self,
     period: timedelta = ...,
     storage: Optional[BaseStorage] = None,
+    iteration_mode: IterationMode = IterationMode.FIRST_COMPLETED,
     *,
     name: Optional[str] = None
 )
@@ -23,6 +24,7 @@ while at least one of them may resume.
 | :----------| :----| :-----------|
 `period`|**timedelta**|<p>Period of observers calls. By default, 60 seconds.</p>
 `storage`|**Optional\[[BaseStorage](toloka.streaming.storage.BaseStorage.md)\]**|<p>Optional storage object to save pipeline&#x27;s state. Allow to recover from previous state in case of failure.</p>
+`iteration_mode`|**[IterationMode](toloka.streaming.pipeline.IterationMode.md)**|<p>When to start new iteration. Default is `FIRST_COMPLETED`</p>
 
 **Examples:**
 
@@ -32,13 +34,18 @@ Get assignments from segmentation pool and send them for verification to another
 def handle_submitted(events: List[AssignmentEvent]) -> None:
     verification_tasks = [create_verification_task(item.assignment) for item in events]
     toloka_client.create_tasks(verification_tasks, open_pool=True)
+
 def handle_accepted(events: List[AssignmentEvent]) -> None:
     do_some_aggregation([item.assignment for item in events])
+
 async_toloka_client = AsyncMultithreadWrapper(toloka_client)
+
 observer_123 = AssignmentsObserver(async_toloka_client, pool_id='123')
 observer_123.on_submitted(handle_submitted)
+
 observer_456 = AssignmentsObserver(async_toloka_client, pool_id='456')
 observer_456.on_accepted(handle_accepted)
+
 pipeline = Pipeline()
 pipeline.register(observer_123)
 pipeline.register(observer_456)
@@ -70,3 +77,4 @@ await pipeline.run()  # Save state after each iteration. Try to load saved at st
 [observers_iter](toloka.streaming.pipeline.Pipeline.observers_iter.md)| Iterate over registered observers.
 [register](toloka.streaming.pipeline.Pipeline.register.md)| Register given observer.
 [run](toloka.streaming.pipeline.Pipeline.run.md)| None
+[run_manually](toloka.streaming.pipeline.Pipeline.run_manually.md)| None

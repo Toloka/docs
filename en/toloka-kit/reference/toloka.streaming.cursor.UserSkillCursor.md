@@ -1,5 +1,5 @@
 # UserSkillCursor
-`toloka.streaming.cursor.UserSkillCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/streaming/cursor.py#L331)
+`toloka.streaming.cursor.UserSkillCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/cursor.py#L331)
 
 ```python
 UserSkillCursor(
@@ -23,22 +23,23 @@ UserSkillCursor(
 )
 ```
 
-Iterator over UserSkillEvent objects of seleted event_type.
+Iterator over UserSkillEvent objects of a selected event_type.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search user skills.</p>
-`request`|**[UserSkillSearchRequest](toloka.client.search_requests.UserSkillSearchRequest.md)**|<p>Base request to search user skills by.</p>
-`event_type`|**Any**|<p>User skill event&#x27;s type to search.</p>
+`toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search skills.</p>
+`request`|**[UserSkillSearchRequest](toloka.client.search_requests.UserSkillSearchRequest.md)**|<p>Base request to search skills by.</p>
+`event_type`|**Any**|<p>Skill event type to search.</p>
 
 **Examples:**
 
-Iterate over user skills acceptances events.
+Iterate over skills acceptances events.
 
 ```python
 it = UserSkillCursor(event_type='MODIFIED', toloka_client=toloka_client)
 current_events = list(it)
-new_events = list(it)  # Contains only new events, occured since the previous call.
+# ... new skills could be set ...
+new_events = list(it)  # Contains only new events, occurred since the previous call.
 ```

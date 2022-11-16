@@ -32,7 +32,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**Voice recording**{% endif %} preset.
 
-1. Click {% if locale == "en-com" %}**Choose solution**{% endif %} in the pop-up tab.
+1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -250,3 +250,5 @@ The `popup` property of the component [view.image](../../template-builder/refere
 - [Instructions](https://toloka.ai/knowledgebase/instruction/)
 - [Quality control](https://toloka.ai/knowledgebase/quality-control/)
 - [Pricing](https://toloka.ai/knowledgebase/pricing/)
+
+{% include [contact-support](../_includes/contact-support-help.md) %}

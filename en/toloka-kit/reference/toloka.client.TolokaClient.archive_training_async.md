@@ -1,5 +1,5 @@
 # archive_training_async
-`toloka.client.TolokaClient.archive_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/__init__.py#L40)
+`toloka.client.TolokaClient.archive_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1658)
 
 ```python
 archive_training_async(self, training_id: str)
@@ -27,6 +27,7 @@ status. If pool is already archived then None is returned.
   Optional\[[TrainingArchiveOperation](toloka.client.operations.TrainingArchiveOperation.md)\]
 
 **Examples:**
+
 
 ```python
 closed_training = next(toloka_client.find_trainings(status='CLOSED'))

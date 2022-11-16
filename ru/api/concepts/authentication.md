@@ -1,5 +1,7 @@
 # Аутентификация событий
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 API Toloka отправляет уведомления о событиях, которые могут содержать конфиденциальные данные. Важно защитить данные от возможной утечки и обеспечить им надежную защиту. Для этого необходимо убедиться, что запросы были отправлены с помощью API Toloka.
 
 Для подтверждения того, что источником уведомлений является API Toloka, используется дополнительный заголовок **Toloka-Signature**. Он формируется из параметров, указанных в запросе. При создании подписи используется алгоритм хеширования **HMAC Sha256**.
@@ -45,7 +47,7 @@ API Toloka отправляет уведомления о событиях, ко
 ```bash
 POST /webhook_endpoint HTTP/1.1
 Host: client_api
-Toloka-Signature: {v=1, ts=946728000000, sign=609af3eefd4c12b6afad30ab456efcd21f}
+Toloka-Signature: {v=1, ts=946728000000, sign=609af3eefd4c12b6afad30ab456efcd21fe82f4247d3340151a3ca0c97a6cbcb}
 Content-Type: application/json
 Content-Length: 355
 
@@ -99,7 +101,7 @@ toloka_header_ts = 946728000000
 toloka_header_v = 1
 
 # значение поля "sign", из входящего заголовка Toloka-Signature
-toloka_header_sign = '609af3eefd4c12b6afad30ab456efcd21f'
+toloka_header_sign = '609af3eefd4c12b6afad30ab456efcd21fe82f4247d3340151a3ca0c97a6cbcb'
 
 if (is_valid_signature(secret_key, request_payload, toloka_header_ts,
     toloka_header_v, toloka_header_sign)):

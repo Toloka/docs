@@ -1,5 +1,7 @@
 # Вопросы и ответы
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 ## Как посмотреть затраты {#expenses}
 
 1. Откройте страницу проекта.

@@ -20,13 +20,13 @@ If you set [non-automatic acceptance](offline-accept.md) in the pool settings, y
 
 You can review assignments online or upload review results in a file.
 
-{% endcut %}
-
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
+
+{% endcut %}
 
 {% cut "Online review of one task." %}
 
@@ -82,25 +82,25 @@ To accept or reject responses:
 
     - `Response archive`
 
-    - `Folder1_ID_ responses`
+        - `Folder1_ID_ responses`
 
-    - `File1_ID_attachments`
+            - `File1_ID_attachments`
 
-    - `File2_ID_attachments`
+            - `File2_ID_attachments`
 
-    - `Folder2_ID_ responses`
+        - `Folder2_ID_ responses`
 
     You can match responses and attachments by their IDs. Attachment ID is included in the TSV file, in the column with the output field where the file was uploaded.
 
     - `TSV file`
 
-    - `Column1_with_output_field`
+        - `Column1_with_output_field`
 
-    - `ID_attachments`
+            - `ID_attachments`
 
-    - `Column2_with_output_field`
+        - `Column2_with_output_field`
 
-    - `ID_attachments`
+            - `ID_attachments`
 
     {% endnote %}
 
@@ -121,7 +121,7 @@ To accept or reject responses:
 
     - “-” if you reject the responses.
 
-    - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#task-instruction) wasn't followed).
+    - `ACCEPT:comment` — Comments for Tolokers if responses were rejected (for example, specify which part of the [instructions](../../glossary.md#instructions) wasn't followed).
 
 1. Upload the edited TSV file to Toloka (**Import/ Export → Upload results**).
 
@@ -131,13 +131,13 @@ To accept or reject responses:
 
 Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements assignment review with the help of Tolokers.
 
+{% endcut %}
+
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
-
-{% endcut %}
 
 ## Appeal {#appeal}
 
@@ -185,7 +185,7 @@ d) the result of the Task does not comply with the Instruction.
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#submitted-answers) incorrectly to a new pool.
+No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#completed-tasks) incorrectly to a new pool.
 
 {% endcut %}
 

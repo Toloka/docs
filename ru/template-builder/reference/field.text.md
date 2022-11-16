@@ -1,5 +1,7 @@
 # field.text
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Поле для ввода короткого текста, не больше одной строки. Чтобы добавить поле, где можно ввести много строк текста, используйте [field.textarea](field.textarea.md).
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/T7Ykn)

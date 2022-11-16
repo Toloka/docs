@@ -1,5 +1,5 @@
 # SubArrayConditionV1
-`toloka.client.project.template_builder.conditions.SubArrayConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v0.1.26/src/client/project/template_builder/conditions.py#L284)
+`toloka.client.project.template_builder.conditions.SubArrayConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/conditions.py#L284)
 
 ```python
 SubArrayConditionV1(
@@ -20,4 +20,4 @@ Checks that the array in data is a subarray for parent.
 | :----------| :----| :-----------|
 `data`|**Optional\[Any\]**|<p>Subarray that is checked for in parent.</p>
 `parent`|**Optional\[Any\]**|<p>The array where data is searched for.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that the user will see.</p>
+`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>

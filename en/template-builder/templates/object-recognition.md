@@ -1,4 +1,4 @@
-# Object recognition and area selection
+# Object recognition & detection
 
 For this type of project, you can use the **Object recognition & detection** preset.
 
@@ -169,5 +169,9 @@ In this example, the text is highlighted with a yellow border.
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/eLCcS7Tz3VvzPT)
+
+## See also {#see-also}
+
+- [Tutorials — object recognition & detection](../../guide/tutorials/selection.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

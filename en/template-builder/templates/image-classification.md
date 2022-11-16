@@ -46,7 +46,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
 - One option (a radio button)
 
-  The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2-4 short answer options.
+  The [field.button-radio-group](../reference/field.button-radio-group.md) component is displayed as solid buttons. It's better to use these buttons if the question has 2–4 short answer options.
 
   If there are more answer options, or they are long, it's better to use [field.radio-group](../reference/field.radio-group.md), as in the example.
 
@@ -62,19 +62,19 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 ## Image and search query comparison {#search}
 
-#### Does the image match the search query
+### Does the image match the search query
 
 Add a button that opens the search results and generate a search query link using the [helper.search-query](../reference/helper.search-query.md) component. To make sure that a Toloker clicked on the link and checked its contents, configure validation, as in the example.
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC66Y)
 
-#### Side-by-side image and web page comparison
+### Side-by-side image and web page comparison
 
 You can display the web page in the built-in window using the [view.iframe](../reference/view.iframe.md) component. Place the image next to it using [layout.side-by-side](../reference/layout.side-by-side.md).
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6Fu)
 
-#### Side-by-side image and mobile web page comparison
+### Side-by-side image and mobile web page comparison
 
 This is a more complex example that compares the image with the results of a search query. The following components are added:
 
@@ -83,5 +83,9 @@ This is a more complex example that compares the image with the results of a sea
 - [layout.side-by-side](../reference/layout.side-by-side.md): Places the image and the search results window next to each other.
 
 [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6L8)
+
+## See also {#see-also}
+
+- [Tutorials — image classification](../../guide/tutorials/image-classification.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
