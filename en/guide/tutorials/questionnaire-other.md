@@ -108,24 +108,24 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-You can create a pool by one of two ways:
+You can create a pool using one of the ways:
 
-- From preset — a new pool with settings for survey:
+- From a preset — a new pool with settings for survey:
 
     - Load one static link to the survey. To learn more, see the [Upload data](#upload) section.
-    
-    - You don't need to add a correct completion codes to the file with tasks.
-    
+
+    - Don't add correct completion codes to the file with tasks.
+
     - Indicate an [overlap](../../glossary.md#overlap) equal to the required number of Tolokers.
-    
+
     - Use [non-automatic acceptance](../concepts/offline-accept.md).
-    
+
     {% note info %}
-    
-    In this case, you need to adapt the overlap, the price of the survey and the audience settings (including the skill by which Tolokers who have already passed the survey once are excluded). If you want to learn more about pool settings, see the section about creating a pool from scratch.
-    
+
+    In this case, you need to adjust the overlap, the price of the survey, and the audience settings (including the skill by which the platform will exclude the Tolokers who have already completed the survey once). To learn more about pool settings, see the section below about creating a pool from scratch.
+
     {% endnote %}
-    
+
 - From scratch — a new pool with default settings.
 
 {% list tabs %}
