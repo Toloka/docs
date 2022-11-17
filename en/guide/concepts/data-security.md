@@ -31,17 +31,17 @@ If your data is confidential, take additional measures to protect it.
 
 ### Protect your data from cheaters {#protect-from-them}
 
-- [Decompose tasks](solution-architecture.md#ul_aqh_tbb_xlb). You can break your tasks down into several projects (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
+- [Decompose tasks](solution-architecture.md#concept_o3r_h4g_nlb). You can break your tasks down into several projects (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
 
 - If you use [input](../../glossary.md#input-output-data) fields to transmit data that Tolokers shouldn't see, hide the fields that contain this data. For instance, do this if you moderate comments and you need the authors' personal data in the results for further data processing.
 
 - Use any name or pseudonym to identify yourself for the Tolokers — you don't have to disclose your company name. This is useful for requesters who don't want to attract unnecessary interest from Tolokers.
 
-- You can use the [Completed tasks](submitted-answers.md#rule) quality control rule to limit the number of task suites each Toloker can complete. This lets you better protect your data from fraud and minimize your risks (scattered data has no commercial value).
+- You can use the [Submitted responses](submitted-answers.md#rule) quality control rule to limit the number of task suites each Toloker can complete. This lets you better protect your data from fraud and minimize your risks (scattered data has no commercial value).
 
 ### Store data on your own server {#keep-it-save}
 
-Set up the process to avoid storing data on Yandex servers. To do this:
+Set up the process to avoid storing data on Toloka servers. To do this:
 
 1. When uploading tasks to the pool, use IDs in the input data rather than content itself.
 

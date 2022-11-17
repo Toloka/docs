@@ -53,7 +53,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 - {% if locale == "en-com" %}**skill**{% endif %} — The Toloker no longer meets the specific skill filter.
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action performed under the condition {% if locale == "en-com" %}**If**{% endif %}:
+||{% if locale == "en-com" %}**then**{% endif %} | Action performed under the {% if locale == "en-com" %}**If**{% endif %} condition:
 
 - {% if locale == "en-com" %}**extend overlap by**{% endif %} — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
 

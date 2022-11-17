@@ -10,7 +10,8 @@ Read in the blog:
 
 - Learn about the benefits of Template Builder and how to use it in the article {% if locale == "en-com" %}[Template Builder in Toloka]({{ toloka-blog-template-builder-en }}){% endif %}.
 
-{% if locale == "en-com" %}[Toloka Digest]({{ toloka-blog-digest-en }}){% endif %}.
+{% if locale == "en-com" %}
+- [Toloka Digest]({{ toloka-blog-digest-en }}){% endif %}.
 
 You can also read the [Template Builder Help](../../template-builder/index.md).
 
@@ -24,7 +25,7 @@ Learn more about the benefits of decomposition and when to use it in [Task decom
 
 To learn how to use decomposition correctly, see [Object recognition and area selection](image-segmentation-overview.md).
 
-You can also read [Mistakes related to project architecture](frequent-customer-errors.md).
+You can also read [Mistakes related to project architecture](frequent-customer-errors.md#mistakes-architecture).
 
 ### Task interface {#task-interface}
 
@@ -34,7 +35,7 @@ Read about how to create a good interface in our blog {% if locale == "en-com" %
 
 Also see the following sections:
 
-- [Mistakes related to the task interface](frequent-customer-errors.md)
+- [Mistakes related to the task interface](frequent-customer-errors.md#interface-mistakes)
 
 - [Adapt a task for mobile devices](mobile.md)
 
@@ -42,7 +43,7 @@ Also see the following sections:
 
 If your tasks are not displayed or are displayed incorrectly, Tolokers are unable to complete them, and you lose time and money.
 
-You can also read [Mistakes related to uploading tasks](frequent-customer-errors.md).
+You can also read [Mistakes related to uploading tasks](frequent-customer-errors.md#loading-tasks-mistakes).
 
 ## How to get good responses {#how-to-get}
 
@@ -52,7 +53,7 @@ Quality control rules allow you to get more accurate responses and restrict acce
 
 Read the following sections:
 
-- [Mistakes in quality control settings](frequent-customer-errors.md)
+- [Mistakes in quality control settings](frequent-customer-errors.md#quality-control-mistakes)
 - [How to check Tolokers](check-performers.md)
 
 ### Filters {#filters}

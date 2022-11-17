@@ -26,7 +26,7 @@
 
 О том, как правильно использовать декомпозицию, читайте в разделе [Распознавание объектов и выделение областей](image-segmentation-overview.md).
 
-Также изучите раздел [Ошибки в архитектуре проекта](frequent-customer-errors.md).
+Также изучите раздел [Ошибки в архитектуре проекта](frequent-customer-errors.md#mistakes-architecture).
 
 ### Интерфейс задания {#task-interface}
 
@@ -38,7 +38,7 @@
 
 Также ознакомьтесь с разделами:
 
-- [Ошибки в интерфейсе задания](frequent-customer-errors.md);
+- [Ошибки в интерфейсе задания](frequent-customer-errors.md#interface-mistakes);
 - [Адаптировать задание для мобильных устройств](mobile.md).
 
 ## Загрузка заданий {#download-task}
@@ -53,7 +53,7 @@
 
 {% endif %}
 
-Советуем ознакомиться с разделом [Ошибки в загрузке заданий](frequent-customer-errors.md).
+Советуем ознакомиться с разделом [Ошибки в загрузке заданий](frequent-customer-errors.md#loading-tasks-mistakes).
 
 ## Как получать хорошие ответы {#how-to-get}
 
@@ -75,7 +75,7 @@
 
 Советуем изучить разделы:
 
-- [Ошибки в настройке контроля качества](frequent-customer-errors.md);
+- [Ошибки в настройке контроля качества](frequent-customer-errors.md#quality-control-mistakes);
 - [Как проверять исполнителей](check-performers.md).
 
 ### Фильтры {#filters}
