@@ -53,7 +53,7 @@
 
 ## Клонирование пула {#clone}
 
-Чтобы клонировать пул, нажмите кнопку {% if locale == "ru-ru" %}**![](../_images/drop-down.svg) → Клонировать**{% endif %}{% if locale == "en-com" %}**![](../_images/drop-down.svg) → Clone**{% endif %} вверху страницы пула или ![](../_images/clone-pool.svg) в списке пулов на странице проекта.
+Чтобы клонировать пул, нажмите кнопку {% if locale == "ru-ru" %}**![Выпадающее меню](../_images/drop-down.svg) → Клонировать**{% endif %}{% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → Clone**{% endif %} вверху страницы пула или ![](../_images/clone-pool.svg) в списке пулов на странице проекта.
 
 Если необходимо изменить параметры пула, [откройте режим редактирования](pool-edit.md).
 

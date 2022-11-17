@@ -10,7 +10,7 @@ If you run the [pool](../../glossary.md#pool) with the assignment review, make s
 
 1. Open the [pool](pool-main.md).
 
-1. Click ![](../_images/drop-down.svg) next to the {% if locale == "en-com" %}**Download results**{% endif %} button.
+1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the {% if locale == "en-com" %}**Download results**{% endif %} button.
 
 1. Choose the aggregation method:
 

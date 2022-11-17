@@ -173,7 +173,7 @@ By default, archived training pools are not visible in the list of project train
 
 The training pool is automatically archived if no action is performed in it for 30 days.
 
-To archive a training pool manually, click {% if locale == "en-com" %}**![](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page or ![](../_images/other/pool-action-archive.svg) in the list of training options on the project page.
+To archive a training pool manually, click {% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page or ![](../_images/other/pool-action-archive.svg) in the list of training options on the project page.
 
 If these buttons don't work, make sure that all the main pools that the training pool is linked to are [sent to the archive](pool-archive.md).
 

@@ -186,7 +186,7 @@ In this example, the Toloker has access to two pools with different prices and d
 
 ## Cloning a pool {#clone}
 
-To clone a pool, click {% if locale == "en-com" %}**![](../_images/drop-down.svg) → Clone**{% endif %} at the top of the pool page or ![](../_images/clone-pool.svg) in the list of pools on the project page.
+To clone a pool, click {% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → Clone**{% endif %} at the top of the pool page or ![](../_images/clone-pool.svg) in the list of pools on the project page.
 
 If you need to change the pool settings, [open edit mode](pool-edit.md).
 

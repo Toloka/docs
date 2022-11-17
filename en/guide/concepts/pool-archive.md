@@ -16,7 +16,7 @@ The pool is automatically archived if none of the following actions is performed
 - Completing a task.
 - Cloning via the Toloka API.
 
-To archive a pool, click {% if locale == "en-com" %}**![](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page, or ![](../_images/other/pool-action-archive.svg) in the list of pools on the project page.
+To archive a pool, click {% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page, or ![](../_images/other/pool-action-archive.svg) in the list of pools on the project page.
 
 {% note info %}
 
