@@ -8,7 +8,7 @@ To create a skill:
 
 1. Describe the skill in the {% if locale == "en-com" %}**Description**{% endif %} field.
 
-1. Set up the value of the {% if locale == "en-com" %}**Public**{% endif %} field:
+1. Set up the value of the {% if locale == "en-com" %}**Public?**{% endif %} option:
 
     - **No** — The default value. Tolokers will not be able to see the information about the skill.
 
