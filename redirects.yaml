@@ -1,13 +1,45 @@
 common:
   - from: /api/concepts/download-tasks.md
     to: /api/concepts/upload-tasks.md
+  - from: /guide/index.md
+    to: /index.md
 
 ru:
   - from: /api/concepts/download-tasks.md
     to: /api/concepts/upload-tasks.md
+  - from: /guide/concepts/protect-your-data.md
+    to: /guide/tutorials/data-security.md
 
 en:
-  - from: /concepts/photo-org.md
-    to: /tutorials/monitoring-objects-in-organizations.md
-  - from: /concepts/field-poll.md
-    to: /tutorials/questionnaire-toloka.md
+  - from: /guide/concepts/photo-org.md
+    to: /guide/tutorials/monitoring-objects-in-organizations.md
+  - from: /guide/concepts/field-poll.md
+    to: /guide/tutorials/questionnaire-toloka.md
+  - from: /guide/concepts/audit-of-planogram-of-product-placement-in-store.md
+    to: /guide/tutorials/audit-of-planogram-of-product-placement-in-store.md
+  - from: /guide/concepts/categorization.md
+    to: /guide/tutorials/image-classification.md
+  - from: /guide/concepts/content-moderation.md
+    to: /guide/tutorials/content-moderation.md
+  - from: /guide/concepts/internet-search.md
+    to: /guide/tutorials/internet-search.md
+  - from: /guide/concepts/monitoring-objects-in-organizations.md
+    to: /guide/tutorials/monitoring-objects-in-organizations.md
+  - from: /guide/concepts/monitoring.md
+    to: /guide/tutorials/monitoring.md
+  - from: /guide/concepts/price-tag.md
+    to: /guide/tutorials/price-tag.md
+  - from: /guide/concepts/questionnaire.md
+    to: /guide/tutorials/questionnaire-toloka.md
+  - from: /guide/concepts/record-audio.md
+    to: /guide/tutorials/record-audio.md
+  - from: /guide/concepts/selection.md
+    to: /guide/tutorials/selection.md
+  - from: /guide/concepts/side-by-side.md
+    to: /guide/tutorials/side-by-side.md
+  - from: /guide/concepts/transcript-audio.md
+    to: /guide/tutorials/transcript-audio.md
+  - from: /guide/concepts/video-moderation.md
+    to: /guide/tutorials/video-moderation.md
+  - from: /guide/concepts/walk.md
+    to: /guide/tutorials/walk.md
