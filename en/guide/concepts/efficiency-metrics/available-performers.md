@@ -1,6 +1,6 @@
 # Project availability
 
-This metric shows the number of Tolokers currently available in [pool](../../../glossary.md#pool). It takes into account the following filters:
+This indicator shows the number of Tolokers currently available in [pool](../../../glossary.md#pool). It takes into account the following filters:
 
 - If there are few performers, then it’s worth reviewing the filter conditions.
 

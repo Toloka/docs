@@ -1,6 +1,6 @@
 # Control tasks
 
-This metric shows the average ratio of control tasks to other tasks within per [task suites](../../../glossary.md#task-suite). A large percentage of control tasks lets you improve the quality but, at the same time, it may make labeling more expensive.
+This indicator shows the average ratio of control tasks to other tasks within per [task suites](../../../glossary.md#task-suite). A large percentage of control tasks lets you improve the quality but, at the same time, it may make labeling more expensive.
 
 #### How to calculate
 

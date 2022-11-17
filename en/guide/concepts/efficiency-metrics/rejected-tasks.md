@@ -1,6 +1,6 @@
 # Rejected tasks
 
-This metric shows the percentage of rejected tasks. If the tasks are rejected too often, you should review the project settings.
+This indicator shows the percentage of rejected tasks. If the tasks are rejected too often, you should review the project settings.
 
 #### Features
 

@@ -1,6 +1,6 @@
 # Bans
 
-This metric shows the percentage of banned Tolokers. A high percentage may indicate incorrect quality control settings.
+This indicator shows the percentage of banned Tolokers. A high percentage may indicate incorrect quality control settings.
 
 #### Features
 

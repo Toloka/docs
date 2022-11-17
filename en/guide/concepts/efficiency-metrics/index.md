@@ -1,8 +1,8 @@
-# Efficiency metrics
+# Efficiency indicators
 
 {% note warning "Important" %}
 
-Efficiency metrics are available to a limited number of customers. Fill out this [form](https://toloka.ai/request-early-access/) if you want to get access to this feature.
+Efficiency indicators are available to a limited number of customers. Fill out this [form](https://toloka.ai/request-early-access/) if you want to get access to this feature.
 
 {% endnote %}
 
@@ -22,7 +22,7 @@ You can find this information in the **Efficiency** tab on the pool page:
 
 ## Features {#features}
 
-- Efficiency metrics are recalculated every 15 minutes.
+- Efficiency indicators are recalculated every 15 minutes.
 
 - Changes in the settings of projects and pools do not lead to an instant change in indicators.
 

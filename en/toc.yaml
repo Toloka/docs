@@ -323,7 +323,7 @@ items:
             href: guide/concepts/project-statistic.md
           - name: Pool statistics
             href: guide/concepts/pool_statistic-pool.md
-          - name: Efficiency metrics
+          - name: Efficiency indicators
             items:
               - name: Overview
                 href: guide/concepts/efficiency-metrics/index.md
