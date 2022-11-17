@@ -12,7 +12,7 @@
 
 1. Откройте [пул](pool-main.md).
 
-1. Нажмите ![](../_images/drop-down.svg) рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
+1. Нажмите ![Выпадающее меню](../_images/other/drop-down.svg) рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %}.
 
 1. Выберите способ агрегации:
 

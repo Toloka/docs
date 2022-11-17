@@ -56,17 +56,17 @@ To complete your tasks in the sandbox:
 
 To move tasks from the sandbox to the production version:
 
-1. Link the sandbox and production version's accounts:
+1. Link the sandbox and production version accounts:
 
-    1. Open the {% if locale == "en-com" %}**External Services Integration**{% endif %} tab in the production version on the [profile]({{ profile }}) page and copy the OAuth token.
+    1. Open the {% if locale == "en-com" %}**Integrations**{% endif %} tab in the production version on the [profile]({{ profile }}) page, click **Get OAuth token**, and copy the OAuth token displayed.
 
-    1. Open the same tab in the sandbox on the [profile]({{ sandbox-profile }}) page and paste the copied token into the **Production OAuth token** field.
+    1. Open the same tab in the sandbox on the [profile]({{ sandbox-profile }}) page, paste the copied token into the **Main Toloka OAuth token** field, and click **Add OAuth token**.
 
-1. Go to the project page in the sandbox and click {% if locale == "en-com" %}**Project actions → Export**{% endif %}.
+1. Go to the project page in the sandbox and click {% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → ![Export button](../_images/location-job/project/export.svg) Export**{% endif %}.
 
 1. Choose the pools to export and click **Export**.
 
-    If to the pool has [linked training](train.md), it is exported automatically.
+    If the pool has [linked training](train.md), it is exported automatically.
 
 ## Troubleshooting {#troubleshooting}
 

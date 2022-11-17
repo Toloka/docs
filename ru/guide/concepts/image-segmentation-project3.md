@@ -365,7 +365,7 @@
 
 ## Скачайте проверенные результаты  {#get_results}
 
-1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![](../_images/other/drop-down.svg).
+1. Рядом с кнопкой {% if locale == "ru-ru" %}**Скачать результаты**{% endif %}{% if locale == "en-com" %}**Download results**{% endif %} нажмите кнопку ![Выпадающее меню](../_images/other/drop-down.svg).
 
 1. Выберите из списка пункт {% if locale == "ru-ru" %}**Агрегация результатов по методу Дэвида — Скина**{% endif %}{% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %}. Подробнее об [Агрегации результатов по методу Дэвида — Скина](result-aggregation.md#dawid-skene).
 

@@ -319,7 +319,7 @@ To create a pool:
 
 To get the results:
 
-1. Next to the **Download results** button, click ![](../_images/other/drop-down.svg).
+1. Next to the **Download results** button, click ![Drop-down button](../_images/other/drop-down.svg).
 
 1. Choose the **Dawid-Skene aggregation model**. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 
