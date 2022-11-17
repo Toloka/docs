@@ -1,8 +1,8 @@
 # Submission rate
 
-This metric shows the percentage of successfully submitted tasks and helps identify issues related to incorrect settings:
+This indicator shows the percentage of successfully submitted tasks and helps identify issues related to incorrect settings:
 
-- The metric does not show any value. Perhaps the set criteria for selecting Tolokers are too strict and your tasks are not available to them.
+- The indicator does not show any value. Perhaps the set criteria for selecting Tolokers are too strict and your tasks are not available to them.
 
 - A low percentage of submitted tasks indicates problems with the settings of individual fields.
 

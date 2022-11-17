@@ -1,6 +1,6 @@
 # Quality of instructions
 
-After completing a task, Tolokers rate different aspects of it. In particular, they indicate whether the instructions were clear to them. Based on these ratings, an instruction quality indicator is generated.
+After completing a task, Tolokers rate different aspects of it. In particular, they indicate whether the instructions were clear to them. Based on these ratings, an instructions quality indicator is generated.
 
 {% note info %}
 
@@ -14,11 +14,11 @@ $Q_{i} = {H_{i}}\times{CSI}$
 
 where:
 
-- $Q_{i}$ is the instruction quality indicator.
+- $Q_{i}$ is the instructions quality indicator.
 
 - $H_{i}$ is the availability of instructions (0 means available and 1 means not available).
 
-- $CSI$ is the Tolokers&apos; rating, which shows how satisfied they are with the instructions.
+- $CSI$ is the Tolokers' rating, which shows how satisfied they are with the instructions.
 
 #### How to estimate
 
