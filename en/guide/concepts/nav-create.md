@@ -2,17 +2,17 @@
 
 To create a skill:
 
-1. Click {% if locale == "en-com" %}**+Add skill**{% endif %} on the [Skills]({{ skills }}) page.
+1. Click {% if locale == "en-com" %}**+ Add skill**{% endif %} on the [Skills]({{ skills }}) page.
 
-1. Enter the name of a new skill into the {% if locale == "en-com" %}**Title**{% endif %} field. Skill name should be short, clear and easy to distinguish from the names of other skills.
+1. Enter the name of a new skill into the {% if locale == "en-com" %}**Title**{% endif %} field. The skill name should be short, clear and easy to distinguish from the names of other skills.
 
 1. Describe the skill in the {% if locale == "en-com" %}**Description**{% endif %} field.
 
-1. Set up the value of the {% if locale == "en-com" %}**Public?**{% endif %} option:
+1. Choose the value of the {% if locale == "en-com" %}**Public?**{% endif %} option:
 
     - **No** — The default value. Tolokers will not be able to see the information about the skill.
 
-    - **Yes** — Tolokers will see the name and value of the assigned skill.
+    - **Yes** — Tolokers will see the name and the value of the assigned skill.
 
 {% note tip %}
 
