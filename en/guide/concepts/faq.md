@@ -48,7 +48,7 @@ You can also read [Mistakes related to uploading tasks](frequent-customer-errors
 
 ### Quality control rules {#quality-control-rules}
 
-Quality control rules allow you to get more accurate responses and restrict access to tasks for cheating Tolokers.
+Quality control rules allow you to get more accurate responses and restrict access to tasks for cheating users.
 
 Read the following sections:
 

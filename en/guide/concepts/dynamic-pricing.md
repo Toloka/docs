@@ -2,7 +2,7 @@
 
 The price is indicated per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (“.”) as a separator.
 
-If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. The fee is 30% of the price, but not less than $0.005.
+If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. The fee is 30% of the price, but not less than $0.005.
 
 In Toloka, there are two ways to set the task price:
 
@@ -36,9 +36,7 @@ To set up dynamic pricing:
 
     To increase the Toloker's motivation, make the skill [public](nav.md#public). The Toloker will see the full list of prices and their level.
 
-1. When creating or editing a [pool](../../glossary.md#pool), go to the {% if locale == "en-com" %}**Price per task suite, $**{% endif %} section.
-
-1. Specify a fixed price for the task. This price will be used if the skill is not assigned to the Toloker.
+1. When creating or editing a [pool](../../glossary.md#pool), specify a fixed price in the {% if locale == "en-com" %}**Price per task suite, $**{% endif %}. This price will be used if the skill is not assigned to the Toloker.
 
 1. In the advanced settings, enable the {% if locale == "en-com" %}**Use dynamic pricing**{% endif %} option.
 
@@ -58,7 +56,7 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
 
 ## What's next {#what_next}
 
-- [Add tasks to the pool](pool.md)
+- [Add tasks](pool.md) to the pool.
 - Learn more about how to set up a pool:
 
     - [Dynamic overlap](dynamic-overlap.md).

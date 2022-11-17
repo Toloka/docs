@@ -10,7 +10,7 @@ Toloka cares about the security of your data and data labeling results. This sec
 
     {% note warning %}
 
-    If necessary, the requester may grant [access](multiple-access.md#ul_pyj_v3k_xlb) to their account to other users, for example, to their employees.
+    If necessary, the requester may grant [access](multiple-access.md) to their account to other users, for example, to their employees.
 
     {% endnote %}
 
@@ -35,7 +35,7 @@ If your data is confidential, take additional measures to protect it.
 
 - If you use [input](../../glossary.md#input-output-data) fields to transmit data that Tolokers shouldn't see, hide the fields that contain this data. For instance, do this if you moderate comments and you need the authors' personal data in the results for further data processing.
 
-- Use any name or pseudonym to identify yourself for the performers — you don't have to disclose your company name. This is useful for requesters who don't want to attract unnecessary interest from performers.
+- Use any name or pseudonym to identify yourself for the Tolokers — you don't have to disclose your company name. This is useful for requesters who don't want to attract unnecessary interest from Tolokers.
 
 - You can use the [Completed tasks](submitted-answers.md#rule) quality control rule to limit the number of task suites each Toloker can complete. This lets you better protect your data from fraud and minimize your risks (scattered data has no commercial value).
 
@@ -61,7 +61,7 @@ For instance, you can store text comments on your server and use the file with t
 
     - You need images or other files for your tasks, and you want to store them on your own server.
 
-    - You 	need to load dynamic data in the tasks.
+    - You need to load dynamic data in the tasks.
 
     - You want to log user actions.
 
