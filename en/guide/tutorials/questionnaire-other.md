@@ -108,6 +108,26 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
+You can create a pool using one of the ways:
+
+- From a preset — a new pool with settings for survey:
+
+    - Load one static link to the survey. To learn more, see the [Upload data](#upload) section.
+
+    - Don't add correct completion codes to the file with tasks.
+
+    - Indicate an [overlap](../../glossary.md#overlap) equal to the required number of Tolokers.
+
+    - Use [non-automatic acceptance](../concepts/offline-accept.md).
+
+    {% note info %}
+
+    In this case, you need to adjust the overlap, the price of the survey, and the audience settings (including the skill by which the platform will exclude the Tolokers who have already completed the survey once). To learn more about pool settings, see the section below about creating a pool from scratch.
+
+    {% endnote %}
+
+- From scratch — a new pool with default settings.
+
 {% list tabs %}
 
 - Create a pool from the preset
@@ -122,7 +142,7 @@ Before you begin:
 
     1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, check the quality control rules and correct them if necessary.
 
-    1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %} and check the values of the parameters in this section.
+    1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
 
     1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
 
