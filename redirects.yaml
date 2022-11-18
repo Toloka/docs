@@ -5,12 +5,16 @@ common:
     to: /index.md
   - from: /guide/concepts/protect-your-data.md
     to: /guide/tutorials/data-security.md
+  - from: /api/concepts/about.md
+    to: /api/index.md
 
 ru:
   - from: /api/concepts/download-tasks.md
     to: /api/concepts/upload-tasks.md
   - from: /guide/concepts/protect-your-data.md
     to: /guide/tutorials/data-security.md
+  - from: /api/concepts/about.md
+    to: /api/index.md
 
 en:
   - from: /guide/concepts/photo-org.md

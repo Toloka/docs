@@ -1,9 +1,6 @@
 items:
   - name: Обзор
     href: ../api/index.md
-  - name: Обзор
-    href: ../api/concepts/about.md
-    hidden: true
   - name: Доступ к API
     href: ../api/concepts/access.md
   - name: Быстрый старт
