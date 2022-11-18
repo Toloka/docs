@@ -612,7 +612,7 @@
 
     1. Присвойте [навык](../../glossary.md#skill) исполнителям, которые участвуют в проекте по поиску информации в интернете. В дальнейшем это позволит поручить проверку выполненных заданий только исполнителям без навыка — то есть тем, кто не выполнял задания этого проекта.
 
-    Нажмите кнопку {% if locale == "en-com" %}**+Add skill**{% endif %}{% if locale == "ru-ru" %}**+Добавить навык**{% endif %} и укажите название навыка, например `Поиск информации`.
+    Нажмите кнопку {% if locale == "en-com" %}**+ Add skill**{% endif %}{% if locale == "ru-ru" %}**+Добавить навык**{% endif %} и укажите название навыка, например `Поиск информации`.
 
     {% include [toloka-requester-source-filter-client-about](../_includes/toloka-requester-source/id-toloka-requester-source/filter-client-about.md) %}
 
