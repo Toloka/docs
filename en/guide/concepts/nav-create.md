@@ -14,6 +14,8 @@ To create a skill:
 
     - **Yes** — Tolokers will see the name and the value of the assigned skill.
 
+1. Click {% if locale == "en-com" %}**Add**{% endif %}.
+
 {% note tip %}
 
 To better motivate Tolokers, make the skill public and set [dynamic pricing](../../glossary.md#dynamic-pricing) based on this skill. In the task instructions, write what affects the skill value. Tolokers will know how the skill affects the price, and try to perform the tasks well.
