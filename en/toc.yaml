@@ -329,7 +329,6 @@ items:
                 href: guide/concepts/efficiency-metrics/ban-rate.md
               - name: Communication issues
                 href: guide/concepts/efficiency-metrics/communication.md
-                hidden: true
               - name: Control tasks
                 href: guide/concepts/efficiency-metrics/control-tasks-share.md
               - name: Control task balance
@@ -340,7 +339,6 @@ items:
                 href: guide/concepts/efficiency-metrics/instruction-quality.md
               - name: Quality of interface
                 href: guide/concepts/efficiency-metrics/interface-quality.md
-                hidden: true
               - name: Rejected tasks
                 href: guide/concepts/efficiency-metrics/rejected-tasks.md
               - name: Submission rate
