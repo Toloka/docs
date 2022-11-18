@@ -1,9 +1,6 @@
 items:
   - name: Overview
     href: ../api/index.md
-  - name: Overview
-    href: ../api/concepts/about.md
-    hidden: true
   - name: Accessing the API
     href: ../api/concepts/access.md
   - name: Quick start
