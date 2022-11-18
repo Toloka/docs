@@ -26,11 +26,11 @@
 
 Если у вас уже есть пул с подходящими настройками качества, вы можете скопировать их вместе с настройками аудитории:
 
-- В блоке {% if locale == "ru-ru" %}**Аудитория**{% endif %}{% if locale == "en-com" %}**Audience**{% endif %} нажмите кнопку {% if locale == "ru-ru" %}**Скопировать из другого пула**{% endif %}{% if locale == "en-com" %}**Copy from another pool**{% endif %}.
+1. В блоке {% if locale == "ru-ru" %}**Аудитория**{% endif %}{% if locale == "en-com" %}**Audience**{% endif %} нажмите кнопку {% if locale == "ru-ru" %}**Скопировать из другого пула**{% endif %}{% if locale == "en-com" %}**Copy from another pool**{% endif %}.
 
-- Выберите проект и пул.
+1. Выберите проект и пул.
 
-- Нажмите кнопку {% if locale == "ru-ru" %}**Скопировать**{% endif %}{% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %}.
+1. Нажмите кнопку {% if locale == "ru-ru" %}**Скопировать**{% endif %}{% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %}.
 
 {% endnote %}
 

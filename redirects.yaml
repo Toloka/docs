@@ -3,6 +3,8 @@ common:
     to: /api/concepts/upload-tasks.md
   - from: /guide/index.md
     to: /index.md
+  - from: /guide/concepts/protect-your-data.md
+    to: /guide/tutorials/data-security.md
 
 ru:
   - from: /api/concepts/download-tasks.md

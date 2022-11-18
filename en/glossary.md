@@ -87,6 +87,10 @@ Data entry field (Template Builder) {#data-entry-field}
 
   [List of data entry fields](template-builder/reference/fields.md)
 
+Decomposition {#decomposition}
+
+: Breaking down a large project into several small ones. After you decompose your project, tasks become easier and faster to perform, while the quality of responses increases.
+
 Dynamic overlap (incremental relabeling, IRL) {#dynamic-overlap}
 
 : A type of overlap that changes the number of Tolokers to complete each task in the [pool](#pool). This number depends on how well the Tolokers cope with the task or how consistent their responses are.

@@ -26,11 +26,11 @@ To set up quality control:
 
 If you already have a pool with the quality control settings you need, you can copy it along with the audience settings:
 
-- In the {% if locale == "en-com" %}**Audience**{% endif %} block, click the {% if locale == "en-com" %}**Copy from another pool**{% endif %} button.
+1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, click the {% if locale == "en-com" %}**Copy from another pool**{% endif %} button.
 
-- Select a project and pool.
+1. Select a project and pool.
 
-- Click the {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} button.
+1. Click the {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} button.
 
 {% endnote %}
 
