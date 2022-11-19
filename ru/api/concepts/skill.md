@@ -17,7 +17,7 @@
 ||GET | [/user-skills/\<id\>](get-user-skill.md) |{% include [get-user-skill-get-skill](../_includes/concepts/get-user-skill/id-get-user-skill/get-skill.md) %}||
 ||GET | [/skills](get-skill-list.md) |{% include [get-skill-list-get-skill](../_includes/concepts/get-skill-list/id-get-skill-list/get-skill.md) %}||
 ||GET | [/skills/<skill_id>](get-skill.md) |{% include [get-skill-get-skill-p](../_includes/concepts/get-skill/id-get-skill/get-skill-p.md) %}||
-||DELETE | [/user-skills/<skill_id>](delete-skill.md) |{% include [delete-skill-delete-skill-p](../_includes/concepts/delete-skill/id-delete-skill/delete-skill-p.md) %}||
+||DELETE | [/user-skills/\<id\>](delete-skill.md) |{% include [delete-skill-delete-skill-p](../_includes/concepts/delete-skill/id-delete-skill/delete-skill-p.md) %}||
 |#
 
 ## Узнайте больше {#links}

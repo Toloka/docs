@@ -13,7 +13,7 @@ GET | [/user-skills](get-user-skill-list.md) | Gets а list of Tolokers who have
 GET | [/user-skills/\<id\>](get-user-skill.md) | Gets a Toloker's skill value.
 GET | [/skills](get-skill-list.md) | Gets the list of created skills.
 GET | [/skills/\<skill_id\>](get-skill.md) | Gets the properties of a skill.
-DELETE | [/user-skills/\<skill_id\>](delete-skill.md) | Removes a skill for a Toloker.
+DELETE | [/user-skills/\<id\>](delete-skill.md) | Removes a skill for a Toloker.
 
 ## Learn more {#links}
 
