@@ -117,7 +117,7 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 
 ## Response {#response}
 
-[Skill properties](get-user-skill.md) in the `items` array:
+[Skill properties](get-user-skill.md#response) in the `items` array:
 
 ```json
 {"items" : [{<Toloker 1 skill 1 >}, {<Toloker 1 skill 2>}, ... {<Toloker 1 skill n>}, ... {<Toloker n skill 1>}, {<Toloker n skill 2>}, ... {<Toloker n skill n>}], "has_more": false}

@@ -127,7 +127,7 @@
 
 ## Ответ {#response}
 
-[Свойства навыков исполнителей](get-user-skill.md) в массиве `items`:
+[Свойства навыков исполнителей](get-user-skill.md#response) в массиве `items`:
 
 ```json
 {"items" : [{<user 1 skill 1 >}, {<user 1 skill 2>}, ... {<user 1 skill n>}, ... {<user n skill 1>}, {<user n skill 2>}, ... {<user n skill n>}], "has_more": false}
