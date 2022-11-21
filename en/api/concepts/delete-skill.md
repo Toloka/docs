@@ -28,7 +28,7 @@ Removes a skill for a Toloker.
 
 Parameter | Overview
 ----- | -----
-**id** | The ID of a Toloker's skill that is assigned to the "skill-Toloker" pair.
+**id** | The ID of a Toloker's skill that is assigned to the "skill-Toloker" pair. You can find this ID using the [Get a list of Tolokers who have skills](get-user-skill-list.md) request.
 
 ## Headers {#headers}
 

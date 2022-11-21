@@ -11,7 +11,7 @@
 - Боевая версия
 
     ```bash
-    PUT https://toloka.dev/api/v1/skills/<skill id>
+    PUT https://toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -21,7 +21,7 @@
 - Песочница
 
     ```bash
-    PUT https://sandbox.toloka.dev/api/v1/skills/<skill id>
+    PUT https://sandbox.toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -32,9 +32,7 @@
 
 ## Path-параметры {#path-params}
 
-Параметр | Описание
------ | -----
-**skill_id** | Идентификатор навыка.
+{% include [edit-skill-skill-id-table](../_includes/concepts/edit-skill/id-edit-skill/skill-id-table.md) %}
 
 ## Заголовки {#headers}
 

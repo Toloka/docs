@@ -26,9 +26,7 @@
 
 ## Path-параметры {#path-params}
 
-Параметр | Описание
------ | -----
-**id** | Идентификатор навыка исполнителя, который присваивается паре «навык-исполнитель».
+{% include [get-user-skill-skill-user-id-table](../_includes/concepts/get-user-skill/id-get-user-skill/skill-user-id-table.md) %}
 
 ## Заголовки {#headers}
 

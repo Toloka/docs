@@ -109,7 +109,7 @@ items:
             href: ../api/concepts/get-skill.md
           - name: Задать значение навыка
             href: ../api/concepts/set-skill.md
-          - name: Получить список навыков исполнителя
+          - name: Получить список исполнителей с назначенными навыками
             href: ../api/concepts/get-user-skill-list.md
           - name: Получить значение навыка исполнителя
             href: ../api/concepts/get-user-skill.md

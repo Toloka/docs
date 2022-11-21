@@ -13,14 +13,14 @@
 - Боевая версия
 
     ```bash
-    GET https://toloka.dev/api/v1/skills/<skill_id>
+    GET https://toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Песочница
 
     ```bash
-    GET https://sandbox.toloka.dev/api/v1/skills/<skill_id>
+    GET https://sandbox.toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 

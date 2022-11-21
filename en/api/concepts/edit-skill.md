@@ -11,7 +11,7 @@ Changes the name, comment, and access to the skill.
 - Production version
 
     ```bash
-    PUT https://toloka.dev/api/v1/skills/<skill id>
+    PUT https://toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -21,7 +21,7 @@ Changes the name, comment, and access to the skill.
 - Sandbox
 
     ```bash
-    PUT https://sandbox.toloka.dev/api/v1/skills/<skill id>
+    PUT https://sandbox.toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     Content-Type: application/JSON
 
@@ -34,7 +34,7 @@ Changes the name, comment, and access to the skill.
 
 Parameter | Overview
 ----- | -----
-**skill_id** | Skill ID.
+**id** | Skill ID.
 
 ## Headers {#headers}
 

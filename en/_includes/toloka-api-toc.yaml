@@ -109,7 +109,7 @@ items:
             href: ../api/concepts/get-skill.md
           - name: Set the skill value
             href: ../api/concepts/set-skill.md
-          - name: Get a list of Toloker skills
+          - name: Get a list of Tolokers who have skills
             href: ../api/concepts/get-user-skill-list.md
           - name: Get a Toloker's skill value
             href: ../api/concepts/get-user-skill.md
