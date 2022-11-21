@@ -13,14 +13,14 @@ You can get the skill ID from the [list of skills](get-skill-list.md).
 - Production version
 
     ```bash
-    GET https://toloka.dev/api/v1/skills/<skill_id>
+    GET https://toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 
 - Sandbox
 
     ```bash
-    GET https://sandbox.toloka.dev/api/v1/skills/<skill_id>
+    GET https://sandbox.toloka.dev/api/v1/skills/<id>
     Authorization: OAuth <OAuth token>
     ```
 
@@ -30,7 +30,7 @@ You can get the skill ID from the [list of skills](get-skill-list.md).
 
 Parameter | Overview
 ----- | -----
-**skill_id** | Skill ID.
+**id** | Skill ID.
 
 ## Headers {#headers}
 
