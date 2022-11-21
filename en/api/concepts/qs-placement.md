@@ -69,7 +69,7 @@ Use the `POST /api/v1/projects` method:
                      "condition.required": "1.1.5"
                    },
                    "type": "tb",
-                   "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Boots\", \"value\": \"boots\"}, {\"label\": \"Sneakers\", \"value\": \"sneakers\"},{\"label\": \"Other\", \"value\": \"other\"},{\"label\": \"Failed to lead\", \"value\": \"failed to load\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
+                   "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Boots\", \"value\": \"boots\"}, {\"label\": \"Sneakers\", \"value\": \"sneakers\"}, {\"label\": \"Other\", \"value\": \"other\"}, {\"label\": \"Failed to load\", \"value\": \"failed to load\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
                    "settings": {
                      "showSkip": true,
                      "showTimer": true,
