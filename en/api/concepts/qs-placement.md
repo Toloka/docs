@@ -189,7 +189,7 @@ You'll need the `id` to create pools in the project: specify it in the add pool 
 In the given code example, substitute the parameter values:
 
 - In the `project_id` parameter, replace `<project id>` with the ID of the project that the pool was created for (the ID received in response to the add project request).
-- In `will_expire`, replace `<close date>` with the UTC date and time in `ISO 8601: YYYY-MM-DDThh:mm:ss[.sss]` format, specifying when the pool needs to be closed even if some task suites are not completed.
+- In `will_expire`, replace `<close date>` with the UTC date and time in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`, specifying when the pool needs to be closed even if some task suites are not completed.
 
 Next, send a POST request to `/api/v1/pools`:
 
