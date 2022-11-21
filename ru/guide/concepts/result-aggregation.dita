@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsa4="http://dita.oasis-open.org/architecture/2005/" xml:lang="ru" xsi:noNamespaceSchemaLocation="urn:yandex:names:tc:dita:xsd:yandexConcept.xsd:1.3" id="aggr">
+  <title>Агрегация результатов</title>
+  <titlealts>
+    <navtitle>Обзор</navtitle>
+  </titlealts>
+  <abstract>
+    <minitoc/>
+  </abstract>
+  <conbody>
+    <p>
+      Если задания выданы с <xref href="../glossary.dita#glossary/overlap-ru" popup="yes">перекрытием</xref> 2 и больше, запустите агрегацию результатов. Толока обработает все ответы исполнителей на задание и выдаст итоговый ответ и степень его
+      достоверности.
+      <image placement="break" href="../images/results/aggregation-scheme.svg" border="no"/>
+      <note>Если вы запускали <xref href="../glossary.dita#glossary/pool-ru" popup="yes">пул</xref> с отложенной приемкой, убедитесь, что все ответы <xref href="accept.dita#accept">приняты</xref>.</note>
+    </p>
+    <ol id="ol_yjw_xqd_wfb">
+      <li>Откройте <xref href="pool-main.dita">пул</xref>.</li>
+      <li>Нажмите <uicontrol>
+          <image href="../images/drop-down.svg" id="image_c5w_zrf_qcb"/>
+        </uicontrol> рядом с кнопкой <uicontrol locale="ru-ru">Скачать результаты</uicontrol><uicontrol locale="en-com">Download results</uicontrol>.
+      </li>
+      <li>Выберите способ агрегации: <ul id="ul_kf3_l3d_wfb">
+          <li>
+            <xref href="result-aggregation-dawid-skene.dita"/>
+          </li>
+          <li>
+            <xref href="result-aggregation-by-skill.dita"/>
+          </li>
+          <li>
+            <xref href="result-aggregation-mv.dita"/>
+          </li>
+          <li>
+            <xref href="result-aggregation-pairwise.dita"/>
+          </li>
+          <li>
+            <xref href="result-aggregation-text.dita"/>
+          </li>
+        </ul>
+      </li>
+    </ol>
+    <p>Агрегация займет от нескольких минут до нескольких часов. Следите за процессом на странице <xref scope="external" keyref="operations" format="html">Операции</xref>. После завершения агрегации скачайте <xref href="../glossary.dita#glossary/tsv-file-definition-ru" popup="yes">TSV-файл</xref> с результатами.</p>
+    <p id="notification">Чтобы получать уведомления и письма о завершении агрегации результатов, настройте оповещения:</p>
+    <ol>
+      <li>Войдите в аккаунт.</li>
+      <li>Перейдите в <menucascade>
+          <uicontrol>Профиль</uicontrol>
+          <uicontrol>Уведомления </uicontrol>
+          <uicontrol>Выполнение пула или агрегации. </uicontrol>
+        </menucascade></li>
+      <li>Выберите способ оповещения:<ul>
+          <li>Почта — письма придут на вашу электронную почту.</li>
+          <li>Сообщения — уведомления придут в <uicontrol>Сообщения</uicontrol> вашего аккаунта. Кроме вас их увидят те, у кого настроен <xref href="../concepts/multiple-access.dita#multiple-access">совместный доступ</xref> к вашему аккаунту.</li>
+          <li>Браузер — уведомления придут на устройства, с которых вы вошли в свой аккаунт.</li>
+        </ul></li>
+    </ol>
+  </conbody>
+  <concept id="troubleshooting">
+    <title>Решение проблем</title>
+    <conbody>
+      <dl display-style="cut" id="result-aggregation-troubleshooting">
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_1">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/disable-tasks">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/ds-results">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_4">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_5">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_6">
+          <dt/>
+          <dd/>
+        </dlentry>
+      </dl>
+    </conbody>
+  </concept>
+  <concept id="support">
+    <title/>
+    <conbody id="toloka-support">
+      <p><xref href="../troubleshooting/support.dita#troubleshooting/help">
+          <image href="../images/buttons/contact-support.svg"/>
+        </xref></p>
+    </conbody>
+  </concept>
+</concept>

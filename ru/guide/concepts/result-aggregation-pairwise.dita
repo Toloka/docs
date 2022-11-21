@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsa4="http://dita.oasis-open.org/architecture/2005/" xml:lang="ru" xsi:noNamespaceSchemaLocation="urn:yandex:names:tc:dita:xsd:yandexConcept.xsd:1.3" id="result-aggregation-pairwise">
+  <title>Попарное сравнение</title>
+  <abstract>
+    <minitoc/>
+  </abstract>
+  <conbody>
+    <p>В заданиях, выданных с <xref href="../glossary.dita#glossary/overlap-ru" popup="yes">перекрытием</xref> 2 и больше, рекомендуется использовать агрегацию ответов. Подробнее об этом процессе читайте в разделе <xref href="result-aggregation.dita">Агрегация результатов</xref>.</p>
+    <p>Среди доступных алгоритмов агрегации есть методы попарного сравнения.</p>
+    <section id="bradley-terry">
+      <title>Метод агрегации Брэдли&#160;—&#160;Терри</title>
+      <p>Метод Брэдли&#160;—&#160;Терри&#160;— это вероятностная модель, которая может предсказать результат попарного сравнения.</p>
+      <dl>
+        <dlentry>
+          <dt>Принцип работы</dt>
+          <dd>
+            <p>Алгоритм оценивает объекты на основе попарных сравнений.</p>
+            <p>Допустим, есть два объекта <codeph>i</codeph> и <codeph>j</codeph>.</p>
+            <p>Формула расчета вероятности того, что объект <codeph>i</codeph> будет оценен выше, чем <codeph>j</codeph>:</p>
+            <image href="../images/results/bradley-terry-formula.svg"/>
+            <p>где p<sub>i</sub> - положительный вещественный параметр, присвоенный объекту <codeph>i</codeph>.
+            Например, в качестве p<sub>i</sub> можно рассматривать значение показателя, по которому сравниваются объекты.</p>
+            <p>На основе всех сравнений алгоритм составляет полный рейтинг объектов.</p>
+          </dd>
+        </dlentry>
+      </dl>
+      <note>
+        <p>В&#160;агрегации учитываются только принятые задания.</p>
+      </note>
+    </section>
+    <section id="noisyBT">
+      <title>Метод агрегации noisyBT</title>
+      <p>Метод noisyBT&#160;— модификация <xref href="#result-aggregation-pairwise/bradley-terry">модели Брэдли&#160;—&#160;Терри</xref> с учетом параметров исполнителей.</p>
+      <p>Этот метод основан на предположении, что вклад каждого исполнителя в результат попарного сравнения разный. При агрегации метод оценивает и учитывает навык каждого исполнителя.</p>
+    </section>
+  </conbody>
+  <concept id="troubleshooting">
+    <title>Решение проблем</title>
+    <conbody>
+      <dl display-style="cut" id="result-aggregation-troubleshooting">
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_4">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_7">
+          <dt/>
+          <dd/>
+        </dlentry>
+      </dl>
+    </conbody>
+  </concept>
+  <concept id="support">
+    <title/>
+    <conbody id="toloka-support">
+      <p><xref href="../troubleshooting/support.dita#troubleshooting/help">
+          <image href="../images/buttons/contact-support.svg"/>
+        </xref></p>
+    </conbody>
+  </concept>
+</concept>

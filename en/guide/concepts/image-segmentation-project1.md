@@ -271,7 +271,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
 1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![Drop-down button](../_images/other/drop-down.svg).
 
-1. Choose {% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %} from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
+1. Choose {% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %} from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation-dawid-skene.md).
 
 1. In the window that opens, click {% if locale == "en-com" %}**Yes**{% endif %}.
 

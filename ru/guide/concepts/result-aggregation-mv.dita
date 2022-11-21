@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsa4="http://dita.oasis-open.org/architecture/2005/" xml:lang="ru" xsi:noNamespaceSchemaLocation="urn:yandex:names:tc:dita:xsd:yandexConcept.xsd:1.3" id="result-aggregation-mv">
+  <title>Голосование большинства</title>
+  <abstract>
+    <minitoc/>
+  </abstract>
+  <conbody>
+    <p>В заданиях, выданных с <xref href="../glossary.dita#glossary/overlap-ru" popup="yes">перекрытием</xref> 2 и больше, рекомендуется использовать агрегацию ответов. Подробнее об этом процессе читайте в разделе <xref href="result-aggregation.dita">Агрегация результатов</xref>.</p>
+    <p>Голосование большинства&#160;— один из методов агрегации в задачах, связанных с классификацией объектов. Для каждого задания метод определяет самый распространенный ответ исполнителей. Кроме того, алгоритм голосования большинства может учитывать навыки и другие характеристики исполнителей. В этом случае каждому ответу присваивается свой вес, а результатом агрегации будет вариант ответа с наибольшей суммой весов.</p>
+    <note>
+      <p>В&#160;агрегации учитываются только принятые задания.</p>
+    </note>
+  </conbody>
+  <concept id="troubleshooting">
+    <title>Решение проблем</title>
+    <conbody>
+      <dl display-style="cut">
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_4">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_7">
+          <dt/>
+          <dd/>
+        </dlentry>
+      </dl>
+    </conbody>
+  </concept>
+  <concept id="support">
+    <title/>
+    <conbody id="toloka-support">
+      <p><xref href="../troubleshooting/support.dita#troubleshooting/help">
+          <image href="../images/buttons/contact-support.svg"/>
+        </xref></p>
+    </conbody>
+  </concept>
+</concept>

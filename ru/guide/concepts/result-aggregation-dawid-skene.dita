@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsa4="http://dita.oasis-open.org/architecture/2005/" xml:lang="ru" xsi:noNamespaceSchemaLocation="urn:yandex:names:tc:dita:xsd:yandexConcept.xsd:1.3" id="dawid-skene">
+  <title>Метод Дэвида&#160;—&#160;Скина</title>
+  <abstract>
+    <minitoc/>
+  </abstract>
+  <conbody>
+    <p>Метод агрегации Дэвида&#160;—&#160;Скина учитывает неоднородность исполнителей при <xref href="result-aggregation.dita">агрегации</xref> ответов. <xref scope="external" keyref="statistical-significance" format="html">Статистическая значимость</xref> итогового ответа определяется на основе анализа ответов всех исполнителей.</p>
+    <dl>
+      <dlentry>
+        <dt>Принцип работы</dt>
+        <dd>
+          <p>Метод рассчитывает для каждого исполнителя <codeph>|L|²</codeph> параметров, где <codeph>L</codeph>&#160;—&#160;это множество всех уникальных значений для агрегации.</p>
+          <p>Параметры, которые использует метод, создаются автоматически для каждого пула и используются только в расчетах. В результатах агрегации вы не увидите эти параметры.</p>
+          <note type="important">
+            <p>Поскольку этот метод оценивает для каждого исполнителя <codeph>|L|²</codeph> параметров, мы не рекомендуем использовать агрегацию Дэвида&#160;—&#160;Скина в тех случаях, когда исполнитель размечает количество заданий <codeph>&lt; |L|²</codeph>. Иначе вы можете получить низкое качество агрегации.</p>
+          </note>
+          <p>По итогам агрегации вы получите TSV-файл с ответами. Поле <codeph>CONFIDENCE: &lt;название поля <xref href="incoming.dita">выходных данных</xref>&gt;</codeph> — значимость ответа в процентах.</p>
+        </dd>
+      </dlentry>
+    </dl>
+    <dl>
+      <dlentry>
+        <dt>Преимущества</dt>
+        <dd>
+          <p>Данные для агрегации можно загружать любым способом.</p>
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Особенности</dt>
+        <dd>
+          <p>Метод Дэвида&#160;—&#160;Скина&#160;— это нетривиальный алгоритм агрегации. Ознакомьтесь с особенностями и узнайте <xref href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.469.1377&amp;rep=rep1&amp;type=pdf" scope="external" format="html">подробнее о модели</xref>.</p>
+          <ul>
+            <li>
+              <p id="ds-algorithm">Метод не гарантирует, что для агрегации результата будут использоваться исходные ответы исполнителей. Алгоритм учитывает параметры качества исполнителей и закономерности в ответах. Соответственно, он может выдать результат, которого нет в ответах исполнителей на это задание.</p>
+              <dl display-style="cut">
+                <dlentry>
+                  <dt>Пример</dt>
+                  <dd>
+                    <p>В задании на классификацию изображений все три исполнителя выбрали первый вариант ответа. В другом аналогичном задании эти же три человека выбрали первый вариант, а четвертый исполнитель выбрал второй вариант. Если в следующем задании ответ четвертого исполнителя окажется единственным, то метод Дэвида&#160;—&#160;Скина&#160; может признать такой ответ ошибочным и выдать другой результат.</p>
+                  </dd>
+                </dlentry>
+              </dl>
+            </li>
+            <li>
+              <p>Агрегация Дэвида&#160;—&#160;Скина работает с <xref href="../glossary.dita#glossary/control-task-ru">контрольными</xref> и <xref href="../glossary.dita#glossary/training-task-ru">обучающими</xref> заданиями так же как и с основными. Существует вероятность того, что в TSV-файле с ответами поле <codeph>OUTPUT:result</codeph> для контрольного задания не совпадет с реальным ответом на это задание (поле <codeph>GOLDEN:result</codeph>).</p>
+            </li>
+            <li>
+              <p>Если в вашем проекте есть выходные данные с отметкой <codeph>&quot;required&quot;: false</codeph> и исполнители не заполнят это поле данных, то данное поле не будет участвовать в агрегации.</p>
+              <p>Например, у вас есть 1000 заданий: в 999 из них исполнители не разметили поле <codeph>label</codeph>, а один разметил его как <codeph>label=x</codeph>. В результате агрегации это поле данных будет иметь <codeph>CONFIDENCE = 100%</codeph>, так как только одно задание из тысячи попало под условия агрегации.</p>
+            </li>
+          </ul>
+          <dl display-style="cut">
+            <dlentry>
+              <dt>Как вычисляется</dt>
+              <dd>
+                <p>Метод Дэвида&#160;—&#160;Скина подбирает для каждого исполнителя его <xref keyref="error-matrix">матрицу ошибок</xref>, и популярность в ответах. Это происходит с помощью <xref keyref="em-algorithm">EM-алгоритма</xref>. </p>
+                <p>Принцип работы EM-алгоритма заключается в том, что собираются наиболее точные агрегированные ответы для каждого задания, фиксируя матрицы ошибок и популярность ответов. Среди всех ответов алгоритм пытается найти наилучшие популярности и матрицы ошибок. Процесс происходит в несколько шагов. В качестве начальной уверенности в правильном ответе используется мнение большинства.</p>
+                <p><xref href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.469.1377&amp;rep=rep1&amp;type=pdf" scope="external" format="html">Описание метода Дэвида&#160;—&#160;Скина</xref><ph locale="ru-ru"> на английском</ph>.</p>
+                <p>Если вы хотите узнать, как метод Дэвида&#160;—&#160;Скина реализован в Толоке, ознакомьтесь с <xref href="https://toloka.ai/docs/crowd-kit/reference/crowdkit.aggregation.classification.dawid_skene.DawidSkene.html" scope="external" format="html">документацией Crowd-Kit</xref>.</p>
+              </dd>
+            </dlentry>
+          </dl>
+          <note>
+            <p>В агрегации учитываются только принятые задания.</p>
+          </note>
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Требования</dt>
+        <dd>
+          <p>Основным требованием для этой агрегации являются поля выходных данных:</p>
+          <dl display-style="htab">
+            <dlentry>
+              <dt>Поля, которые можно агрегировать</dt>
+              <dd>
+                <ul conref="dynamic-overlap.dita#dynamic-overlap/allowed-fields">
+                  <li/>
+                </ul>
+                <p conref="result-aggregation-by-skill.dita#result-aggregation-by-skill/allow-value_1"/>
+              </dd>
+            </dlentry>
+            <dlentry>
+              <dt>Поля, которые нельзя агрегировать</dt>
+              <dd>
+                <ul id="ul_ry4_kmd_wfb_2">
+                  <li>Массив.</li>
+                  <li>Файл.</li>
+                  <li>Географические координаты.</li>
+                  <li>Объект JSON.</li>
+                </ul>
+              </dd>
+            </dlentry>
+          </dl>
+        </dd>
+      </dlentry>
+      <dlentry>
+        <dt>Как проверить</dt>
+        <dd>
+          <p>Если у вас есть сомнения в том, что агрегация методом Дэвида&#160;—&#160;Скина&#160; работает корректно, вы можете:</p>
+          <ul>
+            <li>отправить задания на повторную разметку и сравнить полученные результаты;</li>
+            <li>проверить задание вручную.</li>
+          </ul>
+        </dd>
+      </dlentry>
+    </dl>
+  </conbody>
+  <concept id="troubleshooting">
+    <title>Решение проблем</title>
+    <conbody>
+      <dl conref="result-aggregation.dita#troubleshooting/result-aggregation-troubleshooting" display-style="cut">
+        <dlentry>
+          <dt/>
+          <dd/>
+        </dlentry>
+      </dl>
+    </conbody>
+  </concept>
+  <concept id="support">
+    <title/>
+    <conbody id="toloka-support">
+      <p><xref href="../troubleshooting/support.dita#troubleshooting/help">
+          <image href="../images/buttons/contact-support.svg"/>
+        </xref></p>
+    </conbody>
+  </concept>
+</concept>

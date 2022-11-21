@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!-- This document was created with Syntext Serna Free. --><concept xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsa4="http://dita.oasis-open.org/architecture/2005/" xml:lang="ru" xsi:noNamespaceSchemaLocation="urn:yandex:names:tc:dita:xsd:yandexConcept.xsd:1.3" id="result-aggregation-text">
+  <title>Агрегация текста</title>
+  <abstract>
+    <minitoc/>
+  </abstract>
+  <conbody>
+    <p>В заданиях, выданных с <xref href="../glossary.dita#glossary/overlap-ru" popup="yes">перекрытием</xref> 2 и больше, рекомендуется использовать агрегацию ответов. Подробнее об этом процессе читайте в разделе <xref href="result-aggregation.dita">Агрегация результатов</xref>.</p>
+    <p>Для агрегации текстовых полей доступно несколько методов.</p>
+    <section id="rover">
+      <title>Агрегация методом ROVER</title>
+      <p>Этот метод выравнивает ответы исполнителей для улучшения качества агрегации.</p>
+      <image href="../images/results/rover.png"/>
+      Выравнивание производится при помощи метода <xref href="https://doi.org/10.1109/ASRU.1997.659110" format="html" scope="external">ROVER</xref>, который формирует граф перехода слов. Каждое слово агрегированного текста выбирается <xref href="result-aggregation-mv.dita">голосованием большинства</xref>. Поэтому текст, полученный в результате агрегации, может отличаться от всех ответов исполнителей.
+      <note>
+        <p>В&#160;агрегации учитываются только принятые задания.</p>
+      </note>
+    </section>
+    <section id="textRASA">
+      <title>Методы агрегации TextRASA и TextHRRASA</title>
+      <p>Агрегация методом TextRASA производится с учетом надежности ответов исполнителей. Метод оценивает, насколько хорошо каждый исполнитель справляется с заданиями, и учитывает это при определении результата агрегации.</p>
+      <p>Метод TextHRRASA является производным от TextRASA. Модель TextHRRASA использует алгоритм агрегации с учетом расстояния между представлениями ответов исполнителей.</p>
+    </section>
+    <section id="textsum">
+      <title>Агрегация при помощи языковой модели</title>
+      <p>Метод использует предварительно обученную языковую модель для агрегации ответов. Для каждого задания ответы объединяются в строку, которая передается в качестве входных данных модели. Вы можете ознакомиться с особенностями метода и узнать о нем <xref href="https://datasets-benchmarks-proceedings.neurips.cc/paper/2021/hash/65ded5353c5ee48d0b7d48c591b8f430-Abstract-round1.html" format="html" scope="external">подробнее</xref>.</p>
+    </section>
+  </conbody>
+  <concept id="troubleshooting">
+    <title>Решение проблем</title>
+    <conbody>
+      <dl display-style="cut">
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_4">
+          <dt/>
+          <dd/>
+        </dlentry>
+        <dlentry conref="../troubleshooting/result-questions.dita#results/fix-task-myself_7">
+          <dt/>
+          <dd/>
+        </dlentry>
+      </dl>
+    </conbody>
+  </concept>
+  <concept id="support">
+    <title/>
+    <conbody id="toloka-support">
+      <p><xref href="../troubleshooting/support.dita#troubleshooting/help">
+          <image href="../images/buttons/contact-support.svg"/>
+        </xref></p>
+    </conbody>
+  </concept>
+</concept>

@@ -312,7 +312,19 @@ items:
           - name: Reviewing Tolokers' responses
             href: guide/concepts/accept.md
           - name: Aggregation of results
-            href: guide/concepts/result-aggregation.md
+            items:
+              - name: Overview
+                href: guide/concepts/result-aggregation.md
+              - name: Dawid-Skene model
+                href: guide/concepts/result-aggregation-dawid-skene.md
+              - name: Aggregation by skill
+                href: guide/concepts/result-aggregation-by-skill.md
+              - name: Majority vote
+                href: guide/concepts/result-aggregation-mv.md
+              - name: Side-by-side comparison
+                href: guide/concepts/result-aggregation-pairwise.md
+              - name: Text aggregation
+                href: guide/concepts/result-aggregation-text.md
       - name: Project analysis
         items:
           - name: Project rating

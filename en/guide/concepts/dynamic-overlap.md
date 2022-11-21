@@ -140,7 +140,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 1. Upload tasks via [smart mixing](distribute-tasks-by-pages.md#smart-mixing).
 
-1. After the pool is completed, start [Aggregation of results by skill](result-aggregation.md#aggr-by-skill).
+1. After the pool is completed, start [Aggregation of results by skill](result-aggregation-by-skill.md).
 
 {% note info %}
 
