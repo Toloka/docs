@@ -6,11 +6,11 @@ To better understand how Toloka works, first try setting up tasks in the Toloka 
 
 {% endnote %}
 
-For example, create a project with tasks where Tolokers will determine the type of animal.
+For example, create a project with tasks where Tolokers will determine the type of shoes.
 
 {% cut "Sample result" %}
 
-![](../_images/cat-interface.png)
+[![](../_images/shoes-interface.png =390x)](../_images/shoes-interface.png)
 
 {% endcut %}
 

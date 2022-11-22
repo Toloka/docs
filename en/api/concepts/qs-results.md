@@ -112,17 +112,17 @@ Toloker responses are returned in the `items` array in the following format:
       "solutions": [
         {
           "output_values": {
-            "result": "dog"
+            "result": "boots"
           }
         },
         {
           "output_values": {
-            "result": "cat"
+            "result": "sneakers"
           }
         },
         {
           "output_values": {
-            "result": "dog"
+            "result": "boots"
           }
         }
       ],
@@ -187,17 +187,17 @@ Toloker responses are returned in the `items` array in the following format:
       "solutions": [
         {
           "output_values": {
-            "result": "cat"
+            "result": "sneakers"
           }
         },
         {
           "output_values": {
-            "result": "dog"
+            "result": "boots"
           }
         },
         {
           "output_values": {
-            "result": "cat"
+            "result": "sneakers"
           }
         }
       ],
