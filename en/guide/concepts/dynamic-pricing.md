@@ -66,6 +66,22 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
 
+## Price per item {#price-per-item}
+
+At the bottom of the page **Price and overlap** you can see price per [item](../glossary.md#item).
+
+Price per item is calculated as:
+
+$P[i] = P[ts]/timesO/T[s] + 30%$
+
+where:
+
+$P[i]$ — price per item.
+$P[ts]$ — price per task suite.
+$O$ — overlap.
+$T[s]$ — tasks per suite.
+$30%$ — fee.
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Where can I set the task price?" %}
