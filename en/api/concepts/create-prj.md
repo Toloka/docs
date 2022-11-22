@@ -85,9 +85,6 @@ Title | Overview
         "showInstructions": true
       },
       "config": {...},
-      "inputExample": {
-        "image": "https://labs-images-testing.s3.yandex.net/presets/for%20tb%20and%20dataset/leather-boots.jpg"
-      },
       "lock": {
         "core": "1.13.1",
         "view.list": "1.2.0",
