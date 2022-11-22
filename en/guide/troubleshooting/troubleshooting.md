@@ -894,12 +894,6 @@ Yes. When you copy the filter and quality control settings, the settings you pre
 
 {% endcut %}
 
-{% cut "I set up a rule to ban users after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
-
-Indeed, this rule is probably too strict. Even the most careful user can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban users who regularly fail captcha checks in Toloka.
-
-{% endcut %}
-
 {% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
 
 Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
@@ -934,24 +928,6 @@ If the Toloker already got paid for the tasks, the money can't be refunded to yo
 
 {% endcut %}
 
-{% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
-
-The frequency of issuing [captchas](../concepts/captcha.md) is set up in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
 {% cut "Can one Toloker get access to two pools in the same project? Can I avoid that?" %}
 
 Yes, if they can access both pools, they can do both of them. To restrict access to subsequent tasks for a Toloker, use the [Completed tasks](../concepts/submitted-answers.md) rule and select a ban at the project level.
@@ -971,32 +947,6 @@ But you can do it yourself if you want. When downloading the results, select the
 Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool user requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
-
-{% endcut %}
-
-{% cut "Can I get more details on the best practices for using captchas? For which projects is it better to use captchas and how often?" %}
-
-[Captcha](../concepts/captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
-
-The frequency of issuing captchas is configured in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
-{% cut "I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?" %}
-
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the “range” specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
 
 {% endcut %}
 

@@ -46,7 +46,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 || **Field** | **Overview**||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 
-- {% if locale == "en-com" %}**Toloker banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), [skipping tasks](../../glossary.md#skipping-tasks), or entering a [captcha](../../glossary.md#captcha)).
+- {% if locale == "en-com" %}**Toloker banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), or [skipping tasks](../../glossary.md#skipping-tasks)).
 
 - {% if locale == "en-com" %}**Toloker filtered out**{% endif %} — The Toloker no longer meets one or more [filters](filters.md).
 

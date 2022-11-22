@@ -48,8 +48,6 @@ If you already have a pool with the quality control settings you need, you can c
 
     - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
 
-    - [Captcha](captcha.md): Show a captcha from time to time to make sure tasks aren't completed by robots.
-
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
 - **To attract a variety of Tolokers:**
@@ -309,12 +307,6 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 
 {% endcut %}
 
-{% cut "I set up a rule to ban users after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
-
-Indeed, this rule is probably too strict. Even the most attentive Tolokers make mistakes, so you should probably relax the rule. Besides requester-specific bans, we have system processes that ban Tolokers who regularly fail captcha checks in Toloka.
-
-{% endcut %}
-
 {% cut "If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?" %}
 
 If the Toloker already got paid for the tasks, you can't get your money back.
@@ -338,54 +330,6 @@ But you can do it yourself if you want. When downloading the results, select the
 {% cut "How do I classify users as good Tolokers and poor Tolokers as they complete tasks, and ban the poor Tolokers?" %}
 
 You can create a task pool for all your Tolokers and create Toloker skills in it. In this case, you can open your tasks only to the Tolokers with the necessary skills.
-
-{% endcut %}
-
-{% endcut %}
-
-{% cut "Captcha" %}
-
-{% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
-
-The frequency of issuing [captchas](captcha.md) is set up in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
-{% cut "Can I get more details on the best practices for using captchas? For which projects is it better to use captchas and how often?" %}
-
-[Captcha](captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
-
-The frequency of issuing captchas is configured in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
-{% cut "I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?" %}
-
-The percentage of correct responses is based on the total number of captchas completed by the Toloker within the “range” specified in the **Recent control and training task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
 
 {% endcut %}
 
