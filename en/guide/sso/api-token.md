@@ -36,7 +36,7 @@ You can generate up to **50** tokens. We recommend that you generate and use a s
 
     Here you can view the details about your generated tokens: their names, first characters, creation date, and usage information.
 
-    Click ![Delete button](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/delete-token.svg) in the token upper-right area to delete it.
+    Click ![Delete button](../_images/delete-token.svg) in the token upper-right area to delete it.
 
 ## Testing tokens
 

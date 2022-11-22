@@ -1,3 +1,5 @@
+{% include [image-styles](../../../_includes/image-styles.md) %}
+
 # Overview
 
 {% note info %}
@@ -10,7 +12,7 @@ For example, create a project with tasks where Tolokers will determine the type 
 
 {% cut "Sample result" %}
 
-[![](../_images/shoes-interface.png =390x)](../_images/shoes-interface.png)
+[![Sample result](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/shoes-interface.png =390x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/shoes-interface.png)
 
 {% endcut %}
 
