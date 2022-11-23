@@ -8,8 +8,8 @@ To run a social science research, use one of Toloka solutions:
     * For long and complicated surveys.
     * If you are already conducting the survey using other channels, and would like to aggregate all the results in one place.
 * [**Survey based on Qualtrics**](questionnaire-qualtrics.md):
-    * if you have an IRB-approved Qualtrics survey
-    * when you do no want to start a new survey on Toloka. 
+    * If you have an IRB-approved Qualtrics survey.
+    * If you do no want to start a new survey on Toloka. 
 
 Other features of Toloka survey solutions are:
 
