@@ -36,9 +36,9 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show performers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png)
 
@@ -174,23 +174,34 @@ At this step, upload your task data to Toloka.
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
-1. Create the tasks for Tolokers:
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+1. Attach a prepared dataset or media files.
 
-        For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio recordings.
+    {% list tabs %}
 
-        ```plaintext
-        INPUT:audio
-        https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_4.mp3
-        https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_6.mp3
-        https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_8.mp3
-        ```
+    - A prepared dataset
 
-    1. Open the downloaded file, and replace the sample links with the links to your audio recordings.
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio recordings.
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+            ```plaintext
+            INPUT:audio
+            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_4.mp3
+            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_6.mp3
+            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_8.mp3
+            ```
+
+        1. Open the downloaded file, and replace the sample links with the links to your audio recordings.
+
+        1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
+
+    - Media files
+
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+
+    {% endlist %}
+
+1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
 1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 

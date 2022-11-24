@@ -65,7 +65,7 @@ To learn more about non-automatic acceptance, go to [Reviewing assignments](offl
 [Training pool](../../glossary.md#training-pool) that will be linked to the main one. | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Level required, %**{% endif %} | This field is only available if you have filled in the **Training** field.
 
-Percentage of correct responses in training tasks (from 0 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the performer gave in each task.
+Percentage of correct responses in training tasks (from 0 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
 
 The minimum required level that you can set is 5. Tolokers who complete training with apercentage below this level won't have access to tasks. | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Review period in days**{% endif %} | The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:
@@ -92,7 +92,7 @@ For example, you can use this parameter if you need an open pool where you regul
 
 - {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).
 
-- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train performers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
+- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
 
 - {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
 

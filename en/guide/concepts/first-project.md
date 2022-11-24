@@ -66,7 +66,7 @@ In the project, you'll customize an appearance of the tasks.
 
     To learn more, see the [Template Builder Help](../../template-builder/index.md).
 
-1. In the **Instructions for performers** section, edit the ready-made instructions if needed.
+1. In the **Instructions for Tolokers** section, edit the ready-made instructions if needed.
 
 1. Click **Create a project**.
 

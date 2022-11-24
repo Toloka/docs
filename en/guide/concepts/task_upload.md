@@ -6,51 +6,34 @@ To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
 1. Attach a prepared dataset or media files.
 
-{% list tabs "How {% if locale == "en-com" %}**Select media files**{% endif %} option works" %}
+    {% list tabs %}
 
-- A prepared dataset
-    1. Download the template and add your data.
+    - A prepared dataset
 
-      {% cut "Use sample data" %}
+        1. Download the template and [add your data](pool_csv.md).
 
-      If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
+        1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
+        
+        {% cut "Use sample data" %}
 
-      - {% if locale == "en-com" %}**Image classification**{% endif %}
-      - {% if locale == "en-com" %}**Product search relevance**{% endif %}
-      - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
-      - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+        If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
 
-      Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+        - {% if locale == "en-com" %}**Image classification**{% endif %}
+        - {% if locale == "en-com" %}**Product search relevance**{% endif %}
+        - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
+        - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
 
-      Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+        Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
 
-      {% endcut %}
+        Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
-    1. Click **Select prepared dataset** and choose your file with tasks.
+        {% endcut %}
 
-- Media files
-    Upload media files from your device to avoid difficulties with placing links in the file with tasks.
+    - Media files
 
-    To the right of the **Select prepared dataset**, click the **Select media files** and choose files.
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
-    Features:
-
-      * This option is available only for the projects that have a single url type input field in the specification.
-
-      * After uploading, tasks are automatically created with links to the uploaded files.
-
-      {% note tip %}
-
-      Formats supported:
-         - Images: gif, jpg, jpeg, png, webp
-         - Audio: flac, mp3, wav, m4a
-         - Video: mp4
-
-      {% endnote %}
-
-{% endlist %}
-
-1. Attach the file with the tasks.
+    {% endlist %}
 
 1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
