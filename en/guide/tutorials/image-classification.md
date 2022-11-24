@@ -36,9 +36,9 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show performers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/create-project-step-1.png)
 
@@ -48,13 +48,13 @@ Before you begin:
 
     1. Using the {% if locale == "en-com" %}**Visual editor**{% endif %}, add your data to the {% if locale == "en-com" %}**Config**{% endif %} section:
 
-        - {% if locale == "en-com" %}**Question performers will see in your task**{% endif %}: Write a question that matches the responses Tolokers need to choose from. All tasks in a project use the same question.
+        - {% if locale == "en-com" %}**Question Tolokers will see in your task**{% endif %}: Write a question that matches the responses Tolokers need to choose from. All tasks in a project use the same question.
 
         - {% if locale == "en-com" %}**Paste link to a sample image**{% endif %}: This image is only used to display the task interface preview on the right.
 
     1. {% if locale == "en-com" %}**Set answer options**{% endif %} is pre-filled with sample answers. Replace the samples with your categories. Note that {% if locale == "en-com" %}**Other**{% endif %} and {% if locale == "en-com" %}**Error**{% endif %} are separate entities.
 
-        - {% if locale == "en-com" %}**Answer option for performers**{% endif %}: This is the label that Tolokers will see. Make sure it is clear and correct.
+        - {% if locale == "en-com" %}**Answer option for Tolokers**{% endif %}: This is the label that Tolokers will see. Make sure it is clear and correct.
 
         - {% if locale == "en-com" %}**Name in labeling results**{% endif %}: This is the value you will see in the file with the labeling results.
 
@@ -120,24 +120,34 @@ At this step, upload your task data to Toloka.
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
-1. Create the tasks for Tolokers:
+1. Attach a prepared dataset or media files.
 
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+    {% list tabs %}
 
-        For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
+    - A prepared dataset
 
-        ```plaintext
-        INPUT:image
-        https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/041adb571f4342e7a42e47712f492101.jpg
-        https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/048e5760fc5a46faa434922b2447a527.jpg
-        https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/05334365c060421ab25264166bbb4fd1.jpg
-        ```
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-    1. Open the downloaded file, and replace the sample links with links to your images.
+            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+            ```plaintext
+            INPUT:image
+            https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/041adb571f4342e7a42e47712f492101.jpg
+            https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/048e5760fc5a46faa434922b2447a527.jpg
+            https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/05334365c060421ab25264166bbb4fd1.jpg
+            ```
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        1. Open the downloaded file, and replace the sample links with links to your images.
+
+        1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
+
+    - Media files
+
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+
+    {% endlist %}
+
+1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
 1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 

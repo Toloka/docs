@@ -4,24 +4,36 @@ To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
-1. Download the template and add your data.
+1. Attach a prepared dataset or media files.
 
-    {% cut "Use sample data" %}
+    {% list tabs %}
 
-    If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
+    - A prepared dataset
 
-    - {% if locale == "en-com" %}**Image classification**{% endif %}
-    - {% if locale == "en-com" %}**Product search relevance**{% endif %}
-    - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
-    - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+        1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
 
-    Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+        1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
+        
+        {% cut "Use sample data" %}
 
-    Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+        If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
 
-    {% endcut %}
+        - {% if locale == "en-com" %}**Image classification**{% endif %}
+        - {% if locale == "en-com" %}**Product search relevance**{% endif %}
+        - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
+        - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
 
-1. Attach the file with the tasks.
+        Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+
+        Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+
+        {% endcut %}
+
+    - Media files
+
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+
+    {% endlist %}
 
 1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 

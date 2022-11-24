@@ -132,6 +132,16 @@ Field task {#field-task}
 
 : A task to be performed in the mobile app. It usually contains a point on the map that the Toloker needs to go to, check something, and take photos.
 
+File with tasks {#tsv}
+
+: To upload tasks, use TSV, XLSX or JSON files:
+
+  - TSV (tab-separated values) is a text file format in which data is separated by a tab, and lines are separated by a newline symbol.
+  
+  - XLSX is a spreadsheet file format developed by Microsoft to replace the outdated XLS file type.
+  
+  - JSON (JavaScript Object Notation) is a text file format used to store and transfer structured data.
+
 Filters {#filters}
 
 : Criteria for choosing Tolokers. For example, you can select only Tolokers who speak English or have a certain skill.
@@ -373,10 +383,6 @@ Training task {#training-task}
   Training tasks can be used in zero-price [training pools](#training-pool) to choose Tolokers who pass training.
 
   They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and ban Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) rule.
-
-TSV file with tasks {#tsv}
-
-: TSV (tab-separated values) is a text file format in which data is separated by a tab, and lines are separated by a newline symbol.
 
 ### V
 
