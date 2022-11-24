@@ -12,8 +12,8 @@ Features:
 
 Supported file formats:
 
-- Images — gif, jpg, jpeg, png, webp.
-- Audio — flac, mp3, wav, m4a.
-- Video — mp4.
+- Images — GIF, JPG, JPEG, PNG, WEBP.
+- Audio — FLAC, MP3, WAV, M4A.
+- Video — MP4.
 
 {% endnote %}
