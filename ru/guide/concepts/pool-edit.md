@@ -91,6 +91,8 @@
 
 Чтобы показывать капчу исполнителям, настройте блок [контроля качества](captcha.md).
 
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
 #### {% if locale == "ru-ru" %}**Отложенная приемка заданий**{% endif %}{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}
 
 Включите эту опцию, чтобы [проверить](accept.md)[выполненные задания](../../glossary.md#completed-tasks) вручную.

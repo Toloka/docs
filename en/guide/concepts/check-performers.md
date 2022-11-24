@@ -26,6 +26,8 @@ Use the [Captcha](captcha.md) rule to protect from robots. In Toloka, a captcha 
 
 ![](../_images/cp-captcha.png)
 
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
 #### Limit on available tasks
 
 Limits are also useful when you need as many different Tolokers as possible. For example, to collect data for statistics, run surveys, or pick the best version of a logo. Another case is personal descriptions for a [dating service](https://rb.ru/opinion/chat-bot-dataset/). If texts are all written by the same person, they are likely to turn out monotonous and boring.

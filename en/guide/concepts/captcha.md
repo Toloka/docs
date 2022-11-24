@@ -1,5 +1,7 @@
 # Captcha
 
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
 Captchas and the [Fast responses](quick-answers.md) rule provide a high level of protection from robots.
 
 To show a captcha to Tolokers, set {% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} in the [pool](../../glossary.md#pool) settings.

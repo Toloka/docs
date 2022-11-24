@@ -8,8 +8,6 @@ Some quality control rules have the **Remember values** parameter. It sets the d
 
 - In [task suites](../../glossary.md#task-suite): the [Fast responses](quick-answers.md) rule, the **Recent task suites to use** field.
 
-- In [captcha entries](../../glossary.md#captcha): the [Captcha](captcha.md) rule, the **Recent captchas to use** field.
-
 ## How it works {#how-field-works}
 
 The **Remember values** parameter works the same way for all rules.

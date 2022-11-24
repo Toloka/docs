@@ -38,8 +38,6 @@ To set up quality control:
 
     - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
 
-    - [Captcha](captcha.md): Show a captcha from time to time to make sure tasks aren't completed by robots.
-
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
 - **To attract a variety of Tolokers:**

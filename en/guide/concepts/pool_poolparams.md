@@ -24,13 +24,6 @@ If you are working with Russian-language texts in the task, you don't need to di
 
 If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md) | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Captcha frequency**{% endif %} | The frequency of [captcha](../../glossary.md#captcha) display:
-
-- “No” — Don't show captchas.
-- “Low” — Show a captcha after every 20 assignments.
-- “Medium”/ “High” — Show a captcha after every 10 assignments.
-
-To show the captcha to Tolokers, set [the quality control rule](captcha.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
 Set the time period when you can check the tasks and reject them if the results are poor.

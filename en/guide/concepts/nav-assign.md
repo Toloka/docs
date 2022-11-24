@@ -18,7 +18,6 @@ The quality control rules feature the following actions:
 
     - [Control tasks](goldenset.md)
     - [Majority vote](mvote.md)
-    - [Captcha](captcha.md)
     - [Review results](reviewing-assignments.md)
 
     {% endcut %}

@@ -28,7 +28,7 @@ Banning Tolokers {#banning-tolokers}
 
 ### C
 
-Captcha (quality control rule) {#captcha}
+Captcha {#captcha}
 
 : Restricts access to tasks for Tolokers who fail to enter captcha several times in a row. Protects your project against fake users (robots).
 
