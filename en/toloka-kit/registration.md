@@ -2,7 +2,7 @@
 
 # Getting OAuth token
 
-Before you start using Toloka-Kit library, register in either the production or sandbox Toloka web version, get your OAuth token for the API access, and top up your account using a promo code.
+Before you start using Toloka-Kit library, register in either the production or sandbox Toloka web version, get your OAuth token for the API access, and top up your account.
 
 ## Registration
 
