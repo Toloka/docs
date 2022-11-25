@@ -1,19 +1,15 @@
-# Quick Start
+# Quick start
 
 To start with Toloka-Kit:
 
-1. Get an OAuth token in your [profile](https://platform.toloka.ai/requester/profile/integration) or in the [Sandbox profile](https://sandbox.toloka.yandex.com/requester/profile/integration).
-
-2. Install the Toloka-Kit package:
+1. Install the Toloka-Kit package:
 
     ```shell
     $ pip install toloka-kit
+    $ pip install pandas
     ```
 
-3. Check access to the API with the following Python script. The script:
-    * Imports the package.
-    * Asks to enter the OAuth token.
-    * Requests general information about your account.
+1. Check access to the API with the following Python script.
 
     ```python
     import toloka.client as toloka
@@ -25,11 +21,30 @@ To start with Toloka-Kit:
     print(toloka_client.get_requester())
     ```
 
-## What's Next
+    The script:
 
-* Complete one of the [tutorials](../guide/concepts/usecases.md) to get acquainted with Toloka web interface.
-* Try [Toloka-Kit usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#toloka-kit-usage-examples).
-* Read the package reference starting with [TolokaClient](reference/toloka.client.TolokaClient.md).
-* Study [Toloka API documentation](../api/index.md).
-* See other features in [Toloka requester's guide](../guide/concepts/overview.md).
-* Contribute to [Toloka-Kit on GitHub](https://github.com/Toloka/toloka-kit): open pull requests, report bugs or share your [usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#need-more-examples).
+    - Imports the package.
+    - Asks to enter the [OAuth token](./registration.md#oauth-token).
+    - Requests general information about your account.
+
+    The response to the above request should look like this:
+
+    ```bash
+    Requester(_unexpected={}, id='6c6c50dce62ca4aef87dfcbc6e9de162', balance=Decimal('1.0000'), public_name={'EN': 'John Smith'}, company=None)
+    ```
+
+## Next steps
+
+- Complete one of the [tutorials](../guide/concepts/usecases.md) to get acquainted with Toloka web interface.
+
+- Create your [first project](./learn-basics.md) using Toloka-Kit.
+
+- Try [Toloka-Kit usage examples](./use-cases.md).
+
+- Read the package reference starting with [TolokaClient](reference/toloka.client.TolokaClient.md).
+
+- Study [Toloka API documentation](../api/index.md).
+
+- See other features in [Toloka requester's guide](../guide/concepts/overview.md).
+
+- Contribute to [Toloka-Kit on GitHub](https://github.com/Toloka/toloka-kit): open pull requests, report bugs or share your [usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#need-more-examples).
