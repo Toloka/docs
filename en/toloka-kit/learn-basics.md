@@ -287,7 +287,7 @@ An important part of configuring pools is to decide how many tasks will be issue
 
 {% note info %}
 
-`reward_per_assignment` and `assignment_max_duration_seconds` fields in pool settings set the price and time for one **task suite**, not task.
+The `reward_per_assignment` and `assignment_max_duration_seconds` fields in pool settings set the price and time for one **task suite**, not task.
 
 {% endnote %}
 
@@ -741,7 +741,7 @@ https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/ffb6ceff76d348bfb9d448d4e90f
 Name: agg_label, Length: 202, dtype: object
 ```
 
-If you prefer to run the code using [Jupyter Notebook](https://colab.research.google.com/github/Toloka/toloka-kit/blob/main/examples/0.getting_started/0.learn_the_basics/learn_the_basics.ipynb), you will visual preview for the images from tasks:
+If you prefer to run the code using [Jupyter Notebook](https://colab.research.google.com/github/Toloka/toloka-kit/blob/main/examples/0.getting_started/0.learn_the_basics/learn_the_basics.ipynb), you will have a visual preview for the images from your tasks:
 
 [![Possible results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/possible_results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/possible_results.png)
 
