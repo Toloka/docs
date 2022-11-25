@@ -16,7 +16,7 @@ Before you start using Toloka-Kit library, register in either the production or 
 
 ## Getting OAuth token {#oauth-token}
 
-Get an OAuth token for your version. Go to **Profile** → **Integrations** → **Get Oauth Token**:
+Get an OAuth token for your version. Go to **Profile** → **Integrations** → **Get OAuth Token**:
 
 [![How to get an OAuth token](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/get-oauth-token.png)
 
