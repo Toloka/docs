@@ -38,6 +38,10 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Audio comparison (Side-by-side)](sbs-audio.md)
 
+## Field tasks
+
+- [Spatial сrowdsourcing](spatial-crowdsourcing.md)
+
 ## Data enrichment
 
 - [Searching for product characteristics](data-search.md)
