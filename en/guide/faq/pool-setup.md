@@ -30,12 +30,6 @@ You can use **Aggregation by skill**, but you'll need to list all the possible v
 
 {% endcut %}
 
-{% cut "I created a project and a pool, but the Next button doesn't work or the preview shows a blank screen." %}
-
-Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
-
-{% endcut %}
-
 {% cut "Are there any easy ways to assign a certain user a skill in Toloka, even if the Toloker didn't do any tasks (like I can do in the Sandbox)?" %}
 
 In the main Toloka version, you can only assign a skill to Tolokers who have completed at least one of your tasks. There is no option to assign a skill to an arbitrary user. To limit the audience of users who will see your project, use [filters](../concepts/filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
@@ -48,7 +42,7 @@ Tasks from an open pool are available to every Toloker that matches your pool [f
 
 {% endcut %}
 
-{% cut "The Tolokers completed training for the first pool and got the skill. A week later, we cloned the pool, but all the Tolokers lost their skill. Which parameter affects skill expiration? Do all the Tolokers need to complete the training again?" %}
+{% cut "Which parameter affects skill expiration?" %}
 
 The validity period of the training skills is controlled by the **Retry after** parameter. The skill is deleted after a period specified in days in the **Retry after** field, if the Toloker:
 
@@ -57,12 +51,6 @@ The validity period of the training skills is controlled by the **Retry after** 
 - Didn't complete any tasks linked to training during this period.
 
 Your Tolokers will need to be trained again.
-
-{% endcut %}
-
-{% cut "Why is my project not available in the mobile version of Toloka?" %}
-
-Tasks in pools are automatically available in the web version of Toloka and the mobile app. Check the pool settings. You might have the `Client = Toloka web version`[filter](../concepts/filters.md) on.
 
 {% endcut %}
 
@@ -422,18 +410,6 @@ No, the Tolokers are unaware of the ban.
 
 {% endcut %}
 
-{% cut "When I export a project from the Sandbox, the task files are not exported. Is this how it's supposed to work? I suddenly lost the markup of the control tasks that I created in the sandbox." %}
-
-The tasks themselves are not exported, only the project configuration and the settings of the selected pool. However, you can download your marked up tasks from the **Sandbox** pool and import them to the pool you created. To download the control tasks only (if you marked them up in the interface), go to **Mark up**, then click **Control tasks** and **Download**.
-
-{% endcut %}
-
-{% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. So I try to use `3` in the **Recent control task responses to use** field, but I get an error that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
-
-The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
-
-{% endcut %}
-
 {% cut "What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?" %}
 
 To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](../concepts/mvote.md) to the pool.
@@ -459,18 +435,6 @@ This is the total number of responses to the control questions.
 {% cut "How do I classify users as good Tolokers and poor Tolokers as they complete tasks, and ban the poor Tolokers?" %}
 
 You can create a task pool for all your Tolokers and create Toloker skills in it. In this case, you can open your tasks only to the Tolokers with the necessary skills.
-
-{% endcut %}
-
-{% cut "Why has the speed of pool completion dropped?" %}
-
-Possible reasons:
-
-- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
-
-- The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
-
-- Too many users are banned. Ease the quality control rules.
 
 {% endcut %}
 
@@ -527,12 +491,6 @@ Yes, you can do that. Set up [dynamic overlap](../concepts/dynamic-overlap.md) (
 {% cut "Is there a cross-check feature for tasks?" %}
 
 You can use overlap to let multiple Tolokers do the same task. The overlap value is set up in the [pool settings](../concepts/pool-edit.md).
-
-{% endcut %}
-
-{% cut "Why is the maximum number of submitted assignments in the progress bar less than the total number of uploaded tasks?" %}
-
-The progress bar shows the number of task suites including the overlap. If the overlap is greater than one, the number of task suites is different from the total number of tasks.
 
 {% endcut %}
 
