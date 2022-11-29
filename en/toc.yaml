@@ -231,6 +231,8 @@ items:
                 href: guide/concepts/dynamic-pricing.md
           - name: Quality control
             items:
+              - name: Overview
+                href: guide/concepts/quality-control-overview.md
               - name: Setting up quality control
                 href: guide/concepts/qa-pool-settings.md
               - name: Quality control rules
