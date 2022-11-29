@@ -1,6 +1,6 @@
 # Overview
 
-To improve quality of answers, you must select the audience you need and train it.
+To improve quality of answers, you must [select the audience](filters.md) you need and [train](train.md) it.
 
 ![](../_images/other/quality-control-1.png)
 
@@ -8,115 +8,123 @@ To improve quality of answers, you must select the audience you need and train i
 
 ### Filters {#audience-filters}
 
-- Demographics (age, gender, education, languages, region, citizenship)
+- [Demographics](filters.md#filter-user-profile) (age, gender, education, languages, region, citizenship).
 
-- Device specs (device type, OS and browser version)
+- [Device specs](filters.md#filter-calc-data) (device type, OS and browser version).
 
-- Skills (quality on specific tasks)
+- [Skills](filters.md#filter-skill) (quality on specific [tasks](../../glossary.md#task)).
 
-- Top \% of the best on the platform
+- Top \% of the best on the platform.
 
-### Training and onboarding  {#audience-training}
-
-- Correct answers + hints
-
-- High scores continue on to the exam
-
-### Exam  {#audience-exam}
-
-- Scored by \% correct answers
-
-- Best scores grant access to paid tasks
+{% cut "Filter example" %}
 
 ![](../_images/other/quality-control-2.png)
 
-## Multi-level quality checks  {#quality-checks}
+{% endcut %}
 
-### Quality control  {#quality-control}
+### Training and onboarding {#audience-training}
 
-- Overlap (including dynamic overlap)
+- Correct answers + hints.
 
-- Control tasks
+- High scores continue on to the [exam](../../glossary.md#exam).
 
-- Majority vote
+### Exam {#audience-exam}
 
-- Validation by other annotators
+- Scored by \% correct answers.
 
-### Protection from cheaters and bots  {#protection-from-cheaters}
+- Best scores grant access to paid tasks.
 
-- Ban for fast responces
+## Multi-level quality checks {#quality-checks}
 
-- Captcha
+### Quality control {#quality-control}
 
-- Limit skipped assignments
+- [Overlap](overlap-faq.md) (including dynamic overlap).
 
-- Limit number of tasks per person 
+- [Control tasks](goldenset.md).
 
-### Anti-Fraud system  {#anti-fraud}
+- [Majority vote](mvote.md).
 
-- Behavior analysis system
+- Validation by other annotators.
 
-- Platform-wide ban for fraudulent users
+### Protection from cheaters and bots {#protection-from-cheaters}
+
+- [Ban](ban.md) for [fast responses](quick-answers.md).
+
+- [Captcha](captcha.md).
+
+- Limit [skipped assignments](skipped-assignments.md).
+
+- Limit number of tasks per person.
+
+{% cut "Examples of the quality control rules" %}
 
 ![](../_images/other/quality-control-3.png)
 
-## Multi-level quality checks  {#quality-checks}
+{% endcut %}
 
-### Aggregating results  {#aggregating-results} 
+### Anti-Fraud system {#anti-fraud}
 
-- Using majority vote
+- Behavior analysis system.
 
-- Using the Dawid-Skene method
+- Platform-wide ban for fraudulent Tolokers.
 
-- By skill level
+## Obtaining quality results after data labeling {#obtaining-results}
+
+![](../_images/results/aggregation-scheme.svg)
+
+### Aggregating results {#aggregating-results}
+
+- Using [majority vote](mvote.md).
+
+- Using the [Dawid-Skene method](result-aggregation.md#dawid-skene).
+
+- [By skill level](result-aggregation.md#aggr-by-skill).
 
 ### Evaluating metrics {#evaluating-metrics}
 
 - Accuracy\/completeness/F1/MCC, etc.
 
-- Consistency
+- Consistency.
 
-- Confidence
+- Confidence.
 
 ### Reassigning tasks {#reassigning-tasks}
 
-- If the submitted task is rejected
+- If the submitted task is rejected.
 
-- If consistency is low
+- If consistency is low.
 
-- If answers from banned users are thrown out
+- If answers from banned Tolokers are thrown out.
 
-![](../_images/results/aggregation-scheme.svg)
-
-## Main project scenarios  {#main-project-scenarios}
+## Main project scenarios {#main-project-scenarios}
 
 ### Validate results {#validate-results}
 
-- **Control tasks** — set the Toloker’s skill level based on answers in control tasks and exclude Tolokers who give the wrong answers.
+- [Control tasks](goldenset.md) — set the Toloker’s skill level based on answers in control tasks and exclude Tolokers who give the wrong answers.
 
-- **Majority vote** — have multiple Tolokers do the same task and look for consistency in answers.
+- [Majority vote](mvote.md) — have multiple Tolokers do the same task and look for consistency in answers.
 
-- **Manually check results** — evaluate Tolokers by the number of accepted and rejected tasks.
+- Manually check results — evaluate Tolokers by the number of accepted and rejected tasks.
 
 ### Diversify the audience {#diversify-audience}
 
-- **Earnings** — limit the earnings per person in your task pool in 24 hours.
+- [Earnings](income.md) — limit the earnings per person in your [pool](../../glossary.md#pool) in 24 hours.
 
-- **Completed tasks** — limit the number of tasks per person in your task pool in 24 hours.
+- Completed tasks — limit the number of tasks per person in your pool in 24 hours.
 
 ### Prevent random clicking and bots {#random-clicking}
 
-- **Fast responses** — monitor the minimum time to complete a page of tasks.
+- [Fast responses](quick-answers.md) — monitor the minimum time to complete a [page of tasks](../../glossary.md#task-suite).
 
-- **Captcha** — periodically display a captcha to catch automated scripts and bots.
+- [Captcha](captcha.md) — periodically display a captcha to catch automated scripts and bots.
 
-- **Skipped assignments** — exclude Tolokers who skip too many tasks in a row.
+- [Skipped assignments](skipped-assignments.md) — exclude Tolokers who skip too many tasks in a row.
 
 ### Redo certain tasks {#redo-tasks}
 
-- **Re-assign tasks completed by someone who was banned** — if a Toloker gets banned, all their completed tasks can be automatically assigned to other people.
+- [Re-assign tasks](restore-task-overlap.md) completed by someone who was banned — if a Toloker gets banned, all their completed tasks can be automatically assigned to other people.
 
-- **Rejected and accepted task processing** — set the rules for assigning rejected tasks to other people.
+- [Rejected and accepted task processing](reassessment-after-accepting.md) — set the rules for assigning rejected tasks to other people.
 
 ## Technologies for quality management {#quality-management-tech}
 
@@ -124,25 +132,25 @@ Transform the crowd into computing power with advanced technologies for quality 
 
 ### Multiple quality control methods {#multiple-quality}
 
-Toloka offers different approaches to achieve the best quality for each project.
+Toloka offers different approaches to achieve the best quality for each [project](../../glossary.md#project).
 
-- Post-verification
+- Post-verification.
 
-- Task-based crowd training and testing
+- Task-based crowd training and testing.
 
-- Golden sets (honeypots) to monitor quality
+- Golden sets (honeypots) to monitor quality.
 
-- Advanced aggregation tools
+- Advanced [aggregation](result-aggregation.md) tools.
 
-- Platform-wide anti-fraud system
+- Platform-wide anti-fraud system.
 
 ### Adaptive selection of Tolokers {#adaptive-selection}
 
 Multi-stage selection of a distributed crowd.
 
-- Audience filters by language, age, gender, interests, location, real-time ranking, and more.
+- Audience [filters](filters.md) by language, age, gender, interests, location, real-time ranking, and more.
 
-- Training, exams, and retraining to find Tolokers for your exact task.
+- [Training](train.md), [exams](how-to-use-exams.md), and retraining to find Tolokers for your exact task.
 
 ### Smart matching mechanisms {#smart-matching}
 
@@ -162,15 +170,9 @@ Autolabeling and pretrained models with quality control built in.
 
 ## What's next {#what_next}
 
+- [Set up quality control](qa-pool-settings.md).
 - [Add tasks](pool.md) to the pool.
-- Learn more about how to set up a pool:
-
-    - [Setting up pricing](dynamic-pricing.md).
-    - [Dynamic overlap](dynamic-overlap.md).
-    - Selective [majority vote](selective-mvote.md) control.
-    - [Filters](filters.md).
-    - [Speed/quality balance](adjust.md).
-    - [Reviewed assignments](offline-accept.md).
+- [Start the pool](pool-run-and-stop.md).
 
 ## Troubleshooting {#troubleshooting}
 
@@ -256,7 +258,7 @@ Another option for selecting Tolokers for a project of this type is assignment r
 
 {% endcut %}
 
-{% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. I'm trying to put “3“ in the “Recent control and training task responses to use“ field, but I'm getting an error telling me that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
+{% cut "I want to create an exam with three tasks. If a Toloker does two out of three tasks correctly, they get the skill. I'm trying to put “3“ in the “Recent control and training task responses to use“ field, but I'm getting an error telling me that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
 The **Recent control and training task responses to use** field is for the number of recent responses from Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
@@ -329,7 +331,7 @@ As soon as the needed number of responses is collected, Toloka calculates the pe
 
 {% cut "Can I make my training or control tasks totally different from the general tasks?" %}
 
-Your [training](train.md) and control tasks have the same project specification. However, you can create a separate project with the tasks and assign a skill based on user responses. Then you can admit Tolokers to the main project based on their skill.
+Your [training](train.md) and control tasks have the same project specification. However, you can create a separate project with the tasks and assign a skill based on Toloker responses. Then you can admit Tolokers to the main project based on their skill.
 
 {% endcut %}
 
@@ -355,7 +357,7 @@ Smart mixing is set up when you upload tasks to the pool. After creating a pool,
 
 {% endcut %}
 
-{% cut "Can I create two active training pools, one for practice and the other for admitting users to the main pool? In other words, one pool is for users to practice and the other pool tests them." %}
+{% cut "Can I create two active training pools, one for practice and the other for admitting Tolokers to the main pool? In other words, one pool is for Tolokers to practice and the other pool tests them." %}
 
 Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
@@ -365,7 +367,7 @@ In the exam pool, you can create a skill reflecting the exam result and granting
 
 {% cut "I created a training pool with one task containing a hint. A Toloker makes a mistake on their first attempt but eventually succeeds. The Toloker gets the skill “0“. How do I grant to the Toloker access to my tasks? The minimum required level that you can set is “10“." %}
 
-Technically, if you have only one task in your training pool, you don't have this option. The skill will be either `0` or `100`. We recommend that you add several tasks, or at least 2 so that the Toloker will practice on the first task and will be able to do the second task correctly. In this case, you can admit users to your main pool starting from the skill value of `50`.
+Technically, if you have only one task in your training pool, you don't have this option. The skill will be either `0` or `100`. We recommend that you add several tasks, or at least 2 so that the Toloker will practice on the first task and will be able to do the second task correctly. In this case, you can admit Tolokers to your main pool starting from the skill value of `50`.
 
 You can also create a training pool based on the main pool. Assign a skill using the [Control tasks](goldenset.md) rule, in which case, you can admit Tolokers to your main pool with any skill level, zero included. But we don't advise giving tasks to people who failed training.
 
@@ -421,11 +423,11 @@ No, Tolokers don't know when they're blocked.
 
 No. The responses of these Tolokers aren't automatically excluded from the final results file.
 
-But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned Tolokers to other Tolokers using the [Re-completion of assignments from banned users](restore-task-overlap.md) rule.
+But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned Tolokers** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned Tolokers to other Tolokers using the [Re-completion of assignments from banned Tolokers](restore-task-overlap.md) rule.
 
 {% endcut %}
 
-{% cut "How do I classify users as good Tolokers and poor Tolokers as they complete tasks, and ban the poor Tolokers?" %}
+{% cut "How do I classify Tolokers as good Tolokers and poor Tolokers as they complete tasks, and ban the poor Tolokers?" %}
 
 You can create a task pool for all your Tolokers and create Toloker skills in it. In this case, you can open your tasks only to the Tolokers with the necessary skills.
 
@@ -435,7 +437,7 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 {% cut "Majority vote" %}
 
-{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
+{% cut "The pool has an overlap and majority vote set up, but some fraudulent Toloker opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a Toloker quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
 
 Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
 
