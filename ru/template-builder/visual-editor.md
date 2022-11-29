@@ -18,7 +18,7 @@
 
 Интерфейс визуального редактора выглядит следующим образом:
 
-[![Интерфейс визуального редактора](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png)
+[![Интерфейс визуального редактора](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png)
 
 1. Переключайтесь между визуальным редактором и редактором кода с помощью кнопок в верхней части конструктора шаблонов.
 

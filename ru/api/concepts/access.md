@@ -27,4 +27,4 @@ Authorization: OAuth <OAuth token>
 
 - В боевой версии Толоки: [https://platform.toloka.ai/ru/requester/profile/integration]({{ requester-profile-integration }}).
 
-[![Доступ к API](https://yastatic.net/s3/doc-binary/src/toloka/ru/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/toloka/ru/api/get-oauth-token.png)
+[![Доступ к API](https://yastatic.net/s3/doc-binary/src/support/toloka/ru/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/ru/api/get-oauth-token.png)
