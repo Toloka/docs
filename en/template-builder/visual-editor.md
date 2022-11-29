@@ -16,7 +16,7 @@ When you choose to create a project that supports configuring the task interface
 
 The interface of the visual editor looks like this:
 
-[![Visual editor interface](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png)
+[![Visual editor interface](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png)
 
 1. Switch between the visual editor and code editor using the buttons in the upper part of Template Builder.
 
