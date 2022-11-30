@@ -7,6 +7,44 @@ common:
     to: /guide/tutorials/data-security.md
   - from: /api/concepts/about.md
     to: /api/index.md
+  - from: /toloka-apps/api/ref/app/apps_get.md
+    to: /toloka-apps/api/ref/app/apps-get.md
+  - from: /toloka-apps/api/ref/app/apps_app_id_get.md
+    to: /toloka-apps/api/ref/app/appsapp_id-get.md
+  - from: /toloka-apps/api/ref/app-project/app-projects_app_project_id_archive_post.md
+    to: /toloka-apps/api/ref/app-project/app-projectsapp_project_idarchive-post.md
+  - from: /toloka-apps/api/ref/app-project/app-projects_post.md
+    to: /toloka-apps/api/ref/app-project/app-projects-post.md
+  - from: /toloka-apps/api/ref/app-project/app-projects_app_project_id_get.md
+    to: /toloka-apps/api/ref/app-project/app-projectsapp_project_id-get.md
+  - from: /toloka-apps/api/ref/app-project/app-projects_get.md
+    to: /toloka-apps/api/ref/app-project/app-projects-get.md
+  - from: /toloka-apps/api/ref/app-project/app-projects_app_project_id_unarchive_post.md
+    to: /toloka-apps/api/ref/app-project/app-projectsapp_project_idunarchive-post.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_post.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatches-post.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_get.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatchesbatch_id-get.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_get.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatches-get.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_resume_post.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatchesbatch_idresume-post.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_sync_post.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatchessync-post.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_start_post.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatchesbatch_idstart-post.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_stop_post.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatchesbatch_idstop-post.md
+  - from: /toloka-apps/api/ref/batch/app-projects_app_project_id_batches_batch_id_patch.md
+    to: /toloka-apps/api/ref/batch/app-projectsapp_project_idbatchesbatch_id-patch.md
+  - from: /toloka-apps/api/ref/item/app-projects_app_project_id_items_post.md
+    to: /toloka-apps/api/ref/item/app-projectsapp_project_iditems-post.md
+  - from: /toloka-apps/api/ref/item/app-projects_app_project_id_items_bulk_post.md
+    to: /toloka-apps/api/ref/item/app-projectsapp_project_iditemsbulk-post.md
+  - from: /toloka-apps/api/ref/item/app-projects_app_project_id_items_item_id_get.md
+    to: /toloka-apps/api/ref/item/app-projectsapp_project_iditemsitem_id-get.md
+  - from: /toloka-apps/api/ref/item/app-projects_app_project_id_items_get.md
+    to: /toloka-apps/api/ref/item/app-projectsapp_project_iditems-get.md
 
 ru:
   - from: /api/concepts/download-tasks.md
