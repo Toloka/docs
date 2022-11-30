@@ -23,103 +23,158 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 ## Tasks file structure {#structure}
 
-The first line of the file contains the column headers:
-
-- `INPUT:<name of the input data field>` — Input data for tasks.
-
-- `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
-
-- `HINT:text` — Hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
-
-- Point coordinates for [field tasks](../tutorials/walk.md):
-
-    - `Al:latitude` — Latitude.
-
-    - `Al:longitude` — Longitude.
-
-Task type depends on which fields are filled in:
-
 {% list tabs %}
 
-- General task
+- TSV 
 
-  To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
+  The first line of the file contains the column headers:
 
-  {% cut "Example with a simple object (string, link, and so on)" %}
+  - `INPUT:<name of the input data field>` — Input data for tasks.
 
-  ![](../_images/location-job/pool_csv/main_tsv.png)
+  - `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
 
-  {% endcut %}
+  - `HINT:text` — Hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
-  {% cut "Example with a string array" %}
+  - Point coordinates for [field tasks](../tutorials/walk.md):
 
-  ![](../_images/location-job/pool_csv/main_tsv2.png)
+      - `Al:latitude` — Latitude.
 
-  {% endcut %}
+      - `Al:longitude` — Longitude.
 
-- Control task
+  Task type depends on which fields are filled in:
 
-  To create a control task, add:
+  {% list tabs %}
 
-  - The task input data in the columns with the `INPUT` header.
+  - General task
 
-  - Correct responses in the columns with the `GOLDEN` header.
+    To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
 
-  {% note tip %}
+    {% cut "Example with a simple object (string, link, and so on)" %}
 
-  You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+    ![](../_images/location-job/pool_csv/main_tsv.png)
 
-  {% endnote %}
+    {% endcut %}
 
-  {% cut "Example" %}
+    {% cut "Example with a string array" %}
 
-  ![](../_images/location-job/pool_csv/controls_tsv.png)
+    ![](../_images/location-job/pool_csv/main_tsv2.png)
 
-  {% endcut %}
+    {% endcut %}
 
-- Training task
+  - Control task
 
-  To create a training task, add:
+    To create a control task, add:
 
-  - The task input data in the columns with the `INPUT` header.
+    - The task input data in the columns with the `INPUT` header.
 
-  - Correct responses in the columns with the `GOLDEN` header.
+    - Correct responses in the columns with the `GOLDEN` header.
 
-  - A hint in the `HINT:text` column.
+    {% note tip %}
 
-  For training tasks, it is convenient to create a [separate pool](train.md).
+    You can also add responses when creating a pool in [task markup mode](task_markup.md) (you need to use [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
-  {% note info %}
+    {% endnote %}
 
-  You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+    {% cut "Example" %}
 
-  {% endnote %}
+    ![](../_images/location-job/pool_csv/controls_tsv.png)
 
-  {% cut "Example" %}
+    {% endcut %}
 
-  ![](../_images/location-job/pool_csv/cats_tsv.png)
+  - Training task
 
-  {% endcut %}
+    To create a training task, add:
 
-- Field task
+    - The task input data in the columns with the `INPUT` header.
 
-  The task that the Toloker chooses on the map in the Toloka mobile app.
+    - Correct responses in the columns with the `GOLDEN` header.
 
-  To create a field task, add:
+    - A hint in the `HINT:text` column.
 
-  - The task input data in the columns with the `INPUT` header.
+    For training tasks, it is convenient to create a [separate pool](train.md).
 
-  - Coordinates in the `Al:latitude` and `Al:longitude` columns.
+    {% note info %}
 
-  {% cut "Example" %}
+    You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
-  ![](../_images/tutorials/walk/squirrel_tsv.png)
+    {% endnote %}
 
-  {% endcut %}
+    {% cut "Example" %}
+
+    ![](../_images/location-job/pool_csv/cats_tsv.png)
+
+    {% endcut %}
+
+  - Field task
+
+    The task that the Toloker chooses on the map in the Toloka mobile app.
+
+    To create a field task, add:
+
+    - The task input data in the columns with the `INPUT` header.
+
+    - Coordinates in the `Al:latitude` and `Al:longitude` columns.
+
+    {% cut "Example" %}
+
+    ![](../_images/tutorials/walk/squirrel_tsv.png)
+
+    {% endcut %}
+
+  {% endlist %}
+  
+  The columns with [required input data fields](incoming.md) must be filled. The other columns can be deleted if they are empty.
+
+- JSON
+
+  {% list tabs %}
+
+  - General task
+    ```
+    {
+        "input_values": {
+            "image_url": "https://www.example.com/image1.png"
+        }
+    }
+    ```
+  
+  - Training task
+    ```
+    {
+        "input_values": {
+            "image_url": "https://www.example.com/image1.png"
+        },
+        "known_solutions": [
+            {
+                "output_values": {
+                    "result": "OK",
+                    "like": false
+                }
+            }
+        ],
+        "message_on_unknown_solution": "The cat is in a good mood."
+    }
+    ```
+
+  - Exam task
+    ```
+    {
+        "input_values": {
+            "image_url": "https://www.example.com/image1.png"
+        },
+        "known_solutions": [
+            {
+                "output_values": {
+                    "result": "OK",
+                    "like": false
+                }
+            }
+        ]
+    }
+    ```
+  {% endlist %}
 
 {% endlist %}
-
-The columns with [required input data fields](incoming.md) must be filled. The other columns can be deleted if they are empty.
 
 ## Working with the file {#applications}
 
