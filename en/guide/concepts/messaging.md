@@ -1,7 +1,5 @@
 # Communication
 
-{% include [deprecate](../../_includes/deprecate.md) %}
-
 In Toloka, you can exchange information with Tolokers through messages and receive notifications about the progress of labeling and other events, as well as news and recommendations. To search, view, and send messages, go to the [Сообщения]({{ messages }}) page.
 
 ## Message types
