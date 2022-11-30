@@ -2,114 +2,101 @@
 
 ### A
 
-Action (Template Builder) {#action}
+Action components (Template Builder) {#action}
 
-: A category of components that perform actions, such as open a link, display a message, or play a video. Some components work with data. For example, they can change the value from `true` to `false`.
-
-  [List of actions](template-builder/reference/actions.md)
+: A category of [components](#component) that perform actions, such as open a link, display a message, or play a video. Some components work with data. For example, they can change the value from `true` to `false`. [List of actions](template-builder/reference/actions.md)
 
 Active Tolokers {#active-tolokers}
 
 : Tolokers with access to the [pool](#pool) who took tasks during the last hour.
 
-Archive pool {#archive-pool}
+Archived pool {#archive-pool}
 
-: A [pool](#pool) that was moved to the archive. Archive pools can't be started or edited and are not available for [assignment review](#assignment-review). The pool is automatically archived if there is no activity in it for a month.
+: A [pool](#pool) that was moved to the archive. Archived pools can't be started or edited and are not available for the [assignment review](#assignment-review). The pool is automatically archived if there is no activity in it for a month.
 
-Assignment review {#assignment-review}
+Assignment {#assignment}
 
-: A [pool](#pool) setting that allows you to check responses so you don't have to pay for poorly completed tasks.
+: A task suite that a [Toloker](#toloker) decides to complete.
 
 ### B
 
 Banning Tolokers {#banning-tolokers}
 
-: You can block a Toloker's access to one or more [projects](#project). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](#skill) value lower than N and block their access to tasks. You can also unblock access.
+: Blocking a Toloker's access to one or more [projects](#project). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](#skill) value lower than `N` and block their access to tasks. You can also unblock access.
+
+Batch {#batch}
+
+: Datasets that you send for labeling at a time. Batches are used in [bespoke solutions](https://toloka.ai/pricing/).
+
+Benchmark task {#benchmark-task}
+
+: See [Control task](#control-task).
 
 ### C
 
 Captcha {#captcha}
 
-: Restricts access to tasks for Tolokers who fail to enter captcha several times in a row. Protects your project against fake users (robots).
+: A type of challenge–response test to determine whether the user is human. Protects your project against fake users (robots). Restricts access to tasks for Tolokers who fail the test several times in a row.
 
 Certified partners {#certified-partners}
 
-: Companies that take on the launch and implementation of your project and help you process the results. These companies have already integrated crowdsourcing into their business processes and offer excellent solutions.
+: Companies that take on the launch and implementation of your project and help you process the results. These companies have already integrated [crowdsourcing](#crowdsourcing) into their business processes and offer excellent solutions.
 
-Checking completed tasks {#checking-completed-tasks}
+Component (Template Builder) {#component}
 
-: Manually checking the responses received by the requester. The requester accepts or rejects the responses. Rejected responses aren't paid for.
+: JSON objects with a specified structure which help you build a task interface. Components are categorized depending on their purpose, such as [data entry fields](#data-entry-field), [conditions](#condition), or [actions](#action). The name of the component is specified in the `type` property in the `<category>.<name>` format. [List of components](template-builder/reference/index.md)
 
-Completed tasks (quality control rule) {#completed-tasks}
+Condition components (Template Builder) {#condition}
 
-: Number of completed [task suites](#task-suite) (taking [overlap](#overlap) into account).
-
-Component {#component}
-
-: The task interface consists of ready-made components representing JSON objects with a specified structure. Components are categorized depending on their purpose, such as data entry fields, conditions, or actions. The name of the component is specified in the `type` property in the format `<category>.<name>`.
-
-  [List of components](template-builder/reference/index.md)
-
-Condition (Template Builder) {#condition}
-
-: Component category to check whether the expression matches the specified condition. You can use them to check that the text is entered in a field.
-
-  [List of conditions](template-builder/reference/conditions.md)
+: A category of [components](#component) that check whether the expression matches the specified condition. You can use them to check that the text is entered in a field. [List of conditions](template-builder/reference/conditions.md)
 
 Configuration {#configuration}
 
-: Description of your interface in the JSON format. This is also the name of the panel in the editor where you write this code.
+: A description of your interface in the JSON format. You write the code for it in the Template Builder editor panel called **Config**.
 
-Control task {#control-task}
+Control task (gold question, honeypot, benchmark task) {#control-task}
 
 : A task that contains the correct response. Control tasks are used to monitor the quality of the Toloker's responses.
 
-  For example, you can track the percentage of correct responses and block Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) rule.
-
-  {% note tip %}
-
-  - Add [at least 1% of control tasks](guide/troubleshooting/pool-setup.md#quality-control__how-many-control-tasks) to the pool.
-  - Design control tasks so that different versions of correct responses are used with the same frequency. [Learn more](guide/concepts/task-markup-by-yourself.md#task-markup-by-yourself__answer_distribution)
-
-  {% endnote %}
+  For example, you can track the percentage of correct responses and block Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
 
   In addition to control tasks, there are [general](#general-task) and [training](#training-task) tasks.
 
+Crowdsourcing {#crowdsourcing}
+
+: The practice of obtaining information or services from a large dispersed group of people. These people perform micro tasks, and their collective work provides valuable input. For example, they can classify images into categories, and the resulting data can be used later to improve search relevance or recommendation systems.
+
 Crowdsourcing experts {#crowdsourcing-experts}
 
-: Professionals who help create and configure [projects](#project), post tasks, and much more. They have passed a certification exam to prove their knowledge of crowdsourcing and earned a registered e-certificate. To learn about the terms of partnership, contact these experts directly.
+: Professionals who help create and configure [projects](#project), post tasks, and much more. They have passed a [certification exam](https://toloka.ai/csa-certification/) to prove their knowledge of crowdsourcing and earned a registered e-certificate.
 
 ### D
 
-Data entry field (Template Builder) {#data-entry-field}
+Data entry field components (Template Builder) {#data-entry-field}
 
-: Category of components that create data entry fields, such as text fields or drop-down lists.
-
-  [List of data entry fields](template-builder/reference/fields.md)
+: A category of [components](#component) that create data entry fields, such as text fields or drop-down lists. [List of data entry fields](template-builder/reference/fields.md)
 
 Decomposition {#decomposition}
 
-: Breaking down a large project into several small ones. After you decompose your project, tasks become easier and faster to perform, while the quality of responses increases.
+: A process of dividing a large project into several small ones. Decomposition results in shorter tasks that are easier to do, which helps improve quality.
 
 Dynamic overlap (incremental relabeling, IRL) {#dynamic-overlap}
 
-: A type of overlap that changes the number of Tolokers to complete each task in the [pool](#pool). This number depends on how well the Tolokers cope with the task or how consistent their responses are.
+: A type of overlap that changes the number of Tolokers to complete each task in the [pool](#pool). This number depends on confidence in the results: how well the Tolokers cope with the task or how consistent their responses are.
 
 Dynamic pricing {#dynamic-pricing}
 
-: Allows you to additionally set other prices that depend on the Toloker's [skill](#skill). For example, to pay more to those who have a higher skill. [Learn more](guide/concepts/dynamic-pricing.md)
+: An option to set prices that depend on the Toloker's [skill](#skill). This allows you, for example, to pay more to those who have a higher skill. [Learn more](guide/concepts/dynamic-pricing.md)
 
 ### E
 
 Earnings (quality control rule) {#earnings}
 
-: Restricts the Toloker's earnings in the [pool](#pool) for a day to get responses from as many Tolokers as possible and provide protection against robots.
+: A [quality control](#quality-control) rule that restricts the Toloker's earnings in the [pool](#pool) for a day. This allows you to get responses from as many Tolokers as possible and provide extra protection against robots.
 
-Element layout (Template Builder) {#element-layout}
+Element layout components (Template Builder) {#element-layout}
 
-: Category of components used to arrange the interface elements, such as in columns or side-by-side.
-
-  [List of layout options](template-builder/reference/layouts.md)
+: A category of [components](#component) that arrange the interface elements, such as in columns or side-by-side. [List of layout options](template-builder/reference/layouts.md)
 
 Exam {#exam}
 
@@ -117,114 +104,119 @@ Exam {#exam}
 
 ### F
 
-Fast responses {#fast-responses}
+Fast responses (quality control rule) {#fast-responses}
 
-: Restricts access to tasks for Tolokers who respond too quickly. You can use it to:
+: A [quality control](#quality-control) rule that restricts access to tasks for Tolokers who respond too quickly. You can use it to:
 
   - Suspend access for Tolokers who cheat in their responses (in this case, set the time required to complete a [task suite](#task-suite) when giving random responses).
   - Provide protection from robots (in this case, the time for completing the task suite should be 2 times less).
 
 Fee {#fee}
 
-: The requester is charged a fee for using Toloka — a percentage of the cost of tasks.
+: A percentage of the cost of tasks for which the requester is charged when using Toloka.
 
 Field task {#field-task}
 
-: A task to be performed in the mobile app. It usually contains a point on the map that the Toloker needs to go to, check something, and take photos.
+: A task that is performed at a physical location using the mobile app. It usually contains a point on the map that the Toloker needs to go to, check something, and take photos.
 
 File with tasks {#tsv}
 
-: To upload tasks, use TSV, XLSX or JSON files:
-
-  - TSV (tab-separated values) is a text file format in which data is separated by a tab, and lines are separated by a newline symbol.
-
-  - XLSX is a spreadsheet file format developed by Microsoft to replace the outdated XLS file type.
-
-  - JSON (JavaScript Object Notation) is a text file format used to store and transfer structured data.
+: A file that contains the data you need to label. Requesters use such files to upload tasks. Toloka allows using [TSV](#tsv-format), [XLSX](#xlsx-format), or [JSON](#json-format) files.
 
 Filters {#filters}
 
 : Criteria for choosing Tolokers. For example, you can select only Tolokers who speak English or have a certain skill.
 
-  Filters are used in the [pool](#pool) settings on the [Users](https://platform.toloka.ai/requester/workers) page and for [sending messages](guide/concepts/messaging.md) to a group of users. [Learn more](guide/concepts/filters.md)
+  You can use filters to choose Tolokers when setting up [pools](#pool) (in the **Audience** section), on the [Users](https://platform.toloka.ai/requester/workers) page, and for [sending messages](guide/concepts/messaging.md) to a group of users. [Learn more](guide/concepts/filters.md)
 
 ### G
 
 General task {#general-task}
 
-: A task that doesn't provide hints or the correct response. The responses are provided by the Tolokers. These are the general tasks you upload to the [pool](#pool) to give to the Tolokers.
+: A task without hints or the correct response. These are the general tasks you upload to the [pool](#pool) for which the Tolokers provide their responses.
 
-  In addition, there are [control](#control-task) and [training](#training-task) tasks.
+  In addition, there are [control](#control-task) tasks (which contain the correct responses) and [training](#training-task) tasks (which contain the correct responses and hints).
+
+Gold question {#gold-question}
+
+: See [Control task](#control-task).
 
 ### H
 
-Helper (Template Builder) {#helper}
+Helper components (Template Builder) {#helper}
 
-: Category of components for auxiliary operations, such as working with arrays.
+: A category of [components](#component) for auxiliary operations, such as working with arrays. [List of helpers](template-builder/reference/helpers.md)
 
-  [List of helpers](template-builder/reference/helpers.md)
+Honeypot {#honeypot}
+
+: See [Control task](#control-task).
 
 ### I
 
 Incomplete task suite {#incomplete-task-suite}
 
-: The last suite with an insufficient number of [general](#general-task) tasks. This is generated if less than the minimum remaining number of general tasks are not completed. In this case, the number of control and training tasks must be complete.
+: The last task suite which contains a number of [general](#general-task) tasks which is insufficient to form a complete suite. In this case, Tolokers will see a page with fewer general tasks and the full number of control and training tasks. Incomplete task suites can be enabled for tasks uploaded using [smart mixing](#smart-mixing).
+
+Incremental relabeling {#incremental-relabeling}
+
+: See [Dynamic overlap](#dynamic-overlap).
 
 Input and output data {#input-output-data}
 
-: The format of input and output data is set in the **Specifications** field.
+: The format of input and output data that you set in the **Data specification** field of the **Task interface** section when setting up a project.
 
-  _Input data_ is the source data you want to display or use. For example, links to images that will be shown to Tolokers. Use the `data.input` component of [Template Builder](template-builder/index.md) to access the input data.
-
-  _Output_ is the data you receive after the task is completed, like the Tolokers' responses to your questions. Use the `data.output` component of Template Builder to access the output data.
+  - _Input data_ is the source data you want to display or use. For example, links to images that will be shown to Tolokers. Use the `data.input` component of [Template Builder](template-builder/index.md) to access the input data.
+  - _Output data_ is the data you receive after the task is completed, like the Tolokers' responses to your questions. Use the `data.output` component of Template Builder to access the output data.
 
   See the Template Builder [Read and write](template-builder/operations/input-output-data.md) instructions to learn about working with data.
 
 Internal data {#internal-data}
 
-: The data available only from within the task. This data is not saved to the results. Use this data to calculate or store intermediate values. To access the internal data, use the `data.internal` component of [Template Builder](template-builder/index.md).
-
-  See the Template Builder [Read and write](template-builder/operations/input-output-data.md) instructions to learn about working with data.
+: The data available only from within the task. This data is not saved to the results. Use it to calculate or store intermediate values. To access the internal data, use the `data.internal` component of [Template Builder](template-builder/operations/input-output-data.md).
 
 Instructions {#instructions}
 
-: Task instructions that the Toloker sees when choosing and completing the task. The clarity and completeness of the instructions affect response quality and the [project](#project) rating. Good instructions help the Toloker complete the task correctly.
+: Task instructions that Tolokers see when choosing and completing the task. The clarity and completeness of the instructions affect response quality and the [project](#project) rating. Good instructions help Tolokers complete the task correctly.
 
-Interested users {#interested-users}
+Interested Tolokers {#interested-users}
 
 : The number of Tolokers who started at least one [task suite](#task-suite).
+
+IRL (incremental labeling) {#irl}
+
+: See [Dynamic overlap](#dynamic-overlap).
+
+Item {#item}
+
+: Corresponds to the final labeled data unit. It is calculated as the aggregated result of all responses received for a task.
+
+### J
+
+JSON {#json-format}
+
+: JavaScript Object Notation. A text file format used to store and transfer structured data.
 
 ### K
 
 Keeping the task order {#keep-task-order}
 
-: Task suites in the [pool](#pool) are distributed in the same order as they are in the uploaded [file](#tsv). The tasks within each suite are shuffled.
+: Distributing the task suites in the [pool](#pool) in the same order as they are in the uploaded [file](#tsv). The tasks within each suite are shuffled.
 
 ### L
 
+Labeling {#labeling}
+
+: Adding informative tags to the data. For example, indicate if there are certain objects in a photo (streetlights, cars, pedestrians), transcribe an audio file, categorize a text or a video file, and add other similar information.
+
 List of target languages {#target-languages}
 
-: Used in the [Translations](guide/concepts/project-languages.md#project-languages__how-it-works) section if there is no source language.
-
-  Display order:
-
-  - English
-  - Russian
-  - Turkish
-  - French
-  - Indonesian
-  - Vietnamese
-  - Uzbek
-  - Spanish
-  - German
-  - Italian
-  - Polish
+: A set of languages in the [Translations](guide/concepts/project-languages.md#how-it-works) section into which the project interface can be translated.
 
 ### M
 
 Majority vote (quality control rule) {#majority-vote}
 
-: A [quality control](#quality-control) method that considers a response correct if it is chosen by the majority of Tolokers (also known as consensus). Other responses are considered incorrect.
+: A [quality control](#quality-control) rule that considers a response correct if it is chosen by the majority of Tolokers (also known as consensus). Other responses are considered incorrect.
 
 ### O
 
@@ -236,130 +228,134 @@ Overlap {#overlap}
 
 Personalized quality forecast {#personilized-quality-forecast}
 
-: A personalized quality forecast is based on a large amount of data about user behavior in the system, how other users completed your task, and the task itself.
+: A real-time quality prediction of how well each particular Toloker will handle your task. The forecast is based on a large amount of data about user behavior in the system, how other Tolokers completed your task, and the task itself.
 
-Plugin (Template Builder) {#plugin}
+Plugin components (Template Builder) {#plugin}
 
-: Category of components to enable advanced features. For example, `plugin.hotkeys` lets you set up shortcuts.
-
-  [List of plugins](template-builder/reference/plugins.md)
+: A category of [components](#component) that enable advanced features. For example, `plugin.hotkeys` lets you set up shortcuts. [List of plugins](template-builder/reference/plugins.md)
 
 Pool {#pool}
 
-: A set of paid tasks that share the same properties (such as Toloker selection settings and payment per [task suite](#task-suite)) and are sent out for completion at the same time.
+: A set of data to label in a project. You can use the pool settings to select Tolokers, set the price for tasks, and add various quality control rules. Tasks in a pool share the same properties (such as Toloker selection settings and payment per [task suite](#task-suite)) and are sent out for completion at the same time.
 
 Project {#project}
 
-: A project consists of [pools](#pool) with tasks. Project settings define the [task interface](#task-interface) and the [input and output data](#input-output-data).
-
-  Settings for creating tasks:
-
-  - Parameters for objects that are shown in the [task suite](#task-suite) (images, text, and so on).
-  - Parameters for input fields.
-  - The visual appearance of tasks.
+: A specific data labeling goal. This could be to moderate comments, to classify images, to transcribe audio recordings, or something else. A project consists of [pools](#pool) with [tasks](#task). Project settings define the [task interface](#task-interface) and the [input and output data](#input-output-data).
 
 Project preset {#project-template}
 
-: The preset contains description, instruction, pre-configured [input and output data](#input-output-data) fields and the [task interface](#task-interface), which you can edit.
+: A pre-configured project that contains description, instruction, predefined [input and output data](#input-output-data) fields, and the [task interface](#task-interface) which you can edit.
 
 ### Q
 
 Quality control {#quality-control}
 
-: Quality control lets you get more accurate responses and restrict access to tasks for cheating Tolokers. Quality control consists of rules that are independent from each other. The quality control block allows you to set rules and configure them. [Learn more](guide/concepts/control.md)
+: A monitoring and control system that lets you get more accurate responses and restrict access to tasks for bad actors. Quality control consists of rules that are independent from each other. [Learn more](guide/concepts/control.md)
+
+Quality control presets {#ready-protection-sets}
+
+: Predefined [quality control rule](#quality-control-rule) combinations available in the **Quality control** section of the pool settings. Three main quality control presets are available: elementary, basic, and advanced.
 
 Quality control rule {#quality-control-rule}
 
-: Independent rules that make up quality control. The quality control block allows you to set rules and configure them.
+: Independent rules that make up [quality control](#quality-control). In the pool settings, the **Quality control** section allows you to set rules and configure them.
 
 ### R
 
-Ready protection sets {#ready-protection-sets}
-
-: Several [quality control rules](#quality-control-rule) with default settings.
-
 Recompletion of assignments from banned users (quality control rule) {#recompletion}
 
-: A rule that can be configured to resend tasks for recompletion to other Tolokers if:
+: A [quality control](#quality-control) rule that can be configured to resend tasks for recompletion to other Tolokers if:
 
   - [The Toloker is banned](#banning-tolokers) by a [quality control rule](#quality-control-rule) (for example, [control tasks](#control-task) or [majority vote](#majority-vote)).
   - The Toloker's [skill](#skill) value changed (for example, the Toloker's skill value dropped and they no longer match the skill [filter](#filter)).
 
   All [pool](#pool) tasks completed by this Toloker will be resent to other Tolokers. Tasks completed by banned Tolokers are reassigned, but those completed by paused Tolokers are not.
 
+Response {#response}
+
+: The result of completing an assignment by a Toloker. The responses can be either correct or incorrect. You can decline incorrect responses using the [assignment review](#assignment-review) and even [block Tolokers](#banning-tolokers) who give too many incorrect responses.
+
 Retry pool {#retry-pool}
 
-: The retry pool helps Tolokers who make mistakes improve their [skills](#skill) and get a second chance to complete tasks.
+: A pool that helps Tolokers who make mistakes improve their [skills](#skill) and get a second chance to complete tasks.
 
 Review period {#review-period}
 
-: Number of days for checking the task.
+: Number of days for checking Toloker responses [manually](#assignment-review).
+
+Review task responses manually {#assignment-review}
+
+: A [pool](#pool) setting that allows you to manually check [responses](#response) from Tolokers. You can either accept correct responses or reject poorly completed tasks and not pay for them.
 
 Reward {#reward}
 
-: You can give rewards to Tolokers for completing tasks well. This improves motivation and encourages Tolokers to approach your tasks with care. You can give rewards to one or more Tolokers (in addition to payment for [completed tasks](#completed-tasks)). The reward amount can be from $0.01 to $100 per Toloker per time.
+: Extra payment that you can give to Tolokers for completing tasks well. It improves motivation and encourages Tolokers to approach your tasks with care. You can give rewards to one or more Tolokers (in addition to payment for [completed tasks](#completed-tasks)). The reward amount can be from \$0.01 to \$100 per Toloker per time.
 
 ### S
 
 Sandbox {#sandbox}
 
-: Toloka testing environment. This is where you can test your [project](#project) settings as a Toloker before moving them to the Toloka production version and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
+: The Toloka testing environment. This is where you can test your [project](#project) settings as a Toloker before moving them to the Toloka production version and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
 
 Selective majority vote check {#selective-majority-vote-check}
 
-: Majority vote checks only some tasks. This helps you save money and speed up [pool](#pool) completion.
+: An option that allows you to selectively increase overlap for some tasks. This helps you save money and speed up [pool](#pool) completion. [Learn more](guide/concepts/selective-mvote.md)
 
 Skill {#skill}
 
-: An assessment of the Toloker's quality of task completion on a scale of 0 to 100. The skill can be calculated automatically (for example, based on correct responses to [control tasks](#control-task)), or assigned manually. Skills are used for Toloker selection in a [pool](#pool). [Learn more](guide/concepts/nav.md)
+: An assessment of the Toloker's quality of task completion on a scale of 0 to 100. The skill can be calculated automatically (for example, based on correct responses to [control tasks](#control-task)), or assigned manually. Skills are used to select Tolokers in a [pool](#pool). [Learn more](guide/concepts/nav.md)
 
-Skipping tasks (quality control rule) {#skipping-tasks}
+Skipped assignments (quality control rule) {#skipping-tasks}
 
-: Restricts access to the [pool](#pool) tasks for Tolokers who skip several [task suites](#task-suite) in a row.
+: A [quality control](#quality-control) rule that restricts access to the [pool](#pool) tasks for Tolokers who skip several [task suites](#task-suite) in a row.
 
 Smart mixing {#smart-mixing}
 
-: Smart mixing randomly generates task suites so that tasks aren't repeated for each Toloker.
+: A way to randomly combine tasks and generate task suites so that tasks aren't repeated and look different for each new Toloker.
 
 Submitted in pool {#submitted-in-pool}
 
-: The number of Tolokers who completed at least one task suite.
+: A pool statistics parameters which shows the number of Tolokers who completed at least one task in the pool.
+
+Submitted responses (quality control rule) {#completed-tasks}
+
+: A [quality control](#quality-control) rule that limits the number of [task suites](#task-suite) a Toloker can complete per day (taking [overlap](#overlap) into account). This allows getting a broader selection of users.
 
 ### T
 
 Task {#task}
 
-: A special assignment which annotators complete in [Toloka](https://toloka.ai/). It is a part of a web page that can contain various objects: images, text, input fields, and others. The Toloker reads the instructions for the task, completes it and enters responses. In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
+: A request or question that elicits a response from an annotator in [Toloka]({{ toloka }}). A task is created for a single data item that requires labeling, like a photo to classify, or a comment to review. It is a part of a web page that can contain various objects: images, text, input fields, and others. Tolokers read the instructions for the task, complete it and enter [responses](#response). In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
 
 Task interface {#task-interface}
 
-: The task interface defines the task appearance for the Toloker and the logic for processing responses.
+: The appearance of a task for Tolokers and the logic for processing responses.
 
 Task markup {#task-markup}
 
-: Task markup lets you add correct responses and hints to the tasks, as well as change task types. You can transform a [general task](#general-task) into a [control task](#control-task) by adding the correct response, or into a [training task](#training-task) by adding the correct response and a hint. Task markup is available only for training pools and pools uploaded with “[smart mixing](#smart-mixing)”.
-
-  [Learn more about task markup](guide/concepts/task_markup.md)
+: Adding correct responses and hints to the tasks and changing task types. You can transform a [general task](#general-task) into a [control task](#control-task) by adding the correct response, or into a [training task](#training-task) by adding the correct response and a hint. Task markup is available only for training pools and pools uploaded with “[smart mixing](#smart-mixing)”. [Learn more](guide/concepts/task_markup.md)
 
 Task suite {#task-suite}
 
-: A task suite contains one or several tasks that are shown on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers. A task suite may consist of a single task.
+: A group of several tasks given to a Toloker to submit all at once. For example, you can show four images on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers. A task suite may consist of a single task.
 
 Toloka API {#toloka-api}
 
-: The [Toloka API](api/index.md) (Toloka application programming interface) describes methods (a set of classes, procedures, functions, structures, or constants) used by Toloka to interact with other computer programs, and allows you to create tasks and receive user responses (see the [documentation](api/index.md)).
+: The application programming interface which describes methods (a set of classes, procedures, functions, structures, or constants) used by Toloka to interact with other computer programs, and allows you to create tasks and receive user responses. [Learn more](api/index.md)
 
   The requests to the Toloka API are made using the [HTTPS protocol](https://en.wikipedia.org/wiki/HTTPS). The service returns data in the [JSON](https://www.json.org/json-en.html) format.
 
+Toloker {#toloker}
+
+: Any person from around the world who completes tasks in Toloka and gets paid for that. Collectively, they are usually referred to as "the crowd".
+
 Toloker rating {#toloker-rating}
 
-: The Toloker's rating reflects the quality of the Toloker's responses to tasks. It takes into account responses to [control tasks](#control-task), bans, and periods without work. The rating is calculated as the weighted average value for the last few weeks. So the rating can “suddenly” decrease or increase.
+: An assessment which reflects the quality of the Toloker's [responses](#response). It takes into account responses to [control tasks](#control-task), bans, and periods without work. The rating is calculated as the weighted average value for the last few weeks. This is why the rating can have sharp drops or spikes.
 
 Training {#training}
 
-: A main [pool](#pool) that consists only of [training tasks](#training-task) and can have zero cost.
-
-  Use it to train Tolokers before performing real tasks if you can't use a [training pool](#training-pool) for your project.
+: A main [pool](#pool) that consists only of [training tasks](#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if you can't use a [training pool](#training-pool) for your project.
 
 Training pool {#training-pool}
 
@@ -369,12 +365,9 @@ Training pool {#training-pool}
 
 Training skill {#training-skill}
 
-: A skill that is automatically created when the first training pool is added to the project. The skill name is `<project name> - training`. The value is the percentage of correct responses in the training pool. The skill is assigned to the Toloker after they complete the training pool.
+: A [skill](#skill) that is automatically created when the first training pool is added to the project. The skill name is `<project name> - training`. The value is the percentage of correct responses in the training pool. The skill is assigned to the Toloker after they complete the training pool.
 
-: There is only one training skill for the entire project. If you create new training pools, they will use the same skill.
-
-  - [Learn more about skills](guide/concepts/nav.md)
-  - [Learn more about training pools](guide/concepts/train.md)
+  There is only one training skill for the entire project. If you create new training pools, they will use the same skill. [Learn more](guide/concepts/nav.md)
 
 Training task {#training-task}
 
@@ -382,12 +375,20 @@ Training task {#training-task}
 
   Training tasks can be used in zero-price [training pools](#training-pool) to choose Tolokers who pass training.
 
-  They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and ban Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) rule.
+  They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and [ban Tolokers](#banning-tolokers) who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
+
+TSV {#tsv-format}
+
+: Tab-separated values. A text file format in which data is separated by a tab, and lines are separated by a newline symbol.
 
 ### V
 
-View (Template Builder) {#view}
+View components (Template Builder) {#view}
 
-: Category of components for creating visual interface elements. Examples include text, list, audio player, or image.
+: A category of [components](#component) that create visual interface elements. Examples include text, list, audio player, or image. [List of views](template-builder/reference/views.md)
 
-  [List of views](template-builder/reference/views.md)
+### X
+
+XLSX {#xlsx-format}
+
+: A spreadsheet file format developed by Microsoft to replace the outdated XLS file type.
