@@ -58,7 +58,21 @@ To improve quality of answers, you must [select the audience](filters.md) you ne
 
 {% cut "Examples of the quality control rules" %}
 
-![](../_images/other/quality-control-3.png)
+{% cut "Fast responses" %}
+
+![](../_images/control-rules/quick-answers/qcr-quick_answers_example1.png)
+
+A Toloker who completes a task suite in less than 10 seconds will be banned and won't be able to access your tasks.
+
+{% endcut %}
+
+{% cut "Skipped assignments" %}
+
+![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example1.png)
+
+A Toloker who skips 2 task suites in a row is restricted from accessing the pool and can't complete your tasks for 5 days.
+
+{% endcut %}
 
 {% endcut %}
 
@@ -167,24 +181,6 @@ Autolabeling and pretrained models with quality control built in.
 - Automated prelabeling. Results are verified by human Tolokers for high accuracy.
 
 - Human in the loop workflows.
-
-## Examples {#quality-control-examples}
-
-{% cut "Blocking for fast responces" %}
-
-![](../_images/control-rules/quick-answers/qcr-quick_answers_example1.png)
-
-A Toloker who completes a task suite in less than 10 seconds will be banned and won't be able to access your tasks.
-
-{% endcut %}
-
-{% cut "Blocking for skipped assignments" %}
-
-![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example1.png)
-
-A Toloker who skips 2 task suites in a row is restricted from accessing the pool and can't complete your tasks for 5 days.
-
-{% endcut %}
 
 ## What's next {#what_next}
 
