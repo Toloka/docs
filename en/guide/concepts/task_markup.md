@@ -42,7 +42,7 @@ You can set up automatic markup if the following conditions are met:
     - **Sentiment analysis & Content moderation**
     - **Product search relevance**
 
-- For other types of projects, you can request this feature by contacting [support](#toloka-support).
+- For other types of projects, you can request this feature by contacting [support]({{ toloka-support }}).
 
 - The pool must contain more than 100 tasks.
 
