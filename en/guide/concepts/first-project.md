@@ -78,7 +78,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 1. Configure the pool parameters:
 
-    - Set a price per task page and overlap. The minimum price is $0.005.
+    - Set a price per task page and overlap. The minimum price is $0.001.
 
     - Use filters to select Tolokers who will have access to your tasks.
 

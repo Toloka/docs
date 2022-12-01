@@ -28,7 +28,7 @@
 ||{% if locale == "ru-ru" %}**Приблизительное время завершения**{% endif %}{% if locale == "en-com" %}**Approximate finish time**{% endif %} | {% include [pool_statistic-pool-expected_execution_time](../_includes/concepts/pool_statistic-pool/id-pool_statistic-pool/expected_execution_time.md) %}||
 ||{% if locale == "ru-ru" %}**Израсходованные средства (+ комиссия)**{% endif %}{% if locale == "en-com" %}**Budget spent (+ fee)**{% endif %} | Сумма потраченных средств в пуле. В скобках указана сумма [комиссии](budget.md).
 
-Обратите внимание, что минимальная комиссия составляет 0,005 $.||
+Обратите внимание, что минимальная комиссия составляет 0,001 $.||
 ||{% if locale == "ru-ru" %}**Приблизительный бюджет (+ комиссия)**{% endif %}{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | Сумма израсходованных средств и ожидаемых затрат (если все задания будут выполнены и все ответы будут приняты). В скобках указана сумма [комиссии](../../glossary.md#fee).||
 ||{% if locale == "ru-ru" %}**Активные исполнители, которым доступны задания**{% endif %}{% if locale == "en-com" %}**Active Tolokers with access to pool**{% endif %} | Число исполнителей, отобранных для пула с помощью [фильтров](filters.md). Учитываются только исполнители, которые просматривали и выполняли задания в Толоке в течение последнего часа.||
 ||{% if locale == "ru-ru" %}**Заинтересованные исполнители**{% endif %}{% if locale == "en-com" %}**Interested in pool**{% endif %} | Число исполнителей, которые начали выполнять или выполнили хотя бы одну страницу заданий.
