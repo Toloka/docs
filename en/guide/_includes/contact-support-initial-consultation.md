@@ -1,1 +1,1 @@
-[![Contact support](../../_images/contact-support.svg)](../troubleshooting/support.md#initial-consultation)
+[![Contact support](../../_images/contact-support.svg)](../troubleshooting/support.md)

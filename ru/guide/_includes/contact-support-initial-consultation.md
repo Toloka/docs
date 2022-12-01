@@ -1,1 +1,1 @@
-[![Написать в службу поддержки](../../_images/contact-support.svg)](../troubleshooting/support.md#initial-consultation)
+[![Написать в службу поддержки](../../_images/contact-support.svg)](../troubleshooting/support.md)
