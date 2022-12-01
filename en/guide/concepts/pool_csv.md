@@ -25,7 +25,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 {% list tabs %}
 
-- TSV\/XLSX 
+- TSV/XLSX 
 
   The first line of the file contains the column headers:
 
@@ -41,11 +41,9 @@ If you need to add different task types to the pool, upload multiple files, one 
 
       - `Al:longitude` — Longitude.
 
-  Task type depends on which fields are filled in:
+  Task type depends on which fields are filled in.
 
-  {% list tabs %}
-
-  - General task
+  {% cut "General task" %}
 
     To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
 
@@ -60,8 +58,10 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/location-job/pool_csv/main_tsv2.png)
 
     {% endcut %}
+    
+  {% endcut %}
 
-  - Control task
+  {% cut "Control task" %}
 
     To create a control task, add:
 
@@ -80,8 +80,10 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/location-job/pool_csv/controls_tsv.png)
 
     {% endcut %}
+    
+  {% endcut %}
 
-  - Training task
+  {% cut "Training task" %}
 
     To create a training task, add:
 
@@ -104,8 +106,10 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/location-job/pool_csv/cats_tsv.png)
 
     {% endcut %}
+  
+  {% endcut %}
 
-  - Field task
+  {% cut "Field task" %}
 
     The task that the Toloker chooses on the map in the Toloka mobile app.
 
@@ -120,9 +124,9 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/tutorials/walk/squirrel_tsv.png)
 
     {% endcut %}
-
-  {% endlist %}
   
+  {% endcut %}
+
   The columns with [required input data fields](incoming.md) must be filled. The other columns can be deleted if they are empty.
 
 - JSON
@@ -135,18 +139,19 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "General task" %}
 
-  ```
+  ```json
   {
        "input_values": {
           "image_url": "https://www.example.com/image1.png"
        }
   }
   ```
+  
   {% endcut %}
-
+  
   {% cut "Training task" %}
 
-  ```
+  ```json
   {
       "input_values": {
            "image_url": "https://www.example.com/image1.png"
@@ -162,12 +167,12 @@ If you need to add different task types to the pool, upload multiple files, one 
       "message_on_unknown_solution": "The cat is in a good mood."
   }
   ```
-
+  
   {% endcut %}
-
+  
   {% cut "Exam task" %}
 
-  ```
+  ```json
   {
       "input_values": {
          "image_url": "https://www.example.com/image1.png"
@@ -182,6 +187,25 @@ If you need to add different task types to the pool, upload multiple files, one 
       ]
   }
   ```
+  
+  {% endcut %}
+  
+  {% cut "Old format" %}
+  
+  ```json
+  [
+      {
+          "INPUT:query": "Текст из поля \"query\""
+      },
+      {
+          "INPUT:query": "Текст из поля \"query\""
+      },
+      {
+          "INPUT:query": "Текст из поля \"query\""
+      }
+  ]
+  ```
+  
   {% endcut %}
 
 {% endlist %}
