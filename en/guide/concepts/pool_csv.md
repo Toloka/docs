@@ -25,7 +25,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 {% list tabs %}
 
-- TSV 
+- TSV\/XLSX 
 
   The first line of the file contains the column headers:
 
@@ -127,52 +127,62 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 - JSON
 
-  {% list tabs %}
+  {% note alert %}
 
-  - General task
-    ```
-    {
-        "input_values": {
-            "image_url": "https://www.example.com/image1.png"
-        }
-    }
-    ```
-  
-  - Training task
-    ```
-    {
-        "input_values": {
-            "image_url": "https://www.example.com/image1.png"
-        },
-        "known_solutions": [
-            {
-                "output_values": {
-                    "result": "OK",
-                    "like": false
-                }
-            }
-        ],
-        "message_on_unknown_solution": "The cat is in a good mood."
-    }
-    ```
+  Check the format of the file with tasks. If the format of your file is old, download the template on the pool page and replace the sample data in it with your own data.
 
-  - Exam task
-    ```
-    {
-        "input_values": {
-            "image_url": "https://www.example.com/image1.png"
-        },
-        "known_solutions": [
-            {
-                "output_values": {
-                    "result": "OK",
-                    "like": false
-                }
-            }
-        ]
-    }
-    ```
-  {% endlist %}
+  {% endnote %}
+
+  {% cut "General task" %}
+
+  ```
+  {
+       "input_values": {
+          "image_url": "https://www.example.com/image1.png"
+       }
+  }
+  ```
+  {% endcut %}
+
+  {% cut "Training task" %}
+
+  ```
+  {
+      "input_values": {
+           "image_url": "https://www.example.com/image1.png"
+      },
+      "known_solutions": [
+           {
+               "output_values": {
+                  "result": "OK",
+                  "like": false
+               }
+           }
+      ],
+      "message_on_unknown_solution": "The cat is in a good mood."
+  }
+  ```
+
+  {% endcut %}
+
+  {% cut "Exam task" %}
+
+  ```
+  {
+      "input_values": {
+         "image_url": "https://www.example.com/image1.png"
+      },
+      "known_solutions": [
+           {
+              "output_values": {
+                  "result": "OK",
+                  "like": false
+              }
+           }
+      ]
+  }
+  ```
+  {% endcut %}
 
 {% endlist %}
 
