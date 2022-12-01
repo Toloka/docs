@@ -1,6 +1,6 @@
 # Communication
 
-In Toloka, you can exchange information with Tolokers through messages and receive notifications about the progress of labeling and other events, as well as news and recommendations. To search, view, and send messages, go to the [Сообщения]({{ messages }}) page.
+In Toloka, you can exchange information with Tolokers through messages and receive notifications about the progress of labeling and other events, as well as news and recommendations. To search, view, and send messages, go to the [Messages]({{ messages }}) page.
 
 ## Message types
 
@@ -12,34 +12,34 @@ There are several types of messages. To switch between them, select one of the f
 
     - Any Toloker who started at least two of your tasks.
 
-    - A group of Tolokers that you can select using [filters](filters.md). To do this, click {% if locale == "ru-ru" %}**+ Add filter**{% elsif locale == "en-com" %}**Add filter**{% endif %}.
+    - A group of Tolokers that you can select using [filters](filters.md). To do this, click {% if locale == "ru-ru" %}**+ Add filter**{% elsif locale == "en-com" %}**+ Add filter**{% endif %}.
 
     - Individual Tolokers. In the {% if locale == "ru-ru" %}**To**{% elsif locale == "en-com" %}**To**{% endif %} field, specify the Toloker ID or several comma-separated IDs.
 
-- {% if locale == "ru-ru" %}**Tolokers**{% elsif locale == "en-com" %}**Tolokers**{% endif %}: Messages from Tolokers.
+- {% if locale == "ru-ru" %}**Users**{% elsif locale == "en-com" %}**Users**{% endif %}: Messages from Tolokers.
 
 - {% if locale == "ru-ru" %}**Administrator**{% elsif locale == "en-com" %}**Administrator**{% endif %}: Messages from the platform.
 
 - {% if locale == "ru-ru" %}**Notifications**{% elsif locale == "en-com" %}**Notifications**{% endif %}: System notifications about pool or aggregation completion and other events, as well as messages from the Toloka team, news, and recommendations.
 
-- {% if locale == "ru-ru" %}**Important**{% elsif locale == "en-com" %}**Important**{% endif %}: Messages that you marked as important (using the label ![](../_images/other/important.svg)).
+- {% if locale == "ru-ru" %}**Important**{% elsif locale == "en-com" %}**Important**{% endif %}: Messages that you marked as important (using the ![](../_images/other/important.svg) label).
 
 {% note info %}
 
-You can specify which messages you consider important. To do this, click (../_images/other/important-inactive.svg) under the message date.
+You can specify which messages you consider important. To do this, click ![](../_images/other/important-inactive.svg) under the message date.
 
 {% endnote %}
 
 ## Searching for messages
 
-To find all the messages received from a certain Toloker, enter their ID in the search box in the top right corner and click {% if locale == "ru-ru" %}**Search**{% elsif locale == "en-com" %}**Search**{% endif %}.
+To find all the messages received from a certain Toloker, enter their ID in the search box in the upper-right corner and click {% if locale == "ru-ru" %}**Search**{% elsif locale == "en-com" %}**Search**{% endif %}.
 To find messages by keyword, enter a keyword or phrase in the search box.
 
-## When to write Tolokers
+## When to write to Tolokers
 
 Send a message to Tolokers who performed your tasks if:
 
-- Changes have been made to the tasks. For example, you edited the [instructions](../../glossary.md#instructions), changed the rule for calculating the [skill](../../glossary.md#skill), or need the Tolokers to do the training again.
+- You've made some changes to the tasks. For example, you edited the [instructions](../../glossary.md#instructions), changed the rule for calculating the [skill](../../glossary.md#skill), or need the Tolokers to do the training again.
 
 - The Tolokers have questions about the task or instructions. Make sure to answer their questions because the labeling quality depends on how well the Tolokers understand the task. If some questions are repeated, add your answers to the instructions or add illustrative examples to the training pool.
 
@@ -51,7 +51,7 @@ Send a message to Tolokers who performed your tasks if:
 
 {% note info %}
 
-If the issue is related to how the platform works in general (such as money withdrawals), refer the Toloker to the [службу поддержки Толоки]({{ toloka-support }}).
+If the issue is related to how the platform works in general (such as money withdrawals), refer the Toloker to the [Toloka support]({{ toloka-support }}).
 
 {% endnote %}
 
@@ -59,7 +59,7 @@ If the issue is related to how the platform works in general (such as money with
 
 1. [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
 
-1. Go to the [Сообщения]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click {% if locale == "ru-ru" %}**Contact** → **Group of Tolokers** → **+ Add filter**{% elsif locale == "en-com" %}**Contact** → **Group of Tolokers** → **Add filter**{% endif %}.
+1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click {% if locale == "ru-ru" %}**Contact** → **Group of Tolokers** → **+ Add filter**{% elsif locale == "en-com" %}**Contact** → **Group of Tolokers** → **+ Add filter**{% endif %}.
 
 1. Specify the subject of your message in the {% if locale == "ru-ru" %}**Subject**{% elsif locale == "en-com" %}**Subject**{% endif %} field.
 
@@ -75,7 +75,7 @@ If the issue is related to how the platform works in general (such as money with
 
 - Tolokers and requesters in Toloka are anonymous. Don't specify your contact details or request them from Tolokers. Contact information includes phone numbers, email addresses, and social network or messenger accounts.
 
-- Show respect to Tolokers and use a business writing style. If you received an offensive message from a Toloker, contact [службу поддержки Толоки]({{ toloka-support }}).
+- Show respect to Tolokers and use a business writing style. If you received an offensive message from a Toloker, contact the [Toloka support]({{ toloka-support }}).
 
 - Don't send too many bulk emails to avoid alienating Tolokers.
 
@@ -97,7 +97,7 @@ If the issue is related to how the platform works in general (such as money with
 
 ## How to receive messages by email
 
-Open the {% if locale == "ru-ru" %}**Notifications**{% endif %}{% if locale == "en-com" %}**Notifications**{% endif %} tab in [профиле заказчика]({{ profile }}) and enable {% if locale == "ru-ru" %}**Email**{% endif %}{% if locale == "en-com" %}**Send copies of messages by email**{% endif %} for the **New message** event. Messages will be sent to the email address specified in the profile.
+Open the {% if locale == "ru-ru" %}**Notifications**{% endif %}{% if locale == "en-com" %}**Notifications**{% endif %} tab in the [requester profile]({{ profile }}) and enable {% if locale == "ru-ru" %}**Email**{% endif %}{% if locale == "en-com" %}**Email**{% endif %} for the **New message** event. Messages will be sent to the email address specified in the profile.
 
 ## Marking messages as read
 
@@ -109,7 +109,7 @@ To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as
 
 {% cut "How can I notify the Toloker of changes in the instructions?" %}
 
-Add a notification to the project description (for example: "Attention! The instructions have changed") and send a message to all the people who completed your tasks. To do this:
+Add a notification to the project description (for example: "Attention! The instructions have changed") and send a message to all the Tolokers who completed your tasks. To do this:
 
 - Assign them a hidden skill or use an existing [skill](nav-assign.md) linked to the pool.
 
@@ -120,4 +120,3 @@ Add a notification to the project description (for example: "Attention! The inst
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support-help.md) %}
-
