@@ -51,7 +51,7 @@ Send a message to Tolokers who performed your tasks if:
 
 {% note info %}
 
-If the issue is related to how the platform works in general (such as money withdrawals), refer the Toloker to the [Toloka support]({{ toloka-support }}).
+If the issue is related to how the platform works in general (such as money withdrawals), refer the Toloker to the [Toloka support](../troubleshooting/support.md).
 
 {% endnote %}
 
@@ -75,7 +75,7 @@ If the issue is related to how the platform works in general (such as money with
 
 - Tolokers and requesters in Toloka are anonymous. Don't specify your contact details or request them from Tolokers. Contact information includes phone numbers, email addresses, and social network or messenger accounts.
 
-- Show respect to Tolokers and use a business writing style. If you received an offensive message from a Toloker, contact the [Toloka support]({{ toloka-support }}).
+- Show respect to Tolokers and use a business writing style. If you received an offensive message from a Toloker, contact the [Toloka support](../troubleshooting/support.md).
 
 - Don't send too many bulk emails to avoid alienating Tolokers.
 

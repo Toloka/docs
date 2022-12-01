@@ -44,7 +44,7 @@
     - {% if locale == "ru-ru" %}**Анализ тональности и модерация контента**{% endif %}{% if locale == "en-com" %}**Sentiment analysis & Content moderation**{% endif %}
     - {% if locale == "ru-ru" %}**Релевантность поиска товаров**{% endif %}{% if locale == "en-com" %}**Product search relevance**{% endif %}
 
-- Для остальных типов проектов вы можете запросить функцию через [службу поддержки]({{ toloka-support }}).
+- Для остальных типов проектов вы можете запросить функцию через [службу поддержки](../troubleshooting/support.md).
 
 - Пул должен содержать более 100 заданий.
 
