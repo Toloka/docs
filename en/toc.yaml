@@ -87,6 +87,8 @@ items:
             href: guide/tutorials/questionnaire-toloka.md
           - name: Survey on third-party platform
             href: guide/tutorials/questionnaire-other.md
+          - name: Survey based on Qualtrics
+            href: guide/tutorials/questionnaire-qualtrics.md
       - name: Field tasks
         items:
           - name: Collecting offline data
