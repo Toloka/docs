@@ -62,7 +62,7 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 {% cut "Where can I set the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price is $0.001.
+You can set a price for your task **page** on the pool editing page. The minimum price is $0.005.
 
 {% endcut %}
 
