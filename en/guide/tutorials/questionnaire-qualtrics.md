@@ -52,7 +52,7 @@ You may pick one of the three solutions manually:
 1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
    {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 1. Select **Social science research** in the left menu.
-![Social science research](../_images/tutorials/survey-qualtrics/social-science-research.png "Social science research" =700x)
+![Social science research](../_images/tutorials/survey-qualtrics/social-science-research-menu.png "Social science research" =700x)
 1. Pick short, medium, or long survey preset.
 
 
