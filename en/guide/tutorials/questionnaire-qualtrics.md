@@ -9,11 +9,11 @@ Pick this solution, when:
 * You have an IRB-approved Qualtrics survey.
 * You do not want to spend time on getting onboard with the standard Toloka projects.
 
-In Toloka, you can place a link to your Qualtrics-based survey. Each Toloker gets an automatically generated code which uniqueness is guaranteed by the [setup instruction](questionnaire-qualtrics.md#embed-a-code-code). After Tolokers enter the code, their responses are accepted or rejected automatically. 
+In Toloka, you can place a link to your Qualtrics-based survey. Each Toloker gets an automatically generated code which uniqueness is guaranteed by the [setup instruction](questionnaire-qualtrics.md#code). After Tolokers enter the code, their responses are accepted or rejected automatically. 
 
 {% note info %}
 
-To learn about types of Qualtrics-based surveys, see [Choose a preset](questionnaire-qualtrics.md#choose-a-preset-preset).
+To learn about types of Qualtrics-based surveys, see [Choose a preset](questionnaire-qualtrics.md#preset).
 
 To learn how to run a survey using other external platforms, see the [Survey on third-party platform](questionnaire-other.md) tutorial.
 
@@ -26,7 +26,7 @@ To learn how to create a survey form in Toloka, see the [Survey with Toloka temp
 
 Before you begin:
 
-- create a survey on Qualtrics and get its approval by your institution's IRB.
+- Create a survey on Qualtrics and get its approval by your institution's IRB.
 
 - {% include [tutorials-register](../_includes/tutorials/register.md) %}
 
@@ -50,9 +50,11 @@ Pick a preset depending on your survey length:
 
 You may pick one of the three solutions manually:
 1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
-   {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
+
+    ![Create project button](../_images/tutorials/survey-qualtrics/create-project-button.png "Create project button" =700x)
 1. Select **Social science research** in the left menu.
-![Social science research](../_images/tutorials/survey-qualtrics/social-science-research-menu.png "Social science research" =700x)
+
+    ![Social science research](../_images/tutorials/survey-qualtrics/social-science-research-menu.png "Social science research" =700x)
 1. Pick short, medium, or long survey preset.
 
 
@@ -66,7 +68,8 @@ Set up how your tasks will look for Tolokers. Tolokers are people around the wor
     * **Link to your Qualtrics survey**: Add a link to your survey created on Qualtrics.
 
     * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find your detailed instructions after starting the survey.  
-![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =700x)
+
+    ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =700x)
 1. Add survey audience.
 Toloka does not share any user data. If you need data on respondents' country, age, or gender, make sure you ask this in your survey.
 
@@ -77,7 +80,8 @@ Toloka does not share any user data. If you need data on respondents' country, a
     * **Gender**: Specify the gender of Tolokers if needed.
 
     * **Age**: Specify the age of Tolokers between 18 and 90 if needed.
-![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png "Survey audience" =700x)
+
+    ![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png "Survey audience" =700x)
 1. Add your academic credentials.
 
     * **Affiliation**: Add the name of the university.
@@ -85,7 +89,8 @@ Toloka does not share any user data. If you need data on respondents' country, a
     * **Institution email**: Add your work email.
 
     * **IRB approval / exemption number**: Add a number of study approved by the institutional review board.
-![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png "Survey approval" =700x)
+
+    ![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png "Survey approval" =700x)
 
 1. To save your data click **Create**.
 
@@ -95,26 +100,31 @@ After your project is created, add a completion code to your survey:
 
 1. Open your survey in Qualtrics.
 1. Create **Embedded data**.
-![Embedded data](../_images/tutorials/survey-qualtrics/embedded-data.png "Embedded data" =700x)
+
+    ![Embedded data](../_images/tutorials/survey-qualtrics/embedded-data.png "Embedded data" =700x)
 1. Create a new field in embedded data, name it **TolokaCode**.
-![Toloka code](../_images/tutorials/survey-qualtrics/toloka-code.png "Toloka code" =700x)
+
+    ![Toloka code](../_images/tutorials/survey-qualtrics/toloka-code.png "Toloka code" =700x)
 1. Move embedded data to the very top of the survey flow.
-![Move data](../_images/tutorials/survey-qualtrics/move-embedded-data.png "Move data" =700x)
+
+    ![Move data](../_images/tutorials/survey-qualtrics/move-embedded-data.png "Move data" =700x)
 1. Add a new block in the end of the survey so that a respondent would see it only after the survey is fully complete.
-![Add block 1](../_images/tutorials/survey-qualtrics/add-new-block1.png "Add block 1" =700x)
-![Add block 2](../_images/tutorials/survey-qualtrics/add-new-block2.png "Add block 2" =700x)
+
+    ![Add block 1](../_images/tutorials/survey-qualtrics/add-new-block1.png "Add block 1" =700x)
+    ![Add block 2](../_images/tutorials/survey-qualtrics/add-new-block2.png "Add block 2" =700x)
 1. Add a new question with **Text / Graphic type** in the created block.
-![Add question](../_images/tutorials/survey-qualtrics/add-question.png "Add question" =700x)
+
+    ![Add question](../_images/tutorials/survey-qualtrics/add-question.png "Add question" =700x)
 1. Paste a message with a code to the question. A code should be printed exactly like this: $e{ e://Field/TolokaCode ^ a - b }, where a and b –numbers which you got after creating a project in Toloka. Please just copy and paste this formula and insert your a and b.
-![Code message](../_images/tutorials/survey-qualtrics/add-code.png "Code message" =700x)
+    ![Code message](../_images/tutorials/survey-qualtrics/add-code.png "Code message" =700x)
 
 ## Launch the survey {#launch}
 
 After creating a project and adding a completion code, you may launch the survey:
 1. Click **Start survey**.
-![Startsurvey](../_images/tutorials/survey-qualtrics/start-survey.png "Start survey" =700x)
+![Startsurvey](../_images/tutorials/survey-qualtrics/start-survey.png "Start survey" =350x)
 1. Check the parameters in the sidebar menu and click **Checkout and launch**. 
-![Checkout and launch](../_images/tutorials/survey-qualtrics/checkout-launch.png "Checkout and launch" =700x)
+![Checkout and launch](../_images/tutorials/survey-qualtrics/checkout-launch.png "Checkout and launch" =400x)
 
 ## See the results {#results}
 
