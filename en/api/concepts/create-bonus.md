@@ -4,7 +4,7 @@
 
 Issues rewards to Tolokers.
 
-The size of the reward can range between $0.001 and $100 per Toloker at a time.
+The size of the reward can range between $0.005 and $100 per Toloker at a time.
 
 {% note alert "Restriction" %}
 

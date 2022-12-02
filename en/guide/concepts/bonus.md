@@ -2,7 +2,7 @@
 
 To motivate Tolokers to complete your project tasks quickly and provide high-quality responses, you can give extra rewards for individual tasks, or reward one or more trusted users (in addition to paying them for [task completion](../../glossary.md#completed-tasks)).
 
-The reward amount can be from $0.001 to $100 per Toloker per time.
+The reward amount can be from $0.005 to $100 per Toloker per time.
 
 A [fee](budget.md) also applies to rewards.
 
