@@ -8,7 +8,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 All aspects of the task's [lifecycle](#lifecycle) are controlled by three JavaScript classes:
 
-- The [Assignment](js/assignment.md) class manages task progress, processes the task page's commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of [TaskSuite](js/tasksuite.md).
+- The [Assignment](js/assignment.md) class manages task progress, processes the [task suite](../../glossary.md#task-suite) commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of [TaskSuite](js/tasksuite.md).
 
 - [TaskSuite](js/tasksuite.md) is a “wrapper class” for the [task suite](../../glossary.md#task-suite) interface. You can redefine this class, like if you need to display a shared element on the page.
 

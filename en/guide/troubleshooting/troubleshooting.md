@@ -786,7 +786,7 @@ We recommend adding at least 1% of control tasks in the pool. And for small pool
 
 {% cut "Why's that?" %}
 
-Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
+Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a [task suite](../../glossary.md#task-suite). If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
 
 There shouldn't be too few pages available. Otherwise:
 
@@ -806,7 +806,7 @@ There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suit
 
 #### A small pool with 10% control tasks (good)
 
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
+There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites.
 
 {% endcut %}
 
@@ -1891,7 +1891,7 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 {% cut "Where can I set the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price is $0.005.
+You can set a price for your task suite on the pool editing page. The minimum price is $0.005.
 
 {% endcut %}
 
