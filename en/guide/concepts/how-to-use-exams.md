@@ -176,4 +176,4 @@ However, this poses the risk that you might spend a lot of money on the exam. Yo
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

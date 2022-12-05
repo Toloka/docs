@@ -119,4 +119,4 @@ Each project requires its own approach. Methods that are effective in one case m
 
 1. Contact support If something isn't working.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

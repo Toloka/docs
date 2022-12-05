@@ -50,4 +50,4 @@ Yes, this might happen. You must set an adequate pool closing interval.
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

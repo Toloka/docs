@@ -72,4 +72,4 @@ Simply [give the Toloker a separate reward](bonus.md) without changing the task 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

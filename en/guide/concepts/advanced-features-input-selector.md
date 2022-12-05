@@ -1937,4 +1937,4 @@ Now let's see how to add each field manually.
 
 {% endlist %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

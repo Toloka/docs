@@ -1419,4 +1419,4 @@ The template uses a special component to simplify development. Learn more in [St
 
     {% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

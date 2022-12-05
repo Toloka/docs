@@ -299,4 +299,4 @@ To get the results:
 
 - Create [Project 2](find_an_item_in_store.md) to search for similar items in an online store.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

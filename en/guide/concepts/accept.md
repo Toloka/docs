@@ -215,4 +215,4 @@ You can't accept the correct answers and pay for this part ($0.08). Response pag
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

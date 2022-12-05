@@ -327,4 +327,4 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/toloka-kit/knowledge-base/road_signs.tsv)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

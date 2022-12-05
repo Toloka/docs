@@ -42,4 +42,4 @@ When the Toloker decides not to do the task (clicks **Exit**), the task gets the
 When the Toloker clicks **Skip**, the task gets the skipped status. In this case, the Toloker can no longer return to the task.||
 |#
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

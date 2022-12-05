@@ -135,4 +135,4 @@ No. After sending a task, the Toloker can't make any changes to it. You can add 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

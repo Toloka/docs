@@ -121,4 +121,4 @@
 
 1. Обращайтесь в Cлужбу поддержки, если что-то не получается.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

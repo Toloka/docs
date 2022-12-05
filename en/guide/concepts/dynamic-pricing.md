@@ -108,4 +108,4 @@ No. The price per task suite is the same for all tasks in the pool. You can crea
 
 [Return the funds transferred to the Toloka account](../troubleshooting/support.md#feedback_khw_wc3_qjb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -97,4 +97,4 @@ You can use the Python SDK to integrate the Toloka API into applications written
 - [Common mistakes made by requesters](frequent-customer-errors.md)
 - [Where to store media files](cloud-storage.md)
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -301,4 +301,4 @@ Use this information for the task instructions. Let the Tolokers understand ever
 
 - You can remove selection by clicking the cross in the upper-right corner.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

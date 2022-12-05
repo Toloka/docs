@@ -111,4 +111,4 @@
 
 [Вернуть средства, перечисленные на счет в Толоку](../troubleshooting/support.md#feedback_khw_wc3_qjb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

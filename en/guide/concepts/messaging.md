@@ -119,4 +119,4 @@ Add a notification to the project description (for example: "Attention! The inst
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -47,4 +47,4 @@
 ||`class`| CSS-класс для картинки. | нет | `".img"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

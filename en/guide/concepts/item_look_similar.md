@@ -402,4 +402,4 @@ To check submitted assignments:
 
 - Create [Project 4](item_more_similar.md) to compare matching images.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

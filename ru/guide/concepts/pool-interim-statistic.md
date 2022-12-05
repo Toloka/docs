@@ -46,4 +46,4 @@
 Когда исполнитель нажимает кнопку **Пропустить**, задание оказывается в статусе пропущенного. При этом исполнитель больше не сможет вернуться к его выполнению.||
 |#
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

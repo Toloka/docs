@@ -28,4 +28,4 @@
 
 - Период, за который учитываются данные — последние 2 дня.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

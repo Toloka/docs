@@ -154,4 +154,4 @@ provideSolutions(strategy = function(solutions) {
 this.getDOMElement().querySelector('.my_submit_button').addEventListener('click', (event) => this.getAssignment().submit());
 ```
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

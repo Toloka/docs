@@ -400,4 +400,4 @@ Another option for selecting Tolokers for a project of this type is assignment r
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

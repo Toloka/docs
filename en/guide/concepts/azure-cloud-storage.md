@@ -142,4 +142,4 @@ You can set up the lifetime of files in the container so that they are automatic
     https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
     ```
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

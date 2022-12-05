@@ -475,4 +475,4 @@
 
 - Почитайте подробнее [про декомпозицию заданий](solution-architecture.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

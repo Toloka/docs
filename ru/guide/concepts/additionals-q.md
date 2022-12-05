@@ -16,4 +16,4 @@
 
 Если ваши проекты соответствуют этим требованиям, мы будем рады сотрудничать с вами и рекомендовать ваши услуги заказчикам.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

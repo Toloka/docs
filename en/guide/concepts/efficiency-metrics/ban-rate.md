@@ -28,4 +28,4 @@ where:
 
 - A low indicator is `> 20%`.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

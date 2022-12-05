@@ -141,4 +141,4 @@ All spaces and symbols in the file names will be replaced with codes.
     https://storage.googleapis.com/mytolokabucket/newfolder/image2.png
     ```
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

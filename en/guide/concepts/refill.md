@@ -225,4 +225,4 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
 If the money wasn't credited to the account within the specified period:
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

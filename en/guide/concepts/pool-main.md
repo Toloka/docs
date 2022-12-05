@@ -242,4 +242,4 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

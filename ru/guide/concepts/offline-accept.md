@@ -149,4 +149,4 @@ Cделайте следующие шаги перед запуском пула
     - [Настройка контроля качества](qa-pool-settings.md).
     - {% if locale == "ru-ru" %}[Статья в блоге Толоки]({{ toloka-blog-pool }}).{% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -129,4 +129,4 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

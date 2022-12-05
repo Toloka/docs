@@ -58,4 +58,4 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

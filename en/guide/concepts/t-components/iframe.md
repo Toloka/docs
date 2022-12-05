@@ -69,4 +69,4 @@ To disable certain restrictions, you can use the following values (separate with
 - `"false"` disables the restrictions listed. | no | `"allow-scripts allow-same-origin"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

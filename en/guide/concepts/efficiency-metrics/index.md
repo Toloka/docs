@@ -26,4 +26,4 @@ You can find this information in the **Efficiency** tab on the pool page:
 
 - The percentage is calculated for the last 2 days.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

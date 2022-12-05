@@ -275,4 +275,4 @@ Sample dataset files with tasks
 - [File 2](https://tlk.s3.yandex.net/knowledge-base/noisyspeech_wgoldens.tsv)
 - [File 3](https://tlk.s3.yandex.net/knowledge-base/noisy_speech_exam.tsv)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

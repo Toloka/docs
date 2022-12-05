@@ -274,4 +274,4 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 - [Pricing](https://toloka.ai/knowledgebase/pricing/)
 - [Toloka-Kit — spatial crowdsourcing example](https://github.com/Toloka/toloka-kit/blob/main/examples/2.spatial_crowdsourcing/0.simplest_example/spatial_crowdsourcing.ipynb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

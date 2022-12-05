@@ -334,4 +334,4 @@
 
 Если эти рекомендации не помогли:
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

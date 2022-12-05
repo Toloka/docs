@@ -90,4 +90,4 @@
 - `selected=false` — оставить элемент списка невыбранным по умолчанию. | нет | `false`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

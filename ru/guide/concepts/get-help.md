@@ -16,4 +16,4 @@
 
 - Присоединиться к нам в [Slack]({{ toloka-slack }}). Здесь вы можете поговорить о Толоке, поделиться примерами использования, обсудить идеи о машинном обучении, а также следить за новостями и важными обновлениями.
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

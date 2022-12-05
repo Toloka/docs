@@ -488,4 +488,4 @@ The progress bar shows the number of task suites including the overlap. If the o
 
 [Other questions](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-project-setting.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
