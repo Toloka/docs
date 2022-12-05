@@ -72,4 +72,4 @@ Example:`{{field type="textarea" name="result" width="270px" rows=5}}`| no | 3||
 ||`class`| The CSS class for the field. For example, `class="annotation"`. | no | `".field" ".field_type_textarea"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

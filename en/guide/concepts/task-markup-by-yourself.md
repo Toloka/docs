@@ -334,4 +334,4 @@ As soon as the needed number of responses is collected, Toloka calculates the pe
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

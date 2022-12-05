@@ -77,4 +77,4 @@ If you want labeling to be done by Tolokers from different countries, you can [t
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

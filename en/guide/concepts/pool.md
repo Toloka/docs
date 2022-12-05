@@ -31,4 +31,4 @@ To add tasks to a pool:
 
 - [Start the pool](pool-run-and-stop.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

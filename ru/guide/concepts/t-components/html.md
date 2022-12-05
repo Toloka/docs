@@ -21,4 +21,4 @@
 
 Перед загрузкой задания проверьте, что в отформатированном тексте все кавычки [экранированы](../pool_csv.md#string).
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

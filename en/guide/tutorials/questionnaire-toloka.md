@@ -280,4 +280,4 @@ In the task interface settings, use the `field.text` or `field.textarea` compone
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/knowledge-base/tasks_for_survey.tsv)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

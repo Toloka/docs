@@ -284,4 +284,4 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 - Create [Project 3](image-segmentation-project3.md) to review assignments.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

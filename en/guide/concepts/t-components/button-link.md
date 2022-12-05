@@ -56,4 +56,4 @@ Supported values: `"S"`, `"M"`, `"L"`, `"XL"`. | no | `"L"`||
 - `action=false` — White. | no | `false`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

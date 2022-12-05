@@ -40,4 +40,4 @@
 
 Библиотеки для использования Handlebars и специальных компонентов подключены по умолчанию при создании проекта.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

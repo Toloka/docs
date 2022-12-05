@@ -157,4 +157,4 @@ this.getDOMElement().querySelector('.my_submit_button').addEventListener('click'
 
 {% endcut %}
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

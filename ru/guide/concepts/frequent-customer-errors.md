@@ -228,4 +228,4 @@
 
 - [Блог Толоки]({{ toloka-blog-index }}). В блоге публикуем обучающие статьи и оповещаем о новых возможностях платформы.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -15,4 +15,4 @@ It includes all tasks uploaded to the main pool. The tasks uploaded to the [trai
 ||{% if locale == "en-com" %}**Banned users**{% endif %} | The number of Tolokers who were blocked from accessing the project. It does not matter whether the Toloker is currently blocked or not. Requester and platform bans are not taken into account.||
 |#
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

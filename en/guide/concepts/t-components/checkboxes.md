@@ -76,4 +76,4 @@ You can also use a formula for setting the width. For example, `width="calc(100%
 ||`class`| The CSS class for the field. For example, `class="annotation"`. | no | `".field" ".field_type_checkbox"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

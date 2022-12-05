@@ -28,4 +28,4 @@ $Q_{i} = {H_{i}}\times{CSI}$
 
 - Низкий показатель — `< 4.5` или отсутствует.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

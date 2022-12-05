@@ -57,4 +57,4 @@ But if you set `response threshold = 2` with `overlap = 3`, then two users with 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

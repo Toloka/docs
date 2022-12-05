@@ -319,4 +319,4 @@
 
 - Создайте [Проект 3](item_look_similar.md) для сравнения исходного изображение с результатами из второго проекта.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

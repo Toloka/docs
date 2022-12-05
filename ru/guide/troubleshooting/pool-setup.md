@@ -486,4 +486,4 @@
 
 [Другой вопрос](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-project-setting.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

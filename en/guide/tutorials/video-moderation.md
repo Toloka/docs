@@ -284,4 +284,4 @@ At this step, upload your task data to Toloka.
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/06_videoModeration/EN/sample-files.zip)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

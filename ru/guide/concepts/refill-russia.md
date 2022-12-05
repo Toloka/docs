@@ -124,4 +124,4 @@
 
 Если деньги не поступили на счет в течение указанного срока:
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

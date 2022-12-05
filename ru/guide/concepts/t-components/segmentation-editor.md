@@ -469,4 +469,4 @@ var tagsData = [
 
 - Выделение можно убрать: нажать значок крестика в правом верхнем углу.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

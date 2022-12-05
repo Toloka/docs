@@ -150,4 +150,4 @@
     https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
     ```
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

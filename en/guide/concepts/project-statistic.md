@@ -151,4 +151,4 @@ If the number is too small, check the instructions, quality control rules, and f
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

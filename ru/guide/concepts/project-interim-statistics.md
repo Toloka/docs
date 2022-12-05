@@ -17,4 +17,4 @@
 ||{% if locale == "ru-ru" %}**Заблокировано**{% endif %}{% if locale == "en-com" %}**Banned users**{% endif %} | Число исполнителей, которым был заблокирован доступ к проекту. При этом не важно, заблокирован в текущий момент исполнитель или нет. Блокировки на уровне заказчика (у меня) или на платформе не учитываются.||
 |#
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -168,4 +168,4 @@
     - [Адаптировать задание для мобильных устройств](mobile.md).
     - {% if locale == "ru-ru" %}[Статья в блоге Толоки.]({{ toloka-blog-edit-templates }}){% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -14,4 +14,4 @@ You can issue [rewards](bonus.md) to Tolokers for completing tasks well or [incr
 
 If your projects meet these requirements, we'll be happy to partner with you and recommend your services to requesters.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

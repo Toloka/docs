@@ -73,4 +73,4 @@
 1. В правом верхнем углу нажмите на аватарку своего аккаунта.
 1. Выберите имя заказчика, в аккаунт которого вы хотите войти.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

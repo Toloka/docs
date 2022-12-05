@@ -79,4 +79,4 @@ Supported values: `"S"`, `"M"`, `"L"`. | no | `"L"`||
 - `selected=false` — Leave item deselected by default. | no | `false`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

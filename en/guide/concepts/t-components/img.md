@@ -45,4 +45,4 @@ You can also use a formula for setting the width. For example, `height="calc(100
 ||`class`| CSS class for the image. | no | `".img"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

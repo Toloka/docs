@@ -152,4 +152,4 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

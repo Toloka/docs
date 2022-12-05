@@ -24,4 +24,4 @@ where:
 
 - A low indicator is `< 4.5` or missing.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

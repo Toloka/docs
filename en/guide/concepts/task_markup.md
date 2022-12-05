@@ -151,4 +151,4 @@ If the markup process failed for one reason or another, contact support. Go to t
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

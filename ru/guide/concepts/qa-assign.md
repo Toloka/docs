@@ -78,4 +78,4 @@
 
 Если вы не понимаете, в чем проблема, запустите мини-опросник и поинтересуйтесь у исполнителей, выполнявших ваши задания, что именно им нравится и не нравится.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

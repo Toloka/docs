@@ -208,4 +208,4 @@ See also:
 
 - [Toloka blog]({{ toloka-blog-index }}). Read our blog for useful tutorials and information about new Toloka features.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

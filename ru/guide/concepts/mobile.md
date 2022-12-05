@@ -133,4 +133,4 @@
     - [Интерфейс задания](spec.md).
     - [Настройка контроля качества](project-qa.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

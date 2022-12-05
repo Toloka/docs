@@ -90,4 +90,4 @@
 
 Советуем изучить раздел [Ошибки в настройке контроля качества](frequent-customer-errors.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
