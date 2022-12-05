@@ -59,7 +59,7 @@ Event type.
 Possible value: `POOL_CLOSED` — The pool is closed. ||
 |#
 
-## Example of the ASSIGNMENT_ notification body {#assignment}
+## Example of the ASSIGNMENT_CREATED notification body {#assignment}
 
 ```json
 {

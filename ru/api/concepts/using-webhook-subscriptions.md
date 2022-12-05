@@ -71,7 +71,7 @@
 Возможное значение: `POOL_CLOSED` — пул закрыт.||
 |#
 
-## Пример тела уведомления ASSIGNMENT_ {#assignment}
+## Пример тела уведомления ASSIGNMENT_CREATED {#assignment}
 
 ```json
 {
