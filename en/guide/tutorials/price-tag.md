@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Price monitoring
 
 In this tutorial, you will learn how to run a price monitoring project in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -284,3 +282,5 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 - [Toloka-Kit — spatial crowdsourcing example](https://github.com/Toloka/toloka-kit/blob/main/examples/2.spatial_crowdsourcing/0.simplest_example/spatial_crowdsourcing.ipynb)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

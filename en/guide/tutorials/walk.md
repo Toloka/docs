@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Collecting offline data
 
 In this tutorial, you will learn how to run offline data collection in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -273,3 +271,5 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/dataset/moscow_metro_entrance_2020_en.tsv)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

@@ -1,5 +1,3 @@
-{% include [image-styles](../../../../_includes/image-styles.md) %}
-
 # Доступ к API
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
@@ -23,3 +21,5 @@ Authorization: OAuth <OAuth token>
 [![Доступ к API](https://yastatic.net/s3/doc-binary/src/support/toloka/ru/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/ru/api/get-oauth-token.png)
 
 {% include [contact-support](../../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../../_includes/image-styles.md) %}
