@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Microsoft SSO authentication
 
 Toloka allows its clients to use a single sign-on (SSO) authentication method to access the platform.
@@ -45,3 +43,5 @@ Now you can create projects, pools, and upload tasks. You can also [generate API
 ## Next steps
 
 - [Generate API tokens](./api-token.md)
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

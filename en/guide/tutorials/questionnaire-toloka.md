@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Survey with Toloka template
 
 In this tutorial, you will learn how to create a survey form and run a survey in Toloka. We will use a project preset designed specifically for this type of data collection.
@@ -281,3 +279,5 @@ In the task interface settings, use the `field.text` or `field.textarea` compone
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/knowledge-base/tasks_for_survey.tsv)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

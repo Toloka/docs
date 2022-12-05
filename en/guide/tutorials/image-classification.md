@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Image classification
 
 In this tutorial, you will learn how to run image classification in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -244,3 +242,5 @@ You can use different image sizes.
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/toloka-kit/knowledge-base/catsdogs.tsv)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

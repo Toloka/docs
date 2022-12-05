@@ -1,5 +1,3 @@
-{% include [image-styles](../../_includes/image-styles.md) %}
-
 # Sample project recipe
 
 [![Open In Colab](../../_images/colab-badge.svg)](https://colab.research.google.com/github/Toloka/toloka-kit/blob/main/examples/0.getting_started/0.learn_the_basics/learn_the_basics.ipynb) | [Source code](https://github.com/Toloka/toloka-kit/blob/main/examples/0.getting_started/0.learn_the_basics/learn_the_basics.ipynb)
@@ -782,3 +780,5 @@ print(predicted_answers)
 - [Toloka documentation](../index.md)
 - [Toloka API documentation](../api/index.md)
 - [Toloka homepage](https://toloka.ai/)
+
+{% include [image-styles](../../_includes/image-styles.md) %}

@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Checking project
 
 After you [uploaded the files](task_upload.md) with the tasks to the pool, complete the tasks as a Toloker. This way you can find if the project contains any errors, or might be too difficult or ambiguous for the Tolokers to complete.
@@ -60,3 +58,5 @@ We recommend that you always double-check new projects. You should also check pr
 - If you haven't labeled your control and training tasks in the file, [edit the tasks in the interface](task_markup.md).
 - [Top up](refill.md) your account.
 - Launch the [pool labeling](pool-run-and-stop.md).
+
+{% include [image-styles](../../../_includes/image-styles.md) %}
