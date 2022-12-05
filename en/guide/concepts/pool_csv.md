@@ -139,17 +139,73 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "General task" %}
 
+  To create a [general task](../../glossary.md#general-task), enter the names and the values of the input fields in the `input_values` block.
+  
+  {% cut "Example" %}
+  
   ```json
   {
        "input_values": {
-          "image_url": "https://www.example.com/image1.png"
+          "image_url": [
+            "https://www.example.com/image1.png",
+            "https://www.example.com/image2.png",
+            "https://www.example.com/image3.png"
+          ]
        }
   }
   ```
   
   {% endcut %}
   
+  {% endcut %}
+  
+  {% cut "Control task" %}
+  
+  To create a control task, enter:
+
+  - The names and the values of the input fields in the `input_values` block.
+
+  - Correct responses in the `known_solutions` block.
+
+  {% cut "Example" %}
+  
+  ```json
+  {
+      "input_values": {
+         "image_url": "https://www.example.com/image1.png"
+      },
+      "known_solutions": [
+           {
+              "output_values": {
+                  "result": "OK",
+                  "like": false
+              }
+           }
+      ]
+  }
+  ```
+  
+  {% endcut %}
+  
+  {% endcut %}
+  
   {% cut "Training task" %}
+  
+  To create a training task, enter:
+
+  - The names and the values of the input fields in the `input_values` block.
+
+  - Correct responses in the `known_solutions` block.
+  
+  - A hints in the `message_on_unknown_solution` block.
+
+  For training tasks, it is convenient to create a [separate pool](train.md).
+
+  {% note info %}
+
+  You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
+
+  {% endnote %}
 
   ```json
   {
@@ -170,24 +226,6 @@ If you need to add different task types to the pool, upload multiple files, one 
   
   {% endcut %}
   
-  {% cut "Exam task" %}
-
-  ```json
-  {
-      "input_values": {
-         "image_url": "https://www.example.com/image1.png"
-      },
-      "known_solutions": [
-           {
-              "output_values": {
-                  "result": "OK",
-                  "like": false
-              }
-           }
-      ]
-  }
-  ```
-  
   {% endcut %}
   
   {% cut "Old format" %}
@@ -195,13 +233,13 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```json
   [
       {
-          "INPUT:query": "Текст из поля \"query\""
+          "INPUT:image_url": "https://www.example.com/image1.png"
       },
       {
-          "INPUT:query": "Текст из поля \"query\""
+          "INPUT:image_url": "https://www.example.com/image2.png"
       },
       {
-          "INPUT:query": "Текст из поля \"query\""
+          "INPUT:image_url": "https://www.example.com/image3.png"
       }
   ]
   ```
