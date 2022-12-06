@@ -24,11 +24,11 @@
 
 ## Создайте учетную запись хранения {#create-account}
 
-1. Откройте меню портала Azure на [главной странице]({{ azure-home }}) и слева вверху нажмите ![](../_images/tutorials/cloud-storage/azure/more-icon.png).
+1. Откройте меню портала Azure на [главной странице]({{ azure-home }}) и слева вверху нажмите ![](../_images/tutorials/cloud-storage/azure/more-icon.svg).
 
 1. Выберите **Учетные записи хранения**.
 
-1. На верхней панели нажмите ![](../_images/tutorials/cloud-storage/azure/plus-icon.png) **Создать**.
+1. На верхней панели нажмите ![](../_images/tutorials/cloud-storage/azure/plus-icon.svg) **Создать**.
 
 1. На вкладке **Основные** выберите подписку, в которой будет создана учетная запись хранения.
 
@@ -52,7 +52,7 @@
 
 1. Слева в меню в разделе **Хранилище данных** выберите **Контейнеры**.
 
-1. На верхней панели нажмите ![](../_images/tutorials/cloud-storage/azure/plus-icon.png) **Контейнер**.
+1. На верхней панели нажмите ![](../_images/tutorials/cloud-storage/azure/plus-icon.svg) **Контейнер**.
 
 1. Введите имя контейнера.
 
