@@ -83,6 +83,8 @@ items:
                 href: guide/concepts/appendix-expanded-code.md
       - name: Surveys
         items:
+          - name: Overview of survey solution
+            href: guide/tutorials/questionnaire-overview.md        
           - name: Survey with Toloka template
             href: guide/tutorials/questionnaire-toloka.md
           - name: Survey on third-party platform

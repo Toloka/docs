@@ -4,20 +4,19 @@
 
 In this tutorial, you will learn how to use Toloka to run an academic Qualtrics-based survey. 
 
-Pick this solution, when:
+Choose this solution if you have a Qualtrics survey approved by an institutional review board (IRB), and you don't want to spend time on getting onboard with the standard Toloka projects.
 
-* You have an IRB-approved Qualtrics survey.
-* You do not want to spend time on getting onboard with the standard Toloka projects.
-
-In Toloka, you can place a link to your Qualtrics-based survey. Each Toloker gets an automatically generated code which uniqueness is guaranteed by the [setup instruction](questionnaire-qualtrics.md#code). After Tolokers enter the code, their responses are accepted or rejected automatically. 
+In this type of project, a task in Toloka provides a link to your Qualtrics survey. To enable a Toloker to confirm survey completion, follow the step-by-step guide and embed an automatically generated code to your Qualtrics survey. The respondent will need to copy the code and paste it to the task in Toloka. The response is accepted or rejected automatically, and all the Tolokers who provide valid completion codes are paid.
 
 {% note info %}
 
-To learn about types of Qualtrics-based surveys, see [Choose a preset](questionnaire-qualtrics.md#preset).
+To learn about other Toloka solutions for surveys, see the tutorials:
 
-To learn how to run a survey using other external platforms, see the [Survey on third-party platform](questionnaire-other.md) tutorial.
+- How to run a survey using other external platforms — [Survey on third-party platform](questionnaire-other.md).
 
-To learn how to create a survey form in Toloka, see the [Survey with Toloka template](questionnaire-toloka.md) tutorial.
+- How to create a survey form in Toloka instead of using a third-party platform — [Survey with Toloka template](questionnaire-toloka.md).
+
+The comparison of all the three kinds of the survey presets is provided in the [Overview of survey solutions](questionnaire-overview.md) section.
 
 
 {% endnote %}
@@ -44,106 +43,98 @@ Pick a preset depending on your survey length:
 
 * For short surveys that take 15 minutes or less — [Short survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvJ&choosedTag=A3MdOlBKzWKcrpxg3JNQ). 
 
-* For medium surveys that take 15-30 minutes — [Medium survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvF&choosedTag=A3MdOlBKzWKcrpxg3JNQ).
+* For medium surveys that take 15–30 minutes — [Medium survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvF&choosedTag=A3MdOlBKzWKcrpxg3JNQ).
 
-* For long surveys that take 30-60 minutes — [Long survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvv&choosedTag=A3MdOlBKzWKcrpxg3JNQ).
+* For long surveys that take 30–60 minutes — [Long survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvv&choosedTag=A3MdOlBKzWKcrpxg3JNQ).
 
-You may pick one of the three solutions manually:
+You can create the project manually:
+
 1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
     ![Create project button](../_images/tutorials/survey-qualtrics/create-project-button.png "Create project button" =700x)
-1. Select **Social science research** in the left menu.
+    
+1. In the left menu, click **Social science research**. Select the **Short survey**, **Medium survey**, or **Long survey** preset.
 
     ![Social science research](../_images/tutorials/survey-qualtrics/social-science-research-menu.png "Social science research" =700x)
-1. Pick short, medium, or long survey preset.
+
+1. Click **Choose solution** in the pop-up tab.
 
 
 ## Create a project {#project}
 
-Set up how your tasks will look for Tolokers. Tolokers are people around the world who get paid for completing your tasks.
-1. Add your project name, a link to your Qualtrics survey, and your project description.
+1. Add the general information on your project.
 
-    * **Project name visible to Tolokers**: In 2-5 words, state the general idea of the project.
+    * **Project name visible to Tolokers**: In 2–5 words, state the idea of the project.
 
-    * **Link to your Qualtrics survey**: Add a link to your survey created on Qualtrics.
+    * **Link to your Qualtrics survey**: Add the link to your Qualtrics-based survey.
 
-    * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find your detailed instructions after starting the survey.  
+    * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find the detailed instructions after they start the survey.  
 
     ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =700x)
-1. Add survey audience.
-Toloka does not share any user data. If you need data on respondents' country, age, or gender, make sure you ask this in your survey.
 
-    * **Total number of Tolokers**: Add the required number of the survey participants.
+    Note that you don't have to configure the task interface and write the instructions. They are standard for all the Qualtrics survey projects.
 
-    * **Countries of residence**: Specify the countries to sample from. If no selection is made Tolokers from 80 countries will see your survey.
+    {% cut "How your task will look for Tolokers" %}
 
-    * **Gender**: Specify the gender of Tolokers if needed.
+    ![Social science research](../_images/tutorials/survey-qualtrics/task-interface.png "Social science research" =350x)
 
-    * **Age**: Specify the age of Tolokers between 18 and 90 if needed.
+    {% endcut %}
+
+1. Set up the filters to select Tolokers for your survey.
+
+    * **Total number of Tolokers**: Add the required number of respondents.
+
+    * **Countries of residence** (optional): Specify the countries to sample from. If no selection is made, your survey is available to Tolokers from 80 countries specified in the [Countries available in this release](https://toloka.ai/toloka-for-social-sciences/) list.
+
+    * **Gender** (optional): Set the gender of Tolokers.
+
+    * **Age** (optional): Enter the age of Tolokers between 18 and 90.
 
     ![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png "Survey audience" =700x)
+
+    {% note info %}
+
+    Toloka does not share any user data. If you need data on respondents' country, age, or gender, make sure you ask this in your survey.
+
+    {% endnote %}
+
 1. Add your academic credentials.
 
-    * **Affiliation**: Add the name of the university.
+    * **Affiliation**: The name of the university.
 
-    * **Institution email**: Add your work email.
+    * **Institution email**: Your email on the university domain.
 
-    * **IRB approval / exemption number**: Add a number of study approved by the institutional review board.
+    * **IRB approval / exemption number**: The study number approved by the IRB.
 
     ![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png "Survey approval" =700x)
 
-1. To save your data click **Create**.
+1. Revise the settings carefully. You will not be able to change them later.
 
-## Embed a code {#code}
+1. To save your data and continue, click **Create**.
 
-After your project is created, add a completion code to your survey:
+## Embed a completion code {#code}
 
-1. Open your survey in Qualtrics.
-1. Create **Embedded data**.
+Toloka controls the data collection completion by exchanging a unique code with Qualtrics. Embed the code to your survey. 
 
-    ![Embedded data](../_images/tutorials/survey-qualtrics/embedded-data.png "Embedded data" =700x)
-1. Create a new field in embedded data, name it **TolokaCode**.
+1. Follow the step-by-step guide provided on the **Finish setup and launch survey** page.
 
-    ![Toloka code](../_images/tutorials/survey-qualtrics/toloka-code.png "Toloka code" =700x)
-1. Move embedded data to the very top of the survey flow.
+1. After you embed the code to your survey, select **My Qualtrics survey has an embedded completion code from Toloka**.
 
-    ![Move data](../_images/tutorials/survey-qualtrics/move-embedded-data.png "Move data" =700x)
-1. Add a new block in the end of the survey so that a respondent would see it only after the survey is fully complete.
+![Academic credentials](../_images/tutorials/survey-qualtrics/embed-code.png "Embed code" =700x)
 
-    ![Add block 1](../_images/tutorials/survey-qualtrics/add-new-block1.png "Add block 1" =700x)
-    ![Add block 2](../_images/tutorials/survey-qualtrics/add-new-block2.png "Add block 2" =700x)
-1. Add a new question with **Text / Graphic type** in the created block.
+1. Click **Launch survey**.
 
-    ![Add question](../_images/tutorials/survey-qualtrics/add-question.png "Add question" =700x)
-1. Paste a message with a code to the question. A code should be printed exactly like this: $e{ e://Field/TolokaCode ^ a - b }, where a and b –numbers which you got after creating a project in Toloka. Please just copy and paste this formula and insert your a and b.
-    ![Code message](../_images/tutorials/survey-qualtrics/add-code.png "Code message" =700x)
+## Launch the survey and get the results {#launch}
 
-## Launch the survey {#launch}
+In the pop-up tab, check the parameters and click **Launch**.
 
-After creating a project and adding a completion code, you may launch the survey:
-1. Click **Start survey**.
-![Startsurvey](../_images/tutorials/survey-qualtrics/start-survey.png "Start survey" =350x)
-1. Check the parameters in the sidebar menu and click **Checkout and launch**. 
-![Checkout and launch](../_images/tutorials/survey-qualtrics/checkout-launch.png "Checkout and launch" =400x)
+![Startsurvey](../_images/tutorials/survey-qualtrics/launch-survey.png "Launch survey" =350x)
 
-## See the results {#results}
-
-Track the progress of responses collection on the pool page, or in Qualtrics. You can start the review when the first results are received.
-1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
-
-    [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png)
-1. After checking all the assignments, сlick the {% if locale == "en-com" %}**Download results**{% endif %} button.
-
-    [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png)
-1. Click **Download results**
-
-You will get the TSV file. To process the survey results, you can open the file in Excel and save it in the XLSX format.
+Responses are stored on Quatrics. Go there to track the progress of data collection and get the results.
 
 ## Helpful tips {#tips}
 
-- You can use questions with known answers to check that Tolokers pay attention. In that case, even if a Toloker answers incorrectly, it’s better to still provide them a special completion code, different from the correct one. When you see that special code in the results, you can reject the assignment. The Toloker won’t be dissatisfied that you didn't allow them to finish the task.
-
-- Sometimes a survey may follow different scenarios depending on answers given to the previous questions. In this case, make sure that all scenarios have a completion code in the end.
+- If you need additional quality control, add attention checks and forced responses directly in your Qualtrics survey.
 
 - Check the {% if locale == "en-com" %}**Messages**{% endif %} tab regularly to get Tolokers’ reports on problems with your survey.
 
