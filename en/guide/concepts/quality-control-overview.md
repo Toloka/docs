@@ -62,7 +62,7 @@ To improve quality of answers, you must [select the audience](filters.md) you ne
 
 ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1.png)
 
-A Toloker who completes a task suite in less than 10 seconds will be banned and won't be able to access your tasks.
+A Toloker who completes a [task suite](../../glossary.md#task-suite) in less than 10 seconds will be banned and won't be able to access your tasks.
 
 {% endcut %}
 
@@ -128,9 +128,9 @@ A Toloker who skips 2 task suites in a row is restricted from accessing the pool
 
 ### Prevent random clicking and bots {#random-clicking}
 
-- [Fast responses](quick-answers.md) — monitor the minimum time to complete a [page of tasks](../../glossary.md#task-suite).
+- [Fast responses](quick-answers.md) — monitor the minimum time to complete a [task suite](../../glossary.md#task-suite).
 
-- [Captcha](captcha.md) — periodically display a captcha to catch automated scripts and bots.
+- [Captcha](captcha.md) — periodically display a [captcha](../../glossary.md#captcha) to catch automated scripts and bots.
 
 - [Skipped assignments](skipped-assignments.md) — exclude Tolokers who skip too many tasks in a row.
 
