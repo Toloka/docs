@@ -383,6 +383,8 @@ items:
             href: guide/concepts/nav-history.md
       - name: Profile
         items:
+          - name: Editing the profile
+            href: guide/concepts/editing-the-profile.md
           - name: About money
             items:
               - name: About account management
