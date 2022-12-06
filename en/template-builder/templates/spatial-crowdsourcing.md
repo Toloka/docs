@@ -4,13 +4,9 @@ For this type of project, you can use the **Spatial Crowdsourcing** preset.
 
 This preset is used for field tasks in the Toloka mobile app. The Toloker selects a point on the map, goes to the location, takes photos, and writes a comment.
 
-{% note info %}
+This preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md) by default. This section tells how to use the [Template Builder](index.md) for the same purpose. In the **Task interface** section of your project, select **Template builder** and paste the code of the following example to the **Config** section.
 
-This preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md), but you can use the [Template Builder](index.md) for the same purpose. To get that done, copy the code from the example, in the **Task interface** section of your project select the **Template builder** option and paste the code to the **Config** section.
-
-{% endnote %}
-
-Take a look at the example: the interface includes a text field, a button for uploading the coordinates of the Toloker's device, a button for uploading photos, and a comment field.
+Take a look at the example: the interface includes a text block, a button for uploading the coordinates of the Toloker's device, a button for uploading photos, and a comment field.
 
 Note that validation and task layout are already configured in this Template Builder sample code.
 
@@ -125,10 +121,10 @@ Note that validation and task layout are already configured in this Template Bu
     "type": "field.textarea",
     "label": "Comments",
     "placeholder": "If your photos don't contain all the necessary information, add details here.",
-      "data": {
-        "type": "data.output",
-        "path": "comment"
-      }
+    "data": {
+      "type": "data.output",
+      "path": "comment"
+    }
   }
   ```
 
@@ -156,24 +152,20 @@ If this template doesn't meet your needs, see other examples in the **Field tas
 
 ## Add a description {#add-description}
 
-To add a detailed description to the task, replace the sample text with your value in the `label` property of the [view.text](../reference/view.text.md) component.
+To add a detailed description to the task, use one more [view.text](../reference/view.text.md) component. If you need to break a string into multiple lines, paste the newline characters `\n` in the appropriate places.
 
 {% cut "Show code" %}
 
 ```json
 {
   "type": "view.text",
-  "label": "Find a local business in your city:",
-  "content": {
-    "type": "data.input",
-    "path": "name"
-  }
+  "content": "Find the following store, and take and upload photos of it. \nIf your photos don't contain all the necessary information, add a comment"
 }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/LdkIIKSv3nS2oL)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/QMYXK5k13ozaqP)
 
 ## Add a layout {#add-layout}
 
@@ -203,3 +195,7 @@ In this example, the text is highlighted with a blue border.
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/a6I75hXP3nS2wX)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+## See also {#see-also}
+
+- [Tutorials — video classification](../../guide/tutorials/walk.md)
