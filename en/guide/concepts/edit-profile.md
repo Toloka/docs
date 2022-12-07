@@ -6,17 +6,17 @@
 
 1. Click ![](../_images/other/three-points-button.svg) → **Edit** next to the **Account info** label.
 
-1. You can edit the fields:
+1. You can edit the following fields:
 
-- **FIRST NAME**
+    - **FIRST NAME**
 
-- **LAST NAME**
+    - **LAST NAME**
 
-- **DISPLAY NAME** 
+    - **DISPLAY NAME**
 
-- **EMAIL**
+    - **EMAIL**
 
-- **PHONE**
+    - **PHONE**
 
 1. Click **Save**.
 
@@ -24,7 +24,7 @@
 
 {% note alert %}
 
-You may lose the project data if you delete your requester account.
+You might lose the project data if you delete your requester account.
 
 {% endnote %}
 
