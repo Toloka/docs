@@ -165,7 +165,7 @@ To add a detailed description to the task, use one more [view.text](../reference
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/QMYXK5k13ozaqP)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/67DjKLNz3pAN3C)
 
 ## Add a layout {#add-layout}
 
