@@ -16,7 +16,47 @@ To create a pool, follow the instructions:
 
 1. Click {% if locale == "en-com" %}**Add pool**{% endif %} on the project page.
 
-1. Set the parameters and click {% if locale == "en-com" %}**Save**{% endif %}.
+1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+
+1. Follow the steps in the pool wizard:
+
+    1. **Select the audience for your task**
+        
+        Select Tolokers using [filters](../../glossary.md#filters). Tasks will only be shown to matching Tolokers, rather than to all of them.
+        
+        Click the {% if locale == "en-com" %}**Add filter**{% endif %} button and set the filter parameters.
+    
+    1. **Setup quality control**
+    
+        {% include [toloka-requester-source-quality-control](../_includes/toloka-requester-source/id-toloka-requester-source/quality-control.md) %}
+        
+        To learn more, see the [Quality control overview](quality-control-overview.md) section.
+    
+    1. **Set the task price and overlap**
+    
+        In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay per task suite done by one Toloker.
+        
+        In the {% if locale == "en-com" %}**Overlap**{% endif %} field, define how many Tolokers must do each task.
+    
+    1. **Prepare and upload data**
+    
+        At this step [upload tasks](task_upload.md) to the pool.
+    
+    1. **Add control tasks to check performance**
+    
+        Use [control tasks](../../glossary.md#control-task) to monitor the quality of task completion.
+    
+    1. **Double-check your project and try out tasks** 
+    
+        {% note info %}
+
+        You can skip this step and return to it later.
+
+        {% endnote %}
+
+1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+
+At last you'll see the tip **Set up is finished and your pool is ready for labeling**. After that you can launch the pool by clicking the **Start labeling** button.
 
 ![](../_images/other/pool-settings.png)
 

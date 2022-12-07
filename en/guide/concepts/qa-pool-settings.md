@@ -1,6 +1,6 @@
 # Setting up quality control
 
-Quality control lets you get more accurate responses and restrict access to tasks for cheating users. Quality control consists of rules. All rules work independently.
+{% include [toloka-requester-source-quality-control](../_includes/toloka-requester-source/id-toloka-requester-source/quality-control.md) %}
 
 {% note warning %}
 
