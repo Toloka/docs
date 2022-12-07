@@ -152,7 +152,7 @@ If this template doesn't meet your needs, see other examples in the **Field tas
 
 ## Add a description {#add-description}
 
-To add a detailed description to the task, use one more [view.text](../reference/view.text.md) component. To insert a new line, use \n.
+To add a detailed description to the task, use one more [view.text](../reference/view.text.md) component. To insert a new line, use `\n`.
 
 {% cut "Show code" %}
 
