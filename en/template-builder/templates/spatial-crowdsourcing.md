@@ -4,9 +4,9 @@ For this type of project, you can use the **Spatial Crowdsourcing** preset.
 
 This preset is used for field tasks in the Toloka mobile app. The Toloker selects a point on the map, goes to the location, takes photos, and writes a comment.
 
-The preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md) by default. This section tells how to use the Template Builder for the same purpose. In the **Task interface** section of your project, select **Template builder** and paste the code of the following example to the **Config** section.
+The preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md) by default. This section describes how to use the Template Builder for the same purpose. In the **Task interface** section of your project, select **Template builder** and paste the code of the following example to the **Config** section.
 
-Take a look at the example: the interface includes a text block, a button for uploading the coordinates of the Toloker's device, a button for uploading photos, and a comment field. Note that validation and task layout are already configured in this Template Builder sample code.
+Take a look at the example: the interface includes a text block, a button for sending the coordinates of the Toloker's device, a button for uploading photos, and a comment field. Note that validation and task layout are already configured in this Template Builder sample code.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ZFj9dvvG3Zg9Xw)
 
@@ -152,7 +152,7 @@ If this template doesn't meet your needs, see other examples in the **Field tas
 
 ## Add a description {#add-description}
 
-To add a detailed description to the task, use one more [view.text](../reference/view.text.md) component. To insert a new line, use `\n`.
+To add a detailed description to the task, use one more [view.text](../reference/view.text.md) component. To start a new line, use `\n`.
 
 {% cut "Show code" %}
 
@@ -198,4 +198,4 @@ In this example, the text is highlighted with a blue border.
 
 ## See also {#see-also}
 
-- [Tutorials — video classification](../../guide/tutorials/walk.md)
+- [Tutorials — collecting offline data](../../guide/tutorials/walk.md)
