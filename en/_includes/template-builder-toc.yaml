@@ -48,7 +48,7 @@ items:
             href: ../template-builder/templates/sbs-audio.md
       - name: Field tasks
         items:
-          - name: Spatial Crowdsourcing
+          - name: Collecting offline data
             href: ../template-builder/templates/spatial-crowdsourcing.md
       - name: Data enrichment
         items:
