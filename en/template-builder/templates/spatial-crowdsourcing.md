@@ -1,14 +1,12 @@
-# Spatial Crowdsourcing
+# Collecting offline data
 
 For this type of project, you can use the **Spatial Crowdsourcing** preset.
 
 This preset is used for field tasks in the Toloka mobile app. The Toloker selects a point on the map, goes to the location, takes photos, and writes a comment.
 
-This preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md) by default. This section tells how to use the [Template Builder](index.md) for the same purpose. In the **Task interface** section of your project, select **Template builder** and paste the code of the following example to the **Config** section.
+The preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md) by default. This section tells how to use the Template Builder for the same purpose. In the **Task interface** section of your project, select **Template builder** and paste the code of the following example to the **Config** section.
 
-Take a look at the example: the interface includes a text block, a button for uploading the coordinates of the Toloker's device, a button for uploading photos, and a comment field.
-
-Note that validation and task layout are already configured in this Template Builder sample code.
+Take a look at the example: the interface includes a text block, a button for uploading the coordinates of the Toloker's device, a button for uploading photos, and a comment field. Note that validation and task layout are already configured in this Template Builder sample code.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ZFj9dvvG3Zg9Xw)
 
@@ -16,7 +14,7 @@ Note that validation and task layout are already configured in this Template Bu
 
 - [view.list](../reference/view.list.md): Displays data in a list.
 
-- [view.text](../reference/view.text.md): Displays a block with text.
+- [view.text](../reference/view.text.md): Adds a block with text.
 
   If you need formatted text, use the [view.markdown](../reference/view.markdown.md) component.
 
@@ -38,7 +36,9 @@ Note that validation and task layout are already configured in this Template Bu
 
 - [view.action-button](../reference/view.action-button.md): Adds a button that calls an action.
 
-  In this example, when the button is clicked, the coordinates of the Toloker's device will be transmitted, when they are within 50 meters of the specified location. To change this condition, replace the value of the `max` property with the desired distance. The combination of [condition.distance](../reference/condition.distance.md) and [@yandex-toloka/data.location](../reference/data.location.md) will allow you to check that the coordinates are transmitted and that they correspond to those that you set.
+  In this example, clicking the button calls [@yandex-toloka/data.location](../reference/data.location.md) which sends the coordinates of the Toloker's device. 
+  
+  The [@yandex-toloka/condition.distance](../reference/condition.distance.md) component compares the Toloker's coordinates with the business location that you specified. The Toloker can submit the response if the difference is less than 50 meters. To change this condition, replace the value of the `max` property with the desired distance. 
 
   {% cut "Show code" %}
 
@@ -152,14 +152,14 @@ If this template doesn't meet your needs, see other examples in the **Field tas
 
 ## Add a description {#add-description}
 
-To add a detailed description to the task, use one more [view.text](../reference/view.text.md) component. If you need to break a string into multiple lines, paste the newline characters `\n` in the appropriate places.
+To add a detailed description to the task, use one more [view.text](../reference/view.text.md) component. To insert a new line, use \n.
 
 {% cut "Show code" %}
 
 ```json
 {
   "type": "view.text",
-  "content": "Find the following store, and take and upload photos of it. \nIf your photos don't contain all the necessary information, add a comment"
+  "content": "Find the following store, and take and upload photos of it. \nIf your photos don't contain all the necessary information, add a comment."
 }
 ```
 
