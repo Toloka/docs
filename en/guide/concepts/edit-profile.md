@@ -2,46 +2,37 @@
 
 ## How to edit the profile
 
-1. Go to to the **Profile** tab.
+1. Go to the [requester profile]({{ profile }}).
 
-1. Click the ![](../_images/other/three-points-button.svg) button next to the **Account info** label.
+1. Click ![](../_images/other/three-points-button.svg) → **Edit** next to the **Account info** label.
 
-1. Click **Edit**.
+1. You can edit the fields:
 
-{% note info %}
+- **FIRST NAME**
 
-You can edit:
+- **LAST NAME**
 
-- **first name**; 
+- **DISPLAY NAME** 
 
-- **last name**;
+- **EMAIL**
 
-- **display name**; 
+- **PHONE**
 
-- **email**; 
-
-- **phone number**.
-
-{% endnote %}
-
-1. Submit changes and click **Save**.
-
+1. Click **Save**.
 
 ## How to delete the profile
 
 {% note alert %}
 
-You may lose your project data if you delete your Toloker account.
+You may lose the project data if you delete your requester account.
 
 {% endnote %}
 
 If you want to delete your requester account:
 
-1. Go to to the **Profile** tab.
+1. Go to the [requester profile]({{ profile }}).
 
-1. Click the ![](../_images/other/three-points-button.svg) button next to the **Account info** label.
-
-1. Click **Delete**.
+1. Click ![](../_images/other/three-points-button.svg) → **Delete** next to the **Account info** label.
 
 ## Troubleshooting
 

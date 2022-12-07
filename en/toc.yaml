@@ -384,7 +384,7 @@ items:
       - name: Profile
         items:
           - name: Editing the profile
-            href: guide/concepts/editing-the-profile.md
+            href: guide/concepts/edit-profile.md
           - name: About money
             items:
               - name: About account management
