@@ -14,9 +14,13 @@ You can first test the pool settings in the [sandbox](sandbox.md) and then [move
 
 To create a pool, follow the instructions:
 
-1. Click {% if locale == "en-com" %}**Add pool**{% endif %} on the project page.
+1. Click **Add pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. Set the **Pool name (visible only to you)** field. The default value of this field is the project name.
+
+1. By default, Tolokers see the description from the project settings. To use a different description, uncheck the **Use project description** box and Set the **Public description**.
+
+1. Click **Create**.
 
 1. Follow the steps in the pool wizard:
 
