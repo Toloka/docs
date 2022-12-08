@@ -194,8 +194,8 @@ In this example, the text is highlighted with a blue border.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/a6I75hXP3nS2wX)
 
-{% include [contact-support](../_includes/contact-support.md) %}
-
 ## See also {#see-also}
 
 - [Tutorials — collecting offline data](../../guide/tutorials/walk.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}
