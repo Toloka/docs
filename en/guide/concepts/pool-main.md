@@ -16,9 +16,9 @@ To create a pool:
 
 1. Click **Add a pool** on the project page.
 
-1. Set the **Pool name (visible only to you)** field. The pool name shown only to you (as a requester) on the [project](../../glossary.md#project) page.
+1. Set the **Pool name (visible only to you)** field. Only you will see this pool name on the [project](../../glossary.md#project) page.
 
-1. Specify the pool description which will be displayed instead of the project description in the task list for Tolokers. By default, Tolokers see the description from the project settings. To use a different description, uncheck the **Use project description** box and Set the **Public description**. If necessary, click **+ Private comment** to add a private project description that will only be available to you.
+1. Specify the pool description which will be displayed instead of the project description in the task list for Tolokers. By default, Tolokers see the description from the project settings. To use a different description, uncheck the **Use project description** box and set **Public description**. If necessary, click **+ Private comment** to add a private project description that only you will see.
 
 1. Click **Create**.
 
@@ -31,62 +31,62 @@ To create a pool:
     {% endnote %}
 
     1. **Select the audience for your task**
-        
-        Select Tolokers using [filters](../../glossary.md#filters). Tasks will only be shown to matching Tolokers, rather than to all of them.
-        
-        Click the **Add filter** button and set the filter parameters.
-    
-    1. **Setup quality control**
-    
-        {% include [toloka-requester-source-quality-control](../_includes/toloka-requester-source/id-toloka-requester-source/quality-control.md) %}
-        
-        To learn more, see the [Quality control overview](quality-control-overview.md) section.
-    
-    1. **Set the task price and overlap**
-    
-        In the **Price per task suite, $** field, set the amount of money to pay per task suite done by one Toloker.
-        
-        {% include [toloka-requester-source-tolokers-interest](../_includes/toloka-requester-source/id-toloka-requester-source/tolokers-interest.md) %}
-        
-        In the **Overlap** field, define how many Tolokers must do each task.
-        
-        You can also set up [dynamic pricing](../../glossary.md#dynamic-pricing) and [dynamic overlap](../../glossary.md#dynamic-overlap).
-    
-    1. **Prepare and upload data**
-    
-        [Upload tasks](task_upload.md) to the pool. This step will be enabled after the previous steps are completed.
 
-    1. **Add control tasks to checking performance**
-    
+        Select Tolokers using [filters](../../glossary.md#filters). Tasks will only be shown to matching Tolokers, rather than to all of them.
+
+        Click the **Add filter** button and set the filter parameters.
+
+    1. **Setup quality control**
+
+        {% include [toloka-requester-source-quality-control](../_includes/toloka-requester-source/id-toloka-requester-source/quality-control.md) %}
+
+        To learn more, see the [Quality control overview](quality-control-overview.md) section.
+
+    1. **Set the task price and overlap**
+
+        In the **Price per task suite, $** field, set the amount of money to pay per task suite done by one Toloker.
+
+        {% include [toloka-requester-source-tolokers-interest](../_includes/toloka-requester-source/id-toloka-requester-source/tolokers-interest.md) %}
+
+        In the **Overlap** field, define how many Tolokers must do each task.
+
+        You can also set up [dynamic pricing](../../glossary.md#dynamic-pricing) and [dynamic overlap](../../glossary.md#dynamic-overlap).
+
+    1. **Prepare and upload data**
+
+        [Upload tasks](task_upload.md) to the pool. This step will be enabled after you complete the previous steps.
+
+    1. **Add control tasks for checking performance**
+
         Add [control tasks](../../glossary.md#control-task) to monitor the quality of task completion:
-        
+
         1. Enter correct responses.
-        
+
         2. Select the fields to use.
-        
-        3. Click **Save and go next** or **Skip task**.
-        
+
+        3. Click **Save and go to next** or **Skip task**.
+
         4. Click **Save all control tasks**.
-        
+
         {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
-    
-    1. **Double-check your project and try out tasks** 
-    
+
+    1. **Double-check your project and try out tasks**
+
         At this step, check how the task will look from the Tolokers's point of view.
-    
+
         {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
-        
-    1. **Add optional pool settings** 
-    
+
+    1. **Add optional pool settings**
+
         Set up advanced pool settings.
-    
+
         {% note info %}
 
-        This step will be enabled after the previous steps are completed. You can skip this step by clicking **Use default settings**.
+        This step will be enabled after you complete the previous steps. You can skip this step by clicking **Use default settings**.
 
         {% endnote %}
 
-After all the steps you'll see the tip **Set up is finished and your pool is ready for labeling** on the pool page.
+After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
 
 ![](../_images/other/pool-settings.png)
 
@@ -99,7 +99,7 @@ Tasks in pools will automatically be available in the web version of Toloka and 
 ||**My tasks may contain shocking or pornographic content** | Whether the tasks have shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
 If you aren't sure whether the tasks have shocking and pornographic content, enable this option. | **Select the audience for your tasks**||
-||Filters | By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
+||**Filters** | By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
 
 If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
 

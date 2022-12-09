@@ -82,9 +82,9 @@ Before you begin:
 
 1. Click **Add a pool** on the project page.
 
-1. Set the **Pool name (visible only to you)** field. The pool name shown only to you (as a requester) on the [project](../../glossary.md#project) page.
+1. Set the **Pool name (visible only to you)** field. Only you will see this pool name on the [project](../../glossary.md#project) page.
 
-1. Specify the pool description which will be displayed instead of the project description in the task list for Tolokers. By default, Tolokers see the description from the project settings. To use a different description, uncheck the **Use project description** box and Set the **Public description**. If necessary, click **+ Private comment** to add a private project description that will only be available to you.
+1. Specify the pool description which will be displayed instead of the project description in the task list for Tolokers. By default, Tolokers see the description from the project settings. To use a different description, uncheck the **Use project description** box and set **Public description**. If necessary, click **+ Private comment** to add a private project description that only you will see.
 
 1. Click **Create**.
 
@@ -160,7 +160,7 @@ Before you begin:
     1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
 1. {% include [toloka-requester-source-add-control-tasks](../_includes/toloka-requester-source/id-toloka-requester-source/add-control-tasks.md) %}
-    
+
     1. Check the {% if locale == "en-com" %}**result**{% endif %} checkbox, and select the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
@@ -168,24 +168,24 @@ Before you begin:
     1. Note the {% if locale == "en-com" %}**Distribution of correct responses for control tasks**{% endif %} graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
         [![Upload your file. Step 5.4](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png =420x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png)
-        
-1. **Double-check your project and try out tasks** 
-    
+
+1. **Double-check your project and try out tasks**
+
     At this step, check how the task will look from the Tolokers's point of view.
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
-    
-1. **Add optional pool settings** 
+
+1. **Add optional pool settings**
 
     Set up advanced pool settings.
 
     {% note info %}
 
-    This step will be enabled after the previous steps are completed. You can skip this step by clicking **Use default settings**.
+    This step will be enabled after you complete the previous steps. You can skip this step by clicking **Use default settings**.
 
     {% endnote %}
 
-After all the steps you'll see the tip **Set up is finished and your pool is ready for labeling** on the pool page.
+After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
 
 ## Start labeling {#labeling}
 
