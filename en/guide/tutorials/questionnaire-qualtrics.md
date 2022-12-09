@@ -25,17 +25,15 @@ The comparison of all the three kinds of the survey presets is provided in the [
 
 Before you begin:
 
-- Create a survey on Qualtrics and get its approval by your institution's IRB.
+- Prepare the link to your Qualtrics survey, and the IRB approval number.
 
 - {% include [tutorials-register](../_includes/tutorials/register.md) %}
 
 - {% include [tutorials-top-up-tutorial](../_includes/tutorials/top-up-tutorial.md) %}
 
-- See the [What tasks can't be placed in Toloka?](../concepts/unwanted.md#requirements-for-survey) section. Remember that both Tolokers and requesters are anonymous.
+- See the [What tasks can't be placed in Toloka?](../concepts/unwanted.md#requirements-for-survey) section. 
 
-    - You should not collect personal data: a full name, contacts, or any other information that can be used to identify a Toloker. To determine whether a Toloker belongs to your target audience, you can ask for their city, date of birth, and age category.
-
-    - To communicate with Tolokers, use private messages in Toloka only.
+   Remember that both Tolokers and requesters are anonymous. You should not collect personal data: a full name, contacts, or any other information that can be used to identify a Toloker. To determine whether a Toloker belongs to your target audience, you can ask for their city, date of birth, and age category.
 
 ## Choose a preset {#preset}
 
@@ -47,7 +45,7 @@ Pick a preset depending on your survey length:
 
 * For long surveys that take 30–60 minutes — [Long survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvv&choosedTag=A3MdOlBKzWKcrpxg3JNQ).
 
-You can create the project manually:
+Another way to choose a preset is to do the following:
 
 1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
@@ -70,9 +68,9 @@ You can create the project manually:
 
     * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find the detailed instructions after they start the survey.  
 
-    ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =700x)
+    ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =450x)
 
-    Note that you don't have to configure the task interface and write the instructions. They are standard for all the Qualtrics survey projects.
+    Note that the task interface and detailed instructions are preconfigured: they are standard for all the Qualtrics survey projects.
 
     {% cut "How your task will look for Tolokers" %}
 
@@ -84,13 +82,13 @@ You can create the project manually:
 
     * **Total number of Tolokers**: Add the required number of respondents.
 
-    * **Countries of residence** (optional): Specify the countries to sample from. If no selection is made, your survey is available to Tolokers from 80 countries specified in the [Countries available in this release](https://toloka.ai/toloka-for-social-sciences/) list.
+    * **Countries of residence** (optional): Select the countries to sample from. If no selection is made, your survey will be available to Tolokers from 80 countries specified in the [Countries available in this release](https://toloka.ai/toloka-for-social-sciences/) list.
 
     * **Gender** (optional): Set the gender of Tolokers.
 
     * **Age** (optional): Enter the age of Tolokers between 18 and 90.
 
-    ![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png "Survey audience" =700x)
+    ![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png "Survey audience" =450x)
 
     {% note info %}
 
@@ -106,7 +104,7 @@ You can create the project manually:
 
     * **IRB approval / exemption number**: The study number approved by the IRB.
 
-    ![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png "Survey approval" =700x)
+    ![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png "Survey approval" =450x)
 
 1. Revise the settings carefully. You will not be able to change them later.
 
@@ -120,7 +118,7 @@ Toloka controls the data collection completion by exchanging a unique code with 
 
 1. After you embed the code to your survey, select **My Qualtrics survey has an embedded completion code from Toloka**.
 
-![Academic credentials](../_images/tutorials/survey-qualtrics/embed-code.png "Embed code" =700x)
+   ![Academic credentials](../_images/tutorials/survey-qualtrics/embed-code.png "Embed code" =700x)
 
 1. Click **Launch survey**.
 
