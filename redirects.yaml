@@ -4,7 +4,7 @@ common:
   - from: /guide/index.md
     to: /index.md
   - from: /guide/concepts/protect-your-data.md
-    to: /guide/tutorials/data-security.md
+    to: /guide/concepts/data-security.md
   - from: /api/concepts/about.md
     to: /api/index.md
   - from: /toloka-apps/api/ref/app/apps_get.md
@@ -50,7 +50,7 @@ ru:
   - from: /api/concepts/download-tasks.md
     to: /api/concepts/upload-tasks.md
   - from: /guide/concepts/protect-your-data.md
-    to: /guide/tutorials/data-security.md
+    to: /guide/concepts/data-security.md
   - from: /api/concepts/about.md
     to: /api/index.md
 
