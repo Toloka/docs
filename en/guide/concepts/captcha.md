@@ -4,7 +4,7 @@
 
 Captchas and the [Fast responses](quick-answers.md) rule provide a high level of protection from robots.
 
-To show a captcha to Tolokers, set {% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} in the [pool](../../glossary.md#pool) settings.
+To show a captcha to Tolokers, set captcha frequency in the [pool](../../glossary.md#pool) settings.
 
 In Toloka, a captcha is normally shown once every 10 assignments. If responses are given quickly and captchas get in the way, they can be shown every 20 assignments.
 

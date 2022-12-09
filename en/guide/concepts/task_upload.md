@@ -1,8 +1,8 @@
 # How to upload tasks
 
-To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
+To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+1. Go to the step **Prepare and upload data** if you're creating a pool or click the **Upload** button on the pool page.
 
 1. Attach a prepared dataset or media files.
 
