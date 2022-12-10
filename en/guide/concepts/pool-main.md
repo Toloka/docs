@@ -72,7 +72,7 @@ To create a pool:
 
     1. **Double-check your project and try out tasks**
 
-        At this step, check how the task will look from the Tolokers's point of view.
+        At this step, check how the task will look from the Toloker's point of view.
 
         {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 

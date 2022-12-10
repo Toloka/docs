@@ -169,15 +169,11 @@ Before you begin:
 
         [![Upload your file. Step 5.4](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png =420x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.4.png)
 
-1. **Double-check your project and try out tasks**
-
-    At this step, check how the task will look from the Tolokers's point of view.
+1. At the **Double-check your project and try out tasks** step, check how the task will look from the Toloker's point of view.
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. **Add optional pool settings**
-
-    Set up advanced pool settings.
+1. At the **Add optional pool settings** step, set up advanced pool settings.
 
     {% note info %}
 
