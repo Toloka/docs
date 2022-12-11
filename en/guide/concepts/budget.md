@@ -26,7 +26,7 @@ The price of a task is set by the requester in the [pool settings](../../glossar
 
 ## Fees {#comission}
 
-The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md). It is 30%, but not less than $0.005.
+The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md). It is 30%, but not less than $0.001.
 
 The amount by project is shown in your [profile]({{ profile }}) (on the {% if locale == "en-com" %}**Expenses**{% endif %} tab). You can see total fees for the pool tasks on the pool page (the {% if locale == "en-com" %}**Budget spent (+ markup)**{% endif %} and {% if locale == "en-com" %}**Approximate budget (+ markup)**{% endif %} fields).
 
@@ -113,4 +113,4 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

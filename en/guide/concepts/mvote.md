@@ -322,4 +322,4 @@ All responses to the task are taken into account. If one response differs from t
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

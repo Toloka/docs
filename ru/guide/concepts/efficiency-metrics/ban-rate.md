@@ -30,4 +30,4 @@ $П_{блок} = \frac{К_{блок}}{К_{общее}}\times100$
 
 - Низкий показатель — `> 20%`.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

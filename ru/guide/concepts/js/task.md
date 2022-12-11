@@ -272,4 +272,4 @@ Promise.all(promises)
 
 - `solution` — ответ исполнителя на задание. Если не передан, то используется текущее ([`getSolution()`](#getSolution)).
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

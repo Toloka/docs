@@ -30,4 +30,6 @@ If you deleted your Toloka account, create a new Yandex ID and register in Tolok
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+[Other questions](troubleshooting.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

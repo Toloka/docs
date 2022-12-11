@@ -23,4 +23,4 @@ To upload a task with formatted text (HTML tags and styles):
 
 Before uploading a task, make sure that all quotation marks in the formatted text are [escaped](../pool_csv.md#string).
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

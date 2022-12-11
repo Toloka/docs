@@ -96,4 +96,4 @@
 - Не показывать сообщение (`"false"`). | нет | `"top-left"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

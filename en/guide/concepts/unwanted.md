@@ -224,4 +224,4 @@ You can publish any tasks that require analyzing or creating content (see [Tips 
 - [Register in Toloka as a requester](access.md)
 - [Learn how to post tasks](first-project.md)
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

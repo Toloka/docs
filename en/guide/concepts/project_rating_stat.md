@@ -45,4 +45,4 @@ If you don't understand what the problem is, run a mini-survey and ask the Tolok
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

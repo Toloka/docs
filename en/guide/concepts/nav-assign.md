@@ -18,7 +18,6 @@ The quality control rules feature the following actions:
 
     - [Control tasks](goldenset.md)
     - [Majority vote](mvote.md)
-    - [Captcha](captcha.md)
     - [Review results](reviewing-assignments.md)
 
     {% endcut %}
@@ -79,4 +78,4 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

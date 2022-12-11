@@ -420,4 +420,4 @@
 
 - Создайте [Проект 4](item_more_similar.md) для сравнения подходящих изображений.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

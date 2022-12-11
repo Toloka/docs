@@ -88,4 +88,4 @@ Supported values:
 - Don't display the message (`"false"`). | no | `"top-left"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

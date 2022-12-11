@@ -420,4 +420,4 @@ You can check the results in two ways:
 
 - Learn more about [decomposition](solution-architecture.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -136,7 +136,7 @@ Using [filters](../../glossary.md#filters), you can filter out Tolokers who are 
 
 - Consider what type of acceptance you'll use:
 
-    For tasks with auto acceptance, the best quality control rules are captchas, control tasks, majority vote, fast responses, and recompletion of assignments from banned users.
+    For tasks with auto acceptance, the best quality control rules are control tasks, majority vote, fast responses, and recompletion of assignments from banned users.
 
     For tasks with non-automatic acceptance, the best methods are fast responses and review results.
 
@@ -208,4 +208,4 @@ See also:
 
 - [Toloka blog]({{ toloka-blog-index }}). Read our blog for useful tutorials and information about new Toloka features.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

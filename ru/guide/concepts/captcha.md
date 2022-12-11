@@ -2,6 +2,8 @@
 
 {% include [deprecate](../../_includes/deprecate.md) %}
 
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
 Капча и правило [быстрые ответы](quick-answers.md) обеспечивают высокий уровень защиты от роботов.
 
 Чтобы показывать капчу исполнителям, установите {% if locale == "ru-ru" %}[частоту показа капчи](pool_poolparams.md#captcha){% endif %}{% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} в настройках [пула](../../glossary.md#pool).
@@ -157,4 +159,4 @@
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

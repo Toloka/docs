@@ -337,4 +337,4 @@
 
 - Создайте [Проект 2](find_an_item_in_store.md) для поиска похожих объектов в интернет магазине.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -564,4 +564,4 @@ Check the links that you use. There are several ways to unify links:
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -1,5 +1,7 @@
 # Captcha
 
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
 Captchas and the [Fast responses](quick-answers.md) rule provide a high level of protection from robots.
 
 To show a captcha to Tolokers, set {% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} in the [pool](../../glossary.md#pool) settings.
@@ -52,7 +54,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**accept all assignments from this performer in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
@@ -163,4 +165,4 @@ The percentage of correct responses is based on the total number of captchas pro
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

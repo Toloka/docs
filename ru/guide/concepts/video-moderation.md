@@ -241,20 +241,6 @@
 
         {% endnote %}
 
-    - {% if locale == "ru-ru" %}**Капча**{% endif %}{% if locale == "en-com" %}**Captcha**{% endif %} — предотвращает выполнение заданий роботами.
-
-    1. В поле {% if locale == "ru-ru" %}**Учитывать последних вводов капчи**{% endif %}{% if locale == "en-com" %}**Recent values to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `10`.
-
-    1. Задайте правило для капчи: если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %}** ≥ 5** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%) **{% endif %}**< 65**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**на проекте**{% endif %}{% if locale == "en-com" %}**on project**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Капча**.
-
-        Это означает, что если исполнитель верно вводит капчу менее чем в 65% случаев, он не сможет выполнять задания на проекте в течение 10 дней.
-
-        {% note info %}
-
-        Вы можете скопировать настройки контроля качества из другого пула. Для этого в разделе {% if locale == "ru-ru" %}**Исполнители**{% endif %}{% if locale == "en-com" %}**Users filter**{% endif %} нажмите кнопку {% if locale == "ru-ru" %}**Скопировать настройки из...**{% endif %}{% if locale == "en-com" %}**Copy settings from...**{% endif %}.
-
-        {% endnote %}
-
 1. Установите перекрытие — количество исполнителей, которые должны выполнить задание. В разделе {% if locale == "ru-ru" %}**Перекрытие**{% endif %}{% if locale == "en-com" %}**Overlap**{% endif %} укажите значение поля {% if locale == "ru-ru" %}**Перекрытие**{% endif %}{% if locale == "en-com" %}**Overlap**{% endif %}. Для заданий этого типа, как правило, `3-5`.
 
 1. Укажите {% if locale == "ru-ru" %}**Дополнительные настройки**{% endif %}{% if locale == "en-com" %}**Additional settings**{% endif %} пула:
@@ -431,4 +417,4 @@
 
 {% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

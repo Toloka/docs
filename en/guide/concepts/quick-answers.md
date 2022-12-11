@@ -2,12 +2,6 @@
 
 This rule is necessary to filter out cheating Tolokers who complete tasks too quickly and carelessly. You can also use it to provide protection against robots that can distort the final results in the pool.
 
-{% note info %}
-
-If you need additional protection from robots, use [captchas](captcha.md).
-
-{% endnote %}
-
 ## When to use {#when-use}
 
 Restrict the pool access for Tolokers who respond too quickly to:
@@ -138,4 +132,4 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

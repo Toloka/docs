@@ -98,4 +98,4 @@ If you pass texts to the input data, you can load 2 different tasks in the pool.
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -323,4 +323,4 @@ eps = z_prob(j) * (1 / Y) / r
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

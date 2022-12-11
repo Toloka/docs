@@ -460,4 +460,4 @@ You can't use a range as a fixed value.
 
 [Other questions](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

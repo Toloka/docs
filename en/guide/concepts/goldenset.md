@@ -290,4 +290,4 @@ Smart mixing is set up when you upload tasks to the pool. After creating a pool,
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -140,4 +140,4 @@ Tasks have infinite overlap in the training pool. As long as the training pool i
 
 [Other questions](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

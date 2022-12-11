@@ -88,6 +88,6 @@ h3 {
     </div>
 </div>
 
-{% include [global-community](../en/_includes/global-community.md) %}
+{% include [global-community](./_includes/global-community.md) %}
 
-{% include [social-media](../en/_includes/social-media.md) %}
+{% include [social-media](./_includes/social-media.md) %}

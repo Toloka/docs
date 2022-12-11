@@ -94,4 +94,4 @@
 
 [Другой вопрос](support.md#feedback_oyr_m5s_hlb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

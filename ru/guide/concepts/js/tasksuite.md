@@ -231,4 +231,4 @@ Promise.all(promises)
 
 - `solutions` — массив ответ исполнителя на задания. Если не передан, то используются текущие ([`getSolutions()`](#getSolutions)).
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

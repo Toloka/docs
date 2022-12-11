@@ -273,4 +273,4 @@ Validates responses according to output data parameters. Returns [`SolutionValid
 
 - `solution` — The Toloker's response to the task. If omitted, the current one is used ([`getSolution()`](#getSolution)).
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

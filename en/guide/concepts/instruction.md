@@ -133,4 +133,4 @@ If the tags or attributes disappear after you save the instructions (for example
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

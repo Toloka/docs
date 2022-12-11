@@ -90,6 +90,8 @@ You can choose how often [captchas](../../glossary.md#captcha) are shown to Tolo
 
 To show the captcha to Tolokers, set [the quality control rule](captcha.md).
 
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
 #### {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}
 
 Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
@@ -327,4 +329,4 @@ If you uploaded them using a different method, clone your pool and upload the ne
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

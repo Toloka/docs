@@ -1,1 +1,0 @@
-[![Написать в службу поддержки](../../_images/contact-support.svg)](../troubleshooting/support.md#project-setting)

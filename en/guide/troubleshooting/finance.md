@@ -12,4 +12,6 @@ That's normal. For example, if you entered $25 and you see "25,000", it's still 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+[Other questions](troubleshooting.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -124,4 +124,4 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -321,4 +321,4 @@ You need to use [smart mixing](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

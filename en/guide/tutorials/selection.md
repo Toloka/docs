@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Object recognition & detection
 
 In this tutorial, you will learn how to run object recognition in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -36,9 +34,9 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show performers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-project-step-1.png)
 
@@ -56,7 +54,7 @@ Before you begin:
 
     1. Select the {% if locale == "en-com" %}**I want to outline multiple types of objects**{% endif %} checkbox if you need to detect more than one category of objects in an image. Replace the samples with your types:
 
-        - {% if locale == "en-com" %}**Object name for performers**{% endif %}: This is the label that Tolokers will see. Make sure it is clear and correct.
+        - {% if locale == "en-com" %}**Object name for Tolokers**{% endif %}: This is the label that Tolokers will see. Make sure it is clear and correct.
 
         - {% if locale == "en-com" %}**Name in labeling results**{% endif %}: This is the value you will see in the file with the labeling results.
 
@@ -144,24 +142,34 @@ At this step, upload your task data to Toloka.
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
-1. Create the tasks for Tolokers:
+1. Attach a prepared dataset or media files.
 
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+    {% list tabs %}
 
-        For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
+    - A prepared dataset
 
-        ```plaintext
-        INPUT:image
-        https://tlk.s3.yandex.net/sdc/photos/0c7b15d0f4e5db0416189afe6486f3cb.jpg
-        https://tlk.s3.yandex.net/sdc/photos/3e5d32e31dfd50fe826fd46b761481cf.jpg
-        https://tlk.s3.yandex.net/sdc/photos/0fb80721932aa59ecc684141433170b6.jpg
-        ```
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-    1. Open the downloaded file, and replace the sample links with links to your images.
+            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+            ```plaintext
+            INPUT:image
+            https://tlk.s3.yandex.net/sdc/photos/0c7b15d0f4e5db0416189afe6486f3cb.jpg
+            https://tlk.s3.yandex.net/sdc/photos/3e5d32e31dfd50fe826fd46b761481cf.jpg
+            https://tlk.s3.yandex.net/sdc/photos/0fb80721932aa59ecc684141433170b6.jpg
+            ```
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        1. Open the downloaded file, and replace the sample links with links to your images.
+
+        1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
+
+    - Media files
+
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+
+    {% endlist %}
+
+1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
 1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
@@ -317,4 +325,6 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/toloka-kit/knowledge-base/road_signs.tsv)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

@@ -39,4 +39,4 @@
 - Создайте [Проект 3](image-segmentation-project3.md) для проверки результатов.
 - Почитайте подробнее [про декомпозицию заданий](solution-architecture.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -50,7 +50,7 @@ If you think that this number is too large or small, you may have incorrectly co
 ||{% if locale == "en-com" %}**Task completion time**{% endif %} | The average time spent on one task suite across all project pools. Specified in seconds.||
 ||{% if locale == "en-com" %}**Spent (+ fee)**{% endif %} | The total amount of money spent on the project. The [fee](budget.md) amount is shown in parentheses.
 
-Please note that the minimum fee is $0.005.
+Please note that the minimum fee is $0.001.
 
 {% cut "Recommendations" %}
 
@@ -151,4 +151,4 @@ If the number is too small, check the instructions, quality control rules, and f
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

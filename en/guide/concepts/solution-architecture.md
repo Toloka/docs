@@ -117,4 +117,4 @@ The simpler the task, the cheaper it is and the better the quality of the final 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

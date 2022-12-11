@@ -24,13 +24,6 @@ If you are working with Russian-language texts in the task, you don't need to di
 
 If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md) | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Captcha frequency**{% endif %} | The frequency of [captcha](../../glossary.md#captcha) display:
-
-- “No” — Don't show captchas.
-- “Low” — Show a captcha after every 20 assignments.
-- “Medium”/ “High” — Show a captcha after every 10 assignments.
-
-To show the captcha to Tolokers, set [the quality control rule](captcha.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
 Set the time period when you can check the tasks and reject them if the results are poor.
@@ -41,7 +34,7 @@ To learn more about non-automatic acceptance, go to [Reviewing assignments](offl
 [Training pool](../../glossary.md#training-pool) that will be linked to the main one. | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Level required, %**{% endif %} | This field is only available if you have filled in the **Training** field.
 
-Percentage of correct responses in training tasks (from 0 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the performer gave in each task.
+Percentage of correct responses in training tasks (from 0 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
 
 The minimum required level that you can set is 5. Tolokers who complete training with apercentage below this level won't have access to tasks. | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Review period in days**{% endif %} | The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:
@@ -68,7 +61,7 @@ For example, you can use this parameter if you need an open pool where you regul
 
 - {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).
 
-- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train performers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
+- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
 
 - {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
 

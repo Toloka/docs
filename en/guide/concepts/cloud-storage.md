@@ -115,4 +115,4 @@ For example, if you want to use images in the `image` field, specify the file li
 
 If these recommendations didn't help:
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

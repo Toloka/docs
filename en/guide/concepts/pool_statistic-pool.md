@@ -105,7 +105,7 @@ If you think that this number is too large or small, you may have incorrectly co
 
 If you spent more than you planned, check the price settings in the pool and the quality control rules. For example, [Dynamic pricing](dynamic-pricing.md#section_ucl_3hl_vlb) and [Recompletion of assignments from banned users](restore-task-overlap.md) increase the cost of the pool.
 
-Please note that the minimum fee is $0.005.
+Please note that the minimum fee is $0.001.
 
 {% cut "Recommendations" %}
 
@@ -258,4 +258,4 @@ The progress bar shows the number of task suites including the overlap. If the o
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

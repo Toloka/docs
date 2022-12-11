@@ -82,4 +82,4 @@
     https://storage.yandexcloud.net/my-bucket/2.jpg
     ```
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

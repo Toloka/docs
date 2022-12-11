@@ -638,8 +638,6 @@
 
     - Для проекта с перекрытием больше единицы
 
-      В блоке {% if locale == "ru-ru" %}**Контроль качества**{% endif %}{% if locale == "en-com" %}**Quality control**{% endif %} задайте {% if locale == "ru-ru" %}**Частоту показа капчи**{% endif %}{% if locale == "en-com" %}**Captcha frequency**{% endif %}, например {% if locale == "ru-ru" %}**Среднюю**{% endif %}{% if locale == "en-com" %}**Middle**{% endif %}.
-
       Добавьте следующие правила контроля качества:
 
       1. {% if locale == "ru-ru" %}**Контрольные задания**{% endif %}{% if locale == "en-com" %}**Control tasks**{% endif %} — отсеивает исполнителей, которые часто ошибаются в контрольных заданиях.
@@ -665,16 +663,6 @@
             {% if locale == "ru-ru" %}![](../_images/other/fast-answers2.png){% endif %}
 
             Это означает, что если исполнитель выполнит хотя бы одну страницу заданий быстрее, чем за 20 секунд, он не сможет выполнять ваши задания 10 дней.
-
-      1. {% if locale == "ru-ru" %}**Капча**{% endif %}{% if locale == "en-com" %}**Captcha**{% endif %} — предотвращает выполнение заданий роботами.
-
-          1. В поле {% if locale == "ru-ru" %}**Учитывать последних вводов капчи**{% endif %}{% if locale == "en-com" %}**Recent captchas to use**{% endif %} введите количество последних страниц заданий, выполненных исполнителем. Например, `10`.
-
-          1. Задайте правило для капчи: если {% if locale == "ru-ru" %}**количество ответов**{% endif %}{% if locale == "en-com" %}**number of responses**{% endif %}** ≥ 5** и {% if locale == "ru-ru" %}**процент правильных ответов**{% endif %}{% if locale == "en-com" %}**correct responses (%) **{% endif %}**< 65**, то {% if locale == "ru-ru" %}**заблокировать**{% endif %}{% if locale == "en-com" %}**ban**{% endif %}{% if locale == "ru-ru" %}**на проекте**{% endif %}{% if locale == "en-com" %}**on project**{% endif %} на {% if locale == "ru-ru" %}**10 дней**{% endif %}{% if locale == "en-com" %}**10 days**{% endif %}. В поле {% if locale == "ru-ru" %}**Причина**{% endif %}{% if locale == "en-com" %}**Reason**{% endif %} введите **Капча**.
-
-            {% if locale == "ru-ru" %}![](../_images/control-rules/captcha/qcr-captcha_example1.png){% endif %}
-
-            Это означает, что если исполнитель верно вводит капчу менее чем в 65% случаев, он не сможет выполнять задания на проекте в течение 10 дней.
 
       1. {% if locale == "ru-ru" %}**Пропуск заданий**{% endif %}{% if locale == "en-com" %}**Skipped assignments**{% endif %} — отсеивает исполнителей, которые пропускают несколько страниц заданий подряд.
 
@@ -930,4 +918,4 @@
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -1356,4 +1356,4 @@ Add two new strings to the input data specification:
 
     {% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

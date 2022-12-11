@@ -66,4 +66,4 @@ Supported values: `"S"`, `"M"`, `"L"`, `"XL"`. | no | `"L"`||
 ||`class`| The CSS class for the field. For example, `class="annotation"`. | no | `".field" ".field_type_input"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

@@ -585,7 +585,7 @@ not_var{{else}}
     </div>
     <div class="info__block">
         <div class="info__content">
-            <a href={{image}} target="_blank" class="info__link">Link to the product image</a>
+            <a href=not_var{{image}} target="_blank" class="info__link">Link to the product image</a>
         </div>
     </div>
 </div>
@@ -3373,4 +3373,4 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 }
 ```
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

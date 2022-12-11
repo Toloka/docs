@@ -1,5 +1,3 @@
-{% include [image-styles](../../../../_includes/image-styles.md) %}
-
 # Accessing the API
 
 To send an authorization request to the API, you need an OAuth token.
@@ -21,3 +19,5 @@ Authorization: OAuth <OAuth token>
 [![Accessing the API](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png)
 
 {% include [contact-support](../../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../../_includes/image-styles.md) %}

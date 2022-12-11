@@ -39,4 +39,4 @@ To add a button to a task, use the `not_var{{button}}` component. Example:
 ||`class`| CSS class. | no | `".button"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

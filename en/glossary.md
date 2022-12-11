@@ -28,7 +28,7 @@ Banning Tolokers {#banning-tolokers}
 
 ### C
 
-Captcha (quality control rule) {#captcha}
+Captcha {#captcha}
 
 : Restricts access to tasks for Tolokers who fail to enter captcha several times in a row. Protects your project against fake users (robots).
 
@@ -126,11 +126,21 @@ Fast responses {#fast-responses}
 
 Fee {#fee}
 
-: The requester is charged a fee for using Toloka — a percentage of the cost of tasks. It is 30%, but not less than $0.005.
+: The requester is charged a fee for using Toloka — a percentage of the cost of tasks. It is 30%, but not less than $0.001.
 
 Field task {#field-task}
 
 : A task to be performed in the mobile app. It usually contains a point on the map that the Toloker needs to go to, check something, and take photos.
+
+File with tasks {#tsv}
+
+: To upload tasks, use TSV, XLSX or JSON files:
+
+  - TSV (tab-separated values) is a text file format in which data is separated by a tab, and lines are separated by a newline symbol.
+  
+  - XLSX is a spreadsheet file format developed by Microsoft to replace the outdated XLS file type.
+  
+  - JSON (JavaScript Object Notation) is a text file format used to store and transfer structured data.
 
 Filters {#filters}
 
@@ -373,10 +383,6 @@ Training task {#training-task}
   Training tasks can be used in zero-price [training pools](#training-pool) to choose Tolokers who pass training.
 
   They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and ban Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) rule.
-
-TSV file with tasks {#tsv}
-
-: TSV (tab-separated values) is a text file format in which data is separated by a tab, and lines are separated by a newline symbol.
 
 ### V
 
