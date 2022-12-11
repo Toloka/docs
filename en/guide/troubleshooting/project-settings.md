@@ -458,6 +458,6 @@ You can't use a range as a fixed value.
 
 {% endcut %}
 
-[Other questions](support.md#help)
+[Other questions](troubleshooting.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
