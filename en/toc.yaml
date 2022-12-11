@@ -463,6 +463,32 @@ items:
               - include:
                   path: _includes/crowd-kit-toc.yaml
                   mode: link
+  - name: FAQ
+    items:
+      - name: All questions on one page
+        href: guide/faq/faq.md
+      - name: Registration and getting started
+        href: guide/faq/register-and-start.md
+      - name: Sandbox
+        href: guide/faq/sandbox.md
+      - name: Setting up a project
+        href: guide/faq/project-settings.md
+      - name: Setting up a pool
+        href: guide/faq/pool-setup.md
+      - name: Adding tasks to a pool
+        href: guide/faq/adding-tasks-to-the-pool.md
+      - name: Working with results
+        href: guide/faq/result-questions.md
+      - name: Archiving pools and projects
+        href: guide/faq/pool-n-project-archive.md
+      - name: Payments
+        href: guide/faq/finance.md
+      - name: Tolokers
+        href: guide/faq/users.md
+      - name: Questions about presets
+        href: guide/faq/questions-about-templates.md
+      - name: Support
+        href: guide/faq/support.md
   - name: Troubleshooting and support
     items:
       - name: All questions on one page
