@@ -79,25 +79,9 @@ If you want to create main and secondary accounts, [write to support](../trouble
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
-
-If the address is in Saint Petersburg, enter Saint Petersburg in the **Region** field, then specify the street, house number, and postal code. You don't need to fill out the other fields.
-
-If the address is in Moscow, enter Moscow in the **Region** field, then specify the street, house number, and postal code. [Learn more](refill.md#step-by-step) about connecting to billing.
-
-If it still doesn't work, [enter](../troubleshooting/troubleshooting.md) your full address with the postal code in the feedback form. We'll help you fill out the fields correctly.
-
-{% endcut %}
-
 {% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
 
 That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
-
-{% endcut %}
-
-{% cut "Why do we top up our account in a non-Russian currency?" %}
-
-Toloka is an international platform for users from different countries. The platform is provided by the Swiss company Yandex Services AG.
 
 {% endcut %}
 

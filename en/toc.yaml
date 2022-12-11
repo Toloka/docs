@@ -395,8 +395,6 @@ items:
                 href: guide/concepts/refund.md
               - name: Payment documents
                 href: guide/concepts/documents.md
-              - name: Questions and answers
-                href: guide/concepts/questions.md
           - name: Shared access to the requester's account
             href: guide/concepts/multiple-access.md
   - name: Useful recommendations
@@ -463,8 +461,6 @@ items:
                   mode: link
   - name: Troubleshooting and support
     items:
-      - name: Get help
-        href: guide/concepts/get-help.md
       - name: All questions on one page
         href: guide/troubleshooting/troubleshooting.md
       - name: Registration and getting started

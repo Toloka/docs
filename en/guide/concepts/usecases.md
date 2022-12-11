@@ -114,7 +114,7 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
 If you didn't find a suitable example, use general [instructions](main-steps.md) for launching and setting up projects.
 
-You can [contact us or our partners](get-help.md) if you need help with your project overall or with individual steps like [editing tasks](../../glossary.md#task-markup).
+You can contact [support](../troubleshooting/support.md) if you need help with your project overall or with individual steps like [editing tasks](../../glossary.md#task-markup).
 
 Learn more about how to [set up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
 

@@ -111,7 +111,7 @@ This code changes the [task interface](../../glossary.md#task-interface) for dev
 
 {% note tip %}
 
-If the task doesn't display well, go back to the CSS block and add the missing styles to `@media screen and (max-width: 800px)`. If you aren't familiar with the CSS and HTML languages, use professional services or contact support. For more information, see [Get help creating a project](get-help.md).
+If the task doesn't display well, go back to the CSS block and add the missing styles to `@media screen and (max-width: 800px)`. If you aren't familiar with the CSS and HTML languages, use professional services or contact [support](../troubleshooting/support.md).
 
 {% endnote %}
 

@@ -8,22 +8,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 ## Adding funds to your account {#concept-1}
 
-{% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
-
-If the address is in Saint Petersburg, enter Saint Petersburg in the **Region** field, then specify the street, house number, and postal code. You don't need to fill out the other fields.
-
-If the address is in Moscow, enter Moscow in the **Region** field, then specify the street, house number, and postal code. [Learn more](../concepts/refill.md#step-by-step) about connecting to billing.
-
-If it still doesn't work, [enter](troubleshooting.md) your full address with the postal code in the feedback form. We'll help you fill out the fields correctly.
-
-{% endcut %}
-
-{% cut "Why do we top up our account in a non-Russian currency?" %}
-
-Toloka is an international platform for users from different countries. The platform is provided by the Swiss company Yandex Services AG.
-
-{% endcut %}
-
 {% cut "Why do we pay 20% VAT in the invoice?" %}
 
 In accordance with the tax legislation of the Russian Federation, we have included Clause 3.8. in our [Requester agreement]({{ customeragreement-probki }}): the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
@@ -50,13 +34,19 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 [Get closing documents and invoices](support.md#feedback_g3b_vj3_qjb)
 
-[Other questions](support.md#new)
-
 ## Payment for tasks {#concept-2}
 
-{% cut "Where can I set the task price?" %}
+{% cut "Where can I set or change the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price is $0.005.
+The task price is set up in the pool. Open the pool editing page and find the **Price** section.
+
+The price is set up for a task suite. If the suite contains 10 tasks, the price in that section is set for labeling the entire suite.
+
+Please note that the minimum price per task suite is $0.005. Therefore, if you want to change the task price, you need to change the number of tasks per suite.
+
+[Learn more about the task price](dynamic-pricing.md).
+
+If you need help setting up pricing for your project, [contact](../troubleshooting/support.md) us.
 
 {% endcut %}
 
@@ -75,6 +65,22 @@ Define the page price, multiply it by the overlap (it's usually 3–5 for a clas
 {% cut "How do I pay more to users who fill out optional fields?" %}
 
 You can issue rewards after completion and describe the criteria for increased rewards in your task instructions. You can't change the task suite price dynamically based on the completion results.
+
+{% endcut %}
+
+{% cut "How can i view my expenses?" %}
+
+1. Open the project page.
+
+1. Go to the **Statistics** tab.
+
+1. Go to **Budget**, find the **Average task price** and **Earnings per hour** charts.
+
+    This data will help you understand the current cost of your tasks.
+
+Similar statistics are available for each pool if you need more detail.
+
+Learn more about [project](project-statistic.md) and [pool](pool_statistic-pool.md) statistics.
 
 {% endcut %}
 
