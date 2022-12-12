@@ -116,7 +116,7 @@ You can create a pool using one of the ways:
 
     - Indicate an [overlap](../../glossary.md#overlap) equal to the required number of Tolokers.
 
-    - Use [non-automatic acceptance](../concepts/offline-accept.md).
+    - Use [manual review](../concepts/offline-accept.md).
 
     {% note info %}
 
@@ -180,7 +180,7 @@ You can create a pool using one of the ways:
 
     1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
 
-        1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
+        1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
 
             {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 

@@ -108,7 +108,7 @@ Before you begin:
 
 1. In {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
 
-    1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
+    1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
@@ -209,7 +209,7 @@ At this step, upload your task data to Toloka. We recommend that all the recordi
 
     - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
 
-    - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. For this project, you don’t need control tasks because of the enabled {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} option.
+    - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. For this project, you don’t need control tasks because of the enabled {% if locale == "en-com" %}**Review task responses manually**{% endif %} option.
 
     - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
 

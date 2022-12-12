@@ -4,7 +4,7 @@ If you don't want Tolokers who made a lot of mistakes to do your tasks in the fu
 
 ## When to use {#when-use}
 
-If [manual review](../../glossary.md#pool) (assignment review) is set in the [pool](offline-accept.md), add a rule to:
+If [manual review](offline-accept.md) is set in the [pool](../../glossary.md#pool), add a rule to:
 
 - Set the Toloker's [skill](../../glossary.md#skill) based on their responses.
 
