@@ -4,6 +4,8 @@ Toloka offers a data labeling platform where you can collect any amount of human
 
 Data labeling in Toloka relies on crowdsourcing and technologies for crowd management. In this section, we explain how it works.
 
+@[youtube](https://www.youtube.com/watch?v=7RgoTib83EI)
+
 ## What is crowdsourcing?
 
 Crowdsourcing is the practice of obtaining information or services from a large dispersed group of people. These people perform micro tasks, and their collective work provides valuable input. For example, they can classify images into categories, and the resulting data can be used later to improve search relevance or recommendation systems.
