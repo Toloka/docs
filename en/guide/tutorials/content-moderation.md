@@ -101,9 +101,9 @@ Before you begin:
 
 1. Click **Add a pool** on the project page.
 
-1. Set the **Pool name (visible only to you)** field. Only you will see this pool name on the [project](../../glossary.md#project) page.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-1. Specify the pool description which will be displayed instead of the project description in the task list for Tolokers. By default, Tolokers see the description from the project settings. To use a different description, uncheck the **Use project description** box and set **Public description**. If necessary, click **+ Private comment** to add a private project description that only you will see.
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
 1. Click **Create**.
 
@@ -157,7 +157,7 @@ Before you begin:
 
         For content moderation tasks, it is usually 3–5. The default value (`3`) means that each task will have 3 responses.
 
-1. At the **Prepare and upload data** step, upload your task data to Toloka.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
     1. Create the tasks for Tolokers:
 
