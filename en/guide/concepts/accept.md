@@ -1,6 +1,6 @@
 # Reviewing Tolokers' responses
 
-You started a pool with [non-automatic acceptance](offline-accept.md), and the Tolokers completed all your tasks. What next?
+You started a pool with [manual review](offline-accept.md), and the Tolokers completed all your tasks. What next?
 
 - Review the Tolokers' responses before the end of the **Review period** that you specified. At the end of the period, unchecked responses will be accepted automatically.
 
@@ -16,7 +16,7 @@ You started a pool with [non-automatic acceptance](offline-accept.md), and the T
 
 To accept or reject responses:
 
-If you set [non-automatic acceptance](offline-accept.md) in the pool settings, you need to review the Tolokers' responses within the time limit set in the **Deadline** field. Tolokers may challenge a rejected response by submitting an [appeal](#appeal).
+If you set [manual review](offline-accept.md) in the pool settings, you need to review the Tolokers' responses within the time limit set in the **Deadline** field. Tolokers may challenge a rejected response by submitting an [appeal](#appeal).
 
 You can review assignments online or upload review results in a file.
 

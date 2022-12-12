@@ -54,7 +54,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 

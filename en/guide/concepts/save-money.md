@@ -51,7 +51,7 @@ In this case, you can set up automatic acceptance of tasks and automatic rejecti
 
 1. Select **Exam** as the pool type.
 
-1. Enable **Non-automatic acceptance** in the pool settings.
+1. Enable **Review task responses manually** in the pool settings.
 
 1. Set the option to **Yes** and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
 

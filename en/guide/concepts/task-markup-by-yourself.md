@@ -184,7 +184,7 @@ You can specify the number of tasks on the page when you upload your tasks to th
 
 {% endcut %}
 
-{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with non-automatic acceptance? Where do I find the format of the upload data?" %}
+{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with manual review? Where do I find the format of the upload data?" %}
 
 Use the button **Upload review results** to upload your file. You can see the format [here](accept.md).
 

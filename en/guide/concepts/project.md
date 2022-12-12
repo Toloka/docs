@@ -168,9 +168,9 @@ We recommend that you break down your object selection project into three projec
 
 1. Selecting objects in images.
 
-    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with manual review.
 
-    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](control.md).
+    1. Use the quality control rules: fast responses, manual review, and post-review re-assessment. [Description of rules with examples](control.md).
 
 1. Reviewing object selection assignments.
 
@@ -250,7 +250,7 @@ In the standard preset with an area selection editor, you can't use the control 
 
 You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
 
-Such tasks are usually run with non-automatic acceptance: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
+Such tasks are usually run with manual review: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
 
 For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the “Results of assignment review” rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
 

@@ -229,7 +229,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. In the **Quality control** block, specify [quality control](../../glossary.md#quality-control) settings for the pool:
 
-    1. Turn on the **Non-automatic acceptance** option.
+    1. Turn on the **Review task responses manually** option.
 
     1. Set the **Deadline** field to `7`.
 
