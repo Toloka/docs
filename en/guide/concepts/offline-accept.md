@@ -1,6 +1,6 @@
-# manual review
+# Manual review
 
-manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
+Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
 
 You can find the [Review methods](accept.md#acception) in the {% if locale == "en-com" %}**Working with results → Reviewing Tolokers' responses**{% endif %} section.
 
