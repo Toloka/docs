@@ -6,7 +6,7 @@ You can find the [Review methods](accept.md#acception) in the {% if locale == "e
 
 ## How does it work? {#how-it-works}
 
-You set up assignment review for your pool in the [project](../../glossary.md#project).
+You set up manual review for your pool in the [project](../../glossary.md#project).
 
 As the Tolokers complete the tasks, their responses come for review. You can accept or reject a Toloker's response. If you reject responses, the Toloker can:
 
@@ -80,7 +80,7 @@ Leave the option in the **No** position, and the tasks will be automatically acc
 
 {% endcut %}
 
-## How do I turn on assignment review? {#accept-params}
+## How do I turn on manual review? {#accept-params}
 
 Take the following steps before starting the pool:
 

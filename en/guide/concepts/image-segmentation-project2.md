@@ -144,9 +144,9 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. [Quality control rules](control.md) allow you to filter out careless Tolokers. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set the rules for the pool:
 
-    1. Turn on the {% if locale == "en-com" %}**Assignment review**{% endif %} option.
+    1. Turn on the {% if locale == "en-com" %}**Review task responses manually**{% endif %} option.
 
-        {% cut "What is manual review (assignment review)?" %}
+        {% cut "What is manual review?" %}
 
         The [manual review](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
@@ -196,11 +196,11 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
                 This means that a user who completes a [task suite](../../glossary.md#task-suite) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
 
-        - {% if locale == "en-com" %}**Results of assignment review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
+        - {% if locale == "en-com" %}**Results of manual review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
 
             1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of assignment review**{% endif %}.
+            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of manual review**{% endif %}.
 
             1. Set a rule for rejected tasks: if {% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** and {% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35**, then {% if locale == "en-com" %} **ban**{% endif %} {% if locale == "en-com" %} **on requester**{% endif %} for {% if locale == "en-com" %} **15 days**{% endif %}.
 

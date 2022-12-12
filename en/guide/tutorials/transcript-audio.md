@@ -140,7 +140,7 @@ Before you begin:
 
             This means that a user who gives a minimum of 3 responses in less than 30 seconds will be banned for 5 days and won't be able to complete your tasks.
 
-        1. Add the {% if locale == "en-com" %}**Results of assignment review**{% endif %} quality control rule and enter the following values:
+        1. Add the {% if locale == "en-com" %}**Results of manual review**{% endif %} quality control rule and enter the following values:
 
             [![Create a pool. Assignments review control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-offline-accept.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/transcript-audio/transcript-audio-offline-accept.png)
 

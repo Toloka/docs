@@ -48,7 +48,7 @@ You can view information about access to tasks on the Toloker's page (on the [To
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 

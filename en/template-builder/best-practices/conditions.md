@@ -2,7 +2,7 @@
 
 Define clear conditions for your task to ensure that you get the desired output. The conditions check that a Toloker did the required actions.
 
-In [Toloka](../../index.md), you can use conditions to automate the assignment review process. For example, a Toloker can't submit an assignment before they meet your required conditions.
+In [Toloka](../../index.md), you can use conditions to automate the manual review process. For example, a Toloker can't submit an assignment before they meet your required conditions.
 
 ## Review features {#features}
 

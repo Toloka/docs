@@ -268,7 +268,7 @@ Then limit your pools to Tolokers with a certain skill using [filters](filters.m
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (manual review).
+Another option for selecting Tolokers for a project of this type is manual review (manual review).
 
 {% endcut %}
 

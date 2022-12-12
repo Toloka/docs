@@ -17,9 +17,9 @@ With this overlap setting, you can save on the number of Tolokers who complete y
 
 ## Review assignments. {#post}
 
-[Assignment review](offline-accept.md) allows you to check responses so you don't have to pay for poorly completed tasks.
+[Manual review](offline-accept.md) allows you to check responses so you don't have to pay for poorly completed tasks.
 
-Use **assignment review** if:
+Use manual review if:
 
 - The task requires that users send free-format responses or data files.
 
@@ -55,7 +55,7 @@ In this case, you can set up automatic acceptance of tasks and automatic rejecti
 
 1. Set the option to **Yes** and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
 
-1. Set the assignment review period to one day.
+1. Set the manual review period to one day.
 
 1. Add the **Control tasks** quality control block and set the condition **if the percentage of correct responses ≥ N** and **the number of responses = N**, then accept all the Toloker's responses.
 

@@ -116,9 +116,9 @@ Before you begin:
 
         {% cut "The additional quality control rules" %}
 
-        1. Add the {% if locale == "en-com" %}**Results of assignment review**{% endif %} quality control rule and enter the following values:
+        1. Add the {% if locale == "en-com" %}**Results of manual review**{% endif %} quality control rule and enter the following values:
 
-            [![Create a pool. Results of assignment review](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png)
+            [![Create a pool. Results of manual review](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png)
 
             This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 

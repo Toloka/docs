@@ -4,7 +4,7 @@ If tasks were issued with an [overlap](../../glossary.md#overlap) of 2 or higher
 
 {% note info %}
 
-If you run the [pool](../../glossary.md#pool) with the assignment review, make sure that all responses are [accepted](accept.md).
+If you run the [pool](../../glossary.md#pool) with the manual review, make sure that all responses are [accepted](accept.md).
 
 {% endnote %}
 

@@ -238,7 +238,7 @@ You can't use [training](../../glossary.md#training-pool) and the main pool with
 
 Such tasks are usually run with manual review: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
 
-For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the “Results of assignment review” rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
+For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the “Results of manual review” rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
 
 {% endcut %}
 

@@ -58,7 +58,7 @@ Examples are provided for simple [classification](../tutorials/image-classificat
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if you don't reject them manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if you don't reject them using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 

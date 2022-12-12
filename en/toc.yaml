@@ -257,7 +257,7 @@ items:
                     href: guide/concepts/income.md
                   - name: Submitted responses
                     href: guide/concepts/submitted-answers.md
-                  - name: Results of assignment review
+                  - name: Results of manual review
                     href: guide/concepts/reviewing-assignments.md
                   - name: Recompletion of assignments from banned users
                     href: guide/concepts/restore-task-overlap.md

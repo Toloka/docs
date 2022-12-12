@@ -142,7 +142,7 @@ But Tolokers don't like to take lengthy tasks. They'd rather do 10 tasks that ta
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and manual review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 {% endcut %}
 

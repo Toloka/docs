@@ -384,7 +384,7 @@ To do this, under **Test result**, go to **Recent tasks to use** and specify the
 
 Let's say you need to create an exam with three tasks, one task per suite. If the Toloker succeeds in two out of three tasks, they get the skill.
 
-If your task uses assignment review (manual review), to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
+If your task uses manual review (manual review), to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
 
 ![](../_images/troubleshooting/number-of-correct-answers.png)
 
@@ -394,7 +394,7 @@ If your task uses assignment review (manual review), to set up such a rule you n
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (manual review).
+Another option for selecting Tolokers for a project of this type is manual review (manual review).
 
 {% endcut %}
 

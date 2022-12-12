@@ -4,7 +4,7 @@ This indicator shows the percentage of rejected tasks. If the tasks are rejected
 
 #### Features
 
-- Only tasks with assignment review are considered.
+- Only tasks with manual review are considered.
 
 - The percentage is calculated for the last 2 days.
 
