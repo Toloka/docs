@@ -24,4 +24,4 @@ The comparison of the solutions is provided in the table below:
 | **Required embedding of a completion code** | ![no](../_images/tutorials/survey-qualtrics/no.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) |
 | **Location of a survey form** | Toloka | Any external platform where you can embed a completion code | Qualtrics only |
 | **Various filters to select respondents** | ![no](../_images/tutorials/survey-qualtrics/yes.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) | Country, gender, and age only |
-| **Number of countries to select respondents** | over | over 80 | 80 |
+| **Number of countries to select respondents** | over 80 | over 80 | 80 |
