@@ -1,6 +1,6 @@
 # Overview
 
-To run a social science research, use one of Toloka solutions:
+To run a social science research, use one of the Toloka survey solutions:
 
 * [Survey with Toloka template](questionnaire-toloka.md):
     * For short and simple surveys.
@@ -14,14 +14,14 @@ To run a social science research, use one of Toloka solutions:
     * If you have an IRB-approved Qualtrics survey, and you do not want to start a new survey on Toloka. 
 
 
-Other features of Toloka survey solutions are listed in the table below:
+The comparison of the solutions is provided in the table below:
 
-|                                                  | Survey on Toloka template                      | Survey on third-party platform                | Survey on Qualtrics                           |
-|--------------------------------------------------|------------------------------------------------|-----------------------------------------------|-----------------------------------------------|
-| **Project presets**                              |            Preconfigured and adaptable         |          Preconfigured and adaptable          |                 Preconfigured                 |
-| **The pool setup**                               |       Manual or with cloning the demo pool     |            Manual or with the preset          |                Fully automatic                |
-| **Acceptance of responses**                      |               Manual or automatic              |                     Manual                    |                    Automatic                  |
-| **Required completion code embedding**           |![no](../_images/tutorials/survey-qualtrics/no.svg)  |![yes](../_images/tutorials/survey-qualtrics/yes.svg)|![yes](../_images/tutorials/survey-qualtrics/yes.svg)|
-| **Location of a survey form**                    |                      Toloka                    |Any external platform where you can embed a completion code|Qualtrics only                     |
-| **Number of countries to select respondents**    |          over 80                               |             over 80                           |          80                                   |
-| **Various filters to select respondents**        |![no](../_images/tutorials/survey-qualtrics/yes.svg) |![yes](../_images/tutorials/survey-qualtrics/yes.svg)|        Country, gender, and age only          |
+|            | Survey on Toloka template | Survey on third-party platform | Survey on Qualtrics |
+|------------|---------------------------|--------------------------------|---------------------|
+| **The project preset** | Preconfigured and adaptable | Preconfigured and adaptable | Preconfigured |
+| **The pool setup** | Manual or with cloning the demo pool | Manual or with the preset | Fully automatic |
+| **Acceptance of responses** | Manual or automatic | Manual | Automatic |
+| **Required embedding of a completion code** | ![no](../_images/tutorials/survey-qualtrics/no.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) |
+| **Location of a survey form** | Toloka | Any external platform where you can embed a completion code | Qualtrics only |
+| **Various filters to select respondents** | ![no](../_images/tutorials/survey-qualtrics/yes.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) | Country, gender, and age only |
+| **Number of countries to select respondents** | over | over 80 | 80 |
