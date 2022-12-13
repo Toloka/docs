@@ -16,7 +16,7 @@ To run a social science research, use one of the Toloka survey solutions:
 
 The comparison of the solutions is provided in the table below:
 
-|            | Survey on Toloka template | Survey on third-party platform | Short/Medium/Long survey on Qualtrics |
+|            | Survey on Toloka template | Survey on third-party platform | Survey based on Qualtrics |
 |------------|---------------------------|--------------------------------|---------------------|
 | **The project preset** | Preconfigured and adaptable | Preconfigured and adaptable | Preconfigured |
 | **The pool setup** | Manual or with cloning the demo pool | Manual or with the preset | Fully automatic |
