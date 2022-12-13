@@ -144,7 +144,9 @@ Before you begin:
 
         This means that if you reject assignments during the review, they’ll be sent for re-completion to another Toloker.
 
-1. At the {% if locale == "en-com" %}**Add optional pool settings**{% endif %} step, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}. It should be long enough to get to the place, find the specified point and object, and upload the photos. For field tasks, this time is usually 86,400 seconds (24 hours).
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
+
+    It should be long enough to get to the place, find the specified point and object, and upload the photos. For field tasks, this time is usually 86,400 seconds (24 hours).
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
@@ -205,19 +207,11 @@ Before you begin:
 
     1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
-1. At the **Double-check your project and try out tasks** step, check how the task will look from the Toloker's point of view.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. At the **Add optional pool settings** step, set up advanced pool settings.
-
-    {% note info %}
-
-    This step will be enabled after you complete the previous steps. You can skip this step by clicking **Use default settings**.
-
-    {% endnote %}
-
-After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

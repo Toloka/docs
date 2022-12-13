@@ -147,7 +147,9 @@ Before you begin:
 
         This means that a Toloker who gives more than 40% of incorrect responses will be blocked and won't be able to complete tasks in this project for 10 days.
 
-1. At the {% if locale == "en-com" %}**Add optional pool settings**{% endif %} step, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}. It should be long enough to read the instructions and wait for task data to download (for example, 150 seconds).
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
+
+    It should be long enough to read the instructions and wait for task data to download (for example, 150 seconds).
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
@@ -200,19 +202,11 @@ Before you begin:
 
         [![Upload data. Distribution of correct responses for control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-distibution.png =440x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-distibution.png)
 
-1. At the **Double-check your project and try out tasks** step, check how the task will look from the Toloker's point of view.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. At the **Add optional pool settings** step, set up advanced pool settings.
-
-    {% note info %}
-
-    This step will be enabled after you complete the previous steps. You can skip this step by clicking **Use default settings**.
-
-    {% endnote %}
-
-After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

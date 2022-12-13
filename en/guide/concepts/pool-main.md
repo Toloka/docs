@@ -86,7 +86,7 @@ To create a pool:
 
         {% endnote %}
 
-After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ![](../_images/other/pool-settings.png)
 

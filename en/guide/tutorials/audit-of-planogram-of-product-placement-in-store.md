@@ -201,11 +201,11 @@ Before you begin:
 
     1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
-1. At the **Double-check your project and try out tasks** step, check how the task will look from the Toloker's point of view.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

@@ -223,7 +223,7 @@ Before you begin:
 
         [![Upload data. Distribution of correct responses for control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png =330x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png)
 
-1. At the **Double-check your project and try out tasks** step, check how the task will look from the Toloker's point of view.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
@@ -235,7 +235,7 @@ Before you begin:
 
     {% endnote %}
 
-After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

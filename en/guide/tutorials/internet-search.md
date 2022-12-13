@@ -197,29 +197,15 @@ Before you begin:
 
 1. {% include [toloka-requester-source-add-control-tasks](../_includes/toloka-requester-source/id-toloka-requester-source/add-control-tasks.md) %}
 
-    1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
-
-        [![Upload data. Click Edit](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-edit-button.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-edit-button.png)
-
-    1. {% include [toloka-requester-source-create-control-button](../_includes/toloka-requester-source/id-toloka-requester-source/create-control-button.md) %}
-
-        [![Upload data. Create control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-button.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-button.png)
-
     1. Select the {% if locale == "en-com" %}**email**{% endif %} and {% if locale == "en-com" %}**phone**{% endif %} checkboxes, and enter the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
-
-        [![Upload data. Create control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-create.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-create.png)
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
-    1. When you are done adding control tasks, click the pool name in the menu.
-
-        [![Upload data. Click pool name](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-pool-name.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-pool-name.png)
-
-1. At the **Double-check your project and try out tasks** step, check how the task will look from the Toloker's point of view.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 
