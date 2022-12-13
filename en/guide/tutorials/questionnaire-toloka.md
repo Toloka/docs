@@ -8,7 +8,7 @@ Survey is a type of data collection task with several types of closed-ended and 
 
 {% note info %}
 
-The comparison of different kinds of the survey presets is provided in the [Overview of survey solutions](questionnaire-overview.md) section.
+There are also other survey presets in Toloka. The comparison of all the survey solutions is provided in the [Overview](questionnaire-overview.md) section.
 
 {% endnote %}
 

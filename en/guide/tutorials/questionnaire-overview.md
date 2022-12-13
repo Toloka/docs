@@ -1,4 +1,4 @@
-# Overview of survey solutions
+# Overview
 
 To run a social science research, use one of Toloka solutions:
 

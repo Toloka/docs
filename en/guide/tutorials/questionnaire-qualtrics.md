@@ -16,7 +16,7 @@ To learn about other Toloka solutions for surveys, see the tutorials:
 
 - How to create a survey form in Toloka instead of using a third-party platform — [Survey with Toloka template](questionnaire-toloka.md).
 
-The comparison of all the three kinds of the survey presets is provided in the [Overview of survey solutions](questionnaire-overview.md) section.
+The comparison of all the three kinds of the survey presets is provided in the [Overview](questionnaire-overview.md) section.
 
 
 {% endnote %}
