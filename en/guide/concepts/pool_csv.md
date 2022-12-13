@@ -29,17 +29,17 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   The first line of the file contains the column headers:
 
-  - `INPUT:<name of the input data field>` — Input data for tasks.
+  - `INPUT:<name of the input data field>` — input data for tasks.
 
-  - `GOLDEN:<name of the output data field>` — Responses for [control tasks](../../glossary.md#control-task).
+  - `GOLDEN:<name of the output data field>` — responses for [control tasks](../../glossary.md#control-task).
 
-  - `HINT:text` — Hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
+  - `HINT:text` — hints for [training tasks](../../glossary.md#training-task). The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
   - Point coordinates for [field tasks](../tutorials/walk.md):
 
-      - `Al:latitude` — Latitude.
+      - `Al:latitude` — latitude.
 
-      - `Al:longitude` — Longitude.
+      - `Al:longitude` — longitude.
 
   Task type depends on which fields are filled in.
 
@@ -80,7 +80,7 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/location-job/pool_csv/controls_tsv.png)
 
     {% endcut %}
-    
+
   {% endcut %}
 
   {% cut "Training task" %}
@@ -106,7 +106,7 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/location-job/pool_csv/cats_tsv.png)
 
     {% endcut %}
-  
+
   {% endcut %}
 
   {% cut "Field task" %}
@@ -136,39 +136,70 @@ If you need to add different task types to the pool, upload multiple files, one 
   Check the format of the file with tasks. If the format of your file is old, download the template on the pool page and replace the sample data in it with your own data.
 
   {% endnote %}
+  
+  The file is a JSON object which contains:
+
+  - `input_values` — input data for tasks.
+
+  - `known_solutions` — responses for control tasks.
+
+  - `message_on_unknown_solution` — hints for training tasks. The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
   {% cut "General task" %}
 
-  To create a [general task](../../glossary.md#general-task), enter the names and the values of the input fields in the `input_values` block.
-  
+  To create a [general task](../../glossary.md#general-task), specify the names and the values of the input fields in the `input_values` object.
+
   {% cut "Example" %}
-  
+
   ```json
   {
-       "input_values": {
-          "image_url": [
-            "https://www.example.com/image1.png",
-            "https://www.example.com/image2.png",
-            "https://www.example.com/image3.png"
-          ]
-       }
+    {
+      "input_values": {
+       "image_url": "https://www.example.com/image1.png"
+      }
+    },
+    {
+      "input_values": {
+       "image_url": "https://www.example.com/image2.png"
+      }
+    },
+    {
+      "input_values": {
+       "image_url": "https://www.example.com/image3.png"
+      }
+    }
   }
   ```
-  
+
+  #|
+  || Key | Description ||
+  || **input_values** | **object**
+
+  Input data for a task. List of pairs:
+
+  ```json
+    "<ID of field 1>": "<value of field 1>",
+    "<ID of field 2>": "<value of field 2>",
+    ...
+    "<ID of field N>": "<value of field N>"
+  ```
+  ||
+  |#
+
   {% endcut %}
-  
+
   {% endcut %}
-  
+
   {% cut "Control task" %}
-  
-  To create a control task, enter:
 
-  - The names and the values of the input fields in the `input_values` block.
+  To create a control task, specify:
 
-  - Correct responses in the `known_solutions` block.
+  - The names and the values of the input fields in the `input_values` object.
+
+  - Correct responses in the `known_solutions` object.
 
   {% cut "Example" %}
-  
+
   ```json
   {
       "input_values": {
@@ -184,20 +215,46 @@ If you need to add different task types to the pool, upload multiple files, one 
       ]
   }
   ```
-  
+
+  #|
+  || Key | Description ||
+  || **input_values** | **object**
+
+  Input data for a task. List of pairs:
+
+  ```json
+    "<ID of field 1>": "<value of field 1>",
+    "<ID of field 2>": "<value of field 2>",
+    ...
+    "<ID of field N>": "<value of field N>"
+  ```
+  ||
+  || **known_solutions[].output_values** | **object**
+
+  Output data values to check. You should specify values for all required output data fields.
+
+  ```json
+    "<ID of field 1>": "<correct response>",
+    "<ID of field 2>": "<correct response>",
+    ...
+    "<ID of field N>": "<correct response>"
+  ```
+  ||
+  |#
+
   {% endcut %}
-  
+
   {% endcut %}
-  
+
   {% cut "Training task" %}
-  
-  To create a training task, enter:
 
-  - The names and the values of the input fields in the `input_values` block.
+  To create a training task, specify:
 
-  - Correct responses in the `known_solutions` block.
-  
-  - A hints in the `message_on_unknown_solution` block.
+  - The names and the values of the input fields in the `input_values` object.
+
+  - Correct responses in the `known_solutions` object.
+
+  - A hint in the `message_on_unknown_solution` property.
 
   For training tasks, it is convenient to create a [separate pool](train.md).
 
@@ -206,6 +263,8 @@ If you need to add different task types to the pool, upload multiple files, one 
   You can also add responses and hints when creating a pool in [task markup mode](task_markup.md) (you need to use ["smart mixing"](distribute-tasks-by-pages.md#smart-mixing) when uploading tasks).
 
   {% endnote %}
+
+  {% cut "Example" %}
 
   ```json
   {
@@ -223,13 +282,44 @@ If you need to add different task types to the pool, upload multiple files, one 
       "message_on_unknown_solution": "The cat is in a good mood."
   }
   ```
-  
+
+  #|
+  || Key | Description ||
+  || **input_values** | **object**
+
+  Input data for a task. List of pairs:
+
+  ```json
+    "<ID of field 1>": "<value of field 1>",
+    "<ID of field 2>": "<value of field 2>",
+    ...
+    "<ID of field N>": "<value of field N>"
+  ```
+  ||
+  || **known_solutions[].output_values** | **object**
+
+  Output data values to check. You should specify values for all required output data fields.
+
+  ```json
+    "<ID of field 1>": "<correct response>",
+    "<ID of field 2>": "<correct response>",
+    ...
+    "<ID of field N>": "<correct response>"
+  ```
+  ||
+  || **message_on_unknown_solution** | **string**
+
+  Hint for the task.
+
+  ||
+  |#
+
   {% endcut %}
-  
+
   {% endcut %}
-  
+
   {% cut "Old format" %}
-  
+
   ```json
   [
       {
@@ -243,7 +333,7 @@ If you need to add different task types to the pool, upload multiple files, one 
       }
   ]
   ```
-  
+
   {% endcut %}
 
 {% endlist %}
