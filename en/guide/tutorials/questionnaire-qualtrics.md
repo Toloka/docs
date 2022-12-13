@@ -39,11 +39,11 @@ Before you begin:
 
 Pick a preset depending on your survey length:
 
-* For short surveys that take 15 minutes or less — [Short survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvJ&choosedTag=A3MdOlBKzWKcrpxg3JNQ). 
+* For short surveys that take 15 minutes or less — [Short survey]({{ survey-qualtrics-short }}). 
 
-* For medium surveys that take 15–30 minutes — [Medium survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvF&choosedTag=A3MdOlBKzWKcrpxg3JNQ).
+* For medium surveys that take 15–30 minutes — [Medium survey]({{ survey-qualtrics-medium }}).
 
-* For long surveys that take 30–60 minutes — [Long survey](https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvv&choosedTag=A3MdOlBKzWKcrpxg3JNQ).
+* For long surveys that take 30–60 minutes — [Long survey]({{ survey-qualtrics-long }}).
 
 Another way to choose a preset is to do the following:
 

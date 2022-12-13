@@ -8,7 +8,7 @@ Survey is a type of data collection task with several types of closed-ended and 
 
 {% note info %}
 
-To learn how to run a survey using an external survey form, see the [Survey on third-party platform](questionnaire-other.md) tutorial.
+The comparison of different kinds of the survey presets is provided in the [Overview of survey solutions](questionnaire-overview.md) section.
 
 {% endnote %}
 

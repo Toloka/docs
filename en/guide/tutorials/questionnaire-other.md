@@ -14,7 +14,7 @@ In Toloka, you can place a link to your survey in the task interface. To enable 
 
 {% note info %}
 
-To learn how to create a survey form in Toloka instead of using a third-party platform, see the [Survey with Toloka template](questionnaire-toloka.md) tutorial.
+The comparison of different kinds of the survey presets is provided in the [Overview of survey solutions](questionnaire-overview.md) section.
 
 {% endnote %}
 
