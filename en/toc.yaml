@@ -405,6 +405,8 @@ items:
             href: guide/concepts/multiple-access.md
   - name: Useful recommendations
     items:
+      - name: AB Experiment
+        href: guide/concepts/ab-experiment.md
       - name: Data storage
         items:
           - name: Where to store files
