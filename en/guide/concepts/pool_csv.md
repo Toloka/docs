@@ -202,17 +202,17 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   ```json
   {
-      "input_values": {
-         "image_url": "https://www.example.com/image1.png"
-      },
-      "known_solutions": [
-           {
-              "output_values": {
-                  "result": "OK",
-                  "like": false
-              }
-           }
-      ]
+    "input_values": {
+      "image_url": "https://www.example.com/image1.png"
+    },
+    "known_solutions": [
+      {
+        "output_values": {
+          "result": "OK",
+          "like": false
+        }
+      }
+    ]
   }
   ```
 
@@ -268,18 +268,18 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   ```json
   {
-      "input_values": {
-           "image_url": "https://www.example.com/image1.png"
-      },
-      "known_solutions": [
-           {
-               "output_values": {
-                  "result": "OK",
-                  "like": false
-               }
-           }
-      ],
-      "message_on_unknown_solution": "The cat is in a good mood."
+    "input_values": {
+      "image_url": "https://www.example.com/image1.png"
+    },
+    "known_solutions": [
+      {
+        "output_values": {
+          "result": "OK",
+          "like": false
+        }
+      }
+    ],
+    "message_on_unknown_solution": "The cat is in a good mood."
   }
   ```
 
@@ -322,15 +322,15 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   ```json
   [
-      {
-          "INPUT:image_url": "https://www.example.com/image1.png"
-      },
-      {
-          "INPUT:image_url": "https://www.example.com/image2.png"
-      },
-      {
-          "INPUT:image_url": "https://www.example.com/image3.png"
-      }
+    {
+      "INPUT:image_url": "https://www.example.com/image1.png"
+    },
+    {
+      "INPUT:image_url": "https://www.example.com/image2.png"
+    },
+    {
+      "INPUT:image_url": "https://www.example.com/image3.png"
+    }
   ]
   ```
 
