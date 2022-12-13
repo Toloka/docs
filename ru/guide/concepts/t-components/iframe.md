@@ -71,4 +71,4 @@
 - `false` выключает перечисленные ограничения. | нет | `"allow-scripts allow-same-origin"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

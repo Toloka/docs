@@ -74,4 +74,4 @@
 ||`class` | CSS-класс для поля. Например: `class="annotation"`. | нет |`".field" ".field_type_textarea"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

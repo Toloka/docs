@@ -98,4 +98,4 @@ Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. Yo
 {% endcut %}
 
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

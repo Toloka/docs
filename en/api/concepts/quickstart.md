@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Overview
 
 {% note info %}
@@ -37,3 +35,5 @@ The sample project described under "Quick start" is for the sandbox. To set up t
 ## What's next {#what-next}
 
 Read the [instructions on how to post tasks](./qs-placement.md).
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

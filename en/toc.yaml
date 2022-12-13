@@ -231,6 +231,8 @@ items:
                 href: guide/concepts/dynamic-pricing.md
           - name: Quality control
             items:
+              - name: Overview
+                href: guide/concepts/quality-control-overview.md
               - name: Setting up quality control
                 href: guide/concepts/qa-pool-settings.md
               - name: Quality control rules
@@ -383,6 +385,8 @@ items:
             href: guide/concepts/nav-history.md
       - name: Profile
         items:
+          - name: Editing the profile
+            href: guide/concepts/edit-profile.md
           - name: About money
             items:
               - name: About account management
@@ -495,6 +499,8 @@ items:
     href: glossary.md
   - name: Changelog
     href: https://toloka.ai/changelog/
+  - name: Data labeling platform
+    href: https://toloka.ai/data-labeling-platform
   - name: Common criteria
     href: guide/concepts/additionals-q.md
     hidden: true

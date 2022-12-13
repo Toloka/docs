@@ -43,9 +43,9 @@ The Template Builder interface consists of four vertical panels:
 
     If the configuration contains an error, the reason is displayed here. For example, `[3:2]The closing bracket "}" is missing`. It means that you omitted a bracket at character 2 on line 3.
 
-1. **Sent data**: sample JSON output. This panel appears when you click **Send** in the preview. To copy the output data, click ![](_images/copy-tb.png). To hide this panel, click **Close Panel** at the bottom.
+1. **Sent data**: sample JSON output. This panel appears when you click **Send** in the preview. To copy the output data, click ![](_images/copy-tb.svg). To hide this panel, click **Close Panel** at the bottom.
 
-To hide or display the first three panels, use the ![](_images/show-hide-buttons.png) buttons in the upper-right corner.
+To hide or display the first three panels, use the ![](_images/tb-config.svg)![](_images/tb-input.svg)![](_images/tb-preview.svg) buttons in the upper-left corner.
 
 {% note info %}
 
@@ -53,7 +53,7 @@ For some Toloka presets, the visual editor is available. Refer to the [Visual ed
 
 {% endnote %}
 
-If you opened Template Builder in Toloka, click ![](_images/fullscreen-button.png) in the upper-right corner to switch to full-screen mode. If you opened the Template Builder sandbox, it is already displayed full-screen.
+If you opened Template Builder in Toloka, click ![](_images/fullscreen-button.svg) in the upper-right corner to switch to full-screen mode. If you opened the Template Builder sandbox, it is already displayed full-screen.
 
 ### Shortcuts {#editor}
 

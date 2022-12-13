@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Voice recording
 
 In this tutorial, you will learn how to run voice recording in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -251,4 +249,6 @@ The `popup` property of the component [view.image](../../template-builder/refere
 - [Quality control](https://toloka.ai/knowledgebase/quality-control/)
 - [Pricing](https://toloka.ai/knowledgebase/pricing/)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

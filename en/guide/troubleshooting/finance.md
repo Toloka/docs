@@ -62,7 +62,7 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 {% cut "Where can I set the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price is $0.005.
+You can set a price for your [task suite](../../glossary.md#task-suite) on the pool editing page. The minimum price is $0.005.
 
 {% endcut %}
 
@@ -102,4 +102,4 @@ No. The price per task suite is the same for all tasks in the pool. You can crea
 
 [Refund money transferred to the Toloka account](support.md#feedback_khw_wc3_qjb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

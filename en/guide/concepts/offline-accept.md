@@ -146,4 +146,4 @@ Learn more about this in the [**Review results**](reviewing-assignments.md) rule
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -649,4 +649,4 @@ Task — это отдельное задание. Task suite — страниц
 
 [Другой вопрос](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Image comparison (Side-by-side)
 
 In this tutorial, you will learn how to run side-by-side comparisons of images in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -277,4 +275,6 @@ You can use different image sizes.
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/dataset/toloka_logos/sbs.tsv)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

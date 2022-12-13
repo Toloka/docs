@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Audio classification
 
 In this tutorial, you will learn how to run audio classification in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -281,4 +279,6 @@ At this step, upload your task data to Toloka.
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/28_audioClassification/EN/sample-files.zip)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

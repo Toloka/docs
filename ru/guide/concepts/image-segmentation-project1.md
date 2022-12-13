@@ -351,4 +351,4 @@
 
 - Создайте [Проект 2](image-segmentation-project2.md) для выделения объектов.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

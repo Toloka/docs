@@ -589,4 +589,4 @@ Add your text here — это подсказка, которая говорит 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -8,4 +8,4 @@ Project creation can be a complicated task. If you have any difficulties, you ca
 
 - Join us in [Slack]({{ toloka-slack }}). Here you can discuss Toloka, share your experience, talk about machine learning, and keep track of news and important updates.
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

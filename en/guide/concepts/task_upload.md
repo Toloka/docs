@@ -13,7 +13,7 @@ To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
         1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
 
         1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
-        
+
         {% cut "Use sample data" %}
 
         If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
@@ -202,4 +202,4 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

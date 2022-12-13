@@ -336,4 +336,4 @@ In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Go
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

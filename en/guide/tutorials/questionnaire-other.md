@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Survey on third-party platform
 
 In this tutorial, you will learn how to use Toloka to run a survey created on a third-party platform.
@@ -396,4 +394,6 @@ Review the rest of the tasks during the time period specified in the {% if local
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/29_surveyThirdPartyPlatform/EN/sample-files.zip)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

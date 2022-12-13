@@ -165,4 +165,4 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
     - [Task interface](spec.md).
     - [Adapt a task for mobile devices](mobile.md)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

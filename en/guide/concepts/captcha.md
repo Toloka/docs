@@ -165,4 +165,4 @@ The percentage of correct responses is based on the total number of captchas pro
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

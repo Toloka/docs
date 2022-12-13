@@ -1559,4 +1559,4 @@ Add 2 new fields to the output data specification:
 
     {% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

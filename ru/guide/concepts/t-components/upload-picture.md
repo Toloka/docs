@@ -8,7 +8,7 @@
 
 {% endnote %}
 
-Чтобы добавить в задание кнопку для загрузки картинки ![](../../_images/other/b-image-button.png), используйте компонент `{{field type="file-img" name="<название выходного поля>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. После загрузки картинки исполнитель увидит иконку для предварительного просмотра изображения. Например:
+Чтобы добавить в задание кнопку для загрузки картинки ![](../../_images/other/b-image-button.svg), используйте компонент `{{field type="file-img" name="<название выходного поля>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. После загрузки картинки исполнитель увидит иконку для предварительного просмотра изображения. Например:
 
 ```plaintext
 {{field type="file-img" name="photo" sources="CAMERA" fileType="IMAGE" camera=true}}
@@ -116,4 +116,4 @@
 1. В описании выходных данных добавьте поле с типом `array_file` или другим типом массива. | нет | `true` (при наличии в описании выходных данных поля с типом`array_file` или другим типом массива).||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

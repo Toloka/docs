@@ -1,5 +1,3 @@
-{% include [image-styles](../../_includes/image-styles.md) %}
-
 # Getting OAuth token
 
 Before you start using Toloka-Kit library, register in either the production or sandbox Toloka web version, get your OAuth token for the API access, and top up your account.
@@ -28,3 +26,5 @@ If you're going to use the production version, [add funds](../guide/concepts/ref
 
 - [Install Toloka-Kit library](./quick-start.md)
 - [Start your first simple project](./learn-basics.md)
+
+{% include [image-styles](../../_includes/image-styles.md) %}

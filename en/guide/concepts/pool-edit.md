@@ -329,4 +329,4 @@ If you uploaded them using a different method, clone your pool and upload the ne
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

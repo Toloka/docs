@@ -371,4 +371,4 @@ If the text is in the HTML block of the task template, then clone the project. T
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

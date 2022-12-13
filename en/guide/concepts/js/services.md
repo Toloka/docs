@@ -97,4 +97,4 @@ Returns information about the device if the Toloker is using the mobile app:
 
 - `deviceModel` — Mobile device model.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

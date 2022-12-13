@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Audio transcription
 
 In this tutorial, you will learn how to run audio transcription in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -275,4 +273,6 @@ Sample dataset files with tasks
 - [File 2](https://tlk.s3.yandex.net/knowledge-base/noisyspeech_wgoldens.tsv)
 - [File 3](https://tlk.s3.yandex.net/knowledge-base/noisy_speech_exam.tsv)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

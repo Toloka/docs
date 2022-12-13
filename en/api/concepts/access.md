@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Accessing the API
 
 {% include [announce](../_includes/announce.md) %}
@@ -28,3 +26,5 @@ Working with the Toloka API requires an OAuth access token. [Register](../../gui
 - In the production version of Toloka: [https://platform.toloka.ai/requester/profile/integration](https://platform.toloka.ai/requester/profile/integration).
 
 [![Accessing the API](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png)
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

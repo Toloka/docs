@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-This class manages the task progress, processes the task page commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of the [TaskSuite](tasksuite.md) class.
+This class manages the task progress, processes the [task suite](../../../glossary.md#task-suite) commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of the [TaskSuite](tasksuite.md) class.
 
 The `Assignment` base class is available in the `window.TolokaAssignment` global variable
 
@@ -157,4 +157,4 @@ this.getDOMElement().querySelector('.my_submit_button').addEventListener('click'
 
 {% endcut %}
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

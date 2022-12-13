@@ -946,4 +946,4 @@ At the end of the CSS code block, paste the styles for images:
 }
 ```
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

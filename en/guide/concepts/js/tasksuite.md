@@ -237,4 +237,4 @@ Validates responses according to output data parameters. Returns a `promise` obj
 
 - `solutions` — Array of the Toloker's task responses. If omitted, the current values are used ([`getSolutions()`](#getSolutions)).
 
-{% include [contact-support](../../_includes/contact-support-new.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

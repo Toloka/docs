@@ -2,7 +2,7 @@
 
 The price is indicated per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (“.”) as a separator.
 
-If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. The fee is 30% of the price, but not less than $0.005.
+If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. The fee is 30% of the price, but not less than $0.001.
 
 In Toloka, there are two ways to set the task price:
 
@@ -70,7 +70,7 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
 
 {% cut "Where can I set the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price for regular pools is $0.005.
+You can set a price for your task suite on the pool editing page. The minimum price for regular pools is $0.005.
 
 {% endcut %}
 
@@ -108,4 +108,4 @@ No. The price per task suite is the same for all tasks in the pool. You can crea
 
 [Return the funds transferred to the Toloka account](../troubleshooting/support.md#feedback_khw_wc3_qjb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

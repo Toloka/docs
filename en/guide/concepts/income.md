@@ -94,4 +94,4 @@ Yes, of course — you can use the same skill for different projects. But most o
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

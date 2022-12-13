@@ -2,7 +2,7 @@
 
 You can issue rewards to one or more Tolokers (in addition to payment for completed tasks).
 
-The reward amount can be from $0.001 to $100 per Toloker per time.
+The reward amount can be from $0.005 to $100 per Toloker per time.
 
 ## Methods {#methods}
 

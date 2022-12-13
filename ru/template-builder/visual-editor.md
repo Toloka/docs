@@ -1,5 +1,3 @@
-{% include [image-styles](../../_includes/image-styles.md) %}
-
 # Визуальный редактор
 
 {% include [deprecate](../_includes/deprecate.md) %}
@@ -53,3 +51,5 @@
 - [Пресет «Релевантность поиска товаров»](templates/product-search-relevance.md)
 
 [![Написать в службу поддержки](_images/buttons/contact-support.svg)](concepts/support.md)
+
+{% include [image-styles](../../_includes/image-styles.md) %}

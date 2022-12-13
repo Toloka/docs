@@ -135,4 +135,4 @@ Tasks in pools will automatically be available in the web version of Toloka and 
     - [Task interface](spec.md).
     - [Setting up quality control](project-qa.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

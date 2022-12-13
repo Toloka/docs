@@ -28,4 +28,4 @@ $П_{откл} = \frac{З_{откл}}{З_{отпр}}\times100$
 
 - Низкий показатель — `> 30%`.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

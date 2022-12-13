@@ -114,4 +114,4 @@
 1. В описании выходных данных добавьте поле с типом `array_file` или другим типом массива. | нет | `true` (при наличии в описании выходных данных поля с типом`array_file` или другим типом массива).||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

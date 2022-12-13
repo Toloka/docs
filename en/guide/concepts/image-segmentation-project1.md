@@ -291,4 +291,4 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
 - Create [Project 2](image-segmentation-project2.md) to select objects.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -52,7 +52,7 @@
 ||{% if locale == "ru-ru" %}**Время выполнения задания**{% endif %}{% if locale == "en-com" %}**Task completion time**{% endif %} | Среднее время выполнения страницы заданий по всем пулам проекта. Указывается в секундах.||
 ||{% if locale == "ru-ru" %}**Потрачено (+ комиссия)**{% endif %}{% if locale == "en-com" %}**Spent (+ fee)**{% endif %} | Сумма потраченных средств в проекте. В скобках указана сумма [комиссии](budget.md).
 
-Обратите внимание, что минимальная комиссия составляет 0,005 $.
+Обратите внимание, что минимальная комиссия составляет 0,001 $.
 
 {% cut "Рекомендации" %}
 
@@ -153,4 +153,4 @@
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

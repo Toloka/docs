@@ -120,4 +120,4 @@ If the Toloker already got paid for the tasks, the money can't be refunded to yo
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

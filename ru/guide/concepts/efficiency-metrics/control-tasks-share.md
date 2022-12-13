@@ -34,4 +34,4 @@ $П_{контр} = \frac{З_{контр}}{З_{отпр}}\times100$
 
 {% endlist %}
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

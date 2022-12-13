@@ -126,7 +126,7 @@ Fast responses {#fast-responses}
 
 Fee {#fee}
 
-: The requester is charged a fee for using Toloka — a percentage of the cost of tasks. It is 30%, but not less than $0.005.
+: The requester is charged a fee for using Toloka — a percentage of the cost of tasks. It is 30%, but not less than $0.001.
 
 Field task {#field-task}
 

@@ -132,4 +132,4 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
