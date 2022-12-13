@@ -11,7 +11,7 @@ To run a social science research, use one of the Toloka survey solutions:
     * If you are already conducting the survey using other channels to reach out to respondents, and would like to aggregate all the results in one place.
     
 * [Survey based on Qualtrics](questionnaire-qualtrics.md):
-   If you have an IRB-approved Qualtrics survey, and you do not want to start a new survey on Toloka. 
+    * If you have an IRB-approved Qualtrics survey, and you do not want to start a new survey on Toloka. 
 
 
 The comparison of the solutions is provided in the table below:
