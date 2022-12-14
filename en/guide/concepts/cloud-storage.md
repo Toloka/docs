@@ -3,9 +3,9 @@
 If your task requires images, audio, or video files, you can upload them:
 - Directly [from your device](#media-files). Use this way if there is only a single `URL` type input field in the [specification](incoming.md).
 
-- To [photo hosting](#image-hosting). Use it If you need less than 10 images (for example, for task [instructions](../../glossary.md#instructions) or for testing a [pool](../../glossary.md#pool)).
+- To [photo hosting](#image-hosting). Use it if you need less than 10 images (for example, for task [instructions](../../glossary.md#instructions) or for testing a [pool](../../glossary.md#pool)).
 
-- To [cloud storage](#cloud). Use it If you need to add more then 10 images, audio, or video files.
+- To [cloud storage](#cloud). Use it if you need to add more then 10 images, audio, or video files.
 
 ## Uploading media files directly {#media-files}
 
