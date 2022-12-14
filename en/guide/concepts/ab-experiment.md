@@ -8,12 +8,12 @@ Use A/B experiments to:
 
 * Find out how changes in the instructions or in the interface of the [task](../../glossary.md#task) affect the responses of Tolokers.
 
-* Control the markup quality. If your pool is small, it's hard to track how Toloker's markup quality changes over time. For example, the Toloker passed the exam but then for some reason his performance got worse. The experiments allow you to filter out such Tolokers even if your pool has few tasks.
+* Control the markup quality. If your [pool](../../glossary.md#pool) is small, it's hard to track how Toloker's markup quality changes over time. For example, the Toloker passed the exam but then for some reason his performance got worse. The experiments allow you to filter out such Tolokers even if your pool has few tasks.
 
 ## How it works {#how-it-works}
 
 * Each Toloker has an `id` number ranging from 1 to 100 (100 independent groups of Tolokers). Parameter is set to a Toloker like a [skill](../../glossary.md#skill) and Tolokers will always be placed into the the same group.
-* Use the **AB experiment** [filter](../../glossary.md#filters) in the [pool](../../glossary.md#pool) settings to select Tolokers from one or several groups.
+* Use the **AB experiment** [filter](../../glossary.md#filters) in the pool settings to select Tolokers from one or several groups.
 * You can use the **AB experiment** filter to launch the pools or the projects with different settings on independent groups of Tolokers.
 * To create an A/B experiment add two pools with different values of the **AB experiment** filter.
 
