@@ -1,8 +1,33 @@
 # Where to store files
 
-If your task requires images, audio, or video files, upload them to [photo hosting](#image-hosting) or [cloud storage](#cloud) and provide links to them in the [file with tasks](../../glossary.md#tsv).
+If your task requires images, audio, or video files, you can upload them:
+- Directly [from your device](#media-files). Use this way if there is only a single `URL` type input field in the [specification](incoming.md).
 
-If you need less than 10 images (for example, for task instructions or for testing a pool), use photo hosting. If you need to add more images, or audio and video files, use cloud storage.
+- To [photo hosting](#image-hosting). Use it If you need less than 10 images (for example, for task [instructions](../../glossary.md#instructions) or for testing a [pool](../../glossary.md#pool)).
+
+- To [cloud storage](#cloud). Use it If you need to add more then 10 images, audio, or video files.
+
+## Uploading media files directly {#media-files}
+
+Upload media files from your device to avoid difficulties with placing links in the [file with tasks](../../glossary.md#tsv).
+
+When you're uploading tasks to the pool, click **Select media files** and choose files.
+
+Features:
+
+- This option is available only for the projects that have a single `URL` type input field in the specification.
+
+- After uploading, tasks are automatically created with links to the uploaded files.
+
+{% note info %}
+
+Supported file formats:
+
+- Images — GIF, JPG, JPEG, PNG, WebP.
+- Audio — FLAC, MP3, WAV, M4A.
+- Video — MP4.
+
+{% endnote %}
 
 ## Photo hosting {#image-hosting}
 
@@ -71,7 +96,7 @@ Storage type | Trial length | Free storage size | Grant amount | Additional info
 
 ## Creating a file with tasks {#tsv-create}
 
-To use a file in the task interface, you should have a field of **link** type in your project's [input data](incoming.md). You'll need the name of this field later when creating a file.
+To use a file in the task interface, you should have a field of **URL** type in your project's [input data](incoming.md). You'll need the name of this field later when creating a file.
 
 In the [file with the tasks](pool_csv.md), paste the links into the column that matches the input data field to which this data is passed.
 
