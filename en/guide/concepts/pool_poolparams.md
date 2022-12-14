@@ -13,11 +13,9 @@ Configure this parameter if you need several people to complete your task. Overl
 To save money, you can set up [dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL).
 
 Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md). | {% if locale == "en-com" %}**Price**{% endif %}||
-||{% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} | Whether the tasks have shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
+||{% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} | Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
-If you aren't sure whether the tasks have shocking and pornographic content, enable this option.
-
-Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
+If you aren't sure whether the tasks have such content, enable this option. | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Filters**{% endif %} | By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
 
 If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
