@@ -555,7 +555,7 @@ Description for Tolokers. If it is filled in, the text will be displayed instead
 Whether tasks must be checked manually:
 
 - `true` — Automatic task acceptance (manual checking isn't necessary).
-- — The requester will check the tasks.
+- `false` — The requester will check the tasks.
 
 The default value is `true`. ||
 || **auto_accept_period_day** | **integer**
