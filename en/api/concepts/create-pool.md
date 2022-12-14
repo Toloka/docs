@@ -250,7 +250,7 @@ The overlap for task suites that are uploaded to the pool (used if the `allow_de
 
 The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers.
 
-We recommend allowing no more than 60 seconds per task suite (including the time for loading the page and submitting responses). ||
+We recommend giving at least 60 seconds per task suite (including the time for loading the page and submitting responses). ||
 || **dynamic_pricing_config.type** | **string \| required if**
 
 Required if dynamic pricing is used.
