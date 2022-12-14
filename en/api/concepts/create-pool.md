@@ -246,6 +246,9 @@ Settings that are applied by default when uploading new task suites to a pool. |
 || **defaults.default_overlap_ for_new_task_suites** {#default_overlap_for_new_task_suites} | **integer \| mandatory**
 
 The overlap for task suites that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
+|| **defaults.default_overlap_ for_new_tasks** {#default-overlap-tasks} | **integer**
+
+The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
 || **assignment_max_duration_ seconds** | **integer \| mandatory**
 
 The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers.
@@ -651,9 +654,6 @@ Setting up dynamic overlap (also known as incremental relabeling or IRL). Allows
 Set the closing interval (`auto_close_after_complete_delay_seconds`). It should be enough to complete tasks with an overlap higher than the minimum.
 
 When all pool tasks are completed, [aggregate the responses](aggregated-solutions.md). ||
-|| **defaults.default_overlap_ for_new_tasks** {#default-overlap-tasks} | **integer**
-
-The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
 || **mixer_config. min_real_tasks_count** | **float**
 
 Minimum number of general tasks in a task suite (if the number of assignments left is less than the number specified in `mixer_config.real_tasks_count`). Minimum — 0. By default, the value is the same as in `mixer_config.real_tasks_count`. ||
