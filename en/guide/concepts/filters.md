@@ -184,6 +184,12 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 
 {% endcut %}
 
+## AB experiment {#ab-experiment}
+
+Use the **AB experiment** filter to select Tolokers from one or several independent groups.
+
+To learn more, see [Using A/B experiments](ab-experiment.md).
+
 ## What's next {#what_next}
 
 - [Add tasks to the pool](pool.md)
@@ -196,7 +202,7 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
     - [Setting up quality control](qa-pool-settings.md).
     - [Non-automatic acceptance](offline-accept.md).
 
-### Troubleshooting {#troubleshooting}
+## Troubleshooting {#troubleshooting}
 
 {% cut "Tolokers" %}
 
