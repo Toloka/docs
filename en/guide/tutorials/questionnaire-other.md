@@ -14,7 +14,7 @@ In Toloka, you can place a link to your survey in the task interface. To enable 
 
 {% note info %}
 
-There are also other survey presets in Toloka. The comparison of all the survey solutions is provided in the [Overview](questionnaire-overview.md) section.
+There are also other survey presets in Toloka. Choose the right one with the help of our comparison in the [Overview](questionnaire-overview.md) section.
 
 {% endnote %}
 

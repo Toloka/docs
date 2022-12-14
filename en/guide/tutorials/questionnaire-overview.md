@@ -2,15 +2,15 @@
 
 To run a social science research, use one of the Toloka survey solutions:
 
-* [Survey with Toloka template](questionnaire-toloka.md):
+* [Survey with Toloka template](questionnaire-toloka.md)
     * For short and simple surveys.
     * To pre-select Tolokers for the second stage of your survey when the general settings are not enough to filter respondents you need. 
     
-* [Survey on third-party platform](questionnaire-other.md):
+* [Survey on third-party platform](questionnaire-other.md)
     * For long and complicated surveys.
     * If you are already conducting the survey using other channels to reach out to respondents, and would like to aggregate all the results in one place.
     
-* [Survey based on Qualtrics](questionnaire-qualtrics.md):
+* [Survey based on Qualtrics](questionnaire-qualtrics.md)
     * If you have an IRB-approved Qualtrics survey, and you do not want to start a new survey on Toloka. 
 
 

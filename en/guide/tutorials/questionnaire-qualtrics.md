@@ -82,7 +82,7 @@ Another way to choose a preset is to do the following:
 
     * **Total number of Tolokers**: Add the required number of respondents.
 
-    * **Countries of residence** (optional): Select the countries to sample from. If no selection is made, your survey will be available to Tolokers from 80 countries specified in the [Countries available in this release](https://toloka.ai/toloka-for-social-sciences/) list.
+    * **Countries of residence** (optional): Select the countries to sample from. If no selection is made, your survey will be available to Tolokers from 80 countries specified in the [Countries available in this release](https://toloka.ai/toloka-for-social-sciences/#table) list.
 
     * **Gender** (optional): Set the gender of Tolokers.
 
