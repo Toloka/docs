@@ -405,8 +405,6 @@ items:
             href: guide/concepts/multiple-access.md
   - name: Useful recommendations
     items:
-      - name: AB Experiment
-        href: guide/concepts/ab-experiment.md
       - name: Data storage
         items:
           - name: Where to store files
@@ -423,6 +421,8 @@ items:
         href: guide/concepts/faq.md
       - name: Using exams
         href: guide/concepts/how-to-use-exams.md
+      - name: Using A/B experiments
+        href: guide/concepts/ab-experiment.md
   - name: For developers
     items:
       - name: REST API
