@@ -6,11 +6,7 @@ In this tutorial, you will learn how to create a survey form and run a survey in
 
 Survey is a type of data collection task with several types of closed-ended and open-ended questions.
 
-{% note info %}
-
-There are also other survey presets in Toloka. Choose the right one with the help of our comparison in the [Overview](questionnaire-overview.md) section.
-
-{% endnote %}
+{% include [other-survey-solutions](../_includes/tutorials/other-survey-solutions.md) %}
 
 ## Prerequisites {#prerequisites}
 

@@ -12,11 +12,7 @@ You may need a third-party platform, when:
 
 In Toloka, you can place a link to your survey in the task interface. To enable a Toloker to confirm survey completion, show a code to each respondent who takes the survey on the third-party platform. The respondent will need to copy the code and paste it to the task in Toloka. You will see this code in the results file and will be able to check if it is correct.
 
-{% note info %}
-
-There are also other survey presets in Toloka. Choose the right one with the help of our comparison in the [Overview](questionnaire-overview.md) section.
-
-{% endnote %}
+{% include [other-survey-solutions](../_includes/tutorials/other-survey-solutions.md) %}
 
 ## Prerequisites {#prerequisites}
 
