@@ -83,7 +83,7 @@ Below is the list of currently implemented methods, including the already availa
 ## Questions and Bug Reports
 
 * For reporting bugs please use the [Toloka/bugreport](https://github.com/Toloka/crowdlib/issues) page.
-* Join our English-speaking [slack community]({{ toloka-slack }}) for both tech and abstract questions.
+* Join our English-speaking [slack community](https://toloka.ai/community) for both tech and abstract questions.
 
 ## Source Code
 
