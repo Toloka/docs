@@ -246,7 +246,7 @@ new_pool = toloka.Pool(
     project_id=new_project.id,
     private_name='Pool 1',  # Only you can see this information
     may_contain_adult_content=False,
-    reward_per_assignment=0.01,  # Sets the minimum payment amount for one task suite in USD
+    reward_per_assignment=0.005,  # Sets the minimum payment amount for one task suite in USD
     assignment_max_duration_seconds=60*5,  # Gives Tolokers 5 minutes to complete one task suite
     will_expire=datetime.datetime.utcnow() + datetime.timedelta(days=365),  # Sets that the pool will close after one year
 )
@@ -583,7 +583,7 @@ new_pool = toloka.Pool(
     project_id='120798',
     private_name='Pool 1',  # Only you can see this information
     may_contain_adult_content=False,
-    reward_per_assignment=0.01,  # Sets the minimum payment amount for one task suite in USD
+    reward_per_assignment=0.005,  # Sets the minimum payment amount for one task suite in USD
     assignment_max_duration_seconds=60*5,  # Gives Tolokers 5 minutes to complete one task suite
     will_expire=datetime.datetime.utcnow() + datetime.timedelta(days=365),  # Sets that the pool will close after one year
 )

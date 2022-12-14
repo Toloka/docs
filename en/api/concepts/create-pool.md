@@ -237,7 +237,7 @@ Whether the tasks contain adult content. ||
 The date and time in UTC when the pool needs to be closed (even if not all task suites have been completed). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **reward_per_assignment** | **float \| mandatory**
 
-Payment per task suite in U.S. dollars. For cents, use the dot (".") as the separator. The minimum payment is $0.01.
+Payment per task suite in U.S. dollars. For cents, use the dot (".") as the separator. The minimum payment is $0.005.
 
 Only training and control tasks can be uploaded to zero-price pools. ||
 || **defaults** | **object \| mandatory**
