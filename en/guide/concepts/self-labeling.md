@@ -4,7 +4,7 @@ After you [uploaded the files](task_upload.md) with the tasks to the pool, compl
 
 It also allows you to fix potential issues with your tasks even before you send them to the real Tolokers for labeling. This will save your money and Tolokers efforts.
 
-To label the project tasks as a Toloker, click **Check project** in the **Check the project before you start labeling** banner.
+To label the project tasks as a Toloker, click **Try tasks as a Toloker** at the pool overview page.
 
 [![Check the project before you start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/self-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/self-labeling.png)
 

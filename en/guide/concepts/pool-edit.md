@@ -58,7 +58,7 @@ Calculated automatically including 30% markup.
 
 #### Adult content
 
-Tasks that contain pornographic or shocking content. These tasks are only issued to Tolokers who have agreed to complete these types of tasks.
+Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only issued to Tolokers who have agreed to complete these types of tasks.
 
 If you aren't sure whether the tasks have this kind of content, select the {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} option.
 

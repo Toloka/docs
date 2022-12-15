@@ -46,6 +46,10 @@ items:
             href: ../template-builder/templates/audio-transcript.md
           - name: Audio comparison (Side-by-side)
             href: ../template-builder/templates/sbs-audio.md
+      - name: Field tasks
+        items:
+          - name: Collecting offline data
+            href: ../template-builder/templates/spatial-crowdsourcing.md
       - name: Data enrichment
         items:
           - name: Searching for product characteristics

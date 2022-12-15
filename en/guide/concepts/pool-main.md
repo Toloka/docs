@@ -27,11 +27,11 @@ Tasks in pools will automatically be available in the web version of Toloka and 
 ||**My tasks may contain shocking or pornographic content** | Whether the tasks have shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
 If you aren't sure whether the tasks have shocking and pornographic content, enable this option. | **Select the audience for your tasks**||
-||**Filters** | By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
+||**Filters** | By setting the filters, you choose Tolokers that meet your requirements to complete your task.
 
-If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
+For example, you can filter Tolokers by language, country, city, and so on. [Learn more](filters.md)
 
-If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md) | **Select the audience for your tasks**||
+If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to choose Tolokers who already completed training. [Learn more about skills](nav.md) | **Select the audience for your tasks**||
 ||**Speed/quality balance** | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | **Select the audience for your tasks**||
 
 ||**Non-automatic acceptance** | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
@@ -69,7 +69,7 @@ You set the range, the service analyzes the responses, their consistency, the le
 ||**Pool priority within the project** | Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority. | **Add optional pool settings**||
 ||**Time per task suite, sec** | The time allowed for completing a task suite, in seconds. Uncompleted tasks are redistributed to other Tolokers.
 
-We recommend spending no more than 60 seconds per task (including the time for page loading and sending responses).
+We recommend giving at least 60 seconds per task suite (including the time for page loading and sending responses).
 
 If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for. | **Add optional pool settings**||
 ||**Keep pool open after completion, sec** | The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).

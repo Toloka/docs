@@ -57,7 +57,7 @@ Title | Overview
 
 The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first.
 
-Possible values: from `-100` to `100`.
+Possible values: from `0` to `100`.
 
 By default the value is `0`. ||
 |#

@@ -50,4 +50,4 @@ To activate task merging in a  project, specify `"assignments_automerge_enable
 
 ## Learn more {#links}
 
-For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md).
+[More information about creating task suites](../../guide/concepts/pool-main.md).

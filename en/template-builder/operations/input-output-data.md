@@ -4,7 +4,7 @@ This section contains the code examples for reading from the input data (`data.i
 
 Read and write for interim data (`data.internal`) is similar.
 
-For more information on how to add a quotation mark `"`, backslash `\`, line break, or tab to the object in the input data, see [If you're not familiar with JSON](../quickstart.md). For more information about escaping in TSV files, see the [Requester's guide](../../guide/concepts/pool_csv.md).
+For more information on how to add a quotation mark `"`, backslash `\`, line break, or tab to the object in the input data, see [If you're not familiar with JSON](../quickstart.md). For more information about escaping in TSV files, see the [documentation](../../guide/concepts/pool_csv.md).
 
 ## Basic example {#read-write-data}
 

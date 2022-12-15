@@ -45,6 +45,6 @@ To start with Toloka-Kit:
 
 - Study [Toloka API documentation](../api/index.md).
 
-- See other features in [Toloka requester's guide](../guide/concepts/overview.md).
+- See other features in [Toloka documentation](../guide/concepts/overview.md).
 
 - Contribute to [Toloka-Kit on GitHub](https://github.com/Toloka/toloka-kit): open pull requests, report bugs or share your [usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#need-more-examples).

@@ -15,4 +15,4 @@ GET | [/assignments/<response_id>](get-assignment-id.md) | Gets the properties o
 
 ## Learn more {#links}
 
-- [Description of getting the responses in the Requester's guide](../../guide/concepts/result-of-eval.md)
+- [More information about getting responses](../../guide/concepts/result-of-eval.md)
