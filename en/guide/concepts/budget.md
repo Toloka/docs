@@ -32,11 +32,21 @@ The amount by project is shown in your [profile]({{ profile }}) (on the {% if lo
 
 ## Expenses in the requester's profile {#track-budget}
 
-To see spending data in your profile, go to the {% if locale == "en-com" %}**Expenses**{% endif %} tab. Amounts are grouped by date, project, and pool:
+To see spending data on your profile:
 
-- {% if locale == "en-com" %}**Sum**{% endif %}: Black indicates the amount spent, and gray indicates funds reserved for tasks waiting for review.
+1. Go to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
+1. Select a period on the calendar.
+1. Select the option:
 
-- {% if locale == "en-com" %}**Markup**{% endif %}: Fee for using Toloka.
+   - {% if locale == "en-com" %}**All costs**{% endif %} to view all costs. 
+   - {% if locale == "en-com" %}**Reserved**{% endif %} to view reserved money.
+   
+1. If necessary, save the report to a file. To do this, select {% if locale == "en-com" %}**Download report**{% endif %} from the menu on the right.
+
+The report will show:
+
+- {% if locale == "en-com" %}**Total spent**{% endif %}. The sum of all payments and fees for the selected period.
+- {% if locale == "en-com" %}**Reserved money**{% endif %}. Funds reserved for the tasks waiting to be reviewed.
 
 You can set up email notifications and get messages when you have less than 5 dollars left on your account.
 
