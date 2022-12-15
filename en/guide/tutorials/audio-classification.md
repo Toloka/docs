@@ -122,7 +122,7 @@ Before you begin:
 
         These settings mean that a Toloker who completes 3 or more task suites in less than 15 seconds will be blocked and won't be able to access your tasks anymore.
 
-        A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–20 tasks per suite.
+        A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–12 tasks per suite.
 
         {% note tip %}
 

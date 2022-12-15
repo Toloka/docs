@@ -140,8 +140,6 @@ Before you begin:
 
         The value depends on how many recordings of the same phrase you want to collect. If one is enough, set `1`.
 
-    1. At the bottom of the {% if locale == "en-com" %}**Price**{% endif %} section, you see {% if locale == "en-com" %}**Price per 1 task**{% endif %}. This is the amount of money paid per task.
-
 1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify the {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
 
     This time should be enough to read the instructions and load the task (for example, 1,200 seconds).
