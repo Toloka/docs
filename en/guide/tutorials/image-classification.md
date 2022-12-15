@@ -106,7 +106,7 @@ Before you begin:
 
     1. To filter out Tolokers who often make mistakes in the control tasks, click {% if locale == "en-com" %}**Add a quality control rule → Control tasks**{% endif %}. Enter the following values:
 
-        [![Create a pool. Control rule](../_images/tutorials/image-classification/image-classification-control-rule.png =700x)](../_images/tutorials/image-classification/image-classification-control-rule.png)
+        [![Create a pool. Control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/image-classification-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/image-classification-control-rule.png)
 
         This means that if a Toloker completed more than three control tasks and gave incorrect answers in more than 60% of them, they will be blocked and won't be able to complete tasks on this project for 10 days.
 

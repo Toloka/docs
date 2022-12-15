@@ -130,11 +130,11 @@ Before you begin:
 
     1. To filter out Tolokers who often make mistakes in the control tasks, click {% if locale == "en-com" %}**Add a quality control rule → Control tasks**{% endif %}. Enter the following values:
 
-        [![Create a pool. Control rule](../_images/tutorials/side-by-side/image-comparison-control-rule.png =700x)](../_images/tutorials/side-by-side/image-comparison-control-rule.png)
+        [![Create a pool. Control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-control-rule.png)
 
         This means that if a Toloker completed more than three control tasks and gave incorrect answers in more than 60% of them, they will be blocked and won't be able to complete tasks on this project for 10 days.
 
-        The rule will work if you specify the correct answers for the control tasks. You will do that later in this tutorial.    
+        The rule will work if you specify the correct answers for the control tasks. You will do that later in this tutorial.
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
