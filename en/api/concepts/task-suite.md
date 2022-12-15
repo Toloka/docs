@@ -23,5 +23,5 @@ PATCH | [/task-suites/<task_suite_id>/set-overlap-or-min](set-min-suite-overlap.
 
 ## Learn more {#links}
 
-- [Creating a pool](../../guide/concepts/pool-main.md) in the Requester's guide
-- [Uploading tasks to the pool](../../guide/concepts/task_upload.md) in the Requester's guide
+- [Creating a pool](../../guide/concepts/pool-main.md)
+- [Uploading tasks to the pool](../../guide/concepts/task_upload.md)

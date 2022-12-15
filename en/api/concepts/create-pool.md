@@ -286,7 +286,7 @@ Required if dynamic pricing is used. The price per task suite for a Toloker with
 Required if selective review is used. Overlap in tasks with selective review. ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function** | **object \| required if**
 
-Required if selective review is used. Distribution of tasks with selective review. For more information about how verification tasks are assigned, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
+Required if selective review is used. Distribution of tasks with selective review. More information about [how verification tasks are assigned](../../guide/concepts/pool-main.md). ||
 || **quality_control. checkpoints_config. real_settings. task_distribution_function. scope** | **string \| required if**
 
 Required if selective review is used.
@@ -449,7 +449,7 @@ The output data field name. ||
 
 Required if "smart mixing" is used.
 
-Parameters for automatically creating a task suite ("smart mixing"). For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
+Parameters for automatically creating a task suite ("smart mixing"). More information about [creating task suites](../../guide/concepts/pool-main.md). ||
 || **mixer_config. real_tasks_count** | **integer \| required if**
 
 Required if "smart mixing" is used.
