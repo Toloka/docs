@@ -24,9 +24,9 @@ Tasks in pools will automatically be available in the web version of Toloka and 
 
 #|
 ||**Parameter** | **Overview** | **Found at the step**||
-||**My tasks may contain shocking or pornographic content** | Whether the tasks have shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
+||**My tasks may contain shocking or pornographic content** | Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
-If you aren't sure whether the tasks have shocking and pornographic content, enable this option. | **Select the audience for your tasks**||
+If you aren't sure whether the tasks have such content, enable this option. | **Select the audience for your tasks**||
 ||**Filters** | By setting the filters, you choose Tolokers that meet your requirements to complete your task.
 
 For example, you can filter Tolokers by language, country, city, and so on. [Learn more](filters.md)
