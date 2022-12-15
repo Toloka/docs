@@ -286,7 +286,7 @@ You can structure your text classification task using the source text and radio 
 
 We recommend that you base it on the "Text classification" preset.
 
-You can also create your own interface. All the available tools are described in the [Requester's guide](spec.md).
+You can also create your own interface. All the available tools are described in the [documentation](spec.md).
 
 {% endcut %}
 

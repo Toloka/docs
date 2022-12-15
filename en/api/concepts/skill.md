@@ -17,4 +17,4 @@ DELETE | [/user-skills/\<id\>](delete-skill.md) | Removes a skill for a Toloker.
 
 ## Learn more {#links}
 
-- [Description of skills in the Requester's guide](../../guide/concepts/nav.md)
+- [More information about skills](../../guide/concepts/nav.md)
