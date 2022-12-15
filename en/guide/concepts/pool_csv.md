@@ -152,7 +152,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   {% cut "Example" %}
 
   ```json
-  {
+  [
     {
       "input_values": {
        "image_url": "https://www.example.com/image1.png"
@@ -168,7 +168,7 @@ If you need to add different task types to the pool, upload multiple files, one 
        "image_url": "https://www.example.com/image3.png"
       }
     }
-  }
+  ]
   ```
 
   #|
