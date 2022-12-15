@@ -28,7 +28,7 @@ The price of a task is set by the requester in the [pool settings](../../glossar
 
 The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md). It is 30%, but not less than $0.001.
 
-The amount by project is shown in your [profile]({{ profile }}) (on the {% if locale == "en-com" %}**Expenses**{% endif %} tab). You can see total fees for the pool tasks on the pool page (the {% if locale == "en-com" %}**Budget spent (+ markup)**{% endif %} and {% if locale == "en-com" %}**Approximate budget (+ markup)**{% endif %} fields).
+The amount by project is shown in your [profile]({{ profile }}) (on the {% if locale == "en-com" %}**Spent**{% endif %} tab). You can see total fees for the pool tasks on the pool page (the {% if locale == "en-com" %}**Budget spent (+ markup)**{% endif %} and {% if locale == "en-com" %}**Approximate budget (+ markup)**{% endif %} fields).
 
 ## Expenses in the requester's profile {#track-budget}
 
@@ -54,7 +54,7 @@ You can set up email notifications and get messages when you have less than 5 do
 
 To get the {% if locale == "en-com" %}Statistics on requester's tasks{% endif %} report with spending data:
 
-1. Choose the period in the [requester profile]({{ profile }}) (on the {% if locale == "en-com" %}**Expenses**{% endif %} tab).
+1. Choose the period in the [requester profile]({{ profile }}) (on the {% if locale == "en-com" %}**Spent**{% endif %} tab).
 
 1. Click {% if locale == "en-com" %}**Generate report (pdf)**{% endif %} and download the PDF file.
 
