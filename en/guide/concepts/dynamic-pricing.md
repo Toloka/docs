@@ -2,7 +2,7 @@
 
 The price is indicated per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (“.”) as a separator.
 
-If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. The fee is 30% of the price, but not less than $0.001.
+If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero.
 
 In Toloka, there are two ways to set the task price:
 
