@@ -148,7 +148,7 @@ You can create a pool using one of the ways:
 
         {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
+    1. [Upload](#upload) your task data.
     
     1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
@@ -238,7 +238,7 @@ You can create a pool using one of the ways:
 
         {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
+    1. [Upload](#upload) your task data.
 
     1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
@@ -250,7 +250,7 @@ You can create a pool using one of the ways:
 
 ## Upload data {#upload}
 
-{% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
+1. Go to the **Prepare and upload data** step if you're creating a pool or click the **Upload** button on the pool page.
 
 1. Create the tasks for Tolokers:
 

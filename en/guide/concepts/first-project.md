@@ -74,59 +74,9 @@ In the project, you'll customize an appearance of the tasks.
 
 A pool is a set of tasks sent out for completion at the same time. Create and configure the pool as follows:
 
-1. On the project page, click **Create new pool**.
+{% include [toloka-requester-pool-wizard](../_includes/toloka-requester-source/id-toloka-requester-source/pool-wizard.md) %}
 
-1. Configure the pool parameters:
-
-    - Set a price per [task suite](../../glossary.md#task-suite) and [overlap](../../glossary.md#overlap). The minimum price is $0.005.
-
-    - Use filters to select Tolokers who will have access to your tasks.
-
-    - Add and configure quality control rules to get more accurate responses. You can use a quality control preset with default settings. In the **Quality Control** section, click **Add a quality control rule** and choose a suitable preset.
-
-        ![](../_images/first-project/quality-control-presets.png)
-
-1. Click **Create pool**.
-
-## Step 3. Upload a file with tasks {#upload-tasks}
-
-A task is the data you want Tolokers to label. Each image or comment is a separate task.
-
-To upload a [file with tasks](../../glossary.md#tsv):
-
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
-
-1. Download the template that matches your task type.
-
-    Task types:
-
-    - General — tasks that you don't have answers for, and you want to get responses from Tolokers.
-
-    - Control — tasks that you know the correct answers to. It is used for checking Tolokers.
-
-    - Training — tasks with correct answers and hints. It is used for training Tolokers to complete a task.
-
-1. Add the tasks data to the template. For a trial pool, 10–100 tasks is enough.
-
-1. Attach the file with the tasks.
-
-1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
-
-1. Choose a way to put tasks into suites: {% if locale == "en-com" %}**Smart mixing**{% endif %} or {% if locale == "en-com" %}**Set manually**{% endif %}. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
-
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
-
-1. Click **Preview** to make sure that your tasks look correctly.
-
-1. Use control tasks to improve Tolokers' task completion quality.
-
-    {% note tip %}
-
-    To save time, you can opt for [having your control tasks created](task_markup.md) by Toloka experts.
-
-    {% endnote %}
-
-## Step 4. Launch the pool and get the results {#get-results}
+## Step 3. Launch the pool and get the results {#get-results}
 
 1. Start the pool by clicking **Start labeling**. This assigns the tasks to the Tolokers.
 

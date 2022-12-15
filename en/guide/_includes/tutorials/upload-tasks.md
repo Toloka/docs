@@ -1,1 +1,1 @@
-At the **Prepare and upload data** step, upload your task data to Toloka.
+At the **Prepare and upload data** step, upload your task data.
