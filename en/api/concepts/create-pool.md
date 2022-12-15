@@ -583,7 +583,7 @@ For pools that don't use "smart mixing".
 Assign task suites in the order in which they were uploaded. For example, for a pool with an overlap of 5, the first task suite is assigned to five Tolokers, then the second task suite, and so on.
 
 This parameter is available when the project has `"assignments_issuing_type": "AUTOMATED".` ||
-|| **Priority** {#priority} | **integer**
+|| **priority** {#priority} | **integer**
 
 The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first.
 
