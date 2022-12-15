@@ -4,7 +4,7 @@
 ||**Parameter** | **Overview** | **Found in the block**||
 ||{% if locale == "en-com" %}**Pool name**{% endif %} | The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page. | {% if locale == "en-com" %}**General information**{% endif %}||
 ||{% if locale == "en-com" %}**Public description**{% endif %} | Will be displayed instead of the project description in the task list for Tolokers and [linked training](train.md). | {% if locale == "en-com" %}**General information**{% endif %}||
-||{% if locale == "en-com" %}**Private comment**{% endif %} | If necessary, you can add a private project description that will only be available to you. | {% if locale == "en-com" %}**General information**{% endif %}||
+||{% if locale == "en-com" %}**Private comment**{% endif %} | If necessary, you can add a private pool description that will only be available to you. | {% if locale == "en-com" %}**General information**{% endif %}||
 ||{% if locale == "en-com" %}**Price per task suite, $**{% endif %} | Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md). | {% if locale == "en-com" %}**Price**{% endif %}||
 ||{% if locale == "en-com" %}**Overlap**{% endif %} | The number of Tolokers who should complete each task in the pool.
 

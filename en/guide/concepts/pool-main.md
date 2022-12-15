@@ -28,7 +28,7 @@ Tasks in pools will automatically be available in the web version of Toloka and 
 ||**Parameter** | **Overview** | **Found in the block**||
 ||{% if locale == "en-com" %}**Pool name**{% endif %} | The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page. | {% if locale == "en-com" %}**General information**{% endif %}||
 ||{% if locale == "en-com" %}**Public description**{% endif %} | Will be displayed instead of the project description in the task list for Tolokers and [linked training](train.md). | {% if locale == "en-com" %}**General information**{% endif %}||
-||{% if locale == "en-com" %}**Private comment**{% endif %} | If necessary, you can add a private project description that will only be available to you. | {% if locale == "en-com" %}**General information**{% endif %}||
+||{% if locale == "en-com" %}**Private comment**{% endif %} | If necessary, you can add a private pool description that will only be available to you. | {% if locale == "en-com" %}**General information**{% endif %}||
 ||{% if locale == "en-com" %}**Price per task suite, $**{% endif %} | Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md). | {% if locale == "en-com" %}**Price**{% endif %}||
 ||{% if locale == "en-com" %}**Overlap**{% endif %} | The number of Tolokers who should complete each task in the pool.
 
@@ -70,7 +70,7 @@ You set the range, the service analyzes the responses, their consistency, the le
 ||{% if locale == "en-com" %}**Priority**{% endif %} | Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
 ||{% if locale == "en-com" %}**Time per task suite, sec**{% endif %} | The time allowed for completing a task suite, in seconds. Uncompleted tasks are redistributed to other Tolokers.
 
-We recommend spending no more than 60 seconds per task (including the time for page loading and sending responses).
+We recommend giving at least 60 seconds per task suite (including the time for page loading and sending responses).
 
 If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
 ||{% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %} | The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).

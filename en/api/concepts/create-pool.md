@@ -237,7 +237,7 @@ Whether the tasks contain adult content. ||
 The date and time in UTC when the pool needs to be closed (even if not all task suites have been completed). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **reward_per_assignment** | **float \| mandatory**
 
-Payment per task suite in U.S. dollars. For cents, use the dot (".") as the separator. The minimum payment is $0.01.
+Payment per task suite in U.S. dollars. For cents, use the dot (".") as the separator. The minimum payment is $0.005.
 
 Only training and control tasks can be uploaded to zero-price pools. ||
 || **defaults** | **object \| mandatory**
@@ -246,11 +246,14 @@ Settings that are applied by default when uploading new task suites to a pool. |
 || **defaults.default_overlap_ for_new_task_suites** {#default_overlap_for_new_task_suites} | **integer \| mandatory**
 
 The overlap for task suites that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
+|| **defaults.default_overlap_ for_new_tasks** {#default-overlap-tasks} | **integer**
+
+The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
 || **assignment_max_duration_ seconds** | **integer \| mandatory**
 
 The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers.
 
-We recommend allowing no more than 60 seconds per task suite (including the time for loading the page and submitting responses). ||
+We recommend giving at least 60 seconds per task suite (including the time for loading the page and submitting responses). ||
 || **dynamic_pricing_config.type** | **string \| required if**
 
 Required if dynamic pricing is used.
@@ -555,7 +558,7 @@ Description for Tolokers. If it is filled in, the text will be displayed instead
 Whether tasks must be checked manually:
 
 - `true` — Automatic task acceptance (manual checking isn't necessary).
-- — The requester will check the tasks.
+- `false` — The requester will check the tasks.
 
 The default value is `true`. ||
 || **auto_accept_period_day** | **integer**
@@ -580,11 +583,11 @@ For pools that don't use "smart mixing".
 Assign task suites in the order in which they were uploaded. For example, for a pool with an overlap of 5, the first task suite is assigned to five Tolokers, then the second task suite, and so on.
 
 This parameter is available when the project has `"assignments_issuing_type": "AUTOMATED".` ||
-|| **Priority** {#priority} | **integer**
+|| **priority** {#priority} | **integer**
 
 The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first.
 
-Possible values: from `-100` to `100`.
+Possible values: from `0` to `100`.
 
 By default the value is `0`. ||
 || **filter** | **object**
@@ -651,9 +654,6 @@ Setting up dynamic overlap (also known as incremental relabeling or IRL). Allows
 Set the closing interval (`auto_close_after_complete_delay_seconds`). It should be enough to complete tasks with an overlap higher than the minimum.
 
 When all pool tasks are completed, [aggregate the responses](aggregated-solutions.md). ||
-|| **defaults.default_overlap_ for_new_tasks** {#default-overlap-tasks} | **integer**
-
-The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
 || **mixer_config. min_real_tasks_count** | **float**
 
 Minimum number of general tasks in a task suite (if the number of assignments left is less than the number specified in `mixer_config.real_tasks_count`). Minimum — 0. By default, the value is the same as in `mixer_config.real_tasks_count`. ||
