@@ -114,7 +114,7 @@ Before you begin:
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
-        [![Create a pool. Control rule](../_images/tutorials/side-by-side/side-by-side-control-rule.png =700x)](../_images/tutorials/side-by-side/side-by-side-control-rule.png)
+        [![Create a pool. Step 3.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/create-pool-step-3.2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/create-pool-step-3.2.png)
 
     1. Use the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
@@ -130,7 +130,7 @@ Before you begin:
 
     1. To filter out Tolokers who often make mistakes in the control tasks, click {% if locale == "en-com" %}**Add a quality control rule → Control tasks**{% endif %}. Enter the following values:
 
-        [![Create a pool. Control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-control-rule.png)
+        [![Create a pool. Control rule](../_images/tutorials/side-by-side/image-comparison-control-rule.png =700x)](../_images/tutorials/side-by-side/image-comparison-control-rule.png)
 
         This means that if a Toloker completed more than three control tasks and gave incorrect answers in more than 60% of them, they will be blocked and won't be able to complete tasks on this project for 10 days.
 
