@@ -32,41 +32,55 @@ The amount by project is shown in your [profile]({{ profile }}) (on the {% if lo
 
 ## Expenses in the requester's profile {#track-budget}
 
-To see spending data on your profile:
+To see your spending history:
 
-1. Go to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
-1. Select a period on the calendar.
-1. Select the option:
+1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
 
-   - {% if locale == "en-com" %}**All costs**{% endif %} to view all costs. 
-   - {% if locale == "en-com" %}**Reserved**{% endif %} to view reserved money.
-   
-1. If necessary, save the report to a file. To do this, select {% if locale == "en-com" %}**Download report**{% endif %} from the menu on the right.
+1. Under the **Spending history** title, select a period.
 
-The report will show:
+1. Select the type of the expenses:
 
-- {% if locale == "en-com" %}**Total spent**{% endif %}. The sum of all payments and fees for the selected period.
-- {% if locale == "en-com" %}**Reserved money**{% endif %}. Funds reserved for the tasks waiting to be reviewed.
+    - {% if locale == "en-com" %}**All costs**{% endif %} —  all expenses for the period.
 
-You can set up email notifications and get messages when you have less than 5 dollars left on your account.
+    - {% if locale == "en-com" %}**Reserved**{% endif %} — reserved money for the period.
 
-## Report on tasks {#stat-report}
+1. In the section below you will see:
 
-To get the {% if locale == "en-com" %}Statistics on requester's tasks{% endif %} report with spending data:
+    - **Total spent** — the sum of all payments and fees for the selected period.
 
-1. Choose the period in the [requester profile]({{ profile }}) (on the {% if locale == "en-com" %}**Spent**{% endif %} tab).
+    - **Reserved money** — funds reserved for the tasks waiting to be reviewed.
+    
+    - Details by dates in the **Payment** and in the **Fees** columns.
 
-1. Click {% if locale == "en-com" %}**Generate report (pdf)**{% endif %} and download the PDF file.
+{% note info %}
 
-    The report contains data on spending per project (including markup) and [rewards](../../glossary.md#reward) paid (the {% if locale == "en-com" %}**Reward**{% endif %} row).
+To save the report with the spending data in the PDF file format, click {% if locale == "en-com" %}**Download report as PDF**{% endif %}. To choose another file format, click ![](../_images/other/drop-down.svg) at the right.
+
+{% endnote %}
+
+## Get invoices and bills {#invoices}
+
+1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
+
+1. Click **Get invoices and bills**.
+
+1. Select a period in the **Date**, **of invoice from**, **till** fields. Also you can use **extended search** to set additional search parameters.
+
+1. Click **Show invoices** or **download the extended report as an MS Excel file**.
 
 ## Notifications of account status {#money-notification}
 
-To get notifications when your account has less than 5 dollars remaining, click {% if locale == "en-com" %}**Edit**{% endif %} in the [requester profile]({{ profile }}). Select options:
+To get notifications when you have less than 5 dollars left on your account:
 
-- {% if locale == "en-com" %}**Enable notifications**{% endif %}.
+1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Notifications**{% endif %} tab.
 
-- {% if locale == "en-com" %}**Send copies of notifications by email**{% endif %}, if you want to get messages by email.
+1. In the **Low funds** row, choose which notification method to use:
+
+    - **Browser** — push notifications will appear at the bottom of the screen. To enable notifications in the browser, click **Turn on** in the **Browser** column.
+
+    - **Messages** — notifications will be displayed on the [Messages]({{ messages }}) page.
+
+    - **Email** — notifications will be sent to the email specified in your profile.
 
 ## Main and secondary accounts {#parent-child-accounts}
 
@@ -75,27 +89,34 @@ Requesters who opted for a paper contract can create main and secondary accounts
 #### Limitations:
 
 - Only accounts without any projects can be main and secondary accounts.
+
 - We recommend the post-paid type of contract for main and secondary accounts.
 
 #### Keep in mind the following:
 
 - General [skills](../../glossary.md#skill).
+
 - Each secondary account has its own password and username.
+
 - You can't convert a secondary account into the main one.
+
 - Payments are only available for the main account, from which the funds are distributed to secondary accounts.
+
 - Financial reports and closing documents are issued to the main account and are not sent to secondary accounts.
 
-If you want to create main and secondary accounts, [write to support](../troubleshooting/support.md#new).
+If you want to create main and secondary accounts, [write to support](../troubleshooting/support.md).
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
+{% cut "How do I connect to billing from my city?" %}
 
-If the address is in Saint Petersburg, enter Saint Petersburg in the **Region** field, then specify the street, house number, and postal code. You don't need to fill out the other fields.
+1. On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Top up account**{% endif %}.
 
-If the address is in Moscow, enter Moscow in the **Region** field, then specify the street, house number, and postal code. [Learn more](refill.md#step-by-step) about connecting to billing.
+In the **Registration address** block, enter your region in the **Region** field, then specify the city, street, house number, and postal code. You don't need to fill out the other fields.
 
-If it still doesn't work, [enter](../troubleshooting/troubleshooting.md) your full address with the postal code in the feedback form. We'll help you fill out the fields correctly.
+[Learn more](refill.md#step-by-step) about connecting to billing.
+
+If it still doesn't work, contact [support](../troubleshooting/support.md). We'll help you fill out the fields correctly.
 
 {% endcut %}
 
@@ -105,27 +126,21 @@ That's normal. For example, if you entered $25 and you see "25,000", it's still 
 
 {% endcut %}
 
-{% cut "Why do we top up our account in a non-Russian currency?" %}
-
-Toloka is an international platform for users from different countries. The platform is provided by the Swiss company Yandex Services AG.
-
-{% endcut %}
-
 {% cut "Why do we pay 20% VAT in the invoice?" %}
 
-In accordance with the tax legislation of the Russian Federation, we have included Clause 3.8. in our [Requester agreement]({{ customeragreement-probki }}): the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
+In accordance with Clause 3.8. of our [Requester agreement]({{ customeragreement-probki }}), the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
 
 {% endcut %}
 
 {% cut "How long does paying the invoice take?" %}
 
-If you pay using a bank card, the money is usually transferred to your Toloka account within a few minutes. If you can't see the top-up amount on your account, [write to us](../troubleshooting/support.md#help) and we'll sort it out. Specify your requester username and account number and use **Account top-up** as your email subject.
+If you pay using a bank card, the money is usually transferred to your Toloka account within a few minutes. If you can't see the top-up amount on your account, [write to us](../troubleshooting/support.md) and we'll sort it out. Specify your requester username and account number and use **Account top-up** as your email subject.
 
 {% endcut %}
 
 {% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
 
-You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. The conversion follows the Central Bank of Russia's exchange rate at the time of invoicing (UTC). [Learn more](refill.md) about top-up.
+You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. [Learn more](refill.md) about top-up.
 
 {% endcut %}
 
@@ -133,9 +148,9 @@ You specify the top-up amount in USD. On the **Balance**, it's converted into ru
 
 You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](refill.md#step-by-step) with step-by-step instructions.
 
-[Get closing documents and invoices](../troubleshooting/support.md#feedback_g3b_vj3_qjb)
+[Get closing documents and invoices](../troubleshooting/support.md)
 
-[Refund money transferred to the Toloka account](../troubleshooting/support.md#feedback_khw_wc3_qjb)
+[Refund money transferred to the Toloka account](../troubleshooting/support.md)
 
 {% endcut %}
 
