@@ -52,7 +52,7 @@ Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md).
 
 #### Task price
 
-Calculated automatically including 30% markup.
+Calculated automatically.
 
 ## Audience {#pool-audience-info}
 

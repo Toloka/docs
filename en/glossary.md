@@ -126,7 +126,7 @@ Fast responses {#fast-responses}
 
 Fee {#fee}
 
-: The requester is charged a fee for using Toloka — a percentage of the cost of tasks. It is 30%, but not less than $0.001.
+: The requester is charged a fee for using Toloka — a percentage of the cost of tasks.
 
 Field task {#field-task}
 
@@ -137,9 +137,9 @@ File with tasks {#tsv}
 : To upload tasks, use TSV, XLSX or JSON files:
 
   - TSV (tab-separated values) is a text file format in which data is separated by a tab, and lines are separated by a newline symbol.
-  
+
   - XLSX is a spreadsheet file format developed by Microsoft to replace the outdated XLS file type.
-  
+
   - JSON (JavaScript Object Notation) is a text file format used to store and transfer structured data.
 
 Filters {#filters}
