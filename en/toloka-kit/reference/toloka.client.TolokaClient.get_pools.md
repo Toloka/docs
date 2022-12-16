@@ -1,5 +1,5 @@
 # get_pools
-`toloka.client.TolokaClient.get_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L1510)
+`toloka.client.TolokaClient.get_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1532)
 
 Finds all pools that match certain criteria.
 

@@ -1,5 +1,5 @@
 # Pool
-`toloka.client.pool.Pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/pool/__init__.py#L35)
+`toloka.client.pool.Pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/__init__.py#L35)
 
 ```python
 Pool(
@@ -53,7 +53,7 @@ Tasks, golden tasks and assignments are related to a pool.
 `project_id`|**Optional\[str\]**|<p>ID of the project that the pool was created for.</p>
 `private_name`|**Optional\[str\]**|<p>Name of the pool (only visible to the requester).</p>
 `may_contain_adult_content`|**Optional\[bool\]**|<p>Whether the tasks contain adult content.</p>
-`reward_per_assignment`|**Optional\[float\]**|<p>Payment per task suite in U.S. dollars. For cents, use the dot (&quot;.&quot;) as the separator. The minimum payment is $0.005. Only training and control tasks can be uploaded to zero-price pools.</p>
+`reward_per_assignment`|**Optional\[float\]**|<p>Payment per task suite in U.S. dollars. For cents, use the dot (&quot;.&quot;) as the separator. The minimum payment is $0.01. Only training and control tasks can be uploaded to zero-price pools.</p>
 `assignment_max_duration_seconds`|**Optional\[int\]**|<p>The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers. We recommend allowing no more than 60 seconds per task suite (including the time for page loading and sending responses).</p>
 `defaults`|**Optional\[[Defaults](toloka.client.pool.Pool.Defaults.md)\]**|<p>Settings that are applied by default when uploading new task suites to a pool.</p>
 `will_expire`|**Optional\[datetime\]**|<p>The date and time in UTC when the pool should be closed (even if all the task suites haven&#x27;t been completed).</p>
