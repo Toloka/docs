@@ -90,7 +90,7 @@ The Toloker will see rewards for completed tasks, activity and quality of work i
 
 {% endcut %}
 
-You can track money deducted for extra rewards in your [profile]({{ profile }}) on the {% if locale == "en-com" %}**Expenses**{% endif %} tab.
+You can track money deducted for extra rewards in your [profile]({{ profile }}) on the {% if locale == "en-com" %}**Spent**{% endif %} tab.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -102,7 +102,7 @@ You can increase the basic task price for Tolokers that have a higher skill. To 
 
 {% cut "How can I view statistics on paid rewards?" %}
 
-To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Expenses** tab.
+To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Spent** tab.
 
 {% endcut %}
 
