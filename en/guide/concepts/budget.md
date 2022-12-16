@@ -108,16 +108,6 @@ If you want to create main and secondary accounts, [write to support](../trouble
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I connect to billing from my city?" %}
-
-On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Top up account**{% endif %} and enter your location information. You don't need to fill out the other fields.
-
-[Learn more](refill.md#step-by-step) about connecting to billing.
-
-If it still doesn't work, contact [support](../troubleshooting/support.md). We'll help you fill out the fields correctly.
-
-{% endcut %}
-
 {% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
 
 That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
