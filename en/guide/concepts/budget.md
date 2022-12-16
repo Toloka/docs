@@ -110,9 +110,7 @@ If you want to create main and secondary accounts, [write to support](../trouble
 
 {% cut "How do I connect to billing from my city?" %}
 
-1. On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Top up account**{% endif %}.
-
-In the **Registration address** section, enter your region in the **Region** field, then specify the city, street, house number, and postal code. You don't need to fill out the other fields.
+On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Top up account**{% endif %} and enter your location information. You don't need to fill out the other fields.
 
 [Learn more](refill.md#step-by-step) about connecting to billing.
 
