@@ -14,12 +14,6 @@ That's normal. For example, if you entered $25 and you see "25,000", it's still 
 
 {% endcut %}
 
-{% cut "Why do we pay 20% VAT in the invoice?" %}
-
-In accordance with Clause 3.8. of our [Requester agreement]({{ customeragreement-probki }}), the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
-
-{% endcut %}
-
 {% cut "How long does paying the invoice take?" %}
 
 If you pay using a bank card, the money is usually transferred to your Toloka account within a few minutes. If you can't see the top-up amount on your account, [write to us](support.md#help) and we'll sort it out. Specify your requester username and account number and use **Account top-up** as your email subject.
@@ -28,7 +22,7 @@ If you pay using a bank card, the money is usually transferred to your Toloka ac
 
 {% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
 
-You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. The conversion follows the Central Bank of Russia's exchange rate at the time of invoicing (UTC). [Learn more](../concepts/refill.md) about top-up.
+You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. [Learn more](../concepts/refill.md) about top-up.
 
 {% endcut %}
 

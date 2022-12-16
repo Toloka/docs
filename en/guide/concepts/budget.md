@@ -26,7 +26,7 @@ The price of a task is set by the requester in the [pool settings](../../glossar
 
 ## Fees {#comission}
 
-The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md). It is 30%, but not less than $0.001.
+The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md).
 
 The amount by project is shown in your [profile]({{ profile }}) (on the {% if locale == "en-com" %}**Spent**{% endif %} tab). You can see total fees for the pool tasks on the pool page (the {% if locale == "en-com" %}**Budget spent (+ markup)**{% endif %} and {% if locale == "en-com" %}**Approximate budget (+ markup)**{% endif %} fields).
 
@@ -111,12 +111,6 @@ If you want to create main and secondary accounts, [write to support](../trouble
 {% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
 
 That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
-
-{% endcut %}
-
-{% cut "Why do we pay 20% VAT in the invoice?" %}
-
-In accordance with Clause 3.8. of our [Requester agreement]({{ customeragreement-probki }}), the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
 
 {% endcut %}
 
