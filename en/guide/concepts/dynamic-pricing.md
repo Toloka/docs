@@ -74,17 +74,7 @@ You can set a price for your task suite on the pool editing page. The minimum pr
 
 {% endcut %}
 
-{% cut "How do I set up a budget for my first task in Toloka?" %}
-
-Here's the general rule of pricing: the more time is needed to complete the task, the higher the price is.
-
-If the task is simple, like if the Toloker spends a few seconds to assess product relevance, then set the price to $0.01–$0.02 for 10 tasks (products) on the page.
-
-If you register in Toloka as a Toloker, you can compare offers from other requesters.
-
-Define the page price, multiply it by the overlap (it's usually 3–5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
-
-{% endcut %}
+{% include [faq-set-up-budget](../_includes/faq/set-up-budget.md) %}
 
 {% cut "How do I pay more to users who fill out optional fields?" %}
 
@@ -92,11 +82,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% endcut %}
 
-{% cut "Where do I find the statistics on the awards I paid?" %}
-
-Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
-
-{% endcut %}
+{% include [faq-awards-statistics](../_includes/faq/awards-statistics.md) %}
 
 {% cut "Can there be tasks with different prices in the pool?" %}
 
