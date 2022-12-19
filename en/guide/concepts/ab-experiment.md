@@ -6,17 +6,17 @@ A/B testing is a method of user experience research. It includes statistical tes
 
 Use A/B experiments to:
 
-- Find out how changes in the instructions or in the interface of the [task](../../glossary.md#task) affect the Tolokers responses.
+- Find out how changes in the [instructions](instruction.md), [interface](../../template-builder/quickstart.md#interface), [filters](../../glossary.md#filters), or in the [quality control rules](../../glossary.md#quality-control-rule) affect the Tolokers responses.
 
-- Control the labeling quality. If your [pool](../../glossary.md#pool) is small, it's hard to track how Toloker's labeling quality changes over time. For example, the Toloker had passed the exam but then for some reason their performance got worse. The experiments allow you to filter out such Tolokers even if your pool has few tasks.
+- Launch the [pools](../../glossary.md#pool) or the [projects](../../glossary.md#project) with different settings for independent groups of Tolokers.
+
+- Control the labeling quality. If your pool is small, it's hard to track how Toloker's labeling quality changes over time. For example, the Toloker had passed the exam but then for some reason their performance got worse. The experiments allow you to filter out such Tolokers even if your pool has few tasks.
 
 ## How it works {#how-it-works}
 
 - Each Toloker has an `id` number ranging from 1 to 100 (100 independent groups of Tolokers). Parameter is set to a Toloker like a [skill](../../glossary.md#skill) and Tolokers will always be placed into the the same group.
 
-- Use the **AB experiment** [filter](../../glossary.md#filters) in the pool settings to select Tolokers from one or several groups.
-
-- You can use the **AB experiment** filter to launch the pools or the projects with different settings for independent groups of Tolokers.
+- Use the **AB experiment** filter in the pool settings to select Tolokers from one or several groups.
 
 - To create an A/B experiment add two pools with different values of the **AB experiment** filter.
 
@@ -42,7 +42,7 @@ Yes. To run A/B experiments within one project, it must have two pools with diff
 
 {% cut "Can part of the Tolokers do tasks from both pools?" %}
 
-Yes, if you select more than 50 `id` values in the **AB experiment** filter for each pool (for example, `≥ 40` in one group and `≤ 60` in the other group, in this case the Tolokers with the IDs from 40 to 60 will be able to do tasks from both groups). Note that in this case the results of the experiment will be inaccurate.
+Yes, if there is an intersection of the values in the **AB experiment** filter (for example, `≥ 40` in one pool and `≤ 60` in the other pool, in this case the Tolokers with the IDs from 40 to 60 will be able to do tasks from both pools). Note that in this case the results of the experiment will be inaccurate.
 
 {% endcut %}
 
