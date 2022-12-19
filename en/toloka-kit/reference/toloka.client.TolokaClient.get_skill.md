@@ -1,5 +1,5 @@
 # get_skill
-`toloka.client.TolokaClient.get_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2027)
+`toloka.client.TolokaClient.get_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2047)
 
 ```python
 get_skill(self, skill_id: str)

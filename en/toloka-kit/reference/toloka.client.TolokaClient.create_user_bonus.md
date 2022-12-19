@@ -1,5 +1,5 @@
 # create_user_bonus
-`toloka.client.TolokaClient.create_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2767)
+`toloka.client.TolokaClient.create_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2790)
 
 Issues payments directly to a Toloker.
 

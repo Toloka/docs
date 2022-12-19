@@ -1,5 +1,5 @@
 # upsert_webhook_subscriptions
-`toloka.client.TolokaClient.upsert_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3250)
+`toloka.client.TolokaClient.upsert_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L3270)
 
 ```python
 upsert_webhook_subscriptions(self, subscriptions: List[WebhookSubscription])

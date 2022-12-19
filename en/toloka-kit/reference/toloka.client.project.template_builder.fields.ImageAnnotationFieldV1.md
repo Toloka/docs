@@ -1,5 +1,5 @@
 # ImageAnnotationFieldV1
-`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L248)
+`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/fields.py#L248)
 
 ```python
 ImageAnnotationFieldV1(

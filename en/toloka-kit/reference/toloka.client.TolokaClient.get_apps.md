@@ -1,5 +1,5 @@
 # get_apps
-`toloka.client.TolokaClient.get_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3562)
+`toloka.client.TolokaClient.get_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L3580)
 
 Finds all App solutions that match certain criteria.
 

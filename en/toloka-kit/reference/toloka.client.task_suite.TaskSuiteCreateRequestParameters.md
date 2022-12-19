@@ -1,5 +1,5 @@
 # TaskSuiteCreateRequestParameters
-`toloka.client.task_suite.TaskSuiteCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/task_suite.py#L77)
+`toloka.client.task_suite.TaskSuiteCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/task_suite.py#L77)
 
 ```python
 TaskSuiteCreateRequestParameters(
@@ -13,14 +13,14 @@ TaskSuiteCreateRequestParameters(
 )
 ```
 
-Parameters for TaskSuite creation controlling
+Parameters for creating task suites.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operation_id`|**Optional\[UUID\]**|<p>Operation ID for asynchronous loading of task suites.</p>
-`skip_invalid_items`|**Optional\[bool\]**|<p>Validation parameters:</p> <ul> <li>True - Create the task suites that passed validation. Skip the rest of the task suites.</li> <li>False - If at least one of the task suites didn&#x27;t pass validation, stop the operation and   don&#x27;t create the task suites.</li> </ul>
-`allow_defaults`|**Optional\[bool\]**|<p>Overlap settings:</p> <ul> <li>True - Use the overlap that is set in the pool parameters.</li> <li>False - Use the overlap that is set in the task suite parameters (in the `overlap` field).</li> </ul>
+`operation_id`|**Optional\[UUID\]**|<p>The ID of the operation conforming to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). Use it if the `async_mode` is set to `True`.</p>
+`skip_invalid_items`|**Optional\[bool\]**|<p>Task suite validation option:</p> <ul> <li>True — All valid task suites are added. If a task suite does not pass validation, then it is not added to Toloka.</li> <li>False — If any task suite does not pass validation, then operation is cancelled and no task suites are added to Toloka.</li> </ul> <p></p><p>Default value: `False`.</p>
+`allow_defaults`|**Optional\[bool\]**|<p>Active overlap setting:</p> <ul> <li>True — Use the overlap that is set in the `defaults.default_overlap_for_new_task_suites` pool parameter.</li> <li>False — Use the overlap that is set in the `overlap` task suite parameter.</li> </ul> <p></p><p>Default value: `False`.</p>
 `open_pool`|**Optional\[bool\]**|<p>Open the pool immediately after creating a task suite, if the pool is closed.</p>
-`async_mode`|**Optional\[bool\]**|<p>How the request is processed:</p> <ul> <li>True — deferred. The query results in an asynchronous operation running in the background.   Answer contains information about the operation (start and end time, status, number of sets).</li> <li>False — synchronous. Answer contains information about the generated sets of tasks.   You can send a maximum of 5000 task sets in a single request.</li> </ul>
+`async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>True — Asynchronous operation is started internally.</li> <li>False — The request is processed synchronously. A maximum of 5000 task suites can be added in a single request in this mode.</li> </ul> <p></p><p>Default value: `True`.</p>

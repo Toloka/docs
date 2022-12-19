@@ -1,5 +1,5 @@
 # aggregate_solutions_by_task
-`toloka.client.TolokaClient.aggregate_solutions_by_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L471)
+`toloka.client.TolokaClient.aggregate_solutions_by_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L498)
 
 Aggregates responses to a single task on the Toloka server.
 
@@ -17,7 +17,7 @@ Try [crowd-kit library](https://toloka.ai/en/docs/crowd-kit). It has many aggreg
 `task_id`|**Optional\[str\]**|<p>The ID of the task.</p>
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool containing the task.</p>
 `answer_weight_skill_id`|**Optional\[str\]**|<p>The ID of the skill that determines the weight of the Toloker&#x27;s responses.</p>
-`fields`|**Optional\[List\[[WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field](toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to aggregate. For the best results, each of these fields should have limited number of response options.</p>
+`fields`|**Optional\[List\[[WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field](toloka.client.aggregation.WeightedDynamicOverlapTaskAggregatedSolutionRequest.Field.md)\]\]**|<p>Output data fields to aggregate. For the best results, each of these fields should have limited number of response options. If the `DAWID_SKENE` aggregation type is selected, you can only specify one value.</p>
 
 * **Returns:**
 

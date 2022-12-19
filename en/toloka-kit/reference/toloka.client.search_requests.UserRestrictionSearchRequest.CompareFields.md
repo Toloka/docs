@@ -1,3 +1,3 @@
 # CompareFields
-`toloka.client.search_requests.UserRestrictionSearchRequest.CompareFields` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/search_requests.py#L720)
+`toloka.client.search_requests.UserRestrictionSearchRequest.CompareFields` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/search_requests.py#L720)
 

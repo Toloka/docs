@@ -1,5 +1,5 @@
 # get_attachments
-`toloka.client.TolokaClient.get_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L777)
+`toloka.client.TolokaClient.get_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L802)
 
 Finds all attachments that match certain criteria and returns their metadata.
 

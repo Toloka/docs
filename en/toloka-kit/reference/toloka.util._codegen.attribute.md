@@ -1,5 +1,5 @@
 # attribute
-`toloka.util._codegen.attribute` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/util/_codegen.py#L242)
+`toloka.util._codegen.attribute` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/util/_codegen.py#L319)
 
 ```python
 attribute(
