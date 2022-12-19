@@ -14,8 +14,6 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
 
 1. Click **Create batch**.
 
-
-
 ## Adding items to an existing batch {#edit}
 
 1. Open the project and go to the appropriate batch.
