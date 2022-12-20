@@ -6,25 +6,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-#### If you aren't using Toloka yet and need advice
-
-[Ask a question](support.md#new)
-
-#### If you have a problem working with Toloka
-
-In the section contents, select the stage where you encountered the problem and find the appropriate solution in the list. If not found, select the last item **Other questions**, fill out the form and wait for a response from the support team.
-
 ## Registration and getting started {#register-and-start}
-
-{% cut "I can't complete registration as an “individual requester”. I'm not getting an SMS code." %}
-
-1. Check the number you entered. You might have mistyped it.
-
-1. Check the number in Yandex ID. It must be set as your main number. If a different number is specified in Yandex ID, an SMS code will be sent to that number.
-
-You can also use the recommendations in [Yandex ID Help]({{ phone-problems_no-code }}). If this doesn't help, contact [support]({{ passport-support }}).
-
-{% endcut %}
 
 {% cut "How do I change my account type from “Requester” to “Toloker”?" %}
 
@@ -50,20 +32,6 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% endcut %}
 
-{% cut "The phone number belongs to another user" %}
-
-If you see this warning, make sure you entered the phone number correctly.
-
-Please note that you can only have one requester account per phone number (see the [User Agreement]({{ useragreement }})).
-
-If your [Yandex ID]({{ phones }}) is linked to the wrong number, change it. For more information about linking a phone number, see [Yandex ID Help]({{ authorization-phone }}).
-
-If you don't remember your credentials in Toloka, use [Restoring access]({{ restore }}).
-
-If you deleted your Toloka account, create a new Yandex ID and register in Toloka.
-
-{% endcut %}
-
 {% cut "How do I change the phone number in my account?" %}
 
 To change your phone number, go to [Yandex ID]({{ phones }}) and change your main number.
@@ -75,8 +43,6 @@ If you don't have access to the old number, it takes a month to replace it. For 
 {% endnote %}
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ## Sandbox {#sandbox}
 
@@ -92,37 +58,9 @@ Create and run a task. It will appear in the list of tasks for your trusted user
 
 {% endcut %}
 
-{% cut "Why don't I see my task in the Sandbox?" %}
-
-Make sure that:
-
-1. The [pool](../../glossary.md#pool) is started.
-
-1. The Toloker is added as a trusted user.
-
-1. The trusted user is registered in the sandbox as a Toloker.
-
-1. The trusted user didn't use social networks when registering.
-
-1. Your trusted Toloker matches the [filters](../../glossary.md#filters) you set.
-
-{% endcut %}
-
 {% cut "How do I see my pool through the eyes of a Toloker?" %}
 
 To test your task, add yourself as a trusted Toloker in the Sandbox. To do this, on the **Tolokers** page, click **Add trusted users**. Enter the username for the Toloker's account (case-sensitive).
-
-{% endcut %}
-
-{% cut "What do I do if an error occurs on the server when I try to export a project from the Sandbox?" %}
-
-#### Try exporting the project without pools.
-
-Select an exported project and don't select pools in the window that opens.Click **Export**.
-
-#### If the error persists, refresh the token.
-
-Go to [ Yandex ID]({{ passport-profile }}).Under **Sign in and device history**, click **Log out from all devices**.Request new tokens in the Sandbox and main environment.Update the token in the [Sandbox]({{ sandbox-profile-integration }})**Profile **.
 
 {% endcut %}
 
@@ -135,12 +73,6 @@ To do this, you will need a Sandbox version of the Toloka app. [Write to support
 {% cut "Will a copy of the project exported from the Sandbox be updated in the main version if I edit the original?" %}
 
 You won't be able to update a previously exported project. If you clone a project from the sandbox again, its current copy is added. The old project doesn't change.
-
-{% endcut %}
-
-{% cut "Why isn't anything happening when a test Toloker clicks **Submit** in the sandbox?" %}
-
-Use your requester account to preview the pool and check whether it's possible to submit a task. If this fails, most likely there is an error in your project.
 
 {% endcut %}
 
@@ -157,18 +89,6 @@ To download only the control tasks (if you completed them in the interface), go 
 No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox), [register](../concepts/access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
 
 {% endcut %}
-
-{% cut "I can't add a trusted user." %}
-
-Possible reasons:
-
-- The Toloker isn't registered in the sandbox. The account you registered in the Toloka production version won't work. Make sure you have specified the correct _Toloker's_ account as a trusted one.
-
-- The Toloker's account is authorized via social networks.[Register]({{ register }}) a new user in Yandex.
-
-{% endcut %}
-
-[Other questions](support.md#feedback_oyr_m5s_hlb)
 
 ## Setting up a project {#project}
 
@@ -194,25 +114,11 @@ No, but you can add links to them.
 
 {% endcut %}
 
-{% cut "Some tags disappear after I save the instructions." %}
-
-You can't use unsupported tags because they are deleted when you save the project. [List of supported tags](../concepts/instruction.md#html).
-
-{% endcut %}
-
 {% cut "How do I create different instructions for the training pool and main pools?" %}
 
 By default, the project instructions are displayed in the training pool. To use separate instructions for the training pool, deselect **Use project instructions**. Don't forget to update the training instructions if you change something in the general task instructions.
 
 {% endcut %}
-
-{% cut "What do I do if the radio button attributes are displayed correctly in the preview, but disappear after saving?" %}
-
-If the tags or attributes disappear after you save the instructions (for example, `checked="true"`), it means that they are not supported. For the full list of tags that can be used in the instructions, see the [Guide](../concepts/instruction.md#html-yes).
-
-{% endcut %}
-
-[Other questions](support.md#help)
 
 ### Configuring the task interface {#concept_gss_fkp_smb}
 
@@ -246,14 +152,6 @@ You can't check loading of audio files in the preview mode, but you can do it in
 
 {% endcut %}
 
-{% cut "My Tolokers can't upload a file with the assignment" %}
-
-If none of the Tolokers can submit the assignment, the most likely reason is JS validation. Run JS validation again.
-
-Export your project to the sandbox and try to complete the task in the sandbox yourself.
-
-{% endcut %}
-
 {% cut "How do I check the task display in the mobile Toloka app?" %}
 
 To check the task's look-and-feel on the mobile phone screen, enable the emulation mode in Chrome or Safari and edit the CSS block.
@@ -270,12 +168,6 @@ Use [concatenation](../concepts/t-components/helpers.md#concat), for example:
 {{field type="checkbox" name=(concat "result." @index ) label=(concat "checkbox –
           " @index) size="L"}}
 ```
-
-{% endcut %}
-
-{% cut "Why is the iframe content not displayed when I add the input and output data to the HTML interface in the preview mode?" %}
-
-Try to disable extensions in your browser. They might block iframe loading.
 
 {% endcut %}
 
@@ -327,12 +219,6 @@ Specify the name of the input field where you pass the link, without the bracket
 
 {% endcut %}
 
-{% cut "I selected one checkbox, but all the checkboxes are selected." %}
-
-The names of the output fields must differ: each checkbox must have its own unique name. For more information about this component, see [here](../concepts/t-components/checkboxes.md).
-
-{% endcut %}
-
 {% cut "How do I add assignment validation depending on a checkbox, so that if an object is in the image, it must be selected, otherwise, a checkbox must be selected?" %}
 
 You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the “Search for information online” template.
@@ -348,12 +234,6 @@ To add libraries:
 1. Click the “gear button” in project editing mode.
 
 1. In the field that opens on the left, enter the links and press **Enter**.
-
-{% endcut %}
-
-{% cut "Why doesn't the “Submit” button work in the task?" %}
-
-The issue is probably in the JS block. Try deleting its content, then test the **Submit** button in the preview mode.
 
 {% endcut %}
 
@@ -592,8 +472,6 @@ There are four options:
 
     For control purposes, add information about the value of this checkbox to the task interface.
 
-[Other questions](support.md#help)
-
 {% endcut %}
 
 ### Input and output data {#concept_cjj_gkp_smb}
@@ -624,8 +502,6 @@ You can't use a range as a fixed value.
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Setting up a pool {#pool-settings}
 
 ### Filters {#filters}
@@ -652,12 +528,6 @@ You can use **Aggregation by skill**, but you'll need to list all the possible v
 
 {% endcut %}
 
-{% cut "I created a project and a pool, but the Next button doesn't work or the preview shows a blank screen." %}
-
-Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
-
-{% endcut %}
-
 {% cut "Are there any easy ways to assign a certain user a skill in Toloka, even if the Toloker didn't do any tasks (like I can do in the Sandbox)?" %}
 
 In the main Toloka version, you can only assign a skill to users who have completed at least one of your tasks. There is no option to assign a skill to an arbitrary user. To limit the audience of users who will see your project, use [filters](../concepts/filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
@@ -670,7 +540,7 @@ Tasks from an open pool are available to every user that matches your pool [filt
 
 {% endcut %}
 
-{% cut "The Tolokers completed training for the first pool and got the skill. A week later, we cloned the pool, but all the Tolokers lost their skill. Which parameter affects skill expiration? Do all the Tolokers need to complete the training again?" %}
+{% cut "Which parameter affects skill expiration?" %}
 
 The validity period of the training skills is controlled by the **Retry after** parameter. The skill is deleted after a period specified in days in the **Retry after** field, if the Toloker:
 
@@ -679,12 +549,6 @@ The validity period of the training skills is controlled by the **Retry after** 
 - Didn't complete any tasks linked to training during this period.
 
 Your users will need to be trained again.
-
-{% endcut %}
-
-{% cut "Why is my project not available in the mobile version of Toloka?" %}
-
-Tasks in pools are automatically available in the web version of Toloka and the mobile app. Check the pool settings. You might have the `Client = Toloka web version`[filter](../concepts/filters.md) on.
 
 {% endcut %}
 
@@ -759,8 +623,6 @@ You can do that using the [Control tasks](../concepts/goldenset.md) rule.
 ![](../_images/troubleshooting/set-questionnaire-skill-student.png)
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Quality control {#quality-control}
 
@@ -888,12 +750,6 @@ Yes, the [fast response](../concepts/quick-answers.md) settings specify the time
 
 {% endcut %}
 
-{% cut "I set up quality control, then I copied my user requirements. All my quality control settings were deleted and replaced with the copied settings. Is that normal?" %}
-
-Yes. When you copy the filter and quality control settings, the settings you previously added manually are overwritten. You should see a warning about this in the copy settings window.
-
-{% endcut %}
-
 {% cut "I set up a rule to ban users after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
 
 Indeed, this rule is probably too strict. Even the most careful user can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban users who regularly fail captcha checks in Toloka.
@@ -1012,14 +868,6 @@ No, this is incorrect. With these settings, each time a rule condition is met, t
 
 {% endcut %}
 
-{% cut "I created a training pool with one task containing a hint. The Toloker fails to complete the task on the first attempt, but finally succeeds. The Toloker gets the skill `0`. How do I grant to the Toloker access to my tasks? The minimum required level that you can set is `10`." %}
-
-Technically, if you have only one task in your training pool, you don't have this option. The skill will be either `0` or `100`. We recommend that you add several tasks, or at least 2 so that the Toloker will practice on the first task and will be able to do the second task correctly. In this case, you can admit users to your main pool starting from the skill value of `50`.
-
-You can also create a training pool based on the main pool. Assign a skill using the [Control tasks](../concepts/goldenset.md) rule: in this case, you can admit users with any skill level to your main pool, even if the value is zero. But we don't advise giving tasks to people who failed training.
-
-{% endcut %}
-
 {% cut "Can I use non-automatic acceptance in the training pool?" %}
 
 No. But you can create a pool of the **Training** type based on your main pool and enable non-automatic acceptance there.
@@ -1044,31 +892,11 @@ No, the Tolokers are unaware of the ban.
 
 {% endcut %}
 
-{% cut "When I export a project from the Sandbox, the task files are not exported. Is this how it's supposed to work? I suddenly lost the markup of the control tasks that I created in the sandbox." %}
-
-The tasks themselves are not exported, only the project configuration and the settings of the selected pool. However, you can download your marked up tasks from the **Sandbox** pool and import them to the pool you created. To download the control tasks only (if you marked them up in the interface), go to **Mark up**, then click **Control tasks** and **Download**.
-
-{% endcut %}
-
-{% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. So I try to use `3` in the **Recent control task responses to use** field, but I get an error that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
-
-The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
-
-{% endcut %}
-
 {% cut "What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?" %}
 
 To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](../concepts/mvote.md) to the pool.
 
 Don't forget to enable **Keep task order** in the pool parameters. Majority vote is used in the projects with preset options (radio buttons or checkboxes). This rule won't apply to the text entry or file upload fields.
-
-{% endcut %}
-
-{% cut "I want to create training and exam pools to match the entered text against a sample, and sometimes the matching fails. How do I implement this?" %}
-
-For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
-
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
 
 {% endcut %}
 
@@ -1107,8 +935,6 @@ Possible reasons:
 - Set a higher [priority](../concepts/pool_poolparams.md#priority) for the pool among other project pools.
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Overlap {#overlap}
 
@@ -1158,8 +984,6 @@ The progress bar shows the number of task suites including the overlap. If the o
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Adding tasks to a pool {#add-task-to-pool}
 
 ### Uploading tasks {#concept_iy1_3kh_5mb}
@@ -1179,20 +1003,6 @@ Try completing the tasks yourself. Ask your colleagues and friends to complete t
 {% cut "How do I know how many tasks a Toloker will see on the page?" %}
 
 You can specify the number of tasks on the page when you upload your tasks to the pool. For more information about distributing tasks across pages, see [this article](../concepts/distribute-tasks-by-pages.md).
-
-{% endcut %}
-
-{% cut "Why does the preview display all the photos from the file with tasks at once?" %}
-
-You must use a separate row for each task in your file with tasks. For more information, see [here](../concepts/pool_csv.md).
-
-When you create a pool, the pool will have settings for the number of tasks per suite.
-
-{% endcut %}
-
-{% cut "The system interprets commas inside my array elements as separators between the array elements. How do I avoid this?" %}
-
-Escape commas with a backslash (`\`).
 
 {% endcut %}
 
@@ -1218,18 +1028,6 @@ If you need to display the text from the `hint` field in several lines, add hyph
 
 {% endcut %}
 
-{% cut "Why do double quotes disappear from the output if I try to escape them using quotation marks?" %}
-
-If you have one word enclosed in quotes, format the uploaded assignment like this: `"How many letters are there in the word ""Liechtenstein"""`. If you are escaping quotes inside your text, then the entire text must be enclosed in quotes. For more information, see the [Guide](../concepts/pool_csv.md#string).
-
-{% endcut %}
-
-{% cut "Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?" %}
-
-Check the `hint` field. For the general tasks, this field must be empty.
-
-{% endcut %}
-
 {% cut "How do I create the task file properly so that there are no errors?" %}
 
 In the file with the general tasks, the columns with the `INPUT` headers must be filled out. You can see those headers if you download a sample file from the pool.
@@ -1244,18 +1042,6 @@ For more information about creating the file, see the [Guide](../concepts/pool_c
 
 {% endcut %}
 
-{% cut "Why do I see a syntax error when I upload a task where a user has to view an image and write feedback?" %}
-
-The error might occur if the expected input type is URL, but a string is received.
-
-There may be two reasons:
-
-- The input field has the "link" type.
-
-- The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
-
-{% endcut %}
-
 {% cut "What is the maximum number of tasks per suite?" %}
 
 It depends on the task. Technically, you can use as many tasks you want.
@@ -1265,12 +1051,6 @@ But users are reluctant to take lengthy tasks. They'd rather do 10 tasks that ta
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
 The third thing to consider is quality control and assignment review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
-
-{% endcut %}
-
-{% cut "I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?" %}
-
-Toloka will split the links to images in the uploaded file into task suites depending on the method you specified when uploading the file. For more information, see the [Guide](../concepts/distribute-tasks-by-pages.md).
 
 {% endcut %}
 
@@ -1348,86 +1128,15 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 {% endcut %}
 
-{% cut "Errors when uploading tasks in the pool" %}
-
 {% cut "How do I view the processing log?" %}
 
 To view the processing log, click **More on uploading errors**. The processing log is written in JSON format. Objects inside `result` match the line number of the uploaded file. Lines that were processed with an error have the status `"success": false`.
+
 {% note info %}
 
 To work with a large log conveniently, copy it to the text editor.
 
 {% endnote %}
-
-{% endcut %}
-
-#### Errors in column headers
-
-If the [column headings](../concepts/pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
-
-#### Processing errors tables
-
-```json
-"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**Extra tabs.**
-
-If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
-
-For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
-|#
-
-```json
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**The number of fields in the header and in the row doesn't match.** | Make sure that:
-
-- The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](../concepts/pool_csv.md#string) `" "`.
-|#
-
-```json
-"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
-|#
-
-```json
-"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**Invalid data in a “link” (“url”) field.** | Make sure that:
-
-- Links start with the `http://`, `https://` or `www` prefix.||
-|#
-
-```json
-"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
-```
-
-{% endcut %}
-
-{% cut "The same task appeared on different pages" %}
-
-The same task may appear on different pages if:
-
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
-
-- Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-
-- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
 
 {% endcut %}
 
@@ -1439,19 +1148,11 @@ If the text is in the HTML block of the task template, then clone the project. T
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ### Training-exam-retry {#concept_i2g_kkh_5mb}
 
 {% cut "How do I precede my task with mandatory control questions to check that the Toloker understood my instructions? Would such training or control tasks be similar to the general tasks?" %}
 
 The training and control questions must meet your project specification. However, you can create a separate project with your instructions, survey, and sample videos. Then you can assign a skill to users based on their responses. You can use this skill to admit Tolokers to the main project.
-
-{% endcut %}
-
-{% cut "More Tolokers were trained than the training skill shows" %}
-
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](../concepts/train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banning-tolokers)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
 
 {% endcut %}
 
@@ -1493,12 +1194,6 @@ In the task file, leave empty control values for the optional output data.
 
 {% endcut %}
 
-{% cut "Why do I have an infinite number of pages in the training pool?" %}
-
-Tasks have infinite overlap in the training pool. As long as the training pool is open and the training is running, users can access the tasks. Learn more about [training pools](../concepts/train.md).
-
-{% endcut %}
-
 {% cut "How do I insert a link in the GOLDEN field?" %}
 
 Text in the GOLDEN field must match the control text exactly.
@@ -1536,12 +1231,6 @@ However, the mere fact that a Toloker completes your training pool successfully 
 Besides the training, be sure to add quality control rules and [control tasks](../concepts/control.md) to your main pools. This way you can ensure the quality throughout the task performance process.
 
 If the task requires that the Tolokers send free-format responses or data files, use **non-automatic acceptance** to pay for tasks after they are reviewed.
-
-{% endcut %}
-
-{% cut "Why is only Smart Mixing available in Training?" %}
-
-This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the {% if locale == "en-com" %}**Set manually**{% endif %} option in the training, create the main pool, set the pool type as {% if locale == "en-com" %}**Training**{% endif %}, and set the cost to zero.
 
 {% endcut %}
 
@@ -1638,8 +1327,6 @@ For training tasks, you need to:
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ### Changing a running pool {#concept_olz_kkh_5mb}
 
 {% cut "If I change the time allocated for one task, will this apply to tasks assigned earlier?" %}
@@ -1666,8 +1353,6 @@ After uploading, all tasks are put into one list and can't be deleted separately
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Working with results {#result-questions}
 
 ### Aggregation {#results}
@@ -1684,27 +1369,9 @@ The Dawid-Skene aggregation model analyzes the Toloker responses and creates a c
 
 {% endcut %}
 
-{% cut "Why does the Dawid-Skene aggregation model return a result that the Tolokers didn't select?" %}
-
-The method doesn't guarantee that original Toloker responses will be used for aggregation. The algorithm takes into account Tolokers' quality parameters and response patterns. Consequently, it can return a result that's different from the Tolokers' responses to this task.
-
-{% endcut %}
-
 {% cut "Where do I see the aggregation progress?" %}
 
 The pool page contains the {% if locale == "en-com" %}**List of Operations**{% endif %} button.
-
-{% endcut %}
-
-{% cut "Why might aggregation by Toloker skill be unavailable?" %}
-
-You cannot aggregate by project fields that have no valid values. Specify the possible values for all the fields of all types.
-
-{% endcut %}
-
-{% cut "You can't aggregate by skill. When running via the API, I get the error code `ONLY_FOR_POOL_WITH_MIXER`. Why?" %}
-
-You need to use [smart mixing](../concepts/task_upload.md#smart-mixing_1).
 
 {% endcut %}
 
@@ -1714,23 +1381,13 @@ Yes. To set up notifications in your account, go to {% if locale == "en-com" %}*
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ### Processing the results file {#results_1}
-
-{% cut "Why do I get blank spaces inside my TSV file?" %}
-
-When you upload a file with rows, double quotes indicate an area where you can use special characters (tabs or line breaks). Toloka merges everything in between the quotes into one row to make up one task. To use double quotes inside such an area, you need to escape them with another quote. [Read more here](../concepts/pool_csv.md#string).
-
-{% endcut %}
 
 {% cut "What is the result of processing an empty text field?" %}
 
 If a Toloker typed some text and then deleted it, the result is `null`, otherwise, it's `undefined`.
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Assignment review {#results_2}
 
@@ -1790,35 +1447,6 @@ The project rating is the average rating across all categories. Pay particular a
 
 {% endcut %}
 
-{% cut "Low rating for “Will you take similar tasks in the future”" %}
-
-Perhaps the Tolokers found your tasks too difficult. Try to simplify them.
-
-{% endcut %}
-
-{% cut "Low rating for “Clarity of instructions”" %}
-
-Shorten instructions and rewrite using simpler language. Add pictures and examples.
-
-{% endcut %}
-
-{% cut "Low rating for “Task interface usability”" %}
-
-Make the interface [more user-friendly](../concepts/spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
-
-Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
-
-{% endcut %}
-
-{% cut "Low rating for “Communication with the requester”" %}
-
-Reply to [messages from Tolokers](../concepts/messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
-If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
-
-{% endcut %}
-
-[Other questions](support.md#help)
-
 ### Statistics {#results_3}
 
 {% cut "What is the formula for calculating the percentage of pool completion?" %}
@@ -1844,8 +1472,6 @@ They return to the pool until the full overlap is reached.
 When you download the results file, select the **Start time** and **Submit time** checkboxes. The downloaded file will include the exact UTC date and time when the Toloker accepted the assignment and submitted it.
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ## Archiving pools and projects {#pool-n-project-archive}
 
@@ -1881,8 +1507,6 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Payments {#finance}
 
 ### Adding funds to your account {#concept-1}
@@ -1895,10 +1519,6 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 
 {% include [faq-add-money](../_includes/faq/add-money.md) %}
 
-[Get closing documents and invoices](support.md#feedback_g3b_vj3_qjb)
-
-[Other questions](support.md#new)
-
 ### Payment for tasks {#concept-2}
 
 {% cut "Where can I set the task price?" %}
@@ -1909,21 +1529,11 @@ You can set a price for your task **page** on the pool editing page. The minimum
 
 {% include [faq-set-up-budget](../_includes/faq/set-up-budget.md) %}
 
-{% cut "How do I pay more to users who fill out optional fields?" %}
-
-You can issue rewards after completion and describe the criteria for increased rewards in your task instructions. You can't change the task suite price dynamically based on the completion results.
-
-{% endcut %}
+{% include [faq-pay-more-optional-fields](../_includes/faq/pay-more-optional-fields.md) %}
 
 {% include [faq-awards-statistics](../_includes/faq/awards-statistics.md) %}
 
 {% include [faq-tasks-with-different-prices](../_includes/faq/tasks-with-different-prices.md) %}
-
-[Other questions](support.md#new)
-
-### Refund {#concept-3}
-
-[Refund money transferred to the Toloka account](support.md#feedback_khw_wc3_qjb)
 
 ## Tolokers {#annotators}
 
@@ -1953,14 +1563,6 @@ The requester can't see the full details about specific Tolokers. For example, t
 
 {% endcut %}
 
-{% cut "More than 500 Tolokers passed the training, but the training skill shows only 30." %}
-
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set repeated training in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of the [ban](../../glossary.md#banning-tolokers)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
-
-{% endcut %}
-
-[Other questions](support.md#help)
-
 ### Rewards {#bonuses}
 
 {% cut "How do I reward Tolokers in addition to the basic task price?" %}
@@ -1974,8 +1576,6 @@ You can increase the basic task price for Tolokers that have a higher skill. To 
 To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Expenses** tab.
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Cheaters {#cheaters}
 
@@ -2009,14 +1609,6 @@ If the Toloker was already paid for the tasks, you can't cancel the payment.
 
 {% endcut %}
 
-{% cut "Tolokers completed the training successfully, but have poor results in the general task" %}
-
-During the training, Tolokers follow the task instructions and practice completing your tasks. Based on the training results, the requester can select Tolokers who did well enough to get access to the main pool. However, the mere fact that the Toloker completes your training pool successfully does not guarantee that they will continue to demonstrate high-quality performance. Tolokers who did well on the training but had inadequate results in the general task might have obtained correct training responses from other people.
-
-In addition to the training, be sure to set up [quality control rules](../concepts/control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [non-automatic acceptance](../concepts/offline-accept.md) to pay for them only after reviewing the responses.
-
-{% endcut %}
-
 {% cut "The results include the responses of users who I banned" %}
 
 The results show the responses of all users, including those who are banned. To exclude their responses from the results, select the option **Exclude assignments by banned users**. It will delete the responses from users who were banned at the moment the results were downloaded, not when the pool was labeled.
@@ -2030,14 +1622,6 @@ You can't automatically reject the responses of a banned Toloker.
 But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned users to other Tolokers using the [Re-completion of assignments from banned users](../concepts/restore-task-overlap.md) rule.
 
 {% endcut %}
-
-{% cut "My project has a trusted Toloker who was banned by the system" %}
-
-Unfortunately, this Toloker has violated the Toloker agreement and will no longer be able to complete tasks. You can find new Tolokers or customize [filters](../concepts/filters.md) so that they better match the project requirements.
-
-{% endcut %}
-
-[Other questions](support.md#feedback_oyr_m5s_hlb)
 
 ## Questions about presets {#question-about-templates}
 
@@ -2086,8 +1670,6 @@ The simpler the task, the cheaper it is and the better the quality of the final 
 You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” preset.
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Area selection {#concept_bdk_qgd_rmb}
 
@@ -2199,8 +1781,6 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ### Field task {#concept_k1m_rgd_rmb}
 
 {% cut "Can I limit the source of the photo to camera-only in a field task so that the Toloker can't upload a photo from anywhere else?" %}
@@ -2212,8 +1792,6 @@ In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Go
 [Learn more about setting up the image upload component](../concepts/t-components/upload-picture.md).
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Side-by-side image comparison {#side-by-side}
 
@@ -2236,8 +1814,6 @@ In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Go
 You can also edit the project so that the Toloker sees 3 images at once and selects one of them.
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ## Survey {#interview}
 
@@ -2269,8 +1845,6 @@ Upload one task and use the overlap parameter to enter the number of people you 
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ### Field task {#concept_k1m_rgd_rmb}
 
 {% cut "Can I limit the source of the photo to camera-only in a field task so that the Toloker can't upload a photo from anywhere else?" %}
@@ -2282,8 +1856,6 @@ In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Go
 [Learn more about setting up the image upload component](../concepts/t-components/upload-picture.md).
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Side-by-side image comparison {#side-by-side}
 
@@ -2306,8 +1878,6 @@ In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Go
 You can also edit the project so that the Toloker sees 3 images at once and selects one of them.
 
 {% endcut %}
-
-[Other questions](support.md#help)
 
 ### Survey {#interview}
 

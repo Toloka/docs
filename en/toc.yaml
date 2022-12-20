@@ -463,7 +463,7 @@ items:
               - include:
                   path: _includes/crowd-kit-toc.yaml
                   mode: link
-  - name: FAQ
+  - name: Frequently asked questions
     items:
       - name: All questions on one page
         href: guide/faq/faq.md
@@ -487,11 +487,9 @@ items:
         href: guide/faq/users.md
       - name: Questions about presets
         href: guide/faq/questions-about-templates.md
-      - name: Support
-        href: guide/faq/support.md
-  - name: Troubleshooting and support
+  - name: Troubleshooting
     items:
-      - name: All questions on one page
+      - name: Troubleshooting
         href: guide/troubleshooting/troubleshooting.md
       - name: Registration and getting started
         href: guide/troubleshooting/register-and-start.md
