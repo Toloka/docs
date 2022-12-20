@@ -145,6 +145,12 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   - `message_on_unknown_solution` — hints for training tasks. The Toloker will see the hint text at the top of the task (on a red background) if their response to the control task is different from the correct one.
 
+  - Point coordinates for field tasks:
+
+      - `latitude` — latitude.
+
+      - `longitude` — longitude.
+
   {% cut "General task" %}
 
   To create a [general task](../../glossary.md#general-task), specify the names and the values of the input fields in the `input_values` object.
@@ -310,6 +316,55 @@ If you need to add different task types to the pool, upload multiple files, one 
   || **message_on_unknown_solution** | **string**
 
   Hint for the task.
+
+  ||
+  |#
+
+  {% endcut %}
+
+  {% endcut %}
+  
+  {% cut "Field task" %}
+
+  To create a field task, specify:
+
+  - The names and the values of the input fields in the `input_values` object.
+
+  - Point coordinates in the `latitude` and `longitude` properties.
+
+  {% cut "Example" %}
+
+  ```json
+  {
+    "input_values": {
+      "image_url": "https://www.example.com/image1.png"
+    },
+    "latitude": "12.21",
+    "longitude": "24.32"
+  }
+  ```
+  
+  #|
+  || Key | Description ||
+  || **input_values** | **object**
+
+  Input data for a task. List of pairs:
+
+  ```json
+    "<ID of field 1>": "<value of field 1>",
+    "<ID of field 2>": "<value of field 2>",
+    ...
+    "<ID of field N>": "<value of field N>"
+  ```
+  ||
+  || **latitude** | **string**
+
+  Latitude of a point on the map.
+
+  ||
+  || **longitude** | **string**
+
+  Longitude of a point on the map.
 
   ||
   |#
