@@ -37,7 +37,8 @@ If your data is confidential, take additional measures to protect it.
 
 - Use any name or pseudonym to identify yourself for the Tolokers — you don't have to disclose your company name. This is useful for requesters who don't want to attract unnecessary interest from Tolokers.
 
-- You can use the [Submitted responses](submitted-answers.md#rule) quality control rule to limit the number of task suites each Toloker can complete. This lets you better protect your data from fraud and minimize your risks (scattered data has no commercial value).
+- You can use the [Submitted responses](submitted-answers.md#rule) quality control rule to limit the number of task suites each Toloker can complete. This lets you better protect your data from fraud and minimize your risks (scattered data has no commercial value). {% include notitle [anti-fraud](../_includes/anti-fraud.md) %}
+
 
 ### Store data on your own server {#keep-it-save}
 

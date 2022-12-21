@@ -54,7 +54,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ## Banning on the platform {#ban-platform}
 
-Toloka has a special antifraud algorithm for banning dishonest Tolokers. It monitors user behavior and blocks suspicious accounts.
+Toloka has a special [anti-fraud algorithm](https://toloka.ai/anti-fraud/) for banning dishonest Tolokers. It monitors user behavior and blocks suspicious accounts.
 
 The main reasons for banning:
 
@@ -133,7 +133,7 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-{% cut "Contact support" %}
+{% cut "Report suspicious Tolokers" %}
 
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=en&iframe=1&service=toloka-ai"></iframe>
 

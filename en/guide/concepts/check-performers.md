@@ -2,6 +2,8 @@
 
 Use quality control rules to get better results for tasks and restrict access to fraudulent users. Rules are configured for both projects as a whole (the **Quality control** tab) and individual pools.
 
+{% include notitle [anti-fraud](../_includes/anti-fraud.md) %}
+
 ## Monitoring Toloker actions {#control-actions}
 
 If your project has a lot of similar tasks, you'll need to protect it from fake Tolokers (robots) and cheaters.

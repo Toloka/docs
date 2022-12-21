@@ -46,7 +46,15 @@ To improve quality of answers, you must [select the audience](filters.md) you ne
 
 - Validation by other annotators.
 
-### Protection from cheaters and bots {#protection-from-cheaters}
+### Anti-Fraud system {#anti-fraud}
+
+- Behavior analysis system.
+
+- Platform-wide ban for fraudulent Tolokers.
+
+### Protect your project {#protection-from-cheaters}
+
+{% include notitle [anti-fraud](../_includes/anti-fraud.md) %}
 
 - [Ban](ban.md) for [fast responses](quick-answers.md).
 
@@ -75,12 +83,6 @@ A Toloker who skips 2 task suites in a row is restricted from accessing the pool
 {% endcut %}
 
 {% endcut %}
-
-### Anti-Fraud system {#anti-fraud}
-
-- Behavior analysis system.
-
-- Platform-wide ban for fraudulent Tolokers.
 
 ## Obtaining quality results after data labeling {#obtaining-results}
 
