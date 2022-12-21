@@ -82,6 +82,14 @@ Use this filter if you want to make sure Tolokers have the right browser for you
 
 {% endcut %}
 
+{% cut "Experiment group (1-100)" %}
+
+Use the **Experiment group (1-100)** filter to select Tolokers from one or several independent groups.
+
+To learn more, see [Using A/B experiments](ab-experiment.md).
+
+{% endcut %}
+
 ## Toloker profile {#filter-user-profile}
 
 Use filters from this group to select Tolokers by the main profile data.
@@ -183,12 +191,6 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 ![](../_images/location-job/filters/filter-skill-4.png)
 
 {% endcut %}
-
-## AB experiment {#ab-experiment}
-
-Use the **AB experiment** filter to select Tolokers from one or several independent groups.
-
-To learn more, see [Using A/B experiments](ab-experiment.md).
 
 ## What's next {#what_next}
 

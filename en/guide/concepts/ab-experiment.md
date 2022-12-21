@@ -16,13 +16,15 @@ Use A/B experiments to:
 
 - Each Toloker has an `id` number ranging from 1 to 100 (100 independent groups of Tolokers). Parameter is set to a Toloker like a [skill](../../glossary.md#skill) and Tolokers will always be placed into the the same group.
 
-- Use the **AB experiment** filter in the pool settings to select Tolokers from one or several groups.
+- Use the **Experiment group (1-100)** filter in the pool settings to select Tolokers from one or several groups.
 
-- To create an A/B experiment add two pools with different values of the **AB experiment** filter.
+- To create an A/B experiment add two pools with different values of the **Experiment group (1-100)** filter.
+
+![](../_images/other/ab-experiment.png)
 
 {% note alert %}
 
-Use the **AB experiment** filter carefully. If you set the **AB experiment** filter `= 1` in one pool and **AB experiment** filter `= 2` in another pool, then about 98% of the Tolokers will not see your tasks.
+Use the **Experiment group (1-100)** filter carefully. If you set the **Experiment group (1-100)** filter `= 1` in one pool and **Experiment group (1-100)** filter `= 2` in another pool, then about 98% of the Tolokers will not see your tasks.
 
 {% endnote %}
 
@@ -30,19 +32,19 @@ Use the **AB experiment** filter carefully. If you set the **AB experiment** fil
 
 {% cut "Can I select two filters at once?" %}
 
-Yes. For example, if you set the **AB experiment** `= 1` and **Languages** `= English`, you will get all the Tolokers with `id` number equal to `1` who speak English.
+Yes. For example, if you set the **Experiment group (1-100)** `= 1` and **Languages** `= English`, you will get all the Tolokers with `id` number equal to `1` who speak English.
 
 {% endcut %}
 
 {% cut "Can I run the experiments within one project?" %}
 
-Yes. To run A/B experiments within one project, it must have two pools with different values of the **AB experiment** filter.
+Yes. To run A/B experiments within one project, it must have two pools with different values of the **Experiment group (1-100)** filter.
 
 {% endcut %}
 
 {% cut "Can part of the Tolokers do tasks from both pools?" %}
 
-Yes, if there is an intersection of the values in the **AB experiment** filter (for example, `≥ 40` in one pool and `≤ 60` in the other pool, in this case the Tolokers with the IDs from 40 to 60 will be able to do tasks from both pools). Note that in this case the results of the experiment will be inaccurate.
+Yes, if there is an intersection of the values in the **Experiment group (1-100)** filter (for example, `≥ 40` in one pool and `≤ 60` in the other pool, in this case the Tolokers with the IDs from 40 to 60 will be able to do tasks from both pools). Note that in this case the results of the experiment will be inaccurate.
 
 {% endcut %}
 
