@@ -124,6 +124,8 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/tutorials/walk/squirrel_tsv.png)
 
     {% endcut %}
+    
+    {% include [toloka-requester-source-field-tasks-suites](../_includes/toloka-requester-source/id-toloka-requester-source/field-tasks-suites.md) %}
   
   {% endcut %}
 
@@ -370,6 +372,8 @@ If you need to add different task types to the pool, upload multiple files, one 
   |#
 
   {% endcut %}
+
+  {% include [toloka-requester-source-field-tasks-suites](../_includes/toloka-requester-source/id-toloka-requester-source/field-tasks-suites.md) %}
 
   {% endcut %}
 
