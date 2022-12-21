@@ -1,1 +1,0 @@
-Toloka has a special [anti-fraud algorithm](https://toloka.ai/anti-fraud/) for banning dishonest Tolokers. But you are still responsible for controlling your projects and maintaining quality of these projects.

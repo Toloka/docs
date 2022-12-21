@@ -1,8 +1,8 @@
 # How to check Tolokers: quality control rules
 
-Use quality control rules to get better results for tasks and restrict access to fraudulent users. Rules are configured for both projects as a whole (the **Quality control** tab) and individual pools.
+{% include [toloka-requester-source-anti-fraud](../_includes/toloka-requester-source/id-toloka-requester-source/anti-fraud.md) %}
 
-{% include notitle [anti-fraud](../_includes/anti-fraud.md) %}
+Use quality control rules to get better results for tasks and restrict access to fraudulent users. Rules are configured for both projects as a whole (the **Quality control** tab) and individual pools.
 
 ## Monitoring Toloker actions {#control-actions}
 

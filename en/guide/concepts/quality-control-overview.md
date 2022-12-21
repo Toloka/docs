@@ -48,13 +48,17 @@ To improve quality of answers, you must [select the audience](filters.md) you ne
 
 ### Anti-Fraud system {#anti-fraud}
 
+- Platform-wide ban for fraudulent Tolokers.
+
 - Behavior analysis system.
 
-- Platform-wide ban for fraudulent Tolokers.
+- Multilayer technologies to detect and prevent all types of fraud.
 
 ### Protect your project {#protection-from-cheaters}
 
-{% include notitle [anti-fraud](../_includes/anti-fraud.md) %}
+{% include [toloka-requester-source-anti-fraud](../_includes/toloka-requester-source/id-toloka-requester-source/anti-fraud.md) %}
+
+To protect your project from cheaters, you can use the quality control rules:
 
 - [Ban](ban.md) for [fast responses](quick-answers.md).
 
