@@ -115,9 +115,6 @@ items:
                 href: guide/concepts/advanced-features-input-string.md
               - name: Add response options
                 href: guide/concepts/advanced-features-input-selector.md
-  - name: Keys
-    href: guide/concepts/usecases-keys.md
-    hidden: true
   - name: Projects
     items:
       - name: Steps to follow
@@ -469,8 +466,6 @@ items:
                   mode: link
   - name: Troubleshooting and support
     items:
-      - name: Get help
-        href: guide/concepts/get-help.md
       - name: All questions on one page
         href: guide/troubleshooting/troubleshooting.md
       - name: Registration and getting started

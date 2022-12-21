@@ -283,6 +283,11 @@ Aggregation only includes accepted tasks.
 
 {% endlist %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Aggregated responses](../../api/concepts/aggregated-solutions.md)
+- [Toloka-Kit: Getting aggregated responses](../../toloka-kit/reference/toloka.client.TolokaClient.get_aggregated_solutions.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "What is the difference between the confidence in the aggregated response in the Dawid-Skene aggregation model and the confidence in aggregation by skill?" %}

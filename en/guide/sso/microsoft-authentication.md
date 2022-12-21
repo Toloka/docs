@@ -40,7 +40,7 @@ Once you pass Microsoft authentication, you will be redirected back to Toloka.
 
 Now you can create projects, pools, and upload tasks. You can also [generate API tokens](./api-token.md) for your applications.
 
-## Next steps
+## What's next {#what-next}
 
 - [Generate API tokens](./api-token.md)
 

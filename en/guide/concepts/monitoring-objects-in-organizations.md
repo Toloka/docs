@@ -1,1 +1,0 @@
-{% include [tutorials](../tutorials/monitoring-objects-in-organizations.md) %}

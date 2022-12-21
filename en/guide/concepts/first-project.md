@@ -146,7 +146,7 @@ To upload a [file with tasks](../../glossary.md#tsv):
 
 ![](../_images/first-project/download-results.png)
 
-## Next steps {#next-steps}
+## What's next {#what-next}
 
 - When you complete the testing in the Sandbox, [move](sandbox.md#export) your project to the Toloka production version and launch the pool for real Tolokers.
 
@@ -158,7 +158,7 @@ To upload a [file with tasks](../../glossary.md#tsv):
 
 - If you have questions or problems, see the [Troubleshooting and support](../troubleshooting/troubleshooting.md) section.
 
-## See also {#learn-more}
+## See also {#see-also}
 
-- [Knowledge base](https://toloka.ai/knowledgebase)
+- [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
 - [Crowdsourcing course](https://toloka.ai/academy/self-study-guide/)

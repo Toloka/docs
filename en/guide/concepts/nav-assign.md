@@ -46,6 +46,18 @@ You don't need to create this skill, it is created when you add the first traini
 
 [Use the skill](nav-use.md), for example, to select Tolokers or manage overlap or price.
 
+## See also {#see-also}
+
+- [{#T}](nav-create.md)
+- [{#T}](nav-edit.md)
+- [{#T}](nav-delete.md)
+- [{#T}](filters.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Setting skill value](../../api/concepts/set-skill.md)
+- [Toloka-Kit: Setting user skill](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_skill.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

@@ -204,6 +204,17 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
     - [Setting up quality control](qa-pool-settings.md).
     - [Non-automatic acceptance](offline-accept.md).
 
+## See also {#see-also}
+
+- [Efficiency indicators: Project availability](./efficiency-metrics/available-performers.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Filtering by profile data](../../api/concepts/filter-profile.md)
+- [Toloka API: Filtering by computed data](../../api/concepts/filter-computed.md)
+- [Toloka API: Filtering by skills](../../api/concepts/filter-skill.md)
+- [Toloka-Kit: Filters](../../toloka-kit/reference/toloka.client.filter.AdultAllowed.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Tolokers" %}

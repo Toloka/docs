@@ -68,6 +68,15 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 If the Toloker's earnings exceed 5 dollars in the last 24 hours, they lose access to the pool and can't complete your tasks.
 
+## See also {#see-also}
+
+- [{#T}](qa-pool-settings.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Compensation amount](../../api/concepts/earn_limit.md)
+- [Toloka-Kit: Income collector class](../../toloka-kit/reference/toloka.client.collectors.Income.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

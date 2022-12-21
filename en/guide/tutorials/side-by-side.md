@@ -273,13 +273,16 @@ You can use different image sizes.
 
 {% endcut %}
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Template Builder — image comparison](../../template-builder/templates/sbs-image.md)
-- [Toloka-Kit — image comparison](https://github.com/Toloka/toloka-kit/blob/main/examples/4.ranking/side_by_side_image_comparision/side_by_side_comparision.ipynb)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Template Builder: Image comparison](../../template-builder/templates/sbs-image.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Image comparison](https://github.com/Toloka/toloka-kit/blob/main/examples/4.ranking/side_by_side_image_comparision/side_by_side_comparision.ipynb)
 
 ## Datasets and reference {#datasets}
 

@@ -138,6 +138,8 @@ For example, if you want to use images in the `image` field, specify the file li
 
 {% endlist %}
 
-If these recommendations didn't help:
+## See also {#see-also}
+
+- [{#T}](task_upload.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -239,13 +239,16 @@ You can use different image sizes.
 
 {% endcut %}
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Template Builder — image classification](../../template-builder/templates/image-classification.md)
-- [Toloka-Kit — image classification](https://github.com/Toloka/toloka-kit/blob/main/examples/1.computer_vision/image_classification/image_classification.ipynb)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Template Builder: Image classification](../../template-builder/templates/image-classification.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Image classification](https://github.com/Toloka/toloka-kit/blob/main/examples/1.computer_vision/image_classification/image_classification.ipynb)
 
 ## Datasets and reference {#datasets}
 

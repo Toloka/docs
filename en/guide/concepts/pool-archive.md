@@ -36,6 +36,12 @@ To [archive the training pool](train.md), first archive all the main pools to wh
     - [Speed/quality balance](adjust.md).
     - [Reviewed assignments](offline-accept.md).
 
+## For developers {#for-developers}
+
+- [Toloka API: Moving pool to archive](../../api/concepts/archive-pool.md)
+- [Toloka-Kit: Archiving pool](../../toloka-kit/reference/toloka.client.TolokaClient.archive_pool.md)
+- [Toloka-Kit: Archiving pool asynchronously](../../toloka-kit/reference/toloka.client.TolokaClient.archive_pool_async.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Can I delete a pool?" %}
