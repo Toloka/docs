@@ -49,7 +49,7 @@ To see your spending history:
     - **Total spent** — the sum of all payments and fees for the selected period.
 
     - **Reserved money** — funds reserved for the tasks waiting to be reviewed.
-    
+
     - Details by dates in the **Payment** and in the **Fees** columns.
 
 {% note info %}
@@ -105,6 +105,12 @@ Requesters who opted for a paper contract can create main and secondary accounts
 - Financial reports and closing documents are issued to the main account and are not sent to secondary accounts.
 
 If you want to create main and secondary accounts, [write to support](../troubleshooting/support.md).
+
+## See also {#see-also}
+
+- [{#T}](refill.md)
+- [{#T}](bonus.md)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
 
 ## Troubleshooting {#troubleshooting}
 

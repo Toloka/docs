@@ -112,6 +112,15 @@ If you need to change the project settings, [open edit mode](edit-project.md).
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
 
+## See also {#see-also}
+
+- [Efficiency indicators: Quality of interface](./efficiency-metrics/interface-quality.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Creating project](../../api/concepts/create-prj.md)
+- [Toloka-Kit: Creating project](../../toloka-kit/reference/toloka.client.TolokaClient.create_project.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "General task settings" %}

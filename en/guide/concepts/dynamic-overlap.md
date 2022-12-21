@@ -206,6 +206,16 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
     - Selective [majority vote](selective-mvote.md) control.
 
+## See also {#see-also}
+
+- [{#T}](distribute-tasks-by-pages.md)
+- [{#T}](pool-main.md)
+- [{#T}](result-aggregation.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Dynamic overlap setting](../../toloka-kit/reference/toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Can I change overlap after the pool is started?" %}

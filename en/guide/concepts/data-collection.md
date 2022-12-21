@@ -52,7 +52,11 @@ Learn more about how to [set up pricing](dynamic-pricing.md#section_wb1_lhl_vlb)
 - Create [Project 4](item_more_similar.md) to compare matching images.
 - Learn more about [decomposition](solution-architecture.md).
 
-### Frequently asked questions {#problem-solution}
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Decomposition](https://toloka.ai/knowledgebase/decomposition/)
+
+## Frequently asked questions {#problem-solution}
 
 {% cut "How do I create a task where products with similar descriptions are selected for the control product?" %}
 

@@ -86,6 +86,10 @@ For instance, you can store text comments on your server and use the file with t
 
     - [Privacy Policy]({{ confidential }})
 
+## See also {#see-also}
+
+- [{#T}](cloud-storage.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How do I change my account type from “Requester” to “Toloker”?" %}

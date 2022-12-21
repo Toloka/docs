@@ -86,6 +86,11 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 A Toloker who completes two task suites in less than 20 seconds is suspended from accessing the pool and can't complete your tasks for 10 days.
 
+## For developers {#for-developers}
+
+- [Toloka API: Fast responses](../../api/concepts/fast.md)
+- [Toloka-Kit: AssignmentSubmitTime collector class](../../toloka-kit/reference/toloka.client.collectors.AssignmentSubmitTime.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "What is the right time limit for the task completion?" %}

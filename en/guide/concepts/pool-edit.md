@@ -263,6 +263,13 @@ Use this parameter to:
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
 
+## For developers {#for-developers}
+
+- [Toloka API: Editing pool](../../api/concepts/edit-pool.md)
+- [Toloka API: Changing pool priority](../../api/concepts/set-priority-pool.md)
+- [Toloka-Kit: Editing pool](../../toloka-kit/reference/toloka.client.TolokaClient.update_pool.md)
+- [Toloka-Kit: Patching pool](../../toloka-kit/reference/toloka.client.TolokaClient.patch_pool.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "What is the right time limit for the task completion?" %}

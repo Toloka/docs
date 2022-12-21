@@ -180,6 +180,17 @@ d) the result of the Task does not comply with the Instruction.
 
 1.7. If the Customer, pursuant to cl. 1.4 hereof, refuses to accept the Services, Toloka is entitled to forward objections to the Customer via the Interfaces of Toloka Web Site within seven (7) calendar days from the day when the Customer has refused to accept the respective Task. The Parties undertake to settle the dispute not later than within nine (9) calendar days from the day when the Customer has refused to accept the respective Task. Having considered the objections, the Customer may decide to accept the Services or reject them again. If, as a result of considering the objections, the Customer chooses to accept the Services, the Services shall be deemed accepted on the day when the Customer performs the respective action in the Customer’s Personal Account or via API.
 
+## See also {#see-also}
+
+- [{#T}](offline-accept.md)
+- [{#T}](reassessment-after-accepting.md)
+- [{#T}](reviewing-assignments.md)
+- [{#T}](efficiency-metrics/rejected-tasks.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Checking completed tasks](../../api/concepts/accept.md)
+- [Toloka-Kit: Accepting responses](../../toloka-kit/reference/toloka.client.TolokaClient.accept_assignment.md)
 
 ## Troubleshooting {#troubleshooting}
 

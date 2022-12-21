@@ -75,4 +75,8 @@ To use files from Yandex Cloud:
     https://storage.yandexcloud.net/my-bucket/2.jpg
     ```
 
+## See also {#see-also}
+
+- [{#T}](task_upload.md)
+
 {% include [contact-support](../_includes/contact-support.md) %}

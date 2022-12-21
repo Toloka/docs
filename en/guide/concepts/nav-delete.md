@@ -14,6 +14,19 @@ You can remove a skill only manually. It can't be done using quality control rul
 
 1. Click {% if locale == "en-com" %}**Delete**{% endif %}.
 
+## See also {#see-also}
+
+- [{#T}](nav-create.md)
+- [{#T}](nav-assign.md)
+- [{#T}](nav-use.md)
+- [{#T}](nav-edit.md)
+- [{#T}](filters.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Removing skill from Toloker](../../api/concepts/delete-skill.md)
+- [Toloka-Kit: Deleting Toloker skill](../../toloka-kit/reference/toloka.client.TolokaClient.delete_user_skill.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

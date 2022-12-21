@@ -66,6 +66,11 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [{#T}](nav.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Where can I set the task price?" %}

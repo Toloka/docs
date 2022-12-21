@@ -223,6 +223,12 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
     - [Input and output data](incoming.md).
     - [Setting up quality control](project-qa.md).
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Interfaces](https://toloka.ai/knowledgebase/interface/)
+- [{#T}](edit-project.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Setting up tasks, preview" %}

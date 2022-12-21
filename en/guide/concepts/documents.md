@@ -84,3 +84,7 @@ You can also send a request to change payment details to the document workflow g
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
 {% endcut %}
+
+## See also {#see-also}
+
+- [{#T}](refill.md)
