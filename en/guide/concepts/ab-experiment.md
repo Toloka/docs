@@ -20,7 +20,7 @@ Use A/B experiments to:
 
 - To create an A/B experiment add two pools with different values of the **Experiment group (1-100)** filter.
 
-![](../_images/other/ab-experiment.png)
+![](../_images/other/ab-experiment.png =700x)
 
 {% note alert %}
 
