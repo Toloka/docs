@@ -17,7 +17,7 @@ To run a research, use one of the Toloka survey solutions:
 
 The comparison of the solutions is provided in the table below:
 
-|            | Survey on Toloka template | Survey on third-party platform | Survey based on Qualtrics |
+|            | **Survey on Toloka template** | **Survey on third-party platform** | **Survey based on Qualtrics** |
 |------------|---------------------------|--------------------------------|---------------------|
 | **The project interface** | Preconfigured and adaptable | Preconfigured and adaptable | Not adaptable |
 | **The pool setup** | Manual or with cloning the demo pool | Manual or with creating a preconfigured pool from preset | Fully automatic |
