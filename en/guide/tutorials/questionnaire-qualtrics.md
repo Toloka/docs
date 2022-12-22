@@ -4,9 +4,11 @@
 
 In this tutorial, you will learn how to use Toloka to run an academic Qualtrics-based survey. 
 
-Choose this solution if you have a Qualtrics survey approved by an institutional review board (IRB), and you don't want to spend time on getting onboard with the standard Toloka projects. Toloka sets up your project and accepts Tolokers' responses automatically.
+Choose this solution if you have a Qualtrics survey approved by an institutional review board (IRB), and you don't want to spend time on getting onboard with the standard Toloka projects. In this type of project, Toloka sets up your project and accepts responses automatically. 
 
-In this type of project, a task in Toloka provides a link to your Qualtrics survey. A respondent takes a task in Toloka, follows the link to start the survey in Qualtrics, receives a code (see [Embed a completion code](https://toloka.ai/en/docs/guide/tutorials/questionnaire-qualtrics#code)), and confirms completing the survey by embedding this code to the Toloka task. The Tolokers who provide valid completion codes are paid. Qualtrics gathers the responses, and Toloka rejects, accepts, and pays for them. 
+A task in Toloka provides a link to your Qualtrics survey. A Toloker takes the task and follows the link to start the survey on Qualtrics. At the end of the survey, they get a confirmation code (you will learn how to embed the code to your survey later in this tutorial). Then the Toloker confirms completing the survey by entering the code into the Toloka task. The Tolokers who provided the valid completion codes are paid.
+
+Tasks are rejected, accepted and paid automatically in Toloka. Survey responses are gathered and stored on Quatrics. 
 
 {% note info %}
 
@@ -25,14 +27,10 @@ The comparison of all the three kinds of the survey presets is provided in the [
 
 Before you begin:
 
-- Prepare the link to your Qualtrics survey, and the IRB approval number.
-    
-    {% note info %}
+- Clone your Qualtrics survey first. We recommend copying the survey to keep its initial version. 
 
-    Clone the Qualtrics survey first, and use the link to the cloned project in Toloka. This will help you avoid setting up the project according to the Toloka requirements.  
+  Then prepare the link to the cloned survey, and the IRB approval number.
 
-    {% endnote %}
-    
 - {% include [tutorials-register](../_includes/tutorials/register.md) %}
 
 - {% include [tutorials-top-up-tutorial](../_includes/tutorials/top-up-tutorial.md) %}
@@ -40,6 +38,12 @@ Before you begin:
 - See the [What tasks can't be placed in Toloka?](../concepts/unwanted.md#requirements-for-survey) section. 
 
    Remember that both Tolokers and requesters are anonymous. You should not collect personal data: a full name, contacts, or any other information that can be used to identify a Toloker. To determine whether a Toloker belongs to your target audience, you can ask for their city, date of birth, and age category.
+
+{% note alert "Restriction" %}
+
+For now, all surveys conducted using this type of project must be in English and will be offered to Tolokers with verified English language skills. 
+
+{% endnote %}
 
 ## Choose a preset {#preset}
 
@@ -72,7 +76,7 @@ Another way to choose a preset is to do the following:
 
     * **Link to your Qualtrics survey**: Add the link to your Qualtrics-based survey.
 
-    * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find the detailed instructions after they start the survey. For now, all surveys must be in English and will be offered to Tolokers with verified English language skills. 
+    * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find the detailed instructions after they start the survey.
 
     ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =450x)
 
@@ -138,7 +142,7 @@ Responses are stored on Quatrics. Go there to track the progress of data collect
 
 ## Helpful tips {#tips}
 
-- If you need additional quality control, add attention checks and required responses directly in your Qualtrics survey.
+- If you need additional quality control, add attention checks and forced responses directly in your Qualtrics survey.
 
 - Check the {% if locale == "en-com" %}**Messages**{% endif %} tab regularly to get Tolokers’ reports on problems with your survey.
 
