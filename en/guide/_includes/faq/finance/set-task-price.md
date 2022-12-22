@@ -6,8 +6,8 @@ The price is set up for a task suite. If the suite contains 10 tasks, the price 
 
 Please note that the minimum price per task suite is $0.005. Therefore, if you want to change the task price, you need to change the number of tasks per suite.
 
-[Learn more about the task price](dynamic-pricing.md).
+[Learn more about the task price](../../../../guide/concepts/dynamic-pricing.md).
 
-If you need help setting up pricing for your project, [contact](../troubleshooting/support.md) us.
+If you need help setting up pricing for your project, [contact](../../../../guide/troubleshooting/support.md) us.
 
 {% endcut %}

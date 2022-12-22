@@ -112,6 +112,4 @@ When you download the results file, select the **Start time** and **Submit time*
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

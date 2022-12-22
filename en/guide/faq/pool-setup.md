@@ -126,8 +126,6 @@ You can do that using the [Control tasks](../concepts/goldenset.md) rule.
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Quality control {#quality-control}
 
 {% cut "How do I set quality control in a pool correctly?" %}
@@ -450,8 +448,6 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Overlap {#overlap}
 
 {% cut "What overlap should I set?" %}
@@ -494,6 +490,4 @@ You can use overlap to let multiple Tolokers do the same task. The overlap value
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
-{% include [contact-support](../_includes/contact-support-project-setting.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

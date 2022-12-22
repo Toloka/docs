@@ -10,6 +10,6 @@
 
 Similar statistics are available for each pool if you need more detail.
 
-Learn more about [project](project-statistic.md) and [pool](pool_statistic-pool.md) statistics.
+Learn more about [project](../../../../guide/concepts/project-statistic.md) and [pool](../../../../guide/concepts/pool_statistic-pool.md) statistics.
 
 {% endcut %}

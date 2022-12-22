@@ -2,8 +2,8 @@
 
 In the case of crowdsourcing, it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
 
-​Base your task on the “Object selection in an image” preset. See the step-by-step guide for creating this type of project on [this page](../tutorials/selection.md).
+​Base your task on the “Object selection in an image” preset. See the step-by-step guide for creating this type of project on [this page](../../../../guide/tutorials/selection.md).
 
-The editor used in the preset lets you add a drop-down list for labeling the selected object. See how to do this in the editor description ([Dropdown list](../concepts/t-components/image-annotation.md) tab).
+The editor used in the preset lets you add a drop-down list for labeling the selected object. See how to do this in the editor description ([Dropdown list](../../../../guide/concepts/t-components/image-annotation.md) tab).
 
 {% endcut %}

@@ -167,8 +167,6 @@ If the text is in the HTML block of the task template, then clone the project. T
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Training-exam-retry {#concept_i2g_kkh_5mb}
 
 {% cut "How do I precede my task with mandatory control questions to check that the Toloker understood my instructions? Would such training or control tasks be similar to the general tasks?" %}
@@ -354,8 +352,6 @@ For training tasks, you need to:
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Changing a running pool {#concept_olz_kkh_5mb}
 
 {% cut "If I change the time allocated for one task, will this apply to tasks assigned earlier?" %}
@@ -382,6 +378,4 @@ After uploading, all tasks are put into one list and can't be deleted separately
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

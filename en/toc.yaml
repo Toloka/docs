@@ -502,8 +502,6 @@ items:
         href: guide/troubleshooting/adding-tasks-to-the-pool.md
       - name: Working with results
         href: guide/troubleshooting/result-questions.md
-      - name: Archiving pools and projects
-        href: guide/troubleshooting/pool-n-project-archive.md
       - name: Payments
         href: guide/troubleshooting/finance.md
       - name: Tolokers

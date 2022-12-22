@@ -38,6 +38,4 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 {% include [contact-support](../_includes/contact-support.md) %}

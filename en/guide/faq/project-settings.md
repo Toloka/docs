@@ -46,8 +46,6 @@ If the tags or attributes disappear after you save the instructions (for example
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Configuring the task interface {#concept_gss_fkp_smb}
 
 {% cut "How do I make an image expand to its maximum size on click?" %}
@@ -426,8 +424,6 @@ There are four options:
 
     For control purposes, add information about the value of this checkbox to the task interface.
 
-[Other questions](support.md#help)
-
 {% endcut %}
 
 ## Input and output data {#concept_cjj_gkp_smb}
@@ -458,6 +454,4 @@ You can't use a range as a fixed value.
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

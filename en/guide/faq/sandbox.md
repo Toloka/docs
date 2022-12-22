@@ -26,7 +26,7 @@ To test your task, add yourself as a trusted Toloker in the Sandbox. To do this,
 
 {% cut "How do I check my project in the mobile version of Toloka?" %}
 
-To do this, you will need a Sandbox version of the Toloka app. [Write to support](support.md#support-work-toloka) to get it.
+To do this, you will need a Sandbox version of the Toloka app. [Write to support](../troubleshooting/support.md) to get it.
 
 {% endcut %}
 
@@ -50,4 +50,4 @@ No, you need a separate account for each version of Toloka. To create a task in 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

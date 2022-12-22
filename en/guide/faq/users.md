@@ -46,8 +46,6 @@ To view your expenses that involve rewards, go to your [profile]({{ profile }}) 
 
 {% endcut %}
 
-[Other questions](support.md#help)
-
 ## Cheaters {#cheaters}
 
 {% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
@@ -94,4 +92,4 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

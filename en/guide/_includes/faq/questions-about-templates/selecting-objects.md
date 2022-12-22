@@ -4,7 +4,7 @@ We recommend that you break down your object selection project into three projec
 
 1. Sorting images containing an object.
 
-    1. [Create a task](../tutorials/image-classification.md) using the “Image classification” preset.
+    1. [Create a task](../../../../guide/tutorials/image-classification.md) using the “Image classification” preset.
 
     1. Sort the images containing the object you are looking for.
 
@@ -14,7 +14,7 @@ We recommend that you break down your object selection project into three projec
 
     1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
 
-    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
+    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../../../../guide/concepts/control.md).
 
 1. Reviewing object selection assignments.
 

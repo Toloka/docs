@@ -441,15 +441,7 @@ If you don't understand what the problem is, run a mini-survey and ask the Tolok
 
 {% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/finance/amount-greater-than-planned.md) %}
 
-{% include [faq-how-long-paying-invoice-take](../_includes/faq/finance/how-long-paying-invoice-take.md) %}
-
-{% include [faq-currency-exchange-rate](../_includes/faq/finance/currency-exchange-rate.md) %}
-
-{% include [faq-add-money](../_includes/faq/finance/add-money.md) %}
-
 [Get closing documents and invoices](support.md)
-
-### Refund {#concept-3}
 
 [Refund money transferred to the Toloka account](support.md)
 

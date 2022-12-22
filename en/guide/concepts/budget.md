@@ -116,26 +116,14 @@ If you want to create main and secondary accounts, [write to support](../trouble
 
 {% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/finance/amount-greater-than-planned.md) %}
 
-{% cut "How long does paying the invoice take?" %}
+{% include [faq-how-long-paying-invoice-take](../_includes/faq/finance/how-long-paying-invoice-take.md) %}
 
-If you pay using a bank card, the money is usually transferred to your Toloka account within a few minutes. If you can't see the top-up amount on your account, [write to us](../troubleshooting/support.md) and we'll sort it out. Specify your requester username and account number and use **Account top-up** as your email subject.
+{% include [faq-currency-exchange-rate](../_includes/faq/finance/currency-exchange-rate.md) %}
 
-{% endcut %}
-
-{% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
-
-You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. [Learn more](refill.md) about top-up.
-
-{% endcut %}
-
-{% cut "How do I add money to Toloka?" %}
-
-You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](refill.md#step-by-step) with step-by-step instructions.
+{% include [faq-add-money](../_includes/faq/finance/add-money.md) %}
 
 [Get closing documents and invoices](../troubleshooting/support.md)
 
 [Refund money transferred to the Toloka account](../troubleshooting/support.md)
-
-{% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

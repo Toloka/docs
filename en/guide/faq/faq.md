@@ -66,7 +66,7 @@ To test your task, add yourself as a trusted Toloker in the Sandbox. To do this,
 
 {% cut "How do I check my project in the mobile version of Toloka?" %}
 
-To do this, you will need a Sandbox version of the Toloka app. [Write to support](support.md#support-work-toloka) to get it.
+To do this, you will need a Sandbox version of the Toloka app. [Write to support](../troubleshooting/support.md) to get it.
 
 {% endcut %}
 
@@ -1505,13 +1505,13 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 
 {% include [faq-add-money](../_includes/faq/finance/add-money.md) %}
 
+[Get closing documents and invoices](../troubleshooting/support.md)
+
+[Refund money transferred to the Toloka account](../troubleshooting/support.md)
+
 ### Payment for tasks {#concept-2}
 
-{% cut "Where can I set the task price?" %}
-
-You can set a price for your task **page** on the pool editing page. The minimum price is $0.005.
-
-{% endcut %}
+{% include [faq-set-task-price](../_includes/faq/finance/set-task-price.md) %}
 
 {% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
 
@@ -1633,24 +1633,6 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% include [faq-selecting-objects](../_includes/faq/questions-about-templates/selecting-objects.md) %}
 
-{% cut "How do I add assignment validation depending on a checkbox?" %}
-
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” preset.
-
-{% endcut %}
-
-{% cut "I have a task for area selection in an image. What should the Toloker do if there is no selectable object in the image?" %}
-
-Main options:
-
-- Select an arbitrary area in the image (for example, put a square in the upper-right corner). In this case, the project instructions for reviewers should also reflect this.
-
-- Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the object is truly missing, the task is deleted from the pool by resetting the overlap.
-
-- Add an additional “No object” checkbox to the interface. Make sure that your JS checks that either the object is selected or the checkbox is enabled. In this case, add information about the checkbox value in the review task interface.
-
-{% endcut %}
-
 {% include [faq-large-number-objects](../_includes/faq/questions-about-templates/large-number-objects.md) %}
 
 {% include [faq-different-areas](../_includes/faq/questions-about-templates/different-areas.md) %}
@@ -1677,58 +1659,4 @@ Main options:
 
 {% include [faq-limit-source-photo](../_includes/faq/questions-about-templates/limit-source-photo.md) %}
 
-### Side-by-side image comparison {#side-by-side}
-
-{% cut "How do I create a task with a selection out of three image options with the paired image comparison?" %}
-
-1. Use the “Side-by-side image comparison” template.
-
-1. In the file, specify the links to the compared images.
-
-1. In the file, create the tasks where all the images will be compared in pairs:
-
-    - Image 1 and Image 2
-
-    - Image 1 and Image 3
-
-    - Image 2 and Image 3
-
-1. Process the results.
-
-You can also edit the project so that the Toloker sees 3 images at once and selects one of them.
-
-{% endcut %}
-
-### Survey {#interview}
-
-{% cut "How do I create a simple survey with no options, where the Toloker answers an open-ended question?" %}
-
-1. Create a project from an empty template.
-
-1. Write your question in the HTML block.
-
-1. If you need an [extensive](../concepts/t-components/text.md) response, add the required number of text entry components.
-
-1. If you need a [short](../concepts/t-components/string.md) response, add the required number of string entry components.
-
-1. Come up with a name for each of the components and create a matching number of string-type output fields with the same names. They will be used to save responses.
-
-1. Make all the output fields mandatory.
-
-1. Make the input field auxiliary. It will only be used to create a file with tasks.
-
-1. Come up with a name for the input field and set the string type for it (see the step-by-step [guide on creating a survey](../tutorials/questionnaire-toloka.md)).
-
-{% endcut %}
-
-{% cut "How do I create a survey with a single question based on the preset survey template?" %}
-
-The survey includes an auxiliary input field. You can use it to pass any information, and it won't be visible to Tolokers.
-
-Upload one task and use the overlap parameter to enter the number of people you want to survey.
-
-{% endcut %}
-
-[Other questions](support.md#help)
-
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
