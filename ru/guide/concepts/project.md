@@ -74,6 +74,8 @@
 
 Список уже созданных проектов доступен на странице **Проекты**. Откройте страницу проекта, чтобы посмотреть список пулов, [рейтинг проекта](project_rating_stat.md) и [статистику по проекту](project-statistic.md).
 
+{% include [pin-project](../_includes/concepts/project/pin-project.md) %}
+
 Чтобы клонировать проект, в списке проектов нажмите кнопку ![](../_images/location-job/project/clone-project.svg) или на странице проекта выберите {% if locale == "ru-ru" %}**Действия над проектом → Клонировать**{% endif %}{% if locale == "en-com" %}**Project actions → Clone**{% endif %}.
 
 {% note alert %}
