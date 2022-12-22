@@ -79,7 +79,7 @@ If you want to create main and secondary accounts, [write to support](../trouble
 
 ## Troubleshooting {#troubleshooting}
 
-{% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/amount-greater-than-planned.md) %}
+{% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/finance/amount-greater-than-planned.md) %}
 
 {% cut "How long does paying the invoice take?" %}
 

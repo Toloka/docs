@@ -6,7 +6,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-{% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/amount-greater-than-planned.md) %}
+{% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/finance/amount-greater-than-planned.md) %}
 
 [Other questions](troubleshooting.md)
 

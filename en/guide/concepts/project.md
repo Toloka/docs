@@ -126,11 +126,7 @@ The simpler the task, the cheaper it is and the better the quality of the final 
 
 {% endcut %}
 
-{% cut "How do I add response validation depending on a checkbox?" %}
-
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” preset.
-
-{% endcut %}
+{% include [faq-validation-depending-checkbox](../_includes/faq/questions-about-templates/validation-depending-checkbox.md) %}
 
 {% cut "How many tasks should be in a suite?" %}
 
@@ -142,11 +138,7 @@ The number of tasks depends on how difficult and time-consuming the tasks are. K
 
 {% cut "Setting up tasks with images" %}
 
-{% cut "What preset do I select so that Tolokers label only irrelevant products in the output?" %}
-
-You can create such an assignment based on the classification preset. Show a product image and ask the question: "Does the product match the query?" Add two radio buttons for responses: “Yes” and “No”.
-
-{% endcut %}
+{% include [faq-irrelevant-products](../_includes/faq/questions-about-templates/irrelevant-products.md) %}
 
 {% cut "How do I label elements on web pages?" %}
 
@@ -204,19 +196,9 @@ You can create a selection + drop-down list with category selection. See how to 
 
 {% endcut %}
 
-{% cut "What are the input data in the case of object labeling in an image: the coordinates of the object relative to the image, or the coordinates of the object in the Toloka user window?" %}
+{% include [faq-input-data-labeling-image](../_includes/faq/questions-about-templates/input-data-labeling-image.md) %}
 
-The coordinates are relative to the image.
-
-{% endcut %}
-
-{% cut "How do I mark up triangles so that they close automatically when the third point is selected?" %}
-
-Use the **C** shortcut for closing areas.
-
-You can also use the [library](https://github.com/vmit/image-annotation) to customize the keyboard shortcuts for your tasks.
-
-{% endcut %}
+{% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
 
 {% cut "How do I create a shortcut for adding a polygon in ’image-annotation’?" %}
 
@@ -316,13 +298,7 @@ You can see how it's implemented in the “[Transcript of audio recordings](../t
 
 {% endcut %}
 
-{% cut "How do I create a survey with a single question based on the survey preset?" %}
-
-The survey includes an auxiliary input field. You can use it to pass any information, and it won't be visible to Tolokers.
-
-Upload one task and use the overlap parameter to enter the number of people you want to survey.
-
-{% endcut %}
+{% include [faq-survey-single-question](../_includes/faq/questions-about-templates/survey-single-question.md) %}
 
 {% endcut %}
 

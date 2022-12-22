@@ -912,18 +912,6 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 {% endcut %}
 
-{% cut "Why has the speed of pool completion dropped?" %}
-
-Possible reasons:
-
-- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
-
-- The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
-
-- Too many users are banned. Ease the quality control rules.
-
-{% endcut %}
-
 {% cut "How can I speed up the pool completion?" %}
 
 - To motivate Tolokers, assign a [public skill](../concepts/nav-create.md#public) and use [dynamic pricing](../concepts/dynamic-pricing.md).
@@ -1511,13 +1499,11 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 
 ### Adding funds to your account {#concept-1}
 
-{% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/amount-greater-than-planned.md) %}
+{% include [faq-how-long-paying-invoice-take](../_includes/faq/finance/how-long-paying-invoice-take.md) %}
 
-{% include [faq-how-long-paying-invoice-take](../_includes/faq/how-long-paying-invoice-take.md) %}
+{% include [faq-currency-exchange-rate](../_includes/faq/finance/currency-exchange-rate.md) %}
 
-{% include [faq-curency-exchange-rate](../_includes/faq/curency-exchange-rate.md) %}
-
-{% include [faq-add-money](../_includes/faq/add-money.md) %}
+{% include [faq-add-money](../_includes/faq/finance/add-money.md) %}
 
 ### Payment for tasks {#concept-2}
 
@@ -1527,13 +1513,13 @@ You can set a price for your task **page** on the pool editing page. The minimum
 
 {% endcut %}
 
-{% include [faq-set-up-budget](../_includes/faq/set-up-budget.md) %}
+{% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
 
-{% include [faq-pay-more-optional-fields](../_includes/faq/pay-more-optional-fields.md) %}
+{% include [faq-pay-more-optional-fields](../_includes/faq/finance/pay-more-optional-fields.md) %}
 
-{% include [faq-awards-statistics](../_includes/faq/awards-statistics.md) %}
+{% include [faq-awards-statistics](../_includes/faq/finance/awards-statistics.md) %}
 
-{% include [faq-tasks-with-different-prices](../_includes/faq/tasks-with-different-prices.md) %}
+{% include [faq-tasks-with-different-prices](../_includes/faq/finance/tasks-with-different-prices.md) %}
 
 ## Tolokers {#annotators}
 
@@ -1627,107 +1613,25 @@ But you can do it yourself if you want. When downloading the results, select the
 
 ### Selecting a preset {#concept_tfh_pgd_rmb}
 
-{% cut "How do I classify texts according to their meanings?" %}
+{% include [faq-complex-task](../_includes/faq/questions-about-templates/complex-task.md) %}
 
-You can structure your text classification task using the source text and radio buttons. It can also be text and checkboxes if you use multiple subjects.
+{% include [faq-input-output-text-fields](../_includes/faq/questions-about-templates/input-output-text-fields.md) %}
 
-We recommend that you base it on the **Sentiment analysis & content moderation** preset.
+{% include [faq-text-classification](../_includes/faq/questions-about-templates/text-classification.md) %}
 
-You can also create your own interface. All the available tools are described in the [Requester's guide](../concepts/spec.md).
+{% include [faq-irrelevant-products](../_includes/faq/questions-about-templates/irrelevant-products.md) %}
 
-{% endcut %}
+{% include [faq-elements-web-pages](../_includes/faq/questions-about-templates/elements-web-pages.md) %}
 
-{% cut "How do I create a task using both input and output text fields?" %}
-
-You can see how it's implemented in the [Transcribing audio recordings](../tutorials/transcript-audio.md) preset where a string-type output field is used. In the **Text recognition from an image (OCR)** preset, you can view how to describe text input fields. Please note that if you later want to use the Dawid-Skene aggregation method, you must specify allowed values.
-
-{% endcut %}
-
-{% cut "What preset do I select so that Tolokers label only irrelevant products in the output?" %}
-
-You can create such an assignment based on the classification preset. Show a product image and ask the question: "Does the product match the query?" Add two radio buttons for responses: “Yes” and “No”.
-
-{% endcut %}
-
-{% cut "How do I label elements on web pages?" %}
-
-Generate the screenshots of pages and manually label areas using the “Object selection in an image” preset.
-
-{% endcut %}
-
-{% cut "I have a complex task. How do I break it down to get high-quality results?" %}
-
-If your task contains many objects of different types, you should break it down. For example, you can ask users to select numbers in the first project, doorways and windows in the second project, walls in the third project, and plumbing in the fourth project.
-
-The simpler the task, the cheaper it is and the better the quality of the final result. Set the cost of labeling a single class of objects in photos at about $0.01.
-
-[Use](../tutorials/selection.md) the **Object selection in an image** preset. You can open this preset in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](../concepts/t-components/image-annotation.md#annotation) (**Dropdown list** tab).
-
-{% endcut %}
-
-{% cut "How do I add response validation depending on a checkbox?" %}
-
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” preset.
-
-{% endcut %}
+{% include [faq-validation-depending-checkbox](../_includes/faq/questions-about-templates/validation-depending-checkbox.md) %}
 
 ### Area selection {#concept_bdk_qgd_rmb}
 
-{% cut "How do I create a shortcut for adding a polygon in "image-annotation"?" %}
+{% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
 
-To create a shortcut, add the following action to the "onKey" method:
+{% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
 
-```javascript
-onKey: function(key) {
-    var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
-
-    if (key === 'D') {
-      el.click();
-      el.classList.add('image-annotation-editor__shape_active')
-    }
-```
-
-{% endcut %}
-
-{% cut "How do I mark up triangles so that they close automatically when the third point is selected?" %}
-
-Use the **C** shortcut for closing areas.
-
-You can also use the [library](https://github.com/vmit/image-annotation) to customize the keyboard shortcuts for your tasks.
-
-{% endcut %}
-
-{% cut "How do I create a task for selecting objects in images?" %}
-
-We recommend that you break down your object selection project into three projects in Toloka:
-
-1. Sorting images containing an object.
-
-    1. [Create a task](../tutorials/image-classification.md) using the “Image classification” preset.
-
-    1. Sort the images containing the object you are looking for.
-
-    1. Show the image to the Toloker and ask if the object is in the image. Response options: Yes/No.
-
-1. Selecting objects in images.
-
-    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
-
-    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
-
-1. Reviewing object selection assignments.
-
-    1. Create a task using the object selection template.
-
-    1. Hide the editor and ask whether the object is selected correctly. Response options: Yes/No.
-
-    1. In the input data, pass the images and coordinates of the labeled objects from the previous task.
-
-    Now you can run the resulting pool with an overlap of 3–5 or with dynamic overlap. After that, you can aggregate the results and then upload the data for review to Project 2.
-
-    To prevent the Tolokers who worked on the second project from doing the review, assign a skill to them. Use this skill as a filter in the pools of the third project.
-
-{% endcut %}
+{% include [faq-selecting-objects](../_includes/faq/questions-about-templates/selecting-objects.md) %}
 
 {% cut "How do I add assignment validation depending on a checkbox?" %}
 
@@ -1747,115 +1651,31 @@ Main options:
 
 {% endcut %}
 
-{% cut "How much would 2000 images with a large number of different types of selectable objects cost? How do I create a task for this amount of work?" %}
+{% include [faq-large-number-objects](../_includes/faq/questions-about-templates/large-number-objects.md) %}
 
-In the case of crowdsourcing, it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
+{% include [faq-different-areas](../_includes/faq/questions-about-templates/different-areas.md) %}
 
-​Base your task on the “Object selection in an image” preset. See the step-by-step guide for creating this type of project on [this page](../tutorials/selection.md).
+{% include [faq-input-data-labeling-image](../_includes/faq/questions-about-templates/input-data-labeling-image.md) %}
 
-The editor used in the preset lets you add a drop-down list for labeling the selected object. See how to do this in the editor description ([Dropdown list](../concepts/t-components/image-annotation.md) tab).
-
-{% endcut %}
-
-{% cut "How do I implement selection of 3 different areas in an image? Select the name, image, and price in the product page screenshot." %}
-
-You can create a selection + drop-down list with category selection. See how to do this in the editor description ([Dropdown list](../concepts/t-components/image-annotation.md) tab).
-
-{% endcut %}
-
-{% cut "What are the input data in the case of object labeling in an image: the coordinates of the object relative to the image, or the coordinates of the object in the Toloka user window?" %}
-
-The coordinates are relative to the image.
-
-{% endcut %}
-
-{% cut "How do I use control and training tasks in the standard preset with an area selection editor?" %}
-
-In the standard preset with an area selection editor, you can't use the control tasks. In order for the assignment to be accepted by the system as correct, the object selected by the Toloker must exactly match the control object. This is almost impossible. Therefore, you can leave the `GOLDEN` field empty in the task file or simply delete all the columns except `INPUT`.
-
-You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
-
-Such tasks are usually run with non-automatic acceptance: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
-
-For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the “Results of assignment review” rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
-
-{% endcut %}
+{% include [faq-control-area-selection](../_includes/faq/questions-about-templates/control-area-selection.md) %}
 
 ### Field task {#concept_k1m_rgd_rmb}
 
-{% cut "Can I limit the source of the photo to camera-only in a field task so that the Toloker can't upload a photo from anywhere else?" %}
-
-To open the camera instead of the gallery when the Toloker taps the image upload button, in the **Image upload button **component specify `camera=true`.
-
-In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Google photo (Android). To limit the capacity of adding online images, specify in the component `requiredCoordinates=true`. In this case, the system won't let the Toloker add images without geotags.
-
-[Learn more about setting up the image upload component](../concepts/t-components/upload-picture.md).
-
-{% endcut %}
+{% include [faq-limit-source-photo](../_includes/faq/questions-about-templates/limit-source-photo.md) %}
 
 ### Side-by-side image comparison {#side-by-side}
 
-{% cut "How do I create a task with a selection out of three image options with the paired image comparison?" %}
-
-1. Use the “Side-by-side image comparison” preset.
-
-1. In the file, specify the links to the compared images.
-
-1. In the file, create the tasks where all the images will be compared in pairs:
-
-    - Image 1 and Image 2
-
-    - Image 1 and Image 3
-
-    - Image 2 and Image 3
-
-1. Process the results.
-
-You can also edit the project so that the Toloker sees 3 images at once and selects one of them.
-
-{% endcut %}
+{% include [faq-paired-images-comparison](../_includes/faq/questions-about-templates/paired-images-comparison.md) %}
 
 ## Survey {#interview}
 
-{% cut "How do I create a simple survey with no options, where the Toloker answers an open-ended question?" %}
+{% include [faq-simple-survey](../_includes/faq/questions-about-templates/simple-survey.md) %}
 
-1. Create a project from an empty preset.
-
-1. Write your question in the HTML block.
-
-1. If you need an [extensive](../concepts/t-components/text.md) response, add the required number of text entry components.
-
-1. If you need a [short](../concepts/t-components/string.md) response, add the required number of string entry components.
-
-1. Come up with a name for each of the components and create a matching number of string-type output fields with the same names. They will be used to save responses.
-
-1. Make all the output fields mandatory.
-
-1. Make the input field auxiliary. It will only be used to create a file with tasks.
-
-1. Come up with a name for the input field and set the string type for it (see the step-by-step [guide on creating a survey](../tutorials/questionnaire-toloka.md)).
-
-{% endcut %}
-
-{% cut "How do I create a survey with a single question based on the survey preset?" %}
-
-The survey includes an auxiliary input field. You can use it to pass any information, and it won't be visible to Tolokers.
-
-Upload one task and use the overlap parameter to enter the number of people you want to survey.
-
-{% endcut %}
+{% include [faq-survey-single-question](../_includes/faq/questions-about-templates/survey-single-question.md) %}
 
 ### Field task {#concept_k1m_rgd_rmb}
 
-{% cut "Can I limit the source of the photo to camera-only in a field task so that the Toloker can't upload a photo from anywhere else?" %}
-
-To open the camera instead of the gallery when the Toloker taps the image upload button, in the **Image upload button **component specify `camera=true`.
-
-In the mobile apps, Tolokers can add photos from the default gallery (iOS) or Google photo (Android). To limit the capacity of adding online images, specify in the component `requiredCoordinates=true`. In this case, the system won't let the Toloker add images without geotags.
-
-[Learn more about setting up the image upload component](../concepts/t-components/upload-picture.md).
-
-{% endcut %}
+{% include [faq-limit-source-photo](../_includes/faq/questions-about-templates/limit-source-photo.md) %}
 
 ### Side-by-side image comparison {#side-by-side}
 

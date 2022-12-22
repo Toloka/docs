@@ -74,7 +74,7 @@ You can set a price for your task suite on the pool editing page. The minimum pr
 
 {% endcut %}
 
-{% include [faq-set-up-budget](../_includes/faq/set-up-budget.md) %}
+{% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
 
 {% cut "How do I pay more to users who fill out optional fields?" %}
 
@@ -82,7 +82,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% endcut %}
 
-{% include [faq-awards-statistics](../_includes/faq/awards-statistics.md) %}
+{% include [faq-awards-statistics](../_includes/faq/finance/awards-statistics.md) %}
 
 {% cut "Can there be tasks with different prices in the pool?" %}
 

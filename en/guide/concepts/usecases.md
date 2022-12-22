@@ -150,13 +150,7 @@ onKey: function(key) {
 
 {% endcut %}
 
-{% cut "How do I mark up triangles so that they close automatically when the third point is selected?" %}
-
-Use the **C** shortcut for closing areas.
-
-You can also use the [library](https://github.com/vmit/image-annotation) to customize the keyboard shortcuts for your tasks.
-
-{% endcut %}
+{% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
 
 {% cut "How do I create a task for selecting objects in images?" %}
 
@@ -218,11 +212,7 @@ You can create a selection + drop-down list with category selection. See how to 
 
 {% endcut %}
 
-{% cut "What are the input data in the case of object labeling in an image: the coordinates of the object relative to the image, or the coordinates of the object in the Toloka user window?" %}
-
-The coordinates are relative to the image.
-
-{% endcut %}
+{% include [faq-input-data-labeling-image](../_includes/faq/questions-about-templates/input-data-labeling-image.md) %}
 
 {% cut "How do I use the control tasks in the standard template with an area selection editor?" %}
 
