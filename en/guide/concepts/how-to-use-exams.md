@@ -146,6 +146,12 @@ Based on the Toloker's responses to the retry pool tasks, recalculate their main
 
 A Toloker who gives enough correct responses gets access to the main pool again.
 
+## See also {#see-also}
+
+- [{#T}](qa-pool-settings.md)
+- [{#T}](pool-main.md)
+- [{#T}](filters.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Get initial consultation" %}

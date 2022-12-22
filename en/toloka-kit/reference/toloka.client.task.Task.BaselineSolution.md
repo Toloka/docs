@@ -1,5 +1,5 @@
 # BaselineSolution
-`toloka.client.task.Task.BaselineSolution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/task.py#L96)
+`toloka.client.task.Task.BaselineSolution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/task.py#L85)
 
 ```python
 BaselineSolution(
@@ -9,4 +9,6 @@ BaselineSolution(
     confidence_weight: Optional[float] = None
 )
 ```
+
+A preliminary response.
 

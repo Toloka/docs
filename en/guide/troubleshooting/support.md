@@ -4,7 +4,7 @@
 
 - [All questions on one page](troubleshooting.md)
 
-- [Join our Slack community](https://join.slack.com/t/tolokacommunity/shared_invite/zt-sxr745fr-dvfZffzvQTwNXOE0gEqysg)
+- [Join our Slack community]({{ toloka-slack }})
 
 ## Contact Toloka Customer Care
 

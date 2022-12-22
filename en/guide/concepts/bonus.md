@@ -90,7 +90,16 @@ The Toloker will see rewards for completed tasks, activity and quality of work i
 
 {% endcut %}
 
-You can track money deducted for extra rewards in your [profile]({{ profile }}) on the {% if locale == "en-com" %}**Expenses**{% endif %} tab.
+You can track money deducted for extra rewards in your [profile]({{ profile }}) on the {% if locale == "en-com" %}**Spent**{% endif %} tab.
+
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+
+## For developers {#for-developers}
+
+- [Toloka API: Issuing rewards](../../api/concepts/bonus.md)
+- Toloka-Kit: Rewarding Tolokers with [create_user_bonus()](../../toloka-kit/reference/toloka.client.TolokaClient.create_user_bonus.md) and [create_user_bonuses()](../../toloka-kit/reference/toloka.client.TolokaClient.create_user_bonuses.md) methods
 
 ## Troubleshooting {#troubleshooting}
 
@@ -102,7 +111,7 @@ You can increase the basic task price for Tolokers that have a higher skill. To 
 
 {% cut "How can I view statistics on paid rewards?" %}
 
-To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Expenses** tab.
+To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Spent** tab.
 
 {% endcut %}
 

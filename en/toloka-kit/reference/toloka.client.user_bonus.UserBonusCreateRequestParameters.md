@@ -1,5 +1,5 @@
 # UserBonusCreateRequestParameters
-`toloka.client.user_bonus.UserBonusCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/user_bonus.py#L86)
+`toloka.client.user_bonus.UserBonusCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/user_bonus.py#L86)
 
 ```python
 UserBonusCreateRequestParameters(

@@ -20,4 +20,10 @@ This is a special type of skills in Toloka that show the general competencies of
 
 To use this feature, select {% if locale == "en-com" %}**Add a filter → Skills → Choose a global skill**{% endif %} and specify the restriction for the selected skill in the added filter.
 
+## See also {#see-also}
+
+- [{#T}](nav-create.md)
+- [{#T}](nav-edit.md)
+- [{#T}](nav-delete.md)
+
 ![](../_images/cross-project-skills/cross-project-skills.png)

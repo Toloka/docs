@@ -119,4 +119,13 @@ Each project requires its own approach. Methods that are effective in one case m
 
 1. Contact support If something isn't working.
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+
+## For developers {#for-developers}
+
+- [Toloka API: Quality control rules](../../api/concepts/quality_control.md)
+- [Toloka-Kit: QualityControl class](../../toloka-kit/reference/toloka.client.quality_control.QualityControl.md)
+
 {% include [contact-support](../_includes/contact-support.md) %}

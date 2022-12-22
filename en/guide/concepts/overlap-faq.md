@@ -29,6 +29,11 @@ You can change overlap after the pool is started. To do this, open the pool edit
 
     This type of overlap helps you save money and speed up pool completion.
 
+## For developers {#for-developers}
+
+- [Toloka API: Changing task suite overlap](../../api/concepts/edit-overlap.md)
+- [Toloka-Kit: ChangeOverlap action class](../../toloka-kit/reference/toloka.client.actions.ChangeOverlap.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Can I do it like this: set a basic overlap of 2 users, then, if both Tolokers select the same response, close the pool, but if they give different responses, show the task to one more user?" %}

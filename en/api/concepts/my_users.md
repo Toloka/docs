@@ -19,6 +19,6 @@ You can filter Tolokers by the following criteria:
 
 ## Learn more {#links}
 
-- [Viewing Tolokers in the Requester's guide](../../guide/concepts/users.md)
-- [Description of skills in the Requester's guide](../../guide/concepts/nav.md)
-- [Quality control rules in the Requester's guide](../../guide/concepts/check-performers.md)
+- [Viewing Tolokers](../../guide/concepts/users.md)
+- [Description of skills](../../guide/concepts/nav.md)
+- [Quality control rules](../../guide/concepts/check-performers.md)

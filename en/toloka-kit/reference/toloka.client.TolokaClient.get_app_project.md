@@ -1,5 +1,5 @@
 # get_app_project
-`toloka.client.TolokaClient.get_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L3478)
+`toloka.client.TolokaClient.get_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L3496)
 
 ```python
 get_app_project(self, app_project_id: str)

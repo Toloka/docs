@@ -188,6 +188,10 @@ Autolabeling and pretrained models with quality control built in.
 - [Add tasks](pool.md) to the pool.
 - [Start the pool](pool-run-and-stop.md).
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Setting up quality control" %}

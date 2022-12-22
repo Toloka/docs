@@ -82,6 +82,14 @@ Use this filter if you want to make sure Tolokers have the right browser for you
 
 {% endcut %}
 
+{% cut "Experiment group (1-100)" %}
+
+Use the **Experiment group (1-100)** filter to select Tolokers from one or several independent groups.
+
+To learn more, see [Using A/B experiments](ab-experiment.md).
+
+{% endcut %}
+
 ## Toloker profile {#filter-user-profile}
 
 Use filters from this group to select Tolokers by the main profile data.
@@ -196,7 +204,18 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
     - [Setting up quality control](qa-pool-settings.md).
     - [Non-automatic acceptance](offline-accept.md).
 
-### Troubleshooting {#troubleshooting}
+## See also {#see-also}
+
+- [Efficiency indicators: Project availability](./efficiency-metrics/available-performers.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Filtering by profile data](../../api/concepts/filter-profile.md)
+- [Toloka API: Filtering by computed data](../../api/concepts/filter-computed.md)
+- [Toloka API: Filtering by skills](../../api/concepts/filter-skill.md)
+- [Toloka-Kit: Filters](../../toloka-kit/reference/toloka.client.filter.AdultAllowed.md)
+
+## Troubleshooting {#troubleshooting}
 
 {% cut "Tolokers" %}
 

@@ -1,5 +1,5 @@
 # OSFamily
-`toloka.client.filter.OSFamily` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/filter.py#L550)
+`toloka.client.filter.OSFamily` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/filter.py#L552)
 
 ```python
 OSFamily(

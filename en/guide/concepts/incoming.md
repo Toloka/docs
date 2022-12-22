@@ -335,6 +335,10 @@ The default value is `false`.||
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
 
+## See also {#see-also}
+
+- [{#T}](edit-project.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How do I insert a function that is called by an image click in my task?" %}

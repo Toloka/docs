@@ -115,9 +115,6 @@ items:
                 href: guide/concepts/advanced-features-input-string.md
               - name: Add response options
                 href: guide/concepts/advanced-features-input-selector.md
-  - name: Keys
-    href: guide/concepts/usecases-keys.md
-    hidden: true
   - name: Projects
     items:
       - name: Steps to follow
@@ -419,6 +416,8 @@ items:
         href: guide/concepts/faq.md
       - name: Using exams
         href: guide/concepts/how-to-use-exams.md
+      - name: Using A/B experiments
+        href: guide/concepts/ab-experiment.md
   - name: For developers
     items:
       - name: REST API

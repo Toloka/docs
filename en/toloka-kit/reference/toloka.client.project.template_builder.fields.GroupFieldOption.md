@@ -1,5 +1,5 @@
 # GroupFieldOption
-`toloka.client.project.template_builder.fields.GroupFieldOption` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/fields.py#L101)
+`toloka.client.project.template_builder.fields.GroupFieldOption` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/fields.py#L101)
 
 ```python
 GroupFieldOption(

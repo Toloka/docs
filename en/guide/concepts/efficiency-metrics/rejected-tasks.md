@@ -26,4 +26,8 @@ where:
 
 - A low indicator is `> 30%`.
 
+## See also {#see-also}
+
+- [{#T}](../accept.md)
+
 {% include [contact-support](../../_includes/contact-support.md) %}

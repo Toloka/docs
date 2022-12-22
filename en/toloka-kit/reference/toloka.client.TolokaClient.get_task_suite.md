@@ -1,11 +1,11 @@
 # get_task_suite
-`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2520)
+`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2545)
 
 ```python
 get_task_suite(self, task_suite_id: str)
 ```
 
-Reads one specific task suite
+Reads one task suite.
 
 ## Parameters Description
 

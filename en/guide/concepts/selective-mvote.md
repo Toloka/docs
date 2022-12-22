@@ -94,4 +94,8 @@ To add **selective majority vote check**:
 
     - [Dynamic overlap](dynamic-overlap.md)
 
+## See also {#see-also}
+
+- [{#T}](distribute-tasks-by-pages.md#smart-mixing)
+
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -156,7 +156,7 @@ Type of operation for creating a task suite:
 
 The default value is `false`.
 
-For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md). ||
+More information about [creating task suites](../../guide/concepts/pool-main.md). ||
 || **automerged** | **boolean**
 
 Flag of the response received as a result of [merging identical tasks](tasks.md#task-merge). Value:

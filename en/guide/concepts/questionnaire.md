@@ -1,1 +1,0 @@
-{% include [tutorials](../tutorials/questionnaire-toloka.md) %}

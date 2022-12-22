@@ -28,7 +28,7 @@ You can select only the best Tolokers using one of the filters in the [personali
 
 ## What's next {#what-next}
 
-- [Add tasks to the pool](pool.md)
+- [Add tasks](pool.md) to the pool.
 - Learn more about how to set up a pool:
 
     - [Setting up pricing](dynamic-pricing.md).
@@ -37,6 +37,15 @@ You can select only the best Tolokers using one of the filters in the [personali
     - [Filters](filters.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
+
+## See also {#see-also}
+
+- [{#T}](nav.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: TopPercentageByQuality class](../../toloka-kit/reference/toloka.client.pool.speed_quality_balance_config.TopPercentageByQuality.md)
+- [Toloka-Kit: BestConcurrentUsersByQuality class](../../toloka-kit/reference/toloka.client.pool.speed_quality_balance_config.BestConcurrentUsersByQuality.md)
 
 ## Troubleshooting {#troubleshooting}
 

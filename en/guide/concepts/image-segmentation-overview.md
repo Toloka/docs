@@ -37,4 +37,8 @@ If you need help rating tasks, read about [setting up pricing](dynamic-pricing.m
 - Create [Project 3](image-segmentation-project3.md) to check the results.
 - Learn more about [decomposition](solution-architecture.md).
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
+
 {% include [contact-support](../_includes/contact-support.md) %}

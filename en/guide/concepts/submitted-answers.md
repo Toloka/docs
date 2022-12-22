@@ -60,6 +60,11 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Number of tasks completed](../../api/concepts/completed.md)
+- [Toloka-Kit: AnswerCount collector class](../../toloka-kit/reference/toloka.client.collectors.AnswerCount.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

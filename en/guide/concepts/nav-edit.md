@@ -24,6 +24,21 @@ You can both edit the skill itself and change the skill values for a specific To
 
 1. Change the skill name, type, or description and click **Save**.
 
+## See also {#see-also}
+
+- [{#T}](nav-create.md)
+- [{#T}](nav-assign.md)
+- [{#T}](nav-use.md)
+- [{#T}](nav-delete.md)
+- [{#T}](filters.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Setting skill value](../../api/concepts/set-skill.md)
+- [Toloka API: Editing skill](../../api/concepts/edit-skill.md)
+- [Toloka-Kit: Setting user skill](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_skill.md)
+- [Toloka-Kit: Updating user skill](../../toloka-kit/reference/toloka.client.TolokaClient.update_skill.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

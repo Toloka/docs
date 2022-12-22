@@ -1,33 +1,34 @@
 # create_task_suites
-`toloka.client.TolokaClient.create_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L2393)
+`toloka.client.TolokaClient.create_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2417)
 
-Creates many task suites in pools
+Creates several task suites in Toloka.
 
 
-Generally, you don't need to create a task set yourself, because you can create tasks and Toloka will create
-task suites for you. Use this method only then you need to group specific tasks in one suite or to set a
-different parameters on different tasks suites.
-By default uses asynchronous operation inside. It's better not to set "async_mode=False", if you not understand
-clearly why you need it.
-Task suites can be from different pools. You can insert both regular tasks and golden-tasks.
+Usually, you don't need to create a task suite manually, because Toloka can group tasks into suites automatically.
+
+Use this method if you need to group specific tasks together or to set different parameters in different task suites.
+Task suites can be created in different pools. You can create general and control tasks or task suites in different pools with a single method call.
+
+By default, `create_task_suites` starts asynchronous operation internally and waits for the completion of it. Do not
+change `async_mode` to False, if you do not understand clearly why you need it.
+
 You can send a maximum of 100,000 requests of this kind per minute and 2,000,000 requests per day.
-Recommended maximum of 10,000 task suites per request if async_mode is True.
+It is recommended that you create no more than 10,000 task suites in a single request if the `async_mode` parameter is `True`.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`task_suites`|**List\[[TaskSuite](toloka.client.task_suite.TaskSuite.md)\]**|<p>List of task suites, that will be created.</p>
-`operation_id`|**Optional\[UUID\]**|<p>Operation ID for asynchronous loading of task suites.</p>
-`skip_invalid_items`|**Optional\[bool\]**|<p>Validation parameters:</p> <ul> <li>True - Create the task suites that passed validation. Skip the rest of the task suites.</li> <li>False - If at least one of the task suites didn&#x27;t pass validation, stop the operation and   don&#x27;t create the task suites.</li> </ul>
-`allow_defaults`|**Optional\[bool\]**|<p>Overlap settings:</p> <ul> <li>True - Use the overlap that is set in the pool parameters.</li> <li>False - Use the overlap that is set in the task suite parameters (in the `overlap` field).</li> </ul>
+`task_suites`|**List\[[TaskSuite](toloka.client.task_suite.TaskSuite.md)\]**|<p>A list of task suites to be created.</p>
+`operation_id`|**Optional\[UUID\]**|<p>The ID of the operation conforming to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). Use it if the `async_mode` is set to `True`.</p>
+`skip_invalid_items`|**Optional\[bool\]**|<p>Task suite validation option:</p> <ul> <li>True — All valid task suites are added. If a task suite does not pass validation, then it is not added to Toloka.</li> <li>False — If any task suite does not pass validation, then operation is cancelled and no task suites are added to Toloka.</li> </ul> <p></p><p>Default value: `False`.</p>
+`allow_defaults`|**Optional\[bool\]**|<p>Active overlap setting:</p> <ul> <li>True — Use the overlap that is set in the `defaults.default_overlap_for_new_task_suites` pool parameter.</li> <li>False — Use the overlap that is set in the `overlap` task suite parameter.</li> </ul> <p></p><p>Default value: `False`.</p>
 `open_pool`|**Optional\[bool\]**|<p>Open the pool immediately after creating a task suite, if the pool is closed.</p>
-`async_mode`|**Optional\[bool\]**|<p>How the request is processed:</p> <ul> <li>True — deferred. The query results in an asynchronous operation running in the background.   Answer contains information about the operation (start and end time, status, number of sets).</li> <li>False — synchronous. Answer contains information about the generated sets of tasks.   You can send a maximum of 5000 task sets in a single request.</li> </ul>
+`async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>True — Asynchronous operation is started internally.</li> <li>False — The request is processed synchronously. A maximum of 5000 task suites can be added in a single request in this mode.</li> </ul> <p></p><p>Default value: `True`.</p>
 
 * **Returns:**
 
-  Result of task suites creating. Contains created task suites in `items` and
-problems in "validation_errors".
+  The result of the operation.
 
 * **Return type:**
 
@@ -38,13 +39,12 @@ problems in "validation_errors".
 
 ```python
 task_suites = [
-    toloka.task_suite.TaskSuite(
-        pool_id=pool.id,
+    toloka.client.TaskSuite(
+        pool_id=1,
         overlap=1,
         tasks=[
-            toloka.task.Task(input_values={
-                'input1': some_input_value,
-                'input2': some_input_value
+            toloka.client.Task(input_values={
+                'question': 'Choose a random number'
             })
         ]
     )

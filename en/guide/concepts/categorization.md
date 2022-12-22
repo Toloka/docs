@@ -1,1 +1,0 @@
-{% include [tutorials](../tutorials/image-classification.md) %}

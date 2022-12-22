@@ -1,5 +1,5 @@
 # BaseLayoutV1
-`toloka.client.project.template_builder.layouts.BaseLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/layouts.py#L27)
+`toloka.client.project.template_builder.layouts.BaseLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/layouts.py#L27)
 
 ```python
 BaseLayoutV1(

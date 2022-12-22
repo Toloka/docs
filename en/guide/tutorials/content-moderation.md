@@ -246,12 +246,15 @@ At this step, upload your task data to Toloka.
 
     - {% if locale == "en-com" %}**CONFIDENCE**{% endif %}: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Toloka-Kit — sentiment analysis](https://github.com/Toloka/toloka-kit/blob/main/examples/5.nlp/sentiment_analysis/sentiment_analysis.ipynb)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Sentiment analysis](https://github.com/Toloka/toloka-kit/blob/main/examples/5.nlp/sentiment_analysis/sentiment_analysis.ipynb)
 
 ## Datasets and reference {#datasets}
 

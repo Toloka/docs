@@ -463,8 +463,6 @@ items:
                 href: https://toloka.ai/en/docs/toloka-kit/
   - name: Решение проблем и поддержка
     items:
-      - name: Получить помощь
-        href: guide/concepts/get-help.md
       - name: Все вопросы на одной странице
         href: guide/troubleshooting/troubleshooting.md
       - name: Регистрация и начало работы
