@@ -694,7 +694,7 @@ If the Toloker mismatches your preset filter, they can't see the task. You can o
 
 {% endcut %}
 
-{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30–45 years old”." %}
+{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “US only, 30–45 years old”." %}
 
 You can do that. To select Tolokers for the pool, use [filters](../concepts/filters.md).
 

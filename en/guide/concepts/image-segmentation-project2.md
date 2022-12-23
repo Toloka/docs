@@ -106,19 +106,19 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. Optionally add a {% if locale == "en-com" %}**Private comment**{% endif %}. This information is available only to you.
 
-1. Filter Tolokers in the {% if locale == "en-com" %}**Tolokers**{% endif %} section of the {% if locale == "en-com" %}**Audience**{% endif %} block:
+1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
 
-    1. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
+    1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
-    1. Add the {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers who indicated in their profiles that they know English.
+    1. {% include [tutorials-shocking-content](../_includes/tutorials/shocking-content-filter.md) %}
+
+    1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
     1. Add a new skill. Click {% if locale == "en-com" %}**Add skill**{% endif %}.
 
     1. In the window that opens, enter `Area selection` in the {% if locale == "en-com" %}**Title**{% endif %} field.
 
     1. Click {% if locale == "en-com" %}**Add**{% endif %}.
-
-    Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
 1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 

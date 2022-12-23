@@ -30,7 +30,7 @@ Any value. Those might be:
  as an element. An array is enclosed in square brackets, `[]`:
 
 ```json
-"cities": ["Moscow", "Tokyo", "New York"]
+"cities": ["London", "Tokyo", "New York"]
 ```
 
 #### boolean
