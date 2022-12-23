@@ -1,8 +1,8 @@
-# Create a project
+# Creating a project
 
 If you already have a project and you want to create an identical one, [clone](project.md) the existing project. If not, create a new project.
 
-## New project {#new-project}
+## How to create a new project {#new-project}
 
 The project defines what the task will look like for a Toloker.
 
@@ -87,7 +87,7 @@ To create a project, follow the instructions:
 
 After creating the project, add a [task pool](pool-main.md) to it. You can also set up [quality control](control.md) in the project.
 
-## Cloning a project {#clone}
+## How to clone a project {#clone}
 
 You can view the list of created projects on the **Projects** page. Open the project page to view the list of pools, [project rating](project_rating_stat.md), and [project statistics](project-statistic.md).
 
@@ -100,6 +100,10 @@ Quality control in the project is not cloned.
 {% endnote %}
 
 If you need to change the project settings, [open edit mode](edit-project.md).
+
+## How to pin a project {#pin}
+
+{% include [toloka-requester-source-pin-project](../_includes/toloka-requester-source/id-toloka-requester-source/pin-project.md) %}
 
 ## What's next {#what_next}
 

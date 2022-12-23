@@ -624,6 +624,14 @@ You can't use a range as a fixed value.
 
 {% endcut %}
 
+## List of projects {#list}
+
+{% cut "How to pin a project at the top of the list?" %}
+
+{% include [toloka-requester-source-pin-project](../_includes/toloka-requester-source/id-toloka-requester-source/pin-project.md) %}
+
+{% endcut %}
+
 [Other questions](support.md#help)
 
 ## Setting up a pool {#pool-settings}

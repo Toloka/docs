@@ -513,12 +513,6 @@ pre {
 
 {% endcut %}
 
-{% cut "Как закрепить проект вверху списка?" %}
-
-{% include [pin-project](../_includes/concepts/project/pin-project.md) %}
-
-{% endcut %}
-
 [Другой вопрос](support.md#help)
 
 ## Входные и выходные данные {#concept_cjj_gkp_smb}
