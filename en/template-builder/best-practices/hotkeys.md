@@ -38,7 +38,7 @@ In this example, pressing **P** triggers the [action.play-pause](../reference/ac
 
 {% note tip %}
 
-Mind the keyboard layout when setting up shortcuts: if you choose a character that looks similar in the Cyrillic and Latin layouts, it might confuse Russian-speaking Tolokers.
+Mind the keyboard layout when setting up shortcuts: if you choose a character that looks similar in the Cyrillic and Latin layouts, it might confuse Tolokers.
 
 {% endnote %}
 

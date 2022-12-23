@@ -189,7 +189,7 @@ To create a [pool](../../glossary.md#pool):
 
     1. In the **?** field specify `=`.
 
-    1. In the **Value** field, specify **Russian**.
+    1. In the **Value** field, specify **English**.
 
     Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 

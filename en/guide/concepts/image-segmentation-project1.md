@@ -177,7 +177,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
 
-    1. Add the {% if locale == "en-com" %}**Region by phone number**{% endif %} and {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers from Russia, Ukraine, Kazakhstan, and Belarus who indicated in their profiles that they know Russian.
+    1. Add the {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers who indicated in their profiles that they know English.
 
     Tasks in pools will be automatically available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 

@@ -64,11 +64,7 @@ If you aren't sure whether the tasks have this kind of content, select the {% if
 
 #### Filters and skills
 
-By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
-
-If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
-
-If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md)
+{% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
 #### {% if locale == "en-com" %}**Speed/quality balance**{% endif %}
 

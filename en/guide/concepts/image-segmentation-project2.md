@@ -110,7 +110,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
 
-    1. Add the {% if locale == "en-com" %}**Region by phone number**{% endif %} and {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers from Russia, Ukraine, Kazakhstan, and Belarus who indicated in their profiles that they know Russian.
+    1. Add the {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers who indicated in their profiles that they know English.
 
     1. Add a new skill. Click {% if locale == "en-com" %}**Add skill**{% endif %}.
 

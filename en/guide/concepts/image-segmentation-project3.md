@@ -219,7 +219,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     1. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
 
-    1. Add the {% if locale == "en-com" %}**Region by phone number**{% endif %} and {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers from Russia, Ukraine, Kazakhstan, and Belarus who indicated in their profiles that they know Russian.
+    1. Add the {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers who indicated in their profiles that they know English.
 
     1. Add another filter. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
 

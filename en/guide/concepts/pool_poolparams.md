@@ -16,11 +16,11 @@ Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md). | {%
 ||{% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} | Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
 If you aren't sure whether the tasks have such content, enable this option. | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Filters**{% endif %} | By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
+||{% if locale == "en-com" %}**Filters**{% endif %} | 
 
-If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
+{% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
-If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md) | {% if locale == "en-com" %}**Audience**{% endif %}||
+| {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 

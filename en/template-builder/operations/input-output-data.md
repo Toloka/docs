@@ -58,9 +58,9 @@ Let's say you have an input object that describes a residential address.
 {
     "name": "Ivan Ivanov",
     "registration_address": {
-        "country": "Russia",
-        "city": "Moscow",
-        "address": "Tverskaya str, 3-53"
+        "country": "US",
+        "city": "Washington, D.C.",
+        "address": "83 Goldcliff Circle"
     },
     ...
 ```
