@@ -80,7 +80,7 @@ File type. You can set one of the allowed values:
 - `IMAGE_OR_VIDEO` — Image or video.
 
 - `ANY` — Any file. | Yes (when creating tasks for mobile devices) | no||
-||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Upload file” (English), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
+||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Upload file” (English), “Загрузить файл” (Russian), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
 ||`validation-show`| The position of popup hints (displayed if the response didn't pass validation). The position is relative to the input field.
 
 Supported values:

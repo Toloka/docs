@@ -63,7 +63,7 @@ This parameter applies to the tasks completed in the mobile app.
 {% endnote %}
 
 File type: `AUDIO` — Audio recording. | yes | no||
-||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Upload file” (English), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
+||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Upload file” (English), “Загрузить файл” (Russian), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
 ||`multipleSelect`| The number of files to download at the same time.
 
 For the single file upload, set the value to `false`.
