@@ -624,7 +624,7 @@ You can't use a range as a fixed value.
 
 {% endcut %}
 
-## List of projects {#list}
+### List of projects {#list}
 
 {% cut "How to pin a project at the top of the list?" %}
 

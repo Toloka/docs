@@ -2,7 +2,7 @@
 
 If you already have a project and you want to create an identical one, [clone](project.md) the existing project. If not, create a new project.
 
-## How to create a new project {#new-project}
+## How to create a project {#new-project}
 
 The project defines what the task will look like for a Toloker.
 
