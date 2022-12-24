@@ -1,14 +1,8 @@
-[*remember_values]: Some quality control rules have the parameter which allows to calculate Toloker's responses from other pools. Depending on the rule, the dynamic window is measured:
-
-- In tasks: the [Review results](reviewing-assignments.md) and [Majority vote](mvote.md) rules, the **Recent tasks to use** field.
-
-- In [control tasks](../../glossary.md#control-task): the [Control tasks](goldenset.md) rule, the **Recent control and training task responses to use** field.
-
-- In [task suites](../../glossary.md#task-suite): the [Fast responses](quick-answers.md) rule, the **Recent task suites to use** field.
+[*remember_values]: The parameter which allows to calculate Toloker's responses from other pools.
 
 # “Remember values” parameter
 
-Some quality control rules have the parameter which allows to calculate Toloker's responses from other pools. Depending on the rule, the dynamic window is measured:
+Some quality control rules have the parameter which allows to calculate Toloker's responses from other pools. It sets the dynamic window, which the values are recalculated within. Depending on the rule, the dynamic window is measured:
 
 - In tasks: the [Review results](reviewing-assignments.md) and [Majority vote](mvote.md) rules, the **Recent tasks to use** field.
 
