@@ -26,7 +26,7 @@ Each project consists of the following basic steps:
 
 1. **Obtain and aggregate the results**.
 
-Find out how to top up your account in the relevant section: [For non-residents of Russia](refill.md).
+Find out how to top up your account in the [Topping up your account](refill.md) section.
 
 If you need help rating tasks, read about [setting up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
 

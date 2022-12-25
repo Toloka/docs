@@ -23,7 +23,7 @@ The box already has validation: by default, Tolokers can enter only numbers and 
 a dot or a comma as a separator, but there will always be a dot in the output.
 
 When the Toloker is entering a number, the separator automatically changes to the one specified in the regional
-settings. For Russia, the separator is a comma.
+settings.
 
 Negative numbers are allowed by default. To disable them, use the validation property. Pressing the up or down arrow
 keys will increase or decrease the number by one.

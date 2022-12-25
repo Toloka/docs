@@ -97,7 +97,7 @@ Returns the object received by the template engine before compiling the task tem
 
 The method is available in toloka-handlebars-templates. It returns a set of fields and their values passed to the task input: `return this.getTask().input_values`.
 
-The method allows you to process the existing values or pass new custom parameters to the template engine. For example, you can pass strings for localizing a template and use the same project for Russian-speaking and English-speaking Tolokers.
+The method allows you to process the existing values or pass new custom parameters to the template engine. For example, you can pass strings for localizing a template and use the same project for English-speaking and Spanish-speaking Tolokers.
 
 {% cut "Example" %}
 
