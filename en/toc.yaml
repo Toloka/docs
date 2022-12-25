@@ -115,9 +115,6 @@ items:
                 href: guide/concepts/advanced-features-input-string.md
               - name: Add response options
                 href: guide/concepts/advanced-features-input-selector.md
-  - name: Keys
-    href: guide/concepts/usecases-keys.md
-    hidden: true
   - name: Projects
     items:
       - name: Steps to follow
@@ -331,7 +328,6 @@ items:
                 href: guide/concepts/efficiency-metrics/ban-rate.md
               - name: Communication issues
                 href: guide/concepts/efficiency-metrics/communication.md
-                hidden: true
               - name: Control tasks
                 href: guide/concepts/efficiency-metrics/control-tasks-share.md
               - name: Control task balance
@@ -342,7 +338,6 @@ items:
                 href: guide/concepts/efficiency-metrics/instruction-quality.md
               - name: Quality of interface
                 href: guide/concepts/efficiency-metrics/interface-quality.md
-                hidden: true
               - name: Rejected tasks
                 href: guide/concepts/efficiency-metrics/rejected-tasks.md
               - name: Submission rate
@@ -421,6 +416,8 @@ items:
         href: guide/concepts/faq.md
       - name: Using exams
         href: guide/concepts/how-to-use-exams.md
+      - name: Using A/B experiments
+        href: guide/concepts/ab-experiment.md
   - name: For developers
     items:
       - name: REST API
@@ -467,8 +464,6 @@ items:
                   mode: link
   - name: Troubleshooting and support
     items:
-      - name: Get help
-        href: guide/concepts/get-help.md
       - name: All questions on one page
         href: guide/troubleshooting/troubleshooting.md
       - name: Registration and getting started

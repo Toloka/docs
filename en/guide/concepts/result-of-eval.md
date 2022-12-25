@@ -58,6 +58,17 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
 - Use the [Toloka API](../../api/concepts/attachments.md) to download files with responses.
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Results](https://toloka.ai/knowledgebase/results/)
+
+## For developers {#for-developers}
+
+- [Toloka API: Getting responses](../../api/concepts/get-response.md)
+- [Toloka API: Files in responses](../../api/concepts/attachments.md)
+- [Toloka-Kit: Getting responses](../../toloka-kit/reference/toloka.client.TolokaClient.get_assignments.md)
+- [Toloka-Kit: Getting attachments](../../toloka-kit/reference/toloka.client.TolokaClient.get_attachments.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}

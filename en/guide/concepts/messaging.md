@@ -105,6 +105,18 @@ To mark a message as read, click ![](../_images/other/read.svg) to the left of i
 
 To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as read**{% elsif locale == "en-com" %}**Mark all as read**{% endif %} above the message list.
 
+## See also {#see-also}
+
+- [{#T}](users.md)
+- [{#T}](bonus.md)
+- [{#T}](ban.md)
+- [Efficiency indicators: Communication issues](./efficiency-metrics/communication.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Messages for Tolokers](../../api/concepts/messages.md)
+- [Toloka-Kit: Working with messages](../../toloka-kit/reference/toloka.client.TolokaClient.add_message_thread_to_folders.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How can I notify the Toloker of changes in the instructions?" %}

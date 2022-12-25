@@ -12,7 +12,7 @@ The JSON filter description must not exceed 10,000 characters.
 
 ## Sample filter in JSON {#request-example}
 
-This example selects Tolokers from Russia and Ukraine for completing tasks (it uses the region detected from the Toloker's IP address and the country specified in the profile). Users must have a minimum skill level of 60 for the control page results.
+This example selects Tolokers from US or United Kingdom for completing tasks (it uses the region detected from the Toloker's IP address and the country specified in the profile). Users must have a minimum skill level of 60 for the control page results.
 
 ```json
 {
@@ -24,21 +24,15 @@ This example selects Tolokers from Russia and Ukraine for completing tasks (it u
             "category":"computed",
             "key":"region_by_ip",
             "operator":"IN",
-            "value":225
+            "value":84
           },
           {
             "category":"computed",
             "key":"region_by_ip",
             "operator":"IN",
-            "value":187
+            "value":102
           }
         ]
-      },
-      {
-        "category":"profile",
-        "key":"country",
-        "operator":"EQ",
-        "value":"RU"
       },
       {
         "category":"skill",

@@ -26,7 +26,7 @@ Each project consists of the following basic steps:
 
 1. **Obtain and aggregate the results**.
 
-Find out how to top up your account in the relevant section: [For non-residents of Russia](refill.md).
+Find out how to top up your account in the [Topping up your account](refill.md) section.
 
 If you need help rating tasks, read about [setting up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
 
@@ -36,5 +36,9 @@ If you need help rating tasks, read about [setting up pricing](dynamic-pricing.m
 - Create [Project 2](image-segmentation-project2.md) to select objects.
 - Create [Project 3](image-segmentation-project3.md) to check the results.
 - Learn more about [decomposition](solution-architecture.md).
+
+## See also {#see-also}
+
+- [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
 
 {% include [contact-support](../_includes/contact-support.md) %}

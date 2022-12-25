@@ -195,6 +195,11 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
 
+## For developers {#for-developers}
+
+- [Toloka API: Creating pool](../../api/concepts/create-pool.md)
+- [Toloka-Kit: Creating pool](../../toloka-kit/reference/toloka.client.TolokaClient.create_pool.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "What overlap should I set?" %}

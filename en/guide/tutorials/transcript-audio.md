@@ -261,13 +261,16 @@ After the specified time period, all responses are automatically accepted, regar
 
     You will get the TSV file with the labeling results.
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Template Builder — audio transcription](../../template-builder/templates/audio-transcript.md)
-- [Toloka-Kit — audio transcription](https://github.com/Toloka/toloka-kit/blob/main/examples/3.audio_analysis/audio_transcription/audio_transcription.ipynb)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Template Builder: Audio transcription](../../template-builder/templates/audio-transcript.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Audio transcription](https://github.com/Toloka/toloka-kit/blob/main/examples/3.audio_analysis/audio_transcription/audio_transcription.ipynb)
 
 ## Datasets and reference {#datasets}
 

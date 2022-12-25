@@ -52,7 +52,7 @@ Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md).
 
 #### Task price
 
-Calculated automatically including 30% markup.
+Calculated automatically.
 
 ## Audience {#pool-audience-info}
 
@@ -64,11 +64,7 @@ If you aren't sure whether the tasks have this kind of content, select the {% if
 
 #### Filters and skills
 
-By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
-
-If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
-
-If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md)
+{% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
 #### {% if locale == "en-com" %}**Speed/quality balance**{% endif %}
 
@@ -262,6 +258,13 @@ Use this parameter to:
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
+
+## For developers {#for-developers}
+
+- [Toloka API: Editing pool](../../api/concepts/edit-pool.md)
+- [Toloka API: Changing pool priority](../../api/concepts/set-priority-pool.md)
+- [Toloka-Kit: Editing pool](../../toloka-kit/reference/toloka.client.TolokaClient.update_pool.md)
+- [Toloka-Kit: Patching pool](../../toloka-kit/reference/toloka.client.TolokaClient.patch_pool.md)
 
 ## Troubleshooting {#troubleshooting}
 

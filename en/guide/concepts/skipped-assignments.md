@@ -82,6 +82,11 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Skipped assignments](../../api/concepts/skipped.md)
+- [Toloka-Kit: SkippedInRowAssignments collector class](../../toloka-kit/reference/toloka.client.collectors.SkippedInRowAssignments.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

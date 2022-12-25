@@ -203,21 +203,15 @@ To create a [pool](../../glossary.md#pool):
 
 1. (optional) Add a **Private comment**. This information is available only to you.
 
-1. In the **Tolokers** section of the **Audience** block, filter Tolokers by language:
+1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
 
-    1. Click **Add filter**.
+    1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
-    1. Find the **Toloker profile** block in the list and choose the **Languages** skill.
+    1. {% include [tutorials-shocking-content](../_includes/tutorials/shocking-content-filter.md) %}
 
-    1. In the **?** field specify `=`.
+    1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
-    1. In the **Value** field, specify **Russian**.
-
-    Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
-
-1. In the **Tolokers** section, add a new skill:
-
-    1. Click **Add a skill**.
+    1. Click **Add skill**.
 
     1. In the **Title** field of the window that opens, enter `Found_shoes`.
 

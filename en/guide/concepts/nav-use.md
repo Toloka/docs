@@ -70,6 +70,12 @@ If necessary, you can:
 - [Remove](nav-delete.md) skill for a specific Toloker.
 - [View the history](nav-history.md) of skill changes.
 
+## See also {#see-also}
+
+- [{#T}](nav-create.md)
+- [{#T}](nav-assign.md)
+- [{#T}](filters.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

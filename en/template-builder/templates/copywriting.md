@@ -85,7 +85,7 @@ This is a complex example that consists of four main parts:
 
 What's unique about this example is that a Toloker can add and remove text input fields.
 
-In addition, the example checks that each line has at least three characters, including Russian or English letters and spaces. The condition is implemented using [condition.schema](../reference/condition.schema.md).
+In addition, the example checks that each line has at least three characters, including letters and spaces. The condition is implemented using [condition.schema](../reference/condition.schema.md).
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC4QG)
 

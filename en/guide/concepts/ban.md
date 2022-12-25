@@ -73,6 +73,11 @@ You can also [ban](#ban) this Toloker from your project.
 
 {% endnote %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Blocking access to tasks](../../api/concepts/ban.md)
+- [Toloka-Kit: Banning Tolokers](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_restriction.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "My project has a trusted Toloker who was banned by the system" %}

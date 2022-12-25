@@ -121,7 +121,7 @@ Values may contain different data types:
 - `array`: An array of comma-separated elements. You can use absolutely anything as an element, like a string, a number, a Boolean value, or an object. An array is enclosed in square brackets, `[]`:
 
     ```json
-    "cities": ["Moscow", "Tokyo", "New York"]
+    "cities": ["London", "Tokyo", "New York"]
     ```
 
 {% note warning %}

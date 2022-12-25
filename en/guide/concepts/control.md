@@ -74,6 +74,15 @@ You can configure quality control in the [pool](qa-pool-settings.md) and in the 
 
 {% endlist %}
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+
+## For developers {#for-developers}
+
+- [Toloka API: Quality control rules](../../api/concepts/quality_control.md)
+- [Toloka-Kit: QualityControl class](../../toloka-kit/reference/toloka.client.quality_control.QualityControl.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Setting up quality control" %}

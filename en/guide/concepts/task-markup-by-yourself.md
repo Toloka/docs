@@ -98,6 +98,11 @@ If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overla
 - {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
 - [Start the pool](pool-run-and-stop.md).
 
+## See also {#see-also}
+
+- [Efficiency indicators: Control tasks](./efficiency-metrics/control-tasks-share.md)
+- [Efficiency indicators: Control task balance](./efficiency-metrics/control-tasks-balance.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Uploading tasks to a pool" %}

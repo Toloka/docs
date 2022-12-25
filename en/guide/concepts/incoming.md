@@ -45,18 +45,6 @@ There are two ways to edit the specification in project settings: using either r
       }
       ```
 
-  - Only Russian letters and numbers
-
-      ```json
-      "my_ru_string": {
-        "type": "string",
-        "required": true,
-        "min_length": 10,
-        "max_length": 100,
-        "pattern": "[а-яА-Я0-9]+"
-      }
-      ```
-
   - Only Latin letters and numbers
 
       ```json
@@ -66,6 +54,18 @@ There are two ways to edit the specification in project settings: using either r
         "min_length": 10,
         "max_length": 100,
         "pattern": "[a-zA-Z0-9]+"
+      }
+      ```
+
+  - Only Cyrillic letters and numbers
+
+      ```json
+      "my_ru_string": {
+        "type": "string",
+        "required": true,
+        "min_length": 10,
+        "max_length": 100,
+        "pattern": "[а-яА-Я0-9]+"
       }
       ```
 
@@ -334,6 +334,10 @@ The default value is `false`.||
     - [Task interface](spec.md).
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
+
+## See also {#see-also}
+
+- [{#T}](edit-project.md)
 
 ## Troubleshooting {#troubleshooting}
 

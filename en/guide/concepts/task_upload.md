@@ -140,6 +140,19 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 
 - If you haven't labeled your [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks in the file, [edit the tasks in the interface](task_markup.md).
 
+## See also {#see-also}
+
+- [{#T}](cloud-storage.md)
+- [{#T}](amazon-cloud-storage.md)
+- [{#T}](azure-cloud-storage.md)
+- [{#T}](google-cloud-storage.md)
+- [{#T}](use-object-storage.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Tasks](../../api/concepts/tasks.md)
+- [Toloka-Kit: Creating tasks](../../toloka-kit/reference/toloka.client.TolokaClient.create_task.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Errors in column headers" %}

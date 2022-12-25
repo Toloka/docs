@@ -1,5 +1,5 @@
 # YandexDiskProxyHelperV1
-`toloka.client.project.template_builder.helpers.YandexDiskProxyHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/project/template_builder/helpers.py#L288)
+`toloka.client.project.template_builder.helpers.YandexDiskProxyHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/helpers.py#L288)
 
 ```python
 YandexDiskProxyHelperV1(
@@ -14,7 +14,7 @@ You can use this component to download files from Yandex&#160;Disk.
 
 
 To use YandexDiskProxyHelper, connect Yandex&#160;Disk to your Toloka account and add the proxy by following
-the [instructions](../../guide/concepts/prepare-data.md)
+the [instructions](https://toloka.ai/en/docs/guide/concepts/prepare-data)
 Select the component that you want to add, such as view.image for an image or view.audio for an audio file.
 In the url property of this component, use YandexDiskProxyHelper.
 

@@ -53,10 +53,14 @@ If you discover issues with your project or tasks during the project check, you 
 
 We recommend that you always double-check new projects. You should also check previously created projects whenever you modify their interface or instructions.
 
-## Next steps
+## What's next {#what-next}
 
 - If you haven't labeled your control and training tasks in the file, [edit the tasks in the interface](task_markup.md).
 - [Top up](refill.md) your account.
 - Launch the [pool labeling](pool-run-and-stop.md).
+
+## See also {#see-also}
+
+- [{#T}](mobile.md)
 
 {% include [image-styles](../../../_includes/image-styles.md) %}

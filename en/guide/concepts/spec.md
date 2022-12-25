@@ -55,7 +55,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
     ```
 
     {% endif %}
-- **Upload a file to the task, for example, an image.** Add the `url` field with the **link** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
+- **Upload a file to the task, for example, an image.** Add the `url` field with the **URL** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
 
     ```html
     {{img src=url width="400px" height="300px"}}
@@ -222,6 +222,12 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
     - [Writing instructions](instruction.md).
     - [Input and output data](incoming.md).
     - [Setting up quality control](project-qa.md).
+
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Interfaces](https://toloka.ai/knowledgebase/interface/)
+- [{#T}](edit-project.md)
 
 ## Troubleshooting {#troubleshooting}
 

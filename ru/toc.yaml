@@ -330,12 +330,10 @@ items:
                 href: guide/concepts/efficiency-metrics/instruction-quality.md
               - name: Качество интерфейса
                 href: guide/concepts/efficiency-metrics/interface-quality.md
-                hidden: true
               - name: Контрольные задания
                 href: guide/concepts/efficiency-metrics/control-tasks-share.md
               - name: Общение с исполнителями
                 href: guide/concepts/efficiency-metrics/communication.md
-                hidden: true
               - name: Отклоненные задания
                 href: guide/concepts/efficiency-metrics/rejected-tasks.md
               - name: Сбалансированность контрольных заданий
@@ -463,8 +461,6 @@ items:
                 href: https://toloka.ai/en/docs/toloka-kit/
   - name: Решение проблем и поддержка
     items:
-      - name: Получить помощь
-        href: guide/concepts/get-help.md
       - name: Все вопросы на одной странице
         href: guide/troubleshooting/troubleshooting.md
       - name: Регистрация и начало работы

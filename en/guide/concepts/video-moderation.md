@@ -1,1 +1,0 @@
-{% include [tutorials](../tutorials/video-moderation.md) %}

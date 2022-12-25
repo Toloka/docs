@@ -266,7 +266,6 @@ There are two ways to edit the specification in project settings: using either r
 
   {% cut "Text in different formats" %}
 
-
   - String of a certain length
 
       ```json
@@ -277,7 +276,6 @@ There are two ways to edit the specification in project settings: using either r
           "max_length": 100
       }
       ```
-
 
   - Only Latin letters and numbers
       ```json
@@ -290,8 +288,7 @@ There are two ways to edit the specification in project settings: using either r
       }
       ```
 
-
-  - Only Russian letters and numbers
+  - Only Cyrillic letters and numbers
       ```json
       "my_ru_string": {
           "type": "string",
@@ -301,7 +298,6 @@ There are two ways to edit the specification in project settings: using either r
           "pattern": "[а-яА-Я0-9]+"
       }
       ```
-
 
   - Letters and characters without numbers
       ```json
@@ -351,12 +347,9 @@ There are two ways to edit the specification in project settings: using either r
       }
       ```
 
-
   {% endcut %}
 
   {% cut "Link" %}
-
-
 
   ```json
   "my_url": {
@@ -420,7 +413,6 @@ There are two ways to edit the specification in project settings: using either r
       }
       ```
 
-
   {% endcut %}
 
   {% cut "File" %}
@@ -481,7 +473,6 @@ There are two ways to edit the specification in project settings: using either r
 
 {% endlist %}
 
-
 {% cut "Explanations for configuring fields" %}
 
 #|
@@ -504,7 +495,6 @@ There are two ways to edit the specification in project settings: using either r
 - `coordinates`
 
 - `json`
-
 
 For arrays, add the `array_` prefix to the field type in JSON mode. For example: `array_file`.||
 ||**Required**|`required`|Whether the field must be filled when uploading the tasks for the input data.
@@ -556,7 +546,6 @@ The default value is `false`.||
     Let's say you pass product data (like articles or batch numbers) that Tolokers don't need in order to complete the task. Or you are moderating comments and you need the authors' personal data in the results for further data processing, but Tolokers shouldn't have access to personal data.
 
     To create a hidden field, add it to the specification yourself and then add the `"hidden": true` parameter to this field in JSON mode. You should do this in Toloka when configuring your project. The hidden field remains when the specification is re-generated using the Template Builder.
-
 
 ## What's next {#what-next}
 

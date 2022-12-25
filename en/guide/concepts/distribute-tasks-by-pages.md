@@ -124,6 +124,17 @@ If another overlap value is set, control tasks may end during labeling and the p
 
 - If you uploaded tasks in a different way, you can check how they're grouped into suites in the Toloka interface for requesters. To do this, on the pool page, click **files** → **Download all tasks**. You can use the [Toloka API](../../glossary.md#toloka-api) to check task distribution across suites.
 
+## See also {#see-also}
+
+- [{#T}](train.md)
+- [{#T}](task_markup.md)
+- [{#T}](dynamic-overlap.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Task suites](../../api/concepts/task-suite.md)
+- [Toloka-Kit: Creating task suite](../../toloka-kit/reference/toloka.client.TolokaClient.create_task_suite.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How do I specify smart mixing settings in the interface when uploading a file?" %}

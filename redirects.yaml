@@ -5,6 +5,8 @@ common:
     to: /index.md
   - from: /guide/concepts/protect-your-data.md
     to: /guide/concepts/data-security.md
+  - from: /guide/concepts/get-help.md
+    to: /guide/troubleshooting/support.md
   - from: /api/concepts/about.md
     to: /api/index.md
   - from: /toloka-apps/api/ref/app/apps_get.md

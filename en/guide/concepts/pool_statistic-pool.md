@@ -105,8 +105,6 @@ If you think that this number is too large or small, you may have incorrectly co
 
 If you spent more than you planned, check the price settings in the pool and the quality control rules. For example, [Dynamic pricing](dynamic-pricing.md#section_ucl_3hl_vlb) and [Recompletion of assignments from banned users](restore-task-overlap.md) increase the cost of the pool.
 
-Please note that the minimum fee is $0.001.
-
 {% cut "Recommendations" %}
 
 First, check the [quality control rules](control.md), disable the rules that increase overlap, and then revise the price per task suite. You might need to reduce it. but don't make it unreasonably small.

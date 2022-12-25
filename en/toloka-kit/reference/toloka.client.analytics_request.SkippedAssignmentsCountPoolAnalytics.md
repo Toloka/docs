@@ -1,5 +1,5 @@
 # SkippedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.SkippedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/analytics_request.py#L87)
+`toloka.client.analytics_request.SkippedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/analytics_request.py#L87)
 
 ```python
 SkippedAssignmentsCountPoolAnalytics(self, *, subject_id: str)

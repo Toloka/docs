@@ -1,5 +1,5 @@
 # AssignmentsAcceptedCount
-`toloka.client.conditions.AssignmentsAcceptedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L143)
+`toloka.client.conditions.AssignmentsAcceptedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/conditions.py#L143)
 
 ```python
 AssignmentsAcceptedCount(
