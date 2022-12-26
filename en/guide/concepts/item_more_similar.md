@@ -10,9 +10,9 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Choose a template:
 
-    1. Click {% if locale == "en-com" %}**Create project**{% endif %}.
+    1. Click **Create project**.
 
-    1. Select the {% if locale == "en-com" %}**Image comparison (Side-by-side)**{% endif %} template.
+    1. Select the **Image comparison (Side-by-side)** template.
 
 1. Provide general information:
 
@@ -30,7 +30,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     - Template Builder
 
-      1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7feQ){% endif %} for this project with pre-configured validation, keyboard shortcuts, and task layout.
+      1. Use the [ready-made code](https://clck.ru/U7feQ) for this project with pre-configured validation, keyboard shortcuts, and task layout.
 
           The Toloker won't be able to submit the response until they:
 
@@ -51,7 +51,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-          {% if locale == "en-com" %}
+          
 
           ```html
           <div class="header">
@@ -82,7 +82,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           </div>
           ```
 
-          {% endif %}
+          
 
       1. In the **js** block, edit the code by adding the following lines before `OnRender`.
 
@@ -241,7 +241,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. **Instructions:**
 
-        {% if locale == "en-com" %}
+        
 
         ```plaintext
         Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
@@ -249,11 +249,11 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
         they are the same color, fabric, length, and style.
         ```
 
-        {% endif %}
+        
 
     1. Save the changes.
 
-1. To go back to the {% if locale == "en-com" %}**Projects**{% endif %} page, click {% if locale == "en-com" %}**Finish editing**{% endif %}.
+1. To go back to the **Projects** page, click **Finish editing**.
 
 Learn more about working with the project in the [Project](project.md) section.
 
@@ -263,13 +263,15 @@ To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Which shoes look more alike**.
 
-1. Click the **Add pool** button.
+1. Click **Add a pool** on the project page.
 
-1. Specify the **pool name**.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-1. (optional) Add a **Private comment**. This information is available only to you.
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
+1. Click **Create**.
+
+1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
     1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
@@ -287,13 +289,15 @@ To create a [pool](../../glossary.md#pool):
 
     1. Leave the **Absent** field empty.
 
-    Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 
-1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-1. Enter `0.01` in the **Price per task suite** field in the **Price** block.
+    1. In **Price per task suite, $**, set the amount of money to pay per task suite done by one Toloker. For example, `0.01`.
+    
+    1. Enter `10` in the **Overlap** field.
 
-1. In the **Quality control** block, specify quality control settings for the pool:
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
     1. Click **Add a quality control rule**.
 
@@ -305,45 +309,43 @@ To create a [pool](../../glossary.md#pool):
 
     Learn more in [Quality control](control.md).
 
-1. Enter `10` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
+1. At the **Add optional pool settings** step:
 
-1. In the **Additional settings** block:
+    1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-    1. Enter `300` in the **Time per task suite** field.
+        The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
     1. Turn on the **Keep task order** option.
 
-1. Click **Create a pool**.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Prepare and upload a file with tasks {#upload_file}
+    1. Download the file received in the [third project](item_look_similar.md).
 
-1. Download the file received in the [third project](item_look_similar.md).
+    1. Create pairs for each input image so that you can compare the two found images with the original one and decide which one is more similar.
 
-1. Create pairs for each input image so that you can compare the two found images with the original one and decide which one is more similar.
+        You can create pairs manually using a text editor or automatically, like using Python or Jupyter Lab.
 
-    You can create pairs manually using a text editor or automatically, like using Python or Jupyter Lab.
+        As an example, you can use our results [https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb](https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb).
 
-    As an example, you can use our results [https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb](https://tlk.s3.yandex.net/wsdm2020/SbS_Toloka_prep&aggr_data.ipynb).
+    1. Open the **Which item is more similar?** pool.
 
-1. Open the **Which item is more similar?** pool.
+    1. Click **Upload**.
 
-1. Click **Upload**. In the window that opens, configure the file upload settings.
+    1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-1. Choose **Set manually**.
+    1. Click **Continue**.
 
-1. In the **Tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
+    1. Choose **Set manually**.
 
-1. Click **Upload**.
+    1. In the **Tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
 
-1. In the window that opens, choose the file with tasks to upload and click **Open**.
+    1. Click **Combine tasks into suites**.
+
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
 1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
-
-    {% note warning %}
-
-    The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
-
-    {% endnote %}
 
 ## Get the results {#get_results}
 

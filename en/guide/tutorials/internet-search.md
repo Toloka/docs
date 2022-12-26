@@ -144,7 +144,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks.
+    1. In {% if locale == "en-com" %}**Price per task suite, $**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks.
 
     1. {% include [toloka-requester-source-overlap-settings](../_includes/toloka-requester-source/id-toloka-requester-source/overlap-settings.md) %}
 
@@ -153,8 +153,6 @@ Before you begin:
 1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
     This time should be enough to read the instructions, load the task, search information online, and respond (for example, 600 seconds).
-
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
 
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 

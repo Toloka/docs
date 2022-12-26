@@ -26,7 +26,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
       1. Create a template based on the [Checking the selected area](https://clck.ru/sFyNY) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
 
-      1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
+      1. To see the input and output data fields, click **Show specifications** in the **Data specification** section.
 
           Input data fields used in the project:
 
@@ -40,7 +40,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
       1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
-      1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
+      1. Remove the template code from the **Input data** field and enter the following code:
 
           ```json
           {
@@ -62,7 +62,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
           }
           ```
 
-      1. Remove the template code from the {% if locale == "en-com" %}**Output data**{% endif %} field and enter the following code:
+      1. Remove the template code from the **Output data** field and enter the following code:
 
           ```json
           {
@@ -80,12 +80,12 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     - HTML/CSS/JS editor
 
-      1. Prepare {% if locale == "en-com" %}**Task interface**{% endif %}:
+      1. Prepare **Task interface**:
 
           1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../_images/settings.svg) in the **Task interface** block on the project page).
 
           1. In the **html** block, replace the current code with the following:
-              {% if locale == "en-com" %}
+              
 
               ```plaintext
               <!-- editor for selecting objects that lets you add an area in advance -->
@@ -96,11 +96,11 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
               {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
               ```
 
-              {% endif %}
+              
 
           1. In the **css** block, replace the code with the following:
 
-              {% if locale == "en-com" %}
+              
 
               ```css
               /* hide the button for polygon selection */
@@ -114,13 +114,13 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
               }
               ```
 
-             {% endif %}
+             
 
       1. Configure the **Data specification** section:
 
          1. Click ![](../_images/other/code.svg) to switch graphic mode to JSON format.
 
-         1. Remove the template code from the {% if locale == "en-com" %}**Input data**{% endif %} field and enter the following code:
+         1. Remove the template code from the **Input data** field and enter the following code:
 
             ```json
             {
@@ -142,7 +142,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
             }
             ```
 
-         1. Remove the template code from the {% if locale == "en-com" %}**Output data**{% endif %} field and enter the following code:
+         1. Remove the template code from the **Output data** field and enter the following code:
 
             ```json
             {
@@ -158,9 +158,9 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
             }
             ```
 
-           Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
+           Learn more about **Specifications** in [Input and output data](incoming.md).
 
-      1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+      1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
          {% note info %}
 
@@ -186,7 +186,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     **Instructions:**
 
-    {% if locale == "en-com" %}
+    
 
     ```plaintext
     Look at the image and answer the question: **Are all traffic signs outlined correctly?**
@@ -195,7 +195,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
     For example, road signs are outlined correctly, so the correct answer is **Yes**.
     ```
 
-    {% endif %}
+    
 
     {% note tip %}
 
@@ -209,13 +209,15 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 1. Open the project page titled **Are the traffic signs outlined correctly?**.
 
-1. Click the {% if locale == "en-com" %}**Add a pool**{% endif %} button.
+1. Click **Add a pool** on the project page.
 
-1. Specify the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-1. (optional) Add a {% if locale == "en-com" %}**Private comment**{% endif %}. This information is available only to you.
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
+1. Click **Create**.
+
+1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
     1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
@@ -223,29 +225,33 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
-    1. Add another filter. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
+    1. Add another filter. Click **Add filter**.
 
-    1. Find the {% if locale == "en-com" %}**Skills**{% endif %} block in the list and select the {% if locale == "en-com" %}**My skills**{% endif %} skill.
+    1. Find the **Skills** block in the list and select the **My skills** skill.
 
-    1. In the {% if locale == "en-com" %}**Skills**{% endif %} field, select **Area selection**.
+    1. In the **Skills** field, select **Area selection**.
 
     1. In the **?** field specify `=`.
 
-    1. Leave the {% if locale == "en-com" %}**Missing**{% endif %} field blank.
+    1. Leave the **Missing** field blank.
 
-1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 
-1. In the {% if locale == "en-com" %}**Price**{% endif %} block, find the {% if locale == "en-com" %}**Price per task suite**{% endif %} field and specify the price. For example, `0.01`.
+1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-1. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set up [quality control settings](control.md) for the pool:
+    1. In **Price per task suite, $**, set the amount of money to pay per task suite done by one Toloker. For example, `0.01`.
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+    1. Enter `3` in the **Overlap** field.
 
-    1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Majority vote**{% endif %}.
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. In the {% if locale == "en-com" %}**Accept as majority**{% endif %} field, soecify `2`.
+    1. Click **Add a quality control rule**.
 
-    1. Set the rule: if {% if locale == "en-com" %}**number of responses**{% endif %} **≥ 10** and {% if locale == "en-com" %}**correct responses (%)**{% endif %} **< 50**, then {% if locale == "en-com" %}**ban**{% endif %} the Toloker {% if locale == "en-com" %}**on project**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. Specify the reason **Doesn't match the majority**.
+    1. Find the **Rules** block in the list and choose **Majority vote**.
+
+    1. In the **Accept as majority** field, soecify `2`.
+
+    1. Set the rule: if **number of responses** **≥ 10** and **correct responses (%)** **< 50**, then **ban** the Toloker **on project** for **10 days**. Specify the reason **Doesn't match the majority**.
 
         {% note info %}
 
@@ -255,83 +261,75 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     Learn more in [Quality control](control.md).
 
-1. In the {% if locale == "en-com" %}**Task overlap**{% endif %} section, enter `3` in the {% if locale == "en-com" %}**The number of Tolokers to complete each task**{% endif %} field.
+1. At the **Add optional pool settings** step:
 
-1. In the {% if locale == "en-com" %}**Additional settings**{% endif %} block:
+    1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-    1. Enter `600` in the {% if locale == "en-com" %}**Time per task suite**{% endif %} field.
+        The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
-    1. Turn on the {% if locale == "en-com" %}**Keep task order**{% endif %} option.
+    1. Turn on the **Keep task order** option.
 
-1. Click {% if locale == "en-com" %}**Create a pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
+    1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
-## Prepare and upload the results file. {#upload_file}
+        1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 2](image-segmentation-project2.md).
 
-1. Prepare a [file](../../glossary.md#tsv) with tasks.
+        1. Leave the `INPUT:image` column unchanged.
 
-    1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 2](image-segmentation-project2.md).
-    1. Leave the `INPUT:image` column unchanged.
+        1. Change the `OUTPUT:result` column name to `INPUT:selection`.
 
-    1. Change the `OUTPUT:result` column name to `INPUT:selection`.
+        1. Rename the `ASSIGNMENT:assignment_id` column to `INPUT:assignment_id`.
 
-    1. Rename the `ASSIGNMENT:assignment_id` column to `INPUT:assignment_id`.
+        1. Delete the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
 
-    1. Delete the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
-
-    1. Add input data, for example:
-    ```
-    [{""type"":""rectangle"",""data"":{""p1"":{""x"":0.2421,""y"":0.98871},""p2"":{""x"":0.93663,""y"":0.8776}}}]
-    ```
-    and save the file.
-
-    {% note tip %}
-
-    You can prepare the file in {% if locale == "en-com" %}**Notepad**{% endif %}. To transfer data to **Microsoft Excel**, use {% if locale == "en-com" %}**Text Import Wizard**{% endif %} and disable the {% if locale == "en-com" %}**Text qualifier**{% endif %} option.
-
-    {% endnote %}
-
-1. Upload the file to the **Are the traffic signs outlined correctly?** pool:
-
-    1. Open the **Are the traffic signs outlined correctly?** pool.
-
-    1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, configure the file upload settings.
-
-    1. Choose {% if locale == "en-com" %}**Set manually**{% endif %}.
-
-    1. In the {% if locale == "en-com" %}**Tasks per suite**{% endif %} field, specify `10`.
-
-    1. Click {% if locale == "en-com" %}**Upload**{% endif %}.
-
-    1. In the window that opens, choose the tasks file you want to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
-
-    1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
-
-    1. On the pool page, click {% if locale == "en-com" %}**Preview**{% endif %}. Make sure that the task displays images with the selected objects.
+        1. Add input data, for example:
+        ```
+        [{""type"":""rectangle"",""data"":{""p1"":{""x"":0.2421,""y"":0.98871},""p2"":{""x"":0.93663,""y"":0.8776}}}]
+        ```
+        and save the file.
 
         {% note tip %}
 
-        If there are no outlined objects, make sure that quotes are properly used in the **INPUT:selection** column in the file. Make sure that the [interface parameters](#task-interface) are set correctly.
+        You can prepare the file in **Notepad**. To transfer data to **Microsoft Excel**, use **Text Import Wizard** and disable the **Text qualifier** option.
 
         {% endnote %}
 
+    1. Upload the file to the **Are the traffic signs outlined correctly?** pool:
+
+        1. Open the **Are the traffic signs outlined correctly?** pool.
+
+        1. Click **Upload**. 
+
+        1. Click **Drop file here or select**, and upload the file you’ve just made.
+
+        1. Click **Continue**.
+
+        1. Choose **Set manually**.
+
+        1. In the **Tasks per suite** field, specify `10`.
+
+        1. Click **Combine tasks into suites**.
+
+        1. On the pool page, click **Preview**. Make sure that the task displays images with the selected objects.
+
+            {% note tip %}
+
+            If there are no outlined objects, make sure that quotes are properly used in the **INPUT:selection** column in the file. Make sure that the [interface parameters](#task-interface) are set correctly.
+
+            {% endnote %}
+
 1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
-
-    {% note warning %}
-
-    The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
-
-    {% endnote %}
 
 ## Download the reviewed results {#get_results}
 
-1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![Drop-down button](../_images/other/drop-down.svg).
+1. Next to the **Download results** button, click ![Drop-down button](../_images/other/drop-down.svg).
 
-1. Choose {% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %} from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
+1. Choose **Dawid-Skene aggregation model** from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 
-1. In the window that opens, click {% if locale == "en-com" %}**Yes**{% endif %}.
+1. In the window that opens, click **Yes**.
 
-1. At the top of the page, click {% if locale == "en-com" %}**View the list of operations**{% endif %}.
+1. At the top of the page, click **View the list of operations**.
 
     {% note info %}
 
@@ -339,13 +337,13 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     {% endnote %}
 
-1. When the operation is complete, download the results file. To do this, click {% if locale == "en-com" %}**Download**{% endif %} in the {% if locale == "en-com" %}**Files**{% endif %} column.
+1. When the operation is complete, download the results file. To do this, click **Download** in the **Files** column.
 
 1. Use the results file in [project 2](image-segmentation-project2.md).
 
 ## Check the completed tasks {#check_results}
 
-Since the [Non-automatic acceptance](image-segmentation-project2.md) option is enabled in the pool settings for {% if locale == "en-com" %}**project 2**{% endif %}, you should check the Tolokers' responses within the time limit set in the {% if locale == "en-com" %}**Review period**{% endif %} field.
+Since the [Non-automatic acceptance](image-segmentation-project2.md) option is enabled in the pool settings for **project 2**, you should check the Tolokers' responses within the time limit set in the **Review period** field.
 
 You can check the results in two ways:
 
@@ -388,19 +386,19 @@ You can check the results in two ways:
 
     1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-    1. Click {% if locale == "en-com" %}**Review assignments**{% endif %}.
+    1. Click **Review assignments**.
 
-    1. Click {% if locale == "en-com" %}**Upload results**{% endif %}.
+    1. Click **Upload results**.
 
-    1. In the window that opens, choose the results file you want to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
+    1. In the window that opens, choose the results file you want to upload and click **Open**.
 
-    1. In the window that opens, compare the number of tasks in the {% if locale == "en-com" %}**Processed successfully**{% endif %} and {% if locale == "en-com" %}**Total submitted**{% endif %} fields on the pool page.
+    1. In the window that opens, compare the number of tasks in the **Processed successfully** and **Total submitted** fields on the pool page.
 
-    1. Click {% if locale == "en-com" %}**Add**{% endif %}.
+    1. Click **Add**.
 
-    1. In the window that opens, click {% if locale == "en-com" %}**Close**{% endif %}.
+    1. In the window that opens, click **Close**.
 
-    1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the {% if locale == "en-com" %}**Recompletion of the rejected tasks**{% endif %} option.
+    1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the **Recompletion of the rejected tasks** option.
 
         In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
 
@@ -408,11 +406,11 @@ You can check the results in two ways:
 
     1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-    1. Click {% if locale == "en-com" %}**View assignments**{% endif %}.
+    1. Click **View assignments**.
 
     1. Hover over the line of the assignment you want to check.
 
-    1. In the {% if locale == "en-com" %}**Status**{% endif %} column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click {% if locale == "en-com" %}**Done**{% endif %}.
+    1. In the **Status** column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
 
 {% endlist %}
 

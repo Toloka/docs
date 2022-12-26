@@ -10,9 +10,9 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Choose a template:
 
-    1. Click {% if locale == "en-com" %}**Create project**{% endif %}.
+    1. Click **Create project**.
 
-    1. Select the {% if locale == "en-com" %}**Product photo search**{% endif %} template.
+    1. Select the **Product photo search** template.
 
 1. Provide general information:
 
@@ -30,7 +30,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     - Template Builder
 
-      1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fSC){% endif %} for this project with pre-configured validation and task layout.
+      1. Use the [ready-made code](https://clck.ru/U7fSC) for this project with pre-configured validation and task layout.
 
           The Toloker won't be able to submit the response until they:
 
@@ -51,7 +51,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-          {% if locale == "en-com" %}
+          
 
           ```html
           {{img src=image width="50%" height="400px"}}
@@ -67,7 +67,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           </div>
           ```
 
-          {% endif %}
+          
 
       1. To check if the link and image submitted by the Toloker are valid, go to line 5 in the **JS** block and replace the following code:
 
@@ -174,7 +174,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. **Instructions:**
 
-        {% if locale == "en-com" %}
+        
 
         ```plaintext
         Look at what the person is wearing in the picture.
@@ -182,11 +182,11 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
         It should be similar in category, style, color, and length.
         ```
 
-        {% endif %}
+        
 
     1. Save the changes.
 
-1. To go back to the {% if locale == "en-com" %}**Projects**{% endif %} page, click {% if locale == "en-com" %}**Finish editing**{% endif %}.
+1. To go back to the **Projects** page, click **Finish editing**.
 
 
 Learn more about working with the project in the [Project](project.md) section.
@@ -197,13 +197,15 @@ To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Find the same or similar shoes in an online store**.
 
-1. Click the **Add pool** button.
+1. Click **Add a pool** on the project page.
 
-1. Specify the **pool name**.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-1. (optional) Add a **Private comment**. This information is available only to you.
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
+1. Click **Create**.
+
+1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
     1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
@@ -217,11 +219,15 @@ To create a [pool](../../glossary.md#pool):
 
     1. Click the **Add** button.
 
-1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 
-1. Enter `0.01` in the **Price per task suite** field in the **Price** block.
+1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-1. In the **Quality control** block, specify [quality control](../../glossary.md#quality-control) settings for the pool:
+    1. In **Price per task suite, $**, set the amount of money to pay per task suite done by one Toloker. For example, `0.01`.
+
+    1. Enter `3` in the **Overlap** field.
+
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
     1. Turn on the **Non-automatic acceptance** option.
 
@@ -251,43 +257,35 @@ To create a [pool](../../glossary.md#pool):
 
     [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used in this type of project, because links submitted by Tolokers must match, which is practically impossible. Learn more in [Quality control](control.md).
 
-1. Enter `3` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-1. Click **Create a pool**.
+    1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](contain_item.md#get_results).
 
-## Upload tasks {#upload_file}
+    1. Select images that are appropriate for the current project (**OK** or your value if you changed it for the **result** field).
 
-1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](contain_item.md#get_results).
+    1. Copy the column with the selected links to a new sheet or document.
 
-1. Select images that are appropriate for the current project (**OK** or your value if you changed it for the **result** field).
+    1. Name it `INPUT:image`. If you want to set a different name, rename the column in the source file with the results, too.
 
-1. Copy the column with the selected links to a new sheet or document.
+    1. Save the file.
 
-1. Name it `INPUT:image`. If you want to set a different name, rename the column in the source file with the results, too.
+    1. Upload the resulting [file](../../glossary.md#tsv).
 
-1. Save the file.
+        1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-1. Upload the resulting [file](../../glossary.md#tsv).
+        1. Click **Continue**.
 
-    1. Click **Upload**. In the window that opens, configure the file upload settings.
+        1. Choose **Set manually**.
 
-    1. Choose **Set manually**.
+        1. In the **Tasks per suite** field, specify`1`.
 
-    1. In the **Tasks per suite** field, specify`1`.
+        1. Click **Combine tasks into suites**.
 
-    1. Click **Upload**.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-    1. In the window that opens, choose the file with tasks to upload and click **Open**.
-
-    1. In the window that opens, check the number of tasks and click **Add**.
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
 1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
-
-    {% note warning %}
-
-    The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
-
-    {% endnote %}
 
 ## What's next {#what-next}
 
