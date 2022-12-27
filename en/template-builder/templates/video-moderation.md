@@ -6,7 +6,7 @@ This preset helps you match video content to pre-defined categories. For example
 
 Take a look at the example: the labeling interface includes a video player, and several buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TJ73B)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/9XFY_Ggp3s6L45)
 
 {% cut "Components used in the example" %}
 
@@ -14,7 +14,7 @@ Take a look at the example: the labeling interface includes a video player, and 
 
 - [view.video](../reference/view.video.md): Adds a video player.
 
-  Use the [condition.played](../reference/condition.played.md) component inside the `validation` property to check that a Toloker started watching the video.
+  The [condition.played](../reference/condition.played.md) inside the component inside the `validation` property checks that a Toloker started watching the video.
 
   {% cut "Show code" %}
 
@@ -34,29 +34,9 @@ Take a look at the example: the labeling interface includes a video player, and 
 
   {% endcut %}
 
-  If you want to be sure that a Toloker watched the whole video, replace the [condition.played](../reference/condition.played.md) component with [condition.played-fully](../reference/condition.played-fully.md).
-
-    {% cut "Show code" %}
-
-  ```json
-  {
-    "type": "view.video",
-    "validation": {
-      "type": "condition.played-fully",
-      "hint": "you need to watch the video to the end"
-    },
-    "url": {
-      "type": "data.input",
-      "path": "video"
-    }
-  }
-  ```
-
-  {% endcut %}
-
 - [field.button-radio-group](../reference/field.button-radio-group.md): Adds a group of buttons for answer options.
 
-  Use the [condition.required](../reference/condition.required.md) component inside the `validation` property to check if at least one option is selected.
+  The [condition.required](../reference/condition.required.md) component inside the `validation` property checks if at least one option is selected.
 
   {% cut "Show code" %}
 
@@ -66,12 +46,24 @@ Take a look at the example: the labeling interface includes a video player, and 
     "label": "rate the video quality",
     "options": [
       {
-        "label": "Good",
-        "value": "ok"
+        "label": "One",
+        "value": "one"
       },
       {
-        "label": "Bad",
-        "value": "bad"
+        "label": "Two",
+        "value": "two"
+      },
+      {
+        "label": "Three",
+        "value": "three"
+      },
+      {
+        "label": "Four",
+        "value": "four"
+      },
+      {
+        "label": "Five",
+        "value": "five"
       },
       {
         "label": "Failed to load",
@@ -103,7 +95,7 @@ Take a look at the example: the labeling interface includes a video player, and 
         "type": "data.output",
         "path": "result"
       },
-      "payload": "ok"
+      "payload": "one"
     },
     "2": {
       "type": "action.set",
@@ -111,9 +103,33 @@ Take a look at the example: the labeling interface includes a video player, and 
         "type": "data.output",
         "path": "result"
       },
-      "payload": "bad"
+      "payload": "two"
     },
     "3": {
+      "type": "action.set",
+      "data": {
+        "type": "data.output",
+        "path": "result"
+      },
+      "payload": "three"
+    },
+    "4": {
+      "type": "action.set",
+      "data": {
+        "type": "data.output",
+        "path": "result"
+      },
+      "payload": "four"
+    },
+    "5": {
+      "type": "action.set",
+      "data": {
+        "type": "data.output",
+        "path": "result"
+      },
+      "payload": "five"
+    },
+    "6": {
       "type": "action.set",
       "data": {
         "type": "data.output",
@@ -152,6 +168,32 @@ Take a look at the example: the labeling interface includes a video player, and 
 {% endcut %}
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
+
+If this preset doesn't meet your needs, see other examples in this section.
+
+## Check that the video is fully viewed
+
+If you want to be sure that a Toloker watched the whole video, replace the [condition.played](../reference/condition.played.md) component with [condition.played-fully](../reference/condition.played-fully.md).
+
+{% cut "Show code" %}
+
+  ```json
+  {
+    "type": "view.video",
+    "validation": {
+      "type": "condition.played-fully",
+      "hint": "you need to watch the video to the end"
+    },
+    "url": {
+      "type": "data.input",
+      "path": "video"
+    }
+  }
+  ```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/yMGS4ccN3sFD2K)
 
 ## Add a description {#add-description}
 
@@ -253,7 +295,36 @@ Decide whether a Toloker can select only one or multiple answer options.
 
 - Multiple options (checkboxes)
 
-  Add a group of checkboxes using the [field.checkbox-group](../reference/field.checkbox-group.md) component.
+  If there are several possible answers to the question, use the [field.checkbox-group](../reference/field.checkbox-group.md) component.
+
+  {% cut "Show code" %}
+
+  ```json
+  {
+    "type": "field.checkbox-group",
+    "label": "Rate the video quality:",
+    "options": [
+      {
+        "label": "The video is in color",
+        "value": "1"
+      },
+      {
+        "label": "The video is in focus",
+        "value": "2"
+      }
+    ],
+    "validation": {
+      "type": "condition.required",
+      "hint": "Select one or more options"
+    },
+    "data": {
+      "type": "data.output",
+      "path": ""
+    }
+  }
+  ```
+
+  {% endcut %}
 
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6Zo)
 
@@ -263,17 +334,112 @@ Decide whether a Toloker can select only one or multiple answer options.
 
   If there are more answer options, or they are long, it's better to use [field.radio-group](../reference/field.radio-group.md), as in the example.
 
+  {% cut "Show code" %}
+
+  ```json
+  {
+    "type": "field.radio-group",
+    "label": "What's in the video?",
+    "options": [
+      {
+        "label": "The video shows a blue rotating planet",
+        "value": "1"
+      },
+      {
+        "label": "The video shows a blue planet isn't rotating",
+        "value": "2"
+      }
+    ],
+    "validation": {
+      "type": "condition.required",
+      "hint": "Select an answer"
+    },
+    "data": {
+      "type": "data.output",
+      "path": "result1"
+    }
+  },
+  {
+    "type": "field.radio-group",
+    "label": "Video quality",
+    "options": [
+      {
+        "label": "The video looks like real footage",
+        "value": "1"
+      },
+      {
+        "label": "The video was made using computer graphics",
+        "value": "2"
+      }
+    ],
+    "validation": {
+      "type": "condition.required",
+      "hint": "Select an answer"
+    },
+    "data": {
+      "type": "data.output",
+      "path": "result2"
+   }
+  }
+  ```
+
+  {% endcut %}
+
   [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6bm)
 
 {% endlist %}
 
 ## Add clarifying questions to one of the options {#add-addition}
 
-The [helper.switch](../reference/helper.switch.md) component displays an interface element after a specific response is selected. In this example, a Toloker can only select correct statements about the video if it is loaded.
+The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. In this example, a Toloker can only select correct statements about the video if it is loaded.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UC6tt)
+  {% cut "Show code" %}
 
-If this preset doesn't meet your needs, see other examples in this section.
+```json
+  {
+    "type": "helper.if",
+    "condition": {
+      "type": "condition.equals",
+      "data": {
+        "type": "data.output",
+        "path": "result"
+      },
+      "to": "yes"
+    },
+    "then": {
+      "type": "field.checkbox-group",
+      "label": "What's in this video?",
+      "options": [
+        {
+          "label": "Planet Earth",
+          "value": "earth"
+        },
+        {
+          "label": "A planet rotating",
+          "value": "turn"
+        },
+        {
+          "label": "A blue planet",
+          "value": "blue"
+        }
+      ],
+      "data": {
+        "type": "data.output",
+        "path": ""
+      },
+      "validation": {
+        "type": "condition.required",
+        "hint": "Select one or more options"
+      }
+    }
+  }
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/t9VAVeRE3sDafV)
+
+If you need more options, use the [helper.switch](../reference/helper.switch.md) component.
 
 ## Video and search query comparison {#search}
 
@@ -326,7 +492,7 @@ You can display the web page in the built-in window using the [view.iframe](../r
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UC6rN)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/k1vG4h_-3sDepD)
 
 #### Side-by-side video and mobile web page comparison
 
@@ -372,42 +538,85 @@ This is a more complex example that compares the video with the results of a sea
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/OO5Uvqrh3q8hbm)
-
-<!--
-## Compare the video with search results {#compare-results}
-
-You can display a web page in an embedded window using the [view.iframe](../reference/view.iframe.md) component. Place the video next to it using [layout.side-by-side](../reference/layout.side-by-side.md).
-
-In the example, the video is compared to the search results generated by the [helper.search-query](../reference/helper.search-query.md) component.
-
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UC6rN)
-
--->
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9kzoSoqY3sDfid)
 
 ## Compare the video with another type of data {#compare-video-and-other}
 
-Add an image using the [view.image](../reference/view.image.md) component. Place the video next to the image using the [layout.columns](../reference/layout.columns.md) component.
+- Add an image using the [view.image](../reference/view.image.md) component. Place the video next to the image using the [layout.columns](../reference/layout.columns.md) component.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/_jTfyAQN3q8yg9)
+  {% cut "Show code" %}
 
-Place the video next to the text or audio using the [view.list](../reference/view.list.md) component.
+  ```json
+    {
+      "type": "layout.columns",
+      "items": [
+        {
+          "type": "view.video",
+          "url": {
+            "type": "data.input",
+            "path": "video"
+          }
+        },
+        {
+          "type": "view.image",
+          "url": {
+            "type": "data.input",
+            "path": "image"
+          }
+        }
+      ]
+    }
+  ```
 
-{% list tabs %}
+  {% endcut %}
 
-- Compare the video with text
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/_jTfyAQN3q8yg9)
 
-  Add the [view.text](../reference/view.text.md) component.
+- Place the video next to the text or audio using the [view.list](../reference/view.list.md) component.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6jd)
+  {% list tabs %}
 
-- Compare audio tracks
+  - Compare the video with text
 
-  Add the [view.audio](../reference/view.audio.md) component.
+    Add the [view.text](../reference/view.text.md) component.
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/rsKpf6_C3q9MoH)
+    {% cut "Show code" %}
 
-{% endlist %}
+    ```json
+      {
+        "type": "view.text",
+        "label": "Video description:",
+        "content": "The video shows the Earth rotating."
+      }
+    ```
+
+    {% endcut %}
+
+
+    [![](../_images/buttons/view-example.svg)](https://clck.ru/UC6jd)
+
+  - Compare audio tracks
+
+    Add the [view.audio](../reference/view.audio.md) component.
+
+    {% cut "Show code" %}
+
+    ```json
+      {
+        "type": "view.audio",
+        "label": "Audio:",
+        "url": "https://yastat.net/s3/tb/static/file-examples/audio/medium.mp3",
+        "validation": {
+          "type": "condition.played"
+        }
+      }
+    ```
+
+    {% endcut %}
+
+    [![](../_images/buttons/view-example.svg)](https://ya.cc/t/rsKpf6_C3q9MoH)
+
+  {% endlist %}
 
 
 ## See also {#see-also}
