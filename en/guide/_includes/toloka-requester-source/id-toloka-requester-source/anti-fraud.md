@@ -1,0 +1,1 @@
+Toloka has dedicated [anti-fraud system](https://toloka.ai/anti-fraud/) for banning cheaters, but the quality control is shared responsibility of the requester and the platform. The requester is responsible for the quality control of his projects and protection of his data. Projects require individual approach in setting quality controls to ensure best quality of labelled data.
