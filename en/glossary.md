@@ -186,9 +186,9 @@ IRL (incremental labeling) {#irl}
 
 : See [Dynamic overlap](#dynamic-overlap).
 
-Item {#item}
+<!--Item {#item}-->
 
-: Corresponds to the final labeled data unit. It is calculated as the aggregated result of all responses received for a task.
+<!--: Corresponds to the final labeled data unit. It is calculated as the aggregated result of all responses received for a task.-->
 
 ### J
 
