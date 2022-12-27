@@ -46,7 +46,7 @@ To improve quality of answers, you must [select the audience](filters.md) you ne
 
 - Validation by other annotators.
 
-### Anti-Fraud system {#anti-fraud}
+### [Anti-fraud system](https://toloka.ai/anti-fraud/) {#anti-fraud}
 
 - Platform-wide ban for fraudulent Tolokers.
 

@@ -64,6 +64,7 @@ The main reasons for banning:
 1. Providing false data during registration.
 1. Frequently skipping captchas or entering them incorrectly.
 1. Using multiple accounts.
+1. Location cheating.
 
 {% note info %}
 
