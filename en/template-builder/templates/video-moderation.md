@@ -6,7 +6,7 @@ This preset helps you match video content to pre-defined categories. For example
 
 Take a look at the example: the labeling interface includes a video player, and several buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ziSYuQ3E3sTWn9)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/zNWL3tAB3sY8FG)
 
 {% cut "Components used in the example" %}
 
@@ -14,20 +14,23 @@ Take a look at the example: the labeling interface includes a video player, and 
 
 - [view.video](../reference/view.video.md): Adds a video player.
 
-  The [condition.played](../reference/condition.played.md) inside the component inside the `validation` property checks that a Toloker started watching the video.
+  The [condition.played](../reference/condition.played.md) component inside the `validation` property checks that a Toloker started watching the video.
 
   {% cut "Show code" %}
 
   ```json
   {
     "type": "view.video",
-    "validation": {
-      "type": "condition.played",
-      "hint": "you need to start the video player"
-    },
+    "ratio": [
+      1,
+      1
+    ]
     "url": {
       "type": "data.input",
       "path": "video"
+    }
+    "validation": {
+      "type": "condition.played",
     }
   }
   ```
@@ -67,16 +70,31 @@ Take a look at the example: the labeling interface includes a video player, and 
       },
       {
         "label": "Failed to load",
-        "value": "error"
+        "value": "_404"
       }
     ],
-    "validation": {
-      "type": "condition.required",
-      "hint": "choose one of the options"
-    },
     "data": {
       "type": "data.output",
       "path": "result"
+    },
+    "validation": {
+      "type": "condition.required"
+    }
+  }
+  ```
+
+  {% endcut %}
+
+- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+
+  {% cut "Show code" %}
+
+  ```json
+  {
+    "type": "plugin.toloka",
+    "layout": {
+      "kind": "scroll",
+      "taskWidth": 600
     }
   }
   ```
@@ -135,31 +153,9 @@ Take a look at the example: the labeling interface includes a video player, and 
         "type": "data.output",
         "path": "result"
       },
-      "payload": "error"
-    },
-    "q": {
-      "type": "action.play-pause",
-      "view": {
-        "$ref": "view.items.0"
-      }
+      "payload": "_404"
     },
     "type": "plugin.hotkeys"
-  }
-  ```
-
-  {% endcut %}
-
-- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
-
-  {% cut "Show code" %}
-
-  ```json
-  {
-    "type": "plugin.toloka",
-    "layout": {
-      "kind": "scroll",
-      "taskWidth": 800
-    }
   }
   ```
 
@@ -439,7 +435,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/t9VAVeRE3sDafV)
 
-If you need more options, use the [helper.switch](../reference/helper.switch.md) component.
+If you need to check sequentially more than two conditions, use the [helper.switch](../reference/helper.switch.md) component.
 
 ## Video and search query comparison {#search}
 
