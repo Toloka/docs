@@ -16,29 +16,9 @@ In the section contents, select the stage where you encountered the problem and 
 
 ## Registration and getting started {#register-and-start}
 
-{% cut "I can't complete registration as an “individual requester”. I'm not getting an SMS code." %}
+{% include [troubleshooting-no-sms](../_includes/troubleshooting/register-and-start/no-sms.md) %}
 
-1. Check the number you entered. You might have mistyped it.
-
-1. Check the number in Yandex ID. It must be set as your main number. If a different number is specified in Yandex ID, an SMS code will be sent to that number.
-
-You can also use the recommendations in [Yandex ID Help]({{ phone-problems_no-code }}). If this doesn't help, contact [support]({{ passport-support }}).
-
-{% endcut %}
-
-{% cut "The phone number belongs to another user" %}
-
-If you see this warning, make sure you entered the phone number correctly.
-
-Please note that you can only have one requester account per phone number (see the [User Agreement]({{ useragreement }})).
-
-If your [Yandex ID]({{ phones }}) is linked to the wrong number, change it. For more information about linking a phone number, see [Yandex ID Help]({{ authorization-phone }}).
-
-If you don't remember your credentials in Toloka, use [Restoring access]({{ restore }}).
-
-If you deleted your Toloka account, create a new Yandex ID and register in Toloka.
-
-{% endcut %}
+{% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
 
 ## Sandbox {#sandbox}
 
@@ -234,153 +214,33 @@ The progress bar shows the number of task suites including the overlap. If the o
 
 ### Uploading tasks {#concept_iy1_3kh_5mb}
 
-{% cut "Why does the preview display all the photos from the file with tasks at once?" %}
+{% include [troubleshooting-preview-all-photos](../_includes/troubleshooting/adding-tasks-to-the-pool/preview-all-photos.md) %}
 
-You must use a separate row for each task in your file with tasks. For more information, see [here](../concepts/pool_csv.md).
+{% include [troubleshooting-commas-inside-array](../_includes/troubleshooting/adding-tasks-to-the-pool/commas-inside-array.md) %}
 
-When you create a pool, the pool will have settings for the number of tasks per suite.
+{% include [troubleshooting-double-quotas-disappear](../_includes/troubleshooting/adding-tasks-to-the-pool/double-quotas-disappear.md) %}
 
-{% endcut %}
+{% include [troubleshooting-marked-as-training](../_includes/troubleshooting/adding-tasks-to-the-pool/marked-as-training.md) %}
 
-{% cut "The system interprets commas inside my array elements as separators between the array elements. How do I avoid this?" %}
+{% include [troubleshooting-syntax-error](../_includes/troubleshooting/adding-tasks-to-the-pool/syntax-error.md) %}
 
-Escape commas with a backslash (`\`).
+{% include [troubleshooting-photos-split-across-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/photos-split-across-pages.md) %}
 
-{% endcut %}
+{% include [troubleshooting-uploading-tasks-errors](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-tasks-errors.md) %}
 
-{% cut "Why do double quotes disappear from the output if I try to escape them using quotation marks?" %}
-
-If you have one word enclosed in quotes, format the uploaded assignment like this: `"How many letters are there in the word ""Liechtenstein"""`. If you are escaping quotes inside your text, then the entire text must be enclosed in quotes. For more information, see the [Guide](../concepts/pool_csv.md#string).
-
-{% endcut %}
-
-{% cut "Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?" %}
-
-Check the `hint` field. For the general tasks, this field must be empty.
-
-{% endcut %}
-
-{% cut "Why do I see a syntax error when I upload a task where a user has to view an image and write feedback?" %}
-
-The error might occur if the expected input type is URL, but a string is received.
-
-There may be two reasons:
-
-- The input field has the "link" type.
-
-- The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
-
-{% endcut %}
-
-{% cut "I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?" %}
-
-Toloka will split the links to images in the uploaded file into task suites depending on the method you specified when uploading the file. For more information, see the [Guide](../concepts/distribute-tasks-by-pages.md).
-
-{% endcut %}
-
-{% cut "Errors when uploading tasks in the pool" %}
-
-#### Errors in column headers
-
-If the [column headings](../concepts/pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
-
-#### Processing errors tables
-
-```json
-"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**Extra tabs.**
-
-If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
-
-For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
-|#
-
-```json
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**The number of fields in the header and in the row doesn't match.** | Make sure that:
-
-- The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](../concepts/pool_csv.md#string) `" "`.
-|#
-
-```json
-"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
-|#
-
-```json
-"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**Invalid data in a “link” (“url”) field.** | Make sure that:
-
-- Links start with the `http://`, `https://` or `www` prefix.||
-|#
-
-```json
-"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
-```
-
-{% endcut %}
-
-{% cut "The same task appeared on different pages" %}
-
-The same task may appear on different pages if:
-
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
-
-- Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-
-- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
-
-{% endcut %}
+{% include [troubleshooting-same-task-on-different-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/same-task-on-different-pages.md) %}
 
 ### Training-exam-retry {#concept_i2g_kkh_5mb}
 
-{% cut "More Tolokers were trained than the training skill shows" %}
+{% include [troubleshooting-more-tolokers-trained](../_includes/troubleshooting/adding-tasks-to-the-pool/more-tolokers-trained.md) %}
 
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](../concepts/train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banning-tolokers)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
+{% include [troubleshooting-infinite-number.md](../_includes/troubleshooting/adding-tasks-to-the-pool/infinite-number.md) %}
 
-{% endcut %}
-
-{% cut "Why do I have an infinite number of pages in the training pool?" %}
-
-Tasks have infinite overlap in the training pool. As long as the training pool is open and the training is running, users can access the tasks. Learn more about [training pools](../concepts/train.md).
-
-{% endcut %}
-
-{% cut "Why is only Smart Mixing available in Training?" %}
-
-This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the {% if locale == "en-com" %}**Set manually**{% endif %} option in the training, create the main pool, set the pool type as {% if locale == "en-com" %}**Training**{% endif %}, and set the cost to zero.
-
-{% endcut %}
+{% include [faq-distribute-tasks-training](../_includes/faq/adding-tasks-to-the-pool/distribute-tasks-training.md) %}
 
 ### Changing a running pool {#concept_olz_kkh_5mb}
 
-{% cut "I uploaded two files to the training pool. How do I delete one of them?" %}
-
-After uploading, all tasks are put into one list and can't be deleted separately.
-
-- **If the pool hasn't started yet**, delete all tasks. To do this, click **Delete** in the **Pool tasks** block. Then upload one file to the pool.
-
-- **If the pool already started**, delete tasks [one-by-one in markup mode](../concepts/task_markup.md#delete-task).
-
-{% endcut %}
+{% include [faq-delete-one-of-file](../_includes/faq/adding-tasks-to-the-pool/delete-one-of-file.md) %}
 
 ## Working with results {#result-questions}
 

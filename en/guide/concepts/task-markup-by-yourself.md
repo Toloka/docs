@@ -109,16 +109,7 @@ If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overla
 
 {% cut "Errors when uploading tasks in the pool" %}
 
-{% cut "How do I view the processing log?" %}
-
-To view the processing log, click **More on uploading errors**. The processing log is written in JSON format. Objects inside `result` match the line number of the uploaded file. Lines that were processed with an error have the status `"success": false`.
-{% note info %}
-
-To work with a large log conveniently, copy it to the text editor.
-
-{% endnote %}
-
-{% endcut %}
+{% include [faq-processing-log](../_includes/faq/adding-tasks-to-the-pool/processing-log.md) %}
 
 #### Errors in column headers
 
@@ -197,11 +188,7 @@ Assignments are reviewed in a file.
 
 {% endcut %}
 
-{% cut "Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?" %}
-
-Check the `hint` field. For the general tasks, this field must be empty.
-
-{% endcut %}
+{% include [troubleshooting-marked-as-training](../_includes/troubleshooting/adding-tasks-to-the-pool/marked-as-training.md) %}
 
 {% cut "How do I create the task file properly so that there are no errors?" %}
 
@@ -217,17 +204,7 @@ For more information about creating the file, see the [Guide](pool_csv.md). If t
 
 {% endcut %}
 
-{% cut "Why do I see a syntax error when I upload a task where a user has to view an image and write feedback?" %}
-
-The error might occur if the expected input type is URL, but a string is received.
-
-There may be two reasons:
-
-- The input field has the "link" type.
-
-- The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
-
-{% endcut %}
+{% include [troubleshooting-syntax-error](../_includes/troubleshooting/adding-tasks-to-the-pool/syntax-error.md) %}
 
 {% cut "What is the maximum number of tasks per page?" %}
 
@@ -253,33 +230,15 @@ The settings specified during the first file upload are applied to all the files
 Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
 {% endcut %}
 
-{% cut "What is the difference between "task" and "task_suite"?" %}
+{% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
-A task means a separate task. A task suite means a page with tasks. The Toloker gets paid for a task suite.
-
-{% endcut %}
-
-{% cut "The same task appeared on different pages" %}
-
-The same task may appear on different pages if:
-
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
-
-- Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-
-- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
+{% include [troubleshooting-same-task-on-different-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/same-task-on-different-pages.md) %}
 
 {% endcut %}
 
 {% endcut %}
 
-{% endcut %}
-
-{% cut "How many tasks should be in a suite?" %}
-
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
-
-{% endcut %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
 {% cut "How many control tasks do I need to add?" %}
 

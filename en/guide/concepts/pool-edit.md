@@ -272,11 +272,7 @@ Use this parameter to:
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "What is the right time limit for the task completion?" %}
-
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
 {% cut "What overlap should I set?" %}
 
@@ -292,11 +288,7 @@ Yes. Open edit mode for the pool and set a new overlap value. You don't need to 
 
 {% endcut %}
 
-{% cut "How many tasks should be in a suite?" %}
-
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
-
-{% endcut %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
 {% cut "Why has the speed of pool completion dropped?" %}
 
@@ -322,18 +314,8 @@ Possible reasons:
 
 {% endcut %}
 
-{% cut "If I change the time allocated for one task, will this apply to tasks assigned earlier?" %}
+{% include [faq-change-time-for-task](../_includes/faq/adding-tasks-to-the-pool/change-time-for-task.md) %}
 
-If you change the time allocated for a task, the time value will apply to the tasks that have not yet been taken by the Tolokers. The same applies to the case when you close the pool. A Toloker who has an assignment in the active status can complete the assignment.
-
-{% endcut %}
-
-{% cut "How do I edit or delete tasks uploaded to the pool?" %}
-
-If you uploaded tasks to the pool using “smart mixing”, you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
-
-If you uploaded them using a different method, clone your pool and upload the new file with the corrected list of data to be labeled.
-
-{% endcut %}
+{% include [faq-edit-uploaded-tasks](../_includes/faq/adding-tasks-to-the-pool/edit-uploaded-tasks.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

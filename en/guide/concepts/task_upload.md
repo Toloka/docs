@@ -161,23 +161,11 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 
 {% endcut %}
 
-{% cut "Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?" %}
+{% include [troubleshooting-marked-as-training](../_includes/troubleshooting/adding-tasks-to-the-pool/marked-as-training.md) %}
 
-Check the `hint` field. For the general tasks, this field must be empty.
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
-{% endcut %}
-
-{% cut "How many tasks should be in a suite?" %}
-
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
-
-{% endcut %}
-
-{% cut "What is the right time limit for the task completion?" %}
-
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
 {% cut "Why do I see a syntax error when I upload a task where a Toloker has to view an image and write feedback?" %}
 
@@ -209,10 +197,6 @@ Toloka will group the uploaded image links in the file into suites depending on 
 
 {% endcut %}
 
-{% cut "What is the difference between "task" and "task_suite"?" %}
-
-A task means a separate task. A task suite means a page with tasks. The Toloker gets paid for a task suite.
-
-{% endcut %}
+{% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

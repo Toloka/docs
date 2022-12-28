@@ -291,11 +291,7 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 {% cut "Uploading tasks to a pool" %}
 
-{% cut "How many tasks should be in a suite?" %}
-
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
-
-{% endcut %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
 {% cut "Errors when uploading tasks in the pool" %}
 
@@ -388,11 +384,7 @@ Assignments are reviewed in the tasks file.
 
 {% endcut %}
 
-{% cut "Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?" %}
-
-Check the `hint` field. For the general tasks, this field must be empty.
-
-{% endcut %}
+{% include [troubleshooting-marked-as-training](../_includes/troubleshooting/adding-tasks-to-the-pool/marked-as-training.md) %}
 
 {% cut "How do I create the task file properly so that there are no errors?" %}
 
@@ -440,29 +432,11 @@ The settings specified during the first file upload are applied to all the files
 
 {% endcut %}
 
-{% cut "What is the right time limit for the task completion?" %}
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
+{% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
-{% endcut %}
-
-{% cut "What is the difference between "task" and "task_suite"?" %}
-
-A task means a separate task. A task suite means a page with tasks. The Toloker gets paid for a task suite.
-
-{% endcut %}
-
-{% cut "The same task appeared on different pages" %}
-
-The same task may appear on different pages if:
-
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
-
-- Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-
-- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
-
-{% endcut %}
+{% include [troubleshooting-same-task-on-different-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/same-task-on-different-pages.md) %}
 
 {% endcut %}
 
@@ -482,11 +456,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 {% endcut %}
 
-{% cut "Where is my file added if I upload it to the running pool?" %}
-
-If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
-
-{% endcut %}
+{% include [faq-where-is-file-added](../_includes/faq/adding-tasks-to-the-pool/where-is-file-added.md) %}
 
 {% cut "How do I properly structure the file used for data upload if the input includes JSON data?" %}
 
@@ -518,11 +488,7 @@ If you don't want to show some data to Tolokers, but you still need this data in
 
 {% cut "Input data" %}
 
-{% cut "The system interprets commas inside my array elements as separators between the array elements. How do I avoid this?" %}
-
-Escape commas with a backslash (`\`).
-
-{% endcut %}
+{% include [troubleshooting-commas-inside-array](../_includes/troubleshooting/adding-tasks-to-the-pool/commas-inside-array.md) %}
 
 {% cut "How is the data from the "hint" column displayed?" %}
 

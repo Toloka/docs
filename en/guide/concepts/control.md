@@ -268,11 +268,7 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% endcut %}
 
-{% cut "If I upload tasks using smart mixing, does it mean that the same file should contain both the control tasks and general tasks, or can I upload them separately?" %}
-
-Smart mixing is set up when you upload tasks to the pool. After creating a pool, click **Upload** and select the method for generating task suites. You can upload them using separate files or one file, arranging them in any order.
-
-{% endcut %}
+{% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
 {% cut "How are the correct responses to control questions counted?" %}
 

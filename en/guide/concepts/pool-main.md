@@ -215,17 +215,9 @@ Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. Yo
 
 {% endcut %}
 
-{% cut "What is the right time limit for the task completion?" %}
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
-
-{% cut "How many tasks should be in a suite?" %}
-
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
-
-{% endcut %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
 {% cut "Should I create a skill for every pool?" %}
 

@@ -93,11 +93,7 @@ A Toloker who completes two task suites in less than 20 seconds is suspended fro
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "What is the right time limit for the task completion?" %}
-
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
 {% cut "Should I create a skill for every pool?" %}
 

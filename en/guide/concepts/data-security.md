@@ -113,19 +113,7 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% endcut %}
 
-{% cut "The phone number belongs to another user" %}
-
-If you see this warning, make sure you entered the phone number correctly.
-
-Please note that you can only have one requester account per phone number (see the [User Agreement]({{ useragreement }})).
-
-If your [Yandex ID]({{ phones }}) is linked to the wrong number, change it. For more information about linking a phone number, see [Yandex ID Help]({{ authorization-phone }}).
-
-If you don't remember your credentials in Toloka, use [Restoring access]({{ restore }}).
-
-If you deleted your Toloka account, create a new Yandex ID and register in Toloka.
-
-{% endcut %}
+{% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
 
 {% cut "How do I change the phone number in my account?" %}
 
