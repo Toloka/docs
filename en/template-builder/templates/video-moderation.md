@@ -6,7 +6,7 @@ This preset helps you match video content to pre-defined categories. For example
 
 Take a look at the example: the labeling interface includes a video player, and several buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/9XFY_Ggp3s6L45)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ziSYuQ3E3sTWn9)
 
 {% cut "Components used in the example" %}
 
@@ -43,7 +43,7 @@ Take a look at the example: the labeling interface includes a video player, and 
   ```json
   {
     "type": "field.button-radio-group",
-    "label": "rate the video quality",
+    "label": "What number is being shown?",
     "options": [
       {
         "label": "One",
@@ -83,7 +83,7 @@ Take a look at the example: the labeling interface includes a video player, and 
 
   {% endcut %}
 
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): : Adds [keyboard shortcuts](../best-practices/hotkeys.md).
+- [plugin.hotkeys](../reference/plugin.hotkeys.md): Adds [keyboard shortcuts](../best-practices/hotkeys.md).
 
   {% cut "Show code" %}
 
