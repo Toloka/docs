@@ -170,10 +170,6 @@ Input and output data {#input-output-data}
 
   See the Template Builder [Read and write](template-builder/operations/input-output-data.md) instructions to learn about working with data.
 
-Internal data {#internal-data}
-
-: The data available only from within the task. This data is not saved to the results. Use it to calculate or store intermediate values. To access the internal data, use the `data.internal` component of [Template Builder](template-builder/operations/input-output-data.md).
-
 Instructions {#instructions}
 
 : Task instructions that Tolokers see when choosing and completing the task. The clarity and completeness of the instructions affect response quality and the [project](#project) rating. Good instructions help Tolokers complete the task correctly.
@@ -181,6 +177,10 @@ Instructions {#instructions}
 Interested Tolokers {#interested-users}
 
 : The number of Tolokers who started at least one [task suite](#task-suite).
+
+Internal data {#internal-data}
+
+: The data available only from within the task. This data is not saved to the results. Use it to calculate or store intermediate values. To access the internal data, use the `data.internal` component of [Template Builder](template-builder/operations/input-output-data.md).
 
 IRL (incremental labeling) {#irl}
 
