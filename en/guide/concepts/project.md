@@ -87,23 +87,7 @@ To create a project, follow the instructions:
 
 After creating the project, add a [task pool](pool-main.md) to it. You can also set up [quality control](control.md) in the project.
 
-## Project premoderation {#premoderation}
-
-After you press **Start labeling**, your project is sent to moderation. Project status can be seen on the project's page and on the pool's page (right under the project's title).
-
-Statuses:
-
-* **Pending** — **Start pool** button and edit mode are inactive, preview mode is active.
-* **Rejected** — Toloka support notifies you that your project didn't pass and that you need to change it. If you didn't get any notification, press **Contact support**.
-* **Ready for labeling** — your project has been approved, edit mode is avialable again.
-
-You cannot add:
-
-* political surveys;
-* tasks that transmit personal data of Tolokers or third parties;
-* field tasks or data markup from the places where figiting is taking place.
-
-See the complete list of data you cannot add on the [What tasks can't be placed in Toloka?](https://toloka.ai/en/docs/guide/concepts/unwanted) page.
+{% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
 
 ## Cloning a project {#clone}
 
