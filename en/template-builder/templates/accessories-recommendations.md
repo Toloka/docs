@@ -6,7 +6,7 @@ This preset is designed to identify products that go together to train your stor
 
 Take a look at the example: the labeling interface includes two images and several radio buttons. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/6ZDq-hTf3sMhh7)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/02zo1PEd3scPcM)
 
 {% cut "Components used in the example" %}
 
@@ -164,7 +164,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/BQnwqbpF3sYpM4)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eyjfv6xy3scQDR)
 
 ## Add a layout {#add-layout}
 
@@ -212,7 +212,7 @@ In this example, the description is highlighted with a blue border, and the butt
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7ROUbjmL3sMmc6)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/hZdJe0Yk3scQnS)
 
 ## Other options for buttons {#add-variants}
 
@@ -232,19 +232,19 @@ Decide whether a Toloker can select only one or multiple answer options.
     "label": "Select the statements that apply to both products:",
     "options": [
       {
-        "label": "Product category is \"Candy and chocolate\".",
+        "label": "Product category is “Candy and chocolate”.",
         "value": "1"
       },
       {
-        "label": "Type of chocolate is milk.",
+        "label": "The type of chocolate is “Milk”.",
         "value": "2"
       },
       {
-        "label": "Flavor is chocolate and caramel.",
+        "label": "The flavor is “Chocolate and caramel”.",
         "value": "3"
       },
       {
-        "label": "Item form is chocolate bar.",
+        "label": "The form is “Chocolate bar”.",
         "value": "4"
       }
     ],
@@ -261,7 +261,7 @@ Decide whether a Toloker can select only one or multiple answer options.
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VOHFtqTO3sYnLu)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/F5edFPVq3seM9p)
 
 - One option (a radio button)
 
@@ -274,14 +274,14 @@ Decide whether a Toloker can select only one or multiple answer options.
   ```json
   {
     "type": "field.radio-group",
-    "label": "What category do the products belong to?",
+    "label": "Choose the correct statement:",
     "options": [
       {
-        "label": "The products belong to the category \"Candy & Chocolate\".",
+        "label": "The products belong to the category “Candy & Chocolate”.",
         "value": "1"
       },
       {
-        "label": "The products belong to the category \"Ice Creams & Frozen Juices\".",
+        "label": "The products belong to the category “Ice Creams & Frozen Juices”.",
         "value": "2"
       }
     ],
@@ -298,7 +298,7 @@ Decide whether a Toloker can select only one or multiple answer options.
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/LuM_dzVK3sYoQN)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/nvnq7AUA3seNqp)
 
 {% endlist %}
 
@@ -354,7 +354,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/5PJ6iR4J3sYm93)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/jshtGBj63sepQL)
 
 If you need to check sequentially more than two conditions, use the [helper.switch](../reference/helper.switch.md) component.
 
