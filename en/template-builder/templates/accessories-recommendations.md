@@ -315,46 +315,37 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
       "type": "condition.equals",
       "data": {
         "type": "data.output",
-        "path": "result"
+        "path": "loaded"
       },
       "to": "yes"
     },
     "then": {
-      "type": "view.list",
-      "items": [
+      "type": "field.button-radio-group",
+      "options": [
         {
-          "type": "view.text",
-          "label": "Is the second item a good recommendation for the first one?"
+          "label": "Good recommendation",
+          "value": "ok"
         },
         {
-          "type": "field.button-radio-group",
-          "options": [
-            {
-              "label": "Good recommendation",
-              "value": "ok"
-            },
-            {
-              "label": "Bad recommendation",
-              "value": "bad"
-            }
-          ],
-          "data": {
-            "type": "data.output",
-            "path": "result"
-          },
-          "validation": {
-            "type": "condition.required",
-            "hint": "Please choose an option"
-          }
+          "label": "Bad recommendation",
+          "value": "bad"
         }
-      ]
+     ],
+      "data": {
+        "type": "data.output",
+        "path": "result"
+      },
+      "validation": {
+        "type": "condition.required",
+        "hint": "Please choose an option"
+      }
     }
   }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/jshtGBj63sepQL)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/cq-BLmSZ3sjKRp)
 
 If you need to check sequentially more than two conditions, use the [helper.switch](../reference/helper.switch.md) component.
 
