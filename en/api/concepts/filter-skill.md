@@ -39,3 +39,7 @@ Value of "operator":
 - `GTE` — Greater than or equal to.
 - `LTE` — Less than or equal to.||
 |#
+
+## See also {#see-also}
+
+- [More information about filters](../../guide/concepts/filters.md)

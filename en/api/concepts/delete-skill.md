@@ -35,3 +35,7 @@ Parameter | Overview
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/nav-delete.md)

@@ -19,6 +19,7 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 - [Processing rejected and accepted assignments](./reassessment.md)
 - [Recompletion of assignments](./restore-task-overlap.md)
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [More information about quality control rules](../../guide/concepts/check-performers.md)
+- [{#T}](../../guide/concepts/check-performers.md)
+- [{#T}](../../guide/concepts/control.md)

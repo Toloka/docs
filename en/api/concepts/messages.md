@@ -14,6 +14,6 @@ GET | [/message-threads](get-chain-list.md) | Gets the list of message threads.
 POST | [/message-threads/<thread_id>/add-to-folders](move-message.md) | Adds a message thread to a folder.
 POST | [/message-threads/<thread_id>/remove-from-folders](move-message.md) | Deletes a message thread from a folder.
 
-## Learn more {#learn-more}
+## See also {#see-also}
 
-- [Getting and sending messages](../../guide/concepts/messaging.md#private)
+- [More information about messages](../../guide/concepts/messaging.md)
