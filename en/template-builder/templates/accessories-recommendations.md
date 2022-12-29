@@ -2,7 +2,7 @@
 
 For this type of project, you can use the **Accessories recommendations** preset.
 
-This preset is designed to enhance automated recommendations of related products on your website. You can display complementary products to help customers discover new ones and increase your online store sales.
+This preset is designed to identify products that go together to train your store's recommendation system.
 
 Take a look at the example: the labeling interface includes two images and several radio buttons. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
@@ -27,7 +27,7 @@ Take a look at the example: the labeling interface includes two images and sever
 
 - [view.image](../reference/view.image.md): Displays an image.
 
-  Place two images next to each other using the [layout.columns](../reference/layout.columns.md) component.
+  The [layout.columns](../reference/layout.columns.md) component places two images next to each other.
 
   {% cut "Show code" %}
 
@@ -58,12 +58,12 @@ Take a look at the example: the labeling interface includes two images and sever
         }
       }
     ]
-  },
+  }
   ```
 
   {% endcut %}
 
-- [field.button-radio-group](../reference/field.button-radio-group.md): Adds a group of buttons for answer options.
+- [field.button-radio-group](../reference/field.button-radio-group.md): Adds buttons for selecting an answer option.
 
   The [condition.required](../reference/condition.required.md) component inside the `validation` property checks if at least one option is selected.
 
@@ -304,7 +304,7 @@ Decide whether a Toloker can select only one or multiple answer options.
 
 ## Add clarifying questions to one of the options {#add-addition}
 
-The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. In this example, a Toloker can only answer the question about recommendations if both images is loaded.
+The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. In this example, a Toloker can answer the question about recommendation only if both images loaded.
 
   {% cut "Show code" %}
 
