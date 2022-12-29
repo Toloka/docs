@@ -135,7 +135,7 @@ Place a separate task for Tolokers to review the responses. To learn how to do i
 
 {% note tip "How to work via Toloka API" %}
 
-To accept or reject received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the task suite that you want to update:
+To change the status of the received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the task suite assignment that you want to accept or reject:
 
 ```bash
 curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a7842a596ac0a' \
