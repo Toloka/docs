@@ -19,4 +19,4 @@ GET | [/trainings/<training_pool_id>](get-training.md) | Gets the properties of 
 
 ## See also {#see-also}
 
-- [More details about training pools](../../guide/concepts/train.md)
+- [{#T}](../../guide/concepts/train.md)
