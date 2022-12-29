@@ -21,5 +21,5 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 
 ## See also {#see-also}
 
-- [{#T}](../../guide/concepts/check-performers.md)
 - [{#T}](../../guide/concepts/control.md)
+- [How to check Tolokers](../../guide/concepts/check-performers.md)
