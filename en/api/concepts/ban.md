@@ -13,4 +13,4 @@ DELETE | [/user-restrictions/<ban_id>](ban-delete.md) | Removes a ban.
 
 ## See also {#see-also}
 
-- [More information about bans](../../guide/concepts/ban.md)
+- [{#T}](../../guide/concepts/ban.md)

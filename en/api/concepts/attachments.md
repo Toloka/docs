@@ -12,4 +12,4 @@ GET | [/attachments/<file_id>/download](download-attachment.md) | Downloads a fi
 
 ## See also {#see-also}
 
-- [More information about getting responses](../../guide/concepts/result-of-eval.md)
+- [{#T}](../../guide/concepts/result-of-eval.md)

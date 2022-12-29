@@ -250,4 +250,4 @@ Determines whether to re-open a closed pool:
 
 ## See also {#see-also}
 
-- [More information about captcha](../../guide/concepts/captcha.md)
+- [{#T}](../../guide/concepts/captcha.md)

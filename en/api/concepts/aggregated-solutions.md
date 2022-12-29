@@ -25,4 +25,4 @@ GET | [/aggregated-solutions/<operation_id>](get-aggregated-result.md) | Gets ag
 
 ## See also {#see-also}
 
-- [More information about aggregations](../../guide/concepts/result-aggregation.md)
+- [{#T}](../../guide/concepts/result-aggregation.md)

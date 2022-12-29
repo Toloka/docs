@@ -16,4 +16,4 @@ POST | [/message-threads/<thread_id>/remove-from-folders](move-message.md) | Del
 
 ## See also {#see-also}
 
-- [More information about messages](../../guide/concepts/messaging.md)
+- [{#T}](../../guide/concepts/messaging.md)

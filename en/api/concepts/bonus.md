@@ -14,4 +14,4 @@ GET | [/user-bonuses/<bonus_id>](get-one-bonus.md) | Gets the properties of the 
 
 ## See also {#see-also}
 
-- [More information about rewards](../../guide/concepts/bonus.md)
+- [{#T}](../../guide/concepts/bonus.md)

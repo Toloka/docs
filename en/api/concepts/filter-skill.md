@@ -42,4 +42,4 @@ Value of "operator":
 
 ## See also {#see-also}
 
-- [More information about filters](../../guide/concepts/filters.md)
+- [{#T}](../../guide/concepts/filters.md)

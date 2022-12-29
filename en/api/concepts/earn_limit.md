@@ -233,4 +233,4 @@ Comments (the reason for blocking access). Visible only to the requester. ||
 
 ## See also {#see-also}
 
-- [More information about earnings](../../guide/concepts/income.md)
+- [{#T}](../../guide/concepts/income.md)
