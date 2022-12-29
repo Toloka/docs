@@ -1,4 +1,4 @@
-# Reviewing Tolokers' responses 
+# Reviewing Tolokers' responses
 
 You started a pool with [non-automatic acceptance](offline-accept.md), and the Tolokers completed all your tasks. What next?
 
@@ -17,16 +17,6 @@ Note that you can't change the task status if the task pool was [archived](pool-
 ## How do I review the tasks? {#acception}
 
 #### In the interface
-
-{% cut "In the Toloka interface. This option is suitable for a small number of tasks." %}
-
-To accept or reject responses:
-
-If you set [non-automatic acceptance](offline-accept.md) in the pool settings, you need to review the Tolokers' responses within the time limit set in the **Deadline** field. Tolokers may challenge a rejected response by submitting an [appeal](#appeal).
-
-You can review assignments online or upload review results in a file.
-
-{% endcut %}
 
 {% cut "Online review of one task." %}
 

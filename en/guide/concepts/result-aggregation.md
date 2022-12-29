@@ -1,4 +1,4 @@
-# Aggregation of results 
+# Aggregation of results
 
 If tasks were issued with an [overlap](../../glossary.md#overlap) of 2 or higher, run aggregation of results. Toloka will process all Tolokers' responses for the task and issue the resulting response and its confidence level.![](../_images/results/aggregation-scheme.svg)
 
