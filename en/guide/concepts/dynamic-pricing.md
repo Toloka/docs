@@ -46,7 +46,7 @@ To set up dynamic pricing:
 
 {% note info %}
 
-The price is calculated when the task suite is issued to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
+The price is calculated when the task suite is assigned to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
 
 {% endnote %}
 

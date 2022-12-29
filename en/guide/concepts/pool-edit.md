@@ -58,7 +58,7 @@ Calculated automatically.
 
 #### Adult content
 
-Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only issued to Tolokers who have agreed to complete these types of tasks.
+Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only assigned to Tolokers who have agreed to complete these types of tasks.
 
 If you aren't sure whether the tasks have this kind of content, select the {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} option.
 
@@ -242,7 +242,7 @@ Use this parameter to:
 
 - Speed up collection of responses for [majority vote](mvote.md) check.
 
-- Issue tasks by priority.
+- Assign tasks by priority.
 
     Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
 
