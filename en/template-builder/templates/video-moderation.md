@@ -2,7 +2,7 @@
 
 For this type of project, you can use the **Hand gesture classification** preset.
 
-This preset helps you match video content to pre-defined categories. For example, you can use it for moderation of content, evaluation of video for noise and defects, or labeling videos to train computer vision.
+This preset helps you classify video content by specified categories. You can use it for content rating and moderation, detecting noise and other imperfections in the video, or training computer vision.
 
 Take a look at the example: the labeling interface includes a video player, and several buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
@@ -37,7 +37,7 @@ Take a look at the example: the labeling interface includes a video player, and 
 
   {% endcut %}
 
-- [field.button-radio-group](../reference/field.button-radio-group.md): Adds a group of buttons for answer options.
+- [field.button-radio-group](../reference/field.button-radio-group.md): Adds buttons for selecting an answer option.
 
   The [condition.required](../reference/condition.required.md) component inside the `validation` property checks if at least one option is selected.
 
