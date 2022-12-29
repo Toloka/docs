@@ -8,6 +8,8 @@ If you run the [pool](../../glossary.md#pool) with the assignment review, make s
 
 {% endnote %}
 
+#### In the interface
+
 1. Open the [pool](pool-main.md).
 
 1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the {% if locale == "en-com" %}**Download results**{% endif %} button.
@@ -32,6 +34,21 @@ To receive notifications and emails when results aggregation is completed, set u
     - Messages: Notifications will be displayed under **Messages** in your account. Apart from you, those who set up [shared access](multiple-access.md) to your account can see them.
 
     - Browser: Notifications will be sent to the devices that you logged in to your account from.
+
+{% note tip "How to work via Toloka API" %}
+
+To aggregate responses to all completed tasks in the pool using Toloka API, send a `POST` request with the parameters of aggregation:
+
+```bash
+curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"pool_id":"1238218", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"91dbfd8f1bc3310fbbbd09f64b8ab6e5", "fields":[{"name":"result"}]}'
+```
+
+Refer to the [Aggregate responses in pool](https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
 
 ## Dawid-Skene aggregation model {#dawid-skene}
 
