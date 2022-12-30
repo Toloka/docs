@@ -345,7 +345,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/cq-BLmSZ3sjKRp)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/iWh2lB3X3sktQY)
 
 If you need to check sequentially more than two conditions, use the [helper.switch](../reference/helper.switch.md) component.
 
