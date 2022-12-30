@@ -281,7 +281,7 @@ new_pool.defaults = toloka.pool.Pool.Defaults(
 
 A [task suite](../guide/concepts/overview.md#tasks-page) is a set of tasks that are shown on a single page.
 
-An important part of configuring pools is to decide how many tasks will be issued to a Toloker at once. For example, if you set 3 tasks for a task suite, a Toloker will see three images at once on one page.
+An important part of configuring pools is to decide how many tasks will be assigned to a Toloker at once. For example, if you set 3 tasks for a task suite, a Toloker will see three images at once on one page.
 
 {% note info %}
 
