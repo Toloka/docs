@@ -92,6 +92,21 @@ The Toloker will see rewards for completed tasks, activity and quality of work i
 
 You can track money deducted for extra rewards in your [profile]({{ profile }}) on the {% if locale == "en-com" %}**Spent**{% endif %} tab.
 
+{% note tip "How to work via Toloka API" %}
+
+To issue rewards using Toloka API, send a `POST` request with the information about the rewards:
+
+```bash
+curl -X POST 'https://toloka.dev/api/v1/user-bonuses' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"user_id":"fac97860c7929add8048ed2ef63b66fd", "amount":0.5, "public_title":{"EN":"Perfect job!"}, "public_message":{"EN":"You are the best!"}}'
+```
+
+Refer to the [Issue rewards](https://toloka.ai/docs/api/api-reference/#post-/user-bonuses) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
+
 ## See also {#see-also}
 
 - [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
