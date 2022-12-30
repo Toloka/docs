@@ -6,7 +6,7 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 ![](../_images/location-job/adjust_percentage.png)
 
-You can select Tolokers for your task based on a personalized quality forecast.
+You can select Tolokers for your task based on a [personalized quality forecast](../../glossary.md#personilized-quality-forecast).
 
 ## How does it work? {#how-it-works}
 
@@ -14,7 +14,7 @@ A personalized quality forecast is based on a large amount of data about user be
 
 ## Improve the quality of results {#concept_cgm_vzq_xlb}
 
-You can select only the best Tolokers using one of the filters in the [personalized quality forecast](../../glossary.md#personilized-quality-forecast):
+You can select only the best Tolokers using one of the filters in the personalized quality forecast:
 
 - {% if locale == "en-com" %}**TOP %**{% endif %} — Allows you to set the percentage of the best Tolokers who will have access to your task.
 
@@ -53,7 +53,7 @@ You can select only the best Tolokers using one of the filters in the [personali
 
 Possible reasons:
 
-- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
+- You've stopped the [training pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
 
 - The filters you set are too strict. For example, a strong restriction on a certain skill that most users don't have.
 

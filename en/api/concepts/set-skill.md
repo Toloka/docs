@@ -106,3 +106,8 @@ The date and time in UTC when the Toloker was first assigned the skill with the 
 
 The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/nav-assign.md)
+- [{#T}](../../guide/concepts/nav-edit.md)

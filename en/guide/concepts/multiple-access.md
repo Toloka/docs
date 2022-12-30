@@ -38,7 +38,7 @@ You can give other users access to your account:
 
   1. Open the [Profile]({{ profile }}) page.
 
-  1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Add teammate**{% endif %}.
+  1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Add user**{% endif %}.
 
   1. Enter the case-sensitive [Yandex ID]({{ yandex-id }}).
 

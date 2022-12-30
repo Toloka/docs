@@ -10,6 +10,6 @@ GET | [/attachments](get-attachment-list.md) | Gets the list of files saved in T
 GET | [/attachments/<file_id>](get-attachment.md) | Gets the properties of a file attached to a task response.
 GET | [/attachments/<file_id>/download](download-attachment.md) | Downloads a file attached to a task response.
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [More information about attached files](../../guide/concepts/advanced-features-attach.md)
+- [{#T}](../../guide/concepts/result-of-eval.md)
