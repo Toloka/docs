@@ -7,21 +7,31 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
 1. Open the project.
 1. Click **Create batch**.
 1. Enter a unique name for the batch.
-1. Add task items in one of the following ways:
+1. On the batch page, download the template in a supported format: XLSX, TSV, CSV, JSON.
+1. In the template, replace the data with your own.
+1. Upload using one of the methods:
 
-    - Upload a ready-made TSV file.
-    - Enter the data in text format.
+    - Select the finished file.
+    - Copy and paste data from the file.
+    - API.
 
 1. Click **Create batch**.
+
+Your batches are completed in order of labeling queue. If you batches with same queue, first will be labeled the smallest one (Queue 5). To complete the batch faster, select a higher queue from the drop-down menu.
 
 ## Adding items to an existing batch {#edit}
 
 1. Open the project and go to the appropriate batch.
 1. Click **Add items** on the right.
-1. Add task items in one of the following ways:
+1. On the batch page, download the template in a supported format: XLSX, TSV, CSV, JSON.
+1. In the template, replace the data with your own.
+1. Upload using one of the methods:
 
-    - Upload a ready-made TSV file.
-    - Enter the data in text format.
+    - Select the finished file.
+    - Copy and paste data from the file.
+    - API.
+    
+Your batches are completed in order of labeling queue. If you batches with same queue, first will be labeled the smallest one (Queue 5). To complete the batch faster, select a higher queue from the drop-down menu.
 
 ## Renaming an existing batch {#rename}
 
