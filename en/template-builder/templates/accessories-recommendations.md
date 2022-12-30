@@ -95,7 +95,7 @@ Take a look at the example: the labeling interface includes two images and sever
 
   {% endcut %}
 
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): : Adds [keyboard shortcuts](../best-practices/hotkeys.md).
+- [plugin.hotkeys](../reference/plugin.hotkeys.md): Adds [keyboard shortcuts](../best-practices/hotkeys.md).
 
   {% cut "Show code" %}
 
