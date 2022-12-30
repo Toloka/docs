@@ -5,33 +5,44 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
 ## Creating a new batch {#new-batch}
 
 1. Open the project.
+
 1. Click **Create batch**.
+
 1. Enter a unique name for the batch.
-1. On the batch page, download the template in a supported format: XLSX, TSV, CSV, JSON.
-1. In the template, replace the data with your own.
-1. Upload using one of the methods:
 
-    - Select the finished file.
-    - Copy and paste data from the file.
-    - API.
+1. {% include [toloka-apps-queue](../_includes/queue.md) %}
+
+1. {% include [toloka-apps-template](../_includes/template.md) %}
+
+1. {% include [toloka-apps-upload-data](../_includes/upload-data.md) %}
+
+    - Under the **From a file** tab, attach your file with tasks.
+    
+    - Under the **Copy and paste from the file** tab, copy and paste data from your file with tasks.
+    
+    - Click **Via API** to use the [API](../api/concepts/index.md).
 
 1. Click **Create batch**.
-
-Your batches are completed in order of labeling queue. If you batches with same queue, first will be labeled the smallest one (Queue 5). To complete the batch faster, select a higher queue from the drop-down menu.
 
 ## Adding items to an existing batch {#edit}
 
 1. Open the project and go to the appropriate batch.
-1. Click **Add items** on the right.
-1. On the batch page, download the template in a supported format: XLSX, TSV, CSV, JSON.
-1. In the template, replace the data with your own.
-1. Upload using one of the methods:
 
-    - Select the finished file.
-    - Copy and paste data from the file.
-    - API.
+1. Click **Add items** on the right.
+
+1. {% include [toloka-apps-queue](../_includes/queue.md) %}
+
+1. {% include [toloka-apps-template](../_includes/template.md) %}
+
+1. {% include [toloka-apps-upload-data](../_includes/upload-data.md) %}
+
+    - Under the **From a file** tab, attach your file with tasks.
     
-Your batches are completed in order of labeling queue. If you batches with same queue, first will be labeled the smallest one (Queue 5). To complete the batch faster, select a higher queue from the drop-down menu.
+    - Under the **Copy and paste from the file** tab, copy and paste data from your file with tasks.
+    
+    - Click **Via API** to use the [API](../api/concepts/index.md).
+
+1. Click **Upload**.
 
 ## Renaming an existing batch {#rename}
 

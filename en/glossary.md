@@ -70,6 +70,10 @@ Crowdsourcing experts {#crowdsourcing-experts}
 
 : Professionals who help create and configure [projects](#project), post tasks, and much more. They have passed a [certification exam](https://toloka.ai/csa-certification/) to prove their knowledge of crowdsourcing and earned a registered e-certificate.
 
+CSV {#csv-format}
+
+: Comma-separated values. A text file format in which data is separated by the comma, and lines are separated by a newline symbol.
+
 ### D
 
 Data entry field components (Template Builder) {#data-entry-field}
