@@ -57,6 +57,8 @@ If the issue is related to how the platform works in general (such as money with
 
 ## How to write a message
 
+#### In the interface
+
 1. [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
 
 1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click {% if locale == "ru-ru" %}**Contact** → **Group of Tolokers** → **+ Add filter**{% elsif locale == "en-com" %}**Contact** → **Group of Tolokers** → **+ Add filter**{% endif %}.
@@ -68,6 +70,21 @@ If the issue is related to how the platform works in general (such as money with
 1. Select {% if locale == "ru-ru" %}**Allows replies**{% elsif locale == "en-com" %}**Allows replies**{% endif %}.
 
 1. Click {% if locale == "ru-ru" %}**Submit**{% elsif locale == "en-com" %}**Submit**{% endif %}.
+
+{% note tip "How to work via Toloka API" %}
+
+To send a message using Toloka API, send a `POST` request with the information about the message and the recipients:
+
+```bash
+curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
+```
+
+Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
 
 ## Recommendations
 
