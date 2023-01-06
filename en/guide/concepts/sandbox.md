@@ -82,11 +82,7 @@ Create and run a task. It will appear in the list of tasks for your trusted user
 
 {% endcut %}
 
-{% cut "How do I see my pool through the eyes of a Toloker?" %}
-
-To test your task, add yourself as a trusted Toloker in the Sandbox. To do this, on the **Tolokers** page, click **Add trusted users**. Enter the username for the Toloker's account (case-sensitive).
-
-{% endcut %}
+{% include [faq-see-pool-as-toloker](../_includes/faq/sandbox/see-pool-as-toloker.md) %}
 
 {% cut "Is it possible to use the same account for the Sandbox and the public Toloka version?" %}
 
@@ -116,25 +112,11 @@ To do this, you will need a Sandbox version of the Toloka app. [Write to support
 
 {% endcut %}
 
-{% cut "Will a copy of the project exported from the Sandbox be updated in the main version if I edit the original?" %}
+{% include [faq-copy-from-sandbox](../_includes/faq/sandbox/copy-from-sandbox.md) %}
 
-You won't be able to update a previously exported project. If you clone a project from the sandbox again, its current copy is added. The old project doesn't change.
+{% include [troubleshooting-submit](../_includes/troubleshooting/sandbox/submit.md) %}
 
-{% endcut %}
-
-{% cut "Why isn't anything happening when a test Toloker clicks **Submit** in the sandbox?" %}
-
-Use your requester account to preview the pool and check whether it's possible to submit a task. If this fails, most likely there is an error in your project.
-
-{% endcut %}
-
-{% cut "How do I move control tasks from the Sandbox to the main pool?" %}
-
-The tasks themselves are not exported, only the project configuration and the settings of the selected pool. You can download the completed tasks from the pool in the Sandbox and import them to the exported pool.
-
-To download only the control tasks (if you completed them in the interface), go to **Mark up**, then click **Control tasks** and **Download**.
-
-{% endcut %}
+{% include [faq-move-control-tasks](../_includes/faq/sandbox/move-control-tasks.md) %}
 
 {% cut "Why don't I see my task in the Sandbox?" %}
 
@@ -152,15 +134,7 @@ Make sure that:
 
 {% endcut %}
 
-{% cut "I can't add a trusted user." %}
-
-Possible reasons:
-
-- The Toloker isn't registered in the sandbox. The account you registered in the Toloka production version won't work. Make sure you have specified the correct _Toloker's_ account as a trusted one.
-
-- The Toloker's account is authorized via social networks.[Register]({{ register }}) a new user in Yandex.
-
-{% endcut %}
+{% include [troubleshooting-cant-add-trusted-user](../_includes/troubleshooting/sandbox/cant-add-trusted-user.md) %}
 
 {% cut "What overlap should I set?" %}
 
