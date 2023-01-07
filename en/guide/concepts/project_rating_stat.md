@@ -15,17 +15,9 @@ The project rating is available to Tolokers. By default, the list of tasks is so
 
 The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
 
-{% cut "Low rating for “Will you take similar tasks in the future”" %}
+{% include [troubleshooting-low-rating-similar-tasks](../_includes/troubleshooting/result-questions/low-rating-similar-tasks.md) %}
 
-Perhaps the Tolokers found your tasks too difficult. Try to simplify them.
-
-{% endcut %}
-
-{% cut "Low rating for “Clarity of instructions”" %}
-
-Shorten instructions and rewrite using simpler language. Add pictures and examples.
-
-{% endcut %}
+{% include [troubleshooting-low-rating-instructions](../_includes/troubleshooting/result-questions/low-rating-instructions.md) %}
 
 {% cut "Low rating for “Task interface usability”" %}
 

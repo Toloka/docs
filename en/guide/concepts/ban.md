@@ -98,11 +98,7 @@ No. After sending a task, the Toloker can't make any changes to it. You can add 
 
 {% endcut %}
 
-{% cut "Can I fix something in a completed task myself?" %}
-
-No, you can't fix anything in the task itself. However, you can do this manually in the results file.
-
-{% endcut %}
+{% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
 {% cut "Fraudulent Tolokers submit assignments with empty response fields. Are they going to be banned before the responses of other Tolokers are known?" %}
 

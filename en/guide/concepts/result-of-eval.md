@@ -77,17 +77,9 @@ No. After sending a task, the Toloker can't make any changes to it. You can add 
 
 {% endcut %}
 
-{% cut "Can I fix something in a completed task myself?" %}
+{% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
-No, you can't fix anything in the task itself. However, you can do this manually in the results file.
-
-{% endcut %}
-
-{% cut "How do I send an assignment back to the Toloker for revision?" %}
-
-You can only accept or reject an assignment.
-
-{% endcut %}
+{% include [faq-send-back](../_includes/faq/result-questions/send-back.md) %}
 
 {% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
 
@@ -101,19 +93,9 @@ Simply [give the Toloker a separate reward](bonus.md) without changing the task 
 
 {% endcut %}
 
-{% cut "What should I do if I rejected a task for a reason that isn't specified in the instructions?" %}
+{% include [troubleshooting-rejected-task](../_includes/troubleshooting/result-questions/rejected-task.md) %}
 
-Accept the task and update the instructions. Otherwise, you violate the [**Requester Agreement**]({{ customeragreement }}) that requires to clearly state the task requirements and the results expected from the Toloker.
-
-{% endcut %}
-
-{% cut "Can I reject part of the responses on the page and accept part of them?" %}
-
-No. For example, there are 10 tasks in a suite that costs $0.10, and the Toloker did 2 of them incorrectly.
-
-You can't accept the correct answers and pay for this part ($0.08). Response pages are accepted or rejected in their entirety.
-
-{% endcut %}
+{% include [faq-reject-part](../_includes/faq/result-questions/reject-part.md) %}
 
 {% cut "How can I notify the Toloker of changes in the instructions?" %}
 
@@ -127,23 +109,11 @@ Add the notification to the project description (for example: “Attention! The 
 
 {% endcut %}
 
-{% cut "How can I increase the project's rating?" %}
+{% include [faq-increase-rating](../_includes/faq/result-questions/increase-rating.md) %}
 
-The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
+{% include [troubleshooting-low-rating-similar-tasks](../_includes/troubleshooting/result-questions/low-rating-similar-tasks.md) %}
 
-{% endcut %}
-
-{% cut "Low rating for “Will you take similar tasks in the future”" %}
-
-Perhaps the Tolokers found your tasks too difficult. Try to simplify them.
-
-{% endcut %}
-
-{% cut "Low rating for “Clarity of instructions”" %}
-
-Shorten instructions and rewrite using simpler language. Add pictures and examples.
-
-{% endcut %}
+{% include [troubleshooting-low-rating-instructions](../_includes/troubleshooting/result-questions/low-rating-instructions.md) %}
 
 {% cut "Low rating for “Task interface usability”" %}
 
@@ -167,11 +137,7 @@ When you upload a file with rows, double quotes indicate an area where you can u
 
 {% endcut %}
 
-{% cut "What is the result of processing an empty text field?" %}
-
-If a Toloker typed some text and then deleted it, the result is `null`, otherwise, it's `undefined`.
-
-{% endcut %}
+{% include [faq-empty-text-field](../_includes/faq/result-questions/empty-text-field.md) %}
 
 {% cut "The results include the responses of users who I banned" %}
 
@@ -179,10 +145,6 @@ The results show the responses of all users, including those who are banned. To 
 
 {% endcut %}
 
-{% cut "Can I get the exact start and end time from the Toloker with the results of the task?" %}
-
-When you download the results file, select the **Start time** and **Submit time** checkboxes. The downloaded file will include the exact UTC date and time when the Toloker accepted the assignment and submitted it.
-
-{% endcut %}
+{% include [faq-get-time](../_includes/faq/result-questions/get-time.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

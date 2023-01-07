@@ -48,11 +48,7 @@ To view your expenses that involve rewards, go to your [profile]({{ profile }}) 
 
 ## Cheaters {#cheaters}
 
-{% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
-
-You can deny access to the pool if the Toloker's responses are [too fast](../concepts/quick-answers.md), if they don't match the [majority vote](../concepts/mvote.md), or if the Toloker makes too many mistakes in [control tasks](../concepts/goldenset.md). Tasks completed by such Tolokers can be [given to other Tolokers](../concepts/restore-task-overlap.md).
-
-{% endcut %}
+{% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
 
 {% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
 
@@ -60,11 +56,7 @@ No. After sending a task, the Toloker can't make any changes to it. You can add 
 
 {% endcut %}
 
-{% cut "Can I fix something in a completed task myself?" %}
-
-No, you can't fix anything in the task itself. However, you can do this manually in the results file.
-
-{% endcut %}
+{% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
 {% cut "Fraudulent Tolokers submit assignments with empty response fields. Are they going to be banned before the responses of other Tolokers are known?" %}
 

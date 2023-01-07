@@ -200,11 +200,7 @@ No. After sending a task, the Toloker can't make any changes to it. You can add 
 
 {% endcut %}
 
-{% cut "Can I fix something in a completed task myself?" %}
-
-No, you can't fix anything in the task itself. However, you can do this manually in the results file.
-
-{% endcut %}
+{% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
 {% cut "What should I do if I want to accept a completed task but the pool is already archived or the Toloker wrote to me after the allowed time?" %}
 

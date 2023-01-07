@@ -290,11 +290,7 @@ Aggregation only includes accepted tasks.
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "What is the difference between the confidence in the aggregated response in the Dawid-Skene aggregation model and the confidence in aggregation by skill?" %}
-
-In the way it's calculated. In both aggregations, confidence means the same thing.
-
-{% endcut %}
+{% include [faq-confidence-difference](../_includes/faq/result-questions/confidence-difference.md) %}
 
 {% cut "How does the Dawid-Skene aggregation model work?" %}
 
@@ -302,23 +298,11 @@ The Dawid-Skene aggregation model analyzes the Toloker responses and creates a c
 
 {% endcut %}
 
-{% cut "Why does the Dawid-Skene aggregation model return a result that the Tolokers didn't select?" %}
+{% include [troubleshooting-dawid-skene-result](../_includes/troubleshooting/result-questions/dawid-skene-result.md) %}
 
-The method doesn't guarantee that original Toloker responses will be used for aggregation. The algorithm takes into account Tolokers' quality parameters and response patterns. Consequently, it can return a result that's different from the Tolokers' responses to this task.
+{% include [faq-aggregation-progress](../_includes/faq/result-questions/aggregation-progress.md) %}
 
-{% endcut %}
-
-{% cut "Where do I see the aggregation progress?" %}
-
-The pool page contains the {% if locale == "en-com" %}**List of Operations**{% endif %} button.
-
-{% endcut %}
-
-{% cut "Why might aggregation by Toloker skill be unavailable?" %}
-
-You cannot aggregate by project fields that have no valid values. Specify the possible values for all the fields of all types.
-
-{% endcut %}
+{% include [troubleshooting-skill-unavailable](../_includes/troubleshooting/result-questions/skill-unavailable.md) %}
 
 {% cut "You can't aggregate by skill. When running via the API, I get the error code `ONLY_FOR_POOL_WITH_MIXER`. Why?" %}
 
