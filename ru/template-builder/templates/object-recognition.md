@@ -8,7 +8,7 @@
 
 Посмотрите пример — интерфейс разметки включает изображение с ограничивающими рамками, полигонами или ключевыми точками. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Bv2ocvkf3Vbvhr)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ajl1SJ1d3ttCsE)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -125,7 +125,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/hrSYz9hX3VorDF)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/J3wI38wh3ttCtn)
 
 ## Добавить поле для ввода ответа {#add-text-area}
 
@@ -147,7 +147,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/izf2rY-d3VoZgc)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/PWIhgNqi3ttCvX)
 
 ## Добавить оформление {#add-layout}
 
@@ -170,6 +170,6 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eLCcS7Tz3VvzPT)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/CD_JTa4r3ttCx9)
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

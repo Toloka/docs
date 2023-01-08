@@ -6,7 +6,7 @@
 
 Посмотрите пример — он состоит из двух аудио и кнопок выбора ответа. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/8yWU6Tq-3TYPx8)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/V14Zje0m3ttD3C)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -163,7 +163,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Op9Pu3r_3TYSNY)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/xaSehV5e3ttD4D)
 
 - Пригодится для коротких аудио — поставьте их на повтор, добавив в свойства компонента [view.audio](../reference/view.audio.md) `loop: true`.
 
@@ -187,7 +187,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/cHq9Xtli3TYTic)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/aL05xvSn3ttD5U)
 
 - Добавьте [горячие клавиши](../best-practices/hotkeys.md) с помощью плагина [plugin.hotkeys](../reference/plugin.hotkeys.md) для воспроизведения или остановки аудиозаписи.
 
@@ -213,7 +213,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/cQixkxxh3TYX5u)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ehmAXiGf3ttD79)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
 
@@ -240,13 +240,13 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/aBZZXCvm3TYZCw)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/yit42ss13ttD8V)
 
 ## Расположить друг под другом {#top-bottom}
 
 Аудио можно расположить друг под другом. Этот интерфейс лучше подойдет для сравнения более двух аудиозаписей.
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/eqx3jrHj3TYaTy)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/9HX4RtLe3ttDA5)
 
 ## Добавить исходный текст {#add-original-text}
 
@@ -264,7 +264,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/m1b1YPvB3TYbYi)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Gl-0Kp3R3ttDBT)
 
 ## Добавить оформление {#add-color}
 
@@ -302,6 +302,6 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/PinrwG2E3TYcTx)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/SvLzFXWw3ttDCc)
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

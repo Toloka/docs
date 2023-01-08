@@ -4,7 +4,7 @@
 
 В Толоке есть пресет **Генерация описаний товаров**. В нем уже настроена валидация и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TJ6on)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7SCzx9k63tw4cY)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -21,15 +21,15 @@
 
 - Чтобы задать необходимую длину текста, вместо [condition.required](../reference/condition.required.md) используйте компонент [condition.schema](../reference/condition.schema.md). Он не даст отправить ответ, если введенный текст будет короче или длиннее, чем вы указали.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2fm)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/HGHvwtRr3tw4sJ)
 
 - Для ввода короткого текста в одну строку вместо [field.textarea](../reference/field.textarea.md) удобно использовать [field.text](../reference/field.text.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2gi)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/DGBPjUr13tw52u)
 
 - Если для выполнения задания нужно что-то найти в интернете, добавьте компонент [helper.search-query](../reference/helper.search-query.md). Поисковый запрос можно составить из слов, взятых из входных данных.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2h9)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ctYj5ab_3tw5GV)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
 
@@ -38,7 +38,7 @@
 
 Упрощенный пример без картинки и без разделения компонентов по столбцам. Подойдет для заданий, в которых не нужно визуальное отображение, например, для переводов.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2pc)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Aiq4OXqx3tw5U3)
 
 ## Несколько столбцов {#several-columns}
 
@@ -48,7 +48,7 @@
 
 Третий столбец в примере содержит два поля для ввода, куда исполнитель может написать свой текст.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2uX)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/neLHjXL03tw5b7)
 
 ## Показать скрытое поле {#checkbox-showing-text}
 
@@ -62,19 +62,19 @@
 
   Используйте компонент [field.radio-group](../reference/field.radio-group.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2wD)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/5uEFopHJ3tw5pr)
 
 - Кнопки
 
   Используйте компонент [field.button-radio-group](../reference/field.button-radio-group.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2ws)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/MLfbrtUN3tw5yT)
 
 - Чекбокс
 
   Используйте компонент [field.checkbox](../reference/field.checkbox.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tf2vc)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/FR-CN4-R3tw686)
 
 {% endlist %}
 
@@ -90,6 +90,6 @@
 
 Дополнительно в примере действует проверка, чтобы в каждой строке было не менее трех символов: русских или английских букв и пробелов. Условие реализуется с помощью [condition.schema](../reference/condition.schema.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TULJM)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9lxm54yW3tw6NU)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)
