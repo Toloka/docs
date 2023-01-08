@@ -8,7 +8,7 @@ You can insert a code snippet from another part of the configuration anywhere in
 
 This is useful when you need to insert the same snippet at multiple places in your code. For example, if you need to run the same action using multiple buttons, put this action in a variable and call it using `$ref`.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/9OnIyOf13YZUvG)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YYGrysCn3ttAe3)
 
 {% note tip %}
 
@@ -28,7 +28,7 @@ Some components have properties with the type ref or something similar, like [ac
 
 A pointer to a visual component using the construction `{ "$ref": "path.to.element" }`.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/ReUWS)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sUY1_L-A3ttEvD)
 
 {% note warning %}
 
