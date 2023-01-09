@@ -59,11 +59,11 @@ Another way to choose a preset is to do the following:
 
 1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
-    ![Create project button](../_images/tutorials/survey-qualtrics/create-project-button.png "Create project button" =700x)
+    ![Create project button](../_images/tutorials/survey-qualtrics/qualtrics-survey-create-project.png "Create project button" =700x)
     
 1. In the left menu, click **Social science research**. Select the **Short survey**, **Medium survey**, or **Long survey** preset.
 
-    ![Social science research](../_images/tutorials/survey-qualtrics/social-science-research-menu.png "Social science research" =700x)
+    ![Social science research](../_images/tutorials/survey-qualtrics/qualtrics-survey-social-science.png "Social science research" =700x)
 
 1. Click **Choose solution** in the pop-up tab.
 
@@ -78,13 +78,13 @@ Another way to choose a preset is to do the following:
 
     * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find the detailed instructions after they start the survey.
 
-    ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =450x)
+    ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png "Survey description" =700x)
 
     Note that the task interface and detailed instructions are preconfigured: they are standard for all the Qualtrics survey projects.
 
     {% cut "How your task will look for Tolokers" %}
 
-    ![Social science research](../_images/tutorials/survey-qualtrics/task-interface.png "Social science research" =350x)
+    ![Social science research](../_images/tutorials/survey-qualtrics/qualtrics-survey-task-interface.png "Social science research" =400x)
 
     {% endcut %}
 
@@ -98,7 +98,7 @@ Another way to choose a preset is to do the following:
 
     * **Age** (optional): Enter the age of Tolokers between 18 and 90.
 
-    ![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png "Survey audience" =450x)
+    ![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png "Survey audience" =700x)
 
     {% note info %}
 
@@ -114,7 +114,7 @@ Another way to choose a preset is to do the following:
 
     * **IRB approval / exemption number**: The study number approved by the IRB.
 
-    ![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png "Survey approval" =450x)
+    ![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png "Survey approval" =700x)
 
 1. Revise the settings carefully. You will not be able to change them later.
 
@@ -128,7 +128,7 @@ Toloka controls the data collection completion by exchanging a unique code with 
 
 1. After you embed the code to your survey, select **My Qualtrics survey has an embedded completion code from Toloka**.
 
-   ![Academic credentials](../_images/tutorials/survey-qualtrics/embed-code.png "Embed code" =700x)
+   ![Academic credentials](../_images/tutorials/survey-qualtrics/qualtrics-survey-embed-code.png "Embed code" =700x)
 
 1. Click **Launch survey**.
 
@@ -136,7 +136,7 @@ Toloka controls the data collection completion by exchanging a unique code with 
 
 In the pop-up tab, check the parameters and click **Launch**.
 
-![Startsurvey](../_images/tutorials/survey-qualtrics/launch-survey.png "Launch survey" =350x)
+![Startsurvey](../_images/tutorials/survey-qualtrics/qualtrics-survey-launch.png "Launch survey" =700x)
 
 Responses are stored on Quatrics. Go there to track the progress of data collection and get the results.
 

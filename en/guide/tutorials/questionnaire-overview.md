@@ -21,7 +21,7 @@ The comparison of the solutions is provided in the table below:
 | **The project interface** | Preconfigured and adaptable | Preconfigured and adaptable | Not adaptable |
 | **The pool setup** | Manual or with cloning the demo pool | Manual or with creating a preconfigured pool from preset | Fully automatic |
 | **Acceptance of responses** | Manual or automatic | Manual or automatic | Automatic, based on completion codes |
-| **Required embedding of a completion code** | ![no](../_images/tutorials/survey-qualtrics/no.svg) | ![no](../_images/tutorials/survey-qualtrics/no.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) |
+| **Required embedding of a completion code** | ![no](../_images/no.svg) | ![no](../_images/no.svg) | ![yes](../_images/yes.svg) |
 | **Location of a survey form** | Toloka | Any external platform | Qualtrics only |
-| **Various filters to select respondents** | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) | ![yes](../_images/tutorials/survey-qualtrics/yes.svg) | Country, gender, and age only |
+| **Various filters to select respondents** | ![yes](../_images/yes.svg) | ![yes](../_images/yes.svg) | Country, gender, and age only |
 | **Number of countries to select respondents** | over 80 | over 80 | 80 |
