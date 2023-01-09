@@ -92,11 +92,7 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 
 {% endcut %}
 
-{% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
-
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#completed-tasks) incorrectly to a new pool.
-
-{% endcut %}
+{% include [faq-redo-task](../_includes/faq/users/redo-task.md) %}
 
 {% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
@@ -106,11 +102,7 @@ Fraudulent Tolokers aren't banned before the [majority vote](mvote.md) is known.
 
 {% endcut %}
 
-{% cut "Are the cheaters who were banned for incorrect responses paid anyway?" %}
-
-If the Toloker was already paid for the tasks, you can't cancel the payment.
-
-{% endcut %}
+{% include [faq-cheaters-paid](../_includes/faq/users/cheaters-paid.md) %}
 
 {% cut "Tolokers completed the training successfully, but have poor results in the general task" %}
 
@@ -120,11 +112,7 @@ In addition to the training, be sure to set up [quality control rules](control.m
 
 {% endcut %}
 
-{% cut "The results include the responses of users who I banned" %}
-
-The results show the responses of all users, including those who are banned. To exclude their responses from the results, select the option **Exclude assignments by banned users**. It will delete the responses from users who were banned at the moment the results were downloaded, not when the pool was labeled.
-
-{% endcut %}
+{% include [troubleshooting-include-responses](../_includes/troubleshooting/users/include-responses.md) %}
 
 {% cut "How can I ban a user and reject all their responses?" %}
 

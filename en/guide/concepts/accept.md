@@ -194,11 +194,7 @@ d) the result of the Task does not comply with the Instruction.
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
-
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#completed-tasks) incorrectly to a new pool.
-
-{% endcut %}
+{% include [faq-redo-task](../_includes/faq/users/redo-task.md) %}
 
 {% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 

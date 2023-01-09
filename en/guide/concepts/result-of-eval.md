@@ -71,11 +71,7 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Can I ask a Toloker to redo the task if they made mistakes in it?" %}
-
-No. After sending a task, the Toloker can't make any changes to it. You can add tasks that were [completed](../../glossary.md#completed-tasks) incorrectly to a new pool.
-
-{% endcut %}
+{% include [faq-redo-task](../_includes/faq/users/redo-task.md) %}
 
 {% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
@@ -139,11 +135,7 @@ When you upload a file with rows, double quotes indicate an area where you can u
 
 {% include [faq-empty-text-field](../_includes/faq/result-questions/empty-text-field.md) %}
 
-{% cut "The results include the responses of users who I banned" %}
-
-The results show the responses of all users, including those who are banned. To exclude their responses from the results, select the option **Exclude assignments by banned users**. It will delete the responses from users who were banned at the moment the results were downloaded, not when the pool was labeled.
-
-{% endcut %}
+{% include [troubleshooting-include-responses](../_includes/troubleshooting/users/include-responses.md) %}
 
 {% include [faq-get-time](../_includes/faq/result-questions/get-time.md) %}
 
