@@ -233,39 +233,13 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
 
 {% cut "Setting up tasks, preview" %}
 
-{% cut "My Tolokers can't upload a file with the assignment" %}
+{% include [troubleshooting-cant-upoad-file](../_includes/troubleshooting/project-settings/cant-upoad-file.md) %}
 
-If none of the Tolokers can submit the assignment, the most likely reason is JS validation. Run JS validation again.
+{% include [faq-mobile-task-display](../_includes/faq/project-settings/mobile-task-display.md) %}
 
-Export your project to the sandbox and try to complete the task in the sandbox yourself.
+{% include [faq-hide-expandable](../_includes/faq/project-settings/hide-expandable.md) %}
 
-{% endcut %}
-
-{% cut "How do I check the task display in the mobile Toloka app?" %}
-
-To check the task's look-and-feel on the mobile phone screen, enable the emulation mode in Chrome or Safari and edit the CSS block.
-
-You can also use the mobile version of the sandbox. Write to support to get access to it.
-
-{% endcut %}
-
-{% cut "How do I hide expandable text?" %}
-
-You can hide text in an expandable section by using CSS styles, both in the task itself and in the instructions. You can see the sample code [here]({{ text-under-the-cut }}).
-
-{% endcut %}
-
-{% cut "How do I insert a calendar?" %}
-
-You can see an example in the comments for this [project]({{ how-to-insert-a-calendar }}). The example includes the output data format and libraries to be added.
-
-To add libraries:
-
-1. Click the “gear button” in project editing mode.
-
-1. In the field that opens on the left, enter the links and press **Enter**.
-
-{% endcut %}
+{% include [faq-calendar](../_includes/faq/project-settings/calendar.md) %}
 
 {% cut "How do I enable loading audio files in preview mode?" %}
 
@@ -326,17 +300,9 @@ If you pass an array of values to the input field, use commas to separate the ar
 
 {% endcut %}
 
-{% cut "Why doesn't the “Submit” button work in the task?" %}
+{% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
 
-The issue is probably in the JS block. Try deleting its content, then test the **Submit** button in the preview mode.
-
-{% endcut %}
-
-{% cut "How do I add assignment validation depending on a checkbox, so that if an object is in the image, it must be selected, otherwise, a checkbox must be selected?" %}
-
-You can use JavaScript to add assignment validation depending on the checkbox. An example is provided in the “Search for information online” template.
-
-{% endcut %}
+{% include [faq-checkbox-selected](../_includes/faq/project-settings/checkbox-selected.md) %}
 
 {% cut "How do I use different numbers of response options for different questions?" %}
 
@@ -349,17 +315,9 @@ Use [concatenation](t-components/helpers.md#concat), for example:
 
 {% endcut %}
 
-{% cut "How do I deselect a radio button?" %}
+{% include [faq-deselect-radio](../_includes/faq/project-settings/deselect-radio.md) %}
 
-You can't deselect a radio button. You can only select another radio button as a different response option.
-
-{% endcut %}
-
-{% cut "How do I add assignment validation depending on a checkbox?" %}
-
-You can use JavaScript to add assignment validation depending on a checkbox. An example is provided in the “Search for information online” template.
-
-{% endcut %}
+{% include [faq-assigment-validation](../_includes/faq/project-settings/assigment-validation.md) %}
 
 {% cut "How do I change the task background from the standard white color to a different color?" %}
 
@@ -411,11 +369,7 @@ return solution;
 
 {% endcut %}
 
-{% cut "How can I expand the window with HTML/CSS/JS code in the online task editor?" %}
-
-You can't expand the HTML window. To expand the JS and CSS fields, click any area within the field.
-
-{% endcut %}
+{% include [faq-expand-window](../_includes/faq/project-settings/expand-window.md) %}
 
 {% cut "Can I use my own JS to build an interface in Toloka?" %}
 
@@ -435,58 +389,19 @@ If the tags or attributes disappear after you save the instructions (for example
 
 {% endcut %}
 
-{% cut "Are you going to implement an HTML/JS prettifier in the project design?" %}
-
-We didn't intend this window for any sophisticated development. Usually, the content is prepared in a third-party prettified editor, and the resulting code is pasted to the window prior to the update.
-
-However, in the context of TolokaHandlebars editability, there are no differences between our window and a third-party editor.
-
-{% endcut %}
+{% include [faq-implement-prettifier](../_includes/faq/project-settings/implement-prettifier.md) %}
 
 {% endcut %}
 
 {% cut "Input and output data" %}
 
-{% cut "Why is the iframe content not displayed when I add the input and output data to the HTML interface in the preview mode?" %}
+{% include [troubleshooting-iframe-content](../_includes/troubleshooting/project-settings/iframe-content.md) %}
 
-Try to disable extensions in your browser. They might block iframe loading.
+{% include [faq-pass-value](../_includes/faq/project-settings/pass-value.md) %}
 
-{% endcut %}
+{% include [faq-line-by-line](../_includes/faq/project-settings/line-by-line.md) %}
 
-{% cut "How do I pass the value of the input variable to the “Button with click validation”?" %}
-
-Specify the name of the input field where you pass the link, without the brackets:
-
-{% if locale == "en-com" %}
-
-```html
-{{field type="button-clicked" name="ads" label="Click me" href=name_escape
-          action=true}}
-```
-
-{% endif %}
-
-{% endcut %}
-
-{% cut "How do I enter a list of words line-by-line, display an element for each of them, and save the result to the output array?" %}
-
-Pass an array of strings as the input field. For example, as shown in the screenshot: ![](../_images/troubleshooting/array-each-words.png)
-
-In HTML, use a special handlebar to iterate over this field. The code structure will look like this:
-
-```html
-{{#each words}}
-{{field type="radio" name="result" value=this label=this}}
-{{/each}}
-```
-
-{% endcut %}
-
-{% cut "How do I use the input data as a variable in the HTML block?" %}
-
-Enclose the input field in double curly brackets `not_var{{text}}`.
-
-{% endcut %}
+{% include [faq-use-input-data](../_includes/faq/project-settings/use-input-data.md) %}
 
 {% cut "How do I display formatted text from input data in the task?" %}
 
@@ -502,23 +417,7 @@ To change the number of output fields dynamically, use the recommendations from 
 
 {% endcut %}
 
-{% cut "How do I display the text in the input field as in the source (with the HTML tags)?" %}
-
-To display the text in the input field with HTML tags, use the `<pre>` tag. For example:`<pre>not_var{{text}}</pre>`.
-
-In this case, the text is rendered as is, in one scrollable line. To remove the scroll and avoid stretching the task card, add the following CSS to the block:
-
-```css
-.task {
-  max-width: 800px;
-}
-
-pre {
-  white-space: pre-wrap;
-}
-```
-
-{% endcut %}
+{% include [faq-display-text](../_includes/faq/project-settings/display-text.md) %}
 
 {% endcut %}
 
@@ -532,77 +431,21 @@ To avoid conflict between the Vue markup and the Handlebars syntax, disable the 
 
 {% endcut %}
 
-{% cut "How do I run setSolution validation in "OnRender"?" %}
+{% include [faq-setsolution](../_includes/faq/project-settings/setsolution.md) %}
 
-Try to add a condition to check for the second progress bar:
-
-```javascript
-setSolution: function(solution) {
-var secondScale = this.getDOMElement().querySelector('.second-scale');
-
-if(secondScale) {
-secondScale.style.display = solution.output_values.grammar === 'no' ? 'block' : 'none';
-}
-
-TolokaHandlebarsTask.prototype.setSolution.call(this, solution);
-},
-```
-
-{% endcut %}
-
-{% cut "How do I validate the data entered by the Toloker in the Toloka interface?" %}
-
-You can check the link format using regular expressions. To do this, add the link validation JavaScript code with `regexp` to the task template.
-
-For example: `var regexp = /^(https://www.myurl.com/).{4,200}$/`.
-
-You can also add a regular expression to the `input` field with the **string** type in the output data. Make the field mandatory. Then add the **Text input field** field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
-
-```html
-{{field type="textarea" name="input" width="270px" rows=5}}
-```
-
-{% endcut %}
+{% include [faq-validate-data](../_includes/faq/project-settings/validate-data.md) %}
 
 {% endcut %}
 
 {% cut "Tasks with images" %}
 
-{% cut "How do I make an image expand to its maximum size on click?" %}
+{% include [faq-image-expand](../_includes/faq/project-settings/image-expand.md) %}
 
-To the component that inserts the image, add the parameters: `real-size=true` and `screenshot=true`.
+{% include [faq-shortcut](../_includes/faq/project-settings/shortcut.md) %}
 
-{% endcut %}
+{% include [faq-show-photo](../_includes/faq/project-settings/show-photo.md) %}
 
-{% cut "How do I create a shortcut for adding a polygon in "image-annotation"?" %}
-
-To create a shortcut, add the following action to the "onKey" method:
-
-```javascript
-onKey: function(key) {
-          var el = this.getDOMElement().querySelector(".image-annotation-editor__shape-polygon");
-
-          if (key === 'D') {
-          el.click();
-          el.classList.add('image-annotation-editor__shape_active')
-          }
-```
-
-If you need to further modify the area-selection editor, use [this library](https://github.com/vmit/image-annotation).
-
-{% endcut %}
-
-{% cut "How do I, depending on the option selected, show a photo and make it mandatory or hide it and make it optional?" %}
-
-In this case, you need to leave the field optional in the output data and set up validation depending on the Toloker response. You can see how this is implemented in the “Text classification” template.
-
-{% endcut %}
-
-{% cut "How do I prevent adding photos from the gallery so that when the Toloker clicks the add photo button the camera opens, rather than the gallery/camera choice?" %}
-
-Add `sources="CAMERA"` to the attributes of the image loading component. This disables adding photos from the gallery.
-
-{% endcut %}
+{% include [faq-prevent-adding-photos](../_includes/faq/project-settings/prevent-adding-photos.md) %}
 
 {% cut "How do I implement selection of 3 different areas in an image?" %}
 

@@ -34,11 +34,7 @@ In the section contents, select the stage where you encountered the problem and 
 
 ### Instructions {#instruction}
 
-{% cut "Some tags disappear after I save the instructions." %}
-
-You can't use unsupported tags because they are deleted when you save the project. [List of supported tags](../concepts/instruction.md#html).
-
-{% endcut %}
+{% include [troubleshooting-tags-disappear](../_includes/troubleshooting/project-settings/tags-disappear.md) %}
 
 {% cut "What do I do if the radio button attributes are displayed correctly in the preview, but disappear after saving?" %}
 
@@ -48,49 +44,15 @@ If the tags or attributes disappear after you save the instructions (for example
 
 ### Configuring the task interface {#concept_gss_fkp_smb}
 
-{% cut "My Tolokers can't upload a file with the assignment" %}
+{% include [troubleshooting-cant-upoad-file](../_includes/troubleshooting/project-settings/cant-upoad-file.md) %}
 
-If none of the Tolokers can submit the assignment, the most likely reason is JS validation. Run JS validation again.
+{% include [troubleshooting-iframe-content](../_includes/troubleshooting/project-settings/iframe-content.md) %}
 
-Export your project to the sandbox and try to complete the task in the sandbox yourself.
+{% include [troubleshooting-all-checkboxes](../_includes/troubleshooting/project-settings/all-checkboxes.md) %}
 
-{% endcut %}
+{% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
 
-{% cut "Why is the iframe content not displayed when I add the input and output data to the HTML interface in the preview mode?" %}
-
-Try to disable extensions in your browser. They might block iframe loading.
-
-{% endcut %}
-
-{% cut "I selected one checkbox, but all the checkboxes are selected." %}
-
-The names of the output fields must differ: each checkbox must have its own unique name. For more information about this component, see [here](../concepts/t-components/checkboxes.md).
-
-{% endcut %}
-
-{% cut "Why doesn't the “Submit” button work in the task?" %}
-
-The issue is probably in the JS block. Try deleting its content, then test the **Submit** button in the preview mode.
-
-{% endcut %}
-
-{% cut "What should the Toloker do if there is no selectable object in the image in an area selection task?" %}
-
-There are four options:
-
-- [ Decompose the task](../concepts/solution-architecture.md): First select images with the items you need, then select areas in them.
-
-- Select an arbitrary area in the image. For example, put a square in the upper-right corner.
-
-    Mention this in your instructions for reviewers.
-
-- Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
-
-- Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
-
-    For control purposes, add information about the value of this checkbox to the task interface.
-
-{% endcut %}
+{% include [faq-no-selectable-object](../_includes/faq/project-settings/no-selectable-object.md) %}
 
 ## Setting up a pool {#pool-settings}
 
@@ -198,7 +160,7 @@ The progress bar shows the number of task suites including the overlap. If the o
 
 {% include [troubleshooting-more-tolokers-trained](../_includes/troubleshooting/adding-tasks-to-the-pool/more-tolokers-trained.md) %}
 
-{% include [troubleshooting-infinite-number.md](../_includes/troubleshooting/adding-tasks-to-the-pool/infinite-number.md) %}
+{% include [troubleshooting-infinite-number](../_includes/troubleshooting/adding-tasks-to-the-pool/infinite-number.md) %}
 
 {% include [faq-distribute-tasks-training](../_includes/faq/adding-tasks-to-the-pool/distribute-tasks-training.md) %}
 

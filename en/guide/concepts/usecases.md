@@ -276,17 +276,9 @@ You can see how it's implemented in the “[Transcript of audio recordings](../t
 
 {% cut "Setting up tasks with audio and video" %}
 
-{% cut "Can I add a video player or audio player to my instructions?" %}
+{% include [faq-video-player](../_includes/faq/project-settings/video-player.md) %}
 
-No, but you can add links to them.
-
-{% endcut %}
-
-{% cut "How do I make an image expand to its maximum size on click?" %}
-
-To the component that inserts the image, add the parameters: `real-size=true` and `screenshot=true`.
-
-{% endcut %}
+{% include [faq-image-expand](../_includes/faq/project-settings/image-expand.md) %}
 
 {% endcut %}
 

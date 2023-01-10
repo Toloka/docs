@@ -341,11 +341,7 @@ The default value is `false`.||
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I insert a function that is called by an image click in my task?" %}
-
-You can find an example of the task template for selecting image groups at this [link]({{ selection-of-images-groups }}). The input and output data, as well as a fragment of the instructions, are in the comments to the project.
-
-{% endcut %}
+{% include [faq-insert-function](../_includes/faq/project-settings/insert-function.md) %}
 
 {% cut "How do I add a mask for the input field, like dd.mm.yyyy for the date field or numbers only (10 or 12) for INN (Taxpayer Identification Number)?" %}
 
@@ -355,17 +351,9 @@ To enter a date, you can add a calendar to the task interface. See an [example o
 
 {% endcut %}
 
-{% cut "Do I need to convert all the images in the task to the same size or can they be different?" %}
+{% include [faq-need-convert](../_includes/faq/project-settings/need-convert.md) %}
 
-You can use different image sizes.
-
-{% endcut %}
-
-{% cut "If a project's output data may include any number from 1 to 999999, can I specify a range?" %}
-
-You can't use a range as a fixed value.
-
-{% endcut %}
+{% include [faq-output-data](../_includes/faq/project-settings/output-data.md) %}
 
 {% cut "How do I show two different versions of the text to Tolokers?" %}
 

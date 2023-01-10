@@ -114,11 +114,7 @@ For best results, we recommend that you pre-select the Tolokers that meet your r
 
 {% endcut %}
 
-{% cut "Can I add a video player or audio player to my instructions?" %}
-
-No, but you can add links to them.
-
-{% endcut %}
+{% include [faq-video-player](../_includes/faq/project-settings/video-player.md) %}
 
 {% cut "Some tags disappear after I save the instructions." %}
 
@@ -126,11 +122,7 @@ You can't use unsupported tags because they are deleted when you save the projec
 
 {% endcut %}
 
-{% cut "How do I create different instructions for the training pool and main pools?" %}
-
-By default, the project instructions are displayed in the training pool. To use separate instructions for the training pool, deselect **Use project instructions**. Don't forget to update the training instructions if you change something in the general task instructions.
-
-{% endcut %}
+{% include [faq-different-instructions](../_includes/faq/project-settings/different-instructions.md) %}
 
 {% cut "What do I do if the radio button attributes are displayed correctly in the preview, but disappear after saving?" %}
 

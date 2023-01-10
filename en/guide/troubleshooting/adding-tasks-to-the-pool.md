@@ -28,7 +28,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [troubleshooting-more-tolokers-trained](../_includes/troubleshooting/adding-tasks-to-the-pool/more-tolokers-trained.md) %}
 
-{% include [troubleshooting-infinite-number.md](../_includes/troubleshooting/adding-tasks-to-the-pool/infinite-number.md) %}
+{% include [troubleshooting-infinite-number](../_includes/troubleshooting/adding-tasks-to-the-pool/infinite-number.md) %}
 
 {% include [faq-distribute-tasks-training](../_includes/faq/adding-tasks-to-the-pool/distribute-tasks-training.md) %}
 
