@@ -4,11 +4,7 @@ In this tutorial, you will learn how to create a survey form and run a survey in
 
 Survey is a type of data collection task with several types of closed-ended and open-ended questions.
 
-{% note info %}
-
-To learn how to run a survey using an external survey form, see the [Survey on third-party platform](questionnaire-other.md) tutorial.
-
-{% endnote %}
+{% include [other-survey-solutions](../_includes/tutorials/other-survey-solutions.md) %}
 
 ## Prerequisites {#prerequisites}
 

@@ -90,6 +90,9 @@ default:
   selection-of-images-groups: https://codepen.io/Toloka_projects/pen/KJELbO
   skills: https://platform.toloka.ai/requester/quality
   statistical-significance: https://en.wikipedia.org/wiki/Statistical_significance
+  survey-qualtrics-short: https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvJ&choosedTag=A3MdOlBKzWKcrpxg3JNQ
+  survey-qualtrics-medium: https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvF&choosedTag=A3MdOlBKzWKcrpxg3JNQ
+  survey-qualtrics-long: https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvv&choosedTag=A3MdOlBKzWKcrpxg3JNQ
   survey-other-preset: https://platform.toloka.ai/requester/templates?choosedCard=zrOz1vqLM52i562Ed0A5
   survey-toloka-preset: https://platform.toloka.ai/requester/templates?choosedCard=O5QMrPP48RPUyne5aaLV
   text-under-the-cut: https://codepen.io/Toloka_projects/pen/bzGQgX
