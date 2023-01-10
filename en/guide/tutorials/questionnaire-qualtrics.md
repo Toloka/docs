@@ -148,6 +148,6 @@ Responses are stored on Quatrics. Go there to track the progress of data collect
 
 - [Toloka for social sciences](https://toloka.ai/toloka-for-social-sciences/)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
 
 {% include [image-styles](../../../_includes/image-styles.md) %}
