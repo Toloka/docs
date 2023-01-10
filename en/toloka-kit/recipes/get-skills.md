@@ -14,7 +14,7 @@ import toloka.client as toloka
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 for skill in toloka_client.get_skills():
-  print(skill.id, skill.name, skill.private_comment)
+    print(skill.id, skill.name, skill.private_comment)
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

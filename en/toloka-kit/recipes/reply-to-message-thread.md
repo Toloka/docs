@@ -16,8 +16,8 @@ toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', '
 
 message_reply = MessageThreadReply(text={'EN': 'Thank you!'})
 toloka_client.reply_message_thread(
-  message_thread_id='61ebc4f06643ea4a616c4b5d',
-  reply=message_reply
+    message_thread_id='61ebc4f06643ea4a616c4b5d',
+    reply=message_reply
 )
 ```
 

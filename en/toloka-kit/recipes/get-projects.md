@@ -15,8 +15,8 @@ Iterate through all the projects with the `ACTIVE` status created after October 
 ```python
 for project in toloka_client.[get_projects](*get_projects)(
                   status='ACTIVE',
-                  created_gte=datetime(2022, 10, 1) ):
-  print(project.id, project.public_name, project.created.date())
+                    created_gte=datetime(2022, 10, 1)):
+    print(project.id, project.public_name, project.created.date())
 ```
 
 You should get an output with the project IDs, titles, and creation dates which looks like this.
@@ -39,8 +39,8 @@ toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', '
 
 for project in toloka_client.get_projects(
                   status='ACTIVE',
-                  created_gte=datetime(2022, 10, 1) ):
-  print(project.id, project.public_name, project.created.date())
+                  created_gte=datetime(2022, 10, 1)):
+    print(project.id, project.public_name, project.created.date())
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

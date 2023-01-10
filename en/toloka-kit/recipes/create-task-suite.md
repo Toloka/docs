@@ -16,7 +16,7 @@ from toloka.client.task_suite import TaskSuite
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 tasks = [
-  Task(input_values = {'image': 'http://example.com/image0.png'})
+    Task(input_values={'image': 'http://example.com/image0.png'})
 ]
 new_task_suite = TaskSuite(pool_id='1238218', tasks=tasks, overlap=3)
 new_task_suite = toloka_client.create_task_suite(new_task_suite)

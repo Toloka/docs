@@ -15,7 +15,7 @@ toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', '
 
 attachment_id='0983459b-e26f-42f3-a5fd-6e3feee913e7'
 with open(attachment_id + '.txt', 'wb') as attachment_file:
-  toloka_client.download_attachment(attachment_id, out=attachment_file)
+    toloka_client.download_attachment(attachment_id, out=attachment_file)
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

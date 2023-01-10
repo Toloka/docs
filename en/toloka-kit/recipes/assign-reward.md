@@ -16,12 +16,12 @@ from toloka.client.user_bonus import UserBonus
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 new_bonus = toloka_client.create_user_bonus(UserBonus(
-    user_id = 'fac97860c7929add8048ed2ef63b66fd',
-    amount = Decimal('0.50'),
-    public_title = {'EN': 'Perfect job!'},
-    public_message = {'EN': 'You are the best!'},
+    user_id='fac97860c7929add8048ed2ef63b66fd',
+    amount=Decimal('0.50'),
+    public_title={'EN': 'Perfect job!'},
+    public_message={'EN': 'You are the best!'},
     assignment_id='00001092da--61ef030400c684132d0da0de'
-) )
+))
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

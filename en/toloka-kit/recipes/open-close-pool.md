@@ -19,8 +19,7 @@ toloka_client.open_pool('32267581')
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.client.TolokaClient(
-  'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 toloka_client.close_pool('32267581')
 ```

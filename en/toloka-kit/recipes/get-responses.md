@@ -14,7 +14,7 @@ import toloka.client as toloka
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 for assignment in toloka_client.get_assignments(pool_id='1085757'):
-  print(assignment.id, assignment.status)
+    print(assignment.id, assignment.status)
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

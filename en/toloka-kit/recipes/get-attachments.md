@@ -14,7 +14,7 @@ import toloka.client as toloka
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 for attachment in toloka_client.get_attachments(pool_id='1085757'):
-  print(attachment.id, attachment.name)
+    print(attachment.id, attachment.name)
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

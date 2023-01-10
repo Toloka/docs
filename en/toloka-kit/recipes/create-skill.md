@@ -14,11 +14,11 @@ import toloka.client as toloka
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 new_skill = toloka_client.create_skill(
-  name = 'Programmer',
-  public_name = { 'EN': 'Programmer' },
-  public_requester_description = {
-      'EN': 'You are an expert in programming languages'
-  }
+    name = 'Programmer',
+    public_name = {'EN': 'Programmer'},
+    public_requester_description = {
+        'EN': 'You are an expert in programming languages'
+    }
 )
 print(new_skill.id)
 ```

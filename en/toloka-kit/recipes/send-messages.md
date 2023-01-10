@@ -15,10 +15,10 @@ toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', '
 
 message_text = "Amazing job! We have just trained our first model."
 toloka_client.compose_message_thread(
-  recipients_select_type = 'ALL',
-  topic = {'EN': 'Thank you!'},
-  text = {'EN': message_text},
-  answerable = False
+    recipients_select_type='ALL',
+    topic={'EN': 'Thank you!'},
+    text={'EN': message_text},
+    answerable=False
 )
 ```
 

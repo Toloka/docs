@@ -15,8 +15,8 @@ toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', '
 
 for user_skill in toloka_client.get_user_skills(
                     user_id='fac97860c7929add8048ed2ef63b66fd'):
-  skill = toloka_client.get_skill(user_skill.skill_id)
-  print(skill.name, user_skill.value)
+    skill = toloka_client.get_skill(user_skill.skill_id)
+    print(skill.name, user_skill.value)
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

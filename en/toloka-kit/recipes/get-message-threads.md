@@ -14,8 +14,8 @@ import toloka.client as toloka
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 for message_thread in toloka_client.get_message_threads(folder=['INBOX', 'UNREAD']):
-  topic = message_thread.topic
-  print(topic.get('EN') or list(topic.values())[0])
+    topic=message_thread.topic
+    print(topic.get('EN') or list(topic.values())[0])
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}

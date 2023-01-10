@@ -14,7 +14,7 @@ _Get the list of the pools with the `CLOSED` status in your project._
 
 ```python
 for pool in toloka_client.[get_pools](*get_pools)(project_id='118252', status='CLOSED'):
-  print(pool.id, pool.status, pool.private_name)
+    print(pool.id, pool.status, pool.private_name)
 ```
 
 You should get an output that contains the IDs of the pools, their statuses, and private names. It will look like this.
@@ -32,7 +32,7 @@ import toloka.client as toloka
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 for pool in toloka_client.get_pools(project_id='118252', status='CLOSED'):
-  print(pool.id, pool.status, pool.private_name)
+    print(pool.id, pool.status, pool.private_name)
 ```
 
 {% note tip "List of classes and methods used in this recipe" %}
