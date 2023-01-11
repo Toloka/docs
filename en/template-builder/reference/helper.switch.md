@@ -4,7 +4,7 @@ A switch-case construction. Checks various conditions sequentially and executes 
 
 You can use it to perform an action or display an additional interface element only when a certain condition is met.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rf2VQ)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/RcgC_nQJ3tz3j4)
 
 This helper is similar to a series of [If...Then...Else](helper.if.md) logical expressions, so it is useful if there are more than two conditions for sequential verification. If you need to check one or two conditions, use the [helper.if](helper.if.md) component.
 

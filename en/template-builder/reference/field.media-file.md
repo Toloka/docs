@@ -8,7 +8,7 @@ This component is convenient when using mobile devices. To upload files from a c
 
 In the task review mode, the uploaded images will appear automatically. You can view, rotate, and switch among the images.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSVc)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/Td82X7Jv3twhPM)
 
 ## Using the Toloka mobile app
 

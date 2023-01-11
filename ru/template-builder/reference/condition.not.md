@@ -5,7 +5,7 @@
 Возвращает значение, обратное заданному условию. Например, если заданное условие выполняется (возвращает значение `true`), то
 `condition.not` вернет `false`.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QMahR)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/o9jHykBa3twn9w)
 
 ## Свойства компонента {#properties}
 

@@ -4,11 +4,11 @@ A component that allows a Toloker to add and remove list items, such as text fie
 
 This way you can allow a Toloker to give multiple answers to a question.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSUJ)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/IB5Q2ef53twbTw)
 
 The list items can contain any component, including a list of other components. For example, this allows you to create a table where you can add and delete rows.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSUq)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/d5nCDUia3twbqB)
 
 ## Managing components
 

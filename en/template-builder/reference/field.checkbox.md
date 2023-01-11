@@ -4,7 +4,7 @@ A checkbox.
 
 If you need to add a group of checkboxes, use [field.checkbox-group](field.checkbox-group.md).
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSNc)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/GiAzprj63tz7PD)
 
 ## Component properties {#properties}
 

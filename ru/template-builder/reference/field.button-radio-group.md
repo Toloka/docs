@@ -6,7 +6,7 @@
 
 Размер кнопки зависит от длины надписи.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T6Ugh)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/_tZwD0yq3twiba)
 
 ## Свойства компонента {#properties}
 
@@ -24,7 +24,7 @@
 || `options[].value`<span style="color: red">\*</span> | _any_ | Возвращаемое значение. ||
 || `rtl` | _object_ | Тексты на арабском, иврите и некоторых других языках принято писать слева направо. Используйте это свойство, чтобы задать правильный режим отображения для компонента.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/amHBJ)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/UExGq8IQ3tz4Yo).
 
 [Подробнее про RTL-языки](https://www.w3.org/International/questions/qa-scripts).
 ||
