@@ -16,7 +16,7 @@ There are different types of notifications in Toloka:
 
 - **Updates and guidelines** — notifications about updates and guidelines.
 
-- **New message** — notifications about new incoming [messages](messaging.md).
+- **New message** — notifications about new incoming [message](messaging.md).
 
 ## Receiving notifications
 
