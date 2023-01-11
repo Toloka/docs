@@ -2,7 +2,7 @@
 
 This component checks for the end of playback. Validation is passed if playback is finished. To play media with the `condition.played-fully` check, you can use [view.audio](view.audio.md) and [view.video](view.video.md). The `condition.played-fully` check only works in the player's `validation` property.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/3LB86CuN3YbHKA)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/3BDQLnJX3tzBoQ)
 
 ## Component properties {#properties}
 

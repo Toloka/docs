@@ -24,7 +24,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     - Template Builder
 
-      1. Create a template based on the [Checking the selected area](https://clck.ru/sFyNY) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
+      1. Create a template based on the [Checking the selected area](https://ya.cc/t/Z9GC6HzT3ttEf6) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
 
       1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
 

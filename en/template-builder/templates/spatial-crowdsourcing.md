@@ -8,7 +8,7 @@ The preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md) by default. T
 
 Take a look at the example: the interface includes a text block, a button for sending the coordinates of the Toloker's device, a button for uploading photos, and a comment field. Note that validation and task layout are already configured in this Template Builder sample code.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ZFj9dvvG3Zg9Xw)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Fz_--ktr3ttAX9)
 
 {% cut "Components used in the example" %}
 
@@ -165,7 +165,7 @@ To add a detailed description to the task, use one more [view.text](../reference
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/67DjKLNz3pAN3C)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Hntp83Qy3ttDYy)
 
 ## Add a layout {#add-layout}
 
@@ -192,7 +192,7 @@ In this example, the text is highlighted with a blue border.
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/a6I75hXP3nS2wX)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/obCzNwRZ3ttDa2)
 
 ## See also {#see-also}
 

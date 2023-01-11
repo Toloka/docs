@@ -4,7 +4,7 @@ A component for text segmentation.
 
 Use it to select multiple words, individual words, or letters in the text and label them with values. You can create multiple categories to label parts of the text, like all nouns and adjectives.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSZA)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/XbppitaZ3twmLU)
 
 You can use [plugin.field.text-annotation.hotkeys](plugin.field.text-annotation.hotkeys.md) to assign keyboard shortcuts for selecting categories.
 

@@ -8,7 +8,7 @@
 
 Вы можете установить свойства карты: масштаб, позицию центра карты, подпись и подсказку для исполнителей.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/bmsZU)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/L1Q1qdA33tz5Vr)
 
 ## Свойства компонента {#properties}
 

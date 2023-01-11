@@ -11,7 +11,7 @@ If you want to add several videos to a page, see the examples in [Comparing vide
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ArTxPxvp3Yb7Tu)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YyYVeNK13ttBxM)
 
 ## Make sure that the Toloker watched the video {#condition.played}
 
@@ -21,13 +21,13 @@ If you want to add several videos to a page, see the examples in [Comparing vide
 
   To make sure that the Toloker played the video, in the `validation` property use the `condition.played` component.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/TpsvNGHw3Yb7y5)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/xmqZxELw3ttBzX)
 
 - Viewed completely
 
   To make sure that the Toloker viewed the video completely, in the `validation` property use the `condition.played-fully` component.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/AXwEoWDF3Yb8PN)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/6--Zp46d3ttC5L)
 
 {% endlist %}
 

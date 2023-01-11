@@ -80,7 +80,7 @@ Before you begin:
 
         {% note info %}
 
-        You can also display a survey form in an [iframe](https://ya.cc/t/VDbXMBgW3Z44ft) if a third-party platform allows it. To learn more about the `view.iframe` component, see the [Template Builder Help](../../template-builder/reference/view.iframe.md).
+        You can also display a survey form in an [iframe](https://ya.cc/t/kZoRrfTk3ttAFF) if a third-party platform allows it. To learn more about the `view.iframe` component, see the [Template Builder Help](../../template-builder/reference/view.iframe.md).
 
         {% endnote %}
 

@@ -69,7 +69,7 @@
 
       1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
 
-          Для этого проекта воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/UGHJ5){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC4CV){% endif %}, где уже настроена валидация, горячие клавиши и внешний вид задания. Исполнитель не сможет отправить задание, если не выберет варианта ответа.
+          Для этого проекта воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/dJpLleEY3tviwM){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/ZZ0n5-Kt3tvj6B){% endif %}, где уже настроена валидация, горячие клавиши и внешний вид задания. Исполнитель не сможет отправить задание, если не выберет варианта ответа.
 
           Подробнее о [настройке условий](../../template-builder/best-practices/conditions.md) в Справке конструктора шаблонов.
 

@@ -48,7 +48,7 @@ Before you begin:
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the [example](https://ya.cc/t/ZFj9dvvG3Zg9Xw) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
+    1. Copy the code of the [example](https://ya.cc/t/Fz_--ktr3ttAX9) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
 
         [![Create a project. Config section](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png)
 

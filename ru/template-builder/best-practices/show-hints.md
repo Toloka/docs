@@ -13,21 +13,21 @@
 
 Фиксированные уведомления добавляются с помощью плагина [plugin.toloka](../reference/plugin.toloka.md). Вы можете добавить как одно, так и несколько сообщений — укажите их в свойстве `notifications`.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/K315ivXM3YCpUv)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/2koHFSsY3tvGNi)
 
 
 ## Уточняйте причины ошибок валидации {#errors}
 
 Чтобы помочь исполнителям быстрее решить проблему, из-за которой возникает ошибка, сообщите более конкретную причину ошибки валидации с помощью свойства `hint`, которое можно добавить к любому [условию](../reference/conditions.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RUYoT)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/zO46Oz983tvGnJ)
 
 
 ## Добавляйте пояснения к полям с помощью всплывающих подсказок {#hints}
 
 Чтобы точечно вставить небольшие пояснительные сообщения к конкретным элементам, используйте свойство `hint` — оно добавляется к любым [элементам для ввода данных](../reference/fields.md) и [отображаемым элементам](../reference/views.md). Всплывающие подсказки будут отображаться при нажатии на значок ![](../_images/info.svg).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1GkQhxtM3YCphz)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/OmZcGWdo3tvHNm)
 
 
 ## Показывайте уведомления {#notifications}
@@ -36,7 +36,7 @@
 
 Чтобы исполнители получали уведомления при нажатии кнопки, добавьте в шаблон элемент [view.action-button](../reference/view.action-button.md) и задайте свойству `action` действие [action.notify](../reference/action.notify.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RL2CA)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/8o3WpRb33tvqvM)
 
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

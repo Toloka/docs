@@ -58,7 +58,7 @@ To add a file to the [task interface](spec.md):
 
   1. In the `"path"` property, enter the structure `/<proxy name>/<file name>.<type>` with your data.
 
-  [View an example with image classification](https://clck.ru/SSbzF)
+  [View an example with image classification](https://ya.cc/t/U35lM1hi3ttEbC)
 
   {% note tip %}
 
@@ -95,7 +95,7 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  [View example in the sandbox](https://ya.cc/t/Hh04Pei73jKDq4)
+  [View example in the sandbox](https://ya.cc/t/7LC4AVi53ttA9S)
 
   {% endcut %}
 
@@ -120,7 +120,7 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/SP3Bd)
+  [View example in the sandbox](https://ya.cc/t/_XrwbL4V3ttEhW)
 
   {% endcut %}
 

@@ -6,7 +6,7 @@ This preset is designed to identify products that go together to train your stor
 
 Take a look at the example: the labeling interface includes two images and several radio buttons. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/02zo1PEd3scPcM)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/T69IKTGm3ttCb6)
 
 {% cut "Components used in the example" %}
 
@@ -164,7 +164,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eyjfv6xy3scQDR)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/BwwhqS_j3ttCd3)
 
 ## Add a layout {#add-layout}
 
@@ -212,7 +212,7 @@ In this example, the description is highlighted with a blue border, and the butt
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/hZdJe0Yk3scQnS)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/gJi3meiN3ttCeM)
 
 ## Other options for buttons {#add-variants}
 
@@ -261,7 +261,7 @@ Decide whether a Toloker can select only one or multiple answer options.
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/F5edFPVq3seM9p)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/swfEubVh3ttCg3)
 
 - One option (a radio button)
 
@@ -298,7 +298,7 @@ Decide whether a Toloker can select only one or multiple answer options.
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/nvnq7AUA3seNqp)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/AIl36VxY3ttChc)
 
 {% endlist %}
 
@@ -345,7 +345,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/iWh2lB3X3sktQY)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/GwLZZIth3ttCj2)
 
 If you need to check sequentially more than two conditions, use the [helper.switch](../reference/helper.switch.md) component.
 

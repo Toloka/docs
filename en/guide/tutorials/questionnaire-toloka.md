@@ -50,7 +50,7 @@ Before you begin:
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the [example](https://ya.cc/t/PQl1mCfy3bVK59) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project.
+    1. Copy the code of the [example](https://ya.cc/t/W-EbIhFc3ttAKm) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project.
 
     1. Edit the code: change questions, hints, and answer options. For example, to configure the text of the answer option, replace the sample answers with your values in the following properties:
 
