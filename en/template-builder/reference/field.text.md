@@ -17,7 +17,7 @@ A field for entering a short text, not more than a line. To add a field for ente
 || `requiredMark` | _boolean_ | Show "\*" next to the label ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/tq6fCNm_3ttFBW).
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/tq6fCNm_3ttFBW)
 
 [Learn more about RTL languages](https://www.w3.org/International/questions/qa-scripts). ||
 || `rtl.mode` | _string_ | Display mode:
