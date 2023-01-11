@@ -1,17 +1,24 @@
 # Notifications 
 
-You can set up notifications in the profile at the [Notifications](https://platform.toloka.ai/requester/profile/notifications) tab.
+You can set up notifications in the profile on the [Notifications](https://platform.toloka.ai/requester/profile/notifications) tab.
 
-## Events
+## Types of notifications
 
-- **Low funds** — notifies when you have less than $5 left on your account.
-- **Commission changed** — acknowledges you about the commission policy updates.
-- **Pool or aggregation completed** — notifies that all the tasks or the agregation were completed.
-- **Account blocked** — acknowledges you that requester's account is blocked.
-- **Updates and guidelines** — notifies you about all the updates and new guidelines.
-- **New message** — notifies you about the new incoming messages.
+There are different types of notifications in Toloka:
 
-## How to receive notifications
+- **Low funds** — notifications that you have less than $5 left on your account. [Add funds](refill.md) to your account if you get notification of this type.
+
+- **Commission changed** — notifications about [commission](budget.md#comission) updates.
+
+- **Pool or aggregation completed** — notifications that [pool](../../glossary.md#pool) or [aggregation of results](result-aggregation.md) has been completed.
+
+- **Account blocked** — notifications that your account is blocked.
+
+- **Updates and guidelines** — notifications about updates and guidelines.
+
+- **New message** — notifications about new incoming [messages](messaging.md).
+
+## Receiving notifications
 
 You can choose which notification method to use:
 
