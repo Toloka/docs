@@ -8,7 +8,7 @@ _Get the detailed information about the project with the ID specified in the req
 
 {% include [instantiate](../_includes/recipes/instantiate.md) %}
 
-### 3. Get project information
+### 3. Get project information {#step-three}
 
 [Find out](./get-projects.md) the ID of the project for which you want to get the detailed information. Then get this info calling the `get_project()` method.
 
@@ -16,11 +16,9 @@ _Get the detailed information about the project with the ID specified in the req
 project = toloka_client.[get_project](*get_project)('83859')
 ```
 
-This request will return the [Project](../reference/toloka.client.project.Project.md) class object. You can use its attributes to print the information you need.
+### 4. Print project name and status {#step-four}
 
-### 4. Print project name and status
-
-Use the standard Python `print()` function to display the project information.
+The `get_project()` request will return the [Project](../reference/toloka.client.project.Project.md) class object. You can use its attributes to print the information you need.
 
 ```python
 print(project.public_name, project.status)
@@ -32,7 +30,7 @@ You should get an output with the project name and status which looks like this.
 Image classification ProjectStatus.ACTIVE
 ```
 
-## Complete code: Get project details
+## Complete code: Get project details {#complete-code}
 
 ```python
 import toloka.client as toloka
@@ -59,4 +57,4 @@ print(project.public_name, project.status)
 - [Toloka API: Get project by ID](https://toloka.ai/docs/api/api-reference/#get-/projects/-id-)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class
-[*get_project]: [get_project](../reference/toloka.client.TolokaClient.get_project.md) method
+[*get_project]: [get_project()](../reference/toloka.client.TolokaClient.get_project.md) method

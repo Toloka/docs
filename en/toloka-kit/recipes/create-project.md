@@ -25,7 +25,7 @@ Configure the task interface using the `view_spec` parameter of the [TaskSpec](.
 task_spec = toloka.project.task_spec.[TaskSpec](*TaskSpec)(
     # The input data contains URLs to the images you want to label.
     input_spec = {'image': toloka.project.field_spec.[UrlSpec](*UrlSpec)()},
-    # The output data contains the 'result' filed with received color values.
+    # The output data contains the 'result' filled with received color values.
     output_spec = {'result': toloka.project.field_spec.[StringSpec](*StringSpec)()},
     # The task interface is created using the HTML/JS/CSS editor. You can select Toloka Template Builder instead if you want.
     view_spec = toloka.project.[ClassicViewSpec](*ClassicViewSpec)(
@@ -59,7 +59,7 @@ task_spec = toloka.project.task_spec.[TaskSpec](*TaskSpec)(
 
 {% note alert "Important" %}
 
-All the code manipulations at steps 3–4 occur in your device memory. The data will only be sent to the server after calling the `toloka_client.create_project()` method at [step 5](#step-five).
+All the code manipulations at steps 3–4 occur in your device memory. The data will only be sent to the server after calling the `create_project()` method at [step 5](#step-five).
 
 {% endnote %}
 
@@ -86,6 +86,8 @@ new_project = toloka_client.[create_project](*create_project)(new_project)
 
 ### 6. Print created project ID {#step-six}
 
+The `create_project()` request will return the [Project](../reference/toloka.client.project.Project.md) class object. You can use its attributes to print the information you need.
+
 ```python
 print(new_project.id)
 ```
@@ -96,7 +98,7 @@ You should get an output with the created project ID which looks like this.
 120798
 ```
 
-## Complete code: Create project
+## Complete code: Create project {#complete-code}
 
 ```python
 import toloka.client as toloka
@@ -104,19 +106,19 @@ import toloka.client as toloka
 toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
 
 task_spec = toloka.project.task_spec.TaskSpec(
-    input_spec = {'image': toloka.project.field_spec.UrlSpec()},
-    output_spec = {'result': toloka.project.field_spec.StringSpec()},
-    view_spec = toloka.project.ClassicViewSpec(
-        assets = {
+    input_spec={'image': toloka.project.field_spec.UrlSpec()},
+    output_spec={'result': toloka.project.field_spec.StringSpec()},
+    view_spec=toloka.project.ClassicViewSpec(
+        assets={
             'script_urls': ['library1.js', 'library2.js']
         },
-        markup = '''{{img src=image width="400px" height="300px"}}
+        markup='''{{img src=image width="400px" height="300px"}}
                     <p class="headerClass">Elephant color:</p>
                     {{field type="input" name="result"}}
                 ''',
-        script = '',
-        styles = '.headerClass { font-size: 22px; };',
-        settings = {
+        script='',
+        styles='.headerClass {font-size: 22px;};',
+        settings={
             'showSkip': True,
             'showTimer': True,
             'showTitle': True,

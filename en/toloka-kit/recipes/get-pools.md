@@ -8,7 +8,7 @@ _Get the list of the pools with the `CLOSED` status in your project._
 
 {% include [instantiate](../_includes/recipes/instantiate.md) %}
 
-### 3. List pools
+### 3. List pools {#step-three}
 
 [Find out](./get-projects.md) the ID of the project for which you want to get all the pools with the `CLOSED` status. Then iterate through all the pools calling the `get_pools()` method.
 
@@ -24,7 +24,7 @@ You should get an output that contains the IDs of the pools, their statuses, and
 36756115 Status.CLOSED Pool 2
 ```
 
-## Complete code: Get list of pools
+## Complete code: Get list of pools {#complete-code}
 
 ```python
 import toloka.client as toloka
@@ -38,7 +38,7 @@ for pool in toloka_client.get_pools(project_id='118252', status='CLOSED'):
 {% note tip "List of classes and methods used in this recipe" %}
 
 - _[TolokaClient](../reference/toloka.client.TolokaClient.md) class_
-- _[get_pools](../reference/toloka.client.TolokaClient.get_pools.md) method_
+- _[get_pools()](../reference/toloka.client.TolokaClient.get_pools.md) method_
 
 {% endnote %}
 
@@ -47,8 +47,8 @@ for pool in toloka_client.get_pools(project_id='118252', status='CLOSED'):
 - [{#T}](../../guide/concepts/overview.md)
 - [{#T}](./learn-basics.md)
 - [{#T}](./use-cases.md)
-- [Toloka-Kit recipe: Get list of projects](./get-projects.md)
+- [{#T}](./get-projects.md)
 - [Toloka API: Get list of pools](https://toloka.ai/docs/api/api-reference/#get-/pools)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class
-[*get_pools]: [get_pools](../reference/toloka.client.TolokaClient.get_pools.md) method
+[*get_pools]: [get_pools()](../reference/toloka.client.TolokaClient.get_pools.md) method

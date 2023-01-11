@@ -8,7 +8,7 @@ _Get the detailed information about the pool with the ID specified in the reques
 
 {% include [instantiate](../_includes/recipes/instantiate.md) %}
 
-### 3. Get pool information
+### 3. Get pool information {#step-three}
 
 [Find out](./get-pools.md) the ID of the pool for which you want to get the detailed information. Then get this info calling the `get_pool()` method.
 
@@ -16,11 +16,9 @@ _Get the detailed information about the pool with the ID specified in the reques
 pool = toloka_client.[get_pool](*get_pool)('36545959')
 ```
 
-This request will return the [Pool](../reference/toloka.client.pool.Pool.md) class object. You can use its attributes to print the information you need.
+### 4. Print pool private name, status, and last close reason {#step-four}
 
-### 4. Print pool private name, status, and last close reason
-
-Use the standard Python `print()` function to display the pool information.
+The `get_pool()` request will return the [Pool](../reference/toloka.client.pool.Pool.md) class object. You can use its attributes to print the information you need.
 
 ```python
 print(pool.private_name, pool.status, pool.last_close_reason)
@@ -32,7 +30,7 @@ You should get an output with the pool private name, status, and last close reas
 Image classification Status.CLOSED CloseReason.NOT_ENOUGH_BALANCE
 ```
 
-## Complete code: Get pool details
+## Complete code: Get pool details {#complete-code}
 
 ```python
 import toloka.client as toloka
@@ -56,7 +54,7 @@ print(pool.private_name, pool.status, pool.last_close_reason)
 - [{#T}](./learn-basics.md)
 - [{#T}](./use-cases.md)
 - [Toloka-Kit: Pool class](../reference/toloka.client.pool.Pool.md)
-- [Toloka API: Get project by ID](https://toloka.ai/docs/api/api-reference/#get-/pools/-id-)
+- [Toloka API: Get pool by ID](https://toloka.ai/docs/api/api-reference/#get-/pools/-id-)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class
-[*get_pool]: [get_pool](../reference/toloka.client.TolokaClient.get_pool.md) method
+[*get_pool]: [get_pool()](../reference/toloka.client.TolokaClient.get_pool.md) method

@@ -8,7 +8,7 @@ _Get all the projects with a certain status created after a specified date._
 
 {% include [instantiate](../_includes/recipes/instantiate.md) %}
 
-### 3. Print project IDs, titles, and creation dates {#step-six}
+### 3. Print project IDs, titles, and creation dates {#step-three}
 
 Iterate through all the projects with the `ACTIVE` status created after October 1, 2022, calling the `get_projects()` method.
 
@@ -29,7 +29,7 @@ You should get an output with the project IDs, titles, and creation dates which 
 126881 Elephant color 2022-12-29
 ```
 
-## Complete code: Get list of projects
+## Complete code: Get list of projects {#complete-code}
 
 ```python
 from datetime import datetime
@@ -59,4 +59,4 @@ for project in toloka_client.get_projects(
 - [Toloka API: Get list of projects](https://toloka.ai/docs/api/api-reference/#get-/projects)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class
-[*get_projects]: [get_projects](../reference/toloka.client.TolokaClient.get_projects.md) method
+[*get_projects]: [get_projects()](../reference/toloka.client.TolokaClient.get_projects.md) method
