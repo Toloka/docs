@@ -386,6 +386,8 @@ items:
         items:
           - name: Editing the profile
             href: guide/concepts/edit-profile.md
+          - name: Notifications
+            href: guide/concepts/notifications.md
           - name: About money
             items:
               - name: About account management
