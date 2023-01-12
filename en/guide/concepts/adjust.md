@@ -2,29 +2,27 @@
 
 By default, your tasks are available to all Tolokers. If you set [filters](filters.md), they are available only to those who match them.
 
-When there are many Tolokers, you can get results quickly, but the quality of the Tolokers' responses may be poor. The number of [active Tolokers](../../glossary.md#active-tolokers) (who will see the task if you publish it now) is displayed in the {% if locale == "en-com" %}**TOP %**{% endif %} tab to the left of the slider:
+When there are many Tolokers, you can get results quickly, but the quality of the Tolokers' responses may be poor. If you want to improve quality of the results, use the **Speed/quality balance** pool setting. 
 
-![](../_images/location-job/adjust_percentage.png)
+Select only the top-rated Tolokers using one of the filters in the personalized quality forecast:
+
+- {% if locale == "en-com" %}**TOP %**{% endif %} — Allows you to set the percentage of the top-rated Tolokers who will have access to your task.
+  ![](../_images/location-job/adjust_percentage_top.png)
+
+- {% if locale == "en-com" %}**Online**{% endif %} — Allows you to set the maximum number of the top-rated Tolokers who will have access to your task.
+  ![](../_images/location-job/adjust_percentage_online.png)
 
 You can select Tolokers for your task based on a [personalized quality forecast](../../glossary.md#personilized-quality-forecast).
 
 ## How does it work? {#how-it-works}
 
-A personalized quality forecast is based on a large amount of data about user behavior in the system, how other users completed your task, and the task itself. Based on this data, we predict in real time how well each particular user will handle your task. We select the best Tolokers by comparing quality forecasts for all users.
-
-## Improve the quality of results {#concept_cgm_vzq_xlb}
-
-You can select only the best Tolokers using one of the filters in the personalized quality forecast:
-
-- {% if locale == "en-com" %}**TOP %**{% endif %} — Allows you to set the percentage of the best Tolokers who will have access to your task.
-
-- {% if locale == "en-com" %}**Online**{% endif %} — Allows you to set the maximum number of the best Tolokers who will have access to your task.
+A personalized quality forecast is based on a large amount of data about user behavior in the system, how other users completed your task, and the task itself. Based on this data, we predict in real time how well each particular user will handle your task. We select the top-rated Tolokers by comparing quality forecasts for all users.
 
 ## Recommendations {#concept_gtb_2zk_xlb}
 
 - Make sure that the total number of Tolokers exceeds the one required to complete your task several times. Otherwise, your task may not be completed due to lack of Tolokers.
 
-- If you don't know what settings to choose, make the task available only to the best Tolokers. For example, set 20% in the {% if locale == "en-com" %}**TOP %**{% endif %} setting. If the tasks completion speed is insufficient, increase the value to get results faster.
+- If you don't know what settings to choose, make the task available only to the top-rated Tolokers. For example, set 20% in the {% if locale == "en-com" %}**TOP %**{% endif %} setting. If the tasks completion speed is insufficient, increase the value to get results faster.
 
 ## What's next {#what-next}
 
