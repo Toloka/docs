@@ -13,7 +13,7 @@ It allows you to select Tolokers based on a [personalized quality forecast](../.
   {% cut "Example" %}
 
   ![](../_images/location-job/adjust_percentage_top.png)
-  
+
   Only 40% of top-rated Tolokers will have access to your task.
 
   {% endcut %}
@@ -21,9 +21,9 @@ It allows you to select Tolokers based on a [personalized quality forecast](../.
 - **Online** — allows you to set the maximum number of top-rated Tolokers who will have access to your task.
 
   {% cut "Example" %}
-  
+
   ![](../_images/location-job/adjust_percentage_online.png)
-  
+
   Only 3000 of top-rated Tolokers will have access to your task.
 
   {% endcut %}
