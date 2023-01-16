@@ -32,7 +32,7 @@ To view detailed information about a Toloker, click on their ID.
 
 {% cut "Show blocked users" %}
 
-By default, blocked users aren't displayed. Click the **Users** drop-down list for other options:
+By default, blocked users aren't displayed. Click the **Tolokers** drop-down list for other options:
 
 - **Requester ban** — Tolokers you blocked in all your projects.
 
