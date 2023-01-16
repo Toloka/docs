@@ -14,6 +14,8 @@ This is a special type of skills in Toloka that show the general competencies of
 
 - Global skills are created by the system based on user responses to the projects of the same type.
 
+- Skills are assigned according to the percentage of correct answers. Projects created from templates are taken into account. For example, if the project is based on the Video comparison (Side-by-side) template, then the performers will receive the Video SbS global skill.
+
 - Toloker skills are updated daily by the Toloka team.
 
 - Restrictions of the `skill >80` type are used to select “Tolokers who completed similar projects better on average than 80% of other Tolokers”.
