@@ -16,9 +16,9 @@ In Toloka, there are two ways to set the task price:
 
 Every Toloker wants to earn more, so it is difficult to give exact figures. To find out the price you need to set, follow the recommendations:
 
-- Pay attention at the price suggest under the **Price per task suite, $** field. It contains the recommended price based on the minimum wage of the countries selected in the filters.
+- Pay attention to the price suggest under the **Price per task suite, $** field. It contains the recommended price based on the minimum wage of the countries selected in the filters.
 
-- Evaluate the **Toloker interest at this price** indicator. It shows how your price meets expectations of Tolokers. If the interest is low, you can raise price per task suite to have a large number of Tolokers in the project. If the interest is high, you can reduce price to save money.
+- Pay attention to the **Toloker interest at this price** indicator. It shows how your price meets expectations of Tolokers. If the interest is low, you can raise price per task suite to have a bigger number of Tolokers in the project. If the interest is high, you can reduce price to save money.
 
 - Turn on the stopwatch and measure how long it will take to read the [instructions](../../glossary.md#instructions) and complete several of your tasks. Calculate how many task suites you would complete in an hour and think what price would be fair.
 
