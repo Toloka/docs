@@ -5,8 +5,8 @@ After you press the **Start labeling** button on the pool page, your project is 
 Moderation statuses:
 
 * **Pending** — the **Start labeling** button and edit mode are inactive, preview mode is active.
-* **Rejected** — Toloka support notifies you that your project didn't pass and that you need to change it. If you didn't get any notifications, press the **Contact support** button on the pool page or on the project page.
-* **Ready for labeling** — your project has been approved, the **Start labeling** button and edit mode are avialable again.
+* **Rejected** — Toloka support notifies you that your project didn't pass and that you need to edit it. If you didn't get any notifications, press the **Contact support** button on the pool page or on the project page.
+* **Ready for labeling** — your project has been approved, the **Start labeling** button and edit mode are available again.
 
 You cannot launch:
 
