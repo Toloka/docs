@@ -162,3 +162,5 @@ To upload a [file with tasks](../../glossary.md#tsv):
 
 - [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
 - [Crowdsourcing course](https://toloka.ai/academy/self-study-guide/)
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -160,21 +160,9 @@ A Toloker who gives enough correct responses gets access to the main pool again.
 
 {% endcut %}
 
-{% cut "What's the difference between the exam pool that I pay for and the main pool?" %}
+{% include [faq-exam-main-pool](../_includes/faq/adding-tasks-to-the-pool/exam-main-pool.md) %}
 
-An exam pool contains only control tasks. Usually it's small, and intended to check how Tolokers have learned to do your tasks after they read the instructions and have completed the training.
-
-Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero. Based on the results of the control tasks, you can assign a skill to the Tolokers and then use it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
-
-{% endcut %}
-
-{% cut "How do I set up an exam so that different people can take it without running out of tasks?" %}
-
-When you load tasks, use smart mixing. In this case, you'll have infinite overlap in your exam.
-
-However, this poses the risk that you might spend a lot of money on the exam. You might want to open this pool only when the main pool opens, and close it when labeling of the main pool ends.
-
-{% endcut %}
+{% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
 
 {% cut "Request for training in crowdsourcing and working with Toloka" %}
 

@@ -90,4 +90,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-output-data](../_includes/faq/project-settings/output-data.md) %}
 
+{% include [faq-control-product](../_includes/faq/project-settings/control-product.md) %}
+
 {% include [contact-support](../_includes/contact-support.md) %}

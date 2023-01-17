@@ -80,47 +80,23 @@ You can also [ban](#ban) this Toloker from your project.
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "My project has a trusted Toloker who was banned by the system" %}
+{% include [troubleshooting-trusted-user-banned](../_includes/troubleshooting/users/trusted-user-banned.md) %}
 
-Unfortunately, this Toloker has violated the user agreement and will no longer be able to complete tasks. You can find new Tolokers or customize [filters](filters.md) so that they better match the project requirements.
-
-{% endcut %}
-
-{% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
-
-You can deny access to the pool if the Toloker's responses are [too fast](quick-answers.md), if they don't match the [majority vote](mvote.md), or if the Toloker makes too many mistakes in [control tasks](goldenset.md). Tasks completed by such Tolokers can be [given to other Tolokers](restore-task-overlap.md).
-
-{% endcut %}
+{% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
 
 {% include [faq-redo-task](../_includes/faq/users/redo-task.md) %}
 
 {% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
-{% cut "Fraudulent Tolokers submit assignments with empty response fields. Are they going to be banned before the responses of other Tolokers are known?" %}
-
-Fraudulent Tolokers aren't banned before the [majority vote](mvote.md) is known. That's why we recommend that you have new Tolokers complete [training](train.md) or a test. Then you can select the Tolokers that successfully completed the training to do your tasks.
-
-{% endcut %}
+{% include [faq-empty-response](../_includes/faq/users/empty-response.md) %}
 
 {% include [faq-cheaters-paid](../_includes/faq/users/cheaters-paid.md) %}
 
-{% cut "Tolokers completed the training successfully, but have poor results in the general task" %}
-
-During the training, Tolokers follow the task instructions and practice completing your tasks. Based on the training results, the requester can select Tolokers who did well enough to get access to the main pool. However, the mere fact that the Toloker completes your training pool successfully does not guarantee that they will continue to demonstrate high-quality performance. Tolokers who did well on the training but had inadequate results in the general task might have obtained correct training responses from other people.
-
-In addition to the training, be sure to set up [quality control rules](control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [non-automatic acceptance](offline-accept.md) to pay for them only after reviewing the responses.
-
-{% endcut %}
+{% include [troubleshooting-poor-results](../_includes/troubleshooting/users/poor-results.md) %}
 
 {% include [troubleshooting-include-responses](../_includes/troubleshooting/users/include-responses.md) %}
 
-{% cut "How can I ban a user and reject all their responses?" %}
-
-You can't automatically reject the responses of a banned Toloker.
-
-But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned users to other Tolokers using the [Re-completion of assignments from banned users](restore-task-overlap.md) rule.
-
-{% endcut %}
+{% include [faq-ban-and-reject](../_includes/faq/users/ban-and-reject.md) %}
 
 {% cut "Contact support" %}
 

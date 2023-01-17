@@ -198,24 +198,10 @@ d) the result of the Task does not comply with the Instruction.
 
 {% include [faq-fix-myself](../_includes/faq/result-questions/fix-myself.md) %}
 
-{% cut "What should I do if I want to accept a completed task but the pool is already archived or the Toloker wrote to me after the allowed time?" %}
+{% include [troubleshooting-pool-archived](../_includes/troubleshooting/result-questions/pool-archived.md) %}
 
-Simply [give the Toloker a separate reward](bonus.md) without changing the task status. You can't change the task status in the pool in this case.
+{% include [troubleshooting-rejected-task](../_includes/troubleshooting/result-questions/rejected-task.md) %}
 
-{% endcut %}
-
-{% cut "What should I do if I rejected a task for a reason that isn't specified in the instructions?" %}
-
-Accept the task and update the instructions. Otherwise, you violate the [**Requester Agreement**]({{ customeragreement }}) that requires you to clearly state the task requirements and the results expected from the Toloker.
-
-{% endcut %}
-
-{% cut "Can I reject part of the responses on the page and accept part of them?" %}
-
-No. For example, there are 10 tasks in a suite that costs $0.1, and the Toloker did 2 of them incorrectly.
-
-You can't accept the correct answers and pay for this part ($0.08). Response pages are accepted or rejected in their entirety.
-
-{% endcut %}
+{% include [faq-reject-part](../_includes/faq/result-questions/reject-part.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

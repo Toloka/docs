@@ -73,27 +73,15 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Where can I set the task price?" %}
-
-You can set a price for your task suite on the pool editing page. The minimum price for regular pools is $0.005.
-
-{% endcut %}
+{% include [faq-set-task-price](../_includes/faq/finance/set-task-price.md) %}
 
 {% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
 
-{% cut "How do I pay more to users who fill out optional fields?" %}
-
-You can issue rewards after completion and describe the criteria for increased rewards in your task instructions. You can't change the task suite price dynamically based on the completion results.
-
-{% endcut %}
+{% include [faq-pay-more-optional-fields](../_includes/faq/finance/pay-more-optional-fields.md) %}
 
 {% include [faq-awards-statistics](../_includes/faq/finance/awards-statistics.md) %}
 
-{% cut "Can there be tasks with different prices in the pool?" %}
-
-No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](bonus.md) to good Tolokers.
-
-{% endcut %}
+{% include [faq-tasks-with-different-prices](../_includes/faq/finance/tasks-with-different-prices.md) %}
 
 [Get closing documents and invoices](../troubleshooting/support.md#feedback_g3b_vj3_qjb)
 

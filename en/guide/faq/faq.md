@@ -10,17 +10,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
-{% cut "How do I change the phone number in my account?" %}
-
-To change your phone number, go to [Yandex ID]({{ phones }}) and change your main number.
-
-{% note info %}
-
-If you don't have access to the old number, it takes a month to replace it. For more information about changing the phone number, see [Yandex ID Help]({{ change-phone }}).
-
-{% endnote %}
-
-{% endcut %}
+{% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
 
 ## Sandbox {#sandbox}
 
@@ -122,243 +112,63 @@ If you don't have access to the old number, it takes a month to replace it. For 
 
 {% include [faq-output-data](../_includes/faq/project-settings/output-data.md) %}
 
+{% include [faq-control-product](../_includes/faq/project-settings/control-product.md) %}
+
 ## Setting up a pool {#pool-settings}
 
 ### Filters {#filters}
 
-{% cut "Can I select Tolokers from a specific city of residence or is the only option “Region by IP”?" %}
+{% include [faq-specific-city](../_includes/faq/pool-setup/specific-city.md) %}
 
-Yes, you can do that. In the [filters](../concepts/filters.md), select {% if locale == "en-com" %}**Profile → City**{% endif %}. Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-{% endcut %}
+{% include [faq-calculate-skill](../_includes/faq/pool-setup/calculate-skill.md) %}
 
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
+{% include [faq-assign-skill](../_includes/faq/pool-setup/assign-skill.md) %}
 
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
+{% include [faq-limit-number-tolokers](../_includes/faq/pool-setup/limit-number-tolokers.md) %}
 
-{% endcut %}
+{% include [faq-arbitrary-user](../_includes/faq/pool-setup/arbitrary-user.md) %}
 
-{% cut "I want to calculate a skill based on performance in multiple projects. Is that possible? If it is, can I use “Aggregation by skill”?" %}
+{% include [faq-skill-expiration](../_includes/faq/adding-tasks-to-the-pool/skill-expiration.md) %}
 
-If you mean multiple different projects, you can't do that.
+{% include [faq-demographic-geo-params](../_includes/faq/pool-setup/demographic-geo-params.md) %}
 
-You can merge all the projects into one and use **History size** in the quality control rules. See examples in the [Control tasks](../concepts/goldenset.md) post.
+{% include [faq-task-available](../_includes/faq/pool-setup/task-available.md) %}
 
-You can use **Aggregation by skill**, but you'll need to list all the possible values, which is probably not the best choice. Perhaps you'll find [another method of aggregation](../concepts/result-aggregation.md) helpful.
+{% include [faq-select-specific-tolokers](../_includes/faq/pool-setup/select-specific-tolokers.md) %}
 
-{% endcut %}
+{% include [faq-set-up-filter](../_includes/faq/pool-setup/set-up-filter.md) %}
 
-{% cut "Are there any easy ways to assign a certain user a skill in Toloka, even if the Toloker didn't do any tasks (like I can do in the Sandbox)?" %}
+{% include [faq-two-filters](../_includes/faq/pool-setup/two-filters.md) %}
 
-In the main Toloka version, you can only assign a skill to users who have completed at least one of your tasks. There is no option to assign a skill to an arbitrary user. To limit the audience of users who will see your project, use [filters](../concepts/filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
+{% include [faq-raise-skill](../_includes/faq/pool-setup/raise-skill.md) %}
 
-{% endcut %}
+{% include [faq-assigned-skill](../_includes/faq/pool-setup/assigned-skill.md) %}
 
-{% cut "Can I somehow limit the number of users that can take tasks from the pool at the same time?" %}
+{% include [faq-show-skill](../_includes/faq/pool-setup/show-skill.md) %}
 
-Tasks from an open pool are available to every user that matches your pool [filters](../concepts/filters.md). You can restrict access, like by using a skill.
+{% include [faq-find-gender](../_includes/faq/pool-setup/find-gender.md) %}
 
-{% endcut %}
-
-{% cut "Which parameter affects skill expiration?" %}
-
-The validity period of the training skills is controlled by the **Retry after** parameter. The skill is deleted after a period specified in days in the **Retry after** field, if the Toloker:
-
-- Has a skill value lower than the one specified in the **Level required** field.
-
-- Didn't complete any tasks linked to training during this period.
-
-Your users will need to be trained again.
-
-{% endcut %}
-
-{% cut "Can I add an arbitrary user as a Toloker?" %}
-
-If the Toloker mismatches your preset filter, they can't see the task. You can only remove the restricting filter from the pool. You can test the task in the [Sandbox](../concepts/sandbox.md) by adding the desired user to your trusted list.
-
-{% endcut %}
-
-{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30–45 years old”." %}
-
-You can do that. To select Tolokers for the pool, use [filters](../concepts/filters.md).
-
-{% endcut %}
-
-{% cut "How do I make the task available not only from desktops, but also from mobile devices?" %}
-
-Tasks in pools are automatically available in the web version of Toloka and the mobile app. Check the pool settings. You might have the `Client = Mobile Toloka`[filter](../concepts/filters.md) on.
-
-{% endcut %}
-
-{% cut "Can I select specific Tolokers for my tasks because I liked their results in my previous pools?" %}
-
-You can assign a skill to these people based on their performance in the previous pools. Use this skill as a [filter](../concepts/filters.md) in the new pool.
-
-{% endcut %}
-
-{% cut "How do I set up a filter so that the pool is available to users who don't have a specific skill (like a “spammer”)?" %}
-
-Specify this skill as a [filter](../concepts/filters.md), but leave the value field empty (this is equivalent to absence of the skill).
-
-{% endcut %}
-
-{% cut "How can I raise the skill value for a user, if they already have the skill?" %}
-
-If the Toloker already has a given skill, you can't add the same skill to them from the task review interface. You can open the Toloker's profile and edit the skill value.
-
-{% endcut %}
-
-{% cut "Can Toloka users see that they were assigned a skill?" %}
-
-If it's a public or training skill, they see it and they get a message about it.
-
-{% endcut %}
-
-{% cut "Can I show a skill in the task interface?" %}
-
-There is no such option. If the skill is public, the Toloker sees it in their profile.
-
-{% endcut %}
-
-{% cut "Why can't I find the Toloker's gender in the Toloker data, although I can filter people by this attribute in the pool settings?" %}
-
-Requesters can't see the full details about specific Tolokers. So you can't see information like the date of birth, gender, last name, or first name. However, you can use filters by date of birth and gender (in the pool settings). This way you can select a group of Tolokers without accessing the personal information of individual Tolokers. This decreases the risk of user de-anonymization.
-
-{% endcut %}
-
-{% cut "How do I automatically assign skills based on user responses to my questions?" %}
-
-You can do that using the [Control tasks](../concepts/goldenset.md) rule.
-
-1. Upload the task file using **Smart mixing**.
-
-1. Specify `student` as the correct answer to the question. Don't take other questions into account (leave the fields empty or unselected).
-
-1. Add the [Control tasks](../concepts/goldenset.md) rule to the pool: `if the percentage of correct control answers = 100, then set the skill value Student = 1`.
-
-{% endcut %}
-
-{% cut "See the screenshot" %}
-
-![](../_images/troubleshooting/set-questionnaire-skill-student.png)
-
-{% endcut %}
+{% include [faq-auto-assign-skill](../_includes/faq/pool-setup/auto-assign-skill.md) %}
 
 ### Quality control {#quality-control}
 
-{% cut "How do I set quality control in a pool correctly?" %}
+{% include [faq-set-quality-control](../_includes/faq/pool-setup/set-quality-control.md) %}
 
-The settings for [quality control](../../glossary.md#quality-control) rules depend on the type of tasks. General recommendations:
+{% include [faq-how-many-control-tasks](../_includes/faq/pool-setup/how-many-control-tasks.md) %}
 
-- Always use one or more ways to control quality of answers.
+{% include [faq-add-control-tasks](../_includes/faq/pool-setup/add-control-tasks.md) %}
 
-- Counting [fast responses](../concepts/quick-answers.md) makes sense for most tasks.
+{% include [faq-correct-responses-counted](../_includes/faq/pool-setup/correct-responses-counted.md) %}
 
-- If the Toloker has to choose between options (for example, by selecting checkboxes), check the answers using [majority vote](../concepts/mvote.md) or [control tasks](../concepts/goldenset.md).
+{% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
-- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](../concepts/accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](../concepts/dynamic-overlap.md) and [majority vote](../concepts/mvote.md) check.
-
-- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task) with artificial examples where the choice is evident.
-
-{% endcut %}
-
-{% cut "How many control tasks do I need to add?" %}
-
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
-
-{% cut "Why's that?" %}
-
-Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
-
-There shouldn't be too few pages available. Otherwise:
-
-- You won't be able to correctly evaluate the quality of the Toloker's responses.
-
-- The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
-
-{% cut "Example" %}
-
-#### A large pool with 1% of control tasks (good)
-
-There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, a user can complete up to 100 suites.
-
-#### A small pool with 1% control tasks (bad)
-
-There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can only complete 1 suite.
-
-#### A small pool with 10% control tasks (good)
-
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
-
-{% endcut %}
-
-{% endcut %}
-
-If there are few control tasks in the open pool, [add new control tasks](pool-setup.md#add-gs).
-
-{% cut "What for" %}
-
-In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
-
-{% endcut %}
-
-{% note info %}
-
-To filter out Tolokers, use the [Control tasks](../concepts/control.md) quality control rule. To rank Tolokers by the quality of responses in control tasks, use a [skill](../concepts/nav.md).
-
-{% endnote %}
-
-{% endcut %}
-
-{% cut "How do I add new control tasks to an open pool?" %}
-
-To make new task suites available to all users, including those who have already completed tasks in this pool:
-
-1. Stop the pool.
-
-1. [Upload the file](../concepts/task_upload.md) with new control tasks.
-
-1. Start the pool.
-
-For open pools, we don't recommend creating control tasks from other types of tasks that have already been completed. This is because users who have already given their responses to them won't be able to re-complete such tasks as control tasks. In order for these users to continue completing task suites, the control tasks in the pool must be new.
-
-{% endcut %}
-
-{% cut "How are the correct responses to control questions counted?" %}
-
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
-
-As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
-
-{% endcut %}
-
-{% cut "Should I create a skill for every pool?" %}
-
-It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
-
-- Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
-
-    - The pools are intended for different groups of Tolokers (for example, there are filters by city or country).
-
-    - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
-
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
-
-- Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
-
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
-{% endcut %}
-
-{% cut "Can I make my training or control tasks totally different from the general tasks?" %}
-
-Your [training](../concepts/train.md) and control tasks have the same project specification. However, you can create a separate project with the tasks and assign a skill based on user responses. Then you can admit Tolokers to the main project based on their skill.
-
-{% endcut %}
+{% include [faq-make-different](../_includes/faq/pool-setup/make-different.md) %}
 
 {% cut "Isn't the exam a regular pool that I pay for? How does it differ from a regular pool?" %}
 
-An exam pool contains only control tasks. It's usually small and used for checking how well users learned to do your tasks after they read the instructions and completed the [training](../concepts/additionals-q.md#selection). Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero.
+An exam pool contains only control tasks. It's usually small and used for checking how well Tolokers learned to do your tasks after they read the instructions and completed the [training](../concepts/additionals-q.md#selection). Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero.
 
 Based on the results of responses to control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `MySkill = 80 or = Is missing`. You don't have to create an exam. For simple tasks, the training pool provides enough practice, but many requesters also use exams.
 
@@ -370,27 +180,21 @@ Yes, the [fast response](../concepts/quick-answers.md) settings specify the time
 
 {% endcut %}
 
-{% cut "I set up a rule to ban users after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
+{% cut "I set up a rule to ban Tolokers after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
 
-Indeed, this rule is probably too strict. Even the most careful user can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban users who regularly fail captcha checks in Toloka.
+Indeed, this rule is probably too strict. Even the most careful Toloker can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban Tolokers who regularly fail captcha checks in Toloka.
 
 {% endcut %}
 
-{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
+{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a Toloker quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
 
 Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
 
 {% endcut %}
 
-{% cut "How do I set up an exam so that different people can take it without running out of tasks?" %}
+{% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
 
-When you load tasks, use smart mixing. In this case, you'll have infinite overlap in your exam.
-
-However, this poses the risk that you might spend a lot of money on the exam. You might want to open this pool only when the main pool opens, and close it when labeling of the main pool ends.
-
-{% endcut %}
-
-{% cut "How do I test users to determine which kinds of tasks they do better and assign them relevant tasks?" %}
+{% cut "How do I test Tolokers to determine which kinds of tasks they do better and assign them relevant tasks?" %}
 
 You can add a [training pool](../concepts/train.md) to test your Tolokers. Based on the test results, assign skills to the Tolokers for the tasks they do best.
 
@@ -406,49 +210,29 @@ If the Toloker already got paid for the tasks, the money can't be refunded to yo
 
 {% endcut %}
 
-{% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
+{% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
 
-The frequency of issuing [captchas](../concepts/captcha.md) is set up in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
-{% cut "Can one Toloker get access to two pools in the same project? Can I avoid that?" %}
-
-Yes, if they can access both pools, they can do both of them. To restrict access to subsequent tasks for a Toloker, use the [Completed tasks](../concepts/submitted-answers.md) rule and select a ban at the project level.
-
-{% endcut %}
+{% include [faq-get-access](../_includes/faq/pool-setup/get-access.md) %}
 
 {% cut "If I ban a Toloker for doing my tasks too fast, will all their responses be deleted and given to other Tolokers for labeling?" %}
 
 No. The responses of these Tolokers aren't automatically excluded from the final results file.
 
-But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned users to other Tolokers using the [Re-completion of assignments from banned users](../concepts/restore-task-overlap.md) rule.
+But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned Tolokers to other Tolokers using the [Re-completion of assignments from banned users](../concepts/restore-task-overlap.md) rule.
 
 {% endcut %}
 
-{% cut "Can I create two active training pools, one for practice and the other for admitting users to the main pool? In other words, one pool is for users to practice and the other pool tests them." %}
+{% cut "Can I create two active training pools, one for practice and the other for admitting Tolokers to the main pool? In other words, one pool is for Tolokers to practice and the other pool tests them." %}
 
 Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
-In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool user requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
+In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool Toloker requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
 
 {% endcut %}
 
 {% cut "Can I get more details on the best practices for using captchas? For which projects is it better to use captchas and how often?" %}
 
-[Captcha](../concepts/captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
+[Captcha](../concepts/captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and Tolokers don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
 
 The frequency of issuing captchas is configured in the pool.
 
@@ -502,15 +286,15 @@ If you pass texts to the input data, you can load 2 different tasks in the pool.
 
 {% endcut %}
 
-{% cut "If I ban users from my project so that everyone can complete a maximum of one task, are the Tolokers notified of the ban?" %}
+{% cut "If I ban Tolokers from my project so that everyone can complete a maximum of one task, are the Tolokers notified of the ban?" %}
 
 No, the Tolokers are unaware of the ban.
 
 {% endcut %}
 
-{% cut "What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?" %}
+{% cut "What output format do I use for the review results to filter out mismatching Tolokers based on the “Majority vote”?" %}
 
-To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](../concepts/mvote.md) to the pool.
+To perform actions with Tolokers (assign a skill or ban them) based on the majority vote, add a relevant [rule](../concepts/mvote.md) to the pool.
 
 Don't forget to enable **Keep task order** in the pool parameters. Majority vote is used in the projects with preset options (radio buttons or checkboxes). This rule won't apply to the text entry or file upload fields.
 
@@ -550,17 +334,9 @@ The best overlap is an overlap that provides satisfying quality of results. For 
 
 {% endcut %}
 
-{% cut "Can I change overlap after the pool is started?" %}
+{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
-Yes. [Open edit mode for the pool](../concepts/pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
-
-{% endcut %}
-
-{% cut "With dynamic overlap, is it possible that the pool will close before the tasks for minimal overlap run out? The overlap increased, but the pool is closed, and I need to start it manually." %}
-
-Yes, this might happen. You must set an adequate pool closing interval.
-
-{% endcut %}
+{% include [faq-dynamic-overlap](../_includes/faq/pool-setup/dynamic-overlap.md) %}
 
 {% cut "How does counting work if I set `overlap = 3` in the pool and `response threshold = 3` in the majority vote?" %}
 
@@ -582,11 +358,7 @@ You can use overlap to let multiple Tolokers do the same task. The overlap value
 
 {% endcut %}
 
-{% cut "Why is the maximum number of submitted assignments in the progress bar less than the total number of uploaded tasks?" %}
-
-The progress bar shows the number of task suites including the overlap. If the overlap is greater than one, the number of task suites is different from the total number of tasks.
-
-{% endcut %}
+{% include [troubleshooting-max-number](../_includes/troubleshooting/pool-setup/max-number.md) %}
 
 ## Adding tasks to a pool {#add-task-to-pool}
 

@@ -103,16 +103,8 @@ You can track money deducted for extra rewards in your [profile]({{ profile }}) 
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I reward Tolokers in addition to the basic task price?" %}
+{% include [faq-reward](../_includes/faq/users/reward.md) %}
 
-You can increase the basic task price for Tolokers that have a higher skill. To do this, set up [Dynamic pricing](dynamic-pricing.md). If you want to motivate high-quality Tolokers regardless of their skill, use [rewards](../troubleshooting/users.md). In your task instructions, specify the amount and conditions for the Toloker rewards.
-
-{% endcut %}
-
-{% cut "How can I view statistics on paid rewards?" %}
-
-To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Spent** tab.
-
-{% endcut %}
+{% include [faq-stat-rewards](../_includes/faq/users/stat-rewards.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

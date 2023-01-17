@@ -218,16 +218,8 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Can I change overlap after the pool is started?" %}
+{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
-Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
-
-{% endcut %}
-
-{% cut "With dynamic overlap, is it possible that the pool will close before the tasks for minimal overlap run out? The overlap increased, but the pool is closed, and I need to start it manually." %}
-
-Yes, this might happen. You must set an adequate pool closing interval.
-
-{% endcut %}
+{% include [faq-dynamic-overlap](../_includes/faq/pool-setup/dynamic-overlap.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -218,13 +218,7 @@ The third thing to consider is quality control and assignment review. If you use
 
 {% endcut %}
 
-{% cut "How do I specify smart mixing settings in the interface when uploading a file?" %}
-
-Smart mixing settings are specified for the file rather than for the pool.
-
-The settings specified during the first file upload are applied to all the files that are uploaded to this pool later on.
-
-{% endcut %}
+{% include [faq-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/smart-mixing.md) %}
 
 {% cut "What is the right time limit for the task completion?" %}
 Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
@@ -288,13 +282,7 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% endcut %}
 
-{% cut "How are the correct responses to control questions counted?" %}
-
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
-
-As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
-
-{% endcut %}
+{% include [faq-correct-responses-counted](../_includes/faq/pool-setup/correct-responses-counted.md) %}
 
 {% endcut %}
 

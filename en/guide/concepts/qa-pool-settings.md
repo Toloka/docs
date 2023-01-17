@@ -117,11 +117,7 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 
 {% endcut %}
 
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
-
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
-
-{% endcut %}
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
 {% cut "I set up quality control, after which I copied my Toloker requirements. All my quality control settings were deleted and replaced with the copied settings. Is that normal?" %}
 
@@ -248,13 +244,7 @@ Based on the results of the control tasks, you can assign a skill to Tolokers an
 
 {% endcut %}
 
-{% cut "How do I set up an exam so that different people can take it without running out of tasks?" %}
-
-When you load tasks, use smart mixing. In this case, you'll have infinite overlap in your exam.
-
-However, this poses the risk that you might spend a lot of money on the exam. You might want to open this pool only when the main pool opens, and close it when labeling of the main pool ends.
-
-{% endcut %}
+{% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
@@ -292,11 +282,7 @@ No, they can't.
 
 {% endcut %}
 
-{% cut "When I export a project from the Sandbox, the task files are not exported. Is this how it's supposed to work? I suddenly lost the markup of the control tasks that I created in the sandbox." %}
-
-The tasks themselves are not exported, only the project configuration and the settings of the selected pool. However, you can download your marked up tasks from the **Sandbox** pool and import them to the pool you created. To download the control tasks only (if you marked them up in the interface), go to **Mark up**, then click **Control tasks** and **Download**.
-
-{% endcut %}
+{% include [troubleshooting-export](../_includes/troubleshooting/pool-setup/export.md) %}
 
 {% endcut %}
 
@@ -308,11 +294,7 @@ You can deny access to the pool if the Toloker's responses are [too fast](quick-
 
 {% endcut %}
 
-{% cut "If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?" %}
-
-If the Toloker already got paid for the tasks, you can't get your money back.
-
-{% endcut %}
+{% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
 {% cut "If I ban Tolokers from my project so that everyone can complete a maximum of one task, will they be notified?" %}
 
