@@ -1,4 +1,4 @@
-# Results of manual review
+# Results of assignment review
 
 If you don't want Tolokers who made a lot of mistakes to do your tasks in the future, set up this quality control rule.
 

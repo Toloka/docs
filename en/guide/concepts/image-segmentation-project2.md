@@ -196,11 +196,11 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
                 This means that a user who completes a [task suite](../../glossary.md#task-suite) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
 
-        - {% if locale == "en-com" %}**Results of manual review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
+        - {% if locale == "en-com" %}**Results of assignment review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
 
             1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
 
-            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of manual review**{% endif %}.
+            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of assignment review**{% endif %}.
 
             1. Set a rule for rejected tasks: if {% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** and {% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35**, then {% if locale == "en-com" %} **ban**{% endif %} {% if locale == "en-com" %} **on requester**{% endif %} for {% if locale == "en-com" %} **15 days**{% endif %}.
 

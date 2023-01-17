@@ -116,7 +116,7 @@ Before you begin:
 
     1. Delete the pre-configured {% if locale == "en-com" %}**Majority vote**{% endif %} rule.
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of manual review**{% endif %}, and enter the following values:
+    1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of assignment review**{% endif %}, and enter the following values:
 
         [![Create a pool. Selection results rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-rule.png)
 
@@ -309,7 +309,7 @@ You can't also use [training](../../glossary.md#training-pool) and the main pool
 
 Such tasks are usually run with manual review: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
 
-For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the {% if locale == "en-com" %}**Results of manual review**{% endif %} rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
+For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the {% if locale == "en-com" %}**Results of assignment review**{% endif %} rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
 
 {% endcut %}
 

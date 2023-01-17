@@ -122,9 +122,9 @@ Before you begin:
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of manual review**{% endif %}, and enter the following values:
+    1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of assignment review**{% endif %}, and enter the following values:
 
-        [![Create a pool. Results of manual review rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png)
+        [![Create a pool. Results of assignment review rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png)
 
         This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
