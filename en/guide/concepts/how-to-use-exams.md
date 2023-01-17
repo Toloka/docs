@@ -94,7 +94,7 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
 ## Examples of settings {#examples}
 
-#### Main pool
+### Main pool
 
 By introducing training and testing, you can ensure that the labeling tasks go to those Tolokers who can deliver high-quality results. But you need to monitor the quality of responses in the main pool as well.
 
@@ -110,7 +110,7 @@ In this case, your general tasks are only labeled by top-performing Tolokers or 
 
 ![](../_images/control-rules/exam/general-pool.png =700x)
 
-#### Passing the exam in several attempts
+### Passing the exam in several attempts
 
 Usually the test is passed once. However, you can give multiple chances to your Tolokers. For example, 10 tasks are enough to pass the test. Upload 5 pages, 10 tasks each, to the exam pool. In the pool settings, add a {% if locale == "en-com" %}**Control tasks**{% endif %} rule.
 
