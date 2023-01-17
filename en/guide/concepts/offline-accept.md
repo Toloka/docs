@@ -34,7 +34,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
 {% endcut %}
 
-You can review responses manually or with the help of Tolokers by posting [a separate review task](find_an_item_in_store.md).
+You can review responses manually or with the help of Tolokers by posting a separate review task.
 
 {% cut "Pool status and the review results" %}
 
