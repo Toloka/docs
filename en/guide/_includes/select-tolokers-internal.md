@@ -30,15 +30,15 @@ To view detailed information about a Toloker, click on their ID.
 
 {% endcut %}
 
-{% cut "Show blocked users" %}
+{% cut "Show blocked Tolokers" %}
 
-By default, blocked users aren't displayed. Click the **Tolokers** drop-down list for other options:
+By default, blocked Tolokers aren't displayed. Click the **Tolokers** drop-down list for other options:
 
 - **Requester ban** — Tolokers you blocked in all your projects.
 
 - **System ban** — Tolokers blocked in the platform for violating the rules, poor response quality, or frequent errors when entering captcha.
 
-- **All** — Show both blocked and not blocked users.
+- **All** — Show both blocked and not blocked Tolokers.
 
 ![](../_images/other/users-ban-filter.png)
 
