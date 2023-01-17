@@ -171,3 +171,7 @@ Determines whether to re-open a closed pool:
 - `true` — Open the pool after making changes if it is closed.
 - `false` — Don't open the pool after making changes, if it is closed.||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/reassessment-after-accepting.md)

@@ -4,11 +4,7 @@ In this tutorial, you will learn how to create a survey form and run a survey in
 
 Survey is a type of data collection task with several types of closed-ended and open-ended questions.
 
-{% note info %}
-
-To learn how to run a survey using an external survey form, see the [Survey on third-party platform](questionnaire-other.md) tutorial.
-
-{% endnote %}
+{% include [other-survey-solutions](../_includes/tutorials/other-survey-solutions.md) %}
 
 ## Prerequisites {#prerequisites}
 
@@ -54,7 +50,7 @@ Before you begin:
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the [example](https://ya.cc/t/PQl1mCfy3bVK59) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project.
+    1. Copy the code of the [example](https://ya.cc/t/W-EbIhFc3ttAKm) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project.
 
     1. Edit the code: change questions, hints, and answer options. For example, to configure the text of the answer option, replace the sample answers with your values in the following properties:
 
@@ -266,13 +262,16 @@ In the task interface settings, use the `field.text` or `field.textarea` compone
 
 {% endcut %}
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Template Builder — survey](../../template-builder/templates/survey.md)
-- [Toloka-Kit — survey](https://github.com/Toloka/toloka-kit/blob/main/examples/7.survey/simplest_survey/simplest_survey.ipynb)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Template Builder: Survey](../../template-builder/templates/survey.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Survey](https://github.com/Toloka/toloka-kit/blob/main/examples/7.survey/simplest_survey/simplest_survey.ipynb)
 
 ## Datasets and reference {#datasets}
 

@@ -28,4 +28,8 @@ where:
 
 - A low indicator is `> 20%`.
 
+## See also {#see-also}
+
+- [{#T}](../qa-pool-settings.md)
+
 {% include [contact-support](../../_includes/contact-support.md) %}

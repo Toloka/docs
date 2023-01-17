@@ -1,5 +1,5 @@
 # run
-`toloka.metrics.collector.MetricCollector.run` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/collector.py#L72)
+`toloka.metrics.collector.MetricCollector.run` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/collector.py#L72)
 
 ```python
 async run(self)

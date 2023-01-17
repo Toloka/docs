@@ -14,7 +14,7 @@ If you need formatted text, use [view.markdown](view.markdown.md).
 || `hint` | _string_ | Hint text. ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/amHA8)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/tq6fCNm_3ttFBW)
 
 [Learn more about RTL languages](https://www.w3.org/International/questions/qa-scripts). ||
 || `rtl.mode` | _string_ | Display mode:

@@ -202,7 +202,9 @@ The project has a pool that can only be accessed through [training](train.md), b
 
 {% endcut %}
 
-See also:
+## See also {#see-also}
+
+- [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
 
 - [Detailed video course for requesters]({{ videocourse-about-decomposition }}). Designed for those who want to use Toloka for creating projects and for those who want to become a Toloka partner.
 

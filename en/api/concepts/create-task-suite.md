@@ -227,7 +227,7 @@ The default value is `0`. ||
 
 Type of operation for creating a task suite:
 
-- `true` — Automatically with the "smart mixing" option (for more information, see the [Requester's guide](../../guide/concepts/task_upload.md)).
+- `true` — Automatically with the "smart mixing" option (for more information, see the [documentation](../../guide/concepts/task_upload.md)).
 - `false` — Manually.||
 |#
 
@@ -247,7 +247,7 @@ It includes:
 ID of a task suite. ||
 || **tasks[].id** | **string**
 
-Task ID if the task suite is created automatically with the "smart mixing" option (for more information, see the [Requester's guide](../../guide/concepts/task_upload.md)). ||
+Task ID if the task suite is created automatically with the "smart mixing" option ([learn more](../../guide/concepts/task_upload.md)). ||
 || **tasks[].origin_task_id** | **string**
 
 The ID of a task from another pool from which this task was copied for majority vote verification.

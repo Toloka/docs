@@ -134,7 +134,7 @@ Learn more about this in the [**Review results**](reviewing-assignments.md) rule
 
 {% endcut %}
 
-## What's next {#next-steps}
+## What's next {#what-next}
 
 - [Add tasks to the pool](pool.md)
 - Learn more about how to set up a pool:

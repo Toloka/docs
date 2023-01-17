@@ -122,7 +122,7 @@ Before you begin:
 
         These settings mean that a Toloker who completes 3 or more task suites in less than 15 seconds will be blocked and won't be able to access your tasks anymore.
 
-        A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–20 tasks per suite.
+        A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–12 tasks per suite.
 
         {% note tip %}
 
@@ -269,11 +269,11 @@ At this step, upload your task data to Toloka.
 
     - {% if locale == "en-com" %}**CONFIDENCE**{% endif %}: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
 
 ## Datasets and reference {#datasets}
 

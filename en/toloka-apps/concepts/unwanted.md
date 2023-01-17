@@ -62,7 +62,7 @@ The name of the task must match its content, description, and instructions.
 
 Toloka reserves the right to check the platform's public resources and block tasks that do not meet the aforementioned conditions.
 
-{% cut "Requirements in effect prior to 7:59 on March 9, 2022 (Moscow time)" %}
+{% cut "Requirements in effect prior to 7:59 on March 9, 2022" %}
 
 **You can't post tasks that:**
 
@@ -104,7 +104,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 {% endcut %}
 
-{% cut "Requirements in effect prior to 7:59 on October 14, 2021 (Moscow time)" %}
+{% cut "Requirements in effect prior to 7:59 on October 14, 2021" %}
 
 **You can't post tasks that:**
 
@@ -140,7 +140,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 {% endcut %}
 
-{% cut "Requirements in effect prior to 7:59 on February 20, 2021 (Moscow time)" %}
+{% cut "Requirements in effect prior to 7:59 on February 20, 2021" %}
 
 **You can't post tasks that:**
 
@@ -168,7 +168,7 @@ Read more in the [Requester agreement](https://toloka.ai/legal/customeragreement
 
 {% endcut %}
 
-{% cut "Requirements in effect prior to 7:59 on January 23, 2019 (Moscow time)" %}
+{% cut "Requirements in effect prior to 7:59 on January 23, 2019" %}
 
 You can publish any tasks that require analyzing or creating content. Toloka **isn't intended** for tasks that could harm performers. Your account might be blocked if tasks:
 

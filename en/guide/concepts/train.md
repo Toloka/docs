@@ -183,6 +183,15 @@ If these buttons don't work, make sure that all the main pools that the training
 - [Start the pool](pool-run-and-stop.md).
 - To view the training statistics, go to the [Skills]({{ skills }}) page and choose a skill named `<project name> - training`.
 
+## See also {#see-also}
+
+- [{#T}](distribute-tasks-by-pages.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Training](../../api/concepts/training.md)
+- [Toloka-Kit: Creating training](../../toloka-kit/reference/toloka.client.TolokaClient.create_training.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Setting up training" %}

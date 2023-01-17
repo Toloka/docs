@@ -26,6 +26,18 @@ To better motivate Tolokers, make the skill public and set [dynamic pricing](../
 
 [Assign a skill](nav-assign.md) either manually or automatically.
 
+## See also {#see-also}
+
+- [{#T}](nav-use.md)
+- [{#T}](nav-edit.md)
+- [{#T}](nav-delete.md)
+- [{#T}](filters.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Creating skill](../../api/concepts/create-skill.md)
+- [Toloka-Kit: Creating skill](../../toloka-kit/reference/toloka.client.TolokaClient.create_skill.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

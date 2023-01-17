@@ -98,6 +98,11 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 {% endlist %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Recompletion of assignments](../../api/concepts/restore-task-overlap.md)
+- [Toloka-Kit: UsersAssessment collector class](../../toloka-kit/reference/toloka.client.collectors.UsersAssessment.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "What overlap should I set?" %}

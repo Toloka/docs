@@ -4,7 +4,7 @@ This section contains the code examples for reading from the input data (`data.i
 
 Read and write for interim data (`data.internal`) is similar.
 
-For more information on how to add a quotation mark `"`, backslash `\`, line break, or tab to the object in the input data, see [If you're not familiar with JSON](../quickstart.md). For more information about escaping in TSV files, see the [Requester's guide](../../guide/concepts/pool_csv.md).
+For more information on how to add a quotation mark `"`, backslash `\`, line break, or tab to the object in the input data, see [If you're not familiar with JSON](../quickstart.md). For more information about escaping in TSV files, see the [documentation](../../guide/concepts/pool_csv.md).
 
 ## Basic example {#read-write-data}
 
@@ -47,7 +47,7 @@ When you respond with yes and click **Send**, the result looks like this:
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/oiZ8TkDU3YYtae)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ZL2u06Rh3ttBRF)
 
 ## Reading JSON input data {#read-json}
 
@@ -58,9 +58,9 @@ Let's say you have an input object that describes a residential address.
 {
     "name": "Ivan Ivanov",
     "registration_address": {
-        "country": "Russia",
-        "city": "Moscow",
-        "address": "Tverskaya str, 3-53"
+        "country": "US",
+        "city": "Washington, D.C.",
+        "address": "83 Goldcliff Circle"
     },
     ...
 ```
@@ -74,7 +74,7 @@ To display the value from the city property in the interface, specify the path t
 ```
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/xBraBLTb3YYty4)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/-SMvyQ2u3ttBUC)
 
 
 ## Writing JSON data {#write-json}
@@ -82,7 +82,7 @@ To display the value from the city property in the interface, specify the path t
 The output data is written similarly. If you enter the path separated by dots, the field with the output data will have the object type in the specification.
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ZySJWPri3YYuEw)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/RvwlJq5B3ttBYv)
 
 
 ## Reading data with the "array" type {#read-array}
@@ -108,7 +108,7 @@ You can reference a specific array element like this:
 ```
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/VyGcHg093YYubc)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/V44snIfa3ttBb2)
 
 
 If the array length is unknown or very large, you can get all the array values using the [helper.transform](../reference/helper.transform.md) component.
@@ -116,7 +116,7 @@ If the array length is unknown or very large, you can get all the array values u
 For example, you can convert an array of image links to an array of [view.image](../reference/view.image.md) components to display them in the interface.
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/VyGcHg093YYubc)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/V44snIfa3ttBb2)
 
 
 ## Writing the array data {#write-array}
@@ -130,7 +130,7 @@ Similarly to reading elements from an array, you can also write the results to a
 ```
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/VXkQ3nK83YYvAS)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/SHklDL8H3ttBg5)
 
 ## Related information
 

@@ -1,5 +1,5 @@
 # download_attachment
-`toloka.client.TolokaClient.download_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/__init__.py#L802)
+`toloka.client.TolokaClient.download_attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L826)
 
 ```python
 download_attachment(

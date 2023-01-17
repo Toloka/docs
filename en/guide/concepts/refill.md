@@ -14,11 +14,6 @@ If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endi
 
 {% if locale == "en-com" %}
 
-- Russia
-- Ukraine
-- Belarus
-- Kazakhstan
-- Uzbekistan
 - Turkey
 - Åland Islands
 - Albania
@@ -26,6 +21,7 @@ If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endi
 - Armenia
 - Austria
 - Azerbaijan
+- Belarus
 - Belgium
 - Bosnia and Herzegovina
 - Bulgaria
@@ -52,6 +48,7 @@ If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endi
 - Israel
 - Italy
 - Jersey
+- Kazakhstan
 - Kyrgyzstan
 - Latvia
 - Liechtenstein
@@ -68,6 +65,7 @@ If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endi
 - Poland
 - Portugal
 - Romania
+- Russia
 - San Marino
 - Serbia
 - Slovakia
@@ -81,9 +79,11 @@ If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endi
 - Tajikistan
 - Thailand
 - Turkmenistan
+- Ukraine
 - United Arab Emirates
 - United Kingdom
 - USA
+- Uzbekistan
 - Vatican City State
 - Vietnam
 
@@ -216,6 +216,11 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 ## What's next {#what_next}
 
 - [Start the pool](pool-run-and-stop.md).
+
+## See also {#see-also}
+
+- [{#T}](budget.md)
+- [{#T}](documents.md)
 
 ## Troubleshooting {#troubleshooting}
 

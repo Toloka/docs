@@ -246,7 +246,7 @@ new_pool = toloka.Pool(
     project_id=new_project.id,
     private_name='Pool 1',  # Only you can see this information
     may_contain_adult_content=False,
-    reward_per_assignment=0.01,  # Sets the minimum payment amount for one task suite in USD
+    reward_per_assignment=0.005,  # Sets the minimum payment amount for one task suite in USD
     assignment_max_duration_seconds=60*5,  # Gives Tolokers 5 minutes to complete one task suite
     will_expire=datetime.datetime.utcnow() + datetime.timedelta(days=365),  # Sets that the pool will close after one year
 )
@@ -281,7 +281,7 @@ new_pool.defaults = toloka.pool.Pool.Defaults(
 
 A [task suite](../guide/concepts/overview.md#tasks-page) is a set of tasks that are shown on a single page.
 
-An important part of configuring pools is to decide how many tasks will be issued to a Toloker at once. For example, if you set 3 tasks for a task suite, a Toloker will see three images at once on one page.
+An important part of configuring pools is to decide how many tasks will be assigned to a Toloker at once. For example, if you set 3 tasks for a task suite, a Toloker will see three images at once on one page.
 
 {% note info %}
 
@@ -583,7 +583,7 @@ new_pool = toloka.Pool(
     project_id='120798',
     private_name='Pool 1',  # Only you can see this information
     may_contain_adult_content=False,
-    reward_per_assignment=0.01,  # Sets the minimum payment amount for one task suite in USD
+    reward_per_assignment=0.005,  # Sets the minimum payment amount for one task suite in USD
     assignment_max_duration_seconds=60*5,  # Gives Tolokers 5 minutes to complete one task suite
     will_expire=datetime.datetime.utcnow() + datetime.timedelta(days=365),  # Sets that the pool will close after one year
 )

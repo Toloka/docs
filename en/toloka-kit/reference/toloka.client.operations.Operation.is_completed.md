@@ -1,5 +1,5 @@
 # is_completed
-`toloka.client.operations.Operation.is_completed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/operations.py#L108)
+`toloka.client.operations.Operation.is_completed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/operations.py#L108)
 
 ```python
 is_completed(self)

@@ -273,7 +273,7 @@ Links to JavaScript libraries and Toloka assets.
 Toloka assets:
 
 - `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — Handlebars (see the [description on the template engine website](http://handlebarsjs.com/)).
-- `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (see  [Image with area selection](../../guide/concepts/t-components/image-annotation.md/) in the Requester's guide).
+- `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (more information about [image with area selection](../../guide/concepts/t-components/image-annotation.md/)).
 
 Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters:
 
@@ -469,3 +469,7 @@ Status of the project:
 
 The UTC date and time the project was created, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/project.md)

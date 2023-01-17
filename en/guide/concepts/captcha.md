@@ -89,6 +89,15 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endlist %}
 
+## See also {#see-also}
+
+- [{#T}](skipped-assignments.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Using captcha](../../api/concepts/captcha.md)
+- [Toloka-Kit: Captcha class](../../toloka-kit/reference/toloka.client.collectors.Captcha.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

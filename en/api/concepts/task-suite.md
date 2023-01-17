@@ -21,7 +21,6 @@ PATCH | [/task-suites/<task_suite_id>](edit-overlap.md) | Changes task suite ove
 PATCH | [/task-suites/<task_suite_id>](edit-order.md) | Changes the priority of a task suite in the pool.
 PATCH | [/task-suites/<task_suite_id>/set-overlap-or-min](set-min-suite-overlap.md) | Stops assigning a task suite to Tolokers.
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [Creating a pool](../../guide/concepts/pool-main.md) in the Requester's guide
-- [Uploading tasks to the pool](../../guide/concepts/task_upload.md) in the Requester's guide
+- [{#T}](../../guide/concepts/distribute-tasks-by-pages.md)

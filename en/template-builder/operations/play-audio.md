@@ -19,7 +19,7 @@ If you pass a link to an audio file in the [input data](work-with-data.md), use 
 To loop audio playback automatically, put `true` in the `loop` property.
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/I2t6-rYW3Yb6FH)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/hn12lyBE3ttC7a)
 
 
 ## Make sure that the Toloker listened to the audio {#validate-listened}
@@ -39,7 +39,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
   }
   ```
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/1V5JO55d3Yb6ba)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/wVqSKJCJ3ttC9M)
 
 
 - Listened completely
@@ -55,7 +55,7 @@ To loop audio playback automatically, put `true` in the `loop` property.
   }
   ```
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/KU2O95rg3Z3ZTa)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ImNzPO9F3ttCB7)
 
 {% endlist %}
 
@@ -75,7 +75,7 @@ On the website, `field.audio` allows Tolokers to upload audio files, and in the 
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TEDEW)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/uDWbPPCP3ttFAM)
 
 
 ## Create a task to transcribe audio {#transform-to-text}
@@ -87,6 +87,6 @@ To create a template for audio transcription tasks, we used the following compon
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/wlQeDuKr3Yb6zo)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/aAynLBRt3ttCCg)
 
 {% include [contact-support](../_includes/contact-support.md) %}

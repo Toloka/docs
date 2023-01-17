@@ -2,7 +2,7 @@
 
 Checks that the array in `data` is a subarray for `parent`.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSD9)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/jZYMLMCN3twXg2)
 
 ## Component properties {#properties}
 

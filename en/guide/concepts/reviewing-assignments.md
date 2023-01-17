@@ -97,6 +97,11 @@ After 3 tasks are reviewed, the skill is set to the percentage of correct respon
 
 {% endcut %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Processing rejected and accepted assignments](../../api/concepts/reassessment.md)
+- [Toloka-Kit: AssignmentsAssessment collector class](../../toloka-kit/reference/toloka.client.collectors.AssignmentsAssessment.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}

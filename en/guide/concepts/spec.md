@@ -55,7 +55,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
     ```
 
     {% endif %}
-- **Upload a file to the task, for example, an image.** Add the `url` field with the **link** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
+- **Upload a file to the task, for example, an image.** Add the `url` field with the **URL** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
 
     ```html
     {{img src=url width="400px" height="300px"}}
@@ -222,6 +222,12 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
     - [Writing instructions](instruction.md).
     - [Input and output data](incoming.md).
     - [Setting up quality control](project-qa.md).
+
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Interfaces](https://toloka.ai/knowledgebase/interface/)
+- [{#T}](edit-project.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -419,7 +425,7 @@ You don't have to use our components for task interfaces. Feel free to create a 
 
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
 
-See the [Requester's guide](spec-advanced.md) for descriptions of the structure of classes and how they work.
+See the [documentation](spec-advanced.md) for descriptions of the structure of classes and how they work.
 
 {% endcut %}
 
@@ -486,7 +492,7 @@ Enclose the input field in double curly brackets `not_var{{text}}`.
 
 Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
 
-For more information about using the component, see the [Requester's guide](t-components/html.md).
+More information about [using the component](t-components/html.md).
 
 {% endcut %}
 

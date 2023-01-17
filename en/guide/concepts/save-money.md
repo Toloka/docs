@@ -6,7 +6,7 @@ Every requester wants to optimize expenses. This section describes the main ways
 
 Use [decomposition](solution-architecture.md). Simpler tasks cost less. If a task is complex, you won't get good results immediately. Instead, you'll have to resend tasks to the pool so that other Tolokers can redo them.
 
-## Use dynamic overlap. {#din-price}
+## Use dynamic overlap {#din-price}
 
 [Dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL) lets you change overlap depending on:
 
@@ -15,7 +15,7 @@ Use [decomposition](solution-architecture.md). Simpler tasks cost less. If a tas
 
 With this overlap setting, you can save on the number of Tolokers who complete your tasks, which means the total cost of pool labeling will be lower.
 
-## Review assignments. {#post}
+## Review assignments {#post}
 
 [Manual review](offline-accept.md) allows you to check responses so you don't have to pay for poorly completed tasks.
 
@@ -25,7 +25,7 @@ Use manual review if:
 
 - You are sure that you have enough time to review the Tolokers' responses. Otherwise, when the period ends, responses that haven't been reviewed are accepted and paid for automatically.
 
-## Set up a random majority vote check. {#mvote}
+## Set up a random majority vote check {#mvote}
 
 You can set up a [random majority vote check](selective-mvote.md) for the general tasks. This helps you save money and speed up pool completion. You can set the period during which tasks with increased overlap will be displayed to the Toloker, depending on the number of completed tasks.
 
@@ -69,7 +69,7 @@ In this case, if the percentage of correct responses is greater than or equal to
 
 {% endcut %}
 
-## Compress images. {#pictures}
+## Compress images {#pictures}
 
 Compress images so that a task opens and displays correctly. Tolokers will spend less time and traffic uploading images.
 
@@ -79,24 +79,33 @@ Create keyboard shortcuts. This will make it easier for Tolokers to complete you
 
 ## Save money using the Toloka API {#api}
 
-#### Merge tasks.
+#### Merge tasks
 
 You can merge tasks that have identical input data. This allows you to save money if the same task was uploaded to different pools.
 
-[Learn more](../../api/concepts/tasks.md).
+[Learn more](../../api/concepts/tasks.md)
 
-#### Set the frequency of assigning control tasks.
+#### Set the frequency of assigning control tasks
 
 Using the Toloka API, you can set the frequency of assigning control tasks. For example, make every fifth task a control task in the first task suite and every 10th task in the following task suites. This setting lets you maintain the quality of the pool and speed up the completion of tasks.
 
 To do this, use the `golden_task_distribution_function` key.
 
-[Learn more](../../api/concepts/create-pool.md).
+[Learn more](../../api/concepts/create-pool.md)
 
-#### Set up preliminary responses.
+#### Set up preliminary responses
 
 In addition to **dynamic overlap**, use `baseline_solutions` to speed up the overlap. In `baseline_solutions`, preliminary responses are used, that is, data that simulates Toloker responses. For example, you need to determine what an image shows: a cat or a dog. Suppose your neural network determined that the image may show a dog with a probability of 80% and a cat with a probability of 40%. You can use the neural network's responses. Depending on the responses of Tolokers, the overlap will increase or remain unchanged.
 
-[Learn more](../../api/concepts/create-task.md).
+[Learn more](../../api/concepts/create-task.md)
+
+## See also {#see-also}
+
+- [{#T}](dynamic-overlap.md)
+- [{#T}](offline-accept.md)
+- [{#T}](selective-mvote.md)
+- [{#T}](dynamic-pricing.md)
+- [Crowdsourcing concepts: Decomposition](https://toloka.ai/knowledgebase/decomposition/)
+- [Template Builder: Configure keyboard shortcuts](../../template-builder/best-practices/hotkeys.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

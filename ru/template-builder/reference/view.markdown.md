@@ -32,7 +32,7 @@
 
 Документацию по основному синтаксису Markdown вы можете найти в [статье](https://guides.github.com/features/mastering-markdown/) (на английском языке).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QZMDA)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/CItaz_xm3tw2MF)
 
 Обратите внимание, что компонент `view.markdown` — ресурсозатратный и может нагружать слабые устройства исполнителей. Не используйте этот компонент для отображения простого текста. Если вам надо отобразить текст без форматирования, используйте компонент [view.text](view.text.md). Если надо вставить ссылку — [view.link](view.link.md), а если изображение — [view.image](view.image.md).
 

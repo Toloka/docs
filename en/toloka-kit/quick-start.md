@@ -33,7 +33,7 @@ To start with Toloka-Kit:
     Requester(_unexpected={}, id='6c6c50dce62ca4aef87dfcbc6e9de162', balance=Decimal('1.0000'), public_name={'EN': 'John Smith'}, company=None)
     ```
 
-## Next steps
+## What's next {#what-next}
 
 - Complete one of the [tutorials](../guide/concepts/usecases.md) to get acquainted with Toloka web interface.
 
@@ -45,6 +45,6 @@ To start with Toloka-Kit:
 
 - Study [Toloka API documentation](../api/index.md).
 
-- See other features in [Toloka requester's guide](../guide/concepts/overview.md).
+- See other features in [Toloka documentation](../guide/concepts/overview.md).
 
 - Contribute to [Toloka-Kit on GitHub](https://github.com/Toloka/toloka-kit): open pull requests, report bugs or share your [usage examples](https://github.com/Toloka/toloka-kit/tree/main/examples#need-more-examples).

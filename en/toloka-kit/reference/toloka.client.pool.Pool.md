@@ -1,5 +1,5 @@
 # Pool
-`toloka.client.pool.Pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/pool/__init__.py#L35)
+`toloka.client.pool.Pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/__init__.py#L35)
 
 ```python
 Pool(

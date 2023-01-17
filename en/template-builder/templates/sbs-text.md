@@ -6,7 +6,7 @@ This preset allows you to compare two product names and determine whether they b
 
 Take a look at the example: there are two text boxes and radio buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Sf4lo2yk3TaD9n)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/VJLQqpaa3ttDLT)
 
 {% cut "Components used in the example" %}
 
@@ -133,7 +133,7 @@ Take a look at the example: there are two text boxes and radio buttons to choos
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/pm2SGLdb3TaFW6)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/7QbNavYu3ttDMv)
 
 - To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
 
@@ -153,7 +153,7 @@ Take a look at the example: there are two text boxes and radio buttons to choos
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/PDf1QLoJ3TaHDy)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/5rZCBcs33ttDPF)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -192,6 +192,6 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/XKSNJHhg3TaGY3)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/dfyAF6qL3ttDQQ)
 
 {% include [contact-support](../_includes/contact-support.md) %}

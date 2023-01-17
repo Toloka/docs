@@ -68,9 +68,11 @@ If you need help with setting up your project, [contact us](support.md).
 
 ## What's next {#whats-next}
 
-[Download the labeling results](download-results.md).
+- [Download the labeling results](download-results.md)
 
-[Upload more items to the batch or create a new one](add-task.md#edit).
+- [Upload more items to the batch or create a new one](add-task.md)
+
+- [Rename the batch](add-task.md#rename)
 
 ## Troubleshooting {#troubleshooting}
 

@@ -121,7 +121,7 @@ Values may contain different data types:
 - `array`: An array of comma-separated elements. You can use absolutely anything as an element, like a string, a number, a Boolean value, or an object. An array is enclosed in square brackets, `[]`:
 
     ```json
-    "cities": ["Moscow", "Tokyo", "New York"]
+    "cities": ["London", "Tokyo", "New York"]
     ```
 
 {% note warning %}
@@ -185,7 +185,7 @@ In this section, you will create a task interface for an image. The interface wi
 
 {% note tip %}
 
-If something goes wrong during the creation process, you can [view the correct code in the sandbox](https://clck.ru/UC4df).
+If something goes wrong during the creation process, you can [view the correct code in the sandbox](https://ya.cc/t/QFZUs6Xu3ttEc8).
 
 {% endnote %}
 
@@ -193,7 +193,7 @@ If something goes wrong during the creation process, you can [view the correct c
 
 1. The configuration editor will display an empty code template with two blocks: `view` and `plugins`.
 
-    If you're working in Template Builder, not in the Toloka interface, use the [empty template](https://clck.ru/TfifV).
+    If you're working in Template Builder, not in the Toloka interface, use the [empty template](https://ya.cc/t/9qSDag9u3ttEdB).
 
     The `view` block has the[view.list](reference/view.list.md) component to display data in a list. We'll use it to create the interface we need.
 

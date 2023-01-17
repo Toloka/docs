@@ -6,7 +6,7 @@
 
 Если используется внутри свойства `validation`, то можно не указывать свойство `data`, тогда будет использоваться аналогичное свойство у родительского компонента [field](fields.md) (в котором находится компонент `condition.required`).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QR9Qq)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/VaKRkzm-3ttEim)
 
 ## Свойства компонента {#properties}
 

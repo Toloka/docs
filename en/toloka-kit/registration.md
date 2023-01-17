@@ -22,7 +22,7 @@ Get an OAuth token for your version. Go to **Profile** → **Integrations** → 
 
 If you're going to use the production version, [add funds](../guide/concepts/refill.md) to your Toloka account.
 
-## Next steps
+## What's next {#what-next}
 
 - [Install Toloka-Kit library](./quick-start.md)
 - [Start your first simple project](./learn-basics.md)

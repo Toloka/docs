@@ -46,7 +46,19 @@ To improve quality of answers, you must [select the audience](filters.md) you ne
 
 - Validation by other annotators.
 
-### Protection from cheaters and bots {#protection-from-cheaters}
+### [Anti-fraud system](https://toloka.ai/anti-fraud/) {#anti-fraud}
+
+- Platform-wide ban for fraudulent Tolokers.
+
+- Behavior analysis system.
+
+- Multilayer technologies to detect and prevent all types of fraud.
+
+### Protect your project {#protection-from-cheaters}
+
+{% include [toloka-requester-source-anti-fraud](../_includes/toloka-requester-source/id-toloka-requester-source/anti-fraud.md) %}
+
+To protect your project from cheaters, you can use the quality control rules:
 
 - [Ban](ban.md) for [fast responses](quick-answers.md).
 
@@ -75,12 +87,6 @@ A Toloker who skips 2 task suites in a row is restricted from accessing the pool
 {% endcut %}
 
 {% endcut %}
-
-### Anti-Fraud system {#anti-fraud}
-
-- Behavior analysis system.
-
-- Platform-wide ban for fraudulent Tolokers.
 
 ## Obtaining quality results after data labeling {#obtaining-results}
 
@@ -187,6 +193,10 @@ Autolabeling and pretrained models with quality control built in.
 - [Set up quality control](qa-pool-settings.md).
 - [Add tasks](pool.md) to the pool.
 - [Start the pool](pool-run-and-stop.md).
+
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
 
 ## Troubleshooting {#troubleshooting}
 

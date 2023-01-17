@@ -105,6 +105,10 @@ Examples where decomposition is used:
 
 - [Create a new project](project.md) to post your task.
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Decomposition](https://toloka.ai/knowledgebase/decomposition/)
+
 ## Troubleshooting {#problem-solution}
 
 {% cut "I have a complex task. How do I break it down to get high-quality results?" %}

@@ -8,25 +8,15 @@ You started a pool with [manual review](offline-accept.md), and the Tolokers com
 
 - The Toloker can challenge your decision by submitting an [appeal](#appeal).
 
-## How do I review the tasks? {#acception}
-
-{% endcut %}
-
-{% cut "In the Toloka interface. This option is suitable for a small number of tasks." %}
-
-To accept or reject responses:
-
-If you set [manual review](offline-accept.md) in the pool settings, you need to review the Tolokers' responses within the time limit set in the **Deadline** field. Tolokers may challenge a rejected response by submitting an [appeal](#appeal).
-
-You can review assignments online or upload review results in a file.
-
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
 
-{% endcut %}
+## How do I review the tasks? {#acception}
+
+#### In the interface
 
 {% cut "Online review of one task." %}
 
@@ -133,9 +123,18 @@ Place a separate task for Tolokers to review the responses. To learn how to do i
 
 {% endcut %}
 
-{% note info %}
+{% note tip "How to work via Toloka API" %}
 
-Note that you can't change the task status if the task pool was [archived](pool-archive.md).
+To change the status of the received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the task suite assignment that you want to accept or reject:
+
+```bash
+curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a7842a596ac0a' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"status":"ACCEPTED", "public_comment":"OK"}'
+```
+
+Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -180,6 +179,17 @@ d) the result of the Task does not comply with the Instruction.
 
 1.7. If the Customer, pursuant to cl. 1.4 hereof, refuses to accept the Services, Toloka is entitled to forward objections to the Customer via the Interfaces of Toloka Web Site within seven (7) calendar days from the day when the Customer has refused to accept the respective Task. The Parties undertake to settle the dispute not later than within nine (9) calendar days from the day when the Customer has refused to accept the respective Task. Having considered the objections, the Customer may decide to accept the Services or reject them again. If, as a result of considering the objections, the Customer chooses to accept the Services, the Services shall be deemed accepted on the day when the Customer performs the respective action in the Customer’s Personal Account or via API.
 
+## See also {#see-also}
+
+- [{#T}](offline-accept.md)
+- [{#T}](reassessment-after-accepting.md)
+- [{#T}](reviewing-assignments.md)
+- [{#T}](efficiency-metrics/rejected-tasks.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Checking completed tasks](../../api/concepts/accept.md)
+- [Toloka-Kit: Accepting responses](../../toloka-kit/reference/toloka.client.TolokaClient.accept_assignment.md)
 
 ## Troubleshooting {#troubleshooting}
 

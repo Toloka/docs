@@ -1,5 +1,5 @@
 # TaskOverlapPatch
-`toloka.client.task.TaskOverlapPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/task.py#L154)
+`toloka.client.task.TaskOverlapPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/task.py#L160)
 
 ```python
 TaskOverlapPatch(
@@ -10,11 +10,11 @@ TaskOverlapPatch(
 )
 ```
 
-Parameters for changing the overlap of a specific Task
+Parameters for changing the overlap of a task.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`overlap`|**Optional\[int\]**|<p>Overlap value.</p>
-`infinite_overlap`|**Optional\[bool\]**|<p>Infinite overlap:</p> <ul> <li>True — Assign the task to all Tolokers. It is useful for training and control tasks.</li> <li>False — Overlap value specified for the task or for the pool is used. </p><p>Default value: False.</li> </ul>
+`overlap`|**Optional\[int\]**|<p>The new overlap value.</p>
+`infinite_overlap`|**Optional\[bool\]**|<ul> <li>True — The task is assigned to all Tolokers. It is usually set for training and control tasks.</li> <li>False — An overlap value specified for the task or for the pool is used.</li> </ul> <p></p><p>Default value: `False`.</p>

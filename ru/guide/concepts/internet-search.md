@@ -42,7 +42,7 @@
 
       1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
 
-          Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/U8ksm){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC555){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+          Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/EAjweAl53tvfa9){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/o2h3qGFc3tvfu4){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
 
           [Подробнее о настройке условий](../../template-builder/best-practices/conditions.md) в конструкторе шаблонов.
 

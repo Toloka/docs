@@ -10,11 +10,7 @@ You may need a third-party platform, when:
 
 In Toloka, you can place a link to your survey in the task interface. To enable a Toloker to confirm survey completion, show a code to each respondent who takes the survey on the third-party platform. The respondent will need to copy the code and paste it to the task in Toloka. You will see this code in the results file and will be able to check if it is correct.
 
-{% note info %}
-
-To learn how to create a survey form in Toloka instead of using a third-party platform, see the [Survey with Toloka template](questionnaire-toloka.md) tutorial.
-
-{% endnote %}
+{% include [other-survey-solutions](../_includes/tutorials/other-survey-solutions.md) %}
 
 ## Prerequisites {#prerequisites}
 
@@ -84,7 +80,7 @@ Before you begin:
 
         {% note info %}
 
-        You can also display a survey form in an [iframe](https://ya.cc/t/VDbXMBgW3Z44ft) if a third-party platform allows it. To learn more about the `view.iframe` component, see the [Template Builder Help](../../template-builder/reference/view.iframe.md).
+        You can also display a survey form in an [iframe](https://ya.cc/t/kZoRrfTk3ttAFF) if a third-party platform allows it. To learn more about the `view.iframe` component, see the [Template Builder Help](../../template-builder/reference/view.iframe.md).
 
         {% endnote %}
 
@@ -382,13 +378,16 @@ Review the rest of the tasks during the time period specified in the {% if local
 
 - Check the {% if locale == "en-com" %}**Messages**{% endif %} tab regularly to get Tolokers’ reports on problems with your survey.
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Template Builder — survey](../../template-builder/templates/survey.md)
-- [Toloka-Kit — survey](https://github.com/Toloka/toloka-kit/blob/main/examples/7.survey/simplest_survey/simplest_survey.ipynb)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Template Builder: Survey](../../template-builder/templates/survey.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Survey](https://github.com/Toloka/toloka-kit/blob/main/examples/7.survey/simplest_survey/simplest_survey.ipynb)
 
 ## Datasets and reference {#datasets}
 

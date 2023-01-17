@@ -1,5 +1,5 @@
 # BaseTask
-`toloka.client.task.BaseTask` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/task.py#L20)
+`toloka.client.task.BaseTask` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/task.py#L20)
 
 ```python
 BaseTask(
@@ -13,14 +13,14 @@ BaseTask(
 )
 ```
 
-Base class for Task
+A base class for tasks.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`input_values`|**Optional\[Dict\[str, Any\]\]**|<p>Input data for a task. List of pairs: &quot;&lt;input field ID 1&gt;&quot;: &quot;&lt;field value 1&gt;&quot;, &quot;&lt;input field ID 1&gt;&quot;: &quot;&lt;field value 2&gt;&quot;, ... &quot;&lt;input field ID n&gt;&quot;: &quot;&lt;field value n&gt;&quot;</p>
-`known_solutions`|**Optional\[List\[[KnownSolution](toloka.client.task.BaseTask.KnownSolution.md)\]\]**|<p>Responses and hints for control tasks and training tasks. If multiple output fields are included in the validation, all combinations of the correct response must be specified.</p>
-`message_on_unknown_solution`|**Optional\[str\]**|<p>Hint for the task (for training tasks).</p>
-`id`|**Optional\[str\]**|<p>Task ID.</p>
-`origin_task_id`|**Optional\[str\]**|<p>ID of the task it was copied from.</p>
+`input_values`|**Optional\[Dict\[str, Any\]\]**|<p>A dictionary with input data for a task. Input field names are keys in the dictionary.</p>
+`known_solutions`|**Optional\[List\[[KnownSolution](toloka.client.task.BaseTask.KnownSolution.md)\]\]**|<p>A list of all responses considered correct. It is used with control and training tasks. If there are several output fields, then you must specify all their correct combinations.</p>
+`message_on_unknown_solution`|**Optional\[str\]**|<p>A hint used in training tasks.</p>
+`id`|**Optional\[str\]**|<p>The ID of a task.</p>
+`origin_task_id`|**Optional\[str\]**|<p>The ID of a parent task. This parameter is set if the task was created by copying.</p>

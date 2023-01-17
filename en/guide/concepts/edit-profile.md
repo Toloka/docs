@@ -34,6 +34,10 @@ If you want to delete your requester account:
 
 1. Click ![](../_images/other/three-points-button.svg) → **Delete** next to the **Account info** label.
 
+## See also {#see-also}
+
+- [{#T}](multiple-access.md)
+
 ## Troubleshooting
 
 {% cut "How do I change my account type from “Requester” to “Toloker”?" %}

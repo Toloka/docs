@@ -46,8 +46,9 @@ The response will be recorded with a zero price, and the overlap will be reduc
 
 This option is only available for general tasks without manual review that were uploaded using ["smart mixing"](../../guide/concepts/task_upload.md).
 
-To activate task merging in a  project, specify `"assignments_automerge_enabled": true` in the [project](project.md).
+To activate task merging in a project, specify `"assignments_automerge_enabled": true` in the [project](project.md).
 
-## Learn more {#links}
+## See also {#see-also}
 
-For more information about creating task suites, see the [Requester's guide](../../guide/concepts/pool-main.md).
+- [{#T}](../../guide/concepts/pool.md)
+- [{#T}](../../guide/concepts/task_upload.md)

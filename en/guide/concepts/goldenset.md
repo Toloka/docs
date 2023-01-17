@@ -183,6 +183,16 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 
 {% endlist %}
 
+## See also {#see-also}
+
+- [{#T}](qa-pool-settings.md)
+- [{#T}](remember-values.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Control tasks](../../api/concepts/goldenset.md)
+- [Toloka-Kit: Control and training task statistics collector](../../toloka-kit/reference/toloka.client.collectors.GoldenSet.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How many control tasks do I need to add?" %}

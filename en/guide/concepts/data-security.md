@@ -31,6 +31,10 @@ If your data is confidential, take additional measures to protect it.
 
 ### Protect your data from cheaters {#protect-from-them}
 
+{% include [toloka-requester-source-anti-fraud](../_includes/toloka-requester-source/id-toloka-requester-source/anti-fraud.md) %}
+
+To protect your data:
+
 - [Decompose tasks](solution-architecture.md#concept_o3r_h4g_nlb). You can break your tasks down into several projects (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
 
 - If you use [input](../../glossary.md#input-output-data) fields to transmit data that Tolokers shouldn't see, hide the fields that contain this data. For instance, do this if you moderate comments and you need the authors' personal data in the results for further data processing.
@@ -85,6 +89,10 @@ For instance, you can store text comments on your server and use the file with t
         - [License agreement for use of the Toloka app for mobile devices]({{ mobile-agreement }})
 
     - [Privacy Policy]({{ confidential }})
+
+## See also {#see-also}
+
+- [{#T}](cloud-storage.md)
 
 ## Troubleshooting {#troubleshooting}
 

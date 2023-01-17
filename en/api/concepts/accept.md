@@ -108,3 +108,7 @@ Maximum length: 2048 characters. ||
 
 IDs of rewards issued. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/accept.md)

@@ -4,7 +4,7 @@ For this type of project, you can use the **Video comparison (Side-by-side)** pr
 
 Take a look at the example: there are two videos and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vSBnRFLf3TXf7r)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/h0PX65GS3ttDRj)
 
 {% cut "Components used in the example" %}
 
@@ -147,7 +147,7 @@ Take a look at the example: there are two videos and buttons to choose an answe
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Agy26p4z3TXfRe)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/gIJRfreg3ttDTG)
 
 - To add a detailed description to the task, use the [view.text](../reference/view.text.md) component.
 
@@ -162,7 +162,7 @@ Take a look at the example: there are two videos and buttons to choose an answe
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/50mce2VJ3TXtHN)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/izMU-u7x3ttDUS)
 
 - To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
 
@@ -182,7 +182,7 @@ Take a look at the example: there are two videos and buttons to choose an answe
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/X_bdCg0m3TXkwV)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/X-T_nb_K3ttDVR)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -222,6 +222,6 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Wpdfy4mY3TXtue)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/7YaPTOBr3ttDWf)
 
 {% include [contact-support](../_includes/contact-support.md) %}

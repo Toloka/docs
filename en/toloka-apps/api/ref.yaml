@@ -2,6 +2,12 @@ openapi: "3.0.2"
 info:
   title: API Toloka Apps external
   version: "0.12"
+  description: >-
+    If you need to quickly solve a problem and you do not want to spend time on preparing a project, you can use the apps technology, which was specifically developed to ease the work with the platform.
+
+    Select the problem to solve and fill out an [application form](https://toloka.ai/talk-to-us/) for creating a project: the Toloka CSA team will configure the project for you, create a task interface, and the platform will find performers. All you have to do is prepare and upload your data, run the project, and get the labeling results.
+
+    To the Toloka customers, apps are available in the form of [bespoke solutions](https://toloka.ai/pricing).
 servers:
   - url: https://toloka.dev/api/app/v0
 
@@ -11,7 +17,7 @@ tags:
   - name: app
     description: An example of a standard task that you want to solve using Toloka. Unlike project templates, you don't have to set up everything yourself.
   - name: item
-    description: Task item. Uploaded into the batch with other items to be collectively sent for labeling.
+    description: A task item with data. It's uploaded into the batch with other items to be collectively sent for labeling. In a file with tasks, each line is a task item.
   - name: batch
     description: A batch of data that you send for labeling at a time. The batch consists of task items.
 
@@ -158,7 +164,12 @@ paths:
           schema:
             type: string
 
-      summary: Get the list of projects
+      summary:  Get projects
+      description: >-
+        Returns the list of all the currently available projects. You can also filter this list using the query parameters.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       responses:
         '200':
           content:
@@ -170,7 +181,12 @@ paths:
     post:
       tags:
         - app-project
-      summary: Create a new project
+      summary: Create project
+      description: >-
+        Creates a project with the parameters specified in the request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       requestBody:
         description: Parameters of the new project.
         required: true
@@ -190,7 +206,12 @@ paths:
     get:
       tags:
         - app-project
-      summary: Get information about the project
+      summary:  Get project by ID
+      description: >-
+        Displays the detailed information about the project with the ID specified in the request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
       - name: app_project_id
         in: path
@@ -255,8 +276,12 @@ paths:
     post:
       tags:
         - app-project
-      summary: Archive the project
-      description: The project changes its status to ARCHIVE.
+      summary:  Archive project
+      description: >-
+        Changes the project status to `ARCHIVE`.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/archive" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -273,8 +298,12 @@ paths:
     post:
       tags:
         - app-project
-      summary: Unarchive the project
-      description: The project changes its status to the last one it had before archiving.
+      summary:  Unarchive project
+      description: >-
+        Changes the project status to the last one it had before archiving.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/unarchive" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -291,7 +320,13 @@ paths:
     get:
       tags:
         - item
-      summary: Get information about the task item
+      summary: Get item by ID
+      description: >-
+        Displays the detailed information about the item with the ID specified
+        in the request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items/-item_id-" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -323,7 +358,13 @@ paths:
     get:
       tags:
         - item
-      summary: Get the list of all items in the project
+      summary: Get project items
+      description: >-
+        Returns all the task items of the project with the ID specified in the
+        request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -467,7 +508,12 @@ paths:
     post:
       tags:
         - item
-      summary: Add a new item to the batch
+      summary: Add new item
+      description: >-
+        Adds new item to a batch in the project with the ID specified in the request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -512,8 +558,13 @@ paths:
     post:
       tags:
         - item
-      summary: Add multiple items to the batch
-      description: No more than 10,000 items per request.
+      summary: Add items in bulk
+      description: >-
+        Adds multiple items to a batch in the project with the ID specified in the request,
+        with the maximum of 10,000 items per request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items/bulk" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -565,7 +616,13 @@ paths:
     get:
       tags:
         - batch
-      summary: Get the list of batches in the project
+      summary: Get project batches
+      description: >-
+        Returns the complete list of the batches associated with the project
+        with the ID specified in the request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -703,8 +760,16 @@ paths:
     post:
       tags:
         - batch
-      summary: Create a new batch with the first set of items
-      description: No more than 10,000 items per request.
+      summary: Create batch with items
+      description: >-
+        Creates a batch of task items for the project with the ID specified in
+        the request, with the maximum of 10,000 items per request.
+
+
+        It also sets the created batch priority for labeling based on the `priority_order` value specified in the request: `ONE` (meaning the highest priority), `TWO`, `THREE`, `FOUR`, `FIVE` (for the lowest priority, default value). If you do not specify the `priority_order` value the batch will be created with `priority_order = FIVE`.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -757,8 +822,12 @@ paths:
     post:
       tags:
         - batch
-      summary: Send the synchronously loaded batch for labeling
-      description: Used only for solutions with a synchronous protocol.
+      summary: Start sync batch processing
+      description: >-
+        Starts processing the batch with the ID specified in the request. This batch processing is applicable for solutions which use **synchronous protocols only**.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/sync" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -772,7 +841,7 @@ paths:
         content:
           application/json:
             schema:
-              $ref: '#/components/schemas/BatchCreateForm'
+              $ref: '#/components/schemas/BatchCreateSyncForm'
       responses:
         '200':
           content:
@@ -797,7 +866,13 @@ paths:
     get:
       tags:
         - batch
-      summary: Get information about the batch
+      summary: Get batch by ID
+      description: >-
+        Returns the detailed information about the batch with the ID specified
+        in the request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches/-batch_id-" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -828,7 +903,15 @@ paths:
     patch:
       tags:
         - batch
-      summary:  Update batch name
+      summary: Update batch
+      description: >-
+        Modifies the name and priority of the batch with the ID specified in the request.
+
+
+        For `priority_order`, `ONE` is the highest value, batch items which have this value will be sent for labeling first in the queue. The default value is `FIVE`. If you don't specify `name` or `priority_order` parameter values, they will not change.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#patch-/app-projects/-app_project_id-/batches/-batch_id-" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -867,8 +950,13 @@ paths:
     post:
       tags:
         - batch
-      summary: Start processing the batch
-      description: Starts asynchronously.
+      summary: Start batch processing
+      description: >-
+        Starts processing the batch with the ID specified in the request. The
+        batch processing starts asynchronously.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/start" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -891,8 +979,14 @@ paths:
     post:
       tags:
         - batch
-      summary: Stop processing the batch
-      description: Processing can be stopped only for the batch with the **PROCESSING** status.
+      summary: Stop batch processing
+      description: >-
+        Stops processing the batch with the ID specified in the request.
+        Processing can be stopped only for the batch with the `PROCESSING`
+        status.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/stop" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -915,8 +1009,14 @@ paths:
     post:
       tags:
         - batch
-      summary: Resume processing the batch
-      description: Processing can be resumed only for the batch with the **STOPPING** or **STOPPED** status.
+      summary: Resume batch processing
+      description: >-
+        Resumes processing the batch with the ID specified in the request.
+        Processing can be resumed only for the batch with the `STOPPING` or
+        `STOPPED` status.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/resume" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_project_id
           in: path
@@ -998,7 +1098,12 @@ paths:
           schema:
             type: string
 
-      summary: Get a list of project templates (Apps)
+      summary: Get project templates
+      description: >-
+        Returns the list of all the available project templates.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/apps" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       responses:
         '200':
           content:
@@ -1013,7 +1118,12 @@ paths:
     get:
       tags:
         - app
-      summary: Information about the project template
+      summary: Get project template by ID
+      description: >-
+        Returns the detailed information about the project template with the ID specified in the request.
+
+
+        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Try our <a href="https://toloka.ai/docs/api/apps-reference/#get-/apps/-app_id-" target="_blank" rel="noreferrer noopener">new API reference</a>:</strong> more parameter details, request/response examples, and code samples in various programming languages.</p></div>
       parameters:
         - name: app_id
           in: path
@@ -1432,6 +1542,15 @@ components:
         items_per_state:
           type: object
           description: Statistics on the number of items in each state.
+        priority_order:
+          type: string
+          description: Batch priority. `ONE` is the highest value, batch items with this `priority_order` value will be sent for labeling first in the queue. The default value is `FIVE`.
+          enum:
+            - ONE
+            - TWO
+            - THREE
+            - FOUR
+            - FIVE
 
     BatchCreateForm:
       type: object
@@ -1439,20 +1558,52 @@ components:
         name:
           type: string
           description: Batch name.
-          example: A test batch.
+          example: A test batch
         items:
           type: array
           items:
             type: object
-            description: The item data following the project template schema (input_spec). No more than 10,000 items per request.
+            description: The item data following the project template schema (`input_spec`). No more than 10,000 items per request.
+        priority_order:
+          type: string
+          description: Batch priority. `ONE` is the highest value, batch items with this `priority_order` value will be sent for labeling first in the queue. The default value is `FIVE`.
+          enum:
+            - ONE
+            - TWO
+            - THREE
+            - FOUR
+            - FIVE
 
-    BatchPatchForm:
+    BatchCreateSyncForm:
       type: object
       properties:
         name:
           type: string
           description: Batch name.
+          example: A test batch
+        items:
+          type: array
+          items:
+            type: object
+            description: The item data following the project template schema (`input_spec`). No more than 10,000 items per request.
+
+    BatchPatchForm:
+      type: object
+      description: Batch partial update form.
+      properties:
+        name:
+          type: string
+          description: Batch name. If not specified or the value is empty, the current batch name will not change.
           example: A test batch.
+        priority_order:
+          type: string
+          description: Batch priority. `ONE` is the highest value, batch items with this `priority_order` value will be sent for labeling first in the queue. If the priority is not specified in the request the current `priority_order` value will not change.
+          enum:
+            - ONE
+            - TWO
+            - THREE
+            - FOUR
+            - FIVE
 
     ItemImport:
       type: object

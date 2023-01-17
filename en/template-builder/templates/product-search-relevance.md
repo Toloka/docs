@@ -6,7 +6,7 @@ This preset helps you improve ecommerce search page results by rating how releva
 
 Take a look at the example: the labeling interface includes an image, a box for the search query, and radio buttons for evaluating relevance. Note that validation and task layout are already configured in this example.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ajV9o-mE3UGqbd)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/UdToWZS43ttCyi)
 
 {% cut "Components used in the example" %}
 
@@ -205,6 +205,6 @@ If you need comments from the Toloker, add a text field using [field.textarea
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Ryo07JaT3UYB9k)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/P1WbTTcV3ttCzs)
 
 {% include [contact-support](../_includes/contact-support.md) %}

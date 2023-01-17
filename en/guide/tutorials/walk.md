@@ -48,7 +48,7 @@ Before you begin:
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the [example](https://ya.cc/t/ZFj9dvvG3Zg9Xw) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
+    1. Copy the code of the [example](https://ya.cc/t/Fz_--ktr3ttAX9) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
 
         [![Create a project. Config section](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png)
 
@@ -118,7 +118,7 @@ Before you begin:
 
 1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
 
-    1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
+    1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 21).
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
@@ -259,12 +259,15 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 
 {% endcut %}
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Toloka-Kit — spatial crowdsourcing example](https://github.com/Toloka/toloka-kit/blob/main/examples/2.spatial_crowdsourcing/0.simplest_example/spatial_crowdsourcing.ipynb)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Spatial crowdsourcing example](https://github.com/Toloka/toloka-kit/blob/main/examples/2.spatial_crowdsourcing/0.simplest_example/spatial_crowdsourcing.ipynb)
 
 ## Datasets and reference {#datasets}
 

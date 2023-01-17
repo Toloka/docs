@@ -48,7 +48,9 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
       - [Survey with Toloka template](../tutorials/questionnaire-toloka.md) — Create a form with questions and run a survey in Toloka.
 
-      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on a third-party platform.
+      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
+
+      - [Survey based on Qualtrics](../tutorials/questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.
 
   - **Field tasks**
 
@@ -86,7 +88,9 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
       - [Survey with Toloka template](../tutorials/questionnaire-toloka.md) — Set requirements for respondents and take a poll.
 
-      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on a third-party platform.
+      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
+
+      - [Survey based on Qualtrics](../tutorials/questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.      
 
       - [Searching for product characteristics](../tutorials/internet-search.md) — A task in which Tolokers search for data about businesses online.
 
@@ -114,7 +118,7 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
 If you didn't find a suitable example, use general [instructions](main-steps.md) for launching and setting up projects.
 
-You can [contact us or our partners](get-help.md) if you need help with your project overall or with individual steps like [editing tasks](../../glossary.md#task-markup).
+You can [contact us or our partners](../troubleshooting/support.md) if you need help with your project overall or with individual steps like [editing tasks](../../glossary.md#task-markup).
 
 Learn more about how to [set up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
 
@@ -272,7 +276,7 @@ You can structure your text classification task using the source text and radio 
 
 We recommend that you base it on the “Text classification” template.
 
-You can also create your own interface. All the available tools are described in the [Requester's guide](spec.md).
+You can also create your own interface. All the available tools are described in the [documentation](spec.md).
 
 {% endcut %}
 

@@ -2,7 +2,7 @@
 
 The price is indicated per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (“.”) as a separator.
 
-If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. The fee is 30% of the price, but not less than $0.001.
+If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero.
 
 In Toloka, there are two ways to set the task price:
 
@@ -46,7 +46,7 @@ To set up dynamic pricing:
 
 {% note info %}
 
-The price is calculated when the task suite is issued to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
+The price is calculated when the task suite is assigned to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
 
 {% endnote %}
 
@@ -65,6 +65,11 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
+
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [{#T}](nav.md)
 
 ## Troubleshooting {#troubleshooting}
 

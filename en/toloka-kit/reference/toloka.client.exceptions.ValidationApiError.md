@@ -1,5 +1,5 @@
 # ValidationApiError
-`toloka.client.exceptions.ValidationApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/exceptions.py#L85)
+`toloka.client.exceptions.ValidationApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/exceptions.py#L85)
 
 Field validation error returned from the API Call.
 

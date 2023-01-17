@@ -8,7 +8,6 @@ Once the review period in the {% if locale == "en-com" %}**Review period in days
 
 {% endnote %}
 
-
 ## When to use {#when-use}
 
 This rule is helpful when you need to:
@@ -28,10 +27,10 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 {% endnote %}
 
-
 #|
 || **Field**  | **Overview**||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**submitted assignments**{% endif %} — The number of [task suites](../../glossary.md#task-suite) that are completed and awaiting review.
 
 - {% if locale == "en-com" %}**approved assignments**{% endif %} — The number of task suites accepted after the review.
@@ -80,6 +79,9 @@ The task is to send rejected and recompleted assignments for review. Or assign t
 
 {% endlist %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Processing rejected and accepted assignments](../../api/concepts/reassessment.md)
 
 ## Troubleshooting {#troubleshooting}
 

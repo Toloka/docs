@@ -6,13 +6,13 @@ This link changes color when clicked.
 
 We recommend using this component if you need to insert a link without additional formatting.
 
-If you want to insert a button that will open the link, use the [view.action-button](view.action-button.md) and [action.open-link](action.open-link.md) components. 
+If you want to insert a button that will open the link, use the [view.action-button](view.action-button.md) and [action.open-link](action.open-link.md) components.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSwj)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/UaHnEFiH3tz2Wy)
 
-To insert a link with a search query, use [helper.search-query](helper.search-query.md). 
+To insert a link with a search query, use [helper.search-query](helper.search-query.md).
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TRCLB)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/ELxkIO-M3tz2bw)
 
 ## Component properties {#properties}
 

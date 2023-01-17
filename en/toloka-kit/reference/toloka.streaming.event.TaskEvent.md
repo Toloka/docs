@@ -1,5 +1,5 @@
 # TaskEvent
-`toloka.streaming.event.TaskEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/event.py#L55)
+`toloka.streaming.event.TaskEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/event.py#L55)
 
 ```python
 TaskEvent(

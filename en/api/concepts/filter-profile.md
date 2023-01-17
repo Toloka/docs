@@ -4,7 +4,7 @@ To select Tolokers based on profile data, define a `filter` object in the pool p
 
 ## Sample filter in JSON {#request-example}
 
-This example selects Tolokers who set their country as Russia and the city as Moscow in the profile.
+This example selects Tolokers who set their country as US and the city as Washington, D.C. in the profile.
 
 ```json
 {
@@ -14,13 +14,13 @@ This example selects Tolokers who set their country as Russia and the city as Mo
         "category" : "profile",
         "key" : "country",
         "operator" : "EQ",
-        "value" : "RU"
+        "value" : "US"
       } ]
     }, {
       "or" : [ {
         "category" : "profile",
         "key" : "city",
-        "value" : 213,
+        "value" : 87,
         "operator" : "IN"
       } ]
     } ]
@@ -108,3 +108,7 @@ Value of "operator":
 - `IN` — Contained in the list of regions or languages in the profile.
 - `NOT_IN` — Not contained in the list of regions or languages in the profile.||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/filters.md)

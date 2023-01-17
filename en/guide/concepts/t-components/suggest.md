@@ -67,7 +67,7 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
       }, {
       getTemplateData: function() {
       var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments);
-      data.countries = ['Poland', 'Lithuania', 'Russia', 'Belarus', 'Latvia', 'Germany', 'France'];
+      data.countries = ['US', 'Germany', 'France'];
       return data;
       },
       OnRender: function () {

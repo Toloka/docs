@@ -31,4 +31,9 @@ To add tasks to a pool:
 
 - [Start the pool](pool-run-and-stop.md).
 
+## For developers {#for-developers}
+
+- [Toloka API: Tasks](../../api/concepts/tasks.md)
+- [Toloka-Kit: Creating tasks](../../toloka-kit/reference/toloka.client.TolokaClient.create_task.md)
+
 {% include [contact-support](../_includes/contact-support.md) %}

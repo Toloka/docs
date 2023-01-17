@@ -6,7 +6,7 @@ This preset helps you classify any kind of text for training classifiers and NLP
 
 Take a look at the example: the labeling interface includes a text block, and radio buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/GCr6AzRu3Wk6so)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/t_qYMu7W3ttDbe)
 
 {% cut "Components used in the example" %}
 
@@ -135,7 +135,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/5GdOsaHz3XFSUH)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/CWaULGco3ttDcv)
 
 ## Add a response field {#add-text-area}
 
@@ -157,7 +157,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/tqcXy_dh3Wk7XR)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ZkRWkjQr3ttDeN)
 
 ## Add a layout {#add-layout}
 
@@ -212,7 +212,7 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1d9wVk0A3Wk7hq)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/wH3XbAFE3ttDfc)
 
 ## Other options for buttons {#mult-ans-options}
 
@@ -261,7 +261,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/WqUYAVJ_3Wk87q)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/q8RpfYS93ttDgm)
 
 - One option (a radio button)
 
@@ -310,7 +310,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/772Lk77T3Wk8bu)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/dkl2xM1t3ttDhV)
 
 {% endlist %}
 
@@ -366,7 +366,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FwDPOVZ_3Wk8zy)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ODo7Fc_r3ttDiK)
 
 ## Text and search query comparison {#search}
 
@@ -393,7 +393,7 @@ Add a button that opens the search results and generate a search query link usin
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/XjJKrKAq3Wk2gG)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/rIjOJa7c3ttDjH)
 
 #### Side-by-side text and web page comparison
 
@@ -419,7 +419,7 @@ You can display the web page in the built-in window using the [view.iframe](../r
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/IV7KDhXz3Wjv6u)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FDrNN4qp3ttDk9)
 
 #### Side-by-side text and mobile web page comparison
 
@@ -465,6 +465,6 @@ This is a more complex example that compares the text with the results of a sear
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/09flUkZu3WjxyP)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3JMlulLI3ttDmK)
 
 {% include [contact-support](../_includes/contact-support.md) %}

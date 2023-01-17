@@ -528,7 +528,7 @@ Enclose the input field in double curly brackets `not_var{{text}}`.
 
 Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
 
-For more information about using the component, see the [Requester's guide](../concepts/t-components/html.md).
+More information about [using the component](../concepts/t-components/html.md).
 
 {% endcut %}
 
@@ -540,7 +540,7 @@ You don't have to use our components for task interfaces. Feel free to create a 
 
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
 
-See the [Requester's guide](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
+See the [documentation](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
 
 {% endcut %}
 
@@ -694,7 +694,7 @@ If the Toloker mismatches your preset filter, they can't see the task. You can o
 
 {% endcut %}
 
-{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30–45 years old”." %}
+{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “US only, 30–45 years old”." %}
 
 You can do that. To select Tolokers for the pool, use [filters](../concepts/filters.md).
 
@@ -1837,31 +1837,9 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 
 ### Adding funds to your account {#concept-1}
 
-{% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
-
-If the address is in Saint Petersburg, enter Saint Petersburg in the **Region** field, then specify the street, house number, and postal code. You don't need to fill out the other fields.
-
-If the address is in Moscow, enter Moscow in the **Region** field, then specify the street, house number, and postal code. [Learn more](../concepts/refill.md#step-by-step) about connecting to billing.
-
-If it still doesn't work, [enter](troubleshooting.md) your full address with the postal code in the feedback form. We'll help you fill out the fields correctly.
-
-{% endcut %}
-
 {% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
 
 That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
-
-{% endcut %}
-
-{% cut "Why do we top up our account in a non-Russian currency?" %}
-
-Toloka is an international platform for users from different countries. The platform is provided by the Swiss company Yandex Services AG.
-
-{% endcut %}
-
-{% cut "Why do we pay 20% VAT in the invoice?" %}
-
-In accordance with the tax legislation of the Russian Federation, we have included Clause 3.8. in our [Requester agreement]({{ customeragreement-probki }}): the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
 
 {% endcut %}
 
@@ -1873,7 +1851,7 @@ If you pay using a bank card, the money is usually transferred to your Toloka ac
 
 {% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
 
-You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. The conversion follows the Central Bank of Russia's exchange rate at the time of invoicing (UTC). [Learn more](../concepts/refill.md) about top-up.
+You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. [Learn more](../concepts/refill.md) about top-up.
 
 {% endcut %}
 
@@ -1977,7 +1955,7 @@ You can increase the basic task price for Tolokers that have a higher skill. To 
 
 {% cut "How can I view statistics on paid rewards?" %}
 
-To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Expenses** tab.
+To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Spent** tab.
 
 {% endcut %}
 
@@ -2055,7 +2033,7 @@ You can structure your text classification task using the source text and radio 
 
 We recommend that you base it on the **Sentiment analysis & content moderation** preset.
 
-You can also create your own interface. All the available tools are described in the [Requester's guide](../concepts/spec.md).
+You can also create your own interface. All the available tools are described in the [documentation](../concepts/spec.md).
 
 {% endcut %}
 
