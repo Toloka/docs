@@ -18,13 +18,13 @@ To select multiple Tolokers:
     83khfalkdg78m3qhfai3kaf91h9n3ls3
     ```
 
-1. Click the {% if locale == "en-com" %}**Upload Tolokers IDs**{% endif %} button at the bottom left and choose the file.
+1. Click the **Upload Tolokers IDs** button at the left bottom and choose the file.
 
-1. When the file is uploaded, click {% if locale == "en-com" %}**Apply**{% endif %}.
+1. When the file is uploaded, click **Apply**.
 
 {% note tip %}
 
-To view detailed information about a Toloker, click on their ID.
+To view detailed information about a Toloker, click on his ID.
 
 {% endnote %}
 
@@ -66,10 +66,10 @@ To find Tolokers by skill, use [filters](../../glossary.md#filters):
 
 1. Click **Add filter**.
 
-1. Scroll down and choose **Choose skill**.
+1. Scroll down and choose **My skills** or **Choose global skill**.
 
 1. Specify the skill and the required skill value.
 
-Filters for selecting Tolokers work the same way as in the pool. Learn more in the [Filters](../concepts/filters.md) section.
+Filters for selecting Tolokers work the same way as in the pool. To learn more, see the [Filters](../concepts/filters.md) section.
 
 {% endcut %}

@@ -8,7 +8,7 @@ To download the history of skill changes:
 
    {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click on the Toloker's ID to go into his profile.
+1. Click on the Toloker's ID to view detailed information.
 
 1. Hover over the skill line and click ![](../_images/download.svg).
 
