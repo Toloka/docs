@@ -8,7 +8,7 @@ To download the history of skill changes:
 
    {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click on the Toloker's ID to view detailed information.
+1. Click on the Toloker's ID to view the detailed information.
 
 1. Hover over the skill line and click ![](../_images/download.svg).
 
@@ -25,7 +25,7 @@ To download the history of skill changes:
 
     The file contains the skill change history for the last three months.
 
-To view statistics about skill usage, select it on the [Skills]({{ skills }}) page.
+To view statistics about the skill usage, select it on the [Skills]({{ skills }}) page.
 
 ## Troubleshooting {#troubleshooting}
 

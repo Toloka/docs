@@ -18,13 +18,13 @@ To select multiple Tolokers:
     83khfalkdg78m3qhfai3kaf91h9n3ls3
     ```
 
-1. Click the **Upload Tolokers IDs** button at the left bottom and choose the file.
+1. Click the **Upload Tolokers IDs** button in the lower left part and choose the file.
 
 1. When the file is uploaded, click **Apply**.
 
 {% note tip %}
 
-To view detailed information about a Toloker, click on his ID.
+To view detailed information about a Toloker, click on their ID.
 
 {% endnote %}
 
