@@ -2,7 +2,7 @@
 
 The price is indicated per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (“.”) as a separator.
 
-If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. The fee is 30% of the price, but not less than $0.005.
+If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other [pool](../../glossary.md#pool) types, you can set the price to zero. The fee is 30% of the price, but not less than $0.005.
 
 In Toloka, there are two ways to set the task price:
 
@@ -27,6 +27,18 @@ Every Toloker wants to earn more, so it is difficult to give exact figures. To f
 The high task price doesn't guarantee a good quality of the result. Increasing the price allows you to attract more Tolokers, but the quality of the result depends on the quality of the Tolokers themselves. Good Tolokers can be paid more using dynamic pricing.
 
 {% endnote %}
+
+## Price per item {#price-per-item}
+
+When you're creating or editing a pool, under the **Price per task suite, $** field you can see price per 1 [task](../../glossary.md#task).
+
+Price per task is calculated as:
+
+#|
+||
+price per 1 task ![](../_images/other/icons/equal.svg) price per task suite ![](../_images/other/icons/multiply.svg) overlap ![](../_images/other/icons/divide.svg) tasks per suite ![](../_images/other/icons/plus.svg) fee
+||
+|#
 
 ## Setting up dynamic pricing {#section_ucl_3hl_vlb}
 
@@ -65,22 +77,6 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
-
-## Price per item {#price-per-item}
-
-At the bottom of the page **Price and overlap** you can see price per [item](../glossary.md#item).
-
-Price per item is calculated as:
-
-$P[i] = P[ts]/timesO/T[s] + 30%$
-
-where:
-
-$P[i]$ — price per item.
-$P[ts]$ — price per task suite.
-$O$ — overlap.
-$T[s]$ — tasks per suite.
-$30%$ — fee.
 
 ## Troubleshooting {#troubleshooting}
 
