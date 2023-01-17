@@ -5,7 +5,7 @@
 RejectAllAssignments(self, *, public_comment: Optional[str] = None)
 ```
 
-Rejects all Toloker's assignments in the pool. This action is available for pools with non-automatic acceptance.
+Rejects all Toloker's assignments in the pool. This action is available for pools with manual review.
 
 ## Parameters Description
 

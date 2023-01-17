@@ -46,11 +46,11 @@ If you aren't sure whether the tasks have such content, enable this option. | {%
 
 | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
+||{% if locale == "en-com" %}**Review task responses manually**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
 Set the time period when you can check the tasks and reject them if the results are poor.
 
-To learn more about non-automatic acceptance, go to [Reviewing assignments](offline-accept.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
+To learn more about manual review, go to [Reviewing assignments](offline-accept.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Training**{% endif %} | This field is only available if you have training pools in the project.
 
 [Training pool](../../glossary.md#training-pool) that will be linked to the main one. | {% if locale == "en-com" %}**Quality control**{% endif %}||

@@ -144,11 +144,11 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. [Quality control rules](control.md) allow you to filter out careless Tolokers. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set the rules for the pool:
 
-    1. Turn on the {% if locale == "en-com" %}**Assignment review**{% endif %} option.
+    1. Turn on the {% if locale == "en-com" %}**Review task responses manually**{% endif %} option.
 
-        {% cut "What is non-automatic acceptance (assignment review)?" %}
+        {% cut "What is manual review?" %}
 
-        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+        The [manual review](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
         {% endcut %}
 

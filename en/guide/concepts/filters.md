@@ -202,7 +202,7 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
     - [Selective majority vote check](selective-mvote.md).
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
-    - [Non-automatic acceptance](offline-accept.md).
+    - [Manual review](offline-accept.md).
 
 ## See also {#see-also}
 

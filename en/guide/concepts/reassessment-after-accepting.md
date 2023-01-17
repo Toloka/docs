@@ -1,6 +1,6 @@
 # Processing rejected and accepted assignments
 
-You can enable the [Non-automatic acceptance](offline-accept.md) option to [reject or accept](accept.md) assignments that Tolokers completed. Assignments are rejected and accepted on a page-by-page basis.
+You can enable the [manual review](offline-accept.md) option to [reject or accept](accept.md) assignments that Tolokers completed. Assignments are rejected and accepted on a page-by-page basis.
 
 {% note info %}
 

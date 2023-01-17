@@ -276,7 +276,7 @@ items:
                 href: guide/concepts/adjust.md
           - name: Additional settings
             items:
-              - name: Non-automatic acceptance
+              - name: Manual review
                 href: guide/concepts/offline-accept.md
               - name: Archiving a pool
                 href: guide/concepts/pool-archive.md

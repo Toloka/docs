@@ -11,7 +11,7 @@ You can block a Toloker's access to one or more [projects](../../glossary.md#pro
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -138,7 +138,7 @@ If the Toloker was already paid for the tasks, you can't cancel the payment.
 
 During the training, Tolokers follow the task instructions and practice completing your tasks. Based on the training results, the requester can select Tolokers who did well enough to get access to the main pool. However, the mere fact that the Toloker completes your training pool successfully does not guarantee that they will continue to demonstrate high-quality performance. Tolokers who did well on the training but had inadequate results in the general task might have obtained correct training responses from other people.
 
-In addition to the training, be sure to set up [quality control rules](control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [non-automatic acceptance](offline-accept.md) to pay for them only after reviewing the responses.
+In addition to the training, be sure to set up [quality control rules](control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [manual review](offline-accept.md) to pay for them only after reviewing the responses.
 
 {% endcut %}
 

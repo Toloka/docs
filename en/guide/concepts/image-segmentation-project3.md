@@ -345,7 +345,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 ## Check the completed tasks {#check_results}
 
-Since the [Non-automatic acceptance](image-segmentation-project2.md) option is enabled in the pool settings for {% if locale == "en-com" %}**project 2**{% endif %}, you should check the Tolokers' responses within the time limit set in the {% if locale == "en-com" %}**Review period**{% endif %} field.
+Since the [manual review](image-segmentation-project2.md) option is enabled in the pool settings for {% if locale == "en-com" %}**project 2**{% endif %}, you should check the Tolokers' responses within the time limit set in the {% if locale == "en-com" %}**Review period**{% endif %} field.
 
 You can check the results in two ways:
 
