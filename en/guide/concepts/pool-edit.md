@@ -265,6 +265,7 @@ Use this parameter to:
 - [Toloka API: Changing pool priority](../../api/concepts/set-priority-pool.md)
 - [Toloka-Kit: Editing pool](../../toloka-kit/reference/toloka.client.TolokaClient.update_pool.md)
 - [Toloka-Kit: Patching pool](../../toloka-kit/reference/toloka.client.TolokaClient.patch_pool.md)
+- [Toloka-Kit recipe: Change pool priority](../../toloka-kit/recipes/change-pool-priority.md)
 
 ## Troubleshooting {#troubleshooting}
 

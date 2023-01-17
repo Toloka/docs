@@ -119,7 +119,7 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 ## For developers {#for-developers}
 
 - [Toloka API: Creating project](../../api/concepts/create-prj.md)
-- [Toloka-Kit: Creating project](../../toloka-kit/reference/toloka.client.TolokaClient.create_project.md)
+- [Toloka-Kit recipe: Create project](../../toloka-kit/recipes/create-project.md)
 
 ## Troubleshooting {#troubleshooting}
 

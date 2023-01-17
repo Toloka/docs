@@ -36,7 +36,7 @@ To better motivate Tolokers, make the skill public and set [dynamic pricing](../
 ## For developers {#for-developers}
 
 - [Toloka API: Creating skill](../../api/concepts/create-skill.md)
-- [Toloka-Kit: Creating skill](../../toloka-kit/reference/toloka.client.TolokaClient.create_skill.md)
+- [Toloka-Kit recipe: Create skill](../../toloka-kit/recipes/create-skill.md)
 
 ## Troubleshooting {#troubleshooting}
 

@@ -114,7 +114,9 @@ Refer to the [Issue rewards](https://toloka.ai/docs/api/api-reference/#post-/use
 ## For developers {#for-developers}
 
 - [Toloka API: Issuing rewards](../../api/concepts/bonus.md)
-- Toloka-Kit: Rewarding Tolokers with [create_user_bonus()](../../toloka-kit/reference/toloka.client.TolokaClient.create_user_bonus.md) and [create_user_bonuses()](../../toloka-kit/reference/toloka.client.TolokaClient.create_user_bonuses.md) methods
+- [Toloka-Kit recipe: Issue rewards to Tolokers](../../toloka-kit/recipes/assign-reward.md)
+- [Toloka-Kit recipe: Get list of all rewards issued](../../toloka-kit/recipes/get-rewards.md)
+- [Toloka-Kit recipe: Get reward details](../../toloka-kit/recipes/get-reward-by-id.md)
 
 ## Troubleshooting {#troubleshooting}
 

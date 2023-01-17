@@ -128,6 +128,7 @@ Each project requires its own approach. Methods that are effective in one case m
 ## For developers {#for-developers}
 
 - [Toloka API: Quality control rules](../../api/concepts/quality_control.md)
+- [Toloka-Kit recipe: Use quality control rules](../../toloka-kit/recipes/use-quality-control-rules.md)
 - [Toloka-Kit: QualityControl class](../../toloka-kit/reference/toloka.client.quality_control.QualityControl.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

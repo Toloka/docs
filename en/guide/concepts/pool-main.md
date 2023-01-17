@@ -40,7 +40,7 @@ Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md). | {%
 ||{% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} | Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
 If you aren't sure whether the tasks have such content, enable this option. | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Filters**{% endif %} | 
+||{% if locale == "en-com" %}**Filters**{% endif %} |
 
 {% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
@@ -197,7 +197,7 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 ## For developers {#for-developers}
 
 - [Toloka API: Creating pool](../../api/concepts/create-pool.md)
-- [Toloka-Kit: Creating pool](../../toloka-kit/reference/toloka.client.TolokaClient.create_pool.md)
+- [Toloka-Kit recipe: Create pool](../../toloka-kit/recipes/create-pool.md)
 
 ## Troubleshooting {#troubleshooting}
 

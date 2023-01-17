@@ -132,7 +132,9 @@ To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as
 ## For developers {#for-developers}
 
 - [Toloka API: Messages for Tolokers](../../api/concepts/messages.md)
-- [Toloka-Kit: Working with messages](../../toloka-kit/reference/toloka.client.TolokaClient.add_message_thread_to_folders.md)
+- [Toloka-Kit recipe: Send messages](../../toloka-kit/recipes/send-messages.md)
+- [Toloka-Kit recipe: Get list of message threads](../../toloka-kit/recipes/get-message-threads.md)
+- [Toloka-Kit recipe: Reply to message thread](../../toloka-kit/recipes/reply-to-message-thread.md)
 
 ## Troubleshooting {#troubleshooting}
 
