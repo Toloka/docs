@@ -168,7 +168,7 @@ If you set the interval too long, the tasks will stay open for a long time. If i
 
 #### {% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %}
 
-The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).
+The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0 (1 if you use dynamic overlap), maximum — 259200 seconds (three days).
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks.
 
