@@ -6,9 +6,11 @@ Before launching the project, see the [What tasks can't be placed in Toloka?](..
 
 {% endnote %}
 
-When you launch first pool of a new project, it is sent to moderation. 
+Moderation begins when you launch the first pool of a new project in which the pools have not been started before. 
 
-This usually takes about 1 hour. Doubtful cases and projects involving sensitive topics may take longer to pass moderation.
+This usually takes about 1 hour. In some cases, the moderation process may take longer.
+
+Note that tasks are not available to Tolokers during moderation.
 
 If moderation was successful and you didn't pause the pool, then the project will be launched and Tolokers will be able to take your task.
 
@@ -18,12 +20,8 @@ If the [rules](../../../../guide/concepts/unwanted.md) have been violated and yo
 
 1. Press the **Contact support** button on the pool page or on the project page to find out why the project was rejected.
 
-2. [Edit](../../../../guide/concepts/edit-project.md) the project according to the rules.
+2. Follow the recommendations of our support and [edit](../../../../guide/concepts/edit-project.md) the project to eliminate violations.
+
+    Also you can [clone](../../../../guide/concepts/project.md#clone) the project, make changes in it and launch the cloned project to start moderation again.
 
 3. Ask the support to recheck and accept project.
-
-{% note info %}
-
-Tasks are not available to Tolokers during moderation.
-
-{% endnote %}

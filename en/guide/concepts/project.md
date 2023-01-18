@@ -1,6 +1,6 @@
 # Create a project
 
-If you already have a project and you want to create an identical one, [clone](project.md) the existing project. If not, create a new project.
+If you already have a project and you want to create an identical one, [clone](#clone) the existing project. If not, create a new project.
 
 ## New project {#new-project}
 
