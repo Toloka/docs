@@ -14,7 +14,7 @@ To save money, you can set up dynamic overlap (also known as incremental relabel
 ||{% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} | Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
 If you aren't sure whether the tasks have such content, enable this option. | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Filters**{% endif %} | 
+||{% if locale == "en-com" %}**Filters**{% endif %} |
 
 {% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
@@ -47,7 +47,7 @@ You set the range, the service analyzes the responses, their consistency, the le
 We recommend spending no more than 60 seconds per task (including the time for page loading and sending responses).
 
 If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
-||{% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %} | The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).
+||{% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %} | The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0 (1 if you use dynamic overlap), maximum — 259200 seconds (three days).
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
 ||{% if locale == "en-com" %}**Pool closing date**{% endif %} | The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
