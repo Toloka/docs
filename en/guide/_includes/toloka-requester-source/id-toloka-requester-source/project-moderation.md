@@ -1,17 +1,29 @@
 ## Project moderation {#moderation}
 
-After you press the **Start labeling** button on the pool page, your project is sent to moderation. You can see the moderation status under the project name on the pool page or on the project page.
+{% note warning %}
 
-Moderation statuses:
+Before launching the project, see the [What tasks can't be placed in Toloka?](../../../../guide/concepts/unwanted.md) page.
 
-* **Pending** — the **Start labeling** button and edit mode are inactive, preview mode is active.
-* **Rejected** — Toloka support notifies you that your project didn't pass moderation and that you need to make changes. If you didn't get any notifications, press the **Contact support** button on the pool page or on the project page.
-* **Ready for labeling** — your project has been approved, the **Start labeling** button and edit mode are available again.
+{% endnote %}
 
-You cannot launch:
+When you launch first pool of a new project, it is sent to moderation. 
 
-* political surveys;
-* tasks that transmit personal data of Tolokers or third parties;
-* field tasks or data labeling from the places where fighting is taking place.
+This usually takes about 1 hour. Doubtful cases and projects involving sensitive topics may take longer to pass moderation.
 
-To see the complete list of tasks that you can't launch, go to the [What tasks can't be placed in Toloka?](https://toloka.ai/en/docs/guide/concepts/unwanted) page.
+If moderation was successful and you didn't pause the pool, then the project will be launched and Tolokers will be able to take your task.
+
+Otherwise, you'll see the **Your project didn't pass moderation** under the project name and get the appropriate notification. In this case, you won't be able to launch pools and Tolokers won't see tasks from the project.
+
+If the [rules](../../../../guide/concepts/unwanted.md) have been violated and your project is rejected:
+
+1. Press the **Contact support** button on the pool page or on the project page to find out why the project was rejected.
+
+2. [Edit](../../../../guide/concepts/edit-project.md) the project according to the rules.
+
+3. Ask the support to recheck and accept project.
+
+{% note info %}
+
+Tasks are not available to Tolokers during moderation.
+
+{% endnote %}
