@@ -12,7 +12,7 @@ This usually takes about 1 hour. Doubtful cases and projects involving sensitive
 
 If moderation was successful and you didn't pause the pool, then the project will be launched and Tolokers will be able to take your task.
 
-Otherwise, you'll see the **Your project didn't pass moderation** under the project name and get the appropriate notification. In this case, you won't be able to launch pools and Tolokers won't see tasks from the project.
+Otherwise, you'll see the **Your project didn't pass moderation** label under the project name and get the appropriate notification. In this case, you won't be able to launch pools and Tolokers won't see tasks from the project.
 
 If the [rules](../../../../guide/concepts/unwanted.md) have been violated and your project is rejected:
 
