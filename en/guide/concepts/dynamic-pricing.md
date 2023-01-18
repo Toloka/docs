@@ -32,7 +32,7 @@ The high task price doesn't guarantee a good quality of the result. Increasing t
 
 {% endnote %}
 
-## Price per item {#price-per-item}
+## Price per task {#price-per-task}
 
 When you're creating or editing a pool, under the **Price per task suite, $** field you can see price per 1 [task](../../glossary.md#task).
 
