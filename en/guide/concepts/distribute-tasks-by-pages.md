@@ -133,7 +133,7 @@ If another overlap value is set, control tasks may end during labeling and the p
 ## For developers {#for-developers}
 
 - [Toloka API: Task suites](../../api/concepts/task-suite.md)
-- [Toloka-Kit: Creating task suite](../../toloka-kit/reference/toloka.client.TolokaClient.create_task_suite.md)
+- [Toloka-Kit recipe: Group tasks in task suites](../../toloka-kit/recipes/create-task-suite.md)
 
 ## Troubleshooting {#troubleshooting}
 

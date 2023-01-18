@@ -197,7 +197,7 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 ## For developers {#for-developers}
 
 - [Toloka API: Creating pool](../../api/concepts/create-pool.md)
-- [Toloka-Kit: Creating pool](../../toloka-kit/reference/toloka.client.TolokaClient.create_pool.md)
+- [Toloka-Kit recipe: Create pool](../../toloka-kit/recipes/create-pool.md)
 
 ## Troubleshooting {#troubleshooting}
 

@@ -213,7 +213,7 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 - [Toloka API: Filtering by profile data](../../api/concepts/filter-profile.md)
 - [Toloka API: Filtering by computed data](../../api/concepts/filter-computed.md)
 - [Toloka API: Filtering by skills](../../api/concepts/filter-skill.md)
-- [Toloka-Kit: Filters](../../toloka-kit/reference/toloka.client.filter.AdultAllowed.md)
+- [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
 
 ## Troubleshooting {#troubleshooting}
 

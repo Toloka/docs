@@ -151,7 +151,7 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 ## For developers {#for-developers}
 
 - [Toloka API: Tasks](../../api/concepts/tasks.md)
-- [Toloka-Kit: Creating tasks](../../toloka-kit/reference/toloka.client.TolokaClient.create_task.md)
+- [Toloka-Kit recipe: Upload tasks](../../toloka-kit/recipes/upload-tasks.md)
 
 ## Troubleshooting {#troubleshooting}
 

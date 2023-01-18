@@ -189,7 +189,8 @@ d) the result of the Task does not comply with the Instruction.
 ## For developers {#for-developers}
 
 - [Toloka API: Checking completed tasks](../../api/concepts/accept.md)
-- [Toloka-Kit: Accepting responses](../../toloka-kit/reference/toloka.client.TolokaClient.accept_assignment.md)
+- [Toloka-Kit recipe: Accept responses](../../toloka-kit/recipes/accept-responses.md)
+- [Toloka-Kit recipe: Reject responses](../../toloka-kit/recipes/reject-responses.md)
 
 ## Troubleshooting {#troubleshooting}
 

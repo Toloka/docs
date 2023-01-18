@@ -81,8 +81,9 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
 - [Toloka API: Getting responses](../../api/concepts/get-response.md)
 - [Toloka API: Files in responses](../../api/concepts/attachments.md)
-- [Toloka-Kit: Getting responses](../../toloka-kit/reference/toloka.client.TolokaClient.get_assignments.md)
-- [Toloka-Kit: Getting attachments](../../toloka-kit/reference/toloka.client.TolokaClient.get_attachments.md)
+- [Toloka-Kit recipe: Get list of responses](../../toloka-kit/recipes/get-responses.md)
+- [Toloka-Kit recipe: Get list of files in responses](../../toloka-kit/recipes/get-attachments.md)
+- [Toloka-Kit recipe: Download attachments](../../toloka-kit/recipes/download-attachment.md)
 
 ## Troubleshooting {#troubleshooting}
 
