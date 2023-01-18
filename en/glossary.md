@@ -184,10 +184,6 @@ Interested users {#interested-users}
 
 : The number of Tolokers who started at least one [task suite](#task-suite).
 
-Item {#item}
-
-: Item corresponds to the final labeled data unit. It is calculated as the aggregated result of all responses received for a task.
-
 ### K
 
 Keeping the task order {#keep-task-order}
