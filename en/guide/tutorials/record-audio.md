@@ -80,9 +80,13 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click {% if locale == "en-com" %}**Create new pool**{% endif %}.
+1. Click **Add a pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Create**.
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
@@ -100,7 +104,7 @@ Before you begin:
 
         {% include [tutorials-speed-filter-image](../_includes/tutorials/speed-filter-image.md) %}
 
-1. In {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
     1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 21).
 
@@ -140,50 +144,52 @@ Before you begin:
 
         The value depends on how many recordings of the same phrase you want to collect. If one is enough, set `1`.
 
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify the {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
+    1. At the bottom of the {% if locale == "en-com" %}**Price**{% endif %} section, you see {% if locale == "en-com" %}**Price per 1 task**{% endif %}. This is the amount of money paid per task.
+
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
     This time should be enough to read the instructions and load the task (for example, 1,200 seconds).
 
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload data {#upload}
+    1. Create the tasks for Tolokers:
 
-At this step, upload your task data to Toloka.
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:text`, and the values are texts.
 
-1. Create the tasks for Tolokers:
+            ```plaintext
+            INPUT:text
+            Does white chocolate have cocoa?
+            How many rings are there in the Olympic Games symbol?
+            What is the capital of Australia?
+            ```
 
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+        1. Open the downloaded file, and replace the sample values with your texts.
 
-        For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:text`, and the values are texts.
+        1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
 
-        ```plaintext
-        INPUT:text
-        Does white chocolate have cocoa?
-        How many rings are there in the Olympic Games symbol?
-        What is the capital of Australia?
-        ```
+        1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-    1. Open the downloaded file, and replace the sample values with your texts.
+    1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+        - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. For this project, you don’t need control tasks.
 
-1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
+        - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
 
-    - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
+        For example, you can add 5 general tasks per suite:
 
-    - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. For this project, you don’t need control tasks.
+        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png)
 
-    - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
+    1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
-    For example, you can add 5 general tasks per suite:
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-    [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png)
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

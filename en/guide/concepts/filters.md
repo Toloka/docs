@@ -2,7 +2,7 @@
 
 You can use filters to select Tolokers for your project. Tasks will only be shown to matching Tolokers, rather than to all of them. Properly configured filters help you send tasks to a target group of Tolokers. As a result, you'll get your results faster and spend less money.
 
-To select Tolokers for the [pool](../../glossary.md#pool), click {% if locale == "en-com" %}**Add filter**{% endif %} on the pool editing page.
+To select Tolokers for the [pool](../../glossary.md#pool), click {% if locale == "en-com" %}**Add filter**{% endif %} at the {% if locale == "en-com" %}**Select the audience for your task**{% endif %} step of creating a pool or on the pool editing page.
 
 From the drop-down list, select filters by profile data and device specifications.
 

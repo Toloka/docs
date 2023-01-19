@@ -96,9 +96,13 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click {% if locale == "en-com" %}**Create new pool**{% endif %}.
+1. Click **Add a pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Create**.
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
@@ -114,7 +118,7 @@ Before you begin:
 
         {% include [tutorials-speed-filter-image](../_includes/tutorials/speed-filter-image.md) %}
 
-1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results:
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
     1. To filter out Tolokers who complete tasks too fast, edit the pre-configured {% if locale == "en-com" %}**Fast responses**{% endif %} rule. Specify the following values:
 
@@ -154,80 +158,64 @@ Before you begin:
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–12 tasks per suite.
+    1. In {% if locale == "en-com" %}**Price per task suite, $**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–12 tasks per suite.
 
     1. {% include [toloka-requester-source-overlap-settings](../_includes/toloka-requester-source/id-toloka-requester-source/overlap-settings.md) %}
 
         The default value (`3`) means that each task will have 3 responses.
 
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify the {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
     This time should be enough to read the instructions, load the task suite, listen to all the audio recordings in it, and respond (for example, 900 seconds).
 
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload data {#upload}
+    1. Attach a prepared dataset or media files.
 
-At this step, upload your task data to Toloka.
+        {% list tabs %}
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+        - A prepared dataset
 
-1. Attach a prepared dataset or media files.
+            1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-    {% list tabs %}
+                For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio recordings.
 
-    - A prepared dataset
+                ```plaintext
+                INPUT:audio
+                https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_4.mp3
+                https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_6.mp3
+                https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_8.mp3
+                ```
 
-        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+            1. Open the downloaded file, and replace the sample links with the links to your audio recordings.
 
-            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio recordings.
+            1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
 
-            ```plaintext
-            INPUT:audio
-            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_4.mp3
-            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_6.mp3
-            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_8.mp3
-            ```
+        - Media files
 
-        1. Open the downloaded file, and replace the sample links with the links to your audio recordings.
+            {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
-        1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
+        {% endlist %}
 
-    - Media files
+    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+    1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
-    {% endlist %}
+        - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
 
-1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
 
-1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
+        - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
 
-    - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
+        For example, you can add 9 general tasks and 1 control task per suite:
 
-    - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
+        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png =600x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png)
 
-    - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
-
-    For example, you can add 9 general tasks and 1 control task per suite:
-
-    [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png =600x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-upload-data.png)
-
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+    1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
 1. {% include [toloka-requester-source-add-control-tasks](../_includes/toloka-requester-source/id-toloka-requester-source/add-control-tasks.md) %}
 
-    1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
-
-        [![Upload data. Edit](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-edit.png =610x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-edit.png)
-
-    1. {% include [toloka-requester-source-create-control-button](../_includes/toloka-requester-source/id-toloka-requester-source/create-control-button.md) %}
-
-        [![Upload data. Create control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-control-button.png =500x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-control-button.png)
-
     1. Check the {% if locale == "en-com" %}**result**{% endif %} checkbox, and select the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
-
-        [![Upload data. Create control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-creating-control-task.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-creating-control-task.png)
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
@@ -235,9 +223,19 @@ At this step, upload your task data to Toloka.
 
         [![Upload data. Distribution of correct responses for control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png =330x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png)
 
-    1. When you are done adding control tasks, click the pool name in the menu.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-        [![Upload data. Click pool name](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-pool-name.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-pool-name.png)
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
+
+1. At the **Add optional pool settings** step, set up advanced pool settings.
+
+    {% note info %}
+
+    This step will be enabled after you complete the previous steps. You can skip this step by clicking **Use default settings**.
+
+    {% endnote %}
+
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

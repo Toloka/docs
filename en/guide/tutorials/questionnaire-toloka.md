@@ -88,9 +88,13 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click {% if locale == "en-com" %}**Create new pool**{% endif %}.
+1. Click **Add a pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Create**.
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
@@ -116,7 +120,7 @@ Before you begin:
 
         You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
 
-1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
     1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
 
@@ -152,7 +156,9 @@ Before you begin:
 
         The rule will work if you specify the correct answer to the attention check question in the file with tasks. You will do that later in this tutorial.
 
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}. It should be long enough to read the instructions, wait for the task data to load, and give the answers.
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
+
+    It should be long enough to read the instructions, wait for the task data to load, and give the answers.
 
 1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
 
@@ -166,31 +172,31 @@ Before you begin:
 
         You can also increase overlap when labeling is in progress or when it’s completed.
 
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload data {#upload}
+    1. Create the tasks for Tolokers:
 
-At this step, upload your task data to Toloka.
+        1. Download the [archive with the sample files](https://labs-images-testing.s3.yandex.net/presets/sidepanel/23_poll/EN/new/sample-files.zip) and unpack it.
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+        1. Choose a format that is convenient for you and open the file. Change the value of the `GOLDEN:check` parameter if needed.
 
-1. Create the tasks for Tolokers:
+        1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file from the previous step.
 
-    1. Download the [archive with the sample files](https://labs-images-testing.s3.yandex.net/presets/sidepanel/23_poll/EN/new/sample-files.zip) and unpack it.
+        1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-    1. Choose a format that is convenient for you and open the file. Change the value of the `GOLDEN:check` parameter if needed.
+        1. Tasks are shown to Tolokers in suites. A suite is a single page with multiple tasks.
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file from the previous step.
+            Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+            [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png)
 
-    1. Tasks are shown to Tolokers in suites. A suite is a single page with multiple tasks.
+    1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
-        Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png)
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

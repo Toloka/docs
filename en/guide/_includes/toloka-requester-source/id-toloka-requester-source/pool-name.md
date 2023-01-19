@@ -1,0 +1,1 @@
+Set the **Pool name (visible only to you)** field. Only you will see this pool name on the [project](../../../../glossary.md#project) page.

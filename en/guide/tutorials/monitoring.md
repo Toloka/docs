@@ -104,9 +104,13 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click {% if locale == "en-com" %}**Create new pool**{% endif %}.
+1. Click **Add a pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Create**.
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
@@ -122,7 +126,7 @@ Before you begin:
 
         {% include [tutorials-speed-filter-image](../_includes/tutorials/speed-filter-image.md) %}
 
-1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
     1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 21).
 
@@ -140,11 +144,13 @@ Before you begin:
 
         This means that if you reject assignments during the review, they’ll be sent for re-completion to another Toloker.
 
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In the {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}. It should be long enough to get to the place, find the specified point and object, and upload the photos. For field tasks, this time is usually 86,400 seconds (24 hours).
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
+
+    It should be long enough to get to the place, find the specified point and object, and upload the photos. For field tasks, this time is usually 86,400 seconds (24 hours).
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks.
+    1. In {% if locale == "en-com" %}**Price per task suite, $**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks.
 
         For this type of project, a task suite must contain only one task. You will set the number of tasks per suite later in this tutorial.
 
@@ -152,60 +158,60 @@ Before you begin:
 
         For field tasks, it is usually 1. This means that each task will have 1 response.
 
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload data {#upload}
+    1. Create the tasks for Tolokers:
 
-At this step, upload your task data to Toloka.
+        1. To download a template, click one of the buttons:
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+            - {% if locale == "en-com" %}**Template in XLSX**{% endif %}
 
-1. Create the tasks for Tolokers:
+            - {% if locale == "en-com" %}**Template in TSV**{% endif %}
 
-    1. To download a template, click one of the buttons:
+            - {% if locale == "en-com" %}**Template in JSON**{% endif %}
 
-        - {% if locale == "en-com" %}**Template in XLSX**{% endif %}
+            For this type of project, the file with tasks must contain seven parameters:
 
-        - {% if locale == "en-com" %}**Template in TSV**{% endif %}
+            - `INPUT:name`: A string with the task title.
 
-        - {% if locale == "en-com" %}**Template in JSON**{% endif %}
+            - `INPUT:image`: A string with the link to the photo of the field object that the Toloker should find.
 
-        For this type of project, the file with tasks must contain seven parameters:
+            - `INPUT:address`: A string with the task address.
 
-        - `INPUT:name`: A string with the task title.
+            - `INPUT:product`: A string with the field object description.
 
-        - `INPUT:image`: A string with the link to the photo of the field object that the Toloker should find.
+            - `INPUT:coordinates`: A string with the coordinates of the point that the Toloker should go to.
 
-        - `INPUT:address`: A string with the task address.
+            - `AI:latitude`, `AI:longitude`: The latitude and longitude from the `INPUT:coordinates` parameter presented separately. The values of `INPUT:coordinates`, `AI:latitude` and `AI:longitude` should have the same accuracy, that is have the same number of digits after the decimal separator.
 
-        - `INPUT:product`: A string with the field object description.
+            ```plaintext
+            INPUT:name	INPUT:image	INPUT:address	INPUT:product	INPUT:coordinates	AI:latitude	AI:longitude
+            Title-1	https://yastatic.net/s3/toloka/p/toloka-requester-page-project-preview/877a55555a5f199dff16.jpg	Address-1	Object-1	53.947516,27.669428	53.947516	27.669428
+            Title-2	https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/048e5760fc5a46faa434922b2447a527.jpg	Address-2	Object-2	53.947517,27.669429	53.947517	27.669429
+            Title-3	https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/05334365c060421ab25264166bbb4fd1.jpg	Address-3	Object-3	53.947518,27.669428	53.947518	27.669428
+            ```
 
-        - `INPUT:coordinates`: A string with the coordinates of the point that the Toloker should go to.
+        1. Open the downloaded file, and replace the sample values with your data. You can use a service like Google Maps to get the coordinates.
 
-        - `AI:latitude`, `AI:longitude`: The latitude and longitude from the `INPUT:coordinates` parameter presented separately. The values of `INPUT:coordinates`, `AI:latitude` and `AI:longitude` should have the same accuracy, that is have the same number of digits after the decimal separator.
+        1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
 
-        ```plaintext
-        INPUT:name	INPUT:image	INPUT:address	INPUT:product	INPUT:coordinates	AI:latitude	AI:longitude
-        Title-1	https://yastatic.net/s3/toloka/p/toloka-requester-page-project-preview/877a55555a5f199dff16.jpg	Address-1	Object-1	53.947516,27.669428	53.947516	27.669428
-        Title-2	https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/048e5760fc5a46faa434922b2447a527.jpg	Address-2	Object-2	53.947517,27.669429	53.947517	27.669429
-        Title-3	https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/05334365c060421ab25264166bbb4fd1.jpg	Address-3	Object-3	53.947518,27.669428	53.947518	27.669428
-        ```
+        1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-    1. Open the downloaded file, and replace the sample values with your data. You can use a service like Google Maps to get the coordinates.
+    1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+        1. Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab.
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        1. In this type of project, the task suite must contain only one task:
 
-1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
+            [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/monitoring-field-objects/monitoring-field-objects-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/monitoring-field-objects/monitoring-field-objects-number-tasks.png)
 
-    1. Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab.
+    1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
-    1. In this type of project, the task suite must contain only one task:
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/monitoring-field-objects/monitoring-field-objects-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/monitoring-field-objects/monitoring-field-objects-number-tasks.png)
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

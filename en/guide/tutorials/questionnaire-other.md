@@ -128,27 +128,37 @@ You can create a pool using one of the ways:
 
     1. If there are no pools in the project, click {% if locale == "en-com" %}**Create pool from preset for Survey on third-party platform**{% endif %} on the {% if locale == "en-com" %}**Pools**{% endif %} tab. Otherwise, click {% if locale == "en-com" %}**Add a pool → From Survey on third-party platform preset**{% endif %} at the right side of the project page.
 
-    1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+    1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+    
+    1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-    1. Under {% if locale == "en-com" %}**Audience**{% endif %}, check the pre-configured filters and correct them if necessary.
+    1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
     1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
 
-    1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, check the quality control rules and correct them if necessary.
+    1. At the {% if locale == "en-com" %}**Setup quality control**{% endif %} step, check the quality control rules and correct them if necessary.
 
-    1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
+    1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-    1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+    1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
         {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+    1. [Upload](#upload) your task data.
+    
+    1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+
+        {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
+
+    {% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 - Create a pool from scratch
 
     1. If there are no pools in the project, click {% if locale == "en-com" %}**Create new pool from scratch**{% endif %} on the {% if locale == "en-com" %}**Pools**{% endif %} tab. Otherwise, click {% if locale == "en-com" %}**Add a pool → From scratch**{% endif %} at the right side of the project page.
 
-    1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+    1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+    
+    1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
     1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
@@ -174,7 +184,7 @@ You can create a pool using one of the ways:
 
             You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
 
-    1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+    1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
         1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
 
@@ -212,7 +222,7 @@ You can create a pool using one of the ways:
 
             The rule will work if you specify the correct completion code in the file with tasks. You will do that later in this tutorial.
 
-    1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
+    1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
         {% note warning %}
 
@@ -220,19 +230,23 @@ You can create a pool using one of the ways:
 
         {% endnote %}
 
-    1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+    1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
         {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+    1. [Upload](#upload) your task data.
+
+    1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+
+        {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
+
+    {% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 {% endlist %}
 
 ## Upload data {#upload}
 
-At this step, upload your task data to Toloka.
-
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+1. Go to the **Prepare and upload data** step if you're creating a pool or click the **Upload** button on the pool page.
 
 1. Create the tasks for Tolokers:
 

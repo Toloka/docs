@@ -104,9 +104,13 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click {% if locale == "en-com" %}**Create new pool**{% endif %}.
+1. Click **Add a pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Create**.
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
@@ -144,60 +148,44 @@ Before you begin:
 
         The default value (`3`) means that each task will have 3 responses.
 
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload data {#upload}
+    1. Create the tasks for Tolokers:
 
-At this step, upload your task data to Toloka.
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+            For this type of project, the file with tasks must have two parameters. Their names equal `INPUT:image_left` and `INPUT:image_right`, and the values are links to the images.
 
-1. Create the tasks for Tolokers:
+            ```plaintext
+            INPUT:image_left	INPUT:image_right
+            https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_blossom_icon.png	https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_dandelion_icon.png
+            https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_dandelion_icon.png	https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_sunrise_icon.png
+            https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_sunrise_icon.png	https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_blossom_icon.png
+            ```
 
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+        1. Open the downloaded file, and replace the sample links with links to your images.
 
-        For this type of project, the file with tasks must have two parameters. Their names equal `INPUT:image_left` and `INPUT:image_right`, and the values are links to the images.
+        1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
 
-        ```plaintext
-        INPUT:image_left	INPUT:image_right
-        https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_blossom_icon.png	https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_dandelion_icon.png
-        https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_dandelion_icon.png	https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_sunrise_icon.png
-        https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_sunrise_icon.png	https://tlk.s3.yandex.net/dataset/toloka_logos/b2b_blossom_icon.png
-        ```
+        1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
-    1. Open the downloaded file, and replace the sample links with links to your images.
+    1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+        - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
 
-1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
+        - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
 
-    - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
+        For example, you can add 9 general tasks and 1 control task per suite:
 
-    - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
+        [![Upload your file. Step 3](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.png)
 
-    - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
-
-    For example, you can add 9 general tasks and 1 control task per suite:
-
-    [![Upload your file. Step 3](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.png)
-
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+    1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
 
 1. {% include [toloka-requester-source-add-control-tasks](../_includes/toloka-requester-source/id-toloka-requester-source/add-control-tasks.md) %}
 
-    1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
-
-        [![Upload your file. Step 5.1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/upload-data-step-3.1.png)
-
-    1. {% include [toloka-requester-source-create-control-button](../_includes/toloka-requester-source/id-toloka-requester-source/create-control-button.md) %}
-
-        [![Upload your file. Step 5.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.2.png)
-
     1. Check the {% if locale == "en-com" %}**result**{% endif %} checkbox, and select the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
-
-        [![Upload your file. Step 5.3](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.3.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.3.png)
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
@@ -205,9 +193,11 @@ At this step, upload your task data to Toloka.
 
         [![Upload your file. Step 5.4](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.4.png =340x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.4.png)
 
-    1. When you are done adding control tasks, click the pool name in the menu.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-        [![Upload your file. Step 5.5](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.5.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.5.png)
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
+
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 

@@ -1,0 +1,1 @@
+At the **Double-check your project and try out tasks** step, check how the task will look from the Toloker's point of view.

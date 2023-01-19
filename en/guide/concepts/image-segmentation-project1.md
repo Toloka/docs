@@ -10,15 +10,15 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. Open [Toloka for requesters]({{ yandex-toloka }}).
 
-    1. Click the {% if locale == "en-com" %}**+ Create project**{% endif %} button.
+    1. Click the **+ Create project** button.
 
-    1. In the window that opens, find the {% if locale == "en-com" %}**Image classification**{% endif %} template and click {% if locale == "en-com" %}**Select**{% endif %}.
+    1. In the window that opens, find the **Image classification** template and click **Select**.
 
 1. Provide general information:
 
-    1. In the {% if locale == "en-com" %}**Name to show Tolokers**{% endif %} field, enter `Are there traffic signs in the picture?`.
+    1. In the **Name to show Tolokers** field, enter `Are there traffic signs in the picture?`.
 
-    1. In the {% if locale == "en-com" %}**Description for Tolokers**{% endif %} field, enter `Look at the picture and answer whether or not it shows any traffic signs.`
+    1. In the **Description for Tolokers** field, enter `Look at the picture and answer whether or not it shows any traffic signs.`
 
     1. Save the changes.
 
@@ -39,7 +39,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
         1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
-            {% if locale == "en-com" %}
+            
 
             ```json
             "label": "What is the cat's mood?",
@@ -54,11 +54,11 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
             },
             ```
 
-            {% endif %}
+            
 
             with:
 
-            {% if locale == "en-com" %}
+            
 
             ```json
             "label": "Are there traffic signs in the picture?",
@@ -73,7 +73,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
             },
             ```
 
-            {% endif %}
+            
 
         1. Click **Show specifications** to see the input and output data fields.
 
@@ -101,7 +101,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     - HTML/CSS/JS editor
 
-        1. Edit the **HTML** block in the {% if locale == "en-com" %}**Task interface**{% endif %}.
+        1. Edit the **HTML** block in the **Task interface**.
 
             1. After the line with the image, enter the question:
 
@@ -109,7 +109,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
             1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-                {% if locale == "en-com" %}
+                
 
                 ```plaintext
                 {{img src=image width="100%" height="400px"}}
@@ -120,13 +120,13 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
                 {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
                 ```
 
-                {% endif %}
+                
 
-        1. Leave the **JS**, **CSS**, and {% if locale == "en-com" %}**Data specification**{% endif %} blocks unchanged.
+        1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
 
-            Learn more about {% if locale == "en-com" %}**Specifications**{% endif %} in [Input and output data](incoming.md).
+            Learn more about **Specifications** in [Input and output data](incoming.md).
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
             {% note info %}
 
@@ -136,15 +136,15 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
         1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
 
-        1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
+        1. Exit preview mode. In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
 
    {% endlist %}
 
 1. Save the changes.
 
-1. In the {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %} field, enter the [instructions](../../glossary.md#instructions) and add an image.
+1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
 
-    1. **Instructions:**{% if locale == "en-com" %}
+    1. **Instructions:**
 
         ```plaintext
         Look at the image and answer whether there are any **traffic signs** in it.
@@ -153,13 +153,13 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
         For example, there are traffic signs in the image, so the correct answer is **Yes**.
         ```
 
-        {% endif %}
+        
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
     1. Save the changes.
 
-1. In the upper-right corner, click {% if locale == "en-com" %}**Finish**{% endif %}
+1. In the upper-right corner, click **Finish**
 
     Learn more about working with the project in the [Project](project.md) section.
 
@@ -167,13 +167,15 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 1. Open the page of the project titled **Are there traffic signs on the picture?**.
 
-1. Click the {% if locale == "en-com" %}**Add a pool**{% endif %} button.
+1. Click **Add a pool** on the project page.
 
-1. Specify the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-1. (optional) Add a {% if locale == "en-com" %}**Private comment**{% endif %}. This information is available only to you.
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
+1. Click **Create**.
+
+1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
     1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
@@ -181,101 +183,95 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
-1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 
-1. In the {% if locale == "en-com" %}**Price**{% endif %} block, find the {% if locale == "en-com" %}**Price per task suite**{% endif %} field and specify the price. For example, `0.01`.
+1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-1. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set up [quality control settings](control.md) for the pool:
+    1. In **Price per task suite, $**, set the amount of money to pay per task suite done by one Toloker. For example, `0.01`.
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+    1. {% include [toloka-requester-source-overlap-settings](../_includes/toloka-requester-source/id-toloka-requester-source/overlap-settings.md) %}
 
-    1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Control tasks**{% endif %}.
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Set a rule for [control task](../../glossary.md#control-task): if the {% if locale == "en-com" %}**number of responses**{% endif %} to the control questions is **≥ 3** and {% if locale == "en-com" %}**correct responses (%)**{% endif %} to the control questions is **< 60**, then {% if locale == "en-com" %}**ban**{% endif %} the Toloker {% if locale == "en-com" %}**on project**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. Specify the **Control task** as a reason.
+    1. Click **Add a quality control rule**.
+
+    1. Find the **Rules** block in the list and choose **Control tasks**.
+
+    1. Set a rule for [control task](../../glossary.md#control-task): if the **number of responses** to the control questions is **≥ 3** and **correct responses (%)** to the control questions is **< 60**, then **ban** the Toloker **on project** for **10 days**. Specify the **Control task** as a reason.
 
        Learn more in [Quality control](control.md).
 
-1. In the {% if locale == "en-com" %}**Task overlap**{% endif %} section, enter `3` in the {% if locale == "en-com" %}**The number of Tolokers to complete each task**{% endif %} field.
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-1. In the {% if locale == "en-com" %}**Additional settings**{% endif %} block, enter `600` in the {% if locale == "en-com" %}**Time per task suite**{% endif %} field.
+    The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
-1. Click {% if locale == "en-com" %}**Create a pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload tasks {#upload-file}
+    1. Create the tasks for Tolokers:
 
-Download the sample upload file. You can find it on the pool page. Use it to prepare your own [file](../../glossary.md#tsv) with tasks.
+    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, you can download the file template.
+    1. Open the downloaded file, and replace the sample data with your information.
 
     {% cut "Use sample data" %}
 
     If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool.
 
-    Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+    Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
 
     Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
     {% endcut %}
 
-1. In the window that opens, configure the file upload settings:
+    1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-    1. Choose {% if locale == "en-com" %}**Smart mixing**{% endif %}.
+    1. Click **Continue**.
 
-    1. In the {% if locale == "en-com" %}**General tasks**{% endif %} field, specify `9`.
+    1. In the window that opens, configure the file upload settings:
 
-    1. In the {% if locale == "en-com" %}**Training tasks**{% endif %} field, specify `0`.
+        1. Choose **Smart mixing**.
 
-    1. In the {% if locale == "en-com" %}**Control tasks**{% endif %} field, specify `1`.
+        1. In the **General tasks** field, specify `9`.
 
-    1. Click {% if locale == "en-com" %}**Upload**{% endif %}.
+        1. In the **Training tasks** field, specify `0`.
 
-    1. In the window that opens, choose the [file](../../glossary.md#tsv) with tasks to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
+        1. In the **Control tasks** field, specify `1`.
 
-    1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
+        1. Click **Combine tasks into suites**.
 
 1. Create a [control task](goldenset.md).
 
-    1. Click {% if locale == "en-com" %}**Edit**{% endif %}.
+    1. In the window that opens, click **Create control tasks**.
 
-        {% note info %}
-
-        If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
-
-        {% endnote %}
-
-    1. In the window that opens, click {% if locale == "en-com" %}**Create control tasks**{% endif %}.
-
-    1. In the window that opens, turn on the **result** option in the {% if locale == "en-com" %}**Create control task**{% endif %} section.
+    1. In the window that opens, turn on the **result** option in the **Create control task** section.
 
     1. Choose the correct answer to the question.
 
-    1. Click {% if locale == "en-com" %}**Save and go to next**{% endif %}.
+    1. Click **Save and go to next**.
 
     1. Click **Are there traffic signs in the photo?** to exit the [task markup](../../glossary.md#task-markup) mode.
 
     {% note info %}
 
-    In small pools, control tasks should be 10–20% of all tasks. Include different versions of correct responses in equal amounts. View the distribution of responses on the {% if locale == "en-com" %}**Edit tasks**{% endif %} page, {% if locale == "en-com" %}**Control tasks**{% endif %} tab.
+    In small pools, control tasks should be 10–20% of all tasks. Include different versions of correct responses in equal amounts. View the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
     {% endnote %}
+    
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
 1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
-    {% note warning %}
-
-    The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
-
-    {% endnote %}
-
 ## Get the results {#get-results}
 
-1. Next to the {% if locale == "en-com" %}**Download results**{% endif %} button, click ![Drop-down button](../_images/other/drop-down.svg).
+1. Next to the **Download results** button, click ![Drop-down button](../_images/other/drop-down.svg).
 
-1. Choose {% if locale == "en-com" %}**Dawid-Skene aggregation model**{% endif %} from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
+1. Choose **Dawid-Skene aggregation model** from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
 
-1. In the window that opens, click {% if locale == "en-com" %}**Yes**{% endif %}.
+1. In the window that opens, click **Yes**.
 
-1. At the top of the page, click {% if locale == "en-com" %}**View the list of operations**{% endif %}.
+1. At the top of the page, click **View the list of operations**.
 
     {% note info %}
 
@@ -283,7 +279,7 @@ Download the sample upload file. You can find it on the pool page. Use it to pre
 
     {% endnote %}
 
-1. When the operation is complete, download the results file. To do this, click {% if locale == "en-com" %}**Download**{% endif %} in the {% if locale == "en-com" %}**Files**{% endif %} column.
+1. When the operation is complete, download the results file. To do this, click **Download** in the **Files** column.
 
 1. Use the results file in [project 2](image-segmentation-project2.md).
 
