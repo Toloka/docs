@@ -1,12 +1,12 @@
-# Non-automatic acceptance
+# Manual review
 
-Non-automatic acceptance is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
+Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
 
 You can find the [Review methods](accept.md#acception) in the {% if locale == "en-com" %}**Working with results → Reviewing Tolokers' responses**{% endif %} section.
 
 ## How does it work? {#how-it-works}
 
-You set up assignment review for your pool in the [project](../../glossary.md#project).
+You set up manual review for your pool in the [project](../../glossary.md#project).
 
 As the Tolokers complete the tasks, their responses come for review. You can accept or reject a Toloker's response. If you reject responses, the Toloker can:
 
@@ -34,7 +34,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
 {% endcut %}
 
-You can review responses manually or with the help of Tolokers by posting [a separate review task](find_an_item_in_store.md).
+You can review responses manually or with the help of Tolokers by posting a separate review task.
 
 {% cut "Pool status and the review results" %}
 
@@ -80,11 +80,11 @@ Leave the option in the **No** position, and the tasks will be automatically acc
 
 {% endcut %}
 
-## How do I turn on assignment review? {#accept-params}
+## How do I turn on manual review? {#accept-params}
 
 Take the following steps before starting the pool:
 
-1. Choose the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} parameter on the pool page in edit mode.
+1. Choose the {% if locale == "en-com" %}**Review task responses manually**{% endif %} parameter on the pool page in edit mode.
 
 1. Specify the {% if locale == "en-com" %}**Review period in days**{% endif %} — the number of days for the [review](accept.md) (from 1 to 21 days from the task completion date). The Toloker will see the deadline in the task information on the main Toloka page.
 

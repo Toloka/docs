@@ -1,6 +1,6 @@
 # Reviewing Tolokers' responses
 
-You started a pool with [non-automatic acceptance](offline-accept.md), and the Tolokers completed all your tasks. What next?
+You started a pool with [manual review](offline-accept.md), and the Tolokers completed all your tasks. What next?
 
 - Review the Tolokers' responses before the end of the **Review period** that you specified. At the end of the period, unchecked responses will be accepted automatically.
 
@@ -8,25 +8,15 @@ You started a pool with [non-automatic acceptance](offline-accept.md), and the T
 
 - The Toloker can challenge your decision by submitting an [appeal](#appeal).
 
-## How do I review the tasks? {#acception}
-
-{% endcut %}
-
-{% cut "In the Toloka interface. This option is suitable for a small number of tasks." %}
-
-To accept or reject responses:
-
-If you set [non-automatic acceptance](offline-accept.md) in the pool settings, you need to review the Tolokers' responses within the time limit set in the **Deadline** field. Tolokers may challenge a rejected response by submitting an [appeal](#appeal).
-
-You can review assignments online or upload review results in a file.
-
 {% note info %}
 
 Note that you can't change the task status if the task pool was [archived](pool-archive.md).
 
 {% endnote %}
 
-{% endcut %}
+## How do I review the tasks? {#acception}
+
+#### In the interface
 
 {% cut "Online review of one task." %}
 
@@ -127,15 +117,24 @@ To accept or reject responses:
 
 {% endcut %}
 
-{% cut "Delegate assignment review to other Tolokers." %}
+{% cut "Delegate manual review to other Tolokers." %}
 
-Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements assignment review with the help of Tolokers.
+Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements manual review with the help of Tolokers.
 
 {% endcut %}
 
-{% note info %}
+{% note tip "How to work via Toloka API" %}
 
-Note that you can't change the task status if the task pool was [archived](pool-archive.md).
+To change the status of the received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the task suite assignment that you want to accept or reject:
+
+```bash
+curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a7842a596ac0a' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"status":"ACCEPTED", "public_comment":"OK"}'
+```
+
+Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -190,7 +189,8 @@ d) the result of the Task does not comply with the Instruction.
 ## For developers {#for-developers}
 
 - [Toloka API: Checking completed tasks](../../api/concepts/accept.md)
-- [Toloka-Kit: Accepting responses](../../toloka-kit/reference/toloka.client.TolokaClient.accept_assignment.md)
+- [Toloka-Kit recipe: Accept responses](../../toloka-kit/recipes/accept-responses.md)
+- [Toloka-Kit recipe: Reject responses](../../toloka-kit/recipes/reject-responses.md)
 
 ## Troubleshooting {#troubleshooting}
 

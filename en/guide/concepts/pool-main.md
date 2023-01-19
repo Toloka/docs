@@ -27,18 +27,13 @@ Tasks in pools will automatically be available in the web version of Toloka and 
 ||**My tasks may contain shocking or pornographic content** | Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
 If you aren't sure whether the tasks have such content, enable this option. | **Select the audience for your tasks**||
-||**Filters** | By setting the filters, you choose Tolokers that meet your requirements to complete your task.
-
-For example, you can filter Tolokers by language, country, city, and so on. [Learn more](filters.md)
-
-If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to choose Tolokers who already completed training. [Learn more about skills](nav.md) | **Select the audience for your tasks**||
+||**Filters** | {% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %} | **Select the audience for your tasks**||
 ||**Speed/quality balance** | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | **Select the audience for your tasks**||
-
-||**Non-automatic acceptance** | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
+||**Review task responses manually** | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
 Set the time period when you can check the tasks and reject them if the results are poor.
 
-To learn more about non-automatic acceptance, go to [Reviewing assignments](offline-accept.md). | **Set up quality control**||
+To learn more about manual review, see the [Manual review](offline-accept.md) page. | **Set up quality control**||
 ||**Training** | This field is only available if you have training pools in the project.
 
 [Training pool](../../glossary.md#training-pool) that will be linked to the main one. | **Set up quality control**||
@@ -198,7 +193,7 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 ## For developers {#for-developers}
 
 - [Toloka API: Creating pool](../../api/concepts/create-pool.md)
-- [Toloka-Kit: Creating pool](../../toloka-kit/reference/toloka.client.TolokaClient.create_pool.md)
+- [Toloka-Kit recipe: Create pool](../../toloka-kit/recipes/create-pool.md)
 
 ## Troubleshooting {#troubleshooting}
 

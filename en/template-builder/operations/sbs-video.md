@@ -16,7 +16,7 @@ Unlike other components, [layout.side-by-side](../reference/layout.side-by-side.
 
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/Y7h1_oj33Yb9Fd)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/pu9bV4003ttCMs)
 
 
 Instead of [layout.side-by-side](../reference/layout.side-by-side.md), you can use other components, for example:
@@ -31,7 +31,7 @@ You can sync playback and pause for both videos.
 To do this, add a button ([view.action-button](../reference/view.action-button.md)) that will trigger the [action.play-pause](../reference/action.play-pause.md) action for both videos. To call two actions using one button (for each video), use the [action.bulk](../reference/action.bulk.md) component.
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/8nCSjmCC3Yb9nn)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/-9UsIJDN3ttCPr)
 
 
 You can also trigger playback using a hotkey. The button's shortcut will be shown on the button label.
@@ -45,7 +45,7 @@ To call the same action from different parts of the code, put it in a separate v
 {% endnote %}
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/UePSceAI3YbAQC)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YErQ-Pd93ttCRm)
 
 
 ## Compare multiple videos {#compare-more-video}
@@ -53,12 +53,12 @@ To call the same action from different parts of the code, put it in a separate v
 In the examples below, you can add as many video components as you like using the `items` property.
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/2me7uN1p3YbB2c)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ROoWiLNY3ttCSc)
 
 
 If you want to add multiple videos that a Toloker doesn't have to view at the same time, position them vertically using the [view.list](../reference/view.list.md) component. To make sure that the response selection buttons don't get lost, use the [layout.sidebar](../reference/layout.sidebar.md) component.
 
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/euK1nF4j3YbBYo)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ycaNgDNe3ttCUM)
 
 {% include [contact-support](../_includes/contact-support.md) %}

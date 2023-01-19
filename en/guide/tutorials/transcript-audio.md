@@ -112,7 +112,7 @@ Before you begin:
 
 1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
+    1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field.
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 

@@ -142,7 +142,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.
 
-- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
@@ -168,7 +168,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.
 
-- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.||
 |#
@@ -179,7 +179,7 @@ Examples are provided for simple [classification](../tutorials/image-classificat
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 

@@ -6,7 +6,7 @@ This preset helps you classify text content by specified categories.
 
 Take a look at the example: the labeling interface includes a text and radio buttons. When the **Yes, there are** option is selected, an additional question with checkboxes appears. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/d79jOnuS3cQ5xW)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/JHPP6j1c3ttCmb)
 
 {% cut "Components used in the example" %}
 
@@ -302,7 +302,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/oStyT00s3cQ8D4)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/egPvc7yT3ttCok)
 
 ## Add a response field {#add-text-area}
 
@@ -324,7 +324,7 @@ If you want that Tolokers give an extended response, add a text field using the 
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/dYOxus1h3cQ8PT)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/pPSkmH_U3ttCqT)
 
 ## See also {#see-also}
 

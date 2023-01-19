@@ -10,23 +10,21 @@
 
 Configure this parameter if you need several people to complete your task. Overlap is necessary in tasks for collecting photo datasets, recording audio, or conducting surveys. In other types of tasks, it can improve the quality of results.
 
-To save money, you can set up [dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL).
-
-Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md). | {% if locale == "en-com" %}**Price**{% endif %}||
+To save money, you can set up dynamic overlap (also known as incremental relabeling or IRL). [Learn more](dynamic-overlap.md). | {% if locale == "en-com" %}**Price**{% endif %}||
 ||{% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} | Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
 If you aren't sure whether the tasks have such content, enable this option. | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Filters**{% endif %} | 
+||{% if locale == "en-com" %}**Filters**{% endif %} |
 
 {% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
 | {% if locale == "en-com" %}**Audience**{% endif %}||
 ||{% if locale == "en-com" %}**Speed/quality balance**{% endif %} | A [setting](adjust.md) for choosing Tolokers for your tasks. If you want to get responses very quickly, the quality may be doubtful. If you want very high quality, be prepared to wait longer. Find a balance that meets your needs. [Learn more](adjust.md). | {% if locale == "en-com" %}**Audience**{% endif %}||
-||{% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
+||{% if locale == "en-com" %}**Review task responses manually**{% endif %} | Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
 Set the time period when you can check the tasks and reject them if the results are poor.
 
-To learn more about non-automatic acceptance, go to [Reviewing assignments](offline-accept.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
+To learn more about manual review, go to [Reviewing assignments](offline-accept.md). | {% if locale == "en-com" %}**Quality control**{% endif %}||
 ||{% if locale == "en-com" %}**Training**{% endif %} | This field is only available if you have training pools in the project.
 
 [Training pool](../../glossary.md#training-pool) that will be linked to the main one. | {% if locale == "en-com" %}**Quality control**{% endif %}||
@@ -49,7 +47,7 @@ You set the range, the service analyzes the responses, their consistency, the le
 We recommend spending no more than 60 seconds per task (including the time for page loading and sending responses).
 
 If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
-||{% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %} | The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).
+||{% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %} | The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0 (1 if you use dynamic overlap), maximum — 259200 seconds (three days).
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
 ||{% if locale == "en-com" %}**Pool closing date**{% endif %} | The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up. | {% if locale == "en-com" %}**Additional settings**{% endif %}||
@@ -117,7 +115,7 @@ Use this parameter to:
 
 - Speed up collection of responses for [majority vote](mvote.md) check.
 
-- Issue tasks by priority.
+- Assign tasks by priority.
 
     Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
 |{% if locale == "en-com" %}**Additional settings**{% endif %}||

@@ -4,7 +4,7 @@ For this type of project, you can use the **Image comparison (Side-by-side)** pr
 
 Take a look at the example: there are two images and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/tDog1HS73TUM4B)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/25Fr4UGS3ttDEV)
 
 {% cut "Components used in the example" %}
 
@@ -126,7 +126,7 @@ Take a look at the example: there are two images and buttons to choose an answe
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/EosbIOF23TUN3V)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/unvVAF-93ttDFe)
 
 - To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
 
@@ -146,7 +146,7 @@ Take a look at the example: there are two images and buttons to choose an answe
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/IP_OifxG3TUbMm)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/xCvJnVvg3ttDGy)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -189,7 +189,7 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/jHaQHSZk3TUZcW)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/UKFF2Obp3ttDJb)
 
 ## See also {#see-also}
 

@@ -30,7 +30,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     - Template Builder
 
-      1. Use the [ready-made code](https://clck.ru/U7fSC) for this project with pre-configured validation and task layout.
+      1. Use the [ready-made code](https://ya.cc/t/G4tBYKz63ttEYj) for this project with pre-configured validation and task layout.
 
           The Toloker won't be able to submit the response until they:
 
@@ -229,7 +229,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Turn on the **Non-automatic acceptance** option.
+    1. Turn on the **Review task responses manually** option.
 
     1. Set the **Deadline** field to `7`.
 

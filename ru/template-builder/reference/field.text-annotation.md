@@ -6,7 +6,7 @@
 
 Позволяет выбрать несколько слов, отдельные слова или буквы в тексте и разметить их нужным значением. Можно создать несколько категорий и разметить по ним части текста, например, разметить все существительные и прилагательные.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TaBDD)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/bTmVb7H-3twmCg)
 
 С помощью плагина [plugin.field.text-annotation.hotkeys](plugin.field.text-annotation.hotkeys.md) можно задавать горячие клавиши для выбора категорий.
 

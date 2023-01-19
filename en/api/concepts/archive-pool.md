@@ -99,3 +99,7 @@ The percentage of the operation completed. ||
 
 Pool ID. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/pool-archive.md)

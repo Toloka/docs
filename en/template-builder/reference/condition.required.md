@@ -4,7 +4,7 @@ Checks that the field which must contain the data is present in the response. Th
 
 If used inside the `validation` property, you can omit the `data` property and the same property will be used from the parent component [field](fields.md) (the one that contains the `condition.required` component).
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSBw)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/td7VbsVy3tweoh)
 
 ## Component properties {#properties}
 

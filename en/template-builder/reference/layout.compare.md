@@ -4,7 +4,7 @@ Use it to arrange interface elements for comparing them. For example, you can co
 
 Selection buttons can be placed under each of the compared items. You can also add common elements, such as a field for comments.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSjd)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/7NOkgCvf3twWH8)
 
 Differences from [layout.side-by-side](layout.side-by-side.md):
 

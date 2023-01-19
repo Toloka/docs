@@ -23,7 +23,7 @@ It is converted to an object whose elements consist of the values of the origina
 { "foo": "hello", "bar": "world" }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSbu)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/wf2xSzVO3twkui)
 
 ## Component properties {#properties}
 

@@ -12,7 +12,7 @@ It's possible that after selecting a breed, the Toloker changes their choice of 
 
 View an example with an error in the sandbox.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/aAJnNM8e3YurhR)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/0Ho2_pzu3ttAor)
 
 To fix this, add the code to clear the `breed` data when the `animal` choice changes:
 
@@ -40,6 +40,6 @@ To fix this, add the code to clear the `breed` data when the `animal` choice cha
 
 See the updated example with clearing by trigger.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ze4fI8sW3YurwS)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/jknPjrTl3ttAqw)
 
 {% include [contact-support](../_includes/contact-support.md) %}

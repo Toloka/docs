@@ -18,7 +18,7 @@ This rule can increase the cost of the pool.
 
 Use the rule if you want to get responses only from honest Tolokers to each task in the given overlap.
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [non-automatic acceptance](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [manual review](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
 
 To download the responses of users who are not blocked:
 

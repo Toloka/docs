@@ -6,7 +6,7 @@ To use `@yandex-toloka/helper.proxy`, connect Yandex Disk to your Toloka account
 
 Select the component that you want to add, such as [view.image](view.image.md) for an image or [view.audio](view.audio.md) for an audio file. In the `url` property of this component, select the `@yandex-toloka/helper.proxy` type.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/SVRpe)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/V8WEk0kF3twYd3)
 
 ## Component properties {#properties}
 

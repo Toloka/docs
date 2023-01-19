@@ -9,6 +9,14 @@ Tolokers can be banned in two ways:
 
 You can block a Toloker's access to one or more [projects](../../glossary.md#project). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](../../glossary.md#skill) value lower than N and block their access to tasks. You can also unblock access.
 
+{% note warning %}
+
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+
+{% endnote %}
+
+#### In the interface
+
 To block access to tasks for a single Toloker:
 
 1. Select a Toloker on the [Tolokers]({{ users }}) page.
@@ -46,15 +54,24 @@ To block access to tasks for multiple Tolokers:
 
 You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the {% if locale == "en-com" %}**Bans**{% endif %} tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).
 
-{% note warning %}
+{% note tip "How to work via Toloka API" %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+To block a Toloker's access using Toloka API, send a `PUT` request with the information about the ban:
+
+```bash
+curl -X PUT 'https://toloka.dev/api/v1/user-restrictions' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"scope":"ALL_PROJECTS","user_id":"1ad097faba0eff85a04fe30bc04d53db","will_expire":"2030-01-01T00:00:00.000Z"}'
+```
+
+Refer to the [Block access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
 ## Banning on the platform {#ban-platform}
 
-Toloka has a special antifraud algorithm for banning dishonest Tolokers. It monitors user behavior and blocks suspicious accounts.
+Toloka has dedicated [anti-fraud system](https://toloka.ai/anti-fraud/) for banning dishonest Tolokers. It monitors user behavior and blocks suspicious accounts.
 
 The main reasons for banning:
 
@@ -64,6 +81,7 @@ The main reasons for banning:
 1. Providing false data during registration.
 1. Frequently skipping captchas or entering them incorrectly.
 1. Using multiple accounts.
+1. Location cheating.
 
 {% note info %}
 
@@ -120,7 +138,7 @@ If the Toloker was already paid for the tasks, you can't cancel the payment.
 
 During the training, Tolokers follow the task instructions and practice completing your tasks. Based on the training results, the requester can select Tolokers who did well enough to get access to the main pool. However, the mere fact that the Toloker completes your training pool successfully does not guarantee that they will continue to demonstrate high-quality performance. Tolokers who did well on the training but had inadequate results in the general task might have obtained correct training responses from other people.
 
-In addition to the training, be sure to set up [quality control rules](control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [non-automatic acceptance](offline-accept.md) to pay for them only after reviewing the responses.
+In addition to the training, be sure to set up [quality control rules](control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [manual review](offline-accept.md) to pay for them only after reviewing the responses.
 
 {% endcut %}
 
@@ -138,7 +156,7 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-{% cut "Contact support" %}
+{% cut "Report suspicious Tolokers" %}
 
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=en&iframe=1&service=toloka-ai"></iframe>
 

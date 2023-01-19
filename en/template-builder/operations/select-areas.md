@@ -20,7 +20,7 @@ To allow Tolokers to select areas in pictures, use the [field.image-annotation](
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/RnZox)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/HdPqNHC53ttFBy)
 
 
 ## Configure labeling modes {#shapes}
@@ -41,7 +41,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
   }
   ```
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/Rna3F)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ZtJ6f56P3ttFCb)
 
 - Polygons
 
@@ -55,7 +55,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
   }
   ```
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/RnZtm)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/frlb1AGg3ttFDC)
 
 - Points
 
@@ -69,7 +69,7 @@ The component offers three labeling modes: rectangle, polygon, and point markup.
   }
   ```
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/RnZyt)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/9ZNO1IDp3ttFE3)
 
 {% endlist %}
 
@@ -91,7 +91,7 @@ You can allow Tolokers to select objects by type. For example, you may want all 
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvPR)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/wdxrrKs53ttFEX)
 
 For each new object of the `labels` property, a button is added to the editor that allows Tolokers to select the corresponding area type. Different values of the `value` property let Tolokers label areas with different colors.
 
@@ -102,7 +102,7 @@ To help Tolokers work faster, you can add keyboard shortcuts using the [plugin.f
 
 If you install the shortcut plugin without assigning keys, they are assigned automatically.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/RnbbS)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sn4WScBK3ttFEp)
 
 You can change them as described below. If you don't need some of the shortcuts, leave their value fields empty.
 
@@ -122,7 +122,7 @@ You can change them as described below. If you don't need some of the shortcuts,
   }
   ```
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvWA)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/5tABGn7W3ttFFX)
 
 - Select labeling modes
 
@@ -144,7 +144,7 @@ You can change them as described below. If you don't need some of the shortcuts,
   }
   ```
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/TqvYU)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/DbBftIEj3ttFGC)
 
 - Confirm or cancel area creation
 
@@ -160,7 +160,7 @@ You can change them as described below. If you don't need some of the shortcuts,
   }
   ```
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqvai)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/-QkPhT5x3ttFGj)
 
 {% endlist %}
 
@@ -174,6 +174,6 @@ To create a template for area selection tasks, use the following components:
 - [condition.required](../reference/condition.required.md): To make sure that a Toloker selected at least one area.
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqvd5)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/24FTx6RS3ttFHQ)
 
 {% include [contact-support](../_includes/contact-support.md) %}

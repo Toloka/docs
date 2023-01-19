@@ -152,11 +152,11 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Turn on the **Assignment review** option.
+    1. Turn on the **Review task responses manually** option.
 
-        {% cut "What is non-automatic acceptance (assignment review)?" %}
+        {% cut "What is manual review?" %}
 
-        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+        The [manual review](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
         {% endcut %}
 

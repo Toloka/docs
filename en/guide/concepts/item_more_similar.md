@@ -30,7 +30,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     - Template Builder
 
-      1. Use the [ready-made code](https://clck.ru/U7feQ) for this project with pre-configured validation, keyboard shortcuts, and task layout.
+      1. Use the [ready-made code](https://ya.cc/t/pY0hvzej3ttEgK) for this project with pre-configured validation, keyboard shortcuts, and task layout.
 
           The Toloker won't be able to submit the response until they:
 

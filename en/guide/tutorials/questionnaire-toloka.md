@@ -4,11 +4,7 @@ In this tutorial, you will learn how to create a survey form and run a survey in
 
 Survey is a type of data collection task with several types of closed-ended and open-ended questions.
 
-{% note info %}
-
-To learn how to run a survey using an external survey form, see the [Survey on third-party platform](questionnaire-other.md) tutorial.
-
-{% endnote %}
+{% include [other-survey-solutions](../_includes/tutorials/other-survey-solutions.md) %}
 
 ## Prerequisites {#prerequisites}
 
@@ -54,7 +50,7 @@ Before you begin:
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the [example](https://ya.cc/t/PQl1mCfy3bVK59) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project.
+    1. Copy the code of the [example](https://ya.cc/t/W-EbIhFc3ttAKm) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project.
 
     1. Edit the code: change questions, hints, and answer options. For example, to configure the text of the answer option, replace the sample answers with your values in the following properties:
 
@@ -126,7 +122,7 @@ Before you begin:
 
 1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
+    1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 

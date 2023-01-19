@@ -19,7 +19,7 @@ default:
   requester-profile-integration: https://platform.toloka.ai/requester/profile/integration
   rfc4122: https://tools.ietf.org/html/rfc4122
   safari-mobile: https://support.apple.com/ru-ru/guide/safari-developer/dev84bd42758/mac
-  sandbox: https://sandbox.toloka.yandex.com/for-requesters
+  sandbox: https://sandbox.toloka.yandex.com/ru/for-requesters
   sandbox-requester-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
   sandbox-workers: https://sandbox.toloka.yandex.com/requester/workers
   templates-video: https://platform.toloka.ai/requester/new/project/old?templateId=video

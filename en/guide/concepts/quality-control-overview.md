@@ -46,7 +46,19 @@ To improve quality of answers, you must [select the audience](filters.md) you ne
 
 - Validation by other annotators.
 
-### Protection from cheaters and bots {#protection-from-cheaters}
+### [Anti-fraud system](https://toloka.ai/anti-fraud/) {#anti-fraud}
+
+- Platform-wide ban for fraudulent Tolokers.
+
+- Behavior analysis system.
+
+- Multilayer technologies to detect and prevent all types of fraud.
+
+### Protect your project {#protection-from-cheaters}
+
+{% include [toloka-requester-source-anti-fraud](../_includes/toloka-requester-source/id-toloka-requester-source/anti-fraud.md) %}
+
+To protect your project from cheaters, you can use the quality control rules:
 
 - [Ban](ban.md) for [fast responses](quick-answers.md).
 
@@ -75,12 +87,6 @@ A Toloker who skips 2 task suites in a row is restricted from accessing the pool
 {% endcut %}
 
 {% endcut %}
-
-### Anti-Fraud system {#anti-fraud}
-
-- Behavior analysis system.
-
-- Platform-wide ban for fraudulent Tolokers.
 
 ## Obtaining quality results after data labeling {#obtaining-results}
 
@@ -272,13 +278,13 @@ Then limit your pools to Tolokers with a certain skill using [filters](filters.m
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+Another option for selecting Tolokers for a project of this type is manual review.
 
 {% endcut %}
 
 {% cut "I want to create an exam with three tasks. If a Toloker does two out of three tasks correctly, they get the skill. I'm trying to put “3“ in the “Recent control and training task responses to use“ field, but I'm getting an error telling me that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
-The **Recent control and training task responses to use** field is for the number of recent responses from Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
+The **Recent control and training task responses to use** field is for the number of recent responses from Toloker. If you use manual review for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
 {% endcut %}
 
@@ -397,9 +403,9 @@ This is the total number of responses to the control questions.
 
 {% endcut %}
 
-{% cut "Can I use non-automatic acceptance in the training pool?" %}
+{% cut "Can I use manual review in the training pool?" %}
 
-No. But you can create a pool of the **Training** type based on your main pool and enable non-automatic acceptance there.
+No. But you can create a pool of the **Training** type based on your main pool and enable manual review there.
 
 {% endcut %}
 

@@ -10,11 +10,7 @@ You may need a third-party platform, when:
 
 In Toloka, you can place a link to your survey in the task interface. To enable a Toloker to confirm survey completion, show a code to each respondent who takes the survey on the third-party platform. The respondent will need to copy the code and paste it to the task in Toloka. You will see this code in the results file and will be able to check if it is correct.
 
-{% note info %}
-
-To learn how to create a survey form in Toloka instead of using a third-party platform, see the [Survey with Toloka template](questionnaire-toloka.md) tutorial.
-
-{% endnote %}
+{% include [other-survey-solutions](../_includes/tutorials/other-survey-solutions.md) %}
 
 ## Prerequisites {#prerequisites}
 
@@ -84,7 +80,7 @@ Before you begin:
 
         {% note info %}
 
-        You can also display a survey form in an [iframe](https://ya.cc/t/VDbXMBgW3Z44ft) if a third-party platform allows it. To learn more about the `view.iframe` component, see the [Template Builder Help](../../template-builder/reference/view.iframe.md).
+        You can also display a survey form in an [iframe](https://ya.cc/t/kZoRrfTk3ttAFF) if a third-party platform allows it. To learn more about the `view.iframe` component, see the [Template Builder Help](../../template-builder/reference/view.iframe.md).
 
         {% endnote %}
 
@@ -116,7 +112,7 @@ You can create a pool using one of the ways:
 
     - Indicate an [overlap](../../glossary.md#overlap) equal to the required number of Tolokers.
 
-    - Use [non-automatic acceptance](../concepts/offline-accept.md).
+    - Use [manual review](../concepts/offline-accept.md).
 
     {% note info %}
 
@@ -190,7 +186,7 @@ You can create a pool using one of the ways:
 
     1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-        1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
+        1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
 
             {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
