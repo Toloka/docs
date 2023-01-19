@@ -133,7 +133,7 @@ The most important settings:
 
 - `isReadOnly` — "Read-only" mode flag (for example, for viewing the history of completed tasks).
 
-- `isReviewMode` — Review mode flag (for example, assignment review). This setting and `isReadOnly` are useful if you want to do something like change the template layout in history view mode.
+- `isReviewMode` — Review mode flag (for example, manual review). This setting and `isReadOnly` are useful if you want to do something like change the template layout in history view mode.
 
 - `language` — A two-letter code of the language selected by the Toloker in Toloka settings. It's useful when you want to create multilingual templates.
 
@@ -237,4 +237,4 @@ Validates responses according to output data parameters. Returns a `promise` obj
 
 - `solutions` — Array of the Toloker's task responses. If omitted, the current values are used ([`getSolutions()`](#getSolutions)).
 
-{% include [contact-support](../../_includes/contact-support-new.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

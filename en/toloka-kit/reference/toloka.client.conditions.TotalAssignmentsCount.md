@@ -1,5 +1,5 @@
 # TotalAssignmentsCount
-`toloka.client.conditions.TotalAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/conditions.py#L354)
+`toloka.client.conditions.TotalAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/conditions.py#L354)
 
 ```python
 TotalAssignmentsCount(

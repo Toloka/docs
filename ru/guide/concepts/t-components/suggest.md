@@ -235,4 +235,4 @@
 ||`class` | CSS-класс для поля. Например: `class="mytask_field"`. | нет | `".field" ".field_type_suggest"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

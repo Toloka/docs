@@ -42,7 +42,7 @@ You can set up automatic markup if the following conditions are met:
     - **Sentiment analysis & Content moderation**
     - **Product search relevance**
 
-- For other types of projects, you can request this feature by contacting [support](#toloka-support).
+- For other types of projects, you can request this feature by contacting [support](../troubleshooting/support.md).
 
 - The pool must contain more than 100 tasks.
 
@@ -87,6 +87,12 @@ If the markup process failed for some reason, contact support. Go to the tab for
 - [Add a training pool](train.md).
 - {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
 - [Start the pool](pool-run-and-stop.md).
+
+## See also {#see-also}
+
+- [{#T}](distribute-tasks-by-pages.md)
+- [Efficiency indicators: Control tasks](./efficiency-metrics/control-tasks-share.md)
+- [Efficiency indicators: Control task balance](./efficiency-metrics/control-tasks-balance.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -151,4 +157,4 @@ If the markup process failed for one reason or another, contact support. Go to t
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

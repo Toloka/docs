@@ -1,6 +1,8 @@
+[*remember_values]: The parameter which allows to calculate Toloker's responses from other pools.
+
 # “Remember values” parameter
 
-Some quality control rules have the **Remember values** parameter. It sets the dynamic window equal to N, which the values are recalculated within. Depending on the rule, the dynamic window is measured:
+Some quality control rules have the parameter which allows to calculate Toloker's responses from other pools. It sets the dynamic window, which the values are recalculated within. Depending on the rule, the dynamic window is measured:
 
 - In tasks: the [Review results](reviewing-assignments.md) and [Majority vote](mvote.md) rules, the **Recent tasks to use** field.
 
@@ -8,17 +10,15 @@ Some quality control rules have the **Remember values** parameter. It sets the d
 
 - In [task suites](../../glossary.md#task-suite): the [Fast responses](quick-answers.md) rule, the **Recent task suites to use** field.
 
-- In [captcha entries](../../glossary.md#captcha): the [Captcha](captcha.md) rule, the **Recent captchas to use** field.
-
 ## How it works {#how-field-works}
 
-The **Remember values** parameter works the same way for all rules.
+The [parameter](*remember_values) works the same way for all rules.
 
 Let's see how this parameter works with the [Control tasks](goldenset.md) rule. Go to the project or [pool](../../glossary.md#pool) settings and select this quality control rule.
 
 ![](../_images/remember-value.png)
 
-In our example, the **Remember values** parameter is set in the **Recent control and training task responses to use** field.
+In our example, the [parameter](*remember_values) is set in the **Recent control and training task responses to use** field.
 
 {% list tabs %}
 

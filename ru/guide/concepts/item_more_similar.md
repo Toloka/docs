@@ -32,7 +32,7 @@
 
     - Конструктор шаблонов
 
-      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TvYLF){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/U7feQ){% endif %} для этого проекта, где уже настроена валидация, горячие клавиши и внешний вид задания.
+      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/nOGcR6U-3tvgmM){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/pY0hvzej3ttEgK){% endif %} для этого проекта, где уже настроена валидация, горячие клавиши и внешний вид задания.
 
           Исполнитель не сможет отправить задание, если:
 
@@ -401,4 +401,4 @@
 
 - Прочитайте подробнее про [декомпозицию заданий](solution-architecture.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

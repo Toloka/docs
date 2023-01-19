@@ -4,24 +4,36 @@ To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
-1. Download the template and add your data.
+1. Attach a prepared dataset or media files.
 
-    {% cut "Use sample data" %}
+    {% list tabs %}
 
-    If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
+    - A prepared dataset
 
-    - {% if locale == "en-com" %}**Image classification**{% endif %}
-    - {% if locale == "en-com" %}**Product search relevance**{% endif %}
-    - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
-    - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+        1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
 
-    Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+        1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
 
-    Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+        {% cut "Use sample data" %}
 
-    {% endcut %}
+        If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
 
-1. Attach the file with the tasks.
+        - {% if locale == "en-com" %}**Image classification**{% endif %}
+        - {% if locale == "en-com" %}**Product search relevance**{% endif %}
+        - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
+        - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+
+        Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+
+        Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+
+        {% endcut %}
+
+    - Media files
+
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+
+    {% endlist %}
 
 1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
@@ -128,6 +140,19 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 
 - If you haven't labeled your [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks in the file, [edit the tasks in the interface](task_markup.md).
 
+## See also {#see-also}
+
+- [{#T}](cloud-storage.md)
+- [{#T}](amazon-cloud-storage.md)
+- [{#T}](azure-cloud-storage.md)
+- [{#T}](google-cloud-storage.md)
+- [{#T}](use-object-storage.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Tasks](../../api/concepts/tasks.md)
+- [Toloka-Kit recipe: Upload tasks](../../toloka-kit/recipes/upload-tasks.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Errors in column headers" %}
@@ -174,7 +199,7 @@ But Tolokers don't like to take lengthy tasks. They'd rather do 10 tasks that ta
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and manual review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 {% endcut %}
 
@@ -190,4 +215,4 @@ A task means a separate task. A task suite means a page with tasks. The Toloker 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

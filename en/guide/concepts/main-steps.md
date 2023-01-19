@@ -38,4 +38,8 @@ If you have a complex project, register in the [sandbox](sandbox.md) and create 
 
 1. [Process the results](result-of-eval.md). If the response quality is poor, try to find out why. You may need to edit the instructions or add more tasks to the training.
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+## See also {#see-also}
+
+- [{#T}](first-project.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

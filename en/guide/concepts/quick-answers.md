@@ -2,12 +2,6 @@
 
 This rule is necessary to filter out cheating Tolokers who complete tasks too quickly and carelessly. You can also use it to provide protection against robots that can distort the final results in the pool.
 
-{% note info %}
-
-If you need additional protection from robots, use [captchas](captcha.md).
-
-{% endnote %}
-
 ## When to use {#when-use}
 
 Restrict the pool access for Tolokers who respond too quickly to:
@@ -45,7 +39,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the Toloker's [skill](nav.md).
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
@@ -64,7 +58,7 @@ Examples are provided for simple [classification](../tutorials/image-classificat
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if you don't reject them manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if you don't reject them using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -91,6 +85,11 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 ![](../_images/control-rules/quick-answers/qcr-quick_answers_example2.png)
 
 A Toloker who completes two task suites in less than 20 seconds is suspended from accessing the pool and can't complete your tasks for 10 days.
+
+## For developers {#for-developers}
+
+- [Toloka API: Fast responses](../../api/concepts/fast.md)
+- [Toloka-Kit: AssignmentSubmitTime collector class](../../toloka-kit/reference/toloka.client.collectors.AssignmentSubmitTime.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -138,4 +137,4 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -6,9 +6,17 @@ If tasks were distributed with an [overlap](../../glossary.md#overlap) of more t
 
 ## Getting the file with responses {#tsv}
 
+#### In the interface
+
 To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**Download results**{% endif %} button on the [pool](../../glossary.md#pool) page.
 
-#### Fields in the file with responses
+{% note alert %}
+
+The responses submitted by the banned Toloker before the ban will be taken into account and paid for. To exclude their responses from the results and aggregations, select the option **Exclude assignments from banned users**. It will delete the responses from users who were banned at the moment of downloading the results, not when the pool was labeled.
+
+{% endnote %}
+
+The fields in the file with responses:
 
 - `INPUT:<name of the input data field>` — Input data for tasks.
 
@@ -30,13 +38,20 @@ To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**D
 
     - `ASSIGNMENT:status` — Task status: `SUBMITTED` — completed, `APPROVED` — accepted, `REJECTED` — declined.
 
-#### Sample file
+A sample file:
 
 ![](../_images/results/tsv-result.png)
 
-{% note alert %}
+{% note tip "How to work via Toloka API" %}
 
-The responses submitted by the banned Toloker before the ban will be taken into account and paid for. To exclude their responses from the results and aggregations, select the option **Exclude assignments from banned users**. It will delete the responses from users who were banned at the moment of downloading the results, not when the pool was labeled.
+To get the list of the responses using Toloka API, send a `GET` request with either `pool_id`, `task_suite_id`, or `task_id` specified:
+
+```bash
+curl -X GET 'https://toloka.dev/api/v1/assignments?pool_id=1085757' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+```
+
+Refer to the [Get list of responses](https://toloka.ai/docs/api/api-reference/#get-/assignments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -56,7 +71,19 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
     Select the responses you need and click . Download the archives in several batches. You can select and download no more than 100 responses at a time.
 
-- Use the [Toloka API](../../api/concepts/attachments.md) to download files with responses.
+- Use the [Toloka API](https://toloka.ai/docs/api/api-reference/#tag--attachment) to download files with responses.
+
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Results](https://toloka.ai/knowledgebase/results/)
+
+## For developers {#for-developers}
+
+- [Toloka API: Getting responses](../../api/concepts/get-response.md)
+- [Toloka API: Files in responses](../../api/concepts/attachments.md)
+- [Toloka-Kit recipe: Get list of responses](../../toloka-kit/recipes/get-responses.md)
+- [Toloka-Kit recipe: Get list of files in responses](../../toloka-kit/recipes/get-attachments.md)
+- [Toloka-Kit recipe: Download attachments](../../toloka-kit/recipes/download-attachment.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -174,4 +201,4 @@ When you download the results file, select the **Start time** and **Submit time*
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

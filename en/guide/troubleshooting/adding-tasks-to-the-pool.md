@@ -40,7 +40,7 @@ Escape commas with a backslash (`\`).
 
 {% endcut %}
 
-{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with non-automatic acceptance? Where do I find the format of the upload data?" %}
+{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with manual review? Where do I find the format of the upload data?" %}
 
 Use the button **Upload review results** to upload your file. You can see the format [here](../concepts/accept.md).
 
@@ -108,7 +108,7 @@ But users are reluctant to take lengthy tasks. They'd rather do 10 tasks that ta
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and manual review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 {% endcut %}
 
@@ -379,7 +379,7 @@ However, the mere fact that a Toloker completes your training pool successfully 
 
 Besides the training, be sure to add quality control rules and [control tasks](../concepts/control.md) to your main pools. This way you can ensure the quality throughout the task performance process.
 
-If the task requires that the Tolokers send free-format responses or data files, use **non-automatic acceptance** to pay for tasks after they are reviewed.
+If the task requires that the Tolokers send free-format responses or data files, use manual review to pay for tasks after they are reviewed.
 
 {% endcut %}
 
@@ -436,11 +436,11 @@ To show the training separately from other pools, disable **Use project descript
 
 {% endcut %}
 
-{% cut "Can I implement non-automatic acceptance in the training pool?" %}
+{% cut "Can I implement manual review in the training pool?" %}
 
-You can't use non-automatic acceptance in your training pool.
+You can't use manual review in your training pool.
 
-However, you can create a training pool with the **Training** type based on your main pool and enable non-automatic acceptance there.
+However, you can create a training pool with the **Training** type based on your main pool and enable manual review there.
 
 {% endcut %}
 
@@ -448,7 +448,7 @@ However, you can create a training pool with the **Training** type based on your
 
 You can't create a training like this, because for the response to be counted as correct it must exactly match the control text.
 
-For projects using free text input or attached files, you can make a pre-selection task with non-automatic acceptance. You can admit good Tolokers to your main pool based on their skill.
+For projects using free text input or attached files, you can make a pre-selection task with manual review. You can admit good Tolokers to your main pool based on their skill.
 
 {% endcut %}
 
@@ -458,7 +458,7 @@ To do this, under **Test result**, go to **Recent tasks to use** and specify the
 
 Let's say you need to create an exam with three tasks, one task per suite. If the Toloker succeeds in two out of three tasks, they get the skill.
 
-If your task uses assignment review (non-automatic acceptance), to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
+If your task uses manual review, to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
 
 ![](../_images/troubleshooting/number-of-correct-answers.png)
 
@@ -468,7 +468,7 @@ If your task uses assignment review (non-automatic acceptance), to set up such a
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+Another option for selecting Tolokers for a project of this type is manual review.
 
 {% endcut %}
 
@@ -512,4 +512,4 @@ After uploading, all tasks are put into one list and can't be deleted separately
 
 [Other questions](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -15,7 +15,7 @@
 
 Пример с ошибкой в песочнице:
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QiDwM)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ng4R1dpq3tvrEW)
 
 Чтобы исправить это, надо добавить код для очистки данных о породе (`breed`) при выборе другого животного (`animal`):
 
@@ -43,6 +43,6 @@
 
 Исправленный пример с очисткой по триггеру:
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QiDpv)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/nLidwABT3tvrPa)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

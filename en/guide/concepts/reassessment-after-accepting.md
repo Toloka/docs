@@ -1,13 +1,12 @@
 # Processing rejected and accepted assignments
 
-You can enable the [Non-automatic acceptance](offline-accept.md) option to [reject or accept](accept.md) assignments that Tolokers completed. Assignments are rejected and accepted on a page-by-page basis.
+You can enable the [manual review](offline-accept.md) option to [reject or accept](accept.md) assignments that Tolokers completed. Assignments are rejected and accepted on a page-by-page basis.
 
 {% note info %}
 
 Once the review period in the {% if locale == "en-com" %}**Review period in days**{% endif %} field runs out, tasks are accepted automatically.
 
 {% endnote %}
-
 
 ## When to use {#when-use}
 
@@ -28,10 +27,10 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 {% endnote %}
 
-
 #|
 || **Field**  | **Overview**||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+
 - {% if locale == "en-com" %}**submitted assignments**{% endif %} — The number of [task suites](../../glossary.md#task-suite) that are completed and awaiting review.
 
 - {% if locale == "en-com" %}**approved assignments**{% endif %} — The number of task suites accepted after the review.
@@ -80,6 +79,9 @@ The task is to send rejected and recompleted assignments for review. Or assign t
 
 {% endlist %}
 
+## For developers {#for-developers}
+
+- [Toloka API: Processing rejected and accepted assignments](../../api/concepts/reassessment.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -98,4 +100,4 @@ Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. Yo
 {% endcut %}
 
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

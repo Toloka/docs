@@ -40,9 +40,9 @@ Use the `POST /api/v1/projects` method:
          -H 'Authorization: OAuth <OAuth token>' \
          -H 'Content-Type: application/JSON' \
          -d '{
-               "public_name": "Cat or dog",
-               "public_description": "What kind of animal is on the picture?",
-               "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
+               "public_name": "Categories of shoes",
+               "public_description": "Look at the picture and determine the category of shoes",
+               "public_instructions": "In this task you will see images of different shoes. You need to determine their category.",
                "task_spec": {
                  "input_spec": {
                    "image": {
@@ -56,7 +56,7 @@ Use the `POST /api/v1/projects` method:
                      "type": "string",
                      "required": true,
                      "hidden": false,
-                     "allowed_values": ["cat","dog"]
+                     "allowed_values": ["boots","sneakers","other","failed to load"]
                    }
                  },
                  "view_spec": {
@@ -69,7 +69,7 @@ Use the `POST /api/v1/projects` method:
                      "condition.required": "1.1.5"
                    },
                    "type": "tb",
-                   "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
+                   "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Boots\", \"value\": \"boots\"}, {\"label\": \"Sneakers\", \"value\": \"sneakers\"}, {\"label\": \"Other\", \"value\": \"other\"}, {\"label\": \"Failed to load\", \"value\": \"failed to load\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
                    "settings": {
                      "showSkip": true,
                      "showTimer": true,
@@ -108,9 +108,9 @@ Use the `POST /api/v1/projects` method:
 
         ```json
         {
-          "public_name": "Cat or dog",
-          "public_description": "What kind of animal is on the picture?",
-          "public_instructions": "Look at the picture. Is it a dog or a cat? Choose the correct answer.",
+          "public_name": "Categories of shoes",
+          "public_description": "Look at the picture and determine the category of shoes",
+          "public_instructions": "In this task you will see images of different shoes. You need to determine their category.",
           "task_spec": {
             "input_spec": {
               "image": {
@@ -125,8 +125,10 @@ Use the `POST /api/v1/projects` method:
                 "required": true,
                 "hidden": false,
                 "allowed_values": [
-                  "cat",
-                  "dog"
+                  "boots",
+                  "sneakers",
+                  "other",
+                  "failed to load"
                 ]
               }
             },
@@ -140,7 +142,7 @@ Use the `POST /api/v1/projects` method:
                 "condition.required": "1.1.5"
               },
               "type": "tb",
-              "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Cat\", \"value\": \"cat\"}, {\"label\": \"Dog\", \"value\": \"dog\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
+              "config": "{\"view\": {\"items\": [{\"url\": {\"path\": \"image\", \"type\": \"data.input\"}, \"ratio\": [1, 1], \"type\": \"view.image\"}, {\"data\": {\"path\": \"result\", \"type\": \"data.output\"}, \"validation\": {\"type\": \"condition.required\"}, \"options\": [{\"label\": \"Boots\", \"value\": \"boots\"}, {\"label\": \"Sneakers\", \"value\": \"sneakers\"}, {\"label\": \"Other\", \"value\": \"other\"}, {\"label\": \"Failed to load\", \"value\": \"failed to load\"}], \"type\": \"field.radio-group\"}], \"type\": \"view.list\"}, \"plugins\": [{\"layout\": {\"kind\": \"scroll\", \"taskWidth\": 400}, \"type\": \"plugin.toloka\"}]}",
               "settings": {
                 "showSkip": true,
                 "showTimer": true,
@@ -168,8 +170,8 @@ In response to the  request, you will receive a JSON object for the created pr
 ```json
 {
   "id": "12345",
-  "public_name": "Cat or dog",
-  "public_description": "What kind of animal is on the picture?",
+  "public_name": "Categories of shoes",
+  "public_description": "Look at the picture and determine the category of shoes",
   ...
 }
 ```
@@ -187,7 +189,7 @@ You'll need the `id` to create pools in the project: specify it in the add pool 
 In the given code example, substitute the parameter values:
 
 - In the `project_id` parameter, replace `<project id>` with the ID of the project that the pool was created for (the ID received in response to the add project request).
-- In `will_expire`, replace `<close date>` with the UTC date and time in `ISO 8601: YYYY-MM-DDThh:mm:ss[.sss]` format, specifying when the pool needs to be closed even if some task suites are not completed.
+- In `will_expire`, replace `<close date>` with the UTC date and time in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`, specifying when the pool needs to be closed even if some task suites are not completed.
 
 Next, send a POST request to `/api/v1/pools`:
 
@@ -203,7 +205,7 @@ Next, send a POST request to `/api/v1/pools`:
          -H 'Content-Type: application/JSON' \
          -d '{
                "project_id": "<project id>",
-               "private_name": "Cat pool 1",
+               "private_name": "Shoes pool 1",
                "may_contain_adult_content": true,
                "will_expire": "<close date>",
                "reward_per_assignment": 0.02,
@@ -294,7 +296,7 @@ Next, send a POST request to `/api/v1/pools`:
         ```json
         {
           "project_id": "<project id>",
-          "private_name": "Cat pool 1",
+          "private_name": "Shoes pool 1",
           "may_contain_adult_content": true,
           "will_expire": "<close date>",
           "reward_per_assignment": 0.02,
@@ -374,7 +376,7 @@ In response to the  request, you will receive a JSON object for the created po
 {
   "id": "9876543",
   "project_id": "12345",
-  "private_name": "Cat pool 1",
+  "private_name": "Shoes pool 1",
   ...
 }
 ```

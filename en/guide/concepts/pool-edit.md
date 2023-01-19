@@ -52,23 +52,19 @@ Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md).
 
 #### Task price
 
-Calculated automatically including 30% markup.
+Calculated automatically.
 
 ## Audience {#pool-audience-info}
 
 #### Adult content
 
-Tasks that contain pornographic or shocking content. These tasks are only issued to Tolokers who have agreed to complete these types of tasks.
+Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only assigned to Tolokers who have agreed to complete these types of tasks.
 
 If you aren't sure whether the tasks have this kind of content, select the {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} option.
 
 #### Filters and skills
 
-By setting the filters, you choose Tolokers that meet your requirements to complete your task. There are filter sets, filters by various criteria, and filters by skills that you can create yourself.
-
-If you are working with Russian-language texts in the task, you don't need to display the project for non-Russian speakers. You can set a filter for the Russian language. Similarly, you can filter Tolokers by place of residence in a particular country or city, and so on. [Learn more](filters.md)
-
-If you give [training tasks](../../glossary.md#training-task) to Tolokers, you can add a skill to the pool to choose Tolokers who already completed training. [Learn more about skills](nav.md)
+{% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
 #### {% if locale == "en-com" %}**Speed/quality balance**{% endif %}
 
@@ -90,7 +86,9 @@ You can choose how often [captchas](../../glossary.md#captcha) are shown to Tolo
 
 To show the captcha to Tolokers, set [the quality control rule](captcha.md).
 
-#### {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
+#### {% if locale == "en-com" %}**Review task responses manually**{% endif %}
 
 Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
@@ -170,7 +168,7 @@ If you set the interval too long, the tasks will stay open for a long time. If i
 
 #### {% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %}
 
-The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).
+The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0 (1 if you use dynamic overlap), maximum — 259200 seconds (three days).
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks.
 
@@ -244,7 +242,7 @@ Use this parameter to:
 
 - Speed up collection of responses for [majority vote](mvote.md) check.
 
-- Issue tasks by priority.
+- Assign tasks by priority.
 
     Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
 
@@ -260,6 +258,14 @@ Use this parameter to:
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
+
+## For developers {#for-developers}
+
+- [Toloka API: Editing pool](../../api/concepts/edit-pool.md)
+- [Toloka API: Changing pool priority](../../api/concepts/set-priority-pool.md)
+- [Toloka-Kit: Editing pool](../../toloka-kit/reference/toloka.client.TolokaClient.update_pool.md)
+- [Toloka-Kit: Patching pool](../../toloka-kit/reference/toloka.client.TolokaClient.patch_pool.md)
+- [Toloka-Kit recipe: Change pool priority](../../toloka-kit/recipes/change-pool-priority.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -327,4 +333,4 @@ If you uploaded them using a different method, clone your pool and upload the ne
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

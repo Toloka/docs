@@ -10,9 +10,11 @@
 
 Если вы хотите вставить кнопку, по которой будет открываться ссылка, используйте компоненты [view.action-button](view.action-button.md) и [action.open-link](action.open-link.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QLEtD)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/nlgFBo-b3tz2BX)
 
-Чтобы вставить ссылку с поисковым запросом, используйте [helper.search-query](helper.search-query.md). [Посмотреть пример в песочнице](https://clck.ru/QLF3o).
+Чтобы вставить ссылку с поисковым запросом, используйте [helper.search-query](helper.search-query.md).
+
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/gIsoTol83tz2S8)
 
 ## Свойства компонента {#properties}
 

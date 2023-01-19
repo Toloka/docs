@@ -22,9 +22,7 @@ $Assign_{left}$ is the number of task suite remaining uncompleted or those comp
 $T_{assign}$ is the average time per task suite. Calculated based on the amount of time since the pool opened and the number of task suites completed.
 
 The time is updated as task suites are completed by Tolokers.||
-||{% if locale == "en-com" %}**Budget spent (+ fee)**{% endif %} | The amount of money spent in the pool. The [fee](budget.md) amount is shown in parentheses.
-
-Please note that the minimum fee is $0.005.||
+||{% if locale == "en-com" %}**Budget spent (+ fee)**{% endif %} | The amount of money spent in the pool. The [fee](budget.md) amount is shown in parentheses.||
 ||{% if locale == "en-com" %}**Approximate budget (+ fee)**{% endif %} | The amount of money spent and expected costs (if all the tasks are completed and all responses are approved). The [fee](../../glossary.md#fee) amount is shown in parentheses.||
 ||{% if locale == "en-com" %}**Active Tolokers with access to pool**{% endif %} | The number of Tolokers selected for the pool with [filters](filters.md). The number includes only Tolokers who viewed and completed tasks in Toloka in the recent hour.||
 ||{% if locale == "en-com" %}**Interested in pool**{% endif %} | The number of Tolokers who started or completed at least one task suite.
@@ -42,4 +40,4 @@ When the Toloker decides not to do the task (clicks **Exit**), the task gets the
 When the Toloker clicks **Skip**, the task gets the skipped status. In this case, the Toloker can no longer return to the task.||
 |#
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

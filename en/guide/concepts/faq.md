@@ -62,4 +62,4 @@ Properly configured filters help you filter out Tolokers and send tasks to a tar
 
 You can also read [Mistakes in quality control settings](frequent-customer-errors.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -67,7 +67,7 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
       }, {
       getTemplateData: function() {
       var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments);
-      data.countries = ['Poland', 'Lithuania', 'Russia', 'Belarus', 'Latvia', 'Germany', 'France'];
+      data.countries = ['US', 'Germany', 'France'];
       return data;
       },
       OnRender: function () {
@@ -172,4 +172,4 @@ If `value` is set, the input field shows `value` instead of `placeholder`.
 ||`class`| The CSS class for the field. For example: `class="mytask_field"`. | no | `".field" ".field_type_suggest"`||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

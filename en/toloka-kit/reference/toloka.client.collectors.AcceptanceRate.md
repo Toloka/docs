@@ -1,5 +1,5 @@
 # AcceptanceRate
-`toloka.client.collectors.AcceptanceRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/collectors.py#L62)
+`toloka.client.collectors.AcceptanceRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/collectors.py#L62)
 
 ```python
 AcceptanceRate(
@@ -13,7 +13,7 @@ AcceptanceRate(
 Counts accepted and rejected Toloker's assignments.
 
 
-If non-automatic acceptance is set in the pool, you may use this collector to:
+If manual review is set in the pool, you may use this collector to:
 - Set a Toloker's skill.
 - Block access for Tolokers with too many rejected responses.
 

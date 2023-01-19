@@ -36,7 +36,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     - Template Builder
 
-      1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fbR){% endif %} for this project with pre-configured validation and task layout.
+      1. Use the {% if locale == "en-com" %}[ready-made code](https://ya.cc/t/-ratdOH63ttEa4){% endif %} for this project with pre-configured validation and task layout.
 
           The Toloker won't be able to submit the response until they:
 
@@ -183,13 +183,13 @@ To create a pool:
 
 1. (optional) Add a **Private comment**. This information is available only to you.
 
-1. Filter Tolokers in the **Tolokers** section of the **Audience** block.
+1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
 
-    1. Click **Add filter**.
+    1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
-    1. Find the **Toloker profile** block in the list and choose the **Languages** skill.
+    1. {% include [tutorials-shocking-content](../_includes/tutorials/shocking-content-filter.md) %}
 
-    1. In the **?** field specify `=`.
+    1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
     1. Add another filter. Click **Add filter**.
 
@@ -402,4 +402,4 @@ To check submitted assignments:
 
 - Create [Project 4](item_more_similar.md) to compare matching images.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To add an image upload button ![](../../_images/other/b-image-button.png) to the task, use the `{{field type= "file-img" name="<output field name> "sources="<sources parameter>" fileType="<fileType parameter>"}}`. After the image is uploaded the Toloker will see an icon for image preview. Example:
+To add an image upload button ![](../../_images/other/b-image-button.svg) to the task, use the `{{field type= "file-img" name="<output field name> "sources="<sources parameter>" fileType="<fileType parameter>"}}`. After the image is uploaded the Toloker will see an icon for image preview. Example:
 
 ```plaintext
 {{field type="file-img" name="photo" sources="CAMERA" fileType="IMAGE" camera=true}}
@@ -114,4 +114,4 @@ For upload of multiple files:
 1. In the output data description, add a field with the `array_file` type or another type of array. | no | `true` (if the output data description contains a field with the `array_file` type or another type of array).||
 |#
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

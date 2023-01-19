@@ -14,13 +14,15 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Object recognition & detection](object-recognition.md)
 
+- [Text recognition from an image (OCR)](text-recognition.md)
+
+- [Accessories recommendations](accessories-recommendations.md)
+
 ## Video
 
 - [Video classification](video-moderation.md)
 
 - [Video comparison (Side-by-side)](sbs-video.md)
-
-- [Text recognition from an image (OCR)](text-recognition.md)
 
 ## Texts
 
@@ -37,6 +39,10 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 - [Audio transcription](audio-transcript.md)
 
 - [Audio comparison (Side-by-side)](sbs-audio.md)
+
+## Field tasks
+
+- [Collecting offline data](spatial-crowdsourcing.md)
 
 ## Data enrichment
 

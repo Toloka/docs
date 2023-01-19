@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Audio classification
 
 In this tutorial, you will learn how to run audio classification in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -36,9 +34,9 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show performers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-create-project-step-1.png)
 
@@ -124,7 +122,7 @@ Before you begin:
 
         These settings mean that a Toloker who completes 3 or more task suites in less than 15 seconds will be blocked and won't be able to access your tasks anymore.
 
-        A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–20 tasks per suite.
+        A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–12 tasks per suite.
 
         {% note tip %}
 
@@ -174,23 +172,34 @@ At this step, upload your task data to Toloka.
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
-1. Create the tasks for Tolokers:
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+1. Attach a prepared dataset or media files.
 
-        For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio recordings.
+    {% list tabs %}
 
-        ```plaintext
-        INPUT:audio
-        https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_4.mp3
-        https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_6.mp3
-        https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_8.mp3
-        ```
+    - A prepared dataset
 
-    1. Open the downloaded file, and replace the sample links with the links to your audio recordings.
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio recordings.
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+            ```plaintext
+            INPUT:audio
+            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_4.mp3
+            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_6.mp3
+            https://tlklab.s3.yandex.net/audioClassification/demo/actual/audio_8.mp3
+            ```
+
+        1. Open the downloaded file, and replace the sample links with the links to your audio recordings.
+
+        1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
+
+    - Media files
+
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+
+    {% endlist %}
+
+1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
 1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
@@ -260,14 +269,16 @@ At this step, upload your task data to Toloka.
 
     - {% if locale == "en-com" %}**CONFIDENCE**{% endif %}: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
 
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/28_audioClassification/EN/sample-files.zip)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

@@ -40,4 +40,4 @@
 
 1. [Обработайте результаты](result-of-eval.md). Если качество ответов низкое, попробуйте установить причину. Возможно, вам необходимо отредактировать инструкцию или добавить больше заданий в обучении.
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

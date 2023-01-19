@@ -11,6 +11,6 @@ GET | [/user-restrictions](ban-get-list.md) | Gets the list of Toloker bans.
 GET | [/user-restrictions/<ban_id>](ban-get-info.md) | Gets information about a ban.
 DELETE | [/user-restrictions/<ban_id>](ban-delete.md) | Removes a ban.
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [Description of bans in the Requester's guide](../../guide/concepts/ban.md)
+- [{#T}](../../guide/concepts/ban.md)

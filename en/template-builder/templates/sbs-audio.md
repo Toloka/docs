@@ -4,7 +4,7 @@ For this type of project, you can use the **Audio comparison (Side-by-side)** pr
 
 Take a look at the example: there are two audio tracks and buttons to choose an answer. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/8yWU6Tq-3TYPx8)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/V14Zje0m3ttD3C)
 
 {% cut "Components used in the example" %}
 
@@ -161,7 +161,7 @@ Take a look at the example: there are two audio tracks and buttons to choose an
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Op9Pu3r_3TYSNY)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/xaSehV5e3ttD4D)
 
 - To put a short audio track on repeat, change the properties of the [view.audio](../reference/view.audio.md) component by adding `loop: true`.
 
@@ -185,7 +185,7 @@ Take a look at the example: there are two audio tracks and buttons to choose an
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/cHq9Xtli3TYTic)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/aL05xvSn3ttD5U)
 
 - Add [shortcuts](../best-practices/hotkeys.md) for playing and pausing audio tracks using the [plugin.hotkeys](../reference/plugin.hotkeys.md) plugin.
 
@@ -211,7 +211,7 @@ Take a look at the example: there are two audio tracks and buttons to choose an
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/cQixkxxh3TYX5u)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ehmAXiGf3ttD79)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -238,13 +238,13 @@ If you need comments from the Toloker, add a text field using [field.textarea
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/aBZZXCvm3TYZCw)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/yit42ss13ttD8V)
 
 ## Arrange audio tracks vertically {#top-bottom}
 
 Audio tracks can be arranged in a single column, top to bottom. This interface is better suited for comparing more than two audio recordings.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eqx3jrHj3TYaTy)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9HX4RtLe3ttDA5)
 
 ## Add a source text {#add-original-text}
 
@@ -262,7 +262,7 @@ You can add a field with a source text using the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/m1b1YPvB3TYbYi)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Gl-0Kp3R3ttDBT)
 
 ## Add a layout {#add-color}
 
@@ -300,6 +300,6 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/PinrwG2E3TYcTx)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/SvLzFXWw3ttDCc)
 
 {% include [contact-support](../_includes/contact-support.md) %}

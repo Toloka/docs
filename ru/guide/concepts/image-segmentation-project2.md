@@ -26,7 +26,7 @@
 
     - Конструктор шаблонов
 
-      1. Вы можете воспользоваться {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TwQpa){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+      1. Вы можете воспользоваться {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/FrtLmfwK3tvf2N){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
 
           Исполнитель не сможет отправить задание, если не выделит области изображений.
 
@@ -299,4 +299,4 @@
 
 - Создайте [Проект 3](image-segmentation-project3.md) для проверки ответов.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

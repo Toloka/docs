@@ -1,5 +1,5 @@
 # Pipeline
-`toloka.streaming.pipeline.Pipeline` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/streaming/pipeline.py#L78)
+`toloka.streaming.pipeline.Pipeline` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/pipeline.py#L80)
 
 ```python
 Pipeline(
@@ -38,7 +38,7 @@ def handle_submitted(events: List[AssignmentEvent]) -> None:
 def handle_accepted(events: List[AssignmentEvent]) -> None:
     do_some_aggregation([item.assignment for item in events])
 
-async_toloka_client = AsyncMultithreadWrapper(toloka_client)
+async_toloka_client = AsyncTolokaClient.from_sync_client(toloka_client)
 
 observer_123 = AssignmentsObserver(async_toloka_client, pool_id='123')
 observer_123.on_submitted(handle_submitted)

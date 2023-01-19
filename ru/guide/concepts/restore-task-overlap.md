@@ -48,7 +48,7 @@
 ||**Поле**|**Описание**||
 ||{% if locale == "ru-ru" %}**Если**{% endif %}{% if locale == "en-com" %}**If**{% endif %} | Условие, при котором выполняется действие в поле {% if locale == "ru-ru" %}**то**{% endif %}{% if locale == "en-com" %}**then**{% endif %}:
 
-- {% if locale == "ru-ru" %}**исполнитель заблокирован**{% endif %}{% if locale == "en-com" %}**Toloker banned**{% endif %} — доступ исполнителя к заданиям заблокирован по одному из [правил контроля качества](../../glossary.md#quality-control-rule) (например, [контрольные задания](../../glossary.md#control-task), [мнение большинства](../../glossary.md#majority-vote), [быстрые ответы](../../glossary.md#fast-responses), [пропуск заданий](../../glossary.md#skipping-tasks), ввод [капчи](../../glossary.md#captcha)).
+- {% if locale == "ru-ru" %}**исполнитель заблокирован**{% endif %}{% if locale == "en-com" %}**Toloker banned**{% endif %} — доступ исполнителя к заданиям заблокирован по одному из [правил контроля качества](../../glossary.md#quality-control-rule) (например, [контрольные задания](../../glossary.md#control-task), [мнение большинства](../../glossary.md#majority-vote), [быстрые ответы](../../glossary.md#fast-responses), [пропуск заданий](../../glossary.md#skipping-tasks)).
 
 - {% if locale == "ru-ru" %}**исполнитель вне фильтра**{% endif %}{% if locale == "en-com" %}**Toloker filtered out**{% endif %} — исполнитель перестал соответствовать хотя бы одному из установленных [фильтров](filters.md).
 
@@ -154,4 +154,4 @@
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

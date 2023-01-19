@@ -2,15 +2,15 @@
 
 {% note info %}
 
-To better understand how Toloka works, first try setting up tasks in the Toloka interface using the [Requester's guide](../../guide/concepts/main-steps.md) and then proceed to setting them up in the API.
+To better understand how Toloka works, first try setting up tasks in the Toloka interface using the [documentation](../../guide/concepts/main-steps.md) and then proceed to setting them up in the API.
 
 {% endnote %}
 
-For example, create a project with tasks where Tolokers will determine the type of animal.
+For example, create a project with tasks where Tolokers will determine the type of shoes.
 
 {% cut "Sample result" %}
 
-![](../_images/cat-interface.png)
+[![Sample result](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/shoes-interface.png =390x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/shoes-interface.png)
 
 {% endcut %}
 
@@ -35,3 +35,5 @@ The sample project described under "Quick start" is for the sandbox. To set up t
 ## What's next {#what-next}
 
 Read the [instructions on how to post tasks](./qs-placement.md).
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

@@ -27,45 +27,45 @@ Dynamic overlap uses 5 main parameters:
 
 Terms
 
-- $q[i]$is a Toloker's accuracy.
-- $K$is a smoothing constant.
-- $z[j]$is the most popular response.
-- $z[x]$— the probability that the estimate is correct
-- $EPS,$— confidence in the aggregate response
+- $q[i]$ is a Toloker's accuracy.
+- $K$ is a smoothing constant.
+- $z[j]$ is the most popular response.
+- $z[x]$ — the probability that the estimate is correct
+- $EPS,$ — confidence in the aggregate response
 
-A Toloker's accuracy$q[i]$is calculated as:
+A Toloker's accuracy $q[i]$ is calculated as:
 
 $q[i] = \frac{K+correct.golden.sets[i]}{2×K+total.golden.sets[i]}$
 
 Where:
 
-$K$is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
+$K$ is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
 
-If there are several estimates, the most popular response is determined by adding together$q[i]$of the Tolokers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate$z[j]$.
+If there are several estimates, the most popular response is determined by adding together $q[i]$ of the Tolokers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate $z[j]$.
 
-[Using Bayes' theorem]({{ baies }}), we calculate the posterior probability that the estimate$z[j]$is correct.
+[Using Bayes' theorem]({{ baies }}), we calculate the posterior probability that the estimate $z[j]$ is correct.
 
-A uniform distribution of estimates is assumed a priori. For the$z[x]$the a priori probability is calculated as$P(z[x]) = \frac{1}{Y}$
+A uniform distribution of estimates is assumed a priori. For the $z[x]$ the a priori probability is calculated as $P(z[x]) = \frac{1}{Y}$
 
 where:
 
-$Y$is the number of response options.
+$Y$ is the number of response options.
 
-Next, we calculate the probability that the estimate$z[j]$is correct.
+Next, we calculate the probability that the estimate $z[j]$ is correct.
 
-If the Toloker responded$z[j]$, then the probability of this is equal to the Toloker's accuracy$q[i]$. If they responded differently, then the probability of this is:
+If the Toloker responded $z[j]$, then the probability of this is equal to the Toloker's accuracy $q[i]$. If they responded differently, then the probability of this is:
 
 $\frac{1-q[i]}{Y-1}$
 
 Where:
 
-$(1-q[i])$is the remaining probability;
+$(1-q[i])$ is the remaining probability;
 
-$(Y-1)$is the number of remaining responses.
+$(Y-1)$ is the number of remaining responses.
 
 It ensures that the probability of an error is distributed evenly among the remaining estimates.
 
-We take all Tolokers' responses and, for example, option$z[x]$and calculate the probability that Tolokers will select this response, provided that the correct response is$z[x] estimate,$:
+We take all Tolokers' responses and, for example, option $z[x]$ and calculate the probability that Tolokers will select this response, provided that the correct response is $z[x] estimate,$:
 
 ```javascript
 func z_prob(x int) : float {
@@ -79,7 +79,7 @@ func z_prob(x int) : float {
 }
 ```
 
-Next, using Bayes' theorem, we calculate the probability that the response$z[j]$is correct:
+Next, using Bayes' theorem, we calculate the probability that the response $z[j]$ is correct:
 
 ```javascript
 r = 0
@@ -89,7 +89,7 @@ for z[i]: answer_options
 eps = z_prob(j) * (1 / Y) / r
 ```
 
-Next, we look at$EPS,$. If the expected result is less than the value of$EPS,$we increase overlap until the result is equal to the confidence in the aggregated response or overlap reaches the maximum.
+Next, we look at $EPS,$. If the expected result is less than the value of $EPS,$ we increase overlap until the result is equal to the confidence in the aggregated response or overlap reaches the maximum.
 
 {% endcut %}
 
@@ -206,6 +206,16 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
     - Selective [majority vote](selective-mvote.md) control.
 
+## See also {#see-also}
+
+- [{#T}](distribute-tasks-by-pages.md)
+- [{#T}](pool-main.md)
+- [{#T}](result-aggregation.md)
+
+## For developers {#for-developers}
+
+- [Toloka-Kit: Dynamic overlap setting](../../toloka-kit/reference/toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Can I change overlap after the pool is started?" %}
@@ -220,4 +230,4 @@ Yes, this might happen. You must set an adequate pool closing interval.
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

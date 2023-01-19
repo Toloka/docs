@@ -38,6 +38,12 @@ There are two versions of Toloka. You need to register separately in each of the
 
 - [Learn how to post tasks](first-project.md)
 
+## See also {#see-also}
+
+- [{#T}](overview.md)
+- [{#T}](multiple-access.md)
+- [{#T}](sandbox.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "I can't complete registration as an “individual requester”. I'm not getting an SMS code." %}
@@ -124,4 +130,4 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

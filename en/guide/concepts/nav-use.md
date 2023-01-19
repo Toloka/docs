@@ -70,6 +70,12 @@ If necessary, you can:
 - [Remove](nav-delete.md) skill for a specific Toloker.
 - [View the history](nav-history.md) of skill changes.
 
+## See also {#see-also}
+
+- [{#T}](nav-create.md)
+- [{#T}](nav-assign.md)
+- [{#T}](filters.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}
@@ -102,4 +108,4 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -14,4 +14,9 @@ This section contains various examples of field template customizations. You can
 
 - [Add response options](advanced-features-input-selector.md): Examples of input data fields where the Toloker selects one or more responses from a limited set of options. This section contains code snippets for checkboxes, radio buttons, and drop-down lists.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+## See also {#see-also}
+
+- [Template Builder quick start](../../template-builder/quickstart.md)
+- [Editing task interface with HTML/CSS/JS editor](spec.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

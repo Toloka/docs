@@ -26,7 +26,7 @@
 
     - Конструктор шаблонов
 
-      1. Создайте шаблон на основе примера [Проверка выделенной области](https://clck.ru/sFyNY), в котором используется Компонент для разметки изображений.
+      1. Создайте шаблон на основе примера [Проверка выделенной области](https://ya.cc/t/Z9GC6HzT3ttEf6), в котором используется Компонент для разметки изображений.
 
       1. Чтобы увидеть поля входных и выходных данных, в разделе {% if locale == "ru-ru" %}**Спецификация данных**{% endif %}{% if locale == "en-com" %}**Data specification**{% endif %} нажмите {% if locale == "ru-ru" %}**Показать спецификации**{% endif %}{% if locale == "en-com" %}**Show specifications**{% endif %}.
 
@@ -475,4 +475,4 @@
 
 - Почитайте подробнее [про декомпозицию заданий](solution-architecture.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

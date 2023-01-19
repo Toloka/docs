@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Video classification
 
 In this tutorial, you will learn how to run video classification in Toloka. We will use a project preset designed specifically for this type of data labeling.
@@ -56,9 +54,9 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show performers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for performers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-create-project-step-1.png)
 
@@ -68,13 +66,13 @@ Before you begin:
 
     1. Using the {% if locale == "en-com" %}**Visual editor**{% endif %}, add your data to the {% if locale == "en-com" %}**Config**{% endif %} section:
 
-        - {% if locale == "en-com" %}**Question performers will see in your task**{% endif %}: Write a question that matches the responses Tolokers need to choose from. All tasks in a project use the same question.
+        - {% if locale == "en-com" %}**Question Tolokers will see in your task**{% endif %}: Write a question that matches the responses Tolokers need to choose from. All tasks in a project use the same question.
 
         - {% if locale == "en-com" %}**Paste link to a sample video**{% endif %}: This video is only used to display the task interface preview on the right.
 
     1. {% if locale == "en-com" %}**Set answer options**{% endif %} is pre-filled with sample answers. Replace the samples with your categories. Note that {% if locale == "en-com" %}**Other**{% endif %} and {% if locale == "en-com" %}**Error**{% endif %} are separate entities.
 
-        - {% if locale == "en-com" %}**Answer option for performers**{% endif %}: This is the label that Tolokers will see. Make sure it is clear and correct.
+        - {% if locale == "en-com" %}**Answer option for Tolokers**{% endif %}: This is the label that Tolokers will see. Make sure it is clear and correct.
 
         - {% if locale == "en-com" %}**Name in labeling results**{% endif %}: This is the value you will see in the file with the labeling results.
 
@@ -176,24 +174,34 @@ At this step, upload your task data to Toloka.
 
 1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
 
-1. Create the tasks for Tolokers:
+1. Attach a prepared dataset or media files.
 
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+    {% list tabs %}
 
-        For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:video`, and the values are links to the video clips.
+    - A prepared dataset
 
-        ```plaintext
-        INPUT:video
-        https://yang.s3.yandex.net/finger gestures/20210723_113648.mp4
-        https://yang.s3.yandex.net/finger gestures/20210723_113736.mp4
-        https://yang.s3.yandex.net/finger gestures/20210723_113521.mp4
-        ```
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-    1. Open the downloaded file, and replace the sample links with links to your video clips.
+            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:video`, and the values are links to the video clips.
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+            ```plaintext
+            INPUT:video
+            https://yang.s3.yandex.net/finger gestures/20210723_113648.mp4
+            https://yang.s3.yandex.net/finger gestures/20210723_113736.mp4
+            https://yang.s3.yandex.net/finger gestures/20210723_113521.mp4
+            ```
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        1. Open the downloaded file, and replace the sample links with links to your video clips.
+
+        1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
+
+    - Media files
+
+        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+
+    {% endlist %}
+
+1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
 
 1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
@@ -263,15 +271,17 @@ At this step, upload your task data to Toloka.
 
     - {% if locale == "en-com" %}**CONFIDENCE**{% endif %}: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
-## See also {#seealso}
+## See also {#see-also}
 
-- [Instructions](https://toloka.ai/knowledgebase/instruction/)
-- [Quality control](https://toloka.ai/knowledgebase/quality-control/)
-- [Pricing](https://toloka.ai/knowledgebase/pricing/)
-- [Template Builder — video analysis](../../template-builder/templates/video-moderation.md)
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [Template Builder: Video analysis](../../template-builder/templates/video-moderation.md)
 
 ## Datasets and reference {#datasets}
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/06_videoModeration/EN/sample-files.zip)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

@@ -71,4 +71,4 @@ The file with responses will contain the following in the `result` column:{% if 
 
 {% endif %}
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

@@ -49,7 +49,7 @@
 
       1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
 
-          Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/UECtS){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC42P){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, если не загрузит аудиозапись.
+          Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/smZEOmz13tviUh){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/or7qYOff3tvicE){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, если не загрузит аудиозапись.
 
           Подробнее о [настройке условий](../../template-builder/best-practices/conditions.md) в Справке конструктора шаблонов.
 
@@ -291,4 +291,4 @@
 
 {% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

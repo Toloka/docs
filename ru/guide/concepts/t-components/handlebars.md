@@ -243,4 +243,4 @@ Handlebars.registerPartial('formInput', '<h3>not_var{{fieldTitle}}</h3>{{field t
 {{field type="input" name="some_other_field"}}
 ```
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

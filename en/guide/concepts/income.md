@@ -45,7 +45,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
@@ -54,7 +54,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -67,6 +67,15 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 ![](../_images/control-rules/income/qcr-income_example1.png)
 
 If the Toloker's earnings exceed 5 dollars in the last 24 hours, they lose access to the pool and can't complete your tasks.
+
+## See also {#see-also}
+
+- [{#T}](qa-pool-settings.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Compensation amount](../../api/concepts/earn_limit.md)
+- [Toloka-Kit: Income collector class](../../toloka-kit/reference/toloka.client.collectors.Income.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -94,4 +103,4 @@ Yes, of course — you can use the same skill for different projects. But most o
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

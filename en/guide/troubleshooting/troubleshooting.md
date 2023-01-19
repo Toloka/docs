@@ -528,7 +528,7 @@ Enclose the input field in double curly brackets `not_var{{text}}`.
 
 Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
 
-For more information about using the component, see the [Requester's guide](../concepts/t-components/html.md).
+More information about [using the component](../concepts/t-components/html.md).
 
 {% endcut %}
 
@@ -540,7 +540,7 @@ You don't have to use our components for task interfaces. Feel free to create a 
 
 - Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
 
-See the [Requester's guide](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
+See the [documentation](../concepts/spec-advanced.md) for descriptions of the structure of classes and how they work.
 
 {% endcut %}
 
@@ -694,7 +694,7 @@ If the Toloker mismatches your preset filter, they can't see the task. You can o
 
 {% endcut %}
 
-{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “Moscow only, 30–45 years old”." %}
+{% cut "Can I set up a task to display it to users with certain demographic and geo parameters? For example, “US only, 30–45 years old”." %}
 
 You can do that. To select Tolokers for the pool, use [filters](../concepts/filters.md).
 
@@ -786,7 +786,7 @@ We recommend adding at least 1% of control tasks in the pool. And for small pool
 
 {% cut "Why's that?" %}
 
-Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
+Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a [task suite](../../glossary.md#task-suite). If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
 
 There shouldn't be too few pages available. Otherwise:
 
@@ -806,7 +806,7 @@ There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suit
 
 #### A small pool with 10% control tasks (good)
 
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
+There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites.
 
 {% endcut %}
 
@@ -894,12 +894,6 @@ Yes. When you copy the filter and quality control settings, the settings you pre
 
 {% endcut %}
 
-{% cut "I set up a rule to ban users after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
-
-Indeed, this rule is probably too strict. Even the most careful user can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban users who regularly fail captcha checks in Toloka.
-
-{% endcut %}
-
 {% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
 
 Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
@@ -934,24 +928,6 @@ If the Toloker already got paid for the tasks, the money can't be refunded to yo
 
 {% endcut %}
 
-{% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
-
-The frequency of issuing [captchas](../concepts/captcha.md) is set up in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
 {% cut "Can one Toloker get access to two pools in the same project? Can I avoid that?" %}
 
 Yes, if they can access both pools, they can do both of them. To restrict access to subsequent tasks for a Toloker, use the [Completed tasks](../concepts/submitted-answers.md) rule and select a ban at the project level.
@@ -971,32 +947,6 @@ But you can do it yourself if you want. When downloading the results, select the
 Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
 
 In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool user requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
-
-{% endcut %}
-
-{% cut "Can I get more details on the best practices for using captchas? For which projects is it better to use captchas and how often?" %}
-
-[Captcha](../concepts/captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
-
-The frequency of issuing captchas is configured in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
-{% cut "I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?" %}
-
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the “range” specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
 
 {% endcut %}
 
@@ -1020,9 +970,9 @@ You can also create a training pool based on the main pool. Assign a skill using
 
 {% endcut %}
 
-{% cut "Can I use non-automatic acceptance in the training pool?" %}
+{% cut "Can I use manual review in the training pool?" %}
 
-No. But you can create a pool of the **Training** type based on your main pool and enable non-automatic acceptance there.
+No. But you can create a pool of the **Training** type based on your main pool and enable manual review there.
 
 {% endcut %}
 
@@ -1052,7 +1002,7 @@ The tasks themselves are not exported, only the project configuration and the se
 
 {% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. So I try to use `3` in the **Recent control task responses to use** field, but I get an error that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
-The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
+The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use manual review for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
 {% endcut %}
 
@@ -1068,7 +1018,7 @@ Don't forget to enable **Keep task order** in the pool parameters. Majority vote
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+Another option for selecting Tolokers for a project of this type is manual review.
 
 {% endcut %}
 
@@ -1196,7 +1146,7 @@ Escape commas with a backslash (`\`).
 
 {% endcut %}
 
-{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with non-automatic acceptance? Where do I find the format of the upload data?" %}
+{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with manual review? Where do I find the format of the upload data?" %}
 
 Use the button **Upload review results** to upload your file. You can see the format [here](../concepts/accept.md).
 
@@ -1264,7 +1214,7 @@ But users are reluctant to take lengthy tasks. They'd rather do 10 tasks that ta
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and manual review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 {% endcut %}
 
@@ -1535,7 +1485,7 @@ However, the mere fact that a Toloker completes your training pool successfully 
 
 Besides the training, be sure to add quality control rules and [control tasks](../concepts/control.md) to your main pools. This way you can ensure the quality throughout the task performance process.
 
-If the task requires that the Tolokers send free-format responses or data files, use **non-automatic acceptance** to pay for tasks after they are reviewed.
+If the task requires that the Tolokers send free-format responses or data files, use manual review to pay for tasks after they are reviewed.
 
 {% endcut %}
 
@@ -1592,11 +1542,11 @@ To show the training separately from other pools, disable **Use project descript
 
 {% endcut %}
 
-{% cut "Can I implement non-automatic acceptance in the training pool?" %}
+{% cut "Can I implement manual review in the training pool?" %}
 
-You can't use non-automatic acceptance in your training pool.
+You can't use manual review in your training pool.
 
-However, you can create a training pool with the **Training** type based on your main pool and enable non-automatic acceptance there.
+However, you can create a training pool with the **Training** type based on your main pool and enable manual review there.
 
 {% endcut %}
 
@@ -1604,7 +1554,7 @@ However, you can create a training pool with the **Training** type based on your
 
 You can't create a training like this, because for the response to be counted as correct it must exactly match the control text.
 
-For projects using free text input or attached files, you can make a pre-selection task with non-automatic acceptance. You can admit good Tolokers to your main pool based on their skill.
+For projects using free text input or attached files, you can make a pre-selection task with manual review. You can admit good Tolokers to your main pool based on their skill.
 
 {% endcut %}
 
@@ -1614,7 +1564,7 @@ To do this, under **Test result**, go to **Recent tasks to use** and specify the
 
 Let's say you need to create an exam with three tasks, one task per suite. If the Toloker succeeds in two out of three tasks, they get the skill.
 
-If your task uses assignment review (non-automatic acceptance), to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
+If your task uses manual review, to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
 
 ![](../_images/troubleshooting/number-of-correct-answers.png)
 
@@ -1624,7 +1574,7 @@ If your task uses assignment review (non-automatic acceptance), to set up such a
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+Another option for selecting Tolokers for a project of this type is manual review.
 
 {% endcut %}
 
@@ -1732,7 +1682,7 @@ If a Toloker typed some text and then deleted it, the result is `null`, otherwis
 
 [Other questions](support.md#help)
 
-### Assignment review {#results_2}
+### Manual review {#results_2}
 
 {% cut "How do I send an assignment back to the Toloker for revision?" %}
 
@@ -1887,31 +1837,9 @@ Simply [give the Toloker a separate reward](../concepts/bonus.md) without changi
 
 ### Adding funds to your account {#concept-1}
 
-{% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
-
-If the address is in Saint Petersburg, enter Saint Petersburg in the **Region** field, then specify the street, house number, and postal code. You don't need to fill out the other fields.
-
-If the address is in Moscow, enter Moscow in the **Region** field, then specify the street, house number, and postal code. [Learn more](../concepts/refill.md#step-by-step) about connecting to billing.
-
-If it still doesn't work, [enter](troubleshooting.md) your full address with the postal code in the feedback form. We'll help you fill out the fields correctly.
-
-{% endcut %}
-
 {% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
 
 That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
-
-{% endcut %}
-
-{% cut "Why do we top up our account in a non-Russian currency?" %}
-
-Toloka is an international platform for users from different countries. The platform is provided by the Swiss company Yandex Services AG.
-
-{% endcut %}
-
-{% cut "Why do we pay 20% VAT in the invoice?" %}
-
-In accordance with the tax legislation of the Russian Federation, we have included Clause 3.8. in our [Requester agreement]({{ customeragreement-probki }}): the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
 
 {% endcut %}
 
@@ -1923,7 +1851,7 @@ If you pay using a bank card, the money is usually transferred to your Toloka ac
 
 {% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
 
-You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. The conversion follows the Central Bank of Russia's exchange rate at the time of invoicing (UTC). [Learn more](../concepts/refill.md) about top-up.
+You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. [Learn more](../concepts/refill.md) about top-up.
 
 {% endcut %}
 
@@ -1941,7 +1869,7 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 {% cut "Where can I set the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price is $0.005.
+You can set a price for your task suite on the pool editing page. The minimum price is $0.005.
 
 {% endcut %}
 
@@ -2027,7 +1955,7 @@ You can increase the basic task price for Tolokers that have a higher skill. To 
 
 {% cut "How can I view statistics on paid rewards?" %}
 
-To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Expenses** tab.
+To view your expenses that involve rewards, go to your [profile]({{ profile }}) and open the **Spent** tab.
 
 {% endcut %}
 
@@ -2069,7 +1997,7 @@ If the Toloker was already paid for the tasks, you can't cancel the payment.
 
 During the training, Tolokers follow the task instructions and practice completing your tasks. Based on the training results, the requester can select Tolokers who did well enough to get access to the main pool. However, the mere fact that the Toloker completes your training pool successfully does not guarantee that they will continue to demonstrate high-quality performance. Tolokers who did well on the training but had inadequate results in the general task might have obtained correct training responses from other people.
 
-In addition to the training, be sure to set up [quality control rules](../concepts/control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [non-automatic acceptance](../concepts/offline-accept.md) to pay for them only after reviewing the responses.
+In addition to the training, be sure to set up [quality control rules](../concepts/control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [manual review](../concepts/offline-accept.md) to pay for them only after reviewing the responses.
 
 {% endcut %}
 
@@ -2105,7 +2033,7 @@ You can structure your text classification task using the source text and radio 
 
 We recommend that you base it on the **Sentiment analysis & content moderation** preset.
 
-You can also create your own interface. All the available tools are described in the [Requester's guide](../concepts/spec.md).
+You can also create your own interface. All the available tools are described in the [documentation](../concepts/spec.md).
 
 {% endcut %}
 
@@ -2185,9 +2113,9 @@ We recommend that you break down your object selection project into three projec
 
 1. Selecting objects in images.
 
-    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with manual review.
 
-    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
+    1. Use the quality control rules: fast responses, manual review, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
 
 1. Reviewing object selection assignments.
 
@@ -2249,7 +2177,7 @@ In the standard preset with an area selection editor, you can't use the control 
 
 You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
 
-Such tasks are usually run with non-automatic acceptance: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
+Such tasks are usually run with manual review: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
 
 For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the “Results of assignment review” rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
 
@@ -2397,4 +2325,4 @@ Upload one task and use the overlap parameter to enter the number of people you 
 
 [Other questions](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -18,7 +18,7 @@ This rule can increase the cost of the pool.
 
 Use the rule if you want to get responses only from honest Tolokers to each task in the given overlap.
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [non-automatic acceptance](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [manual review](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
 
 To download the responses of users who are not blocked:
 
@@ -46,7 +46,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 || **Field** | **Overview**||
 ||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
 
-- {% if locale == "en-com" %}**Toloker banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), [skipping tasks](../../glossary.md#skipping-tasks), or entering a [captcha](../../glossary.md#captcha)).
+- {% if locale == "en-com" %}**Toloker banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), or [skipping tasks](../../glossary.md#skipping-tasks)).
 
 - {% if locale == "en-com" %}**Toloker filtered out**{% endif %} — The Toloker no longer meets one or more [filters](filters.md).
 
@@ -97,6 +97,11 @@ To add multiple conditions, click ![](../_images/add.svg).||
   If the Toloker no longer meets the requirements of the skill filter and their responses aren't taken into account, their tasks are not sent for re-completion to another Toloker.
 
 {% endlist %}
+
+## For developers {#for-developers}
+
+- [Toloka API: Recompletion of assignments](../../api/concepts/restore-task-overlap.md)
+- [Toloka-Kit: UsersAssessment collector class](../../toloka-kit/reference/toloka.client.collectors.UsersAssessment.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -152,4 +157,4 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

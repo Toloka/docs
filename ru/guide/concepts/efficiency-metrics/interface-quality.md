@@ -1,5 +1,7 @@
 # {% if locale == "ru-ru" %}Качество интерфейса{% endif %}{% if locale == "en-com" %}Quality of interface{% endif %}
 
+{% include [deprecate](../../../_includes/deprecate.md) %}
+
 После выполнения задания исполнители оценивают задание по разным критериям. В частности, исполнители указывают, насколько удобен интерфейс. На основе этих оценок составляется показатель качества интерфейса.
 
 {% note info %}
@@ -24,4 +26,4 @@ $Q_{i} = {CSI}$
 
 - Низкий показатель — `< 4.5` или отсутствует.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

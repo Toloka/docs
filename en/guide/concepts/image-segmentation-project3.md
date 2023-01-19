@@ -24,7 +24,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     - Template Builder
 
-      1. Create a template based on the [Checking the selected area](https://clck.ru/sFyNY) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
+      1. Create a template based on the [Checking the selected area](https://ya.cc/t/Z9GC6HzT3ttEf6) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
 
       1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
 
@@ -215,11 +215,13 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 1. (optional) Add a {% if locale == "en-com" %}**Private comment**{% endif %}. This information is available only to you.
 
-1. Filter Tolokers in the {% if locale == "en-com" %}**Tolokers**{% endif %} section of the {% if locale == "en-com" %}**Audience**{% endif %} block:
+1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
 
-    1. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
+    1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
-    1. Add the {% if locale == "en-com" %}**Region by phone number**{% endif %} and {% if locale == "en-com" %}**Languages**{% endif %} filters and select Tolokers from Russia, Ukraine, Kazakhstan, and Belarus who indicated in their profiles that they know Russian.
+    1. {% include [tutorials-shocking-content](../_includes/tutorials/shocking-content-filter.md) %}
+
+    1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
     1. Add another filter. Click {% if locale == "en-com" %}**Add filter**{% endif %}.
 
@@ -230,8 +232,6 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
     1. In the **?** field specify `=`.
 
     1. Leave the {% if locale == "en-com" %}**Missing**{% endif %} field blank.
-
-    Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
 
 1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 
@@ -345,7 +345,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 ## Check the completed tasks {#check_results}
 
-Since the [Non-automatic acceptance](image-segmentation-project2.md) option is enabled in the pool settings for {% if locale == "en-com" %}**project 2**{% endif %}, you should check the Tolokers' responses within the time limit set in the {% if locale == "en-com" %}**Review period**{% endif %} field.
+Since the [manual review](image-segmentation-project2.md) option is enabled in the pool settings for {% if locale == "en-com" %}**project 2**{% endif %}, you should check the Tolokers' responses within the time limit set in the {% if locale == "en-com" %}**Review period**{% endif %} field.
 
 You can check the results in two ways:
 
@@ -420,4 +420,4 @@ You can check the results in two ways:
 
 - Learn more about [decomposition](solution-architecture.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

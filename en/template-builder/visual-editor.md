@@ -1,5 +1,3 @@
-{% include [image-styles](../../_includes/image-styles.md) %}
-
 # Visual editor
 
 For some Toloka presets, Template builder allows you to edit its template using a visual editor. It might be useful, if you do not know anything about JSON formatting or usage and you do not feel experienced enough for the code editor, and want to start working with Template Builder right away.
@@ -16,7 +14,7 @@ When you choose to create a project that supports configuring the task interface
 
 The interface of the visual editor looks like this:
 
-[![Visual editor interface](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png)
+[![Visual editor interface](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png)
 
 1. Switch between the visual editor and code editor using the buttons in the upper part of Template Builder.
 
@@ -51,3 +49,5 @@ The interface of the visual editor looks like this:
 - [Product search relevance](templates/product-search-relevance.md)
 
 {% include [contact-support](_includes/contact-support.md) %}
+
+{% include [image-styles](../../_includes/image-styles.md) %}

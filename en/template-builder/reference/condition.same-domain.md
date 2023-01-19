@@ -6,7 +6,7 @@ Links must be specified in full, including the protocol (http, https, ftp).
 
 The `www.` subdomain is ignored when checking, meaning that links to `www.example.com` and `example.com` are considered to be the same.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/apq6v)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/i0FsFFXn3twUuh)
 
 How to pass a link address:
 

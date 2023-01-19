@@ -19,4 +19,4 @@
 }
 ```
 
-[![](../../../../_images/buttons/view-example.svg)](https://ya.cc/t/ER1ZQcx63YEySx)
+[![](../../../../_images/buttons/view-example.svg)](https://ya.cc/t/AewYkjsz3tvFZQ)

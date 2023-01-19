@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-This class manages the task progress, processes the task page commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of the [TaskSuite](tasksuite.md) class.
+This class manages the task progress, processes the [task suite](../../../glossary.md#task-suite) commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of the [TaskSuite](tasksuite.md) class.
 
 The `Assignment` base class is available in the `window.TolokaAssignment` global variable
 
@@ -90,7 +90,7 @@ The most important settings:
 
 - `isReadOnly` — "Read-only" mode flag (for example, for viewing the history of completed tasks).
 
-- `isReviewMode` — Review mode flag (for example, assignment review). This setting and `isReadOnly` are useful if you want to do something like change the template layout in history view mode.
+- `isReviewMode` — Review mode flag (for example, manual review). This setting and `isReadOnly` are useful if you want to do something like change the template layout in history view mode.
 
 - `language` — A two-letter code of the language selected by the Toloker in Toloka settings. It's useful when you want to create multilingual templates.
 
@@ -157,4 +157,4 @@ this.getDOMElement().querySelector('.my_submit_button').addEventListener('click'
 
 {% endcut %}
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

@@ -2,7 +2,7 @@
 
 For this type of project, you can use the **Mining business contacts** preset. It has pre-configured validation and task layout. In this preset, a Toloker needs to enter the organization's contact information found online.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/USPmt)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YkWWQo2o3ttFRV)
 
 {% cut "Components used in the example" %}
 
@@ -22,21 +22,21 @@ For this type of project, you can use the **Mining business contacts** preset. I
 
 - To let Tolokers enter long texts, add the [field.textarea](../reference/field.textarea.md) field.
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQAkj)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/2iMmi4hy3ttFRy)
 
 - To let Tolokers enter numbers, add the [field.number](../reference/field.number.md) field.
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQDQS)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sblNq7sf3ttFSP)
 
 - To let Tolokers search for files online, add the file selection field [field.file](../reference/field.file.md). For example, use this if they need to upload a photo with a certain object in it.
 
     In task verification mode, the uploaded images will appear automatically. You can view, rotate, and switch between images.
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBXF)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/vNkwNHcs3ttFSx)
 
 - If a Toloker needs to find and submit a link to a specific page from the website, add the [condition.same-domain](../reference/condition.same-domain.md) component. The component checks that the link is from the required domain.
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/VQBm5)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/nbadJ5Ee3ttFTP)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -44,7 +44,7 @@ If this preset doesn't meet your needs, see other examples in this section.
 
 If a Toloker needs to click on the search link and answer a question, add the [field.radio-group](../reference/field.radio-group.md) field for selecting one of the response options.
 
-  [![image](../_images/buttons/view-example.svg)](https://clck.ru/TtSs6)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/BI7qUvc93ttFTv)
 
 ## Add an image and a date input field {#add-image-date}
 
@@ -56,7 +56,7 @@ In this example, the following fields are added:
 - [field.text](../reference/field.text.md): For entering a short text.
 - [field.date](../reference/field.date.md): For entering the date of birth.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/VQCAT)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/j4cif7yG3ttFUY)
 
 ## Divide the task interface into columns {#add-layout-columns}
 
@@ -70,7 +70,7 @@ In this example, the following fields are added:
 - [field.button-radio-group](../reference/field.button-radio-group.md): Buttons for response options.
 - The [condition.schema](../reference/condition.schema.md) component: Checks the format of the entered data (in this case, the INN and OGRN code formats).
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/VQCUZ)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/s5vP6HDb3ttFVB)
 
 ## See also {#see-also}
 

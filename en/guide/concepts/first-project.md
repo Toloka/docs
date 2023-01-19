@@ -66,7 +66,7 @@ In the project, you'll customize an appearance of the tasks.
 
     To learn more, see the [Template Builder Help](../../template-builder/index.md).
 
-1. In the **Instructions for performers** section, edit the ready-made instructions if needed.
+1. In the **Instructions for Tolokers** section, edit the ready-made instructions if needed.
 
 1. Click **Create a project**.
 
@@ -78,7 +78,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 1. Configure the pool parameters:
 
-    - Set a price per task page and overlap. The minimum price is $0.005.
+    - Set a price per [task suite](../../glossary.md#task-suite) and [overlap](../../glossary.md#overlap). The minimum price is $0.005.
 
     - Use filters to select Tolokers who will have access to your tasks.
 
@@ -146,7 +146,7 @@ To upload a [file with tasks](../../glossary.md#tsv):
 
 ![](../_images/first-project/download-results.png)
 
-## Next steps {#next-steps}
+## What's next {#what-next}
 
 - When you complete the testing in the Sandbox, [move](sandbox.md#export) your project to the Toloka production version and launch the pool for real Tolokers.
 
@@ -158,7 +158,7 @@ To upload a [file with tasks](../../glossary.md#tsv):
 
 - If you have questions or problems, see the [Troubleshooting and support](../troubleshooting/troubleshooting.md) section.
 
-## See also {#learn-more}
+## See also {#see-also}
 
-- [Knowledge base](https://toloka.ai/knowledgebase)
+- [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
 - [Crowdsourcing course](https://toloka.ai/academy/self-study-guide/)

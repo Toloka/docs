@@ -20,7 +20,6 @@
 
     - [Контрольные задания](goldenset.md)
     - [Мнение большинства](mvote.md)
-    - [Капча](captcha.md)
     - [Результаты проверки](reviewing-assignments.md)
 
     {% endcut %}
@@ -156,4 +155,4 @@
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -26,11 +26,11 @@ To get links to files:
 
 ## Create a storage account {#create-account}
 
-1. Open the Azure [main page]({{ azure-home }}) and click ![](../_images/tutorials/cloud-storage/azure/more-icon.png) in the top left corner.
+1. Open the Azure [main page]({{ azure-home }}) and click ![](../_images/tutorials/cloud-storage/azure/more-icon.svg) in the top left corner.
 
 1. Select **Storage accounts**.
 
-1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.png) **Create**.
+1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.svg) **Create**.
 
 1. On the **Basic** tab, select the subscription for the new storage account.
 
@@ -54,7 +54,7 @@ To get links to files:
 
 1. In the **Data storage** section in the left menu, select **Containers**.
 
-1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.png) **Container**.
+1. On the top panel, click ![](../_images/tutorials/cloud-storage/azure/plus-icon.svg) **Container**.
 
 1. Enter the container name.
 
@@ -142,4 +142,8 @@ You can set up the lifetime of files in the container so that they are automatic
     https://mytolokaaccount.blob.core.windows.net/mycontainer/newfolder/image2.png
     ```
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+## See also {#see-also}
+
+- [{#T}](task_upload.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

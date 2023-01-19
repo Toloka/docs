@@ -83,10 +83,14 @@ items:
                 href: guide/concepts/appendix-expanded-code.md
       - name: Surveys
         items:
+          - name: Overview
+            href: guide/tutorials/questionnaire-overview.md        
           - name: Survey with Toloka template
             href: guide/tutorials/questionnaire-toloka.md
           - name: Survey on third-party platform
             href: guide/tutorials/questionnaire-other.md
+          - name: Survey based on Qualtrics
+            href: guide/tutorials/questionnaire-qualtrics.md
       - name: Field tasks
         items:
           - name: Collecting offline data
@@ -115,9 +119,6 @@ items:
                 href: guide/concepts/advanced-features-input-string.md
               - name: Add response options
                 href: guide/concepts/advanced-features-input-selector.md
-  - name: Keys
-    href: guide/concepts/usecases-keys.md
-    hidden: true
   - name: Projects
     items:
       - name: Steps to follow
@@ -231,6 +232,8 @@ items:
                 href: guide/concepts/dynamic-pricing.md
           - name: Quality control
             items:
+              - name: Overview
+                href: guide/concepts/quality-control-overview.md
               - name: Setting up quality control
                 href: guide/concepts/qa-pool-settings.md
               - name: Quality control rules
@@ -273,7 +276,7 @@ items:
                 href: guide/concepts/adjust.md
           - name: Additional settings
             items:
-              - name: Non-automatic acceptance
+              - name: Manual review
                 href: guide/concepts/offline-accept.md
               - name: Archiving a pool
                 href: guide/concepts/pool-archive.md
@@ -329,7 +332,6 @@ items:
                 href: guide/concepts/efficiency-metrics/ban-rate.md
               - name: Communication issues
                 href: guide/concepts/efficiency-metrics/communication.md
-                hidden: true
               - name: Control tasks
                 href: guide/concepts/efficiency-metrics/control-tasks-share.md
               - name: Control task balance
@@ -340,7 +342,6 @@ items:
                 href: guide/concepts/efficiency-metrics/instruction-quality.md
               - name: Quality of interface
                 href: guide/concepts/efficiency-metrics/interface-quality.md
-                hidden: true
               - name: Rejected tasks
                 href: guide/concepts/efficiency-metrics/rejected-tasks.md
               - name: Submission rate
@@ -383,6 +384,10 @@ items:
             href: guide/concepts/nav-history.md
       - name: Profile
         items:
+          - name: Editing the profile
+            href: guide/concepts/edit-profile.md
+          - name: Notifications
+            href: guide/concepts/notifications.md
           - name: About money
             items:
               - name: About account management
@@ -417,6 +422,8 @@ items:
         href: guide/concepts/faq.md
       - name: Using exams
         href: guide/concepts/how-to-use-exams.md
+      - name: Using A/B experiments
+        href: guide/concepts/ab-experiment.md
   - name: For developers
     items:
       - name: REST API
@@ -463,8 +470,6 @@ items:
                   mode: link
   - name: Troubleshooting and support
     items:
-      - name: Get help
-        href: guide/concepts/get-help.md
       - name: All questions on one page
         href: guide/troubleshooting/troubleshooting.md
       - name: Registration and getting started
@@ -495,6 +500,8 @@ items:
     href: glossary.md
   - name: Changelog
     href: https://toloka.ai/changelog/
+  - name: Data labeling platform
+    href: https://toloka.ai/data-labeling-platform
   - name: Common criteria
     href: guide/concepts/additionals-q.md
     hidden: true

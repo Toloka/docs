@@ -106,7 +106,7 @@
 
 Если вы не нашли подходящий пример, воспользуйтесь общей [инструкцией ](main-steps.md) по запуску и настройке проекта.
 
-Вы также можете [обратиться к нам или нашим партнерам](get-help.md) за помощью в запуске проекта целиком или отдельных шагов, например в [разметке заданий](../../glossary.md#task-markup).
+Вы также можете [обратиться к нам или нашим партнерам](../troubleshooting/support.md) за помощью в запуске проекта целиком или отдельных шагов, например в [разметке заданий](../../glossary.md#task-markup).
 
 {% if locale == "ru-ru" %}
 
@@ -426,7 +426,7 @@ onKey: function(key) {
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
 
 {% if locale == "ru-ru" %}
 

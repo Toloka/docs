@@ -6,11 +6,11 @@
 
 Например, этот компонент позволит запускать два видео одновременно.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Tx-yXweI3YChre)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/Tx-yXweI3YChre)
 
 Еще вы можете останавливать или запускать проигрывание по какому-то событию ([plugin.trigger](plugin.trigger.md)) или по нажатию горячей клавиши ([plugin.hotkeys](plugin.hotkeys.md)).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/aSNa6h-z3YCi9t)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/8MU78BrT3tvNR7)
 
 ## Свойства компонента {#properties}
 

@@ -1,5 +1,3 @@
-{% include [image-styles](../../_includes/image-styles.md) %}
-
 # Визуальный редактор
 
 {% include [deprecate](../_includes/deprecate.md) %}
@@ -18,7 +16,7 @@
 
 Интерфейс визуального редактора выглядит следующим образом:
 
-[![Интерфейс визуального редактора](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/toloka/en/template-builder/visual-editor.png)
+[![Интерфейс визуального редактора](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/template-builder/visual-editor.png)
 
 1. Переключайтесь между визуальным редактором и редактором кода с помощью кнопок в верхней части конструктора шаблонов.
 
@@ -53,3 +51,5 @@
 - [Пресет «Релевантность поиска товаров»](templates/product-search-relevance.md)
 
 [![Написать в службу поддержки](_images/buttons/contact-support.svg)](concepts/support.md)
+
+{% include [image-styles](../../_includes/image-styles.md) %}

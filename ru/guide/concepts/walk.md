@@ -53,7 +53,7 @@
 
       1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
 
-          Для этого проекта воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/VC4jc){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC4g7){% endif %}, где уже настроена валидация и внешний вид задания.
+          Для этого проекта воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/qAIe3yri3tvkJj){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/shEN6heQ3tvkU2){% endif %}, где уже настроена валидация и внешний вид задания.
 
           Исполнитель не сможет отправить задание, если:
 
@@ -233,4 +233,4 @@
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

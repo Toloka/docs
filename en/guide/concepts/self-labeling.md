@@ -1,12 +1,10 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Checking project
 
 After you [uploaded the files](task_upload.md) with the tasks to the pool, complete the tasks as a Toloker. This way you can find if the project contains any errors, or might be too difficult or ambiguous for the Tolokers to complete.
 
 It also allows you to fix potential issues with your tasks even before you send them to the real Tolokers for labeling. This will save your money and Tolokers efforts.
 
-To label the project tasks as a Toloker, click **Check project** in the **Check the project before you start labeling** banner.
+To label the project tasks as a Toloker, click **Try tasks as a Toloker** at the pool overview page.
 
 [![Check the project before you start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/self-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/self-labeling.png)
 
@@ -55,8 +53,14 @@ If you discover issues with your project or tasks during the project check, you 
 
 We recommend that you always double-check new projects. You should also check previously created projects whenever you modify their interface or instructions.
 
-## Next steps
+## What's next {#what-next}
 
 - If you haven't labeled your control and training tasks in the file, [edit the tasks in the interface](task_markup.md).
 - [Top up](refill.md) your account.
 - Launch the [pool labeling](pool-run-and-stop.md).
+
+## See also {#see-also}
+
+- [{#T}](mobile.md)
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

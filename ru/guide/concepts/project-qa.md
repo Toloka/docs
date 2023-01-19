@@ -40,8 +40,6 @@
 
     - [Быстрые ответы](quick-answers.md) — позволяет следить за минимальным временем на выполнение [страницы заданий](../../glossary.md#task-suite).
 
-    - [Капча](captcha.md) — позволяет периодически показывать капчу, чтобы избежать выполнения заданий роботами.
-
     - [Пропуск заданий](skipped-assignments.md) — позволяет ограничить доступ к заданиям исполнителям, которые [пропускают несколько страниц заданий](pool_statistic-pool.md#skipped-tasks) подряд.
 
 - **Чтобы привлечь разных исполнителей:**
@@ -170,4 +168,4 @@
     - [Адаптировать задание для мобильных устройств](mobile.md).
     - {% if locale == "ru-ru" %}[Статья в блоге Толоки.]({{ toloka-blog-edit-templates }}){% endif %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

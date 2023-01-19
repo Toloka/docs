@@ -62,7 +62,7 @@ To add **selective majority vote check**:
 
 1. Switch to pool editing mode.
 
-1. Under {% if locale == "en-com" %}**Smart mixing settings**{% endif %}, click ![](../_images/other/b-gear.png).
+1. Under {% if locale == "en-com" %}**Smart mixing**{% endif %} settings, click **Selective increase in overlap for general tasks**.
 
 1. Specify how many days the calculation should take into account, Tolokers, and overlap for majority vote tasks.
 
@@ -94,4 +94,8 @@ To add **selective majority vote check**:
 
     - [Dynamic overlap](dynamic-overlap.md)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+## See also {#see-also}
+
+- [{#T}](distribute-tasks-by-pages.md#smart-mixing)
+
+{% include [contact-support](../_includes/contact-support.md) %}

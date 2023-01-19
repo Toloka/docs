@@ -82,6 +82,14 @@ Use this filter if you want to make sure Tolokers have the right browser for you
 
 {% endcut %}
 
+{% cut "Experiment group (1-100)" %}
+
+Use the **Experiment group (1-100)** filter to select Tolokers from one or several independent groups.
+
+To learn more, see [Using A/B experiments](ab-experiment.md).
+
+{% endcut %}
+
 ## Toloker profile {#filter-user-profile}
 
 Use filters from this group to select Tolokers by the main profile data.
@@ -194,9 +202,20 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
     - [Selective majority vote check](selective-mvote.md).
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
-    - [Non-automatic acceptance](offline-accept.md).
+    - [Manual review](offline-accept.md).
 
-### Troubleshooting {#troubleshooting}
+## See also {#see-also}
+
+- [Efficiency indicators: Project availability](./efficiency-metrics/available-performers.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Filtering by profile data](../../api/concepts/filter-profile.md)
+- [Toloka API: Filtering by computed data](../../api/concepts/filter-computed.md)
+- [Toloka API: Filtering by skills](../../api/concepts/filter-skill.md)
+- [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
+
+## Troubleshooting {#troubleshooting}
 
 {% cut "Tolokers" %}
 
@@ -206,7 +225,7 @@ Requesters can't see the full details about specific Tolokers. So you can't see 
 
 {% endcut %}
 
-{% cut "Can I set up a task to be visible to Tolokers with certain demographic and geo parameters? For example, ’Moscow only, 30–45 years old’." %}
+{% cut "Can I set up a task to be visible to Tolokers with certain demographic and geo parameters? For example, ’US only, 30–45 years old’." %}
 
 You can do that. To select Tolokers for the pool, use [filters](filters.md).
 
@@ -329,4 +348,4 @@ Tasks in pools are automatically available in the web version of Toloka and the 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

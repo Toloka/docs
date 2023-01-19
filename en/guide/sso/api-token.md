@@ -1,5 +1,3 @@
-{% include [image-styles](../../../_includes/image-styles.md) %}
-
 # Generating API tokens
 
 After you login to the platform with [single sign-on](./microsoft-authentication.md) (SSO) authentication method, you can generate new tokens. You can use them for API requests or for the integration applications. The previously generated tokens will continue to work, but will be deprecated with time.
@@ -36,7 +34,7 @@ You can generate up to **50** tokens. We recommend that you generate and use a s
 
     Here you can view the details about your generated tokens: their names, first characters, creation date, and usage information.
 
-    Click ![Delete button](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/delete-token.svg) in the token upper-right area to delete it.
+    Click ![Delete button](../_images/delete-token.svg) in the token upper-right area to delete it.
 
 ## Testing tokens
 
@@ -69,3 +67,5 @@ Now you can use the created API token to send other API requests: get the list o
 ## Further reading
 
 - [Toloka API](../../api/index.md)
+
+{% include [image-styles](../../../_includes/image-styles.md) %}

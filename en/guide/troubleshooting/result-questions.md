@@ -68,7 +68,7 @@ If a Toloker typed some text and then deleted it, the result is `null`, otherwis
 
 [Other questions](support.md#help)
 
-## Assignment review {#results_2}
+## Manual review {#results_2}
 
 {% cut "How do I send an assignment back to the Toloker for revision?" %}
 
@@ -183,4 +183,4 @@ When you download the results file, select the **Start time** and **Submit time*
 
 [Other questions](support.md#help)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

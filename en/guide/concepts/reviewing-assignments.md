@@ -4,7 +4,7 @@ If you don't want Tolokers who made a lot of mistakes to do your tasks in the fu
 
 ## When to use {#when-use}
 
-If [non-automatic acceptance](../../glossary.md#pool) (assignment review) is set in the [pool](offline-accept.md), add a rule to:
+If [manual review](offline-accept.md) is set in the [pool](../../glossary.md#pool), add a rule to:
 
 - Set the Toloker's [skill](../../glossary.md#skill) based on their responses.
 
@@ -44,7 +44,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
@@ -65,7 +65,7 @@ You can also assign a skill that you can use to either block access to tasks for
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -96,6 +96,11 @@ After 3 tasks are reviewed, the skill is set to the percentage of correct respon
 ![](../_images/other/qcr-control_example_filter.png)
 
 {% endcut %}
+
+## For developers {#for-developers}
+
+- [Toloka API: Processing rejected and accepted assignments](../../api/concepts/reassessment.md)
+- [Toloka-Kit: AssignmentsAssessment collector class](../../toloka-kit/reference/toloka.client.collectors.AssignmentsAssessment.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -135,4 +140,4 @@ No. After sending a task, the Toloker can't make any changes to it. You can add 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

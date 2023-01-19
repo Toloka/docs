@@ -95,6 +95,11 @@ If you edit instructions in a project that already has completed tasks, you shou
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
 
+## See also {#see-also}
+
+- [{#T}](edit-project.md)
+- [Efficiency indicators: Quality of instructions](./efficiency-metrics/instruction-quality.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "How do I show my instructions to the Toloker inside the task so that they don't need to open or close it?" %}
@@ -133,4 +138,4 @@ If the tags or attributes disappear after you save the instructions (for example
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

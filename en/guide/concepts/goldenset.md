@@ -58,7 +58,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the Toloker's [skill](nav.md).
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
@@ -83,7 +83,7 @@ Solutions:
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if you don't reject them manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if you don't reject them using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -182,6 +182,16 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
   If the percentage of correct responses in the control tasks is less than 40%, the Toloker loses access to the project for 30 days. The rule will be applied once — after the fifth response in the control task.
 
 {% endlist %}
+
+## See also {#see-also}
+
+- [{#T}](qa-pool-settings.md)
+- [{#T}](remember-values.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Control tasks](../../api/concepts/goldenset.md)
+- [Toloka-Kit: Control and training task statistics collector](../../toloka-kit/reference/toloka.client.collectors.GoldenSet.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -290,4 +300,4 @@ Smart mixing is set up when you upload tasks to the pool. After creating a pool,
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

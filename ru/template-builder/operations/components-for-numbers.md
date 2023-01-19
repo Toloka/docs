@@ -19,7 +19,7 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/U3AuE)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/szui98Mc3tvrjL)
 
 ## Запретить отрицательные числа {#number-positive-only}
 
@@ -29,6 +29,6 @@
 "minimum": 0
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/U7Mzt)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/DZ8TpX8S3tvruz)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

@@ -1,5 +1,5 @@
 # UserSkillSearchRequest
-`toloka.client.search_requests.UserSkillSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/search_requests.py#L650)
+`toloka.client.search_requests.UserSkillSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/search_requests.py#L650)
 
 ```python
 UserSkillSearchRequest(

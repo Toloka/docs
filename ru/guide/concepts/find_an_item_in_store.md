@@ -32,7 +32,7 @@
 
     - Конструктор шаблонов
 
-      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TvWtm){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fSC){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/sucNUJXK3tveWk){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/G4tBYKz63ttEYj){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
 
           Исполнитель не сможет отправить задание, если:
 
@@ -319,4 +319,4 @@
 
 - Создайте [Проект 3](item_look_similar.md) для сравнения исходного изображение с результатами из второго проекта.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

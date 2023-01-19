@@ -56,7 +56,7 @@
 
       1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
 
-          Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/U7pFn){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC4xu){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, пока не ответит на каждый из вопросов.
+          Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/5dOreK6G3tvhtr){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/pu9d8MFd3tvi8J){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, пока не ответит на каждый из вопросов.
 
           [Подробнее о настройке условий](../../template-builder/best-practices/conditions.md) в конструкторе шаблонов.
 
@@ -322,4 +322,4 @@
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

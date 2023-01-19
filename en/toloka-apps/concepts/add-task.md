@@ -23,6 +23,14 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
     - Upload a ready-made TSV file.
     - Enter the data in text format.
 
+## Renaming an existing batch {#rename}
+
+1. Open the project and go to the appropriate batch.
+
+1. Next to the batch name, click ![Rename](../_images/edit.svg).
+
+1. Enter a new batch name and click **Save**.
+
 ## What's next {#whats-next}
 
 Wait until the labeling is done and [download the results](download-results.md).

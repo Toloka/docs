@@ -18,7 +18,6 @@ The quality control rules feature the following actions:
 
     - [Control tasks](goldenset.md)
     - [Majority vote](mvote.md)
-    - [Captcha](captcha.md)
     - [Review results](reviewing-assignments.md)
 
     {% endcut %}
@@ -46,6 +45,18 @@ You don't need to create this skill, it is created when you add the first traini
 ## What's next {#what-next}
 
 [Use the skill](nav-use.md), for example, to select Tolokers or manage overlap or price.
+
+## See also {#see-also}
+
+- [{#T}](nav-create.md)
+- [{#T}](nav-edit.md)
+- [{#T}](nav-delete.md)
+- [{#T}](filters.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Setting skill value](../../api/concepts/set-skill.md)
+- [Toloka-Kit recipe: Assign skill to Toloker](../../toloka-kit/recipes/assign-skill.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -79,4 +90,4 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

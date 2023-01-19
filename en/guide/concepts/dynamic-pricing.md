@@ -2,7 +2,7 @@
 
 The price is indicated per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (“.”) as a separator.
 
-If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other [pool](../../glossary.md#pool) types, you can set the price to zero. The fee is 30% of the price, but not less than $0.005.
+If the value of the **Pool type** in advanced settings is **General tasks**, the minimum price per task suite is $0.005. For other [pool](../../glossary.md#pool) types, you can set the price to zero.
 
 In Toloka, there are two ways to set the task price:
 
@@ -52,9 +52,9 @@ To set up dynamic pricing:
 
     To increase the Toloker's motivation, make the skill [public](nav.md#public). The Toloker will see the full list of prices and their level.
 
-1. When creating or editing a [pool](../../glossary.md#pool), specify a fixed price in the {% if locale == "en-com" %}**Price per task suite, $**{% endif %}. This price will be used if the skill is not assigned to the Toloker.
+1. When creating or editing a [pool](../../glossary.md#pool), specify a fixed price in the **Price per task suite, $**. This price will be used if the skill is not assigned to the Toloker.
 
-1. In the advanced settings, enable the {% if locale == "en-com" %}**Use dynamic pricing**{% endif %} option.
+1. In the advanced settings, enable the **Use dynamic pricing** option.
 
 1. Choose a skill in the window that opens.
 
@@ -62,7 +62,7 @@ To set up dynamic pricing:
 
 {% note info %}
 
-The price is calculated when the task suite is issued to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
+The price is calculated when the task suite is assigned to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
 
 {% endnote %}
 
@@ -82,11 +82,16 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
     - [Setting up quality control](qa-pool-settings.md).
     - [Reviewed assignments](offline-accept.md).
 
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
+- [{#T}](nav.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Where can I set the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price for regular pools is $0.005.
+You can set a price for your task suite on the pool editing page. The minimum price for regular pools is $0.005.
 
 {% endcut %}
 
@@ -110,7 +115,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% cut "Where do I find the statistics on the awards I paid?" %}
 
-Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
+Track your money debited for rewards in **Profile** → **Spent** tab.
 
 {% endcut %}
 
@@ -124,4 +129,4 @@ No. The price per task suite is the same for all tasks in the pool. You can crea
 
 [Return the funds transferred to the Toloka account](../troubleshooting/support.md#feedback_khw_wc3_qjb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

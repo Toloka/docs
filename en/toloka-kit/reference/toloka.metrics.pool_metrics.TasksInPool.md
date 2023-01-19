@@ -1,5 +1,5 @@
 # TasksInPool
-`toloka.metrics.pool_metrics.TasksInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/metrics/pool_metrics.py#L286)
+`toloka.metrics.pool_metrics.TasksInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/pool_metrics.py#L286)
 
 ```python
 TasksInPool(

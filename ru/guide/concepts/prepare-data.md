@@ -60,7 +60,7 @@
 
   1. В свойстве `"path"` компонента укажите конструкцию вида `/<имя прокси>/<имя файла>.<тип>` со своими данными.
 
-  [Посмотреть пример с классификацией изображений](https://clck.ru/SSbzF)
+  [Посмотреть пример с классификацией изображений](https://ya.cc/t/U35lM1hi3ttEbC)
 
   {% note tip %}
 
@@ -97,7 +97,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://ya.cc/t/Hh04Pei73jKDq4)
+  [Посмотреть пример в песочнице](https://ya.cc/t/7LC4AVi53ttA9S)
 
   {% endcut %}
 
@@ -122,7 +122,7 @@
   }
   ```
 
-  [Посмотреть пример в песочнице](https://clck.ru/SP3Bd)
+  [Посмотреть пример в песочнице](https://ya.cc/t/_XrwbL4V3ttEhW)
 
   {% endcut %}
 
@@ -334,4 +334,4 @@
 
 Если эти рекомендации не помогли:
 
-{% include [contact-support](../_includes/contact-support-new.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

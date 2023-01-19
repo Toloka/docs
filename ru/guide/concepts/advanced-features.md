@@ -16,4 +16,4 @@
 
 - [Добавить варианты ответа](advanced-features-input-selector.md) — примеры полей ввода, в которых исполнитель должен выбрать один или несколько вариантов ответа из ограниченного набора. В этом разделе приводятся примеры кода для флажков, переключателей и выпадающих списков.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -18,6 +18,10 @@ If necessary, you can:
 - [Remove](nav-delete.md) skill for a specific Toloker.
 - [View the history](nav-history.md) of skill changes.
 
+## See also {#see-also}
+
+- [{#T}](filters.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Should I create a skill for every pool?" %}
@@ -36,7 +40,6 @@ It is better to use one [skill](../../glossary.md#skill) in a project. You can c
 
     This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
 
-
 {% endcut %}
 
 {% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
@@ -51,4 +54,4 @@ The pool shows the total number of Tolokers that completed at least one assignme
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

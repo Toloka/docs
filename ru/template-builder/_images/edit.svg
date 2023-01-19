@@ -1,6 +1,1 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg width="14px" height="13px" viewBox="0 0 14 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
-    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
-        <path d="M11.5000115,5.72790203 L7.27082963,1.50738826 L8.78081833,0 L13.0100002,4.22051377 L11.5000115,5.72790203 L11.5000115,5.72790203 Z M5.37424222,11.9264836 L1.14592714,7.70596988 L6.36500977,2.41147449 L10.5933249,6.63198826 L5.37424222,11.9264836 Z M0,8.72100822 L4.27165575,12.9839958 L0,12.9839958 L0,8.72100822 Z" id="Shape-Copy-3" fill="#000000" sketch:type="MSShapeGroup"></path>
-    </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="14" height="13" viewBox="0 0 14 13"><path fill="#000" fill-rule="evenodd" d="m11.5 5.728-4.23-4.22L8.78 0l4.23 4.22-1.51 1.508Zm-6.126 6.198-4.228-4.22 5.219-5.295 4.228 4.221-5.219 5.294ZM0 8.721l4.272 4.263H0V8.721Z"/></svg>

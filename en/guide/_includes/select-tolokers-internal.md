@@ -18,9 +18,9 @@ To select multiple Tolokers:
     83khfalkdg78m3qhfai3kaf91h9n3ls3
     ```
 
-1. Click the {% if locale == "en-com" %}**Upload file**{% endif %} button at the bottom left and choose the file.
+1. Click the **Upload Tolokers IDs** button in the lower left part and choose the file.
 
-1. When the file is uploaded, click {% if locale == "en-com" %}**Add**{% endif %}.
+1. When the file is uploaded, click **Apply**.
 
 {% note tip %}
 
@@ -30,17 +30,15 @@ To view detailed information about a Toloker, click on their ID.
 
 {% endcut %}
 
-{% cut "Show blocked users" %}
+{% cut "Show blocked Tolokers" %}
 
-By default, blocked users aren't displayed. Click the drop-down list for other options:
-
-- **Project ban** — Tolokers you blocked in one of the project pools, for example based on a quality control rule.
+By default, blocked Tolokers aren't displayed. Click the **Tolokers** drop-down list for other options:
 
 - **Requester ban** — Tolokers you blocked in all your projects.
 
-- **Blocked in the system** — Tolokers blocked in the platform for violating the rules, poor response quality, or frequent errors when entering captcha.
+- **System ban** — Tolokers blocked in the platform for violating the rules, poor response quality, or frequent errors when entering captcha.
 
-- **All** — Show both blocked and not blocked users.
+- **All** — Show both blocked and not blocked Tolokers.
 
 ![](../_images/other/users-ban-filter.png)
 
@@ -48,13 +46,13 @@ By default, blocked users aren't displayed. Click the drop-down list for other o
 
 {% cut "Exclude those who haven't used Toloka for a long time." %}
 
-Choose **Show active users** and specify the number of days when the Toloker completed at least one task.
+Turn on the **Show active users** option and specify the number of days when the Toloker completed at least one task.
 
 {% endcut %}
 
 {% cut "Find those who opened or completed my tasks" %}
 
-**In the left part of the window** use the **Project** and **Pool** fields to select Tolokers who opened tasks in one of your projects or pools.
+In the left part of the window use the **Project** and **Pool** fields to select Tolokers who opened tasks in one of your projects or pools.
 
 On the pool statistics page, these Tolokers are listed in the **Interested in pool** field.
 
@@ -68,10 +66,10 @@ To find Tolokers by skill, use [filters](../../glossary.md#filters):
 
 1. Click **Add filter**.
 
-1. Scroll down and choose **Choose skill**.
+1. Scroll down and choose **My skills** or **Choose global skill**.
 
 1. Specify the skill and the required skill value.
 
-Filters for selecting Tolokers work the same way as in the pool. Learn more in the [Filters](../concepts/filters.md) section.
+Filters for selecting Tolokers work the same way as in the pool. To learn more, see the [Filters](../concepts/filters.md) section.
 
 {% endcut %}

@@ -4,7 +4,7 @@
 
 В Толоке есть пресет **Классификация жестов рук**. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TJ6zR)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/APRf3OVx3twCRi)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -23,7 +23,7 @@
 
 - Добавьте [проверку](../best-practices/conditions.md), что видео просмотрели до конца — замените компонент [condition.played](../reference/condition.played.md) на [condition.played-fully](../reference/condition.played-fully.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TeYnB)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GxkXPo9H3twCaq)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
 
@@ -38,7 +38,7 @@
 
   Добавьте группу переключателей с помощью компонента [field.checkbox-group](../reference/field.checkbox-group.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TdszM)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/7SA9XQ7a3twCxf)
 
 - Один (радиокнопка)
 
@@ -46,7 +46,7 @@
 
   Если вариантов ответа много или названия длинные, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md), как в примере.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TfYQv)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VuUsN-9Y3twDJm)
 
 {% endlist %}
 
@@ -54,7 +54,7 @@
 
 Добавьте картинку с помощью компонента [view.image](../reference/view.image.md). Расположите видео рядом с картинкой через компонент [layout.columns](../reference/layout.columns.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/Tdkxc)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Oz5BV1jI3twDgv)
 
 Расположите видео рядом с текстом или аудио с помощью компонента [view.list](../reference/view.list.md).
 
@@ -64,13 +64,13 @@
 
   Добавьте компонент [view.text](../reference/view.text.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TggSq)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/FOjqcYqP3twE9m)
 
 - Сравнить аудиодорожки
 
   Добавьте компонент [view.audio](../reference/view.audio.md).
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/lA-Ccrax3YCsaY)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/CVwoidzj3tvbVH)
 
 {% endlist %}
 
@@ -80,12 +80,12 @@
 
 В примере видео нужно сравнить с результатами запроса, который формируется компонентом [helper.search-query](../reference/helper.search-query.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TgZdK)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/-gfZhH8X3twEYq)
 
 ## Добавить уточняющие вопросы к одному из вариантов {#add-addition}
 
 С помощью [helper.switch](../reference/helper.switch.md) можно показывать любой элемент интерфейса только при выборе определенного ответа. В этом примере отметить верные утверждения о видео можно только если исполнитель подтверждает, что оно загрузилось.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/Tgf2e)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/MkbZzOht3twEqU)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

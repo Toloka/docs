@@ -8,31 +8,9 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 ## Adding funds to your account {#concept-1}
 
-{% cut "How do I connect to billing from Moscow or Saint Petersburg?" %}
-
-If the address is in Saint Petersburg, enter Saint Petersburg in the **Region** field, then specify the street, house number, and postal code. You don't need to fill out the other fields.
-
-If the address is in Moscow, enter Moscow in the **Region** field, then specify the street, house number, and postal code. [Learn more](../concepts/refill.md#step-by-step) about connecting to billing.
-
-If it still doesn't work, [enter](troubleshooting.md) your full address with the postal code in the feedback form. We'll help you fill out the fields correctly.
-
-{% endcut %}
-
 {% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
 
 That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
-
-{% endcut %}
-
-{% cut "Why do we top up our account in a non-Russian currency?" %}
-
-Toloka is an international platform for users from different countries. The platform is provided by the Swiss company Yandex Services AG.
-
-{% endcut %}
-
-{% cut "Why do we pay 20% VAT in the invoice?" %}
-
-In accordance with the tax legislation of the Russian Federation, we have included Clause 3.8. in our [Requester agreement]({{ customeragreement-probki }}): the VAT is charged in addition to the cost of services and included in the invoice. This is the same as paying VAT on purchases at any store. Your account in Toloka will be topped up by the amount you entered.
 
 {% endcut %}
 
@@ -44,7 +22,7 @@ If you pay using a bank card, the money is usually transferred to your Toloka ac
 
 {% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
 
-You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. The conversion follows the Central Bank of Russia's exchange rate at the time of invoicing (UTC). [Learn more](../concepts/refill.md) about top-up.
+You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. [Learn more](../concepts/refill.md) about top-up.
 
 {% endcut %}
 
@@ -62,7 +40,7 @@ You can top up your Toloka account using a bank card or bank transfer. On the [P
 
 {% cut "Where can I set the task price?" %}
 
-You can set a price for your task **page** on the pool editing page. The minimum price is $0.005.
+You can set a price for your [task suite](../../glossary.md#task-suite) on the pool editing page. The minimum price is $0.005.
 
 {% endcut %}
 
@@ -102,4 +80,4 @@ No. The price per task suite is the same for all tasks in the pool. You can crea
 
 [Refund money transferred to the Toloka account](support.md#feedback_khw_wc3_qjb)
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

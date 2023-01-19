@@ -12,4 +12,8 @@ This indicator shows the number of Tolokers currently available in [pool](../../
 
 - A low indicator is `< 300` available Tolokers.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+## See also {#see-also}
+
+- [{#T}](../filters.md)
+
+{% include [contact-support](../../_includes/contact-support.md) %}

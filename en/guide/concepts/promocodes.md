@@ -18,4 +18,4 @@ The same promo code can't be activated twice.
 
 {% endnote %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

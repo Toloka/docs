@@ -77,4 +77,16 @@ If you want labeling to be done by Tolokers from different countries, you can [t
     - [Adapt a task for mobile devices](mobile.md).
     - [Setting up quality control](project-qa.md).
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Instructions](https://toloka.ai/knowledgebase/instruction/)
+- [Crowdsourcing concepts: Interfaces](https://toloka.ai/knowledgebase/interface/)
+- [Template Builder: Quick start](../../template-builder/quickstart.md)
+- [{#T}](spec.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Editing project](../../api/concepts/edit-prj.md)
+- [Toloka-Kit recipe: Edit project](../../toloka-kit/recipes/edit-project.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

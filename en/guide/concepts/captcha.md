@@ -1,5 +1,7 @@
 # Captcha
 
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
+
 Captchas and the [Fast responses](quick-answers.md) rule provide a high level of protection from robots.
 
 To show a captcha to Tolokers, set {% if locale == "en-com" %}[captcha frequency](pool_poolparams.md#captcha){% endif %} in the [pool](../../glossary.md#pool) settings.
@@ -52,7 +54,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**accept all assignments from this performer in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
@@ -65,7 +67,7 @@ Since a person can also make a mistake when entering a captcha, it's advisable t
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -86,6 +88,15 @@ The assignments submitted by banned Tolokers will be taken into account if they 
   The Toloker will be banned after the first captcha entry.
 
 {% endlist %}
+
+## See also {#see-also}
+
+- [{#T}](skipped-assignments.md)
+
+## For developers {#for-developers}
+
+- [Toloka API: Using captcha](../../api/concepts/captcha.md)
+- [Toloka-Kit: Captcha class](../../toloka-kit/reference/toloka.client.collectors.Captcha.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -163,4 +174,4 @@ The percentage of correct responses is based on the total number of captchas pro
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

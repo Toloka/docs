@@ -1,5 +1,7 @@
 # How to check Tolokers: quality control rules
 
+{% include [toloka-requester-source-anti-fraud](../_includes/toloka-requester-source/id-toloka-requester-source/anti-fraud.md) %}
+
 Use quality control rules to get better results for tasks and restrict access to fraudulent users. Rules are configured for both projects as a whole (the **Quality control** tab) and individual pools.
 
 ## Monitoring Toloker actions {#control-actions}
@@ -25,6 +27,8 @@ Use the [Skipped assignments](skipped-assignments.md) rule to restrict access to
 Use the [Captcha](captcha.md) rule to protect from robots. In Toloka, a captcha is shown every 10 assignments. If assignments are completed quickly and captchas get in the way, they can be shown every 20 assignments: specify low captcha frequency in the pool settings.
 
 ![](../_images/cp-captcha.png)
+
+{% include [captcha-warning](../_includes/captcha-warning.md) %}
 
 #### Limit on available tasks
 
@@ -117,4 +121,14 @@ Each project requires its own approach. Methods that are effective in one case m
 
 1. Contact support If something isn't working.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+## See also {#see-also}
+
+- [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
+
+## For developers {#for-developers}
+
+- [Toloka API: Quality control rules](../../api/concepts/quality_control.md)
+- [Toloka-Kit recipe: Use quality control rules](../../toloka-kit/recipes/use-quality-control-rules.md)
+- [Toloka-Kit: QualityControl class](../../toloka-kit/reference/toloka.client.quality_control.QualityControl.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

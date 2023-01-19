@@ -36,6 +36,11 @@ To [archive the training pool](train.md), first archive all the main pools to wh
     - [Speed/quality balance](adjust.md).
     - [Reviewed assignments](offline-accept.md).
 
+## For developers {#for-developers}
+
+- [Toloka API: Moving pool to archive](../../api/concepts/archive-pool.md)
+- [Toloka-Kit recipe: Archive pool](../../toloka-kit/recipes/archive-pool.md)
+
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Can I delete a pool?" %}
@@ -72,4 +77,4 @@ Simply [give the Toloker a separate reward](bonus.md) without changing the task 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

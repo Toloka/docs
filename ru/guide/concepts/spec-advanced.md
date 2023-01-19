@@ -217,4 +217,4 @@ var ChildClass = extend(ParentClass, function() {
 {% endif %}||
 |#
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}

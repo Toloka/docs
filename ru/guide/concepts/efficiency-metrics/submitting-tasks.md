@@ -34,4 +34,4 @@ $П_{отпр} = \frac{З_{отпр}+З_{прин}+З_{откл}}{З_{отпр}+
 
 - Низкий показатель — `< 90%`.
 
-{% include [contact-support](../../_includes/contact-support-help.md) %}
+{% include [contact-support](../../_includes/contact-support.md) %}

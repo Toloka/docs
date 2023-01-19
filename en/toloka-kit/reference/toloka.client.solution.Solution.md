@@ -1,14 +1,19 @@
 # Solution
-`toloka.client.solution.Solution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.0.2/src/client/solution.py#L6)
+`toloka.client.solution.Solution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/solution.py#L6)
 
 ```python
 Solution(self, output_values: Dict[str, Any])
 ```
 
-Toloker's response for a task.
+A Toloker's response to a single task.
+
+
+A solution contains values for output fields specified in a [TaskSpec](toloka.client.project.task_spec.TaskSpec.md) when a project was created.
+
+Solutions can be accessed via the [Assignment](toloka.client.assignment.Assignment.md) class.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`output_values`|**Dict\[str, Any\]**|<p>Dictionary &quot;field name&quot; - &quot;response value&quot;, by the number of fields that should be in the response.</p>
+`output_values`|**Dict\[str, Any\]**|<p>A dictionary with keys named as output fields.</p>

@@ -80,4 +80,4 @@
 
 - [Команда Dbrain о том, как стартапу найти свое призвание](https://vc.ru/life/128273-ne-slushayte-druzey-slushayte-rynok-komanda-dbrain-o-tom-kak-startapu-nayti-svoe-prizvanie) — распознавание рукописного текста.
 
-{% include [contact-support](../_includes/contact-support-help.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
