@@ -1,6 +1,6 @@
 # view.list
 
-Block for displaying data in a list. May contain an unlimited number of `view.*` components.
+Block for displaying data in a list. May contain an unlimited number of `view.*` [components](https://toloka.ai/en/docs/template-builder/reference/).
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ATPjrNYU3vUaRK)
 
@@ -20,7 +20,7 @@ Block for displaying data in a list. May contain an unlimited number of `view.*`
 || `label` | _string_ | Label above the component. ||
 || `direction` | _string_ | Determines the direction of the list:
 
-- `vertical` (default) — vertical list
+- `vertical` (default) — vertical list.
 - `horizontal` — horizontal list. ||
   || `hint` | _string_ | Hint text. ||
   || `items`<span style="color: red">\*</span> | _array_ | Array of list items. ||
