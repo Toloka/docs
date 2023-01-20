@@ -1,14 +1,14 @@
 # view.list
 
-Block for displaying data in a list. May contain an unlimited number of `view.*` [components](https://toloka.ai/en/docs/template-builder/reference/).
+Block for displaying data in a list. List may contain an unlimited number of `view.*` [components](index.md).
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ATPjrNYU3vUaRK)
 
 {% cut "Components used in the example" %}
 
-- [view.image](../reference/view.image.md): Image.
-- [field.button-radio-group](../reference/field.button-radio-group.md): Buttons for answer options.
-- [condition.required](../reference/condition.required.md): Checks if at least one option is selected.
+- [view.image](view.image.md): Displays an image.
+- [field.button-radio-group](field.button-radio-group.md): Adds buttons for selecting an answer option.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
 
 {% endcut %}
 
