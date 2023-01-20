@@ -1,5 +1,5 @@
 # BaseLocker
-`toloka.streaming.locker.BaseLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/locker.py#L31)
+`toloka.streaming.locker.BaseLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/locker.py#L31)
 
 ## Methods Summary
 

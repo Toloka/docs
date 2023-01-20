@@ -1,5 +1,5 @@
 # get_app_projects
-`toloka.async_client.client.AsyncTolokaClient.get_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L0)
 
 Finds all App projects that match certain criteria.
 
@@ -30,6 +30,7 @@ If you need to sort App projects use the [find_app_projects](toloka.client.Tolok
 `created_gte`|**Optional\[datetime\]**|<p>Projects created after or on the specified date.</p>
 `created_lt`|**Optional\[datetime\]**|<p>Projects created before the specified date.</p>
 `created_lte`|**Optional\[datetime\]**|<p>Projects created before or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned projects limit for each request. The maximum batch_size is 5000.</p>
 
 * **Yields:**
 

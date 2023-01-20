@@ -1,5 +1,5 @@
 # aggregate_solutions_by_task
-`toloka.client.TolokaClient.aggregate_solutions_by_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L498)
+`toloka.client.TolokaClient.aggregate_solutions_by_task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L498)
 
 Aggregates responses to a single task on the Toloka server.
 

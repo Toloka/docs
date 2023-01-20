@@ -1,5 +1,5 @@
 # create_tasks
-`toloka.client.TolokaClient.create_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2169)
+`toloka.client.TolokaClient.create_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2224)
 
 Creates several tasks in Toloka.
 

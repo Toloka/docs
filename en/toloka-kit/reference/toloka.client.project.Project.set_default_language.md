@@ -1,5 +1,5 @@
 # set_default_language
-`toloka.client.project.Project.set_default_language` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/__init__.py#L196)
+`toloka.client.project.Project.set_default_language` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/__init__.py#L196)
 
 ```python
 set_default_language(self, language: str)

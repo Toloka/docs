@@ -1,5 +1,5 @@
 # ConcatArraysHelperV1
-`toloka.client.project.template_builder.helpers.ConcatArraysHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/helpers.py#L31)
+`toloka.client.project.template_builder.helpers.ConcatArraysHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/helpers.py#L31)
 
 ```python
 ConcatArraysHelperV1(

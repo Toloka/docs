@@ -1,5 +1,5 @@
 # Case
-`toloka.client.project.template_builder.helpers.SwitchHelperV1.Case` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/helpers.py#L211)
+`toloka.client.project.template_builder.helpers.SwitchHelperV1.Case` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/helpers.py#L211)
 
 ```python
 Case(

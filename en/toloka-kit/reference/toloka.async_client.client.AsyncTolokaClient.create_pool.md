@@ -1,11 +1,11 @@
 # create_pool
-`toloka.async_client.client.AsyncTolokaClient.create_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/async_client/client.py#L0)
 
 ```python
 async create_pool(self, pool: Pool)
 ```
 
-Creates a new pool
+Creates a new pool in Toloka.
 
 
 You can send a maximum of 20 requests of this kind per minute and 100 requests per day.
@@ -14,11 +14,11 @@ You can send a maximum of 20 requests of this kind per minute and 100 requests p
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool`|**[Pool](toloka.client.pool.Pool.md)**|<p>New Pool with set parameters.</p>
+`pool`|**[Pool](toloka.client.pool.Pool.md)**|<p>The pool to be created.</p>
 
 * **Returns:**
 
-  Created pool. With read-only fields.
+  The pool with updated read-only fields.
 
 * **Return type:**
 
@@ -26,18 +26,18 @@ You can send a maximum of 20 requests of this kind per minute and 100 requests p
 
 **Examples:**
 
-How to create a new pool in a project.
+Creating a new pool.
 
 ```python
-new_pool = toloka.pool.Pool(
-    project_id=existing_project_id,
+new_pool = toloka.client.Pool(
+    project_id='1',
     private_name='Pool 1',
     may_contain_adult_content=False,
     will_expire=datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=365),
     reward_per_assignment=0.01,
     assignment_max_duration_seconds=60*20,
-    defaults=toloka.pool.Pool.Defaults(default_overlap_for_new_task_suites=3),
-    filter=toloka.filter.Languages.in_('EN'),
+    defaults=toloka.client.Pool.Defaults(default_overlap_for_new_task_suites=3),
+    filter=toloka.client.filter.Languages.in_('EN'),
 )
 new_pool.set_mixer_config(real_tasks_count=10, golden_tasks_count=0, training_tasks_count=0)
 new_pool.quality_control.add_action(...)

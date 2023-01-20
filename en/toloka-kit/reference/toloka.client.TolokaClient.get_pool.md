@@ -1,17 +1,17 @@
 # get_pool
-`toloka.client.TolokaClient.get_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1515)
+`toloka.client.TolokaClient.get_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1542)
 
 ```python
 get_pool(self, pool_id: str)
 ```
 
-Reads one specific pool
+Gets pool data from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**str**|<p>ID of the pool.</p>
+`pool_id`|**str**|<p>The ID of the pool.</p>
 
 * **Returns:**
 

@@ -1,12 +1,12 @@
 # find_trainings
-`toloka.client.TolokaClient.find_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1834)
+`toloka.client.TolokaClient.find_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1873)
 
-Finds training pools that match certain criteria.
+Finds trainings that match certain criteria.
 
 
-The number of returned pools is limited. To find remaining pools call `find_trainings` with updated search criteria.
+The number of returned trainings is limited. To find remaining trainings call `find_trainings` with updated search criteria.
 
-To iterate over all matching training pools you may use the [get_trainings](toloka.client.TolokaClient.get_trainings.md) method.
+To iterate over all matching trainings you may use the [get_trainings](toloka.client.TolokaClient.get_trainings.md) method.
 
 ## Parameters Description
 
@@ -27,11 +27,11 @@ To iterate over all matching training pools you may use the [get_trainings](tolo
 `last_started_gt`|**Optional\[datetime\]**|<p>Training pools that were opened last time after the specified date.</p>
 `last_started_gte`|**Optional\[datetime\]**|<p>Training pools that were opened last time after or on the specified date.</p>
 `sort`|**Union\[List\[str\], [TrainingSortItems](toloka.client.search_requests.TrainingSortItems.md), None\]**|<p>Sorting options. Default: `None`.</p>
-`limit`|**Optional\[int\]**|<p>Returned training pools limit. The maximum allowed limit is 300.</p>
+`limit`|**Optional\[int\]**|<p>Returned trainings limit. The maximum allowed limit is 300.</p>
 
 * **Returns:**
 
-  Found training pools and a flag showing whether there are more matching pools exceeding the limit.
+  Found trainings and a flag showing whether there are more matching trainings exceeding the limit.
 
 * **Return type:**
 
@@ -39,22 +39,22 @@ To iterate over all matching training pools you may use the [get_trainings](tolo
 
 **Examples:**
 
-Find all training pools in all projects.
+Finding all trainings in all projects.
 
 ```python
-pools = toloka_client.find_trainings()
+trainings = toloka_client.find_trainings()
 ```
 
-Find all open training pools in all projects.
+Finding all opened trainings in all projects.
 
 ```python
-pools = toloka_client.find_trainings(status='OPEN')
+trainings = toloka_client.find_trainings(status='OPEN')
 ```
 
-Find all open training pools in a specific project.
+Finding all opened trainings in a specific project.
 
 ```python
-pools = toloka_client.find_trainings(status='OPEN', project_id='1')
+trainings = toloka_client.find_trainings(status='OPEN', project_id='1')
 ```
 
-If there are pools exceeding the `limit`, then `pools.has_more` is set to `True`.
+If there are trainings exceeding the `limit`, then `trainings.has_more` is set to `True`.
