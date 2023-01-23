@@ -125,11 +125,7 @@ Yes. When you copy the filter and quality control settings, the settings you pre
 
 {% endcut %}
 
-{% cut "Can one Toloker get access to two pools in the same project? Can I avoid that?" %}
-
-Yes, if they can access both pools, they can do both of them. To restrict access to subsequent tasks for a Toloker, use the [Completed tasks](submitted-answers.md) rule and select a ban at the project level.
-
-{% endcut %}
+{% include [faq-get-access](../_includes/faq/pool-setup/get-access.md) %}
 
 {% cut "Am I correct in understanding that if I use “set the the skill value = 1“ with a “percentage of accepted responses >= 75“ and “10 recent values to use“, Tolokers will get one skill point for every eight tasks completed correctly out of ten?" %}
 
@@ -151,13 +147,7 @@ Then limit your pools to Tolokers with a certain skill using [filters](filters.m
 
 {% endcut %}
 
-{% cut "I want to create training and exam pools to match the entered text against a sample, and sometimes the matching fails. How do I implement this?" %}
-
-For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
-
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
-
-{% endcut %}
+{% include [faq-match-entered-text](../_includes/faq/pool-setup/match-entered-text.md) %}
 
 {% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. I'm trying to put “3“ in the “Recent control and training task responses to use“ field, but I'm getting an error telling me that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
@@ -165,70 +155,15 @@ The **Recent control and training task responses to use** field is for the numbe
 
 {% endcut %}
 
-{% cut "I have two text versions that I want to show to my respondents: one version to half of the audience, and another version to the other half (like in A/B testing). Is this possible in Toloka, or do I need to create two separate projects?" %}
-
-If you pass texts to the input data, you can load 2 different tasks in the pool. In one task, pass Text 1 in the `INPUT: <input field name>` field, and in the other task, use this field to pass Text 2. But if the text is in the HTML block of the task template, you need to clone the project. To let a Toloker do only one task in your project, use the [Submitted responses](submitted-answers.md) rule. You can assign a skill or ban the Toloker after they submit one response.
-
-{% endcut %}
+{% include [faq-two-text-versions](../_includes/faq/pool-setup/two-text-versions.md) %}
 
 {% endcut %}
 
 {% cut "Control tasks" %}
 
-{% cut "How many control tasks do I need to add?" %}
+{% include [faq-how-many-control-tasks](../_includes/faq/pool-setup/how-many-control-tasks.md) %}
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
-
-{% cut "Why's that?" %}
-
-Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same number.
-
-There shouldn't be too few pages available. Otherwise:
-
-- You won't be able to correctly evaluate the quality of the Toloker's responses.
-- The Toloker won't be motivated to complete such tasks because they'll spend a lot of time studying instructions but won't earn much.
-
-{% cut "Example" %}
-
-#### A large pool with 1% control tasks (good)
-
-There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 100 suites.
-
-#### A small pool with 1% control tasks (bad)
-
-There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can only complete 1 suite.
-
-#### A small pool with 10% control tasks (good)
-
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 10 suites.
-
-{% endcut %}
-
-If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
-
-{% endcut %}
-
-{% cut "What for" %}
-
-In a large pool with few control tasks, there might be a situation when a Toloker who has completed a lot of tasks in the project stops getting new task suites. This happens when the Toloker completes all control tasks in the pool.
-
-{% note info %}
-
-To filter out Tolokers, use the [Control tasks](control.md) quality control rule. To rank Tolokers by the quality of responses in control tasks, use a [skill](nav.md).
-
-{% endnote %}
-
-{% endcut %}
-
-{% endcut %}
-
-{% cut "How are the correct responses to control questions counted?" %}
-
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
-
-As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control and training task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
-
-{% endcut %}
+{% include [faq-correct-responses-counted](../_includes/faq/pool-setup/correct-responses-counted.md) %}
 
 {% cut "Can I make my training or control tasks totally different from the general tasks?" %}
 
@@ -288,11 +223,7 @@ No, they can't.
 
 {% cut "Ban" %}
 
-{% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
-
-You can deny access to the pool if the Toloker's responses are [too fast](quick-answers.md), if they don't match the [majority vote](mvote.md), or if the Toloker makes too many mistakes in [control tasks](goldenset.md). Tasks completed by such Tolokers can be [given to other Tolokers](restore-task-overlap.md).
-
-{% endcut %}
+{% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
 
 {% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
@@ -320,17 +251,9 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 {% cut "Majority vote" %}
 
-{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
+{% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
-Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
-
-{% endcut %}
-
-{% cut "My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?" %}
-
-All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
-
-{% endcut %}
+{% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
 {% cut "Which format should I use to review results if I'm looking to filter out mismatching Tolokers based on the "Majority vote"?" %}
 

@@ -76,11 +76,7 @@ Indeed, this rule is probably too strict. Even the most careful user can make a 
 
 {% endcut %}
 
-{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
-
-Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
-
-{% endcut %}
+{% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
 {% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
 
@@ -94,11 +90,7 @@ Then open your pools only to the Tolokers that have a certain skill: use [filter
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
-{% cut "If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?" %}
-
-If the Toloker already got paid for the tasks, the money can't be refunded to you.
-
-{% endcut %}
+{% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
 {% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
 
@@ -146,11 +138,7 @@ The percentage of correct responses is based on the total number of captchas pro
 
 {% endcut %}
 
-{% cut "My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?" %}
-
-All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
-
-{% endcut %}
+{% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
 {% cut "Have I understood correctly that if I use `set the the skill value = 1` with the `percentage of accepted responses >= 75` and `10 recent values to use`, for every 8 correctly completed tasks out of 10 the Toloker is given 1 skill point?" %}
 
@@ -192,19 +180,7 @@ Don't forget to enable **Keep task order** in the pool parameters. Majority vote
 
 {% endcut %}
 
-{% cut "I want to create training and exam pools to match the entered text against a sample, and sometimes the matching fails. How do I implement this?" %}
-
-For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
-
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
-
-{% endcut %}
-
-{% cut "In the section about control questions, does "Number of control responses" mean the total number of responses to control questions (including incorrect responses) or the number of correct responses to my control questions?" %}
-
-This is the total number of responses to the control questions.
-
-{% endcut %}
+{% include [faq-match-entered-text](../_includes/faq/pool-setup/match-entered-text.md) %}
 
 {% cut "How do I classify users as good Tolokers and poor Tolokers as they complete tasks, and ban the poor Tolokers?" %}
 
@@ -226,13 +202,7 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 ## Overlap {#overlap}
 
-{% cut "What overlap should I set?" %}
-
-Overlap defines how many Tolokers complete the same pool task.
-
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
-
-{% endcut %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
 {% cut "Can I change overlap after the pool is started?" %}
 
@@ -242,13 +212,7 @@ Yes. [Open edit mode for the pool](../concepts/pool-edit.md) and set a new overl
 
 {% include [faq-dynamic-overlap](../_includes/faq/pool-setup/dynamic-overlap.md) %}
 
-{% cut "How does counting work if I set `overlap = 3` in the pool and `response threshold = 3` in the majority vote?" %}
-
-In this case, if you don't have 3 identical responses for your task (response threshold), no user would be considered a good or poor Toloker, because the system can't see which of the Tolokers made an error.
-
-But if you set `response threshold = 2` with `overlap = 3`, then two users with the same responses are considered good Tolokers, but the third user, who gives a different response, is a poor Toloker.
-
-{% endcut %}
+{% include [faq-counting-work](../_includes/faq/pool-setup/counting-work.md) %}
 
 {% cut "Can I do it like this: set a basic overlap of 2 users, then, if both Tolokers select the same response, close the pool, but if they give different responses, show the task to one more user?" %}
 

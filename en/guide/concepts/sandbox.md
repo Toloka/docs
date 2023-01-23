@@ -70,47 +70,15 @@ To move tasks from the sandbox to the production version:
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I work with the Sandbox?" %}
-
-[Register]({{ sandbox }}) as a requester in the sandbox.
-
-[Register]({{ sandbox-for-performers }}) as a Toloker using another account.
-
-In your requester account, add your Toloker account to your trusted list.
-
-Create and run a task. It will appear in the list of tasks for your trusted users. For more information, see [Help](sandbox.md).
-
-{% endcut %}
+{% include [faq-work-with-sandbox](../_includes/faq/sandbox/work-with-sandbox.md) %}
 
 {% include [faq-see-pool-as-toloker](../_includes/faq/sandbox/see-pool-as-toloker.md) %}
 
-{% cut "Is it possible to use the same account for the Sandbox and the public Toloka version?" %}
+{% include [faq-same-account](../_includes/faq/sandbox/same-account.md) %}
 
-No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox), [register](access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
+{% include [troubleshooting-export-error](../_includes/troubleshooting/sandbox/export-error.md) %}
 
-{% endcut %}
-
-{% cut "What do I do if an error occurs on the server when I try to export a project from the Sandbox?" %}
-
-#### Try exporting the project without pools.
-
-- Select an exported project and don't select pools in the window that opens.
-- Click **Export**.
-
-#### If the error persists, refresh the token.
-
-- Go to [ Yandex ID]({{ passport-profile }}).
-- Under **Sign in and device history**, click **Log out from all devices**.
-- Request new tokens in the Sandbox and main environment.
-- Update the token in the [Sandbox]({{ sandbox-profile-integration }}) **Profile**.
-
-{% endcut %}
-
-{% cut "How do I check my project in the mobile version of Toloka?" %}
-
-To do this, you will need a Sandbox version of the Toloka app. [Write to support](../troubleshooting/support.md#support-work-toloka) to get it.
-
-{% endcut %}
+{% include [faq-check-mobile-version](../_includes/faq/sandbox/check-mobile-version.md) %}
 
 {% include [faq-copy-from-sandbox](../_includes/faq/sandbox/copy-from-sandbox.md) %}
 
@@ -118,31 +86,11 @@ To do this, you will need a Sandbox version of the Toloka app. [Write to support
 
 {% include [faq-move-control-tasks](../_includes/faq/sandbox/move-control-tasks.md) %}
 
-{% cut "Why don't I see my task in the Sandbox?" %}
-
-Make sure that:
-
-1. The [pool](../../glossary.md#pool) is started.
-
-1. The Toloker is added as a trusted.
-
-1. The trusted user is registered in the sandbox as a Toloker.
-
-1. The trusted user didn't use social networks when registering.
-
-1. Your trusted user matches the [filters](../../glossary.md#filters) you set.
-
-{% endcut %}
+{% include [troubleshooting-dont-see-task](../_includes/troubleshooting/sandbox/dont-see-task.md) %}
 
 {% include [troubleshooting-cant-add-trusted-user](../_includes/troubleshooting/sandbox/cant-add-trusted-user.md) %}
 
-{% cut "What overlap should I set?" %}
-
-Overlap defines how many Tolokers complete the same pool task.
-
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
-
-{% endcut %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 

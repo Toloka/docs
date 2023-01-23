@@ -123,11 +123,7 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-{% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
-
-You can deny access to the pool if the Toloker's responses are [too fast](quick-answers.md), if they don't match the [majority vote](mvote.md), or if the Toloker makes too many mistakes in [control tasks](goldenset.md). Tasks completed by such Tolokers can be [given to other Tolokers](restore-task-overlap.md).
-
-{% endcut %}
+{% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
 
 ## What's next {#what_next}
 

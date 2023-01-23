@@ -292,11 +292,7 @@ Aggregation only includes accepted tasks.
 
 {% include [faq-confidence-difference](../_includes/faq/result-questions/confidence-difference.md) %}
 
-{% cut "How does the Dawid-Skene aggregation model work?" %}
-
-The Dawid-Skene aggregation model analyzes the Toloker responses and creates a confusion matrix for each Toloker. This lets us evaluate the statistical significance of the Toloker in the context of each assignment. [Learn more about the model](https://www.jstor.org/stable/2346806).
-
-{% endcut %}
+{% include [faq-how-dawid-skene-work](../_includes/faq/result-questions/how-dawid-skene-work.md) %}
 
 {% include [troubleshooting-dawid-skene-result](../_includes/troubleshooting/result-questions/dawid-skene-result.md) %}
 
@@ -304,10 +300,6 @@ The Dawid-Skene aggregation model analyzes the Toloker responses and creates a c
 
 {% include [troubleshooting-skill-unavailable](../_includes/troubleshooting/result-questions/skill-unavailable.md) %}
 
-{% cut "You can't aggregate by skill. When running via the API, I get the error code `ONLY_FOR_POOL_WITH_MIXER`. Why?" %}
-
-You need to use [smart mixing](distribute-tasks-by-pages.md#smart-mixing).
-
-{% endcut %}
+{% include [troubleshooting-cant-aggregate-by-skill](../_includes/troubleshooting/result-questions/cant-aggregate-by-skill.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -24,19 +24,9 @@ New tasks can be uploaded to an open or closed pool.
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "I created a project and a pool, but the Next button doesn't work or the preview shows a blank screen." %}
+{% include [troubleshooting-next-doesnt-work](../_includes/troubleshooting/project-settings/next-doesnt-work.md) %}
 
-Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
-
-{% endcut %}
-
-{% cut "What overlap should I set?" %}
-
-Overlap defines how many Tolokers complete the same pool task.
-
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
-
-{% endcut %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 

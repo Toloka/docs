@@ -241,153 +241,39 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
 
 {% include [faq-calendar](../_includes/faq/project-settings/calendar.md) %}
 
-{% cut "How do I enable loading audio files in preview mode?" %}
-
-You can't check loading of audio files in the preview mode, but you can do it in the sandbox if you do your task. To do this, register in the sandbox as a Toloker and add the Toloker username to your trusted list on the **Tolokers** page. For more information, see [this post](sandbox.md).
-
-{% endcut %}
+{% include [faq-loading-audio-files](../_includes/faq/project-settings/loading-audio-files.md) %}
 
 {% endcut %}
 
 {% cut "Setting up controls" %}
 
-{% cut "How do I add the text from an input variable to a checkbox label?" %}
+{% include [faq-add-text](../_includes/faq/project-settings/add-text.md) %}
 
-To pass a `label` in the input data, enter the input field name into the label.
+{% include [troubleshooting-all-checkboxes](../_includes/troubleshooting/project-settings/all-checkboxes.md) %}
 
-For example, if you have the `asd` input field with the string type, the component would look like: `{{field type="checkbox" name="like" label=asd hotkey="q"}}`.
+{% include [faq-link-not-required](../_includes/faq/project-settings/link-not-required.md) %}
 
-If you want to pass different label values in different tasks or the number of checkboxes may differ, use [concatenation](t-components/helpers.md#concat).
-
-{% endcut %}
-
-{% cut "I selected one checkbox, but all the checkboxes are selected." %}
-
-The names of the output fields must differ: each checkbox must have its own unique name. For more information about this component, see [here](t-components/checkboxes.md).
-
-{% endcut %}
-
-{% cut "How can I do it in JS so that if the checkbox is selected, the link is not required, but if the link is inserted, the checkbox is cleared?" %}
-
-1. See how this is implemented in the “[Mining business contacts](../tutorials/internet-search.md)” template.
-
-1. To solve the second problem, you can add another validation like this:
-
-    {% if locale == "en-com" %}
-
-    ```javascript0
-    if (solution.output_values.url && solution.output_values.check) {return {task_id:
-    this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
-    ```
-
-    {% endif %}
-
-{% endcut %}
-
-{% cut "How do I make tasks that have a varying number of response options and different options available?" %}
-
-You can do this using [concatenation](t-components/helpers.md#concat).
-
-See the sample projects that can help you build an interface:
-
-- [with checkboxes]({{ project-with-checkboxes }})
-
-- [with a dropdown list]({{ project-with-drop-down-list }})
-
-- [with radio buttons]({{ project-with-radiobutton }})
-
-If you pass an array of values to the input field, use commas to separate the array elements. A response option will be generated for each of them in the interface. Input/output data for the sample projects are provided in the comments at codepen.io.
-
-{% endcut %}
+{% include [faq-make-tasks](../_includes/faq/project-settings/make-tasks.md) %}
 
 {% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
 
 {% include [faq-checkbox-selected](../_includes/faq/project-settings/checkbox-selected.md) %}
 
-{% cut "How do I use different numbers of response options for different questions?" %}
-
-Use [concatenation](t-components/helpers.md#concat), for example:
-
-```html
-{{field type="checkbox" name=(concat "result." @index ) label=(concat "checkbox –
-                " @index) size="L"}}
-```
-
-{% endcut %}
+{% include [faq-different-numbers](../_includes/faq/project-settings/different-numbers.md) %}
 
 {% include [faq-deselect-radio](../_includes/faq/project-settings/deselect-radio.md) %}
 
 {% include [faq-assigment-validation](../_includes/faq/project-settings/assigment-validation.md) %}
 
-{% cut "How do I change the task background from the standard white color to a different color?" %}
+{% include [faq-change-background](../_includes/faq/project-settings/change-background.md) %}
 
-Use CSS to specify the color for the `.task` or `.task-suite` element. For example, to use a black background:
-
-```css
-.task-suite {
-    background-color: #000000;
-    }
-    .task {
-    background-color: #000000;
-    }
-```
-
-You can also assign a class to the interface block with the image and set the background for this block only.
-
-{% endcut %}
-
-{% cut "How do I use sliders as interface elements for selecting parameter values?" %}
-
-In the HTML code of the template, enter the following:
-
-{% if locale == "en-com" %}
-
-```html
-<input type=""range"" list=""rng"" class=""res"">
-```
-
-and include the following in onRender in your JS:
-
-```javascript
-onRender: function() {
-// Generated DOM element for the task (available via #getDOMElement())
-//Adding auxiliary variables
-var $root = $(this.getDOMElement());
-var _this = this;
-var solution = TolokaHandlebarsTask.prototype.getSolution.apply(this, arguments);
-
-$root.on('change', '.res', function(){
-var range_result = $(this).val()
-_this.setSolutionOutputValue('result', range_result);
-
-return solution;
-})
-}
-```
-
-{% endif %}
-
-{% endcut %}
+{% include [faq-sliders](../_includes/faq/project-settings/sliders.md) %}
 
 {% include [faq-expand-window](../_includes/faq/project-settings/expand-window.md) %}
 
-{% cut "Can I use my own JS to build an interface in Toloka?" %}
+{% include [faq-use-own-js](../_includes/faq/project-settings/use-own-js.md) %}
 
-You don't have to use our components for task interfaces. Feel free to create a custom design for your tasks. To do this, delete the library from the project template:
-
-- Click the “gear button” to open the settings.
-
-- Delete `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js`.
-
-See the [documentation](spec-advanced.md) for descriptions of the structure of classes and how they work.
-
-{% endcut %}
-
-{% cut "What do I do if the radio button attributes are displayed correctly in the preview, but disappear after saving?" %}
-
-If the tags or attributes disappear after you save the instructions (for example, `checked="true"`), it means that they are not supported. For the full list of tags that can be used in the instructions, see the [Guide](instruction.md#html-yes).
-
-{% endcut %}
+{% include [troubleshooting-radio-attr-disappear](../_includes/troubleshooting/project-settings/radio-attr-disappear.md) %}
 
 {% include [faq-implement-prettifier](../_includes/faq/project-settings/implement-prettifier.md) %}
 
@@ -403,19 +289,9 @@ If the tags or attributes disappear after you save the instructions (for example
 
 {% include [faq-use-input-data](../_includes/faq/project-settings/use-input-data.md) %}
 
-{% cut "How do I display formatted text from input data in the task?" %}
+{% include [faq-display-formatted-text](../_includes/faq/project-settings/display-formatted-text.md) %}
 
-Enclose the input field in triple curly brackets `{not_var{{input_field}}}`.
-
-More information about [using the component](t-components/html.md).
-
-{% endcut %}
-
-{% cut "How do I use a variable number of inputs in HTML to be determined by the Toloker?" %}
-
-To change the number of output fields dynamically, use the recommendations from [this page](t-components/helpers.md).
-
-{% endcut %}
+{% include [faq-variable-number](../_includes/faq/project-settings/variable-number.md) %}
 
 {% include [faq-display-text](../_includes/faq/project-settings/display-text.md) %}
 
@@ -423,13 +299,7 @@ To change the number of output fields dynamically, use the recommendations from 
 
 {% cut "Validation" %}
 
-{% cut "How do I use the Vue markup without the basic TolokaHadlebarsTask object?" %}
-
-Learn more about the template's JS extension [here](spec-advanced.md).
-
-To avoid conflict between the Vue markup and the Handlebars syntax, disable the "toloka-handlebars-templates" library and inherit from the Task/TaskSuite classes.
-
-{% endcut %}
+{% include [faq-vue-markup](../_includes/faq/project-settings/vue-markup.md) %}
 
 {% include [faq-setsolution](../_includes/faq/project-settings/setsolution.md) %}
 
@@ -447,35 +317,11 @@ To avoid conflict between the Vue markup and the Handlebars syntax, disable the 
 
 {% include [faq-prevent-adding-photos](../_includes/faq/project-settings/prevent-adding-photos.md) %}
 
-{% cut "How do I implement selection of 3 different areas in an image?" %}
+{% include [faq-different-areas](../_includes/faq/project-settings/different-areas.md) %}
 
-You can create a selection and drop-down list with category selection. See how it is implemented on [this page](t-components/image-annotation.md) (**Dropdown list** tab).
+{% include [faq-side-by-side](../_includes/faq/project-settings/side-by-side.md) %}
 
-{% endcut %}
-
-{% cut "In the “Side-by-side image comparison” template, where do I specify a proxy for the task interface to create a task with three image options?" %}
-
-The “Side-by-side image comparison” template uses a component rather than an HTML tag. This means that you should enclose your proxy in curly brackets like this [example](t-components/img.md): `{{img src=(proxy image)}}`.
-
-{% endcut %}
-
-{% cut "What should the Toloker do if there is no selectable object in the image in an area selection task?" %}
-
-There are four options:
-
-- [ Decompose the task](solution-architecture.md): First select images with the items you need, then select areas in them.
-
-- Select an arbitrary area in the image. For example, put a square in the upper-right corner.
-
-    Mention this in your instructions for reviewers.
-
-- Ask the Toloker to skip the task and report it in a personal message. Messages are reviewed by the requester. If the selectable object is missing, the task is deleted from the pool (by resetting the overlap).
-
-- Add the “No object” checkbox to the interface and make sure that your JS checks that either the object is selected or the checkbox is selected.
-
-    For control purposes, add information about the value of this checkbox to the task interface.
-
-{% endcut %}
+{% include [faq-no-selectable-object](../_includes/faq/project-settings/no-selectable-object.md) %}
 
 {% endcut %}
 

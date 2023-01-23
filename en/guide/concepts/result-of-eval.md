@@ -77,33 +77,15 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
 {% include [faq-send-back](../_includes/faq/result-questions/send-back.md) %}
 
-{% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
+{% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
 
-You can deny access to the pool if the Toloker's responses are [too fast](quick-answers.md), if they don't match the [majority vote](mvote.md), or if the Toloker makes too many mistakes in [control tasks](goldenset.md). Tasks completed by such Tolokers can be [given to other Tolokers](restore-task-overlap.md).
-
-{% endcut %}
-
-{% cut "What should I do if I want to accept a completed task but the pool is already archived or the Toloker wrote to me after the allowed time?" %}
-
-Simply [give the Toloker a separate reward](bonus.md) without changing the task status. You can't change the task status in the pool in this case.
-
-{% endcut %}
+{% include [troubleshooting-pool-archived](../_includes/troubleshooting/result-questions/pool-archived.md) %}
 
 {% include [troubleshooting-rejected-task](../_includes/troubleshooting/result-questions/rejected-task.md) %}
 
 {% include [faq-reject-part](../_includes/faq/result-questions/reject-part.md) %}
 
-{% cut "How can I notify the Toloker of changes in the instructions?" %}
-
-Add the notification to the project description (for example: “Attention! The instructions changed”) and send a message to all the people who completed your tasks. To do this:
-
-- Assign them a hidden skill, or use an existing [skill](nav-assign.md) linked to the pool.
-
-- Go to **Messages** and click {% if locale == "en-com" %}**Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**{% endif %}.
-
-- If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
-
-{% endcut %}
+{% include [faq-notify](../_includes/faq/result-questions/notify.md) %}
 
 {% include [faq-increase-rating](../_includes/faq/result-questions/increase-rating.md) %}
 
@@ -111,27 +93,11 @@ Add the notification to the project description (for example: “Attention! The 
 
 {% include [troubleshooting-low-rating-instructions](../_includes/troubleshooting/result-questions/low-rating-instructions.md) %}
 
-{% cut "Low rating for “Task interface usability”" %}
+{% include [troubleshooting-low-rating-interface](../_includes/troubleshooting/result-questions/low-rating-interface.md) %}
 
-Make the interface [more user-friendly](spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
+{% include [troubleshooting-low-rating-communication](../_includes/troubleshooting/result-questions/low-rating-communication.md) %}
 
-Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
-
-{% endcut %}
-
-{% cut "Low rating for “Communication with the requester”" %}
-
-Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
-
-If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
-
-{% endcut %}
-
-{% cut "Why do I get blank spaces inside my file?" %}
-
-When you upload a file with rows, double quotes indicate an area where you can use special characters (tabs or line breaks). Toloka merges everything in between the quotes into one row to make up one task. To use double quotes inside such an area, you need to escape them with another quote. [Read more here](pool_csv.md#string).
-
-{% endcut %}
+{% include [troubleshooting-blank-spaces](../_includes/troubleshooting/result-questions/blank-spaces.md) %}
 
 {% include [faq-empty-text-field](../_includes/faq/result-questions/empty-text-field.md) %}
 

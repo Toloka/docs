@@ -200,43 +200,15 @@ If these buttons don't work, make sure that all the main pools that the training
 
 {% include [faq-optional-parameters](../_includes/faq/adding-tasks-to-the-pool/optional-parameters.md) %}
 
-{% cut "Why do I have an infinite number of pages in the training pool?" %}
+{% include [troubleshooting-infinite-number](../_includes/troubleshooting/adding-tasks-to-the-pool/infinite-number.md) %}
 
-Tasks have infinite overlap in the training pool. As long as the training pool is open and the training is running, Tolokers can access the tasks. Learn more about [training pools](train.md).
-
-{% endcut %}
-
-{% cut "How do I insert a link in the GOLDEN field?" %}
-
-Text in the GOLDEN field must match the control text exactly.
-
-Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
-
-Check the links that you use. There are several ways to unify links:
-
-- Add requirements for the link format in your instructions and hints in your training pool.
-
-- Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
-
-{% endcut %}
+{% include [faq-link-golden-field](../_includes/faq/adding-tasks-to-the-pool/link-golden-field.md) %}
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
 {% include [faq-pause-accepting](../_includes/faq/adding-tasks-to-the-pool/pause-accepting.md) %}
 
-{% cut "How do I check that the Tolokers don't cheat during training?" %}
-
-Training helps Tolokers learn how to complete your task and figure out the instructions.
-
-Based on the training results, you can select the Tolokers who did well enough to be added to the main pool.
-
-However, the mere fact that a Toloker completes your training pool successfully doesn't guarantee that they will afterwards demonstrate high quality on your general tasks. Tolokers who show a high level of accuracy during the training could have obtained correct responses from others.
-
-Besides the training, be sure to add quality control rules and [control tasks](control.md) to your main pools. This way you can ensure the quality throughout the task performance process.
-
-If the task requires that the Tolokers send free-format responses or data files, use **non-automatic acceptance** to pay for tasks after they are reviewed.
-
-{% endcut %}
+{% include [faq-check-during-training](../_includes/faq/adding-tasks-to-the-pool/check-during-training.md) %}
 
 {% include [faq-distribute-tasks-training](../_includes/faq/adding-tasks-to-the-pool/distribute-tasks-training.md) %}
 
@@ -262,11 +234,7 @@ If the task requires that the Tolokers send free-format responses or data files,
 
 {% include [troubleshooting-training](../_includes/troubleshooting/users/training.md) %}
 
-{% cut "More Tolokers were trained than the training skill shows" %}
-
-The pool shows the total number of Tolokers that completed at least one assignment. A training skill can be lost over time if you set [repeated training](train.md) in the pool settings. This setting allows a Toloker to pass the training again after a certain period if the Toloker didn't complete any tasks in associated pools or if there was a large time gap between completing tasks (for example, because of a [ban](../../glossary.md#banning-tolokers)). The training skill displays the Tolokers who either recently completed training, or regularly complete your tasks so that the skill doesn't expire.
-
-{% endcut %}
+{% include [troubleshooting-more-tolokers-trained](../_includes/troubleshooting/adding-tasks-to-the-pool/more-tolokers-trained.md) %}
 
 {% include [faq-skill-expiration](../_includes/faq/adding-tasks-to-the-pool/skill-expiration.md) %}
 

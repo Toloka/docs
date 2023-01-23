@@ -155,11 +155,7 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Errors in column headers" %}
-
-If the [column headings](pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
-
-{% endcut %}
+{% include [troubleshooting-uploading-tasks-errors](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-tasks-errors.md) %}
 
 {% include [troubleshooting-marked-as-training](../_includes/troubleshooting/adding-tasks-to-the-pool/marked-as-training.md) %}
 
@@ -167,25 +163,11 @@ If the [column headings](pool_csv.md) are incorrect, the whole file is rejected.
 
 {% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
-{% cut "Why do I see a syntax error when I upload a task where a Toloker has to view an image and write feedback?" %}
-
-The error might occur if the expected input type is URL, but a string is received.
-
-There may be two reasons:
-
-- The input field has the "link" type.
-
-- The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
-
-{% endcut %}
+{% include [troubleshooting-syntax-error](../_includes/troubleshooting/adding-tasks-to-the-pool/syntax-error.md) %}
 
 {% include [faq-max-number-per-suite](../_includes/faq/adding-tasks-to-the-pool/max-number-per-suite.md) %}
 
-{% cut "I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?" %}
-
-Toloka will group the uploaded image links in the file into suites depending on the task distribution method you use. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
-
-{% endcut %}
+{% include [troubleshooting-photos-split-across-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/photos-split-across-pages.md) %}
 
 {% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 

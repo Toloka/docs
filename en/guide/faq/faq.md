@@ -186,11 +186,7 @@ Indeed, this rule is probably too strict. Even the most careful Toloker can make
 
 {% endcut %}
 
-{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a Toloker quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
-
-Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
-
-{% endcut %}
+{% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
 {% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
 
@@ -204,11 +200,7 @@ Then open your pools only to the Tolokers that have a certain skill: use [filter
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
-{% cut "If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?" %}
-
-If the Toloker already got paid for the tasks, the money can't be refunded to you.
-
-{% endcut %}
+{% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
 {% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
 
@@ -230,25 +222,7 @@ In the exam pool, you can create a skill reflecting the exam result and granting
 
 {% endcut %}
 
-{% cut "Can I get more details on the best practices for using captchas? For which projects is it better to use captchas and how often?" %}
-
-[Captcha](../concepts/captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and Tolokers don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
-
-The frequency of issuing captchas is configured in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
+{% include [faq-using-captсha](../_includes/faq/pool-setup/using-captсha.md) %}
 
 {% cut "I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?" %}
 
@@ -256,11 +230,7 @@ The percentage of correct responses is based on the total number of captchas pro
 
 {% endcut %}
 
-{% cut "My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?" %}
-
-All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
-
-{% endcut %}
+{% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
 {% cut "Have I understood correctly that if I use `set the the skill value = 1` with the `percentage of accepted responses >= 75` and `10 recent values to use`, for every 8 correctly completed tasks out of 10 the Toloker is given 1 skill point?" %}
 
@@ -280,11 +250,7 @@ No, they can't.
 
 {% endcut %}
 
-{% cut "I have two text versions that I want to show to my respondents: one version to half of the audience, and another version to the other half (like in A/B testing). Is this possible in Toloka, or do I need to create two separate projects?" %}
-
-If you pass texts to the input data, you can load 2 different tasks in the pool. In one task, pass Text 1 in the `INPUT: <input field name>` field, and in the other task, use this field to pass Text 2. But if the text is in the HTML block of the task template, you need to clone the project. To let a Toloker do only one task in your project, use the [Submitted responses](../concepts/submitted-answers.md) rule. You can assign a skill or ban the Toloker after they submit one response.
-
-{% endcut %}
+{% include [faq-two-text-versions](../_includes/faq/pool-setup/two-text-versions.md) %}
 
 {% cut "If I ban Tolokers from my project so that everyone can complete a maximum of one task, are the Tolokers notified of the ban?" %}
 
@@ -292,13 +258,7 @@ No, the Tolokers are unaware of the ban.
 
 {% endcut %}
 
-{% cut "What output format do I use for the review results to filter out mismatching Tolokers based on the “Majority vote”?" %}
-
-To perform actions with Tolokers (assign a skill or ban them) based on the majority vote, add a relevant [rule](../concepts/mvote.md) to the pool.
-
-Don't forget to enable **Keep task order** in the pool parameters. Majority vote is used in the projects with preset options (radio buttons or checkboxes). This rule won't apply to the text entry or file upload fields.
-
-{% endcut %}
+{% include [faq-output-format](../_includes/faq/pool-setup/output-format.md) %}
 
 {% cut "In the section about control questions, does "Number of control responses" mean the total number of responses to control questions (including incorrect responses) or the number of correct responses to my control questions?" %}
 
@@ -326,37 +286,17 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 ### Overlap {#overlap}
 
-{% cut "What overlap should I set?" %}
-
-Overlap defines how many Tolokers complete the same pool task.
-
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
-
-{% endcut %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
 {% include [faq-dynamic-overlap](../_includes/faq/pool-setup/dynamic-overlap.md) %}
 
-{% cut "How does counting work if I set `overlap = 3` in the pool and `response threshold = 3` in the majority vote?" %}
+{% include [faq-counting-work](../_includes/faq/pool-setup/counting-work.md) %}
 
-In this case, if you don't have 3 identical responses for your task (response threshold), no user would be considered a good or poor Toloker, because the system can't see which of the Tolokers made an error.
+{% include [faq-basic-overlap](../_includes/faq/pool-setup/basic-overlap.md) %}
 
-But if you set `response threshold = 2` with `overlap = 3`, then two users with the same responses are considered good Tolokers, but the third user, who gives a different response, is a poor Toloker.
-
-{% endcut %}
-
-{% cut "Can I do it like this: set a basic overlap of 2 users, then, if both Tolokers select the same response, close the pool, but if they give different responses, show the task to one more user?" %}
-
-Yes, you can do that. Set up [dynamic overlap](../concepts/dynamic-overlap.md) (incremental relabeling, IRL).
-
-{% endcut %}
-
-{% cut "Is there a cross-check feature for tasks?" %}
-
-You can use overlap to let multiple Tolokers do the same task. The overlap value is set up in the [pool settings](../concepts/pool-edit.md).
-
-{% endcut %}
+{% include [faq-cross-check](../_includes/faq/pool-setup/cross-check.md) %}
 
 {% include [troubleshooting-max-number](../_includes/troubleshooting/pool-setup/max-number.md) %}
 
@@ -388,11 +328,7 @@ You can use overlap to let multiple Tolokers do the same task. The overlap value
 
 {% include [faq-array-input-file](../_includes/faq/adding-tasks-to-the-pool/array-input-file.md) %}
 
-{% cut "How do I properly structure my file used for data upload if there is JSON data among the input?" %}
-
-All the values are written to the same column. Make sure to escape quotes. For more information about escaping quotes in JSON format, see the [Guide](../concepts/pool_csv.md#json).
-
-{% endcut %}
+{% include [faq-properly-structure-json](../_includes/faq/adding-tasks-to-the-pool/properly-structure-json.md) %}
 
 {% include [faq-missing-headers](../_includes/faq/adding-tasks-to-the-pool/missing-headers.md) %}
 
@@ -402,17 +338,7 @@ All the values are written to the same column. Make sure to escape quotes. For m
 
 {% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
-{% cut "How do I view the processing log?" %}
-
-To view the processing log, click **More on uploading errors**. The processing log is written in JSON format. Objects inside `result` match the line number of the uploaded file. Lines that were processed with an error have the status `"success": false`.
-
-{% note info %}
-
-To work with a large log conveniently, copy it to the text editor.
-
-{% endnote %}
-
-{% endcut %}
+{% include [faq-processing-log](../_includes/faq/adding-tasks-to-the-pool/processing-log.md) %}
 
 {% include [faq-two-versions-text](../_includes/faq/adding-tasks-to-the-pool/two-versions-text.md) %}
 
@@ -428,19 +354,7 @@ To work with a large log conveniently, copy it to the text editor.
 
 {% include [faq-particular-toloker-got-skill](../_includes/faq/adding-tasks-to-the-pool/particular-toloker-got-skill.md) %}
 
-{% cut "How do I insert a link in the GOLDEN field?" %}
-
-Text in the GOLDEN field must match the control text exactly.
-
-Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
-
-Check the links that you use. There are several ways to unify links:
-
-- Add requirements for the link format in your instructions and hints in your training pool.
-
-- Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
-
-{% endcut %}
+{% include [faq-link-golden-field](../_includes/faq/adding-tasks-to-the-pool/link-golden-field.md) %}
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
@@ -496,7 +410,7 @@ Check the links that you use. There are several ways to unify links:
 
 {% include [faq-empty-text-field](../_includes/faq/result-questions/empty-text-field.md) %}
 
-### Assignment review {#results_2}
+### Manual review {#results_2}
 
 {% include [faq-send-back](../_includes/faq/result-questions/send-back.md) %}
 

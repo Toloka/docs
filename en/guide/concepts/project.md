@@ -195,11 +195,7 @@ Main options:
 
 {% endcut %}
 
-{% cut "How do I implement selection of 3 different areas in an image? Select the name, image, and price in the product page screenshot." %}
-
-You can create a selection + drop-down list with category selection. See how to do this in the editor description ([Dropdown list](t-components/image-annotation.md) tab).
-
-{% endcut %}
+{% include [faq-different-areas](../_includes/faq/questions-about-templates/different-areas.md) %}
 
 {% include [faq-input-data-labeling-image](../_includes/faq/questions-about-templates/input-data-labeling-image.md) %}
 

@@ -291,24 +291,10 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-{% cut "What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?" %}
+{% include [faq-output-format](../_includes/faq/pool-setup/output-format.md) %}
 
-To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](mvote.md) to the pool.
+{% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
-Don't forget to enable **Keep task order** in the pool parameters. Majority vote is used in the projects with preset options (radio buttons or checkboxes). This rule won't apply to the text entry or file upload fields.
-
-{% endcut %}
-
-{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
-
-Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
-
-{% endcut %}
-
-{% cut "My task uses a form with multiple fields. When there is an overlap and “Majority vote” is used for quality control, is each field taken into account, or if one field mismatches the majority vote, are the task results considered incorrect?" %}
-
-All responses to the task are taken into account. If one response differs from the majority vote, the whole task is counted as mismatching the responses of other Tolokers.
-
-{% endcut %}
+{% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

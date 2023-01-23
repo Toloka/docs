@@ -36,17 +36,9 @@ You can change overlap after the pool is started. To do this, open the pool edit
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Can I do it like this: set a basic overlap of 2 users, then, if both Tolokers select the same response, close the pool, but if they give different responses, show the task to one more user?" %}
+{% include [faq-basic-overlap](../_includes/faq/pool-setup/basic-overlap.md) %}
 
-Yes, you can do that. Set up [dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL).
-
-{% endcut %}
-
-{% cut "Is there a cross-check feature for tasks?" %}
-
-You can use overlap to let multiple Tolokers do the same task. The overlap value is set up in the [pool settings](pool-edit.md).
-
-{% endcut %}
+{% include [faq-cross-check](../_includes/faq/pool-setup/cross-check.md) %}
 
 {% include [troubleshooting-max-number](../_includes/troubleshooting/pool-setup/max-number.md) %}
 
@@ -58,4 +50,4 @@ But if you set `response threshold = 2` with `overlap = 3`, then two users with 
 
 {% endcut %}
 
-{% include [contact-support](../_includes/contact-support.md) %}
+{% include [faq-counting-work](../_includes/faq/pool-setup/counting-work.md) %}

@@ -20,7 +20,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-empty-text-field](../_includes/faq/result-questions/empty-text-field.md) %}
 
-## Assignment review {#results_2}
+## Manual review {#results_2}
 
 {% include [faq-send-back](../_includes/faq/result-questions/send-back.md) %}
 

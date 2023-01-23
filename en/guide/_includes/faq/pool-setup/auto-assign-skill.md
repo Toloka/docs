@@ -10,7 +10,7 @@ You can do that using the [Control tasks](../../../../guide/concepts/goldenset.m
 
 {% cut "See the screenshot" %}
 
-![](../_images/troubleshooting/set-questionnaire-skill-student.png)
+![](../../../_images/troubleshooting/set-questionnaire-skill-student.png)
 
 {% endcut %}
 

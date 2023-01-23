@@ -36,11 +36,7 @@ In the section contents, select the stage where you encountered the problem and 
 
 {% include [troubleshooting-tags-disappear](../_includes/troubleshooting/project-settings/tags-disappear.md) %}
 
-{% cut "What do I do if the radio button attributes are displayed correctly in the preview, but disappear after saving?" %}
-
-If the tags or attributes disappear after you save the instructions (for example, `checked="true"`), it means that they are not supported. For the full list of tags that can be used in the instructions, see the [Guide](../concepts/instruction.md#html-yes).
-
-{% endcut %}
+{% include [troubleshooting-radio-attr-disappear](../_includes/troubleshooting/project-settings/radio-attr-disappear.md) %}
 
 ### Configuring the task interface {#concept_gss_fkp_smb}
 
@@ -52,17 +48,13 @@ If the tags or attributes disappear after you save the instructions (for example
 
 {% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
 
+{% include [troubleshooting-next-doesnt-work](../_includes/troubleshooting/project-settings/next-doesnt-work.md) %}
+
 {% include [faq-no-selectable-object](../_includes/faq/project-settings/no-selectable-object.md) %}
 
 ## Setting up a pool {#pool-settings}
 
-{% cut "I created a project and a pool, but the Next button doesn't work or the preview shows a blank screen." %}
-
-Toloka lets you know that something is wrong with the project. The blank screen often appears when there are errors in the [task interface](../../glossary.md#task-interface), including the JavaScript code. The **Next** button may be disabled if the output specification lacks some field or contains invalid values, or if, for example, you configured validation for a nonexistent field in JavaScript.
-
-{% endcut %}
-
-## Filters {#filters}
+### Filters {#filters}
 
 {% include [troubleshooting-cloned-pool](../_includes/troubleshooting/pool-setup/cloned-pool.md) %}
 
@@ -78,13 +70,7 @@ Toloka lets you know that something is wrong with the project. The blank screen 
 
 {% include [troubleshooting-exam-three-tasks](../_includes/troubleshooting/pool-setup/exam-three-tasks.md) %}
 
-{% cut "I want to create training and exam pools to match the entered text against a sample, and sometimes the matching fails. How do I implement this?" %}
-
-For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
-
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
-
-{% endcut %}
+{% include [faq-match-entered-text](../_includes/faq/pool-setup/match-entered-text.md) %}
 
 {% include [troubleshooting-speed-dropped](../_includes/troubleshooting/pool-setup/speed-dropped.md) %}
 
@@ -138,7 +124,7 @@ Another option for selecting Tolokers for a project of this type is assignment r
 
 {% include [troubleshooting-blank-spaces](../_includes/troubleshooting/result-questions/blank-spaces.md) %}
 
-### Assignment review {#results_2}
+### Manual review {#results_2}
 
 {% include [troubleshooting-pool-archived](../_includes/troubleshooting/result-questions/pool-archived.md) %}
 

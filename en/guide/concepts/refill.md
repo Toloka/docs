@@ -224,9 +224,9 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
 ## Troubleshooting {#troubleshooting}
 
-[Get closing documents and invoices](../troubleshooting/support.md#feedback_g3b_vj3_qjb)
+[Get closing documents and invoices](../troubleshooting/support.md)
 
-[Refund money transferred to the Toloka account](../troubleshooting/support.md#feedback_khw_wc3_qjb)
+[Refund money transferred to the Toloka account](../troubleshooting/support.md)
 
 If the money wasn't credited to the account within the specified period:
 

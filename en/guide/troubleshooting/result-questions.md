@@ -18,7 +18,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [troubleshooting-blank-spaces](../_includes/troubleshooting/result-questions/blank-spaces.md) %}
 
-## Assignment review {#results_2}
+## Manual review {#results_2}
 
 {% include [troubleshooting-pool-archived](../_includes/troubleshooting/result-questions/pool-archived.md) %}
 
