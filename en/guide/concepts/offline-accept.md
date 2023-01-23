@@ -2,7 +2,7 @@
 
 Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
 
-You can find the [Review methods](accept.md#acception) in the {% if locale == "en-com" %}**Working with results → Reviewing Tolokers' responses**{% endif %} section.
+You can find the [Review methods](accept.md#acception) in the **Working with results → Reviewing Tolokers' responses** section.
 
 ## How does it work? {#how-it-works}
 
@@ -84,9 +84,9 @@ Leave the option in the **No** position, and the tasks will be automatically acc
 
 Take the following steps before starting the pool:
 
-1. Choose the {% if locale == "en-com" %}**Review task responses manually**{% endif %} parameter on the pool page in edit mode.
+1. Choose the **Review task responses manually** parameter on the pool page in edit mode.
 
-1. Specify the {% if locale == "en-com" %}**Review period in days**{% endif %} — the number of days for the [review](accept.md) (from 1 to 21 days from the task completion date). The Toloker will see the deadline in the task information on the main Toloka page.
+1. Specify the **Review period in days** — the number of days for the [review](accept.md) (from 1 to 21 days from the task completion date). The Toloker will see the deadline in the task information on the main Toloka page.
 
     {% note info %}
 
@@ -112,7 +112,7 @@ As the Tolokers start completing the tasks, you will start receiving responses.
 
 If responses are rejected, Toloka can automatically send the task to other Tolokers. To set it:
 
-1. Add the {% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} quality control rule to the pool.
+1. Add the **Recompletion of rejected assignments** quality control rule to the pool.
 
 1. Set the following values in the rule block:
 

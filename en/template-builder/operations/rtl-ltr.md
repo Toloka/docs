@@ -18,7 +18,6 @@ The direction of writing is set in the `mode` property:
 
 - `rtl` — right to left.
 
-
 The setting is available in the following blocks: `view.text`, `field.button-radio-group`, `field.text`, and `field.textarea`.
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/tq6fCNm_3ttFBW)

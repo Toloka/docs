@@ -34,22 +34,22 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 #|
 || Field  | Overview||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**task suites skipped in a row**{% endif %} — The number of task suites skipped in a row.||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+- **task suites skipped in a row** — The number of task suites skipped in a row.||
+||**then** | Action to perform for the condition:
 
-- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+- **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
 
-- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
+- **accept user's answers** — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).||
+- **assign skill value** — Assign a fixed value to the [skill](nav.md).||
 |#
 
 ## Rule example {#examples}

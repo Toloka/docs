@@ -1,8 +1,8 @@
-# {% if locale == "en-com" %}Пополнение счета{% endif %}{% if locale == "ru-ru" %}Для нерезидентов России{% endif %}
+# Для нерезидентов России
 
 {% include [deprecate](../../_includes/deprecate.md) %}
 
-{% if locale == "ru-ru" %}Нерезиденты России могут пополнять счет в Толоке в долларах США. Минимальная сумма пополнения — 1 доллар.{% endif %}
+Нерезиденты России могут пополнять счет в Толоке в долларах США. Минимальная сумма пополнения — 1 доллар.
 
 ## Способы пополнения {#method}
 
@@ -12,11 +12,9 @@
 
 Платеж зачисляется в течение 15 минут.
 
-Если при [регистрации](access.md) в Толоке вы выбрали {% if locale == "ru-ru" %}**Тип профиля → Юридическое лицо**{% endif %}{% if locale == "en-com" %}**Profile type → Legal entity**{% endif %}, то банковская карта должна быть корпоративной.
+Если при [регистрации](access.md) в Толоке вы выбрали **Тип профиля → Юридическое лицо**, то банковская карта должна быть корпоративной.
 
 {% cut "Список стран, в которых доступен перевод банковской картой" %}
-
-{% if locale == "ru-ru" %}
 
 - Россия
 - Украина
@@ -91,83 +89,6 @@
 - Эстония
 - Южная Корея
 
-{% endif %}{% if locale == "en-com" %}
-
-- Russia
-- Ukraine
-- Belarus
-- Kazakhstan
-- Uzbekistan
-- Turkey
-- Åland Islands
-- Albania
-- Andorra
-- Armenia
-- Austria
-- Azerbaijan
-- Belgium
-- Bosnia and Herzegovina
-- Bulgaria
-- Canada
-- China
-- Croatia
-- Cyprus
-- Czech Republic
-- Denmark
-- Estonia
-- Faroe Islands
-- Finland
-- France
-- Georgia
-- Germany
-- Gibraltar
-- Greece
-- Guernsey
-- Hong Kong
-- Hungary
-- Iceland
-- Ireland
-- Isle of Man
-- Israel
-- Italy
-- Jersey
-- Kyrgyzstan
-- Latvia
-- Liechtenstein
-- Lithuania
-- Luxembourg
-- Macedonia
-- Malaysia
-- Malta
-- Moldova
-- Monaco
-- Montenegro
-- Netherlands
-- Norway
-- Poland
-- Portugal
-- Romania
-- San Marino
-- Serbia
-- Slovakia
-- Slovenia
-- South Korea
-- Spain
-- Svalbard and Jan Mayen
-- Sweden
-- Switzerland
-- Taiwan
-- Tajikistan
-- Thailand
-- Turkmenistan
-- United Arab Emirates
-- United Kingdom
-- USA
-- Vatican City State
-- Vietnam
-
-{% endif %}
-
 {% endcut %}
 
 #### Банковский перевод
@@ -206,9 +127,9 @@
 
 ## Пошаговая инструкция {#step-by-step}
 
-1. На странице [Профиль]({{ profile }}) нажмите кнопку {% if locale == "ru-ru" %}**Пополнить счет**{% endif %}{% if locale == "en-com" %}**Top up account**{% endif %}.
+1. На странице [Профиль]({{ profile }}) нажмите кнопку **Пополнить счет**.
 
-1. Если вы пополняете счет первый раз, то откроется страница {% if locale == "ru-ru" %}**Подключение к биллинговой системе**{% endif %}{% if locale == "en-com" %}**Connect to billing system**{% endif %}. Выполните следующие шаги:
+1. Если вы пополняете счет первый раз, то откроется страница **Подключение к биллинговой системе**. Выполните следующие шаги:
 
     1. Заполните ваши данные.
 
@@ -218,7 +139,7 @@
 
         {% endnote %}
 
-    1. Нажмите кнопку {% if locale == "ru-ru" %}**Подключиться**{% endif %}{% if locale == "en-com" %}**Connect**{% endif %}.
+    1. Нажмите кнопку **Подключиться**.
 
 1. Введите сумму перевода.
 
@@ -226,9 +147,9 @@
 
     Максимальная сумма пополнения с банковской карты — 3500 долларов.
 
-1. Выберите способ оплаты: {% if locale == "ru-ru" %}**Банковской картой**{% endif %}{% if locale == "en-com" %}**Bank card**{% endif %} или {% if locale == "ru-ru" %}**Банковский перевод или Paypal**{% endif %}{% if locale == "en-com" %}**Bank transfer or Paypal**{% endif %}.
+1. Выберите способ оплаты: **Банковской картой** или **Банковский перевод или Paypal**.
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Пополнить**{% endif %}{% if locale == "en-com" %}**Top up**{% endif %}.
+1. Нажмите кнопку **Пополнить**.
 
     {% list tabs %}
 
@@ -238,13 +159,13 @@
 
           {% note info %}
 
-          Чтобы каждый раз не вводить данные карты, включите опцию {% if locale == "ru-ru" %}**Запомнить карту для следующих заказов**{% endif %}{% if locale == "en-com" %}**Save card for future payments**{% endif %}.
+          Чтобы каждый раз не вводить данные карты, включите опцию **Запомнить карту для следующих заказов**.
 
           {% endnote %}
 
-      1. Нажмите кнопку {% if locale == "ru-ru" %}**Оплатить**{% endif %}{% if locale == "en-com" %}**Pay**{% endif %}.
+      1. Нажмите кнопку **Оплатить**.
 
-      1. Отслеживайте поступление денег на счет в Толоке на странице [Профиль]({{ profile }}) (вкладка {% if locale == "ru-ru" %}**История поступлений**{% endif %}{% if locale == "en-com" %}**Transactions history**{% endif %}).
+      1. Отслеживайте поступление денег на счет в Толоке на странице [Профиль]({{ profile }}) (вкладка **История поступлений**).
 
     - Банковский счет/PayPal
 
@@ -264,21 +185,21 @@
 
             - карточка предприятия с реквизитами и контактной информацией.
 
-      1. Нажмите кнопку {% if locale == "ru-ru" %}**Выбрать**{% endif %}{% if locale == "en-com" %}**Select**{% endif %}.
+      1. Нажмите кнопку **Выбрать**.
 
       1. Проверьте введенные данные.
 
-      Чтобы вернуться к выбору способа оплаты и изменению данных плательщика, нажмите {% if locale == "ru-ru" %}**Изменить способ оплаты или плательщика**{% endif %}{% if locale == "en-com" %}**Change payer or payment method**{% endif %}.
+      Чтобы вернуться к выбору способа оплаты и изменению данных плательщика, нажмите **Изменить способ оплаты или плательщика**.
 
-      1. Нажмите кнопку {% if locale == "ru-ru" %}**Выставить счет**{% endif %}{% if locale == "en-com" %}**Create a billing invoice**{% endif %}.
+      1. Нажмите кнопку **Выставить счет**.
 
-          Если вы выбрали {% if locale == "ru-ru" %}**Способ оплаты → Банк для физических лиц, доллары (нерезиденты, Швейцария)**{% endif %}{% if locale == "en-com" %}**Payment method → Bank deposit in US dollars for non-resident individuals (Switzerland)**{% endif %}, получите счет с реквизитами для оплаты.
+          Если вы выбрали **Способ оплаты → Банк для физических лиц, доллары (нерезиденты, Швейцария)**, получите счет с реквизитами для оплаты.
 
-      1. Нажмите кнопку {% if locale == "ru-ru" %}**Оплатить**{% endif %}{% if locale == "en-com" %}**Pay**{% endif %}.
+      1. Нажмите кнопку **Оплатить**.
 
-          Если вы выбрали {% if locale == "ru-ru" %}**Способ оплаты → PayPal**{% endif %}{% if locale == "en-com" %}**Payment method → PayPal**{% endif %}, вы будете перенаправлены на сайт платежной системы для совершения платежа.
+          Если вы выбрали **Способ оплаты → PayPal**, вы будете перенаправлены на сайт платежной системы для совершения платежа.
 
-          Если вы выбрали {% if locale == "ru-ru" %}**Способ оплаты → Банковская карта (для нерезидентов Швейцарии) — доллары**{% endif %}{% if locale == "en-com" %}**Payment method → Banking card in dollars — non residents Switzerland) — US dollars**{% endif %}, введите данные банковской карты и завершите платеж. Деньги будут сконвертированы по курсу вашего банка, если валюта карты не доллары.
+          Если вы выбрали **Способ оплаты → Банковская карта (для нерезидентов Швейцарии) — доллары**, введите данные банковской карты и завершите платеж. Деньги будут сконвертированы по курсу вашего банка, если валюта карты не доллары.
 
           {% note info %}
 
@@ -288,7 +209,7 @@
 
       1. Отслеживайте поступление денег на счет:
 
-          - В Толоке на странице [Профиль]({{ profile }}) (вкладка {% if locale == "ru-ru" %}**История поступлений**{% endif %}{% if locale == "en-com" %}**Transactions history**{% endif %}).
+          - В Толоке на странице [Профиль]({{ profile }}) (вкладка **История поступлений**).
 
           - В Яндекс Балансе на странице [Счета]({{ invoices }}).
 

@@ -18,7 +18,6 @@ To learn about other Toloka solutions for surveys, see the tutorials:
 
 The comparison of all the three kinds of the survey presets is provided in the [Overview](questionnaire-overview.md) section.
 
-
 {% endnote %}
 
 ## Prerequisites {#prerequisites}
@@ -64,7 +63,6 @@ Another way to choose a preset is to do the following:
     [![Social science research](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png)
 
 1. Click **Choose solution** in the pop-up tab.
-
 
 ## Create a project {#project}
 
@@ -142,7 +140,7 @@ Responses are stored on Quatrics. Go there to track the progress of data collect
 
 - If you need additional quality control, add attention checks and forced responses directly in your Qualtrics survey.
 
-- Check the {% if locale == "en-com" %}**Messages**{% endif %} tab regularly to get Tolokers’ reports on problems with your survey.
+- Check the **Messages** tab regularly to get Tolokers’ reports on problems with your survey.
 
 ## See also {#seealso}
 

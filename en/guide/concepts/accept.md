@@ -22,13 +22,13 @@ Note that you can't change the task status if the task pool was [archived](pool-
 
 To accept or reject one task:
 
-1. Click the {% if locale == "en-com" %}**Review assignments**{% endif %} button on the pool page.
+1. Click the **Review assignments** button on the pool page.
 
 1. Choose an assignment.
 
-    If responses include files uploaded by the Tolokers, click the {% if locale == "en-com" %}**Actions → Download attachments**{% endif %} button to download them. To download all files from submitted responses in a ZIP archive, click {% if locale == "en-com" %}**Download results → Download attachments**{% endif %} on the assignments review page.
+    If responses include files uploaded by the Tolokers, click the **Actions → Download attachments** button to download them. To download all files from submitted responses in a ZIP archive, click **Download results → Download attachments** on the assignments review page.
 
-1. Check the responses, click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment (specify the reason).
+1. Check the responses, click **Accept** or **Decline**. For rejected responses, enter a comment (specify the reason).
 
 {% endcut %}
 
@@ -46,23 +46,23 @@ Example 2: The task where you need to download files attached by the Toloker (fo
 
 To accept or reject responses:
 
-1. Click the {% if locale == "en-com" %}**Review assignments**{% endif %} button on the pool page.
+1. Click the **Review assignments** button on the pool page.
 
-1. To download responses that you didn't review yet: on the pool page, click {% if locale == "en-com" %}**Download results**{% endif %}. In the window that opens:
+1. To download responses that you didn't review yet: on the pool page, click **Download results**. In the window that opens:
 
-    1. In {% if locale == "en-com" %}**Status**{% endif %} leave only the {% if locale == "en-com" %}**Submitted**{% endif %} option enabled.
+    1. In **Status** leave only the **Submitted** option enabled.
 
-    1. In {% if locale == "en-com" %}**Columns**{% endif %} leave only the {% if locale == "en-com" %}**assignment ID**{% endif %} option enabled.
+    1. In **Columns** leave only the **assignment ID** option enabled.
 
-    1. Disable the {% if locale == "en-com" %}**Separate assignments with empty row**{% endif %} option.
+    1. Disable the **Separate assignments with empty row** option.
 
         ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
-    1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
+    1. Click **Download results**.
 
 1. If your task requires Tolokers to submit photos, videos or audio files, download them for review in an archive.
 
-    Click {% if locale == "en-com" %}**Download results → Download attachments**{% endif %}.
+    Click **Download results → Download attachments**.
 
     {% note info %}
 

@@ -105,7 +105,6 @@ getTemplateData: function() {
     let data = TolokaHandlebarsTask.prototype.getTemplateData.call(this),
         userAgent = navigator.userAgent || navigator.vendor || window.opera;
 
-
     if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
         data.ios = true;
     }

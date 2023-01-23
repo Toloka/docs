@@ -2,21 +2,17 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a checkbox in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.checkbox.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a checkbox in [Template Builder](../../../template-builder/reference/field.checkbox.md).
 
 {% endnote %}
 
 To insert a checkbox in a task, use the `{{field type="checkbox" name="<output field> name"}}` component. For example, a set of three checkboxes:
-
-{% if locale == "en-com" %}
 
 ```plaintext
 {{field type="checkbox" name="red" label="red" hotkey="1"}}
 {{field type="checkbox" name="green" label="green" hotkey="2"}}
 {{field type="checkbox" name="yellow" label="yellow" hotkey="3"}}
 ```
-
-{% endif %}
 
 Add a field of `boolean` type to the [output data description](../incoming.md). Example:
 

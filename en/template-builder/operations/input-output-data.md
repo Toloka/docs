@@ -73,17 +73,13 @@ To display the value from the city property in the interface, specify the path t
 }
 ```
 
-
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/-SMvyQ2u3ttBUC)
-
 
 ## Writing JSON data {#write-json}
 
 The output data is written similarly. If you enter the path separated by dots, the field with the output data will have the object type in the specification.
 
-
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/RvwlJq5B3ttBYv)
-
 
 ## Reading data with the "array" type {#read-array}
 
@@ -107,17 +103,13 @@ You can reference a specific array element like this:
 }
 ```
 
-
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/V44snIfa3ttBb2)
-
 
 If the array length is unknown or very large, you can get all the array values using the [helper.transform](../reference/helper.transform.md) component.
 
 For example, you can convert an array of image links to an array of [view.image](../reference/view.image.md) components to display them in the interface.
 
-
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/V44snIfa3ttBb2)
-
 
 ## Writing the array data {#write-array}
 
@@ -128,7 +120,6 @@ Similarly to reading elements from an array, you can also write the results to a
   "path": "images.0"
 }
 ```
-
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/SHklDL8H3ttBg5)
 

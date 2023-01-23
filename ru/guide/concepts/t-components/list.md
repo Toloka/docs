@@ -4,13 +4,11 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать выпадающий список в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.select.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.select.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать выпадающий список в [Конструкторе шаблонов](../../../template-builder/reference/field.select.md).
 
 {% endnote %}
 
 Чтобы добавить в задание выпадающий список, используйте компонент `{{#field type="select" name="<название выходного поля>"}}... {{/field}}`. Элементы выпадающего списка создаются с помощью вложенного выражения ``not_var{{select_item}}``. Например:
-
-{% if locale == "ru-ru" %}
 
 ```plaintext
 {{#field type="select" name="colour" placeholder="Выберите цвет" width="200px"}}
@@ -18,16 +16,6 @@
   {{select_item value="green" text="Зелёный"}}
 {{/field}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```plaintext
-{{#field type="select" name="colour" placeholder="Choose a color" width="200px"}}
-  {{select_item value="red" text="Red"}}
-  {{select_item value="green" text="Green"}} {{/field}}
-```
-
-{% endif %}
 
 В описании [выходных данных](../../../glossary.md#input-output-data) добавьте поле с типом `string`:
 

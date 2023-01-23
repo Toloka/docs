@@ -85,7 +85,6 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
           1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../_images/settings.svg) in the **Task interface** block on the project page).
 
           1. In the **html** block, replace the current code with the following:
-              
 
               ```plaintext
               <!-- editor for selecting objects that lets you add an area in advance -->
@@ -96,11 +95,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
               {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
               ```
 
-              
-
           1. In the **css** block, replace the code with the following:
-
-              
 
               ```css
               /* hide the button for polygon selection */
@@ -113,8 +108,6 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
                   height: max-content;
               }
               ```
-
-             
 
       1. Configure the **Data specification** section:
 
@@ -186,16 +179,12 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     **Instructions:**
 
-    
-
     ```plaintext
     Look at the image and answer the question: **Are all traffic signs outlined correctly?**
     If there are, click **Yes**.
     If there isn't, click **No**.
     For example, road signs are outlined correctly, so the correct answer is **Yes**.
     ```
-
-    
 
     {% note tip %}
 

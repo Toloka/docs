@@ -38,7 +38,7 @@
 
     - Конструктор шаблонов
 
-      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/EMVKGWZ73tvgCZ){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/-ratdOH63ttEa4){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+      1. Воспользуйтесь [готовым кодом](https://ya.cc/t/EMVKGWZ73tvgCZ) для этого проекта, где уже настроена валидация и внешний вид задания.
 
           Исполнитель не сможет отправить задание, если:
 
@@ -58,7 +58,6 @@
           - Редактор HTML/CSS/JS
 
       1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
-          {% if locale == "ru-ru" %}
 
           ```html
           {{img src=image height="400px"}}
@@ -72,23 +71,6 @@
           {{field type="radio" name="result" value="Yes" label="Да"}}
           {{field type="radio" name="result" value="No" label="Нет"}}
           ```
-
-          {% endif %}{% if locale == "en-com" %}
-
-          ```html
-          {{img src=image height="400px"}}
-          {{iframe src= found_link height="600px"}}
-
-          <p>Check that the uploaded image matches the product in the store.</p>
-          {{button label="Check the product"  href=found_link action=true}}
-
-          <p>Are <b>these shoes</b> similar to each other?</p>
-          <p>The shoes must be similar in color, material, length, and style.</p>
-          {{field type="radio" name="result" value="Yes" label="Yes"}}
-          {{field type="radio" name="result" value="No" label="No"}}
-          ```
-
-          {% endif %}
 
       1. Блок **JS** оставьте без изменений.
 
@@ -149,7 +131,7 @@
 
           Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) **Предпросмотр задания**, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -165,7 +147,7 @@
 
 1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#instructions).
 
-    1. **Текст инструкции:**{% if locale == "ru-ru" %}
+    1. **Текст инструкции:**
 
     ```plaintext
     Посмотрите на картинки, на которых изображены две пары обуви, и решите, похожи они или нет.
@@ -173,17 +155,6 @@
     Обувь считается похожей, если она имеет похожий цвет, материал, длину и стиль.
     Если вы не видите пару обуви ни на одной из фотографий, нажмите **Да**.
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```plaintext
-    Take a look at the pictures that show two pairs of shoes. Decide whether they look similar or not.
-
-    Shoes are considered similar if they have a similar color, fabric, length, and style.
-    If you don't see a pair of shoes in any of the pictures, click **Yes**.
-    ```
-
-    {% endif %}
 
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 

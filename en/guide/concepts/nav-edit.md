@@ -14,7 +14,7 @@ You can both edit the skill itself and change the skill values for a specific To
 
 1. Enter the new skill value.
 
-1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+1. Click **Save**.
 
 ## Editing the skill parameters {#reward-edit}
 

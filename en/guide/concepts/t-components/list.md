@@ -2,21 +2,17 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a drop-down list in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.select.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a drop-down list in [Template Builder](../../../template-builder/reference/field.select.md).
 
 {% endnote %}
 
 To add a dropdown list to the task, use `{{#field type="select" name="<output field name>"}}... {{/field}}`. The entries in the dropdown list are created using the nested expression ``not_var{{select_item}}``. Example:
-
-{% if locale == "en-com" %}
 
 ```plaintext
 {{#field type="select" name="colour" placeholder="Choose a color" width="200px"}}
 {{select_item value="red" text="Red"}}
 {{select_item value="green" text="Green"}} {{/field}}
 ```
-
-{% endif %}
 
 Add a `string` field to the [output data description](../../../glossary.md#input-output-data).
 

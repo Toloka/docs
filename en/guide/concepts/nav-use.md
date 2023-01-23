@@ -30,19 +30,19 @@ To select Tolokers by skill and give them [rewards](../../glossary.md#reward):
 
     1. Specify the skill and the required skill value.
 
-1. To credit rewards to one Toloker, click the link to their ID in the {% if locale == "en-com" %}**Toloker ID**{% endif %} field.
+1. To credit rewards to one Toloker, click the link to their ID in the **Toloker ID** field.
 
-    On the page that opens, click {% if locale == "en-com" %}**Actions → Issue bonus**{% endif %}.
+    On the page that opens, click **Actions → Issue bonus**.
 
-    To credit rewards to a group of Tolokers click {% if locale == "en-com" %}**Issue bonus**{% endif %}.
+    To credit rewards to a group of Tolokers click **Issue bonus**.
 
-1. Fill in the fields in the {% if locale == "en-com" %}**Issue bonus**{% endif %} window that appears:
+1. Fill in the fields in the **Issue bonus** window that appears:
 
-    - {% if locale == "en-com" %}**Bonus per user**{% endif %} in dollars.
+    - **Bonus per user** in dollars.
 
-    - {% if locale == "en-com" %}**Topic**{% endif %} and {% if locale == "en-com" %}**Message**{% endif %} for Tolokers. Specify the projects and accomplishments the reward was granted for. To send messages in different languages, use the button for switching languages.
+    - **Topic** and **Message** for Tolokers. Specify the projects and accomplishments the reward was granted for. To send messages in different languages, use the button for switching languages.
 
-1. Click {% if locale == "en-com" %}**Grant**{% endif %}.
+1. Click **Grant**.
 
     Before doing this, check the number of people who will receive the reward, and the total amount.
 
@@ -56,9 +56,9 @@ To select Tolokers by skill and give them [rewards](../../glossary.md#reward):
 
 To select Tolokers for [sending messages](qa-assign.md) about changes in the project or new tasks:
 
-1. Go to the {% if locale == "en-com" %}**Messages**{% endif %} page.
+1. Go to the **Messages** page.
 
-1. Click {% if locale == "en-com" %}**Compose → To users group → Add filter → Choose skill**{% endif %}.
+1. Click **Compose → To users group → Add filter → Choose skill**.
 
 1. Enter the skill name.
 

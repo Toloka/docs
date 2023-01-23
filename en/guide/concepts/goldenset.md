@@ -30,41 +30,41 @@ The **If** and **then** fields in this rule are mandatory. If you don't fill in 
 
 #|
 || Field | Overview ||
-||{% if locale == "en-com" %}**Recent control and training task responses to use**{% endif %} | The number of the Toloker's last responses to control tasks.
+||**Recent control and training task responses to use** | The number of the Toloker's last responses to control tasks.
 
 If this field is not filled in, the calculation includes only control task responses in the pool to which the rule applies.
 
 If the field is filled in, the corresponding number of control task responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
 [Learn more](remember-values.md) about how this field works.||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed control and [training](../../glossary.md#training-task) tasks.
+- **number of responses** — The number of completed control and [training](../../glossary.md#training-task) tasks.
 
-- {% if locale == "en-com" %}**correct responses (%)**{% endif %} — The percentage of correct responses in training and control tasks (from 0 to 100).
+- **correct responses (%)** — The percentage of correct responses in training and control tasks (from 0 to 100).
 
-- {% if locale == "en-com" %}**incorrect responses (%)**{% endif %} — The percentage of incorrect responses in training and control tasks (from 0 to 100).
+- **incorrect responses (%)** — The percentage of incorrect responses in training and control tasks (from 0 to 100).
 
-- {% if locale == "en-com" %}**number of control responses**{% endif %} — The number of completed control tasks.
+- **number of control responses** — The number of completed control tasks.
 
-- {% if locale == "en-com" %}**correct control responses (%)**{% endif %} — The percentage of correct responses in control tasks (from 0 to 100).
+- **correct control responses (%)** — The percentage of correct responses in control tasks (from 0 to 100).
 
-- {% if locale == "en-com" %}**incorrect control responses (%)**{% endif %} — The percentage of incorrect responses in control tasks (from 0 to 100).
+- **incorrect control responses (%)** — The percentage of incorrect responses in control tasks (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+||**then** | Action to perform for the condition:
 
-- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in control tasks as a skill value.
+- **assign skill from the field** — Save the percentage of the Toloker's correct responses in control tasks as a skill value.
 
-- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the Toloker's [skill](nav.md).
+- **assign skill value** — Assign a fixed value to the Toloker's [skill](nav.md).
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
+- **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+- **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
 |#
@@ -159,7 +159,7 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 
   ![](../_images/control-rules/control-tasks/qcr-control_example-2.png =700x)
 
-  This rule will never take effect because the number of responses counted ({% if locale == "en-com" %}**Recent control and training task responses to use**{% endif %}) is less than the number of responses in the rule ({% if locale == "en-com" %}**number of control responses**{% endif %}).
+  This rule will never take effect because the number of responses counted (**Recent control and training task responses to use**) is less than the number of responses in the rule (**number of control responses**).
 
 {% endlist %}
 

@@ -588,7 +588,6 @@ This is a more complex example that compares the video with the results of a sea
 
     {% endcut %}
 
-
     [![](../_images/buttons/view-example.svg)](https://ya.cc/t/rKjAgNBL3ttE8F)
 
   - Compare audio tracks
@@ -613,7 +612,6 @@ This is a more complex example that compares the video with the results of a sea
     [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VXfz_Amv3ttEB6)
 
   {% endlist %}
-
 
 ## See also {#see-also}
 

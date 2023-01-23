@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a text input field in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.textarea.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a text input field in [Template Builder](../../../template-builder/reference/field.textarea.md).
 
 {% endnote %}
 

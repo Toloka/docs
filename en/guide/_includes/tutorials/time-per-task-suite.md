@@ -1,1 +1,1 @@
-At the {% if locale == "en-com" %}**Add optional pool settings**{% endif %} step, specify the {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
+At the **Add optional pool settings** step, specify the **Time per task suite, sec**.

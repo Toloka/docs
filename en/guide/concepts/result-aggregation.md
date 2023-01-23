@@ -12,7 +12,7 @@ If you run the [pool](../../glossary.md#pool) with the manual review, make sure 
 
 1. Open the [pool](pool-main.md).
 
-1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the {% if locale == "en-com" %}**Download results**{% endif %} button.
+1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the **Download results** button.
 
 1. Choose the aggregation method:
 
@@ -25,7 +25,7 @@ To receive notifications and emails when results aggregation is completed, set u
 
 1. Log in to your account.
 
-1. Go to {% if locale == "en-com" %}**Profile → Notifications → Pool or aggregation completed**{% endif %}
+1. Go to **Profile → Notifications → Pool or aggregation completed**
 
 1. Choose the notification method:
 
@@ -327,7 +327,7 @@ The method doesn't guarantee that original Toloker responses will be used for ag
 
 {% cut "Where do I see the aggregation progress?" %}
 
-The pool page contains the {% if locale == "en-com" %}**List of Operations**{% endif %} button.
+The pool page contains the **List of Operations** button.
 
 {% endcut %}
 

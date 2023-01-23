@@ -2,7 +2,6 @@
 
 In this section, you will learn how to add a link or a search engine query and how to check whether a Toloker has clicked on them. Links can be opened when a certain event occurs. You can also group links together and set shortcuts for them to allow Tolokers to work faster.
 
-
 ## Insert a normal link {#view.link}
 
 If you want to insert a link without additional formatting, use the [view.link](../reference/view.link.md) component. The link is underlined and changes color after clicking on it.
@@ -16,7 +15,6 @@ If you want to insert a link without additional formatting, use the [view.link](
 ```
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/8AWWLoEf3ttF2F)
-
 
 ## Create a search query {#helper.search-query}
 
@@ -40,20 +38,17 @@ If you need to insert links to several search engines with the same query, then
 
 {% endnote %}
 
-
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/xubW9a7u3ttF3P)
 
 If the search engine you need is not available in the `engine` property, leave this field empty and enter the search query in `query` using the [helper.join](../reference/helper.join.md) component.
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sQLrwr193ttF3h)
 
-
 ## Group links together {#view.link-group}
 
 To group multiple links together, use the [view.link-group](../reference/view.link-group.md) component. Links will be underlined. For emphasis, you can add a border around one of the links and remove the underline. To do this, set the `theme` property to `primary` for this link.
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/e2bmQ_Pz3ttF4X)
-
 
 ## Create a button link {#action.open-link}
 
@@ -76,7 +71,6 @@ To make sure the button looks nice and doesn't stretch to the entire screen wi
 
 {% endnote %}
 
-
 When adding multiple buttons, you can arrange them horizontally (instead of vertically) in the `direction` property.
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/Z4zKrqen3ttF5p)
@@ -85,7 +79,6 @@ To assign a [shortcut](../best-practices/hotkeys.md) to a button, use the [plugi
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/JMgSpar33ttF6b)
 
-
 ## Check if the link was clicked on {#condition.link-opened}
 
 To check if the Toloker clicked on the link, use the [condition.link-opened](../reference/condition.link-opened.md) component by specifying it in the `validation` property.
@@ -93,7 +86,6 @@ To check if the Toloker clicked on the link, use the [condition.link-opened](.
 Remember that the condition only works if a Toloker clicks the link in the interface. If the link is opened via the address bar, the condition doesn't work.
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/jotI7dQ13ttF74)
-
 
 ## Add keyboard shortcuts {#hotkeys}
 
@@ -115,13 +107,11 @@ To add a shortcut, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) plug
 
 Learn more about shortcuts in [Configure keyboard shortcuts](../best-practices/hotkeys.md).
 
-
 ## Use event-driven links {#plugin.trigger}
 
 You can set a link to open when a certain event occurs. For example, when a Toloker chooses an option, this can open a specific search query. To do this, use the [plugin.trigger](../reference/plugin.trigger.md) plugin.
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ALiH0zIV3ttF8Z)
-
 
 ## Reuse the code {#vars}
 

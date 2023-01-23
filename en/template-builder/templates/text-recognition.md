@@ -171,7 +171,6 @@ To add a detailed description to the task, use the `label` property of the [view
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/FKmvxOnh3ttDoT)
 
-
 ## Add a clarifying question
 
 To ask Tolokers to clarify their choice if they selected the **No business** checkbox, add the [helper.if](../reference/helper.if.md) component which contains [field.radio-group](../reference/field.radio-group.md).

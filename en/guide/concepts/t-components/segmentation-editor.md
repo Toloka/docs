@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a text segmentation editor in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.text-annotation.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a text segmentation editor in [Template Builder](../../../template-builder/reference/field.text-annotation.md).
 
 {% endnote %}
 
@@ -14,7 +14,7 @@ The text segmentation editor doesn't work on mobile devices.
 
 {% endnote %}
 
-To make your task available only to Tolokers who log in via a browser, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select {% if locale == "en-com" %}**Toloka web version**{% endif %}. This way, Tolokers won't see the task in the mobile app but will be able to log in using a mobile browser. To prevent Tolokers from accessing the task through mobile browsers, add another filter: {% if locale == "en-com" %}**Device type**{% endif %} = {% if locale == "en-com" %}**Personal computer**{% endif %}.
+To make your task available only to Tolokers who log in via a browser, add the **Client** filter and select **Toloka web version**. This way, Tolokers won't see the task in the mobile app but will be able to log in using a mobile browser. To prevent Tolokers from accessing the task through mobile browsers, add another filter: **Device type** = **Personal computer**.
 
 ## Text editor features {#what}
 
@@ -57,8 +57,6 @@ If you're using an empty template:
 1. In the HTML block, add the `not_var{{textAnnotationInterface input tagsData}}` component.
 
 1. Add the following code in the JS block:
-
-{% if locale == "en-com" %}
 
     ```javascript
     var tagsData = [
@@ -143,11 +141,7 @@ If you're using an empty template:
     });
     ```
 
-    {% endif %}
-
 1. In the CSS block, add the following styles:
-
-{% if locale == "en-com" %}
 
     ```css
     /* Task on the page */
@@ -174,8 +168,6 @@ If you're using an empty template:
     }
     }
     ```
-
-    {% endif %}
 
 1. Click **Preview** and view the result.
 
@@ -209,8 +201,6 @@ The editor uses category tags for text segmentation. Each tag has three paramete
 You can change the name and color of the tag and the assigned hotkey. You can't change the list of colors because it's hardcoded in the editor's JS library for text highlighting.
 
 {% cut "Example of the JS code with tag descriptions" %}
-
-{% if locale == "en-com" %}
 
 ```javascript
 var tagsData = [
@@ -266,8 +256,6 @@ var tagsData = [
   }
 ];
 ```
-
-{% endif %}
 
 {% endcut %}
 

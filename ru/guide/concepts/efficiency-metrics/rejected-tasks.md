@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Отклоненные задания{% endif %}{% if locale == "en-com" %}Rejected tasks{% endif %}
+# Отклоненные задания
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

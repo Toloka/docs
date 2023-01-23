@@ -8,7 +8,7 @@ If tasks were distributed with an [overlap](../../glossary.md#overlap) of more t
 
 #### In the interface
 
-To get a file with Tolokers' responses, click the {% if locale == "en-com" %}**Download results**{% endif %} button on the [pool](../../glossary.md#pool) page.
+To get a file with Tolokers' responses, click the **Download results** button on the [pool](../../glossary.md#pool) page.
 
 {% note alert %}
 
@@ -137,7 +137,7 @@ Add the notification to the project description (for example: “Attention! The 
 
 - Assign them a hidden skill, or use an existing [skill](nav-assign.md) linked to the pool.
 
-- Go to **Messages** and click {% if locale == "en-com" %}**Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**{% endif %}.
+- Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**.
 
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 
@@ -165,7 +165,7 @@ Shorten instructions and rewrite using simpler language. Add pictures and exampl
 
 Make the interface [more user-friendly](spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
 
-Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
+Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the **Client** filter.
 
 {% endcut %}
 

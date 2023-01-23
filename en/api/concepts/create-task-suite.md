@@ -147,7 +147,6 @@ You can use this ID in the future to [get information about the operation](ope
 }
 ```
 
-
 #|
 || Parameter | Overview ||
 || **pool_id** | **string \| required**
@@ -250,10 +249,7 @@ ID of a task suite. ||
 Task ID if the task suite is created automatically with the "smart mixing" option ([learn more](../../guide/concepts/task_upload.md)). ||
 || **tasks[].origin_task_id** | **string**
 
-The ID of a task from another pool from which this task was copied for majority vote verification.
-{% if audience == "internal" %}**owner.company_id** | **string**
-
-The requester's company ID.{% endif %} ||
+The ID of a task from another pool from which this task was copied for majority vote verification.||
 || **remaining_overlap** | **integer**
 
 The remaining overlap for each task. For example, if the task has an overlap of `5` but was completed by two  people, the `remaining_overlap` value is `3`.

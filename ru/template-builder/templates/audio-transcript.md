@@ -20,8 +20,6 @@
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-
-
 ## Что еще можно настроить {#add-more}
 
 - Если вам важно [проверить](../best-practices/conditions.md), что аудио запускалось — замените компонент [condition.played-fully](../reference/condition.played-fully.md) на [condition.played](../reference/condition.played.md).
@@ -32,9 +30,7 @@
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/2oaN24-43tw3dp)
 
-
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
-
 
 ## Другие варианты кнопок {#options}
 

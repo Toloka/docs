@@ -42,7 +42,6 @@ Mind the keyboard layout when setting up shortcuts: if you choose a character th
 
 {% endnote %}
 
-
 ## Radio buttons and checkboxes {#radio-check}
 
 Use the [action.set](../reference/action.set.md) component to set up shortcuts for radio buttons. For checkboxes, use [action.toggle](../reference/action.toggle.md). Assign shortcuts to actions that your radio buttons or checkboxes do.
@@ -60,7 +59,6 @@ You can [reuse](reuse.md) shortcuts just like any other code fragments. To do th
 Put your reused code into `vars` so that you don't have to change the path in the `$ref` property when you change the configuration.
 
 {% endnote %}
-
 
 ## Multiple actions {#bulk-actions}
 
@@ -101,6 +99,5 @@ Keep in mind the following:
 - The data types for actions must be the same. For example, in the following case the shortcut works but is not displayed: clicking on the button saves the `“true”` string to the results, and the Boolean value `true` is defined for the shortcut.
 - If multiple actions are triggered when the button is clicked ([action.bulk](../troubleshooting/../reference/action.bulk.md)), the sequence of these actions for the shortcut must be the same.
 - If you use a conditional operator to select an action, such as [helper.if](../troubleshooting/../reference/helper.if.md), the same conditional operator (**helper.if**) must be called under the same rules when the shortcut key is pressed.
-
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

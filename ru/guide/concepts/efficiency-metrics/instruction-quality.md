@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Качество инструкции{% endif %}{% if locale == "en-com" %}Quality of instructions{% endif %}
+# Качество инструкции
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

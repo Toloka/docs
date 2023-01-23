@@ -18,12 +18,12 @@ To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
         If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
 
-        - {% if locale == "en-com" %}**Image classification**{% endif %}
-        - {% if locale == "en-com" %}**Product search relevance**{% endif %}
-        - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
-        - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+        - **Image classification**
+        - **Product search relevance**
+        - **Object recognition & detection**
+        - **Clickbait or not?**
 
-        Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+        Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
 
         Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
@@ -35,15 +35,15 @@ To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
     {% endlist %}
 
-1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+1. Click **Continue**.
 
 1. Choose a way to put tasks into suites and specify the number of tasks per suite. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+1. Click **Combine tasks into suites**.
 
 1. Wait for the result.
 
-To delete all the tasks in the pool, click {% if locale == "en-com" %}**Delete**{% endif %}.
+To delete all the tasks in the pool, click **Delete**.
 
 {% note alert "Restriction" %}
 
@@ -59,7 +59,7 @@ You can add up to one million tasks to the pool. To upload more tasks, create an
 
 - If you get a processing error, it means that the data file is not formatted correctly. For example, there are unnecessary tabs in the file or some lines, headers, or quotes are missing.
 
-    In this case, click {% if locale == "en-com" %}**Cancel**{% endif %}, correct the mistakes, and then upload the file again.
+    In this case, click **Cancel**, correct the mistakes, and then upload the file again.
 
 ## Processing errors {#table-with-errors}
 

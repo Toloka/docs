@@ -8,12 +8,12 @@ Download the file template for your [project](../../glossary.md#project) on the 
 
 If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
 
-- {% if locale == "en-com" %}**Image classification**{% endif %}
-- {% if locale == "en-com" %}**Product search relevance**{% endif %}
-- {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
-- {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+- **Image classification**
+- **Product search relevance**
+- **Object recognition & detection**
+- **Clickbait or not?**
 
-Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
 
 Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
@@ -58,7 +58,7 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/location-job/pool_csv/main_tsv2.png)
 
     {% endcut %}
-    
+
   {% endcut %}
 
   {% cut "Control task" %}
@@ -124,9 +124,9 @@ If you need to add different task types to the pool, upload multiple files, one 
     ![](../_images/tutorials/walk/squirrel_tsv.png)
 
     {% endcut %}
-    
+
     {% include [toloka-requester-source-field-tasks-suites](../_includes/toloka-requester-source/id-toloka-requester-source/field-tasks-suites.md) %}
-  
+
   {% endcut %}
 
   The columns with [required input data fields](incoming.md) must be filled. The other columns can be deleted if they are empty.
@@ -138,7 +138,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   Check the format of the file with tasks. If the format of your file is old, download the template on the pool page and replace the sample data in it with your own data.
 
   {% endnote %}
-  
+
   The file is a JSON object which contains:
 
   - `input_values` — input data for tasks.
@@ -325,7 +325,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   {% endcut %}
 
   {% endcut %}
-  
+
   {% cut "Field task" %}
 
   To create a field task, specify:
@@ -345,7 +345,7 @@ If you need to add different task types to the pool, upload multiple files, one 
     "longitude": "24.32"
   }
   ```
-  
+
   #|
   || Key | Description ||
   || **input_values** | **object**
@@ -405,7 +405,7 @@ In popular spreadsheet editors, you can import and export data in TSV or XLSX:
 - [LibreOffice]({{ libre-office }})
 - [Google Documents]({{ google-docs }}).
 
-A text editor is good for JSON files (for example, {% if locale == "en-com" %}Notepad{% endif %} on Windows or TextEdit on Mac OS).
+A text editor is good for JSON files (for example, Notepad on Windows or TextEdit on Mac OS).
 
 You can work with data in an editor and then save it in the desired format.
 
@@ -417,7 +417,7 @@ You can work with data in an editor and then save it in the desired format.
 
   1. Add data for tasks.
 
-  1. Copy the entire spreadsheet. Paste it into a simple text editor (such as {% if locale == "en-com" %}Notepad{% endif %} in Windows or TextEdit in Mac).
+  1. Copy the entire spreadsheet. Paste it into a simple text editor (such as Notepad in Windows or TextEdit in Mac).
 
   1. Save the file in UTF-8 encoding with the `tsv` extension.
 
@@ -459,10 +459,10 @@ Unescaped quotation marks are removed when processing the file.
 
 Data | Example of transferring data to a file | Status | What the Toloker will see
 ----- | ----- | ----- | -----
-{% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "en-com" %}`"monitor 24"" buy"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %}
-{% if locale == "en-com" %}`book "All about dogs"`{% endif %} | {% if locale == "en-com" %}`book "All about dogs"`{% endif %} | {% if locale == "en-com" %}`correct, but the quotes won't be displayed`{% endif %} | {% if locale == "en-com" %}`book All about dogs`{% endif %}
-{% if locale == "en-com" %}`book “All about dogs”`{% endif %} | {% if locale == "en-com" %}`"book “All about dogs”"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`book “All about dogs”`{% endif %}
-{% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+`monitor 24" buy` | `"monitor 24"" buy"` | `correct` | `monitor 24" buy`
+`book "All about dogs"` | `book "All about dogs"` | `correct, but the quotes won't be displayed` | `book All about dogs`
+`book “All about dogs”` | `"book “All about dogs”"` | `correct` | `book “All about dogs”`
+`monitor 24" buy` | `monitor 24" buy` | `loading error` |
 
 {% endcut %}
 
@@ -476,8 +476,8 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 | Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}`{"query": "monitor 24 inch buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24 inch buy`{% endif %}
-|{% if locale == "en-com" %}`{"query": "monitor 24 inch buy"}`{% endif %} | {% if locale == "en-com" %}`"{"query": "monitor 24 inch buy"}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|`{"query": "monitor 24 inch buy"}` | `"{""query"": ""monitor 24 inch buy""}"` | `correct` | `monitor 24 inch buy`
+|`{"query": "monitor 24 inch buy"}` | `"{"query": "monitor 24 inch buy"}"` | `loading error` |
 
 {% endcut %}
 
@@ -489,11 +489,11 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}`{"query": "monitor 24\" buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %}
-|{% if locale == "en-com" %}`{"query": "monitor 24" buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy`{% endif %}
-|{% if locale == "en-com" %}`{"query": "book \"All about dogs\""}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""book \""All about dogs\""""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`book "All about dogs"`{% endif %}
-|{% if locale == "en-com" %}`{"query": "monitor 24\" buy"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"\" buy""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
-|{% if locale == "en-com" %}`{"query": "book \"All about dogs\""}`{% endif %} | {% if locale == "en-com" %}`"{"query": "book \"All about dogs\""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|`{"query": "monitor 24\" buy"}` | `"{""query"": ""monitor 24\"" buy""}"` | `correct` | `monitor 24" buy`
+|`{"query": "monitor 24" buy"}` | `"{""query"": ""monitor 24\"" buy""}"` | `correct` | `monitor 24" buy`
+|`{"query": "book \"All about dogs\""}` | `"{""query"": ""book \""All about dogs\""""}"` | `correct` | `book "All about dogs"`
+|`{"query": "monitor 24\" buy"}` | `"{""query"": ""monitor 24\"\" buy""}"` | `loading error` |
+|`{"query": "book \"All about dogs\""}` | `"{"query": "book \"All about dogs\""}"` | `loading error` |
 
 {% endcut %}
 
@@ -506,7 +506,7 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 | Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
 |`{"query": "array A\B"}` |`"{""query"": ""array A\\B""}"` |`correct` |`array A\B`
-|{% if locale == "en-com" %}`{"query": "array A\B"}`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""array A\B""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|`{"query": "array A\B"}` | `"{""query"": ""array A\B""}"` | `loading error` |
 
 {% endcut %}
 
@@ -524,10 +524,10 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24 inch buy monitor 19 inch buy`{% endif %}
-|{% if locale == "en-com" %}`[{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24 inch, system unit buy monitor 19 inch, system unit buy`{% endif %}
-|{% if locale == "en-com" %}`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]`{% endif %} | {% if locale == "en-com" %}`"{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
-|{% if locale == "en-com" %}`[{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]` | `"{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"` | `correct` | `monitor 24 inch buy monitor 19 inch buy`
+|`[{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]` | `"{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"` | `correct` | `monitor 24 inch, system unit buy monitor 19 inch, system unit buy`
+|`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]` | `"{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"` | `loading error` |
+|`[{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]` | `"{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"` | `loading error` |
 
 {% endcut %}
 
@@ -539,8 +539,8 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`monitor 24" buy monitor 19" buy`{% endif %}
-|{% if locale == "en-com" %}`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]` | `"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"` | `correct` | `monitor 24" buy monitor 19" buy`
+|`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]` | `"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"` | `loading error` |
 
 {% endcut %}
 
@@ -552,8 +552,8 @@ Data | Example of transferring data to a file | Status | What the Toloker will s
 
 |Data | Example of transferring data to a file | Status | What the Toloker will see
 |----- | ----- | ----- | -----
-|{% if locale == "en-com" %}`[{"query": "array A\B"},{"query": "array C\B"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""array A\\\B""},{""query"": ""array C\D""}"`{% endif %} | {% if locale == "en-com" %}`correct`{% endif %} | {% if locale == "en-com" %}`array A\B array C\D`{% endif %}
-|{% if locale == "en-com" %}`[{"query": "array A\B"},{"query": "array C\B"}]`{% endif %} | {% if locale == "en-com" %}`"{""query"": ""array A\\B""},{""query"": ""array C\\D"}"`{% endif %} | {% if locale == "en-com" %}`loading error`{% endif %} |
+|`[{"query": "array A\B"},{"query": "array C\B"}]` | `"{""query"": ""array A\\\B""},{""query"": ""array C\D""}"` | `correct` | `array A\B array C\D`
+|`[{"query": "array A\B"},{"query": "array C\B"}]` | `"{""query"": ""array A\\B""},{""query"": ""array C\\D"}"` | `loading error` |
 
 {% endcut %}
 
@@ -760,7 +760,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 {% cut "Where is my file added if I upload it to the running pool?" %}
 
-If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
+If you have the **Keep task order** option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
 
 {% endcut %}
 

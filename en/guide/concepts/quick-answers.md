@@ -14,38 +14,38 @@ To estimate the time required to complete a task suite:
 
 - [Complete a task in the sandbox](sandbox.md#self), if you didn't start the tasks yet.
 
-- Look up the {% if locale == "en-com" %}**Average assignment completion time**{% endif %} in [pool statistics](pool_statistic-pool.md#avgtime) if the tasks are already running.
+- Look up the **Average assignment completion time** in [pool statistics](pool_statistic-pool.md#avgtime) if the tasks are already running.
 
 ## How do I set it up? {#rule}
 
 #|
 || **Field** | **Overview**||
-||{% if locale == "en-com" %}**Recent task suites to use**{% endif %} | The number of recent assignments submitted by the Toloker.
+||**Recent task suites to use** | The number of recent assignments submitted by the Toloker.
 
 If this field is not filled in, the calculation includes only recent task suites from the pool to which the rule applies.
 
 If the field is filled in, the corresponding number of task suites is used. The rule takes into account the task suites from both this pool and other pools where this field is filled in.
 
 To learn more about how this field works, go to [Parameter "Remember values"](remember-values.md).||
-||{% if locale == "en-com" %}**Minimum time per task suite**{% endif %} | The task suite completion time (in seconds). Everything that is completed faster is considered a fast response.||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**Minimum time per task suite** | The task suite completion time (in seconds). Everything that is completed faster is considered a fast response.||
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of the Toloker's recent responses (less than or equal to the number in the {% if locale == "en-com" %}**Recent task suites to use**{% endif %} field).
+- **number of responses** — The number of the Toloker's recent responses (less than or equal to the number in the **Recent task suites to use** field).
 
-- {% if locale == "en-com" %}**number of fast responses**{% endif %} — Allowed number of fast responses (out of the recent ones).
+- **number of fast responses** — Allowed number of fast responses (out of the recent ones).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+||**then** | Action to perform for the condition:
 
-- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the Toloker's [skill](nav.md).
+- **assign skill value** — Assign a fixed value to the Toloker's [skill](nav.md).
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [manual review](offline-accept.md) option to be set.
+- **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+- **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
 |#
@@ -76,7 +76,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
   ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1_1.png)
 
-  This rule will never take effect because the number of responses counted ({% if locale == "en-com" %}**Recent task suites to use**{% endif %}) is less than the number of recent responses in the rule ({% if locale == "en-com" %}**number of responses**{% endif %}).
+  This rule will never take effect because the number of responses counted (**Recent task suites to use**) is less than the number of recent responses in the rule (**number of responses**).
 
 {% endlist %}
 

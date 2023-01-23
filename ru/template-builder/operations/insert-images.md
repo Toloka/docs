@@ -6,8 +6,6 @@
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-
-
 ## Одна картинка {#single-picture}
 
 Чтобы отобразить картинку, вам необходима прямая ссылка на нее и компонент [view.image](../reference/view.image.md). Вы можете менять высоту, ширину, рамку и другие параметры картинки. Подробнее об этом в описании компонента.
@@ -16,7 +14,6 @@
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/pO7_5AxA3tvJWq)
 
-
 ## Две картинки рядом (side-by-side) {#side-by-side}
 
 Чтобы разместить рядом две картинки, используйте компонент [layout.side-by-side](../reference/layout.side-by-side.md).
@@ -24,7 +21,6 @@
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/yegvCFgq3tvumR)
 
 Подробный разбор примера в разделе [Быстрый старт](../quickstart.md).
-
 
 ## Массив картинок {#array}
 
@@ -71,7 +67,6 @@
 
 {% endnote %}
 
-
 ### Если количество картинок неизвестно или их много {#unknown-size}
 
 Если величина массива с картинками заранее неизвестна или картинок так много, что код слишком объемный, используйте один из компонентов, описанных выше, а в свойство `items` добавьте компонент [helper.transform](../reference/helper.transform.md). Этот компонент позволит вам преобразовать массив ссылок в массив компонентов [view.image](../reference/view.image.md), чтобы отобразить их в интерфейсе.
@@ -83,6 +78,5 @@
 Чтобы увеличить картинку по нажатию горячей клавиши, используйте компонент [plugin.hotkeys](../reference/plugin.hotkeys.md). Укажите в нем, какая клавиша вызывает действие [action.open-close](../reference/action.open-close.md). Картинка указывается в свойстве `view` с помощью конструкции [$ref](../best-practices/reuse.md). Действие вызовется при нажатии на выбранную клавишу.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/xdavUyAN3ttEzb)
-
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

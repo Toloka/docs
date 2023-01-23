@@ -4,7 +4,6 @@
 
 В этом разделе описано, как добавить к картинке редактор для выделения областей и как можно ускорить работу с ним с помощью горячих клавиш. Если вам нужно просто вставить картинку, читайте раздел [Вставка картинок](insert-images.md).
 
-
 ## Добавить редактор для выделения {#add-select}
 
 Чтобы добавить возможность выделять на картинках области, используйте компонент [field.image-annotation](../reference/field.image-annotation.md).
@@ -23,7 +22,6 @@
 ```
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/HdPqNHC53ttFBy)
-
 
 ## Настроить режимы разметки {#shapes}
 
@@ -96,7 +94,6 @@
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/3L2iMLDD3tvyLo)
 
 Каждый новый объект свойства `labels` добавляет в редакторе кнопку для выбора типа области, а разное значение `value` дает возможность выделить область уникальным цветом.
-
 
 ## Добавить горячие клавиши {#hotkeys}
 
@@ -177,6 +174,5 @@
 - [plugin.toloka](../reference/plugin.toloka.md) — чтобы настроить внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/grA2YJnS3tvztP)
-
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)
