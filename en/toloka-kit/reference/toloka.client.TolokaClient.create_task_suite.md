@@ -1,5 +1,5 @@
 # create_task_suite
-`toloka.client.TolokaClient.create_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2382)
+`toloka.client.TolokaClient.create_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2442)
 
 Creates a task suite in Toloka.
 

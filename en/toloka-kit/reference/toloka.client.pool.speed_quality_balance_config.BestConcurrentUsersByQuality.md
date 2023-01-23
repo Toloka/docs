@@ -1,9 +1,9 @@
 # BestConcurrentUsersByQuality
-`toloka.client.pool.speed_quality_balance_config.BestConcurrentUsersByQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/speed_quality_balance_config.py#L33)
+`toloka.client.pool.speed_quality_balance_config.BestConcurrentUsersByQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/pool/speed_quality_balance_config.py#L38)
 
 ```python
 BestConcurrentUsersByQuality(self, *, count: Optional[int] = None)
 ```
 
-How many concurrent Tolokers ordered by quality will work on pool.
+`SpeedQualityBalanceConfig` that uses a maximum number of Tolokers.
 

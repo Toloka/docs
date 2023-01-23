@@ -1,5 +1,5 @@
 # create_tasks_async
-`toloka.client.TolokaClient.create_tasks_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2238)
+`toloka.client.TolokaClient.create_tasks_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2293)
 
 Creates tasks in Toloka asynchronously.
 

@@ -1,5 +1,5 @@
 # find_projects
-`toloka.client.TolokaClient.find_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1074)
+`toloka.client.TolokaClient.find_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1091)
 
 Finds projects that match certain criteria.
 

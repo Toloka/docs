@@ -1,5 +1,5 @@
 # SetSkillFromOutputField
-`toloka.client.actions.SetSkillFromOutputField` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/actions.py#L98)
+`toloka.client.actions.SetSkillFromOutputField` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/actions.py#L98)
 
 ```python
 SetSkillFromOutputField(

@@ -1,5 +1,5 @@
 # TaskSuite
-`toloka.client.task_suite.TaskSuite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/task_suite.py#L19)
+`toloka.client.task_suite.TaskSuite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/task_suite.py#L19)
 
 ```python
 TaskSuite(
@@ -8,7 +8,7 @@ TaskSuite(
     infinite_overlap=None,
     overlap=None,
     pool_id: Optional[str] = None,
-    tasks: Optional[List[BaseTask]] = ...,
+    tasks: Optional[List[BaseTask]] = _Nothing.NOTHING,
     reserved_for: Optional[List[str]] = None,
     unavailable_for: Optional[List[str]] = None,
     issuing_order_override: Optional[float] = None,

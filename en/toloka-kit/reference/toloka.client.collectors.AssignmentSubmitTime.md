@@ -1,5 +1,5 @@
 # AssignmentSubmitTime
-`toloka.client.collectors.AssignmentSubmitTime` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/collectors.py#L191)
+`toloka.client.collectors.AssignmentSubmitTime` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/collectors.py#L203)
 
 ```python
 AssignmentSubmitTime(

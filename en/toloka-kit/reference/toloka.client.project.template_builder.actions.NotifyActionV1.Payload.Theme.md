@@ -1,5 +1,5 @@
 # Theme
-`toloka.client.project.template_builder.actions.NotifyActionV1.Payload.Theme` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/actions.py#L67)
+`toloka.client.project.template_builder.actions.NotifyActionV1.Payload.Theme` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/actions.py#L67)
 
 The background color of the message.
 

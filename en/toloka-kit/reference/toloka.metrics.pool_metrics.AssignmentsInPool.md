@@ -1,5 +1,5 @@
 # AssignmentsInPool
-`toloka.metrics.pool_metrics.AssignmentsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/pool_metrics.py#L201)
+`toloka.metrics.pool_metrics.AssignmentsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/pool_metrics.py#L201)
 
 ```python
 AssignmentsInPool(
@@ -12,7 +12,7 @@ AssignmentsInPool(
     *,
     toloka_client: Optional[TolokaClient] = None,
     atoloka_client: Optional[AsyncTolokaClient] = None,
-    timeout: timedelta = ...
+    timeout: timedelta = _Nothing.NOTHING
 )
 ```
 

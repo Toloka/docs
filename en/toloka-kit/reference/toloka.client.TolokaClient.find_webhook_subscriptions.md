@@ -1,5 +1,5 @@
 # find_webhook_subscriptions
-`toloka.client.TolokaClient.find_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L3321)
+`toloka.client.TolokaClient.find_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L3403)
 
 Finds webhook subscriptions that match certain criteria.
 

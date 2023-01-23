@@ -1,5 +1,5 @@
 # App
-`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/app/__init__.py#L91)
+`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/app/__init__.py#L91)
 
 ```python
 App(

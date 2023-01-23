@@ -1,5 +1,5 @@
 # NewUserSkills
-`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/metrics.py#L259)
+`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/metrics.py#L259)
 
 ```python
 NewUserSkills(
@@ -11,7 +11,7 @@ NewUserSkills(
     *,
     toloka_client: Optional[TolokaClient] = None,
     atoloka_client: Optional[AsyncTolokaClient] = None,
-    timeout: timedelta = ...
+    timeout: timedelta = _Nothing.NOTHING
 )
 ```
 

@@ -1,5 +1,5 @@
 # TrainingCloseOperation
-`toloka.client.operations.TrainingCloseOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/operations.py#L231)
+`toloka.client.operations.TrainingCloseOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/operations.py#L231)
 
 ```python
 TrainingCloseOperation(

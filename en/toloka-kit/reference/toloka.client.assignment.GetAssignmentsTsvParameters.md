@@ -1,15 +1,15 @@
 # GetAssignmentsTsvParameters
-`toloka.client.assignment.GetAssignmentsTsvParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/assignment.py#L125)
+`toloka.client.assignment.GetAssignmentsTsvParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/assignment.py#L125)
 
 ```python
 GetAssignmentsTsvParameters(
     self,
     *,
-    status: Optional[List[Status]] = ...,
+    status: Optional[List[Status]] = _Nothing.NOTHING,
     start_time_from: Optional[datetime] = None,
     start_time_to: Optional[datetime] = None,
     exclude_banned: Optional[bool] = None,
-    field: Optional[List[Field]] = ...
+    field: Optional[List[Field]] = _Nothing.NOTHING
 )
 ```
 

@@ -1,5 +1,5 @@
 # update_training
-`toloka.async_client.client.AsyncTolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/async_client/client.py#L0)
 
 ```python
 async update_training(
@@ -9,18 +9,18 @@ async update_training(
 )
 ```
 
-Makes changes to the training
+Updates parameters of a training in Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of the training that will be changed.</p>
-`training`|**[Training](toloka.client.training.Training.md)**|<p>A training object with all the fields: those that will be updated and those that will not.</p>
+`training_id`|**str**|<p>The ID of the training to be updated.</p>
+`training`|**[Training](toloka.client.training.Training.md)**|<p>A training object with new parameter values.</p>
 
 * **Returns:**
 
-  Training object with all fields.
+  The updated training.
 
 * **Return type:**
 
@@ -28,8 +28,10 @@ Makes changes to the training
 
 **Examples:**
 
-If you want to update any configurations of the existing training.
+The example shows how to set new time limit in a training.
 
 ```python
-updated_training = toloka_client.update_training(training_id=old_training_id, training=new_training_object)
+updated_training = toloka_client.get_training(training_id='1')
+updated_training.assignment_max_duration_seconds = 600
+toloka_client.update_training(training_id=updated_training.id, training=updated_training)
 ```

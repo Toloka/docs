@@ -1,5 +1,5 @@
 # ReplaceHelperV1
-`toloka.client.project.template_builder.helpers.ReplaceHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/helpers.py#L143)
+`toloka.client.project.template_builder.helpers.ReplaceHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/helpers.py#L143)
 
 ```python
 ReplaceHelperV1(
