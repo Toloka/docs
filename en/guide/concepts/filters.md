@@ -2,13 +2,13 @@
 
 You can use filters to select Tolokers for your project. Tasks will only be shown to matching Tolokers, rather than to all of them. Properly configured filters help you send tasks to a target group of Tolokers. As a result, you'll get your results faster and spend less money.
 
-To select Tolokers for the [pool](../../glossary.md#pool), click {% if locale == "en-com" %}**Add filter**{% endif %} at the {% if locale == "en-com" %}**Select the audience for your task**{% endif %} step of creating a pool or on the pool editing page.
+To select Tolokers for the [pool](../../glossary.md#pool), click **Add filter** at the **Select the audience for your task** step of creating a pool or on the pool editing page.
 
 From the drop-down list, select filters by profile data and device specifications.
 
 {% note tip %}
 
-Copy filters from another pool to add them faster. Click {% if locale == "en-com" %}**Copy audience filters and quality settings**{% endif %} and select the pool you want to copy filters from.
+Copy filters from another pool to add them faster. Click **Copy audience filters and quality settings** and select the pool you want to copy filters from.
 
 {% endnote %}
 
@@ -20,7 +20,7 @@ All filters added to the pool are applied simultaneously. The criteria within a 
 
 {% endnote %}
 
-The number of Tolokers selected with your filters is shown in the {% if locale == "en-com" %}**The task is available to N active Tolokers**{% endif %} line, which is in the {% if locale == "en-com" %}**Audience**{% endif %}.
+The number of Tolokers selected with your filters is shown in the **The task is available to N active Tolokers** line, which is in the **Audience**.
 
 ## Calculated data {#filter-calc-data}
 
@@ -28,13 +28,13 @@ Use this group of filters to select Tolokers by device type, browser, or softwar
 
 {% cut "Region by phone number" %}
 
-To more effectively choose Tolokers by location, add the {% if locale == "en-com" %}**Region by phone**{% endif %} filter.
+To more effectively choose Tolokers by location, add the **Region by phone** filter.
 
 {% endcut %}
 
 {% cut "Region by IP" %}
 
-To make a task available to users with IP addresses in a particular region, add the {% if locale == "en-com" %}**Region by IP**{% endif %} filter and enter the region name. This is useful for field tasks.
+To make a task available to users with IP addresses in a particular region, add the **Region by IP** filter and enter the region name. This is useful for field tasks.
 
 {% endcut %}
 
@@ -58,7 +58,7 @@ Add this filter to select users of certain operating systems.
 
 {% note tip %}
 
-If you're looking to select MacOS, Windows, and Linux, the most popular operating systems for PCs, add the {% if locale == "en-com" %}**Operating system**{% endif %} filter. Use the `=` operator to set the value as `Windows`. Use the ![Button Add](../_images/add.svg) button to add the second value, `MacOS`. Then click ![Button Add](../_images/add.svg) again and set the third value, `Linux`.
+If you're looking to select MacOS, Windows, and Linux, the most popular operating systems for PCs, add the **Operating system** filter. Use the `=` operator to set the value as `Windows`. Use the ![Button Add](../_images/add.svg) button to add the second value, `MacOS`. Then click ![Button Add](../_images/add.svg) again and set the third value, `Linux`.
 
 {% endnote %}
 
@@ -108,7 +108,7 @@ You can choose Tolokers who live in certain cities. Use this filter for field ta
 
 {% cut "Adult content" %}
 
-If there is adult content in the pool tasks, they will only be shown to Tolokers who have agreed to see them. To select such Tolokers, add the {% if locale == "en-com" %}**Adult content**{% endif %} filter and activate this option.
+If there is adult content in the pool tasks, they will only be shown to Tolokers who have agreed to see them. To select such Tolokers, add the **Adult content** filter and activate this option.
 
 {% endcut %}
 
@@ -126,7 +126,7 @@ Add this filter to restrict the audience by region.
 
 {% cut "Languages" %}
 
-Make sure to add the {% if locale == "en-com" %}**Languages**{% endif %} filter and specify the language of the [instructions](../../glossary.md#instructions) and text in the task.
+Make sure to add the **Languages** filter and specify the language of the [instructions](../../glossary.md#instructions) and text in the task.
 
 If you want to be sure Tolokers can read and understand the basics of your language, limit your selection to those who have passed a test on it.
 
@@ -136,7 +136,7 @@ If you want to be sure Tolokers can read and understand the basics of your langu
 
 {% cut "Education" %}
 
-Add this filter if the Toloker's education may affect the quality of responses. Use the `=` or `≠` operator and select {% if locale == "en-com" %}**Secondary**{% endif %}, {% if locale == "en-com" %}**Vocational secondary**{% endif %}, or {% if locale == "en-com" %}**Higher**{% endif %} education from the drop-down list.
+Add this filter if the Toloker's education may affect the quality of responses. Use the `=` or `≠` operator and select **Secondary**, **Vocational secondary**, or **Higher** education from the drop-down list.
 
 {% endcut %}
 

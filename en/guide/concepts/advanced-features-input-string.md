@@ -20,8 +20,6 @@ For your convenience, here is ready-made code for the “Photos of product and p
 
 {% cut "HTML block" %}
 
-{% if locale == "en-com" %}
-
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -512,13 +510,9 @@ not_var{{else}}
 {{/if}}
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% cut "JavaScript block" %}
-
-{% if locale == "en-com" %}
 
 ```javascript
 var texts = {
@@ -1161,8 +1155,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 }
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% endcut %}
@@ -1185,16 +1177,12 @@ The template uses a special component to simplify development. Learn more in [St
 
     Each block looks like this:
 
-    {% if locale == "en-com" %}
-
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
-
-    {% endif %}
 
 1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
@@ -1203,8 +1191,6 @@ The template uses a special component to simplify development. Learn more in [St
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
     Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
-
-    {% if locale == "en-com" %}
 
     ```html
     <!-- string input field -->
@@ -1221,19 +1207,13 @@ The template uses a special component to simplify development. Learn more in [St
     </div>
     ```
 
-    {% endif %}
-
     In this code, a string input field is added to the button with the name `btn_ok`. If you added a new field to another button, change the name `btn_ok` to the right one.
 
     The new fields are listed in the `main__box` block as strings:
 
-    {% if locale == "en-com" %}
-
     ```html
     {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
     ```
-
-    {% endif %}
 
     In the code above, one string input field is added. The output value will be passed to the `input_result` field that you added to the output specification.
 
@@ -1244,8 +1224,6 @@ The template uses a special component to simplify development. Learn more in [St
 1. Update the acceptance mode.
 
     The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
-
-    {% if locale == "en-com" %}
 
     ```html
     {{#if (equal verdict "ok")}}
@@ -1258,8 +1236,6 @@ The template uses a special component to simplify development. Learn more in [St
     {{/if}}
     ```
 
-    {% endif %}
-
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
     For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
@@ -1267,8 +1243,6 @@ The template uses a special component to simplify development. Learn more in [St
     The `review__block` blocks contain a description of each field for this button.
 
     Find the desired button by searching for the string `{{#if (equal verdict "response_button_value")}}` then find the `review`field where you want to add a new field and insert the following code after it:
-
-    {% if locale == "en-com" %}
 
     ```html
     <!-- string input field -->
@@ -1282,19 +1256,13 @@ The template uses a special component to simplify development. Learn more in [St
     </div>
     ```
 
-    {% endif %}
-
     In this code, a string input field is added to the button with the name `btn_ok`. If you added a new field to another button, change the name `btn_ok` to the right one.
 
     The new fields are listed in the `main__box` block as strings:
 
-    {% if locale == "en-com" %}
-
     ```html
     {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
     ```
-
-    {% endif %}
 
     In the code above, one string input field is added. The output value will be passed to the `input_result` field that you added to the output specification.
 
@@ -1308,13 +1276,9 @@ The template uses a special component to simplify development. Learn more in [St
 
     The elements are described as follows:
 
-    {% if locale == "en-com" %}
-
     ```plaintext
     'property': 'value'
     ```
-
-    {% endif %}
 
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
@@ -1323,8 +1287,6 @@ The template uses a special component to simplify development. Learn more in [St
     Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
     For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     var texts = {
@@ -1343,11 +1305,7 @@ The template uses a special component to simplify development. Learn more in [St
     },
     ```
 
-    {% endif %}
-
 1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     'question_new_input': {
@@ -1356,15 +1314,11 @@ The template uses a special component to simplify development. Learn more in [St
     }
     ```
 
-    {% endif %}
-
     Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the text field, and the `description` property contains a question for Tolokers.
 
 1. Add validation.
 
     Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     else if (solution.output_values.verdict === 'ok') {
@@ -1392,12 +1346,9 @@ The template uses a special component to simplify development. Learn more in [St
     }
     ```
 
-    {% endif %}
-
     The response values for the buttons in this example, which are passed to the `verdict` output variable, have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
 
     Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
-    {% if locale == "en-com" %}
 
     ```javascript
     if (!solution... ) {
@@ -1405,18 +1356,12 @@ The template uses a special component to simplify development. Learn more in [St
     }
     ```
 
-    {% endif %}
-
     add the following code:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     if (!solution.output_values.input_result || solution.output_values.input_result.trim() === '') {
     this.errors = this.addError('This is a required field', 'input_result', this.errors);
     }
     ```
-
-    {% endif %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

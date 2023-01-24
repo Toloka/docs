@@ -34,7 +34,7 @@
 
 1. Введите имя группы ресурсов и учетной записи.
 
-1. Выберите наиболее близкий к исполнителям регион. Например, для исполнителей из Германии: {% if locale == "ru-ru" %}**Регион** → **(Europe) Центрально-Западная Германия**{% elsif locale == "en-com" %}**Region → (Europe) West Central Germany**{% endif %}.
+1. Выберите наиболее близкий к исполнителям регион. Например, для исполнителей из Германии: **Регион** → **(Europe) Центрально-Западная Германия**.
 
     {% cut "Как это выглядит в интерфейсе" %}
 
@@ -98,45 +98,21 @@
 
 1. Выберите загруженный файл и в разделе **Обзор** скопируйте **URL-адрес**.
 
-    {% if locale == "ru-ru" %}
-
     ![](../_images/tutorials/cloud-storage/azure/url.png)
-
-    {% endif %}
 
 1. {% include [get-files-link-form](../_includes/concepts/amazon-cloud-storage/id-get-files/link-form.md) %}
 
     {% include [get-files-link-without-folder](../_includes/concepts/amazon-cloud-storage/id-get-files/link-without-folder.md) %}
 
-    {% if locale == "ru-ru" %}
-
     ```plaintext
     https://<учетная-запись-хранения>.blob.core.windows.net/<контейнер>/<имя-файла>
     ```
 
-    {% endif %}{% if locale == "en-com" %}
-
-    ```plaintext
-    https://<storage-account>.blob.core.windows.net/<container>/<filename>
-    ```
-
-    {% endif %}
-
     {% include [get-files-link-from-folder](../_includes/concepts/amazon-cloud-storage/id-get-files/link-from-folder.md) %}
-
-    {% if locale == "ru-ru" %}
 
     ```plaintext
     https://<учетная-запись-хранения>.blob.core.windows.net/<контейнер>/<путь-к-файлу>/<имя-файла>
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```plaintext
-    https://<storage-account>.blob.core.windows.net/<container>/<file-path>/<filename>
-    ```
-
-    {% endif %}
 
     {% include [get-files-files-links-create](../_includes/concepts/amazon-cloud-storage/id-get-files/files-links-create.md) %}
 

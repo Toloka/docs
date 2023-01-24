@@ -69,7 +69,6 @@ For instance, you can store text comments on your server and use the file with t
 
     - You want to log user actions.
 
-
 ## What's next {#what-next}
 
 - [Learn how to post tasks](first-project.md)

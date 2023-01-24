@@ -63,7 +63,6 @@ This might happen if the media file format mismatches the device codec or the fi
 
 {% cut "A shortcut is not displayed" %}
 
-
 To display a shortcut in the interface, set the shortcut to the same [action](../reference/actions.md) that is performed when the button is clicked.
 
 Assign an action to the component if you haven't yet:

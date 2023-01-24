@@ -57,8 +57,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-          
-
           ```html
           {{img src=image height="400px"}}
           {{iframe src= found_link height="600px"}}
@@ -71,8 +69,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           {{field type="radio" name="result" value="Yes" label="Yes"}}
           {{field type="radio" name="result" value="No" label="No"}}
           ```
-
-          
 
       1. Leave the **JS** block unchanged.
 
@@ -154,16 +150,12 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. **Instructions:**
 
-        
-
         ```plaintext
         Take a look at the pictures that show two pairs of shoes. Decide whether they look similar or not.
 
         Shoes are considered similar if they have a similar color, fabric, length, and style.
         If you don't see a pair of shoes in any of the pictures, click **Yes**.
         ```
-
-        
 
     1. Save the changes.
 
@@ -306,7 +298,7 @@ To create a pool:
         In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5–10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
         {% endnote %}
-        
+
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}

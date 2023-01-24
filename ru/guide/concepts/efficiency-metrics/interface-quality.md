@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Качество интерфейса{% endif %}{% if locale == "en-com" %}Quality of interface{% endif %}
+# Качество интерфейса
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

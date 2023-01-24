@@ -20,7 +20,6 @@
 
 - `rtl` — справa налево.
 
-
 Настройка доступна в блоках `view.text`, `field.button-radio-group`, `field.text` и `field.textarea`.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/sUglWRS43tvxMt)

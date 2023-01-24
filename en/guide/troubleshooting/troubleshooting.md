@@ -299,14 +299,10 @@ You can hide text in an expandable section by using CSS styles, both in the task
 
 Specify the name of the input field where you pass the link, without the brackets:
 
-{% if locale == "en-com" %}
-
 ```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
           action=true}}
 ```
-
-{% endif %}
 
 {% endcut %}
 
@@ -316,14 +312,10 @@ Specify the name of the input field where you pass the link, without the bracket
 
 1. To solve the second problem, you can add another validation like this:
 
-    {% if locale == "en-com" %}
-
     ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
-
-    {% endif %}
 
 {% endcut %}
 
@@ -482,7 +474,7 @@ In HTML, use a special handlebar to iterate over this field. The code structure 
 
 {% cut "How do I use sliders as interface elements for selecting parameter values?" %}
 
-In the HTML code of the template, enter the following:{% if locale == "en-com" %}
+In the HTML code of the template, enter the following:
 
 ```html
 <input type=""range"" list=""rng"" class=""res"">
@@ -507,8 +499,6 @@ return solution;
 
 }
 ```
-
-{% endif %}
 
 {% endcut %}
 
@@ -632,7 +622,7 @@ You can't use a range as a fixed value.
 
 {% cut "Can I select Tolokers from a specific city of residence or is the only option “Region by IP”?" %}
 
-Yes, you can do that. In the [filters](../concepts/filters.md), select {% if locale == "en-com" %}**Profile → City**{% endif %}. Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
+Yes, you can do that. In the [filters](../concepts/filters.md), select **Profile → City**. Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
 
 {% endcut %}
 
@@ -1238,7 +1228,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 {% cut "Where is my file added if I upload it to the running pool?" %}
 
-If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
+If you have the **Keep task order** option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
 
 {% endcut %}
 
@@ -1491,7 +1481,7 @@ If the task requires that the Tolokers send free-format responses or data files,
 
 {% cut "Why is only Smart Mixing available in Training?" %}
 
-This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the {% if locale == "en-com" %}**Set manually**{% endif %} option in the training, create the main pool, set the pool type as {% if locale == "en-com" %}**Training**{% endif %}, and set the cost to zero.
+This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the **Set manually** option in the training, create the main pool, set the pool type as **Training**, and set the cost to zero.
 
 {% endcut %}
 
@@ -1642,7 +1632,7 @@ The method doesn't guarantee that original Toloker responses will be used for ag
 
 {% cut "Where do I see the aggregation progress?" %}
 
-The pool page contains the {% if locale == "en-com" %}**List of Operations**{% endif %} button.
+The pool page contains the **List of Operations** button.
 
 {% endcut %}
 
@@ -1660,7 +1650,7 @@ You need to use [smart mixing](../concepts/task_upload.md#smart-mixing_1).
 
 {% cut "Can I get notifications when results aggregation finishes?" %}
 
-Yes. To set up notifications in your account, go to {% if locale == "en-com" %}**Profile → Notifications → Pool or aggregation completed**{% endif %}. [Learn more about setting up notifications.](../concepts/result-aggregation.md#notification)
+Yes. To set up notifications in your account, go to **Profile → Notifications → Pool or aggregation completed**. [Learn more about setting up notifications.](../concepts/result-aggregation.md#notification)
 
 {% endcut %}
 
@@ -1728,7 +1718,7 @@ Add the notification to the project description (for example: “Attention! The 
 
 - Assign them a hidden skill, or use an existing [skill](../concepts/nav-assign.md) linked to the pool.
 
-- Go to **Messages** and click {% if locale == "en-com" %}**Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**{% endif %}.
+- Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**.
 
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 
@@ -1756,7 +1746,7 @@ Shorten instructions and rewrite using simpler language. Add pictures and exampl
 
 Make the interface [more user-friendly](../concepts/spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
 
-Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
+Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the **Client** filter.
 
 {% endcut %}
 
@@ -1893,7 +1883,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% cut "Where do I find the statistics on the awards I paid?" %}
 
-Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
+Track your money debited for rewards in **Profile** → **Spent** tab.
 
 {% endcut %}
 

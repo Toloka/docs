@@ -44,7 +44,6 @@ Title | Overview
 
 - Message with a list of recipients {#spis}
 
-
     ```json
     {
       "topic": {

@@ -2,11 +2,11 @@
 
 To activate a promo code:
 
-1. On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Enter promo code**{% endif %}.
+1. On the [Profile]({{ profile }}) page, click **Enter promo code**.
 
     ![](../_images/promocodes/find-promocode.png)
 
-1. Enter your promo code and click {% if locale == "en-com" %}**Activate**{% endif %}.
+1. Enter your promo code and click **Activate**.
 
     ![](../_images/promocodes/enter-promocode.png)
 

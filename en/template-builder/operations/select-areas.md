@@ -2,7 +2,6 @@
 
 This section describes how to add the area selection editor to an image and speed up task completion with shortcuts. If you just need to insert a picture, read the [Inserting images](insert-images.md) section.
 
-
 ## Add the area selection editor {#add-select}
 
 To allow Tolokers to select areas in pictures, use the [field.image-annotation](../reference/field.image-annotation.md) component.
@@ -21,7 +20,6 @@ To allow Tolokers to select areas in pictures, use the [field.image-annotation](
 ```
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/HdPqNHC53ttFBy)
-
 
 ## Configure labeling modes {#shapes}
 
@@ -94,7 +92,6 @@ You can allow Tolokers to select objects by type. For example, you may want all 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/wdxrrKs53ttFEX)
 
 For each new object of the `labels` property, a button is added to the editor that allows Tolokers to select the corresponding area type. Different values of the `value` property let Tolokers label areas with different colors.
-
 
 ## Add keyboard shortcuts {#hotkeys}
 

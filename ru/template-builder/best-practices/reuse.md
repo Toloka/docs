@@ -42,7 +42,6 @@
 
 {% endnote %}
 
-
 ## helper.transform {#helper-transform}
 
 Компонент [helper.transform](../reference/helper.transform.md) позволяет преобразовать один массив в другой. Это полезно, если вы не знаете количество элементов в массиве или он очень длинный.
@@ -51,6 +50,5 @@
 
 - [Преобразовать ссылки в картинки](https://tb.toloka.dev/editor?config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNlTE48jFmzwALItxYAnTnW0BDKHxgRtU4aIV4J02SkpWFtZawd4AJgboHOcKEwAroIgItTOeEzeaqogcFIGCET2TjQAvmERcVB0EHKpYkrMbhR4HCR+CUmW4dYggdrc+bVZrrFePjwQYAZNoQV1UXQx7nGSFiADOGkDM7Vz05hpodlBdChoVjZVyWwA2qnqdHRMfMgA9OdgHlCcAt0A1nxQBkx+EOfxCAC0w4FSACM+OcAJwANgADCRznwGjAiNpviQDPgiAB9ADMABEAEIAeQAmjiAAo4jEADU4ACsmAgaoUQGpjqcLlcbndcmAni83nAPl9fmp-kDQZDofA+BpzEZvnw4Nw1BBAkRjuiAKoAQSxaoAMgAlPUACQAogBpam0+k0I4nM6Xa63e5c56vd6fKQ-P6A4HgqHnCDcDzfJiK3JogDixoAigAmADseIA6gAtABqqYtdMm1AAuksQGkgA).
 - [Написать приветствие на нескольких языках](https://ya.cc/t/DlWy7BtH3tvqiK).
-
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

@@ -64,7 +64,6 @@
 
 {% endnote %}
 
-
 #### string
 Cтрока, выделяется кавычками, например `"Hello world"`.
 #### writable

@@ -62,11 +62,9 @@ The list of components you can link to might be limited. For example, [action.pl
 
 {% endnote %}
 
-
 #### string
 A string enclosed in quotation marks. For example: `"Hello world"`.
 #### writable
 Component you can write the data to: `data.internal` or `data.output`. In some components, you can use `data.relative`. [Learn more about components](../operations/work-with-data.md).
 #### visual
 A visual component (`layout.*`, `view.*`, `field.*`) or [helper](../reference/helpers.md) that returns it. See the list in the [component reference guide](../reference/index.md).
-

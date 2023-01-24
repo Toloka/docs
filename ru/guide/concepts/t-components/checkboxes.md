@@ -4,29 +4,17 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать флажок в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.checkbox.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.checkbox.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать флажок в [Конструкторе шаблонов](../../../template-builder/reference/field.checkbox.md).
 
 {% endnote %}
 
 Чтобы вставить в задание флажок, используйте компонент `{{field type="checkbox" name="<название выходного поля>"}}`. Например (набор из трех флажков):
-
-{% if locale == "ru-ru" %}
 
 ```plaintext
 {{field type="checkbox" name="red" label="красный" hotkey="1"}}
 {{field type="checkbox" name="green" label="зелёный" hotkey="2"}}
 {{field type="checkbox" name="yellow" label="жёлтый" hotkey="3"}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```plaintext
-{{field type="checkbox" name="red" label="red" hotkey="1"}}
-{{field type="checkbox" name="green" label="green" hotkey="2"}}
-{{field type="checkbox" name="yellow" label="yellow" hotkey="3"}}
-```
-
-{% endif %}
 
 В описании [выходных данных](../incoming.md) добавьте поле с типом `boolean`. Например:
 

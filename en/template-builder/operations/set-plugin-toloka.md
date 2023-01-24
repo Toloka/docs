@@ -18,7 +18,6 @@ Display methods are set in the `kind` property:
 
 Use the `taskWidth` property to set up the task width. By default, the task is displayed in full-screen mode.
 
-
 ## Examples {#concept_gqw_zr5_wlb}
 
 #### Arrange multiple tasks in a row

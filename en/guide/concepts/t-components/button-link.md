@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button with click validation in {% if locale == "en-com" %}[Template Builder](../../../template-builder/operations/internet-search.md#action.open-link){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button with click validation in [Template Builder](../../../template-builder/operations/internet-search.md#action.open-link).
 
 {% endnote %}
 
@@ -16,13 +16,9 @@ Variations of button use:
 
 To add the button with the link to the [task interface](../../../glossary.md#task-interface), use the `{{field type="button-clicked" name="output field name>"}}` component. Example:
 
-{% if locale == "en-com" %}
-
 ```plaintext
 {{field type="button-clicked" name="ads" label="Click me" href="https://yandex.ru" action=true}}
 ```
-
-{% endif %}
 
 For a complete list of parameters, see the [table](#parameters).
 

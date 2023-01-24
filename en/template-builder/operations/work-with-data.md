@@ -8,7 +8,6 @@ To work with data, use the components with the type `data.*`:
 - `data.local`: The local data available only from inside the component. This data is used in some auxiliary components, such as [helper.transform](../reference/helper.transform.md).
 - `data.relative`: A special component for saving data. It's only available in the [field.list](../reference/field.list.md) component.
 
-
 ## List of properties {#properties}
 
 The list of properties is the same for all components.

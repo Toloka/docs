@@ -12,7 +12,7 @@ Don't repeat the input data in the output data. You will receive all data, inclu
 
 {% note info %}
 
-Specification editing is available only when the {% if locale == "ru-ru" %}**Define data specification manually**{% endif %}{% if locale == "en-com" %}**Define data specification manually**{% endif %} option is enabled.
+Specification editing is available only when the **Define data specification manually** option is enabled.
 
 {% endnote %}
 
@@ -111,17 +111,7 @@ There are two ways to edit the specification in project settings: using either r
       }
       ```
 
-  - Month {% if locale == "ru-ru" %}
-
-      ```json
-      "my_month_string": {
-        "type": "string",
-        "required": true,
-        "allowed_values": ["январь", "февраль", "март", "апрель", "май", "июнь", "июль", "август", "сентябрь", "октябрь" "ноябрь", "декабрь"]
-      }
-      ```
-
-      {% endif %}{% if locale == "en-com" %}
+  - Month
 
       ```json
       "my_month_string": {
@@ -129,8 +119,6 @@ There are two ways to edit the specification in project settings: using either r
         "required": true,
         "allowed_values": ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October" "November", "December"] }
       ```
-
-      {% endif %}
 
   {% endcut %}
 
@@ -268,8 +256,8 @@ There are two ways to edit the specification in project settings: using either r
 
 #|
 || Parameter  | Parameter in JSON | Overview ||
-|| {% if locale == "ru-ru" %}**Name**{% endif %}{% if locale == "en-com" %}**Name**{% endif %} | `id` | Field ID. Only Latin letters, numbers, hyphens, and underscores are allowed. ||
-|| {% if locale == "ru-ru" %}**Type**{% endif %}{% if locale == "en-com" %}**Type**{% endif %} | `type` | Data type:
+|| **Name** | `id` | Field ID. Only Latin letters, numbers, hyphens, and underscores are allowed. ||
+|| **Type** | `type` | Data type:
 
 - `string`
 - `url`
@@ -281,12 +269,12 @@ There are two ways to edit the specification in project settings: using either r
 - `json`
 
 For arrays, add the `array_` prefix to the field type in JSON mode. For example: `array_file`. ||
-|| {% if locale == "ru-ru" %}**Required**{% endif %}{% if locale == "en-com" %}**Required**{% endif %} | `required` | Whether the field must be filled when uploading the tasks for the input data.
+|| **Required** | `required` | Whether the field must be filled when uploading the tasks for the input data.
 
 Whether the Toloker's response is required in the output data.
 
 By default, fields are optional — `false`.||
-||{% if locale == "ru-ru" %}**Hidden**{% endif %}{% if locale == "en-com" %}**Hidden**{% endif %} | `hidden` | Allows you to hide data from the Toloker. If this is not done, Tolokers can get the field value programmatically. You can configure this parameter in JSON mode.
+||**Hidden** | `hidden` | Allows you to hide data from the Toloker. If this is not done, Tolokers can get the field value programmatically. You can configure this parameter in JSON mode.
 
 For example, you can hide the `assigment_id` identifier you will need when [reviewing assignments](../../glossary.md#assignment-review) in a separate project.
 
@@ -297,19 +285,19 @@ By default, the field is visible — `false`.
 Hidden fields are not available in the task interface, even through JS or the template code in the constructor.
 
 {% endnote %}||
-||{% if locale == "ru-ru" %}**Array**{% endif %} {% if locale == "en-com" %}**Array**{% endif %} | `array_<type>` | Array of objects of the same type. Used, for example, for multiple photos uploaded by a Toloker.
+|| **Array** | `array_<type>` | Array of objects of the same type. Used, for example, for multiple photos uploaded by a Toloker.
 In JSON mode, there is a separate data type for the array. For example: `"type": "array_file"`.||
-|| {% if locale == "ru-ru" %}**Min size**{% endif %}{% if locale == "en-com" %}**Min size**{% endif %} | `min_size` | Minimum number of items in the array.||
-|| {% if locale == "ru-ru" %}**Max size**{% endif %} {% if locale == "en-com" %}**Max size**{% endif %} | `max_size` | Maximum number of items in the array.||
-|| {% if locale == "ru-ru" %}**Allowed values**{% endif %}{% if locale == "en-com" %}**Allowed values**{% endif %} | `allowed_values` | Allowed values for string, integer, float and boolean data types.||
-|| {% if locale == "ru-ru" %}**Min length**{% endif %}{% if locale == "en-com" %}**Min length**{% endif %} | `min_length` | Minimum length of the string.||
-||{% if locale == "ru-ru" %}**Max length**{% endif %}{% if locale == "en-com" %}**Max length**{% endif %} | `max_length` | Maximum length of the string.||
-||{% if locale == "ru-ru" %}**Min value**{% endif %}{% if locale == "en-com" %}**Min value**{% endif %} | `min_value` | Minimum values for float and integer numbers.||
-||{% if locale == "ru-ru" %}**Max value**{% endif %}{% if locale == "en-com" %}**Max value**{% endif %} | `max_value` | Maximum values for float and integer numbers.||
-||{% if locale == "ru-ru" %}**Current location**{% endif %} {% if locale == "en-com" %}**Current location**{% endif %} | `current_location` | Saving the Toloker's current coordinates (`true`/`false`). Only for the `coordinates` data type. Used in tasks for the mobile app.
+|| **Min size** | `min_size` | Minimum number of items in the array.||
+|| **Max size** | `max_size` | Maximum number of items in the array.||
+|| **Allowed values** | `allowed_values` | Allowed values for string, integer, float and boolean data types.||
+|| **Min length** | `min_length` | Minimum length of the string.||
+||**Max length** | `max_length` | Maximum length of the string.||
+||**Min value** | `min_value` | Minimum values for float and integer numbers.||
+||**Max value** | `max_value` | Maximum values for float and integer numbers.||
+|| **Current location** | `current_location` | Saving the Toloker's current coordinates (`true`/`false`). Only for the `coordinates` data type. Used in tasks for the mobile app.
 
 The default value is `false`.||
-|| {% if locale == "ru-ru" %}**Pattern**{% endif %} {% if locale == "en-com" %}**Pattern**{% endif %} | `pattern` | Regular expression that the string must match. You can configure this parameter in JSON mode.||
+|| **Pattern** | `pattern` | Regular expression that the string must match. You can configure this parameter in JSON mode.||
 |#
 
 {% endcut %}

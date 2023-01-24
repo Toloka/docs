@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Доступные исполнители{% endif %}{% if locale == "en-com" %}Available Tolokers{% endif %}
+# Доступные исполнители
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

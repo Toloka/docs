@@ -1,1 +1,1 @@
-At the {% if locale == "en-com" %}**Select the audience for your task**{% endif %} step, set up filters to select Tolokers for your pool.
+At the **Select the audience for your task** step, set up filters to select Tolokers for your pool.

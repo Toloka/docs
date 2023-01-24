@@ -39,8 +39,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
         1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
-            
-
             ```json
             "label": "What is the cat's mood?",
             "options": [
@@ -54,11 +52,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
             },
             ```
 
-            
-
             with:
-
-            
 
             ```json
             "label": "Are there traffic signs in the picture?",
@@ -72,8 +66,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
             "value": "bad"
             },
             ```
-
-            
 
         1. Click **Show specifications** to see the input and output data fields.
 
@@ -109,8 +101,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
             1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-                
-
                 ```plaintext
                 {{img src=image width="100%" height="400px"}}
                 <div>Are there <b>traffic signs</b> in the picture?<div>
@@ -119,8 +109,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
                 {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
                 {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
                 ```
-
-                
 
         1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
 
@@ -152,8 +140,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
         If there aren't, click **No**.
         For example, there are traffic signs in the image, so the correct answer is **Yes**.
         ```
-
-        
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
@@ -256,7 +242,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
     In small pools, control tasks should be 10–20% of all tasks. Include different versions of correct responses in equal amounts. View the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
     {% endnote %}
-    
+
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}

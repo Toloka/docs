@@ -4,25 +4,15 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку для загрузки аудио в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.audio.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.audio.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку для загрузки аудио в [Конструкторе шаблонов](../../../template-builder/reference/field.audio.md).
 
 {% endnote %}
 
 Чтобы добавить в задание кнопку для записи и загрузки аудио, используйте компонент `{{field type="file" sources="RECORDER" fileType="AUDIO" name="<название выходного поля>" sources="<параметр sources>" fileType="<параметр fileType>"}}`. Например:
 
-{% if locale == "ru-ru" %}
-
 ```plaintext
 {{field type="file" name="result" sources="RECORDER" fileType="AUDIO" label="Записать аудио"}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```plaintext
-{{field type="file" name="result" sources="RECORDER" fileType="AUDIO" label="Record audio"}}
-```
-
-{% endif %}
 
 Полный список параметров см. в [таблице](#parametry).
 

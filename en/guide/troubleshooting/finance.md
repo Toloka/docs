@@ -64,7 +64,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% cut "Where do I find the statistics on the awards I paid?" %}
 
-Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
+Track your money debited for rewards in **Profile** → **Spent** tab.
 
 {% endcut %}
 

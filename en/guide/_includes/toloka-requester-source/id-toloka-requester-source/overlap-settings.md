@@ -1,1 +1,1 @@
-In the {% if locale == "en-com" %}**Overlap**{% endif %} field, define how many Tolokers must do each task.
+In the **Overlap** field, define how many Tolokers must do each task.

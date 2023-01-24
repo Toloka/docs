@@ -87,7 +87,6 @@
 
 {% include [array-read-images-from-array](../_includes/operations/insert-images/id-array/read-images-from-array.md) %}
 
-
 Если длина массива неизвестна или он очень большой, вы можете получить все значения массива с помощью компонента [helper.transform](../reference/helper.transform.md).
 
 Например, вы можете преобразовать массив ссылок на изображения в массив компонентов [view.image](../reference/view.image.md), чтобы отобразить их в интерфейсе.
