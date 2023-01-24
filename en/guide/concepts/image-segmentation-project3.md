@@ -211,6 +211,8 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 1. Click **Add a pool** on the project page.
 
+1. {% include [toloka-requester-pool-type](../../../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
+
 1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
 1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
