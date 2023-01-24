@@ -1,6 +1,6 @@
 {% cut "How do I use sliders as interface elements for selecting parameter values?" %}
 
-In the HTML code of the template, enter the following:{% if locale == "en-com" %}
+In the HTML code of the template, enter the following:
 
 ```html
 <input type=""range"" list=""rng"" class=""res"">
@@ -25,7 +25,5 @@ return solution;
 
 }
 ```
-
-{% endif %}
 
 {% endcut %}

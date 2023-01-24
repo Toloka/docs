@@ -244,6 +244,8 @@ Autolabeling and pretrained models with quality control built in.
 
 {% include [faq-questions-are-control](../_includes/faq/pool-setup/questions-are-control.md) %}
 
+{% endcut %}
+
 {% cut "Ban" %}
 
 {% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}

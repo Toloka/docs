@@ -131,6 +131,8 @@ If you already have a pool with the quality control settings you need, you can c
 
 {% include [faq-questions-are-control](../_includes/faq/pool-setup/questions-are-control.md) %}
 
+{% endcut %}
+
 {% cut "Ban" %}
 
 {% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
