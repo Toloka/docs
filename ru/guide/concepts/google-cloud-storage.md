@@ -99,35 +99,15 @@
 
     {% include [get-files-link-without-folder](../_includes/concepts/amazon-cloud-storage/id-get-files/link-without-folder.md) %}
 
-    {% if locale == "ru-ru" %}
-
     ```plaintext
     https://storage.googleapis.com/<бакет>/<имя-файла>
     ```
 
-    {% endif %}{% if locale == "en-com" %}
-
-    ```plaintext
-    https://storage.googleapis.com/<bucket>/<file-name>
-    ```
-
-    {% endif %}
-
     {% include [get-files-link-from-folder](../_includes/concepts/amazon-cloud-storage/id-get-files/link-from-folder.md) %}
-
-    {% if locale == "ru-ru" %}
 
     ```plaintext
     https://storage.googleapis.com/<бакет>/<путь-к-файлу>/<имя-файла>
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```plaintext
-    https://storage.googleapis.com/<bucket>/<file-path>/<file-name>
-    ```
-
-    {% endif %}
 
     {% include [get-files-files-links-create](../_includes/concepts/amazon-cloud-storage/id-get-files/files-links-create.md) %}
 

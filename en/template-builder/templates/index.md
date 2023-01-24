@@ -16,6 +16,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Text recognition from an image (OCR)](text-recognition.md)
 
+- [Accessories recommendations](accessories-recommendations.md)
+
 ## Video
 
 - [Video classification](video-moderation.md)

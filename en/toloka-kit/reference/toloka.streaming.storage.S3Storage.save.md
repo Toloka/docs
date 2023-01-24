@@ -1,5 +1,5 @@
 # save
-`toloka.streaming.storage.S3Storage.save` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/storage.py#L214)
+`toloka.streaming.storage.S3Storage.save` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/storage.py#L214)
 
 ```python
 save(

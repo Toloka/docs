@@ -2,7 +2,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). {% endif %} This way you can quickly get direct links to your images to add them to the task file or instructions.
+You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). This way you can quickly get direct links to your images to add them to the task file or instructions.
 
 {% endnote %}
 
@@ -36,28 +36,21 @@ To use files from Yandex Cloud:
 
 1. If you restricted access to the bucket, you need to get a separate link for each file by following the [instructions]({{ link-for-download }}).
 
-    Select a file and click {% if locale == "en-com" %}**Get a link → Copy**{% endif %}.
+    Select a file and click **Get a link → Copy**.
 
     All file links are created by the same template.
 
     Links look like this:
 
-    {% if locale == "en-com" %}
-
     ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
     ```
 
-    {% endif %}
-
     The link in the folder looks like this:
-    {% if locale == "en-com" %}
 
     ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
     ```
-
-    {% endif %}
 
     {% note info %}
 

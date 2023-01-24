@@ -18,7 +18,7 @@ Let's say we set up this rule in a pool with `overlap=5`:
 
 ![](../_images/control-rules/mvote/qcr-mvote_example1_2.png)
 
-It is activated when at least three of the tasks completed by the Toloker reach full overlap. When responses have been received from all five task Tolokers, the system determines which response was selected by the majority. If the Toloker's responses to two out of three tasks differ from the responses of the majority, the Toloker is banned from the project for 10 days. To collect all the responses needed to trigger the rule, enable {% if locale == "en-com" %}**Keep task order**{% endif %} in [the pool settings](pool_poolparams.md#keeptaskorder).
+It is activated when at least three of the tasks completed by the Toloker reach full overlap. When responses have been received from all five task Tolokers, the system determines which response was selected by the majority. If the Toloker's responses to two out of three tasks differ from the responses of the majority, the Toloker is banned from the project for 10 days. To collect all the responses needed to trigger the rule, enable **Keep task order** in [the pool settings](pool_poolparams.md#keeptaskorder).
 
 ![](../_images/control-rules/mvote/save-order-tasks-yes.png)
 
@@ -77,7 +77,7 @@ Let's say the task Toloker has to select at least three matching categories out 
 
 Try using [decomposition](solution-architecture.md) or [control tasks](../../glossary.md#control-task). This way you can better assess the quality of your Tolokers.
 
-#### Don't set the threshold {% if locale == "en-com" %}**Accept as majority**{% endif %} below 50% of the overlap or equal to the overlap.
+#### Don't set the threshold **Accept as majority** below 50% of the overlap or equal to the overlap.
 
 If the response threshold is equal to the overlap, the rule will only use the tasks where all the Tolokers gave the same responses, ignoring tasks with mismatching votes.
 
@@ -113,62 +113,62 @@ In this rule, all fields are required except **Recent tasks to use**. If you don
 
 #|
 || **Field**  | **Overview** ||
-||{% if locale == "en-com" %}**Accept as majority**{% endif %} | The number of matching responses that is considered the "majority vote" (for example, 3).||
-||{% if locale == "en-com" %}**Recent values to use**{% endif %} | How many recent responses from the Toloker to use.
+||**Accept as majority** | The number of matching responses that is considered the "majority vote" (for example, 3).||
+||**Recent values to use** | How many recent responses from the Toloker to use.
 
 If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.
 
 If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
 [Learn more](remember-values.md) about how this field works.||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed tasks.
+- **number of responses** — The number of completed tasks.
 
-- {% if locale == "en-com" %}**% correct answers**{% endif %} — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).
+- **% correct answers** — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).
 
-- {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).
+- **% incorrect answers** — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+||**then** | Action to perform for the condition:
 
-- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+- **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
 
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
+- **assign skill value** — Assign a fixed value to the [skill](nav.md).
 
-- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.
+- **assign skill from the field** — Save the percentage of the Toloker's correct responses in tasks as a skill value.
 
-- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- **accept user's answers** — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
 [Learn more](remember-values.md) about how this field works.||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**number of responses**{% endif %} — The number of completed tasks.
+- **number of responses** — The number of completed tasks.
 
-- {% if locale == "en-com" %}**% correct answers**{% endif %} — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).
+- **% correct answers** — The percentage of correct responses, meaning responses that matched the majority opinion (from 0 to 100).
 
-- {% if locale == "en-com" %}**% incorrect answers**{% endif %} — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).
+- **% incorrect answers** — The percentage of incorrect responses, meaning responses that didn't match the majority opinion (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+||**then** | Action to perform for the condition:
 
-- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+- **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.
 
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
+- **assign skill value** — Assign a fixed value to the [skill](nav.md).
 
-- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of the Toloker's correct responses in tasks as a skill value.
+- **assign skill from the field** — Save the percentage of the Toloker's correct responses in tasks as a skill value.
 
-- {% if locale == "en-com" %}**accept user's answers**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- **accept user's answers** — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.||
 |#
@@ -179,7 +179,7 @@ Examples are provided for simple [classification](../tutorials/image-classificat
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 
@@ -254,7 +254,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
   ![](../_images/control-rules/mvote/qcr-mvote_example-2.png)
 
-  This rule will never take effect because the number of responses counted ({% if locale == "en-com" %}**Recent values to use**{% endif %}) is less than the number of responses in the rule ({% if locale == "en-com" %}**number of responses**{% endif %}).
+  This rule will never take effect because the number of responses counted (**Recent values to use**) is less than the number of responses in the rule (**number of responses**).
 
 {% endlist %}
 

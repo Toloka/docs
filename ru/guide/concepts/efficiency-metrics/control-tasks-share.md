@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Контрольные задания{% endif %}{% if locale == "en-com" %}Control tasks{% endif %}
+# Контрольные задания
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

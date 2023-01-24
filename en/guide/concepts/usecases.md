@@ -48,7 +48,9 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
       - [Survey with Toloka template](../tutorials/questionnaire-toloka.md) — Create a form with questions and run a survey in Toloka.
 
-      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on a third-party platform.
+      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
+
+      - [Survey based on Qualtrics](../tutorials/questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.
 
   - **Field tasks**
 
@@ -86,7 +88,9 @@ Make sure you're [registered](access.md) as a requester. We recommend that you g
 
       - [Survey with Toloka template](../tutorials/questionnaire-toloka.md) — Set requirements for respondents and take a poll.
 
-      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on a third-party platform.
+      - [Survey on third-party platform](../tutorials/questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
+
+      - [Survey based on Qualtrics](../tutorials/questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.      
 
       - [Searching for product characteristics](../tutorials/internet-search.md) — A task in which Tolokers search for data about businesses online.
 

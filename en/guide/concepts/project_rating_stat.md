@@ -23,8 +23,4 @@ The project rating is the average rating across all categories. Pay particular a
 
 {% include [troubleshooting-low-rating-communication](../_includes/troubleshooting/result-questions/low-rating-communication.md) %}
 
-If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
-
-{% endcut %}
-
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -1,5 +1,5 @@
 # UserBonusCursor
-`toloka.streaming.cursor.UserBonusCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/cursor.py#L297)
+`toloka.streaming.cursor.UserBonusCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/cursor.py#L297)
 
 ```python
 UserBonusCursor(

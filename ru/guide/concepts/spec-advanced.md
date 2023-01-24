@@ -66,8 +66,6 @@ var ChildClass = extend(ParentClass, function() {
 
 Объект `Task` — задание.
 
-{% if locale == "ru-ru" %}
-
 ```json
 {
     "id": <строка>,
@@ -77,20 +75,6 @@ var ChildClass = extend(ParentClass, function() {
      }
 }
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```json
-{
-    "id": <string>,
-    "input_values": {
-        "<ID of the field with input data>": <value>,
-        …
-     }
-}
-```
-
-{% endif %}
 
 #|
 ||**Ключ**|**Значение**||
@@ -104,12 +88,11 @@ var ChildClass = extend(ParentClass, function() {
     "image": "http://images.com/1.png"
 }
 ```
+
 ||
 |#
 
 Объект `Solution` — ответ исполнителя на задание.
-
-{% if locale == "ru-ru" %}
 
 ```json
 {
@@ -120,20 +103,6 @@ var ChildClass = extend(ParentClass, function() {
     }
 }
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```json
-{
-    "task_id": <string>,
-    "output_values": {
-        "<input field id>": <value>,
-        …
-    }
-}
-```
-
-{% endif %}
 
 #|
 ||**Ключ**|**Значение**||
@@ -148,12 +117,11 @@ var ChildClass = extend(ParentClass, function() {
     "comment": "So white"
 }
 ```
+
 ||
 |#
 
 Объект `SolutionValidationError` — ошибка валидации ответа исполнителя.
-
-{% if locale == "ru-ru" %}
 
 ```json
 {
@@ -168,31 +136,12 @@ var ChildClass = extend(ParentClass, function() {
 }
 ```
 
-{% endif %}{% if locale == "en-com" %}
-
-```json
-{
-    "task_id": string,
-    "errors": {
-        "<input field ID>": {
-            "code": "<error code>",
-            "message": "<string>"
-        },
-        …
-    }
-}
-```
-
-{% endif %}
-
 #|
 ||**Ключ**|**Значение**||
 ||`task_id` | Идентификатор задания.||
 ||`errors` | Ошибки в формате: `"<id поля ввода>": {code: "<код ошибки>", message: "<сообщение об ошибке>"}`.
 
 Пример:
-
-{% if locale == "ru-ru" %}
 
 ```json
 "errors": {
@@ -203,18 +152,7 @@ var ChildClass = extend(ParentClass, function() {
 }
 ```
 
-{% endif %}{% if locale == "en-com" %}
-
-```json
-"errors": {
-    "colour": {
-        "code": "REQUIRED",
-        "message": "Required field"
-    }
-}
-```
-
-{% endif %}||
+||
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}

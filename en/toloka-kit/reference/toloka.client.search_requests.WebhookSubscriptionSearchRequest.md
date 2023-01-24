@@ -1,5 +1,5 @@
 # WebhookSubscriptionSearchRequest
-`toloka.client.search_requests.WebhookSubscriptionSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/search_requests.py#L855)
+`toloka.client.search_requests.WebhookSubscriptionSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/search_requests.py#L855)
 
 ```python
 WebhookSubscriptionSearchRequest(

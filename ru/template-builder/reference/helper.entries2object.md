@@ -25,7 +25,7 @@
 { "foo": "hello", "bar": "world" }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QRnzQ)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/BbI6p-3Z3twkmP)
 
 ## Свойства компонента {#properties}
 

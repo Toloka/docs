@@ -6,8 +6,6 @@
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-
-
 ## Два видео рядом (side-by-side) {#video-side-by-side}
 
 Чтобы расположить рядом два видео, можно использовать компонент [layout.side-by-side](../reference/layout.side-by-side.md). Компоненты с видео ([view.video](../reference/view.video.md)) добавьте в свойство `items`, а поля для ответов в свойство `controls`.
@@ -18,13 +16,11 @@
 
 {% endnote %}
 
-
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/0hSjKbdE3YChZj)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/KNi834ma3tvNBu)
 
 Вместо [layout.side-by-side](../reference/layout.side-by-side.md) вы можете использовать другие компоненты, например:
 - [view.list](../reference/view.list.md) — список любых элементов, вертикальный или горизонтальный.
 - [layout.columns](../reference/layout.columns.md) — набор горизонтальных колонок, в которые можно поместить видео. В отличие от [view.list](../reference/view.list.md), этот компонент дает больше опций для настройки ширины колонок.
-
 
 ## Одновременное воспроизведение двух видео {#same-time-video}
 
@@ -32,7 +28,7 @@
 
 Для этого добавьте кнопку ([view.action-button](../reference/view.action-button.md)), которая будет вызывать действие [action.play-pause](../reference/action.play-pause.md) для обоих видео. Чтобы по кнопке вызвать сразу два действия (для каждого видео), используйте компонент [action.bulk](../reference/action.bulk.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Tx-yXweI3YChre)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/e65F9wVL3tvNwv)
 
 Вы также можете сделать воспроизведение по горячей клавише. Используемая горячая клавиша будет написана на кнопке.
 
@@ -44,17 +40,16 @@
 
 {% endnote %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/aSNa6h-z3YCi9t)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/8MU78BrT3tvNR7)
 
 ## Сравнить несколько видео {#compare-more-video}
 
 В примерах выше в свойстве `items` вы можете добавить сколько угодно компонентов с видео.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/lxB4pmS-3YCiSd)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/LezaXWtv3tvNjd)
 
 Если вы хотите добавить много разных видео, которые не надо смотреть одновременно, лучше расположить их вертикально с помощью компонента [view.list](../reference/view.list.md). А чтобы кнопки для выбора ответа не потерялись, можно использовать компонент [layout.sidebar](../reference/layout.sidebar.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/F9Ea8ohi3YCiiN)
-
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7-xr01b63tvPRY)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

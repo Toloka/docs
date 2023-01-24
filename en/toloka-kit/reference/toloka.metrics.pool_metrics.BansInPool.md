@@ -1,5 +1,5 @@
 # BansInPool
-`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/pool_metrics.py#L426)
+`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/pool_metrics.py#L426)
 
 ```python
 BansInPool(
@@ -11,7 +11,7 @@ BansInPool(
     *,
     toloka_client: Optional[TolokaClient] = None,
     atoloka_client: Optional[AsyncTolokaClient] = None,
-    timeout: timedelta = ...
+    timeout: timedelta = _Nothing.NOTHING
 )
 ```
 

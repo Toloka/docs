@@ -6,7 +6,7 @@
 
 Компонент проверяет, что значением передаваемых данных является строка с нулевой длиной, массив без элементов, объект без ключей и значений или `null`.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/URYpB)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/QFJKVT983tz3sm)
 
 ## Свойства компонента {#properties}
 

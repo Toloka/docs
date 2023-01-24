@@ -2,7 +2,7 @@
 
 For this type of project, you can use the **Transcribing audio recordings** preset. It has pre-configured validation, task layout, and shortcuts.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TqsSX)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YrCIIps93ttEPe)
 
 {% cut "Components used in the example" %}
 
@@ -22,11 +22,11 @@ For this type of project, you can use the **Transcribing audio recordings** pres
 
 - If you want to [check](../best-practices/conditions.md) whether the audio has been started, replace the [condition.played-fully](../reference/condition.played-fully.md) component with [condition.played](../reference/condition.played.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TqsYq)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/fpVaBRrf3ttEQS)
 
 - To put a short audio track on repeat, change the properties of the [view.audio](../reference/view.audio.md) component by adding `loop: true`.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TqsfS)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/13Djihdu3ttERD)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -40,13 +40,13 @@ Choose whether a Toloker can select only one or multiple answer options:
 
   Use the [field.checkbox-group](../reference/field.checkbox-group.md) component.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TqsqW)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/jvW28nkY3ttESH)
 
 - One option (a radio button)
 
   Use the [field.radio-group](../reference/field.radio-group.md) component.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TqtMb)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/IFt0dzrp3ttESs)
 
 {% endlist %}
 
@@ -54,7 +54,7 @@ Choose whether a Toloker can select only one or multiple answer options:
 
   You can add text from input data to audio transcription tasks. For example, this is useful if an audio recording was recognized automatically, and now you need Tolokers to correct errors in the text. To do this, use the [view.text](../reference/view.text.md) component and refer to the number of the element in the input data array in the `content` property.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TqtBP)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/m8wGfgo73ttETg)
 
 ## See also {#see-also}
 

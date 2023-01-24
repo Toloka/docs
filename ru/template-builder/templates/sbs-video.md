@@ -6,7 +6,7 @@
 
 Посмотрите пример — он состоит из двух видео и кнопок выбора ответа. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vSBnRFLf3TXf7r)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/h0PX65GS3ttDRj)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -149,7 +149,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Agy26p4z3TXfRe)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/gIJRfreg3ttDTG)
 
 - Чтобы добавить подробное описание к заданию, используйте компонент [view.text](../reference/view.text.md).
 
@@ -164,7 +164,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/50mce2VJ3TXtHN)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/izMU-u7x3ttDUS)
 
 - Чтобы исполнитель мог оставить комментарий к заданию или своему ответу, добавьте поле для ввода текста [field.textarea](../reference/field.textarea.md).
 
@@ -184,7 +184,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/X_bdCg0m3TXkwV)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/X-T_nb_K3ttDVR)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
 
@@ -224,6 +224,6 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Wpdfy4mY3TXtue)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/7YaPTOBr3ttDWf)
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

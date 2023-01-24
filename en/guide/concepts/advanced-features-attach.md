@@ -20,8 +20,6 @@ For your convenience, here is ready-made code for the “Monitoring items at bus
 
 {% cut "HTML block" %}
 
-{% if locale == "en-com" %}
-
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -503,13 +501,9 @@ not_var{{else}}
 {{/if}}
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% cut "JavaScript block" %}
-
-{% if locale == "en-com" %}
 
 ```javascript
 var texts = {
@@ -1169,8 +1163,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 }
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% cut "CSS block" %}
@@ -1616,16 +1608,12 @@ Special components are used to upload files. You can read more about them in the
 
     Each block looks like this:
 
-    {% if locale == "en-com" %}
-
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
-
-    {% endif %}
 
 1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Monitoring items in businesses” template has 3 response buttons, which means that the `main` block should contain 3 `main__block` blocks for the buttons.
 
@@ -1634,8 +1622,6 @@ Special components are used to upload files. You can read more about them in the
     The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
     Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
-
-    {% if locale == "en-com" %}
 
     ```html
     <!-- photo -->
@@ -1681,15 +1667,11 @@ Special components are used to upload files. You can read more about them in the
     </div>
     ```
 
-    {% endif %}
-
     In this code, new fields are added for the first button with the name `btn_ok`. If you added fields to another button, replace `btn_ok` with the relevant button's name.
 
 1. Update the acceptance mode.
 
     The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
-
-    {% if locale == "en-com" %}
 
     ```html
     {{#if (equal verdict "ok")}}
@@ -1702,8 +1684,6 @@ Special components are used to upload files. You can read more about them in the
     {{/if}}
     ```
 
-    {% endif %}
-
     The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
     For example, in the “Monitoring items in businesses” template, three output values are described for three buttons: `ok`, `no_obj`, and `no_org`.
@@ -1711,8 +1691,6 @@ Special components are used to upload files. You can read more about them in the
     The `review__block` blocks contain a description of each field for this button.
 
     Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
-
-    {% if locale == "en-com" %}
 
     ```html
     <!-- photo -->
@@ -1766,8 +1744,6 @@ Special components are used to upload files. You can read more about them in the
     </div>
     ```
 
-    {% endif %}
-
     In this code, new fields are added for the first button with the name `btn_ok`. If you added fields to another button, replace `btn_ok` with the relevant button's name.
 
 #### Editing JS
@@ -1776,13 +1752,9 @@ Special components are used to upload files. You can read more about them in the
 
     The elements are described as follows:
 
-    {% if locale == "en-com" %}
-
     ```plaintext
     'property': 'value'
     ```
-
-    {% endif %}
 
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
@@ -1791,8 +1763,6 @@ Special components are used to upload files. You can read more about them in the
     Each button has a name for accessing its properties. For example, in the “Monitoring items in businesses” template, the buttons are named `btn_ok`, `btn_no_obj`, and `btn_no_org`. Remember the name of the button that you are adding new text to in the code.
 
     For example, in the “Monitoring items in businesses” template, the texts for the `btn_ok` button are located in the following code block:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     var texts = {
@@ -1808,11 +1778,7 @@ Special components are used to upload files. You can read more about them in the
     },
     ```
 
-    {% endif %}
-
 1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     'question_new_imgs': {
@@ -1830,11 +1796,7 @@ Special components are used to upload files. You can read more about them in the
     }
     ```
 
-    {% endif %}
-
 1. Find the `getTemplateData` function. It contains several blocks that look like this:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     if (<field checking condition>) {
@@ -1844,11 +1806,7 @@ Special components are used to upload files. You can read more about them in the
     }
     ```
 
-    {% endif %}
-
     Paste the following code after any of these blocks. It is used to send the photos, videos, and audio files uploaded by the Toloker to the input data. You need this to display the data in the acceptance mode:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     // photo
@@ -1876,13 +1834,9 @@ Special components are used to upload files. You can read more about them in the
     }
     ```
 
-    {% endif %}
-
 1. Add validation.
 
     Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Monitoring items in businesses” template, the code looks like this:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     if (!solution.output_values.verdict || solution.output_values.verdict === '') {
@@ -1904,13 +1858,9 @@ Special components are used to upload files. You can read more about them in the
     }
     ```
 
-    {% endif %}
-
     The response values for the buttons in this example, which are passed to the `verdict` output variable, have the same names as in the acceptance mode update step: `ok`, `no_obj`, and `no_org`.
 
     Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
-
-    {% if locale == "en-com" %}
 
     ```javascript
     if (!solution... ) {
@@ -1918,11 +1868,7 @@ Special components are used to upload files. You can read more about them in the
     }
     ```
 
-    {% endif %}
-
     add the following code:
-
-    {% if locale == "en-com" %}
 
     ```javascript
     if (!solution.output_values.new_imgs || solution.output_values.new_imgs.length === 0) {
@@ -1939,8 +1885,6 @@ Special components are used to upload files. You can read more about them in the
     this.errors = this.addError('Attach an audio', 'new_audio', this.errors);
     }
     ```
-
-    {% endif %}
 
 #### Editing CSS
 

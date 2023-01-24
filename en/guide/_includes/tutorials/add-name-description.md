@@ -1,1 +1,1 @@
-Under {% if locale == "en-com" %}**General information**{% endif %}, add the project name and description.
+Under **General information**, add the project name and description.

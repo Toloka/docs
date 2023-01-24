@@ -6,7 +6,7 @@
 
 По умолчанию — вправо, но можно указать направление в свойстве `payload`.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T9arg)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/CB77h-lv3tyxhh)
 
 ## Свойства компонента {#properties}
 

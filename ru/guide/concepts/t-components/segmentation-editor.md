@@ -4,7 +4,7 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать редактор для сегментации текста в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.text-annotation.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.text-annotation.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать редактор для сегментации текста в [Конструкторе шаблонов](../../../template-builder/reference/field.text-annotation.md).
 
 {% endnote %}
 
@@ -16,7 +16,7 @@
 
 {% endnote %}
 
-Чтобы задание было доступно только исполнителям, которые заходят из браузеров, нужно добавить фильтр {% if locale == "ru-ru" %}**Клиент**{% endif %}{% if locale == "en-com" %}**Client**{% endif %} и выбрать {% if locale == "ru-ru" %}**Веб-версия Толоки**{% endif %}{% if locale == "en-com" %}**Toloka web version**{% endif %}. Так исполнители не увидят задание в мобильных приложениях, но смогут зайти из мобильного браузера. Чтобы запретить выполнять задания из мобильных браузеров, добавьте еще один фильтр {% if locale == "ru-ru" %}**Категория устройства**{% endif %}{% if locale == "en-com" %}**Device type**{% endif %} = {% if locale == "ru-ru" %}**Персональный компьютер**{% endif %}{% if locale == "en-com" %}**Personal computer**{% endif %}.
+Чтобы задание было доступно только исполнителям, которые заходят из браузеров, нужно добавить фильтр **Клиент** и выбрать **Веб-версия Толоки**. Так исполнители не увидят задание в мобильных приложениях, но смогут зайти из мобильного браузера. Чтобы запретить выполнять задания из мобильных браузеров, добавьте еще один фильтр **Категория устройства** = **Персональный компьютер**.
 
 ## Что может редактор {#what}
 
@@ -58,7 +58,7 @@
 
 1. В блоке HTML добавьте компонент: `not_var{{textAnnotationInterface input tagsData}}`
 
-1. Добавьте код в блоке JS: {% if locale == "ru-ru" %}
+1. Добавьте код в блоке JS:
 
     ```javascript
     var tagsData = [
@@ -143,94 +143,7 @@
     });
     ```
 
-    {% endif %}{% if locale == "en-com" %}
-
-    ```javascript
-    var tagsData = [
-    {
-    'tag_color': 'Blue',
-    'tag_name': 'Name',
-    'tag_hotkey': 'q'
-    },
-    {
-    'tag_color': 'Yellow',
-    'tag_name': 'Brand',
-    'tag_hotkey': 'w'
-    },
-    {
-    'tag_color': 'Green',
-    'tag_name': 'Volume',
-    'tag_hotkey': 'e'
-    },
-    {
-    'tag_color': 'Red',
-    'tag_name': 'Error',
-    'tag_hotkey': 'r'
-    },
-    {
-    'tag_color': 'Gray',
-    'tag_name': 'Manufacturer',
-    'tag_hotkey': 't'
-    }
-    ];
-
-    function extend(ParentClass, constructorFunction, prototypeHash) {
-    constructorFunction = constructorFunction || function () {};
-    prototypeHash = prototypeHash || {};
-    if (ParentClass) {
-    constructorFunction.prototype = Object.create(ParentClass.prototype);
-    }
-    for (var i in prototypeHash) {
-    constructorFunction.prototype[i] = prototypeHash[i];
-    }
-    return constructorFunction;
-    }
-
-    exports.Task = extend(TolokaHandlebarsTask, function(options) {
-    TolokaHandlebarsTask.call(this, options);
-    }, {
-    getTemplateData: function() {
-    var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments);
-    data.tagsData = updateTagsData(tagsData);
-
-    return data;
-    },
-    onRender: function() {
-    var tagsData = this.getTask().input_values.tagsData;
-    createTextAnnotationInterface.call(this, tagsData);
-    },
-    addError: function(message, field, errors) {
-    errors || (errors = {
-    task_id: this.getOptions().task.id,
-    errors: {}
-    });
-    errors.errors[field] = {
-    message: message
-    };
-
-    return errors;
-    },
-
-    validate: function(solution) {
-    var errors = null;
-
-    // If no words are selected, we show an error message.
-
-    if (Object.keys(solution.output_values).length === 0 || Object.keys(solution.output_values.result).length === 0) {
-    errors = this.addError('Select at least one word', '__TASK__', errors);
-    }
-
-    return errors || TolokaHandlebarsTask.prototype.validate.call(this, solution);
-    },
-    onDestroy: function() {
-    // The task is completed, you can release global resources (if you used them)
-    }
-    });
-    ```
-
-    {% endif %}
-
-1. В блоке CSS добавьте стили: {% if locale == "ru-ru" %}
+1. В блоке CSS добавьте стили:
 
     ```css
     /* Задание на странице */
@@ -257,36 +170,6 @@
     }
     }
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```css
-    /* Task on the page */
-    .task {
-    display: block;
-    max-width: 1200px;
-    margin: 20px auto;
-    font-size: 18px;
-    }
-
-    .task-suite {
-    height: 100%;
-    }
-
-    /* Task display on mobile devices */
-    @media screen and (max-width: 767px) {
-    .task {
-    border: none;
-    }
-
-    .task_focused {
-    box-shadow: none;
-    -webkit-box-shadow: none;
-    }
-    }
-    ```
-
-    {% endif %}
 
 1. Нажмите кнопку **Предпросмотр** и посмотрите, что получилось.
 
@@ -320,8 +203,6 @@
 Вы можете менять цвет тега, название и назначенную горячую клавишу. Список цветов менять нельзя — он зашит в js-библиотеку редактора для выделения текста.
 
 {% cut "Пример js-кода с описанием тегов" %}
-
-{% if locale == "ru-ru" %}
 
 ```javascript
 var tagsData = [
@@ -377,65 +258,6 @@ var tagsData = [
   }
 ];
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```javascript
-var tagsData = [
-  {
-    'tag_color': 'Blue',
-    'tag_name': 'Name',
-    'tag_hotkey': 'q'
-  },
-  {
-    'tag_color': 'Yellow',
-    'tag_name': 'Brand',
-    'tag_hotkey': 'w'
-  },
-  {
-    'tag_color': 'Green',
-    'tag_name': 'Volume',
-    'tag_hotkey': 'e'
-  },
-  {
-    'tag_color': 'Red',
-    'tag_name': 'Error',
-    'tag_hotkey': 'r'
-  },
-  {
-    'tag_color': 'Gray',
-    'tag_name': 'Manufacturer',
-    'tag_hotkey': 't'
-  },
-  {
-    'tag_color': 'Brown',
-    'tag_name': 'Name',
-    'tag_hotkey': 'y'
-  },
-  {
-    'tag_color': 'Violet',
-    'tag_name': 'Brand',
-    'tag_hotkey': 'u'
-  },
-  {
-    'tag_color': 'Orange',
-    'tag_name': 'Volume',
-    'tag_hotkey': 'i'
-  },
-  {
-    'tag_color': 'Pink',
-    'tag_name': 'Error',
-    'tag_hotkey': 'a'
-  },
-  {
-    'tag_color': 'Turquoise',
-    'tag_name': 'Manufacturer',
-    'tag_hotkey': 's'
-  }
-];
-```
-
-{% endif %}
 
 {% endcut %}
 

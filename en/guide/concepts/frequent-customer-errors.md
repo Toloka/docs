@@ -18,7 +18,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 - Vertical decomposition: divide tasks into several projects.
 
-- Horizontal decomposition: use [non-automatic acceptance](../../glossary.md#assignment-review) with verification by other Tolokers.
+- Horizontal decomposition: use [manual review](../../glossary.md#assignment-review) with verification by other Tolokers.
 
 - For greater efficiency, combine both methods.
 
@@ -138,7 +138,7 @@ Using [filters](../../glossary.md#filters), you can filter out Tolokers who are 
 
     For tasks with auto acceptance, the best quality control rules are control tasks, majority vote, fast responses, and recompletion of assignments from banned users.
 
-    For tasks with non-automatic acceptance, the best methods are fast responses and review results.
+    For tasks with manual review, the best methods are fast responses and review results.
 
     [Learn more](control.md) about quality control rules.
 

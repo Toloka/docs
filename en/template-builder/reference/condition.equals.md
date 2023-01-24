@@ -4,7 +4,7 @@ Checks whether the original value is equal to the specified value. If it matches
 
 When substituting values, you can refer to `data.*` or another element using `$ref`. You can also use [helpers](helpers.md) and [conditions](conditions.md) to get the value.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asS3V)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/2RjfdQbt3tz7xo)
 
 ## Component properties {#properties}
 

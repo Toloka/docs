@@ -38,9 +38,9 @@ To complete your tasks in the sandbox:
 
 1. Log in to the sandbox using the requester account.
 
-1. Open the [Tolokers]({{ users }}) page and click {% if locale == "en-com" %}**Add trusted Tolokers**{% endif %}.
+1. Open the [Tolokers]({{ users }}) page and click **Add trusted Tolokers**.
 
-1. Click {% if locale == "en-com" %}**Add Toloker**{% endif %} and enter the case-sensitive username of the created Toloker.
+1. Click **Add Toloker** and enter the case-sensitive username of the created Toloker.
 
     Only trusted Tolokers can access your tasks.
 
@@ -58,11 +58,11 @@ To move tasks from the sandbox to the production version:
 
 1. Link the sandbox and production version accounts:
 
-    1. Open the {% if locale == "en-com" %}**Integrations**{% endif %} tab in the production version on the [profile]({{ profile }}) page, click **Get OAuth token**, and copy the OAuth token displayed.
+    1. Open the **Integrations** tab in the production version on the [profile]({{ profile }}) page, click **Get OAuth token**, and copy the OAuth token displayed.
 
     1. Open the same tab in the sandbox on the [profile]({{ sandbox-profile }}) page, paste the copied token into the **Main Toloka OAuth token** field, and click **Add OAuth token**.
 
-1. Go to the project page in the sandbox and click {% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → ![Export button](../_images/location-job/project/export.svg) Export**{% endif %}.
+1. Go to the project page in the sandbox and click **![Drop-down button](../_images/drop-down.svg) → ![Export button](../_images/location-job/project/export.svg) Export**.
 
 1. Choose the pools to export and click **Export**.
 

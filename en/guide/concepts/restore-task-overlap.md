@@ -18,13 +18,13 @@ This rule can increase the cost of the pool.
 
 Use the rule if you want to get responses only from honest Tolokers to each task in the given overlap.
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [non-automatic acceptance](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [manual review](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
 
 To download the responses of users who are not blocked:
 
-1. On the pool page, click {% if locale == "en-com" %}**Download results**{% endif %} on the right.
-1. Select {% if locale == "en-com" %}**Exclude assignments by banned Tolokers**{% endif %}.
-1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
+1. On the pool page, click **Download results** on the right.
+1. Select **Exclude assignments by banned Tolokers**.
+1. Click **Download results**.
 
 ![](../_images/control-rules/restore-task-overlap/good-results.png)
 
@@ -44,22 +44,22 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 #|
 || **Field** | **Overview**||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**Toloker banned**{% endif %} — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), or [skipping tasks](../../glossary.md#skipping-tasks)).
+- **Toloker banned** — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), or [skipping tasks](../../glossary.md#skipping-tasks)).
 
-- {% if locale == "en-com" %}**Toloker filtered out**{% endif %} — The Toloker no longer meets one or more [filters](filters.md).
+- **Toloker filtered out** — The Toloker no longer meets one or more [filters](filters.md).
 
-- {% if locale == "en-com" %}**skill**{% endif %} — The Toloker no longer meets the specific skill filter.
+- **skill** — The Toloker no longer meets the specific skill filter.
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action performed under the {% if locale == "en-com" %}**If**{% endif %} condition:
+||**then** | Action performed under the **If** condition:
 
-- {% if locale == "en-com" %}**extend overlap by**{% endif %} — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
+- **extend overlap by** — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
 
-- {% if locale == "en-com" %}**reduce overlap by**{% endif %} — Ignore the Toloker's response.
+- **reduce overlap by** — Ignore the Toloker's response.
 
-    If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option {% if locale == "en-com" %}**Open pool if closed**{% endif %}.||
+    If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option **Open pool if closed**.||
 |#
 
 ## Examples {#examples}

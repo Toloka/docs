@@ -58,3 +58,7 @@ In the request body, specify **all** the pool [parameters](create-pool.md#pool-p
 ## Response {#response}
 
 Contains updated information about the pool (see the description in the [Create a pool](create-pool.md#response) section).
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/pool-edit.md)

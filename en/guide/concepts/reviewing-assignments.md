@@ -4,7 +4,7 @@ If you don't want Tolokers who made a lot of mistakes to do your tasks in the fu
 
 ## When to use {#when-use}
 
-If [non-automatic acceptance](../../glossary.md#pool) (assignment review) is set in the [pool](offline-accept.md), add a rule to:
+If [manual review](offline-accept.md) is set in the [pool](../../glossary.md#pool), add a rule to:
 
 - Set the Toloker's [skill](../../glossary.md#skill) based on their responses.
 
@@ -22,37 +22,37 @@ The **If** and **then** fields in this rule are mandatory. If you don't fill in 
 
 #|
 || **Field** | **Overview** ||
-||{% if locale == "en-com" %}**Recent values to use**{% endif %} | How many recent responses from the Toloker to use.
+||**Recent values to use** | How many recent responses from the Toloker to use.
 
 If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.
 
 If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
 To learn more about how this field works, go to [“Remember values” parameter](remember-values.md).||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**total reviewed responses**{% endif %} — The number of the Toloker's assignments that were reviewed.
+- **total reviewed responses** — The number of the Toloker's assignments that were reviewed.
 
-- {% if locale == "en-com" %}**accepted responses (%)**{% endif %} — The percentage of the Toloker's assignments that were accepted (from 0 to 100).
+- **accepted responses (%)** — The percentage of the Toloker's assignments that were accepted (from 0 to 100).
 
-- {% if locale == "en-com" %}**rejected responses (%)**{% endif %} — The percentage of the Toloker's assignments that were rejected (from 0 to 100).
+- **rejected responses (%)** — The percentage of the Toloker's assignments that were rejected (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition {% if locale == "en-com" %}**If**{% endif %}:
+||**then** | Action to perform for the condition **If**:
 
-- {% if locale == "en-com" %}**suspend**{% endif %} — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
-- {% if locale == "en-com" %}**assign skill value**{% endif %} — Assign a fixed value to the [skill](nav.md).
+- **assign skill value** — Assign a fixed value to the [skill](nav.md).
 
-- {% if locale == "en-com" %}**accept all assignments from this Toloker in the pool**{% endif %} — Requires the [non-automatic acceptance](offline-accept.md) option to be set.
+- **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
     Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
 
-- {% if locale == "en-com" %}**ban**{% endif %} — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+- **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
 
-- {% if locale == "en-com" %}**assign skill from the field**{% endif %} — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.||
+- **assign skill from the field** — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.||
 |#
 
 ## Examples of rules {#examples}
@@ -65,7 +65,7 @@ You can also assign a skill that you can use to either block access to tasks for
 
 {% note warning %}
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
 
 {% endnote %}
 

@@ -1,10 +1,10 @@
 # Processing rejected and accepted assignments
 
-You can enable the [Non-automatic acceptance](offline-accept.md) option to [reject or accept](accept.md) assignments that Tolokers completed. Assignments are rejected and accepted on a page-by-page basis.
+You can enable the [manual review](offline-accept.md) option to [reject or accept](accept.md) assignments that Tolokers completed. Assignments are rejected and accepted on a page-by-page basis.
 
 {% note info %}
 
-Once the review period in the {% if locale == "en-com" %}**Review period in days**{% endif %} field runs out, tasks are accepted automatically.
+Once the review period in the **Review period in days** field runs out, tasks are accepted automatically.
 
 {% endnote %}
 
@@ -29,17 +29,17 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 #|
 || **Field**  | **Overview**||
-||{% if locale == "en-com" %}**If**{% endif %} | A condition for performing the action in the {% if locale == "en-com" %}**then**{% endif %} field:
+||**If** | A condition for performing the action in the **then** field:
 
-- {% if locale == "en-com" %}**submitted assignments**{% endif %} — The number of [task suites](../../glossary.md#task-suite) that are completed and awaiting review.
+- **submitted assignments** — The number of [task suites](../../glossary.md#task-suite) that are completed and awaiting review.
 
-- {% if locale == "en-com" %}**approved assignments**{% endif %} — The number of task suites accepted after the review.
+- **approved assignments** — The number of task suites accepted after the review.
 
-- {% if locale == "en-com" %}**rejected assignments**{% endif %} — The number of task suites rejected after the review.
+- **rejected assignments** — The number of task suites rejected after the review.
 
-- {% if locale == "en-com" %}**assignment becomes approved**{% endif %} — The task suite was accepted after the review.
+- **assignment becomes approved** — The task suite was accepted after the review.
 
-- {% if locale == "en-com" %}**assignment becomes approved after rejection**{% endif %} — The task suite was first rejected, but then accepted after the review.
+- **assignment becomes approved after rejection** — The task suite was first rejected, but then accepted after the review.
 
     {% note info %}
 
@@ -47,16 +47,16 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
     {% endnote %}
 
-- {% if locale == "en-com" %}**assignment becomes rejected**{% endif %} — The task suite was rejected after the review.
+- **assignment becomes rejected** — The task suite was rejected after the review.
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||{% if locale == "en-com" %}**then**{% endif %} | Action to perform for the condition:
+||**then** | Action to perform for the condition:
 
-- {% if locale == "en-com" %}**extend overlap by**{% endif %} — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
+- **extend overlap by** — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
 
-    If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option {% if locale == "en-com" %}**Open pool if closed**{% endif %}.
+    If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option **Open pool if closed**.
 
-- {% if locale == "en-com" %}**extend overlap by**{% endif %} — Decrease the number of times a task suite can be completed by Tolokers. For example, use this action to cancel the recompletion of accepted assignments.||
+- **extend overlap by** — Decrease the number of times a task suite can be completed by Tolokers. For example, use this action to cancel the recompletion of accepted assignments.||
 |#
 
 ## Rule example {#examples}

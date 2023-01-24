@@ -20,8 +20,6 @@ In the section contents, select the stage where you encountered the problem and 
 
 {% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
 
-## Sandbox {#sandbox}
-
 {% include [troubleshooting-dont-see-task](../_includes/troubleshooting/sandbox/dont-see-task.md) %}
 
 {% include [troubleshooting-export-error](../_includes/troubleshooting/sandbox/export-error.md) %}
@@ -146,7 +144,7 @@ In the section contents, select the stage where you encountered the problem and 
 
 [Get closing documents and invoices](support.md)
 
-[Refund money transferred to the Toloka account](support.md)
+[Refund money transferred to the Toloka account](../troubleshooting/support.md)
 
 ## Tolokers {#annotators}
 

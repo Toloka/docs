@@ -20,7 +20,7 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 1. Make sure the pool isn't running.
 
-1. Click {% if locale == "en-com" %}**Edit**{% endif %} in the {% if locale == "en-com" %}**Pool tasks**{% endif %} block.
+1. Click **Edit** in the **Pool tasks** block.
 
 1. Open the **General**, **Control**, or **Training** tab. Create a control or a training task from another type of task.
 
@@ -42,7 +42,7 @@ After you have created the control tasks, make sure that different variations of
 
 1. Go to the task markup page.
 
-1. Open the {% if locale == "en-com" %}**Training tasks → Distribution of correct responses for control tasks**{% endif %} tab.
+1. Open the **Training tasks → Distribution of correct responses for control tasks** tab.
 
     The distribution of responses is shown as a percentage.
 
@@ -95,7 +95,7 @@ If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overla
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
+- [Top up your account](refill.md).
 - [Start the pool](pool-run-and-stop.md).
 
 ## See also {#see-also}

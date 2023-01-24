@@ -1,24 +1,24 @@
 # open_pool
-`toloka.async_client.client.AsyncTolokaClient.open_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.open_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/async_client/client.py#L0)
 
 ```python
 async open_pool(self, pool_id: str)
 ```
 
-Starts distributing tasks from the pool
+Opens a pool.
 
 
-Tolokers will see your tasks only after that call.
+After opening the pool, tasks can be assigned to Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**str**|<p>ID of the pool that will be started.</p>
+`pool_id`|**str**|<p>The ID of the pool.</p>
 
 * **Returns:**
 
-  Pool object with new status.
+  The pool with updated status.
 
 * **Return type:**
 
@@ -26,7 +26,7 @@ Tolokers will see your tasks only after that call.
 
 **Examples:**
 
-Open the pool for Tolokers.
+Opening a pool.
 
 ```python
 toloka_client.open_pool(pool_id='1')

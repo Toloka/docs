@@ -20,8 +20,6 @@ For your convenience, here is ready-made code for the “Monitoring field object
 
 {% cut "HTML block" %}
 
-{% if locale == "en-com" %}
-
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -467,13 +465,9 @@ not_var{{else}}
 {{/if}}
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% cut "JavaScript block" %}
-
-{% if locale == "en-com" %}
 
 ```javascript
 var texts = {
@@ -1219,8 +1213,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 }
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% endcut %}
@@ -1241,16 +1233,12 @@ Add two new strings to the input data specification:
 
     Each block looks like this:
 
-    {% if locale == "en-com" %}
-
     ```html
     `<div class="block_name">`
     <!-- code for the block that may contain nested blocks -->
     ...
     </div>
     ```
-
-    {% endif %}
 
 1. Find the `info` block responsible for displaying the input specification. It contains the `info__block` blocks that describe individual fields within the input specification. Paste the following code after the required field:
 
@@ -1279,8 +1267,6 @@ Add two new strings to the input data specification:
 
     In the `info` block, find the `info__review` block that contains several `info__review-block` blocks. After the desired `info__review-block` block, insert the blocks with new input fields:
 
-    {% if locale == "en-com" %}
-
     ```html
     <!-- In one line in acceptance mode -->
     <div class="info__review-block">
@@ -1301,11 +1287,7 @@ Add two new strings to the input data specification:
     </div>
     ```
 
-    {% endif %}
-
     In the `info` block, find the `info__block` blocks between the strings `not_var{{else}}` and `{{/if}}`. After the desired `info__review-block` block, insert the blocks with new input fields:
-
-    {% if locale == "en-com" %}
 
     ```html
     <!-- One after another in Toloker mode -->
@@ -1327,33 +1309,23 @@ Add two new strings to the input data specification:
     </div>
     ```
 
-    {% endif %}
-
 #### Editing JS
 
 1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
     The elements are described as follows:
 
-    {% if locale == "en-com" %}
-
     ```plaintext
     'property': 'value'
     ```
-
-    {% endif %}
 
     The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
 1. The `texts` constant at the very beginning of the file stores all interface texts. Add the titles of the new fields to it:
 
-    {% if locale == "en-com" %}
-
     ```javascript
     'new_input_1__title': 'Input field 1:',
     'new_input_2__title': 'Input field 2:',
     ```
-
-    {% endif %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -16,7 +16,7 @@
 || `hint` | _string_ | Текст подсказки. ||
 || `rtl` | _object_ | Тексты на арабском, иврите и некоторых других языках принято писать слева направо. Используйте это свойство, чтобы задать правильный режим отображения для компонента.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/amHBJ)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/UExGq8IQ3tz4Yo)
 
 [Подробнее про RTL-языки](https://www.w3.org/International/questions/qa-scripts).
 ||

@@ -36,11 +36,11 @@ You don't need to create this skill, it is created when you add the first traini
 
    {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click {% if locale == "en-com" %}**+Skill**{% endif %}.
+1. Click **+Skill**.
 
 1. Choose a skill and specify the skill value. If there is no skill, create it.
 
-1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+1. Click **Save**.
 
 ## What's next {#what-next}
 
@@ -56,7 +56,7 @@ You don't need to create this skill, it is created when you add the first traini
 ## For developers {#for-developers}
 
 - [Toloka API: Setting skill value](../../api/concepts/set-skill.md)
-- [Toloka-Kit: Setting user skill](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_skill.md)
+- [Toloka-Kit recipe: Assign skill to Toloker](../../toloka-kit/recipes/assign-skill.md)
 
 ## Troubleshooting {#troubleshooting}
 

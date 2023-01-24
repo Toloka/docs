@@ -1,5 +1,5 @@
 # Message
-`toloka.client.message_thread.MessageThread.Message` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/message_thread.py#L121)
+`toloka.client.message_thread.MessageThread.Message` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/message_thread.py#L121)
 
 ```python
 Message(

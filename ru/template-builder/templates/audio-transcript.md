@@ -4,7 +4,7 @@
 
 В Толоке есть пресет **Расшифровка аудиозаписей** . В нем уже настроена валидация, внешний вид задания и горячие клавиши.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/SsYtF)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/maTG7UcO3tw2zQ)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -20,21 +20,17 @@
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-
-
 ## Что еще можно настроить {#add-more}
 
 - Если вам важно [проверить](../best-practices/conditions.md), что аудио запускалось — замените компонент [condition.played-fully](../reference/condition.played-fully.md) на [condition.played](../reference/condition.played.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/T324W)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/IVSadUA-3tw3Fv)
 
 - Пригодится для коротких аудио — поставьте их на повтор, добавив в свойства компонента [view.audio](../reference/view.audio.md) `loop: true`.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/T3279)
-
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/2oaN24-43tw3dp)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
-
 
 ## Другие варианты кнопок {#options}
 
@@ -46,13 +42,13 @@
 
   Используйте компонент [field.checkbox-group](../reference/field.checkbox-group.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/SWicE)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/JH8EtbjP3tw3qH)
 
 - Один (радиокнопка)
 
   Используйте компонент [field.radio-group](../reference/field.radio-group.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/T2zwe)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VZzcEez-3tw45T)
 
 {% endlist %}
 
@@ -60,6 +56,6 @@
 
 В заданиях на расшифровку аудио можно добавлять текст из входных данных. Например, если аудиозапись была распознана автоматически, а сейчас вам нужно, чтобы исполнители исправили в тексте ошибки. Для этого используйте компонент [view.text](../reference/view.text.md) и в свойстве `content` сошлитесь на номер элемента массива входных данных.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T2zvs)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/BvpfGWEt3tw4KC)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

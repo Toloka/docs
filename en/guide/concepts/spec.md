@@ -6,13 +6,11 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-The {% if locale == "en-com" %}**task interface**{% endif %} defines the visual appearance of the task for the Toloker and the logic for processing responses.
+The **task interface** defines the visual appearance of the task for the Toloker and the logic for processing responses.
 
 A user-friendly interface improves the quality of results, helps Tolokers complete tasks faster, and lets you set a lower price per task.
-{% if locale == "en-com" %}
 
 To learn how to create a user-friendly interface, read the article in our [knowledge base]({{ toloka-knowledge-base }}).
-{% endif %}
 
 ## Interface configuration block {#interface-section}
 
@@ -34,9 +32,9 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 {% cut "How do I add a component?" %}
 
-1. Open the task interface editor. To do this, find the {% if locale == "en-com" %}**Task interface**{% endif %} section, click ![](../_images/location-job/helper-icon.svg), and select the component.
+1. Open the task interface editor. To do this, find the **Task interface** section, click ![](../_images/location-job/helper-icon.svg), and select the component.
 
-    Click {% if locale == "en-com" %}**More**{% endif %} to see an example and a full list of parameters.
+    Click **More** to see an example and a full list of parameters.
 
 1. Copy the expression using the ![](../_images/copy.svg) button and paste it into the HTML block.
 
@@ -48,13 +46,10 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 - **Display the text in the task.** Add the `text` field with the **string** type in the input data. Then in the task interface (in the HTML block), you can add this text as a variable, for example:
 
-    {% if locale == "en-com" %}
-
     ```html
     <p>Read the text: not_var{{text}}</p>
     ```
 
-    {% endif %}
 - **Upload a file to the task, for example, an image.** Add the `url` field with the **URL** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
 
     ```html
@@ -73,14 +68,10 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 - **Ask Tolokers to select one of the values.** Add the `result` field with the **string** type in the output data. Make this field mandatory and specify `Yes` and `No` as acceptable values. Then add a component [Radio button](t-components/radiobuttons.md) component in the task interface (in the HTML block) and specify the field name in the `name` attribute:
 
-    {% if locale == "en-com" %}
-
     ```html
     {{field type="radio" name="result" label="Yes" value="Yes" hotkey="1"}}
     {{field type="radio" name="result" label="No" value="No" hotkey="2"}}
     ```
-
-    {% endif %}
 
 {% endcut %}
 
@@ -90,7 +81,7 @@ In the **JS** block, you can add rules for response processing in JavaScript. [S
 
 You can also connect JavaScript libraries to create the interface. For example, if you have several [projects](../../glossary.md#project) with similar tasks, save the method descriptions in a separate file and add it as a library.
 
-To connect the JavaScript library, click the ![](../_images/settings.svg) button in the {% if locale == "en-com" %}**Task interface**{% endif %} block and add links to libraries in the **JS** field.
+To connect the JavaScript library, click the ![](../_images/settings.svg) button in the **Task interface** block and add links to libraries in the **JS** field.
 
 ## CSS block {#css}
 
@@ -102,35 +93,35 @@ In the **CSS** block, you can declare the design for tags and classes. For examp
 };
 ```
 
-In addition, you can connect a CSS library. To do this, click the ![](../_images/settings.svg) button in the {% if locale == "en-com" %}**Task interface**{% endif %} block and add links to libraries in the **CSS** filed.
+In addition, you can connect a CSS library. To do this, click the ![](../_images/settings.svg) button in the **Task interface** block and add links to libraries in the **CSS** filed.
 
 ## Preview features {#preview}
 
 {% note alert %}
 
-Changes to the input and output data, as well as the number of tasks per suite aren't saved after you exit {% if locale == "en-com" %}**Preview**{% endif %}.
+Changes to the input and output data, as well as the number of tasks per suite aren't saved after you exit **Preview**.
 
 {% endnote %}
 
-To view the resulting task, click {% if locale == "en-com" %}**Preview**{% endif %}. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-suite). You can also complete one or more tasks and get responses.
+To view the resulting task, click **Preview**. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-suite). You can also complete one or more tasks and get responses.
 
 {% cut "How do I change the number of standard tasks?" %}
 
 You can change the number of tasks with standard data on the Preview page:
 
-1. Click {% if locale == "en-com" %}**Change input data**{% endif %}.
+1. Click **Change input data**.
 
-1. To add a task, click {% if locale == "en-com" %}**Add task**{% endif %}.
+1. To add a task, click **Add task**.
 
     To delete a task, click its number, then click ![](../_images/bin.svg).
 
-1. Click {% if locale == "en-com" %}**Apply**{% endif %}.
+1. Click **Apply**.
 
 {% endcut %}
 
 {% cut "How to check the input data display" %}
 
-Add input data to check if files or text hints are displayed on the task suite. To do this, click {% if locale == "en-com" %}**Change input data**{% endif %} and choose one of the methods:
+Add input data to check if files or text hints are displayed on the task suite. To do this, click **Change input data** and choose one of the methods:
 
 {% list tabs %}
 
@@ -138,29 +129,29 @@ Add input data to check if files or text hints are displayed on the task suite. 
 
   1. Change the input data fields.
 
-      To change the task type to [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task), add correct responses and a hint (the {% if locale == "en-com" %}**Add correct answers**{% endif %} button).
+      To change the task type to [control](../../glossary.md#control-task) or [training](../../glossary.md#training-task), add correct responses and a hint (the **Add correct answers** button).
 
       To go to the next task, click the task number at the bottom of the table. To delete a task, click ![](../_images/bin.svg).
 
-  1. Click {% if locale == "en-com" %}**Apply**{% endif %}.
+  1. Click **Apply**.
 
 - File upload
 
-  1. Get the sample upload file here: {% if locale == "en-com" %}**Download example file**{% endif %}.
+  1. Get the sample upload file here: **Download example file**.
 
   1. [Add the task data](pool_csv.md) to the file.
 
   1. Save the file in UTF-8 encoding with the [tsv](pool_csv.md) extension.
 
-  1. Click the {% if locale == "en-com" %}**Upload file**{% endif %} button and choose the file.
+  1. Click the **Upload file** button and choose the file.
 
-  1. Check whether the fields are filled in correctly in the {% if locale == "en-com" %}**Table**{% endif %}.
+  1. Check whether the fields are filled in correctly in the **Table**.
 
       If the column headers are invalid, you will get the message "Error loading the file".
 
       If the value of the required input field is not specified, or the number of fields in the header and row do not match, the task won't load. Refresh the page to return to viewing, correct the errors in the file, and load it again.
 
-  1. Click {% if locale == "en-com" %}**Apply**{% endif %}.
+  1. Click **Apply**.
 
 - Data in JSON format
 
@@ -170,9 +161,9 @@ Add input data to check if files or text hints are displayed on the task suite. 
 
       If the box is bordered in red, the JSON is not valid and the data won't be saved.
 
-  1. Click {% if locale == "en-com" %}**Apply**{% endif %}.
+  1. Click **Apply**.
 
-  Complete the task and click {% if locale == "en-com" %}**Submit**{% endif %}.
+  Complete the task and click **Submit**.
 
 {% endlist %}
 
@@ -194,7 +185,7 @@ Use the [Sandbox](../../glossary.md#sandbox) to check if files, images, audio, o
 
 ## Controls in a task {#controls}
 
-To change the set of controls, click **Show common interface elements** at the bottom of the {% if locale == "en-com" %}**Task Interface**{% endif %} section.
+To change the set of controls, click **Show common interface elements** at the bottom of the **Task Interface** section.
 
 By default, the task suite displays:
 
@@ -203,13 +194,11 @@ By default, the task suite displays:
 - **Price per task suite**.
 - **Task name** (project name).
 
-- The following buttons: {% if locale == "en-com" %}**Message to requester**{% endif %}, {% if locale == "en-com" %}**Guidelines**{% endif %}, {% if locale == "en-com" %}**Fullscreen**{% endif %}, {% if locale == "en-com" %}**Submit**{% endif %}, {% if locale == "en-com" %}**Skip**{% endif %}, {% if locale == "en-com" %}**Exit**{% endif %}.
+- The following buttons: **Message to requester**, **Guidelines**, **Fullscreen**, **Submit**, **Skip**, **Exit**.
 
 {% note tip %}
 
-{% if locale == "en-com" %}
 Read the [article]({{ toloka-knowledge-base }}) on how to make the task interface intuitive and user-friendly.
-{% endif %}
 
 {% endnote %}
 

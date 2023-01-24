@@ -1,5 +1,5 @@
 # create_project
-`toloka.client.TolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1041)
+`toloka.client.TolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1058)
 
 ```python
 create_project(self, project: Project)

@@ -1,5 +1,5 @@
 # Income
-`toloka.client.collectors.Income` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/collectors.py#L349)
+`toloka.client.collectors.Income` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/collectors.py#L363)
 
 ```python
 Income(self, *, uuid: Optional[UUID] = None)

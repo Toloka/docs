@@ -56,7 +56,7 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#assignment-review) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
+- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [manual review](../../glossary.md#assignment-review) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
     {% note alert %}
 

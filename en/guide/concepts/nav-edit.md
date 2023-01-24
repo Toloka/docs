@@ -14,7 +14,7 @@ You can both edit the skill itself and change the skill values for a specific To
 
 1. Enter the new skill value.
 
-1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+1. Click **Save**.
 
 ## Editing the skill parameters {#reward-edit}
 
@@ -36,8 +36,8 @@ You can both edit the skill itself and change the skill values for a specific To
 
 - [Toloka API: Setting skill value](../../api/concepts/set-skill.md)
 - [Toloka API: Editing skill](../../api/concepts/edit-skill.md)
-- [Toloka-Kit: Setting user skill](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_skill.md)
-- [Toloka-Kit: Updating user skill](../../toloka-kit/reference/toloka.client.TolokaClient.update_skill.md)
+- [Toloka-Kit recipe: Edit skill](../../toloka-kit/recipes/edit-skill.md)
+- [Toloka-Kit recipe: Assign skill to Toloker](../../toloka-kit/recipes/assign-skill.md)
 
 ## Troubleshooting {#troubleshooting}
 

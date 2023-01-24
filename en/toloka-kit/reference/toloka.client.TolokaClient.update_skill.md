@@ -1,5 +1,5 @@
 # update_skill
-`toloka.client.TolokaClient.update_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2092)
+`toloka.client.TolokaClient.update_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2147)
 
 ```python
 update_skill(

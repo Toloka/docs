@@ -1,5 +1,5 @@
 # Gender
-`toloka.client.filter.Gender.Gender` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/filter.py#L256)
+`toloka.client.filter.Gender.Gender` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L256)
 
 Toloker's gender.
 

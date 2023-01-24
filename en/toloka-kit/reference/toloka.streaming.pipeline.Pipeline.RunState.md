@@ -1,13 +1,13 @@
 # RunState
-`toloka.streaming.pipeline.Pipeline.RunState` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/pipeline.py#L255)
+`toloka.streaming.pipeline.Pipeline.RunState` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/pipeline.py#L255)
 
 ```python
 RunState(
     self,
     pipeline_key: str,
-    workers: Dict[_Worker, None] = ...,
-    waiting: Dict[_Worker, Task] = ...,
-    pending: Dict[_Worker, datetime] = ...
+    workers: Dict[_Worker, None] = _Nothing.NOTHING,
+    waiting: Dict[_Worker, Task] = _Nothing.NOTHING,
+    pending: Dict[_Worker, datetime] = _Nothing.NOTHING
 )
 ```
 

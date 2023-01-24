@@ -99,10 +99,7 @@ Requester ID. ||
 Checks who the object belongs to:
 
 - `true` — The user whose OAuth token is specified in the request.
-- `false` — Another account (employee or owner).
-{% if audience == "internal" %}**owner.company_id** | **string**
-
-The requester's company ID.{% endif %} ||
+- `false` — Another account (employee or owner).||
 || **training** | **boolean**
 
 Whether the skill is related to a training pool:

@@ -1,5 +1,5 @@
 # archive_autoquality_pools
-`toloka.autoquality.optimizer.AutoQuality.archive_autoquality_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/autoquality/optimizer.py#L434)
+`toloka.autoquality.optimizer.AutoQuality.archive_autoquality_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/autoquality/optimizer.py#L434)
 
 ```python
 archive_autoquality_pools(self)

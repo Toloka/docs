@@ -6,7 +6,7 @@
 
 Если вам нужно добавить группу переключателей, используйте [field.checkbox-group](field.checkbox-group.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T6Vii)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/MQjYPS093tz759)
 
 ## Свойства компонента {#properties}
 

@@ -1,6 +1,6 @@
 # Managing the requester's personal account
 
-To send tasks for completion, you must have money in your Toloka account. {% if locale == "en-com" %}For more information, see [Topping up your account](refill.md).{% endif %}
+To send tasks for completion, you must have money in your Toloka account. For more information, see [Topping up your account](refill.md).
 
 All payments between requesters and Tolokers are made in U.S. dollars. The account balance is shown in the main menu:
 
@@ -28,21 +28,21 @@ The price of a task is set by the requester in the [pool settings](../../glossar
 
 The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md).
 
-The amount by project is shown in your [profile]({{ profile }}) (on the {% if locale == "en-com" %}**Spent**{% endif %} tab). You can see total fees for the pool tasks on the pool page (the {% if locale == "en-com" %}**Budget spent (+ markup)**{% endif %} and {% if locale == "en-com" %}**Approximate budget (+ markup)**{% endif %} fields).
+The amount by project is shown in your [profile]({{ profile }}) (on the **Spent** tab). You can see total fees for the pool tasks on the pool page (the **Budget spent (+ markup)** and **Approximate budget (+ markup)** fields).
 
 ## Expenses in the requester's profile {#track-budget}
 
 To see your spending history:
 
-1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
+1. Go to the [requester profile]({{ profile }}) and switch to the **Spent** tab.
 
 1. Under the **Spending history** title, select a period.
 
 1. Select the type of the expenses:
 
-    - {% if locale == "en-com" %}**All costs**{% endif %} —  all expenses for the period.
+    - **All costs** —  all expenses for the period.
 
-    - {% if locale == "en-com" %}**Reserved**{% endif %} — reserved money for the period.
+    - **Reserved** — reserved money for the period.
 
 1. In the section below you will see:
 
@@ -54,13 +54,13 @@ To see your spending history:
 
 {% note info %}
 
-To save the report with the spending data in the PDF file format, click {% if locale == "en-com" %}**Download report as PDF**{% endif %}. To choose another file format, click ![](../_images/other/drop-down.svg) at the right.
+To save the report with the spending data in the PDF file format, click **Download report as PDF**. To choose another file format, click ![](../_images/other/drop-down.svg) at the right.
 
 {% endnote %}
 
 ## Get invoices and bills {#invoices}
 
-1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
+1. Go to the [requester profile]({{ profile }}) and switch to the **Spent** tab.
 
 1. Click **Get invoices and bills**.
 
@@ -72,7 +72,7 @@ To save the report with the spending data in the PDF file format, click {% if lo
 
 To get notifications when you have less than 5 dollars left on your account:
 
-1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Notifications**{% endif %} tab.
+1. Go to the [requester profile]({{ profile }}) and switch to the **Notifications** tab.
 
 1. In the **Low funds** row, choose which notification method to use:
 

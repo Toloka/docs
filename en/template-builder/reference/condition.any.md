@@ -2,7 +2,7 @@
 
 Checks that **at least one** of the child conditions is met. If none of the conditions is met, the component returns `false`.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/SEYdx)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/EwQflGu73twjyK)
 
 If you need all conditions to be met, use the [condition.all](condition.all.md) component. You can also combine these components.
 

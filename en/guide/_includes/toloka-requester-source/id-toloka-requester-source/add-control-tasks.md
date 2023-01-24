@@ -1,1 +1,1 @@
-To create control tasks, add correct answers to some of your tasks.
+Create control tasks at the **Add control tasks for checking performance** step. To do it, add correct answers to some of your tasks.

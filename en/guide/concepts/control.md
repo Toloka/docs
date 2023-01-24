@@ -56,13 +56,13 @@ You can configure quality control in the [pool](qa-pool-settings.md) and in the 
 
 - Pool
 
-  Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the page) and click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %} in the {% if locale == "en-com" %}**Quality control**{% endif %} section.
+  Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the page) and click **Add Quality Control Rule** in the **Quality control** section.
 
-  You can copy quality control settings from another pool. To do this, click {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} in the {% if locale == "en-com" %}**Audience**{% endif %} section.
+  You can copy quality control settings from another pool. To do this, click **Copy audience filters and quality control settings** in the **Audience** section.
 
 - Project
 
-  Open the project page, open the {% if locale == "en-com" %}**Quality control**{% endif %} tab and click {% if locale == "en-com" %}**Set quality control**{% endif %}. Then click {% if locale == "en-com" %}**+ Add Quality Control Rule**{% endif %}.
+  Open the project page, open the **Quality control** tab and click **Set quality control**. Then click **+ Add Quality Control Rule**.
 
   The rules are applied to all project pools, so you can't change settings in just one of the pools.
 

@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Сбалансированность контрольных заданий{% endif %}{% if locale == "en-com" %}Control task balance{% endif %}
+# Сбалансированность контрольных заданий
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

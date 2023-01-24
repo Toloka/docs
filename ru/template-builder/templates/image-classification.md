@@ -4,7 +4,7 @@
 
 В Толоке есть пресет **Классификация изображений**. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TJ7W2)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/KRRz-EB43tw8Yw)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -22,18 +22,17 @@
 
 - Чтобы добавить подробное описание к заданию, используйте компонент [view.text](../reference/view.text.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TeyZ9)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/YsORJn-33tw8pp)
 
 - Чтобы исполнитель мог оставить комментарий к заданию или своему ответу, добавьте поле для ввода текста [field.textarea](../reference/field.textarea.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TeyS2)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/22L2Ya1-3tw8zR)
 
 - Добавьте горячие клавиши на поворот и увеличение картинки в конфигурации [plugin.hotkeys](../reference/plugin.hotkeys.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Teyp8)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/zjwOVfpv3tw9D6)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
-
 
 ## Другие варианты кнопок {#mult-ans-options}
 
@@ -45,7 +44,7 @@
 
   Если ответов на вопрос может быть несколько — настройте чекбоксы [field.checkbox-group](../reference/field.checkbox-group.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Tez2w)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/k9iz7gbU3tw9Ni)
 
 - Один (радиокнопка)
 
@@ -53,7 +52,7 @@
 
   Если вариантов ответа много или названия длинные, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md), как в примере.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TezMY)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/bZD84hhV3tw9Wx)
 
 {% endlist %}
 
@@ -61,7 +60,7 @@
 
 С помощью [helper.if](../reference/helper.if.md) можно показывать любой элемент интерфейса только при выборе определенного ответа. Например, отметить верные об изображении утверждения можно только если оно загрузилось.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TiVTm)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/yaj57gva3tw9iw)
 
 ## Сравнение картинки и поискового запроса {#search}
 
@@ -69,13 +68,13 @@
 
 Добавьте кнопку, по которой исполнители будут открывать результаты поиска, и сформируйте ссылку поискового запроса с помощью компонента [helper.search-query](../reference/helper.search-query.md). Чтобы убедиться, что исполнитель перешел по ссылке и проверил ее содержимое, настройте валидацию, как в примере.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TeKBs)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/wXJE1Snn3tw9ws)
 
 #### Попарное сравнение с веб-страницей
 
 С помощью компонента [view.iframe](../reference/view.iframe.md) вы можете отобразить веб-страницу во встроенном окне. Расположите рядом картинку, используя [layout.side-by-side](../reference/layout.side-by-side.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TeKQA)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/W4RYbsIh3twAAc)
 
 #### Попарное сравнение с веб-страницей в рамке мобильного устройства
 
@@ -85,6 +84,6 @@
 - [view.device-frame](../reference/view.device-frame.md) — оборачивает окно в рамку смартфона;
 - [layout.side-by-side](../reference/layout.side-by-side.md) — располагает картинку и окно с результатами запроса рядом друг с другом.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TeKPK)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/90cLP-5-3twARA)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

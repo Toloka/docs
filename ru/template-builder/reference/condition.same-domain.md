@@ -8,7 +8,7 @@
 
 Поддомен `www.` при проверке не учитывается, то есть ссылки на сайты`www.example.ru` и `example.ru` будут считаться одинаковыми.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UHYTp)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/TYUz1EVv3twUiW)
 
 Как передать адрес ссылки:
 

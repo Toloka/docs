@@ -1,5 +1,5 @@
 # MixerConfig
-`toloka.client.pool.mixer_config.MixerConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/mixer_config.py#L7)
+`toloka.client.pool.mixer_config.MixerConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/pool/mixer_config.py#L7)
 
 ```python
 MixerConfig(
@@ -20,24 +20,24 @@ MixerConfig(
 )
 ```
 
-Parameters for automatically creating a task suite ("smart mixing").
+Settings for automatically grouping tasks into suites (smart mixing).
 
 
-For more information about creating task see Toloka Requester's guide.
+You can set the number of general, training and control tasks in a task suite. Also, you control task shuffling and other settings.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`real_tasks_count`|**int**|<p>The number of main tasks to put in a task suite. The maximum number of tasks in a task suite if training_task_distribution_function or golden_task_distribution_function are used.</p>
-`golden_tasks_count`|**int**|<p>The number of control (&quot;golden set&quot;) tasks to put in a task suite.</p>
-`training_tasks_count`|**int**|<p>The number of training tasks to put in a task suite.</p>
-`min_real_tasks_count`|**Optional\[int\]**|<p>Minimum number of main tasks in a task suite (if the number of assignments left is less than the one specified in real_tasks_count). Minimum — 0. By default, the value is the same as in real_tasks_count.</p>
-`min_golden_tasks_count`|**Optional\[int\]**|<p>Minimum number of control tasks in a task suite (if the number of assignments left is less than the one specified in golden_tasks_count). Minimum — 0. By default, the value is the same as in golden_tasks_count.</p>
-`min_training_tasks_count`|**Optional\[int\]**|<p>Minimum number of training tasks in a task suite (if the number of assignments left is less than the one specified in golden_tasks_count). Minimum — 0. By default, the value is the same as in training_tasks_count.</p>
-`force_last_assignment`|**Optional\[bool\]**|<p>Setup for the last set of tasks in the pool, if less than the minimum remaining number of tasks are not completed (mixer_config.min_real_tasks_count). Values:</p> <ul> <li>true - issue an incomplete task set.</li> <li>false - don&#x27;t issue tasks. This option can be used if you are adding tasks after the pool is started. This parameter only applies to main tasks. The number of control and training tasks in the last set must be complete (golden_tasks_count, training_tasks_count).</li> </ul>
-`force_last_assignment_delay_seconds`|**Optional\[int\]**|<p>Waiting time (in seconds) since the addition of the task, or increase in the overlap, prior to the issuance of the last set of tasks in the pool. The minimum is 0, the maximum is 86,400 seconds (one day). This parameter can be used if the pool has force_last_assignment: True.</p>
-`mix_tasks_in_creation_order`|**Optional\[bool\]**|<p>The order for including tasks in suites:</p> <ul> <li>True — Add tasks to suites in the order in which they were uploaded. For example, in a pool with an   overlap of 5, the first uploaded task will be included in the first 5 task suites. They will be   assigned to 5 Tolokers.</li> <li>False — Add tasks to suites in random order.</li> </ul>
-`shuffle_tasks_in_task_suite`|**Optional\[bool\]**|<p>The order of tasks within a suite:</p> <ul> <li>True — Random.</li> <li>False — The order in which tasks were uploaded.</li> </ul>
-`golden_task_distribution_function`|**Optional\[[TaskDistributionFunction](toloka.client.task_distribution_function.TaskDistributionFunction.md)\]**|<p>Issue of control tasks with uneven frequency. The option allows you to change the frequency of checking as the Toloker completes more tasks.</p>
-`training_task_distribution_function`|**Optional\[[TaskDistributionFunction](toloka.client.task_distribution_function.TaskDistributionFunction.md)\]**|<p>Issue of training tasks with uneven frequency. The option allows you to change the frequency of training tasks as the Toloker completes more tasks.</p>
+`real_tasks_count`|**int**|<p>The number of general tasks in a task suite. If `training_task_distribution_function` or `golden_task_distribution_function` are used then `real_tasks_count` denotes the maximum number of tasks in a task suite.</p>
+`golden_tasks_count`|**int**|<p>The number of control tasks in a task suite.</p>
+`training_tasks_count`|**int**|<p>The number of training tasks in a task suite.</p>
+`min_real_tasks_count`|**Optional\[int\]**|<p>The minimum number of general tasks in a task suite if there are not enough tasks left to create a full task suite. Allowed range: from 0 to `real_tasks_count`. By default, the `min_real_tasks_count` value equals to the `real_tasks_count` value.</p>
+`min_golden_tasks_count`|**Optional\[int\]**|<p>The minimum number of control tasks in a task suite if there are not enough control tasks left to create a full task suite. Allowed range: from 0 to `golden_tasks_count`. By default, the `min_golden_tasks_count` value equals to the `golden_tasks_count` value.</p>
+`min_training_tasks_count`|**Optional\[int\]**|<p>The minimum number of training tasks in a task suite if there are not enough training tasks left to create a full task suite. Allowed range: from 0 to `training_tasks_count`. By default, the `min_training_tasks_count` value equals to the `training_tasks_count` value.</p>
+`force_last_assignment`|**Optional\[bool\]**|<p>A setting used when the number of remaining general tasks in the pool is less than the `min_real_tasks_count` value. Note, that there must be enough control and training tasks to create a task suite.</p> <ul> <li>True — An incomplete task suite is assigned.</li> <li>False — An incomplete task suite is not assigned. It is useful if you add tasks to an open pool.</li> </ul> <p>Default: `True`.</p>
+`force_last_assignment_delay_seconds`|**Optional\[int\]**|<p>Time in seconds before assigning the last task suite. This parameter is used if `force_last_assignment` is set to `True`. Allowed range: from 0 to 86,400 seconds (one day).</p>
+`mix_tasks_in_creation_order`|**Optional\[bool\]**|<ul> <li>True — Tasks are grouped in task suites in the order they were created.</li> <li>False — Tasks are chosen for a task suite in a random order.</li> </ul>
+`shuffle_tasks_in_task_suite`|**Optional\[bool\]**|<ul> <li>True — Tasks in a task suite are shuffled on the page.</li> <li>False — Tasks in a task suite are placed on the page in the order they were created.</li> </ul>
+`golden_task_distribution_function`|**Optional\[[TaskDistributionFunction](toloka.client.task_distribution_function.TaskDistributionFunction.md)\]**|<p>Customizing the number of control tasks in a task suite depending on completed tasks by a Toloker.</p>
+`training_task_distribution_function`|**Optional\[[TaskDistributionFunction](toloka.client.task_distribution_function.TaskDistributionFunction.md)\]**|<p>Customizing the number of training tasks in a task suite depending on completed tasks by a Toloker.</p>

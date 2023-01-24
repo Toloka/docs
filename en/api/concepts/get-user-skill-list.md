@@ -58,10 +58,9 @@ Skill ID. It is used to get the list of the Tolokers who have the specific skill
 
 Parameters to sort by:
 
-- `id` — Skill ID.
+- `id` — Skill value ID.
 - `created` — The date when the skill was created, in UTC in the YYYY-MM-DD format.
 - `created` — The date when the skill was changed, in UTC in the YYYY-MM-DD format.
-
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** |

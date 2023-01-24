@@ -1,25 +1,26 @@
 # archive_training
-`toloka.client.TolokaClient.archive_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1655)
+`toloka.client.TolokaClient.archive_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1690)
 
 ```python
 archive_training(self, training_id: str)
 ```
 
-Sends training to archive
+Archives a training.
 
 
-The training must be in the status "closed".
-The archived training is not deleted. You can access it when you will need it.
+Only closed trainings can be archived.
+
+You can access archived trainings later.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of training that will be archived.</p>
+`training_id`|**str**|<p>The ID of the training to be archived.</p>
 
 * **Returns:**
 
-  Object with updated status.
+  The training with updated status.
 
 * **Return type:**
 

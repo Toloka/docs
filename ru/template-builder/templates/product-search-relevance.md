@@ -8,7 +8,7 @@
 
 Посмотрите пример — он состоит из изображения, поля для поискового запроса и радиокнопки для оценки релевантности. В нем уже настроена валидация и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ajV9o-mE3UGqbd)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/UdToWZS43ttCyi)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -207,6 +207,6 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Ryo07JaT3UYB9k)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/P1WbTTcV3ttCzs)
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

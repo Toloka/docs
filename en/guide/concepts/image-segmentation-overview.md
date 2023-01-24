@@ -16,17 +16,17 @@ In this example, the solution consists of the following steps:
 
 Each project consists of the following basic steps:
 
-1. **Create a project**. In the project, you describe the [input and output data](../../glossary.md#input-output-data), [task interface](../../glossary.md#task-interface), and [instructions](../../glossary.md#instructions) for completing a task.
+1. Create a project. In the project, you describe the [input and output data](../../glossary.md#input-output-data), [task interface](../../glossary.md#task-interface), and [instructions](../../glossary.md#instructions) for completing a task.
 
-1. **Create a [task pool](../../glossary.md#pool) in the project**. In the pool, you set up [quality control](../../glossary.md#quality-control) and [filters](../../glossary.md#filters) for Tolokers.
+1. Create a [task pool](../../glossary.md#pool) in the project. In the pool, you set up [quality control](../../glossary.md#quality-control) and [filters](../../glossary.md#filters) for Tolokers.
 
-1. **Upload a [file with tasks](https://tlk.s3.yandex.net/wsdm2020/dataset_1.tsv) to the pool**.
+1. Upload a [file with tasks](https://tlk.s3.yandex.net/wsdm2020/dataset_1.tsv) to the pool.
 
-1. **Start the pool.**
+1. Start the pool.
 
-1. **Obtain and aggregate the results**.
+1. Obtain and aggregate the results.
 
-Find out how to top up your account in the relevant section: [For non-residents of Russia](refill.md).
+Find out how to top up your account in the [Topping up your account](refill.md) section.
 
 If you need help rating tasks, read about [setting up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
 

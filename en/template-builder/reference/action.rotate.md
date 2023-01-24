@@ -4,7 +4,7 @@ Rotates the specified component by 90 degrees.
 
 By default it rotates to the right, but you can specify the direction in the `payload` property.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asRrg)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/XsK8hUgX3tyxpL)
 
 ## Component properties {#properties}
 

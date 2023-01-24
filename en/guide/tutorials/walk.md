@@ -28,9 +28,9 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-    1. Select the {% if locale == "en-com" %}**Spatial Crowdsourcing**{% endif %} preset.
+    1. Select the **Spatial Crowdsourcing** preset.
 
-1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
+1. Click **Choose this preset** in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -38,21 +38,21 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - **Name to show Tolokers**: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-create-project-step-1.png)
 
-1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like.
+1. In the **Task interface** section, set up what your tasks will look like.
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the [example](https://ya.cc/t/ZFj9dvvG3Zg9Xw) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project. This code has validation and task layout pre-configured.
+    1. Copy the code of the [example](https://ya.cc/t/Fz_--ktr3ttAX9) and paste it to the **Config** section of your project. This code has validation and task layout pre-configured.
 
         [![Create a project. Config section](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-section.png)
 
-    1. You can edit the code. For example, to configure the text above the {% if locale == "en-com" %}**Take photo**{% endif %} section, replace the sample text with your value in the `label` property.
+    1. You can edit the code. For example, to configure the text above the **Take photo** section, replace the sample text with your value in the `label` property.
 
         [![Create a project. Config text](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-config-text.png)
 
@@ -62,7 +62,7 @@ Before you begin:
 
         {% note info %}
 
-        To learn about other properties of the {% if locale == "en-com" %}**Config**{% endif %} section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/reference/index.md).
+        To learn about other properties of the **Config** section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/reference/index.md).
 
         {% endnote %}
 
@@ -70,9 +70,9 @@ Before you begin:
 
         {% include [toloka-requester-source-click-show-specifications](../_includes/toloka-requester-source/id-toloka-requester-source/click-show-specifications.md) %}
 
-        - {% if locale == "en-com" %}**Input data**{% endif %}: Parameters in the file with raw task data.
+        - **Input data**: Parameters in the file with raw task data.
 
-        - {% if locale == "en-com" %}**Output data**{% endif %}: Parameters in the file with labeling results.
+        - **Output data**: Parameters in the file with labeling results.
 
         {% include [toloka-requester-source-specification-match](../_includes/toloka-requester-source/id-toloka-requester-source/specification-match.md) %}
 
@@ -90,7 +90,7 @@ Before you begin:
 
     {% include [toloka-requester-source-instruction-note](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-note.md) %}
 
-1. To save your data and continue, click {% if locale == "en-com" %}**Create a project**{% endif %}.
+1. To save your data and continue, click **Create a project**.
 
     {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
 
@@ -98,47 +98,53 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click {% if locale == "en-com" %}**Create new pool**{% endif %}.
+1. Click **Add a pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Create**.
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-    1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
+    1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
         [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-language-filter.png)
 
-    1. Tasks in pools are available in the web version of Toloka and the mobile app by default. Make your tasks available in the mobile app only: add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the {% if locale == "en-com" %}**Toloka for mobile**{% endif %} option.
+    1. Tasks in pools are available in the web version of Toloka and the mobile app by default. Make your tasks available in the mobile app only: add the **Client** filter and select the **Toloka for mobile** option.
 
-    1. Use the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
+    1. Use the **Speed/quality balance** slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
         {% include [tutorials-speed-filter-image](../_includes/tutorials/speed-filter-image.md) %}
 
-1. Under {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 21).
+    1. Click the **Review task responses manually** toggle, and specify the number of days for checking the task in the **Review period in days** field (for example, 21).
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
-    1. Click {% if locale == "en-com" %}**Add a quality control rule → Results of assignment review**{% endif %}, and enter the following values:
+    1. Click **Add a quality control rule → Results of assignment review**, and enter the following values:
 
         [![Create a pool. Results of assignment review rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-rule.png)
 
         This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
-    1. Add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. When the overlap value is {% if locale == "en-com" %}**1**{% endif %}, you should resend assignments to the pool for other Tolokers to redo them.
+    1. Add the **Processing rejected and accepted assignments** rule. When the overlap value is **1**, you should resend assignments to the pool for other Tolokers to redo them.
 
         [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-rejected.png)
 
         This means that if you reject assignments during the review, they’ll be sent for re-completion to another Toloker.
 
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In the {% if locale == "en-com" %}**Additional settings**{% endif %}, specify {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}. It should be long enough to get to the place, find the specified point and upload the photos. For field tasks, this time is usually 86,400 seconds (24 hours).
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
+
+    It should be long enough to get to the place, find the specified point and upload the photos. For field tasks, this time is usually 86,400 seconds (24 hours).
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks.
+    1. In **Price per task suite**, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks.
 
         For this type of project, a task suite must contain only one task. You will set the number of tasks per suite later in this tutorial.
 
@@ -146,54 +152,54 @@ Before you begin:
 
         For field tasks, it is usually 1. This means that each task will have 1 response.
 
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload data {#upload}
+    1. Create the tasks for Tolokers:
 
-At this step, upload your task data to Toloka.
+        1. To download a template, click one of the buttons:
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+            - **Template in XLSX**
 
-1. Create the tasks for Tolokers:
+            - **Template in TSV**
 
-    1. To download a template, click one of the buttons:
+            - **Template in JSON**
 
-        - {% if locale == "en-com" %}**Template in XLSX**{% endif %}
+            For this type of project, the file with tasks must four parameters:
 
-        - {% if locale == "en-com" %}**Template in TSV**{% endif %}
+            - `INPUT:name`: A string with the name of the object.
 
-        - {% if locale == "en-com" %}**Template in JSON**{% endif %}
+            - `INPUT:position`: The coordinates of the place where the Toloker should go.
 
-        For this type of project, the file with tasks must four parameters:
+            - `AI:latitude`, `AI:longitude`: The latitude and longitude from the `INPUT:position` parameter presented separately. The values of `INPUT:position`, `AI:latitude` and `AI:longitude` should have the same accuracy, that is have the same number of digits after the decimal separator.
 
-        - `INPUT:name`: A string with the name of the object.
+            ```plaintext
+            INPUT:name	INPUT:position	AI:latitude	AI:longitude
+            Name 1	53.947516,27.669428	53.947516	27.669428
+            Name 2	53.947517,27.669429	53.947517	27.669429
+            Name 3	53.947518,27.669428	53.947518	27.669428
+            ```
 
-        - `INPUT:position`: The coordinates of the place where the Toloker should go.
+        1. Open the downloaded file, and replace the sample values with your data. You can use a service like Google Maps to get the coordinates.
 
-        - `AI:latitude`, `AI:longitude`: The latitude and longitude from the `INPUT:position` parameter presented separately. The values of `INPUT:position`, `AI:latitude` and `AI:longitude` should have the same accuracy, that is have the same number of digits after the decimal separator.
+        1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-        ```plaintext
-        INPUT:name	INPUT:position	AI:latitude	AI:longitude
-        Name 1	53.947516,27.669428	53.947516	27.669428
-        Name 2	53.947517,27.669429	53.947517	27.669429
-        Name 3	53.947518,27.669428	53.947518	27.669428
-        ```
+        1. Click **Continue**.
 
-    1. Open the downloaded file, and replace the sample values with your data. You can use a service like Google Maps to get the coordinates.
+    1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+        1. Go to the **Set manually** tab.
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        1. In this type of project, the task suite must contain only one task:
 
-1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
+            [![Upload data. Tasks in suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png)
 
-    1. Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab.
+    1. Click **Combine tasks into suites**.
 
-    1. In this type of project, the task suite must contain only one task:
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-        [![Upload data. Tasks in suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-number-tasks.png)
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 
@@ -203,7 +209,7 @@ At this step, upload your task data to Toloka.
 
     [![Start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-start-labeling-step-2.png)
 
-1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
+1. In the pop-up panel, review the budget and click **Launch**.
 
 ## See the results {#results}
 
@@ -211,13 +217,13 @@ Track the labeling progress on the pool page. You can start the review when the 
 
 After the specified time period, all responses are automatically accepted, regardless of their quality.
 
-1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
+1. Go to the pool, and click **Review assignments**.
 
     [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-review-results.png)
 
 1. Choose an assignment.
 
-1. Check the responses, and click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment to specify the reason.
+1. Check the responses, and click **Accept** or **Decline**. For rejected responses, enter a comment to specify the reason.
 
     {% note info %}
 
@@ -225,13 +231,13 @@ After the specified time period, all responses are automatically accepted, regar
 
     {% endnote %}
 
-1. After checking all the assignments, click {% if locale == "en-com" %}**Download results**{% endif %}.
+1. After checking all the assignments, click **Download results**.
 
     [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download.png)
 
     You will get the TSV file with the labeling results.
 
-1. To download the files Tolokers attached to the tasks, go to the pool page and click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button. Choose {% if locale == "en-com" %}**Download attachments**{% endif %} from the drop-down menu.
+1. To download the files Tolokers attached to the tasks, go to the pool page and click the arrow next to the **Download results** button. Choose **Download attachments** from the drop-down menu.
 
     [![See the results. Download attachments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png =484x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/walk/walk-results-download-attachments.png)
 

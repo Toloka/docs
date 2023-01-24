@@ -1,5 +1,5 @@
 # FastSubmittedCount
-`toloka.client.conditions.FastSubmittedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/conditions.py#L177)
+`toloka.client.conditions.FastSubmittedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/conditions.py#L177)
 
 ```python
 FastSubmittedCount(
