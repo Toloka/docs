@@ -16,15 +16,15 @@ There shouldn't be too few pages available. Otherwise:
 
 #### A large pool with 1% of control tasks (good)
 
-There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, a user can complete up to 100 suites.
+There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, a Toloker can complete up to 100 suites.
 
 #### A small pool with 1% control tasks (bad)
 
-There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can only complete 1 suite.
+There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each Toloker can only complete 1 suite.
 
 #### A small pool with 10% control tasks (good)
 
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each user can complete up to 100 suites
+There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. Hence, each Toloker can complete up to 100 suites
 
 {% endcut %}
 
@@ -34,7 +34,7 @@ If there are few control tasks in the open pool, [add new control tasks](../../.
 
 {% cut "What for" %}
 
-In a large pool with few control tasks, a situation might occur when users who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
+In a large pool with few control tasks, a situation might occur when Tolokers who have completed a lot of tasks in the project stop getting new task suites. This happens when the Toloker completes all control tasks in the pool.
 
 {% endcut %}
 

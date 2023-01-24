@@ -52,23 +52,19 @@ To set up quality control:
 
     - [Processing of rejected and accepted assignments](reassessment-after-accepting.md): Send rejected assignments to other Tolokers to redo them.
 
+## What's next {#what_next}
+
+- [Create a task pool](pool-main.md) in the project.
+- Learn more about how to set up a project:
+
+    - [Writing instructions](instruction.md).
+    - [Input and output data](incoming.md).
+    - [Task interface](spec.md).
+    - [Adapt a task for mobile devices](mobile.md)
+
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I set quality control in a pool correctly?" %}
-
-The settings for [quality control](../../glossary.md#quality-control) rules depend on the type of tasks. General recommendations:
-
-- Always use one or more ways to control quality of answers.
-
-- Counting [fast responses](quick-answers.md) makes sense for most tasks.
-
-- If the Toloker has to choose between options (for example, by selecting checkboxes), check the answers using [majority vote](mvote.md) or [control tasks](goldenset.md).
-
-- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](dynamic-overlap.md) and [majority vote](mvote.md) check.
-
-- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task) with artificial examples where the choice is evident.
-
-{% endcut %}
+{% include [faq-set-quality-control](../_includes/faq/pool-setup/set-quality-control.md) %}
 
 {% cut "How many control tasks do I need to add?" %}
 
@@ -124,15 +120,5 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 {% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
 {% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
-
-## What's next {#what_next}
-
-- [Create a task pool](pool-main.md) in the project.
-- Learn more about how to set up a project:
-
-    - [Writing instructions](instruction.md).
-    - [Input and output data](incoming.md).
-    - [Task interface](spec.md).
-    - [Adapt a task for mobile devices](mobile.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

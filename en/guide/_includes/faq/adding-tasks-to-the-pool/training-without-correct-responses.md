@@ -2,6 +2,6 @@
 
 You can't create a training like this, because for the response to be counted as correct it must exactly match the control text.
 
-For projects using free text input or attached files, you can make a pre-selection task with non-automatic acceptance. You can admit good Tolokers to your main pool based on their skill.
+For projects using free text input or attached files, you can make a pre-selection task with manual review. You can admit good Tolokers to your main pool based on their skill.
 
 {% endcut %}

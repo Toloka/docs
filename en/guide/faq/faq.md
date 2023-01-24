@@ -126,6 +126,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-assign-skill](../_includes/faq/pool-setup/assign-skill.md) %}
 
+{% include [faq-set-skill](../_includes/faq/pool-setup/set-skill.md) %}
+
 {% include [faq-limit-number-tolokers](../_includes/faq/pool-setup/limit-number-tolokers.md) %}
 
 {% include [faq-arbitrary-user](../_includes/faq/pool-setup/arbitrary-user.md) %}
@@ -166,37 +168,17 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-make-different](../_includes/faq/pool-setup/make-different.md) %}
 
-{% cut "Isn't the exam a regular pool that I pay for? How does it differ from a regular pool?" %}
+{% include [faq-exam-pool](../_includes/faq/pool-setup/exam-pool.md) %}
 
-An exam pool contains only control tasks. It's usually small and used for checking how well Tolokers learned to do your tasks after they read the instructions and completed the [training](../concepts/additionals-q.md#selection). Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero.
+{% include [faq-time-specified](../_includes/faq/pool-setup/time-specified.md) %}
 
-Based on the results of responses to control tasks, you can assign a skill to the Tolokers and then specify it in the main pool as a filter. For example, `MySkill = 80 or = Is missing`. You don't have to create an exam. For simple tasks, the training pool provides enough practice, but many requesters also use exams.
-
-{% endcut %}
-
-{% cut "Is the time specified per task suite in the fast response settings?" %}
-
-Yes, the [fast response](../concepts/quick-answers.md) settings specify the time per task suite.
-
-{% endcut %}
-
-{% cut "I set up a rule to ban Tolokers after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
-
-Indeed, this rule is probably too strict. Even the most careful Toloker can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban Tolokers who regularly fail captcha checks in Toloka.
-
-{% endcut %}
+{% include [faq-incorrect-captcha](../_includes/faq/pool-setup/incorrect-captcha.md) %}
 
 {% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
 {% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
 
-{% cut "How do I test Tolokers to determine which kinds of tasks they do better and assign them relevant tasks?" %}
-
-You can add a [training pool](../concepts/train.md) to test your Tolokers. Based on the test results, assign skills to the Tolokers for the tasks they do best.
-
-Then open your pools only to the Tolokers that have a certain skill: use [filters](../concepts/filters.md) for this.
-
-{% endcut %}
+{% include [faq-test-tolokers](../_includes/faq/pool-setup/test-tolokers.md) %}
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
@@ -206,83 +188,33 @@ Then open your pools only to the Tolokers that have a certain skill: use [filter
 
 {% include [faq-get-access](../_includes/faq/pool-setup/get-access.md) %}
 
-{% cut "If I ban a Toloker for doing my tasks too fast, will all their responses be deleted and given to other Tolokers for labeling?" %}
+{% include [faq-ban](../_includes/faq/pool-setup/ban.md) %}
 
-No. The responses of these Tolokers aren't automatically excluded from the final results file.
-
-But you can do it yourself if you want. When downloading the results, select the option **Exclude assignments by banned users** to delete the responses of Tolokers who were banned at the moment of downloading. You can also forward all the assignments from banned Tolokers to other Tolokers using the [Re-completion of assignments from banned users](../concepts/restore-task-overlap.md) rule.
-
-{% endcut %}
-
-{% cut "Can I create two active training pools, one for practice and the other for admitting Tolokers to the main pool? In other words, one pool is for Tolokers to practice and the other pool tests them." %}
-
-Yes, you can do that. In this case, create the first pool based on the [training pool](../../glossary.md#training-pool) and the exam pool based on your main pool. If a pool contains only control and/or training tasks, the price can be set to zero.
-
-In the exam pool, you can create a skill reflecting the exam result and granting admission to the main pool. For example, `if the number of responses is ≥ 10, set the skill value in the <exam skill> as % of correct responses`. In your exam pool Toloker requirements, specify: `<exam skill> < 80 or = Is missing>`. In the main pool, set up a filter: `<exam skill> >= 80 and (<main skill> >= 70 or = Is missing)`. You can choose the skill values depending on how well the Tolokers handle your task.
-
-{% endcut %}
+{% include [faq-two-training-pools](../_includes/faq/pool-setup/two-training-pools.md) %}
 
 {% include [faq-using-captсha](../_includes/faq/pool-setup/using-captсha.md) %}
 
-{% cut "I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?" %}
-
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the “range” specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
-
-{% endcut %}
+{% include [faq-terms-captcha](../_includes/faq/pool-setup/terms-captcha.md) %}
 
 {% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
-{% cut "Have I understood correctly that if I use `set the the skill value = 1` with the `percentage of accepted responses >= 75` and `10 recent values to use`, for every 8 correctly completed tasks out of 10 the Toloker is given 1 skill point?" %}
+{% include [faq-set-skill](../_includes/faq/pool-setup/set-skill.md) %}
 
-No, this is incorrect. With these settings, each time a rule condition is met, the Toloker gets `skill = 1`. To change the skill value in the process of task review, you need a “multi-step” rule, which has multiple identical rules with different values of **Total reviewed responses**.
+{% include [faq-review-training](../_includes/faq/pool-setup/review-training.md) %}
 
-{% endcut %}
-
-{% cut "Can I use non-automatic acceptance in the training pool?" %}
-
-No. But you can create a pool of the **Training** type based on your main pool and enable non-automatic acceptance there.
-
-{% endcut %}
-
-{% cut "Can the Tolokers see which questions are control tasks?" %}
-
-No, they can't.
-
-{% endcut %}
+{% include [faq-questions-are-control](../_includes/faq/pool-setup/questions-are-control.md) %}
 
 {% include [faq-two-text-versions](../_includes/faq/pool-setup/two-text-versions.md) %}
 
-{% cut "If I ban Tolokers from my project so that everyone can complete a maximum of one task, are the Tolokers notified of the ban?" %}
-
-No, the Tolokers are unaware of the ban.
-
-{% endcut %}
+{% include [faq-one-task](../_includes/faq/pool-setup/one-task.md) %}
 
 {% include [faq-output-format](../_includes/faq/pool-setup/output-format.md) %}
 
-{% cut "In the section about control questions, does "Number of control responses" mean the total number of responses to control questions (including incorrect responses) or the number of correct responses to my control questions?" %}
+{% include [faq-number-of-control-responses](../_includes/faq/pool-setup/number-of-control-responses.md) %}
 
-This is the total number of responses to the control questions.
+{% include [faq-classify-users](../_includes/faq/pool-setup/classify-users.md) %}
 
-{% endcut %}
-
-{% cut "How do I classify users as good Tolokers and poor Tolokers as they complete tasks, and ban the poor Tolokers?" %}
-
-You can create a task pool for all your Tolokers and create Toloker skills in it. In this case, you can open your tasks only to the Tolokers with the necessary skills.
-
-{% endcut %}
-
-{% cut "How can I speed up the pool completion?" %}
-
-- To motivate Tolokers, assign a [public skill](../concepts/nav-create.md#public) and use [dynamic pricing](../concepts/dynamic-pricing.md).
-
-- Try to [increase the project rating](../concepts/project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
-
-- Adjust the [quality-speed ratio](../concepts/adjust.md).
-
-- Set a higher [priority](../concepts/pool_poolparams.md#priority) for the pool among other project pools.
-
-{% endcut %}
+{% include [faq-speed-up-completion](../_includes/faq/pool-setup/speed-up-completion.md) %}
 
 ### Overlap {#overlap}
 
@@ -550,14 +482,10 @@ You can create a task pool for all your Tolokers and create Toloker skills in it
 
 {% include [faq-paired-images-comparison](../_includes/faq/questions-about-templates/paired-images-comparison.md) %}
 
-## Survey {#interview}
+### Survey {#interview}
 
 {% include [faq-simple-survey](../_includes/faq/questions-about-templates/simple-survey.md) %}
 
 {% include [faq-survey-single-question](../_includes/faq/questions-about-templates/survey-single-question.md) %}
-
-### Field task {#concept_k1m_rgd_rmb}
-
-{% include [faq-limit-source-photo](../_includes/faq/questions-about-templates/limit-source-photo.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -1,6 +1,6 @@
 {% cut "I have a complex task. How do I break it down to get high-quality results?" %}
 
-If your task contains many objects of different types, you should break it down. For example, you can ask users to select numbers in the first project, doorways and windows in the second project, walls in the third project, and plumbing in the fourth project.
+If your task contains many objects of different types, you should break it down. For example, you can ask Tolokers to select numbers in the first project, doorways and windows in the second project, walls in the third project, and plumbing in the fourth project.
 
 The simpler the task, the cheaper it is and the better the quality of the final result. Set the cost of labeling a single class of objects in photos at about $0.01.
 

@@ -48,20 +48,10 @@ To [archive the training pool](train.md), first archive all the main pools to wh
 
 {% include [faq-pool-storage-time](../_includes/faq/pool-n-project-archive/pool-storage-time.md) %}
 
-{% cut "Where are my pools that were closed a few months ago stored?" %}
-
-Inactive pools are archived after one month. To see them, select **Archived** in the **Pools** tab.
-
-![](../_images/troubleshooting/pools-archived.png)
-
-{% endcut %}
+{% include [faq-where-closed-pool](../_includes/faq/pool-n-project-archive/where-closed-pool.md) %}
 
 {% include [faq-pool-archiving-parameters](../_includes/faq/pool-n-project-archive/pool-archiving-parameters.md) %}
 
-{% cut "How do I accept tasks from the archived pool or when the Toloker wrote to me later than the allowed deadline?" %}
-
-Simply [give the Toloker a separate reward](bonus.md) without changing the task status. You can't change the task status in the pool in this case.
-
-{% endcut %}
+{% include [faq-accept-tasks-from-archived-pool](../_includes/faq/pool-n-project-archive/accept-tasks-from-archived-pool.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

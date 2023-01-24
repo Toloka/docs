@@ -1,4 +1,4 @@
-{% cut "How do I test users to determine which kinds of tasks they do better and assign them relevant tasks?" %}
+{% cut "How do I test Tolokers to determine which kinds of tasks they do better and assign them relevant tasks?" %}
 
 You can add a [training pool](../../../../guide/concepts/train.md) to test your Tolokers. Based on the test results, assign skills to the Tolokers for the tasks they do best.
 

@@ -1,4 +1,4 @@
-{% cut "Why do I see a syntax error when I upload a task where a user has to view an image and write feedback?" %}
+{% cut "Why do I see a syntax error when I upload a task where a Toloker has to view an image and write feedback?" %}
 
 The error might occur if the expected input type is URL, but a string is received.
 

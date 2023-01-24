@@ -12,9 +12,9 @@ We recommend that you break down your object selection project into three projec
 
 1. Selecting objects in images.
 
-    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with manual review.
 
-    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../../../../guide/concepts/control.md).
+    1. Use the quality control rules: fast responses, manual review, and post-review re-assessment. [Description of rules with examples](../../../../guide/concepts/control.md).
 
 1. Reviewing object selection assignments.
 
