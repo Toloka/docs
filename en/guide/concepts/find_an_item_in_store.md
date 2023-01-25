@@ -199,7 +199,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Click **Add a pool** on the project page.
 
-1. {% include [toloka-requester-pool-type](../../../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
+1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
 1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
