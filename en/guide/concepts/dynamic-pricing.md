@@ -18,6 +18,12 @@ Every Toloker wants to earn more, so it is difficult to give exact figures. To f
 
 - Pay attention to the price suggest under the **Price per task suite, $** field. It contains the recommended price based on the minimum wage of the countries selected in the filters.
 
+  {% note warning "Restriction" %}
+
+  The price suggest is available to a limited number of requesters.
+
+  {% endnote %}
+
 - Pay attention to the **Toloker interest at this price** indicator. It shows how your price meets expectations of Tolokers. If the interest is low, you can raise price per task suite to have a bigger number of Tolokers in the project. If the interest is high, you can reduce price to save money.
 
 - Turn on the stopwatch and measure how long it will take to read the [instructions](../../glossary.md#instructions) and complete several of your tasks. Calculate how many task suites you would complete in an hour and think what price would be fair.
@@ -32,15 +38,15 @@ The high task price doesn't guarantee a good quality of the result. Increasing t
 
 {% endnote %}
 
-## Price per task {#price-per-task}
+## Price per item {#price-per-item}
 
-When you're creating or editing a pool, under the **Price per task suite, $** field you can see price per 1 [task](../../glossary.md#task).
+When you're creating or editing a pool, under the **Price per task suite, $** field you can see price per 1 [item](../../glossary.md#item).
 
-Price per task is calculated as:
+Price per item is calculated as:
 
 #|
 ||
-price per 1 task ![](../_images/other/icons/equal.svg) price per task suite ![](../_images/other/icons/multiply.svg) overlap ![](../_images/other/icons/divide.svg) tasks per suite ![](../_images/other/icons/plus.svg) fee
+price per 1 item ![](../_images/other/icons/equal.svg) price per task suite ![](../_images/other/icons/multiply.svg) overlap ![](../_images/other/icons/divide.svg) tasks per suite ![](../_images/other/icons/plus.svg) fee
 ||
 |#
 
