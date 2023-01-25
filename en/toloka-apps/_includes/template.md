@@ -1,0 +1,1 @@
+Download the template and replace the sample data in it with your own data. You can use [XLSX](#xlsx-format), TXT, [TSV](#tsv-format), [CSV](#csv-format), or [JSON](#json-format) files with tasks.
