@@ -6,6 +6,7 @@ The component combines two or more strings into one. You can add a delimiter to 
 
 {% cut "Components used in the example" %}
 
+- [view.list](view.list.md): Displays data in a list.
 - [view.text](view.text.md): Displays a text.
 - [field.select](field.select.md): Adds a drop-down list.
 
