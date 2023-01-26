@@ -10,4 +10,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
 
+{% include [troubleshooting-account-type-mistake](../_includes/troubleshooting/register-and-start/account-type-mistake.md) %}
+
 {% include [contact-support](../_includes/contact-support.md) %}

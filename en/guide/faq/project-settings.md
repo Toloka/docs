@@ -6,6 +6,10 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
+### Access {#access}
+
+{% include [faq-give-access](../_includes/faq/project-settings/give-access.md) %}
+
 ## Instructions {#instruction}
 
 {% include [faq-show-instructions](../_includes/faq/project-settings/show-instructions.md) %}

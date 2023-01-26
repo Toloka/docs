@@ -20,6 +20,10 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
 
+{% include [troubleshooting-next-doesnt-work](../_includes/troubleshooting/project-settings/next-doesnt-work.md) %}
+
+{% include [troubleshooting-cant-complete-tasks](../_includes/troubleshooting/project-settings/cant-complete-tasks.md) %}
+
 {% include [faq-no-selectable-object](../_includes/faq/project-settings/no-selectable-object.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -50,6 +50,8 @@ There are two versions of Toloka. You need to register separately in each of the
 
 {% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
 
+{% include [troubleshooting-account-type-mistake](../_includes/troubleshooting/register-and-start/account-type-mistake.md) %}
+
 {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
 
 {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}

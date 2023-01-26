@@ -199,6 +199,8 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 
 {% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
+{% include [faq-specific-number](../_includes/faq/pool-setup/specific-number.md) %}
+
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
 {% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}

@@ -38,6 +38,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/smart-mixing.md) %}
 
+{% include [faq-smart-mixing-after-uploading](../_includes/faq/adding-tasks-to-the-pool/smart-mixing-after-uploading.md) %}
+
 {% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
 {% include [faq-processing-log](../_includes/faq/adding-tasks-to-the-pool/processing-log.md) %}

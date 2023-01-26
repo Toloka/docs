@@ -24,7 +24,11 @@ New tasks can be uploaded to an open or closed pool.
 
 ## Troubleshooting {#troubleshooting}
 
+{% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
+
 {% include [troubleshooting-next-doesnt-work](../_includes/troubleshooting/project-settings/next-doesnt-work.md) %}
+
+{% include [troubleshooting-cant-complete-tasks](../_includes/troubleshooting/project-settings/cant-complete-tasks.md) %}
 
 {% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 

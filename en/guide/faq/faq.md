@@ -8,6 +8,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 ## Registration and getting started {#register-and-start}
 
+{% include [faq-task-suitable](../_includes/faq/register-and-start/task-suitable.md) %}
+
 {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
 {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
@@ -27,6 +29,10 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 {% include [faq-same-account](../_includes/faq/sandbox/same-account.md) %}
 
 ## Setting up a project {#project}
+
+### Access {#access}
+
+{% include [faq-give-access](../_includes/faq/project-settings/give-access.md) %}
 
 ### Instructions {#instruction}
 
@@ -182,6 +188,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
+{% include [faq-smart-mixing-after-uploading](../_includes/faq/adding-tasks-to-the-pool/smart-mixing-after-uploading.md) %}
+
 {% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
 {% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
@@ -219,6 +227,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 ### Overlap {#overlap}
 
 {% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
+
+{% include [faq-specific-number](../_includes/faq/project-settings/specific-number.md) %}
 
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 

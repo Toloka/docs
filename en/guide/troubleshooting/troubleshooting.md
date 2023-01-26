@@ -20,6 +20,10 @@ In the section contents, select the stage where you encountered the problem and 
 
 {% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
 
+{% include [troubleshooting-account-type-mistake](../_includes/troubleshooting/register-and-start/account-type-mistake.md) %}
+
+## Sandbox {#sandbox}
+
 {% include [troubleshooting-dont-see-task](../_includes/troubleshooting/sandbox/dont-see-task.md) %}
 
 {% include [troubleshooting-export-error](../_includes/troubleshooting/sandbox/export-error.md) %}
@@ -47,6 +51,8 @@ In the section contents, select the stage where you encountered the problem and 
 {% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
 
 {% include [troubleshooting-next-doesnt-work](../_includes/troubleshooting/project-settings/next-doesnt-work.md) %}
+
+{% include [troubleshooting-cant-complete-tasks](../_includes/troubleshooting/project-settings/cant-complete-tasks.md) %}
 
 {% include [faq-no-selectable-object](../_includes/faq/project-settings/no-selectable-object.md) %}
 
@@ -95,6 +101,8 @@ In the section contents, select the stage where you encountered the problem and 
 {% include [troubleshooting-uploading-tasks-errors](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-tasks-errors.md) %}
 
 {% include [troubleshooting-same-task-on-different-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/same-task-on-different-pages.md) %}
+
+{% include [troubleshooting-uploading-too-long](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-too-long.md) %}
 
 ### Training-exam-retry {#concept_i2g_kkh_5mb}
 
