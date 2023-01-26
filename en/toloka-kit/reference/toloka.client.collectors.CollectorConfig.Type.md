@@ -1,5 +1,5 @@
 # Type
-`toloka.client.collectors.CollectorConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/collectors.py#L52)
+`toloka.client.collectors.CollectorConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/collectors.py#L52)
 
 An enumeration.
 

@@ -1,5 +1,5 @@
 # NewUserBonuses
-`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/metrics.py#L185)
+`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/metrics.py#L185)
 
 ```python
 NewUserBonuses(
@@ -10,7 +10,7 @@ NewUserBonuses(
     *,
     toloka_client: Optional[TolokaClient] = None,
     atoloka_client: Optional[AsyncTolokaClient] = None,
-    timeout: timedelta = _Nothing.NOTHING
+    timeout: timedelta = ...
 )
 ```
 
@@ -22,7 +22,7 @@ Tracking rewards for Tolokers: reward count or money amount.
 | :----------| :----| :-----------|
 `count_name`|**Optional\[str\]**|<p>Metric name for a count of new bonuses.</p>
 `money_name`|**Optional\[str\]**|<p>Metric name for amount of money in new bonuses.</p>
-`join_events`|**bool**|<p>Count all events in one point.  Default False.</p>
+`join_events`|**bool**|<p>Count all events in one point.  Default `False`.</p>
 
 **Examples:**
 

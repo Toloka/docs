@@ -1,5 +1,5 @@
 # Object2EntriesHelperV1
-`toloka.client.project.template_builder.helpers.Object2EntriesHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/helpers.py#L117)
+`toloka.client.project.template_builder.helpers.Object2EntriesHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/helpers.py#L117)
 
 ```python
 Object2EntriesHelperV1(

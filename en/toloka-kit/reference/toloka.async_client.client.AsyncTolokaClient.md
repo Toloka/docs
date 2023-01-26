@@ -1,5 +1,5 @@
 # AsyncTolokaClient
-`toloka.async_client.client.AsyncTolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/async_client/client.py#L27)
+`toloka.async_client.client.AsyncTolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/async_client/client.py#L27)
 
 ```python
 AsyncTolokaClient(

@@ -1,5 +1,5 @@
 # close_pool_async
-`toloka.client.TolokaClient.close_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1341)
+`toloka.client.TolokaClient.close_pool_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L1355)
 
 ```python
 close_pool_async(self, pool_id: str)

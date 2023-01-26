@@ -1,5 +1,5 @@
 # DeviceFrameViewV1
-`toloka.client.project.template_builder.view.DeviceFrameViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/view.py#L142)
+`toloka.client.project.template_builder.view.DeviceFrameViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/view.py#L142)
 
 ```python
 DeviceFrameViewV1(

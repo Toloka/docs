@@ -1,12 +1,12 @@
 # LocalizationConfig
-`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/localization.py#L47)
+`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/localization.py#L47)
 
 ```python
 LocalizationConfig(
     self,
     *,
     default_language: Optional[str] = None,
-    additional_languages: Optional[List[AdditionalLanguage]] = _Nothing.NOTHING
+    additional_languages: Optional[List[AdditionalLanguage]] = ...
 )
 ```
 

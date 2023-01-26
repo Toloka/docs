@@ -1,5 +1,5 @@
 # setup_pools
-`toloka.autoquality.optimizer.AutoQuality.setup_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/autoquality/optimizer.py#L274)
+`toloka.autoquality.optimizer.AutoQuality.setup_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/autoquality/optimizer.py#L274)
 
 ```python
 setup_pools(self)

@@ -1,5 +1,5 @@
 # ActiveWorkersByFilterCountPoolAnalytics
-`toloka.client.analytics_request.ActiveWorkersByFilterCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/analytics_request.py#L147)
+`toloka.client.analytics_request.ActiveWorkersByFilterCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/analytics_request.py#L147)
 
 ```python
 ActiveWorkersByFilterCountPoolAnalytics(

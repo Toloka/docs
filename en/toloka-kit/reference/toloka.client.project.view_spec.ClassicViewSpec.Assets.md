@@ -1,5 +1,5 @@
 # Assets
-`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/view_spec.py#L80)
+`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/view_spec.py#L81)
 
 ```python
 Assets(
@@ -17,7 +17,7 @@ Linked files with assets.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `style_urls`|**Optional\[List\[str\]\]**|<p>Links to CSS libraries.</p>
-`script_urls`|**Optional\[List\[str\]\]**|<p>Links to JavaScript libraries and Toloka assets. Toloka assets:</p> <ul> <li>&quot;$TOLOKA_ASSETS/js/toloka-handlebars-templates.js&quot; — Handlebars. See the description on the template   engine website [here](http://handlebarsjs.com/)</li> <li>&quot;$TOLOKA_ASSETS/js/image-annotation.js&quot; — Image labeling interface. See image with area selection in   the Requester&#x27;s guide [here](https://toloka.ai/en/docs/guide/concepts/t-components/image-annotation) Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters.</li> </ul>
+`script_urls`|**Optional\[List\[str\]\]**|<p>Links to JavaScript libraries and Toloka assets. Toloka assets:</p> <ul> <li>&quot;$TOLOKA_ASSETS/js/toloka-handlebars-templates.js&quot; — [Handlebars template engine](http://handlebarsjs.com/).</li> <li>&quot;$TOLOKA_ASSETS/js/image-annotation.js&quot; — Image labeling interface.   For more information, see [Image with area selection](https://toloka.ai/en/docs/guide/concepts/t-components/image-annotation). Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters.</li> </ul>
 
 **Examples:**
 

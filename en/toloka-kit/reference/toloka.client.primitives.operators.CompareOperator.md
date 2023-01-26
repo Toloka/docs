@@ -1,5 +1,5 @@
 # CompareOperator
-`toloka.client.primitives.operators.CompareOperator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/primitives/operators.py#L21)
+`toloka.client.primitives.operators.CompareOperator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/primitives/operators.py#L21)
 
 Supports comparison operators:
 

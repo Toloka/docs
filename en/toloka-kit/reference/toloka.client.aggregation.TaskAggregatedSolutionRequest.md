@@ -1,5 +1,5 @@
 # TaskAggregatedSolutionRequest
-`toloka.client.aggregation.TaskAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/aggregation.py#L53)
+`toloka.client.aggregation.TaskAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/aggregation.py#L53)
 
 ```python
 TaskAggregatedSolutionRequest(

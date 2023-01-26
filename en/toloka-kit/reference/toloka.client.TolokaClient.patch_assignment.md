@@ -1,5 +1,5 @@
 # patch_assignment
-`toloka.client.TolokaClient.patch_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L717)
+`toloka.client.TolokaClient.patch_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L731)
 
 Changes an assignment status and associated public comment.
 

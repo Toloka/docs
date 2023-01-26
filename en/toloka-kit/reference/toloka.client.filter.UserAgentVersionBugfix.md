@@ -1,5 +1,5 @@
 # UserAgentVersionBugfix
-`toloka.client.filter.UserAgentVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L733)
+`toloka.client.filter.UserAgentVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/filter.py#L733)
 
 ```python
 UserAgentVersionBugfix(

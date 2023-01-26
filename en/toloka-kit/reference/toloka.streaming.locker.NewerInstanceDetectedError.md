@@ -1,5 +1,5 @@
 # NewerInstanceDetectedError
-`toloka.streaming.locker.NewerInstanceDetectedError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/locker.py#L24)
+`toloka.streaming.locker.NewerInstanceDetectedError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/locker.py#L24)
 
 Exception being thrown in case of new concurrent pipeline was detected.
 

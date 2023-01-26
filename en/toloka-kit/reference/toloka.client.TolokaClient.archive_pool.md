@@ -1,5 +1,5 @@
 # archive_pool
-`toloka.client.TolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1266)
+`toloka.client.TolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L1280)
 
 ```python
 archive_pool(self, pool_id: str)

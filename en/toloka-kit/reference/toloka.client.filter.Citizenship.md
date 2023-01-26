@@ -1,5 +1,5 @@
 # Citizenship
-`toloka.client.filter.Citizenship` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L281)
+`toloka.client.filter.Citizenship` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/filter.py#L281)
 
 ```python
 Citizenship(

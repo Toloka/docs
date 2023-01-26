@@ -1,5 +1,5 @@
 # MessageThreadCursor
-`toloka.streaming.cursor.MessageThreadCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/cursor.py#L403)
+`toloka.streaming.cursor.MessageThreadCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/cursor.py#L403)
 
 ```python
 MessageThreadCursor(

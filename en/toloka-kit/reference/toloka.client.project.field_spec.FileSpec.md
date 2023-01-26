@@ -1,5 +1,5 @@
 # FileSpec
-`toloka.client.project.field_spec.FileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/field_spec.py#L118)
+`toloka.client.project.field_spec.FileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/field_spec.py#L118)
 
 ```python
 FileSpec(

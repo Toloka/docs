@@ -1,5 +1,5 @@
 # find_skills
-`toloka.client.TolokaClient.find_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2068)
+`toloka.client.TolokaClient.find_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L2082)
 
 Finds skills that match certain criteria.
 
