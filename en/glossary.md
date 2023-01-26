@@ -224,6 +224,10 @@ A [quality control](#quality-control) rule that considers a response correct if 
 
 ### O
 
+#### Optical character recognition (OCR) {#ocr}
+
+The conversion of images of typed, handwritten or printed text into machine-encoded text, whether from a scanned document, a photo of a document, a scene-photo or from subtitle text superimposed on an image.
+
 #### Overlap {#overlap}
 
 The number of Tolokers who should complete each task in the [pool](#pool). Overlap is used to make sure the results are reliable.
@@ -304,6 +308,10 @@ The Toloka testing environment. This is where you can test your [project](#proje
 #### Selective majority vote check {#selective-majority-vote-check}
 
 An option that allows you to selectively increase overlap for some tasks. This helps you save money and speed up [pool](#pool) completion. [Learn more](guide/concepts/selective-mvote.md)
+
+#### Side-by-side (SbS) {#sbs}
+
+Side-by-side comparison type of projects. Toloka has several presets to compare objects side-by-side: [images](./guide/tutorials/side-by-side.md), video and audio files.
 
 #### Skill {#skill}
 
