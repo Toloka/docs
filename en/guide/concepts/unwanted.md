@@ -1,6 +1,8 @@
 # What tasks can't be placed in Toloka?
 
-Toloka **isn't intended** for tasks that could harm Tolokers, other requesters, or the Toloka platform. Your account may get blocked for posting such tasks.
+All new projects in Toloka pass the moderation check before being sent to labeling. We will verify the project for compliance with our platform guidelines and for security. This is necessary to ensure that Tolokers are getting the best possible experience and don’t encounter any tasks that could potentially be harmful. You will be notified if your project doesn't follow the Toloka guidelines and get recommendations to fix the task before launching. In this way we're working together toward compliance with platform rules and enhanced security.
+
+Please read the rules below before placing your tasks.
 
 ## Guidelines for tasks {#requirements-for-tasks}
 
