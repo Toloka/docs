@@ -9,29 +9,35 @@ Tolokers can be banned in two ways:
 
 You can block a Toloker's access to one or more [projects](../../glossary.md#project). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](../../glossary.md#skill) value lower than N and block their access to tasks. You can also unblock access.
 
+{% note warning %}
+
+The assignments submitted by banned Tolokers will be taken into account if they are not rejected using manual review. They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+
+{% endnote %}
+
+#### In the interface
+
 To block access to tasks for a single Toloker:
 
 1. Select a Toloker on the [Tolokers]({{ users }}) page.
 
-1. Click {% if locale == "en-com" %}**Actions → Ban**{% endif %}, then fill in the fields:
+1. Click **Actions → Ban**, then fill in the fields:
 
     #|
     || Field | Overview ||
-    || {% if locale == "en-com" %}**Ban type**{% endif %} | Where to apply the ban:
+    || **Ban type** | Where to apply the ban:
 
-    - {% if locale == "en-com" %}**In all my projects**{% endif %} — All projects.
-    - {% if locale == "en-com" %}**In the project**{% endif %} — A single project (choose one from the list).||
-    || {% if locale == "en-com" %}**Ban expires**{% endif %} | Set when to lift the ban.
+    - **In all my projects** — All projects.
+    - **In the project** — A single project (choose one from the list).||
+    || **Ban expires** | Set when to lift the ban.
 
     We recommend blocking access temporarily in order to maintain the desired number of Tolokers for completing tasks.||
-    || {% if locale == "en-com" %}**Reason**{% endif %} | The reason for banning (only seen by the requester).||
+    || **Reason** | The reason for banning (only seen by the requester).||
     |#
 
 To block access to tasks for multiple Tolokers:
 
 1. Select Tolokers by using the [filters](../../glossary.md#filters) on the [Tolokers]({{ users }}) page or upload a TSV file:
-
-    {% if locale == "en-com" %}
 
     ```plaintext
     <annotator id 1>
@@ -40,15 +46,22 @@ To block access to tasks for multiple Tolokers:
     <annotator id n>
     ```
 
-    {% endif %}
+1. Click **Ban**, then fill in the fields (see the table above).
 
-1. Click {% if locale == "en-com" %}**Ban**{% endif %}, then fill in the fields (see the table above).
+You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the **Bans** tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).
 
-You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the {% if locale == "en-com" %}**Bans**{% endif %} tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).
+{% note tip "How to work via Toloka API" %}
 
-{% note warning %}
+To block a Toloker's access using Toloka API, send a `PUT` request with the information about the ban:
 
-The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using assignment review They can be reassigned by setting up the [Recompletion of assignments from banned users](restore-task-overlap.md) rule.
+```bash
+curl -X PUT 'https://toloka.dev/api/v1/user-restrictions' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"scope":"ALL_PROJECTS","user_id":"1ad097faba0eff85a04fe30bc04d53db","will_expire":"2030-01-01T00:00:00.000Z"}'
+```
+
+Refer to the [Block access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -121,7 +134,7 @@ If the Toloker was already paid for the tasks, you can't cancel the payment.
 
 During the training, Tolokers follow the task instructions and practice completing your tasks. Based on the training results, the requester can select Tolokers who did well enough to get access to the main pool. However, the mere fact that the Toloker completes your training pool successfully does not guarantee that they will continue to demonstrate high-quality performance. Tolokers who did well on the training but had inadequate results in the general task might have obtained correct training responses from other people.
 
-In addition to the training, be sure to set up [quality control rules](control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [non-automatic acceptance](offline-accept.md) to pay for them only after reviewing the responses.
+In addition to the training, be sure to set up [quality control rules](control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [manual review](offline-accept.md) to pay for them only after reviewing the responses.
 
 {% endcut %}
 

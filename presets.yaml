@@ -83,13 +83,16 @@ default:
   register: https://passport.toloka.ai/registration?mode=register&retpath=https://platform.toloka.ai
   restore: https://passport.toloka.ai/passport?mode=restore
   safari-mobile: https://support.apple.com/guide/safari-developer/simulate-responsive-web-content-apple-devices-dev84bd42758/mac
-  sandbox: https://sandbox.toloka.yandex.com/ru/for-requesters
+  sandbox: https://sandbox.toloka.yandex.com/for-requesters
   sandbox-for-performers: https://sandbox.toloka.yandex.com/tasks
   sandbox-profile: https://sandbox.toloka.yandex.com/requester/profile
   sandbox-profile-integration: https://sandbox.toloka.yandex.com/requester/profile/integration
   selection-of-images-groups: https://codepen.io/Toloka_projects/pen/KJELbO
   skills: https://platform.toloka.ai/requester/quality
   statistical-significance: https://en.wikipedia.org/wiki/Statistical_significance
+  survey-qualtrics-short: https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvJ&choosedTag=A3MdOlBKzWKcrpxg3JNQ
+  survey-qualtrics-medium: https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvF&choosedTag=A3MdOlBKzWKcrpxg3JNQ
+  survey-qualtrics-long: https://platform.toloka.ai/requester/templates?choosedCard=IuW9rwmVFAAB1ifPeFvv&choosedTag=A3MdOlBKzWKcrpxg3JNQ
   survey-other-preset: https://platform.toloka.ai/requester/templates?choosedCard=zrOz1vqLM52i562Ed0A5
   survey-toloka-preset: https://platform.toloka.ai/requester/templates?choosedCard=O5QMrPP48RPUyne5aaLV
   text-under-the-cut: https://codepen.io/Toloka_projects/pen/bzGQgX

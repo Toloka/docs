@@ -1,6 +1,6 @@
 # Setting up quality control
 
-Quality control lets you get more accurate responses and restrict access to tasks for cheating users. Quality control consists of rules. All rules work independently.
+{% include [toloka-requester-source-quality-control](../_includes/toloka-requester-source/id-toloka-requester-source/quality-control.md) %}
 
 {% note warning %}
 
@@ -12,25 +12,25 @@ To set up quality control:
 
 1. Go to the pool editing page.
 
-1. If you already have a pool with the appropriate quality control settings, you can copy it along with the audience settings. To do this, go to {% if locale == "en-com" %}**Tolokers filter**{% endif %} and click {% if locale == "en-com" %}**Copy settings from...**{% endif %} and then {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
+1. If you already have a pool with the appropriate quality control settings, you can copy it along with the audience settings. To do this, go to **Tolokers filter** and click **Copy settings from...** and then **Add Quality Control Rule**.
 
-1. Under {% if locale == "en-com" %}**Quality Control**{% endif %}, choose the rules you want to use.
+1. Under **Quality Control**, choose the rules you want to use.
 
     If you aren't sure which quality control rules you need, use a preset with default settings.
 
 1. Make settings for the rules you added. For more information, see the [List of rules](#id_z4l_prs_2lb).
 
-1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+1. Click **Save**.
 
 {% note info %}
 
 If you already have a pool with the quality control settings you need, you can copy it along with the audience settings:
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, click the {% if locale == "en-com" %}**Copy from another pool**{% endif %} button.
+1. In the **Audience** block, click the **Copy from another pool** button.
 
 1. Select a project and pool.
 
-1. Click the {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} button.
+1. Click the **Copy audience filters and quality control settings** button.
 
 {% endnote %}
 
@@ -159,13 +159,13 @@ Then limit your pools to Tolokers with a certain skill using [filters](filters.m
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+Another option for selecting Tolokers for a project of this type is manual review.
 
 {% endcut %}
 
 {% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. I'm trying to put “3“ in the “Recent control and training task responses to use“ field, but I'm getting an error telling me that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
-The **Recent control and training task responses to use** field is for the number of recent responses from Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
+The **Recent control and training task responses to use** field is for the number of recent responses from Toloker. If you use manual review for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
 {% endcut %}
 
@@ -284,9 +284,9 @@ This is the total number of responses to the control questions.
 
 {% endcut %}
 
-{% cut "Can I use non-automatic acceptance in the training pool?" %}
+{% cut "Can I use manual review in the training pool?" %}
 
-No. But you can create a pool of the **Training** type based on your main pool and enable non-automatic acceptance there.
+No. But you can create a pool of the **Training** type based on your main pool and enable manual review there.
 
 {% endcut %}
 

@@ -402,7 +402,6 @@
 
   {% include [project-bash](../_includes/concepts/qs-placement/id-project/bash.md) %}
 
-
     ```bash
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \

@@ -30,7 +30,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
             For more information about the template and its settings, see [Object selection in an image](../../template-builder/operations/select-areas.md) in the Template Builder Help.
 
-        1. To see the input and output data fields, click {% if locale == "en-com" %}**Show specifications**{% endif %} in the {% if locale == "en-com" %}**Data specification**{% endif %} section.
+        1. To see the input and output data fields, click **Show specifications** in the **Data specification** section.
 
             - Input data field: `image` — A link to an image.
 
@@ -38,7 +38,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     - HTML/CSS/JS editor
 
-        1. In {% if locale == "en-com" %}**Task interface**{% endif %}, leave the **HTML** block unchanged.
+        1. In **Task interface**, leave the **HTML** block unchanged.
 
         1. Edit the **CSS** block:
 
@@ -64,7 +64,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
                 Learn more about [annotation](t-components/image-annotation.md#annotation).
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "en-com" %}**Preview task**{% endif %} button to view the task.
+        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
             {% note info %}
 
@@ -72,9 +72,9 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
             {% endnote %}
 
-        1. In the window that opens, check if the task options work correctly. In the lower-right corner, click {% if locale == "en-com" %}**Submit**{% endif %}.
+        1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
 
-        1. Exit preview mode. In the lower-left corner, click {% if locale == "en-com" %}**Exit**{% endif %}. If there were errors when testing, check the code blocks that you entered.
+        1. Exit preview mode. In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
 
     {% endlist %}
 
@@ -100,13 +100,15 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. Open the project page **Outline the traffic signs in the image**.
 
-1. Click the {% if locale == "en-com" %}**Add a pool**{% endif %} button.
+1. Click **Add a pool** on the project page.
 
-1. Specify the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-1. Optionally add a {% if locale == "en-com" %}**Private comment**{% endif %}. This information is available only to you.
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
+1. Click **Create**.
+
+1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
     1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
@@ -114,65 +116,71 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
-    1. Add a new skill. Click {% if locale == "en-com" %}**Add skill**{% endif %}.
+    1. Add a new skill. Click **Add skill**.
 
-    1. In the window that opens, enter `Area selection` in the {% if locale == "en-com" %}**Title**{% endif %} field.
+    1. In the window that opens, enter `Area selection` in the **Title** field.
 
-    1. Click {% if locale == "en-com" %}**Add**{% endif %}.
+    1. Click **Add**.
 
-1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 
-1. In the {% if locale == "en-com" %}**Price**{% endif %} block, find the {% if locale == "en-com" %}**Price per task suite**{% endif %} field and specify the price. For example, `0.01`.
+1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-    {% cut "What is a task suite?" %}
+    1. In **Price per task suite, $**, set the amount of money to pay per task suite done by one Toloker. For example, `0.01`.
 
-    A task suite can contain one or several tasks that are shown on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers.
+        {% cut "What is a task suite?" %}
 
-    Tolokers get paid for completing the entire task suite.
+        A task suite can contain one or several tasks that are shown on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers.
 
-    The number of tasks per suite is set when uploading tasks.
+        Tolokers get paid for completing the entire task suite.
 
-    {% endcut %}
-
-    {% cut "What is a fair price for a task suite?" %}
-
-    The general rule of pricing is the more time the Toloker spends to complete the task, the higher the price is.
-
-    You can register in Toloka as a Toloker and find out how much other requesters pay for tasks.
-
-    {% endcut %}
-
-1. [Quality control rules](control.md) allow you to filter out careless Tolokers. In the {% if locale == "en-com" %}**Quality control**{% endif %} block, set the rules for the pool:
-
-    1. Turn on the {% if locale == "en-com" %}**Assignment review**{% endif %} option.
-
-        {% cut "What is non-automatic acceptance (assignment review)?" %}
-
-        The [non-automatic acceptance](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+        The number of tasks per suite is set when uploading tasks.
 
         {% endcut %}
 
-        In the {% if locale == "en-com" %}**Review period in days**{% endif %} field, specify the number of days for checking the task.
+        {% cut "What is a fair price for a task suite?" %}
+
+        The general rule of pricing is the more time the Toloker spends to complete the task, the higher the price is.
+
+        You can register in Toloka as a Toloker and find out how much other requesters pay for tasks.
+
+        {% endcut %}
+
+    1. {% include [toloka-requester-source-overlap-settings](../_includes/toloka-requester-source/id-toloka-requester-source/overlap-settings.md) %}
+
+        For image area selection tasks, it is usually `1`.
+
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
+
+    1. Turn on the **Review task responses manually** option.
+
+        {% cut "What is manual review?" %}
+
+        The [manual review](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+
+        {% endcut %}
+
+        In the **Review period in days** field, specify the number of days for checking the task.
 
     1. Add the following quality control rules:
 
-        - {% if locale == "en-com" %}**Recompletion of rejected assignments**{% endif %} — sends the tasks you rejected to other Tolokers according to the specified rules.
+        - **Recompletion of rejected assignments** — sends the tasks you rejected to other Tolokers according to the specified rules.
 
-            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+            1. Click **Add a quality control rule**.
 
-            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and select {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %}.
+            1. Find the **Rules** block in the list and select **Processing rejected and accepted assignments**.
 
-            1. Set a rule for a rejected task: if {% if locale == "en-com" %}**assignment becomes rejected**{% endif %}, then {% if locale == "en-com" %}**extend overlap by**{% endif %} **1**. Turn on the {% if locale == "en-com" %}**Open pool if closed**{% endif %} option.
+            1. Set a rule for a rejected task: if **assignment becomes rejected**, then **extend overlap by** **1**. Turn on the **Open pool if closed** option.
 
                 This means that the rejected task will be returned to the pool and shown to another Toloker.
 
-        - {% if locale == "en-com" %}**Submitted responses**{% endif %} — allows you to limit the number of pool tasks available for the Toloker per day.
+        - **Submitted responses** — allows you to limit the number of pool tasks available for the Toloker per day.
 
-            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+            1. Click **Add a quality control rule**.
 
-            1. Find {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Submitted responses**{% endif %}.
+            1. Find **Rules** block in the list and choose **Submitted responses**.
 
-            1. Set a rule for the completed task: if {% if locale == "en-com" %}**submitted assignments**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**assign skill value**{% endif %} **Area selection** equal to **1**.
+            1. Set a rule for the completed task: if **submitted assignments** **≥ 1**, then **assign skill value** **Area selection** equal to **1**.
 
                 These parameters allow you to mark the Toloker who completed at least one task in the pool.
 
@@ -182,27 +190,27 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
                 {% endnote %}
 
-        - {% if locale == "en-com" %}**Fast responses**{% endif %} —Filters out Tolokers who respond too quickly.
+        - **Fast responses** —Filters out Tolokers who respond too quickly.
 
-            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+            1. Click **Add a quality control rule**.
 
-            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Fast responses**{% endif %}.
+            1. Find the **Rules** block in the list and choose **Fast responses**.
 
-            1. In the {% if locale == "en-com" %}**Recent tasks suites to use**{% endif %} field, enter the number of recent task suites submitted by the Toloker. For example, `5`.
+            1. In the **Recent tasks suites to use** field, enter the number of recent task suites submitted by the Toloker. For example, `5`.
 
-            1. In the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} field, enter the time in seconds. For example, `20`.
+            1. In the **Minimum time per task suite** field, enter the time in seconds. For example, `20`.
 
-            1. Set a rule for a fast response: if the {% if locale == "en-com" %}**number of fast responses**{% endif %} **≥ 1**, then {% if locale == "en-com" %}**ban**{% endif %} {% if locale == "en-com" %}**on requester**{% endif %} for {% if locale == "en-com" %}**10 days**{% endif %}. In the {% if locale == "en-com" %}**Reason**{% endif %} field, enter **Fast responses**.
+            1. Set a rule for a fast response: if the **number of fast responses** **≥ 1**, then **ban** **on requester** for **10 days**. In the **Reason** field, enter **Fast responses**.
 
                 This means that a user who completes a [task suite](../../glossary.md#task-suite) in less than 20 seconds will be suspended for 10 days and won't be able to access your tasks.
 
-        - {% if locale == "en-com" %}**Results of assignment review**{% endif %} — restricts the pool access for Tolokers who often make mistakes.
+        - **Results of assignment review** — restricts the pool access for Tolokers who often make mistakes.
 
-            1. Click {% if locale == "en-com" %}**Add a quality control rule**{% endif %}.
+            1. Click **Add a quality control rule**.
 
-            1. Find the {% if locale == "en-com" %}**Rules**{% endif %} block in the list and choose {% if locale == "en-com" %}**Results of assignment review**{% endif %}.
+            1. Find the **Rules** block in the list and choose **Results of assignment review**.
 
-            1. Set a rule for rejected tasks: if {% if locale == "en-com" %}**total reviewed responses**{% endif %} **≥ 3** and {% if locale == "en-com" %}**rejected responses (%)**{% endif %} **> 35**, then {% if locale == "en-com" %} **ban**{% endif %} {% if locale == "en-com" %} **on requester**{% endif %} for {% if locale == "en-com" %} **15 days**{% endif %}.
+            1. Set a rule for rejected tasks: if **total reviewed responses** **≥ 3** and **rejected responses (%)** **> 35**, then  **ban**  **on requester** for  **15 days**.
 
                 This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
@@ -210,73 +218,67 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
         {% note info %}
 
-        You can copy quality control settings from another pool. To do this, in the {% if locale == "en-com" %}**Tolokers**{% endif %} section of the {% if locale == "en-com" %}**Audience**{% endif %} block, click {% if locale == "en-com" %}**copy them from another pool**{% endif %}.
+        You can copy quality control settings from another pool. To do this, in the **Tolokers** section of the **Audience** block, click **copy them from another pool**.
 
         {% endnote %}
 
-1. In the {% if locale == "en-com" %}**Task overlap**{% endif %} section, find the {% if locale == "en-com" %}**The number of Tolokers to complete every task**{% endif %} field and set the overlap, which is the number of Tolokers to complete the same task. For image area selection tasks, it is usually `1`.
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-1. In the {% if locale == "en-com" %}**Additional settings**{% endif %} block, specify {% if locale == "en-com" %}**Time per task suite**{% endif %}. The time should be long enough to read the instructions and wait for task data to load. For example, `1200` seconds.
+    The time should be long enough to read the instructions and wait for task data to load. For example, `1200` seconds.
 
-1. Click {% if locale == "en-com" %}**Create a pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Prepare and upload tasks {#upload-file}
+    1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
-1. Prepare a [file](../../glossary.md#tsv) with tasks.
+        1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](image-segmentation-project1.md).
 
-    1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 1](image-segmentation-project1.md).
+        1. Choose images appropriate for the current project (the **OK** value).
 
-    1. Choose images appropriate for the current project (the **OK** value).
+            {% note tip %}
 
-        {% note tip %}
+            You can use the awk commands to outline images on Linux and MacOS devices:
 
-        You can use the awk commands to outline images on Linux and MacOS devices:
+            ```shell
+            awk 'BEGIN {OFS = FS = "\t";} $2=/OK/ {print $1}' <aggregated_res>.tsv > <filtered_res>.tsv
+            ```
 
-        ```shell
-        awk 'BEGIN {OFS = FS = "\t";} $2=/OK/ {print $1}' <aggregated_res>.tsv > <filtered_res>.tsv
-        ```
+            {% endnote %}
 
-        {% endnote %}
+        1. Copy the column with the selected links to a new sheet or document.
 
-    1. Copy the column with the selected links to a new sheet or document.
+        1. Name it `INPUT:image`. If you want to set a different name, rename the column in the source file with the results, too.
 
-    1. Name it `INPUT:image`. If you want to set a different name, rename the column in the source file with the results, too.
+        1. Save the file.
 
-    1. Save the file.
+    1. Upload the tasks file:
 
-1. Upload the tasks file:
+        1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-    1. Click {% if locale == "en-com" %}**Upload**{% endif %}. In the window that opens, configure the file upload settings.
+        1. Click **Continue**.
 
-    1. Choose {% if locale == "en-com" %}**Set manually**{% endif %}.
+        1. Choose **Set manually**.
 
-    1. In the {% if locale == "en-com" %}**Tasks per suite**{% endif %} field, specify `1`.
+        1. In the **Tasks per suite** field, specify `1`.
 
-    1. Click {% if locale == "en-com" %}**Upload**{% endif %}.
+        1. Click **Combine tasks into suites**.
 
-    1. In the window that opens, choose the tasks file you want to upload and click {% if locale == "en-com" %}**Open**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
-    1. In the window that opens, check the number of tasks and click {% if locale == "en-com" %}**Add**{% endif %}.
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
 1. Click ![](../_images/other/b-start-pool.svg) to start the pool.
 
-    {% note warning %}
-
-    The tasks will be completed by real Tolokers in Toloka. Recheck your project setup before you start the pool.
-
-    {% endnote %}
-
 ## Get the results {#get-results}
 
-1. On the pool page, click {% if locale == "en-com" %}**Download results**{% endif %}. In the window that opens:
+1. On the pool page, click **Download results**. In the window that opens:
 
-    1. In {% if locale == "en-com" %}**Status**{% endif %} leave only the {% if locale == "en-com" %}**Submitted**{% endif %} option enabled.
+    1. In **Status** leave only the **Submitted** option enabled.
 
-    1. In {% if locale == "en-com" %}**Columns**{% endif %} leave only the {% if locale == "en-com" %}**assignment ID**{% endif %} option enabled.
+    1. In **Columns** leave only the **assignment ID** option enabled.
 
-    1. Disable the {% if locale == "en-com" %}**Separate assignments with empty row**{% endif %} option.
+    1. Disable the **Separate assignments with empty row** option.
 
-    1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
+    1. Click **Download results**.
 
 1. Use the results file in [project 3](image-segmentation-project3.md).
 

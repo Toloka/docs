@@ -8,10 +8,9 @@ To make it easier and faster to launch projects in Toloka, we developed a new to
 
 Read in the blog:
 
-- Learn about the benefits of Template Builder and how to use it in the article {% if locale == "en-com" %}[Template Builder in Toloka]({{ toloka-blog-template-builder-en }}){% endif %}.
+- Learn about the benefits of Template Builder and how to use it in the article [Template Builder in Toloka]({{ toloka-blog-template-builder-en }}).
 
-{% if locale == "en-com" %}
-- [Toloka Digest]({{ toloka-blog-digest-en }}){% endif %}.
+- [Toloka Digest]({{ toloka-blog-digest-en }}).
 
 You can also read the [Template Builder Help](../../template-builder/index.md).
 
@@ -31,7 +30,7 @@ You can also read [Mistakes related to project architecture](frequent-customer-e
 
 A clear and user-friendly interface improves the quality of results, helps Tolokers complete tasks faster, and lets you set a lower price per task.
 
-Read about how to create a good interface in our blog {% if locale == "en-com" %}[Guidelines for Effective Interfaces]({{ toloka-blog-interfaces-en }}).{% endif %}
+Read about how to create a good interface in our blog [Guidelines for Effective Interfaces]({{ toloka-blog-interfaces-en }}).
 
 Also see the following sections:
 

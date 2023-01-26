@@ -26,7 +26,7 @@ You can give other users access to your account:
 
   If you need help setting up pools or projects, give Toloka support temporary view-only access to your account to get recommendations. Access will be automatically revoked in 7 days. If necessary, you can revoke access earlier.
 
-  You can view the list of granted permissions on the {% if locale == "en-com" %}**Profile**{% endif %} page in the {% if locale == "en-com" %}**Account access**{% endif %} tab.
+  You can view the list of granted permissions on the **Profile** page in the **Account access** tab.
 
 {% endlist %}
 
@@ -38,21 +38,21 @@ You can give other users access to your account:
 
   1. Open the [Profile]({{ profile }}) page.
 
-  1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Add teammate**{% endif %}.
+  1. In the **Account access** tab, click **Add user**.
 
   1. Enter the case-sensitive [Yandex ID]({{ yandex-id }}).
 
-  1. In the drop-down list, select {% if locale == "en-com" %}**Full access**{% endif %} or {% if locale == "en-com" %}**View only**{% endif %}.
+  1. In the drop-down list, select **Full access** or **View only**.
 
-  1. Click {% if locale == "en-com" %}**Grant access**{% endif %}.
+  1. Click **Grant access**.
 
 - Toloka support
 
   1. Open the [Profile]({{ profile }}) page.
 
-  1. In the {% if locale == "en-com" %}**Account access**{% endif %} tab, click {% if locale == "en-com" %}**Grant access to Toloka Support**{% endif %}.
+  1. In the **Account access** tab, click **Grant access to Toloka Support**.
 
-  1. Click {% if locale == "en-com" %}**Grant access**{% endif %}.
+  1. Click **Grant access**.
 
 {% endlist %}
 

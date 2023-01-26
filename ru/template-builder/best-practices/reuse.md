@@ -10,7 +10,7 @@
 
 Это полезно, когда надо вставить одинаковый код в несколько мест. Например, если вам надо выполнить одно и то же действие для нескольких кнопок, поместите это действие в переменную и вызовите его через `$ref`.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QgNSV)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/KZ2-4xkU3tvq6L)
 
 {% note tip %}
 
@@ -30,7 +30,7 @@
 
 Указатель на визуальный компонент в виде конструкции `{ "$ref": "path.to.element" }`.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QgSH8)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/VqRs405y3tvqGP)
 
 {% note warning %}
 
@@ -42,15 +42,13 @@
 
 {% endnote %}
 
-
 ## helper.transform {#helper-transform}
 
 Компонент [helper.transform](../reference/helper.transform.md) позволяет преобразовать один массив в другой. Это полезно, если вы не знаете количество элементов в массиве или он очень длинный.
 
 **Примеры:**
 
-- [Преобразовать ссылки в картинки](https://tb.yandex.net/editor?config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNlTE48jFmzwALItxYAnTnW0BDKHxgRtU4aIV4J02SkpWFtZawd4AJgboHOcKEwAroIgItTOeEzeaqogcFIGCET2TjQAvmERcVB0EHKpYkrMbhR4HCR+CUmW4dYggdrc+bVZrrFePjwQYAZNoQV1UXQx7nGSFiADOGkDM7Vz05hpodlBdChoVjZVyWwA2qnqdHRMfMgA9OdgHlCcAt0A1nxQBkx+EOfxCAC0w4FSACM+OcAJwANgADCRznwGjAiNpviQDPgiAB9ADMABEAEIAeQAmjiAAo4jEADU4ACsmAgaoUQGpjqcLlcbndcmAni83nAPl9fmp-kDQZDofA+BpzEZvnw4Nw1BBAkRjuiAKoAQSxaoAMgAlPUACQAogBpam0+k0I4nM6Xa63e5c56vd6fKQ-P6A4HgqHnCDcDzfJiK3JogDixoAigAmADseIA6gAtABqqYtdMm1AAuksQGkgA).
-- [Написать приветствие на нескольких языках](https://clck.ru/QgdvU).
-
+- [Преобразовать ссылки в картинки](https://tb.toloka.dev/editor?config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNlTE48jFmzwALItxYAnTnW0BDKHxgRtU4aIV4J02SkpWFtZawd4AJgboHOcKEwAroIgItTOeEzeaqogcFIGCET2TjQAvmERcVB0EHKpYkrMbhR4HCR+CUmW4dYggdrc+bVZrrFePjwQYAZNoQV1UXQx7nGSFiADOGkDM7Vz05hpodlBdChoVjZVyWwA2qnqdHRMfMgA9OdgHlCcAt0A1nxQBkx+EOfxCAC0w4FSACM+OcAJwANgADCRznwGjAiNpviQDPgiAB9ADMABEAEIAeQAmjiAAo4jEADU4ACsmAgaoUQGpjqcLlcbndcmAni83nAPl9fmp-kDQZDofA+BpzEZvnw4Nw1BBAkRjuiAKoAQSxaoAMgAlPUACQAogBpam0+k0I4nM6Xa63e5c56vd6fKQ-P6A4HgqHnCDcDzfJiK3JogDixoAigAmADseIA6gAtABqqYtdMm1AAuksQGkgA).
+- [Написать приветствие на нескольких языках](https://ya.cc/t/DlWy7BtH3tvqiK).
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

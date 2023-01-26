@@ -1,5 +1,5 @@
 # get_attachments
-`toloka.client.TolokaClient.get_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L802)
+`toloka.client.TolokaClient.get_attachments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L809)
 
 Finds all attachments that match certain criteria and returns their metadata.
 
@@ -25,6 +25,7 @@ If you need to sort attachments use the [find_attachments](toloka.client.TolokaC
 `created_lte`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Attachments uploaded by Tolokers after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned attachments limit for each request. The maximum allowed batch_size is 100.</p>
 
 * **Yields:**
 

@@ -114,8 +114,8 @@ Criteria for the quality control rule:
 - `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
 - `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
 - `ASSIGNMENT_SUBMIT_TIME` — The number of "fast" responses (the minimum response speed is set in the parameters).
-- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during non-automatic acceptance.
-- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with non-automatic acceptance enabled.
+- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
+- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
 || **configs.rules.conditions** | **object \| required**
 
@@ -218,3 +218,7 @@ Determines whether to re-open a closed pool:
 - `false` — Don't open the pool after making changes, if it is closed.
 ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/skipped-assignments.md)

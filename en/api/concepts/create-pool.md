@@ -585,7 +585,7 @@ Assign task suites in the order in which they were uploaded. For example, for a 
 This parameter is available when the project has `"assignments_issuing_type": "AUTOMATED".` ||
 || **priority** {#priority} | **integer**
 
-The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first.
+The priority of the pool in relation to other pools in the project with the same task price and set of filters. Tolokers are assigned tasks with a higher priority first.
 
 Possible values: from `0` to `100`.
 
@@ -639,7 +639,7 @@ Selective review of training tasks. To make sure selective review is enabled, do
 
 Balance type. Possible values:
 
-- `TOP_PERCENTAGE_BY_QUALITY` — Users with the best task completion quality.
+- `TOP_PERCENTAGE_BY_QUALITY` — Tolokers with the best task completion quality.
 - `BEST_CONCURRENT_USERS_BY_QUALITY` — Active Tolokers with access to the task. ||
 || **speed_quality_balance. percent** | **integer**
 
@@ -758,3 +758,7 @@ Deprecated parameter.
 
 Pool type. The value is always `REGULAR` indicating a normal pool. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/pool-main.md)

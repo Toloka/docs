@@ -1,5 +1,5 @@
 # get_aggregated_solutions
-`toloka.client.TolokaClient.get_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L573)
+`toloka.client.TolokaClient.get_aggregated_solutions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L573)
 
 Finds all aggregated responses that match certain criteria.
 
@@ -25,6 +25,7 @@ Try [crowd-kit library](https://toloka.ai/en/docs/crowd-kit). It has many aggreg
 `task_id_lte`|**Optional\[str\]**|<p>Responses for tasks with IDs less than or equal to the specified value.</p>
 `task_id_gt`|**Optional\[str\]**|<p>Responses for tasks with IDs greater than the specified value.</p>
 `task_id_gte`|**Optional\[str\]**|<p>Responses for tasks with IDs greater than or equal to the specified value.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned aggregated responses limit for each request. The default batch_size is 50. The maximum allowed limit is 100,000.</p>
 
 * **Yields:**
 

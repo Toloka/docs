@@ -1,5 +1,5 @@
 # NotifyActionV1
-`toloka.client.project.template_builder.actions.NotifyActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/actions.py#L46)
+`toloka.client.project.template_builder.actions.NotifyActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/actions.py#L46)
 
 ```python
 NotifyActionV1(

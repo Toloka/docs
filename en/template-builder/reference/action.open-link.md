@@ -2,7 +2,7 @@
 
 Opens a new tab in the browser with the specified web page. For example, you can open a link when a button is clicked.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rf2eD)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/UaHnEFiH3tz2Wy)
 
 ## Component properties {#properties}
 

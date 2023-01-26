@@ -2,19 +2,15 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a string input field in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.text.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a string input field in [Template Builder](../../../template-builder/reference/field.text.md).
 
 {% endnote %}
 
 To add a string input field to the task, use the `{{field type="input" name="<output field> name"}}` component. Example:
 
-{% if locale == "en-com" %}
-
 ```plaintext
 {{field type="input" name="result" placeholder="Enter a word" validation-show="right-center"}}
 ```
-
-{% endif %}
 
 Add a field of `string` type in the [output data description](../incoming.md). Example:
 

@@ -4,7 +4,7 @@
 
 Объединяет любые компоненты в визуальные группы — блоки с рамкой.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QRZF6)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/qr8caNWm3twYuQ)
 
 ## Свойства компонента {#properties}
 

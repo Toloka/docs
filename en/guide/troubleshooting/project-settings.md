@@ -133,14 +133,10 @@ You can hide text in an expandable section by using CSS styles, both in the task
 
 Specify the name of the input field where you pass the link, without the brackets:
 
-{% if locale == "en-com" %}
-
 ```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
           action=true}}
 ```
-
-{% endif %}
 
 {% endcut %}
 
@@ -150,14 +146,10 @@ Specify the name of the input field where you pass the link, without the bracket
 
 1. To solve the second problem, you can add another validation like this:
 
-    {% if locale == "en-com" %}
-
     ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
-
-    {% endif %}
 
 {% endcut %}
 
@@ -316,7 +308,7 @@ In HTML, use a special handlebar to iterate over this field. The code structure 
 
 {% cut "How do I use sliders as interface elements for selecting parameter values?" %}
 
-In the HTML code of the template, enter the following:{% if locale == "en-com" %}
+In the HTML code of the template, enter the following:
 
 ```html
 <input type=""range"" list=""rng"" class=""res"">
@@ -341,8 +333,6 @@ return solution;
 
 }
 ```
-
-{% endif %}
 
 {% endcut %}
 

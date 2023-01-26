@@ -6,23 +6,23 @@ In Toloka, you can exchange information with Tolokers through messages and recei
 
 There are several types of messages. To switch between them, select one of the following on the right of the screen:
 
-- {% if locale == "ru-ru" %}**Inbox**{% elsif locale == "en-com" %}**Inbox**{% endif %}: Messages you received.
+- **Inbox**: Messages you received.
 
-- {% if locale == "ru-ru" %}**Sent**{% elsif locale == "en-com" %}**Sent**{% endif %}: Messages you sent. Recipients can be:
+- **Sent**: Messages you sent. Recipients can be:
 
     - Any Toloker who started at least two of your tasks.
 
-    - A group of Tolokers that you can select using [filters](filters.md). To do this, click {% if locale == "ru-ru" %}**+ Add filter**{% elsif locale == "en-com" %}**+ Add filter**{% endif %}.
+    - A group of Tolokers that you can select using [filters](filters.md). To do this, click **+ Add filter**.
 
-    - Individual Tolokers. In the {% if locale == "ru-ru" %}**To**{% elsif locale == "en-com" %}**To**{% endif %} field, specify the Toloker ID or several comma-separated IDs.
+    - Individual Tolokers. In the **To** field, specify the Toloker ID or several comma-separated IDs.
 
-- {% if locale == "ru-ru" %}**Users**{% elsif locale == "en-com" %}**Users**{% endif %}: Messages from Tolokers.
+- **Users**: Messages from Tolokers.
 
-- {% if locale == "ru-ru" %}**Administrator**{% elsif locale == "en-com" %}**Administrator**{% endif %}: Messages from the platform.
+- **Administrator**: Messages from the platform.
 
-- {% if locale == "ru-ru" %}**Notifications**{% elsif locale == "en-com" %}**Notifications**{% endif %}: System notifications about pool or aggregation completion and other events, as well as messages from the Toloka team, news, and recommendations.
+- **Notifications**: System notifications about pool or aggregation completion and other events, as well as messages from the Toloka team, news, and recommendations.
 
-- {% if locale == "ru-ru" %}**Important**{% elsif locale == "en-com" %}**Important**{% endif %}: Messages that you marked as important (using the ![](../_images/other/important.svg) label).
+- **Important**: Messages that you marked as important (using the ![](../_images/other/important.svg) label).
 
 {% note info %}
 
@@ -32,7 +32,7 @@ You can specify which messages you consider important. To do this, click ![](../
 
 ## Searching for messages
 
-To find all the messages received from a certain Toloker, enter their ID in the search box in the upper-right corner and click {% if locale == "ru-ru" %}**Search**{% elsif locale == "en-com" %}**Search**{% endif %}.
+To find all the messages received from a certain Toloker, enter their ID in the search box in the upper-right corner and click **Search**.
 To find messages by keyword, enter a keyword or phrase in the search box.
 
 ## When to write to Tolokers
@@ -57,17 +57,34 @@ If the issue is related to how the platform works in general (such as money with
 
 ## How to write a message
 
+#### In the interface
+
 1. [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
 
-1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click {% if locale == "ru-ru" %}**Contact** → **Group of Tolokers** → **+ Add filter**{% elsif locale == "en-com" %}**Contact** → **Group of Tolokers** → **+ Add filter**{% endif %}.
+1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click **Contact** → **Group of Tolokers** → **+ Add filter**.
 
-1. Specify the subject of your message in the {% if locale == "ru-ru" %}**Subject**{% elsif locale == "en-com" %}**Subject**{% endif %} field.
+1. Specify the subject of your message in the **Subject** field.
 
-1. Fill in the {% if locale == "ru-ru" %}**Message text**{% elsif locale == "en-com" %}**Message text**{% endif %} field.
+1. Fill in the **Message text** field.
 
-1. Select {% if locale == "ru-ru" %}**Allows replies**{% elsif locale == "en-com" %}**Allows replies**{% endif %}.
+1. Select **Allows replies**.
 
-1. Click {% if locale == "ru-ru" %}**Submit**{% elsif locale == "en-com" %}**Submit**{% endif %}.
+1. Click **Submit**.
+
+{% note tip "How to work via Toloka API" %}
+
+To send a message using Toloka API, send a `POST` request with the information about the message and the recipients:
+
+```bash
+curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
+```
+
+Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
 
 ## Recommendations
 
@@ -97,7 +114,7 @@ If the issue is related to how the platform works in general (such as money with
 
 ## How to receive messages by email
 
-Open the {% if locale == "ru-ru" %}**Notifications**{% endif %}{% if locale == "en-com" %}**Notifications**{% endif %} tab in the [requester profile]({{ profile }}) and enable {% if locale == "ru-ru" %}**Email**{% endif %}{% if locale == "en-com" %}**Email**{% endif %} for the **New message** event. Messages will be sent to the email address specified in the profile.
+Open the **Notifications** tab in the [requester profile]({{ profile }}) and enable **Email** for the **New message** event. Messages will be sent to the email address specified in the profile.
 
 ## Marking messages as read
 
@@ -115,7 +132,9 @@ To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as
 ## For developers {#for-developers}
 
 - [Toloka API: Messages for Tolokers](../../api/concepts/messages.md)
-- [Toloka-Kit: Working with messages](../../toloka-kit/reference/toloka.client.TolokaClient.add_message_thread_to_folders.md)
+- [Toloka-Kit recipe: Send messages](../../toloka-kit/recipes/send-messages.md)
+- [Toloka-Kit recipe: Get list of message threads](../../toloka-kit/recipes/get-message-threads.md)
+- [Toloka-Kit recipe: Reply to message thread](../../toloka-kit/recipes/reply-to-message-thread.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -125,7 +144,7 @@ Add a notification to the project description (for example: "Attention! The inst
 
 - Assign them a hidden skill or use an existing [skill](nav-assign.md) linked to the pool.
 
-- Go to **Messages**, and click {% if locale == "ru-ru" %}**Contact** → **Group of Tolokers** → **+ Add filter** → **My skills** → **&lt;skill&gt;**{% elsif locale == "en-com" %}**Contact** → **Group of Tolokers** → **Add filter** → **My skills** → **&lt;skill&gt;**{% endif %}.
+- Go to **Messages**, and click **Contact** → **Group of Tolokers** → **+ Add filter** → **My skills** → **&lt;skill&gt;**.
 
 - If you created a new skill, specify the value you assigned to the chosen group (for example, 1). If you use an existing skill, specify the minimum value.
 

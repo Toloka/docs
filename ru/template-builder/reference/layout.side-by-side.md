@@ -6,7 +6,7 @@
 
 Под сравниваемыми элементами можно добавить кнопки выбора или поле для ввода комментария.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/rcRVK)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/yegvCFgq3tvumR)
 
 Отличия от [layout.compare](layout.compare.md):
 

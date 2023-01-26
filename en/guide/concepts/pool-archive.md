@@ -1,12 +1,12 @@
 # Archiving a pool
 
-A [pool](../../glossary.md#pool) with the {% if locale == "en-com" %}“Archived”{% endif %} status can't be started or edited and isn't available for the [task review](accept.md).
+A [pool](../../glossary.md#pool) with the “Archived” status can't be started or edited and isn't available for the [task review](accept.md).
 
 By default, archived pools are not visible in the list of [project](../../glossary.md#project) pools. To view them:
 
 1. Open the project page.
 
-1. In the {% if locale == "en-com" %}**Pools**{% endif %} tab, select {% if locale == "en-com" %}**Archived**{% endif %}.
+1. In the **Pools** tab, select **Archived**.
 
 The pool is automatically archived if none of the following actions is performed in the pool for a month:
 
@@ -16,7 +16,7 @@ The pool is automatically archived if none of the following actions is performed
 - Completing a task.
 - Cloning via the Toloka API.
 
-To archive a pool, click {% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → Archive**{% endif %} at the top of the pool page, or ![](../_images/other/pool-action-archive.svg) in the list of pools on the project page.
+To archive a pool, click **![Drop-down button](../_images/drop-down.svg) → Archive** at the top of the pool page, or ![](../_images/other/pool-action-archive.svg) in the list of pools on the project page.
 
 {% note info %}
 
@@ -39,8 +39,7 @@ To [archive the training pool](train.md), first archive all the main pools to wh
 ## For developers {#for-developers}
 
 - [Toloka API: Moving pool to archive](../../api/concepts/archive-pool.md)
-- [Toloka-Kit: Archiving pool](../../toloka-kit/reference/toloka.client.TolokaClient.archive_pool.md)
-- [Toloka-Kit: Archiving pool asynchronously](../../toloka-kit/reference/toloka.client.TolokaClient.archive_pool_async.md)
+- [Toloka-Kit recipe: Archive pool](../../toloka-kit/recipes/archive-pool.md)
 
 ## Troubleshooting {#troubleshooting}
 

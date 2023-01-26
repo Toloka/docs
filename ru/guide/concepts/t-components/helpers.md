@@ -63,18 +63,8 @@
 
 [TSV-файл](../../../glossary.md#tsv) с ответами в столбце `result` будет содержать данные в виде:
 
-{% if locale == "ru-ru" %}
-
 ```json
 {result {"input1": "<ответ исполнителя>", "input2": "<ответ исполнителя>"}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```json
-{result {"input1": "<performer's response", "input2": "performer's response>"}}
-```
-
-{% endif %}
 
 {% include [contact-support](../../_includes/contact-support.md) %}

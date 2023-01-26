@@ -56,13 +56,13 @@ You can configure quality control in the [pool](qa-pool-settings.md) and in the 
 
 - Pool
 
-  Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the page) and click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %} in the {% if locale == "en-com" %}**Quality control**{% endif %} section.
+  Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the page) and click **Add Quality Control Rule** in the **Quality control** section.
 
-  You can copy quality control settings from another pool. To do this, click {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} in the {% if locale == "en-com" %}**Audience**{% endif %} section.
+  You can copy quality control settings from another pool. To do this, click **Copy audience filters and quality control settings** in the **Audience** section.
 
 - Project
 
-  Open the project page, open the {% if locale == "en-com" %}**Quality control**{% endif %} tab and click {% if locale == "en-com" %}**Set quality control**{% endif %}. Then click {% if locale == "en-com" %}**+ Add Quality Control Rule**{% endif %}.
+  Open the project page, open the **Quality control** tab and click **Set quality control**. Then click **+ Add Quality Control Rule**.
 
   The rules are applied to all project pools, so you can't change settings in just one of the pools.
 
@@ -354,7 +354,7 @@ In the exam pool, you can create a skill reflecting the exam result and granting
 
 {% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. So I try to use `3` in the **Recent control task responses to use** field, but I get an error that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
-The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
+The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use manual review for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
 {% endcut %}
 

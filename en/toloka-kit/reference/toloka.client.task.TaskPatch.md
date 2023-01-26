@@ -1,5 +1,5 @@
 # TaskPatch
-`toloka.client.task.TaskPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/task.py#L176)
+`toloka.client.task.TaskPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/task.py#L176)
 
 ```python
 TaskPatch(

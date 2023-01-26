@@ -1,5 +1,5 @@
 # NewMessageThreads
-`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/metrics.py#L342)
+`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/metrics.py#L342)
 
 ```python
 NewMessageThreads(
@@ -11,7 +11,7 @@ NewMessageThreads(
     *,
     toloka_client: Optional[TolokaClient] = None,
     atoloka_client: Optional[AsyncTolokaClient] = None,
-    timeout: timedelta = ...
+    timeout: timedelta = _Nothing.NOTHING
 )
 ```
 

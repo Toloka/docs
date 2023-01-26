@@ -152,8 +152,6 @@ To use annotations, insert one of these examples into the JS block:
 
 - Text input field
 
-  {% if locale == "en-com" %}
-
   ```javascript
   exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -193,11 +191,7 @@ To use annotations, insert one of these examples into the JS block:
   }
   ```
 
-  {% endif %}
-
 - Drop-down list
-
-  {% if locale == "en-com" %}
 
   ```javascript
   var listOption =
@@ -278,8 +272,6 @@ To use annotations, insert one of these examples into the JS block:
   }
   ```
 
-  {% endif %}
-
 {% endlist %}
 
 {% cut "Explanation of examples" %}
@@ -313,14 +305,10 @@ Toloker interactions with the editor cause the following events:
 
 To subscribe to these events:
 
-{% if locale == "en-com" %}
-
 ```javascript
 editor.on('shape:start', function() {
 /* event handling */
 });
 ```
-
-{% endif %}
 
 {% include [contact-support](../../_includes/contact-support.md) %}

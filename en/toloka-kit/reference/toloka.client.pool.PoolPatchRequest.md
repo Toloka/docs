@@ -1,27 +1,17 @@
 # PoolPatchRequest
-`toloka.client.pool.PoolPatchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/__init__.py#L283)
+`toloka.client.pool.PoolPatchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/pool/__init__.py#L282)
 
 ```python
 PoolPatchRequest(self, priority: Optional[int] = None)
 ```
 
-Class for changing the priority of the pool issue
+New pool parameters.
 
 
-To do this use TolokaClient.patch_pool(). You can use expanded version, then pass "priority" directly to "patch_pool".
+This class is used with the [patch_pool](toloka.client.TolokaClient.patch_pool.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Tolokers are assigned tasks with a higher priority first. Possible values: from -100 to 100.</p>
-
-**Examples:**
-
-How to set highest priority to some pool.
-
-```python
-toloka_client = toloka.TolokaClient(your_token, 'PRODUCTION')
-patched_pool = toloka_client.patch_pool(existing_pool_id, 100)
-print(patched_pool.priority)
-```
+`priority`|**Optional\[int\]**|<p>The new priority of the pool. Possible values: from -100 to 100.</p>

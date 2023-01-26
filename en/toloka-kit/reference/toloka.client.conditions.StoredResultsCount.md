@@ -1,5 +1,5 @@
 # StoredResultsCount
-`toloka.client.conditions.StoredResultsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/conditions.py#L319)
+`toloka.client.conditions.StoredResultsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/conditions.py#L319)
 
 ```python
 StoredResultsCount(
@@ -9,7 +9,7 @@ StoredResultsCount(
 )
 ```
 
-The number of times a Toloker entered captcha.
+Deprecated. The number of times a Toloker entered captcha.
 
 
 `StoredResultsCount` is used with collectors:

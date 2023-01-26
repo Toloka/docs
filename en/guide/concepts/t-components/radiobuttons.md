@@ -2,20 +2,16 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a radio button in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.radio-group.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a radio button in [Template Builder](../../../template-builder/reference/field.radio-group.md).
 
 {% endnote %}
 
 To add radio buttons to the task, use the `{{field type="radio" name="<output field name>"}}` component. For example, a set of two radio buttons:
 
-{% if locale == "en-com" %}
-
 ```plaintext
 {{field type="radio" name="result" label="Yes" value="Yes" hotkey="1"}}
 {{field type="radio" name="result" label="No" value="No" hotkey="2"}}
 ```
-
-{% endif %}
 
 Add a field of `string` type in the [output data description](../incoming.md). Example:
 

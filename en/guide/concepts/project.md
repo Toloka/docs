@@ -20,7 +20,7 @@ To create a project, follow the instructions:
 
 1. Choose a preset:
 
-    1. Click the {% if locale == "en-com" %}**Create project**{% endif %} button on the {% if locale == "en-com" %}**Projects**{% endif %} page.
+    1. Click the **Create project** button on the **Projects** page.
 
     1. Choose a preset. The preset contains pre-configured [input and output data fields](incoming.md) and [the task interface](spec.md), which you can edit.
 
@@ -73,7 +73,7 @@ To create a project, follow the instructions:
 
     {% endlist %}
 
-1. [Write {% if locale == "en-com" %}guidelines{% endif %}](instruction.md) for Tolokers.
+1. [Write guidelines](instruction.md) for Tolokers.
 
     You can prepare instructions in HTML format, then copy and paste into the editor. Click **<>** to switch to HTML mode.
 
@@ -93,7 +93,7 @@ After creating the project, add a [task pool](pool-main.md) to it. You can also 
 
 You can view the list of created projects on the **Projects** page. Open the project page to view the list of pools, [project rating](project_rating_stat.md), and [project statistics](project-statistic.md).
 
-To clone a project, click ![](../_images/location-job/project/clone-project.svg) in the list of projects or select {% if locale == "en-com" %}**Project actions → Clone**{% endif %} on the project page.
+To clone a project, click ![](../_images/location-job/project/clone-project.svg) in the list of projects or select **Project actions → Clone** on the project page.
 
 {% note warning %}
 
@@ -121,7 +121,7 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 ## For developers {#for-developers}
 
 - [Toloka API: Creating project](../../api/concepts/create-prj.md)
-- [Toloka-Kit: Creating project](../../toloka-kit/reference/toloka.client.TolokaClient.create_project.md)
+- [Toloka-Kit recipe: Create project](../../toloka-kit/recipes/create-project.md)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -179,9 +179,9 @@ We recommend that you break down your object selection project into three projec
 
 1. Selecting objects in images.
 
-    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with manual review.
 
-    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](control.md).
+    1. Use the quality control rules: fast responses, manual review, and post-review re-assessment. [Description of rules with examples](control.md).
 
 1. Reviewing object selection assignments.
 
@@ -261,7 +261,7 @@ In the standard preset with an area selection editor, you can't use the control 
 
 You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
 
-Such tasks are usually run with non-automatic acceptance: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
+Such tasks are usually run with manual review: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
 
 For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the “Results of assignment review” rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
 

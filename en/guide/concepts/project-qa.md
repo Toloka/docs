@@ -14,11 +14,11 @@ To set up quality control:
 
 1. Open the project page.
 
-1. Go to the {% if locale == "en-com" %}**Quality control**{% endif %} tab.
+1. Go to the **Quality control** tab.
 
-1. Click {% if locale == "en-com" %}**Set quality control**{% endif %}.
+1. Click **Set quality control**.
 
-1. Click {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
+1. Click **Add Quality Control Rule**.
 
 1. In the list that appears, select the appropriate rules. If you aren't sure what quality control rules you need, select a ready-made protection set of rules with default settings.
 

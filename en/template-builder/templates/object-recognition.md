@@ -6,7 +6,7 @@ This preset is designed to outline objects in images for training computer visio
 
 Take a look at the example: the labeling interface includes an image with bounding boxes, polygons, or key points. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Bv2ocvkf3Vbvhr)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ajl1SJ1d3ttCsE)
 
 {% cut "Components used in the example" %}
 
@@ -123,7 +123,7 @@ To add a detailed description to the task, use the `label` property of the [fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/hrSYz9hX3VorDF)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/J3wI38wh3ttCtn)
 
 ## Add a response field {#add-text-area}
 
@@ -145,7 +145,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/izf2rY-d3VoZgc)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/PWIhgNqi3ttCvX)
 
 ## Add a layout {#add-layout}
 
@@ -168,7 +168,7 @@ In this example, the text is highlighted with a yellow border.
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eLCcS7Tz3VvzPT)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/CD_JTa4r3ttCx9)
 
 ## See also {#see-also}
 

@@ -36,7 +36,7 @@
 
 В этом примере нажатие латинской клавиши **Р** вызывает действие [action.play-pause](../reference/action.play-pause.md). Оно запускает или останавливает воспроизведение для плеера. Плеер указывается в свойстве `view` с помощью конструкции [$ref](reuse.md) — ссылки на другое место в конфигурации.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/fowMbgtQ3YCoxE)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/oLW7Uxbg3tvFvU)
 
 {% note tip %}
 
@@ -44,18 +44,17 @@
 
 {% endnote %}
 
-
 ## Радио-кнопки и чекбоксы {#radio-check}
 
 Чтобы задать горячие клавиши к радио-кнопкам, используйте компонент [action.set](../reference/action.set.md), а для чекбоксов — [action.toggle](../reference/action.toggle.md). Настройте для горячих клавиш выполнение тех же самых действий, что и у переключателя.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/R4kTo)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/I1QHLeKP3ttEqg)
 
 ## Переиспользование горячих клавиш {#reuse}
 
 Вы можете [переиспользовать](reuse.md) горячую клавишу так же, как и любое другое место кода. Для этого используйте конструкцию `{ "$ref": "path.to.element" }`. Переиспользование пригодится, если вам нужно вставить одинаковые горячие клавиши в несколько мест.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/R4kHH)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/I4WQhO2y3tvpCZ)
 
 {% note tip %}
 
@@ -63,12 +62,11 @@
 
 {% endnote %}
 
-
 ## Выполнение нескольких действий {#bulk-actions}
 
 Чтобы одновременно вызывать несколько действий при нажатии на кнопку, добавьте компонент [action.bulk](../reference/action.bulk.md). Например, чтобы показать несколько уведомлений.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RGsvZ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/-hkEAK2e3tvpSG)
 
 ## Условия в горячих кнопках {#if-switch}
 
@@ -80,11 +78,11 @@
 
 Посмотреть пример с ошибкой в песочнице.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RGsxF)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/S3SIZE5J3tvpew)
 
 Посмотреть исправленный пример в песочнице.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RJXUV)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/XJte4Hhe3tvpng)
 
 ## Решение проблем {#troubleshooting}
 
@@ -103,6 +101,5 @@
 - Тип данных для действий должен совпадать. Например, горячая клавиша будет работать, но не будет отображаться, если кнопка при нажатии записывает в результат строку `“true”`, а для горячей клавиши указано логическое значение `true`.
 - Если при нажатии кнопки вызывается несколько действий ([action.bulk](../reference/action.bulk.md)), то их последовательность для горячей клавиши должна быть такой же.
 - Если используется условный оператор для выбора действия, например [helper.if](../reference/helper.if.md), то при нажатии горячей клавиши должен вызываться тот же условный оператор (**helper.if**) по тем же правилам.
-
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

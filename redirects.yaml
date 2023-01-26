@@ -47,6 +47,10 @@ common:
     to: /toloka-apps/api/ref/item/app-projectsapp_project_iditemsitem_id-get.md
   - from: /toloka-apps/api/ref/item/app-projects_app_project_id_items_get.md
     to: /toloka-apps/api/ref/item/app-projectsapp_project_iditems-get.md
+  - from: /toloka-kit/learn-basics.md
+    to: /toloka-kit/recipes/learn-basics.md
+  - from: /toloka-kit/use-cases.md
+    to: /toloka-kit/recipes/use-cases.md
 
 ru:
   - from: /api/concepts/download-tasks.md

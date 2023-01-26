@@ -1,5 +1,5 @@
 # get_app
-`toloka.async_client.client.AsyncTolokaClient.get_app` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/async_client/client.py#L0)
 
 ```python
 async get_app(

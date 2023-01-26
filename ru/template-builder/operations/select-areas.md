@@ -4,7 +4,6 @@
 
 В этом разделе описано, как добавить к картинке редактор для выделения областей и как можно ускорить работу с ним с помощью горячих клавиш. Если вам нужно просто вставить картинку, читайте раздел [Вставка картинок](insert-images.md).
 
-
 ## Добавить редактор для выделения {#add-select}
 
 Чтобы добавить возможность выделять на картинках области, используйте компонент [field.image-annotation](../reference/field.image-annotation.md).
@@ -22,8 +21,7 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RnZox)
-
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/HdPqNHC53ttFBy)
 
 ## Настроить режимы разметки {#shapes}
 
@@ -43,7 +41,7 @@
   }
   ```
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Rna3F)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ZtJ6f56P3ttFCb)
 
 - Многоугольниками
 
@@ -57,7 +55,7 @@
   }
   ```
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/RnZtm)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/frlb1AGg3ttFDC)
 
 - Точками
 
@@ -71,7 +69,7 @@
   }
   ```
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/RnZyt)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/9ZNO1IDp3ttFE3)
 
 {% endlist %}
 
@@ -93,10 +91,9 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RnaUY)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3L2iMLDD3tvyLo)
 
 Каждый новый объект свойства `labels` добавляет в редакторе кнопку для выбора типа области, а разное значение `value` дает возможность выделить область уникальным цветом.
-
 
 ## Добавить горячие клавиши {#hotkeys}
 
@@ -104,7 +101,7 @@
 
 Если вы добавите плагин для горячих клавиш без уточнения значений, то они будут проставлены по умолчанию.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RnbbS)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/sn4WScBK3ttFEp)
 
 Поменяйте их как описано ниже, если вам они не подходят. Если вам не нужен какой-то вид горячих клавиш, то передайте ему пустое значение.
 
@@ -124,7 +121,7 @@
   }
   ```
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/RncKs)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/HzTesKy63tvyxa)
 
 - Выбрать режимы разметки
 
@@ -146,7 +143,7 @@
   }
   ```
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/RncQL)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/33szOrFP3tvzLF)
 
 - Подтвердить или отменить создание области
 
@@ -162,7 +159,7 @@
   }
   ```
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/RncSC)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/2girQif13tvzZF)
 
 {% endlist %}
 
@@ -176,7 +173,6 @@
 - [condition.required](../reference/condition.required.md) — чтобы убедиться, что исполнитель выделил хотя бы одну область;
 - [plugin.toloka](../reference/plugin.toloka.md) — чтобы настроить внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RncTq)
-
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/grA2YJnS3tvztP)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

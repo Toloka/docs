@@ -1,5 +1,5 @@
 # compose_message_thread
-`toloka.client.TolokaClient.compose_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L870)
+`toloka.client.TolokaClient.compose_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L882)
 
 Sends a message to a Toloker.
 

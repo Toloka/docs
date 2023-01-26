@@ -4,25 +4,15 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать поле для ввода строки в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.text.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.text.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать поле для ввода строки в [Конструкторе шаблонов](../../../template-builder/reference/field.text.md).
 
 {% endnote %}
 
 Чтобы добавить в задание поле для ввода строки, используйте компонент `{{field type="input" name="<название выходного поля>"}}`. Например:
 
-{% if locale == "ru-ru" %}
-
 ```plaintext
 {{field type="input" name="result" placeholder="Введите слово" validation-show="right-center"}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```plaintext
-{{field type="input" name="result" placeholder="Enter a word" validation-show="right-center"}}
-```
-
-{% endif %}
 
 В описании [выходных данных](../incoming.md) добавьте поле с типом `string`. Например:
 

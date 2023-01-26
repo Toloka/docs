@@ -6,15 +6,11 @@
 
 В зависимости от этапов работы в Толоке у заказчиков встречаются следующие типы ошибок: в архитектуре проекта, в интерфейсе задания, в загрузке заданий, в настройке [контроля качества](../../glossary.md#quality-control).
 
-{% if locale == "ru-ru" %}
-
 Тем, кто не любит читать, будет полезно посмотреть следующее видео:
 
 @[youtube](https://www.youtube.com/embed/F-SJwLw-zLk?utm_source=support&utm_medium=online&utm_compaign=help&utm_content=requesters&?rel=0)
 
 {% include [quickstart-toloka-blog](../_includes/quickstart/id-quickstart/toloka-blog.md) %}
-
-{% endif %}
 
 ## Ошибки в архитектуре проекта {#mistakes-architecture}
 
@@ -214,13 +210,9 @@
 
 {% endcut %}
 
-{% if locale == "ru-ru" %}
-
 О работе на всех этапах краудсорсинга смотрите в следующем видео:
 
 @[youtube](https://www.youtube.com/embed/YxpFLKXZ1dM?utm_source=support&utm_medium=online&utm_compaign=help&utm_content=requesters&?rel=0)
-
-{% endif %}
 
 Также смотрите:
 

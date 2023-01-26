@@ -299,14 +299,10 @@ You can hide text in an expandable section by using CSS styles, both in the task
 
 Specify the name of the input field where you pass the link, without the brackets:
 
-{% if locale == "en-com" %}
-
 ```html
 {{field type="button-clicked" name="ads" label="Click me" href=name_escape
           action=true}}
 ```
-
-{% endif %}
 
 {% endcut %}
 
@@ -316,14 +312,10 @@ Specify the name of the input field where you pass the link, without the bracket
 
 1. To solve the second problem, you can add another validation like this:
 
-    {% if locale == "en-com" %}
-
     ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
     ```
-
-    {% endif %}
 
 {% endcut %}
 
@@ -482,7 +474,7 @@ In HTML, use a special handlebar to iterate over this field. The code structure 
 
 {% cut "How do I use sliders as interface elements for selecting parameter values?" %}
 
-In the HTML code of the template, enter the following:{% if locale == "en-com" %}
+In the HTML code of the template, enter the following:
 
 ```html
 <input type=""range"" list=""rng"" class=""res"">
@@ -507,8 +499,6 @@ return solution;
 
 }
 ```
-
-{% endif %}
 
 {% endcut %}
 
@@ -632,7 +622,7 @@ You can't use a range as a fixed value.
 
 {% cut "Can I select Tolokers from a specific city of residence or is the only option “Region by IP”?" %}
 
-Yes, you can do that. In the [filters](../concepts/filters.md), select {% if locale == "en-com" %}**Profile → City**{% endif %}. Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
+Yes, you can do that. In the [filters](../concepts/filters.md), select **Profile → City**. Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
 
 {% endcut %}
 
@@ -970,9 +960,9 @@ You can also create a training pool based on the main pool. Assign a skill using
 
 {% endcut %}
 
-{% cut "Can I use non-automatic acceptance in the training pool?" %}
+{% cut "Can I use manual review in the training pool?" %}
 
-No. But you can create a pool of the **Training** type based on your main pool and enable non-automatic acceptance there.
+No. But you can create a pool of the **Training** type based on your main pool and enable manual review there.
 
 {% endcut %}
 
@@ -1002,7 +992,7 @@ The tasks themselves are not exported, only the project configuration and the se
 
 {% cut "I want to create an exam with three tasks. If a user does two out of three tasks correctly, they get the skill. So I try to use `3` in the **Recent control task responses to use** field, but I get an error that the value is too small. Can I get around this without increasing the number of tasks to five?" %}
 
-The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use non-automatic acceptance for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
+The **Recent control task responses to use** field is for the number of recent responses from the Toloker. If you use manual review for your task, then to set up your intended rule you need to specify `3` in **Total reviewed responses**.
 
 {% endcut %}
 
@@ -1018,7 +1008,7 @@ Don't forget to enable **Keep task order** in the pool parameters. Majority vote
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+Another option for selecting Tolokers for a project of this type is manual review.
 
 {% endcut %}
 
@@ -1146,7 +1136,7 @@ Escape commas with a backslash (`\`).
 
 {% endcut %}
 
-{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with non-automatic acceptance? Where do I find the format of the upload data?" %}
+{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with manual review? Where do I find the format of the upload data?" %}
 
 Use the button **Upload review results** to upload your file. You can see the format [here](../concepts/accept.md).
 
@@ -1214,7 +1204,7 @@ But users are reluctant to take lengthy tasks. They'd rather do 10 tasks that ta
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and manual review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 {% endcut %}
 
@@ -1238,7 +1228,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 {% cut "Where is my file added if I upload it to the running pool?" %}
 
-If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
+If you have the **Keep task order** option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
 
 {% endcut %}
 
@@ -1485,13 +1475,13 @@ However, the mere fact that a Toloker completes your training pool successfully 
 
 Besides the training, be sure to add quality control rules and [control tasks](../concepts/control.md) to your main pools. This way you can ensure the quality throughout the task performance process.
 
-If the task requires that the Tolokers send free-format responses or data files, use **non-automatic acceptance** to pay for tasks after they are reviewed.
+If the task requires that the Tolokers send free-format responses or data files, use manual review to pay for tasks after they are reviewed.
 
 {% endcut %}
 
 {% cut "Why is only Smart Mixing available in Training?" %}
 
-This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the {% if locale == "en-com" %}**Set manually**{% endif %} option in the training, create the main pool, set the pool type as {% if locale == "en-com" %}**Training**{% endif %}, and set the cost to zero.
+This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the **Set manually** option in the training, create the main pool, set the pool type as **Training**, and set the cost to zero.
 
 {% endcut %}
 
@@ -1542,11 +1532,11 @@ To show the training separately from other pools, disable **Use project descript
 
 {% endcut %}
 
-{% cut "Can I implement non-automatic acceptance in the training pool?" %}
+{% cut "Can I implement manual review in the training pool?" %}
 
-You can't use non-automatic acceptance in your training pool.
+You can't use manual review in your training pool.
 
-However, you can create a training pool with the **Training** type based on your main pool and enable non-automatic acceptance there.
+However, you can create a training pool with the **Training** type based on your main pool and enable manual review there.
 
 {% endcut %}
 
@@ -1554,7 +1544,7 @@ However, you can create a training pool with the **Training** type based on your
 
 You can't create a training like this, because for the response to be counted as correct it must exactly match the control text.
 
-For projects using free text input or attached files, you can make a pre-selection task with non-automatic acceptance. You can admit good Tolokers to your main pool based on their skill.
+For projects using free text input or attached files, you can make a pre-selection task with manual review. You can admit good Tolokers to your main pool based on their skill.
 
 {% endcut %}
 
@@ -1564,7 +1554,7 @@ To do this, under **Test result**, go to **Recent tasks to use** and specify the
 
 Let's say you need to create an exam with three tasks, one task per suite. If the Toloker succeeds in two out of three tasks, they get the skill.
 
-If your task uses assignment review (non-automatic acceptance), to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
+If your task uses manual review, to set up such a rule you need to specify 3 for "Total reviewed responses". As you can see in the screenshot, in the first case, all the Tolokers who completed 3 assignments and whose answers are reviewed will get the skill. In the second case, only those who have 2 or 3 assignments accepted will get the skill.
 
 ![](../_images/troubleshooting/number-of-correct-answers.png)
 
@@ -1574,7 +1564,7 @@ If your task uses assignment review (non-automatic acceptance), to set up such a
 
 For a control or training assignment to be counted as correct, it must exactly match the control assignment. To do this, you need to normalize the response text using JavaScript: remove spaces, punctuation marks, special characters, and capital letters, and write the result in a separate output field. Now you can match the processed assignment text against your control text.
 
-Another option for selecting Tolokers for a project of this type is assignment review (non-automatic acceptance).
+Another option for selecting Tolokers for a project of this type is manual review.
 
 {% endcut %}
 
@@ -1642,7 +1632,7 @@ The method doesn't guarantee that original Toloker responses will be used for ag
 
 {% cut "Where do I see the aggregation progress?" %}
 
-The pool page contains the {% if locale == "en-com" %}**List of Operations**{% endif %} button.
+The pool page contains the **List of Operations** button.
 
 {% endcut %}
 
@@ -1660,7 +1650,7 @@ You need to use [smart mixing](../concepts/task_upload.md#smart-mixing_1).
 
 {% cut "Can I get notifications when results aggregation finishes?" %}
 
-Yes. To set up notifications in your account, go to {% if locale == "en-com" %}**Profile → Notifications → Pool or aggregation completed**{% endif %}. [Learn more about setting up notifications.](../concepts/result-aggregation.md#notification)
+Yes. To set up notifications in your account, go to **Profile → Notifications → Pool or aggregation completed**. [Learn more about setting up notifications.](../concepts/result-aggregation.md#notification)
 
 {% endcut %}
 
@@ -1682,7 +1672,7 @@ If a Toloker typed some text and then deleted it, the result is `null`, otherwis
 
 [Other questions](support.md#help)
 
-### Assignment review {#results_2}
+### Manual review {#results_2}
 
 {% cut "How do I send an assignment back to the Toloker for revision?" %}
 
@@ -1728,7 +1718,7 @@ Add the notification to the project description (for example: “Attention! The 
 
 - Assign them a hidden skill, or use an existing [skill](../concepts/nav-assign.md) linked to the pool.
 
-- Go to **Messages** and click {% if locale == "en-com" %}**Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**{% endif %}.
+- Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**.
 
 - If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 
@@ -1756,7 +1746,7 @@ Shorten instructions and rewrite using simpler language. Add pictures and exampl
 
 Make the interface [more user-friendly](../concepts/spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
 
-Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
+Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the **Client** filter.
 
 {% endcut %}
 
@@ -1893,7 +1883,7 @@ You can issue rewards after completion and describe the criteria for increased r
 
 {% cut "Where do I find the statistics on the awards I paid?" %}
 
-Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
+Track your money debited for rewards in **Profile** → **Spent** tab.
 
 {% endcut %}
 
@@ -1997,7 +1987,7 @@ If the Toloker was already paid for the tasks, you can't cancel the payment.
 
 During the training, Tolokers follow the task instructions and practice completing your tasks. Based on the training results, the requester can select Tolokers who did well enough to get access to the main pool. However, the mere fact that the Toloker completes your training pool successfully does not guarantee that they will continue to demonstrate high-quality performance. Tolokers who did well on the training but had inadequate results in the general task might have obtained correct training responses from other people.
 
-In addition to the training, be sure to set up [quality control rules](../concepts/control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [non-automatic acceptance](../concepts/offline-accept.md) to pay for them only after reviewing the responses.
+In addition to the training, be sure to set up [quality control rules](../concepts/control.md) in your main pools. This lets you control the quality throughout the task completion process. If the task requires that users send free-format responses or data files, use [manual review](../concepts/offline-accept.md) to pay for them only after reviewing the responses.
 
 {% endcut %}
 
@@ -2113,9 +2103,9 @@ We recommend that you break down your object selection project into three projec
 
 1. Selecting objects in images.
 
-    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with non-automatic acceptance.
+    1. Select the object in the images you obtained after the previous project. You already have such a project. Run the task with manual review.
 
-    1. Use the quality control rules: fast responses, non-automatic acceptance, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
+    1. Use the quality control rules: fast responses, manual review, and post-review re-assessment. [Description of rules with examples](../concepts/control.md).
 
 1. Reviewing object selection assignments.
 
@@ -2177,7 +2167,7 @@ In the standard preset with an area selection editor, you can't use the control 
 
 You can't use [training](../../glossary.md#training-pool) and the main pool with the **Training** type in an area selection project because for the response to be correct, the object selected by the Toloker must exactly match the control object. This is almost impossible.
 
-Such tasks are usually run with non-automatic acceptance: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
+Such tasks are usually run with manual review: the Toloker submits an assignment, and then the assignment is rejected or accepted after the review.
 
 For pre-selection of users, you can use “examination tasks”. Review the assignments and assign skills based on the percentage of accepted assignments. For this purpose, add the “Results of assignment review” rule to the pool. To make sure that only the good Tolokers are admitted to the main pool, put a skill-based filter to the pool.
 

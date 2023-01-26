@@ -83,10 +83,14 @@ items:
                 href: guide/concepts/appendix-expanded-code.md
       - name: Surveys
         items:
+          - name: Overview
+            href: guide/tutorials/questionnaire-overview.md        
           - name: Survey with Toloka template
             href: guide/tutorials/questionnaire-toloka.md
           - name: Survey on third-party platform
             href: guide/tutorials/questionnaire-other.md
+          - name: Survey based on Qualtrics
+            href: guide/tutorials/questionnaire-qualtrics.md
       - name: Field tasks
         items:
           - name: Collecting offline data
@@ -272,7 +276,7 @@ items:
                 href: guide/concepts/adjust.md
           - name: Additional settings
             items:
-              - name: Non-automatic acceptance
+              - name: Manual review
                 href: guide/concepts/offline-accept.md
               - name: Archiving a pool
                 href: guide/concepts/pool-archive.md
@@ -382,6 +386,8 @@ items:
         items:
           - name: Editing the profile
             href: guide/concepts/edit-profile.md
+          - name: Notifications
+            href: guide/concepts/notifications.md
           - name: About money
             items:
               - name: About account management

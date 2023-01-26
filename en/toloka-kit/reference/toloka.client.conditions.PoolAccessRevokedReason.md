@@ -1,5 +1,5 @@
 # PoolAccessRevokedReason
-`toloka.client.conditions.PoolAccessRevokedReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/conditions.py#L252)
+`toloka.client.conditions.PoolAccessRevokedReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/conditions.py#L252)
 
 ```python
 PoolAccessRevokedReason(

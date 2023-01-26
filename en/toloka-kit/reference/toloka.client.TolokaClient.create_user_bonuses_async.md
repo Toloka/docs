@@ -1,5 +1,5 @@
 # create_user_bonuses_async
-`toloka.client.TolokaClient.create_user_bonuses_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2892)
+`toloka.client.TolokaClient.create_user_bonuses_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2962)
 
 Issues payments directly to Tolokers, asynchronously creates many `UserBonus` instances.
 

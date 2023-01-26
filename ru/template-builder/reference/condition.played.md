@@ -4,7 +4,7 @@
 
 Проверяет начало воспроизведения. Валидация пройдет, если воспроизведение начато. Для воспроизведения медиа с проверкой `condition.played` можно использовать [view.audio](view.audio.md) и [view.video](view.video.md). `condition.played` работает только в свойстве `validation` плеера.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/q-xebK5N3TskNA)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/sl5IkzH53tzBQL)
 
 ## Свойства компонента {#properties}
 

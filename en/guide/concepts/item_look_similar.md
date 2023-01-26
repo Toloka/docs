@@ -16,9 +16,9 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. Choose a template:
 
-    1. Click {% if locale == "en-com" %}**Create project**{% endif %}.
+    1. Click **Create project**.
 
-    1. Select the {% if locale == "en-com" %}**Image classification**{% endif %} template.
+    1. Select the **Image classification** template.
 
 1. Provide general information:
 
@@ -36,7 +36,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     - Template Builder
 
-      1. Use the {% if locale == "en-com" %}[ready-made code](https://clck.ru/U7fbR){% endif %} for this project with pre-configured validation and task layout.
+      1. Use the [ready-made code](https://ya.cc/t/-ratdOH63ttEa4) for this project with pre-configured validation and task layout.
 
           The Toloker won't be able to submit the response until they:
 
@@ -57,8 +57,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-          {% if locale == "en-com" %}
-
           ```html
           {{img src=image height="400px"}}
           {{iframe src= found_link height="600px"}}
@@ -71,8 +69,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           {{field type="radio" name="result" value="Yes" label="Yes"}}
           {{field type="radio" name="result" value="No" label="No"}}
           ```
-
-          {% endif %}
 
       1. Leave the **JS** block unchanged.
 
@@ -154,8 +150,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. **Instructions:**
 
-        {% if locale == "en-com" %}
-
         ```plaintext
         Take a look at the pictures that show two pairs of shoes. Decide whether they look similar or not.
 
@@ -163,11 +157,9 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
         If you don't see a pair of shoes in any of the pictures, click **Yes**.
         ```
 
-        {% endif %}
-
     1. Save the changes.
 
-1. To go back to the {% if locale == "en-com" %}**Projects**{% endif %} page, click {% if locale == "en-com" %}**Finish editing**{% endif %}.
+1. To go back to the **Projects** page, click **Finish editing**.
 
 Learn more about working with the project in the [Project](project.md) section.
 
@@ -177,13 +169,15 @@ To create a pool:
 
 1. Open the page of the project titled **Are these shoes similar to each other?**.
 
-1. Click the **Add pool** button.
+1. Click **Add a pool** on the project page.
 
-1. Specify the **pool name**.
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-1. (optional) Add a **Private comment**. This information is available only to you.
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, filter Tolokers:
+1. Click **Create**.
+
+1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
     1. {% include [tutorials-language-filter](../_includes/tutorials/language-filter.md) %}
 
@@ -201,13 +195,15 @@ To create a pool:
 
     1. Leave the **Absent** field empty.
 
-    Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
 
-1. (optional) In the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-1. Enter `0.01` in the **Price per task suite** field in the **Price** block.
+    1. In **Price per task suite, $**, set the amount of money to pay per task suite done by one Toloker. For example, `0.01`.
 
-1. In the **Quality control** block, specify quality control settings for the pool:
+    1. Enter `3` in the **Overlap** field.
+
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
     1. Click **Add a quality control rule**.
 
@@ -229,79 +225,67 @@ To create a pool:
 
     Learn more in [Quality control](control.md).
 
-1. Enter `3` in the **The number of Tolokers to complete each task** field in the **Task overlap** section.
+1. At the **Add optional pool settings** step:
 
-1. In the **Additional settings** block:
+    1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-    1. Enter `300` in the **Time per task suite** field.
+        The time should be long enough to read the instructions and wait for task data to load. For example, `300` seconds.
 
     1. Turn on the **Keep task order** option.
 
-1. Click **Create a pool**.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Prepare and upload a file with the results {#upload_file}
+    1. Wait for the pool from project 2 to complete.
 
-1. Wait for the pool from project 2 to complete.
-
-1. Open the pool page from [project 2](find_an_item_in_store.md).
-
-1. Click **Download results**.
-
-    1. In the **Status** block, only leave the **Not checked** option enabled.
-
-    1. In the **Fields** block, only leave the **response ID** option enabled.
-
-    1. Disable the **Separate assignments with empty row** option.
-
-        ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
+    1. Open the pool page from [project 2](find_an_item_in_store.md).
 
     1. Click **Download results**.
 
-1. Prepare a [file](../../glossary.md#tsv) with tasks.
+        1. In the **Status** block, only leave the **Not checked** option enabled.
 
-    1. Leave the `INPUT:image` column unchanged.
+        1. In the **Fields** block, only leave the **response ID** option enabled.
 
-    1. Rename the `OUTPUT:found_link` column to `INPUT:found_link`.
+        1. Disable the **Separate assignments with empty row** option.
 
-    1. Rename the `ASSIGNMENT:assignment_id` column to `INPUT:assignment_id`.
+            ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part3-2.png)
 
-    1. Delete all the other columns.
+        1. Click **Download results**.
 
-    1. Save the file.
+    1. Prepare a [file](../../glossary.md#tsv) with tasks.
 
-1. Upload the resulting file to the **Are these shoes similar to each other?** pool.
+        1. Leave the `INPUT:image` column unchanged.
 
-    1. Open the **Are these shoes similar to each other?** pool.
+        1. Rename the `OUTPUT:found_link` column to `INPUT:found_link`.
 
-    1. Click **Upload**. In the window that opens, configure the file upload settings.
+        1. Rename the `ASSIGNMENT:assignment_id` column to `INPUT:assignment_id`.
 
-    1. Choose **Smart mixing**.
+        1. Delete all the other columns.
 
-    1. In the **General tasks** field, specify `9`.
+        1. Save the file.
 
-    1. In the **Training tasks** field, specify `0`.
+    1. Upload the resulting file to the **Are these shoes similar to each other?** pool.
 
-    1. In the **Control tasks** field, specify `1`.
+        1. Open the **Are these shoes similar to each other?** pool.
 
-    1. Click **Upload**.
+        1. Click **Upload**. 
 
-    1. In the window that opens, choose the file with tasks to upload and click **Open**.
+        1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-    1. In the window that opens, check the number of tasks and click **Add**.
+        1. Choose **Smart mixing**.
 
-1. Create a [control task](goldenset.md).
+        1. In the **General tasks** field, specify `9`.
 
-    1. Click **Edit**.
+        1. In the **Training tasks** field, specify `0`.
 
-        {% note info %}
+        1. In the **Control tasks** field, specify `1`.
 
-        If you selected something else instead of **smart mixing**, click **Edit**. If this button is missing, delete the file and upload it again.
+        1. Click **Upload**.
 
-        {% endnote %}
+        1. Click **Combine tasks into suites**.
 
-    1. In the window that opens, click **Create control tasks**.
+1. {% include [toloka-requester-source-add-control-tasks](../_includes/toloka-requester-source/id-toloka-requester-source/add-control-tasks.md) %}
 
-    1. In the window that opens, in the column on the left, turn on the **result** option.
+    1. In the left column, turn on the **result** option.
 
     1. Choose the correct answer to the question.
 
@@ -314,6 +298,12 @@ To create a pool:
         In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5–10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
         {% endnote %}
+
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
+
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Download the reviewed results {#get_results}
 

@@ -1,5 +1,5 @@
 # ArrayBooleanSpec
-`toloka.client.project.field_spec.ArrayBooleanSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/field_spec.py#L141)
+`toloka.client.project.field_spec.ArrayBooleanSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/field_spec.py#L141)
 
 ```python
 ArrayBooleanSpec(

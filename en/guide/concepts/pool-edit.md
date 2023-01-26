@@ -8,29 +8,29 @@ The cost of a task is registered at the moment when a Toloker accepts it. If the
 
 {% endnote %}
 
-To edit the pool parameters, click {% if locale == "en-com" %}**Edit**{% endif %} at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project) page.
+To edit the pool parameters, click **Edit** at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project) page.
 
 ![](../_images/other/pool-settings.png)
 
 ## General information {#pool-general-info}
 
-#### {% if locale == "en-com" %}**Pool name**{% endif %}
+#### **Pool name**
 
 The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page.
 
-#### {% if locale == "en-com" %}**Public description**{% endif %}
+#### **Public description**
 
 Will be displayed instead of the project description in the task list for Tolokers and [linked training](train.md).
 
-#### {% if locale == "en-com" %}**Private comment**{% endif %}
+#### **Private comment**
 
 If necessary, you can add a private comment that will only be available to you.
 
 ## Price {#pool-price-info}
 
-#### {% if locale == "en-com" %}**Price per task suite, $**{% endif %}
+#### **Price per task suite, $**
 
-Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
+Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the **Pool type** is **General tasks**, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
 
 #### Tolokers' interest in the price
 
@@ -40,7 +40,7 @@ Calculated automatically. Shows how the price meets Tolokers' expectations.
 
 Calculated automatically. Shows the number of tasks per suite recommended for this type of project.
 
-#### {% if locale == "en-com" %}**Overlap**{% endif %}
+#### **Overlap**
 
 The number of Tolokers who should complete each task in the pool.
 
@@ -58,15 +58,15 @@ Calculated automatically.
 
 #### Adult content
 
-Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only issued to Tolokers who have agreed to complete these types of tasks.
+Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only assigned to Tolokers who have agreed to complete these types of tasks.
 
-If you aren't sure whether the tasks have this kind of content, select the {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} option.
+If you aren't sure whether the tasks have this kind of content, select the **My tasks may contain shocking or pornographic content** option.
 
 #### Filters and skills
 
 {% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
-#### {% if locale == "en-com" %}**Speed/quality balance**{% endif %}
+#### **Speed/quality balance**
 
 A [setting](adjust.md) for choosing Tolokers for your tasks. You can set the percentage or number of top-rated Tolokers.
 
@@ -74,7 +74,7 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 ## Quality control {#pool-quality-control-info}
 
-#### {% if locale == "en-com" %}**Captcha frequency**{% endif %}
+#### **Captcha frequency**
 
 You can choose how often [captchas](../../glossary.md#captcha) are shown to Tolokers:
 
@@ -88,7 +88,7 @@ To show the captcha to Tolokers, set [the quality control rule](captcha.md).
 
 {% include [captcha-warning](../_includes/captcha-warning.md) %}
 
-#### {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %}
+#### **Review task responses manually**
 
 Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
@@ -96,7 +96,7 @@ Set the time period when you can check the tasks and reject them if the results 
 
 Learn more about task review [here](offline-accept.md) and [here](accept.md).
 
-#### {% if locale == "en-com" %}**Review period in days**{% endif %}
+#### **Review period in days**
 
 The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:
 
@@ -124,7 +124,7 @@ In the **Accept as majority** field, specify the number of matching responses th
 
 For example: if the number of responses is > 5 and the percentage of correct responses is < 60, then ban the Toloker on the project for 10 days.
 
-#### {% if locale == "en-com" %}**Training**{% endif %}
+#### **Training**
 
 This field is only available if you have training pools in the project.
 
@@ -132,7 +132,7 @@ This field is only available if you have training pools in the project.
 
 #### Level required
 
-This box is only available if you filled in the {% if locale == "en-com" %}**Training**{% endif %} box.
+This box is only available if you filled in the **Training** box.
 
 Percentage of correct responses in training tasks (from 5 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
 
@@ -142,11 +142,11 @@ The minimum required level that you can set is 5. Tolokers who complete training
 
 ## Dynamic pricing and overlap {#pool-dynamic-price-info}
 
-#### {% if locale == "en-com" %}**Dynamic pricing**{% endif %}
+#### **Dynamic pricing**
 
 This parameter allows you to vary the task price depending on the Toloker's [skill](../../glossary.md#skill) level. [Learn more](dynamic-pricing.md).
 
-#### {% if locale == "en-com" %}**Dynamic overlap**{% endif %}
+#### **Dynamic overlap**
 
 You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap) for all pool tasks.
 
@@ -154,11 +154,11 @@ You set the range, the service analyzes the responses, their consistency, the le
 
 ## More settings {#pool-additional-settings-info}
 
-#### {% if locale == "en-com" %}**Priority**{% endif %}
+#### **Priority**
 
 Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority.
 
-#### {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}
+#### **Time per task suite, sec**
 
 The time allowed for completing a task suite, in seconds. Uncompleted tasks are redistributed to other Tolokers.
 
@@ -166,29 +166,29 @@ We recommend spending no more than 60 seconds per task (including the time for p
 
 If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for.
 
-#### {% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %}
+#### **Keep pool open after completion, sec**
 
-The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0, maximum — 259200 seconds (three days).
+The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0 (1 if you use dynamic overlap), maximum — 259200 seconds (three days).
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks.
 
-#### {% if locale == "en-com" %}**Pool closing date**{% endif %}
+#### **Pool closing date**
 
 The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up.
 
-#### {% if locale == "en-com" %}**Pool type**{% endif %}
+#### **Pool type**
 
 Specify the pool type:
 
-- {% if locale == "en-com" %}**General tasks**{% endif %}: The main pool that contains your regular tasks.
+- **General tasks**: The main pool that contains your regular tasks.
 
-- {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).
+- **Exam**: A pool that contains only [control tasks](../../glossary.md#control-task).
 
-- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
+- **Training**: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
 
-- {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
+- **Retry**: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
 
-- {% if locale == "en-com" %}**Other**{% endif %}: If none of the previous options fit.
+- **Other**: If none of the previous options fit.
 
 {% note info %}
 
@@ -196,7 +196,7 @@ If the price per task suite is zero, you must select the pool type.
 
 {% endnote %}
 
-#### {% if locale == "en-com" %}**Keep task order**{% endif %}
+#### **Keep task order**
 
 **Option disabled (default value)**
 
@@ -242,7 +242,7 @@ Use this parameter to:
 
 - Speed up collection of responses for [majority vote](mvote.md) check.
 
-- Issue tasks by priority.
+- Assign tasks by priority.
 
     Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
 
@@ -265,6 +265,7 @@ Use this parameter to:
 - [Toloka API: Changing pool priority](../../api/concepts/set-priority-pool.md)
 - [Toloka-Kit: Editing pool](../../toloka-kit/reference/toloka.client.TolokaClient.update_pool.md)
 - [Toloka-Kit: Patching pool](../../toloka-kit/reference/toloka.client.TolokaClient.patch_pool.md)
+- [Toloka-Kit recipe: Change pool priority](../../toloka-kit/recipes/change-pool-priority.md)
 
 ## Troubleshooting {#troubleshooting}
 

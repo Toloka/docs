@@ -8,7 +8,7 @@ If a Toloker logs in from a mobile device, it's more convenient to use [field.me
 
 In the task review mode, the uploaded images will appear automatically. You can view, rotate, and switch among the images.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSRq)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/W_WxIekd3tyzv6)
 
 ## Component properties {#properties}
 

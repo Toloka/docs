@@ -31,16 +31,12 @@
 
 **HTML:**
 
-{% if locale == "en-com" %}
-
 ```html
 {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
 <div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
 {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
 {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
 ```
-
-{% endif %}
 
 **JavaScript:**
 
@@ -114,8 +110,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **HTML:**
 
-{% if locale == "en-com" %}
-
 ```html
 {{img src=image width="50%" height="400px"}}
 <div class='answers'>
@@ -130,8 +124,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
  </div>
 </div>
 ```
-
-{% endif %}
 
 **JavaScript:**
 
@@ -238,8 +230,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **HTML:**
 
-{% if locale == "en-com" %}
-
 ```html
 {{img src=image height="400px"}} {{iframe src= found_link height="600px"}}
 <p>Check that the uploaded image matches the product in the store.</p>
@@ -249,8 +239,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 {{field type="radio" name="result" value="Yes" label="Yes"}}
 {{field type="radio" name="result" value="No" label="No"}}
 ```
-
-{% endif %}
 
 **JavaScript:**
 
@@ -338,8 +326,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 **HTML:**
 
-{% if locale == "en-com" %}
-
 ```html
 <div class="header">
     <div class="left caption"> {{button label="Go to site" href=left_link size="L"}}
@@ -363,8 +349,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{field type="radio" name="result" label="Right image is better" value=result_right hotkey="2"}}
 </div>
 ```
-
-{% endif %}
 
 **JavaScript:**
 
@@ -449,7 +433,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     max-width: 182px;
 }
 
-
 .content {
     margin: 10px 0;
 }
@@ -473,7 +456,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     overflow: hidden;
     width: 100%;
 }
-
 
 .image {
     display: inline-block;
@@ -507,7 +489,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     margin: 10px;
     max-width: 182px;
 }
-
 
 .content {
     margin: 10px 0;

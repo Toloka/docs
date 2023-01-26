@@ -8,7 +8,7 @@ Take a look at the example: the labeling interface includes an image, a respons
 
 Note that validation and task layout are already configured in this Template Builder sample code.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/L4S3M6dO3fhFNB)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/-q-TcuZy3ttDnk)
 
 {% cut "Components used in the example" %}
 
@@ -169,8 +169,7 @@ To add a detailed description to the task, use the `label` property of the [view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/a0VMTL3d3jJo3L)
-
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FKmvxOnh3ttDoT)
 
 ## Add a clarifying question
 
@@ -224,7 +223,7 @@ To ask Tolokers to clarify their choice if they selected the **No business** che
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3wBl1V853jE3CS)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/qBoVoTDu3ttDpU)
 
 ## Add a layout {#add-layout}
 
@@ -247,7 +246,7 @@ In this example, the text is highlighted with a blue border.
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/xWtq-Edz3jJsjE)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/H9oHYWVb3ttDqV)
 
 ## Add a field for comments {#add-text-area}
 
@@ -269,7 +268,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/HHLW3YsU3jE99S)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/8Fp9udrO3ttDrM)
 
 ## Add keyboard shortcuts {#add-shortcuts}
 
@@ -305,6 +304,6 @@ Add keyboard shortcuts to rotate and zoom in images in the [plugin.hotkeys](../r
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/UlOimVK33jEESZ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/G0W2K6e_3ttDsj)
 
 {% include [contact-support](../_includes/contact-support.md) %}

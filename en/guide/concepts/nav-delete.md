@@ -8,11 +8,11 @@ You can remove a skill only manually. It can't be done using quality control rul
 
     {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click {% if locale == "en-com" %}**-Skill**{% endif %}.
+1. Click **-Skill**.
 
 1. Select a skill.
 
-1. Click {% if locale == "en-com" %}**Delete**{% endif %}.
+1. Click **Delete**.
 
 ## See also {#see-also}
 
@@ -25,7 +25,7 @@ You can remove a skill only manually. It can't be done using quality control rul
 ## For developers {#for-developers}
 
 - [Toloka API: Removing skill from Toloker](../../api/concepts/delete-skill.md)
-- [Toloka-Kit: Deleting Toloker skill](../../toloka-kit/reference/toloka.client.TolokaClient.delete_user_skill.md)
+- [Toloka-Kit recipe: Remove skill from Toloker](../../toloka-kit/recipes/delete-user-skill.md)
 
 ## Troubleshooting {#troubleshooting}
 

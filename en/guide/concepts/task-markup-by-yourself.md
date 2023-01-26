@@ -20,7 +20,7 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 1. Make sure the pool isn't running.
 
-1. Click {% if locale == "en-com" %}**Edit**{% endif %} in the {% if locale == "en-com" %}**Pool tasks**{% endif %} block.
+1. Click **Edit** in the **Pool tasks** block.
 
 1. Open the **General**, **Control**, or **Training** tab. Create a control or a training task from another type of task.
 
@@ -42,7 +42,7 @@ After you have created the control tasks, make sure that different variations of
 
 1. Go to the task markup page.
 
-1. Open the {% if locale == "en-com" %}**Training tasks → Distribution of correct responses for control tasks**{% endif %} tab.
+1. Open the **Training tasks → Distribution of correct responses for control tasks** tab.
 
     The distribution of responses is shown as a percentage.
 
@@ -95,7 +95,7 @@ If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overla
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
+- [Top up your account](refill.md).
 - [Start the pool](pool-run-and-stop.md).
 
 ## See also {#see-also}
@@ -189,7 +189,7 @@ You can specify the number of tasks on the page when you upload your tasks to th
 
 {% endcut %}
 
-{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with non-automatic acceptance? Where do I find the format of the upload data?" %}
+{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with manual review? Where do I find the format of the upload data?" %}
 
 Use the button **Upload review results** to upload your file. You can see the format [here](accept.md).
 
@@ -237,7 +237,7 @@ But users are reluctant to take lengthy tasks. They'd rather do 10 tasks that ta
 
 In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
 
-The third thing to consider is quality control and assignment review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
+The third thing to consider is quality control and manual review. If you use recompletion of assignments from banned users, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
 
 {% endcut %}
 

@@ -25,7 +25,7 @@
 
 В этом примере нужно заполнить поле для текста, иначе кнопка «Отправить» не сработает. Обратный случай — компонент [condition.empty](../reference/condition.empty.md), он проверяет пустоту данных и возвращает `false`, если данные получили значение.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QR9Qq)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/VaKRkzm-3ttEim)
 
 ## Сравнить значения {#condition-equals-or-not}
 
@@ -35,7 +35,7 @@
 
 В этом примере если будет выбран ответ «Нет», то появится поле для заполнения текста.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T9Znh)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ESipjTpy3tvmgH)
 
 #### Проверить, что значения не равны
 
@@ -43,7 +43,7 @@
 
 В этом примере если условие `condition.equals` выполняется и возвращает `true`, то `condition.not` возвращает `false` и скрывает поле для ввода текста.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T9Zqz)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/sh2WL0TR3tvnDm)
 
 #### Когда несколько правильных ответов
 
@@ -51,7 +51,7 @@
 
 В этом примере компонент проверяет, что значения `animal` и `human` являются частью массива `objects`. Если выбираются ответы «Человек» и «Животное», то логический компонент `helper.if` отображает вопрос: «Человек и животное взаимодействуют между собой?».
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T9a4k)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/HylOedv03tvnUz)
 
 ## Проверить несколько условий {#multiple-conditions}
 
@@ -61,7 +61,7 @@
 
 В этом примере нужно выполнить два действия: заполнить поле для текста и перейти по ссылке из интерфейса. Кнопка «Отправить» здесь не сработает, пока не будут выполнены оба условия.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RFUkZ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/elTdyHH33tvniu)
 
 #### Выполнить хотя бы одно из условий
 
@@ -69,7 +69,7 @@
 
 В этом примере нужно выполнить хотя бы одно из двух действий: отметить «Надписи нет» или заполнить поле «Что написано на изображении». Кнопка «Отправить» здесь не сработает, пока не будет выполнено одно из условий.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QTVBr)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/bQ5L1e9Y3tvoDG)
 
 ## Проверить условия конкретных компонентов {#component}
 
@@ -77,7 +77,7 @@
 
 В этом примере нужно перейти по ссылке из интерфейса, иначе кнопка «Отправить» не сработает.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QRauK)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/El-567tO3tvoTH)
 
 ## Если не нашли нужный компонент {#schema}
 

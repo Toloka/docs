@@ -32,7 +32,7 @@
 
     - Конструктор шаблонов
 
-      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/TvYLF){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/U7feQ){% endif %} для этого проекта, где уже настроена валидация, горячие клавиши и внешний вид задания.
+      1. Воспользуйтесь [готовым кодом](https://ya.cc/t/nOGcR6U-3tvgmM) для этого проекта, где уже настроена валидация, горячие клавиши и внешний вид задания.
 
           Исполнитель не сможет отправить задание, если:
 
@@ -52,8 +52,6 @@
     - Редактор HTML/CSS/JS
 
       1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
-
-          {% if locale == "ru-ru" %}
 
           ```html
           <div class="header">
@@ -83,39 +81,6 @@
           {{field type="radio" name="result" label="Правое изображение лучше" value="result_right" hotkey="2"}}
           </div>
           ```
-
-          {% endif %}{% if locale == "en-com" %}
-
-          ```html
-          <div class="header">
-          <div class="left caption">
-          {{button label="Go to site" href=uploaded_link_left size="L"}}
-          <p class="url">not_var{{uploaded_link_left}}</p>
-          </div>
-          <div class="right caption">
-          <p class="url">not_var{{uploaded_link_right}}</p>
-          {{button label="Go to site" href=uploaded_link_right  size="L"}}
-          </div>
-          </div>
-
-          {{img src=image}}
-
-          <div class="content clearfix">
-          <div class="left page">
-          {{iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
-          </div>
-          <div class="right page">
-          {{iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
-          </div>
-          </div>
-
-          <div class="footer">
-          {{field type="radio" name="result" label="Left image is better" value="result_left" hotkey="1"}}
-          {{field type="radio" name="result" label="Right image is better" value="result_right" hotkey="2"}}
-          </div>
-          ```
-
-          {% endif %}
 
       1. В блоке **JS** отредактируйте код, добавив следующие строки до строки `OnRender`.
 
@@ -255,7 +220,7 @@
 
           Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) **Предпросмотр задания**, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -271,23 +236,13 @@
 
 1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#instructions).
 
-    1. **Текст инструкции:**{% if locale == "ru-ru" %}
+    1. **Текст инструкции:**
 
         ```plaintext
         Посмотрите на две фотографии с разной обувью и решите, какая пара обуви больше похожа на исходную пару.
         Используйте свое собственное чувство стиля, но помните, что обувь будет выглядеть одинаково, если
         она похожа по цвету, материалу, длине и стилю.
         ```
-
-        {% endif %}{% if locale == "en-com" %}
-
-        ```plaintext
-        Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
-        Rely on your own sense of style, but also remember that the shoes look alike if
-        they are the same color, fabric, length, and style.
-        ```
-
-        {% endif %}
 
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 

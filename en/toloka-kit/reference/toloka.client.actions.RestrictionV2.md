@@ -1,5 +1,5 @@
 # RestrictionV2
-`toloka.client.actions.RestrictionV2` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/actions.py#L58)
+`toloka.client.actions.RestrictionV2` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/actions.py#L58)
 
 ```python
 RestrictionV2(
