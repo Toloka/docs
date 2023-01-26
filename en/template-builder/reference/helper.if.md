@@ -9,7 +9,20 @@ If the condition in `if` is true (returns `true`), the code specified in the `th
 
 The `else` property is optional. For example, you ask a Toloker "do you like the image?". You can make a comment field appear when a negative response is selected. And if a positive response is selected then nothing happens.
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/7YZMlnzh3tz4Bb)
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/7YZMlnzh3tz4Bb)
+
+{% cut "Components used in the example" %}
+
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Displays a text.
+- [view.image](view.image.md): Displays an image.
+- [field.radio-group](field.radio-group.md): Adds a component for selecting one value out of several options.
+- [condition.equals](condition.equals.md): Checks whether the original value is equal to the specified value.
+- [field.text](field.text.md): A field for entering a short text, not more than a line.
+
+{% endcut %}
+
+To learn more about conditions, see the [List of conditions](https://toloka.ai/en/docs/template-builder/reference/conditions)
 
 ## Component properties {#properties}
 
