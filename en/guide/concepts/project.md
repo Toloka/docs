@@ -1,6 +1,6 @@
 # Create a project
 
-If you already have a project and you want to create an identical one, [clone](project.md) the existing project. If not, create a new project.
+If you already have a project and you want to create an identical one, [clone](#clone) the existing project. If not, create a new project.
 
 ## New project {#new-project}
 
@@ -86,6 +86,8 @@ To create a project, follow the instructions:
     1. Click **Finish**.
 
 After creating the project, add a [task pool](pool-main.md) to it. You can also set up [quality control](control.md) in the project.
+
+{% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
 
 ## Cloning a project {#clone}
 
