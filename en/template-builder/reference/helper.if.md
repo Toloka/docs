@@ -22,13 +22,13 @@ The `else` property is optional. For example, you ask a Toloker "do you like the
 
 {% endcut %}
 
-To learn more about conditions, see the [List of conditions](https://toloka.ai/en/docs/template-builder/reference/conditions)
+To learn more about conditions, see the [List of conditions](https://toloka.ai/en/docs/template-builder/reference/conditions).
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.if" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.if" | Set component type. ||
 || `condition`<span style="color: red">\*</span> | _condition_ | Condition to check. ||
 || `else` | _any_ | The element that is returned if the condition from the `condition` property is false (returns `false`). ||
 || `then`<span style="color: red">\*</span> | _any_ | The element that is returned if the condition from the `condition` property is true (returns `true`). ||
