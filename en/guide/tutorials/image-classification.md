@@ -248,7 +248,7 @@ You can use different image sizes.
 
 - [Toloka-Kit: Image classification](https://github.com/Toloka/toloka-kit/blob/main/examples/1.computer_vision/image_classification/image_classification.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/toloka-kit/knowledge-base/catsdogs.tsv)
 

@@ -9,7 +9,7 @@ Download the file template for your [project](../../glossary.md#project) on the 
 If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for templates:
 
 - **Image classification**
-- **Product search relevance**
+- **Product [search relevance](https://toloka.ai/search-relevance/)**
 - **Object recognition & detection**
 - **Clickbait or not?**
 
@@ -25,7 +25,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 {% list tabs %}
 
-- TSV/XLSX 
+- TSV/XLSX
 
   The first line of the file contains the column headers:
 

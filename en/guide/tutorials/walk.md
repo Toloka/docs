@@ -6,7 +6,7 @@ Offline data collection is intended for field tasks in the Toloka mobile app. A 
 
 {% note info %}
 
-You may need additional projects for your task, such as dataset pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
+You may need additional projects for your task, such as [dataset](https://toloka.ai/datasets) pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
 
 {% endnote %}
 
@@ -28,7 +28,7 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-    1. Select the **Spatial Crowdsourcing** preset.
+    1. Select the **Spatial [Crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)** preset.
 
 1. Click **Choose this preset** in the pop-up tab.
 
@@ -275,7 +275,7 @@ You can also use the mobile version of the sandbox. [Write to support](../troubl
 
 - [Toloka-Kit: Spatial crowdsourcing example](https://github.com/Toloka/toloka-kit/blob/main/examples/2.spatial_crowdsourcing/0.simplest_example/spatial_crowdsourcing.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/dataset/moscow_metro_entrance_2020_en.tsv)
 

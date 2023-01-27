@@ -46,6 +46,8 @@ To block access to tasks for multiple Tolokers:
     <annotator id n>
     ```
 
+    where "[annotatator](https://toloka.ai/blog/what-does-a-data-annotator-do) id" is the ID of the Toloker you want to ban separated by a new line.
+
 1. Click **Ban**, then fill in the fields (see the table above).
 
 You can view information about access to tasks on the Toloker's page (on the [Tolokers]({{ users }}) page, go to the **Bans** tab). To unblock access to tasks, hover over the ban line and click ![](../_images/location-job/task-edit/task-action-delete.svg).

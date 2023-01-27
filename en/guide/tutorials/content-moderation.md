@@ -248,7 +248,7 @@ Before you begin:
 
 - [Toloka-Kit: Sentiment analysis](https://github.com/Toloka/toloka-kit/blob/main/examples/5.nlp/sentiment_analysis/sentiment_analysis.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/knowledge-base/reviews.tsv)
 

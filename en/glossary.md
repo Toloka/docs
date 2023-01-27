@@ -337,7 +337,7 @@ A [quality control](#quality-control) rule that limits the number of [task suite
 
 #### Task {#task}
 
-A request or question that elicits a response from an annotator in [Toloka]({{ toloka }}). A task is created for a single data item that requires labeling, like a photo to classify, or a comment to review. It is a part of a web page that can contain various objects: images, text, input fields, and others. Tolokers read the instructions for the task, complete it and enter [responses](#response). In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
+A request or question that elicits a response from an [annotator](https://toloka.ai/blog/what-does-a-data-annotator-do) in [Toloka]({{ toloka }}). A task is created for a single data item that requires labeling, like a photo to classify, or a comment to review. It is a part of a web page that can contain various objects: images, text, input fields, and others. Tolokers read the instructions for the task, complete it and enter [responses](#response). In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
 
 #### Task interface {#task-interface}
 

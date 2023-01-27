@@ -1,6 +1,6 @@
 # How does Toloka work?
 
-Toloka offers a data labeling platform where you can collect any amount of human-labeled data for AI and ML development.
+Toloka offers a [data labeling platform](https://toloka.ai/data-labeling-platform) where you can collect any amount of human-[labeled data](https://toloka.ai/data-labeling-platform) for AI and ML development.
 
 Data labeling in Toloka relies on crowdsourcing and technologies for crowd management. In this section, we explain how it works.
 
@@ -8,7 +8,7 @@ Data labeling in Toloka relies on crowdsourcing and technologies for crowd manag
 
 ## What is crowdsourcing?
 
-Crowdsourcing is the practice of obtaining information or services from a large dispersed group of people. These people perform micro tasks, and their collective work provides valuable input. For example, they can classify images into categories, and the resulting data can be used later to improve search relevance or recommendation systems.
+Crowdsourcing is the practice of obtaining information or services from a large dispersed group of people. These people perform micro tasks, and their collective work provides valuable input. For example, they can classify images into categories, and the resulting data can be used later to improve [search relevance](https://toloka.ai/search-relevance/) or recommendation systems.
 
 ![Task example](../_images/other/task-example.png =430x)
 

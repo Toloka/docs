@@ -6,7 +6,7 @@ Voice recording is a type of data labeling task with the text block to read and 
 
 {% note info %}
 
-You may need additional projects for your task, such as dataset pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
+You may need additional projects for your task, such as [dataset](https://toloka.ai/datasets) pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
 
 {% endnote %}
 

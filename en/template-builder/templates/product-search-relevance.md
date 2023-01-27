@@ -1,6 +1,6 @@
 # Product search relevance
 
-For this type of project, you can use the **Product search relevance** preset.
+For this type of project, you can use the **Product [search relevance](https://toloka.ai/search-relevance/)** preset.
 
 This preset helps you improve ecommerce search page results by rating how relevant products are to specific search queries.
 

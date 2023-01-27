@@ -84,7 +84,7 @@ In some cases, they get it wrong. Use the [Processing rejected and accepted assi
 
 #### Responses from banned Tolokers
 
-When Tolokers make too many mistakes, the platform bans them from taking on more tasks. But the responses that they have already provided remain in the database and may get into the final dataset. Send these assignments for recompletion.
+When Tolokers make too many mistakes, the platform bans them from taking on more tasks. But the responses that they have already provided remain in the database and may get into the final [dataset](https://toloka.ai/datasets). Send these assignments for recompletion.
 
 The [Recompletion of assignments from banned users](restore-task-overlap.md) rule is helpful here. While the cost will go up, there will be fewer errors.
 

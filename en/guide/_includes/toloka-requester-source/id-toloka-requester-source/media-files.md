@@ -1,6 +1,6 @@
 Upload media files from your device to avoid difficulties with placing links in the [file with tasks](../../../../glossary.md#tsv).
 
-To the right of the **Select prepared dataset** link, click **Select media files** and choose files.
+To the right of the **Select prepared [dataset](https://toloka.ai/datasets)** link, click **Select media files** and choose files.
 
 Features:
 

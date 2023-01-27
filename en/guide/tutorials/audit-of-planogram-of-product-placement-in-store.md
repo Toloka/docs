@@ -6,7 +6,7 @@ Product monitoring is intended for field tasks in the Toloka mobile app. The pre
 
 {% note info %}
 
-You may need additional projects for your task, such as dataset pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
+You may need additional projects for your task, such as [dataset](https://toloka.ai/datasets) pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
 
 {% endnote %}
 

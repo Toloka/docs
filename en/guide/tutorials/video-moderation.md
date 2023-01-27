@@ -266,7 +266,7 @@ Before you begin:
 - [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
 - [Template Builder: Video analysis](../../template-builder/templates/video-moderation.md)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/06_videoModeration/EN/sample-files.zip)
 

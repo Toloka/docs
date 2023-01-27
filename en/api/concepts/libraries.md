@@ -4,7 +4,7 @@ To facilitate research and integration projects, we have developed a few open so
 
 ## Toloka-Kit
 
-This is a Python library that allows ML engineers and data scientists to scale the data labeling process and control it programmatically.
+This is a Python library that allows ML engineers and data scientists to scale the [data labeling](https://toloka.ai/data-labeling-platform) process and control it programmatically.
 
 Benefits of Toloka-Kit:
 
@@ -18,7 +18,7 @@ If you want to try it out, use our sample labeling pipeline for selecting road s
 
 ## Crowd-Kit
 
-This is a Python library that implements most of the popular crowdsourcing algorithms.
+This is a Python library that implements most of the popular [crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/) algorithms.
 
 Crowd-Kit includes:
 

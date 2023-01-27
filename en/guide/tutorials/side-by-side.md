@@ -274,7 +274,7 @@ You can use different image sizes.
 
 - [Toloka-Kit: Image comparison](https://github.com/Toloka/toloka-kit/blob/main/examples/4.ranking/side_by_side_image_comparision/side_by_side_comparision.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/dataset/toloka_logos/sbs.tsv)
 

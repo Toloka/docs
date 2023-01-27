@@ -279,7 +279,7 @@ In the task interface settings, use the `field.text` or `field.textarea` compone
 
 - [Toloka-Kit: Survey](https://github.com/Toloka/toloka-kit/blob/main/examples/7.survey/simplest_survey/simplest_survey.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/knowledge-base/tasks_for_survey.tsv)
 

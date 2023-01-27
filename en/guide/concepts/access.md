@@ -126,6 +126,8 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% cut "Request for training in crowdsourcing and working with Toloka" %}
 
+Fill in the form below to receive training in [crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/) to become an expert in it and successfully work with Toloka.
+
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
 {% endcut %}

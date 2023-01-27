@@ -16,7 +16,7 @@ How do I find out how long it took to label my data?
 ## Uploading data for labeling {#add-items}
 
 What should I add to a batch?
-: Batches are datasets that need to be labeled. Add to batches TSV files with IDs and links to media files.
+: Batches are [datasets](https://toloka.ai/datasets) that need to be labeled. Add to batches TSV files with IDs and links to media files.
 
   Example of filling in a TSV file:
 

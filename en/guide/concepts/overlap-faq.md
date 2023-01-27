@@ -23,7 +23,7 @@ You can change overlap after the pool is started. To do this, open the pool edit
     - How well the Tolokers do on the task.
     - How well Tolokers' responses match each other.
 
-    This type of overlap helps you save money without reducing the quality of data labeling.
+    This type of overlap helps you save money without reducing the quality of [data labeling](https://toloka.ai/data-labeling-platform).
 
 - [Selective majority vote verification](selective-mvote.md) allows you to set up [majority vote check](mvote.md) for only a portion of tasks.
 

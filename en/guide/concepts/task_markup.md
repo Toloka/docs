@@ -40,7 +40,7 @@ You can set up automatic markup if the following conditions are met:
     - **Hand gesture classification**
     - **Clickbait or not?**
     - **Sentiment analysis & Content moderation**
-    - **Product search relevance**
+    - **Product [search relevance](https://toloka.ai/search-relevance/)**
 
 - For other types of projects, you can request this feature by contacting [support](../troubleshooting/support.md).
 

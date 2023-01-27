@@ -55,7 +55,7 @@ Tolokers might have skipped the task suite because:
 - Tasks don't work and Tolokers can't submit the assignments.
 - Tolokers couldn't understand the instructions and task interface.
 
-If you have a lot of expired task suites in your pool, we recommend that you read our[Tips for designing tasks](faq.md).
+If you have a lot of expired task suites in your pool, we recommend that you read our [Tips for designing tasks](faq.md).
 
 {% endcut %}
 ||
@@ -138,8 +138,8 @@ If you think that the price is too high, check the price settings in the pool an
 
 {% endcut %}
 ||
-||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the pool, in US dollars. Earnings include rewards.||
-||**Quality on control tasks and training tasks in the pool****Quality on control tasks and training tasks** | This graph shows the percentage of correct responses in the control and training tasks.
+||**Earnings per hour** | Average Toloker earnings per hour of [data labeling](https://toloka.ai/data-labeling-platform) in the pool, in US dollars. Earnings include rewards.||
+||**Quality on control tasks and training tasks in the pool** | This graph shows the percentage of correct responses in the control and training tasks.
 
 {% cut "Recommendations" %}
 

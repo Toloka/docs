@@ -12,7 +12,7 @@ You can send a maximum of 10,000 requests of this kind per day.
 
 {% endnote %}
 
-You can't use one request to pass multiple rewards with the same price, name, and message to the same annotator. A response with the status 409 will be returned.
+You can't use one request to pass multiple rewards with the same price, name, and message to the same [annotator](https://toloka.ai/blog/what-does-a-data-annotator-do). A response with the status 409 will be returned.
 
 {% cut "Sample error with HTTP status code 409" %}
 

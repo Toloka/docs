@@ -1797,7 +1797,7 @@ You can't completely delete a pool, but you can archive it. The system won't del
 
 {% cut "How long is the pool stored?" %}
 
-If there is no activity in the pool for a month, it is archived. You can't run such a pool, but you can clone it or download the labeled data from it.
+If there is no activity in the pool for a month, it is archived. You can't run such a pool, but you can clone it or download the [labeled data](https://toloka.ai/data-labeling-platform) from it.
 
 {% endcut %}
 
@@ -1867,7 +1867,7 @@ You can set a price for your task suite on the pool editing page. The minimum pr
 
 Here's the general rule of pricing: the more time is needed to complete the task, the higher the price is.
 
-If the task is simple, like if the Toloker spends a few seconds to assess product relevance, then set the price to $0.01–$0.02 for 10 tasks (products) on the page.
+If the task is simple, like if the Toloker spends a few seconds to assess product [relevance](https://toloka.ai/search-relevance), then set the price to $0.01–$0.02 for 10 tasks (products) on the page.
 
 If you register in Toloka as a Toloker, you can compare offers from other requesters.
 
@@ -2141,7 +2141,7 @@ Main options:
 
 {% cut "How much would 2000 images with a large number of different types of selectable objects cost? How do I create a task for this amount of work?" %}
 
-In the case of crowdsourcing, it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
+In the case of [crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/), it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
 
 ​Base your task on the “Object selection in an image” preset. See the step-by-step guide for creating this type of project on [this page](../tutorials/selection.md).
 

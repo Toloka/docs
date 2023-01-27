@@ -246,7 +246,7 @@ Before you begin:
 
 - [Toloka-Kit: Search relevance](https://github.com/Toloka/toloka-kit/blob/main/examples/8.search_relevance/search_relevance.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset files with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/19_search/EN/sample-files.zip)
 

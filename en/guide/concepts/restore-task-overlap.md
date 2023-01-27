@@ -64,7 +64,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 ## Examples {#examples}
 
-**Task**: classify photos for a dataset across different categories. If a Toloker is banned by a quality control rule (for example, [fast resposes](quick-answers.md)) or no longer matches the skill, their responses aren't counted and their tasks are sent for re-completion to another Toloker.
+**Task**: classify photos for a [dataset](https://toloka.ai/datasets) across different categories. If a Toloker is banned by a quality control rule (for example, [fast resposes](quick-answers.md)) or no longer matches the skill, their responses aren't counted and their tasks are sent for re-completion to another Toloker.
 
 {% list tabs %}
 

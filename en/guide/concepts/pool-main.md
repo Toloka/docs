@@ -51,7 +51,7 @@ The minimum required level that you can set is 5. Tolokers who complete training
 
 ||**Overlap** | The number of Tolokers who should complete each task in the pool.
 
-Configure this parameter if you need several people to complete your task. Overlap is necessary in tasks for collecting photo datasets, recording audio, or conducting surveys. In other types of tasks, it can improve the quality of results.
+Configure this parameter if you need several people to complete your task. Overlap is necessary in tasks for collecting photo [datasets](https://toloka.ai/datasets), recording audio, or conducting surveys. In other types of tasks, it can improve the quality of results.
 
 To save money, you can set up [dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL).
 

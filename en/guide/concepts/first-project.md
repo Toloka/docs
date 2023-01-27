@@ -25,7 +25,7 @@ In the project, you'll customize an appearance of the tasks.
 
         Designed to determine which category an image belongs to.
 
-    - **Product search relevance**
+    - **Product [search relevance](https://toloka.ai/search-relevance/)**
 
         Intended to rate how relevant products are to specific search queries.
 

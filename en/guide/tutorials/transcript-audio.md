@@ -6,7 +6,7 @@ Audio transcription is a type of data labeling task with an audio file and a tex
 
 {% note info %}
 
-You may need additional projects for your task, such as dataset pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
+You may need additional projects for your task, such as [dataset](https://toloka.ai/datasets) pre-check or checking Tolokers' responses. Learn more about this in [Decomposition of the task](../concepts/solution-architecture.md).
 
 {% endnote %}
 
@@ -272,7 +272,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 - [Toloka-Kit: Audio transcription](https://github.com/Toloka/toloka-kit/blob/main/examples/3.audio_analysis/audio_transcription/audio_transcription.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 Sample dataset files with tasks
 

@@ -1,6 +1,6 @@
 # Collecting offline data
 
-For this type of project, you can use the **Spatial Crowdsourcing** preset.
+For this type of project, you can use the **Spatial [Crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)** preset.
 
 This preset is used for field tasks in the Toloka mobile app. The Toloker selects a point on the map, goes to the location, takes photos, and writes a comment.
 
@@ -36,9 +36,9 @@ Take a look at the example: the interface includes a text block, a button for s
 
 - [view.action-button](../reference/view.action-button.md): Adds a button that calls an action.
 
-  In this example, clicking the button calls [@yandex-toloka/data.location](../reference/data.location.md) which sends the coordinates of the Toloker's device. 
+  In this example, clicking the button calls [@yandex-toloka/data.location](../reference/data.location.md) which sends the coordinates of the Toloker's device.
 
-  The [@yandex-toloka/condition.distance](../reference/condition.distance.md) component compares the Toloker's coordinates with the business location that you specified. The Toloker can submit the response if the difference is less than 50 meters. To change this condition, replace the value of the `max` property with the desired distance. 
+  The [@yandex-toloka/condition.distance](../reference/condition.distance.md) component compares the Toloker's coordinates with the business location that you specified. The Toloker can submit the response if the difference is less than 50 meters. To change this condition, replace the value of the `max` property with the desired distance.
 
   {% cut "Show code" %}
 

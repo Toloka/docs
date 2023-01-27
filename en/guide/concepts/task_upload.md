@@ -19,7 +19,7 @@ To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
         If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
 
         - **Image classification**
-        - **Product search relevance**
+        - **Product [search relevance](https://toloka.ai/search-relevance/)**
         - **Object recognition & detection**
         - **Clickbait or not?**
 

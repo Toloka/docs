@@ -4,7 +4,7 @@ In this tutorial, you will learn how to run object recognition in Toloka. We wil
 
 Object recognition is a type of data labeling task with an image and an editor for selecting an image area.
 
-Tolokers look at the image and select the objects that you need to detect. After you collect all the labeled images, you can apply your dataset for computer vision training.
+Tolokers look at the image and select the objects that you need to detect. After you collect all the labeled images, you can apply your [dataset](https://toloka.ai/datasets) for computer vision training.
 
 ## Prerequisites {#prerequisites}
 
@@ -289,7 +289,7 @@ Main options:
 
 {% cut "How much would 2000 images with a large number of different types of selectable objects cost? How do I create a task for this amount of work?" %}
 
-In the case of crowdsourcing, it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
+In the case of [crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/), it's better to break down this task. The simpler the task, the cheaper it is and the better the quality of the final result. The cost of labeling a single class of objects in photos might be about $0.01.
 
 Base your task on the **Object recognition & detection** preset. See the step-by-step guide for creating this type of project in the [tutorial](selection.md).
 
@@ -330,7 +330,7 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 
 - [Toloka-Kit: Object recognition](https://github.com/Toloka/toloka-kit/blob/main/examples/1.computer_vision/object_detection/object_detection.ipynb)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://tlk.s3.yandex.net/toloka-kit/knowledge-base/road_signs.tsv)
 

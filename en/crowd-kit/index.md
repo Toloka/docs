@@ -6,7 +6,7 @@ Currently, Crowd-Kit contains:
 
 * implementations of commonly-used aggregation methods for categorical, pairwise, textual, and segmentation responses
 * metrics of uncertainty, consistency, and agreement with aggregate
-* loaders for popular crowdsourced datasets
+* loaders for popular crowdsourced [datasets](https://toloka.ai/datasets)
 
 ## Installing
 
@@ -25,7 +25,7 @@ from crowdkit.datasets import load_dataset
 import pandas as pd
 ````
 
-Then, you need to read your annotations into Pandas DataFrame with columns `task`, `worker`, `label`. Alternatively, you can download an example dataset.
+Then, you need to read your annotations into Pandas DataFrame with columns `task`, `worker`, `label`. Alternatively, you can download an example [dataset](https://toloka.ai/datasets).
 
 ````python
 df = pd.read_csv('results.csv')  # should contain columns: task, worker, label

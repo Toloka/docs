@@ -178,6 +178,8 @@ However, this poses the risk that you might spend a lot of money on the exam. Yo
 
 {% cut "Request for training in crowdsourcing and working with Toloka" %}
 
+Fill in the form below to receive training in [crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/) to become an expert in it and successfully work with Toloka.
+
 <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=en&iframe=1&service=toloka-ai"></iframe>
 
 {% endcut %}

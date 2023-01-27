@@ -2,9 +2,9 @@
 
 In this tutorial, you will learn how to run audio classification in Toloka. We will use a project preset designed specifically for this type of data labeling.
 
-Audio classification is a type of data labeling task with an audio player and a finite number of response options.
+Audio classification is a type of [data labeling](https://toloka.ai/data-labeling-platform) task with an audio player and a finite number of response options.
 
-Use Toloka to classify audio recordings into categories that you define. Tolokers listen to the audio and choose one of the given classes. After you collect the labeled data, you can use your dataset for training and evaluating text-to-speech models and audio classifiers.
+Use Toloka to classify audio recordings into categories that you define. Tolokers listen to the audio and choose one of the given classes. After you collect the [labeled data](https://toloka.ai/data-labeling-platform), you can use your [dataset](https://toloka.ai/datasets) for training and evaluating text-to-speech models and audio classifiers.
 
 ## Prerequisites {#prerequisites}
 
@@ -273,7 +273,7 @@ Before you begin:
 - [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
 - [Crowdsourcing concepts: Pricing](https://toloka.ai/knowledgebase/pricing/)
 
-## Datasets and reference {#datasets}
+## [Datasets](https://toloka.ai/datasets) and reference {#datasets}
 
 - [Sample dataset file with tasks](https://labs-images-testing.s3.yandex.net/presets/sidepanel/28_audioClassification/EN/sample-files.zip)
 

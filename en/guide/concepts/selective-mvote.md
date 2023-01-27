@@ -14,7 +14,7 @@ Depending on how many tasks the Toloker completed in `N` days, [overlap](../../g
 
 #### Reducing overlap
 
-The pool's overlap is set to 4. To speed up pool completion and reduce data labeling costs, we'll reduce overlap for every third, fifth, and tenth task.
+The pool's overlap is set to 4. To speed up pool completion and reduce [data labeling](https://toloka.ai/data-labeling-platform) costs, we'll reduce overlap for every third, fifth, and tenth task.
 
 ![](../_images/location-job/selective.png)
 

@@ -1,10 +1,10 @@
 # Data security
 
-Toloka cares about the security of your data and data labeling results. This section describes the key principles of working with data in Toloka.
+Toloka cares about the security of your data and [data labeling](https://toloka.ai/data-labeling-platform) results. This section describes the key principles of working with data in Toloka.
 
 ## Key principles {#data-security-important_1}
 
-- The rights to the results with labeled data belong to the requester, and no one else.
+- The rights to the results with [labeled data](https://toloka.ai/data-labeling-platform) belong to the requester, and no one else.
 
 - The data that the requester sends to Toloka is strictly confidential. Support staff have access to this data. The list of employees granted this access is regularly reviewed and their activities are monitored by our team.
 
@@ -20,7 +20,7 @@ Toloka cares about the security of your data and data labeling results. This sec
 
 By transmitting data to Toloka, you automatically agree to this data being processed by third parties, namely, Tolokers in Toloka.
 
-To avoid transmitting personal data, you can anonymize the data yourself. For example, you can cover up people's faces in photos and change the pitch of the voice in speech recordings.
+To avoid transmitting personal data, you can anonymize the data yourself. For example, you can cover up [people's faces](https://toloka.ai/blog/face-blurring/) in photos and change the pitch of the voice in speech recordings.
 
 For tasks that use recognition of passports or questionnaires with personal information, you can cut out data fields and use separate tasks for them. For example, you can send the last name, first name, and middle name separately for recognition.
 

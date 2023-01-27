@@ -12,7 +12,7 @@ Before you start using the Toloka-Kit library in your own Python code, you need 
 
 ## Label data
 
-To use Toloka-Kit for data labeling, follow the steps below.
+To use Toloka-Kit for [data labeling](https://toloka.ai/data-labeling-platform), follow the steps below.
 
 ### First steps {#first-step}
 
@@ -401,7 +401,7 @@ Right now the pool is empty and closed. It has no tasks or task suites.
 
 A [task](../../guide/concepts/overview.md#task) is the smallest portion of data you need to mark up.
 
-This example uses a small data set with images. This dataset is collected by the Toloka team and distributed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
+This example uses a small data set with images. This [dataset](https://toloka.ai/datasets) is collected by the Toloka team and distributed under a [Creative Commons Attribution 4.0 International license](https://creativecommons.org/licenses/by/4.0/).
 
 Download the data set
 
@@ -691,7 +691,7 @@ You should run the [results aggregation](../../guide/concepts/result-aggregation
 
 The [majority vote](../../guide/concepts/mvote.md) method is a quality control method based on matching responses from the majority of Tolokers who complete the same task. For example, if 2 out of 3 Tolokers selected the `cat` label, then the final label for this task will be `cat`.
 
-Majority vote is easily implemented, but you can also use our crowdsourcing [Crowd-Kit library](../../crowd-kit/index.md). It contains a lot of new aggregation methods.
+Majority vote is easily implemented, but you can also use our [crowdsourcing](https://toloka.ai/knowledgebase/crowdsourcing-concepts/) [Crowd-Kit library](../../crowd-kit/index.md). It contains a lot of new aggregation methods.
 
 Install it using the command below:
 
