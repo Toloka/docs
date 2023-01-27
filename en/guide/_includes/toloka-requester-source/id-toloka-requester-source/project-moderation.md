@@ -6,11 +6,11 @@ Before launching the project, see the [What tasks can't be placed in Toloka?](..
 
 {% endnote %}
 
-Moderation begins when you launch the first pool of a new project in which the pools have not been started before. 
+Moderation begins when you launch the first pool of a new project in which the pools have not been started before.
 
 This usually takes about 1 hour. In some cases, the moderation process may take longer. Note that tasks are not available to Tolokers during moderation. Once it's finished, you'll get a message with the results.
 
-If your project successfully pass moderation and you didn't pause the pool, Tolokers will start your tasks.
+If your project successfully passes moderation and you didn't pause the pool, Tolokers will start your tasks.
 
 Otherwise, you'll see the **Your project didn't pass moderation** label under the project name. In this case, you won't be able to launch pools and Tolokers won't see tasks from the project.
 
