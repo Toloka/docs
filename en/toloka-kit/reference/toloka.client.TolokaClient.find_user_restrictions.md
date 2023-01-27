@@ -1,5 +1,5 @@
 # find_user_restrictions
-`toloka.client.TolokaClient.find_user_restrictions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L3089)
+`toloka.client.TolokaClient.find_user_restrictions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L3110)
 
 Finds Toloker restrictions that match certain criteria.
 

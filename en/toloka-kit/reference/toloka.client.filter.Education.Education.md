@@ -1,5 +1,5 @@
 # Education
-`toloka.client.filter.Education.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L300)
+`toloka.client.filter.Education.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/filter.py#L300)
 
 Toloker's education level.
 

@@ -1,5 +1,5 @@
 # Parameters
-`toloka.client.operations.PoolOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/operations.py#L140)
+`toloka.client.operations.PoolOperation.Parameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/operations.py#L140)
 
 ```python
 Parameters(self, *, pool_id: Optional[str] = None)

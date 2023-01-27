@@ -1,5 +1,5 @@
 # NewUserSkills
-`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/metrics.py#L259)
+`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/metrics.py#L259)
 
 ```python
 NewUserSkills(
@@ -11,7 +11,7 @@ NewUserSkills(
     *,
     toloka_client: Optional[TolokaClient] = None,
     atoloka_client: Optional[AsyncTolokaClient] = None,
-    timeout: timedelta = _Nothing.NOTHING
+    timeout: timedelta = ...
 )
 ```
 
@@ -24,7 +24,7 @@ Tracking Tolokers' skills.
 `skill_id`|**str**|<p>Which skill we will be tracking.</p>
 `count_name`|**Optional\[str\]**|<p>Metric name for a count of new skill assignments. When skill changes it counts to.</p>
 `value_name`|**Optional\[str\]**|<p>Metric name for exact values of new skill level for each skill assignment. It could be useful to track mean value or some medians.</p>
-`join_events`|**bool**|<p>Count all events in one point.  Default False. &quot;Values&quot; never join.</p>
+`join_events`|**bool**|<p>Count all events in one point.  Default `False`. &quot;Values&quot; never join.</p>
 
 **Examples:**
 

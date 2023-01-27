@@ -1,5 +1,5 @@
 # ButtonRadioGroupFieldV1
-`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/fields.py#L115)
+`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/fields.py#L115)
 
 ```python
 ButtonRadioGroupFieldV1(

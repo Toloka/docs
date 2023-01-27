@@ -1,5 +1,5 @@
 # CursorFetchContext
-`toloka.streaming.cursor.BaseCursor.CursorFetchContext` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/cursor.py#L84)
+`toloka.streaming.cursor.BaseCursor.CursorFetchContext` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/cursor.py#L84)
 
 ```python
 CursorFetchContext(self, cursor: BaseCursor)

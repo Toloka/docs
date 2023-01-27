@@ -1,5 +1,5 @@
 # Label
-`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Label` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/fields.py#L278)
+`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Label` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/fields.py#L278)
 
 ```python
 Label(

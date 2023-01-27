@@ -1,5 +1,5 @@
 # observers_iter
-`toloka.streaming.pipeline.Pipeline.observers_iter` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/pipeline.py#L210)
+`toloka.streaming.pipeline.Pipeline.observers_iter` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/pipeline.py#L210)
 
 ```python
 observers_iter(self)

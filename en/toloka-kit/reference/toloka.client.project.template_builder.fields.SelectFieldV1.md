@@ -1,5 +1,5 @@
 # SelectFieldV1
-`toloka.client.project.template_builder.fields.SelectFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/fields.py#L452)
+`toloka.client.project.template_builder.fields.SelectFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/fields.py#L451)
 
 ```python
 SelectFieldV1(

@@ -1,5 +1,5 @@
 # patch_task_overlap_or_min
-`toloka.async_client.client.AsyncTolokaClient.patch_task_overlap_or_min` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.patch_task_overlap_or_min` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L0)
 
 Stops assigning a task to Tolokers.
 
@@ -9,7 +9,7 @@ Stops assigning a task to Tolokers.
 | :----------| :----| :-----------|
 `task_id`|**str**|<p>The ID of the task.</p>
 `overlap`|**Optional\[int\]**|<p>The new overlap value.</p>
-`infinite_overlap`|**Optional\[bool\]**|<ul> <li>True — The task is assigned to all Tolokers. It is usually set for training and control tasks.</li> <li>False — An overlap value specified for the task or for the pool is used.</li> </ul> <p></p><p>Default value: `False`.</p>
+`infinite_overlap`|**Optional\[bool\]**|<ul> <li>`True` — The task is assigned to all Tolokers. It is usually set for training and control tasks.</li> <li>`False` — An overlap value specified for the task or for the pool is used.</li> </ul> <p></p><p>Default value: `False`.</p>
 
 * **Returns:**
 

@@ -1,5 +1,5 @@
 # TrainingSearchRequest
-`toloka.client.search_requests.TrainingSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/search_requests.py#L274)
+`toloka.client.search_requests.TrainingSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/search_requests.py#L274)
 
 ```python
 TrainingSearchRequest(

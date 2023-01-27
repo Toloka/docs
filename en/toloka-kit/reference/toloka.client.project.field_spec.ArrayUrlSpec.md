@@ -1,5 +1,5 @@
 # ArrayUrlSpec
-`toloka.client.project.field_spec.ArrayUrlSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/field_spec.py#L189)
+`toloka.client.project.field_spec.ArrayUrlSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/field_spec.py#L189)
 
 ```python
 ArrayUrlSpec(

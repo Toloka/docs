@@ -1,5 +1,5 @@
 # Attachment
-`toloka.client.attachment.Attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/attachment.py#L14)
+`toloka.client.attachment.Attachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/attachment.py#L14)
 
 ```python
 Attachment(

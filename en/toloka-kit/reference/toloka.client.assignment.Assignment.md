@@ -1,5 +1,5 @@
 # Assignment
-`toloka.client.assignment.Assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/assignment.py#L20)
+`toloka.client.assignment.Assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/assignment.py#L20)
 
 ```python
 Assignment(
@@ -42,7 +42,7 @@ Information about an assigned task suite.
 `reward`|**Optional\[Decimal\]**|<p>Payment received by the Toloker.</p>
 `bonus_ids`|**Optional\[List\[str\]\]**|<p>IDs of rewards issued for the task.</p>
 `tasks`|**Optional\[List\[[Task](toloka.client.task.Task.md)\]\]**|<p>Data for the tasks.</p>
-`automerged`|**Optional\[bool\]**|<p>Flag of the response received as a result of merging identical tasks. Value:</p> <ul> <li>True — The response was recorded when identical tasks were merged.</li> <li>False — Normal Toloker response.</li> </ul>
+`automerged`|**Optional\[bool\]**|<p>Flag of the response received as a result of merging identical tasks. Value:</p> <ul> <li>`True` — The response was recorded when identical tasks were merged.</li> <li>`False` — Normal Toloker response.</li> </ul>
 `created`|**Optional\[datetime\]**|<p>The date and time when the task suite was assigned to a Toloker.</p>
 `submitted`|**Optional\[datetime\]**|<p>The date and time when the task suite was completed by a Toloker.</p>
 `accepted`|**Optional\[datetime\]**|<p>The date and time when the responses for the task suite were accepted by the requester.</p>

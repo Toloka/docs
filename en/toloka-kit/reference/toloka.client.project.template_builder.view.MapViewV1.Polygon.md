@@ -1,5 +1,5 @@
 # Polygon
-`toloka.client.project.template_builder.view.MapViewV1.Polygon` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/view.py#L461)
+`toloka.client.project.template_builder.view.MapViewV1.Polygon` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/view.py#L461)
 
 ```python
 Polygon(

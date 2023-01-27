@@ -1,5 +1,5 @@
 # expand
-`toloka.util._codegen.expand` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/util/_codegen.py#L272)
+`toloka.util._codegen.expand` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/util/_codegen.py#L272)
 
 ```python
 expand(

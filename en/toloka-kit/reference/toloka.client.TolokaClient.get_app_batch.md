@@ -1,5 +1,5 @@
 # get_app_batch
-`toloka.client.TolokaClient.get_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L3904)
+`toloka.client.TolokaClient.get_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L3925)
 
 ```python
 get_app_batch(

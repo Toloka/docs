@@ -1,5 +1,5 @@
 # run
-`toloka.streaming.pipeline.Pipeline.run` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/pipeline.py#L389)
+`toloka.streaming.pipeline.Pipeline.run` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/pipeline.py#L389)
 
 ```python
 async run(self)

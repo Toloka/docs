@@ -1,5 +1,5 @@
 # CloseReason
-`toloka.client.pool.Pool.CloseReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/pool/__init__.py#L128)
+`toloka.client.pool.Pool.CloseReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/pool/__init__.py#L128)
 
 The reason for closing the pool.
 

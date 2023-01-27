@@ -1,5 +1,5 @@
 # FilterCondition
-`toloka.client.filter.FilterCondition` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L52)
+`toloka.client.filter.FilterCondition` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/filter.py#L52)
 
 ```python
 FilterCondition(self)

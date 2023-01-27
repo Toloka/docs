@@ -1,5 +1,5 @@
 # find_task_suites
-`toloka.client.TolokaClient.find_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2575)
+`toloka.client.TolokaClient.find_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L2593)
 
 Finds task suites that match certain criteria.
 

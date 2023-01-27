@@ -1,5 +1,5 @@
 # ArrayFloatSpec
-`toloka.client.project.field_spec.ArrayFloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/field_spec.py#L177)
+`toloka.client.project.field_spec.ArrayFloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/field_spec.py#L177)
 
 ```python
 ArrayFloatSpec(

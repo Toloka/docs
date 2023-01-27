@@ -1,5 +1,5 @@
 # ArrayStringSpec
-`toloka.client.project.field_spec.ArrayStringSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/field_spec.py#L153)
+`toloka.client.project.field_spec.ArrayStringSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/field_spec.py#L153)
 
 ```python
 ArrayStringSpec(
