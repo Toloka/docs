@@ -1,5 +1,5 @@
 # AssignmentEventsInPool
-`toloka.metrics.pool_metrics.AssignmentEventsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/pool_metrics.py#L56)
+`toloka.metrics.pool_metrics.AssignmentEventsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/pool_metrics.py#L56)
 
 ```python
 AssignmentEventsInPool(
@@ -38,7 +38,7 @@ Metrics starts gathering if they name are set. If the metric name is set to None
 `rejected_name `|**-**|<p>Metric name for a count of rejected events. Default &#x27;rejected_events_in_pool&#x27;.</p>
 `skipped_name`|**Optional\[str\]**|<p>Metric name for a count of skipped events. Default None.</p>
 `expired_name`|**Optional\[str\]**|<p>Metric name for a count of expired events. Default None.</p>
-`join_events`|**bool**|<p>Count all events in one point.  Default False.</p>
+`join_events`|**bool**|<p>Count all events in one point.  Default `False`.</p>
 
 **Examples:**
 

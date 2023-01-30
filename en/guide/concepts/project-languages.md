@@ -57,12 +57,12 @@ Interface elements can only be translated in the Template Builder editor.
 
 {% endnote %}
 
-1. When creating or editing a project, add the following components to the text property configuration at the {% if locale == "en-com" %}**Task interface**{% endif %} step:
+1. When creating or editing a project, add the following components to the text property configuration at the **Task interface** step:
 
     - `helper.translate` — the translation component.
     - `key` — the value where the translation will be stored.
 
-    For example, here is how the `label` property looks before:{% if locale == "en-com" %}
+    For example, here is how the `label` property looks before:
 
     ```json
     {
@@ -70,8 +70,6 @@ Interface elements can only be translated in the Template Builder editor.
       "label": "What is the cat's mood?"
     }
     ```
-
-    {% endif %}
 
     Now, this is how the `label` property looks after adding the translation component and `radio-group-label` key:
 
@@ -104,7 +102,7 @@ Interface elements can only be translated in the Template Builder editor.
 
     Save the changes to the interface.
 
-1. At the {% if locale == "en-com" %}**Translations**{% endif %} step, select the desired languages and add the translations of the task interface keys.
+1. At the **Translations** step, select the desired languages and add the translations of the task interface keys.
 
     ![](../_images/keys-translated.png)
 

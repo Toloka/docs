@@ -1,5 +1,5 @@
 # AutoQuality
-`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/autoquality/optimizer.py#L212)
+`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/autoquality/optimizer.py#L212)
 
 ```python
 AutoQuality(

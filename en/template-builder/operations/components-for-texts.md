@@ -2,7 +2,6 @@
 
 In this section, we will tell you how to [display text](#insert-text) and [add a text entry field](#field-text). We'll also tell you which components you can use to [change text](#text-transform).
 
-
 ## Display text {#insert-text}
 
 Use the [view.text](../reference/view.text.md) component to display text in the task interface. In the `content` property, insert the required text or specify a component with the [data.*](work-with-data.md) type that returns the text.
@@ -25,11 +24,9 @@ Use the [view.text](../reference/view.text.md) component to display text in the 
 
 If you want to insert formatted text, see the instructions and samples in the [Text formatting](text-formatting.md) section.
 
-
 ## Add a text entry field {#field-text}
 
 To add a text entry field, use the [field.text](../reference/field.text.md) component for single-line text and [field.textarea](../reference/field.textarea.md) component for multi-line text.
-
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/NuwVOMK_3ttBAz)
 

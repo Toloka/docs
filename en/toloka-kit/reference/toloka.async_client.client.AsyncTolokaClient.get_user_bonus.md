@@ -1,5 +1,5 @@
 # get_user_bonus
-`toloka.async_client.client.AsyncTolokaClient.get_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/async_client/client.py#L0)
 
 ```python
 async get_user_bonus(self, user_bonus_id: str)

@@ -44,9 +44,9 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-    1. Select the {% if locale == "en-com" %}**Hand gesture classification**{% endif %} preset.
+    1. Select the **Hand gesture classification** preset.
 
-1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
+1. Click **Choose this preset** in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -54,43 +54,43 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - **Name to show Tolokers**: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-create-project-step-1.png)
 
-1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
+1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Using the {% if locale == "en-com" %}**Visual editor**{% endif %}, add your data to the {% if locale == "en-com" %}**Config**{% endif %} section:
+    1. Using the **Visual editor**, add your data to the **Config** section:
 
-        - {% if locale == "en-com" %}**Question Tolokers will see in your task**{% endif %}: Write a question that matches the responses Tolokers need to choose from. All tasks in a project use the same question.
+        - **Question Tolokers will see in your task**: Write a question that matches the responses Tolokers need to choose from. All tasks in a project use the same question.
 
-        - {% if locale == "en-com" %}**Paste link to a sample video**{% endif %}: This video is only used to display the task interface preview on the right.
+        - **Paste link to a sample video**: This video is only used to display the task interface preview on the right.
 
-    1. {% if locale == "en-com" %}**Set answer options**{% endif %} is pre-filled with sample answers. Replace the samples with your categories. Note that {% if locale == "en-com" %}**Other**{% endif %} and {% if locale == "en-com" %}**Error**{% endif %} are separate entities.
+    1. **Set answer options** is pre-filled with sample answers. Replace the samples with your categories. Note that **Other** and **Error** are separate entities.
 
-        - {% if locale == "en-com" %}**Answer option for Tolokers**{% endif %}: This is the label that Tolokers will see. Make sure it is clear and correct.
+        - **Answer option for Tolokers**: This is the label that Tolokers will see. Make sure it is clear and correct.
 
-        - {% if locale == "en-com" %}**Name in labeling results**{% endif %}: This is the value you will see in the file with the labeling results.
+        - **Name in labeling results**: This is the value you will see in the file with the labeling results.
 
     1. {% cut "If you use videos from YouTube" %}
 
         To display videos from YouTube, you should transform links to them. For example, the `https://www.youtube.com/watch?v=your_video_example` link should be replaced with `https://www.youtube.com/embed/your_video_example`.
 
-        1. In the {% if locale == "en-com" %}**Paste link to a sample video**{% endif %} field, specify the `https://www.youtube.com/embed/your_video_example` link. You can use a link to any of your videos. It is only used to display the task interface preview on the right.
+        1. In the **Paste link to a sample video** field, specify the `https://www.youtube.com/embed/your_video_example` link. You can use a link to any of your videos. It is only used to display the task interface preview on the right.
 
             [![Create a project. Step 2.3.1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-youtube-link.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-youtube-link.png)
 
-        1. Go to the {% if locale == "en-com" %}**Code editor**{% endif %} tab. In the {% if locale == "en-com" %}**Config**{% endif %} section, replace the `view.video` value with `view.iframe`.
+        1. Go to the **Code editor** tab. In the **Config** section, replace the `view.video` value with `view.iframe`.
 
             [![Create a project. Step 2.3.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-iframe.png =480x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-iframe.png)
 
             {% note info %}
 
-            To learn about other properties of the {% if locale == "en-com" %}**Config**{% endif %} section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/templates/video-moderation.md).
+            To learn about other properties of the **Config** section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/templates/video-moderation.md).
 
             {% endnote %}
 
@@ -100,9 +100,9 @@ Before you begin:
 
         {% include [toloka-requester-source-click-show-specifications](../_includes/toloka-requester-source/id-toloka-requester-source/click-show-specifications.md) %}
 
-        - {% if locale == "en-com" %}**Input data**{% endif %}: Parameters in the file with raw task data.
+        - **Input data**: Parameters in the file with raw task data.
 
-        - {% if locale == "en-com" %}**Output data**{% endif %}: Parameters in the file with labeling results.
+        - **Output data**: Parameters in the file with labeling results.
 
         {% include [toloka-requester-source-specification-match](../_includes/toloka-requester-source/id-toloka-requester-source/specification-match.md) %}
 
@@ -112,7 +112,7 @@ Before you begin:
 
     {% include [toloka-requester-source-instruction-note](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-note.md) %}
 
-1. To save your data and continue, click {% if locale == "en-com" %}**Create a project**{% endif %}.
+1. To save your data and continue, click **Create a project**.
 
     {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
 
@@ -132,15 +132,15 @@ Before you begin:
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-    1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
+    1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
         {% include [tutorials-language-filter-image](../_includes/tutorials/language-filter-image.md) %}
 
-    1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
+    1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** filter and select the desired value: **Toloka web version** or **Toloka for mobile**.
 
-    1. Use the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
+    1. Use the **Speed/quality balance** slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
         {% include [tutorials-speed-filter-image](../_includes/tutorials/speed-filter-image.md) %}
 
@@ -148,11 +148,11 @@ Before you begin:
 
     1. Keep the preconfigured quality control rules as is:
 
-        - {% if locale == "en-com" %}**Fast responses**{% endif %}: This rule filters out Tolokers who complete tasks too fast. The default settings mean that Tolokers are banned from the project for 1 day if they respond to 4 out of 5 tasks in less than 15 seconds.
+        - **Fast responses**: This rule filters out Tolokers who complete tasks too fast. The default settings mean that Tolokers are banned from the project for 1 day if they respond to 4 out of 5 tasks in less than 15 seconds.
 
-        - {% if locale == "en-com" %}**Majority vote**{% endif %}: This rule accepts the most popular response as the correct one, and allows you to filter out Tolokers who answer incorrectly. The default settings mean that Tolokers who give correct responses to less than 40% of tasks are banned from the project for 1 day. {% if locale == "en-com" %}**Accept as majority**{% endif %} set to `2` means that 2 similar responses out of all responses given to a single task will be considered as the correct answer.
+        - **Majority vote**: This rule accepts the most popular response as the correct one, and allows you to filter out Tolokers who answer incorrectly. The default settings mean that Tolokers who give correct responses to less than 40% of tasks are banned from the project for 1 day. **Accept as majority** set to `2` means that 2 similar responses out of all responses given to a single task will be considered as the correct answer.
 
-    1. To filter out Tolokers who often make mistakes in the control tasks, click {% if locale == "en-com" %}**Add a quality control rule → Control tasks**{% endif %}. Enter the following values:
+    1. To filter out Tolokers who often make mistakes in the control tasks, click **Add a quality control rule → Control tasks**. Enter the following values:
 
         [![Create a pool. Control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-control-rule.png)
 
@@ -162,7 +162,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–20 tasks per suite.
+    1. In **Price per task suite**, set the amount of money to pay per task suite done by one Toloker. A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 10–20 tasks per suite.
 
     1. {% include [toloka-requester-source-overlap-settings](../_includes/toloka-requester-source/id-toloka-requester-source/overlap-settings.md) %}
 
@@ -193,7 +193,7 @@ Before you begin:
 
             1. Open the downloaded file, and replace the sample links with links to your video clips.
 
-            1. Click {% if locale == "en-com" %}**Select prepared dataset**{% endif %}, and upload the file you’ve just made.
+            1. Click **Select prepared dataset**, and upload the file you’ve just made.
 
         - Media files
 
@@ -201,29 +201,29 @@ Before you begin:
 
         {% endlist %}
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+    1. Click **Continue**.
 
     1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
-        - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
+        - **General tasks**: These are tasks for Tolokers to label.
 
-        - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
+        - **Control tasks**: These are tasks with predefined answers used to control the quality of responses. You will create them in the next step.
 
-        - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
+        - **Training tasks**: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
 
         For example, you can add 9 general tasks and 1 control task per suite:
 
         [![Upload data. Smart mixing](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-upload-data.png =600x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-upload-data.png)
 
-    1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+    1. Click **Combine tasks into suites**.
 
 1. {% include [toloka-requester-source-add-control-tasks](../_includes/toloka-requester-source/id-toloka-requester-source/add-control-tasks.md) %}
 
-    1. Check the {% if locale == "en-com" %}**result**{% endif %} checkbox, and select the correct answer for a task. Then, click the {% if locale == "en-com" %}**Save and go to next**{% endif %} button. Add several control tasks this way.
+    1. Check the **result** checkbox, and select the correct answer for a task. Then, click the **Save and go to next** button. Add several control tasks this way.
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
-    1. Note the {% if locale == "en-com" %}**Distribution of correct responses for control tasks**{% endif %} graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
+    1. Note the **Distribution of correct responses for control tasks** graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
@@ -239,7 +239,7 @@ Before you begin:
 
     [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-start-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-start-labeling.png)
 
-1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
+1. In the pop-up panel, review the budget and click **Launch**.
 
 ## See the results {#results}
 
@@ -247,19 +247,19 @@ Before you begin:
 
     [![See results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-see-results-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-see-results-step-1.png)
 
-1. When the labeling is complete, click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button and choose {% if locale == "en-com" %}**Run Dawid-Skene model**{% endif %} from the drop-down menu. Click {% if locale == "en-com" %}**Yes**{% endif %} in the pop-up window.
+1. When the labeling is complete, click the arrow next to the **Download results** button and choose **Run Dawid-Skene model** from the drop-down menu. Click **Yes** in the pop-up window.
 
     [![See results. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png)
 
-1. Open the same drop-down menu again, and click {% if locale == "en-com" %}**View aggregations list**{% endif %}.
+1. Open the same drop-down menu again, and click **View aggregations list**.
 
-1. Wait until the aggregation is complete, and click {% if locale == "en-com" %}**Download**{% endif %}. You will get the TSV file with the labeling results:
+1. Wait until the aggregation is complete, and click **Download**. You will get the TSV file with the labeling results:
 
-    - {% if locale == "en-com" %}**INPUT**{% endif %}: The data you uploaded for labeling.
+    - **INPUT**: The data you uploaded for labeling.
 
-    - {% if locale == "en-com" %}**OUTPUT**{% endif %}: The results of labeling (answers given by Tolokers).
+    - **OUTPUT**: The results of labeling (answers given by Tolokers).
 
-    - {% if locale == "en-com" %}**CONFIDENCE**{% endif %}: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
+    - **CONFIDENCE**: The response significance according to the [Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
 ## See also {#see-also}
 

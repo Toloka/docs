@@ -1,5 +1,5 @@
 # get_operations
-`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L2745)
+`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L2828)
 
 Finds all operations that match certain rules and returns them in an iterable object
 
@@ -10,6 +10,7 @@ Finds all operations that match certain rules and returns them in an iterable ob
 
  Args:
      request: Search criteria.
+     batch_size: Returned operations limit for each request. The default batch_size is 50. The maximum allowed batch_size is 500.
 
  Yields:
      Operation: The next matching operations.

@@ -20,8 +20,6 @@ For your convenience, here is the ready-made code for the “Photos of product a
 
 {% cut "HTML block" %}
 
-{% if locale == "en-com" %}
-
 ```html
 {{#if reviewMode}}
     <div class="header-review">
@@ -566,13 +564,9 @@ not_var{{else}}
 {{/if}}
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% cut "JavaScript block" %}
-
-{% if locale == "en-com" %}
 
 ```javascript
 var texts = {
@@ -1227,8 +1221,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 }
 ```
 
-{% endif %}
-
 {% endcut %}
 
 {% endcut %}
@@ -1255,16 +1247,12 @@ Now let's see how to add each field manually.
 
       Each block looks like this:
 
-      {% if locale == "en-com" %}
-
       ```html
       `<div class="block_name">`
       <!-- code for the block that may contain nested blocks -->
       ...
       </div>
       ```
-
-      {% endif %}
 
   1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
@@ -1273,8 +1261,6 @@ Now let's see how to add each field manually.
       The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
       Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
-
-      {% if locale == "en-com" %}
 
       ```html
       <!-- checkbox -->
@@ -1291,19 +1277,13 @@ Now let's see how to add each field manually.
       </div>
       ```
 
-      {% endif %}
-
       In this code, a checkbox is added to the button with the name `btn_ok`. If you added a checkbox to another button, replace `btn_ok` with the relevant button's name.
 
       The checkboxes are listed in the`main__box` blocks as strings:
 
-      {% if locale == "en-com" %}
-
       ```html
       {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
       ```
-
-      {% endif %}
 
       In the code above, one checkbox is added. The output value will be passed to the `checkbox_result` field that you added to the output specification.
 
@@ -1314,8 +1294,6 @@ Now let's see how to add each field manually.
   1. Update the acceptance mode.
 
       The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
-
-      {% if locale == "en-com" %}
 
       ```html
       {{#if (equal verdict "ok")}}
@@ -1328,8 +1306,6 @@ Now let's see how to add each field manually.
       {{/if}}
       ```
 
-      {% endif %}
-
       The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
       For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
@@ -1337,8 +1313,6 @@ Now let's see how to add each field manually.
       The `review__block` blocks contain a description of each field for this button.
 
       Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
-
-      {% if locale == "en-com" %}
 
       ```html
       <!-- checkbox -->
@@ -1352,19 +1326,13 @@ Now let's see how to add each field manually.
       </div>
       ```
 
-      {% endif %}
-
       In this code, a checkbox is added to the button with the name `btn_ok`. If you added a checkbox to another button, replace `btn_ok` with the relevant button's name.
 
       The checkboxes are listed in the `review__box` block as strings:
 
-      {% if locale == "en-com" %}
-
       ```html
       {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
       ```
-
-      {% endif %}
 
       In the code above, one checkbox is added. The output value will be passed to the `checkbox_result` field that you added to the output specification.
 
@@ -1378,13 +1346,9 @@ Now let's see how to add each field manually.
 
       The elements are described as follows:
 
-      {% if locale == "en-com" %}
-
       ```plaintext
       'property': 'value'
       ```
-
-      {% endif %}
 
       The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
@@ -1393,8 +1357,6 @@ Now let's see how to add each field manually.
       Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
       For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       var texts = {
@@ -1413,11 +1375,7 @@ Now let's see how to add each field manually.
       },
       ```
 
-      {% endif %}
-
   1. To add the texts for checkboxes, put a comma after the curly bracket that closes the last field and paste the following code:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       'question_new_checkbox': {
@@ -1425,8 +1383,6 @@ Now let's see how to add each field manually.
       'description': 'Select an answer'
       }
       ```
-
-      {% endif %}
 
       Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the group of checkboxes, and the `description` property contains a question for Tolokers.
 
@@ -1456,16 +1412,12 @@ Now let's see how to add each field manually.
 
       Each block looks like this:
 
-      {% if locale == "en-com" %}
-
       ```html
       `<div class="block_name">`
       <!-- code for the block that may contain nested blocks -->
       ...
       </div>
       ```
-
-      {% endif %}
 
   1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
@@ -1474,8 +1426,6 @@ Now let's see how to add each field manually.
       The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
       Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
-
-      {% if locale == "en-com" %}
 
       ```html
       <!-- radio button -->
@@ -1493,20 +1443,14 @@ Now let's see how to add each field manually.
       </div>
       ```
 
-      {% endif %}
-
       In this code, a radio button is added to the button with the name `btn_ok`. If you added a radio button to another button, change the name `btn_ok` to the right one.
 
       The radio buttons are listed in the `main__box` block as strings:
-
-      {% if locale == "en-com" %}
 
       ```html
       {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
       {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
       ```
-
-      {% endif %}
 
       In the code above, a radio button with two elements is added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `radio _result` field that you added to the output specification.
 
@@ -1515,8 +1459,6 @@ Now let's see how to add each field manually.
   1. Update the acceptance mode.
 
       The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
-
-      {% if locale == "en-com" %}
 
       ```html
       {{#if (equal verdict "ok")}}
@@ -1529,8 +1471,6 @@ Now let's see how to add each field manually.
       {{/if}}
       ```
 
-      {% endif %}
-
       The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
       For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
@@ -1538,8 +1478,6 @@ Now let's see how to add each field manually.
       The `review__block` blocks contain a description of each of the fields for this button.
 
       Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
-
-      {% if locale == "en-com" %}
 
       ```html
       <!-- radio button -->
@@ -1554,20 +1492,14 @@ Now let's see how to add each field manually.
       </div>
       ```
 
-      {% endif %}
-
       In this code, a radio button is added to the button with the name `btn_ok`. If you added a radio button to another button, change the name `btn_ok` to the right one.
 
       The radio buttons are listed in the`review__box` block as strings:
-
-      {% if locale == "en-com" %}
 
       ```html
       {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
       {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
       ```
-
-      {% endif %}
 
       In the code above, a radio button with two elements is added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `radio _result` field that you added to the output specification.
 
@@ -1579,13 +1511,9 @@ Now let's see how to add each field manually.
 
       The elements are described as follows:
 
-      {% if locale == "en-com" %}
-
       ```plaintext
       'property': 'value'
       ```
-
-      {% endif %}
 
       The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
@@ -1594,8 +1522,6 @@ Now let's see how to add each field manually.
       Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
       For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       var texts = {
@@ -1614,11 +1540,7 @@ Now let's see how to add each field manually.
       },
       ```
 
-      {% endif %}
-
   1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       'question_new_radio': {
@@ -1627,15 +1549,11 @@ Now let's see how to add each field manually.
       }
       ```
 
-      {% endif %}
-
       Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the group of radio buttons, and the `description` property contains a question for Tolokers.
 
   1. Add validation.
 
       Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       if (!solution.output_values.verdict || solution.output_values.verdict === '') {
@@ -1665,13 +1583,9 @@ Now let's see how to add each field manually.
       }
       ```
 
-      {% endif %}
-
       The response values for the buttons in this example, which are passed to the `verdict` output variable, have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
 
       Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
-
-      {% if locale == "en-com" %}
 
       ```javascript
       if (!solution... ) {
@@ -1679,19 +1593,13 @@ Now let's see how to add each field manually.
       }
       ```
 
-      {% endif %}
-
       add the following code:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       if (!solution.output_values.radio_result) {
       this.errors = this.addError('This is a required field', 'radio_result', this.errors);
       }
       ```
-
-      {% endif %}
 
 - Add a drop-down list
 
@@ -1709,16 +1617,12 @@ Now let's see how to add each field manually.
 
       Each block looks like this:
 
-      {% if locale == "en-com" %}
-
       ```html
       `<div class="block_name">`
       <!-- code for the block that may contain nested blocks -->
       ...
       </div>
       ```
-
-      {% endif %}
 
   1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
@@ -1727,8 +1631,6 @@ Now let's see how to add each field manually.
       The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
       Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
-
-      {% if locale == "en-com" %}
 
       ```html
       <!-- drop-down list -->
@@ -1748,20 +1650,14 @@ Now let's see how to add each field manually.
       </div>
       ```
 
-      {% endif %}
-
       In this code, a drop-down list is added to the button with the name `btn_ok`. If you added a drop-down list to another button, change the name `btn_ok` to the right one.
 
       The drop-down list elements are listed in the `main__box` block as strings:
-
-      {% if locale == "en-com" %}
 
       ```html
       {{select_item value="Yes" text="Yes"}}
       {{select_item value="No" text="No"}}
       ```
-
-      {% endif %}
 
       In the code above, only two drop-down list elements are added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `select_result` variable that you added to the output specification.
 
@@ -1770,8 +1666,6 @@ Now let's see how to add each field manually.
   1. Update the acceptance mode.
 
       The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
-
-      {% if locale == "en-com" %}
 
       ```html
       {{#if (equal verdict "ok")}}
@@ -1784,8 +1678,6 @@ Now let's see how to add each field manually.
       {{/if}}
       ```
 
-      {% endif %}
-
       The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
       For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
@@ -1793,8 +1685,6 @@ Now let's see how to add each field manually.
       The `review__block` blocks contain a description of each of the fields for this button.
 
       Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
-
-      {% if locale == "en-com" %}
 
       ```html
       <!-- drop-down list -->
@@ -1811,8 +1701,6 @@ Now let's see how to add each field manually.
       </div>
       ```
 
-      {% endif %}
-
       Change the name of the `btn_ok` button to the right one.
 
       If you added new elements to the drop-down list (`{{select_item value= ... }}` strings) at the previous step, then add the same strings to this code.
@@ -1823,13 +1711,9 @@ Now let's see how to add each field manually.
 
       The elements are described as follows:
 
-      {% if locale == "en-com" %}
-
       ```html
       'property': 'value'
       ```
-
-      {% endif %}
 
       The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
@@ -1838,8 +1722,6 @@ Now let's see how to add each field manually.
       Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
       For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       var texts = {
@@ -1858,11 +1740,7 @@ Now let's see how to add each field manually.
       },
       ```
 
-      {% endif %}
-
   1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
-
-      {% if locale == "en-com" %}
 
       ```plaintext
       'question_new_select': {
@@ -1871,15 +1749,11 @@ Now let's see how to add each field manually.
       }
       ```
 
-      {% endif %}
-
       Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the drop-down list, and the `description` property contains a question for Tolokers.
 
   1. Add validation.
 
       Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       else if (solution.output_values.verdict === 'ok') {
@@ -1907,13 +1781,9 @@ Now let's see how to add each field manually.
       }
       ```
 
-      {% endif %}
-
       The response values for the buttons that are passed to the `verdict` output field have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
 
       Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
-
-      {% if locale == "en-com" %}
 
       ```javascript
       if (!solution... ) {
@@ -1921,19 +1791,13 @@ Now let's see how to add each field manually.
       }
       ```
 
-      {% endif %}
-
       add the following code:
-
-      {% if locale == "en-com" %}
 
       ```javascript
       if (!solution.output_values.select_result) {
       this.errors = this.addError('This is a required field', 'select_result', this.errors);
       }
       ```
-
-      {% endif %}
 
 {% endlist %}
 

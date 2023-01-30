@@ -2,7 +2,6 @@
 
 This section describes how [to insert a video](#insert-videos) and [make sure the Toloker viewed it](#condition.played).
 
-
 ## Inserting videos {#insert-video}
 
 To add a video file to the task interface, use the [view.video](../reference/view.video.md) component. In the `url` property, specify a direct link to the file or component that returns the link. To use the link from the input data, use the [data.input](work-with-data.md) component.

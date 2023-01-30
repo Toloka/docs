@@ -1,5 +1,5 @@
 # get_analytics
-`toloka.async_client.client.AsyncTolokaClient.get_analytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_analytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/async_client/client.py#L0)
 
 ```python
 async get_analytics(self, stats: List[AnalyticsRequest])

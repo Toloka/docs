@@ -1,26 +1,26 @@
 # archive_training_async
-`toloka.async_client.client.AsyncTolokaClient.archive_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.archive_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/async_client/client.py#L0)
 
 ```python
 async archive_training_async(self, training_id: str)
 ```
 
-Sends training to archive, asynchronous version
+Archives a training. Sends an asynchronous request to Toloka.
 
 
-The training must be in the status "closed".
-The archived training is not deleted. You can access it when you will need it.
+Only closed trainings can be archived.
+
+You can access archived trainings later.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of training that will be archived.</p>
+`training_id`|**str**|<p>The ID of the training to be archived.</p>
 
 * **Returns:**
 
-  An operation upon completion of which you can get the training with updated
-status. If pool is already archived then None is returned.
+  An object to track the progress of the operation. If the training is already archived then `None` is returned.
 
 * **Return type:**
 

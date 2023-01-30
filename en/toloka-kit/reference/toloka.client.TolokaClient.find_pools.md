@@ -1,5 +1,5 @@
 # find_pools
-`toloka.client.TolokaClient.find_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1474)
+`toloka.client.TolokaClient.find_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L1515)
 
 Finds pools that match certain criteria.
 
@@ -39,19 +39,19 @@ To iterate over all matching pools you may use the [get_pools](toloka.client.Tol
 
 **Examples:**
 
-Find all pools in all projects.
+Finding all pools in all projects.
 
 ```python
 pools = toloka_client.find_pools()
 ```
 
-Find all open pools in all projects.
+Finding all open pools in all projects.
 
 ```python
 pools = toloka_client.find_pools(status='OPEN')
 ```
 
-Find open pools in a specific project.
+Finding open pools in a specific project.
 
 ```python
 pools = toloka_client.find_pools(status='OPEN', project_id='1')

@@ -1,5 +1,5 @@
 # OSVersion
-`toloka.client.filter.OSVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/filter.py#L586)
+`toloka.client.filter.OSVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/filter.py#L586)
 
 ```python
 OSVersion(

@@ -102,7 +102,6 @@ By default, all the input data fields are marked as required in the specificatio
 
 {% endnote %}
 
-
 ## Filling in output data {#output-data-create}
 
 If automatic generation of specifications is enabled, the output data fields are created from the configuration code. It takes into account the components that use `data.output` as well as the values supported by it.
@@ -238,7 +237,6 @@ If automatic generation of specifications is enabled, the output data fields are
 If there are different types of values in the output, the **JSON** type will be included in the specification.
 
 {% endnote %}
-
 
 ## How to edit the specification {#manual-setting}
 

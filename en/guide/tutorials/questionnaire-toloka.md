@@ -30,9 +30,9 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-    1. Select the {% if locale == "en-com" %}**Survey with Toloka template**{% endif %} preset.
+    1. Select the **Survey with Toloka template** preset.
 
-1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
+1. Click **Choose this preset** in the pop-up tab.
 
 ## Create a project {#project}
 
@@ -40,17 +40,17 @@ Before you begin:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - **Name to show Tolokers**: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png)
 
-1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like.
+1. In the **Task interface** section, set up what your tasks will look like.
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. Copy the code of the [example](https://ya.cc/t/W-EbIhFc3ttAKm) and paste it to the {% if locale == "en-com" %}**Config**{% endif %} section of your project.
+    1. Copy the code of the [example](https://ya.cc/t/W-EbIhFc3ttAKm) and paste it to the **Config** section of your project.
 
     1. Edit the code: change questions, hints, and answer options. For example, to configure the text of the answer option, replace the sample answers with your values in the following properties:
 
@@ -62,7 +62,7 @@ Before you begin:
 
         {% note info %}
 
-        To learn about other properties of the {% if locale == "en-com" %}**Config**{% endif %} section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/templates/survey.md).
+        To learn about other properties of the **Config** section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/templates/survey.md).
 
         {% endnote %}
 
@@ -70,17 +70,17 @@ Before you begin:
 
         [![Create a project. Config question attention](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png)
 
-    1. Click {% if locale == "en-com" %}**Data specification → Show specifications**{% endif %}. In the following sections, you will see the parameters which match the task interface you set up in {% if locale == "en-com" %}**Template Builder**{% endif %}:
+    1. Click **Data specification → Show specifications**. In the following sections, you will see the parameters which match the task interface you set up in **Template Builder**:
 
-        - {% if locale == "en-com" %}**Input data**{% endif %}: The technical parameter to run a survey.
+        - **Input data**: The technical parameter to run a survey.
 
-        - {% if locale == "en-com" %}**Output data**{% endif %}: The parameters for answers given by Tolokers, including the `check` parameter for the attention check.
+        - **Output data**: The parameters for answers given by Tolokers, including the `check` parameter for the attention check.
 
 1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
     {% include [toloka-requester-source-instruction-check](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-check.md) %}
 
-1. To save your data and continue, click {% if locale == "en-com" %}**Create a project**{% endif %}.
+1. To save your data and continue, click **Create a project**.
 
     {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
 
@@ -100,23 +100,23 @@ Before you begin:
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-    1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
+    1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
 
     1. Select Tolokers who knows the language of your survey:
 
         [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png)
 
-        Also you can select Tolokers based on their location, age, gender, and other parameters. Use the {% if locale == "en-com" %}**Add filter**{% endif %} button and configure the filters you need.
+        Also you can select Tolokers based on their location, age, gender, and other parameters. Use the **Add filter** button and configure the filters you need.
 
-    1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} filter and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
+    1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** filter and select the desired value: **Toloka web version** or **Toloka for mobile**.
 
     1. Filter out Tolokers who have already taken one survey. It helps prevent the situation when a Toloker completes your survey several times.
 
-        1. Click the {% if locale == "en-com" %}**Add skill**{% endif %} button. Enter the skill name and description, and leave the skill not public.
+        1. Click the **Add skill** button. Enter the skill name and description, and leave the skill not public.
 
             [![Create a pool. Add skill](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png =405x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png)
 
-        1. Click {% if locale == "en-com" %}**Add filter → My skills**{% endif %} and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
+        1. Click **Add filter → My skills** and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
 
             [![Create a pool. My skills](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png)
 
@@ -124,11 +124,11 @@ Before you begin:
 
 1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Click the {% if locale == "en-com" %}**Review task responses manually**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 7).
+    1. Click the **Review task responses manually** toggle, and specify the number of days for checking the task in the **Review period in days** field (for example, 7).
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
-    1. To filter out Tolokers who complete tasks too fast, click {% if locale == "en-com" %}**Add a quality control rule → Fast responses**{% endif %}. Specify the following values:
+    1. To filter out Tolokers who complete tasks too fast, click **Add a quality control rule → Fast responses**. Specify the following values:
 
         [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png)
 
@@ -138,7 +138,7 @@ Before you begin:
 
         {% note tip %}
 
-        To determine the {% if locale == "en-com" %}**Minimum time per task suite**{% endif %} value, complete your survey and record the time.
+        To determine the **Minimum time per task suite** value, complete your survey and record the time.
 
         {% endnote %}
 
@@ -146,13 +146,13 @@ Before you begin:
 
         [![Create a pool. Submitted responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png)
 
-    1. To get the required number of responses, add the {% if locale == "en-com" %}**Processing rejected and accepted assignments**{% endif %} rule. Enter the following values:
+    1. To get the required number of responses, add the **Processing rejected and accepted assignments** rule. Enter the following values:
 
         [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png)
 
         This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
 
-    1. To automatically accept tasks from those who give correct answers to the attention check question, use the {% if locale == "en-com" %}**Control tasks**{% endif %} rule:
+    1. To automatically accept tasks from those who give correct answers to the attention check question, use the **Control tasks** rule:
 
         [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png)
 
@@ -162,13 +162,13 @@ Before you begin:
 
     It should be long enough to read the instructions, wait for the task data to load, and give the answers.
 
-1. In {% if locale == "en-com" %}**Price**{% endif %}, set up the price for answers from one Toloker.
+1. In **Price**, set up the price for answers from one Toloker.
 
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay for survey completion by one Toloker.
+    1. In **Price per task suite**, set the amount of money to pay for survey completion by one Toloker.
 
         In survey projects, a task suite must contain only one task. Otherwise, a Toloker will see several identical surveys on one page. You will set the number of tasks per suite later in this tutorial.
 
-    1. In the {% if locale == "en-com" %}**Overlap**{% endif %} field, define how many respondents you need.
+    1. In the **Overlap** field, define how many respondents you need.
 
         The default overlap (`3`) means that 3 Tolokers will take your survey. Change this value if needed.
 
@@ -182,17 +182,17 @@ Before you begin:
 
         1. Choose a format that is convenient for you and open the file. Change the value of the `GOLDEN:check` parameter if needed.
 
-        1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file from the previous step.
+        1. Click **Drop file here or select**, and upload the file from the previous step.
 
-        1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        1. Click **Continue**.
 
         1. Tasks are shown to Tolokers in suites. A suite is a single page with multiple tasks.
 
-            Go to the {% if locale == "en-com" %}**Set manually**{% endif %} tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
+            Go to the **Set manually** tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
 
             [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png)
 
-    1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+    1. Click **Combine tasks into suites**.
 
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
 
@@ -204,7 +204,7 @@ Before you begin:
 
 1. Make sure you have [topped up your account](../concepts/refill.md).
 
-1. Go to the pool page and click the {% if locale == "en-com" %}**Preview**{% endif %} button to check your task. Answer the questions and submit the task.
+1. Go to the pool page and click the **Preview** button to check your task. Answer the questions and submit the task.
 
     If the page reloaded successfully, your task works correctly.
 
@@ -212,39 +212,39 @@ Before you begin:
 
     [![Start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png)
 
-1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
+1. In the pop-up panel, review the budget and click **Launch**.
 
 ## See the results {#results}
 
 Track the progress of responses collection on the pool page. You can start the review when the first results are received.
 
-If you’ve set the {% if locale == "en-com" %}**Control tasks**{% endif %} rule in step 4.5 of [creating the pool](#pool), most of the tasks may be already accepted.
+If you’ve set the **Control tasks** rule in step 4.5 of [creating the pool](#pool), most of the tasks may be already accepted.
 
-Review the rest of the tasks during the time period specified in the {% if locale == "en-com" %}**Review period in days**{% endif %} field in step 4.1. After that period, all responses are automatically accepted, regardless of whether answers to an attention check are correct or not.
+Review the rest of the tasks during the time period specified in the **Review period in days** field in step 4.1. After that period, all responses are automatically accepted, regardless of whether answers to an attention check are correct or not.
 
-1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
+1. Go to the pool, and click **Review assignments**.
 
     [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png)
 
 1. Choose an assignment.
 
-1. Check the response to the attention check question, and click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment to specify the reason.
+1. Check the response to the attention check question, and click **Accept** or **Decline**. For rejected responses, enter a comment to specify the reason.
 
     To learn about other ways of review, see the [Reviewing Tolokers’ responses](../concepts/accept.md) section.
 
-1. After checking all the assignments, сlick the {% if locale == "en-com" %}**Download results**{% endif %} button.
+1. After checking all the assignments, сlick the **Download results** button.
 
     [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png)
 
-1. In the {% if locale == "en-com" %}**Download results**{% endif %} dialog, do the following:
+1. In the **Download results** dialog, do the following:
 
-    1. To download the accepted answers, select {% if locale == "en-com" %}**Accepted**{% endif %}.
+    1. To download the accepted answers, select **Accepted**.
 
-    1. To make the further processing of the results more convenient, clear {% if locale == "en-com" %}**Separate assignments with empty row**{% endif %}.
+    1. To make the further processing of the results more convenient, clear **Separate assignments with empty row**.
 
-    1. To download the answers given by not banned Tolokers only, select {% if locale == "en-com" %}**Exclude assignments by banned Tolokers**{% endif %}.
+    1. To download the answers given by not banned Tolokers only, select **Exclude assignments by banned Tolokers**.
 
-    1. Click {% if locale == "en-com" %}**Download results**{% endif %}.
+    1. Click **Download results**.
 
     [![See the results. Download settings](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png =458x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png)
 
@@ -252,15 +252,15 @@ You will get the TSV file. To process the survey results, you can open the file 
 
 ## Helpful tips {#tips}
 
-- You can conduct a survey in two stages. For example, it can be useful when the general filters of the {% if locale == "en-com" %}**Audience**{% endif %} section are not enough to select Tolokers you need. Use skills:
+- You can conduct a survey in two stages. For example, it can be useful when the general filters of the **Audience** section are not enough to select Tolokers you need. Use skills:
 
     - In the first survey, [assign the skill](../concepts/nav-assign.md) to the relevant Tolokers.
 
-    - In the second survey, specify the skill in the {% if locale == "en-com" %}**Audience**{% endif %} section to make the survey available to the relevant Tolokers from the first stage.
+    - In the second survey, specify the skill in the **Audience** section to make the survey available to the relevant Tolokers from the first stage.
 
     You can notify Tolokers about the second survey using [messages](../concepts/messaging.md) to those of them who have the necessary skill.
 
-- Check the {% if locale == "en-com" %}**Messages**{% endif %} tab regularly to get Tolokers’ reports on problems with your survey.
+- Check the **Messages** tab regularly to get Tolokers’ reports on problems with your survey.
 
 ## Troubleshooting {#troubleshooting}
 

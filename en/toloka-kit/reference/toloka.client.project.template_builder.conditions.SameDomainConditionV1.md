@@ -1,5 +1,5 @@
 # SameDomainConditionV1
-`toloka.client.project.template_builder.conditions.SameDomainConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/conditions.py#L239)
+`toloka.client.project.template_builder.conditions.SameDomainConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/conditions.py#L239)
 
 ```python
 SameDomainConditionV1(

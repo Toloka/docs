@@ -1,21 +1,24 @@
 # open_training
-`toloka.client.TolokaClient.open_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1916)
+`toloka.client.TolokaClient.open_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L1974)
 
 ```python
 open_training(self, training_id: str)
 ```
 
-Starts distributing tasks from the training
+Opens a training.
+
+
+Tasks from opened trainings can be assigned to Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of the training that will be started.</p>
+`training_id`|**str**|<p>The ID of the training.</p>
 
 * **Returns:**
 
-  Training object with new status.
+  The training with updated status.
 
 * **Return type:**
 
@@ -23,7 +26,7 @@ Starts distributing tasks from the training
 
 **Examples:**
 
-Open the training for Tolokers.
+Opening a training.
 
 ```python
 toloka_client.open_training(training_id='1')

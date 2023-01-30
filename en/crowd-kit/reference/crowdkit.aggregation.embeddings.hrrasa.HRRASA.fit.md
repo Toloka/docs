@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.embeddings.hrrasa.HRRASA.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/embeddings/hrrasa.py#L105)
+`crowdkit.aggregation.embeddings.hrrasa.HRRASA.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/embeddings/hrrasa.py#L105)
 
 ```python
 fit(

@@ -125,6 +125,8 @@ Use this parameter to:
 ||**Metafields** | To pass an array of metafields, specify key and value for each metafield. | **Add optional pool settings**||
 |#
 
+{% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
+
 ## How Tolokers see pools {#pool-appear}
 
 Tolokers can't see pools inside the project and select specific tasks (except for field tasks, where they can select points on the map). They also can't see pool settings, the number of tasks, or completion progress.

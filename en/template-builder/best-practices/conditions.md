@@ -81,5 +81,4 @@ In this example, a Toloker has to click the link in the interface, otherwise the
 
 In the [list of conditions](../reference/conditions.md), you can see all the available components with the name `conditions.*`. If you can't find the desired component in the list or want to use a preset [configuration](../../glossary.md#configuration), define a review in the [JSON Schema]({{ json-schema }}) format using [condition.schema](../reference/condition.schema.md).
 
-
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

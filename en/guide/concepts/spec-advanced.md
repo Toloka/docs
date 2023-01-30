@@ -68,8 +68,6 @@ var ChildClass = extend(ParentClass, function() {
 
 The `Task` object is the task to perform.
 
-{% if locale == "en-com" %}
-
 ```json
 {
     "id": <string>,
@@ -79,8 +77,6 @@ The `Task` object is the task to perform.
      }
 }
 ```
-
-{% endif %}
 
 #|
 ||**Key**|**Value**||
@@ -99,8 +95,6 @@ Example:
 
 The `Solution` object is the Toloker's response in the task.
 
-{% if locale == "en-com" %}
-
 ```json
 {
     "task_id": <string>,
@@ -110,8 +104,6 @@ The `Solution` object is the Toloker's response in the task.
     }
 }
 ```
-
-{% endif %}
 
 #|
 ||**Key**|**Value**||
@@ -131,8 +123,6 @@ Example:
 
 The `SolutionValidationError` object is a validation error for the Toloker's response.
 
-{% if locale == "en-com" %}
-
 ```json
 {
     "task_id": string,
@@ -146,16 +136,12 @@ The `SolutionValidationError` object is a validation error for the Toloker's res
 }
 ```
 
-{% endif %}
-
 #|
 ||**Key**|**Value**||
 ||`task_id` | Task ID.||
 ||`errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`.
 
 Example:
-
-{% if locale == "en-com" %}
 
 ```json
 "errors": {
@@ -166,7 +152,7 @@ Example:
 }
 ```
 
-{% endif %}||
+||
 |#
 
 ## See also {#see-also}

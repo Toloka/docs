@@ -63,7 +63,6 @@ Take a look at the example: the labeling interface includes a text and radio bu
 
   Note that the `view.markdown` component is resource-intensive and might overload weak Toloker devices. Do not use this component to display plain text. If you need to display text without formatting, use the [view.text](../reference/view.text.md) component.
 
-
 - [field.radio-group](../reference/field.radio-group.md): Adds radio buttons for selecting an answer option.
 
   {% cut "Show code" %}

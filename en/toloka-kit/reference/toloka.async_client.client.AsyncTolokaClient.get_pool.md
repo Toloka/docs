@@ -1,17 +1,17 @@
 # get_pool
-`toloka.async_client.client.AsyncTolokaClient.get_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/async_client/client.py#L0)
 
 ```python
 async get_pool(self, pool_id: str)
 ```
 
-Reads one specific pool
+Gets pool data from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**str**|<p>ID of the pool.</p>
+`pool_id`|**str**|<p>The ID of the pool.</p>
 
 * **Returns:**
 

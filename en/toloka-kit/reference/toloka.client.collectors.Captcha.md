@@ -1,5 +1,5 @@
 # Captcha
-`toloka.client.collectors.Captcha` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/collectors.py#L237)
+`toloka.client.collectors.Captcha` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/collectors.py#L249)
 
 ```python
 Captcha(
@@ -10,7 +10,7 @@ Captcha(
 )
 ```
 
-Collects captcha statistics for every Toloker.
+Deprecated. Collects captcha statistics for every Toloker.
 
 
 Captcha provides an advanced protection against robots. It is used with conditions:

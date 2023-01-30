@@ -1,5 +1,5 @@
 # get_assignments
-`toloka.async_client.client.AsyncTolokaClient.get_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L0)
 
 Finds all assignments that match certain criteria.
 
@@ -45,6 +45,7 @@ If you need to sort assignments use the [find_assignments](toloka.client.TolokaC
 `expired_lte`|**Optional\[datetime\]**|<p>Assigned task suites expired before or on the specified date.</p>
 `expired_gt`|**Optional\[datetime\]**|<p>Assigned task suites expired after the specified date.</p>
 `expired_gte`|**Optional\[datetime\]**|<p>Assigned task suites expired after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned assignments limit for each request. The default batch_size  is 50. The maximum allowed batch_size  is 100,000.</p>
 
 * **Yields:**
 

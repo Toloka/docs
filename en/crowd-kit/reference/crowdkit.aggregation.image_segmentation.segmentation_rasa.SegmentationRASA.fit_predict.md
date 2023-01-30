@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L132)
+`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L132)
 
 ```python
 fit_predict(self, data: DataFrame)

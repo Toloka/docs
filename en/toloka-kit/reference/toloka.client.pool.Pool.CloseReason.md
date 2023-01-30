@@ -1,16 +1,16 @@
 # CloseReason
-`toloka.client.pool.Pool.CloseReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/__init__.py#L132)
+`toloka.client.pool.Pool.CloseReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/pool/__init__.py#L128)
 
-The reason for closing the pool the last time:
+The reason for closing the pool.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`MANUAL`|'MANUAL'|<p>Closed by the requester.</p>
-`EXPIRED`|'EXPIRED'|<p>Reached the date and time set in will_expire.</p>
-`COMPLETED`|'COMPLETED'|<p>Closed automatically because all the pool tasks were completed.</p>
-`NOT_ENOUGH_BALANCE`|'NOT_ENOUGH_BALANCE'|<p>Closed automatically because the Toloka account ran out of funds.</p>
-`ASSIGNMENTS_LIMIT_EXCEEDED`|'ASSIGNMENTS_LIMIT_EXCEEDED'|<p>Closed automatically because it exceeded the limit on assigned task suites (maximum of 2 million).</p>
-`BLOCKED`|'BLOCKED'|<p>Closed automatically because the requester&#x27;s account was blocked by a Toloka administrator.</p>
-`FOR_UPDATE`|'FOR_UPDATE'|
+`MANUAL`|'MANUAL'|<p>A pool was closed by a requester.</p>
+`EXPIRED`|'EXPIRED'|<p>The lifetime of the pool expired.</p>
+`COMPLETED`|'COMPLETED'|<p>All tasks were completed.</p>
+`NOT_ENOUGH_BALANCE`|'NOT_ENOUGH_BALANCE'|<p>There is not enough money to run the pool.</p>
+`ASSIGNMENTS_LIMIT_EXCEEDED`|'ASSIGNMENTS_LIMIT_EXCEEDED'|<p>A limit of 2 million assignments is reached.</p>
+`BLOCKED`|'BLOCKED'|<p>The requester&#x27;s account was blocked.</p>
+`FOR_UPDATE`|'FOR_UPDATE'|<p>Pool parameters are changing at the moment.</p>

@@ -1,5 +1,5 @@
 # Category
-`toloka.client.filter.Condition.Category` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/filter.py#L158)
+`toloka.client.filter.Condition.Category` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/filter.py#L158)
 
 An enumeration.
 

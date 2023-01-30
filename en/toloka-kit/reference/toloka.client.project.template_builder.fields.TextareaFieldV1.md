@@ -1,5 +1,5 @@
 # TextareaFieldV1
-`toloka.client.project.template_builder.fields.TextareaFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/fields.py#L529)
+`toloka.client.project.template_builder.fields.TextareaFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/fields.py#L528)
 
 ```python
 TextareaFieldV1(
@@ -32,9 +32,9 @@ Note that formatting is not available in the text box.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If true, editing is not available.</p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, editing is not available.</p>
 `placeholder`|**Optional\[Any\]**|<p>A semi-transparent label that is shown when the box is empty. Use it to provide an example or a hint for the response.</p>
-`resizable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Changing the box size. When set to true (the default value), the Toloker can change the height. To prevent resizing, set the value to false.</p>
+`resizable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Changing the box size. When set to `True` (the default value), the Toloker can change the height. To prevent resizing, set the value to `False`.</p>
 `rows`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The height of the text box in lines.</p>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>
 `label`|**Optional\[Any\]**|<p>Label above the component.</p>

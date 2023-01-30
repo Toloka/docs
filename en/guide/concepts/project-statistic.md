@@ -1,12 +1,12 @@
 # Project statistics
 
-To view the graphs, go to the project and open the {% if locale == "en-com" %}**Statistics**{% endif %} tab.
+To view the graphs, go to the project and open the **Statistics** tab.
 
 #|
 || Field  | Overview ||
-||{% if locale == "en-com" %}**Open pools**{% endif %} | The number of open [pools](../../glossary.md#pool).||
-||{% if locale == "en-com" %}**Pools (total)**{% endif %} | The total number of pools.||
-||{% if locale == "en-com" %}**Submitted responses**{% endif %} | The total number of completed [task suites](../../glossary.md#task-suite) (taking [overlap](../../glossary.md#overlap) into account).
+||**Open pools** | The number of open [pools](../../glossary.md#pool).||
+||**Pools (total)** | The total number of pools.||
+||**Submitted responses** | The total number of completed [task suites](../../glossary.md#task-suite) (taking [overlap](../../glossary.md#overlap) into account).
 
 There may be few completed tasks if your tasks are only available to a small number of Tolokers. This could be due to incorrectly configured [filters](filters.md) or [skills](nav.md). In this case, some Tolokers don't see your tasks.
 
@@ -20,15 +20,15 @@ Also, try checking how this parameter might be related to the number of interest
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Assignments**{% endif %} | The graph shows the number of tasks by type:
+||**Assignments** | The graph shows the number of tasks by type:
 
-- {% if locale == "en-com" %}**Submitted**{% endif %} — The number of task suites submitted for review in all pools.
+- **Submitted** — The number of task suites submitted for review in all pools.
 
-- {% if locale == "en-com" %}**Accepted**{% endif %}— The number of accepted task suites in all pools.
+- **Accepted**— The number of accepted task suites in all pools.
 
-- {% if locale == "en-com" %}**Skipped**{% endif %} — The number of task suites [skipped by Tolokers](pool_statistic-pool.md#skipped-tasks).
+- **Skipped** — The number of task suites [skipped by Tolokers](pool_statistic-pool.md#skipped-tasks).
 
-- {% if locale == "en-com" %}**Expired**{% endif %} — The number of expired task suites. Includes the pages that Tolokers failed to complete on time or decided to skip.
+- **Expired** — The number of expired task suites. Includes the pages that Tolokers failed to complete on time or decided to skip.
 
 {% cut "Recommendations" %}
 
@@ -36,7 +36,7 @@ If you have a lot of skipped or expired tasks, we recommend that you read our [T
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Average overlap**{% endif %} | The average number of Tolokers who completed the same task in the project.
+||**Average overlap** | The average number of Tolokers who completed the same task in the project.
 
 {% cut "Recommendations" %}
 
@@ -47,8 +47,8 @@ If you think that this number is too large or small, you may have incorrectly co
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Task completion time**{% endif %} | The average time spent on one task suite across all project pools. Specified in seconds.||
-||{% if locale == "en-com" %}**Spent (+ fee)**{% endif %} | The total amount of money spent on the project. The [fee](budget.md) amount is shown in parentheses.
+||**Task completion time** | The average time spent on one task suite across all project pools. Specified in seconds.||
+||**Spent (+ fee)** | The total amount of money spent on the project. The [fee](budget.md) amount is shown in parentheses.
 
 {% cut "Recommendations" %}
 
@@ -60,12 +60,12 @@ You can also increase or decrease the number of tasks per suite and adjust the p
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Spending (excluding fee)**{% endif %} | The graph shows the amount of money spent without the fee:
+||**Spending (excluding fee)** | The graph shows the amount of money spent without the fee:
 
-- {% if locale == "en-com" %}**Spending on bonuses**{% endif %} — The amount of money spent on extra rewards.
+- **Spending on bonuses** — The amount of money spent on extra rewards.
 
-- {% if locale == "en-com" %}**Spending on assignments**{% endif %} — The amount of money spent on tasks.||
-||{% if locale == "en-com" %}**Average task price**{% endif %} | The average price in USD per general task in the project, including overlap.
+- **Spending on assignments** — The amount of money spent on tasks.||
+||**Average task price** | The average price in USD per general task in the project, including overlap.
 
 Note that this is the price per task, not per suite with overlap. The Toloka fee isn't taken into account when calculating the average task price.
 
@@ -75,9 +75,9 @@ If you think that the price is too high, check the price settings in the pool an
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Earnings per hour**{% endif %} | Average Toloker earnings per hour of data labeling in the project, in US dollars. Earnings are calculated for all tasks in the project and include extra rewards for tasks.||
-||{% if locale == "en-com" %}**Banned Tolokers**{% endif %} | The number of Tolokers who are blocked from accessing the project.||
-||{% if locale == "en-com" %}**Quality on control tasks and training tasks**{% endif %} | This graph shows the percentage of correct responses in the control and training tasks.
+||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the project, in US dollars. Earnings are calculated for all tasks in the project and include extra rewards for tasks.||
+||**Banned Tolokers** | The number of Tolokers who are blocked from accessing the project.||
+||**Quality on control tasks and training tasks** | This graph shows the percentage of correct responses in the control and training tasks.
 
 {% cut "Recommendations" %}
 
@@ -89,7 +89,7 @@ Another possible reason is incorrect settings for the quality control rules. May
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Blocked by rules**{% endif %} | The number of Tolokers banned by the quality control rules.
+||**Blocked by rules** | The number of Tolokers banned by the quality control rules.
 
 Note that the number of Tolokers is counted separately for each rule.
 
@@ -99,7 +99,7 @@ If the number is too large or too small, check the settings for the quality cont
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Banned Tolokers**{% endif %} | The graph shows two indicators:
+||**Banned Tolokers** | The graph shows two indicators:
 
 - **On the project** — Number of Tolokers banned from the project.
 - **By the requester** — Number of Tolokers blocked by the requester.
@@ -112,8 +112,8 @@ If there are too many blocked Tolokers, review and adjust the quality control ru
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Active Tolokers**{% endif %} | The number of Tolokers who started at least one task suite within the last hour and have access to the [project](../../glossary.md#project).||
-||{% if locale == "en-com" %}**Interested in pool**{% endif %} | The number of Tolokers who started or completed at least one task suite.
+||**Active Tolokers** | The number of Tolokers who started at least one task suite within the last hour and have access to the [project](../../glossary.md#project).||
+||**Interested in pool** | The number of Tolokers who started or completed at least one task suite.
 
 It includes both interested and engaged Tolokers.
 
@@ -123,7 +123,7 @@ If there is a large difference between the numbers of interested and engaged Tol
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Submitted in pool**{% endif %} | The number of Tolokers who completed at least one task suite.
+||**Submitted in pool** | The number of Tolokers who completed at least one task suite.
 
 {% cut "Recommendations" %}
 
@@ -131,7 +131,7 @@ If this number is low but you're satisfied with the number of properly completed
 
 {% endcut %}
 ||
-||{% if locale == "en-com" %}**Tolokers completing tasks in the project**{% endif %} | The total number of Tolokers who completed tasks in the project.
+||**Tolokers completing tasks in the project** | The total number of Tolokers who completed tasks in the project.
 
 {% cut "Recommendations" %}
 

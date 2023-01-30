@@ -1,5 +1,5 @@
 # ListFieldV1
-`toloka.client.project.template_builder.fields.ListFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/fields.py#L306)
+`toloka.client.project.template_builder.fields.ListFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/fields.py#L306)
 
 ```python
 ListFieldV1(
@@ -41,7 +41,7 @@ property to block Tolokers from changing a component, like when a certain event 
 `render`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Interface template for list items, such as a text field. In nested field.* components, use data.relative for recording responses, otherwise all the list items will have the same value.</p>
 `button_label`|**Optional\[Any\]**|<p>Text on the button for adding list items.</p>
 `direction`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListDirection](toloka.client.project.template_builder.base.ListDirection.md)\]\]**|<p>The direction of the list.</p>
-`editable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>A property that indicates whether adding and removing list items is allowed. Set false to disable. By default it is true (allowed).</p>
+`editable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>A property that indicates whether adding and removing list items is allowed. Set false to disable. By default it is `True` (allowed).</p>
 `max_length`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Maximum number of list items.</p>
 `size`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListSize](toloka.client.project.template_builder.base.ListSize.md)\]\]**|<p>The distance between list items. Acceptable values in ascending order: s, m (default).</p>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>

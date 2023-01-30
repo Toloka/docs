@@ -1,5 +1,5 @@
 # InclusionOperator
-`toloka.client.primitives.operators.InclusionOperator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/primitives/operators.py#L53)
+`toloka.client.primitives.operators.InclusionOperator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/primitives/operators.py#L53)
 
 Supports the `include()` and `exclude()` methods in filter conditions.
 

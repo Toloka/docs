@@ -17,8 +17,6 @@
 
       {% cut "Пример 1" %}
 
-      {% if locale == "ru-ru" %}
-
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -51,46 +49,9 @@
       }
       ```
 
-      {% endif %}{% if locale == "en-com" %}
-
-      ```javascript
-      exports.Task = extend(TolokaHandlebarsTask, function (options) {
-      TolokaHandlebarsTask.call(this, options);
-      }, {
-      getTemplateData: function() {
-      var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments);
-      data. < array name > = ['string 1', 'string 2', ...
-      'string n'
-      ];
-      return data;
-      },
-      OnRender: function () {
-      //Generated DOM element for the task (available via #getDOMElement())
-      },
-      onDestroy: function () {
-      //The task is completed, you can release global resources (if you used them) }
-      });
-
-      function extend(ParentClass, constructorFunction, prototypeHash) {
-      constructorFunction = constructorFunction || function () {};
-      prototypeHash = prototypeHash || {};
-      if (ParentClass) {
-      constructorFunction.prototype = Object.create(ParentClass.prototype);
-      }
-      for (var i in prototypeHash) {
-      constructorFunction.prototype[i] = prototypeHash[i];
-      }
-      return constructorFunction;
-      }
-      ```
-
-      {% endif %}
-
       {% endcut %}
 
       {% cut "Пример 2" %}
-
-      {% if locale == "ru-ru" %}
 
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
@@ -121,39 +82,6 @@
       return constructorFunction;
       }
       ```
-
-      {% endif %}{% if locale == "en-com" %}
-
-      ```javascript
-      exports.Task = extend(TolokaHandlebarsTask, function (options) {
-      TolokaHandlebarsTask.call(this, options);
-      }, {
-      getTemplateData: function() {
-      var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments);
-      data.countries = ['Poland', 'Lithuania', 'Russia', 'Belarus', 'Latvia', 'Germany', 'France'];
-      return data;
-      },
-      OnRender: function () {
-      //Generated DOM element for the task (available via #getDOMElement())
-      },
-      onDestroy: function () {
-      //The task is completed, you can release global resources (if you used them) }
-      });
-
-      function extend(ParentClass, constructorFunction, prototypeHash) {
-      constructorFunction = constructorFunction || function () {};
-      prototypeHash = prototypeHash || {};
-      if (ParentClass) {
-      constructorFunction.prototype = Object.create(ParentClass.prototype);
-      }
-      for (var i in prototypeHash) {
-      constructorFunction.prototype[i] = prototypeHash[i];
-      }
-      return constructorFunction;
-      }
-      ```
-
-      {% endif %}
 
       {% endcut %}
 

@@ -1,14 +1,14 @@
 # AssignmentsIssuingConfig
-`toloka.client.pool.Pool.AssignmentsIssuingConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/__init__.py#L120)
+`toloka.client.pool.Pool.AssignmentsIssuingConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/pool/__init__.py#L115)
 
 ```python
 AssignmentsIssuingConfig(self, issue_task_suites_in_creation_order: Optional[bool] = None)
 ```
 
-Settings for assigning tasks in the pool.
+Settings for assigning task suites in the pool.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`issue_task_suites_in_creation_order`|**Optional\[bool\]**|<p>For pools that don&#x27;t use “smart mixing”. Assign task suites in the order in which they were uploaded. For example, for a pool with an overlap of 5, the first task suite is assigned to five Tolokers, then the second task suite, and so on. This parameter is available when the project has &quot;assignments_issuing_type&quot;: &quot;AUTOMATED&quot;.</p>
+`issue_task_suites_in_creation_order`|**Optional\[bool\]**|<p>Task suites are assigned in the order in which they were created.</p> <p>This parameter is used when tasks are [grouped into suites](https://toloka.ai/en/docs/guide/concepts/distribute-tasks-by-pages) manually and the `assignments_issuing_type` project parameter is set to `AUTOMATED`.</p>

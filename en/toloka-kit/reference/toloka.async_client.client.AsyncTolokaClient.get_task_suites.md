@@ -1,5 +1,5 @@
 # get_task_suites
-`toloka.async_client.client.AsyncTolokaClient.get_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_task_suites` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L0)
 
 Finds all task suites that match certain criteria.
 
@@ -27,6 +27,7 @@ If you need to sort task suites use the [find_task_suites](toloka.client.TolokaC
 `overlap_lte`|**Optional\[int\]**|<p>Task suites with an overlap less than or equal to the specified value.</p>
 `overlap_gt`|**Optional\[int\]**|<p>Task suites with an overlap greater than the specified value.</p>
 `overlap_gte`|**Optional\[int\]**|<p>Task suites with an overlap greater than or equal to the specified value.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned task suites limit for each request. The default batch_size is 50. The maximum allowed batch_size is 100,000.</p>
 
 * **Yields:**
 

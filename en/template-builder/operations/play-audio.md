@@ -18,9 +18,7 @@ If you pass a link to an audio file in the [input data](work-with-data.md), use 
 
 To loop audio playback automatically, put `true` in the `loop` property.
 
-
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/hn12lyBE3ttC7a)
-
 
 ## Make sure that the Toloker listened to the audio {#validate-listened}
 
@@ -40,7 +38,6 @@ To loop audio playback automatically, put `true` in the `loop` property.
   ```
 
   [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/wVqSKJCJ3ttC9M)
-
 
 - Listened completely
 
@@ -77,7 +74,6 @@ On the website, `field.audio` allows Tolokers to upload audio files, and in the 
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/uDWbPPCP3ttFAM)
 
-
 ## Create a task to transcribe audio {#transform-to-text}
 
 To create a template for audio transcription tasks, we used the following components:
@@ -85,7 +81,6 @@ To create a template for audio transcription tasks, we used the following compon
 - [condition.played](../reference/condition.played.md): To make sure that a Toloker listened to the audio.
 - [condition.required](../reference/condition.required.md): To make sure that a Toloker entered text into the multiline field ([field.textarea](../reference/field.textarea.md)).
 - [plugin.toloka](../reference/plugin.toloka.md): To customize the task layout.
-
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/aAynLBRt3ttCCg)
 

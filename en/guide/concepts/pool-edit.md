@@ -46,7 +46,7 @@ To edit pool information:
 
 ### Price per task suite, $
 
-Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
+Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the **Pool type** is **General tasks**, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
 
 ### Toloker interest at this price
 
@@ -76,7 +76,7 @@ Calculated automatically.
 
 Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only assigned to Tolokers who have agreed to complete these types of tasks.
 
-If you aren't sure whether the tasks have this kind of content, select the {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} option.
+If you aren't sure whether the tasks have this kind of content, select the **My tasks may contain shocking or pornographic content** option.
 
 ### Filters and skills
 
@@ -148,7 +148,7 @@ This field is only available if you have training pools in the project.
 
 ### Level required
 
-This box is only available if you filled in the {% if locale == "en-com" %}**Training**{% endif %} box.
+This box is only available if you filled in the **Training** box.
 
 Percentage of correct responses in training tasks (from 5 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
 
@@ -184,7 +184,7 @@ We recommend spending no more than 60 seconds per task (including the time for p
 
 If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for.
 
-### {% if locale == "en-com" %}**Keep pool open after completion, sec**{% endif %}
+### Keep pool open after completion, sec
 
 The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0 (1 if you use dynamic overlap), maximum — 259200 seconds (three days).
 
@@ -198,15 +198,15 @@ The date the pool closes. The pool closes automatically on this date, even if th
 
 Specify the pool type:
 
-- {% if locale == "en-com" %}**General tasks**{% endif %}: The main pool that contains your regular tasks.
+- **General tasks**: The main pool that contains your regular tasks.
 
-- {% if locale == "en-com" %}**Exam**{% endif %}: A pool that contains only [control tasks](../../glossary.md#control-task).
+- **Exam**: A pool that contains only [control tasks](../../glossary.md#control-task).
 
-- {% if locale == "en-com" %}**Training**{% endif %}: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
+- **Training**: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
 
-- {% if locale == "en-com" %}**Retry**{% endif %}: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
+- **Retry**: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
 
-- {% if locale == "en-com" %}**Other**{% endif %}: If none of the previous options fit.
+- **Other**: If none of the previous options fit.
 
 {% note info %}
 

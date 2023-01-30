@@ -132,7 +132,7 @@ You can't use the interface to upload the tasks with multiple correct responses 
 
 {% cut "Where is my file added if I upload it to the running pool?" %}
 
-If you have the {% if locale == "en-com" %}**Keep task order**{% endif %} option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
+If you have the **Keep task order** option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
 
 {% endcut %}
 
@@ -385,7 +385,7 @@ If the task requires that the Tolokers send free-format responses or data files,
 
 {% cut "Why is only Smart Mixing available in Training?" %}
 
-This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the {% if locale == "en-com" %}**Set manually**{% endif %} option in the training, create the main pool, set the pool type as {% if locale == "en-com" %}**Training**{% endif %}, and set the cost to zero.
+This is a technical limitation of [training pools](../../glossary.md#training-pool). If you want to use the **Set manually** option in the training, create the main pool, set the pool type as **Training**, and set the cost to zero.
 
 {% endcut %}
 

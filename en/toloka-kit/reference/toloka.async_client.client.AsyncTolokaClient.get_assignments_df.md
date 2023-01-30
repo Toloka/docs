@@ -1,5 +1,5 @@
 # get_assignments_df
-`toloka.async_client.client.AsyncTolokaClient.get_assignments_df` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_assignments_df` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L0)
 
 Downloads assignments as pandas.DataFrame.
 

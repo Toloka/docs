@@ -1,5 +1,5 @@
 # Status
-`toloka.client.app.AppItem.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/app/__init__.py#L148)
+`toloka.client.app.AppItem.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/app/__init__.py#L148)
 
 An enumeration.
 

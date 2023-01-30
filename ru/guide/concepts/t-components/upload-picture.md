@@ -4,7 +4,7 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку для загрузки картинки в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.media-file.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.media-file.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку для загрузки картинки в [Конструкторе шаблонов](../../../template-builder/reference/field.media-file.md).
 
 {% endnote %}
 

@@ -1,11 +1,11 @@
 # UserBonusCreateRequestParameters
-`toloka.client.user_bonus.UserBonusCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/user_bonus.py#L86)
+`toloka.client.user_bonus.UserBonusCreateRequestParameters` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/user_bonus.py#L89)
 
 ```python
 UserBonusCreateRequestParameters(
     self,
     *,
-    operation_id: Optional[str] = None,
+    operation_id: Optional[UUID] = ...,
     skip_invalid_items: Optional[bool] = None
 )
 ```
@@ -20,5 +20,5 @@ to clarify the behavior when creating bonuses.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operation_id`|**Optional\[str\]**|<p>Operation ID. If asynchronous creation is used, by this identifier you can later get results of creating bonuses.</p>
-`skip_invalid_items`|**Optional\[bool\]**|<p>Validation parameters of objects:</p> <ul> <li>True - Award a bonus if the object with bonus information passed validation. Otherwise, skip the bonus.</li> <li>False - Default behavior. Stop the operation and don&#x27;t award bonuses if at least one object didn&#x27;t pass validation.</li> </ul>
+`operation_id`|**Optional\[UUID\]**|<p>Operation ID. If asynchronous creation is used, by this identifier you can later get results of creating bonuses.</p>
+`skip_invalid_items`|**Optional\[bool\]**|<p>Validation parameters of objects:</p> <ul> <li>`True` — Award a bonus if the object with bonus information passed validation. Otherwise, skip the bonus.</li> <li>`False` — Default behavior. Stop the operation and don&#x27;t award bonuses if at least one object didn&#x27;t pass validation.</li> </ul>

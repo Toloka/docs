@@ -1,5 +1,5 @@
 # get_user_restrictions
-`toloka.async_client.client.AsyncTolokaClient.get_user_restrictions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_user_restrictions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L0)
 
 Finds all Toloker restrictions that match certain criteria.
 
@@ -24,6 +24,7 @@ If you need to sort Toloker restrictions use the [find_user_restrictions](toloka
 `created_lte`|**Optional\[datetime\]**|<p>Restrictions created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Restrictions created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Restrictions created after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned Toloker restrictions limit for each request. The maximum allowed batch_size is 500.</p>
 
 * **Yields:**
 

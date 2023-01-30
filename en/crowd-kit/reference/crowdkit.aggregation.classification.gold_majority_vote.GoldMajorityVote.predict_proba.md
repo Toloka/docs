@@ -1,5 +1,5 @@
 # predict_proba
-`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/gold_majority_vote.py#L105)
+`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.predict_proba` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/classification/gold_majority_vote.py#L105)
 
 ```python
 predict_proba(self, data: DataFrame)

@@ -1,4 +1,4 @@
-# {% if locale == "en-com" %}Topping up your account{% endif %}
+# Topping up your account
 
 ## Deposit methods {#method}
 
@@ -8,11 +8,9 @@ You can use the following options to add funds to your Toloka account:
 
 The payment is completed within 15 minutes.
 
-If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endif %} when [registering](access.md) in Toloka, you must use a corporate bank card.
+If you chose **Profile type → Legal entity** when [registering](access.md) in Toloka, you must use a corporate bank card.
 
 {% cut "List of countries where bank card transfers are available" %}
-
-{% if locale == "en-com" %}
 
 - Turkey
 - Åland Islands
@@ -87,8 +85,6 @@ If you chose {% if locale == "en-com" %}**Profile type → Legal entity**{% endi
 - Vatican City State
 - Vietnam
 
-{% endif %}
-
 {% endcut %}
 
 #### Bank transfer
@@ -127,9 +123,9 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
 ## Step-by-step instructions {#step-by-step}
 
-1. On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Top up account**{% endif %}.
+1. On the [Profile]({{ profile }}) page, click **Top up account**.
 
-1. If you're topping up your account for the first time, the {% if locale == "en-com" %}**Connect to billing system**{% endif %} page will open. Follow these steps:
+1. If you're topping up your account for the first time, the **Connect to billing system** page will open. Follow these steps:
 
     1. Fill in your details.
 
@@ -139,15 +135,15 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
         {% endnote %}
 
-    1. Click {% if locale == "en-com" %}**Connect**{% endif %}.
+    1. Click **Connect**.
 
 1. Enter the transfer amount.
 
     The maximum top-up amount from a bank card is $3500.
 
-1. Choose the payment method: {% if locale == "en-com" %}**Bank card**{% endif %} or {% if locale == "en-com" %}**Bank transfer or Paypal**{% endif %}.
+1. Choose the payment method: **Bank card** or **Bank transfer or Paypal**.
 
-1. Click {% if locale == "en-com" %}**Top up**{% endif %}.
+1. Click **Top up**.
 
     {% list tabs %}
 
@@ -157,13 +153,13 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
           {% note info %}
 
-          To avoid having to enter your card details again later, enable the {% if locale == "en-com" %}**Save card for future payments**{% endif %} option.
+          To avoid having to enter your card details again later, enable the **Save card for future payments** option.
 
           {% endnote %}
 
-      1. Click the {% if locale == "en-com" %}**Pay**{% endif %} button.
+      1. Click the **Pay** button.
 
-      1. Track the receipt of money in your Toloka account on the [Profile]({{ profile }}) page (the {% if locale == "en-com" %}**Transactions history**{% endif %} tab).
+      1. Track the receipt of money in your Toloka account on the [Profile]({{ profile }}) page (the **Transactions history** tab).
 
     - Bank account/PayPal
 
@@ -183,21 +179,21 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
             - A business card with bank details and contact information.
 
-      1. Click the {% if locale == "en-com" %}**Select**{% endif %} button.
+      1. Click the **Select** button.
 
       1. Check the data you entered.
 
-          To return to choosing a payment method and changing the payer's details, click {% if locale == "en-com" %}**Change payer or payment method**{% endif %}.
+          To return to choosing a payment method and changing the payer's details, click **Change payer or payment method**.
 
-      1. Click the {% if locale == "en-com" %}**Create a billing invoice**{% endif %} button.
+      1. Click the **Create a billing invoice** button.
 
-          If you chose {% if locale == "en-com" %}**Payment method → Bank deposit in US dollars for non-resident individuals (Switzerland)**{% endif %}, you will receive an invoice with payment details.
+          If you chose **Payment method → Bank deposit in US dollars for non-resident individuals (Switzerland)**, you will receive an invoice with payment details.
 
-      1. Click the {% if locale == "en-com" %}**Pay**{% endif %} button.
+      1. Click the **Pay** button.
 
-          If you chose {% if locale == "en-com" %}**Payment method → PayPal**{% endif %}, you will be redirected to the PayPal site for payment.
+          If you chose **Payment method → PayPal**, you will be redirected to the PayPal site for payment.
 
-          If you chose {% if locale == "en-com" %}**Payment method → Banking card in dollars — non residents Switzerland) — US dollars**{% endif %}, enter your bank card information and complete the payment. The money will be converted at your bank's rate if the card currency is not dollars.
+          If you chose **Payment method → Banking card in dollars — non residents Switzerland) — US dollars**, enter your bank card information and complete the payment. The money will be converted at your bank's rate if the card currency is not dollars.
 
           {% note info %}
 
@@ -207,7 +203,7 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
       1. Track the money transfer:
 
-        - On the Toloka [Profile]({{ profile }}) page (the {% if locale == "en-com" %}**Transactions history**{% endif %} tab).
+        - On the Toloka [Profile]({{ profile }}) page (the **Transactions history** tab).
 
         - In Yandex.Balance (the [Invoices]({{ invoices }}) page).
 

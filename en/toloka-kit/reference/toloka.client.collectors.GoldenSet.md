@@ -1,5 +1,5 @@
 # GoldenSet
-`toloka.client.collectors.GoldenSet` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/collectors.py#L289)
+`toloka.client.collectors.GoldenSet` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/collectors.py#L303)
 
 ```python
 GoldenSet(

@@ -51,8 +51,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-          
-
           ```html
           {{img src=image width="50%" height="400px"}}
           <div class='answers'>
@@ -66,8 +64,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           </div>
           </div>
           ```
-
-          
 
       1. To check if the link and image submitted by the Toloker are valid, go to line 5 in the **JS** block and replace the following code:
 
@@ -174,20 +170,15 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. **Instructions:**
 
-        
-
         ```plaintext
         Look at what the person is wearing in the picture.
         Then go to the ASOS online store and search for the same pair of shoes.
         It should be similar in category, style, color, and length.
         ```
 
-        
-
     1. Save the changes.
 
 1. To go back to the **Projects** page, click **Finish editing**.
-
 
 Learn more about working with the project in the [Project](project.md) section.
 

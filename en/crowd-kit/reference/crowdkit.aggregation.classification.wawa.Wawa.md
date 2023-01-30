@@ -1,5 +1,5 @@
 # Wawa
-`crowdkit.aggregation.classification.wawa.Wawa` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/wawa.py#L14)
+`crowdkit.aggregation.classification.wawa.Wawa` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/classification/wawa.py#L14)
 
 ```python
 Wawa(self)

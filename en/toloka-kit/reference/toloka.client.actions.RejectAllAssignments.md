@@ -1,11 +1,11 @@
 # RejectAllAssignments
-`toloka.client.actions.RejectAllAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/actions.py#L183)
+`toloka.client.actions.RejectAllAssignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/actions.py#L183)
 
 ```python
 RejectAllAssignments(self, *, public_comment: Optional[str] = None)
 ```
 
-Rejects all Toloker's assignments in the pool. This action is available for pools with manual review.
+Rejects all Toloker's assignments in the pool. This action is available for pools with non-automatic acceptance.
 
 ## Parameters Description
 

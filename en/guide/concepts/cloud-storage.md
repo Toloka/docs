@@ -48,7 +48,7 @@ Toloka is not responsible for such changes or for placing them in this section w
 Photo hosting | Maximum image size | Registration | Trial period
 ----- | ----- | ----- | -----
 [imgbb]({{ imgbb }}) | 32 MB | No | —
-{% if locale == "en-com" %}[imgur]({{ imgur }}) | 20 MB | Yes | —{% endif %}
+[imgur]({{ imgur }}) | 20 MB | Yes | —
 [pics.st]({{ pics-st }}) | 2 MB | No | —
 [postimages]({{ postimages }}) | 24 MB | No | —
 [ImageShack]({{ imageshack }}) | 25 MB | Yes | 30 days
@@ -65,7 +65,7 @@ For example, [imgbb]({{ imgbb }}):
 
 1. Click **Upload**.
 
-1. In {% if locale == "en-com" %}**Embed codes**{% endif %} choose {% if locale == "en-com" %}**HTML full linked**{% endif %}.
+1. In **Embed codes** choose **HTML full linked**.
 
 1. Copy the link, which is indicated in quotation marks after `src=` (for example, `https://i.ibb.co/HhK1B5J/image.png`), and add it to the file with tasks.
 

@@ -1,5 +1,5 @@
 # _Worker
-`toloka.streaming.pipeline._Worker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/pipeline.py#L28)
+`toloka.streaming.pipeline._Worker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/pipeline.py#L28)
 
 ```python
 _Worker(

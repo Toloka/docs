@@ -1,5 +1,5 @@
 # default_calc_scores
-`toloka.autoquality.scoring.default_calc_scores` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/autoquality/scoring.py#L18)
+`toloka.autoquality.scoring.default_calc_scores` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/autoquality/scoring.py#L18)
 
 ```python
 default_calc_scores(

@@ -1,5 +1,5 @@
 # Cooldown
-`toloka.util.async_utils.Cooldown` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/util/async_utils.py#L192)
+`toloka.util.async_utils.Cooldown` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/util/async_utils.py#L192)
 
 ```python
 Cooldown(self, cooldown_time)

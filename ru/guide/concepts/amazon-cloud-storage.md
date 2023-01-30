@@ -4,7 +4,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}Если вы хотите разместить небольшое количество картинок, вы можете воспользоваться любым фотохостингом, например: [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}) или [imgur]({{ imgur }}). {% elsif locale == "ru-ru" %}Если вы хотите разместить небольшое количество картинок, вы можете воспользоваться любым фотохостингом, например: [imgbb]({{ imgbb }}) или [ImageShack]({{ imageshack }}). {% endif %} Так вы сможете быстро получить прямые ссылки на ваши картинки, которые можно добавить в файл с заданиями или в инструкцию.
+Если вы хотите разместить небольшое количество картинок, вы можете воспользоваться любым фотохостингом, например: [imgbb]({{ imgbb }}) или [ImageShack]({{ imageshack }}). Так вы сможете быстро получить прямые ссылки на ваши картинки, которые можно добавить в файл с заданиями или в инструкцию.
 
 {% endnote %}
 
@@ -109,35 +109,15 @@
 
     Ссылка выглядит так:
 
-    {% if locale == "ru-ru" %}
-
     ```plaintext
     https://<имя-бакета>.s3.<код-региона>.amazonaws.com/<имя-файла>
     ```
 
-    {% elsif locale == "en-com" %}
-
-    ```plaintext
-    https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
-    ```
-
-    {% endif %}
-
     Ссылка в папке выглядит так:
-
-    {% if locale == "ru-ru" %}
 
     ```plaintext
     https://<имя-бакета>.s3.<код-региона>.amazonaws.com/<путь-к-файлу>/<имя-файла>
     ```
-
-    {% elsif locale == "en-com" %}
-
-    ```plaintext
-    https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
-    ```
-
-    {% endif %}
 
     {% note info %}
 

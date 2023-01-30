@@ -4,7 +4,6 @@
 
 В этом разделе вы узнаете, как добавить обычную ссылку или запрос в поисковой системе и убедиться, что исполнитель по ним прошел. Ссылки можно открывать при наступлении события, объединять в группы и устанавливать им горячие клавиши для более быстрой работы.
 
-
 ## Вставить обычную ссылку {#view.link}
 
 Если вы хотите вставить простую ссылку без дополнительного оформления, то используйте компонент [view.link](../reference/view.link.md). Ссылка будет отображаться подчеркнутым текстом, а после перехода по ней поменяет свой цвет.
@@ -18,7 +17,6 @@
 ```
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/nPNmYQvJ3tvvKZ)
-
 
 ## Создать поисковой запрос {#helper.search-query}
 
@@ -42,20 +40,17 @@
 
 {% endnote %}
 
-
 [![](../_images/buttons/view-example.svg)](https://nda.ya.ru/t/pArYIypP3XBTUX)
 
 Если нужной вам поисковой системы нет в свойстве `engine`, то оставьте это поле пустым и введите запрос в `query` с помощью компонента [helper.join](../reference/helper.join.md).
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/DRc-G1I63tvvWr)
 
-
 ## Объединить ссылки в группу {#view.link-group}
 
 Чтобы объединить несколько ссылок в группу, используйте компонент [view.link-group](../reference/view.link-group.md). Ссылки будут отображаться подчеркнутым текстом. Одну из ссылок можно выделить рамкой и убрать подчеркивание: для этой ссылки в свойстве `theme` установите значение `primary`.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/UceFmKl63tvvnN)
-
 
 ## Создать ссылку на кнопке {#action.open-link}
 
@@ -78,7 +73,6 @@
 
 {% endnote %}
 
-
 При добавлении нескольких кнопок можно поменять их расположение с вертикального на горизонтальное в свойстве `direction`.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Tb1GloPf3tvvwQ)
@@ -87,7 +81,6 @@
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/eyJllFAE3tvw7g)
 
-
 ## Проверить переход по ссылке {#condition.link-opened}
 
 Чтобы убедиться, что исполнитель переходил по ссылке, используйте компонент [condition.link-opened](../reference/condition.link-opened.md), прописав его в свойстве `validation`.
@@ -95,7 +88,6 @@
 Помните, что условие сработает, только если исполнитель перейдет из интерфейса. Оно не сработает при открытии ссылки через адресную строку.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/lIjDN7m73tvwFx)
-
 
 ## Добавить горячие клавиши {#hotkeys}
 
@@ -117,13 +109,11 @@
 
 Подробнее о работе горячих клавиш читайте в разделе [Настройте горячие клавиши](../best-practices/hotkeys.md).
 
-
 ## Открыть ссылку по событию {#plugin.trigger}
 
 Вы можете настроить открытие ссылки при наступлении события. Например, чтобы в зависимости от нажатого переключателя исполнителю открывался определенный поисковый запрос. Для этого используйте плагин [plugin.trigger](../reference/plugin.trigger.md).
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/bIaJn78v3tvwbk)
-
 
 ## Переиспользовать код {#vars}
 
@@ -132,6 +122,5 @@
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/fgLPLTEA3tvwse)
 
 Подробнее о переиспользовании читайте в разделе [Переиспользуйте код](../best-practices/reuse.md).
-
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

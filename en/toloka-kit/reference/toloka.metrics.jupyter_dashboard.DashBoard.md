@@ -1,5 +1,5 @@
 # DashBoard
-`toloka.metrics.jupyter_dashboard.DashBoard` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/jupyter_dashboard.py#L184)
+`toloka.metrics.jupyter_dashboard.DashBoard` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/jupyter_dashboard.py#L184)
 
 ```python
 DashBoard(

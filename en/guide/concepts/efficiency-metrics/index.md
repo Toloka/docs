@@ -1,11 +1,5 @@
 # Efficiency indicators
 
-{% note warning "Important" %}
-
-Efficiency indicators are available to a limited number of customers. Fill out this [form](https://toloka.ai/request-early-access/) if you want to get access to this feature.
-
-{% endnote %}
-
 Toloka has a set of indicators using which you can estimate if your project is configured correctly. You can make decisions faster based on the efficiency indicators. For example, you can find out which pool settings you can modify to boost quality and labeling speed.
 
 You can find this information in the **Efficiency** tab on the pool page:

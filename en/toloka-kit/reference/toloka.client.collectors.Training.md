@@ -1,5 +1,5 @@
 # Training
-`toloka.client.collectors.Training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/collectors.py#L475)
+`toloka.client.collectors.Training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/collectors.py#L489)
 
 ```python
 Training(self, *, uuid: Optional[UUID] = None)

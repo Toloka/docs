@@ -1,5 +1,5 @@
 # universal_decorator
-`toloka.util._codegen.universal_decorator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/util/_codegen.py#L60)
+`toloka.util._codegen.universal_decorator` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/util/_codegen.py#L60)
 
 ```python
 universal_decorator(*, has_parameters)

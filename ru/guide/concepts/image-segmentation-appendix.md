@@ -32,8 +32,6 @@
 
 Блок **HTML:**
 
-{% if locale == "ru-ru" %}
-
 ```html
 {{img src=image width="100%" height="400px"}}
 <div>Есть ли на картинке <b>дорожный знак</b>?<div>
@@ -41,17 +39,6 @@
 {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
 {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}</div>
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-{{img src=image width="100%" height="400px"}} <div>Is there a  <b>traffic sign</b> in the picture?<div>
-<div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-{{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
-```
-
-{% endif %}
 
 Блок **JavaScript:**
 
@@ -197,24 +184,11 @@ height: max-content;
 
 Блок **HTML:**
 
-{% if locale == "ru-ru" %}
-
 ```html
 {{field type="image-annotation" name="object" annotations=selection}}
  {{field type="radio" name="result" value="OK" label="Верно" hotkey="1"}}
   {{field type="radio" name="result" value="BAD" label="Неверно" hotkey="2"}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-{{img src=image width="100%" height="400px"}} <div>Is there a  <b>traffic sign</b> in the picture?<div>
-<div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-{{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
-```
-
-{% endif %}
 
 Блок **JavaScript:**
 

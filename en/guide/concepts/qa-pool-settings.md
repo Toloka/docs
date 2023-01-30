@@ -12,25 +12,25 @@ To set up quality control:
 
 1. Go to the pool editing page.
 
-1. If you already have a pool with the appropriate quality control settings, you can copy it along with the audience settings. To do this, go to {% if locale == "en-com" %}**Tolokers filter**{% endif %} and click {% if locale == "en-com" %}**Copy settings from...**{% endif %} and then {% if locale == "en-com" %}**Add Quality Control Rule**{% endif %}.
+1. If you already have a pool with the appropriate quality control settings, you can copy it along with the audience settings. To do this, go to **Tolokers filter** and click **Copy settings from...** and then **Add Quality Control Rule**.
 
-1. Under {% if locale == "en-com" %}**Quality Control**{% endif %}, choose the rules you want to use.
+1. Under **Quality Control**, choose the rules you want to use.
 
     If you aren't sure which quality control rules you need, use a preset with default settings.
 
 1. Make settings for the rules you added. For more information, see the [List of rules](#id_z4l_prs_2lb).
 
-1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+1. Click **Save**.
 
 {% note info %}
 
 If you already have a pool with the quality control settings you need, you can copy it along with the audience settings:
 
-1. In the {% if locale == "en-com" %}**Audience**{% endif %} block, click the {% if locale == "en-com" %}**Copy from another pool**{% endif %} button.
+1. In the **Audience** block, click the **Copy from another pool** button.
 
 1. Select a project and pool.
 
-1. Click the {% if locale == "en-com" %}**Copy audience filters and quality control settings**{% endif %} button.
+1. Click the **Copy audience filters and quality control settings** button.
 
 {% endnote %}
 

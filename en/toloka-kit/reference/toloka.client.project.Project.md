@@ -1,5 +1,5 @@
 # Project
-`toloka.client.project.Project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/__init__.py#L63)
+`toloka.client.project.Project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/__init__.py#L63)
 
 ```python
 Project(
@@ -34,8 +34,7 @@ In a project, you set properties for tasks and responses:
 * Input data parameters. These parameters describe the objects to display in a task, such as images or text.
 * Output data parameters. These parameters describe Tolokers' responses. They are used for validating the
     responses entered: the data type (integer, string, etc.), range of values, string length, and so on.
-* Task interface. For more information about how to define the appearance of tasks, see the document
-    Toloka. requester's guide.
+* Task interface. To learn how to define the appearance of tasks, see [Task interface](https://toloka.ai/en/docs/en/guide/concepts/spec).
 
 Pools and training pools are related to a project.
 

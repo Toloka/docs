@@ -1,5 +1,5 @@
 # bind_client
-`toloka.metrics.metrics.bind_client` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/metrics.py#L35)
+`toloka.metrics.metrics.bind_client` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/metrics.py#L35)
 
 ```python
 bind_client(metrics: List[BaseMetric], toloka_client: Union[TolokaClient, AsyncTolokaClient])

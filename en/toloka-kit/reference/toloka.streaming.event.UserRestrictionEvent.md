@@ -1,5 +1,5 @@
 # UserRestrictionEvent
-`toloka.streaming.event.UserRestrictionEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/event.py#L95)
+`toloka.streaming.event.UserRestrictionEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/event.py#L95)
 
 ```python
 UserRestrictionEvent(

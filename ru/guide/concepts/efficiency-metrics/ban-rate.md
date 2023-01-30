@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Блокировки{% endif %}{% if locale == "en-com" %}Bans{% endif %}
+# Блокировки
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

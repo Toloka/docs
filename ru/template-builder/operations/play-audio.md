@@ -6,8 +6,6 @@
 
 {% include [toloka-tb-source-add-media](../_includes/toloka-tb-source/id-toloka-tb-source/add-media.md) %}
 
-
-
 ## Добавить аудиоплеер в интерфейс {#insert-to-interface}
 
 Чтобы вставить звуковой файл в интерфейс задания, добавьте в шаблон компонент [view.audio](../reference/view.audio.md). В свойстве `url` укажите прямую ссылку на файл (рекомендуем использовать формат MP3):
@@ -23,7 +21,6 @@
 Чтобы аудио автоматически воспроизводилось повторно, в свойстве `loop` укажите `true`.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/XEZ8x7vX3tvMFk)
-
 
 ## Убедиться, что исполнитель прослушал аудио {#validate-listened}
 
@@ -79,7 +76,6 @@
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/uDWbPPCP3ttFAM)
 
-
 ## Создать задание, в котором нужно превратить аудио в текст {#transform-to-text}
 
 Чтобы создать шаблон для задания по транскрибации аудио, мы использовали следующие компоненты:
@@ -89,6 +85,5 @@
 - [plugin.toloka](../reference/plugin.toloka.md) — чтобы настроить внешний вид задания.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/OW1mnada3tvMrT)
-
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

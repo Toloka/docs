@@ -1,5 +1,5 @@
 # AsyncGenAdapter
-`toloka.util.async_utils.AsyncGenAdapter` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/util/async_utils.py#L358)
+`toloka.util.async_utils.AsyncGenAdapter` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/util/async_utils.py#L358)
 
 ```python
 AsyncGenAdapter(self, gen: AsyncGenerator[TypeVar('YieldType'), TypeVar('SendType')])

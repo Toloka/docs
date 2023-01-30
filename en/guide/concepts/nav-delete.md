@@ -8,11 +8,11 @@ You can remove a skill only manually. It can't be done using quality control rul
 
     {% include [select-tolokers](../_includes/select-tolokers.md) %}
 
-1. Click {% if locale == "en-com" %}**-Skill**{% endif %}.
+1. Click **-Skill**.
 
 1. Select a skill.
 
-1. Click {% if locale == "en-com" %}**Delete**{% endif %}.
+1. Click **Delete**.
 
 ## See also {#see-also}
 

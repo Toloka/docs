@@ -16,11 +16,9 @@ To insert an image passed in the input data, use the `data.input` component in t
 
 To place two images side-by-side, use the [layout.side-by-side](../reference/layout.side-by-side.md) component.
 
-
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ZdGClef13ttEz8)
 
  For a detailed analysis of the example, see [Quick start](../quickstart.md).
-
 
 ## Array of images {#array}
 
@@ -66,7 +64,6 @@ To display multiple images, you need a component that you can add your images to
 This is relevant for creating an interface in Toloka for one task that uses multiple images. Consider whether you need multiple images in the same task. If not, the [view.image](../reference/view.image.md) component is enough for your task.
 
 {% endnote %}
-
 
 ### Many images or unknown number of images {#unknown-size}
 

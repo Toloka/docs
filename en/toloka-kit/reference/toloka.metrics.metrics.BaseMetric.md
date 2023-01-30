@@ -1,5 +1,5 @@
 # BaseMetric
-`toloka.metrics.metrics.BaseMetric` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/metrics.py#L68)
+`toloka.metrics.metrics.BaseMetric` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/metrics.py#L68)
 
 ```python
 BaseMetric(

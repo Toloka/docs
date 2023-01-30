@@ -64,28 +64,28 @@ Don't make changes to the project or pool while tasks are being edited. Markup w
 
 1. Make sure that the task instructions are correct.
 
-1. Click {% if locale == "en-com" %}**Edit**{% endif %} in the {% if locale == "en-com" %}**Pool tasks**{% endif %} section.
+1. Click **Edit** in the **Pool tasks** section.
 
-1. Go to the {% if locale == "en-com" %}**General**{% endif %} tab.
+1. Go to the **General** tab.
 
-1. In the {% if locale == "en-com" %}**We can label control tasks for you**{% endif %} section, click {% if locale == "en-com" %}**Try it for free**{% endif %}.
+1. In the **We can label control tasks for you** section, click **Try it for free**.
 
-1. Click {% if locale == "en-com" %}**Order**{% endif %}. Your pool data will be sent for markup to expert Tolokers. For better quality, we use algorithms that select tasks that can be used as control tasks.
+1. Click **Order**. Your pool data will be sent for markup to expert Tolokers. For better quality, we use algorithms that select tasks that can be used as control tasks.
 
 1. Wait until the markup is completed. This process usually takes about 6 hours. The estimated time of markup completion is indicated in the **Edit tasks** section.
 
-1. After the markup is completed, the tasks are uploaded back to the pool. In the {% if locale == "en-com" %}**Edit tasks**{% endif %} section on the {% if locale == "en-com" %}**Control tasks**{% endif %} tab, you'll see the following message: “Control tasks are ready”. You can [edit](task-markup-by-yourself.md#task-edit) and [delete](task-markup-by-yourself.md#delete-task) the control tasks you received.
+1. After the markup is completed, the tasks are uploaded back to the pool. In the **Edit tasks** section on the **Control tasks** tab, you'll see the following message: “Control tasks are ready”. You can [edit](task-markup-by-yourself.md#task-edit) and [delete](task-markup-by-yourself.md#delete-task) the control tasks you received.
 
 {% note info %}
 
-If the markup process failed for some reason, contact support. Go to the tab for control tasks or to the pool page and click {% if locale == "en-com" %}**Contact us**{% endif %}. After the problem is solved, you'll be able to request control task markup again.
+If the markup process failed for some reason, contact support. Go to the tab for control tasks or to the pool page and click **Contact us**. After the problem is solved, you'll be able to request control task markup again.
 
 {% endnote %}
 
 ## What's next {#what_next}
 
 - [Add a training pool](train.md).
-- {% if locale == "en-com" %}[Top up your account](refill.md).{% endif %}
+- [Top up your account](refill.md).
 - [Start the pool](pool-run-and-stop.md).
 
 ## See also {#see-also}
@@ -153,7 +153,7 @@ This process usually takes about 6 hours. The estimated time of the markup compl
 
 {% cut "What should I do if the markup process failed?" %}
 
-If the markup process failed for one reason or another, contact support. Go to the tab for control tasks or to the pool page and click {% if locale == "en-com" %}**Contact us**{% endif %}. After the problem is solved, you'll be able to order the markup of control tasks again.
+If the markup process failed for one reason or another, contact support. Go to the tab for control tasks or to the pool page and click **Contact us**. After the problem is solved, you'll be able to order the markup of control tasks again.
 
 {% endcut %}
 

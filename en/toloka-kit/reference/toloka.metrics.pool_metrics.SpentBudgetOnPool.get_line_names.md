@@ -1,5 +1,5 @@
 # get_line_names
-`toloka.metrics.pool_metrics.SpentBudgetOnPool.get_line_names` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/pool_metrics.py#L356)
+`toloka.metrics.pool_metrics.SpentBudgetOnPool.get_line_names` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/pool_metrics.py#L356)
 
 ```python
 get_line_names(self)

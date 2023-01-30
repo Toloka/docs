@@ -124,17 +124,17 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 1. [Create a pool](pool-main.md) and fill in the [parameters](pool_poolparams.md).
 
-1. Set the minimum overlap in the {% if locale == "en-com" %}**Overlap**{% endif %} field.
+1. Set the minimum overlap in the **Overlap** field.
 
-1. In the advanced settings, enable the {% if locale == "en-com" %}**Use dynamic overlap**{% endif %} option.
+1. In the advanced settings, enable the **Use dynamic overlap** option.
 
-1. Set {% if locale == "en-com" %}**Max overlap**{% endif %}.
+1. Set **Max overlap**.
 
-1. Specify {% if locale == "en-com" %}**Confidence of aggregated answer**{% endif %}. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
+1. Specify **Confidence of aggregated answer**. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
 
-1. Choose {% if locale == "en-com" %}**Skill for users' scoring**{% endif %}.
+1. Choose **Skill for users' scoring**.
 
-1. Check {% if locale == "en-com" %}**Output fields for answers agreement**{% endif %}.
+1. Check **Output fields for answers agreement**.
 
 1. Save the pool.
 
@@ -144,7 +144,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 {% note info %}
 
-{% if locale == "en-com" %}**Approximate budget**{% endif %} in the [pool statistics](pool_statistic-pool.md) is calculated based on the minimal overlap.
+**Approximate budget** in the [pool statistics](pool_statistic-pool.md) is calculated based on the minimal overlap.
 
 {% endnote %}
 

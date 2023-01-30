@@ -1,5 +1,5 @@
 # update_pool
-`toloka.async_client.client.AsyncTolokaClient.update_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.update_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/async_client/client.py#L0)
 
 ```python
 async update_pool(
@@ -9,18 +9,18 @@ async update_pool(
 )
 ```
 
-Makes changes to the pool
+Updates all pool parameters in Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**str**|<p>ID of the pool that will be changed.</p>
-`pool`|**[Pool](toloka.client.pool.Pool.md)**|<p>A pool object with all the fields: those that will be updated and those that will not.</p>
+`pool_id`|**str**|<p>The ID of the pool to be updated.</p>
+`pool`|**[Pool](toloka.client.pool.Pool.md)**|<p>The pool with new parameters.</p>
 
 * **Returns:**
 
-  Pool object with all fields.
+  The pool with updated parameters.
 
 * **Return type:**
 
@@ -30,5 +30,7 @@ Makes changes to the pool
 
 
 ```python
-updated_pool = toloka_client.update_pool(pool_id=old_pool_id, pool=new_pool_object)
+updated_pool = toloka_client.get_pool(pool_id='1')
+updated_pool.will_expire = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(days=30)
+toloka_client.update_pool(pool_id=updated_pool.id, pool=updated_pool)
 ```

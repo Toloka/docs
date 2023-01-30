@@ -51,8 +51,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. In the **Task Interface**, delete the template code from the **HTML** block and paste the following code:
 
-          
-
           ```html
           <div class="header">
           <div class="left caption">
@@ -81,8 +79,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           {{field type="radio" name="result" label="Right image is better" value="result_right" hotkey="2"}}
           </div>
           ```
-
-          
 
       1. In the **js** block, edit the code by adding the following lines before `OnRender`.
 
@@ -241,15 +237,11 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. **Instructions:**
 
-        
-
         ```plaintext
         Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
         Rely on your own sense of style, but also remember that the shoes look alike if
         they are the same color, fabric, length, and style.
         ```
-
-        
 
     1. Save the changes.
 
@@ -296,7 +288,7 @@ To create a [pool](../../glossary.md#pool):
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
     1. In **Price per task suite, $**, set the amount of money to pay per task suite done by one Toloker. For example, `0.01`.
-    
+
     1. Enter `10` in the **Overlap** field.
 
 1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}

@@ -32,7 +32,7 @@
 
     - Конструктор шаблонов
 
-      1. Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://ya.cc/t/sucNUJXK3tveWk){% endif %}{% if locale == "en-com" %}[ready-made code](https://ya.cc/t/G4tBYKz63ttEYj){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания.
+      1. Воспользуйтесь [готовым кодом](https://ya.cc/t/sucNUJXK3tveWk) для этого проекта, где уже настроена валидация и внешний вид задания.
 
           Исполнитель не сможет отправить задание, если:
 
@@ -53,8 +53,6 @@
 
       1. В **Интерфейсе задания** удалите шаблонный код из блока **HTML** и вставьте следующий код:
 
-          {% if locale == "ru-ru" %}
-
           ```html
           {{img src=image width="50%" height="400px"}}
           <div class='answers'>
@@ -69,24 +67,6 @@
           </div>
           </div>
           ```
-
-          {% endif %}{% if locale == "en-com" %}
-
-          ```html
-          {{img src=image width="50%" height="400px"}}
-          <div class='answers'>
-          <p>Find similar shoes <b>shoes</b> in the ASOS online store</p>
-          {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
-          <p>Shoes must be similar in color, material, length, and style.</p>
-          <p>Paste the link here</p>
-          {{field width="100%" type="input" name="found_link"}}
-          <p>Upload the image here</p>    <div>
-          {{field width="100%" type="file-img" name="found_image" preview=true}}
-          </div>
-          </div>
-          ```
-
-          {% endif %}
 
       1. Чтобы проверить корректность ссылки и изображения, предоставленных исполнителем, в 5-ой сроке блока **JS** замените следующий код:
 
@@ -171,7 +151,7 @@
 
           Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) **Предпросмотр задания**, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -187,23 +167,13 @@
 
 1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#instructions).
 
-    1. **Текст инструкции:**{% if locale == "ru-ru" %}
+    1. **Текст инструкции:**
 
     ```plaintext
     Посмотрите на одежду, в которую человек одет на фотографии.
     Перейдите в интернет-магазин ASOS и найдите такую же пару обуви.
     Она должна быть похожа по категории, стилю, цвету и длине.
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```plaintext
-    Look at what the person is wearing in the picture.
-    Then go to the ASOS online store and search for the same pair of shoes.
-    It should be similar in category, style, color, and length.
-    ```
-
-    {% endif %}
 
     1. {% include [toloka-requester-source-save](../_includes/toloka-requester-source/id-toloka-requester-source/save.md) %}
 

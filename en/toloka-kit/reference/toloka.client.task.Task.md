@@ -1,5 +1,5 @@
 # Task
-`toloka.client.task.Task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/task.py#L56)
+`toloka.client.task.Task` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/task.py#L57)
 
 ```python
 Task(
@@ -38,7 +38,7 @@ Tasks are grouped into [TaskSuites](toloka.client.task_suite.TaskSuite.md).
 `message_on_unknown_solution`|**Optional\[str\]**|<p>A hint used in training tasks.</p>
 `id`|**Optional\[str\]**|<p>The ID of a task.</p>
 `pool_id`|**Optional\[str\]**|<p>The ID of the pool that the task belongs to.</p>
-`remaining_overlap`|**Optional\[int\]**|<p>The number of times left for this task to be assigned to Tolokers. This parameter is read only.</p>
+`remaining_overlap`|**Optional\[int\]**|<p>The number of times left for this task to be assigned to Tolokers. Read-only field.</p>
 `reserved_for`|**Optional\[List\[str\]\]**|<p>IDs of Tolokers who have access to the task.</p>
 `unavailable_for`|**Optional\[List\[str\]\]**|<p>IDs of Tolokers who don&#x27;t have access to the task.</p>
 `traits_all_of`|**Optional\[List\[str\]\]**|<p>The task can be assigned to Tolokers who have all of the specified traits.</p>

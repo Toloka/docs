@@ -34,41 +34,21 @@
 
 1. Если вы сделали бакет с ограниченным доступом, то для каждого файла надо будет получить свою ссылку по [инструкции]({{ link-for-download }}).
 
-    Выберите файл и нажмите {% if locale == "ru-ru" %}**Получить ссылку** → **Скопировать**{% endif %}{% if locale == "en-com" %}**Get a link → Copy**{% endif %}.
+    Выберите файл и нажмите **Получить ссылку** → **Скопировать**.
 
     {% include [get-files-link-form](../_includes/concepts/amazon-cloud-storage/id-get-files/link-form.md) %}
 
     {% include [get-files-link-without-folder](../_includes/concepts/amazon-cloud-storage/id-get-files/link-without-folder.md) %}
 
-    {% if locale == "ru-ru" %}
-
     ```http
     https://storage.yandexcloud.net/<имя-бакета>/<имя-файла>
     ```
 
-    {% endif %}{% if locale == "en-com" %}
-
-    ```http
-    https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
-    ```
-
-    {% endif %}
-
     {% include [get-files-link-from-folder](../_includes/concepts/amazon-cloud-storage/id-get-files/link-from-folder.md) %}
-
-    {% if locale == "ru-ru" %}
 
     ```http
     https://storage.yandexcloud.net/<имя-бакета>/<путь-к-файлу>/<имя-файла>
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```http
-    https://<bucket-name>.s3.<region-code>>.amazonaws.com/<path-to-file>/<filename>
-    ```
-
-    {% endif %}
 
     {% include [get-files-files-links-create](../_includes/concepts/amazon-cloud-storage/id-get-files/files-links-create.md) %}
 

@@ -42,8 +42,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
-          
-
           ```json
           "label": "What is the cat's mood?",
           "options": [
@@ -57,11 +55,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           },
           ```
 
-          
-
           with the following:
-
-          
 
           ```json
           "label": "Are there shoes in the image?",
@@ -75,8 +69,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           "value": "bad"
           },
           ```
-
-          
 
       1. Click **Show specifications** to see the input and output data fields.
 
@@ -112,8 +104,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
           - Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-          
-
           ```html
           {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
 
@@ -121,8 +111,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
           {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
           {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
           ```
-
-          
 
       1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
 
@@ -150,16 +138,12 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. **Instructions:**
 
-        
-
         ```plaintext
         Look at the picture and determine if there are **shoes** in the picture.
         If there are, click **Yes**.
         If there aren't, click **No**.
         For example, there are shoes in the photo, so the correct answer is **Yes**.
         ```
-
-        
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
 
