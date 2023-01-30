@@ -10,7 +10,7 @@ This indicator shows the percentage of submitted tasks and helps identify issues
 
 ## How to calculate
 
-The indicator is calculated as the ratio between the number of submitted tasks and the total number of taken tasks.
+The indicator is calculated as the ratio between the number of submitted tasks and the total number of picked tasks.
 
 {% cut "Show the formula" %}
 
