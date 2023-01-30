@@ -14,25 +14,41 @@ To edit the pool parameters, click ![](../_images/other/project-edit-b.svg) at t
 
 ## General information {#pool-general-info}
 
-### {% if locale == "en-com" %}**Pool name**{% endif %}
+### Pool type
 
-The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page.
+{% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
-### {% if locale == "en-com" %}**Public description**{% endif %}
+### Pool name
 
-Will be displayed instead of the project description in the task list for Tolokers and [linked training](train.md).
+{% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-### {% if locale == "en-com" %}**Private comment**{% endif %}
+### Pool description
 
-If necessary, you can add a private comment that will only be available to you.
+{% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+{% cut "Alternative way to edit pool information" %}
+
+To edit pool information:
+
+1. Click ![](../_images/other/project-edit-b.svg) near the pool name.
+
+1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
+
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Save**.
+
+{% endcut %}
 
 ## Price {#pool-price-info}
 
-### {% if locale == "en-com" %}**Price per task suite, $**{% endif %}
+### Price per task suite, $
 
 Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the {% if locale == "en-com" %}**Pool type**{% endif %} is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
 
-### Tolokers' interest in the price
+### Toloker interest at this price
 
 Calculated automatically. Shows how the price meets Tolokers' expectations.
 
@@ -152,7 +168,9 @@ You can use this parameter if you specify fixed values for the [input data](../.
 
 You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. [Learn more](dynamic-overlap.md).
 
-## More settings {#pool-additional-settings-info}
+## Optional pool settings {#pool-additional-settings-info}
+
+Click **Show advanced settings** to edit optional pool settings.
 
 ### Priority
 

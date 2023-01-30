@@ -1,4 +1,4 @@
-Specify the pool type in the **Pool type** drop-down list.
+Specify the value in the **Pool type** drop-down list.
 
 {% cut "Pool types" %}
 
@@ -15,3 +15,9 @@ There are different pool types in Toloka:
 - **Other**: If none of the previous options fit.
 
 {% endcut %}
+
+{% note info %}
+
+If the price per task suite is zero, you must select the pool type.
+
+{% endnote %}
