@@ -1,5 +1,5 @@
 # predict
-`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/gold_majority_vote.py#L90)
+`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/classification/gold_majority_vote.py#L90)
 
 ```python
 predict(self, data: DataFrame)

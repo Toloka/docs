@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.base.BaseEmbeddingsAggregator.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/base/__init__.py#L104)
+`crowdkit.aggregation.base.BaseEmbeddingsAggregator.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/base/__init__.py#L104)
 
 ```python
 fit_predict(self, data: DataFrame)

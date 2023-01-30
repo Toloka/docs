@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/image_segmentation/segmentation_em.py#L145)
+`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/image_segmentation/segmentation_em.py#L145)
 
 ```python
 fit(self, data: DataFrame)
