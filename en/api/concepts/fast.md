@@ -134,7 +134,7 @@ Criteria for the quality control rule:
 - `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
 - `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
-|| **configs.collector_config. parameters.fast_submit_ threshold_seconds** | **integer \| required**
+|| **configs.collector_config. parameters.fast_submit_threshold_seconds** | **integer \| required**
 
 The minimum acceptable response time, in seconds. ||
 || **configs.collector_config. parameters.history_size** | **integer \| required**

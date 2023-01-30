@@ -240,13 +240,13 @@
 ||**defaults** | **object \| обязательный**
 
 Настройки, которые применяются по умолчанию при загрузке новых страниц заданий в пул.||
-||**defaults.default_overlap_ for_new_task_suites** | **integer \| обязательный**
+||**defaults.default_overlap_for_new_task_suites** | **integer \| обязательный**
 
 Перекрытие для страниц заданий, которые загружаются в пул (используется, если при загрузке указан параметр `allow_defaults=true`). ||
-||**defaults.default_overlap_ for_new_tasks** | **integer**
+||**defaults.default_overlap_for_new_tasks** | **integer**
 
 Перекрытие для заданий, которые загружаются в пул (используется, если при загрузке указан параметр `allow_defaults=true`).||
-||**assignment_max_duration_ seconds** | **integer \| обязательный**
+||**assignment_max_duration_seconds** | **integer \| обязательный**
 
 Время на выполнение страницы заданий в секундах. Невыполненные задания перераспределяются другим исполнителям.
 
@@ -278,7 +278,7 @@
 Обязателен, если используется динамическое ценообразование.
 
 Верхняя граница интервала. Может принимать значения от 0 до 100. По умолчанию `100`.||
-||**dynamic_pricing_config. intervals[].reward_per_ assignment** | **float \| обязательный при условии**
+||**dynamic_pricing_config. intervals[].reward_per_assignment** | **float \| обязательный при условии**
 
 Обязателен, если используется динамическое ценообразование.
 
@@ -486,7 +486,7 @@
 Обязателен, если используется «умное смешивание».
 
 Количество обучающих заданий на странице.||
-||**mixer_config.golden_task_ distribution_function.scope** | **string \| обязательный при условии**
+||**mixer_config.golden_task_distribution_function.scope** | **string \| обязательный при условии**
 
 Обязателен, если используется выдача контрольных заданий с неравномерной частотой.
 
@@ -494,37 +494,37 @@
 
 - `POOL` — учитывать задания, выполненные в пуле.
 - `PROJECT` — учитывать задания, выполненные в проекте.||
-||**mixer_config.golden_task_ distribution_function. distribution** | **string \| обязательный при условии**
+||**mixer_config.golden_task_distribution_function. distribution** | **string \| обязательный при условии**
 
 Обязателен, если используется выдача контрольных заданий с неравномерной частотой.
 
 Распределение контрольных заданий внутри интервала. У параметра одно возможное значение — `UNIFORM`.||
-||**mixer_config.golden_task_ distribution_function. window_days** | **integer \| обязательный при условии**
+||**mixer_config.golden_task_distribution_function. window_days** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача контрольных заданий с неравномерной частотой.
 
 Период, за который нужно подсчитывать выполненные задания (количество дней).||
-||**mixer_config.golden_task_ distribution_function. intervals[]** | **array of objects \| обязательный при условии**
+||**mixer_config.golden_task_distribution_function. intervals[]** | **array of objects \| обязательный при условии**
 
 Обязателен, если используется выдача контрольных заданий с неравномерной частотой.
 
 Границы интервалов и количество контрольных заданий в интервале.||
-||**mixer_config.golden_task_ distribution_function. intervals[].from** | **integer \| обязательный при условии**
+||**mixer_config.golden_task_distribution_function. intervals[].from** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача контрольных заданий с неравномерной частотой.
 
 Начало интервала (номер задания, выполненного исполнителем в проекте или пуле).||
-||**mixer_config.golden_task_ distribution_function. intervals[].to** | **integer \| обязательный при условии**
+||**mixer_config.golden_task_distribution_function. intervals[].to** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача контрольных заданий с неравномерной частотой.
 
 Конец интервала (номер задания, выполненного исполнителем в проекте или пуле).||
-||**mixer_config.golden_task_ distribution_function. intervals[].frequency** | **integer \| обязательный при условии**
+||**mixer_config.golden_task_distribution_function. intervals[].frequency** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача контрольных заданий с неравномерной частотой.
 
 Частота выдачи контрольных заданий в интервале. Первое задание в интервале контрольное. Например, при значении `frequency: 3` задания 1,4,7 и т. д. будут контрольными.||
-||**mixer_config.training_task_ distribution_function.scope** | **string \| обязательный при условии**
+||**mixer_config.training_task_distribution_function.scope** | **string \| обязательный при условии**
 
 Обязателен, если используется выдача обучающих заданий с неравномерной частотой.
 
@@ -532,34 +532,34 @@
 
 - `POOL` — учитывать задания, выполненные в пуле.
 - `PROJECT` — учитывать задания, выполненные в проекте.||
-||**mixer_config.training_task_ distribution_function. distribution** | **string \| обязательный при условии**
+||**mixer_config.training_task_distribution_function. distribution** | **string \| обязательный при условии**
 
 Обязателен, если используется выдача обучающих заданий с неравномерной частотой.
 
 Распределение обучающих заданий внутри интервала. У параметра одно возможное значение — `UNIFORM`.||
-||**mixer_config.training_task_ distribution_function. window_days** | **integer \| обязательный при условии**
+||**mixer_config.training_task_distribution_function. window_days** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача обучающих заданий с неравномерной частотой.
 
 Период, за который нужно подсчитывать выполненные задания (количество дней).||
-||**mixer_config.training_task_ distribution_function. intervals[]** | **array of objects \| обязательный при условии**
+||**mixer_config.training_task_distribution_function. intervals[]** | **array of objects \| обязательный при условии**
 
 Обязателен, если используется выдача обучающих заданий с неравномерной частотой.
 
 Границы интервалов и количество контрольных заданий в интервале.||
-||**mixer_config.training_task_ distribution_function. intervals[].from** | **integer \| обязательный при условии**
+||**mixer_config.training_task_distribution_function. intervals[].from** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача обучающих заданий с неравномерной частотой
 
 Начало интервала (номер задания, выполненного исполнителем в проекте или пуле).
 
 Да, если используется выдача обучающих заданий с неравномерной частотой||
-||**mixer_config.training_task_ distribution_function. intervals[].to** | **integer \| обязательный при условии**
+||**mixer_config.training_task_distribution_function. intervals[].to** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача обучающих заданий с неравномерной частотой.
 
 Конец интервала (номер задания, выполненного исполнителем в проекте или пуле).||
-||**mixer_config.training_task_ distribution_function. intervals[].frequency** | **integer \| обязательный при условии**
+||**mixer_config.training_task_distribution_function. intervals[].frequency** | **integer \| обязательный при условии**
 
 Обязателен, если используется выдача обучающих заданий с неравномерной частотой.
 
@@ -584,7 +584,7 @@
 ||**auto_accept_period_day** | **integer**
 
 Время (количество дней) проверки задания заказчиком. Если заказчик не примет или не отклонит задание за данный срок, то решение будет принято автоматически. Может принимать значение от 1 до 21.||
-||**auto_close_after_complete_ delay_seconds** | **integer**
+||**auto_close_after_complete_delay_seconds** | **integer**
 
 Время ожидания (в секундах) перед автоматическим закрытием пула, после того как все задания выполнены. Минимум — 0, максимум — 259 200 секунд (трое суток). По умолчанию значение 0.
 
@@ -595,7 +595,7 @@
 - в пуле включено динамическое перекрытие (`dynamic_overlap_config`).||
 ||**assignments_issuing_config** | **object**
 Настройки выдачи заданий в пуле.||
-||**assignments_issuing_config. issue_task_suites_in_ creation_order** | **boolean**
+||**assignments_issuing_config. issue_task_suites_in_creation_order** | **boolean**
 
 Для пулов, которые не используют «умное смешивание» .
 
@@ -690,12 +690,12 @@
 По умолчанию значение `true`.
 
 Параметр распространяется только на основные задания. Количество контрольных и обучающих заданий на последней странице должно быть полным (`mixer_config.golden_tasks_count`, `mixer_config.training_tasks_count`).||
-||**mixer_config.force_last_ assignment_ delay_seconds** | **integer**
+||**mixer_config.force_last_assignment_delay_seconds** | **integer**
 
 Время ожидания (в секундах) с момента добавления задания или увеличения перекрытия до выдачи последней страницы заданий в пуле. Минимум — 0, максимум — 86 400 секунд (одни сутки).
 
 Параметр можно использовать, если в пуле `force_last_assignment: true`.||
-||**mixer_config.mix_tasks_ in_creation_ order** | **boolean**
+||**mixer_config.mix_tasks_in_creation_order** | **boolean**
 
 Порядок, в котором задания включаются в страницы:
 
@@ -712,7 +712,7 @@
 - `false` — порядок, в котором задания были загружены.
 
 По умолчанию значение `true`.||
-||**mixer_config.golden_task_ distribution_function** | **object**
+||**mixer_config.golden_task_distribution_function** | **object**
 
 Выдача контрольных заданий с неравномерной частотой. Позволяет изменять частоту проверки по мере выполнения заданий исполнителем.
 
@@ -723,7 +723,7 @@
 #### Пример:
 
 На первой странице заданий (интервал от 1 до 25) каждое пятое задание будет контрольным, на последующих страницах — каждое 25-е задание.||
-||**mixer_config.training_task_ distribution_function** | **object**
+||**mixer_config.training_task_distribution_function** | **object**
 
 Выдача обучающих заданий с неравномерной частотой. Позволяет менять частоту обучающих заданий по мере выполнения заданий исполнителем.
 
