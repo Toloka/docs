@@ -10,6 +10,8 @@ This indicator shows the percentage of submitted tasks and helps identify issues
 
 ## How to calculate
 
+The indicator is calculated as the ratio between the number of submitted tasks and the total number of taken tasks.
+
 {% cut "Show the formula" %}
 
 $P_{subm} = \frac{T_{subm}+T_{accept}+T_{reject}}{T_{subm}+T_{accept}+T_{reject}+T_{expire}+T_{skip}}\times100$
@@ -29,8 +31,6 @@ where:
 - $T_{skip}$ is the number of skipped tasks.
 
 {% endcut %}
-
-This formula shows the ratio between the number of submitted tasks and the total number of accepted tasks.
 
 ## How to estimate
 
