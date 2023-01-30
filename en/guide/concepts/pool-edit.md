@@ -74,9 +74,9 @@ Calculated automatically.
 
 ### Adult content
 
-Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only assigned to Tolokers who have agreed to complete these types of tasks.
+Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
-If you aren't sure whether the tasks have this kind of content, select the **My tasks may contain shocking or pornographic content** option.
+If you aren't sure whether the tasks have such content, enable the **My tasks may contain shocking or pornographic content** option.
 
 ### Filters and skills
 
