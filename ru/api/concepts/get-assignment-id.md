@@ -107,7 +107,7 @@
 ||**tasks[]** | **array of objects**
 
 [Данные заданий](task-suite.md).||
-||**first_declined_ solution_attempt[]** | **array of objects**
+||**first_declined_solution_attempt[]** | **array of objects**
 
 Для обучающих заданий. Первоначальные ответы исполнителя в обучающем задании (только если эти ответы были неправильными). Если исполнитель ответил правильно с первой попытки, массив `first_declined_solution_attempt` отсутствует.
 

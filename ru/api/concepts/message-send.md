@@ -274,17 +274,17 @@
 ||**compose_details** | **object**
 
 Для сообщений, отправленных вами: детали POST-запроса для создания сообщения.||
-||**compose_details.recipients_ select_type** | **string**
+||**compose_details.recipients_select_type** | **string**
 
 Способ указания адресатов:
 
 - `DIRECT` — указать идентификаторы исполнителей.
 - `FILTER` — отобрать исполнителей с помощью [фильтра](filters.md).
 - `ALL` — отправить сообщение всем исполнителям, которые хотя бы раз пытались выполнять ваши задания.||
-||**compose_details.recipients_ ids** | **object**
+||**compose_details.recipients_ids** | **object**
 
 Список идентификаторов исполнителей, которым будет отправлено сообщение.||
-||**compose_details.recipients_ filter** | **object**
+||**compose_details.recipients_filter** | **object**
 
 [Фильтр](filters.md) для отбора адресатов.||
 ||**answerable** | **boolean**
