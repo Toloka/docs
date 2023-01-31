@@ -1,4 +1,4 @@
-Specify the value in the **Pool type** drop-down list.
+Select the value in the **Pool type** drop-down list.
 
 {% cut "Pool types" %}
 
