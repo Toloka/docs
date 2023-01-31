@@ -8,7 +8,7 @@ You can start a [pool](../../glossary.md#pool) if:
 
 To start the pool, click ![](../_images/other/b-start-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-play.svg) in the list of pools on the [project](../../glossary.md#project) page.
 
-A started pool has the status “Open”. When all pool tasks are completed, the pool automatically switches to the “Closed” status.
+A started pool has the **Labeling** status. When all pool tasks are completed, the pool automatically switches to the **Labeled** status.
 
 To stop assigning the pool tasks before all of them are completed, click ![](../_images/other/b-pause-pool.svg) on the pool page or ![](../_images/tutorials/content-moderation/pool-action-pause.svg) in the list of pools on the project page.
 
