@@ -1,6 +1,6 @@
 # Editing a pool
 
-You can edit a pool with the “Open” or “Closed” status. While editing, an open pool switches to the “CLOSED_FOR_UPDATE” status. For example, this way you can change the payout amount in a running pool.
+You can edit a pool which don't have the **Archived** status. While editing, an open pool switches to the “CLOSED_FOR_UPDATE” status. For example, this way you can change the payout amount in a running pool.
 
 {% note info %}
 
