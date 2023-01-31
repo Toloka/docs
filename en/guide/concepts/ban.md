@@ -152,8 +152,6 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-{% cut "Report suspicious Tolokers" %}
+[Report suspicious Tolokers](https://toloka.ai/en/docs/guide/troubleshooting/support#contact-toloka-customer-care)
 
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10035353.388b5c1d02f16762f4a79b515beaa9740148362a/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
+{% include [contact-support](../_includes/contact-support.md) %}

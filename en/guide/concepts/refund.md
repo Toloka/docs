@@ -22,13 +22,7 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Individual
 
-  1. Fill in the form fields:
-
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+  1. {% include [form-refund](../_includes/form-refund.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -40,13 +34,7 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Legal entity
 
-  1. Fill in the form fields:
-
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+  1. {% include [form-refund](../_includes/form-refund.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -70,13 +58,7 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Individual
 
-  1. Fill in the form fields:
-
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+  1. {% include [form-refund](../_includes/form-refund.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -90,13 +72,7 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Legal entity
 
-  1. Fill in the form fields:
-
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+  1. {% include [form-refund](../_includes/form-refund.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 

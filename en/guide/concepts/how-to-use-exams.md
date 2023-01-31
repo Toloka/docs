@@ -176,10 +176,6 @@ However, this poses the risk that you might spend a lot of money on the exam. Yo
 
 {% endcut %}
 
-{% cut "Request for training in crowdsourcing and working with Toloka" %}
-
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
+[Request for training in crowdsourcing and working with Toloka](../troubleshooting/support.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

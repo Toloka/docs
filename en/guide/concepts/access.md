@@ -106,28 +106,4 @@ You can use the same phone number to create a new account. For a step-by-step de
 
 {% endcut %}
 
-{% cut "Get initial consultation" %}
-
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8745/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
-
-{% cut "Question about working in the sandbox" %}
-
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015613/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
-
-{% cut "Issues with project settings" %}
-
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/8744/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
-
-{% cut "Request for training in crowdsourcing and working with Toloka" %}
-
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10013858/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
-
 {% include [contact-support](../_includes/contact-support.md) %}

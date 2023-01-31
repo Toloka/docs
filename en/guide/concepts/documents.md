@@ -79,12 +79,8 @@ You can edit your email address, the actual address for the correspondence deliv
 
 You can also send a request to change payment details to the document workflow group at: `docs-project@support.yandex.com`. In the request, specify a list of new and old payment details, the email you used to register in Toloka, and attach a copy of the document that confirms the changes (signed by the head of organization and with the organization's seal).
 
-{% cut "Fill out the form for receiving closing documents and acts" %}
-
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015610/?lang=en&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
-
 ## See also {#see-also}
 
 - [{#T}](refill.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}
