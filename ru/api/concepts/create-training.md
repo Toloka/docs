@@ -78,19 +78,19 @@
 ||**may_contain_adult_content** | **boolean \| обязательный**
 
 Присутствие контента для взрослых в заданиях.||
-||**training_tasks_in_task_ suite_count** | **integer \| обязательный**
+||**training_tasks_in_task_suite_count** | **integer \| обязательный**
 
 Количество обучающих заданий на одной странице.||
-||**task_suites_required_to_ pass** | **integer**
+||**task_suites_required_to_pass** | **integer**
 
 Количество страниц, которые нужно успешно выполнить для назначения навыка и допуска к боевым заданиям.||
 ||**public_instructions** | **string**
 
 Инструкция по выполнению обучающих заданий. Можно использовать любую HTML-разметку.||
-||**assignment_max_duration_ seconds** | **integer**
+||**assignment_max_duration_seconds** | **integer**
 
 Время на выполнение страницы заданий в секундах. Рекомендуется выделять на страницу заданий не менее 60 секунд (с учетом времени на загрузку страницы и отправку ответов).||
-||**mix_tasks_in_creation_ order** | **boolean**
+||**mix_tasks_in_creation_order** | **boolean**
 
 Выдаются ли обучающие задания в порядке загрузки:
 

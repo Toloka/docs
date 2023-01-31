@@ -81,17 +81,17 @@ The default value is `false`. ||
 || **may_contain_adult_content** | **boolean \| required**
 
 Whether the tasks contain adult content. ||
-|| **training_tasks_in_task_ suite_count** | **integer \| required**
+|| **training_tasks_in_tasksuite_count** | **integer \| required**
 Number of training tasks per suite. ||
-|| **task_suites_required_to_ pass** | **integer**
+|| **task_suites_required_to_pass** | **integer**
 
 Number of task suites the Toloker needs to complete to get a skill and access the general tasks. ||
 || **public_instructions** | **string**
 
 Instructions for completing a training task. You can use any HTML markup. ||
-|| **assignment_max_duration_ seconds** | **integer**
+|| **assignment_max_duration_seconds** | **integer**
 The time allowed for completing a task suite, in seconds. We recommend allowing no more than 60 seconds per task suite (including the time for loading the page and submitting responses). ||
-|| **mix_tasks_in_creation_ order** | **boolean**
+|| **mix_tasks_in_creation_order** | **boolean**
 Whether training tasks are issued in their upload order:
 
 - `true` — Tasks are grouped into task suites in the order of rows in the uploaded file (top-to-bottom).

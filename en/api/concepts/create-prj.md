@@ -124,7 +124,7 @@ Parameters for output data from the input fields. The complete list of parameter
 || **task_spec.view_spec** | **object**
 
 Description of the task interface. The complete list of parameters is shown in the [Task interface](#view-spec-section) table. ||
-|| **assignments_issuing_view_ config** | **string \| required if**
+|| **assignments_issuing_view_config** | **string \| required if**
 
 Required if `assignments_issuing_type=MAP_SELECTOR`.
 
@@ -162,10 +162,10 @@ Map provider for tasks:
 - `YANDEX` — Yandex Maps.
 
 If the parameter is not set, then the Toloker selects the map. ||
-|| **assignments_automerge_ enabled** | **boolean**
+|| **assignments_automerge_enabled** | **boolean**
 
 Resolve [merging identical tasks](tasks.md#task-merge) in the project. The default value is `false`. ||
-|| **max_active_assignments_ count** | **integer**
+|| **max_active_assignments_count** | **integer**
 
 The number of task suites the Toloker can complete simultaneously ("Active" status). ||
 || **quality_control** | **object**
@@ -336,7 +336,7 @@ Show the **Message for the requester** button. The default value is `true`. ||
 Show the price per task suite. The default value is `true`. ||
 |#
 
-## Settings for displaying field tasks (assignments_issuing_view_ config) {#assignments-issuing-view-config-section}
+## Settings for displaying field tasks (assignments_issuing_view_config) {#assignments-issuing-view-config-section}
 
 #|
 || Parameter | Overview ||
@@ -366,7 +366,7 @@ If the parameter is not set, then the Toloker selects the map. ||
 
 #|
 || Parameter | Overview ||
-|| **default_ language** | **string**
+|| **default_language** | **string**
 
 The source language used in the fields [public_name](#public_name), [public_description](#public_description), and [public_instructions](#public_instructions). ||
 || **additional_languages[]** | **array of objects**
