@@ -152,6 +152,6 @@ But you can do it yourself if you want. When downloading the results, select the
 
 {% endcut %}
 
-[Report suspicious Tolokers](../troubleshooting/support.md)
+[Report suspicious Tolokers](../troubleshooting/support.md#contact-support)
 
 {% include [contact-support](../_includes/contact-support.md) %}

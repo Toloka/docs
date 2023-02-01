@@ -176,6 +176,6 @@ However, this poses the risk that you might spend a lot of money on the exam. Yo
 
 {% endcut %}
 
-[Request for training in crowdsourcing and working with Toloka](../troubleshooting/support.md)
+[Request for training in crowdsourcing and working with Toloka](../troubleshooting/support.md#contact-support)
 
 {% include [contact-support](../_includes/contact-support.md) %}

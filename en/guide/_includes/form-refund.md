@@ -1,1 +1,0 @@
-1. In the [form](../troubleshooting/support.md), select **Money** and **Refunding** options and fill in the form fields.

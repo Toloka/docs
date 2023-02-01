@@ -22,7 +22,13 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Individual
 
-  1. {% include [form-refund](../_includes/form-refund.md) %}
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-money.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-refund.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-fill.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -34,7 +40,13 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Legal entity
 
-  1. {% include [form-refund](../_includes/form-refund.md) %}
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-money.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-refund.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-fill.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -58,7 +70,13 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Individual
 
-  1. {% include [form-refund](../_includes/form-refund.md) %}
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-money.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-refund.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-fill.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -72,7 +90,13 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Legal entity
 
-  1. {% include [form-refund](../_includes/form-refund.md) %}
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-money.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-refund.md) %}
+
+  1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-fill.md) %}
 
   1. Download the sample application that is in the refund form. Fill in the application.
 
@@ -100,8 +124,16 @@ To return funds transferred using PayPal, fill in the form below. Make sure to s
 - Your account number in [**Yandex Balance**]({{ balance }}) (in the **Accounts** tab).
 - The number of the PayPal wallet from which you transferred funds to Toloka.
 
-{% cut "Fill in the refund form" %}
+{% cut "How to fill in the refund form" %}
 
-<iframe width="100%" frameborder="0" src="https://forms.yandex.com/surveys/10015629/?lang=en&iframe=1&service=toloka-ai"></iframe>
+1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form.md) %}
+
+1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-money.md) %}
+
+1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-refund.md) %}
+
+1. {% include [form-refund](../_includes/toloka-requester-source/id-toloka-requester-source/support-form-fill.md) %}
 
 {% endcut %}
+
+{% include [contact-support](../_includes/contact-support.md) %}
