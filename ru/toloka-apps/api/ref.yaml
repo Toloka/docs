@@ -159,7 +159,14 @@ paths:
             type: string
 
       summary: Получить список проектов
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       responses:
         '200':
           content:
@@ -172,7 +179,14 @@ paths:
       tags:
         - app-project
       summary: Создать новый проект
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       requestBody:
         description: Параметры нового проекта.
         required: true
@@ -193,7 +207,14 @@ paths:
       tags:
         - app-project
       summary: Получить информацию о проекте
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
       - name: app_project_id
         in: path
@@ -263,7 +284,13 @@ paths:
         Проект переходит в статус ARCHIVE.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/archive" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/archive):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -285,7 +312,13 @@ paths:
         Проект переходит в последний статус, который был перед архивированием.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/unarchive" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/unarchive):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -303,7 +336,14 @@ paths:
       tags:
         - item
       summary: Получить информацию об элементе разметки
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items/-item_id-" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items/-item_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -336,7 +376,14 @@ paths:
       tags:
         - item
       summary: Получить список всех элементов в проекте
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -481,7 +528,14 @@ paths:
       tags:
         - item
       summary: Добавить новый элемент в пакет данных
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -531,7 +585,13 @@ paths:
         Не более 10 000 элементов в одном запросе.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items/bulk" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items/bulk):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -584,7 +644,14 @@ paths:
       tags:
         - batch
       summary: Получить список пакетов данных в проекте
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -730,7 +797,13 @@ paths:
         Устанавливает приоритет созданного пакета данных для разметки в соответствии со значением параметра `priority_order`: `ONE` (для наивысшего приоритета), `TWO`, `THREE`, `FOUR`, `FIVE` (для низшего приоритета, значение по умолчанию). Если значение `priority_order` не задано в запросе, пакет данных будет создан со значением `priority_order = FIVE`.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -788,7 +861,13 @@ paths:
         Отправляет пакет данных с синхронной загрузкой на разметку. Используется только для решений с синхронным протоколом.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/sync" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/sync):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -828,7 +907,14 @@ paths:
       tags:
         - batch
       summary: Получить информацию о пакете данных
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches/-batch_id-" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches/-batch_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -867,7 +953,13 @@ paths:
         Наивысший приорит получают пакеты данных со значением `priority_order` равным `ONE`. Элементы этого пакета данных будут отправлены в разметку первыми. Значение по-умолчанию — `FIVE`. Если значение `name` или `priority_order` не задано в запросе, они останутся без изменений.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#patch-/app-projects/-app_project_id-/batches/-batch_id-" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#patch-/app-projects/-app_project_id-/batches/-batch_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -911,7 +1003,13 @@ paths:
         Запускается асинхронно.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/start" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/start):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -939,7 +1037,13 @@ paths:
         Остановить обработку можно только для пакета данных в статусе **PROCESSING**.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/stop" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/stop):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -967,7 +1071,13 @@ paths:
         Возобновить обработку можно только для пакета данных в статусе **STOPPING** и **STOPPED**.
 
 
-        <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/resume" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/resume):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_project_id
           in: path
@@ -1050,7 +1160,14 @@ paths:
             type: string
 
       summary: Получить список шаблонов проектов (Apps)
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/apps" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/apps):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       responses:
         '200':
           content:
@@ -1066,7 +1183,14 @@ paths:
       tags:
         - app
       summary: Информация о шаблоне проекта
-      description: <div class="yfm-note yfm-accent-tip" note-type="tip"><p><strong>Попробуйте <a href="https://toloka.ai/docs/api/apps-reference/#get-/apps/-app_id-" target="_blank" rel="noreferrer noopener">новый справочник API</a>:</strong> подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.</p></div>
+      description: >
+        {% note tip %}
+
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/apps/-app_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+
+        {% endnote %}
       parameters:
         - name: app_id
           in: path
