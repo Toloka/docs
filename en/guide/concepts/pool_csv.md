@@ -397,6 +397,287 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 {% endlist %}
 
+## Data types
+
+{% cut "Integer / float" %}
+
+Data type for the numbers usage including floating-point numbers. The separator of fractional and integer parts is `.`.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:height
+  1
+  2.3
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        height: 1
+      }
+    }, 
+    {
+      "input_values": {
+        "height": 2.3
+      }
+    } 
+  ]
+  ```
+
+{% endcut %}
+
+{% endcut %}
+
+{% cut "Array of integer / array of float" %}
+
+Data type for the multiple numbers usage including floating-point numbers. Array elements are separated by commas.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:heights
+  1,2.3
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "heights": [1, 2.3]
+      }
+    }
+  ]
+  ```
+
+{% endcut %}
+
+{% endcut %}
+
+{% cut "String" %}
+
+Data type for the lines usage. In the TSV file, the lines containing `\n`, `\t`, `"` must be enclosed in quotas. To use the `"` symbol in such a line, you need to put another `"` symbol in front of it, i.e. `""`.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:comment
+  Hi
+  Very nice
+  This, but
+  "Text with ""qoutes""."
+  "Text with \n or \t"
+  "Text with ""quotes"" and ,"
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "comment": "Hi"
+      }
+    },
+   {
+      "input_values": {
+        "comment": "This, but"
+      }
+    },
+    {
+      "input_values": {
+        "comment": "Very nice"
+      }
+    },
+    {
+      "input_values": {
+        "comment": "Text with \"qoutes\"."
+      }
+    },
+    {
+      "input_values": {
+        "comment": "Text with \n or \t"
+      }
+    },
+    {
+      "input_values": {
+        "comment": "Text with \"qoutes\". and ,"
+      }
+    }
+  ]
+  ```
+
+{% endcut %}
+
+{% cut "Array of strings" %}
+
+Data type for the multiple lines usage. In the TSV file, the lines containing `\n`, `\t`, `"` must be enclosed in `""`. To use the symbol `"` in such a string, it must be escaped twice, i.e. `""""`.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:comments
+  "Hi,Very nice,""This, but"",Text with ""quotes"".,Text with \n or \t,""Text with """"quotes"""" and ,"""
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "comments": [
+            "Hi", 
+            "This, but", 
+            "Very nice", 
+            "Text with \"qoutes\".", 
+            "Text with \n or \t"
+            "Text with \"qoutes\". and ,"
+        ]
+      }
+    }
+  ]
+  ```
+
+{% endcut %}
+
+{% endcut %}
+
+{% cut "Boolean" %}
+
+Data type which represents the result of a logical operations. You can use one of the values:
+- `true` — the statement is true.
+- `false` — the statement is false.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:answer
+  true
+  false
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "answer": true
+      }
+    },
+    {
+      "input_values": {
+        "answer": false
+      }
+    }
+  ]
+  ```
+
+{% endcut %}
+
+{% endcut %}
+
+{% cut "Array of boolean" %}
+
+Data type which represents the array of boolean. The separator of the values is comma.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:answers
+  true,false,true
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "answers": [true,false,true]
+      }
+    }
+  ]
+  ```
+
+{% endcut %}
+
+{% endcut %}
+
+{% cut "Coordinates" %}
+
+Data type for the geographical coordinates usage, it contains latitude and longitude of a map point. The separator is comma.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:location
+  22.3341,32.32
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "location": "22.3341,32.32"
+      }
+    }
+  ]
+  ```
+
+{% endcut %}
+
+{% cut "Array of coordinates" %}
+
+Data type for the multiple coordinates usage. Use `""` to separate pairs of coordinates.
+
+{% cut "TSV/XLSX file example" %}
+
+  ```
+  INPUT:locations
+  """22.3341,32.32"",""22.3341,32.32"",""22.3341,32.32"""
+  ```
+
+{% endcut %}
+
+{% cut "JSON file example" %}
+
+   ```json
+  [
+    {
+      "input_values": {
+        "locations": ["22.3341,32.32", "22.3341,32.32", "22.3341,32.32"]
+      }
+    }
+  ]
+  ```
+
+{% endcut %}
+
+{% endcut %}
+
 ## Working with the file {#applications}
 
 In popular spreadsheet editors, you can import and export data in TSV or XLSX:
