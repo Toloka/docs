@@ -1,5 +1,5 @@
 # CommonErrorCodes
-`toloka.client.error_codes.CommonErrorCodes` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/error_codes.py#L8)
+`toloka.client.error_codes.CommonErrorCodes` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/error_codes.py#L8)
 
 Types of error codes returned by the API
 

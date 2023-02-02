@@ -1,5 +1,5 @@
 # AssignmentSearchRequest
-`toloka.client.search_requests.AssignmentSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/search_requests.py#L367)
+`toloka.client.search_requests.AssignmentSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/search_requests.py#L367)
 
 ```python
 AssignmentSearchRequest(

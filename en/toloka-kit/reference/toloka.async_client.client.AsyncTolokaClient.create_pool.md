@@ -1,5 +1,5 @@
 # create_pool
-`toloka.async_client.client.AsyncTolokaClient.create_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
 
 ```python
 async create_pool(self, pool: Pool)

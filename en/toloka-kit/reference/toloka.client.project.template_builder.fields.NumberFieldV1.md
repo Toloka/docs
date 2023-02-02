@@ -1,5 +1,5 @@
 # NumberFieldV1
-`toloka.client.project.template_builder.fields.NumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/fields.py#L386)
+`toloka.client.project.template_builder.fields.NumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/fields.py#L386)
 
 ```python
 NumberFieldV1(

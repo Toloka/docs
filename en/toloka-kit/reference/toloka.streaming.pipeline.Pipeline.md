@@ -1,5 +1,5 @@
 # Pipeline
-`toloka.streaming.pipeline.Pipeline` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/pipeline.py#L80)
+`toloka.streaming.pipeline.Pipeline` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/streaming/pipeline.py#L80)
 
 ```python
 Pipeline(

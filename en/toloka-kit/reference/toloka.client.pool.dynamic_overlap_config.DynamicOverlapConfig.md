@@ -1,5 +1,5 @@
 # DynamicOverlapConfig
-`toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/pool/dynamic_overlap_config.py#L9)
+`toloka.client.pool.dynamic_overlap_config.DynamicOverlapConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/pool/dynamic_overlap_config.py#L9)
 
 ```python
 DynamicOverlapConfig(

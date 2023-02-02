@@ -1,5 +1,5 @@
 # create_user_bonuses
-`toloka.async_client.client.AsyncTolokaClient.create_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L0)
 
 Creates rewards for Tolokers.
 

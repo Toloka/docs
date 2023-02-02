@@ -1,5 +1,5 @@
 # Company
-`toloka.client.requester.Requester.Company` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/requester.py#L19)
+`toloka.client.requester.Requester.Company` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/requester.py#L19)
 
 ```python
 Company(

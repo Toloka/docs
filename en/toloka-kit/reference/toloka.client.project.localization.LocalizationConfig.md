@@ -1,5 +1,5 @@
 # LocalizationConfig
-`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/localization.py#L47)
+`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/localization.py#L47)
 
 ```python
 LocalizationConfig(

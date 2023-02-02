@@ -1,5 +1,5 @@
 # MapProvider
-`toloka.client.project.Project.AssignmentsIssuingViewConfig.MapProvider` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/__init__.py#L150)
+`toloka.client.project.Project.AssignmentsIssuingViewConfig.MapProvider` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/__init__.py#L150)
 
 Map provider for assignments_issuing_view_config:
 

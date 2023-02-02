@@ -1,5 +1,5 @@
 # resume_app_batch
-`toloka.client.TolokaClient.resume_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L3997)
+`toloka.client.TolokaClient.resume_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L3997)
 
 ```python
 resume_app_batch(

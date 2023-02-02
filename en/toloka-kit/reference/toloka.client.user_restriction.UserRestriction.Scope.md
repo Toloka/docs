@@ -1,5 +1,5 @@
 # Scope
-`toloka.client.user_restriction.UserRestriction.Scope` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/user_restriction.py#L56)
+`toloka.client.user_restriction.UserRestriction.Scope` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/user_restriction.py#L56)
 
 Restriction scope
 
