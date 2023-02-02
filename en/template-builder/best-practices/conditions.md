@@ -49,7 +49,7 @@ To check that an array in `data` is a subarray for `parent`, add the component [
 
 In this example, the component checks that the values `animal` and `human` are part of the `objects` array. If the responses “Human” and “Animal” are selected, the `helper.if` logical component displays the question: “Do the human and animal interact?”.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/KhOtKNig3ttEmc)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/hKrpY1DO3xEBoC)
 
 ## Checking multiple conditions {#multiple-conditions}
 
@@ -59,7 +59,7 @@ To check that multiple conditions are met, list them in the `condition` property
 
 In this example, a Toloker has to do two actions: to fill in the text field and to click the link in the interface. The “Submit” button won't work until both conditions are met.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/yWKOP8la3ttEoJ)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/UVTRP1wl3vw9ij)
 
 #### Meeting at least one of the conditions
 
@@ -67,7 +67,7 @@ To check that at least one of the conditions is met, list the conditions in the 
 
 In this example, a Toloker has to perform at least one of the two actions: to select “Nothing is written there” or to fill in the “What is written on the image?” field. The “Submit” button won't work until one of the conditions is met.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/XgCa4s5v3ttEp3)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/UGnbki-73xPDHm)
 
 ## Checking conditions for specific components {#component}
 

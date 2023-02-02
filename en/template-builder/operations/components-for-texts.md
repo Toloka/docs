@@ -43,7 +43,7 @@ To change the text, such as all uppercase letters or insert a variable value, us
 
 - [helper.replace](../reference/helper.replace.md): Lets you replace some parts of the string with other strings. To do this, use the `find` property for the replaced text and the `replace` property for the replacing text.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/1BMgNIpL3ttBGm)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/qcfsK8i_3x5ZwU)
 
 - [helper.join](../reference/helper.join.md): Joins multiple strings into one string, separating them with spaces or commas.
 

@@ -53,7 +53,7 @@
 
 Добавьте картинку с помощью компонента [view.image](../reference/view.image.md). Расположите видео рядом с картинкой через компонент [layout.columns](../reference/layout.columns.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Oz5BV1jI3twDgv)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/-GfV_wyG3x5JPc)
 
 Расположите видео рядом с текстом или аудио с помощью компонента [view.list](../reference/view.list.md).
 
@@ -79,7 +79,7 @@
 
 В примере видео нужно сравнить с результатами запроса, который формируется компонентом [helper.search-query](../reference/helper.search-query.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/-gfZhH8X3twEYq)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/jlyFOc-s3vuWKU)
 
 ## Добавить уточняющие вопросы к одному из вариантов {#add-addition}
 

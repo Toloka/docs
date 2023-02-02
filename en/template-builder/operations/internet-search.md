@@ -14,7 +14,7 @@ If you want to insert a link without additional formatting, use the [view.link](
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/8AWWLoEf3ttF2F)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/CmLK2rOB3vw46E)
 
 ## Create a search query {#helper.search-query}
 
@@ -38,7 +38,7 @@ If you need to insert links to several search engines with the same query, then
 
 {% endnote %}
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/xubW9a7u3ttF3P)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/Vv1wqNP13vw4gc)
 
 If the search engine you need is not available in the `engine` property, leave this field empty and enter the search query in `query` using the [helper.join](../reference/helper.join.md) component.
 
@@ -48,7 +48,7 @@ If the search engine you need is not available in the `engine` property, leave 
 
 To group multiple links together, use the [view.link-group](../reference/view.link-group.md) component. Links will be underlined. For emphasis, you can add a border around one of the links and remove the underline. To do this, set the `theme` property to `primary` for this link.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/e2bmQ_Pz3ttF4X)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/l6Y5VpjQ3vvKhM)
 
 ## Create a button link {#action.open-link}
 
@@ -73,11 +73,11 @@ To make sure the button looks nice and doesn't stretch to the entire screen wi
 
 When adding multiple buttons, you can arrange them horizontally (instead of vertically) in the `direction` property.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/Z4zKrqen3ttF5p)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/hX0vfOLQ3vw5Xd)
 
 To assign a [shortcut](../best-practices/hotkeys.md) to a button, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) component.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/JMgSpar33ttF6b)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/XYwqil9X3xP6Jt)
 
 ## Check if the link was clicked on {#condition.link-opened}
 
@@ -85,7 +85,7 @@ To check if the Toloker clicked on the link, use the [condition.link-opened](.
 
 Remember that the condition only works if a Toloker clicks the link in the interface. If the link is opened via the address bar, the condition doesn't work.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/jotI7dQ13ttF74)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/6JZC_mNn3vw6Dp)
 
 ## Add keyboard shortcuts {#hotkeys}
 
@@ -103,7 +103,7 @@ To add a shortcut, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) plug
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/NhCk-72F3ttF7x)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/LNClzO8H3vw76R)
 
 Learn more about shortcuts in [Configure keyboard shortcuts](../best-practices/hotkeys.md).
 
@@ -117,7 +117,7 @@ You can set a link to open when a certain event occurs. For example, when a To
 
 Just like any piece of the code, the code for opening the link and its address can be reused using the `{"$ref": "path.to.element"}` structure. This is useful when adding keyboard shortcuts. To avoid duplicating the code for the link display and for [plugin.hotkeys](../reference/plugin.hotkeys.md), just enter the code once in `vars`.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/caUgYPHD3ttF8v)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/UwBOfm8d3vw7uu)
 
 Learn more about reusing the code in [Reuse code](../best-practices/reuse.md).
 

@@ -4,7 +4,7 @@ Component for creating a string with a search query reference.
 
 The list of available search engines is specified in the `engine` property.
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/ELxkIO-M3tz2bw)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/W5KExwg_3vwB57)
 
 ## Component properties {#properties}
 

@@ -4,7 +4,7 @@
 
 Проверяет, что массив в `data` является подмассивом для `parent`.
 
-[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/HylOedv03tvnUz)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/LFpfB1Jv3wz3BQ)
 
 ## Свойства компонента {#properties}
 

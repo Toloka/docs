@@ -11,7 +11,7 @@ The `else` property is optional. For example, you ask a Toloker "do you like the
 
 To learn more about conditions, see the [List of conditions](conditions.md).
 
-[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/7YZMlnzh3tz4Bb)
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/J3dYyctN3xPHGy)
 
 {% cut "Components used in the example" %}
 

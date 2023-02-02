@@ -68,13 +68,13 @@
 
 Добавьте кнопку, по которой исполнители будут открывать результаты поиска, и сформируйте ссылку поискового запроса с помощью компонента [helper.search-query](../reference/helper.search-query.md). Чтобы убедиться, что исполнитель перешел по ссылке и проверил ее содержимое, настройте валидацию, как в примере.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/wXJE1Snn3tw9ws)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/LVNatJpg3xLr25)
 
 #### Попарное сравнение с веб-страницей
 
 С помощью компонента [view.iframe](../reference/view.iframe.md) вы можете отобразить веб-страницу во встроенном окне. Расположите рядом картинку, используя [layout.side-by-side](../reference/layout.side-by-side.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/W4RYbsIh3twAAc)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/pNM-CylQ3vuXZv)
 
 #### Попарное сравнение с веб-страницей в рамке мобильного устройства
 
@@ -84,6 +84,6 @@
 - [view.device-frame](../reference/view.device-frame.md) — оборачивает окно в рамку смартфона;
 - [layout.side-by-side](../reference/layout.side-by-side.md) — располагает картинку и окно с результатами запроса рядом друг с другом.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/90cLP-5-3twARA)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7-VDQAuV3vuXzE)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

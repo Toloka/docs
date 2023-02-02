@@ -4,7 +4,7 @@
 
 Открывает в браузере новую вкладку с заданной интернет-страницей. Например, можно открывать ссылку по нажатию на кнопку.
 
-[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/nlgFBo-b3tz2BX)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/PKgu8jqp3xMRnJ)
 
 ## Свойства компонента {#properties}
 

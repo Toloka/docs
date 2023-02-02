@@ -27,7 +27,7 @@ For this type of project, you can use the **Generating product descriptions** pr
 
 - If a Toloker needs to search for information online to complete the task, add the [helper.search-query](../reference/helper.search-query.md) component. The search query can be put together from words taken from the input data.
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/YKwsyb2h3ttFMH)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/jgNvI9Eq3vvsiU)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -87,6 +87,6 @@ What's unique about this example is that a Toloker can add and remove text inpu
 
 In addition, the example checks that each line has at least three characters, including letters and spaces. The condition is implemented using [condition.schema](../reference/condition.schema.md).
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/mus2SrsY3ttFQR)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/T-rVMAPk3vvtDM)
 
 {% include [contact-support](../_includes/contact-support.md) %}

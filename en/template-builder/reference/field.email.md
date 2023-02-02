@@ -4,7 +4,7 @@ Creates a field for entering an email address.
 
 Checks that the text contains the `@` character. You can [set other conditions yourself](../best-practices/conditions.md).
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/H9nM3PPu3tz7d9)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/SSTPxk7L3xPREy)
 
 ## Component properties {#properties}
 

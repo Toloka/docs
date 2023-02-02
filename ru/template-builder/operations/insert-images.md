@@ -12,7 +12,7 @@
 
 Чтобы вставить картинку, переданную во входных данных, в свойстве `url` используйте компонент `data.input`.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/pO7_5AxA3tvJWq)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/81B2cMzU3xM6ay)
 
 ## Две картинки рядом (side-by-side) {#side-by-side}
 
