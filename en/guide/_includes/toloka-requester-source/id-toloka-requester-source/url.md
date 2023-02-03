@@ -1,0 +1,1 @@
+[*url]: Data type for the hyperlinks usage. It is similar to the string type. URL starts with the `http://`, `https://` or `www` prefix.

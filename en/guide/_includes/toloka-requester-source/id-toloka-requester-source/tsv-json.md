@@ -1,1 +1,1 @@
-In the TSV file with training tasks, each comma inside the [JSON](../../../../glossary.md#json-format) object must be enclosed by `\`.
+In the TSV file with training tasks, each comma inside the [JSON](../../../../glossary.md#json-format) object must be escaped by `\`.

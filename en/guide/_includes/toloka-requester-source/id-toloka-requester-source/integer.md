@@ -1,0 +1,1 @@
+[*integer]: Data type for the integers usage.

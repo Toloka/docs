@@ -1,0 +1,1 @@
+The [JSON](../../../../glossary.md#json-format) object is similar to the [string](../../../../guide/concepts/incoming.md#string).

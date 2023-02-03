@@ -153,7 +153,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "String" %}
 
-  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+  {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
   ```
   INPUT:comment
@@ -188,8 +188,9 @@ If you need to add different task types to the pool, upload multiple files, one 
   {% endcut %}
   
   {% cut "Coordinates" %}
-  
-  You can use [coordinates](incoming.md#coordinates) to specify a location on the map.
+
+  {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/coordinates.md) %}
+  You can use [coordinates](*coordinates) to specify a location on the map.
 
   ```
   INPUT:location
@@ -200,9 +201,9 @@ If you need to add different task types to the pool, upload multiple files, one 
   
   {% cut "JSON" %}
 
-  {% include [toloka-requester-json](../_includes/toloka-requester-source/id-toloka-requester-source/json.md) %}
-  
-  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+  {% include [toloka-requester-source-json-string](../_includes/toloka-requester-source/id-toloka-requester-source/json-string.md) %}
+
+  {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
   ```
   INPUT:banner
@@ -214,11 +215,11 @@ If you need to add different task types to the pool, upload multiple files, one 
   
   {% cut "JSON in the training tasks" %}
 
-  {% include [toloka-requester-json](../_includes/toloka-requester-source/id-toloka-requester-source/json.md) %}
+  {% include [toloka-requester-source-json-string](../_includes/toloka-requester-source/id-toloka-requester-source/json-string.md) %}
 
-  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+  {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
-  {% include [toloka-requester-tsv-json](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-json.md) %}
+  {% include [toloka-requester-source-tsv-json](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-json.md) %}
 
   ```
   INPUT:banner
@@ -229,12 +230,13 @@ If you need to add different task types to the pool, upload multiple files, one 
   {% endcut %}
   
   {% cut "Arrays" %}
-  
-  [Array](incoming.md#arrays) elements are separated by commas.
+
+  {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/array.md) %}
+  [Array](*array) elements are separated by commas.
   
   {% cut "Array of integer / array of float" %}
 
-  {% include [toloka-requester-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
+  {% include [toloka-requester-source-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
 
   ```
   INPUT:heights
@@ -245,7 +247,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   
   {% cut "Array of strings" %}
 
-  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+  {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
   ```
   INPUT:comments
@@ -274,7 +276,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Array of coordinates" %}
 
-  Each pair of [coordinates](incoming.md#coordinates) must be enclosed in `""`.
+  Each pair of [coordinates](*coordinates) must be enclosed in `""`.
 
   ```
   INPUT:locations
@@ -285,9 +287,9 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Array of JSON" %}
 
-  The [array](incoming.md#arrays) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](#string).
+  The [array](*array) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](#string).
   
-  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+  {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
   ```
   INPUT:banners
@@ -298,11 +300,11 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Array of JSON in the training tasks" %}
 
-  The [array](incoming.md#arrays) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](#string).
+  The [array](*array) of the [JSON](../../glossary.md#json-format) objects is similar to the string.
 
-  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+  {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
-  {% include [toloka-requester-tsv-json](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-json.md) %}
+  {% include [toloka-requester-source-tsv-json](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-json.md) %}
 
   ```
   INPUT:banners
@@ -593,7 +595,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   
   {% cut "Integer / float" %}
   
-  {% include [toloka-requester-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
+  {% include [toloka-requester-source-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
 
   ```json
   [
@@ -693,7 +695,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   
   {% cut "Coordinates" %}
 
-  You can use [coordinates](incoming.md#coordinates) to specify a location on the map.
+  You can use [coordinates](*coordinates) to specify a location on the map.
 
   ```json
   [
@@ -728,7 +730,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Arrays" %}
 
-  Array elements are separated by commas.
+  [Array](*array) elements are separated by commas.
 
   {% cut "Array of integer / float" %}
 

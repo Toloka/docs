@@ -1,1 +1,1 @@
-The [JSON](../../../../glossary.md#json-format) object is similar to the [string](../../../../guide/concepts/incoming.md#string).
+[*json]: Data type for the [JSON](../../../../glossary.md#json-format) format usage. It is similar to the string type.
