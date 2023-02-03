@@ -599,7 +599,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   [
     {
       "input_values": {
-        height: 1
+        "height": 1
       }
     }, 
     {
