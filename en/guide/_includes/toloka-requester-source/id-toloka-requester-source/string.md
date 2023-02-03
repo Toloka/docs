@@ -1,1 +1,1 @@
-[*string]: Data type for the lines usage.
+Data type for the lines usage.

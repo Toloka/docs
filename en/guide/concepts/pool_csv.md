@@ -25,7 +25,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
 {% list tabs %}
 
-- TSV/XLSX 
+- TSV/XLSX
 
   The first line of the file contains the column headers:
 
@@ -186,10 +186,9 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "Coordinates" %}
 
-  {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/coordinates.md) %}
   You can use [coordinates](*coordinates) to specify a location on the map.
 
   ```
@@ -198,7 +197,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "JSON" %}
 
   {% include [toloka-requester-source-json-string](../_includes/toloka-requester-source/id-toloka-requester-source/json-string.md) %}
@@ -212,7 +211,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "JSON in the training tasks" %}
 
   {% include [toloka-requester-source-json-string](../_includes/toloka-requester-source/id-toloka-requester-source/json-string.md) %}
@@ -228,12 +227,11 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "Arrays" %}
 
-  {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/array.md) %}
   [Array](*array) elements are separated by commas.
-  
+
   {% cut "Array of integer / array of float" %}
 
   {% include [toloka-requester-source-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
@@ -244,7 +242,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "Array of strings" %}
 
   {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
@@ -255,7 +253,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "Array of URL" %}
 
   ```
@@ -264,7 +262,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-    
+
   {% cut "Array of boolean" %}
 
   ```
@@ -288,7 +286,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   {% cut "Array of JSON" %}
 
   The [array](*array) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](#string).
-  
+
   {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
   ```
@@ -592,9 +590,9 @@ If you need to add different task types to the pool, upload multiple files, one 
   {% endcut %}
 
   {% cut "Data types" %}
-  
+
   {% cut "Integer / float" %}
-  
+
   {% include [toloka-requester-source-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
 
   ```json
@@ -603,17 +601,17 @@ If you need to add different task types to the pool, upload multiple files, one 
       "input_values": {
         "height": 1
       }
-    }, 
+    },
     {
       "input_values": {
         "height": 2.3
       }
-    } 
+    }
   ]
   ```
 
   {% endcut %}
-  
+
   {% cut "String" %}
 
   According to the JSON standard, double quotes `"` inside the string should be escaped with `\"`.
@@ -673,7 +671,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "Boolean" %}
 
   ```json
@@ -692,7 +690,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "Coordinates" %}
 
   You can use [coordinates](*coordinates) to specify a location on the map.
@@ -708,7 +706,7 @@ If you need to add different task types to the pool, upload multiple files, one 
   ```
 
   {% endcut %}
-  
+
   {% cut "JSON" %}
 
   ```json
@@ -753,10 +751,10 @@ If you need to add different task types to the pool, upload multiple files, one 
     {
       "input_values": {
         "comments": [
-          "Hi", 
-          "This, but", 
-          "Very nice", 
-          "Text with \"qoutes\".", 
+          "Hi",
+          "This, but",
+          "Very nice",
+          "Text with \"qoutes\".",
           "Text with \n or \t"
           "Text with \"qoutes\". and ,"
         ]
@@ -774,7 +772,7 @@ If you need to add different task types to the pool, upload multiple files, one 
     {
       "input_values": {
         "links": [
-          "https://www.example.com", 
+          "https://www.example.com",
           "https://site.com"
         ]
       }
@@ -1289,3 +1287,8 @@ Check the links that you use. There are several ways to unify links:
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+[*array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/array.md) %}
+[*coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/coordinates.md) %}
+[*integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/integer.md) %}
+[*float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/float.md) %}

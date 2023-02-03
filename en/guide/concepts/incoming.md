@@ -305,17 +305,8 @@ The default value is `false`.||
 
 ## Data types {#data-types}
 
-{% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/integer.md) %}
-{% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/float.md) %}
-{% include [toloka-requester-source-string](../_includes/toloka-requester-source/id-toloka-requester-source/string.md) %}
-{% include [toloka-requester-source-url](../_includes/toloka-requester-source/id-toloka-requester-source/url.md) %}
-{% include [toloka-requester-source-boolean](../_includes/toloka-requester-source/id-toloka-requester-source/boolean.md) %}
-{% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/coordinates.md) %}
-{% include [toloka-requester-source-json](../_includes/toloka-requester-source/id-toloka-requester-source/json.md) %}
-{% include [toloka-requester-source-file](../_includes/toloka-requester-source/id-toloka-requester-source/file.md) %}
-{% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/array.md) %}
-
 You can use different data types:
+
 - [integer](*integer)
 - [float](*float)
 - [string](*string)
@@ -388,3 +379,13 @@ If the text is in the HTML block of the task template, then clone the project. T
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+[*integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/integer.md) %}
+[*float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/float.md) %}
+[*string]: {% include [toloka-requester-source-string](../_includes/toloka-requester-source/id-toloka-requester-source/string.md) %}
+[*url]: {% include [toloka-requester-source-url](../_includes/toloka-requester-source/id-toloka-requester-source/url.md) %}
+[*boolean]: {% include [toloka-requester-source-boolean](../_includes/toloka-requester-source/id-toloka-requester-source/boolean.md) %}
+[*coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/coordinates.md) %}
+[*json]: {% include [toloka-requester-source-json](../_includes/toloka-requester-source/id-toloka-requester-source/json.md) %}
+[*file]: {% include [toloka-requester-source-file](../_includes/toloka-requester-source/id-toloka-requester-source/file.md) %}
+[*array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/array.md) %}

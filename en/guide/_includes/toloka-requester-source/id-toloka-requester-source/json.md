@@ -1,1 +1,1 @@
-[*json]: Data type for the [JSON](../../../../glossary.md#json-format) format usage. It is similar to the string type.
+Data type for the [JSON](../../../../glossary.md#json-format) format usage. It is similar to the string type.

@@ -1,1 +1,1 @@
-[*float]: Data type for the floating-point numbers usage. The separator of fractional and integer parts is `.`.
+Data type for the floating-point numbers usage. The separator of fractional and integer parts is `.`.
