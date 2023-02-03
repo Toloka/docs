@@ -1,5 +1,5 @@
 # add_requester_translation
-`toloka.client.project.Project.add_requester_translation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/__init__.py#L206)
+`toloka.client.project.Project.add_requester_translation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/__init__.py#L206)
 
 ```python
 add_requester_translation(

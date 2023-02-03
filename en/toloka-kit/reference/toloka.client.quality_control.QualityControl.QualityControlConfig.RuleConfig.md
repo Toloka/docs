@@ -1,5 +1,5 @@
 # RuleConfig
-`toloka.client.quality_control.QualityControl.QualityControlConfig.RuleConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/quality_control.py#L122)
+`toloka.client.quality_control.QualityControl.QualityControlConfig.RuleConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/quality_control.py#L122)
 
 ```python
 RuleConfig(

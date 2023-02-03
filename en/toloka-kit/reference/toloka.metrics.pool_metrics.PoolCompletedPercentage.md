@@ -1,5 +1,5 @@
 # PoolCompletedPercentage
-`toloka.metrics.pool_metrics.PoolCompletedPercentage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/pool_metrics.py#L155)
+`toloka.metrics.pool_metrics.PoolCompletedPercentage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/pool_metrics.py#L155)
 
 ```python
 PoolCompletedPercentage(

@@ -1,5 +1,5 @@
 # Languages
-`toloka.client.filter.Languages` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/filter.py#L366)
+`toloka.client.filter.Languages` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/filter.py#L366)
 
 ```python
 Languages(

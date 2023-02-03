@@ -1,5 +1,5 @@
 # SidebarLayoutV1
-`toloka.client.project.template_builder.layouts.SidebarLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/template_builder/layouts.py#L160)
+`toloka.client.project.template_builder.layouts.SidebarLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/layouts.py#L160)
 
 ```python
 SidebarLayoutV1(

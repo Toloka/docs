@@ -1,5 +1,5 @@
 # find_assignments
-`toloka.client.TolokaClient.find_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L654)
+`toloka.client.TolokaClient.find_assignments` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L654)
 
 Finds assignments that match certain criteria.
 

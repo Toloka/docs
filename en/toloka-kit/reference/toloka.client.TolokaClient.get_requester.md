@@ -1,5 +1,5 @@
 # get_requester
-`toloka.client.TolokaClient.get_requester` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L3223)
+`toloka.client.TolokaClient.get_requester` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L3223)
 
 ```python
 get_requester(self)

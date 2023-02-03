@@ -1,5 +1,5 @@
 # TemplateBuilderViewSpec
-`toloka.client.project.view_spec.TemplateBuilderViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/project/view_spec.py#L115)
+`toloka.client.project.view_spec.TemplateBuilderViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/view_spec.py#L115)
 
 ```python
 TemplateBuilderViewSpec(

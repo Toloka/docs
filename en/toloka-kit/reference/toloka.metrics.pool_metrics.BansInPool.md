@@ -1,5 +1,5 @@
 # BansInPool
-`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/pool_metrics.py#L426)
+`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/pool_metrics.py#L426)
 
 ```python
 BansInPool(

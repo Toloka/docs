@@ -1,5 +1,5 @@
 # AssignmentEventsInPool
-`toloka.metrics.pool_metrics.AssignmentEventsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/metrics/pool_metrics.py#L56)
+`toloka.metrics.pool_metrics.AssignmentEventsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/pool_metrics.py#L56)
 
 ```python
 AssignmentEventsInPool(

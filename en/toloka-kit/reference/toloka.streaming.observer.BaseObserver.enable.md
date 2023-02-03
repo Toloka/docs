@@ -1,5 +1,5 @@
 # enable
-`toloka.streaming.observer.BaseObserver.enable` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/observer.py#L51)
+`toloka.streaming.observer.BaseObserver.enable` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/streaming/observer.py#L51)
 
 ```python
 enable(self)

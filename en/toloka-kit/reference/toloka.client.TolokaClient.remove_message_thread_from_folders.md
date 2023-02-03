@@ -1,5 +1,5 @@
 # remove_message_thread_from_folders
-`toloka.client.TolokaClient.remove_message_thread_from_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L1006)
+`toloka.client.TolokaClient.remove_message_thread_from_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L1006)
 
 ```python
 remove_message_thread_from_folders(

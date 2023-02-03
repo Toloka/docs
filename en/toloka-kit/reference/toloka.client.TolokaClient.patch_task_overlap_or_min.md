@@ -1,5 +1,5 @@
 # patch_task_overlap_or_min
-`toloka.client.TolokaClient.patch_task_overlap_or_min` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/__init__.py#L2428)
+`toloka.client.TolokaClient.patch_task_overlap_or_min` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L2428)
 
 Stops assigning a task to Tolokers.
 

@@ -1,5 +1,5 @@
 # IncomeSumForLast24Hours
-`toloka.client.conditions.IncomeSumForLast24Hours` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/client/conditions.py#L217)
+`toloka.client.conditions.IncomeSumForLast24Hours` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/conditions.py#L217)
 
 ```python
 IncomeSumForLast24Hours(

@@ -1,5 +1,5 @@
 # disable
-`toloka.streaming.observer.BaseObserver.disable` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.2/src/streaming/observer.py#L47)
+`toloka.streaming.observer.BaseObserver.disable` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/streaming/observer.py#L47)
 
 ```python
 disable(self)
