@@ -41,13 +41,19 @@ If you need to add different task types to the pool, upload multiple files, one 
 
       - `Al:longitude` — longitude.
 
+  ### Examples
+
+  See examples for the different tasks types and different [data types](incoming.md#data-types).
+
+  {% cut "Tasks types" %}
+
   Task type depends on which fields are filled in.
 
   {% cut "General task" %}
 
     To create a [general task](../../glossary.md#general-task), fill in the columns with the `INPUT` header.
 
-    {% cut "Example with a simple object (string, link, and so on)" %}
+    {% cut "Example with a simple object ([string](incoming.md#string), [link](incoming.md#url), and so on)" %}
 
     ![](../_images/location-job/pool_csv/main_tsv.png)
 
@@ -129,6 +135,186 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% endcut %}
 
+  {% endcut %}
+
+  {% cut "Data types" %}
+
+  {% cut "Integer / float" %}
+
+  {% include [toloka-requester-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
+
+  ```
+  INPUT:height
+  1
+  2.3
+  ```
+
+  {% endcut %}
+
+  {% cut "String" %}
+
+  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+
+  ```
+  INPUT:comment
+  Hi
+  Very nice
+  This, but
+  "Text with ""qoutes""."
+  "Text with \n or \t"
+  "Text with ""quotes"" and ,"
+  ```
+
+  {% endcut %}
+
+  {% cut "URL" %}
+
+  ```
+  INPUT:link
+  https://www.example.com
+  https://site.com
+  ```
+
+  {% endcut %}
+
+  {% cut "Boolean" %}
+
+  ```
+  INPUT:answer
+  true
+  false
+  ```
+
+  {% endcut %}
+  
+  {% cut "Coordinates" %}
+  
+  You can use [coordinates](incoming.md#coordinates) to specify a location on the map.
+
+  ```
+  INPUT:location
+  22.3341,32.32
+  ```
+
+  {% endcut %}
+  
+  {% cut "JSON" %}
+
+  {% include [toloka-requester-json](../_includes/toloka-requester-source/id-toloka-requester-source/json.md) %}
+  
+  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+
+  ```
+  INPUT:banner
+  "{""title"":""banner"",""links"":[""https://www.example.com"",""https://site.com""],""priority"":true,""flags"":[{""type"":""horizontal""},{""type"":""wide""}]}"
+
+  ```
+
+  {% endcut %}
+  
+  {% cut "JSON in the training tasks" %}
+
+  {% include [toloka-requester-json](../_includes/toloka-requester-source/id-toloka-requester-source/json.md) %}
+
+  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+
+  {% include [toloka-requester-tsv-json](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-json.md) %}
+
+  ```
+  INPUT:banner
+  "{""title"":""banner""\,""links"":[""https://www.example.com""\,""https://site.com""]\,""priority"":true\,""flags"":[{""type"":""horizontal""}\,{""type"":""wide""}]}"
+
+  ```
+
+  {% endcut %}
+  
+  {% cut "Arrays" %}
+  
+  [Array](incoming.md#arrays) elements are separated by commas.
+  
+  {% cut "Array of integer / array of float" %}
+
+  {% include [toloka-requester-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
+
+  ```
+  INPUT:heights
+  1,2.3
+  ```
+
+  {% endcut %}
+  
+  {% cut "Array of strings" %}
+
+  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+
+  ```
+  INPUT:comments
+  "Hi,Very nice,""This, but"",Text with ""quotes"".,Text with \n or \t,""Text with """"quotes"""" and ,"""
+  ```
+
+  {% endcut %}
+  
+  {% cut "Array of URL" %}
+
+  ```
+  INPUT:links
+  "https://www.example.com,https://site.com"
+  ```
+
+  {% endcut %}
+    
+  {% cut "Array of boolean" %}
+
+  ```
+  INPUT:answers
+  true,false,true
+  ```
+
+  {% endcut %}
+
+  {% cut "Array of coordinates" %}
+
+  Each pair of [coordinates](incoming.md#coordinates) must be enclosed in `""`.
+
+  ```
+  INPUT:locations
+  """22.3341,32.32"",""22.3341,32.32"",""22.3341,32.32"""
+  ```
+
+  {% endcut %}
+
+  {% cut "Array of JSON" %}
+
+  The [array](incoming.md#arrays) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](#string).
+  
+  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+
+  ```
+  INPUT:banners
+  "{""title"":""banner1"",""links"":[""https://www.example.com"",""https://site.com""],""priority"":true,""flags"":[{""type"":""horizontal""},{""type"":""wide""}]},{""title"":""banner2"",""links"":[""https://www.example.com"",""https://site.com""],""priority"":false,""flags"":[{""type"":""vertical""},{""type"":""narrow""}]}"
+  ```
+
+  {% endcut %}
+
+  {% cut "Array of JSON in the training tasks" %}
+
+  The [array](incoming.md#arrays) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](#string).
+
+  {% include [toloka-requester-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
+
+  {% include [toloka-requester-tsv-json](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-json.md) %}
+
+  ```
+  INPUT:banners
+  "{""title"":""banner1""\,""links"":[""https://www.example.com""\,""https://site.com""]\,""priority"":true\,""flags"":[{""type"":""horizontal""}\,{""type"":""wide""}]},{""title"":""banner2""\,""links"":[""https://www.example.com""\,""https://site.com""]\,""priority"":false\,""flags"":[{""type"":""vertical""}\,{""type"":""narrow""}]}"
+  ```
+
+  {% endcut %}
+
+  {% endcut %}
+
+  {% endcut %}
+
   The columns with [required input data fields](incoming.md) must be filled. The other columns can be deleted if they are empty.
 
 - JSON
@@ -152,6 +338,12 @@ If you need to add different task types to the pool, upload multiple files, one 
       - `latitude` — latitude.
 
       - `longitude` — longitude.
+
+  ### Examples
+
+  See examples for the different tasks types and different [data types](incoming.md#data-types).
+
+  {% cut "Tasks types" %}
 
   {% cut "General task" %}
 
@@ -395,25 +587,13 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% endcut %}
 
-{% endlist %}
+  {% endcut %}
 
-## Data types
-
-{% cut "Integer / float" %}
-
-Data type for the numbers usage including floating-point numbers. The separator of fractional and integer parts is `.`.
-
-{% cut "TSV/XLSX file example" %}
-
-  ```
-  INPUT:height
-  1
-  2.3
-  ```
-
-{% endcut %}
-
-{% cut "JSON file example" %}
+  {% cut "Data types" %}
+  
+  {% cut "Integer / float" %}
+  
+  {% include [toloka-requester-integer-float](../_includes/toloka-requester-source/id-toloka-requester-source/integer-float.md) %}
 
   ```json
   [
@@ -430,58 +610,11 @@ Data type for the numbers usage including floating-point numbers. The separator 
   ]
   ```
 
-{% endcut %}
+  {% endcut %}
+  
+  {% cut "String" %}
 
-{% endcut %}
-
-{% cut "Array of integer / array of float" %}
-
-Data type for the multiple numbers usage including floating-point numbers. Array elements are separated by commas.
-
-{% cut "TSV/XLSX file example" %}
-
-  ```
-  INPUT:heights
-  1,2.3
-  ```
-
-{% endcut %}
-
-{% cut "JSON file example" %}
-
-  ```json
-  [
-    {
-      "input_values": {
-        "heights": [1, 2.3]
-      }
-    }
-  ]
-  ```
-
-{% endcut %}
-
-{% endcut %}
-
-{% cut "String" %}
-
-Data type for the lines usage. In the TSV file, the lines containing `\n`, `\t`, `"` must be enclosed in quotas. To use the `"` symbol in such a line, you need to put another `"` symbol in front of it, i.e. `""`.
-
-{% cut "TSV/XLSX file example" %}
-
-  ```
-  INPUT:comment
-  Hi
-  Very nice
-  This, but
-  "Text with ""qoutes""."
-  "Text with \n or \t"
-  "Text with ""quotes"" and ,"
-  ```
-
-{% endcut %}
-
-{% cut "JSON file example" %}
+  According to the JSON standard, double quotes `"` inside the string should be escaped with `\"`.
 
   ```json
   [
@@ -490,7 +623,7 @@ Data type for the lines usage. In the TSV file, the lines containing `\n`, `\t`,
         "comment": "Hi"
       }
     },
-   {
+    {
       "input_values": {
         "comment": "This, but"
       }
@@ -518,61 +651,28 @@ Data type for the lines usage. In the TSV file, the lines containing `\n`, `\t`,
   ]
   ```
 
-{% endcut %}
+  {% endcut %}
 
-{% cut "Array of strings" %}
-
-Data type for the multiple lines usage. In the TSV file, the lines containing `\n`, `\t`, `"` must be enclosed in `""`. To use the symbol `"` in such a string, it must be escaped twice, i.e. `""""`.
-
-{% cut "TSV/XLSX file example" %}
-
-  ```
-  INPUT:comments
-  "Hi,Very nice,""This, but"",Text with ""quotes"".,Text with \n or \t,""Text with """"quotes"""" and ,"""
-  ```
-
-{% endcut %}
-
-{% cut "JSON file example" %}
+  {% cut "URL" %}
 
   ```json
   [
     {
       "input_values": {
-        "comments": [
-            "Hi", 
-            "This, but", 
-            "Very nice", 
-            "Text with \"qoutes\".", 
-            "Text with \n or \t"
-            "Text with \"qoutes\". and ,"
-        ]
+        "link": "https://www.example.com"
+      }
+    },
+    {
+      "input_values": {
+        "link": "https://site.com"
       }
     }
   ]
   ```
 
-{% endcut %}
-
-{% endcut %}
-
-{% cut "Boolean" %}
-
-Data type which represents the result of a logical operations. You can use one of the values:
-- `true` — the statement is true.
-- `false` — the statement is false.
-
-{% cut "TSV/XLSX file example" %}
-
-  ```
-  INPUT:answer
-  true
-  false
-  ```
-
-{% endcut %}
-
-{% cut "JSON file example" %}
+  {% endcut %}
+  
+  {% cut "Boolean" %}
 
   ```json
   [
@@ -589,53 +689,11 @@ Data type which represents the result of a logical operations. You can use one o
   ]
   ```
 
-{% endcut %}
+  {% endcut %}
+  
+  {% cut "Coordinates" %}
 
-{% endcut %}
-
-{% cut "Array of boolean" %}
-
-Data type which represents the array of boolean. The separator of the values is comma.
-
-{% cut "TSV/XLSX file example" %}
-
-  ```
-  INPUT:answers
-  true,false,true
-  ```
-
-{% endcut %}
-
-{% cut "JSON file example" %}
-
-  ```json
-  [
-    {
-      "input_values": {
-        "answers": [true,false,true]
-      }
-    }
-  ]
-  ```
-
-{% endcut %}
-
-{% endcut %}
-
-{% cut "Coordinates" %}
-
-Data type for the geographical coordinates usage, it contains latitude and longitude of a map point. The separator is comma.
-
-{% cut "TSV/XLSX file example" %}
-
-  ```
-  INPUT:location
-  22.3341,32.32
-  ```
-
-{% endcut %}
-
-{% cut "JSON file example" %}
+  You can use [coordinates](incoming.md#coordinates) to specify a location on the map.
 
   ```json
   [
@@ -647,24 +705,100 @@ Data type for the geographical coordinates usage, it contains latitude and longi
   ]
   ```
 
-{% endcut %}
+  {% endcut %}
+  
+  {% cut "JSON" %}
 
-{% cut "Array of coordinates" %}
-
-Data type for the multiple coordinates usage. Use `""` to separate pairs of coordinates.
-
-{% cut "TSV/XLSX file example" %}
-
+  ```json
+  [
+    {
+      "input_values": {
+        "banner": {
+          "title": "banner",
+          "links": ["https://www.example.com", "https://site.com"],
+          "priority": true,
+          "flags": [{ "type": "horizontal" }, { "type": "wide" }]
+        }
+      }
+    }
+  ]
   ```
-  INPUT:locations
-  """22.3341,32.32"",""22.3341,32.32"",""22.3341,32.32"""
+
+  {% endcut %}
+
+  {% cut "Arrays" %}
+
+  Array elements are separated by commas.
+
+  {% cut "Array of integer / float" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "heights": [1, 2.3]
+      }
+    }
+  ]
   ```
 
-{% endcut %}
+  {% endcut %}
 
-{% cut "JSON file example" %}
+  {% cut "Array of strings" %}
 
-   ```json
+  ```json
+  [
+    {
+      "input_values": {
+        "comments": [
+          "Hi", 
+          "This, but", 
+          "Very nice", 
+          "Text with \"qoutes\".", 
+          "Text with \n or \t"
+          "Text with \"qoutes\". and ,"
+        ]
+      }
+    }
+  ]
+  ```
+
+  {% endcut %}
+
+  {% cut "Array of URL" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "links": [
+          "https://www.example.com", 
+          "https://site.com"
+        ]
+      }
+    }
+  ]
+  ```
+
+  {% endcut %}
+
+  {% cut "Array of boolean" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "answers": [true,false,true]
+      }
+    }
+  ]
+  ```
+
+  {% endcut %}
+
+  {% cut "Array of coordinates" %}
+
+  ```json
   [
     {
       "input_values": {
@@ -674,9 +808,40 @@ Data type for the multiple coordinates usage. Use `""` to separate pairs of coor
   ]
   ```
 
-{% endcut %}
+  {% endcut %}
 
-{% endcut %}
+  {% cut "Array of JSON" %}
+
+  ```json
+  [
+    {
+      "input_values": {
+        "banners": [
+          {
+            "title": "banner1",
+            "links": ["https://www.example.com", "https://site.com"],
+            "priority": true,
+            "flags": [{ "type": "horizontal" }, { "type": "wide" }]
+          },
+          {
+            "title": "banner2",
+            "links": ["example.com", "site.com"],
+            "priority": false,
+            "flags": [{ "type": "vertical" }, { "type": "narrow" }]
+          }
+        ]
+      }
+    }
+  ]
+  ```
+
+  {% endcut %}
+
+  {% endcut %}
+
+  {% endcut %}
+
+{% endlist %}
 
 ## Working with the file {#applications}
 

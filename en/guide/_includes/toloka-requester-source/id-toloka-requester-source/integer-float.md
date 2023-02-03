@@ -1,0 +1,1 @@
+You can use [integer](../../../../guide/concepts/incoming.md#integer) or [fractional](../../../../guide/concepts/incoming.md#float) numbers. The separator of fractional and integer parts is `.`.
