@@ -30,5 +30,16 @@ This component is useful in the following cases:
 || `type`<span style="color: red">\*</span> | "condition.schema" | Set component type. ||
 || `data` | _any_ | Data that should be checked. ||
 || `hint` | _string_ | Validation error message that a Toloker will see. ||
-|| `schema` | _JSON Schema draft 7_ | {% include [template-builder-condition-schema](../_includes/template-builder-condition-schema.md) %} ||
+|| `schema` | _JSON Schema draft 7_ | The schema for validating data. ||
+|| `schema.maxLength` | _integer_ | Maximum number of symbols. ||
+|| `schema.minLength` | _integer_ | Minimum number of symbols. ||
+|| `schema.pattern` | _string_ | A pattern in the form of a regular expression. ||
+|| `schema.type` | _string_ | One of the data types:
+- `string`
+- `integer`
+- `object`
+- `array`
+- `boolean`
+- `null`
+||
 |#
