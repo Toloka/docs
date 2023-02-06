@@ -6,7 +6,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-### Access {#access}
+## Access {#access}
 
 {% include [faq-give-access](../_includes/faq/project-settings/give-access.md) %}
 
@@ -60,6 +60,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-change-background](../_includes/faq/project-settings/change-background.md) %}
 
+{% include [faq-own-colors](../_includes/faq/project-settings/own-colors.md) %}
+
 {% include [faq-validate-data](../_includes/faq/project-settings/validate-data.md) %}
 
 {% include [faq-assigment-validation](../_includes/faq/project-settings/assigment-validation.md) %}
@@ -84,7 +86,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-no-selectable-object](../_includes/faq/project-settings/no-selectable-object.md) %}
 
-## Input and output data {#concept_cjj_gkp_smb}
+## Input and output data {#input-output-data}
 
 {% include [faq-insert-function](../_includes/faq/project-settings/insert-function.md) %}
 
@@ -95,5 +97,11 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 {% include [faq-output-data](../_includes/faq/project-settings/output-data.md) %}
 
 {% include [faq-control-product](../_includes/faq/project-settings/control-product.md) %}
+
+### Other questions {#other}
+
+{% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
+
+{% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

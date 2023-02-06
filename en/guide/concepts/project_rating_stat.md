@@ -23,4 +23,6 @@ The project rating is the average rating across all categories. Pay particular a
 
 {% include [troubleshooting-low-rating-communication](../_includes/troubleshooting/result-questions/low-rating-communication.md) %}
 
+{% endcut %}
+
 {% include [contact-support](../_includes/contact-support.md) %}

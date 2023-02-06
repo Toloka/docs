@@ -228,6 +228,8 @@ You should also check the [banned Tolokers](#banned-users) and [banned by rules]
 
 {% include [troubleshooting-speed-dropped](../_includes/troubleshooting/pool-setup/speed-dropped.md) %}
 
+{% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
+
 {% include [faq-speed-up-completion](../_includes/faq/pool-setup/speed-up-completion.md) %}
 
 {% include [troubleshooting-max-number](../_includes/troubleshooting/pool-setup/max-number.md) %}

@@ -113,4 +113,10 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 - [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
 - [Crowdsourcing course](https://toloka.ai/academy/self-study-guide/)
 
+## Troubleshooting {#troubleshooting}
+
+{% include [faq-task-suitable](../_includes/faq/register-and-start/task-suitable.md) %}
+
+{% include [faq-start-new-project](../_includes/faq/register-and-start/start-new-project.md) %}
+
 {% include [contact-support](../_includes/contact-support.md) %}

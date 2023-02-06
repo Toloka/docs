@@ -40,7 +40,7 @@ In the section contents, select the stage where you encountered the problem and 
 
 {% include [troubleshooting-radio-attr-disappear](../_includes/troubleshooting/project-settings/radio-attr-disappear.md) %}
 
-### Configuring the task interface {#concept_gss_fkp_smb}
+### Configuring the task interface {#task-interface}
 
 {% include [troubleshooting-cant-upoad-file](../_includes/troubleshooting/project-settings/cant-upoad-file.md) %}
 
@@ -84,7 +84,7 @@ In the section contents, select the stage where you encountered the problem and 
 
 ## Adding tasks to a pool {#add-task-to-pool}
 
-### Uploading tasks {#concept_iy1_3kh_5mb}
+### Uploading tasks {#uploading-tasks}
 
 {% include [troubleshooting-preview-all-photos](../_includes/troubleshooting/adding-tasks-to-the-pool/preview-all-photos.md) %}
 
@@ -104,7 +104,7 @@ In the section contents, select the stage where you encountered the problem and 
 
 {% include [troubleshooting-uploading-too-long](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-too-long.md) %}
 
-### Training-exam-retry {#concept_i2g_kkh_5mb}
+### Training-exam-retry {#training-exam}
 
 {% include [troubleshooting-more-tolokers-trained](../_includes/troubleshooting/adding-tasks-to-the-pool/more-tolokers-trained.md) %}
 
@@ -167,5 +167,17 @@ In the section contents, select the stage where you encountered the problem and 
 {% include [troubleshooting-include-responses](../_includes/troubleshooting/users/include-responses.md) %}
 
 {% include [troubleshooting-trusted-user-banned](../_includes/troubleshooting/users/trusted-user-banned.md) %}
+
+## API {#api}
+
+{% include [troubleshooting-token-expired](../_includes/troubleshooting/api/token-expired.md) %}
+
+{% include [troubleshooting-uploading-data](../_includes/troubleshooting/api/uploading-data.md) %}
+
+{% include [troubleshooting-access-denied](../_includes/troubleshooting/api/access-denied.md) %}
+
+{% include [troubleshooting-tasks-not-created](../_includes/troubleshooting/api/tasks-not-created.md) %}
+
+{% include [troubleshooting-insert-links-error](../_includes/troubleshooting/api/insert-links-error.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

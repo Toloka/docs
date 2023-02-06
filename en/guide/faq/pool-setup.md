@@ -112,7 +112,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
-{% include [faq-specific-number](../_includes/faq/project-settings/specific-number.md) %}
+{% include [faq-specific-number](../_includes/faq/pool-setup/specific-number.md) %}
 
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 

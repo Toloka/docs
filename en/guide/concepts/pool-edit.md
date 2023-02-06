@@ -283,6 +283,8 @@ Yes. Open edit mode for the pool and set a new overlap value. You don't need to 
 
 {% include [troubleshooting-speed-dropped](../_includes/troubleshooting/pool-setup/speed-dropped.md) %}
 
+{% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
+
 {% include [faq-speed-up-completion](../_includes/faq/pool-setup/speed-up-completion.md) %}
 
 {% include [faq-change-time-for-task](../_includes/faq/adding-tasks-to-the-pool/change-time-for-task.md) %}

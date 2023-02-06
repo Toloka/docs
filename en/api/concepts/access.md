@@ -28,3 +28,9 @@ Working with the Toloka API requires an OAuth access token. [Register](../../gui
 [![Accessing the API](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png)
 
 {% include [image-styles](../../../_includes/image-styles.md) %}
+
+## Troubleshooting {#troubleshooting}
+
+{% include [troubleshooting-token-expired](../../guide/_includes/troubleshooting/api/token-expired.md) %}
+
+{% include [troubleshooting-access-denied](../../guide/_includes/troubleshooting/api/access-denied.md) %}

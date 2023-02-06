@@ -127,6 +127,8 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 
 {% include [faq-complex-task](../_includes/faq/questions-about-templates/complex-task.md) %}
 
+{% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
+
 {% include [faq-validation-depending-checkbox](../_includes/faq/questions-about-templates/validation-depending-checkbox.md) %}
 
 {% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}

@@ -42,4 +42,6 @@ If you want to delete your requester account:
 
 {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
+{% include [faq-delete-account](../_includes/faq/account/delete-account.md) %}
+
 {% include [contact-support](../_includes/contact-support.md) %}

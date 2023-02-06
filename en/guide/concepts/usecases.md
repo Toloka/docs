@@ -174,6 +174,8 @@ Learn more about how to [set up pricing](dynamic-pricing.md#section_wb1_lhl_vlb)
 
 {% include [faq-complex-task](../_includes/faq/questions-about-templates/complex-task.md) %}
 
+{% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
+
 {% include [faq-validation-depending-checkbox](../_includes/faq/questions-about-templates/validation-depending-checkbox.md) %}
 
 {% include [faq-limit-source-photo](../_includes/faq/questions-about-templates/limit-source-photo.md) %}

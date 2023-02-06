@@ -474,6 +474,8 @@ items:
         href: guide/faq/register-and-start.md
       - name: Sandbox
         href: guide/faq/sandbox.md
+      - name: Account
+        href: guide/faq/account.md
       - name: Setting up a project
         href: guide/faq/project-settings.md
       - name: Setting up a pool
@@ -490,6 +492,8 @@ items:
         href: guide/faq/users.md
       - name: Questions about presets
         href: guide/faq/questions-about-templates.md
+      - name: API
+        href: guide/faq/api.md
   - name: Troubleshooting
     items:
       - name: Troubleshooting
@@ -512,6 +516,8 @@ items:
         href: guide/troubleshooting/users.md
       - name: Questions about presets
         href: guide/troubleshooting/questions-about-templates.md
+      - name: API
+        href: guide/troubleshooting/api.md
       - name: Support
         href: guide/troubleshooting/support.md
   - name: Success stories

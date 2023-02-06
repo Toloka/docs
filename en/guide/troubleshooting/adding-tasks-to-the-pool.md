@@ -6,7 +6,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-## Uploading tasks {#concept_iy1_3kh_5mb}
+## Uploading tasks {#uploading-tasks}
 
 {% include [troubleshooting-preview-all-photos](../_includes/troubleshooting/adding-tasks-to-the-pool/preview-all-photos.md) %}
 
@@ -26,7 +26,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [troubleshooting-uploading-too-long](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-too-long.md) %}
 
-## Training-exam-retry {#concept_i2g_kkh_5mb}
+## Training-exam-retry {#training-exam}
 
 {% include [troubleshooting-more-tolokers-trained](../_includes/troubleshooting/adding-tasks-to-the-pool/more-tolokers-trained.md) %}
 
@@ -34,7 +34,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-distribute-tasks-training](../_includes/faq/adding-tasks-to-the-pool/distribute-tasks-training.md) %}
 
-## Changing a running pool {#concept_olz_kkh_5mb}
+## Changing a running pool {#changing-pool}
 
 {% include [faq-delete-one-of-file](../_includes/faq/adding-tasks-to-the-pool/delete-one-of-file.md) %}
 

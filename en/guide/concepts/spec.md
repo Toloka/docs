@@ -256,6 +256,8 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
 
 {% include [faq-change-background](../_includes/faq/project-settings/change-background.md) %}
 
+{% include [faq-own-colors](../_includes/faq/project-settings/own-colors.md) %}
+
 {% include [faq-sliders](../_includes/faq/project-settings/sliders.md) %}
 
 {% include [faq-expand-window](../_includes/faq/project-settings/expand-window.md) %}

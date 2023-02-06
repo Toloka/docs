@@ -14,6 +14,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-add-money](../_includes/faq/finance/add-money.md) %}
 
+{% include [faq-download-pdf](../_includes/faq/finance/download-pdf.md) %}
+
 [Get closing documents and invoices](../troubleshooting/support.md)
 
 [Refund money transferred to the Toloka account](../troubleshooting/support.md)

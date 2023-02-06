@@ -10,7 +10,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [troubleshooting-tags-disappear](../_includes/troubleshooting/project-settings/tags-disappear.md) %}
 
-## Configuring the task interface {#concept_gss_fkp_smb}
+## Configuring the task interface {#task-interface}
 
 {% include [troubleshooting-cant-upoad-file](../_includes/troubleshooting/project-settings/cant-upoad-file.md) %}
 

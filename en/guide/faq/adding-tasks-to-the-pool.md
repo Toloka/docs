@@ -6,7 +6,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-## Uploading tasks {#concept_iy1_3kh_5mb}
+## Uploading tasks {#uploading-tasks}
 
 {% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
@@ -46,7 +46,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-two-versions-text](../_includes/faq/adding-tasks-to-the-pool/two-versions-text.md) %}
 
-## Training-exam-retry {#concept_i2g_kkh_5mb}
+## Training-exam-retry {#training-exam}
 
 {% include [faq-precede-with-control-questions](../_includes/faq/adding-tasks-to-the-pool/precede-with-control-questions.md) %}
 
@@ -86,7 +86,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-file-with-training-tasks](../_includes/faq/adding-tasks-to-the-pool/file-with-training-tasks.md) %}
 
-## Changing a running pool {#concept_olz_kkh_5mb}
+## Changing a running pool {#changing-pool}
 
 {% include [faq-change-time-for-task](../_includes/faq/adding-tasks-to-the-pool/change-time-for-task.md) %}
 

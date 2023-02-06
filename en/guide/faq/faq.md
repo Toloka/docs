@@ -10,9 +10,17 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-task-suitable](../_includes/faq/register-and-start/task-suitable.md) %}
 
+{% include [faq-start-new-project](../_includes/faq/register-and-start/start-new-project.md) %}
+
 {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
 {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
+
+{% include [faq-partnership](../_includes/faq/register-and-start/partnership.md) %}
+
+## Account {#account}
+
+{% include [faq-delete-account](../_includes/faq/account/delete-account.md) %}
 
 ## Sandbox {#sandbox}
 
@@ -84,6 +92,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-change-background](../_includes/faq/project-settings/change-background.md) %}
 
+{% include [faq-own-colors](../_includes/faq/project-settings/own-colors.md) %}
+
 {% include [faq-validate-data](../_includes/faq/project-settings/validate-data.md) %}
 
 {% include [faq-assigment-validation](../_includes/faq/project-settings/assigment-validation.md) %}
@@ -108,7 +118,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-no-selectable-object](../_includes/faq/project-settings/no-selectable-object.md) %}
 
-### Input and output data {#concept_cjj_gkp_smb}
+### Input and output data {#input-output-data}
 
 {% include [faq-insert-function](../_includes/faq/project-settings/insert-function.md) %}
 
@@ -119,6 +129,12 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 {% include [faq-output-data](../_includes/faq/project-settings/output-data.md) %}
 
 {% include [faq-control-product](../_includes/faq/project-settings/control-product.md) %}
+
+### Other questions {#other}
+
+{% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
+
+{% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
 
 ## Setting up a pool {#pool-settings}
 
@@ -188,8 +204,6 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
-{% include [faq-smart-mixing-after-uploading](../_includes/faq/adding-tasks-to-the-pool/smart-mixing-after-uploading.md) %}
-
 {% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
 {% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
@@ -228,7 +242,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
-{% include [faq-specific-number](../_includes/faq/project-settings/specific-number.md) %}
+{% include [faq-specific-number](../_includes/faq/pool-setup/specific-number.md) %}
 
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
@@ -244,7 +258,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 ## Adding tasks to a pool {#add-task-to-pool}
 
-### Uploading tasks {#concept_iy1_3kh_5mb}
+### Uploading tasks {#uploading-tasks}
 
 {% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
@@ -278,13 +292,15 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/smart-mixing.md) %}
 
+{% include [faq-smart-mixing-after-uploading](../_includes/faq/adding-tasks-to-the-pool/smart-mixing-after-uploading.md) %}
+
 {% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
 {% include [faq-processing-log](../_includes/faq/adding-tasks-to-the-pool/processing-log.md) %}
 
 {% include [faq-two-versions-text](../_includes/faq/adding-tasks-to-the-pool/two-versions-text.md) %}
 
-### Training-exam-retry {#concept_i2g_kkh_5mb}
+### Training-exam-retry {#training-exam}
 
 {% include [faq-precede-with-control-questions](../_includes/faq/adding-tasks-to-the-pool/precede-with-control-questions.md) %}
 
@@ -324,7 +340,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-file-with-training-tasks](../_includes/faq/adding-tasks-to-the-pool/file-with-training-tasks.md) %}
 
-### Changing a running pool {#concept_olz_kkh_5mb}
+### Changing a running pool {#changing-pool}
 
 {% include [faq-change-time-for-task](../_includes/faq/adding-tasks-to-the-pool/change-time-for-task.md) %}
 
@@ -402,6 +418,8 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-add-money](../_includes/faq/finance/add-money.md) %}
 
+{% include [faq-download-pdf](../_includes/faq/finance/download-pdf.md) %}
+
 [Get closing documents and invoices](../troubleshooting/support.md)
 
 [Refund money transferred to the Toloka account](../troubleshooting/support.md)
@@ -454,7 +472,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 ## Questions about presets {#question-about-templates}
 
-### Selecting a preset {#concept_tfh_pgd_rmb}
+### Selecting a preset {#selecting-preset}
 
 {% include [faq-complex-task](../_includes/faq/questions-about-templates/complex-task.md) %}
 
@@ -468,7 +486,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-validation-depending-checkbox](../_includes/faq/questions-about-templates/validation-depending-checkbox.md) %}
 
-### Area selection {#concept_bdk_qgd_rmb}
+### Area selection {#area-selection}
 
 {% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
 
@@ -484,7 +502,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-control-area-selection](../_includes/faq/questions-about-templates/control-area-selection.md) %}
 
-### Field task {#concept_k1m_rgd_rmb}
+### Field task {#field-task}
 
 {% include [faq-limit-source-photo](../_includes/faq/questions-about-templates/limit-source-photo.md) %}
 
@@ -497,5 +515,9 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 {% include [faq-simple-survey](../_includes/faq/questions-about-templates/simple-survey.md) %}
 
 {% include [faq-survey-single-question](../_includes/faq/questions-about-templates/survey-single-question.md) %}
+
+## API {#api}
+
+{% include [faq-auto-acceptance](../_includes/faq/api/auto-acceptance.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

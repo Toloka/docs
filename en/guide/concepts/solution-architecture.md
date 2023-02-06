@@ -113,4 +113,6 @@ Examples where decomposition is used:
 
 {% include [faq-complex-task](../_includes/faq/questions-about-templates/complex-task.md) %}
 
+{% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
+
 {% include [contact-support](../_includes/contact-support.md) %}

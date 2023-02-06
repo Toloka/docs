@@ -6,7 +6,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% endnote %}
 
-## Selecting a preset {#concept_tfh_pgd_rmb}
+## Selecting a preset {#selecting-preset}
 
 {% include [faq-complex-task](../_includes/faq/questions-about-templates/complex-task.md) %}
 
@@ -20,7 +20,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-validation-depending-checkbox](../_includes/faq/questions-about-templates/validation-depending-checkbox.md) %}
 
-## Area selection {#concept_bdk_qgd_rmb}
+## Area selection {#area-selection}
 
 {% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
 
@@ -36,7 +36,7 @@ If you are looking for the answer to a specific question, use **Ctrl+F** to sear
 
 {% include [faq-control-area-selection](../_includes/faq/questions-about-templates/control-area-selection.md) %}
 
-## Field task {#concept_k1m_rgd_rmb}
+## Field task {#field-task}
 
 {% include [faq-limit-source-photo](../_includes/faq/questions-about-templates/limit-source-photo.md) %}
 
