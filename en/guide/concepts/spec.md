@@ -6,15 +6,13 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-The **task interface** defines the visual appearance of the task for the Toloker and the logic for processing responses.
+The task interface defines the visual appearance of the [task](../../glossary.md#task) for the Toloker and the logic for processing responses.
 
 A user-friendly interface improves the quality of results, helps Tolokers complete tasks faster, and lets you set a lower price per task.
 
 To learn how to create a user-friendly interface, read the article in our [knowledge base]({{ toloka-knowledge-base }}).
 
 ## Interface configuration block {#interface-section}
-
-Hover over an item in the image to see a hint:
 
 ![](../_images/location-job/spec.png)
 
@@ -24,7 +22,7 @@ To open the **HTML**, **CSS**, and **JS** blocks in the interface, click the blo
 
 {% endnote %}
 
-## HTML block {#html}
+### HTML block {#html}
 
 Add elements for the [input and output data](incoming.md) to display in the task interface in this block. You can use special components or HTML tags inside the `<body>` tag.
 
@@ -75,7 +73,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 {% endcut %}
 
-## JavaScript block {#js}
+### JavaScript block {#js}
 
 In the **JS** block, you can add rules for response processing in JavaScript. [Special extensions for task classes](spec-advanced.md) are available for this purpose.
 
@@ -83,7 +81,7 @@ You can also connect JavaScript libraries to create the interface. For example, 
 
 To connect the JavaScript library, click the ![](../_images/settings.svg) button in the **Task interface** block and add links to libraries in the **JS** field.
 
-## CSS block {#css}
+### CSS block {#css}
 
 In the **CSS** block, you can declare the design for tags and classes. For example, the indent at the bottom after a text field with the `task-text` class:
 
