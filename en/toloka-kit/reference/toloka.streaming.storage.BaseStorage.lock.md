@@ -1,5 +1,5 @@
 # lock
-`toloka.streaming.storage.BaseStorage.lock` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/storage.py#L28)
+`toloka.streaming.storage.BaseStorage.lock` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/streaming/storage.py#L28)
 
 ```python
 lock(self, key: str)

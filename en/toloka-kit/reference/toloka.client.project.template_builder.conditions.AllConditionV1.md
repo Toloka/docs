@@ -1,5 +1,5 @@
 # AllConditionV1
-`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/conditions.py#L45)
+`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/conditions.py#L45)
 
 ```python
 AllConditionV1(

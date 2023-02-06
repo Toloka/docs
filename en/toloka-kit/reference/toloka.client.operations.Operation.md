@@ -1,5 +1,5 @@
 # Operation
-`toloka.client.operations.Operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/operations.py#L51)
+`toloka.client.operations.Operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/operations.py#L51)
 
 ```python
 Operation(
@@ -38,5 +38,5 @@ awarding bonuses) are processed as asynchronous operations that run in the backg
 
 | Method | Description |
 | :------| :-----------|
-[is_completed](toloka.client.operations.Operation.is_completed.md)| Returns True if the operation is completed. Status equals SUCCESS or FAIL.
+[is_completed](toloka.client.operations.Operation.is_completed.md)| Returns `True` if the operation is completed. Status equals SUCCESS or FAIL.
 [raise_on_fail](toloka.client.operations.Operation.raise_on_fail.md)| Raises FailedOperation exception if status is FAIL. Otherwise does nothing.

@@ -1,5 +1,5 @@
 # aggregate_solutions_by_pool
-`toloka.async_client.client.AsyncTolokaClient.aggregate_solutions_by_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.aggregate_solutions_by_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L0)
 
 Starts aggregation of responses in all completed tasks in a pool.
 
@@ -35,10 +35,10 @@ The example shows how to aggregate responses in a pool.
 
 ```python
 aggregation_operation = toloka_client.aggregate_solutions_by_pool(
-        type=toloka.aggregation.AggregatedSolutionType.WEIGHTED_DYNAMIC_OVERLAP,
+        type=toloka.client.aggregation.AggregatedSolutionType.WEIGHTED_DYNAMIC_OVERLAP,
         pool_id=some_existing_pool_id,
         answer_weight_skill_id=some_skill_id,
-        fields=[toloka.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]
+        fields=[toloka.client.aggregation.PoolAggregatedSolutionRequest.Field(name='result')]
     )
 aggregation_operation = toloka_client.wait_operation(aggregation_operation)
 aggregation_results = list(toloka_client.get_aggregated_solutions(aggregation_operation.id))

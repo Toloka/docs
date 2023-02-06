@@ -1,5 +1,5 @@
 # RegionByPhone
-`toloka.client.filter.RegionByPhone` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L485)
+`toloka.client.filter.RegionByPhone` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/filter.py#L485)
 
 ```python
 RegionByPhone(

@@ -1,5 +1,5 @@
 # Key
-`toloka.client.filter.Profile.Key` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L182)
+`toloka.client.filter.Profile.Key` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/filter.py#L182)
 
 Filter names in the `profile` category.
 

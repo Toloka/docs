@@ -1,5 +1,5 @@
 # MediaFileFieldV1
-`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/fields.py#L340)
+`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/fields.py#L340)
 
 ```python
 MediaFileFieldV1(
@@ -30,7 +30,7 @@ field.file for a more flexible configuration of the file types.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`accept`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Accept](toloka.client.project.template_builder.fields.MediaFileFieldV1.Accept.md)\]\]**|<p>Adds different buttons for four types of uploads. Pass the true value for the ones that you need. For example, if you need a button for uploading files from the gallery, add the &quot;gallery&quot;: true property</p>
+`accept`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Accept](toloka.client.project.template_builder.fields.MediaFileFieldV1.Accept.md)\]\]**|<p>Adds different buttons for four types of uploads. Pass the `True` value for the ones that you need. For example, if you need a button for uploading files from the gallery, add the `gallery=True`.</p>
 `multiple`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Determines whether multiple files can be uploaded:</p>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>
 `label`|**Optional\[Any\]**|<p>Label above the component.</p>

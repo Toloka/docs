@@ -1,5 +1,5 @@
 # AutoQuality
-`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/autoquality/optimizer.py#L212)
+`toloka.autoquality.optimizer.AutoQuality` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/autoquality/optimizer.py#L212)
 
 ```python
 AutoQuality(
@@ -12,7 +12,7 @@ AutoQuality(
     exam_skill_id: Optional[str] = None,
     label_field: str = 'label',
     n_iter: int = 10,
-    parameter_distributions: Dict = _Nothing.NOTHING,
+    parameter_distributions: Dict = ...,
     score_func: Callable = default_calc_scores,
     ranking_func: Callable = default_calc_ranks,
     create_autoquality_pool_func: Callable = _create_autoquality_pool_default

@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.classification.majority_vote.MajorityVote.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/majority_vote.py#L127)
+`crowdkit.aggregation.classification.majority_vote.MajorityVote.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/classification/majority_vote.py#L127)
 
 ```python
 fit_predict(

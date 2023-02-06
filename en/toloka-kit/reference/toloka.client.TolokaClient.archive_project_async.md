@@ -1,5 +1,5 @@
 # archive_project_async
-`toloka.client.TolokaClient.archive_project_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1037)
+`toloka.client.TolokaClient.archive_project_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L1051)
 
 ```python
 archive_project_async(self, project_id: str)

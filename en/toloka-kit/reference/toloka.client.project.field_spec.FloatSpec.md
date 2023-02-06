@@ -1,5 +1,5 @@
 # FloatSpec
-`toloka.client.project.field_spec.FloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/field_spec.py#L100)
+`toloka.client.project.field_spec.FloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/field_spec.py#L100)
 
 ```python
 FloatSpec(

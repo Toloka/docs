@@ -1,5 +1,5 @@
 # update_charts
-`toloka.metrics.jupyter_dashboard.DashBoard.update_charts` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/jupyter_dashboard.py#L301)
+`toloka.metrics.jupyter_dashboard.DashBoard.update_charts` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/jupyter_dashboard.py#L301)
 
 ```python
 update_charts(self, n_intervals: int)

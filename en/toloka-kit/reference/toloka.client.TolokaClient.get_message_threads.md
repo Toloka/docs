@@ -1,5 +1,5 @@
 # get_message_threads
-`toloka.client.TolokaClient.get_message_threads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L963)
+`toloka.client.TolokaClient.get_message_threads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L977)
 
 Finds all message threads that match certain criteria.
 

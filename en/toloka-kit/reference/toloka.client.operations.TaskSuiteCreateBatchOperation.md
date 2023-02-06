@@ -1,5 +1,5 @@
 # TaskSuiteCreateBatchOperation
-`toloka.client.operations.TaskSuiteCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/operations.py#L298)
+`toloka.client.operations.TaskSuiteCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/operations.py#L298)
 
 ```python
 TaskSuiteCreateBatchOperation(
@@ -33,6 +33,6 @@ All parameters are for reference only and describe the initial parameters of the
 `parameters`|**Optional\[[Parameters](toloka.client.operations.TaskSuiteCreateBatchOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
 `finished`|**Optional\[datetime\]**|<p>The UTC date and time the operation finished.</p>
 `details`|**Optional\[Any\]**|<p>Details of the operation completion.</p>
-`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>True - Create the task suites that passed validation. Skip the rest of the task suites.</li> <li>False - If at least one of the task suites didn&#x27;t pass validation, stop the operation and   don&#x27;t create any task suites.</li> </ul>
-`allow_defaults`|**-**|<p>Overlap settings:</p> <ul> <li>True - Use the overlap that is set in the pool parameters.</li> <li>False - Use the overlap that is set in the task parameters (in the overlap field).</li> </ul>
+`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>`True` — Create the task suites that passed validation. Skip the rest of the task suites.</li> <li>`False` — If at least one of the task suites didn&#x27;t pass validation, stop the operation and   don&#x27;t create any task suites.</li> </ul>
+`allow_defaults`|**-**|<p>Overlap settings:</p> <ul> <li>`True` — Use the overlap that is set in the pool parameters.</li> <li>`False` — Use the overlap that is set in the task parameters (in the overlap field).</li> </ul>
 `open_pool`|**-**|<p>Open the pool immediately after creating the task suites, if the pool is closed.</p>

@@ -1,5 +1,5 @@
 # Type
-`toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/pool/speed_quality_balance_config.py#L19)
+`toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/pool/speed_quality_balance_config.py#L19)
 
 The type of the filter used in [SpeedQualityBalanceConfig](toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig.md).
 

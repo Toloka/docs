@@ -1,5 +1,5 @@
 # get_operation
-`toloka.client.TolokaClient.get_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2697)
+`toloka.client.TolokaClient.get_operation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L2715)
 
 ```python
 get_operation(self, operation_id: str)

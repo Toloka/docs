@@ -1,5 +1,5 @@
 # get_tasks
-`toloka.client.TolokaClient.get_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L2369)
+`toloka.client.TolokaClient.get_tasks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L2384)
 
 Finds all tasks that match certain criteria.
 

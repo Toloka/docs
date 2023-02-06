@@ -1,5 +1,5 @@
 # ClassicViewSpec
-`toloka.client.project.view_spec.ClassicViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/view_spec.py#L64)
+`toloka.client.project.view_spec.ClassicViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/view_spec.py#L64)
 
 ```python
 ClassicViewSpec(
@@ -16,7 +16,7 @@ ClassicViewSpec(
 A classic view specification defined with HTML, CSS and JS.
 
 
-For more information, see [Toloka Requester's guide](https://toloka.ai/en/docs/)
+For more information, see the [guide](https://toloka.ai/en/docs/guide/concepts/spec).
 
 ## Parameters Description
 

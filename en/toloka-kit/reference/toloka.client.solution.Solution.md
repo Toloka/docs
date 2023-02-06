@@ -1,5 +1,5 @@
 # Solution
-`toloka.client.solution.Solution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/solution.py#L6)
+`toloka.client.solution.Solution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/solution.py#L6)
 
 ```python
 Solution(self, output_values: Dict[str, Any])

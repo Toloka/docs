@@ -1,5 +1,5 @@
 # Skill
-`toloka.client.filter.Skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/filter.py#L227)
+`toloka.client.filter.Skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/filter.py#L227)
 
 ```python
 Skill(

@@ -1,12 +1,12 @@
 # FieldTranslation
-`toloka.client.project.localization.AdditionalLanguage.FieldTranslation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/localization.py#L21)
+`toloka.client.project.localization.AdditionalLanguage.FieldTranslation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/localization.py#L21)
 
 ```python
 FieldTranslation(
     self,
     *,
     value: Optional[str] = None,
-    source: Union[Source, str, None] = _Nothing.NOTHING
+    source: Union[Source, str, None] = ...
 )
 ```
 

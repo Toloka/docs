@@ -1,5 +1,5 @@
 # UsersAssessment
-`toloka.client.collectors.UsersAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/collectors.py#L501)
+`toloka.client.collectors.UsersAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/collectors.py#L501)
 
 ```python
 UsersAssessment(self, *, uuid: Optional[UUID] = None)

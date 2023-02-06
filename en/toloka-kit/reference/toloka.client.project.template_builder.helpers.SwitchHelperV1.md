@@ -1,5 +1,5 @@
 # SwitchHelperV1
-`toloka.client.project.template_builder.helpers.SwitchHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/helpers.py#L187)
+`toloka.client.project.template_builder.helpers.SwitchHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/helpers.py#L187)
 
 ```python
 SwitchHelperV1(

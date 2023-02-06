@@ -1,5 +1,5 @@
 # SegmentationMajorityVote
-`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L13)
+`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L13)
 
 ```python
 SegmentationMajorityVote(
@@ -9,7 +9,7 @@ SegmentationMajorityVote(
 )
 ```
 
-Segmentation Majority Vote — chooses a pixel if more than half of workers voted.
+Segmentation Majority Vote - chooses a pixel if more than half of workers voted.
 
 
 This method implements a straightforward approach to the image segmentations aggregation:

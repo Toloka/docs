@@ -1,5 +1,5 @@
 # add_requester_translation
-`toloka.client.project.Project.add_requester_translation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/__init__.py#L207)
+`toloka.client.project.Project.add_requester_translation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/__init__.py#L206)
 
 ```python
 add_requester_translation(
@@ -32,16 +32,16 @@ How to add russian translation to the project:
 
 ```python
 project = toloka.Project(
-    public_name='cats vs dogs',
-    public_description='image classification',
-    public_instructions='do it pls',
+    public_name='Cats vs dogs',
+    public_description='A simple image classification',
+    public_instructions='Determine which animal is in an image',
     ...
 )
 project.set_default_language('EN')
 project.add_requester_translation(
     language='RU',
-    public_name='кошки против собак'
-    public_description='классификация изображений'
+    public_name='Кошки или собаки'
+    public_description='Простая классификация изображений'
 )
-project.add_requester_translation(language='RU', public_instructions='сделай это, пожалуйста')
+project.add_requester_translation(language='RU', public_instructions='Определите, какое животное изображено')
 ```

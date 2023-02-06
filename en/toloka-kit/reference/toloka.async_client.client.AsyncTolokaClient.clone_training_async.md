@@ -1,5 +1,5 @@
 # clone_training_async
-`toloka.async_client.client.AsyncTolokaClient.clone_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.clone_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
 
 ```python
 async clone_training_async(self, training_id: str)

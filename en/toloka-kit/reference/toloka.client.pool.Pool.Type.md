@@ -1,5 +1,5 @@
 # Type
-`toloka.client.pool.Pool.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/pool/__init__.py#L182)
+`toloka.client.pool.Pool.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/pool/__init__.py#L182)
 
 The type of a pool.
 

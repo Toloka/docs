@@ -1,5 +1,5 @@
 # TextSummarization
-`crowdkit.aggregation.texts.text_summarization.TextSummarization` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/texts/text_summarization.py#L16)
+`crowdkit.learning.text_summarization.TextSummarization` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/text_summarization.py#L16)
 
 ```python
 TextSummarization(
@@ -54,7 +54,7 @@ Proceedings of the 2nd Crowd Science Workshop: Trust, Ethics, and Excellence in 
 ```python
 import torch
 from transformers import AutoModelForSeq2SeqLM, AutoTokenizer, AutoConfig
-from crowdkit.aggregation import TextSummarization
+from crowdkit.learning import TextSummarization
 device = 'cuda' if torch.cuda.is_available() else 'cpu'
 mname = "toloka/t5-large-for-text-aggregation"
 tokenizer = AutoTokenizer.from_pretrained(mname)
@@ -66,4 +66,4 @@ result = agg.fit_predict(df)
 
 | Method | Description |
 | :------| :-----------|
-[fit_predict](crowdkit.aggregation.texts.text_summarization.TextSummarization.fit_predict.md)| Run the aggregation and return the aggregated texts.
+[fit_predict](crowdkit.learning.text_summarization.TextSummarization.fit_predict.md)| Run the aggregation and return the aggregated texts.

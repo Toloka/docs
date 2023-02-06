@@ -1,5 +1,5 @@
 # add_message_thread_to_folders
-`toloka.client.TolokaClient.add_message_thread_to_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L858)
+`toloka.client.TolokaClient.add_message_thread_to_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L872)
 
 ```python
 add_message_thread_to_folders(

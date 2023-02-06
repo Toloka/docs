@@ -1,5 +1,5 @@
 # SearchQueryHelperV1
-`toloka.client.project.template_builder.helpers.SearchQueryHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/helpers.py#L160)
+`toloka.client.project.template_builder.helpers.SearchQueryHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/helpers.py#L160)
 
 ```python
 SearchQueryHelperV1(

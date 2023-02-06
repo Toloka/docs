@@ -1,5 +1,5 @@
 # UserSkill
-`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/user_skill.py#L29)
+`toloka.client.user_skill.UserSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/user_skill.py#L29)
 
 ```python
 UserSkill(

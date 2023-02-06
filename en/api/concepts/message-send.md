@@ -271,17 +271,17 @@ Date the message was created. ||
 || **compose_details** | **object**
 
 For messages that you sent: details of the POST request for creating the message. ||
-|| **compose_details.recipients_ select_type** | **string**
+|| **compose_details.recipients_select_type** | **string**
 
 Method for selecting recipients:
 
 - `DIRECT` — Specify Toloker IDs.
 - `FILTER` — Use a [filter](filters.md) to select Tolokers.
 - `ALL` — Send the message to all Tolokers who have tried to complete a task at least once. ||
-|| **compose_details.recipients_ ids** | **object**
+|| **compose_details.recipients_ids** | **object**
 
 The list of IDs of Tolokers who will receive the message. ||
-|| **compose_details.recipients_ filter** | **object**
+|| **compose_details.recipients_filter** | **object**
 
 [Filter](filters.md) for selecting recipients. ||
 || **answerable** | **boolean**

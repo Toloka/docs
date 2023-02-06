@@ -1,6 +1,6 @@
 # Editing a pool
 
-You can edit a pool with the “Open” or “Closed” status. While editing, an open pool switches to the “CLOSED_FOR_UPDATE” status. For example, this way you can change the payout amount in a running pool.
+You can edit a pool which doesn't have the **Archived** status. While editing, an open pool switches to the “CLOSED_FOR_UPDATE” status. For example, this way you can change the payout amount in a running pool.
 
 {% note info %}
 
@@ -8,39 +8,55 @@ The cost of a task is registered at the moment when a Toloker accepts it. If the
 
 {% endnote %}
 
-To edit the pool parameters, click **Edit** at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project) page.
+To edit the pool parameters, click ![](../_images/other/project-edit-b.svg) at the top of the pool page or ![](../_images/edit.svg) in the list of pools on the [project](../../glossary.md#project) page.
 
 ![](../_images/other/pool-settings.png)
 
 ## General information {#pool-general-info}
 
-#### **Pool name**
+### Pool type
 
-The [pool](../../glossary.md#pool) name shown only to you (as a requester) on the [project](../../glossary.md#project) page.
+{% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
-#### **Public description**
+### Pool name
 
-Will be displayed instead of the project description in the task list for Tolokers and [linked training](train.md).
+{% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-#### **Private comment**
+### Pool description
 
-If necessary, you can add a private comment that will only be available to you.
+{% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+{% cut "Alternative way to edit pool information" %}
+
+To edit pool information:
+
+1. Click ![](../_images/other/project-edit-b.svg) near the pool name.
+
+1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
+
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Save**.
+
+{% endcut %}
 
 ## Price {#pool-price-info}
 
-#### **Price per task suite, $**
+### Price per task suite, $
 
 Payment per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (".") as a separator. If the **Pool type** is **General tasks**, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero. To learn more about price management, go to [Setting up pricing](dynamic-pricing.md).
 
-#### Tolokers' interest in the price
+### Toloker interest at this price
 
 Calculated automatically. Shows how the price meets Tolokers' expectations.
 
-#### Number of tasks per suite
+### Number of tasks per suite
 
 Calculated automatically. Shows the number of tasks per suite recommended for this type of project.
 
-#### **Overlap**
+### Overlap
 
 The number of Tolokers who should complete each task in the pool.
 
@@ -50,23 +66,23 @@ To save money, you can set up [dynamic overlap](../../glossary.md#dynamic-overla
 
 Dynamic overlap will help you save money. [Learn more](dynamic-overlap.md).
 
-#### Task price
+### Task price
 
 Calculated automatically.
 
 ## Audience {#pool-audience-info}
 
-#### Adult content
+### Adult content
 
-Tasks that contain some content which can be marked as adult, including shocking or pornographic content. These tasks are only assigned to Tolokers who have agreed to complete these types of tasks.
+Whether the tasks have some content which can be marked as adult, including shocking or pornographic content. Tasks with such content are only given to Tolokers who agree to complete these types of tasks.
 
-If you aren't sure whether the tasks have this kind of content, select the **My tasks may contain shocking or pornographic content** option.
+If you aren't sure whether the tasks have such content, enable the **My tasks may contain shocking or pornographic content** option.
 
-#### Filters and skills
+### Filters and skills
 
 {% include [toloka-requester-source-filters-desc](../_includes/toloka-requester-source/id-toloka-requester-source/filters-desc.md) %}
 
-#### **Speed/quality balance**
+### Speed/quality balance
 
 A [setting](adjust.md) for choosing Tolokers for your tasks. You can set the percentage or number of top-rated Tolokers.
 
@@ -74,7 +90,7 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 ## Quality control {#pool-quality-control-info}
 
-#### **Captcha frequency**
+### Captcha frequency
 
 You can choose how often [captchas](../../glossary.md#captcha) are shown to Tolokers:
 
@@ -88,7 +104,7 @@ To show the captcha to Tolokers, set [the quality control rule](captcha.md).
 
 {% include [captcha-warning](../_includes/captcha-warning.md) %}
 
-#### **Review task responses manually**
+### Review task responses manually
 
 Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 
@@ -96,7 +112,7 @@ Set the time period when you can check the tasks and reject them if the results 
 
 Learn more about task review [here](offline-accept.md) and [here](accept.md).
 
-#### **Review period in days**
+### Review period in days
 
 The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:
 
@@ -104,19 +120,19 @@ The number of days for reviewing and accepting tasks (max: 21). The Toloker will
 
 - In the history of completed tasks.
 
-#### Quality control rules
+### Quality control rules
 
 You can add other quality control rules by clicking **Add a quality control rule**. You can select ready-made sets of rules or set the rules you need manually. [Learn more](control.md).
 
 {% cut "Optional" %}
 
-#### Fast responses
+### Fast responses
 
 Restricting access for Tolokers who respond too quickly. Specify the minimum time required for completing a task suite (in seconds) and set the condition.
 
 For example: if the number of responses is > 5 and the number of quick responses is > 3, then ban the Toloker on the project for 5 days. [Learn more](quick-answers.md).
 
-#### Majority vote
+### Majority vote
 
 Evaluate Tolokers' responses by comparing them with the majority vote: reward Tolokers who give correct responses and block those who often make mistakes.
 
@@ -124,13 +140,13 @@ In the **Accept as majority** field, specify the number of matching responses th
 
 For example: if the number of responses is > 5 and the percentage of correct responses is < 60, then ban the Toloker on the project for 10 days.
 
-#### **Training**
+### Training
 
 This field is only available if you have training pools in the project.
 
 [Training pool](../../glossary.md#training-pool) that will be linked to the main one.
 
-#### Level required
+### Level required
 
 This box is only available if you filled in the **Training** box.
 
@@ -142,23 +158,25 @@ The minimum required level that you can set is 5. Tolokers who complete training
 
 ## Dynamic pricing and overlap {#pool-dynamic-price-info}
 
-#### **Dynamic pricing**
+### Dynamic pricing
 
 This parameter allows you to vary the task price depending on the Toloker's [skill](../../glossary.md#skill) level. [Learn more](dynamic-pricing.md).
 
-#### **Dynamic overlap**
+### Dynamic overlap
 
 You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap) for all pool tasks.
 
 You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. [Learn more](dynamic-overlap.md).
 
-## More settings {#pool-additional-settings-info}
+## Optional pool settings {#pool-additional-settings-info}
 
-#### **Priority**
+Click **Show advanced settings** to edit optional pool settings.
+
+### Priority
 
 Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority.
 
-#### **Time per task suite, sec**
+### Time per task suite, sec
 
 The time allowed for completing a task suite, in seconds. Uncompleted tasks are redistributed to other Tolokers.
 
@@ -166,17 +184,17 @@ We recommend spending no more than 60 seconds per task (including the time for p
 
 If you set the interval too long, the tasks will stay open for a long time. If it is too short, the tasks won't be completed and paid for.
 
-#### **Keep pool open after completion, sec**
+### Keep pool open after completion, sec
 
 The interval during which the pool will remain open from the moment all tasks are completed. Minimum — 0 (1 if you use dynamic overlap), maximum — 259200 seconds (three days).
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks.
 
-#### **Pool closing date**
+### Pool closing date
 
 The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up.
 
-#### **Pool type**
+### Pool type
 
 Specify the pool type:
 
@@ -196,9 +214,9 @@ If the price per task suite is zero, you must select the pool type.
 
 {% endnote %}
 
-#### **Keep task order**
+### Keep task order
 
-**Option disabled (default value)**
+#### Option disabled (default value)
 
 The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
 
@@ -217,7 +235,7 @@ Image 6 |  |  |
 
 {% endcut %}
 
-**Option enabled**
+#### Option enabled
 
 Tasks will be grouped on pages in the order they are listed in the task file.
 

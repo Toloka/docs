@@ -1,5 +1,5 @@
 # delete_user_restriction
-`toloka.async_client.client.AsyncTolokaClient.delete_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.delete_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
 
 ```python
 async delete_user_restriction(self, user_restriction_id: str)

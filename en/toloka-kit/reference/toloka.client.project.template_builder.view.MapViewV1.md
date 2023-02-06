@@ -1,5 +1,5 @@
 # MapViewV1
-`toloka.client.project.template_builder.view.MapViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/view.py#L429)
+`toloka.client.project.template_builder.view.MapViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/view.py#L429)
 
 ```python
 MapViewV1(

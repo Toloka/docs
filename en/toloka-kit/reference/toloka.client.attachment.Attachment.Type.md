@@ -1,5 +1,5 @@
 # Type
-`toloka.client.attachment.Attachment.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/attachment.py#L27)
+`toloka.client.attachment.Attachment.Type` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/attachment.py#L27)
 
 An enumeration.
 

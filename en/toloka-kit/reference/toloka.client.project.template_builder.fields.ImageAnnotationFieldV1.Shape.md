@@ -1,5 +1,5 @@
 # Shape
-`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Shape` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/fields.py#L290)
+`toloka.client.project.template_builder.fields.ImageAnnotationFieldV1.Shape` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/fields.py#L290)
 
 An enumeration.
 

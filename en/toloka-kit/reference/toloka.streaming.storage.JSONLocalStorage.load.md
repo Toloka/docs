@@ -1,5 +1,5 @@
 # load
-`toloka.streaming.storage.JSONLocalStorage.load` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/streaming/storage.py#L114)
+`toloka.streaming.storage.JSONLocalStorage.load` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/streaming/storage.py#L114)
 
 ```python
 load(

@@ -1,5 +1,5 @@
 # TranslateHelperV1
-`toloka.client.project.template_builder.helpers.TranslateHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/helpers.py#L267)
+`toloka.client.project.template_builder.helpers.TranslateHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/helpers.py#L267)
 
 ```python
 TranslateHelperV1(

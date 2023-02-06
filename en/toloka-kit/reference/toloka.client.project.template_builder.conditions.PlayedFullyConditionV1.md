@@ -1,5 +1,5 @@
 # PlayedFullyConditionV1
-`toloka.client.project.template_builder.conditions.PlayedFullyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/template_builder/conditions.py#L204)
+`toloka.client.project.template_builder.conditions.PlayedFullyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/conditions.py#L204)
 
 ```python
 PlayedFullyConditionV1(

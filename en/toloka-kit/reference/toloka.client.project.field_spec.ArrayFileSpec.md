@@ -1,5 +1,5 @@
 # ArrayFileSpec
-`toloka.client.project.field_spec.ArrayFileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/project/field_spec.py#L201)
+`toloka.client.project.field_spec.ArrayFileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/field_spec.py#L201)
 
 ```python
 ArrayFileSpec(

@@ -1,5 +1,5 @@
 # clone_project
-`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L1190)
+`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L1204)
 
 ```python
 clone_project(
@@ -14,7 +14,7 @@ Synchronously clones the project, all pools and trainings
 
 Emulates cloning behavior via Toloka interface:
 - the same skills will be used
-- the same quality control collectors will be used (could be changed by reuse_controllers=False)
+- the same quality control collectors will be used (could be changed by `reuse_controllers=False`)
 - the expiration date will not be changed in the new project
 - etc.
 
@@ -26,7 +26,7 @@ Doesn't copy tasks/golden tasks/training tasks.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `project_id`|**str**|<p>ID of the project to be cloned.</p>
-`reuse_controllers`|**bool**|<p>Use same quality controllers in cloned and created projects. Defaults to True. This means that all quality control rules will be applied to both projects. For example, if you have rule &quot;fast_submitted_count&quot;, fast responses counts across both projects.</p>
+`reuse_controllers`|**bool**|<p>Use same quality controllers in cloned and created projects. Defaults to `True`. This means that all quality control rules will be applied to both projects. For example, if you have rule &quot;fast_submitted_count&quot;, fast responses counts across both projects.</p>
 
 * **Returns:**
 

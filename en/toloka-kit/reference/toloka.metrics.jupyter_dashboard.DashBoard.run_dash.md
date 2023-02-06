@@ -1,5 +1,5 @@
 # run_dash
-`toloka.metrics.jupyter_dashboard.DashBoard.run_dash` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/metrics/jupyter_dashboard.py#L331)
+`toloka.metrics.jupyter_dashboard.DashBoard.run_dash` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/jupyter_dashboard.py#L331)
 
 ```python
 run_dash(

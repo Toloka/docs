@@ -1,5 +1,5 @@
 # AppBatchPatch
-`toloka.client.app.AppBatchPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/app/__init__.py#L275)
+`toloka.client.app.AppBatchPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/app/__init__.py#L275)
 
 ```python
 AppBatchPatch(self, *, name: Optional[str] = None)

@@ -1,5 +1,5 @@
 # get_app_batches
-`toloka.async_client.client.AsyncTolokaClient.get_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L0)
 
 Finds all batches that match certain criteria in an App project.
 

@@ -71,24 +71,6 @@ If you set the interval too long, the tasks will stay open for a long time. If i
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks. | **Additional settings**||
 ||**Pool closing date** | The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up. | **Add optional pool settings**||
-||**Pool type** | Specify the pool type:
-
-- **General tasks**: The main pool that contains your regular tasks.
-
-- **Exam**: A pool that contains only [control tasks](../../glossary.md#control-task).
-
-- **Training**: A main pool that consists only of [training tasks](../../glossary.md#training-task) and can have zero cost. Use it to train Tolokers before performing real tasks if the [training pool](train.md) doesn't work well for your project.
-
-- **Retry**: A pool that helps Tolokers who make mistakes improve their skills and get a second chance to complete tasks.
-
-- **Other**: If none of the previous options fit.
-
-{% note info %}
-
-If the price per task suite is zero, you must select the pool type.
-
-{% endnote %}
-| **Add optional pool settings**||
 ||**Keep task order** | **Option disabled (default value)**
 
 The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
@@ -142,6 +124,8 @@ Use this parameter to:
 
 ||**Metafields** | To pass an array of metafields, specify key and value for each metafield. | **Add optional pool settings**||
 |#
+
+{% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
 
 ## How Tolokers see pools {#pool-appear}
 

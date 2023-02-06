@@ -1,5 +1,5 @@
 # PoolSearchRequest
-`toloka.client.search_requests.PoolSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.1/src/client/search_requests.py#L223)
+`toloka.client.search_requests.PoolSearchRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/search_requests.py#L223)
 
 ```python
 PoolSearchRequest(

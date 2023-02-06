@@ -4,6 +4,12 @@
 
 Gets the list of files saved in Toloka.
 
+{% note warning %}
+
+Files are downloaded not in the order in which they were uploaded to the server.
+
+{% endnote %}
+
 ## Request {#request}
 
 {% list tabs %}
