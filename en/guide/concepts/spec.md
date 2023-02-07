@@ -14,8 +14,6 @@ To learn how to create a user-friendly interface, read the article in our [knowl
 
 ## Interface configuration block {#interface-section}
 
-![](../_images/location-job/spec.png)
-
 {% note tip %}
 
 To open the **HTML**, **CSS**, and **JS** blocks in the interface, click the block name on the right.
@@ -24,7 +22,7 @@ To open the **HTML**, **CSS**, and **JS** blocks in the interface, click the blo
 
 ### HTML block {#html}
 
-Add elements for the [input and output data](incoming.md) to display in the task interface in this block. You can use special components or HTML tags inside the `<body>` tag.
+Add elements for the [input and output data](incoming.md) to display in the task interface in this block. You can use special [components](t-components.md) or HTML tags inside the `<body>` tag.
 
 [Handlebars](t-components/handlebars.md) is used as a template engine for HTML.
 
@@ -32,7 +30,7 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 1. Open the task interface editor. To do this, find the **Task interface** section, click ![](../_images/location-job/helper-icon.svg), and select the component.
 
-    Click **More** to see an example and a full list of parameters.
+    Click **Learn more** to see an example and a full list of parameters.
 
 1. Copy the expression using the ![](../_images/copy.svg) button and paste it into the HTML block.
 
@@ -42,13 +40,19 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 {% cut "Examples of using input data" %}
 
-- **Display the text in the task.** Add the `text` field with the **string** type in the input data. Then in the task interface (in the HTML block), you can add this text as a variable, for example:
+{% cut "Display the text in the task" %}
+
+Add the `text` field with the `string` type in the input data. Then in the task interface (in the HTML block), you can add this text as a variable, for example:
 
     ```html
     <p>Read the text: not_var{{text}}</p>
     ```
 
-- **Upload a file to the task, for example, an image.** Add the `url` field with the **URL** type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
+{% endcut %}
+
+{% cut "Upload a file to the task (for example, an image)" %}
+
+Add the `url` field with the `URL` type in the input data. Then add the [Picture](t-components/img.md) component in the task interface (in the HTML block) and specify the field name in the `src` attribute:
 
     ```html
     {{img src=url width="400px" height="300px"}}
@@ -56,15 +60,23 @@ Add elements for the [input and output data](incoming.md) to display in the task
 
 {% endcut %}
 
+{% endcut %}
+
 {% cut "Examples of using output data" %}
 
-- **Ask Tolokers to enter the text.** Add the `input` field with the **string** type in the output data. Make the field mandatory. Then add the [Text input field](t-components/text.md) field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
+{% cut "Ask Tolokers to enter the text" %}
+
+Add the `input` field with the `string` type in the output data. Make the field mandatory. Then add the [Text input field](t-components/text.md) field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
 
     ```html
     {{field type="textarea" name="input" width="270px" rows=5}}
     ```
 
-- **Ask Tolokers to select one of the values.** Add the `result` field with the **string** type in the output data. Make this field mandatory and specify `Yes` and `No` as acceptable values. Then add a component [Radio button](t-components/radiobuttons.md) component in the task interface (in the HTML block) and specify the field name in the `name` attribute:
+{% endcut %}
+
+{% cut "Ask Tolokers to select one of the values" %}
+
+Add the `result` field with the `string` type in the output data. Make this field mandatory and specify `Yes` and `No` as acceptable values. Then add a component [Radio button](t-components/radiobuttons.md) component in the task interface (in the HTML block) and specify the field name in the `name` attribute:
 
     ```html
     {{field type="radio" name="result" label="Yes" value="Yes" hotkey="1"}}
@@ -72,6 +84,10 @@ Add elements for the [input and output data](incoming.md) to display in the task
     ```
 
 {% endcut %}
+
+{% endcut %}
+
+![](../_images/location-job/spec.png)
 
 ### JavaScript block {#js}
 
@@ -101,11 +117,11 @@ Changes to the input and output data, as well as the number of tasks per suite a
 
 {% endnote %}
 
-To view the resulting task, click **Preview**. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-suite). You can also complete one or more tasks and get responses.
+To view the resulting task, click **Preview task**. The preview shows a page with a task that contains standard data. Change the input data and make sure that images, links, or text are displayed correctly on the [task suite](../../glossary.md#task-suite). You can also complete one or more tasks and get responses.
 
 {% cut "How do I change the number of standard tasks?" %}
 
-You can change the number of tasks with standard data on the Preview page:
+You can change the number of tasks with standard data on the preview page:
 
 1. Click **Change input data**.
 
@@ -135,7 +151,7 @@ Add input data to check if files or text hints are displayed on the task suite. 
 
 - File upload
 
-  1. Get the sample upload file here: **Download example file**.
+  1. Get the sample upload file here: **Download sample file**.
 
   1. [Add the task data](pool_csv.md) to the file.
 
@@ -155,7 +171,7 @@ Add input data to check if files or text hints are displayed on the task suite. 
 
   1. Choose **JSON**.
 
-  1. Fill in the data for verification in [JSON format]({{ json-format }}).
+  1. Fill in the data for verification in the [JSON]({{ json-format }}) format.
 
       If the box is bordered in red, the JSON is not valid and the data won't be saved.
 
@@ -187,12 +203,25 @@ To change the set of controls, click **Show common interface elements** at the b
 
 By default, the task suite displays:
 
-- **Time remaining** (counts down the time for completing the task).
+- **Remaining time**: Counts down the time for completing the task.
 
 - **Price per task suite**.
-- **Task name** (project name).
 
-- The following buttons: **Message to requester**, **Guidelines**, **Fullscreen**, **Submit**, **Skip**, **Exit**.
+- **Task name**: Corresponds to the project name.
+
+- The following buttons:
+
+  - **Contact requester button**.
+
+  - **Instructions**.
+
+  - **Fullscreen**.
+
+  - **Submit**.
+
+  - **Skip**.
+
+  - **Exit**.
 
 {% note tip %}
 
