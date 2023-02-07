@@ -97,7 +97,7 @@ There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each su
 
 {% endcut %}
 
-If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
+If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/troubleshooting.md#add-gs).
 
 {% cut "What for" %}
 

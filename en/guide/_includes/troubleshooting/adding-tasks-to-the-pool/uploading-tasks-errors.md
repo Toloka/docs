@@ -1,10 +1,10 @@
 {% cut "Errors when uploading tasks in the pool" %}
 
-## Errors in column headers
+### Errors in column headers
 
 If the [column headings](../../../../guide/concepts/pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
 
-## Processing errors tables
+### Processing errors tables
 
 ```json
 "parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",

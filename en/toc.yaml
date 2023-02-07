@@ -84,7 +84,7 @@ items:
       - name: Surveys
         items:
           - name: Overview
-            href: guide/tutorials/questionnaire-overview.md        
+            href: guide/tutorials/questionnaire-overview.md
           - name: Survey with Toloka template
             href: guide/tutorials/questionnaire-toloka.md
           - name: Survey on third-party platform
@@ -495,31 +495,9 @@ items:
       - name: API
         href: guide/faq/api.md
   - name: Troubleshooting
-    items:
-      - name: Troubleshooting
-        href: guide/troubleshooting/troubleshooting.md
-      - name: Registration and getting started
-        href: guide/troubleshooting/register-and-start.md
-      - name: Sandbox
-        href: guide/troubleshooting/sandbox.md
-      - name: Setting up a project
-        href: guide/troubleshooting/project-settings.md
-      - name: Setting up a pool
-        href: guide/troubleshooting/pool-setup.md
-      - name: Adding tasks to a pool
-        href: guide/troubleshooting/adding-tasks-to-the-pool.md
-      - name: Working with results
-        href: guide/troubleshooting/result-questions.md
-      - name: Payments
-        href: guide/troubleshooting/finance.md
-      - name: Tolokers
-        href: guide/troubleshooting/users.md
-      - name: Questions about presets
-        href: guide/troubleshooting/questions-about-templates.md
-      - name: API
-        href: guide/troubleshooting/api.md
-      - name: Support
-        href: guide/troubleshooting/support.md
+    href: guide/troubleshooting/troubleshooting.md
+  - name: Support
+    href: guide/troubleshooting/support.md
   - name: Success stories
     href: https://toloka.ai/success-stories/
   - name: Glossary
