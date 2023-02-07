@@ -11,7 +11,7 @@ Take a look at an example: the labeling interface includes text and a microphone
 {% cut "Components used in the example" %}
 
 - [view.list](../reference/view.list.md): Displays data in a list.
-- [view.text](../reference/view.text.md): Adds the text you want to record
+- [view.text](../reference/view.text.md): Adds the text you want to record.
 
   {% cut "Show code" %}
   
@@ -119,7 +119,7 @@ In this example, the text is highlighted with a blue border.
 
 ## Add a response field {#add-text-area}
 
-To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
+If you want that Tolokers give an extended response, add a text field using the [field.textarea](../reference/field.textarea.md).
 
 {% cut "Show code" %}
 
@@ -139,4 +139,37 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/W3ojB79U3xtvqs)
 
-## Add a condition (##add-a-condition)
+
+
+## Add a condition {#add-a-condition}
+
+The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected.
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "helper.if",
+  "condition": {
+    "type": "condition.equals",
+    "data": {
+      "type": "data.output",
+      "path": "answer"
+    },
+    "to": "no"
+  },
+  "then": {
+    "type": "field.text",
+    "label": "Why?",
+    "placeholder": "Describe why you couldn't upload the recording...",
+    "data": {
+      "type": "data.output",
+      "path": "comment"
+    }
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/EiTQbxAc3y3JsR)
