@@ -10,7 +10,7 @@ Handlebars is a template engine that uses templates to simplify HTML creation.
 
 Templates look like regular HTML code with [Handlebars expressions](#expressions) added to it. When the template is executed, the expressions are replaced with the input parameter values.
 
-The `toloka-handlebars-templates` library is connected to the project by default. It contains a set of components and the `TolokaHandlebarsTask` and `TolokaHandlebarsTaskSuite` classes that are added to the basic [TolokaTask](../js/task.md) and [TolokaTaskSuite](../js/tasksuite.md) classes and extend them.
+The `toloka-handlebars-templates` library is connected to the project by default. It contains a set of components and the `TolokaHandlebarsTask` and `TolokaHandlebarsTaskSuite` classes that are added to the basic [Task](../js/task.md) and [TaskSuite](../js/tasksuite.md) classes and extend them.
 
 ## Expressions {#expressions}
 
