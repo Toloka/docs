@@ -84,20 +84,20 @@ View corrected example in the sandbox.
 
 ## Troubleshooting {#troubleshooting}
 
-To display a shortcut in the interface, set the shortcut to the same [action](../troubleshooting/../reference/actions.md) that is performed when the button is clicked.
+To display a shortcut in the interface, set the shortcut to the same [action](../reference/actions.md) that is performed when the button is clicked.
 
 Assign an action to the component if you haven't yet:
-- [action.set](../troubleshooting/../reference/action.set.md) for radio buttons.
-- [action.toggle](../troubleshooting/../reference/action.toggle.md) for checkboxes.
-- [action.play-pause](../troubleshooting/../reference/action.play-pause.md) for playback control.
-- [action.open-close](../troubleshooting/../reference/action.open-close.md) to zoom in on images.
+- [action.set](../reference/action.set.md) for radio buttons.
+- [action.toggle](../reference/action.toggle.md) for checkboxes.
+- [action.play-pause](../reference/action.play-pause.md) for playback control.
+- [action.open-close](../reference/action.open-close.md) to zoom in on images.
 
-You can see the full list of actions in [List of actions](../troubleshooting/../reference/actions.md).
+You can see the full list of actions in [List of actions](../reference/actions.md).
 
 Keep in mind the following:
 
 - The data types for actions must be the same. For example, in the following case the shortcut works but is not displayed: clicking on the button saves the `“true”` string to the results, and the Boolean value `true` is defined for the shortcut.
-- If multiple actions are triggered when the button is clicked ([action.bulk](../troubleshooting/../reference/action.bulk.md)), the sequence of these actions for the shortcut must be the same.
-- If you use a conditional operator to select an action, such as [helper.if](../troubleshooting/../reference/helper.if.md), the same conditional operator (**helper.if**) must be called under the same rules when the shortcut key is pressed.
+- If multiple actions are triggered when the button is clicked ([action.bulk](../reference/action.bulk.md)), the sequence of these actions for the shortcut must be the same.
+- If you use a conditional operator to select an action, such as [helper.if](../reference/helper.if.md), the same conditional operator (**helper.if**) must be called under the same rules when the shortcut key is pressed.
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
