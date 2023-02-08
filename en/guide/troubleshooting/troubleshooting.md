@@ -1,4 +1,4 @@
-# All questions on one page
+# Troubleshooting
 
 #### If you aren't using Toloka yet and need advice
 
