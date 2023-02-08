@@ -66,6 +66,8 @@ var ChildClass = extend(ParentClass, function() {
 
 ## Data types {#data-spec-adv}
 
+### Task {#obj-task}
+
 The `Task` object is the task to perform.
 
 ```json
@@ -92,6 +94,8 @@ Example:
 ```
 ||
 |#
+
+### Solution {#obj-solution}
 
 The `Solution` object is the Toloker's response in the task.
 
@@ -120,6 +124,8 @@ Example:
 ```
 ||
 |#
+
+### SolutionValidationError {#obj-solutionvalidationerror}
 
 The `SolutionValidationError` object is a validation error for the Toloker's response.
 

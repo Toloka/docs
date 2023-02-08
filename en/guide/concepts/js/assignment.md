@@ -12,7 +12,7 @@ The `Assignment` base class is available in the `window.TolokaAssignment` global
 
 Methods:
 
-#### constructor(options)
+### constructor(options)
 
 Task list base class builder.
 
@@ -24,23 +24,23 @@ Parameters:
 
 - `options.workspaceOptions` — Toloker's workspace initialization parameters.
 
-#### destroy()
+### destroy()
 
-Calls [`TaskSuite.destroy()`](tasksuite.md#destroy), removes all template elements from the DOM, closes the messaging channel, stops hotkey polling and location detection, calls `onDestroy`.
+Calls [TaskSuite.destroy()](tasksuite.md#destroy), removes all template elements from the DOM, closes the messaging channel, stops hotkey polling and location detection, calls `onDestroy`.
 
-#### initHotkeys()
+### initHotkeys()
 
 Hotkey handler initializer:
 
-- Resets all hotkeys ([`hotkeys.reset`](services.md#reset)).
+- Resets all hotkeys ([hotkeys.reset](services.md#reset)).
 
-- Calls [`submit()`](#Submit) when the Enter key is pressed.
+- Calls [submit()](#Submit) when the Enter key is pressed.
 
-#### getId()
+### getId()
 
 Returns `assignmentId` as a string or `undefined` if you are debugging the task in preview mode or using pool preview.
 
-#### getOptions()
+### getOptions()
 
 Returns an object with a set of parameters passed to the `constructor()` method during initialization.
 
@@ -56,7 +56,7 @@ let outputSpec = this.getOptions().specs.output_spec,
 
 {% endcut %}
 
-#### getSandboxChannel()
+### getSandboxChannel()
 
 Returns the link to an active messaging channel between the parent page and the task frame. If there is no channel, the method creates it.
 
@@ -72,15 +72,15 @@ this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 
 {% endcut %}
 
-#### getTaskSuite()
+### getTaskSuite()
 
 Returns a link to a [TaskSuite](tasksuite.md) instance.
 
-#### getTaskSuiteContainer()
+### getTaskSuiteContainer()
 
 Returns `document.body` for the Toloker's workspace.
 
-#### getWorkspaceOptions()
+### getWorkspaceOptions()
 
 Returns an object with the Toloker's workspace settings.
 
@@ -96,13 +96,13 @@ The most important settings:
 
 - `origin` — Parent page FQDN.
 
-#### pause()
+### pause()
 
 Pauses task execution (for example, upon a `request:assignment:pause` command from the main page), calls `onPause`.
 
-#### provideSolutions(strategy)
+### provideSolutions(strategy)
 
-Collects answers to all tasks ([`TolokaTaskSuite.getSolutions()`](tasksuite.md#getSolutions)), validates them ([`TolokaTaskSuite.validate()`](tasksuite.md#validate)). If validation is successful, calls `strategy`, otherwise sends an `assignment:validation:fail` request and an object with a list of errors returned by the validator. Parameter:
+Collects answers to all tasks ([TolokaTaskSuite.getSolutions()](tasksuite.md#getSolutions)), validates them ([TolokaTaskSuite.validate()](tasksuite.md#validate)). If validation is successful, calls `strategy`, otherwise sends an `assignment:validation:fail` request and an object with a list of errors returned by the validator. Parameter:
 
 - `strategy` — A function that sends a message about sending results (`assignment:submit`), a response array, and an `assignmentId` to the parent page.
 
@@ -130,21 +130,27 @@ provideSolutions(strategy = function(solutions) {
 
 {% endcut %}
 
-#### resume()
+### resume()
 
-Continues task execution, calls `onResume` and [`start`](#Start).
+Continues task execution, calls `onResume` and [start](#Start).
 
-#### skip()
+### skip()
 
 Lets you skip the current task, the same as clicking the **Skip** button.
 
-#### start()
+### start()
 
-Performs all the necessary actions when starting a task suite — adds the rendered task interface to `document.body`, initializes hotkeys for the entire interface ([`InitHotkeys`](#InitHotkeys)), calls `onStart`.
+Performs all the necessary actions when starting a task suite:
 
-#### submit
+- Adds the rendered task interface to `document.body`.
 
-Collects, validates and sends completed tasks by calling [`provideSolutions`](#ProvideSolutions).
+- Initializes hotkeys for the entire interface ([InitHotkeys](#InitHotkeys)).
+
+- Calls `onStart`.
+
+### submit
+
+Collects, validates and sends completed tasks by calling [provideSolutions](#ProvideSolutions).
 
 {% cut "Example" %}
 

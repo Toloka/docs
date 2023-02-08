@@ -20,7 +20,7 @@ Basic task suite class constructor.
 
 Parameters:
 
-- `options.task` — Array of [Task](../spec-advanced.md#data-spec-adv) models.
+- `options.task` — Array of [Task](../spec-advanced.md#obj-task) models.
 
 - `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data) and the task interface.
 
@@ -52,7 +52,7 @@ Sets the focus on the task by the index. Parameter:
 
 ### getAssignment()
 
-Returns a link to an [Assignment](assignment.md)instance. After that, you can use all the properties and methods of that class instance.
+Returns a link to an [Assignment](assignment.md) instance. After that, you can use all the properties and methods of that class instance.
 
 {% cut "Example" %}
 
@@ -113,7 +113,7 @@ Returns the DOM element of the page styles.
 
 ### getTasks()
 
-Returns an array of [Task](../spec-advanced.md#data-spec-adv) initialized task models.
+Returns an array of [Task](../spec-advanced.md#obj-task) initialized task models.
 
 ### getTasksDOMElement()
 
@@ -121,7 +121,7 @@ Returns the DOM element of the task suite (`div.task-suite`). If the DOM element
 
 ### getTasksIndexed()
 
-Returns tasks indexed by their IDs: "<taskId>": [Task](../spec-advanced.md#data-spec-adv), …
+Returns tasks indexed by their IDs: `<taskId>`: [Task](../spec-advanced.md#obj-task), …
 
 ### getWorkspaceOptions()
 

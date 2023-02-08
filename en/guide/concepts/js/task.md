@@ -20,7 +20,7 @@ The [task UI](../spec.md) constructor.
 
 Parameters:
 
-- `options.task` — The [Task](../spec-advanced.md#data-spec-adv) task model.
+- `options.task` — The [Task](../spec-advanced.md#obj-task) model.
 
 - `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data) and the task interface.
 
@@ -89,7 +89,7 @@ Returns a DOM element for task styles that is added to `document.head` when rend
 
 ### getTask()
 
-Returns the [Task](../spec-advanced.md#data-spec-adv) task model.
+Returns the [Task](../spec-advanced.md#obj-task) task model.
 
 ### getTemplateData()
 
