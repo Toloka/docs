@@ -250,6 +250,18 @@
 
   {% include [troubleshooting-max-number](../_includes/troubleshooting/pool-setup/max-number.md) %}
 
+  **Archiving**
+
+  {% include [faq-delete-pool](../_includes/faq/pool-n-project-archive/delete-pool.md) %}
+
+  {% include [faq-pool-storage-time](../_includes/faq/pool-n-project-archive/pool-storage-time.md) %}
+
+  {% include [faq-where-closed-pool](../_includes/faq/pool-n-project-archive/where-closed-pool.md) %}
+
+  {% include [faq-pool-archiving-parameters](../_includes/faq/pool-n-project-archive/pool-archiving-parameters.md) %}
+
+  {% include [faq-accept-tasks-from-archived-pool](../_includes/faq/pool-n-project-archive/accept-tasks-from-archived-pool.md) %}
+
 - Tasks
 
   **Uploading tasks**
@@ -385,18 +397,6 @@
   {% include [faq-quality-stat](../_includes/faq/result-questions/quality-stat.md) %}
 
   {% include [faq-get-time](../_includes/faq/result-questions/get-time.md) %}
-
-- Archiving
-
-  {% include [faq-delete-pool](../_includes/faq/pool-n-project-archive/delete-pool.md) %}
-
-  {% include [faq-pool-storage-time](../_includes/faq/pool-n-project-archive/pool-storage-time.md) %}
-
-  {% include [faq-where-closed-pool](../_includes/faq/pool-n-project-archive/where-closed-pool.md) %}
-
-  {% include [faq-pool-archiving-parameters](../_includes/faq/pool-n-project-archive/pool-archiving-parameters.md) %}
-
-  {% include [faq-accept-tasks-from-archived-pool](../_includes/faq/pool-n-project-archive/accept-tasks-from-archived-pool.md) %}
 
 - Payments
 
@@ -759,6 +759,18 @@
   {% include [faq-cross-check](../_includes/faq/pool-setup/cross-check.md) %}
 
   {% include [troubleshooting-max-number](../_includes/troubleshooting/pool-setup/max-number.md) %}
+  
+  **Archiving**
+
+  {% include [faq-delete-pool](../_includes/faq/pool-n-project-archive/delete-pool.md) %}
+
+  {% include [faq-pool-storage-time](../_includes/faq/pool-n-project-archive/pool-storage-time.md) %}
+
+  {% include [faq-where-closed-pool](../_includes/faq/pool-n-project-archive/where-closed-pool.md) %}
+
+  {% include [faq-pool-archiving-parameters](../_includes/faq/pool-n-project-archive/pool-archiving-parameters.md) %}
+
+  {% include [faq-accept-tasks-from-archived-pool](../_includes/faq/pool-n-project-archive/accept-tasks-from-archived-pool.md) %}
 
   ### Tasks {#tasks}
 
@@ -895,18 +907,6 @@
   {% include [faq-quality-stat](../_includes/faq/result-questions/quality-stat.md) %}
 
   {% include [faq-get-time](../_includes/faq/result-questions/get-time.md) %}
-
-  ### Archiving {#archiving}
-
-  {% include [faq-delete-pool](../_includes/faq/pool-n-project-archive/delete-pool.md) %}
-
-  {% include [faq-pool-storage-time](../_includes/faq/pool-n-project-archive/pool-storage-time.md) %}
-
-  {% include [faq-where-closed-pool](../_includes/faq/pool-n-project-archive/where-closed-pool.md) %}
-
-  {% include [faq-pool-archiving-parameters](../_includes/faq/pool-n-project-archive/pool-archiving-parameters.md) %}
-
-  {% include [faq-accept-tasks-from-archived-pool](../_includes/faq/pool-n-project-archive/accept-tasks-from-archived-pool.md) %}
 
   ### Payments {#finance}
 
