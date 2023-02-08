@@ -8,19 +8,19 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 “Wrapper class” for [task suites](../../../glossary.md#task-suite) creates instances of task classes. You can redefine this class (for example, if you need to display a shared element on the page with tasks or get more control over tasks, like custom keyboard shortcuts).
 
-The main purpose of the `TaskSuite` class is to render tasks on the page (`[render()](#render)`). It is also used for collecting responses (`[getSolutions()](#getSolutions)`), validating them (`[validate(solutions)](#validate)`), and managing hotkeys ([`focusNextTask()`](#focusNextTask), [`onKey(key)`](#onKey)).
+The main purpose of the `TaskSuite` class is to render tasks on the page ([render()](#render)). It is also used for collecting responses ([getSolutions()](#getSolutions)), validating them ([validate(solutions)](#validate)), and managing hotkeys ([focusNextTask()](#focusNextTask), [onKey(key)](#onKey)).
 
 The base class for `TaskSuite` is available in the `window.TolokaTaskSuite` global variable.
 
 Methods:
 
-#### constructor(options)
+### constructor(options)
 
 Basic task suite class constructor.
 
 Parameters:
 
-- `options.task` — Array of [Task](../spec-advanced.md#obj-task) models.
+- `options.task` — Array of [Task](../spec-advanced.md#data-spec-adv) models.
 
 - `options.specs` — Parameters for [input and output data](../../../glossary.md#input-output-data) and the task interface.
 
@@ -30,29 +30,29 @@ Parameters:
 
 - `options.TaskClass` — Array of classes for the task you create.
 
-- `options.solutions` — Array of responses [`Solution`](../spec-advanced.md#obj-solution). Can be empty.
+- `options.solutions` — Array of responses [Solution](../spec-advanced.md#obj-solution). Can be empty.
 
-#### destroy()
+### destroy()
 
-Destroys all tasks on the page. Releases resources, services, and event handlers used in the global space. Calls [`onDestroy()`](#onDestroy).
+Destroys all tasks on the page. Releases resources, services, and event handlers used in the global space. Calls [onDestroy()](#onDestroy).
 
-#### focusNextTask()
+### focusNextTask()
 
 Sets the focus on the next task.
 
-#### focusPreviousTask()
+### focusPreviousTask()
 
 Sets the focus on the previous task.
 
-#### focusTask(index)
+### focusTask(index)
 
 Sets the focus on the task by the index. Parameter:
 
 - `index` — Task index on the page.
 
-#### getAssignment()
+### getAssignment()
 
-Returns a link to an [`Assignment`](assignment.md)instance. After that, you can use all the properties and methods of that class instance.
+Returns a link to an [Assignment](assignment.md)instance. After that, you can use all the properties and methods of that class instance.
 
 {% cut "Example" %}
 
@@ -63,13 +63,13 @@ this.getAssignment().skip();
 
 {% endcut %}
 
-#### getDOMElement()
+### getDOMElement()
 
 Returns the DOM element of the page (it is empty before rendering, and after rendering it is initialized and contains the interface).
 
-#### getFocusedTask()
+### getFocusedTask()
 
-Returns a link to the active task. Gets the index of the active task from a private property `_focusedTaskIndex` and returns a link to that task using `[getTasks()](#getTasks)`.
+Returns a link to the active task. Gets the index of the active task from a private property `_focusedTaskIndex` and returns a link to that task using [getTasks()](#getTasks).
 
 {% cut "Example" %}
 
@@ -81,9 +81,9 @@ elements.forEach(el => el.classList.remove('some_class'));
 
 {% endcut %}
 
-#### getOptions()
+### getOptions()
 
-Returns an object with a set of parameters passed to the `[constructor()](#constructor)` method during initialization.
+Returns an object with a set of parameters passed to the [constructor()](#constructor) method during initialization.
 
 {% cut "Example" %}
 
@@ -97,33 +97,33 @@ let outputSpec = this.getOptions().specs.output_spec,
 
 {% endcut %}
 
-#### getProxyUrl(path)
+### getProxyUrl(path)
 
 Returns a complete URL to access the data on the [proxy server](../prepare-data.md). Parameter:
 
 - `path` — the relative path to the file.
 
-#### getSolutions()
+### getSolutions()
 
-Returns an array of [`Solution`](../spec-advanced.md#obj-solution) responses.
+Returns an array of [Solution](../spec-advanced.md#obj-solution) responses.
 
-#### getStyleDOMElement()
+### getStyleDOMElement()
 
 Returns the DOM element of the page styles.
 
-#### getTasks()
+### getTasks()
 
-Returns an array of `[Task](../spec-advanced.md#obj-task)` initialized task models.
+Returns an array of [Task](../spec-advanced.md#data-spec-adv) initialized task models.
 
-#### getTasksDOMElement()
+### getTasksDOMElement()
 
 Returns the DOM element of the task suite (`div.task-suite`). If the DOM element is missing, the method creates it.
 
-#### getTasksIndexed()
+### getTasksIndexed()
 
-Returns tasks indexed by their IDs: `"<taskId>": [Task](../spec-advanced.md#obj-task), …`
+Returns tasks indexed by their IDs: "<taskId>": [Task](../spec-advanced.md#data-spec-adv), …
 
-#### getWorkspaceOptions()
+### getWorkspaceOptions()
 
 Returns an object with the Toloker's workspace settings.
 
@@ -139,7 +139,7 @@ The most important settings:
 
 - `origin` — Parent page FQDN.
 
-#### initHotkeys()
+### initHotkeys()
 
 Hotkey handler initializer:
 
@@ -151,37 +151,37 @@ Hotkey handler initializer:
 
 - Sets the focus on the first task.
 
-#### onDestroy()
+### onDestroy()
 
-A method you can redefine to execute your code when a task suite is deleted. Called after the page is destroyed (`[destroy()](#destroy)`). The best method for releasing memory, deleting global event handlers and DOM elements, and so on.
+A method you can redefine to execute your code when a task suite is deleted. Called after the page is destroyed ([destroy()](#destroy)). The best method for releasing memory, deleting global event handlers and DOM elements, and so on.
 
-#### onKey(key)
+### onKey(key)
 
 Passes the pressed key to the active task.
 
-#### onPause()
+### onPause()
 
 A method you can redefine to execute your code when a task suite stops working.
 
-#### onRender()
+### onRender()
 
-A method you can redefine to execute your code when rendering a task suite. Called after page rendering (`[render()](#render)`). All manipulations with the DOM element of a task should be performed here.
+A method you can redefine to execute your code when rendering a task suite. Called after page rendering ([render()](#render)). All manipulations with the DOM element of a task should be performed here.
 
-#### onResume()
+### onResume()
 
 A method you can redefine to execute your code when a task suite resumes working.
 
-#### onValidationFail(errors)
+### onValidationFail(errors)
 
 Called if the validation failed. Contains error descriptions in the parameter. Parameter:
 
-- `errors` — Array of errors [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror).
+- `errors` — Array of errors [SolutionValidationError](../spec-advanced.md#obj-solutionvalidationerror).
 
-#### pause()
+### pause()
 
-Calls the `pause()` method for each task in the suite. It also calls the `[onPause()](#onPause)` method.
+Calls the `pause()` method for each task in the suite. It also calls the [onPause()](#onPause) method.
 
-#### proxy(path, options)
+### proxy(path, options)
 
 Makes a GET or POST request through a proxy. Returns the response as an object.
 
@@ -227,14 +227,14 @@ Promise.all(promises)
 
 {% endcut %}
 
-#### render()
+### render()
 
-Creates a DOM representation of the task suite: renders all tasks in the task suite. Calls [`render()` in the `Task`](task.md#render) class for each task. Calls `[onRender()](#onRender)`. Returns `this`.
+Creates a DOM representation of the task suite: renders all tasks in the task suite. Calls [render() in the Task](task.md#render) class for each task. Calls [onRender()](#onRender). Returns `this`.
 
-#### validate(solutions)
+### validate(solutions)
 
-Validates responses according to output data parameters. Returns a `promise` object with an array of [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror) errors if the responses are incorrect, or `null`. Parameter:
+Validates responses according to output data parameters. Returns a `promise` object with an array of [SolutionValidationError](../spec-advanced.md#obj-solutionvalidationerror) errors if the responses are incorrect, or `null`. Parameter:
 
-- `solutions` — Array of the Toloker's task responses. If omitted, the current values are used ([`getSolutions()`](#getSolutions)).
+- `solutions` — Array of the Toloker's task responses. If omitted, the current values are used ([getSolutions()](#getSolutions)).
 
 {% include [contact-support](../../_includes/contact-support.md) %}
