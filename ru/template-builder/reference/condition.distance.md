@@ -8,7 +8,7 @@
 
 За передачу координат устройства отвечает компонент [data.location](data.location.md). Вы можете использовать его без `condition.distance`, если вам нужно считать координаты устройства исполнителя без сравнения с заданными.
 
-[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/92IBgiqX3x6TdJ)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/1UxiHDb03y5bN3)
 
 ## Свойства компонента {#properties}
 

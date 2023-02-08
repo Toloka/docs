@@ -44,7 +44,7 @@ If this preset doesn't meet your needs, see other examples in this section.
 
 If a Toloker needs to click on the search link and answer a question, add the [field.radio-group](../reference/field.radio-group.md) field for selecting one of the response options.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/gzohfiIE3vvzbL)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/beR3LXQ83y8f94)
 
 ## Add an image and a date input field {#add-image-date}
 

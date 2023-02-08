@@ -40,11 +40,11 @@
 
 {% endnote %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/q3vnF2Jt3vvJqR)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/OUFVggRt3y5RKd)
 
 Если нужной вам поисковой системы нет в свойстве `engine`, то оставьте это поле пустым и введите запрос в `query` с помощью компонента [helper.join](../reference/helper.join.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/DRc-G1I63tvvWr)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/gnlvSzdS3y8qii)
 
 ## Объединить ссылки в группу {#view.link-group}
 
