@@ -29,7 +29,7 @@
 
 - Если для выполнения задания нужно что-то найти в интернете, добавьте компонент [helper.search-query](../reference/helper.search-query.md). Поисковый запрос можно составить из слов, взятых из входных данных.
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ctYj5ab_3tw5GV)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/rvPXEtx13vuYgX)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
 
@@ -89,6 +89,6 @@
 
 Дополнительно в примере действует проверка, чтобы в каждой строке было не менее трех символов: русских или английских букв и пробелов. Условие реализуется с помощью [condition.schema](../reference/condition.schema.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9lxm54yW3tw6NU)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/xwH2QDIc3vudNC)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

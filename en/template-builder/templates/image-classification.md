@@ -72,7 +72,7 @@ Add a button that opens the search results and generate a search query link usin
 
 You can display the web page in the built-in window using the [view.iframe](../reference/view.iframe.md) component. Place the image next to it using [layout.side-by-side](../reference/layout.side-by-side.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/na-qel_u3ttFbf)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vHtHEcj_3vvrRM)
 
 ### Side-by-side image and mobile web page comparison
 
@@ -82,7 +82,7 @@ This is a more complex example that compares the image with the results of a sea
 - [view.device-frame](../reference/view.device-frame.md): Wraps the window in a smartphone frame.
 - [layout.side-by-side](../reference/layout.side-by-side.md): Places the image and the search results window next to each other.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/K7CBlPlT3ttFdJ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/a9bzsPXh3vvrwH)
 
 ## See also {#see-also}
 

@@ -6,7 +6,7 @@
 
 Список доступных поисковых систем указан в свойстве `engine`.
 
-[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/gIsoTol83tz2S8)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/005Ff3Ul3xDuXL)
 
 ## Свойства компонента {#properties}
 

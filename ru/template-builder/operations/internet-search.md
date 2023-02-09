@@ -16,7 +16,7 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/nPNmYQvJ3tvvKZ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/6cDsD_Vc3x685r)
 
 ## Создать поисковой запрос {#helper.search-query}
 
@@ -40,17 +40,17 @@
 
 {% endnote %}
 
-[![](../_images/buttons/view-example.svg)](https://nda.ya.ru/t/pArYIypP3XBTUX)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/OUFVggRt3y5RKd)
 
 Если нужной вам поисковой системы нет в свойстве `engine`, то оставьте это поле пустым и введите запрос в `query` с помощью компонента [helper.join](../reference/helper.join.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/DRc-G1I63tvvWr)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/gnlvSzdS3y8qii)
 
 ## Объединить ссылки в группу {#view.link-group}
 
 Чтобы объединить несколько ссылок в группу, используйте компонент [view.link-group](../reference/view.link-group.md). Ссылки будут отображаться подчеркнутым текстом. Одну из ссылок можно выделить рамкой и убрать подчеркивание: для этой ссылки в свойстве `theme` установите значение `primary`.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/UceFmKl63tvvnN)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/l6Y5VpjQ3vvKhM)
 
 ## Создать ссылку на кнопке {#action.open-link}
 
@@ -75,11 +75,11 @@
 
 При добавлении нескольких кнопок можно поменять их расположение с вертикального на горизонтальное в свойстве `direction`.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Tb1GloPf3tvvwQ)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/h1_1_QAF3vvLXi)
 
 Чтобы назначить кнопке [горячую клавишу](../best-practices/hotkeys.md), используйте компонент [plugin.hotkeys](../reference/plugin.hotkeys.md).
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eyJllFAE3tvw7g)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/HXxAsCIL3xMCot)
 
 ## Проверить переход по ссылке {#condition.link-opened}
 
@@ -87,7 +87,7 @@
 
 Помните, что условие сработает, только если исполнитель перейдет из интерфейса. Оно не сработает при открытии ссылки через адресную строку.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/lIjDN7m73tvwFx)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/fQURBBiV3x6BH8)
 
 ## Добавить горячие клавиши {#hotkeys}
 
@@ -105,7 +105,7 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ABLds4Ut3tvwQu)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1tnCpjcT3vvMyE)
 
 Подробнее о работе горячих клавиш читайте в разделе [Настройте горячие клавиши](../best-practices/hotkeys.md).
 
@@ -119,7 +119,7 @@
 
 Как и любое место кода, открытие ссылки и ее адрес можно переиспользовать с помощью конструкции `{"$ref": "path.to.element"}`. Это пригодится при добавлении горячих клавиш: чтобы не дублировать код для визуального отображения ссылки и для [plugin.hotkeys](../reference/plugin.hotkeys.md), его можно один раз прописать в `vars`.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/fgLPLTEA3tvwse)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FMGvR-nV3vvNtB)
 
 Подробнее о переиспользовании читайте в разделе [Переиспользуйте код](../best-practices/reuse.md).
 

@@ -51,7 +51,7 @@
 
 В этом примере компонент проверяет, что значения `animal` и `human` являются частью массива `objects`. Если выбираются ответы «Человек» и «Животное», то логический компонент `helper.if` отображает вопрос: «Человек и животное взаимодействуют между собой?».
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/HylOedv03tvnUz)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/LFpfB1Jv3wz3BQ)
 
 ## Проверить несколько условий {#multiple-conditions}
 
@@ -61,7 +61,7 @@
 
 В этом примере нужно выполнить два действия: заполнить поле для текста и перейти по ссылке из интерфейса. Кнопка «Отправить» здесь не сработает, пока не будут выполнены оба условия.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/elTdyHH33tvniu)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Fr4KjkwC3vvWjY)
 
 #### Выполнить хотя бы одно из условий
 
@@ -69,7 +69,7 @@
 
 В этом примере нужно выполнить хотя бы одно из двух действий: отметить «Надписи нет» или заполнить поле «Что написано на изображении». Кнопка «Отправить» здесь не сработает, пока не будет выполнено одно из условий.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/bQ5L1e9Y3tvoDG)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/mlinsKJj3xMNYq)
 
 ## Проверить условия конкретных компонентов {#component}
 
@@ -77,7 +77,7 @@
 
 В этом примере нужно перейти по ссылке из интерфейса, иначе кнопка «Отправить» не сработает.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/El-567tO3tvoTH)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/zSwneeJ83xMPzF)
 
 ## Если не нашли нужный компонент {#schema}
 

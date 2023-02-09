@@ -45,7 +45,7 @@
 
 - [helper.replace](../reference/helper.replace.md) — позволяет заменить одни части строки на другие. Для этого укажите в свойстве `find` значение, которое будет заменено на значение свойства `replace`.
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/rJCfmyce3tvsxT)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/hRxOnYH13x5XrP)
 
 - [helper.join](../reference/helper.join.md) — позволяет соединить несколько строк в одну, в том числе через пробел или запятую.
 

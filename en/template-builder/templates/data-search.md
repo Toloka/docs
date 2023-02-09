@@ -2,7 +2,7 @@
 
 For this type of project, you can use the **Mining business contacts** preset. It has pre-configured validation and task layout. In this preset, a Toloker needs to enter the organization's contact information found online.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YkWWQo2o3ttFRV)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/Q2O6DQ2L3vvtkR)
 
 {% cut "Components used in the example" %}
 
@@ -22,21 +22,21 @@ For this type of project, you can use the **Mining business contacts** preset. I
 
 - To let Tolokers enter long texts, add the [field.textarea](../reference/field.textarea.md) field.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/2iMmi4hy3ttFRy)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/5aKHQEXE3vvu7U)
 
 - To let Tolokers enter numbers, add the [field.number](../reference/field.number.md) field.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sblNq7sf3ttFSP)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/BFMRXUUS3xDkbn)
 
 - To let Tolokers search for files online, add the file selection field [field.file](../reference/field.file.md). For example, use this if they need to upload a photo with a certain object in it.
 
     In task verification mode, the uploaded images will appear automatically. You can view, rotate, and switch between images.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/vNkwNHcs3ttFSx)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/2q9TFDoh3xE9PR)
 
 - If a Toloker needs to find and submit a link to a specific page from the website, add the [condition.same-domain](../reference/condition.same-domain.md) component. The component checks that the link is from the required domain.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/nbadJ5Ee3ttFTP)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sBbrym1_3xE9iw)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -44,7 +44,7 @@ If this preset doesn't meet your needs, see other examples in this section.
 
 If a Toloker needs to click on the search link and answer a question, add the [field.radio-group](../reference/field.radio-group.md) field for selecting one of the response options.
 
-  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/BI7qUvc93ttFTv)
+  [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/beR3LXQ83y8f94)
 
 ## Add an image and a date input field {#add-image-date}
 
@@ -56,7 +56,7 @@ In this example, the following fields are added:
 - [field.text](../reference/field.text.md): For entering a short text.
 - [field.date](../reference/field.date.md): For entering the date of birth.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/j4cif7yG3ttFUY)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/k9H6qX0v3vw22r)
 
 ## Divide the task interface into columns {#add-layout-columns}
 
