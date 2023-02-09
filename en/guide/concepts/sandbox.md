@@ -8,6 +8,12 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 {% endnote %}
 
+## Usage rules
+
+1. Sandbox is for testing only. You cannot perform all tasks in the sandbox because this is considered as an unfair use of the service. 
+
+1. You can add no more than 3 trusted Tolokers for a testing of your project. 
+
 ## How to run a project in the sandbox {#section_zmz_t4z_mlb}
 
 1. Register in the sandbox as a requester. To do this, follow the [link]({{ sandbox }}).
