@@ -41,6 +41,124 @@ If you need to add different task types to the pool, upload multiple files, one 
 
       - `Al:longitude` — longitude.
 
+  ### Escaping in TSV/XLSX {#string}
+
+  Escaping is the replacement of control characters in the text that are used for labeling with the corresponding text substitutions. It is used when you need to display a control character as a regular one.
+
+  The type of input data determines how control characters are escaped. Determine the type of data and study the corresponding paragraph. Possible options:
+
+  {% cut "String type data" %}
+
+  To display quotation marks `"` in the string type field:
+
+  - The quotation marks of this type come in pairs. Don't escape other types of quotation marks (`« »` and `“ ”`).
+
+  - Enclose the field in quotation marks `" "`.
+
+  Unescaped quotation marks are removed when processing the file.
+
+  Data | Example of transferring data to a file | Status | What the Toloker will see
+  ----- | ----- | ----- | -----
+  `monitor 24" buy` | `"monitor 24"" buy"` | `correct` | `monitor 24" buy`
+  `book "All about dogs"` | `book "All about dogs"` | `correct, but the quotes won't be displayed` | `book All about dogs`
+  `book “All about dogs”` | `"book “All about dogs”"` | `correct` | `book “All about dogs”`
+  `monitor 24" buy` | `monitor 24" buy` | `loading error` |
+
+  {% endcut %}
+
+  {% cut "Data in JSON format" %}
+
+  {% cut "To load data in a field with the JSON type" %}
+
+  - Add another quotation mark to each `"` type of quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
+
+  - Enclose the field in quotation marks `" "`.
+
+  | Data | Example of transferring data to a file | Status | What the Toloker will see
+  |----- | ----- | ----- | -----
+  |`{"query": "monitor 24 inch buy"}` | `"{""query"": ""monitor 24 inch buy""}"` | `correct` | `monitor 24 inch buy`
+  |`{"query": "monitor 24 inch buy"}` | `"{"query": "monitor 24 inch buy"}"` | `loading error` |
+
+  {% endcut %}
+
+  {% cut "To display a quotation mark inside an object with the JSON type" %}
+
+  - Add another quotation mark `"` or a backslash and a quotation mark `\"` if there is no backslash before the quotation mark.
+
+  - Enclose the field in quotation marks `" "`.
+
+  |Data | Example of transferring data to a file | Status | What the Toloker will see
+  |----- | ----- | ----- | -----
+  |`{"query": "monitor 24\" buy"}` | `"{""query"": ""monitor 24\"" buy""}"` | `correct` | `monitor 24" buy`
+  |`{"query": "monitor 24" buy"}` | `"{""query"": ""monitor 24\"" buy""}"` | `correct` | `monitor 24" buy`
+  |`{"query": "book \"All about dogs\""}` | `"{""query"": ""book \""All about dogs\""""}"` | `correct` | `book "All about dogs"`
+  |`{"query": "monitor 24\" buy"}` | `"{""query"": ""monitor 24\"\" buy""}"` | `loading error` |
+  |`{"query": "book \"All about dogs\""}` | `"{"query": "book \"All about dogs\""}"` | `loading error` |
+
+  {% endcut %}
+
+  {% cut "To display a backslash `\` inside an object with the JSON type" %}
+
+  - Escape it with an additional slash `\`.
+
+  - Enclose the field in quotation marks `" "`.
+
+  | Data | Example of transferring data to a file | Status | What the Toloker will see
+  |----- | ----- | ----- | -----
+  |`{"query": "array A\B"}` |`"{""query"": ""array A\\B""}"` |`correct` |`array A\B`
+  |`{"query": "array A\B"}` | `"{""query"": ""array A\B""}"` | `loading error` |
+
+  {% endcut %}
+
+  {% endcut %}
+
+  {% cut "An array of data in the JSON format" %}
+
+  {% cut "To load an array of data in a field with the JSON type" %}
+
+  - Add another quotation mark to each `"` quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
+
+  - Add a backslash `\` before each comma inside the object if it isn't there already. Don't escape commas that separate objects inside the array.
+
+  - Enclose the field in quotation marks `" "`.
+
+  |Data | Example of transferring data to a file | Status | What the Toloker will see
+  |----- | ----- | ----- | -----
+  |`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]` | `"{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"` | `correct` | `monitor 24 inch buy monitor 19 inch buy`
+  |`[{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]` | `"{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"` | `correct` | `monitor 24 inch, system unit buy monitor 19 inch, system unit buy`
+  |`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]` | `"{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"` | `loading error` |
+  |`[{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]` | `"{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"` | `loading error` |
+
+  {% endcut %}
+
+  {% cut "To display a quotation mark in an array of data in a field with the JSON type" %}
+
+  - Add another quotation mark `"` or a backslash and a quotation mark `\"` if there is no backslash before the quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
+
+  - Enclose the field in quotation marks `" "`.
+
+  |Data | Example of transferring data to a file | Status | What the Toloker will see
+  |----- | ----- | ----- | -----
+  |`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]` | `"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"` | `correct` | `monitor 24" buy monitor 19" buy`
+  |`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]` | `"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"` | `loading error` |
+
+  {% endcut %}
+
+  {% cut "To display a backslash `\` in an array of data in a field with the JSON type" %}
+
+  - Escape it with two backslashes `\\`.
+
+  - Enclose the field in quotation marks `" "`.
+
+  |Data | Example of transferring data to a file | Status | What the Toloker will see
+  |----- | ----- | ----- | -----
+  |`[{"query": "array A\B"},{"query": "array C\B"}]` | `"{""query"": ""array A\\\B""},{""query"": ""array C\D""}"` | `correct` | `array A\B array C\D`
+  |`[{"query": "array A\B"},{"query": "array C\B"}]` | `"{""query"": ""array A\\B""},{""query"": ""array C\\D"}"` | `loading error` |
+
+  {% endcut %}
+
+  {% endcut %}
+
   ### Examples
 
   See examples for the different tasks types and different [data types](incoming.md#data-types).
@@ -886,124 +1004,6 @@ You can work with data in an editor and then save it in the desired format.
 {% endlist %}
 
 The maximum file size is 100 MB.
-
-## Escaping {#string}
-
-Escaping is the replacement of control characters in the text that are used for labeling with the corresponding text substitutions. It is used when you need to display a control character as a regular one.
-
-The type of input data determines how control characters are escaped. Determine the type of data and study the corresponding paragraph. Possible options:
-
-{% cut "String type data" %}
-
-To display quotation marks `"` in the string type field:
-
-- The quotation marks of this type come in pairs. Don't escape other types of quotation marks (`« »` and `“ ”`).
-
-- Enclose the field in quotation marks `" "`.
-
-Unescaped quotation marks are removed when processing the file.
-
-Data | Example of transferring data to a file | Status | What the Toloker will see
------ | ----- | ----- | -----
-`monitor 24" buy` | `"monitor 24"" buy"` | `correct` | `monitor 24" buy`
-`book "All about dogs"` | `book "All about dogs"` | `correct, but the quotes won't be displayed` | `book All about dogs`
-`book “All about dogs”` | `"book “All about dogs”"` | `correct` | `book “All about dogs”`
-`monitor 24" buy` | `monitor 24" buy` | `loading error` |
-
-{% endcut %}
-
-{% cut "Data in JSON format" %}
-
-{% cut "To load data in a field with the json type" %}
-
-- Add another quotation mark to each `"` type of quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
-
-- Enclose the field in quotation marks `" "`.
-
-| Data | Example of transferring data to a file | Status | What the Toloker will see
-|----- | ----- | ----- | -----
-|`{"query": "monitor 24 inch buy"}` | `"{""query"": ""monitor 24 inch buy""}"` | `correct` | `monitor 24 inch buy`
-|`{"query": "monitor 24 inch buy"}` | `"{"query": "monitor 24 inch buy"}"` | `loading error` |
-
-{% endcut %}
-
-{% cut "To display a quotation mark inside an object with the JSON type" %}
-
-- Add another quotation mark `"` or a backslash and a quotation mark `\"` if there is no backslash before the quotation mark.
-
-- Enclose the field in quotation marks `" "`.
-
-|Data | Example of transferring data to a file | Status | What the Toloker will see
-|----- | ----- | ----- | -----
-|`{"query": "monitor 24\" buy"}` | `"{""query"": ""monitor 24\"" buy""}"` | `correct` | `monitor 24" buy`
-|`{"query": "monitor 24" buy"}` | `"{""query"": ""monitor 24\"" buy""}"` | `correct` | `monitor 24" buy`
-|`{"query": "book \"All about dogs\""}` | `"{""query"": ""book \""All about dogs\""""}"` | `correct` | `book "All about dogs"`
-|`{"query": "monitor 24\" buy"}` | `"{""query"": ""monitor 24\"\" buy""}"` | `loading error` |
-|`{"query": "book \"All about dogs\""}` | `"{"query": "book \"All about dogs\""}"` | `loading error` |
-
-{% endcut %}
-
-{% cut "To display a backslash `\` inside an object with the JSON type" %}
-
-- Escape it with an additional slash `\`.
-
-- Enclose the field in quotation marks `" "`.
-
-| Data | Example of transferring data to a file | Status | What the Toloker will see
-|----- | ----- | ----- | -----
-|`{"query": "array A\B"}` |`"{""query"": ""array A\\B""}"` |`correct` |`array A\B`
-|`{"query": "array A\B"}` | `"{""query"": ""array A\B""}"` | `loading error` |
-
-{% endcut %}
-
-{% endcut %}
-
-{% cut "An array of data in the JSON format" %}
-
-{% cut "To load an array of data in a field with the JSON type" %}
-
-- Add another quotation mark to each `"` quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
-
-- Add a backslash `\` before each comma inside the object if it isn't there already. Don't escape commas that separate objects inside the array.
-
-- Enclose the field in quotation marks `" "`.
-
-|Data | Example of transferring data to a file | Status | What the Toloker will see
-|----- | ----- | ----- | -----
-|`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]` | `"{""query"": ""monitor 24 inch buy""},{""query"": ""monitor 19 inch buy""}"` | `correct` | `monitor 24 inch buy monitor 19 inch buy`
-|`[{"query": "monitor 24 inch\, system unit buy"},{"query": "monitor 17 inch\, system unit buy"}]` | `"{""query"": ""monitor 24 inch\, system unit buy""},""query"": ""monitor 19 inch\, system unit buy""}"` | `correct` | `monitor 24 inch, system unit buy monitor 19 inch, system unit buy`
-|`[{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}]` | `"{"query": "monitor 24 inch buy"},{"query": "monitor 19 inch buy"}"` | `loading error` |
-|`[{"query": "monitor 24 inch, system unit buy"},"query": "monitor 17 inch, system unit buy"}]` | `"{""query"": ""monitor 24 inch, system unit buy""},""query"": ""monitor 19 inch, system unit buy""}"` | `loading error` |
-
-{% endcut %}
-
-{% cut "To display a quotation mark in an array of data in a field with the JSON type" %}
-
-- Add another quotation mark `"` or a backslash and a quotation mark `\"` if there is no backslash before the quotation mark. Don't escape other types of quotation marks (`« »` and `“ ”`).
-
-- Enclose the field in quotation marks `" "`.
-
-|Data | Example of transferring data to a file | Status | What the Toloker will see
-|----- | ----- | ----- | -----
-|`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]` | `"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\"" buy""}"` | `correct` | `monitor 24" buy monitor 19" buy`
-|`[{"query": "monitor 24\" buy"},{"query": "monitor 19\" buy"}]` | `"{""query"": ""monitor 24\"" inch buy""},{""query"": ""monitor 19\" buy""}"` | `loading error` |
-
-{% endcut %}
-
-{% cut "To display a backslash `\` in an array of data in a field with the JSON type" %}
-
-- Escape it with two backslashes `\\`.
-
-- Enclose the field in quotation marks `" "`.
-
-|Data | Example of transferring data to a file | Status | What the Toloker will see
-|----- | ----- | ----- | -----
-|`[{"query": "array A\B"},{"query": "array C\B"}]` | `"{""query"": ""array A\\\B""},{""query"": ""array C\D""}"` | `correct` | `array A\B array C\D`
-|`[{"query": "array A\B"},{"query": "array C\B"}]` | `"{""query"": ""array A\\B""},{""query"": ""array C\\D"}"` | `loading error` |
-
-{% endcut %}
-
-{% endcut %}
 
 ## What's next {#what_next}
 
