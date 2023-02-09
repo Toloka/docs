@@ -9,7 +9,7 @@ Use it to customize the display of content: set the column width and adjust the 
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
-- [view.text](view.text.md): Displays a text.
+- [view.text](view.text.md): Adds a block with text.
 
 {% endcut %}
 
