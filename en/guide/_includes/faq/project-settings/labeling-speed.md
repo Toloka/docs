@@ -4,9 +4,9 @@ The labeling speed depends on:
 
 - Difficulty of the tasks.
 
-- Quality of interface.
+- Quality of the interface.
 
-- Quality of instructions.
+- Quality of the instructions.
 
 - Number of the tasks.
 

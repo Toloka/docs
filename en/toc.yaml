@@ -467,7 +467,7 @@ items:
                   path: _includes/crowd-kit-toc.yaml
                   mode: link
   - name: Frequently asked questions
-    href: guide/faq/faq.md    
+    href: guide/faq/index.md
   - name: Troubleshooting
     href: guide/troubleshooting/troubleshooting.md
   - name: Support

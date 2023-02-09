@@ -2,7 +2,7 @@
 
 ## Find answers to questions
 
-- [Frequently asked questions](../faq/faq.md)
+- [Frequently asked questions](../faq/index.md)
 
 - [Troubleshooting](troubleshooting.md)
 

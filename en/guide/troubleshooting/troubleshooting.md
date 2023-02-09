@@ -176,8 +176,6 @@ In the section contents, select the stage where you encountered the problem and 
 
   {% include [troubleshooting-insert-links-error](../_includes/troubleshooting/api/insert-links-error.md) %}
 
-  {% include [contact-support](../_includes/contact-support.md) %}
-
 - All
 
   ### Registration {#register-and-start}
@@ -346,6 +344,6 @@ In the section contents, select the stage where you encountered the problem and 
 
   {% include [troubleshooting-insert-links-error](../_includes/troubleshooting/api/insert-links-error.md) %}
 
-  {% include [contact-support](../_includes/contact-support.md) %}
-
 {% endlist %}
+
+{% include [contact-support](../_includes/contact-support.md) %}
