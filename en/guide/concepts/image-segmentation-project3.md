@@ -151,7 +151,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
             }
             ```
 
-           Learn more about **Specifications** in [Input and output data](incoming.md).
+           To learn more about specifications, see the [Input and output data](incoming.md) page.
 
       1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
