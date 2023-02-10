@@ -90,7 +90,7 @@ There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each su
 
 {% endcut %}
 
-If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
+If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/troubleshooting.md#add-gs).
 
 {% cut "What for" %}
 
@@ -137,44 +137,14 @@ If another overlap value is set, control tasks may end during labeling and the p
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I specify smart mixing settings in the interface when uploading a file?" %}
+{% include [faq-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/smart-mixing.md) %}
 
-Smart mixing settings are specified for the file rather than for the pool.
+{% include [faq-smart-mixing-after-uploading](../_includes/faq/adding-tasks-to-the-pool/smart-mixing-after-uploading.md) %}
 
-The settings specified during the first file upload are applied to all the files that are uploaded to this pool later on.
+{% include [faq-max-number-per-suite](../_includes/faq/adding-tasks-to-the-pool/max-number-per-suite.md) %}
 
-{% endcut %}
+{% include [troubleshooting-same-task-on-different-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/same-task-on-different-pages.md) %}
 
-{% cut "What is the maximum number of tasks per suite?" %}
-
-It depends on the task. Technically, you can use as many tasks you want.
-
-But Tolokers don't like to take lengthy tasks. They'd rather do 10 tasks that take one minute each than one task that takes 10 minutes.
-
-In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
-
-The third thing to consider is quality control and manual review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
-
-{% endcut %}
-
-{% cut "The same task appeared on different pages" %}
-
-The same task may appear on different pages if:
-
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
-
-- Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-
-- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
-
-{% endcut %}
-
-{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with manual review? Where do I find the format of the upload data?" %}
-
-Use the button **Upload review results** to upload your file. You can see the format [here](accept.md).
-
-Assignments are reviewed in the tasks file.
-
-{% endcut %}
+{% include [faq-upload-accepted-assignments](../_includes/faq/adding-tasks-to-the-pool/upload-accepted-assignments.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

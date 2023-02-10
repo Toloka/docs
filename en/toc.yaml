@@ -84,7 +84,7 @@ items:
       - name: Surveys
         items:
           - name: Overview
-            href: guide/tutorials/questionnaire-overview.md        
+            href: guide/tutorials/questionnaire-overview.md
           - name: Survey with Toloka template
             href: guide/tutorials/questionnaire-toloka.md
           - name: Survey on third-party platform
@@ -400,8 +400,6 @@ items:
                 href: guide/concepts/refund.md
               - name: Payment documents
                 href: guide/concepts/documents.md
-              - name: Questions and answers
-                href: guide/concepts/questions.md
           - name: Shared access to the requester's account
             href: guide/concepts/multiple-access.md
   - name: Useful recommendations
@@ -468,32 +466,12 @@ items:
               - include:
                   path: _includes/crowd-kit-toc.yaml
                   mode: link
-  - name: Troubleshooting and support
-    items:
-      - name: All questions on one page
-        href: guide/troubleshooting/troubleshooting.md
-      - name: Registration and getting started
-        href: guide/troubleshooting/register-and-start.md
-      - name: Sandbox
-        href: guide/troubleshooting/sandbox.md
-      - name: Setting up a project
-        href: guide/troubleshooting/project-settings.md
-      - name: Setting up a pool
-        href: guide/troubleshooting/pool-setup.md
-      - name: Adding tasks to a pool
-        href: guide/troubleshooting/adding-tasks-to-the-pool.md
-      - name: Working with results
-        href: guide/troubleshooting/result-questions.md
-      - name: Archiving pools and projects
-        href: guide/troubleshooting/pool-n-project-archive.md
-      - name: Payments
-        href: guide/troubleshooting/finance.md
-      - name: Tolokers
-        href: guide/troubleshooting/users.md
-      - name: Questions about presets
-        href: guide/troubleshooting/questions-about-templates.md
-      - name: Support
-        href: guide/troubleshooting/support.md
+  - name: Frequently asked questions
+    href: guide/faq/index.md
+  - name: Troubleshooting
+    href: guide/troubleshooting/troubleshooting.md
+  - name: Support
+    href: guide/troubleshooting/support.md
   - name: Success stories
     href: https://toloka.ai/success-stories/
   - name: Glossary

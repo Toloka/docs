@@ -181,48 +181,16 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "What overlap should I set?" %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
-Overlap defines how many Tolokers complete the same pool task.
+{% include [faq-specific-number](../_includes/faq/pool-setup/specific-number.md) %}
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
-{% endcut %}
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
-{% cut "Can I change overlap after the pool is started?" %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
-Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
-
-{% endcut %}
-
-{% cut "What is the right time limit for the task completion?" %}
-
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
-
-{% cut "How many tasks should be in a suite?" %}
-
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
-
-{% endcut %}
-
-{% cut "Should I create a skill for every pool?" %}
-
-It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
-
-- Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
-
-    - The pools are intended for different groups of Tolokers (for example, there are filters by city or country).
-
-    - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
-
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
-
-- Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
-
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
-{% endcut %}
+{% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

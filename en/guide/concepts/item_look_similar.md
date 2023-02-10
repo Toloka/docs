@@ -269,7 +269,7 @@ To create a pool:
 
         1. Open the **Are these shoes similar to each other?** pool.
 
-        1. Click **Upload**. 
+        1. Click **Upload**.
 
         1. Click **Drop file here or select**, and upload the file you’ve just made.
 
@@ -297,7 +297,7 @@ To create a pool:
 
         {% note info %}
 
-        In small pools, [control tasks](../troubleshooting/pool-setup.md#how-many-control-tasks) should be 5–10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
+        In small pools, [control tasks](../troubleshooting/troubleshooting.md#how-many-control-tasks) should be 5–10% of all tasks. Include different versions of correct responses in equal amounts. See the distribution of responses on the **Edit tasks** page, **Control tasks** tab.
 
         {% endnote %}
 

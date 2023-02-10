@@ -195,109 +195,20 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How many control tasks do I need to add?" %}
+{% include [faq-how-many-control-tasks](../_includes/faq/pool-setup/how-many-control-tasks.md) %}
 
-We recommend adding at least 1% of control tasks in the pool. And for small pools — 5–10%.
+{% include [faq-correct-responses-counted](../_includes/faq/pool-setup/correct-responses-counted.md) %}
 
-{% cut "Why's that?" %}
+{% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
-Each control task is shown to the Toloker only once. If you use smart mixing, you determine how many control tasks should be in a suite. If each suite contains one control task, then the maximum number of suites that the Toloker can complete is equal to the number of control tasks in the pool. If you increase the number of control tasks in a suite, the number of suites available to the Toloker decreases by the same degree.
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-There shouldn't be too few pages available. Otherwise:
+{% include [faq-move-control-tasks](../_includes/faq/sandbox/move-control-tasks.md) %}
 
-- You won't be able to correctly evaluate the quality of the Toloker's responses.
-- The Toloker won't be interested in completing such tasks because they'll spend a lot of time studying instructions but won't earn much.
+{% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
-{% cut "Example" %}
+{% include [troubleshooting-export](../_includes/troubleshooting/pool-setup/export.md) %}
 
-#### A large pool with 1% of control tasks (good)
-
-There are 10,000 tasks in the pool, and 100 of them are control tasks (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 100 suites.
-
-#### A small pool with 1% control tasks (bad)
-
-There are 100 tasks in the pool, and 1 of them is a control task (1%). Each suite contains 10 tasks, and 1 of them is a control task. This means each Toloker can only complete 1 suite.
-
-#### A small pool with 10% control tasks (good)
-
-There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each suite contains 10 tasks, and 1 of them is a control task. This means a Toloker can complete up to 10 suites.
-
-{% endcut %}
-
-{% endcut %}
-
-If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
-
-{% cut "What for" %}
-
-In a large pool with few control tasks, there might be a situation when a Toloker who has completed a lot of tasks in the project stops getting new task suites. This happens when the Toloker completes all control tasks in the pool.
-
-{% note info %}
-
-To filter out Tolokers, use the [Control tasks](control.md) quality control rule. To rank Tolokers by the quality of responses in control tasks, use a [skill](nav.md).
-
-{% endnote %}
-
-{% endcut %}
-
-{% endcut %}
-
-{% cut "How are the correct responses to control questions counted?" %}
-
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
-
-As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control and training task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
-
-{% endcut %}
-
-{% cut "Should I create a skill for every pool?" %}
-
-It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
-
-- Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
-
-    - The pools are intended for different groups of Tolokers (for example, there are filters by city or country).
-
-    - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
-
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control and training task responses to use** field empty.
-
-- Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
-
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control and training task responses to use** field in pool quality control rules.
-
-{% endcut %}
-
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
-
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
-
-{% endcut %}
-
-{% cut "How do I move control tasks from the Sandbox to the main pool?" %}
-
-The tasks themselves are not exported, only the project configuration and the settings of the selected pool. You can download the completed tasks from the pool in the Sandbox and import them to the exported pool.
-
-To download only the control tasks (if you completed them in the interface), go to **Mark up**, then click **Control tasks** and **Download**.
-
-{% endcut %}
-
-{% cut "If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?" %}
-
-If the Toloker already got paid for the tasks, you can't get your money back.
-
-{% endcut %}
-
-{% cut "When I export a project from the Sandbox, the task files are not exported. Is this how it's supposed to work? I suddenly lost the markup of the control tasks that I created in the sandbox." %}
-
-The tasks themselves are not exported, only the project configuration and the settings of the selected pool. However, you can download your marked up tasks from the **Sandbox** pool and import them to the pool you created. To download the control tasks only (if you marked them up in the interface), go to **Mark up**, then click **Control tasks** and **Download**.
-
-{% endcut %}
-
-{% cut "If I upload tasks using smart mixing, does it mean that the same file should contain both the control tasks and general tasks, or can I upload them separately?" %}
-
-Smart mixing is set up when you upload tasks to the pool. After creating a pool, click **Upload** and select the method for generating task suites. You can upload them using separate files or one file, arranging them in any order.
-
-{% endcut %}
+{% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -231,11 +231,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Do I need to convert all the images in the task to the same size or can they be different?" %}
-
-You can use different image sizes.
-
-{% endcut %}
+{% include [faq-need-convert](../_includes/faq/project-settings/need-convert.md) %}
 
 {% cut "How do I mark up triangles so that they close automatically when the third point is selected?" %}
 
@@ -303,11 +299,7 @@ In the **Config** section on the project settings page, use the **Visual editor*
 
 {% endcut %}
 
-{% cut "What are the input data in the case of object labeling in an image: the coordinates of the object relative to the image, or the coordinates of the object in the Toloka user window?" %}
-
-The coordinates are relative to the image.
-
-{% endcut %}
+{% include [faq-input-data-labeling-image](../_includes/faq/questions-about-templates/input-data-labeling-image.md) %}
 
 {% cut "How do I use control and training tasks in the standard template with an area selection editor?" %}
 

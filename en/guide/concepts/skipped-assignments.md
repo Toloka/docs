@@ -89,40 +89,12 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Should I create a skill for every pool?" %}
+{% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
-It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-- Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
+{% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
-    - The pools are intended for different groups of Tolokers (for example, there are filters by city or country).
-
-    - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
-
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
-
-- Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
-
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
-{% endcut %}
-
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
-
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
-
-{% endcut %}
-
-{% cut "The pool has an overlap and majority vote set up, but some fraudulent user opens the task suites, does nothing, and submits empty assignments. Could this cheater get more tasks from the pool before the results of other Tolokers are known? Could a user quickly click through a lot of task suites before the majority vote is accumulated to ban the cheater?" %}
-
-Yes, unfortunately, this can happen. This is why we recommend that you offer a training task or exam before the general task. In this case, only those people who showed good performance at the previous stage are selected for the main pool.
-
-{% endcut %}
-
-{% cut "If a cheating Toloker gives a lot of incorrect responses, and the system eventually bans them for errors in control tasks, do I have to pay for the bad responses anyway?" %}
-
-If the Toloker already got paid for the tasks, the money can't be refunded to you.
-
-{% endcut %}
+{% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

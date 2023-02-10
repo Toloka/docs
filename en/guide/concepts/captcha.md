@@ -100,78 +100,14 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Should I create a skill for every pool?" %}
+{% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
-It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-- Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
+{% include [faq-incorrect-captcha](../_includes/faq/pool-setup/incorrect-captcha.md) %}
 
-    - The pools are intended for different groups of Tolokers (for example, there are filters by city or country).
+{% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
 
-    - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
-
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
-
-- Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
-
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
-{% endcut %}
-
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
-
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
-
-{% endcut %}
-
-{% cut "I set up a rule to ban users after the first incorrect captcha. This is to eliminate any bots. Is this too strict? What rule do most projects use?" %}
-
-Indeed, this rule is probably too strict. Even the most careful user can make a mistake, so you probably want to relax the rule. Besides the requester-specific bans, we have system processes that ban users who regularly fail captcha checks in Toloka.
-
-{% endcut %}
-
-{% cut "Can I control the frequency of showing captchas to the Tolokers? Some Tolokers get a bit demotivated by that." %}
-
-The frequency of issuing [captchas](captcha.md) is set up in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
-{% cut "Can I get more details on the best practices for using captchas? For which projects is it better to use captchas and how often?" %}
-
-[Captcha](captcha.md) is usually used in simple projects with automatic acceptance, like classification, categorization, or information search. These are cases where there are few response options and users don't need to upload files or write texts. It helps you filter out bots and sloppy Tolokers.
-
-The frequency of issuing captchas is configured in the pool.
-
-No
-
-: Don't show captchas.
-
-Low
-
-: Show a captcha after every 20 assignments.
-
-Average/High
-
-: Show a captcha after every 10 assignments.
-
-{% endcut %}
-
-{% cut "I found the following terms related to captcha in Help: “Percentage of correct responses” and “Percentage of incorrect responses”. Are they determined from the control sample?" %}
-
-The percentage of correct responses is based on the total number of captchas processed by the Toloker within the “range” specified in the **Recent control task responses to use** field. If the value is empty, the percentage is calculated using all the captchas that are shown for the tasks in the pool which uses the captcha rule.
-
-{% endcut %}
+{% include [faq-terms-captcha](../_includes/faq/pool-setup/terms-captcha.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

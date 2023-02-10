@@ -52,23 +52,19 @@ To set up quality control:
 
     - [Processing of rejected and accepted assignments](reassessment-after-accepting.md): Send rejected assignments to other Tolokers to redo them.
 
+## What's next {#what_next}
+
+- [Create a task pool](pool-main.md) in the project.
+- Learn more about how to set up a project:
+
+    - [Writing instructions](instruction.md).
+    - [Input and output data](incoming.md).
+    - [Task interface](spec.md).
+    - [Adapt a task for mobile devices](mobile.md)
+
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I set quality control in a pool correctly?" %}
-
-The settings for [quality control](../../glossary.md#quality-control) rules depend on the type of tasks. General recommendations:
-
-- Always use one or more ways to control quality of answers.
-
-- Counting [fast responses](quick-answers.md) makes sense for most tasks.
-
-- If the Toloker has to choose between options (for example, by selecting checkboxes), check the answers using [majority vote](mvote.md) or [control tasks](goldenset.md).
-
-- If the Toloker has to provide a response as a text or link or upload a photo, the best way to control quality is by [reviewing assignments](accept.md). You can outsource task acceptance to Tolokers. Create a task with a question (for example, “Is this phrase translated correctly?”) and possible responses (for example, “yes”/“no”). Set up [overlap](dynamic-overlap.md) and [majority vote](mvote.md) check.
-
-- If a task is more like an opinion poll (for example, choosing nice pictures from a set), [majority vote](../../glossary.md#majority-vote) is not a good way to control quality. Make [control tasks](../../glossary.md#control-task) with artificial examples where the choice is evident.
-
-{% endcut %}
+{% include [faq-set-quality-control](../_includes/faq/pool-setup/set-quality-control.md) %}
 
 {% cut "How many control tasks do I need to add?" %}
 
@@ -101,7 +97,7 @@ There are 100 tasks in the pool, and 10 of them are control tasks (10%). Each su
 
 {% endcut %}
 
-If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/pool-setup.md#add-gs).
+If there are few control tasks in the open pool, [add new control tasks](../troubleshooting/troubleshooting.md#add-gs).
 
 {% cut "What for" %}
 
@@ -117,52 +113,12 @@ To filter out Tolokers, use the [Control tasks](control.md) quality control rule
 
 {% endcut %}
 
-{% cut "How are the correct responses to control questions counted?" %}
+{% include [faq-correct-responses-counted](../_includes/faq/pool-setup/correct-responses-counted.md) %}
 
-The Control tasks rule starts working after the Toloker completes the number of control tasks you specified. If your pool contains both [training](../../glossary.md#training-task) and control tasks, you can take into account the responses in both of them (the **Number of responses** parameter) or only in control tasks (the **Number of control responses** parameter).
+{% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
-As soon as the needed number of responses is collected, Toloka calculates the percentage of correct and incorrect responses and performs an action (assigns a skill, or blocks the Toloker in the pool or in the project). Then this percentage is updated as the tasks are completed by the Toloker. The number of the Toloker's recent responses that's used in the calculation is set in the **Recent control task responses to use** field. If you leave it empty, all the responses from the Toloker in the pool are counted.
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-{% endcut %}
-
-{% cut "Should I create a skill for every pool?" %}
-
-It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
-
-- Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
-
-    - The pools are intended for different groups of Tolokers (for example, there are filters by city or country).
-
-    - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
-
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
-
-- Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
-
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
-{% endcut %}
-
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
-
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
-
-{% endcut %}
-
-{% cut "Can I disable tasks for Tolokers who do a poor job on tasks?" %}
-
-You can deny access to the pool if the Toloker's responses are [too fast](quick-answers.md), if they don't match the [majority vote](mvote.md), or if the Toloker makes too many mistakes in [control tasks](goldenset.md). Tasks completed by such Tolokers can be [given to other Tolokers](restore-task-overlap.md).
-
-{% endcut %}
-
-## What's next {#what_next}
-
-- [Create a task pool](pool-main.md) in the project.
-- Learn more about how to set up a project:
-
-    - [Writing instructions](instruction.md).
-    - [Input and output data](incoming.md).
-    - [Task interface](spec.md).
-    - [Adapt a task for mobile devices](mobile.md)
+{% include [faq-disable-tasks](../_includes/faq/result-questions/disable-tasks.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
