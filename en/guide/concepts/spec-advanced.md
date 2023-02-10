@@ -18,23 +18,23 @@ You can use [services](js/services.md) for more nuanced needs like subscribing t
 
 ## Lifecycle of a task {#lifecycle}
 
-When a Toloker starts a task, their workspace is initialized in an iframe. A messaging channel is created between the Toloka head page and the iframe. First, a list of tasks is requested and an [`Assignment`](js/assignment.md) instance is created. Then the received list is passed to the [`TaskSuite`](js/tasksuite.md) class. It creates an instance of the [`Task`](js/task.md) class for each task.
+When a Toloker starts a task, their workspace is initialized in an iframe. A messaging channel is created between the Toloka head page and the iframe. First, a list of tasks is requested and an [Assignment](js/assignment.md) instance is created. Then the received list is passed to the [TaskSuite](js/tasksuite.md) class. It creates an instance of the [Task](js/task.md) class for each task.
 
 ### Rendering
 
-To render the task suite, the [`render()`](js/tasksuite.md#render) method of the `TaskSuite` class is called. This method calls the [`render()`](js/task.md#render) method of the `Task` class for each task and collects the created DOM tree components in a single list.
+To render the task suite, the [render()](js/tasksuite.md#render) method of the `TaskSuite` class is called. This method calls the [render()](js/task.md#render) method of the `Task` class for each task and collects the created DOM tree components in a single list.
 
 Here you can change the rendering of tasks and task suites.
 
 ### Response validation
 
-When the Toloker clicks **Send**, the [`TaskSuite.validate(solutions)`](js/tasksuite.md#validate) method is called to validate ther Toloker's responses. It calls the [`Task.validate (solutions)`](js/task.md#validate) method for each task and returns errors.
+When the Toloker clicks **Send**, the [TaskSuite.validate(solutions)](js/tasksuite.md#validate) method is called to validate ther Toloker's responses. It calls the [Task.validate (solutions)](js/task.md#validate) method for each task and returns errors.
 
 Here you can make an additional review of the Toloker's responses.
 
 ### Removal
 
-When the Toloker has finished all tasks on the page or [skipped it](pool_statistic-pool.md#skipped-tasks), the [`destroy()`](js/tasksuite.md#destroy) method of the `TaskSuite` class is called. It calls the [`destroy()`](js/task.md#destroy) method of the `Task` class for each task. These methods free up resources and remove the services and event handlers associated with tasks.
+When the Toloker has finished all tasks on the page or [skipped it](pool_statistic-pool.md#skipped-tasks), the [destroy()](js/tasksuite.md#destroy) method of the `TaskSuite` class is called. It calls the [destroy()](js/task.md#destroy) method of the `Task` class for each task. These methods free up resources and remove the services and event handlers associated with tasks.
 
 ## Class inheritance {#inherit}
 

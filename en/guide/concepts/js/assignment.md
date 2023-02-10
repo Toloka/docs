@@ -12,7 +12,7 @@ The `Assignment` base class is available in the `window.TolokaAssignment` global
 
 Methods:
 
-### constructor(options)
+### constructor(options) {#constructor}
 
 Task list base class builder.
 
@@ -24,25 +24,25 @@ Parameters:
 
 - `options.workspaceOptions` — Toloker's workspace initialization parameters.
 
-### destroy()
+### destroy() {#destroy}
 
 Calls [TaskSuite.destroy()](tasksuite.md#destroy), removes all template elements from the DOM, closes the messaging channel, stops hotkey polling and location detection, calls `onDestroy`.
 
-### initHotkeys()
+### initHotkeys() {#inithotkeys}
 
 Hotkey handler initializer:
 
 - Resets all hotkeys ([hotkeys.reset](services.md#reset)).
 
-- Calls [submit()](#Submit) when the Enter key is pressed.
+- Calls [submit()](#submit) when the Enter key is pressed.
 
-### getId()
+### getId() {#getid}
 
 Returns `assignmentId` as a string or `undefined` if you are debugging the task in preview mode or using pool preview.
 
-### getOptions()
+### getOptions() {#getoptions}
 
-Returns an object with a set of parameters passed to the `constructor()` method during initialization.
+Returns an object with a set of parameters passed to the [constructor()](#constructor) method during initialization.
 
 {% cut "Example" %}
 
@@ -56,7 +56,7 @@ let outputSpec = this.getOptions().specs.output_spec,
 
 {% endcut %}
 
-### getSandboxChannel()
+### getSandboxChannel() {#getsandboxchannel}
 
 Returns the link to an active messaging channel between the parent page and the task frame. If there is no channel, the method creates it.
 
@@ -72,15 +72,15 @@ this.getSandboxChannel().triggerOut('task:interface:show:instruction');
 
 {% endcut %}
 
-### getTaskSuite()
+### getTaskSuite() {#gettasksuite}
 
 Returns a link to a [TaskSuite](tasksuite.md) instance.
 
-### getTaskSuiteContainer()
+### getTaskSuiteContainer() {#gettasksuitecontainer}
 
 Returns `document.body` for the Toloker's workspace.
 
-### getWorkspaceOptions()
+### getWorkspaceOptions() {#getworkspaceoptions}
 
 Returns an object with the Toloker's workspace settings.
 
@@ -96,11 +96,11 @@ The most important settings:
 
 - `origin` — Parent page FQDN.
 
-### pause()
+### pause() {#pause}
 
 Pauses task execution (for example, upon a `request:assignment:pause` command from the main page), calls `onPause`.
 
-### provideSolutions(strategy)
+### provideSolutions(strategy) {#providesolutions}
 
 Collects answers to all tasks ([TolokaTaskSuite.getSolutions()](tasksuite.md#getSolutions)), validates them ([TolokaTaskSuite.validate()](tasksuite.md#validate)). If validation is successful, calls `strategy`, otherwise sends an `assignment:validation:fail` request and an object with a list of errors returned by the validator. Parameter:
 
@@ -130,27 +130,27 @@ provideSolutions(strategy = function(solutions) {
 
 {% endcut %}
 
-### resume()
+### resume() {#resume}
 
-Continues task execution, calls `onResume` and [start](#Start).
+Continues task execution, calls `onResume` and [start()](#start).
 
-### skip()
+### skip() {#skip}
 
 Lets you skip the current task, the same as clicking the **Skip** button.
 
-### start()
+### start() {#start}
 
 Performs all the necessary actions when starting a task suite:
 
 - Adds the rendered task interface to `document.body`.
 
-- Initializes hotkeys for the entire interface ([InitHotkeys](#InitHotkeys)).
+- Initializes hotkeys for the entire interface ([InitHotkeys()](#inithotkeys)).
 
 - Calls `onStart`.
 
-### submit
+### submit() {#submit}
 
-Collects, validates and sends completed tasks by calling [provideSolutions](#ProvideSolutions).
+Collects, validates and sends completed tasks by calling [provideSolutions](#providesolutions).
 
 {% cut "Example" %}
 

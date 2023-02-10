@@ -307,7 +307,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Coordinates" %}
 
-  You can use [coordinates](*coordinates) to specify a location on the map.
+  You can use [coordinates](*type-coordinates) to specify a location on the map.
 
   ```
   INPUT:location
@@ -348,7 +348,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Arrays" %}
 
-  [Array](*array) elements are separated by commas.
+  [Array](*type-array) elements are separated by commas.
 
   {% cut "Array of integer / array of float" %}
 
@@ -392,7 +392,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Array of coordinates" %}
 
-  Each pair of [coordinates](*coordinates) must be enclosed in `""`.
+  Each pair of [coordinates](*type-coordinates) must be enclosed in `""`.
 
   ```
   INPUT:locations
@@ -403,7 +403,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Array of JSON" %}
 
-  The [array](*array) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](#string).
+  The [array](*type-array) of the [JSON](../../glossary.md#json-format) objects is similar to the [string](*type-string).
 
   {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
@@ -416,7 +416,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Array of JSON in the training tasks" %}
 
-  The [array](*array) of the [JSON](../../glossary.md#json-format) objects is similar to the string.
+  The [array](*type-array) of the [JSON](../../glossary.md#json-format) objects is similar to the string.
 
   {% include [toloka-requester-source-tsv-string](../_includes/toloka-requester-source/id-toloka-requester-source/tsv-string.md) %}
 
@@ -811,7 +811,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Coordinates" %}
 
-  You can use [coordinates](*coordinates) to specify a location on the map.
+  You can use [coordinates](*type-coordinates) to specify a location on the map.
 
   ```json
   [
@@ -846,7 +846,7 @@ If you need to add different task types to the pool, upload multiple files, one 
 
   {% cut "Arrays" %}
 
-  [Array](*array) elements are separated by commas.
+  [Array](*type-array) elements are separated by commas.
 
   {% cut "Array of integer / float" %}
 
@@ -1077,7 +1077,8 @@ The maximum file size is 100 MB.
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-[*array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/array.md) %}
-[*coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/coordinates.md) %}
-[*integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/integer.md) %}
-[*float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/float.md) %}
+[*type-array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/type-array.md) %}
+[*type-string]: {% include [toloka-requester-source-string](../_includes/toloka-requester-source/id-toloka-requester-source/type-string.md) %}
+[*type-coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/type-coordinates.md) %}
+[*type-integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/type-integer.md) %}
+[*type-float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/type-float.md) %}

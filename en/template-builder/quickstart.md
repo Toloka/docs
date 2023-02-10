@@ -23,7 +23,7 @@ Open Template Builder.
 
 - In the Template Builder sandbox
 
-  [Link](../template-builder/index.md) to the Template Builder sandbox.
+  [Link](https://ya.cc/t/khilTakI3yQ6nm) to the Template Builder sandbox.
 
 {% endlist %}
 
