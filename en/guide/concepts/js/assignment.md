@@ -42,7 +42,7 @@ Returns `assignmentId` as a string or `undefined` if you are debugging the task 
 
 ### getOptions() {#getoptions}
 
-Returns an object with a set of parameters passed to the `constructor()` method during initialization.
+Returns an object with a set of parameters passed to the [constructor()](#constructor) method during initialization.
 
 {% cut "Example" %}
 
@@ -144,13 +144,13 @@ Performs all the necessary actions when starting a task suite:
 
 - Adds the rendered task interface to `document.body`.
 
-- Initializes hotkeys for the entire interface ([InitHotkeys](#InitHotkeys)).
+- Initializes hotkeys for the entire interface ([InitHotkeys()](#inithotkeys)).
 
 - Calls `onStart`.
 
 ### submit() {#submit}
 
-Collects, validates and sends completed tasks by calling [provideSolutions](#ProvideSolutions).
+Collects, validates and sends completed tasks by calling [provideSolutions](#providesolutions).
 
 {% cut "Example" %}
 

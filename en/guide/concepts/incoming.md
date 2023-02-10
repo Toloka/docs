@@ -34,7 +34,7 @@ There are two ways to edit the specification in project settings: using either r
 
   {% cut "Text in different formats" %}
 
-  - [String](*string) of a certain length
+  - [String](*type-string) of a certain length
 
       ```json
       "my_string": {
@@ -146,7 +146,7 @@ There are two ways to edit the specification in project settings: using either r
 
   {% cut "Numbers" %}
 
-  - [Integer](*integer) from the specified range:
+  - [Integer](*type-integer) from the specified range:
 
       ```json
       "my_integer": {
@@ -167,7 +167,7 @@ There are two ways to edit the specification in project settings: using either r
       }
       ```
 
-  - [Fractional](*float) number:
+  - [Fractional](*type-float) number:
 
       ```json
       "my_float": {
@@ -180,7 +180,7 @@ There are two ways to edit the specification in project settings: using either r
 
   - A number with 0, 1, or 2 decimal places.
 
-      To do this, choose the [string](*string) type and use regular expression for validation. Note that the decimal separator is a comma:
+      To do this, choose the [string](*type-string) type and use regular expression for validation. Note that the decimal separator is a comma:
 
       ```json
       "my_mail_string": {
@@ -268,7 +268,7 @@ There are two ways to edit the specification in project settings: using either r
 - `coordinates`
 - `json`
 
-For [arrays](*array), add the `array_` prefix to the field type in JSON mode. For example: `array_file`.
+For [arrays](*type-array), add the `array_` prefix to the field type in JSON mode. For example: `array_file`.
 To learn more about the data types, see the [Data types](#data-types) section. ||
 || **Required** | `required` | Whether the field must be filled when uploading the tasks for the input data.
 
@@ -286,7 +286,7 @@ By default, the field is visible — `false`.
 Hidden fields are not available in the task interface, even through JS or the template code in the constructor.
 
 {% endnote %}||
-|| **Array** | `array_<type>` | [Array](*array) of objects of the same type. Used, for example, for multiple photos uploaded by a Toloker.
+|| **Array** | `array_<type>` | [Array](*type-array) of objects of the same type. Used, for example, for multiple photos uploaded by a Toloker.
 In JSON mode, there is a separate data type for the array. For example: `"type": "array_file"`.||
 || **Min size** | `min_size` | Minimum number of items in the array.||
 || **Max size** | `max_size` | Maximum number of items in the array.||
@@ -307,15 +307,15 @@ The default value is `false`.||
 
 You can use different data types:
 
-- [integer](*integer)
-- [float](*float)
-- [string](*string)
-- [url](*url)
-- [boolean](*boolean)
-- [coordinates](*coordinates)
-- [json](*json)
-- [file](*file)
-- [array](*array)
+- [integer](*type-integer)
+- [float](*type-float)
+- [string](*type-string)
+- [url](*type-url)
+- [boolean](*type-boolean)
+- [coordinates](*type-coordinates)
+- [json](*type-json)
+- [file](*type-file)
+- [array](*type-array)
 
 ## Recommendations {#recomendations}
 
@@ -380,12 +380,12 @@ If the text is in the HTML block of the task template, then clone the project. T
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-[*integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/integer.md) %}
-[*float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/float.md) %}
-[*string]: {% include [toloka-requester-source-string](../_includes/toloka-requester-source/id-toloka-requester-source/string.md) %}
-[*url]: {% include [toloka-requester-source-url](../_includes/toloka-requester-source/id-toloka-requester-source/url.md) %}
-[*boolean]: {% include [toloka-requester-source-boolean](../_includes/toloka-requester-source/id-toloka-requester-source/boolean.md) %}
-[*coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/coordinates.md) %}
-[*json]: {% include [toloka-requester-source-json](../_includes/toloka-requester-source/id-toloka-requester-source/json.md) %}
-[*file]: {% include [toloka-requester-source-file](../_includes/toloka-requester-source/id-toloka-requester-source/file.md) %}
-[*array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/array.md) %}
+[*type-integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/type-integer.md) %}
+[*type-float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/type-float.md) %}
+[*type-string]: {% include [toloka-requester-source-string](../_includes/toloka-requester-source/id-toloka-requester-source/type-string.md) %}
+[*type-url]: {% include [toloka-requester-source-url](../_includes/toloka-requester-source/id-toloka-requester-source/type-url.md) %}
+[*type-boolean]: {% include [toloka-requester-source-boolean](../_includes/toloka-requester-source/id-toloka-requester-source/type-boolean.md) %}
+[*type-coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/type-coordinates.md) %}
+[*type-json]: {% include [toloka-requester-source-json](../_includes/toloka-requester-source/id-toloka-requester-source/type-json.md) %}
+[*type-file]: {% include [toloka-requester-source-file](../_includes/toloka-requester-source/id-toloka-requester-source/type-file.md) %}
+[*type-array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/type-array.md) %}

@@ -23,7 +23,7 @@ Open Template Builder.
 
 - In the Template Builder sandbox
 
-  [Link](https://toloka.ai/en/docs/template-builder/quickstart) to the Template Builder sandbox.
+  [Link](https://ya.cc/t/khilTakI3yQ6nm) to the Template Builder sandbox.
 
 {% endlist %}
 

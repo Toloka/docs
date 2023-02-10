@@ -229,7 +229,7 @@ Promise.all(promises)
 
 ### render() {#render}
 
-Creates a DOM representation of the task suite: renders all tasks in the task suite. Calls [render() in the Task](task.md#render) class for each task. Calls [onRender()](#onRender). Returns `this`.
+Creates a DOM representation of the task suite: renders all tasks in the task suite. Calls [render()](task.md#render) in the Task class for each task. Calls [onRender()](#onRender). Returns `this`.
 
 ### validate(solutions) {#validate}
 
