@@ -105,56 +105,16 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "What overlap should I set?" %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
-Overlap defines how many Tolokers complete the same pool task.
+{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
+{% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
-{% endcut %}
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
-{% cut "Can I change overlap after the pool is started?" %}
+{% include [faq-output-format](../_includes/faq/pool-setup/output-format.md) %}
 
-Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
-
-{% endcut %}
-
-{% cut "Should I create a skill for every pool?" %}
-
-It is better to use one [skill](../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
-
-- Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
-
-    - The pools are intended for different groups of Tolokers (for example, there are filters by city or country).
-
-    - Pools are started one by one and you don't want to take into account the responses in the previous pools to calculate the skill in the current pool.
-
-    This calculation method is used by default when adding a quality control rule to a pool. For the control tasks block, leave the **Recent control task responses to use** field empty.
-
-- Calculate skill based on all tasks in a project This option is good if the pools are small and you don't need to have skill calculated for each pool.
-
-    This option is available only for skills on control tasks. To use it, fill in the **Recent control task responses to use** field in pool quality control rules.
-
-{% endcut %}
-
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
-
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
-
-{% endcut %}
-
-{% cut "What output format do I use for the review results to filter out mismatching users based on the “Majority vote”?" %}
-
-To perform actions with users (assign a skill or ban them) based on the majority vote, add a relevant [rule](mvote.md) to the pool.
-
-Don't forget to enable **Keep task order** in the pool parameters. Majority vote is used in the projects with preset options (radio buttons or checkboxes). This rule won't apply to the text entry or file upload fields.
-
-{% endcut %}
-
-{% cut "How do I classify users as good Tolokers and poor Tolokers as they complete tasks and ban the poor Tolokers?" %}
-
-You can create a task pool for all your Tolokers and create Toloker skills in it. In this case, you can open your tasks only to the Tolokers with the necessary skills.
-
-{% endcut %}
+{% include [faq-classify-users](../_includes/faq/pool-setup/classify-users.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

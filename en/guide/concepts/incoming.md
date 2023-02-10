@@ -344,39 +344,15 @@ You can use different data types:
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I insert a function that is called by an image click in my task?" %}
+{% include [faq-insert-function](../_includes/faq/project-settings/insert-function.md) %}
 
-You can find an example of the task template for selecting image groups at this [link]({{ selection-of-images-groups }}). The input and output data, as well as a fragment of the instructions, are in the comments to the project.
+{% include [faq-add-mask](../_includes/faq/project-settings/add-mask.md) %}
 
-{% endcut %}
+{% include [faq-need-convert](../_includes/faq/project-settings/need-convert.md) %}
 
-{% cut "How do I add a mask for the input field, like dd.mm.yyyy for the date field or numbers only (10 or 12) for INN (Taxpayer Identification Number)?" %}
+{% include [faq-output-data](../_includes/faq/project-settings/output-data.md) %}
 
-To validate the input data format, you can use the output field type, specifying the acceptable or minimum/maximum values. For example, create an output field for the taxpayer number with the “string” type and enter its minimum and maximum length (like 10 and 12). To use a more sophisticated validation in the template, use RegExp.
-
-To enter a date, you can add a calendar to the task interface. See an [example of a calendar]({{ how-to-insert-a-calendar }}).
-
-{% endcut %}
-
-{% cut "Do I need to convert all the images in the task to the same size or can they be different?" %}
-
-You can use different image sizes.
-
-{% endcut %}
-
-{% cut "If a project's output data may include any number from 1 to 999999, can I specify a range?" %}
-
-You can't use a range as a fixed value.
-
-{% endcut %}
-
-{% cut "How do I show two different versions of the text to Tolokers?" %}
-
-If you pass texts to the input data, you can upload 2 different tasks to the pool: pass Text 1 in the `INPUT: <input field name>` field of Task 1. In Task 2, use this field to pass Text 2.
-
-If the text is in the HTML block of the task template, then clone the project. To limit a Toloker to doing only one task in your project, use the [Submitted responses](submitted-answers.md) rule. You can assign a skill or ban the Toloker after they submit one response.
-
-{% endcut %}
+{% include [faq-two-versions-text](../_includes/faq/adding-tasks-to-the-pool/two-versions-text.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
 

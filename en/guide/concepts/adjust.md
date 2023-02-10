@@ -61,28 +61,10 @@ A personalized quality forecast is based on a large amount of data about user be
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Why has the speed of pool completion dropped?" %}
+{% include [troubleshooting-speed-dropped](../_includes/troubleshooting/pool-setup/speed-dropped.md) %}
 
-Possible reasons:
+{% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
 
-- You've stopped the [training pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
-
-- The filters you set are too strict. For example, a strong restriction on a certain skill that most Tolokers don't have.
-
-- Too many Tolokers are banned. Ease the quality control rules.
-
-{% endcut %}
-
-{% cut "How can I speed up the pool completion?" %}
-
-- To motivate Tolokers, assign a [public skill](nav-create.md#public) and use [dynamic pricing](dynamic-pricing.md).
-
-- Try to [increase the project rating](project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
-
-- Adjust the [quality-speed ratio](adjust.md).
-
-- Set a higher [priority](pool_poolparams.md#priority) for the pool among other project pools.
-
-{% endcut %}
+{% include [faq-speed-up-completion](../_includes/faq/pool-setup/speed-up-completion.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

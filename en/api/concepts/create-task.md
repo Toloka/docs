@@ -455,3 +455,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 {% endlist %}
 
 {% endcut %}
+
+## Troubleshooting {#troubleshooting}
+
+{% include [troubleshooting-tasks-not-created](../../guide/_includes/troubleshooting/api/tasks-not-created.md) %}
+
+{% include [troubleshooting-insert-links-error](../../guide/_includes/troubleshooting/api/insert-links-error.md) %}

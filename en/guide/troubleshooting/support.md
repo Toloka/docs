@@ -2,7 +2,9 @@
 
 ## Find answers to questions
 
-- [All questions on one page](troubleshooting.md)
+- [Frequently asked questions](../faq/index.md)
+
+- [Troubleshooting](troubleshooting.md)
 
 - [Join our Slack community]({{ toloka-slack }})
 

@@ -1013,276 +1013,65 @@ The maximum file size is 100 MB.
 
 {% cut "Uploading tasks to a pool" %}
 
-{% cut "How many tasks should be in a suite?" %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
+{% include [troubleshooting-uploading-tasks-errors](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-tasks-errors.md) %}
 
-{% endcut %}
+{% include [troubleshooting-uploading-too-long](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-too-long.md) %}
 
-{% cut "Errors when uploading tasks in the pool" %}
+{% include [faq-how-many-tasks-toloker-will-see](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-toloker-will-see.md) %}
 
-{% cut "How do I view the processing log?" %}
+{% include [faq-upload-accepted-assignments](../_includes/faq/adding-tasks-to-the-pool/upload-accepted-assignments.md) %}
 
-To view the processing log, click **More on uploading errors**. The processing log is written in JSON format. Objects inside `result` match the line number of the uploaded file. Lines that were processed with an error have the status `"success": false`.
+{% include [troubleshooting-marked-as-training](../_includes/troubleshooting/adding-tasks-to-the-pool/marked-as-training.md) %}
 
-{% note info %}
+{% include [faq-create-task-file-properly](../_includes/faq/adding-tasks-to-the-pool/create-task-file-properly.md) %}
 
-To work with a large log conveniently, copy it to the text editor.
+{% include [troubleshooting-syntax-error](../_includes/troubleshooting/adding-tasks-to-the-pool/syntax-error.md) %}
 
-{% endnote %}
+{% include [faq-max-number-per-suite](../_includes/faq/adding-tasks-to-the-pool/max-number-per-suite.md) %}
 
-{% endcut %}
+{% include [faq-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/smart-mixing.md) %}
 
-#### Errors in column headers
+{% include [faq-smart-mixing-after-uploading](../_includes/faq/adding-tasks-to-the-pool/smart-mixing-after-uploading.md) %}
 
-If the [column headings](pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
-#### Processing errors tables
+{% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
-```json
-"parsing_error_of": "https://tlk.s3.yandex.net/wsdm2020/photos/2d5f63a3184919ce7e3e7068cf93da4b.jpg\t\t",
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 1, sourceList size = 3)"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**Extra tabs.**
-
-If the uploaded file contains more `\t` column separators after the data or the link than the number of columns set in the [input data](../../glossary.md#input-output-data), you get an error message.
-
-For example, if 1 column is set in the input data, and two more `\t\t` tabs are added in the file after the link, you get 3 columns, 2 of which are excessive. | Remove extra column separators in the above example — both `\t\t` characters.||
-|#
-
-```json
-"exception_msg": "the nameMapping array and the sourceList should be the same size (nameMapping length = 4, sourceList size = 6)"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**The number of fields in the header and in the row doesn't match.** | Make sure that:
-
-- The number of tabs in the file structure is correct.
-- String values with tab characters are enclosed in [quotation marks](pool_csv.md#string)`" "`.
-|#
-
-```json
-"code": "VALUE_REQUIRED", "message": "Value must be present and not equal to null"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**The value is missing for a required input field.** | Make sure that columns with required input data fields are filled.||
-|#
-
-```json
-"code": "INVALID_URL_SYNTAX", "message": "Value must be in valid url format"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**Invalid data in a “link” (“url”) field.** | Make sure that:
-
-- Links start with the `http://`, `https://` or `www` prefix.||
-|#
-
-```json
-"exception_msg": "unexpected end of file while reading quoted column beginning on line 2 and ending on line 4"
-```
-
-#|
-||**Overview**|**How to fix**||
-||**Unpaired quotation mark in a string.** | Check that all quotation marks are [escaped](pool_csv.md#string).||
-|#
-
-{% endcut %}
-
-{% cut "How do I know how many tasks a Toloker will see on the page?" %}
-
-You can specify the number of tasks on the page when you upload your tasks to the pool. For more information about distributing tasks across pages, see [this article](distribute-tasks-by-pages.md).
-
-{% endcut %}
-
-{% cut "How do I upload the file with the accepted assignments back to Toloka for projects with manual review? Where do I find the format of the upload data?" %}
-
-Use the button **Upload review results** to upload your file. You can see the format [here](accept.md).
-
-Assignments are reviewed in the tasks file.
-
-{% endcut %}
-
-{% cut "Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?" %}
-
-Check the `hint` field. For the general tasks, this field must be empty.
-
-{% endcut %}
-
-{% cut "How do I create the task file properly so that there are no errors?" %}
-
-In the file with the general tasks, the columns with the `INPUT` headers must be filled out. You can see those headers if you download a sample file from the pool.
-
-If you are creating control tasks, fill out the `GOLDEN` columns with the correct responses.
-
-If you are creating a training task, you also need to fill in the `HINT:text` column. For the general tasks you don't need any columns other than `INPUT`, so feel free to delete them.
-
-You have to use the TSV, XLSX or JSON file format and UTF-8 encoding.
-
-For more information about creating the file, see the [Guide](pool_csv.md). If there are errors during the upload, look up the error description on this [page](task_upload.md).
-
-{% endcut %}
-
-{% cut "Why do I see a syntax error when I upload a task where a Toloker has to view an image and write feedback?" %}
-
-The error might occur if the expected input type is URL, but a string is received.
-
-There may be two reasons:
-
-- The input field has the "link" type.
-
-- The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
-
-{% endcut %}
-
-{% cut "What is the maximum number of tasks per suite?" %}
-
-It depends on the task. Technically, you can use as many tasks you want.
-
-But Tolokers don't like to take lengthy tasks. They'd rather do 10 tasks that take one minute each than one task that takes 10 minutes.
-
-In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
-
-The third thing to consider is quality control and manual review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
-
-{% endcut %}
-
-{% cut "How do I specify smart mixing settings in the interface when uploading a file?" %}
-
-Smart mixing settings are specified for the file rather than for the pool.
-
-The settings specified during the first file upload are applied to all the files that are uploaded to this pool later on.
-
-{% endcut %}
-
-{% cut "What is the right time limit for the task completion?" %}
-
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
-
-{% cut "What is the difference between "task" and "task_suite"?" %}
-
-A task means a separate task. A task suite means a page with tasks. The Toloker gets paid for a task suite.
-
-{% endcut %}
-
-{% cut "The same task appeared on different pages" %}
-
-The same task may appear on different pages if:
-
-- Dynamic overlap is used (incremental relabeling, IRL). As an example, let's say there were 5 tasks on a page. For 4 of them, responses coincided and the common response was counted as correct. The fifth task was mixed into another set because it didn't get into the final response and it needs to be “reassessed”.
-
-- Different tasks have different overlap. Tasks with higher overlap will be additionally shown in sets with the other remaining tasks in the pool.
-
-- If a [quality control rule](../../glossary.md#quality-control-rule) changes a task's overlap, it will appear in a different set.
-
-{% endcut %}
+{% include [troubleshooting-same-task-on-different-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/same-task-on-different-pages.md) %}
 
 {% endcut %}
 
 {% cut "Tasks file" %}
 
-{% cut "Why does the preview display all the photos from the tasks file at once?" %}
+{% include [troubleshooting-preview-all-photos](../_includes/troubleshooting/adding-tasks-to-the-pool/preview-all-photos.md) %}
 
-You must use a separate row for each task in your tasks file. For more information, see [here](pool_csv.md).
+{% include [faq-multiple-known-solutions](../_includes/faq/adding-tasks-to-the-pool/multiple-known-solutions.md) %}
 
-When you create a pool, the pool will have settings for the number of tasks per suite.
+{% include [faq-where-is-file-added](../_includes/faq/adding-tasks-to-the-pool/where-is-file-added.md) %}
 
-{% endcut %}
+{% include [faq-properly-structure-json](../_includes/faq/adding-tasks-to-the-pool/properly-structure-json.md) %}
 
-{% cut "How do I add multiple "known_solutions" to a training task file?" %}
+{% include [faq-array-input-file](../_includes/faq/adding-tasks-to-the-pool/array-input-file.md) %}
 
-You can't use the interface to upload the tasks with multiple correct responses to the pool. You can only use the [API](../../api/concepts/tasks.md) for that.
+{% include [faq-order-input](../_includes/faq/adding-tasks-to-the-pool/order-input.md) %}
 
-{% endcut %}
-
-{% cut "Where is my file added if I upload it to the running pool?" %}
-
-If you have the **Keep task order** option enabled in the pool settings, labeling will start after the tasks you uploaded previously are taken by Tolokers. If this option is disabled, we can't guarantee that the tasks will be assigned in that order.
-
-{% endcut %}
-
-{% cut "How do I properly structure the file used for data upload if the input includes JSON data?" %}
-
-All the values are written to the same column. Make sure to escape quotes. For more information about escaping quotes in JSON format, see the [Guide](pool_csv.md#json).
-
-{% endcut %}
-
-{% cut "How do I write an array to the input file?" %}
-
-The array of strings in the input data must be comma-separated. For example: `INPUT:typestext1, text2, text3, text4`
-
-{% endcut %}
-
-{% cut "Does the order of the INPUT field and GOLDEN fields in the file matter?" %}
-
-The order of the fields in the file does not matter. Use your preferred order of fields.
-
-{% endcut %}
-
-{% cut "If there are no headers for some input columns in the tasks file, are they skipped during import? Will they be skipped if they have headers without the "INPUT:.." prefix?" %}
-
-No. If you try to upload a file with missing headers to the pool, the system issues an upload error. All the INPUT fields required in the specification must be present in the tasks file. There must be no extra fields or columns.
-
-If you don't want to show some data to Tolokers, but you still need this data in the file, create the optional hidden input fields for such data in the project.
-
-{% endcut %}
+{% include [faq-missing-headers](../_includes/faq/adding-tasks-to-the-pool/missing-headers.md) %}
 
 {% endcut %}
 
 {% cut "Input data" %}
 
-{% cut "The system interprets commas inside my array elements as separators between the array elements. How do I avoid this?" %}
+{% include [troubleshooting-commas-inside-array](../_includes/troubleshooting/adding-tasks-to-the-pool/commas-inside-array.md) %}
 
-Escape commas with a backslash (`\`).
+{% include [faq-how-hint-displayed](../_includes/faq/adding-tasks-to-the-pool/how-hint-displayed.md) %}
 
-{% endcut %}
+{% include [faq-add-your-text-here](../_includes/faq/adding-tasks-to-the-pool/add-your-text-here.md) %}
 
-{% cut "How is the data from the "hint" column displayed?" %}
+{% include [troubleshooting-double-quotas-disappear](../_includes/troubleshooting/adding-tasks-to-the-pool/double-quotas-disappear.md) %}
 
-The text from the `hint`field will be shown to the Toloker in a red box at the top of the page if they give a response to the control task that differs from the correct one.
-
-#### Example
-
-![](../_images/hint.png)
-
-If you need to display the text from the `hint` field in several lines, add hyphens to the file and enclose the text in quotation marks.
-
-{% endcut %}
-
-{% cut "What do the lines "Add your text here" mean?" %}
-
-"Add your text here" is a hint for you. It means that you can replace the text in the field with your task data. The file structure and how to fill it out is described [here](pool_csv.md).
-
-{% endcut %}
-
-{% cut "Why do double quotes disappear from the output if I try to escape them using quotation marks?" %}
-
-If you have one word enclosed in quotes, format the uploaded assignment like this: `"How many letters are there in the word ""Liechtenstein"""`. If you are escaping quotes inside your text, then the entire text must be enclosed in quotes. For more information, see the [Guide](pool_csv.md#string).
-
-{% endcut %}
-
-{% cut "How do I insert a link in the GOLDEN field?" %}
-
-Text in the GOLDEN field must match the control text exactly.
-
-Usually, if you copy site links from the browser, the copied links have the same format. But this is not the case when the link is trimmed or typed manually.
-
-Check the links that you use. There are several ways to unify links:
-
-- Add requirements for the link format in your instructions and hints in your training pool.
-
-- Use RegExp in your JS to trim the received links and write the result to the new output field, and then match the received value against the control value.
-
-{% endcut %}
+{% include [faq-link-golden-field](../_includes/faq/adding-tasks-to-the-pool/link-golden-field.md) %}
 
 {% endcut %}
 

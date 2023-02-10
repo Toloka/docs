@@ -287,19 +287,9 @@ Use this parameter to:
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "What is the right time limit for the task completion?" %}
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
-
-{% cut "What overlap should I set?" %}
-
-Overlap defines how many Tolokers complete the same pool task.
-
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
-
-{% endcut %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
 {% cut "Can I change overlap after the pool is started?" %}
 
@@ -307,48 +297,16 @@ Yes. Open edit mode for the pool and set a new overlap value. You don't need to 
 
 {% endcut %}
 
-{% cut "How many tasks should be in a suite?" %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
+{% include [troubleshooting-speed-dropped](../_includes/troubleshooting/pool-setup/speed-dropped.md) %}
 
-{% endcut %}
+{% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
 
-{% cut "Why has the speed of pool completion dropped?" %}
+{% include [faq-speed-up-completion](../_includes/faq/pool-setup/speed-up-completion.md) %}
 
-Possible reasons:
+{% include [faq-change-time-for-task](../_includes/faq/adding-tasks-to-the-pool/change-time-for-task.md) %}
 
-- You've stopped the [main pool](../../glossary.md#training-pool). This could limit the number of Tolokers with access to the pool. Start the training pool again. There will be more Tolokers who can access the tasks.
-
-- The filters you set are too strict. For example, a strong restriction on a certain skill that most Tolokers don't have.
-
-- Too many Tolokers are banned. Ease the quality control rules.
-
-{% endcut %}
-
-{% cut "How can I speed up the pool completion?" %}
-
-- To motivate Tolokers, assign a [public skill](nav-create.md#public) and use [dynamic pricing](dynamic-pricing.md).
-
-- Try to [increase the project rating](project_rating_stat.md), so that your task is higher in the list of tasks for Tolokers.
-
-- Adjust the [quality-speed ratio](adjust.md).
-
-- Set a higher [priority](pool_poolparams.md#priority) for the pool among other project pools.
-
-{% endcut %}
-
-{% cut "If I change the time allocated for one task, will this apply to tasks assigned earlier?" %}
-
-If you change the time allocated for a task, the time value will apply to the tasks that have not yet been taken by the Tolokers. The same applies to the case when you close the pool. A Toloker who has an assignment in the active status can complete the assignment.
-
-{% endcut %}
-
-{% cut "How do I edit or delete tasks uploaded to the pool?" %}
-
-If you uploaded tasks to the pool using “smart mixing”, you can stop the pool and mark up your tasks: edit answers, hints, or delete tasks.
-
-If you uploaded them using a different method, clone your pool and upload the new file with the corrected list of data to be labeled.
-
-{% endcut %}
+{% include [faq-edit-uploaded-tasks](../_includes/faq/adding-tasks-to-the-pool/edit-uploaded-tasks.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

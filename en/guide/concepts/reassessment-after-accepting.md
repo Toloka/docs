@@ -83,20 +83,10 @@ The task is to send rejected and recompleted assignments for review. Or assign t
 
 - [Toloka API: Processing rejected and accepted assignments](../../api/concepts/reassessment.md)
 
-## Troubleshooting {#troubleshooting}
+## Frequently asked questions {#troubleshooting}
 
-{% cut "What overlap should I set?" %}
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
-Overlap defines how many Tolokers complete the same pool task.
-
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
-
-{% endcut %}
-
-{% cut "Can I change overlap after the pool is started?" %}
-
-Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
-
-{% endcut %}
+{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

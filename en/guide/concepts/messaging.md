@@ -138,16 +138,6 @@ To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How can I notify the Toloker of changes in the instructions?" %}
-
-Add a notification to the project description (for example: "Attention! The instructions have changed") and send a message to all the Tolokers who completed your tasks. To do this:
-
-- Assign them a hidden skill or use an existing [skill](nav-assign.md) linked to the pool.
-
-- Go to **Messages**, and click **Contact** → **Group of Tolokers** → **+ Add filter** → **My skills** → **&lt;skill&gt;**.
-
-- If you created a new skill, specify the value you assigned to the chosen group (for example, 1). If you use an existing skill, specify the minimum value.
-
-{% endcut %}
+{% include [faq-notify](../_includes/faq/result-questions/notify.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

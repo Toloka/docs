@@ -4,11 +4,20 @@ A component for placing content in columns.
 
 Use it to customize the display of content: set the column width and adjust the vertical alignment of content.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/W-APYFlT3xtrzV)
+
+{% cut "Components used in the example" %}
+
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Adds a block with text.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "layout.columns" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "layout.columns" | Set component type. ||
 || `fullHeight` | _boolean_ | Switches the component to column mode at full height and with individual scrolling. Otherwise, the height is determined by the height of the column that is filled in the most. ||
 || `items`<span style="color: red">\*</span> | _array_ | Columns to divide the interface into. ||
 || `items[]` | _view_ | Column content. ||
