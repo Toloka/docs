@@ -164,7 +164,7 @@ If this field is omitted, the calculation is based on all the Toloker's response
 || **configs.rules.conditions** | **object \| required**
 
 Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
-|| **configs.rules.conditions.key** | **string \| mandatory**
+|| **configs.rules.conditions.key** | **string \| required**
 
 Values that are checked in the condition.
 

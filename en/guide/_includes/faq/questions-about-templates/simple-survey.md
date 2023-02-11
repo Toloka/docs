@@ -10,7 +10,7 @@
 
 1. Come up with a name for each of the components and create a matching number of string-type output fields with the same names. They will be used to save responses.
 
-1. Make all the output fields mandatory.
+1. Make all the output fields required.
 
 1. Make the input field auxiliary. It will only be used to create a file with tasks.
 

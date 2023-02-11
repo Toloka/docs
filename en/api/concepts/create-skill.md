@@ -52,7 +52,7 @@ Title | Overview
 
 #|
 || Parameter | Overview ||
-|| **name** | **string \| mandatory**
+|| **name** | **string \| required**
 
 Skill name. ||
 || **private_comment** | **string**

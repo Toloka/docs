@@ -1,6 +1,6 @@
 # Viewing Tolokers
 
-The [Tolokers]({{ users }}) page shows all Tolokers who opened at least one of your tasks. On this page, you can select Tolokers to:
+The [Users]({{ users }}) page shows all Tolokers who opened at least one of your tasks. On this page, you can select Tolokers to:
 
 - [Assign or take away a skill](nav.md).
 

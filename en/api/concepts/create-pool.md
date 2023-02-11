@@ -223,33 +223,33 @@ Title | Overview
 
 #|
 || Parameter {#pool-param} | Overview ||
-|| **project_id** | **string \| mandatory**
+|| **project_id** | **string \| required**
 
 ID of the project that the pool was created for. ||
-|| **private_name** | **string \| mandatory**
+|| **private_name** | **string \| required**
 
 Name of the pool (only visible to the requester). ||
 || **may_contain_adult_content** | **boolean \| required**
 
 Whether the tasks contain adult content. ||
-|| **will_expire** | **string \| mandatory**
+|| **will_expire** | **string \| required**
 
 The date and time in UTC when the pool needs to be closed (even if not all task suites have been completed). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
-|| **reward_per_assignment** | **float \| mandatory**
+|| **reward_per_assignment** | **float \| required**
 
 Payment per task suite in U.S. dollars. For cents, use the dot (".") as the separator. The minimum payment is $0.005.
 
 Only training and control tasks can be uploaded to zero-price pools. ||
-|| **defaults** | **object \| mandatory**
+|| **defaults** | **object \| required**
 
 Settings that are applied by default when uploading new task suites to a pool. ||
-|| **defaults.default_overlap_for_new_task_suites** {#default_overlap_for_new_task_suites} | **integer \| mandatory**
+|| **defaults.default_overlap_for_new_task_suites** {#default_overlap_for_new_task_suites} | **integer \| required**
 
 The overlap for task suites that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
 || **defaults.default_overlap_for_new_tasks** {#default-overlap-tasks} | **integer**
 
 The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
-|| **assignment_max_duration_seconds** | **integer \| mandatory**
+|| **assignment_max_duration_seconds** | **integer \| required**
 
 The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers.
 

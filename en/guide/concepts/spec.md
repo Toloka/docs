@@ -66,7 +66,7 @@ Add the `url` field with the `URL` type in the input data. Then add the [Picture
 
 {% cut "Ask Tolokers to enter the text" %}
 
-Add the `input` field with the `string` type in the output data. Make the field mandatory. Then add the [Text input field](t-components/text.md) field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
+Add the `input` field with the `string` type in the output data. Make the field required. Then add the [Text input field](t-components/text.md) field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
 
     ```html
     {{field type="textarea" name="input" width="270px" rows=5}}
@@ -76,7 +76,7 @@ Add the `input` field with the `string` type in the output data. Make the field 
 
 {% cut "Ask Tolokers to select one of the values" %}
 
-Add the `result` field with the `string` type in the output data. Make this field mandatory and specify `Yes` and `No` as acceptable values. Then add a component [Radio button](t-components/radiobuttons.md) component in the task interface (in the HTML block) and specify the field name in the `name` attribute:
+Add the `result` field with the `string` type in the output data. Make this field required and specify `Yes` and `No` as acceptable values. Then add a component [Radio button](t-components/radiobuttons.md) component in the task interface (in the HTML block) and specify the field name in the `name` attribute:
 
     ```html
     {{field type="radio" name="result" label="Yes" value="Yes" hotkey="1"}}

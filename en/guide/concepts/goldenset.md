@@ -24,7 +24,7 @@ Use control tasks to assign a [skill](../../glossary.md#skill) to Tolokers based
 
 {% note alert %}
 
-The **If** and **then** fields in this rule are mandatory. If you don't fill in at least one field, you won't be able to save the rule.
+The **If** and **then** fields in this rule are required. If you don't fill in at least one field, you won't be able to save the rule.
 
 {% endnote %}
 

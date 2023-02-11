@@ -22,7 +22,7 @@ Restrict access to tasks for Tolokers who fail to enter captcha several times in
 
 {% note warning %}
 
-The **If** and **then** fields in this rule are mandatory. If you don't fill in at least one field, you won't be able to save the rule.
+The **If** and **then** fields in this rule are required. If you don't fill in at least one field, you won't be able to save the rule.
 
 {% endnote %}
 

@@ -66,10 +66,10 @@ Contains operation details in JSON format (see the example in the [Operations](o
 
 #|
 || Parameter | Overview ||
-|| **id** | **string \| mandatory**
+|| **id** | **string \| required**
 
 Operation ID. ||
-|| **type** | **string \| mandatory**
+|| **type** | **string \| required**
 
 Operation type:
 
@@ -80,7 +80,7 @@ Operation type:
 - `SOLUTION.AGGREGATE` — Aggregating responses.
 - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites.
 - `KNOWN_SOLUTIONS.GENERATE` — Generating control tasks.||
-|| **status** | **string \| mandatory**
+|| **status** | **string \| required**
 
 The status of the operation:
 
@@ -90,7 +90,7 @@ The status of the operation:
 - `FAIL` — Not completed.
 
 Displayed for all operations except poll creation.||
-|| **submitted** | **string \| mandatory**
+|| **submitted** | **string \| required**
 
 The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 || **started** | **string**

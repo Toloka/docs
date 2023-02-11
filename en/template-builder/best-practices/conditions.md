@@ -17,7 +17,7 @@ In [Toloka](../../index.md), you can use conditions to automate the manual revie
 - A link to the reviewed data is specified in the `data` property.
 - Some components don't have the `data` property, and you can only access them from the `validation` property of the parent component (for example, [condition.played](../reference/condition.played.md) and [condition.played-fully](../reference/condition.played-fully.md)).
 
-## Making a field mandatory {#condition-required}
+## Making a field required {#condition-required}
 
 To check that the data is filled in, add the [condition.required](../reference/condition.required.md) component.
 
