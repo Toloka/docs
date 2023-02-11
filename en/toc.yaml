@@ -354,7 +354,7 @@ items:
           mode: link
   - name: Toloka settings
     items:
-      - name: Tolokers
+      - name: Users
         items:
           - name: Viewing Tolokers
             href: guide/concepts/users.md

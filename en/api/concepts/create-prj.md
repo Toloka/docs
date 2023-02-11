@@ -152,16 +152,6 @@ How to assign tasks:
     ```
 
 The default value is `AUTOMATED`. ||
-|| **assignments_issuing_view_config.map_provider** | **string**
-
-This parameter is available when the project has `"assignments_issuing_type": "MAP_SELECTOR"`.
-
-Map provider for tasks:
-
-- `GOOGLE` — Google Maps.
-- `YANDEX` — Yandex Maps.
-
-If the parameter is not set, then the Toloker selects the map. ||
 || **assignments_automerge_enabled** | **boolean**
 
 Resolve [merging identical tasks](tasks.md#task-merge) in the project. The default value is `false`. ||
@@ -254,7 +244,7 @@ CSS styles of the task.
 For more information, see the [CSS block](../../guide/concepts/spec.md#css) section.||
 || **settings** | **object \| required**
 
-Whether to display standard UI elements in the task. ||
+Whether to display common interface elements in the task. ||
 ||**config[]** | **array of objects**
 
 [Configuration for Template Builder](tb-config.md) ||
@@ -287,9 +277,15 @@ Note that the image labeling interface should only be connected together with th
 Links to CSS libraries. ||
 || **type** | **string**
 
-Editor type:
+Editor type used to create the project interface:
 
-- `tb` — Template Builder. ||
+- `classic` — the [HTML/CSS/JS editor](../../guide/concepts/spec.md) which allows using HTML, CSS, and JavaScript elements to create the task interface.
+- `tb` — the [Template Builder](../../template-builder/index.md) editor which allows using elements with JSON syntax for the task interface.
+
+Depending on the editor type, the following parameters are used:
+
+- `config` when the value is set to `tb`.
+- `assets`, `markup`, `script`, and `styles` when the value is set to `classic`.||
 || **localizationConfig** | **object**
 
 Editor configuration.
@@ -309,7 +305,7 @@ Keys in the source language.
 For more information, see [Translating the task interface](../../guide/concepts/project-languages.md#project-languages__interface-translate). ||
 || **settings.showTimer** | **boolean**
 
-Show the timer. The default value is `true`. ||
+Show the remaining time. The default value is `true`. ||
 || **settings.showTitle** | **boolean**
 
 Show the project name in task titles. The default value is `true`. ||
@@ -318,19 +314,19 @@ Show the project name in task titles. The default value is `true`. ||
 Show the **Instructions** button. The default value is `true`. ||
 || **settings.showFullscreen** | **boolean**
 
-Show the **Expand to fullscreen** button. The default value is `true`. ||
+Show the **Fullscreen** button. The default value is `true`. ||
 || **settings.showSubmit** | **boolean**
 
-Show the **Next** button. The default value is `true`. ||
+Show the **Submit** button. The default value is `true`. ||
 || **settings.showSkip** | **boolean**
 
 Show the **Skip** button. The default value is `true`. ||
 || **settings.showFinish** | **boolean**
 
-Show the **Back to main page** button. The default value is `true`. ||
+Show the **Exit** button. The default value is `true`. ||
 || **settings.showMessage** | **boolean**
 
-Show the **Message for the requester** button. The default value is `true`. ||
+Show the **Contact requester** button. The default value is `true`. ||
 || **settings.showReward** | **boolean**
 
 Show the price per task suite. The default value is `true`. ||

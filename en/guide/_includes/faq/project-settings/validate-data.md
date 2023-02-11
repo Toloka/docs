@@ -4,7 +4,7 @@ You can check the link format using regular expressions. To do this, add the lin
 
 For example: `var regexp = /^(https://www.myurl.com/).{4,200}$/`.
 
-You can also add a regular expression to the `input` field with the **string** type in the output data. Make the field mandatory. Then add the **Text input field** field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
+You can also add a regular expression to the `input` field with the **string** type in the output data. Make the field required. Then add the **Text input field** field in the task interface (in the HTML block) and specify the field name in the `name` attribute:
 
 ```html
 {{field type="textarea" name="input" width="270px" rows=5}}

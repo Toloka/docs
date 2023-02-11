@@ -6,7 +6,7 @@ To clear the entered values, use the [action.set](../reference/action.set.md) ac
 
 ## Example {#section_t1s_fgt_xmb}
 
-Let's say you ask Tolokers whether they prefer cats or dogs. Then you ask them to select their favorite breed, and this field is mandatory.
+Let's say you ask Tolokers whether they prefer cats or dogs. Then you ask them to select their favorite breed, and this field is required.
 
 It's possible that after selecting a breed, the Toloker changes their choice of animal, and you get this response: animal — cat, breed — dachshund.
 

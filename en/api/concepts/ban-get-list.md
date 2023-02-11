@@ -47,12 +47,12 @@ The scope of the ban:
 || **user_id** | **string**
 
 Toloker ID. ||
-|| **project_id** | **string \| mandatory if**
+|| **project_id** | **string \| required if**
 
 Required if `scope=PROJECT`.
 
 The ID of the project that is blocked. ||
-|| **pool_id** | **string \| mandatory if**
+|| **pool_id** | **string \| required if**
 
 Required if `scope=POOL`.
 

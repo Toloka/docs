@@ -38,7 +38,7 @@ The high task price doesn't guarantee a good quality of the result. Increasing t
 
 {% endnote %}
 
-## Price per item {#price-per-item}
+### Price per item {#price-per-item}
 
 When you're creating or editing a pool, under the **Price per task suite, $** field you can see price per 1 [item](../../glossary.md#item).
 
@@ -49,6 +49,18 @@ Price per item is calculated as:
 price per 1 item ![](../_images/other/icons/equal.svg) price per task suite ![](../_images/other/icons/multiply.svg) overlap ![](../_images/other/icons/divide.svg) tasks per suite ![](../_images/other/icons/plus.svg) fee
 ||
 |#
+
+### What is the suggested price based on? {#price-suggest}
+
+The price suggested for the items in your pool depends on several factors:
+
+- The type of the project and the preset you chose while [creating the project](./project.md).
+
+- The Tolokers who match the [filters](./filters.md) you set for the pool.
+
+- The minimal wage in the countries where the filtered Tolokers come from (some filters can affect it indirectly, like the Tolokers' language filter).
+
+The combination of all the above factors affect the suggested price.
 
 ## Setting up dynamic pricing {#section_ucl_3hl_vlb}
 
