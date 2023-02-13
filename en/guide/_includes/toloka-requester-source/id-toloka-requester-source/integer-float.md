@@ -1,1 +1,1 @@
-You can use [integer](*integer) or [fractional](*float) numbers. The separator of fractional and integer parts is `.`.
+You can use [integer](*type-integer) or [fractional](*type-float) numbers. The separator of fractional and integer parts is `.`.

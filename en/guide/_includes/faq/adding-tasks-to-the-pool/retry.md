@@ -1,6 +1,6 @@
 {% cut "How do I set up a retry pool for my project?" %}
 
-You can create a retry pool similarly to an exam pool. In the pool settings, select the type **Retry**. In the retry pool filters, specify the upper and lower values of the <main skill> that the Tolokers must get in order to be admitted to the retry pool.
+You can create a retry pool similarly to an exam pool. In the pool settings, select the type **Retry**. In the retry pool filters, specify the upper and lower values of the `<main skill>` that the Tolokers must get in order to be admitted to the retry pool.
 
 For example, if the main pool admits Tolokers with a skill of 70 or higher, then you can route the people with a skill between 40 and 69 to the retry pool.
 

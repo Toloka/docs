@@ -357,11 +357,19 @@ You can use different data types:
 {% include [contact-support](../_includes/contact-support.md) %}
 
 [*type-integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/type-integer.md) %}
+
 [*type-float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/type-float.md) %}
+
 [*type-string]: {% include [toloka-requester-source-string](../_includes/toloka-requester-source/id-toloka-requester-source/type-string.md) %}
+
 [*type-url]: {% include [toloka-requester-source-url](../_includes/toloka-requester-source/id-toloka-requester-source/type-url.md) %}
+
 [*type-boolean]: {% include [toloka-requester-source-boolean](../_includes/toloka-requester-source/id-toloka-requester-source/type-boolean.md) %}
+
 [*type-coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/type-coordinates.md) %}
+
 [*type-json]: {% include [toloka-requester-source-json](../_includes/toloka-requester-source/id-toloka-requester-source/type-json.md) %}
+
 [*type-file]: {% include [toloka-requester-source-file](../_includes/toloka-requester-source/id-toloka-requester-source/type-file.md) %}
+
 [*type-array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/type-array.md) %}
