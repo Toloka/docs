@@ -1,20 +1,20 @@
 # Common mistakes made by requesters
 
-Using crowdsourcing can be challenging. It's difficult to get it right when launching your first project. In this section, you will learn what mistakes requesters make most often and how to avoid or fix them.
+Using crowdsourcing can be challenging. It's difficult to get it right when launching your first [project](../../glossary.md#project). In this section, you will learn what mistakes requesters make most often and how to avoid or fix them.
 
-Depending on the stage of using Toloka, requester mistakes can be related to: project design, task interface, uploading tasks, or setting up [quality control](../../glossary.md#quality-control).
+Depending on the stage of using Toloka, requester mistakes can be related to: project design, [task interface](../../glossary.md#task-interface), uploading [tasks](../../glossary.md#task), or setting up [quality control](../../glossary.md#quality-control).
 
-## Mistakes related to project architecture {#mistakes-architecture}
+## Project architecture {#mistakes-architecture}
 
-- No decomposition: the requester creates a large task without dividing it into projects and expects Tolokers to infer final conclusions.
+- No [decomposition](../../glossary.md#decomposition): the requester creates a large task without dividing it into projects and expects Tolokers to infer final conclusions.
 
-- The project instructions are long and complicated.
+- The project [instructions](../../glossary.md#instructions) are long and complicated.
 
 - High entry threshold: at the beginning of the project, there is complex [training](../../glossary.md#training-pool) and strict selection of Tolokers.
 
 {% cut "Solutions" %}
 
-#### Decompose tasks
+Decompose tasks:
 
 - Vertical decomposition: divide tasks into several projects.
 
@@ -22,11 +22,15 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 - For greater efficiency, combine both methods.
 
-    Example: in the first project, Tolokers identify the class of objects in an image, and in the second project, they select areas that have these objects. Other Tolokers check if their responses are correct.
+  {% cut "Example" %}
 
-    [Learn more](solution-architecture.md) about decomposition.
+  In the first project, Tolokers identify the class of objects in an image, and in the second project, they select areas that have these objects. Other Tolokers check if their responses are correct.
 
-#### Improve instructions
+  [Learn more](solution-architecture.md) about decomposition.
+
+  {% endcut %}   
+
+Improve instructions:
 
 - Write simple and short instructions for Tolokers — no longer than a single standard page.
 
@@ -40,7 +44,7 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 {% endcut %}
 
-## Errors related to the task interface {#interface-mistakes}
+## Task interface {#interface-mistakes}
 
 - The task doesn't work correctly: buttons are not clickable or images are not displayed.
 
@@ -50,13 +54,13 @@ Depending on the stage of using Toloka, requester mistakes can be related to: pr
 
 {% cut "Solutions" %}
 
-#### Check the tasks before launching your project
+Check the tasks before launching your project:
 
 - Create tasks in the [Sandbox](../../glossary.md#sandbox) and try to do them yourself.
 
 - Launch the project for a limited audience of Tolokers and analyze their feedback.
 
-#### Develop a user-friendly interface
+Develop a user-friendly interface:
 
 {% note tip %}
 
@@ -74,7 +78,7 @@ You can try creating a task interface in the [Template Builder](../../template-b
 
     [Learn more](mobile.md) about adapting tasks for mobile devices.
 
-#### Configure checking the Toloker's actions and data format
+Configure checking the Toloker's actions and data format:
 
 - To do this, use [validation](incoming.md#manual-setting). For example, make sure that the Toloker started playing media content or played it to the end.
 
@@ -92,7 +96,7 @@ You can try creating a task interface in the [Template Builder](../../template-b
 
 {% endcut %}
 
-## Mistakes related to uploading tasks {#loading-tasks-mistakes}
+## Uploading tasks {#loading-tasks-mistakes}
 
 - Incorrect format, encoding, or structure of the file with tasks.
 
@@ -114,17 +118,15 @@ You can try creating a task interface in the [Template Builder](../../template-b
 
 {% endcut %}
 
-## Mistakes in quality control settings {#quality-control-mistakes}
+## Quality control {#quality-control-mistakes}
 
-- There are no Toloker filters and tasks are available even to users who can't complete them.
+- There are no Toloker [filters](../../glossary.md#filters) and tasks are available even to users who can't complete them.
 
 - [Quality control rules](../../glossary.md#quality-control-rule) are not used, or they are configured incorrectly.
 
 {% cut "Solutions" %}
 
-#### Select Tolokers
-
-Using [filters](../../glossary.md#filters), you can filter out Tolokers who are not fit for your tasks.
+Select Tolokers. Using filters, you can filter out Tolokers who are not fit for your tasks:
 
 - Use targeting by language and region. Toloka users are located in different countries.
 
@@ -132,13 +134,13 @@ Using [filters](../../glossary.md#filters), you can filter out Tolokers who are 
 
 [Learn more](filters.md) about filters.
 
-#### Set quality control rules
+Set quality control rules:
 
 - Consider what type of acceptance you'll use:
 
     For tasks with auto acceptance, the best quality control rules are control tasks, majority vote, fast responses, and recompletion of assignments from banned users.
 
-    For tasks with manual review, the best methods are fast responses and review results.
+    For tasks with [manual review](offline-accept.md), the best methods are fast responses and review results.
 
     [Learn more](control.md) about quality control rules.
 
@@ -146,7 +148,7 @@ Using [filters](../../glossary.md#filters), you can filter out Tolokers who are 
 
 - Specify the reason for [banning Tolokers](../../glossary.md#banning-tolokers) (it is only visible to you) and the reason for rejecting tasks (the Tolokers will see it).
 
-#### Set up quality control rules
+Set up quality control rules:
 
 - Avoid choosing mutually exclusive settings.
 
@@ -162,9 +164,7 @@ Using [filters](../../glossary.md#filters), you can filter out Tolokers who are 
 
 ### New users aren't joining the project
 
-#### Reason
-
-The project has a pool that can only be accessed through [training](train.md), but the training itself is closed.
+Reason: the project has a pool that can only be accessed through [training](train.md), but the training itself is closed.
 
 {% cut "Solutions" %}
 
@@ -180,7 +180,7 @@ The project has a pool that can only be accessed through [training](train.md), b
 
 ### Tolokers are leaving the project
 
-#### Reasons
+Reasons:
 
 - Tasks don't match the [requirements](unwanted.md), and users refuse to complete them.
 
