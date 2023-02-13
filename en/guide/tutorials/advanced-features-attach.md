@@ -1598,9 +1598,9 @@ Add new variables of the “file” type to the output specification. They will 
 
 Special components are used to upload files. You can read more about them in the following sections:
 
-- [Button for image upload](t-components/upload-picture.md)
-- [Button for recording and uploading a video file](t-components/upload-video.md)
-- [Button for recording and uploading an audio file](t-components/upload-audio.md)
+- [Button for image upload](../concepts/t-components/upload-picture.md)
+- [Button for recording and uploading a video file](../concepts/t-components/upload-video.md)
+- [Button for recording and uploading an audio file](../concepts/t-components/upload-audio.md)
 
 #### Editing HTML
 

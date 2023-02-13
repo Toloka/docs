@@ -40,9 +40,9 @@ Each project consists of the following basic steps:
 
 1. **Obtain and aggregate the results**.
 
-Find out how to top up your account in the [Topping up your account](refill.md) section.
+Find out how to top up your account in the [Topping up your account](../concepts/refill.md) section.
 
-Learn more about how to [set up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
+Learn more about how to [set up pricing](../concepts/dynamic-pricing.md#section_wb1_lhl_vlb).
 
 ## What's next {#what-next}
 
@@ -50,7 +50,7 @@ Learn more about how to [set up pricing](dynamic-pricing.md#section_wb1_lhl_vlb)
 - Create [Project 2](find_an_item_in_store.md) to search for similar images.
 - Create [Project 3](item_look_similar.md) to compare the original image with the results from Project 2.
 - Create [Project 4](item_more_similar.md) to compare matching images.
-- Learn more about [decomposition](solution-architecture.md).
+- Learn more about [decomposition](../concepts/solution-architecture.md).
 
 ## See also {#see-also}
 

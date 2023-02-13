@@ -112,7 +112,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
         1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
 
-            To learn more about specifications, see the [Input and output data](incoming.md) page.
+            To learn more about specifications, see the [Input and output data](../concepts/incoming.md) page.
 
         1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
@@ -147,7 +147,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 1. In the upper-right corner, click **Finish**
 
-    Learn more about working with the project in the [Project](project.md) section.
+    Learn more about working with the project in the [Project](../concepts/project.md) section.
 
 ## Create a pool {#create-pool}
 
@@ -171,7 +171,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
-1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](../concepts/adjust.md) section.
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
@@ -187,7 +187,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. Set a rule for [control task](../../glossary.md#control-task): if the **number of responses** to the control questions is **≥ 3** and **correct responses (%)** to the control questions is **< 60**, then **ban** the Toloker **on project** for **10 days**. Specify the **Control task** as a reason.
 
-       Learn more in [Quality control](control.md).
+       Learn more in [Quality control](../concepts/control.md).
 
 1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
@@ -227,7 +227,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
         1. Click **Combine tasks into suites**.
 
-1. Create a [control task](goldenset.md).
+1. Create a [control task](../concepts/goldenset.md).
 
     1. In the window that opens, click **Create control tasks**.
 
@@ -255,7 +255,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 1. Next to the **Download results** button, click ![Drop-down button](../_images/other/drop-down.svg).
 
-1. Choose **Dawid-Skene aggregation model** from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
+1. Choose **Dawid-Skene aggregation model** from the list. Learn more about [Result aggregation based on the Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
 1. In the window that opens, click **Yes**.
 

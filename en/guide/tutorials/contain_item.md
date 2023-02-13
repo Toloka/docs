@@ -114,7 +114,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
       1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
 
-          Learn more about the **Specification** parameters in [Input and output data](incoming.md).
+          Learn more about the **Specification** parameters in [Input and output data](../concepts/incoming.md).
 
       1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
@@ -151,7 +151,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. To go back to the **Projects** page, click **Finish editing**.
 
-Learn more about working with the project in the [Project](project.md) section.
+Learn more about working with the project in the [Project](../concepts/project.md) section.
 
 ## Create a pool {#create_pool}
 
@@ -177,7 +177,7 @@ To create a [pool](../../glossary.md#pool):
 
     1. {% include [tutorials-platform-filter](../_includes/tutorials/platform-filter.md) %}
 
-1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](../concepts/adjust.md) section.
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
@@ -195,7 +195,7 @@ To create a [pool](../../glossary.md#pool):
 
         ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part1-2.png)
 
-        Learn more in [Quality control](control.md).
+        Learn more in [Quality control](../concepts/control.md).
 
 1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
@@ -247,7 +247,7 @@ To get the results:
 
 1. Next to the **Download results** button, click ![Drop-down button](../_images/other/drop-down.svg).
 
-1. Choose the **Dawid-Skene aggregation model**. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md).
+1. Choose the **Dawid-Skene aggregation model**. Learn more about [Result aggregation based on the Dawid-Skene model](../concepts/result-aggregation.md).
 
 1. In the window that opens, click **Yes**.
 

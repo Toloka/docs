@@ -26,7 +26,7 @@ items:
   - name: Tutorials
     items:
       - name: List of examples
-        href: guide/concepts/usecases.md
+        href: guide/tutorials/usecases.md
       - name: Images
         items:
           - name: Image classification
@@ -38,15 +38,15 @@ items:
           - name: Object recognition and area selection (example with decomposition)
             items:
               - name: Overview
-                href: guide/concepts/image-segmentation-overview.md
+                href: guide/tutorials/image-segmentation-overview.md
               - name: Project 1. Does the image contain a specific object?
-                href: guide/concepts/image-segmentation-project1.md
+                href: guide/tutorials/image-segmentation-project1.md
               - name: Project 2. Select an object in the image
-                href: guide/concepts/image-segmentation-project2.md
+                href: guide/tutorials/image-segmentation-project2.md
               - name: Project 3. Are the bounding boxes correct?
-                href: guide/concepts/image-segmentation-project3.md
+                href: guide/tutorials/image-segmentation-project3.md
               - name: 'Appendix: Complete code for all projects'
-                href: guide/concepts/image-segmentation-appendix.md
+                href: guide/tutorials/image-segmentation-appendix.md
       - name: Video
         items:
           - name: Video classification
@@ -70,17 +70,17 @@ items:
           - name: Product photo search (example with decomposition)
             items:
               - name: Overview
-                href: guide/concepts/data-collection.md
+                href: guide/tutorials/data-collection.md
               - name: Project 1. Does the photo contain a certain object?
-                href: guide/concepts/contain_item.md
+                href: guide/tutorials/contain_item.md
               - name: Project 2. Find a similar item in an online store
-                href: guide/concepts/find_an_item_in_store.md
+                href: guide/tutorials/find_an_item_in_store.md
               - name: Project 3. Does the item found look similar to the original?
-                href: guide/concepts/item_look_similar.md
+                href: guide/tutorials/item_look_similar.md
               - name: Project 4. Which of the found items is most similar to the original?
-                href: guide/concepts/item_more_similar.md
+                href: guide/tutorials/item_more_similar.md
               - name: 'Appendix: Complete code for all projects'
-                href: guide/concepts/appendix-expanded-code.md
+                href: guide/tutorials/appendix-expanded-code.md
       - name: Surveys
         items:
           - name: Overview
@@ -106,19 +106,19 @@ items:
           - name: Customization examples
             items:
               - name: Overview
-                href: guide/concepts/advanced-features.md
+                href: guide/tutorials/advanced-features.md
               - name: Add a button
-                href: guide/concepts/advanced-features-button.md
+                href: guide/tutorials/advanced-features-button.md
               - name: Attaching files
-                href: guide/concepts/advanced-features-attach.md
+                href: guide/tutorials/advanced-features-attach.md
               - name: Add description fields
-                href: guide/concepts/advanced-features-input-data.md
+                href: guide/tutorials/advanced-features-input-data.md
               - name: Add a picture
-                href: guide/concepts/advanced-features-show-pic.md
+                href: guide/tutorials/advanced-features-show-pic.md
               - name: Add a text field
-                href: guide/concepts/advanced-features-input-string.md
+                href: guide/tutorials/advanced-features-input-string.md
               - name: Add response options
-                href: guide/concepts/advanced-features-input-selector.md
+                href: guide/tutorials/advanced-features-input-selector.md
   - name: Projects
     items:
       - name: Steps to follow

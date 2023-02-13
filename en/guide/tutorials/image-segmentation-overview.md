@@ -1,6 +1,6 @@
 # Object recognition and area selection (example with decomposition)
 
-This is an example of decomposing the [Object recognition and area selection](../tutorials/selection.md) task. Decomposition can improve the quality of results and reduce the cost of performing complex tasks.
+This is an example of decomposing the [Object recognition and area selection](selection.md) task. Decomposition can improve the quality of results and reduce the cost of performing complex tasks.
 
 Let's say you have photos of streets and you need to select traffic signs in them. But you don't know if there are traffic signs in all the photos, so you want to filter them first. You also don't want to check the Tolokers' responses yourself afterwards.
 
@@ -26,16 +26,16 @@ Each project consists of the following basic steps:
 
 1. Obtain and aggregate the results.
 
-Find out how to top up your account in the [Topping up your account](refill.md) section.
+Find out how to top up your account in the [Topping up your account](../concepts/refill.md) section.
 
-If you need help rating tasks, read about [setting up pricing](dynamic-pricing.md#section_wb1_lhl_vlb).
+If you need help rating tasks, read about [setting up pricing](../concepts/dynamic-pricing.md#section_wb1_lhl_vlb).
 
 ## What's next {#what-next}
 
 - Create [Project 1](image-segmentation-project1.md) to filter images.
 - Create [Project 2](image-segmentation-project2.md) to select objects.
 - Create [Project 3](image-segmentation-project3.md) to check the results.
-- Learn more about [decomposition](solution-architecture.md).
+- Learn more about [decomposition](../concepts/solution-architecture.md).
 
 ## See also {#see-also}
 

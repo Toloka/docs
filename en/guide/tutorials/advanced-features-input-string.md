@@ -1,20 +1,20 @@
-# Add response options
+# Add a text field
 
-Add new response options: checkboxes, radio buttons, and drop-down lists. Use a radio button or a drop-down list when you want Tolokers to choose one response option out of several suggested ones. Checkboxes let Tolokers select any combination of the suggested responses.
+Add an additional text field if you want the Toloker to enter an open-ended response.
 
-{% cut "See how it looks in the example of the “Photos of product and price tag” template" %}
+{% cut "See what it looks like in the example of the “Photos of product and price tag” template" %}
 
 Before:
 
-![](../_images/tutorials/advanced-features/af-input-selector-1.png)
+![](../_images/tutorials/advanced-features/af-input-string-1.png)
 
 After:
 
-![](../_images/tutorials/advanced-features/af-input-selector-2.png)
+![](../_images/tutorials/advanced-features/af-input-string-2.png)
 
 {% endcut %}
 
-For your convenience, here is the ready-made code for the “Photos of product and price tag” template, in which each of the fields is added to the first response button once. Use this code for self-check. You can find our additions to the code by searching for the word “customization”.
+For your convenience, here is ready-made code for the “Photos of product and price tag” template, in which the text field is added to the first response button. Use it to check your own code. You can find our additions to the code by searching for the word “customization”.
 
 {% cut "Ready-made code" %}
 
@@ -170,37 +170,13 @@ not_var{{else}}
             </div>
 
             <!-- customization fragment start -->
-            <!-- checkbox -->
+            <!-- string input field -->
             <div class="review__block">
               <div class="review__title">
-                not_var{{texts.btn_ok.question_new_checkbox.title}}
+                not_var{{texts.btn_ok.question_new_input.title}}
               </div>
               <div class="review__box">
-                {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-              </div>
-            </div>
-
-            <!-- radio button -->
-            <div class="review__block">
-              <div class="review__title">
-                not_var{{texts.btn_ok.question_new_radio.title}}
-              </div>
-              <div class="review__box">
-                {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-                {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-              </div>
-            </div>
-
-            <!-- drop-down list -->
-            <div class="review__block">
-              <div class="review__title">
-                not_var{{texts.btn_ok.question_new_select.title}}
-              </div>
-              <div class="review__box">
-                {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
-                  {{select_item value="Yes" text="Yes"}}
-                  {{select_item value="No" text="No"}}
-                {{/field}}
+                {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
               </div>
             </div>
             <!-- customization fragment end -->
@@ -395,46 +371,16 @@ not_var{{else}}
                     </div>
 
                     <!-- customization fragment start -->
-            <!-- checkbox -->
+            <!-- string input field -->
                     <div class="main__content-block">
                       <div class="main__content-title main__content-title_req">
-                        not_var{{texts.btn_ok.question_new_checkbox.title}}
+                        not_var{{texts.btn_ok.question_new_input.title}}
                       </div>
                       <div class="main__text">
-                        not_var{{texts.btn_ok.question_new_checkbox.description}}
+                        not_var{{texts.btn_ok.question_new_input.description}}
                       </div>
                       <div class="main__box">
-                        {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-                      </div>
-                    </div>
-
-                    <!-- radio button -->
-                    <div class="main__content-block">
-                      <div class="main__content-title main__content-title_req">
-                        not_var{{texts.btn_ok.question_new_radio.title}}
-                      </div>
-                      <div class="main__text">
-                        not_var{{texts.btn_ok.question_new_radio.description}}
-                      </div>
-                      <div class="main__box">
-                        {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-                        {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-                      </div>
-                    </div>
-
-                    <!-- drop-down list -->
-                    <div class="main__content-block">
-                      <div class="main__content-title main__content-title_req">
-                        not_var{{texts.btn_ok.question_new_select.title}}
-                      </div>
-                      <div class="main__text">
-                        not_var{{texts.btn_ok.question_new_select.description}}
-                      </div>
-                      <div class="main__box">
-                        {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
-                          {{select_item value="Yes" text="Yes"}}
-                          {{select_item value="No" text="No"}}
-                        {{/field}}
+                        {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
                       </div>
                     </div>
                     <!-- customization fragment end -->
@@ -592,26 +538,18 @@ var texts = {
             'example_link_1': 'https://mt-content-public.s3.yandex.net/instructions/toloka_field_templates/price_org_3-min.png'
         },
 
-        // customization fragment start
-        'question_new_checkbox': {
-          'title': 'Checkbox',
-          'description': 'Select an option'
-        },
-        'question_new_radio': {
-          'title': 'Radio buttons',
-          'description': 'Select an option'
-        },
-        'question_new_select': {
-          'title': 'Drop-down list',
-          'description': 'Select an option'
-        }
-        // customization fragment end
+  // customization fragment start
+  'question_new_input': {
+    'title': 'String input field',
+    'description': 'Enter a word'
+  }
+  // customization fragment end
 
     },
     'btn_no_price': {
         'title': 'I found the product, but the price tag is missing',
         'question_1': {
-            'title': 'Store's front photo',
+            'title': 'Store facade photo',
             'description': 'Take 2 photos of the store's front from different angles so that its sign and name are clearly visible.',
             'example_link_1': 'https://mt-content-public.s3.yandex.net/instructions/toloka_field_templates/price_org_1_4_6-min.png'
         },
@@ -1107,12 +1045,8 @@ exports.Task = extend(TolokaHandlebarsTask, function (options) {
             }
 
             // customization fragment start
-            if (!solution.output_values.radio_result) {
-              this.errors = this.addError('This is a required field', 'radio_result', this.errors);
-            }
-
-            if (!solution.output_values.select_result) {
-              this.errors = this.addError('This is a required field', 'select_result', this.errors);
+            if (!solution.output_values.input_result || solution.output_values.input_result.trim() === '') {
+              this.errors = this.addError('This is a required field', 'input_result', this.errors);
             }
             // customization fragment end
 
@@ -1225,580 +1159,209 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 {% endcut %}
 
-Now let's see how to add each field manually.
+Now let's add the text field manually.
 
-{% list tabs %}
+#### Editing the output specification
 
-- Add a checkbox
+Add a new field:
 
-  The template uses a special component for easier development. Learn more in [Checkbox](t-components/checkboxes.md).
+`input_result`: A string input field.
 
-  #### Editing the output specification
+Add as many fields as you need and give them unique names. For example, if you need three string input fields, add three fields with the names `input_result1`, `input_result2`, and `input_result3`.
 
-  Add a new field:
+The template uses a special component to simplify development. Learn more in [String input field](../concepts/t-components/string.md).
 
-  `checkbox_result` — checkbox (boolean).
+#### Editing HTML
 
-  Add a field for each checkbox you need and give them unique names. For example, if you need three checkboxes, add three fields with the names `checkbox_result1`, `checkbox_result2`, and `checkbox_result3`.
+1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
 
-  #### Editing HTML
+    Each block looks like this:
 
-  1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
+    ```html
+    `<div class="block_name">`
+    <!-- code for the block that may contain nested blocks -->
+    ...
+    </div>
+    ```
 
-      Each block looks like this:
+1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
 
-      ```html
-      `<div class="block_name">`
-      <!-- code for the block that may contain nested blocks -->
-      ...
-      </div>
-      ```
+    Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
 
-  1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
+    The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
 
-      Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
+    Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
 
-      The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
+    ```html
+    <!-- string input field -->
+    <div class="main__content-block">
+    <div class="main__content-title main__content-title_req">
+    not_var{{texts.btn_ok.question_new_input.title}}
+    </div>
+    <div class="main__text">
+    not_var{{texts.btn_ok.question_new_input.description}}
+    </div>
+    <div class="main__box">
+    {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
+    </div>
+    </div>
+    ```
 
-      Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
+    In this code, a string input field is added to the button with the name `btn_ok`. If you added a new field to another button, change the name `btn_ok` to the right one.
 
-      ```html
-      <!-- checkbox -->
-      <div class="main__content-block">
-      <div class="main__content-title main__content-title_req">
-      not_var{{texts.btn_ok.question_new_checkbox.title}}
-      </div>
-      <div class="main__text">
-      not_var{{texts.btn_ok.question_new_checkbox.description}}
-      </div>
-      <div class="main__box">
-      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-      </div>
-      </div>
-      ```
+    The new fields are listed in the `main__box` block as strings:
 
-      In this code, a checkbox is added to the button with the name `btn_ok`. If you added a checkbox to another button, replace `btn_ok` with the relevant button's name.
+    ```html
+    {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
+    ```
 
-      The checkboxes are listed in the`main__box` blocks as strings:
+    In the code above, one string input field is added. The output value will be passed to the `input_result` field that you added to the output specification.
 
-      ```html
-      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-      ```
+    To add multiple string input fields, paste the same strings to the code for each of the fields of this type that you added to the output specification. Change the value of the `name` parameter of each field to what you named them in the output specification. For example, if you added three new text fields to the output specification, paste this string three times and then change the `"input_result"` values in each string to what you named them in the specification.
 
-      In the code above, one checkbox is added. The output value will be passed to the `checkbox_result` field that you added to the output specification.
+    Change the values of the `placeholder` parameter. It contains a hint displayed in an empty text field.
 
-      To add multiple checkboxes, paste the same strings in the code for each of the fields you added to the output specification. Change the value of the `name` parameter for each of the checkboxes to what you named them in the output specification. For example, if you added new fields for three checkboxes to the output specification, insert this string three times and then change the `"checkbox_result"` values in each line to what you named them in the specification.
+1. Update the acceptance mode.
 
-      Change the value of the `label` parameter. It contains a caption displayed next to the checkbox.
+    The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
 
-  1. Update the acceptance mode.
+    ```html
+    {{#if (equal verdict "ok")}}
+    <!-- code for the "ok" button in acceptance mode -->
+    <div class="review__block">
+    <!-- code for the "ok" button field in acceptance mode -->
+    ...
+    </div>
+    ...
+    {{/if}}
+    ```
 
-      The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
+    The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
 
-      ```html
-      {{#if (equal verdict "ok")}}
-      <!-- code for the "ok" button in acceptance mode -->
-      <div class="review__block">
-      <!-- code for the "ok" button field in acceptance mode -->
-      ...
-      </div>
-      ...
-      {{/if}}
-      ```
+    For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
 
-      The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
+    The `review__block` blocks contain a description of each field for this button.
 
-      For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
+    Find the desired button by searching for the string `{{#if (equal verdict "response_button_value")}}` then find the `review`field where you want to add a new field and insert the following code after it:
 
-      The `review__block` blocks contain a description of each field for this button.
+    ```html
+    <!-- string input field -->
+    <div class="review__block">
+    <div class="review__title">
+    not_var{{texts.btn_ok.question_new_input.title}}
+    </div>
+    <div class="review__box">
+    {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
+    </div>
+    </div>
+    ```
 
-      Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
+    In this code, a string input field is added to the button with the name `btn_ok`. If you added a new field to another button, change the name `btn_ok` to the right one.
 
-      ```html
-      <!-- checkbox -->
-      <div class="review__block">
-      <div class="review__title">
-      not_var{{texts.btn_ok.question_new_checkbox.title}}
-      </div>
-      <div class="review__box">
-      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-      </div>
-      </div>
-      ```
+    The new fields are listed in the `main__box` block as strings:
 
-      In this code, a checkbox is added to the button with the name `btn_ok`. If you added a checkbox to another button, replace `btn_ok` with the relevant button's name.
+    ```html
+    {{field type="input" name="input_result" placeholder="Enter a word" validation-show="top-left" width="100%"}}
+    ```
 
-      The checkboxes are listed in the `review__box` block as strings:
+    In the code above, one string input field is added. The output value will be passed to the `input_result` field that you added to the output specification.
 
-      ```html
-      {{field type="checkbox" name="checkbox_result" label="checkbox" size="L"}}
-      ```
+    To add multiple string input fields, paste the same strings to the code for each of the fields of this type that you added to the output specification. Change the value of the `name` parameter of each field to what you named them in the output specification. For example, if you added three new text fields to the output specification, paste this string three times and then change the `"input_result"` values in each string to what you named them in the specification.
 
-      In the code above, one checkbox is added. The output value will be passed to the `checkbox_result` field that you added to the output specification.
+    Change the values of the `placeholder` parameter. It contains a hint displayed in an empty text field.
 
-      To add multiple checkboxes, paste the same strings in the code for each of the fields you added to the output specification. Change the value of the `name` parameter for each of the checkboxes to what you named them in the output specification. For example, if you added new fields for three checkboxes to the output specification, insert this string three times and then change the `"checkbox_result"` values in each line to what you named them in the specification.
+#### Editing JS
 
-      Change the value of the `label` parameter. It contains a caption displayed next to the checkbox.
+1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
 
-  #### Editing JS
+    The elements are described as follows:
 
-  1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
+    ```plaintext
+    'property': 'value'
+    ```
 
-      The elements are described as follows:
+    The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
 
-      ```plaintext
-      'property': 'value'
-      ```
+1. The `texts` constant at the very beginning of the file stores all texts for each button.
 
-      The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
+    Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
 
-  1. The `texts` constant at the very beginning of the file stores all texts for each button.
+    For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
 
-      Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
+    ```javascript
+    var texts = {
+    //<common header text>
+    'btn_ok': {
+    'title': 'I found the price tag for the product',
+    'question_1': {
+    //<texts for the first field (photos of the store's front)>
+    },
+    'question_2': {
+    //<texts for the second field (product photos)>
+    },
+    'question_3': {
+    //<texts for the third field (photo of the price tag)>
+    }
+    },
+    ```
 
-      For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
+1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
 
-      ```javascript
-      var texts = {
-      //<common header text>
-      'btn_ok': {
-      'title': 'I found the price tag for the product',
-      'question_1': {
-      //<texts for the first field (photos of the store's front)>
-      },
-      'question_2': {
-      //<texts for the second field (product photos)>
-      },
-      'question_3': {
-      //<texts for the third field (photo of the price tag)>
-      }
-      },
-      ```
+    ```javascript
+    'question_new_input': {
+    'title': 'String input field',
+    'description': 'Enter a word'
+    }
+    ```
 
-  1. To add the texts for checkboxes, put a comma after the curly bracket that closes the last field and paste the following code:
+    Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the text field, and the `description` property contains a question for Tolokers.
 
-      ```javascript
-      'question_new_checkbox': {
-      'title': 'Checkbox',
-      'description': 'Select an answer'
-      }
-      ```
+1. Add validation.
 
-      Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the group of checkboxes, and the `description` property contains a question for Tolokers.
+    Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
 
-  1. Validation.
+    ```javascript
+    else if (solution.output_values.verdict === 'ok') {
+    // code for checking the ok button fields
+    if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
+    // code for checking the imgs_facade field
+    }
 
-      The checkbox can be checked or unchecked, and both values are valid, so there are no separate validation rules for checkboxes.
+    if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
+    // code for checking the imgs_item field
+    }
 
-      {% note info %}
+    if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
+    // code for checking the imgs_price field
+    }
 
-      If you mark the checkbox as required in the output specification, it does not mean that it must be selected. Checkboxes are boolean and take one of two values: `true` or `false`.
+    } else if (solution.output_values.verdict === 'no_price') {
+    //  code for checking the no_price button fields
+    }
+    } else if (solution.output_values.verdict === 'no_item') {
+    //  code for checking the no_item button fields
+    }
+    } else if (solution.output_values.verdict === 'no_shop') {
+    // code for checking the no_shop button fields
+    }
+    ```
 
-      {% endnote %}
+    The response values for the buttons in this example, which are passed to the `verdict` output variable, have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
 
-- Add a radio button
+    Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
 
-  The template uses a special component to simplify development. Learn more in [Radio button](t-components/radiobuttons.md).
+    ```javascript
+    if (!solution... ) {
+    // field validation code
+    }
+    ```
 
-  #### Editing the output specification
+    add the following code:
 
-  Add a new field:
-
-  `radio_result` — A radio button (string type).
-
-  #### Editing HTML
-
-  1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
-
-      Each block looks like this:
-
-      ```html
-      `<div class="block_name">`
-      <!-- code for the block that may contain nested blocks -->
-      ...
-      </div>
-      ```
-
-  1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
-
-      Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
-
-      The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
-
-      Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
-
-      ```html
-      <!-- radio button -->
-      <div class="main__content-block">
-      <div class="main__content-title main__content-title_req">
-      not_var{{texts.btn_ok.question_new_radio.title}}
-      </div>
-      <div class="main__text">
-      not_var{{texts.btn_ok.question_new_radio.description}}
-      </div>
-      <div class="main__box">
-      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-      </div>
-      </div>
-      ```
-
-      In this code, a radio button is added to the button with the name `btn_ok`. If you added a radio button to another button, change the name `btn_ok` to the right one.
-
-      The radio buttons are listed in the `main__box` block as strings:
-
-      ```html
-      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-      ```
-
-      In the code above, a radio button with two elements is added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `radio _result` field that you added to the output specification.
-
-      To add new elements, paste the same strings the required number of times and rename the values of `value` (output value) and `label` (caption for a radio button element).
-
-  1. Update the acceptance mode.
-
-      The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
-
-      ```html
-      {{#if (equal verdict "ok")}}
-      <!-- code for the "ok" button in acceptance mode -->
-      <div class="review__block">
-      <!-- code for the "ok" button field in acceptance mode -->
-      ...
-      </div>
-      ...
-      {{/if}}
-      ```
-
-      The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
-
-      For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
-
-      The `review__block` blocks contain a description of each of the fields for this button.
-
-      Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
-
-      ```html
-      <!-- radio button -->
-      <div class="review__block">
-      <div class="review__title">
-      not_var{{texts.btn_ok.question_new_radio.title}}
-      </div>
-      <div class="review__box">
-      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-      </div>
-      </div>
-      ```
-
-      In this code, a radio button is added to the button with the name `btn_ok`. If you added a radio button to another button, change the name `btn_ok` to the right one.
-
-      The radio buttons are listed in the`review__box` block as strings:
-
-      ```html
-      {{field type="radio" name="radio_result" label="Yes" value="Yes" size="L" validation-show="top-left"}}
-      {{field type="radio" name="radio_result" label="No" value="No" size="L" validation-show="top-left"}}
-      ```
-
-      In the code above, a radio button with two elements is added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `radio _result` field that you added to the output specification.
-
-      To add new elements, paste the same strings the required number of times and rename the values of `value` (output value) and `label` (caption for a radio button element).
-
-  #### Editing JS
-
-  1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
-
-      The elements are described as follows:
-
-      ```plaintext
-      'property': 'value'
-      ```
-
-      The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
-
-  1. The `texts` constant at the very beginning of the file stores all texts for each button.
-
-      Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
-
-      For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
-
-      ```javascript
-      var texts = {
-      //<common header text>
-      'btn_ok': {
-      'title': 'I found the price tag for the product',
-      'question_1': {
-      //<texts for the first field (photos of the store's front)>
-      },
-      'question_2': {
-      //<texts for the second field (product photos)>
-      },
-      'question_3': {
-      //<texts for the third field (photo of the price tag)>
-      }
-      },
-      ```
-
-  1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
-
-      ```javascript
-      'question_new_radio': {
-      'title': 'Radio buttons',
-      'description': 'Select an answer'
-      }
-      ```
-
-      Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the group of radio buttons, and the `description` property contains a question for Tolokers.
-
-  1. Add validation.
-
-      Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
-
-      ```javascript
-      if (!solution.output_values.verdict || solution.output_values.verdict === '') {
-      this.errors = this.addError('No answer selected', "verdict", this.errors);
-      } else if (solution.output_values.verdict === 'ok') {
-      // code for checking the ok button fields
-      if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
-      // code for checking the imgs_facade field
-      }
-
-      if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
-      // code for checking the imgs_item field
-      }
-
-      if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
-      // code for checking the imgs_price field
-      }
-
-      } else if (solution.output_values.verdict === 'no_price') {
-      //  code for checking the no_price button fields
-      }
-      } else if (solution.output_values.verdict === 'no_item') {
-      //  code for checking the no_item button fields
-      }
-      } else if (solution.output_values.verdict === 'no_shop') {
-      // code for checking the no_shop button fields
-      }
-      ```
-
-      The response values for the buttons in this example, which are passed to the `verdict` output variable, have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
-
-      Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
-
-      ```javascript
-      if (!solution... ) {
-      // field validation code
-      }
-      ```
-
-      add the following code:
-
-      ```javascript
-      if (!solution.output_values.radio_result) {
-      this.errors = this.addError('This is a required field', 'radio_result', this.errors);
-      }
-      ```
-
-- Add a drop-down list
-
-  The template uses a special component to simplify development. Learn more in [Drop-down list](t-components/list.md).
-
-  #### Editing the output specification
-
-  Add a new field:
-
-  `select_result` — A dropdown list (string type).
-
-  #### Editing HTML
-
-  1. The HTML code consists of blocks describing various interface elements. Each block may contain other blocks within it. There may be several nesting levels. For example, the block with a response button description contains other blocks with input fields. Each field contains other elements, such as a title and a comment field.
-
-      Each block looks like this:
-
-      ```html
-      `<div class="block_name">`
-      <!-- code for the block that may contain nested blocks -->
-      ...
-      </div>
-      ```
-
-  1. Find the `main` block (it starts with `<div class="main">`). It contains several `main_block` blocks within it, each describing one of the buttons. For example, the “Photos of product and price tag” template has 4 response buttons, which means that its `main` block contains 4 `main_block` blocks for each of the buttons.
-
-      Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new fields to in the code.
-
-      The `main_content` block inside `main__block` contains all the fields for the selected button. The description of each field is located in `main__content-block`.
-
-      Find the button in the `main__block` block, then find the `main__content-block` field where you want to add a new field and paste the following code after it:
-
-      ```html
-      <!-- drop-down list -->
-      <div class="main__content-block">
-      <div class="main__content-title main__content-title_req">
-      not_var{{texts.btn_ok.question_new_select.title}}
-      </div>
-      <div class="main__text">
-      not_var{{texts.btn_ok.question_new_select.description}}
-      </div>
-      <div class="main__box">
-      {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
-      {{select_item value="Yes" text="Yes"}}
-      {{select_item value="No" text="No"}}
-      {{/field}}
-      </div>
-      </div>
-      ```
-
-      In this code, a drop-down list is added to the button with the name `btn_ok`. If you added a drop-down list to another button, change the name `btn_ok` to the right one.
-
-      The drop-down list elements are listed in the `main__box` block as strings:
-
-      ```html
-      {{select_item value="Yes" text="Yes"}}
-      {{select_item value="No" text="No"}}
-      ```
-
-      In the code above, only two drop-down list elements are added: **Yes** and **No** with output values `Yes` and `No`. The output value will be passed to the `select_result` variable that you added to the output specification.
-
-      To add new elements, paste the same strings the required number of times and rename the values of `value` (output value) and `text` (the text displayed in the drop-down list).
-
-  1. Update the acceptance mode.
-
-      The `review` block contains the code for each button in the acceptance mode. This code is located in the following blocks:
-
-      ```html
-      {{#if (equal verdict "ok")}}
-      <!-- code for the "ok" button in acceptance mode -->
-      <div class="review__block">
-      <!-- code for the "ok" button field in acceptance mode -->
-      ...
-      </div>
-      ...
-      {{/if}}
-      ```
-
-      The value of the response button selected by the Toloker is passed to the `verdict` variable specified in the output specification.
-
-      For example, in the “Photos of product and price tag” template, 4 values are described for 4 buttons: `ok`, `no_price`, `no_item`, and `no_shop`.
-
-      The `review__block` blocks contain a description of each of the fields for this button.
-
-      Find the button by searching for the string `{{#if (equal verdict "response_button_value")}}`, then find the `review__block`, field where you want to add a new field and insert the following code after it:
-
-      ```html
-      <!-- drop-down list -->
-      <div class="review__block">
-      <div class="review__title">
-      not_var{{texts.btn_ok.question_new_select.title}}
-      </div>
-      <div class="review__box">
-      {{#field type="select" name="select_result" placeholder="Select an answer" validation-show="top-left"}}
-      {{select_item value="Yes" text="Yes"}}
-      {{select_item value="No" text="No"}}
-      {{/field}}
-      </div>
-      </div>
-      ```
-
-      Change the name of the `btn_ok` button to the right one.
-
-      If you added new elements to the drop-down list (`{{select_item value= ... }}` strings) at the previous step, then add the same strings to this code.
-
-  #### Editing JS
-
-  1. The JS code consists of blocks describing various interface elements. These blocks can be nested (buttons contain a set of fields, fields contain a set of elements, and so on). Each block is enclosed in curly brackets.
-
-      The elements are described as follows:
-
-      ```html
-      'property': 'value'
-      ```
-
-      The value can also consist of several properties, in which case it is enclosed in curly brackets and forms the next level of nesting.
-
-  1. The `texts` constant at the very beginning of the file stores all texts for each button.
-
-      Each button has a name for accessing its properties. For example, the buttons in the “Photos of product and price tag” template are named `btn_ok`, `btn_no_price`, `btn_no_item`, and `btn_no_shop`. Remember the name of the button that you are adding new text to in the code.
-
-      For example, in the “Photos of product and price tag” template, the texts for the `btn_ok` button are located in the following code block:
-
-      ```javascript
-      var texts = {
-      //<common header text>
-      'btn_ok': {
-      'title': 'I found the price tag for the product',
-      'question_1': {
-      //<texts for the first field (photos of the store's front)>
-      },
-      'question_2': {
-      //<texts for the second field (product photos)>
-      },
-      'question_3': {
-      //<texts for the third field (photo of the price tag)>
-      }
-      },
-      ```
-
-  1. To add the texts, put a comma after the curly bracket that closes the last field and paste the following code:
-
-      ```plaintext
-      'question_new_select': {
-      'title': 'Drop-down list',
-      'description': 'Select an answer'
-      }
-      ```
-
-      Change the values of the `title` and `description` properties. The `title` property contains a title displayed above the drop-down list, and the `description` property contains a question for Tolokers.
-
-  1. Add validation.
-
-      Find the `validate` function. It contains the code for checking whether the fields in each of the buttons are filled in. For example, in the “Photos of product and price tag” template, the code looks like this:
-
-      ```javascript
-      else if (solution.output_values.verdict === 'ok') {
-      // code for checking the ok button fields
-      if (!solution.output_values.imgs_facade || solution.output_values.imgs_facade.length === 0) {
-      // code for checking the imgs_facade field
-      }
-
-      if (!solution.output_values.imgs_item || solution.output_values.imgs_item.length === 0) {
-      // code for checking the imgs_item field
-      }
-
-      if (!solution.output_values.imgs_price || solution.output_values.imgs_price.length === 0) {
-      // code for checking the imgs_price field
-      }
-
-      } else if (solution.output_values.verdict === 'no_price') {
-      //  code for checking the no_price button fields
-      }
-      } else if (solution.output_values.verdict === 'no_item') {
-      //  code for checking the no_item button fields
-      }
-      } else if (solution.output_values.verdict === 'no_shop') {
-      // code for checking the no_shop button fields
-      }
-      ```
-
-      The response values for the buttons that are passed to the `verdict` output field have the same names as in the acceptance mode update step: `ok`, `no_price`, `no_item`, and `no_shop`.
-
-      Find the validation block for the button. Inside this block, after any of the field validation blocks that look like this,
-
-      ```javascript
-      if (!solution... ) {
-      // field validation code
-      }
-      ```
-
-      add the following code:
-
-      ```javascript
-      if (!solution.output_values.select_result) {
-      this.errors = this.addError('This is a required field', 'select_result', this.errors);
-      }
-      ```
-
-{% endlist %}
+    ```javascript
+    if (!solution.output_values.input_result || solution.output_values.input_result.trim() === '') {
+    this.errors = this.addError('This is a required field', 'input_result', this.errors);
+    }
+    ```
 
 {% include [contact-support](../_includes/contact-support.md) %}

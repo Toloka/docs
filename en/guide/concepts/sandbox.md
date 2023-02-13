@@ -20,7 +20,7 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 1. Configure and launch your project:
 
-    - A list of instructions is provided in [Tutorials for popular tasks](usecases.md).
+    - A list of instructions is provided in [Tutorials for popular tasks](../tutorials/usecases.md).
 
     - General instructions in the [Starting and tuning a project](main-steps.md) section.
 

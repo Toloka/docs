@@ -42,7 +42,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
         1. Edit the **CSS** block:
 
-            1. Set up the area selection tools. This template uses [Editor for image area selection](t-components/image-annotation.md). It features rectangle and polygon tools (by default).
+            1. Set up the area selection tools. This template uses [Editor for image area selection](../concepts/t-components/image-annotation.md). It features rectangle and polygon tools (by default).
 
                 To set up rectangle selection, replace the code in the **CSS** block with the following:
 
@@ -62,7 +62,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
             1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
 
-                Learn more about [annotation](t-components/image-annotation.md#annotation).
+                Learn more about [annotation](../concepts/t-components/image-annotation.md#annotation).
 
         1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
@@ -124,7 +124,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
     1. Click **Add**.
 
-1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](../concepts/adjust.md) section.
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
@@ -158,7 +158,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
         {% cut "What is manual review?" %}
 
-        The [manual review](offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
+        The [manual review](../concepts/offline-accept.md) option allows you to review [completed assignments](../../glossary.md#completed-tasks) before accepting them and paying for them. If the Toloker didn't follow instructions, you can reject the assignment. The maximum allowed period for the review is set in the **Deadline** field.
 
         {% endcut %}
 
@@ -216,7 +216,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
                 This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
-        [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](control.md).
+        [Control tasks](../../glossary.md#control-task) and [majority vote](../../glossary.md#majority-vote) aren't used for this project type, since the area markup provided by the Tolokers must match (which is almost impossible). Learn more in [Quality control](../concepts/control.md).
 
         {% note info %}
 

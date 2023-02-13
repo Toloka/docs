@@ -2,7 +2,7 @@
 
 The standard templates contain links to examples of photos that the Toloker needs to provide. But you can display a sample image directly in the task.
 
-The easiest way to do this is to use the standard Toloka component described in the [Image](t-components/img.md) section.
+The easiest way to do this is to use the standard Toloka component described in the [Image](../concepts/t-components/img.md) section.
 
 {% cut "See what it looks like in the example of the “Photos of product and price tag” template" %}
 

@@ -213,7 +213,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
               }
               ```
 
-              Learn more about the **Specification** parameters in [Input and output data](incoming.md).
+              Learn more about the **Specification** parameters in [Input and output data](../concepts/incoming.md).
 
           1. Click ![](../_images/tutorials/image-segmentation/preview-button.svg) to see the Toloker's view of the task.
 
@@ -247,7 +247,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
 1. To go back to the **Projects** page, click **Finish editing**.
 
-Learn more about working with the project in the [Project](project.md) section.
+Learn more about working with the project in the [Project](../concepts/project.md) section.
 
 ## Create a pool {#create_pool}
 
@@ -283,7 +283,7 @@ To create a [pool](../../glossary.md#pool):
 
     1. Leave the **Absent** field empty.
 
-1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](../concepts/adjust.md) section.
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
@@ -301,7 +301,7 @@ To create a [pool](../../glossary.md#pool):
 
         ![](../_images/tutorials/image-segmentation/wsdm-tutorial-part4-1.png)
 
-    Learn more in [Quality control](control.md).
+    Learn more in [Quality control](../concepts/control.md).
 
 1. At the **Add optional pool settings** step:
 
@@ -359,6 +359,6 @@ To get the results:
 
 ## What's next {#what-next}
 
-- Learn more about [decomposition](solution-architecture.md).
+- Learn more about [decomposition](../concepts/solution-architecture.md).
 
 {% include [contact-support](../_includes/contact-support.md) %}
