@@ -17,6 +17,6 @@ This section contains various examples of field template customizations. You can
 ## See also {#see-also}
 
 - [Template Builder quick start](../../template-builder/quickstart.md)
-- [Editing task interface with HTML/CSS/JS editor](spec.md)
+- [Editing task interface with HTML/CSS/JS editor](../concepts/spec.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

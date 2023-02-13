@@ -22,7 +22,7 @@ Tolokers do better with short, uniform tasks. Use [decomposition](../../glossary
 
 Learn more about the benefits of decomposition and when to use it in [Task decomposition](solution-architecture.md).
 
-To learn how to use decomposition correctly, see [Object recognition and area selection](image-segmentation-overview.md).
+To learn how to use decomposition correctly, see [Object recognition and area selection](../tutorials/image-segmentation-overview.md).
 
 You can also read [Mistakes related to project architecture](frequent-customer-errors.md#mistakes-architecture).
 

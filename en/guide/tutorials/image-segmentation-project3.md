@@ -151,7 +151,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
             }
             ```
 
-           To learn more about specifications, see the [Input and output data](incoming.md) page.
+           To learn more about specifications, see the [Input and output data](../concepts/incoming.md) page.
 
       1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
@@ -226,7 +226,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     1. Leave the **Missing** field blank.
 
-1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](adjust.md) section.
+1. (optional) In the **Speed/quality balance** section, specify the desired quality level. Improving quality may reduce the speed of task completion because the pool will be available to fewer Tolokers. Learn more in the [Speed/quality balance](../concepts/adjust.md) section.
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
@@ -250,7 +250,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
         {% endnote %}
 
-    Learn more in [Quality control](control.md).
+    Learn more in [Quality control](../concepts/control.md).
 
 1. At the **Add optional pool settings** step:
 
@@ -290,7 +290,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
         1. Open the **Are the traffic signs outlined correctly?** pool.
 
-        1. Click **Upload**. 
+        1. Click **Upload**.
 
         1. Click **Drop file here or select**, and upload the file you’ve just made.
 
@@ -316,7 +316,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 1. Next to the **Download results** button, click ![Drop-down button](../_images/other/drop-down.svg).
 
-1. Choose **Dawid-Skene aggregation model** from the list. Learn more about [Result aggregation based on the Dawid-Skene model](result-aggregation.md#dawid-skene).
+1. Choose **Dawid-Skene aggregation model** from the list. Learn more about [Result aggregation based on the Dawid-Skene model](../concepts/result-aggregation.md#dawid-skene).
 
 1. In the window that opens, click **Yes**.
 
@@ -407,6 +407,6 @@ You can check the results in two ways:
 
 ## What's next {#what-next}
 
-- Learn more about [decomposition](solution-architecture.md).
+- Learn more about [decomposition](../concepts/solution-architecture.md).
 
 {% include [contact-support](../_includes/contact-support.md) %}

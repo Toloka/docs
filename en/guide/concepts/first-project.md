@@ -100,7 +100,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 - When you complete the testing in the Sandbox, [move](sandbox.md#export) your project to the Toloka production version and launch the pool for real Tolokers.
 
-- View our [tutorials](usecases.md). Perhaps there is an instruction that fits your task, and you will only need to insert your own data.
+- View our [tutorials](../tutorials/usecases.md). Perhaps there is an instruction that fits your task, and you will only need to insert your own data.
 
 - If you don't like Template Builder, try out the [HTML/JS/CSS editor](spec.md).
 

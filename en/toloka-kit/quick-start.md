@@ -35,7 +35,7 @@ To start with Toloka-Kit:
 
 ## What's next {#what-next}
 
-- Complete one of the [tutorials](../guide/concepts/usecases.md) to get acquainted with Toloka web interface.
+- Complete one of the [tutorials](../guide/tutorials/usecases.md) to get acquainted with Toloka web interface.
 
 - Create your [first project](./recipes/learn-basics.md) using Toloka-Kit.
 

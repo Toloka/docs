@@ -142,7 +142,7 @@ Using [filters](../../glossary.md#filters), you can filter out Tolokers who are 
 
     [Learn more](control.md) about quality control rules.
 
-- Choose and combine the rules depending on the content of your project. See examples of how to choose quality control rules in the [tutorials for popular tasks](usecases.md).
+- Choose and combine the rules depending on the content of your project. See examples of how to choose quality control rules in the [tutorials for popular tasks](../tutorials/usecases.md).
 
 - Specify the reason for [banning Tolokers](../../glossary.md#banning-tolokers) (it is only visible to you) and the reason for rejecting tasks (the Tolokers will see it).
 

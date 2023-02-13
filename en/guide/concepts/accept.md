@@ -119,7 +119,7 @@ To accept or reject responses:
 
 {% cut "Delegate manual review to other Tolokers." %}
 
-Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](image-segmentation-project3.md) in the [Selecting an image area](image-segmentation-overview.md). It implements manual review with the help of Tolokers.
+Place a separate task for Tolokers to review the responses. To learn how to do it, see the [last project](../tutorials/image-segmentation-project3.md) in the [Selecting an image area](../tutorials/image-segmentation-overview.md). It implements manual review with the help of Tolokers.
 
 {% endcut %}
 
