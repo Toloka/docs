@@ -1078,7 +1078,11 @@ The maximum file size is 100 MB.
 {% include [contact-support](../_includes/contact-support.md) %}
 
 [*type-array]: {% include [toloka-requester-source-array](../_includes/toloka-requester-source/id-toloka-requester-source/type-array.md) %}
+
 [*type-string]: {% include [toloka-requester-source-string](../_includes/toloka-requester-source/id-toloka-requester-source/type-string.md) %}
+
 [*type-coordinates]: {% include [toloka-requester-source-coordinates](../_includes/toloka-requester-source/id-toloka-requester-source/type-coordinates.md) %}
+
 [*type-integer]: {% include [toloka-requester-source-integer](../_includes/toloka-requester-source/id-toloka-requester-source/type-integer.md) %}
+
 [*type-float]: {% include [toloka-requester-source-float](../_includes/toloka-requester-source/id-toloka-requester-source/type-float.md) %}
