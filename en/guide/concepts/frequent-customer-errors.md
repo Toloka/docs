@@ -1,8 +1,8 @@
 # Common mistakes made by requesters
 
-Using crowdsourcing can be challenging. It's difficult to get it right when launching your first [project](../../glossary.md#project). In this section, you will learn what mistakes requesters make most often and how to avoid or fix them.
+Using crowdsourcing can be challenging. It's difficult to get it right when launching [your first project](first-project.md). In this section, you will learn what mistakes requesters make most often and how to avoid or fix them.
 
-Depending on the stage of using Toloka, requester mistakes can be related to: project design, [task interface](../../glossary.md#task-interface), uploading [tasks](../../glossary.md#task), or setting up [quality control](../../glossary.md#quality-control).
+Depending on the stage of using Toloka, requester mistakes can be related to: [project architecture](solution-architecture.md), [task interface](../../glossary.md#task-interface), uploading [tasks](../../glossary.md#task), or setting up [quality control](../../glossary.md#quality-control).
 
 ## Project architecture {#mistakes-architecture}
 
@@ -46,11 +46,17 @@ Improve instructions:
 
 ## Task interface {#interface-mistakes}
 
+{% note tip %}
+
+You can create a task interface in the [Template Builder](../../template-builder/index.md) or in the [HTML/JS/CSS editor](spec.md).
+
+{% endnote %}
+
 - The task doesn't work correctly: buttons are not clickable or images are not displayed.
 
 - Inconvenient interface: too many questions or unnecessary elements, empty spaces, non-obvious task design, or instructions inside the interface.
 
-- The Toloker's actions are not checked: users can submit incorrectly filled or empty output data fields for verification or they can submit a response with no video or audio in media content tasks.
+- The Toloker's actions are not checked: Tolokers can submit incorrectly filled or empty [output data fields](incoming.md) for verification or they can submit a response with no video or audio in media content tasks.
 
 {% cut "Solutions" %}
 
@@ -61,12 +67,6 @@ Check the tasks before launching your project:
 - Launch the project for a limited audience of Tolokers and analyze their feedback.
 
 Develop a user-friendly interface:
-
-{% note tip %}
-
-You can try creating a task interface in the [Template Builder](../../template-builder/index.md).
-
-{% endnote %}
 
 - Use preset project templates.
 
@@ -98,6 +98,8 @@ Configure checking the Toloker's actions and data format:
 
 ## Uploading tasks {#loading-tasks-mistakes}
 
+Common mistakes related to [uploading tasks](task_upload.md):
+
 - Incorrect format, encoding, or structure of the file with tasks.
 
 - Too many tasks on a page, which reduces the quality of task completion.
@@ -120,25 +122,25 @@ Configure checking the Toloker's actions and data format:
 
 ## Quality control {#quality-control-mistakes}
 
-- There are no Toloker [filters](../../glossary.md#filters) and tasks are available even to users who can't complete them.
+- There are no Toloker [filters](../../glossary.md#filters) and tasks are available even to Tolokers who can't complete them.
 
 - [Quality control rules](../../glossary.md#quality-control-rule) are not used, or they are configured incorrectly.
 
 {% cut "Solutions" %}
 
-Select Tolokers. Using filters, you can filter out Tolokers who are not fit for your tasks:
+Using filters, you can filter out Tolokers who are not fit for your tasks:
 
-- Use targeting by language and region. Toloka users are located in different countries.
+- Use targeting by language and region. Tolokers are located in different countries.
 
-- Select users based on their profile data, device specifications, or skills.
+- Select Tolokers based on their profile data, device specifications, or skills.
 
 [Learn more](filters.md) about filters.
 
-Set quality control rules:
+Set the quality control rules:
 
 - Consider what type of acceptance you'll use:
 
-    For tasks with auto acceptance, the best quality control rules are control tasks, majority vote, fast responses, and recompletion of assignments from banned users.
+    For tasks with auto acceptance, the best quality control rules are [control tasks](goldenset.md), [majority vote](mvote.md), [fast responses](quick-answers.md), and [recompletion of assignments from banned Tolokers](restore-task-overlap.md).
 
     For tasks with [manual review](offline-accept.md), the best methods are fast responses and review results.
 
@@ -147,8 +149,6 @@ Set quality control rules:
 - Choose and combine the rules depending on the content of your project. See examples of how to choose quality control rules in the [tutorials for popular tasks](../tutorials/usecases.md).
 
 - Specify the reason for [banning Tolokers](../../glossary.md#banning-tolokers) (it is only visible to you) and the reason for rejecting tasks (the Tolokers will see it).
-
-Set up quality control rules:
 
 - Avoid choosing mutually exclusive settings.
 
@@ -162,27 +162,29 @@ Set up quality control rules:
 
 ## Examples of problems {#examples-of-errors}
 
-### New users aren't joining the project
+{% cut "New Tolokers aren't joining the project" %}
 
 Reason: the project has a pool that can only be accessed through [training](train.md), but the training itself is closed.
 
 {% cut "Solutions" %}
 
-- If you disabled the training on purpose or you plan to open it periodically because you don't need a large flow of users, then everything is fine.
+- If you disabled the training on purpose or you plan to open it periodically because you don't need a large flow of Tolokers, then everything is fine.
 
-- When labeling has stopped for the project and you are no longer selecting users for the [exam pool](../../glossary.md#exam), just close it.
+- When labeling has stopped for the project and you are no longer selecting Tolokers for the [exam pool](../../glossary.md#exam), just close it.
 
-- If you don't need regular labeling and you don't want users to go through training for no reason, close the pool that the training is associated with.
+- If you don't need regular labeling and you don't want Tolokers to go through training for no reason, close the pool that the training is associated with.
 
 - If you didn't plan to close the training or didn't know that the training should be open, make the necessary changes to the project settings.
 
 {% endcut %}
 
-### Tolokers are leaving the project
+{% endcut %}
+
+{% cut "Tolokers are leaving the project" %}
 
 Reasons:
 
-- Tasks don't match the [requirements](unwanted.md), and users refuse to complete them.
+- Tasks don't match the [requirements](unwanted.md), and Tolokers refuse to complete them.
 
 - Tasks are too complex.
 
@@ -199,6 +201,8 @@ Reasons:
 - Rewrite the instructions to make them clear and easy to understand.
 
 - Try to complete your task in the pool preview, or even better, in the Sandbox. Make sure everything is working correctly.
+
+{% endcut %}
 
 {% endcut %}
 
