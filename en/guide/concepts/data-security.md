@@ -2,7 +2,7 @@
 
 Toloka cares about the security of your data and data labeling results. This section describes the key principles of working with data in Toloka.
 
-## Key principles {#data-security-important_1}
+## Key principles {#key-principles}
 
 - The rights to the results with labeled data belong to the requester, and no one else.
 
@@ -14,7 +14,7 @@ Toloka cares about the security of your data and data labeling results. This sec
 
     {% endnote %}
 
-- Tolokers must treat the requester's data as confidential: this is stipulated in the [User Agreement]({{ useragreement }}). We make sure that no fraudulent users get access to Toloka: cheaters get a warning or ban.
+- According to the [User Agreement]({{ useragreement }}), Tolokers must treat the requester's data as confidential. We make sure that no fraudulent users get access to Toloka: cheaters get a warning or [ban](../../glossary.md#banning-tolokers).
 
 ## Personal data {#personal-data}
 
@@ -22,7 +22,7 @@ By transmitting data to Toloka, you automatically agree to this data being proce
 
 To avoid transmitting personal data, you can anonymize the data yourself. For example, you can cover up people's faces in photos and change the pitch of the voice in speech recordings.
 
-For tasks that use recognition of passports or questionnaires with personal information, you can cut out data fields and use separate tasks for them. For example, you can send the last name, first name, and middle name separately for recognition.
+For [tasks](../../glossary.md#task) that use recognition of passports or questionnaires with personal information, you can cut out data fields and use separate tasks for them. For example, you can send the last name, first name, and middle name separately for recognition.
 
 ## Protect your data
 
@@ -35,7 +35,7 @@ If your data is confidential, take additional measures to protect it.
 
 To protect your data:
 
-- [Decompose tasks](solution-architecture.md#concept_o3r_h4g_nlb). You can break your tasks down into several projects (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
+- [Decompose tasks](solution-architecture.md#concept_o3r_h4g_nlb). You can break your tasks down into several [projects](../../glossary.md#project) (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
 
 - If you use [input](../../glossary.md#input-output-data) fields to transmit data that Tolokers shouldn't see, hide the fields that contain this data. For instance, do this if you moderate comments and you need the authors' personal data in the results for further data processing.
 
@@ -47,11 +47,11 @@ To protect your data:
 
 Set up the process to avoid storing data on Toloka servers. To do this:
 
-1. When uploading tasks to the pool, use IDs in the input data rather than content itself.
+1. When uploading tasks to the [pool](../../glossary.md#pool), use IDs in the input data rather than content itself.
 
 1. Set up a server to return the task content based on IDs.
 
-1. In the task interface, add code that sends IDs to the server and displays the content received.
+1. In the [task interface](../../glossary.md#task-interface), add code that sends IDs to the server and displays the content received.
 
 For instance, you can store text comments on your server and use the file with tasks to pass only the comment IDs. As a result, only the ID+result pairs are saved in the Toloka database, but these pairs don't have any commercial value in the absence of input data.
 
@@ -95,9 +95,15 @@ For instance, you can store text comments on your server and use the file with t
 
 ## Troubleshooting {#troubleshooting}
 
-{% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
+{% include [troubleshooting-trusted-user-banned](../_includes/troubleshooting/users/trusted-user-banned.md) %}
 
 {% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
+
+{% include [faq-give-access](../_includes/faq/project-settings/give-access.md) %}
+
+{% include [faq-ban-and-reject](../_includes/faq/users/ban-and-reject.md) %}
+
+{% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
 {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
 
