@@ -4,27 +4,27 @@ Quality control rules allow you to get more accurate responses and restrict acce
 
 ## List of rules {#rules}
 
-- **To keep track of how often Tolokers make mistakes:**
+- To keep track of how often Tolokers make mistakes:
 
-    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to control tasks and ban Tolokers who submit incorrect responses.
+    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to [control tasks](../../glossary.md#control-task) and [ban](ban.md) Tolokers who submit incorrect responses.
 
-    - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same task.
+    - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same [task](../../glossary.md#task).
 
     - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected responses.
 
-- **To protect your project from robots and cheaters:**
+- To protect your project from robots and cheaters:
 
     - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
 
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
-- **To attract a variety of Tolokers:**
+- To attract a variety of Tolokers:
 
     - [Earnings](income.md): Limit the amount each Toloker can earn in the [pool](../../glossary.md#pool) per day.
 
     - [Submitted assignments](submitted-answers.md): Limit how many assignments each Toloker can submit in the pool per day.
 
-- **To allow recompletion of certain assignments:**
+- To allow recompletion of certain assignments:
 
     - [Recompletion of assignments from banned users](restore-task-overlap.md): Send [completed assignments](../../glossary.md#completed-tasks) to other Tolokers to redo them if the Toloker was banned.
 
@@ -56,21 +56,21 @@ You can configure quality control in the [pool](qa-pool-settings.md) and in the 
 
 - Pool
 
-  Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the page) and click **Add Quality Control Rule** in the **Quality control** section.
+  Go to pool editing (click ![](../_images/location-job/project/edit-project.svg) in the upper-right corner of the pool page) and click **Add a quality control rule** in the **Quality control** section.
 
   You can copy quality control settings from another pool. To do this, click **Copy audience filters and quality control settings** in the **Audience** section.
 
 - Project
 
+  {% note alert "Restriction" %}
+
+  When you [clone a project](project.md#clone), its quality control settings aren't transferred.
+
+  {% endnote %}
+  
   Open the project page, open the **Quality control** tab and click **Set quality control**. Then click **+ Add Quality Control Rule**.
 
   The rules are applied to all project pools, so you can't change settings in just one of the pools.
-
-  {% note alert "Restriction" %}
-
-  When you [clone a project](project.md), its quality control settings aren't transferred.
-
-  {% endnote %}
 
 {% endlist %}
 
