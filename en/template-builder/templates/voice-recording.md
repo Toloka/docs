@@ -4,7 +4,7 @@ For this type of project, you can use the **Voice Recording** preset.
 
 This preset helps you convert text to speech. Using the Toloka mobile app, Tolokers should tap the button and read the text aloud. If the Toloker uses a desktop application, when he clicks on the button, a window opens to download an audio file. After getting the results, you can listen to the recordings and download them.
 
-Take a look at the example: the labeling interface includes a text and a voice recorder button. Note that the validation, keyboard shortcuts, and task layout are already configured in this example.
+Take a look at the example: the labeling interface includes a text and a voice recorder button. Note that the validation and task layout are already configured in this example.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/XgN35IUF3xqvGy)
 
@@ -86,13 +86,13 @@ To add a detailed description to the task, use the [view.text](../reference/view
 ```json
 {
   "type": "view.text",
-  "content": "Read the question and record the audio answer."
+  "content": "Tap the voice recorder button and read the text aloud."
 }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/QFldZez23xtqqo)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/a5j6lIKx3zL3nz)
 
 ## Add a layout {#add-layout}
 
@@ -107,39 +107,18 @@ In this example, the text is highlighted with a blue border.
     "type": "view.alert",
     "theme": "info",
     "content": {
-      "type": "view.text",
-      "content": "Read the question and record the audio answer."
+       "type": "view.text",
+       "content": {
+         "type": "data.input",
+         "path": "text"
+        }  
     }
   }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/dMvB7Vl33xtyhW)
-
-## Add a response field {#add-text-area}
-
-If you want that Tolokers give an extended response, add a text field using the [field.textarea](../reference/field.textarea.md).
-
-{% cut "Show code" %}
-
-```json
-{
-  "type": "field.textarea",
-  "label": "Comments",
-  "placeholder": "Enter text",
-  "data": {
-    "type": "data.output",
-    "path": "comment"
-  }
-}
-```
-
-{% endcut %}
-
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/W3ojB79U3xtvqs)
-
-
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3bZ9nXUi3zLAZC)
 
 ## Add a condition {#add-a-condition}
 
@@ -160,8 +139,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
   },
   "then": {
     "type": "field.text",
-    "label": "Why?",
-    "placeholder": "Describe why you couldn't upload the recording...",
+    "label": "Why you couldn't upload the file?",
     "data": {
       "type": "data.output",
       "path": "comment"
@@ -172,4 +150,4 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/EiTQbxAc3y3JsR)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/z0gt6KeE3zLPEK)
