@@ -9,6 +9,12 @@ Sends a message to Tolokers.
 
 The sent message is added to a new [message thread](messages.md).
 
+{% note alert "Restriction" %}
+
+You can send a maximum of 1 messages per day to mass mail all your users, and 100,000 messages per day when targeting specific Tolokers. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
+
+{% endnote %}
+
 ## Request {#request}
 
 {% list tabs %}

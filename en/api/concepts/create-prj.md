@@ -6,7 +6,7 @@ Creates a project.
 
 {% note alert "Restriction" %}
 
-You can send a maximum of 20 requests of this kind per minute and a maximum of 100 requests per day.
+You can send a maximum of 20 requests of this kind per minute and a maximum of 100 requests per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
