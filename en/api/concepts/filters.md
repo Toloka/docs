@@ -78,3 +78,5 @@ The `operator` value must be lowercase.
 
 The value of the attribute from the `key` field. For example, the ID of the region specified in the profile, or the minimum skill value. To choose the correct value, see the descriptions of filters in the sections [Filter by profile data](filter-profile.md), [Filter by calculated data](filter-computed.md), [Filter by skills](filter-skill.md). ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

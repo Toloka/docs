@@ -251,3 +251,5 @@ Determines whether to re-open a closed pool:
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/captcha.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

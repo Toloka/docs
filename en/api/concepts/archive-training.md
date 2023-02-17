@@ -101,4 +101,4 @@ ID of the training pool. ||
 Details of the operation completion. ||
 |#
 
-{% include [contact-support](../_includes/contact-support.md) %}
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

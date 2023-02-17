@@ -39,3 +39,5 @@ Title | Overview
 ## Response {#response}
 
 If the request is successful, the server returns the "204 No Content" or "404 Not Found" HTTP operation status.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

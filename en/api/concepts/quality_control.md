@@ -23,3 +23,5 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 
 - [{#T}](../../guide/concepts/control.md)
 - [How to check Tolokers](../../guide/concepts/check-performers.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

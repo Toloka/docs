@@ -54,3 +54,5 @@ Contains updated information about the skill (see the description in the [Create
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/nav-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

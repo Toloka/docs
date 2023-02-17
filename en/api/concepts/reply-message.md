@@ -55,3 +55,5 @@ Title | Overview
 
 Message text. You can enter the text in multiple languages (the message is sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

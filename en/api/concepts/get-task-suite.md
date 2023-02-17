@@ -39,3 +39,5 @@ Title | Overview
 ## Response {#response}
 
 Contains a [task suite in JSON format](create-task-suite.md#body).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -24,3 +24,5 @@ PATCH | [/task-suites/<task_suite_id>/set-overlap-or-min](set-min-suite-overlap.
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/distribute-tasks-by-pages.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

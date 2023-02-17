@@ -74,3 +74,5 @@ The default value is `0`. ||
 ## Response {#response}
 
 Contains a [task suite in JSON format](task-suite.md).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

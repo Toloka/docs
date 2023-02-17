@@ -762,3 +762,5 @@ Pool type. The value is always `REGULAR` indicating a normal pool. ||
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/pool-main.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

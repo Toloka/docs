@@ -234,3 +234,5 @@ Comments (the reason for blocking access). Visible only to the requester. ||
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/income.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -81,3 +81,5 @@ ID of the subscription. Generated automatically. ||
 
 The date and time when the subscription was created (UTC). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

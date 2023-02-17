@@ -93,3 +93,5 @@ Project ID. ||
 |#
 
 You can check the operation status by sending requests to the `/operations` resource. For more information, see [Overview](operations.md).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

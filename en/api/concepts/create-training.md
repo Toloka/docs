@@ -162,3 +162,5 @@ Training pool status:
 
 The UTC date and time when the training pool was created, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

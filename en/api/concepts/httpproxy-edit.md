@@ -88,3 +88,5 @@ Additional parameters that will be passed in the request to the requester's serv
 ## Response {#response}
 
 Contains server parameters (both updated and not) in JSON format.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

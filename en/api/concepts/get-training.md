@@ -41,3 +41,5 @@ Title | Overview
 ## Response {#response}
 
 Contains information about a training pool (see the description in the [Create a training pool](create-training.md#response) section).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

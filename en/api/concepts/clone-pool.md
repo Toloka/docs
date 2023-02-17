@@ -94,4 +94,4 @@ Source pool ID. ||
 New pool ID. ||
 |#
 
-{% include [contact-support](../_includes/contact-support.md) %}
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

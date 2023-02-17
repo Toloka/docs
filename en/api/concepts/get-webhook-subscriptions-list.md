@@ -178,3 +178,5 @@ Acceptable values:
 - `true` — Not all elements are included in the output due to restrictions in the `limit` parameter.
 - `false` — The output lists all the items. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

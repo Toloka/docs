@@ -181,3 +181,5 @@ Data in the `output` for a failed operation:
 ```
 
 {% endcut %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

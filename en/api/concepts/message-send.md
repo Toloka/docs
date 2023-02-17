@@ -302,3 +302,5 @@ Folders where the thread is located:
 
 Date the first message in the thread was created. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

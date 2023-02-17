@@ -45,3 +45,5 @@ The order of parameters affects the sorting sequence.
 {% endnote %}
 
 For example, when using `sort=param1,param2`, the list is sorted in ascending order by the `param1` values first, and then by the `param2` values. To change the sorting sequence, switch the parameters around: `sort=param2,param1`.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

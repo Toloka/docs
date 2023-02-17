@@ -111,3 +111,5 @@ The date and time in UTC when the Toloker's skill level changed. It uses ISO 860
 
 - [{#T}](../../guide/concepts/nav-assign.md)
 - [{#T}](../../guide/concepts/nav-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

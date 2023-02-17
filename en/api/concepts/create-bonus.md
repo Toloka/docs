@@ -244,3 +244,5 @@ The response format depends on the value of `async_mode`.
     |#
 
 {% endlist %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

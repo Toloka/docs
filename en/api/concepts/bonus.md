@@ -15,3 +15,5 @@ GET | [/user-bonuses/<bonus_id>](get-one-bonus.md) | Gets the properties of the 
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/bonus.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

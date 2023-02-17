@@ -26,3 +26,5 @@ GET | [/aggregated-solutions/<operation_id>](get-aggregated-result.md) | Gets ag
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/result-aggregation.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

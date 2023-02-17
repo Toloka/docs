@@ -112,3 +112,5 @@ Status code of the response from the subscription URL. ||
 
 Array of unique event numbers. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

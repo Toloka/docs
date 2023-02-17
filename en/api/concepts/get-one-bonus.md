@@ -90,3 +90,5 @@ Reward ID. ||
 
 Date the reward was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]` ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

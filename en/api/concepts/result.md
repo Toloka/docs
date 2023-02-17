@@ -149,3 +149,5 @@ You can set up the display of the list of responses in parts (for example, 10 re
 ```json
 {"items" : [{task suite #1}, {task suite #2}, ... {task suite #n}], "has_more": true}
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

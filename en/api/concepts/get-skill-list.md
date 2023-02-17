@@ -105,3 +105,5 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 ```json
 {"items": [{skill 1}, {skill 2}, ... {skill n}], "has_more": false}
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

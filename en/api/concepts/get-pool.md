@@ -41,3 +41,5 @@ Title | Overview
 ## Response {#response}
 
 Contains pool parameters (see the description in the [Create a pool](create-pool.md#response) section).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

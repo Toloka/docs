@@ -104,4 +104,4 @@ Pool ID. ||
 
 - [{#T}](../../guide/concepts/pool-archive.md)
 
-{% include [contact-support](../_includes/contact-support.md) %}
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

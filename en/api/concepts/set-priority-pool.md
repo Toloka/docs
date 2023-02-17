@@ -75,3 +75,5 @@ Contains updated information about the pool (see the description in the [Create 
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/pool-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

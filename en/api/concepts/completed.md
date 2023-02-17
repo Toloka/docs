@@ -232,3 +232,5 @@ Determines whether to re-open a closed pool:
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/submitted-answers.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}
