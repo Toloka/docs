@@ -45,7 +45,7 @@ Title | Overview
 
 {% note info %}
 
-If the training pool is already archived, attempting to archive it again returns an empty response with status 204.
+If the training pool is already archived, attempting to archive it again returns an empty response with status `204`.
 
 {% endnote %}
 

@@ -44,9 +44,9 @@ Title | Overview
 
 {% note info %}
 
-If the pool is already open, an empty response with status 204 is returned.
+If the pool is already open, an empty response with status `204` is returned.
 
-If the pool cannot be opened, a response is returned with an error description and the status 409.
+If the pool cannot be opened, a response is returned with an error description and the status `409`.
 
 {% endnote %}
 

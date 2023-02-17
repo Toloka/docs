@@ -293,6 +293,7 @@ Whether the message can be responded to:
 || **folders**[] | **array of objects**
 
 Folders where the thread is located:
+
 - `INBOX` — Inbox.
 - `OUTBOX` — Sent.
 - `AUTOMATIC_NOTIFICATION` — Notifications.

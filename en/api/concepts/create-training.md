@@ -82,6 +82,7 @@ The default value is `false`. ||
 
 Whether the tasks contain adult content. ||
 || **training_tasks_in_tasksuite_count** | **integer \| required**
+
 Number of training tasks per suite. ||
 || **task_suites_required_to_pass** | **integer**
 
@@ -90,12 +91,14 @@ Number of task suites the Toloker needs to complete to get a skill and access t
 
 Instructions for completing a training task. You can use any HTML markup. ||
 || **assignment_max_duration_seconds** | **integer**
+
 The time allowed for completing a task suite, in seconds. We recommend allowing no more than 60 seconds per task suite (including the time for loading the page and submitting responses). ||
 || **mix_tasks_in_creation_order** | **boolean**
 Whether training tasks are issued in their upload order:
 
 - `true` — Tasks are grouped into task suites in the order of rows in the uploaded file (top-to-bottom).
 - `false` — Tasks are taken at random.
+
 The default value is `true`. ||
 || **shuffle_tasks_in_task_suite** | **boolean**
 Whether training tasks are shuffled within each task suite:

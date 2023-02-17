@@ -15,7 +15,7 @@ The Toloker is banned from the requester's projects when the Toloker's daily ear
 
 You can ban a Toloker for a given number of days, hours, minutes (at a time or in total) or forever.
 
-#### Ban for 10 days
+### Ban for 10 days
 
 ```json
 {
@@ -203,6 +203,7 @@ A fixed value to assign to the skill (a number from 0 to 100). ||
 || **configs.rules.action. parameters.delta** | **integer \| required if**
 
 Required if `type=CHANGE_OVERLAP`.
+
 The value determines the amount to change the overlap by. ||
 || **configs.rules.action. parameters.public_comment** | **string \| required if**
 

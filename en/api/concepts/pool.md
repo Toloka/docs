@@ -27,7 +27,7 @@ POST | [/pools/<pool_id>/archive](archive-pool.md) | Moves a pool to the archive
 POST | [/pools/<pool_id>/clone](clone-pool.md) | Creates a duplicate pool.
 GET | [/pools](get-pool-list.md) | Gets a list of created pools (including archived pools).
 GET | [/pools/<pool_id>](get-pool.md) | Gets the properties of a pool.
-PATCH | [/pools/pool_id>](set-priority-pool.md) | Changes the priority of a pool.
+PATCH | [/pools/<pool_id>](set-priority-pool.md) | Changes the priority of a pool.
 
 ## Learn more {#links}
 

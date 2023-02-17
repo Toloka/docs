@@ -28,7 +28,9 @@ PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) | Stops a
 {% note alert "Restriction" %}
 
 - You can only merge tasks with identical input data. The order of fields in the JSON object must also match.
+
 - You can only merge tasks in open pools. If a new pool got a task that was previously completed in a pool that has been closed or archived, the tasks won't be merged.
+
 - You can only merge your general tasks.
 
 {% endnote %}

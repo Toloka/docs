@@ -44,7 +44,7 @@ Title | Overview
 
 {% note info %}
 
-If the current training pool status is the same as the requested status, an empty response with status 204 is returned.
+If the current training pool status is the same as the requested status, an empty response with status `204` is returned.
 
 {% endnote %}
 

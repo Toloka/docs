@@ -63,8 +63,7 @@ Parameters to sort by:
 - `created` — The date when the skill was changed, in UTC in the YYYY-MM-DD format.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** |
-[limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte), [modified_gt](./standard-query-parameters.md#modified_gt), [modified_gte](./standard-query-parameters.md#modified_gte), [modified_lt](./standard-query-parameters.md#modified_lt), [modified_lte](./standard-query-parameters.md#modified_lte). ||
+|| **Standard query parameters** | [limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte), [modified_gt](./standard-query-parameters.md#modified_gt), [modified_gte](./standard-query-parameters.md#modified_gte), [modified_lt](./standard-query-parameters.md#modified_lt), [modified_lte](./standard-query-parameters.md#modified_lte). ||
 |#
 
 ## Query example {#request-example}

@@ -29,7 +29,7 @@ The sample project described under "Quick start" is for the sandbox. To set up t
 
 1. Get the required results after the tasks are completed by the Tolokers.
 
-    - [Get responses](qs-results.md) (`GET /api/v1/assignments?pool_id=<pool ID>`).
+    - [Get responses](qs-results.md) (`GET /api/v1/assignments?pool_id=<pool_id>`).
     - [Download attachments](get-attachment-list.md) (`GET /api/v1/attachments`).
 
 ## What's next {#what-next}

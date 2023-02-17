@@ -13,9 +13,9 @@ Authorization: OAuth <OAuth token>
 
 ## Resource URL {#urls}
 
-- For requests to the sandbox: `https://sandbox.toloka.dev/api/v1/<the path to the resource>`.
+- For requests to the sandbox: `https://sandbox.toloka.dev/api/v1/<path_to_resource>`.
 
-- For requests to the production version: `https://toloka.dev/api/v1/<the path to the resource>`.
+- For requests to the production version: `https://toloka.dev/api/v1/<path_to_resource>`.
 
 ## Getting an OAuth token {#token}
 
