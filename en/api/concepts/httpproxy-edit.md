@@ -79,6 +79,7 @@ Additional headers that will be passed in the request to the requester's server.
 || **additionalQueryArgs[]** | **array of strings**
 
 Additional parameters that will be passed in the request to the requester's server. Example:
+
 ```json
 "additionalQueryArgs":{"test-arg":["12345"]}
 ```

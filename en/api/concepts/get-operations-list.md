@@ -63,8 +63,7 @@ Parameters to sort by:
 - `finished` — The UTC date and time when the operation was finished, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** |
-[limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [submitted_gt](./standard-query-parameters.md#submitted_gt), [submitted_gte](./standard-query-parameters.md#submitted_gte), [submitted_lt](./standard-query-parameters.md#submitted_lt), [submitted_lte](./standard-query-parameters.md#submitted_lte), [finished_gt](./standard-query-parameters.md#finished_gt), [finished_gte](./standard-query-parameters.md#finished_gte), [finished_lt](./standard-query-parameters.md#finished_lt), [finished_lte](./standard-query-parameters.md#finished_lte).
+|| **Standard query parameters** | [limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [submitted_gt](./standard-query-parameters.md#submitted_gt), [submitted_gte](./standard-query-parameters.md#submitted_gte), [submitted_lt](./standard-query-parameters.md#submitted_lt), [submitted_lte](./standard-query-parameters.md#submitted_lte), [finished_gt](./standard-query-parameters.md#finished_gt), [finished_gte](./standard-query-parameters.md#finished_gte), [finished_lt](./standard-query-parameters.md#finished_lt), [finished_lte](./standard-query-parameters.md#finished_lte).
 ||
 |#
 

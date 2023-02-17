@@ -241,6 +241,7 @@ A fixed value to assign to the skill (a number from 0 to 100). ||
 || **configs.rules.action. parameters.delta** | **integer \| required if**
 
 Required if `type=CHANGE_OVERLAP`.
+
 The value determines the amount to change the overlap by. ||
 || **configs.rules.action. parameters.public_comment** | **string \| required if**
 

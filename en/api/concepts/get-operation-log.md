@@ -97,6 +97,7 @@ Step result:
 - `true` — Completed successfully.
 - `false` — Not completed. ||
 || **input** | **JSON**
+
 The data in the `input` is copied from the input data passed when creating the operation. ||
 || **output** | **JSON**
 

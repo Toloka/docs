@@ -713,6 +713,7 @@ Issue of training tasks with uneven frequency. This option allows you to change 
 If it is filled in, then in `real_task_count` specify the maximum number of tasks to put in a task suite. To use the option, set parameter values `training_task_count:0` and `min_training_tasks_count:null`.
 
 #### Example:
+
 In the first task suite (the range from 1 to 25), every fifth task is a training task, and in the following suites, every 25th task is a training task. ||
 |#
 

@@ -90,7 +90,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 {% list tabs %}
 
-- Data for the tasks (`async_mode=false`)
+- Data for the tasks (async_mode=false)
 
     ```json
     {
@@ -141,7 +141,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   An object with errors in tasks. Returned if the request has the parameter `skip_invalid_items=true`. ||
   |#
 
-- Information about the operation (`async_mode=true`)
+- Information about the operation (async_mode=true)
 
     ```json
     {
@@ -217,7 +217,5 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   |#
 
 {% endlist %}
-
-{% endcut %}
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

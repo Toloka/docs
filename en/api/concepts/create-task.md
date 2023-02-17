@@ -175,6 +175,7 @@ Output data values for preliminary responses.
 || **baseline_solutions[].confidence_weight** | **float \| required**
 
 Confidence in a response, from 0 to 1.
+
 The default value is 1. ||
 || **overlap** {#overlap} | **string \| required if**
 
@@ -238,7 +239,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 {% list tabs %}
 
-- Task data(`async_mode=false`)
+- Task data(async_mode=false)
 
   Information about the created task. Besides [parameters](#body) that are set when creating a task, it includes parameters that are assigned to the task automatically:
 
@@ -255,7 +256,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   The UTC date and time when the task suite was created, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
   |#
 
-- Information about the operation (`async_mode=true`)
+- Information about the operation (async_mode=true)
 
     ```json
     {
@@ -326,7 +327,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 {% list tabs %}
 
-- Data for the tasks (`async_mode=false`)
+- Data for the tasks (async_mode=false)
 
   ```json
   {
@@ -377,7 +378,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   An object with errors in tasks. Returned if the request has the parameter `skip_invalid_items=true`. ||
   |#
 
-- Information about the operation (`async_mode=true`)
+- Information about the operation (async_mode=true)
 
   ```json
   {

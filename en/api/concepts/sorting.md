@@ -1,10 +1,10 @@
 # Sorting the list of objects
 
-When you request a list of objects using the GET method, you can specify the parameters to sort the list by. Sorting is set in the request using the **sort** query parameter.
+When you request a list of objects using the `GET` method, you can specify the parameters to sort the list by. Sorting is set in the request using the **sort** query parameter.
 
 {% note info %}
 
-Lists of objects support various sorting options. For more information about the parameters, see the GET request description for each object.
+Lists of objects support various sorting options. For more information about the parameters, see the `GET` request description for each object.
 
 {% endnote %}
 

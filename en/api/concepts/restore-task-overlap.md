@@ -1,7 +1,5 @@
 # Recompletion of assignments
 
-## Overview {#about}
-
 Toloka can resend tasks for completion if:
 
 - The Toloker lost access to the pool because of the skill filter.
@@ -135,6 +133,7 @@ A fixed value to assign to the skill (a number from 0 to 100). ||
 || **configs.rules.action. parameters.delta** | **integer \| required if**
 
 Required if `type=CHANGE_OVERLAP`.
+
 The value determines the amount to change the overlap by. ||
 || **configs.rules.action. parameters.public_comment** | **string \| required if**
 
@@ -142,6 +141,7 @@ Required if `type=REJECT_ALL_ASSIGNMENTS`.
 
 Comments (the reason for rejecting responses). Available to the requester and the Toloker. ||
 || **configs.rules.conditions.key** | **string**
+
 Only count cases when the Toloker lost access to tasks due to a drop in the skill level: `"key": "skill_id"`. ||
 || **configs.rules.conditions. value** | **string**
 
