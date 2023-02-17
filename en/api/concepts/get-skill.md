@@ -116,3 +116,5 @@ An indicator of a global skill:
 - `true` — The skill is global, shows general competencies of Tolokers, and is available to all Tolokers.
 - `false` — The skill is created by the requester and can be assigned to Tolokers both manually and automatically: using quality control rules or after training. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

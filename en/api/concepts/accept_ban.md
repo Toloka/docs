@@ -242,3 +242,5 @@ The maximum number of recent tasks that the Toloker completed in the project to 
 If this field is omitted, the calculation is based on all the tasks that the Toloker completed in the pool. ||
 
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

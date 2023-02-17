@@ -4,8 +4,8 @@
 
 Sends a message to Tolokers.
 
-- [Specify recipients in a list](#spis).
-- [Select Tolokers using a filter](#didi).
+- [Specify recipients](#spis) in a list.
+- [Select Tolokers](#didi) using a filter.
 
 The sent message is added to a new [message thread](messages.md).
 
@@ -302,3 +302,5 @@ Folders where the thread is located:
 
 Date the first message in the thread was created. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

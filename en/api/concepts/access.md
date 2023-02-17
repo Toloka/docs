@@ -34,3 +34,5 @@ Working with the Toloka API requires an OAuth access token. [Register](../../gui
 {% include [troubleshooting-token-expired](../../guide/_includes/troubleshooting/api/token-expired.md) %}
 
 {% include [troubleshooting-access-denied](../../guide/_includes/troubleshooting/api/access-denied.md) %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

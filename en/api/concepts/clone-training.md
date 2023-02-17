@@ -62,7 +62,7 @@ Title | Overview
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `TRAINING.CLONE` — Clone a training pool. ||
@@ -93,3 +93,5 @@ ID of the source training pool. ||
 
 ID of the new training pool. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

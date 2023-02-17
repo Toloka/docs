@@ -62,7 +62,7 @@ Title | Overview
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.CLONE` — Cloning a pool. ||
@@ -93,3 +93,5 @@ Source pool ID. ||
 
 New pool ID. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

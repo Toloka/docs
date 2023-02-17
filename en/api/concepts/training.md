@@ -20,3 +20,5 @@ GET | [/trainings/<training_pool_id>](get-training.md) | Gets the properties of 
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/train.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

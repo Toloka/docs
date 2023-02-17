@@ -104,3 +104,5 @@ Pool ID. ||
 
 Task ID. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

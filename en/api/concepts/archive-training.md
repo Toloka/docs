@@ -69,7 +69,7 @@ If the training pool is already archived, attempting to archive it again returns
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `TRAINING.ARCHIVE` — Archive a training pool. ||
@@ -100,3 +100,5 @@ ID of the training pool. ||
 
 Details of the operation completion. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

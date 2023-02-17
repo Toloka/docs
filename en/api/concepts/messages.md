@@ -17,3 +17,5 @@ POST | [/message-threads/<thread_id>/remove-from-folders](move-message.md) | Del
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/messaging.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

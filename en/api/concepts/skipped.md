@@ -222,3 +222,5 @@ Determines whether to re-open a closed pool:
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/skipped-assignments.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

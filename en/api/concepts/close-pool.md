@@ -67,7 +67,7 @@ If the current pool status is the same as the  requested status, an empty respo
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.CLOSE` — Closing a pool. ||
@@ -95,3 +95,5 @@ The percentage of the operation completed. ||
 
 Pool ID. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -111,3 +111,5 @@ Details of the operation completion. ||
 |#
 
 The response doesn't provide a detailed error description. If an error has occurred, [request the operation log](get-operation-log.md).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

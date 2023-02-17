@@ -52,3 +52,5 @@ To activate task merging in a project, specify `"assignments_automerge_enabled"
 
 - [{#T}](../../guide/concepts/pool.md)
 - [{#T}](../../guide/concepts/task_upload.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

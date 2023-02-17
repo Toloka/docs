@@ -173,3 +173,5 @@ Creates multiple tasks asynchronously. | [create_tasks_async](../../toloka-kit/r
 Creates a task suite. | [create_tasks_suite](../../toloka-kit/reference/toloka.client.TolokaClient.create_task_suite.md)
 Creates multiple task suites within a single request. | [create_tasks_suites](../../toloka-kit/reference/toloka.client.TolokaClient.create_task_suites.md)
 Creates multiple task suites asynchronously. | [create_tasks_suites_async](../../toloka-kit/reference/toloka.client.TolokaClient.create_task_suites_async.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

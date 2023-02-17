@@ -112,3 +112,5 @@ IDs of rewards issued. ||
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/accept.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

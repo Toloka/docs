@@ -108,3 +108,5 @@ Contains a list of bans in the `items` array:
 ```json
 {"items" : [{ban parameters 1}, {ban parameters 2}, ... {ban parameters n}], "has_more": true}
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

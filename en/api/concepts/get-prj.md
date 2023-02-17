@@ -41,3 +41,5 @@ Title | Overview
 ## Response {#response}
 
 Contains project properties in JSON format (see the [sample project](create-prj.md#body)).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

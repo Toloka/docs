@@ -58,3 +58,5 @@ You can use the API to:
 - [Get information](httpproxy-get-info.md) about all registered servers of a requester.
 - [Update](httpproxy-edit.md) the data of a previously registered server.
 - [Remove](httpproxy-delete.md) a server registration if you no longer need it.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -22,3 +22,5 @@ You can filter Tolokers by the following criteria:
 - [Viewing Tolokers](../../guide/concepts/users.md)
 - [Description of skills](../../guide/concepts/nav.md)
 - [Quality control rules](../../guide/concepts/check-performers.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

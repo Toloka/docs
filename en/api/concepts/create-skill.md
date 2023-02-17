@@ -152,3 +152,5 @@ An indicator of a global skill:
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/nav-create.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -123,3 +123,5 @@ You can set up the display of the list of files in parts (for example, 10 files 
 ```json
 {"items" : [{file #1}, {file #2}, ... {file #n}], "has_more": false}
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

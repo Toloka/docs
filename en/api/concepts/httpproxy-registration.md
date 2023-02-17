@@ -93,3 +93,5 @@ To get the full URL for accessing data on the created server, use the `getProxyU
 ## Response {#response}
 
 Contains the `id` and parameters in JSON format passed during server registration.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

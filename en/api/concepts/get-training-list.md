@@ -114,3 +114,5 @@ Contains a list of training pools and their properties in the `items` array:
 ```json
 {"items" : [{parameters_of_training_pool_1}, {parameters_of_training_pool_2}, ... {parameters_of_training_pool__n_}], "has_more": false}
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

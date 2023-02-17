@@ -32,3 +32,5 @@ PATCH | [/pools/pool_id>](set-priority-pool.md) | Changes the priority of a pool
 ## Learn more {#links}
 
 - [More information about pools](../../guide/concepts/pool-main.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

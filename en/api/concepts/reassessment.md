@@ -175,3 +175,5 @@ Determines whether to re-open a closed pool:
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/reassessment-after-accepting.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -91,3 +91,5 @@ The following HTTP status codes describe error classes, with examples of common 
   "message": "Service is temporary unavailable"
 }
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

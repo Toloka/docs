@@ -111,3 +111,5 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 ```json
 {"items" : [{bonus #1}, {bonus #2}, ... {bonus #n}], "has_more": true}
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -35,3 +35,5 @@ Parameter | Overview
 Title | Overview
 ----- | -----
 **Authorization** | A token for account authorization. Add OAuth as a prefix.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

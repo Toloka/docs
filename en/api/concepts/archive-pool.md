@@ -71,7 +71,7 @@ Contains information about the results of the operation.
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.ARCHIVE` — Archiving a pool. ||
@@ -103,3 +103,5 @@ Pool ID. ||
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/pool-archive.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}
