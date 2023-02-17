@@ -1545,6 +1545,10 @@ components:
         input_data:
           type: object
           description: Object data according to input_spec of the bespoke solution.
+        force_new_original:
+          type: boolean
+          default: false
+          description: Whether to enable or disable the deduplication for the item in the request. When set to `true`, the item will be re-labeled regardless of whether pre-labeled duplicates exist.
 
     ItemsBulkCreateForm:
       type: object
@@ -1561,6 +1565,10 @@ components:
           items:
             type: object
             description: Object data according to input_spec of the bespoke solution.
+        force_new_original:
+          type: boolean
+          default: false
+          description: Whether to enable or disable the deduplication for all the items in the request. When set to `true`, all the items will be re-labeled regardless of whether pre-labeled duplicates exist.
 
     BatchListResult:
       type: object
@@ -1687,6 +1695,10 @@ components:
             - THREE
             - FOUR
             - FIVE
+        force_new_original:
+          type: boolean
+          default: false
+          description: Whether to enable or disable the deduplication for all the items in the request. When set to `true`, all the items will be re-labeled regardless of whether pre-labeled duplicates exist.
 
     BatchCreateSyncForm:
       type: object

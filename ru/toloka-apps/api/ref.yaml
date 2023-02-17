@@ -1498,6 +1498,10 @@ components:
         input_data:
           type: object
           description: Данные объекта в соответствии с input_spec Bespoke-решения.
+        force_new_original:
+          type: boolean
+          default: false
+          description: Флаг для отключения дедупликации для элемента данных из этого запроса. При значении параметра `true` элементы данных будут размечены заново, даже если для них существуют размеченные дубликаты.
 
     ItemsBulkCreateForm:
       type: object
@@ -1514,6 +1518,10 @@ components:
           items:
             type: object
             description: Данные объекта в соответствии с input_spec Bespoke-решения.
+        force_new_original:
+          type: boolean
+          default: false
+          description: Флаг для отключения дедупликации для всех элементов данных из этого запроса. При значении параметра `true` элементы данных будут размечены заново, даже если для них существуют размеченные дубликаты.
 
     BatchListResult:
       type: object
@@ -1640,6 +1648,10 @@ components:
             - THREE
             - FOUR
             - FIVE
+        force_new_original:
+          type: boolean
+          default: false
+          description: Флаг для отключения дедупликации для всех элементов данных из этого запроса. При значении параметра `true` элемент данных будет размечен заново, даже если для него существует размеченный дубликат.
 
     BatchCreateSyncForm:
       type: object
