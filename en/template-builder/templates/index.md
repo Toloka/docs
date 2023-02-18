@@ -48,6 +48,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Searching for product characteristics](data-search.md)
 
+- [Product photo search](product-photo-search.md)
+
 ## Surveys
 
 - [Survey](survey.md)
