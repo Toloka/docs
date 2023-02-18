@@ -34,6 +34,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Sentiment analysis & Content moderation](content-moderation.md)
 
+- [Named entity recognition (NER)](named-entity-recognition.md)
+
 ## Audio
 
 - [Audio transcription](audio-transcript.md)
