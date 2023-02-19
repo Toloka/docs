@@ -86,36 +86,86 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 
 ## Add conditions {#dependencies}
 
-The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected.
+The [helper.switch](../reference/helper.switch.md) component displays an additional interface element if a certain condition is met. In this example, the toloker first selects **Yes** if the photo has been found, and **No** if it has not. After that, an additional field appears: to upload the photo or to leave a comment why the photo cannot be uploaded.  
 
 {% cut "Show code" %}
 
 ```json
 {
-    "type": "helper.if",
-    "condition": {
-      "type":"condition.equals",
-      "data":{
-        "type":"data.output",
-        "path": "not-found"
-      },
-    "to": "error"
-    },
-    "then": {
-      "type": "field.textarea",
-      "label": "Please, leave your comment",
-      "placeholder":"Enter text",
-      "data": {
-        "type": "data.output",
-        "path": "comment"
+        "type": "field.radio-group",
+        "label": "Has the photo been found?",
+        "data": {
+          "type": "data.output",
+          "path": "photo"
+        },
+        "options": [
+          {
+            "label": "Yes",
+            "value": "yes"
+          },
+          {
+            "label": "No",
+            "value": "no"
+          }
+        ],
+        "validation": {
+          "type": "condition.required",
+          "hint": "Select one of the options"
         }
-    }
-  }
+      },
+      {
+        "type": "helper.switch",
+        "cases": [
+          {
+            "condition": {
+              "type": "condition.equals",
+              "data": {
+                "type": "data.output",
+                "path": "photo"
+              },
+              "to": "yes"
+            },
+            "result": {
+              "type": "field.file",
+              "label": "Product photo",
+              "data": {
+                "type": "data.output",
+                "path": "image"
+              },
+              "validation": {
+                "type": "condition.required",
+                "hint": "Please, attach a photo."
+              }
+            }
+          },
+          {
+            "condition": {
+              "type": "condition.equals",
+              "data": {
+                "type": "data.output",
+                "path": "photo"
+              },
+              "to": "no"
+            },
+            "result": {
+              "type": "field.textarea",
+              "label": "Why?",
+              "placeholder": "Add comment",
+              "data": {
+                "type": "data.output",
+                "path": "comment"
+              },
+              "validation": {
+                "type": "condition.required",
+                "hint": "Please, add comment."
+              }
+            }
+          }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/rysQ_p7a3y9KTo)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/odNz0JT53zVsTM)
 
 
 
