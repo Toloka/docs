@@ -15,3 +15,5 @@ If you only need one out of several conditions to be met, use the [condition.any
 || `conditions[]` | _condition_ | Required condition. ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

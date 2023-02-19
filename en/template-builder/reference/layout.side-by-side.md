@@ -24,3 +24,5 @@ For example: [field.checkbox-group](field.checkbox-group.md) or [field.button-ra
 || `minItemWidth` | _number_ | The minimum width of a data block, at least 400 pixels. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

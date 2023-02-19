@@ -17,3 +17,5 @@ By default it rotates to the right, but you can specify the direction in the `pa
 - `left`. ||
   || `view` | _ref_ | Points to the component to perform the action with. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

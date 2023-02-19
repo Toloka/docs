@@ -46,3 +46,5 @@ Links with Markdown are appended with `target="_blank"` (the link opens in a new
 || `hint` | _string_ | Hint text. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -35,3 +35,5 @@ Usage example:
 || `type`<span style="color: red">\*</span> | "helper.translate" | Set component type ||
 || `key`<span style="color: red">\*</span> | _string_ | The key for a text property that you will translate to other languages. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

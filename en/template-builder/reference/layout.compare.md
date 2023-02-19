@@ -26,3 +26,5 @@ Differences from [layout.side-by-side](layout.side-by-side.md):
 || `wideCommonControls` | _boolean_ | This property increases the common field size of the elements being compared.
 It's set to `false` by default: the common fields are displayed in the center, not stretched. If `true`, the fields are wider than with the default value. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

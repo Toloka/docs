@@ -19,3 +19,5 @@ This component is available in property values with the `string` type, for examp
 - `capitalize` — Capitalizes **the first** letter in the text, and leaves the rest lowercase. The text is not divided into sentences: there will be only one uppercase letter in the entire text, even if you have several sentences.
   ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

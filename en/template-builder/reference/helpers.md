@@ -16,3 +16,5 @@ Use the components named `helpers.*` to implement various operations, for exampl
 | [helper.transform](helper.transform.md)           | Creates a new array by transforming each of the elements in the original array.                                                                                                                    |
 | [helper.translate](helper.translate.md)           | Component for translating interface elements to other languages. More details in [Translating the task interface](../../guide/concepts/project-languages#interface-translate). |
 | [helper.proxy](helper.proxy.md)                   | You can use this component to download files from Yandex Disk.                                                                                                                                     |
+
+{% include [contact-support](../_includes/contact-support.md) %}

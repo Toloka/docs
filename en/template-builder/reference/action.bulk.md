@@ -14,3 +14,5 @@ Actions are invoked in the order in which they are listed. This means that if tw
 || `payload` | _array_ | An array of actions that you want to call. ||
 || `payload[]` | _action_ | Action. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

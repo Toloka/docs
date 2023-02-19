@@ -22,3 +22,5 @@ The minimum number of buttons is one. Any type of data can be returned.
 || `options[].value`<span style="color: red">\*</span> | _any_ | Returned value. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

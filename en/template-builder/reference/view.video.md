@@ -21,3 +21,5 @@ The video resolution does not affect the size of the block — the video will fi
 || `url`<span style="color: red">\*</span> | _string_ | Link to the video file. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

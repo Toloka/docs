@@ -21,3 +21,5 @@ The component combines two or more strings into one. You can add a delimiter to 
 || `items`<span style="color: red">\*</span> | _array_ | Array of strings to join. ||
 || `items[]` | _string_ | String parameters. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

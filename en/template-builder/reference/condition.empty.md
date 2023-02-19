@@ -14,3 +14,5 @@ The component checks that the value of the sent data is equal to a zero-length s
 || `data` | _any_ | Data to check. If not specified, data is checked in the component that contains `condition.empty`. ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

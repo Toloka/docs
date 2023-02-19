@@ -54,3 +54,5 @@ Modes with the `true` value are available to a Toloker. ||
 || `shapes.rectangle` | _boolean_ | Rectangle selector. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

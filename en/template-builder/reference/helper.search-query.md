@@ -27,3 +27,5 @@ The list of available search engines is specified in the `engine` property.
   ||
   || `query`<span style="color: red">\*</span> | _string_ | Search query. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

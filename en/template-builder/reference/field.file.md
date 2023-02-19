@@ -28,3 +28,6 @@ Specify the types in the [MIME Type](https://developer.mozilla.org/en-US/docs/We
 - `true` — allowed. ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}
+

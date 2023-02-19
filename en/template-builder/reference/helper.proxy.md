@@ -15,3 +15,5 @@ Select the component that you want to add, such as [view.image](view.image.md) f
 || `type`<span style="color: red">\*</span> | "@yandex-toloka/helper.proxy" | Set component type ||
 || `path`<span style="color: red">\*</span> | _string_ | Path to the file in the `/<Proxy name>/<File name>.<type>` format ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

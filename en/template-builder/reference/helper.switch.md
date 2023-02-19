@@ -26,3 +26,5 @@ How the helper works:
 || `cases[].result`<span style="color: red">\*</span> | _any_ | The element that is returned if the condition from the `condition` property is true (returns `true`). ||
 || `default` | _any_ | Element that is returned if none of the checked conditions returned `true`. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

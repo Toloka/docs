@@ -25,3 +25,5 @@ You can use [plugin.field.text-annotation.hotkeys](plugin.field.text-annotation.
 || `labels[].value`<span style="color: red">\*</span> | _string_ | Specify the category value in the `value` property. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

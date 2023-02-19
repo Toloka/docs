@@ -14,3 +14,5 @@ Groups components visually into framed blocks.
 || `hint` | _string_ | Explanation of the group heading. To insert a new line, use `\n`. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -38,3 +38,5 @@ For example, if you need a button for uploading files from the gallery, add the 
   || `requiredCoordinates` | _boolean_ | If the value is `true`, a file without geotag can not be uploaded. ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

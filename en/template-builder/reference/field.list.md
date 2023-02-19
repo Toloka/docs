@@ -41,3 +41,5 @@ In nested `field.*` components, use `data.relative` for recording responses, oth
 || `size` | _string_ | The distance between list items. Acceptable values in ascending order: `s`, `m` (default). ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

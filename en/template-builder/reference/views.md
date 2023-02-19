@@ -21,3 +21,5 @@ Use the components named `view.*` for the elements displayed in the interface, s
 | [view.markdown](view.markdown.md)           | Block for displaying text in Markdown.                                                                                          |
 | [view.text](view.text.md)                   | Block for displaying text.                                                                                                      |
 | [view.video](view.video.md)                 | Player for video playback.                                                                                                      |
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -13,3 +13,5 @@ You can place extra elements in the center of the delimiter, like a popup `hint`
 || `hint` | _string_ | Hint text. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

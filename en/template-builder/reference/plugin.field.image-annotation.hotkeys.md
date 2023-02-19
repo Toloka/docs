@@ -21,3 +21,5 @@ You can set hotkeys to select area types and selection modes and to confirm or c
 || `modes.rectangle` | _string_ | Keyboard shortcut for selecting areas using rectangles. ||
 || `modes.select` | _string_ | Keyboard shortcut for selecting shapes and points. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

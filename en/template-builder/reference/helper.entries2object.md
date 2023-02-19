@@ -35,3 +35,5 @@ It is converted to an object whose elements consist of the values of the origina
 || `entries[].key`<span style="color: red">\*</span> | _string_ | Key. ||
 || `entries[].value`<span style="color: red">\*</span> | _any_ | Value. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

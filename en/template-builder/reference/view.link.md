@@ -25,3 +25,5 @@ To insert a link with a search query, use [helper.search-query](helper.search-qu
 || `url`<span style="color: red">\*</span> | _string_ | Link URL. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -17,3 +17,5 @@ A plugin with extra settings for tasks in Toloka.
   || `notifications` | _array_ | An array of notifications. Notifications are displayed at the top of the page. ||
   || `notifications[]` | _view_ | Notification parameters. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

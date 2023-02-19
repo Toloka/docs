@@ -18,3 +18,5 @@ The device coordinates are sent using the [data.location](data.location.md) comp
 || `max` | _number_ | The distance in meters by which the specified and sent coordinates may differ. ||
 || `to` | _string_ | The coordinates that will be compared to the coordinates from the `from` property. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

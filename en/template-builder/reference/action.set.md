@@ -20,3 +20,5 @@ As another example, you can use this component to count the number of clicks on 
 || `data` | _writable_ | Data with values that will be processed or changed. ||
 || `payload` | _any_ | The value to write to the data. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

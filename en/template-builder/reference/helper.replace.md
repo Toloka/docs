@@ -16,3 +16,5 @@ Because the `helper.replace` helper returns a string, it can be used in properti
 || `find`<span style="color: red">\*</span> | _string_ | The value to search for — the string whose occurrences must be found in `data` and replaced with the string from `replace`. ||
 || `replace`<span style="color: red">\*</span> | _string_ | The value to insert in place of the matches of the `find` value. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

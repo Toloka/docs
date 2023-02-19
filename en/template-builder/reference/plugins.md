@@ -9,3 +9,5 @@ Use the components named `plugin.*` for plugins that enable advanced functionali
 | [plugin.hotkeys](plugin.hotkeys.md)                                               | You can use this to set keyboard shortcuts for actions.                                                 |
 | [plugin.toloka](plugin.toloka.md)                                                 | A plugin with extra settings for tasks in Toloka.                                                       |
 | [plugin.trigger](plugin.trigger.md)                                               | Use this to configure triggers that trigger a specific action when an event occurs.                     |
+
+{% include [contact-support](../_includes/contact-support.md) %}

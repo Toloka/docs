@@ -22,3 +22,5 @@ For example, you can convert an array of image links to [view.image](view.image.
 
 If you used a reference to a field with input data, you do not need to also specify the element. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -24,3 +24,5 @@ How to pass a link address:
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 || `original`<span style="color: red">\*</span> | _any_ | The link address that your link is compared to. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}
