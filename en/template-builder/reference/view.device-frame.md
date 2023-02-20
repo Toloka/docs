@@ -19,3 +19,5 @@ Not valid if `"fullHeight": true`. ||
 || `ratio[]` | _number_ | Relative size of one side. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

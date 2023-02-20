@@ -17,3 +17,5 @@ You can also stop or start playback for some event ([plugin.trigger](plugin.trig
 || `type`<span style="color: red">\*</span> | "action.play-pause" | Set component type ||
 || `view` | _ref_ | Points to the component that plays audio or video. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

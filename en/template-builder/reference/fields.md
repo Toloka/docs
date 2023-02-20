@@ -24,3 +24,5 @@ Use the components named `field.*` as the data entry fields, such as a [text box
 | [field.text](field.text.md)                             | A field for entering a short text, not more than a line. To add a field for entering multiple lines of text, use [field.textarea](field.textarea.md).                                                                 |
 | [field.text-annotation](field.text-annotation.md)       | A component for text segmentation.                                                                                                                                                                                    |
 | [field.textarea](field.textarea.md)                     | Box for entering multi-line text.                                                                                                                                                                                     |
+
+{% include [contact-support](../_includes/contact-support.md) %}

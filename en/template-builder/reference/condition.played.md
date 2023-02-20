@@ -11,3 +11,5 @@ Checks the start of playback. Validation will be passed if playback is started. 
 || `type`<span style="color: red">\*</span> | "condition.played" | Set component type ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

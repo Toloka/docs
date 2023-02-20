@@ -13,3 +13,5 @@ Use this to set keyboard shortcuts for the [field.text-annotation](field.text-an
 || `labels[]` | _string_ | A keyboard shortcut. ||
 || `remove` | _string_ | Use this property to allow a Toloker to deselect an entire line or part of it. The key that you assign to this property will deselect. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

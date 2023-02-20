@@ -13,3 +13,5 @@ Returns the inverse of the specified condition. For example, if the specified co
 || `condition` | _condition_ | The condition for which the inverse is returned. ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -39,3 +39,5 @@ The chosen value will be added to the `dir` attribute in the component's HTML co
 || `size` | _string_ | Specifies the size of the margins between elements. Acceptable values in ascending order: `s`, `m` (default value). ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

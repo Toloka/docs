@@ -35,3 +35,5 @@ If the number of columns is less than the number of values in the `ratio` proper
 - `middle` — Aligned to the middle of the column that is filled in the most.
 - `bottom` — Aligned to the bottom of a column. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -24,3 +24,5 @@ Their elements can be combined into a single array to show simultaneously:
 || `items` | _array_ | Arrays to combine. ||
 || `items[]` | _any_ | Array element. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

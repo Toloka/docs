@@ -16,3 +16,5 @@ The top bar is located at the top edge of the component, and the bottom one is a
 || `content`<span style="color: red">\*</span> | _view_ | The main content. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

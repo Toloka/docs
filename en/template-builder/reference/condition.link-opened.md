@@ -16,3 +16,5 @@ This condition can be used in the [view.link](view.link.md) component and also a
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 || `url` | _string_ | The link that must be clicked. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -12,3 +12,6 @@ Use the components named `actions.*` to perform various actions, such as [showin
 | [action.rotate](action.rotate.md)         | Rotates the specified component by 90 degrees.                                                             |
 | [action.set](action.set.md)               | Sets the value from `payload` in the data in the `data` property.                                          |
 | [action.toggle](action.toggle.md)         | The component changes the value in the data from `true` to `false` and vice versa.                         |
+
+{% include [contact-support](../_includes/contact-support.md) %}
+

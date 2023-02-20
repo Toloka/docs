@@ -15,3 +15,5 @@ Format support depends on the Toloker's browser, OS, and device. We recommend us
 || `url`<span style="color: red">\*</span> | _string_ | Audio link. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

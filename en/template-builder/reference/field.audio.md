@@ -18,3 +18,5 @@ Component for recording audio. Works in the [Toloka app for mobile devices](http
 - `true` — allowed. ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

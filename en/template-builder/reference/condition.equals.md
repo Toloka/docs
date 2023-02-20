@@ -29,3 +29,5 @@ How to pass a value:
 - Refer to another element using `$ref`.
 - Use [helpers](helpers.md) and [conditions](conditions.md) to get the value. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

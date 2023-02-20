@@ -23,3 +23,5 @@ You can use both plain text and other visual components inside it.
   ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

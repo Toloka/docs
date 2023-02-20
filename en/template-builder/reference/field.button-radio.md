@@ -31,3 +31,5 @@ The chosen value will be added to the `dir` attribute in the component's HTML co
 || `validation` | _condition_ | Validation based on condition. ||
 || `valueToSet` | _string_ | The value of the output data when the button is clicked. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

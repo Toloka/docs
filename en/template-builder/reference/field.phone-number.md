@@ -17,3 +17,5 @@ Allows entering numbers, spaces, and the `+`, `( )`, `-` characters. Only number
 || `placeholder` | _string_ | A semi-transparent label that is shown in an empty field. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

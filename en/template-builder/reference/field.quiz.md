@@ -27,3 +27,5 @@ Returns a key value object with any type of data as value.
 || `options[].options[].value`<span style="color: red">\*</span> | _any_ | Returned value. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

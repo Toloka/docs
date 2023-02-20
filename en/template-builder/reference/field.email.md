@@ -17,3 +17,5 @@ Checks that the text contains the `@` character. You can [set other conditions y
 || `placeholder` | _string_ | A semi-transparent label that is shown in an empty field. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

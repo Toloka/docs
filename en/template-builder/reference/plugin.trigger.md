@@ -18,3 +18,5 @@ You can also set conditions in the `conditions` property that must be met in ord
 || `fireImmediately` | _boolean_ | Flag indicating whether the trigger should be fired immediately after the task is loaded. ||
 || `onChangeOf` | _reactive_ | The data that triggers the action when changed. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

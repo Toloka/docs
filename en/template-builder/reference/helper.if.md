@@ -33,3 +33,5 @@ To learn more about conditions, see the [List of conditions](conditions.md).
 || `else` | _any_ | The element that is returned if the condition from the `condition` property is false (returns `false`). ||
 || `then`<span style="color: red">\*</span> | _any_ | The element that is returned if the condition from the `condition` property is true (returns `true`). ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}
