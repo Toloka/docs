@@ -128,26 +128,38 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 ```json
 {
-  "type": "helper.if",
-  "condition": {
-    "type": "condition.equals",
-    "data": {
-      "type": "data.output",
-      "path": "answer"
+   "type": "helper.if",
+   "condition": {
+      "type": "condition.equals",
+      "data": {
+         "type": "data.output",
+          "path": "not_recorded"
+        },
+       "to": false
     },
-    "to": "no"
-  },
-  "then": {
-    "type": "field.text",
-    "label": "Why you couldn't upload the file?",
-    "data": {
-      "type": "data.output",
-      "path": "comment"
+   "then": {
+      "type": "field.audio",
+      "data": {
+          "type": "data.output",
+          "path": "audio"
+        }
+    },
+    "else": {
+      "type": "field.textarea",
+      "label": "Why you couldn't upload the file?",
+      "placeholder": "Enter text",
+      "data": {
+          "type": "data.output",
+          "path": "comment"
+        },
+       "validation": {
+          "type": "condition.required",
+          "hint": "Add comment"
+        }
     }
-  }
 }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/z0gt6KeE3zLPEK)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/_1jmJR5e3ziR2W)
