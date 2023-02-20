@@ -1,5 +1,5 @@
 {% note warning %}
 
-Домен `toloka.yandex.com` работает в режиме deprecated. Рекомендуем переключиться на домен `toloka.dev` для запросов API.
+Домен `toloka.yandex.com` будет отключен 1 апреля 2023 года. Пожалуйста, переключитесь на домен `toloka.dev` для запросов API.
 
 {% endnote %}
