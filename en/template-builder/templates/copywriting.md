@@ -4,11 +4,9 @@ For projects of this type, you can use the **Generating product descriptions** p
 
 This preset helps to create a description of products based on the image and its name.
 
-Take a look at an example: the labeling interface includes an image, text data, and a text input area. 
+Take a look at the example: the labeling interface includes an image, text data, button and a text input area. If the Toloker clicks on the button, a search engine opens with a request about the product. Note that validation and task layout are are already configured in this example.
 
-Note that validation, keyboard shortcuts, and task layout are already configured in this template designer code example.
-
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YEsaR2Qj3ynhRS)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/FxeYE_IV3zcaKG)
 
 {% cut "Components used in the example" %}
 
@@ -22,8 +20,18 @@ Note that validation, keyboard shortcuts, and task layout are already configured
   {
     "type": "layout.columns",
     "items": [
-	....
-	]
+      {
+        "type": "view.image",
+        "url": {
+            "type": "data.input",
+            "path": "image"
+        },
+        "fullHeight": true,
+        "ratio": [
+            2, 
+            1
+        ]
+    }
   }
   ```
   {% endcut %}
@@ -38,12 +46,7 @@ Note that validation, keyboard shortcuts, and task layout are already configured
     "url": {
        "type": "data.input",
        "path": "image"
-    },
-    "fullHeight": true,
-    "ratio": [
-        2,
-        1
-    ]
+    }
   }
   ```
   {% endcut %}
@@ -57,9 +60,9 @@ Note that validation, keyboard shortcuts, and task layout are already configured
     "type": "view.text",
     "content": {
        "type": "data.input",
-       "path": "breed"
+       "path": "title"
     },
-    "label": "Cat breed"
+    "label": "Title"
   }
   ```
   {% endcut %}
@@ -71,7 +74,7 @@ Note that validation, keyboard shortcuts, and task layout are already configured
   ```json
   {
     "type": "view.action-button",
-    "label": "Google Search",
+    "label": "Search product in Google",
     "action": {
         "type": "action.open-link",
         "payload": {
@@ -94,10 +97,10 @@ Note that validation, keyboard shortcuts, and task layout are already configured
        "type": "data.output",
        "path": "result"
     },
-   "label": "Describe this breed of cat",
+   "label": "Describe the product in 2-3 sentences:",
    "validation": {
        "type": "condition.required",
-       "hint": "enter your text\n"
+       "hint": "Write the description in the box"
     }
   }
   ```
@@ -123,8 +126,7 @@ Note that validation, keyboard shortcuts, and task layout are already configured
   {
     "type": "plugin.toloka",
     "layout": {
-      "kind": "scroll",
-      "taskWidth": 1200
+      "kind": "pager"
     }
   }
   ```
@@ -132,7 +134,7 @@ Note that validation, keyboard shortcuts, and task layout are already configured
 
 {% endcut %}
 
-If this template doesn't meet your needs, see other examples in the **Text**.
+If this template doesn't meet your needs, see other examples in the **Text** section.
 
 ## Set the desired text length {#text-length}
 
@@ -148,13 +150,13 @@ To set the desired text length, use the [condition.schema](../reference/conditio
      "minLength": 500,
      "maxLength": 2000
     },
-    hint": "Enter a text that's between 500 and 2000 characters long"
+    hint": "Write the description in the box"
  }
  ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/_CWxs3QH3z2WcY)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/QH_0-Y3h3zeS2H)
 
 ## Use short single-line text field {#short-text-field}
 
@@ -165,16 +167,21 @@ For short single-line text, use the [field.text](../reference/field.text.md) com
  ```json
  {
    "type": "field.text",
-    "data": {
-       "type": "data.output",
-       "path": "result"
+   "data": {
+     "type": "data.output",
+     "path": "result"
+    },
+    "label": "Describe the product in 2-3 sentences:",
+    "validation": {
+      "type": "condition.required",
+      "hint": "Write the description in the box"
     }
  }
  ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/LJs6Z3fk3z2fCU)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/lFvWtPU63zeh7g)
 
 ## Add a description {#add-description}
 
@@ -185,14 +192,14 @@ To add a detailed description to the task, use the `label` property of the [view
 ```json
 {
   "type": "view.text",
-  "content": "Siberian cat is a popular breed in Russia."
+  "content": "Look at the product photo and write a brief description about it."
 }
 
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/RHGfVYiX3z3TBy)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/nsQ52cJk3zf4so)
 
 ## Add a layout {#add-layout}
 
@@ -200,7 +207,7 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
 You can place it in the [view.list](../reference/view.list.md) along with the other components.
 
-In this example, the description is highlighted with a blue border, and the text field is green.
+In this example, the description is highlighted with a blue border.
 
 {% cut "Show code" %}
 
@@ -210,30 +217,14 @@ In this example, the description is highlighted with a blue border, and the text
   "theme": "info",
   "content": {
      "type": "view.text",
-     "content": "Siberian cat is a popular breed in Russia."
+     "content": "Look at the product photo and write a brief description about it."
     }
-},
-{
-  "type": "view.alert",
-  "theme": "success",
-  "content": {
-     "type": "field.textarea",
-     "data": {
-         "type": "data.output",
-         "path": "result"
-        },
-     "label": "Describe this breed of cat:",
-     "validation": {
-         "type": "condition.required",
-         "hint": "Enter your text"
-        }
-    }  
 }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/o9-Xt8o-3z4DTq)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/U4g9kJuh3zfJy9)
 
 ## Remove an image {#remove-image}
 
