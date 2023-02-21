@@ -17,6 +17,9 @@ items:
     items:
       - name: What tasks can't be placed in Toloka?
         href: guide/concepts/unwanted.md
+      - name: Purposes for personal data processing
+        href: guide/concepts/personal-data-processing.md
+        hidden: true
       - name: Common mistakes made by requesters
         href: guide/concepts/frequent-customer-errors.md
       - name: How to save your budget
