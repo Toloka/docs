@@ -1,10 +1,10 @@
 # API migration
 
-The Toloka API is migrating to the `toloka.dev` domain. Access to the Toloka API is about to change. The current API domain (`toloka.yandex.com`) works in deprecated mode and will be disabled **since March 1, 2023**. You need to update your applications to use the new domain.
+The Toloka API is migrating to the `toloka.dev` domain. Access to the Toloka API is about to change. The current API domain (`toloka.yandex.com`) works in deprecated mode and will be disabled **since April 1, 2023**. You need to update your applications to use the new domain.
 
 {% note alert %}
 
-If you do not change the domain, your requests to the Toloka API will end up with errors starting March 1, 2023.
+If you do not change the domain, your requests to the Toloka API will end up with errors starting April 1, 2023.
 
 {% endnote %}
 
