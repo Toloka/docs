@@ -6,7 +6,7 @@ Checks that a Toloker clicked the link.
 
 **Important:** To trigger the condition, the Toloker must follow the link from the Toloka interface — you must give Tolokers this option. The condition will not work if the Toloker opens the link from the browser address bar.
 
-This condition can be used in the [view.link](view.link.md) component and also anywhere you can use _(conditions)_.
+This condition can be used in the [view.link](view.link.md) component and also anywhere you can use [conditions](conditions.md).
 
 ## Component properties {#properties}
 
