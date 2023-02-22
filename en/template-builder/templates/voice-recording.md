@@ -146,7 +146,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
     },
     "else": {
       "type": "field.textarea",
-      "label": "Why you couldn't upload the file?",
+      "label": "Tell us why you couldn't upload the fil.",
       "placeholder": "Enter text",
       "data": {
           "type": "data.output",
@@ -162,4 +162,4 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/_1jmJR5e3ziR2W)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ydnO9Cvc3zt4GX)
