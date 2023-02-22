@@ -4,7 +4,11 @@
 
 Creates one or multiple tasks.
 
-You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day.
+{% note alert "Restriction" %}
+
+You can add a maximum of 200,000 tasks per minute and a maximum of 4,000,000 tasks per day.
+
+{% endnote %}
 
 ## Request {#request}
 

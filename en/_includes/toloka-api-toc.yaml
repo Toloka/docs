@@ -6,6 +6,8 @@ items:
     hidden: true
   - name: Accessing the API
     href: ../api/concepts/access.md
+  - name: Rate limiting
+    href: ../api/concepts/rate-limiting.md
   - name: Quick start
     items:
       - name: Overview

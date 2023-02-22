@@ -6,7 +6,7 @@ Creates multiple task suites.
 
 {% note alert "Restriction" %}
 
-You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day.
+You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
