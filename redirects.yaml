@@ -51,6 +51,8 @@ common:
     to: /toloka-kit/recipes/learn-basics.md
   - from: /toloka-kit/use-cases.md
     to: /toloka-kit/recipes/use-cases.md
+  - from: /guide/concepts/captcha.md
+    to: /guide/concepts/check-performers.md
 
 ru:
   - from: /api/concepts/download-tasks.md
