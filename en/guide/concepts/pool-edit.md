@@ -90,20 +90,6 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 ## Quality control {#pool-quality-control-info}
 
-### Captcha frequency
-
-You can choose how often [captchas](../../glossary.md#captcha) are shown to Tolokers:
-
-- “No” — Don't show captchas.
-
-- “Low” — Show a captcha after every 20 assignments.
-
-- “Medium”/ “High” — Show a captcha after every 10 assignments.
-
-To show the captcha to Tolokers, set [the quality control rule](captcha.md).
-
-{% include [captcha-warning](../_includes/captcha-warning.md) %}
-
 ### Review task responses manually
 
 Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.

@@ -188,8 +188,6 @@
 
   {% include [faq-time-specified](../_includes/faq/pool-setup/time-specified.md) %}
 
-  {% include [faq-incorrect-captcha](../_includes/faq/pool-setup/incorrect-captcha.md) %}
-
   {% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
   {% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
@@ -200,17 +198,11 @@
 
   {% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
-  {% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
-
   {% include [faq-get-access](../_includes/faq/pool-setup/get-access.md) %}
 
   {% include [faq-ban](../_includes/faq/pool-setup/ban.md) %}
 
   {% include [faq-two-training-pools](../_includes/faq/pool-setup/two-training-pools.md) %}
-
-  {% include [faq-using-captсha](../_includes/faq/pool-setup/using-captсha.md) %}
-
-  {% include [faq-terms-captcha](../_includes/faq/pool-setup/terms-captcha.md) %}
 
   {% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
@@ -698,8 +690,6 @@
 
   {% include [faq-time-specified](../_includes/faq/pool-setup/time-specified.md) %}
 
-  {% include [faq-incorrect-captcha](../_includes/faq/pool-setup/incorrect-captcha.md) %}
-
   {% include [faq-submit-empty-assignments](../_includes/faq/pool-setup/submit-empty-assignments.md) %}
 
   {% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
@@ -710,17 +700,11 @@
 
   {% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
-  {% include [faq-captcha-frequency](../_includes/faq/pool-setup/captcha-frequency.md) %}
-
   {% include [faq-get-access](../_includes/faq/pool-setup/get-access.md) %}
 
   {% include [faq-ban](../_includes/faq/pool-setup/ban.md) %}
 
   {% include [faq-two-training-pools](../_includes/faq/pool-setup/two-training-pools.md) %}
-
-  {% include [faq-using-captсha](../_includes/faq/pool-setup/using-captсha.md) %}
-
-  {% include [faq-terms-captcha](../_includes/faq/pool-setup/terms-captcha.md) %}
 
   {% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 

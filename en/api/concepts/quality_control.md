@@ -10,7 +10,6 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 
 - [Control tasks](./goldenset.md)
 - [Majority vote](./mv.md)
-- [Entering captchas](./captcha.md)
 - [Compensation amount](./earn_limit.md)
 - [Skipped assignments](./skipped.md)
 - [Submitted assignments](./completed.md)

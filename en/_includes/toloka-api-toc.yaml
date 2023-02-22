@@ -126,8 +126,6 @@ items:
             href: ../api/concepts/goldenset.md
           - name: Majority vote
             href: ../api/concepts/mv.md
-          - name: Entering captchas
-            href: ../api/concepts/captcha.md
           - name: Compensation amount
             href: ../api/concepts/earn_limit.md
           - name: Skipped assignments
