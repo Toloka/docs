@@ -57,9 +57,9 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **extend overlap by** — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
 
-- **reduce overlap by** — Ignore the Toloker's response.
+    If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option **Open pool if closed**.
 
-    If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option **Open pool if closed**.||
+- **reduce overlap by** — Decrease the number of times a task suite can be completed by Tolokers. For example, use this action to cancel the recompletion of accepted assignments.||
 |#
 
 ## Examples {#examples}

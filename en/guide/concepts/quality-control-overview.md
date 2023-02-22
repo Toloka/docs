@@ -62,8 +62,6 @@ To protect your project from cheaters, you can use the quality control rules:
 
 - [Ban](ban.md) for [fast responses](quick-answers.md).
 
-- [Captcha](captcha.md).
-
 - Limit [skipped assignments](skipped-assignments.md).
 
 - Limit number of tasks per person.
@@ -135,8 +133,6 @@ A Toloker who skips 2 task suites in a row is restricted from accessing the pool
 ### Prevent random clicking and bots {#random-clicking}
 
 - [Fast responses](quick-answers.md) — monitor the minimum time to complete a [task suite](../../glossary.md#task-suite).
-
-- [Captcha](captcha.md) — periodically display a [captcha](../../glossary.md#captcha) to catch automated scripts and bots.
 
 - [Skipped assignments](skipped-assignments.md) — exclude Tolokers who skip too many tasks in a row.
 

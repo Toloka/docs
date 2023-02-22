@@ -46,13 +46,11 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 ## Rule example {#examples}
 
-**Task**: you're conducting an opinion poll. To collect responses from as many Tolokers as possible, set up the **Submitted responses** rule.
-
-#### Correct settings
+Task: you're conducting an opinion poll. To collect responses from as many Tolokers as possible, set up the **Submitted responses** rule.
 
 ![](../_images/control-rules/submitted-answers/qcr-submitted-answers_example1.png)
 
-If the Toloker submits more than 20 assignments, they can no longer access the pool and can't complete your tasks.
+A Toloker who submits 1 assignment is restricted from accessing the project and can't complete your tasks.
 
 {% note alert %}
 

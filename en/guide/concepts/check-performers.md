@@ -14,9 +14,9 @@ Use the [Fast responses](quick-answers.md) rule to weed out Tolokers who perform
 
 {% cut "Example" %}
 
-![](../_images/cp-quick_answers.png)
+![](../_images/control-rules/quick-answers/qcr-quick_answers_example1.png =700x)
 
-A Toloker who completes three out of ten assignments in a row in less than 15 seconds is banned and can't complete your tasks for 5 days.
+A Toloker who completes a task suite in less than 10 seconds will be banned and won't be able to access your tasks for 10 days.
 
 {% endcut %}
 
@@ -28,25 +28,11 @@ Use the [Skipped assignments](skipped-assignments.md) rule to restrict access to
 
 {% cut "Example" %}
 
-![](../_images/cp-skipped_assignments.png)
+![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example1.png =700x)
 
-A Toloker who skips 3 task suites in a row is restricted from accessing the pool and can't complete your tasks for 5 days.
-
-{% endcut %}
-
-### Captcha
-
-Use the [Captcha](captcha.md) rule to protect from robots. In Toloka, a captcha is shown every 10 assignments. If assignments are completed quickly and captchas get in the way, they can be shown every 20 assignments: specify low captcha frequency in the pool settings.
-
-{% cut "Example" %}
-
-![](../_images/cp-captcha.png)
-
-If the Toloker entered a captcha at least 4 times and the percentage of correct answers is less than 75%, they are banned and can't complete your tasks for 10 days.
+A Toloker who skips 2 task suites in a row is restricted from accessing the pool and can't complete your tasks for 5 days.
 
 {% endcut %}
-
-{% include [captcha-warning](../_includes/captcha-warning.md) %}
 
 ### Limit on available tasks
 
@@ -56,9 +42,9 @@ You can limit the number of tasks in the pool per Toloker or set a limit on dail
 
 {% cut "Example" %}
 
-![](../_images/cp-submitted_answers.png)
+![](../_images/control-rules/submitted-answers/qcr-submitted-answers_example1.png =700x)
 
-If the Toloker submits only one assignment, they are banned from the project and can't complete your tasks.
+A Toloker who submits 1 assignment is restricted from accessing the project and can't complete your tasks.
 
 {% endcut %}
 
@@ -74,7 +60,7 @@ Mix the control questions in with the general tasks. They should make up at leas
 
 {% cut "Example" %}
 
-![](../_images/cp-goldenset.png)
+![](../_images/control-rules/control-tasks/qcr-control_example1_1.png =700x)
 
 If the Toloker gives at least 10 responses to the control tasks, the percentage of correct answers is assigned as the skill value. This is useful if you want to prevent Tolokers with a low skill level from completing your tasks.
 
@@ -90,9 +76,9 @@ In this case, the [Majority vote](mvote.md) rule is helpful. The platform assign
 
 {% cut "Example" %}
 
-![](../_images/cp-mvote.png)
+![](../_images/control-rules/mvote/qcr-mvote_example1_2.png =700x)
 
-If the Toloker gives at least 3 responses to the tasks, the percentage of correct answers is written as the skill value.
+If the Toloker gives at least 3 answers to tasks and the percentage of correct answers is less than 65%, they are banned on the project.
 
 {% endcut %}
 
@@ -106,9 +92,9 @@ Use the [Review results](reviewing-assignments.md) rule to control Tolokers' acc
 
 {% cut "Example" %}
 
-![](../_images/cp-reviewing_assignments.png)
+![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example1.png =700x)
 
-If more than 50% of Toloker's responses are rejected, the Toloker is banned from the project.
+If more than 50% of Toloker's responses are rejected, the Toloker is blocked and can't complete your tasks for 15 days.
 
 {% endcut %}
 
@@ -124,7 +110,7 @@ In some cases, they get it wrong. Use the [Processing rejected and accepted assi
 
 {% cut "Example" %}
 
-![](../_images/cp-reassessment_after_accepting.png)
+![](../_images/control-rules/reassessment-after-accepting/qcr-reassessment-after-accepting_example1.png =700x)
 
 A Toloker's assignments rejected after the review are sent to another Toloker for recompletion.
 
@@ -138,17 +124,16 @@ The [Recompletion of assignments from banned users](restore-task-overlap.md) rul
 
 {% cut "Example" %}
 
-![](../_images/cp-restore_task_overlap.png)
+![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_1.png =700x)
 
-When Tolokers are blocked, the tasks they've completed are sent to other Tolokers.
+If a Toloker is banned by a quality control rule, their tasks are sent for re-completion to another Toloker.
 
 {% endcut %}
 
 ## Combination of methods {#combination-methods}
 
 The best practice is to combine quality control rules. For example, if tasks involve selecting a response from several options, you should use:
-
-- [Captchas](captcha.md).
+- [Control tasks](goldenset.md).
 - [Fast responses](quick-answers.md).
 
 Content generation projects like writing texts or taking photos need a different combination:

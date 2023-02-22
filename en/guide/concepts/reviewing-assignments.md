@@ -1,4 +1,4 @@
-# Results of assignment review
+# Results of manual review
 
 If you don't want Tolokers who made a lot of mistakes to do your tasks in the future, set up this quality control rule.
 
@@ -61,7 +61,7 @@ You understand that the Toloker didn't complete your tasks well enough. You can 
 
 You can also assign a skill that you can use to either block access to tasks for Tolokers, or to encourage those who did tasks well.
 
-#### Blocking for incorrect responses
+### Blocking for incorrect responses
 
 {% note warning %}
 
@@ -85,7 +85,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endlist %}
 
-#### Setting the skill
+### Setting the skill
 
 ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example2.png)
 
