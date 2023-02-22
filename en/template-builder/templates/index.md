@@ -40,6 +40,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Audio comparison (Side-by-side)](sbs-audio.md)
 
+- [Voice recording](voice-recording.md)
+
 ## Field tasks
 
 - [Collecting offline data](spatial-crowdsourcing.md)

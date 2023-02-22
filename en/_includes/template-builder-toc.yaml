@@ -48,6 +48,8 @@ items:
             href: ../template-builder/templates/audio-transcript.md
           - name: Audio comparison (Side-by-side)
             href: ../template-builder/templates/sbs-audio.md
+          - name: Voice recording
+            href: ../template-builder/templates/voice-recording.md
       - name: Field tasks
         items:
           - name: Collecting offline data
