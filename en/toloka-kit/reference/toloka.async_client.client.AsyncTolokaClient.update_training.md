@@ -1,5 +1,5 @@
 # update_training
-`toloka.async_client.client.AsyncTolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async update_training(

@@ -1,5 +1,5 @@
 # PoolOpenOperation
-`toloka.client.operations.PoolOpenOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/operations.py#L180)
+`toloka.client.operations.PoolOpenOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/operations.py#L180)
 
 ```python
 PoolOpenOperation(

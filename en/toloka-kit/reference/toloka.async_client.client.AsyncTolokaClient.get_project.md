@@ -1,17 +1,17 @@
 # get_project
-`toloka.async_client.client.AsyncTolokaClient.get_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async get_project(self, project_id: str)
 ```
 
-Reads one specific project
+Gets project data from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`project_id`|**str**|<p>ID of the project.</p>
+`project_id`|**str**|<p>The ID of the project.</p>
 
 * **Returns:**
 

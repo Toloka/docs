@@ -1,5 +1,5 @@
 # get_app_projects
-`toloka.async_client.client.AsyncTolokaClient.get_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
 
 Finds all App projects that match certain criteria.
 

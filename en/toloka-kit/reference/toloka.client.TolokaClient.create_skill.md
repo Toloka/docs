@@ -1,5 +1,5 @@
 # create_skill
-`toloka.client.TolokaClient.create_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L2048)
+`toloka.client.TolokaClient.create_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L2063)
 
 Creates a new Skill
 

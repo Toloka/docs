@@ -1,5 +1,5 @@
 # AssignmentsAssessment
-`toloka.client.collectors.AssignmentsAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/collectors.py#L165)
+`toloka.client.collectors.AssignmentsAssessment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/collectors.py#L165)
 
 ```python
 AssignmentsAssessment(self, *, uuid: Optional[UUID] = None)

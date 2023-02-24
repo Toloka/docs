@@ -1,5 +1,5 @@
 # AdditionalLanguage
-`toloka.client.project.localization.AdditionalLanguage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/localization.py#L11)
+`toloka.client.project.localization.AdditionalLanguage` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/localization.py#L11)
 
 ```python
 AdditionalLanguage(
@@ -12,13 +12,13 @@ AdditionalLanguage(
 )
 ```
 
-Description for additional language in project
+A translation of a project interface.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`language`|**Optional\[str\]**|<p>The language into which the translation is made. A string from ISO 639-1.</p>
-`public_name`|**Optional\[[FieldTranslation](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.md)\]**|<p>Translation of the project field &#x27;public_name&#x27; into the specified language.</p>
-`public_description`|**Optional\[[FieldTranslation](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.md)\]**|<p>Translation of the project field &#x27;public_description&#x27; into the specified language.</p>
-`public_instructions`|**Optional\[[FieldTranslation](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.md)\]**|<p>Translation of the project field &#x27;public_instructions&#x27; into the specified language.</p>
+`language`|**Optional\[str\]**|<p>The language into which the translation is made. Two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code in upper case.</p>
+`public_name`|**Optional\[[FieldTranslation](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.md)\]**|<p>A translated project name.</p>
+`public_description`|**Optional\[[FieldTranslation](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.md)\]**|<p>A translated project description.</p>
+`public_instructions`|**Optional\[[FieldTranslation](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.md)\]**|<p>Translated instructions for Tolokers.</p>

@@ -1,5 +1,5 @@
 # UserAgentVersion
-`toloka.client.filter.UserAgentVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/filter.py#L697)
+`toloka.client.filter.UserAgentVersion` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/filter.py#L708)
 
 ```python
 UserAgentVersion(

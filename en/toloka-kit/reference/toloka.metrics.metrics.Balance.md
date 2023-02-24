@@ -1,5 +1,5 @@
 # Balance
-`toloka.metrics.metrics.Balance` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/metrics.py#L143)
+`toloka.metrics.metrics.Balance` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L145)
 
 ```python
 Balance(
@@ -33,8 +33,12 @@ def print_metric(metric_dict):
 collector = MetricCollector([Balance(toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+
+```python
+{
     toloka_requester_balance: [(datetime.datetime(2021, 8, 30, 10, 30, 59, 628239), Decimal('123.4500'))],
 }
+```
 ## Methods Summary
 
 | Method | Description |

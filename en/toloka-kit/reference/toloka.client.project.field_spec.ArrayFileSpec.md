@@ -1,5 +1,5 @@
 # ArrayFileSpec
-`toloka.client.project.field_spec.ArrayFileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/field_spec.py#L201)
+`toloka.client.project.field_spec.ArrayFileSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/field_spec.py#L203)
 
 ```python
 ArrayFileSpec(
@@ -12,13 +12,16 @@ ArrayFileSpec(
 )
 ```
 
-A file array field specification (only for output data)
+A file array field specification.
+
+
+`ArrayFileSpec` is used for output data only.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`required`|**Optional\[bool\]**|<p>Whether the object or input field is required.</p>
-`hidden`|**Optional\[bool\]**|<p>Whether to hide the input field from Tolokers.</p>
-`min_size`|**Optional\[int\]**|<p>Minimum number of elements in the array</p>
-`max_size`|**Optional\[int\]**|<p>Maximum number of elements in the array</p>
+`required`|**Optional\[bool\]**|<p>Whether a field is required. </p><p>Default value: `True`.</p>
+`hidden`|**Optional\[bool\]**|<p>Whether to hide an input field from Tolokers. Output fields can&#x27;t be hidden. </p><p>Default value: `False`.</p>
+`min_size`|**Optional\[int\]**|<p>The minimum number of elements in the array.</p>
+`max_size`|**Optional\[int\]**|<p>The maximum number of elements in the array.</p>

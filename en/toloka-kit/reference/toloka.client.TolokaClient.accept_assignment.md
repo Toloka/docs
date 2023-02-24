@@ -1,5 +1,5 @@
 # accept_assignment
-`toloka.client.TolokaClient.accept_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L635)
+`toloka.client.TolokaClient.accept_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L642)
 
 ```python
 accept_assignment(

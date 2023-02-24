@@ -1,5 +1,5 @@
 # Folder
-`toloka.client.message_thread.Folder` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/message_thread.py#L35)
+`toloka.client.message_thread.Folder` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/message_thread.py#L35)
 
 Folders for a thread.
 

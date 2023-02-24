@@ -1,5 +1,5 @@
 # get_task_suite
-`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L2623)
+`toloka.client.TolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L2638)
 
 ```python
 get_task_suite(self, task_suite_id: str)

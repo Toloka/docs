@@ -1,5 +1,5 @@
 # NewUserBonuses
-`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/metrics.py#L185)
+`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L190)
 
 ```python
 NewUserBonuses(
@@ -34,9 +34,13 @@ def print_metric(metric_dict):
 collector = MetricCollector([NewUserBonuses(toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+
+```python
+{
     'bonus_count': [(datetime.datetime(2021, 11, 18, 8, 29, 9, 734373), 0)],
     'bonus_money': [(datetime.datetime(2021, 11, 18, 8, 29, 9, 734377), Decimal('0'))]
 }
+```
 ## Methods Summary
 
 | Method | Description |

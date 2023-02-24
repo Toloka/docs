@@ -1,5 +1,5 @@
 # UserBonus
-`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/user_bonus.py#L17)
+`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/user_bonus.py#L17)
 
 ```python
 UserBonus(

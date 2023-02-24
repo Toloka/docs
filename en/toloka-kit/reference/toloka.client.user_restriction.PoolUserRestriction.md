@@ -1,5 +1,5 @@
 # PoolUserRestriction
-`toloka.client.user_restriction.PoolUserRestriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/user_restriction.py#L92)
+`toloka.client.user_restriction.PoolUserRestriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/user_restriction.py#L92)
 
 ```python
 PoolUserRestriction(

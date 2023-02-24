@@ -1,5 +1,5 @@
 # FieldTranslation
-`toloka.client.project.localization.AdditionalLanguage.FieldTranslation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/localization.py#L21)
+`toloka.client.project.localization.AdditionalLanguage.FieldTranslation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/localization.py#L21)
 
 ```python
 FieldTranslation(
@@ -10,11 +10,11 @@ FieldTranslation(
 )
 ```
 
-Translation of one specific field
+A translation of a text parameter.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`value`|**Optional\[str\]**|<p>A string translated into the desired language.</p>
-`source`|**Union\[[Source](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.Source.md), str, None\]**|<p>In creation you can pass only &#x27;REQUESTER&#x27; right now.</p>
+`value`|**Optional\[str\]**|<p>A translated text.</p>
+`source`|**Union\[[Source](toloka.client.project.localization.AdditionalLanguage.FieldTranslation.Source.md), str, None\]**|<p>A translation origin.</p>

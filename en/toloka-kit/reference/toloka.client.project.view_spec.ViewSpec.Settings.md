@@ -1,5 +1,5 @@
 # Settings
-`toloka.client.project.view_spec.ViewSpec.Settings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/view_spec.py#L36)
+`toloka.client.project.view_spec.ViewSpec.Settings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/view_spec.py#L44)
 
 ```python
 Settings(
@@ -17,18 +17,18 @@ Settings(
 )
 ```
 
-ViewSpec Settings
+Common interface elements.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`show_finish`|**Optional\[bool\]**|<p>Show the Back to main page button.</p>
-`show_fullscreen`|**Optional\[bool\]**|<p>Show the Expand to fullscreen button.</p>
-`show_instructions`|**Optional\[bool\]**|<p>Show the Instructions button.</p>
-`show_message`|**Optional\[bool\]**|<p>Show the Message for the requester button.</p>
-`show_reward`|**Optional\[bool\]**|<p>Show the price per task page.</p>
-`show_skip`|**Optional\[bool\]**|<p>Show the Skip button.</p>
-`show_submit`|**Optional\[bool\]**|<p>Show the Next button.</p>
-`show_timer`|**Optional\[bool\]**|<p>Show the timer.</p>
-`show_title`|**Optional\[bool\]**|<p>Show the project name in task titles.</p>
+`show_finish`|**Optional\[bool\]**|<p>Show the **Exit** button. The default is to show the button.</p>
+`show_fullscreen`|**Optional\[bool\]**|<p>Show the **Expand to fullscreen** button. The default is to show the button.</p>
+`show_instructions`|**Optional\[bool\]**|<p>Show the **Instructions** button. The default is to show the button.</p>
+`show_message`|**Optional\[bool\]**|<p>Show the **Message for the requester** button. The default is to show the button.</p>
+`show_reward`|**Optional\[bool\]**|<p>Show the price per task page. The default is to show the price.</p>
+`show_skip`|**Optional\[bool\]**|<p>Show the **Skip** button. The default is to show the button.</p>
+`show_submit`|**Optional\[bool\]**|<p>Show the **Submit** button. The default is to show the button.</p>
+`show_timer`|**Optional\[bool\]**|<p>Show the timer. The default is to show the timer.</p>
+`show_title`|**Optional\[bool\]**|<p>Show the project name on the top of a page. The default is to show the name.</p>
