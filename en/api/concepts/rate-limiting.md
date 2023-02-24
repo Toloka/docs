@@ -4,7 +4,7 @@ Toloka applies the following rate limiting to the requests from clients to the T
 
 ## Requests per second
 
-Toloka limits the number of requests that clients can send per second. If you exceed **300** requests to the Toloka API per second, the platform will return an error with the `429 Too Many Requests` HTTP status code. If the problem persists, please lower the number of requests per second or [contact our support team](../../guide/troubleshooting/support.md) in case you really need to send more than 300 requests per second.
+Toloka limits the number of requests that clients can send per second. If you exceed **300** requests to the Toloka API per second, the platform will return an error with the `429 Too Many Requests` HTTP status code. If the problem persists, please lower the number of requests per second and try and repeat your requests in a couple of seconds.
 
 ## API methods request limiting
 
