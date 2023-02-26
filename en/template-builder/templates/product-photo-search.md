@@ -2,9 +2,9 @@
 
 For this type of project, you can use the **Product photo search** preset.
 
-This template helps you get the photos of the products from the Internet that meet the specified parameters. The Tolokers search products by name or SKU on the Internet and upload product images.
+This template helps you get the photos of the products from the Internet that meet the specified parameters. The Tolokers search products by name or SKU the Internet and upload product images.
 
-Take a look at the example:  the template includes a product description, links to search in Google, an upload area, and a checkbox. The users must select the "No photo found" option if the photo hasn't been found.
+Take a look at the example:  the template includes a product description, links to search in Google, an upload area, and a checkbox. The Tolokers must upload a product photo or select the **No photo found** option if the photo hasn't been found.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/8verSatf3yR3cu)
 
@@ -12,7 +12,7 @@ Take a look at the example:  the template includes a product description, links
 
 - [view.list](../reference/view.list.md): Displays data in a list.
 
-- [view.text](../reference/view.text.md): Adds text to the task.
+- [view.text](../reference/view.text.md): Adds a block with text.
 
   {% cut "Show code" %}
 
@@ -90,7 +90,7 @@ Take a look at the example:  the template includes a product description, links
   ```
   {% endcut %}
 
-- A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md): Hides the photo upload field if **No photo found** is selected.
+- A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md): Hides the photo upload field if the **No photo found** option is selected.
 
   {% cut "Show code" %}
 
@@ -139,7 +139,7 @@ Take a look at the example:  the template includes a product description, links
   ```
   {% endcut %}
 
-- A combination of [condition.any](../reference/condition.any.md), [condition.required](../reference/condition.required.md), and [condition.equals](../reference/condition.equals.md): Checks that either the product image is uploaded or the **No photo found** option is selected.
+- A combination of [condition.any](../reference/condition.any.md), [condition.required](../reference/condition.required.md), and [condition.equals](../reference/condition.equals.md)inside the `validation` property: Checks that either the product image is uploaded or the **No photo found** option is selected.
 
   {% cut "Show code" %}
 
@@ -200,13 +200,13 @@ To add a detailed description to the task, use the [view.text](../reference/view
 ```json
 {
   "type": "view.text",
-  "content": "Search for photos by the name or SKU. If you couldn't find photos, select the "No photo found" option."
+  "content": "Search for photos by the name or SKU. If you couldn't find photos, select the “No photo found” option."
 }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/48aj5QhH42KAUg)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/f122o81P42UG2R)
 
 ## Add a response field {#add-text-area}
 
@@ -232,7 +232,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 ## Add a layout {#add-layout}
 
-To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the text is highlighted with a blue border.
+To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). In this example, the task description is highlighted with a blue border.
 
 {% cut "Show code" %}
 
@@ -249,7 +249,7 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/W60xAmR23yh9mM)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3kNUPFNe42UGkp)
 
 ## Add conditions {#dependencies}
 
@@ -334,6 +334,6 @@ The [helper.switch](../reference/helper.switch.md) component displays an additio
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/YnKYHVcO3zriYw)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1ktFRaJV42UHh8)
 
 {% include [contact-support](../_includes/contact-support.md) %}
