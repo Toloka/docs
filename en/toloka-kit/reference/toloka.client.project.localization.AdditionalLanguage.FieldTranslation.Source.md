@@ -1,10 +1,10 @@
 # Source
-`toloka.client.project.localization.AdditionalLanguage.FieldTranslation.Source` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/localization.py#L29)
+`toloka.client.project.localization.AdditionalLanguage.FieldTranslation.Source` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/localization.py#L29)
 
-Possible values of sources
+A translation origin.
 
 
-In creation you can pass only 'REQUESTER' right now.
+The only value 'REQUESTER' is supported so far.
 
 ## Attributes Description
 

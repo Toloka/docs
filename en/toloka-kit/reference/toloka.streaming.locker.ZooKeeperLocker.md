@@ -1,5 +1,5 @@
 # ZooKeeperLocker
-`toloka.streaming.locker.ZooKeeperLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/streaming/locker.py#L116)
+`toloka.streaming.locker.ZooKeeperLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/locker.py#L115)
 
 ```python
 ZooKeeperLocker(
@@ -47,15 +47,15 @@ zk = KazooClient('127.0.0.1:2181')
 zk.start()
 locker = ZooKeeperLocker(zk, '/my-locks')
 ```
-Try to lock the same key at the same time..
+Try to lock the same key at the same time.
 
 ```python
 locker_1 = ZooKeeperLocker(zk, '/locks')
 locker_2 = ZooKeeperLocker(zk, '/locks', timeout=0)
 with locker_1('some_key') as lock_1:
+    with locker_2('some_key') as lock_2:  # => raise an error: timeout
+        pass
 ```
-...         pass
-...
 
 Try to lock the same key sequentially.
 
@@ -63,13 +63,9 @@ Try to lock the same key sequentially.
 locker_1 = ZooKeeperLocker(zk, '/locks')
 locker_2 = ZooKeeperLocker(zk, '/locks')
 with locker_1('some_key'):
-```
-
-```python
+    pass
 with locker_2('some_key'):
-```
-
-```python
+    pass
 with locker_1('some_key'):  # raise an error: NewerInstanceDetectedError
+    pass
 ```
-...

@@ -1,5 +1,5 @@
 # SameDomainConditionV1
-`toloka.client.project.template_builder.conditions.SameDomainConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/conditions.py#L239)
+`toloka.client.project.template_builder.conditions.SameDomainConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L239)
 
 ```python
 SameDomainConditionV1(
@@ -17,15 +17,16 @@ Checks if the link that you entered belongs to a specific site. If it does, retu
 
 Links must be specified in full, including the protocol (http, https, ftp).
 
-The www. subdomain is ignored when checking, meaning that links to www.example.ru and example.ru are considered
-to be the same.
+The `www.` subdomain is ignored when checking, meaning that links to `www.example.com`
+and `example.com` are considered to be the same.
 
 How to pass a link address:
 
 * Specify it explicitly as a string.
-* (../operations/work-with-data. dita).
-* Refer to another element using $ref.
-* Use helpers and conditions to get the value.
+* [Get the value](https://toloka.ai/en/docs/template-builder/operations/work-with-data) from your data.
+* Refer to another element using `$ref`.
+* Use [helpers](https://toloka.ai/en/docs/template-builder/reference/helpers) and
+  [conditions](https://toloka.ai/en/docs/template-builder/reference/conditions) to get the value.
 
 ## Parameters Description
 

@@ -1,5 +1,5 @@
 # Project
-`toloka.client.project.Project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/__init__.py#L63)
+`toloka.client.project.Project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/__init__.py#L63)
 
 ```python
 Project(
@@ -23,55 +23,54 @@ Project(
 )
 ```
 
-Top-level object in Toloka. All other entities are contained in some project.
+Top-level object in Toloka that describes one requester's objective.
 
 
-Describes one type of task from the requester's point of view. For example: one project can describe image segmentation,
-another project can test this segmentation. The easier the task, the better the results. If your task contains more
-than one question, it may be worth dividing it into several projects.
+If your task is complex, consider to [decompose](https://toloka.ai/en/docs/guide/concepts/solution-architecture) it into several projects.
+For example, one project finds images with some objects, another project describes image segmentation, and the third project checks this segmentation.
 
 In a project, you set properties for tasks and responses:
-* Input data parameters. These parameters describe the objects to display in a task, such as images or text.
-* Output data parameters. These parameters describe Tolokers' responses. They are used for validating the
-    responses entered: the data type (integer, string, etc.), range of values, string length, and so on.
-* Task interface. To learn how to define the appearance of tasks, see [Task interface](https://toloka.ai/en/docs/en/guide/concepts/spec).
+* Input data parameters describe what kind of input data you have: images, text, and other.
+* Output data parameters describe Tolokers' responses. They are used to validate a data type, range of values, string length, and so on.
+* Task interface. To learn how to define the appearance of tasks, see [Task interface](https://toloka.ai/en/docs/en/guide/concepts/spec) in the guide.
 
-Pools and training pools are related to a project.
+You upload [tasks](toloka.client.task.Task.md) to project [pools](toloka.client.pool.Pool.md) and [training pools](toloka.client.training.Training.md).
+They are grouped into [task suites](toloka.client.task_suite.TaskSuite.md) and assigned to Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`public_name`|**Optional\[str\]**|<p>Name of the project. Visible to Tolokers.</p>
-`public_description`|**Optional\[str\]**|<p>Description of the project. Visible to Tolokers.</p>
-`public_instructions`|**Optional\[str\]**|<p>Instructions for completing the task. You can use any HTML markup in the instructions.</p>
+`public_name`|**Optional\[str\]**|<p>The name of the project. Visible to Tolokers.</p>
+`public_description`|**Optional\[str\]**|<p>The description of the project. Visible to Tolokers.</p>
+`public_instructions`|**Optional\[str\]**|<p>Instructions for Tolokers describe what to do in the tasks. You can use any HTML markup in the instructions.</p>
 `private_comment`|**Optional\[str\]**|<p>Comments about the project. Visible only to the requester.</p>
-`task_spec`|**Optional\[[TaskSpec](toloka.client.project.task_spec.TaskSpec.md)\]**|<p>Parameters for input and output data and the task interface.</p>
-`assignments_issuing_type`|**[AssignmentsIssuingType](toloka.client.project.Project.AssignmentsIssuingType.md)**|<p>How to assign tasks. The default value is AUTOMATED.</p>
-`assignments_automerge_enabled`|**Optional\[bool\]**|<p>Solve merging identical tasks in the project.</p>
-`max_active_assignments_count`|**Optional\[int\]**|<p>The number of task suites a Toloker can complete simultaneously (“Active” status)</p>
-`quality_control`|**Optional\[[QualityControl](toloka.client.quality_control.QualityControl.md)\]**|<p>The quality control rule.</p>
-`metadata`|**Optional\[Dict\[str, List\[str\]\]\]**|<p>Additional information about project.</p>
-`status`|**Optional\[[ProjectStatus](toloka.client.project.Project.ProjectStatus.md)\]**|<p>Project status.</p>
-`created`|**Optional\[datetime\]**|<p>The UTC date and time the project was created.</p>
-`id`|**Optional\[str\]**|<p>Project ID (assigned automatically).</p>
-`public_instructions`|**Optional\[str\]**|<p>Instructions for completing tasks. You can use any HTML markup in the instructions.</p>
-`private_comment`|**Optional\[str\]**|<p>Comment on the project. Available only to the customer.</p>
+`task_spec`|**Optional\[[TaskSpec](toloka.client.project.task_spec.TaskSpec.md)\]**|<p>Input and output data specification and the task interface. The interface can be defined with HTML, CSS, and JS or using the [Template Builder](https://toloka.ai/en/docs/template-builder/) components.</p>
+`assignments_issuing_type`|**[AssignmentsIssuingType](toloka.client.project.Project.AssignmentsIssuingType.md)**|<p>Settings for assigning tasks. </p><p>Default value: `AUTOMATED`.</p>
+`assignments_issuing_view_config`|**Optional\[[AssignmentsIssuingViewConfig](toloka.client.project.Project.AssignmentsIssuingViewConfig.md)\]**|<p>The configuration of a task view on a map. Provide it if `assignments_issuing_type=MAP_SELECTOR`.</p>
+`assignments_automerge_enabled`|**Optional\[bool\]**|<p>[Merging tasks](https://toloka.ai/en/docs/api/concepts/tasks#task-merge) control.</p>
+`max_active_assignments_count`|**Optional\[int\]**|<p>The number of task suites simultaneously assigned to a Toloker. Note, that Toloka counts assignments having the `ACTIVE` status only.</p>
+`quality_control`|**Optional\[[QualityControl](toloka.client.quality_control.QualityControl.md)\]**|<p>[Quality control](https://toloka.ai/en/docs/guide/concepts/project-qa) rules.</p>
+`localization_config`|**Optional\[[LocalizationConfig](toloka.client.project.localization.LocalizationConfig.md)\]**|<p>Translations to other languages.</p>
+`metadata`|**Optional\[Dict\[str, List\[str\]\]\]**|<p>Additional information about the project.</p>
+`id`|**Optional\[str\]**|<p>The ID of the project. Read-only field.</p>
+`status`|**Optional\[[ProjectStatus](toloka.client.project.Project.ProjectStatus.md)\]**|<p>A project status. Read-only field.</p>
+`created`|**Optional\[datetime\]**|<p>The UTC date and time when the project was created. Read-only field.</p>
 
 **Examples:**
 
-How to create a new project.
+Creating a new project.
 
 ```python
-toloka_client = toloka.TolokaClient(your_token, 'PRODUCTION')
-new_project = toloka.project.Project(
-    public_name='My best project!!!',
-    public_description='Look at the instruction and do it well',
-    public_instructions='Describe your task for Tolokers here!',
-    task_spec=toloka.project.task_spec.TaskSpec(
-        input_spec={'image': toloka.project.field_spec.UrlSpec()},
-        output_spec={'result': toloka.project.field_spec.StringSpec(allowed_values=['OK', 'BAD'])},
-        view_spec=verification_interface_prepared_before,
+new_project = toloka.client.project.Project(
+    assignments_issuing_type=toloka.client.project.Project.AssignmentsIssuingType.AUTOMATED,
+    public_name='My best project',
+    public_description='Describe the picture',
+    public_instructions='Describe in a few words what is happening in the image.',
+    task_spec=toloka.client.project.task_spec.TaskSpec(
+        input_spec={'image': toloka.client.project.field_spec.UrlSpec()},
+        output_spec={'result': toloka.client.project.field_spec.StringSpec()},
+        view_spec=project_interface,
     ),
 )
 new_project = toloka_client.create_project(new_project)
@@ -81,5 +80,5 @@ print(new_project.id)
 
 | Method | Description |
 | :------| :-----------|
-[add_requester_translation](toloka.client.project.Project.add_requester_translation.md)| Add new translations to other language.
-[set_default_language](toloka.client.project.Project.set_default_language.md)| Sets the source language used in the fields public_name, public_description, and public_instructions.
+[add_requester_translation](toloka.client.project.Project.add_requester_translation.md)| Adds a project interface translation to other language.
+[set_default_language](toloka.client.project.Project.set_default_language.md)| Sets the main language used in the project parameters.

@@ -1,5 +1,5 @@
 # AvgSubmitAssignmentMillisPoolAnalytics
-`toloka.client.analytics_request.AvgSubmitAssignmentMillisPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/analytics_request.py#L119)
+`toloka.client.analytics_request.AvgSubmitAssignmentMillisPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L117)
 
 ```python
 AvgSubmitAssignmentMillisPoolAnalytics(self, *, subject_id: str)

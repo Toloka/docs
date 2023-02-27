@@ -1,5 +1,5 @@
 # BansInPool
-`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/pool_metrics.py#L426)
+`toloka.metrics.pool_metrics.BansInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/pool_metrics.py#L444)
 
 ```python
 BansInPool(
@@ -39,8 +39,12 @@ def print_metric(metric_dict):
 collector = MetricCollector([BansInPool(pool_id, toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+
+```python
+{
     'bans_count': [(datetime.datetime(2021, 11, 18, 13, 30, 11, 522000), 1)],
 }
+```
 
 How to split bans onto several metrics.
 ```python
@@ -56,9 +60,13 @@ collector = MetricCollector(
 )
 asyncio.run(collector.run())
 ```
+
+```python
+{
     'honeypots': [(datetime.datetime(2021, 11, 18, 13, 32, 52, 475000), 1)],
     'fast': [(datetime.datetime(2021, 11, 18, 13, 32, 50, 453000), 1)],
 }
+```
 ## Methods Summary
 
 | Method | Description |

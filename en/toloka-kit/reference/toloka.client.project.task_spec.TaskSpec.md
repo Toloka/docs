@@ -1,5 +1,5 @@
 # TaskSpec
-`toloka.client.project.task_spec.TaskSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/task_spec.py#L8)
+`toloka.client.project.task_spec.TaskSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/task_spec.py#L8)
 
 ```python
 TaskSpec(
@@ -11,12 +11,16 @@ TaskSpec(
 )
 ```
 
-Parameters for input and output data and the task interface.
+Task interface description and input and output data specifications.
+
+
+Input and output data specifications are dictionaries.
+Field IDs are keys and field specifications are values.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`input_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>The input data parameters for tasks. The complete list of parameters is shown in the Input and output data table.</p>
-`output_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>Parameters for output data from the input fields. The complete list of parameters is shown in the Input and output data table.</p>
-`view_spec`|**Optional\[[ViewSpec](toloka.client.project.view_spec.ViewSpec.md)\]**|<p>Description of the task interface.</p>
+`input_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>Input data specification.</p>
+`output_spec`|**Optional\[Dict\[str, [FieldSpec](toloka.client.project.field_spec.FieldSpec.md)\]\]**|<p>Output data specification.</p>
+`view_spec`|**Optional\[[ViewSpec](toloka.client.project.view_spec.ViewSpec.md)\]**|<p>The description of the task interface.</p>

@@ -1,5 +1,5 @@
 # Assets
-`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/view_spec.py#L81)
+`toloka.client.project.view_spec.ClassicViewSpec.Assets` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/view_spec.py#L84)
 
 ```python
 Assets(
@@ -10,14 +10,25 @@ Assets(
 )
 ```
 
-Linked files with assets.
+Links to external files.
+
+
+You can link:
+    * CSS libraries
+    * JavaScript libraries
+    * Toloka assets — libraries that can be linked using the `$TOLOKA_ASSETS` path:
+        * `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — [Handlebars template engine](http://handlebarsjs.com/).
+        * `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface. Note, that this library requires Handlebars and must be linked after it.
+            For more information, see [Image with area selection](https://toloka.ai/en/docs/guide/concepts/t-components/image-annotation).
+
+    Add items in the order they should be linked.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `style_urls`|**Optional\[List\[str\]\]**|<p>Links to CSS libraries.</p>
-`script_urls`|**Optional\[List\[str\]\]**|<p>Links to JavaScript libraries and Toloka assets. Toloka assets:</p> <ul> <li>&quot;$TOLOKA_ASSETS/js/toloka-handlebars-templates.js&quot; — [Handlebars template engine](http://handlebarsjs.com/).</li> <li>&quot;$TOLOKA_ASSETS/js/image-annotation.js&quot; — Image labeling interface.   For more information, see [Image with area selection](https://toloka.ai/en/docs/guide/concepts/t-components/image-annotation). Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters.</li> </ul>
+`script_urls`|**Optional\[List\[str\]\]**|<p>Links to JavaScript libraries and Toloka assets.</p>
 
 **Examples:**
 
@@ -27,7 +38,7 @@ from toloka.client.project.view_spec import ClassicViewSpec
 view_spec = ClassicViewSpec(
     ...,
     assets = ClassicViewSpec.Assets(
-        script_utls = [
+        script_urls = [
             "$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
             "$TOLOKA_ASSETS/js/image-annotation.js",
         ]

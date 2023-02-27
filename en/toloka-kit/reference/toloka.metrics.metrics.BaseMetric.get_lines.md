@@ -1,5 +1,5 @@
 # get_lines
-`toloka.metrics.metrics.BaseMetric.get_lines` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/metrics.py#L98)
+`toloka.metrics.metrics.BaseMetric.get_lines` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L98)
 
 ```python
 async get_lines(self)
@@ -13,12 +13,14 @@ Could not return some metrics in dict on iteration or return it with empty list:
 means that is nothing being gathered on this step. This is not zero value!
 
 Return example:
-{
-    'rejected_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 44, 895232), 0)],
-    'submitted_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 45, 321904), 75)],
-    'accepted_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 45, 951156), 75)],
-    'accepted_events_in_pool': [(datetime.datetime(2021, 8, 11, 15, 13, 3, 65000), 1), ... ],
-    'rejected_events_in_pool': [],
-    # no toloka_requester_balance on this iteration
-}
+
+>>> {
+>>>     'rejected_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 44, 895232), 0)],
+>>>     'submitted_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 45, 321904), 75)],
+>>>     'accepted_assignments_in_pool': [(datetime.datetime(2021, 8, 12, 10, 4, 45, 951156), 75)],
+>>>     'accepted_events_in_pool': [(datetime.datetime(2021, 8, 11, 15, 13, 3, 65000), 1), ... ],
+>>>     'rejected_events_in_pool': [],
+>>>     # no toloka_requester_balance on this iteration
+>>> }
+...
 

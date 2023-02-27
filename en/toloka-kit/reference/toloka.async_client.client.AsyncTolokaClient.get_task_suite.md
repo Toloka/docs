@@ -1,5 +1,5 @@
 # get_task_suite
-`toloka.async_client.client.AsyncTolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async get_task_suite(self, task_suite_id: str)

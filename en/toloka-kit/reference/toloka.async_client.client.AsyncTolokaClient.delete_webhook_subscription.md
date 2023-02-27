@@ -1,5 +1,5 @@
 # delete_webhook_subscription
-`toloka.async_client.client.AsyncTolokaClient.delete_webhook_subscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.delete_webhook_subscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async delete_webhook_subscription(self, webhook_subscription_id: str)

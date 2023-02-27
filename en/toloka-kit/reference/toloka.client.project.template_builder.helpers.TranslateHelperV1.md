@@ -1,5 +1,5 @@
 # TranslateHelperV1
-`toloka.client.project.template_builder.helpers.TranslateHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/helpers.py#L267)
+`toloka.client.project.template_builder.helpers.TranslateHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L276)
 
 ```python
 TranslateHelperV1(
@@ -15,10 +15,11 @@ Component for translating interface elements to other languages.
 
 In the properties that should be displayed in different languages, add:
 
-{
-  "type": "helper.translate",
-  "key": "<key name>"
-{
+>>> {
+>>>     "type": "helper.translate",
+>>>     "key": "<key name>"
+>>> }
+...
 
 Adding the key property displays a field for entering the key text. Enter the text in the source language. In the
 "Translations" step, add translations for the keys in the desired languages.

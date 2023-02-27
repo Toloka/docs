@@ -1,5 +1,5 @@
 # stop_app_batch
-`toloka.client.TolokaClient.stop_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L3980)
+`toloka.client.TolokaClient.stop_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3995)
 
 ```python
 stop_app_batch(
