@@ -6,7 +6,7 @@ This template helps you get the photos of the products from the Internet that me
 
 Take a look at the example:  the template includes a product description, links to search in Google, an upload area, and a checkbox. The Tolokers must upload a product photo or select the **No photo found** option if the photo hasn't been found.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/8verSatf3yR3cu)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/w2TrMbmD42b39k)
 
 {% cut "Components used in the example" %}
 
@@ -290,7 +290,7 @@ The [helper.switch](../reference/helper.switch.md) component displays an additio
 ```json
 {
   "type": "field.radio-group",
-  "label": "Has the photo been found?",
+  "label": "Could you find a product photo?",
   "data": {
     "type": "data.output",
     "path": "photo"
