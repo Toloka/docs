@@ -43,7 +43,7 @@ Toloka is not responsible for such changes or for placing them in this section w
 
 {% endnote %}
 
-#### Terms of use
+### Terms of use
 
 Photo hosting | Maximum image size | Registration | Trial period
 ----- | ----- | ----- | -----
@@ -53,7 +53,7 @@ Photo hosting | Maximum image size | Registration | Trial period
 [postimages]({{ postimages }}) | 24 MB | No | —
 [ImageShack]({{ imageshack }}) | 25 MB | Yes | 30 days
 
-#### How to upload an image to photo hosting
+### How to upload an image to photo hosting
 
 For example, [imgbb]({{ imgbb }}):
 
@@ -85,7 +85,7 @@ Toloka is not responsible for such changes or for placing them in this section w
 
 {% endnote %}
 
-#### Trial terms
+### Trial terms
 
 Storage type | Trial length | Free storage size | Grant amount | Additional information.
 ----- | ----- | ----- | ----- | -----
