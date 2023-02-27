@@ -46,9 +46,9 @@ Take a look at the example:  the template includes a product description, links
 
 - [view.link-group](../reference/view.link-group.md): Groups links together. 
 
-  A combination of [condition.any](../reference/condition.any.md) and [condition.link-opened](../reference/condition.link-opened.md) used inside the the validation property checks if a Toloker has clicked at least one link.
+  A combination of [condition.any](../reference/condition.any.md) and [condition.link-opened](../reference/condition.link-opened.md) used inside the the `validation` property checks if a Toloker has clicked at least one link.
 
-  The [helper.search-query](../reference/helper.search-query.md) component creates a search query.
+  The [helper.search-query](../reference/helper.search-query.md) component creates a string with a search query reference.
 
   {% cut "Show code" %}
   
@@ -136,7 +136,7 @@ Take a look at the example:  the template includes a product description, links
   ```
   {% endcut %}
 
-- [field.file](../reference/field.file.md): Uploads files.
+- [field.file](../reference/field.file.md): Displays a button to upload files.
 
   {% cut "Show code" %}
 
@@ -169,7 +169,7 @@ Take a look at the example:  the template includes a product description, links
   ```
   {% endcut %}
 
-- A combination of [condition.any](../reference/condition.any.md), [condition.required](../reference/condition.required.md), and [condition.equals](../reference/condition.equals.md)inside the `validation` property: Checks that either the product image is uploaded or the **No photo found** option is selected.
+- A combination of [condition.any](../reference/condition.any.md), [condition.required](../reference/condition.required.md), and [condition.equals](../reference/condition.equals.md) inside the `validation` property: Checks that either the product image is uploaded or the **No photo found** option is selected.
 
   {% cut "Show code" %}
 
