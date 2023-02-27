@@ -44,7 +44,11 @@ Take a look at the example:  the template includes a product description, links
   ```
   {% endcut %}
 
-- [view.link-group](../reference/view.link-group.md): Groups links together.
+- [view.link-group](../reference/view.link-group.md): Groups links together. 
+
+  A combination of [condition.any](../reference/condition.any.md) and [condition.link-opened](../reference/condition.link-opened.md) used inside the the validation property checks if a Toloker has clicked at least one link.
+
+  The [helper.search-query](../reference/helper.search-query.md) component creates a search query.
 
   {% cut "Show code" %}
   
@@ -69,25 +73,35 @@ Take a look at the example:  the template includes a product description, links
         }
       ]
     },
+    "links": [
+      {
+        "url": {
+          "type": "helper.search-query",
+          "query": {
+            "type": "data.input",
+            "path": "name"
+          },
+          "engine": "google/images"
+        },
+        "content": "Search by product name",
+        "theme": "primary"
+      },
+      {
+        "url": {
+          "type": "helper.search-query",
+          "query": {
+            "type": "data.input",
+            "path": "sku"
+          },
+          "engine": "google/images"
+        },
+        "content": "Search by SKU",
+        "theme": "primary"
+      }
+    ]
   }
   ```
 
-  {% endcut %}
-
-- [helper.search-query](../reference/helper.search-query.md): Creates a search query.
-
-  {% cut "Show code" %}
-
-  ```json
-  {
-    "type": "helper.search-query",
-    "query": {
-      "type": "data.input",
-      "path": "name"
-    },
-    "engine": "google/images"
-  }
-  ```
   {% endcut %}
 
 - A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md): Hides the photo upload field if the **No photo found** option is selected.
@@ -117,6 +131,22 @@ Take a look at the example:  the template includes a product description, links
           }
         }
       ]
+    }
+  }
+  ```
+  {% endcut %}
+
+- [field.file](../reference/field.file.md): Uploads files.
+
+  {% cut "Show code" %}
+
+  ```json
+  {
+    "type": "field.file",
+    "label": "Product photo",
+    "data": {
+      "type": "data.output",
+      "path": "image"
     }
   }
   ```
