@@ -1,6 +1,6 @@
 # Majority vote
 
-Majority vote is a [quality control](../../glossary.md#quality-control) method based on matching responses from the majority of Tolokers who complete the same task. For example, if a task has an [overlap](../../glossary.md#overlap) of “5” and three Tolokers selected the same answer, this is considered indirect confirmation of the correct response.
+Majority vote is a [quality control](../../glossary.md#quality-control) method based on matching responses from the majority of Tolokers who complete the same [task](../../glossary.md#task). For example, if a task has an [overlap](../../glossary.md#overlap) of “5” and three Tolokers selected the same answer, this is considered indirect confirmation of the correct response.
 
 {% note info %}
 
@@ -16,11 +16,11 @@ The rule is activated when the task overlap is complete.
 
 Let's say we set up this rule in a pool with `overlap=5`:
 
-![](../_images/control-rules/mvote/qcr-mvote_example1_2.png)
+![](../_images/control-rules/mvote/qcr-mvote_example1_2.png =700x)
 
 It is activated when at least three of the tasks completed by the Toloker reach full overlap. When responses have been received from all five task Tolokers, the system determines which response was selected by the majority. If the Toloker's responses to two out of three tasks differ from the responses of the majority, the Toloker is banned from the project for 10 days. To collect all the responses needed to trigger the rule, enable **Keep task order** in [the pool settings](pool_poolparams.md#keeptaskorder).
 
-![](../_images/control-rules/mvote/save-order-tasks-yes.png)
+![](../_images/control-rules/mvote/save-order-tasks-yes.png =700x)
 
 The number of tasks per suite doesn't affect how the rule works. Responses are evaluated separately for each task. Only the speed of collecting results can be affected, because the more tasks you put on each page, the longer it takes to do them.
 
@@ -28,12 +28,12 @@ The number of tasks per suite doesn't affect how the rule works. Responses are e
 
 ## When to use {#when-use}
 
-#### Use the **Majority vote** rule if:
+Use the **Majority vote** rule if:
 
 - You can't regularly create and add control tasks.
 - You want to make an additional review of the Toloker's responses.
 
-#### Don't use it if:
+Don't use it if:
 
 - You have a lot of response options.
 - Tolokers need to attach a file to their assignment.
@@ -43,7 +43,7 @@ The number of tasks per suite doesn't affect how the rule works. Responses are e
 
 ## Usage recommendations {#advice}
 
-#### Don't use too many response options or too many questions in the task.
+- Don't use too many response options or too many questions in the task.
 
 The more options you have, the lower the probability that **majority vote** will be calculated correctly.
 
@@ -77,7 +77,7 @@ Let's say the task Toloker has to select at least three matching categories out 
 
 Try using [decomposition](solution-architecture.md) or [control tasks](../../glossary.md#control-task). This way you can better assess the quality of your Tolokers.
 
-#### Don't set the threshold **Accept as majority** below 50% of the overlap or equal to the overlap.
+- Don't set the threshold **Accept as majority** below 50% of the overlap or equal to the overlap.
 
 If the response threshold is equal to the overlap, the rule will only use the tasks where all the Tolokers gave the same responses, ignoring tasks with mismatching votes.
 
@@ -97,11 +97,11 @@ In this case, Tolokers 1, 2, 3, and 4 responded correctly, but Toloker 5 failed.
 
 {% endcut %}
 
-#### Don't use the **majority vote** if:
+- Don't use the **majority vote** if:
 
-- You have a lot of response options.
-- Tolokers need to attach a file to their assignment.
-- Tolokers need to transcribe text or select objects in a photo, or other tasks where the Tolokers can't possibly provide the same responses.
+  - You have a lot of response options.
+  - Tolokers need to attach a file to their assignment.
+  - Tolokers need to transcribe text or select objects in a photo, or other tasks where the Tolokers can't possibly provide the same responses.
 
 ## Rule settings {#rule}
 
@@ -183,15 +183,15 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
-#### Calculating a skill and banning for incorrect responses
+### Calculating a skill and banning for incorrect responses
 
 {% list tabs %}
 
 - Correct settings
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example1_1.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example1_1.png =700x)
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example1_2.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example1_2.png =700x)
 
   Both rules work independently:
 
@@ -202,21 +202,21 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 - Incorrect settings
 
-   ![](../_images/control-rules/mvote/qcr-mvote_example-1_1.png)
+   ![](../_images/control-rules/mvote/qcr-mvote_example-1_1.png =700x)
 
-   ![](../_images/control-rules/mvote/qcr-mvote_example-1_2.png)
+   ![](../_images/control-rules/mvote/qcr-mvote_example-1_2.png =700x)
 
    The Toloker is blocked after the first incorrect response to the first, second or third task. However, the skill isn't set. Since the ban reason is not specified, there is no way to find out why the Toloker is banned.
 
 - Alternative settings
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example1a_1.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example1_1.png =700x)
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example1a_2.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example1a_2.png =700x)
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example1a_3.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example1a_3.png =700x)
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example1a_4.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example1a_4.png =700x)
 
   All rules are applied independently:
 
@@ -232,13 +232,13 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endlist %}
 
-#### Setting the skill
+### Setting the skill
 
 {% list tabs %}
 
 - Correct settings
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example2.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example1_1.png =700x)
 
   If the Toloker completes 3 tasks, the skill is set to the percentage of correct answers.
 
@@ -246,31 +246,31 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
   {% cut "Example of filter settings" %}
 
-  ![](../_images/other/qcr-control_example_filter.png)
+  ![](../_images/other/qcr-control_example_filter.png =700x)
 
   {% endcut %}
 
 - Incorrect settings
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example-2.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example-2.png =700x)
 
   This rule will never take effect because the number of responses counted (**Recent values to use**) is less than the number of responses in the rule (**number of responses**).
 
 {% endlist %}
 
-#### Blocking for incorrect responses
+### Blocking for incorrect responses
 
 {% list tabs %}
 
 - Correct settings
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example3.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example3.png =700x)
 
   If the percentage of correct responses is less than 40%, the Toloker is blocked on the project for 30 days.
 
 - Incorrect settings
 
-  ![](../_images/control-rules/mvote/qcr-mvote_example-3.png)
+  ![](../_images/control-rules/mvote/qcr-mvote_example-3.png =700x)
 
   If the percentage of correct responses is less than 40%, the Toloker is blocked on the project for 30 days. The rule will be applied once, after the fifth response.
 
