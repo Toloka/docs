@@ -10,7 +10,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. Open [Toloka for requesters]({{ yandex-toloka }}).
 
-    1. Click the **+ Create project** button.
+    1. Click **Create project**.
 
     1. In the window that opens, find the **Image classification** template and click **Select**.
 
@@ -145,7 +145,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. Save the changes.
 
-1. In the upper-right corner, click **Finish**
+1. In the upper-right corner, click **Finish**.
 
     Learn more about working with the project in the [Project](../concepts/project.md) section.
 
