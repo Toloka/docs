@@ -15,17 +15,18 @@ Creating an object from a specified array of key-value pairs.
 
 For example, let's say you have an array like this:
 
->>> [
->>>     {
->>>         "key": "foo",
->>>         "value": "hello"
->>>     },
->>>     {
->>>         "key": "bar",
->>>         "value": "world"
->>>     }
->>> ]
-...
+```python
+[
+    {
+        "key": "foo",
+        "value": "hello"
+    },
+    {
+        "key": "bar",
+        "value": "world"
+    }
+]
+```
 
 It is converted to an object whose elements consist of the values of the original array:
 `{ "foo": "hello", "bar": "world" }`

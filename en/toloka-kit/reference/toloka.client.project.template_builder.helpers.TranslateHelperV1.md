@@ -15,11 +15,12 @@ Component for translating interface elements to other languages.
 
 In the properties that should be displayed in different languages, add:
 
->>> {
->>>     "type": "helper.translate",
->>>     "key": "<key name>"
->>> }
-...
+```python
+{
+    "type": "helper.translate",
+    "key": "<key name>"
+}
+```
 
 Adding the key property displays a field for entering the key text. Enter the text in the source language. In the
 "Translations" step, add translations for the keys in the desired languages.

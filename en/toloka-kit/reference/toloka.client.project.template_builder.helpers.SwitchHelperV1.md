@@ -23,12 +23,13 @@ View example in the sandbox.
 This helper is similar to a series of If...Then...Else logical expressions, so it is useful if there are more than
 two conditions for sequential verification. If you need to check one or two conditions, use the helper.if component.
 How the helper works:
-    * The helper checks (conditions) from the array of cases objects, starting from the first one.
-    * If the condition is true (returns true), the helper returns the result (block of code) specified in the result
+
+* The helper checks (conditions) from the array of cases objects, starting from the first one.
+* If the condition is true (returns true), the helper returns the result (block of code) specified in the result
       property for the condition object in the cases array. The helper quits and subsequent conditions are not
       checked.
-    * If the condition is false (returns false), the helper checks the subsequent condition.
-    * If all conditions are false as a result of all checks, the helper returns the value specified in the default
+* If the condition is false (returns false), the helper checks the subsequent condition.
+* If all conditions are false as a result of all checks, the helper returns the value specified in the default
       property (if it is not defined, the helper returns nothing).
 
 ## Parameters Description

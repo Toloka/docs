@@ -16,25 +16,27 @@ MarkdownViewV1(
 Block for displaying text in Markdown.
 
 
-The contents of the block are written to the content property in a single line. To insert line breaks, use \n
-    Straight quotation marks (") must be escaped like this: \".
+The contents of the block are written to the content property in a single line. To insert line breaks, use `\n`.
 
-    Note that the view.markdown component is resource-intensive and might overload weak devices.
-    Do not use this component to display plain text. If you need to display text without formatting, use the view.text
-    component. If you need to insert a link, use view.link, and for an image use view.image.
-    Links with Markdown are appended with target="_blank" (the link opens in a new tab), as well as
-    rel="noopener noreferrer"
+Straight quotation marks (`"`) must be escaped like this: `\"`.
 
-    Attributes:
-        content: Text in Markdown.
+Note that the `view.markdown` component is resource-intensive and might overload weak devices.
+Do not use this component to display plain text. If you need to display text without formatting, use the `view.text`
+component. If you need to insert a link, use `view.link`, and for an image use `view.image`.
+Links with Markdown are appended with `target="_blank"` (the link opens in a new tab), as well as
+`rel="noopener noreferrer"`
 
-    Example:
-        How to add a title and description on the task interface.
+Attributes:
 
-        >>> header = tb.view.MarkdownViewV1('# Some Header:
----
-Some detailed description')
-        ...
+- `content`: Text in Markdown.
+
+**Examples:**
+
+How to add a title and description on the task interface.
+
+```python
+header = tb.view.MarkdownViewV1('# Some Header:\n---\nSome detailed description')
+```
 
 ## Parameters Description
 
