@@ -236,7 +236,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/f122o81P42UG2R)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/NyFlK-o642gTLQ)
 
 ## Add a response field {#add-text-area}
 
@@ -258,7 +258,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/WE4imhN33yh6Ww)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FuPdYTCm42gTtZ)
 
 ## Add a layout {#add-layout}
 
@@ -279,7 +279,7 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3kNUPFNe42UGkp)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1uDPJ4zp42gUQX)
 
 ## Add conditions {#dependencies}
 
@@ -364,6 +364,6 @@ The [helper.switch](../reference/helper.switch.md) component displays an additio
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1ktFRaJV42UHh8)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/2Cdpm5sU42gWEH)
 
 {% include [contact-support](../_includes/contact-support.md) %}
