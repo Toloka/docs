@@ -30,7 +30,7 @@ It allows you to select Tolokers based on a [personalized quality forecast](../.
 
 {% note info %}
 
-If there are few suitable performers, then a dash will be indicated in the **Speed** and **Quality** fields.
+If there are too few suitable Tolokers after setting up the filters, then the dash will be indicated in the **Speed** and **Quality** fields.
 
 {% endnote %}
 
