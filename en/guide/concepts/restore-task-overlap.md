@@ -28,13 +28,13 @@ To download the responses of users who are not blocked:
 
 ![](../_images/control-rules/restore-task-overlap/good-results.png)
 
-#### Don't use it if:
+Don't use it if:
 
 - You don't want to increase the overlap for tasks.
 - You don't want the final budget for pool labeling to exceed the initial budget.
 - You set up [dynamic overlap](dynamic-overlap.md). This increases the maximum overlap value.
 
-## How do I set up? {#rule}
+## How to configure {#rule}
 
 {% note alert %}
 
@@ -70,13 +70,13 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - Correct settings
 
-  #### Resending tasks from a banned Toloker
+  ### Resending tasks from a banned Toloker
 
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_1.png)
 
   If a Toloker is banned by a quality control rule, their tasks are sent for re-completion to another Toloker.
 
-  #### Resending tasks if the Toloker doesn't meet the skill filter
+  ### Resending tasks if the Toloker doesn't meet the skill filter
 
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_2.png)
 
@@ -84,13 +84,13 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - Incorrect settings
 
-  #### Resending tasks from a banned Toloker
+  ### Resending tasks from a banned Toloker
 
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_3.png)
 
   If a Toloker is banned by a quality control rule, their tasks are not sent for re-completion to another Toloker.
 
-  #### Resending tasks if the Toloker doesn't meet the skill filter
+  ### Resending tasks if the Toloker doesn't meet the skill filter
 
   ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_4.png)
 

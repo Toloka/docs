@@ -12,7 +12,7 @@ To save time, you can opt for having your control tasks edited by [Toloka expert
 
 Use control tasks to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses and [ban](../../glossary.md#banning-tolokers) Tolokers who submit incorrect responses.
 
-#### Don't use it if:
+Don't use it if:
 
 - You have a lot of response options.
 - Tolokers need to attach a file to their assignment.
@@ -29,7 +29,7 @@ The **If** and **then** fields in this rule are required. If you don't fill in a
 {% endnote %}
 
 #|
-|| Field | Overview ||
+||**Field** | **Overview**||
 ||**Recent control and training task responses to use** | The number of the Toloker's last responses to control tasks.
 
 If this field is not filled in, the calculation includes only control task responses in the pool to which the rule applies.
@@ -69,7 +69,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
 |#
 
-## Examples of rules {#examples}
+## Examples {#examples}
 
 **Purpose**: filter out Tolokers who often make mistakes.
 

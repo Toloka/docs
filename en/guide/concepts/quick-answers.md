@@ -16,7 +16,7 @@ To estimate the time required to complete a task suite:
 
 - Look up the **Average assignment completion time** in [pool statistics](pool_statistic-pool.md#avgtime) if the tasks are already running.
 
-## How do I set it up? {#rule}
+## How to configure {#rule}
 
 #|
 || **Field** | **Overview**||
@@ -50,9 +50,9 @@ To add multiple conditions, click ![](../_images/add.svg).||
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
 |#
 
-## Examples of rules {#examples}
+## Examples {#examples}
 
-**Task**: you noticed that the pool closed too quickly and the final result was unsatisfactory. To prevent this from happening again, you decided to filter out Tolokers who complete tasks too quickly.
+You noticed that the pool closed too quickly and the final result was unsatisfactory. To prevent this from happening again, you decided to filter out Tolokers who complete tasks too quickly.
 
 Examples are provided for simple [classification](../tutorials/image-classification.md). There are 10 tasks per suite.
 
@@ -62,7 +62,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endnote %}
 
-#### Blocking for fast responses
+### Blocking for fast responses
 
 {% list tabs %}
 
@@ -80,7 +80,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endlist %}
 
-#### Suspension in the pool for fast responses
+### Suspension in the pool for fast responses
 
 ![](../_images/control-rules/quick-answers/qcr-quick_answers_example2.png)
 

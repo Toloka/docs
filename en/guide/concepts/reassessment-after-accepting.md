@@ -19,7 +19,7 @@ This rule is helpful when you need to:
 
     If you've reviewed and accepted a task, it may not make sense for other Tolokers to also complete it. To avoid this, you can reduce the overlap for accepted assignments only.
 
-## Rule settings {#rule}
+## How to configure {#rule}
 
 {% note warning %}
 
@@ -59,7 +59,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 - **reduce overlap by** — Decrease the number of times a task suite can be completed by Tolokers. For example, use this action to cancel the recompletion of accepted assignments.||
 |#
 
-## Rule example {#examples}
+## Examples {#examples}
 
 The task is to send rejected and recompleted assignments for review. Or assign them to new Tolokers after rejection.
 

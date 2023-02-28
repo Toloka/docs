@@ -40,9 +40,11 @@ To learn more about how this field works, go to [“Remember values” parameter
 To add multiple conditions, click ![](../_images/add.svg).||
 ||**then** | Action to perform for the condition **If**:
 
-- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-
 - **assign skill value** — Assign a fixed value to the [skill](nav.md).
+
+- **assign skill from the field** — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.
+
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
@@ -50,12 +52,10 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
-
-- **assign skill from the field** — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.||
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.||
 |#
 
-## Examples of rules {#examples}
+## Examples {#examples}
 
 You understand that the Toloker didn't complete your tasks well enough. You can block this Toloker's access to tasks that you're going to do yourself.
 

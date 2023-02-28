@@ -16,7 +16,7 @@ Restrict access to [pool](../../glossary.md#pool) tasks for Tolokers who skip mu
 
 - Tasks must be performed in order and skipping tasks may affect the quality.
 
-#### Don't use it if:
+Don't use it if:
 
 - There aren't very many tasks in the pools. For example, if a task is a survey on a single page and the Toloker skips this page, they will no longer be able to perform tasks in the pool, which means there is no need to ban them.
 
@@ -33,7 +33,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 {% endnote %}
 
 #|
-|| Field  | Overview||
+||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **task suites skipped in a row** — The number of task suites skipped in a row.||
@@ -52,7 +52,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 - **assign skill value** — Assign a fixed value to the [skill](nav.md).||
 |#
 
-## Rule example {#examples}
+## Examples {#examples}
 
 **Task**: you're conducting an opinion poll. For the results to be accurate, the Toloker must answer most of the questions.
 
