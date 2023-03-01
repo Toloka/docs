@@ -85,6 +85,9 @@ To create a project, follow the instructions:
 
     1. Click **Finish**.
 
+1. {% include [personal-data](../_includes/toloka-requester-source/id-toloka-requester-source/personal-data.md) %}
+
+
 After creating the project, add a [task pool](pool-main.md) to it. You can also set up [quality control](control.md) in the project.
 
 {% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}

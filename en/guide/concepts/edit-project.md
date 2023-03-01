@@ -62,6 +62,10 @@ This field should contain formatted text with images, links, and tables if they'
 
 Learn more about how to write good [instructions](instruction.md).
 
+#### Personal data policy
+
+{% include [personal-data](../_includes/toloka-requester-source/id-toloka-requester-source/personal-data.md) %}
+
 #### Translations
 
 If you want labeling to be done by Tolokers from different countries, you can [translate your project into their native languages](project-languages.md).
