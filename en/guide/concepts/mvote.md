@@ -99,9 +99,11 @@ Don't use it if:
 
 - Don't use the **majority vote** if:
 
-  - You have a lot of response options.
-  - Tolokers need to attach a file to their assignment.
-  - Tolokers need to transcribe text or select objects in a photo, or other tasks where the Tolokers can't possibly provide the same responses.
+    - You have a lot of response options.
+
+    - Tolokers need to attach a file to their assignment.
+
+    - Tolokers need to transcribe text or select objects in a photo, or other tasks where the Tolokers can't possibly provide the same responses.
 
 ## Rule settings {#rule}
 

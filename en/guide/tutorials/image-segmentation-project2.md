@@ -24,57 +24,57 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     - Template Builder
 
-        1. You can use it for this project with pre-configured validation and task layout.
+      1. You can use it for this project with pre-configured validation and task layout.
 
-            The Toloker won't be able to submit a response without selecting an area in an image.
+          The Toloker won't be able to submit a response without selecting an area in an image.
 
-            For more information about the template and its settings, see [Object selection in an image](../../template-builder/operations/select-areas.md) in the Template Builder Help.
+          For more information about the template and its settings, see [Object selection in an image](../../template-builder/operations/select-areas.md) in the Template Builder Help.
 
-        1. To see the input and output data fields, click **Show specifications** in the **Data specification** section.
+      1. To see the input and output data fields, click **Show specifications** in the **Data specification** section.
 
-            - Input data field: `image` — A link to an image.
+          - Input data field: `image` — A link to an image.
 
-            - Output data field: `result` — The field that will contain the information about the labeled image after it is uploaded.
+          - Output data field: `result` — The field that will contain the information about the labeled image after it is uploaded.
 
     - HTML/CSS/JS editor
 
-        1. In **Task interface**, leave the **HTML** block unchanged.
+      1. In **Task interface**, leave the **HTML** block unchanged.
 
-        1. Edit the **CSS** block:
+      1. Edit the **CSS** block:
 
-            1. Set up the area selection tools. This template uses [Editor for image area selection](../concepts/t-components/image-annotation.md). It features rectangle and polygon tools (by default).
+          1. Set up the area selection tools. This template uses [Editor for image area selection](../concepts/t-components/image-annotation.md). It features rectangle and polygon tools (by default).
 
-                To set up rectangle selection, replace the code in the **CSS** block with the following:
+              To set up rectangle selection, replace the code in the **CSS** block with the following:
 
-                ```css
-                .image-annotation-editor__shape-polygon {
-                display: none;
-                }
-                ```
+              ```css
+              .image-annotation-editor__shape-polygon {
+              display: none;
+              }
+              ```
 
-            1. Enter the code to adjust the interface height to the image size:
+          1. Enter the code to adjust the interface height to the image size:
 
-                ```css
-                .image-annotation-editor__annotation-layer {
-                height: max-content;
-                }
-                ```
+              ```css
+              .image-annotation-editor__annotation-layer {
+              height: max-content;
+              }
+              ```
 
-            1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
+          1. **(optional)** You can ask Tolokers to enter an annotation for the selected area or select one from a list. To do this, add an interface element in the **JS** block. For example, a text field or drop-down list.
 
-                Learn more about [annotation](../concepts/t-components/image-annotation.md#annotation).
+              Learn more about [annotation](../concepts/t-components/image-annotation.md#annotation).
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
+      1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
-            {% note info %}
+          {% note info %}
 
-            The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+          The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
 
-            {% endnote %}
+          {% endnote %}
 
-        1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+      1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
 
-        1. Exit preview mode. In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+      1. Exit preview mode. In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
 
     {% endlist %}
 

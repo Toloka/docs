@@ -28,103 +28,103 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     - Template Builder
 
-        1. The task interface describes how the elements should be arranged in the task.
+      1. The task interface describes how the elements should be arranged in the task.
 
-            The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
+          The template has pre-configured validation. The Toloker won't be able to submit a response without selecting one of the options.
 
-            For more information, see the Template Builder Help:
+          For more information, see the Template Builder Help:
 
-            - [Setting up conditions](../../template-builder/best-practices/conditions.md).
-            - [Image classification](../../template-builder/templates/image-classification.md) template.
+          - [Setting up conditions](../../template-builder/best-practices/conditions.md).
+          - [Image classification](../../template-builder/templates/image-classification.md) template.
 
-        1. On the **Configuration** panel, replace lines 19 to 28 in the code:
+      1. On the **Configuration** panel, replace lines 19 to 28 in the code:
 
-            ```json
-            "label": "What is the cat's mood?",
-            "options": [
-            {
-            "label": "Good",
-            "value": "ok"
-            },
-            {
-            "label": "Bad",
-            "value": "bad"
-            },
-            ```
+          ```json
+          "label": "What is the cat's mood?",
+          "options": [
+          {
+          "label": "Good",
+          "value": "ok"
+          },
+          {
+          "label": "Bad",
+          "value": "bad"
+          },
+          ```
 
-            with:
+          with:
 
-            ```json
-            "label": "Are there traffic signs in the picture?",
-            "options": [
-            {
-            "label": "Yes",
-            "value": "ok"
-            },
-            {
-            "label": "No",
-            "value": "bad"
-            },
-            ```
+          ```json
+          "label": "Are there traffic signs in the picture?",
+          "options": [
+          {
+          "label": "Yes",
+          "value": "ok"
+          },
+          {
+          "label": "No",
+          "value": "bad"
+          },
+          ```
 
-        1. Click **Show specifications** to see the input and output data fields.
+      1. Click **Show specifications** to see the input and output data fields.
 
-           Input data fields are created from the code on the **Example of input data** tab.
+         Input data fields are created from the code on the **Example of input data** tab.
 
-           The output data fields depend on the components that use `data.output` and values supported by it.
+         The output data fields depend on the components that use `data.output` and values supported by it.
 
-           Learn more about [input and output data fields](../../template-builder/operations/create-specs.md) in the Template Builder Help.
+         Learn more about [input and output data fields](../../template-builder/operations/create-specs.md) in the Template Builder Help.
 
-           - Input data field: `image` — A link to an image.
+         - Input data field: `image` — A link to an image.
 
-                Change the data type to string to add links to your files.
+              Change the data type to string to add links to your files.
 
-           - Output data field: `result` — string for saving the Toloker's response.
+         - Output data field: `result` — string for saving the Toloker's response.
 
-                {% cut "What are input and output data?" %}
+              {% cut "What are input and output data?" %}
 
-                **Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
+              **Input data** is types of objects that are passed to the Toloker for completing the task. For example, this could be a text, an image, or geographic coordinates.
 
-                **Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
+              **Output data** is types of objects that you receive after the task is completed. For example, this could be one of several response options, typed text, or an uploaded file.
 
-                If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
+              If you add interface elements to the task template, the corresponding fields in the **Data specification** block will be created automatically.
 
-                {% endcut %}
+              {% endcut %}
 
     - HTML/CSS/JS editor
 
-        1. Edit the **HTML** block in the **Task interface**.
+      1. Edit the **HTML** block in the **Task interface**.
 
-            1. After the line with the image, enter the question:
+          1. After the line with the image, enter the question:
 
-                `<div>Are there <b>traffic signs</b> in the picture?<div>`
+              `<div>Are there <b>traffic signs</b> in the picture?<div>`
 
-            1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
+          1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-                ```plaintext
-                {{img src=image width="100%" height="400px"}}
-                <div>Are there <b>traffic signs</b> in the picture?<div>
+              ```plaintext
+              {{img src=image width="100%" height="400px"}}
+              <div>Are there <b>traffic signs</b> in the picture?<div>
 
-                {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-                {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-                {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
-                ```
+              {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
+              {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
+              {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
+              ```
 
-        1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
+      1. Leave the **JS**, **CSS**, and **Data specification** blocks unchanged.
 
-            To learn more about specifications, see the [Input and output data](../concepts/incoming.md) page.
+          To learn more about specifications, see the [Input and output data](../concepts/incoming.md) page.
 
-        1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
+      1. Click the ![](../_images/tutorials/image-segmentation/preview-button.svg) **Preview task** button to view the task.
 
-            {% note info %}
+          {% note info %}
 
-            The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
+          The project preview shows one task with standard data. You can define the number of tasks to show on the page later.
 
-            {% endnote %}
+          {% endnote %}
 
-        1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
+      1. In the window that opens, check if the task options work correctly. In the lower-right corner, click **Submit**.
 
-        1. Exit preview mode. In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
+      1. Exit preview mode. In the lower-left corner, click **Exit**. If there were errors when testing, check the code blocks that you entered.
 
    {% endlist %}
 

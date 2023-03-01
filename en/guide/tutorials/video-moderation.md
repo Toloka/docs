@@ -180,24 +180,24 @@ Before you begin:
 
         - A prepared dataset
 
-            1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+          1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-                For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:video`, and the values are links to the video clips.
+              For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:video`, and the values are links to the video clips.
 
-                ```plaintext
-                INPUT:video
-                https://yang.s3.yandex.net/finger gestures/20210723_113648.mp4
-                https://yang.s3.yandex.net/finger gestures/20210723_113736.mp4
-                https://yang.s3.yandex.net/finger gestures/20210723_113521.mp4
-                ```
+              ```plaintext
+              INPUT:video
+              https://yang.s3.yandex.net/finger gestures/20210723_113648.mp4
+              https://yang.s3.yandex.net/finger gestures/20210723_113736.mp4
+              https://yang.s3.yandex.net/finger gestures/20210723_113521.mp4
+              ```
 
-            1. Open the downloaded file, and replace the sample links with links to your video clips.
+          1. Open the downloaded file, and replace the sample links with links to your video clips.
 
-            1. Click **Select prepared dataset**, and upload the file you’ve just made.
+          1. Click **Select prepared dataset**, and upload the file you’ve just made.
 
         - Media files
 
-            {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+          {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
         {% endlist %}
 

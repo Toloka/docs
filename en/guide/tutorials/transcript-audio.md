@@ -182,24 +182,24 @@ Before you begin:
 
         - A prepared dataset
 
-            1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+          1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-                For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio files.
+              For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:audio`, and the values are links to the audio files.
 
-                ```plaintext
-                INPUT:audio
-                https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_068.wav
-                https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_095.wav
-                https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_293.wav
-                ```
+              ```plaintext
+              INPUT:audio
+              https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_068.wav
+              https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_095.wav
+              https://tlk.s3.yandex.net/ext_dataset/noisy_speech/noisy_tested_wav/p257_293.wav
+              ```
 
-            1. Open the downloaded file, and replace the sample links with links to your audio files.
+          1. Open the downloaded file, and replace the sample links with links to your audio files.
 
-            1. Click **Select prepared dataset**, and upload the file you’ve just made.
+          1. Click **Select prepared dataset**, and upload the file you’ve just made.
 
         - Media files
 
-            {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+          {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
         {% endlist %}
 

@@ -345,63 +345,63 @@ You can check the results in two ways:
 
 - Review assignments in the results file
 
-    1. In the text or spreadsheet editor, open the file you received after aggregating the results.
+  1. In the text or spreadsheet editor, open the file you received after aggregating the results.
 
-    1. Prepare the file:
+  1. Prepare the file:
 
-        1. Add a column named `ACCEPT:verdict` with the review results.
+      1. Add a column named `ACCEPT:verdict` with the review results.
 
-        1. Add a column named `ACCEPT:comment` with comments for Tolokers if responses were rejected. For example, comment on which part of the instructions wasn't followed.
+      1. Add a column named `ACCEPT:comment` with comments for Tolokers if responses were rejected. For example, comment on which part of the instructions wasn't followed.
 
-        1. Rename the `INPUT:assignment_id` column to `ASSIGNMENT:assignment_id`.
+      1. Rename the `INPUT:assignment_id` column to `ASSIGNMENT:assignment_id`.
 
-    1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
+  1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
 
-        - If the aggregate result of the assignment is OK, put `+` to accept it.
+      - If the aggregate result of the assignment is OK, put `+` to accept it.
 
-        - If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Enter the reason for rejecting the task in the `ACCEPT:comment:` field, for example, `The object isn't selected or is selected incorrectly.`
+      - If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Enter the reason for rejecting the task in the `ACCEPT:comment:` field, for example, `The object isn't selected or is selected incorrectly.`
 
-        {% note tip %}
+      {% note tip %}
 
-        You can use the awk commands to outline images on Linux and MacOS devices:
+      You can use the awk commands to outline images on Linux and MacOS devices:
 
-        ```shell
-        awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
-        ```
+      ```shell
+      awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
+      ```
 
-        {% endnote %}
+      {% endnote %}
 
-    1. Delete all the other columns.
+  1. Delete all the other columns.
 
-    1. Save the file in `TSV` format.
+  1. Save the file in `TSV` format.
 
-    1. Open the pool page in [project 2](image-segmentation-project2.md).
+  1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-    1. Click **Review assignments**.
+  1. Click **Review assignments**.
 
-    1. Click **Upload results**.
+  1. Click **Upload results**.
 
-    1. In the window that opens, choose the results file you want to upload and click **Open**.
+  1. In the window that opens, choose the results file you want to upload and click **Open**.
 
-    1. In the window that opens, compare the number of tasks in the **Processed successfully** and **Total submitted** fields on the pool page.
+  1. In the window that opens, compare the number of tasks in the **Processed successfully** and **Total submitted** fields on the pool page.
 
-    1. Click **Add**.
+  1. Click **Add**.
 
-    1. In the window that opens, click **Close**.
+  1. In the window that opens, click **Close**.
 
-    1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the **Recompletion of the rejected tasks** option.
+  1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the **Recompletion of the rejected tasks** option.
 
-        In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
+      In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
 
 - Review assignments in the pool interface
 
-    1. Open the pool page in [project 2](image-segmentation-project2.md).
+  1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-    1. Click **View assignments**.
+  1. Click **View assignments**.
 
-    1. Hover over the line of the assignment you want to check.
+  1. Hover over the line of the assignment you want to check.
 
-    1. In the **Status** column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
+  1. In the **Status** column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
 
 {% endlist %}
 
