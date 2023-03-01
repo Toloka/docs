@@ -1,6 +1,6 @@
-If your project collects any personal data, enable the **This project collects personal data from Tolokers** option.
+If your project collects any personal data, turn on the **This project collects personal data from Tolokers** option.
 
-   Provide information about the company collecting personal data and how the data will be used:
+   Provide information about the company in the **Personal data policy** section:
 
    1. Enter  **Requester's name**, **Legal address** and an **Email**;
 
