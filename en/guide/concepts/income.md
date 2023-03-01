@@ -33,11 +33,11 @@ All fields in this rule are required. If you don't fill in at least one of them,
 {% endnote %}
 
 #|
-|| **Field** | **Overview** ||
+||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **earned in last 24 hours** — The Toloker's earnings for [completed tasks](../../glossary.md#completed-tasks) in the pool over the last 24 hours.||
-||**then** | Action to perform for the condition:
+||**then** | Action to perform for the **If** condition:
 
 - **assign skill value** — Assign a fixed value to the [skill](nav.md).
 
@@ -60,9 +60,9 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ## Examples {#examples}
 
-**Task**: you're conducting a sociological survey. To collect responses from as many Tolokers as possible, set up the **earnings** rule.
+Task: you're conducting a sociological survey. To collect responses from as many Tolokers as possible, set up the **earnings** rule.
 
-![](../_images/control-rules/income/qcr-income_example1.png)
+![](../_images/control-rules/income/qcr-income_example1.png =700x)
 
 If the Toloker's earnings exceed 5 dollars in the last 24 hours, they lose access to the pool and can't complete your tasks.
 

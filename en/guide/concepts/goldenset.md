@@ -52,7 +52,7 @@ If the field is filled in, the corresponding number of control task responses is
 - **incorrect control responses (%)** — The percentage of incorrect responses in control tasks (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||**then** | Action to perform for the condition:
+||**then** | Action to perform for the **If** condition:
 
 - **assign skill from the field** — Save the percentage of the Toloker's correct responses in control tasks as a skill value.
 
@@ -71,7 +71,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 ## Examples {#examples}
 
-**Purpose**: filter out Tolokers who often make mistakes.
+Purpose: filter out Tolokers who often make mistakes.
 
 Solutions:
 
@@ -87,7 +87,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endnote %}
 
-#### Ban Tolokers based on control tasks and the percentage of correct responses
+### Ban Tolokers based on control tasks and the percentage of correct responses {#qcr-control_example1}
 
 {% list tabs %}
 
@@ -137,7 +137,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endlist %}
 
-#### Set a skill and deny access to Tolokers with a low skill level
+### Set a skill and deny access to Tolokers with a low skill level {#nav}
 
 Skills help identify how well Tolokers do your tasks. You can ban Tolokers with low skill levels from completing tasks in your pool or project.
 
@@ -163,7 +163,7 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 
 {% endlist %}
 
-#### Ban Tolokers if their percentage of correct responses to control tasks is less than 40%
+### Ban Tolokers if their percentage of correct responses to control tasks is less than 40% {#qcr-control_example3}
 
 {% list tabs %}
 

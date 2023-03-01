@@ -23,10 +23,11 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 To download the responses of users who are not blocked:
 
 1. On the pool page, click **Download results** on the right.
-1. Select **Exclude assignments by banned Tolokers**.
-1. Click **Download results**.
+1. Click **Additional options**.
+1. Turn off the **Include responses from banned Tolokers** option.
+1. Click **Download**.
 
-![](../_images/control-rules/restore-task-overlap/good-results.png)
+![](../_images/control-rules/restore-task-overlap/good-results.png =700x)
 
 Don't use it if:
 
@@ -43,7 +44,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 {% endnote %}
 
 #|
-|| **Field** | **Overview**||
+||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **Toloker banned** — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), or [skipping tasks](../../glossary.md#skipping-tasks)).
@@ -64,7 +65,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 ## Examples {#examples}
 
-**Task**: classify photos for a dataset across different categories. If a Toloker is banned by a quality control rule (for example, [fast resposes](quick-answers.md)) or no longer matches the skill, their responses aren't counted and their tasks are sent for re-completion to another Toloker.
+Task: classify photos for a dataset across different categories. If a Toloker is banned by a quality control rule (for example, [fast resposes](quick-answers.md)) or no longer matches the skill, their responses aren't counted and their tasks are sent for re-completion to another Toloker.
 
 {% list tabs %}
 
@@ -72,13 +73,13 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
   ### Resending tasks from a banned Toloker
 
-  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_1.png)
+  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_1.png =700x)
 
   If a Toloker is banned by a quality control rule, their tasks are sent for re-completion to another Toloker.
 
   ### Resending tasks if the Toloker doesn't meet the skill filter
 
-  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_2.png)
+  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_2.png =700x)
 
   If the Toloker no longer meets the requirements of the skill filter and their responses aren't taken into account, their tasks are sent for re-completion to another Toloker.
 
@@ -86,13 +87,13 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
   ### Resending tasks from a banned Toloker
 
-  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_3.png)
+  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_3.png =700x)
 
   If a Toloker is banned by a quality control rule, their tasks are not sent for re-completion to another Toloker.
 
   ### Resending tasks if the Toloker doesn't meet the skill filter
 
-  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_4.png)
+  ![](../_images/control-rules/restore-task-overlap/qcr-banned_users_reassessment_example_4.png =700x)
 
   If the Toloker no longer meets the requirements of the skill filter and their responses aren't taken into account, their tasks are not sent for re-completion to another Toloker.
 

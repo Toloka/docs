@@ -14,12 +14,12 @@ To estimate the time required to complete a task suite:
 
 - [Complete a task in the sandbox](sandbox.md#self), if you didn't start the tasks yet.
 
-- Look up the **Average assignment completion time** in [pool statistics](pool_statistic-pool.md#avgtime) if the tasks are already running.
+- Look up the **Average assignment submit time** in [pool statistics](pool_statistic-pool.md) if the tasks are already running.
 
 ## How to configure {#rule}
 
 #|
-|| **Field** | **Overview**||
+||**Field** | **Overview**||
 ||**Recent task suites to use** | The number of recent assignments submitted by the Toloker.
 
 If this field is not filled in, the calculation includes only recent task suites from the pool to which the rule applies.
@@ -35,7 +35,7 @@ To learn more about how this field works, go to [Parameter "Remember values"](re
 - **number of fast responses** — Allowed number of fast responses (out of the recent ones).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||**then** | Action to perform for the condition:
+||**then** | Action to perform for the **If** condition:
 
 - **assign skill value** — Assign a fixed value to the Toloker's [skill](nav.md).
 
@@ -68,13 +68,13 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 - Correct settings
 
-  ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1.png)
+  ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1.png =700x)
 
   A Toloker who completes a task suite in less than 10 seconds will be banned and won't be able to access your tasks.
 
 - Incorrect settings
 
-  ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1_1.png)
+  ![](../_images/control-rules/quick-answers/qcr-quick_answers_example1_1.png =700x)
 
   This rule will never take effect because the number of responses counted (**Recent task suites to use**) is less than the number of recent responses in the rule (**number of responses**).
 
@@ -82,7 +82,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 ### Suspension in the pool for fast responses
 
-![](../_images/control-rules/quick-answers/qcr-quick_answers_example2.png)
+![](../_images/control-rules/quick-answers/qcr-quick_answers_example2.png =700x)
 
 A Toloker who completes two task suites in less than 20 seconds is suspended from accessing the pool and can't complete your tasks for 10 days.
 
