@@ -28,6 +28,12 @@ It allows you to select Tolokers based on a [personalized quality forecast](../.
 
   {% endcut %}
 
+{% note info %}
+
+If there are too few Tolokers who match the filters, the platform will display no values in the **Speed** and **Quality** fields replacing them with dashes.
+
+{% endnote %}
+
 ## How does it work? {#how-it-works}
 
 A personalized quality forecast is based on a large amount of data about user behavior in the system, how other Tolokers completed your task, and the task itself. Based on this data, we predict in real time how well each particular user will handle your task. We select top-rated Tolokers by comparing quality forecasts for all Tolokers.

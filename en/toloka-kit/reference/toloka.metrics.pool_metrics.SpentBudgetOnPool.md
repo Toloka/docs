@@ -1,5 +1,5 @@
 # SpentBudgetOnPool
-`toloka.metrics.pool_metrics.SpentBudgetOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/pool_metrics.py#L330)
+`toloka.metrics.pool_metrics.SpentBudgetOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/pool_metrics.py#L342)
 
 ```python
 SpentBudgetOnPool(
@@ -32,8 +32,12 @@ def print_metric(metric_dict):
 collector = MetricCollector([SpentBudgetOnPool(pool_id, toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+
+```python
+{
     'spent_money': [(datetime.datetime(2021, 11, 18, 9, 36, 34, 163000), Decimal('0.3'))],
 }
+```
 ## Methods Summary
 
 | Method | Description |

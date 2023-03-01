@@ -1,5 +1,5 @@
 # clone_training
-`toloka.client.TolokaClient.clone_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L1802)
+`toloka.client.TolokaClient.clone_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1817)
 
 ```python
 clone_training(self, training_id: str)

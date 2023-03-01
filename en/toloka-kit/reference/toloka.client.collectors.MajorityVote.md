@@ -1,5 +1,5 @@
 # MajorityVote
-`toloka.client.collectors.MajorityVote` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/collectors.py#L401)
+`toloka.client.collectors.MajorityVote` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/collectors.py#L401)
 
 ```python
 MajorityVote(

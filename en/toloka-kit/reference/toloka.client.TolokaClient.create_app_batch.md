@@ -1,5 +1,5 @@
 # create_app_batch
-`toloka.client.TolokaClient.create_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L3906)
+`toloka.client.TolokaClient.create_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3921)
 
 Creates a batch with task items in an App project in Toloka.
 

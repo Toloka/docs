@@ -1,5 +1,5 @@
 # TaskSuite
-`toloka.client.task_suite.TaskSuite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/task_suite.py#L20)
+`toloka.client.task_suite.TaskSuite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/task_suite.py#L20)
 
 ```python
 TaskSuite(

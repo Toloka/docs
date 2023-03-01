@@ -1,5 +1,5 @@
 # get_user
-`toloka.client.TolokaClient.get_user` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L3325)
+`toloka.client.TolokaClient.get_user` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3340)
 
 ```python
 get_user(self, user_id: str)

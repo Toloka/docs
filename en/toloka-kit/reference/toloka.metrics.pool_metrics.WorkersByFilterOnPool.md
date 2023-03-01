@@ -1,5 +1,5 @@
 # WorkersByFilterOnPool
-`toloka.metrics.pool_metrics.WorkersByFilterOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/pool_metrics.py#L374)
+`toloka.metrics.pool_metrics.WorkersByFilterOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/pool_metrics.py#L389)
 
 ```python
 WorkersByFilterOnPool(
@@ -34,8 +34,12 @@ def print_metric(metric_dict):
 collector = MetricCollector([WorkersByFilterOnPool(pool_id, toloka_client=toloka_client)], print_metric)
 asyncio.run(collector.run())
 ```
+
+```python
+{
     'workers_count': [(datetime.datetime(2021, 11, 18, 9, 36, 34, 163000), 2697)],
 }
+```
 ## Methods Summary
 
 | Method | Description |

@@ -1,17 +1,17 @@
 # get_project
-`toloka.client.TolokaClient.get_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L1136)
+`toloka.client.TolokaClient.get_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1147)
 
 ```python
 get_project(self, project_id: str)
 ```
 
-Reads one specific project
+Gets project data from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`project_id`|**str**|<p>ID of the project.</p>
+`project_id`|**str**|<p>The ID of the project.</p>
 
 * **Returns:**
 

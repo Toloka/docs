@@ -1,5 +1,5 @@
 # start_app_batch
-`toloka.async_client.client.AsyncTolokaClient.start_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.start_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async start_app_batch(

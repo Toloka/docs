@@ -1,5 +1,5 @@
 # archive_pool
-`toloka.async_client.client.AsyncTolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async archive_pool(self, pool_id: str)

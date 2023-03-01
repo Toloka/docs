@@ -1,5 +1,5 @@
 # NewMessageThreads
-`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/metrics.py#L342)
+`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L353)
 
 ```python
 NewMessageThreads(
@@ -52,6 +52,9 @@ collector = MetricCollector
 )
 asyncio.run(collector.run())
 ```
+
+```python
+{
     # all messages in all projects and pools
     'messages_count': [(datetime.datetime(2021, 11, 19, 9, 40, 15, 970000), 10)],
     # messages on this exact pool
@@ -62,6 +65,7 @@ asyncio.run(collector.run())
     # total count != sum of other counts, because could exist different pools and projects
     'checking_proj': [(datetime.datetime(2021, 11, 19, 12, 42, 50, 554830), 1)],
 }
+```
 ## Methods Summary
 
 | Method | Description |

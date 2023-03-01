@@ -1,5 +1,5 @@
 # TransformHelperV1
-`toloka.client.project.template_builder.helpers.TransformHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/helpers.py#L248)
+`toloka.client.project.template_builder.helpers.TransformHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L257)
 
 ```python
 TransformHelperV1(

@@ -58,6 +58,8 @@ items:
         items:
           - name: Searching for product characteristics
             href: ../template-builder/templates/data-search.md
+          - name: Product photo search
+            href: ../template-builder/templates/product-photo-search.md
       - name: Surveys
         items:
           - name: Survey

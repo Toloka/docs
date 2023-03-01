@@ -1,5 +1,5 @@
 # RunState
-`toloka.streaming.pipeline.Pipeline.RunState` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/streaming/pipeline.py#L255)
+`toloka.streaming.pipeline.Pipeline.RunState` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/pipeline.py#L255)
 
 ```python
 RunState(

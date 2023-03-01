@@ -1,21 +1,28 @@
 # get_user_bonuses
-`toloka.client.TolokaClient.get_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/__init__.py#L3081)
+`toloka.client.TolokaClient.get_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3096)
 
 Finds all Tolokers' rewards that match certain rules and returns them in an iterable object
 
 
 `get_user_bonuses` returns a generator. You can iterate over all found Tolokers' rewards using the generator. Several requests to the Toloka server are possible while iterating.
 
- If you need to sort rewards use the [find_user_bonuses](toloka.client.TolokaClient.find_user_bonuses.md) method.
+If you need to sort rewards use the [find_user_bonuses](toloka.client.TolokaClient.find_user_bonuses.md) method.
 
- Args:
-     request: Search criteria.
-     batch_size: Returned Tolokers' rewards limit for each request. The maximum allowed batch_size is 300.
+Args:
 
- Yields:
-     UserBonus: The next matching Toloker's reward.
+- `request`: Search criteria.
+- `batch_size`: Returned Tolokers' rewards limit for each request. The maximum allowed `batch_size` is 300.
 
- Example:
-     >>> bonuses = list(toloka_client.get_user_bonuses(created_lt='2021-06-01T00:00:00'))
-     ...
+* **Returns:**
 
+  The next matching Toloker's reward.
+
+* **Return type:**
+
+  [UserBonus](toloka.client.user_bonus.UserBonus.md)
+
+**Examples:**
+
+```python
+bonuses = list(toloka_client.get_user_bonuses(created_lt='2021-06-01T00:00:00'))
+```

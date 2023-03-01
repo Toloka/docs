@@ -1,5 +1,5 @@
 # NewUserSkills
-`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/metrics/metrics.py#L259)
+`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L267)
 
 ```python
 NewUserSkills(
@@ -46,9 +46,13 @@ collector = MetricCollector
 )
 asyncio.run(collector.run())
 ```
+
+```python
+{
     'count': [(datetime.datetime(2021, 11, 18, 8, 31, 54, 11000), 1)],
     'values':  [(datetime.datetime(2021, 11, 18, 8, 31, 54, 11000), Decimal('50.000000000000'))],
 }
+```
 ## Methods Summary
 
 | Method | Description |

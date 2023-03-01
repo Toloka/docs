@@ -1,5 +1,5 @@
 # SpecClassIdentificationError
-`toloka.client.exceptions.SpecClassIdentificationError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/exceptions.py#L27)
+`toloka.client.exceptions.SpecClassIdentificationError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/exceptions.py#L27)
 
 ```python
 SpecClassIdentificationError(

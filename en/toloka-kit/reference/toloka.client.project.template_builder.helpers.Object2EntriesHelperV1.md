@@ -1,5 +1,5 @@
 # Object2EntriesHelperV1
-`toloka.client.project.template_builder.helpers.Object2EntriesHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/template_builder/helpers.py#L117)
+`toloka.client.project.template_builder.helpers.Object2EntriesHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L120)
 
 ```python
 Object2EntriesHelperV1(
@@ -14,11 +14,17 @@ Creating an array of key-value pairs from the specified object.
 
 
 For example, let's say you have an object that looks like this:
+
+```python
 {
     "foo": "hello",
     "bar": "world"
 }
+```
+
 It will be converted to an array whose objects will pair data from the source object and their designations:
+
+```python
 [
     {
         "key": "foo",
@@ -29,6 +35,7 @@ It will be converted to an array whose objects will pair data from the source ob
         "value": "world"
     }
 ]
+```
 
 ## Parameters Description
 

@@ -1,11 +1,11 @@
 # ProjectStatus
-`toloka.client.project.Project.ProjectStatus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.3/src/client/project/__init__.py#L128)
+`toloka.client.project.Project.ProjectStatus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/__init__.py#L128)
 
-Project status:
+A project status.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`ACTIVE`|'ACTIVE'|<p>A project is active</p>
-`ARCHIVED`|'ARCHIVED'|<p>A project is archived</p>
+`ACTIVE`|'ACTIVE'|<p>The project is active.</p>
+`ARCHIVED`|'ARCHIVED'|<p>The project is archived.</p>
