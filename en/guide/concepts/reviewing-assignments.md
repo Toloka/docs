@@ -21,8 +21,8 @@ The **If** and **then** fields in this rule are required. If you don't fill in a
 {% endnote %}
 
 #|
-|| **Field** | **Overview** ||
-||**Recent values to use** | How many recent responses from the Toloker to use.
+||**Field** | **Overview**||
+||**Recent tasks to use** | How many recent responses from the Toloker to use.
 
 If this field is not filled in, the calculation includes only task responses from the pool to which the rule is applied.
 
@@ -38,11 +38,13 @@ To learn more about how this field works, go to [“Remember values” parameter
 - **rejected responses (%)** — The percentage of the Toloker's assignments that were rejected (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||**then** | Action to perform for the condition **If**:
-
-- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
+||**then** | Action to perform for the **If** condition:
 
 - **assign skill value** — Assign a fixed value to the [skill](nav.md).
+
+- **assign skill from the field** — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.
+
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
@@ -50,12 +52,10 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
-
-- **assign skill from the field** — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.||
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.||
 |#
 
-## Examples of rules {#examples}
+## Examples {#examples}
 
 You understand that the Toloker didn't complete your tasks well enough. You can block this Toloker's access to tasks that you're going to do yourself.
 
@@ -73,13 +73,13 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 - Correct settings
 
-  ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example1.png)
+  ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example1.png =700x)
 
   If more than 50% of Toloker's responses are rejected, the Toloker is blocked and can't complete your tasks for 15 days.
 
 - Incorrect settings
 
-  ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example_1.png)
+  ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example_1.png =700x)
 
   The Toloker is blocked after the first rejected response, because the number of the reviewed tasks is not specified.
 
@@ -87,13 +87,13 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ### Setting the skill
 
-![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example2.png)
+![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example2.png =700x)
 
 After 3 tasks are reviewed, the skill is set to the percentage of correct responses. Use the skill value to set access to other pools with [filters](filters.md).
 
 {% cut "Example of filter settings" %}
 
-![](../_images/other/qcr-control_example_filter.png)
+![](../_images/other/qcr-control_example_filter.png =700x)
 
 {% endcut %}
 

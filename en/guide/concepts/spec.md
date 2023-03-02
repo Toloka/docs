@@ -211,17 +211,17 @@ By default, the task suite displays:
 
 - The following buttons:
 
-  - **Contact requester button**.
+    - **Contact requester button**.
 
-  - **Instructions**.
+    - **Instructions**.
 
-  - **Fullscreen**.
+    - **Fullscreen**.
 
-  - **Submit**.
+    - **Submit**.
 
-  - **Skip**.
+    - **Skip**.
 
-  - **Exit**.
+    - **Exit**.
 
 {% note tip %}
 

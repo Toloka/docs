@@ -19,7 +19,7 @@ This rule is helpful when you need to:
 
     If you've reviewed and accepted a task, it may not make sense for other Tolokers to also complete it. To avoid this, you can reduce the overlap for accepted assignments only.
 
-## Rule settings {#rule}
+## How to configure {#rule}
 
 {% note warning %}
 
@@ -28,7 +28,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 {% endnote %}
 
 #|
-|| **Field**  | **Overview**||
+||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **submitted assignments** — The number of [task suites](../../glossary.md#task-suite) that are completed and awaiting review.
@@ -50,7 +50,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 - **assignment becomes rejected** — The task suite was rejected after the review.
 
 To add multiple conditions, click ![](../_images/add.svg).||
-||**then** | Action to perform for the condition:
+||**then** | Action to perform for the **If** condition:
 
 - **extend overlap by** — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
 
@@ -59,7 +59,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 - **reduce overlap by** — Decrease the number of times a task suite can be completed by Tolokers. For example, use this action to cancel the recompletion of accepted assignments.||
 |#
 
-## Rule example {#examples}
+## Examples {#examples}
 
 The task is to send rejected and recompleted assignments for review. Or assign them to new Tolokers after rejection.
 
@@ -67,13 +67,13 @@ The task is to send rejected and recompleted assignments for review. Or assign t
 
 - Correct settings
 
-  ![](../_images/control-rules/reassessment-after-accepting/qcr-reassessment-after-accepting_example1.png)
+  ![](../_images/control-rules/reassessment-after-accepting/qcr-reassessment-after-accepting_example1.png =700x)
 
   A Toloker's assignments rejected after the review are sent to another Toloker for recompletion.
 
 - Incorrect settings
 
-  ![](../_images/control-rules/reassessment-after-accepting/qcr-reassessment-after-accepting_example_2.png)
+  ![](../_images/control-rules/reassessment-after-accepting/qcr-reassessment-after-accepting_example_2.png =700x)
 
   A Toloker's assignments rejected after the review are not sent to another Toloker for recompletion.
 

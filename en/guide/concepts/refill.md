@@ -169,15 +169,15 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
       1. Attach the documents:
 
-          - For individuals
+          - For individuals:
 
-            - A copy of the photo page of your passport.
+              - A copy of the photo page of your passport.
 
-          - For legal entities
+          - For legal entities:
 
-            - A certificate of incorporation.
+              - A certificate of incorporation.
 
-            - A business card with bank details and contact information.
+              - A business card with bank details and contact information.
 
       1. Click the **Select** button.
 
@@ -203,9 +203,9 @@ The full list can be found on the site of the [USA Department of the Treasury](h
 
       1. Track the money transfer:
 
-        - On the Toloka [Profile]({{ profile }}) page (the **Transactions history** tab).
+          - On the Toloka [Profile]({{ profile }}) page (the **Transactions history** tab).
 
-        - In Yandex.Balance (the [Invoices]({{ invoices }}) page).
+          - In Yandex.Balance (the [Invoices]({{ invoices }}) page).
 
     {% endlist %}
 

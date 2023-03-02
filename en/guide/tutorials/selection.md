@@ -150,24 +150,24 @@ Before you begin:
 
         - A prepared dataset
 
-            1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+          1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-                For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
+              For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
 
-                ```plaintext
-                INPUT:image
-                https://tlk.s3.yandex.net/sdc/photos/0c7b15d0f4e5db0416189afe6486f3cb.jpg
-                https://tlk.s3.yandex.net/sdc/photos/3e5d32e31dfd50fe826fd46b761481cf.jpg
-                https://tlk.s3.yandex.net/sdc/photos/0fb80721932aa59ecc684141433170b6.jpg
-                ```
+              ```plaintext
+              INPUT:image
+              https://tlk.s3.yandex.net/sdc/photos/0c7b15d0f4e5db0416189afe6486f3cb.jpg
+              https://tlk.s3.yandex.net/sdc/photos/3e5d32e31dfd50fe826fd46b761481cf.jpg
+              https://tlk.s3.yandex.net/sdc/photos/0fb80721932aa59ecc684141433170b6.jpg
+              ```
 
-            1. Open the downloaded file, and replace the sample links with links to your images.
+          1. Open the downloaded file, and replace the sample links with links to your images.
 
-            1. Click **Select prepared dataset**, and upload the file you’ve just made.
+          1. Click **Select prepared dataset**, and upload the file you’ve just made.
 
         - Media files
 
-            {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+          {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
         {% endlist %}
 
