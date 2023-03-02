@@ -45,57 +45,57 @@ Don't use it if:
 
 - Don't use too many response options or too many questions in the task.
 
-  The more options you have, the lower the probability that **majority vote** will be calculated correctly.
+    The more options you have, the lower the probability that **majority vote** will be calculated correctly.
 
-  To calculate the **majority vote** for the task, all the responses to all the questions inside the task must match. If a task has multiple questions or the questions have more than just a few response options, it will be unlikely to have enough exactly matching task responses from different Tolokers in order to calculate the skill. As a result, the task won't be used for skill calculation. If the **majority vote** hasn't been calculated for the task, the Toloker isn't penalized for mismatching the majority vote.
+    To calculate the **majority vote** for the task, all the responses to all the questions inside the task must match. If a task has multiple questions or the questions have more than just a few response options, it will be unlikely to have enough exactly matching task responses from different Tolokers in order to calculate the skill. As a result, the task won't be used for skill calculation. If the **majority vote** hasn't been calculated for the task, the Toloker isn't penalized for mismatching the majority vote.
 
-  {% cut "Example" %}
+    {% cut "Example" %}
 
-  |        | Toloker 1 | Toloker 2 | Toloker 3 | Toloker 4 | Toloker 5 |
-  |--------|-----------|-----------|-----------|-----------|-----------|
-  | Task 1 | OK        | BAD       | OK        | BAD       | OK        |
-  | Task 2 | BAD       | OK        | OK        | BAD       | 404       |
-  | Task 3 | 404       | OK        | 404       | OK        | OK        |
-  | Task 4 | OK        | BAD       | OK        | 404       | 404       |
-  | Task 5 | OK        | BAD       | OK        | 404       | OK        |
+    |        | Toloker 1 | Toloker 2 | Toloker 3 | Toloker 4 | Toloker 5 |
+    |--------|-----------|-----------|-----------|-----------|-----------|
+    | Task 1 | OK        | BAD       | OK        | BAD       | OK        |
+    | Task 2 | BAD       | OK        | OK        | BAD       | 404       |
+    | Task 3 | 404       | OK        | 404       | OK        | OK        |
+    | Task 4 | OK        | BAD       | OK        | 404       | 404       |
+    | Task 5 | OK        | BAD       | OK        | 404       | OK        |
 
-  The requester has five tasks, each completed by five Tolokers. Each task has one output field with three response options.`Overlap = 3`. In this case, tasks 1, 3, and 5 match the threshold, but the other tasks are not included in the **majority vote** calculation.
+    The requester has five tasks, each completed by five Tolokers. Each task has one output field with three response options.`Overlap = 3`. In this case, tasks 1, 3, and 5 match the threshold, but the other tasks are not included in the **majority vote** calculation.
 
-  The Tolokers will be assigned the following skills based on **majority vote**:
+    The Tolokers will be assigned the following skills based on **majority vote**:
 
-  #|
-  ||Toloker 1 | (1+0+1)/3=66% correct ||
-  ||Toloker 2 | (0+1+0)/3=33% correct ||
-  ||Toloker 3 | (1+0+1)/3= 66% correct||
-  ||Toloker 4 | (0+1+0)/3=33% correct ||
-  ||Toloker 5 | (1+1+1)/3=100% correct||
-  |#
+    #|
+    ||Toloker 1 | (1+0+1)/3=66% correct ||
+    ||Toloker 2 | (0+1+0)/3=33% correct ||
+    ||Toloker 3 | (1+0+1)/3= 66% correct||
+    ||Toloker 4 | (0+1+0)/3=33% correct ||
+    ||Toloker 5 | (1+1+1)/3=100% correct||
+    |#
 
-  {% endcut %}
+    {% endcut %}
 
-  Let's say the task Toloker has to select at least three matching categories out of twenty or report that the image is not displayed. Since there can be multiple combinations of categories, the rule calculation will mostly include tasks where all the Tolokers responded **Not displayed**. Those might be either correct or “fraudulent” responses from Tolokers who just clicked through the tasks in a hurry. In any case, it would be unreliable to base the skill on these responses.
+    Let's say the task Toloker has to select at least three matching categories out of twenty or report that the image is not displayed. Since there can be multiple combinations of categories, the rule calculation will mostly include tasks where all the Tolokers responded **Not displayed**. Those might be either correct or “fraudulent” responses from Tolokers who just clicked through the tasks in a hurry. In any case, it would be unreliable to base the skill on these responses.
 
-  Try using [decomposition](solution-architecture.md) or [control tasks](../../glossary.md#control-task). This way you can better assess the quality of your Tolokers.
+    Try using [decomposition](solution-architecture.md) or [control tasks](../../glossary.md#control-task). This way you can better assess the quality of your Tolokers.
 
 - Don't set the threshold **Accept as majority** below 50% of the overlap or equal to the overlap.
 
-  If the response threshold is equal to the overlap, the rule will only use the tasks where all the Tolokers gave the same responses, ignoring tasks with mismatching votes.
+    If the response threshold is equal to the overlap, the rule will only use the tasks where all the Tolokers gave the same responses, ignoring tasks with mismatching votes.
 
-  {% cut "Example" %}
+    {% cut "Example" %}
 
-  Let's say the pool has `Overlap = 5` and `Accept as majority = 2`. The Tolokers completed the task.
+    Let's say the pool has `Overlap = 5` and `Accept as majority = 2`. The Tolokers completed the task.
 
-  |           | Task response |
-  |-----------|---------------|
-  | Toloker 1 | OK            |
-  | Toloker 2 | OK            |
-  | Toloker 3 | BAD           |
-  | Toloker 4 | BAD           |
-  | Toloker 5 | 404           |
+    |           | Task response |
+    |-----------|---------------|
+    | Toloker 1 | OK            |
+    | Toloker 2 | OK            |
+    | Toloker 3 | BAD           |
+    | Toloker 4 | BAD           |
+    | Toloker 5 | 404           |
 
-  In this case, Tolokers 1, 2, 3, and 4 responded correctly, but Toloker 5 failed. However, you don't have any way to know which response is correct.
+    In this case, Tolokers 1, 2, 3, and 4 responded correctly, but Toloker 5 failed. However, you don't have any way to know which response is correct.
 
-  {% endcut %}
+    {% endcut %}
 
 - Don't use the **majority vote** if:
 
@@ -174,6 +174,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
   Both rules work independently:
 
   1. If the Toloker gives at least 3 responses to the tasks, the percentage of correct answers is written as the skill value.
+
   1. If the Toloker gives at least 3 answers to tasks and the percentage of correct answers is less than 65%, they are banned on the project.
 
   The calculation uses up to 10 Toloker's responses to the project tasks.
