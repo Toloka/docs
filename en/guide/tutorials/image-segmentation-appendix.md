@@ -32,10 +32,12 @@
 **HTML:**
 
 ```html
-{{img src=image width="100%" height="400px"}} <div>Is there a  <b>traffic sign</b> in the picture?<div>
-<div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
+{{img src=image width="100%" height="400px"}}
+<div>Are there <b>traffic signs</b> in the picture?<div>
+
+{{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
 {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
+{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
 ```
 
 **JavaScript:**

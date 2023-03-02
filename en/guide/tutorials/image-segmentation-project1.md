@@ -4,25 +4,25 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
 ## Create a project {#create-project}
 
-#### In the interface:
+In the interface:
 
-1. Choose a template:
+1. Choose a preset:
 
-    1. Open [Toloka for requesters]({{ yandex-toloka }}).
+    1. Click **Create a project**.
 
-    1. Click **Create project**.
+    1. Click **Do it myself**.
 
-    1. In the window that opens, find the **Image classification** template and click **Select**.
+    1. Select the **Image classification** preset.
 
 1. Provide general information:
 
     1. In the **Name to show Tolokers** field, enter `Are there traffic signs in the picture?`.
 
-    1. In the **Description for Tolokers** field, enter `Look at the picture and answer whether or not it shows any traffic signs.`
+    1. In the **Description for Tolokers** field, enter `Look at the picture and answer whether or not it shows any traffic signs`.
 
-    1. Save the changes.
+    1. Optionally add a **Private comment**.
 
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
     {% list tabs %}
 
@@ -101,7 +101,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
           1. Change the labels on the response options: **Good** → **Yes**, **Bad** → **No**:
 
-              ```plaintext
+              ```html
               {{img src=image width="100%" height="400px"}}
               <div>Are there <b>traffic signs</b> in the picture?<div>
 
@@ -128,26 +128,26 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
    {% endlist %}
 
-1. Save the changes.
+1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions).
 
-1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
+    Instructions text:
 
-    1. **Instructions:**
+    ```plaintext
+    Look at the image and answer whether there are any traffic signs in it.
+    If there are, click "Yes".
+    If there aren't, click "No".
+    For example, there are traffic signs in the image, so the correct answer is "Yes".
+    ```
 
-        ```plaintext
-        Look at the image and answer whether there are any **traffic signs** in it.
-        If there are, click **Yes**.
-        If there aren't, click **No**.
-        For example, there are traffic signs in the image, so the correct answer is **Yes**.
-        ```
+    {% note tip %}
 
-    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
+    If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) button on the toolbar.
 
-    1. Save the changes.
+    {% endnote %}
 
-1. In the upper-right corner, click **Finish**.
+1. In the upper-right corner, click **Save**.
 
-    Learn more about working with the project in the [Project](../concepts/project.md) section.
+Learn more about working with the project in the [Project](../concepts/project.md) section.
 
 ## Create a pool {#create-pool}
 
