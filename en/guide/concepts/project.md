@@ -1,4 +1,4 @@
-# Create a project
+# Creating a project
 
 If you already have a project and you want to create an identical one, [clone](#clone) the existing project. If not, create a new project.
 
@@ -77,16 +77,17 @@ To create a project, follow the instructions:
 
     You can prepare instructions in HTML format, then copy and paste into the editor. Click **<>** to switch to HTML mode.
 
-1. Optionally, add translations to other languages.
+1. Optionally, if your project assumes the collection of any personal data:
+
+    {% include [personal-data](../_includes/toloka-requester-source/id-toloka-requester-source/personal-data.md) %}
+
+1. Optionally, add translations to other languages:
 
     1. Select the source language and the target languages.
 
     1. Fill in the fields in the table.
 
     1. Click **Finish**.
-
-1. {% include [personal-data](../_includes/toloka-requester-source/id-toloka-requester-source/personal-data.md) %}
-
 
 After creating the project, add a [task pool](pool-main.md) to it. You can also set up [quality control](control.md) in the project.
 

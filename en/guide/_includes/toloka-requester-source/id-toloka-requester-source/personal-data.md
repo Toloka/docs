@@ -1,11 +1,11 @@
-If your project collects any personal data, turn on the **This project collects personal data from Tolokers** option.
+1. Turn on the **This project collects personal data from Tolokers** option.
 
-   Provide information about the company in the **Personal data policy** section:
+1. Provide the information about your company in the **Personal data policy** section:
 
-   1. Enter  **Requester's name**, **Legal address** and an **Email**;
+    1. Fill in the **Requester's name**, **Legal address** and **Email** fields.
 
-   1. Enter **Link to the requester's privacy policy**;
+    1. Specify the link to your privacy policy in the **Link to the requester's privacy policy** field.
 
-   1. Set up the **End of data processing** field;
+    1. Specify the estimated date of the project completion in the **End of data processing** field.
 
-   1. Select the **Purpose of data collection** and the **Type of personal data** to be collected: Toloker's voice, photo, video, Toloker's name or other personal data. 
+    1. Select the values in the **Purpose of data collection** and **Type of personal data** fields.

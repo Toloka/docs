@@ -54,19 +54,23 @@ You can specify which interface elements the Toloker will see when working on a 
 
 ## Instructions for Tolokers {#project-task-instructions}
 
-#### Instructions
-
 Instructions are the basic rules that you need to tell Tolokers about before they start completing your tasks.
 
 This field should contain formatted text with images, links, and tables if they're needed to make the task conditions clear.
 
 Learn more about how to write good [instructions](instruction.md).
 
-#### Personal data policy
+## Personal data policy {#personal-data-policy}
+
+If your project assumes the collection of any personal data, provide the information about your company in the **Personal data policy** section.
+
+{% cut "Instruction" %}
 
 {% include [personal-data](../_includes/toloka-requester-source/id-toloka-requester-source/personal-data.md) %}
 
-#### Translations
+{% endcut %}
+
+## Translations {#translations}
 
 If you want labeling to be done by Tolokers from different countries, you can [translate your project into their native languages](project-languages.md).
 
