@@ -6,12 +6,14 @@ This helper function returns a string in which all occurrences of `find` in `dat
 
 Because the `helper.replace` helper returns a string, it can be used in properties that accept string values.
 
-[View example](https://ya.cc/t/11ypBlCg42Qp6o)
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/11ypBlCg42Qp6o)
 
-**Components used in the example**
+{% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
 - [view.text](view.text.md): Adds a block with text.
+
+{% endcut %}
 
 ## Component properties {#properties}
 
