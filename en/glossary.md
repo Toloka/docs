@@ -2,9 +2,9 @@
 
 ### A
 
-#### Action components (Template Builder) {#action}
+#### Action components (component type for Template Builder) {#action}
 
-A category of [components](#component) that perform actions, such as open a link, display a message, or play a video. Some components work with data. For example, they can change the value from `true` to `false`. [List of actions](template-builder/reference/actions.md)
+A category of [components](#component) used in Template Builder that perform actions, such as open a link, display a message, or play a video. Some components work with data. For example, they can change the value from `true` to `false`. [List of actions](template-builder/reference/actions.md)
 
 #### Active Tolokers {#active-tolokers}
 
@@ -12,11 +12,11 @@ Tolokers with access to the [pool](#pool) who took tasks during the last hour.
 
 #### Archived pool {#archive-pool}
 
-A [pool](#pool) that was moved to the archive. Archived pools can't be started or edited and are not available for the [assignment review](#assignment-review). The pool is automatically archived if there is no activity in it for a month.
+A [pool](#pool) that was moved to the archive. Archived pools can't be started or edited and are not available for the [assignment review](#assignment-review). The pool is automatically archived if there is no activity in it for a month. With the archived pool, you can [view the pool statistics](guide/concepts/pool_statistic-pool.md), [download](guide/concepts/result-of-eval.md) the pool data, and [clone the pool](guide/concepts/pool-main.md#clone).
 
 #### Assignment {#assignment}
 
-A task suite that a [Toloker](#toloker) decides to complete.
+A task suite that a [Toloker](#toloker) decides to complete. An assignment can have one the following statuses: **accepted**, **active**, **expired**, **rejected**, **skipped**, or **submitted**. Refer to the [Toloka API documentation](api/concepts/result.md#query-params) for more information on each status.
 
 ### B
 
@@ -24,7 +24,7 @@ A task suite that a [Toloker](#toloker) decides to complete.
 
 Blocking a Toloker's access to one or more [projects](#project). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](#skill) value lower than `N` and block their access to tasks. You can also unblock access.
 
-#### Batch {#batch}
+#### Batch (in bespoke solutions) {#batch}
 
 Datasets that you send for labeling at a time. Batches are used in [bespoke solutions](https://toloka.ai/pricing/).
 
@@ -42,13 +42,13 @@ A type of challenge–response test to determine whether the user is human. Prot
 
 Companies that take on the launch and implementation of your project and help you process the results. These companies have already integrated [crowdsourcing](#crowdsourcing) into their business processes and offer excellent solutions.
 
-#### Component (Template Builder) {#component}
+#### Component (component type for Template Builder) {#component}
 
-JSON objects with a specified structure which help you build a task interface. Components are categorized depending on their purpose, such as [data entry fields](#data-entry-field), [conditions](#condition), or [actions](#action). The name of the component is specified in the `type` property in the `<category>.<name>` format. [List of components](template-builder/reference/index.md)
+JSON objects with a specified structure which help you build a task interface in Template Builder. Components are categorized depending on their purpose, such as [data entry fields](#data-entry-field), [conditions](#condition), or [actions](#action). The name of the component is specified in the `type` property in the `<category>.<name>` format. [List of components](template-builder/reference/index.md)
 
-#### Condition components (Template Builder) {#condition}
+#### Condition components (component type for Template Builder) {#condition}
 
-A category of [components](#component) that check whether the expression matches the specified condition. You can use them to check that the text is entered in a field. [List of conditions](template-builder/reference/conditions.md)
+A category of [components](#component) used in Template Builder that check whether the expression matches the specified condition. You can use them to check that the text is entered in a field. [List of conditions](template-builder/reference/conditions.md)
 
 #### Configuration {#configuration}
 
@@ -76,9 +76,9 @@ Comma-separated values. A text file format in which data is separated by the com
 
 ### D
 
-#### Data entry field components (Template Builder) {#data-entry-field}
+#### Data entry field components (component type for Template Builder) {#data-entry-field}
 
-A category of [components](#component) that create data entry fields, such as text fields or drop-down lists. [List of data entry fields](template-builder/reference/fields.md)
+A category of [components](#component) used in Template Builder that create data entry fields, such as text fields or drop-down lists. [List of data entry fields](template-builder/reference/fields.md)
 
 #### Decomposition {#decomposition}
 
@@ -94,13 +94,13 @@ An option to set prices that depend on the Toloker's [skill](#skill). This allow
 
 ### E
 
-#### Earnings (quality control rule) {#earnings}
+#### Earnings (quality control rule name) {#earnings}
 
 A [quality control](#quality-control) rule that restricts the Toloker's earnings in the [pool](#pool) for a day. This allows you to get responses from as many Tolokers as possible and provide extra protection against robots.
 
-#### Element layout components (Template Builder) {#element-layout}
+#### Element layout components (component type for Template Builder) {#element-layout}
 
-A category of [components](#component) that arrange the interface elements, such as in columns or side-by-side. [List of layout options](template-builder/reference/layouts.md)
+A category of [components](#component) used in Template Builder that arrange the interface elements, such as in columns or side-by-side. [List of layout options](template-builder/reference/layouts.md)
 
 #### Exam {#exam}
 
@@ -108,7 +108,7 @@ A [pool](#pool) with [control tasks](#control-task) for choosing Tolokers. You c
 
 ### F
 
-#### Fast responses (quality control rule) {#fast-responses}
+#### Fast responses (quality control rule name) {#fast-responses}
 
 A [quality control](#quality-control) rule that restricts access to tasks for Tolokers who respond too quickly. You can use it to:
 
@@ -147,9 +147,9 @@ See [Control task](#control-task).
 
 ### H
 
-#### Helper components (Template Builder) {#helper}
+#### Helper components (component type for Template Builder) {#helper}
 
-A category of [components](#component) for auxiliary operations, such as working with arrays. [List of helpers](template-builder/reference/helpers.md)
+A category of [components](#component) used in Template Builder for auxiliary operations, such as working with arrays. [List of helpers](template-builder/reference/helpers.md)
 
 #### Honeypot {#honeypot}
 
@@ -218,11 +218,15 @@ A set of languages in the [Translations](guide/concepts/project-languages.md#how
 
 ### M
 
-#### Majority vote (quality control rule) {#majority-vote}
+#### Majority vote (quality control rule name) {#majority-vote}
 
 A [quality control](#quality-control) rule that considers a response correct if it is chosen by the majority of Tolokers (also known as consensus). Other responses are considered incorrect.
 
 ### O
+
+#### OCR {#ocr-abbr}
+
+See [Optical character recognition](#ocr).
 
 #### Optical character recognition (OCR) {#ocr}
 
@@ -238,9 +242,9 @@ The number of Tolokers who should complete each task in the [pool](#pool). Overl
 
 A real-time quality prediction of how well each particular Toloker will handle your task. The forecast is based on a large amount of data about user behavior in the system, how other Tolokers completed your task, and the task itself.
 
-#### Plugin components (Template Builder) {#plugin}
+#### Plugin components (component type for Template Builder) {#plugin}
 
-A category of [components](#component) that enable advanced features. For example, `plugin.hotkeys` lets you set up shortcuts. [List of plugins](template-builder/reference/plugins.md)
+A category of [components](#component) used in Template Builder that enable advanced features. For example, `plugin.hotkeys` lets you set up shortcuts. [List of plugins](template-builder/reference/plugins.md)
 
 #### Pool {#pool}
 
@@ -270,7 +274,7 @@ Independent rules that make up [quality control](#quality-control). In the pool 
 
 ### R
 
-#### Recompletion of assignments from banned users (quality control rule) {#recompletion}
+#### Recompletion of assignments from banned users (quality control rule name) {#recompletion}
 
 A [quality control](#quality-control) rule that can be configured to resend tasks for recompletion to other Tolokers if:
 
@@ -305,6 +309,10 @@ Extra payment that you can give to Tolokers for completing tasks well. It improv
 
 The Toloka testing environment. This is where you can test your [project](#project) settings as a Toloker before moving them to the Toloka production version and running the project for real Tolokers. This helps you avoid making mistakes and spending money on a task that isn't working right.
 
+#### SbS {#sbs-abbr}
+
+See [Side-by-side](#sbs).
+
 #### Selective majority vote check {#selective-majority-vote-check}
 
 An option that allows you to selectively increase overlap for some tasks. This helps you save money and speed up [pool](#pool) completion. [Learn more](guide/concepts/selective-mvote.md)
@@ -317,7 +325,7 @@ Side-by-side comparison type of projects. Toloka has several presets to compare 
 
 An assessment of the Toloker's quality of task completion on a scale of 0 to 100. The skill can be calculated automatically (for example, based on correct responses to [control tasks](#control-task)), or assigned manually. Skills are used to select Tolokers in a [pool](#pool). [Learn more](guide/concepts/nav.md)
 
-#### Skipped assignments (quality control rule) {#skipping-tasks}
+#### Skipped assignments (quality control rule name) {#skipping-tasks}
 
 A [quality control](#quality-control) rule that restricts access to the [pool](#pool) tasks for Tolokers who skip several [task suites](#task-suite) in a row.
 
@@ -329,7 +337,7 @@ A way to randomly combine tasks and generate task suites so that tasks aren't re
 
 A pool statistics parameters which shows the number of Tolokers who completed at least one task in the pool.
 
-#### Submitted responses (quality control rule) {#completed-tasks}
+#### Submitted responses (quality control rule name) {#completed-tasks}
 
 A [quality control](#quality-control) rule that limits the number of [task suites](#task-suite) a Toloker can complete per day (taking [overlap](#overlap) into account). This allows getting a broader selection of users.
 
@@ -395,9 +403,9 @@ Tab-separated values. A text file format in which data is separated by a tab, an
 
 ### V
 
-#### View components (Template Builder) {#view}
+#### View components (component type for Template Builder) {#view}
 
-A category of [components](#component) that create visual interface elements. Examples include text, list, audio player, or image. [List of views](template-builder/reference/views.md)
+A category of [components](#component) used in Template Builder that create visual interface elements. Examples include text, list, audio player, or image. [List of views](template-builder/reference/views.md)
 
 ### X
 
