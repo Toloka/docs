@@ -4,21 +4,25 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
 ## Create a project {#create-project}
 
-#### In the interface:
+In the interface:
 
 1. Choose a preset:
 
-    1. Click **Create project**.
+    1. Click **Create a project**.
+
+    1. Click **Do it myself**.
+
     1. Select the **Object recognition & detection** preset.
-    1. Click **Choose this preset**.
 
 1. Provide general information:
 
-    1. In **Name to show Tolokers**, enter `Outline traffic signs in the image`.
-    1. In **Description for Tolokers**, enter `Draw a box around all traffic signs in the image`.
+    1. In the **Name to show Tolokers** field, enter `Outline traffic signs in the image`.
+
+    1. In the **Description for Tolokers** field, enter `Draw a box around all traffic signs in the image`.
+
     1. Optionally add a **Private comment**.
 
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
     {% list tabs %}
 
@@ -78,13 +82,9 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     {% endlist %}
 
-1. Save the changes.
+1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions).
 
-1. Write instructions for Tolokers:
-
-    #### Instructions text:
-
-    Click ![](../_images/tutorials/image-segmentation/rectangle-button.png) and draw a rectangle around all traffic signs in the image.
+    Instructions text: "Click ![](../_images/tutorials/image-segmentation/rectangle-button.png) and draw a rectangle around all traffic signs in the image".
 
     {% note tip %}
 
@@ -92,7 +92,9 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     {% endnote %}
 
-    Click **Finish**.
+1. In the upper-right corner, click **Save**.
+
+Learn more about working with the project in the [Project](../concepts/project.md) section.
 
 ## Create a pool {#create-pool}
 
