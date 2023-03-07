@@ -8,9 +8,17 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 {% endnote %}
 
+## Usage rules {#usage-rules}
+
+1. The sandbox is intended for testing tasks with small batches of data. Labeling an entire dataset is considered unfair usage of the service, unless you have a special agreement with us.
+
+1. The sandbox limits the number of trusted Tolokers and submitted tasks for testing your project. Limits are set by Toloka admins.
+
+If you need a private data labeling environment for your own team, [request](../troubleshooting/support.md) the in-house data labeling option.
+
 ## How to run a project in the sandbox {#section_zmz_t4z_mlb}
 
-1. Register in the sandbox as a requester. To do this, follow the [link]({{ sandbox }}).
+1. [Register in the sandbox]({{ sandbox }}) as a requester.
 
     {% note tip %}
 
@@ -28,7 +36,7 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 To complete your tasks in the sandbox:
 
-1. Register in the sandbox as a Toloker (see the instructions in the [user documentation]({{ user-documentation }}) ).
+1. Register as a Toloker (see the instructions in the [user documentation]({{ user-documentation }})).
 
     {% note alert %}
 
@@ -36,7 +44,7 @@ To complete your tasks in the sandbox:
 
     {% endnote %}
 
-1. Log in to the sandbox using the requester account.
+1. Log in to the [Sandbox]({{ sandbox }}) using the requester account.
 
 1. Open the [Tolokers]({{ users }}) page and click **Add trusted Tolokers**.
 
