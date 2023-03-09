@@ -496,8 +496,8 @@ items:
   - name: Toloka SSO authentication
     hidden: true
     items:
-      - name: Microsoft SSO authentication
-        href: guide/sso/microsoft-authentication.md
+      - name: Toloka SSO authentication
+        href: guide/sso/authentication.md
       - name: Generating API tokens
         href: guide/sso/api-token.md
 base: en
