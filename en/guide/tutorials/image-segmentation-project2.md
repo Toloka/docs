@@ -78,8 +78,6 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     {% endlist %}
 
-1. Save the changes.
-
 1. Write instructions for Tolokers:
 
     #### Instructions text:

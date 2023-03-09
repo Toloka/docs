@@ -20,8 +20,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. In the **Description for Tolokers** field, enter `Look at the picture and answer whether or not it shows any traffic signs.`
 
-    1. Save the changes.
-
 1. Edit the task interface in the editor you selected:
 
     {% list tabs %}
@@ -128,8 +126,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
    {% endlist %}
 
-1. Save the changes.
-
 1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
 
     1. **Instructions:**
@@ -142,8 +138,6 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
         ```
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
-
-    1. Save the changes.
 
 1. In the upper-right corner, click **Finish**
 

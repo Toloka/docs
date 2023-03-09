@@ -22,8 +22,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. Optionally add a **Private comment**.
 
-    1. Save the changes.
-
 1. Edit the task interface in the editor you selected:
 
     {% list tabs %}
@@ -132,8 +130,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. Save the changes.
-
 1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
 
     1. **Instructions:**
@@ -146,10 +142,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
         ```
 
     1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
-
-    1. Save the changes.
-
-1. To go back to the **Projects** page, click **Finish editing**.
 
 Learn more about working with the project in the [Project](../concepts/project.md) section.
 

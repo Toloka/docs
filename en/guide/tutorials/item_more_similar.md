@@ -22,8 +22,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. Optionally add a **Private comment**.
 
-    1. Save the changes.
-
 1. Edit the task interface in the editor you selected:
 
    {% list tabs %}
@@ -231,8 +229,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. Save the changes.
-
 1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
@@ -242,10 +238,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
         Rely on your own sense of style, but also remember that the shoes look alike if
         they are the same color, fabric, length, and style.
         ```
-
-    1. Save the changes.
-
-1. To go back to the **Projects** page, click **Finish editing**.
 
 Learn more about working with the project in the [Project](../concepts/project.md) section.
 

@@ -94,9 +94,7 @@ Before you begin:
 
     {% endnote %}
 
-1. To save your data and continue, click **Create a project**.
-
-    {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#pool}
 

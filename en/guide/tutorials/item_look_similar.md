@@ -28,8 +28,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. Optionally add a **Private comment**.
 
-    1. Save the changes.
-
 1. Edit the task interface in the editor you selected:
 
    {% list tabs %}
@@ -144,8 +142,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. Save the changes.
-
 1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
 
     1. **Instructions:**
@@ -156,10 +152,6 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
         Shoes are considered similar if they have a similar color, fabric, length, and style.
         If you don't see a pair of shoes in any of the pictures, click **Yes**.
         ```
-
-    1. Save the changes.
-
-1. To go back to the **Projects** page, click **Finish editing**.
 
 Learn more about working with the project in the [Project](../concepts/project.md) section.
 
