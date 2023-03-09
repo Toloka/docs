@@ -10,6 +10,10 @@ A category of [components](#component) used in Template Builder that perform act
 
 Tolokers with access to the [pool](#pool) who took tasks during the last hour.
 
+#### Aggregated answer {#aggregated-answer}
+
+See [Item](#item).
+
 #### Archived pool {#archive-pool}
 
 A [pool](#pool) that was moved to the archive. Archived pools can't be started or edited and are not available for the [assignment review](#assignment-review). The pool is automatically archived if there is no activity in it for a month. With the archived pool, you can [view the pool statistics](guide/concepts/pool_statistic-pool.md), [download](guide/concepts/result-of-eval.md) the pool data, and [clone the pool](guide/concepts/pool-main.md#clone).
@@ -86,7 +90,7 @@ A process of dividing a large project into several small ones. Decomposition res
 
 #### Dynamic overlap (incremental relabeling, IRL) {#dynamic-overlap}
 
-A type of overlap that changes the number of Tolokers to complete each task in the [pool](#pool). This number depends on confidence in the results: how well the Tolokers cope with the task or how consistent their responses are.
+A type of [overlap](#overlap) that changes the number of Tolokers to complete each [item](#item) in the [pool](#pool). This number depends on confidence in the results: how well the Tolokers cope with the tasks or how consistent their responses are. The dynamic overlap value increases with the decreasing cofidence in the results, and vice versa.
 
 #### Dynamic pricing {#dynamic-pricing}
 
@@ -108,16 +112,16 @@ A [pool](#pool) with [control tasks](#control-task) for choosing Tolokers. You c
 
 ### F
 
-#### Fast responses (quality control rule name) {#fast-responses}
+#### Fast responses (quality control rule) {#fast-responses}
 
 A [quality control](#quality-control) rule that restricts access to tasks for Tolokers who respond too quickly. You can use it to:
 
-  - Suspend access for Tolokers who cheat in their responses (in this case, set the time required to complete a [task suite](#task-suite) when giving random responses).
-  - Provide protection from robots (in this case, the time for completing the task suite should be 2 times less).
+  - Suspend access for Tolokers who respond randomly. You can set a reasonable minimal time required to complete a [task suite](#task-suite).
+  - Provide protection from robots (in this case, the time for completing the task suite should be much less).
 
 #### Fee {#fee}
 
-A percentage of the cost of tasks for which the requester is charged when using Toloka.
+A percentage of the cost of tasks for which the requester is charged by the service when using Toloka.
 
 #### Field task {#field-task}
 
@@ -132,6 +136,14 @@ A file that contains the data you need to label. Requesters use such files to up
 Criteria for choosing Tolokers. For example, you can select only Tolokers who speak English or have a certain skill.
 
 You can use filters to choose Tolokers when setting up [pools](#pool) (in the **Audience** section), on the [Users](https://platform.toloka.ai/requester/workers) page, and for [sending messages](guide/concepts/messaging.md) to a group of users. [Learn more](guide/concepts/filters.md)
+
+#### Final answer {#final-answer}
+
+See [Item](#item).
+
+#### Final label {#final-label}
+
+See [Item](#item).
 
 ### G
 
@@ -176,13 +188,13 @@ See the Template Builder [Read and write](template-builder/operations/input-outp
 
 #### Instructions {#instructions}
 
-Task instructions that Tolokers see when choosing and completing the task. The clarity and completeness of the instructions affect response quality and the [project](#project) rating. Good instructions help Tolokers complete the task correctly.
+Project instructions that Tolokers see when choosing and completing the task. The clarity and completeness of the instructions affect response quality and the [project](#project) rating. Good instructions help Tolokers complete the task correctly.
 
 #### Interested Tolokers {#interested-users}
 
 The number of Tolokers who started at least one [task suite](#task-suite).
 
-#### Internal data {#internal-data}
+#### Internal data (used with Template Builder) {#internal-data}
 
 The data available only from within the task. This data is not saved to the results. Use it to calculate or store intermediate values. To access the internal data, use the `data.internal` component of [Template Builder](template-builder/operations/input-output-data.md).
 
@@ -190,9 +202,9 @@ The data available only from within the task. This data is not saved to the resu
 
 See [Dynamic overlap](#dynamic-overlap).
 
-#### Item {#item}
+#### Item (final answer, aggregated answer, final label) {#item}
 
-Corresponds to the final labeled data unit. It is calculated as the aggregated result of all responses received for a task.
+Corresponds to the final labeled data unit or a unique data unit to be labelled in Toloka. It is calculated as the aggregated result of all responses received for a task.
 
 ### J
 
@@ -202,7 +214,7 @@ JavaScript Object Notation. A text file format used to store and transfer struct
 
 ### K
 
-#### Keeping the task order {#keep-task-order}
+#### Keep task order {#keep-task-order}
 
 Distributing the task suites in the [pool](#pool) in the same order as they are in the uploaded [file](#tsv). The tasks within each suite are shuffled.
 
@@ -234,7 +246,7 @@ The conversion of images of typed, handwritten or printed text into machine-enco
 
 #### Overlap {#overlap}
 
-The number of Tolokers who should complete each task in the [pool](#pool). Overlap is used to make sure the results are reliable.
+The number of Tolokers who should complete each [item](#item) in the [pool](#pool). Overlap is used to make sure the results are reliable.
 
 ### P
 
@@ -252,7 +264,7 @@ A set of data to label in a project. You can use the pool settings to select Tol
 
 #### Project {#project}
 
-A specific data labeling goal. This could be to moderate comments, to classify images, to transcribe audio recordings, or something else. A project consists of [pools](#pool) with [tasks](#task). Project settings define the [task interface](#task-interface) and the [input and output data](#input-output-data).
+A specific data labeling goal. This could be to moderate comments, to classify images, to transcribe audio recordings, or something else. A project consists of [pools](#pool) with [tasks](#task). Project settings define the [task interface](#task-interface), instructions, and the [input and output data](#input-output-data) shared by all pools within the same project.
 
 #### Project preset {#project-template}
 
@@ -315,11 +327,11 @@ See [Side-by-side](#sbs).
 
 #### Selective majority vote check {#selective-majority-vote-check}
 
-An option that allows you to selectively increase overlap for some tasks. This helps you save money and speed up [pool](#pool) completion. [Learn more](guide/concepts/selective-mvote.md)
+An option that allows you to selectively increase overlap for some [items](#item). This helps you save money and speed up [pool](#pool) completion. [Learn more](guide/concepts/selective-mvote.md)
 
 #### Side-by-side (SbS) {#sbs}
 
-Side-by-side comparison type of projects. Toloka has several presets to compare objects side-by-side: [images](./guide/tutorials/side-by-side.md), video and audio files.
+Side-by-side comparison type of projects. Toloka has several presets to compare objects side-by-side: [images](guide/tutorials/side-by-side.md), video and audio files.
 
 #### Skill {#skill}
 
@@ -335,7 +347,7 @@ A way to randomly combine tasks and generate task suites so that tasks aren't re
 
 #### Submitted in pool {#submitted-in-pool}
 
-A pool statistics parameters which shows the number of Tolokers who completed at least one task in the pool.
+A pool statistics parameters which shows the number of Tolokers who completed and submitted at least one task suite in the pool.
 
 #### Submitted responses (quality control rule name) {#completed-tasks}
 
@@ -345,7 +357,7 @@ A [quality control](#quality-control) rule that limits the number of [task suite
 
 #### Task {#task}
 
-A request or question that elicits a response from an annotator in [Toloka]({{ toloka }}). A task is created for a single data item that requires labeling, like a photo to classify, or a comment to review. It is a part of a web page that can contain various objects: images, text, input fields, and others. Tolokers read the instructions for the task, complete it and enter [responses](#response). In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
+A request or question that elicits a response from an annotator in [Toloka]({{ toloka }}). A task is created for a single data unit that requires labeling, like a photo to classify, or a comment to review. It is a part of a web page (a [task suite](#task-suite)) that can contain various objects: images, text, input fields, and others. Tolokers read the instructions for the task, complete it and enter [responses](#response). In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
 
 #### Task interface {#task-interface}
 
