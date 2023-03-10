@@ -24,6 +24,8 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
+    1. Click **Do it myself**.
+
     1. Select the **Image classification** preset.
 
 1. Click **Choose this preset** in the pop-up tab.

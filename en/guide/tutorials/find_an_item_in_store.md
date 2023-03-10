@@ -2,19 +2,23 @@
 
 In this [project](../../glossary.md#project), Tolokers will search an online store for shoes that are similar to the ones shown in the task. Use the results from [project 1](contain_item.md#get_results) as source images.
 
-## Create a project {#create_project}
+## Create a project {#project}
 
 To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
-#### In the interface:
+In the interface:
 
 1. Choose a template:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
+
+    1. Click **Do it myself**.
 
     1. Select the **Product photo search** template.
 
-1. Provide general information:
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
     1. In the **Project title** field, enter `Find the same or similar shoes in an online store`.
 
@@ -22,7 +26,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. Optionally add a **Private comment**.
 
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
     {% list tabs %}
 
@@ -162,17 +166,17 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-    1. **Instructions:**
+    Instructions text:
 
-        ```plaintext
-        Look at what the person is wearing in the picture.
-        Then go to the ASOS online store and search for the same pair of shoes.
-        It should be similar in category, style, color, and length.
-        ```
+    ```plaintext
+    Look at what the person is wearing in the picture.
+    Then go to the ASOS online store and search for the same pair of shoes.
+    It should be similar in category, style, color, and length.
+    ```
 
-Learn more about working with the project in the [Project](../concepts/project.md) section.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create_pool}
 

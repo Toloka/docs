@@ -20,7 +20,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
     1. In the **Description for Tolokers** field, enter `Look at the picture and answer whether or not it shows any traffic signs.`
 
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
     {% list tabs %}
 
@@ -126,7 +126,7 @@ In this [project](../../glossary.md#project), you ask the Tolokers if a photo co
 
    {% endlist %}
 
-1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
     1. **Instructions:**
 

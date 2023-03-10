@@ -42,31 +42,29 @@ For now, all surveys conducted using this type of project must be in English and
 
 {% endnote %}
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
-Pick a preset depending on your survey length:
+1. Pick a preset depending on your survey length:
 
-* For short surveys that take 15 minutes or less — [Short survey]({{ survey-qualtrics-short }}).
+    * For short surveys that take 15 minutes or less — [Short survey]({{ survey-qualtrics-short }}).
 
-* For medium surveys that take 15–30 minutes — [Medium survey]({{ survey-qualtrics-medium }}).
+    * For medium surveys that take 15–30 minutes — [Medium survey]({{ survey-qualtrics-medium }}).
 
-* For long surveys that take 30–60 minutes — [Long survey]({{ survey-qualtrics-long }}).
+    * For long surveys that take 30–60 minutes — [Long survey]({{ survey-qualtrics-long }}).
 
-Another way to choose a preset is to do the following:
+    Another way to choose a preset is to do the following:
 
-1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
-    [![Create project button](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-create-project.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-create-project.png)
+        [![Create project button](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-create-project.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-create-project.png)
 
-1. In the left menu, click **Social science research**. Select the **Short survey**, **Medium survey**, or **Long survey** preset.
+    1. In the left menu, click **Social science research**. Select the **Short survey**, **Medium survey**, or **Long survey** preset.
 
-    [![Social science research](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png)
+        [![Social science research](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png)
 
 1. Click **Choose solution** in the pop-up tab.
 
-## Create a project {#project}
-
-1. Add the general information on your project.
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
     * **Project name visible to Tolokers**: In 2–5 words, state the idea of the project.
 

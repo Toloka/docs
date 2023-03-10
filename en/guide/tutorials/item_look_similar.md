@@ -12,15 +12,19 @@ Since the **Assignment review** option is enabled in the [pool](../../glossary.m
 
 To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
-#### In the interface:
+In the interface:
 
-1. Choose a template:
+1. Choose a preset:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
-    1. Select the **Image classification** template.
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-1. Provide general information:
+    1. Click **Do it myself**.
+
+    1. Select the **Image classification** preset.
+
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
     1. In the **Name for Tolokers** field, enter `Are these shoes similar to each other?`.
 
@@ -28,7 +32,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. Optionally add a **Private comment**.
 
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
    {% list tabs %}
 
@@ -142,18 +146,18 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-    1. **Instructions:**
+    Instructions text:
 
-        ```plaintext
-        Take a look at the pictures that show two pairs of shoes. Decide whether they look similar or not.
+    ```plaintext
+    Take a look at the pictures that show two pairs of shoes. Decide whether they look similar or not.
 
-        Shoes are considered similar if they have a similar color, fabric, length, and style.
-        If you don't see a pair of shoes in any of the pictures, click **Yes**.
-        ```
+    Shoes are considered similar if they have a similar color, fabric, length, and style.
+    If you don't see a pair of shoes in any of the pictures, click "Yes".
+    ```
 
-Learn more about working with the project in the [Project](../concepts/project.md) section.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create_pool}
 

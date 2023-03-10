@@ -20,7 +20,7 @@ Before you begin:
 
     - To communicate with Tolokers, use private messages in Toloka only.
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
 {% include [toloka-requester-source-use-preset](../_includes/toloka-requester-source/id-toloka-requester-source/use-preset.md) %}
 
@@ -30,13 +30,11 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
+    1. Click **Do it myself**.
+
     1. Select the **Survey with Toloka template** preset.
 
 1. Click **Choose this preset** in the pop-up tab.
-
-## Create a project {#project}
-
-{% include [tutorials-who-are-tolokers](../_includes/tutorials/who-are-tolokers.md) %}
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 

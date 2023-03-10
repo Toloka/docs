@@ -18,7 +18,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
     1. In the **Description for Tolokers** field, enter `Look at the image and decide whether the traffic signs are outlined correctly or not`.
     1. Optionally add a **Private comment**.
 
-1. Edit the task interface. The output data format depends on the interface editor, so choose the same editor as in [Project 2](image-segmentation-project2.md#interface-tb-html).
+1. Edit the [task interface](../../glossary.md#task-interface). The output data format depends on the interface editor, so choose the same editor as in [Project 2](image-segmentation-project2.md#interface-tb-html).
 
    {% list tabs %}
 
@@ -173,7 +173,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
    {% endlist %}
 
-1. Write instructions for Tolokers:
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
     **Instructions:**
 

@@ -18,7 +18,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
     1. In **Description for Tolokers**, enter `Draw a box around all traffic signs in the image`.
     1. Optionally add a **Private comment**.
 
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
     {% list tabs %}
 
@@ -78,7 +78,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     {% endlist %}
 
-1. Write instructions for Tolokers:
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
     #### Instructions text:
 

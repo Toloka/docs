@@ -2,19 +2,23 @@
 
 In this [project](../../glossary.md#project), you will ask Tolokers if there are shoes in the photo.
 
-## Create a project {#create_project}
+## Create a project {#project}
 
 To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
-#### In the interface:
+In the interface:
 
-1. Choose a template:
+1. Choose a preset:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
-    1. Select the **Image classification** template.
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-1. Provide general information:
+    1. Click **Do it myself**.
+
+    1. Select the **Image classification** preset.
+
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
     1. In the **Name for Tolokers** field, enter `Are there shoes in the photo?`.
 
@@ -22,7 +26,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. Optionally add a **Private comment**.
 
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
     {% list tabs %}
 
@@ -130,20 +134,24 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions) and add an image.
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-    1. **Instructions:**
+    Instructions text:
 
-        ```plaintext
-        Look at the picture and determine if there are **shoes** in the picture.
-        If there are, click **Yes**.
-        If there aren't, click **No**.
-        For example, there are shoes in the photo, so the correct answer is **Yes**.
-        ```
+    ```plaintext
+    Look at the picture and determine if there are shoes in the picture.
+    If there are, click "Yes".
+    If there aren't, click "No".
+    For example, there are shoes in the photo, so the correct answer is "Yes".
+    ```
 
-    1. To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
+    {% note info %}
 
-Learn more about working with the project in the [Project](../concepts/project.md) section.
+    To add an image, click ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) and provide a link to the image you want to use as an example.
+
+    {% endnote %}
+
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create_pool}
 

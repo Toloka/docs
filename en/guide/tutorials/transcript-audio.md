@@ -18,7 +18,7 @@ Before you begin:
 
 - {% include [tutorials-top-up-tutorial](../_includes/tutorials/top-up-tutorial.md) %}
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
 {% include [toloka-requester-source-use-preset](../_includes/toloka-requester-source/id-toloka-requester-source/use-preset.md) %}
 
@@ -28,13 +28,11 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
+    1. Click **Do it myself**.
+
     1. Select the **Transcribing audio recordings** preset.
 
 1. Click **Choose this preset** in the pop-up tab.
-
-## Create a project {#project}
-
-{% include [tutorials-who-are-tolokers](../_includes/tutorials/who-are-tolokers.md) %}
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
