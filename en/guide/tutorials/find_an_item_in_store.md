@@ -20,9 +20,9 @@ In the interface:
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    1. In the **Project title** field, enter `Find the same or similar shoes in an online store`.
+    1. In the **Name to show Tolokers** field, enter `Find the same or similar shoes in an online store`.
 
-    1. In the **Description** field, enter `Go to an online store and provide a link and an image of the same or similar pair of shoes`.
+    1. In the **Description for Tolokers** field, enter `Go to an online store and provide a link and an image of the same or similar pair of shoes`.
 
     1. Optionally add a **Private comment**.
 
