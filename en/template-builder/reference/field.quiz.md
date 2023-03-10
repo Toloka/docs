@@ -9,7 +9,7 @@ Returns a key value object with any type of data as value.
 {% cut "Components used in the example" %}
 
 - [condition.required](condition.required.md): Checks if at least one option is selected.
-- [data.output]: Output data.
+- [data.output](../operations/work-with-data.md): Output data.
 
 {% endcut %}
 
