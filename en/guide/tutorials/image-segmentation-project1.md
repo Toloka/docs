@@ -145,6 +145,8 @@ In the interface:
 
     If you want to add a task examples in the instruction, complete it yourself in the preview mode. Take screenshots, upload them to photo hosting or cloud storage and insert image links in the instructions by clicking the ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) button on the toolbar.
 
+    {% endnote %}
+
 1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create-pool}
