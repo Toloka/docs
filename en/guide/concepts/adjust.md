@@ -6,7 +6,7 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 If you want to improve speed or quality of labeling, use the **Speed/quality balance** pool setting.
 
-It allows you to select Tolokers based on a [personalized quality forecast](../../glossary.md#personilized-quality-forecast):
+It allows you to select Tolokers based on real-time assumption of how well Tolokers might handle your tasks. This assumption takes into account large amount of data about Tolokers behavior in the system, previously completed projects, and the current project type:
 
 - **TOP %** — allows you to set the percentage of top-rated Tolokers who will have access to your task.
 

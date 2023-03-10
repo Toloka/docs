@@ -32,10 +32,12 @@
 **HTML:**
 
 ```html
-{{img src=image width="100%" height="400px"}} <div>Is there a  <b>traffic sign</b> in the picture?<div>
-<div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
+{{img src=image width="100%" height="400px"}}
+<div>Are there <b>traffic signs</b> in the picture?<div>
+
+{{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
 {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
+{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
 ```
 
 **JavaScript:**
@@ -148,7 +150,7 @@ height: max-content;
 #|
 || **Input:** | **Output:** ||
 ||
-```html
+```json
 {
   "image": {
     "type": "url",
@@ -168,11 +170,15 @@ height: max-content;
 }
 ```
 |
-```html
+```json
 {   "result": {
     "type": "string",
     "hidden": false,
-    "required": true
+    "required": true,
+    "allowed_values": [
+      "OK",
+      "BAD"
+    ]
   }
 }
 ```
@@ -182,10 +188,12 @@ height: max-content;
 **HTML:**
 
 ```html
-{{img src=image width="100%" height="400px"}} <div>Is there a  <b>traffic sign</b> in the picture?<div>
-<div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-{{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
+<!-- editor for selecting objects that lets you add an area in advance -->
+{{field type="image-annotation" name="object" src=image annotations=selection}}
+
+<!-- buttons for responses -->
+{{field type="radio" name="result" value="OK" label="Correct" hotkey="1"}}
+{{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
 ```
 
 **JavaScript:**

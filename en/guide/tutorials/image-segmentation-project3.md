@@ -4,21 +4,27 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 ## Create a project {#create-project}
 
-#### In the interface:
+In the interface:
 
 1. Choose a preset:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
+
+    1. Click **Do it myself**.
+
     1. Select the **Object recognition & detection** preset.
-    1. Click **Choose this preset**.
 
-1. Provide general information:
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    1. In the **Name for Tolokers** field, enter `Are the traffic signs outlined correctly?`.
+    1. In the **Name to show Tolokers** field, enter `Are the traffic signs outlined correctly?`.
+
     1. In the **Description for Tolokers** field, enter `Look at the image and decide whether the traffic signs are outlined correctly or not`.
+
     1. Optionally add a **Private comment**.
 
-1. Edit the [task interface](../../glossary.md#task-interface). The output data format depends on the interface editor, so choose the same editor as in [Project 2](image-segmentation-project2.md#interface-tb-html).
+1. Edit the [task interface](../../glossary.md#task-interface). The output data format depends on the interface editor, so choose the same editor as in [Project 2](image-segmentation-project2.md).
 
    {% list tabs %}
 
@@ -173,15 +179,16 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
    {% endlist %}
 
+
 1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-    **Instructions:**
+    Instructions text:
 
     ```plaintext
-    Look at the image and answer the question: **Are all traffic signs outlined correctly?**
-    If there are, click **Yes**.
-    If there isn't, click **No**.
-    For example, road signs are outlined correctly, so the correct answer is **Yes**.
+    Look at the image and answer the question: "Are all traffic signs outlined correctly?"
+    If there are, click "Yes".
+    If there isn't, click "No".
+    For example, road signs are outlined correctly, so the correct answer is "Yes".
     ```
 
     {% note tip %}
@@ -190,7 +197,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     {% endnote %}
 
-1. Click **Create project**.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create_pool}
 

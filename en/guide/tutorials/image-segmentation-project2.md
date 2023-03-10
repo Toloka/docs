@@ -4,18 +4,24 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
 ## Create a project {#create-project}
 
-#### In the interface:
+In the interface:
 
 1. Choose a preset:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
+
+    1. Click **Do it myself**.
+
     1. Select the **Object recognition & detection** preset.
-    1. Click **Choose this preset**.
 
-1. Provide general information:
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    1. In **Name to show Tolokers**, enter `Outline traffic signs in the image`.
-    1. In **Description for Tolokers**, enter `Draw a box around all traffic signs in the image`.
+    1. In the **Name to show Tolokers** field, enter `Outline traffic signs in the image`.
+
+    1. In the **Description for Tolokers** field, enter `Draw a box around all traffic signs in the image`.
+
     1. Optionally add a **Private comment**.
 
 1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
@@ -80,9 +86,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
 1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-    #### Instructions text:
-
-    Click ![](../_images/tutorials/image-segmentation/rectangle-button.png) and draw a rectangle around all traffic signs in the image.
+    Instructions text: "Click ![](../_images/tutorials/image-segmentation/rectangle-button.png) and draw a rectangle around all traffic signs in the image".
 
     {% note tip %}
 
@@ -90,7 +94,7 @@ In this [project](../../glossary.md#project), Tolokers will select image areas t
 
     {% endnote %}
 
-    Click **Finish**.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create-pool}
 

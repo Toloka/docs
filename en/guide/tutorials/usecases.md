@@ -4,7 +4,7 @@ The tutorials will show you how to post tasks in Toloka. Choose the tutorial tha
 
 ## Before you start {#section_ndt_5b3_smb}
 
-Make sure you're [registered](../concepts/access.md) as a requester. We recommend that you go through tutorials in the [sandbox](../concepts/sandbox.md).
+Make sure you're [registered](../concepts/access.md) as a requester.
 
 ## List of examples {#section_qmm_vwz_mlb}
 
