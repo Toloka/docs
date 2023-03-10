@@ -8,13 +8,15 @@ In the interface:
 
 1. Choose a preset:
 
-    1. Click **Create a project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
     1. Click **Do it myself**.
 
     1. Select the **Object recognition & detection** preset.
 
-1. Provide general information:
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
     1. In the **Name to show Tolokers** field, enter `Outline traffic signs in the image`.
 
@@ -82,7 +84,7 @@ In the interface:
 
     {% endlist %}
 
-1. In the **Instructions for Tolokers** field, enter the [instructions](../../glossary.md#instructions).
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
     Instructions text: "Click ![](../_images/tutorials/image-segmentation/rectangle-button.png) and draw a rectangle around all traffic signs in the image".
 
@@ -92,9 +94,7 @@ In the interface:
 
     {% endnote %}
 
-1. In the upper-right corner, click **Save**.
-
-Learn more about working with the project in the [Project](../concepts/project.md) section.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create-pool}
 
