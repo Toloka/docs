@@ -4,6 +4,15 @@ A quiz component that counts only the first answered values.
 
 Returns a key value object with any type of data as value.
 
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/jiIPzTjC446QoL)
+
+{% cut "Components used in the example" %}
+
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+- [data.output](../operations/work-with-data.md): Output data.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
