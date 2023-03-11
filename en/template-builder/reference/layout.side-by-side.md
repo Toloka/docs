@@ -6,6 +6,19 @@ You can add selection buttons or a field for comment under the compared elements
 
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/buBN71oL3twVaP)
 
+{% cut "Components used in the example" %}
+
+- [action.set](action.set.md): Sets the value from `payload` in the data in the `data` property.
+- [plugin.hotkeys](plugin.hotkeys.md): Sets keyboard shortcuts for actions.
+- [layout.side-by-side](layout.side-by-side.md): Displays several data blocks of the same width on a single horizontal panel.
+- [view.image](view.image.md): Displays an image.
+- [view.list](view.list.md): Displays data in a list.
+- [field.radio-group](field.radio-group.md): Selects one value out of several options.
+- [field.textarea](field.textarea.md): Allows to enter milti-line text.
+- [condition.required](condition.required.md): Checks that the data is filled in.
+
+{% endcut %}
+
 Differences from the [layout.compare](layout.compare.md) component:
 
 - You can add buttons which allow hiding the elements. Use it if you need to compare, for example, 5 photos at once and need to choose between two.

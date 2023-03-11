@@ -13,6 +13,15 @@ In compact mode, controls stretch to the entire width and are located under each
 
 To add an extra panel with controls, use the `extraControls` property.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/xMWFLYEm44DXQH)
+
+{% cut "Components used in the example" %}
+
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Adds a block with text.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
