@@ -10,17 +10,17 @@ Gets responses for all the pool's task suites.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/assignments
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/assignments
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/assignments
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/assignments
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -65,9 +65,7 @@ Pool ID. ||
 || **user_id** | **string**
 
 Toloker ID. ||
-|| **has_more** | 
 
-{% include [has-more](../_includes/has-more.md) %} ||
 || **sort** | **string**
 
 Parameters to sort by:
@@ -103,17 +101,17 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/assignments?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/assignments?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -123,26 +121,32 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-[Information about responses](get-assignment-id.md) in the `items` array:
-
 ```json
 {"items" : [{task suite #1}, {task suite #2}, ... {task suite #n}], "has_more": true}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains [information about responses](get-assignment-id.md). ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}
