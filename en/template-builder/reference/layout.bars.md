@@ -11,7 +11,7 @@ The top bar is located at the top edge of the component, and the bottom one is a
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
-- [view.text](view.text.md): Adds a block with text.
+- [view.text](view.text.md): Adds an block with text.
 - [view.image](view.image.md): Adds a image.
 - [field.radio-group](field.radio-group.md): Adds radio buttons for selecting an answer option.
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
