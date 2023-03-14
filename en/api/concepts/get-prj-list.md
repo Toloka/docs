@@ -10,17 +10,17 @@ Gets the list of projects.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/projects
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/projects
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/projects
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/projects
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -33,7 +33,7 @@ Gets the list of projects.
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -56,9 +56,6 @@ To learn how to configure sorting, see [Sorting the list of objects](sorting.md)
 || **owner** | **string**
 
 Requester ID. ||
-|| **has_more** | 
-
-{% include [has-more](../_includes/has-more.md) %} ||
 || **Standard query parameters** | [limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte). ||
 |#
 
@@ -75,17 +72,17 @@ You can set up the display of the list of projects in parts (for example, 10 pro
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/projects?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/projects?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/projects?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/projects?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -95,26 +92,32 @@ You can set up the display of the list of projects in parts (for example, 10 pro
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/projects?sort=id&limit=10&id_gt=<ID of the last project from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/projects?sort=id&limit=10&id_gt=<ID of the last project from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/projects?sort=id&limit=10&id_gt=<id of the last project from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/projects?sort=id&limit=10&id_gt=<id of the last project from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-Contains a list of projects and their properties in the `items` array:
-
 ```json
 {"items": [{properties of project 1}, {properties of project 2}, ... {properties of project n}], "has_more": false}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains a list of projects and their properties. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

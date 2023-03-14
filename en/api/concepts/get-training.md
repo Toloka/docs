@@ -12,17 +12,17 @@ You can get the training pool ID from the [list of training pools](get-training-
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/trainings/<training_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/trainings/<training_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/trainings/<training_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/trainings/<training_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 

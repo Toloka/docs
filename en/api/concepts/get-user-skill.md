@@ -10,17 +10,17 @@ Gets a Toloker's skill value.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-skills/<id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-skills/<id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET ihttps://sandbox.toloka.dev/api/v1/user-skills/<id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET ihttps://sandbox.toloka.dev/api/v1/user-skills/<id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 

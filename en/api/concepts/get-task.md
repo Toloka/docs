@@ -10,17 +10,17 @@ Gets task data.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/tasks/<task_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/tasks/<task_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/tasks/<task_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/tasks/<task_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 

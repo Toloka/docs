@@ -6,15 +6,15 @@ Gets a list of Tolokers who have skills. With the [query parameters](#query-para
 
 - Get the list of all the Tolokers who have the specific skill using the `skill_id` query parameter:
 
-   ```bash
-   GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>
-   ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>
+  ```
 
 - Get the list of all the skills assigned to the specific Toloker using the `user_id` query parameter:
 
-   ```bash
-   GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>
-   ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>
+  ```
 
 ## Request {#request}
 
@@ -22,17 +22,17 @@ Gets a list of Tolokers who have skills. With the [query parameters](#query-para
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-skills
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-skills
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/user-skills
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/user-skills
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -44,7 +44,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -79,17 +79,17 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-skills?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-skills?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/user-skills?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/user-skills?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -99,26 +99,32 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-[Skill properties](get-user-skill.md#response) in the `items` array:
-
 ```json
 {"items" : [{<Toloker 1 skill 1 >}, {<Toloker 1 skill 2>}, ... {<Toloker 1 skill n>}, ... {<Toloker n skill 1>}, {<Toloker n skill 2>}, ... {<Toloker n skill n>}], "has_more": false}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains [skill properties](get-user-skill.md#response). ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}
