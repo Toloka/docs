@@ -65,6 +65,9 @@ Pool ID. ||
 || **user_id** | **string**
 
 Toloker ID. ||
+|| **has_more** | 
+
+{% include [has-more](../_includes/has-more.md) %} ||
 || **sort** | **string**
 
 Parameters to sort by:

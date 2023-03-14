@@ -57,6 +57,11 @@ The ID of the project that is blocked. ||
 Required if `scope=POOL`.
 
 The ID of the pool that is blocked. ||
+
+|| **has_more** | 
+
+{% include [has-more](../_includes/has-more.md) %} ||
+
 || **sort** | **string**
 
 Parameters to sort by:

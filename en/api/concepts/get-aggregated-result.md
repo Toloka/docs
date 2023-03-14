@@ -55,6 +55,9 @@ Parameters for sorting in ascending order:
 - `task_id` — Task ID.
 
 To change the sorting direction to descending, add a hyphen before the parameter: `sort=-task_id`. ||
+|| **has_more** | 
+
+{% include [has-more](../_includes/has-more.md) %} ||
 || **Standard query parameters** | [limit](./standard-query-parameters.md#limit), [task_id_gt](./standard-query-parameters.md#task_id_gt), [task_id_gte](./standard-query-parameters.md#task_id_gte), [task_id_lt](./standard-query-parameters.md#task_id_lt), [task_id_lte](./standard-query-parameters.md#task_id_lte). ||
 |#
 
