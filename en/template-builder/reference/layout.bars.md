@@ -12,7 +12,7 @@ The top bar is located at the top edge of the component, and the bottom one is a
 
 - [view.list](view.list.md): Displays data in a list.
 - [view.text](view.text.md): Adds a block with text.
-- [view.image](view.image.md): Image.
+- [view.image](view.image.md): Adds a image.
 - [field.radio-group](field.radio-group.md): Adds radio buttons for selecting an answer option.
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 - [condition.required](condition.required.md): Checks if at least one option is selected.

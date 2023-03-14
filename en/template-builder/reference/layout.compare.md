@@ -8,7 +8,7 @@ Selection buttons can be placed under each of the compared items. You can also a
 
 {% cut "Components used in the example" %}
 
-- [view.image](view.image.md): Image.
+- [view.image](view.image.md): Adds a image.
 - [field.radio-group](field.radio-group.md): Adds radio buttons for selecting an answer option.
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 
