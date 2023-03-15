@@ -12,33 +12,31 @@ Take a look at the example:Â the labeling interface includes a text block and bu
 
 - [field.text-annotation](../reference/field.text-annotation.md): A component for text segmentation.
 
-  {% cut "Show code" %}
+    {% cut "Show code" %}
 
-  ````json
-  {
-    "type": "field.text-annotation",
-    "content": {
-      "type": "data.input",
-      "path": "input"
+    ```json
+    {
+      "type": "field.text-annotation",
+      "content": {
+        "type": "data.input",
+        "path": "input"
+      }
     }
-   }
-  ````
+    ```
 
-  {% endcut %}
-
+    {% endcut %}
 
 - [condition.required](../reference/condition.required.md): Checks that the data is filled in.
 
-  {% cut "Show code" %}
+    {% cut "Show code" %}
 
-  ````json
-  {
-    "type": "condition.required"
-  }
+    ```json
+    {
+      "type": "condition.required"
+    }
+    ```
 
-  ````
-
-  {% endcut %}
+    {% endcut %}
 
 {% endcut %}
 
@@ -92,14 +90,14 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 {% cut "Show code" %}
 
 ```json
-  {
-    "type": "view.alert",
-    "theme": "info",
-    "content": {
-      "type": "view.text",
-      "content": "In the text provided, find information about the product and manufacturer and highlight it with different colors: red for product name, blue for brand, green for package size, pink for country of manufacture. If a word is misspelled, highlight it with yellow."
-    }
+{
+  "type": "view.alert",
+  "theme": "info",
+  "content": {
+    "type": "view.text",
+    "content": "In the text provided, find information about the product and manufacturer and highlight it with different colors: red for product name, blue for brand, green for package size, pink for country of manufacture. If a word is misspelled, highlight it with yellow."
   }
+}
   ```
 
 {% endcut %}
@@ -114,16 +112,17 @@ Assign keyboard shortcuts for selecting categories using [plugin.field.text-anno
 
 ```json
 "plugins": [
-    {
-      "type": "plugin.field.text-annotation.hotkeys",
-      "labels": [
-        "1",
-        "2",
-        "3",
-        "4",
-        "5"
-      ]
-    }
+  {
+    "type": "plugin.field.text-annotation.hotkeys",
+    "labels": [
+      "1",
+      "2",
+      "3",
+      "4",
+      "5"
+    ]
+  }
+]
 ```
 
 {% endcut %}
