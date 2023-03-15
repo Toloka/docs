@@ -10,17 +10,17 @@ Gets a list of created pools (including archived pools).
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/pools
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/pools
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/pools
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/pools
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +32,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -72,17 +72,17 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/pools?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/pools?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/pools?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/pools?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -92,26 +92,32 @@ You can set up the display of the list of pools in parts (for example, 10 pools 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/pools?sort=id&limit=10&id_gt=<ID of the last pool from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-Contains a list of pools and their properties in the `items` array:
-
 ```json
 {"items": [{parameters_of_pool_1}, {parameters_of_pool_2}, ... {parameters_of_pool__n_}], "has_more": false}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains a list of pools and their properties. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

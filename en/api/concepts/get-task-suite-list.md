@@ -10,17 +10,17 @@ Gets the list of task suites in the pool.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/task-suites
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/task-suites
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +32,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -73,17 +73,17 @@ You can set up the display of the list of task suites in parts (for example, 10 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -93,26 +93,32 @@ You can set up the display of the list of task suites in parts (for example, 10 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-Contains task suite data in the `items` array.
-
 ```json
 {"items" : [{task suite 1}, {task suite 2}, ... {task suite n}], "has_more": true}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains task suite data. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

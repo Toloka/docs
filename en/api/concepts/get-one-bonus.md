@@ -10,17 +10,17 @@ Gets the properties of the reward issued.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-bonuses/<bonus_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-bonuses/<bonus_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/user-bonuses/<bonus_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/user-bonuses/<bonus_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 

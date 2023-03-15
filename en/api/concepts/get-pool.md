@@ -12,17 +12,17 @@ You can get the pool ID from the [list of pools](get-pool-list.md).
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/pools/<pool_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/pools/<pool_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/pools/<pool_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/pools/<pool_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 

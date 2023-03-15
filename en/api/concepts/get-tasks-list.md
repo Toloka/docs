@@ -10,17 +10,17 @@ Gets the list of tasks in the pool.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/tasks
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/tasks
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/tasks
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/tasks
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +32,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -66,17 +66,17 @@ You can set up the display of the list of tasks in parts (for example, 10 tasks 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/tasks?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/tasks?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/tasks?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/tasks?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -86,26 +86,32 @@ You can set up the display of the list of tasks in parts (for example, 10 tasks 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/tasks?sort=id&limit=10&id_gt=<ID of the last task from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-Contains task data in the `items` array.
-
 ```json
 {"items" : [{task 1}, {task 2}, ... {task n}], "has_more": true}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains task data. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

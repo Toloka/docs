@@ -16,17 +16,17 @@ Files are downloaded not in the order in which they were uploaded to the server.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/attachments
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/attachments
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/attachments
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/attachments
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -38,7 +38,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -81,17 +81,17 @@ You can set up the display of the list of files in parts (for example, 10 files 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/attachments?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/attachments?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/attachments?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/attachments?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -101,26 +101,32 @@ You can set up the display of the list of files in parts (for example, 10 files 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/attachments?sort=id&limit=10&id_gt=<ID of the last file from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/attachments?sort=id&limit=10&id_gt=<ID of the last file from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/attachments?sort=id&limit=10&id_gt=<ID of the last file from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/attachments?sort=id&limit=10&id_gt=<ID of the last file from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-[Information about files](get-attachment.md) in the `items` array:
-
 ```json
 {"items" : [{file #1}, {file #2}, ... {file #n}], "has_more": false}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains [information about files](get-attachment.md). ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

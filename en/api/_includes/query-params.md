@@ -1,0 +1,1 @@
+Query parameters are specified in the link after the question mark and separated by `&`.

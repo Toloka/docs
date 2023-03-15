@@ -10,17 +10,17 @@ Gets data for multiple active subscriptions.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/webhook-subscriptions
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/webhook-subscriptions
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +32,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -77,17 +77,17 @@ You can set up the display of the list of subscriptions in parts (for example, 1
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -97,17 +97,17 @@ You can set up the display of the list of subscriptions in parts (for example, 1
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions?sort=id&limit=10&id_gt=<ID of the last subsciption from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -138,14 +138,14 @@ Contains a list of subscriptions with information about each of them in JSON for
 ```
 
 #|
-|| Parameter | Overview ||
+|| Property | Description ||
 || **items[]** | **array of objects**
 
 An array of objects with information about the requested subscriptions. ||
-|| **webhook_url** | **string**
+|| **items[].webhook_url** | **string**
 
 The URL that notifications will be sent to. ||
-|| **event_type** | **string**
+|| **items[].event_type** | **string**
 
 Event type.
 
@@ -159,23 +159,16 @@ Acceptable values:
 - `ASSIGNMENT_EXPIRED` — A task was taken by the Toloker who failed to complete it within the time allowed or rejected it before it expired.
 - `ASSIGNMENT_APPROVED` — A task was completed by the Toloker and approved by the requester.
 - `ASSIGNMENT_REJECTED` — A task was completed by the Toloker but rejected by the requester. ||
-|| **pool_id** | **string**
+|| **items[].pool_id** | **string**
 
 ID of the pool that the subscription was created for. ||
-|| **id** | **string**
+|| **items[].id** | **string**
 
 ID of the subscription. ||
-|| **created** | **string**
+|| **items[].created** | **string**
 
 The date and time when the subscription was created (UTC). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
-|| **has_more** | **boolean**
-
-Shows whether the list is complete.
-
-Acceptable values:
-
-- `true` — Not all elements are included in the output due to restrictions in the `limit` parameter.
-- `false` — The output lists all the items. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
 |#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

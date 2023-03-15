@@ -10,17 +10,17 @@ Gets the list of operations.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/operations
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/operations
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/operations
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/operations
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +32,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -69,10 +69,16 @@ To learn how to configure sorting, see [Sorting the list of objects](sorting.md)
 
 ## Response {#response}
 
-Contains a list of operations in the `items` array:
-
 ```json
 {"items": [{operation details 1}, {operation details 2}, ... {operation details n}], "has_more": false}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains a list of operations. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

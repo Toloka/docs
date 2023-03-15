@@ -10,17 +10,17 @@ Gets operation details.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/operations/<operation_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/operations/<operation_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 

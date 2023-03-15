@@ -10,17 +10,17 @@ Gets a task suite.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/task-suites/<task_suite_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/task-suites/<task_suite_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
