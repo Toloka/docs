@@ -61,7 +61,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/BR9dHCmQ3yQx22)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/CaVc0G9O44eWpp)
 
 ## Add a response field {#add-text-area}
 
@@ -106,39 +106,6 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/ahNzXcDI3yQzD3)
 
-## Add conditions {#dependencies}
-
-The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected.
-
-{% cut "Show code" %}
-
-```json
-{
-    "type": "helper.if",
-    "condition": {
-      "type":"condition.equals",
-      "data":{
-        "type":"data.output",
-        "path": "answer"
-      },
-    "to": "error"
-    },
-    "then": {
-      "type": "field.textarea",
-      "label": "Have you found a typo?",
-      "placeholder":"Enter text",
-      "data": {
-        "type": "data.output",
-        "path": "comment"
-        }
-    }
-  }
-```
-
-{% endcut %}
-
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/rysQ_p7a3y9KTo)
-
 ## Add keyboard shortcuts {#add-shortcuts}
 
 Assign keyboard shortcuts for selecting categories using [plugin.field.text-annotation.hotkeys](../reference/plugin.field.text-annotation.hotkeys.md) configuration.
@@ -155,13 +122,12 @@ Assign keyboard shortcuts for selecting categories using [plugin.field.text-anno
         "3",
         "4",
         "5"
-      ],
-      "remove": "c"
+      ]
     }
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/DlBr7FcY3zEzBP)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/W5ddd6ZJ44eZbB)
 
 {% include [contact-support](../_includes/contact-support.md) %}
