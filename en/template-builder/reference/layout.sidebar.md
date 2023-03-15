@@ -17,8 +17,11 @@ To add an extra panel with controls, use the `extraControls` property.
 
 {% cut "Components used in the example" %}
 
-- [view.list](view.list.md): Displays data in a list.
-- [view.text](view.text.md): Adds a block with text.
+- [view.image](view.image.md): Displays an image.
+- [view.alert](view.alert.md): Creates a color block to highlight important information.
+- [field.radio-group](field.radio-group.md): Selects one value out of several options. 
+- [condition.required](condition.required.md): Checks that the data is filled in.
+- data.output: Takes the responses to the task questions.
 
 {% endcut %}
 
