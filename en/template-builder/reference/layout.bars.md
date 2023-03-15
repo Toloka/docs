@@ -6,6 +6,19 @@ You can use other components inside each part of this component, such as images,
 
 The top bar is located at the top edge of the component, and the bottom one is at the bottom edge. The content is placed between the bars and takes up all available space.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/QzAxy9hY44Wxcf)
+
+{% cut "Components used in the example" %}
+
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Adds a block with a text.
+- [view.image](view.image.md): Adds an image.
+- [field.radio-group](field.radio-group.md): Adds radio buttons for selecting an answer option.
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
