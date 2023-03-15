@@ -17,11 +17,11 @@ To add an extra panel with controls, use the `extraControls` property.
 
 {% cut "Components used in the example" %}
 
-- [view.image](view.image.md): Displays an image.
+- [view.image](view.image.md): Adds an image.
 - [view.alert](view.alert.md): Creates a color block to highlight important information.
-- [field.radio-group](field.radio-group.md): Selects one value out of several options. 
-- [condition.required](condition.required.md): Checks that the data is filled in.
-- data.output: Takes the responses to the task questions.
+- [field.radio-group](field.radio-group.md): Adds a group of radio buttons for selecting an answer option.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 
 {% endcut %}
 

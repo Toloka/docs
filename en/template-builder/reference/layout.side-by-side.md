@@ -11,10 +11,10 @@ You can add selection buttons or a field for comment under the compared elements
 - [action.set](action.set.md): Sets the value from `payload` in the data in the `data` property.
 - [plugin.hotkeys](plugin.hotkeys.md): Sets keyboard shortcuts for actions.
 - [layout.side-by-side](layout.side-by-side.md): Displays several data blocks of the same width on a single horizontal panel.
-- [view.image](view.image.md): Displays an image.
+- [view.image](view.image.md): Adds an image.
 - [view.list](view.list.md): Displays data in a list.
-- [field.radio-group](field.radio-group.md): Selects one value out of several options.
-- [field.textarea](field.textarea.md): Allows to enter milti-line text.
+- [field.radio-group](field.radio-group.md): Adds a group of radio buttons for selecting an answer option.
+- [field.textarea](field.textarea.md): Adds a text block to enter milti-line text.
 - [condition.required](condition.required.md): Checks that the data is filled in.
 
 {% endcut %}
