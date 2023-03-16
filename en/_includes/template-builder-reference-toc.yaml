@@ -173,6 +173,8 @@ items:
   items:
   - name: List of data sources
     href: ../template-builder/reference/datas.md
+  - name: data.assignment-id
+    href: ../template-builder/reference/data.assignment-id.md
   - name: data.location
     href: ../template-builder/reference/data.location.md
 - name: Actions
