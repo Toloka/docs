@@ -13,6 +13,18 @@ In compact mode, controls stretch to the entire width and are located under each
 
 To add an extra panel with controls, use the `extraControls` property.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/8DLgvKE644n8C6)
+
+{% cut "Components used in the example" %}
+
+- [view.image](view.image.md): Adds an image.
+- [view.alert](view.alert.md): Creates a color block to highlight important information.
+- [field.radio-group](field.radio-group.md): Adds a group of radio buttons for selecting an answer option.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
