@@ -130,7 +130,7 @@ items:
         href: guide/concepts/solution-architecture.md
       - name: Initial project settings
         items:
-          - name: Create a project
+          - name: Creating a project
             href: guide/concepts/project.md
           - name: Editing a project
             href: guide/concepts/edit-project.md
