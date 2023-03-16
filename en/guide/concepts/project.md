@@ -14,9 +14,7 @@ You can first create and test your project for free in the [sandbox](sandbox.md)
 
 {% endnote %}
 
-To create a project, follow the instructions:
-
-In the interface:
+To create a project in the interface:
 
 1. Choose a preset:
 
