@@ -10,17 +10,17 @@ Gets responses for all the pool's task suites.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/assignments
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/assignments
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/assignments
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/assignments
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -65,6 +65,7 @@ Pool ID. ||
 || **user_id** | **string**
 
 Toloker ID. ||
+
 || **sort** | **string**
 
 Parameters to sort by:
@@ -84,15 +85,7 @@ All dates use the ISO 8601 format `YYYY-MM-DDThh:mm:ss[.sss]`.
 {% endnote %}
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** |
-* [limit](./standard-query-parameters.md#limit).
-* [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte).
-* [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte).
-* [submit_gt](./standard-query-parameters.md#submit_gt), [submit_gte](./standard-query-parameters.md#submit_gte), [submit_lt](./standard-query-parameters.md#submit_lt), [submit_lte](./standard-query-parameters.md#submit_lte).
-* [acceptedt_gt](./standard-query-parameters.md#accepted_gt), [accepted_gte](./standard-query-parameters.md#accepted_gte), [accepted_lt](./standard-query-parameters.md#accepted_lt), [accepted_lte](./standard-query-parameters.md#accepted_lte).
-* [rejected_gt](./standard-query-parameters.md#rejected_gt), [rejected_gte](./standard-query-parameters.md#rejected_gte), [rejected_lt](./standard-query-parameters.md#rejected_lt), [rejected_lte](./standard-query-parameters.md#rejected_lte).
-* [skipped_gt](./standard-query-parameters.md#skipped_gt), [skipped_gte](./standard-query-parameters.md#skipped_gte), [skipped_lt](./standard-query-parameters.md#skipped_lt), [skipped_lte](./standard-query-parameters.md#skipped_lte).
-* [expired_gt](./standard-query-parameters.md#expired_gt), [expired_gte](./standard-query-parameters.md#expired_gte), [expired_lt](./standard-query-parameters.md#expired_lt), [expired_lte](./standard-query-parameters.md#expired_lte). ||
+|| **Standard query parameters** | [limit](./standard-query-parameters.md#limit),  [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte), [submit_gt](./standard-query-parameters.md#submit_gt), [submit_gte](./standard-query-parameters.md#submit_gte), [submit_lt](./standard-query-parameters.md#submit_lt), [submit_lte](./standard-query-parameters.md#submit_lte), [acceptedt_gt](./standard-query-parameters.md#accepted_gt), [accepted_gte](./standard-query-parameters.md#accepted_gte), [accepted_lt](./standard-query-parameters.md#accepted_lt), [accepted_lte](./standard-query-parameters.md#accepted_lte), [rejected_gt](./standard-query-parameters.md#rejected_gt), [rejected_gte](./standard-query-parameters.md#rejected_gte), [rejected_lt](./standard-query-parameters.md#rejected_lt), [rejected_lte](./standard-query-parameters.md#rejected_lte), [skipped_gt](./standard-query-parameters.md#skipped_gt), [skipped_gte](./standard-query-parameters.md#skipped_gte), [skipped_lt](./standard-query-parameters.md#skipped_lt), [skipped_lte](./standard-query-parameters.md#skipped_lte), [expired_gt](./standard-query-parameters.md#expired_gt), [expired_gte](./standard-query-parameters.md#expired_gte), [expired_lt](./standard-query-parameters.md#expired_lt), [expired_lte](./standard-query-parameters.md#expired_lte). ||
 |#
 
 ## Query example {#request-example}
@@ -108,17 +101,17 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/assignments?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/assignments?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -128,24 +121,32 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-[Information about responses](get-assignment-id.md) in the `items` array:
-
 ```json
 {"items" : [{task suite #1}, {task suite #2}, ... {task suite #n}], "has_more": true}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains [information about responses](get-assignment-id.md). ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

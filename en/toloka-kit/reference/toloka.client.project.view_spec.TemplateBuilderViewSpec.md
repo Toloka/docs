@@ -1,5 +1,5 @@
 # TemplateBuilderViewSpec
-`toloka.client.project.view_spec.TemplateBuilderViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/view_spec.py#L115)
+`toloka.client.project.view_spec.TemplateBuilderViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/view_spec.py#L122)
 
 ```python
 TemplateBuilderViewSpec(
@@ -14,28 +14,28 @@ TemplateBuilderViewSpec(
 )
 ```
 
-A template builder view specification that defines an interface with
+A task interface defined with the [TemplateBuilder](toloka.client.project.template_builder.TemplateBuilder.md).
 
 
-template builder components
+See also [Template Builder](https://toloka.ai/en/docs/template-builder/) in the guide.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`view`|**-**|
-`plugins`|**-**|
-`vars`|**-**|
-`core_version`|**Optional\[str\]**|<p>Default template components version. Most likely you do not need to change this parameter.</p>
-`infer_data_spec`|**Optional\[bool\]**|<p>You can configure the data specification automatically or manually. You can change the way the specification is configured using the infer_data_spec option:</p> <ul> <li>True – The specifications of input and output data are generated automatically depending on the task interface settings.</li> <li>False – You can configure the specification manually. In this case, automatic detection of input and output data doesn&#x27;t work.   You may need to enable this option if: <ul> <li>You don&#x27;t want the specification version to be affected by changes in the instructions or other project fields.</li> <li>You have fields that you need but they become optional or are deleted after automatic generation.</li> </ul> </li> </ul>
+`view`|**-**|<p>A top level component like [SideBySideLayoutV1](toloka.client.project.template_builder.layouts.SideBySideLayoutV1.md).</p>
+`plugins`|**-**|<p>An array of plugins.</p>
+`vars`|**-**|<p>Reusable data. It is referenced with the [RefComponent](toloka.client.project.template_builder.base.RefComponent.md).</p>
+`core_version`|**Optional\[str\]**|<p>The default template components version. Most likely, you do not need to change this parameter.</p>
+`infer_data_spec`|**Optional\[bool\]**|<ul> <li>`True` – The specifications of input and output data are generated automatically depending on the task interface settings.</li> <li>`False` – You configure the specifications manually, if: <ul> <li>You don&#x27;t want the specification to be affected by changes in instructions or other project parameters.</li> <li>You have to change automatically generated specifications to suite your needs.</li> </ul> </li> </ul>
 
 **Examples:**
 
-How to declare simple interface:
+Creating a simple interface based on [ListViewV1](toloka.client.project.template_builder.view.ListViewV1.md):
 
 ```python
 import toloka.client.project.template_builder as tb
-project_interface = toloka.project.view_spec.TemplateBuilderViewSpec(
+project_interface = toloka.client.project.view_spec.TemplateBuilderViewSpec(
     view=tb.view.ListViewV1(
         items=[header, output_field, radiobuttons],
         validation=some_validation,

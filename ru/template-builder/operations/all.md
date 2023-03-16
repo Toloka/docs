@@ -29,5 +29,4 @@
 - [Настройка отображения заданий](set-plugin-toloka.md)
 - [Вставка ссылок](internet-search.md)
 
-
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

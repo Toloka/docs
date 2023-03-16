@@ -38,3 +38,5 @@ You can set a list of dates that a Toloker can't select.
   || `placeholder` | _string_ | A semi-transparent label that is shown in the box when it is empty. ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

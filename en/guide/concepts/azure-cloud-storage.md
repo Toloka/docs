@@ -2,7 +2,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}You can use any photo hosting service to add a small number of images, such as [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). {% endif %} This way you can quickly get direct links to your images to add them to the task file or instructions.
+You can use any photo hosting service to add a small number of images, such as [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). This way you can quickly get direct links to your images to add them to the task file or instructions.
 
 {% endnote %}
 
@@ -36,7 +36,7 @@ To get links to files:
 
 1. Enter the name of the resource group and your account.
 
-1. Select the region closest to your Tolokers. For example, for Tolokers from Germany: {% if locale == "en-com" %}**Region → (Europe) West Central Germany**{% endif %}.
+1. Select the region closest to your Tolokers. For example, for Tolokers from Germany: **Region → (Europe) West Central Germany**.
 
     {% cut "What it looks like in the interface" %}
 
@@ -108,23 +108,15 @@ You can set up the lifetime of files in the container so that they are automatic
 
     Links look like this:
 
-    {% if locale == "en-com" %}
-
     ```plaintext
     https://<storage-account>.blob.core.windows.net/<container>/<filename>
     ```
 
-    {% endif %}
-
     The link in the folder looks like this:
-
-    {% if locale == "en-com" %}
 
     ```plaintext
     https://<storage-account>.blob.core.windows.net/<container>/<file-path>/<filename>
     ```
-
-    {% endif %}
 
     {% note info %}
 

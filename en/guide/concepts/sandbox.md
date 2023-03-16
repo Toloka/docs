@@ -8,9 +8,17 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 {% endnote %}
 
+## Usage rules {#usage-rules}
+
+1. The sandbox is intended for testing tasks with small batches of data. Labeling an entire dataset is considered unfair usage of the service, unless you have a special agreement with us.
+
+1. The sandbox limits the number of trusted Tolokers and submitted tasks for testing your project. Limits are set by Toloka admins.
+
+If you need a private data labeling environment for your own team, [request](../troubleshooting/support.md) the in-house data labeling option.
+
 ## How to run a project in the sandbox {#section_zmz_t4z_mlb}
 
-1. Register in the sandbox as a requester. To do this, follow the [link]({{ sandbox }}).
+1. [Register in the sandbox]({{ sandbox }}) as a requester.
 
     {% note tip %}
 
@@ -20,7 +28,7 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 1. Configure and launch your project:
 
-    - A list of instructions is provided in [Tutorials for popular tasks](usecases.md).
+    - A list of instructions is provided in [Tutorials for popular tasks](../tutorials/usecases.md).
 
     - General instructions in the [Starting and tuning a project](main-steps.md) section.
 
@@ -28,7 +36,7 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 To complete your tasks in the sandbox:
 
-1. Register in the sandbox as a Toloker (see the instructions in the [user documentation]({{ user-documentation }}) ).
+1. Register as a Toloker (see the instructions in the [user documentation]({{ user-documentation }})).
 
     {% note alert %}
 
@@ -36,11 +44,11 @@ To complete your tasks in the sandbox:
 
     {% endnote %}
 
-1. Log in to the sandbox using the requester account.
+1. Log in to the [Sandbox]({{ sandbox }}) using the requester account.
 
-1. Open the [Tolokers]({{ users }}) page and click {% if locale == "en-com" %}**Add trusted Tolokers**{% endif %}.
+1. Open the [Tolokers]({{ users }}) page and click **Add trusted Tolokers**.
 
-1. Click {% if locale == "en-com" %}**Add Toloker**{% endif %} and enter the case-sensitive username of the created Toloker.
+1. Click **Add Toloker** and enter the case-sensitive username of the created Toloker.
 
     Only trusted Tolokers can access your tasks.
 
@@ -58,11 +66,11 @@ To move tasks from the sandbox to the production version:
 
 1. Link the sandbox and production version accounts:
 
-    1. Open the {% if locale == "en-com" %}**Integrations**{% endif %} tab in the production version on the [profile]({{ profile }}) page, click **Get OAuth token**, and copy the OAuth token displayed.
+    1. Open the **Integrations** tab in the production version on the [profile]({{ profile }}) page, click **Get OAuth token**, and copy the OAuth token displayed.
 
     1. Open the same tab in the sandbox on the [profile]({{ sandbox-profile }}) page, paste the copied token into the **Main Toloka OAuth token** field, and click **Add OAuth token**.
 
-1. Go to the project page in the sandbox and click {% if locale == "en-com" %}**![Drop-down button](../_images/drop-down.svg) → ![Export button](../_images/location-job/project/export.svg) Export**{% endif %}.
+1. Go to the project page in the sandbox and click **![Drop-down button](../_images/drop-down.svg) → ![Export button](../_images/location-job/project/export.svg) Export**.
 
 1. Choose the pools to export and click **Export**.
 
@@ -70,110 +78,28 @@ To move tasks from the sandbox to the production version:
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I work with the Sandbox?" %}
+{% include [faq-work-with-sandbox](../_includes/faq/sandbox/work-with-sandbox.md) %}
 
-[Register]({{ sandbox }}) as a requester in the sandbox.
+{% include [faq-see-pool-as-toloker](../_includes/faq/sandbox/see-pool-as-toloker.md) %}
 
-[Register]({{ sandbox-for-performers }}) as a Toloker using another account.
+{% include [faq-same-account](../_includes/faq/sandbox/same-account.md) %}
 
-In your requester account, add your Toloker account to your trusted list.
+{% include [troubleshooting-export-error](../_includes/troubleshooting/sandbox/export-error.md) %}
 
-Create and run a task. It will appear in the list of tasks for your trusted users. For more information, see [Help](sandbox.md).
+{% include [faq-check-mobile-version](../_includes/faq/sandbox/check-mobile-version.md) %}
 
-{% endcut %}
+{% include [faq-copy-from-sandbox](../_includes/faq/sandbox/copy-from-sandbox.md) %}
 
-{% cut "How do I see my pool through the eyes of a Toloker?" %}
+{% include [troubleshooting-submit](../_includes/troubleshooting/sandbox/submit.md) %}
 
-To test your task, add yourself as a trusted Toloker in the Sandbox. To do this, on the **Tolokers** page, click **Add trusted users**. Enter the username for the Toloker's account (case-sensitive).
+{% include [faq-move-control-tasks](../_includes/faq/sandbox/move-control-tasks.md) %}
 
-{% endcut %}
+{% include [troubleshooting-dont-see-task](../_includes/troubleshooting/sandbox/dont-see-task.md) %}
 
-{% cut "Is it possible to use the same account for the Sandbox and the public Toloka version?" %}
+{% include [troubleshooting-cant-add-trusted-user](../_includes/troubleshooting/sandbox/cant-add-trusted-user.md) %}
 
-No, you need a separate account for each version of Toloka. To create a task in the [Sandbox](../../glossary.md#sandbox), [register](access.md) in it as a requester. To complete your own task, register another account for yourself as a Toloker.
+{% include [faq-overlap](../_includes/faq/pool-setup/overlap.md) %}
 
-{% endcut %}
-
-{% cut "What do I do if an error occurs on the server when I try to export a project from the Sandbox?" %}
-
-#### Try exporting the project without pools.
-
-- Select an exported project and don't select pools in the window that opens.
-- Click **Export**.
-
-#### If the error persists, refresh the token.
-
-- Go to [ Yandex ID]({{ passport-profile }}).
-- Under **Sign in and device history**, click **Log out from all devices**.
-- Request new tokens in the Sandbox and main environment.
-- Update the token in the [Sandbox]({{ sandbox-profile-integration }}) **Profile**.
-
-{% endcut %}
-
-{% cut "How do I check my project in the mobile version of Toloka?" %}
-
-To do this, you will need a Sandbox version of the Toloka app. [Write to support](../troubleshooting/support.md#support-work-toloka) to get it.
-
-{% endcut %}
-
-{% cut "Will a copy of the project exported from the Sandbox be updated in the main version if I edit the original?" %}
-
-You won't be able to update a previously exported project. If you clone a project from the sandbox again, its current copy is added. The old project doesn't change.
-
-{% endcut %}
-
-{% cut "Why isn't anything happening when a test Toloker clicks **Submit** in the sandbox?" %}
-
-Use your requester account to preview the pool and check whether it's possible to submit a task. If this fails, most likely there is an error in your project.
-
-{% endcut %}
-
-{% cut "How do I move control tasks from the Sandbox to the main pool?" %}
-
-The tasks themselves are not exported, only the project configuration and the settings of the selected pool. You can download the completed tasks from the pool in the Sandbox and import them to the exported pool.
-
-To download only the control tasks (if you completed them in the interface), go to **Mark up**, then click **Control tasks** and **Download**.
-
-{% endcut %}
-
-{% cut "Why don't I see my task in the Sandbox?" %}
-
-Make sure that:
-
-1. The [pool](../../glossary.md#pool) is started.
-
-1. The Toloker is added as a trusted.
-
-1. The trusted user is registered in the sandbox as a Toloker.
-
-1. The trusted user didn't use social networks when registering.
-
-1. Your trusted user matches the [filters](../../glossary.md#filters) you set.
-
-{% endcut %}
-
-{% cut "I can't add a trusted user." %}
-
-Possible reasons:
-
-- The Toloker isn't registered in the sandbox. The account you registered in the Toloka production version won't work. Make sure you have specified the correct _Toloker's_ account as a trusted one.
-
-- The Toloker's account is authorized via social networks.[Register]({{ register }}) a new user in Yandex.
-
-{% endcut %}
-
-{% cut "What overlap should I set?" %}
-
-Overlap defines how many Tolokers complete the same pool task.
-
-The best overlap is an overlap that provides satisfying quality of results. For most tasks that are not [reviewed](../../glossary.md#assignment-review), overlap from “3” to “5” is enough. If the tasks are simple, overlap of “3” is likely to be enough. For tasks that are reviewed, set overlap to “1”.
-
-{% endcut %}
-
-{% cut "Can I change overlap after the pool is started?" %}
-
-Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
-
-{% endcut %}
+{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

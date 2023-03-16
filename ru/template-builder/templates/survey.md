@@ -4,7 +4,7 @@
 
 В Толоке есть пресет **Опрос потребителей**. В нем уже настроена валидация и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TPoP7)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/oHgSjQZ73twAvb)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -19,14 +19,13 @@
 
 - Если от исполнителя требуется вводить длинный текст, то добавьте поле для многострочного текста [field.textarea](../reference/field.textarea.md) вместо [field.text](../reference/field.text.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TPoXh)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/0W-Avtni3twBGH)
 
 - Добавьте компонент [field.button-radio-group](../reference/field.button-radio-group.md) в виде кнопок. Кнопки лучше подходят, когда в вопросе 2–4 варианта с короткими названиями. Если вариантов много, то лучше использовать переключатель [field.radio-group](../reference/field.radio-group.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TWCNH)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/FZYN7s7r3twBWA)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
-
 
 ## Выделить блоки вопросов {#add-group-divider}
 
@@ -38,13 +37,13 @@
 
   Используйте компонент [view.group](../reference/view.group.md) — выделение с помощью рамки.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TTSKm)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/WkUDpH_I3twBgh)
 
 - Горизонтальный разделитель
 
   Используйте компонент [view.divider](../reference/view.divider.md) — горизонтальный разделитель.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/TREmc)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/SM5ZPsEB3twByk)
 
 {% endlist %}
 
@@ -52,6 +51,6 @@
 
 С помощью [helper.switch](../reference/helper.switch.md) можно показывать элемент интерфейса только при выборе определенного ответа. В примере после нажатия одной из двух кнопок исполнителю предлагается соответствующий список вариантов.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TTUeE)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/kI2KdB_P3twCBV)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

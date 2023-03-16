@@ -71,3 +71,9 @@ If the pool is archived, an empty response with status 409 is returned.
 {% endnote %}
 
 Contains updated information about the pool (see the description in the [Create a pool](create-pool.md#response) section).
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/pool-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

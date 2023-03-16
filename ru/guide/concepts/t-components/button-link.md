@@ -4,7 +4,7 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку с проверкой перехода по ссылке в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/operations/internet-search.md#action.open-link){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/template-builder/operations/internet-search.md#action.open-link){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку с проверкой перехода по ссылке в [Конструкторе шаблонов](../../../template-builder/operations/internet-search.md#action.open-link).
 
 {% endnote %}
 
@@ -18,19 +18,9 @@
 
 Чтобы добавить кнопку со ссылкой в [интерфейс задания](../../../glossary.md#task-interface), используйте компонент `{{field type="button-clicked" name="<название выходного поля>"}}`. Например:
 
-{% if locale == "ru-ru" %}
-
 ```plaintext
 {{field type="button-clicked" name="ads" label="Нажми меня" href="https://yandex.ru" action=true}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```plaintext
-{{field type="button-clicked" name="ads" label="Click me" href="https://yandex.ru" action=true}}
-```
-
-{% endif %}
 
 Полный список параметров см. в [таблице](#parametry).
 

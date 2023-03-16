@@ -4,7 +4,7 @@
 
 В Толоке есть пресет  **Сбор контактов организаций**. В нем уже настроена валидация и внешний вид задания. В этом пресете исполнителю предлагается ввести контактную информацию об организации на основе поиска данных в сети.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/USPkB)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/4CMD9se23vtHKd)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -24,30 +24,29 @@
 
 - Если от исполнителя требуется вводить длинный текст, то добавьте поле для многострочного текста [field.textarea](../reference/field.textarea.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UvUze)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/7ZKw-Bsh3vtYQv)
 
 - Если от исполнителя требуется ввести число, добавьте поле [field.number](../reference/field.number.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Uq9Tb)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/yfv1amPQ3xDhDP)
 
 - Если от исполнителя требуется найти в интернете файл, добавьте поле для выбора файла [field.file](../reference/field.file.md). Например, если нужно загрузить фото с определенным предметом на нем.
 
   В режиме проверки задания загруженные изображения появятся автоматически. Изображения можно просматривать, поворачивать и переключаться между ними.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/Uq7p4)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/b_0fklI-3xDmZf)
 
 - Если от исполнителя требуется найти и вставить ссылку на определенную страницу с этого сайта, добавьте компонент [condition.same-domain](../reference/condition.same-domain.md). Компонент проверит, что ссылка с того домена, который требуется.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UvVLo)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/L8s1rNan3xDnAc)
 
 Если вам не подходит этот пресет, посмотрите другие примеры в этом разделе.
-
 
 ## Добавить поле для выбора вариантов ответа {#add-radio-group}
 
 Если от исполнителя требуется перейти по ссылке поиска и ответить на вопрос, добавьте поле [field.radio-group](../reference/field.radio-group.md) для выбора одного из вариантов ответа.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/RvcVV)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/_4kpBqbj3x6uLQ)
 
 ## Добавить картинку и поле для ввода даты {#add-image-date}
 
@@ -59,7 +58,7 @@
 - поле для ввода короткого текста [field.text](../reference/field.text.md);
 - поле для ввода даты рождения [field.date](../reference/field.date.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UvVXx)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/eVk1w9AI3vuAGm)
 
 ## Разделить интерфейс задания на колонки {#add-layout-columns}
 
@@ -73,6 +72,6 @@
 - кнопки вариантов ответа [field.button-radio-group](../reference/field.button-radio-group.md);
 - компонент [condition.schema](../reference/condition.schema.md) проверяет формат введенных данных, в данном случае — форматы ИНН и ОГРН.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UqN5A)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/YIji61V83tw8Ak)
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)

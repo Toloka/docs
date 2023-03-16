@@ -85,3 +85,5 @@ The date when the file was uploaded to Toloka. ||
 
 MIME type of the data. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

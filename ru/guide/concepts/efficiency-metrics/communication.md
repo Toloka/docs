@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Общение с исполнителями{% endif %}{% if locale == "en-com" %}Communication issues{% endif %}
+# Общение с исполнителями
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

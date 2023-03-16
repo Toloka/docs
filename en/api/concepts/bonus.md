@@ -12,6 +12,8 @@ POST | [/user-bonuses](create-bonus.md) | Issues rewards to Tolokers.
 GET | [/user-bonuses](get-bonus-list.md) | Gets a list of rewards issued.
 GET | [/user-bonuses/<bonus_id>](get-one-bonus.md) | Gets the properties of the reward issued.
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [More information about rewards](../../guide/concepts/bonus.md)
+- [{#T}](../../guide/concepts/bonus.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

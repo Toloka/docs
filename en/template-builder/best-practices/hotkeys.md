@@ -34,26 +34,25 @@ Use a separate plugin to configure shortcuts: [plugin.hotkeys](../reference/plug
 
 In this example, pressing **P** triggers the [action.play-pause](../reference/action.play-pause.md) action. It starts or pauses playback in the player. The player is specified in the `view` property by using the [$ref](reuse.md) structure, which links to another place in the configuration.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/kr6WCGqP3YbEYU)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/Xgp6T_QW3ttAao)
 
 {% note tip %}
 
-Mind the keyboard layout when setting up shortcuts: if you choose a character that looks similar in the Cyrillic and Latin layouts, it might confuse Russian-speaking Tolokers.
+Mind the keyboard layout when setting up shortcuts: if you choose a character that looks similar in the Cyrillic and Latin layouts, it might confuse Tolokers.
 
 {% endnote %}
-
 
 ## Radio buttons and checkboxes {#radio-check}
 
 Use the [action.set](../reference/action.set.md) component to set up shortcuts for radio buttons. For checkboxes, use [action.toggle](../reference/action.toggle.md). Assign shortcuts to actions that your radio buttons or checkboxes do.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/R4kTo)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/I1QHLeKP3ttEqg)
 
 ## Reusing shortcuts {#reuse}
 
 You can [reuse](reuse.md) shortcuts just like any other code fragments. To do this, use the structure `{ "$ref": "path.to.element" }`. Reuse is helpful when you need to insert the same shortcuts in multiple places in your code.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR7YY)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/xeczgrzA3ttEr8)
 
 {% note tip %}
 
@@ -61,12 +60,11 @@ Put your reused code into `vars` so that you don't have to change the path in th
 
 {% endnote %}
 
-
 ## Multiple actions {#bulk-actions}
 
 For a Toloker to trigger multiple actions by pressing a button, add the [action.bulk](../reference/action.bulk.md) component. For example, you can use it to show multiple notifications.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR7bK)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/8zMd_Hrb3ttErs)
 
 ## Conditions in shortcuts {#if-switch}
 
@@ -78,29 +76,28 @@ Here is an example of an error. In this example, if Tolokers respond **Yes**, th
 
 View example with error in the sandbox.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR8kq)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/wP7fHpwv3ttEsa)
 
 View corrected example in the sandbox.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TR8j4)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/j-2Nt8983ttEtB)
 
 ## Troubleshooting {#troubleshooting}
 
-To display a shortcut in the interface, set the shortcut to the same [action](../troubleshooting/../reference/actions.md) that is performed when the button is clicked.
+To display a shortcut in the interface, set the shortcut to the same [action](../reference/actions.md) that is performed when the button is clicked.
 
 Assign an action to the component if you haven't yet:
-- [action.set](../troubleshooting/../reference/action.set.md) for radio buttons.
-- [action.toggle](../troubleshooting/../reference/action.toggle.md) for checkboxes.
-- [action.play-pause](../troubleshooting/../reference/action.play-pause.md) for playback control.
-- [action.open-close](../troubleshooting/../reference/action.open-close.md) to zoom in on images.
+- [action.set](../reference/action.set.md) for radio buttons.
+- [action.toggle](../reference/action.toggle.md) for checkboxes.
+- [action.play-pause](../reference/action.play-pause.md) for playback control.
+- [action.open-close](../reference/action.open-close.md) to zoom in on images.
 
-You can see the full list of actions in [List of actions](../troubleshooting/../reference/actions.md).
+You can see the full list of actions in [List of actions](../reference/actions.md).
 
 Keep in mind the following:
 
 - The data types for actions must be the same. For example, in the following case the shortcut works but is not displayed: clicking on the button saves the `“true”` string to the results, and the Boolean value `true` is defined for the shortcut.
-- If multiple actions are triggered when the button is clicked ([action.bulk](../troubleshooting/../reference/action.bulk.md)), the sequence of these actions for the shortcut must be the same.
-- If you use a conditional operator to select an action, such as [helper.if](../troubleshooting/../reference/helper.if.md), the same conditional operator (**helper.if**) must be called under the same rules when the shortcut key is pressed.
-
+- If multiple actions are triggered when the button is clicked ([action.bulk](../reference/action.bulk.md)), the sequence of these actions for the shortcut must be the same.
+- If you use a conditional operator to select an action, such as [helper.if](../reference/helper.if.md), the same conditional operator (**helper.if**) must be called under the same rules when the shortcut key is pressed.
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

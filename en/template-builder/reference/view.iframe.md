@@ -19,3 +19,5 @@ Not valid if `"fullHeight": true`. ||
 || `url`<span style="color: red">\*</span> | _string_ | URL of the web page. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

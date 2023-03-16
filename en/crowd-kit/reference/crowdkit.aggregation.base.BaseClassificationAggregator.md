@@ -1,5 +1,5 @@
 # BaseClassificationAggregator
-`crowdkit.aggregation.base.BaseClassificationAggregator` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/base/__init__.py#L17)
+`crowdkit.aggregation.base.BaseClassificationAggregator` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/base/__init__.py#L17)
 
 ```python
 BaseClassificationAggregator(self)

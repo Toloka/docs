@@ -1,5 +1,5 @@
 # UserBonus
-`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/user_bonus.py#L14)
+`toloka.client.user_bonus.UserBonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/user_bonus.py#L17)
 
 ```python
 UserBonus(
@@ -31,10 +31,10 @@ It's addition to payment for completed tasks.
 `private_comment`|**Optional\[str\]**|<p>Comments that are only visible to the requester.</p>
 `public_title`|**Optional\[Dict\[str, str\]\]**|<p>Message header for the Toloker. You can provide a title in several languages (the message will come in the Toloker&#x27;s language). Format {&#x27;language&#x27;: &#x27;title&#x27;, ... }. The language can be RU/EN/TR/ID/FR.</p>
 `public_message`|**Optional\[Dict\[str, str\]\]**|<p>Message text for the Toloker. You can provide text in several languages (the message will come in the Toloker&#x27;s language). Format {&#x27;language&#x27;: &#x27;message&#x27;, ... }. The language can be RU/EN/TR/ID/FR.</p>
-`without_message`|**Optional\[bool\]**|<p>Do not send a bonus message to the Toloker. To award a bonus without a message, specify null for public_title and public_message and True for without_message.</p>
+`without_message`|**Optional\[bool\]**|<p>Do not send a bonus message to the Toloker. To award a bonus without a message, specify null for `public_title` and `public_message` and `True` for `without_message`.</p>
 `assignment_id`|**Optional\[str\]**|<p>ID of the Toloker&#x27;s response to the task a reward is issued for.</p>
-`id`|**Optional\[str\]**|<p>Internal ID of the issued bonus. Read only.</p>
-`created`|**Optional\[datetime\]**|<p>Date the bonus was awarded, in UTC. Read only.</p>
+`id`|**Optional\[str\]**|<p>Internal ID of the issued bonus. Read-only field.</p>
+`created`|**Optional\[datetime\]**|<p>Date the bonus was awarded, in UTC. Read-only field.</p>
 
 **Examples:**
 

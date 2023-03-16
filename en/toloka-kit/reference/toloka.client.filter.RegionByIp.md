@@ -1,5 +1,5 @@
 # RegionByIp
-`toloka.client.filter.RegionByIp` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/filter.py#L496)
+`toloka.client.filter.RegionByIp` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/filter.py#L497)
 
 ```python
 RegionByIp(

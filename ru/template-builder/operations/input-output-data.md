@@ -49,7 +49,7 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/Qi9VF)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/x419TO073tvtRD)
 
 ## Чтение входных данных с типом JSON {#read-json}
 
@@ -75,24 +75,23 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QiC9S)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ReEvvxBu3tvtbm)
 
 ## Запись данных с типом JSON {#write-json}
 
 Аналогично осуществляется запись в выходные данные. Если вы укажете путь через точку, то в спецификации поле с выходными данными будет иметь тип объект.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QiEt3)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/BiIdXP5i3tvtsc)
 
 ## Чтение данных с типом "массив" {#read-array}
 
 {% include [array-read-images-from-array](../_includes/operations/insert-images/id-array/read-images-from-array.md) %}
 
-
 Если длина массива неизвестна или он очень большой, вы можете получить все значения массива с помощью компонента [helper.transform](../reference/helper.transform.md).
 
 Например, вы можете преобразовать массив ссылок на изображения в массив компонентов [view.image](../reference/view.image.md), чтобы отобразить их в интерфейсе.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/sjyWXYxE3YEtWG)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/057fp4k-3tvHvc)
 
 ## Запись данных с типом "массив" {#write-array}
 
@@ -104,7 +103,7 @@
 }
 ```
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QiCPA)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9lP7dwWZ3tvuAs)
 
 ## Узнайте больше
 

@@ -6,11 +6,11 @@
 
 Так вы сможете разрешить исполнителю дать несколько ответов на вопрос.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/Qkx2X)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/xf4LDQxv3twaqu)
 
 В элементах может быть любой компонент, в том числе список других компонентов. Например, это позволит создать таблицу, в которую можно добавлять и удалять строки.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T9b9e)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/tVHr1NWP3twdKm)
 
 ## Управление компонентом
 

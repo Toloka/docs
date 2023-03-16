@@ -12,17 +12,17 @@ You can get the project ID from the [list of projects](get-prj-list.md).
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/projects/<project_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/projects/<project_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/projects/<project_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/projects/<project_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -41,3 +41,5 @@ Title | Overview
 ## Response {#response}
 
 Contains project properties in JSON format (see the [sample project](create-prj.md#body)).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

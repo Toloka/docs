@@ -10,17 +10,17 @@ Gets a Toloker's skill value.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-skills/<id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-skills/<id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET ihttps://sandbox.toloka.dev/api/v1/user-skills/<id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET ihttps://sandbox.toloka.dev/api/v1/user-skills/<id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -76,3 +76,5 @@ The date and time in UTC when the Toloker was first assigned the skill with the 
 
 The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

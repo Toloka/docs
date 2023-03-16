@@ -30,3 +30,5 @@ The library has a friendly and easy-to-use interface and works with Pandas dataf
 
 - [Open on GitHub](https://github.com/Toloka/crowd-kit)
 - [Documentation](../../crowd-kit/index.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

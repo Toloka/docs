@@ -10,11 +10,7 @@
 
 1. [Загрузите задания в пул](task_upload.md).
 
-    {% if locale == "ru-ru" %}
-
     Если не любите читать, посмотрите следующее видео: @[YouTube](https://www.youtube.com/embed/eHCHkepn-Pc?rel=0)
-
-    {% endif %}
 
     {% note alert "Ограничение" %}
 
@@ -34,12 +30,10 @@
 
 - [Добавьте обучающий пул](train.md).
 
-- {% if locale == "en-com" %}[Пополните счет](refill.md).{% endif %}{% if locale == "ru-ru" %}Пополните счет:
+- Пополните счет:
 
     - [Инструкция для резидентов РФ](refill-russia.md).
     - [Инструкция для нерезидентов](refill.md).
-
-    {% endif %}
 
 - [Запустите пул](pool-run-and-stop.md).
 

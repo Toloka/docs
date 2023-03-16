@@ -85,3 +85,5 @@ Title | Overview
 
 Folders to add a message thread to or remove a message thread from. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

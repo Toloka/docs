@@ -26,8 +26,7 @@ To add tasks to a pool:
 
 - [Add a training pool](train.md).
 
-{% if locale == "en-com" %}
-- [Top up your account](refill.md).{% endif %}
+- [Top up your account](refill.md).
 
 - [Start the pool](pool-run-and-stop.md).
 

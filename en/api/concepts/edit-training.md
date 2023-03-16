@@ -56,3 +56,5 @@ In the request body, specify **all** the pool [parameters](create-training.md#tr
 ## Response {#response}
 
 Contains information about a modified training pool (see the description in the [Create a training pool](create-training.md#response) section).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

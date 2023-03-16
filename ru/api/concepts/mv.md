@@ -162,7 +162,7 @@
 - `ACCEPTANCE_RATE` — доля ответов исполнителя, которые были отклонены при отложенной приемке заданий.
 - `ASSIGNMENTS_ASSESSMENT` — количество принятых или отклоненных заданий при включенной отложенной приемке заданий.
 - `USERS_ASSESSMENT` — значение навыка исполнителя и его блокировка.||
-||**configs.collector_config. parameters.answer_ threshold** | **integer \| обязательный**
+||**configs.collector_config. parameters.answer_threshold** | **integer \| обязательный**
 
 Количество исполнителей, которое считается большинством (например, 3 из 5).||
 ||**configs.collector_config. parameters.history_size** | **integer \| обязательный**

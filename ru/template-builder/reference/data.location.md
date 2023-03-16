@@ -8,7 +8,7 @@
 
 Чтобы узнать, соответствуют ли переданные координаты тем, которые задали вы, используйте компонент [condition.distance](condition.distance.md). Добавляйте `@yandex-toloka/data.location` в свойства `to` или `from` в зависимости то того, как вы хотите сравнить координаты.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TpUxX)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/1UxiHDb03y5bN3)
 
 ## Свойства компонента {#properties}
 

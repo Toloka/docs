@@ -1,25 +1,26 @@
 # archive_project_async
-`toloka.async_client.client.AsyncTolokaClient.archive_project_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.archive_project_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async archive_project_async(self, project_id: str)
 ```
 
-Sends project to archive, asynchronous version
+Archives a project. Sends an asynchronous request to Toloka.
 
 
-Use when you have no need this project anymore. To perform the operation, all pools in the project must be archived.
-The archived project is not deleted. You can access it when you will need it.
+All pools in the project must be archived before archiving the project.
+
+The archived project is not deleted. You can access it if you need.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`project_id`|**str**|<p>ID of project that will be archived.</p>
+`project_id`|**str**|<p>The ID of project to be archived.</p>
 
 * **Returns:**
 
-  An operation upon completion of which you can get the project with updated status.
+  An object to track the progress of the operation.
 
 * **Return type:**
 

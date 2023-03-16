@@ -6,7 +6,7 @@ Links must be specified in full, including the protocol (http, https, ftp).
 
 The `www.` subdomain is ignored when checking, meaning that links to `www.example.com` and `example.com` are considered to be the same.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/apq6v)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/Up5Km-i53vwDif)
 
 How to pass a link address:
 
@@ -24,3 +24,5 @@ How to pass a link address:
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 || `original`<span style="color: red">\*</span> | _any_ | The link address that your link is compared to. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

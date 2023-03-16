@@ -96,8 +96,6 @@
 
     **Translates:**
 
-    {% if locale == "ru-ru" %}
-
     ```javascript
     **var** translates = {
     'header': 'Заполните анкету ниже',
@@ -129,42 +127,6 @@
     'tooFar': 'Вы находитесь слишком далеко от места опроса'
     }
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```javascript
-    **var** translates = {
-    'header': 'Fill out the form below',
-    'surveyConfirmation': 'Survey confirmation',
-    'firstName': 'Your name',
-    'photo': 'Photo',
-    'responseTextPlaceholder': 'Response text',
-    'phone': 'Your mobile phone number',
-    'phoneExamplePlaceholder': '+79000000000',
-    'petPreferences': 'Which of these pets do you like?',
-    'petsList': [
-    'Cats',
-    'Dogs',
-    'Hamsters',
-    'Fish',
-    ],
-    'petHave': 'Do you have a pet?',
-    'petName': 'What is your pet's name?',
-    'yes': 'Yes',
-    'no': 'No',
-    'user': 'Performer',
-    'placeOfSurvey': 'Survey location',
-    //validation errors
-    'firstNameEmpty': 'Enter the respondent's name',
-    'surveyConfirmationProofsMissing': 'You haven't confirmed the survey',
-    'petNameEmpty': 'Enter the pet's name',
-    'firstNameIncorrect': 'The respondent's name must contain only Cyrillic letters',
-    'phoneIncorrect': 'You entered an incorrect phone number',
-    'tooFar': 'You're too far away from the survey location'
-    }
-    ```
-
-    {% endif %}
 
     Шаблон уже содержит **CSS**-стили, их изменять не нужно.
 
@@ -216,13 +178,13 @@
 
 ## Загрузите задания {#tasks_upload}
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Загрузить**{% endif %}{% if locale == "en-com" %}**Upload**{% endif %}. В открывшемся окне вы можете скачать шаблон файла.
+1. Нажмите кнопку **Загрузить**. В открывшемся окне вы можете скачать шаблон файла.
 
     #### Использовать пример данных
 
     Если вы хотите посмотреть, как ваш проект будет выглядеть после запуска, но у вас еще нет заданий для разметки, вы можете загрузить в пул готовый пример данных.
 
-    Нажмите {% if locale == "ru-ru" %}**Использовать пример данных**{% endif %}{% if locale == "en-com" %}**Use sample data**{% endif %} справа от надписи {% if locale == "ru-ru" %}**Прикрепите подготовленный файл с данными**{% endif %}{% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. Это позволит избежать дополнительных действий с файлами.
+    Нажмите **Использовать пример данных** справа от надписи **Прикрепите подготовленный файл с данными**. Это позволит избежать дополнительных действий с файлами.
 
     После того, как вы поработали с примером данных и вас все устроило, подготовьте свои данные и загрузите их в пул.
 

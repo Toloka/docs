@@ -1,0 +1,1 @@
+Data type for the lines usage.

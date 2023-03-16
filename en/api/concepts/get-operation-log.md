@@ -22,17 +22,17 @@ If the operation was successful, the log contains `IDs` of the created objects, 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/operations/<operation_id>/log
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/operations/<operation_id>/log
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>/log
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/operations/<operation_id>/log
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -97,6 +97,7 @@ Step result:
 - `true` — Completed successfully.
 - `false` — Not completed. ||
 || **input** | **JSON**
+
 The data in the `input` is copied from the input data passed when creating the operation. ||
 || **output** | **JSON**
 
@@ -181,3 +182,5 @@ Data in the `output` for a failed operation:
 ```
 
 {% endcut %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

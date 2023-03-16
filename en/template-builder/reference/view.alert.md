@@ -4,7 +4,7 @@ The component creates a color block to highlight important information.
 
 You can use both plain text and other visual components inside it.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/RfBPM)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/lBobocfj3tyyJo)
 
 ## Component properties {#properties}
 
@@ -23,3 +23,5 @@ You can use both plain text and other visual components inside it.
   ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

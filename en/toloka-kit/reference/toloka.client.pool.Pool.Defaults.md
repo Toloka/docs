@@ -1,5 +1,5 @@
 # Defaults
-`toloka.client.pool.Pool.Defaults` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/pool/__init__.py#L154)
+`toloka.client.pool.Pool.Defaults` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/pool/__init__.py#L150)
 
 ```python
 Defaults(
@@ -10,11 +10,14 @@ Defaults(
 )
 ```
 
-Settings that are applied by default when uploading new task suites to a pool.
+Default settings that are applied to new tasks and task suites in a pool.
+
+
+These settings are used when tasks or task suites are created with `allow_defaults=True`.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`default_overlap_for_new_task_suites`|**Optional\[int\]**|<p>The overlap for task suites that are uploaded to the pool (used if the allow_defaults=True parameter is set when uploading).</p>
-`default_overlap_for_new_tasks`|**Optional\[int\]**|<p>The overlap for tasks that are uploaded to the pool (used if the allow_defaults=True parameter is set when uploading).</p>
+`default_overlap_for_new_task_suites`|**Optional\[int\]**|<p>The default overlap of a task suite.</p>
+`default_overlap_for_new_tasks`|**Optional\[int\]**|<p>The default overlap of a task.</p>

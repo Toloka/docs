@@ -111,7 +111,7 @@ This code changes the [task interface](../../glossary.md#task-interface) for dev
 
 {% note tip %}
 
-If the task doesn't display well, go back to the CSS block and add the missing styles to `@media screen and (max-width: 800px)`. If you aren't familiar with the CSS and HTML languages, use professional services or contact support. For more information, see [Get help creating a project](../troubleshooting/support.md).
+If the task doesn't display well, go back to the CSS block and add the missing styles to `@media screen and (max-width: 800px)`. If you aren't familiar with the CSS and HTML languages, use professional services or contact [support](../troubleshooting/support.md).
 
 {% endnote %}
 
@@ -119,7 +119,7 @@ If the task doesn't display well, go back to the CSS block and add the missing s
 
 {% cut "Step 4. When adding a task pool, enable display only on mobile devices in filters." %}
 
-Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the {% if locale == "en-com" %}**Client**{% endif %} and select the desired value: {% if locale == "en-com" %}**Toloka web version**{% endif %} or {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
+Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** and select the desired value: **Toloka web version** or **Toloka for mobile**.
 
 ![](../_images/interface-configuration/filters_web+apps.png)
 

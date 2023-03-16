@@ -1,8 +1,10 @@
 # field.checkbox-group
 
+{% include [deprecate](../../_includes/deprecate.md) %}
+
 Добавляет группу переключателей с галочками для выбора независимых вариантов ответа. Пригодится, если у вас несколько вариантов. Можно добавить только один переключатель, но это легче сделать с [field.checkbox](field.checkbox.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/T6Vyw)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/iO6fbx9G3twhgg)
 
 ## Свойства компонента {#properties}
 

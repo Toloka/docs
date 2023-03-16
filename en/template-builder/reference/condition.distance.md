@@ -6,7 +6,7 @@ For example, you want a Toloker to take a photo of a specific place. The `condit
 
 The device coordinates are sent using the [data.location](data.location.md) component. You can use it without `condition.distance` if you need to read a Toloker's device coordinates without comparing them to the specified ones.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSxk)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/HFMC2_XU3y3Tps)
 
 ## Component properties {#properties}
 
@@ -18,3 +18,5 @@ The device coordinates are sent using the [data.location](data.location.md) comp
 || `max` | _number_ | The distance in meters by which the specified and sent coordinates may differ. ||
 || `to` | _string_ | The coordinates that will be compared to the coordinates from the `from` property. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

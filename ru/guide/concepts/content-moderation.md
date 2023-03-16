@@ -43,7 +43,7 @@
 
 1. Протестировать настройки проекта в роли исполнителя.
 
-1. [Перенести](sandbox.md#export) их в {% if locale == "ru-ru" %}**основную версию Толоки**{% elsif locale == "en-com" %}**production version**{% endif %}.
+1. [Перенести](sandbox.md#export) их в **основную версию Толоки**.
 
 Так вы избежите ошибок и впустую потраченных средств, если окажется, что ваше задание не работает.
 
@@ -53,7 +53,7 @@
 
 #### В интерфейсе:
 
-1. Нажмите кнопку {% if locale == "ru-ru" %}**Создать проект**{% endif %}{% if locale == "en-com" %}**Create a project**{% endif %} и выберите пресет {% if locale == "ru-ru" %}**Анализ тональности и модерация контента**{% endif %}{% if locale == "en-com" %}**Sentiment analysis & Content moderation**{% endif %}.
+1. Нажмите кнопку **Создать проект** и выберите пресет **Анализ тональности и модерация контента**.
 
 1. Заполните общую информацию:
 
@@ -148,8 +148,6 @@
 
         В HTML-интерфейсе используются стандартные теги HTML и [специальные компоненты](spec.md) в двойных (или тройных, как для поля `comment`) фигурных скобках для полей входных и выходных данных.
 
-        {% if locale == "ru-ru" %}
-
         ```html
 
         {not_var{{comment}}}
@@ -165,32 +163,13 @@
 
         ```
 
-        {% endif %}{% if locale == "en-com" %}
-
-        ```html
-
-        {not_var{{comment}}}
-
-        {{field type="radio"name="quality" value="OK" size="L" label="Everything is fine" hotkey="1" class="yes"}}
-        {{field type="radio" name="quality" value="BAD" size="L" label="Violations found" hotkey="2" class="no"}}
-
-        {{field type="checkbox" name="advertising" label="Ads or spam" hotkey="q"}}
-        {{field type="checkbox" name="nonsense" label="Nonsense" hotkey="w"}}
-        {{field type="checkbox" name="insult" label="Insults" hotkey="e"}}
-        {{field type="checkbox" name="law_violation" label="Illegal content" hotkey="r"}}
-        {{field type="checkbox" name="profanity" label="Profanity" hotkey="t"}}
-
-        ```
-
-        {% endif %}
-
         Эта запись означает, что задание будет выглядеть так:
 
         - сверху текст проверяемого комментария;
         - две кнопки переключателя, выбранное значение будет записано в поле `quality`;
         - пять флажков, которые появляются, если выбрать второй переключатель. Отмеченные галочками также будут записываться в поля с соответствующим названием в результате.
 
-    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% elsif locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+    1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) **Предпросмотр задания**, чтобы увидеть получившееся задание.
 
         {% note info %}
 
@@ -342,7 +321,7 @@
 
 {% endnote %}
 
-1. Откройте страницу [проекта](../../glossary.md#project), перейдите на вкладку {% if locale == "ru-ru" %}**Обучения**{% endif %}{% if locale == "en-com" %}**Training**{% endif %} и нажмите кнопку {% if locale == "ru-ru" %}**Добавить обучение**{% endif %}{% if locale == "en-com" %}**Add training**{% endif %}.
+1. Откройте страницу [проекта](../../glossary.md#project), перейдите на вкладку **Обучения** и нажмите кнопку **Добавить обучение**.
 
 1. Дайте название обучающему пулу и укажите время на выполнение страницы заданий.
 
@@ -406,8 +385,6 @@
 
 {% endcut %}
 
-{% if locale == "ru-ru" %}
-
 {% cut "Не загружаются файлы с Яндекс Диска" %}
 
 Если картинки, аудио или видео с Яндекс Диска не отображаются в [инструкции](../../glossary.md#instructions) или на [странице задания](../../glossary.md#task-suite), убедитесь, что вы правильно подключили Диск и загрузили файлы.
@@ -422,11 +399,7 @@
 
 Чтобы разместить ваши видеоролики на Яндекс Диске, его нужно подключить и настроить проект.
 
-{% if locale == "ru-ru" %}
-
 Подробная видеоинструкция об этом [в нашем блоге]({{ toloka-blog-yadisk }}).
-
-{% endif %}
 
 {% endcut %}
 
@@ -443,8 +416,6 @@
 Подробная инструкцию и видео на странице [Использование файлов с Яндекс Диска](prepare-data.md).
 
 {% endcut %}
-
-{% if locale == "ru-ru" %}
 
 {% cut "Частые ошибки при подключении Диска и загрузке файлов" %}
 
@@ -470,20 +441,12 @@
 
 {% endcut %}
 
-{% endif %}
-
 {% endcut %}
-
-{% endif %}
-
-{% if locale == "ru-ru" %}
 
 {% cut "Файлы на Яндекс Диск загружаются слишком медленно. Как ускорить загрузку?" %}
 
 Попробуйте воспользоваться рекомендациями с [этой страницы]({{ yadisk-uploading }}) или написать в службу поддержки Яндекс Диска.
 
 {% endcut %}
-
-{% endif %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

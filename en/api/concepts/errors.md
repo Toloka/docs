@@ -2,7 +2,7 @@
 
 Any error returned by Toloka has an HTTP response status and response body with error details. Errors are self-documenting, that is, it should be clear from them what the cause is.
 
-Sample error with HTTP status code 409:
+Sample error with HTTP status code `409`:
 
 ```json
 {
@@ -21,8 +21,11 @@ Sample error with HTTP status code 409:
 Each error text has the following fields:
 
 - **request_id**: Internal ID of the HTTP request where the error occurred. It needs to be specified when contacting support.
+
 - **code**: String error code. Errors specific to different operations have the same codes. Different error codes can be used for the same HTTP status. Specific errors for specific operations have their own unique codes.
+
 - **message**: Error details. The content of the field may be different for the same error code.
+
 - **payload**: Additional information about the error. For example, a field from the request and the cause of the error in it. This field is optional and may be omitted.
 
 ## List of common errors {#common-errors}
@@ -91,3 +94,5 @@ The following HTTP status codes describe error classes, with examples of common 
   "message": "Service is temporary unavailable"
 }
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

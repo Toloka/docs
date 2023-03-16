@@ -1,5 +1,5 @@
 # IframeViewV1
-`toloka.client.project.template_builder.view.IframeViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/view.py#L190)
+`toloka.client.project.template_builder.view.IframeViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L190)
 
 ```python
 IframeViewV1(

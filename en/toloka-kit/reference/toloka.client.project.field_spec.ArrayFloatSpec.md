@@ -1,5 +1,5 @@
 # ArrayFloatSpec
-`toloka.client.project.field_spec.ArrayFloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/field_spec.py#L177)
+`toloka.client.project.field_spec.ArrayFloatSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/field_spec.py#L179)
 
 ```python
 ArrayFloatSpec(
@@ -14,15 +14,15 @@ ArrayFloatSpec(
 )
 ```
 
-An floating point array field specification
+A floating-point array field specification.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`required`|**Optional\[bool\]**|<p>Whether the object or input field is required.</p>
-`hidden`|**Optional\[bool\]**|<p>Whether to hide the input field from Tolokers.</p>
-`min_value`|**Optional\[float\]**|<p>Minimum value of the number</p>
-`max_value`|**Optional\[float\]**|<p>Maximum value of the number</p>
-`min_size`|**Optional\[int\]**|<p>Minimum number of elements in the array</p>
-`max_size`|**Optional\[int\]**|<p>Maximum number of elements in the array</p>
+`required`|**Optional\[bool\]**|<p>Whether a field is required. </p><p>Default value: `True`.</p>
+`hidden`|**Optional\[bool\]**|<p>Whether to hide an input field from Tolokers. Output fields can&#x27;t be hidden. </p><p>Default value: `False`.</p>
+`min_value`|**Optional\[float\]**|<p>The minimum value.</p>
+`max_value`|**Optional\[float\]**|<p>The maximum value.</p>
+`min_size`|**Optional\[int\]**|<p>The minimum number of elements in the array.</p>
+`max_size`|**Optional\[int\]**|<p>The maximum number of elements in the array.</p>

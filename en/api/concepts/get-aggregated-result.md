@@ -4,23 +4,29 @@
 
 Gets aggregated responses.
 
+{% note alert "Restriction" %}
+
+You can send a maximum of 5 requests of this kind per minute, 30 requests per hour, and 200 requests per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
+
+{% endnote %}
+
 ## Request {#request}
 
 {% list tabs %}
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -38,7 +44,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -49,8 +55,7 @@ Parameters for sorting in ascending order:
 - `task_id` — Task ID.
 
 To change the sorting direction to descending, add a hyphen before the parameter: `sort=-task_id`. ||
-|| **Standard query parameters** |
-[limit](./standard-query-parameters.md#limit), [task_id_gt](./standard-query-parameters.md#task_id_gt), [task_id_gte](./standard-query-parameters.md#task_id_gte), [task_id_lt](./standard-query-parameters.md#task_id_lt), [task_id_lte](./standard-query-parameters.md#task_id_lte). ||
+|| **Standard query parameters** | [limit](./standard-query-parameters.md#limit), [task_id_gt](./standard-query-parameters.md#task_id_gt), [task_id_gte](./standard-query-parameters.md#task_id_gte), [task_id_lt](./standard-query-parameters.md#task_id_lt), [task_id_lte](./standard-query-parameters.md#task_id_lte). ||
 |#
 
 ## Query example {#request-example}
@@ -66,17 +71,17 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -86,24 +91,32 @@ You can set up the display of the list of responses in parts (for example, 10 re
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-[Aggregation result](aggregate-by-task.md) in the `items` array.
-
 ```json
 {"items" : [{task #1}, {task #2}, ... {task #n}], "has_more": true}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains [aggregation result](aggregate-by-task.md). ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

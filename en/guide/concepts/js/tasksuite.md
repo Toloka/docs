@@ -8,13 +8,13 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 “Wrapper class” for [task suites](../../../glossary.md#task-suite) creates instances of task classes. You can redefine this class (for example, if you need to display a shared element on the page with tasks or get more control over tasks, like custom keyboard shortcuts).
 
-The main purpose of the `TaskSuite` class is to render tasks on the page (`[render()](#render)`). It is also used for collecting responses (`[getSolutions()](#getSolutions)`), validating them (`[validate(solutions)](#validate)`), and managing hotkeys ([`focusNextTask()`](#focusNextTask), [`onKey(key)`](#onKey)).
+The main purpose of the `TaskSuite` class is to render tasks on the page ([render()](#render)). It is also used for collecting responses ([getSolutions()](#getsolutions)), validating them ([validate(solutions)](#validate)), and managing hotkeys ([focusNextTask()](#focusnexttask), [onKey(key)](#onkey)).
 
 The base class for `TaskSuite` is available in the `window.TolokaTaskSuite` global variable.
 
 Methods:
 
-#### constructor(options)
+### constructor(options) {#constructor}
 
 Basic task suite class constructor.
 
@@ -30,29 +30,29 @@ Parameters:
 
 - `options.TaskClass` — Array of classes for the task you create.
 
-- `options.solutions` — Array of responses [`Solution`](../spec-advanced.md#obj-solution). Can be empty.
+- `options.solutions` — Array of responses [Solution](../spec-advanced.md#obj-solution). Can be empty.
 
-#### destroy()
+### destroy() {#destroy}
 
-Destroys all tasks on the page. Releases resources, services, and event handlers used in the global space. Calls [`onDestroy()`](#onDestroy).
+Destroys all tasks on the page. Releases resources, services, and event handlers used in the global space. Calls [onDestroy()](#ondestroy).
 
-#### focusNextTask()
+### focusNextTask() {#focusnexttask}
 
 Sets the focus on the next task.
 
-#### focusPreviousTask()
+### focusPreviousTask() {#focusprevioustask}
 
 Sets the focus on the previous task.
 
-#### focusTask(index)
+### focusTask(index) {#focustask}
 
 Sets the focus on the task by the index. Parameter:
 
 - `index` — Task index on the page.
 
-#### getAssignment()
+### getAssignment() {#getassignment}
 
-Returns a link to an [`Assignment`](assignment.md)instance. After that, you can use all the properties and methods of that class instance.
+Returns a link to an [Assignment](assignment.md) instance. After that, you can use all the properties and methods of that class instance.
 
 {% cut "Example" %}
 
@@ -63,13 +63,13 @@ this.getAssignment().skip();
 
 {% endcut %}
 
-#### getDOMElement()
+### getDOMElement() {#getdomeelement}
 
 Returns the DOM element of the page (it is empty before rendering, and after rendering it is initialized and contains the interface).
 
-#### getFocusedTask()
+### getFocusedTask() {#getfocusedtask}
 
-Returns a link to the active task. Gets the index of the active task from a private property `_focusedTaskIndex` and returns a link to that task using `[getTasks()](#getTasks)`.
+Returns a link to the active task. Gets the index of the active task from a private property `_focusedTaskIndex` and returns a link to that task using [getTasks()](#gettasks).
 
 {% cut "Example" %}
 
@@ -81,9 +81,9 @@ elements.forEach(el => el.classList.remove('some_class'));
 
 {% endcut %}
 
-#### getOptions()
+### getOptions() {#getoptions}
 
-Returns an object with a set of parameters passed to the `[constructor()](#constructor)` method during initialization.
+Returns an object with a set of parameters passed to the [constructor()](#constructor) method during initialization.
 
 {% cut "Example" %}
 
@@ -97,33 +97,33 @@ let outputSpec = this.getOptions().specs.output_spec,
 
 {% endcut %}
 
-#### getProxyUrl(path)
+### getProxyUrl(path) {#getproxyurl}
 
 Returns a complete URL to access the data on the [proxy server](../prepare-data.md). Parameter:
 
 - `path` — the relative path to the file.
 
-#### getSolutions()
+### getSolutions() {#getsolutions}
 
-Returns an array of [`Solution`](../spec-advanced.md#obj-solution) responses.
+Returns an array of [Solution](../spec-advanced.md#obj-solution) responses.
 
-#### getStyleDOMElement()
+### getStyleDOMElement() {#getstyledomeelement}
 
 Returns the DOM element of the page styles.
 
-#### getTasks()
+### getTasks() {#gettasks}
 
-Returns an array of `[Task](../spec-advanced.md#obj-task)` initialized task models.
+Returns an array of [Task](../spec-advanced.md#obj-task) initialized task models.
 
-#### getTasksDOMElement()
+### getTasksDOMElement() {#gettaskdomeelement}
 
 Returns the DOM element of the task suite (`div.task-suite`). If the DOM element is missing, the method creates it.
 
-#### getTasksIndexed()
+### getTasksIndexed() {#gettasksindexed}
 
-Returns tasks indexed by their IDs: `"<taskId>": [Task](../spec-advanced.md#obj-task), …`
+Returns tasks indexed by their IDs: `<taskId>`: [Task](../spec-advanced.md#obj-task), …
 
-#### getWorkspaceOptions()
+### getWorkspaceOptions() {#getworkspaceoptions}
 
 Returns an object with the Toloker's workspace settings.
 
@@ -133,13 +133,13 @@ The most important settings:
 
 - `isReadOnly` — "Read-only" mode flag (for example, for viewing the history of completed tasks).
 
-- `isReviewMode` — Review mode flag (for example, assignment review). This setting and `isReadOnly` are useful if you want to do something like change the template layout in history view mode.
+- `isReviewMode` — Review mode flag (for example, manual review). This setting and `isReadOnly` are useful if you want to do something like change the template layout in history view mode.
 
 - `language` — A two-letter code of the language selected by the Toloker in Toloka settings. It's useful when you want to create multilingual templates.
 
 - `origin` — Parent page FQDN.
 
-#### initHotkeys()
+### initHotkeys() {#inithotkeys}
 
 Hotkey handler initializer:
 
@@ -151,37 +151,37 @@ Hotkey handler initializer:
 
 - Sets the focus on the first task.
 
-#### onDestroy()
+### onDestroy() {#ondestroy}
 
-A method you can redefine to execute your code when a task suite is deleted. Called after the page is destroyed (`[destroy()](#destroy)`). The best method for releasing memory, deleting global event handlers and DOM elements, and so on.
+A method you can redefine to execute your code when a task suite is deleted. Called after the page is destroyed ([destroy()](#destroy)). The best method for releasing memory, deleting global event handlers and DOM elements, and so on.
 
-#### onKey(key)
+### onKey(key) {#onkey}
 
 Passes the pressed key to the active task.
 
-#### onPause()
+### onPause() {#onpause}
 
 A method you can redefine to execute your code when a task suite stops working.
 
-#### onRender()
+### onRender() {#onrender}
 
-A method you can redefine to execute your code when rendering a task suite. Called after page rendering (`[render()](#render)`). All manipulations with the DOM element of a task should be performed here.
+A method you can redefine to execute your code when rendering a task suite. Called after page rendering ([render()](#render)). All manipulations with the DOM element of a task should be performed here.
 
-#### onResume()
+### onResume() {#onresume}
 
 A method you can redefine to execute your code when a task suite resumes working.
 
-#### onValidationFail(errors)
+### onValidationFail(errors) {#onvalidationfail}
 
 Called if the validation failed. Contains error descriptions in the parameter. Parameter:
 
-- `errors` — Array of errors [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror).
+- `errors` — Array of errors [SolutionValidationError](../spec-advanced.md#obj-solutionvalidationerror).
 
-#### pause()
+### pause() {#pause}
 
-Calls the `pause()` method for each task in the suite. It also calls the `[onPause()](#onPause)` method.
+Calls the `pause()` method for each task in the suite. It also calls the [onPause()](#onpause) method.
 
-#### proxy(path, options)
+### proxy(path, options) {#proxy}
 
 Makes a GET or POST request through a proxy. Returns the response as an object.
 
@@ -227,14 +227,14 @@ Promise.all(promises)
 
 {% endcut %}
 
-#### render()
+### render() {#render}
 
-Creates a DOM representation of the task suite: renders all tasks in the task suite. Calls [`render()` in the `Task`](task.md#render) class for each task. Calls `[onRender()](#onRender)`. Returns `this`.
+Creates a DOM representation of the task suite: renders all tasks in the task suite. Calls [render()](task.md#render) in the Task class for each task. Calls [onRender()](#onRender). Returns `this`.
 
-#### validate(solutions)
+### validate(solutions) {#validate}
 
-Validates responses according to output data parameters. Returns a `promise` object with an array of [`SolutionValidationError`](../spec-advanced.md#obj-solutionvalidationerror) errors if the responses are incorrect, or `null`. Parameter:
+Validates responses according to output data parameters. Returns a `promise` object with an array of [SolutionValidationError](../spec-advanced.md#obj-solutionvalidationerror) errors if the responses are incorrect, or `null`. Parameter:
 
-- `solutions` — Array of the Toloker's task responses. If omitted, the current values are used ([`getSolutions()`](#getSolutions)).
+- `solutions` — Array of the Toloker's task responses. If omitted, the current values are used ([getSolutions()](#getSolutions)).
 
 {% include [contact-support](../../_includes/contact-support.md) %}

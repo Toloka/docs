@@ -21,3 +21,5 @@ To allow selecting multiple options, use the [field.checkbox-group](field.checkb
 || `placeholder` | _string_ | The text that will be displayed if none of the options is selected. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -23,3 +23,5 @@ For example, if `duration` is 1000 and `delay` is 400, the message will be displ
 - `danger` — red.
   ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

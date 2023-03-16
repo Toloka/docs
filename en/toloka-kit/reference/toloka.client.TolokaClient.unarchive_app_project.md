@@ -1,5 +1,5 @@
 # unarchive_app_project
-`toloka.client.TolokaClient.unarchive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L3532)
+`toloka.client.TolokaClient.unarchive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3657)
 
 ```python
 unarchive_app_project(self, app_project_id: str)

@@ -1,5 +1,5 @@
 # patch_app_batch
-`toloka.client.TolokaClient.patch_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L3822)
+`toloka.client.TolokaClient.patch_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3958)
 
 Updates an App batch name.
 

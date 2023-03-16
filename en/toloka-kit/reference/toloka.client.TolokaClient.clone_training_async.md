@@ -1,25 +1,25 @@
 # clone_training_async
-`toloka.client.TolokaClient.clone_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1775)
+`toloka.client.TolokaClient.clone_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1843)
 
 ```python
 clone_training_async(self, training_id: str)
 ```
 
-Duplicates existing training, asynchronous version
+Clones an existing training. Sends an asynchronous request to Toloka.
 
 
-An empty training with the same parameters will be created.
-A new training will be attached to the same project.
+An empty training with the same parameters is created.
+The new training is attached to the same project.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of the existing training.</p>
+`training_id`|**str**|<p>The ID of the training to be cloned.</p>
 
 * **Returns:**
 
-  An operation upon completion of which you can get the new training.
+  An object to track the progress of the operation.
 
 * **Return type:**
 
@@ -29,6 +29,6 @@ A new training will be attached to the same project.
 
 
 ```python
-clone_training = toloka_client.clone_training_async(training_id='1')
-toloka_client.wait_operation(clone_training)
+clone_op = toloka_client.clone_training_async(training_id='1')
+toloka_client.wait_operation(clone_op)
 ```

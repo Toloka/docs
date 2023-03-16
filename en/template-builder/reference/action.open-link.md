@@ -2,7 +2,7 @@
 
 Opens a new tab in the browser with the specified web page. For example, you can open a link when a button is clicked.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rf2eD)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/NaCxphQV3xPEYn)
 
 ## Component properties {#properties}
 
@@ -11,3 +11,5 @@ Opens a new tab in the browser with the specified web page. For example, you can
 || `type`<span style="color: red">\*</span> | "action.open-link" | Set component type ||
 || `payload` | _string_ | URL of the web page. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

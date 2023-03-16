@@ -1,0 +1,1 @@
+In the TSV file, the lines containing `\n`, `\t`, `"` must be enclosed in quotation marks. To use the `"` character in such a line, you need to put another `"` character in front of it, i.e. `""`.

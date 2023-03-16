@@ -2,15 +2,15 @@
 
 Before you start creating a [project](../../glossary.md#project), consider dividing it into several smaller projects. This is called _decomposition_.
 
-For example, in the [Business information (example with decomposition)](data-collection.md) section, the task can be divided into four projects:
+For example, in the [Business information (example with decomposition)](../tutorials/data-collection.md) section, the task can be divided into four projects:
 
-- [Project 1. Does the photo contain a particular item?](contain_item.md) — This is data preparation (filtering).
+- [Project 1. Does the photo contain a particular item?](../tutorials/contain_item.md) — This is data preparation (filtering).
 
-- [Project 2. Find a similar item in the online store](find_an_item_in_store.md) — This is the original task.
+- [Project 2. Find a similar item in the online store](../tutorials/find_an_item_in_store.md) — This is the original task.
 
-- [Project 3. Does the item found look similar to the original?](item_look_similar.md) — Checking the responses.
+- [Project 3. Does the item found look similar to the original?](../tutorials/item_look_similar.md) — Checking the responses.
 
-- [Project 4. Which of the found items is most similar to the original?](item_more_similar.md) — Choosing the best response.
+- [Project 4. Which of the found items is most similar to the original?](../tutorials/item_more_similar.md) — Choosing the best response.
 
 ![](../_images/other/main-1.svg)
 
@@ -56,7 +56,7 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [assignment review](../../glossary.md#assignment-review) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
+- You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [manual review](../../glossary.md#assignment-review) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
     {% note alert %}
 
@@ -98,8 +98,8 @@ Some tasks consist of several questions, but they don't need any decomposition. 
 
 Examples where decomposition is used:
 
-- [Business information (example with decomposition)](data-collection.md)
-- [Object recognition and area selection (example with decomposition)](image-segmentation-overview.md)
+- [Business information (example with decomposition)](../tutorials/data-collection.md)
+- [Object recognition and area selection (example with decomposition)](../tutorials/image-segmentation-overview.md)
 
 ## What's next {#what_next}
 
@@ -111,14 +111,8 @@ Examples where decomposition is used:
 
 ## Troubleshooting {#problem-solution}
 
-{% cut "I have a complex task. How do I break it down to get high-quality results?" %}
+{% include [faq-complex-task](../_includes/faq/questions-about-templates/complex-task.md) %}
 
-If your task contains many objects of different types, you should break it down. For example, you can ask users to select numbers in the first project, doorways and windows in the second project, walls in the third project, and plumbing in the fourth project.
-
-The simpler the task, the cheaper it is and the better the quality of the final result. Set the cost of labeling a single class of objects in photos at about $0.01.
-
-[Use](../tutorials/selection.md) the **Object selection in an image** template. You can open this template in the editor and add a drop-down list for labeling the selected object. See how to do this in the editor [description](t-components/image-annotation.md#annotation) (**Dropdown list** tab).
-
-{% endcut %}
+{% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

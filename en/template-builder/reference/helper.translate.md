@@ -1,6 +1,6 @@
 # helper.translate
 
-Component for translating interface elements to other languages. More details in [Translating the task interface](../../guide/concepts/project-languages.md#project-languages__interface-translate).
+Component for translating interface elements to other languages. More details in [Translating the task interface](../../guide/concepts/project-languages#interface-translate).
 
 In the properties that should be displayed in different languages, add:
 
@@ -35,3 +35,5 @@ Usage example:
 || `type`<span style="color: red">\*</span> | "helper.translate" | Set component type ||
 || `key`<span style="color: red">\*</span> | _string_ | The key for a text property that you will translate to other languages. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

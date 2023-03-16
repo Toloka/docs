@@ -4,11 +4,11 @@
 
 Чтобы активировать промокод:
 
-1. На странице [Профиль]({{ profile }}) нажмите кнопку {% if locale == "ru-ru" %}**Ввести промокод**{% endif %}{% if locale == "en-com" %}**Enter promo code**{% endif %}.
+1. На странице [Профиль]({{ profile }}) нажмите кнопку **Ввести промокод**.
 
     ![](../_images/promocodes/find-promocode.png)
 
-1. Введите промокод и нажмите {% if locale == "ru-ru" %}**Активировать**{% endif %}{% if locale == "en-com" %}**Activate**{% endif %}.
+1. Введите промокод и нажмите **Активировать**.
 
     ![](../_images/promocodes/enter-promocode.png)
 

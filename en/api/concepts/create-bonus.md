@@ -8,11 +8,11 @@ The size of the reward can range between $0.005 and $100 per Toloker at a time.
 
 {% note alert "Restriction" %}
 
-You can send a maximum of 10,000 requests of this kind per day.
+You can send a maximum of 10,000 requests of this kind per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
-You can't use one request to pass multiple rewards with the same price, name, and message to the same annotator. A response with the status 409 will be returned.
+You can't use one request to pass multiple rewards with the same price, name, and message to the same annotator. A response with the status `409` will be returned.
 
 {% cut "Sample error with HTTP status code 409" %}
 
@@ -244,3 +244,5 @@ The response format depends on the value of `async_mode`.
     |#
 
 {% endlist %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

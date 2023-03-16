@@ -6,7 +6,7 @@
 
 Проверяет, что в тексте есть символ `@`. Другие условия [настройте самостоятельно](../best-practices/conditions.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RYXrb)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/9mVfClfm3y5dw6)
 
 ## Свойства компонента {#properties}
 

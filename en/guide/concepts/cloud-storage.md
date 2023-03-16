@@ -43,17 +43,18 @@ Toloka is not responsible for such changes or for placing them in this section w
 
 {% endnote %}
 
-#### Terms of use
+### Terms of use
 
-Photo hosting | Maximum image size | Registration | Trial period
------ | ----- | ----- | -----
-[imgbb]({{ imgbb }}) | 32 MB | No | —
-{% if locale == "en-com" %}[imgur]({{ imgur }}) | 20 MB | Yes | —{% endif %}
-[pics.st]({{ pics-st }}) | 2 MB | No | —
-[postimages]({{ postimages }}) | 24 MB | No | —
-[ImageShack]({{ imageshack }}) | 25 MB | Yes | 30 days
+#|
+||**Photo hosting** | **Maximum image size** | **Registration** | **Trial period**||
+||[imgbb]({{ imgbb }}) | 32 MB | No | —||
+||[pics.st]({{ pics-st }}) | 2 MB | No | —||
+||[imgur]({{ imgur }}) | 20 MB | Yes | —||
+||[postimages]({{ postimages }}) | 24 MB | No | —||
+||[ImageShack]({{ imageshack }}) | 25 MB | Yes | 30 days||
+|#
 
-#### How to upload an image to photo hosting
+### How to upload an image to photo hosting
 
 For example, [imgbb]({{ imgbb }}):
 
@@ -65,7 +66,7 @@ For example, [imgbb]({{ imgbb }}):
 
 1. Click **Upload**.
 
-1. In {% if locale == "en-com" %}**Embed codes**{% endif %} choose {% if locale == "en-com" %}**HTML full linked**{% endif %}.
+1. In **Embed codes** choose **HTML full linked**.
 
 1. Copy the link, which is indicated in quotation marks after `src=` (for example, `https://i.ibb.co/HhK1B5J/image.png`), and add it to the file with tasks.
 
@@ -85,14 +86,15 @@ Toloka is not responsible for such changes or for placing them in this section w
 
 {% endnote %}
 
-#### Trial terms
+### Trial terms
 
-Storage type | Trial length | Free storage size | Grant amount | Additional information.
------ | ----- | ----- | ----- | -----
-[Amazon S3](amazon-cloud-storage.md) | 12 months | 5 GB | — | [Free access level]({{ amazon-s3-free }})
-[Azure Blob Storage](azure-cloud-storage.md) | 12 months | 5 GB | $200 within 30 days | [Free account]({{ azure-free }})
-[Google Cloud Storage](google-cloud-storage.md) | 90 days | 5 GB | $300 | [Trial period]({{ google-cloud-free-trial }})
-[Yandex Object Storage](use-object-storage.md) | 60 days | 5 TB | $50 | [Trial period]({{ yandex-cloud-free-trial }})
+#|
+||**Storage type** | **Trial length** | **Free storage size** | **Grant amount** | **Additional information**||
+||[Amazon S3](amazon-cloud-storage.md) | 12 months | 5 GB | — | [Free access level]({{ amazon-s3-free }})||
+||[Azure Blob Storage](azure-cloud-storage.md) | 12 months | 5 GB | $200 within 30 days | [Free account]({{ azure-free }})||
+||[Google Cloud Storage](google-cloud-storage.md) | 90 days | 5 GB | $300 | [Trial period]({{ google-cloud-free-trial }})||
+||[Yandex Object Storage](use-object-storage.md) | 60 days | 5 TB | $50 | [Trial period]({{ yandex-cloud-free-trial }})||
+|#
 
 ## Creating a file with tasks {#tsv-create}
 

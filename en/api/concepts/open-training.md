@@ -44,7 +44,7 @@ Title | Overview
 
 {% note info %}
 
-If the current training pool status is the same as the requested status, an empty response with status 204 is returned.
+If the current training pool status is the same as the requested status, an empty response with status `204` is returned.
 
 {% endnote %}
 
@@ -68,7 +68,7 @@ If the current training pool status is the same as the requested status, an emp
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `TRAINING.OPEN` — Open a training pool. ||
@@ -99,3 +99,5 @@ ID of the training pool. ||
 
 Details of the operation completion. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

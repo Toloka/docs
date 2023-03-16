@@ -27,45 +27,45 @@ Dynamic overlap uses 5 main parameters:
 
 Terms
 
-- $q[i]$is a Toloker's accuracy.
-- $K$is a smoothing constant.
-- $z[j]$is the most popular response.
-- $z[x]$— the probability that the estimate is correct
-- $EPS,$— confidence in the aggregate response
+- $q[i]$ is a Toloker's accuracy.
+- $K$ is a smoothing constant.
+- $z[j]$ is the most popular response.
+- $z[x]$ — the probability that the estimate is correct
+- $EPS,$ — confidence in the aggregate response
 
-A Toloker's accuracy$q[i]$is calculated as:
+A Toloker's accuracy $q[i]$ is calculated as:
 
 $q[i] = \frac{K+correct.golden.sets[i]}{2×K+total.golden.sets[i]}$
 
 Where:
 
-$K$is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
+$K$ is a smoothing constant (starting from 0.5) if there are not enough responses to control tasks.
 
-If there are several estimates, the most popular response is determined by adding together$q[i]$of the Tolokers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate$z[j]$.
+If there are several estimates, the most popular response is determined by adding together $q[i]$ of the Tolokers who selected each response option. The response with the largest total is considered more correct. Let's call this estimate $z[j]$.
 
-[Using Bayes' theorem]({{ baies }}), we calculate the posterior probability that the estimate$z[j]$is correct.
+[Using Bayes' theorem]({{ baies }}), we calculate the posterior probability that the estimate $z[j]$ is correct.
 
-A uniform distribution of estimates is assumed a priori. For the$z[x]$the a priori probability is calculated as$P(z[x]) = \frac{1}{Y}$
+A uniform distribution of estimates is assumed a priori. For the $z[x]$ the a priori probability is calculated as $P(z[x]) = \frac{1}{Y}$
 
 where:
 
-$Y$is the number of response options.
+$Y$ is the number of response options.
 
-Next, we calculate the probability that the estimate$z[j]$is correct.
+Next, we calculate the probability that the estimate $z[j]$ is correct.
 
-If the Toloker responded$z[j]$, then the probability of this is equal to the Toloker's accuracy$q[i]$. If they responded differently, then the probability of this is:
+If the Toloker responded $z[j]$, then the probability of this is equal to the Toloker's accuracy $q[i]$. If they responded differently, then the probability of this is:
 
 $\frac{1-q[i]}{Y-1}$
 
 Where:
 
-$(1-q[i])$is the remaining probability;
+$(1-q[i])$ is the remaining probability;
 
-$(Y-1)$is the number of remaining responses.
+$(Y-1)$ is the number of remaining responses.
 
 It ensures that the probability of an error is distributed evenly among the remaining estimates.
 
-We take all Tolokers' responses and, for example, option$z[x]$and calculate the probability that Tolokers will select this response, provided that the correct response is$z[x] estimate,$:
+We take all Tolokers' responses and, for example, option $z[x]$ and calculate the probability that Tolokers will select this response, provided that the correct response is $z[x] estimate,$:
 
 ```javascript
 func z_prob(x int) : float {
@@ -79,7 +79,7 @@ func z_prob(x int) : float {
 }
 ```
 
-Next, using Bayes' theorem, we calculate the probability that the response$z[j]$is correct:
+Next, using Bayes' theorem, we calculate the probability that the response $z[j]$ is correct:
 
 ```javascript
 r = 0
@@ -89,7 +89,7 @@ for z[i]: answer_options
 eps = z_prob(j) * (1 / Y) / r
 ```
 
-Next, we look at$EPS,$. If the expected result is less than the value of$EPS,$we increase overlap until the result is equal to the confidence in the aggregated response or overlap reaches the maximum.
+Next, we look at $EPS,$. If the expected result is less than the value of $EPS,$ we increase overlap until the result is equal to the confidence in the aggregated response or overlap reaches the maximum.
 
 {% endcut %}
 
@@ -124,17 +124,17 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 1. [Create a pool](pool-main.md) and fill in the [parameters](pool_poolparams.md).
 
-1. Set the minimum overlap in the {% if locale == "en-com" %}**Overlap**{% endif %} field.
+1. Set the minimum overlap in the **Overlap** field.
 
-1. In the advanced settings, enable the {% if locale == "en-com" %}**Use dynamic overlap**{% endif %} option.
+1. In the advanced settings, enable the **Use dynamic overlap** option.
 
-1. Set {% if locale == "en-com" %}**Max overlap**{% endif %}.
+1. Set **Max overlap**.
 
-1. Specify {% if locale == "en-com" %}**Confidence of aggregated answer**{% endif %}. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
+1. Specify **Confidence of aggregated answer**. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
 
-1. Choose {% if locale == "en-com" %}**Skill for users' scoring**{% endif %}.
+1. Choose **Skill for users' scoring**.
 
-1. Check {% if locale == "en-com" %}**Output fields for answers agreement**{% endif %}.
+1. Check **Output fields for answers agreement**.
 
 1. Save the pool.
 
@@ -144,7 +144,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 {% note info %}
 
-{% if locale == "en-com" %}**Approximate budget**{% endif %} in the [pool statistics](pool_statistic-pool.md) is calculated based on the minimal overlap.
+**Approximate budget** in the [pool statistics](pool_statistic-pool.md) is calculated based on the minimal overlap.
 
 {% endnote %}
 
@@ -218,16 +218,8 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Can I change overlap after the pool is started?" %}
+{% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
-Yes. [Open edit mode for the pool](pool-edit.md) and set a new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
-
-{% endcut %}
-
-{% cut "With dynamic overlap, is it possible that the pool will close before the tasks for minimal overlap run out? The overlap increased, but the pool is closed, and I need to start it manually." %}
-
-Yes, this might happen. You must set an adequate pool closing interval.
-
-{% endcut %}
+{% include [faq-dynamic-overlap](../_includes/faq/pool-setup/dynamic-overlap.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -1,8 +1,8 @@
 # How to upload tasks
 
-To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
+To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+1. Go to the **Prepare and upload data** step if you're creating a pool or click the **Upload** button on the pool page.
 
 1. Attach a prepared dataset or media files.
 
@@ -10,40 +10,40 @@ To upload a [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
     - A prepared dataset
 
-        1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
+      1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
 
-        1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
+      1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
 
-        {% cut "Use sample data" %}
+      {% cut "Use sample data" %}
 
-        If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
+      If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
 
-        - {% if locale == "en-com" %}**Image classification**{% endif %}
-        - {% if locale == "en-com" %}**Product search relevance**{% endif %}
-        - {% if locale == "en-com" %}**Object recognition & detection**{% endif %}
-        - {% if locale == "en-com" %}**Clickbait or not?**{% endif %}
+      - **Image classification**
+      - **Product search relevance**
+      - **Object recognition & detection**
+      - **Clickbait or not?**
 
-        Click {% if locale == "en-com" %}**Use sample data**{% endif %} next to {% if locale == "en-com" %}**Attach the prepared file with data**{% endif %}. This lets you avoid any additional actions with files.
+      Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
 
-        Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+      Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
-        {% endcut %}
+      {% endcut %}
 
     - Media files
 
-        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+      {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
     {% endlist %}
 
-1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+1. Click **Continue**.
 
 1. Choose a way to put tasks into suites and specify the number of tasks per suite. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
 
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+1. Click **Combine tasks into suites**.
 
 1. Wait for the result.
 
-To delete all the tasks in the pool, click {% if locale == "en-com" %}**Delete**{% endif %}.
+To delete all the tasks in the pool, click **Delete**.
 
 {% note alert "Restriction" %}
 
@@ -59,7 +59,7 @@ You can add up to one million tasks to the pool. To upload more tasks, create an
 
 - If you get a processing error, it means that the data file is not formatted correctly. For example, there are unnecessary tabs in the file or some lines, headers, or quotes are missing.
 
-    In this case, click {% if locale == "en-com" %}**Cancel**{% endif %}, correct the mistakes, and then upload the file again.
+    In this case, click **Cancel**, correct the mistakes, and then upload the file again.
 
 ## Processing errors {#table-with-errors}
 
@@ -151,68 +151,28 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 ## For developers {#for-developers}
 
 - [Toloka API: Tasks](../../api/concepts/tasks.md)
-- [Toloka-Kit: Creating tasks](../../toloka-kit/reference/toloka.client.TolokaClient.create_task.md)
+- [Toloka-Kit recipe: Upload tasks](../../toloka-kit/recipes/upload-tasks.md)
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Errors in column headers" %}
+{% include [troubleshooting-uploading-tasks-errors](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-tasks-errors.md) %}
 
-If the [column headings](pool_csv.md) are incorrect, the whole file is rejected. Otherwise, Toloka specifies the number of tasks with processing errors.
+{% include [troubleshooting-marked-as-training](../_includes/troubleshooting/adding-tasks-to-the-pool/marked-as-training.md) %}
 
-{% endcut %}
+{% include [troubleshooting-photos-split-across-pages](../_includes/troubleshooting/adding-tasks-to-the-pool/photos-split-across-pages.md) %}
 
-{% cut "Why haven't I received assignments since I launched my first project, and all the uploaded assignments are marked as "Training"?" %}
+{% include [troubleshooting-uploading-too-long](../_includes/troubleshooting/adding-tasks-to-the-pool/uploading-too-long.md) %}
 
-Check the `hint` field. For the general tasks, this field must be empty.
+{% include [troubleshooting-uploading-data](../_includes/troubleshooting/api/uploading-data.md) %}
 
-{% endcut %}
+{% include [troubleshooting-syntax-error](../_includes/troubleshooting/adding-tasks-to-the-pool/syntax-error.md) %}
 
-{% cut "How many tasks should be in a suite?" %}
+{% include [faq-how-many-tasks-in-suite](../_includes/faq/adding-tasks-to-the-pool/how-many-tasks-in-suite.md) %}
 
-The number of tasks depends on how difficult and time-consuming the tasks are. Keep the size reasonably small. Large task suites are unpopular, partly because they are inconvenient for Tolokers (for example, if the internet connection is unstable).
+{% include [faq-right-time-limit](../_includes/faq/adding-tasks-to-the-pool/right-time-limit.md) %}
 
-{% endcut %}
+{% include [faq-max-number-per-suite](../_includes/faq/adding-tasks-to-the-pool/max-number-per-suite.md) %}
 
-{% cut "What is the right time limit for the task completion?" %}
-
-Try completing the tasks yourself. Ask your colleagues and friends to complete them. Find out average completion time and add 50% to it.
-
-{% endcut %}
-
-{% cut "Why do I see a syntax error when I upload a task where a Toloker has to view an image and write feedback?" %}
-
-The error might occur if the expected input type is URL, but a string is received.
-
-There may be two reasons:
-
-- The input field has the "link" type.
-
-- The pool was created for an outdated project version. It means that the pool was created before you changed the input field type.
-
-{% endcut %}
-
-{% cut "What is the maximum number of tasks per suite?" %}
-
-It depends on the task. Technically, you can use as many tasks you want.
-
-But Tolokers don't like to take lengthy tasks. They'd rather do 10 tasks that take one minute each than one task that takes 10 minutes.
-
-In addition, if you use a large number of tasks on the page, there might be issues with uploading the files to be labeled. This problem might occur with images.
-
-The third thing to consider is quality control and assignment review. If you allow recompletion of assignments by banned Tolokers, you should split the task into smaller parts so that fewer assignments are recompleted. You are more likely to meet your budget this way.
-
-{% endcut %}
-
-{% cut "I have a task for photo classification. When there are more than 5 photos on the page, why does Toloka split them across 2 pages?" %}
-
-Toloka will group the uploaded image links in the file into suites depending on the task distribution method you use. For more information, see [Ways to group tasks in suites](distribute-tasks-by-pages.md).
-
-{% endcut %}
-
-{% cut "What is the difference between "task" and "task_suite"?" %}
-
-A task means a separate task. A task suite means a page with tasks. The Toloker gets paid for a task suite.
-
-{% endcut %}
+{% include [faq-task-suite-difference](../_includes/faq/adding-tasks-to-the-pool/task-suite-difference.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

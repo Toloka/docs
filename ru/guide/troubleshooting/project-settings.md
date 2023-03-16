@@ -8,8 +8,6 @@
 
 ## Инструкция {#concept_llj_dkp_smb}
 
-{% if locale == "ru-ru" %}
-
 {% cut "Как в инструкцию встроить несколько картинок с помощью ссылок на Яндекс Диск?" %}
 
 Чтобы добавить картинки с помощью ссылок на Яндекс Диск:
@@ -23,8 +21,6 @@
     [Подробно об использовании файлов с Яндекс Диска](../concepts/prepare-data.md).
 
 {% endcut %}
-
-{% endif %}
 
 {% cut "Как показать исполнителю инструкцию в самом задании, чтобы не нужно было ее открывать/закрывать?" %}
 
@@ -124,8 +120,6 @@ onKey: function(key) {
 
 {% endcut %}
 
-{% if locale == "ru-ru" %}
-
 {% cut "Как обращаться к элементам массива по индексу — к входным и выходным данным?" %}
 
 Если это в JS, то укажите в конце индекс:
@@ -137,8 +131,6 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 Если в интерфейсе, то следующим образом: ![](../_images/troubleshooting/access-elements-of-the-array1.png)
 
 {% endcut %}
-
-{% endif %}
 
 {% cut "Почему при добавлении входных и выходных данных в интерфейс HTML в режиме предпросмотра содержимое iframe не отображается?" %}
 
@@ -164,21 +156,12 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 
 {% cut "Как в ссылку перехода для «Кнопка с проверкой перехода по ссылке» передавать значение входной переменной?" %}
 
-Укажите название входного поля, куда передаёте ссылку, без скобок: {% if locale == "ru-ru" %}
+Укажите название входного поля, куда передаёте ссылку, без скобок:
 
 ```html
 {{field type="button-clicked" name="ads" label="Нажми меня" href=name_escape
             action=true}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-{{field type="button-clicked" name="ads" label="Click me" href=name_escape
-          action=true}}
-```
-
-{% endif %}
 
 {% endcut %}
 
@@ -186,21 +169,12 @@ this.getTask().input_values['name'][2]solution.output_values['result'][2]
 
 1. Посмотрите как это реализовано в шаблоне [«Поиск данных в сети»](../concepts/internet-search.md).
 
-1. Для решения второй задачи вы можете добавить ещё одну валидацию по аналогии с этой: {% if locale == "ru-ru" %}
+1. Для решения второй задачи вы можете добавить ещё одну валидацию по аналогии с этой:
 
     ```javascript
     if (solution.output_values.url && solution.output_values.check) {return {task_id:
     this.getTask().id,errors: {'url': {code: 'Вставьте ссылку или отметьте галочкой,что сайта нет'}}}}
     ```
-
-    {% endif %}{% if locale == "en-com" %}
-
-    ```javascript
-    if (solution.output_values.url && solution.output_values.check) {return {task_id:
-    this.getTask().id,errors: {'url': {code: ''Insert a link or check the box if the site doesn't exist'}}}}
-    ```
-
-    {% endif %}
 
 {% endcut %}
 
@@ -302,7 +276,7 @@ TolokaHandlebarsTask.prototype.setSolution.call(this, solution);
 
 {% cut "Где в шаблоне «Сравнение изображений (Side-by-side)» нужно указать proxy для Интерфейса задания, чтобы сделать задание с выбором из трех вариантов картинок?" %}
 
-В шаблоне {% if locale == "ru-ru" %}**Сравнение изображений (Side-by-side)**{% endif %}{% if locale == "en-com" %}**Image comparison (Side-by-side)**{% endif %} используется не HTML-тег, а компонент. Поэтому нужно подставить прокси в круглых скобках по [образцу](../concepts/t-components/img.md): `{{img src=(proxy image)}}`.
+В шаблоне **Сравнение изображений (Side-by-side)** используется не HTML-тег, а компонент. Поэтому нужно подставить прокси в круглых скобках по [образцу](../concepts/t-components/img.md): `{{img src=(proxy image)}}`.
 
 {% endcut %}
 
@@ -359,7 +333,7 @@ background-color: #000000;
 
 {% cut " Как в качестве элемента интерфейса использовать ползунки для выбора значения параметра?" %}
 
-В HTML шаблона укажите следующий код: {% if locale == "ru-ru" %}
+В HTML шаблона укажите следующий код:
 
 ```html
 <input type=""range"" list=""rng"" class=""res"">
@@ -384,34 +358,6 @@ return solution;
 
 }
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-<input type=""range"" list=""rng"" class=""res"">
-```
-
-and include the following in onRender in your JS:
-
-```javascript
-onRender: function() {
-// Generated DOM element for the task (available via #getDOMElement())
-//Adding auxiliary variables
-var $root = $(this.getDOMElement());
-var _this = this;
-var solution = TolokaHandlebarsTask.prototype.getSolution.apply(this, arguments);
-
-$root.on('change', '.res', function(){
-var range_result = $(this).val()
-_this.setSolutionOutputValue('result', range_result);
-
-return solution;
-})
-
-}
-```
-
-{% endif %}
 
 {% endcut %}
 

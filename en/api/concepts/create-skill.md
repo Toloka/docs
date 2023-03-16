@@ -6,7 +6,7 @@ Creates a skill.
 
 {% note alert "Restriction" %}
 
-You can send a maximum of 10 requests of this kind per minute and a maximum of 100 requests per day.
+You can send a maximum of 10 requests of this kind per minute and a maximum of 100 requests per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
@@ -52,7 +52,7 @@ Title | Overview
 
 #|
 || Parameter | Overview ||
-|| **name** | **string \| mandatory**
+|| **name** | **string \| required**
 
 Skill name. ||
 || **private_comment** | **string**
@@ -131,10 +131,7 @@ Requester ID. ||
 Checks who the object belongs to:
 
 - `true` — The Toloker whose OAuth token is specified in the request.
-- `false` — Another account (employee or owner).
-{% if audience == "internal" %}**owner.company_id** | **string**
-
-The requester's company ID.{% endif %} ||
+- `false` — Another account (employee or owner).||
 || **training** | **boolean**
 
 Whether the skill is related to a training pool:
@@ -151,3 +148,9 @@ An indicator of a global skill:
 - `true` — The skill is global, shows general competencies of Tolokers, and is available to all Tolokers.
 - `false` — The skill is created by the requester and can be assigned to Tolokers both manually and automatically: using quality control rules or after training. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/nav-create.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

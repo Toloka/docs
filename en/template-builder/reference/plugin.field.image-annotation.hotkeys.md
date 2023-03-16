@@ -4,7 +4,7 @@ Used to set hotkeys for the [field.image-annotation](field.image-annotation.md) 
 
 You can set hotkeys to select area types and selection modes and to confirm or cancel area creation. When setting hotkeys, you can use the up and down arrows (`up`,`down`), numbers, and Latin letters.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSTF)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/rDD6zD5S3tyzeb)
 
 ## Component properties {#properties}
 
@@ -21,3 +21,5 @@ You can set hotkeys to select area types and selection modes and to confirm or c
 || `modes.rectangle` | _string_ | Keyboard shortcut for selecting areas using rectangles. ||
 || `modes.select` | _string_ | Keyboard shortcut for selecting shapes and points. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

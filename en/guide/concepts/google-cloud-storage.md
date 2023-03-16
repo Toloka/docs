@@ -2,7 +2,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). {% endif %} This way you can quickly get direct links to your images to add them to the task file or instructions.
+You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). This way you can quickly get direct links to your images to add them to the task file or instructions.
 
 {% endnote %}
 
@@ -107,23 +107,15 @@ All spaces and symbols in the file names will be replaced with codes.
 
     Links look like this:
 
-    {% if locale == "en-com" %}
-
     ```plaintext
     https://storage.googleapis.com/<bucket>/<file-name>
     ```
 
-    {% endif %}
-
     The link in the folder looks like this:
-
-    {% if locale == "en-com" %}
 
     ```plaintext
     https://storage.googleapis.com/<bucket>/<file-path>/<file-name>
     ```
-
-    {% endif %}
 
     {% note info %}
 

@@ -50,3 +50,9 @@ In the request body, specify **all** [the skill parameters](create-skill.md#body
 ## Response {#response}
 
 Contains updated information about the skill (see the description in the [Create a skill](create-skill.md#response) section).
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/nav-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

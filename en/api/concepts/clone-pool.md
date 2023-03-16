@@ -6,6 +6,12 @@ Creates a duplicate pool.
 
 An empty pool will be created with the same parameters.
 
+{% note alert "Restriction" %}
+
+You can send a maximum of 20 requests of this kind per minute and 100 requests per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
+
+{% endnote %}
+
 ## Request {#request}
 
 {% list tabs %}
@@ -62,7 +68,7 @@ Title | Overview
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.CLONE` — Cloning a pool. ||
@@ -93,3 +99,5 @@ Source pool ID. ||
 
 New pool ID. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

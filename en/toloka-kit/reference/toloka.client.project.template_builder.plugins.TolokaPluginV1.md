@@ -1,5 +1,5 @@
 # TolokaPluginV1
-`toloka.client.project.template_builder.plugins.TolokaPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/plugins.py#L171)
+`toloka.client.project.template_builder.plugins.TolokaPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L171)
 
 ```python
 TolokaPluginV1(

@@ -10,7 +10,7 @@
 
 Чтобы запустить пул, нажмите кнопку ![](../_images/other/b-start-pool.svg) на странице пула или ![](../_images/tutorials/content-moderation/pool-action-play.svg) в списке пулов на странице [проекта](../../glossary.md#project).
 
-Запущенный пул имеет статус {% if locale == "ru-ru" %}«Открыт»{% endif %}{% if locale == "en-com" %}«Open»{% endif %}. Когда все задания пула выполнены, пул автоматически перейдет в статус {% if locale == "ru-ru" %}«Закрыт»{% endif %}{% if locale == "en-com" %}«Closed»{% endif %}.
+Запущенный пул имеет статус «Открыт». Когда все задания пула выполнены, пул автоматически перейдет в статус «Закрыт».
 
 Чтобы досрочно остановить выдачу заданий пула, нажмите кнопку ![](../_images/other/b-pause-pool.svg) на странице пула или ![](../_images/tutorials/content-moderation/pool-action-pause.svg) в списке пулов на странице проекта.
 

@@ -8,7 +8,7 @@ The pool is automatically assigned an ID.
 
 {% note alert "Restriction" %}
 
-You can send a maximum of 20 requests of this kind per minute and 100 requests per day.
+You can send a maximum of 20 requests of this kind per minute and 100 requests per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
@@ -223,33 +223,33 @@ Title | Overview
 
 #|
 || Parameter {#pool-param} | Overview ||
-|| **project_id** | **string \| mandatory**
+|| **project_id** | **string \| required**
 
 ID of the project that the pool was created for. ||
-|| **private_name** | **string \| mandatory**
+|| **private_name** | **string \| required**
 
 Name of the pool (only visible to the requester). ||
 || **may_contain_adult_content** | **boolean \| required**
 
 Whether the tasks contain adult content. ||
-|| **will_expire** | **string \| mandatory**
+|| **will_expire** | **string \| required**
 
 The date and time in UTC when the pool needs to be closed (even if not all task suites have been completed). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
-|| **reward_per_assignment** | **float \| mandatory**
+|| **reward_per_assignment** | **float \| required**
 
 Payment per task suite in U.S. dollars. For cents, use the dot (".") as the separator. The minimum payment is $0.005.
 
 Only training and control tasks can be uploaded to zero-price pools. ||
-|| **defaults** | **object \| mandatory**
+|| **defaults** | **object \| required**
 
 Settings that are applied by default when uploading new task suites to a pool. ||
-|| **defaults.default_overlap_ for_new_task_suites** {#default_overlap_for_new_task_suites} | **integer \| mandatory**
+|| **defaults.default_overlap_for_new_task_suites** {#default_overlap_for_new_task_suites} | **integer \| required**
 
 The overlap for task suites that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
-|| **defaults.default_overlap_ for_new_tasks** {#default-overlap-tasks} | **integer**
+|| **defaults.default_overlap_for_new_tasks** {#default-overlap-tasks} | **integer**
 
 The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
-|| **assignment_max_duration_ seconds** | **integer \| mandatory**
+|| **assignment_max_duration_seconds** | **integer \| required**
 
 The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers.
 
@@ -281,7 +281,7 @@ Lower bound of the interval. May take a value from 0 to 100. By default `0`. ||
 Required if dynamic pricing is used.
 
 Upper bound of the interval. May take a value from 0 to 100. By default `100`. ||
-|| **dynamic_pricing_config. intervals[].reward_per_ assignment** | **float \| required if**
+|| **dynamic_pricing_config. intervals[].reward_per_assignment** | **float \| required if**
 
 Required if dynamic pricing is used. The price per task suite for a Toloker with the specified skill level. ||
 || **quality_control. checkpoints_config. real_settings. target_overlap** | **integer \| required if**
@@ -460,17 +460,17 @@ Required if "smart mixing" is used.
 Number of general tasks per suite.
 
 The maximum number of tasks per task suite if `golden_task_distribution_function` or `training_task_distribution_function` is used. ||
-|| **mixer_config. golden_tasks_count** | **integer \| required if**
+|| **mixer_config.golden_tasks_count** | **integer \| required if**
 
 Required if "smart mixing" is used.
 
 Number of control tasks per suite. ||
-|| **mixer_config. training_tasks_count** | **integer \| required if**
+|| **mixer_config.training_tasks_count** | **integer \| required if**
 
 Required if "smart mixing" is used.
 
 Number of training tasks per suite. ||
-|| **mixer_config.golden_task_ distribution_function.scope** | **string \| required if**
+|| **mixer_config.golden_task_distribution_function.scope** | **string \| required if**
 
 Required if control tasks are assigned at a variable rate.
 
@@ -478,35 +478,35 @@ How to count tasks completed by the Toloker:
 
 - `POOL` — Count completed pool tasks.
 - `PROJECT` — Count completed project tasks. ||
-|| **mixer_config.golden_task_ distribution_function. distribution** | **string \| required if**
+|| **mixer_config.golden_task_distribution_function. distribution** | **string \| required if**
 
 Required if control tasks are assigned at a variable rate.
 
 Distribution of control tasks within an interval. This parameter has only one possible value — `UNIFORM`. ||
-|| **mixer_config.golden_task_ distribution_function. window_days** | **integer \| required if**
+|| **mixer_config.golden_task_distribution_function. window_days** | **integer \| required if**
 
 Required if control tasks are assigned at a variable rate.
 
 Period in which completed tasks are counted (number of days). ||
-|| **mixer_config.golden_task_ distribution_function. intervals[]** | **array of objects \| required if**
+|| **mixer_config.golden_task_distribution_function. intervals[]** | **array of objects \| required if**
 
 Required if control tasks are assigned at a variable rate. Interval borders and number of control tasks in an interval. ||
-|| **mixer_config.golden_task_ distribution_function. intervals[].from** | **integer \| required if**
+|| **mixer_config.golden_task_distribution_function. intervals[].from** | **integer \| required if**
 
 Required if control tasks are assigned at a variable rate.
 
 Start of the interval (number of tasks completed by the Toloker in the project or in the pool). ||
-|| **mixer_config.golden_task_ distribution_function. intervals[].to** | **integer \| required if**
+|| **mixer_config.golden_task_distribution_function. intervals[].to** | **integer \| required if**
 
 Required if control tasks are assigned at a variable rate.
 
 End of the interval (number of tasks completed by the Toloker in the project or in the pool). ||
-|| **mixer_config.golden_task_ distribution_function. intervals[].frequency** | **integer \| required if**
+|| **mixer_config.golden_task_distribution_function. intervals[].frequency** | **integer \| required if**
 
 Required if control tasks are assigned at a variable rate.
 
 Frequency of control tasks in an interval. The first task in an interval is a control task. For example, if you set `frequency: 3` tasks number 1, 4, 7 and so on will be control tasks. ||
-|| **mixer_config.training_task_ distribution_function.scope** | **string \| required if**
+|| **mixer_config.training_task_distribution_function.scope** | **string \| required if**
 
 Required if training tasks are assigned at a variable rate.
 
@@ -514,32 +514,32 @@ How to count tasks completed by the Toloker:
 
 - `POOL` — Count completed pool tasks.
 - `PROJECT` — Count completed project tasks. ||
-|| **mixer_config.training_task_ distribution_function. distribution** | **string \| required if**
+|| **mixer_config.training_task_distribution_function. distribution** | **string \| required if**
 
 Required if training tasks are assigned at a variable rate.
 
 Distribution of training tasks within an interval. This parameter has only one possible value — `UNIFORM`. ||
-|| **mixer_config.training_task_ distribution_function. window_days** | **integer \| required if**
+|| **mixer_config.training_task_distribution_function. window_days** | **integer \| required if**
 
 Required if training tasks are assigned at a variable rate.
 
 Period in which completed tasks are counted (number of days). ||
-|| **mixer_config.training_task_ distribution_function. intervals[]** | **array of objects \| required if**
+|| **mixer_config.training_task_distribution_function. intervals[]** | **array of objects \| required if**
 
 Required if training tasks are assigned at a variable rate.
 
 Interval borders and number of control tasks in an interval. ||
-|| **mixer_config.training_task_ distribution_function. intervals[].from** | **integer \| required if**
+|| **mixer_config.training_task_distribution_function. intervals[].from** | **integer \| required if**
 
 Required if training tasks are assigned at a variable rate.
 
 Start of the interval (number of tasks completed by the Toloker in the project or in the pool).
 
 Yes, if you use uneven distribution of training tasks ||
-|| **mixer_config.training_task_ distribution_function. intervals[].to** | **integer \| required if**
+|| **mixer_config.training_task_distribution_function. intervals[].to** | **integer \| required if**
 
 Required if training tasks are assigned at a variable rate. End of the interval (number of tasks completed by the Toloker in the project or in the pool). ||
-|| **mixer_config.training_task_ distribution_function. intervals[].frequency** | **integer \| required if**
+|| **mixer_config.training_task_distribution_function. intervals[].frequency** | **integer \| required if**
 
 Required if training tasks are assigned at a variable rate.
 
@@ -564,7 +564,7 @@ The default value is `true`. ||
 || **auto_accept_period_day** | **integer**
 
 Time (number of days) for the requester to review the task. If the requester doesn't accept or reject the task within this period, the decision will be made automatically. May take a value from 1 to 21. ||
-|| **auto_close_after_complete_ delay_seconds** | **integer**
+|| **auto_close_after_complete_delay_seconds** | **integer**
 
 Waiting time (in seconds) before automatic closure of the pool after all tasks are completed. Minimum — 0, maximum — 259 200 seconds (three days). The default value is 0.
 
@@ -576,7 +576,7 @@ Use it if:
 || **assignments_issuing_config** | **object**
 
 Settings for assigning tasks in the pool. ||
-|| **assignments_issuing_config. issue_task_suites_in_ creation_order** {#issue_task_suites_in_creation_order} | **boolean**
+|| **assignments_issuing_config. issue_task_suites_in_creation_order** {#issue_task_suites_in_creation_order} | **boolean**
 
 For pools that don't use "smart mixing".
 
@@ -585,7 +585,7 @@ Assign task suites in the order in which they were uploaded. For example, for a 
 This parameter is available when the project has `"assignments_issuing_type": "AUTOMATED".` ||
 || **priority** {#priority} | **integer**
 
-The priority of the pool in relation to other pools in the project with the same task price and set of filters. Users are assigned tasks with a higher priority first.
+The priority of the pool in relation to other pools in the project with the same task price and set of filters. Tolokers are assigned tasks with a higher priority first.
 
 Possible values: from `0` to `100`.
 
@@ -639,7 +639,7 @@ Selective review of training tasks. To make sure selective review is enabled, do
 
 Balance type. Possible values:
 
-- `TOP_PERCENTAGE_BY_QUALITY` — Users with the best task completion quality.
+- `TOP_PERCENTAGE_BY_QUALITY` — Tolokers with the best task completion quality.
 - `BEST_CONCURRENT_USERS_BY_QUALITY` — Active Tolokers with access to the task. ||
 || **speed_quality_balance. percent** | **integer**
 
@@ -673,12 +673,12 @@ Setting for the last task suite in the pool, if less than the minimum remaining 
 The default value is `true`.
 
 This parameter only applies to general tasks. The number of control and training tasks in the last suite must be complete (`mixer_config.golden_tasks_count`, `mixer_config.training_tasks_count`). ||
-|| **mixer_config.force_last_ assignment_ delay_seconds** | **integer**
+|| **mixer_config.force_last_assignment_delay_seconds** | **integer**
 
 Waiting time (in seconds) after adding a task or increasing the overlap before assigning the last task suite in the pool. Minimum — 0, maximum — 86,400 seconds (one day).
 
 This parameter can be used if the pool has `force_last_assignment: true`. ||
-|| **mixer_config.mix_tasks_ in_creation_ order** | **boolean**
+|| **mixer_config.mix_tasks_in_creation_order** | **boolean**
 
 The order used to add tasks to suites:
 
@@ -694,7 +694,7 @@ The order of tasks within a suite:
 - `false` — The order in which tasks were uploaded.
 
 The default value is `true`. ||
-|| **mixer_config.golden_task_ distribution_function** | **object**
+|| **mixer_config.golden_task_distribution_function** | **object**
 
 Vary the frequency of control tasks. The option allows you to change the frequency of checking as the Toloker completes more tasks.
 
@@ -706,13 +706,14 @@ The interval bound is the number of a task in the pool. If the task suite has s
 
 In the first task suite (the range from 1 to 25), every fifth task is a control task, and in the following suites, every 25th task is a control task. ||
 
-|| **mixer_config.training_task_ distribution_function** | **object**
+|| **mixer_config.training_task_distribution_function** | **object**
 
 Issue of training tasks with uneven frequency. This option allows you to change the frequency of training tasks as the Toloker completes more tasks.
 
 If it is filled in, then in `real_task_count` specify the maximum number of tasks to put in a task suite. To use the option, set parameter values `training_task_count:0` and `min_training_tasks_count:null`.
 
 #### Example:
+
 In the first task suite (the range from 1 to 25), every fifth task is a training task, and in the following suites, every 25th task is a training task. ||
 |#
 
@@ -758,3 +759,9 @@ Deprecated parameter.
 
 Pool type. The value is always `REGULAR` indicating a normal pool. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/pool-main.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

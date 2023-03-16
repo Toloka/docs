@@ -56,7 +56,7 @@
 
       1. {% include [toloka-requester-source-interface-def](../_includes/toloka-requester-source/id-toloka-requester-source/interface-def.md) %}
 
-          Воспользуйтесь {% if locale == "ru-ru" %}[готовым кодом](https://clck.ru/U7pFn){% endif %}{% if locale == "en-com" %}[ready-made code](https://clck.ru/VC4xu){% endif %} для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, пока не ответит на каждый из вопросов.
+          Воспользуйтесь [готовым кодом](https://ya.cc/t/5dOreK6G3tvhtr) для этого проекта, где уже настроена валидация и внешний вид задания. Исполнитель не сможет отправить задание, пока не ответит на каждый из вопросов.
 
           [Подробнее о настройке условий](../../template-builder/best-practices/conditions.md) в конструкторе шаблонов.
 
@@ -112,8 +112,6 @@
 
           В HTML-интерфейсе можно использовать стандартные теги HTML и [специальные выражения](spec.md) в двойных фигурных скобках для полей входных и выходных данных.
 
-          {% if locale == "ru-ru" %}
-
           ```html
           <div>
           <div>Где вы обычно завтракаете?</div>
@@ -144,45 +142,11 @@
           </div>
           ```
 
-          {% endif %}{% if locale == "en-com" %}
-
-          ```html
-          <div>
-          <div>Where do you usually have breakfast?</div>
-          {{field type="radio"name="place"value="home" label="At home"}}
-          {{field type="radio" name="place" value="university" label="At school or university"}}
-          {{field type="radio" name="place" value="work" label="At work"}}
-          {{field type="radio" name="place" value="cafe" label="In a cafe"}}<br/><br/><br/>
-          </div>
-          <div>
-          <div>What do you usually eat for breakfast?</div>
-          {{#field type="select"name="food" placeholder="" width="300px"}}
-          {{select_item value="kasha" text="Porridge/Muesli/Cold cereal"}}
-          {{select_item value="egg" text="Eggs (fried/boiled/omelet)"}}
-          {{select_item value="sandwich" text="Sandwich/Pastry/Crepes/Pancakes"}}
-          {{select_item value="curd" text="Cottage cheese/Yogurt/Other dairy"}}
-          {{select_item value="other" text="Other"}}
-          {{/field}}<br/><br/><br/>
-          </div>
-          <div>
-          <div>What do you usually drink at breakfast?</div>
-          {{field class="option" type="radio"name="drink" value="coffee" label="Coffee/Tea"}}
-          {{field class="option" type="radio" name="drink" value="milk" label="Milk"}}
-          {{field class="option" type="radio" name="drink" value="juice" label="Juice"}}
-          {{field class="option" type="radio" name="drink" value="other" label="Other"}}<br/><br/><br/>
-          </div>
-          <div>
-          Thank you for completing our survey!
-          </div>
-          ```
-
-          {% endif %}
-
           Эта запись означает, что исполнитель увидит три вопроса с вариантами ответов.
 
           Очистите блоки JavaScript и CSS.
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) **Предпросмотр задания**, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -214,15 +178,15 @@
 
 1. Дайте пулу любое удобное название — оно доступно только вам, исполнитель увидит название проекта.
 
-1. В блоке **Аудитория** добавьте {% if locale == "ru-ru" %}**Фильтры**{% endif %}{% if locale == "en-com" %}**Filters**{% endif %} для отбора исполнителей. {% if locale == "ru-ru" %}Чтобы ваше задание было доступно только исполнителям, владеющим русским языком, установите фильтры **Регион по номеру телефона** и **Языки**: выберите исполнителей из России, Украины, Казахстана и Беларуси, которые в своем профиле отметили знание русского языка.{% endif %}
+1. В блоке **Аудитория** добавьте **Фильтры** для отбора исполнителей. Чтобы ваше задание было доступно только исполнителям, владеющим русским языком, установите фильтры **Регион по номеру телефона** и **Языки**: выберите исполнителей из России, Украины, Казахстана и Беларуси, которые в своем профиле отметили знание русского языка.
 
     {% include [toloka-requester-source-filter-client-about](../_includes/toloka-requester-source/id-toloka-requester-source/filter-client-about.md) %}
 
 1. В блоке **Цена** установите цену в долларах США за [страницу заданий](../../glossary.md#task-suite), например, `0.01`. В опросе страница заданий должна содержать одно задание. Если вам нужна помощь в оценке задач, почитайте про [настройку ценообразования](dynamic-pricing.md#section_wb1_lhl_vlb).
 
-1. В блоке **Контроль качества** установите {% if locale == "ru-ru" %}**Перекрытие задания**{% endif %}{% if locale == "en-com" %}**Task overlap**{% endif %} — количество исполнителей, которые должны выполнить задание. Для начала установите небольшое количество, например, 100. Если вы видите, что этого недостаточно для выборки, увеличьте перекрытие.
+1. В блоке **Контроль качества** установите **Перекрытие задания** — количество исполнителей, которые должны выполнить задание. Для начала установите небольшое количество, например, 100. Если вы видите, что этого недостаточно для выборки, увеличьте перекрытие.
 
-1. В блоке **Дополнительные настройки** укажите {% if locale == "ru-ru" %}**Время**{% endif %}{% if locale == "en-com" %}**Time**{% endif %} на выполнение страницы заданий, например, 600 секунд.
+1. В блоке **Дополнительные настройки** укажите **Время** на выполнение страницы заданий, например, 600 секунд.
 
 1. Нажмите кнопку **Создать пул**.
 
@@ -236,7 +200,7 @@
 
     ![](../_images/tutorials/questionnaire/breakfast_tsv_text.png)
 
-1. Загрузите задания, выбрав {% if locale == "ru-ru" %}**Указать вручную**{% endif %}{% if locale == "en-com" %}**Set manually**{% endif %} и установив 1 задание на странице.
+1. Загрузите задания, выбрав **Указать вручную** и установив 1 задание на странице.
 
 ## Настройте контроль качества {#quality_control}
 
@@ -244,13 +208,13 @@
 
 1. {% include [control_how-setQC](../_includes/concepts/control/id-control_how/setQC.md) %}
 
-1. Добавьте блок {% if locale == "ru-ru" %}**Быстрые ответы**{% endif %}{% if locale == "en-com" %}**Quick answers**{% endif %} и укажите следующие значения:
+1. Добавьте блок **Быстрые ответы** и укажите следующие значения:
 
     ![](../_images/other/fast-answers-quest.png)
 
     Это означает, что если исполнитель выполнит хотя бы одну страницу заданий быстрее чем за 10 секунд, он будет заблокирован на проекте и не сможет выполнять задания 10 дней.
 
-1. Добавьте блок {% if locale == "ru-ru" %}**Повторное выполнение заданий после блокировки исполнителя**{% endif %}{% if locale == "en-com" %}**Banned users' reassessment**{% endif %}.
+1. Добавьте блок **Повторное выполнение заданий после блокировки исполнителя**.
 
     Для опросов нужно добавлять оба правила всегда — они эффективны только в паре для таких заданий. Часто в опросе одна страница с заданиями. Это правило дополняет быстрые ответы так, чтобы в итоге получить необходимое количество ответов, а не просто заблокировать тех, кто слишком быстро отвечает.
 
@@ -278,17 +242,17 @@
 
 1. Отслеживайте ход агрегации на странице **Операции**. По завершении нажмите кнопку **Скачать**.
 
-1. Если ответов исполнителей недостаточно для анализа, то увеличьте {% if locale == "ru-ru" %}**Перекрытие**{% endif %}{% if locale == "en-com" %}**Overlap**{% endif %}, чтобы получить больше ответов.
+1. Если ответов исполнителей недостаточно для анализа, то увеличьте **Перекрытие**, чтобы получить больше ответов.
 
     {% cut "Как увеличить перекрытие?" %}
 
     1. Остановите пул, нажав кнопку ![](../_images/other/b-pause-pool.svg).
 
-    1. В правом верхнем углу нажмите {% if locale == "ru-ru" %}**Редактировать**{% endif %}{% if locale == "en-com" %}**Edit**{% endif %}.
+    1. В правом верхнем углу нажмите **Редактировать**.
 
-    1. Измените значение в блоке {% if locale == "ru-ru" %}**Перекрытие**{% endif %}{% if locale == "en-com" %}**Overlap**{% endif %}.
+    1. Измените значение в блоке **Перекрытие**.
 
-    1. Нажмите кнопку {% if locale == "ru-ru" %}**Сохранить**{% endif %}{% if locale == "en-com" %}**Save**{% endif %} и запустите пул.
+    1. Нажмите кнопку **Сохранить** и запустите пул.
 
     {% endcut %}
 

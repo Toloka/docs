@@ -39,3 +39,5 @@ Title | Overview
 ## Response {#response}
 
 The file is saved to your computer.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

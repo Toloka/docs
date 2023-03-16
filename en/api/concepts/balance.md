@@ -56,3 +56,5 @@ Requester ID. ||
 
 The requester's name in Toloka. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

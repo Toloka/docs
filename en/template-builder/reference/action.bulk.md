@@ -2,7 +2,7 @@
 
 Use this component to call multiple actions at the same time, like to show more than one notification when a button is clicked.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rf2Z4)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/jH6BvDpE3twfMn)
 
 Actions are invoked in the order in which they are listed. This means that if two actions write a value to the same variable, the variable will always have the second value.
 
@@ -14,3 +14,5 @@ Actions are invoked in the order in which they are listed. This means that if tw
 || `payload` | _array_ | An array of actions that you want to call. ||
 || `payload[]` | _action_ | Action. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

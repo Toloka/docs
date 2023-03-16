@@ -4,7 +4,7 @@ Adds buttons for selecting an answer option. This is useful if there are several
 
 The button size depends on the length of the text.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSHw)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/jBYQsbgj3twiqX)
 
 ## Component properties {#properties}
 
@@ -22,7 +22,7 @@ The button size depends on the length of the text.
 || `options[].value`<span style="color: red">\*</span> | _any_ | Returned value. ||
 || `rtl` | _object_ | In some languages, like Arabic or Hebrew, text is written from right to left. Use this property to set up the correct display mode for the component.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/amHA8)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/tq6fCNm_3ttFBW)
 
 [Learn more about RTL languages](https://www.w3.org/International/questions/qa-scripts). ||
 || `rtl.mode` | _string_ | Display mode:
@@ -33,3 +33,5 @@ The button size depends on the length of the text.
 The chosen value will be added to the `dir` attribute in the component's HTML code. [Learn more about dir](https://www.w3.org/International/questions/qa-html-dir). ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

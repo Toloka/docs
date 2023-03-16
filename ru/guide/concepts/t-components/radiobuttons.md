@@ -4,27 +4,16 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать переключатель в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.radio-group.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.radio-group.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать переключатель в [Конструкторе шаблонов](../../../template-builder/reference/field.radio-group.md).
 
 {% endnote %}
 
 Чтобы вставить в задание переключатель, используйте компонент `{{field type="radio" name="<название выходного поля>"}}`. Например (переключатель из двух элементов):
 
-{% if locale == "ru-ru" %}
-
 ```plaintext
 {{field type="radio" name="result" label="Да" value="Yes" hotkey="1"}}
 {{field type="radio" name="result" label="Нет" value="No" hotkey="2"}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```plaintext
-{{field type="radio" name="result" label="Yes" value="Yes" hotkey="1"}}
-{{field type="radio" name="result" label="No" value="No" hotkey="2"}}
-```
-
-{% endif %}
 
 В описании [выходных данных](../incoming.md) добавьте поле с типом `string`. Например:
 

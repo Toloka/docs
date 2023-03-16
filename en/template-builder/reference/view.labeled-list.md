@@ -22,3 +22,5 @@ By default, `false` (the label is aligned to the top of the content block). ||
 || `minWidth` | _number_ | The minimum width of list content. If the component width is less than the specified value, it switches to compact mode. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

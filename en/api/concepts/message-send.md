@@ -4,10 +4,16 @@
 
 Sends a message to Tolokers.
 
-- [Specify recipients in a list](#spis).
-- [Select Tolokers using a filter](#didi).
+- [Specify recipients](#spis) in a list.
+- [Select Tolokers](#didi) using a filter.
 
 The sent message is added to a new [message thread](messages.md).
+
+{% note alert "Restriction" %}
+
+You can send a maximum of 1 messages per day to mass mail all your users, and 100,000 messages per day when targeting specific Tolokers. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
+
+{% endnote %}
 
 ## Request {#request}
 
@@ -43,7 +49,6 @@ Title | Overview
 {% list tabs %}
 
 - Message with a list of recipients {#spis}
-
 
     ```json
     {
@@ -272,17 +277,17 @@ Date the message was created. ||
 || **compose_details** | **object**
 
 For messages that you sent: details of the POST request for creating the message. ||
-|| **compose_details.recipients_ select_type** | **string**
+|| **compose_details.recipients_select_type** | **string**
 
 Method for selecting recipients:
 
 - `DIRECT` — Specify Toloker IDs.
 - `FILTER` — Use a [filter](filters.md) to select Tolokers.
 - `ALL` — Send the message to all Tolokers who have tried to complete a task at least once. ||
-|| **compose_details.recipients_ ids** | **object**
+|| **compose_details.recipients_ids** | **object**
 
 The list of IDs of Tolokers who will receive the message. ||
-|| **compose_details.recipients_ filter** | **object**
+|| **compose_details.recipients_filter** | **object**
 
 [Filter](filters.md) for selecting recipients. ||
 || **answerable** | **boolean**
@@ -294,6 +299,7 @@ Whether the message can be responded to:
 || **folders**[] | **array of objects**
 
 Folders where the thread is located:
+
 - `INBOX` — Inbox.
 - `OUTBOX` — Sent.
 - `AUTOMATIC_NOTIFICATION` — Notifications.
@@ -303,3 +309,5 @@ Folders where the thread is located:
 
 Date the first message in the thread was created. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

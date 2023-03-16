@@ -23,6 +23,8 @@ POST | [/aggregated-solutions/aggregate-by-pool](aggregate-by-pool.md) | Starts 
 POST | [/aggregated-solutions/aggregate-by-task](aggregate-by-task.md) | Starts aggregating responses to a single task.
 GET | [/aggregated-solutions/<operation_id>](get-aggregated-result.md) | Gets aggregated responses.
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [More information about aggregations](../../guide/concepts/result-aggregation.md)
+- [{#T}](../../guide/concepts/result-aggregation.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

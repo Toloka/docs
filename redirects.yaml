@@ -47,6 +47,12 @@ common:
     to: /toloka-apps/api/ref/item/app-projectsapp_project_iditemsitem_id-get.md
   - from: /toloka-apps/api/ref/item/app-projects_app_project_id_items_get.md
     to: /toloka-apps/api/ref/item/app-projectsapp_project_iditems-get.md
+  - from: /toloka-kit/learn-basics.md
+    to: /toloka-kit/recipes/learn-basics.md
+  - from: /toloka-kit/use-cases.md
+    to: /toloka-kit/recipes/use-cases.md
+  - from: /guide/concepts/captcha.md
+    to: /guide/concepts/check-performers.md
 
 ru:
   - from: /api/concepts/download-tasks.md
@@ -89,3 +95,41 @@ en:
     to: /guide/tutorials/video-moderation.md
   - from: /guide/concepts/walk.md
     to: /guide/tutorials/walk.md
+  - from: /guide/concepts/usecases.md
+    to: /guide/tutorials/usecases.md
+  - from: /guide/concepts/image-segmentation-overview.md
+    to: /guide/tutorials/image-segmentation-overview.md
+  - from: /guide/concepts/image-segmentation-project1.md
+    to: /guide/tutorials/image-segmentation-project1.md
+  - from: /guide/concepts/image-segmentation-project2.md
+    to: /guide/tutorials/image-segmentation-project2.md
+  - from: /guide/concepts/image-segmentation-project3.md
+    to: /guide/tutorials/image-segmentation-project3.md
+  - from: /guide/concepts/image-segmentation-appendix.md
+    to: /guide/tutorials/image-segmentation-appendix.md
+  - from: /guide/concepts/data-collection.md
+    to: /guide/tutorials/data-collection.md
+  - from: /guide/concepts/contain_item.md
+    to: /guide/tutorials/contain_item.md
+  - from: /guide/concepts/find_an_item_in_store.md
+    to: /guide/tutorials/find_an_item_in_store.md
+  - from: /guide/concepts/item_look_similar.md
+    to: /guide/tutorials/item_look_similar.md
+  - from: /guide/concepts/item_more_similar.md
+    to: /guide/tutorials/item_more_similar.md
+  - from: /guide/concepts/appendix-expanded-code.md
+    to: /guide/tutorials/appendix-expanded-code.md
+  - from: /guide/concepts/advanced-features.md
+    to: /guide/tutorials/advanced-features.md
+  - from: /guide/concepts/advanced-features-button.md
+    to: /guide/tutorials/advanced-features-button.md
+  - from: /guide/concepts/advanced-features-attach.md
+    to: /guide/tutorials/advanced-features-attach.md
+  - from: /guide/concepts/advanced-features-input-data.md
+    to: /guide/tutorials/advanced-features-input-data.md
+  - from: /guide/concepts/advanced-features-show-pic.md
+    to: /guide/tutorials/advanced-features-show-pic.md
+  - from: /guide/concepts/advanced-features-input-string.md
+    to: /guide/tutorials/advanced-features-input-string.md
+  - from: /guide/concepts/advanced-features-input-selector.md
+    to: /guide/tutorials/advanced-features-input-selector.md

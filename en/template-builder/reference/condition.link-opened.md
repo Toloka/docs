@@ -2,11 +2,11 @@
 
 Checks that a Toloker clicked the link.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asS5W)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/ult2m5XH3xPQFX)
 
 **Important:** To trigger the condition, the Toloker must follow the link from the Toloka interface — you must give Tolokers this option. The condition will not work if the Toloker opens the link from the browser address bar.
 
-This condition can be used in the [view.link](view.link.md) component and also anywhere you can use _(conditions)_.
+This condition can be used in the [view.link](view.link.md) component and also anywhere you can use [conditions](conditions.md).
 
 ## Component properties {#properties}
 
@@ -16,3 +16,5 @@ This condition can be used in the [view.link](view.link.md) component and also a
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 || `url` | _string_ | The link that must be clicked. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

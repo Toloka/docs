@@ -17,6 +17,8 @@ POST | [/training/<training_pool_id>/clone](clone-training.md) | Creates a dupli
 GET | [/trainings](get-training-list.md) | Gets the list of created training pools (including archived pools).
 GET | [/trainings/<training_pool_id>](get-training.md) | Gets the properties of a training pool.
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [More details about training pools](../../guide/concepts/train.md)
+- [{#T}](../../guide/concepts/train.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

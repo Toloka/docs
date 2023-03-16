@@ -1,5 +1,5 @@
 # Chart
-`toloka.metrics.jupyter_dashboard.Chart` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/metrics/jupyter_dashboard.py#L54)
+`toloka.metrics.jupyter_dashboard.Chart` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/jupyter_dashboard.py#L54)
 
 ```python
 Chart(
@@ -30,10 +30,9 @@ How to display all submitted and accepted answers from some pool and its checkin
 Chart(
     'Answers count',
     [
-```
-            metrics.AssignmentsInPool('456', submitted_name='submitted in 456', accepted_name='accepted in 456', toloka_client=client2),
-        ]
-```python
+        metrics.AssignmentsInPool('123', submitted_name='submitted in 123', accepted_name='accepted in 123', toloka_client=client1),
+        metrics.AssignmentsInPool('456', submitted_name='submitted in 456', accepted_name='accepted in 456', toloka_client=client2),
+    ]
 )
 ```
 ## Methods Summary

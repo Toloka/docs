@@ -1,6 +1,6 @@
 # Submission rate
 
-This indicator shows the percentage of successfully submitted tasks and helps identify issues related to incorrect settings:
+This indicator shows the percentage of submitted tasks and helps identify issues related to incorrect settings:
 
 - The indicator does not show any value. Perhaps the set criteria for selecting Tolokers are too strict and your tasks are not available to them.
 
@@ -8,7 +8,11 @@ This indicator shows the percentage of successfully submitted tasks and helps id
 
 - The percentage of submitting tasks is zero. In this case, check whether the field names specified in the task interface are correct.
 
-#### How to calculate
+## How to calculate
+
+The indicator is calculated as the ratio between the number of submitted tasks and the number of started tasks.
+
+{% cut "Show the formula" %}
 
 $P_{subm} = \frac{T_{subm}+T_{accept}+T_{reject}}{T_{subm}+T_{accept}+T_{reject}+T_{expire}+T_{skip}}\times100$
 
@@ -26,7 +30,9 @@ where:
 
 - $T_{skip}$ is the number of skipped tasks.
 
-#### How to estimate
+{% endcut %}
+
+## How to estimate
 
 - A good indicator is `> 90%`.
 
@@ -34,7 +40,7 @@ where:
 
 ## See also {#see-also}
 
-- [{#T}](../incoming.md)
+- [Input and output data](../incoming.md)
 - [{#T}](../filters.md)
 
 {% include [contact-support](../../_includes/contact-support.md) %}

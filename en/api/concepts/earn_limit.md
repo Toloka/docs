@@ -15,7 +15,7 @@ The Toloker is banned from the requester's projects when the Toloker's daily ear
 
 You can ban a Toloker for a given number of days, hours, minutes (at a time or in total) or forever.
 
-#### Ban for 10 days
+### Ban for 10 days
 
 ```json
 {
@@ -127,8 +127,8 @@ Criteria for the quality control rule:
 - `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
 - `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
 - `ASSIGNMENT_SUBMIT_TIME` — The number of "fast" responses (the minimum response speed is set in the parameters).
-- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during non-automatic acceptance.
-- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with non-automatic acceptance enabled.
+- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
+- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
 || **configs.rules.conditions** | **object \| required**
 
@@ -203,6 +203,7 @@ A fixed value to assign to the skill (a number from 0 to 100). ||
 || **configs.rules.action. parameters.delta** | **integer \| required if**
 
 Required if `type=CHANGE_OVERLAP`.
+
 The value determines the amount to change the overlap by. ||
 || **configs.rules.action. parameters.public_comment** | **string \| required if**
 
@@ -230,3 +231,9 @@ Ban duration. ||
 
 Comments (the reason for blocking access). Visible only to the requester. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/income.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

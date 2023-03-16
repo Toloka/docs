@@ -2,7 +2,7 @@
 
 {% include [announce](../_includes/announce.md) %}
 
-You can manually check tasks and reject responses of poor quality. To accept or reject received responses, change the status of the task suite using a PATCH request to the resource `/assignments/<task suite assignment ID>`:
+You can manually check tasks and reject responses of poor quality. To accept or reject received responses, change the status of the task suite using a PATCH request to the `/assignments/<task_suite_assignment_ID>` resource:
 
 - Accept responses: change `SUBMITTED` to `ACCEPTED`.
 - Reject responses: change `SUBMITTED` to `REJECTED`.
@@ -108,3 +108,9 @@ Maximum length: 2048 characters. ||
 
 IDs of rewards issued. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/accept.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

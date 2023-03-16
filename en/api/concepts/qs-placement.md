@@ -538,3 +538,5 @@ Read the [instructions on how to get results](qs-results.md).
 - [HTTP methods for working with projects](project.md)
 - [HTTP methods for working with pools](pool.md)
 - [HTTP methods for uploading tasks](tasks.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

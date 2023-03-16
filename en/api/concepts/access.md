@@ -13,9 +13,9 @@ Authorization: OAuth <OAuth token>
 
 ## Resource URL {#urls}
 
-- For requests to the sandbox: `https://sandbox.toloka.dev/api/v1/<the path to the resource>`.
+- For requests to the sandbox: `https://sandbox.toloka.dev/api/v1/<path_to_resource>`.
 
-- For requests to the production version: `https://toloka.dev/api/v1/<the path to the resource>`.
+- For requests to the production version: `https://toloka.dev/api/v1/<path_to_resource>`.
 
 ## Getting an OAuth token {#token}
 
@@ -28,3 +28,11 @@ Working with the Toloka API requires an OAuth access token. [Register](../../gui
 [![Accessing the API](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png)
 
 {% include [image-styles](../../../_includes/image-styles.md) %}
+
+## Troubleshooting {#troubleshooting}
+
+{% include [troubleshooting-token-expired](../../guide/_includes/troubleshooting/api/token-expired.md) %}
+
+{% include [troubleshooting-access-denied](../../guide/_includes/troubleshooting/api/access-denied.md) %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

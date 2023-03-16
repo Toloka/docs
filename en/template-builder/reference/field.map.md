@@ -8,7 +8,7 @@ A Toloker can set markers on the map, so you can use this component to create ta
 
 You can set the following map properties: scale, position of the map center, label, and hint for the Tolokers.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/zSkybT6z3X66wW)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/CtOG5R413tz9Dj)
 
 ## Component properties {#properties}
 
@@ -33,3 +33,5 @@ You can set the following map properties: scale, position of the map center, lab
 || `validation` | _condition_ | Validation based on condition. ||
 || `zoom` | _integer_ | The map initial scale. Use the values from `0` to `19`. Bigger values give a more detailed map view. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

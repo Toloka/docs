@@ -10,7 +10,6 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 
 - [Control tasks](./goldenset.md)
 - [Majority vote](./mv.md)
-- [Entering captchas](./captcha.md)
 - [Compensation amount](./earn_limit.md)
 - [Skipped assignments](./skipped.md)
 - [Submitted assignments](./completed.md)
@@ -19,6 +18,9 @@ To define quality control rules, add an array of `quality_control.configs` JSON 
 - [Processing rejected and accepted assignments](./reassessment.md)
 - [Recompletion of assignments](./restore-task-overlap.md)
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [More information about quality control rules](../../guide/concepts/check-performers.md)
+- [{#T}](../../guide/concepts/control.md)
+- [How to check Tolokers](../../guide/concepts/check-performers.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

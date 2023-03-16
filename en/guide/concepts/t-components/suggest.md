@@ -20,8 +20,6 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
 
       {% cut "Example 1" %}
 
-      {% if locale == "en-com" %}
-
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -53,13 +51,9 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
       }
       ```
 
-      {% endif %}
-
       {% endcut %}
 
       {% cut "Example 2" %}
-
-      {% if locale == "en-com" %}
 
       ```javascript
       exports.Task = extend(TolokaHandlebarsTask, function (options) {
@@ -67,7 +61,7 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
       }, {
       getTemplateData: function() {
       var data = TolokaHandlebarsTask.prototype.getTemplateData.apply(this, arguments);
-      data.countries = ['Poland', 'Lithuania', 'Russia', 'Belarus', 'Latvia', 'Germany', 'France'];
+      data.countries = ['US', 'Germany', 'France'];
       return data;
       },
       OnRender: function () {
@@ -89,8 +83,6 @@ Contains text suggestions that are displayed when the Toloker points the cursor 
       return constructorFunction;
       }
       ```
-
-      {% endif %}
 
      {% endcut %}
 

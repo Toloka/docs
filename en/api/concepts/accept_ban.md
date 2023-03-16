@@ -2,7 +2,7 @@
 
 ## Overview {#about}
 
-You can block access to tasks for Tolokers whose responses were rejected by the requester during non-automatic acceptance. To do this, set key values in the `quality_control.configs` array in the pool settings.
+You can block access to tasks for Tolokers whose responses were rejected by the requester during manual review. To do this, set key values in the `quality_control.configs` array in the pool settings.
 
 ## Request body {#body}
 
@@ -130,8 +130,8 @@ Criteria for the quality control rule:
 - `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
 - `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
 - `ASSIGNMENT_SUBMIT_TIME` — The number of "fast" responses (the minimum response speed is set in the parameters).
-- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during non-automatic acceptance.
-- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with non-automatic acceptance enabled.
+- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
+- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
 || **configs.rules.conditions** | **object \| required**
 
@@ -141,8 +141,8 @@ Conditions (for example, 10 task suites skipped in a row). Multiple conditions a
 Values that are checked in the condition:
 
 - `total_assignments_count` — The number of tasks in the pool that the Toloker completed.
-- `accepted_assignments_rate` — The percentage of pool tasks performed by the Toloker and accepted with non-automatic acceptance.
-- `rejected_assignments_rate` — The percentage of pool tasks performed by the Toloker that were rejected during non-automatic acceptance. ||
+- `accepted_assignments_rate` — The percentage of pool tasks performed by the Toloker and accepted with manual review.
+- `rejected_assignments_rate` — The percentage of pool tasks performed by the Toloker that were rejected during manual review. ||
 || **configs.rules.conditions. operator** | **string \| required**
 
 Comparison operator (the `key` data is compared with the threshold value from `value`):
@@ -242,3 +242,5 @@ The maximum number of recent tasks that the Toloker completed in the project to 
 If this field is omitted, the calculation is based on all the tasks that the Toloker completed in the pool. ||
 
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

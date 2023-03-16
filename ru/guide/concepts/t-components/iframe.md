@@ -4,7 +4,7 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать встроенный фрейм в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/view.iframe.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/view.iframe.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать встроенный фрейм в [Конструкторе шаблонов](../../../template-builder/reference/view.iframe.md).
 
 {% endnote %}
 

@@ -4,7 +4,7 @@ The component displays several data blocks of the same width on a single horizon
 
 You can add selection buttons or a field for comment under the compared elements.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/c9D7Dl0K3X6bm2)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/buBN71oL3twVaP)
 
 Differences from the [layout.compare](layout.compare.md) component:
 
@@ -24,3 +24,5 @@ For example: [field.checkbox-group](field.checkbox-group.md) or [field.button-ra
 || `minItemWidth` | _number_ | The minimum width of a data block, at least 400 pixels. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

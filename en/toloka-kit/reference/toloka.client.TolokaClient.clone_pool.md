@@ -1,25 +1,25 @@
 # clone_pool
-`toloka.client.TolokaClient.clone_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1385)
+`toloka.client.TolokaClient.clone_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1441)
 
 ```python
 clone_pool(self, pool_id: str)
 ```
 
-Duplicates existing pool
+Clones an existing pool.
 
 
-An empty pool with the same parameters will be created.
-A new pool will be attached to the same project.
+An empty pool with the same parameters is created.
+The new pool is attached to the same project.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**str**|<p>ID of the existing pool.</p>
+`pool_id`|**str**|<p>The ID of the pool to be cloned.</p>
 
 * **Returns:**
 
-  New pool.
+  The new pool.
 
 * **Return type:**
 

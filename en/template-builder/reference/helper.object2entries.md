@@ -26,7 +26,7 @@ It will be converted to an array whose objects will pair data from the source ob
 ]
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/RnsKc)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/CMTew3Xf3twjQE)
 
 ## Component properties {#properties}
 
@@ -35,3 +35,5 @@ It will be converted to an array whose objects will pair data from the source ob
 || `type`<span style="color: red">\*</span> | "helper.object2entries" | Set component type ||
 || `data` | _any_ | The object to convert. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -2,7 +2,7 @@
 
 Checks that the array in `data` is a subarray for `parent`.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSD9)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/hKrpY1DO3xEBoC)
 
 ## Component properties {#properties}
 
@@ -13,3 +13,5 @@ Checks that the array in `data` is a subarray for `parent`.
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 || `parent` | _any_ | The array where `data` is searched for ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

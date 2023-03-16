@@ -1,5 +1,5 @@
 # ToggleActionV1
-`toloka.client.project.template_builder.actions.ToggleActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/actions.py#L158)
+`toloka.client.project.template_builder.actions.ToggleActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/actions.py#L158)
 
 ```python
 ToggleActionV1(

@@ -6,7 +6,7 @@ Sets the skill value.
 
 {% note alert "Restriction" %}
 
-You can send a maximum of 100,000 requests of this kind per day.
+You can send a maximum of 100,000 requests of this kind per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
@@ -106,3 +106,10 @@ The date and time in UTC when the Toloker was first assigned the skill with the 
 
 The date and time in UTC when the Toloker's skill level changed. It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/nav-assign.md)
+- [{#T}](../../guide/concepts/nav-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -17,3 +17,5 @@ Use the components named `conditions.*` to match an expression against a conditi
 | [condition.schema](condition.schema.md)             | Allows validating data using [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step.html). This is a special format for describing data in JSON format.                                                           |
 | [condition.sub-array](condition.sub-array.md)       | Checks whether the array is a subarray of another element.                                                                                                                                                                          |
 | [condition.distance](condition.distance.md)         | This component checks whether the sent coordinates match the ones that you specified.                                                                                                                                               |
+
+{% include [contact-support](../_includes/contact-support.md) %}

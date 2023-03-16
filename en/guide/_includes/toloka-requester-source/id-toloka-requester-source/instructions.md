@@ -1,1 +1,1 @@
-Under {% if locale == "en-com" %}**Instructions for Tolokers**{% endif %}, add the instructions Tolokers will see when they start doing your tasks. You can add text, tables, and images to your instructions.
+In the **Instructions for Tolokers** editor, enter the [instructions](../../../../glossary.md#instructions) Tolokers will see when they start doing your tasks. You can add text, tables, and images to your instructions.

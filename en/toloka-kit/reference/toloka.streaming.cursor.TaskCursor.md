@@ -1,5 +1,5 @@
 # TaskCursor
-`toloka.streaming.cursor.TaskCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/cursor.py#L263)
+`toloka.streaming.cursor.TaskCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/cursor.py#L263)
 
 ```python
 TaskCursor(

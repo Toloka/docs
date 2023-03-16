@@ -10,17 +10,17 @@ Gets the properties of the reward issued.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-bonuses/<bonus_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-bonuses/<bonus_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/user-bonuses/<bonus_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/user-bonuses/<bonus_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -90,3 +90,5 @@ Reward ID. ||
 
 Date the reward was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]` ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

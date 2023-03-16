@@ -14,3 +14,5 @@ When clicking the button, an action specified in the `action` property is called
 || `hint` | _string_ | Hint text. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -1,22 +1,25 @@
 # open_training_async
-`toloka.client.TolokaClient.open_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1938)
+`toloka.client.TolokaClient.open_training_async` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L2013)
 
 ```python
 open_training_async(self, training_id: str)
 ```
 
-Starts distributing tasks from the training, asynchronous version
+Opens a training. Sends an asynchronous request to Toloka.
+
+
+Tasks from opened trainings can be assigned to Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of the training that will be started.</p>
+`training_id`|**str**|<p>The ID of the training.</p>
 
 * **Returns:**
 
-  An operation upon completion of which you can get the training with new status. If
-training is already opened then None is returned.
+  An object to track the progress of the operation.
+If the training is already opened then `None` is returned.
 
 * **Return type:**
 
@@ -24,9 +27,9 @@ training is already opened then None is returned.
 
 **Examples:**
 
-Open the training for Tolokers.
+Opening a training.
 
 ```python
-open_training = toloka_client.open_training_async(training_id='1')
-toloka_client.wait_operation(open_training)
+open_op = toloka_client.open_training_async(training_id='1')
+toloka_client.wait_operation(open_op)
 ```

@@ -2,7 +2,7 @@
 
 Toloka cares about the security of your data and data labeling results. This section describes the key principles of working with data in Toloka.
 
-## Key principles {#data-security-important_1}
+## Key principles {#key-principles}
 
 - The rights to the results with labeled data belong to the requester, and no one else.
 
@@ -14,7 +14,7 @@ Toloka cares about the security of your data and data labeling results. This sec
 
     {% endnote %}
 
-- Tolokers must treat the requester's data as confidential: this is stipulated in the [User Agreement]({{ useragreement }}). We make sure that no fraudulent users get access to Toloka: cheaters get a warning or ban.
+- According to the [User Agreement]({{ useragreement }}), Tolokers must treat the requester's data as confidential. We make sure that no fraudulent users get access to Toloka: cheaters get a warning or [ban](../../glossary.md#banning-tolokers).
 
 ## Personal data {#personal-data}
 
@@ -22,7 +22,7 @@ By transmitting data to Toloka, you automatically agree to this data being proce
 
 To avoid transmitting personal data, you can anonymize the data yourself. For example, you can cover up people's faces in photos and change the pitch of the voice in speech recordings.
 
-For tasks that use recognition of passports or questionnaires with personal information, you can cut out data fields and use separate tasks for them. For example, you can send the last name, first name, and middle name separately for recognition.
+For [tasks](../../glossary.md#task) that use recognition of passports or questionnaires with personal information, you can cut out data fields and use separate tasks for them. For example, you can send the last name, first name, and middle name separately for recognition.
 
 ## Protect your data
 
@@ -31,7 +31,11 @@ If your data is confidential, take additional measures to protect it.
 
 ### Protect your data from cheaters {#protect-from-them}
 
-- [Decompose tasks](solution-architecture.md#concept_o3r_h4g_nlb). You can break your tasks down into several projects (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
+{% include [toloka-requester-source-anti-fraud](../_includes/toloka-requester-source/id-toloka-requester-source/anti-fraud.md) %}
+
+To protect your data:
+
+- [Decompose tasks](solution-architecture.md#concept_o3r_h4g_nlb). You can break your tasks down into several [projects](../../glossary.md#project) (steps). Each step contains only part of the data, and a malicious user won't be able to put the pieces together.
 
 - If you use [input](../../glossary.md#input-output-data) fields to transmit data that Tolokers shouldn't see, hide the fields that contain this data. For instance, do this if you moderate comments and you need the authors' personal data in the results for further data processing.
 
@@ -43,11 +47,11 @@ If your data is confidential, take additional measures to protect it.
 
 Set up the process to avoid storing data on Toloka servers. To do this:
 
-1. When uploading tasks to the pool, use IDs in the input data rather than content itself.
+1. When uploading tasks to the [pool](../../glossary.md#pool), use IDs in the input data rather than content itself.
 
 1. Set up a server to return the task content based on IDs.
 
-1. In the task interface, add code that sends IDs to the server and displays the content received.
+1. In the [task interface](../../glossary.md#task-interface), add code that sends IDs to the server and displays the content received.
 
 For instance, you can store text comments on your server and use the file with tasks to pass only the comment IDs. As a result, only the ID+result pairs are saved in the Toloka database, but these pairs don't have any commercial value in the absence of input data.
 
@@ -64,7 +68,6 @@ For instance, you can store text comments on your server and use the file with t
     - You need to load dynamic data in the tasks.
 
     - You want to log user actions.
-
 
 ## What's next {#what-next}
 
@@ -92,51 +95,16 @@ For instance, you can store text comments on your server and use the file with t
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "How do I change my account type from “Requester” to “Toloker”?" %}
+{% include [troubleshooting-trusted-user-banned](../_includes/troubleshooting/users/trusted-user-banned.md) %}
 
-You can't change the account type from “Requester” to “Toloker”.
+{% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
 
-If you want to complete tasks, you need to register in Toloka once again, with a different username, but as a Toloker.
+{% include [faq-give-access](../_includes/faq/project-settings/give-access.md) %}
 
-To create a Toloker account:
+{% include [faq-ban-and-reject](../_includes/faq/users/ban-and-reject.md) %}
 
-1. Log out of your requester account.
-1. Go to the [Toloka]({{ toloka-index }}) home page.
-1. Click **Join**.
-1. Follow the system instructions.
+{% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
-{% note info %}
-
-You can use the same phone number to create a new account. For a step-by-step description of the registration process, see [Registration and login]({{ user-documentation }}).
-
-{% endnote %}
-
-{% endcut %}
-
-{% cut "The phone number belongs to another user" %}
-
-If you see this warning, make sure you entered the phone number correctly.
-
-Please note that you can only have one requester account per phone number (see the [User Agreement]({{ useragreement }})).
-
-If your [Yandex ID]({{ phones }}) is linked to the wrong number, change it. For more information about linking a phone number, see [Yandex ID Help]({{ authorization-phone }}).
-
-If you don't remember your credentials in Toloka, use [Restoring access]({{ restore }}).
-
-If you deleted your Toloka account, create a new Yandex ID and register in Toloka.
-
-{% endcut %}
-
-{% cut "How do I change the phone number in my account?" %}
-
-To change your phone number, go to [Yandex ID]({{ phones }}) and change your main number.
-
-{% note info %}
-
-If you don't have access to the old number, it takes a month to replace it. For more information about changing the phone number, see [Yandex ID Help]({{ change-phone }}).
-
-{% endnote %}
-
-{% endcut %}
+{% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -1,5 +1,5 @@
 # RASA
-`crowdkit.aggregation.embeddings.rasa.RASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/embeddings/rasa.py#L21)
+`crowdkit.aggregation.embeddings.rasa.RASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/embeddings/rasa.py#L21)
 
 ```python
 RASA(

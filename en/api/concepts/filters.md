@@ -12,7 +12,7 @@ The JSON filter description must not exceed 10,000 characters.
 
 ## Sample filter in JSON {#request-example}
 
-This example selects Tolokers from Russia and Ukraine for completing tasks (it uses the region detected from the Toloker's IP address and the country specified in the profile). Users must have a minimum skill level of 60 for the control page results.
+This example selects Tolokers from US or United Kingdom for completing tasks (it uses the region detected from the Toloker's IP address and the country specified in the profile). Users must have a minimum skill level of 60 for the control page results.
 
 ```json
 {
@@ -24,21 +24,15 @@ This example selects Tolokers from Russia and Ukraine for completing tasks (it u
             "category":"computed",
             "key":"region_by_ip",
             "operator":"IN",
-            "value":225
+            "value":84
           },
           {
             "category":"computed",
             "key":"region_by_ip",
             "operator":"IN",
-            "value":187
+            "value":102
           }
         ]
-      },
-      {
-        "category":"profile",
-        "key":"country",
-        "operator":"EQ",
-        "value":"RU"
       },
       {
         "category":"skill",
@@ -61,17 +55,17 @@ The `and` and `or` parameters must be lowercase.
 
 #|
 || Parameter | Overview ||
-|| **category** | **string \| mandatory**
+|| **category** | **string \| required**
 
 Group of data for filtering:
 
 - `skill` — The skill.
 - `profile` — Profile data.
 - `computed` — Computed data, such as the Toloker's region according to the IP address. ||
-|| **key** | **string \| mandatory**
+|| **key** | **string \| required**
 
 Attribute to use for filtering Tolokers. For example, the country (`country`), or a skill (specify the skill ID). ||
-|| **operator** | **string \| mandatory**
+|| **operator** | **string \| required**
 
 Comparison operator in the condition. For example, the condition "Toloker must be 18 or older" uses the date of birth and the `GTE` ("Greater than or equal to") operator. Possible values for the `operator` key depend on the type of data in the `value` field. To choose the correct value, see the descriptions of filters in the sections [Filter by profile data](filter-profile.md), [Filter by calculated data](filter-computed.md), [Filter by skills](filter-skill.md).
 
@@ -80,7 +74,9 @@ Comparison operator in the condition. For example, the condition "Toloker must b
 The `operator` value must be lowercase.
 
 {% endnote %} ||
-|| **value** | **boolean**, **string**, **list of strings**, **integer \| mandatory**
+|| **value** | **boolean**, **string**, **list of strings**, **integer \| required**
 
 The value of the attribute from the `key` field. For example, the ID of the region specified in the profile, or the minimum skill value. To choose the correct value, see the descriptions of filters in the sections [Filter by profile data](filter-profile.md), [Filter by calculated data](filter-computed.md), [Filter by skills](filter-skill.md). ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

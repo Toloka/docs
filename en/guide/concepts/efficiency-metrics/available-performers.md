@@ -2,9 +2,11 @@
 
 This indicator shows the number of Tolokers currently available in [pool](../../../glossary.md#pool). It takes into account the following filters:
 
-- If there are few performers, then it’s worth reviewing the filter conditions.
+- If there're few Tolokers, then it’s worth reviewing the filter conditions.
 
-- If there're too many Tolokers available, this may have a negative impact on the labeling quality. In this case, you can set up stricter filtering conditions or add additional filters.
+- If there're many Tolokers available, you can choose the labeling speed at the expense of the labeling quality.
+
+- If the number of available Tolokers is too big, you can set up stricter filtering conditions or add additional filters.
 
 #### How to estimate
 

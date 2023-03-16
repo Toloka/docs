@@ -1,5 +1,5 @@
 # add_requester_translation
-`toloka.client.project.Project.add_requester_translation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/__init__.py#L207)
+`toloka.client.project.Project.add_requester_translation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/__init__.py#L207)
 
 ```python
 add_requester_translation(
@@ -11,37 +11,37 @@ add_requester_translation(
 )
 ```
 
-Add new translations to other language.
+Adds a project interface translation to other language.
 
 
-You can call it several times for different languages.
-If you call it for the same language, it overwrites new values, but don't overwrite values, that you don't pass.
+To translate to several languages call this method for each translation.
+A subsequent call with the same `language` updates the translation of passed parameters and doesn't touch omitted parameters.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`language`|**str**|<p>Target language. A string from ISO 639-1.</p>
-`public_name`|**Optional\[str\]**|<p>Translation of the project name.</p>
-`public_description`|**Optional\[str\]**|<p>Translation of the project description.</p>
-`public_instructions`|**Optional\[str\]**|<p>Translation of instructions for completing tasks.</p>
+`language`|**str**|<p>Two-letter [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) language code in upper case.</p>
+`public_name`|**Optional\[str\]**|<p>A translated project name.</p>
+`public_description`|**Optional\[str\]**|<p>A translated project description.</p>
+`public_instructions`|**Optional\[str\]**|<p>Translated instructions for Tolokers.</p>
 
 **Examples:**
 
-How to add russian translation to the project:
+How to add russian translation to the project.
 
 ```python
-project = toloka.Project(
-    public_name='cats vs dogs',
-    public_description='image classification',
-    public_instructions='do it pls',
+project = toloka.client.Project(
+    public_name='Cats vs dogs',
+    public_description='A simple image classification',
+    public_instructions='Determine which animal is in an image',
     ...
 )
 project.set_default_language('EN')
 project.add_requester_translation(
     language='RU',
-    public_name='кошки против собак'
-    public_description='классификация изображений'
+    public_name='Кошки или собаки'
+    public_description='Простая классификация изображений'
 )
-project.add_requester_translation(language='RU', public_instructions='сделай это, пожалуйста')
+project.add_requester_translation(language='RU', public_instructions='Определите, какое животное изображено')
 ```

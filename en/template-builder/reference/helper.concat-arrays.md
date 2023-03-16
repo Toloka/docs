@@ -14,7 +14,7 @@ Their elements can be combined into a single array to show simultaneously:
 [1, 2, 3, 4, 5, 6, 7, 8, 9]
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rnruy)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/5gzayPK_3tz4vn)
 
 ## Component properties {#properties}
 
@@ -24,3 +24,5 @@ Their elements can be combined into a single array to show simultaneously:
 || `items` | _array_ | Arrays to combine. ||
 || `items[]` | _any_ | Array element. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

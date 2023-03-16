@@ -4,13 +4,15 @@ If tasks were issued with an [overlap](../../glossary.md#overlap) of 2 or higher
 
 {% note info %}
 
-If you run the [pool](../../glossary.md#pool) with the assignment review, make sure that all responses are [accepted](accept.md).
+If you run the [pool](../../glossary.md#pool) with the manual review, make sure that all responses are [accepted](accept.md).
 
 {% endnote %}
 
+#### In the interface
+
 1. Open the [pool](pool-main.md).
 
-1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the {% if locale == "en-com" %}**Download results**{% endif %} button.
+1. Click ![Drop-down button](../_images/other/drop-down.svg) next to the **Download results** button.
 
 1. Choose the aggregation method:
 
@@ -23,7 +25,7 @@ To receive notifications and emails when results aggregation is completed, set u
 
 1. Log in to your account.
 
-1. Go to {% if locale == "en-com" %}**Profile → Notifications → Pool or aggregation completed**{% endif %}
+1. Go to **Profile → Notifications → Pool or aggregation completed**
 
 1. Choose the notification method:
 
@@ -32,6 +34,21 @@ To receive notifications and emails when results aggregation is completed, set u
     - Messages: Notifications will be displayed under **Messages** in your account. Apart from you, those who set up [shared access](multiple-access.md) to your account can see them.
 
     - Browser: Notifications will be sent to the devices that you logged in to your account from.
+
+{% note tip "How to work via Toloka API" %}
+
+To aggregate responses to all completed tasks in the pool using Toloka API, send a `POST` request with the parameters of aggregation:
+
+```bash
+curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool' \
+     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Content-Type: application/json' \
+     -d '{"pool_id":"1238218", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"91dbfd8f1bc3310fbbbd09f64b8ab6e5", "fields":[{"name":"result"}]}'
+```
+
+Refer to the [Aggregate responses in pool](https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+{% endnote %}
 
 ## Dawid-Skene aggregation model {#dawid-skene}
 
@@ -286,44 +303,20 @@ Aggregation only includes accepted tasks.
 ## For developers {#for-developers}
 
 - [Toloka API: Aggregated responses](../../api/concepts/aggregated-solutions.md)
-- [Toloka-Kit: Getting aggregated responses](../../toloka-kit/reference/toloka.client.TolokaClient.get_aggregated_solutions.md)
+- [Toloka-Kit recipe: Aggregate responses in pool](../../toloka-kit/recipes/aggregate-responses.md)
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "What is the difference between the confidence in the aggregated response in the Dawid-Skene aggregation model and the confidence in aggregation by skill?" %}
+{% include [faq-confidence-difference](../_includes/faq/result-questions/confidence-difference.md) %}
 
-In the way it's calculated. In both aggregations, confidence means the same thing.
+{% include [faq-how-dawid-skene-work](../_includes/faq/result-questions/how-dawid-skene-work.md) %}
 
-{% endcut %}
+{% include [troubleshooting-dawid-skene-result](../_includes/troubleshooting/result-questions/dawid-skene-result.md) %}
 
-{% cut "How does the Dawid-Skene aggregation model work?" %}
+{% include [faq-aggregation-progress](../_includes/faq/result-questions/aggregation-progress.md) %}
 
-The Dawid-Skene aggregation model analyzes the Toloker responses and creates a confusion matrix for each Toloker. This lets us evaluate the statistical significance of the Toloker in the context of each assignment. [Learn more about the model](https://www.jstor.org/stable/2346806).
+{% include [troubleshooting-skill-unavailable](../_includes/troubleshooting/result-questions/skill-unavailable.md) %}
 
-{% endcut %}
-
-{% cut "Why does the Dawid-Skene aggregation model return a result that the Tolokers didn't select?" %}
-
-The method doesn't guarantee that original Toloker responses will be used for aggregation. The algorithm takes into account Tolokers' quality parameters and response patterns. Consequently, it can return a result that's different from the Tolokers' responses to this task.
-
-{% endcut %}
-
-{% cut "Where do I see the aggregation progress?" %}
-
-The pool page contains the {% if locale == "en-com" %}**List of Operations**{% endif %} button.
-
-{% endcut %}
-
-{% cut "Why might aggregation by Toloker skill be unavailable?" %}
-
-You cannot aggregate by project fields that have no valid values. Specify the possible values for all the fields of all types.
-
-{% endcut %}
-
-{% cut "You can't aggregate by skill. When running via the API, I get the error code `ONLY_FOR_POOL_WITH_MIXER`. Why?" %}
-
-You need to use [smart mixing](distribute-tasks-by-pages.md#smart-mixing).
-
-{% endcut %}
+{% include [troubleshooting-cant-aggregate-by-skill](../_includes/troubleshooting/result-questions/cant-aggregate-by-skill.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

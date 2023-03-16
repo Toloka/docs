@@ -6,7 +6,7 @@ The most important link in a group can be highlighted with a border: set the `th
 
 This only groups links, unlike [view.group](view.group.md).
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/M1VwlI_RHZNkC)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/2IwCYi-S3xPSL9)
 
 ## Component properties {#properties}
 
@@ -22,3 +22,5 @@ This only groups links, unlike [view.group](view.group.md).
 || `links[].url`<span style="color: red">\*</span> | _string_ | Link address. Inserts a link with the search query when [helper. search-query](helper.search-query.md) is used. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

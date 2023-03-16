@@ -13,6 +13,8 @@ Method | Endpoint | Overview
 GET | [/assignments](result.md) | Gets responses for all the pool's task suites.
 GET | [/assignments/<response_id>](get-assignment-id.md) | Gets the properties of this response.
 
-## Learn more {#links}
+## See also {#see-also}
 
-- [More information about getting responses](../../guide/concepts/result-of-eval.md)
+- [{#T}](../../guide/concepts/result-of-eval.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

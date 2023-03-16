@@ -1,16 +1,16 @@
 # CloseReason
-`toloka.client.training.Training.CloseReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/training.py#L49)
+`toloka.client.training.Training.CloseReason` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/training.py#L62)
 
-The reason for closing the pool the last time:
+A reason for closing a training.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`MANUAL`|'MANUAL'|<p>Closed by the requester.</p>
-`EXPIRED`|'EXPIRED'|<p>Reached the date and time set in will_expire.</p>
-`COMPLETED`|'COMPLETED'|<p>Closed automatically because all the pool tasks were completed.</p>
-`NOT_ENOUGH_BALANCE`|'NOT_ENOUGH_BALANCE'|<p>Closed automatically because the Toloka account ran out of funds.</p>
-`ASSIGNMENTS_LIMIT_EXCEEDED`|'ASSIGNMENTS_LIMIT_EXCEEDED'|<p>Closed automatically because it exceeded the limit on assigned task suites (maximum of 2 million).</p>
-`BLOCKED`|'BLOCKED'|<p>Closed automatically because the requester&#x27;s account was blocked by a Toloka administrator.</p>
+`MANUAL`|'MANUAL'|<p>A training was closed by a requester.</p>
+`EXPIRED`|'EXPIRED'|
+`COMPLETED`|'COMPLETED'|<p>All linked pool tasks were completed.</p>
+`NOT_ENOUGH_BALANCE`|'NOT_ENOUGH_BALANCE'|
+`ASSIGNMENTS_LIMIT_EXCEEDED`|'ASSIGNMENTS_LIMIT_EXCEEDED'|<p>A limit of 2 millions assignments is reached.</p>
+`BLOCKED`|'BLOCKED'|<p>The requester&#x27;s account was blocked.</p>
 `FOR_UPDATE`|'FOR_UPDATE'|

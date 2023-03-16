@@ -34,3 +34,5 @@ Images in SVG format with no size specified always fit in their parent elements.
 || `url`<span style="color: red">\*</span> | _string_ | Image link. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -1,6 +1,8 @@
 # What tasks can't be placed in Toloka?
 
-Toloka **isn't intended** for tasks that could harm Tolokers, other requesters, or the Toloka platform. Your account may get blocked for posting such tasks.
+All new projects in Toloka pass the moderation check before being sent to labeling. We will verify the project for compliance with our platform guidelines and for security. This is necessary to ensure that Tolokers are getting the best possible experience and don’t encounter any tasks that could potentially be harmful. You will be notified if your project doesn't follow the Toloka guidelines and get recommendations to fix the task before launching. In this way we're working together toward compliance with platform rules and enhanced security.
+
+Please read the rules below before placing your tasks.
 
 ## Guidelines for tasks {#requirements-for-tasks}
 
@@ -14,7 +16,7 @@ Toloka **isn't intended** for tasks that could harm Tolokers, other requesters, 
 
     - Subscribe to newsletters, order products or services, or fill out feedback forms.
 
-    - Post, distribute, or evaluate posts and comments on social media or websites, participate in polls and surveys, or sign petitions. However, you can conduct surveys and research in Toloka.
+    - Publish, distribute, or evaluate posts and comments on social media or websites, participate in online voting, or sign petitions. However, you can conduct surveys and research in Toloka.
 
     - Create and send out any kind of spam, distribute flyers, or make advertising calls.
 
@@ -59,13 +61,13 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
     - Approximate survey completion time.
     - A privacy notice explaining how the data will be used in general and for scientific/research purposes specifically.
 
-1.  Do not request data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. You can ask questions regarding the respondents' gender, age, education level, region/city of residence, and income level. To preserve the anonymity of requesters and annotators, do not disclose the contact details of the survey's organizers in the task or when corresponding with annotators. Make sure you communicate with annotators only via private messages in your Toloka account. Before transmitting personal data to Toloka, pseudonymize or anonymize it. For example, you can cover up people's faces in photos, cut out the document fields that are filled, and change the pitch of the voice in speech recordings.
+1.  Do not request data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. You can ask questions regarding the respondents' gender, age, education level, region or city of residence, and income level. To preserve the anonymity of requesters and annotators, make sure you communicate with annotators only via private messages in your Toloka account. However, the survey may include the researcher's name, organization, and email address as a standard practice for scientific research.
 
 1. The amount that the Toloker earns for completing the survey (including rewards) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
 
-1. Do not include questions or content in your survey that could cause moral, material, or any other type of harm to the Toloker or the Toloka platform. The terms of the survey and any materials included in it should not violate the laws of the countries where the survey is available.
+1. Do not include questions or content in your survey that could cause moral injury, material loss, or any other type of harm to the Toloker or the Toloka platform. The terms of the survey and any materials included in it must comply with the laws of the countries where the survey is available.
 
-1. The survey should not be used to promote political, ideological, religious, or other views. The questions and other materials included in the survey should not impose the author's point of view on the respondents, offend the proponents of other positions, or stir up discord among users and various groups of people.
+1. The survey should not cover political, ideological, religious, or other controversial views and sensitive issues. The questions and other materials included in the survey should not impose the author's point of view on the respondents, offend the proponents of other positions, or stir up discord among users and various groups of people.
 
 1. The survey should not contain advertising of websites, products, or services.
 
@@ -92,7 +94,7 @@ The name of the task must match its content, description, and instructions.
 
 Toloka reserves the right to check the platform's public resources and block tasks that do not meet the aforementioned conditions.
 
-{% cut "Requirements in effect prior to 7:59 on March 9, 2022 (Moscow time)"  %}
+{% cut "Requirements in effect prior to 7:59 on March 9, 2022"  %}
 
 **You can't post tasks that:**
 
@@ -134,7 +136,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 {% endcut %}
 
-{% cut "Requirements in effect prior to 7:59 on October 14, 2021 (Moscow time)" %}
+{% cut "Requirements in effect prior to 7:59 on October 14, 2021" %}
 
 **You can't post tasks that:**
 
@@ -170,7 +172,7 @@ Toloka reserves the right to check the platform's public resources and block tas
 
 {% endcut %}
 
-{% cut "Requirements in effect prior to 7:59 on February 20, 2021 (Moscow time)" %}
+{% cut "Requirements in effect prior to 7:59 on February 20, 2021" %}
 
 **You can't post tasks that:**
 
@@ -198,7 +200,7 @@ Read more in the [Requester agreement]({{ customeragreement }}).
 
 {% endcut %}
 
-{% cut "Requirements in effect prior to 7:59 on January 23, 2019 (Moscow time)" %}
+{% cut "Requirements in effect prior to 7:59 on January 23, 2019" %}
 
 You can publish any tasks that require analyzing or creating content (see [Tips for designing tasks](faq.md)). Toloka **isn't intended** for tasks that could harm Tolokers. Your account might be blocked if tasks:
 
@@ -223,5 +225,9 @@ You can publish any tasks that require analyzing or creating content (see [Tips 
 
 - [Register in Toloka as a requester](access.md)
 - [Learn how to post tasks](first-project.md)
+
+## Troubleshooting {#troubleshooting}
+
+{% include [faq-task-suitable](../_includes/faq/register-and-start/task-suitable.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

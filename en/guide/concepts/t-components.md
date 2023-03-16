@@ -6,7 +6,7 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-To create a [task interface](../../glossary.md#task-interface), go to the [**HTML section**](spec.md) on the [project](../../glossary.md#project) page. Here's what you can use:
+To create a [task interface](../../glossary.md#task-interface), go to the [HTML](spec.md#html) section on the [project](../../glossary.md#project) page. Here's what you can use:
 
 - [Handlebars expressions and helpers](t-components/handlebars.md) (see the [documentation on the Handlebars website](http://handlebarsjs.com/)).
 

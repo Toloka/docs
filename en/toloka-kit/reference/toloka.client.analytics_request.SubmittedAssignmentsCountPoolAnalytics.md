@@ -1,16 +1,14 @@
 # SubmittedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.SubmittedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/analytics_request.py#L76)
+`toloka.client.analytics_request.SubmittedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L76)
 
 ```python
 SubmittedAssignmentsCountPoolAnalytics(self, *, subject_id: str)
 ```
 
-Number of assignments in the "submitted" status in the pool
+The total number of completed assignments in the pool.
 
 
-Do not confuse it with the approved status.
-"Submitted" status means that the task was completed by a Toloker and sent for review.
-"Approved" status means that the task has passed review and money has been paid for it.
+The assignments can have one of the following statuses: "submitted", "approved", or "rejected".
 
 ## Parameters Description
 

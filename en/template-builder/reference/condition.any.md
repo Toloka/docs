@@ -2,7 +2,7 @@
 
 Checks that **at least one** of the child conditions is met. If none of the conditions is met, the component returns `false`.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/SEYdx)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/UGnbki-73xPDHm)
 
 If you need all conditions to be met, use the [condition.all](condition.all.md) component. You can also combine these components.
 
@@ -15,3 +15,5 @@ If you need all conditions to be met, use the [condition.all](condition.all.md) 
 || `conditions[]` | _condition_ | Condition. ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -1,5 +1,5 @@
 # FieldValidationError
-`toloka.client.batch_create_results.FieldValidationError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/batch_create_results.py#L16)
+`toloka.client.batch_create_results.FieldValidationError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/batch_create_results.py#L16)
 
 ```python
 FieldValidationError(

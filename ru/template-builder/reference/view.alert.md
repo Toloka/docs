@@ -6,7 +6,7 @@
 
 Внутрь можно поместить не только обычный текст, но и другие визуальные компоненты.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/RTzHz)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/nKo0PzBo3tyxxn)
 
 ## Свойства компонента {#properties}
 

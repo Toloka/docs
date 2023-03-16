@@ -2,19 +2,15 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for recording and uploading audio files in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.audio.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for recording and uploading audio files in [Template Builder](../../../template-builder/reference/field.audio.md).
 
 {% endnote %}
 
 To add a button for audio recording and upload to the task, use the `{{field type="file" sources="RECORDER" fileType="AUDIO" name="<output field name>" sources="<sources parameter>" fileType="<fileType parameter>"}}` component. Example:
 
-{% if locale == "en-com" %}
-
 ```plaintext
 {{field type="file" name="result" sources="RECORDER" fileType="AUDIO" label="Record audio"}}
 ```
-
-{% endif %}
 
 For a complete list of parameters, see the [table](#parameters).
 
@@ -63,7 +59,7 @@ This parameter applies to the tasks completed in the mobile app.
 {% endnote %}
 
 File type: `AUDIO` — Audio recording. | yes | no||
-||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Загрузить файл” (Russian), “Upload file” (English), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
+||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Upload file” (English), “Загрузить файл” (Russian), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
 ||`multipleSelect`| The number of files to download at the same time.
 
 For the single file upload, set the value to `false`.

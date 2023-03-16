@@ -113,7 +113,7 @@ Maximum length: 2048 characters. ||
 || **tasks[]** | **array of objects**
 
 [Data for the tasks](task-suite.md). ||
-|| **first_declined_ solution_attempt[]** | **array of objects**
+|| **first_declined_solution_attempt[]** | **array of objects**
 
 For training tasks. The Toloker's first responses in the training task (only if these were the wrong answers). If the Toloker answered correctly on the first try, the `first_declined_solution_attempt` array is omitted.
 
@@ -189,14 +189,7 @@ Requester ID. ||
 Checks who the object belongs to:
 
 - `true` — The Toloker whose OAuth token is specified in the request.
-- `false` — Another account (employee or owner).
-
-{% if audience == "internal" %}
-
-**owner.company_id** | **string**
-
-The requester's company ID.
-
-{% endif %}
-||
+- `false` — Another account (employee or owner).||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

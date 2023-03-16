@@ -4,7 +4,7 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать вставить картинку в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/operations/insert-images.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/operations/insert-images.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать вставить картинку в [Конструкторе шаблонов](../../../template-builder/operations/insert-images.md).
 
 {% endnote %}
 

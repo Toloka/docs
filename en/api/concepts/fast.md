@@ -131,10 +131,10 @@ Criteria for the quality control rule:
 - `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
 - `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
 - `ASSIGNMENT_SUBMIT_TIME` — The number of "fast" responses (the minimum response speed is set in the parameters).
-- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during non-automatic acceptance.
-- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with non-automatic acceptance enabled.
+- `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
+- `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
-|| **configs.collector_config. parameters.fast_submit_ threshold_seconds** | **integer \| required**
+|| **configs.collector_config. parameters.fast_submit_threshold_seconds** | **integer \| required**
 
 The minimum acceptable response time, in seconds. ||
 || **configs.collector_config. parameters.history_size** | **integer \| required**
@@ -216,6 +216,7 @@ A fixed value to assign to the skill (a number from 0 to 100). ||
 || **configs.rules.action. parameters.delta** | **integer \| required if**
 
 Required if `type=CHANGE_OVERLAP`.
+
 The value determines the amount to change the overlap by. ||
 || **configs.rules.action. parameters.public_comment** | **string \| required if**
 
@@ -243,3 +244,9 @@ Determines whether to re-open a closed pool:
 - `true` — Open the pool after making changes if it is closed.
 - `false` — Don't open the pool after making changes, if it is closed.||
 |#
+
+## See also {#see-also}
+
+- [{#T}](../../guide/concepts/quick-answers.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

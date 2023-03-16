@@ -8,33 +8,33 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 All aspects of the task's [lifecycle](#lifecycle) are controlled by three JavaScript classes:
 
-- The [Assignment](js/assignment.md) class manages task progress, processes the [task suite](../../glossary.md#task-suite) commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of [TaskSuite](js/tasksuite.md).
+- The [Assignment](js/assignment.md) class manages [task](../../glossary.md#task) progress, processes the [task suite](../../glossary.md#task-suite) commands for sending responses, skipping or pausing tasks, and more. It also creates an instance of the [TaskSuite](js/tasksuite.md) class.
 
 - [TaskSuite](js/tasksuite.md) is a “wrapper class” for the [task suite](../../glossary.md#task-suite) interface. You can redefine this class, like if you need to display a shared element on the page.
 
-- [Task](js/task.md) is responsible for rendering and validating an individual task. Typically, you should extend this class if a task needs to have non-standard behavior.
+- The [Task](js/task.md) class is responsible for rendering and validating an individual task. Typically, you should extend this class if a task needs to have non-standard behavior.
 
 You can use [services](js/services.md) for more nuanced needs like subscribing to keypress events or getting the Toloker's GPS coordinates.
 
 ## Lifecycle of a task {#lifecycle}
 
-When a Toloker starts a task, their workspace is initialized in an iframe. A messaging channel is created between the Toloka head page and the iframe. First, a list of tasks is requested and an [`Assignment`](js/assignment.md) instance is created. Then the received list is passed to the [`TaskSuite`](js/tasksuite.md) class. It creates an instance of the [`Task`](js/task.md) class for each task.
+When a Toloker starts a task, their workspace is initialized in an iframe. A messaging channel is created between the Toloka head page and the iframe. First, a list of tasks is requested and an [Assignment](js/assignment.md) instance is created. Then the received list is passed to the [TaskSuite](js/tasksuite.md) class. It creates an instance of the [Task](js/task.md) class for each task.
 
-#### Rendering
+### Rendering
 
-To render the task suite, the [`render()`](js/tasksuite.md#render) method of the `TaskSuite` class is called. This method calls the [`render()`](js/task.md#render) method of the `Task` class for each task and collects the created DOM tree components in a single list.
+To render the task suite, the [render()](js/tasksuite.md#render) method of the `TaskSuite` class is called. This method calls the [render()](js/task.md#render) method of the `Task` class for each task and collects the created DOM tree components in a single list.
 
 Here you can change the rendering of tasks and task suites.
 
-#### Response validation
+### Response validation
 
-When the Toloker clicks **Send**, the [`TaskSuite.validate(solutions)`](js/tasksuite.md#validate) method is called to validate ther Toloker's responses. It calls the [`Task.validate (solutions)`](js/task.md#validate) method for each task and returns errors.
+When the Toloker clicks **Send**, the [TaskSuite.validate(solutions)](js/tasksuite.md#validate) method is called to validate ther Toloker's responses. It calls the [Task.validate (solutions)](js/task.md#validate) method for each task and returns errors.
 
 Here you can make an additional review of the Toloker's responses.
 
-#### Removal
+### Removal
 
-When the Toloker has finished all tasks on the page or [skipped it](pool_statistic-pool.md#skipped-tasks), the [`destroy()`](js/tasksuite.md#destroy) method of the `TaskSuite` class is called. It calls the [`destroy()`](js/task.md#destroy) method of the `Task` class for each task. These methods free up resources and remove the services and event handlers associated with tasks.
+When the Toloker has finished all tasks on the page or [skipped it](pool_statistic-pool.md#skipped-tasks), the [destroy()](js/tasksuite.md#destroy) method of the `TaskSuite` class is called. It calls the [destroy()](js/task.md#destroy) method of the `Task` class for each task. These methods free up resources and remove the services and event handlers associated with tasks.
 
 ## Class inheritance {#inherit}
 
@@ -66,9 +66,9 @@ var ChildClass = extend(ParentClass, function() {
 
 ## Data types {#data-spec-adv}
 
-The `Task` object is the task to perform.
+### Task {#obj-task}
 
-{% if locale == "en-com" %}
+The `Task` object is the task to perform.
 
 ```json
 {
@@ -79,8 +79,6 @@ The `Task` object is the task to perform.
      }
 }
 ```
-
-{% endif %}
 
 #|
 ||**Key**|**Value**||
@@ -97,9 +95,9 @@ Example:
 ||
 |#
 
-The `Solution` object is the Toloker's response in the task.
+### Solution {#obj-solution}
 
-{% if locale == "en-com" %}
+The `Solution` object is the Toloker's response in the task.
 
 ```json
 {
@@ -110,8 +108,6 @@ The `Solution` object is the Toloker's response in the task.
     }
 }
 ```
-
-{% endif %}
 
 #|
 ||**Key**|**Value**||
@@ -129,9 +125,9 @@ Example:
 ||
 |#
 
-The `SolutionValidationError` object is a validation error for the Toloker's response.
+### SolutionValidationError {#obj-solutionvalidationerror}
 
-{% if locale == "en-com" %}
+The `SolutionValidationError` object is a validation error for the Toloker's response.
 
 ```json
 {
@@ -146,16 +142,12 @@ The `SolutionValidationError` object is a validation error for the Toloker's res
 }
 ```
 
-{% endif %}
-
 #|
 ||**Key**|**Value**||
 ||`task_id` | Task ID.||
 ||`errors` | Errors in the format: `"<field ID>": {code: "<error code>", message: "<error message>"}`.
 
 Example:
-
-{% if locale == "en-com" %}
 
 ```json
 "errors": {
@@ -166,7 +158,7 @@ Example:
 }
 ```
 
-{% endif %}||
+||
 |#
 
 ## See also {#see-also}

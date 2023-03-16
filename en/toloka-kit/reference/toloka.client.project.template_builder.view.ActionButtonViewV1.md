@@ -1,5 +1,5 @@
 # ActionButtonViewV1
-`toloka.client.project.template_builder.view.ActionButtonViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/view.py#L64)
+`toloka.client.project.template_builder.view.ActionButtonViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L64)
 
 ```python
 ActionButtonViewV1(

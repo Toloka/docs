@@ -4,7 +4,7 @@ Creates a field for entering an email address.
 
 Checks that the text contains the `@` character. You can [set other conditions yourself](../best-practices/conditions.md).
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/SUXxq)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/7iqP0isn3y3Uyg)
 
 ## Component properties {#properties}
 
@@ -17,3 +17,5 @@ Checks that the text contains the `@` character. You can [set other conditions y
 || `placeholder` | _string_ | A semi-transparent label that is shown in an empty field. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

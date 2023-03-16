@@ -14,3 +14,5 @@ $.ajax({
 ## Response {#response}
 
 Contains a list and parameters of all servers registered for the requester, in JSON format.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

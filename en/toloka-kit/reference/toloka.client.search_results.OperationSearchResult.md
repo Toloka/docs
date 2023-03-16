@@ -21,4 +21,4 @@ which already implements the correct handling of the search result.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `items`|**Optional\[List\[[Operation](toloka.client.operations.Operation.md)\]\]**|<p>List of found operations</p>
-`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:</p> <ul> <li>True - Not all elements are included in the output due to restrictions in the limit parameter.</li> <li>False - The output lists all the items.</li> </ul>
+`has_more`|**Optional\[bool\]**|<p>Whether the list is complete:</p> <ul> <li>`True` — Not all elements are included in the output due to restrictions in the limit parameter.</li> <li>`False` — The output lists all the items.</li> </ul>

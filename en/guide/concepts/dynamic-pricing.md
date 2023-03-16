@@ -2,7 +2,7 @@
 
 The price is indicated per [task suite](../../glossary.md#task-suite) in US dollars. For cents, use the dot (“.”) as a separator.
 
-If the value of the {% if locale == "en-com" %}**Pool type**{% endif %} in advanced settings is {% if locale == "en-com" %}**General tasks**{% endif %}, the minimum price per task suite is $0.005. For other pool types, you can set the price to zero.
+If the value of the **Pool type** in advanced settings is **General tasks**, the minimum price per task suite is $0.005. For other [pool](../../glossary.md#pool) types, you can set the price to zero.
 
 In Toloka, there are two ways to set the task price:
 
@@ -14,7 +14,17 @@ In Toloka, there are two ways to set the task price:
 
 ## How do I determine the optimal price? {#section_wb1_lhl_vlb}
 
-Every Toloker wants to earn more, so it is difficult to give exact figures. To find out the price to set, answer a few questions:
+Every Toloker wants to earn more, so it is difficult to give exact figures. To find out the price you need to set, follow the recommendations:
+
+- Pay attention to the price suggest under the **Price per task suite, $** field. It contains the recommended price based on the minimum wage of the countries selected in the filters.
+
+  {% note warning "Restriction" %}
+
+  The price suggest is available to a limited number of requesters.
+
+  {% endnote %}
+
+- Pay attention to the **Toloker interest at this price** indicator. It shows how your price meets expectations of Tolokers. If the interest is low, you can raise price per task suite to have a bigger number of Tolokers in the project. If the interest is high, you can reduce price to save money.
 
 - Turn on the stopwatch and measure how long it will take to read the [instructions](../../glossary.md#instructions) and complete several of your tasks. Calculate how many task suites you would complete in an hour and think what price would be fair.
 
@@ -28,6 +38,30 @@ The high task price doesn't guarantee a good quality of the result. Increasing t
 
 {% endnote %}
 
+### Price per item {#price-per-item}
+
+When you're creating or editing a pool, under the **Price per task suite, $** field you can see price per 1 [item](../../glossary.md#item).
+
+Price per item is calculated as:
+
+#|
+||
+price per 1 item ![](../_images/other/icons/equal.svg) price per task suite ![](../_images/other/icons/multiply.svg) overlap ![](../_images/other/icons/divide.svg) tasks per suite ![](../_images/other/icons/plus.svg) fee
+||
+|#
+
+### What is the suggested price based on? {#price-suggest}
+
+The price suggested for the items in your pool depends on several factors:
+
+- The type of the project and the preset you chose while [creating the project](./project.md).
+
+- The Tolokers who match the [filters](./filters.md) you set for the pool.
+
+- The minimal wage in the countries where the filtered Tolokers come from (some filters can affect it indirectly, like the Tolokers' language filter).
+
+The combination of all the above factors affect the suggested price.
+
 ## Setting up dynamic pricing {#section_ucl_3hl_vlb}
 
 To set up dynamic pricing:
@@ -36,9 +70,9 @@ To set up dynamic pricing:
 
     To increase the Toloker's motivation, make the skill [public](nav.md#public). The Toloker will see the full list of prices and their level.
 
-1. When creating or editing a [pool](../../glossary.md#pool), specify a fixed price in the {% if locale == "en-com" %}**Price per task suite, $**{% endif %}. This price will be used if the skill is not assigned to the Toloker.
+1. When creating or editing a [pool](../../glossary.md#pool), specify a fixed price in the **Price per task suite, $**. This price will be used if the skill is not assigned to the Toloker.
 
-1. In the advanced settings, enable the {% if locale == "en-com" %}**Use dynamic pricing**{% endif %} option.
+1. In the advanced settings, enable the **Use dynamic pricing** option.
 
 1. Choose a skill in the window that opens.
 
@@ -46,7 +80,7 @@ To set up dynamic pricing:
 
 {% note info %}
 
-The price is calculated when the task suite is issued to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
+The price is calculated when the task suite is assigned to the Toloker. If the skill changed or was assigned after the Toloker submitted a completed assignment, only the next assignment will be at the new price.
 
 {% endnote %}
 
@@ -73,41 +107,15 @@ The price is calculated when the task suite is issued to the Toloker. If the ski
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "Where can I set the task price?" %}
+{% include [faq-set-task-price](../_includes/faq/finance/set-task-price.md) %}
 
-You can set a price for your task suite on the pool editing page. The minimum price for regular pools is $0.005.
+{% include [faq-set-up-budget](../_includes/faq/finance/set-up-budget.md) %}
 
-{% endcut %}
+{% include [faq-pay-more-optional-fields](../_includes/faq/finance/pay-more-optional-fields.md) %}
 
-{% cut "How do I set up a budget for my first task in Toloka?" %}
+{% include [faq-awards-statistics](../_includes/faq/finance/awards-statistics.md) %}
 
-Here's the general rule of pricing: the more time is needed to complete the task, the higher the price is.
-
-If the task is simple, like if the Toloker spends a few seconds to assess product relevance, then set the price to $0.01–$0.02 for 10 tasks (products) on the page.
-
-If you register in Toloka as a Toloker, you can compare offers from other requesters.
-
-Define the page price, multiply it by the overlap (it's usually 3–5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
-
-{% endcut %}
-
-{% cut "How do I pay more to users who fill out optional fields?" %}
-
-You can issue rewards after completion and describe the criteria for increased rewards in your task instructions. You can't change the task suite price dynamically based on the completion results.
-
-{% endcut %}
-
-{% cut "Where do I find the statistics on the awards I paid?" %}
-
-Track your money debited for rewards in {% if locale == "en-com" %}**Profile** → **Spent**{% endif %} tab.
-
-{% endcut %}
-
-{% cut "Can there be tasks with different prices in the pool?" %}
-
-No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](bonus.md) to good Tolokers.
-
-{% endcut %}
+{% include [faq-tasks-with-different-prices](../_includes/faq/finance/tasks-with-different-prices.md) %}
 
 [Get closing documents and invoices](../troubleshooting/support.md#feedback_g3b_vj3_qjb)
 

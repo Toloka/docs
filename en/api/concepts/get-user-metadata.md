@@ -10,17 +10,17 @@ Gets user data by `user_id`.
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-metadata/<user_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-metadata/<user_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/user-metadata/<user_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/user-metadata/<user_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -63,3 +63,5 @@ Contains user metadata in JSON format.
   }
 }
 ```
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

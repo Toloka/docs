@@ -1,5 +1,5 @@
 # GoldenSetAnswersCount
-`toloka.client.conditions.GoldenSetAnswersCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/conditions.py#L187)
+`toloka.client.conditions.GoldenSetAnswersCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/conditions.py#L187)
 
 ```python
 GoldenSetAnswersCount(

@@ -1,5 +1,5 @@
 # TextAnnotationHotkeysPluginV1
-`toloka.client.project.template_builder.plugins.TextAnnotationHotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/plugins.py#L65)
+`toloka.client.project.template_builder.plugins.TextAnnotationHotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L65)
 
 ```python
 TextAnnotationHotkeysPluginV1(

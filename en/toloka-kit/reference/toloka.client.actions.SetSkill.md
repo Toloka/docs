@@ -1,5 +1,5 @@
 # SetSkill
-`toloka.client.actions.SetSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/actions.py#L159)
+`toloka.client.actions.SetSkill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/actions.py#L159)
 
 ```python
 SetSkill(

@@ -89,3 +89,5 @@ The UTC date and time of the ban, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]
 
 ID of the ban. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

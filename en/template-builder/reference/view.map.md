@@ -6,7 +6,7 @@ Use this component to set the targets for the tasks with the markers, select the
 
 You can set the following map properties: scale, position of the map center, label, and hint for Tolokers.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/bmsjT)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/sVwUCmig3tz5fk)
 
 ## Component properties {#properties}
 
@@ -29,3 +29,5 @@ You can set the following map properties: scale, position of the map center, lab
 || `validation` | _condition_ | Validation based on condition. ||
 || `zoom` | _integer_ | The map initial scale. Use the values from `0` to `19`. Bigger values give a more detailed map view. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

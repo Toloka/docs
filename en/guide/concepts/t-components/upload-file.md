@@ -2,7 +2,7 @@
 
 {% note info %}
 
-The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for uploading files in {% if locale == "en-com" %}[Template Builder](../../../template-builder/reference/field.media-file.md){% endif %}.
+The task interface configuration guide describes the features of the HTML/JS/CSS editor. You can also try creating a button for uploading files in [Template Builder](../../../template-builder/reference/field.media-file.md).
 
 {% endnote %}
 
@@ -82,7 +82,7 @@ File type. You can set one of the allowed values:
 - `AUDIO` — Audio recording.
 
 - `ANY` — Any file. | Yes (when creating tasks for mobile devices) | no||
-||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Загрузить файл” (Russian), “Upload file” (English), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
+||`label`| The button label. For example, `label="Click me"`. | no | Depending on the interface language, “Upload file” (English), “Загрузить файл” (Russian), “Dosya yükle” (Turkish), “Faylni yuklash” (Uzbek).||
 ||`validation-show`| The position of popup hints (displayed if the response didn't pass validation). The position is relative to the input field.
 
 Supported values:

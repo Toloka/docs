@@ -1,5 +1,5 @@
 # AccessDeniedApiError
-`toloka.client.exceptions.AccessDeniedApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/exceptions.py#L113)
+`toloka.client.exceptions.AccessDeniedApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/exceptions.py#L113)
 
 ## Parameters Description
 

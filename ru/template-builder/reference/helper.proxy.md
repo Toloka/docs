@@ -8,7 +8,7 @@
 
 Выберите компонент, который хотите добавить. Например, [view.image](view.image.md) — для картинки или [view.audio](view.audio.md) — для аудиофайла. В свойстве `url` этого компонента выберите тип `@yandex-toloka/helper.proxy`.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/SP3Bd)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/_XrwbL4V3ttEhW)
 
 ## Свойства компонента {#properties}
 

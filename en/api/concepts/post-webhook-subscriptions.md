@@ -56,7 +56,7 @@ Unique event number generated for each new request. ||
 || **event_time** | **string \| required**
 
 Time when the event occurs. ||
-|| **project_id** | **string \| mandatory**
+|| **project_id** | **string \| required**
 
 ID of the project that the pool was created for. ||
 || **pool_id** | **string \| required**
@@ -112,3 +112,5 @@ Status code of the response from the subscription URL. ||
 
 Array of unique event numbers. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

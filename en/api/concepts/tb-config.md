@@ -103,3 +103,5 @@ Be sure to serialize the JSON code before passing it as the `config` parameter v
 ```
 
 {% endcut %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

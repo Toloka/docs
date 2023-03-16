@@ -19,3 +19,5 @@ If you set the `defaultOpened` property to `true`, the block is expanded immedia
 || `hint` | _string_ | Hint text. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

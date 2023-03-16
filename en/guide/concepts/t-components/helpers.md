@@ -63,12 +63,10 @@ For example, the values of the two text input fields are written as JSON objects
 {{field type="input" name="result.input2"}}
 ```
 
-The file with responses will contain the following in the `result` column:{% if locale == "en-com" %}
+The file with responses will contain the following in the `result` column:
 
 ```html
 {result {"input1": "<Toloker's response", "input2": "Toloker's response>"}}
 ```
-
-{% endif %}
 
 {% include [contact-support](../../_includes/contact-support.md) %}
