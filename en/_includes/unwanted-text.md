@@ -52,7 +52,7 @@ You can't post tasks that:
 
 1. **Serve as recruiting** or assigning tasks to people who work for the requester. Don't make Tolokers do work outside the platform and don't post tasks for your employees.
 
-1. **Are intended for money laundering**, including scams with payments and rewards and the placement of fake tasks.
+1. **Are intended for money laundering**, including scams with payments and bonuses and the placement of fake tasks.
 
     If these types of tasks or a fraudulent requester are discovered, Toloka has the right to suspend their access to the platform and take other measures it deems appropriate for stopping the requester, including blocking their profile, limiting their ability to post tasks, and restricting their use of the Toloka website.
 
@@ -68,7 +68,7 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
 
     {% include [collect-personal-data](../guide/_includes/toloka-requester-source/id-toloka-requester-source/collect-personal-data.md) %}
 
-1. The amount that the Toloker earns for completing the survey (including rewards) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
+1. The amount that the Toloker earns for completing the survey (including bonuses) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
 
 1. Do not include questions or content in your survey that could cause moral injury, material loss, or any other type of harm to the Toloker or the Toloka platform. The terms of the survey and any materials included in it must comply with the laws of the countries where the survey is available.
 
