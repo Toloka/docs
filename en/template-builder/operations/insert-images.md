@@ -24,7 +24,8 @@ To place two images side-by-side, use the [layout.side-by-side](../reference/lay
 
 To get a value from a specific element in an array, use the path to specify its sequence number, starting from zero.
 
-Let's say the input data contains of an array of links to images:
+Let's say the input data contains an array of links to images:
+
 ```json
 {
   "images": [
@@ -34,7 +35,9 @@ Let's say the input data contains of an array of links to images:
   ]
 }
 ```
+
 You can reference a specific array element like this:
+
 ```json
 "url": {
   "type": "data.input",
@@ -47,6 +50,7 @@ You can reference a specific array element like this:
 ### Components for displaying a group of images {#additional-components}
 
 To display multiple images, you need a component that you can add your images to. To do this, you can use components that implement a list or table:
+
 - [view.list](../reference/view.list.md): Lets you create a list of any elements, including images. It's good for making vertical lists.
 
     [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/V44snIfa3ttBb2)

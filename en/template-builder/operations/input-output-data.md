@@ -9,12 +9,15 @@ For more information on how to add a quotation mark `"`, backslash `\`, line bre
 ## Basic example {#read-write-data}
 
 Let's say you want to display the question text from the input data and write the response to the output data. Sample input data:
+
 ```json
 {
   "question": "Would you buy an elephant?"
 }
 ```
+
 Example of the question display in the [view.text](../reference/view.text.md) component:
+
 ```json
 {
   "type": "view.text",
@@ -25,7 +28,9 @@ Example of the question display in the [view.text](../reference/view.text.md) co
   }
 }
 ```
+
 Example of writing a response using the [field.radio-group](../reference/field.radio-group.md) component:
+
 ```json
 {
   "type": "field.radio-group",
@@ -54,6 +59,7 @@ When you respond with yes and click **Send**, the result looks like this:
 If you pass a JSON object in the input data and want to get a value for some nested key, specify the path to it using the dot as a separator.
 
 Let's say you have an input object that describes a residential address.
+
 ```json
 {
     "name": "Ivan Ivanov",
@@ -66,6 +72,7 @@ Let's say you have an input object that describes a residential address.
 ```
 
 To display the value from the city property in the interface, specify the path to this value using the dot separator:
+
 ```json
 {
   "type": "data.input",
@@ -85,7 +92,8 @@ The output data is written similarly. If you enter the path separated by dots, t
 
 To get a value from a specific element in an array, use the path to specify its sequence number, starting from zero.
 
-Let's say the input data contains of an array of links to images:
+Let's say the input data contains an array of links to images:
+
 ```json
 {
   "images": [
@@ -95,7 +103,9 @@ Let's say the input data contains of an array of links to images:
   ]
 }
 ```
+
 You can reference a specific array element like this:
+
 ```json
 "url": {
   "type": "data.input",
@@ -114,6 +124,7 @@ For example, you can convert an array of image links to an array of [view.image]
 ## Writing the array data {#write-array}
 
 Similarly to reading elements from an array, you can also write the results to an array. For this, use the `path` property for the path to the array and the element number starting from zero. Example:
+
 ```json
 {
   "type": "data.output",
