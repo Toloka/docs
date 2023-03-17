@@ -30,7 +30,7 @@ Returns a key value object with any type of data as value.
 || `options[].label` | _string_ | A title of answer. Supports markdown ||
 || `options[].options`<span style="color: red">\*</span> | _array_ | An array of answers. ||
 || `options[].options[]` | _object_ | – ||
-|| `options[].options[].correct` | _boolean_ | Is this is correct value? ||
+|| `options[].options[].correct` | _boolean_ | Whether the value is correct. ||
 || `options[].options[].hint` | _string_ | Text that appears when answer checked. Supports markdown ||
 || `options[].options[].label`<span style="color: red">\*</span> | _string_ | Text of answer. Supports markdown ||
 || `options[].options[].value`<span style="color: red">\*</span> | _any_ | Returned value. ||
