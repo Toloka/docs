@@ -448,6 +448,8 @@ items:
                     href: toloka-apps/api/concepts/quickstart-api.md
                   - name: Stream processing of task items
                     href: toloka-apps/api/concepts/streaming-items.md
+                  - name: Iterating results
+                    href: toloka-apps/api/concepts/getting-items.md
               - name: Bespoke API reference
                 include:
                   path: toloka-apps/api/ref.yaml
