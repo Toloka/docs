@@ -4,7 +4,7 @@ Button that calls an action.
 
 When clicking the button, an action specified in the `action` property is called.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/tqa_Jvpk45ShQ2)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/BiV4rmEt45Vu5w)
 
 {% cut "Components used in the example" %}
 
