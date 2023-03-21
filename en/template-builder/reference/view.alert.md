@@ -6,6 +6,14 @@ You can use both plain text and other visual components inside it.
 
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/lBobocfj3tyyJo)
 
+{% cut "Components used in the example" %}
+
+- [view.list](../reference/view.list.md): Displays data in a list.
+- [view.text](../reference/view.text.md): Adds a block with text. 
+
+{% endcut %}
+
+
 ## Component properties {#properties}
 
 #|
@@ -25,3 +33,4 @@ You can use both plain text and other visual components inside it.
   |#
 
 {% include [contact-support](../_includes/contact-support.md) %}
+

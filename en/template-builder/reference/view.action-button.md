@@ -4,6 +4,16 @@ Button that calls an action.
 
 When clicking the button, an action specified in the `action` property is called.
 
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/tqa_Jvpk45ShQ2)
+
+{% cut "Components used in the example" %}
+
+- [view.list](../reference/view.list.md): Displays data in a list.
+- [view.text](../reference/view.text.md): Adds a block with text. 
+- [action.open-link](../reference/action.open-link.md): Opens a new tab in the browser with the specified web-page. 
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
