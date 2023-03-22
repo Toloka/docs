@@ -8,9 +8,9 @@ When clicking the button, an action specified in the `action` property is called
 
 {% cut "Components used in the example" %}
 
-- [view.list](../reference/view.list.md): Displays data in a list.
-- [view.text](../reference/view.text.md): Adds a block with text. 
-- [action.open-link](../reference/action.open-link.md): Opens a new tab in the browser with the specified web-page. 
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Adds a block with text. 
+- [action.open-link](action.open-link.md): Opens a new tab in the browser with the specified web-page. 
 
 {% endcut %}
 
@@ -18,7 +18,7 @@ When clicking the button, an action specified in the `action` property is called
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.action-button" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.action-button" | Set component type. ||
 || `label` | _string_ | Button text. ||
 || `action` | _action_ | Action called when clicking the button. ||
 || `hint` | _string_ | Hint text. ||

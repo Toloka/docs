@@ -8,8 +8,8 @@ You can use both plain text and other visual components inside it.
 
 {% cut "Components used in the example" %}
 
-- [view.list](../reference/view.list.md): Displays data in a list.
-- [view.text](../reference/view.text.md): Adds a block with text. 
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Adds a block with text. 
 
 {% endcut %}
 
@@ -18,7 +18,7 @@ You can use both plain text and other visual components inside it.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.alert" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.alert" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `content` | _view_ | Content of the block with important information. ||
 || `hint` | _string_ | Hint text. ||
