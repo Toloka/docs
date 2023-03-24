@@ -8,13 +8,13 @@ The block heading is always visible.
 
 If you set the `defaultOpened` property to `true`, the block is expanded immediately, but it can be collapsed.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/CbqIUvFz45fvuV)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/2RH-AyFk45u9om)
 
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
 - [view.image](view.image.md): Displays an image.
-- [field.button-radio-group](field.button-radio-group.md): Adds buttons for selecting an answer option.
+- [field.button-radio-group](field.button-radio-group.md): Adds group of buttons for selecting an answer option.
 - [condition.required](condition.required.md): Checks that the data is filled in.
 - [view.text](view.text.md): Adds a block with text. 
 
