@@ -130,7 +130,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 1. Set **Max overlap**.
 
-1. Specify **Confidence of aggregated answer**. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
+1. Specify **Confidence of aggregated response**. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
 
 1. Choose **Skill for users' scoring**.
 
