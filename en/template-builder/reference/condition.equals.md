@@ -10,7 +10,7 @@ When substituting values, you can refer to `data.*` or another element using `$r
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "condition.equals" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "condition.equals" | Set component type. ||
 || `data` | _any_ | Original value. If not specified, it uses the value returned by the parent component (the component that contains `condition.equals`).
 
 How to pass a value:

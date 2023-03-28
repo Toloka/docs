@@ -16,7 +16,7 @@ Block for displaying data in a list. List may contain an unlimited number of `vi
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.list" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.list" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `direction` | _string_ | Determines the direction of the list:
 

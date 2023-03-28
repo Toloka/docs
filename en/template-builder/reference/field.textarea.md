@@ -12,7 +12,7 @@ Note that formatting is not available in the text box.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.textarea" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.textarea" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | If `true`, editing is not available. ||

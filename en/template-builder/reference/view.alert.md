@@ -9,10 +9,9 @@ You can use both plain text and other visual components inside it.
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
-- [view.text](view.text.md): Adds a block with text. 
+- [view.text](view.text.md): Adds a block with text.
 
 {% endcut %}
-
 
 ## Component properties {#properties}
 
@@ -33,4 +32,3 @@ You can use both plain text and other visual components inside it.
   |#
 
 {% include [contact-support](../_includes/contact-support.md) %}
-

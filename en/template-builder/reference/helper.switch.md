@@ -19,7 +19,7 @@ How the helper works:
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.switch" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.switch" | Set component type. ||
 || `cases`<span style="color: red">\*</span> | _array_ | An array of objects consisting of `condition` and `result` property pairs. ||
 || `cases[]` | _object_ | Object parameters. ||
 || `cases[].condition`<span style="color: red">\*</span> | _condition_ | Condition to check. ||

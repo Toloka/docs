@@ -12,7 +12,7 @@ You can use [plugin.field.text-annotation.hotkeys](plugin.field.text-annotation.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.text-annotation" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.text-annotation" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `adjust` | _string_ | If the property value is set to `words`, only words can be selected in the text. If you don't use this property, any part of a line can be selected. ||

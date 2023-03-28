@@ -8,7 +8,7 @@ This component checks for the end of playback. Validation is passed if playback 
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "condition.played-fully" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "condition.played-fully" | Set component type. ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 |#
 

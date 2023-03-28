@@ -8,7 +8,7 @@ Format support depends on the Toloker's browser, OS, and device. We recommend us
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.audio" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.audio" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
 || `loop` | _boolean_ | Automatically replay audio. ||

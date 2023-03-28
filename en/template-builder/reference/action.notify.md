@@ -8,7 +8,7 @@ You can set the how long the message will be active, the delay before displaying
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "action.notify" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "action.notify" | Set component type. ||
 || `payload`<span style="color: red">\*</span> | _object_ | Parameters for the message. ||
 || `payload.content`<span style="color: red">\*</span> | _string_ | Message text. ||
 || `payload.delay` | _number_ | The duration of the delay (in milliseconds) before the message appears. ||

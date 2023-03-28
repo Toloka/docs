@@ -23,7 +23,7 @@ The top bar is located at the top edge of the component, and the bottom one is a
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "layout.bars" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "layout.bars" | Set component type. ||
 || `barAfter` | _view_ | The bar displayed at the bottom edge of the component. ||
 || `barBefore` | _view_ | The bar displayed at the top edge of the component. ||
 || `content`<span style="color: red">\*</span> | _view_ | The main content. ||

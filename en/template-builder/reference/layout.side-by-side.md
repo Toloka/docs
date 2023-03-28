@@ -28,7 +28,7 @@ Differences from the [layout.compare](layout.compare.md) component:
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "layout.side-by-side" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "layout.side-by-side" | Set component type. ||
 || `controls`<span style="color: red">\*</span> | _view_ | Components that let Tolokers perform the required actions.
 
 For example: [field.checkbox-group](field.checkbox-group.md) or [field.button-radio-group](field.button-radio-group.md). ||

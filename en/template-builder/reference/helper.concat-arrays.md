@@ -20,7 +20,7 @@ Their elements can be combined into a single array to show simultaneously:
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.concat-arrays" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.concat-arrays" | Set component type. ||
 || `items` | _array_ | Arrays to combine. ||
 || `items[]` | _any_ | Array element. ||
 |#

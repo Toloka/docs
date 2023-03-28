@@ -8,7 +8,7 @@ Component for recording audio. Works in the [Toloka app for mobile devices](http
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.audio" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.audio" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||

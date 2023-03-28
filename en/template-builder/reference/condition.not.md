@@ -9,7 +9,7 @@ Returns the inverse of the specified condition. For example, if the specified co
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "condition.not" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "condition.not" | Set component type. ||
 || `condition` | _condition_ | The condition for which the inverse is returned. ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||
 |#

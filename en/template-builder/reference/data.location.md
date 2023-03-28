@@ -1,4 +1,4 @@
-# @yandex-toloka/data.location
+# @toloka/data.location
 
 This component sends the device coordinates.
 
@@ -12,7 +12,7 @@ To find out if the transmitted coordinates match the ones that you specified, us
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "@yandex-toloka/data.location" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "@toloka/data.location" | Set component type. ||
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}
