@@ -1,4 +1,4 @@
-# @yandex-toloka/helper.proxy
+# @toloka/helper.proxy
 
 You can use this component to download files from Yandex Disk.
 
@@ -12,7 +12,7 @@ Select the component that you want to add, such as [view.image](view.image.md) f
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "@yandex-toloka/helper.proxy" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "@toloka/helper.proxy" | Set component type. ||
 || `path`<span style="color: red">\*</span> | _string_ | Path to the file in the `/<Proxy name>/<File name>.<type>` format ||
 |#
 

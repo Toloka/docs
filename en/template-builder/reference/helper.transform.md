@@ -10,7 +10,7 @@ For example, you can convert an array of image links to [view.image](view.image.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.transform" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.transform" | Set component type. ||
 || `into` | _any_ | Template to transform elements in the array. The array value can be substituted using the `data.local` component. To do this, use the construction `{ "type": "data.local", "path": "item"}`. [Learn more](../operations/work-with-data.md). ||
 || `items` | _array_ | The array that you want to convert. You can specify an array in three ways:
 

@@ -8,7 +8,7 @@ Opens a new tab in the browser with the specified web page. For example, you can
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "action.open-link" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "action.open-link" | Set component type. ||
 || `payload` | _string_ | URL of the web page. ||
 |#
 

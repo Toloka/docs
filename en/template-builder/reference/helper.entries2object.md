@@ -29,7 +29,7 @@ It is converted to an object whose elements consist of the values of the origina
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.entries2object" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.entries2object" | Set component type. ||
 || `entries` | _array_ | Source array of key-value pairs. ||
 || `entries[]` | _object_ | Object parameters. ||
 || `entries[].key`<span style="color: red">\*</span> | _string_ | Key. ||

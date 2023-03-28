@@ -9,8 +9,8 @@ When clicking the button, an action specified in the `action` property is called
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
-- [view.text](view.text.md): Adds a block with text. 
-- [action.open-link](action.open-link.md): Opens a new tab in the browser with the specified web-page. 
+- [view.text](view.text.md): Adds a block with text.
+- [action.open-link](action.open-link.md): Opens a new tab in the browser with the specified web-page.
 
 {% endcut %}
 

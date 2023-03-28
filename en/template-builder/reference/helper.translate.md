@@ -32,7 +32,7 @@ Usage example:
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.translate" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.translate" | Set component type. ||
 || `key`<span style="color: red">\*</span> | _string_ | The key for a text property that you will translate to other languages. ||
 |#
 

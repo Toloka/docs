@@ -8,7 +8,7 @@ A field for entering a short text, not more than a line. To add a field for ente
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.text" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.text" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | If `true`, editing is not available. ||

@@ -6,7 +6,7 @@ Wraps the content of a component in a frame that is similar to a mobile phone. Y
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.device-frame" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.device-frame" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `content` | _view_ | Content inside the frame. ||
 || `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||

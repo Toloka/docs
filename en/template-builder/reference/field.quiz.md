@@ -17,7 +17,7 @@ Returns a key value object with any type of data as value.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.quiz" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.quiz" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||

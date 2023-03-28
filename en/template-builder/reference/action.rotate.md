@@ -10,7 +10,7 @@ By default it rotates to the right, but you can specify the direction in the `pa
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "action.rotate" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "action.rotate" | Set component type. ||
 || `payload` | _string_ | Sets the direction of rotation:
 
 - `right` (default).

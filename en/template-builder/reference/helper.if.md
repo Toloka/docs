@@ -5,6 +5,7 @@ The If...Then...Else operator. Allows you to execute either one block of code or
 For example, if you want to conduct a survey, you can use the `helper.if` component to ask the gender of the respondent and add different sets of questions, depending on whether the respondent is male or female.
 
 **How it works:**
+
 If the condition in `if` is true (returns `true`), the code specified in the `then` property will be executed. Otherwise (the condition is false and returns `false`) the code specified in `else` will be executed.
 
 The `else` property is optional. For example, you ask a Toloker "do you like the image?". You can make a comment field appear when a negative response is selected. And if a positive response is selected then nothing happens.

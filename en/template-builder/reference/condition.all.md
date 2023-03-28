@@ -10,7 +10,7 @@ If you only need one out of several conditions to be met, use the [condition.any
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "condition.all" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "condition.all" | Set component type. ||
 || `conditions` | _array_ | A set of conditions that must be met. ||
 || `conditions[]` | _condition_ | Required condition. ||
 || `hint` | _string_ | Validation error message that a Toloker will see ||

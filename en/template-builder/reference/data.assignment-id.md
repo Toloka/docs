@@ -1,4 +1,4 @@
-# @yandex-toloka/data.assignment-id
+# @toloka/data.assignment-id
 
 This component returns the assignment ID.
 
@@ -22,7 +22,7 @@ To get the assignment ID, add `{"type": "@yandex-toloka/data.assignment-id"}` to
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "@yandex-toloka/data.assignment-id" | Set component type. ||
+|| `type`<span style="color: red">\*</span> | "@toloka/data.assignment-id" | Set component type. ||
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}

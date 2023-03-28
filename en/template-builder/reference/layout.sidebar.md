@@ -29,7 +29,7 @@ To add an extra panel with controls, use the `extraControls` property.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "layout.sidebar" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "layout.sidebar" | Set component type. ||
 || `content`<span style="color: red">\*</span> | _view_ | Content placed in the main area. ||
 || `controls`<span style="color: red">\*</span> | _view_ | Content of the control panel. ||
 || `controlsWidth` | _number_ | The width of the control panel in widescreen mode. In compact mode, the panel takes up the entire available width. Default: 200 pixels. ||
