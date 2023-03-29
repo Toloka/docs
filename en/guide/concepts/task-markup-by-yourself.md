@@ -20,9 +20,13 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 1. Make sure the pool isn't running.
 
-1. Click **Edit** in the **Pool tasks** block.
+1. Click either **Control tasks** or **Training tasks** indicator of the **Tasks** block on the pool page.
 
-1. Open the **General**, **Control**, or **Training** tab. Create a control or a training task from another type of task.
+    ![Click Control or Training tasks](../_images/location-job/task-edit/control-training-tasks.png =400x)
+
+1. Create a control or a training task from another type of task clicking the appropriate button.
+
+    ![Create control or training tasks](../_images/location-job/task-edit/create-from-tasks.png =700x)
 
 1. Select the responses that should be checked. (The list of the [output data fields](incoming.md) is on the right.)
 
@@ -30,9 +34,9 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 {% cut "Example of task markup" %}
 
-In this example, the correct response is added for the control task. Only the choice in the `result` field (Good/Bad/Loading error) is checked.
+In this example, the correct response is added for the control task. Only the choice in the `result` field is checked.
 
-![](../_images/location-job/task-edit/task-edit.png)
+![](../_images/location-job/task-edit/task-edit.png =630x)
 
 {% endcut %}
 
@@ -58,11 +62,11 @@ When creating control tasks, enter only correct responses that answer the questi
 
 - Correct
 
-  ![](../_images/location-job/task-edit/distribution_ex1.png)
+  ![](../_images/location-job/task-edit/distribution_ex1.png =400x)
 
 - Incorrect
 
-  ![](../_images/location-job/task-edit/distribution_ex2.png)
+  ![](../_images/location-job/task-edit/distribution_ex2.png =400x)
 
 {% endlist %}
 
@@ -142,3 +146,5 @@ If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overla
 {% include [faq-correct-responses-counted](../_includes/faq/pool-setup/correct-responses-counted.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}
