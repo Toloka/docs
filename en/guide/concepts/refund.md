@@ -18,13 +18,9 @@ The steps for getting a refund are different for individuals and businesses.
 
 - Individual
 
-  1. Fill in all the required fields marked with a red asterisk sign:
+  1. [Fill in the refund form](../troubleshooting/support.md?form-topic1=money&form-topic3=refund&form-payer=individual_nonrf&form-payment_method=card&form-answer_choices_51622059=57944123&form-source=guide-refund)
 
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.ru/surveys/13460895.b14e7083ea92ec27b157232f968e6cb6aedb3685/?topic1=money&topic3=refund&payer=individual_nonrf&payment_method=card&answer_choices_51622059=57944123&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+      Make sure you fill all the required fields marked with a red asterisk sign.
 
   1. Write a refund request in any form in the **Message** field.
 
@@ -32,13 +28,9 @@ The steps for getting a refund are different for individuals and businesses.
 
 - Legal entity
 
-  1. Fill in all the required fields marked with a red asterisk sign:
+  1. [Fill in the refund form](../troubleshooting/support.md?form-topic1=money&form-topic3=refund&form-payer=business_nonrf&form-payment_method=card&form-answer_choices_51622059=57944123&form-source=guide-refund)
 
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.ru/surveys/13460895.b14e7083ea92ec27b157232f968e6cb6aedb3685/?topic1=money&topic3=refund&payer=business_nonrf&payment_method=card&answer_choices_51622059=57944123&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+      Make sure you fill all the required fields marked with a red asterisk sign.
 
   1. Write a refund request in any form in the **Message** field.
 
@@ -54,13 +46,9 @@ The steps for getting a refund are different for individuals and businesses.
 
 - Individual
 
-  1. Fill in all the required fields marked with a red asterisk sign:
+  1. [Fill in the refund form](../troubleshooting/support.md?form-topic1=money&form-topic3=refund&form-payer=individual_nonrf&form-payment_method=card&form-answer_choices_51622059=57944124&form-source=guide-refund)
 
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.ru/surveys/13460895.b14e7083ea92ec27b157232f968e6cb6aedb3685/?topic1=money&topic3=refund&payer=individual_nonrf&payment_method=card&answer_choices_51622059=57944124&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+      Make sure you fill all the required fields marked with a red asterisk sign.
 
   1. Make sure you select the **No, the card was lost/blocked/expired** option.
 
@@ -76,13 +64,9 @@ The steps for getting a refund are different for individuals and businesses.
 
 - Legal entity
 
-  1. Fill in all the required fields marked with a red asterisk sign:
+  1. [Fill in the refund form](../troubleshooting/support.md?form-topic1=money&form-topic3=refund&form-payer=business_nonrf&form-payment_method=card&form-answer_choices_51622059=57944124&form-source=guide-refund)
 
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.ru/surveys/13460895.b14e7083ea92ec27b157232f968e6cb6aedb3685/?topic1=money&topic3=refund&payer=business_nonrf&payment_method=card&answer_choices_51622059=57944124&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+      Make sure you fill all the required fields marked with a red asterisk sign.
 
   1. Make sure you select the **No, the card was lost/blocked/expired** option.
 
@@ -111,13 +95,9 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Individual
 
-  1. Fill in all the required fields marked with a red asterisk sign:
+  1. [Fill in the refund form](../troubleshooting/support.md?form-topic1=money&form-topic3=refund&form-payer=individual_nonrf&form-payment_method=transfer&form-source=guide-refund)
 
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.ru/surveys/13460895.b14e7083ea92ec27b157232f968e6cb6aedb3685/?topic1=money&topic3=refund&payer=individual_nonrf&payment_method=transfer&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+      Make sure you fill all the required fields marked with a red asterisk sign.
 
   1. Download the sample refund request, fill it in, and sign.
 
@@ -131,13 +111,9 @@ The steps for getting a refund are different for individuals and businesses:
 
 - Legal entity
 
-  1. Fill in all the required fields marked with a red asterisk sign:
+  1. [Fill in the refund form](../troubleshooting/support.md?form-topic1=money&form-topic3=refund&form-payer=business_nonrf&form-payment_method=transfer&form-source=guide-refund)
 
-      {% cut "Fill in the refund form" %}
-
-      <iframe width="100%" frameborder="0" src="https://forms.yandex.ru/surveys/13460895.b14e7083ea92ec27b157232f968e6cb6aedb3685/?topic1=money&topic3=refund&payer=business_nonrf&payment_method=transfer&iframe=1&service=toloka-ai"></iframe>
-
-      {% endcut %}
+      Make sure you fill all the required fields marked with a red asterisk sign.
 
   1. Download the sample refund request, fill it in, and sign.
 
@@ -166,8 +142,4 @@ Make sure to correctly specify:
 - The invoice number in [**Yandex Balance**]({{ balance }}) issued when you refilled your account.
 - The PayPal wallet from which you transferred funds to Toloka.
 
-{% cut "Fill in the refund form" %}
-
-<iframe width="100%" frameborder="0" src="https://forms.yandex.ru/surveys/13460895.b14e7083ea92ec27b157232f968e6cb6aedb3685/?topic1=money&topic3=refund&payer=individual_nonrf&payment_method=paypal&iframe=1&service=toloka-ai"></iframe>
-
-{% endcut %}
+[Fill in the refund form](../troubleshooting/support.md?form-topic1=money&form-topic3=refund&form-payer=individual_nonrf&form-payment_method=paypal&form-source=guide-refund)
