@@ -9,12 +9,12 @@ Format support depends on the Toloker's browser, OS, and device. We recommend us
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
-- [view.audio](../reference/view.audio.md): An audio player.
-- [data.input](../operations/work-with-data.md): The input data.  For example, a link to an audio recording that Tolocar will listen to.
+- [view.audio](../reference/view.audio.md): Adds an audio player.
+- [data.input](../operations/work-with-data.md): The input data.  For example, a link to an audio recording that Toloker will listen to.
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
 - [condition.played-fully](../reference/condition.played.md): Checks if a Toloker listened to the entire audio track.
-- [field.button-radio-group](../reference/field.button-radio-group.md): Buttons for answer options.
-- [condition.required](../reference/condition.required.md): Checks if the text field is filled in.
+- [field.button-radio-group](../reference/field.button-radio-group.md): Adds a group of buttons for selecting an answer option.
+- [condition.required](../reference/condition.required.md): Checks if at least one option is selected.
 
 {% endcut %}
 
