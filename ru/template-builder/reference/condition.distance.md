@@ -1,4 +1,4 @@
-# @yandex-toloka/condition.distance
+# @toloka/condition.distance
 
 {% include [deprecate](../../_includes/deprecate.md) %}
 
@@ -14,7 +14,7 @@
 
 #|
 || **Название** | **Тип** | **Описание** ||
-|| `type`<span style="color: red">\*</span> | "@yandex-toloka/condition.distance" | Задает тип компонента. ||
+|| `type`<span style="color: red">\*</span> | "@toloka/condition.distance" | Задает тип компонента. ||
 || `from` | _string_ | Координаты, которые будут сравниваться с координатами из свойства `to`. ||
 || `hint` | _string_ | Сообщение об ошибке валидации, которое увидит исполнитель ||
 || `max` | _number_ | Расстояние в метрах, на которое могут отличаться заданные и переданные координаты. ||

@@ -36,9 +36,9 @@ Take a look at the example: the interface includes a text block, a button for s
 
 - [view.action-button](../reference/view.action-button.md): Adds a button that calls an action.
 
-  In this example, clicking the button calls [@yandex-toloka/data.location](../reference/data.location.md) which sends the coordinates of the Toloker's device. 
+  In this example, clicking the button calls [@toloka/data.location](../reference/data.location.md) which sends the coordinates of the Toloker's device.
 
-  The [@yandex-toloka/condition.distance](../reference/condition.distance.md) component compares the Toloker's coordinates with the business location that you specified. The Toloker can submit the response if the difference is less than 50 meters. To change this condition, replace the value of the `max` property with the desired distance. 
+  The [@toloka/condition.distance](../reference/condition.distance.md) component compares the Toloker's coordinates with the business location that you specified. The Toloker can submit the response if the difference is less than 50 meters. To change this condition, replace the value of the `max` property with the desired distance.
 
   {% cut "Show code" %}
 
@@ -49,7 +49,7 @@ Take a look at the example: the interface includes a text block, a button for s
     "action": {
       "type": "action.set",
       "payload": {
-        "type": "@yandex-toloka/data.location"
+        "type": "@toloka/data.location"
       },
       "data": {
         "type": "data.output",
@@ -68,10 +68,10 @@ Take a look at the example: the interface includes a text block, a button for s
           }
         },
         {
-          "type": "@yandex-toloka/condition.distance",
+          "type": "@toloka/condition.distance",
           "hint": "you are too far away from the location.",
           "from": {
-            "type": "@yandex-toloka/data.location"
+            "type": "@toloka/data.location"
           },
           "to": {
             "type": "data.input",

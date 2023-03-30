@@ -56,7 +56,7 @@
 
   1. Выберите тип компонента. Например, `"view.image"` — для вставки картинки, `"view.audio"` — аудио, `"view.video"` — видео.
 
-  1. В свойстве `"url"` компонента выберите тип `"@yandex-toloka/helper.proxy"`.
+  1. В свойстве `"url"` компонента выберите тип `"@toloka/helper.proxy"`.
 
   1. В свойстве `"path"` компонента укажите конструкцию вида `/<имя прокси>/<имя файла>.<тип>` со своими данными.
 
@@ -74,7 +74,7 @@
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": "/my-proxy/example.jpg"
     }
   }
@@ -88,7 +88,7 @@
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": {
       "type": "data.input",
       "path": "image"
@@ -113,7 +113,7 @@
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": {
       "type": "data.input",
       "path": "images.0"
