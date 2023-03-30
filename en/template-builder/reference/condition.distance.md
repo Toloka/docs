@@ -14,7 +14,7 @@ The device coordinates are sent using the [data.location](data.location.md) comp
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "@toloka/condition.distance" | Set component type. ||
 || `from` | _string_ | The coordinates that will be compared to the coordinates from the `to` property. ||
-|| `hint` | _string_ | Validation error message that a Toloker will see ||
+|| `hint` | _string_ | Validation error message that a Toloker will see. ||
 || `max` | _number_ | The distance in meters by which the specified and sent coordinates may differ. ||
 || `to` | _string_ | The coordinates that will be compared to the coordinates from the `from` property. ||
 |#

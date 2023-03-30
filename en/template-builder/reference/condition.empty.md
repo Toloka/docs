@@ -12,7 +12,7 @@ The component checks that the value of the sent data is equal to a zero-length s
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "condition.empty" | Set component type. ||
 || `data` | _any_ | Data to check. If not specified, data is checked in the component that contains `condition.empty`. ||
-|| `hint` | _string_ | Validation error message that a Toloker will see ||
+|| `hint` | _string_ | Validation error message that a Toloker will see. ||
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}

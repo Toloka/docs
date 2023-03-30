@@ -54,7 +54,7 @@ To add a file to the [task interface](spec.md):
 
   1. Select the component type. For example, `"view.image"` — to insert a picture, `"view.audio"` — for audio files, `"view.video"` — for video files.
 
-  1. In the `"url"` property, select the `"@yandex-toloka/helper.proxy"` type.
+  1. In the `"url"` property, select the `"@toloka/helper.proxy"` type.
 
   1. In the `"path"` property, enter the structure `/<proxy name>/<file name>.<type>` with your data.
 
@@ -72,7 +72,7 @@ To add a file to the [task interface](spec.md):
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": "/my-proxy/example.jpg"
     }
   }
@@ -86,7 +86,7 @@ To add a file to the [task interface](spec.md):
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": {
       "type": "data.input",
       "path": "image"
@@ -111,7 +111,7 @@ To add a file to the [task interface](spec.md):
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": {
       "type": "data.input",
       "path": "images.0"

@@ -13,7 +13,7 @@ If you need all conditions to be met, use the [condition.all](condition.all.md) 
 || `type`<span style="color: red">\*</span> | "condition.any" | Set component type. ||
 || `conditions` | _array_ | A set of conditions, at least one of which must be met. ||
 || `conditions[]` | _condition_ | Condition. ||
-|| `hint` | _string_ | Validation error message that a Toloker will see ||
+|| `hint` | _string_ | Validation error message that a Toloker will see. ||
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}
