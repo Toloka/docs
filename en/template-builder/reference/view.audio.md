@@ -4,7 +4,7 @@ The component plays audio.
 
 Format support depends on the Toloker's browser, OS, and device. We recommend using MP3.
 
-[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/ePEbUTWp46oWGg)
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/d0D-SzfG46oojL)
 
 {% cut "Components used in the example" %}
 
