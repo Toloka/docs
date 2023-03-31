@@ -1,5 +1,5 @@
 # consistency
-`crowdkit.metrics.data._classification.consistency` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/metrics/data/_classification.py#L42)
+`crowdkit.metrics.data._classification.consistency` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/metrics/data/_classification.py#L42)
 
 ```python
 consistency(

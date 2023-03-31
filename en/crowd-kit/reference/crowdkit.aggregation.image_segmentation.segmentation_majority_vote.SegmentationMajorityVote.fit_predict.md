@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L80)
+`crowdkit.aggregation.image_segmentation.segmentation_majority_vote.SegmentationMajorityVote.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/image_segmentation/segmentation_majority_vote.py#L80)
 
 ```python
 fit_predict(

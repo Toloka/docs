@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.learning.text_summarization.TextSummarization.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/text_summarization.py#L76)
+`crowdkit.learning.text_summarization.TextSummarization.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/learning/text_summarization.py#L76)
 
 ```python
 fit_predict(self, data: DataFrame)
