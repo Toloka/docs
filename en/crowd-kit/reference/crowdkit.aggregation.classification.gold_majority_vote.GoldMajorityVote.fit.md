@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/classification/gold_majority_vote.py#L72)
+`crowdkit.aggregation.classification.gold_majority_vote.GoldMajorityVote.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/classification/gold_majority_vote.py#L73)
 
 ```python
 fit(
@@ -9,14 +9,14 @@ fit(
 )
 ```
 
-Estimate the workers' skills.
+Fits the model to the training data.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**DataFrame**|<p>Workers&#x27; labeling results. A pandas.DataFrame containing `task`, `worker` and `label` columns.</p>
-`true_labels`|**Series**|<p>Tasks&#x27; ground truth labels. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s ground truth label.</p>
+`data`|**DataFrame**|<p>The training dataset of workers&#x27; labeling results which is represented as the `pandas.DataFrame` data containing `task`, `worker`, and `label` columns.</p>
+`true_labels`|**Series**|<p>The ground truth labels of tasks. The `pandas.Series` data is indexed by `task` so that `labels.loc[task]` is the task ground truth label.</p>
 
 * **Returns:**
 

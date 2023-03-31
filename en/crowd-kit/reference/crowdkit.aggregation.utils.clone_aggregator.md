@@ -1,5 +1,5 @@
 # clone_aggregator
-`crowdkit.aggregation.utils.clone_aggregator` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/utils.py#L23)
+`crowdkit.aggregation.utils.clone_aggregator` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/utils.py#L23)
 
 ```python
 clone_aggregator(aggregator: BaseClassificationAggregator)

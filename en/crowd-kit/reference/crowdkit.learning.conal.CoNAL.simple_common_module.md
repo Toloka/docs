@@ -1,5 +1,5 @@
 # simple_common_module
-`crowdkit.learning.conal.CoNAL.simple_common_module` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/conal.py#L94)
+`crowdkit.learning.conal.CoNAL.simple_common_module` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/learning/conal.py#L94)
 
 ```python
 simple_common_module(

@@ -1,5 +1,5 @@
 # forward
-`crowdkit.learning.conal.CoNAL.forward` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/conal.py#L117)
+`crowdkit.learning.conal.CoNAL.forward` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/learning/conal.py#L117)
 
 ```python
 forward(

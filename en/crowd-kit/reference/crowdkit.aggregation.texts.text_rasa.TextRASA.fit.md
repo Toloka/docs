@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.texts.text_rasa.TextRASA.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/texts/text_rasa.py#L49)
+`crowdkit.aggregation.texts.text_rasa.TextRASA.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/texts/text_rasa.py#L49)
 
 ```python
 fit(

@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.texts.rover.ROVER.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/texts/rover.py#L100)
+`crowdkit.aggregation.texts.rover.ROVER.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/texts/rover.py#L100)
 
 ```python
 fit_predict(self, data: DataFrame)
