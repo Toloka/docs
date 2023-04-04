@@ -2,7 +2,26 @@
 
 Adds a group of checkboxes for selecting independent answer options. This is useful if there are several options. You can add just one checkbox, but it's easier to use [field.checkbox](field.checkbox.md) for that.
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/AA2nEh_E3twhqK)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/qeQoTGCe47BNW2)
+
+{% cut "Components used in the example" %}
+
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+
+{% endcut %}
+
+By default, if the component returns false, this result will not be added to the output. To add false to the results, specify `"preserveFalse": true`.
+
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/Mo_S234j47BPYs)
+
+{% cut "Components used in the example" %}
+
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.any](condition.any.md): Checks that at least one of the child conditions is met.
+- [condition.equals](condition.equals.md): Checks whether the original value is equal to the specified value.
+
+{% endcut %}
 
 ## Component properties {#properties}
 

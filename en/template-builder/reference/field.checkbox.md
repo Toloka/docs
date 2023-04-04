@@ -1,10 +1,28 @@
 # field.checkbox
 
-A checkbox.
+Adds a single checkbox. 
 
 If you need to add a group of checkboxes, use [field.checkbox-group](field.checkbox-group.md).
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/GiAzprj63tz7PD)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/xRm39MZ-47HsVq)
+
+{% cut "Components used in the example" %}
+
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+
+{% endcut %}
+
+By default, if the component returns false, this result will not be added to the output. To add false to the results, specify `"preserveFalse": true`.
+
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/bnPtJeaM47HzVs)
+
+{% cut "Components used in the example" %}
+
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+
+{% endcut %}
 
 ## Component properties {#properties}
 
@@ -15,7 +33,7 @@ If you need to add a group of checkboxes, use [field.checkbox-group](field.check
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | Property that disables the component. If `true`, the component will be unavailable. ||
 || `hint` | _string_ | Hint text. ||
-|| `preserveFalse` | _boolean_ | Property that specifies whether to return `false` values in the results. By default, if the component returns `false`, this result will not be added to the output. To add `false` to the results, specify `"preserveFalse": true`. ||
+|| `preserveFalse` | _boolean_ | Property that specifies whether to return `false` values in the results. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
 
