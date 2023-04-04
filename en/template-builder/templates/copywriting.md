@@ -6,13 +6,13 @@ This preset helps to create a description of products based on the image and its
 
 Take a look at the example: the labeling interface includes an image, text data, button and a text input area. If the Toloker clicks on the button, a search engine opens with a request about the product. Note that validation and task layout are are already configured in this example.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/FxeYE_IV3zcaKG)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/L6DkKbbO47KQ38)
 
 {% cut "Components used in the example" %}
 
 - [view.list](../reference/view.list.md): Displays data in a list.
 
-- [layout.columns](../reference/layout.columns.md): Places the image in a separate column to the left of other interface elements.
+- [layout.columns](../reference/layout.columns.md): Places content in separate columns.
 
   {% cut "Show code" %}
 
@@ -23,20 +23,57 @@ Take a look at the example: the labeling interface includes an image, text data,
       {
         "type": "view.image",
         "url": {
-            "type": "data.input",
-            "path": "image"
+          "type": "data.input",
+          "path": "image"
         },
         "fullHeight": true,
         "ratio": [
-            2, 
-            1
+          2,
+          1
         ]
-    }
-  }
+      },
+      {
+        "type": "view.list",
+        "items": [
+          {
+            "type": "view.text",
+            "content": {
+              "type": "data.input",
+              "path": "title"
+            },
+            "label": "Title"
+          },
+          {
+            "type": "view.action-button",
+            "label": "Search product in Google",
+            "action": {
+              "type": "action.open-link",
+              "payload": {
+                "type": "data.input",
+                "path": "search_url"
+              }
+            }
+          },
+          {
+            "type": "field.textarea",
+            "data": {
+              "type": "data.output",
+              "path": "result"
+            },
+            "label": "Describe the product in 2-3 sentences:",
+            "validation": {
+              "type": "condition.required",
+              "hint": "Write the description in the box"
+            }
+          }
+        ]
+      }
+		]
+	}	
   ```
   {% endcut %}
   
-- [view.image](../reference/view.image.md): Image.
+- [view.image](../reference/view.image.md): Adds an image.
 
   {% cut "Show code" %}
 
@@ -44,9 +81,14 @@ Take a look at the example: the labeling interface includes an image, text data,
   {
     "type": "view.image",
     "url": {
-       "type": "data.input",
-       "path": "image"
-    }
+      "type": "data.input",
+      "path": "image"
+    },
+    "fullHeight": true,
+    "ratio": [
+      2,
+      1
+    ]
   }
   ```
   {% endcut %}
@@ -59,15 +101,15 @@ Take a look at the example: the labeling interface includes an image, text data,
   {
     "type": "view.text",
     "content": {
-       "type": "data.input",
-       "path": "title"
+      "type": "data.input",
+      "path": "title"
     },
     "label": "Title"
   }
   ```
   {% endcut %}
   
-- [view.action-button](../reference/view.action-button.md): The button that triggers the action.
+- [view.action-button](../reference/view.action-button.md): Displays the button that triggers the action.
 
   {% cut "Show code" %}
 
@@ -76,17 +118,17 @@ Take a look at the example: the labeling interface includes an image, text data,
     "type": "view.action-button",
     "label": "Search product in Google",
     "action": {
-        "type": "action.open-link",
-        "payload": {
-            "type": "data.input",
-            "path": "search_url"
-        }
+      "type": "action.open-link",
+      "payload": {
+        "type": "data.input",
+        "path": "search_url"
+      }
     }
   }
   ```
   {% endcut %}
   
-- [field.textarea](../reference/field.textarea.md): Text input field.
+- [field.textarea](../reference/field.textarea.md): Adds a block for entering multi-line text.
 
   {% cut "Show code" %}
 
@@ -94,13 +136,13 @@ Take a look at the example: the labeling interface includes an image, text data,
   {
     "type": "field.textarea",
     "data": {
-       "type": "data.output",
-       "path": "result"
+      "type": "data.output",
+      "path": "result"
     },
    "label": "Describe the product in 2-3 sentences:",
    "validation": {
-       "type": "condition.required",
-       "hint": "Write the description in the box"
+      "type": "condition.required",
+      "hint": "Write the description in the box"
     }
   }
   ```
@@ -112,8 +154,10 @@ Take a look at the example: the labeling interface includes an image, text data,
 
   ```json
   {
-    "type": "condition.required",
-    "hint": "Select an option"
+    "validation": {
+      "type": "condition.required",
+      "hint": "Write the description in the box"
+    }
   }
   ```
   {% endcut %}
@@ -146,17 +190,17 @@ To set the desired text length, use the [condition.schema](../reference/conditio
  {
     "type": "condition.schema",
     "schema": {
-     "type": "string",
-     "minLength": 500,
-     "maxLength": 2000
+      "type": "string",
+      "minLength": 50,
+      "maxLength": 200
     },
-    hint": "Write the description in the box"
+    hint": "There is a limit of characters: not less than 50 and not more than 200."
  }
  ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/QH_0-Y3h3zeS2H)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/kchi7uI647LTGN)
 
 ## Use short single-line text field {#short-text-field}
 
@@ -199,7 +243,7 @@ To add a detailed description to the task, use the `label` property of the [view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/nsQ52cJk3zf4so)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/F-uKaF6v47LVBm)
 
 ## Add a layout {#add-layout}
 
@@ -216,9 +260,9 @@ In this example, the description is highlighted with a blue border.
   "type": "view.alert",
   "theme": "info",
   "content": {
-     "type": "view.text",
-     "content": "Look at the product photo and write a brief description about it."
-    }
+    "type": "view.text",
+    "content": "Look at the product photo and write a brief description about it."
+  }
 }
 ```
 
@@ -234,21 +278,12 @@ For tasks where images or columns are not required, use a simplified example wit
 
 ```json
 {
-  "plugins": [
-    {
-      "type": "plugin.toloka",
-      "layout": {
-        "kind": "scroll",
-        "taskWidth": 600
-      }
-    }
-  ],
   "view": {
-    "type": "view.list",
-    "items": [
-      {
-        "type": "view.list",
-        "items": [
+   "type": "view.list",
+   "items": [
+     {
+       "type": "view.list",
+       "items": [
           {
             "type": "view.text",
             "label": "Text for translation",
@@ -277,6 +312,15 @@ For tasks where images or columns are not required, use a simplified example wit
       }
     ]
   }
+  "plugins": [
+    {
+      "type": "plugin.toloka",
+      "layout": {
+        "kind": "scroll",
+        "taskWidth": 600
+      }
+    }
+  ]
 }
 ```
 
@@ -304,22 +348,22 @@ Parameters can be displayed using: [field.radio-group](../reference/field.radio-
     "condition": {
       "type": "condition.equals",
       "data": {
-          "type": "data.output",
-          "path": "verdict"
-        },
+        "type": "data.output",
+        "path": "verdict"
+      },
       "to": "bad"
     },
     "then": {
      "type": "field.textarea",
      "data": {
-         "type": "data.output",
-         "path": "error_description"
-        },
-        "label": "Describe the error",
-        validation": {
-           "type": "condition.required",
-           "hint": "enter something in the box"
-        }
+        "type": "data.output",
+        "path": "error_description"
+      },
+      "label": "Describe the error",
+      "validation": {
+        "type": "condition.required",
+        "hint": "enter something in the box"
+      }
     }
   }
 
@@ -341,22 +385,22 @@ Parameters can be displayed using: [field.radio-group](../reference/field.radio-
     "condition": {
       "type": "condition.equals",
       "data": {
-          "type": "data.output",
-          "path": "verdict"
-        },
+        "type": "data.output",
+        "path": "verdict"
+      },
       "to": "bad"
     },
     "then": {
      "type": "field.textarea",
      "data": {
-         "type": "data.output",
-         "path": "error_description"
-        },
-        "label": "Describe the error",
-        validation": {
-           "type": "condition.required",
-           "hint": "enter something in the box"
-        }
+        "type": "data.output",
+        "path": "error_description"
+      },
+      "label": "Describe the error",
+      "validation": {
+        "type": "condition.required",
+        "hint": "enter something in the box"
+      }
     }
   }
 
@@ -378,22 +422,22 @@ Parameters can be displayed using: [field.radio-group](../reference/field.radio-
     "condition": {
       "type": "condition.equals",
       "data": {
-          "type": "data.output",
-          "path": "verdict"
-        },
+        "type": "data.output",
+        "path": "verdict"
+      },
       "to": "bad"
     },
     "then": {
      "type": "field.textarea",
      "data": {
-         "type": "data.output",
-         "path": "error_description"
-        },
-        "label": "Describe the error",
-        validation": {
-           "type": "condition.required",
-           "hint": "enter something in the box"
-        }
+       "type": "data.output",
+        "path": "error_description"
+      },
+      "label": "Describe the error",
+      "validation": {
+        "type": "condition.required",
+        "hint": "enter something in the box"
+      }
     }
   }
 
@@ -457,13 +501,33 @@ The third column in the example contains two input fields for Tolokers to writ
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/EtNLEAun3ttFNK)
 
+## Check the link click (#link-click)
+
+Add a button that opens the search results and generate a search query link using the [helper.search-query](../reference/helper.search-query.md) component. To make sure that a Toloker clicked on the link and checked its contents, configure validation, as in the example.
+
+{% cut "Show code" %}
+
+ ```json
+ {
+   "type": "helper.search-query",
+   "engine": "yandex/images",
+   "query": {
+      "type": "data.input",
+      "path": "link"
+    }
+ }
+ ```
+ 
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3QX2c8hr47N8D5)
+
 ## Allow a Toloker adding input fields {#dynamic-field-add}
 
 This is a complex example that consists of four main parts.
 
 {% cut "Components used in the example" %}
 
-- [view.image](../reference/view.image.md): Image.
 - [field.radio-group](../reference/field.radio-group.md): Response selection options.
 - [field.text](../reference/field.text.md): The text input field.
 - [field.list](../reference/field.list.md): A button that adds new text input fields.
@@ -490,6 +554,6 @@ In addition, the example checks that each line has at least three characters, 
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/T-rVMAPk3vvtDM)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/RMHTYfPs47MxYV)
 
 {% include [contact-support](../_includes/contact-support.md) %}
