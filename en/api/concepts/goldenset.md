@@ -75,7 +75,7 @@ You can ban a Toloker from accessing the tasks in the project for a given number
 }
 ```
 
-To set a different ban period, change the applicable [parameter](#configs-rules-action-parameters-duration) for the `action` key:
+To set a different ban period, change the [duration-unit](#duration-unit) and [duration](#duration) parameters for the `action` key:
 
 {% list tabs %}
 
@@ -160,6 +160,9 @@ Criteria for the quality control rule:
 The maximum number of the Toloker's recent responses in the project to use for calculating the percentage of correct responses.
 
 If this field is omitted, the calculation is based on all the Toloker's responses in the pool. ||
+|| **configs[].rules** | **object \| required**
+
+{% include [configs-rules](../_includes/configs-rules.md) %} ||
 || **configs[].rules.conditions** | **object \| required**
 
 Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
@@ -204,10 +207,10 @@ Type of action:
 - `REJECT_ALL_ASSIGNMENTS` — Reject all Toloker responses. For example, after a certain number of Toloker responses, it became clear that the Toloker completed tasks poorly.
 - `APPROVE_ALL_ASSIGNMENTS` — Accept all Toloker responses. For example, if the Toloker completes most tasks well and you are satisfied with this result.
 - `SET_SKILL` — Assign the specified constant value to the skill. ||
-|| **configs[].rules.action.parameters** | **object \| required**
+|| **configs[].rules.action. parameters** | **object \| required**
 
 Action parameters. ||
-|| **configs[].rules.action.parameters.scope** | **string \| required**
+|| **configs[].rules.action. parameters.scope** | **string \| required**
 
 Scope:
 
@@ -216,15 +219,21 @@ Scope:
 - `ALL_PROJECTS` — All the requester's projects. ||
 || **configs[].collector_config.parameters** | **object \| required if**
 
-Required if `configs.collector_config.type=``GOLDEN_SET`, `MAJORITY_VOTE`, `CAPTCHA`, `ASSIGNMENT_SUBMIT_TIME`.
+Required if `configs[].collector_config.type` equal to one of the values:
+
+- `GOLDEN_SET`
+
+- `MAJORITY_VOTE`
+
+- `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
-|| **configs[].rules.action.parameters.skill_id** | **string \| required if**
+|| **configs[].rules.action. parameters.skill_id** | **string \| required if**
 
 Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.
 
 ID of the skill to update as tasks are completed. ||
-|| **configs[].rules.action.parameters.from_field** | **string \| required if**
+|| **configs[].rules.action. parameters.from_field** | **string \| required if**
 
 Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.
 
@@ -232,34 +241,34 @@ The value to assign to the skill:
 
 - `correct_answers_rate` — The percentage of correct responses.
 - `wrong_answers_rate` — The percentage of incorrect responses. ||
-|| **configs[].rules.action.parameters.skill_value** | **integer \| required if**
+|| **configs[].rules.action. parameters.skill_value** | **integer \| required if**
 
 Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.
 
 A fixed value to assign to the skill (a number from 0 to 100). ||
-|| **configs[].rules.action.parameters.delta** | **integer \| required if**
+|| **configs[].rules.action. parameters.delta** | **integer \| required if**
 
 Required if `type=CHANGE_OVERLAP`.
 
 The value determines the amount to change the overlap by. ||
-|| **configs[].rules.action.parameters.public_comment** | **string \| required if**
+|| **configs[].rules.action. parameters.public_comment** | **string \| required if**
 
 Required if `type=REJECT_ALL_ASSIGNMENTS`.
 
 Comments (the reason for rejecting responses). Available to the requester and the Toloker. ||
-|| **configs[].rules.action.parameters.open_pool** | **boolean**
+|| **configs[].rules.action. parameters.open_pool** | **boolean**
 
 Determines whether to re-open a closed pool:
 
 - `true` — Open the pool after making changes if it is closed.
 - `false` — Don't open the pool after making changes, if it is closed. ||
-|| **configs[].rules.action.parameters.duration_unit** {#configs-rules-action-parameters-duration} | **string**
+|| **configs[].rules.action. parameters.duration_unit** {#configs-rules-action-parameters-duration} | **string**
 
-Changes the applicable [parameter](*configs-rules-action-parameters-duration) ||
-|| **configs[].rules.action.parameters.duration**  | **integer**
+{% include [duration-unit](../_includes/duration-unit.md) %} ||
+|| **configs[].rules.action. parameters.duration**  | **integer**
 
-Ban duration. ||
-|| **configs[].rules.action.parameters.private_comment** | **string**
+{% include [duration](../_includes/duration.md) %} ||
+|| **configs[].rules.action. parameters.private_comment** | **string**
 
 Comments (the reason for blocking access). Visible only to the requester. ||
 |#
@@ -270,4 +279,5 @@ Comments (the reason for blocking access). Visible only to the requester. ||
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}
 
-[*configs-rules-action-parameters-duration]: {% include [configs-rules-action-parameters-duration](../_includes/configs-rules-action-parameters-duration.md) %}
+[*duration-unit]: {% include [duration-unit](../_includes/duration-unit.md) %}
+[*duration]: {% include [duration](../_includes/duration.md) %}
