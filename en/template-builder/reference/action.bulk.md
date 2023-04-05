@@ -10,7 +10,7 @@ Actions are invoked in the order in which they are listed. This means that if tw
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "action.bulk" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "action.bulk" | Set component type. ||
 || `payload` | _array_ | An array of actions that you want to call. ||
 || `payload[]` | _action_ | Action. ||
 |#

@@ -1,5 +1,5 @@
 # SegmentationRASA
-`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L15)
+`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L15)
 
 ```python
 SegmentationRASA(

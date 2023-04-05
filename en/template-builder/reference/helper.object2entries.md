@@ -32,7 +32,7 @@ It will be converted to an array whose objects will pair data from the source ob
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.object2entries" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.object2entries" | Set component type. ||
 || `data` | _any_ | The object to convert. ||
 |#
 

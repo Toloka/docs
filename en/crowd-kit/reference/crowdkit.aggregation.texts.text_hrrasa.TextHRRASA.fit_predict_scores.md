@@ -1,5 +1,5 @@
 # fit_predict_scores
-`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA.fit_predict_scores` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/texts/text_hrrasa.py#L58)
+`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA.fit_predict_scores` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/texts/text_hrrasa.py#L58)
 
 ```python
 fit_predict_scores(
@@ -15,8 +15,8 @@ Fit the model and return scores.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**DataFrame**|<p>Workers&#x27; outputs. A pandas.DataFrame containing `task`, `worker` and `output` columns.</p>
-`true_objects`|**Optional\[Series\]**|<p>Tasks&#x27; ground truth labels. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s ground truth label.</p>
+`data`|**DataFrame**|<p>Workers&#x27; responses. A pandas.DataFrame containing `task`, `worker` and `text` columns.</p>
+`true_objects`|**Optional\[Series\]**|<p>Tasks&#x27; ground truth texts. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s ground truth text.</p>
 
 * **Returns:**
 

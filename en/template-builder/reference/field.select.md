@@ -10,7 +10,7 @@ To allow selecting multiple options, use the [field.checkbox-group](field.checkb
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.select" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.select" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||

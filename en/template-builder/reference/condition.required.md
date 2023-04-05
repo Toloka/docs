@@ -10,9 +10,9 @@ If used inside the `validation` property, you can omit the `data` property and t
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "condition.required" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "condition.required" | Set component type. ||
 || `data` | _any_ | Data to be filled in. If the property is not specified, the data of the parent component (the one that contains `condition.required`) is used. ||
-|| `hint` | _string_ | Validation error message that a Toloker will see ||
+|| `hint` | _string_ | Validation error message that a Toloker will see. ||
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}

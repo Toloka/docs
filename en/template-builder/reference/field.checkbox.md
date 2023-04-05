@@ -10,7 +10,7 @@ If you need to add a group of checkboxes, use [field.checkbox-group](field.check
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.checkbox" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.checkbox" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | Property that disables the component. If `true`, the component will be unavailable. ||

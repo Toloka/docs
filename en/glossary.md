@@ -10,7 +10,7 @@ A category of [components](#component) used in Template Builder that perform act
 
 Tolokers with access to the [pool](#pool) who took tasks during the last hour.
 
-#### Aggregated answer {#aggregated-answer}
+#### Aggregated results {#aggregated-answer}
 
 See [Item](#item).
 
@@ -20,13 +20,13 @@ A [pool](#pool) that was moved to the archive. Archived pools can't be started o
 
 #### Assignment {#assignment}
 
-A task suite that a [Toloker](#toloker) decides to complete. An assignment can have one the following statuses: **accepted**, **active**, **expired**, **rejected**, **skipped**, or **submitted**. Refer to the [Toloka API documentation](api/concepts/result.md#query-params) for more information on each status.
+A task suite that a [Toloker](#toloker) decides to pick up. An assignment can have one the following statuses: **accepted**, **active**, **expired**, **rejected**, **skipped**, or **submitted**. Refer to the [Toloka API documentation](api/concepts/result.md#query-params) for more information on each status.
 
 ### B
 
 #### Banning Tolokers {#banning-tolokers}
 
-Blocking a Toloker's access to one or more [projects](#project). This lets you control manually which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](#skill) value lower than `N` and block their access to tasks. You can also unblock access.
+Blocking a Toloker's access to one or more [projects](#project). This lets you control which Tolokers will complete tasks. For example, you can choose all Tolokers with a [skill](#skill) value lower than `N` and block their access to tasks. You can also unblock access.
 
 #### Batch (in bespoke solutions) {#batch}
 
@@ -108,7 +108,7 @@ A category of [components](#component) used in Template Builder that arrange the
 
 #### Exam {#exam}
 
-A [pool](#pool) with [control tasks](#control-task) for choosing Tolokers. You can assign [skills](#skill) to Tolokers depending on whether their responses are correct and identify the best Tolokers.
+A [pool](#pool) with [control tasks](#control-task) for choosing Tolokers. You can assign [skills](#skill) to Tolokers depending on whether their responses are correct and identify the best Tolokers. [Learn more](guide/concepts/how-to-use-exams.md) about exams.
 
 ### F
 
@@ -202,7 +202,7 @@ The data available only from within the task. This data is not saved to the resu
 
 See [Dynamic overlap](#dynamic-overlap).
 
-#### Item (final answer, aggregated answer, final label) {#item}
+#### Item (final answer, aggregated results, final label) {#item}
 
 Corresponds to the final labeled data unit or a unique data unit to be labelled in Toloka. It is calculated as the aggregated result of all responses received for a task.
 
@@ -380,10 +380,6 @@ The requests to the Toloka API are made using the [HTTPS protocol](https://en.wi
 #### Toloker {#toloker}
 
 Any person from around the world who completes tasks in Toloka and gets paid for that. Collectively, they are usually referred to as "the crowd".
-
-#### Toloker rating {#toloker-rating}
-
-An assessment which reflects the quality of the Toloker's [responses](#response). It takes into account responses to [control tasks](#control-task), bans, and periods without work. The rating is calculated as the weighted average value for the last few weeks. This is why the rating can have sharp drops or spikes.
 
 #### Training {#training}
 

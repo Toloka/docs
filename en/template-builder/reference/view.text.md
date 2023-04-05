@@ -8,7 +8,7 @@ If you need formatted text, use [view.markdown](view.markdown.md).
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.text" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.text" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `content` | _string_ | The text displayed in the block. To insert a new line, use `\n`. ||
 || `hint` | _string_ | Hint text. ||

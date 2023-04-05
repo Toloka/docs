@@ -10,7 +10,7 @@ The video resolution does not affect the size of the block — the video will fi
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.video" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.video" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||
 || `hint` | _string_ | Hint text. ||

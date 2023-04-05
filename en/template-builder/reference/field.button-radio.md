@@ -12,7 +12,7 @@ The button size depends on the length of the text.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.button-radio" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.button-radio" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | This property prevents clicking the button. If the value is `true`, the button is not active (a Toloker will not be able to click it). ||

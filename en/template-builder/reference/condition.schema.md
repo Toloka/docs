@@ -17,8 +17,8 @@ This component is useful in the following cases:
 - [view.labeled-list](view.labeled-list.md): Displays components as a list with labels placed on the left.
 - [view.text](view.text.md): Displays a text.
 - [view.link](view.link.md): Displays a link.
-- [field.button-radio-group](field.button-radio-group.md): Adds buttons for selecting an answer option. 
-- [field.text](field.text.md): Adds a field for entering a short text. 
+- [field.button-radio-group](field.button-radio-group.md): Adds buttons for selecting an answer option.
+- [field.text](field.text.md): Adds a field for entering a short text.
 - [view.iframe](view.iframe.md): Displays the web page at the URL in an iframe window.
 
 {% endcut %}

@@ -1,5 +1,5 @@
 # forward
-`crowdkit.learning.crowd_layer.CrowdLayer.forward` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/crowd_layer.py#L154)
+`crowdkit.learning.crowd_layer.CrowdLayer.forward` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/learning/crowd_layer.py#L154)
 
 ```python
 forward(

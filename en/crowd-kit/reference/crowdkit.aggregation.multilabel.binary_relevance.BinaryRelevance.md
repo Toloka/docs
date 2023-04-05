@@ -1,5 +1,5 @@
 # BinaryRelevance
-`crowdkit.aggregation.multilabel.binary_relevance.BinaryRelevance` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/multilabel/binary_relevance.py#L14)
+`crowdkit.aggregation.multilabel.binary_relevance.BinaryRelevance` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/multilabel/binary_relevance.py#L14)
 
 ```python
 BinaryRelevance(self, base_aggregator: BaseClassificationAggregator = ...)

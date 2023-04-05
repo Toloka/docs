@@ -10,7 +10,7 @@ You can set hotkeys to select area types and selection modes and to confirm or c
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "plugin.field.image-annotation.hotkeys" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "plugin.field.image-annotation.hotkeys" | Set component type. ||
 || `cancel` | _string_ | Keyboard shortcut for canceling area creation. ||
 || `confirm` | _string_ | Keyboard shortcut for confirming area creation. ||
 || `labels` | _array_ | Keyboard shortcuts for choosing area types. They're assigned to buttons in the order they are shown if you enabled the option to choose multiple area types. ||

@@ -8,7 +8,7 @@ If you don't need labels, use [view.list](view.list.md).
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.labeled-list" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.labeled-list" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
 || `items`<span style="color: red">\*</span> | _array_ | An array of list items. ||

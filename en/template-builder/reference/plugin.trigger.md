@@ -12,7 +12,7 @@ You can also set conditions in the `conditions` property that must be met in ord
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "plugin.trigger" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "plugin.trigger" | Set component type. ||
 || `action` | _action_ | The action to perform when the trigger fires. ||
 || `condition` | _condition_ | The condition that must be met in order to fire the trigger. ||
 || `fireImmediately` | _boolean_ | Flag indicating whether the trigger should be fired immediately after the task is loaded. ||

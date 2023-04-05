@@ -1,8 +1,8 @@
-# Get aggregate responses
+# Get aggregated results
 
 {% include [announce](../_includes/announce.md) %}
 
-Gets aggregated responses.
+Gets results of aggregation of responses from Tolokers.
 
 {% note alert "Restriction" %}
 
@@ -60,12 +60,12 @@ To change the sorting direction to descending, add a hyphen before the parameter
 
 ## Query example {#request-example}
 
-You can set up the display of the list of responses in parts (for example, 10 responses at a time):
+You can set up the display of the list of results in parts (for example, 10 results at a time):
 
-1. Show the first 10 responses, starting with the response with the lowest task ID.
-1. Show the remaining responses (10 at a time) in ascending order.
+1. Show the first 10 results, starting with the result with the lowest task ID.
+1. Show the remaining results (10 at a time) in ascending order.
 
-**Show the first 10 responses**
+**Show the first 10 results**
 
 {% list tabs %}
 
@@ -92,14 +92,14 @@ You can set up the display of the list of responses in parts (for example, 10 re
 - Production version
 
   ```bash
-  GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+  GET https://toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous result>
   Authorization: OAuth <OAuth token>
   ```
 
 - Sandbox
 
   ```bash
-  GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous response>
+  GET https://sandbox.toloka.dev/api/v1/aggregated-solutions/<operation_id>?sort=task_id&limit=10&task_id_gt=<ID of the last task from the previous result>
   Authorization: OAuth <OAuth token>
   ```
 

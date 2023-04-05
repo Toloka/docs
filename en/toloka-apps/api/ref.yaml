@@ -17,7 +17,7 @@ tags:
   - name: app
     description: An example of a standard task that you want to solve using Toloka. Unlike project templates, you don't have to set up everything yourself.
   - name: item
-    description: A task item with data. It's uploaded into the batch with other items to be collectively sent for labeling. In a file with tasks, each line is a task item.
+    description: A unique uploaded data row. It's uploaded into the batch with other rows to be collectively sent for labeling. In a file with data, each row is an item.
   - name: batch
     description: A batch of data that you send for labeling at a time. The batch consists of task items.
 

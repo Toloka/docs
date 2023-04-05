@@ -23,7 +23,7 @@ Differences from [layout.side-by-side](layout.side-by-side.md):
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "layout.compare" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "layout.compare" | Set component type. ||
 || `commonControls` | _view_ | The common fields of the component. Add information blocks that are common to all the elements being compared. ||
 || `items`<span style="color: red">\*</span> | _array_ | An array with properties of the elements being compared. Set the appearance of the component blocks. ||
 || `items[]` | _object_ | The compared element. ||
