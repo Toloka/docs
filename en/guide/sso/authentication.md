@@ -76,10 +76,10 @@ If your account has SSO authentication enabled, you can log in using your busine
 
 Once you pass the company authentication, you will be redirected back to Toloka.
 
-Now you can create projects, pools, and upload tasks. You can also [generate API tokens](./api-token.md) for your applications.
+Now you can create projects, pools, and upload tasks. You can also [generate API tokens](../concepts/api-token.md) for your applications.
 
 ## What's next {#what-next}
 
-- [Generate API tokens](./api-token.md)
+- [Generate API tokens](../concepts/api-token.md)
 
 {% include [image-styles](../../../_includes/image-styles.md) %}
