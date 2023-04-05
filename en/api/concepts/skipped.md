@@ -42,7 +42,7 @@ You can block a Toloker from accessing the project for a given number of days, h
 }
 ```
 
-To set a different ban period, change the [duration-unit](#duration-unit) and [duration](#duration) parameters for the `action` key:
+To set a different ban period, change the [duration-unit](*duration-unit) and [duration](*duration) parameters for the `action` key:
 
 {% list tabs %}
 
@@ -87,14 +87,14 @@ To set a different ban period, change the [duration-unit](#duration-unit) and [d
   ```json
   {
     ...
-        "action": {
+      "action": {
         "type": "RESTRICTION_V2",
         "parameters": {
-            "scope": "PROJECT",
-            "duration_unit": "PERMANENT",
-            "private_comment": "Skipped more than 10 pages in a row"
+          "scope": "PROJECT",
+          "duration_unit": "PERMANENT",
+          "private_comment": "Skipped more than 10 pages in a row"
         }
-        }
+      }
     ...
   }
   ```
@@ -122,6 +122,17 @@ Criteria for the quality control rule:
 - `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
 - `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
+|| **configs[].collector_config. parameters** | **object \| required if**
+
+Required if `configs[].collector_config.type` equal to one of the values:
+
+- `GOLDEN_SET`
+
+- `MAJORITY_VOTE`
+
+- `ASSIGNMENT_SUBMIT_TIME`
+
+Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
 || **configs[].rules** | **object \| required**
 
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
@@ -172,17 +183,6 @@ Scope:
 - `POOL` — pool. Affects the Toloker's rating.
 - `PROJECT` — The project. Affects the Toloker's rating.
 - `ALL_PROJECTS` — All the requester's projects. ||
-|| **configs[].collector_config. parameters** | **object \| required if**
-
-Required if `configs[].collector_config.type` equal to one of the values:
-
-- `GOLDEN_SET`
-
-- `MAJORITY_VOTE`
-
-- `ASSIGNMENT_SUBMIT_TIME`
-
-Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
 || **configs[].rules.action. parameters.skill_id** | **string \| required if**
 
 Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.

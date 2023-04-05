@@ -15,9 +15,9 @@ You can ban a Toloker from your project for a given number of days, hours, minut
 ```json
 {
   "configs": [
-  {
-    "collector_config": {
-      "type": "ACCEPTANCE_RATE",
+    {
+      "collector_config": {
+        "type": "ACCEPTANCE_RATE",
         "parameters": {
           "history_size": 10
         }
@@ -52,7 +52,7 @@ You can ban a Toloker from your project for a given number of days, hours, minut
 }
 ```
 
-To set a different ban period, change the [duration-unit](#duration-unit) and [duration](#duration) parameters for the `action` key:
+To set a different ban period, change the [duration-unit](*duration-unit) and [duration](*duration) parameters for the `action` key:
 
 {% list tabs %}
 
@@ -132,6 +132,17 @@ Criteria for the quality control rule:
 - `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
 - `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
+|| **configs[].collector_config. parameters** | **object \| required if**
+
+Required if `configs[].collector_config.type` equal to one of the values:
+
+- `GOLDEN_SET`
+
+- `MAJORITY_VOTE`
+
+- `ASSIGNMENT_SUBMIT_TIME`
+
+Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
 || **configs[].rules** | **object \| required**
 
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
@@ -212,17 +223,6 @@ The value determines the amount to change the overlap by. ||
 Required if `type=REJECT_ALL_ASSIGNMENTS`.
 
 Comments (the reason for rejecting responses). Available to the requester and the Toloker. ||
-|| **configs[].collector_config. parameters** | **object \| required if**
-
-Required if `configs[].collector_config.type` equal to one of the values:
-
-- `GOLDEN_SET`
-
-- `MAJORITY_VOTE`
-
-- `ASSIGNMENT_SUBMIT_TIME`
-
-Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
 || **configs[].rules.action. parameters.duration_unit** | **string**
 
 {% include [duration-unit](../_includes/duration-unit.md) %} ||
