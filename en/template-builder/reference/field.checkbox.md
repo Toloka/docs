@@ -13,17 +13,6 @@ If you need to add a group of checkboxes, use [field.checkbox-group](field.check
 
 {% endcut %}
 
-By default, if the component returns false, this result will not be added to the output. To add false to the results, specify `"preserveFalse": true`.
-
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/bnPtJeaM47HzVs)
-
-{% cut "Components used in the example" %}
-
-- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
-- [condition.required](condition.required.md): Checks if at least one option is selected.
-
-{% endcut %}
-
 ## Component properties {#properties}
 
 #|
@@ -33,7 +22,7 @@ By default, if the component returns false, this result will not be added to the
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | Property that disables the component. If `true`, the component will be unavailable. ||
 || `hint` | _string_ | Hint text. ||
-|| `preserveFalse` | _boolean_ | Property that specifies whether to return `false` values in the results. ||
+|| `preserveFalse` | _boolean_ | Property that specifies whether to return `false` values in the results. By default, if the component returns false, this result will not be added to the output. To add false to the results, specify `"preserveFalse": true`. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
 
