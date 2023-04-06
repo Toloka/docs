@@ -475,6 +475,7 @@ items:
     href: guide/troubleshooting/troubleshooting.md
   - name: Error console
     href: guide/troubleshooting/error-console.md
+    hidden: true
   - name: Support
     href: guide/troubleshooting/support.md
   - name: Success stories
