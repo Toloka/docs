@@ -1,6 +1,6 @@
 # field.checkbox
 
-Adds a single checkbox. 
+Adds a single checkbox.
 
 If you need to add a group of checkboxes, use [field.checkbox-group](field.checkbox-group.md).
 
