@@ -11,7 +11,7 @@ Adds a group of checkboxes for selecting independent answer options. This is use
 
 {% endcut %}
 
-By default, if the component returns false, this result will not be added to the output. To add false to the results, specify `"preserveFalse": true`.
+By default, if the component returns `false`, this result will not be added to the output. To add `false` to the results, specify `"preserveFalse": true`.
 
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/Mo_S234j47BPYs)
 
