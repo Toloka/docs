@@ -50,7 +50,7 @@ To learn how to configure sorting, see [Sorting the list of objects](sorting.md)
 || **overlap** | **integer**
 
 Tasks with an overlap equal to the specified value. ||
-|| **Standard query parameters** | [limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte), [overlap_gt](./standard-query-parameters.md#overlap_gt), [overlap_gte](./standard-query-parameters.md#overlap_gte) [overlap_lt](./standard-query-parameters.md#overlap_lt), [overlap_lte](./standard-query-parameters.md#overlap_lte). ||
+|| **Standard query parameters** | [limit](standard-query-parameters.md#limit), [id_gt](standard-query-parameters.md#id_gt), [id_gte](standard-query-parameters.md#id_gte), [id_lt](standard-query-parameters.md#id_lt), [id_lte](standard-query-parameters.md#id_lte), [created_gt](standard-query-parameters.md#created_gt), [created_gte](standard-query-parameters.md#created_gte), [created_lt](standard-query-parameters.md#created_lt), [created_lte](standard-query-parameters.md#created_lte), [overlap_gt](standard-query-parameters.md#overlap_gt), [overlap_gte](standard-query-parameters.md#overlap_gte) [overlap_lt](standard-query-parameters.md#overlap_lt), [overlap_lte](standard-query-parameters.md#overlap_lte). ||
 |#
 
 ## Query example {#request-example}
