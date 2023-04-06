@@ -161,7 +161,7 @@ Criteria for the quality control rule:
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
 || **configs[].collector_config. parameters** | **object \| required if**
 
-Required if `configs[].collector_config.type` equal to one of the values:
+Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
 
