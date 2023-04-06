@@ -6,8 +6,6 @@ If a problem occurs when loading pages or when working with site elements, infor
 
 - Yandex Browser
 
-  Yandex Browser {#yandex}
-
   1. To open the error console, use the keyboard shortcut **Ctrl + Shift + J** (or **⌥ + ⌘ + J** on macOS).
 
       {% cut "Other methods" %}
