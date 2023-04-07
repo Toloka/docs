@@ -68,8 +68,8 @@ Take a look at the example: the labeling interface includes an image, text data,
           }
         ]
       }
-		]
-	}	
+	]
+  }	
   ```
   {% endcut %}
   
@@ -194,13 +194,13 @@ To set the desired text length, use the [condition.schema](../reference/conditio
       "minLength": 50,
       "maxLength": 200
     },
-    hint": "There is a limit of characters: not less than 50 and not more than 200."
+    "hint": "Please make sure your description contains 50 to 200 characters"
  }
  ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/kchi7uI647LTGN)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vq9w3lrp47NtE7.)
 
 ## Use short single-line text field {#short-text-field}
 
@@ -279,39 +279,29 @@ For tasks where images or columns are not required, use a simplified example wit
 ```json
 {
   "view": {
-   "type": "view.list",
-   "items": [
-     {
-       "type": "view.list",
-       "items": [
-          {
-            "type": "view.text",
-            "label": "Text for translation",
-            "content": {
-              "type": "data.input",
-              "path": "text"
-            }
-          }
-        ]
+    "type": "view.list",
+    "items": [
+      {
+        "type": "view.text",
+        "label": "Text for translation",
+        "content": {
+          "type": "data.input",
+          "path": "text"
+        }
       },
       {
-        "type": "view.list",
-        "items": [
-          {
-            "type": "field.textarea",
-            "label": "How would you say this in Spanish?",
-            "data": {
-              "type": "data.output",
-              "path": "result"
-            },
-            "validation": {
-              "type": "condition.required"
-            }
-          }
-        ]
+        "type": "field.textarea",
+        "label": "How would you say this in Spanish?",
+        "data": {
+          "type": "data.output",
+          "path": "result"
+        },
+        "validation": {
+          "type": "condition.required"
+        }
       }
     ]
-  }
+  },
   "plugins": [
     {
       "type": "plugin.toloka",
@@ -326,7 +316,7 @@ For tasks where images or columns are not required, use a simplified example wit
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/RYB77BTQ3ttFMj)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9-sO-Ei747iRsq)
 
 ## Add a condition {#dependencies}
 
@@ -501,7 +491,7 @@ The third column in the example contains two input fields for Tolokers to writ
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/EtNLEAun3ttFNK)
 
-## Check the link click (#link-click)
+## Check the link click {#link-click}
 
 Add a button that opens the search results and generate a search query link using the [helper.search-query](../reference/helper.search-query.md) component. To make sure that a Toloker clicked on the link and checked its contents, configure validation, as in the example.
 
@@ -510,7 +500,7 @@ Add a button that opens the search results and generate a search query link usin
  ```json
  {
    "type": "helper.search-query",
-   "engine": "yandex/images",
+   "engine": "google",
    "query": {
       "type": "data.input",
       "path": "link"
@@ -520,7 +510,7 @@ Add a button that opens the search results and generate a search query link usin
  
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3QX2c8hr47N8D5)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/0iYQZxMX47ibsS)
 
 ## Allow a Toloker adding input fields {#dynamic-field-add}
 
@@ -549,8 +539,8 @@ In addition, the example checks that each line has at least three characters, 
       "minLength": 3,
       "pattern": "^[А-Яа-яЁёa-zA-Z\\s]+$"
     }
-  }
-  ```
+ }
+ ```
 
 {% endcut %}
 
