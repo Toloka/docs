@@ -6,7 +6,7 @@ You can set overlap in the [pool settings](pool-edit.md):
 
 ![](../_images/location-job/overlap.png)
 
-### Tips and recommendations
+## Tips and recommendations
 
 | Task type                            | Recommended overlap |
 |--------------------------------------|---------------------|
@@ -16,7 +16,7 @@ You can set overlap in the [pool settings](pool-edit.md):
 
 You can change overlap after the pool is started. To do this, open the pool editing mode and set the new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
 
-### Advanced overlap types
+## Advanced overlap types
 
 - Dynamic overlap lets you change [overlap](dynamic-overlap.md) depending on:
 
