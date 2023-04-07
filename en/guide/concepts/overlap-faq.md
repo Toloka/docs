@@ -2,7 +2,7 @@
 
 Overlap is the number of Tolokers who should complete each [task](../../glossary.md#task) in the [pool](pool-edit.md).
 
-You can set overlap in the pool settings:
+You can set overlap in the [pool settings](pool-edit.md):
 
 ![](../_images/location-job/overlap.png)
 
