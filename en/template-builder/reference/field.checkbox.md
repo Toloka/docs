@@ -9,7 +9,7 @@ If you need to add a group of checkboxes, use [field.checkbox-group](field.check
 {% cut "Components used in the example" %}
 
 - [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
-- [condition.required](condition.required.md): Checks if at least one option is selected.
+- [condition.required](condition.required.md): Checks if an option is selected.
 
 {% endcut %}
 
