@@ -1,6 +1,6 @@
 # Manual review
 
-Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed tasks.
+Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed [tasks](../../glossary.md#task).
 
 You can find the [Review methods](accept.md#acception) in the **Working with results → Reviewing Tolokers' responses** section.
 
@@ -44,7 +44,7 @@ You can review responses manually or with the help of Tolokers by posting a sepa
 
 ## Rejecting responses {#declined}
 
-- If **you reject responses, assignments aren't sent automatically** to other Tolokers.
+- If you reject responses, assignments aren't sent automatically to other Tolokers.
 
 - You can't **reject (or accept)** one response on the page — **only the entire page** with all responses on it.
 
@@ -60,7 +60,7 @@ Rejecting the Toloker's responses in one task doesn't result in rejecting respon
 
 If your [pool type](pool-main.md#table_n3q_vhz_jlb) is set to **Exam** or **Retry**, then at the end of the review period, all responses that haven't been reviewed can be accepted or rejected automatically.
 
-#### Automatic rejection
+### Automatic rejection
 
 When setting or editing the pool, enable the **Reject tasks at the end of the review period** option and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
 
@@ -70,7 +70,7 @@ When setting or editing the pool, enable the **Reject tasks at the end of the re
 
 {% endcut %}
 
-#### Automatic acceptance
+### Automatic acceptance
 
 Leave the option in the **No** position, and the tasks will be automatically accepted.
 
@@ -94,15 +94,15 @@ Take the following steps before starting the pool:
 
     {% endnote %}
 
-1. Save the settings — the **Save** button is at the bottom of the pool parameters page.
+1. Click the **Save** button at the bottom of the pool parameters page.
 
 As the Tolokers start completing the tasks, you will start receiving responses.
 
 {% note warning %}
 
-- **Set the deadline so that you have enough time to review the responses.** After the deadline expires, the responses that haven't been reviewed are accepted and paid automatically, except for the cases described [above](#auto-reject_auto-accept).
+- Set the deadline so that you have enough time to review the responses. After the deadline expires, the responses that haven't been reviewed are accepted and paid automatically, except for the cases described [above](#auto-reject_auto-accept).
 
-- **Explain the acceptance criteria in the instructions for Tolokers.** This will improve the quality of the results, as well as reduce the number of appeals and questions about rejection reasons from the Tolokers.
+- Explain the acceptance criteria in the instructions for Tolokers. This will improve the quality of the results, as well as reduce the number of appeals and questions about rejection reasons from the Tolokers.
 
 {% endnote %}
 
@@ -136,7 +136,7 @@ Learn more about this in the [**Review results**](reviewing-assignments.md) rule
 
 ## What's next {#what-next}
 
-- [Add tasks to the pool](pool.md)
+- [Add tasks](pool.md) to the pool
 - Learn more about how to set up a pool:
 
     - [Setting up pricing](dynamic-pricing.md).
