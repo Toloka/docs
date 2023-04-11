@@ -4,17 +4,19 @@ You can give access to your account:
 
 {% list tabs %}
 
-- Other requesters
+- Employee
 
+  Note that employee must be registered in Toloka as requester.
+  
   ### Full access
 
   {% note alert "Restriction" %}
 
-  Requesters who are granted full access won't be able to use the Toloka API, connect to Yandex.Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox) to the main version of Toloka.
+  Employee who are granted full access won't be able to use the Toloka API, connect to Yandex.Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox) to the main version of Toloka.
 
   {% endnote %}
 
-  If you need other people in your company to post tasks, give them full access to the main account. They will be able to manage your projects and check tasks, and you will manage the finances.
+  If you need other people in your company to post tasks, give them full access to the main account. They will be able to manage your projects and check tasks, and you will manage the finances. 
 
   ### View only
 
@@ -32,7 +34,7 @@ You can view the list of granted permissions on the **Profile** page in the **Ac
 
 {% list tabs %}
 
-- Other requesters
+- Employee
 
   1. Open the [Profile]({{ profile }}) page.
 
