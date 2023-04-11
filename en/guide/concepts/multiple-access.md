@@ -16,7 +16,7 @@ You can give access to your account:
 
   {% endnote %}
 
-  If you need other people in your company to post tasks, give them full access to the main account. They will be able to manage your projects and check tasks, and you will manage the finances. 
+  If you need other people in your company to post tasks, give them full access to the main account. They will be able to manage your projects and check tasks, and you will manage the finances.
 
   ### View only
 
