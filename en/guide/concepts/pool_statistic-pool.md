@@ -107,7 +107,7 @@ If you spent more than you planned, check the price settings in the pool and the
 
 {% cut "Recommendations" %}
 
-First, check the [quality control rules](control.md), disable the rules that increase overlap, and then revise the price per task suite. You might need to reduce it. but don't make it unreasonably small.
+First, check the [quality control rules](control.md), disable the rules that increase overlap, and then revise the price per task suite. You might need to reduce it, but don't make it unreasonably small.
 
 You can also increase or decrease the number of tasks per suite and adjust the price accordingly.
 
@@ -172,7 +172,7 @@ Note that the graph only shows banned Tolokers. It doesn't include Tolokers whos
 
 {% cut "Recommendations" %}
 
-If there are too many banned users, check the quality control rules. Maybe they are too strict.
+If there are too many banned Tolokers, check the quality control rules. Maybe they are too strict.
 
 {% endcut %}
 ||
