@@ -46,7 +46,7 @@ You can review responses manually or with the help of Tolokers by posting a sepa
 
 - If you reject responses, assignments aren't sent automatically to other Tolokers.
 
-- You can't **reject (or accept)** one response on the page — **only the entire page** with all responses on it.
+- You can't reject or accept one response on the page — only the entire page with all responses on it.
 
 - If [the Toloker is banned](../../glossary.md#banning-tolokers) by [the quality control rules](../../glossary.md#quality-control-rule), their responses still need to be checked.
 
@@ -72,7 +72,7 @@ When setting or editing the pool, enable the **Reject tasks at the end of the re
 
 ### Automatic acceptance
 
-Leave the option in the **No** position, and the tasks will be automatically accepted.
+Leave the **Review task responses manually** option turned off, and the tasks will be automatically accepted.
 
 {% cut "Example" %}
 
@@ -112,11 +112,11 @@ As the Tolokers start completing the tasks, you will start receiving responses.
 
 If responses are rejected, Toloka can automatically send the task to other Tolokers. To set it:
 
-1. Add the **Recompletion of rejected assignments** quality control rule to the pool.
+1. Add the **Processing rejected and accepted assignments** quality control rule to the pool.
 
 1. Set the following values in the rule block:
 
-![](../_images/control-rules/control-tasks/add-overlap-reject.png)
+![](../_images/control-rules/reassessment-after-accepting/qcr-reassessment-after-accepting_example1.png)
 
 {% endcut %}
 
@@ -130,13 +130,13 @@ You can restrict the Tolokers' access to tasks:
 - Suspend their access to projects (set up a quality control rule).
 - Assign them a skill and use it as a filter in other projects (set up filters in pool parameters).
 
-Learn more about this in the [**Review results**](reviewing-assignments.md) rule settings.
+Learn more about this in the [Results of manual review](reviewing-assignments.md) rule settings.
 
 {% endcut %}
 
 ## What's next {#what-next}
 
-- [Add tasks](pool.md) to the pool
+- [Add tasks](pool.md) to the pool.
 - Learn more about how to set up a pool:
 
     - [Setting up pricing](dynamic-pricing.md).
