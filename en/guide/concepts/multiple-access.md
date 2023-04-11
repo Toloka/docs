@@ -6,13 +6,13 @@ You can give access to your account:
 
 - Employee
 
-  Note that employee must be registered in Toloka as requester.
+  Note that the employee must be registered in Toloka as requester.
   
   ### Full access
 
   {% note alert "Restriction" %}
 
-  Employee who are granted full access won't be able to use the Toloka API, connect to Yandex.Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox) to the main version of Toloka.
+  Employees who are granted full access won't be able to use the Toloka API, connect to Yandex Disk, top up the balance, or move tasks from the [sandbox](../../glossary.md#sandbox) to the main version of Toloka.
 
   {% endnote %}
 
@@ -66,7 +66,7 @@ Depending on the type of access, some functions are restricted.
 
 To log in to the requester account you were given access to:
 
-1. Log in [Yandex ID]({{ yandex-id }}) with the username for which access was granted.
+1. Log in to the [Yandex ID]({{ yandex-id }}) with the username for which access was granted.
 
 1. Open [**Toloka**]({{ toloka-index }}).
 
