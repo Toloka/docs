@@ -16,8 +16,6 @@ You can give access to your account:
 
   - If you need other people in your company to post tasks, give them full access to the main account. They don't need to be registered in Toloka. They can log in with [Yandex ID]({{ yandex-id }}). They will be able to manage your projects and check tasks, and you will manage the finances.
 
-  - If you already have a Toloker account, you can quickly switch from it to the requester account. In this case, set up full access to the requester account for your Toloker account.
-
   ### View only
 
   If you don't want to give full access to your account, you can limit it to view only.
