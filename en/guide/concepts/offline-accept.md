@@ -72,7 +72,7 @@ When setting or editing the pool, enable the **Reject tasks at the end of the re
 
 ### Automatic acceptance
 
-Leave the **Review task responses manually** option turned off, and the tasks will be automatically accepted.
+Leave the **Reject tasks at the end of the review period** option turned off, and the tasks will be automatically accepted.
 
 {% cut "Example" %}
 
