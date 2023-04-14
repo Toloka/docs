@@ -7,15 +7,13 @@ Groups components visually into framed blocks.
 {% cut "Components used in the example" %}
 
 - [layout.columns](layout.columns.md): Places content in columns.
-- [view.group](view.group.md): Groups components visually into framed blocks.
 - [view.list](view.list.md): Displays data in a list.
-- [field.button-radio-group](field.button-radio-group.md): Adds buttons for selecting an answer option.
+- [field.radio-group](field.radio-group.md): Selects one value out of several options.
 - [field.checkbox-group](field.checkbox-group.md): Adds a group of checkboxes for selecting independent answer options.
 - [view.alert](view.alert.md): Creates a color block to highlight important information.
 - [view.text](view.text.md): Displays a text.
 
 {% endcut %}
-
 
 ## Component properties {#properties}
 
