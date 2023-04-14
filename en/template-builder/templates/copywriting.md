@@ -200,7 +200,7 @@ To set the desired text length, use the [condition.schema](../reference/conditio
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vq9w3lrp47NtE7.)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vq9w3lrp47NtE7)
 
 ## Use short single-line text field {#short-text-field}
 
@@ -316,7 +316,7 @@ For tasks where images or columns are not required, use a simplified example wit
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9-sO-Ei747iRsq)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/uBF6lQJj48fLnK)
 
 ## Add a condition {#dependencies}
 
@@ -500,7 +500,7 @@ Add a button that opens the search results and generate a search query link usin
  ```json
  {
    "type": "helper.search-query",
-   "engine": "google",
+   "engine": "bing",
    "query": {
       "type": "data.input",
       "path": "link"
@@ -510,21 +510,90 @@ Add a button that opens the search results and generate a search query link usin
  
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/0iYQZxMX47ibsS)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Ruij6YJb48fZu3)
 
 ## Allow a Toloker adding input fields {#dynamic-field-add}
 
 This is a complex example that consists of four main parts.
 
-{% cut "Components used in the example" %}
+What's unique about this example is that a Toloker can add and remove text input fields. The condition is implemented using [field.list](../reference/field.list.md).
 
-- [field.radio-group](../reference/field.radio-group.md): Response selection options.
-- [field.text](../reference/field.text.md): The text input field.
-- [field.list](../reference/field.list.md): A button that adds new text input fields.
+ {% cut "Show code" %}
 
+ ```json
+ {
+   "type": "field.list",
+   "buttonLabel": "Add another name",
+   "data": {
+      "type": "data.output",
+     "path": "names",
+     "default": [
+       ""
+     ]
+   },
+   "render": {
+     "type": "field.text",
+     "placeholder": "Enter no more than one name here",
+     "data": {
+       "type": "data.relative"
+     },
+     "validation": {
+       "type": "condition.any",
+       "hint": "The name must be longer than three letters and include only letters and spaces",
+       "conditions": [
+         {
+           "type": "condition.not",
+           "condition": {
+             "type": "condition.equals",
+             "data": {
+               "type": "data.output",
+               "path": "result"
+             },
+             "to": "names_to_follow"
+           }
+         },
+         {
+           "type": "condition.schema",
+           "schema": {
+             "type": "string",
+             "minLength": 3,
+             "pattern": "^[А-Яа-яЁёa-zA-Z\\s]+$"
+           }
+         }
+       ]
+     }
+   },
+   "validation": {
+     "type": "condition.any",
+     "hint": "enter at least one name",
+     "conditions": [
+       {
+         "type": "condition.not",
+         "condition": {
+           "type": "condition.equals",
+           "data": {
+             "type": "data.output",
+             "path": "result"
+           },
+           "to": "names_to_follow"
+         }
+       },
+       {
+         "type": "condition.not",
+         "condition": {
+           "type": "condition.empty",
+           "data": {
+             "type": "data.output",
+             "path": "names"
+           }
+         }
+       }
+     ]
+   }
+ }
+ ```
+ 
 {% endcut %}
-
-What's unique about this example is that a Toloker can add and remove text input fields.
 
 In addition, the example checks that each line has at least three characters, including letters and spaces. The condition is implemented using [condition.schema](../reference/condition.schema.md).
 
@@ -544,6 +613,29 @@ In addition, the example checks that each line has at least three characters, 
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/RMHTYfPs47MxYV)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ojMRgKBZ48fhVf)
+
+{% cut "Components used in the example" %}
+
+- [layout.columns](../reference/layout.columns.md): Places content in separate columns.
+- [view.image](../reference/view.image.md): Displays an image.
+- [data.input](../operations/work-with-data.md): The input data. For example, links to images that will be shown to Tolokers.
+- [view.group](../reference/view.group.md): Groups components visually into framed blocks.
+- [view.list](../reference/view.list.md): Displays data in a list.
+- [field.radio-group](../reference/field.radio-group.md): Adds radio buttons for selecting an answer option.
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+- [condition.required](../reference/condition.required.md): Checks that the data is filled in.
+- [helper.if](../reference/helper.if.md): Allows to execute either one block of code or another, depending on the condition.
+- [condition.equals](../reference/condition.equals.md): Checks whether the original value is equal to the specified value.
+- [field.list](../reference/field.list.md): Allows a Toloker to add and remove new text input fields.
+- [field.text](../reference/field.text.md): Adds a field for entering a short text.
+- [condition.any](../reference/condition.any.md): Checks that at least one of the child conditions is met.
+- [condition.not](../reference/condition.not.md): Returns the inverse of the specified condition.
+- [condition.schema](../reference/condition.schema.md): Allows validating data using [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step.html).
+- [condition.empty](../reference/condition.empty.md): Checks that the data didn't get a value.
+- [plugin.trigger](../reference/plugin.trigger.md): Triggers a specific action when an event occurs. The action is set in the `action` property.
+- [plugin.hotkeys](../reference/plugin.hotkeys.md): Adds [keyboard shortcuts](../best-practices/hotkeys.md).
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
