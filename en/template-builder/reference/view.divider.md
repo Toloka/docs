@@ -14,7 +14,7 @@ You can place extra elements in the center of the delimiter, like a popup `hint`
 - [view.text](view.text.md): Displays a text.
 - [field.button-radio-group](field.button-radio-group.md): Adds a group of buttons for selecting an answer option.
 - [condition.required](condition.required.md): Checks that the data is filled in.
-- data output: The output data. This is what you get when a Toloker clicks the Submit button.
+- data.output: The output data. This is what you get when a Toloker clicks the **Submit** button.
 
 {% endcut %}
 

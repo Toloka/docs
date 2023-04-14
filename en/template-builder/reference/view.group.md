@@ -9,7 +9,7 @@ Groups components visually into framed blocks.
 - [layout.columns](layout.columns.md): Places content in columns.
 - [view.list](view.list.md): Displays data in a list.
 - [field.radio-group](field.radio-group.md): Adds radio buttons for selecting an answer option.
-- output.data: The output data. This is what you get when a Toloker clicks the Submit button.
+- data.output: The output data. This is what you get when a Toloker clicks the **Submit** button.
 - [field.checkbox-group](field.checkbox-group.md): Adds a group of checkboxes for selecting independent answer options.
 - [view.alert](view.alert.md): Creates a color block to highlight important information.
 - [view.text](view.text.md): Displays a text.
