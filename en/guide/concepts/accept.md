@@ -2,7 +2,7 @@
 
 You started a pool with [manual review](offline-accept.md), and the Tolokers completed all your tasks. What next?
 
-- Review the Tolokers' responses before the end of the **Review period** that you specified. At the end of the period, unchecked responses will be accepted automatically.
+- Review the Tolokers' responses before the end of the **Review period in days** that you specified. At the end of the period, unchecked responses will be accepted automatically.
 
 - If a Toloker didn't complete the task well, reject their response.
 

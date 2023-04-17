@@ -4,9 +4,9 @@ This is a special type of [skills](../../glossary.md#skill) in Toloka that show 
 
 ## Benefits {#benefits}
 
-- Use global skills if you want to quickly launch a [project](../../glossary.md#project) and recruit Tolokers who are good at certain types of tasks.
+- Use global skills if you want to quickly launch a [project](../../glossary.md#project) and recruit Tolokers who are good at certain types of [tasks](../../glossary.md#task).
 
-- Our experiments show that global skills combined with traditional quality control methods increase the correctness and consistency of labeling.
+- Our experiments show that global skills combined with traditional [quality control](../../glossary.md#quality-control) methods increase the correctness and consistency of labeling.
 
 ## Features {#features}
 
@@ -20,11 +20,11 @@ This is a special type of [skills](../../glossary.md#skill) in Toloka that show 
 
 ## Usage {#usage}
 
-To use this feature, select **Add a filter → Skills → Choose a global skill** and specify the restriction for the selected skill in the added filter.
+To use this feature, select **+ Add filter → Skills → Choose global skill** and specify the restriction for the selected skill in the added filter.
 
-For example, the restriction `skill > 80` means “Select Tolokers who completed similar projects better on average than 80% of other Tolokers”.
+For example, the restriction `Global skills: Video SbS (monthly) > 80` means “Select Tolokers who complete the video comparison tasks better on average than 80% of other Tolokers”.
 
-![](../_images/cross-project-skills/cross-project-skills.png)
+![](../_images/cross-project-skills/cross-project-skills.png =700x)
 
 ## See also {#see-also}
 
