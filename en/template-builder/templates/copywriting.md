@@ -4,7 +4,7 @@ For projects of this type, you can use the **Generating product descriptions** p
 
 This preset helps to create a description of products based on the image and its name.
 
-Take a look at the example: the labeling interface includes an image, text data, button and a text input area. If the Toloker clicks on the button, a search engine opens with a request about the product. Note that validation and task layout are are already configured in this example.
+Take a look at the example: the labeling interface includes an image, text data, button and a text input area. If the Toloker clicks on the button, a search engine opens with a request about the product. Note that validation and task layout are already configured in this example.
 
 [![image](../_images/buttons/view-example.svg)](https://ya.cc/t/L6DkKbbO47KQ38)
 
@@ -512,7 +512,7 @@ Add a button that opens the search results and generate a search query link usin
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/Ruij6YJb48fZu3)
 
-## Allow a Toloker adding input fields {#dynamic-field-add}
+## Allow a Toloker to add input fields {#dynamic-field-add}
 
 This is a complex example that consists of four main parts.
 
