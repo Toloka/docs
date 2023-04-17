@@ -2,6 +2,14 @@
 
 Wraps the content of a component in a frame that is similar to a mobile phone. You can place other components inside the frame.
 
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7awTef7848KrmX)
+
+{% cut "Component used in the example" %}
+
+- [view.image](view.image.md): Displays an image.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
