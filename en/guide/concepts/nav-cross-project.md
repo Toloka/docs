@@ -24,7 +24,7 @@ To use this feature, select **+ Add filter → Skills → Choose global skill** 
 
 For example, the restriction `Global skills: Video SbS (monthly) > 80` means “Select Tolokers who complete the video comparison tasks better on average than 80% of other Tolokers”.
 
-![](../_images/cross-project-skills/cross-project-skills.png)
+![](../_images/cross-project-skills/cross-project-skills.png =700x)
 
 ## See also {#see-also}
 
