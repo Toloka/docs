@@ -2,7 +2,7 @@
 
 Groups components visually into framed blocks.
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/jNlr4klD3twZBC)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/eYAQsjHW48x8ZG)
 
 {% cut "Components used in the example" %}
 
