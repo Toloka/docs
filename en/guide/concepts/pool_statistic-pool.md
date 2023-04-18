@@ -125,7 +125,7 @@ Review the price per task suite. You might be able to lower it without losing To
 ||
 ||**Spending (excluding fee)** | The graph shows the amount of money spent without the fee:
 
-- **Spending on bonuses** — The amount of money spent on extra rewards.
+- **Spending on bonuses** — The amount of money spent on extra bonuses.
 
 - **Spending on assignments** — The amount of money spent on tasks.||
 ||**Average cost per task** | The average price in USD per general task in the pool, including overlap.
@@ -138,7 +138,7 @@ If you think that the price is too high, check the price settings in the pool an
 
 {% endcut %}
 ||
-||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the pool, in US dollars. Earnings include rewards.||
+||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the pool, in US dollars. Earnings include bonuses.||
 ||**Quality on control tasks and training tasks in the pool****Quality on control tasks and training tasks** | This graph shows the percentage of correct responses in the control and training tasks.
 
 {% cut "Recommendations" %}

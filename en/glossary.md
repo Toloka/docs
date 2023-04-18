@@ -36,6 +36,10 @@ Datasets that you send for labeling at a time. Batches are used in [bespoke solu
 
 See [Control task](#control-task).
 
+#### Bonus {#bonus}
+
+Extra payment that you can give to Tolokers for completing tasks well. It improves motivation and encourages Tolokers to approach your tasks with care. You can give bonuses to one or more Tolokers (in addition to payment for [completed tasks](#completed-tasks)). The bonus amount can be from \$0.01 to \$100 per Toloker per time.
+
 ### C
 
 #### Captcha {#captcha}
@@ -310,10 +314,6 @@ Number of days for checking Toloker responses [manually](#assignment-review).
 #### Review task responses manually {#assignment-review}
 
 A [pool](#pool) setting that allows you to manually check [responses](#response) from Tolokers. You can either accept correct responses or reject poorly completed tasks and not pay for them.
-
-#### Reward {#reward}
-
-Extra payment that you can give to Tolokers for completing tasks well. It improves motivation and encourages Tolokers to approach your tasks with care. You can give rewards to one or more Tolokers (in addition to payment for [completed tasks](#completed-tasks)). The reward amount can be from \$0.01 to \$100 per Toloker per time.
 
 ### S
 

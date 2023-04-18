@@ -13,7 +13,7 @@
   {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
   {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
-  
+
   {% include [faq-delete-account](../_includes/faq/account/delete-account.md) %}
 
 - Sandbox
@@ -430,7 +430,7 @@
 
   {% include [faq-filter-by-gender](../_includes/faq/users/filter-by-gender.md) %}
 
-  **Rewards**
+  **Bonuses**
 
   {% include [faq-reward](../_includes/faq/users/reward.md) %}
 
@@ -515,7 +515,7 @@
   {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
   {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
-  
+
   {% include [faq-delete-account](../_includes/faq/account/delete-account.md) %}
 
   ### Sandbox {#sandbox}
@@ -743,7 +743,7 @@
   {% include [faq-cross-check](../_includes/faq/pool-setup/cross-check.md) %}
 
   {% include [troubleshooting-max-number](../_includes/troubleshooting/pool-setup/max-number.md) %}
-  
+
   **Archiving**
 
   {% include [faq-delete-pool](../_includes/faq/pool-n-project-archive/delete-pool.md) %}
@@ -932,7 +932,7 @@
 
   {% include [faq-filter-by-gender](../_includes/faq/users/filter-by-gender.md) %}
 
-  **Rewards**
+  **Bonuses**
 
   {% include [faq-reward](../_includes/faq/users/reward.md) %}
 

@@ -6,7 +6,7 @@ The [Users]({{ users }}) page shows all Tolokers who opened at least one of your
 
 - [Block or unblock access](ban.md). For example, if you blocked a Toloker by mistake.
 
-- [Issue a reward](bonus.md) for good performance. Loyal Tolokers will complete your tasks more willingly.
+- [Issue a bonus](bonus.md) for good performance. Loyal Tolokers will complete your tasks more willingly.
 
 {% include [select-tolokers](../_includes/select-tolokers.md) %}
 

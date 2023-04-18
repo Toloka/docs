@@ -1,6 +1,6 @@
 # Using the skill
 
-You can use skills to filter and select Tolokers when assigning tasks, issuing rewards, and sending out messages.
+You can use skills to filter and select Tolokers when assigning tasks, issuing bonuses, and sending out messages.
 
 ## Selecting Tolokers for tasks {#selection}
 
@@ -16,9 +16,9 @@ For example, you can select only those Tolokers whose skill is more than 66 or i
 
 For [global skills](nav-cross-project.md), the restrictions of the `skill >80`type are used to select “Tolokers who completed similar projects 80% better on average than other Tolokers”.
 
-## Extra rewards {#awarding}
+## Extra bonuses {#awarding}
 
-To select Tolokers by skill and give them [rewards](../../glossary.md#reward):
+To select Tolokers by skill and give them [bonuses](../../glossary.md#bonus):
 
 1. Go to the [Tolokers]({{ users }}) page.
 
@@ -30,21 +30,21 @@ To select Tolokers by skill and give them [rewards](../../glossary.md#reward):
 
     1. Specify the skill and the required skill value.
 
-1. To credit rewards to one Toloker, click the link to their ID in the **Toloker ID** field.
+1. To credit bonuses to one Toloker, click the link to their ID in the **Toloker ID** field.
 
     On the page that opens, click **Actions → Issue bonus**.
 
-    To credit rewards to a group of Tolokers click **Issue bonus**.
+    To credit bonuses to a group of Tolokers click **Issue bonus**.
 
 1. Fill in the fields in the **Issue bonus** window that appears:
 
     - **Bonus per user** in dollars.
 
-    - **Topic** and **Message** for Tolokers. Specify the projects and accomplishments the reward was granted for. To send messages in different languages, use the button for switching languages.
+    - **Topic** and **Message** for Tolokers. Specify the projects and accomplishments the bonus was granted for. To send messages in different languages, use the button for switching languages.
 
 1. Click **Grant**.
 
-    Before doing this, check the number of people who will receive the reward, and the total amount.
+    Before doing this, check the number of people who will receive the bonus, and the total amount.
 
     {% cut "Example" %}
 

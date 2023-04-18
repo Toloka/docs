@@ -20,7 +20,7 @@ new_pool = toloka.pool.Pool(
     private_name='Pool with filters',
     # The date when the pool is going to expire and will be closed
     will_expire=datetime(2030, 1, 1),
-    # The reward for the task suite specified in U.S. dollars
+    # The bonus for the task suite specified in U.S. dollars
     reward_per_assignment=0.05,
     # The maximum duration of the task suite completion available to Tolokers
     assignment_max_duration_seconds=60*5,

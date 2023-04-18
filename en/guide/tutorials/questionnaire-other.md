@@ -368,7 +368,7 @@ Review the rest of the tasks during the time period specified in the **Review pe
 
     - Do not rush to reject responses that have not passed automatic completion via codes. Some codes will be incorrect indeed, but often Tolokers add extra spaces accidentally or leave comments in a text field which is intended for a code.
 
-    - If there were technical problems (for example, a Toloker had filled an external survey form, but didn’t have time to submit a task in Toloka), you still can pay the Toloker. To do this, use the [rewarding system](../concepts/bonus.md).
+    - If there were technical problems (for example, a Toloker had filled an external survey form, but didn’t have time to submit a task in Toloka), you still can pay the Toloker. To do this, use the [bonus system](../concepts/bonus.md).
 
     {% endnote %}
 

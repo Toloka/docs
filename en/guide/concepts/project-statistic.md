@@ -62,7 +62,7 @@ You can also increase or decrease the number of tasks per suite and adjust the p
 ||
 ||**Spending (excluding fee)** | The graph shows the amount of money spent without the fee:
 
-- **Spending on bonuses** — The amount of money spent on extra rewards.
+- **Spending on bonuses** — The amount of money spent on extra bonuses.
 
 - **Spending on assignments** — The amount of money spent on tasks.||
 ||**Average task price** | The average price in USD per general task in the project, including overlap.
@@ -75,7 +75,7 @@ If you think that the price is too high, check the price settings in the pool an
 
 {% endcut %}
 ||
-||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the project, in US dollars. Earnings are calculated for all tasks in the project and include extra rewards for tasks.||
+||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the project, in US dollars. Earnings are calculated for all tasks in the project and include extra bonuses for tasks.||
 ||**Banned Tolokers** | The number of Tolokers who are blocked from accessing the project.||
 ||**Quality on control tasks and training tasks** | This graph shows the percentage of correct responses in the control and training tasks.
 

@@ -1,8 +1,8 @@
-# Get a list of rewards issued
+# Get a list of bonuses issued
 
 {% include [announce](../_includes/announce.md) %}
 
-Gets a list of rewards issued.
+Gets a list of bonuses issued.
 
 ## Request {#request}
 
@@ -41,7 +41,7 @@ Title | Overview
 Toloker ID. ||
 || **assignment_id** | **string**
 
-ID of the Toloker's response to the task a reward is issued for. ||
+ID of the Toloker's response to the task a bonus is issued for. ||
 || **private_comment** | **string**
 
 Comments that are only visible to the requester. ||
@@ -49,8 +49,8 @@ Comments that are only visible to the requester. ||
 
 Parameters to sort by:
 
-- `id` — Reward ID.
-- `created` — The date when the reward was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+- `id` — Bonus ID.
+- `created` — The date when the bonus was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
 || **Standard query parameters** | [limit](standard-query-parameters.md#limit), [id_gt](standard-query-parameters.md#id_gt), [id_gte](standard-query-parameters.md#id_gte), [id_lt](standard-query-parameters.md#id_lt), [id_lte](standard-query-parameters.md#id_lte), [created_gt](standard-query-parameters.md#created_gt), [created_gte](standard-query-parameters.md#created_gte), [created_lt](standard-query-parameters.md#created_lt), [created_lte](standard-query-parameters.md#created_lte). ||
@@ -58,12 +58,12 @@ To learn how to configure sorting, see [Sorting the list of objects](sorting.md)
 
 ## Query example {#request-example}
 
-You can set up the display of the list of rewards in parts (for example, 10 rewards at a time):
+You can set up the display of the list of bonuses in parts (for example, 10 bonuses at a time):
 
-1. Show the first 10 rewards, starting with the one with the lowest ID.
-1. Show the remaining rewards (10 at a time) in ascending order.
+1. Show the first 10 bonuses, starting with the one with the lowest ID.
+1. Show the remaining bonuses (10 at a time) in ascending order.
 
-**Show the first 10 rewards**
+**Show the first 10 bonuses**
 
 {% list tabs %}
 
@@ -113,7 +113,7 @@ You can set up the display of the list of rewards in parts (for example, 10 rewa
 || Property | Description ||
 || **items[]** | **array of objects**
 
-Contains [information about rewards](get-one-bonus.md). ||
+Contains [information about bonuses](get-one-bonus.md). ||
 || **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
 |#
 

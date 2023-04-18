@@ -159,7 +159,7 @@ In response, you will receive a message as a new thread.
 {
   "id": "558110f401d292324c0da8bd",
   "topic": {
-    "EN": "You received a reward!"
+    "EN": "You received a bonus!"
   },
   "interlocutors_inlined": true,
   "interlocutors": [
@@ -186,7 +186,7 @@ In response, you will receive a message as a new thread.
         "created": "2017-01-31T11:02:31"
     {
       "text": {
-        "EN": "You received a reward for doing a good job!"
+        "EN": "You received a bonus for doing a good job!"
       },
       "from": {
         "id": "111bd25f1bb71f37844e2a9355faad67",

@@ -44,7 +44,7 @@ Please read the rules below before placing your tasks.
 
 1. **Serve as recruiting** or assigning tasks to people who work for the requester. Don't make Tolokers do work outside the platform and don't post tasks for your employees.
 
-1. **Are intended for money laundering**, including scams with payments and rewards and the placement of fake tasks.
+1. **Are intended for money laundering**, including scams with payments and bonuses and the placement of fake tasks.
 
     If these types of tasks or a fraudulent requester are discovered, Toloka has the right to suspend their access to the platform and take other measures it deems appropriate for stopping the requester, including blocking their profile, limiting their ability to post tasks, and restricting their use of the Toloka website.
 
@@ -61,9 +61,9 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
     - Approximate survey completion time.
     - A privacy notice explaining how the data will be used in general and for scientific/research purposes specifically.
 
-1.  Do not request data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. You can ask questions regarding the respondents' gender, age, education level, region or city of residence, and income level. To preserve the anonymity of requesters and annotators, make sure you communicate with annotators only via private messages in your Toloka account. However, the survey may include the researcher's name, organization, and email address as a standard practice for scientific research.
+1. Do not request data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. You can ask questions regarding the respondents' gender, age, education level, region or city of residence, and income level. To preserve the anonymity of requesters and annotators, make sure you communicate with annotators only via private messages in your Toloka account. However, the survey may include the researcher's name, organization, and email address as a standard practice for scientific research.
 
-1. The amount that the Toloker earns for completing the survey (including rewards) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
+1. The amount that the Toloker earns for completing the survey (including bonuses) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
 
 1. Do not include questions or content in your survey that could cause moral injury, material loss, or any other type of harm to the Toloker or the Toloka platform. The terms of the survey and any materials included in it must comply with the laws of the countries where the survey is available.
 
