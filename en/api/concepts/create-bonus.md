@@ -1,10 +1,10 @@
-# Issue rewards
+# Issue bonuses
 
 {% include [announce](../_includes/announce.md) %}
 
-Issues rewards to Tolokers.
+Issues bonuses to Tolokers.
 
-The size of the reward can range between $0.005 and $100 per Toloker at a time.
+The size of the bonus can range between $0.005 and $100 per Toloker at a time.
 
 {% note alert "Restriction" %}
 
@@ -12,7 +12,7 @@ You can send a maximum of 10,000 requests of this kind per day. Refer to the [Ra
 
 {% endnote %}
 
-You can't use one request to pass multiple rewards with the same price, name, and message to the same annotator. A response with the status `409` will be returned.
+You can't use one request to pass multiple bonuses with the same price, name, and message to the same annotator. A response with the status `409` will be returned.
 
 {% cut "Sample error with HTTP status code 409" %}
 
@@ -66,19 +66,19 @@ Specified in the link after the question mark; separated by `&`.
 
 Mode for request processing:
 
-- `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The response contains information about the operation (start and completion time, status, number of rewards).
-- `false` — Synchronous. The response contains information about rewards issued. Maximum of 100 rewards per request.
+- `true` — Asynchronous. Creates an asynchronous operation that runs in the background. The response contains information about the operation (start and completion time, status, number of bonuses).
+- `false` — Synchronous. The response contains information about bonuses issued. Maximum of 100 bonuses per request.
 
 The default value is `false`. ||
 || **assignment_id** | **string**
 
-ID of the Toloker's response to the task a reward is issued for. ||
+ID of the Toloker's response to the task a bonus is issued for. ||
 || **skip_invalid_items** | **boolean**
 
 Validation parameters for JSON objects:
 
-- `true` — Issue a reward if the JSON object with reward information passed validation. Otherwise, skip the reward.
-- `false` — Stop the operation and don't issue rewards if at least one JSON object didn't pass validation.
+- `true` — Issue a bonus if the JSON object with bonus information passed validation. Otherwise, skip the bonus.
+- `false` — Stop the operation and don't issue bonuses if at least one JSON object didn't pass validation.
 
 The default value is `false`. ||
 || **operation_id** | **string**
@@ -111,10 +111,10 @@ Operation ID. Can be used for any method of request processing. ||
 Required parameter. Toloker ID. ||
 || **amount** | **float**
 
-Required parameter. The dollar amount of the reward. ||
+Required parameter. The dollar amount of the bonus. ||
 || **assignment_id** | **string**
 
-ID of the Toloker's response to the task a reward is issued for. ||
+ID of the Toloker's response to the task a bonus is issued for. ||
 || **private_comment** | **string**
 
 Comments that are only visible to the requester. ||
@@ -126,9 +126,9 @@ The subject of the message for the Toloker. You can enter it in multiple languag
 The text of message for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
 || **without_message** | **boolean**
 
-Allows you not to send a reward message to the Toloker. The default value is `false`.
+Allows you not to send a bonus message to the Toloker. The default value is `false`.
 
-To issue a reward without a message, specify `null` for `public_title` and `public_message` and `true` for `without_message`. ||
+To issue a bonus without a message, specify `null` for `public_title` and `public_message` and `true` for `without_message`. ||
 |#
 
 ## Response {#response}
@@ -137,19 +137,19 @@ The response format depends on the value of `async_mode`.
 
 {% list tabs %}
 
-- Information about rewards (async_mode=false)
+- Information about bonuses (async_mode=false)
 
     ```json
     {
       "items": {
-        "0": {details of a reward #0},
-        "2": {details of a reward #2},
-        "<N>": {details of a reward #N}
+        "0": {details of a bonus #0},
+        "2": {details of a bonus #2},
+        "<N>": {details of a bonus #N}
       },
       "validation_errors": {
-        "1": {validation errors for a reward #1},
-        "3": {validation errors for a reward #3},
-        "<N>": {validation errors for a reward #N}
+        "1": {validation errors for a bonus #1},
+        "3": {validation errors for a bonus #3},
+        "<N>": {validation errors for a bonus #N}
       }
     }
     ```
@@ -158,7 +158,7 @@ The response format depends on the value of `async_mode`.
     || Parameter | Overview ||
     || **items** | **string**
 
-    Object with information about rewards issued. ||
+    Object with information about bonuses issued. ||
     || **validation_errors** | **string**
 
     An object with validation errors. Returned if the request has the parameter `skip_invalid_items=true`. ||
@@ -194,7 +194,7 @@ The response format depends on the value of `async_mode`.
     Operation ID. ||
     || **type** | **string**
 
-    Type of operation: `USER_BONUS.BATCH_CREATE` — Issuing a reward to multiple Tolokers. ||
+    Type of operation: `USER_BONUS.BATCH_CREATE` — Issuing a bonus to multiple Tolokers. ||
     || **status** | **string**
 
     The status of the operation:
@@ -219,8 +219,8 @@ The response format depends on the value of `async_mode`.
 
     Validation parameters for JSON objects:
 
-    - `true` — Issue a reward if the JSON object with reward information passed validation. Otherwise, skip the reward.
-    - `false` — Stop the operation and don't issue rewards if at least one JSON object didn't pass validation.
+    - `true` — Issue a bonus if the JSON object with bonus information passed validation. Otherwise, skip the bonus.
+    - `false` — Stop the operation and don't issue bonuses if at least one JSON object didn't pass validation.
 
     The default value is `false`. ||
     || **details** | **object**
@@ -228,19 +228,19 @@ The response format depends on the value of `async_mode`.
     Information about the completed operation. ||
     || **details.total_count** | **integer**
 
-    The number of rewards in the request. ||
+    The number of bonuses in the request. ||
     || **details.valid_count** | **integer**
 
-    The number of JSON objects with reward information that passed validation. ||
+    The number of JSON objects with bonus information that passed validation. ||
     || **details.not_valid_count** | **integer**
 
-    The number of invalid JSON objects with reward information. ||
+    The number of invalid JSON objects with bonus information. ||
     || **details.success_count** | **integer**
 
-    The number of rewards issued. ||
+    The number of bonuses issued. ||
     || **details.failed_count** | **integer**
 
-    The number of rewards that weren't issued. ||
+    The number of bonuses that weren't issued. ||
     |#
 
 {% endlist %}

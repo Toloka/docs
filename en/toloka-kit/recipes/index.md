@@ -232,24 +232,24 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
     </div>
 </div>
 
-## Rewards
+## Bonuses
 
 <div class="recipe_blocks">
     <div class="recipe_block">
-        <p class="recipe_block_heading">Issue rewards to Tolokers</p>
+        <p class="recipe_block_heading">Issue bonuses to Tolokers</p>
         <p class="recipe_block_description">Additionally reward Tolokers who completed their tasks better than others</p>
         <p class="recipe_steps">4 steps</p>
         <a class="recipe_button" href="./assign-reward">Go to recipe</a>
     </div>
     <div class="recipe_block">
-        <p class="recipe_block_heading">Get list of all rewards issued</p>
-        <p class="recipe_block_description">Get all the rewards you issued in Toloka</p>
+        <p class="recipe_block_heading">Get list of all bonuses issued</p>
+        <p class="recipe_block_description">Get all the bonuses you issued in Toloka</p>
         <p class="recipe_steps">3 steps</p>
         <a class="recipe_button" href="./get-rewards">Go to recipe</a>
     </div>
     <div class="recipe_block">
-        <p class="recipe_block_heading">Get reward details</p>
-        <p class="recipe_block_description">Get the detailed information about the reward with the ID specified in the request</p>
+        <p class="recipe_block_heading">Get bonus details</p>
+        <p class="recipe_block_description">Get the detailed information about the bonus with the ID specified in the request</p>
         <p class="recipe_steps">4 steps</p>
         <a class="recipe_button" href="./get-reward-by-id">Go to recipe</a>
     </div>

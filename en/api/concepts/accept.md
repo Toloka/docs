@@ -106,7 +106,7 @@ A comment for the Toloker.
 Maximum length: 2048 characters. ||
 || **bonus_ids[]** | **array of strings**
 
-IDs of rewards issued. ||
+IDs of bonuses issued. ||
 |#
 
 ## See also {#see-also}

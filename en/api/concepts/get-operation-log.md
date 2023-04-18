@@ -12,7 +12,7 @@ You can get the operation log:
 
 - When you create [one or multiple](create-task.md) tasks.
 - When you create [one or multiple](create-task-suite.md) task suites.
-- [When issuing rewards](create-bonus.md) to Tolokers.
+- [When issuing bonuses](create-bonus.md) to Tolokers.
 
 If the operation was successful, the log contains `IDs` of the created objects, otherwise it contains the details of validation errors.
 
@@ -79,13 +79,13 @@ Type of operation step. It depends on:
 
 The `type` values for a successful asynchronous operation:
 
-- `USER_BONUS_PERSIST` — Issuing a reward.
+- `USER_BONUS_PERSIST` — Issuing a bonus.
 - `TASK_CREATE` — Creating a task.
 - `TASK_SUITE_CREATE` — Creating a task suite.
 
 The `type` values for a failed asynchronous operation:
 
-- `USER_BONUS_VALIDATE` — Issuing a reward.
+- `USER_BONUS_VALIDATE` — Issuing a bonus.
 - `TASK_VALIDATE` — Creating a task.
 - `TASK_SUITE_VALIDATE` — Creating a task suite.
 
@@ -105,7 +105,7 @@ Output values at the operation step.
 
 The data in the `output` for a successful operation:
 
-- For the action `USER_BONUS_PERSIST` — `user_bonus_id` (the `ID` of the issued reward).
+- For the action `USER_BONUS_PERSIST` — `user_bonus_id` (the `ID` of the issued bonus).
 - For the action `TASK_CREATE` — `task_id` (the `ID` of the created task).
 - For the action `TASK_SUITE_CREATE` — `task_suite_id` (the `ID` of the created task suite).
 
@@ -116,7 +116,7 @@ Data in the `output` for a failed operation:
 - `payload` — Specifies the error reason if `code = VALIDATION_ERROR`.||
 |#
 
-{% cut "Example of a log when a reward was issued successfully" %}
+{% cut "Example of a log when a bonus was issued successfully" %}
 
 ```json
 [
@@ -148,7 +148,7 @@ Data in the `output` for a failed operation:
 
 {% endcut %}
 
-{% cut "Example of a log when issuing a reward failed" %}
+{% cut "Example of a log when issuing a bonus failed" %}
 
 ```json
 [

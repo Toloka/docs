@@ -23,7 +23,7 @@ Method | Minute | Hour | Day
 [Create tasks](create-task.md) | 200,000 | – | 4,000,000
 [Create task suites](create-task-suite.md) | 100,000 | – | 2,000,000
 [Create training pools](create-training.md) | 20 | – | 100
-[Issue rewards](create-bonus.md) | – | – | 10,000
+[Issue bonuses](create-bonus.md) | – | – | 10,000
 [Message all Tolokers](message-send.md) | – | – | 1 message
 [Message specific Tolokers](message-send.md) | – | – | 100,000
 

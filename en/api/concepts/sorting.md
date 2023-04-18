@@ -23,7 +23,7 @@ Lists of objects support various sorting options. For more information about the
 - [Responses](result.md)
 - [Files in responses](get-attachment-list.md)
 - [Aggregated responses](get-aggregated-result.md)
-- [Rewards](get-bonus-list.md)
+- [Bonuses](get-bonus-list.md)
 - [Threads of messages to Tolokers](get-chain-list.md)
 
 {% endcut %}

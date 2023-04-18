@@ -256,15 +256,15 @@ items:
             href: ../api/concepts/get-aggregated-result.md
   - name: Checking completed tasks
     href: ../api/concepts/accept.md
-  - name: Rewards
+  - name: Bonuses
     items:
       - name: Overview
         href: ../api/concepts/bonus.md
-      - name: Issue rewards
+      - name: Issue bonuses
         href: ../api/concepts/create-bonus.md
-      - name: Get a list of rewards issued
+      - name: Get a list of bonuses issued
         href: ../api/concepts/get-bonus-list.md
-      - name: Get reward properties
+      - name: Get bonus properties
         href: ../api/concepts/get-one-bonus.md
   - name: Messages for Tolokers
     items:

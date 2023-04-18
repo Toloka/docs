@@ -1,6 +1,6 @@
-# Get list of all rewards issued
+# Get list of all bonuses issued
 
-_Get all the rewards you issued in Toloka._
+_Get all the bonuses you issued in Toloka._
 
 ## Steps to follow
 
@@ -8,23 +8,23 @@ _Get all the rewards you issued in Toloka._
 
 {% include [instantiate](../_includes/recipes/instantiate.md) %}
 
-### 3. Print reward IDs, public titles, and amount {#step-three}
+### 3. Print bonus IDs, public titles, and amount {#step-three}
 
-Iterate through all the rewards calling the `get_user_bonuses()` method.
+Iterate through all the bonuses calling the `get_user_bonuses()` method.
 
 ```python
 for bonus in toloka_client.[get_user_bonuses](*get_user_bonuses)():
     print(bonus.id, bonus.public_title.get('EN'), bonus.amount)
 ```
 
-You should get an output with the reward IDs, public titles, and amount which looks like this.
+You should get an output with the bonus IDs, public titles, and amount which looks like this.
 
 ```bash
 3139 Perfect job! 0.500
 3258 Completed much faster than others 1.000
 ```
 
-## Complete code: Get list of all rewards issued {#complete-code}
+## Complete code: Get list of all bonuses issued {#complete-code}
 
 ```python
 import toloka.client as toloka
@@ -47,7 +47,7 @@ for bonus in toloka_client.get_user_bonuses():
 - [{#T}](../../guide/concepts/overview.md)
 - [{#T}](./learn-basics.md)
 - [{#T}](./use-cases.md)
-- [Toloka API: Get list of rewards](https://toloka.ai/docs/api/api-reference/#get-/user-bonuses)
+- [Toloka API: Get list of bonuses](https://toloka.ai/docs/api/api-reference/#get-/user-bonuses)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class
 [*get_user_bonuses]: [get_user_bonuses()](../reference/toloka.client.TolokaClient.get_user_bonuses.md) method

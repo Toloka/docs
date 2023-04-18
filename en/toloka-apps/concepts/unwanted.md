@@ -42,7 +42,7 @@ Toloka **isn't intended** for tasks that could harm performers, other requesters
 
 1. **Serve for recruiting** or assigning tasks to people who work for the requester. Don't make performers do work outside the platform and don't post tasks for your employees.
 
-1. **Are intended for money laundering**, including scams with payments and rewards and the placement of fake tasks.
+1. **Are intended for money laundering**, including scams with payments and bonuses and the placement of fake tasks.
 
     If these types of tasks or a fraudulent requester are discovered, Toloka has the right to suspend their access to the platform and take other measures it deems appropriate for stopping the requester, including blocking their profile, limiting their ability to post tasks, and restricting their use of the Toloka website.
 

@@ -1,5 +1,5 @@
 {% cut "Can there be tasks with different prices in the pool?" %}
 
-No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](../../../../guide/concepts/dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay rewards](../../../../guide/concepts/bonus.md) to good Tolokers.
+No. The price per task suite is the same for all tasks in the pool. You can create multiple pools with different prices or [change the price](../../../../guide/concepts/dynamic-pricing.md) depending on the Toloker skill using **Dynamic pricing**. You can [pay bonuses](../../../../guide/concepts/bonus.md) to good Tolokers.
 
 {% endcut %}

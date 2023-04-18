@@ -46,7 +46,7 @@ Title | Overview
   "user_id": "b4d8bcc33403cae9eb69991c8bb90bdc",
   "status": "ACCEPTED",
   "reward": 0.01,
-  "bonus_ids": "IDs of the rewards given for the task",
+  "bonus_ids": "IDs of the bonuses given for the task",
   "tasks": [
     {
       "id": "6946cefa-32af-4f62-b530-8d2c71fa2966",
@@ -109,7 +109,7 @@ A comment for the Toloker.
 Maximum length: 2048 characters. ||
 || **bonus_ids[]** | **array of strings**
 
-`IDs` of rewards issued for the task. ||
+`IDs` of bonuses issued for the task. ||
 || **tasks[]** | **array of objects**
 
 [Data for the tasks](task-suite.md). ||

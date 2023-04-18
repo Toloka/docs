@@ -44,7 +44,7 @@
   "user_id": "b4d8bcc33403cae9eb69991c8bb90bdc",
   "status": "ACCEPTED",
   "reward": 0.01,
-  "bonus_ids": "IDs of the rewards given for the task",
+  "bonus_ids": "IDs of the bonuses given for the task",
   "tasks": [{
     "id": "6946cefa-32af-4f62-b530-8d2c71fa2966",
     "input_values": {

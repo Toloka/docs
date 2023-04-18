@@ -359,7 +359,7 @@ items:
         items:
           - name: Viewing Tolokers
             href: guide/concepts/users.md
-          - name: Rewards
+          - name: Bonuses
             href: guide/concepts/bonus.md
           - name: Communication
             href: guide/concepts/messaging.md
