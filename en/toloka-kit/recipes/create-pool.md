@@ -16,7 +16,7 @@ First, specify the parameters you want your pool to have. In this example, we us
 - the pool name you will see in the list and use to distinguish the pool from other ones
 - whether or not the pool can contain adult content
 - the date when the pool is going to expire and will be closed
-- the bonus for the task suite specified in U.S. dollars
+- the reward for the task suite specified in U.S. dollars
 - the maximum duration of the task suite completion available to Tolokers
 - whether or not the responses must be accepted automatically rather than reviewed manually
 - the overlap used for the pool
