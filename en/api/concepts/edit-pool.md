@@ -12,13 +12,15 @@ You can send a maximum of 10 requests per hour to change the pool overlap parame
 
 {% endnote %}
 
-{% note info %}
-
-Learn about editing a training pool in the section [Edit a training pool](edit-training.md).
-
-{% endnote %}
+Learn about editing a training pool in the [Edit a training pool](edit-training.md) section.
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#put-/pools/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
