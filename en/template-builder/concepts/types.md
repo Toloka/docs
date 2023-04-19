@@ -5,6 +5,7 @@ In the [component](../reference/index.md) descriptions, each property has a type
 #### "component.name"
 
 For the `type` property, the name of the component is indicated everywhere. If you specify a different name, that would be a different component.
+
 #### action
 
 Any [action component](../reference/actions.md). Components with the name `actions.*` let you perform various actions, such as show notifications.
@@ -46,7 +47,7 @@ An integer without quotation marks, for example, `25`.
 
 #### number
 
-A number without quotation marks, for example, `25.5`. The `.` symbol is a divider. 
+A number without quotation marks. The separator of the fractional and integer parts is `.`. For example, `25.5`.
 
 #### object
 
@@ -62,7 +63,7 @@ A list of `"key":value` pairs separated by commas. Enclosed in curly brackets `{
 
 A pointer to a visual component using the construction `{ "$ref": "path.to.element" }`. 
 
-[Example](https://ya.cc/t/AiIEBqw-3YbMBH).
+[View example](https://ya.cc/t/AiIEBqw-3YbMBH)
 
 {% note info %}
 
@@ -81,6 +82,5 @@ Component you can write the data to: `data.internal` or `data.output`. In some c
 #### visual
 
 A visual component (`layout.*`, `view.*`, `field.*`) or [helper](../reference/helpers.md) that returns it. See the list in the [component reference guide](../reference/index.md).
-
 
 {% include [contact-support](../_includes/contact-support.md) %}
