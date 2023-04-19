@@ -29,6 +29,12 @@ You can't use one request to pass multiple bonuses with the same price, name, an
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/user-bonuses):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version

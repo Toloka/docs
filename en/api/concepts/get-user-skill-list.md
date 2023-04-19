@@ -6,17 +6,23 @@ Gets a list of Tolokers who have skills. With the [query parameters](#query-para
 
 - Get the list of all the Tolokers who have the specific skill using the `skill_id` query parameter:
 
-  ```bash
-  GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>
-  ```
+    ```bash
+    GET https://toloka.dev/api/v1/user-skills?skill_id=<skill_id>
+    ```
 
 - Get the list of all the skills assigned to the specific Toloker using the `user_id` query parameter:
 
-  ```bash
-  GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>
-  ```
+    ```bash
+    GET https://toloka.dev/api/v1/user-skills?user_id=<user_id>
+    ```
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/user-skills):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 

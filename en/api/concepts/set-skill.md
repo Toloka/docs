@@ -12,6 +12,12 @@ You can send a maximum of 100,000 requests of this kind per day. Refer to the [R
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#put-/user-skills):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version

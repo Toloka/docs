@@ -12,6 +12,12 @@ You can send a maximum of 20 requests of this kind per minute and a maximum o
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/projects):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version

@@ -6,6 +6,12 @@ Sends a test notification to the URL specified in the subscription.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/webhook-subscriptions/-id-/test):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version

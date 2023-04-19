@@ -6,6 +6,12 @@ Gets the list of task suites in the pool.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/task-suites):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version

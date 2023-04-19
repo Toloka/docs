@@ -4,13 +4,15 @@
 
 Makes changes to a training pool.
 
-{% note info %}
-
-Learn about editing a main pool in the section [Edit pool](edit-pool.md).
-
-{% endnote %}
+Learn about editing a main pool in the [Edit pool](edit-pool.md) section.
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#put-/trainings/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 

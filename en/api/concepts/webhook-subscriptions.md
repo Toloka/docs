@@ -12,6 +12,12 @@ Notifications about the events you're subscribed to are sent in JSON format. For
 
 ## Methods {#methods}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--webhook-subscription):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Method | Endpoint | Overview
 ----- | ----- | -----
 PUT | [/webhook-subscriptions](put-webhook-subscriptions.md) | Creates one or more subscriptions.

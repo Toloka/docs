@@ -1,7 +1,5 @@
 # Overview
 
-## Description {#description}
-
 To upload tasks to a pool, you need to create JSON objects that contain:
 
 - The input data for the tasks (such as text or image URLs).
@@ -13,6 +11,12 @@ Toloka automatically combines tasks into suites. You only need to specify the nu
 If you want to create the task suites yourself, follow the instructions in [Overview](task-suite.md).
 
 ## Methods {#methods}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--task):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 Method | Endpoint | Overview
 ----- | ----- | -----
