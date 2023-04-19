@@ -61,7 +61,7 @@ A list of `"key":value` pairs separated by commas. Enclosed in curly brackets `{
 
 #### ref
 
-A pointer to a visual component using the construction `{ "$ref": "path.to.element" }`. 
+A pointer to a visual component using the construction `{ "$ref": "path.to.element" }`.
 
 [View example](https://ya.cc/t/AiIEBqw-3YbMBH)
 
