@@ -47,7 +47,7 @@ An integer without quotation marks, for example, `25`.
 
 #### number
 
-A number without quotation marks. The separator of the fractional and integer parts is `.`. For example, `25.5`.
+A number without quotation marks. The separator of the fractional and integer parts is the dot. For example, `25.5`.
 
 #### object
 
