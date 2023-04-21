@@ -1,6 +1,6 @@
 # Results of manual review
 
-If you don't want Tolokers who made a lot of mistakes to do your tasks in the future, set up this quality control rule.
+If you don't want Tolokers who made a lot of mistakes to do your [tasks](../../glossary.md#task) in the future, set up this quality control rule.
 
 ## When to use {#when-use}
 
@@ -28,7 +28,7 @@ If this field is not filled in, the calculation includes only task responses fro
 
 If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
-To learn more about how this field works, go to [“Remember values” parameter](remember-values.md).||
+[Learn more](remember-values.md) about how this field works.||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **total reviewed responses** — The number of the Toloker's assignments that were reviewed.
@@ -40,17 +40,17 @@ To learn more about how this field works, go to [“Remember values” parameter
 To add multiple conditions, click ![](../_images/add.svg).||
 ||**then** | Action to perform for the **If** condition:
 
-- **assign skill value** — Assign a fixed value to the [skill](nav.md).
+- **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
+
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses from this Toloker in the pool.
 
 - **assign skill from the field** — Save the percentage of Toloker's accepted responses as the [skill](nav.md) value.
 
-- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
-
-- **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
-
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
-
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
+
+- **assign skill value** — Assign a fixed value to the [skill](nav.md).
+
+- **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
     If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.||
 |#
