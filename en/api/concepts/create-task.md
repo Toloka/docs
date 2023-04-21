@@ -139,7 +139,6 @@ You can use this ID in the future to [get information about the operation](opera
     }
   ],
   "message_on_unknown_solution": "The cat is in a good mood.",
-  "overlap": 3,
   "infinite_overlap": false,
   "reserved_for": [],
   "unavailable_for": []
@@ -191,7 +190,14 @@ The default value is 1. ||
 
 Required if the `allow_defaults=true` parameter is not used when creating tasks and the overlap is not specified in the pool parameters (the [defaults.default_overlap_for_new_tasks](create-pool.md#default-overlap-tasks) key).
 
-Task overlap. ||
+Task overlap.
+
+{% note warning %}
+
+Please note that overlap you set when uploading tasks has priority over the overlap you set during the [pool creation](create-pool.md).
+
+{% endnote %}
+||
 || **known_solutions[]** {#known} | **array of objects**
 
 Correct responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
