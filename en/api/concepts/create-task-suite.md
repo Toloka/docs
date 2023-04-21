@@ -141,7 +141,6 @@ You can use this ID in the future to [get information about the operation](ope
       "message_on_unknown_solution": "The elephant is white"
     }
   ],
-  "overlap": 5,
   "infinite_overlap": false,
   "remaining_overlap": 3,
   "reserved_for": [],
@@ -176,7 +175,14 @@ Input data for a task. List of pairs:
 
 Required if the parameter is not used when creating a task suite `allow_defaults=true`, and the overlap is not specified in the pool parameters (in the [defaults.​default_​overlap_for_​new_task_suites](create-pool.md#default_overlap_for_new_task_suites) key).
 
-Task suite overlap. ||
+Task suite overlap.
+
+{% note warning %}
+
+Please note that overlap you set when creating task suites has priority over the overlap you set during the [pool creation](create-pool.md).
+
+{% endnote %}
+||
 || **longitude** | **float \| required if**
 
 Required if tasks are selected on the map. Otherwise, not used.

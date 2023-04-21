@@ -251,10 +251,24 @@ Only training and control tasks can be uploaded to zero-price pools. ||
 Settings that are applied by default when uploading new task suites to a pool. ||
 || **defaults.default_overlap_for_new_task_suites** {#default_overlap_for_new_task_suites} | **integer \| required**
 
-The overlap for task suites that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
+The overlap for task suites that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload).
+
+{% note warning %}
+
+Please note that overlap you set when [creating task suites](create-task-suite.md) has priority over the overlap you set during the pool creation.
+
+{% endnote %}
+||
 || **defaults.default_overlap_for_new_tasks** {#default-overlap-tasks} | **integer**
 
-The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload). ||
+The overlap for tasks that are uploaded to the pool (used if the `allow_defaults=true` parameter is set at upload).
+
+{% note warning %}
+
+Please note that overlap you set when [uploading tasks](create-task.md) has priority over the overlap you set during the pool creation.
+
+{% endnote %}
+||
 || **assignment_max_duration_seconds** | **integer \| required**
 
 The time allowed for completing a task suite, in seconds. Tasks not completed within this time are reassigned to other Tolokers.
