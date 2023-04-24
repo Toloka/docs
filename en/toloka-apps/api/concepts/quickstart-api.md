@@ -1,6 +1,6 @@
 # API quick start
 
-## Choose a bespoke solution
+## Choose a solution
 
 Request a list of solutions and choose the one that fits your goals.
 
@@ -56,7 +56,7 @@ Authorization: OAuth <OAuth token>
 
 {% endcut %}
 
-## Get information about the bespoke solution
+## Get information about the solution
 
 Request information about the solution to check the spec parameters and input data.
 
@@ -201,7 +201,7 @@ Authorization: OAuth <OAuth token>
 
 {% endcut %}
 
-## Create a bespoke project
+## Create a project
 
 Create an object named `parameters`. It should match the JSON schema in the solution's `param_spec`.
 
@@ -310,7 +310,7 @@ The project gets the `CREATING` status. You don't have to wait until it's modera
 
 ## Create a batch for labeling
 
-Let's create a batch and upload task items to it. We'll use the schema from the bespoke project template. It's specified in the `input_spec` parameter. In this case, it's `id` and `text`.
+Let's create a batch and upload task items to it. We'll use the schema from the project template. It's specified in the `input_spec` parameter. In this case, it's `id` and `text`.
 
 ```http
 POST /api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches
@@ -453,7 +453,7 @@ Authorization: OAuth <OAuth token>
 ||**Parameter**|**Overview**||
 ||**app_project_id**|**string**
 
-Bespoke project ID.||
+Project ID.||
 ||**batch_id**|**string**
 
 Batch ID.||
