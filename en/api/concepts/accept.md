@@ -66,7 +66,7 @@ Title | Overview
 
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
-- `ACTIVE` — Being completed by a Toloker.
+- `ACTIVE` — Being picked up by a Toloker.
 - `SUBMITTED` — Completed but not checked.
 - `ACCEPTED` — Accepted by the requester.
 - `REJECTED` — Rejected by the requester.
@@ -98,7 +98,7 @@ The response contains the changed values of fields:
 
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
-- `ACTIVE` — Being completed by a Toloker.
+- `ACTIVE` — Being picked up by a Toloker.
 - `SUBMITTED` — Completed but not checked.
 - `ACCEPTED` — Accepted by the requester.
 - `REJECTED` — Rejected by the requester.

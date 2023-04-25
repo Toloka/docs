@@ -47,7 +47,7 @@ Specified in the link after the question mark; separated by `&`.
 
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
-- `ACTIVE` — Being completed by a Toloker.
+- `ACTIVE` — Being picked up by a Toloker.
 - `SUBMITTED` — Completed but not checked.
 - `ACCEPTED` — Accepted by the requester.
 - `REJECTED` — Rejected by the requester.
