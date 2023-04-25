@@ -4,7 +4,7 @@ In Toloka, you can exchange information with Tolokers through messages and recei
 
 ## Message types
 
-There are several types of messages. To switch between them, select one of the following on the right of the screen:
+There are several types of messages. To switch between them, select one of the following options in the upper-left part of the page:
 
 - **Inbox**: Messages you received.
 
@@ -59,7 +59,7 @@ If the issue is related to how the platform works in general (such as money with
 
 #### In the interface
 
-1. [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
+1. (Optional, required if you want to send a message to a group of Tolokers with a certain skill) [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
 
 1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click **Contact** → **Group of Tolokers** → **+ Add filter**.
 
