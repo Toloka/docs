@@ -99,7 +99,7 @@ ID of the Toloker who was assigned the task suite. ||
 
 Status of an assigned task suite:
 
-- `ACTIVE` — Being completed by a Toloker.
+- `ACTIVE` — Being picked up by a Toloker.
 - `SUBMITTED` — Completed but not checked.
 - `ACCEPTED` — Accepted by the requester.
 - `REJECTED` — Rejected by the requester.
