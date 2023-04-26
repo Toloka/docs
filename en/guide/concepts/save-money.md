@@ -1,14 +1,17 @@
 # How to save your budget
 
-Every requester wants to optimize expenses. This section describes the main ways to save money without compromising the quality of labeling.
+Every requester wants to optimize expenses. This section describes the main ways to save money without reducing the labeling quality.
 
 ## Decompose tasks {#decomposition}
 
-Use [decomposition](solution-architecture.md). Simpler tasks cost less. If a task is complex, you won't get good results immediately. Instead, you'll have to resend tasks to the pool so that other Tolokers can redo them.
+Use [decomposition](solution-architecture.md): 
+
+- Simpler [tasks](../../glossary.md#task) cost less. 
+- If a task is complex, you won't get good results immediately. Instead, you'll have to resend tasks to the [pool](../../glossary.md#pool) so that other Tolokers can redo them.
 
 ## Use dynamic overlap {#din-price}
 
-[Dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL) lets you change overlap depending on:
+[Dynamic overlap](dynamic-overlap.md) lets you change [overlap](../../glossary.md#overlap) depending on:
 
 - How well the Tolokers do on the task.
 - How well Tolokers' responses match each other.
@@ -29,9 +32,13 @@ Use manual review if:
 
 You can set up a [random majority vote check](selective-mvote.md) for the general tasks. This helps you save money and speed up pool completion. You can set the period during which tasks with increased overlap will be displayed to the Toloker, depending on the number of completed tasks.
 
-For example, let's say your pool's overlap is set to 3. You don't trust the responses of new Tolokers and want to check them further. In this case, you set up a random majority vote check. If the Toloker completed 10 tasks in the last 14 days, set overlap to 5 for every third task, and if the Toloker completed 20 tasks, set overlap to 5 for every fifth task.
+{% cut "Example" %}
+
+Let's say your pool's overlap is set to 3. You don't trust the responses of new Tolokers and want to check them further. In this case, you set up a random majority vote check. If the Toloker completed 10 tasks in the last 14 days, set overlap to 5 for every third task, and if the Toloker completed 20 tasks, set overlap to 5 for every fifth task.
 
 Without this setting, you would be forced to set overlap to 5 for each task in the pool. And it would be more expensive to label all tasks with overlap = 5, as opposed to just some of the tasks.
+
+{% endcut %}
 
 ## Set up dynamic pricing {#price-set}
 
@@ -41,19 +48,19 @@ In some cases, this setting makes labeling more expensive, like for tasks that d
 
 ## Use fractional payment on incomplete task suites {#mixer}
 
-Use the [Smart mixing](distribute-tasks-by-pages.md#smart-mixing) and **Assign partial page** options. This way you can save money on paying for incomplete task suites.
+Use the [Smart mixing](distribute-tasks-by-pages.md#smart-mixing) and **Allow partial task suites** options. This way you can save money on paying for incomplete task suites.
 
 ## Conditionally free exams {#exams}
 
-In Toloka, requesters pay for exams, including those that Tolokers didn't pass. This is a fee that a requester doesn't get any benefit from, because a Toloker failed the exam and won't be able to complete any of the general tasks.
+In Toloka, requesters pay for [exams](../../glossary.md#exam), including those that Tolokers didn't pass. This is a fee that a requester doesn't get any benefit from, because a Toloker failed the exam and won't be able to complete any of the general tasks.
 
 In this case, you can set up automatic acceptance of tasks and automatic rejection of tasks at the end of the review period. To do this, you'll need to:
 
 1. Select **Exam** as the pool type.
 
-1. Enable **Review task responses manually** in the pool settings.
+1. Turn on the **Review task responses manually** option.
 
-1. Set the option to **Yes** and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
+1. Turn on the **Reject tasks at the end of the review period** option and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
 
 1. Set the manual review period to one day.
 

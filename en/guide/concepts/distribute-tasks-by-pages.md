@@ -38,7 +38,7 @@ This method is useful if the created pool:
 
 - Tasks in the suite are mixed up before the page is shown to the Toloker.
 
-- If there aren't enough general tasks and the **Assign partial page** option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-task-suite). Please note that the number of control and training tasks in this case must be complete.
+- If there aren't enough general tasks and the **Allow partial task suites** option is set, the Toloker is given an [incomplete task suite](../../glossary.md#incomplete-task-suite). Please note that the number of control and training tasks in this case must be complete.
 
 {% note alert %}
 
