@@ -2,7 +2,7 @@
 
 If you have previously registered using Yandex ID, you need to confirm it or connect another social account to continue using Toloka. You can connect a single social account or choose to connect them all to your Toloka profile and use any of them to sign in to Toloka.
 
-## Connecting social accounts
+## Connecting social accounts {#connect-account}
 
 Follow the steps below to connect a new social account to your Toloka profile.
 
@@ -38,7 +38,19 @@ Please [contact our support team](../troubleshooting/support.md) if you have any
 
 {% endnote %}
 
-## Removing social accounts
+## Logging in to existing account using social authorization {#login-old-auth}
+
+You can log in to your existing Toloka account which you registered with Yandex ID using the new social authorization. For this, choose one of the following options when logging in:
+
+- Choose Yandex social authorization and select the same account which you used when registered.
+
+- Choose Google social authorization if you registered in Yandex ID using it.
+
+- Choose Facebook social authorization if you registered in Yandex ID using it.
+
+You can switch to the old authorization page using the **Use legacy Toloka account** link and [migrate](#connect-account) to the new authorization after that.
+
+## Removing social accounts {#remove-auth}
 
 To remove a social account from the list of the ones associated with your Toloka profile:
 
@@ -56,7 +68,7 @@ You must have at least one social account connected to your Toloka profile. For 
 
 {% endnote %}
 
-## Updating OAuth tokens
+## Updating OAuth tokens {#update-token}
 
 After you migrate to the new authorization scheme, the existing OAuth tokens will continue to work until they expire. After that, you can issue new authentication tokens.
 
