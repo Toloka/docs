@@ -254,6 +254,11 @@ Whether to display common interface elements in the task. ||
 ||**config[]** | **array of objects**
 
 [Configuration for Template Builder](tb-config.md) ||
+||**lock**| **object \| required if**
+
+Required if `type` is set to `tb`.
+
+The set of the Template Builder component versions that will be used to create the project task interface. ||
 || **assets** | **object**
 
 Linked files:
@@ -290,8 +295,8 @@ Editor type used to create the project interface:
 
 Depending on the editor type, the following parameters are used:
 
-- `config` when the value is set to `tb`.
-- `assets`, `markup`, `script`, and `styles` when the value is set to `classic`.||
+- `assets`, `markup`, `script`, and `styles` when the value is set to `classic`.
+- `config`, `lock` when the value is set to `tb`.||
 || **localizationConfig** | **object**
 
 Editor configuration.
