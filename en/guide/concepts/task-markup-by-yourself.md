@@ -1,6 +1,6 @@
 # How to edit tasks by yourself
 
-You can turn a general task into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
+You can turn a [general task](../../glossary.md#general-task) into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
 
 {% cut "What makes a good hint?" %}
 
@@ -12,7 +12,7 @@ Make the hints clear. Explain which response should be chosen and why.
 
 {% note alert "Restriction" %}
 
-Task markup is available only for [training pools](train.md) and pools uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
+Task markup is available only for [training pools](train.md) and [pools](../../glossary.md#pool) uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endnote %}
 
@@ -40,21 +40,21 @@ In this example, the correct response is added for the control task. Only the ch
 
 {% endcut %}
 
-## Improve the reliability of control tasks {#answer_distribution}
-
-After you have created the control tasks, make sure that different variations of correct responses occur with the same frequency. This will help avoid random guessing in responses.
-
-1. Go to the task markup page.
-
-1. Open the **Training tasks → Distribution of correct responses for control tasks** tab.
-
-    The distribution of responses is shown as a percentage.
-
 {% note tip %}
 
 When creating control tasks, enter only correct responses that answer the question. So for an image classification task, **Image loading error** is not a correct response that answers the task question.
 
 {% endnote %}
+
+## Improve the reliability of control tasks {#answer_distribution}
+
+After you have created the control tasks, make sure that different variations of correct responses occur with the same frequency. This will help avoid random guessing in responses.
+
+1. Go to the pool page and click the **Control tasks** indicator of the **Tasks** block.
+
+1. Check the **Distribution of correct responses for control tasks** chart.
+
+    The distribution of responses is shown as a percentage.
 
 #### Example of response distribution
 
@@ -70,11 +70,17 @@ When creating control tasks, enter only correct responses that answer the questi
 
 {% endlist %}
 
+## How to view the control tasks statistics {#task-statistics}
+
+- On the task markup page (**Responses** and **Correct** fields).
+
+- In the **Correct responses, %** field on the task edit page.
+
 ## How to edit tasks {#task-edit}
 
 1. Make sure the pool isn't running.
 
-1. Click **Edit** in the **Pool tasks** block.
+1. Click `![](../_images/other/three-points-button.svg)` → **Edit** in the **Tasks** block on the pool page.
 
 1. Click the tab with the type of the task.
 
@@ -84,7 +90,7 @@ When creating control tasks, enter only correct responses that answer the questi
 
 1. Make sure the pool isn't running.
 
-1. Click **Edit** in the **Pool tasks** block.
+1. Click `![](../_images/other/three-points-button.svg)` → **Edit** in the **Tasks** block on the pool page.
 
 1. Click the tab with the type of the task.
 
