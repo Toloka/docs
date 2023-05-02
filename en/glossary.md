@@ -20,7 +20,7 @@ A [pool](#pool) that was moved to the archive. Archived pools can't be started o
 
 #### Assignment {#assignment}
 
-A task suite that a [Toloker](#toloker) decides to pick up. An assignment can have one the following statuses: **accepted**, **active**, **expired**, **rejected**, **skipped**, or **submitted**. Refer to the [Toloka API documentation](api/concepts/result.md#query-params) for more information on each status.
+A task suite that a [Toloker](#toloker) decides to pick up. An assignment can have one the following statuses: **accepted**, **active**, **expired**, **rejected**, **skipped**, or **submitted**. Refer to the [Toloka API documentation](https://toloka.ai/docs/api/api-reference/#get-/assignments/-id-) for more information on each status.
 
 ### B
 

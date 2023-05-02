@@ -20,7 +20,7 @@ In the example given, Tolokers were not required to upload any files as a respon
 
 ### Request {#get-responses-request}
 
-In the `pool_id` query parameter, replace `<pool id>` with the ID of the pool you want to get responses for (the ID received in response to the [add pool request](qs-placement.md#pool)).
+In the `pool_id` query parameter, replace `{pool_id}` with the ID of the pool you want to get responses for (the ID received in response to the [add pool request](qs-placement.md#pool)).
 
 Next, use the `GET` method:
 
@@ -33,7 +33,7 @@ Next, use the `GET` method:
     ```bash
     curl -X GET \
          -H 'Authorization: OAuth <OAuth token>' \
-    https://sandbox.toloka.dev/api/v1/assignments?pool_id=<pool id>
+    https://sandbox.toloka.dev/api/v1/assignments?pool_id={pool_id}
     ```
 
 - Postman
@@ -43,7 +43,7 @@ Next, use the `GET` method:
     1. Request URL
 
         ```bash
-        https://sandbox.toloka.dev/api/v1/assignments?pool_id=<pool id>
+        https://sandbox.toloka.dev/api/v1/assignments?pool_id={pool_id}
         ```
 
     1. Headers
@@ -218,9 +218,9 @@ Toloker responses are returned in the `items` array in the following format:
 
 ## Learn more {#links-qs-results}
 
-- [HTTP methods used for processing Toloker responses](get-response.md)
-- [HTTP methods used for processing files in Toloker responses](attachments.md)
-- [Response aggregation](aggregated-solutions.md)
-- [Using libraries](libraries.md)
+- [HTTP methods used for processing Toloker responses](https://toloka.ai/docs/api/api-reference/#tag--assignment)
+- [HTTP methods used for processing files in Toloker responses](https://toloka.ai/docs/api/api-reference/#tag--attachment)
+- [Response aggregation](https://toloka.ai/docs/api/api-reference/#tag--aggregated-solution)
+- [Using libraries](../../toloka-kit/python-sdk.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

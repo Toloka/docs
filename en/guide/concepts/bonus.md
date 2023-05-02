@@ -113,7 +113,7 @@ Refer to the [Issue bonuses](https://toloka.ai/docs/api/api-reference/#post-/use
 
 ## For developers {#for-developers}
 
-- [Toloka API: Issuing bonuses](../../api/concepts/bonus.md)
+- [Toloka API: Issuing bonuses](https://toloka.ai/docs/api/api-reference/#post-/user-bonuses)
 - [Toloka-Kit recipe: Issue bonuses to Tolokers](../../toloka-kit/recipes/assign-reward.md)
 - [Toloka-Kit recipe: Get list of all bonuses issued](../../toloka-kit/recipes/get-rewards.md)
 - [Toloka-Kit recipe: Get bonus details](../../toloka-kit/recipes/get-reward-by-id.md)

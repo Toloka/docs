@@ -34,24 +34,25 @@ Manage projects and apps using Toloka API. Integrate Toloka methods into your ow
 
 <div class="grid-container">
     <div class="grid-item">
-        <h2><a href="./">Toloka API</a></h2>
+        <h2><a href="https://toloka.ai/docs/api/api-reference">Toloka API</a></h2>
         <p>Get access to projects with the help of Toloka API. Manage projects, pool, upload tasks, and get the results.</p>
         <ul>
-            <li><a href="./concepts/access">Accessing the API</a></li>
+            <li><a href="https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api">Accessing the API</a></li>
             <li><a href="./concepts/quickstart">Quick start</a></li>
-            <li><a href="./concepts/project">Projects</a></li>
-            <li><a href="./concepts/pool">Pools</a></li>
+            <li><a href="https://toloka.ai/docs/api/api-reference/#tag--project">Projects</a></li>
+            <li><a href="https://toloka.ai/docs/api/api-reference/#tag--pool">Pools</a></li>
             <li><a href="./concepts/upload-tasks">Tasks</a></li>
             <li><a href="https://toloka.ai/docs/api/api-reference">API reference</a></li>
         </ul>
     </div>
     <div class="grid-item">
-        <h2><a href="../toloka-apps/">Apps API</a></h2>
+        <h2><a href="https://toloka.ai/docs/api/apps-reference">Apps API</a></h2>
         <p>Apps API is used to power Toloka bespoke solutions. It has all the means to run your project and get the labeling results programmatically.</p>
         <ul>
-            <li><a href="../toloka-apps/api/concepts/authorization">Accessing the API</a></li>
+            <li><a href="https://toloka.ai/docs/api/apps-reference/#overview--accessing-the-api">Accessing the API</a></li>
             <li><a href="../toloka-apps/api/concepts/quickstart-api">Quick start</a></li>
             <li><a href="../toloka-apps/api/concepts/streaming-items">Stream processing of task items</a></li>
+            <li><a href="../toloka-apps/api/concepts/getting-items">Iterating results</a></li>
             <li><a href="https://toloka.ai/docs/api/apps-reference">API reference</a></li>
         </ul>
     </div>

@@ -19,7 +19,7 @@
     ```bash
     POST https://toloka.dev/api/v1/projects
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
 
     {<project parameters>}
     ```
@@ -29,7 +29,7 @@
     ```bash
     POST https://sandbox.toloka.dev/api/v1/projects
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
 
     {<project parameters>}
     ```

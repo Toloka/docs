@@ -22,7 +22,7 @@
 ```bash
 POST https://toloka.dev/api/v1/tasks
 Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
+Content-Type: application/json
 
 // одно задание
 {task data}
@@ -95,7 +95,7 @@ Content-Type: application/JSON
 ```bash
 POST https://toloka.dev/api/v1/task-suites
 Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
+Content-Type: application/json
 
 // одна страница заданий
 {task suite parameters}

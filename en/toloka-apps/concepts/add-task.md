@@ -17,10 +17,10 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
 1. {% include [toloka-apps-upload-data](../_includes/upload-data.md) %}
 
     - Under the **From a file** tab, attach your file with tasks.
-    
+
     - Under the **Copy and paste from the file** tab, copy and paste data from your file with tasks.
-    
-    - Click **Via API** to use the [API](../api/concepts/index.md).
+
+    - Click **Via API** to use the [API](https://toloka.ai/docs/api/api-reference/).
 
 1. Click **Create batch**.
 
@@ -37,10 +37,10 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
 1. {% include [toloka-apps-upload-data](../_includes/upload-data.md) %}
 
     - Under the **From a file** tab, attach your file with tasks.
-    
+
     - Under the **Copy and paste from the file** tab, copy and paste data from your file with tasks.
-    
-    - Click **Via API** to use the [API](../api/concepts/index.md).
+
+    - Click **Via API** to use the [API](https://toloka.ai/docs/api/api-reference/).
 
 1. Click **Upload**.
 

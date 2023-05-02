@@ -32,7 +32,7 @@ To add tasks to a pool:
 
 ## For developers {#for-developers}
 
-- [Toloka API: Tasks](../../api/concepts/tasks.md)
+- [Toloka API: Tasks](https://toloka.ai/docs/api/api-reference/#tag--task)
 - [Toloka-Kit: Creating tasks](../../toloka-kit/reference/toloka.client.TolokaClient.create_task.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

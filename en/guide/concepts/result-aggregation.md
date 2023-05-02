@@ -302,7 +302,7 @@ Aggregation only includes accepted tasks.
 
 ## For developers {#for-developers}
 
-- [Toloka API: Aggregated responses](../../api/concepts/aggregated-solutions.md)
+- [Toloka API: Aggregated responses](https://toloka.ai/docs/api/api-reference/#tag--aggregated-solution)
 - [Toloka-Kit recipe: Aggregate responses in pool](../../toloka-kit/recipes/aggregate-responses.md)
 
 ## Troubleshooting {#troubleshooting}

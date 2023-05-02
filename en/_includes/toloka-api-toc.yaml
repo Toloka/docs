@@ -1,172 +1,43 @@
 items:
-  - name: Overview
-    href: ../api/index.md
-  - name: API migration
-    href: ../api/api-migration.md
-    hidden: true
-  - name: Accessing the API
-    href: ../api/concepts/access.md
-  - name: Rate limiting
-    href: ../api/concepts/rate-limiting.md
-  - name: Quick start
-    items:
-      - name: Overview
-        href: ../api/concepts/quickstart.md
-      - name: Posting tasks
-        href: ../api/concepts/qs-placement.md
-      - name: Receiving responses
-        href: ../api/concepts/qs-results.md
-  - name: Project
-    items:
-      - name: Overview
-        href: ../api/concepts/project.md
-      - name: Create a project
-        items:
-          - name: Overview
-            href: ../api/concepts/create-prj.md
-          - name: Configuration for Template Builder
-            href: ../api/concepts/tb-config.md
-      - name: Edit a project
-        href: ../api/concepts/edit-prj.md
-      - name: Get the list of projects
-        href: ../api/concepts/get-prj-list.md
-      - name: Get project properties
-        href: ../api/concepts/get-prj.md
-      - name: Archive a project
-        href: ../api/concepts/archive-prj.md
-  - name: Pools
-    items:
-      - name: Overview
-        href: ../api/concepts/pool.md
-      - name: Create a pool
-        href: ../api/concepts/create-pool.md
-      - name: Close a pool for editing
-        href: ../api/concepts/close-pool-for-update.md
-      - name: Edit a pool
-        href: ../api/concepts/edit-pool.md
-      - name: Open a pool
-        href: ../api/concepts/open-pool.md
-      - name: Close a pool
-        href: ../api/concepts/close-pool.md
-      - name: Move a pool to the archive
-        href: ../api/concepts/archive-pool.md
-      - name: Clone a pool
-        href: ../api/concepts/clone-pool.md
-      - name: Get the list of pools
-        href: ../api/concepts/get-pool-list.md
-      - name: Get properties of a pool
-        href: ../api/concepts/get-pool.md
-      - name: Change pool priority
-        href: ../api/concepts/set-priority-pool.md
-  - name: Training
-    items:
-      - name: Overview
-        href: ../api/concepts/training.md
-      - name: Create a training pool
-        href: ../api/concepts/create-training.md
-      - name: Edit a training pool
-        href: ../api/concepts/edit-training.md
-      - name: Open a training
-        href: ../api/concepts/open-training.md
-      - name: Close a training
-        href: ../api/concepts/close-training.md
-      - name: Archive a training pool
-        href: ../api/concepts/archive-training.md
-      - name: Clone a training pool
-        href: ../api/concepts/clone-training.md
-      - name: Get a list of training pools
-        href: ../api/concepts/get-training-list.md
-      - name: Get training properties
-        href: ../api/concepts/get-training.md
-  - name: Subscriptions to events
-    items:
-      - name: Overview
-        href: ../api/concepts/webhook-subscriptions.md
-      - name: Create a subscription
-        href: ../api/concepts/put-webhook-subscriptions.md
-      - name: Get a subscription
-        href: ../api/concepts/get-webhook-subscriptions.md
-      - name: Get a list of subscriptions
-        href: ../api/concepts/get-webhook-subscriptions-list.md
-      - name: Delete a subscription
-        href: ../api/concepts/delete-webhook-subscriptions.md
-      - name: Notification format
-        href: ../api/concepts/using-webhook-subscriptions.md
-      - name: Send a test notification
-        href: ../api/concepts/post-webhook-subscriptions.md
-      - name: Event authentication
-        href: ../api/concepts/authentication.md
+  - name: Configuration for Template Builder
+    href: ../api/concepts/tb-config.md
   - name: Toloker selection
+    href: ../api/concepts/my_users.md
+  - name: Quality control rules
     items:
       - name: Overview
-        href: ../api/concepts/my_users.md
-      - name: Skills
-        items:
-          - name: Overview
-            href: ../api/concepts/skill.md
-          - name: Create a skill
-            href: ../api/concepts/create-skill.md
-          - name: Edit a skill
-            href: ../api/concepts/edit-skill.md
-          - name: Get the list of skills
-            href: ../api/concepts/get-skill-list.md
-          - name: Get the skill ID
-            href: ../api/concepts/get-skill.md
-          - name: Set the skill value
-            href: ../api/concepts/set-skill.md
-          - name: Get a list of Tolokers who have skills
-            href: ../api/concepts/get-user-skill-list.md
-          - name: Get a Toloker's skill value
-            href: ../api/concepts/get-user-skill.md
-          - name: Remove a skill for a Toloker
-            href: ../api/concepts/delete-skill.md
-      - name: Quality control rules
-        items:
-          - name: Overview
-            href: ../api/concepts/quality_control.md
-          - name: Control tasks
-            href: ../api/concepts/goldenset.md
-          - name: Majority vote
-            href: ../api/concepts/mv.md
-          - name: Compensation amount
-            href: ../api/concepts/earn_limit.md
-          - name: Skipped assignments
-            href: ../api/concepts/skipped.md
-          - name: Number of tasks completed
-            href: ../api/concepts/completed.md
-          - name: Fast responses
-            href: ../api/concepts/fast.md
-          - name: Rejected tasks
-            href: ../api/concepts/accept_ban.md
-          - name: Processing rejected and accepted assignments
-            href: ../api/concepts/reassessment.md
-          - name: Recompletion of assignments
-            href: ../api/concepts/restore-task-overlap.md
-      - name: Filters
-        items:
-          - name: Overview
-            href: ../api/concepts/filters.md
-          - name: Filter by profile data
-            href: ../api/concepts/filter-profile.md
-          - name: Filter by computed data
-            href: ../api/concepts/filter-computed.md
-          - name: Filter by skills
-            href: ../api/concepts/filter-skill.md
-          - name: Regions and their codes
-            href: ../api/concepts/regions.md
-            hidden: true
-      - name: Block access to tasks
-        items:
-          - name: Overview
-            href: ../api/concepts/ban.md
-          - name: Block access to tasks
-            href: ../api/concepts/ban-create.md
-          - name: Get a list of bans
-            href: ../api/concepts/ban-get-list.md
-          - name: Get information about a ban
-            href: ../api/concepts/ban-get-info.md
-          - name: Unblock access
-            href: ../api/concepts/ban-delete.md
+        href: ../api/concepts/quality_control.md
+      - name: Control tasks
+        href: ../api/concepts/goldenset.md
+      - name: Majority vote
+        href: ../api/concepts/mv.md
+      - name: Compensation amount
+        href: ../api/concepts/earn_limit.md
+      - name: Skipped assignments
+        href: ../api/concepts/skipped.md
+      - name: Number of tasks completed
+        href: ../api/concepts/completed.md
+      - name: Fast responses
+        href: ../api/concepts/fast.md
+      - name: Rejected tasks
+        href: ../api/concepts/accept_ban.md
+      - name: Processing rejected and accepted assignments
+        href: ../api/concepts/reassessment.md
+      - name: Recompletion of assignments
+        href: ../api/concepts/restore-task-overlap.md
+  - name: Filters
+    items:
+      - name: Overview
+        href: ../api/concepts/filters.md
+      - name: Filter by profile data
+        href: ../api/concepts/filter-profile.md
+      - name: Filter by computed data
+        href: ../api/concepts/filter-computed.md
+      - name: Filter by skills
+        href: ../api/concepts/filter-skill.md
+      - name: Regions and their codes
+        href: ../api/concepts/regions.md
+        hidden: true
   - name: HTTP proxy
     hidden: true
     items:
@@ -180,116 +51,16 @@ items:
         href: ../api/concepts/httpproxy-edit.md
       - name: Remove a proxy server registration
         href: ../api/concepts/httpproxy-delete.md
-  - name: Ways to upload tasks
-    href: ../api/concepts/upload-tasks.md
-  - name: Tasks
+  - name: Task actions
     items:
-      - name: Overview
+      - name: Ways to upload tasks
+        href: ../api/concepts/upload-tasks.md
+      - name: Merging tasks
         href: ../api/concepts/tasks.md
-      - name: Create one or multiple tasks
-        href: ../api/concepts/create-task.md
-      - name: Create multiple tasks
-        href: ../api/concepts/create-tasks-batch.md
-        hidden: true
-      - name: Get the list of tasks
-        href: ../api/concepts/get-tasks-list.md
-      - name: Get a task
-        href: ../api/concepts/get-task.md
-      - name: Edit a task
-        href: ../api/concepts/edit-task-overlap.md
-      - name: Stop assigning a task
-        href: ../api/concepts/set-min-task-overlap.md
-  - name: Task suites
+  - name: Subscriptions to events
     items:
-      - name: Overview
-        href: ../api/concepts/task-suite.md
-      - name: Create one or multiple task suites
-        href: ../api/concepts/create-task-suite.md
-      - name: Create multiple task suites
-        href: ../api/concepts/create-task-suite-batch.md
-        hidden: true
-      - name: Get the list of task suites
-        href: ../api/concepts/get-task-suite-list.md
-      - name: Get a task suite
-        href: ../api/concepts/get-task-suite.md
-      - name: Change the task suite overlap
-        href: ../api/concepts/edit-overlap.md
-      - name: Change task suite priority
-        href: ../api/concepts/edit-order.md
-      - name: Stop assigning a task suite
-        href: ../api/concepts/set-min-suite-overlap.md
-  - name: Tracking operations
-    items:
-      - name: Overview
-        href: ../api/concepts/operations.md
-      - name: Get the list of operations
-        href: ../api/concepts/get-operations-list.md
-      - name: Get operation details
-        href: ../api/concepts/get-operation.md
-      - name: Get the operation log
-        href: ../api/concepts/get-operation-log.md
-  - name: Getting responses
-    items:
-      - name: Overview
-        href: ../api/concepts/get-response.md
-      - name: Get responses
-        href: ../api/concepts/result.md
-      - name: Get response properties
-        href: ../api/concepts/get-assignment-id.md
-      - name: Files in responses
-        items:
-          - name: Overview
-            href: ../api/concepts/attachments.md
-          - name: Get the list of files
-            href: ../api/concepts/get-attachment-list.md
-          - name: Get file metadata
-            href: ../api/concepts/get-attachment.md
-          - name: Download file
-            href: ../api/concepts/download-attachment.md
-      - name: Aggregated responses
-        items:
-          - name: Overview
-            href: ../api/concepts/aggregated-solutions.md
-          - name: Aggregate responses in a pool
-            href: ../api/concepts/aggregate-by-pool.md
-          - name: Aggregate responses to a single task
-            href: ../api/concepts/aggregate-by-task.md
-          - name: Get aggregate responses
-            href: ../api/concepts/get-aggregated-result.md
-  - name: Checking completed tasks
-    href: ../api/concepts/accept.md
-  - name: Bonuses
-    items:
-      - name: Overview
-        href: ../api/concepts/bonus.md
-      - name: Issue bonuses
-        href: ../api/concepts/create-bonus.md
-      - name: Get a list of bonuses issued
-        href: ../api/concepts/get-bonus-list.md
-      - name: Get bonus properties
-        href: ../api/concepts/get-one-bonus.md
-  - name: Messages for Tolokers
-    items:
-      - name: Overview
-        href: ../api/concepts/messages.md
-      - name: To send a message
-        href: ../api/concepts/message-send.md
-      - name: Get a list of message threads
-        href: ../api/concepts/get-chain-list.md
-      - name: Reply to message thread
-        href: ../api/concepts/reply-message.md
-      - name: Move a message thread
-        href: ../api/concepts/move-message.md
-  - name: Get user metadata
-    href: ../api/concepts/get-user-metadata.md
-  - name: Account balance
-    href: ../api/concepts/balance.md
-  - name: Handling errors
-    href: ../api/concepts/errors.md
-  - name: Standard query parameters
-    href: ../api/concepts/standard-query-parameters.md
-  - name: Sorting the list of objects
-    href: ../api/concepts/sorting.md
-  - name: Libraries
-    href: ../api/concepts/libraries.md
+      - name: Notification format
+        href: ../api/concepts/using-webhook-subscriptions.md
+      - name: Event authentication
+        href: ../api/concepts/authentication.md
 base: en

@@ -86,7 +86,7 @@ If you want labeling to be done by Tolokers from different countries, you can [t
 
 ## For developers {#for-developers}
 
-- [Toloka API: Editing project](../../api/concepts/edit-prj.md)
+- [Toloka API: Editing project](https://toloka.ai/docs/api/api-reference/#put-/projects/-id-)
 - [Toloka-Kit recipe: Edit project](../../toloka-kit/recipes/edit-project.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
