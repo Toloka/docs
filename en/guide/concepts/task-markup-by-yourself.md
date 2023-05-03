@@ -20,15 +20,19 @@ Task markup is available only for [training pools](train.md) and [pools](../../g
 
 1. Make sure the pool isn't running.
 
-1. Click either **Control tasks** or **Training tasks** indicator of the **Tasks** block on the pool page.
+1. Go to the pool page and click either the **Control tasks** or **Training tasks** indicator in the **Tasks** block.
 
     ![Click Control or Training tasks](../_images/location-job/task-edit/control-training-tasks.png =400x)
 
 1. Create a control or a training task from another type of task clicking the appropriate button.
 
     ![Create control or training tasks](../_images/location-job/task-edit/create-from-tasks.png =700x)
+    
+1. Select the correct response in the task preview block.
 
-1. Select the responses that should be checked. (The list of the [output data fields](incoming.md) is on the right.)
+1. Select the [output data fields](incoming.md) that should be checked. 
+
+1. Add a hint if you're creating a training task.
 
 1. Click **Save and go to next**.
 
@@ -46,17 +50,17 @@ When creating control tasks, enter only correct responses that answer the questi
 
 {% endnote %}
 
-## Improve the reliability of control tasks {#answer_distribution}
+## How to improve the reliability of control tasks {#answer_distribution}
 
 After you have created the control tasks, make sure that different variations of correct responses occur with the same frequency. This will help avoid random guessing in responses.
 
-1. Go to the pool page and click the **Control tasks** indicator of the **Tasks** block.
+1. Go to the pool page and click the **Control tasks** indicator in the **Tasks** block.
 
 1. Check the **Distribution of correct responses for control tasks** chart.
 
     The distribution of responses is shown as a percentage.
 
-#### Example of response distribution
+### Example of response distribution
 
 {% list tabs %}
 
@@ -72,25 +76,37 @@ After you have created the control tasks, make sure that different variations of
 
 ## How to view the control tasks statistics {#task-statistics}
 
-- On the task markup page (**Responses** and **Correct** fields).
+You can view the number and percentage of correct responses to the control tasks or training tasks.
 
-- In the **Correct responses, %** field on the task edit page.
+To do this, go to the pool page and click the **Control tasks** or **Training tasks** indicator in the **Tasks** block.
+
+The response statistics is shown in the **Responses from Tolokers** and **Correct responses, %** columns.
+
+### Alternative way
+
+1. Click ![](../_images/other/three-points-button.svg) → **Edit** in the **Tasks** block on the pool page.
+
+1. Click the tab with the type of the task.
+
+1. Find the task in the list and click ![](../_images/edit.svg).
+
+The response statistics is shown in the **Responses** and **Correct** fields  at the right.
 
 ## How to edit tasks {#task-edit}
 
 1. Make sure the pool isn't running.
 
-1. Click `![](../_images/other/three-points-button.svg)` → **Edit** in the **Tasks** block on the pool page.
+1. Go to the pool page and click ![](../_images/other/three-points-button.svg) → **Edit** in the **Tasks** block.
 
 1. Click the tab with the type of the task.
 
-1. Find the task in the list and click ![](../_images/edit.svg) . Editing mode opens.
+1. Find the task in the list and click ![](../_images/edit.svg). Editing mode opens.
 
 ## How to delete a task from the pool {#delete-task}
 
 1. Make sure the pool isn't running.
 
-1. Click `![](../_images/other/three-points-button.svg)` → **Edit** in the **Tasks** block on the pool page.
+1. Go to the pool page and click ![](../_images/other/three-points-button.svg) → **Edit** in the **Tasks** block.
 
 1. Click the tab with the type of the task.
 
