@@ -36,7 +36,7 @@ View projects, pools, tasks, finance information | + | +
 [Post tasks](task_upload.md) | + | -
 [Get results](result-of-eval.md) | + | -
 Manage access to account | + | -
-Use [Toloka API](../../api/index.md) | + | -
+Use [Toloka API](https://toloka.ai/docs/api/api-reference/) | + | -
 Move tasks from [sandbox](sandbox.md) to Toloka production version | + | -
 [Top up balance](refill.md) | - | -
 

@@ -20,13 +20,7 @@ Follow the steps below to connect a new social account to your Toloka profile.
 
 - In the settings
 
-  1. Go to the **Profile** tab (or click [this link](https://platform.toloka.ai/requester/profile)). Scroll down to the **Authorization methods** section:
-
-      ![Update your authorization method](../_images/register/migration-settings.png =433x)
-
-  1. Choose **Confirm** to connect your Yandex social account or **Connect** next to one of the other social services to connect them.
-
-  1. Follow the authorization steps for the selected service. Once you sign in to the selected service, you will be redirected back to Toloka.
+  {% include [connect-social-account](../_includes/connect-social-account.md) %}
 
 {% endlist %}
 
@@ -52,21 +46,7 @@ You can switch to the old authorization page using the **Use legacy Toloka accou
 
 ## Removing social accounts {#remove-auth}
 
-To remove a social account from the list of the ones associated with your Toloka profile:
-
-1. Go to the **Profile** tab (or click [this link](https://platform.toloka.ai/requester/profile)). Scroll down to the **Authorization methods** section:
-
-    ![Remove social account](../_images/register/remove-social-account.png =433x)
-
-1. Choose **Disconnect** next to the social service you want to remove.
-
-The social service will be no longer associated with your Toloka account and you won't be able to use it to sign in.
-
-{% note info %}
-
-You must have at least one social account connected to your Toloka profile. For example, if you want to use Google account instead of GitHub, first connect the new account (GitHub) before you can remove the old one (Google).
-
-{% endnote %}
+{% include [remove-social-account](../_includes/remove-social-account.md) %}
 
 ## Updating OAuth tokens {#update-token}
 

@@ -41,7 +41,7 @@ You can generate up to **50** tokens.
 To test the created token, use the following shell command:
 
 ```bash
-curl -X GET 'https://toloka.dev/api/v1/requester' -H 'Authorization: OAuth YOUR_TOKEN'
+curl -X GET 'https://toloka.dev/api/v1/requester' -H 'Authorization: ApiKey YOUR_TOKEN'
 ```
 
 Replace the `YOUR_TOKEN` substring with the API token that you received and copied at the previous steps.
@@ -66,6 +66,8 @@ Now you can use the created API token to send other API requests: get the list o
 
 ## Further reading
 
-- [Toloka API](../../api/index.md)
+- [Toloka API](https://toloka.ai/docs/api/api-reference/)
+
+{% include [contact-support](../_includes/contact-support.md) %}
 
 {% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}

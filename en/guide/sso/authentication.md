@@ -82,4 +82,6 @@ Now you can create projects, pools, and upload tasks. You can also [generate API
 
 - [Generate API tokens](../concepts/api-token.md)
 
+{% include [contact-support](../_includes/contact-support.md) %}
+
 {% include [image-styles](../../../_includes/image-styles.md) %}

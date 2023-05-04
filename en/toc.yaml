@@ -31,6 +31,7 @@ items:
         href: guide/concepts/sandbox.md
       - name: Generating API tokens
         href: guide/concepts/api-token.md
+        hidden: true
   - name: Tutorials
     items:
       - name: List of examples
@@ -392,6 +393,9 @@ items:
         items:
           - name: Editing the profile
             href: guide/concepts/edit-profile.md
+          - name: Authorization methods
+            href: guide/concepts/authorization-methods.md
+            hidden: true
           - name: Notifications
             href: guide/concepts/notifications.md
           - name: About money
