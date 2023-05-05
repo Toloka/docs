@@ -221,7 +221,7 @@ Before you begin:
 
         [![Upload data. Distribution of correct responses for control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png =330x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/audio-classification/audio-classification-distribution.png)
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 

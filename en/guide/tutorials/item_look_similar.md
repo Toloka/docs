@@ -297,7 +297,7 @@ To create a pool:
 
         {% endnote %}
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 

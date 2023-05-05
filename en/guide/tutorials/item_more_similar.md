@@ -11,7 +11,7 @@ In the interface:
 1. Choose a preset:
 
     1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
-    
+
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
     1. Click **Do it myself**.
@@ -331,7 +331,7 @@ To create a [pool](../../glossary.md#pool):
 
     1. Click **Combine tasks into suites**.
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
