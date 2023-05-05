@@ -34,7 +34,7 @@ Gets the properties of a response.
 
 Parameter | Overview
 ----- | -----
-**response_id** | ID of the assignment to a Toloker.
+**response_id** | ID of the response from a Toloker.
 
 ## Headers {#headers}
 
