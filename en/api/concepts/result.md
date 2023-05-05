@@ -76,7 +76,7 @@ Toloker ID. ||
 
 Parameters to sort by:
 
-- `id` — ID of the task suite assignment.
+- `id` — ID of the assignment.
 - `created` — The date the task suite was assigned.
 - `submitted` — The date the task suite was completed.
 - `skipped` — The date the task suite was skipped.

@@ -80,7 +80,7 @@ Infomation about the pool, the task, and the Toloker who uploaded the file. ||
 ID of the Toloker who uploaded the file. ||
 || **details.assignment_id** | **string**
 
-ID of the task suite assignment to a Toloker. ||
+ID of the assignment to a Toloker. ||
 || **details.pool_id** | **string**
 
 Pool ID. ||
