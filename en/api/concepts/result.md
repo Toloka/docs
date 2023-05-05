@@ -144,7 +144,7 @@ You can set up the display of the list of responses in parts (for example, 10 re
 ## Response {#response}
 
 ```json
-{"items" : [{task suite #1}, {task suite #2}, ... {task suite #n}], "has_more": true}
+{"items" : [{response #1}, {response #2}, ... {response #n}], "has_more": true}
 ```
 
 #|
