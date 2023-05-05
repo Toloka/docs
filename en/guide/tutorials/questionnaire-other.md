@@ -142,7 +142,7 @@ You can create a pool using one of the ways:
 
   1. [Upload](#upload) your task data.
 
-  1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+  1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
       {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
@@ -232,7 +232,7 @@ You can create a pool using one of the ways:
 
   1. [Upload](#upload) your task data.
 
-  1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+  1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
       {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 

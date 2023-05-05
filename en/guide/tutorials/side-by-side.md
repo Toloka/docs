@@ -191,7 +191,7 @@ Before you begin:
 
         [![Upload your file. Step 5.4](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.4.png =340x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.4.png)
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 

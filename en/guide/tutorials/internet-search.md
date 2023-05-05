@@ -197,7 +197,7 @@ Before you begin:
 
         {% include [toloka-requester-source-control-percent](../_includes/toloka-requester-source/id-toloka-requester-source/control-percent.md) %}
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 

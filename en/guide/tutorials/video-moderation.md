@@ -221,7 +221,7 @@ Before you begin:
 
     1. Note the **Distribution of correct responses for control tasks** graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
