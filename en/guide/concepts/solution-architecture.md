@@ -48,13 +48,13 @@ Before creating a project, answer the questions:
 
 - Do I have data to be used as the basis for completing your task?
 
-  You can entrust the collection of data for analysis to Tolokers as part of a separate project.
+    You can entrust the collection of data for analysis to Tolokers as part of a separate project.
 
 - Do I need to filter my data?
 
-  Let's say you want to create a task titled “Select road signs in an image”, but you aren't sure that all images contain road signs. Create a separate project with a task titled “Are there road signs in an image?” to filter out unnecessary images.
+    Let's say you want to create a task titled “Select road signs in an image”, but you aren't sure that all images contain road signs. Create a separate project with a task titled “Are there road signs in an image?” to filter out unnecessary images.
 
-  A data filtering task is usually cheap and can help you save on the most important task and simplify the task instructions and interface.
+    A data filtering task is usually cheap and can help you save on the most important task and simplify the task instructions and interface.
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
@@ -80,27 +80,27 @@ The easier the task, the better the results. If your task contains more than one
 
 - If some questions in the task need additional filtering.
 
-  {% cut "Example" %}
+    {% cut "Example" %}
 
-  In the task you show a Toloker a photo of a cat and ask them to answer questions like “What color is the cat?” and “Is the cat asleep?”. It's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
+    In the task, you show a Toloker a photo of a cat and ask them to answer questions like “What color is the cat?” and “Is the cat asleep?”. It's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
 
-  {% endcut %}
+    {% endcut %}
 
 - If different Toloker skills are required to answer different questions of the task.
 
-  {% cut "Example" %}
+    {% cut "Example" %}
 
-  Let's say that, in addition to the questions from the previous step, you want to find out the cat's breed. To answer this question, you need Tolokers who have sufficient knowledge in this area.
+    Let's say that, in addition to the questions from the previous step, you want to find out the cat's breed. To answer this question, you need Tolokers who have sufficient knowledge in this area.
 
-  {% endcut %}
+    {% endcut %}
 
 - If a Toloker must provide a general answer based on multiple criteria.
 
-  {% cut "Example" %}
+    {% cut "Example" %}
 
-  The task is to review multiple parameters of an ad and decide which category of buyers will be interested in it. It's better to ask specific questions about the ad and make a decision based on combinations of answers yourself. This way the results will be more accurate.
+    The task is to review multiple parameters of an ad and decide which category of buyers will be interested in it. It's better to ask specific questions about the ad and make a decision based on combinations of answers yourself. This way the results will be more accurate.
 
-  {% endcut %}
+    {% endcut %}
   
 Some tasks consist of several questions, but they don't need any decomposition. For example:
 
