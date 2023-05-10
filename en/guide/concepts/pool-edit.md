@@ -96,7 +96,7 @@ Turn on this option to [review](accept.md) the [completed tasks](../../glossary.
 
 Set the time period when you can check the tasks and reject them if the results are poor.
 
-Learn more about task review [here](offline-accept.md) and [here](accept.md).
+Learn more about the [manual review](offline-accept.md) and [reviewing Tolokers' responses](accept.md).
 
 ### Review period in days
 

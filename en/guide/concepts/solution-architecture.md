@@ -20,7 +20,7 @@ We recommend that you think through the architecture of a solution consisting of
 
 - The result from one project can be the [input](../../glossary.md#input-output-data) for another project.
 
-- You can assign a [skill](../../glossary.md#skill) to Tolokers in one project and filter Tolokers by this [skill](../../glossary.md#skill) in another project.
+- You can assign a [skill](../../glossary.md#skill) to Tolokers in one project and filter Tolokers by this skill in another project.
 
 After you decompose your project:
 
@@ -44,25 +44,25 @@ Usually, you can make a separate project with tasks to prepare data and check To
 
 ### Preparing data within a separate project {#concept_l4v_h4g_nlb}
 
-Before creating a project, answer those questions:
+Before creating a project, answer the questions:
 
-- Do you have data to be used as the basis for completing your task?
+- Do I have data to be used as the basis for completing your task?
 
-    You can entrust the collection of data for analysis to Tolokers as part of a separate project.
+  You can entrust the collection of data for analysis to Tolokers as part of a separate project.
 
 - Do I need to filter my data?
 
-    Let's say you want to create a task titled “Select road signs in an image”, but you aren't sure that all images contain road signs. Create a separate project with a task titled “Are there road signs in an image?” to filter out unnecessary images.
+  Let's say you want to create a task titled “Select road signs in an image”, but you aren't sure that all images contain road signs. Create a separate project with a task titled “Are there road signs in an image?” to filter out unnecessary images.
 
-    A data filtering task is usually cheap and can help you save on the most important task and simplify the task instructions and interface.
+  A data filtering task is usually cheap and can help you save on the most important task and simplify the task instructions and interface.
 
 ### Reviewing responses in a separate project {#concept_vxt_h4g_nlb}
 
-    {% note alert %}
+{% note alert %}
 
-    In the assignments review, specify the [review period](../../glossary.md#review-period) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
+In the [pool settings](pool-edit.md), specify the [review period](../../glossary.md#review-period) after which the tasks are accepted automatically. You need to make sure that this timeframe allows enough time to complete the project for checking responses and then reject tasks in the general task project.
 
-    {% endnote %}
+{% endnote %}
 
 - You can set up a separate project where other Tolokers check responses in submitted assignments. For example, if you want to create a project titled “Find similar products”, enable [manual review](../../glossary.md#assignment-review) in this project and create a separate project with the “Are these items similar?” task to review responses, reject incorrect responses, and avoid paying for them.
 
@@ -82,7 +82,7 @@ The easier the task, the better the results. If your task contains more than one
 
   {% cut "Example" %}
 
-    If you show a Toloker a photo of a cat and ask them to answer questions like “What color is the cat?” and “Is the cat asleep?”, it's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
+  In the task you show a Toloker a photo of a cat and ask them to answer questions like “What color is the cat?” and “Is the cat asleep?”. It's better to divide this task into two projects. To answer the second question, you'll need an additional data filtering stage, since the cat's eyes should be visible in the photo.
 
   {% endcut %}
 
@@ -90,7 +90,7 @@ The easier the task, the better the results. If your task contains more than one
 
   {% cut "Example" %}
 
-    Let's say that, in addition to the questions from the previous step, you want to find out the cat's breed. To answer this question, you need Tolokers who have sufficient knowledge in this area.
+  Let's say that, in addition to the questions from the previous step, you want to find out the cat's breed. To answer this question, you need Tolokers who have sufficient knowledge in this area.
 
   {% endcut %}
 
@@ -98,7 +98,7 @@ The easier the task, the better the results. If your task contains more than one
 
   {% cut "Example" %}
 
-    The task is to review multiple parameters of an ad and decide which category of buyers will be interested in it. It's better to ask specific questions about the ad and make a decision based on combinations of answers yourself. This way the results will be more accurate.
+  The task is to review multiple parameters of an ad and decide which category of buyers will be interested in it. It's better to ask specific questions about the ad and make a decision based on combinations of answers yourself. This way the results will be more accurate.
 
   {% endcut %}
   
