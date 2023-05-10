@@ -159,12 +159,10 @@ paths:
             type: string
 
       summary: Получить список проектов
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       responses:
@@ -179,12 +177,10 @@ paths:
       tags:
         - app-project
       summary: Создать новый проект
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       requestBody:
@@ -207,12 +203,10 @@ paths:
       tags:
         - app-project
       summary: Получить информацию о проекте
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -280,15 +274,12 @@ paths:
       tags:
         - app-project
       summary: Архивировать проект
-      description: >-
+      description: |
         Проект переходит в статус ARCHIVE.
-
 
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/archive):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -308,15 +299,12 @@ paths:
       tags:
         - app-project
       summary: Разархивировать проект
-      description: >-
+      description: |
         Проект переходит в последний статус, который был перед архивированием.
-
 
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/unarchive):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -336,12 +324,10 @@ paths:
       tags:
         - item
       summary: Получить информацию об элементе разметки
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items/-item_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -376,12 +362,10 @@ paths:
       tags:
         - item
       summary: Получить список всех элементов в проекте
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/items):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -528,12 +512,10 @@ paths:
       tags:
         - item
       summary: Добавить новый элемент в пакет данных
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -581,15 +563,12 @@ paths:
       tags:
         - item
       summary: Добавить несколько элементов в пакет данных
-      description: >-
+      description: |
         Не более 10 000 элементов в одном запросе.
-
 
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/items/bulk):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -644,12 +623,10 @@ paths:
       tags:
         - batch
       summary: Получить список пакетов данных в проекте
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -775,9 +752,7 @@ paths:
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: '#/components/schemas/BatchListResult'
+                $ref: '#/components/schemas/BatchListResult'
           description: OK
         '404':
           description: Пакет данных не найден.
@@ -790,18 +765,14 @@ paths:
       tags:
         - batch
       summary: Создать новый пакет данных с первой пачкой элементов
-      description: >-
-        Создает новый пакет данных с не более 10,000 элементов в запросе.
-
+      description: |
+        Создает новый пакет данных с не более 10 000 элементов в запросе.
 
         Устанавливает приоритет созданного пакета данных для разметки в соответствии со значением параметра `priority_order`: `ONE` (для наивысшего приоритета), `TWO`, `THREE`, `FOUR`, `FIVE` (для низшего приоритета, значение по умолчанию). Если значение `priority_order` не задано в запросе, пакет данных будет создан со значением `priority_order = FIVE`.
 
-
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -857,15 +828,12 @@ paths:
       tags:
         - batch
       summary: Отправить пакет данных с синхронной загрузкой на разметку
-      description: >-
+      description: |
         Отправляет пакет данных с синхронной загрузкой на разметку. Используется только для решений с синхронным протоколом.
-
 
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/sync):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -907,12 +875,10 @@ paths:
       tags:
         - batch
       summary: Получить информацию о пакете данных
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/app-projects/-app_project_id-/batches/-batch_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -946,18 +912,14 @@ paths:
       tags:
         - batch
       summary: Обновить пакет данных
-      description: >
+      description: |
         Позволяет обновить имя и приоритет пакета данных.
-
 
         Наивысший приорит получают пакеты данных со значением `priority_order` равным `ONE`. Элементы этого пакета данных будут отправлены в разметку первыми. Значение по-умолчанию — `FIVE`. Если значение `name` или `priority_order` не задано в запросе, они останутся без изменений.
 
-
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#patch-/app-projects/-app_project_id-/batches/-batch_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -999,15 +961,12 @@ paths:
       tags:
         - batch
       summary: Запустить обработку пакета данных
-      description: >-
+      description: |
         Запускается асинхронно.
-
 
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/start):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -1033,15 +992,12 @@ paths:
       tags:
         - batch
       summary: Остановить обработку пакета данных
-      description: >-
+      description: |
         Остановить обработку можно только для пакета данных в статусе **PROCESSING**.
-
 
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/stop):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -1067,15 +1023,74 @@ paths:
       tags:
         - batch
       summary: Возобновить обработку пакета данных
-      description: >-
+      description: |
         Возобновить обработку можно только для пакета данных в статусе **STOPPING** и **STOPPED**.
-
 
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/resume):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
 
+        {% endnote %}
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: batch_id
+          in: path
+          description: ID пакета данных.
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: OK
+
+  /app-projects/{app_project_id}/batches/{batch_id}/archive:
+    post:
+      tags:
+        - batch
+      summary: Архивировать пакет данных
+      description: |
+        Используется для скрытия данных. Архивировать можно только не необрабатываемые батчи, обрабатываемые батчи нужно остановить. Батч получает статус `ARCHIVED`.
+
+        {% note tip %}
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/archive):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
+
+        {% endnote %}
+      parameters:
+        - name: app_project_id
+          in: path
+          description: ID проекта.
+          required: true
+          schema:
+            type: string
+        - name: batch_id
+          in: path
+          description: ID пакета данных.
+          required: true
+          schema:
+            type: string
+
+      responses:
+        '200':
+          description: OK
+
+  /app-projects/{app_project_id}/batches/{batch_id}/unarchive:
+    post:
+      tags:
+        - batch
+      summary: Разрхивировать пакет данных
+      description: |
+        Используется для возвращения пакету статуса, предшествующего архивации, с возможной последующей обработкой.
+
+        {% note tip %}
+
+        **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/unarchive):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
 
         {% endnote %}
       parameters:
@@ -1160,12 +1175,10 @@ paths:
             type: string
 
       summary: Получить список шаблонов проектов (Apps)
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/apps):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       responses:
@@ -1183,12 +1196,10 @@ paths:
       tags:
         - app
       summary: Информация о шаблоне проекта
-      description: >
+      description: |
         {% note tip %}
 
-
         **Попробуйте [новый справочник API](https://toloka.ai/docs/api/apps-reference/#get-/apps/-app_id-):** подробно расписанные параметры, примеры запросов и ответов, образцы кода на разных языках программирования.
-
 
         {% endnote %}
       parameters:
@@ -1560,6 +1571,7 @@ components:
           description: Состояние пакета данных, вычисляется на основе состояний элементов входящих в его состав.
           enum:
             - NEW
+            - QUEUED
             - PROCESSING
             - COMPLETED
             - ERROR
@@ -1610,13 +1622,36 @@ components:
         items_processed_count:
           type: integer
           description: Количество размеченных элементов.
-        eta:
-          type: string
-          format: date-time
-          description: Ожидаемая дата и время завершения обработки пакета данных. Дата и время приводятся по UTC в формате ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]).
         items_per_state:
           type: object
           description: Статистика по количеству элементов в каждом состоянии.
+        current_time:
+          type: string
+          format: date-time
+          description: |
+            Дата и время на стороне сервера на момент формирования ответа.
+            Формат соответствует ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]) в UTC.
+        etd:
+          type: string
+          format: date-time
+          description: |
+            Ожидаемая дата и время завершения обработки пакета данных.
+            Присутствует в ответах, если пакет находится в статусе `QUEUED`, иначе `null`.
+            Формат соответствует ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]) в UTC.
+        eta:
+          type: string
+          format: date-time
+          description: |
+            Ожидаемая дата и время окончания обработки пакета данных.
+            Присутствует в ответах, если пакет находится в статусах `QUEUED` или `PROCESSING`, иначе `null`.
+            Формат соответствует ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]) в UTC.
+        app_project_eta:
+          type: string
+          format: date-time
+          description: |
+            Ожидаемая дата и время окончания обработки всех пакетов данных, относящихся к проекту.
+            Присутствует, если в проекте есть пакеты в статусах `QUEUED` или `PROCESSING`, иначе `null`.
+            Формат соответствует ISO 8601 (YYYY-MM-DDThh:mm:ss[.sss]) в UTC.
         priority_order:
           type: string
           description: Приоритет запуска пакета данных. `ONE` — самый высокий, элементы пакета данных с таким приоритетом будут отправлены в разметку первыми. По-умолчанию — `FIVE`.
