@@ -24,7 +24,7 @@ In the interface:
 
     1. Optionally add a **Private comment**.
 
-1. Edit the [task interface](../../glossary.md#task-interface). The output data format depends on the interface editor, so choose the same editor as in [Project 2](image-segmentation-project2.md).
+1. Edit the [task interface](../../glossary.md#task-interface). The output data format depends on the interface editor, so choose the same editor as in [project 2](image-segmentation-project2.md).
 
    {% list tabs %}
 
@@ -37,7 +37,7 @@ In the interface:
           Input data fields used in the project:
 
           - `image` — image address;
-          - `result` — an array with the selected area coordinates;
+          - `selection` — an array with the selected area coordinates;
           - `assignment_id` — task ID.
 
           The Toloker's response will be recorded in the `verdict` output data field.
@@ -55,7 +55,7 @@ In the interface:
               "hidden": false,
               "required": true
             },
-            "result": {
+            "selection": {
               "type": "array_json",
               "hidden": false,
               "required": false
@@ -267,7 +267,7 @@ In the interface:
 
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-    1. Prepare a [file](../../glossary.md#tsv) with tasks.
+    1. Prepare a [file with tasks](../../glossary.md#tsv).
 
         1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 2](image-segmentation-project2.md).
 
@@ -339,12 +339,9 @@ In the interface:
 
 ## Check the completed tasks {#check_results}
 
-Since the [manual review](image-segmentation-project2.md) option is enabled in the pool settings for **project 2**, you should check the Tolokers' responses within the time limit set in the **Review period** field.
+Since the [manual review](image-segmentation-project2.md) option is enabled in the pool settings for [project 2](image-segmentation-project2.md), you should check the Tolokers' responses within the time limit set in the **Review period** field.
 
-You can check the results in two ways:
-
-- In the results file.
-- In the pool interface.
+You can check the results in two ways: in the results file or in the pool interface.
 
 {% list tabs %}
 
