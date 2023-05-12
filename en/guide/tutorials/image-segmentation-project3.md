@@ -30,7 +30,7 @@ In the interface:
 
     - Template Builder
 
-      1. Create a template based on the [Checking the selected area](https://ya.cc/t/Z9GC6HzT3ttEf6) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
+      1. Create a template based on the [Checking the selected area](https://ya.cc/t/BgP1m3pZ4BzTJT) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
 
       1. To see the input and output data fields, click **Show specifications** in the **Data specification** section.
 
@@ -90,7 +90,7 @@ In the interface:
 
           1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../_images/settings.svg) in the **Task interface** block on the project page).
 
-          1. In the **html** block, replace the current code with the following:
+          1. In the **HTML** block, replace the current code with the following:
 
               ```plaintext
               <!-- editor for selecting objects that lets you add an area in advance -->
@@ -101,7 +101,7 @@ In the interface:
               {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
               ```
 
-          1. In the **css** block, replace the code with the following:
+          1. In the **CSS** block, replace the code with the following:
 
               ```css
               /* hide the button for polygon selection */
@@ -277,13 +277,9 @@ In the interface:
 
         1. Rename the `ASSIGNMENT:assignment_id` column to `INPUT:assignment_id`.
 
-        1. Delete the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
+        1. Delete the `ACCEPT:verdict:` and `ACCEPT:comment:` columns.
 
-        1. Add input data, for example:
-        ```
-        [{""type"":""rectangle"",""data"":{""p1"":{""x"":0.2421,""y"":0.98871},""p2"":{""x"":0.93663,""y"":0.8776}}}]
-        ```
-        and save the file.
+        1. Save the file.
 
         {% note tip %}
 
@@ -341,11 +337,11 @@ In the interface:
 
 Since the [manual review](image-segmentation-project2.md) option is enabled in the pool settings for [project 2](image-segmentation-project2.md), you should check the Tolokers' responses within the time limit set in the **Review period** field.
 
-You can check the results in two ways: in the results file or in the pool interface.
+You can check the results in two ways.
 
 {% list tabs %}
 
-- Review assignments in the results file
+- In the results file
 
   1. In the text or spreadsheet editor, open the file you received after aggregating the results.
 
@@ -395,7 +391,7 @@ You can check the results in two ways: in the results file or in the pool interf
 
       In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
 
-- Review assignments in the pool interface
+- In the pool interface
 
   1. Open the pool page in [project 2](image-segmentation-project2.md).
 
