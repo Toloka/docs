@@ -30,7 +30,7 @@ In the interface:
 
     - Template Builder
 
-      1. Create a template based on the [Checking the selected area](https://ya.cc/t/BgP1m3pZ4BzTJT) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
+      1. Create a template based on the [Checking the selected area](https://ya.cc/t/AKDvkBw44CFb73) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
 
       1. To see the input and output data fields, click **Show specifications** in the **Data specification** section.
 
@@ -178,7 +178,6 @@ In the interface:
       1. If everything is OK, close the preview tab. If not, check the data you inserted in the code blocks.
 
    {% endlist %}
-
 
 1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
