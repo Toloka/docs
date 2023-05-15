@@ -32,7 +32,6 @@ To register in Toloka as a client and post tasks for Tolokers, you need to have 
 - Facebook
 - GitHub
 - Microsoft
-- Yandex ID
 
 {% note info %}
 

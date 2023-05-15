@@ -62,15 +62,15 @@ Please note, that any user with full access rights to the account can manage the
 
 If your account has SSO authentication enabled, you can log in using your business email address.
 
-1. Go to the Toloka login page [here](https://passport.toloka.ai/auth/list?origin=toloka_requesters&retpath=https%3A%2F%2Fplatform.toloka.ai%2Fsignup%2Frequester%3FauthRole%3Drequester).
+1. Go to the Toloka login page [here]({{ yandex-toloka }}).
 
-1. Click **Login with SSO**:
+1. Click **Continue with SSO**:
 
-    [![Login with SSO](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/sso/toloka-login.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/sso/toloka-login.png)
+    ![Continue with SSO](../_images/sso/toloka-login.png =465x)
 
 1. At the next screen, enter your business email address (for example, `john.smith@microsoft.com`) and click **Log in**:
 
-    [![Enter email and log in](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/sso/toloka-ms-sso-login.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/sso/toloka-ms-sso-login.png)
+    ![Enter email and log in](../_images/sso/toloka-ms-sso-login.png =465x)
 
 1. You will be redirected to your company SSO sign-in page. Follow the page steps to sign in using your business email address.
 
@@ -84,4 +84,4 @@ Now you can create projects, pools, and upload tasks. You can also [generate API
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}
