@@ -4,13 +4,13 @@ Checks whether the original value is equal to the specified value. If it matches
 
 When substituting values, you can refer to `data.*` or another element using `$ref`. You can also use [helpers](helpers.md) and [conditions](conditions.md) to get the value.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asS3V)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/2RjfdQbt3tz7xo)
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "condition.equals" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "condition.equals" | Set component type. ||
 || `data` | _any_ | Original value. If not specified, it uses the value returned by the parent component (the component that contains `condition.equals`).
 
 How to pass a value:
@@ -19,7 +19,7 @@ How to pass a value:
 - [Get the value from your data](../operations/work-with-data.md).
 - Refer to another element using `$ref`.
 - Use [helpers](helpers.md) and [conditions](conditions.md) to get the value. ||
-  || `hint` | _string_ | Validation error message that a Toloker will see ||
+  || `hint` | _string_ | Validation error message that a Toloker will see. ||
   || `to`<span style="color: red">\*</span> | _any_ | The value to compare with the original.
 
 How to pass a value:
@@ -29,3 +29,5 @@ How to pass a value:
 - Refer to another element using `$ref`.
 - Use [helpers](helpers.md) and [conditions](conditions.md) to get the value. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

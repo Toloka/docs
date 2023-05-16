@@ -6,21 +6,27 @@ Gets the list of operations.
 
 ## Request {#query}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/operations):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/operations
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/operations
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/operations
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/operations
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +38,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -63,15 +69,22 @@ Parameters to sort by:
 - `finished` — The UTC date and time when the operation was finished, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** |
-[limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [submitted_gt](./standard-query-parameters.md#submitted_gt), [submitted_gte](./standard-query-parameters.md#submitted_gte), [submitted_lt](./standard-query-parameters.md#submitted_lt), [submitted_lte](./standard-query-parameters.md#submitted_lte), [finished_gt](./standard-query-parameters.md#finished_gt), [finished_gte](./standard-query-parameters.md#finished_gte), [finished_lt](./standard-query-parameters.md#finished_lt), [finished_lte](./standard-query-parameters.md#finished_lte).
+|| **Standard query parameters** | [limit](standard-query-parameters.md#limit), [id_gt](standard-query-parameters.md#id_gt), [id_gte](standard-query-parameters.md#id_gte), [id_lt](standard-query-parameters.md#id_lt), [id_lte](standard-query-parameters.md#id_lte), [submitted_gt](standard-query-parameters.md#submitted_gt), [submitted_gte](standard-query-parameters.md#submitted_gte), [submitted_lt](standard-query-parameters.md#submitted_lt), [submitted_lte](standard-query-parameters.md#submitted_lte), [finished_gt](standard-query-parameters.md#finished_gt), [finished_gte](standard-query-parameters.md#finished_gte), [finished_lt](standard-query-parameters.md#finished_lt), [finished_lte](standard-query-parameters.md#finished_lte).
 ||
 |#
 
 ## Response {#response}
 
-Contains a list of operations in the `items` array:
-
 ```json
 {"items": [{operation details 1}, {operation details 2}, ... {operation details n}], "has_more": false}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains a list of operations. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

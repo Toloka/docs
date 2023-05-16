@@ -1,5 +1,5 @@
 # TextHRRASA
-`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/texts/text_hrrasa.py#L11)
+`crowdkit.aggregation.texts.text_hrrasa.TextHRRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/texts/text_hrrasa.py#L11)
 
 ```python
 TextHRRASA(
@@ -42,7 +42,7 @@ from sentence_transformers import SentenceTransformer
 encoder = SentenceTransformer('all-mpnet-base-v2')
 hrrasa = TextHRRASA(encoder=encoder.encode)
 df, gt = load_dataset('crowdspeech-test-clean')
-df['text'] = df['text'].apply(lambda s: s.lower())
+df['text'] = df['text'].str.lower()
 result = hrrasa.fit_predict(df)
 ```
 ## Methods Summary

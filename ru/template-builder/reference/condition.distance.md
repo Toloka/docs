@@ -1,4 +1,4 @@
-# @yandex-toloka/condition.distance
+# @toloka/condition.distance
 
 {% include [deprecate](../../_includes/deprecate.md) %}
 
@@ -8,13 +8,13 @@
 
 За передачу координат устройства отвечает компонент [data.location](data.location.md). Вы можете использовать его без `condition.distance`, если вам нужно считать координаты устройства исполнителя без сравнения с заданными.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TpUxX)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/1UxiHDb03y5bN3)
 
 ## Свойства компонента {#properties}
 
 #|
 || **Название** | **Тип** | **Описание** ||
-|| `type`<span style="color: red">\*</span> | "@yandex-toloka/condition.distance" | Задает тип компонента. ||
+|| `type`<span style="color: red">\*</span> | "@toloka/condition.distance" | Задает тип компонента. ||
 || `from` | _string_ | Координаты, которые будут сравниваться с координатами из свойства `to`. ||
 || `hint` | _string_ | Сообщение об ошибке валидации, которое увидит исполнитель ||
 || `max` | _number_ | Расстояние в метрах, на которое могут отличаться заданные и переданные координаты. ||

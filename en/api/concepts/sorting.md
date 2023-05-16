@@ -1,10 +1,10 @@
 # Sorting the list of objects
 
-When you request a list of objects using the GET method, you can specify the parameters to sort the list by. Sorting is set in the request using the **sort** query parameter.
+When you request a list of objects using the `GET` method, you can specify the parameters to sort the list by. Sorting is set in the request using the **sort** query parameter.
 
 {% note info %}
 
-Lists of objects support various sorting options. For more information about the parameters, see the GET request description for each object.
+Lists of objects support various sorting options. For more information about the parameters, see the `GET` request description for each object.
 
 {% endnote %}
 
@@ -23,7 +23,7 @@ Lists of objects support various sorting options. For more information about the
 - [Responses](result.md)
 - [Files in responses](get-attachment-list.md)
 - [Aggregated responses](get-aggregated-result.md)
-- [Rewards](get-bonus-list.md)
+- [Bonuses](get-bonus-list.md)
 - [Threads of messages to Tolokers](get-chain-list.md)
 
 {% endcut %}
@@ -45,3 +45,5 @@ The order of parameters affects the sorting sequence.
 {% endnote %}
 
 For example, when using `sort=param1,param2`, the list is sorted in ascending order by the `param1` values first, and then by the `param2` values. To change the sorting sequence, switch the parameters around: `sort=param2,param1`.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

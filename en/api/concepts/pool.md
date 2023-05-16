@@ -16,6 +16,12 @@ Wait for the operation completion (changing its [status](get-operation.md) to `S
 
 ## Methods {#methods}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--pool):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Method | Endpoint | Overview
 ----- | ----- | -----
 POST | [/pools](create-pool.md) | Creates a pool.
@@ -27,8 +33,10 @@ POST | [/pools/<pool_id>/archive](archive-pool.md) | Moves a pool to the archive
 POST | [/pools/<pool_id>/clone](clone-pool.md) | Creates a duplicate pool.
 GET | [/pools](get-pool-list.md) | Gets a list of created pools (including archived pools).
 GET | [/pools/<pool_id>](get-pool.md) | Gets the properties of a pool.
-PATCH | [/pools/pool_id>](set-priority-pool.md) | Changes the priority of a pool.
+PATCH | [/pools/<pool_id>](set-priority-pool.md) | Changes the priority of a pool.
 
 ## Learn more {#links}
 
 - [More information about pools](../../guide/concepts/pool-main.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -1,5 +1,5 @@
 # update_project
-`toloka.async_client.client.AsyncTolokaClient.update_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.update_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async update_project(
@@ -9,18 +9,18 @@ async update_project(
 )
 ```
 
-Makes changes to the project
+Updates all project parameters in Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`project_id`|**str**|<p>Project ID that will be changed.</p>
-`project`|**[Project](toloka.client.project.Project.md)**|<p>A project object with all the fields: those that will be updated and those that will not.</p>
+`project_id`|**str**|<p>The ID of the project to be updated.</p>
+`project`|**[Project](toloka.client.project.Project.md)**|<p>The project with new parameters.</p>
 
 * **Returns:**
 
-  Project object with all fields.
+  The project with updated parameters.
 
 * **Return type:**
 
@@ -30,5 +30,7 @@ Makes changes to the project
 
 
 ```python
-updated_project = toloka_client.update_project(project_id=old_project.id, project=new_project_object)
+updated_project = toloka_client.get_project(project_id='1')
+updated_project.private_comment = 'example project'
+updated_project = toloka_client.update_project(project_id=updated_project.id, project=updated_project)
 ```

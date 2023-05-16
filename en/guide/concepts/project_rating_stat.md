@@ -15,33 +15,13 @@ The project rating is available to Tolokers. By default, the list of tasks is so
 
 The project rating is the average rating across all categories. Pay particular attention to the categories for which you got the least points.
 
-{% cut "Low rating for “Will you take similar tasks in the future”" %}
+{% include [troubleshooting-low-rating-similar-tasks](../_includes/troubleshooting/result-questions/low-rating-similar-tasks.md) %}
 
-Perhaps the Tolokers found your tasks too difficult. Try to simplify them.
+{% include [troubleshooting-low-rating-instructions](../_includes/troubleshooting/result-questions/low-rating-instructions.md) %}
 
-{% endcut %}
+{% include [troubleshooting-low-rating-interface](../_includes/troubleshooting/result-questions/low-rating-interface.md) %}
 
-{% cut "Low rating for “Clarity of instructions”" %}
-
-Shorten instructions and rewrite using simpler language. Add pictures and examples.
-
-{% endcut %}
-
-{% cut "Low rating for “Task interface usability”" %}
-
-Make the interface [more user-friendly](spec.md) and don't make the Toloker complete unnecessary actions. Use keyboard shortcuts.
-
-Starting from December 15, 2021, tasks in pools are automatically available in the web version of Toloka and the mobile app. If your task isn't available on mobile devices, it means that you might have forgotten to add the {% if locale == "en-com" %}**Client**{% endif %} filter.
-
-{% endcut %}
-
-{% cut "Low rating for “Communication with the requester”" %}
-
-Reply to [messages from Tolokers](messaging.md) regularly. Try to provide feedback as fast as possible. Correct errors promptly and use mailing lists to notify Tolokers of changes.
-
-{% endcut %}
-
-If you don't understand what the problem is, run a mini-survey and ask the Tolokers who completed your tasks what they like and what they don't like.
+{% include [troubleshooting-low-rating-communication](../_includes/troubleshooting/result-questions/low-rating-communication.md) %}
 
 {% endcut %}
 

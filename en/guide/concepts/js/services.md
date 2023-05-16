@@ -6,64 +6,65 @@ The task interface configuration guide describes the features of the HTML/JS/CSS
 
 {% endnote %}
 
-## Geolocation {#Geolocation}
+## Geolocation {#geolocation}
 
-Gets the GPS coordinates of the Toloker, if they are available. In `TaskSuite` and `Task`, it is available via `this.geolocation`.
+Gets the GPS coordinates of the Toloker, if they are available. In the [TaskSuite](tasksuite.md) and [Task](task.md) classes, it is available via `this.geolocation`.
 
 Methods:
 
-#### getCurrentPosition(success, error, options)
+### getCurrentPosition(success, error, options) {#getcurrentposition}
 
 Duplicates the [navigator.geolocation.getCurrentPosition()](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/getCurrentPosition) functionality.
-#### watchPosition(success, error, options)
+
+### watchPosition(success, error, options) {#watchposition}
 
 Duplicates the [navigator.geolocation.watchPosition()](https://developer.mozilla.org/en-US/docs/Web/API/Geolocation/watchPosition) functionality.
 
-## Storage {#Storage}
+## Storage {#storage}
 
-Storing data on the client. In `TaskSuite` and `Task`, it is available via `this.storage`.
+Storing data on the client. In the [TaskSuite](tasksuite.md) and [Task](task.md) classes, it is available via `this.storage`.
 
 Methods:
 
-#### setItem(key, value, expiration)
+### setItem(key, value, expiration) {#setitem}
 
 Save the value under a specific key. Parameters:
 
 - `key`
 
-- `value` Can be any type. Serialized by casting to a string.
+- `value` — Can be any type. Serialized by casting to a string.
 
 - `expiration` — Storage date (`Date` or `number`). The default value is 24 hours.
 
-#### getItem(key)
+### getItem(key) {#getitem}
 
 Returns the value by key.
 
-#### removeItem(key)
+### removeItem(key) {#removeitem}
 
 Deletes a value by key.
 
-## TaskInterface {#TaskInterface}
+## TaskInterface {#taskinterface}
 
-[Task interface](../../../glossary.md#task-interface). In `TaskSuite` and `Task`, it is available via `this.taskInterface`.
+[Task interface](../../../glossary.md#task-interface). In the [TaskSuite](tasksuite.md) and [Task](task.md) classes, it is available via `this.taskInterface`.
 
 Methods:
 
-#### showInstructionPopup()
+### showInstructionPopup() {#showinstructionpopup}
 
 Opens the [instructions](../instruction.md).
 
-#### toggleFullscreen()
+### toggleFullscreen() {#togglefullscreen}
 
 Expands the task to full screen if it is collapsed. Otherwise minimizes the task.
 
-## Hotkey {#Hotkey}
+## Hotkey {#hotkey}
 
-Lets you subscribe to pressed keys. In `TaskSuite` and `Task`, it is available via `this.hotkey`.
+Lets you subscribe to pressed keys. In the [TaskSuite](tasksuite.md) and [Task](task.md) classes, it is available via `this.hotkey`.
 
 Method:
 
-#### on(event, handler, context)
+### on(event, handler, context) {#on}
 
 Subscribes the passed handler to a specific event. Tracks events from the `event` parameter. Parameters:
 
@@ -81,17 +82,17 @@ Subscribes the passed handler to a specific event. Tracks events from the `event
 
 - `context` — `this` for the handler.
 
-#### reset()
+### reset() {#reset}
 
 Cancels all previously made links and reinitializes the service.
 
 ## ClientInfo {#clientInfo}
 
-Gets information about the device on which tasks are performed. In `TaskSuite` and `Task`, it is available via `this.clientInfo`.
+Gets information about the device on which tasks are performed. In the [TaskSuite](tasksuite.md) and [Task](task.md) classes, it is available via `this.clientInfo`.
 
 Method:
 
-#### getClientInfo()
+### getClientInfo() {#getclientinfo}
 
 Returns information about the device if the Toloker is using the mobile app:
 

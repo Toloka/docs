@@ -1,13 +1,13 @@
 # Status
-`toloka.client.training.Training.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/training.py#L70)
+`toloka.client.training.Training.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/training.py#L80)
 
-Status of the training pool
+The status of a training.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`OPEN`|'OPEN'|<p>Training pool is open</p>
-`CLOSED`|'CLOSED'|<p>Training pool is closed</p>
-`ARCHIVED`|'ARCHIVED'|<p>Training pool is archived</p>
-`LOCKED`|'LOCKED'|<p>Training pool is locked</p>
+`OPEN`|'OPEN'|<p>The training is open.</p>
+`CLOSED`|'CLOSED'|<p>The training is closed.</p>
+`ARCHIVED`|'ARCHIVED'|<p>The training is archived.</p>
+`LOCKED`|'LOCKED'|

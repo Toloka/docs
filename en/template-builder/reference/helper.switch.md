@@ -4,7 +4,7 @@ A switch-case construction. Checks various conditions sequentially and executes 
 
 You can use it to perform an action or display an additional interface element only when a certain condition is met.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rf2VQ)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/RcgC_nQJ3tz3j4)
 
 This helper is similar to a series of [If...Then...Else](helper.if.md) logical expressions, so it is useful if there are more than two conditions for sequential verification. If you need to check one or two conditions, use the [helper.if](helper.if.md) component.
 
@@ -19,10 +19,12 @@ How the helper works:
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.switch" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.switch" | Set component type. ||
 || `cases`<span style="color: red">\*</span> | _array_ | An array of objects consisting of `condition` and `result` property pairs. ||
 || `cases[]` | _object_ | Object parameters. ||
 || `cases[].condition`<span style="color: red">\*</span> | _condition_ | Condition to check. ||
 || `cases[].result`<span style="color: red">\*</span> | _any_ | The element that is returned if the condition from the `condition` property is true (returns `true`). ||
 || `default` | _any_ | Element that is returned if none of the checked conditions returned `true`. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

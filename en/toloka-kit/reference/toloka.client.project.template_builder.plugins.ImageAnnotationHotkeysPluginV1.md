@@ -1,5 +1,5 @@
 # ImageAnnotationHotkeysPluginV1
-`toloka.client.project.template_builder.plugins.ImageAnnotationHotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/plugins.py#L26)
+`toloka.client.project.template_builder.plugins.ImageAnnotationHotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L26)
 
 ```python
 ImageAnnotationHotkeysPluginV1(

@@ -4,7 +4,19 @@
 
 Starts aggregating responses to all completed tasks in the pool.
 
+{% note alert "Restriction" %}
+
+You can send a maximum of 5 requests of this kind per minute, 30 requests per hour, and 200 requests per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
+
+{% endnote %}
+
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
@@ -124,3 +136,5 @@ The percentage of the operation completed. ||
 
 Parameters of the operation in the request. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

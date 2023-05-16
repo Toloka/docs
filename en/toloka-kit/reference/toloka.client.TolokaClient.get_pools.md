@@ -1,5 +1,5 @@
 # get_pools
-`toloka.client.TolokaClient.get_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1532)
+`toloka.client.TolokaClient.get_pools` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1588)
 
 Finds all pools that match certain criteria.
 
@@ -26,6 +26,7 @@ If you need to sort pools use the [find_pools](toloka.client.TolokaClient.find_p
 `last_started_lte`|**Optional\[datetime\]**|<p>Pools that were opened last time before or on the specified date.</p>
 `last_started_gt`|**Optional\[datetime\]**|<p>Pools that were opened last time after the specified date.</p>
 `last_started_gte`|**Optional\[datetime\]**|<p>Pools that were opened last time after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned pools limit for each request. The default batch_size is 20. The maximum allowed batch_size is 300.</p>
 
 * **Yields:**
 

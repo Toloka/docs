@@ -1,5 +1,5 @@
 # PoolAggregatedSolutionRequest
-`toloka.client.aggregation.PoolAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/aggregation.py#L31)
+`toloka.client.aggregation.PoolAggregatedSolutionRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/aggregation.py#L31)
 
 ```python
 PoolAggregatedSolutionRequest(

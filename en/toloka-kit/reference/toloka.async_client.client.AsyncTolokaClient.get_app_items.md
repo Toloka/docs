@@ -1,5 +1,5 @@
 # get_app_items
-`toloka.async_client.client.AsyncTolokaClient.get_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
 
 Finds all App task items that match certain criteria in an App project.
 
@@ -28,6 +28,7 @@ If you need to sort items use the [find_app_items](toloka.client.TolokaClient.fi
 `finished_gte`|**Optional\[datetime\]**|<p>Items labeled after or on the specified date.</p>
 `finished_lt`|**Optional\[datetime\]**|<p>Items labeled before the specified date.</p>
 `finished_lte`|**Optional\[datetime\]**|<p>Items labeled before or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned items limit for each request. The maximum allowed batch_size is 1000.</p>
 
 * **Yields:**
 

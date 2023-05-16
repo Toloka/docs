@@ -16,6 +16,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Text recognition from an image (OCR)](text-recognition.md)
 
+- [Accessories recommendations](accessories-recommendations.md)
+
 ## Video
 
 - [Video classification](video-moderation.md)
@@ -32,11 +34,15 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Sentiment analysis & Content moderation](content-moderation.md)
 
+- [Named entity recognition (NER)](named-entity-recognition.md)
+
 ## Audio
 
 - [Audio transcription](audio-transcript.md)
 
 - [Audio comparison (Side-by-side)](sbs-audio.md)
+
+- [Voice recording](voice-recording.md)
 
 ## Field tasks
 
@@ -45,6 +51,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 ## Data enrichment
 
 - [Searching for product characteristics](data-search.md)
+
+- [Product photo search](product-photo-search.md)
 
 ## Surveys
 

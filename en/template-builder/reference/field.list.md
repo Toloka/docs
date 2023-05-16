@@ -4,11 +4,11 @@ A component that allows a Toloker to add and remove list items, such as text fie
 
 This way you can allow a Toloker to give multiple answers to a question.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSUJ)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/IB5Q2ef53twbTw)
 
 The list items can contain any component, including a list of other components. For example, this allows you to create a table where you can add and delete rows.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSUq)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/d5nCDUia3twbqB)
 
 ## Managing components
 
@@ -20,7 +20,7 @@ To prevent a Toloker from adding too many list items, set the maximum list lengt
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.list" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.list" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `addedItems` | _array_ | – ||
@@ -41,3 +41,5 @@ In nested `field.*` components, use `data.relative` for recording responses, oth
 || `size` | _string_ | The distance between list items. Acceptable values in ascending order: `s`, `m` (default). ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

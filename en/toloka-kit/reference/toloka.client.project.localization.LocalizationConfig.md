@@ -1,5 +1,5 @@
 # LocalizationConfig
-`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/localization.py#L47)
+`toloka.client.project.localization.LocalizationConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/localization.py#L47)
 
 ```python
 LocalizationConfig(
@@ -10,15 +10,11 @@ LocalizationConfig(
 )
 ```
 
-Translates the part of the project visible to Tolokers into different languages
-
-
-It is used to make it easier for Tolokers from other countries who do not speak the necessary language to
-understand and complete tasks.
+All translations of a project interface.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`default_language`|**Optional\[str\]**|<p>The source language used in the fields public_name, public_description, and public_instructions. Required parameter.</p>
-`additional_languages`|**Optional\[List\[[AdditionalLanguage](toloka.client.project.localization.AdditionalLanguage.md)\]\]**|<p>List of translations into other languages. One element - one translation.</p>
+`default_language`|**Optional\[str\]**|<p>The main language used for text parameters when the project was created. It is a required parameter.</p>
+`additional_languages`|**Optional\[List\[[AdditionalLanguage](toloka.client.project.localization.AdditionalLanguage.md)\]\]**|<p>A list of translations to other languages.</p>

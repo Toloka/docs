@@ -1,6 +1,6 @@
 # Generating API tokens
 
-After you login to the platform with [single sign-on](./microsoft-authentication.md) (SSO) authentication method, you can generate new tokens. You can use them for API requests or for the integration applications. The previously generated tokens will continue to work, but will be deprecated with time.
+After you login to the platform with [single sign-on](./authentication.md) (SSO) authentication method, you can generate new tokens. You can use them for API requests or for the integration applications. The previously generated tokens will continue to work, but will be deprecated with time.
 
 {% note tip %}
 

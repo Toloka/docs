@@ -6,6 +6,12 @@ Changes the priority of a task suite in the pool.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#patch-/task-suites/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -74,3 +80,5 @@ The default value is `0`. ||
 ## Response {#response}
 
 Contains a [task suite in JSON format](task-suite.md).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

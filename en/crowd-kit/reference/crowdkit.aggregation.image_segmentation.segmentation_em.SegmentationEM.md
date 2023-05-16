@@ -1,5 +1,5 @@
 # SegmentationEM
-`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/image_segmentation/segmentation_em.py#L13)
+`crowdkit.aggregation.image_segmentation.segmentation_em.SegmentationEM` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/image_segmentation/segmentation_em.py#L13)
 
 ```python
 SegmentationEM(

@@ -1,5 +1,5 @@
 # ConcatArraysHelperV1
-`toloka.client.project.template_builder.helpers.ConcatArraysHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/helpers.py#L31)
+`toloka.client.project.template_builder.helpers.ConcatArraysHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L31)
 
 ```python
 ConcatArraysHelperV1(
@@ -14,9 +14,9 @@ Merging multiple arrays into a single array.
 
 
 For example, let's say you have multiple arrays:
-([1, 2, 3], [4, 5, 6], [7, 8, 9])
+`([1, 2, 3], [4, 5, 6], [7, 8, 9])`
 Their elements can be combined into a single array to show simultaneously:
-[1, 2, 3, 4, 5, 6, 7, 8, 9]
+`[1, 2, 3, 4, 5, 6, 7, 8, 9]`
 
 ## Parameters Description
 

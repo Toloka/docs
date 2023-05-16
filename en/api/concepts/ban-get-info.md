@@ -6,6 +6,12 @@ Gets information about a ban.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/user-restrictions/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -89,3 +95,5 @@ The UTC date and time of the ban, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]
 
 ID of the ban. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -6,21 +6,27 @@ Gets the list of message threads.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/message-threads):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/message-threads
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/message-threads
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/message-threads
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/message-threads
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +38,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -46,6 +52,7 @@ Folders where the thread is located:
 - `IMPORTANT` — Important.
 - `UNREAD` — Unread. ||
 || **folder_ne** | **string**
+
 Folders to not search for the thread: You can specify multiple comma-separated values. ||
 || **sort** | **string**
 
@@ -55,6 +62,7 @@ Parameters to sort by:
 - `created` — The task suite creation date in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** |
-[limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte). ||
+|| **Standard query parameters** | [limit](standard-query-parameters.md#limit), [id_gt](standard-query-parameters.md#id_gt), [id_gte](standard-query-parameters.md#id_gte), [id_lt](standard-query-parameters.md#id_lt), [id_lte](standard-query-parameters.md#id_lte), [created_gt](standard-query-parameters.md#created_gt), [created_gte](standard-query-parameters.md#created_gte), [created_lt](standard-query-parameters.md#created_lt), [created_lte](standard-query-parameters.md#created_lte). ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

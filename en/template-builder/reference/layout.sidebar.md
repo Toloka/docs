@@ -13,11 +13,23 @@ In compact mode, controls stretch to the entire width and are located under each
 
 To add an extra panel with controls, use the `extraControls` property.
 
+[![View example](../_images/buttons/view-example.svg)](https://ya.cc/t/8DLgvKE644n8C6)
+
+{% cut "Components used in the example" %}
+
+- [view.image](view.image.md): Adds an image.
+- [view.alert](view.alert.md): Creates a color block to highlight important information.
+- [field.radio-group](field.radio-group.md): Adds a group of radio buttons for selecting an answer option.
+- [condition.required](condition.required.md): Checks if at least one option is selected.
+- [data.output](../operations/work-with-data.md): The output data. This is what you get when a Toloker clicks the **Submit** button.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "layout.sidebar" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "layout.sidebar" | Set component type. ||
 || `content`<span style="color: red">\*</span> | _view_ | Content placed in the main area. ||
 || `controls`<span style="color: red">\*</span> | _view_ | Content of the control panel. ||
 || `controlsWidth` | _number_ | The width of the control panel in widescreen mode. In compact mode, the panel takes up the entire available width. Default: 200 pixels. ||
@@ -25,3 +37,5 @@ To add an extra panel with controls, use the `extraControls` property.
 || `minWidth` | _number_ | The minimum width, in pixels, for widescreen mode. If the component width becomes less than the specified value, the interface switches to compact mode. Default: 400 pixels. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

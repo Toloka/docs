@@ -1,17 +1,17 @@
 # fit
-`crowdkit.aggregation.classification.m_msr.MMSR.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/m_msr.py#L95)
+`crowdkit.aggregation.classification.m_msr.MMSR.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/classification/m_msr.py#L103)
 
 ```python
 fit(self, data: DataFrame)
 ```
 
-Estimate the workers' skills.
+Fits the model to the training data.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**DataFrame**|<p>Workers&#x27; labeling results. A pandas.DataFrame containing `task`, `worker` and `label` columns.</p>
+`data`|**DataFrame**|<p>The training dataset of workers&#x27; labeling results which is represented as the `pandas.DataFrame` data containing `task`, `worker`, and `label` columns.</p>
 
 * **Returns:**
 

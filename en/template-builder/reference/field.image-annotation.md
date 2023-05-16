@@ -8,13 +8,13 @@ If you need to categorize selected items, create labels for each category using 
 
 You can disable labeling using the `disabled` property. For example, use this if you need to create a task to check labeled images, or if you want to allow labeling only after a certain [condition](helper.if.md) has been met.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSTF)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/rDD6zD5S3tyzeb)
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.image-annotation" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.image-annotation" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | Determines whether adding and deleting areas is allowed:
@@ -54,3 +54,5 @@ Modes with the `true` value are available to a Toloker. ||
 || `shapes.rectangle` | _boolean_ | Rectangle selector. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

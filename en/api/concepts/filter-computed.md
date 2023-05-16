@@ -83,11 +83,11 @@ Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
 
 The OS family, for example:
 
-- `WINDOWS`
-- `ANDROID`
-- `IOS`
-- `OS X`
-- `LINUX`.
+- `WINDOWS`: Microsoft Windows operating system developed and marketed by Microsoft for personal computers.
+- `ANDROID`: Android mobile operating system based on a modified version of the Linux kernel, designed primarily for touchscreen mobile devices.
+- `IOS`: iOS mobile operating system developed by Apple Inc. exclusively for its mobile devices.
+- `OS_X`: macOS operating system developed by Apple Inc. since 2001 for Mac computers.
+- `LINUX`: A family of open-source Unix-like operating systems based on the Linux kernel.
 
 The complete list is available on the [UADetector library page](http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/OperatingSystemFamily.html).
 
@@ -155,3 +155,5 @@ Value of "value" if data couldn't be extracted — `null`.||
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/filters.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

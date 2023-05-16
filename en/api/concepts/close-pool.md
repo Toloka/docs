@@ -10,6 +10,12 @@ When you send requests, an operation is created. To track the progress of the op
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/close):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -44,7 +50,7 @@ Title | Overview
 
 {% note info %}
 
-If the current pool status is the same as the  requested status, an empty response with status 204 is returned.
+If the current pool status is the same as the  requested status, an empty response with status `204` is returned.
 
 {% endnote %}
 
@@ -67,7 +73,7 @@ If the current pool status is the same as the  requested status, an empty respo
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.CLOSE` — Closing a pool. ||
@@ -95,3 +101,5 @@ The percentage of the operation completed. ||
 
 Pool ID. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

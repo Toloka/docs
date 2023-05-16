@@ -2,13 +2,13 @@
 
 You can use filters to select Tolokers for your project. Tasks will only be shown to matching Tolokers, rather than to all of them. Properly configured filters help you send tasks to a target group of Tolokers. As a result, you'll get your results faster and spend less money.
 
-To select Tolokers for the [pool](../../glossary.md#pool), click {% if locale == "en-com" %}**Add filter**{% endif %} on the pool editing page.
+To select Tolokers for the [pool](../../glossary.md#pool), click **Add filter** at the **Select the audience for your task** step of creating a pool or on the pool editing page.
 
 From the drop-down list, select filters by profile data and device specifications.
 
 {% note tip %}
 
-Copy filters from another pool to add them faster. Click {% if locale == "en-com" %}**Copy audience filters and quality settings**{% endif %} and select the pool you want to copy filters from.
+Copy filters from another pool to add them faster. Click **Copy audience filters and quality settings** and select the pool you want to copy filters from.
 
 {% endnote %}
 
@@ -20,7 +20,7 @@ All filters added to the pool are applied simultaneously. The criteria within a 
 
 {% endnote %}
 
-The number of Tolokers selected with your filters is shown in the {% if locale == "en-com" %}**The task is available to N active Tolokers**{% endif %} line, which is in the {% if locale == "en-com" %}**Audience**{% endif %}.
+The number of Tolokers selected with your filters is shown in the **The task is available to N active Tolokers** line, which is in the **Audience**.
 
 ## Calculated data {#filter-calc-data}
 
@@ -28,13 +28,13 @@ Use this group of filters to select Tolokers by device type, browser, or softwar
 
 {% cut "Region by phone number" %}
 
-To more effectively choose Tolokers by location, add the {% if locale == "en-com" %}**Region by phone**{% endif %} filter.
+To more effectively choose Tolokers by location, add the **Region by phone** filter.
 
 {% endcut %}
 
 {% cut "Region by IP" %}
 
-To make a task available to users with IP addresses in a particular region, add the {% if locale == "en-com" %}**Region by IP**{% endif %} filter and enter the region name. This is useful for field tasks.
+To make a task available to users with IP addresses in a particular region, add the **Region by IP** filter and enter the region name. This is useful for field tasks.
 
 {% endcut %}
 
@@ -58,7 +58,7 @@ Add this filter to select users of certain operating systems.
 
 {% note tip %}
 
-If you're looking to select MacOS, Windows, and Linux, the most popular operating systems for PCs, add the {% if locale == "en-com" %}**Operating system**{% endif %} filter. Use the `=` operator to set the value as `Windows`. Use the ![Button Add](../_images/add.svg) button to add the second value, `MacOS`. Then click ![Button Add](../_images/add.svg) again and set the third value, `Linux`.
+If you're looking to select MacOS, Windows, and Linux, the most popular operating systems for PCs, add the **Operating system** filter. Use the `=` operator to set the value as `Windows`. Use the ![Button Add](../_images/add.svg) button to add the second value, `MacOS`. Then click ![Button Add](../_images/add.svg) again and set the third value, `Linux`.
 
 {% endnote %}
 
@@ -108,7 +108,7 @@ You can choose Tolokers who live in certain cities. Use this filter for field ta
 
 {% cut "Adult content" %}
 
-If there is adult content in the pool tasks, they will only be shown to Tolokers who have agreed to see them. To select such Tolokers, add the {% if locale == "en-com" %}**Adult content**{% endif %} filter and activate this option.
+If there is adult content in the pool tasks, they will only be shown to Tolokers who have agreed to see them. To select such Tolokers, add the **Adult content** filter and activate this option.
 
 {% endcut %}
 
@@ -126,7 +126,7 @@ Add this filter to restrict the audience by region.
 
 {% cut "Languages" %}
 
-Make sure to add the {% if locale == "en-com" %}**Languages**{% endif %} filter and specify the language of the [instructions](../../glossary.md#instructions) and text in the task.
+Make sure to add the **Languages** filter and specify the language of the [instructions](../../glossary.md#instructions) and text in the task.
 
 If you want to be sure Tolokers can read and understand the basics of your language, limit your selection to those who have passed a test on it.
 
@@ -136,7 +136,7 @@ If you want to be sure Tolokers can read and understand the basics of your langu
 
 {% cut "Education" %}
 
-Add this filter if the Toloker's education may affect the quality of responses. Use the `=` or `≠` operator and select {% if locale == "en-com" %}**Secondary**{% endif %}, {% if locale == "en-com" %}**Vocational secondary**{% endif %}, or {% if locale == "en-com" %}**Higher**{% endif %} education from the drop-down list.
+Add this filter if the Toloker's education may affect the quality of responses. Use the `=` or `≠` operator and select **Secondary**, **Vocational secondary**, or **Higher** education from the drop-down list.
 
 {% endcut %}
 
@@ -202,7 +202,7 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
     - [Selective majority vote check](selective-mvote.md).
     - [Speed/quality balance](adjust.md).
     - [Setting up quality control](qa-pool-settings.md).
-    - [Non-automatic acceptance](offline-accept.md).
+    - [Manual review](offline-accept.md).
 
 ## See also {#see-also}
 
@@ -213,139 +213,50 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 - [Toloka API: Filtering by profile data](../../api/concepts/filter-profile.md)
 - [Toloka API: Filtering by computed data](../../api/concepts/filter-computed.md)
 - [Toloka API: Filtering by skills](../../api/concepts/filter-skill.md)
-- [Toloka-Kit: Filters](../../toloka-kit/reference/toloka.client.filter.AdultAllowed.md)
+- [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
 
 ## Troubleshooting {#troubleshooting}
 
 {% cut "Tolokers" %}
 
-{% cut "Why can't I find the Toloker's gender in the Toloker data, although I can filter people by this attribute in the pool settings?" %}
+{% include [faq-find-gender](../_includes/faq/pool-setup/find-gender.md) %}
 
-Requesters can't see the full details about specific Tolokers. So you can't see information like the date of birth, gender, last name, or first name. However, you can use filters by date of birth and gender (in the pool settings). This way you can select a group of Tolokers without accessing the personal information of individual Tolokers. This decreases the risk of user de-anonymization.
+{% include [faq-demographic-geo-params](../_includes/faq/pool-setup/demographic-geo-params.md) %}
 
-{% endcut %}
+{% include [faq-arbitrary-user](../_includes/faq/pool-setup/arbitrary-user.md) %}
 
-{% cut "Can I set up a task to be visible to Tolokers with certain demographic and geo parameters? For example, ’US only, 30–45 years old’." %}
+{% include [faq-limit-number-tolokers](../_includes/faq/pool-setup/limit-number-tolokers.md) %}
 
-You can do that. To select Tolokers for the pool, use [filters](filters.md).
+{% include [faq-specific-city](../_includes/faq/pool-setup/specific-city.md) %}
 
-{% endcut %}
-
-{% cut "Can I add an arbitrary user as a Toloker?" %}
-
-If the Toloker mismatches your preset filter, they can't see the task. You can only remove the restricting filter from the pool. You can test the task in the [Sandbox](sandbox.md) by adding the desired user to your trusted list.
-
-{% endcut %}
-
-{% cut "Can I somehow limit the number of Tolokers who can take tasks from the pool at the same time?" %}
-
-Tasks from an open pool are available to all Tolokers matching your pool [filters](filters.md). You can restrict access, like by using a skill.
-
-{% endcut %}
-
-{% cut "Can I select Tolokers from a specific city of residence or is the only option ’Region by IP’?" %}
-
-Yes, you can do that. In the [filters](filters.md), select **Profile → City**. Please note that the profile data is entered by the Toloker when they register in Toloka. We recommended that you use the filters **Region by phone number** and **Region by IP**.
-
-{% endcut %}
-
-{% cut "Can I use a skill beyond a particular pool or project and apply it to other projects as well?" %}
-
-Yes, of course — you can use the same skill for different projects. But most often, a skill is intended for a specific project. If the Toloker completes a certain task well, this doesn't mean that they will complete other ones successfully. Another disadvantage is that if you filter by skills that were set long ago, you will artificially limit the number of available Tolokers.
-
-{% endcut %}
+{% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
 {% endcut %}
 
 {% cut "Skill" %}
 
-{% cut "I want to calculate a skill based on performance in multiple projects. Is that possible? If it is, can I use "Aggregation by skill"?" %}
+{% include [faq-calculate-skill](../_includes/faq/pool-setup/calculate-skill.md) %}
 
-If you mean multiple different projects, you can't do that.
+{% include [faq-assign-skill](../_includes/faq/pool-setup/assign-skill.md) %}
 
-You can merge all the projects into one and use **History size** in the quality control rules. See examples in the [Control tasks](goldenset.md) post.
+{% include [faq-skill-expiration](../_includes/faq/adding-tasks-to-the-pool/skill-expiration.md) %}
 
-You can use **Aggregation by skill**, but you'll need to list all the possible values, which is probably not the best choice. Perhaps you'll find [another method of aggregation](result-aggregation.md) helpful.
+{% include [faq-select-specific-tolokers](../_includes/faq/pool-setup/select-specific-tolokers.md) %}
 
-{% endcut %}
+{% include [faq-set-up-filter](../_includes/faq/pool-setup/set-up-filter.md) %}
 
-{% cut "Are there any easy ways to assign a certain Toloker a skill in Toloka, even if they didn't do any tasks (like I can do in the Sandbox)?" %}
+{% include [faq-raise-skill](../_includes/faq/pool-setup/raise-skill.md) %}
 
-In the main Toloka version, you can only assign a skill to Tolokers who have completed at least one of your tasks. There is no way to assign a skill to just any annotator. To limit the visibility of your project, use [filters](filters.md). For example, specify the city, date of birth, gender, or some other parameters of your target Tolokers.
+{% include [faq-assigned-skill](../_includes/faq/pool-setup/assigned-skill.md) %}
 
-{% endcut %}
+{% include [faq-show-skill](../_includes/faq/pool-setup/show-skill.md) %}
 
-{% cut "The Tolokers completed training for the first pool and got the skill. A week later, we cloned the pool, but all Tolokers lost their skill. Which parameter affects skill expiration? Do all the Tolokers need to complete the training again?" %}
-
-The validity period of the training skills is controlled by the **Retry after** parameter. The skill is deleted after a period specified in days in the **Retry after** field, if the Toloker:
-
-- Has a skill value lower than the one specified in the **Level required** field.
-- Didn't complete any tasks linked to training during this period.
-
-Your Tolokers will need to complete the training again.
+{% include [faq-auto-assign-skill](../_includes/faq/pool-setup/auto-assign-skill.md) %}
 
 {% endcut %}
 
-{% cut "Can I select specific Tolokers for my tasks because I liked their results in my previous pools?" %}
+{% include [faq-task-available](../_includes/faq/pool-setup/task-available.md) %}
 
-You can assign a skill to these people based on their performance in the previous pools. Use this skill as a [filter](filters.md) in the new pool.
-
-{% endcut %}
-
-{% cut "How do I set up a filter so that the pool is available to Tolokers who don't have a specific skill (like a “spammer”)?" %}
-
-Specify this skill as a [filter](filters.md), but leave the value field empty (this is equivalent to absence of the skill).
-
-{% endcut %}
-
-{% cut "How can I raise the skill value for a Toloker, if they already have the skill?" %}
-
-If the Toloker already has a skill, you can't add the same skill to them from the task review interface. You can open the Toloker's profile and edit the skill value.
-
-{% endcut %}
-
-{% cut "Can Tolokers see that they were assigned a skill?" %}
-
-If it's a public or training skill, they see it and they get a message about it.
-
-{% endcut %}
-
-{% cut "Can I show a skill in the task interface?" %}
-
-There is no such option. If the skill is public, the Toloker sees it in their profile.
-
-{% endcut %}
-
-{% cut "How do I automatically assign skills based on Toloker responses to my questions?" %}
-
-You can do that using the [Control tasks](goldenset.md) rule.
-
-1. Upload the task file using **Smart mixing**.
-
-1. Specify `student` as the correct answer to the question. Don't take other questions into account (leave the fields empty or unselected).
-
-1. Add the [Control tasks](goldenset.md) rule to the pool: `if the percentage of correct control answers = 100, then set the skill value Student = 1`.
-
-{% cut "See the screenshot" %}
-
-![](../_images/troubleshooting/set-questionnaire-skill-student.png)
-
-{% endcut %}
-
-{% endcut %}
-
-{% endcut %}
-
-{% cut "How do I make the task available not only from desktops, but also from mobile devices?" %}
-
-Tasks in pools are automatically available in the web version of Toloka and the mobile app. Check the pool settings. You might have the `Client = Mobile Toloka`[filter](filters.md) on.
-
-{% endcut %}
-
-{% cut "Why is my project not available in the mobile version of Toloka?" %}
-
-Tasks in pools are automatically available in the web version of Toloka and the mobile app. Check the pool settings. You might have the `Client = Toloka web version`[filter](filters.md) on.
-
-{% endcut %}
+{% include [troubleshooting-mobile-unavailable](../_includes/troubleshooting/pool-setup/mobile-unavailable.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

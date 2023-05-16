@@ -10,6 +10,12 @@ Priority is a number on a scale from 0 to 100. The larger the number, the faster
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#patch-/pools/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -75,3 +81,5 @@ Contains updated information about the pool (see the description in the [Create 
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/pool-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

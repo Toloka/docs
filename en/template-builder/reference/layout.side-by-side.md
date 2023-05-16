@@ -4,7 +4,20 @@ The component displays several data blocks of the same width on a single horizon
 
 You can add selection buttons or a field for comment under the compared elements.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/c9D7Dl0K3X6bm2)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/E15DUzkl44n8nE)
+
+{% cut "Components used in the example" %}
+
+- [action.set](action.set.md): Sets the value from `payload` in the data in the `data` property.
+- [plugin.hotkeys](plugin.hotkeys.md): Sets keyboard shortcuts for actions.
+- [layout.side-by-side](layout.side-by-side.md): Displays several data blocks of the same width on a single horizontal panel.
+- [view.image](view.image.md): Adds an image.
+- [view.list](view.list.md): Displays data in a list.
+- [field.radio-group](field.radio-group.md): Adds a group of radio buttons for selecting an answer option.
+- [field.textarea](field.textarea.md): Adds a text block to enter milti-line text.
+- [condition.required](condition.required.md): Checks that the data is filled in.
+
+{% endcut %}
 
 Differences from the [layout.compare](layout.compare.md) component:
 
@@ -15,7 +28,7 @@ Differences from the [layout.compare](layout.compare.md) component:
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "layout.side-by-side" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "layout.side-by-side" | Set component type. ||
 || `controls`<span style="color: red">\*</span> | _view_ | Components that let Tolokers perform the required actions.
 
 For example: [field.checkbox-group](field.checkbox-group.md) or [field.button-radio-group](field.button-radio-group.md). ||
@@ -24,3 +37,5 @@ For example: [field.checkbox-group](field.checkbox-group.md) or [field.button-ra
 || `minItemWidth` | _number_ | The minimum width of a data block, at least 400 pixels. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

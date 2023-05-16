@@ -8,6 +8,12 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tas
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/tasks):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -90,7 +96,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 {% list tabs %}
 
-- Data for the tasks (`async_mode=false`)
+- Data for the tasks (async_mode=false)
 
     ```json
     {
@@ -141,7 +147,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   An object with errors in tasks. Returned if the request has the parameter `skip_invalid_items=true`. ||
   |#
 
-- Information about the operation (`async_mode=true`)
+- Information about the operation (async_mode=true)
 
     ```json
     {
@@ -218,4 +224,4 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 {% endlist %}
 
-{% endcut %}
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

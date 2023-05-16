@@ -8,7 +8,7 @@ Before you start using Toloka-Kit library, register in either the production or 
 
 1. Choose the backend:
 
-    - The [production backend](https://platform.toloka.ai/for-requesters/) is used by default in [this example](./learn-basics.md).
+    - The [production backend](https://platform.toloka.ai/for-requesters/) is used by default in [this example](./recipes/learn-basics.md).
 
     - The [sandbox backend](https://platform.sandbox.toloka.ai/for-requesters/) is a testing environment for Toloka. [Learn more](../guide/concepts/sandbox.md)
 
@@ -25,6 +25,6 @@ If you're going to use the production version, [add funds](../guide/concepts/ref
 ## What's next {#what-next}
 
 - [Install Toloka-Kit library](./quick-start.md)
-- [Start your first simple project](./learn-basics.md)
+- [Start your first simple project](./recipes/learn-basics.md)
 
 {% include [image-styles](../../_includes/image-styles.md) %}

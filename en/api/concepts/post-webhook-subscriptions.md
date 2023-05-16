@@ -6,6 +6,12 @@ Sends a test notification to the URL specified in the subscription.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/webhook-subscriptions/-id-/test):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -56,7 +62,7 @@ Unique event number generated for each new request. ||
 || **event_time** | **string \| required**
 
 Time when the event occurs. ||
-|| **project_id** | **string \| mandatory**
+|| **project_id** | **string \| required**
 
 ID of the project that the pool was created for. ||
 || **pool_id** | **string \| required**
@@ -112,3 +118,5 @@ Status code of the response from the subscription URL. ||
 
 Array of unique event numbers. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

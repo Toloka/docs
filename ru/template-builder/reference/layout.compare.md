@@ -6,7 +6,7 @@
 
 Кнопки выбора можно расположить под каждым из сравниваемых элементов. Также можно добавить общие элементы, например поле для ввода комментария.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TQrQS)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/Eq2bxIyI3wz5jF)
 
 Отличия от [layout.side-by-side](layout.side-by-side.md):
 

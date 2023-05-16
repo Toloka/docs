@@ -36,7 +36,7 @@
 
       Полный список параметров см. в [таблице](#parametry).
 
-  1. Добавьте во [входные данные](../incoming.md) поле для указания ссылки на картинку. {% if locale == "ru-ru" %}Если вы храните картинки на [Яндекс Диске](../prepare-data.md), используйте тип **строка**, а не **ссылка**.{% endif %}
+  1. Добавьте во [входные данные](../incoming.md) поле для указания ссылки на картинку. Если вы храните картинки на [Яндекс Диске](../prepare-data.md), используйте тип **строка**, а не **ссылка**.
 
   1. В выходные данные добавьте поле `result` с типом **json**.
 
@@ -63,7 +63,7 @@
 
   1. Добавьте во [входные данные](../incoming.md):
 
-      - Поле для указания ссылки на картинку.{% if locale == "ru-ru" %} Если вы храните картинки на [Яндекс Диске](../prepare-data.md), используйте тип **строка**, а не **ссылка**.{% endif %}
+      - Поле для указания ссылки на картинку. Если вы храните картинки на [Яндекс Диске](../prepare-data.md), используйте тип **строка**, а не **ссылка**.
 
       - Поле `polygon` с типом **json** для передачи координат выделенной области.
 
@@ -85,7 +85,7 @@
 
 - Прямая ссылка. Рекомендуется использовать протокол HTTPS. Например: `src="https://mywebsite.ru/img1.png"`.
 
-- Относительная ссылка. {% if locale == "ru-ru" %}Если вы используете [файлы с Яндекс Диска](../prepare-data.md), укажите компонент `proxy` и название поля входных данных. Например, для поля с названием `image` запишите `src=(proxy image)`. Измените тип поля на строку.{% endif %} | да | нет||
+- Относительная ссылка. Если вы используете [файлы с Яндекс Диска](../prepare-data.md), укажите компонент `proxy` и название поля входных данных. Например, для поля с названием `image` запишите `src=(proxy image)`. Измените тип поля на строку. | да | нет||
 ||`annotations`| Атрибут для поля входных данных. Содержит название поля входных данных. Сюда можно передавать координаты разметки для последующего редактирования. Формат данных — объект JSON. | нет | нет||
 |#
 
@@ -153,8 +153,6 @@
 
 - Текстовое поле ввода
 
-   {% if locale == "ru-ru" %}
-
   ```javascript
   exports.Task = extend(TolokaHandlebarsTask, function (options) {
       TolokaHandlebarsTask.call(this, options);
@@ -194,52 +192,7 @@
   }
   ```
 
-  {% endif %}{% if locale == "en-com" %}
-
-  ```javascript
-  exports.Task = extend(TolokaHandlebarsTask, function (options) {
-      TolokaHandlebarsTask.call(this, options);
-  }, {
-      onRender: function() {
-          var field = this.getField('result');
-          var editor = field.getEditor();
-          editor.annotationInterface = field.createAnnotationInterface({
-              createInterfaceElement: function() {
-                  this._input = document.createElement('input');
-                  this._input.addEventListener('input', function() {
-                      this._shape.annotation = this._input.value;
-                  }.bind(this));
-                  return this._input;
-              },
-              onShow: function(shape) {
-                  this._shape = shape;
-                  this._input.value = shape.annotation;
-              }
-          });
-     },
-    onDestroy: function() {
-      // Task is completed. Global resources can be released (if used)
-    }
-  });
-
-  function extend(ParentClass, constructorFunction, prototypeHash) {
-    constructorFunction = constructorFunction || function () {};
-    prototypeHash = prototypeHash || {};
-    if (ParentClass) {
-      constructorFunction.prototype = Object.create(ParentClass.prototype);
-    }
-    for (var i in prototypeHash) {
-      constructorFunction.prototype[i] = prototypeHash[i];
-    }
-    return constructorFunction;
-  }
-  ```
-
-  {% endif %}
-
 - Выпадающий список
-
-   {% if locale == "ru-ru" %}
 
   ```javascript
   var listOption =
@@ -320,89 +273,6 @@
   }
   ```
 
-  {% endif %}{% if locale == "en-com" %}
-
-  ```javascript
-  var listOption =
-  [["Animals","Cat","Dog","Bird"]];
-  var listValues =
-  [
-  ["-","Cat","Dog","Bird"]
-  ];
-  var bigListValues = [];
-  for(var i=0;i<listValues.length;i++){
-      for (var j=0;jlistValues[i].length;j++){
-          if(j != 0){
-              bigListValues[bigListValues.length] = listValues[i][j];
-          }
-      }
-  }
-
-  exports.Task = extend(TolokaHandlebarsTask, function (options) {
-      TolokaHandlebarsTask.call(this, options);
-  }, {
-      onRender: function() {
-          var field = this.getField('result');
-          var editor = field.getEditor();
-          editor.annotationInterface = field.createAnnotationInterface({
-              createInterfaceElement: function() {
-                  this._select = document.createElement('select');
-                  for(var j=0;j<listOption.length;j++){
-                      var listGroup = listOption[j];
-                      var valuesGroup = listValues[j];
-                      var optgroup = document.createElement("optgroup");
-                      optgroup.setAttribute('label', listGroup[0]);
-                      for (var i = 1; i  listGroup.length; i++) {
-                          var option = document.createElement("option");
-                          if (i == 0) {
-                              option.setAttribute('disabled', 'disabled');
-                          }
-                          option.value = valuesGroup[i];
-                          option.className = "seletOpt";
-                          var oText = document.createTextNode(listGroup[i]);
-                          option.appendChild(oText);
-                          optgroup.appendChild(option);
-                      }
-                      this._select.appendChild(optgroup);
-                  }
-                  this._select.addEventListener('change', function() {
-                      this._shape.annotation = this._select.value;
-                      _.each(bigListValues, function(value) {
-                          this._polygonEl.classList.remove(value.toLowerCase());
-                      }.bind(this));
-                      this._polygonEl.classList.add(this._select.value.toLowerCase());
-                  }.bind(this));
-                  return this._select;
-              },
-              onShow: function(shape, el) {
-                  console.log("shape: ", shape)
-                  console.log("el: ", el)
-                  this._shape = shape;
-                  this._select.value = shape.annotation;
-                  this._polygonEl = el;
-              }
-          });
-     },
-    onDestroy: function() {
-      // Task is completed. Global resources can be released (if used)
-    }
-  });
-
-  function extend(ParentClass, constructorFunction, prototypeHash) {
-    constructorFunction = constructorFunction || function () {};
-    prototypeHash = prototypeHash || {};
-    if (ParentClass) {
-      constructorFunction.prototype = Object.create(ParentClass.prototype);
-    }
-    for (var i in prototypeHash) {
-      constructorFunction.prototype[i] = prototypeHash[i];
-    }
-    return constructorFunction;
-  }
-  ```
-
-  {% endif %}
-
 {% endlist %}
 
 {% cut "Объяснение примеров" %}
@@ -436,22 +306,10 @@
 
 Подписаться на эти события можно так:
 
-{% if locale == "ru-ru" %}
-
 ```javascript
 editor.on('shape:start', function() {
     /* обработка события */
 });
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```javascript
-editor.on('shape:start', function() {
-/* event handling */
-});
-```
-
-{% endif %}
 
 {% include [contact-support](../../_includes/contact-support.md) %}

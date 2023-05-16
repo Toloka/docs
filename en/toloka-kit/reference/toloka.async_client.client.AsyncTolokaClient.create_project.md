@@ -1,21 +1,24 @@
 # create_project
-`toloka.async_client.client.AsyncTolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async create_project(self, project: Project)
 ```
 
-Creates a new project
+Creates a new project in Toloka.
+
+
+You can send a maximum of 20 requests of this kind per minute and a maximum of 100 requests per day.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`project`|**[Project](toloka.client.project.Project.md)**|<p>New Project with set parameters.</p>
+`project`|**[Project](toloka.client.project.Project.md)**|<p>The project to be created.</p>
 
 * **Returns:**
 
-  Created project. With read-only fields.
+  The project with updated read-only fields.
 
 * **Return type:**
 
@@ -23,17 +26,17 @@ Creates a new project
 
 **Examples:**
 
-How to create a new project.
+Creating a new project.
 
 ```python
-new_project = toloka.project.Project(
-    assignments_issuing_type=toloka.project.Project.AssignmentsIssuingType.AUTOMATED,
+new_project = toloka.client.project.Project(
+    assignments_issuing_type=toloka.client.project.Project.AssignmentsIssuingType.AUTOMATED,
     public_name='My best project',
     public_description='Describe the picture',
     public_instructions='Describe in a few words what is happening in the image.',
-    task_spec=toloka.project.task_spec.TaskSpec(
-        input_spec={'image': toloka.project.field_spec.UrlSpec()},
-        output_spec={'result': toloka.project.field_spec.StringSpec()},
+    task_spec=toloka.client.project.task_spec.TaskSpec(
+        input_spec={'image': toloka.client.project.field_spec.UrlSpec()},
+        output_spec={'result': toloka.client.project.field_spec.StringSpec()},
         view_spec=project_interface,
     ),
 )

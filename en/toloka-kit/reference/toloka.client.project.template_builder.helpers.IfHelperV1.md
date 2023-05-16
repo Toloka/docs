@@ -1,5 +1,5 @@
 # IfHelperV1
-`toloka.client.project.template_builder.helpers.IfHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/helpers.py#L72)
+`toloka.client.project.template_builder.helpers.IfHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L75)
 
 ```python
 IfHelperV1(

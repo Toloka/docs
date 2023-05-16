@@ -1,5 +1,5 @@
 # SubArrayConditionV1
-`toloka.client.project.template_builder.conditions.SubArrayConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/conditions.py#L284)
+`toloka.client.project.template_builder.conditions.SubArrayConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L285)
 
 ```python
 SubArrayConditionV1(

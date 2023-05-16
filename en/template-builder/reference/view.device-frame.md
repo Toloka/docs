@@ -2,11 +2,19 @@
 
 Wraps the content of a component in a frame that is similar to a mobile phone. You can place other components inside the frame.
 
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/7awTef7848KrmX)
+
+{% cut "Component used in the example" %}
+
+- [view.image](view.image.md): Displays an image.
+
+{% endcut %}
+
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.device-frame" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.device-frame" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `content` | _view_ | Content inside the frame. ||
 || `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||
@@ -19,3 +27,5 @@ Not valid if `"fullHeight": true`. ||
 || `ratio[]` | _number_ | Relative size of one side. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

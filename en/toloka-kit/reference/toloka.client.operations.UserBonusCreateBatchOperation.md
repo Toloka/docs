@@ -1,5 +1,5 @@
 # UserBonusCreateBatchOperation
-`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/operations.py#L345)
+`toloka.client.operations.UserBonusCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/operations.py#L345)
 
 ```python
 UserBonusCreateBatchOperation(
@@ -33,7 +33,7 @@ All parameters are for reference only and describe the initial parameters of the
 `progress`|**Optional\[int\]**|<p>The percentage of the operation completed.</p>
 `parameters`|**Optional\[[Parameters](toloka.client.operations.UserBonusCreateBatchOperation.Parameters.md)\]**|<p>Operation parameters (depending on the operation type).</p>
 `details`|**Optional\[[Details](toloka.client.operations.UserBonusCreateBatchOperation.Details.md)\]**|<p>Details of the operation completion.</p>
-`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>True - Create rewards using `UserBonus` instances that passed validation. Skip the rest of the `UserBonus` instances.</li> <li>False - If at least one of the `UserBonus` instances didn&#x27;t pass validation, stop the operation and   don&#x27;t create any rewards.</li> </ul>
+`skip_invalid_items`|**-**|<p>Validation parameters for JSON objects:</p> <ul> <li>`True` — Create rewards using `UserBonus` instances that passed validation. Skip the rest of the `UserBonus` instances.</li> <li>`False` — If at least one of the `UserBonus` instances didn&#x27;t pass validation, stop the operation and   don&#x27;t create any rewards.</li> </ul>
 `pool_id`|**-**|
 `total_count`|**-**|<p>The number of bonuses in the request.</p>
 `valid_count`|**-**|<p>The number of JSON objects with bonus information that have passed validation.</p>

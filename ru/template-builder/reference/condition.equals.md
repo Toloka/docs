@@ -6,7 +6,7 @@
 
 При подстановке значений можно ссылаться на данные `data.*` или на другой элемент с помощью `$ref`. Также можно использовать [хелперы](helpers.md) и [условия](conditions.md), чтобы получить значение.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/QMmPE)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/YBpz3TFc3tz7tB)
 
 ## Свойства компонента {#properties}
 

@@ -1,12 +1,12 @@
 # get_trainings
-`toloka.client.TolokaClient.get_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1892)
+`toloka.client.TolokaClient.get_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1960)
 
-Finds all training pools that match certain criteria.
+Finds all trainings that match certain criteria.
 
 
-`get_trainings` returns a generator. You can iterate over all found training pools using the generator. Several requests to the Toloka server are possible while iterating.
+`get_trainings` returns a generator. You can iterate over all found trainings using the generator. Several requests to the Toloka server are possible while iterating.
 
-If you need to sort training pools use the [find_trainings](toloka.client.TolokaClient.find_trainings.md) method.
+If you need to sort trainings use the [find_trainings](toloka.client.TolokaClient.find_trainings.md) method.
 
 ## Parameters Description
 
@@ -26,10 +26,11 @@ If you need to sort training pools use the [find_trainings](toloka.client.Toloka
 `last_started_lte`|**Optional\[datetime\]**|<p>Training pools that were opened last time before or on the specified date.</p>
 `last_started_gt`|**Optional\[datetime\]**|<p>Training pools that were opened last time after the specified date.</p>
 `last_started_gte`|**Optional\[datetime\]**|<p>Training pools that were opened last time after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned trainings limit for each request. The maximum allowed batch_size is 300.</p>
 
 * **Yields:**
 
-  The next matching training pool.
+  The next matching training.
 
 * **Yield type:**
 
@@ -37,8 +38,8 @@ If you need to sort training pools use the [find_trainings](toloka.client.Toloka
 
 **Examples:**
 
-How to get all training pools in a project.
+Getting all trainings in a project.
 
 ```python
-trainings = toloka_client.get_trainings(project_id=project_id)
+trainings = toloka_client.get_trainings(project_id='1')
 ```

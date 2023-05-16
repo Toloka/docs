@@ -6,7 +6,7 @@ This preset helps you classify video content by specified categories. You can us
 
 Take a look at the example: the labeling interface includes a video player, and several buttons for categories. Note that validation, keyboard shortcuts, and task layout are already configured in this Template Builder sample code.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/8xMjur0d3sbEBj)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ocsyNc3j3ttDuP)
 
 {% cut "Components used in the example" %}
 
@@ -189,7 +189,7 @@ If you want to be sure that a Toloker watched the whole video, replace the [con
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Og_f9pEW3sbRt2)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Djq9UxCi3ttDv2)
 
 ## Add a description {#add-description}
 
@@ -206,7 +206,7 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/pB08co4N3sbHNA)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/GbUWi5Mo3ttDvz)
 
 ## Add a response field {#add-text-area}
 
@@ -228,7 +228,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/It3zBNDC3sbJDi)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Sgr_lsd73ttDwk)
 
 ## Add a layout {#add-layout}
 
@@ -281,7 +281,7 @@ In this example, the description is highlighted with a blue border, and the butt
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/bltS5vfS3sbJpp)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/nRY8qyZ93ttDxm)
 
 ## Other options for buttons {#add-variants}
 
@@ -322,7 +322,7 @@ Decide whether a Toloker can select only one or multiple answer options.
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GY4d3Lhi3sbKSx)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/N6a7FF643ttDyi)
 
 - One option (a radio button)
 
@@ -381,7 +381,7 @@ Decide whether a Toloker can select only one or multiple answer options.
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/mCbIe7ya3sbKyg)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/uG-C5g5h3ttDzf)
 
 {% endlist %}
 
@@ -433,7 +433,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1UMzUjLJ3sbLJs)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/9ywPoPF53ttDzz)
 
 If you need to check sequentially more than two conditions, use the [helper.switch](../reference/helper.switch.md) component.
 
@@ -462,7 +462,7 @@ Add a button that opens the search results and generate a search query link usin
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/cphhd0pf3sbLje)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/u1WUKQIF3ttE3H)
 
 #### Side-by-side video and web page comparison
 
@@ -488,7 +488,7 @@ You can display the web page in the built-in window using the [view.iframe](../r
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/O90T9_Il3sbM5V)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/sneMynFM3ttE4d)
 
 #### Side-by-side video and mobile web page comparison
 
@@ -534,7 +534,7 @@ This is a more complex example that compares the video with the results of a sea
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ClD-lmIe3sbMSK)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/j-pKuRhl3ttE5y)
 
 ## Compare the video with another type of data {#compare-video-and-other}
 
@@ -566,7 +566,7 @@ This is a more complex example that compares the video with the results of a sea
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/g2n2IcTG3sbMjX)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/BLaJlPMg3ttE75)
 
 - Place the video next to the text or audio using the [view.list](../reference/view.list.md) component.
 
@@ -588,8 +588,7 @@ This is a more complex example that compares the video with the results of a sea
 
     {% endcut %}
 
-
-    [![](../_images/buttons/view-example.svg)](https://ya.cc/t/GjLnxpir3sbN5f)
+    [![](../_images/buttons/view-example.svg)](https://ya.cc/t/rKjAgNBL3ttE8F)
 
   - Compare audio tracks
 
@@ -610,10 +609,9 @@ This is a more complex example that compares the video with the results of a sea
 
     {% endcut %}
 
-    [![](../_images/buttons/view-example.svg)](https://ya.cc/t/NjQtaBVK3sbNaF)
+    [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VXfz_Amv3ttEB6)
 
   {% endlist %}
-
 
 ## See also {#see-also}
 

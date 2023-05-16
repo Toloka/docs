@@ -4,7 +4,7 @@
 
 Компонент для записи аудио. Работает в приложении [Толока для мобильных](https://toloka.ai/tolokers/docs/mobile/?lang=ru). В браузере открывает окно для загрузки аудиофайла.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/Sbxas)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/Z4vcI1OZ3tyyh8)
 
 ## Свойства компонента {#properties}
 

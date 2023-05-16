@@ -1,5 +1,5 @@
 # UserBonusEvent
-`toloka.streaming.event.UserBonusEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/streaming/event.py#L65)
+`toloka.streaming.event.UserBonusEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/event.py#L65)
 
 ```python
 UserBonusEvent(

@@ -11,6 +11,12 @@ To create a task suite, upload JSON containing:
 
 ## Methods {#methods}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--task-suite):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Method | Endpoint | Overview
 ----- | ----- | -----
 POST | [/task-suites](create-task-suite.md) | Creates one or multiple task suites.
@@ -24,3 +30,5 @@ PATCH | [/task-suites/<task_suite_id>/set-overlap-or-min](set-min-suite-overlap.
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/distribute-tasks-by-pages.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

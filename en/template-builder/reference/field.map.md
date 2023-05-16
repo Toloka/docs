@@ -8,13 +8,13 @@ A Toloker can set markers on the map, so you can use this component to create ta
 
 You can set the following map properties: scale, position of the map center, label, and hint for the Tolokers.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/zSkybT6z3X66wW)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/CtOG5R413tz9Dj)
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.map" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.map" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `center`<span style="color: red">\*</span> | _string_ | Determines the position of the map center. Specify the coordinates in the string format, for example, "29.748713,-95.404287", or use the [data.location](data.location.md) component to set the center of the map to the Toloker's current position. ||
@@ -33,3 +33,5 @@ You can set the following map properties: scale, position of the map center, lab
 || `validation` | _condition_ | Validation based on condition. ||
 || `zoom` | _integer_ | The map initial scale. Use the values from `0` to `19`. Bigger values give a more detailed map view. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

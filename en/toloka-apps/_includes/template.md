@@ -1,1 +1,1 @@
-Download the template and replace the sample data in it with your own data. You can use [XLSX](#xlsx-format), TXT, [TSV](#tsv-format), [CSV](#csv-format), or [JSON](#json-format) files with tasks.
+Download the template and replace the sample data in it with your own data. You can use [XLSX](../../glossary.md#xlsx-format), TXT, [TSV](../../glossary.md#tsv-format), [CSV](../../glossary.md#csv-format), or [JSON](../../glossary.md#json-format) files with tasks.

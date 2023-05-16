@@ -2,13 +2,13 @@
 
 {% include [deprecate](../../_includes/deprecate.md) %}
 
-[Пул](../../glossary.md#pool) в статусе {% if locale == "ru-ru" %}«Архивный»{% endif %}{% if locale == "en-com" %}«Archived»{% endif %} недоступен для запуска и редактирования, а также для [выполнения отложенной приемки](accept.md).
+[Пул](../../glossary.md#pool) в статусе «Архивный» недоступен для запуска и редактирования, а также для [выполнения отложенной приемки](accept.md).
 
 По умолчанию архивные пулы не видны в списке пулов [проекта](../../glossary.md#project). Чтобы увидеть их:
 
 1. Откройте страницу проекта.
 
-1. На вкладке {% if locale == "ru-ru" %}**Пулы**{% endif %}{% if locale == "en-com" %}**Pools**{% endif %} выберите {% if locale == "ru-ru" %}**Архивные**{% endif %}{% if locale == "en-com" %}**Archived**{% endif %}.
+1. На вкладке **Пулы** выберите **Архивные**.
 
 Пул автоматически архивируется, если в течение месяца в пуле не совершались никакие действия:
 
@@ -18,7 +18,7 @@
 - выполнение задания;
 - клонирование через API.
 
-Чтобы архивировать пул, нажмите кнопку {% if locale == "ru-ru" %}![Выпадающее меню](../_images/drop-down.svg) → **Архивировать**{% endif %}{% if locale == "en-com" %}![](../_images/drop-down.svg) → **Archive**{% endif %} вверху страницы пула или ![Drop-down button](../_images/other/pool-action-archive.svg) в списке пулов на странице проекта.
+Чтобы архивировать пул, нажмите кнопку ![Выпадающее меню](../_images/drop-down.svg) → **Архивировать** вверху страницы пула или ![Drop-down button](../_images/other/pool-action-archive.svg) в списке пулов на странице проекта.
 
 {% note info %}
 
@@ -37,7 +37,7 @@
     - [Фильтры](filters.md).
     - [Соотношение скорости и качества](adjust.md).
     - [Отложенная приемка](offline-accept.md).
-    - {% if locale == "ru-ru" %}[Статья в блоге Толоки]({{ toloka-blog-pool }}).{% endif %}
+    - [Статья в блоге Толоки]({{ toloka-blog-pool }}).
 
 ## Решение проблем {#troubleshooting}
 

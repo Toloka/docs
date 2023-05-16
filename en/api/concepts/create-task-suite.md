@@ -6,11 +6,17 @@ Creates one or multiple task suites.
 
 {% note alert "Restriction" %}
 
-You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day.
+You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/task-suites):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
@@ -135,7 +141,6 @@ You can use this ID in the future to [get information about the operation](ope
       "message_on_unknown_solution": "The elephant is white"
     }
   ],
-  "overlap": 5,
   "infinite_overlap": false,
   "remaining_overlap": 3,
   "reserved_for": [],
@@ -146,7 +151,6 @@ You can use this ID in the future to [get information about the operation](ope
   "created": "2016-04-18T12:43:04.988"
 }
 ```
-
 
 #|
 || Parameter | Overview ||
@@ -171,7 +175,14 @@ Input data for a task. List of pairs:
 
 Required if the parameter is not used when creating a task suite `allow_defaults=true`, and the overlap is not specified in the pool parameters (in the [defaults.​default_​overlap_for_​new_task_suites](create-pool.md#default_overlap_for_new_task_suites) key).
 
-Task suite overlap. ||
+Task suite overlap.
+
+{% note warning %}
+
+Please note that overlap you set when creating task suites has priority over the overlap you set during the [pool creation](create-pool.md).
+
+{% endnote %}
+||
 || **longitude** | **float \| required if**
 
 Required if tasks are selected on the map. Otherwise, not used.
@@ -250,10 +261,7 @@ ID of a task suite. ||
 Task ID if the task suite is created automatically with the "smart mixing" option ([learn more](../../guide/concepts/task_upload.md)). ||
 || **tasks[].origin_task_id** | **string**
 
-The ID of a task from another pool from which this task was copied for majority vote verification.
-{% if audience == "internal" %}**owner.company_id** | **string**
-
-The requester's company ID.{% endif %} ||
+The ID of a task from another pool from which this task was copied for majority vote verification.||
 || **remaining_overlap** | **integer**
 
 The remaining overlap for each task. For example, if the task has an overlap of `5` but was completed by two  people, the `remaining_overlap` value is `3`.
@@ -368,3 +376,5 @@ The response format depends on the value of [async_mode](#async_mode).
 {% endlist %}
 
 {% endcut %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

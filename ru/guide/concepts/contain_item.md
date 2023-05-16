@@ -44,8 +44,6 @@
 
       1. На панели **Конфигурация** замените строки кода с 19 по 28:
 
-          {% if locale == "ru-ru" %}
-
           ```json
           "label": "Какое у кота настроение?",
           "options": [
@@ -59,26 +57,7 @@
           },
           ```
 
-          {% endif %}{% if locale == "en-com" %}
-
-          ```json
-          "label": "What is the cat's mood?",
-          "options": [
-          {
-          "label": "Good",
-          "value": "ok"
-          },
-          {
-          "label": "Bad",
-          "value": "bad"
-          },
-          ```
-
-          {% endif %}
-
           на следующие:
-
-          {% if locale == "ru-ru" %}
 
           ```json
           "label": "Есть ли обувь на картинке?",
@@ -93,28 +72,11 @@
           },
           ```
 
-          {% endif %}{% if locale == "en-com" %}
-
-          ```json
-          "label": "Are there shoes in the image?",
-          "options": [
-          {
-          "label": "Yes",
-          "value": "ok"
-          },
-          {
-          "label": "No",
-          "value": "bad"
-          },
-          ```
-
-          {% endif %}
-
       1. {% include [toloka-requester-source-tb-input-output](../_includes/toloka-requester-source/id-toloka-requester-source/tb-input-output.md) %}
 
           - Поле входных данных: `image` — ссылка для загрузки картинки.
 
-            Измените тип данных на строку, чтобы использовать ссылки на свои файлы{% if locale == "ru-ru" %} или [загружать картинки](prepare-data.md#interface), хранящиеся на Яндекс Диске{% endif %}.
+            Измените тип данных на строку, чтобы использовать ссылки на свои файлы или [загружать картинки](prepare-data.md#interface), хранящиеся на Яндекс Диске.
 
           - Поле выходных данных: `result — строка`, в которую будет записан ответ исполнителя.
 
@@ -136,8 +98,6 @@
 
           - Измените надписи на вариантах ответа: **Хорошее** → **Да**, **Плохое** → **Нет**:
 
-          {% if locale == "ru-ru" %}
-
           ```html
           {{img src=image width="100%" height="400px"}}
           <div>Есть ли <b>обувь</b> на картинке?<div>
@@ -147,23 +107,11 @@
           {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}
           ```
 
-          {% endif %}{% if locale == "en-com" %}
-
-          ```html
-          {{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
-
-          {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-          {{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-          {{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}
-          ```
-
-          {% endif %}
-
       1. Блоки **JS**, **CSS** и **Спецификация данных** оставьте без изменений.
 
           Подробнее о параметрах **Спецификации** читайте в разделе [Входные и выходные данные](incoming.md).
 
-      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) {% if locale == "ru-ru" %}**Предпросмотр задания**{% endif %}{% if locale == "en-com" %}**Preview task**{% endif %}, чтобы увидеть получившееся задание.
+      1. Нажмите кнопку ![](../_images/tutorials/image-segmentation/preview-button.svg) **Предпросмотр задания**, чтобы увидеть получившееся задание.
 
           {% note info %}
 
@@ -179,7 +127,7 @@
 
 1. В поле **Инструкция для исполнителей** введите [инструкцию](../../glossary.md#instructions) и добавьте изображение.
 
-    1. **Текст инструкции:**{% if locale == "ru-ru" %}
+    1. **Текст инструкции:**
 
     ```plaintext
     Посмотрите на картинку и определите, есть ли на фотографии **обувь**.
@@ -187,17 +135,6 @@
     Если нет, нажмите **Нет**.
     Например, на фотографии есть обувь, поэтому правильный ответ **Да**.
     ```
-
-    {% elsif locale == "en-com" %}
-
-    ```plaintext
-    Look at the picture and determine if there are **shoes** in the picture.
-    If there are, click **Yes**.
-    If there aren't, click **No**.
-    For example, there are shoes in the photo, so the correct answer is **Yes**.
-    ```
-
-    {% endif %}
 
     1. Чтобы добавить изображение, нажмите кнопку ![](../_images/tutorials/image-segmentation/wsdm-tutorial-button.svg) и укажите ссылку на изображение, которое вы хотите использовать в качестве примера.
 
@@ -231,7 +168,7 @@
 
     {% include [toloka-requester-source-filter-client-about](../_includes/toloka-requester-source/id-toloka-requester-source/filter-client-about.md) %}
 
-1. (опционально) В разделе {% if locale == "ru-ru" %}**Соотношение скорости и качества**{% elsif locale == "en-com" %}**Speed/quality balance**{% endif %} укажите желаемый уровень качества. Повышение уровня качества может снизить скорость выполнения заданий, так как пул будет доступен меньшему числу исполнителей. Подробнее об этом читайте в разделе [Соотношение скорости и качества](adjust.md).
+1. (опционально) В разделе **Соотношение скорости и качества** укажите желаемый уровень качества. Повышение уровня качества может снизить скорость выполнения заданий, так как пул будет доступен меньшему числу исполнителей. Подробнее об этом читайте в разделе [Соотношение скорости и качества](adjust.md).
 
 1. В блоке **Цена** в поле **Цена за страницу заданий** укажите `0.01`.
 

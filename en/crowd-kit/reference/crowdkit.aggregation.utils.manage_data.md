@@ -1,5 +1,5 @@
 # manage_data
-`crowdkit.aggregation.utils.manage_data` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/utils.py#L82)
+`crowdkit.aggregation.utils.manage_data` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/utils.py#L105)
 
 ```python
 manage_data(

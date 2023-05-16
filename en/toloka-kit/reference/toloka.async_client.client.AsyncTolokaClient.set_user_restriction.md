@@ -1,5 +1,5 @@
 # set_user_restriction
-`toloka.async_client.client.AsyncTolokaClient.set_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.set_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async set_user_restriction(self, user_restriction: UserRestriction)

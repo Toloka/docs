@@ -1,5 +1,5 @@
 # AudioFieldV1
-`toloka.client.project.template_builder.fields.AudioFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/fields.py#L72)
+`toloka.client.project.template_builder.fields.AudioFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L72)
 
 ```python
 AudioFieldV1(
@@ -24,7 +24,7 @@ Works in the mobile app. In a browser, this component opens a window for uploadi
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`multiple`|**Optional\[Any\]**|<p>Determines whether multiple audio files can be recorded (or uploaded): False (default) — forbidden. True — allowed.</p>
+`multiple`|**Optional\[Any\]**|<p>Determines whether multiple audio files can be recorded (or uploaded):</p> <ul> <li>`False` (default) — forbidden.</li> <li>`True` — allowed.</li> </ul>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>
 `label`|**Optional\[Any\]**|<p>Label above the component.</p>
 `validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>

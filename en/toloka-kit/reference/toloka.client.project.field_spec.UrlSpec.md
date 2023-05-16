@@ -1,5 +1,5 @@
 # UrlSpec
-`toloka.client.project.field_spec.UrlSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/field_spec.py#L112)
+`toloka.client.project.field_spec.UrlSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/field_spec.py#L110)
 
 ```python
 UrlSpec(
@@ -10,11 +10,11 @@ UrlSpec(
 )
 ```
 
-A url field specification
+A URL field specification.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`required`|**Optional\[bool\]**|<p>Whether the object or input field is required.</p>
-`hidden`|**Optional\[bool\]**|<p>Whether to hide the input field from Tolokers.</p>
+`required`|**Optional\[bool\]**|<p>Whether a field is required. </p><p>Default value: `True`.</p>
+`hidden`|**Optional\[bool\]**|<p>Whether to hide an input field from Tolokers. Output fields can&#x27;t be hidden. </p><p>Default value: `False`.</p>

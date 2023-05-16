@@ -32,7 +32,6 @@
 
 {% include [reusables-query](../_includes/reusables/id-reusables/query.md) %}
 
-
 #|
 ||**Параметр**| **Описание**||
 ||**pool_id** | **string \| обязательный**

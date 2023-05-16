@@ -20,7 +20,7 @@ To do this:
 
 1. Assign them a hidden [skill](../../glossary#skill), or use an existing [skill](nav-assign.md) linked to the pool.
 
-1. Go to **Messages** and click {% if locale == "en-com" %}**Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**{% endif %}.
+1. Go to **Messages** and click **Contact** → **Group of Tolokers** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**.
 
 1. If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 

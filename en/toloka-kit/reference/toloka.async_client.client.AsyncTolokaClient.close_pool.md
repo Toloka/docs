@@ -1,24 +1,24 @@
 # close_pool
-`toloka.async_client.client.AsyncTolokaClient.close_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.close_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async close_pool(self, pool_id: str)
 ```
 
-Stops distributing tasks from the pool
+Closes a pool.
 
 
-If all tasks done, the pool will be closed automatically.
+If all tasks in a pool are completed, then the pool is closed automatically.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**str**|<p>ID of the pool that will be closed.</p>
+`pool_id`|**str**|<p>The ID of the pool to be closed.</p>
 
 * **Returns:**
 
-  Pool object with new status.
+  The pool with updated status.
 
 * **Return type:**
 

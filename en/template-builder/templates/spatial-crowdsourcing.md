@@ -8,7 +8,7 @@ The preset uses [HTML/JS/CSS editor](../../guide/concepts/spec.md) by default. T
 
 Take a look at the example: the interface includes a text block, a button for sending the coordinates of the Toloker's device, a button for uploading photos, and a comment field. Note that validation and task layout are already configured in this Template Builder sample code.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ZFj9dvvG3Zg9Xw)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Fz_--ktr3ttAX9)
 
 {% cut "Components used in the example" %}
 
@@ -36,9 +36,9 @@ Take a look at the example: the interface includes a text block, a button for s
 
 - [view.action-button](../reference/view.action-button.md): Adds a button that calls an action.
 
-  In this example, clicking the button calls [@yandex-toloka/data.location](../reference/data.location.md) which sends the coordinates of the Toloker's device. 
-  
-  The [@yandex-toloka/condition.distance](../reference/condition.distance.md) component compares the Toloker's coordinates with the business location that you specified. The Toloker can submit the response if the difference is less than 50 meters. To change this condition, replace the value of the `max` property with the desired distance. 
+  In this example, clicking the button calls [@toloka/data.location](../reference/data.location.md) which sends the coordinates of the Toloker's device.
+
+  The [@toloka/condition.distance](../reference/condition.distance.md) component compares the Toloker's coordinates with the business location that you specified. The Toloker can submit the response if the difference is less than 50 meters. To change this condition, replace the value of the `max` property with the desired distance.
 
   {% cut "Show code" %}
 
@@ -49,7 +49,7 @@ Take a look at the example: the interface includes a text block, a button for s
     "action": {
       "type": "action.set",
       "payload": {
-        "type": "@yandex-toloka/data.location"
+        "type": "@toloka/data.location"
       },
       "data": {
         "type": "data.output",
@@ -68,10 +68,10 @@ Take a look at the example: the interface includes a text block, a button for s
           }
         },
         {
-          "type": "@yandex-toloka/condition.distance",
+          "type": "@toloka/condition.distance",
           "hint": "you are too far away from the location.",
           "from": {
-            "type": "@yandex-toloka/data.location"
+            "type": "@toloka/data.location"
           },
           "to": {
             "type": "data.input",
@@ -165,7 +165,7 @@ To add a detailed description to the task, use one more [view.text](../reference
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/67DjKLNz3pAN3C)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/Hntp83Qy3ttDYy)
 
 ## Add a layout {#add-layout}
 
@@ -192,7 +192,7 @@ In this example, the text is highlighted with a blue border.
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/a6I75hXP3nS2wX)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/obCzNwRZ3ttDa2)
 
 ## See also {#see-also}
 

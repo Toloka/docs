@@ -8,6 +8,12 @@ You can specify a [numeric value](#number_overlap) or set [infinite overlap](#in
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#patch-/task-suites/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -95,3 +101,5 @@ Contains a [task suite in JSON format](create-task-suite.md#body).
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overlap-faq.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

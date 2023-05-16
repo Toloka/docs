@@ -1,21 +1,24 @@
 # close_training
-`toloka.client.TolokaClient.close_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1705)
+`toloka.client.TolokaClient.close_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1770)
 
 ```python
 close_training(self, training_id: str)
 ```
 
-Stops distributing tasks from the training
+Closes a training.
+
+
+Tasks from closed trainings are not assigned to Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of the training that will be closed.</p>
+`training_id`|**str**|<p>The ID of the training to be closed.</p>
 
 * **Returns:**
 
-  Training object with new status.
+  The training with updated status.
 
 * **Return type:**
 
@@ -25,6 +28,6 @@ Stops distributing tasks from the training
 
 
 ```python
-open_training = next(toloka_client.get_trainings(status='OPEN'))
-toloka_client.close_training(training_id=open_training.id)
+opened_training = next(toloka_client.get_trainings(status='OPEN'))
+toloka_client.close_training(training_id=opened_training.id)
 ```

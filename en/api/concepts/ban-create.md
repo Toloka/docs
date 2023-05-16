@@ -6,6 +6,12 @@ Blocks a Toloker from accessing tasks.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -47,7 +53,7 @@ Title | Overview
 
 #|
 || Parameter | Overview  ||
-|| **scope** | **string \| mandatory**
+|| **scope** | **string \| required**
 
 The scope of the ban:
 
@@ -57,12 +63,12 @@ The scope of the ban:
 || **user_id** | **string \| required**
 
 Toloker ID. ||
-|| **project_id** | **string \| mandatory if**
+|| **project_id** | **string \| required if**
 
 Required if `scope=PROJECT`.
 
 The ID of the project that is blocked. ||
-|| **pool_id** | **string \| mandatory if**
+|| **pool_id** | **string \| required if**
 
 Required if `scope=POOL`.
 
@@ -130,3 +136,5 @@ The UTC date and time of the ban, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]
 
 ID of the ban. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

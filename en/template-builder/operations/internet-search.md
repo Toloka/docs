@@ -2,7 +2,6 @@
 
 In this section, you will learn how to add a link or a search engine query and how to check whether a Toloker has clicked on them. Links can be opened when a certain event occurs. You can also group links together and set shortcuts for them to allow Tolokers to work faster.
 
-
 ## Insert a normal link {#view.link}
 
 If you want to insert a link without additional formatting, use the [view.link](../reference/view.link.md) component. The link is underlined and changes color after clicking on it.
@@ -15,8 +14,7 @@ If you want to insert a link without additional formatting, use the [view.link](
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TquRS)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/CmLK2rOB3vw46E)
 
 ## Create a search query {#helper.search-query}
 
@@ -40,20 +38,17 @@ If you need to insert links to several search engines with the same query, then
 
 {% endnote %}
 
-
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TqucM)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/Vv1wqNP13vw4gc)
 
 If the search engine you need is not available in the `engine` property, leave this field empty and enter the search query in `query` using the [helper.join](../reference/helper.join.md) component.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqunm)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/sQLrwr193ttF3h)
 
 ## Group links together {#view.link-group}
 
 To group multiple links together, use the [view.link-group](../reference/view.link-group.md) component. Links will be underlined. For emphasis, you can add a border around one of the links and remove the underline. To do this, set the `theme` property to `primary` for this link.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/SmsSa)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/l6Y5VpjQ3vvKhM)
 
 ## Create a button link {#action.open-link}
 
@@ -76,15 +71,13 @@ To make sure the button looks nice and doesn't stretch to the entire screen wi
 
 {% endnote %}
 
-
 When adding multiple buttons, you can arrange them horizontally (instead of vertically) in the `direction` property.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tquv9)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/hX0vfOLQ3vw5Xd)
 
 To assign a [shortcut](../best-practices/hotkeys.md) to a button, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) component.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/U7fpE)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/XYwqil9X3xP6Jt)
 
 ## Check if the link was clicked on {#condition.link-opened}
 
@@ -92,8 +85,7 @@ To check if the Toloker clicked on the link, use the [condition.link-opened](.
 
 Remember that the condition only works if a Toloker clicks the link in the interface. If the link is opened via the address bar, the condition doesn't work.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqux9)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/6JZC_mNn3vw6Dp)
 
 ## Add keyboard shortcuts {#hotkeys}
 
@@ -111,23 +103,21 @@ To add a shortcut, use the [plugin.hotkeys](../reference/plugin.hotkeys.md) plug
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tquyt)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/LNClzO8H3vw76R)
 
 Learn more about shortcuts in [Configure keyboard shortcuts](../best-practices/hotkeys.md).
-
 
 ## Use event-driven links {#plugin.trigger}
 
 You can set a link to open when a certain event occurs. For example, when a Toloker chooses an option, this can open a specific search query. To do this, use the [plugin.trigger](../reference/plugin.trigger.md) plugin.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqv5B)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ALiH0zIV3ttF8Z)
 
 ## Reuse the code {#vars}
 
 Just like any piece of the code, the code for opening the link and its address can be reused using the `{"$ref": "path.to.element"}` structure. This is useful when adding keyboard shortcuts. To avoid duplicating the code for the link display and for [plugin.hotkeys](../reference/plugin.hotkeys.md), just enter the code once in `vars`.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Tqv8L)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/UwBOfm8d3vw7uu)
 
 Learn more about reusing the code in [Reuse code](../best-practices/reuse.md).
 

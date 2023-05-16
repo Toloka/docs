@@ -1,5 +1,5 @@
 # WebhookSubscription
-`toloka.client.webhook_subscription.WebhookSubscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/webhook_subscription.py#L11)
+`toloka.client.webhook_subscription.WebhookSubscription` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/webhook_subscription.py#L11)
 
 ```python
 WebhookSubscription(
@@ -23,5 +23,5 @@ Webhook subscription to make a callback to the given address when some event hap
 `webhook_url`|**Optional\[str\]**|<p>The URL to which notifications will be sent.</p>
 `event_type`|**Optional\[[EventType](toloka.client.webhook_subscription.WebhookSubscription.EventType.md)\]**|<p>Event type.</p>
 `pool_id`|**Optional\[str\]**|<p>ID of the pool for which the subscription was created.</p>
-`id`|**Optional\[str\]**|<p>Pool ID. Read only field.</p>
-`created`|**Optional\[datetime\]**|<p>When this pool was created. Read only field.</p>
+`id`|**Optional\[str\]**|<p>Pool ID. Read-only field.</p>
+`created`|**Optional\[datetime\]**|<p>When this pool was created. Read-only field.</p>

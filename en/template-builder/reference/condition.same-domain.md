@@ -6,7 +6,7 @@ Links must be specified in full, including the protocol (http, https, ftp).
 
 The `www.` subdomain is ignored when checking, meaning that links to `www.example.com` and `example.com` are considered to be the same.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/apq6v)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/Up5Km-i53vwDif)
 
 How to pass a link address:
 
@@ -19,8 +19,10 @@ How to pass a link address:
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "condition.same-domain" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "condition.same-domain" | Set component type. ||
 || `data` | _any_ | The link address to be checked. If you don't specify it, the value returned by the parent component (the one that contains `condition.same-domain`) is used. ||
-|| `hint` | _string_ | Validation error message that a Toloker will see ||
+|| `hint` | _string_ | Validation error message that a Toloker will see. ||
 || `original`<span style="color: red">\*</span> | _any_ | The link address that your link is compared to. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

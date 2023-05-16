@@ -1,6 +1,6 @@
 # Managing the requester's personal account
 
-To send tasks for completion, you must have money in your Toloka account. {% if locale == "en-com" %}For more information, see [Topping up your account](refill.md).{% endif %}
+To send tasks for completion, you must have money in your Toloka account. For more information, see [Topping up your account](refill.md).
 
 All payments between requesters and Tolokers are made in U.S. dollars. The account balance is shown in the main menu:
 
@@ -16,7 +16,7 @@ Money in the account is spent on the following items:
 
 - [Fee](#comission)
 
-- [Rewards for Tolokers](bonus.md)
+- [Bonuses for Tolokers](bonus.md)
 
 You can [track spending](#track-budget) in your profile. You can also download a task report in a PDF file. To monitor the funds available in your account, [set up notifications](#money-notification).
 
@@ -26,23 +26,23 @@ The price of a task is set by the requester in the [pool settings](../../glossar
 
 ## Fees {#comission}
 
-The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md).
+The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [bonuses](bonus.md).
 
-The amount by project is shown in your [profile]({{ profile }}) (on the {% if locale == "en-com" %}**Spent**{% endif %} tab). You can see total fees for the pool tasks on the pool page (the {% if locale == "en-com" %}**Budget spent (+ markup)**{% endif %} and {% if locale == "en-com" %}**Approximate budget (+ markup)**{% endif %} fields).
+The amount by project is shown in your [profile]({{ profile }}) (on the **Spent** tab). You can see total fees for the pool tasks on the pool page (the **Budget spent (+ markup)** and **Approximate budget (+ markup)** fields).
 
 ## Expenses in the requester's profile {#track-budget}
 
 To see your spending history:
 
-1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
+1. Go to the [requester profile]({{ profile }}) and switch to the **Spent** tab.
 
 1. Under the **Spending history** title, select a period.
 
 1. Select the type of the expenses:
 
-    - {% if locale == "en-com" %}**All costs**{% endif %} —  all expenses for the period.
+    - **All costs** —  all expenses for the period.
 
-    - {% if locale == "en-com" %}**Reserved**{% endif %} — reserved money for the period.
+    - **Reserved** — reserved money for the period.
 
 1. In the section below you will see:
 
@@ -54,13 +54,13 @@ To see your spending history:
 
 {% note info %}
 
-To save the report with the spending data in the PDF file format, click {% if locale == "en-com" %}**Download report as PDF**{% endif %}. To choose another file format, click ![](../_images/other/drop-down.svg) at the right.
+To save the report with the spending data in the PDF file format, click **Download report as PDF**. To choose another file format, click ![](../_images/other/drop-down.svg) at the right.
 
 {% endnote %}
 
 ## Get invoices and bills {#invoices}
 
-1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Spent**{% endif %} tab.
+1. Go to the [requester profile]({{ profile }}) and switch to the **Spent** tab.
 
 1. Click **Get invoices and bills**.
 
@@ -72,7 +72,7 @@ To save the report with the spending data in the PDF file format, click {% if lo
 
 To get notifications when you have less than 5 dollars left on your account:
 
-1. Go to the [requester profile]({{ profile }}) and switch to the {% if locale == "en-com" %}**Notifications**{% endif %} tab.
+1. Go to the [requester profile]({{ profile }}) and switch to the **Notifications** tab.
 
 1. In the **Low funds** row, choose which notification method to use:
 
@@ -114,32 +114,18 @@ If you want to create main and secondary accounts, [write to support](../trouble
 
 ## Troubleshooting {#troubleshooting}
 
-{% cut "When I top up my account, I see an amount 1000 times greater than I planned. What happened?" %}
+{% include [troubleshooting-amount-greater-than-planned](../_includes/troubleshooting/finance/amount-greater-than-planned.md) %}
 
-That's normal. For example, if you entered $25 and you see "25,000", it's still $25 with a decimal delimiter. Your account will be topped up by $25 at the current exchange rate. You'll see the amount in rubles when you proceed to payment.
+{% include [faq-how-long-paying-invoice-take](../_includes/faq/finance/how-long-paying-invoice-take.md) %}
 
-{% endcut %}
+{% include [faq-currency-exchange-rate](../_includes/faq/finance/currency-exchange-rate.md) %}
 
-{% cut "How long does paying the invoice take?" %}
+{% include [faq-add-money](../_includes/faq/finance/add-money.md) %}
 
-If you pay using a bank card, the money is usually transferred to your Toloka account within a few minutes. If you can't see the top-up amount on your account, [write to us](../troubleshooting/support.md) and we'll sort it out. Specify your requester username and account number and use **Account top-up** as your email subject.
-
-{% endcut %}
-
-{% cut "How do I find out the currency exchange rate that would apply to my account top-up in Toloka?" %}
-
-You specify the top-up amount in USD. On the **Balance**, it's converted into rubles, including VAT. [Learn more](refill.md) about top-up.
-
-{% endcut %}
-
-{% cut "How do I add money to Toloka?" %}
-
-You can top up your Toloka account using a bank card or bank transfer. On the [Profile]({{ profile }}) page, click "Connect to billing", fill out the form, and you'll see the "Top up account" button. [Learn more](refill.md#step-by-step) with step-by-step instructions.
+{% include [faq-download-pdf](../_includes/faq/finance/download-pdf.md) %}
 
 [Get closing documents and invoices](../troubleshooting/support.md)
 
 [Refund money transferred to the Toloka account](../troubleshooting/support.md)
-
-{% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

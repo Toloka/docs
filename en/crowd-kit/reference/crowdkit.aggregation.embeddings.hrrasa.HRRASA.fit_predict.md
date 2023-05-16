@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.embeddings.hrrasa.HRRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/embeddings/hrrasa.py#L176)
+`crowdkit.aggregation.embeddings.hrrasa.HRRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/embeddings/hrrasa.py#L186)
 
 ```python
 fit_predict(
@@ -9,19 +9,19 @@ fit_predict(
 )
 ```
 
-Fit the model and return aggregated outputs.
+Fits the model to the training data and returns the aggregated outputs.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**DataFrame**|<p>Workers&#x27; outputs with their embeddings. A pandas.DataFrame containing `task`, `worker`, `output` and `embedding` columns.</p>
-`true_embeddings`|**Optional\[Series\]**|<p>Tasks&#x27; embeddings. A pandas.Series indexed by `task` and holding corresponding embeddings.</p>
+`data`|**DataFrame**|<p>The workers&#x27; outputs with their embeddings. The `pandas.DataFrame` data contains the `task`, `worker`, `output`, and `embedding` columns.</p>
+`true_embeddings`|**Optional\[Series\]**|<p>The embeddings of the true task responses. The `pandas.Series` data is indexed by `task` and contains the corresponding embeddings. The multiple true embeddings are not supported for a single task.</p>
 
 * **Returns:**
 
-  Tasks' embeddings and outputs.
-A pandas.DataFrame indexed by `task` with `embedding` and `output` columns.
+  The task embeddings and outputs.
+The `pandas.DataFrame` data is indexed by `task` and has the `embedding` and `output` columns.
 
 * **Return type:**
 

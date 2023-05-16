@@ -6,21 +6,27 @@ Gets the list of created skills.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/skills):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/skills
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/skills
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/skills
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/skills
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +38,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -47,8 +53,7 @@ Parameters to sort by:
 - `created` — The skill creation date in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
 
 To learn how to configure sorting, see [Sorting the list of objects](sorting.md). ||
-|| **Standard query parameters** |
-[limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte) ||
+|| **Standard query parameters** | [limit](standard-query-parameters.md#limit), [id_gt](standard-query-parameters.md#id_gt), [id_gte](standard-query-parameters.md#id_gte), [id_lt](standard-query-parameters.md#id_lt), [id_lte](standard-query-parameters.md#id_lte), [created_gt](standard-query-parameters.md#created_gt), [created_gte](standard-query-parameters.md#created_gte), [created_lt](standard-query-parameters.md#created_lt), [created_lte](standard-query-parameters.md#created_lte), [modified_gt](standard-query-parameters.md#modified_gt), [modified_gte](standard-query-parameters.md#modified_gte), [modified_lt](standard-query-parameters.md#modified_lt), [modified_lte](standard-query-parameters.md#modified_lte) ||
 |#
 
 ## Query example {#request-example}
@@ -64,17 +69,17 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/skills?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/skills?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -84,24 +89,32 @@ You can set up the display of the list of skills in parts (for example, 10 skill
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-[Information about skills](get-skill.md) in the `items` array:
-
 ```json
 {"items": [{skill 1}, {skill 2}, ... {skill n}], "has_more": false}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains [information about skills](get-skill.md). ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

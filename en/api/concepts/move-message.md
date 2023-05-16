@@ -12,6 +12,12 @@ Message threads located in the `IMPORTANT` folder are marked as important in th
 
 #### To add to a folder
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/message-threads/-id-/add-to-folders):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Adds a message thread to a folder.
 
 {% list tabs %}
@@ -35,6 +41,12 @@ Adds a message thread to a folder.
 {% endlist %}
 
 #### Remove from a folder
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/message-threads/-id-/remove-from-folders):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 Deletes a message thread from a folder.
 
@@ -85,3 +97,5 @@ Title | Overview
 
 Folders to add a message thread to or remove a message thread from. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

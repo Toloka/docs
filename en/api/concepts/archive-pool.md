@@ -12,6 +12,12 @@ Exams with automatic acceptance by accuracy, where tasks with insufficient accur
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/archive):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -71,7 +77,7 @@ Contains information about the results of the operation.
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `POOL.ARCHIVE` — Archiving a pool. ||
@@ -103,3 +109,5 @@ Pool ID. ||
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/pool-archive.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

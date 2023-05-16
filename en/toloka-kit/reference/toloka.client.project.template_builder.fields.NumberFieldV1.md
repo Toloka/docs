@@ -1,5 +1,5 @@
 # NumberFieldV1
-`toloka.client.project.template_builder.fields.NumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/fields.py#L386)
+`toloka.client.project.template_builder.fields.NumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L386)
 
 ```python
 NumberFieldV1(
@@ -22,8 +22,7 @@ A component that allows you to enter a number.
 The box already has validation: by default, Tolokers can enter only numbers and decimal separators. They can use either
 a dot or a comma as a separator, but there will always be a dot in the output.
 
-When the Toloker is entering a number, the separator automatically changes to the one specified in the regional
-settings.
+When the Toloker is entering a number, the separator automatically changes to the one specified in the regional settings.
 
 Negative numbers are allowed by default. To disable them, use the validation property. Pressing the up or down arrow
 keys will increase or decrease the number by one.

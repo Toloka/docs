@@ -85,6 +85,8 @@ items:
     href: ../template-builder/reference/field.number.md
   - name: field.phone-number
     href: ../template-builder/reference/field.phone-number.md
+  - name: field.quiz
+    href: ../template-builder/reference/field.quiz.md
   - name: field.radio-group
     href: ../template-builder/reference/field.radio-group.md
   - name: field.select
@@ -171,6 +173,8 @@ items:
   items:
   - name: List of data sources
     href: ../template-builder/reference/datas.md
+  - name: data.assignment-id
+    href: ../template-builder/reference/data.assignment-id.md
   - name: data.location
     href: ../template-builder/reference/data.location.md
 - name: Actions

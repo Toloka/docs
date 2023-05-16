@@ -222,3 +222,5 @@ Toloker responses are returned in the `items` array in the following format:
 - [HTTP methods used for processing files in Toloker responses](attachments.md)
 - [Response aggregation](aggregated-solutions.md)
 - [Using libraries](libraries.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

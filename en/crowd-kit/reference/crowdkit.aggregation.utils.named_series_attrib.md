@@ -1,5 +1,5 @@
 # named_series_attrib
-`crowdkit.aggregation.utils.named_series_attrib` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/utils.py#L143)
+`crowdkit.aggregation.utils.named_series_attrib` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/utils.py#L166)
 
 ```python
 named_series_attrib(name: str)

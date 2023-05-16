@@ -6,13 +6,21 @@ Makes changes to a pool.
 
 The pool can't be edited if it's open. [Close the pool](close-pool-for-update.md) before editing.
 
-{% note info %}
+{% note alert "Restriction" %}
 
-Learn about editing a training pool in the section [Edit a training pool](edit-training.md).
+You can send a maximum of 10 requests per hour to change the pool overlap parameters values. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
+Learn about editing a training pool in the [Edit a training pool](edit-training.md) section.
+
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#put-/pools/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
@@ -62,3 +70,5 @@ Contains updated information about the pool (see the description in the [Create 
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/pool-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

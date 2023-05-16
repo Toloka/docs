@@ -12,13 +12,15 @@ You can filter Tolokers by the following criteria:
 
 ## How to select Tolokers {#select-users}
 
-- [Using skills](skill.md).
-- [Using quality control rules](quality_control.md).
-- [Using filters](filters.md).
-- [Using bans](ban.md).
+- [Using skills](skill.md)
+- [Using quality control rules](quality_control.md)
+- [Using filters](filters.md)
+- [Using bans](ban.md)
 
 ## Learn more {#links}
 
 - [Viewing Tolokers](../../guide/concepts/users.md)
 - [Description of skills](../../guide/concepts/nav.md)
 - [Quality control rules](../../guide/concepts/check-performers.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

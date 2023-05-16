@@ -1,5 +1,5 @@
 # get_webhook_subscriptions
-`toloka.client.TolokaClient.get_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L3344)
+`toloka.client.TolokaClient.get_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3462)
 
 Finds all webhook subscriptions that match certain criteria.
 
@@ -22,6 +22,7 @@ If you need to sort webhook subscriptions use the [find_webhook_subscriptions](t
 `created_lte`|**Optional\[datetime\]**|<p>Subscriptions created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Subscriptions created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Subscriptions created after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned webhook subscriptions limit for each request. The maximum allowed batch_size is 300.</p>
 
 * **Yields:**
 

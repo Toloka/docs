@@ -8,7 +8,7 @@ This component is convenient when using mobile devices. To upload files from a c
 
 In the task review mode, the uploaded images will appear automatically. You can view, rotate, and switch among the images.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSVc)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/Td82X7Jv3twhPM)
 
 ## Using the Toloka mobile app
 
@@ -20,7 +20,7 @@ After a Toloker submits the task, the files are saved in the app and gradually u
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.media-file" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.media-file" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `accept`<span style="color: red">\*</span> | _object_ | Adds different buttons for four types of uploads. Pass the `true` value for the ones that you need.
@@ -38,3 +38,5 @@ For example, if you need a button for uploading files from the gallery, add the 
   || `requiredCoordinates` | _boolean_ | If the value is `true`, a file without geotag can not be uploaded. ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

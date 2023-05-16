@@ -1,5 +1,5 @@
 # MajorityVote
-`crowdkit.aggregation.classification.majority_vote.MajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/classification/majority_vote.py#L12)
+`crowdkit.aggregation.classification.majority_vote.MajorityVote` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/classification/majority_vote.py#L12)
 
 ```python
 MajorityVote(
@@ -9,19 +9,18 @@ MajorityVote(
 )
 ```
 
-Majority Vote aggregation algorithm.
+The **Majority Vote** aggregation algorithm is a straightforward approach for categorical aggregation: for each task,
 
 
-Majority vote is a straightforward approach for categorical aggregation: for each task,
-it outputs a label which has the largest number of responses. Additionaly, the majority vote
-can be used when different weights assigned for workers' votes. In this case, the
-resulting label will be the one with the largest sum of weights.
+it outputs a label with the largest number of responses. Additionaly, the Majority Vote
+can be used when different weights are assigned to workers' votes. In this case, the
+resulting label will have the largest sum of weights.
 
 
 {% note info %}
 
- In case when two or more labels have the largest number of votes, the resulting
- label will be the same for all tasks which have the same set of labels with equal count of votes.
+ If two or more labels have the largest number of votes, the resulting
+ label will be the same for all tasks that have the same set of labels with the same number of votes.
 
  {% endnote %}
 
@@ -29,22 +28,22 @@ resulting label will be the one with the largest sum of weights.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`default_skill`|**Optional\[float\]**|<p>Defualt worker&#x27;s weight value.</p>
-`labels_`|**Optional\[Series\]**|<p>Tasks&#x27; labels. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s most likely true label.</p>
-`skills_`|**Optional\[Series\]**|<p>workers&#x27; skills. A pandas.Series index by workers and holding corresponding worker&#x27;s skill</p>
-`probas_`|**Optional\[DataFrame\]**|<p>Tasks&#x27; label probability distributions. A pandas.DataFrame indexed by `task` such that `result.loc[task, label]` is the probability of `task`&#x27;s true label to be equal to `label`. Each probability is between 0 and 1, all task&#x27;s probabilities should sum up to 1</p>
-`on_missing_skill`|**str**|<p>How to handle assignments done by workers with unknown skill. Possible values:</p> <ul> <li>&quot;error&quot; — raise an exception if there is at least one assignment done by user with unknown skill;</li> <li>&quot;ignore&quot; — drop assignments with unknown skill values during prediction. Raise an exception if there is no assignments with known skill for any task;</li> <li>value — default value will be used if skill is missing.</li> </ul>
+`default_skill`|**Optional\[float\]**|<p>Default worker weight value.</p>
+`labels_`|**Optional\[Series\]**|<p>The task labels. The `pandas.Series` data is indexed by `task` so that `labels.loc[task]` is the most likely true label of tasks.</p>
+`skills_`|**Optional\[Series\]**|<p>The workers&#x27; skills. The `pandas.Series` data is indexed by `worker` and has the corresponding worker skill.</p>
+`probas_`|**Optional\[DataFrame\]**|<p>The probability distributions of task labels. The `pandas.DataFrame` data is indexed by `task` so that `result.loc[task, label]` is the probability that the `task` true label is equal to `label`. Each probability is in the range from 0 to 1, all task probabilities must sum up to 1.</p>
+`on_missing_skill`|**str**|<p>A value which specifies how to handle assignments performed by workers with an unknown skill. Possible values:         * &quot;error&quot; — raises an exception if there is at least one assignment performed by a worker with an unknown skill;         * &quot;ignore&quot; — drops assignments performed by workers with an unknown skill during prediction. Raises an exception if there are no         assignments with a known skill for any task;         * value — the default value will be used if a skill is missing.</p>
 
 **Examples:**
 
-Basic majority voting:
+Basic Majority Vote:
 ```python
 from crowdkit.aggregation import MajorityVote
 from crowdkit.datasets import load_dataset
 df, gt = load_dataset('relevance-2')
 result = MajorityVote().fit_predict(df)
 ```
-Weighted majority vote:
+Weighted Majority Vote:
 ```python
 import pandas as pd
 from crowdkit.aggregation import MajorityVote
@@ -66,6 +65,6 @@ result = MajorityVote.fit_predict(df, skills)
 
 | Method | Description |
 | :------| :-----------|
-[fit](crowdkit.aggregation.classification.majority_vote.MajorityVote.fit.md)| Fit the model.
-[fit_predict](crowdkit.aggregation.classification.majority_vote.MajorityVote.fit_predict.md)| Fit the model and return aggregated results.
-[fit_predict_proba](crowdkit.aggregation.classification.majority_vote.MajorityVote.fit_predict_proba.md)| Fit the model and return probability distributions on labels for each task.
+[fit](crowdkit.aggregation.classification.majority_vote.MajorityVote.fit.md)| Fits the model to the training data.
+[fit_predict](crowdkit.aggregation.classification.majority_vote.MajorityVote.fit_predict.md)| Fits the model to the training data and returns the aggregated results.
+[fit_predict_proba](crowdkit.aggregation.classification.majority_vote.MajorityVote.fit_predict_proba.md)| Fits the model to the training data and returns probability distributions of labels for each task.

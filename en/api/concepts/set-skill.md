@@ -6,11 +6,17 @@ Sets the skill value.
 
 {% note alert "Restriction" %}
 
-You can send a maximum of 100,000 requests of this kind per day.
+You can send a maximum of 100,000 requests of this kind per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#put-/user-skills):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
@@ -111,3 +117,5 @@ The date and time in UTC when the Toloker's skill level changed. It uses ISO 860
 
 - [{#T}](../../guide/concepts/nav-assign.md)
 - [{#T}](../../guide/concepts/nav-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

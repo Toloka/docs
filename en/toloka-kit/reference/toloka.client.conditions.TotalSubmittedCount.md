@@ -1,5 +1,5 @@
 # TotalSubmittedCount
-`toloka.client.conditions.TotalSubmittedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/conditions.py#L364)
+`toloka.client.conditions.TotalSubmittedCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/conditions.py#L364)
 
 ```python
 TotalSubmittedCount(

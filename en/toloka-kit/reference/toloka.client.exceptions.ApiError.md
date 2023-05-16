@@ -1,5 +1,5 @@
 # ApiError
-`toloka.client.exceptions.ApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/exceptions.py#L53)
+`toloka.client.exceptions.ApiError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/exceptions.py#L53)
 
 ```python
 ApiError(

@@ -8,7 +8,7 @@ If you don't need labels, use [view.list](view.list.md).
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.labeled-list" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.labeled-list" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
 || `items`<span style="color: red">\*</span> | _array_ | An array of list items. ||
@@ -22,3 +22,5 @@ By default, `false` (the label is aligned to the top of the content block). ||
 || `minWidth` | _number_ | The minimum width of list content. If the component width is less than the specified value, it switches to compact mode. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

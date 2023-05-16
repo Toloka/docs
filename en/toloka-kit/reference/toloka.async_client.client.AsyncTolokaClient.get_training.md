@@ -1,17 +1,17 @@
 # get_training
-`toloka.async_client.client.AsyncTolokaClient.get_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async get_training(self, training_id: str)
 ```
 
-Reads one specific training
+Gets information about a training from Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training_id`|**str**|<p>ID of the training.</p>
+`training_id`|**str**|<p>The ID of the training.</p>
 
 * **Returns:**
 
@@ -25,5 +25,5 @@ Reads one specific training
 
 
 ```python
-toloka_client.get_training(training_id='1')
+t = toloka_client.get_training(training_id='1')
 ```

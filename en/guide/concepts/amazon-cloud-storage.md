@@ -2,7 +2,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}You can use any photo hosting service to add a small number of images, such as [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). {% endif %} This way you can quickly get direct links to your images to add them to the task file or instructions.
+You can use any photo hosting service to add a small number of images, such as [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). This way you can quickly get direct links to your images to add them to the task file or instructions.
 
 {% endnote %}
 
@@ -107,23 +107,15 @@ You can set the lifetime of files in the bucket so that they are automatically d
 
     Links look like this:
 
-    {% if locale == "en-com" %}
-
     ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<filename>
     ```
 
-    {% endif %}
-
     The link in the folder looks like this:
-
-    {% if locale == "en-com" %}
 
     ```plaintext
     https://<bucket-name>.s3.<region-code>.amazonaws.com/<path-to-file>/<filename>
     ```
-
-    {% endif %}
 
     {% note info %}
 

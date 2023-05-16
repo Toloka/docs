@@ -22,11 +22,11 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
     {% endcut %}
 
-- If the Toloker presses the {% if locale == "en-com" %}**Skip**{% endif %} button when taking the exam, the entire page isn't counted. In this case, the system won't have enough completed tasks to assign a skill to the Toloker.
+- If the Toloker presses the **Skip** button when taking the exam, the entire page isn't counted. In this case, the system won't have enough completed tasks to assign a skill to the Toloker.
 
     {% cut "How to avoid this" %}
 
-    - In project editing mode, click {% if locale == "en-com" %}**Show common interface elements**{% endif %} and disable the {% if locale == "en-com" %}**Skip**{% endif %} button.
+    - In project editing mode, click **Show common interface elements** and disable the **Skip** button.
 
         ![](../_images/control-rules/exam/common-interface.png =700x)
 
@@ -56,11 +56,11 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
 ## How do I set it up? {#configure}
 
-1. Open the project and click {% if locale == "en-com" %}**Add a pool**{% endif %}.
+1. Open the project and click **Add a pool**.
 
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}, go to the {% if locale == "en-com" %}**Additional settings**{% endif %} section, and select {% if locale == "en-com" %}**Exam**{% endif %} as the pool type.
+1. Click **Show advanced settings**, go to the **Additional settings** section, and select **Exam** as the pool type.
 
-1. Link the training to the exam pool. In the {% if locale == "en-com" %}**Quality control**{% endif %} section, specify the name of the training and the level required. This way, you only let Tolokers take the exam if they passed the training pool.
+1. Link the training to the exam pool. In the **Quality control** section, specify the name of the training and the level required. This way, you only let Tolokers take the exam if they passed the training pool.
 
     {% cut "Example" %}
 
@@ -72,11 +72,11 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
     {% note info %}
 
-    If the {% if locale == "en-com" %}**Training**{% endif %} list is empty, this probably means you haven't created a training pool in this project yet.
+    If the **Training** list is empty, this probably means you haven't created a training pool in this project yet.
 
     {% endnote %}
 
-1. To assign a skill based on the percentage of accepted responses, go to the {% if locale == "en-com" %}**Quality control**{% endif %} section and add a [Control tasks](goldenset.md) rule.
+1. To assign a skill based on the percentage of accepted responses, go to the **Quality control** section and add a [Control tasks](goldenset.md) rule.
 
     {% cut "Example" %}
 
@@ -86,21 +86,21 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
     {% endcut %}
 
-1. Fill out the {% if locale == "en-com" %}**Price per task suite, $**{% endif %} box. You can set the price for this type of pool to zero, but it's better to make the exam paid.
+1. Fill out the **Price per task suite, $** box. You can set the price for this type of pool to zero, but it's better to make the exam paid.
 
-1. Click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. Click **Create pool**.
 
 1. [Add tasks](pool.md) to the pool.
 
 ## Examples of settings {#examples}
 
-#### Main pool
+### Main pool
 
 By introducing training and testing, you can ensure that the labeling tasks go to those Tolokers who can deliver high-quality results. But you need to monitor the quality of responses in the main pool as well.
 
 Include some control tasks into your main pool (we recommend that they make up at least 1% of the total number of tasks). Set up quality control so that the Toloker is assigned a skill equal to their percentage of correct responses. That's the main skill of the project.
 
-In the {% if locale == "en-com" %}**Audience**{% endif %} section of the main pool, specify the Toloker requirements:
+In the **Audience** section of the main pool, specify the Toloker requirements:
 
 - `<exam skill> ≥ 80`
 
@@ -110,17 +110,17 @@ In this case, your general tasks are only labeled by top-performing Tolokers or 
 
 ![](../_images/control-rules/exam/general-pool.png =700x)
 
-#### Passing the exam in several attempts
+### Passing the exam in several attempts
 
-Usually the test is passed once. However, you can give multiple chances to your Tolokers. For example, 10 tasks are enough to pass the test. Upload 5 pages, 10 tasks each, to the exam pool. In the pool settings, add a {% if locale == "en-com" %}**Control tasks**{% endif %} rule.
+Usually the test is passed once. However, you can give multiple chances to your Tolokers. For example, 10 tasks are enough to pass the test. Upload 5 pages, 10 tasks each, to the exam pool. In the pool settings, add a **Control tasks** rule.
 
 ![](../_images/control-rules/exam/several-tries.png =700x)
 
-In the {% if locale == "en-com" %}**Audience**{% endif %} section, specify the Toloker requirement: `<exam skill> < 80 or = Is missing`.
+In the **Audience** section, specify the Toloker requirement: `<exam skill> < 80 or = Is missing`.
 
 ![](../_images/control-rules/exam/exam-filter.png =700x)
 
-The Toloker will have 5 attempts to pass the test in this case. If they fail to reach the threshold value of the skill after completing the first 10 tasks, they may retry. To make the second attempt possible (for example, on another day), add the {% if locale == "en-com" %}**Submitted responses**{% endif %} rule in the pool settings.
+The Toloker will have 5 attempts to pass the test in this case. If they fail to reach the threshold value of the skill after completing the first 10 tasks, they may retry. To make the second attempt possible (for example, on another day), add the **Submitted responses** rule in the pool settings.
 
 ![](../_images/control-rules/exam/delayed-attempt.png =700x)
 
@@ -134,13 +134,13 @@ Don't add too many tasks to the retry pool. Otherwise, not all Tolokers will wan
 
 {% endnote %}
 
-A retry pool is created similarly to the main pool and consists of control tasks. Go to the project and add a pool of the {% if locale == "en-com" %}**Retry**{% endif %} type. As with the exam, the price for this pool type can be zero.
+A retry pool is created similarly to the main pool and consists of control tasks. Go to the project and add a pool of the **Retry** type. As with the exam, the price for this pool type can be zero.
 
 Use a skill to link the retry pool to the main pool. Use filters to set the main skill values that redirect Tolokers to the retry pool. For example, if the main pool is available to Tolokers with a skill of `70` or higher, send Tolokers to the retry pool if their skill is between `69` and `40`.
 
 ![](../_images/control-rules/exam/rehab-filter.png =700x)
 
-Based on the Toloker's responses to the retry pool tasks, recalculate their main skill. In the {% if locale == "en-com" %}**Quality control**{% endif %} section, set a {% if locale == "en-com" %}**Control tasks**{% endif %} rule. Leave the {% if locale == "en-com" %}**Recent control and training task responses to use**{% endif %} box empty so that only the retry tasks are used for recalculation.
+Based on the Toloker's responses to the retry pool tasks, recalculate their main skill. In the **Quality control** section, set a **Control tasks** rule. Leave the **Recent control and training task responses to use** box empty so that only the retry tasks are used for recalculation.
 
 ![](../_images/control-rules/exam/skill-recalc.png =700x)
 
@@ -160,21 +160,9 @@ A Toloker who gives enough correct responses gets access to the main pool again.
 
 {% endcut %}
 
-{% cut "What's the difference between the exam pool that I pay for and the main pool?" %}
+{% include [faq-exam-main-pool](../_includes/faq/adding-tasks-to-the-pool/exam-main-pool.md) %}
 
-An exam pool contains only control tasks. Usually it's small, and intended to check how Tolokers have learned to do your tasks after they read the instructions and have completed the training.
-
-Unlike your main pool, you already know the correct responses for every task in this pool. You can set the price to zero. Based on the results of the control tasks, you can assign a skill to the Tolokers and then use it in the main pool as a filter. For example, `≥ 80` or `≠ Is missing`. You don't have to create an exam, because the training pool provides enough practice for simple tasks. But many requesters also use exams.
-
-{% endcut %}
-
-{% cut "How do I set up an exam so that different people can take it without running out of tasks?" %}
-
-When you load tasks, use smart mixing. In this case, you'll have infinite overlap in your exam.
-
-However, this poses the risk that you might spend a lot of money on the exam. You might want to open this pool only when the main pool opens, and close it when labeling of the main pool ends.
-
-{% endcut %}
+{% include [faq-set-up-exam](../_includes/faq/pool-setup/set-up-exam.md) %}
 
 {% cut "Request for training in crowdsourcing and working with Toloka" %}
 

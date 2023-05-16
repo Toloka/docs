@@ -1,5 +1,5 @@
 # AppItemImport
-`toloka.client.app.AppItemImport` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/app/__init__.py#L184)
+`toloka.client.app.AppItemImport` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/app/__init__.py#L184)
 
 ```python
 AppItemImport(

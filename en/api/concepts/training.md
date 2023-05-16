@@ -6,6 +6,12 @@ After completing the training pool, the Toloker is assigned a skill equal to the
 
 ## Methods {#methods}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--training):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Method | Endpoint | Overview
 ----- | ----- | -----
 POST | [/trainings](create-training.md) | Creates a training pool (training).
@@ -20,3 +26,5 @@ GET | [/trainings/<training_pool_id>](get-training.md) | Gets the properties of 
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/train.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

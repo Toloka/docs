@@ -2,7 +2,7 @@
 
 {% note info %}
 
-{% if locale == "en-com" %}You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). {% endif %} This way you can quickly get direct links to your images to add them to the task file or instructions.
+You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). This way you can quickly get direct links to your images to add them to the task file or instructions.
 
 {% endnote %}
 
@@ -20,27 +20,27 @@ To use files from Yandex Disk in tasks:
 
 To use Yandex Disk as a data source:
 
-1. Click {% if locale == "en-com" %}**Add Ya.Disk**{% endif %} on the [Integration]({{ integration }}) tab on the [profile]({{ profile }}) page and allow Toloka to access Yandex Disk.
+1. Click **Add Ya.Disk** on the [Integration]({{ integration }}) tab on the [profile]({{ profile }}) page and allow Toloka to access Yandex Disk.
 
-1. Click {% if locale == "en-com" %}**Add proxy**{% endif %} and fill in the fields:
+1. Click **Add proxy** and fill in the fields:
 
     #|
     ||**Field**|**Overview**||
-    ||{% if locale == "en-com" %}**Unique name**{% endif %} | Name of the data source. The name will be inserted in the file URLs. Allowed characters in the name: Latin letters, numbers, dashes (“-”).
+    ||**Unique name** | Name of the data source. The name will be inserted in the file URLs. Allowed characters in the name: Latin letters, numbers, dashes (“-”).
 
     Must be unique within Toloka.||
-    ||{% if locale == "en-com" %}**Type**{% endif %} | Choose “Yandex Disk”.||
-    ||{% if locale == "en-com" %}**Permissions**{% endif %} | Level of access to files:
+    ||**Type** | Choose “Yandex Disk”.||
+    ||**Permissions** | Level of access to files:
 
     - “Public” — All Toloka Tolokers (appropriate for files with instructions).
 
     - “Private” — Only Tolokers who received a task with this file (appropriate for task content).||
-    ||{% if locale == "en-com" %}**Folder name**{% endif %} | Name of the folder on Yandex Disk. You can't use a slash in the folder name (“/”).
+    ||**Folder name** | Name of the folder on Yandex Disk. You can't use a slash in the folder name (“/”).
 
     A folder with this name will be created on Yandex Disk automatically (`Applications/Toloka/<folder name>`).||
     |#
 
-1. Click {% if locale == "en-com" %}**Save**{% endif %}.
+1. Click **Save**.
 
 1. Upload files for tasks or instructions to the folder. It will be located at `Applications/Toloka/<folder name>` (the name you entered in the field).
 
@@ -54,11 +54,11 @@ To add a file to the [task interface](spec.md):
 
   1. Select the component type. For example, `"view.image"` — to insert a picture, `"view.audio"` — for audio files, `"view.video"` — for video files.
 
-  1. In the `"url"` property, select the `"@yandex-toloka/helper.proxy"` type.
+  1. In the `"url"` property, select the `"@toloka/helper.proxy"` type.
 
   1. In the `"path"` property, enter the structure `/<proxy name>/<file name>.<type>` with your data.
 
-  [View an example with image classification](https://clck.ru/SSbzF)
+  [View an example with image classification](https://ya.cc/t/U35lM1hi3ttEbC)
 
   {% note tip %}
 
@@ -72,7 +72,7 @@ To add a file to the [task interface](spec.md):
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": "/my-proxy/example.jpg"
     }
   }
@@ -86,7 +86,7 @@ To add a file to the [task interface](spec.md):
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": {
       "type": "data.input",
       "path": "image"
@@ -95,7 +95,7 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  [View example in the sandbox](https://ya.cc/t/Hh04Pei73jKDq4)
+  [View example in the sandbox](https://ya.cc/t/7LC4AVi53ttA9S)
 
   {% endcut %}
 
@@ -111,7 +111,7 @@ To add a file to the [task interface](spec.md):
   {
   "type": "view.image",
   "url": {
-    "type": "@yandex-toloka/helper.proxy",
+    "type": "@toloka/helper.proxy",
     "path": {
       "type": "data.input",
       "path": "images.0"
@@ -120,7 +120,7 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  [View example in the sandbox](https://clck.ru/SP3Bd)
+  [View example in the sandbox](https://ya.cc/t/_XrwbL4V3ttEhW)
 
   {% endcut %}
 

@@ -2,7 +2,7 @@
 
 For this type of project, you can use the **Image classification** preset. Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TJ7X3)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/EmabzTqA3ttFVs)
 
 {% cut "Components used in the example" %}
 
@@ -20,15 +20,15 @@ For this type of project, you can use the **Image classification** preset. Note 
 
 - To add a detailed description to the task, use the [view.text](../reference/view.text.md) component.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UC54f)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VfAHjs2V3ttFWX)
 
 - To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UC59c)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/iMo8AGit3ttFWz)
 
 - Add keyboard shortcuts to rotate and zoom in images in the [plugin.hotkeys](../reference/plugin.hotkeys.md) configuration.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UC5Jw)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/gLh9ufLx3ttFXM)
 
 If this preset doesn't meet your needs, see other examples in this section.
 
@@ -42,7 +42,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
   If there are several possible answers to the question, use [field.checkbox-group](../reference/field.checkbox-group.md) checkboxes.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UC5sN)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/KUpCR4gj3ttFY7)
 
 - One option (a radio button)
 
@@ -50,7 +50,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
   If there are more answer options, or they are long, it's better to use [field.radio-group](../reference/field.radio-group.md), as in the example.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UC5vu)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/BQPuzqRh3ttFYX)
 
 {% endlist %}
 
@@ -58,7 +58,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
 The [helper.if](../reference/helper.if.md) component displays an interface element after a specific response is selected. For example, it lets a Toloker select correct statements about an image only if the image is loaded.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UC62t)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/RbqyYj2-3ttFYz)
 
 ## Image and search query comparison {#search}
 
@@ -66,13 +66,13 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
 
 Add a button that opens the search results and generate a search query link using the [helper.search-query](../reference/helper.search-query.md) component. To make sure that a Toloker clicked on the link and checked its contents, configure validation, as in the example.
 
-  [![](../_images/buttons/view-example.svg)](https://clck.ru/UC66Y)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/h9tN8XX73ttFZm)
 
 ### Side-by-side image and web page comparison
 
 You can display the web page in the built-in window using the [view.iframe](../reference/view.iframe.md) component. Place the image next to it using [layout.side-by-side](../reference/layout.side-by-side.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UC6Fu)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/vHtHEcj_3vvrRM)
 
 ### Side-by-side image and mobile web page comparison
 
@@ -82,7 +82,7 @@ This is a more complex example that compares the image with the results of a sea
 - [view.device-frame](../reference/view.device-frame.md): Wraps the window in a smartphone frame.
 - [layout.side-by-side](../reference/layout.side-by-side.md): Places the image and the search results window next to each other.
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/UC6L8)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/a9bzsPXh3vvrwH)
 
 ## See also {#see-also}
 

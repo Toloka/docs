@@ -4,16 +4,18 @@ This component controls audio or video playback. It stops playback in progress o
 
 For example, this component will allow you to play two videos simultaneously.
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/AiIEBqw-3YbMBH)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/AiIEBqw-3YbMBH)
 
 You can also stop or start playback for some event ([plugin.trigger](plugin.trigger.md)) or by pressing the hotkey ([plugin.hotkeys](plugin.hotkeys.md)).
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/YoC_WZ1O3YbMcd)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/ip43S-aL3tz9c7)
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "action.play-pause" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "action.play-pause" | Set component type. ||
 || `view` | _ref_ | Points to the component that plays audio or video. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

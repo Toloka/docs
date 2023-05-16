@@ -18,7 +18,7 @@ Before you begin:
 
 - {% include [tutorials-top-up-tutorial](../_includes/tutorials/top-up-tutorial.md) %}
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
 {% include [toloka-requester-source-use-preset](../_includes/toloka-requester-source/id-toloka-requester-source/use-preset.md) %}
 
@@ -28,31 +28,29 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-    1. Select the {% if locale == "en-com" %}**Voice recording**{% endif %} preset.
+    1. Click **Do it myself**.
 
-1. Click {% if locale == "en-com" %}**Choose this preset**{% endif %} in the pop-up tab.
+    1. Select the **Voice recording** preset.
 
-## Create a project {#project}
-
-{% include [tutorials-who-are-tolokers](../_includes/tutorials/who-are-tolokers.md) %}
+1. Click **Choose this preset** in the pop-up tab.
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    - {% if locale == "en-com" %}**Name to show Tolokers**{% endif %}: In 2–5 words, state the general idea of the project.
+    - **Name to show Tolokers**: In 2–5 words, state the general idea of the project.
 
-    - {% if locale == "en-com" %}**Description for Tolokers**{% endif %}: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
+    - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
     [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-create-project-step-1.png)
 
-1. In the {% if locale == "en-com" %}**Task interface**{% endif %} section, set up what your tasks will look like. This preset has a task template with layout and validation pre-configured.
+1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with layout and validation pre-configured.
 
     {% include [toloka-requester-source-tb-or-html](../_includes/toloka-requester-source/id-toloka-requester-source/tb-or-html.md) %}
 
-    1. In the {% if locale == "en-com" %}**Config**{% endif %} section, you can edit the code to change the appearance and layout of the task elements. For a trial pool, keep the code as is.
+    1. In the **Config** section, you can edit the code to change the appearance and layout of the task elements. For a trial pool, keep the code as is.
 
-        To learn about the properties of the {% if locale == "en-com" %}**Config**{% endif %} section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/reference/index.md).
+        To learn about the properties of the **Config** section, their possible values and the impact on the task interface, see the [Template Builder Help](../../template-builder/reference/index.md).
 
-    1. In the {% if locale == "en-com" %}**Input data example**{% endif %} section, you can change the sample text. This text is only used to display the task interface preview on the right.
+    1. In the **Input data example** section, you can change the sample text. This text is only used to display the task interface preview on the right.
 
         [![Create a project. Input data example](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-input-example.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-input-example.png)
 
@@ -60,9 +58,9 @@ Before you begin:
 
         {% include [toloka-requester-source-click-show-specifications](../_includes/toloka-requester-source/id-toloka-requester-source/click-show-specifications.md) %}
 
-        - {% if locale == "en-com" %}**Input data**{% endif %}: Parameters in the file with raw task data.
+        - **Input data**: Parameters in the file with raw task data.
 
-        - {% if locale == "en-com" %}**Output data**{% endif %}: Parameters in the file with labeling results.
+        - **Output data**: Parameters in the file with labeling results.
 
         {% include [toloka-requester-source-specification-match](../_includes/toloka-requester-source/id-toloka-requester-source/specification-match.md) %}
 
@@ -72,51 +70,55 @@ Before you begin:
 
     {% include [toloka-requester-source-instruction-note](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-note.md) %}
 
-1. To save your data and continue, click {% if locale == "en-com" %}**Create a project**{% endif %}.
-
-    {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#pool}
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click {% if locale == "en-com" %}**Create new pool**{% endif %}.
+1. Click **Add a pool** on the project page.
 
-1. Under {% if locale == "en-com" %}**General information**{% endif %}, set the {% if locale == "en-com" %}**Pool name**{% endif %}.
+1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
+
+1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+
+1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+
+1. Click **Create**.
 
 1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-    1. Clear {% if locale == "en-com" %}**My tasks may contain shocking or pornographic content**{% endif %} if your project has none of those.
+    1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
-        1. For example, add the {% if locale == "en-com" %}**Languages**{% endif %} filter:
+        1. For example, add the **Languages** filter:
 
             [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-language-filter.png)
 
-        1. It is best to launch voice recording tasks in the Toloka mobile app so that Tolokers can record audio directly in a task using the device's built-in voice recorder. Add the {% if locale == "en-com" %}**Client**{% endif %} filter and select {% if locale == "en-com" %}**Toloka for mobile**{% endif %}.
+        1. It is best to launch voice recording tasks in the Toloka mobile app so that Tolokers can record audio directly in a task using the device's built-in voice recorder. Add the **Client** filter and select **Toloka for mobile**.
 
-    1. Use the {% if locale == "en-com" %}**Speed/quality balance**{% endif %} slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
+    1. Use the **Speed/quality balance** slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
         {% include [tutorials-speed-filter-image](../_includes/tutorials/speed-filter-image.md) %}
 
-1. In {% if locale == "en-com" %}**Quality control**{% endif %}, set quality control rules for more accurate results.
+1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-    1. Click the {% if locale == "en-com" %}**Non-automatic acceptance**{% endif %} toggle, and specify the number of days for checking the task in the {% if locale == "en-com" %}**Review period in days**{% endif %} field (for example, 21).
+    1. Click the **Review task responses manually** toggle, and specify the number of days for checking the task in the **Review period in days** field (for example, 21).
 
         {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
-    1. The {% if locale == "en-com" %}**Voice recording**{% endif %} preset has the pre-configured quality control rules:
+    1. The **Voice recording** preset has the pre-configured quality control rules:
 
-        - In most cases, you can keep the {% if locale == "en-com" %}**Fast responses**{% endif %} rule as is. It filters out Tolokers who complete tasks too fast. The default settings mean that Tolokers are banned from the project for 1 day if they complete tasks in 4 out of 5 task suites in less than 15 seconds.
+        - In most cases, you can keep the **Fast responses** rule as is. It filters out Tolokers who complete tasks too fast. The default settings mean that Tolokers are banned from the project for 1 day if they complete tasks in 4 out of 5 task suites in less than 15 seconds.
 
-        - Delete the pre-configured {% if locale == "en-com" %}**Majority vote**{% endif %} rule.
+        - Delete the pre-configured **Majority vote** rule.
 
     1. For a trial pool, the settings you’ve just made are enough. You can get better results if you set the additional quality control rules.
 
         {% cut "The additional quality control rules" %}
 
-        1. Add the {% if locale == "en-com" %}**Results of assignment review**{% endif %} quality control rule and enter the following values:
+        1. Add the **Results of assignment review** quality control rule and enter the following values:
 
             [![Create a pool. Results of assignment review](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png)
 
@@ -132,7 +134,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-    1. In {% if locale == "en-com" %}**Price per task suite**{% endif %}, set the amount of money to pay per task suite done by one Toloker.
+    1. In **Price per task suite**, set the amount of money to pay per task suite done by one Toloker.
 
         A task suite is a page with a number of tasks. It can contain one or several tasks. If the tasks are simple, you can add 8–10 tasks per suite.
 
@@ -140,50 +142,52 @@ Before you begin:
 
         The value depends on how many recordings of the same phrase you want to collect. If one is enough, set `1`.
 
-1. Click {% if locale == "en-com" %}**Show advanced settings**{% endif %}. In {% if locale == "en-com" %}**Additional settings**{% endif %}, specify the {% if locale == "en-com" %}**Time per task suite, sec**{% endif %}.
+    1. At the bottom of the **Price** section, you see **Price per 1 task**. This is the amount of money paid per task.
+
+1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
     This time should be enough to read the instructions and load the task (for example, 1,200 seconds).
 
-1. To save the settings and continue, click {% if locale == "en-com" %}**Create pool**{% endif %}.
+1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-## Upload data {#upload}
+    1. Create the tasks for Tolokers:
 
-At this step, upload your task data to Toloka.
+        1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-1. Click {% if locale == "en-com" %}**Upload data**{% endif %}.
+            For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:text`, and the values are texts.
 
-1. Create the tasks for Tolokers:
+            ```plaintext
+            INPUT:text
+            Does white chocolate have cocoa?
+            How many rings are there in the Olympic Games symbol?
+            What is the capital of Australia?
+            ```
 
-    1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+        1. Open the downloaded file, and replace the sample values with your texts.
 
-        For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:text`, and the values are texts.
+        1. Click **Drop file here or select**, and upload the file you’ve just made.
 
-        ```plaintext
-        INPUT:text
-        Does white chocolate have cocoa?
-        How many rings are there in the Olympic Games symbol?
-        What is the capital of Australia?
-        ```
+        1. Click **Continue**.
 
-    1. Open the downloaded file, and replace the sample values with your texts.
+    1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
 
-    1. Click {% if locale == "en-com" %}**Drop file here or select**{% endif %}, and upload the file you’ve just made.
+        - **General tasks**: These are tasks for Tolokers to label.
 
-    1. Click {% if locale == "en-com" %}**Continue**{% endif %}.
+        - **Control tasks**: These are tasks with predefined answers used to control the quality of responses. For this project, you don’t need control tasks.
 
-1. {% include [toloka-requester-source-task-suits](../_includes/toloka-requester-source/id-toloka-requester-source/task-suits.md) %}
+        - **Training tasks**: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
 
-    - {% if locale == "en-com" %}**General tasks**{% endif %}: These are tasks for Tolokers to label.
+        For example, you can add 5 general tasks per suite:
 
-    - {% if locale == "en-com" %}**Control tasks**{% endif %}: These are tasks with predefined answers used to control the quality of responses. For this project, you don’t need control tasks.
+        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png)
 
-    - {% if locale == "en-com" %}**Training tasks**{% endif %}: These are tasks with predefined answers and explanations for Tolokers. Normally you use training tasks in separate training pools. You don’t have to include them.
+    1. Click **Combine tasks into suites**.
 
-    For example, you can add 5 general tasks per suite:
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
-    [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png)
+    {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-1. Click {% if locale == "en-com" %}**Combine tasks into suites**{% endif %}.
+{% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 ## Start labeling {#labeling}
 
@@ -193,7 +197,7 @@ At this step, upload your task data to Toloka.
 
     [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-start-labeling-step-2.png)
 
-1. In the pop-up panel, review the budget and click {% if locale == "en-com" %}**Launch**{% endif %}.
+1. In the pop-up panel, review the budget and click **Launch**.
 
 ## See the results {#results}
 
@@ -201,13 +205,13 @@ Track the labeling progress on the pool page. You can start the review when the 
 
 After the time period specified in step 4.1 of [creating the pool](#pool), all responses are automatically accepted, regardless of their quality.
 
-1. Go to the pool, and click {% if locale == "en-com" %}**Review assignments**{% endif %}.
+1. Go to the pool, and click **Review assignments**.
 
     [![See the results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-review-results.png)
 
 1. Choose an assignment.
 
-1. Check the responses, and click {% if locale == "en-com" %}**Accept**{% endif %} or {% if locale == "en-com" %}**Decline**{% endif %}. For rejected responses, enter a comment to specify the reason.
+1. Check the responses, and click **Accept** or **Decline**. For rejected responses, enter a comment to specify the reason.
 
     {% note info %}
 
@@ -215,13 +219,13 @@ After the time period specified in step 4.1 of [creating the pool](#pool), all r
 
     {% endnote %}
 
-1. After checking all the assignments, click {% if locale == "en-com" %}**Download results**{% endif %}.
+1. After checking all the assignments, click **Download results**.
 
     [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-results-download.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-results-download.png)
 
     You will get the TSV file with the labeling results.
 
-1. To download the recordings, click the arrow next to the {% if locale == "en-com" %}**Download results**{% endif %} button. Choose {% if locale == "en-com" %}**Download attachments**{% endif %} from the drop-down menu.
+1. To download the recordings, click the arrow next to the **Download results** button. Choose **Download attachments** from the drop-down menu.
 
     [![See the results. Download attachments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-download-attachments.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-download-attachments.png)
 

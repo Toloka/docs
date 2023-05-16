@@ -1,1 +1,1 @@
-In the main menu, choose the {% if locale == "en-com" %}**Projects**{% endif %} tab, and click {% if locale == "en-com" %}**Create a project**{% endif %}.
+Click **Create a project**.

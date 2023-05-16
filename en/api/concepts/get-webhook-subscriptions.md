@@ -6,21 +6,27 @@ Gets subscription data.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/webhook-subscriptions/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/webhook-subscriptions/<subscription_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -81,3 +87,5 @@ ID of the subscription. Generated automatically. ||
 
 The date and time when the subscription was created (UTC). It uses ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

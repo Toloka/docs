@@ -4,13 +4,13 @@ Creates a new array by transforming each of the elements in the original array.
 
 For example, you can convert an array of image links to [view.image](view.image.md) components to display these images. This may be useful if the number of images in the array is unknown in advance.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/RnsYo)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/IqTqGpfg3ttBtA)
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.transform" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.transform" | Set component type. ||
 || `into` | _any_ | Template to transform elements in the array. The array value can be substituted using the `data.local` component. To do this, use the construction `{ "type": "data.local", "path": "item"}`. [Learn more](../operations/work-with-data.md). ||
 || `items` | _array_ | The array that you want to convert. You can specify an array in three ways:
 
@@ -22,3 +22,5 @@ For example, you can convert an array of image links to [view.image](view.image.
 
 If you used a reference to a field with input data, you do not need to also specify the element. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

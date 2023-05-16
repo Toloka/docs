@@ -6,11 +6,17 @@ Creates a project.
 
 {% note alert "Restriction" %}
 
-You can send a maximum of 20 requests of this kind per minute and a maximum of 100 requests per day.
+You can send a maximum of 20 requests of this kind per minute and a maximum of 100 requests per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/projects):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
@@ -124,7 +130,7 @@ Parameters for output data from the input fields. The complete list of parameter
 || **task_spec.view_spec** | **object**
 
 Description of the task interface. The complete list of parameters is shown in the [Task interface](#view-spec-section) table. ||
-|| **assignments_issuing_view_ config** | **string \| required if**
+|| **assignments_issuing_view_config** | **string \| required if**
 
 Required if `assignments_issuing_type=MAP_SELECTOR`.
 
@@ -152,20 +158,10 @@ How to assign tasks:
     ```
 
 The default value is `AUTOMATED`. ||
-|| **assignments_issuing_view_config.map_provider** | **string**
-
-This parameter is available when the project has `"assignments_issuing_type": "MAP_SELECTOR"`.
-
-Map provider for tasks:
-
-- `GOOGLE` — Google Maps.
-- `YANDEX` — Yandex Maps.
-
-If the parameter is not set, then the Toloker selects the map. ||
-|| **assignments_automerge_ enabled** | **boolean**
+|| **assignments_automerge_enabled** | **boolean**
 
 Resolve [merging identical tasks](tasks.md#task-merge) in the project. The default value is `false`. ||
-|| **max_active_assignments_ count** | **integer**
+|| **max_active_assignments_count** | **integer**
 
 The number of task suites the Toloker can complete simultaneously ("Active" status). ||
 || **quality_control** | **object**
@@ -254,10 +250,15 @@ CSS styles of the task.
 For more information, see the [CSS block](../../guide/concepts/spec.md#css) section.||
 || **settings** | **object \| required**
 
-Whether to display standard UI elements in the task. ||
+Whether to display common interface elements in the task. ||
 ||**config[]** | **array of objects**
 
 [Configuration for Template Builder](tb-config.md) ||
+||**lock**| **object \| required if**
+
+Required if `type` is set to `tb`.
+
+The set of the Template Builder component versions that will be used to create the project task interface. ||
 || **assets** | **object**
 
 Linked files:
@@ -287,9 +288,15 @@ Note that the image labeling interface should only be connected together with th
 Links to CSS libraries. ||
 || **type** | **string**
 
-Editor type:
+Editor type used to create the project interface:
 
-- `tb` — Template Builder. ||
+- `classic` — the [HTML/CSS/JS editor](../../guide/concepts/spec.md) which allows using HTML, CSS, and JavaScript elements to create the task interface.
+- `tb` — the [Template Builder](../../template-builder/index.md) editor which allows using elements with JSON syntax for the task interface.
+
+Depending on the editor type, the following parameters are used:
+
+- `assets`, `markup`, `script`, and `styles` when the value is set to `classic`.
+- `config`, `lock` when the value is set to `tb`.||
 || **localizationConfig** | **object**
 
 Editor configuration.
@@ -309,7 +316,7 @@ Keys in the source language.
 For more information, see [Translating the task interface](../../guide/concepts/project-languages.md#project-languages__interface-translate). ||
 || **settings.showTimer** | **boolean**
 
-Show the timer. The default value is `true`. ||
+Show the remaining time. The default value is `true`. ||
 || **settings.showTitle** | **boolean**
 
 Show the project name in task titles. The default value is `true`. ||
@@ -318,25 +325,25 @@ Show the project name in task titles. The default value is `true`. ||
 Show the **Instructions** button. The default value is `true`. ||
 || **settings.showFullscreen** | **boolean**
 
-Show the **Expand to fullscreen** button. The default value is `true`. ||
+Show the **Fullscreen** button. The default value is `true`. ||
 || **settings.showSubmit** | **boolean**
 
-Show the **Next** button. The default value is `true`. ||
+Show the **Submit** button. The default value is `true`. ||
 || **settings.showSkip** | **boolean**
 
 Show the **Skip** button. The default value is `true`. ||
 || **settings.showFinish** | **boolean**
 
-Show the **Back to main page** button. The default value is `true`. ||
+Show the **Exit** button. The default value is `true`. ||
 || **settings.showMessage** | **boolean**
 
-Show the **Message for the requester** button. The default value is `true`. ||
+Show the **Contact requester** button. The default value is `true`. ||
 || **settings.showReward** | **boolean**
 
 Show the price per task suite. The default value is `true`. ||
 |#
 
-## Settings for displaying field tasks (assignments_issuing_view_ config) {#assignments-issuing-view-config-section}
+## Settings for displaying field tasks (assignments_issuing_view_config) {#assignments-issuing-view-config-section}
 
 #|
 || Parameter | Overview ||
@@ -366,7 +373,7 @@ If the parameter is not set, then the Toloker selects the map. ||
 
 #|
 || Parameter | Overview ||
-|| **default_ language** | **string**
+|| **default_language** | **string**
 
 The source language used in the fields [public_name](#public_name), [public_description](#public_description), and [public_instructions](#public_instructions). ||
 || **additional_languages[]** | **array of objects**
@@ -452,10 +459,7 @@ Parameters to sort by: ||
 Checks who the object belongs to:
 
 - `true` — The user whose OAuth token is specified in the request.
-- `false` — Another account (employee or owner).
-{% if audience == "internal" %}**owner.company_id** | **string**
-
-The requester's company ID.{% endif %} ||
+- `false` — Another account (employee or owner).||
 || **id** | **string**
 
 Project ID (assigned automatically). ||
@@ -473,3 +477,5 @@ The UTC date and time the project was created, in ISO 8601 format: `YYYY-MM-DDTh
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/project.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

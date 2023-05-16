@@ -10,7 +10,7 @@ This component is available in property values with the `string` type, for examp
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.text-transform" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.text-transform" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _any_ | The text string in which you want to change the case. ||
 || `transformation`<span style="color: red">\*</span> | _string_ | Conversion mode:
 
@@ -19,3 +19,5 @@ This component is available in property values with the `string` type, for examp
 - `capitalize` — Capitalizes **the first** letter in the text, and leaves the rest lowercase. The text is not divided into sentences: there will be only one uppercase letter in the entire text, even if you have several sentences.
   ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

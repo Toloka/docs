@@ -1,5 +1,5 @@
 # reject_assignment
-`toloka.client.TolokaClient.reject_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L731)
+`toloka.client.TolokaClient.reject_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L759)
 
 ```python
 reject_assignment(

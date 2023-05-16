@@ -1,5 +1,5 @@
 # fit
-`crowdkit.aggregation.base.BasePairwiseAggregator.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/base/__init__.py#L157)
+`crowdkit.aggregation.base.BasePairwiseAggregator.fit` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/base/__init__.py#L157)
 
 ```python
 fit(self, data: DataFrame)

@@ -6,11 +6,17 @@ Creates multiple task suites.
 
 {% note alert "Restriction" %}
 
-You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day.
+You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,000 tasks per day. Refer to the [Rate limiting](rate-limiting.md) section for the complete list of the request limitations in Toloka API.
 
 {% endnote %}
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/task-suites):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
@@ -180,3 +186,5 @@ The response format depends on the value of [async_mode](#async_mode).
     |#
 
 {% endlist %}
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -6,21 +6,27 @@ Gets the list of task suites in the pool.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/task-suites):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/task-suites
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/task-suites
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -32,7 +38,7 @@ Title | Overview
 
 ## Query parameters {#query-params}
 
-Specified in the link after the question mark; separated by `&`.
+{% include [query-params](../_includes/query-params.md) %}
 
 #|
 || Parameter | Overview ||
@@ -57,8 +63,7 @@ To learn how to configure sorting, see [Sorting the list of objects](sorting.md)
 || **overlap** | **integer**
 
 Suites with an overlap equal to the specified value. ||
-|| **Standard query parameters** |
-[limit](./standard-query-parameters.md#limit), [id_gt](./standard-query-parameters.md#id_gt), [id_gte](./standard-query-parameters.md#id_gte), [id_lt](./standard-query-parameters.md#id_lt), [id_lte](./standard-query-parameters.md#id_lte), [created_gt](./standard-query-parameters.md#created_gt), [created_gte](./standard-query-parameters.md#created_gte), [created_lt](./standard-query-parameters.md#created_lt), [created_lte](./standard-query-parameters.md#created_lte), [overlap_gt](./standard-query-parameters.md#overlap_gt), [overlap_gte](./standard-query-parameters.md#overlap_gte) [overlap_lt](./standard-query-parameters.md#overlap_lt), [overlap_lte](./standard-query-parameters.md#overlap_lte). ||
+|| **Standard query parameters** | [limit](standard-query-parameters.md#limit), [id_gt](standard-query-parameters.md#id_gt), [id_gte](standard-query-parameters.md#id_gte), [id_lt](standard-query-parameters.md#id_lt), [id_lte](standard-query-parameters.md#id_lte), [created_gt](standard-query-parameters.md#created_gt), [created_gte](standard-query-parameters.md#created_gte), [created_lt](standard-query-parameters.md#created_lt), [created_lte](standard-query-parameters.md#created_lte), [overlap_gt](standard-query-parameters.md#overlap_gt), [overlap_gte](standard-query-parameters.md#overlap_gte) [overlap_lt](standard-query-parameters.md#overlap_lt), [overlap_lte](standard-query-parameters.md#overlap_lte). ||
 |#
 
 ## Query example {#request-example}
@@ -74,17 +79,17 @@ You can set up the display of the list of task suites in parts (for example, 10 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -94,24 +99,32 @@ You can set up the display of the list of task suites in parts (for example, 10 
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/task-suites?sort=id&limit=10&id_gt=<id of the last task suite from the previous response>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
 ## Response {#response}
 
-Contains task suite data in the `items` array.
-
 ```json
 {"items" : [{task suite 1}, {task suite 2}, ... {task suite n}], "has_more": true}
 ```
+
+#|
+|| Property | Description ||
+|| **items[]** | **array of objects**
+
+Contains task suite data. ||
+|| **has_more** | {% include [has-more](../_includes/has-more.md) %} ||
+|#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

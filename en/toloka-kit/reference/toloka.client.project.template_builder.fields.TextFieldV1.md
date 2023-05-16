@@ -1,5 +1,5 @@
 # TextFieldV1
-`toloka.client.project.template_builder.fields.TextFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/project/template_builder/fields.py#L482)
+`toloka.client.project.template_builder.fields.TextFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L481)
 
 ```python
 TextFieldV1(
@@ -22,7 +22,7 @@ A component that allows entering a single line of text.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If true, editing is not available.</p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, editing is not available.</p>
 `placeholder`|**Optional\[Any\]**|<p>A semi-transparent label that is shown in the box when it is empty.</p>
 `hint`|**Optional\[Any\]**|<p>Hint text.</p>
 `label`|**Optional\[Any\]**|<p>Label above the component.</p>

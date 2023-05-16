@@ -11,6 +11,12 @@ If a training pool isn't in use, it can be moved to the archive. Before archivin
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/trainings/-id-/archive):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -45,7 +51,7 @@ Title | Overview
 
 {% note info %}
 
-If the training pool is already archived, attempting to archive it again returns an empty response with status 204.
+If the training pool is already archived, attempting to archive it again returns an empty response with status `204`.
 
 {% endnote %}
 
@@ -69,7 +75,7 @@ If the training pool is already archived, attempting to archive it again returns
 || Parameter | Overview ||
 || **id** | **string**
 
-User ID. ||
+Operation ID. ||
 || **type** | **string**
 
 Type of operation: `TRAINING.ARCHIVE` — Archive a training pool. ||
@@ -100,3 +106,5 @@ ID of the training pool. ||
 
 Details of the operation completion. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

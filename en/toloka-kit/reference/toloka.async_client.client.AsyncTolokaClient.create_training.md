@@ -1,21 +1,21 @@
 # create_training
-`toloka.async_client.client.AsyncTolokaClient.create_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.create_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
 
 ```python
 async create_training(self, training: Training)
 ```
 
-Creates a new training
+Creates a new training in Toloka.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`training`|**[Training](toloka.client.training.Training.md)**|<p>New Training with set parameters.</p>
+`training`|**[Training](toloka.client.training.Training.md)**|<p>A training to be created.</p>
 
 * **Returns:**
 
-  Created training. With read-only fields.
+  Created training with initialized read-only fields.
 
 * **Return type:**
 
@@ -23,14 +23,14 @@ Creates a new training
 
 **Examples:**
 
-How to create a new training in a project.
+Creating a new training.
 
 ```python
-new_training = toloka.training.Training(
-    project_id=existing_project_id,
+new_training = toloka.client.Training(
+    project_id='1',
     private_name='Some training in my project',
     may_contain_adult_content=True,
-    assignment_max_duration_seconds=10000,
+    assignment_max_duration_seconds=60*5,
     mix_tasks_in_creation_order=True,
     shuffle_tasks_in_task_suite=True,
     training_tasks_in_task_suite_count=3,

@@ -6,6 +6,12 @@ Replies to a message thread.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#post-/message-threads/-id-/reply):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -55,3 +61,5 @@ Title | Overview
 
 Message text. You can enter the text in multiple languages (the message is sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

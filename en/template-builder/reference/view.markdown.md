@@ -30,7 +30,7 @@ Examples of Markdown syntax:
 
 You can find documentation for the basic Markdown syntax in this [article](https://guides.github.com/features/mastering-markdown/).
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/Rnt2g)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/ABS376_B3twX6Z)
 
 Note that the `view.markdown` component is resource-intensive and might overload weak Toloker devices. Do not use this component to display plain text. If you need to display text without formatting, use the [view.text](view.text.md) component. If you need to insert a link, use [view.link](view.link.md), and for an image use [view.image](view.image.md).
 
@@ -40,9 +40,11 @@ Links with Markdown are appended with `target="_blank"` (the link opens in a new
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.markdown" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.markdown" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `content` | _string_ | Text in Markdown. ||
 || `hint` | _string_ | Hint text. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

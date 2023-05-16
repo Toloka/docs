@@ -1,26 +1,32 @@
-# Get reward properties
+# Get bonus properties
 
 {% include [announce](../_includes/announce.md) %}
 
-Gets the properties of the reward issued.
+Gets the properties of the bonus issued.
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/user-bonuses/-userBonusId-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
 - Production version
 
-    ```bash
-    GET https://toloka.dev/api/v1/user-bonuses/<bonus_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://toloka.dev/api/v1/user-bonuses/<bonus_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 - Sandbox
 
-    ```bash
-    GET https://sandbox.toloka.dev/api/v1/user-bonuses/<bonus_id>
-    Authorization: OAuth <OAuth token>
-    ```
+  ```bash
+  GET https://sandbox.toloka.dev/api/v1/user-bonuses/<bonus_id>
+  Authorization: OAuth <OAuth token>
+  ```
 
 {% endlist %}
 
@@ -28,7 +34,7 @@ Gets the properties of the reward issued.
 
 Parameter | Overview
 ----- | -----
-**bonus_id** | ID of the reward issued.
+**bonus_id** | ID of the bonus issued.
 
 ## Headers {#headers}
 
@@ -38,7 +44,7 @@ Title | Overview
 
 ## Response {#response}
 
-Information about a reward.
+Information about a bonus.
 
 ```json
 {
@@ -65,10 +71,10 @@ Information about a reward.
 Toloker ID. ||
 || **amount** | **float**
 
-The dollar amount of the reward. ||
+The dollar amount of the bonus. ||
 || **assignment_id** | **string**
 
-ID of the Toloker's response to the task a reward is issued for. ||
+ID of the Toloker's response to the task a bonus is issued for. ||
 || **private_comment** | **string**
 
 Comments that are only visible to the requester. ||
@@ -80,13 +86,15 @@ The subject of the message for the Toloker. You can enter it in multiple languag
 Message text for the Toloker. You can enter it in multiple languages (the message will be sent in the Toloker's language). Format: `"<language RU/EN/TR/ID/FR>": "<message text>"`. ||
 || **without_message** | **boolean**
 
-Allows you not to send a reward message to the Toloker. The default value is `false`.
+Allows you not to send a bonus message to the Toloker. The default value is `false`.
 
-To issue a reward without a message, specify `null` for `public_title` and `public_message` and `true` for `without_message`. ||
+To issue a bonus without a message, specify `null` for `public_title` and `public_message` and `true` for `without_message`. ||
 || **id** | **string**
 
-Reward ID. ||
+Bonus ID. ||
 || **created** | **string**
 
-Date the reward was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]` ||
+Date the bonus was awarded, in UTC using ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]` ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

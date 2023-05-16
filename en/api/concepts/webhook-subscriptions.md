@@ -12,6 +12,12 @@ Notifications about the events you're subscribed to are sent in JSON format. For
 
 ## Methods {#methods}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--webhook-subscription):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Method | Endpoint | Overview
 ----- | ----- | -----
 PUT | [/webhook-subscriptions](put-webhook-subscriptions.md) | Creates one or more subscriptions.
@@ -19,3 +25,5 @@ GET | [/webhook-subscriptions/<subscription_id>](get-webhook-subscriptions.md) |
 GET | [/webhook-subscriptions](get-webhook-subscriptions-list.md) | Gets data for multiple active subscriptions.
 DELETE | [/webhook-subscriptions/<subscription_id>](delete-webhook-subscriptions.md) | Deletes a subscription.
 POST | [/webhook-subscriptions/<subscription_id>/test](post-webhook-subscriptions.md) | Sends a test notification to the URL specified in the subscription.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

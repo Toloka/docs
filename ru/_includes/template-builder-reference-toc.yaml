@@ -85,6 +85,8 @@ items:
     href: ../template-builder/reference/field.number.md
   - name: field.phone-number
     href: ../template-builder/reference/field.phone-number.md
+  - name: field.quiz
+    href: ../template-builder/reference/field.quiz.md
   - name: field.radio-group
     href: ../template-builder/reference/field.radio-group.md
   - name: field.select

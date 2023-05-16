@@ -1,25 +1,26 @@
 # archive_pool
-`toloka.client.TolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L1244)
+`toloka.client.TolokaClient.archive_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1295)
 
 ```python
 archive_pool(self, pool_id: str)
 ```
 
-Sends pool to archive
+Archives a pool.
 
 
-The pool must be in the status "closed".
-The archived pool is not deleted. You can access it when you will need it.
+Only closed pools can be archived.
+
+You can't open archived pools, but you can [clone](toloka.client.TolokaClient.clone_pool.md) them if needed.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`pool_id`|**str**|<p>ID of pool that will be archived.</p>
+`pool_id`|**str**|<p>The ID of the pool to be archived.</p>
 
 * **Returns:**
 
-  Object with updated status.
+  The pool with updated status.
 
 * **Return type:**
 

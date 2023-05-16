@@ -12,7 +12,7 @@ You can also set up validation, for example, disable negative or fractional numb
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.number" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.number" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
@@ -21,3 +21,5 @@ You can also set up validation, for example, disable negative or fractional numb
 || `placeholder` | _string_ | A semi-transparent label that is shown in the box when it is empty. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

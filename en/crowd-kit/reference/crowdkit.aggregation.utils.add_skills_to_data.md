@@ -1,5 +1,5 @@
 # add_skills_to_data
-`crowdkit.aggregation.utils.add_skills_to_data` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/utils.py#L153)
+`crowdkit.aggregation.utils.add_skills_to_data` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/utils.py#L176)
 
 ```python
 add_skills_to_data(

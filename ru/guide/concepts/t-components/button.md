@@ -4,25 +4,15 @@
 
 {% note info %}
 
-Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку в {% if locale == "ru-ru" %}[Конструкторе шаблонов](../../../template-builder/reference/field.button-radio.md){% endif %}{% if locale == "en-com" %}[Template Builder](../../../../en/docs/template-builder/reference/field.button-radio.md){% endif %}.
+Справочник по настройке интерфейса описывает работу редактора HTML/JS/CSS. Вы также можете попробовать создать кнопку в [Конструкторе шаблонов](../../../template-builder/reference/field.button-radio.md).
 
 {% endnote %}
 
 Чтобы вставить в задание кнопку, используйте компонент `not_var{{button}}`. Например:
 
-{% if locale == "ru-ru" %}
-
 ```plaintext
 {{button label="Нажми меня" href="https://yandex.ru" action=true}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```plaintext
-{{button label="Click me" href="https://yandex.ru" action=true}}
-```
-
-{% endif %}
 
 #### Параметры
 

@@ -6,6 +6,8 @@ The component changes the value in the data from `true` to `false` and vice vers
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "action.toggle" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "action.toggle" | Set component type. ||
 || `data` | _writable_ | Data in which the value will be changed. The data type must be `boolean`. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

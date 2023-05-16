@@ -4,11 +4,11 @@ Payment documents are handled in your [**Yandex.Balance**]({{ balance }}) accoun
 
 You can access it from your Toloka account. To do this:
 
-1. On the [Profile]({{ profile }}) page, click {% if locale == "en-com" %}**Transfer funds**{% endif %}.
+1. On the [Profile]({{ profile }}) page, click **Transfer funds**.
 
 1. Enter a top-up amount in USD. The minimum amount is $1.
 
-1. Click {% if locale == "en-com" %}**Transfer**{% endif %}.
+1. Click **Transfer**.
 
     You will be redirected to Yandex.Balance. Payment documents are located in the **Acts** section.
 
@@ -88,3 +88,5 @@ You can also send a request to change payment details to the document workflow g
 ## See also {#see-also}
 
 - [{#T}](refill.md)
+
+{% include [contact-support](../_includes/contact-support.md) %}

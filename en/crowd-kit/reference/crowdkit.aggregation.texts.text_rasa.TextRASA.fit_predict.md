@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.texts.text_rasa.TextRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/texts/text_rasa.py#L83)
+`crowdkit.aggregation.texts.text_rasa.TextRASA.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/texts/text_rasa.py#L83)
 
 ```python
 fit_predict(
@@ -15,8 +15,8 @@ Fit the model and return aggregated texts.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**DataFrame**|<p>Workers&#x27; outputs. A pandas.DataFrame containing `task`, `worker` and `output` columns.</p>
-`true_objects`|**Optional\[Series\]**|<p>Tasks&#x27; ground truth labels. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s ground truth label.</p>
+`data`|**DataFrame**|<p>Workers&#x27; responses. A pandas.DataFrame containing `task`, `worker` and `output` columns.</p>
+`true_objects`|**Optional\[Series\]**|<p>Tasks&#x27; ground truth texts. A pandas.Series indexed by `task` such that `labels.loc[task]` is the tasks&#x27;s ground truth text.</p>
 
 * **Returns:**
 

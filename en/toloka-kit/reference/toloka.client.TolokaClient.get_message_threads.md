@@ -1,5 +1,5 @@
 # get_message_threads
-`toloka.client.TolokaClient.get_message_threads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/client/__init__.py#L951)
+`toloka.client.TolokaClient.get_message_threads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L984)
 
 Finds all message threads that match certain criteria.
 
@@ -22,6 +22,7 @@ If you need to sort message threads use the [find_message_threads](toloka.client
 `created_lte`|**Optional\[datetime\]**|<p>Threads created before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Threads created after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Threads created after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned message threads limit for each request. The default batch_size is 50. The maximum allowed batch_size is 300.</p>
 
 * **Yields:**
 

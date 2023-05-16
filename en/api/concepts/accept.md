@@ -2,7 +2,7 @@
 
 {% include [announce](../_includes/announce.md) %}
 
-You can manually check tasks and reject responses of poor quality. To accept or reject received responses, change the status of the task suite using a PATCH request to the resource `/assignments/<task suite assignment ID>`:
+You can manually check tasks and reject responses of poor quality. To accept or reject received responses, change the status of the task suite using a PATCH request to the `/assignments/<task_suite_assignment_ID>` resource:
 
 - Accept responses: change `SUBMITTED` to `ACCEPTED`.
 - Reject responses: change `SUBMITTED` to `REJECTED`.
@@ -11,6 +11,12 @@ You can manually check tasks and reject responses of poor quality. To accept or 
 To resend rejected tasks to be completed by other Tolokers, add a quality control rule to the pool (see [Recompletion of assignments](restore-task-overlap.md)).
 
 ## Request {#request}
+
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/assignments/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
 
 {% list tabs %}
 
@@ -60,7 +66,7 @@ Title | Overview
 
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
-- `ACTIVE` — Being completed by a Toloker.
+- `ACTIVE` — Being picked up by a Toloker.
 - `SUBMITTED` — Completed but not checked.
 - `ACCEPTED` — Accepted by the requester.
 - `REJECTED` — Rejected by the requester.
@@ -92,7 +98,7 @@ The response contains the changed values of fields:
 
 Status of an assigned task suite. If you need to list multiple statuses, separate them with commas:
 
-- `ACTIVE` — Being completed by a Toloker.
+- `ACTIVE` — Being picked up by a Toloker.
 - `SUBMITTED` — Completed but not checked.
 - `ACCEPTED` — Accepted by the requester.
 - `REJECTED` — Rejected by the requester.
@@ -106,9 +112,11 @@ A comment for the Toloker.
 Maximum length: 2048 characters. ||
 || **bonus_ids[]** | **array of strings**
 
-IDs of rewards issued. ||
+IDs of bonuses issued. ||
 |#
 
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/accept.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -1,5 +1,5 @@
 # get_signature
-`toloka.util.get_signature` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/util/__init__.py#L48)
+`toloka.util.get_signature` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/util/__init__.py#L48)
 
 ```python
 get_signature(func: Callable)

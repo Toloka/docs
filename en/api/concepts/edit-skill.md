@@ -6,6 +6,12 @@ Changes the name, comment, and access to the skill.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#put-/skills/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -54,3 +60,5 @@ Contains updated information about the skill (see the description in the [Create
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/nav-edit.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

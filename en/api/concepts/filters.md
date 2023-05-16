@@ -55,17 +55,17 @@ The `and` and `or` parameters must be lowercase.
 
 #|
 || Parameter | Overview ||
-|| **category** | **string \| mandatory**
+|| **category** | **string \| required**
 
 Group of data for filtering:
 
 - `skill` — The skill.
 - `profile` — Profile data.
 - `computed` — Computed data, such as the Toloker's region according to the IP address. ||
-|| **key** | **string \| mandatory**
+|| **key** | **string \| required**
 
 Attribute to use for filtering Tolokers. For example, the country (`country`), or a skill (specify the skill ID). ||
-|| **operator** | **string \| mandatory**
+|| **operator** | **string \| required**
 
 Comparison operator in the condition. For example, the condition "Toloker must be 18 or older" uses the date of birth and the `GTE` ("Greater than or equal to") operator. Possible values for the `operator` key depend on the type of data in the `value` field. To choose the correct value, see the descriptions of filters in the sections [Filter by profile data](filter-profile.md), [Filter by calculated data](filter-computed.md), [Filter by skills](filter-skill.md).
 
@@ -74,7 +74,9 @@ Comparison operator in the condition. For example, the condition "Toloker must b
 The `operator` value must be lowercase.
 
 {% endnote %} ||
-|| **value** | **boolean**, **string**, **list of strings**, **integer \| mandatory**
+|| **value** | **boolean**, **string**, **list of strings**, **integer \| required**
 
 The value of the attribute from the `key` field. For example, the ID of the region specified in the profile, or the minimum skill value. To choose the correct value, see the descriptions of filters in the sections [Filter by profile data](filter-profile.md), [Filter by calculated data](filter-computed.md), [Filter by skills](filter-skill.md). ||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

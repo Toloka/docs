@@ -1,0 +1,1 @@
+After all the steps, you'll see the **Set up is finished and your pool is ready for labeling** tip on the pool page.

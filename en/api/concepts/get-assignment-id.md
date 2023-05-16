@@ -6,6 +6,12 @@ Gets the properties of a response.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#get-/assignments/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -46,7 +52,7 @@ Title | Overview
   "user_id": "b4d8bcc33403cae9eb69991c8bb90bdc",
   "status": "ACCEPTED",
   "reward": 0.01,
-  "bonus_ids": "IDs of the rewards given for the task",
+  "bonus_ids": "IDs of the bonuses given for the task",
   "tasks": [
     {
       "id": "6946cefa-32af-4f62-b530-8d2c71fa2966",
@@ -93,7 +99,7 @@ ID of the Toloker who was assigned the task suite. ||
 
 Status of an assigned task suite:
 
-- `ACTIVE` — Being completed by a Toloker.
+- `ACTIVE` — Being picked up by a Toloker.
 - `SUBMITTED` — Completed but not checked.
 - `ACCEPTED` — Accepted by the requester.
 - `REJECTED` — Rejected by the requester.
@@ -109,11 +115,11 @@ A comment for the Toloker.
 Maximum length: 2048 characters. ||
 || **bonus_ids[]** | **array of strings**
 
-`IDs` of rewards issued for the task. ||
+`IDs` of bonuses issued for the task. ||
 || **tasks[]** | **array of objects**
 
 [Data for the tasks](task-suite.md). ||
-|| **first_declined_ solution_attempt[]** | **array of objects**
+|| **first_declined_solution_attempt[]** | **array of objects**
 
 For training tasks. The Toloker's first responses in the training task (only if these were the wrong answers). If the Toloker answered correctly on the first try, the `first_declined_solution_attempt` array is omitted.
 
@@ -189,14 +195,7 @@ Requester ID. ||
 Checks who the object belongs to:
 
 - `true` — The Toloker whose OAuth token is specified in the request.
-- `false` — Another account (employee or owner).
-
-{% if audience == "internal" %}
-
-**owner.company_id** | **string**
-
-The requester's company ID.
-
-{% endif %}
-||
+- `false` — Another account (employee or owner).||
 |#
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

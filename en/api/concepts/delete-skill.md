@@ -6,6 +6,12 @@ Removes a skill for a Toloker.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#delete-/user-skills/-id-):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -39,3 +45,5 @@ Title | Overview
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/nav-delete.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

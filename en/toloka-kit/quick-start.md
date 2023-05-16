@@ -35,11 +35,11 @@ To start with Toloka-Kit:
 
 ## What's next {#what-next}
 
-- Complete one of the [tutorials](../guide/concepts/usecases.md) to get acquainted with Toloka web interface.
+- Complete one of the [tutorials](../guide/tutorials/usecases.md) to get acquainted with Toloka web interface.
 
-- Create your [first project](./learn-basics.md) using Toloka-Kit.
+- Create your [first project](./recipes/learn-basics.md) using Toloka-Kit.
 
-- Try [Toloka-Kit usage examples](./use-cases.md).
+- Try [Toloka-Kit usage examples](./recipes/use-cases.md).
 
 - Read the package reference starting with [TolokaClient](reference/toloka.client.TolokaClient.md).
 

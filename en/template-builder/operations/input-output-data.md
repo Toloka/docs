@@ -9,12 +9,15 @@ For more information on how to add a quotation mark `"`, backslash `\`, line bre
 ## Basic example {#read-write-data}
 
 Let's say you want to display the question text from the input data and write the response to the output data. Sample input data:
+
 ```json
 {
   "question": "Would you buy an elephant?"
 }
 ```
+
 Example of the question display in the [view.text](../reference/view.text.md) component:
+
 ```json
 {
   "type": "view.text",
@@ -25,7 +28,9 @@ Example of the question display in the [view.text](../reference/view.text.md) co
   }
 }
 ```
+
 Example of writing a response using the [field.radio-group](../reference/field.radio-group.md) component:
+
 ```json
 {
   "type": "field.radio-group",
@@ -47,13 +52,14 @@ When you respond with yes and click **Send**, the result looks like this:
 }
 ```
 
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/oiZ8TkDU3YYtae)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ZL2u06Rh3ttBRF)
 
 ## Reading JSON input data {#read-json}
 
 If you pass a JSON object in the input data and want to get a value for some nested key, specify the path to it using the dot as a separator.
 
 Let's say you have an input object that describes a residential address.
+
 ```json
 {
     "name": "Ivan Ivanov",
@@ -66,6 +72,7 @@ Let's say you have an input object that describes a residential address.
 ```
 
 To display the value from the city property in the interface, specify the path to this value using the dot separator:
+
 ```json
 {
   "type": "data.input",
@@ -73,23 +80,20 @@ To display the value from the city property in the interface, specify the path t
 }
 ```
 
-
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/xBraBLTb3YYty4)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/-SMvyQ2u3ttBUC)
 
 ## Writing JSON data {#write-json}
 
 The output data is written similarly. If you enter the path separated by dots, the field with the output data will have the object type in the specification.
 
-
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/ZySJWPri3YYuEw)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/RvwlJq5B3ttBYv)
 
 ## Reading data with the "array" type {#read-array}
 
 To get a value from a specific element in an array, use the path to specify its sequence number, starting from zero.
 
-Let's say the input data contains of an array of links to images:
+Let's say the input data contains an array of links to images:
+
 ```json
 {
   "images": [
@@ -99,7 +103,9 @@ Let's say the input data contains of an array of links to images:
   ]
 }
 ```
+
 You can reference a specific array element like this:
+
 ```json
 "url": {
   "type": "data.input",
@@ -107,21 +113,18 @@ You can reference a specific array element like this:
 }
 ```
 
-
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/VyGcHg093YYubc)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/V44snIfa3ttBb2)
 
 If the array length is unknown or very large, you can get all the array values using the [helper.transform](../reference/helper.transform.md) component.
 
 For example, you can convert an array of image links to an array of [view.image](../reference/view.image.md) components to display them in the interface.
 
-
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/VyGcHg093YYubc)
-
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/V44snIfa3ttBb2)
 
 ## Writing the array data {#write-array}
 
 Similarly to reading elements from an array, you can also write the results to an array. For this, use the `path` property for the path to the array and the element number starting from zero. Example:
+
 ```json
 {
   "type": "data.output",
@@ -129,8 +132,7 @@ Similarly to reading elements from an array, you can also write the results to a
 }
 ```
 
-
-[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/VXkQ3nK83YYvAS)
+[![image](../_images/buttons/view-example.svg)](https://ya.cc/t/SHklDL8H3ttBg5)
 
 ## Related information
 

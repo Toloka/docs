@@ -8,13 +8,13 @@ If a Toloker logs in from a mobile device, it's more convenient to use [field.me
 
 In the task review mode, the uploaded images will appear automatically. You can view, rotate, and switch among the images.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/asSRq)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/W_WxIekd3tyzv6)
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.file" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "field.file" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
 || `label` | _string_ | Label above the component. ||
 || `accept` | _array_ | A list of file types that will be suggested to a Toloker when uploading. By default, you can upload any files.
@@ -28,3 +28,5 @@ Specify the types in the [MIME Type](https://developer.mozilla.org/en-US/docs/We
 - `true` — allowed. ||
   || `validation` | _condition_ | Validation based on condition. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

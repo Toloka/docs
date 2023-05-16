@@ -148,7 +148,7 @@
 ||**task_spec.view_spec** | **object**
 
 Описание интерфейса задания. Полный список параметров приведен в таблице [Интерфейс задания](#view-spec-section).||
-||**assignments_issuing_view_ config** | **string \| обязательный при условии**
+||**assignments_issuing_view_config** | **string \| обязательный при условии**
 
 Обязателен, если `assignments_issuing_type=MAP_SELECTOR`.
 
@@ -185,10 +185,10 @@
 - `YANDEX` — Яндекс Карты.
 
 Если параметр не задан, то выбор карты определяется исполнителем.||
-||**assignments_automerge_ enabled** | **boolean**
+||**assignments_automerge_enabled** | **boolean**
 
 Разрешить [слияние идентичных заданий](tasks.md#task-merge) в проекте. По умолчанию значение `false`.||
-||**max_active_assignments_ count** | **integer**
+||**max_active_assignments_count** | **integer**
 
 Количество страниц, которые исполнитель может одновременно выполнять (статус «Активно»).||
 ||**quality_control** | **object**
@@ -350,7 +350,7 @@ CSS-стили задания.
 Показывать цену за страницу. По умолчанию значение `true`.||
 |#
 
-## Настройки отображения пешеходных заданий (assignments_issuing_view_ config) {#assignments-issuing-view-config-section}
+## Настройки отображения пешеходных заданий (assignments_issuing_view_config) {#assignments-issuing-view-config-section}
 
 #|
 ||Параметр | Описание||
@@ -380,7 +380,7 @@ CSS-стили задания.
 
 #|
 ||Параметр | Описание||
-||**default_ language** | **string**
+||**default_language** | **string**
 
 Исходный язык, на котором заполнены:
 

@@ -8,7 +8,7 @@ Displays an image.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.image" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.image" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||
 || `hint` | _string_ | Hint text. ||
@@ -34,3 +34,5 @@ Images in SVG format with no size specified always fit in their parent elements.
 || `url`<span style="color: red">\*</span> | _string_ | Image link. ||
 || `validation` | _condition_ | Validation based on condition. ||
 |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

@@ -1,5 +1,5 @@
 # default_calc_ranks
-`toloka.autoquality.scoring.default_calc_ranks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.0.post1/src/autoquality/scoring.py#L111)
+`toloka.autoquality.scoring.default_calc_ranks` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/autoquality/scoring.py#L111)
 
 ```python
 default_calc_ranks(scores_df: DataFrame)

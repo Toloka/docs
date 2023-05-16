@@ -1,5 +1,5 @@
 # ROVER
-`crowdkit.aggregation.texts.rover.ROVER` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/texts/rover.py#L31)
+`crowdkit.aggregation.texts.rover.ROVER` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/texts/rover.py#L31)
 
 ```python
 ROVER(
@@ -39,7 +39,7 @@ J. G. Fiscus,
 from crowdkit.aggregation import load_dataset
 from crowdkit.aggregation import ROVER
 df, gt = load_dataset('crowdspeech-test-clean')
-df['text'] = df['text'].apply(lambda s: s.lower())
+df['text'] = df['text'].str.lower()
 tokenizer = lambda s: s.split(' ')
 detokenizer = lambda tokens: ' '.join(tokens)
 result = ROVER(tokenizer, detokenizer).fit_predict(df)

@@ -8,7 +8,7 @@
 
 Посмотрите пример — интерфейс разметки включает блок текста и радиокнопки для разных категорий. В нем уже настроена валидация, горячие клавиши и внешний вид задания.
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/GCr6AzRu3Wk6so)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/t_qYMu7W3ttDbe)
 
 {% cut "Из каких компонентов состоит этот пример" %}
 
@@ -137,7 +137,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/5GdOsaHz3XFSUH)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/CWaULGco3ttDcv)
 
 ## Добавить поле для ввода ответа {#add-text-area}
 
@@ -159,7 +159,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/tqcXy_dh3Wk7XR)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ZkRWkjQr3ttDeN)
 
 ## Добавить оформление {#add-layout}
 
@@ -214,7 +214,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/1d9wVk0A3Wk7hq)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/wH3XbAFE3ttDfc)
 
 ## Другие варианты кнопок {#mult-ans-options}
 
@@ -263,7 +263,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/WqUYAVJ_3Wk87q)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/q8RpfYS93ttDgm)
 
 - Один (радиокнопка)
 
@@ -312,7 +312,7 @@
 
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/772Lk77T3Wk8bu)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/dkl2xM1t3ttDhV)
 
 {% endlist %}
 
@@ -368,7 +368,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FwDPOVZ_3Wk8zy)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ODo7Fc_r3ttDiK)
 
 ## Сравнение текста и поискового запроса {#search}
 
@@ -395,7 +395,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/XjJKrKAq3Wk2gG)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/rIjOJa7c3ttDjH)
 
 #### Попарное сравнение с веб-страницей
 
@@ -421,7 +421,7 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/IV7KDhXz3Wjv6u)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FDrNN4qp3ttDk9)
 
 #### Попарное сравнение с веб-страницей в рамке мобильного устройства
 
@@ -467,6 +467,6 @@
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/09flUkZu3WjxyP)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3JMlulLI3ttDmK)
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)

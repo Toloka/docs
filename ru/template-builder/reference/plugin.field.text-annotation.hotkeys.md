@@ -4,7 +4,7 @@
 
 Позволяет задавать горячие клавиши для компонента [field.text-annotation](field.text-annotation.md).
 
-[![](../_images/buttons/view-example.svg)](https://clck.ru/TeqjT)
+[![Посмотреть пример в песочнице](../_images/buttons/view-example.svg)](https://ya.cc/t/NqjWqemP3twgex)
 
 ## Свойства компонента {#properties}
 

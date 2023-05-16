@@ -1,4 +1,4 @@
-# {% if locale == "ru-ru" %}Выполнение заданий{% endif %}{% if locale == "en-com" %}Submission rate{% endif %}
+# Выполнение заданий
 
 {% include [deprecate](../../../_includes/deprecate.md) %}
 

@@ -1,14 +1,17 @@
 # How to save your budget
 
-Every requester wants to optimize expenses. This section describes the main ways to save money without compromising the quality of labeling.
+Every requester wants to optimize expenses. This section describes the main ways to save money without reducing the labeling quality.
 
 ## Decompose tasks {#decomposition}
 
-Use [decomposition](solution-architecture.md). Simpler tasks cost less. If a task is complex, you won't get good results immediately. Instead, you'll have to resend tasks to the pool so that other Tolokers can redo them.
+Use [decomposition](solution-architecture.md) to simplify the tasks: 
+
+- Simpler [tasks](../../glossary.md#task) cost less. 
+- If a task is complex, you won't get good results immediately. Instead, you'll have to resend tasks to the [pool](../../glossary.md#pool) so that other Tolokers can redo them.
 
 ## Use dynamic overlap {#din-price}
 
-[Dynamic overlap](dynamic-overlap.md) (incremental relabeling, IRL) lets you change overlap depending on:
+[Dynamic overlap](dynamic-overlap.md) lets you change [overlap](../../glossary.md#overlap) depending on:
 
 - How well the Tolokers do on the task.
 - How well Tolokers' responses match each other.
@@ -17,9 +20,9 @@ With this overlap setting, you can save on the number of Tolokers who complete y
 
 ## Review assignments {#post}
 
-[Assignment review](offline-accept.md) allows you to check responses so you don't have to pay for poorly completed tasks.
+[Manual review](offline-accept.md) allows you to check responses so you don't have to pay for poorly completed tasks.
 
-Use **assignment review** if:
+Use manual review if:
 
 - The task requires that users send free-format responses or data files.
 
@@ -29,9 +32,13 @@ Use **assignment review** if:
 
 You can set up a [random majority vote check](selective-mvote.md) for the general tasks. This helps you save money and speed up pool completion. You can set the period during which tasks with increased overlap will be displayed to the Toloker, depending on the number of completed tasks.
 
-For example, let's say your pool's overlap is set to 3. You don't trust the responses of new Tolokers and want to check them further. In this case, you set up a random majority vote check. If the Toloker completed 10 tasks in the last 14 days, set overlap to 5 for every third task, and if the Toloker completed 20 tasks, set overlap to 5 for every fifth task.
+{% cut "Example" %}
+
+Let's say your pool's overlap is set to 3. You don't trust the responses of new Tolokers and want to check them further. In this case, you set up a random majority vote check. If the Toloker completed 10 tasks in the last 14 days, set overlap to 5 for every third task, and if the Toloker completed 20 tasks, set overlap to 5 for every fifth task.
 
 Without this setting, you would be forced to set overlap to 5 for each task in the pool. And it would be more expensive to label all tasks with overlap = 5, as opposed to just some of the tasks.
+
+{% endcut %}
 
 ## Set up dynamic pricing {#price-set}
 
@@ -41,23 +48,28 @@ In some cases, this setting makes labeling more expensive, like for tasks that d
 
 ## Use fractional payment on incomplete task suites {#mixer}
 
-Use the [Smart mixing](distribute-tasks-by-pages.md#smart-mixing) and **Assign partial page** options. This way you can save money on paying for incomplete task suites.
+Use the [Smart mixing](distribute-tasks-by-pages.md#smart-mixing) method and the **Allow partial task suites** option. This way you can save money on paying for incomplete task suites.
 
 ## Conditionally free exams {#exams}
 
-In Toloka, requesters pay for exams, including those that Tolokers didn't pass. This is a fee that a requester doesn't get any benefit from, because a Toloker failed the exam and won't be able to complete any of the general tasks.
+In Toloka, requesters pay for [exams](../../glossary.md#exam), including those that Tolokers didn't pass. This is a fee that a requester doesn't get any benefit from, because a Toloker failed the exam and won't be able to complete any of the general tasks.
 
 In this case, you can set up automatic acceptance of tasks and automatic rejection of tasks at the end of the review period. To do this, you'll need to:
 
 1. Select **Exam** as the pool type.
 
-1. Enable **Non-automatic acceptance** in the pool settings.
+1. Turn on the **Review task responses manually** option.
 
-1. Set the option to **Yes** and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
+1. Turn on the **Reject tasks at the end of the review period** option and specify the reason for rejection. It will be shown to Tolokers whose responses are rejected.
 
-1. Set the assignment review period to one day.
+1. Set the manual review period to one day.
 
-1. Add the **Control tasks** quality control block and set the condition **if the percentage of correct responses ≥ N** and **the number of responses = N**, then accept all the Toloker's responses.
+1. Add the **Control tasks** quality control block and set the **If** conditions:
+
+    - `correct responses (%) ≥ X`;
+    - `number of responses = Y`.
+    
+1. Select the **accept all assignments from this Toloker in the pool** value in the **then** field.
 
 1. Add a description of the new rule to the instructions.
 
@@ -81,7 +93,7 @@ Create keyboard shortcuts. This will make it easier for Tolokers to complete you
 
 #### Merge tasks
 
-You can merge tasks that have identical input data. This allows you to save money if the same task was uploaded to different pools.
+You can merge tasks that have identical [input data](incoming.md). This allows you to save money if the same task was uploaded to different pools.
 
 [Learn more](../../api/concepts/tasks.md)
 
@@ -95,7 +107,7 @@ To do this, use the `golden_task_distribution_function` key.
 
 #### Set up preliminary responses
 
-In addition to **dynamic overlap**, use `baseline_solutions` to speed up the overlap. In `baseline_solutions`, preliminary responses are used, that is, data that simulates Toloker responses. For example, you need to determine what an image shows: a cat or a dog. Suppose your neural network determined that the image may show a dog with a probability of 80% and a cat with a probability of 40%. You can use the neural network's responses. Depending on the responses of Tolokers, the overlap will increase or remain unchanged.
+In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap. In `baseline_solutions`, preliminary responses are used, that is, data that simulates Toloker responses. For example, you need to determine what an image shows: a cat or a dog. Suppose your neural network determined that the image may show a dog with a probability of 80% and a cat with a probability of 40%. You can use the neural network's responses. Depending on the responses of Tolokers, the overlap will increase or remain unchanged.
 
 [Learn more](../../api/concepts/create-task.md)
 

@@ -1,0 +1,1 @@
+Array is the data type for the multiple values usage.

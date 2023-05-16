@@ -6,6 +6,12 @@ The sent message is added to a new message thread. Until the first response is
 
 ## Methods {#methods}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--message-thread):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Method | Endpoint | Overview
 ----- | ----- | -----
 POST | [/message-threads/compose](message-send.md) | Sends a message to Tolokers.
@@ -17,3 +23,5 @@ POST | [/message-threads/<thread_id>/remove-from-folders](move-message.md) | Del
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/messaging.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

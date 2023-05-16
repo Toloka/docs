@@ -1,0 +1,1 @@
+At the **Setup quality control** step, set quality control rules for more accurate results:

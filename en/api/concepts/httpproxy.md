@@ -12,7 +12,7 @@ The browser will block AJAX requests made from a Toloka task directly to your se
 
 Limitations to consider when configuring the server:
 
-#### Data type
+## Data type
 
 If the type of data in the requester's server response is different from the one specified in the list, the response is converted to `text/plain`.
 
@@ -33,7 +33,7 @@ If the type of data in the requester's server response is different from the one
 - `video/3gpp`
 - `video/3gpp2`
 
-#### Headers
+## Headers
 
 When proxying the requester's server responses, the following HTTP headers are ignored:
 
@@ -58,3 +58,5 @@ You can use the API to:
 - [Get information](httpproxy-get-info.md) about all registered servers of a requester.
 - [Update](httpproxy-edit.md) the data of a previously registered server.
 - [Remove](httpproxy-delete.md) a server registration if you no longer need it.
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

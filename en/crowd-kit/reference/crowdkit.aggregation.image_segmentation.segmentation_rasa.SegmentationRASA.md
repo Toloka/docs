@@ -1,5 +1,5 @@
 # SegmentationRASA
-`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.1.0/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L15)
+`crowdkit.aggregation.image_segmentation.segmentation_rasa.SegmentationRASA` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/image_segmentation/segmentation_rasa.py#L15)
 
 ```python
 SegmentationRASA(
@@ -9,7 +9,7 @@ SegmentationRASA(
 )
 ```
 
-Segmentation RASA — chooses a pixel if sum of weighted votes of each workers' more than 0.5.
+Segmentation RASA - chooses a pixel if sum of weighted votes of each workers' more than 0.5.
 
 
 Algorithm works iteratively, at each step, the workers are reweighted in proportion to their distances

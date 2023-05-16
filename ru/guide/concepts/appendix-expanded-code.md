@@ -33,8 +33,6 @@
 
 Блок **HTML:**
 
-{% if locale == "ru-ru" %}
-
 ```html
 {{img src=image width="100%" height="400px"}}
 <div>Есть ли <b>обувь</b> на картинке?<div>
@@ -42,17 +40,6 @@
 {{field type="radio" name="result" value="BAD" label="Нет" hotkey="2"}}
 {{field type="radio" name="result" value="404" label="Ошибка загрузки" hotkey="3"}}</div>
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-{{img src=image width="100%" height="400px"}} <div>Are there <b>shoes</b> in the picture?<div>
-<div> {{field type="radio" name="result" value="OK" label="Yes" hotkey="1"}}
-{{field type="radio" name="result" value="BAD" label="No" hotkey="2"}}
-{{field type="radio" name="result" value="404" label="Loading error" hotkey="3"}}</div>
-```
-
-{% endif %}
 
 Блок **JavaScript:**
 
@@ -126,8 +113,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 Блок **HTML:**
 
-{% if locale == "ru-ru" %}
-
 ```html
 {{img src=image width="50%" height="400px"}}
 <div class='answers'>
@@ -142,25 +127,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
  </div>
 </div>
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-{{img src=image width="50%" height="400px"}}
-<div class='answers'>
- <p>Find similar <b>shoes</b> in the ASOS online store</p>
- {{field type="button-clicked" name="button" label="ASOS" href="https://www.asos.com" action=true}}
- <p>Shoes must be the same color, fabric, length, and style</p>
- <p>Paste the link here</p>
- {{field width="100%" type="input" name="found_link"}}
- <p>Upload the image here</p>
- <div>
- {{field width="100%" type="file-img" name="found_image" preview=true}}
- </div>
-</div>
-```
-
-{% endif %}
 
 Блок **JavaScript:**
 
@@ -267,8 +233,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 Блок **HTML:**
 
-{% if locale == "ru-ru" %}
-
 ```html
 {{img src=image height="400px"}} {{iframe src= found_link height="600px"}}
 <p>Убедитесь, что загруженное изображение соответствует товару из магазина.</p>
@@ -278,20 +242,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 {{field type="radio" name="result" value="Yes" label="Да"}}
 {{field type="radio" name="result" value="No" label="Нет"}}
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-{{img src=image height="400px"}} {{iframe src= found_link height="600px"}}
-<p>Check that the uploaded image matches the product in the store.</p>
-{{button label="Check the product" href=found_link action=true}}
-<p>Are <b>these shoes</b> similar to each other?</p>
-<p>Shoes must be the same color, fabric, length, and style.</p>
-{{field type="radio" name="result" value="Yes" label="Yes"}}
-{{field type="radio" name="result" value="No" label="No"}}
-```
-
-{% endif %}
 
 Блок **JavaScript:**
 
@@ -379,8 +329,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 
 Блок **HTML:**
 
-{% if locale == "ru-ru" %}
-
 ```html
 <div class="header">
     <div class="left caption"> {{ button label="Перейдите на сайт" href=left_link size="L"}}
@@ -404,34 +352,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     {{field type="radio" name="result" label="Правое изображение лучше" value=result_right hotkey="2"}}
 </div>
 ```
-
-{% endif %}{% if locale == "en-com" %}
-
-```html
-<div class="header">
-    <div class="left caption"> {{ button label="Go to site" href=left_link size="L"}}
-        <p class="url">not_var{{left_link}}</p>
-    </div>
-    <div class="right caption">
-        <p class="url">not_var{{right_link}}</p>
-        {{ button label="Go to site" href=right_link size="L"}}
-    </div>
-</div> {{img src=image}}
-<div class="content clearfix">
-    <div class="left page">
-        {{ iframe src=uploaded_link_left width="100%" height="700px" real-size=true screenshot=true}}
-    </div>
-    <div class="right page">
-        {{ iframe src=uploaded_link_right width="100%" height="700px" real-size=true screenshot=true}}
-    </div>
-</div>
-<div class="footer">
-    {{field type="radio" name="result" label="Left image is better" value=result_left hotkey="1"}}
-    {{field type="radio" name="result" label="Right image is better" value=result_right hotkey="2"}}
-</div>
-```
-
-{% endif %}
 
 Блок **JavaScript:**
 
@@ -516,7 +436,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     max-width: 182px;
 }
 
-
 .content {
     margin: 10px 0;
 }
@@ -540,7 +459,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     overflow: hidden;
     width: 100%;
 }
-
 
 .image {
     display: inline-block;
@@ -574,7 +492,6 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
     margin: 10px;
     max-width: 182px;
 }
-
 
 .content {
     margin: 10px 0;

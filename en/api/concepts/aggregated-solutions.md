@@ -17,6 +17,12 @@ You can aggregate responses in two ways:
 
 ## Methods {#methods}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#tag--aggregated-solution):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 Method | Endpoint | Overview
 ----- | ----- | -----
 POST | [/aggregated-solutions/aggregate-by-pool](aggregate-by-pool.md) | Starts aggregating responses to all completed tasks in the pool.
@@ -26,3 +32,5 @@ GET | [/aggregated-solutions/<operation_id>](get-aggregated-result.md) | Gets ag
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/result-aggregation.md)
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}

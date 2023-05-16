@@ -4,13 +4,13 @@ Component for creating a string with a search query reference.
 
 The list of available search engines is specified in the `engine` property.
 
-[![image](../_images/buttons/view-example.svg)](https://clck.ru/TRCLB)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/W5KExwg_3vwB57)
 
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.search-query" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.search-query" | Set component type. ||
 || `engine` | _string_ or _object_ or _object_ or _object_ | Search engine. Use the corresponding value to specify the search engine:
 
 - `yandex` — https://yandex.ru
@@ -27,3 +27,5 @@ The list of available search engines is specified in the `engine` property.
   ||
   || `query`<span style="color: red">\*</span> | _string_ | Search query. ||
   |#
+
+{% include [contact-support](../_includes/contact-support.md) %}

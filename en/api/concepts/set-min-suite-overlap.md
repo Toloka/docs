@@ -6,6 +6,12 @@ Stops assigning a task suite to Tolokers.
 
 ## Request {#request}
 
+{% note tip %}
+
+**Try our [new API reference](https://toloka.ai/docs/api/api-reference/#patch-/task-suites/-id-/set-overlap-or-min):** more parameter details, request/response examples, and code samples in various programming languages, including the [Toloka-Kit](../../toloka-kit/index.md) usage samples.
+
+{% endnote %}
+
 {% list tabs %}
 
 - Production version
@@ -59,3 +65,5 @@ Task suite overlap. ||
 ## Response {#response}
 
 Contains the [task suite data in JSON format](create-task-suite.md#overlap).
+
+{% include [contact-support](../../guide/_includes/contact-support.md) %}
