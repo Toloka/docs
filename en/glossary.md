@@ -82,10 +82,6 @@ Professionals who help create and configure [projects](#project), post tasks, an
 
 Comma-separated values. A text file format in which data is separated by the comma, and lines are separated by a newline symbol.
 
-CSV {#csv-format}
-
-: Comma-separated values. A text file format in which data is separated by the comma, and lines are separated by a newline symbol.
-
 ### D
 
 #### Data entry field components (component type for Template Builder) {#data-entry-field}
