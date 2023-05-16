@@ -3,7 +3,7 @@
 ## Bespoke {#app-projects}
 
 I didn't find a suitable bespoke solution
-: If you can't find a solution that fits your goals, [contact us](support.md).
+: If you can't find a solution that fits your goals, [contact us](../../guide/troubleshooting/support.md).
 
 ## Labeling results {#results}
 

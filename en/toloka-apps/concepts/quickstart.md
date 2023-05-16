@@ -62,7 +62,7 @@ If there are errors in the project, its status changes to **Rejected**. No worri
 
 {% note tip %}
 
-If you need help with setting up your project, [contact us](support.md).
+If you need help with setting up your project, [contact us](../../guide/troubleshooting/support.md).
 
 {% endnote %}
 
@@ -78,7 +78,7 @@ If you need help with setting up your project, [contact us](support.md).
 
 {% cut "I didn't find a suitable bespoke solution" %}
 
-If you can't find a solution that fits your goals, [contact us](support.md).
+If you can't find a solution that fits your goals, [contact us](../../guide/troubleshooting/support.md).
 
 {% endcut %}
 

@@ -134,7 +134,7 @@ curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a784
      -d '{"status":"ACCEPTED", "public_comment":"OK"}'
 ```
 
-Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 

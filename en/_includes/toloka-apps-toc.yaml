@@ -5,23 +5,21 @@ items:
     href: ../toloka-apps/concepts/index.md
     hidden: true
   - name: What tasks can't be placed in Toloka?
-    href: ../toloka-apps/concepts/unwanted.md
+    href: ../guide/concepts/unwanted.md
   - name: Getting started
     href: ../toloka-apps/concepts/quickstart.md
-  - name: Bespoke solutions
-    items:
-      - name: Product search relevance
-        href: ../toloka-apps/concepts/product-search-relevance.md
   - name: Uploading task items
     href: ../toloka-apps/concepts/add-task.md
   - name: Starting and stopping labeling
     href: ../toloka-apps/concepts/view-progress.md
   - name: Downloading the results
     href: ../toloka-apps/concepts/download-results.md
-  - name: Terms and definitions
-    href: ../toloka-apps/concepts/glossary.md
+  - name: Archiving batches
+    href: ../toloka-apps/concepts/archive-batch.md
   - name: Troubleshooting
     href: ../toloka-apps/concepts/troubleshooting.md
-  - name: Support
-    href: ../toloka-apps/concepts/support.md
+  - name: List of solutions
+    items:
+      - name: Product search relevance
+        href: ../toloka-apps/concepts/product-search-relevance.md
 base: en

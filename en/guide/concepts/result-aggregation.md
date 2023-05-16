@@ -46,7 +46,7 @@ curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool' 
      -d '{"pool_id":"1238218", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"91dbfd8f1bc3310fbbbd09f64b8ab6e5", "fields":[{"name":"result"}]}'
 ```
 
-Refer to the [Aggregate responses in pool](https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Aggregate responses in pool](https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
