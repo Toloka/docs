@@ -1,8 +1,8 @@
 # Registration
 
-## Registering in Toloka with Yandex ID {#concept_ntn_h5l_vlb}
+## Registering in Toloka {#concept_ntn_h5l_vlb}
 
-To register, you need a Yandex ID with a linked and confirmed phone number. If you don't have a Yandex ID, [sign up for one](https://passport.toloka.ai/).
+Most clients currently need a Yandex ID with a linked and confirmed phone number to register in Toloka. If you don't have a Yandex ID, [sign up for one](https://passport.toloka.ai/).
 
 {% note alert "Restriction" %}
 

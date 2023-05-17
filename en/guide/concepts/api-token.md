@@ -1,6 +1,12 @@
 # Generating API tokens
 
-After you login to the platform using [social authorization](access.md) or [single sign-on](../sso/authentication.md) (SSO) authentication method, you can generate new tokens. You can use them for API requests or for the integration applications. The previously generated tokens will continue to work, but will be deprecated with time.
+After you login to the platform using [social authorization](access.md#social-auth) or [single sign-on](../sso/authentication.md) (SSO) authentication method, you can generate new tokens. You can use them for API requests or for the integration applications. The previously generated tokens will continue to work, but will be deprecated with time.
+
+{% note info %}
+
+If your company uses SSO authentication method, each SSO user can generate their own tokens.
+
+{% endnote %}
 
 ## Generating tokens
 
