@@ -5,7 +5,7 @@ items:
     href: ../toloka-apps/concepts/index.md
     hidden: true
   - name: What tasks can't be placed in Toloka?
-    href: ../guide/concepts/unwanted.md
+    href: ../toloka-apps/concepts/unwanted.md
   - name: Getting started
     href: ../toloka-apps/concepts/quickstart.md
   - name: Uploading task items

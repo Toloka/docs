@@ -65,8 +65,6 @@ Refer to the [Unarchive batch](https://toloka.ai/docs/api/apps-reference/#post-/
 
 {% endnote %}
 
-{% endlist %}
-
 After the operation, the batch gets the status it had before archiving. You can continue interacting with it.
 
 {% include [contact-support](../_includes/contact-support.md) %}
