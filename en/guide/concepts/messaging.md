@@ -82,7 +82,7 @@ curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
      -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
 ```
 
-Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 

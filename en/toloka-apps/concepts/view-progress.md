@@ -26,16 +26,37 @@ To send a batch of data for labeling:
 
 You can stop labeling if it isn't completed.
 
-#### From a project
+{% list tabs %}
 
-1. Open the project.
-1. Click ![Pause](../_images/batch-pause.svg) on the right, next to the project name.
+- From a project
 
-#### From a batch
+  1. Open the project.
+  1. Click ![Pause](../_images/batch-pause.svg) on the right, next to the batch name.
 
-1. Open the project.
-1. Go to the desired batch.
-1. Click **Pause labeling**.
+- From a batch
+
+  1. Open the project.
+  1. Go to the desired batch.
+  1. Click **Pause labeling**.
+
+- Using the apps API
+
+  Send the following `POST` request:
+
+  ```bash
+  curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{project_id}/batches/{batch_id}/stop' \
+       -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+  ```
+
+  Where `{project_id}` is the ID of the project with which the batch is associated, and `{batch_id}` is the ID of the batch you want to pause.
+
+  {% note tip "Visit apps API reference" %}
+
+  Refer to the [Stop batch processing](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/stop) section of the apps API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+
+  {% endnote %}
+
+{% endlist %}
 
 {% note info %}
 

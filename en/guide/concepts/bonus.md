@@ -103,7 +103,7 @@ curl -X POST 'https://toloka.dev/api/v1/user-bonuses' \
      -d '{"user_id":"fac97860c7929add8048ed2ef63b66fd", "amount":0.5, "public_title":{"EN":"Perfect job!"}, "public_message":{"EN":"You are the best!"}}'
 ```
 
-Refer to the [Issue bonuses](https://toloka.ai/docs/api/api-reference/#post-/user-bonuses) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Issue bonuses](https://toloka.ai/docs/api/api-reference/#post-/user-bonuses) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 

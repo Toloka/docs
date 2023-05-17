@@ -348,7 +348,7 @@ items:
               - name: Submission rate
                 href: guide/concepts/efficiency-metrics/submitting-tasks.md
   - name: Bespoke solutions
-    hidden: true
+#    hidden: true
     items:
       - include:
           path: _includes/toloka-apps-toc.yaml

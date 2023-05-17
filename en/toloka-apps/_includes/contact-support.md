@@ -1,1 +1,1 @@
-[![Contact support](../../_images/contact-support.svg)](../concepts/support.md)
+[![Contact support](../../_images/contact-support.svg)](../../guide/troubleshooting/support.md)
