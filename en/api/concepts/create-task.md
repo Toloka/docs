@@ -22,27 +22,27 @@ You can add a maximum of 200,000 tasks per minute and a maximum of 4,000,000 t
 
 - Production version
 
-    ```bash
-    POST https://toloka.dev/api/v1/tasks
-    Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+  ```bash
+  POST https://toloka.dev/api/v1/tasks
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-    // one task {task data}
+  // one task {task data}
 
-    // or multiple tasks [{task 1}, {task 2},... {task n}]
-    ```
+  // or multiple tasks [{task 1}, {task 2},... {task n}]
+  ```
 
 - Sandbox
 
-    ```bash
-    POST https://sandbox.toloka.dev/api/v1/tasks
-    Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+  ```bash
+  POST https://sandbox.toloka.dev/api/v1/tasks
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-    // one task {task data}
+  // one task {task data}
 
-    // or multiple tasks [{task 1}, {task 2},... {task n}]
-    ```
+  // or multiple tasks [{task 1}, {task 2},... {task n}]
+  ```
 
 {% endlist %}
 
@@ -108,7 +108,7 @@ You can use this ID in the future to [get information about the operation](opera
   {
     "pool_id": "1",
     "input_values": {
-      "image_url": "www.images/image1.ru"
+      "image_url": "www.site.com/image1.png"
     },
     "known_solutions": [
       {
@@ -226,7 +226,7 @@ Input data for a task. List of pairs:
   "<ID of field N>": "<value of field N>"
 ```
 ||
-|| **known_solutions[]** {#known} | **array of objects**
+|| **known_solutions[]** | **array of objects**
 
 Correct responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
 
@@ -246,21 +246,21 @@ The default value is 1. ||
 
 Output data values to check. You should specify values for all required output data fields.
 
-{% note warning %}
-
-If this field isn't used in the control task, you shouldn't specify it in the `output_values` parameter.
-
-{% endnote %}
-
 ```json
   "<ID of field 1>": "<correct response>",
   "<ID of field 2>": "<correct response>",
   ...
 ```
-||
-|| **baseline_solutions[]** {#baseline} | **array of objects**
 
-Preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
+{% note info %}
+
+If the output field isn't required in the control task, don't specify it in the `known_solutions[].output_values` parameter.
+
+{% endnote %}
+||
+|| **baseline_solutions[]** | **array of objects**
+
+Preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in [dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL) and [aggregation of results by skill](../../guide/concepts/result-aggregation.md#aggr-by-skill).
 
 Define `output_values` and `confidence_weight` for each preliminary response.
 
@@ -296,7 +296,7 @@ Please note that overlap you set when uploading tasks has priority over the over
 
 {% endnote %}
 ||
-|| **message_on_unknown_solution** {#message} | **string**
+|| **message_on_unknown_solution** | **string**
 
 Hint for the task (for training tasks). ||
 || **infinite_overlap** {#infinite} | **boolean**
@@ -326,7 +326,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 {% list tabs %}
 
-- Task data(async_mode=false)
+- Task data (async_mode=false)
 
   Information about the created task. Besides [parameters](#body) that are set when creating a task, it includes parameters that are assigned to the task automatically:
 
@@ -345,20 +345,20 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 - Information about the operation (async_mode=true)
 
-    ```json
-    {
-      "id": "2ed92b7f-75c0-4771-ae2f-3911232d6d4e",
-      "type": "TASK.BATCH_CREATE",
-      "status": "RUNNING",
-      "submitted": "2020-12-23T16:26:20.131",
-      "progress": 0,
-      "parameters": {
-        "open_pool": false,
-        "allow_defaults": false,
-        "skip_invalid_items": false
-      }
+  ```json
+  {
+    "id": "2ed92b7f-75c0-4771-ae2f-3911232d6d4e",
+    "type": "TASK.BATCH_CREATE",
+    "status": "RUNNING",
+    "submitted": "2020-12-23T16:26:20.131",
+    "progress": 0,
+    "parameters": {
+      "open_pool": false,
+      "allow_defaults": false,
+      "skip_invalid_items": false
     }
-    ```
+  }
+  ```
 
   #|
   || Parameter | Overview ||
@@ -384,7 +384,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   The percentage of the operation completed. ||
   || **parameters** | **object**
 
-  Operation parameters (depending on the operation type). ||
+  The operation parameters. ||
   || **parameters.open_pool** | **boolean**
 
   Open the pool immediately after creating the tasks, if the pool is closed. The default value is `false`. ||
@@ -515,6 +515,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   || **finished** | **string**
 
   The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+  || **parameters** | **object**
+  
+  The operation parameters. ||
   || **parameters.skip_invalid_items** | **boolean**
 
   Validation parameters for JSON objects:
@@ -523,6 +526,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
 
   The default value is `false`. ||
+  || **details** | **object**
+  
+  The operation details. ||
   || **details.total_count** | **string**
 
   The number of tasks in the request. ||
