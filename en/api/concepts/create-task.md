@@ -100,50 +100,115 @@ You can use this ID in the future to [get information about the operation](opera
 
 ## Request body {#body}
 
-```json
-{
-  "pool_id": "1",
-  "input_values": {
-    "image_url": "www.images/image1.ru"
-  },
-  "known_solutions": [
-    {
-      "output_values": {
-        "result": "OK",
-        "like": false
+{% list tabs %}
+
+- One task
+
+  ```json
+  {
+    "pool_id": "1",
+    "input_values": {
+      "image_url": "www.images/image1.ru"
+    },
+    "known_solutions": [
+      {
+        "output_values": {
+          "result": "OK",
+          "like": false
+        },
+        "correctness_weight": 0.8
       },
-      "correctness_weight": 0.8
+      {
+        "output_values": {
+          "result": "OK",
+          "like": true
+        },
+        "correctness_weight": 1
+      }
+    ],
+    "baseline_solutions": [
+      {
+        "output_values": {
+          "result": "OK",
+          "like": false
+        },
+        "confidence_weight": 0.8
+      },
+      {
+        "output_values": {
+          "result": "OK",
+          "like": true
+        },
+        "confidence_weight": 1
+      }
+    ],
+    "message_on_unknown_solution": "The cat is in a good mood.",
+    "infinite_overlap": false,
+    "reserved_for": [],
+    "unavailable_for": []
+  }
+  ```
+
+- Multiple tasks
+
+  ```json
+  [
+    {
+      "pool_id": "1",
+      "input_values": {
+        "image_url": "www.site.com/image1.png"
+      },
+      "known_solutions": [
+        {
+          "output_values": {
+            "result": "OK"
+          },
+          "correctness_weight": 1
+        }
+      ],
+      "baseline_solutions": [
+        {
+          "output_values": {
+            "result": "OK"
+          },
+          "confidence_weight": 1
+        }
+      ],
+      "message_on_unknown_solution": "The cat is in a good mood.",
+      "infinite_overlap": false,
+      "reserved_for": [],
+      "unavailable_for": []
     },
     {
-      "output_values": {
-        "result": "OK",
-        "like": true
+      "pool_id": "1",
+      "input_values": {
+        "image_url": "www.site.com/image2.png"
       },
-      "correctness_weight": 1
+      "known_solutions": [
+        {
+          "output_values": {
+            "result": "BAD"
+          },
+          "correctness_weight": 1
+        }
+      ],
+      "baseline_solutions": [
+        {
+          "output_values": {
+            "result": "BAD"
+          },
+          "confidence_weight": 1
+        }
+      ],
+      "message_on_unknown_solution": "The cat is in a bad mood.",
+      "infinite_overlap": false,
+      "reserved_for": [],
+      "unavailable_for": []
     }
-  ],
-  "baseline_solutions": [
-    {
-      "output_values": {
-        "result": "OK",
-        "like": false
-      },
-      "confidence_weight": 0.8
-    },
-    {
-      "output_values": {
-        "result": "OK",
-        "like": true
-      },
-      "confidence_weight": 1
-    }
-  ],
-  "message_on_unknown_solution": "The cat is in a good mood.",
-  "infinite_overlap": false,
-  "reserved_for": [],
-  "unavailable_for": []
-}
-```
+  ]
+  ```
+
+{% endlist %}
 
 #|
 || Key | Overview ||
@@ -161,9 +226,31 @@ Input data for a task. List of pairs:
   "<ID of field N>": "<value of field N>"
 ```
 ||
+|| **known_solutions[]** {#known} | **array of objects**
+
+Correct responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
+
+You can specify several options for a correct task response.
+
+If one option is more correct than another, you can assign different weights to the response options. To do this, use the `correctness_weight` key. ||
+|| **known_solutions[].correctness_weight** | **float**
+
+The weight of a correct response in the range from 0 to 1.
+
+Lets you count a response as partially correct. This is convenient when there is no single right response to the task.
+
+This works like awarding points: if you need to complete one control task correctly to get a skill (receive 1 point), you may complete one task with a weight of 1 or two tasks with a weight of 0.5 or higher.
+
+The default value is 1. ||
 || **known_solutions[].output_values** | **object \| required**
 
 Output data values to check. You should specify values for all required output data fields.
+
+{% note warning %}
+
+If this field isn't used in the control task, you shouldn't specify it in the `output_values` parameter.
+
+{% endnote %}
 
 ```json
   "<ID of field 1>": "<correct response>",
@@ -171,6 +258,17 @@ Output data values to check. You should specify values for all required output d
   ...
 ```
 ||
+|| **baseline_solutions[]** {#baseline} | **array of objects**
+
+Preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
+
+Define `output_values` and `confidence_weight` for each preliminary response.
+
+For example, you ask Tolokers to label whether an image shows a cat or a dog. Suppose your neural network already determined that the image might show a dog with a probability of 80% and a cat with a probability of 40%. Let's say you set dynamic overlap from 1 to 3 and the minimum response confidence at 85%.
+
+If the Toloker answers "Dog" and the confidence in their response is high, the overlap most likely won't increase because one response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
+
+Can't be used when creating a task suite: an error with code 400 saying `VALUE_NOT_ALLOWED` will be returned to your request. ||
 || **baseline_solutions[].output_values** | **object \| required**
 
 Output data values for preliminary responses.
@@ -198,33 +296,6 @@ Please note that overlap you set when uploading tasks has priority over the over
 
 {% endnote %}
 ||
-|| **known_solutions[]** {#known} | **array of objects**
-
-Correct responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
-
-You can specify several options for a correct task response.
-
-If one option is more correct than another, you can assign different weights to the response options. To do this, use the `correctness_weight` key. ||
-|| **known_solutions[].correctness_weight** | **float**
-
-The weight of a correct response in the range from 0 to 1.
-
-Lets you count a response as partially correct. This is convenient when there is no single right response to the task.
-
-This works like awarding points: if you need to complete one control task correctly to get a skill (receive 1 point), you may complete one task with a weight of 1 or two tasks with a weight of 0.5 or higher.
-
-The default value is 1. ||
-|| **baseline_solutions[]** {#baseline} | **array of objects**
-
-Preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
-
-Define `output_values` and `confidence_weight` for each preliminary response.
-
-For example, you ask Tolokers to label whether an image shows a cat or a dog. Suppose your neural network already determined that the image might show a dog with a probability of 80% and a cat with a probability of 40%. Let's say you set dynamic overlap from 1 to 3 and the minimum response confidence at 85%.
-
-If the Toloker answers "Dog" and the confidence in their response is high, the overlap most likely won't increase because one response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
-
-Can't be used when creating a task suite: an error with code 400 saying `VALUE_NOT_ALLOWED` will be returned to your request. ||
 || **message_on_unknown_solution** {#message} | **string**
 
 Hint for the task (for training tasks). ||

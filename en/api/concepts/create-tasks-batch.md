@@ -220,6 +220,12 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   || **details.failed_count** | **integer**
 
   The number of tasks that didn't upload. ||
+  || **parameters** | **string**
+
+  Parameters of the request. ||
+  || **details** | **string**
+
+  Results of the request. ||
   |#
 
 {% endlist %}
