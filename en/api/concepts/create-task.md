@@ -228,35 +228,18 @@ Input data for a task. List of pairs:
 ||
 || **known_solutions[]** | **array of objects**
 
-Correct responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
+{% include [known-solutions](../_includes/known-solutions.md) %}
 
-You can specify several options for a correct task response.
-
-If one option is more correct than another, you can assign different weights to the response options. To do this, use the `correctness_weight` key. ||
-|| **known_solutions[].correctness_weight** | **float**
-
-The weight of a correct response in the range from 0 to 1.
-
-Lets you count a response as partially correct. This is convenient when there is no single right response to the task.
-
-This works like awarding points: if you need to complete one control task correctly to get a skill (receive 1 point), you may complete one task with a weight of 1 or two tasks with a weight of 0.5 or higher.
-
-The default value is 1. ||
+||
 || **known_solutions[].output_values** | **object \| required**
 
-Output data values to check. You should specify values for all required output data fields.
+{% include [output-values](../_includes/output-values.md) %}
 
-```json
-  "<ID of field 1>": "<correct response>",
-  "<ID of field 2>": "<correct response>",
-  ...
-```
+||
+|| **known_solutions[].correctness_weight** | **float**
 
-{% note info %}
+{% include [correctness-weight](../_includes/correctness-weight.md) %}
 
-If the output field isn't required in the control task, don't specify it in the `known_solutions[].output_values` parameter.
-
-{% endnote %}
 ||
 || **baseline_solutions[]** | **array of objects**
 
