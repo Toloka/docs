@@ -190,6 +190,7 @@ items:
         href: ../api/concepts/create-task.md
       - name: Create multiple tasks
         href: ../api/concepts/create-tasks-batch.md
+        hidden: true
       - name: Get the list of tasks
         href: ../api/concepts/get-tasks-list.md
       - name: Get a task
@@ -206,6 +207,7 @@ items:
         href: ../api/concepts/create-task-suite.md
       - name: Create multiple task suites
         href: ../api/concepts/create-task-suite-batch.md
+        hidden: true
       - name: Get the list of task suites
         href: ../api/concepts/get-task-suite-list.md
       - name: Get a task suite
