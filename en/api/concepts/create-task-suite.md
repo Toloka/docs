@@ -22,27 +22,27 @@ You can add a maximum of 100,000 tasks per minute and a maximum of 2,000,0
 
 - Production version
 
-    ```bash
-    POST https://toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+  ```bash
+  POST https://toloka.dev/api/v1/task-suites
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-    // one task suite {task suite parameters}
+  // one task suite {task suite parameters}
 
-    // or multiple task suites [{task suite 1}, {task suite 2},... {task suite N}]
-    ```
+  // or multiple task suites [{task suite 1}, {task suite 2},... {task suite N}]
+  ```
 
 - Sandbox
 
-    ```bash
-    POST https://sandbox.toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+  ```bash
+  POST https://sandbox.toloka.dev/api/v1/task-suites
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-    // one task suite {task suite parameters}
+  // one task suite {task suite parameters}
 
-    // or multiple task suites [{task suite 1}, {task suite 2},... {task suite N}]
-    ```
+  // or multiple task suites [{task suite 1}, {task suite 2},... {task suite N}]
+  ```
 
 {% endlist %}
 
@@ -99,58 +99,162 @@ You can use this ID in the future to [get information about the operation](ope
 
 ## Request body {#body}
 
-```json
-{
-  "id": "63614047-38c3-4ad4-8a86-99c5c651a9b8",
-  "pool_id": "1",
-  "tasks": [
-    {
-      "id": "49a333ea-2728-4c1c-ab1f-8ab1bfe4ee7e",
-      "origin_task_id": "e3da7fe1-828d-4d9c-b49d-42c0eb5fcfde",
-      "input_values": {
-        "image_url": "www.image1.ru"
-      },
-      "known_solutions": [
-        {
-          "correctness_weight": 0.95,
-          "output_values": {
-            "colour": "black"
+{% list tabs %}
+
+- One task suite
+
+  ```json
+  {
+    "pool_id": "1",
+    "tasks": [
+      {
+        "input_values": {
+          "image_url": "www.site.com/image1.png"
+        },
+        "known_solutions": [
+          {
+            "output_values": {
+              "colour": "black"
+            },
+            "correctness_weight": 0.95
+          },
+          {
+            "output_values": {
+              "colour": "gray"
+            },
+            "correctness_weight": 0.7
           }
+        ],
+        "message_on_unknown_solution": "The elephant is black"
+      },
+      {
+        "input_values": {
+          "image_url": "www.site.com/image2.png"
+        },
+        "known_solutions": [
+          {
+            "correctness_weight": 1,
+            "output_values": {
+              "colour": "white"
+            }
+          }
+        ],
+        "message_on_unknown_solution": "The elephant is white"
+      }
+    ],
+    "infinite_overlap": false,
+    "remaining_overlap": 3,
+    "reserved_for": [],
+    "unavailable_for": [],
+    "issuing_order_override": 3,
+    "mixed": true,
+    "automerged": false,
+    "created": "2016-04-18T12:43:04.988"
+  }
+  ```
+
+- Multiple task suites
+
+  ```json
+  [
+    {
+      "pool_id": "1",
+      "tasks": [
+        {
+          "input_values": {
+            "image_url": "www.site.com/image1.png"
+          },
+          "known_solutions": [
+            {
+              "output_values": {
+                "colour": "black"
+              },
+              "correctness_weight": 0.95
+            },
+            {
+              "output_values": {
+                "colour": "gray"
+              },
+              "correctness_weight": 0.7
+            }
+          ],
+          "message_on_unknown_solution": "The elephant is black"
         },
         {
-          "correctness_weight": 0.7,
-          "output_values": {
-            "colour": "gray"
-          }
+          "input_values": {
+            "image_url": "www.site.com/image2.png"
+          },
+          "known_solutions": [
+            {
+              "correctness_weight": 1,
+              "output_values": {
+                "colour": "white"
+              }
+            }
+          ],
+          "message_on_unknown_solution": "The elephant is white"
         }
       ],
-      "message_on_unknown_solution": "The elephant is black"
+      "infinite_overlap": false,
+      "remaining_overlap": 3,
+      "reserved_for": [],
+      "unavailable_for": [],
+      "issuing_order_override": 3,
+      "mixed": true,
+      "automerged": false,
+      "created": "2016-04-18T12:43:04.988"
     },
     {
-      "input_values": {
-        "image_url": "www.image2.ru"
-      },
-      "known_solutions": [
+      "pool_id": "1",
+      "tasks": [
         {
-          "correctness_weight": 1,
-          "output_values": {
-            "colour": "white"
-          }
+          "input_values": {
+            "image_url": "www.site.com/image3.png"
+          },
+          "known_solutions": [
+            {
+              "output_values": {
+                "colour": "black"
+              },
+              "correctness_weight": 0.95
+            },
+            {
+              "output_values": {
+                "colour": "gray"
+              },
+              "correctness_weight": 0.7
+            }
+          ],
+          "message_on_unknown_solution": "The elephant is black"
+        },
+        {
+          "input_values": {
+            "image_url": "www.site.com/image4.png"
+          },
+          "known_solutions": [
+            {
+              "correctness_weight": 1,
+              "output_values": {
+                "colour": "white"
+              }
+            }
+          ],
+          "message_on_unknown_solution": "The elephant is white"
         }
       ],
-      "message_on_unknown_solution": "The elephant is white"
+      "infinite_overlap": false,
+      "remaining_overlap": 3,
+      "reserved_for": [],
+      "unavailable_for": [],
+      "issuing_order_override": 3,
+      "mixed": true,
+      "automerged": false,
+      "created": "2016-04-18T12:43:04.988"
     }
-  ],
-  "infinite_overlap": false,
-  "remaining_overlap": 3,
-  "reserved_for": [],
-  "unavailable_for": [],
-  "issuing_order_override": 3,
-  "mixed": true,
-  "automerged": false,
-  "created": "2016-04-18T12:43:04.988"
-}
-```
+  ]
+  ```
+
+{% endlist %}
 
 #|
 || Parameter | Overview ||
@@ -171,7 +275,7 @@ Input data for a task. List of pairs:
     "<ID of field N>": "<value of field N>"
 ```
 ||
-|| **overlap** {#overlap} | **integer \| required if**
+|| **overlap** | **integer \| required if**
 
 Required if the parameter is not used when creating a task suite `allow_defaults=true`, and the overlap is not specified in the pool parameters (in the [defaults.​default_​overlap_for_​new_task_suites](create-pool.md#default_overlap_for_new_task_suites) key).
 
@@ -193,23 +297,21 @@ The longitude of the point on the map for the task suite. ||
 Required if tasks are selected on the map. Otherwise, not used.
 
 The latitude of the point on the map for the task suite. ||
-|| **tasks[].known_solutions** | **object**
+|| **tasks[].known_solutions[]** | **array of objects**
 
-Responses and hints for control tasks and training tasks. ||
-|| **tasks[].known_solutions.output_values** | **object**
+{% include [known-solutions](../_includes/known-solutions.md) %}
 
-Correct responses in a task (for control tasks). If multiple correct responses are possible, define `output_values` for each possible response and set the weight for the correct response (the `correctness_weight` key).
-
-```json
-    "<ID of field 1>": "<correct response>",
-    "<ID of field 2>": "<correct response>",
-    ...
-    "<ID of field N>": "<correct response N>"
-```
 ||
-|| **tasks[].known_solutions.correctness_weight** | **float**
+|| **tasks[].known_solutions[].output_values** | **object**
 
-The weight of a correct response. Allows you to set multiple versions of correct responses and rank them by correctness. For example, if a correct response is weighted 0.5, it counts as half of a mistake for the Toloker. The more correct the response in `correctValues`, the higher its weight. ||
+{% include [output-values](../_includes/output-values.md) %}
+
+||
+|| **tasks[].known_solutions[].correctness_weight** | **float**
+
+{% include [correctness-weight](../_includes/correctness-weight.md) %}
+
+||
 || **tasks[].message_on_unknown_solution** | **string**
 
 Hint for the task (for training tasks). ||
@@ -289,89 +391,92 @@ The response format depends on the value of [async_mode](#async_mode).
 
 - The task suites (async_mode=false)
 
-    ```json
-    {
-      "items": {
-        "0": {<task suite>},
-        "2": {<task suite>}, ...
-        "<n>": {<task suite N>}
-      },
-      "validation_errors": {
-        "1": {<validation errors for the task suite>},
-        "3": {<validation errors for the task suite>}, ...
-        "<n>": {<validation errors for task suite N>}
-      }
+  ```json
+  {
+    "items": {
+      "0": {<task suite>},
+      "2": {<task suite>}, ...
+      "<n>": {<task suite N>}
+    },
+    "validation_errors": {
+      "1": {<validation errors for the task suite>},
+      "3": {<validation errors for the task suite>}, ...
+      "<n>": {<validation errors for task suite N>}
     }
-    ```
+  }
+  ```
 
-    #|
-    || Parameter | Overview ||
-    || **items** | **object**
+  #|
+  || Parameter | Overview ||
+  || **items** | **object**
 
-    An object with the created task suites. ||
-    || **validation_errors** | **object**
+  An object with the created task suites. ||
+  || **validation_errors** | **object**
 
-    An object with the errors in task suites. Returned if the request has the parameter `skip_invalid_items=true`. ||
-    || **\<n\>** | **object**
+  An object with the errors in task suites. Returned if the request has the parameter `skip_invalid_items=true`. ||
+  || **\<n\>** | **object**
 
-    Sequential number of the task suite in the array (starting from 0). ||
-    |#
+  Sequential number of the task suite in the array (starting from 0). ||
+  |#
 
 - Information about the operation (async_mode=true)
 
-    ```json
-    {
-      "id": "26e130ad3652443a3dc5094791e48ef9",
-      "type": "TASK_SUITE.BATCH.CREATE",
-      "status": "FAIL",
-      "submitted": "2015-12-13T23:32:01",
-      "started": "2015-12-13T23:33:00",
-      "finished": "2015-12-13T23:34:12",
-      "details": {
-        "success_count": 0,
-        "failed_count": 2
-      }
+  ```json
+  {
+    "id": "26e130ad3652443a3dc5094791e48ef9",
+    "type": "TASK_SUITE.BATCH.CREATE",
+    "status": "FAIL",
+    "submitted": "2015-12-13T23:32:01",
+    "started": "2015-12-13T23:33:00",
+    "finished": "2015-12-13T23:34:12",
+    "details": {
+      "success_count": 0,
+      "failed_count": 2
     }
-    ```
+  }
+  ```
 
-    #|
-    || Parameter | Overview ||
-    || **id** | **string**
+  #|
+  || Parameter | Overview ||
+  || **id** | **string**
 
-    Operation ID. ||
-    || **type** | **string**
+  Operation ID. ||
+  || **type** | **string**
 
-    Operation type:
+  Operation type:
 
-    - `POOL.OPEN` — Opening a pool.
-    - `POOL.CLOSE` — Closing a pool.
-    - `PROJECT.ARCHIVE` — Archiving a project.
-    - `POOL.ARCHIVE` — Archiving a pool.
-    - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites. ||
-    || **status** | **string**
+  - `POOL.OPEN` — Opening a pool.
+  - `POOL.CLOSE` — Closing a pool.
+  - `PROJECT.ARCHIVE` — Archiving a project.
+  - `POOL.ARCHIVE` — Archiving a pool.
+  - `TASK_SUITE.BATCH_CREATE` — Creating multiple task suites. ||
+  || **status** | **string**
 
-    The status of the operation:
+  The status of the operation:
 
-    - `PENDING` — Not started yet.
-    - `RUNNING` — In progress.
-    - `SUCCESS` — Completed successfully.
-    - `FAIL` — Not completed. ||
-    || **submitted** | **string**
+  - `PENDING` — Not started yet.
+  - `RUNNING` — In progress.
+  - `SUCCESS` — Completed successfully.
+  - `FAIL` — Not completed. ||
+  || **submitted** | **string**
 
-    The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
-    || **started** | **string**
+  The UTC date and time the request was sent, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+  || **started** | **string**
 
-    The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
-    || **finished** | **string**
+  The UTC date and time the operation started, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+  || **finished** | **string**
 
-    The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
-    || **details. success_count** | **integer**
+  The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+  || **details** | **object**
+  
+  The operation details. ||
+  || **details. success_count** | **integer**
 
-    The number of task suites uploaded. ||
-    || **details. failed_count** | **integer**
+  The number of task suites uploaded. ||
+  || **details. failed_count** | **integer**
 
-    The number of task suites that didn't upload. ||
-    |#
+  The number of task suites that didn't upload. ||
+  |#
 
 {% endlist %}
 

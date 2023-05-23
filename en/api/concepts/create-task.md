@@ -22,27 +22,27 @@ You can add a maximum of 200,000 tasks per minute and a maximum of 4,000,000 t
 
 - Production version
 
-    ```bash
-    POST https://toloka.dev/api/v1/tasks
-    Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+  ```bash
+  POST https://toloka.dev/api/v1/tasks
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-    // one task {task data}
+  // one task {task data}
 
-    // or multiple tasks [{task 1}, {task 2},... {task n}]
-    ```
+  // or multiple tasks [{task 1}, {task 2},... {task n}]
+  ```
 
 - Sandbox
 
-    ```bash
-    POST https://sandbox.toloka.dev/api/v1/tasks
-    Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+  ```bash
+  POST https://sandbox.toloka.dev/api/v1/tasks
+  Authorization: OAuth <OAuth token>
+  Content-Type: application/JSON
 
-    // one task {task data}
+  // one task {task data}
 
-    // or multiple tasks [{task 1}, {task 2},... {task n}]
-    ```
+  // or multiple tasks [{task 1}, {task 2},... {task n}]
+  ```
 
 {% endlist %}
 
@@ -100,50 +100,115 @@ You can use this ID in the future to [get information about the operation](opera
 
 ## Request body {#body}
 
-```json
-{
-  "pool_id": "1",
-  "input_values": {
-    "image_url": "www.images/image1.ru"
-  },
-  "known_solutions": [
-    {
-      "output_values": {
-        "result": "OK",
-        "like": false
+{% list tabs %}
+
+- One task
+
+  ```json
+  {
+    "pool_id": "1",
+    "input_values": {
+      "image_url": "www.site.com/image1.png"
+    },
+    "known_solutions": [
+      {
+        "output_values": {
+          "result": "OK",
+          "like": false
+        },
+        "correctness_weight": 0.8
       },
-      "correctness_weight": 0.8
+      {
+        "output_values": {
+          "result": "OK",
+          "like": true
+        },
+        "correctness_weight": 1
+      }
+    ],
+    "baseline_solutions": [
+      {
+        "output_values": {
+          "result": "OK",
+          "like": false
+        },
+        "confidence_weight": 0.8
+      },
+      {
+        "output_values": {
+          "result": "OK",
+          "like": true
+        },
+        "confidence_weight": 1
+      }
+    ],
+    "message_on_unknown_solution": "The cat is in a good mood.",
+    "infinite_overlap": false,
+    "reserved_for": [],
+    "unavailable_for": []
+  }
+  ```
+
+- Multiple tasks
+
+  ```json
+  [
+    {
+      "pool_id": "1",
+      "input_values": {
+        "image_url": "www.site.com/image1.png"
+      },
+      "known_solutions": [
+        {
+          "output_values": {
+            "result": "OK"
+          },
+          "correctness_weight": 1
+        }
+      ],
+      "baseline_solutions": [
+        {
+          "output_values": {
+            "result": "OK"
+          },
+          "confidence_weight": 1
+        }
+      ],
+      "message_on_unknown_solution": "The cat is in a good mood.",
+      "infinite_overlap": false,
+      "reserved_for": [],
+      "unavailable_for": []
     },
     {
-      "output_values": {
-        "result": "OK",
-        "like": true
+      "pool_id": "1",
+      "input_values": {
+        "image_url": "www.site.com/image2.png"
       },
-      "correctness_weight": 1
+      "known_solutions": [
+        {
+          "output_values": {
+            "result": "BAD"
+          },
+          "correctness_weight": 1
+        }
+      ],
+      "baseline_solutions": [
+        {
+          "output_values": {
+            "result": "BAD"
+          },
+          "confidence_weight": 1
+        }
+      ],
+      "message_on_unknown_solution": "The cat is in a bad mood.",
+      "infinite_overlap": false,
+      "reserved_for": [],
+      "unavailable_for": []
     }
-  ],
-  "baseline_solutions": [
-    {
-      "output_values": {
-        "result": "OK",
-        "like": false
-      },
-      "confidence_weight": 0.8
-    },
-    {
-      "output_values": {
-        "result": "OK",
-        "like": true
-      },
-      "confidence_weight": 1
-    }
-  ],
-  "message_on_unknown_solution": "The cat is in a good mood.",
-  "infinite_overlap": false,
-  "reserved_for": [],
-  "unavailable_for": []
-}
-```
+  ]
+  ```
+
+{% endlist %}
 
 #|
 || Key | Overview ||
@@ -161,16 +226,32 @@ Input data for a task. List of pairs:
   "<ID of field N>": "<value of field N>"
 ```
 ||
+|| **known_solutions[]** | **array of objects**
+
+{% include [known-solutions](../_includes/known-solutions.md) %}
+
+||
 || **known_solutions[].output_values** | **object \| required**
 
-Output data values to check. You should specify values for all required output data fields.
+{% include [output-values](../_includes/output-values.md) %}
 
-```json
-  "<ID of field 1>": "<correct response>",
-  "<ID of field 2>": "<correct response>",
-  ...
-```
 ||
+|| **known_solutions[].correctness_weight** | **float**
+
+{% include [correctness-weight](../_includes/correctness-weight.md) %}
+
+||
+|| **baseline_solutions[]** | **array of objects**
+
+Preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in [dynamic overlap](../../glossary.md#dynamic-overlap) (also known as incremental relabeling or IRL) and [aggregation of results by skill](../../guide/concepts/result-aggregation.md#aggr-by-skill).
+
+Define `output_values` and `confidence_weight` for each preliminary response.
+
+For example, you ask Tolokers to label whether an image shows a cat or a dog. Suppose your neural network already determined that the image might show a dog with a probability of 80% and a cat with a probability of 40%. Let's say you set dynamic overlap from 1 to 3 and the minimum response confidence at 85%.
+
+If the Toloker answers "Dog" and the confidence in their response is high, the overlap most likely won't increase because one response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
+
+Can't be used when creating a task suite: an error with code 400 saying `VALUE_NOT_ALLOWED` will be returned to your request. ||
 || **baseline_solutions[].output_values** | **object \| required**
 
 Output data values for preliminary responses.
@@ -198,34 +279,7 @@ Please note that overlap you set when uploading tasks has priority over the over
 
 {% endnote %}
 ||
-|| **known_solutions[]** {#known} | **array of objects**
-
-Correct responses to [control](../../glossary.md#control-task) and [training](../../glossary.md#training-task) tasks.
-
-You can specify several options for a correct task response.
-
-If one option is more correct than another, you can assign different weights to the response options. To do this, use the `correctness_weight` key. ||
-|| **known_solutions[].correctness_weight** | **float**
-
-The weight of a correct response in the range from 0 to 1.
-
-Lets you count a response as partially correct. This is convenient when there is no single right response to the task.
-
-This works like awarding points: if you need to complete one control task correctly to get a skill (receive 1 point), you may complete one task with a weight of 1 or two tasks with a weight of 0.5 or higher.
-
-The default value is 1. ||
-|| **baseline_solutions[]** {#baseline} | **array of objects**
-
-Preliminary responses. This data simulates Toloker responses when calculating `confidence` in a response. It is used in dynamic overlap (also known as incremental relabeling or IRL) and aggregation of results by skill.
-
-Define `output_values` and `confidence_weight` for each preliminary response.
-
-For example, you ask Tolokers to label whether an image shows a cat or a dog. Suppose your neural network already determined that the image might show a dog with a probability of 80% and a cat with a probability of 40%. Let's say you set dynamic overlap from 1 to 3 and the minimum response confidence at 85%.
-
-If the Toloker answers "Dog" and the confidence in their response is high, the overlap most likely won't increase because one response is enough. If the Toloker answers "Cat", the confidence is most likely not high enough and the overlap will increase further.
-
-Can't be used when creating a task suite: an error with code 400 saying `VALUE_NOT_ALLOWED` will be returned to your request. ||
-|| **message_on_unknown_solution** {#message} | **string**
+|| **message_on_unknown_solution** | **string**
 
 Hint for the task (for training tasks). ||
 || **infinite_overlap** {#infinite} | **boolean**
@@ -255,7 +309,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 {% list tabs %}
 
-- Task data(async_mode=false)
+- Task data (async_mode=false)
 
   Information about the created task. Besides [parameters](#body) that are set when creating a task, it includes parameters that are assigned to the task automatically:
 
@@ -274,20 +328,20 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
 
 - Information about the operation (async_mode=true)
 
-    ```json
-    {
-      "id": "2ed92b7f-75c0-4771-ae2f-3911232d6d4e",
-      "type": "TASK.BATCH_CREATE",
-      "status": "RUNNING",
-      "submitted": "2020-12-23T16:26:20.131",
-      "progress": 0,
-      "parameters": {
-        "open_pool": false,
-        "allow_defaults": false,
-        "skip_invalid_items": false
-      }
+  ```json
+  {
+    "id": "2ed92b7f-75c0-4771-ae2f-3911232d6d4e",
+    "type": "TASK.BATCH_CREATE",
+    "status": "RUNNING",
+    "submitted": "2020-12-23T16:26:20.131",
+    "progress": 0,
+    "parameters": {
+      "open_pool": false,
+      "allow_defaults": false,
+      "skip_invalid_items": false
     }
-    ```
+  }
+  ```
 
   #|
   || Parameter | Overview ||
@@ -313,7 +367,7 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   The percentage of the operation completed. ||
   || **parameters** | **object**
 
-  Operation parameters (depending on the operation type). ||
+  The operation parameters. ||
   || **parameters.open_pool** | **boolean**
 
   Open the pool immediately after creating the tasks, if the pool is closed. The default value is `false`. ||
@@ -444,6 +498,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   || **finished** | **string**
 
   The UTC date and time the operation was completed, in ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`. ||
+  || **parameters** | **object**
+  
+  The operation parameters. ||
   || **parameters.skip_invalid_items** | **boolean**
 
   Validation parameters for JSON objects:
@@ -452,6 +509,9 @@ Depending on the [async_mode](#async_mode) value in the request, the response co
   - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
 
   The default value is `false`. ||
+  || **details** | **object**
+  
+  The operation details. ||
   || **details.total_count** | **string**
 
   The number of tasks in the request. ||
