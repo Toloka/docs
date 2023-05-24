@@ -10,9 +10,9 @@ If your company uses SSO authentication method, each SSO user can generate their
 
 ## Generating tokens
 
-1. Go to **Profile → Integrations** (or click [this link](https://platform.toloka.ai/requester/profile/integration)). Click **![Plus sign](../_images/plus-sign.svg) Add token**:
+1. Go to **Profile → Integrations** (or click [this link](https://platform.toloka.ai/requester/profile/integration)). Click **![Plus sign](../_images/plus-sign.svg) Generate token**:
 
-    ![Add token](../_images/sso/add-token.png =700x)
+    ![Generate token](../_images/sso/add-token.png =700x)
 
 1. Enter a unique name or description for the token. Uniqueness is not required, but it will allow you to distinguish this token in case you have several ones. Click **Generate**:
 
