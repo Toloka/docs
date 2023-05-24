@@ -34,7 +34,7 @@ If your company uses SSO authentication method, each SSO user can generate their
 
     Here you can view the details about your generated tokens: their names, first characters, creation date, and usage information.
 
-    Click ![Delete button](../_images/delete-token.svg) in the token upper-right area to delete it.
+    Click ![Delete button](../_images/delete-token.svg) in the token upper-right corner to delete it.
 
 {% note info %}
 
