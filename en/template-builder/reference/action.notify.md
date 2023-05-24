@@ -4,13 +4,12 @@ The component creates a message in the lower-left corner of the screen.
 
 You can set the how long the message will be active, the delay before displaying it, and the background color.
 
-[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/n-FbOGzS4DZfHW)
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/k5MTl8tI4DbqYH)
 
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
 - [view.text](view.text.md): Displays a text.
-- [data.input](../operations/work-with-data.md): The input data. For example, links to images that will be shown to Tolokers.
 - [view.action-button](view.action-button.md): Displays a button that calls an action.
 
 {% endcut %}
