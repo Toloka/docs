@@ -25,9 +25,9 @@ Working with the Toloka API requires an OAuth access token. [Register](../../gui
 
 - In the production version of Toloka: [https://platform.toloka.ai/requester/profile/integration](https://platform.toloka.ai/requester/profile/integration).
 
-[![Accessing the API](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png)
+![List of tokens](../../guide/_images/sso/token-list.png =700x)
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+Refer to the [Generating API tokens](../../guide/concepts/api-token.md) section to learn how to issue OAuth tokens.
 
 ## Troubleshooting {#troubleshooting}
 
@@ -36,3 +36,5 @@ Working with the Toloka API requires an OAuth access token. [Register](../../gui
 {% include [troubleshooting-access-denied](../../guide/_includes/troubleshooting/api/access-denied.md) %}
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}
+
+{% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}

@@ -9,6 +9,9 @@ items:
         href: guide/concepts/overview.md
       - name: Registration
         href: guide/concepts/access.md
+      - name: Migrating to new social authorization
+        href: guide/concepts/migrate-new-auth.md
+        hidden: true
       - name: Your first project
         href: guide/concepts/first-project.md
       - name: Data security
@@ -26,6 +29,9 @@ items:
         href: guide/concepts/save-money.md
       - name: Sandbox
         href: guide/concepts/sandbox.md
+      - name: Generating API tokens
+        href: guide/concepts/api-token.md
+        hidden: true
   - name: Tutorials
     items:
       - name: List of examples
@@ -387,6 +393,9 @@ items:
         items:
           - name: Editing the profile
             href: guide/concepts/edit-profile.md
+          - name: Authorization methods
+            href: guide/concepts/authorization-methods.md
+            hidden: true
           - name: Notifications
             href: guide/concepts/notifications.md
           - name: About money
@@ -401,7 +410,7 @@ items:
                 href: guide/concepts/refund.md
               - name: Payment documents
                 href: guide/concepts/documents.md
-          - name: Shared access to the requester's account
+          - name: Shared access to the account
             href: guide/concepts/multiple-access.md
   - name: Useful recommendations
     items:
@@ -555,6 +564,4 @@ items:
     items:
       - name: Toloka SSO authentication
         href: guide/sso/authentication.md
-      - name: Generating API tokens
-        href: guide/sso/api-token.md
 base: en

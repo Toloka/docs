@@ -6,17 +6,19 @@ Before you start using Toloka-Kit library, register in either the production or 
 
 1. [Register](../guide/concepts/access.md) in Toloka as a requester.
 
-1. Choose the backend:
+1. Toloka has two versions:
 
-    - The [production backend](https://platform.toloka.ai/for-requesters/) is used by default in [this example](./recipes/learn-basics.md).
+    - The [production](https://platform.toloka.ai/for-requesters/) version is used by default in [this example](./recipes/learn-basics.md).
 
-    - The [sandbox backend](https://platform.sandbox.toloka.ai/for-requesters/) is a testing environment for Toloka. [Learn more](../guide/concepts/sandbox.md)
+    - The [sandbox](https://platform.sandbox.toloka.ai/for-requesters/) version is a testing environment for Toloka. [Learn more](../guide/concepts/sandbox.md)
 
 ## Getting OAuth token {#oauth-token}
 
-Get an OAuth token for your version. Go to **Profile** → **Integrations** → **Get OAuth Token**:
+Get an OAuth token for your version. Go to **Profile → Integrations** (or click [this link](https://platform.toloka.ai/requester/profile/integration)):
 
-[![How to get an OAuth token](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/get-oauth-token.png)
+![List of tokens](../guide/_images/sso/token-list.png =700x)
+
+Refer to the [Generating API tokens](../guide/concepts/api-token.md) section to learn how to issue OAuth tokens.
 
 ## Top up account {#top-up}
 
@@ -27,4 +29,4 @@ If you're going to use the production version, [add funds](../guide/concepts/ref
 - [Install Toloka-Kit library](./quick-start.md)
 - [Start your first simple project](./recipes/learn-basics.md)
 
-{% include [image-styles](../../_includes/image-styles.md) %}
+{% include [image-styles-internal](../../_includes/image-styles-internal.md) %}
