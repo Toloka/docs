@@ -28,7 +28,7 @@ By default, if the component returns `false`, this result will not be added to t
 #|
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "field.checkbox-group" | Set component type. ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | If `true`, the options are inactive. ||
 || `hint` | _string_ | Hint text. ||

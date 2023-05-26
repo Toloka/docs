@@ -21,7 +21,7 @@ To prevent a Toloker from adding too many list items, set the maximum list lengt
 #|
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "field.list" | Set component type. ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `addedItems` | _array_ | – ||
 || `addedItems[]` | _view_ | – ||

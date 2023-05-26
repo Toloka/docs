@@ -13,7 +13,7 @@ You can also set up validation, for example, disable negative or fractional numb
 #|
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "field.number" | Set component type. ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
 || `maximum` | _integer_ | Maximum number that can be entered. ||
