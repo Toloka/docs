@@ -18,7 +18,7 @@ If you need to add a group of checkboxes, use [field.checkbox-group](field.check
 #|
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "field.checkbox" | Set component type. ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | Property that disables the component. If `true`, the component will be unavailable. ||
 || `hint` | _string_ | Hint text. ||

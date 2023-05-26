@@ -13,7 +13,7 @@ The button size depends on the length of the text.
 #|
 || **Name** | **Type** | **Description** ||
 || `type`<span style="color: red">\*</span> | "field.button-radio" | Set component type. ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | This property prevents clicking the button. If the value is `true`, the button is not active (a Toloker will not be able to click it). ||
 || `hint` | _string_ | Hint text. ||
