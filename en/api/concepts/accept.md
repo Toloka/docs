@@ -42,7 +42,7 @@ To resend rejected tasks to be completed by other Tolokers, add a quality contro
 
 Parameter | Overview
 ----- | -----
-**task_suite_assignment_id** | ID of the task suite assignment.
+**task_suite_assignment_id** | ID of the assignment.
 
 ## Headers {#headers}
 

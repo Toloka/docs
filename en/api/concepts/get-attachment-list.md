@@ -53,7 +53,7 @@ Title | Overview
 Pool ID. ||
 || **assignment_id** | **string**
 
-ID of the task suite assignment. ||
+ID of the assignment. ||
 || **name** | **string**
 
 File name. ||

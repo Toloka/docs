@@ -76,7 +76,7 @@ Toloker ID. ||
 
 Parameters to sort by:
 
-- `id` — ID of the task suite assignment.
+- `id` — ID of the assignment.
 - `created` — The date the task suite was assigned.
 - `submitted` — The date the task suite was completed.
 - `skipped` — The date the task suite was skipped.
@@ -144,7 +144,7 @@ You can set up the display of the list of responses in parts (for example, 10 re
 ## Response {#response}
 
 ```json
-{"items" : [{task suite #1}, {task suite #2}, ... {task suite #n}], "has_more": true}
+{"items" : [{response #1}, {response #2}, ... {response #n}], "has_more": true}
 ```
 
 #|

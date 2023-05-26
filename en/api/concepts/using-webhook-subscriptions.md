@@ -93,7 +93,7 @@ ID of the pool that the subscription was created for. ||
 ID of a task suite. ||
 || **assignment_id** | **string**
 
-ID of the task suite assignment to a Toloker. ||
+ID of the assignment to a Toloker. ||
 || **webhook_subscription_id** | **string**
 
 ID of the subscription. ||
@@ -161,7 +161,7 @@ Event type.
 Possible value: `DYNAMIC_OVERLAP_COMPLETED` — An aggregated score appeared after dynamic overlap. ||
 || **assignment_ids[]** | **array of strings**
 
-IDs of task suite assignments to Tolokers. ||
+IDs of assignments to Tolokers. ||
 || **output_values[]** | **array of objects**
 
 Output data fields that contain the task text (`field_one`) and response. ||

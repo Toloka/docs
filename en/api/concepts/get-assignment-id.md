@@ -34,7 +34,7 @@ Gets the properties of a response.
 
 Parameter | Overview
 ----- | -----
-**response_id** | ID of the task suite assignment to a Toloker.
+**id** | ID of the response from a Toloker.
 
 ## Headers {#headers}
 
@@ -85,7 +85,7 @@ Title | Overview
 || Parameter | Overview ||
 || **id** | **string**
 
-ID of the task suite assignment to a Toloker. ||
+ID of the assignment to a Toloker. ||
 || **task_suite_id** | **string**
 
 ID of a task suite. ||
