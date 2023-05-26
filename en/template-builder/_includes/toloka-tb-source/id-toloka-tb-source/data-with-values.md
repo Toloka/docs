@@ -1,1 +1,1 @@
-Data with values that will be processed or changed. [Learn more](../operations/work-with-data.md) about working with data.
+Data with values that will be processed or changed. [Learn more](../../../operations/work-with-data.md) about working with data.
