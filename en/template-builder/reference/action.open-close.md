@@ -11,14 +11,12 @@ This component changes the display mode of another component by opening or closi
 
 - [layout.sidebar](layout.sidebar.md): Lets you place the main content block and an adjacent panel with controls on a page.
 - [view.list](view.list.md): Displays data in a list.
+- [view.collapse](view.collapse.md): Displays an expandable block.
 - [view.text](view.text.md): Displays a text.
 - [view.image](view.image.md): Displays an image.
-- [view.collapse](view.collapse.md): Displays an expandable block.
 - [view.action-button](view.action-button.md): Displays a button that calls an action.
-- [action.notify](action.notify.md): Adds a component for selecting one value out of several options.
 
 {% endcut %}
-
 
 ## Component properties {#properties}
 

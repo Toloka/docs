@@ -1,6 +1,6 @@
 # action.bulk
 
-Use this component to call multiple actions at the same time, like to show more than one notification when a button is clicked.
+Use this component to call multiple [actions](actions.md) at the same time, like to show more than one notification when a button is clicked.
 
 Actions are invoked in the order in which they are listed. This means that if two actions write a value to the same variable, the variable will always have the second value.
 
@@ -11,7 +11,7 @@ Actions are invoked in the order in which they are listed. This means that if tw
 - [view.list](view.list.md): Displays data in a list.
 - [view.text](view.text.md): Displays a text.
 - [view.action-button](view.action-button.md): Displays a button that calls an action.
-- [action.notify](action.notify.md): Adds a component for selecting one value out of several options.
+- [action.notify](action.notify.md): Adds a component that creates a message in the lower-left corner of the screen.
 
 {% endcut %}
 
