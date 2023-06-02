@@ -1,6 +1,6 @@
 To remove a social account from the list of the ones associated with your Toloka profile:
 
-1. Go to the **Profile** tab (or click [this link](https://platform.toloka.ai/requester/profile)). Scroll down to the **Authorization methods** section:
+1. Go to the [Profile](https://platform.toloka.ai/requester/profile) tab. Scroll down to the **Authorization methods** section:
 
     ![Remove social account](../_images/register/remove-social-account.png =433x)
 
@@ -10,6 +10,6 @@ The social service will be no longer associated with your Toloka account and you
 
 {% note info %}
 
-You must have at least one social account connected to your Toloka profile. For example, if you want to use Google account instead of GitHub, first connect the new account (GitHub) before you can remove the old one (Google).
+You must have at least one social account connected to your Toloka profile. For example, if you want to use Google account instead of GitHub, first connect the new account (Google) before you can remove the old one (GitHub).
 
 {% endnote %}

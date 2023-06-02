@@ -1,4 +1,4 @@
-1. Go to the **Profile** tab (or click [this link](https://platform.toloka.ai/requester/profile)). Scroll down to the **Authorization methods** section:
+1. Go to the [Profile](https://platform.toloka.ai/requester/profile) tab. Scroll down to the **Authorization methods** section:
 
     ![Update your authorization method](../_images/register/migration-settings.png =433x)
 
