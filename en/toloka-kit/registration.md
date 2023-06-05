@@ -14,7 +14,7 @@ Before you start using Toloka-Kit library, register in either the production or 
 
 ## Getting OAuth token {#oauth-token}
 
-Get an OAuth token for your version. Go to **Profile → Integrations** (or click [this link](https://platform.toloka.ai/requester/profile/integration)):
+Get an OAuth token for your version. Go to [Profile → Integrations](https://platform.toloka.ai/requester/profile/integration):
 
 ![List of tokens](../guide/_images/sso/token-list.png =700x)
 

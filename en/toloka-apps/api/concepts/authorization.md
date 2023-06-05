@@ -14,7 +14,7 @@ Authorization: OAuth <OAuth token>
 
 - [Register](../../../guide/concepts/access.md) in Toloka.
 
-- Go to **Profile → Integrations** (or click [this link](https://platform.toloka.ai/requester/profile/integration)):
+- Go to [Profile → Integrations](https://platform.toloka.ai/requester/profile/integration):
 
 ![List of tokens](../../../guide/_images/sso/token-list.png =700x)
 
