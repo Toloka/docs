@@ -1,48 +1,12 @@
 # Yandex Disk
 
-{% note info %}
-
-You can use any photo hosting service to add a small number of images, such as [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}). This way you can quickly get direct links to your images to add them to the task file or instructions.
-
-{% endnote %}
-
-If your tasks require images or other files, upload them to [Yandex Disk]({{ yadisk }}). You can only use files from Yandex Disk if it's linked to the same account you are using in Toloka.
+{% include [yandex-disk-warning](../../_includes/yandex-disk-warning.md) %}
 
 To use files from Yandex Disk in tasks:
-
-1. [Connect Yandex Disk](#connect).
 
 1. [Add links to files to the task interface](#interface).
 
 1. [Add links to files to the instructions](#instruction).
-
-## Connect Yandex Disk {#connect}
-
-To use Yandex Disk as a data source:
-
-1. Click **Add Ya.Disk** on the [Integration]({{ integration }}) tab on the [profile]({{ profile }}) page and allow Toloka to access Yandex Disk.
-
-1. Click **Add proxy** and fill in the fields:
-
-    #|
-    ||**Field**|**Overview**||
-    ||**Unique name** | Name of the data source. The name will be inserted in the file URLs. Allowed characters in the name: Latin letters, numbers, dashes (“-”).
-
-    Must be unique within Toloka.||
-    ||**Type** | Choose “Yandex Disk”.||
-    ||**Permissions** | Level of access to files:
-
-    - “Public” — All Toloka Tolokers (appropriate for files with instructions).
-
-    - “Private” — Only Tolokers who received a task with this file (appropriate for task content).||
-    ||**Folder name** | Name of the folder on Yandex Disk. You can't use a slash in the folder name (“/”).
-
-    A folder with this name will be created on Yandex Disk automatically (`Applications/Toloka/<folder name>`).||
-    |#
-
-1. Click **Save**.
-
-1. Upload files for tasks or instructions to the folder. It will be located at `Applications/Toloka/<folder name>` (the name you entered in the field).
 
 ## Add files to the task interface {#interface}
 
@@ -58,13 +22,7 @@ To add a file to the [task interface](spec.md):
 
   1. In the `"path"` property, enter the structure `/<proxy name>/<file name>.<type>` with your data.
 
-  [View an example with image classification](https://ya.cc/t/U35lM1hi3ttEbC)
-
-  {% note tip %}
-
-  To avoid having to enter the file path manually, copy the **URL** field from the [Integration]({{ integration }}) tab and change the file name and type.
-
-  {% endnote %}
+  [View an example with image classification](https://ya.cc/t/c2viz8T_4FAL9p)
 
   An example where files have been added from Yandex Disk in Template Builder:
 
@@ -95,7 +53,7 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  [View example in the sandbox](https://ya.cc/t/7LC4AVi53ttA9S)
+  [View example in the sandbox](https://ya.cc/t/gnPtsSaq4FAZYa)
 
   {% endcut %}
 
@@ -120,7 +78,7 @@ To add a file to the [task interface](spec.md):
   }
   ```
 
-  [View example in the sandbox](https://ya.cc/t/_XrwbL4V3ttEhW)
+  [View example in the sandbox](https://ya.cc/t/wB1pCU8D4FALz3)
 
   {% endcut %}
 
@@ -134,7 +92,7 @@ To add a file to the [task interface](spec.md):
 
       Add an image in the HTML block using one of the methods:
 
-      - Using the [Picture](t-components/img.md): `{{img src=(proxy image)}}` component.
+      - Using the [Picture](t-components/img.md) component: `{{img src=(proxy image)}}`.
 
       - Using an HTML tag: `<img src="not_var{{proxy image}}">`.
 
@@ -152,7 +110,7 @@ To add a file to the [task interface](spec.md):
 
       {% cut "Editor for image area selection" %}
 
-      Add [the](t-components/image-annotation.md#adding_editor)`{{field type="image-annotation" name="result" src=(proxy image)}}` component.
+      Add the [Image with area selection](t-components/image-annotation.md#adding_editor) component: `{{field type="image-annotation" name="result" src=(proxy image)}}`.
 
       {% endcut %}
 
@@ -198,6 +156,24 @@ To add an image to the [project instructions](instruction.md):
 
     {% endlist %}
 
-If these recommendations didn't help:
+## Frequently asked questions {#faq}
+
+{% cut "I am a new client. Can I connect Yandex Disk?" %}
+
+Unfortunately, no. As Toloka no longer supports Yandex Disk integration for new users, you can't connect it. Please use one of the photo hosting services: [wampi]({{ wampi }}), [imgbb]({{ imgbb }}), [ImageShack]({{ imageshack }}), or [imgur]({{ imgur }}).
+
+{% endcut %}
+
+{% cut "I have a Yandex Disk integration, but want to manage the proxy. How can I do that?" %}
+
+Please [contact our support team](../troubleshooting/support.md?form-topic1=other) for any actions with Yandex Disk proxy.
+
+{% endcut %}
+
+{% cut "I have a Yandex Disk integration, but want to disconnect it. How can I do that?" %}
+
+Please [contact our support team](../troubleshooting/support.md?form-topic1=other) for any actions with Yandex Disk proxy.
+
+{% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
