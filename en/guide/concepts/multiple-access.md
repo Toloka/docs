@@ -58,7 +58,7 @@ You can view the list of accounts to which the permissions have been granted on 
 
   {% endcut %}
 
-  1. Go to the **Profile** → **Account access** tab (or click [this link]((https://platform.toloka.ai/requester/profile/access))).
+  1. Go to the [Profile → Account access](https://platform.toloka.ai/requester/profile/access) tab.
 
   1. Click **Add user**.
 
@@ -78,7 +78,7 @@ You can view the list of accounts to which the permissions have been granted on 
 
   To give access to SSO clients, you must know their enterprise email addresses used to log in to Toloka with [SSO authentication](../sso/authentication.md).
 
-  1. Go to the **Profile** → **Account access** tab (or click [this link]((https://platform.toloka.ai/requester/profile/access))).
+  1. Go to the [Profile → Account access](https://platform.toloka.ai/requester/profile/access) tab.
 
   1. Click **Add user**.
 
@@ -92,7 +92,7 @@ You can view the list of accounts to which the permissions have been granted on 
 
   You can give Toloka support view-only access to your account.
 
-  1. Go to the **Profile** → **Account access** tab (or click [this link]((https://platform.toloka.ai/requester/profile/access))).
+  1. Go to the [Profile → Account access](https://platform.toloka.ai/requester/profile/access) tab.
 
   1. Click **Grant access to Toloka Support**.
 
@@ -112,7 +112,7 @@ You can't give access to your account:
 
 ## How to revoke access to the account? {#multiple-access-revoke}
 
-1. Go to the **Profile** → **Account access** tab (or click [this link]((https://platform.toloka.ai/requester/profile/access))).
+1. Go to the [Profile → Account access](https://platform.toloka.ai/requester/profile/access) tab.
 
 1. Click the ![Revoke access](../_images/register/revoke-access.svg) icon next to the client you want to revoke access from.
 
