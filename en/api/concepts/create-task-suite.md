@@ -99,6 +99,8 @@ You can use this ID in the future to [get information about the operation](ope
 
 ## Request body {#body}
 
+{% include [restriction](../_includes/restriction.md) %}
+
 {% list tabs %}
 
 - One task suite
