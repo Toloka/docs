@@ -100,7 +100,7 @@ You can use this ID in the future to [get information about the operation](opera
 
 ## Request body {#body}
 
-{% include [restriction](../_includes/restriction.md) %}
+{% include [input-output-size](../_includes/input-output-size.md) %}
 
 {% list tabs %}
 
