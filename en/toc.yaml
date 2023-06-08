@@ -313,6 +313,9 @@ items:
         href: guide/concepts/train.md
       - name: Adding funds to your account
         href: guide/concepts/refill.md
+      - name: Top up post-paid account
+        href: guide/concepts/top-up-post-paid.md
+        hidden: true
       - name: Starting and stopping a pool
         href: guide/concepts/pool-run-and-stop.md
       - name: Results
