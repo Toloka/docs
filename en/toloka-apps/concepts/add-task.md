@@ -20,7 +20,7 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
 
     - Under the **Copy and paste from the file** tab, copy and paste data from your file with tasks.
 
-    - Click **Via API** to use the [API](https://toloka.ai/docs/api/api-reference/).
+    - Click **Via API** to use the [API](https://toloka.ai/docs/api/apps-reference/).
 
 1. Click **Create batch**.
 
@@ -40,7 +40,7 @@ You can add data to a bespoke project with the **Active** or **Pending** status.
 
     - Under the **Copy and paste from the file** tab, copy and paste data from your file with tasks.
 
-    - Click **Via API** to use the [API](https://toloka.ai/docs/api/api-reference/).
+    - Click **Via API** to use the [API](https://toloka.ai/docs/api/apps-reference/).
 
 1. Click **Upload**.
 
