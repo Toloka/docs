@@ -184,7 +184,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Find the same or similar shoes in an online store**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 

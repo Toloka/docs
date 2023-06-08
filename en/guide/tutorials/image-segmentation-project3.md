@@ -202,7 +202,7 @@ In the interface:
 
 1. Open the project page titled **Are the traffic signs outlined correctly?**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 

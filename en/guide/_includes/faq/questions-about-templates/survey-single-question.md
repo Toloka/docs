@@ -4,4 +4,6 @@ The survey includes an auxiliary input field. You can use it to pass any informa
 
 Upload one task and use the overlap parameter to enter the number of people you want to survey.
 
+Refer to the [survey](../../../tutorials/questionnaire-overview.md) tutorials for more information.
+
 {% endcut %}

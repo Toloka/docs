@@ -8,7 +8,7 @@ This example was created in the sandbox. Therefore, you need to perform tasks as
 
 1. Log in to the sandbox with the requester's username and follow the **Add trusted users** link on the [Users](https://sandbox.toloka.yandex.com/requester/workers) page.
 
-1. Click **Add user** and enter the username of the account you created.
+1. Click **![Grant access](../../guide/_images/grant-access.svg) Grant access** and enter the username of the account you created.
 
 1. Perform the tasks in the sandbox under the username of a trusted user.
 

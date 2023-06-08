@@ -17,7 +17,11 @@ Log in to the [Sandbox](sandbox.md) to create and test your project for free. Th
 
 In the project, you'll customize an appearance of the tasks.
 
-1. On the **Projects** tab, choose a project preset that matches your task. The preset has preconfigured settings, a template for the task interface, and sample instructions for Tolokers. You will need to make a few changes in the interface and instructions to fit your data.
+1. On the **Projects** tab, click **Create a project**.
+
+    ![Create a project](../_images/tutorials/image-classification/choose-preset-step-1.png =700x)
+
+1. Choose a project preset that matches your task. The preset has preconfigured settings, a template for the task interface, and sample instructions for Tolokers. You will need to make a few changes in the interface and instructions to fit your data.
 
     {% cut "Presets for popular tasks" %}
 
@@ -37,6 +41,8 @@ In the project, you'll customize an appearance of the tasks.
 
         Designed to collect information for research purposes.
 
+    ![Presets for popular tasks](../_images/first-project/popular-presets.png =700x)
+
     {% endcut %}
 
     {% note tip %}
@@ -52,9 +58,17 @@ In the project, you'll customize an appearance of the tasks.
 
     {% endnote %}
 
-    If you can't find a preset that works for you, choose **Blank** to set up a project from scratch. To learn how, see the [Initial project settings](project.md) section.
+    If you can't find a preset that works for you, choose **Blank** to set up a project from scratch.
+
+    ![Blank presets](../_images/first-project/blank-preset.png =700x)
+
+    To learn how, see the [Initial project settings](project.md) section.
+
+1. Click **Choose this preset**.
 
 1. In the **General information** section, fill in the project name and a brief explanation of what will happen within the project.
+
+    ![General information](../_images/tutorials/image-classification/create-project-step-1.png =700x)
 
 1. In the **Task interface** section, do the following:
 
@@ -68,11 +82,13 @@ In the project, you'll customize an appearance of the tasks.
 
 1. In the **Instructions for Tolokers** section, edit the ready-made instructions if needed.
 
-1. Click **Create a project**.
+1. Click **Save**.
 
 ## Step 2. Configure a task pool {#configure-pool}
 
 A pool is a set of tasks sent out for completion at the same time. Create and configure the pool as follows:
+
+![Create pool](../_images/first-project/create-pool.png =700x)
 
 {% include [toloka-requester-pool-wizard](../_includes/toloka-requester-source/id-toloka-requester-source/pool-wizard.md) %}
 
@@ -80,7 +96,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 1. Start the pool by clicking **Start labeling**. This assigns the tasks to the Tolokers.
 
-    ![](../_images/first-project/start-pool.png)
+    ![Start labeling](../_images/tutorials/image-classification/start-labeling-step-2.png =700x)
 
 1. [Complete your tasks](sandbox.md#self) as a Toloker by yourself.
 
@@ -94,7 +110,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
     - Get the [files](result-of-eval.md) that Tolokers have attached to the tasks.
 
-![](../_images/first-project/download-results.png)
+![Download the results](../_images/tutorials/image-classification/see-results-step-2.png =700x)
 
 ## What's next {#what-next}
 
@@ -110,6 +126,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 ## See also {#see-also}
 
+- [How does Toloka work?](overview.md)
 - [Crowdsourcing concepts](https://toloka.ai/knowledgebase/crowdsourcing-concepts/)
 - [Crowdsourcing course](https://toloka.ai/academy/self-study-guide/)
 
@@ -120,3 +137,5 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 {% include [faq-start-new-project](../_includes/faq/register-and-start/start-new-project.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}

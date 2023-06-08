@@ -6,7 +6,7 @@ You can [deny access](../../glossary#banned-worker) to the [pool](../../glossary
 
 ## Can I fix something in a completed task myself? {#concept_cb5_n1d_pbb}
 
-No, you can't fix anything in the task itself. However, you can do this manually in the results file.
+No, you can't fix anything in the task itself. However, you can do this manually in the [results file](result-of-eval.md).
 
 ## Can I ask a Toloker to redo the task if they made mistakes in it? {#concept_ang_g1d_pbb}
 

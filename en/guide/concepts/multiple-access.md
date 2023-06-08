@@ -60,7 +60,7 @@ You can view the list of accounts to which the permissions have been granted on 
 
   1. Go to the [Profile → Account access](https://platform.toloka.ai/requester/profile/access) tab.
 
-  1. Click **Add user**.
+  1. Click **![Grant access](../_images/grant-access.svg) Grant access**.
 
   1. Enter the client **User ID**.
 
@@ -80,7 +80,7 @@ You can view the list of accounts to which the permissions have been granted on 
 
   1. Go to the [Profile → Account access](https://platform.toloka.ai/requester/profile/access) tab.
 
-  1. Click **Add user**.
+  1. Click **![Grant access](../_images/grant-access.svg) Grant access**.
 
   1. Enter the client enterprise email address.
 

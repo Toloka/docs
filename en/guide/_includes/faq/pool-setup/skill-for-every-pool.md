@@ -1,6 +1,6 @@
 {% cut "Should I create a skill for every pool?" %}
 
-It is better to use one [skill](../../../../glossary.md#skill) in a project. You can choose the way to calculate the skill:
+It is better to [use one skill](../../../concepts/nav-assign.md) in a project. You can choose the way to calculate the skill:
 
 - Calculate the skill for each pool separately. The current skill value is the value of the skill in the pool the Toloker completed last. This option is convenient if:
 
