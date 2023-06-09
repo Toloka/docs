@@ -373,7 +373,7 @@ A group of several tasks given to a Toloker to submit all at once. For example, 
 
 #### Toloka API {#toloka-api}
 
-The application programming interface which describes methods (a set of classes, procedures, functions, structures, or constants) used by Toloka to interact with other computer programs, and allows you to create tasks and receive user responses. [Learn more](api/index.md)
+The application programming interface which describes methods (a set of classes, procedures, functions, structures, or constants) used by Toloka to interact with other computer programs, and allows you to create tasks and receive user responses. [Learn more](https://toloka.ai/docs/api/api-reference/)
 
 The requests to the Toloka API are made using the [HTTPS protocol](https://en.wikipedia.org/wiki/HTTPS). The service returns data in the [JSON](https://www.json.org/json-en.html) format.
 

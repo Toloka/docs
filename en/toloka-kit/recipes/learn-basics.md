@@ -776,7 +776,7 @@ print(predicted_answers)
 
 - [Toloka-Kit recipe list](./use-cases.md)
 - [Toloka documentation](../../index.md)
-- [Toloka API documentation](../../api/index.md)
+- [Toloka API documentation](https://toloka.ai/docs/api/api-reference/)
 - [Toloka homepage](https://toloka.ai/)
 
 {% include [image-styles](../../../_includes/image-styles.md) %}

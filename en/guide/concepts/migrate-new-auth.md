@@ -54,7 +54,7 @@ After you migrate to the new authorization scheme, the existing OAuth tokens wil
 
 New tokens have no TTL and don't expire, you don't need to reissue them. One account can have up to 50 new OAuth tokens.
 
-[Toloka API](../../api/index.md), [Toloka-Kit](../../toloka-kit/index.md), and [Toloka Java SDK](https://github.com/toloka/toloka-java-sdk/) support both old and new OAuth tokens.
+[Toloka API](https://toloka.ai/docs/api/api-reference/), [Toloka-Kit](../../toloka-kit/index.md), and [Toloka Java SDK](https://github.com/toloka/toloka-java-sdk/) support both old and new OAuth tokens.
 
 Refer to the [Generating API tokens](api-token.md) section to learn how to issue OAuth tokens.
 

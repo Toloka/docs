@@ -27,7 +27,7 @@ These powerful software development kits make your work with Toloka much easier 
 <div class="grid-container">
     <div class="grid-item">
         <h2><a href="./">Toloka-Kit</a></h2>
-        <p>An open source Python library that allows you to access <a href="../api/">Toloka API</a> with the help of classes and methods that seamlessly integrate with your Python application.</p>
+        <p>An open source Python library that allows you to access <a href="https://toloka.ai/docs/api/api-reference/">Toloka API</a> with the help of classes and methods that seamlessly integrate with your Python application.</p>
         <div style="display: flex;">
             <p style="margin-right: auto;"><a style="display: flex; align-items: center;" href="https://github.com/Toloka/toloka-kit"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/social/github.svg" alt="View source code on GitHub" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Source code on GitHub</a></p>
             <p style="margin-left: auto;"><a style="display: flex; align-items: center;" href="https://github.com/Toloka/toloka-kit/tree/main/examples"><img src="https://yastatic.net/s3/doc-binary/src/support/toloka/en/social/jupyter.svg" alt="View integration examples" style="border: 0; vertical-align: middle; margin-right: 7px;" /> Integration examples</a></p>
@@ -57,7 +57,7 @@ These powerful software development kits make your work with Toloka much easier 
     <div class="grid-item">
         <h3>API reference</h3>
         <ul>
-            <li><a href="../api/">Toloka API</a></li>
+            <li><a href="https://toloka.ai/docs/api/api-reference/">Toloka API</a></li>
         </ul>
     </div>
     <div class="grid-item">
