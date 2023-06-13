@@ -53,12 +53,6 @@ Toloka has two versions: production and sandbox. You need to register in each on
 
     This is a place to test your projects and tasks. It can be useful to test complex projects before launching them. Learn more about [working in the sandbox](sandbox.md).
 
-    {% note warning %}
-
-    Starting March 2023, **new clients** get access to Toloka sandbox **upon request**. Please [contact our support team](../troubleshooting/support.md?form-topic1=sandbox) describing the projects you plan to use the sandbox for, types of tasks you plan to upload, the approximate number of trusted Tolokers who are going to complete tasks for you there, and other details.
-
-    {% endnote %}
-
 The registration and sign-in processes are similar for both versions.
 
 ## Authorizing in Toloka with social services (currently in beta) {#authorize}
