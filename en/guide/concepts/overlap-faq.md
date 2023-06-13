@@ -31,7 +31,7 @@ You can change overlap after the pool is started. To do this, open the pool edit
 
 ## For developers {#for-developers}
 
-- [Toloka API: Changing task suite overlap](../../api/concepts/edit-overlap.md)
+- [Toloka API: Changing task suite overlap](https://toloka.ai/docs/api/api-reference/#patch-/task-suites/-id-)
 - [Toloka-Kit recipe: Set overlap](../../toloka-kit/recipes/set-overlap.md)
 
 ## Troubleshooting {#troubleshooting}

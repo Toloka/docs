@@ -43,7 +43,7 @@ Select the problem to solve, fill out an application form for creating a project
         <p>HTTP API method descriptions</p>
     </div>
     <div class="grid-item">
-        <h3><a href="https://toloka.ai/en/docs/toloka-apps/api/concepts/authorization">Authorization in the API</a></h3>
+        <h3><a href="https://toloka.ai/docs/api/apps-reference/#overview--accessing-the-api">Authorization in the API</a></h3>
         <p>Get a token to work with the API</p>
     </div>
     <div class="grid-item">

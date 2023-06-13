@@ -43,7 +43,7 @@ To start with Toloka-Kit:
 
 - Read the package reference starting with [TolokaClient](reference/toloka.client.TolokaClient.md).
 
-- Study [Toloka API documentation](../api/index.md).
+- Study [Toloka API documentation](https://toloka.ai/docs/api/api-reference/).
 
 - See other features in [Toloka documentation](../guide/concepts/overview.md).
 

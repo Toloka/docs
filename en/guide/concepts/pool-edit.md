@@ -265,8 +265,8 @@ Use this parameter to:
 
 ## For developers {#for-developers}
 
-- [Toloka API: Editing pool](../../api/concepts/edit-pool.md)
-- [Toloka API: Changing pool priority](../../api/concepts/set-priority-pool.md)
+- [Toloka API: Editing pool](https://toloka.ai/docs/api/api-reference/#put-/pools/-id-)
+- [Toloka API: Changing pool priority](https://toloka.ai/docs/api/api-reference/#patch-/pools/-id-)
 - [Toloka-Kit: Editing pool](../../toloka-kit/reference/toloka.client.TolokaClient.update_pool.md)
 - [Toloka-Kit: Patching pool](../../toloka-kit/reference/toloka.client.TolokaClient.patch_pool.md)
 - [Toloka-Kit recipe: Change pool priority](../../toloka-kit/recipes/change-pool-priority.md)

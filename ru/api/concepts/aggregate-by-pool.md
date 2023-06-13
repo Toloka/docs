@@ -13,7 +13,7 @@
     ```bash
     POST https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Песочница
@@ -21,7 +21,7 @@
     ```bash
     POST https://sandbox.toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}

@@ -15,7 +15,7 @@
     ```bash
     PATCH https://sandbox.toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Боевая версия
@@ -23,7 +23,7 @@
     ```bash
     PATCH https://toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}

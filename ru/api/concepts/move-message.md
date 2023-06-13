@@ -21,7 +21,7 @@
     ```bash
     POST https://toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Песочница
@@ -29,7 +29,7 @@
     ```bash
     POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/add-to-folders
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}
@@ -45,7 +45,7 @@
     ```bash
     POST https://toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Песочница
@@ -53,7 +53,7 @@
     ```bash
     POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/remove-from-folders
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}

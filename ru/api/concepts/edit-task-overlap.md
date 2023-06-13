@@ -26,7 +26,7 @@
     ```bash
     PATCH https://toloka.dev/api/v1/tasks/<task_id>
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Песочница
@@ -34,7 +34,7 @@
     ```bash
     PATCH https://sandbox.toloka.dev/api/v1/tasks/<task ID>
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}

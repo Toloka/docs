@@ -38,7 +38,7 @@
     ```bash
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \
-         -H 'Content-Type: application/JSON' \
+         -H 'Content-Type: application/json' \
          -d '{
                "public_name": "Cat or dog",
                "public_description": "What kind of animal is on the picture?",
@@ -101,7 +101,7 @@
 
     ```bash
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
   1. Body
@@ -200,7 +200,7 @@
     ```bash
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \
-         -H 'Content-Type: application/JSON' \
+         -H 'Content-Type: application/json' \
          -d '{
                "project_id": "<project id>",
                "private_name": "Cat pool 1",
@@ -286,7 +286,7 @@
 
     ```bash
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
   1. Body
@@ -405,7 +405,7 @@
     ```bash
     curl -X POST \
          -H 'Authorization: OAuth <OAuth token>' \
-         -H 'Content-Type: application/JSON' \
+         -H 'Content-Type: application/json' \
          -d '[
                {
                  "input_values": {
@@ -446,7 +446,7 @@
 
     ```bash
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
   1. Body
@@ -500,7 +500,7 @@
     ```bash
     curl -X POST \
       -H 'Authorization: OAuth <OAuth token>' \
-      -H 'Content-Type: application/JSON' \
+      -H 'Content-Type: application/json' \
     https://sandbox.toloka.dev/api/v1/pools/<pool_id>/open
     ```
 
@@ -518,7 +518,7 @@
 
         ```bash
         Authorization: OAuth <OAuth token>
-        Content-Type: application/JSON
+        Content-Type: application/json
         ```
 
 {% endlist %}

@@ -89,7 +89,7 @@ You can also [ban](#ban) this Toloker from your project.
 
 ## For developers {#for-developers}
 
-- [Toloka API: Blocking access to tasks](../../api/concepts/ban.md)
+- [Toloka API: Blocking access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions)
 - [Toloka-Kit: Banning Tolokers](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_restriction.md)
 
 ## Troubleshooting {#troubleshooting}

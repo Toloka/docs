@@ -31,7 +31,7 @@ The automatic archiving will be delayed for **90 days** if the pool:
 
 - Contains only control and training tasks.
 - Contains no tasks in it.
-- Is cloned via the [Toloka API](../../api/concepts/clone-pool.md).
+- Is cloned via the [Toloka API](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/clone).
 - Belongs to one of the following types: **Exam**, **Training**, **Retry**, or **Other**.
 
 ## What's next {#what-next}
@@ -48,7 +48,7 @@ The automatic archiving will be delayed for **90 days** if the pool:
 
 ## For developers {#for-developers}
 
-- [Toloka API: Moving pool to archive](../../api/concepts/archive-pool.md)
+- [Toloka API: Moving pool to archive](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/archive)
 - [Toloka-Kit recipe: Archive pool](../../toloka-kit/recipes/archive-pool.md)
 
 ## Troubleshooting {#troubleshooting}

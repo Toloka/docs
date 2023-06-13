@@ -36,7 +36,7 @@
     ```bash
     POST https://toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Песочница
@@ -44,7 +44,7 @@
     ```bash
     POST https://sandbox.toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}

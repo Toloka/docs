@@ -114,7 +114,7 @@ The response statistics is shown in the **Responses** and **Correct** fields  at
 
 {% note tip %}
 
-If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overlap.md), the task won't be visible to Tolokers, and you won't have to delete it.
+If you set the overlap to 0 [via the API](https://toloka.ai/docs/api/api-reference/#patch-/tasks/-id-/set-overlap-or-min), the task won't be visible to Tolokers, and you won't have to delete it.
 
 {% endnote %}
 

@@ -20,7 +20,7 @@ A [pool](#pool) that was moved to the archive. Archived pools can't be started o
 
 #### Assignment {#assignment}
 
-A task suite that a [Toloker](#toloker) decides to pick up. An assignment can have one the following statuses: **accepted**, **active**, **expired**, **rejected**, **skipped**, or **submitted**. Refer to the [Toloka API documentation](api/concepts/result.md#query-params) for more information on each status.
+A task suite that a [Toloker](#toloker) decides to pick up. An assignment can have one the following statuses: **accepted**, **active**, **expired**, **rejected**, **skipped**, or **submitted**. Refer to the [Toloka API documentation](https://toloka.ai/docs/api/api-reference/#get-/assignments/-id-) for more information on each status.
 
 ### B
 
@@ -373,7 +373,7 @@ A group of several tasks given to a Toloker to submit all at once. For example, 
 
 #### Toloka API {#toloka-api}
 
-The application programming interface which describes methods (a set of classes, procedures, functions, structures, or constants) used by Toloka to interact with other computer programs, and allows you to create tasks and receive user responses. [Learn more](api/index.md)
+The application programming interface which describes methods (a set of classes, procedures, functions, structures, or constants) used by Toloka to interact with other computer programs, and allows you to create tasks and receive user responses. [Learn more](https://toloka.ai/docs/api/api-reference/)
 
 The requests to the Toloka API are made using the [HTTPS protocol](https://en.wikipedia.org/wiki/HTTPS). The service returns data in the [JSON](https://www.json.org/json-en.html) format.
 

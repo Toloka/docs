@@ -32,7 +32,7 @@ This example selects Tolokers who set their country as US and the city as Washin
 
 #|
 || Key parameter | Value description ||
-|| **gender** | **string**
+|| `gender` | _string_
 
 The Toloker's gender:
 
@@ -43,7 +43,7 @@ Value of "operator":
 
 - `EQ` — Equal to.
 - `NE` — Not equal to. ||
-|| **country** | **string**
+|| `country` | _string_
 
 The Toloker's country of residence (the two-letter code from the [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/) standard).
 
@@ -51,7 +51,7 @@ Value of "operator":
 
 - `EQ` — Equal to.
 - `NE` — Not equal to. ||
-|| **citizenship** | **string**
+|| `citizenship` | _string_
 
 The Toloker's country of citizenship (the two-letter code from the [ISO 3166-1 alpha-2](https://www.iso.org/obp/ui/#search/code/) standard).
 
@@ -59,7 +59,7 @@ Value of "operator":
 
 - `EQ` — Equal to.
 - `NE` — Not equal to. ||
-|| **education** | **string**
+|| `education` | _string_
 
 The Toloker's level of education:
 
@@ -71,7 +71,7 @@ Value of "operator":
 
 - `EQ` — Equal to.
 - `NE` — Not equal to. ||
-|| **adult_allowed** | **boolean**
+|| `adult_allowed` | _boolean_
 
 The Toloker agrees to perform tasks that contain adult content.
 
@@ -79,7 +79,7 @@ Value of "operator":
 
 - `EQ` — Equal to.
 - `NE` — Not equal to. ||
-|| **date_of_birth** | **integer**
+|| `date_of_birth` | _integer_
 
 The Toloker's date of birth (UNIX time in seconds).
 
@@ -91,7 +91,7 @@ Value of "operator":
 - `LT` — Less than.
 - `GTE` — Greater than or equal to.
 - `LTE` — Less than or equal to. ||
-|| **city** | **integer**
+|| `city` | _integer_
 
 The Toloker's city ([the region ID in the search database](regions.md)).
 
@@ -99,7 +99,7 @@ Value of "operator":
 
 - `IN` — Contained in the list of regions or languages in the profile.
 - `NOT_IN` — Not contained in the list of regions or languages in the profile. ||
-|| **languages** | **string**
+|| `languages` | _string_
 
 The languages the Toloker entered in the profile (uppercase two-letter ISO code conforming to [ISO 639-1](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)).
 
@@ -112,5 +112,6 @@ Value of "operator":
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/filters.md)
+- [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

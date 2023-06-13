@@ -10,18 +10,18 @@ Toloka provides two ways of uploading tasks using the API:
 
 Choose this method if:
 
-- You [created a pool](create-pool.md) using ["smart mixing"](../../guide/concepts/distribute-tasks-by-pages.md#distribute-tasks-by-pages__smart-mixing) (the `mixer_config` parameter).
+- You [created a pool](https://toloka.ai/docs/api/api-reference/#post-/pools) using ["smart mixing"](../../guide/concepts/distribute-tasks-by-pages.md#distribute-tasks-by-pages__smart-mixing) (the `mixer_config` parameter).
 
 - Apart from the general tasks, the pool will contain control or training tasks.
 
-With this method, Toloka will split tasks into suites according to the "smart mixing" settings. When uploading tasks this way, use the [POST /tasks](create-task.md) request.
+With this method, Toloka will split tasks into suites according to the "smart mixing" settings. When uploading tasks this way, use the [POST /tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks) request.
 
 {% cut "Sample request" %}
 
 ```bash
 POST https://toloka.dev/api/v1/tasks
 Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
+Content-Type: application/json
 
 // one task
 {task data}
@@ -86,14 +86,14 @@ Choose this method if you:
 - Create task suites yourself.
 - Determine yourself which tasks to include in each suite.
 
-This method won't work if you created a pool using [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#distribute-tasks-by-pages__smart-mixing). When uploading tasks this way, use the [POST /task-suites](create-task-suite.md) request.
+This method won't work if you created a pool using [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#distribute-tasks-by-pages__smart-mixing). When uploading tasks this way, use the [POST /task-suites](https://toloka.ai/docs/api/api-reference/#post-/task-suites) request.
 
 {% cut "Sample request" %}
 
 ```bash
 POST https://toloka.dev/api/v1/task-suites
 Authorization: OAuth <OAuth token>
-Content-Type: application/JSON
+Content-Type: application/json
 
 // one task suite
 {task suite parameters}

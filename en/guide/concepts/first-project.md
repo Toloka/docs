@@ -104,7 +104,7 @@ A pool is a set of tasks sent out for completion at the same time. Create and co
 
 - If you don't like Template Builder, try out the [HTML/JS/CSS editor](spec.md).
 
-- See the [Toloka API](../../api/index.md) documentation to learn how to manage your projects via the API.
+- See the [Toloka API](https://toloka.ai/docs/api/api-reference/) documentation to learn how to manage your projects via the API.
 
 - If you have questions or problems, see the [Troubleshooting and support](../troubleshooting/troubleshooting.md) section.
 

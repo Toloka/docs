@@ -14,7 +14,7 @@ For example, create a project with tasks where Tolokers will determine the type 
 
 {% endcut %}
 
-The sample project described under "Quick start" is for the sandbox. To set up tasks in the Toloka production version, change the [resource URL](access.md#urls) and [OAuth token](access.md#token) in all requests.
+The sample project described under "Quick start" is for the sandbox. To set up tasks in the Toloka production version, change the [resource URL](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) and [OAuth token](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) in all requests.
 
 ## Steps to follow {#algorithm}
 
@@ -24,13 +24,13 @@ The sample project described under "Quick start" is for the sandbox. To set up t
     - [Create a project](./qs-placement.md#project) (`POST /api/v1/projects`).
     - [Add a pool](./qs-placement.md#pool) (`POST /api/v1/pools`).
     - [Upload the tasks](./qs-placement.md#task) (`POST /api/v1/tasks`).
-    - [Start (open) the pool](./qs-placement.md#pool-run) (`POST /api/v1/pools/<pool_id>/open`).
+    - [Start (open) the pool](./qs-placement.md#pool-run) (`POST /api/v1/pools/{pool_id}/open`).
     - [Check the tasks from the Toloker's interface](./qs-placement.md#check).
 
 1. Get the required results after the tasks are completed by the Tolokers.
 
-    - [Get responses](qs-results.md) (`GET /api/v1/assignments?pool_id=<pool_id>`).
-    - [Download attachments](get-attachment-list.md) (`GET /api/v1/attachments`).
+    - [Get responses](qs-results.md) (`GET /api/v1/assignments?pool_id={pool_id}`).
+    - [Download attachments](https://toloka.ai/docs/api/api-reference/#get-/attachments) (`GET /api/v1/attachments`).
 
 ## What's next {#what-next}
 
