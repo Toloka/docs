@@ -8,7 +8,7 @@ The component changes the value in the data from `true` to `false` and vice vers
 
 - [view.list](view.list.md): Displays data in a list.
 - [field.checkbox-group](field.checkbox-group.md): Adds a group of checkboxes for selecting independent answer options.
-- [plugin.hotkeys](plugin.hotkeys.md): You can use this to set keyboard shortcuts for actions. 
+- [plugin.hotkeys](plugin.hotkeys.md): Sets keyboard shortcuts for actions. 
 
 {% endcut %}
 

@@ -9,7 +9,7 @@ By default it rotates to the right, but you can specify the direction in the `pa
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
-- [view.image](view.image.md) — expands the image to full screen.
+- [view.image](view.image.md): Expands the image to full screen.
 - [view.action-button](view.action-button.md): Displays a button that calls an action.
 
 {% endcut %}
