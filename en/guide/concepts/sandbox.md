@@ -4,12 +4,6 @@ The [Sandbox]({{ sandbox }}) is a testing environment for Toloka. This is where 
 
 ## Getting access to the sandbox {#sandbox-access}
 
-{% note warning %}
-
-Starting March 2023, **new clients** get access to Toloka sandbox **upon request**.
-
-{% endnote %}
-
 Please [contact our support team](../troubleshooting/support.md?form-topic1=sandbox) describing the projects you plan to use the sandbox for, types of tasks you plan to upload, the approximate number of trusted Tolokers who are going to complete tasks for you there, and other details.
 
 Make sure the projects you plan to use in the sandbox meet the [usage rules](#usage-rules).
