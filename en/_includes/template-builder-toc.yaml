@@ -46,6 +46,8 @@ items:
             href: ../template-builder/templates/named-entity-recognition.md  
       - name: Audio
         items:
+          - name: Audio classification
+            href: ../template-builder/templates/audio-classification.md
           - name: Audio transcription
             href: ../template-builder/templates/audio-transcript.md
           - name: Audio comparison (Side-by-side)
