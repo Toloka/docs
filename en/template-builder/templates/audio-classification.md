@@ -169,7 +169,7 @@ To add a detailed description to the task, use the `label` property of the [view
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/FKmvxOnh3ttDoT)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/U4xXtjtv4GQ9TJ)
 
 ## Add a layout {#add-layout}
 
