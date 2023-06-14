@@ -1,0 +1,10 @@
+success:
+  description: The detailed information about the Toloker skill.
+  value:
+    id: '1813606616'
+    skill_id: '37825'
+    user_id: 23c3835c9bbe4ec5418f7ef28c7ff5fb
+    value: 100
+    exact_value: 100
+    created: '2022-01-25T09:21:58.854'
+    modified: '2022-01-25T09:21:58.854'

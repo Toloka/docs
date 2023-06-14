@@ -1,0 +1,53 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X POST 'https://toloka.dev/api/v1/trainings/1239110/open' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Content-Type: application/json'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    toloka_client.open_training('1239110')
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/trainings/1239110/open"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Content-Type': 'application/json'
+    }
+    response = requests.post(url, headers=headers)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://toloka.dev/api/v1/trainings/1239110/open',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Content-Type': 'application/json'
+      }
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/trainings/1239110/open")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Content-Type", "application/json")
+      .asString();

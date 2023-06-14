@@ -1,0 +1,5 @@
+task_body:
+  description: The task overlap parameters.
+  value:
+    overlap: 0
+    infinite_overlap: false

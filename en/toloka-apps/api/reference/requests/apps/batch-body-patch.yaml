@@ -1,0 +1,5 @@
+batch_body:
+  description: The parameters of the batch properties update.
+  value:
+    name: Test batch
+    priority_order: THREE

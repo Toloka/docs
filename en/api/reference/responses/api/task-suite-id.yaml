@@ -1,0 +1,21 @@
+success:
+  description: The detailed information about the task suite.
+  value:
+    pool_id: '36502086'
+    tasks:
+    - id: 00022cfa46--637cf3f76e13181a0164e729
+      input_values:
+        image: https://example.com/image1.jpg
+    - id: "00022cfa46--637cf3ed6e13181a0164e5a2"
+      input_values:
+        image: "https://example.com/image2.jpg"
+    overlap: 1
+    infinite_overlap: false
+    reserved_for: []
+    unavailable_for: []
+    issuing_order_override: 0
+    id: 00022cfa46--637cf41c9376542ef7b52bde
+    mixed: true
+    automerged: false
+    created: '2022-11-22T16:09:00.308'
+    remaining_overlap: 0

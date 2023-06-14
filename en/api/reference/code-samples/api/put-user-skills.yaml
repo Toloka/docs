@@ -1,0 +1,70 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X PUT 'https://toloka.dev/api/v1/user-skills' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Content-Type: application/json' \
+         -d '{"skill_id":"11051","user_id":"1ad097faba0eff85a04fe30bc04d53db","value":50}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    from decimal import Decimal
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    toloka_client.set_user_skill(
+                    user_id='1ad097faba0eff85a04fe30bc04d53db',
+                    skill_id='11051', value=Decimal(50)
+    )
+  description: More details on this in the [Assign skill to Toloker](https://toloka.ai/docs/toloka-kit/recipes/assign-skill/) Toloka-Kit recipe
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/user-skills"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Content-Type': 'application/json'
+    }
+    payload = {
+      "skill_id": "11051",
+      "user_id": "1ad097faba0eff85a04fe30bc04d53db",
+      "value": 50
+    }
+    response = requests.put(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'PUT',
+      'url': 'https://toloka.dev/api/v1/user-skills',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Content-Type': 'application/json'
+      },
+      'body': JSON.stringify({
+        "skill_id": "11051",
+        "user_id": "1ad097faba0eff85a04fe30bc04d53db",
+        "value": 50
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.put("https://toloka.dev/api/v1/user-skills")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Content-Type", "application/json")
+      .body("{\"skill_id\":\"11051\",\"user_id\":\"1ad097faba0eff85a04fe30bc04d53db\",\"value\":50}")
+      .asString();

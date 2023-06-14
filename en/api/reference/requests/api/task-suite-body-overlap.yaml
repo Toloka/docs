@@ -1,0 +1,4 @@
+task_suite_body:
+  description: The task suite overlap parameters.
+  value:
+    overlap: 0

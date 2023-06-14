@@ -1,0 +1,40 @@
+success:
+  description: The list of app projects and their properties in the `content` array.
+  value:
+    content:
+    - id: 8lvN9kBN4wwsj47ZqNal
+      app_id: M1B0QY7kD5kie8wOyb44
+      parent_app_project_id: ''
+      status: READY
+      created: '2022-01-22T07:43:57.234'
+      name: First Test Project
+      parameters:
+        name: First Test Project
+        option_other: true
+        default_language: en
+        instruction_intro: You need to tell if this is a cat or a dog
+        instruction_classes:
+        - label: Cat
+          value: cat
+          description: Feline
+        - label: Dog
+          value: dog
+          description: Canine
+        instruction_examples:
+        - text: A sample of a cat
+          label: cat
+          image_url: https://example.com/image1.jpg
+          description: This is a cat and the cat it is
+        - text: A sample of a dog
+          label: dog
+          image_url: https://example.com/image2.jpg
+          description: This is a dog and the dog it is
+        instruction_question: Is this a cat or a dog?
+        option_multiple_choice: true
+      errors: []
+      item_price: 0.07
+      read_only: false
+      app:
+        id: M1B0QY7kD5kie8wOyb44
+        name: Image + Text classification
+    has_more: true

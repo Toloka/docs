@@ -1,0 +1,16 @@
+success:
+  description: The list of bonuses and their properties in the `items` array.
+  value:
+    items:
+    - user_id: a1b0b42923c429daa2c764d7ccfc364d
+      amount: 0.5
+      private_comment: Good job!
+      public_title:
+        EN: Perfect job!
+      public_message:
+        EN: You are the best!
+      without_message: false
+      assignment_id: 000015fccc--63bfc4c358d7a46c32a7b233
+      id: '3139'
+      created: '2023-01-12T13:45:36.767'
+    has_more: true

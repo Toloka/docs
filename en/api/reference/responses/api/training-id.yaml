@@ -1,0 +1,22 @@
+success:
+  description: The detailed information about the training pool.
+  value:
+    id: '31226418'
+    project_id: '74175'
+    private_name: Simple training pool
+    inherited_instructions: true
+    public_instructions: ''
+    may_contain_adult_content: false
+    assignment_max_duration_seconds: 600
+    mix_tasks_in_creation_order: true
+    shuffle_tasks_in_task_suite: true
+    training_tasks_in_task_suite_count: 10
+    retry_training_after_days: 14
+    owner:
+      id: 6c6e20dc86cca2ae787afcb2629de162
+      myself: true
+    status: OPEN
+    last_close_reason: MANUAL
+    created: '2022-01-22T07:50:14.781'
+    last_started: '2022-01-22T07:50:21.491'
+    last_stopped: '2022-02-24T13:40:29.754'

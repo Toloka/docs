@@ -1,0 +1,13 @@
+batch_body:
+  description: The batch to be created with the list of the task items.
+  value:
+    name: Test batch
+    items:
+    - id: '30'
+      query: toloka kit
+      website_url: https://toloka.ai/docs/toloka-kit
+    - id: '31'
+      query: crowd kit
+      website_url: https://toloka.ai/docs/crowd-kit
+    priority_order: ONE
+    force_new_original: true

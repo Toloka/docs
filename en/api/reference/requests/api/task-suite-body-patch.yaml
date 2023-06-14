@@ -1,0 +1,5 @@
+task_suite_body:
+  description: The task suite properties that you want to change.
+  value:
+    overlap: 5
+    infinite_overlap: false

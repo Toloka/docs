@@ -1,0 +1,35 @@
+recipients_all:
+  summary: Message to all Tolokers
+  value:
+    topic:
+      EN: "Hello there!"
+    text:
+      EN: "Welcome to Toloka!"
+    recipients_select_type: "ALL"
+    answerable: false
+recipients_ids:
+  summary: Message with a list of recipients
+  value:
+    topic:
+      EN: "You have got a bonus!"
+    text:
+      EN: "The bonus was awarded for good job!"
+    recipients_select_type: "DIRECT"
+    recipients_ids:
+    - "2225cfb24c15b7d691818f5ac9d07f70"
+    answerable: true
+recipients_filter:
+  summary: Message with recipients filter
+  value:
+    topic:
+      EN: "You have got a bonus!"
+    text:
+      EN: "The bonus was awarded for good job!"
+    recipients_select_type: "FILTER"
+    recipients_filter:
+      and:
+      - category: "skill"
+        key: "2022"
+        operator: "GT"
+        value: 90
+    answerable: true

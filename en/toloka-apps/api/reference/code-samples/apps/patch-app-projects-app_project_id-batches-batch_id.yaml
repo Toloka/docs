@@ -1,0 +1,69 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X PATCH 'https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+         -H 'Content-Type: application/json' \
+         -d '{"name":"Test batch","priority_order":"THREE"}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    toloka_client.patch_app_batch(
+      app_project_id='Q2d15QBjpwWuDz8Z321g',
+      batch_id='4Va2BBWKL88S4QyAgVje',
+      name='Test batch')
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+    import json
+
+    url = "https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje"
+
+    payload = json.dumps({
+      "name": "Test batch",
+      "priority_order": "THREE"
+    })
+    headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+    }
+
+    response = requests.request("PATCH", url, headers=headers, data=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'PATCH',
+      'url': 'https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje',
+      'headers': {
+        'Content-Type': 'application/json',
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      },
+      body: JSON.stringify({
+        "name": "Test batch",
+        "priority_order": "THREE"
+      })
+
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.patch("https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje")
+      .header("Content-Type", "application/json")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .body("{\"name\":\"Test batch\",\"priority_order\":\"THREE\"}")
+      .asString();

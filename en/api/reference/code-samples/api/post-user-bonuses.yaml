@@ -1,0 +1,84 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X POST 'https://toloka.dev/api/v1/user-bonuses' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Content-Type: application/json' \
+         -d '{"user_id":"fac97860c7929add8048ed2ef63b66fd", "amount":0.5, "public_title":{"EN":"Perfect job!"}, "public_message":{"EN":"You are the best!"}}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    from decimal import Decimal
+    import toloka.client
+    from toloka.client.user_bonus import UserBonus
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    new_bonus = toloka_client.create_user_bonus(UserBonus(
+        user_id = 'fac97860c7929add8048ed2ef63b66fd',
+        amount = Decimal('0.50'),
+        public_title = {'EN': 'Perfect job!'},
+        public_message = {'EN': 'You are the best!'},
+        assignment_id='00001092da--61ef030400c684132d0da0de'
+    ) )
+  description: More details on this in the [Issue bonuses to Tolokers](https://toloka.ai/docs/toloka-kit/recipes/assign-reward/) Toloka-Kit recipe
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/user-bonuses"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Content-Type': 'application/json'
+    }
+    payload = {
+      "user_id": "fac97860c7929add8048ed2ef63b66fd",
+      "amount": 0.5,
+      "public_title": {
+        "EN": "Perfect job!"
+      },
+      "public_message": {
+        "EN": "You are the best!"
+      }
+    }
+    response = requests.post(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://toloka.dev/api/v1/user-bonuses',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Content-Type': 'application/json'
+      },
+      'body': JSON.stringify({
+        "user_id": "fac97860c7929add8048ed2ef63b66fd",
+        "amount": 0.5,
+        "public_title": {
+          "EN": "Perfect job!"
+        },
+        "public_message": {
+          "EN": "You are the best!"
+        }
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/user-bonuses")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Content-Type", "application/json")
+      .body("{\"user_id\":\"fac97860c7929add8048ed2ef63b66fd\", \"amount\":0.5, \"public_title\":{\"EN\":\"Perfect job!\"}, \"public_message\":{\"EN\":\"You are the best!\"}}")
+      .asString();
