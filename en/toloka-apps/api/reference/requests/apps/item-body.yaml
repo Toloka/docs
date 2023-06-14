@@ -1,0 +1,9 @@
+item_body:
+  description: The parameters of the new item.
+  value:
+    batch_id: 4Va2BBWKL88S4QyAgVje
+    input_data:
+      id: '40'
+      query: toloka kit
+      website_url: https://toloka.ai/docs/toloka-kit
+    force_new_original: true

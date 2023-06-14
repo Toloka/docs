@@ -1,0 +1,84 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Content-Type: application/json' \
+         -d '{"pool_id":"1238218","task_id":"000012e4ca--62e97a75dbab805456309d81", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"12648", "fields":[{"name":"result"}]}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+    from toloka.client.aggregation import PoolAggregatedSolutionRequest
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    aggregation = toloka_client.aggregate_solutions_by_task(
+      pool_id='1238218',
+      task_id='000012e4ca--62e97a75dbab805456309d81',
+      answer_weight_skill_id='12648',
+      fields=[PoolAggregatedSolutionRequest.Field(name='result')]
+    )
+    print(aggregation.output_values['result'])
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Content-Type': 'application/json'
+    }
+    payload = {
+      "pool_id": "1238218",
+      "task_id": "000012e4ca--62e97a75dbab805456309d81",
+      "type": "WEIGHTED_DYNAMIC_OVERLAP",
+      "answer_weight_skill_id": "12648",
+      "fields": [
+        {
+          "name": "result"
+        }
+      ]
+    }
+    response = requests.post(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Content-Type': 'application/json'
+      },
+      'body': JSON.stringify({
+        "pool_id": "1238218",
+        "task_id": "000012e4ca--62e97a75dbab805456309d81",
+        "type": "WEIGHTED_DYNAMIC_OVERLAP",
+        "answer_weight_skill_id": "12648",
+        "fields": [
+          {
+            "name": "result"
+          }
+        ]
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Content-Type", "application/json")
+      .body("{\"pool_id\":\"1238218\",\"task_id\":\"000012e4ca--62e97a75dbab805456309d81\", \"type\":\"WEIGHTED_DYNAMIC_OVERLAP\", \"answer_weight_skill_id\":\"12648\", \"fields\":[{\"name\":\"result\"}]}")
+      .asString();

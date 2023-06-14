@@ -1,0 +1,13 @@
+success:
+  description: The information about the training pool closing progress.
+  value:
+    id: 52829015-033f-4c3a-a7cc-0d7eff235663
+    type: TRAINING.CLOSE
+    status: SUCCESS
+    submitted: '2022-04-07T16:06:15.902'
+    started: '2022-04-07T16:06:15.902'
+    finished: '2022-04-07T16:06:15.902'
+    progress: 100
+    parameters:
+      training_id: '123456'
+    details: {}

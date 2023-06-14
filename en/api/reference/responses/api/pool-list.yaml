@@ -1,0 +1,54 @@
+success:
+  description: The list of pools and their properties in the `items` array.
+  value:
+    items:
+    - id: '32267581'
+      project_id: '81776'
+      private_name: Transcript of audio recordings
+      may_contain_adult_content: true
+      will_expire: '2023-03-09T00:00:00'
+      auto_close_after_complete_delay_seconds: 0
+      reward_per_assignment: 0.07
+      metadata: {}
+      assignment_max_duration_seconds: 600
+      auto_accept_solutions: true
+      auto_accept_period_day: 21
+      assignments_issuing_config:
+        issue_task_suites_in_creation_order: false
+      filter:
+        and:
+        - or:
+          - category: profile
+            key: languages
+            operator: IN
+            value: EN
+      quality_control:
+        configs:
+        - collector_config:
+            type: ASSIGNMENT_SUBMIT_TIME
+            uuid: 38830d4b-930b-43ab-a98f-f52e992fd11a
+            parameters:
+              fast_submit_threshold_seconds: 15
+          rules:
+          - conditions:
+            - key: fast_submitted_count
+              operator: GTE
+              value: 2
+            action:
+              type: RESTRICTION_V2
+              parameters:
+                scope: PROJECT
+                duration_unit: PERMANENT
+      defaults:
+        default_overlap_for_new_task_suites: 3
+      priority: 0
+      owner:
+        id: 6c6e20dc86cca2ae787afcb2629de162
+        myself: true
+      type: REGULAR
+      status: OPEN
+      created: '2022-03-10T07:41:53.626'
+      speed_quality_balance:
+        percent: 100
+        type: TOP_PERCENTAGE_BY_QUALITY
+    has_more: true

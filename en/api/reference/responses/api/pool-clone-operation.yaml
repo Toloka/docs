@@ -1,0 +1,14 @@
+success:
+  description: The information about the pool cloning progress.
+  value:
+    id: 7ea08f99-5e24-47b4-b61f-c177a868d801
+    type: POOL.CLONE
+    status: SUCCESS
+    submitted: '2022-04-07T16:06:15.902'
+    started: '2022-04-07T16:06:15.902'
+    finished: '2022-04-07T16:06:15.902'
+    progress: 100
+    parameters:
+      pool_id: '1'
+    details:
+      pool_id: '2'

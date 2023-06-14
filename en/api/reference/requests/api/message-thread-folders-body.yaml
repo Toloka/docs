@@ -1,0 +1,5 @@
+message_thread_body:
+  description: The object describing the text for the reply.
+  value:
+    folders:
+    - UNREAD

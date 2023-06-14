@@ -1,0 +1,10 @@
+success:
+  description: The information about the client.
+  value:
+    id: 566ec2b0ff0deeaae5f9d500629de162
+    balance: 121.3
+    public_name:
+      EN: Jack Smith
+    company:
+      id: eaf25678e128e14dea651d8c32471f21
+      superintendent_id: 566ec2b0ff0deeaae5f9d500629de162

@@ -1,0 +1,9 @@
+success:
+  description: The detailed information about the project template.
+  value:
+    id: "2dyrYRI5HhCC0giyI7Q5"
+    name: "Billing"
+    image: "https://example.com/product_relevance_large.png"
+    description: ""
+    examples: []
+    default_item_price: 1

@@ -1,0 +1,13 @@
+success:
+  description: The information about the training pool archiving progress.
+  value:
+    id: 95029e60-eace-4a3e-96b9-c72c5e727218
+    type: TRAINING.ARCHIVE
+    status: SUCCESS
+    submitted: '2022-04-07T16:06:15.902'
+    started: '2022-04-07T16:06:15.902'
+    finished: '2022-04-07T16:06:15.902'
+    progress: 100
+    parameters:
+      training_id: '1245598'
+    details: {}

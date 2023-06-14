@@ -1,0 +1,12 @@
+success:
+  description: The list of bans and their properties in the `items` array.
+  value:
+    items:
+    - scope: PROJECT
+      user_id: f25a5f41-94e8-49bf-977f-3611087a16b3
+      project_id: '10'
+      private_comment: Many mistakes
+      will_expire: '2016-04-10T18:08:07'
+      id: '54'
+      created: '2016-03-28T18:08:07'
+    has_more: true

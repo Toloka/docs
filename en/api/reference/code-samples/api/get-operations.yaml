@@ -1,0 +1,50 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X GET 'https://toloka.dev/api/v1/operations' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    for operation in toloka_client.get_operations():
+      print(operation.id, operation.status, operation.details)
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/operations"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+    }
+    response = requests.get(url, headers=headers)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'GET',
+      'url': 'https://toloka.dev/api/v1/operations',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      }
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.get("https://toloka.dev/api/v1/operations")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .asString();

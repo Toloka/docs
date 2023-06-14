@@ -1,0 +1,11 @@
+success:
+  description: The list of project templates and their properties in the `content` array.
+  value:
+    content:
+    - id: "2dyrYRI5HhCC0giyI7Q5"
+      name: "Billing"
+      image: "https://example.com/product_relevance_large.png"
+      description: ""
+      examples: []
+      default_item_price: 1
+    has_more: true

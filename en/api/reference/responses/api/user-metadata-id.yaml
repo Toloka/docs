@@ -1,0 +1,20 @@
+success:
+  description: The detailed information about the Toloker.
+  value:
+    id: 0060ec33ea7938162d024ef1e3cef496
+    country: IN
+    languages:
+    - EN
+    - FR
+    attributes:
+      country_by_phone: IN
+      country_by_ip: IN
+      client_type: TOLOKA_APP
+      user_agent_type: OTHER
+      device_category: SMARTPHONE
+      os_family: ANDROID
+      os_version: 10
+      os_version_major: 10
+      os_version_minor: 0
+      os_version_bugfix: 0
+    adult_allowed: true

@@ -1,0 +1,5 @@
+assignment_body:
+  description: The response properties that you want to change.
+  value:
+    status: ACCEPTED
+    public_comment: OK

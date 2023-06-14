@@ -1,0 +1,31 @@
+success:
+  description: The detailed information about the message thread.
+  value:
+    id: 643933af08583e0a19c2167e
+    topic:
+      EN: Test bonus
+    interlocutors_inlined: true
+    interlocutors:
+    - id: 6c6e20dc86cca2ae787afcb2629de162
+      role: REQUESTER
+      myself: true
+    - id: a1b0b42923c429daa2c764d7ccfc364d
+      role: USER
+    messages_inlined: true
+    messages:
+    - text:
+        EN: Thank you
+      from:
+        id: 6c6e20dc86cca2ae787afcb2629de162
+        role: REQUESTER
+        myself: true
+      created: '2023-04-14T11:06:23.096'
+    compose_details:
+      recipients_select_type: DIRECT
+      recipients_ids:
+      - a1b0b42923c429daa2c764d7ccfc364d"
+    meta: {}
+    folders:
+    - OUTBOX
+    answerable: false
+    created: '2023-04-14T11:06:23.096'

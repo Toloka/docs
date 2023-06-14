@@ -1,0 +1,13 @@
+success:
+  description: The information about the test notification result.
+  value:
+    success: true
+    responseReceivedAt: '2022-02-14T12:22:58'
+    errorType: WRONG_STATUS_CODE
+    originalStatusCode: 1
+    uuids:
+    - uuid1
+    - uuid2
+    - uuid3
+    - uuid4
+    - uuid5

@@ -1,0 +1,80 @@
+single_task:
+    description: The details about the task creation result.
+    summary: Create a single task
+    value:
+      id: '000248a756--6422ca21e5997032541d856b'
+      created: '2023-03-28T11:06:09.827'
+      pool_id: '38315862'
+      input_values:
+        image_url: https://example.com/image1.jpg
+      known_solutions:
+      - output_values:
+          result: OK
+          like: false
+        correctness_weight: 0.8
+      - output_values:
+          result: OK
+          like: true
+        correctness_weight: 1
+      baseline_solutions:
+      - output_values:
+          result: OK
+          like: false
+        confidence_weight: 0.8
+      - output_values:
+          result: OK
+          like: true
+        confidence_weight: 1
+      message_on_unknown_solution: The cat is in a good mood.
+      overlap: 3
+      infinite_overlap: false
+      remaining_overlap: 3
+      reserved_for: []
+      unavailable_for: []
+single_task_async:
+    summary: Create a single task asynchronously
+    value:
+      id: 2ed92b7f-75c0-4771-ae2f-3911232d6d4e
+      type: TASK.BATCH_CREATE
+      status: RUNNING
+      submitted: '2020-12-23T16:26:20.131'
+      progress: 0
+      parameters:
+        open_pool: false
+        allow_defaults: false
+        skip_invalid_items: false
+multiple_tasks:
+    summary: Create multiple tasks synchronously
+    value:
+      items:
+        '0':
+          id: f432cac2-7184-47a3-8220-12ce362cb208
+          pool_id: '21'
+          input_values:
+            image: http://images.com/1.png
+          overlap: 3
+          created: '2016-09-29T18:04:00'
+      validation_errors:
+        '1':
+          input_values.image:
+            code: VALUE_REQUIRED
+            message: Value must be present and not equal to null
+multiple_tasks_async:
+    summary: Create multiple tasks asynchronously
+    value:
+      id: 26e130ad3652443a3dc5094791e48ef9
+      type: TASK.BATCH_CREATE
+      status: FAIL
+      submitted: '2015-12-13T23:32:01'
+      started: '2015-12-13T23:33:00'
+      finished: '2015-12-13T23:34:12'
+      parameters:
+        allow_defaults: false
+        skip_invalid_items: false
+        open_pool: false
+      details:
+        total_count: 2
+        valid_count: 1
+        not_valid_count: 1
+        success_count: 0
+        failed_count: 2

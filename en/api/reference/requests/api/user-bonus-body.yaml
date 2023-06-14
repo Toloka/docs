@@ -1,0 +1,12 @@
+user_bonus_body:
+  description: The detailed information about the bonus.
+  value:
+    user_id: a1b0b42923c429daa2c764d7ccfc364d
+    amount: 0.5
+    private_comment: Good job!
+    public_title:
+      EN: Perfect job!
+    public_message:
+      EN: You are the best!
+    without_message: false
+    assignment_id: 000015fccc--63bfc4c358d7a46c32a7b233

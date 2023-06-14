@@ -1,0 +1,14 @@
+success:
+  description: The detailed information about the task item.
+  value:
+    id: QPVvLYdlRPBH9pl7KzBV
+    app_project_id: 8lvN9kBN4wwsj47ZqNal
+    batch_id: 7d0YYJ2Av5OhnLVwAygZ
+    status: NEW
+    input_data:
+      id: '2'
+      text: Cat
+      image_url: https://example.com/image1.jpg
+    output_data: {}
+    errors: []
+    created_at: '2022-01-22T07:44:57.035'

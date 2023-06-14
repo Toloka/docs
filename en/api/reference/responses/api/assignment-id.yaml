@@ -1,0 +1,31 @@
+success:
+  description: The detailed information about the response.
+  value:
+    id: 00022cfa46--637cf4098ccdeb4a260737de
+    task_suite_id: 00022cfa46--637cf4098ccdeb4a260737dc
+    pool_id: '36502086'
+    user_id: d26d7d094e0dbb67ec46a269dc5dd15c
+    status: ACCEPTED
+    reward: 0.01
+    tasks:
+    - id: 00022cfa46--637cf3fb6e13181a0164e7e6
+      input_values:
+        image: https://example.com/image1.jpg
+      pool_id: '36502086'
+      overlap: 3
+      infinite_overlap: false
+      reserved_for: []
+      unavailable_for: []
+      created: '2022-11-22T16:08:27.575'
+      remaining_overlap: 0
+    solutions:
+    - output_values:
+        result: cat
+    mixed: true
+    automerged: false
+    created: '2022-11-22T16:08:41.802'
+    submitted: '2022-11-22T16:09:08.603'
+    accepted: '2022-11-22T16:09:08.603'
+    owner:
+      id: 6c6e20dc86cca2ae787afcb2629de162
+      myself: true
