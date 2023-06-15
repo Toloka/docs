@@ -223,7 +223,7 @@ To ask Tolokers to clarify their choice if they selected the **No business** che
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/qBoVoTDu3ttDpU)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/iEyXcTb04GW3db)
 
 ## Add a layout {#add-layout}
 
