@@ -2,9 +2,9 @@
 
 For this type of project, you can use the **Product recognition in images** preset.
 
-This preset is used for recognizing products in images by labeling objects and areas.
+You can use this preset to classify, rate or moderate content. The preset can also be used to label images for computer vision training.
 
-Take a look at the example: the labeling interface includes an image and a bounding box.
+Take a look at the example: the interface includes an image and tools for labeling objects and areas within it.
 
 Note that validation and task layout are already configured in this Template Builder sample code.
 
@@ -153,6 +153,121 @@ In this example, the text is highlighted with a blue border.
 ```
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/QB7ZXAcB4Fgciy)
+
+## Add product categories {#add-categories}
+
+If you need to categorize selected items, create labels for each category using the `labels` property of the [field.image-annotation](../reference/field.image-annotation.md) component. Note that if you use labels, you need to add at least two.
+
+In this example, three buttons are used in the interface for selecting three categories of products: shoes, jeans and dresses. 
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "field.image-annotation",
+  "image": {
+    "type": "data.input",
+    "path": "image"
+  },
+  "data": {
+    "type": "data.output",
+    "path": "result"
+  },
+  "labels": [
+    {
+      "label": "Shoes",
+      "value": "shoes"
+    },
+    {
+      "label": "Jeans",
+      "value": "jeans"
+    },
+    {
+      "label": "Dress",
+      "value": "dress"
+    }
+  ],
+  "fullHeight": true,
+  "shapes": {
+    "rectangle": true
+  },
+  "validation": {
+    "type": "condition.required"
+  }
+}
+
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/giq8piZW4GVZst)
+
+## Add a checkbox and a clarifying question {#add-checkbox}
+
+You can add a checkbox for reporting on problems with an image. 
+
+To ask Tolokers to clarify their choice if they selected the **Cannot label the product** checkbox, add the [helper.if](../reference/helper.if.md) component which contains [field.radio-group](../reference/field.radio-group.md).
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "field.checkbox",
+  "preserveFalse": true,
+  "label": "Cannot label the product",
+  "hint": "There is no product in the photo, the photo is of bad quality, the product is not fully visible, the photo didn't load",
+  "data": {
+    "type": "data.output",
+    "path": "not_found"
+  }
+},
+{
+  "type": "helper.if",
+  "condition": {
+    "type": "condition.equals",
+    "data": {
+      "type": "data.output",
+      "path": "not_found"
+    },
+    "to": true
+   },
+  "then": {
+    "type": "field.radio-group",
+    "label": "To clarify your choice, select one of the options:",
+    "options": [
+      {
+        "label": "There is no product in the photo",
+        "value": "no_product"
+      },
+      {
+        "label": "The photo is of bad quality",
+        "value": "bad_quality"
+      },
+      {
+        "label": "The product isn't fully visible",
+        "value": "not_fully_visible"
+      },
+      {
+        "label": "Loading error",
+              "value": "error"
+      }
+    ],
+    "data": {
+      "type": "data.output",
+      "path": "option"
+    },
+    "validation": {
+     "type": "condition.required",
+      "hint": "Select one option"
+    }
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/SS0ShREc4GVp4Q)
+
 
 ## Add a field for comments {#add-text-area}
 
