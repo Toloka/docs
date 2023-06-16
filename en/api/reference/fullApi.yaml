@@ -35,7 +35,7 @@ tags:
 
       - Pools with different filter settings and/or a different price per task are sent out for completion when the [pool opens](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/open).
 
-      <aside class="note">Wait for the operation completion (changing its <a href="https://toloka.ai/docs/api/api-reference/#get-/operations/-id-">status</a> to <code>SUCCESS</code> or <code>FAIL</code>) before performing any other operation except [pool creation](#post-/pools).</aside>
+      <aside class="note">Wait for the operation completion (changing its <a href="https://toloka.ai/docs/api/api-reference/#get-/operations/-id-">status</a> to <code>SUCCESS</code> or <code>FAIL</code>) before performing any other operation except <a href="https://toloka.ai/docs/api/api-reference/#post-/pools">pool creation</a>.</aside>
 
       ### See also
 
@@ -100,8 +100,8 @@ tags:
       the [pool](https://toloka.ai/docs/api/api-reference/#tag--pools)).
 
 
-      If you want to create the task suites yourself, follow the instructions in
-      [Overview](https://toloka.ai/docs/api/api-reference/#tag--task-suite).
+      If you want to create the task suites yourself, follow the instructions in the
+      [Task suite](https://toloka.ai/docs/api/api-reference/#tag--task-suite) section.
 
       ### See also
 
