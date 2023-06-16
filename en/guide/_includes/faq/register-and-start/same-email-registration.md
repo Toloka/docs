@@ -8,6 +8,6 @@ For example, you have a Google account with the <example@google.com> email addre
 
 - You can register a new Toloka account with a GitHub account associated with the <example@github.com> email address.
 
-- You can't register a new Toloka account with a GitHub account associated with the <example@google.com> email addres, but you can add GitHub service with this email address to the existing Toloka account.
+- You can't register a new Toloka account with a GitHub account associated with the <example@google.com> email address, but you can add GitHub service with this email address to the existing Toloka account.
 
 {% endcut %}

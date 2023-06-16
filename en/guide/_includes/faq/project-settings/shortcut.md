@@ -1,6 +1,6 @@
 {% cut "How do I create a shortcut for adding a polygon in "image-annotation"?" %}
 
-To create a shortcut, add the following action to the "onKey" method:
+To create a shortcut, add the following action to the `onKey` method:
 
 ```javascript
 onKey: function(key) {

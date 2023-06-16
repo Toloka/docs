@@ -8,4 +8,6 @@ If you register in Toloka as a Toloker, you can compare offers from other reques
 
 Define the page price, multiply it by the overlap (it's usually 3–5 for a classification task) and add 20% VAT. Try topping up your account by $10 first, then continue topping it up based on the performance dynamics.
 
+Refer to the [pricing](../../../concepts/dynamic-pricing.md) section for more information about how to set up pricing and what the price suggested by Toloka is based on.
+
 {% endcut %}

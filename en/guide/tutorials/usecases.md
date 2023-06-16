@@ -130,7 +130,7 @@ Learn more about how to [set up pricing](../concepts/dynamic-pricing.md#section_
 
 {% include [faq-elements-web-pages](../_includes/faq/questions-about-templates/elements-web-pages.md) %}
 
-{% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
+{% include [faq-shortcut](../_includes/faq/project-settings/shortcut.md) %}
 
 {% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
 

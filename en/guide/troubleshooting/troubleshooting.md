@@ -14,9 +14,9 @@ In the section contents, select the stage where you encountered the problem and 
 
   {% include [troubleshooting-account-type-mistake](../_includes/troubleshooting/register-and-start/account-type-mistake.md) %}
 
-  {% include [troubleshooting-no-sms](../_includes/troubleshooting/register-and-start/no-sms.md) %}
+  {% include [troubleshooting-microsoft-sso](../_includes/troubleshooting/register-and-start/microsoft-sso.md) %}
 
-  {% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
+  {% include [troubleshooting-facebook-problem](../_includes/troubleshooting/register-and-start/facebook-problem.md) %}
 
 - Sandbox
 
@@ -182,9 +182,9 @@ In the section contents, select the stage where you encountered the problem and 
 
   {% include [troubleshooting-account-type-mistake](../_includes/troubleshooting/register-and-start/account-type-mistake.md) %}
 
-  {% include [troubleshooting-no-sms](../_includes/troubleshooting/register-and-start/no-sms.md) %}
+  {% include [troubleshooting-microsoft-sso](../_includes/troubleshooting/register-and-start/microsoft-sso.md) %}
 
-  {% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
+  {% include [troubleshooting-facebook-problem](../_includes/troubleshooting/register-and-start/facebook-problem.md) %}
 
   ### Sandbox {#sandbox}
 

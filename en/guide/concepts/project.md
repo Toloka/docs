@@ -153,8 +153,6 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 
 {% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
 
-{% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
-
 {% include [faq-large-number-objects](../_includes/faq/questions-about-templates/large-number-objects.md) %}
 
 {% include [faq-control-area-selection](../_includes/faq/questions-about-templates/control-area-selection.md) %}
