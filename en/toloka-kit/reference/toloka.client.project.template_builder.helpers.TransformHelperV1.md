@@ -1,5 +1,5 @@
 # TransformHelperV1
-`toloka.client.project.template_builder.helpers.TransformHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L257)
+`toloka.client.project.template_builder.helpers.TransformHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/helpers.py#L210)
 
 ```python
 TransformHelperV1(
@@ -11,15 +11,16 @@ TransformHelperV1(
 )
 ```
 
-Creates a new array by transforming each of the elements in the original array.
+Creates a new array by transforming elements of another array.
 
 
-For example, you can convert an array of image links to view.image components to display these images. This may be
-useful if the number of images in the array is unknown in advance
+For example, you can create an array of `view.image` components from an array of links to images.
+
+For more information, see [helper.transform](https://toloka.ai/docs/template-builder/reference/helper.transform).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`into`|**Optional\[Any\]**|<p>Template to transform elements in the array. The array value can be substituted using the data.local component. To do this, use the construction { &quot;type&quot;: &quot;data.local&quot;, &quot;path&quot;: &quot;item&quot;}</p>
-`items`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Any\]\]\]**|<p>The array that you want to convert. You can specify an array in three ways:</p> <ul> <li>Specify the array itself. Example: [&quot;one&quot;, &quot;two&quot;, &quot;three&quot;].</li> <li>Insert a reference to data (input, output, or internal). Example: {&quot;type&quot;: &quot;data.input&quot;,   &quot;path&quot;: &quot;path.to.data&quot;}.</li> <li>Use a reference to another configuration element. Example: {&quot;$ref&quot;: &quot;vars.myarray&quot;}.</li> </ul>
+`into`|**Optional\[Any\]**|<p>The template of an element of the new array. To insert values from the source array use the [LocalData](toloka.client.project.template_builder.data.LocalData.md) component with the data `path` set to `item`.</p>
+`items`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Any\]\]\]**|<p>The source array.</p>

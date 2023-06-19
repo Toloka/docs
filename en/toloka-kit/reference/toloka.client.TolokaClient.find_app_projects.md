@@ -1,5 +1,5 @@
 # find_app_projects
-`toloka.client.TolokaClient.find_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3550)
+`toloka.client.TolokaClient.find_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3649)
 
 Finds App projects that match certain criteria.
 
@@ -40,3 +40,17 @@ To iterate over all matching projects you may use the [get_app_projects](toloka.
 * **Return type:**
 
   [AppProjectSearchResult](toloka.client.search_results.AppProjectSearchResult.md)
+
+**Examples:**
+
+Searching active projects based on the App solution with the specified ID.
+
+```python
+search = toloka_client.find_app_projects(
+    app_id = '9lZaMl363jahzra1rrYq', status = 'READY')
+for app_project in search.content:
+    print(app_project.id, app_project.name)
+
+if search.has_more:
+    print('There are more App projects...')
+```

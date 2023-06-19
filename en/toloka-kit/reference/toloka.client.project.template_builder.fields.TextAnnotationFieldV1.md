@@ -1,5 +1,5 @@
 # TextAnnotationFieldV1
-`toloka.client.project.template_builder.fields.TextAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L494)
+`toloka.client.project.template_builder.fields.TextAnnotationFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L483)
 
 ```python
 TextAnnotationFieldV1(
@@ -17,23 +17,20 @@ TextAnnotationFieldV1(
 )
 ```
 
-A component for text segmentation.
+A component for text annotation.
 
 
-Use it to select multiple words, individual words, or letters in the text and label them with values. You can create
-multiple categories to label parts of the text, like all nouns and adjectives.
-
-You can use plugin.field.text-annotation.hotkeys to assign keyboard shortcuts for selecting categories.
+For more information, see [field.text-annotation](https://toloka.ai/docs/template-builder/reference/field.text-annotation).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`adjust`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>If the property value is set to words, only words can be selected in the text. If you don&#x27;t use this property, any part of a line can be selected.</p>
-`content`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The text where the Toloker has to select part of a line.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>This property blocks the component. If `True`, the component is unavailable to the Toloker. The default value is `False`.</p>
-`labels`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Label](toloka.client.project.template_builder.fields.TextAnnotationFieldV1.Label.md)\]\]\]\]**|<p>A category.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`adjust`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>If `adjust` is set to `words`, entire words are selected and annotated. If `adjust` is omitted, any part of a text can be selected.</p>
+`content`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A text for annotation.</p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Disabling the component. </p><p>Default value: `False`.</p>
+`labels`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Label](toloka.client.project.template_builder.fields.TextAnnotationFieldV1.Label.md)\]\]\]\]**|<p>A list of annotation categories.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

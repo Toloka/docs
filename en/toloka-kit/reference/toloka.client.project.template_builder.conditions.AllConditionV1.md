@@ -1,5 +1,5 @@
 # AllConditionV1
-`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L45)
+`toloka.client.project.template_builder.conditions.AllConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L43)
 
 ```python
 AllConditionV1(
@@ -11,24 +11,20 @@ AllConditionV1(
 )
 ```
 
-Checks that all child conditions are met.
+Checks that all nested conditions are met.
 
 
-If any of the conditions is not met, the component returns 'false'.
-
-If you only need one out of several conditions to be met, use the condition.any component. You can also combine
-these components.
+For more information, see [condition.all](https://toloka.ai/docs/template-builder/reference/condition.all).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`conditions`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p>A set of conditions that must be met.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`conditions`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p>A list of conditions.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>
 
 **Examples:**
 
-How to check several conditions.
 
 ```python
 coordinates_validation = tb.conditions.AllConditionV1(

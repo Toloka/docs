@@ -1,17 +1,17 @@
 # FailedOperation
-`toloka.client.exceptions.FailedOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/exceptions.py#L40)
+`toloka.client.exceptions.FailedOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/exceptions.py#L41)
 
 ```python
 FailedOperation(self, *, operation: Optional[Any] = None)
 ```
 
-Raised when an operation failed.
+An exception that is raised when an operation fails.
 
 
-Could be raised when an inner operation failed.
+It could be raised when an inner operation fails.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`operation`|**Optional\[Any\]**|<p>Instance of failed operation.</p>
+`operation`|**Optional\[Any\]**|<p>The instance of the failed operation.</p>

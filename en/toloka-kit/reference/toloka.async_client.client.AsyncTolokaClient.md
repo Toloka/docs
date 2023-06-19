@@ -1,5 +1,5 @@
 # AsyncTolokaClient
-`toloka.async_client.client.AsyncTolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L27)
+`toloka.async_client.client.AsyncTolokaClient` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L29)
 
 ```python
 AsyncTolokaClient(
@@ -27,7 +27,7 @@ All arguments, same as in TolokaClient.
 | Method | Description |
 | :------| :-----------|
 [accept_assignment](toloka.async_client.client.AsyncTolokaClient.accept_assignment.md)| Accepts an assignment.
-[add_message_thread_to_folders](toloka.async_client.client.AsyncTolokaClient.add_message_thread_to_folders.md)| Adds a message chain to one or more folders ("unread", "important" etc.)
+[add_message_thread_to_folders](toloka.async_client.client.AsyncTolokaClient.add_message_thread_to_folders.md)| Adds a message thread to folders.
 [aggregate_solutions_by_pool](toloka.async_client.client.AsyncTolokaClient.aggregate_solutions_by_pool.md)| Starts aggregation of responses in all completed tasks in a pool.
 [aggregate_solutions_by_task](toloka.async_client.client.AsyncTolokaClient.aggregate_solutions_by_task.md)| Aggregates responses to a single task on the Toloka server.
 [archive_app_project](toloka.async_client.client.AsyncTolokaClient.archive_app_project.md)| Archives an App project.
@@ -48,7 +48,7 @@ All arguments, same as in TolokaClient.
 [close_pool_for_update_async](toloka.async_client.client.AsyncTolokaClient.close_pool_for_update_async.md)| Closes a pool that is to be updated. Sends an asynchronous request to Toloka.
 [close_training](toloka.async_client.client.AsyncTolokaClient.close_training.md)| Closes a training.
 [close_training_async](toloka.async_client.client.AsyncTolokaClient.close_training_async.md)| Closes a training. Sends an asynchronous request to Toloka.
-[compose_message_thread](toloka.async_client.client.AsyncTolokaClient.compose_message_thread.md)| Sends a message to a Toloker.
+[compose_message_thread](toloka.async_client.client.AsyncTolokaClient.compose_message_thread.md)| Creates a message thread and sends the first thread message to Tolokers.
 [create_app_batch](toloka.async_client.client.AsyncTolokaClient.create_app_batch.md)| Creates a batch with task items in an App project in Toloka.
 [create_app_item](toloka.async_client.client.AsyncTolokaClient.create_app_item.md)| Creates an App task item in Toloka.
 [create_app_items](toloka.async_client.client.AsyncTolokaClient.create_app_items.md)| Creates task items in an App project in Toloka and adds them to an existing batch.
@@ -91,7 +91,7 @@ All arguments, same as in TolokaClient.
 [find_webhook_subscriptions](toloka.async_client.client.AsyncTolokaClient.find_webhook_subscriptions.md)| Finds webhook subscriptions that match certain criteria.
 [from_sync_client](toloka.async_client.client.AsyncTolokaClient.from_sync_client.md)| None
 [get_aggregated_solutions](toloka.async_client.client.AsyncTolokaClient.get_aggregated_solutions.md)| Finds all aggregated responses that match certain criteria.
-[get_analytics](toloka.async_client.client.AsyncTolokaClient.get_analytics.md)| Sends analytics queries, for example, to estimate the percentage of completed tasks in the pool
+[get_analytics](toloka.async_client.client.AsyncTolokaClient.get_analytics.md)| Sends analytics requests to Toloka.
 [get_app](toloka.async_client.client.AsyncTolokaClient.get_app.md)| Gets information from Toloka about an App solution.
 [get_app_batch](toloka.async_client.client.AsyncTolokaClient.get_app_batch.md)| Gets information from Toloka about a batch in an App project.
 [get_app_batches](toloka.async_client.client.AsyncTolokaClient.get_app_batches.md)| Finds all batches that match certain criteria in an App project.
@@ -135,7 +135,7 @@ All arguments, same as in TolokaClient.
 [open_pool_async](toloka.async_client.client.AsyncTolokaClient.open_pool_async.md)| Opens a pool. Sends an asynchronous request to Toloka.
 [open_training](toloka.async_client.client.AsyncTolokaClient.open_training.md)| Opens a training.
 [open_training_async](toloka.async_client.client.AsyncTolokaClient.open_training_async.md)| Opens a training. Sends an asynchronous request to Toloka.
-[patch_app_batch](toloka.async_client.client.AsyncTolokaClient.patch_app_batch.md)| Updates an App batch name.
+[patch_app_batch](toloka.async_client.client.AsyncTolokaClient.patch_app_batch.md)| Updates an App batch.
 [patch_assignment](toloka.async_client.client.AsyncTolokaClient.patch_assignment.md)| Changes an assignment status and associated public comment.
 [patch_pool](toloka.async_client.client.AsyncTolokaClient.patch_pool.md)| Changes pool parameters in Toloka.
 [patch_task](toloka.async_client.client.AsyncTolokaClient.patch_task.md)| Changes a task overlap value.
@@ -143,8 +143,8 @@ All arguments, same as in TolokaClient.
 [patch_task_suite](toloka.async_client.client.AsyncTolokaClient.patch_task_suite.md)| Changes task suite parameter values in Toloka.
 [patch_task_suite_overlap_or_min](toloka.async_client.client.AsyncTolokaClient.patch_task_suite_overlap_or_min.md)| Stops issuing the task suites
 [reject_assignment](toloka.async_client.client.AsyncTolokaClient.reject_assignment.md)| Rejects an assignment.
-[remove_message_thread_from_folders](toloka.async_client.client.AsyncTolokaClient.remove_message_thread_from_folders.md)| Deletes a message chain from one or more folders ("unread", "important" etc.)
-[reply_message_thread](toloka.async_client.client.AsyncTolokaClient.reply_message_thread.md)| Replies to a message in thread
+[remove_message_thread_from_folders](toloka.async_client.client.AsyncTolokaClient.remove_message_thread_from_folders.md)| Removes a message thread from folders.
+[reply_message_thread](toloka.async_client.client.AsyncTolokaClient.reply_message_thread.md)| Sends a reply message in a thread.
 [resume_app_batch](toloka.async_client.client.AsyncTolokaClient.resume_app_batch.md)| Resumes annotation of a batch of task items in an App project.
 [set_user_restriction](toloka.async_client.client.AsyncTolokaClient.set_user_restriction.md)| Restricts access to projects or pools for a Toloker.
 [set_user_skill](toloka.async_client.client.AsyncTolokaClient.set_user_skill.md)| Assigns a skill to a Toloker.
@@ -155,5 +155,5 @@ All arguments, same as in TolokaClient.
 [update_project](toloka.async_client.client.AsyncTolokaClient.update_project.md)| Updates all project parameters in Toloka.
 [update_skill](toloka.async_client.client.AsyncTolokaClient.update_skill.md)| Makes changes to the skill
 [update_training](toloka.async_client.client.AsyncTolokaClient.update_training.md)| Updates parameters of a training in Toloka.
-[upsert_webhook_subscriptions](toloka.async_client.client.AsyncTolokaClient.upsert_webhook_subscriptions.md)| Creates (upsert) many webhook-subscriptions.
+[upsert_webhook_subscriptions](toloka.async_client.client.AsyncTolokaClient.upsert_webhook_subscriptions.md)| Creates (upsert) webhook subscriptions.
 [wait_operation](toloka.async_client.client.AsyncTolokaClient.wait_operation.md)| Asynchronous version of wait_operation

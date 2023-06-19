@@ -1,5 +1,5 @@
 # Attributes
-`toloka.client.user.User.Attributes` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/user.py#L20)
+`toloka.client.user.User.Attributes` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/user.py#L20)
 
 ```python
 Attributes(

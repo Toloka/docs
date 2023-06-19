@@ -1,5 +1,5 @@
 # BaseConditionV1
-`toloka.client.project.template_builder.conditions.BaseConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L33)
+`toloka.client.project.template_builder.conditions.BaseConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L33)
 
 ```python
 BaseConditionV1(
@@ -10,13 +10,10 @@ BaseConditionV1(
 )
 ```
 
-Check an expression against a condition.
-
-
-For example, you can check that a text field is filled in.
+A base class for conditions.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

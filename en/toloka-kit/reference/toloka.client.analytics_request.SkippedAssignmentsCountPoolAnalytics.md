@@ -1,14 +1,14 @@
 # SkippedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.SkippedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L85)
+`toloka.client.analytics_request.SkippedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L86)
 
 ```python
 SkippedAssignmentsCountPoolAnalytics(self, *, subject_id: str)
 ```
 
-Number of assignments in the "skipped" status in the pool
+Counts the number of assignments with the `SKIPPED` status in a pool.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`subject_id`|**str**|<p>ID of the object you want to get analytics about.</p>
+`subject_id`|**str**|<p>The ID of a pool to get analytics about.</p>

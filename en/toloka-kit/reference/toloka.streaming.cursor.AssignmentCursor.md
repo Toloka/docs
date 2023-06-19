@@ -1,5 +1,5 @@
 # AssignmentCursor
-`toloka.streaming.cursor.AssignmentCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/cursor.py#L217)
+`toloka.streaming.cursor.AssignmentCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L245)
 
 ```python
 AssignmentCursor(
@@ -38,19 +38,21 @@ AssignmentCursor(
     expired_lt: Optional[datetime] = None,
     expired_lte: Optional[datetime] = None,
     expired_gt: Optional[datetime] = None,
-    expired_gte: Optional[datetime] = None
+    expired_gte: Optional[datetime] = None,
+    time_lag: timedelta = ...
 )
 ```
 
-Iterator over Assignment objects of seleted AssignmentEventType.
+Iterator over Assignment objects of selected AssignmentEventType.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search assignments.</p>
-`request`|**[AssignmentSearchRequest](toloka.client.search_requests.AssignmentSearchRequest.md)**|<p>Base request to search assignments by.</p>
 `event_type`|**Any**|<p>Assignments event&#x27;s type to search.</p>
+`request`|**[AssignmentSearchRequest](toloka.client.search_requests.AssignmentSearchRequest.md)**|<p>Base request to search assignments by.</p>
+`_time_lag`|**-**|<p>Time lag between cursor time field upper bound and real time. Default is 1 minute. This lag is required to keep cursor consistent. Lowering this value will make cursor process events faster, but raises probability of missing some events in case of concurrent operations.</p>
 
 **Examples:**
 

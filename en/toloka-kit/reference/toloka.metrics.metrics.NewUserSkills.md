@@ -1,10 +1,11 @@
 # NewUserSkills
-`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L267)
+`toloka.metrics.metrics.NewUserSkills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/metrics.py#L271)
 
 ```python
 NewUserSkills(
     self,
     skill_id: str,
+    cursor_time_lag: timedelta = ...,
     count_name: Optional[str] = None,
     value_name: Optional[str] = None,
     join_events: bool = False,
@@ -22,6 +23,7 @@ Tracking Tolokers' skills.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `skill_id`|**str**|<p>Which skill we will be tracking.</p>
+`cursor_time_lag`|**timedelta**|<p>Time lag for cursor. This controls time lag between user skills being updated and this metric being updated. See BaseCursor.time_lag for details and reasoning behind this.</p>
 `count_name`|**Optional\[str\]**|<p>Metric name for a count of new skill assignments. When skill changes it counts to.</p>
 `value_name`|**Optional\[str\]**|<p>Metric name for exact values of new skill level for each skill assignment. It could be useful to track mean value or some medians.</p>
 `join_events`|**bool**|<p>Count all events in one point.  Default `False`. &quot;Values&quot; never join.</p>

@@ -1,5 +1,5 @@
 # create_user_bonuses
-`toloka.client.TolokaClient.create_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L2937)
+`toloka.client.TolokaClient.create_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3033)
 
 Creates rewards for Tolokers.
 
@@ -12,7 +12,8 @@ You can send a maximum of 10,000 requests of this kind per day.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `user_bonuses`|**List\[[UserBonus](toloka.client.user_bonus.UserBonus.md)\]**|<p>To whom, how much to pay and for what.</p>
-`operation_id`|**Optional\[UUID\]**|<p>Operation ID. If asynchronous creation is used, by this identifier you can later get results of creating bonuses.</p>
+`operation_id`|**Optional\[UUID\]**|<p>The ID of the operation conforming to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122). We recommended sending the operation ID in the `POST` requests to avoid accidental errors: when you send several requests with the same `operation_id`, the operation will be performed only once.</p>
+`async_mode`|**Optional\[bool\]**|<p>Request processing mode:</p> <ul> <li>`True` — Asynchronous operation is started internally.</li> <li>`False` — The request is processed synchronously.</li> </ul> <p></p><p>Default value: `True`.</p>
 `skip_invalid_items`|**Optional\[bool\]**|<p>Validation parameters of objects:</p> <ul> <li>`True` — Award a bonus if the object with bonus information passed validation. Otherwise, skip the bonus.</li> <li>`False` — Default behavior. Stop the operation and don&#x27;t award bonuses if at least one object didn&#x27;t pass validation.</li> </ul>
 
 * **Returns:**

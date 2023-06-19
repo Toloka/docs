@@ -1,5 +1,5 @@
 # NotConditionV1
-`toloka.client.project.template_builder.conditions.NotConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L181)
+`toloka.client.project.template_builder.conditions.NotConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L156)
 
 ```python
 NotConditionV1(
@@ -11,14 +11,14 @@ NotConditionV1(
 )
 ```
 
-Returns the inverse of the specified condition.
+Inverts a condition.
 
 
-For example, if the specified condition is met (returns true), then condition.not will return false.
+For more information, see [condition.not](https://toloka.ai/docs/template-builder/reference/condition.not).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`condition`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The condition for which the inverse is returned.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`condition`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The condition to invert.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

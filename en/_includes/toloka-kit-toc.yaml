@@ -87,13 +87,13 @@ items:
           href: ../toloka-kit/recipes/get-attachments.md
         - name: Download attachments
           href: ../toloka-kit/recipes/download-attachment.md
-      - name: Bonuses
+      - name: Rewards
         items:
-        - name: Issue bonuses to Tolokers
+        - name: Issue rewards to Tolokers
           href: ../toloka-kit/recipes/assign-reward.md
-        - name: Get list of all bonuses issued
+        - name: Get list of all rewards issued
           href: ../toloka-kit/recipes/get-rewards.md
-        - name: Get bonus details
+        - name: Get reward details
           href: ../toloka-kit/recipes/get-reward-by-id.md
       - name: Messages
         items:

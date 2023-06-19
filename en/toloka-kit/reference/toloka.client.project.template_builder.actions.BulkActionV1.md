@@ -1,5 +1,5 @@
 # BulkActionV1
-`toloka.client.project.template_builder.actions.BulkActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/actions.py#L34)
+`toloka.client.project.template_builder.actions.BulkActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/actions.py#L33)
 
 ```python
 BulkActionV1(
@@ -10,14 +10,13 @@ BulkActionV1(
 )
 ```
 
-Use this component to call multiple actions at the same time, like to show more than one notification when a button is clicked.
+A group of actions to be called together.
 
 
-Actions are invoked in the order in which they are listed. This means that if two actions write a value to the same
-variable, the variable will always have the second value.
+For more information, see [action.bulk](https://toloka.ai/docs/template-builder/reference/action.bulk).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`payload`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p>An array of actions that you want to call.</p>
+`payload`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]\]\]**|<p>A list of actions.</p>

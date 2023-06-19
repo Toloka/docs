@@ -1,5 +1,5 @@
 # find_apps
-`toloka.async_client.client.AsyncTolokaClient.find_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
 
 Finds App solutions that match certain criteria.
 
@@ -32,3 +32,15 @@ To iterate over all matching solutions you may use the [get_apps](toloka.client.
 * **Return type:**
 
   [AppSearchResult](toloka.client.search_results.AppSearchResult.md)
+
+**Examples:**
+
+
+```python
+search = toloka_client.find_apps()
+for app in search.content:
+    print(app.id, app.name)
+
+if search.has_more:
+    print('There are more App solutions...')
+```

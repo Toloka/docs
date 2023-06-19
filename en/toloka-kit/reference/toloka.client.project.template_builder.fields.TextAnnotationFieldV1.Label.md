@@ -1,5 +1,5 @@
 # Label
-`toloka.client.project.template_builder.fields.TextAnnotationFieldV1.Label` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L512)
+`toloka.client.project.template_builder.fields.TextAnnotationFieldV1.Label` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L498)
 
 ```python
 Label(
@@ -9,9 +9,11 @@ Label(
 )
 ```
 
+An annotation category.
+
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Specify the category name in the label property.</p>
-`value`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Specify the category value in the value property.</p>
+`label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A category name.</p>
+`value`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A value that is saved in data.</p>

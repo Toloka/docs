@@ -1,5 +1,5 @@
 # MarkdownViewV1
-`toloka.client.project.template_builder.view.MarkdownViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L359)
+`toloka.client.project.template_builder.view.MarkdownViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L383)
 
 ```python
 MarkdownViewV1(
@@ -13,35 +13,31 @@ MarkdownViewV1(
 )
 ```
 
-Block for displaying text in Markdown.
+A component for formatting Markdown.
 
 
-The contents of the block are written to the content property in a single line. To insert line breaks, use `\n`.
+The Markdown content must not contain line breaks. To insert them, place `
+` in the text.
+    Straight quotation marks must be escaped: `"`.
 
-Straight quotation marks (`"`) must be escaped like this: `\"`.
+    For more information, see [view.markdown](https://toloka.ai/docs/template-builder/reference/view.markdown).
 
-Note that the `view.markdown` component is resource-intensive and might overload weak devices.
-Do not use this component to display plain text. If you need to display text without formatting, use the `view.text`
-component. If you need to insert a link, use `view.link`, and for an image use `view.image`.
-Links with Markdown are appended with `target="_blank"` (the link opens in a new tab), as well as
-`rel="noopener noreferrer"`
+    Attributes:
+        content: A text with Markdown.
 
-Attributes:
-
-- `content`: Text in Markdown.
-
-**Examples:**
-
-How to add a title and description on the task interface.
+    Example:
+        Adding a title and description using Markdown.
 
 ```python
-header = tb.view.MarkdownViewV1('# Some Header:\n---\nSome detailed description')
+header = tb.view.MarkdownViewV1('# Some Header:
 ```
+Some detailed description')
+        ...
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

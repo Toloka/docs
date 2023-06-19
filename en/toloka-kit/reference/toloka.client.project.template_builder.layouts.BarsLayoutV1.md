@@ -1,5 +1,5 @@
 # BarsLayoutV1
-`toloka.client.project.template_builder.layouts.BarsLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/layouts.py#L39)
+`toloka.client.project.template_builder.layouts.BarsLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/layouts.py#L39)
 
 ```python
 BarsLayoutV1(
@@ -13,19 +13,16 @@ BarsLayoutV1(
 )
 ```
 
-A component that adds top and bottom bars to the content.
+A layout with top and bottom bars.
 
 
-You can use other components inside each part of this component, such as images, text, or options.
-
-The top bar is located at the top edge of the component, and the bottom one is at the bottom edge. The content is
-placed between the bars and takes up all available space.
+For more information, see [layout.bars](https://toloka.ai/docs/template-builder/reference/layout.bars).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The main content.</p>
-`bar_after`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The bar displayed at the bottom edge of the component.</p>
-`bar_before`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The bar displayed at the top edge of the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`bar_after`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The bar displayed below the main content.</p>
+`bar_before`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The bar displayed above the main content.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

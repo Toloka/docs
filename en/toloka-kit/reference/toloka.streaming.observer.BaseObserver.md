@@ -1,5 +1,5 @@
 # BaseObserver
-`toloka.streaming.observer.BaseObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/observer.py#L25)
+`toloka.streaming.observer.BaseObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/observer.py#L25)
 
 ```python
 BaseObserver(self, *, name: Optional[str] = None)
@@ -12,6 +12,7 @@ BaseObserver(self, *, name: Optional[str] = None)
 [delete](toloka.streaming.observer.BaseObserver.delete.md)| Schedule observer to be removed from the pipeline.
 [disable](toloka.streaming.observer.BaseObserver.disable.md)| Prevent observer from being called.
 [enable](toloka.streaming.observer.BaseObserver.enable.md)| Enable observer to be called during pipeline execution.
+[get_unique_key](toloka.streaming.observer.BaseObserver.get_unique_key.md)| This method should return identifier for this observer that is unique in the current pipeline context.
 [inject](toloka.streaming.observer.BaseObserver.inject.md)| None
 [run](toloka.streaming.observer.BaseObserver.run.md)| For standalone usage (out of a Pipeline).
 [should_resume](toloka.streaming.observer.BaseObserver.should_resume.md)| None

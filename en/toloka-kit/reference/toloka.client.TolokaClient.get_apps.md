@@ -1,5 +1,5 @@
 # get_apps
-`toloka.client.TolokaClient.get_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3705)
+`toloka.client.TolokaClient.get_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3883)
 
 Finds all App solutions that match certain criteria.
 
@@ -31,3 +31,12 @@ If you need to sort solutions use the [find_apps](toloka.client.TolokaClient.fin
 * **Yield type:**
 
   Generator\[[App](toloka.client.app.App.md), None, None\]
+
+**Examples:**
+
+
+```python
+apps = toloka_client.get_apps()
+for app in apps:
+    print(app.id, app.name)
+```

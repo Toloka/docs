@@ -1,5 +1,5 @@
 # download_fileobj
-`toloka.streaming.storage.BucketType.download_fileobj` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/storage.py#L152)
+`toloka.streaming.storage.BucketType.download_fileobj` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/storage.py#L152)
 
 ```python
 download_fileobj(

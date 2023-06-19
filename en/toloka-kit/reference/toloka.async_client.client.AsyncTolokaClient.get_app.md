@@ -1,5 +1,5 @@
 # get_app
-`toloka.async_client.client.AsyncTolokaClient.get_app` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
 
 ```python
 async get_app(
@@ -25,3 +25,12 @@ Gets information from Toloka about an App solution.
 * **Return type:**
 
   [App](toloka.client.app.App.md)
+
+**Examples:**
+
+
+```python
+app = toloka_client.get_app('2eN4l59qL2xHB5b8Jqp6')
+print(app.id, app.name)
+print(app.description)
+```

@@ -1,5 +1,5 @@
 # clone_project
-`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L1217)
+`toloka.client.TolokaClient.clone_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1300)
 
 ```python
 clone_project(

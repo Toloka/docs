@@ -1,10 +1,11 @@
 # TaskCursor
-`toloka.streaming.cursor.TaskCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/cursor.py#L263)
+`toloka.streaming.cursor.TaskCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L293)
 
 ```python
 TaskCursor(
     self,
     toloka_client: Union[TolokaClient, AsyncTolokaClient],
+    time_lag: timedelta = ...,
     pool_id: Optional[str] = None,
     overlap: Optional[int] = None,
     id_lt: Optional[str] = None,
@@ -30,6 +31,7 @@ Iterator over tasks by create time.
 | :----------| :----| :-----------|
 `toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search tasks.</p>
 `request`|**[TaskSearchRequest](toloka.client.search_requests.TaskSearchRequest.md)**|<p>Base request to search tasks by.</p>
+`_time_lag`|**-**|<p>Time lag between cursor time field upper bound and real time. Default is 1 minute. This lag is required to keep cursor consistent. Lowering this value will make cursor process events faster, but raises probability of missing some events in case of concurrent operations.</p>
 
 **Examples:**
 

@@ -1,5 +1,5 @@
 # LinkViewV1
-`toloka.client.project.template_builder.view.LinkViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L279)
+`toloka.client.project.template_builder.view.LinkViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L302)
 
 ```python
 LinkViewV1(
@@ -14,23 +14,17 @@ LinkViewV1(
 )
 ```
 
-Universal way to add a link.
+A component showing a link.
 
 
-This link changes color when clicked.
-
-We recommend using this component if you need to insert a link without additional formatting.
-
-If you want to insert a button that will open the link, use the view.action-button and action.open-link components.
-
-To insert a link with a search query, use helper.search-query.
+For more information, see [view.link](https://toloka.ai/docs/template-builder/reference/view.link).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`url`|**Optional\[Any\]**|<p>Link URL.</p>
-`content`|**Optional\[Any\]**|<p>Link text displayed to the Toloker.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`url`|**Optional\[Any\]**|<p>A URL.</p>
+`content`|**Optional\[Any\]**|<p>A link text.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

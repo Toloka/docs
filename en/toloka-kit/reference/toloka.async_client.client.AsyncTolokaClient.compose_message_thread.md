@@ -1,25 +1,22 @@
 # compose_message_thread
-`toloka.async_client.client.AsyncTolokaClient.compose_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.compose_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
 
-Sends a message to a Toloker.
-
-
-The sent message is added to a new message thread.
+Creates a message thread and sends the first thread message to Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`recipients_select_type`|**Union\[[RecipientsSelectType](toloka.client.message_thread.RecipientsSelectType.md), str, None\]**|<p>Method for specifying recipients</p>
-`topic`|**Optional\[Dict\[str, str\]\]**|<p>Post title. You can provide a title in several languages (the message will come in the Toloker&#x27;s language). Format: &quot;&lt;language RU/EN/TR/ID/FR&gt;&quot;: &quot;&lt;topic text&gt;&quot;.</p>
-`text`|**Optional\[Dict\[str, str\]\]**|<p>Message text. You can provide text in several languages (the message will come in the Toloker&#x27;s language). Format: &quot;&lt;language RU/EN/TR/ID/FR&gt;&quot;: &quot;&lt;message text&gt;&quot;.</p>
-`answerable`|**Optional\[bool\]**|<p>Ability to reply to a message:</p> <ul> <li>`True` — The Toloker can respond to the message.</li> <li>`False` — The Toloker can&#x27;t respond to the message.</li> </ul>
-`recipients_ids`|**Optional\[List\[str\]\]**|<p>List of IDs of Tolokers to whom the message will be sent.</p>
-`recipients_filter`|**Optional\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>Filter to select recipients.</p>
+`recipients_select_type`|**Union\[[RecipientsSelectType](toloka.client.message_thread.RecipientsSelectType.md), str, None\]**|<p>The way of specifying message recipients.</p>
+`topic`|**Optional\[Dict\[str, str\]\]**|<p>The message thread title.</p>
+`text`|**Optional\[Dict\[str, str\]\]**|<p>The message text.</p>
+`answerable`|**Optional\[bool\]**|<ul> <li>`True` — Tolokers can respond to your messages.</li> <li>`False` — Tolokers can&#x27;t respond to your messages.</li> </ul>
+`recipients_ids`|**Optional\[List\[str\]\]**|<p>A list of Toloker IDs. It is filled if `recipients_select_type` is `DIRECT`.</p>
+`recipients_filter`|**Optional\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>A filter for selecting Tolokers. It is set if `recipients_select_type` is `FILTER`.</p>
 
 * **Returns:**
 
-  New created thread.
+  The created message thread.
 
 * **Return type:**
 
@@ -27,10 +24,11 @@ The sent message is added to a new message thread.
 
 **Examples:**
 
-If you want to thank Tolokers who have tried to complete your tasks, send them a nice message.
+A message is sent to all Tolokers who have tried to complete your tasks.
+The message is in english. Tolokers can't reply to your message.
 
 ```python
-message_text = "Amazing job! We've just trained our first model with the data YOU prepared for us. Thank you!"
+message_text = "Amazing job! We've just trained our first model with the data you prepared for us. Thank you!"
 toloka_client.compose_message_thread(
     recipients_select_type='ALL',
     topic={'EN': 'Thank you!'},

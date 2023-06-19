@@ -1,5 +1,5 @@
 # InfiniteOverlapParametersMixin
-`toloka.client.primitives.infinite_overlap.InfiniteOverlapParametersMixin` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/primitives/infinite_overlap.py#L6)
+`toloka.client.primitives.infinite_overlap.InfiniteOverlapParametersMixin` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/primitives/infinite_overlap.py#L6)
 
 ```python
 InfiniteOverlapParametersMixin(

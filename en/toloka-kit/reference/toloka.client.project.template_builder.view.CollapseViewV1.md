@@ -1,5 +1,5 @@
 # CollapseViewV1
-`toloka.client.project.template_builder.view.CollapseViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L121)
+`toloka.client.project.template_builder.view.CollapseViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L126)
 
 ```python
 CollapseViewV1(
@@ -14,21 +14,17 @@ CollapseViewV1(
 )
 ```
 
-Expandable block.
+An expandable block.
 
 
-Lets you add hidden content that doesn't need to be shown initially or that takes up a large space.
-
-The block heading is always visible.
-
-If you set the defaultOpened property to true, the block is expanded immediately, but it can be collapsed.
+For more information, see [view.collapse](https://toloka.ai/docs/template-builder/reference/view.collapse).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Content hidden in the block.</p>
-`label`|**Optional\[Any\]**|<p>Block heading.</p>
-`default_opened`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If true, the block is immediately displayed in expanded form. By default, false (the block is collapsed).</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The block content.</p>
+`label`|**Optional\[Any\]**|<p>The block heading.</p>
+`default_opened`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Initial state of the block: `True` — Expanded `False` — Collapsed</p> <p></p><p>Default value: `False`.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

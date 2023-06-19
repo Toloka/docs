@@ -1,5 +1,5 @@
 # find_operations
-`toloka.client.TolokaClient.find_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L2815)
+`toloka.client.TolokaClient.find_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2907)
 
 Finds operations that match certain criteria.
 

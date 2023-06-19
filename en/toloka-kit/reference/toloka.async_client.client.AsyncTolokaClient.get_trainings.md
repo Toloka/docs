@@ -1,5 +1,5 @@
 # get_trainings
-`toloka.async_client.client.AsyncTolokaClient.get_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_trainings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
 
 Finds all trainings that match certain criteria.
 

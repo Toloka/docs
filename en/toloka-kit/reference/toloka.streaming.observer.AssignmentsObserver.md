@@ -1,11 +1,12 @@
 # AssignmentsObserver
-`toloka.streaming.observer.AssignmentsObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/observer.py#L306)
+`toloka.streaming.observer.AssignmentsObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/observer.py#L309)
 
 ```python
 AssignmentsObserver(
     self,
     toloka_client: Union[TolokaClient, AsyncTolokaClient],
     pool_id: str,
+    cursor_time_lag: timedelta = ...,
     *,
     name: Optional[str] = None
 )
@@ -32,6 +33,7 @@ Corresponding assignment events will be passed to the triggered callbacks.
 | :----------| :----| :-----------|
 `toloka_client`|**[AsyncInterfaceWrapper](toloka.util.async_utils.AsyncInterfaceWrapper.md)\[Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]\]**|<p>TolokaClient instance or async wrapper around it.</p>
 `pool_id`|**str**|<p>Pool ID.</p>
+`cursor_time_lag`|**timedelta**|<p>Time lag for cursor. This controls time lag between assignments being added and them being seen by this observer. See BaseCursor.time_lag for details and reasoning behind this.</p>
 
 **Examples:**
 
@@ -49,6 +51,7 @@ observer.on_submitted(handle_submitted)
 
 | Method | Description |
 | :------| :-----------|
+[get_unique_key](toloka.streaming.observer.AssignmentsObserver.get_unique_key.md)| None
 [inject](toloka.streaming.observer.AssignmentsObserver.inject.md)| None
 [on_accepted](toloka.streaming.observer.AssignmentsObserver.on_accepted.md)| None
 [on_any_event](toloka.streaming.observer.AssignmentsObserver.on_any_event.md)| None

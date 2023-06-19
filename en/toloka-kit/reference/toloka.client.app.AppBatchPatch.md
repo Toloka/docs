@@ -1,14 +1,14 @@
 # AppBatchPatch
-`toloka.client.app.AppBatchPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/app/__init__.py#L275)
+`toloka.client.app.AppBatchPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L277)
 
 ```python
 AppBatchPatch(self, *, name: Optional[str] = None)
 ```
 
-"Parameters for changing name of a specific AppBatch
+Parameters of a request for updating an App batch.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`name`|**Optional\[str\]**|<p>Batch name.</p>
+`name`|**Optional\[str\]**|<p>The new batch name.</p>

@@ -1,5 +1,5 @@
 # SchemaConditionV1
-`toloka.client.project.template_builder.conditions.SchemaConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L266)
+`toloka.client.project.template_builder.conditions.SchemaConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L227)
 
 ```python
 SchemaConditionV1(
@@ -12,20 +12,15 @@ SchemaConditionV1(
 )
 ```
 
-Allows validating data using JSON Schema. This is a special format for describing data in JSON format.
+Validates data using the [JSON Schema](https://json-schema.org/learn/getting-started-step-by-step.html).
 
 
-For example, you can describe the data type, the minimum and maximum values, and specify that all values must be
-unique.
-
-This component is useful in the following cases:
-    * If available components don't provide everything you need to configure validation.
-    * If you already have a prepared JSON Schema configuration for the check and you want to use it.
+For more information, see [condition.schema](https://toloka.ai/docs/template-builder/reference/condition.schema).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[Any\]**|<p>Data that should be checked.</p>
+`data`|**Optional\[Any\]**|<p>Data to be validated.</p>
 `schema`|**Optional\[Dict\]**|<p>The schema for validating data.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

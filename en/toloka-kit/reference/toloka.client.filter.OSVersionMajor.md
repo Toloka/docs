@@ -1,5 +1,5 @@
 # OSVersionMajor
-`toloka.client.filter.OSVersionMajor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/filter.py#L611)
+`toloka.client.filter.OSVersionMajor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L611)
 
 ```python
 OSVersionMajor(

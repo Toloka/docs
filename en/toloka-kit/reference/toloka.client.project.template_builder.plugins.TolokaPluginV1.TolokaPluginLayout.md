@@ -1,5 +1,5 @@
 # TolokaPluginLayout
-`toloka.client.project.template_builder.plugins.TolokaPluginV1.TolokaPluginLayout` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L188)
+`toloka.client.project.template_builder.plugins.TolokaPluginV1.TolokaPluginLayout` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L185)
 
 ```python
 TolokaPluginLayout(
@@ -10,5 +10,5 @@ TolokaPluginLayout(
 )
 ```
 
-How to display task.
+A task block layout.
 
