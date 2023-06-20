@@ -6,7 +6,7 @@ Aggregates responses to a single task on the Toloka server.
 
 {% note tip %}
 
-Try [crowd-kit library](https://toloka.ai/en/docs/crowd-kit). It has many aggregation methods and executes on your computer.
+Try [crowd-kit library](https://toloka.ai/docs/crowd-kit). It has many aggregation methods and executes on your computer.
 
 {% endnote %}
 

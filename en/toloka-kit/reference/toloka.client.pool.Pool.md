@@ -47,8 +47,8 @@ In the pool properties, you set the task price, overlap, Toloker selection filte
 Pool tasks are grouped into [task suites](toloka.client.task_suite.TaskSuite.md). Whole task suites are assigned to Tolokers.
 
 Learn more about:
-* [Pools](https://toloka.ai/en/docs/guide/concepts/pool-main)
-* [Pricing](https://toloka.ai/en/docs/guide/concepts/dynamic-pricing)
+* [Pools](https://toloka.ai/docs/guide/pool-main)
+* [Pricing](https://toloka.ai/docs/guide/dynamic-pricing)
 
 ## Parameters Description
 
@@ -66,7 +66,7 @@ Learn more about:
 `public_instructions`|**Optional\[str\]**|<p>The pool instructions for Tolokers. If pool&#x27;s `public_instructions` is not set, then project&#x27;s `public_instructions` is used.</p>
 `auto_close_after_complete_delay_seconds`|**Optional\[int\]**|<p>The pool remains open after all tasks are completed during the specified time in seconds. Use non zero value if:</p> <ul> <li>You process data in real time.</li> <li>The pool must stay open so that you can upload new tasks.</li> <li>Dynamic overlap is enabled in the pool.</li> </ul> <p>Allowed range: from 0 to 259200 seconds (3 days). The default value is 0.</p>
 `dynamic_pricing_config`|**Optional\[[DynamicPricingConfig](toloka.client.pool.dynamic_pricing_config.DynamicPricingConfig.md)\]**|<p>The dynamic pricing settings.</p>
-`auto_accept_solutions`|**Optional\[bool\]**|<ul> <li>`True` — Responses from Tolokers are accepted or rejected automatically based on some rules.</li> <li>`False` — Responses are checked manually. Time reserved for checking is limited by the `auto_accept_period_day` parameter.   Learn more about [non-automatic acceptance](https://toloka.ai/en/docs/guide/concepts/offline-accept).</li> </ul>
+`auto_accept_solutions`|**Optional\[bool\]**|<ul> <li>`True` — Responses from Tolokers are accepted or rejected automatically based on some rules.</li> <li>`False` — Responses are checked manually. Time reserved for checking is limited by the `auto_accept_period_day` parameter.   Learn more about [non-automatic acceptance](https://toloka.ai/docs/guide/offline-accept).</li> </ul>
 `auto_accept_period_day`|**Optional\[int\]**|<p>The number of days reserved for checking responses if the `auto_accept_solutions` parameter is set to `False`.</p>
 `assignments_issuing_config`|**Optional\[[AssignmentsIssuingConfig](toloka.client.pool.Pool.AssignmentsIssuingConfig.md)\]**|<p>Settings for assigning tasks in the pool.</p>
 `priority`|**Optional\[int\]**|<p>The priority of the pool in relation to other pools in the project with the same task price and set of filters. Tolokers are assigned tasks with a higher priority first.</p> <p>Allowed range: from 0 to 100. The default value is 0.</p>
@@ -123,7 +123,7 @@ print(new_pool.id)
 [set_mixer_config](toloka.client.pool.codegen_setter_for_mixer_config.md)| A shortcut setter for mixer_config
 [set_owner](toloka.client.pool.codegen_setter_for_owner.md)| A shortcut setter for owner
 [set_quality_control](toloka.client.pool.codegen_setter_for_quality_control.md)| A shortcut setter for quality_control
-[set_quality_control_configs](toloka.client.pool.codegen_setter_for_quality_control_configs.md)| A shortcut method for setting 
+[set_quality_control_configs](toloka.client.pool.codegen_setter_for_quality_control_configs.md)| A shortcut method for setting
 [set_speed_quality_balance](toloka.client.pool.codegen_setter_for_speed_quality_balance.md)| A shortcut setter for speed_quality_balance
 [set_training_config](toloka.client.pool.codegen_setter_for_training_config.md)| A shortcut setter for training_config
 [set_training_requirement](toloka.client.pool.codegen_setter_for_quality_control_training_requirement.md)| A shortcut setter for quality_control.training_requirement

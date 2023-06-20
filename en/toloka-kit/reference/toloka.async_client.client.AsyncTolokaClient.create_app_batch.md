@@ -26,8 +26,8 @@ that requires `query` and `website_url` keys to be present in input data.
 
 ```python
 new_items = [
-    {'id':'30', 'query':'toloka kit', 'website_url':'https://toloka.ai/en/docs/toloka-kit'},
-    {'id':'31', 'query':'crowd kit', 'website_url':'https://toloka.ai/en/docs/crowd-kit'}
+    {'id':'30', 'query':'toloka kit', 'website_url':'https://toloka.ai/docs/toloka-kit'},
+    {'id':'31', 'query':'crowd kit', 'website_url':'https://toloka.ai/docs/crowd-kit'}
 ]
 toloka_client.create_app_batch(app_project_id = 'Q2d15QBjpwWuDz8Z321g', items = new_items)
 ```

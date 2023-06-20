@@ -11,5 +11,4 @@ A configuration of selecting Tolokers based on a personalized quality forecast.
 Tolokers are sorted by their quality forecast. You can limit the number of the best Tolokers who have access to your tasks.
 It influences quality of results and speed of getting results.
 
-Learn more about [Speed/quality balance](https://toloka.ai/en/docs/guide/concepts/adjust).
-
+Learn more about [Speed/quality balance](https://toloka.ai/docs/guide/adjust).

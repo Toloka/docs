@@ -12,7 +12,7 @@ If you need to sort aggregated responses use the [find_aggregated_solutions](tol
 
 {% note tip %}
 
-Try [crowd-kit library](https://toloka.ai/en/docs/crowd-kit). It has many aggregation methods and executes on your computer.
+Try [crowd-kit library](https://toloka.ai/docs/crowd-kit). It has many aggregation methods and executes on your computer.
 
 {% endnote %}
 

@@ -11,4 +11,4 @@ Settings for assigning task suites in the pool.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`issue_task_suites_in_creation_order`|**Optional\[bool\]**|<p>Task suites are assigned in the order in which they were created.</p> <p>This parameter is used when tasks are [grouped into suites](https://toloka.ai/en/docs/guide/concepts/distribute-tasks-by-pages) manually and the `assignments_issuing_type` project parameter is set to `AUTOMATED`.</p>
+`issue_task_suites_in_creation_order`|**Optional\[bool\]**|<p>Task suites are assigned in the order in which they were created.</p> <p>This parameter is used when tasks are [grouped into suites](https://toloka.ai/docs/guide/distribute-tasks-by-pages) manually and the `assignments_issuing_type` project parameter is set to `AUTOMATED`.</p>

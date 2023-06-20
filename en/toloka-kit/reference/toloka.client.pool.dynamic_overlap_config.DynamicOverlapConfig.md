@@ -25,7 +25,7 @@ The task overlap increases until it reaches `max_overlap` or until the confidenc
 
 Note, that if you use dynamic overlap, then set the `auto_close_after_complete_delay_seconds` pool parameter to a non zero value.
 
-Learn more about the [Dynamic overlap](https://toloka.ai/en/docs/guide/concepts/dynamic-overlap) in the guide.
+Learn more about the [Dynamic overlap](https://toloka.ai/docs/guide/dynamic-overlap) in the guide.
 
 ## Parameters Description
 
