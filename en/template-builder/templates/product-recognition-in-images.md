@@ -2,11 +2,11 @@
 
 For this type of project, you can use the **Product recognition in images** preset.
 
-You can use this preset to classify, rate or moderate content. The preset can also be used to label images for computer vision training.
+You can use this preset to classify, rate or moderate content. It can also be used to label images for computer vision training.
 
 Take a look at the example: the interface includes an image and tools for labeling objects and areas within it.
 
-Note that validation and task layout are already configured in this Template Builder sample code.
+Note that validation, keyboard shortcuts, and task layout are already configured in this example.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/wWPxyb2K4Fb2Aq)
 
@@ -14,7 +14,7 @@ Note that validation and task layout are already configured in this Template Bu
 
 - [view.list](../reference/view.list.md): Displays data in a list.
 
-- [view.markdown](../reference/view.markdown.md): Displays a text in Markdown.
+- [view.markdown](../reference/view.markdown.md): Adds a block for displaying text in Markdown.
 
   {% cut "Show code" %}
 
@@ -25,11 +25,11 @@ Note that validation and task layout are already configured in this Template Bu
       "type": "helper.join",
       "items": [
         "**Clothes category**:",
-          {
-            "type": "data.input",
-            "path": "category"
-          }
-        ],
+        {
+          "type": "data.input",
+          "path": "category"
+        }
+      ],
       "by": " "
     }
   }
@@ -38,7 +38,7 @@ Note that validation and task layout are already configured in this Template Bu
 
   Note that the `view.markdown` component is resource-intensive and might overload weak Toloker devices. Do not use this component to display plain text. If you need to display text without formatting, use the [view.text](../reference/view.text.md) component.
 
-  - [field.image-annotation](../reference/field.image-annotation.md): Lets you select areas using points, rectangles, and polygons.
+- [field.image-annotation](../reference/field.image-annotation.md): Adds a tool for labeling objects or areas within an image using points, rectangles, and polygons.
 
   {% cut "Show code" %}
 
@@ -48,11 +48,11 @@ Note that validation and task layout are already configured in this Template Bu
     "image": {
       "type": "data.input",
       "path": "image"
-      },
+    },
     "data": {
       "type": "data.output",
-        "path": "result"
-      },
+      "path": "result"
+    },
     "fullHeight": true,
     "shapes": {
       "rectangle": true
@@ -64,7 +64,7 @@ Note that validation and task layout are already configured in this Template Bu
   ```
   {% endcut %}
 
-  - [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
 
   {% cut "Show code" %}
 
@@ -111,28 +111,28 @@ To add a detailed description to the task, use the `label` property of the [fiel
 ```json
 {
   "type": "field.image-annotation",
-  "label": "Look at the picture and outine the product",    
+  "label": "Look at the photo and highlight the product that belongs to the specified category with a rectangular selection.",
   "image": {
-     "type": "data.input",
-     "path": "image"
+    "type": "data.input",
+    "path": "image"
   },
   "data": {
-     "type": "data.output",
-     "path": "result"
+    "type": "data.output",
+    "path": "result"
   },
   "fullHeight": true,
   "shapes": {
-     "rectangle": true
+    "rectangle": true
   },
   "validation": {
-     "type": "condition.required"
+    "type": "condition.required"
   }
-} 
+}
 ```
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/zW4MLt1O4FgaBk)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/gSVMk1wW4H8FVF)
 
 
 ## Add a layout {#add-layout}
@@ -147,16 +147,16 @@ In this example, the text is highlighted with a blue border.
   "theme": "info",
   "content": {
     "type": "view.text",
-    "content": "Look at the picture and outline a product"
+    "content": "Look at the photo and highlight the product that belongs to the specified category with a rectangular selection."
   }
-},
+}
 ```
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/QB7ZXAcB4Fgciy)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/b61nCEsv4H8Jzn)
 
 ## Add product categories {#add-categories}
 
-If you need to categorize selected items, create labels for each category using the `labels` property of the [field.image-annotation](../reference/field.image-annotation.md) component. Note that if you use labels, you need to add at least two.
+If you need to categorize selected products, create labels for each category using the `labels` property of the [field.image-annotation](../reference/field.image-annotation.md) component. Note that if you use labels, you need to add at least two.
 
 In this example, three buttons are used in the interface for selecting three categories of products: shoes, jeans and dresses. 
 
@@ -200,13 +200,13 @@ In this example, three buttons are used in the interface for selecting three cat
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/giq8piZW4GVZst)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/EQ7JhH7S4H8Nn3)
 
 ## Add a checkbox and a clarifying question {#add-checkbox}
 
 You can add a checkbox for reporting on problems with an image. 
 
-To ask Tolokers to clarify their choice if they selected the **Cannot label the product** checkbox, add the [helper.if](../reference/helper.if.md) component which contains [field.radio-group](../reference/field.radio-group.md).
+To ask Tolokers to clarify their choice if they selected the **Cannot label the product** checkbox, add the [field.checkbox](../reference/field.checkbox.md) component and the [helper.if](../reference/helper.if.md) component which contains [field.radio-group](../reference/field.radio-group.md).
 
 {% cut "Show code" %}
 
@@ -230,7 +230,7 @@ To ask Tolokers to clarify their choice if they selected the **Cannot label the 
       "path": "not_found"
     },
     "to": true
-   },
+  },
   "then": {
     "type": "field.radio-group",
     "label": "To clarify your choice, select one of the options:",
@@ -249,7 +249,7 @@ To ask Tolokers to clarify their choice if they selected the **Cannot label the 
       },
       {
         "label": "Loading error",
-              "value": "error"
+        "value": "error"
       }
     ],
     "data": {
@@ -257,7 +257,7 @@ To ask Tolokers to clarify their choice if they selected the **Cannot label the 
       "path": "option"
     },
     "validation": {
-     "type": "condition.required",
+      "type": "condition.required",
       "hint": "Select one option"
     }
   }
@@ -278,7 +278,8 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 ```json
 {
   "type": "field.textarea",
-  "label": "Comments",
+  "label": "Leave your comment",
+  "hint": "Describe what product you see in the picture, enter the brand name etc.",
   "placeholder": "Enter text",
   "data": {
     "type": "data.output",
@@ -289,8 +290,78 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/IifhWjIL4FgnF8)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/0jiq2cxp4HA8wV)
 
+## Add a control checkbox {#add-control-checkbox}
+
+If some pictures don't have any products in them, add a control checkbox using [field.checkbox](../reference/field.checkbox.md) component. 
+
+In this example, Toloker will be able to label products only if **There is a product in the photo** option is activated. 
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "field.checkbox",
+  "preserveFalse": true,
+  "label": "There is a product in the photo.",
+  "hint": "Activate this option if you can see a product in the photo.",
+  "data": {
+    "type": "data.output",
+    "path": "found"
+  }
+},
+{
+  "type": "helper.if",
+  "condition": {
+    "type": "condition.equals",
+    "data": {
+      "type": "data.output",
+      "path": "found"
+    },
+    "to": false
+  },
+  "then": {
+    "type": "field.image-annotation",
+    "image": {
+      "type": "data.input",
+      "path": "image"
+    },
+    "data": {
+      "type": "data.output",
+      "path": "result"
+    },
+    "fullHeight": true,
+    "disabled": true,
+    "shapes": {
+      "rectangle": true
+    }
+  },
+  "else": {
+    "type": "field.image-annotation",
+    "image": {
+      "type": "data.input",
+      "path": "image"
+    },
+    "data": {
+      "type": "data.output",
+      "path": "result"
+    },
+    "fullHeight": true,
+    "disabled": false,
+    "shapes": {
+      "rectangle": true
+    },
+    "validation": {
+      "type": "condition.required"
+    }
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/we7gyd3F4H9dhS)
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
