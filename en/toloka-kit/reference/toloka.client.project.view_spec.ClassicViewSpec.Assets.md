@@ -19,7 +19,7 @@ You can link:
     * Toloka assets — libraries that can be linked using the `$TOLOKA_ASSETS` path:
         * `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — [Handlebars template engine](http://handlebarsjs.com/).
         * `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface. Note, that this library requires Handlebars and must be linked after it.
-            For more information, see [Image with area selection](https://toloka.ai/en/docs/guide/concepts/t-components/image-annotation).
+            For more information, see [Image with area selection](https://toloka.ai/docs/guide/t-components/image-annotation).
 
     Add items in the order they should be linked.
 

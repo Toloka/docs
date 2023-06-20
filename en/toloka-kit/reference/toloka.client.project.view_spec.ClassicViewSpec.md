@@ -16,7 +16,7 @@ ClassicViewSpec(
 A task interface defined with HTML, CSS and JS.
 
 
-For more information, see the [guide](https://toloka.ai/en/docs/guide/concepts/spec).
+For more information, see the [guide](https://toloka.ai/docs/guide/spec).
 
 ## Parameters Description
 

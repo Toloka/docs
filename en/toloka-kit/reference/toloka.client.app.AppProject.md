@@ -19,7 +19,7 @@ AppProject(
 )
 ```
 
-An [App](https://toloka.ai/en/docs/toloka-apps/concepts/) project.
+An [App](https://toloka.ai/docs/api/apps-reference/#tag--app-project) project.
 
 
 An App project is based on one of App solutions. It is created with a template interface and preconfigured data specification and quality control rules.

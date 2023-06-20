@@ -17,7 +17,7 @@ TemplateBuilderViewSpec(
 A task interface defined with the [TemplateBuilder](toloka.client.project.template_builder.TemplateBuilder.md).
 
 
-See also [Template Builder](https://toloka.ai/en/docs/template-builder/) in the guide.
+See also [Template Builder](https://toloka.ai/docs/template-builder/) in the guide.
 
 ## Parameters Description
 

@@ -19,7 +19,7 @@ App(
 )
 ```
 
-An [App](https://toloka.ai/en/docs/toloka-apps/concepts/) solution.
+An [App](https://toloka.ai/docs/api/apps-reference/#tag--app) solution.
 
 
 Each App solution targets specific type of tasks which can be solved using Toloka.
