@@ -5,17 +5,17 @@
 async get_user_bonus(self, user_bonus_id: str)
 ```
 
-Gets information about a Toloker's reward.
+Gets information about a Toloker's bonus.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_bonus_id`|**str**|<p>The ID of the reward.</p>
+`user_bonus_id`|**str**|<p>The ID of the bonus.</p>
 
 * **Returns:**
 
-  The information about the reward.
+  The information about the bonus.
 
 * **Return type:**
 

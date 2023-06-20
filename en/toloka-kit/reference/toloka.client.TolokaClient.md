@@ -98,7 +98,7 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [create_tasks_async](toloka.client.TolokaClient.create_tasks_async.md)| Creates tasks in Toloka asynchronously.
 [create_training](toloka.client.TolokaClient.create_training.md)| Creates a new training in Toloka.
 [create_user_bonus](toloka.client.TolokaClient.create_user_bonus.md)| Issues payments directly to a Toloker.
-[create_user_bonuses](toloka.client.TolokaClient.create_user_bonuses.md)| Creates rewards for Tolokers.
+[create_user_bonuses](toloka.client.TolokaClient.create_user_bonuses.md)| Creates bonuses for Tolokers.
 [create_user_bonuses_async](toloka.client.TolokaClient.create_user_bonuses_async.md)| Issues payments directly to Tolokers, asynchronously creates many `UserBonus` instances.
 [delete_user_restriction](toloka.client.TolokaClient.delete_user_restriction.md)| Unlocks existing restriction
 [delete_user_skill](toloka.client.TolokaClient.delete_user_skill.md)| Drop specific UserSkill
@@ -119,7 +119,7 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [find_task_suites](toloka.client.TolokaClient.find_task_suites.md)| Finds task suites that match certain criteria.
 [find_tasks](toloka.client.TolokaClient.find_tasks.md)| Finds tasks that match certain criteria.
 [find_trainings](toloka.client.TolokaClient.find_trainings.md)| Finds trainings that match certain criteria.
-[find_user_bonuses](toloka.client.TolokaClient.find_user_bonuses.md)| Finds Tolokers' rewards that match certain criteria.
+[find_user_bonuses](toloka.client.TolokaClient.find_user_bonuses.md)| Finds Tolokers' bonuses that match certain criteria.
 [find_user_restrictions](toloka.client.TolokaClient.find_user_restrictions.md)| Finds Toloker restrictions that match certain criteria.
 [find_user_skills](toloka.client.TolokaClient.find_user_skills.md)| Finds Toloker's skills that match certain criteria.
 [find_webhook_subscriptions](toloka.client.TolokaClient.find_webhook_subscriptions.md)| Finds webhook subscriptions that match certain criteria.
@@ -156,8 +156,8 @@ toloka_client = toloka.TolokaClient(your_oauth_token, 'PRODUCTION')  # Or switch
 [get_training](toloka.client.TolokaClient.get_training.md)| Gets information about a training from Toloka.
 [get_trainings](toloka.client.TolokaClient.get_trainings.md)| Finds all trainings that match certain criteria.
 [get_user](toloka.client.TolokaClient.get_user.md)| Gets Toloker metadata by `user_id`.
-[get_user_bonus](toloka.client.TolokaClient.get_user_bonus.md)| Gets information about a Toloker's reward.
-[get_user_bonuses](toloka.client.TolokaClient.get_user_bonuses.md)| Finds all Tolokers' rewards that match certain rules and returns them in an iterable object
+[get_user_bonus](toloka.client.TolokaClient.get_user_bonus.md)| Gets information about a Toloker's bonus.
+[get_user_bonuses](toloka.client.TolokaClient.get_user_bonuses.md)| Finds all Tolokers' bonuses that match certain rules and returns them in an iterable object
 [get_user_restriction](toloka.client.TolokaClient.get_user_restriction.md)| Gets information about a Toloker restriction.
 [get_user_restrictions](toloka.client.TolokaClient.get_user_restrictions.md)| Finds all Toloker restrictions that match certain criteria.
 [get_user_skill](toloka.client.TolokaClient.get_user_skill.md)| Gets the value of a Toloker's skill
