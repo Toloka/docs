@@ -193,12 +193,12 @@ Values that are checked in the condition:
 
 Comparison operator (the `key` data is compared with the threshold value from `value`):
 
-- `EQ` ("Equal") — Equal to.
-- `NE` ("Not equal to") — Not equal to.
-- `GT` ("Greater than") — Greater than.
-- `LT` ("Less than") — Less than.
-- `GTE` ("Greater than equal to") — Greater than or equal to.
-- `LTE` ("Less than equal to") — Less than or equal to. ||
+- `EQ` — Equal to.
+- `NE` — Not equal to.
+- `GT` — Greater than.
+- `LT` — Less than.
+- `GTE` — Greater than or equal to.
+- `LTE` — Less than or equal to. ||
 || `configs[].rules.conditions.value` | _integer_ \| **required**
 
 The threshold value of the variable specified in `key`. ||

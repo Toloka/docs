@@ -97,12 +97,12 @@ The value that is checked in the rule:
 
 Comparison operator (the `key` data is compared with the threshold value from `value`):
 
-- `EQ` ("Equal") — Equal to.
-- `NE` ("Not equal to") — Not equal to.
-- `GT` ("Greater than") — Greater than.
-- `LT` ("Less than") — Less than.
-- `GTE` ("Greater than equal to") — Greater than or equal to.
-- `LTE` ("Less than equal to") — Less than or equal to. ||
+- `EQ` — Equal to.
+- `NE` — Not equal to.
+- `GT` — Greater than.
+- `LT` — Less than.
+- `GTE` — Greater than or equal to.
+- `LTE` — Less than or equal to. ||
 || `configs[].rules.conditions.value` | _string_ \| **required**
 
 The reason the Toloker lost access to the pool:
