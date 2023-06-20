@@ -15,7 +15,7 @@ NewUserBonuses(
 )
 ```
 
-Tracking rewards for Tolokers: reward count or money amount.
+Tracking bonuses for Tolokers: bonus count or money amount.
 
 ## Parameters Description
 

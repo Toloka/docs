@@ -10,11 +10,11 @@ UserBonusSearchResult(
 )
 ```
 
-The result of searching Tolokers' rewards.
+The result of searching Tolokers' bonuses.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[UserBonus](toloka.client.user_bonus.UserBonus.md)\]\]**|<p>A list with found rewards.</p>
-`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching rewards.</p> <ul> <li>`True` — There are more matching rewards, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching rewards.</li> </ul>
+`items`|**Optional\[List\[[UserBonus](toloka.client.user_bonus.UserBonus.md)\]\]**|<p>A list with found bonuses.</p>
+`has_more`|**Optional\[bool\]**|<p>A flag showing whether there are more matching bonuses.</p> <ul> <li>`True` — There are more matching bonuses, not included in `items` due to the limit set in the search request.</li> <li>`False` — `items` contains all matching bonuses.</li> </ul>
