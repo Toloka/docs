@@ -13,10 +13,7 @@ CreateTasksParameters(
 )
 ```
 
-Parameters used with the [create_tasks](toloka.client.TolokaClient.create_tasks.md)
-
-
-and [create_tasks_async](toloka.client.TolokaClient.create_tasks_async.md) methods.
+Parameters used with the [create_tasks](toloka.client.TolokaClient.create_tasks.md) and [create_tasks_async](toloka.client.TolokaClient.create_tasks_async.md) methods.
 
 If the operation is started in an asynchronous mode,
 we recommend that you send the `operation_id` to avoid creating the same tasks multiple times. You can use this ID later to get information about the operation.
