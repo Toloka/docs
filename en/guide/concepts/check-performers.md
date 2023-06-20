@@ -8,9 +8,9 @@ Use quality control rules to get better results for tasks and restrict access to
 
 If your project has a lot of similar tasks, you'll need to protect it from fake Tolokers (robots) and cheaters.
 
-### Limiting fast responses
+### Limiting fast task suite responses
 
-Use the [Fast responses](quick-answers.md) rule to weed out Tolokers who perform tasks too quickly and carelessly. You've tried doing tasks and you know that each task takes at least 15 seconds. You should suspend Tolokers who submit three out of ten assignments in a row faster than the control time.
+Use the [Fast task suite responses](quick-answers.md) rule to weed out Tolokers who perform tasks too quickly and carelessly. You've tried doing tasks and you know that each task takes at least 15 seconds. You should suspend Tolokers who submit three out of ten assignments in a row faster than the control time.
 
 {% cut "Example" %}
 
@@ -38,7 +38,7 @@ A Toloker who skips 2 task suites in a row is restricted from accessing the pool
 
 Limits are also useful when you need as many different Tolokers as possible. For example, to collect data for statistics, run surveys, or pick the best version of a logo. Another case is personal descriptions for a [dating service](https://rb.ru/opinion/chat-bot-dataset/). If texts are all written by the same person, they are likely to turn out monotonous and boring.
 
-You can limit the number of tasks in the pool per Toloker or set a limit on daily earnings for your project. Use the [Submitted responses](submitted-answers.md) and [Earnings](income.md) rules.
+You can limit the number of tasks in the pool per Toloker or set a limit on daily earnings for your project. Use the [Submitted task suite responses](submitted-answers.md) and [Earnings](income.md) rules.
 
 {% cut "Example" %}
 
@@ -54,7 +54,7 @@ Results from conscientious Tolokers should be checked, too. In Toloka, this can 
 
 ### Control tasks
 
-Tolokers complete tasks by selecting one of multiple possible answers. To check the quality in this type of project, use the [Control tasks](goldenset.md) rule. This involves adding questions where you define the correct response.
+Tolokers complete tasks by selecting one of multiple possible answers. To check the quality in this type of project, use the [Control tasks](goldenset.md) rule. This involves adding questions where you define the correct task suite response.
 
 Mix the control questions in with the general tasks. They should make up at least 1% of the total tasks. Assign Tolokers a skill level depending on how many answers they get right.
 
@@ -62,7 +62,7 @@ Mix the control questions in with the general tasks. They should make up at leas
 
 ![](../_images/control-rules/control-tasks/qcr-control_example1_1.png =700x)
 
-If the Toloker gives at least 10 responses to the control tasks, the percentage of correct answers is assigned as the skill value. This is useful if you want to prevent Tolokers with a low skill level from completing your tasks.
+If the Toloker gives at least 10 task suite responses to the control tasks, the percentage of correct answers is assigned as the skill value. This is useful if you want to prevent Tolokers with a low skill level from completing your tasks.
 
 {% endcut %}
 
@@ -82,19 +82,19 @@ If the Toloker gives at least 3 answers to tasks and the percentage of correct a
 
 {% endcut %}
 
-Use the percentage of matching responses to assign skill levels, control access to tasks, and reward Tolokers.
+Use the percentage of matching task suite responses to assign skill levels, control access to tasks, and reward Tolokers.
 
 ### Review results
 
-For tasks that aren't multiple-choice, the customer or other Tolokers check the answers. They might include recording audio, taking pictures, or writing something. Poor-quality responses are rejected.
+For tasks that aren't multiple-choice, the customer or other Tolokers check the answers. They might include recording audio, taking pictures, or writing something. Poor-quality task suite responses are rejected.
 
-Use the [Review results](reviewing-assignments.md) rule to control Tolokers' access to tasks. The platform calculates the percentage of responses accepted and rejected for each Toloker. Those who often made mistakes will stop getting tasks.
+Use the [Review results](reviewing-assignments.md) rule to control Tolokers' access to tasks. The platform calculates the percentage of task suite responses accepted and rejected for each Toloker. Those who often made mistakes will stop getting tasks.
 
 {% cut "Example" %}
 
 ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example1.png =700x)
 
-If more than 50% of Toloker's responses are rejected, the Toloker is blocked and can't complete your tasks for 15 days.
+If more than 50% of Toloker's task suite responses are rejected, the Toloker is blocked and can't complete your tasks for 15 days.
 
 {% endcut %}
 
@@ -116,9 +116,9 @@ A Toloker's assignments rejected after the review are sent to another Toloker fo
 
 {% endcut %}
 
-### Responses from banned Tolokers
+### Task suite responses from banned Tolokers
 
-When Tolokers make too many mistakes, the platform bans them from taking on more tasks. But the responses that they have already provided remain in the database and may get into the final dataset. Send these assignments for recompletion.
+When Tolokers make too many mistakes, the platform bans them from taking on more tasks. But the task suite responses that they have already provided remain in the database and may get into the final dataset. Send these assignments for recompletion.
 
 The [Recompletion of assignments from banned users](restore-task-overlap.md) rule is helpful here. While the cost will go up, there will be fewer errors.
 
@@ -132,9 +132,9 @@ If a Toloker is banned by a quality control rule, their tasks are sent for re-co
 
 ## Combination of methods {#combination-methods}
 
-The best practice is to combine quality control rules. For example, if tasks involve selecting a response from several options, you should use:
+The best practice is to combine quality control rules. For example, if tasks involve selecting a task suite response from several options, you should use:
 - [Control tasks](goldenset.md).
-- [Fast responses](quick-answers.md).
+- [Fast task suite responses](quick-answers.md).
 
 Content generation projects like writing texts or taking photos need a different combination:
 
@@ -148,7 +148,7 @@ Each project requires its own approach. Methods that are effective in one case m
 
 1. Analyze the task and select the appropriate quality control rules.
 
-1. Write clear instructions. If you create control tasks, make sure they don't have any outdated, ambiguous, or incorrect responses.
+1. Write clear instructions. If you create control tasks, make sure they don't have any outdated, ambiguous, or incorrect task suite responses.
 
 1. Test your project in the testing environment, the [Sandbox](sandbox.md). Running and completing tasks in it will help you understand the rules and estimate how much time it will take to complete a single task.
 

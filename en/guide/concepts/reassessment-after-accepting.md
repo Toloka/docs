@@ -13,7 +13,7 @@ Once the review period in the **Review period in days** field runs out, tasks ar
 This rule is helpful when you need to:
 - Resend rejected assignments for re-completion to other Tolokers.
 
-    If you rejected an assignment, you may want it to be completed by another Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](../../glossary.md#overlap) for this assignment only. This is especially helpful if you have the overlap value set to 1.
+    If you rejected an assignment, you may want it to be completed by another Toloker instead of the one whose task suite response you rejected. To do this, you can increase the [overlap](../../glossary.md#overlap) for this assignment only. This is especially helpful if you have the overlap value set to 1.
 
 - Save money on re-completing assignments that you have already accepted.
 
@@ -31,15 +31,15 @@ All fields in this rule are required. If you don't fill in at least one of them,
 ||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
-- **submitted assignments** — The number of [task suites](../../glossary.md#task-suite) that are completed and awaiting review.
+- **submitted assignments** — The number of [task suite responses](../../glossary.md#task-suite) that are completed and awaiting review.
 
-- **approved assignments** — The number of task suites accepted after the review.
+- **approved assignments** — The number of task suite responses accepted after the review.
 
-- **rejected assignments** — The number of task suites rejected after the review.
+- **rejected assignments** — The number of task suite responses rejected after the review.
 
-- **assignment becomes approved** — The task suite was accepted after the review.
+- **assignment becomes approved** — The task suite response was accepted after the review.
 
-- **assignment becomes approved after rejection** — The task suite was first rejected, but then accepted after the review.
+- **assignment becomes approved after rejection** — The task suite response was first rejected, but then accepted after the review.
 
     {% note info %}
 
@@ -47,16 +47,16 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
     {% endnote %}
 
-- **assignment becomes rejected** — The task suite was rejected after the review.
+- **assignment becomes rejected** — The task suite response was rejected after the review.
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||**then** | Action to perform for the **If** condition:
 
-- **extend overlap by** — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
+- **extend overlap by** — Resend the [task suite response](../../glossary.md#task-suite) for completion to other Tolokers.
 
     If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option **Open pool if closed**.
 
-- **reduce overlap by** — Decrease the number of times a task suite can be completed by Tolokers. For example, use this action to cancel the recompletion of accepted assignments.||
+- **reduce overlap by** — Decrease the number of times a task suite response can be completed by Tolokers. For example, use this action to cancel the recompletion of accepted assignments.||
 |#
 
 ## Examples {#examples}

@@ -14,7 +14,7 @@ The project has a rule set up that bans the Toloker if their earnings exceed $5 
 
 Limit the Toloker's daily earnings in the pool if you want to:
 
-- Get responses from as many Tolokers as possible. For this purpose, you might want to set the maximum amount of earnings equal to the price for a single [task suite](../../glossary.md#task-suite).
+- Get task suite responses from as many Tolokers as possible. For this purpose, you might want to set the maximum amount of earnings equal to the price for a single [task suite](../../glossary.md#task-suite).
 
 - Provide protection from robots. For this purpose, set maximum earnings to a higher amount, like 10% of the entire pool cost.
 
@@ -45,11 +45,11 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all task suite responses in the pool.
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.||
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's task suite responses is not saved after the ban is lifted. The skill value is based on new task suite responses.||
 |#
 
 {% note warning %}
@@ -60,7 +60,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ## Examples {#examples}
 
-Task: you're conducting a sociological survey. To collect responses from as many Tolokers as possible, set up the **earnings** rule.
+Task: you're conducting a sociological survey. To collect task suite responses from as many Tolokers as possible, set up the **earnings** rule.
 
 ![](../_images/control-rules/income/qcr-income_example1.png =700x)
 

@@ -1,6 +1,6 @@
 # Control tasks
 
-[Control tasks](../../glossary.md#control-task) contain samples of correct responses. They allow you to monitor the quality of task completion without having to check all the responses. Control tasks simplify the verification process, help identify Tolokers' qualifications, and save your time.
+[Control tasks](../../glossary.md#control-task) contain samples of correct task responses. They allow you to monitor the quality of task completion without having to check all the task responses. Control tasks simplify the verification process, help identify Tolokers' qualifications, and save your time.
 
 {% note info %}
 
@@ -10,15 +10,15 @@ To save time, you can opt for having your control tasks edited by [Toloka expert
 
 ## When to use {#when-use}
 
-Use control tasks to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses and [ban](../../glossary.md#banning-tolokers) Tolokers who submit incorrect responses.
+Use control tasks to assign a [skill](../../glossary.md#skill) to Tolokers based on their task responses and [ban](../../glossary.md#banning-tolokers) Tolokers who submit incorrect task responses.
 
 Don't use it if:
 
-- You have a lot of response options.
+- You have a lot of task response options.
 - Tolokers need to attach a file to their assignment.
 - Tolokers need to transcribe text.
 - Tolokers need to select objects in a photo.
-- Tasks don't have a correct or incorrect response. For example: “Which image do you like best?” or “Choose the page design option that you like best”.
+- Tasks don't have a correct or incorrect task response. For example: “Which image do you like best?” or “Choose the page design option that you like best”.
 
 ## How to configure {#rule-golden}
 
@@ -30,43 +30,43 @@ The **If** and **then** fields in this rule are required. If you don't fill in a
 
 #|
 ||**Field** | **Overview**||
-||**Recent control and training task responses to use** | The number of the Toloker's last responses to control tasks.
+||**Recent control and training task responses to use** | The number of the Toloker's last task responses to control tasks.
 
 If this field is not filled in, the calculation includes only control task responses in the pool to which the rule applies.
 
-If the field is filled in, the corresponding number of control task responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
+If the field is filled in, the corresponding number of control task responses is used. The rule takes into account task responses from both the current pool and other pools where this field is filled in.
 
 [Learn more](remember-values.md) about how this field works.||
 ||**If** | A condition for performing the action in the **then** field:
 
-- **number of responses** — The number of completed control and [training](../../glossary.md#training-task) tasks.
+- **number of task responses** — The number of completed control and [training](../../glossary.md#training-task) tasks.
 
-- **correct responses (%)** — The percentage of correct responses in training and control tasks (from 0 to 100).
+- **correct task responses (%)** — The percentage of correct task responses in training and control tasks (from 0 to 100).
 
-- **incorrect responses (%)** — The percentage of incorrect responses in training and control tasks (from 0 to 100).
+- **incorrect task responses (%)** — The percentage of incorrect task responses in training and control tasks (from 0 to 100).
 
-- **number of control responses** — The number of completed control tasks.
+- **number of control task responses** — The number of completed control tasks.
 
-- **correct control responses (%)** — The percentage of correct responses in control tasks (from 0 to 100).
+- **correct control task responses (%)** — The percentage of correct task responses in control tasks (from 0 to 100).
 
-- **incorrect control responses (%)** — The percentage of incorrect responses in control tasks (from 0 to 100).
+- **incorrect control task responses (%)** — The percentage of incorrect task responses in control tasks (from 0 to 100).
 
 To add multiple conditions, click ![](../_images/add.svg).||
 ||**then** | Action to perform for the **If** condition:
 
-- **assign skill from the field** — Save the percentage of the Toloker's correct responses in control tasks as a skill value.
+- **assign skill from the field** — Save the percentage of the Toloker's correct task responses in control tasks as a skill value.
 
 - **assign skill value** — Assign a fixed value to the Toloker's [skill](nav.md).
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all responses in the pool.
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all task responses in the pool.
 
 - **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's task responses is not saved after the ban is lifted. The skill level is calculated based on the new task responses.||
 |#
 
 ## Examples {#examples}
@@ -75,7 +75,7 @@ Purpose: filter out Tolokers who often make mistakes.
 
 Solutions:
 
-- [Ban Tolokers based on control tasks and the percentage of correct responses](goldenset.md#qcr-control_example1)
+- [Ban Tolokers based on control tasks and the percentage of correct task responses](goldenset.md#qcr-control_example1)
 
 - [Set a skill and deny access to Tolokers with a low skill level](goldenset.md#nav)
 
@@ -87,7 +87,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endnote %}
 
-### Ban Tolokers based on control tasks and the percentage of correct responses {#qcr-control_example1}
+### Ban Tolokers based on control tasks and the percentage of correct task responses {#qcr-control_example1}
 
 {% list tabs %}
 
@@ -131,9 +131,9 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
   1. If the Toloker gives 2 incorrect responses to 4 control tasks, they lose access to the pool for 10 days.
 
-  1. If the Toloker gives 5 or more responses to the control tasks and the percentage of correct responses is less than 80%, they lose access to the pool for 10 days.
+  1. If the Toloker gives 5 or more responses to the control tasks and the percentage of correct task responses is less than 80%, they lose access to the pool for 10 days.
 
-   A set of rules like this prevents Tolokers from being banned for one incorrect response and lets you maintain high accuracy.
+   A set of rules like this prevents Tolokers from being banned for one incorrect task response and lets you maintain high accuracy.
 
 {% endlist %}
 
@@ -159,7 +159,7 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 
   ![](../_images/control-rules/control-tasks/qcr-control_example-2.png =700x)
 
-  This rule will never take effect because the number of responses counted (**Recent control and training task responses to use**) is less than the number of responses in the rule (**number of control responses**).
+  This rule will never take effect because the number of task responses counted (**Recent control and training task responses to use**) is less than the number of task responses in the rule (**number of control task responses**).
 
 {% endlist %}
 

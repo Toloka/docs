@@ -1,20 +1,20 @@
 # Quality control rules
 
-Quality control rules allow you to get more accurate responses and restrict access to tasks to cheating Tolokers. All rules work independently.
+Quality control rules allow you to get more accurate task suite responses and restrict access to tasks to cheating Tolokers. All rules work independently.
 
 ## List of rules {#rules}
 
 - To keep track of how often Tolokers make mistakes:
 
-    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their responses to [control tasks](../../glossary.md#control-task) and [ban](ban.md) Tolokers who submit incorrect responses.
+    - [Control tasks](goldenset.md): Use them to assign a [skill](../../glossary.md#skill) to Tolokers based on their task suite responses to [control tasks](../../glossary.md#control-task) and [ban](ban.md) Tolokers who submit incorrect task suite responses.
 
-    - [Majority vote](mvote.md): Quality is based on matching the response from the majority of Tolokers who complete the same [task](../../glossary.md#task).
+    - [Majority vote](mvote.md): Quality is based on matching the task suite response from the majority of Tolokers who complete the same [task](../../glossary.md#task).
 
-    - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected responses.
+    - [Results of checking](reviewing-assignments.md): Evaluate Tolokers based on the number of accepted and rejected task suite responses.
 
 - To protect your project from robots and cheaters:
 
-    - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
+    - [Fast task suite responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
 
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
@@ -42,7 +42,7 @@ Toloka has presets of quality control rules. Currently, there are three of them:
 
 The table shows the rules included in each of the sets.
 
-|                | Earnings | Skipped assignments | Control tasks | Majority vote | Submitted answers | Fast responses |
+|                | Earnings | Skipped assignments | Control tasks | Majority vote | Submitted answers | Fast task suite responses |
 |----------------|----------|---------------------|---------------|---------------|-------------------|----------------|
 | **Elementary** | +        | +                   | −             | −             | −                 | -              |
 | **Basic**      | +        | +                   | +             | +             | −                 | -              |

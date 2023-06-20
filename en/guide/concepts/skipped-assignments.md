@@ -41,11 +41,11 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill value is based on new responses.
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's task suite responses is not saved after the ban is lifted. The skill value is based on new task suite responses.
 
 - **accept user's answers** — Requires the [manual review](offline-accept.md) option to be set.
 
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all task suite responses in the pool.
 
 - **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
@@ -68,7 +68,7 @@ Task: you're conducting an opinion poll. For the results to be accurate, the Tol
 
   ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example3.png =700x)
 
-  If a Toloker skips 2 task suites in a row, all their responses will be accepted automatically.
+  If a Toloker skips 2 task suites in a row, all their task suite responses will be accepted automatically.
 
   ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example4.png =700x)
 
