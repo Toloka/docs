@@ -1,14 +1,14 @@
 # RejectedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.RejectedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L92)
+`toloka.client.analytics_request.RejectedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L93)
 
 ```python
 RejectedAssignmentsCountPoolAnalytics(self, *, subject_id: str)
 ```
 
-Number of assignments in the "rejected" status in the pool
+Counts the number of assignments with the `REJECTED` status in a pool.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`subject_id`|**str**|<p>ID of the object you want to get analytics about.</p>
+`subject_id`|**str**|<p>The ID of a pool to get analytics about.</p>

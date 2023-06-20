@@ -1,17 +1,17 @@
 # SubmittedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.SubmittedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L76)
+`toloka.client.analytics_request.SubmittedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L77)
 
 ```python
 SubmittedAssignmentsCountPoolAnalytics(self, *, subject_id: str)
 ```
 
-The total number of completed assignments in the pool.
+Counts the total number of completed assignments in a pool.
 
 
-The assignments can have one of the following statuses: "submitted", "approved", or "rejected".
+It counts assignments with the `SUBMITTED`, `ACCEPTED`, or `REJECTED` status.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`subject_id`|**str**|<p>ID of the object you want to get analytics about.</p>
+`subject_id`|**str**|<p>The ID of a pool to get analytics about.</p>

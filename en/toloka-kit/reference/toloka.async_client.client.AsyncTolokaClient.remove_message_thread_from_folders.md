@@ -1,5 +1,5 @@
 # remove_message_thread_from_folders
-`toloka.async_client.client.AsyncTolokaClient.remove_message_thread_from_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.remove_message_thread_from_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
 
 ```python
 async remove_message_thread_from_folders(
@@ -9,18 +9,18 @@ async remove_message_thread_from_folders(
 )
 ```
 
-Deletes a message chain from one or more folders ("unread", "important" etc.)
+Removes a message thread from folders.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`message_thread_id`|**str**|<p>ID of message chain.</p>
-`folders`|**Union\[List\[[Folder](toloka.client.message_thread.Folder.md)\], [MessageThreadFolders](toloka.client.message_thread.MessageThreadFolders.md)\]**|<p>List of folders, where from to remove chain.</p>
+`message_thread_id`|**str**|<p>The ID of the message thread.</p>
+`folders`|**Union\[List\[[Folder](toloka.client.message_thread.Folder.md)\], [MessageThreadFolders](toloka.client.message_thread.MessageThreadFolders.md)\]**|<p>A list of folders.</p>
 
 * **Returns:**
 
-  Full object by ID with updated folders.
+  The updated message thread.
 
 * **Return type:**
 

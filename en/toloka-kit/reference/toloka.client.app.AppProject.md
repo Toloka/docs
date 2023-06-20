@@ -1,5 +1,5 @@
 # AppProject
-`toloka.client.app.AppProject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/app/__init__.py#L45)
+`toloka.client.app.AppProject` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L45)
 
 ```python
 AppProject(
@@ -39,5 +39,5 @@ To get available App solutions use the [get_apps](toloka.client.TolokaClient.get
 `created`|**Optional\[datetime\]**|<p>The date and time when the project was created.</p>
 `item_price`|**Optional\[Decimal\]**|<p>The price you pay for a processed item.</p>
 `errors`|**Optional\[List\[[_AppError](toloka.client.app._AppError.md)\]\]**|<p>Errors found during a project check.</p>
-`read_only`|**Optional\[bool\]**|
+`read_only`|**Optional\[bool\]**|<ul> <li>`True` — The project is read-only.</li> <li>`False` — The project can be modified.</li> </ul>
 `app`|**Optional\[[AppLightestResult](toloka.client.app.AppLightestResult.md)\]**|<p>Brief information about the project template.</p>

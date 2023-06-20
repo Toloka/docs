@@ -1,5 +1,5 @@
 # delete_user_restriction
-`toloka.client.TolokaClient.delete_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3223)
+`toloka.client.TolokaClient.delete_user_restriction` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3323)
 
 ```python
 delete_user_restriction(self, user_restriction_id: str)

@@ -1,5 +1,5 @@
 # ButtonRadioGroupFieldV1
-`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L115)
+`toloka.client.project.template_builder.fields.ButtonRadioGroupFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L118)
 
 ```python
 ButtonRadioGroupFieldV1(
@@ -14,31 +14,28 @@ ButtonRadioGroupFieldV1(
 )
 ```
 
-A component with buttons that allow the Toloker to choose between the specified values.
+A group of buttons for choosing one option.
 
 
-The minimum number of elements is one. Any type of data can be returned.
-
-The size of the button is determined by the length of the text on it.
+For more information, see [field.button-radio-group](https://toloka.ai/docs/template-builder/reference/field.button-radio-group).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`options`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [GroupFieldOption](toloka.client.project.template_builder.fields.GroupFieldOption.md)\]\]\]\]**|<p>Array of information about the buttons.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`options`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [GroupFieldOption](toloka.client.project.template_builder.fields.GroupFieldOption.md)\]\]\]\]**|<p>A list of options.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>
 
 **Examples:**
 
-How to add buttons for classification task.
 
 ```python
 classification_buttons = tb.fields.ButtonRadioGroupFieldV1(
-    tb.data.OutputData(path='class'),
-    [
+    data=tb.data.OutputData(path='class'),
+    options=[
         tb.fields.GroupFieldOption('Cat', 'cat'),
         tb.fields.GroupFieldOption('Dog', 'dog'),
     ],

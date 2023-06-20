@@ -1,5 +1,5 @@
 # PhoneNumberFieldV1
-`toloka.client.project.template_builder.fields.PhoneNumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L408)
+`toloka.client.project.template_builder.fields.PhoneNumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L395)
 
 ```python
 PhoneNumberFieldV1(
@@ -14,18 +14,17 @@ PhoneNumberFieldV1(
 )
 ```
 
-Creates a field for entering a phone number.
+A field for entering a phone number.
 
 
-Allows entering numbers, spaces, and the +, ( ), - characters. Only numbers and the + character at the beginning
-will remain in the data. For example, if you enter +7 (012) 345-67-89, the data gets the +70123456789 value.
+For more information, see [field.phone-number](https://toloka.ai/docs/template-builder/reference/field.phone-number).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`placeholder`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A semi-transparent label that is shown in an empty field.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`placeholder`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A text that is shown if no phone number is entered.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

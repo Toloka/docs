@@ -1,5 +1,5 @@
 # PlayedConditionV1
-`toloka.client.project.template_builder.conditions.PlayedConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L193)
+`toloka.client.project.template_builder.conditions.PlayedConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L169)
 
 ```python
 PlayedConditionV1(
@@ -10,14 +10,13 @@ PlayedConditionV1(
 )
 ```
 
-Checks the start of playback.
+Checks that playback has started.
 
 
-Validation will be passed if playback is started. To play media with the condition.played check, you can use
-view.audio and view.video. The condition.played check only works in the player's validation property.
+For more information, see [condition.played](https://toloka.ai/docs/template-builder/reference/condition.played).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

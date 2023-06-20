@@ -1,5 +1,5 @@
 # archive_app_project
-`toloka.client.TolokaClient.archive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3638)
+`toloka.client.TolokaClient.archive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3799)
 
 ```python
 archive_app_project(self, app_project_id: str)
@@ -23,3 +23,10 @@ The project changes its status to `ARCHIVED`.
 * **Return type:**
 
   [AppProject](toloka.client.app.AppProject.md)
+
+**Examples:**
+
+
+```python
+toloka_client.archive_app_project('Q2d15QBjpwWuDz8Z321g')
+```

@@ -1,5 +1,5 @@
 # create_app_item
-`toloka.client.TolokaClient.create_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3809)
+`toloka.client.TolokaClient.create_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L4018)
 
 Creates an App task item in Toloka.
 
@@ -26,3 +26,19 @@ Creates an App task item in Toloka.
 * **Return type:**
 
   [AppItem](toloka.client.app.AppItem.md)
+
+**Examples:**
+
+The following example is suitable for a project
+that requires `query` and `website_url` keys to be present in input data.
+
+```python
+new_item = {
+    'batch_id' : '4Va2BBWKL88S4QyAgVje',
+    'input_data' : {
+        'id':'40', 'query':'toloka kit', 'website_url':'https://toloka.ai/en/docs/toloka-kit'
+    }
+}
+new_item = toloka_client.create_app_item(app_project_id = 'Q2d15QBjpwWuDz8Z321g', app_item = new_item)
+print(new_item.created_at)
+```

@@ -1,5 +1,5 @@
 # Object2EntriesHelperV1
-`toloka.client.project.template_builder.helpers.Object2EntriesHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L120)
+`toloka.client.project.template_builder.helpers.Object2EntriesHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/helpers.py#L101)
 
 ```python
 Object2EntriesHelperV1(
@@ -10,35 +10,17 @@ Object2EntriesHelperV1(
 )
 ```
 
-Creating an array of key-value pairs from the specified object.
+Creates an array of key-value pairs from an object.
 
 
-For example, let's say you have an object that looks like this:
+For example,
+`{ "foo": "hello", "bar": "world" }` is converted to
+`[ {"key":"foo", "value":"hello"}, {"key":"bar","value":"world"} ]`.
 
-```python
-{
-    "foo": "hello",
-    "bar": "world"
-}
-```
-
-It will be converted to an array whose objects will pair data from the source object and their designations:
-
-```python
-[
-    {
-        "key": "foo",
-        "value": "hello"
-    },
-    {
-        "key": "bar",
-        "value": "world"
-    }
-]
-```
+For more information, see [helper.object2entries](https://toloka.ai/docs/template-builder/reference/helper.object2entries).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[Any\]**|<p>The object to convert.</p>
+`data`|**Optional\[Any\]**|<p>An object to convert.</p>

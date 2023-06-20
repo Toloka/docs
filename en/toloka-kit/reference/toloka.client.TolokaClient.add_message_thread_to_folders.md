@@ -1,5 +1,5 @@
 # add_message_thread_to_folders
-`toloka.client.TolokaClient.add_message_thread_to_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L879)
+`toloka.client.TolokaClient.add_message_thread_to_folders` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L961)
 
 ```python
 add_message_thread_to_folders(
@@ -9,18 +9,18 @@ add_message_thread_to_folders(
 )
 ```
 
-Adds a message chain to one or more folders ("unread", "important" etc.)
+Adds a message thread to folders.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`message_thread_id`|**str**|<p>ID of message chain.</p>
-`folders`|**Union\[List\[[Folder](toloka.client.message_thread.Folder.md)\], [MessageThreadFolders](toloka.client.message_thread.MessageThreadFolders.md)\]**|<p>List of folders, where to move chain.</p>
+`message_thread_id`|**str**|<p>The ID of the message thread.</p>
+`folders`|**Union\[List\[[Folder](toloka.client.message_thread.Folder.md)\], [MessageThreadFolders](toloka.client.message_thread.MessageThreadFolders.md)\]**|<p>A list of folders where to add the thread.</p>
 
 * **Returns:**
 
-  Full object by ID with updated folders.
+  The updated message thread.
 
 * **Return type:**
 

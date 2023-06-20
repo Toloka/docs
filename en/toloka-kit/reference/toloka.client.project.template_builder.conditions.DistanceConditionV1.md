@@ -1,5 +1,5 @@
 # DistanceConditionV1
-`toloka.client.project.template_builder.conditions.DistanceConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L93)
+`toloka.client.project.template_builder.conditions.DistanceConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L86)
 
 ```python
 DistanceConditionV1(
@@ -13,24 +13,24 @@ DistanceConditionV1(
 )
 ```
 
-This component checks whether the sent coordinates match the ones that you specified
+Checks a distance between two coordinates.
 
 
-For example, you want a Toloker to take a photo of a specific place. The condition.distance component checks whether
-the photo was taken at the location that you specified.
+For more information, see [condition.distance](https://toloka.ai/docs/template-builder/reference/condition.distance).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`from_`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>First point.</p>
-`to_`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Second point.</p>
-`max`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The distance in meters by which the X and Y coordinates may differ.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`from_`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The first point.</p>
+`to_`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The second point.</p>
+`max`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The maximum distance in meters.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>
 
 **Examples:**
 
-How to check that a Toloker is in the right place.
+The following condition gets Toloker's [location](toloka.client.project.template_builder.data.LocationData.md)
+and checks that it is near the task location.
 
 ```python
 distance_condition = tb.conditions.DistanceConditionV1(

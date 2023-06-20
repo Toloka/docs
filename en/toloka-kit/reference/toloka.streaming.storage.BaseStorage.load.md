@@ -1,5 +1,5 @@
 # load
-`toloka.streaming.storage.BaseStorage.load` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/storage.py#L34)
+`toloka.streaming.storage.BaseStorage.load` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/storage.py#L34)
 
 ```python
 load(

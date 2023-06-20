@@ -1,9 +1,10 @@
 # NewUserBonuses
-`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L190)
+`toloka.metrics.metrics.NewUserBonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/metrics.py#L190)
 
 ```python
 NewUserBonuses(
     self,
+    cursor_time_lag: timedelta = ...,
     count_name: Optional[str] = None,
     money_name: Optional[str] = None,
     join_events: bool = False,
@@ -20,6 +21,7 @@ Tracking rewards for Tolokers: reward count or money amount.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
+`cursor_time_lag`|**timedelta**|<p>Time lag for cursor. This controls time lag between user bonuses being added and this metric being updated. See BaseCursor.time_lag for details and reasoning behind this.</p>
 `count_name`|**Optional\[str\]**|<p>Metric name for a count of new bonuses.</p>
 `money_name`|**Optional\[str\]**|<p>Metric name for amount of money in new bonuses.</p>
 `join_events`|**bool**|<p>Count all events in one point.  Default `False`.</p>

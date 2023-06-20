@@ -1,5 +1,5 @@
 # FieldTranslation
-`toloka.client.project.localization.AdditionalLanguage.FieldTranslation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/localization.py#L21)
+`toloka.client.project.localization.AdditionalLanguage.FieldTranslation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/localization.py#L21)
 
 ```python
 FieldTranslation(

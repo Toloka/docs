@@ -1,5 +1,5 @@
 # PoolStatusObserver
-`toloka.streaming.observer.PoolStatusObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/observer.py#L151)
+`toloka.streaming.observer.PoolStatusObserver` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/observer.py#L154)
 
 ```python
 PoolStatusObserver(
@@ -54,6 +54,7 @@ observer.on_status_change(lambda pool: ...)
 
 | Method | Description |
 | :------| :-----------|
+[get_unique_key](toloka.streaming.observer.PoolStatusObserver.get_unique_key.md)| None
 [inject](toloka.streaming.observer.PoolStatusObserver.inject.md)| None
 [on_archieved](toloka.streaming.observer.PoolStatusObserver.on_archieved.md)| None
 [on_closed](toloka.streaming.observer.PoolStatusObserver.on_closed.md)| None

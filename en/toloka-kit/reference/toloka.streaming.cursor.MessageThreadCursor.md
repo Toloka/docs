@@ -1,10 +1,11 @@
 # MessageThreadCursor
-`toloka.streaming.cursor.MessageThreadCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/cursor.py#L403)
+`toloka.streaming.cursor.MessageThreadCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L438)
 
 ```python
 MessageThreadCursor(
     self,
     toloka_client: Union[TolokaClient, AsyncTolokaClient],
+    time_lag: timedelta = ...,
     folder: Union[str, Folder, List[Union[str, Folder]], None] = None,
     folder_ne: Union[str, Folder, List[Union[str, Folder]], None] = None,
     id_lt: Optional[str] = None,
@@ -26,6 +27,7 @@ Iterator over messages by create time.
 | :----------| :----| :-----------|
 `toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search messages.</p>
 `request`|**[MessageThreadSearchRequest](toloka.client.search_requests.MessageThreadSearchRequest.md)**|<p>Base request to search messages.</p>
+`_time_lag`|**-**|<p>Time lag between cursor time field upper bound and real time. Default is 1 minute. This lag is required to keep cursor consistent. Lowering this value will make cursor process events faster, but raises probability of missing some events in case of concurrent operations.</p>
 
 **Examples:**
 

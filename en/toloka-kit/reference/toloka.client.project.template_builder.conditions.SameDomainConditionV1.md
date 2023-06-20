@@ -1,5 +1,5 @@
 # SameDomainConditionV1
-`toloka.client.project.template_builder.conditions.SameDomainConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L239)
+`toloka.client.project.template_builder.conditions.SameDomainConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L212)
 
 ```python
 SameDomainConditionV1(
@@ -12,26 +12,15 @@ SameDomainConditionV1(
 )
 ```
 
-Checks if the link that you entered belongs to a specific site. If it does, returns true, otherwise, false.
+Checks that domains in two URLs are the same.
 
 
-Links must be specified in full, including the protocol (http, https, ftp).
-
-The `www.` subdomain is ignored when checking, meaning that links to `www.example.com`
-and `example.com` are considered to be the same.
-
-How to pass a link address:
-
-* Specify it explicitly as a string.
-* [Get the value](https://toloka.ai/en/docs/template-builder/operations/work-with-data) from your data.
-* Refer to another element using `$ref`.
-* Use [helpers](https://toloka.ai/en/docs/template-builder/reference/helpers) and
-  [conditions](https://toloka.ai/en/docs/template-builder/reference/conditions) to get the value.
+For more information, see [condition.same-domain](https://toloka.ai/docs/template-builder/reference/condition.same-domain).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[Any\]**|<p>The link address to be checked. If you don&#x27;t specify it, the value returned by the parent component (the one that contains condition.same-domain) is used.</p>
-`original`|**Optional\[Any\]**|<p>The link address that your link is compared to.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`data`|**Optional\[Any\]**|<p>The first URL. If it is not specified, then the value returned by the parent component is used.</p>
+`original`|**Optional\[Any\]**|<p>The second URL.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

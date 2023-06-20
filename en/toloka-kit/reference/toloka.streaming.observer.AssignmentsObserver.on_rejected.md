@@ -1,5 +1,5 @@
 # on_rejected
-`toloka.streaming.observer.AssignmentsObserver.on_rejected` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/observer.py#L392)
+`toloka.streaming.observer.AssignmentsObserver.on_rejected` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/observer.py#L403)
 
 ```python
 on_rejected(self, callback: Union[Callable[[List[AssignmentEvent]], None], Callable[[List[AssignmentEvent]], Awaitable[None]]])

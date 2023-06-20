@@ -1,5 +1,5 @@
 # get_assignment
-`toloka.client.TolokaClient.get_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L690)
+`toloka.client.TolokaClient.get_assignment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L772)
 
 ```python
 get_assignment(self, assignment_id: str)

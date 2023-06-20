@@ -1,5 +1,5 @@
 # Marker
-`toloka.client.project.template_builder.view.MapViewV1.Marker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L446)
+`toloka.client.project.template_builder.view.MapViewV1.Marker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L459)
 
 ```python
 Marker(
@@ -11,12 +11,12 @@ Marker(
 )
 ```
 
-Marker parameters.
+A map marker.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`position`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Determines the marker position. Specify the coordinates in the string format, for example, &quot;29.748713,-95.404287&quot;, or use the data.location component to set the marker to the Toloker&#x27;s current position.</p>
-`color`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Determines the marker color. Use the hexadecimal values preceded by the # sign to specify the color.</p>
-`label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The label for the marker that tells Tolokers what this marker is for and helps distinguish it from other markers.</p>
+`position`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The coordinates of the marker. You can use:</p> <ul> <li>A string. For example, `29.748713,-95.404287`.</li> <li>The [LocationData](toloka.client.project.template_builder.data.LocationData.md) to set Toloker&#x27;s current position.</li> </ul>
+`color`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The marker color. Use the hexadecimal values preceded by the `#`. For example, `#f00` makes the marker red.</p>
+`label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A marker label.</p>

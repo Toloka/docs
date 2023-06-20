@@ -1,5 +1,5 @@
 # AssessmentEvent
-`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/conditions.py#L105)
+`toloka.client.conditions.AssessmentEvent` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/conditions.py#L105)
 
 ```python
 AssessmentEvent(

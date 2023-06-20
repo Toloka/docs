@@ -1,5 +1,5 @@
 # NumberFieldV1
-`toloka.client.project.template_builder.fields.NumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L386)
+`toloka.client.project.template_builder.fields.NumberFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L378)
 
 ```python
 NumberFieldV1(
@@ -16,25 +16,19 @@ NumberFieldV1(
 )
 ```
 
-A component that allows you to enter a number.
+A field for entering a number.
 
 
-The box already has validation: by default, Tolokers can enter only numbers and decimal separators. They can use either
-a dot or a comma as a separator, but there will always be a dot in the output.
-
-When the Toloker is entering a number, the separator automatically changes to the one specified in the regional settings.
-
-Negative numbers are allowed by default. To disable them, use the validation property. Pressing the up or down arrow
-keys will increase or decrease the number by one.
+For more information, see [field.number](https://toloka.ai/docs/template-builder/reference/field.number).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`maximum`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), int\]\]**|<p>Maximum number that can be entered.</p>
-`minimum`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), int\]\]**|<p>Minimum number that can be entered.</p>
-`placeholder`|**Optional\[Any\]**|<p>A semi-transparent label that is shown in the box when it is empty.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`maximum`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), int\]\]**|<p>The maximum number that can be entered.</p>
+`minimum`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), int\]\]**|<p>The minimum number that can be entered.</p>
+`placeholder`|**Optional\[Any\]**|<p>A text that is shown if no number is entered.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

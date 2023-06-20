@@ -1,5 +1,5 @@
 # AudioViewV1
-`toloka.client.project.template_builder.view.AudioViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L107)
+`toloka.client.project.template_builder.view.AudioViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L109)
 
 ```python
 AudioViewV1(
@@ -14,17 +14,17 @@ AudioViewV1(
 )
 ```
 
-The component plays audio.
+An audio player.
 
 
-Format support depends on the Toloker's browser, OS, and device. We recommend using MP3.
+For more information, see [view.audio](https://toloka.ai/docs/template-builder/reference/view.audio).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`url`|**Optional\[Any\]**|<p>Audio link.</p>
-`loop`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Automatically replay audio.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`url`|**Optional\[Any\]**|<p>A link to the audio.</p>
+`loop`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — Play audio in a loop.</li> <li>`False` — Play once.</li> </ul>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

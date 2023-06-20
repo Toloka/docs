@@ -1,5 +1,5 @@
 # update_training
-`toloka.client.TolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L2039)
+`toloka.client.TolokaClient.update_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2122)
 
 ```python
 update_training(

@@ -1,5 +1,5 @@
 # IframeViewV1
-`toloka.client.project.template_builder.view.IframeViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L190)
+`toloka.client.project.template_builder.view.IframeViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L198)
 
 ```python
 IframeViewV1(
@@ -17,17 +17,20 @@ IframeViewV1(
 )
 ```
 
-Displays the web page at the URL in an iframe window.
+A frame displaying a web page.
+
+
+For more information, see [view.iframe](https://toloka.ai/docs/template-builder/reference/view.iframe).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`url`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>URL of the web page.</p>
-`full_height`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If true, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels.</p>
-`max_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Maximum width of the element in pixels, must be greater than min_width.</p>
-`min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Minimum width of the element in pixels. Takes priority over max_width.</p>
-`ratio`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]\]\]**|<p>An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number). Not valid if full_height=true.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`url`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The URL of the web page.</p>
+`full_height`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, the component takes up all the vertical free space. Note, that the minimum height required by the component is 400 pixels.</p>
+`max_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The maximum width of the component in pixels.</p>
+`min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The minimum width of the component in pixels. It takes priority over the `max_width`.</p>
+`ratio`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]\]\]**|<p>A list with the aspect ratio of the component. Specify the relative width first and then the relative height. This setting is not used if `full_height=True`.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

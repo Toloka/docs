@@ -1,5 +1,5 @@
 # get_operations
-`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L2843)
+`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2935)
 
 Finds all operations that match certain rules and returns them in an iterable object
 
@@ -8,20 +8,36 @@ Finds all operations that match certain rules and returns them in an iterable ob
 
 If you need to sort operations use the [find_operations](toloka.client.TolokaClient.find_operations.md) method.
 
-Args:
+## Parameters Description
 
-- `request`: Search criteria.
-- `batch_size`: Returned operations limit for each request. The default `batch_size` is 50. The maximum allowed `batch_size` is 500.
+| Parameters | Type | Description |
+| :----------| :----| :-----------|
+`type`|**Optional\[[OperationType](toloka.client.operations.OperationType.md)\]**|<p>Operation type. Refer to the [OperationType](toloka.client.operations.OperationType.md) page for more information on the available `type` values.</p>
+`status`|**Optional\[[Operation.Status](toloka.client.operations.Operation.Status.md)\]**|<p>The status of the operation. Refer to the [Operation.Status](toloka.client.operations.Operation.Status.md) page for more information on the available `status` values.</p>
+`id_lt`|**Optional\[str\]**|<p>Operations with IDs less than the specified value.</p>
+`id_lte`|**Optional\[str\]**|<p>Operations with IDs less than or equal to the specified value.</p>
+`id_gt`|**Optional\[str\]**|<p>Operations with IDs greater than the specified value.</p>
+`id_gte`|**Optional\[str\]**|<p>Operations with IDs greater than or equal to the specified value.</p>
+`submitted_lt`|**Optional\[datetime\]**|<p>Operations submitted before the specified date.</p>
+`submitted_lte`|**Optional\[datetime\]**|<p>Operations submitted before or on the specified date.</p>
+`submitted_gt`|**Optional\[datetime\]**|<p>Operations submitted after the specified date.</p>
+`submitted_gte`|**Optional\[datetime\]**|<p>Operations submitted after or on the specified date.</p>
+`finished_lt`|**Optional\[datetime\]**|<p>Operations finished before the specified date.</p>
+`finished_lte`|**Optional\[datetime\]**|<p>Operations finished before or on the specified date.</p>
+`finished_gt`|**Optional\[datetime\]**|<p>Operations finished after the specified date.</p>
+`finished_gte`|**Optional\[datetime\]**|<p>Operations finished after or on the specified date.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned operations limit for each request. The default batch_size is 50. The maximum allowed batch_size is 500.</p>
 
-* **Returns:**
+* **Yields:**
 
   The next matching operations.
 
-* **Return type:**
+* **Yield type:**
 
-  [Operation](toloka.client.operations.Operation.md)
+  Generator\[[Operation](toloka.client.operations.Operation.md), None, None\]
 
 **Examples:**
+
 
 ```python
 bonuses = list(toloka_client.get_operations(submitted_lt='2021-06-01T00:00:00'))

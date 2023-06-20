@@ -1,5 +1,5 @@
 # TextAnnotationHotkeysPluginV1
-`toloka.client.project.template_builder.plugins.TextAnnotationHotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L65)
+`toloka.client.project.template_builder.plugins.TextAnnotationHotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L61)
 
 ```python
 TextAnnotationHotkeysPluginV1(
@@ -11,11 +11,14 @@ TextAnnotationHotkeysPluginV1(
 )
 ```
 
-Use this to set keyboard shortcuts for the field.text-annotation component.
+Hotkeys for the [TextAnnotationFieldV1](toloka.client.project.template_builder.fields.TextAnnotationFieldV1.md) component.
+
+
+For more information, see [plugin.field.text-annotation.hotkeys](https://toloka.ai/docs/template-builder/reference/plugin.field.text-annotation.hotkeys).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`labels`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[str\]\]\]**|<p>Keyboard shortcuts for selecting categories. They&#x27;re assigned to buttons with categories in the order they&#x27;re shown.</p>
-`remove`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Use this property to allow a Toloker to deselect an entire line or part of it. The key that you assign to this property will deselect.</p>
+`labels`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[str\]\]\]**|<p>A list of hotkeys for choosing labels.</p>
+`remove`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A hotkey for clearing the label of the annotated text.</p>

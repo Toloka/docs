@@ -1,5 +1,5 @@
 # get_app_project
-`toloka.client.TolokaClient.get_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3621)
+`toloka.client.TolokaClient.get_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3777)
 
 ```python
 get_app_project(self, app_project_id: str)
@@ -20,3 +20,11 @@ Gets information from Toloka about an App project.
 * **Return type:**
 
   [AppProject](toloka.client.app.AppProject.md)
+
+**Examples:**
+
+
+```python
+app_project = toloka_client.get_app_project('Q2d15QBjpwWuDz8Z321g')
+print(app_project.created, app_project.name)
+```

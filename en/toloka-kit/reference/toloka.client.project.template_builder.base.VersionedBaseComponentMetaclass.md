@@ -1,3 +1,3 @@
 # VersionedBaseComponentMetaclass
-`toloka.client.project.template_builder.base.VersionedBaseComponentMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/base.py#L168)
+`toloka.client.project.template_builder.base.VersionedBaseComponentMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/base.py#L168)
 

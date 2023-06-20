@@ -1,5 +1,5 @@
 # aggregate_solutions_by_pool
-`toloka.client.TolokaClient.aggregate_solutions_by_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L481)
+`toloka.client.TolokaClient.aggregate_solutions_by_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L563)
 
 Starts aggregation of responses in all completed tasks in a pool.
 

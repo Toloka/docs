@@ -1543,8 +1543,6 @@ items:
       hidden: true
     - name: CreateTaskParameters
       href: ../toloka-kit/reference/toloka.client.task.CreateTaskParameters.md
-    - name: CreateTaskAsyncParameters
-      href: ../toloka-kit/reference/toloka.client.task.CreateTaskAsyncParameters.md
     - name: CreateTasksParameters
       href: ../toloka-kit/reference/toloka.client.task.CreateTasksParameters.md
     - name: TaskOverlapPatch
@@ -1573,6 +1571,8 @@ items:
       hidden: true
     - name: TaskSuiteCreateRequestParameters
       href: ../toloka-kit/reference/toloka.client.task_suite.TaskSuiteCreateRequestParameters.md
+    - name: TaskSuitesCreateRequestParameters
+      href: ../toloka-kit/reference/toloka.client.task_suite.TaskSuitesCreateRequestParameters.md
     - name: TaskSuiteOverlapPatch
       href: ../toloka-kit/reference/toloka.client.task_suite.TaskSuiteOverlapPatch.md
     - name: TaskSuitePatch
@@ -1931,6 +1931,8 @@ items:
       href: ../toloka-kit/reference/toloka.client.user_bonus.UserBonus.md
     - name: UserBonusCreateRequestParameters
       href: ../toloka-kit/reference/toloka.client.user_bonus.UserBonusCreateRequestParameters.md
+    - name: UserBonusesCreateRequestParameters
+      href: ../toloka-kit/reference/toloka.client.user_bonus.UserBonusesCreateRequestParameters.md
   - name: user_restriction
     items:
     - name: UserRestriction
@@ -2485,6 +2487,9 @@ items:
     - name: BaseObserver.inject
       href: ../toloka-kit/reference/toloka.streaming.observer.BaseObserver.inject.md
       hidden: true
+    - name: BaseObserver.get_unique_key
+      href: ../toloka-kit/reference/toloka.streaming.observer.BaseObserver.get_unique_key.md
+      hidden: true
     - name: PoolStatusObserver.inject
       href: ../toloka-kit/reference/toloka.streaming.observer.PoolStatusObserver.inject.md
       hidden: true
@@ -2508,6 +2513,9 @@ items:
       hidden: true
     - name: AssignmentsObserver
       href: ../toloka-kit/reference/toloka.streaming.observer.AssignmentsObserver.md
+    - name: AssignmentsObserver.get_unique_key
+      href: ../toloka-kit/reference/toloka.streaming.observer.AssignmentsObserver.get_unique_key.md
+      hidden: true
     - name: AssignmentsObserver.on_accepted
       href: ../toloka-kit/reference/toloka.streaming.observer.AssignmentsObserver.on_accepted.md
       hidden: true
@@ -2534,6 +2542,9 @@ items:
       hidden: true
     - name: PoolStatusObserver
       href: ../toloka-kit/reference/toloka.streaming.observer.PoolStatusObserver.md
+    - name: PoolStatusObserver.get_unique_key
+      href: ../toloka-kit/reference/toloka.streaming.observer.PoolStatusObserver.get_unique_key.md
+      hidden: true
     - name: PoolStatusObserver.on_archieved
       href: ../toloka-kit/reference/toloka.streaming.observer.PoolStatusObserver.on_archieved.md
       hidden: true

@@ -1,5 +1,5 @@
 # get_lines
-`toloka.metrics.metrics.BaseMetric.get_lines` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L98)
+`toloka.metrics.metrics.BaseMetric.get_lines` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/metrics.py#L98)
 
 ```python
 async get_lines(self)
@@ -24,3 +24,5 @@ Return example:
     # no toloka_requester_balance on this iteration
 }
 ```
+
+

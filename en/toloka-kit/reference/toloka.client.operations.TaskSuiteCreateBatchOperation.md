@@ -1,5 +1,5 @@
 # TaskSuiteCreateBatchOperation
-`toloka.client.operations.TaskSuiteCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/operations.py#L298)
+`toloka.client.operations.TaskSuiteCreateBatchOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L298)
 
 ```python
 TaskSuiteCreateBatchOperation(

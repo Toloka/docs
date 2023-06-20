@@ -1,5 +1,5 @@
 # SidebarLayoutV1
-`toloka.client.project.template_builder.layouts.SidebarLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/layouts.py#L160)
+`toloka.client.project.template_builder.layouts.SidebarLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/layouts.py#L145)
 
 ```python
 SidebarLayoutV1(
@@ -15,28 +15,22 @@ SidebarLayoutV1(
 )
 ```
 
-An option for placing (layout) items, which lets you arrange on a page:
+A layout with a main content block and a panel with controls.
 
 
-* The main content block.
-* An adjacent panel with controls.
+The component supports modes:
+    * Widescreen — The control panel is placed to the right of the main block.
+    * Compact — The controls are placed under the main block and stretch to the entire width.
 
-The minWidth property sets the threshold for switching between widescreen and compact modes: when the width of the
-layout.sidebar component itself becomes less than the value set by the minWidth property, compact mode is enabled.
-
-In widescreen mode, the control panel is located to the right of the main block.
-
-In compact mode, controls stretch to the entire width and are located under each other.
-
-To add an extra panel with controls, use the extraControls property.
+For more information, see [layout.sidebar](https://toloka.ai/docs/template-builder/reference/layout.sidebar).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Content placed in the main area.</p>
-`controls`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Content of the control panel.</p>
-`controls_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The width of the control panel in widescreen mode. In compact mode, the panel takes up the entire available width. Default: 200 pixels.</p>
-`extra_controls`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>An additional panel with controls. Located below the main panel.</p>
-`min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The minimum width, in pixels, for widescreen mode. If the component width becomes less than the specified value, the interface switches to compact mode. Default: 400 pixels.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The main block.</p>
+`controls`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The control panel.</p>
+`controls_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The width in pixels of the control panel in the widescreen mode. </p><p>Default value: `200`.</p>
+`extra_controls`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>An additional panel with controls. It is placed below the controls.</p>
+`min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The minimum width in pixels of the component in a widescreen mode. If the component width is less than the specified value, the interface switches to the compact mode. </p><p>Default value: `400`.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

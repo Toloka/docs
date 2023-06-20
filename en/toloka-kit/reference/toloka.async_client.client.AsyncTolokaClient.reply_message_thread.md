@@ -1,5 +1,5 @@
 # reply_message_thread
-`toloka.async_client.client.AsyncTolokaClient.reply_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.reply_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
 
 ```python
 async reply_message_thread(
@@ -9,18 +9,18 @@ async reply_message_thread(
 )
 ```
 
-Replies to a message in thread
+Sends a reply message in a thread.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`message_thread_id`|**str**|<p>In which thread to reply.</p>
-`reply`|**[MessageThreadReply](toloka.client.message_thread.MessageThreadReply.md)**|<p>Reply message.</p>
+`message_thread_id`|**str**|<p>The ID of the thread.</p>
+`reply`|**[MessageThreadReply](toloka.client.message_thread.MessageThreadReply.md)**|<p>The reply message.</p>
 
 * **Returns:**
 
-  New created message.
+  The updated message thread.
 
 * **Return type:**
 
@@ -28,6 +28,7 @@ Replies to a message in thread
 
 **Examples:**
 
+Sending a reply to all unread messages.
 
 ```python
 message_threads = toloka_client.get_message_threads(folder='UNREAD')
@@ -35,6 +36,6 @@ message_reply = {'EN': 'Thank you for your message! I will get back to you soon.
 for thread in message_threads:
     toloka_client.reply_message_thread(
         message_thread_id=thread.id,
-        reply=toloka.message_thread.MessageThreadReply(text=message_reply)
+        reply=toloka.client.message_thread.MessageThreadReply(text=message_reply)
     )
 ```

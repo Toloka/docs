@@ -1,5 +1,5 @@
 # GroupFieldOption
-`toloka.client.project.template_builder.fields.GroupFieldOption` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L101)
+`toloka.client.project.template_builder.fields.GroupFieldOption` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L104)
 
 ```python
 GroupFieldOption(
@@ -11,12 +11,12 @@ GroupFieldOption(
 )
 ```
 
-Option.
+A single option for components with multiple options.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`value`|**Optional\[Any\]**|<p>Returned value.</p>
-`label`|**Optional\[Any\]**|<p>The text on the object.</p>
-`hint`|**Optional\[Any\]**|<p>Additional information.</p>
+`value`|**Optional\[Any\]**|<p>A value that is saved in data when the option is selected.</p>
+`label`|**Optional\[Any\]**|<p>An option text.</p>
+`hint`|**Optional\[Any\]**|<p>An additional description.</p>

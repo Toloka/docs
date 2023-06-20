@@ -1,5 +1,5 @@
 # EmptyConditionV1
-`toloka.client.project.template_builder.conditions.EmptyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L122)
+`toloka.client.project.template_builder.conditions.EmptyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L115)
 
 ```python
 EmptyConditionV1(
@@ -11,18 +11,14 @@ EmptyConditionV1(
 )
 ```
 
-Checks that the data is empty (undefined).
+Checks that data is empty or undefined.
 
 
-Returns false if the data received a value.
-
-You can check:
-    Template data (data.*).
-    Data for the input field (field.*) that contains condition.empty.
+For more information, see [condition.empty](https://toloka.ai/docs/template-builder/reference/condition.empty).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[Any\]**|<p>Data to check. If not specified, data is checked in the component that contains condition.empty.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`data`|**Optional\[Any\]**|<p>Data to check. If not specified, data of the parent component is checked.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

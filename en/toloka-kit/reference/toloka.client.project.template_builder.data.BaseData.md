@@ -1,5 +1,5 @@
 # BaseData
-`toloka.client.project.template_builder.data.BaseData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/data.py#L29)
+`toloka.client.project.template_builder.data.BaseData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/data.py#L29)
 
 ```python
 BaseData(
@@ -9,11 +9,15 @@ BaseData(
 )
 ```
 
-Components used for working with data: input, output, or intermediate.
+A base class for data components.
 
-## Parameters Description
 
-| Parameters | Type | Description |
-| :----------| :----| :-----------|
-`path`|**Optional\[Any\]**|<p>Path to the property containing data. Dots are used as separators: path.to.some.element. To specify the path to the array element, specify its sequence number starting from zero, for example: items.0</p>
-`default`|**Optional\[Any\]**|<p>The value to be used as the default data. This value will be shown in the interface, so it might hide some placeholders, for example, in the field.text component.</p>
+For more information, see [Working with data](https://toloka.ai/docs/template-builder/operations/work-with-data).
+
+ Attributes:
+    path: A path to a data property in a component hierarchy.
+        Dots are used as separators: `path.to.some.element`.
+        For an array element, specify its sequence number after a dot: `items.0`.
+    default: A default data value.
+        Note, that it is shown in the interface, so it might hide placeholders, for example, in text fields.
+

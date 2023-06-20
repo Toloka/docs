@@ -1,5 +1,5 @@
 # RelativeData
-`toloka.client.project.template_builder.data.RelativeData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/data.py#L92)
+`toloka.client.project.template_builder.data.RelativeData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/data.py#L100)
 
 ```python
 RelativeData(
@@ -9,14 +9,8 @@ RelativeData(
 )
 ```
 
-A special component for saving data.
+A component for saving data in the [ListFieldV1](toloka.client.project.template_builder.fields.ListFieldV1).
 
 
-It's only available in the field.list component.
+For more information, see [Working with data](https://toloka.ai/docs/template-builder/operations/work-with-data).
 
-## Parameters Description
-
-| Parameters | Type | Description |
-| :----------| :----| :-----------|
-`path`|**Optional\[Any\]**|<p>Path to the property containing data. Dots are used as separators: path.to.some.element. To specify the path to the array element, specify its sequence number starting from zero, for example: items.0</p>
-`default`|**Optional\[Any\]**|<p>The value to be used as the default data. This value will be shown in the interface, so it might hide some placeholders, for example, in the field.text component.</p>

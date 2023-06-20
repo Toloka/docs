@@ -1,5 +1,5 @@
 # run
-`toloka.streaming.observer.BaseObserver.run` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/observer.py#L55)
+`toloka.streaming.observer.BaseObserver.run` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/observer.py#L58)
 
 ```python
 async run(self, period: timedelta = ...)

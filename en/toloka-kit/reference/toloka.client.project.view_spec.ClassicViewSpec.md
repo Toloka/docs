@@ -1,5 +1,5 @@
 # ClassicViewSpec
-`toloka.client.project.view_spec.ClassicViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/view_spec.py#L72)
+`toloka.client.project.view_spec.ClassicViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/view_spec.py#L72)
 
 ```python
 ClassicViewSpec(
