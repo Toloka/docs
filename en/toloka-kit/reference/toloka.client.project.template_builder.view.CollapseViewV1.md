@@ -25,6 +25,6 @@ For more information, see [view.collapse](https://toloka.ai/docs/template-builde
 | :----------| :----| :-----------|
 `content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The block content.</p>
 `label`|**Optional\[Any\]**|<p>The block heading.</p>
-`default_opened`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Initial state of the block: `True` — Expanded `False` — Collapsed</p> <p></p><p>Default value: `False`.</p>
+`default_opened`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Initial state of the block: `True` — Expanded `False` — Collapsed</p> <p>Default value: `False`.</p>
 `hint`|**Optional\[Any\]**|<p>A hint text.</p>
 `validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>
