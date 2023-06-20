@@ -29,10 +29,8 @@ The Markdown content must not contain line breaks. To insert them, place `
         Adding a title and description using Markdown.
 
 ```python
-header = tb.view.MarkdownViewV1('# Some Header:
+header = tb.view.MarkdownViewV1('# Some Header:\n---\nSome detailed description')
 ```
-Some detailed description')
-        ...
 
 ## Parameters Description
 

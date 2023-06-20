@@ -23,7 +23,7 @@ If you need to sort bonuses use the [find_user_bonuses](toloka.client.TolokaClie
 `created_lte`|**Optional\[datetime\]**|<p>Bonuses given before or on the specified date.</p>
 `created_gt`|**Optional\[datetime\]**|<p>Bonuses given after the specified date.</p>
 `created_gte`|**Optional\[datetime\]**|<p>Bonuses given after or on the specified date.</p>
-`batch_size`|**Optional\[int\]**|<p>Returned Tolokers&#x27; bonuses limit for each request. The maximum allowed batch_size is 300.</p>
+`batch_size`|**Optional\[int\]**|<p>Returned Tolokers&#x27; bonuses limit for each request. The maximum allowed `batch_size` is 300.</p>
 
 * **Yields:**
 

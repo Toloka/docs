@@ -39,10 +39,8 @@ Create new instance.
 import boto3
 import os
 session = boto3.Session(
-```
-...     aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
-... )
-```python
+    aws_secret_access_key=os.getenv('AWS_SECRET_ACCESS_KEY')
+)
 resource = session.resource('s3', region_name=os.getenv('AWS_DEFAULT_REGION', 'us-east-2'))
 bucket = resource.Bucket('my-bucket')
 storage = S3Storage(bucket)
