@@ -1,5 +1,5 @@
 # find_user_skills
-`toloka.client.TolokaClient.find_user_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3365)
+`toloka.client.TolokaClient.find_user_skills` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L3365)
 
 Finds Toloker's skills that match certain criteria.
 

@@ -1,5 +1,5 @@
 # OpenLinkActionV1
-`toloka.client.project.template_builder.actions.OpenLinkActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/actions.py#L103)
+`toloka.client.project.template_builder.actions.OpenLinkActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/project/template_builder/actions.py#L103)
 
 ```python
 OpenLinkActionV1(

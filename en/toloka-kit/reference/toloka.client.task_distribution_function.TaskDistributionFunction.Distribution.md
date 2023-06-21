@@ -1,5 +1,5 @@
 # Distribution
-`toloka.client.task_distribution_function.TaskDistributionFunction.Distribution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/task_distribution_function.py#L32)
+`toloka.client.task_distribution_function.TaskDistributionFunction.Distribution` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/task_distribution_function.py#L32)
 
 An enumeration.
 

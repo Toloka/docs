@@ -1,5 +1,5 @@
 # Status
-`toloka.client.assignment.Assignment.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/assignment.py#L59)
+`toloka.client.assignment.Assignment.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/assignment.py#L59)
 
 The status of an assigned task suite.
 

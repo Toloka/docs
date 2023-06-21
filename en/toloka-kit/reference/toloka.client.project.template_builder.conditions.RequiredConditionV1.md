@@ -1,5 +1,5 @@
 # RequiredConditionV1
-`toloka.client.project.template_builder.conditions.RequiredConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L189)
+`toloka.client.project.template_builder.conditions.RequiredConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/project/template_builder/conditions.py#L189)
 
 ```python
 RequiredConditionV1(

@@ -1,5 +1,5 @@
 # SpentBudgetOnPool
-`toloka.metrics.pool_metrics.SpentBudgetOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/pool_metrics.py#L347)
+`toloka.metrics.pool_metrics.SpentBudgetOnPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/metrics/pool_metrics.py#L347)
 
 ```python
 SpentBudgetOnPool(

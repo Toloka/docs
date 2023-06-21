@@ -1,5 +1,5 @@
 # BaseCursor
-`toloka.streaming.cursor.BaseCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L80)
+`toloka.streaming.cursor.BaseCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/streaming/cursor.py#L80)
 
 ```python
 BaseCursor(

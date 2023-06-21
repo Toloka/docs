@@ -1,5 +1,5 @@
 # get_user_bonuses
-`toloka.client.TolokaClient.get_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3196)
+`toloka.client.TolokaClient.get_user_bonuses` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L3196)
 
 Finds all Tolokers' bonuses that match certain rules and returns them in an iterable object
 

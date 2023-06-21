@@ -1,5 +1,5 @@
 # ValidationErrorCodes
-`toloka.client.error_codes.ValidationErrorCodes` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/error_codes.py#L95)
+`toloka.client.error_codes.ValidationErrorCodes` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/error_codes.py#L95)
 
 Validation error codes returned by Toloka.
 

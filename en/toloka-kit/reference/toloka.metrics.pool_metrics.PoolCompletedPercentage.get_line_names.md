@@ -1,5 +1,5 @@
 # get_line_names
-`toloka.metrics.pool_metrics.PoolCompletedPercentage.get_line_names` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/pool_metrics.py#L195)
+`toloka.metrics.pool_metrics.PoolCompletedPercentage.get_line_names` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/metrics/pool_metrics.py#L195)
 
 ```python
 get_line_names(self)

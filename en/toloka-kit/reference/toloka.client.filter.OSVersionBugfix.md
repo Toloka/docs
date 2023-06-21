@@ -1,5 +1,5 @@
 # OSVersionBugfix
-`toloka.client.filter.OSVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L633)
+`toloka.client.filter.OSVersionBugfix` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/filter.py#L633)
 
 ```python
 OSVersionBugfix(

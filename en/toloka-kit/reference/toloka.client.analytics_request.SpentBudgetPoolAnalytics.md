@@ -1,5 +1,5 @@
 # SpentBudgetPoolAnalytics
-`toloka.client.analytics_request.SpentBudgetPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L125)
+`toloka.client.analytics_request.SpentBudgetPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/analytics_request.py#L125)
 
 ```python
 SpentBudgetPoolAnalytics(self, *, subject_id: str)

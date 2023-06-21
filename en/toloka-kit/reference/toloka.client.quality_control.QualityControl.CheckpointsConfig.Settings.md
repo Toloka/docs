@@ -1,5 +1,5 @@
 # Settings
-`toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/quality_control.py#L93)
+`toloka.client.quality_control.QualityControl.CheckpointsConfig.Settings` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/quality_control.py#L93)
 
 ```python
 Settings(

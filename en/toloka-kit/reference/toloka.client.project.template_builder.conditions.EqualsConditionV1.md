@@ -1,5 +1,5 @@
 # EqualsConditionV1
-`toloka.client.project.template_builder.conditions.EqualsConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L128)
+`toloka.client.project.template_builder.conditions.EqualsConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/project/template_builder/conditions.py#L128)
 
 ```python
 EqualsConditionV1(

@@ -1,5 +1,5 @@
 # MediaFileFieldV1
-`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L332)
+`toloka.client.project.template_builder.fields.MediaFileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/project/template_builder/fields.py#L332)
 
 ```python
 MediaFileFieldV1(
@@ -26,7 +26,7 @@ For more information, see [field.media-file](https://toloka.ai/docs/template-bui
 | :----------| :----| :-----------|
 `data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
 `accept`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Accept](toloka.client.project.template_builder.fields.MediaFileFieldV1.Accept.md)\]\]**|<p>Selecting file sources. Every source adds an upload button.</p>
-`multiple`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — Multiple files can be uploaded.</li> <li>`False` — A single file can be uploaded.</li> </ul> <p>Default value: `False`.</p>
+`multiple`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — Multiple files can be uploaded.</li> <li>`False` — A single file can be uploaded.</li> </ul> <p></p><p>Default value: `False`.</p>
 `hint`|**Optional\[Any\]**|<p>A hint.</p>
 `label`|**Optional\[Any\]**|<p>A label above the component.</p>
 `validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

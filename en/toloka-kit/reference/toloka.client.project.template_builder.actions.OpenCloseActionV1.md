@@ -1,5 +1,5 @@
 # OpenCloseActionV1
-`toloka.client.project.template_builder.actions.OpenCloseActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/actions.py#L88)
+`toloka.client.project.template_builder.actions.OpenCloseActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/project/template_builder/actions.py#L88)
 
 ```python
 OpenCloseActionV1(

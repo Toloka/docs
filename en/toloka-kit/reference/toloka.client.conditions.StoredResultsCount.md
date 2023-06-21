@@ -1,5 +1,5 @@
 # StoredResultsCount
-`toloka.client.conditions.StoredResultsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/conditions.py#L319)
+`toloka.client.conditions.StoredResultsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/conditions.py#L319)
 
 ```python
 StoredResultsCount(

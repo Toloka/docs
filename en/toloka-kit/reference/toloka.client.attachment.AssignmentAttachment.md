@@ -1,5 +1,5 @@
 # AssignmentAttachment
-`toloka.client.attachment.AssignmentAttachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/attachment.py#L56)
+`toloka.client.attachment.AssignmentAttachment` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/attachment.py#L56)
 
 ```python
 AssignmentAttachment(

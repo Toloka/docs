@@ -1,5 +1,5 @@
 # TrainingCloneOperation
-`toloka.client.operations.TrainingCloneOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L213)
+`toloka.client.operations.TrainingCloneOperation` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/operations.py#L213)
 
 ```python
 TrainingCloneOperation(

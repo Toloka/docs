@@ -1,5 +1,5 @@
 # AssignmentCursor
-`toloka.streaming.cursor.AssignmentCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L245)
+`toloka.streaming.cursor.AssignmentCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/streaming/cursor.py#L245)
 
 ```python
 AssignmentCursor(

@@ -1,5 +1,5 @@
 # Status
-`toloka.client.operations.Operation.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/operations.py#L68)
+`toloka.client.operations.Operation.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/operations.py#L68)
 
 The status of the operation:
 

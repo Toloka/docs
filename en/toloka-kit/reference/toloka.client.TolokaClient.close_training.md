@@ -1,5 +1,5 @@
 # close_training
-`toloka.client.TolokaClient.close_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1853)
+`toloka.client.TolokaClient.close_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L1853)
 
 ```python
 close_training(self, training_id: str)

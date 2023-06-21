@@ -1,5 +1,5 @@
 # get_operations
-`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2935)
+`toloka.client.TolokaClient.get_operations` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L2935)
 
 Finds all operations that match certain rules and returns them in an iterable object
 

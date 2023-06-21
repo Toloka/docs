@@ -1,5 +1,5 @@
 # delete
-`toloka.streaming.observer.BaseObserver.delete` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/observer.py#L46)
+`toloka.streaming.observer.BaseObserver.delete` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/streaming/observer.py#L46)
 
 ```python
 delete(self)

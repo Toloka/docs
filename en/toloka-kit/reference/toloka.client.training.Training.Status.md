@@ -1,5 +1,5 @@
 # Status
-`toloka.client.training.Training.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/training.py#L80)
+`toloka.client.training.Training.Status` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/training.py#L80)
 
 The status of a training.
 

@@ -1,5 +1,5 @@
 # FileLocker
-`toloka.streaming.locker.FileLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/locker.py#L54)
+`toloka.streaming.locker.FileLocker` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/streaming/locker.py#L54)
 
 ```python
 FileLocker(

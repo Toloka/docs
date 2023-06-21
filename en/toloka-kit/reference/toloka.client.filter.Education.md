@@ -1,5 +1,5 @@
 # Education
-`toloka.client.filter.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L293)
+`toloka.client.filter.Education` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/filter.py#L293)
 
 ```python
 Education(

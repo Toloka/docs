@@ -1,5 +1,5 @@
 # open_training
-`toloka.client.TolokaClient.open_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L2072)
+`toloka.client.TolokaClient.open_training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L2072)
 
 ```python
 open_training(self, training_id: str)

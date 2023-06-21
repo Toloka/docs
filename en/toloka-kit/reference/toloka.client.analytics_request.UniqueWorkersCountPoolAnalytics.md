@@ -1,5 +1,5 @@
 # UniqueWorkersCountPoolAnalytics
-`toloka.client.analytics_request.UniqueWorkersCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L132)
+`toloka.client.analytics_request.UniqueWorkersCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/analytics_request.py#L132)
 
 ```python
 UniqueWorkersCountPoolAnalytics(self, *, subject_id: str)

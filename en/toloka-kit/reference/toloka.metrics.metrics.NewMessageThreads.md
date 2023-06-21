@@ -1,5 +1,5 @@
 # NewMessageThreads
-`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/metrics.py#L361)
+`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/metrics/metrics.py#L361)
 
 ```python
 NewMessageThreads(

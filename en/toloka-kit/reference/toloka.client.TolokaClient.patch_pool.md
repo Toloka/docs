@@ -1,5 +1,5 @@
 # patch_pool
-`toloka.client.TolokaClient.patch_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L1755)
+`toloka.client.TolokaClient.patch_pool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L1755)
 
 Changes pool parameters in Toloka.
 

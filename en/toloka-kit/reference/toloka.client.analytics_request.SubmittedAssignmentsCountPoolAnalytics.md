@@ -1,5 +1,5 @@
 # SubmittedAssignmentsCountPoolAnalytics
-`toloka.client.analytics_request.SubmittedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L77)
+`toloka.client.analytics_request.SubmittedAssignmentsCountPoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/analytics_request.py#L77)
 
 ```python
 SubmittedAssignmentsCountPoolAnalytics(self, *, subject_id: str)

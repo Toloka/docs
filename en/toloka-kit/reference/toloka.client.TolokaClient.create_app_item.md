@@ -1,5 +1,5 @@
 # create_app_item
-`toloka.client.TolokaClient.create_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L4018)
+`toloka.client.TolokaClient.create_app_item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L4018)
 
 Creates an App task item in Toloka.
 

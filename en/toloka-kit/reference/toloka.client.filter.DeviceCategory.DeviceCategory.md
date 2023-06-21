@@ -1,5 +1,5 @@
 # DeviceCategory
-`toloka.client.filter.DeviceCategory.DeviceCategory` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L516)
+`toloka.client.filter.DeviceCategory.DeviceCategory` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/filter.py#L516)
 
 Device categories.
 

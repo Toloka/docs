@@ -1,5 +1,5 @@
 # AdultAllowed
-`toloka.client.filter.AdultAllowed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L317)
+`toloka.client.filter.AdultAllowed` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/filter.py#L317)
 
 ```python
 AdultAllowed(

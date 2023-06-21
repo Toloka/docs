@@ -1,5 +1,5 @@
 # on_submitted
-`toloka.streaming.observer.AssignmentsObserver.on_submitted` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/observer.py#L397)
+`toloka.streaming.observer.AssignmentsObserver.on_submitted` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/streaming/observer.py#L397)
 
 ```python
 on_submitted(self, callback: Union[Callable[[List[AssignmentEvent]], None], Callable[[List[AssignmentEvent]], Awaitable[None]]])

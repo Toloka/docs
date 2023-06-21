@@ -1,5 +1,5 @@
 # reply_message_thread
-`toloka.async_client.client.AsyncTolokaClient.reply_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.reply_message_thread` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/async_client/client.py#L0)
 
 ```python
 async reply_message_thread(

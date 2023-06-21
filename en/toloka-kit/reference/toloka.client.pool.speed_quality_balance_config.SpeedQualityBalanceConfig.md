@@ -1,5 +1,5 @@
 # SpeedQualityBalanceConfig
-`toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/pool/speed_quality_balance_config.py#L10)
+`toloka.client.pool.speed_quality_balance_config.SpeedQualityBalanceConfig` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/pool/speed_quality_balance_config.py#L10)
 
 ```python
 SpeedQualityBalanceConfig(self)
@@ -12,3 +12,4 @@ Tolokers are sorted by their quality forecast. You can limit the number of the b
 It influences quality of results and speed of getting results.
 
 Learn more about [Speed/quality balance](https://toloka.ai/docs/guide/adjust).
+

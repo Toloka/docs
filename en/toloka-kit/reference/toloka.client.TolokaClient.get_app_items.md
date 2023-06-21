@@ -1,5 +1,5 @@
 # get_app_items
-`toloka.client.TolokaClient.get_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3983)
+`toloka.client.TolokaClient.get_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L3983)
 
 Finds all App task items that match certain criteria in an App project.
 

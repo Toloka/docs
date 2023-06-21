@@ -1,5 +1,5 @@
 # find_apps
-`toloka.async_client.client.AsyncTolokaClient.find_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.find_apps` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/__init__.py#L0)
 
 Finds App solutions that match certain criteria.
 

@@ -1,5 +1,5 @@
 # load
-`toloka.streaming.storage.S3Storage.load` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/storage.py#L224)
+`toloka.streaming.storage.S3Storage.load` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/streaming/storage.py#L224)
 
 ```python
 load(

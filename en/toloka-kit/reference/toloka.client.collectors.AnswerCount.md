@@ -1,5 +1,5 @@
 # AnswerCount
-`toloka.client.collectors.AnswerCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L130)
+`toloka.client.collectors.AnswerCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/collectors.py#L130)
 
 ```python
 AnswerCount(self, *, uuid: Optional[UUID] = None)

@@ -1,5 +1,5 @@
 # Captcha
-`toloka.client.collectors.Captcha` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L249)
+`toloka.client.collectors.Captcha` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0.post1/src/client/collectors.py#L249)
 
 ```python
 Captcha(
