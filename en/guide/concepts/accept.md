@@ -20,12 +20,6 @@ Note that you can't change the task status if the task pool was [archived](pool-
 
 {% cut "Online review of one task." %}
 
-{% note info %}
-
-You can view the number of task suites by type under the page title.
-
-{% endnote %}
-
 To accept or reject one task:
 
 1. Click the **Review assignments** button on the pool page.
@@ -35,6 +29,20 @@ To accept or reject one task:
     If responses include files uploaded by the Tolokers, click the **Actions → Download attachments** button to download them. To download all files from submitted responses in a ZIP archive, click **Download results → Download attachments** on the assignments review page.
 
 1. Check the responses, click **Accept** or **Decline**. For rejected responses, enter a comment (specify the reason).
+
+{% cut "Online review statistics" %}
+
+You can view the number of task suites by type on the online review page:
+
+- **Total**
+
+- **Unreviewed**
+
+- **Accepted**
+
+- **Rejected**
+
+{% endcut %}
 
 {% endcut %}
 

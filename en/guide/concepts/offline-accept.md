@@ -1,6 +1,6 @@
 # Manual review
 
-Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed [tasks](../../glossary.md#task).
+Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed [tasks](../../glossary.md#task). You can review responses manually or with the help of Tolokers by posting a separate review task.
 
 Learn more about [manual review methods](accept.md#acception).
 
@@ -16,7 +16,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
 - Put a low rating to your project.
 
-{% cut "To get fewer appeals and maintain a high rating for your projects:" %}
+{% cut "How to get fewer appeals and maintain a high rating for your projects" %}
 
 - Write a clear instruction with a clear algorithm of actions, requirements for results and possible reasons for their rejection.
 
@@ -34,13 +34,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
 {% endcut %}
 
-You can review responses manually or with the help of Tolokers by posting a separate review task.
-
-{% cut "Pool status and the review results" %}
-
-30 days after the tasks are completed the pool is automatically sent to the archive. It isn't possible to change the review result in an archive pool, so you won't be able to accept a previously rejected assignment.
-
-{% endcut %}
+{% cut "How to get the review statistics" %}
 
 You can view the number of task suites by type on the pool page under the project name:
 
@@ -52,6 +46,13 @@ You can view the number of task suites by type on the pool page under the projec
 
 - **Completed**
 
+{% endcut %}
+
+{% cut "Pool status and the review results" %}
+
+30 days after the tasks are completed the pool is automatically sent to the archive. It isn't possible to change the review result in an archive pool, so you won't be able to accept a previously rejected assignment.
+
+{% endcut %}
 
 ## Rejecting responses {#declined}
 
