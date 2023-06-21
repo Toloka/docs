@@ -78,7 +78,7 @@ A description of your interface in the JSON format. You write the code for it in
 
 A task that contains the correct response. Control tasks are used to monitor the quality of the Toloker's responses.
 
-For example, you can track the percentage of correct responses and block Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
+For example, you can track the percentage of correct task responses and block Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
 
 In addition to control tasks, there are [general](#general-task) and [training](#training-task) tasks.
 
@@ -311,10 +311,6 @@ A [quality control](#quality-control) rule that can be configured to resend task
 
 All [pool](#pool) tasks completed by this Toloker will be resent to other Tolokers. Tasks completed by banned Tolokers are reassigned, but those completed by paused Tolokers are not.
 
-#### Response {#response}
-
-The result of completing an assignment by a Toloker. The responses can be either correct or incorrect. You can decline incorrect responses using the [assignment review](#assignment-review) and even [block Tolokers](#banning-tolokers) who give too many incorrect responses.
-
 #### Retry pool {#retry-pool}
 
 A pool that helps Tolokers who make mistakes improve their [skills](#skill) and get a second chance to complete tasks.
@@ -371,17 +367,25 @@ A [quality control](#quality-control) rule that limits the number of [task suite
 
 A request or question that elicits a response from an annotator in [Toloka]({{ toloka }}). A task is created for a single data unit that requires labeling, like a photo to classify, or a comment to review. It is a part of a web page (a [task suite](#task-suite)) that can contain various objects: images, text, input fields, and others. Tolokers read the instructions for the task, complete it and enter [responses](#response). In [Template Builder](template-builder/index.md), you can create an interface for such tasks.
 
+#### Task response {#task-response}
+
+The result of completing a single task by a Toloker. The task responses can be either correct or incorrect. You can [block Tolokers](#banning-tolokers) who give too many incorrect task responses.
+
 #### Task interface {#task-interface}
 
 The appearance of a task for Tolokers and the logic for processing responses.
 
 #### Task markup {#task-markup}
 
-Adding correct responses and hints to the tasks and changing task types. You can transform a [general task](#general-task) into a [control task](#control-task) by adding the correct response, or into a [training task](#training-task) by adding the correct response and a hint. Task markup is available only for training pools and pools uploaded with “[smart mixing](#smart-mixing)”. [Learn more](guide/concepts/task_markup.md)
+Adding correct responses and hints to the tasks and changing task types. You can transform a [general task](#general-task) into a [control task](#control-task) by adding the correct task response, or into a [training task](#training-task) by adding the correct response and a hint. Task markup is available only for training pools and pools uploaded with “[smart mixing](#smart-mixing)”. [Learn more](guide/concepts/task_markup.md)
 
 #### Task suite {#task-suite}
 
 A group of several tasks given to a Toloker to submit all at once. For example, you can show four images on the same page. If the tasks are simple, you can add 10–20 tasks per suite. Don't make task suites too long because it slows down loading speed for Tolokers. A task suite may consist of a single task.
+
+#### Task suite response {#response}
+
+The result of completing a task suite by a Toloker. The task suite responses can be either correct or incorrect. You can decline incorrect responses using the [assignment review](#assignment-review) and even [block Tolokers](#banning-tolokers) who give too many incorrect responses.
 
 #### Toloka API {#toloka-api}
 
@@ -399,13 +403,13 @@ A main [pool](#pool) that consists only of [training tasks](#training-task) and 
 
 #### Training pool {#training-pool}
 
-A [pool](#pool) of zero-price tasks for training Tolokers. Training tasks contain correct responses and hints that are shown if the Toloker answers incorrectly.
+A [pool](#pool) of zero-price tasks for training Tolokers. Training tasks contain correct task responses and hints that are shown if the Toloker answers incorrectly.
 
 To improve the quality of results, you can add a training pool and choose only those Tolokers who pass training successfully. [Learn more](guide/concepts/train.md)
 
 #### Training skill {#training-skill}
 
-A [skill](#skill) that is automatically created when the first training pool is added to the project. The skill name is `<project name> - training`. The value is the percentage of correct responses in the training pool. The skill is assigned to the Toloker after they complete the training pool.
+A [skill](#skill) that is automatically created when the first training pool is added to the project. The skill name is `<project name> - training`. The value is the percentage of correct task responses in the training pool. The skill is assigned to the Toloker after they complete the training pool.
 
 There is only one training skill for the entire project. If you create new training pools, they will use the same skill. [Learn more](guide/concepts/nav.md)
 
@@ -415,7 +419,7 @@ A task that contains the correct response and a hint. If the Toloker responds in
 
 Training tasks can be used in zero-price [training pools](#training-pool) to choose Tolokers who pass training.
 
-They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct responses and [ban Tolokers](#banning-tolokers) who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
+They can also be used in regular pools as [control tasks](#control-task) with hints. For example, you can track the percentage of correct task responses and [ban Tolokers](#banning-tolokers) who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
 
 #### TSV {#tsv-format}
 

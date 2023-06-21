@@ -16,15 +16,15 @@ This rule can increase the cost of the pool.
 
 {% endnote %}
 
-Use the rule if you want to get task suite responses only from honest Tolokers to each task in the given overlap.
+Use the rule if you want to get responses only from honest Tolokers to each task in the given overlap.
 
 The assignments submitted by banned Tolokers will be taken into account if they are not rejected manually using [manual review](../../glossary.md#assignment-review). They can be reassigned by setting up the corresponding rule.
 
-To download the task suite responses of users who are not blocked:
+To download the responses of users who are not blocked:
 
 1. On the pool page, click **Download results** on the right.
 1. Click **Additional options**.
-1. Turn off the **Include task suite response from banned Tolokers** option.
+1. Turn off the **Include responses from banned Tolokers** option.
 1. Click **Download**.
 
 ![](../_images/control-rules/restore-task-overlap/good-results.png =700x)

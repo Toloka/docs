@@ -30,7 +30,7 @@ The **If** and **then** fields in this rule are required. If you don't fill in a
 
 #|
 ||**Field** | **Overview**||
-||**Recent control and training task responses to use** | The number of the Toloker's last task responses to control tasks.
+||**Recent control and training task responses to use** | The number of the Toloker's last control task responses.
 
 If this field is not filled in, the calculation includes only control task responses in the pool to which the rule applies.
 
@@ -60,7 +60,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all task responses in the pool.
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you're satisfied with this result. The rule will work automatically and accept all task suite responses in the pool.
 
 - **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
@@ -79,7 +79,7 @@ Solutions:
 
 - [Set a skill and deny access to Tolokers with a low skill level](goldenset.md#nav)
 
-- [Ban Tolokers if their percentage of correct responses to control tasks is less than 40%](goldenset.md#qcr-control_example3)
+- [Ban Tolokers if their percentage of correct control task responses is less than 40%](goldenset.md#qcr-control_example3)
 
 {% note warning %}
 
@@ -99,9 +99,9 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
   Both rules work independently:
 
-  1. If the Toloker gives at least 3 responses to the control tasks, the percentage of correct answers is assigned as the skill value. This is useful if you want to prevent Tolokers with a low skill level from completing your tasks.
+  1. If the Toloker gives at least 3 control task responses, the percentage of correct answers is assigned as the skill value. This is useful if you want to prevent Tolokers with a low skill level from completing your tasks.
 
-  1. If the Toloker gives at least 3 responses to the control tasks and the percentage of correct answers is less than 60%, they lose access to the project.
+  1. If the Toloker gives at least 3 control task responses and the percentage of correct answers is less than 60%, they lose access to the project.
 
   The calculation uses up to 10 of the Toloker's recent responses to the project's control tasks.
 
@@ -111,7 +111,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
   ![](../_images/control-rules/control-tasks/qcr-control_example-1_2.png =700x)
 
-  The Toloker is banned after the first incorrect response to the first, second or third control task. The skill is not assigned. Since the ban reason is not specified, there is no way to find out why the Toloker is banned.
+  The Toloker is banned after the first incorrect task response to the first, second or third control task. The skill is not assigned. Since the ban reason is not specified, there is no way to find out why the Toloker is banned.
 
 - Alternative settings
 
@@ -125,13 +125,13 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
   All rules are applied independently:
 
-  1. If the Toloker gives at least 3 responses to the control and training tasks, the percentage of correct answers is assigned as the skill value.
+  1. If the Toloker gives at least 3 responses to the control and training tasks, the percentage of correct responses is assigned as the skill value.
 
-  1. If the Toloker gives 2 incorrect answers to 3 control tasks, they lose access to the pool for 10 days.
+  1. If the Toloker gives 2 incorrect responses to 3 control tasks, they lose access to the pool for 10 days.
 
   1. If the Toloker gives 2 incorrect responses to 4 control tasks, they lose access to the pool for 10 days.
 
-  1. If the Toloker gives 5 or more responses to the control tasks and the percentage of correct task responses is less than 80%, they lose access to the pool for 10 days.
+  1. If the Toloker gives 5 or more control task responses and the percentage of correct task responses is less than 80%, they lose access to the pool for 10 days.
 
    A set of rules like this prevents Tolokers from being banned for one incorrect task response and lets you maintain high accuracy.
 
@@ -171,7 +171,7 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 
   ![](../_images/control-rules/control-tasks/qcr-control_example3.png =700x)
 
-  If the percentage of correct responses in the control tasks is less than 40%, the Toloker loses access to the project for 30 days.
+  If the percentage of correct control task responses is less than 40%, the Toloker loses access to the project for 30 days.
 
   This rule doesn't take into account responses in the training tasks for banning.
 
@@ -179,7 +179,7 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 
   ![](../_images/control-rules/control-tasks/qcr-control_example-3.png =700x)
 
-  If the percentage of correct responses in the control tasks is less than 40%, the Toloker loses access to the project for 30 days. The rule will be applied once — after the fifth response in the control task.
+  If the percentage of correct control task responses is less than 40%, the Toloker loses access to the project for 30 days. The rule will be applied once — after the fifth response in the control task.
 
 {% endlist %}
 

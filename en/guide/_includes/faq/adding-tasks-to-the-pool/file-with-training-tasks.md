@@ -2,8 +2,8 @@
 
 For training tasks, you need to:
 
-- Select the correct responses in the `GOLDEN:result` column.
+- Select the correct task responses in the `GOLDEN:result` column.
 
-- Fill in the `HINT:text` column. It stores a hint to be shown if the Toloker selects an incorrect response option.
+- Fill in the `HINT:text` column. It stores a hint to be shown if the Toloker selects an incorrect task response option.
 
 {% endcut %}

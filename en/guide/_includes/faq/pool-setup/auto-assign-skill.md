@@ -1,4 +1,4 @@
-{% cut "How do I automatically assign skills based on Toloker responses to my questions?" %}
+{% cut "How do I automatically assign skills based on Toloker task responses to my questions?" %}
 
 You can do that using the [Control tasks](../../../../guide/concepts/goldenset.md) rule.
 

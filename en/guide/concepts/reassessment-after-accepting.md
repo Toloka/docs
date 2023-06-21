@@ -31,7 +31,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 ||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
-- **submitted assignments** — The number of [task suite responses](../../glossary.md#task-suite) that are completed and awaiting review.
+- **submitted assignments** — The number of [task suite responses](../../glossary.md#response) that are completed and awaiting review.
 
 - **approved assignments** — The number of task suite responses accepted after the review.
 
@@ -52,7 +52,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 To add multiple conditions, click ![](../_images/add.svg).||
 ||**then** | Action to perform for the **If** condition:
 
-- **extend overlap by** — Resend the [task suite response](../../glossary.md#task-suite) for completion to other Tolokers.
+- **extend overlap by** — Resend the [task suite](../../glossary.md#task-suite) for completion to other Tolokers.
 
     If you want an assignment to be automatically reassigned even if your pool is already completed and closed, turn on the option **Open pool if closed**.
 
