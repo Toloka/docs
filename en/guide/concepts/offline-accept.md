@@ -2,7 +2,7 @@
 
 Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed [tasks](../../glossary.md#task).
 
-You can find the [Review methods](accept.md#acception) in the **Working with results → Reviewing Tolokers' responses** section.
+Learn more about [manual review methods](accept.md#acception).
 
 ## How does it work? {#how-it-works}
 
@@ -41,6 +41,17 @@ You can review responses manually or with the help of Tolokers by posting a sepa
 30 days after the tasks are completed the pool is automatically sent to the archive. It isn't possible to change the review result in an archive pool, so you won't be able to accept a previously rejected assignment.
 
 {% endcut %}
+
+You can view the number of task suites by type on the pool page under the project name:
+
+- **Accepted**
+
+- **Rejected**
+
+- **Unreviewed**
+
+- **Completed**
+
 
 ## Rejecting responses {#declined}
 

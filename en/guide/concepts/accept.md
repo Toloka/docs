@@ -20,6 +20,12 @@ Note that you can't change the task status if the task pool was [archived](pool-
 
 {% cut "Online review of one task." %}
 
+{% note info %}
+
+You can view the number of task suites by type under the page title.
+
+{% endnote %}
+
 To accept or reject one task:
 
 1. Click the **Review assignments** button on the pool page.
@@ -50,7 +56,7 @@ To accept or reject responses:
 
 1. To download responses that you didn't review yet: on the pool page, click **Download results**. In the window that opens:
 
-    1. In **Status** leave only the **Submitted** option enabled.
+    1. In **Status** leave only the **Unreviewed** option enabled.
 
     1. In **Columns** leave only the **assignment ID** option enabled.
 
