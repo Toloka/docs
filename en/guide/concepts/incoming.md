@@ -272,7 +272,7 @@ For [arrays](*type-array), add the `array_` prefix to the field type in JSON mod
 To learn more about the data types, see the [Data types](#data-types) section. ||
 || **Required** | `required` | Whether the field must be filled when uploading the tasks for the input data.
 
-Whether the Toloker's response is required in the output data.
+Whether the Toloker's [task response](../../glossary.md#task-response) is required in the output data.
 
 By default, fields are optional — `false`.||
 ||**Hidden** | `hidden` | Allows you to hide data from the Toloker. If this is not done, Tolokers can get the field value programmatically. You can configure this parameter in JSON mode.

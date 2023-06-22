@@ -14,7 +14,7 @@ Use [decomposition](solution-architecture.md) to simplify the tasks:
 [Dynamic overlap](dynamic-overlap.md) lets you change [overlap](../../glossary.md#overlap) depending on:
 
 - How well the Tolokers do on the task.
-- How well Tolokers' responses match each other.
+- How well Tolokers' [task responses](../../glossary.md#task-response) match each other.
 
 With this overlap setting, you can save on the number of Tolokers who complete your tasks, which means the total cost of pool labeling will be lower.
 

@@ -120,9 +120,9 @@ For example: if the number of responses is > 5 and the number of quick responses
 
 ### Majority vote
 
-Evaluate Tolokers' responses by comparing them with the majority vote: reward Tolokers who give correct responses and block those who often make mistakes.
+Evaluate Tolokers' [task responses](../../glossary.md#task-response) by comparing them with the majority vote: reward Tolokers who give correct responses and block those who often make mistakes.
 
-In the **Accept as majority** field, specify the number of matching responses that is considered the majority vote and set the condition. The rule takes effect when the number of responses for the task is equal to the overlap.
+In the **Accept as majority** field, specify the number of matching task responses that is considered the majority vote and set the condition. The rule takes effect when the number of responses for the task is equal to the overlap.
 
 For example: if the number of responses is > 5 and the percentage of correct responses is < 60, then ban the Toloker on the project for 10 days.
 
@@ -146,7 +146,7 @@ The minimum required level that you can set is 5. Tolokers who complete training
 
 {% note info %}
 
-When editing a pool, the **Smart mixing** section is available only if you have already uploaded tasks to the pool using [smart mixing](../../glossary.md#smart-mixing). 
+When editing a pool, the **Smart mixing** section is available only if you have already uploaded tasks to the pool using [smart mixing](../../glossary.md#smart-mixing).
 
 {% endnote %}
 
@@ -194,7 +194,7 @@ This parameter allows you to vary the task price depending on the Toloker's [ski
 
 You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap) for all pool tasks.
 
-You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. [Learn more](dynamic-overlap.md).
+You set the range, the service analyzes the task responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. [Learn more](dynamic-overlap.md).
 
 ## Optional settings {#pool-additional-settings-info}
 

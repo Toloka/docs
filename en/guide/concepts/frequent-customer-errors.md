@@ -24,7 +24,7 @@ Decompose tasks:
 
   {% cut "Example" %}
 
-  In the first project, Tolokers identify the class of objects in an image, and in the second project, they select areas that have these objects. Other Tolokers check if their responses are correct.
+  In the first project, Tolokers identify the class of objects in an image, and in the second project, they select areas that have these objects. Other Tolokers check if their [task responses](../../glossary.md#task-response) are correct.
 
   [Learn more](solution-architecture.md) about decomposition.
 
@@ -56,7 +56,7 @@ You can create a task interface in the [Template Builder](../../template-builder
 
 - Inconvenient interface: too many questions or unnecessary elements, empty spaces, non-obvious task design, or instructions inside the interface.
 
-- The Toloker's actions are not checked: Tolokers can submit incorrectly filled or empty [output data fields](incoming.md) for verification or they can submit a response with no video or audio in media content tasks.
+- The Toloker's actions are not checked: Tolokers can submit incorrectly filled or empty [output data fields](incoming.md) for verification or they can submit a task response with no video or audio in media content tasks.
 
 {% cut "Solutions" %}
 

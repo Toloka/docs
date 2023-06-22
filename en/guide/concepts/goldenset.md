@@ -1,6 +1,6 @@
 # Control tasks
 
-[Control tasks](../../glossary.md#control-task) contain samples of correct task responses. They allow you to monitor the quality of task completion without having to check all the task responses. Control tasks simplify the verification process, help identify Tolokers' qualifications, and save your time.
+[Control tasks](../../glossary.md#control-task) contain samples of correct [task responses](../../glossary.md#task-response). They allow you to monitor the quality of task completion without having to check all the task responses. Control tasks simplify the verification process, help identify Tolokers' qualifications, and save your time.
 
 {% note info %}
 

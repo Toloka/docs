@@ -14,7 +14,7 @@ Quality control rules allow you to get more accurate task suite responses and re
 
 - To protect your project from robots and cheaters:
 
-    - [Fast task suite responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
+    - [Fast responses](quick-answers.md): Control the minimum time that must be spent per [task suite](../../glossary.md#task-suite).
 
     - [Skipped assignments](skipped-assignments.md): Restrict access to your pool tasks for Tolokers who [skip multiple assignments](pool_statistic-pool.md#skipped-tasks) in a row.
 
@@ -42,7 +42,7 @@ Toloka has presets of quality control rules. Currently, there are three of them:
 
 The table shows the rules included in each of the sets.
 
-|                | Earnings | Skipped assignments | Control tasks | Majority vote | Submitted answers | Fast task suite responses |
+|                | Earnings | Skipped assignments | Control tasks | Majority vote | Submitted answers | Fast responses |
 |----------------|----------|---------------------|---------------|---------------|-------------------|----------------|
 | **Elementary** | +        | +                   | −             | −             | −                 | -              |
 | **Basic**      | +        | +                   | +             | +             | −                 | -              |

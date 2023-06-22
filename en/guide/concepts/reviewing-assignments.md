@@ -6,9 +6,9 @@ If you don't want Tolokers who made a lot of mistakes to do your [tasks](../../g
 
 If [manual review](offline-accept.md) is set in the [pool](../../glossary.md#pool), add a rule to:
 
-- Set the Toloker's [skill](../../glossary.md#skill) based on their task suite responses.
+- Set the Toloker's [skill](../../glossary.md#skill) based on their responses.
 
-- Block access for Tolokers who give incorrect task suite responses.
+- Block access for Tolokers who give incorrect responses.
 
 To have rejected tasks redistributed to other Tolokers, set up the [Recompletion of rejected assignments](reassessment-after-accepting.md) rule.
 
@@ -22,11 +22,11 @@ The **If** and **then** fields in this rule are required. If you don't fill in a
 
 #|
 ||**Field** | **Overview**||
-||**Recent tasks to use** | How many recent task suite responses from the Toloker to use.
+||**Recent tasks to use** | How many recent responses from the Toloker to use.
 
-If this field is not filled in, the calculation includes only task suite responses from the pool to which the rule is applied.
+If this field is not filled in, the calculation includes only responses from the pool to which the rule is applied.
 
-If the field is filled in, the corresponding number of task suite responses is used. The rule takes into account task suite responses from both the current pool and other pools where this field is filled in.
+If the field is filled in, the corresponding number of responses is used. The rule takes into account responses from both the current pool and other pools where this field is filled in.
 
 [Learn more](remember-values.md) about how this field works.||
 ||**If** | A condition for performing the action in the **then** field:

@@ -36,7 +36,7 @@ To see an example of task display, click **Task preview**.
 
 #### Data specification
 
-A block for [input data](incoming.md) (to be uploaded as tasks), and output data (user responses) in the [task interface](spec.md).
+A block for [input data](incoming.md) (to be uploaded as tasks), and output data (user [task responses](../../glossary.md#task-response)) in the [task interface](spec.md).
 
 #### Settings for displaying field tasks
 

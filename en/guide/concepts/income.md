@@ -14,7 +14,7 @@ The project has a rule set up that bans the Toloker if their earnings exceed $5 
 
 Limit the Toloker's daily earnings in the pool if you want to:
 
-- Get task suite responses from as many Tolokers as possible. For this purpose, you might want to set the maximum amount of earnings equal to the price for a single [task suite](../../glossary.md#task-suite).
+- Get [task suite responses](../../glossary.md#response) from as many Tolokers as possible. For this purpose, you might want to set the maximum amount of earnings equal to the price for a single [task suite](../../glossary.md#task-suite).
 
 - Provide protection from robots. For this purpose, set maximum earnings to a higher amount, like 10% of the entire pool cost.
 

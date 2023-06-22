@@ -1,4 +1,4 @@
-# Fast task suite responses
+# Fast responses
 
 This rule is necessary to filter out cheating Tolokers who complete tasks too quickly and carelessly. You can also use it to provide protection against robots that can distort the final results in the pool.
 
@@ -27,7 +27,7 @@ If this field is not filled in, the calculation includes only recent task suites
 If the field is filled in, the corresponding number of task suites is used. The rule takes into account the task suites from both this pool and other pools where this field is filled in.
 
 To learn more about how this field works, go to [Parameter "Remember values"](remember-values.md).||
-||**Minimum time per task suite** | The task suite completion time (in seconds). Everything that is completed faster is considered a fast task suite response.||
+||**Minimum time per task suite** | The task suite completion time (in seconds). Everything that is completed faster is considered a fast [task suite response](../../glossary.md#response).||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **number of task suite responses** — The number of the Toloker's recent task suite responses (less than or equal to the number in the **Recent task suites to use** field).
@@ -62,7 +62,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endnote %}
 
-### Blocking for fast task suite responses
+### Blocking for fast responses
 
 {% list tabs %}
 
@@ -80,7 +80,7 @@ The assignments submitted by banned Tolokers will be taken into account if you d
 
 {% endlist %}
 
-### Suspension in the pool for fast task suite responses
+### Suspension in the pool for fast responses
 
 ![](../_images/control-rules/quick-answers/qcr-quick_answers_example2.png =700x)
 
@@ -88,7 +88,7 @@ A Toloker who completes two task suites in less than 20 seconds is suspended fro
 
 ## For developers {#for-developers}
 
-- [Toloka API: Fast task suite responses](../../api/concepts/fast.md)
+- [Toloka API: Fast responses](../../api/concepts/fast.md)
 - [Toloka-Kit: AssignmentSubmitTime collector class](../../toloka-kit/reference/toloka.client.collectors.AssignmentSubmitTime.md)
 
 ## Troubleshooting {#troubleshooting}

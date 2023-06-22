@@ -12,7 +12,7 @@ The quality control rules feature the following actions:
 
     For example, in the [Submitted responses](submitted-answers.md) rule, you can assign the “Experienced” skill to the Toloker if they completed more than 20 assignments. You can set any skill value. Tolokers with the “Experienced” skill can be granted access to more complex tasks. To do this, just specify **Experienced ≠ Missing** in the filters of the pool with more complex tasks.
 
-- **Assign skill from the field** — Set a value calculated automatically, for example, the percentage of the Toloker's correct responses.
+- **Assign skill from the field** — Set a value calculated automatically, for example, the percentage of the Toloker's correct [task responses](../../glossary.md#task-response).
 
     {% cut "Rules where this action is available" %}
 

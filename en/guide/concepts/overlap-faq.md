@@ -21,7 +21,7 @@ You can change overlap after the pool is started. To do this, open the pool edit
 - Dynamic overlap lets you change [overlap](dynamic-overlap.md) depending on:
 
     - How well the Tolokers do on the task.
-    - How well Tolokers' responses match each other.
+    - How well Tolokers' [task responses](../../glossary.md#task-response) match each other.
 
     This type of overlap helps you save money without reducing the quality of data labeling.
 

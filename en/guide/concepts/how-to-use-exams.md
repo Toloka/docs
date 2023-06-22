@@ -42,7 +42,7 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
 - Only use tasks with an unambiguous answer to avoid different interpretations.
 
-- Make sure that different response options have about the same frequency in your test.
+- Make sure that different [task response](../../glossary.md#task-response) options have about the same frequency in your test.
 
 - After the exam, assign the Toloker a skill equal to their percentage of correct responses.
 
