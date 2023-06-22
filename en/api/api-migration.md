@@ -21,47 +21,11 @@ curl -X GET 'https://toloka.dev/api/v1/requester' \
 
 {% endcut %}
 
-{% cut "I use Toloka-Kit. Do I have to do anything?" %}
+{% include [faq-toloka-kit-new-domain](../guide/_includes/faq/api/toloka-kit-new-domain.md) %}
 
-If you are a user of Toloka-Kit version 1.0.0 and later, you are good to go, no need to do anything.
+{% include [faq-java-sdk-new-domain](../guide/_includes/faq/api/java-sdk-new-domain.md) %}
 
-If your Toloka-Kit version is older than 1.0.0, please update it. You can do this with the help of the following command:
-
-```bash
-pip install toloka-kit --upgrade
-```
-
-Your Toloka-Kit library version will be updated to the latest version together with all the dependencies it requires.
-
-Refer to our [GitHub repository](https://github.com/Toloka/toloka-kit/releases) for the list of available releases.
-
-{% endcut %}
-
-{% cut "I use Toloka Java SDK. Do I have to do anything?" %}
-
-If you are a user of Toloka Java SDK version 0.0.6 and later, you are good to go, no need to do anything.
-
-If your Toloka Java SDK version is older than 0.0.6, please rebuild your Java application using the latest available Toloka Java SDK version.
-
-Go to the [Toloka Java SDK page](https://mvnrepository.com/artifact/ai.toloka/toloka-java-sdk) at the MVN repository and click the latest SDK version number.
-
-![Toloka Java SDK version](./_images/mvnrepository.png =700x)
-
-Then select your Java project type and copy the connection string.
-
-![Toloka Java SDK connection string](./_images/copy-string.png =700x)
-
-If you already use Toloka Java SDK, in most cases you will only need to change the version number.
-
-Refer to our [GitHub repository](https://github.com/Toloka/toloka-java-sdk/releases) for the list of available releases.
-
-{% endcut %}
-
-{% cut "Do I have to reissue my API token to get access to the API when I change the URL or update my app to the latest version?" %}
-
-You don't need to reissue API tokens — they will continue to work. Once you use the new domain to connect to the API (or upgrade your Toloka-Kit or Toloka Java SDK version), you can continue where you left off. You'll still have access to all your projects, pools, and settings.
-
-{% endcut %}
+{% include [faq-reissue-token](../guide/_includes/faq/api/reissue-token.md) %}
 
 {% cut "I have a question not answered here. Where can I ask it?" %}
 
