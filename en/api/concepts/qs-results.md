@@ -72,7 +72,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5bc",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/3.jpg"
+            "image": "https://example.com/image_3.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -85,7 +85,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbaa52cc70d7118c5b8",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/1.jpg"
+            "image": "https://example.com/image_1.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -98,7 +98,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5ba",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/2.jpg"
+            "image": "https://example.com/image_2.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -147,7 +147,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5ba",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/2.jpg"
+            "image": "https://example.com/image_2.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -160,7 +160,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5bc",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/3.jpg"
+            "image": "https://example.com/image_3.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -173,7 +173,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbaa52cc70d7118c5b8",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/1.jpg"
+            "image": "https://example.com/image_1.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,

@@ -398,7 +398,7 @@ You'll need the `id` to add tasks to the pool: specify it in the upload tasks re
 
 In the given code example, substitute the parameter values:
 
-- In `input_values`, replace `<proxy name>`/`<folder name>`/`<file name N>.<type>` with specific values for the input data set in the project's `input_spec` parameter (in this example, these are paths to the images for labeling; place the image files on Yandex Disk and add it as a data source proxy).
+- In `input_values`, replace `https://example.com/image_1.jpg`–`https://example.com/image_3.jpg` with specific values for the input data set in the project's `input_spec` parameter (in this example, these are paths to the images for labeling; replace the example image links with the real ones).
 - In the `pool_id` parameter, replace `{pool_id}` with the ID of the pool to upload the task to (the ID received in response to the add pool request).
 
 Next, send a POST request to `/api/v1/tasks`:
@@ -416,21 +416,21 @@ Next, send a POST request to `/api/v1/tasks`:
          -d '[
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+                   "image": "https://example.com/image_1.jpg"
                  },
                  "pool_id": "{pool_id}",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+                   "image": "https://example.com/image_2.jpg"
                  },
                  "pool_id": "{pool_id}",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+                   "image": "https://example.com/image_3.jpg"
                  },
                  "pool_id": "{pool_id}",
                  "overlap": 2
@@ -462,21 +462,21 @@ Next, send a POST request to `/api/v1/tasks`:
         [
           {
             "input_values": {
-              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+              "image": "https://example.com/image_1.jpg"
             },
             "pool_id": "{pool_id}",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+              "image": "https://example.com/image_2.jpg"
             },
             "pool_id": "{pool_id}",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+              "image": "https://example.com/image_3.jpg"
             },
             "pool_id": "{pool_id}",
             "overlap": 2
