@@ -154,6 +154,29 @@ In this example, the text is highlighted with a blue border.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/b61nCEsv4H8Jzn)
 
+## Add a field for comments {#add-text-area}
+
+To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "field.textarea",
+  "label": "Leave your comment",
+  "hint": "Describe what product you see in the picture, enter the brand name etc.",
+  "placeholder": "Enter text",
+  "data": {
+    "type": "data.output",
+    "path": "comment"
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/0jiq2cxp4HA8wV)
+
 ## Add product categories {#add-categories}
 
 If you need to categorize selected products, create labels for each category using the `labels` property of the [field.image-annotation](../reference/field.image-annotation.md) component. Note that if you use labels, you need to add at least two.
@@ -212,6 +235,40 @@ To ask Tolokers to clarify their choice if they selected the **Cannot label the 
 
 ```json
 {
+  "type": "helper.if",
+  "condition": {
+    "type": "condition.equals",
+    "data": {
+      "type": "data.output",
+      "path": "not_found"
+    },
+    "to": false
+  },
+  "then": {
+    "type": "view.list",
+    "items": [
+      {
+        "type": "field.image-annotation",
+        "image": {
+          "type": "data.input",
+          "path": "image"
+        },
+        "data": {
+          "type": "data.output",
+          "path": "result"
+        },
+        "fullHeight": true,
+        "shapes": {
+          "rectangle": true
+        },
+        "validation": {
+          "type": "condition.required"
+        }
+      }
+    ]
+  }
+},
+{
   "type": "field.checkbox",
   "preserveFalse": true,
   "label": "Cannot label the product",
@@ -266,37 +323,14 @@ To ask Tolokers to clarify their choice if they selected the **Cannot label the 
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/SS0ShREc4GVp4Q)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/jT4KtnJs4HRWJF)
 
-
-## Add a field for comments {#add-text-area}
-
-To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
-
-{% cut "Show code" %}
-
-```json
-{
-  "type": "field.textarea",
-  "label": "Leave your comment",
-  "hint": "Describe what product you see in the picture, enter the brand name etc.",
-  "placeholder": "Enter text",
-  "data": {
-    "type": "data.output",
-    "path": "comment"
-  }
-}
-```
-
-{% endcut %}
-
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/0jiq2cxp4HA8wV)
 
 ## Add a control checkbox {#add-control-checkbox}
 
-If some pictures don't have any products in them, add a control checkbox using [field.checkbox](../reference/field.checkbox.md) component. 
+If you want to allow labeling only after a certain condition has been set, use the `disabled` property of the [field.image-annotation](../reference/field.image-annotation.md) component.
 
-In this example, Toloker will be able to label products only if **There is a product in the photo** option is activated. 
+In this example, a checkbox was added so that users can label the photos where there is no product. Tolokers will be able to highlight products only if the "Product in the photo" option is activated.
 
 {% cut "Show code" %}
 
