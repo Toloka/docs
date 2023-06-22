@@ -1,0 +1,1 @@
+Refer to our [GitHub repository](https://github.com/Toloka/toloka-kit/releases) for the list of available releases.

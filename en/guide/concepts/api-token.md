@@ -70,6 +70,20 @@ If you entered a correct value, you will receive a response like this with the `
 
 Now you can use the created API token to send other API requests: get the list of the existing [projects](https://toloka.ai/docs/api/api-reference/#get-/projects), [pools](https://toloka.ai/docs/api/api-reference/#get-/pools), [upload tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks), and other requests.
 
+{% note info %}
+
+The new API tokens work when you send requests to the `toloka.dev` domain and require [Toloka Java SDK](https://github.com/Toloka/toloka-java-sdk/releases) version 0.0.6 or later and [Toloka-Kit](https://github.com/Toloka/toloka-kit/releases) version 1.2.0 or later.
+
+{% endnote %}
+
+## Troubleshooting
+
+{% include [faq-toloka-kit-new-token](../_includes/faq/api/toloka-kit-new-token.md) %}
+
+{% include [faq-java-sdk-new-token](../_includes/faq/api/java-sdk-new-token.md) %}
+
+{% include [faq-reissue-token](../_includes/faq/api/reissue-token.md) %}
+
 ## Further reading
 
 - [Toloka API](https://toloka.ai/docs/api/api-reference/)

@@ -502,6 +502,16 @@
 
   {% include [faq-auto-acceptance](../_includes/faq/api/auto-acceptance.md) %}
 
+  {% include [faq-toloka-kit-new-domain](../_includes/faq/api/toloka-kit-new-domain.md) %}
+
+  {% include [faq-java-sdk-new-domain](../_includes/faq/api/java-sdk-new-domain.md) %}
+
+  {% include [faq-toloka-kit-new-token](../_includes/faq/api/toloka-kit-new-token.md) %}
+
+  {% include [faq-java-sdk-new-token](../_includes/faq/api/java-sdk-new-token.md) %}
+
+  {% include [faq-reissue-token](../_includes/faq/api/reissue-token.md) %}
+
 - All
 
   ### General {#general}
@@ -1003,6 +1013,16 @@
   ### API {#api}
 
   {% include [faq-auto-acceptance](../_includes/faq/api/auto-acceptance.md) %}
+
+  {% include [faq-toloka-kit-new-domain](../_includes/faq/api/toloka-kit-new-domain.md) %}
+
+  {% include [faq-java-sdk-new-domain](../_includes/faq/api/java-sdk-new-domain.md) %}
+
+  {% include [faq-toloka-kit-new-token](../_includes/faq/api/toloka-kit-new-token.md) %}
+
+  {% include [faq-java-sdk-new-token](../_includes/faq/api/java-sdk-new-token.md) %}
+
+  {% include [faq-reissue-token](../_includes/faq/api/reissue-token.md) %}
 
 {% endlist %}
 
