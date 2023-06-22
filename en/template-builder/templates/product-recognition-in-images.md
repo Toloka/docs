@@ -330,7 +330,7 @@ To ask Tolokers to clarify their choice if they selected the **Cannot label the 
 
 If you want to allow labeling only after a certain condition has been set, use the `disabled` property of the [field.image-annotation](../reference/field.image-annotation.md) component.
 
-In this example, a checkbox was added so that users can label the photos where there is no product. Tolokers will be able to highlight products only if the "Product in the photo" option is activated.
+In this example, a checkbox has been added so that users could label the photos where there is no product. Tolokers will be able to highlight products only if the **Product in the photo** option is activated.
 
 {% cut "Show code" %}
 
@@ -338,7 +338,7 @@ In this example, a checkbox was added so that users can label the photos where t
 {
   "type": "field.checkbox",
   "preserveFalse": true,
-  "label": "There is a product in the photo.",
+  "label": "Product in the photo.",
   "hint": "Activate this option if you can see a product in the photo.",
   "data": {
     "type": "data.output",
@@ -395,7 +395,7 @@ In this example, a checkbox was added so that users can label the photos where t
 
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/we7gyd3F4H9dhS)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/PKPUJ4ne4HRaiQ)
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
