@@ -36,11 +36,11 @@ In our example, the [parameter](*remember_values) is set in the **Recent control
 
   #### Examples
 
-  - The Toloker completes pool A, where the field value is set to N = 10. Toloka calculates their skill in the pool using the last 10 responses to control tasks.
+  - The Toloker completes pool A, where the field value is set to N = 10. Toloka calculates their skill in the pool using the last 10 control task responses.
 
   - Then the Toloker goes to pool B, where the field in the same rule is not filled in. Toloka forgets the history of the Toloker's responses in pool A and starts calculating their skill only within pool B.
 
-  - Then the Toloker goes to pool C, where the field value is set to N = 20. Toloka forgets about pool B but remembers the Toloker's responses in pool A and continues to calculate their skill using the last 20 task suite responses to control tasks.
+  - Then the Toloker goes to pool C, where the field value is set to N = 20. Toloka forgets about pool B but remembers the Toloker's responses in pool A and continues to calculate their skill using the last 20 control task responses.
 
   {% cut "Example 1 with skill setting" %}
 
