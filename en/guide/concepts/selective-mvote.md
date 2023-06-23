@@ -14,27 +14,37 @@ Depending on how many tasks the Toloker completed in `N` days, [overlap](../../g
 
 #### Reducing overlap
 
-The pool's overlap is set to 4. To speed up pool completion and reduce data labeling costs, we'll reduce overlap for every third, fifth, and tenth task.
+The pool's overlap is set to **4**. To speed up pool completion and reduce data labeling costs, we'll reduce overlap for every **3rd**, **5th**, and **10th** task.
 
-![](../_images/location-job/selective.png)
+![](../_images/location-job/selective.png =700x)
 
 Toloker A completed 15 tasks in the last 10 days. Toloker B completed 30 tasks. Toloker C completed 60 tasks.
 
-For Toloker A, overlap will be set to 3 for every third task; for Toloker B — for every fifth task; for Toloker C — for every tenth task.
+For Toloker A, overlap will be set to 3 for every third task; for Toloker B — for every fifth task; for Toloker C — for every tenth task:
+
+| | Toloker A | Toloker B | Toloker C
+--- | ---- | --------- | ---------
+Tasks completed<br/>in the last **10** days | **15** | **30** | **60**
+Overlap | **3**<br/>for every **3rd** task | **3**<br/>for every **5th** task | **3**<br/>for every **10th** task
 
 This way we can reduce overlap for more experienced Tolokers.
 
 #### Increasing overlap
 
-The pool's overlap is set to 2. This project has experienced Tolokers who perform tasks well. We want to increase overlap for new Tolokers and check the experienced Tolokers' responses from time to time. To do this, we will increase overlap for every first, third, fifth, and tenth task.
+The pool's overlap is set to **2**. This project has experienced Tolokers who perform tasks well. We want to increase overlap for new Tolokers and check the experienced Tolokers' responses from time to time. To do this, we will increase overlap for every **1st**, **3rd**, **5th**, and **10th** task.
 
-![](../_images/location-job/selective-plus.png)
+![](../_images/location-job/selective-plus.png =700x)
 
-Toloker A completed 5 tasks in the last 10 days. Toloker B completed 15 tasks. Toloker C completed 25 tasks. Toloker E completed 40 tasks.
+Toloker A completed 5 tasks in the last 10 days. Toloker B completed 15 tasks. Toloker C completed 25 tasks. Toloker D completed 40 tasks.
 
-For Toloker A, overlap will be set to 5 for every task; for Toloker B — for every third task; for Toloker C — for every fifth task; for Toloker E — for every tenth task.
+For Toloker A, overlap will be set to 5 for every task; for Toloker B — for every third task; for Toloker C — for every fifth task; for Toloker D — for every tenth task:
 
-This way we will increase overlap for inexperienced users and save money on the responses of experienced Tolokers.
+| | Toloker A | Toloker B | Toloker C | Toloker D
+--- | ---- | --------- | --------- | ---------
+Tasks completed<br/>in the last **10** days | **5** | **15** | **25** | **40**
+Overlap | **5**<br/>for **every** task | **5**<br/>for every **3rd** task | **5**<br/>for every **5th** task | **5**<br/>for every **10th** task
+
+This way we will increase overlap for inexperienced Tolokers and save money on the responses of experienced Tolokers.
 
 {% endcut %}
 
@@ -70,7 +80,7 @@ To add **selective majority vote check**:
 
 {% cut "Example" %}
 
-![](../_images/location-job/selective.png)
+![](../_images/location-job/selective.png =700x)
 
 {% endcut %}
 
@@ -99,3 +109,5 @@ To add **selective majority vote check**:
 - [{#T}](distribute-tasks-by-pages.md#smart-mixing)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}
