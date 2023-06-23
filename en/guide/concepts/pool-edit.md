@@ -90,7 +90,7 @@ When there are many Tolokers, you can get results quickly, but the quality of th
 
 ## Quality control {#pool-quality-control-info}
 
-### Review task responses manually
+### Review responses manually
 
 Turn on this option to [review](accept.md) the [completed tasks](../../glossary.md#completed-tasks) manually.
 

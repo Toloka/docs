@@ -8,7 +8,7 @@ Some quality control rules have the parameter which allows to calculate Toloker'
 
 - In [control tasks](../../glossary.md#control-task): the [Control tasks](goldenset.md) rule, the **Recent control and training task responses to use** field.
 
-- In [task suites](../../glossary.md#task-suite): the [Fast task responses](quick-answers.md) rule, the **Recent task suites to use** field.
+- In [task suites](../../glossary.md#task-suite): the [Fast responses](quick-answers.md) rule, the **Recent task suites to use** field.
 
 ## How it works {#how-field-works}
 
@@ -32,7 +32,7 @@ In our example, the [parameter](*remember_values) is set in the **Recent control
 
 - The field is filled in
 
-  Toloka calculates control task responses not only in the pool to which the rule applies. Task responses from other pools where the **Recent control and training task responses to use** field is filled in are also taken into account .
+  Toloka calculates control task responses not only in the pool to which the rule applies. Task responses from other pools where the **Recent control and training task responses to use** field is filled in are also taken into account.
 
   #### Examples
 
@@ -72,7 +72,7 @@ In our example, the [parameter](*remember_values) is set in the **Recent control
   | 8 | 0 | 62% — 5 out of 8 correct responses | Condition 1 (within the last 10 tasks), condition 2 (if at least three tasks are completed), condition 3 (assign a skill).
   | 9 | 0 | 55% — 5 out of 9 correct responses | Condition 1 (within the last 10 tasks), condition 2 (if at least three tasks are completed), condition 3 (assign a skill).
   | 10 | 0 | 50% — 5 out of 10 correct responses | Condition 1 (within the last 10 tasks), condition 2 (if at least three tasks are completed), condition 3 (assign a skill).
-  | 11 | 1 | 50% — 5 out of 10 correct responses | Condition 1 (within the last 10 tasks; then Toloka forgets the first task suite response), condition 2 (if at least three tasks are completed), condition 3 (continue calculating the skill).
+  | 11 | 1 | 50% — 5 out of 10 correct responses | Condition 1 (within the last 10 tasks; then Toloka forgets the first response), condition 2 (if at least three tasks are completed), condition 3 (continue calculating the skill).
   | 12 | 1 | 60% — 6 out of 10 correct responses | Condition 1 (within the last 10 tasks; Toloka doesn't remember the first two responses), condition 2 (if at least three tasks are completed), condition 3 (continue calculating the skill).
 
   {% endcut %}
@@ -119,7 +119,7 @@ In our example, the [parameter](*remember_values) is set in the **Recent control
   - Condition 6: **Number of task responses** >= 3.
   - Condition 7: Assign a skill when condition 6 triggers and recalculate this skill within condition 5.
 
-  | Task | Correct task suite response to the control task | Ban check | Skill change  | Comment on the ban | Comment on the skill
+  | Task | Correct control task response | Ban check | Skill change  | Comment on the ban | Comment on the skill
   | ----- | ----- | ----- | ----- | ----- | -----
   | 1 | 1 |  |  | Condition 1 (Toloka starts saving responses). | Condition 5 (Toloka starts saving responses).
   | 2 | 1 |  |  | Condition 1 (Toloka continues saving responses). | Condition 5 (Toloka continues saving responses).
@@ -131,7 +131,7 @@ In our example, the [parameter](*remember_values) is set in the **Recent control
   | 8 | 1 | 100% — 5 out of 5 correct responses | 87% — 7 out of 8 correct responses | Condition 1 (within the last 5 responses to control tasks; Toloka doesn't remember the first three responses), condition 2 (if at least four control tasks are completed), condition 3 (check the percentage of correct responses). | Condition 5 (within the last 10 responses to control tasks), condition 6 (if at least three control tasks are completed), condition 7 (recalculate skill).
   | 9 | 0 | 80% — 4 out of 5 correct responses | 77% — 7 out of 9 correct responses | Condition 1 (within the last 5 responses to control tasks; Toloka doesn't remember the first four responses), condition 2 (if at least four control tasks are completed), condition 3 (check the percentage of correct responses). | Condition 5 (within the last 10 responses to control tasks), condition 6 (if at least three control tasks are completed), condition 7 (recalculate skill).
   | 10 | 0 | 60% — 3 out of 5 correct responses | 70% — 7 out of 10 correct responses | Condition 1 (within the last 5 responses to control tasks; Toloka doesn't remember the first five responses), condition 2 (if at least four control tasks are completed), condition 3 (check the percentage of correct responses). | Condition 5 (within the last 10 responses to control tasks), condition 6 (if at least three control tasks are completed), condition 7 (recalculate skill).
-  | 11 | 1 | 60% — 3 out of 5 correct responses | 70% — 7 out of 10 correct responses | Condition 1 (within the last 5 responses to control tasks; Toloka doesn't remember the first six responses), condition 2 (if at least four control tasks are completed), condition 3 (check the percentage of correct responses). | Condition 5 (within the last 10 responses to control tasks; then Toloka forgets the first task suite response), condition 6 (if at least three control tasks are completed), condition 7 (recalculate skill).
+  | 11 | 1 | 60% — 3 out of 5 correct responses | 70% — 7 out of 10 correct responses | Condition 1 (within the last 5 responses to control tasks; Toloka doesn't remember the first six responses), condition 2 (if at least four control tasks are completed), condition 3 (check the percentage of correct responses). | Condition 5 (within the last 10 responses to control tasks; then Toloka forgets the first response), condition 6 (if at least three control tasks are completed), condition 7 (recalculate skill).
   | 12 | 0 | 40% — 2 out of 5 correct responses | 70% — 7 out of 10 correct responses | Condition 1 (within the last 10 responses to control tasks; Toloka doesn't remember the first seven responses), condition 2 (if at least three control tasks are completed), condition 3 (continue calculating skill), condition 4 (ban the Toloker if quality is lower than 60%). | Condition 5 (within the last 10 responses to control tasks; Toloka doesn't remember the first two responses), condition 6 (if at least three control tasks are completed), condition 7 (recalculate skill).
 
   After completing the 12th task, the Toloker will have 60% of correct responses and will be blocked for poor quality.
@@ -150,9 +150,9 @@ In our example, the [parameter](*remember_values) is set in the **Recent control
 
 {% endnote %}
 
-## How to clear the Toloker's task suite response history {#clear-history}
+## How to clear the Toloker's response history {#clear-history}
 
-The Toloker's task suite response history will be cleared under the following conditions:
+The Toloker's response history will be cleared under the following conditions:
 
 - Ban — within the dynamic window if the **Recent control and training task responses to use** field is filled in, or within the entire pool if the field is not filled in.
 

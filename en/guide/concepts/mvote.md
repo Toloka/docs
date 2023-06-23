@@ -161,7 +161,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 {% endnote %}
 
-### Calculating a skill and banning for incorrect task responses
+### Calculating a skill and banning for incorrect responses
 
 {% list tabs %}
 
@@ -207,7 +207,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
   1. If the Toloker gives 5 or more responses to tasks and the percentage of correct task responses is less than 80%, they are blocked in the pool for 10 days.
 
-  A set of rules like this prevents Tolokers from being banned for one incorrect task response and lets you maintain high accuracy.
+  A set of rules like this prevents Tolokers from being banned for one incorrect response and lets you maintain high accuracy.
 
 {% endlist %}
 

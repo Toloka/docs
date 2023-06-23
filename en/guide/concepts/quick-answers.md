@@ -6,7 +6,7 @@ This rule is necessary to filter out cheating Tolokers who complete tasks too qu
 
 Restrict the pool access for Tolokers who respond too quickly to:
 
-- Restrict access for Tolokers who cheat in their task suite responses. In this case, set the time required to complete a [task suite](../../glossary.md#task-suite) when giving random task suite responses.
+- Restrict access for Tolokers who cheat in their responses. In this case, set the time required to complete a [task suite](../../glossary.md#task-suite) when giving random [task responses](../../glossary.md#task-response).
 
 - Provide anti-robot protection. In this case, set twice as little time for task suite completion.
 
@@ -47,7 +47,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's task suite responses is not saved after the ban is lifted. The skill level is calculated based on the new task suite responses.||
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
 |#
 
 ## Examples {#examples}

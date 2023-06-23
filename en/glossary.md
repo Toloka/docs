@@ -403,7 +403,7 @@ A main [pool](#pool) that consists only of [training tasks](#training-task) and 
 
 #### Training pool {#training-pool}
 
-A [pool](#pool) of zero-price tasks for training Tolokers. Training tasks contain correct task responses and hints that are shown if the Toloker answers incorrectly.
+A [pool](#pool) of zero-price tasks for training Tolokers. Training tasks contain correct responses and hints that are shown if the Toloker answers incorrectly.
 
 To improve the quality of results, you can add a training pool and choose only those Tolokers who pass training successfully. [Learn more](guide/concepts/train.md)
 

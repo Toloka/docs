@@ -66,7 +66,7 @@ To add multiple conditions, click ![](../_images/add.svg).||
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
-    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's task responses is not saved after the ban is lifted. The skill level is calculated based on the new task responses.||
+    If access to tasks is blocked temporarily (for example, for 7 days), the history of the Toloker's responses is not saved after the ban is lifted. The skill level is calculated based on the new responses.||
 |#
 
 ## Examples {#examples}

@@ -5,7 +5,7 @@
 Dynamic overlap lets you change overlap depending on:
 
 - How well the Tolokers do on the task.
-- How well Tolokers' task responses match each other.
+- How well Tolokers' [task responses](../../glossary.md#task-response) match each other.
 
 First the task is distributed with minimal overlap. As Tolokers complete the task, their responses are assigned confidence. If it is less than specified in the **confidence in aggregated response** field, overlap will be increased until confidence reaches the set value, or overlap reaches the maximum.
 
@@ -65,7 +65,7 @@ $(Y-1)$ is the number of remaining task responses.
 
 It ensures that the probability of an error is distributed evenly among the remaining estimates.
 
-We take all Tolokers' task responses and, for example, option $z[x]$ and calculate the probability that Tolokers will select this task response, provided that the correct task response is $z[x] estimate,$:
+We take all Tolokers' responses and, for example, option $z[x]$ and calculate the probability that Tolokers will select this task response, provided that the correct task response is $z[x] estimate,$:
 
 ```javascript
 func z_prob(x int) : float {

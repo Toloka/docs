@@ -1,6 +1,6 @@
 # Toloker skills
 
-Skill can be any characteristic of the Toloker. It is described by a number from 0 to 100. For example, you can record the percentage of correct [task responses](../../glossary.md#task-response) in a skill.
+Skill can be any characteristic of the Toloker. It is described by a number from 0 to 100. For example, you can record the percentage of correct responses in a skill.
 
 In addition to skills created by requesters, Toloka has [global skills](nav-cross-project.md).
 

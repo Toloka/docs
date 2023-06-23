@@ -47,7 +47,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 ||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
-- **Toloker banned** — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast response](../../glossary.md#fast-responses), or [skipping tasks](../../glossary.md#skipping-tasks)).
+- **Toloker banned** — The Toloker's access to tasks is blocked by a [quality control rule](../../glossary.md#quality-control-rule) (such as [control tasks](../../glossary.md#control-task), [majority vote](../../glossary.md#majority-vote), [fast responses](../../glossary.md#fast-responses), or [skipping tasks](../../glossary.md#skipping-tasks)).
 
 - **Toloker filtered out** — The Toloker no longer meets one or more [filters](filters.md).
 

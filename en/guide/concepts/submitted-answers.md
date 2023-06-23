@@ -1,6 +1,6 @@
 # Submitted responses
 
-To involve as many Tolokers as possible, limit the number of tasks in the [pool](../../glossary.md#pool) per Toloker or [set a limit](income.md) on daily earnings in your [project](../../glossary.md#project).![Alt text](image.png)
+To involve as many Tolokers as possible, limit the number of tasks in the [pool](../../glossary.md#pool) per Toloker or [set a limit](income.md) on daily earnings in your [project](../../glossary.md#project).
 
 ## When to use {#when-use}
 
@@ -41,7 +41,7 @@ All fields in this rule are required. If you don't fill in at least one of them,
 
 - **accept all assignments from this Toloker in the pool** — Requires the [manual review](offline-accept.md) option to be set.
 
-    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all task suite responses in the pool.||
+    Useful if the Toloker completes most tasks well. Example: The Toloker completed more than 80% of the tasks correctly and you are satisfied with this result. The rule will work automatically and accept all responses in the pool.||
 |#
 
 ## Rule example {#examples}

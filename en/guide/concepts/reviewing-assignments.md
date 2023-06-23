@@ -61,7 +61,7 @@ You understand that the Toloker didn't complete your tasks well enough. You can 
 
 You can also assign a skill that you can use to either block access to tasks for Tolokers, or to encourage those who did tasks well.
 
-### Blocking for incorrect task suite responses
+### Blocking for incorrect responses
 
 {% note warning %}
 
@@ -75,13 +75,13 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
   ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example1.png =700x)
 
-  If more than 50% of Toloker's task suite responses are rejected, the Toloker is blocked and can't complete your tasks for 15 days.
+  If more than 50% of Toloker's responses are rejected, the Toloker is blocked and can't complete your tasks for 15 days.
 
 - Incorrect settings
 
   ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example_1.png =700x)
 
-  The Toloker is blocked after the first rejected task suite responses, because the number of the reviewed tasks is not specified.
+  The Toloker is blocked after the first rejected response, because the number of the reviewed tasks is not specified.
 
 {% endlist %}
 
@@ -89,7 +89,7 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 
 ![](../_images/control-rules/reviewing-assignments/qcr-reviewing-assignments_example2.png =700x)
 
-After 3 tasks are reviewed, the skill is set to the percentage of correct task suite responses. Use the skill value to set access to other pools with [filters](filters.md).
+After 3 tasks are reviewed, the skill is set to the percentage of correct responses. Use the skill value to set access to other pools with [filters](filters.md).
 
 {% cut "Example of filter settings" %}
 

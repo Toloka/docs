@@ -116,7 +116,7 @@ A Toloker's assignments rejected after the review are sent to another Toloker fo
 
 {% endcut %}
 
-### Task suite responses from banned Tolokers
+### Responses from banned Tolokers
 
 When Tolokers make too many mistakes, the platform bans them from taking on more tasks. But the task suite responses that they have already provided remain in the database and may get into the final dataset. Send these assignments for recompletion.
 
