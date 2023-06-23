@@ -78,7 +78,7 @@ A description of your interface in the JSON format. You write the code for it in
 
 A task that contains the correct response. Control tasks are used to monitor the quality of the Toloker's responses.
 
-For example, you can track the percentage of correct task responses and block Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
+For example, you can track the percentage of correct responses and block Tolokers who respond poorly. To do this, use the [Control tasks](guide/concepts/goldenset.md) quality control rule.
 
 In addition to control tasks, there are [general](#general-task) and [training](#training-task) tasks.
 
