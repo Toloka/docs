@@ -10,11 +10,11 @@ The Toloker receives payment for a task suite, so the labeling cost and quality 
 
 ## Set manually {#by-empty-row}
 
-Enter the number of tasks per suite. The order of tasks depends on the [**Keep task order**](pool-main.md) pool setting.
+Enter the number of tasks per suite.
 
 ## Smart mixing {#smart-mixing}
 
-Specify how many tasks of each type should be in each task suite. For example, 8 general tasks, 1 training and 1 control task. If necessary, specify the minimum number of tasks for each type in additional settings.
+Specify how many tasks of each type should be in each task suite. For example, 8 general tasks, 1 training and 1 control task. If necessary, specify the minimum number of tasks for each type in additional settings. The order of tasks depends on the [**Keep task order**](pool-main.md) pool setting.
 
 #### When to use
 

@@ -71,7 +71,16 @@ If you set the interval too long, the tasks will stay open for a long time. If i
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks. | **Additional settings**||
 ||**Pool closing date** | The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up. | **Add optional pool settings**||
-||**Keep task order** | **Option disabled (default value)**
+
+||**Metafields** | To pass an array of metafields, specify key and value for each metafield. | **Add optional pool settings**||
+||**Allow partial task suites** | The setting determines the output in the last task suite if it has less than the required number of general tasks. | **Add optional pool settings**||
+||**Keep task order from uploaded data** | **Option disabled (default value)**
+
+{% note info %}
+
+You can use this option only if **Smart mixing** is activated. 
+
+{% endnote %}
 
 The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
 
@@ -120,9 +129,7 @@ Use this parameter to:
 - Issue tasks by priority.
 
     Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
-|**Add optional pool settings**||
-
-||**Metafields** | To pass an array of metafields, specify key and value for each metafield. | **Add optional pool settings**||
+|**Prepare and upload data**||
 |#
 
 {% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
