@@ -33,6 +33,24 @@ To learn more about manual review, go to [Reviewing assignments](offline-accept.
 Percentage of correct responses in training tasks (from 0 to 100) required to be admitted to the pool tasks. The calculation is based on the first response the Toloker gave in each task.
 
 The minimum required level that you can set is 5. Tolokers who complete training with apercentage below this level won't have access to tasks. | **Quality control**||
+||**General tasks** | The number of general tasks per suite. | **Smart mixing**||
+||**Control tasks** | The number of control tasks per suite. | **Smart mixing**||
+||**Training tasks** | The number of training tasks per suite. | **Smart mixing**||
+||**Min general tasks** | The minimum number of general tasks per suite. | **Smart mixing**||
+||**Min control tasks** | The minimum number of control tasks per suite. | **Smart mixing**||
+||**Min training tasks** | The minimum number of training tasks per suite. | **Smart mixing**||
+||**Allow partial task suites** |
+{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
+
+The setting determines the output in the last task suite if it has less than the required number of general tasks.
+
+By default, the option is enabled.
+| **Smart mixing**||
+||**Keep task order from uploaded data** |
+{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
+
+{% include [keep-task-order](../_includes/toloka-requester-source/id-toloka-requester-source/keep-task-order.md) %}
+|**Smart mixing**||
 ||**Review period in days** | The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:
 
 - In the task information on the Toloka main page.
@@ -41,7 +59,7 @@ The minimum required level that you can set is 5. Tolokers who complete training
 ||**Dynamic overlap** | You can use this parameter if you specify fixed values for the [input data](../../glossary.md#input-output-data) fields. It lets you save your budget and avoid setting fixed [overlap](../../glossary.md#overlap) for all pool tasks.
 
 You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. | **Dynamic pricing and overlap**||
-||**Priority** | Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority. | **Additional settings**||
+||**Pool priority within the project** | Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority. | **Additional settings**||
 ||**Time per task suite, sec** | The time allowed for completing a task suite, in seconds. Uncompleted tasks are redistributed to other Tolokers.
 
 We recommend spending no more than 60 seconds per task (including the time for page loading and sending responses).
@@ -69,54 +87,5 @@ If the price per task suite is zero, you must select the pool type.
 
 {% endnote %}
 | **Additional settings**||
-||**Keep task order** | **Option disabled (default value)**
-
-The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per page when uploading the [TSV file](../../glossary.md#tsv) with image links to the pool, the system can generate them as follows:
-
-#|
-||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
-||Image 1 | Image 2 | Image 6 | Image 4||
-||Image 2 | Image 5 | Image 1 | Image 3||
-||Image 3 |  |  | ||
-||Image 4 |  |  | ||
-||Image 5 |  |  | ||
-||Image 6 |  |  | ||
-|#
-
-{% endcut %}
-
-**Option enabled**
-
-Tasks will be grouped on pages in the order they are listed in the task file.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per page when uploading the file with image links to the pool, you're equally likely to get pages where the first link goes first and the second goes second, and the other way around:
-
-#|
-||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
-||Image 1 | Image 1 | Image 3 | Image 5||
-||Image 2 | Image 2 | Image 4 | Image 6||
-||Image 3 | _or_ | _or_ | _or_||
-||Image 4 | Image 2 | Image 4 | Image 6||
-||Image 5 | Image 1 | Image 3 | Image 5||
-||Image 6 |  |  | ||
-|#
-
-{% endcut %}
-
-If the pool has an overlap, the next task is distributed only when the previous task is completed by the necessary number of Tolokers.
-
-Use this parameter to:
-
-- Speed up collection of responses for [majority vote](mvote.md) check.
-
-- Assign tasks by priority.
-
-    Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
-|**Additional settings**||
+||
 |#

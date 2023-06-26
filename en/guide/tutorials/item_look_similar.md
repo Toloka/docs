@@ -229,8 +229,6 @@ To create a pool:
 
         The time should be long enough to read the instructions and wait for task data to load. For example, `300` seconds.
 
-    1. Turn on the **Keep task order** option.
-
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
     1. Wait for the pool from project 2 to complete.
@@ -276,6 +274,8 @@ To create a pool:
         1. In the **Training tasks** field, specify `0`.
 
         1. In the **Control tasks** field, specify `1`.
+
+        1. Turn on the **Keep task order from uploaded data** option.
 
         1. Click **Upload**.
 

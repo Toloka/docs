@@ -218,7 +218,7 @@ JavaScript Object Notation. A text file format used to store and transfer struct
 
 ### K
 
-#### Keep task order {#keep-task-order}
+#### Keep task order from uploaded data {#keep-task-order}
 
 Distributing the task suites in the [pool](#pool) in the same order as they are in the uploaded [file](#tsv). The tasks within each suite are shuffled.
 

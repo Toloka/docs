@@ -305,8 +305,6 @@ To create a [pool](../../glossary.md#pool):
 
         The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
-    1. Turn on the **Keep task order** option.
-
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
     1. Download the file received in the [third project](item_look_similar.md).
@@ -327,7 +325,7 @@ To create a [pool](../../glossary.md#pool):
 
     1. Choose **Set manually**.
 
-    1. In the **Tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
+    1. In the **Number of tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
 
     1. Click **Combine tasks into suites**.
 

@@ -262,8 +262,6 @@ In the interface:
 
         The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
-    1. Turn on the **Keep task order** option.
-
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
     1. Prepare a [file with tasks](../../glossary.md#tsv).
@@ -298,7 +296,7 @@ In the interface:
 
         1. Choose **Set manually**.
 
-        1. In the **Tasks per suite** field, specify `10`.
+        1. In the **Number of tasks per suite** field, specify `10`.
 
         1. Click **Combine tasks into suites**.
 
