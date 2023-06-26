@@ -136,7 +136,7 @@ Parameters for collecting data (depends on the quality control rule specified in
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
 || `configs[].rules.conditions` | _object_ \| **required**
 
-Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
+Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the `AND` operator. ||
 || `configs[].rules.conditions.key` | _string_ \| **required**
 
 Values that are checked in the condition:
