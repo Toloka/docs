@@ -26,7 +26,7 @@ This method is useful if the created pool:
 
 {% cut "Sample settings" %}
 
-![](../_images/location-job/task-upload/method-uploading-tasks.png)
+![](../_images/location-job/task-upload/method-uploading-tasks.png =700x)
 
 {% endcut %}
 
