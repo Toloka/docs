@@ -6,9 +6,27 @@ For this type of project, you can use the **Image classification** preset. Note 
 
 {% cut "Components used in the example" %}
 
-- [view.image](../reference/view.image.md): Image.
+- [view.image](../reference/view.image.md): Displays an image.
 
-- [field.button-radio-group](../reference/field.button-radio-group.md): Buttons for answer options.
+  {% cut "Show code" %}
+  ```json
+  {
+    "type": "view.image",
+    "ratio": [
+      1,
+      1
+    ],
+    "rotatable": true,
+    "url": {
+      "type": "data.input",
+      "path": "image"
+    }
+  }
+  ```
+  {% endcut %}
+
+
+- [field.button-radio-group](../reference/field.button-radio-group.md): Adds a group of buttons for selecting an answer option.
 
   The [condition.required](../reference/condition.required.md) component inside the `validation` property checks if at least one option is selected.
 
@@ -60,7 +78,7 @@ For this type of project, you can use the **Image classification** preset. Note 
   ```
   {% endcut %}
 
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): [Keyboard shortcuts](../best-practices/hotkeys.md).
+- [plugin.hotkeys](../reference/plugin.hotkeys.md): Sets [keyboard shortcuts](../best-practices/hotkeys.md) to select an answer option.
 
   {% cut "Show code" %}
 
@@ -117,6 +135,8 @@ For this type of project, you can use the **Image classification** preset. Note 
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VfAHjs2V3ttFWX)
 
+  If you need to display formatted text, use the [view.markdown](../reference/view.markdown.md) component. Note that this setting is resource-intensive and might overload Tolokers' devices that aren't powerful enough. 
+
 - To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
 
   {% cut "Show code" %}
@@ -124,7 +144,8 @@ For this type of project, you can use the **Image classification** preset. Note 
   ```json
   {
     "type": "field.textarea",
-    "label": "Comments",
+    "label": "Leave a comment",
+    "hint": "Describe what you see in the picture, tell if there are any problems with the picture etc.",
     "placeholder": "Enter text",
     "data": {
       "type": "data.output",
@@ -135,7 +156,7 @@ For this type of project, you can use the **Image classification** preset. Note 
   
   {% endcut %}
 
-  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/iMo8AGit3ttFWz)
+  [![](../_images/buttons/view-example.svg)](https://ya.cc/t/8GkBgpzV4Hym83)
 
 - Add keyboard shortcuts to rotate and zoom in images in the [plugin.hotkeys](../reference/plugin.hotkeys.md) configuration.
 
@@ -205,7 +226,7 @@ Decide whether a Toloker can select only one or multiple answer options:
 
 - Multiple options (checkboxes)
 
-  If there are several possible answers to the question, use [field.checkbox-group](../reference/field.checkbox-group.md) checkboxes.
+  If there are several possible answers to the question, add a group of checkboxes using the [field.checkbox-group](../reference/field.checkbox-group.md) component.
 
   {% cut "Show code" %}
 
@@ -375,7 +396,7 @@ Add a button that opens the search results and generate a search query link usin
     "type": "action.open-link",
     "payload": {
       "type": "helper.search-query",
-      "engine": "yandex/images",
+      "engine": "bing",
       "query": {
         "type": "data.input",
         "path": "link"
@@ -390,7 +411,7 @@ Add a button that opens the search results and generate a search query link usin
         "type": "data.input",
         "path": "link"
       },
-      "engine": "yandex/images"
+      "engine": "bing"
     }
   }
 }
@@ -398,7 +419,7 @@ Add a button that opens the search results and generate a search query link usin
   
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/h9tN8XX73ttFZm)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/51hofGcz4HynJb)
 
 ### Side-by-side image and web page comparison
 
