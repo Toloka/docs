@@ -49,55 +49,7 @@ By default, the option is enabled.
 ||**Keep task order from uploaded data** |
 {% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
 
-**Option disabled (default value)**
-
-The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per page when uploading the [TSV file](../../glossary.md#tsv) with image links to the pool, the system can generate them as follows:
-
-#|
-||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
-||Image 1 | Image 2 | Image 6 | Image 4||
-||Image 2 | Image 5 | Image 1 | Image 3||
-||Image 3 |  |  | ||
-||Image 4 |  |  | ||
-||Image 5 |  |  | ||
-||Image 6 |  |  | ||
-|#
-
-{% endcut %}
-
-**Option enabled**
-
-Tasks will be grouped on pages in the order they are listed in the task file.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per page when uploading the file with image links to the pool, you're equally likely to get pages where the first link goes first and the second goes second, and the other way around:
-
-#|
-||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
-||Image 1 | Image 1 | Image 3 | Image 5||
-||Image 2 | Image 2 | Image 4 | Image 6||
-||Image 3 | _or_ | _or_ | _or_||
-||Image 4 | Image 2 | Image 4 | Image 6||
-||Image 5 | Image 1 | Image 3 | Image 5||
-||Image 6 |  |  | ||
-|#
-
-{% endcut %}
-
-If the pool has an overlap, the next task is distributed only when the previous task is completed by the necessary number of Tolokers.
-
-Use this parameter to:
-
-- Speed up collection of responses for [majority vote](mvote.md) check.
-
-- Issue tasks by priority.
-
-    Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
+{% include [keep-task-order](../_includes/toloka-requester-source/id-toloka-requester-source/keep-task-order.md) %}
 |**Smart mixing**||
 ||**Review period in days** | The number of days for reviewing and accepting tasks (max: 21). The Toloker will see the deadline for checking the tasks:
 
