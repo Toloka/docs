@@ -6,6 +6,8 @@ For this type of project, you can use the **Image classification** preset. Note 
 
 {% cut "Components used in the example" %}
 
+- [view.list](../reference/view.list.md): Displays data in a list.
+
 - [view.image](../reference/view.image.md): Displays an image.
 
   {% cut "Show code" %}
