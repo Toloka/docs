@@ -146,9 +146,39 @@ The minimum required level that you can set is 5. Tolokers who complete training
 
 {% note info %}
 
-You can use **Smart mixing** only if you have already uploaded task suites to the pool. 
+When editing a pool, the **Smart mixing** section is available only if you have already uploaded tasks to the pool using [smart mixing](../../glossary.md#smart-mixing). 
 
 {% endnote %}
+
+### General tasks
+
+The number of general tasks per suite.
+
+### Control tasks
+
+The number of control tasks per suite.
+
+### Training tasks
+
+The number of training tasks per suite.
+
+### Min general tasks
+
+The minimum number of general tasks per suite.
+
+### Min control tasks
+
+The minimum number of control tasks per suite.
+
+### Min training tasks
+
+The minimum number of training tasks per suite.
+
+### Allow partial task suites
+
+The setting determines the output in the last task suite if it has less than the required number of general tasks.
+
+By default, the option is enabled.
 
 ### Keep task order from uploaded data
 
@@ -213,11 +243,9 @@ You can use this parameter if you specify fixed values for the [input data](../.
 
 You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. [Learn more](dynamic-overlap.md).
 
-## Optional pool settings {#pool-additional-settings-info}
+## Optional settings {#pool-additional-settings-info}
 
-Click **Show advanced settings** to edit optional pool settings.
-
-### Priority
+### Pool priority within the project
 
 Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority.
 

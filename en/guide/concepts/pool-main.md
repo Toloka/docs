@@ -73,14 +73,24 @@ For example, you can use this parameter if you need an open pool where you regul
 ||**Pool closing date** | The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up. | **Add optional pool settings**||
 
 ||**Metafields** | To pass an array of metafields, specify key and value for each metafield. | **Add optional pool settings**||
-||**Allow partial task suites** | The setting determines the output in the last task suite if it has less than the required number of general tasks. | **Add optional pool settings**||
-||**Keep task order from uploaded data** | **Option disabled (default value)**
+||**General tasks** | The number of general tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Control tasks** | The number of control tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Training tasks** | The number of training tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Min general tasks** | The minimum number of general tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Min control tasks** | The minimum number of control tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Min training tasks** | The minimum number of training tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Number of tasks per suite** | The number of tasks per suite when using the **Set manually** method. | **Prepare and upload data**||
+||**Allow partial task suites** |
+{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
 
-{% note info %}
+The setting determines the output in the last task suite if it has less than the required number of general tasks.
 
-You can use this option only if **Smart mixing** is activated. 
+By default, the option is enabled.
+| **Prepare and upload data**||
+||**Keep task order from uploaded data** |
+{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
 
-{% endnote %}
+**Option disabled (default value)**
 
 The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
 

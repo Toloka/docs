@@ -266,7 +266,7 @@ To create a [pool](../../glossary.md#pool):
 
         1. Choose **Set manually**.
 
-        1. In the **Tasks per suite** field, specify`1`.
+        1. In the **Number of tasks per suite** field, specify`1`.
 
         1. Click **Combine tasks into suites**.
 
