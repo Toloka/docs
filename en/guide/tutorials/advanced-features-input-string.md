@@ -1365,3 +1365,5 @@ The template uses a special component to simplify development. Learn more in [St
     ```
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

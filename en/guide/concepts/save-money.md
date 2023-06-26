@@ -121,3 +121,5 @@ In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap
 - [Template Builder: Configure keyboard shortcuts](../../template-builder/best-practices/hotkeys.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

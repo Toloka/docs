@@ -391,3 +391,5 @@ To check submitted assignments:
 - Create [Project 4](item_more_similar.md) to compare matching images.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -182,3 +182,5 @@ Up to 10,000 | $0.25
 Over 500,000 | [Contact support](../../guide/troubleshooting/support.md) to get special offer.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

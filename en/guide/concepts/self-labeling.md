@@ -6,7 +6,7 @@ It also allows you to fix potential issues with your tasks even before you send 
 
 To label the project tasks as a Toloker, click **Try tasks as a Toloker** at the pool overview page.
 
-[![Check the project before you start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/self-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/self-labeling.png)
+![Check the project before you start labeling](../_images/self-labeling.png =700x)
 
 We recommend that you pay attention to the following aspects:
 
@@ -63,4 +63,4 @@ We recommend that you always double-check new projects. You should also check pr
 
 - [{#T}](mobile.md)
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

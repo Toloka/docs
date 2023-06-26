@@ -140,3 +140,5 @@ Tasks in pools will automatically be available in the web version of Toloka and 
 - [{#T}](self-labeling.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

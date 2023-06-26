@@ -113,3 +113,5 @@ After 3 tasks are reviewed, the skill is set to the percentage of correct respon
 {% include [faq-redo-task](../_includes/faq/users/redo-task.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

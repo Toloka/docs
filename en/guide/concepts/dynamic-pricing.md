@@ -122,3 +122,5 @@ The price is calculated when the task suite is assigned to the Toloker. If the s
 [Return the funds transferred to the Toloka account](../troubleshooting/support.md#feedback_khw_wc3_qjb)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -90,3 +90,5 @@ The task is to send rejected and recompleted assignments for review. Or assign t
 {% include [faq-change-overlap](../_includes/faq/pool-setup/change-overlap.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

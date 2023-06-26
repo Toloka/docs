@@ -106,3 +106,5 @@ You can use the Python SDK to integrate the Toloka API into applications written
 {% include [faq-start-new-project](../_includes/faq/register-and-start/start-new-project.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

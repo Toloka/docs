@@ -223,3 +223,5 @@ eps = z_prob(j) * (1 / Y) / r
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

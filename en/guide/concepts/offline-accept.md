@@ -147,3 +147,5 @@ Learn more about this in the [Results of manual review](reviewing-assignments.md
     - [Setting up quality control](qa-pool-settings.md).
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

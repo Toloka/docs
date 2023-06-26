@@ -27,10 +27,10 @@ Task markup is available only for [training pools](train.md) and [pools](../../g
 1. Create a control or a training task from another type of task clicking the appropriate button.
 
     ![Create control or training tasks](../_images/location-job/task-edit/create-from-tasks.png =700x)
-    
+
 1. Select the correct response in the task preview block.
 
-1. Select the [output data fields](incoming.md) that should be checked. 
+1. Select the [output data fields](incoming.md) that should be checked.
 
 1. Add a hint if you're creating a training task.
 

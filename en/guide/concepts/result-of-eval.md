@@ -122,3 +122,5 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 {% include [faq-get-time](../_includes/faq/result-questions/get-time.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

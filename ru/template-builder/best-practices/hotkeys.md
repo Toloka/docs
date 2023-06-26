@@ -103,3 +103,5 @@
 - Если используется условный оператор для выбора действия, например [helper.if](../reference/helper.if.md), то при нажатии горячей клавиши должен вызываться тот же условный оператор (**helper.if**) по тем же правилам.
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

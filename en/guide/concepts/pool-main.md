@@ -194,3 +194,5 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 {% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

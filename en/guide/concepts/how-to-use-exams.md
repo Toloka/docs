@@ -171,3 +171,5 @@ A Toloker who gives enough correct responses gets access to the main pool again.
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

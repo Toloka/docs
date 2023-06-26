@@ -138,3 +138,5 @@ All spaces and symbols in the file names will be replaced with codes.
 - [{#T}](task_upload.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

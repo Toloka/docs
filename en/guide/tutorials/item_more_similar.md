@@ -358,3 +358,5 @@ To get the results:
 - Learn more about [decomposition](../concepts/solution-architecture.md).
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -153,3 +153,5 @@ Since Template Builder is JSON-based, there are some restrictions for inserting 
 ```
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

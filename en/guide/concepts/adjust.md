@@ -74,3 +74,5 @@ A personalized quality forecast is based on a large amount of data about user be
 {% include [faq-speed-up-completion](../_includes/faq/pool-setup/speed-up-completion.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

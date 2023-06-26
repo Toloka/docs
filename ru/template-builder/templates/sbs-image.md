@@ -194,3 +194,5 @@
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/UKFF2Obp3ttDJb)
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

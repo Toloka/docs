@@ -451,3 +451,5 @@
 - Посмотрите [список доступных компонентов](reference/index.md).
 
 [![](_images/buttons/contact-support.svg)](concepts/support.md)
+
+{% include [image-styles](../../_includes/image-styles-internal.md) %}

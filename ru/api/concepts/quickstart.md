@@ -37,3 +37,5 @@
 ## Что дальше {#what-next}
 
 Почитайте [инструкцию по размещению заданий](qs-placement.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

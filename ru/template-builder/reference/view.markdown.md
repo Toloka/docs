@@ -48,3 +48,5 @@
 || `hint` | _string_ | Текст подсказки. ||
 || `validation` | _condition_ | Валидация на основе условия _(condition)_. ||
 |#
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

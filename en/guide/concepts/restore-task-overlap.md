@@ -119,3 +119,5 @@ Task: classify photos for a dataset across different categories. If a Toloker is
 {% include [faq-classify-users](../_includes/faq/pool-setup/classify-users.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

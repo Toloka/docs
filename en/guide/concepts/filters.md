@@ -260,3 +260,5 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 {% include [troubleshooting-mobile-unavailable](../_includes/troubleshooting/pool-setup/mobile-unavailable.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

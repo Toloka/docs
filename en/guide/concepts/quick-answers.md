@@ -104,3 +104,5 @@ A Toloker who completes two task suites in less than 20 seconds is suspended fro
 {% include [faq-ban-and-reject](../_includes/faq/users/ban-and-reject.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}
