@@ -125,3 +125,5 @@ Refer to the [Issue bonuses](https://toloka.ai/docs/api/api-reference/#post-/use
 {% include [faq-stat-rewards](../_includes/faq/users/stat-rewards.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

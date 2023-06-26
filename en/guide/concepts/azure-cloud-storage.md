@@ -139,3 +139,5 @@ You can set up the lifetime of files in the container so that they are automatic
 - [{#T}](task_upload.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

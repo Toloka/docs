@@ -268,3 +268,5 @@ To get the results:
 - Create [Project 2](find_an_item_in_store.md) to search for similar items in an online store.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

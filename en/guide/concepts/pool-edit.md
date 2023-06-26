@@ -296,3 +296,5 @@ Yes. Open edit mode for the pool and set a new overlap value. You don't need to 
 {% include [faq-edit-uploaded-tasks](../_includes/faq/adding-tasks-to-the-pool/edit-uploaded-tasks.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

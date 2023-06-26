@@ -290,3 +290,5 @@ Use this information for the task instructions. Let the Tolokers understand ever
 - You can remove selection by clicking the cross in the upper-right corner.
 
 {% include [contact-support](../../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../../_includes/image-styles-internal.md) %}

@@ -82,3 +82,5 @@ If the Toloker's earnings exceed 5 dollars in the last 24 hours, they lose acces
 {% include [faq-skill-for-different-projects](../_includes/faq/pool-setup/skill-for-different-projects.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

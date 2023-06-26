@@ -138,3 +138,5 @@ You can set the lifetime of files in the bucket so that they are automatically d
 - [{#T}](task_upload.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

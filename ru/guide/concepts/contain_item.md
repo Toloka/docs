@@ -275,3 +275,5 @@
 - Создайте [Проект 2](find_an_item_in_store.md) для поиска похожих объектов в интернет магазине.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

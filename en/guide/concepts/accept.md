@@ -205,3 +205,5 @@ d) the result of the Task does not comply with the Instruction.
 {% include [faq-reject-part](../_includes/faq/result-questions/reject-part.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

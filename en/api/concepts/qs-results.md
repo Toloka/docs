@@ -224,3 +224,5 @@ Toloker responses are returned in the `items` array in the following format:
 - [Using libraries](../../toloka-kit/python-sdk.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

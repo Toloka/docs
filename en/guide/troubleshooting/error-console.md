@@ -35,7 +35,7 @@ If a problem occurs when loading pages or when working with site elements, infor
       {% cut "Other methods" %}
 
         - In the menu, select **Develop → Show JavaScript Console**.
-        
+
         - Right-click anywhere on the page, select **Inspect element** and go to the **Console** tab.
 
       {% endcut %}
@@ -59,7 +59,7 @@ If a problem occurs when loading pages or when working with site elements, infor
       {% cut "Other methods" %}
 
         - Go to ![](../_images/troubleshooting/error-console/edge-menu.svg) → **More Tools → Developer Tools**.
-        
+
         - Right-click anywhere on the page, select **Inspect element** and go to the **Console** tab.
 
       {% endcut %}
@@ -83,7 +83,7 @@ If a problem occurs when loading pages or when working with site elements, infor
       {% cut "Other methods" %}
 
         - Go to ![](../_images/troubleshooting/error-console/menu.svg) → **More tools → Web Developer Tools**.
-        
+
         - Right-click anywhere on the page, select **Inspect** and go to the **Console** tab.
 
       {% endcut %}
@@ -117,7 +117,7 @@ If a problem occurs when loading pages or when working with site elements, infor
   1. Refresh the page or repeat the actions that lead to the error.
 
   1. If there are error messages on the **Console** tab, expand the window to full screen (the  icon) and [make a screenshot](https://yandex.com/support/common/troubleshooting/screenshot.html) of the contents.
-      
+
       If you need to scroll down to show all relevant information, take multiple screenshots.
 
       ![](../_images/troubleshooting/error-console/console.png =700x)
@@ -149,3 +149,5 @@ If a problem occurs when loading pages or when working with site elements, infor
 {% endlist %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

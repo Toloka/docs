@@ -45,3 +45,5 @@ You can change overlap after the pool is started. To do this, open the pool edit
 {% include [faq-counting-work](../_includes/faq/pool-setup/counting-work.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}
