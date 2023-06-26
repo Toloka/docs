@@ -181,7 +181,7 @@ If this field is omitted, the calculation is based on all the Toloker's response
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
 || `configs[].rules.conditions` | _object_ \| **required**
 
-Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
+Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the `AND` operator. ||
 || `configs[].rules.conditions.key` | _string_ \| **required**
 
 Values that are checked in the condition:
