@@ -25,7 +25,7 @@ Creates a message thread and sends the first thread message to Tolokers.
 **Examples:**
 
 A message is sent to all Tolokers who have tried to complete your tasks.
-The message is in english. Tolokers can't reply to your message.
+The message is in English. Tolokers can't reply to your message.
 
 ```python
 message_text = "Amazing job! We've just trained our first model with the data you prepared for us. Thank you!"
