@@ -419,11 +419,47 @@ components:
         - $ref: '../../fullApi.yaml#/components/schemas/Settings'
         - type: object
           description: Selective review of control tasks. To make sure selective review is enabled, don't forget to set up display of this type of task in `mixer_config`.
+          properties:
+            task_distribution_function:
+              allOf:
+                - $ref: '#/components/schemas/GoldenTaskDistributionFunction'
+                - type: object
+                  properties:
+                    distribution:
+                      description: |
+                        **Required** if selective review is used.
+
+                        The distribution of control tasks with selective review within an interval.
+                    intervals:
+                      description: |
+                        **Required** if selective review is used.
+
+                        Interval limits and frequency of control tasks with selective review.
+                      items:
+                        $ref: '#/components/schemas/GoldenTaskSelectiveInterval'
     TrainingSettings:
       allOf:
         - $ref: '../../fullApi.yaml#/components/schemas/Settings'
         - type: object
           description: Selective review of training tasks. To make sure selective review is enabled, don't forget to set up display of this type of task in `mixer_config`.
+          properties:
+            task_distribution_function:
+              allOf:
+                - $ref: '#/components/schemas/TrainingTaskDistributionFunction'
+                - type: object
+                  properties:
+                    distribution:
+                      description: |
+                        **Required** if selective review is used.
+
+                        The distribution of training tasks with selective review within an interval.
+                    intervals:
+                      description: |
+                        **Required** if selective review is used.
+
+                        Interval limits and frequency of training tasks with selective review.
+                      items:
+                        $ref: '#/components/schemas/TrainingTaskSelectiveInterval'
     HasMore:
       type: boolean
       description: |
@@ -465,3 +501,151 @@ components:
 
                 The frequency of tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be majority vote tasks.
               format: int32
+    GoldenTaskInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The start of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The frequency of control tasks in an interval. The first task in an interval is a control task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be control tasks.
+    GoldenTaskSelectiveInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if selective review is used.
+
+                The start of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if selective review is used.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if selective review is used.
+
+                The frequency of control tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be majority vote tasks.
+    TrainingTaskInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The start of the interval (number of tasks completed by the Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The frequency of training tasks in an interval. The first task in an interval is a training task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be training tasks.
+    TrainingTaskSelectiveInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if selective review is used.
+
+                The start of the interval (number of tasks completed by the Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if selective review is used.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if selective review is used.
+
+                The frequency of training tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be majority vote tasks.
+    GoldenTaskDistributionFunction:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/TaskDistributionFunction'
+        - type: object
+          description: |
+            Vary the frequency of control tasks. The option allows you to change the frequency of checking as the Toloker completes more tasks.
+
+            If it is filled in, use `real_task_count` to specify the maximum number of tasks per task suite. To use the option, set the `golden_task_count:0` and `min_golden_tasks_count:null` parameter values.
+          properties:
+            distribution:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The distribution of control tasks within an interval.
+            intervals:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The interval boundaries and the number of control tasks in an interval.
+              items:
+                $ref: '#/components/schemas/GoldenTaskInterval'
+            scope:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                How to count tasks completed by the Toloker:
+
+                - `POOL` — Count the completed pool tasks.
+                - `PROJECT` — Count the completed project tasks.
+            window_days:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The period in which completed tasks are counted (number of days).
+    TrainingTaskDistributionFunction:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/TaskDistributionFunction'
+        - type: object
+          description: |
+            Issue training tasks with uneven frequency. This option allows you to change the frequency of training tasks as the Toloker completes more tasks.
+
+            If it is filled in, then in `real_task_count` specify the maximum number of tasks to put in a task suite. To use the option, set parameter values `training_task_count:0` and `min_training_tasks_count:null`.
+          properties:
+            distribution:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The distribution of training tasks within an interval.
+            intervals:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The interval boundaries and the number of training tasks in an interval.
+              items:
+                $ref: '#/components/schemas/TrainingTaskInterval'
+            scope:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                How to count tasks completed by the Toloker:
+
+                - `POOL` — Count the completed pool tasks.
+                - `PROJECT` — Count the completed project tasks.
+            window_days:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The period in which completed tasks are counted (number of days).
