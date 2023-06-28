@@ -33,11 +33,11 @@ The sample requests below contain the intervals for the general, control, and tr
 
 - General task check intervals
 
-  With the sample request below, the first, fourth, and sixth general tasks in the first task suite and the twelfth general task from the second task suite will be selected for majority vote check.
+  With the sample request below, the first, fourth, and sixth general tasks in the first task suite and the eleventh general task from the second task suite will be selected for majority vote check.
 
   We use the `quality_control.checkpoints_config.real_settings.intervals` parameter to set this scheme.
 
-  ### Sample request
+  #### Sample request
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
@@ -86,11 +86,11 @@ The sample requests below contain the intervals for the general, control, and tr
 
 - Control task check intervals
 
-  With the sample request below, the first, fourth, and sixth control tasks in the first task suite and the twelfth control task from the second task suite will be selected for majority vote check.
+  With the sample request below, the first, fourth, and sixth control tasks in the first task suite and the eleventh control task from the second task suite will be selected for majority vote check.
 
   We use the `quality_control.checkpoints_config.golden_settings.intervals` parameter to set this scheme.
 
-  ### Sample request
+  #### Sample request
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
@@ -139,11 +139,11 @@ The sample requests below contain the intervals for the general, control, and tr
 
 - Training task check intervals
 
-  With the sample request below, the first, fourth, and sixth training tasks in the first task suite and the twelfth training task from the second task suite will be selected for majority vote check.
+  With the sample request below, the first, fourth, and sixth training tasks in the first task suite and the eleventh training task from the second task suite will be selected for majority vote check.
 
   We use the `quality_control.checkpoints_config.training_settings.intervals` parameter to set this scheme.
 
-  ### Sample request
+  #### Sample request
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
@@ -200,11 +200,11 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
 
 - Control task distribution intervals
 
-  With the sample request below, the first, fourth, and sixth tasks in the first task suite and the twelfth task from the second task suite will be a **control task**, like in the image above.
+  With the sample request below, the first, fourth, and sixth tasks in the first task suite and the eleventh task from the second task suite will be a **control task**, like in the image above.
 
   We use the `mixer_config.golden_task_distribution_function.intervals` parameter to set this scheme.
 
-  ### Sample request
+  #### Sample request
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
@@ -246,11 +246,11 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
 
 - Training task distribution intervals
 
-  With the sample request below, the first, fourth, and sixth tasks in the first task suite and the twelfth task from the second task suite will be a **training task**, like in the image above.
+  With the sample request below, the first, fourth, and sixth tasks in the first task suite and the eleventh task from the second task suite will be a **training task**, like in the image above.
 
   We use the `mixer_config.training_task_distribution_function.intervals` parameter to set this scheme.
 
-  ### Sample request
+  #### Sample request
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/pools' \
