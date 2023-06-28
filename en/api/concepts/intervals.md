@@ -2,7 +2,7 @@
 
 Toloka allows you to either set intervals for tasks during which they will be [selected for majority vote check](#selective-mv), or to [distribute the control or training](#smart-mixing-distribution) tasks among the general tasks in the pool if you use smart mixing.
 
-![Task distibution intervals](../_images/intervals.png =700x)
+![Task distribution intervals](../_images/intervals.png =700x)
 
 In Toloka API, use the following JSON format to set the intervals:
 
@@ -198,7 +198,7 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
 
 {% list tabs %}
 
-- Control task distibution intervals
+- Control task distribution intervals
 
   With the sample request below, the first, fourth, and sixth tasks in the first task suite and the twelfth task from the second task suite will be a **control task**, like in the image above.
 
@@ -244,7 +244,7 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
           }'
   ```
 
-- Training task distibution intervals
+- Training task distribution intervals
 
   With the sample request below, the first, fourth, and sixth tasks in the first task suite and the twelfth task from the second task suite will be a **training task**, like in the image above.
 
