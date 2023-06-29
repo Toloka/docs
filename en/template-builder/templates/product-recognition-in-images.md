@@ -69,7 +69,7 @@ Note that validation, keyboard shortcuts, and task layout are already configured
   {% cut "Show code" %}
 
   ```json
-  {  
+  {
     "type": "plugin.toloka",
     "layout": {
       "kind": "pager"
@@ -182,9 +182,9 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 ## Add product categories {#add-categories}
 
-If you need to categorize selected products, create labels for each category using the `labels` property of the [field.image-annotation](../reference/field.image-annotation.md) component. Note that if you use labels, you need to add at least two.
+If you need to categorize selected products, create labels for each category using the `labels` property of the [field.image-annotation](../reference/field.image-annotation.md) component. Note that if you use labels, you need to add at least two of them.
 
-In this example, three buttons are used in the interface for selecting three categories of products: shoes, jeans and dresses. 
+In this example, three buttons are used in the interface for selecting three categories of products: shoes, jeans, and dresses.
 
 {% cut "Show code" %}
 
@@ -230,7 +230,7 @@ In this example, three buttons are used in the interface for selecting three cat
 
 ## Add a checkbox and a clarifying question {#add-checkbox}
 
-You can add a checkbox for reporting on problems with an image. 
+You can add a checkbox for reporting on problems with an image.
 
 To ask Tolokers to clarify their choice if they selected the **Cannot label the product** checkbox, add the [field.checkbox](../reference/field.checkbox.md) component and the [helper.if](../reference/helper.if.md) component which contains [field.radio-group](../reference/field.radio-group.md).
 
@@ -331,7 +331,7 @@ To ask Tolokers to clarify their choice if they selected the **Cannot label the 
 
 ## Add a control checkbox {#add-control-checkbox}
 
-If you want to allow labeling only after a certain condition has been set, use the `disabled` property of the [field.image-annotation](../reference/field.image-annotation.md) component.
+If you want to allow labeling only after a certain condition has been met, use the `disabled` property of the [field.image-annotation](../reference/field.image-annotation.md) component.
 
 In this example, a checkbox has been added so that users could label the photos where there is no product. Tolokers will be able to highlight products only if the **Product in the photo** option is activated.
 
@@ -401,7 +401,3 @@ In this example, a checkbox has been added so that users could label the photos 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/PKPUJ4ne4HRaiQ)
 
 {% include [contact-support](../_includes/contact-support.md) %}
-
-
-
-
