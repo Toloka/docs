@@ -141,6 +141,8 @@ To enhance Toloker's experience, you can highlight different types of data with�
 
 In this example, the text is highlighted with a blue border.
 
+{% cut "Show code" %}
+
 ```json
 {
   "type": "view.alert",
@@ -151,6 +153,7 @@ In this example, the text is highlighted with a blue border.
   }
 }
 ```
+{% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/b61nCEsv4H8Jzn)
 
