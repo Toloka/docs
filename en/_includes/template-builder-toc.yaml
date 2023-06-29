@@ -24,6 +24,8 @@ items:
             href: ../template-builder/templates/object-recognition.md
           - name: Text recognition from an image (OCR)
             href: ../template-builder/templates/text-recognition.md
+          - name: Product recognition in images
+            href: ../template-builder/templates/product-recognition-in-images.md
           - name: Accessories recommendations
             href: ../template-builder/templates/accessories-recommendations.md
       - name: Video
