@@ -23,7 +23,7 @@ If you don't need labels, use [view.list](view.list.md).
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
 || `items[]`<span style="color: red">\*</span> | _array of objects_ | An array of list items. ||
-|| `item` | _object_ | Parameters of a list item. ||
+|| `items[].item` | _object_ | Parameters of a list item. ||
 || `items[].item.centerLabel` | _boolean_ | If `true`, a `label` is center-aligned relative to the content of a list item (`content`). Use it if the list consists of large items, such as images or multi-line text.
 
 By default, `false` (the label is aligned to the top of the content block). ||
