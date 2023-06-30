@@ -54,6 +54,6 @@ The [helper.switch](../reference/helper.switch.md) component displays an interf
 
 ## See also {#see-also}
 
-- [Tutorials — survey with Toloka template](../../guide/tutorials/questionnaire-toloka.md)
+- [Tutorials: Survey with Toloka template](../../guide/tutorials/questionnaire-toloka.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

@@ -615,6 +615,6 @@ This is a more complex example that compares the video with the results of a sea
 
 ## See also {#see-also}
 
-- [Tutorials — video classification](../../guide/tutorials/video-moderation.md)
+- [Tutorials: Video classification](../../guide/tutorials/video-moderation.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
