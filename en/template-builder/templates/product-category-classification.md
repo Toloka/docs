@@ -338,7 +338,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 ## See also {#see-also}
 
-- [Image and search query comparison](../../guide/tutorials/image-classification.md#search)
+- [Tutorials: Image and search query comparison](../../guide/tutorials/image-classification.md#search)
 
 
 {% include [contact-support](../_includes/contact-support.md) %}
