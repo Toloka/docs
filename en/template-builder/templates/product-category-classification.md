@@ -123,7 +123,7 @@ Take a look at the example: the interface includes a link with a search query an
 
   {% endcut %}
 
-  - [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
 
   {% cut "Show code" %}
 
@@ -147,21 +147,17 @@ To add a detailed description to the task, use the [view.text](../reference/view
 {% cut "Show code" %}
 
 ```json
-
 {
   "type": "view.text",
   "content": "Read the query and choose a category that matches it:"
 }
-
 ```
 
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/rfXWGflu4Gtyw2)
 
-## Add a layout {#add-layout}
-
-If you need to display formatted text, use the [view.markdown](../reference/view.markdown.md) component. Note that this setting is resource-intensive and might overload Tolokers' devices that aren't powerful enough. 
+If you need to display formatted text, use the [view.markdown](../reference/view.markdown.md) component. Note that this setting is resource-intensive and might overload Tolokers' devices that aren't powerful enough.
 
 {% cut "Show code" %}
 
@@ -176,9 +172,32 @@ If you need to display formatted text, use the [view.markdown](../reference/view
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/wlqqNXQN4J8hx8)
 
+## Add a layout {#add-layout}
+
+To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the other components.
+
+In this example, the text is highlighted with a blue border.
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "view.alert",
+  "theme": "info",
+  "content": {
+    "type": "view.text",
+    "content": "Read the query and choose a category that matches it:"
+  }
+}
+```
+
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/c-fhh6MV4JT2by)
+
 ## Add a condition {#add-condition}
 
-If the query doesn't match any of the categories, add a **Select category** checkbox using the [field.checkbox](../reference/field.checkbox.md) component.  
+If the query doesn't match any of the categories, add a **Select category** checkbox using the [field.checkbox](../reference/field.checkbox.md) component.
 
 {% cut "Show code" %}
 
@@ -278,6 +297,8 @@ If the query doesn't match any of the categories, add a **Select category** chec
 
 You can add an image that matches the query to your task using [view.image](../reference/view.image.md).
 
+{% cut "Show code" %}
+
 ```json
 {
   "type": "view.image",
@@ -315,4 +336,9 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/EPe5fSc34J9gWf)
 
 
-{% include [contact-support](../_includes/contact-support.md) %}
+## See also {#see-also}
+
+- [Image and search query comparison](../../guide/tutorials/image-classification.md)
+
+
+{% include [contact-support](../image-classification.md#search) %}
