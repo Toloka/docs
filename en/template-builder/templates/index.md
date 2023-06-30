@@ -38,6 +38,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Named entity recognition (NER)](named-entity-recognition.md)
 
+- [Product category classification](product-category-classification.md)
+
 ## Audio
 
 - [Audio transcription](audio-transcript.md)
