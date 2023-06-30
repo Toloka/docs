@@ -323,7 +323,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 ```json
 {
   "type": "field.textarea",
-  "label": "Comments",
+  "label": "Leave your comment",
   "placeholder": "Enter text",
   "data": {
     "type": "data.output",
@@ -338,7 +338,7 @@ To let Tolokers leave comments about the task or their response, add a text fiel
 
 ## See also {#see-also}
 
-- [Image and search query comparison](../../guide/tutorials/image-classification.md)
+- [Image and search query comparison](../../guide/tutorials/image-classification.md#search)
 
 
-{% include [contact-support](../image-classification.md#search) %}
+{% include [contact-support](../_includes/contact-support.md) %}
