@@ -137,7 +137,7 @@ For this type of project, you can use the **Image classification** preset. Note 
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/VfAHjs2V3ttFWX)
 
-  If you need to display formatted text, use the [view.markdown](../reference/view.markdown.md) component. Note that this setting is resource-intensive and might overload Tolokers' devices that aren't powerful enough. 
+  If you need to display formatted text, use the [view.markdown](../reference/view.markdown.md) component. Note that this setting is resource-intensive and might overload Tolokers' devices that aren't powerful enough.
 
 - To let Tolokers leave comments about the task or their response, add a text field using [field.textarea](../reference/field.textarea.md).
 
@@ -155,7 +155,7 @@ For this type of project, you can use the **Image classification** preset. Note 
     }
   }
   ```
-  
+
   {% endcut %}
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/8GkBgpzV4Hym83)
@@ -213,7 +213,7 @@ For this type of project, you can use the **Image classification** preset. Note 
     "type": "plugin.hotkeys"
   }
   ```
-  
+
   {% endcut %}
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/gLh9ufLx3ttFXM)
@@ -268,8 +268,8 @@ Decide whether a Toloker can select only one or multiple answer options:
     }
   }
   ```
-  
-  {% endcut %} 
+
+  {% endcut %}
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/KUpCR4gj3ttFY7)
 
@@ -318,8 +318,8 @@ Decide whether a Toloker can select only one or multiple answer options:
     }
   }
   ```
-  
-  {% endcut %} 
+
+  {% endcut %}
 
   [![](../_images/buttons/view-example.svg)](https://ya.cc/t/BQPuzqRh3ttFYX)
 
@@ -377,7 +377,7 @@ The [helper.if](../reference/helper.if.md) component displays an interface eleme
   }
 }
 ```
-  
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/RbqyYj2-3ttFYz)
@@ -418,7 +418,7 @@ Add a button that opens the search results and generate a search query link usin
   }
 }
 ```
-  
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/51hofGcz4HynJb)
@@ -482,7 +482,7 @@ You can display the web page in the built-in window using the [view.iframe](../r
   }
 }
 ```
-  
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/vHtHEcj_3vvrRM)
@@ -554,13 +554,13 @@ This is a more complex example that compares the image with the results of a sea
   }
 }
 ```
-  
+
 {% endcut %}
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/a9bzsPXh3vvrwH)
 
 ## See also {#see-also}
 
-- [Tutorials — image classification](../../guide/tutorials/image-classification.md)
+- [Tutorials: Image classification](../../guide/tutorials/image-classification.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
