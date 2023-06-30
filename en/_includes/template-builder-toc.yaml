@@ -46,6 +46,8 @@ items:
             href: ../template-builder/templates/content-moderation.md
           - name: Named entity recognition
             href: ../template-builder/templates/named-entity-recognition.md  
+          - name: Product category classification
+            href: ../template-builder/templates/product-category-classification.md  
       - name: Audio
         items:
           - name: Audio transcription
