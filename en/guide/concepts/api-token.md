@@ -47,10 +47,10 @@ You can generate up to **50** tokens.
 To test the created token, use the following shell command:
 
 ```bash
-curl -X GET 'https://toloka.dev/api/v1/requester' -H 'Authorization: ApiKey YOUR_TOKEN'
+curl -X GET 'https://toloka.dev/api/v1/requester' -H 'Authorization: ApiKey PlaceYourRealApiKeyToken_Here'
 ```
 
-Replace the `YOUR_TOKEN` substring with the API token that you received and copied at the previous steps.
+Replace the `PlaceYourRealApiKeyToken_Here` substring with the API token that you received and copied at the previous steps.
 
 If you entered a correct value, you will receive a response like this with the `200` status code and basic information about your account:
 
