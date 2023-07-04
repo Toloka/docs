@@ -1,5 +1,5 @@
 # Mode
-`toloka.client.project.template_builder.plugins.ImageAnnotationHotkeysPluginV1.Mode` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L40)
+`toloka.client.project.template_builder.plugins.ImageAnnotationHotkeysPluginV1.Mode` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L37)
 
 ```python
 Mode(
@@ -12,13 +12,13 @@ Mode(
 )
 ```
 
-Mode
+Selection mode hotkeys.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`point`|**Optional\[str\]**|<p>Keyboard shortcut for selecting areas using points.</p>
-`polygon`|**Optional\[str\]**|<p>Keyboard shortcut for selecting areas using polygons.</p>
-`rectangle`|**Optional\[str\]**|<p>Keyboard shortcut for selecting areas using rectangles.</p>
-`select`|**Optional\[str\]**|<p>Keyboard shortcut for selecting shapes and points.</p>
+`point`|**Optional\[str\]**|<p>A hotkey for a point selection mode.</p>
+`polygon`|**Optional\[str\]**|<p>A hotkey for a polygon selection mode.</p>
+`rectangle`|**Optional\[str\]**|<p>A hotkey for a rectangle selection mode.</p>
+`select`|**Optional\[str\]**|<p>A hotkey for a mode for editing selections.</p>

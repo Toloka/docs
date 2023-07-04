@@ -1,6 +1,6 @@
-# Get reward details
+# Get bonus details
 
-_Get the detailed information about the reward with the ID specified in the request._
+_Get the detailed information about the bonus with the ID specified in the request._
 
 ## Steps to follow
 
@@ -8,15 +8,15 @@ _Get the detailed information about the reward with the ID specified in the requ
 
 {% include [instantiate](../_includes/recipes/instantiate.md) %}
 
-### 3. Get reward information {#step-three}
+### 3. Get bonus information {#step-three}
 
-[Find out](./get-rewards.md) the ID of the reward for which you want to get the detailed information. Then get this info calling the `get_user_bonus()` method.
+[Find out](./get-rewards.md) the ID of the bonus for which you want to get the detailed information. Then get this info calling the `get_user_bonus()` method.
 
 ```python
 bonus = toloka_client.[get_user_bonus](*get_user_bonus)('3139')
 ```
 
-### 4. Print reward title and amount {#step-four}
+### 4. Print bonus title and amount {#step-four}
 
 The `get_user_bonus()` request will return the [UserBonus](../reference/toloka.client.user_bonus.UserBonus.md) class object. You can use its attributes to print the information you need.
 
@@ -24,13 +24,13 @@ The `get_user_bonus()` request will return the [UserBonus](../reference/toloka.c
 print(bonus.public_title['EN'], bonus.amount)
 ```
 
-You should get an output with the reward title and amount which looks like this.
+You should get an output with the bonus title and amount which looks like this.
 
 ```bash
 Perfect job! 0.500
 ```
 
-## Complete code: Get reward details {#complete-code}
+## Complete code: Get bonus details {#complete-code}
 
 ```python
 import toloka.client as toloka
@@ -54,7 +54,7 @@ print(bonus.public_title['EN'], bonus.amount)
 - [{#T}](./learn-basics.md)
 - [{#T}](./use-cases.md)
 - [Toloka-Kit: UserBonus class](../reference/toloka.client.user_bonus.UserBonus.md)
-- [Toloka API: Get reward by ID](https://toloka.ai/docs/api/api-reference/#get-/user-bonuses/-userBonusId-)
+- [Toloka API: Get bonus by ID](https://toloka.ai/docs/api/api-reference/#get-/user-bonuses/-userBonusId-)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class
 [*get_user_bonus]: [get_user_bonus()](../reference/toloka.client.TolokaClient.get_user_bonus.md) method

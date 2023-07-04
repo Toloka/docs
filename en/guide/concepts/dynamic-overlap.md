@@ -130,7 +130,7 @@ Before setting up dynamic overlap, you need to prepare the output data fields.
 
 1. Set **Max overlap**.
 
-1. Specify **Confidence of aggregated answer**. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
+1. Specify **Confidence of aggregated response**. The higher the value, the more matching Tolokers' responses are needed for the aggregated response. Set this value to at least 70.
 
 1. Choose **Skill for users' scoring**.
 
@@ -223,3 +223,5 @@ The confidence in the aggregated `OK` response is 96.2. The task is considered c
 {% include [faq-dynamic-overlap](../_includes/faq/pool-setup/dynamic-overlap.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

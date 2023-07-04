@@ -1,0 +1,10 @@
+success:
+  description: The list of subscriptions and their properties in the `items` array.
+  value:
+    items:
+    - id: 62ee14ada451956b21388859
+      created: '1970-01-01T00:00:00.000Z'
+      event_type: ASSIGNMENT_APPROVED
+      webhook_url: https://example.com/toloka-webhook
+      pool_id: '1080020'
+    has_more: true

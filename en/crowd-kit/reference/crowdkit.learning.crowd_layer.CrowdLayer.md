@@ -1,5 +1,5 @@
 # CrowdLayer
-`crowdkit.learning.crowd_layer.CrowdLayer` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/crowd_layer.py#L87)
+`crowdkit.learning.crowd_layer.CrowdLayer` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/learning/crowd_layer.py#L87)
 
 ```python
 CrowdLayer(

@@ -1,12 +1,12 @@
 # RecipientsSelectType
-`toloka.client.message_thread.RecipientsSelectType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/message_thread.py#L20)
+`toloka.client.message_thread.RecipientsSelectType` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/message_thread.py#L20)
 
-Method for specifying recipients.
+The way of specifying message recipients.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`DIRECT`|'DIRECT'|<p>specify IDs of Tolokers.</p>
-`FILTER`|'FILTER'|<p>select Tolokers using a filter.</p>
-`ALL`|'ALL'|<p>send a message to all Tolokers who have tried to complete your tasks at least once.</p>
+`DIRECT`|'DIRECT'|<p>A list of Toloker IDs.</p>
+`FILTER`|'FILTER'|<p>A filter for selecting Tolokers.</p>
+`ALL`|'ALL'|<p>All Tolokers who completed any of your tasks at least once.</p>

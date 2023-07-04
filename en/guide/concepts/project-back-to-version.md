@@ -2,9 +2,9 @@
 
 All changes made to the [project](../../glossary.md#project) are saved in the version history. You can view previous versions or return to any of them.
 
-The version number (for example, **1.2**) consists of two numbers:
+The version number (for example, `1.2`) consists of two numbers:
 
-1. The major version (the first number) appears when you change a [required field](incoming.md#required) in the input or output data:
+1. The first number is the major version. It appears when you change a required field in the [input or output data](incoming.md):
 
     - Add, remove or rename a required field.
     - Change the field from optional to required.
@@ -15,7 +15,9 @@ The version number (for example, **1.2**) consists of two numbers:
         - Reduce the maximum or increase the minimum length of a string.
         - Reduce the maximum or increase the minimum value for a number.
 
-1. The minor version (the second number) appears when you make any other changes to the project.
+1. The second number is the minor version. It appears when you make any other changes to the project.
+
+## How to select the project version
 
 {% note alert %}
 
@@ -23,11 +25,9 @@ Changes to the major version of the project don't affect existing [pools](../../
 
 {% endnote %}
 
-To go back to the previous version of the project:
+1. Go to the [project editing](edit-project.md).
 
-1. Go to the project editing.
-
-1. Click **Select previous version** at the bottom of the page.
+1. Click **Select version** at the bottom of the page.
 
    {% cut "Project version example" %}
 
@@ -44,3 +44,5 @@ To go back to the previous version of the project:
 - [Create a task pool in the project](pool-main.md).
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

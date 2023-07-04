@@ -1,5 +1,5 @@
 # Case
-`toloka.client.project.template_builder.helpers.SwitchHelperV1.Case` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L220)
+`toloka.client.project.template_builder.helpers.SwitchHelperV1.Case` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/helpers.py#L172)
 
 ```python
 Case(
@@ -9,11 +9,11 @@ Case(
 )
 ```
 
-Case.
+A case for the `SwitchHelperV1`.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`condition`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Condition to check.</p>
-`result`|**Optional\[Any\]**|<p>The element that is returned if the condition from the condition property is true (returns true).</p>
+`condition`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A case condition.</p>
+`result`|**Optional\[Any\]**|<p>A component that is returned if the condition is `True`.</p>

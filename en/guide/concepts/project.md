@@ -2,7 +2,7 @@
 
 If you already have a project and you want to create an identical one, [clone](#clone) the existing project. If not, create a new project.
 
-## New project {#new-project}
+## How to create a project {#new-project}
 
 The project defines what the task will look like for a Toloker.
 
@@ -14,13 +14,11 @@ You can first create and test your project for free in the [sandbox](sandbox.md)
 
 {% endnote %}
 
-To create a project, follow the instructions:
-
-#### In the interface:
+To create a project in the interface:
 
 1. Choose a preset:
 
-    1. Click the **Create project** button on the **Projects** page.
+    1. Click the **Create a project** button on the **Projects** page.
 
     1. Choose a preset. The preset contains pre-configured [input and output data fields](incoming.md) and [the task interface](spec.md), which you can edit.
 
@@ -41,7 +39,7 @@ To create a project, follow the instructions:
 
 1. Provide general information:
 
-    1. Enter the **Name** and **Description**. Tolokers will see this in the task list.
+    1. Enter the **Name to show Tolokers** and **Description for Tolokers**. Tolokers will see this in the task list.
 
     1. Optionally add a **Private comment**.
 
@@ -93,7 +91,7 @@ After creating the project, add a [task pool](pool-main.md) to it. You can also 
 
 {% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
 
-## Cloning a project {#clone}
+## How to clone a project {#clone}
 
 You can view the list of created projects on the **Projects** page. Open the project page to view the list of pools, [project rating](project_rating_stat.md), and [project statistics](project-statistic.md).
 
@@ -106,6 +104,10 @@ Quality control in the project is not cloned.
 {% endnote %}
 
 If you need to change the project settings, [open edit mode](edit-project.md).
+
+## How to pin a project {#pin}
+
+{% include [toloka-requester-source-pin-project](../_includes/toloka-requester-source/id-toloka-requester-source/pin-project.md) %}
 
 ## What's next {#what_next}
 
@@ -124,7 +126,7 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 
 ## For developers {#for-developers}
 
-- [Toloka API: Creating project](../../api/concepts/create-prj.md)
+- [Toloka API: Creating project](https://toloka.ai/docs/api/api-reference/#post-/projects)
 - [Toloka-Kit recipe: Create project](../../toloka-kit/recipes/create-project.md)
 
 ## Troubleshooting {#troubleshooting}
@@ -154,8 +156,6 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 {% include [faq-input-data-labeling-image](../_includes/faq/questions-about-templates/input-data-labeling-image.md) %}
 
 {% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
-
-{% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
 
 {% include [faq-large-number-objects](../_includes/faq/questions-about-templates/large-number-objects.md) %}
 

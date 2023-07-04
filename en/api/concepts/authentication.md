@@ -6,7 +6,7 @@ An additional header — **Toloka-Signature** — is used to confirm that the To
 
 ## Creating a secure subscription {#secure-subscription}
 
-When [creating a subscription](put-webhook-subscriptions.md), add the **secret_key** parameter to the request body. It checks whether incoming requests were sent through the Toloka API. If the parameter was added, the additional **Toloka-Signature** header appears in the event notification.
+When [creating a subscription](https://toloka.ai/docs/api/api-reference/#put-/webhook-subscriptions), add the **secret_key** parameter to the request body. It checks whether incoming requests were sent through the Toloka API. If the parameter was added, the additional **Toloka-Signature** header appears in the event notification.
 
 ## Validating the notification sender {#validation}
 

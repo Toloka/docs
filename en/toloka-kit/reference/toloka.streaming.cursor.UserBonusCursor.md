@@ -1,10 +1,11 @@
 # UserBonusCursor
-`toloka.streaming.cursor.UserBonusCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/cursor.py#L297)
+`toloka.streaming.cursor.UserBonusCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L328)
 
 ```python
 UserBonusCursor(
     self,
     toloka_client: Union[TolokaClient, AsyncTolokaClient],
+    time_lag: timedelta = ...,
     user_id: Optional[str] = None,
     assignment_id: Optional[str] = None,
     private_comment: Optional[str] = None,
@@ -27,6 +28,7 @@ Iterator over `UserBonus` instances by create time.
 | :----------| :----| :-----------|
 `toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search `UserBonus` instances.</p>
 `request`|**[UserBonusSearchRequest](toloka.client.search_requests.UserBonusSearchRequest.md)**|<p>Base request to search `UserBonus` instances by.</p>
+`_time_lag`|**-**|<p>Time lag between cursor time field upper bound and real time. Default is 1 minute. This lag is required to keep cursor consistent. Lowering this value will make cursor process events faster, but raises probability of missing some events in case of concurrent operations.</p>
 
 **Examples:**
 

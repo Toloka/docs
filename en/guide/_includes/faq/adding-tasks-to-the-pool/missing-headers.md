@@ -2,6 +2,6 @@
 
 No. If you try to upload a file with missing headers to the pool, the system issues an upload error. All the INPUT fields required in the specification must be present in the file with tasks. There must be no extra fields or columns.
 
-If you don't want to show some data to Tolokers, but you still need this data in the file, create the optional hidden input fields for such data in the project.
+If you don't want to show some data to Tolokers, but you still need this data in the file, create optional [hidden input fields](../../../concepts/incoming.md#recomendations) for such data in the project.
 
 {% endcut %}

@@ -55,7 +55,7 @@ You don't need to create this skill, it is created when you add the first traini
 
 ## For developers {#for-developers}
 
-- [Toloka API: Setting skill value](../../api/concepts/set-skill.md)
+- [Toloka API: Setting skill value](https://toloka.ai/docs/api/api-reference/#put-/user-skills)
 - [Toloka-Kit recipe: Assign skill to Toloker](../../toloka-kit/recipes/assign-skill.md)
 
 ## Troubleshooting {#troubleshooting}

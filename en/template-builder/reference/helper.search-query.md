@@ -10,7 +10,7 @@ The list of available search engines is specified in the `engine` property.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.search-query" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.search-query" | Set component type. ||
 || `engine` | _string_ or _object_ or _object_ or _object_ | Search engine. Use the corresponding value to specify the search engine:
 
 - `yandex` — https://yandex.ru

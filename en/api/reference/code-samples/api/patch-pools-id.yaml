@@ -1,0 +1,62 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X PATCH 'https://toloka.dev/api/v1/pools/32267581' \
+         -H 'Content-Type: application/json' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -d '{"priority":0}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    toloka_client.patch_pool(pool_id='32267581', priority=0)
+  description: More details on this in the [Change pool priority](https://toloka.ai/docs/toloka-kit/recipes/change-pool-priority/) Toloka-Kit recipe
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/pools/32267581"
+    headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+    }
+    payload = {
+      "priority": 0
+    }
+    response = requests.patch(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'PATCH',
+      'url': 'https://toloka.dev/api/v1/pools/32267581',
+      'qs': {},
+      'headers': {
+        'Content-Type': 'application/json',
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      },
+      'body': JSON.stringify({
+        "priority": 0
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.patch("https://toloka.dev/api/v1/pools/32267581")
+      .header("Content-Type", "application/json")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .body("{\"priority\":0}")
+      .asString();

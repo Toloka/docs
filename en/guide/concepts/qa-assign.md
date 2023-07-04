@@ -6,7 +6,7 @@ You can [deny access](../../glossary#banned-worker) to the [pool](../../glossary
 
 ## Can I fix something in a completed task myself? {#concept_cb5_n1d_pbb}
 
-No, you can't fix anything in the task itself. However, you can do this manually in the results file.
+No, you can't fix anything in the task itself. However, you can do this manually in the [results file](result-of-eval.md).
 
 ## Can I ask a Toloker to redo the task if they made mistakes in it? {#concept_ang_g1d_pbb}
 
@@ -20,7 +20,7 @@ To do this:
 
 1. Assign them a hidden [skill](../../glossary#skill), or use an existing [skill](nav-assign.md) linked to the pool.
 
-1. Go to **Messages** and click **Write** → **Group** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**.
+1. Go to **Messages** and click **Contact** → **Group of Tolokers** → **Add filter** → **Choose your skill** → **&lt;skill name&gt;**.
 
 1. If you created a new skill, specify the value you assigned to the chosen group, (for example, 1). If you use an existing skill, specify the minimum value.
 

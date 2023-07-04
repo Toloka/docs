@@ -1,0 +1,63 @@
+single_task_body:
+  description: The single task that you want to create.
+  summary: Single task
+  value:
+    pool_id: '1238218'
+    input_values:
+      image_url: https://example.com/image_example.png
+    known_solutions:
+    - output_values:
+        result: OK
+        like: false
+      correctness_weight: 0.8
+    - output_values:
+        result: OK
+        like: true
+      correctness_weight: 1
+    baseline_solutions:
+    - output_values:
+        result: OK
+        like: false
+      confidence_weight: 0.8
+    - output_values:
+        result: OK
+        like: true
+      confidence_weight: 1
+    message_on_unknown_solution: The cat is in a good mood.
+    infinite_overlap: false
+    reserved_for: []
+    unavailable_for: []
+multiple_tasks_body:
+  description: The set of tasks that you want to create.
+  summary: Multiple tasks
+  value:
+    - pool_id: '1238218'
+      input_values:
+        image_url: https://example.com/image_example1.png
+      known_solutions:
+      - output_values:
+          result: OK
+        correctness_weight: 1
+      baseline_solutions:
+      - output_values:
+          result: OK
+        confidence_weight: 1
+      message_on_unknown_solution: The cat is in a good mood.
+      infinite_overlap: false
+      reserved_for: []
+      unavailable_for: []
+    - pool_id: '1238218'
+      input_values:
+        image_url: https://example.com/image_example2.png
+      known_solutions:
+      - output_values:
+          result: BAD
+        correctness_weight: 1
+      baseline_solutions:
+      - output_values:
+          result: BAD
+        confidence_weight: 1
+      message_on_unknown_solution: The cat is in a bad mood.
+      infinite_overlap: false
+      reserved_for: []
+      unavailable_for: []

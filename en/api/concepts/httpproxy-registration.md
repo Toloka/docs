@@ -24,7 +24,7 @@ $.ajax({
 
 #|
 || Parameter | Overview ||
-|| **accessRights** | **string \| required**
+|| `accessRights` | _string_ \| **required**
 
 Level of access to files hosted on the requester's server. Acceptable values:
 
@@ -47,10 +47,10 @@ Level of access to files hosted on the requester's server. Acceptable values:
 - `PRIVATE` — Access is only granted to Tolokers who are doing tasks for this requester (server owner). The task itself is not checked for a link to the server. Appropriate for general actions in tasks.
 
 - `PUBLIC` — Access is granted to all Toloka Tolokers. Appropriate for files with instructions. ||
-|| **type** | **string \| required**
+|| `type` | _string_ \| **required**
 
 Data transfer protocol. Possible value: `HTTP`. ||
-|| **baseUrl** | **string \| required**
+|| `baseUrl` | _string_ \| **required**
 
 The requester's server URL.
 
@@ -59,14 +59,14 @@ For example, a server [named](#name) "test-proxy" is hosted at `example.com/some
 In this case, when calling an HTTP method in Toloka at the URL `toloka.dev/api/proxy/test-proxy/test-path`, a request to the requester's server will be sent to the URL `example.com/some-path/test-path`.
 
 If a method call is made within a template, [assignmentId](#assignmentId) will be added to the URL. This ensures that information about the task the request was made within is also passed to the requester's server. Example: `example.com/some-path/test-path?assignmentId=12831298712937213`. ||
-|| **name** {#name} | **string \| required**
+|| `name` | _string_ \| **required**
 
 The name of the requester's server. The name will be inserted in the request URL. Allowed characters in the name: Latin letters, numbers, and dashes ("-").
 
 Must be unique within Toloka.
 
 For example, a server named "test-proxy" can be accessed in Toloka at: `toloka.dev/api/proxy/test-proxy`. ||
-|| **additionalHeaders[]** | **array of strings**
+|| `additionalHeaders[]` | _array of strings_
 
 Additional headers that will be passed in the request to the requester's server. Example:
 
@@ -74,7 +74,7 @@ Additional headers that will be passed in the request to the requester's server.
 "additionalHeaders":{"Authorization":["Basic --//--TOKEN--//--"]}
 ```
 ||
-|| **additionalQueryArgs[]** | **array of strings**
+|| `additionalQueryArgs[]` | _array of strings_
 
 Additional parameters that will be passed in the request to the requester's server. Example:
 

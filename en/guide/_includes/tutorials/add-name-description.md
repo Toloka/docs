@@ -1,1 +1,1 @@
-Under **General information**, add the project name and description.
+In the **General information** section, add the project name and description:

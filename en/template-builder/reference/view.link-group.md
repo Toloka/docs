@@ -12,7 +12,7 @@ This only groups links, unlike [view.group](view.group.md).
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.link-group" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.link-group" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
 || `links`<span style="color: red">\*</span> | _array_ | Array of links that make up a group. ||

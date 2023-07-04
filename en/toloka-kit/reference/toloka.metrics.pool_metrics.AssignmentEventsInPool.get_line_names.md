@@ -1,5 +1,5 @@
 # get_line_names
-`toloka.metrics.pool_metrics.AssignmentEventsInPool.get_line_names` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/pool_metrics.py#L121)
+`toloka.metrics.pool_metrics.AssignmentEventsInPool.get_line_names` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/pool_metrics.py#L125)
 
 ```python
 get_line_names(self)

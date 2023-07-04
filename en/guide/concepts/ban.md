@@ -61,7 +61,7 @@ curl -X PUT 'https://toloka.dev/api/v1/user-restrictions' \
      -d '{"scope":"ALL_PROJECTS","user_id":"1ad097faba0eff85a04fe30bc04d53db","will_expire":"2030-01-01T00:00:00.000Z"}'
 ```
 
-Refer to the [Block access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Block access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -89,7 +89,7 @@ You can also [ban](#ban) this Toloker from your project.
 
 ## For developers {#for-developers}
 
-- [Toloka API: Blocking access to tasks](../../api/concepts/ban.md)
+- [Toloka API: Blocking access to tasks](https://toloka.ai/docs/api/api-reference/#put-/user-restrictions)
 - [Toloka-Kit: Banning Tolokers](../../toloka-kit/reference/toloka.client.TolokaClient.set_user_restriction.md)
 
 ## Troubleshooting {#troubleshooting}

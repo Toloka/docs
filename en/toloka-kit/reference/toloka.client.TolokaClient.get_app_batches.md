@@ -1,5 +1,5 @@
 # get_app_batches
-`toloka.client.TolokaClient.get_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3891)
+`toloka.client.TolokaClient.get_app_batches` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L4131)
 
 Finds all batches that match certain criteria in an App project.
 
@@ -36,3 +36,12 @@ If you need to sort batches use the [find_app_batches](toloka.client.TolokaClien
 * **Yield type:**
 
   Generator\[[AppBatch](toloka.client.app.AppBatch.md), None, None\]
+
+**Examples:**
+
+
+```python
+batches = toloka_client.get_app_batches(app_project_id = 'Q2d15QBjpwWuDz8Z321g', status = 'NEW')
+for batch in batches:
+    print(batch.id, batch.status, batch.items_count)
+```

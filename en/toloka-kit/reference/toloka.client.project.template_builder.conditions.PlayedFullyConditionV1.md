@@ -1,5 +1,5 @@
 # PlayedFullyConditionV1
-`toloka.client.project.template_builder.conditions.PlayedFullyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L204)
+`toloka.client.project.template_builder.conditions.PlayedFullyConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L179)
 
 ```python
 PlayedFullyConditionV1(
@@ -10,14 +10,13 @@ PlayedFullyConditionV1(
 )
 ```
 
-This component checks for the end of playback.
+Checks that playback is complete.
 
 
-Validation is passed if playback is finished. To play media with the condition.played-fully check, you can use
-view.audio and view.video. The condition.played-fully check only works in the player's validation property.
+For more information, see [condition.played-fully](https://toloka.ai/docs/template-builder/reference/condition.played-fully).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

@@ -1,5 +1,5 @@
 # TemplateBuilder
-`toloka.client.project.template_builder.TemplateBuilder` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/__init__.py#L222)
+`toloka.client.project.template_builder.TemplateBuilder` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/__init__.py#L223)
 
 ```python
 TemplateBuilder(

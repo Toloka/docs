@@ -431,20 +431,23 @@ items:
               - include:
                   path: _includes/toloka-api-toc.yaml
                   mode: link
-          - name: API Bespoke-решений
-            hidden: true
+              - name: Справочник API
+                href: https://toloka.ai/docs/api/api-reference
+          - name: Apps API
             items:
-              - name: Как пользоваться
-                items:
-                  - name: API Bespoke-решений
-                    href: toloka-apps/api/concepts/index.md
-                  - name: Доступ к API
-                    href: toloka-apps/api/concepts/authorization.md
-                  - name: Быстрый старт API
-                    href: toloka-apps/api/concepts/quickstart-api.md
-                  - name: Потоковая обработка элементов разметки
-                    href: toloka-apps/api/concepts/streaming-items.md
-              - name: Справочник API Bespoke
+              - name: Доступ к API
+                href: toloka-apps/api/concepts/index.md
+                hidden: true
+              - name: Доступ к API
+                href: toloka-apps/api/concepts/authorization.md
+              - name: Быстрый старт API
+                href: toloka-apps/api/concepts/quickstart-api.md
+              - name: Потоковая обработка элементов разметки
+                href: toloka-apps/api/concepts/streaming-items.md
+              - name: Справочник API
+                href: https://toloka.ai/docs/api/apps-reference
+              - name: Справочник API
+                hidden: true
                 include:
                   path: toloka-apps/api/ref.yaml
                   includer: openapi

@@ -26,7 +26,7 @@ Before you begin:
 
     - To communicate with Tolokers, use private messages in Toloka only.
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
 {% include [toloka-requester-source-use-preset](../_includes/toloka-requester-source/id-toloka-requester-source/use-preset.md) %}
 
@@ -36,13 +36,11 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
+    1. Click **Do it myself**.
+
     1. Select the **Survey on third-party platform** preset.
 
 1. Click **Choose this preset** in the pop-up tab.
-
-## Create a project {#project}
-
-{% include [tutorials-who-are-tolokers](../_includes/tutorials/who-are-tolokers.md) %}
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
@@ -50,7 +48,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1.png)
+    ![Create a project. Step 1](../_images/tutorials/questionnaire/survey-create-project-step-1.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with validation and task layout pre-configured.
 
@@ -58,7 +56,7 @@ Before you begin:
 
     1. In the **Config** section, you can edit the pre-configured code. For example, to change the description, replace the sample text with your value in the `label` property.
 
-        [![Create a project. Config question description](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-description.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-description.png)
+        ![Create a project. Config question description](../_images/tutorials/questionnaire/survey-config-question-description.png =700x)
 
         {% note info %}
 
@@ -68,7 +66,7 @@ Before you begin:
 
     1. In the **Input data example** section, you can see a sample link.
 
-        [![Create a project. Input example external](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-input-example-external.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-input-example-external.png)
+        ![Create a project. Input example external](../_images/tutorials/questionnaire/survey-input-example-external.png =700x)
 
         It is only an example used to display the task interface preview on the right. You will add a link to your survey later while uploading a task file.
 
@@ -94,9 +92,7 @@ Before you begin:
 
     {% endnote %}
 
-1. To save your data and continue, click **Create a project**.
-
-    {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#pool}
 
@@ -126,121 +122,121 @@ You can create a pool using one of the ways:
 
 - Create a pool from the preset
 
-    1. If there are no pools in the project, click **Create pool from preset for Survey on third-party platform** on the **Pools** tab. Otherwise, click **Add a pool → From Survey on third-party platform preset** at the right side of the project page.
+  1. If there are no pools in the project, click **Create pool from preset for Survey on third-party platform** on the **Pools** tab. Otherwise, click **Add a pool → From Survey on third-party platform preset** at the right side of the project page.
 
-    1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+  1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-    1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+  1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-    1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
+  1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-    1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
+  1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
 
-    1. At the **Setup quality control** step, check the quality control rules and correct them if necessary.
+  1. At the **Setup quality control** step, check the quality control rules and correct them if necessary.
 
-    1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
+  1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-    1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
+  1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-        {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
+      {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. [Upload](#upload) your task data.
+  1. [Upload](#upload) your task data.
 
-    1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+  1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
-        {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
+      {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-    {% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
+  {% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 - Create a pool from scratch
 
-    1. If there are no pools in the project, click **Create new pool from scratch** on the **Pools** tab. Otherwise, click **Add a pool → From scratch** at the right side of the project page.
+  1. If there are no pools in the project, click **Create new pool from scratch** on the **Pools** tab. Otherwise, click **Add a pool → From scratch** at the right side of the project page.
 
-    1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
+  1. {% include [toloka-requester-pool-name](../_includes/toloka-requester-source/id-toloka-requester-source/pool-name.md) %}
 
-    1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
+  1. {% include [toloka-requester-pool-description](../_includes/toloka-requester-source/id-toloka-requester-source/pool-description.md) %}
 
-    1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
+  1. {% include [toloka-requester-source-audience-settings](../_includes/toloka-requester-source/id-toloka-requester-source/audience-settings.md) %}
 
-        1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
+      1. Clear **My tasks may contain shocking or pornographic content** if your project has none of those.
 
-        1. Select Tolokers who knows the language of your survey:
+      1. Select Tolokers who knows the language of your survey:
 
-            [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png)
+          ![Create a pool. Languages filter](../_images/tutorials/questionnaire/survey-language-filter.png =700x)
 
-            Additionally, you can select Tolokers based on their location, age, gender, and other parameters. Use the **Add filter** button and configure the filters you need.
+          Additionally, you can select Tolokers based on their location, age, gender, and other parameters. Use the **Add filter** button and configure the filters you need.
 
-        1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** filter and select the desired value: **Toloka web version** or **Toloka for mobile**.
+      1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** filter and select the desired value: **Toloka web version** or **Toloka for mobile**.
 
-        1. Filter out Tolokers who have already taken one survey. It helps prevent the situation when a Toloker completes your survey several times.
+      1. Filter out Tolokers who have already taken one survey. It helps prevent the situation when a Toloker completes your survey several times.
 
-            1. Click the **Add skill** button. Enter the skill name and description, and leave the skill not public.
+          1. Click the **Add skill** button. Enter the skill name and description, and leave the skill not public.
 
-                [![Create a pool. Add skill](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png =405x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png)
+              ![Create a pool. Add skill](../_images/tutorials/questionnaire/survey-skill-add.png =405x)
 
-            1. Click **Add filter → My skills** and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
+          1. Click **Add filter → My skills** and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
 
-                [![Create a pool. My skills](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png)
+              ![Create a pool. My skills](../_images/tutorials/questionnaire/survey-skill-filter.png =700x)
 
-            You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
+          You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
 
-    1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
+  1. {% include [tutorials-quality-control](../_includes/tutorials/quality-control.md) %}
 
-        1. Click the **Review task responses manually** toggle, and specify the number of days for checking the task in the **Review period in days** field (for example, 7).
+      1. Click the **Review task responses manually** toggle, and specify the number of days for checking the task in the **Review period in days** field (for example, 7).
 
-            {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
+          {% include [tutorials-na-acceptance](../_includes/tutorials/na-acceptance.md) %}
 
-        1. To filter out Tolokers who complete tasks too fast, edit the pre-configured **Fast responses** rule. Specify the following values:
+      1. To filter out Tolokers who complete tasks too fast, edit the pre-configured **Fast responses** rule. Specify the following values:
 
-            [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png)
+          ![Create a pool. Fast responses rule](../_images/tutorials/questionnaire/survey-fast-responses.png =700x)
 
-            These settings mean that a Toloker who completes a task suite in less than 15 seconds will be blocked and won’t be able to access your tasks anymore.
+          These settings mean that a Toloker who completes a task suite in less than 15 seconds will be blocked and won’t be able to access your tasks anymore.
 
-            A task suite is a page with a number of tasks. In survey projects, a task suite must contain only one task (one survey).
+          A task suite is a page with a number of tasks. In survey projects, a task suite must contain only one task (one survey).
 
-            {% note tip %}
+          {% note tip %}
 
-            To determine the **Minimum time per task suite** value, complete your survey and record the time.
+          To determine the **Minimum time per task suite** value, complete your survey and record the time.
 
-            {% endnote %}
+          {% endnote %}
 
-        1. Delete the pre-configured **Majority vote** rule.
+      1. Delete the pre-configured **Majority vote** rule.
 
-        1. To get the required number of responses, add the **Processing rejected and accepted assignments** rule. Enter the following values:
+      1. To get the required number of responses, add the **Processing rejected and accepted assignments** rule. Enter the following values:
 
-            [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png)
+          ![Create a pool. Processing rejected and accepted assignments rule](../_images/tutorials/questionnaire/survey-rejected.png =700x)
 
-            This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
+          This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
 
-        1. Add the rule which assigns a skill after one submitted survey. As you’ve set the filter to select Tolokers without this skill in step 3.4, the rule allows you to filter out Tolokers who have already completed your survey.
+      1. Add the rule which assigns a skill after one submitted survey. As you’ve set the filter to select Tolokers without this skill in step 3.4, the rule allows you to filter out Tolokers who have already completed your survey.
 
-            [![Create a pool. Submitted responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png)
+          ![Create a pool. Submitted responses rule](../_images/tutorials/questionnaire/survey-accomplished.png =700x)
 
-        1. To automatically accept tasks from those who entered a completion code correctly, use the **Control tasks** rule:
+      1. To automatically accept tasks from those who entered a completion code correctly, use the **Control tasks** rule:
 
-            [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png)
+          ![Create a pool. Control tasks rule](../_images/tutorials/questionnaire/survey-control-rule.png =700x)
 
-            The rule will work if you specify the correct completion code in the file with tasks. You will do that later in this tutorial.
+          The rule will work if you specify the correct completion code in the file with tasks. You will do that later in this tutorial.
 
-    1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
+  1. {% include [tutorials-time-per-task-suite](../_includes/tutorials/time-per-task-suite.md) %}
 
-        {% note warning %}
+      {% note warning %}
 
-        Time per task suite should be long enough to read the instructions, wait for the task data to load, give the answers on the third-party website, and copy and paste the completion code. Otherwise, Tolokers won’t be able to submit your tasks.
+      Time per task suite should be long enough to read the instructions, wait for the task data to load, give the answers on the third-party website, and copy and paste the completion code. Otherwise, Tolokers won’t be able to submit your tasks.
 
-        {% endnote %}
+      {% endnote %}
 
-    1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
+  1. {% include [toloka-requester-source-price-settings](../_includes/toloka-requester-source/id-toloka-requester-source/price-settings.md) %}
 
-        {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
+      {% include [toloka-requester-source-set-price](../_includes/toloka-requester-source/id-toloka-requester-source/set-price.md) %}
 
-    1. [Upload](#upload) your task data.
+  1. [Upload](#upload) your task data.
 
-    1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+  1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
-        {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
+      {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
-    {% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
+  {% include [toloka-requester-source-pool-is-ready](../_includes/toloka-requester-source/id-toloka-requester-source/pool-is-ready.md) %}
 
 {% endlist %}
 
@@ -280,19 +276,19 @@ You can create a pool using one of the ways:
 
                 - One link (overlap > 1)
 
-                    ```plaintext
-                    INPUT:url
-                    https://survey.com/mysurvey
-                    ```
+                  ```plaintext
+                  INPUT:url
+                  https://survey.com/mysurvey
+                  ```
 
                 - Many links (overlap = 1)
 
-                    ```plaintext
-                    INPUT:url
-                    https://survey.com/mysurvey/OIN7YV2TP
-                    https://survey.com/mysurvey/YUT9IJ3PL
-                    https://survey.com/mysurvey/RDV3TG8OJ
-                    ```
+                  ```plaintext
+                  INPUT:url
+                  https://survey.com/mysurvey/OIN7YV2TP
+                  https://survey.com/mysurvey/YUT9IJ3PL
+                  https://survey.com/mysurvey/RDV3TG8OJ
+                  ```
 
                 {% endlist %}
 
@@ -302,19 +298,19 @@ You can create a pool using one of the ways:
 
             - One link (overlap > 1)
 
-                ```plaintext
-                INPUT:url GOLDEN:code
-                https://survey.com/mysurvey 123456
-                ```
+              ```plaintext
+              INPUT:url GOLDEN:code
+              https://survey.com/mysurvey 123456
+              ```
 
             - Many links (overlap = 1)
 
-                ```plaintext
-                INPUT:url GOLDEN:code
-                https://survey.com/mysurvey/OIN7YV2TP 123456
-                https://survey.com/mysurvey/YUT9IJ3PL 234567
-                https://survey.com/mysurvey/RDV3TG8OJ 345678
-                ```
+              ```plaintext
+              INPUT:url GOLDEN:code
+              https://survey.com/mysurvey/OIN7YV2TP 123456
+              https://survey.com/mysurvey/YUT9IJ3PL 234567
+              https://survey.com/mysurvey/RDV3TG8OJ 345678
+              ```
 
             {% endlist %}
 
@@ -328,7 +324,7 @@ You can create a pool using one of the ways:
 
         Go to the **Set manually** tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
 
-        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png)
+        ![Upload data. Tasks per suite](../_images/tutorials/questionnaire/survey-number-tasks.png =570x)
 
     1. Click **Combine tasks into suites**.
 
@@ -346,7 +342,7 @@ You can create a pool using one of the ways:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling.png)
+    ![Start labeling](../_images/tutorials/questionnaire/survey-start-labeling.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -360,7 +356,7 @@ Review the rest of the tasks during the time period specified in the **Review pe
 
 1. Go to the pool, and click **Review assignments**.
 
-    [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png)
+    ![See the results. Review assignments](../_images/tutorials/questionnaire/survey-review-results.png =700x)
 
 1. Choose an assignment.
 
@@ -372,7 +368,7 @@ Review the rest of the tasks during the time period specified in the **Review pe
 
     - Do not rush to reject responses that have not passed automatic completion via codes. Some codes will be incorrect indeed, but often Tolokers add extra spaces accidentally or leave comments in a text field which is intended for a code.
 
-    - If there were technical problems (for example, a Toloker had filled an external survey form, but didn’t have time to submit a task in Toloka), you still can pay the Toloker. To do this, use the [rewarding system](../concepts/bonus.md).
+    - If there were technical problems (for example, a Toloker had filled an external survey form, but didn’t have time to submit a task in Toloka), you still can pay the Toloker. To do this, use the [bonus system](../concepts/bonus.md).
 
     {% endnote %}
 
@@ -409,4 +405,4 @@ Review the rest of the tasks during the time period specified in the **Review pe
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -56,7 +56,7 @@ Use the exam if your tasks are difficult and you want to check how Tolokers cope
 
 ## How do I set it up? {#configure}
 
-1. Open the project and click **Add a pool**.
+1. Open the project and click **Create new pool**.
 
 1. Click **Show advanced settings**, go to the **Additional settings** section, and select **Exam** as the pool type.
 
@@ -171,3 +171,5 @@ A Toloker who gives enough correct responses gets access to the main pool again.
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

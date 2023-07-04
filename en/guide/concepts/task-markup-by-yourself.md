@@ -1,6 +1,6 @@
 # How to edit tasks by yourself
 
-You can turn a general task into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
+You can turn a [general task](../../glossary.md#general-task) into a [control task](../../glossary.md#control-task) by adding the correct answer, or into a [training task](../../glossary.md#training-task) by adding the correct answer and a hint.
 
 {% cut "What makes a good hint?" %}
 
@@ -12,7 +12,7 @@ Make the hints clear. Explain which response should be chosen and why.
 
 {% note alert "Restriction" %}
 
-Task markup is available only for [training pools](train.md) and pools uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
+Task markup is available only for [training pools](train.md) and [pools](../../glossary.md#pool) uploaded with [“smart mixing”](distribute-tasks-by-pages.md#smart-mixing).
 
 {% endnote %}
 
@@ -20,31 +20,29 @@ Task markup is available only for [training pools](train.md) and pools uploaded 
 
 1. Make sure the pool isn't running.
 
-1. Click **Edit** in the **Pool tasks** block.
+1. Go to the pool page and click either the **Control tasks** or **Training tasks** indicator in the **Tasks** block.
 
-1. Open the **General**, **Control**, or **Training** tab. Create a control or a training task from another type of task.
+    ![Click Control or Training tasks](../_images/location-job/task-edit/control-training-tasks.png =400x)
 
-1. Select the responses that should be checked. (The list of the [output data fields](incoming.md) is on the right.)
+1. Create a control or a training task from another type of task clicking the appropriate button.
+
+    ![Create control or training tasks](../_images/location-job/task-edit/create-from-tasks.png =700x)
+
+1. Select the correct response in the task preview block.
+
+1. Select the [output data fields](incoming.md) that should be checked.
+
+1. Add a hint if you're creating a training task.
 
 1. Click **Save and go to next**.
 
 {% cut "Example of task markup" %}
 
-In this example, the correct response is added for the control task. Only the choice in the `result` field (Good/Bad/Loading error) is checked.
+In this example, the correct response is added for the control task. Only the choice in the `result` field is checked.
 
-![](../_images/location-job/task-edit/task-edit.png)
+![](../_images/location-job/task-edit/task-edit.png =630x)
 
 {% endcut %}
-
-## Improve the reliability of control tasks {#answer_distribution}
-
-After you have created the control tasks, make sure that different variations of correct responses occur with the same frequency. This will help avoid random guessing in responses.
-
-1. Go to the task markup page.
-
-1. Open the **Training tasks → Distribution of correct responses for control tasks** tab.
-
-    The distribution of responses is shown as a percentage.
 
 {% note tip %}
 
@@ -52,35 +50,63 @@ When creating control tasks, enter only correct responses that answer the questi
 
 {% endnote %}
 
-#### Example of response distribution
+## How to improve the reliability of control tasks {#answer_distribution}
+
+After you have created the control tasks, make sure that different variations of correct responses occur with the same frequency. This will help avoid random guessing in responses.
+
+1. Go to the pool page and click the **Control tasks** indicator in the **Tasks** block.
+
+1. Check the **Distribution of correct responses for control tasks** chart.
+
+    The distribution of responses is shown as a percentage.
+
+### Example of response distribution
 
 {% list tabs %}
 
 - Correct
 
-  ![](../_images/location-job/task-edit/distribution_ex1.png)
+  ![](../_images/location-job/task-edit/distribution_ex1.png =400x)
 
 - Incorrect
 
-  ![](../_images/location-job/task-edit/distribution_ex2.png)
+  ![](../_images/location-job/task-edit/distribution_ex2.png =400x)
 
 {% endlist %}
+
+## How to view the control tasks statistics {#task-statistics}
+
+You can view the number and percentage of correct responses to the control tasks or training tasks.
+
+To do this, go to the pool page and click the **Control tasks** or **Training tasks** indicator in the **Tasks** block.
+
+The response statistics is shown in the **Responses from Tolokers** and **Correct responses, %** columns.
+
+### Alternative way
+
+1. Click ![](../_images/other/three-points-button.svg) → **Edit** in the **Tasks** block on the pool page.
+
+1. Click the tab with the type of the task.
+
+1. Find the task in the list and click ![](../_images/edit.svg).
+
+The response statistics is shown in the **Responses** and **Correct** fields  at the right.
 
 ## How to edit tasks {#task-edit}
 
 1. Make sure the pool isn't running.
 
-1. Click **Edit** in the **Pool tasks** block.
+1. Go to the pool page and click ![](../_images/other/three-points-button.svg) → **Edit** in the **Tasks** block.
 
 1. Click the tab with the type of the task.
 
-1. Find the task in the list and click ![](../_images/edit.svg) . Editing mode opens.
+1. Find the task in the list and click ![](../_images/edit.svg). Editing mode opens.
 
 ## How to delete a task from the pool {#delete-task}
 
 1. Make sure the pool isn't running.
 
-1. Click **Edit** in the **Pool tasks** block.
+1. Go to the pool page and click ![](../_images/other/three-points-button.svg) → **Edit** in the **Tasks** block.
 
 1. Click the tab with the type of the task.
 
@@ -88,7 +114,7 @@ When creating control tasks, enter only correct responses that answer the questi
 
 {% note tip %}
 
-If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overlap.md), the task won't be visible to Tolokers, and you won't have to delete it.
+If you set the overlap to 0 [via the API](https://toloka.ai/docs/api/api-reference/#patch-/tasks/-id-/set-overlap-or-min), the task won't be visible to Tolokers, and you won't have to delete it.
 
 {% endnote %}
 
@@ -142,3 +168,5 @@ If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overla
 {% include [faq-correct-responses-counted](../_includes/faq/pool-setup/correct-responses-counted.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}

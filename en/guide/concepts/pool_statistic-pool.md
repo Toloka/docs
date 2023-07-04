@@ -42,20 +42,20 @@ If the average time is short, and the quality of results is low, review [quality
 ||
 ||**Expired task suites** | The number of expired task suites.
 
-Includes the pages that Tolokers failed to complete on time or decided to skip. You specify the time allotted for a task suite when [setting up a pool](pool-main.md#table_n3q_vhz_jlb).
+Includes the pages that Tolokers failed to complete on time. You specify the time allotted for a task suite when [setting up a pool](pool-main.md#table_n3q_vhz_jlb).
 
-When the Toloker decides not to do the task (clicks **Exit**), the task gets the expired status. In this case, the Toloker can return to the task again, unless it was completed by someone else or the requester deleted it from the pool.
+The task can also get the expired status when the Toloker clicks **Exit**. In this case, the Toloker can return to the task again, unless it was completed by someone else or the requester deleted it from the pool.
 
 {% cut "Recommendations" %}
 
-Tolokers might have skipped the task suite because:
+Tolokers might click the **Exit** button because:
 
 - Tasks are too complex.
 - There are too many tasks on the page.
 - Tasks don't work and Tolokers can't submit the assignments.
 - Tolokers couldn't understand the instructions and task interface.
 
-If you have a lot of expired task suites in your pool, we recommend that you read our[Tips for designing tasks](faq.md).
+If you have a lot of expired task suites in your pool, we recommend that you read our [Tips for designing tasks](faq.md).
 
 {% endcut %}
 ||
@@ -107,7 +107,7 @@ If you spent more than you planned, check the price settings in the pool and the
 
 {% cut "Recommendations" %}
 
-First, check the [quality control rules](control.md), disable the rules that increase overlap, and then revise the price per task suite. You might need to reduce it. but don't make it unreasonably small.
+First, check the [quality control rules](control.md), disable the rules that increase overlap, and then revise the price per task suite. You might need to reduce it, but don't make it unreasonably small.
 
 You can also increase or decrease the number of tasks per suite and adjust the price accordingly.
 
@@ -125,7 +125,7 @@ Review the price per task suite. You might be able to lower it without losing To
 ||
 ||**Spending (excluding fee)** | The graph shows the amount of money spent without the fee:
 
-- **Spending on bonuses** — The amount of money spent on extra rewards.
+- **Spending on bonuses** — The amount of money spent on extra bonuses.
 
 - **Spending on assignments** — The amount of money spent on tasks.||
 ||**Average cost per task** | The average price in USD per general task in the pool, including overlap.
@@ -138,7 +138,7 @@ If you think that the price is too high, check the price settings in the pool an
 
 {% endcut %}
 ||
-||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the pool, in US dollars. Earnings include rewards.||
+||**Earnings per hour** | Average Toloker earnings per hour of data labeling in the pool, in US dollars. Earnings include bonuses.||
 ||**Quality on control tasks and training tasks in the pool****Quality on control tasks and training tasks** | This graph shows the percentage of correct responses in the control and training tasks.
 
 {% cut "Recommendations" %}
@@ -172,7 +172,7 @@ Note that the graph only shows banned Tolokers. It doesn't include Tolokers whos
 
 {% cut "Recommendations" %}
 
-If there are too many banned users, check the quality control rules. Maybe they are too strict.
+If there are too many banned Tolokers, check the quality control rules. Maybe they are too strict.
 
 {% endcut %}
 ||

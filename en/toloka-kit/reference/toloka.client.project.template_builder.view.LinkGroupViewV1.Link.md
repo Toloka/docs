@@ -1,5 +1,5 @@
 # Link
-`toloka.client.project.template_builder.view.LinkGroupViewV1.Link` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L327)
+`toloka.client.project.template_builder.view.LinkGroupViewV1.Link` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L342)
 
 ```python
 Link(
@@ -11,12 +11,12 @@ Link(
 )
 ```
 
-Link parameters
+A link for the `LinkGroupViewV1`.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`url`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Link address</p>
-`content`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Link text that&#x27;s displayed to a Toloker. Unvisited links are blue and underlined, and visited links are purple.</p>
-`theme`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>Defines the appearance of the link. If you specify &quot;theme&quot;: &quot;primary&quot;, it&#x27;s a button, otherwise it&#x27;s a text link.</p>
+`url`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A URL.</p>
+`content`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A link text.</p>
+`theme`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The appearance of the link. If `theme` is omitted, the link is displayed as an underlined text. If `theme` is set to `primary`, a button is displayed.</p>

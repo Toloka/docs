@@ -20,7 +20,7 @@ This example selects Tolokers with the Windows OS and Yandex Browser.
       "operator" : "EQ",
       "category" : "computed",
       "key" : "user_agent_family",
-      "value" : "YANDEX_BROWSER"
+      "value" : "CHROME"
     } ]
   }
 }
@@ -30,7 +30,7 @@ This example selects Tolokers with the Windows OS and Yandex Browser.
 
 #|
 || Key parameter | Value description ||
-|| **region_by_phone** | **integer**
+|| `region_by_phone` | _integer_
 
 The Toloker's region detected from the mobile phone number (the [region ID in the search database](regions.md)).
 
@@ -40,7 +40,7 @@ Value of "operator":
 - `NOT_IN` — The region is not equal to the one specified and is not a part of it.
 
 Value of "value" if data couldn't be extracted — `null`. ||
-|| **region_by_ip** | **integer**
+|| `region_by_ip` | _integer_
 
 The Toloker's region detected from the IP address (the [region ID in the search database](regions.md)).
 
@@ -50,7 +50,7 @@ Value of "operator":
 - `NOT_IN` — The region is not equal to the one specified and is not a part of it.
 
 Value of "value" if data couldn't be extracted — `null`. ||
-|| **device_category** | **string**
+|| `device_category` | _string_
 
 Type of device:
 
@@ -66,7 +66,7 @@ Value of "operator":
 - `NE` — Not equal to.
 
 Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
-|| **client_type** | **string**
+|| `client_type` | _string_
 
 Type of client application:
 
@@ -79,7 +79,7 @@ Value of "operator":
 - `NE` — Not equal to.
 
 Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
-|| **os_family** | **string**
+|| `os_family` | _string_
 
 The OS family, for example:
 
@@ -97,7 +97,7 @@ Value of "operator":
 - `NE` — Not equal to.
 
 Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
-|| **user_agent_type** | **string**
+|| `user_agent_type` | _string_
 
 Browser type:
 
@@ -113,7 +113,7 @@ Value of "operator":
 - `NE` — Not equal to.
 
 Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
-|| **user_agent_family** | **string**
+|| `user_agent_family` | _string_
 
 The browser family, for example:
 
@@ -136,7 +136,7 @@ Value of "operator":
 - `NE` — Not equal to.
 
 Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
-|| **user_agent_version** | **float**
+|| `user_agent_version` | _float_
 
 Full browser version: `<Major version>.<Minor version>.`
 
@@ -155,5 +155,6 @@ Value of "value" if data couldn't be extracted — `null`.||
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/filters.md)
+- [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

@@ -71,58 +71,27 @@ If you set the interval too long, the tasks will stay open for a long time. If i
 
 For example, you can use this parameter if you need an open pool where you regularly upload new tasks. | **Additional settings**||
 ||**Pool closing date** | The date the pool closes. The pool closes automatically on this date, even if the tasks aren't marked up. | **Add optional pool settings**||
-||**Keep task order** | **Option disabled (default value)**
-
-The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per page when uploading the [TSV file](../../glossary.md#tsv) with image links to the pool, the system can generate them as follows:
-
-#|
-||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
-||Image 1 | Image 2 | Image 6 | Image 4||
-||Image 2 | Image 5 | Image 1 | Image 3||
-||Image 3 |  |  | ||
-||Image 4 |  |  | ||
-||Image 5 |  |  | ||
-||Image 6 |  |  | ||
-|#
-
-{% endcut %}
-
-**Option enabled**
-
-Tasks will be grouped on pages in the order they are listed in the task file.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per page when uploading the file with image links to the pool, you're equally likely to get pages where the first link goes first and the second goes second, and the other way around:
-
-#|
-||**Tasks in the file** | **Page 1** | **Page 2** | **Page 3**||
-||Image 1 | Image 1 | Image 3 | Image 5||
-||Image 2 | Image 2 | Image 4 | Image 6||
-||Image 3 | _or_ | _or_ | _or_||
-||Image 4 | Image 2 | Image 4 | Image 6||
-||Image 5 | Image 1 | Image 3 | Image 5||
-||Image 6 |  |  | ||
-|#
-
-{% endcut %}
-
-If the pool has an overlap, the next task is distributed only when the previous task is completed by the necessary number of Tolokers.
-
-Use this parameter to:
-
-- Speed up collection of responses for [majority vote](mvote.md) check.
-
-- Issue tasks by priority.
-
-    Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
-|**Add optional pool settings**||
 
 ||**Metafields** | To pass an array of metafields, specify key and value for each metafield. | **Add optional pool settings**||
+||**General tasks** | The number of general tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Control tasks** | The number of control tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Training tasks** | The number of training tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Min general tasks** | The minimum number of general tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Min control tasks** | The minimum number of control tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Min training tasks** | The minimum number of training tasks per suite when using smart mixing. | **Prepare and upload data**||
+||**Number of tasks per suite** | The number of tasks per suite when using the **Set manually** method. | **Prepare and upload data**||
+||**Allow partial task suites** |
+{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
+
+The setting determines the output in the last task suite if it has less than the required number of general tasks.
+
+By default, the option is enabled.
+| **Prepare and upload data**||
+||**Keep task order from uploaded data** |
+{% include [smart-mixing-selected](../_includes/toloka-requester-source/id-toloka-requester-source/smart-mixing-selected.md) %}
+
+{% include [keep-task-order](../_includes/toloka-requester-source/id-toloka-requester-source/keep-task-order.md) %}
+|**Prepare and upload data**||
 |#
 
 {% include [project-moderation](../_includes/toloka-requester-source/id-toloka-requester-source/project-moderation.md) %}
@@ -176,7 +145,7 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 
 ## For developers {#for-developers}
 
-- [Toloka API: Creating pool](../../api/concepts/create-pool.md)
+- [Toloka API: Creating pool](https://toloka.ai/docs/api/api-reference/#post-/pools)
 - [Toloka-Kit recipe: Create pool](../../toloka-kit/recipes/create-pool.md)
 
 ## Troubleshooting {#troubleshooting}
@@ -194,3 +163,5 @@ If you need to change the pool settings, [open edit mode](pool-edit.md).
 {% include [faq-skill-for-every-pool](../_includes/faq/pool-setup/skill-for-every-pool.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

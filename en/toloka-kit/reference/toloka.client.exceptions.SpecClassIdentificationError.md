@@ -1,5 +1,5 @@
 # SpecClassIdentificationError
-`toloka.client.exceptions.SpecClassIdentificationError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/exceptions.py#L27)
+`toloka.client.exceptions.SpecClassIdentificationError` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/exceptions.py#L28)
 
 ```python
 SpecClassIdentificationError(
@@ -10,11 +10,11 @@ SpecClassIdentificationError(
 )
 ```
 
-Raised when cannot find spec_сlass for spec_field value.
+An exception that is raised when a specification сlass can't be find for a field specification name.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`spec_field`|**Optional\[str\]**|<p>value that defines spec_class type</p>
-`spec_enum`|**Optional\[str\]**|<p>enum class containing spec_class possible types</p>
+`spec_field`|**Optional\[str\]**|<p>The field specification name.</p>
+`spec_enum`|**Optional\[str\]**|<p>An enumeration with all known specification names.</p>

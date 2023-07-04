@@ -16,7 +16,7 @@ Restrict access to [pool](../../glossary.md#pool) tasks for Tolokers who skip mu
 
 - Tasks must be performed in order and skipping tasks may affect the quality.
 
-#### Don't use it if:
+Don't use it if:
 
 - There aren't very many tasks in the pools. For example, if a task is a survey on a single page and the Toloker skips this page, they will no longer be able to perform tasks in the pool, which means there is no need to ban them.
 
@@ -33,11 +33,11 @@ All fields in this rule are required. If you don't fill in at least one of them,
 {% endnote %}
 
 #|
-|| Field  | Overview||
+||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **task suites skipped in a row** — The number of task suites skipped in a row.||
-||**then** | Action to perform for the condition:
+||**then** | Action to perform for the **If** condition:
 
 - **ban** — Block access to the project or all of the requester's projects for the specified number of days. Only the requester can view the reason.
 
@@ -52,25 +52,25 @@ All fields in this rule are required. If you don't fill in at least one of them,
 - **assign skill value** — Assign a fixed value to the [skill](nav.md).||
 |#
 
-## Rule example {#examples}
+## Examples {#examples}
 
-**Task**: you're conducting an opinion poll. For the results to be accurate, the Toloker must answer most of the questions.
+Task: you're conducting an opinion poll. For the results to be accurate, the Toloker must answer most of the questions.
 
 {% list tabs %}
 
 - Correct settings
 
-  ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example1.png)
+  ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example1.png =700x)
 
   A Toloker who skips 2 task suites in a row is restricted from accessing the pool and can't complete your tasks for 5 days.
 
 - Incorrect settings
 
-  ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example3.png)
+  ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example3.png =700x)
 
   If a Toloker skips 2 task suites in a row, all their responses will be accepted automatically.
 
-  ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example4.png)
+  ![](../_images/control-rules/skipped-assignments/qcr-skipped_assignments_example4.png =700x)
 
   With this setting, a Toloker who skips less than 2 task suites in a row is restricted from accessing the pool and can't complete your tasks for 5 days.
 
@@ -98,3 +98,5 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 {% include [faq-incorrect-responses](../_includes/faq/pool-setup/incorrect-responses.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

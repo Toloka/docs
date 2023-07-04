@@ -16,7 +16,7 @@ Choose one of available types for your input data. Supported data formats with e
 
 {% note info %}
 
-This feature is disabled by default. [Contact our support team](support.md) to get access to it.
+This feature is disabled by default. [Contact our support team](../../guide/troubleshooting/support.md) to get access to it.
 
 {% endnote %}
 
@@ -165,7 +165,7 @@ You may use screenshots of pages instead of links to them.
 
 ## More features {#another}
 
-You may [ask to add more features](support.md) to the project:
+You may [ask to add more features](../../guide/troubleshooting/support.md) to the project:
 
 - To search a product on your platform with our search engine.
 - To use meta information. For example, to handle the location of a performer.
@@ -179,6 +179,8 @@ Item count | Base price per labeled item
 Up to 10,000 | $0.25
 10,001 - 100,000 | $0.20
 100,001 - 500,000 | $0.17
-Over 500,000 | [Contact support](support.md) to get special offer.
+Over 500,000 | [Contact support](../../guide/troubleshooting/support.md) to get special offer.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

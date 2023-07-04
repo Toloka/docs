@@ -34,7 +34,7 @@ Before you begin:
 
     Learn more about [configuring tasks for mobile devices](../concepts/mobile.md).
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
 {% include [toloka-requester-source-use-preset](../_includes/toloka-requester-source/id-toloka-requester-source/use-preset.md) %}
 
@@ -44,13 +44,11 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
+    1. Click **Do it myself**.
+
     1. Select the **Hand gesture classification** preset.
 
 1. Click **Choose this preset** in the pop-up tab.
-
-## Create a project {#project}
-
-{% include [tutorials-who-are-tolokers](../_includes/tutorials/who-are-tolokers.md) %}
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
@@ -58,7 +56,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-create-project-step-1.png)
+    ![Create a project. Step 1](../_images/tutorials/video-moderation/video-moderation-create-project-step-1.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -82,11 +80,11 @@ Before you begin:
 
         1. In the **Paste link to a sample video** field, specify the `https://www.youtube.com/embed/your_video_example` link. You can use a link to any of your videos. It is only used to display the task interface preview on the right.
 
-            [![Create a project. Step 2.3.1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-youtube-link.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-youtube-link.png)
+            ![Create a project. Step 2.3.1](../_images/tutorials/video-moderation/video-moderation-youtube-link.png =700x)
 
         1. Go to the **Code editor** tab. In the **Config** section, replace the `view.video` value with `view.iframe`.
 
-            [![Create a project. Step 2.3.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-iframe.png =480x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-iframe.png)
+            ![Create a project. Step 2.3.2](../_images/tutorials/video-moderation/video-moderation-iframe.png =480x)
 
             {% note info %}
 
@@ -112,15 +110,13 @@ Before you begin:
 
     {% include [toloka-requester-source-instruction-note](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-note.md) %}
 
-1. To save your data and continue, click **Create a project**.
-
-    {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#pool}
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -154,7 +150,7 @@ Before you begin:
 
     1. To filter out Tolokers who often make mistakes in the control tasks, click **Add a quality control rule → Control tasks**. Enter the following values:
 
-        [![Create a pool. Control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-control-rule.png)
+        ![Create a pool. Control rule](../_images/tutorials/video-moderation/video-moderation-control-rule.png =700x)
 
         This means that if a Toloker completed more than three control tasks and gave incorrect answers in more than 60% of them, they will be blocked and won't be able to complete tasks on this project for 10 days.
 
@@ -180,24 +176,24 @@ Before you begin:
 
         - A prepared dataset
 
-            1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+          1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-                For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:video`, and the values are links to the video clips.
+              For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:video`, and the values are links to the video clips.
 
-                ```plaintext
-                INPUT:video
-                https://yang.s3.yandex.net/finger gestures/20210723_113648.mp4
-                https://yang.s3.yandex.net/finger gestures/20210723_113736.mp4
-                https://yang.s3.yandex.net/finger gestures/20210723_113521.mp4
-                ```
+              ```plaintext
+              INPUT:video
+              https://yang.s3.yandex.net/finger gestures/20210723_113648.mp4
+              https://yang.s3.yandex.net/finger gestures/20210723_113736.mp4
+              https://yang.s3.yandex.net/finger gestures/20210723_113521.mp4
+              ```
 
-            1. Open the downloaded file, and replace the sample links with links to your video clips.
+          1. Open the downloaded file, and replace the sample links with links to your video clips.
 
-            1. Click **Select prepared dataset**, and upload the file you’ve just made.
+          1. Click **Select prepared dataset**, and upload the file you’ve just made.
 
         - Media files
 
-            {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+          {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
         {% endlist %}
 
@@ -213,7 +209,7 @@ Before you begin:
 
         For example, you can add 9 general tasks and 1 control task per suite:
 
-        [![Upload data. Smart mixing](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-upload-data.png =600x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-upload-data.png)
+        ![Upload data. Smart mixing](../_images/tutorials/video-moderation/video-moderation-upload-data.png =600x)
 
     1. Click **Combine tasks into suites**.
 
@@ -225,7 +221,7 @@ Before you begin:
 
     1. Note the **Distribution of correct responses for control tasks** graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
@@ -237,7 +233,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-start-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-start-labeling.png)
+    ![Start labeling. Step 2](../_images/tutorials/video-moderation/video-moderation-start-labeling.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -245,11 +241,11 @@ Before you begin:
 
 1. {% include [toloka-requester-source-labeling-progress](../_includes/toloka-requester-source/id-toloka-requester-source/labeling-progress.md) %}
 
-    [![See results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-see-results-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/video-moderation/video-moderation-see-results-step-1.png)
+    ![See results. Step 1](../_images/tutorials/video-moderation/video-moderation-see-results-step-1.png =700x)
 
 1. When the labeling is complete, click the arrow next to the **Download results** button and choose **Run Dawid-Skene model** from the drop-down menu. Click **Yes** in the pop-up window.
 
-    [![See results. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/image-classification/see-results-step-2.png)
+    ![See results. Step 2](../_images/tutorials/image-classification/see-results-step-2.png =700x)
 
 1. Open the same drop-down menu again, and click **View aggregations list**.
 
@@ -274,4 +270,4 @@ Before you begin:
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

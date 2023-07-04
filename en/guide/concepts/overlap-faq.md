@@ -1,12 +1,12 @@
 # What is overlap?
 
-Overlap is the number of Tolokers who should complete each task in the [pool](../../glossary.md#pool).
+Overlap is the number of Tolokers who should complete each [task](../../glossary.md#task) in the [pool](pool-edit.md).
 
-You can set overlap in the pool settings:
+You can set overlap in the [pool settings](pool-edit.md):
 
 ![](../_images/location-job/overlap.png)
 
-#### Tips and recommendations
+## Tips and recommendations
 
 | Task type                            | Recommended overlap |
 |--------------------------------------|---------------------|
@@ -16,7 +16,7 @@ You can set overlap in the pool settings:
 
 You can change overlap after the pool is started. To do this, open the pool editing mode and set the new overlap value. You don't need to restart the pool. Updating the settings is usually fast, but if there are many tasks, it may take several minutes.
 
-#### Advanced overlap types
+## Advanced overlap types
 
 - Dynamic overlap lets you change [overlap](dynamic-overlap.md) depending on:
 
@@ -31,7 +31,7 @@ You can change overlap after the pool is started. To do this, open the pool edit
 
 ## For developers {#for-developers}
 
-- [Toloka API: Changing task suite overlap](../../api/concepts/edit-overlap.md)
+- [Toloka API: Changing task suite overlap](https://toloka.ai/docs/api/api-reference/#patch-/task-suites/-id-)
 - [Toloka-Kit recipe: Set overlap](../../toloka-kit/recipes/set-overlap.md)
 
 ## Troubleshooting {#troubleshooting}
@@ -44,4 +44,6 @@ You can change overlap after the pool is started. To do this, open the pool edit
 
 {% include [faq-counting-work](../_includes/faq/pool-setup/counting-work.md) %}
 
-{% include [faq-counting-work](../_includes/faq/pool-setup/counting-work.md) %}
+{% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -8,13 +8,7 @@ By default, archived pools are not visible in the list of [project](../../glossa
 
 1. In the **Pools** tab, select **Archived**.
 
-The pool is automatically archived if none of the following actions is performed in the pool for a month:
-
-- Editing.
-- Uploading tasks.
-- Changing status.
-- Completing a task.
-- Cloning via the Toloka API.
+## Manual archiving {#manual-archiving}
 
 To archive a pool, click **![Drop-down button](../_images/drop-down.svg) → Archive** at the top of the pool page, or ![](../_images/other/pool-action-archive.svg) in the list of pools on the project page.
 
@@ -23,6 +17,22 @@ To archive a pool, click **![Drop-down button](../_images/drop-down.svg) → Arc
 To [archive the training pool](train.md), first archive all the main pools to which it is linked.
 
 {% endnote %}
+
+## Automatic archiving {#automatic-archiving}
+
+**General tasks** type pools are automatically archived if none of the following actions is performed in them for **30 days**:
+
+- Editing.
+- Uploading tasks.
+- Changing status.
+- Completing a task.
+
+The automatic archiving will be delayed for **90 days** if the pool:
+
+- Contains only control and training tasks.
+- Contains no tasks in it.
+- Is cloned via the [Toloka API](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/clone).
+- Belongs to one of the following types: **Exam**, **Training**, **Retry**, or **Other**.
 
 ## What's next {#what-next}
 
@@ -38,7 +48,7 @@ To [archive the training pool](train.md), first archive all the main pools to wh
 
 ## For developers {#for-developers}
 
-- [Toloka API: Moving pool to archive](../../api/concepts/archive-pool.md)
+- [Toloka API: Moving pool to archive](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/archive)
 - [Toloka-Kit recipe: Archive pool](../../toloka-kit/recipes/archive-pool.md)
 
 ## Troubleshooting {#troubleshooting}

@@ -2,29 +2,31 @@
 
 In this [project](../../glossary.md#project), Tolokers will search an online store for shoes that are similar to the ones shown in the task. Use the results from [project 1](contain_item.md#get_results) as source images.
 
-## Create a project {#create_project}
+## Create a project {#project}
 
 To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
-#### In the interface:
+In the interface:
 
 1. Choose a template:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
+
+    1. Click **Do it myself**.
 
     1. Select the **Product photo search** template.
 
-1. Provide general information:
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    1. In the **Project title** field, enter `Find the same or similar shoes in an online store`.
+    1. In the **Name to show Tolokers** field, enter `Find the same or similar shoes in an online store`.
 
-    1. In the **Description** field, enter `Go to an online store and provide a link and an image of the same or similar pair of shoes`.
+    1. In the **Description for Tolokers** field, enter `Go to an online store and provide a link and an image of the same or similar pair of shoes`.
 
     1. Optionally add a **Private comment**.
 
-    1. Save the changes.
-
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
     {% list tabs %}
 
@@ -164,23 +166,17 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. Save the changes.
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
+    Instructions text:
 
-    1. **Instructions:**
+    ```plaintext
+    Look at what the person is wearing in the picture.
+    Then go to the ASOS online store and search for the same pair of shoes.
+    It should be similar in category, style, color, and length.
+    ```
 
-        ```plaintext
-        Look at what the person is wearing in the picture.
-        Then go to the ASOS online store and search for the same pair of shoes.
-        It should be similar in category, style, color, and length.
-        ```
-
-    1. Save the changes.
-
-1. To go back to the **Projects** page, click **Finish editing**.
-
-Learn more about working with the project in the [Project](../concepts/project.md) section.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create_pool}
 
@@ -188,7 +184,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Find the same or similar shoes in an online store**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -270,11 +266,11 @@ To create a [pool](../../glossary.md#pool):
 
         1. Choose **Set manually**.
 
-        1. In the **Tasks per suite** field, specify`1`.
+        1. In the **Number of tasks per suite** field, specify`1`.
 
         1. Click **Combine tasks into suites**.
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
@@ -285,3 +281,5 @@ To create a [pool](../../glossary.md#pool):
 - Create [Project 3](item_look_similar.md) to compare the original image with the results from Project 2.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

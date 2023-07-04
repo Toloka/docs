@@ -36,7 +36,7 @@
     ```bash
     POST https://toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Песочница
@@ -44,7 +44,7 @@
     ```bash
     POST https://sandbox.toloka.dev/api/v1/user-bonuses
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}
@@ -139,14 +139,14 @@
   ```json
   {
     "items": {
-      "0": {details of a reward #0},
-      "2": {details of a reward #2},
-      "<N>": {details of a reward #N}
+      "0": {details of a bonus #0},
+      "2": {details of a bonus #2},
+      "<N>": {details of a bonus #N}
     },
     "validation_errors": {
-      "1": {validation errors for a reward #1},
-      "3": {validation errors for a reward #3},
-      "<N>": {validation errors for a reward #N}
+      "1": {validation errors for a bonus #1},
+      "3": {validation errors for a bonus #3},
+      "<N>": {validation errors for a bonus #N}
     }
   }
   ```

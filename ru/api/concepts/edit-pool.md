@@ -21,7 +21,7 @@
     ```bash
     PUT https://toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
 
     {<pool parameters, including updated ones>}
     ```
@@ -31,7 +31,7 @@
     ```bash
     PUT https://sandbox.toloka.dev/api/v1/pools/<pool_id>
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
 
     {<pool parameters, including updated ones>}
     ```

@@ -1,5 +1,5 @@
 # TextViewV1
-`toloka.client.project.template_builder.view.TextViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L385)
+`toloka.client.project.template_builder.view.TextViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L405)
 
 ```python
 TextViewV1(
@@ -13,24 +13,24 @@ TextViewV1(
 )
 ```
 
-Block for displaying text.
+A view for displaying a text.
 
 
-If you need formatted text, use view.markdown.
+For more information, see [view.text](https://toloka.ai/docs/template-builder/reference/view.text).
+
+    Attributes:
+        content: The text. To insert a new line, use `\n`.
+
+    Example:
+```python
+text_view = tb.view.TextViewV1(tb.data.InputData('input_field_name'), label='My label:')
+```
+
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`content`|**Optional\[Any\]**|<p>The text displayed in the block. To insert a new line, use</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
-
-**Examples:**
-
-How to show labeled field from the task inputs.
-
-```python
-text_view = tb.view.TextViewV1(tb.data.InputData('input_field_name'), label='My label:')
-```
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

@@ -1,0 +1,1990 @@
+openapi: 3.0.2
+servers:
+  - url: 'https://sandbox.toloka.dev/api/app/v0'
+    description: Toloka sandbox server URL.
+  - url: 'https://toloka.dev/api/app/v0'
+    description: Toloka default server URL.
+info:
+  title: Apps API
+  version: '0.12'
+  description:
+    $ref: './parts/apps/info-description.md'
+security:
+  - api_key1: []
+tags:
+  - name: app
+    description: |
+      An example of a standard task that you want to solve using Toloka. Unlike
+      project templates, you don't have to set up everything yourself.
+  - name: app-project
+    description: |
+      A project with the parameters that you specify when creating it.
+      It will have the interface and quality control already pre-configured,
+      decomposition done, and everything ready to use: all you need is to [upload
+      batches](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches) and [send them for labeling](https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/start).
+  - name: item
+    description: |
+      A unique uploaded data row. It's uploaded into the batch with other rows
+      to be collectively sent for labeling. In a file with data, each row is an item.
+  - name: batch
+    description: |
+      A batch of data that you send for labeling at a time. A batch consists of [task items](https://toloka.ai/docs/api/apps-reference/#tag--item).
+paths:
+  /app-projects:
+    get:
+      tags:
+        - app-project
+      parameters:
+        - name: app_id
+          in: query
+          description: The ID of the template with which this project is associated.
+          required: false
+          schema:
+            type: string
+            example: 2eN4l59qL2xHB5b8Jqp6
+        - name: parent_app_project_id
+          in: query
+          description: |
+            The ID of the app project used for cloning. It's specified only if you
+            created a project by cloning another project. You can clone projects
+            in the web version of Toloka.
+          required: false
+          schema:
+            type: string
+          example: xNnK4wYdlMPCQ0zPL315
+        - name: status
+          in: query
+          description: The project status.
+          required: false
+          schema:
+            type: string
+            enum:
+              - ARCHIVED
+              - CREATING
+              - ERROR
+              - READY
+          example: CREATING
+        - name: after_id
+          in: query
+          description: The ID of the project used for cursor pagination.
+          required: false
+          schema:
+            type: string
+          example: xNnK4wYdlMPCQ0zPL315
+        - name: id_gt
+          in: query
+          description: Projects with an ID greater than the specified value.
+          required: false
+          schema:
+            type: string
+          example: xNnK4wYdlMPCQ0zPL315
+        - name: id_gte
+          in: query
+          description: Projects with an ID greater than or equal to the specified value.
+          required: false
+          schema:
+            type: string
+          example: xNnK4wYdlMPCQ0zPL315
+        - name: id_lt
+          in: query
+          description: Projects with an ID less than the specified value.
+          required: false
+          schema:
+            type: string
+          example: xNnK4wYdlMPCQ0zPL315
+        - name: id_lte
+          in: query
+          description: Projects with an ID less than or equal to the specified value.
+          required: false
+          schema:
+            type: string
+          example: xNnK4wYdlMPCQ0zPL315
+        - name: name_gt
+          in: query
+          description: |
+            Projects with a name lexicographically greater than the specified
+            value.
+          required: false
+          schema:
+            type: string
+          example: Transcript of audio recordings
+        - name: name_gte
+          in: query
+          description: |
+            Projects with a name lexicographically greater than or equal to the
+            specified value.
+          required: false
+          schema:
+            type: string
+          example: Transcript of audio recordings
+        - name: name_lt
+          in: query
+          description: |
+            Projects with a name lexicographically smaller than the specified
+            value.
+          required: false
+          schema:
+            type: string
+          example: Transcript of audio recordings
+        - name: name_lte
+          in: query
+          description: |
+            Projects with a name lexicographically smaller than or equal to the
+            specified value.
+          required: false
+          schema:
+            type: string
+          example: Transcript of audio recordings
+        - name: created_gt
+          in: query
+          description: |
+            Projects created after the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`
+          required: false
+          schema:
+            type: string
+          example: '2022-03-22'
+        - name: created_gte
+          in: query
+          description: |
+            Projects created after or on the specified date and time. The date
+            is specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`
+          required: false
+          schema:
+            type: string
+          example: '2022-03-22'
+        - name: created_lt
+          in: query
+          description: |
+            Projects created before the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`
+          required: false
+          schema:
+            type: string
+          example: '2022-03-22'
+        - name: created_lte
+          in: query
+          description: |
+            Projects created before or on the specified date and time. The date
+            is specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`
+          required: false
+          schema:
+            type: string
+          example: '2022-03-22'
+        - name: sort
+          in: query
+          description: |
+            The order and direction of sorting the results.
+
+            Available parameters::
+              * `created` — by the creation date and time. The date is specified in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`;
+              * `id` — by the project ID;
+              * `name` — by the project name.
+
+            You can specify multiple parameters separated by a comma.
+
+            To change the sorting direction to descending, add the minus sign
+            before the parameter. For example, `sort=-id`.
+
+            To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
+          required: false
+          example: id,-created
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: 'The number of objects per page. The maximum value is **5,000**.'
+          required: false
+          schema:
+            type: string
+            default: '100'
+          example: '200'
+        - name: scope
+          in: query
+          description: |
+            The projects created by a specified range of requesters:
+
+            * `COMPANY` — by anyone from the company;
+            * `MY` — only by me;
+            * `REQUESTER_LIST` — by requesters with the IDs specified in
+            the `requester_ids` parameter below.
+          required: false
+          schema:
+            type: string
+            enum:
+              - COMPANY
+              - MY
+              - REQUESTER_LIST
+          example: MY
+        - name: requester_ids
+          in: query
+          description: |
+            The list of requester IDs separated by a comma, for `scope =
+            REQUESTER_LIST`.
+          required: false
+          example: 6c6e20dc86cca2ae787afcb2629de162,a1b0b42923c429daa2c764d7ccfc364d
+          schema:
+            type: string
+      summary: Get projects
+      description: |
+        Returns the list of all the currently available app projects. You can also
+        filter this list using the query parameters.
+      x-code-samples:
+        $ref: ./code-samples/apps/get-app-projects.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppProjectListResult'
+              examples:
+                $ref: './responses/apps/app-project-list.yaml'
+          description: OK
+    post:
+      tags:
+        - app-project
+      summary: Create project
+      description: Creates an app project with the parameters specified in the request.
+      requestBody:
+        description: New project parameters.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/AppProjectCreateForm'
+            examples:
+              $ref: './requests/apps/app-project-body.yaml'
+      x-code-samples:
+        $ref: ./code-samples/apps/post-app-projects.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppProject'
+              examples:
+                $ref: './responses/apps/app-project-id.yaml'
+          description: OK
+  '/app-projects/{app_project_id}':
+    get:
+      tags:
+        - app-project
+      summary: Get project by ID
+      description: |
+        Displays the detailed information about the project with the ID
+        specified in the request.
+
+        You can get the project ID from the [list of projects](#get-/app-projects).
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project you want to get information about.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+      x-code-samples:
+        $ref: ./code-samples/apps/get-app-projects-app_project_id.yaml
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppProject'
+              examples:
+                $ref: './responses/apps/app-project-id-mult.yaml'
+        '404':
+          description: "The object doesn't exist"
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+  '/app-projects/{app_project_id}/archive':
+    post:
+      tags:
+        - app-project
+      summary: Archive project
+      description: Changes the project status to `ARCHIVE`.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project you want to archive.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+      x-code-samples:
+        $ref: ./code-samples/apps/post-app-projects-app_project_id-archive.yaml
+      responses:
+        '200':
+          description: OK
+  '/app-projects/{app_project_id}/unarchive':
+    post:
+      tags:
+        - app-project
+      summary: Unarchive project
+      description: Changes the project status to the last one it had before [archiving](#post-/app-projects/-app_project_id-/archive).
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project you want to unarchive.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+      x-code-samples:
+        $ref: ./code-samples/apps/post-app-projects-app_project_id-unarchive.yaml
+      responses:
+        '200':
+          description: OK
+  '/app-projects/{app_project_id}/items/{item_id}':
+    get:
+      tags:
+        - item
+      summary: Get item by ID
+      description: |
+        Displays the detailed information about the item with the ID specified
+        in the request.
+
+        You can get the item ID from the [list of items](#get-/app-projects/-app_project_id-/items).
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the specified item is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: item_id
+          in: path
+          description: The ID of the item for which you want to get the detailed information.
+          required: true
+          schema:
+            type: string
+            example: V40aPPA2j64TORQyY54Z
+      x-code-samples:
+        $ref: ./code-samples/apps/get-app-projects-app_project_id-items-item_id.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+              examples:
+                $ref: './responses/apps/item-id.yaml'
+          description: OK
+        '404':
+          description: 'The `{item_id}` task item could not be found.'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+  '/app-projects/{app_project_id}/items':
+    get:
+      tags:
+        - item
+      summary: Get project items
+      description: |
+        Returns all the task items of the project with the ID specified in the
+        request.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project for which you want to get task items.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: after_id
+          in: query
+          description: The ID of the item used for cursor pagination.
+          required: false
+          example: Q2d15QBjpwWuDz8Z321g
+          schema:
+            type: string
+        - name: batch_id
+          in: query
+          description: The ID of the batch associated with the items.
+          required: false
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+        - name: status
+          in: query
+          description: The status of the items to be returned.
+          required: false
+          example: COMPLETED
+          schema:
+            type: string
+        - name: id_gt
+          in: query
+          description: Items with an ID greater than the specified value.
+          required: false
+          example: Q2d15QBjpwWuDz8Z321g
+          schema:
+            type: string
+        - name: id_gte
+          in: query
+          description: Items with an ID greater than or equal to the specified value.
+          required: false
+          example: Q2d15QBjpwWuDz8Z321g
+          schema:
+            type: string
+        - name: id_lt
+          in: query
+          description: Items with an ID smaller than the specified value.
+          required: false
+          example: Q2d15QBjpwWuDz8Z321g
+          schema:
+            type: string
+        - name: id_lte
+          in: query
+          description: Items with an ID smaller than or equal to the specified value.
+          required: false
+          example: Q2d15QBjpwWuDz8Z321g
+          schema:
+            type: string
+        - name: created_gt
+          in: query
+          description: |
+            Items created after the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: created_gte
+          in: query
+          description: |
+            Items created after or on the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: created_lt
+          in: query
+          description: |
+            Items created before the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: created_lte
+          in: query
+          description: |
+            Items created on or before the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: finished_gt
+          in: query
+          description: |
+            Items labeled after the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: finished_gte
+          in: query
+          description: |
+            Items labeled after or on the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: finished_lt
+          in: query
+          description: |
+            Items labeled before the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: finished_lte
+          in: query
+          description: |
+            Items labeled before or on the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          example: "2022-12-01"
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: |
+            The order and direction of sorting the results.
+
+            Available parameters:
+
+              * `created` — by creation date and time. The date is specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`;
+              * `id` — by ID;
+              * `finished` — by labeling completion time;
+              * `status` — by item status.
+
+            You can specify multiple parameters separated by a comma.
+
+            To change the sorting direction (to sort in descending order),
+            add a hyphen before the parameter. For example, `sort=-id`.
+
+            To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
+          example: id,-created
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: The number of items on the page. The maximum value is **1000**.
+          required: false
+          example: 10
+          schema:
+            type: string
+            default: 100
+      x-code-samples:
+        $ref: ./code-samples/apps/get-app-projects-app_project_id-items.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                description: The list of task items and their properties in the `content` array.
+                type: array
+                items:
+                  $ref: '#/components/schemas/ItemListResult'
+              examples:
+                $ref: './responses/apps/item-list.yaml'
+          description: OK
+        '404':
+          description: Items not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+    post:
+      tags:
+        - item
+      summary: Add new item
+      description: Adds a new item to a batch in the project with the ID specified in the request.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project you want to add an item to.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+      requestBody:
+        description: Parameters of the new item.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemCreateForm'
+      x-code-samples:
+        $ref: ./code-samples/apps/post-app-projects-app_project_id-items.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Item'
+              examples:
+                $ref: './responses/apps/item-id.yaml'
+          description: OK
+        '400':
+          description: Error in the request data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: No authorization to perform this operation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '404':
+          description: Task item not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+  '/app-projects/{app_project_id}/items/bulk':
+    post:
+      tags:
+        - item
+      summary: Add items in bulk
+      description: |
+        Adds multiple task items to a batch in the project with the ID specified in the request.
+
+        <aside class="warning"><strong>Restriction</strong>: You can add a maximum of <strong>10,000</strong> task items per request.</aside>
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project to which you want to add items.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+      requestBody:
+        description: Parameters of new task items.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ItemsBulkCreateForm'
+      x-code-samples:
+        $ref: ./code-samples/apps/post-app-projects-app_project_id-items-bulk.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ItemsBulkCreateResponse'
+          description: OK
+        '400':
+          description: Error in the request data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: No authorization to perform this operation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '404':
+          description: Task items not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '413':
+          description: |
+            The request is too large. The maximum number of items per request is
+            10,000.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+  '/app-projects/{app_project_id}/batches':
+    get:
+      tags:
+        - batch
+      summary: Get project batches
+      description: |
+        Returns the complete list of the batches associated with the project
+        with the ID specified in the request.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project for which you want to get the list of batches.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: after_id
+          in: query
+          description: The ID of the batch used for cursor pagination.
+          required: false
+          schema:
+            type: string
+            example: 7d0YYJ2Av5OhnLVwAygZ
+        - name: status
+          in: query
+          description: Returns the batches with this status only.
+          required: false
+          schema:
+            type: string
+            example: NEW
+        - name: id_gt
+          in: query
+          description: Batches with an ID greater than the specified value.
+          required: false
+          schema:
+            type: string
+            example: 7d0YYJ2Av5OhnLVwAygZ
+        - name: id_gte
+          in: query
+          description: Batches with an ID greater than or equal to the specified value.
+          required: false
+          schema:
+            type: string
+            example: 7d0YYJ2Av5OhnLVwAygZ
+        - name: id_lt
+          in: query
+          description: Batches with an ID smaller than the specified value.
+          required: false
+          schema:
+            type: string
+            example: 7d0YYJ2Av5OhnLVwAygZ
+        - name: id_lte
+          in: query
+          description: Batches with an ID smaller than or equal to the specified value.
+          required: false
+          schema:
+            type: string
+            example: 7d0YYJ2Av5OhnLVwAygZ
+        - name: name_gt
+          in: query
+          description: |
+            Batches with a name lexicographically greater than the specified
+            value.
+          required: false
+          schema:
+            type: string
+            example: Batch_Jan22
+        - name: name_gte
+          in: query
+          description: |
+            Batches with a name lexicographically greater than or equal to the
+            specified value.
+          required: false
+          schema:
+            type: string
+            example: Batch_Jan22
+        - name: name_lt
+          in: query
+          description: |
+            Batches with a name lexicographically smaller than the specified
+            value.
+          required: false
+          schema:
+            type: string
+            example: Batch_Jan22
+        - name: name_lte
+          in: query
+          description: |
+            Batches with a name lexicographically smaller than or equal to the
+            specified value.
+          required: false
+          schema:
+            type: string
+            example: Batch_Jan22
+        - name: created_gt
+          in: query
+          description: |
+            Batches created after the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          schema:
+            type: string
+            example: "2022-12-01"
+        - name: created_gte
+          in: query
+          description: |
+            Batches created after or on the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          schema:
+            type: string
+            example: "2022-12-01"
+        - name: created_lt
+          in: query
+          description: |
+            Batches created before the specified date and time. The date is
+            specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          schema:
+            type: string
+            example: "2022-12-01"
+        - name: created_lte
+          in: query
+          description: |
+            Batches created on or before the specified date and time. The date
+            is specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+          required: false
+          schema:
+            type: string
+            example: "2022-12-01"
+        - name: sort
+          in: query
+          description: |
+            The order and direction of sorting the results.
+
+            Available parameters:
+
+              * `created` — by the creation date and time. The date is specified in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`;
+              * `id` - by ID;
+              * `name` - by name;
+              * `status` - by status.
+
+            You can specify multiple parameters separated by a comma.
+
+            To change the sorting direction (to sort in descending order),
+            add a hyphen before the parameter. For example, `sort=-id`.'
+
+            To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
+          required: false
+          example: id,-created
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: 'The number of batches on the page. The maximum value is **1000**.'
+          required: false
+          schema:
+            type: string
+            default: 100
+            example: 10
+      x-code-samples:
+        $ref: ./code-samples/apps/get-app-projects-app_project_id-batches.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchListResult'
+              examples:
+                $ref: './responses/apps/batch-list.yaml'
+          description: OK
+        '404':
+          description: Batch not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+    post:
+      tags:
+        - batch
+      summary: Create batch with items
+      description: |
+        Creates a batch of task items for the project with the ID specified in
+        the request.
+
+        <aside class="warning"><strong>Restriction</strong>: You can add a maximum of <strong>10,000</strong> task items per request.</aside>
+
+        It also sets the created batch priority for labeling based on the `priority_order` value specified in the request: `ONE` (meaning the highest priority), `TWO`, `THREE`, `FOUR`, `FIVE` (for the lowest priority, default value). If you do not specify the `priority_order` value the batch will be created with `priority_order = FIVE`.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project you want to add items to.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+      requestBody:
+        description: The parameters of the new batch.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchCreateForm'
+            examples:
+              $ref: './requests/apps/batch-body.yaml'
+      x-code-samples:
+        $ref: ./code-samples/apps/post-app-projects-app_project_id-batches.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Batch'
+              examples:
+                $ref: './responses/apps/batch-id.yaml'
+          description: OK
+        '400':
+          description: Error in the request data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: No authorization to perform this operation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '404':
+          description: Batch not found.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '413':
+          description: |
+            The request is too large. The maximum number of items per request is
+            10,000.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+  '/app-projects/{app_project_id}/batches/sync':
+    post:
+      tags:
+        - batch
+      summary: Start sync batch processing
+      description: |
+        Starts processing the batch with the ID specified in the request.
+
+        <aside class="warning"><strong>Restriction</strong>: This batch processing is applicable for solutions which use <strong>synchronous protocols only</strong>.</aside>
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+      requestBody:
+        description: The parameters of the new batch.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchCreateForm'
+            examples:
+              $ref: './requests/apps/batch-body.yaml'
+      x-code-samples:
+        $ref: ./code-samples/apps/post-app-projects-app_project_id-batches-sync.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/BatchSyncResponse'
+              examples:
+                $ref: './responses/apps/batch-sync.yaml'
+          description: OK
+        '400':
+          description: Error in the request data.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+        '403':
+          description: No authorization to perform this operation.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+  '/app-projects/{app_project_id}/batches/{batch_id}':
+    get:
+      tags:
+        - batch
+      summary: Get batch by ID
+      description: |
+        Returns the detailed information about the batch with the ID specified
+        in the request.
+
+        You can get the batch ID from the [list of batches](#get-/app-projects/-app_project_id-/batches).
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: batch_id
+          in: path
+          description: |
+            The ID of the batch for which you want to get the detailed
+            information.
+          required: true
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+      x-code-samples:
+        $ref: |
+          ./code-samples/apps/get-app-projects-app_project_id-batches-batch_id.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Batch'
+              examples:
+                $ref: './responses/apps/batch-id.yaml'
+          description: OK
+        '404':
+          description: 'Batch {batch_id} not found.'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+    patch:
+      tags:
+        - batch
+      summary: Update batch
+      description: |
+        Modifies the name and priority of the batch with the ID specified in the request.
+
+        For `priority_order`, `ONE` is the highest value. The batch items which have this value will be sent for labeling first in the queue. The default value is `FIVE`. If you don't specify `name` or `priority_order` parameter values, they will not change.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: batch_id
+          in: path
+          description: The ID of the batch to change the name or priority.
+          required: true
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+      requestBody:
+        description: The parameters of the batch properties update.
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/BatchPatchForm'
+            examples:
+              $ref: './requests/apps/batch-body-patch.yaml'
+      x-code-samples:
+        $ref: './code-samples/apps/patch-app-projects-app_project_id-batches-batch_id.yaml'
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Batch'
+              examples:
+                $ref: './responses/apps/batch-id.yaml'
+          description: OK
+        '404':
+          description: 'Batch {batch_id} not found.'
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/RequestError'
+  '/app-projects/{app_project_id}/batches/{batch_id}/start':
+    post:
+      tags:
+        - batch
+      summary: Start batch processing
+      description: |
+        Starts processing the batch with the ID specified in the request.
+
+        <aside class="note">The batch processing starts asynchronously.</aside>
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: batch_id
+          in: path
+          description: The ID of the batch which you want to start processing.
+          required: true
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+      x-code-samples:
+        $ref: './code-samples/apps/post-app-projects-app_project_id-batches-batch_id-start.yaml'
+      responses:
+        '200':
+          description: OK
+  '/app-projects/{app_project_id}/batches/{batch_id}/stop':
+    post:
+      tags:
+        - batch
+      summary: Stop batch processing
+      description: |
+        Stops processing the batch with the ID specified in the request.
+
+        <aside class="warning">Processing can be stopped only for the batch with the <code>PROCESSING</code> status.</aside>
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: batch_id
+          in: path
+          description: The ID of the batch which you want to stop processing.
+          required: true
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+      x-code-samples:
+        $ref: './code-samples/apps/post-app-projects-app_project_id-batches-batch_id-stop.yaml'
+      responses:
+        '200':
+          description: OK
+  '/app-projects/{app_project_id}/batches/{batch_id}/resume':
+    post:
+      tags:
+        - batch
+      summary: Resume batch processing
+      description: |
+        Resumes processing the batch with the ID specified in the request.
+
+        <aside class="warning">Processing can be resumed only for the batch with the <code>STOPPING</code> or <code>STOPPED</code> status.</aside>
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: batch_id
+          in: path
+          description: The ID of the batch which you want to resume processing.
+          required: true
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+      x-code-samples:
+        $ref: './code-samples/apps/post-app-projects-app_project_id-batches-batch_id-resume.yaml'
+      responses:
+        '200':
+          description: OK
+
+  '/app-projects/{app_project_id}/batches/{batch_id}/archive':
+    post:
+      tags:
+        - batch
+      summary: Archive batch
+      description: >
+        Archives the batch with the ID specified in the request to hide its data.
+
+
+        You can archive the batches which are not currently being processed (are not in the `PROCESSING` status). You must stop the batches before archiving them.
+
+
+        The batch gets the `ARCHIVE` status.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: batch_id
+          in: path
+          description: The ID of the batch you want to archive.
+          required: true
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+      x-code-samples:
+        $ref: './code-samples/apps/app-projects-app_project_id-batches-batch_id-archive.yaml'
+      responses:
+        '200':
+          description: OK
+
+  '/app-projects/{app_project_id}/batches/{batch_id}/unarchive':
+    post:
+      tags:
+        - batch
+      summary: Unarchive batch
+      description: Changes the batch status to the last one it had before [archiving](#post-/app-projects/-app_project_id-/batches/-batch_id-/archive). After the operation, you can process the batch again.
+      parameters:
+        - name: app_project_id
+          in: path
+          description: The ID of the project with which the batch is associated.
+          required: true
+          schema:
+            type: string
+            example: Q2d15QBjpwWuDz8Z321g
+        - name: batch_id
+          in: path
+          description: The ID of the batch you want to unarchive.
+          required: true
+          schema:
+            type: string
+            example: 4Va2BBWKL88S4QyAgVje
+      x-code-samples:
+        $ref: './code-samples/apps/app-projects-app_project_id-batches-batch_id-unarchive.yaml'
+      responses:
+        '200':
+          description: OK
+
+  /apps:
+    get:
+      tags:
+        - app
+      parameters:
+        - name: after_id
+          in: query
+          description: The ID of the project template used for the cursor pagination.
+          required: false
+          example: 2eN4l59qL2xHB5b8Jqp6
+          schema:
+            type: string
+        - name: id_gt
+          in: query
+          description: Project templates with an ID greater than the specified value.
+          required: false
+          example: 2eN4l59qL2xHB5b8Jqp6
+          schema:
+            type: string
+        - name: id_gte
+          in: query
+          description: Project templates with an ID greater than or equal to the specified value.
+          required: false
+          example: 2eN4l59qL2xHB5b8Jqp6
+          schema:
+            type: string
+        - name: id_lt
+          in: query
+          description: Project templates with an ID smaller than the specified value.
+          required: false
+          example: 2eN4l59qL2xHB5b8Jqp6
+          schema:
+            type: string
+        - name: id_lte
+          in: query
+          description: Project templates with an ID smaller than or equal to the specified value.
+          example: 2eN4l59qL2xHB5b8Jqp6
+          required: false
+          schema:
+            type: string
+        - name: sort
+          in: query
+          description: |
+            The order and direction of sorting the results.
+
+            Available parameters:
+
+              * `id` - by ID.
+
+            You can specify multiple parameters separated by a comma.
+
+            To change the sorting direction to descending,
+            add a hyphen before the parameter. For example, `sort=-id`.
+
+            To learn how to configure sorting, see [Sorting responses](#overview--sorting-responses).
+          required: false
+          example: id
+          schema:
+            type: string
+        - name: limit
+          in: query
+          description: 'The number of objects on the page. The maximum value is **1000**.'
+          required: false
+          example: 10
+          schema:
+            type: string
+            default: 100
+        - name: lang
+          in: query
+          description: The ISO 639 language code.
+          required: false
+          example: en
+          schema:
+            type: string
+      summary: Get project templates
+      description: Returns the list of all the available project templates.
+      x-code-samples:
+        $ref: ./code-samples/apps/get-apps.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                description: The list of project templates and their properties in the `content` array.
+                items:
+                  $ref: '#/components/schemas/AppListResult'
+              examples:
+                $ref: './responses/apps/app-list.yaml'
+          description: OK
+  '/apps/{app_id}':
+    get:
+      tags:
+        - app
+      summary: Get project template by ID
+      description: |
+        Returns the detailed information about the project template with the ID specified in the request.
+
+        You can get the project template ID from the [list of project templates](#get-/apps).
+      parameters:
+        - name: app_id
+          in: path
+          description: The ID of the template for which you want to get the detailed information.
+          required: true
+          schema:
+            type: string
+            example: 2eN4l59qL2xHB5b8Jqp6
+        - name: lang
+          in: query
+          description: The ISO 639 language code.
+          required: false
+          schema:
+            type: string
+            example: en
+      x-code-samples:
+        $ref: ./code-samples/apps/get-apps-app_id.yaml
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/AppResult'
+              examples:
+                $ref: './responses/apps/app-id.yaml'
+          description: OK
+components:
+  securitySchemes:
+    api_key1:
+      type: apiKey
+      name: Authorization
+      in: header
+  schemas:
+    AppProjectListResult:
+      type: object
+      description: The list of app projects and their properties in the `content` array.
+      properties:
+        content:
+          type: array
+          items:
+            $ref: '#/components/schemas/AppProjectListItem'
+        has_more:
+          $ref: './parts/apps/additional.yaml#/components/schemas/HasMore'
+    AppProject:
+      type: object
+      description: The detailed information about the app project.
+      properties:
+        id:
+          type: string
+          example: '1'
+          description: The ID of the current project.
+        app_id:
+          type: string
+          example: 2eN4l59qL2xHB5b8Jqp6
+          description: The ID of the template with which this project is associated.
+        parent_app_project_id:
+          type: string
+          example: '2'
+          description: The ID of the project used for cloning.
+        status:
+          type: string
+          enum:
+            - ARCHIVE
+            - CREATING
+            - ERROR
+            - READY
+          description: Project statuses used when creating it asynchronously.
+        created:
+          type: string
+          format: date-time
+          description: 'The date and time when the project was created, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+        name:
+          type: string
+          example: My app-project
+          description: The project name.
+        item_price:
+          type: number
+          format: double
+          example: 0.05
+          description: The price for one item of the project.
+        parameters:
+          type: object
+          description: The project parameters.
+        errors:
+          type: array
+          description: The errors which occurred during the project creation.
+          items:
+            $ref: '#/components/schemas/ItemError'
+        read_only:
+          type: boolean
+          description: Whether the project is read-only or can be modified.
+        app:
+          $ref: '#/components/schemas/AppLightestResult'
+    AppProjectListItem:
+      type: object
+      description: The detailed information about the project.
+      properties:
+        id:
+          type: string
+          example: '1'
+          description: The ID of the current project.
+        app_id:
+          type: string
+          example: 2eN4l59qL2xHB5b8Jqp6
+          description: The ID of the template with which this project is associated.
+        parent_app_project_id:
+          type: string
+          example: xNnK4wYdlMPCQ0zPL315
+          description: The ID of the project used for cloning.
+        status:
+          type: string
+          enum:
+            - CREATING
+            - READY
+            - ARCHIVED
+            - ERROR
+          description: Project statuses used when creating it asynchronously.
+          example: CREATING
+        created:
+          type: string
+          format: date-time
+          description: 'The date and time when the project was created, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+          example: '2022-03-22T00:00:00.000Z'
+        name:
+          type: string
+          example: My app-project
+          description: The project name.
+        item_price:
+          type: number
+          format: double
+          example: 0.05
+          description: The price for one item of the project.
+        parameters:
+          type: object
+          description: The project parameters.
+          example:
+            default_language: en
+            instruction_classes:
+              - description: Check the video
+                label: Video1
+                value: video
+              - description: Check the video
+                label: Video2
+                value: video_new
+            instruction_examples:
+              - description: because they do
+                label: video
+                text: Short text describing the sample video
+                video_url: 'https://example.com'
+              - description: because
+                label: video
+                text: short text
+                video_url: 'https://example.com/video'
+            instruction_intro: Check video
+            name: New test R2G project
+            option_base_rate: true
+            option_multiple_choice: false
+            option_other: false
+            option_url_type: link
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/ItemError'
+          description: The errors which occurred during the project creation.
+        read_only:
+          type: boolean
+          description: Whether the project is read-only or can be modified.
+          example: false
+        app:
+          $ref: '#/components/schemas/AppLightestResult'
+    AppProjectCreateForm:
+      type: object
+      description: The app project that you want to create.
+      properties:
+        app_id:
+          type: string
+          description: |
+            The ID of the template that you want to use for the project
+            creation.
+          example: 2eN4l59qL2xHB5b8Jqp6
+        parent_app_project_id:
+          type: string
+          description: The ID of the project used to clone the current project from.
+          example: xNnK4wYdlMPCQ0zPL315
+        name:
+          type: string
+          description: The current project name.
+          example: My new project
+        parameters:
+          type: object
+          description: |
+            Project settings following the `param_spec` from the solution with
+            the ID specified (`app_id`).
+          example:
+            default_language: en
+            name: Product relevance project
+            instruction_classes:
+              - description: The product is relevant to the query.
+                label: Relevant
+                value: relevant
+              - description: The product is not completely relevant to the query.
+                label: Irrelevant
+                value: irrelevant
+            instruction_examples:
+              - description: The product exactly matches the query.
+                label: relevant
+                query: some search query
+                screenshot_url: 'https://example.com/1'
+              - description: The product shape matches but the product color does not.
+                label: irrelevant
+                query: other search query
+                screenshot_url: 'https://example.com/2'
+    AppResult:
+      type: object
+      description: The detailed information about the project template.
+      properties:
+        id:
+          type: string
+          description: The ID of the project template.
+        name:
+          type: string
+          description: The project template name.
+        image:
+          type: string
+          description: The image associated with the project template.
+        description:
+          type: string
+          description: The project template overview.
+        constraints_description:
+          type: string
+          description: The description of the project template limitations.
+        default_item_price:
+          type: number
+          format: double
+          description: The default processing cost per task item.
+        param_spec:
+          type: object
+          description: The specifications of the parameters for creating a project.
+        input_spec:
+          type: object
+          description: The schema of input data in Toloka format.
+        output_spec:
+          type: object
+          description: The schema of output data in Toloka format.
+        examples:
+          type: object
+          description: The examples of tasks which you can use with this project template.
+        input_format_info:
+          type: object
+          description: The information about the input data format.
+    AppLightestResult:
+      type: object
+      description: The summary information about the solution used as the project template.
+      properties:
+        id:
+          type: string
+          description: The solution ID.
+          example: J5Ep73Zrw47SA47pd64y
+        name:
+          type: string
+          description: The solution name.
+          example: Transcript of audio recordings
+    AppListItem:
+      type: object
+      description: The detailed information about the project template.
+      properties:
+        id:
+          type: string
+          description: The project template ID.
+        name:
+          type: string
+          description: The template name.
+        image:
+          type: string
+          description: The project template image.
+        description:
+          type: string
+          description: The template description.
+        default_item_price:
+          type: number
+          format: double
+          description: The default processing cost per task item.
+        examples:
+          type: array
+          items:
+            type: object
+            description: The information about the possible examples of using project templates.
+    AppListResult:
+      type: object
+      description: The list of project templates and their properties in the `content` array.
+      properties:
+        content:
+          type: array
+          description: The list of project templates and their properties in the `content` array.
+          items:
+            $ref: '#/components/schemas/AppListItem'
+        has_more:
+          $ref: './parts/apps/additional.yaml#/components/schemas/HasMore'
+    ItemListResult:
+      type: object
+      description: The list of task items and their properties in the `content` array.
+      properties:
+        content:
+          description: The list of task items and their properties in the `content` array.
+          type: array
+          items:
+            $ref: '#/components/schemas/Item'
+        has_more:
+          $ref: './parts/apps/additional.yaml#/components/schemas/HasMore'
+    Item:
+      type: object
+      description: The detailed information about the task item.
+      required:
+        - app_project_id
+        - input_data
+      properties:
+        id:
+          type: string
+          description: The item ID.
+        app_project_id:
+          type: string
+          description: The ID of the project that includes the batch with this task item.
+        batch_id:
+          type: string
+          description: The ID of the batch that includes this task item.
+          example: 4Va2BBWKL88S4QyAgVje
+        status:
+          type: string
+          description: |
+            The processing status.
+
+            - `NEW` — new,
+            - `PROCESSING` — being processed,
+            - `COMPLETED` — processing completed,
+            - `ERROR` — processing error,
+            - `CANCELLED` — processing canceled,
+            - `ARCHIVE` — item archived,
+            - `NO_MONEY` — not enough money for processing,
+            - `STOPPED` — processing stopped by the client.
+          enum:
+            - NEW
+            - PROCESSING
+            - COMPLETED
+            - ERROR
+            - CANCELLED
+            - ARCHIVE
+            - NO_MONEY
+            - STOPPED
+        input_data:
+          type: object
+          description: The task item data following the project template schema.
+        output_data:
+          type: object
+          description: The result of processing.
+        errors:
+          type: array
+          items:
+            $ref: '#/components/schemas/ItemError'
+        created_at:
+          type: string
+          format: date-time
+          description: 'The date and time when the task item was created, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+        started_at:
+          type: string
+          format: date-time
+          description: 'The date and time when the task item processing started, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+        finished_at:
+          type: string
+          format: date-time
+          description: 'The date and time when the task item processing was completed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+    ItemsBulkCreateResponse:
+      type: array
+      description: The array of the uploaded task items.
+      items:
+        type: string
+        description: The array of the uploaded task items.
+      example:
+        - "1eW0kvg27xquzqwneDk4"
+        - "ABAR4wQ7n1WI3qxWAkQy"
+    ItemCreateForm:
+      type: object
+      description: A task item with data.
+      required:
+        - input_data
+      properties:
+        batch_id:
+          type: string
+          description: The ID of the batch to which you want to add the item.
+          example: 4Va2BBWKL88S4QyAgVje
+        input_data:
+          type: object
+          description: Object data according to `input_spec` of the solution.
+          example:
+            id: '40'
+            query: toloka kit
+            website_url: 'https://toloka.ai/docs/toloka-kit'
+        force_new_original:
+          type: boolean
+          default: false
+          example: true
+          description: Whether to enable or disable the deduplication for the item in the request. When set to `true`, the item will be re-labeled regardless of whether pre-labeled duplicates exist.
+    ItemsBulkCreateForm:
+      type: object
+      description: 'Task items with data. No more than **10,000** items per request.'
+      required:
+        - items
+      properties:
+        batch_id:
+          type: string
+          description: The ID of the batch to which you want to add the items.
+          example: 4Va2BBWKL88S4QyAgVje
+        items:
+          type: array
+          description: The list of the items to add.
+          example:
+            - id: '20'
+              query: toloka kit
+              website_url: 'https://toloka.ai/docs/toloka-kit'
+            - id: '21'
+              query: crowd kit
+              website_url: 'https://toloka.ai/docs/crowd-kit'
+          items:
+            type: object
+            description: Object data according to the `input_spec` of the solution.
+        force_new_original:
+          type: boolean
+          default: false
+          example: true
+          description: Whether to enable or disable the deduplication for all the items in the request. When set to `true`, all the items will be re-labeled regardless of whether pre-labeled duplicates exist.
+    BatchListResult:
+      type: object
+      description: The list of batches and their properties in the `content` array.
+      properties:
+        content:
+          description: The list of batches and their properties in the `content` array.
+          type: array
+          items:
+            $ref: '#/components/schemas/Batch'
+        has_more:
+          $ref: './parts/apps/additional.yaml#/components/schemas/HasMore'
+    BatchSyncResponse:
+      type: object
+      description: The response to the request to start sync batch processing.
+      properties:
+        batch:
+          $ref: '#/components/schemas/Batch'
+        items:
+          type: array
+          items:
+            $ref: '#/components/schemas/Item'
+    Batch:
+      type: object
+      description: The detailed information about the batch.
+      properties:
+        id:
+          type: string
+          description: The batch ID.
+        app_project_id:
+          type: string
+          description: The project ID.
+        status:
+          type: string
+          description: |
+            The state of the batch, calculated based on the states of items
+            comprising it.
+          enum:
+            - NEW
+            - PROCESSING
+            - COMPLETED
+            - ERROR
+            - CANCELLED
+            - NO_MONEY
+            - ARCHIVE
+            - LOADING
+            - STOPPING
+            - STOPPED
+        name:
+          type: string
+          description: The batch name.
+        item_count:
+          type: integer
+          description: The number of items in the batch.
+        item_price:
+          type: number
+          format: double
+          description: The cost of processing per task item in a batch.
+        cost:
+          type: number
+          format: double
+          description: The cost of processing per batch.
+        cost_of_processed:
+          type: number
+          format: double
+          description: The cost of the already processed task items.
+        created_at:
+          type: string
+          format: date-time
+          description: 'The date and time when the batch was created, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+        started_at:
+          type: string
+          format: date-time
+          description: 'The date and time when batch processing started, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+        finished_at:
+          type: string
+          format: date-time
+          description: 'The date and time when batch processing was completed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+        read_only:
+          type: boolean
+        last_items_import:
+          $ref: '#/components/schemas/ItemImport'
+        confidence_avg:
+          type: number
+          format: double
+          description: The average labeling quality.
+        items_processed_count:
+          type: integer
+          description: The number of labeled items.
+        eta:
+          type: string
+          format: date-time
+          description: 'The expected date and time when batch processing will be completed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
+        items_per_state:
+          type: object
+          description: The statistics on the number of items in each state.
+        priority_order:
+          type: string
+          description: The batch priority. `ONE` is the highest value. The batch items with this `priority_order` value will be sent for labeling first in the queue.
+          enum:
+            - ONE
+            - TWO
+            - THREE
+            - FOUR
+            - FIVE
+          default: FIVE
+          example: FIVE
+    BatchCreateForm:
+      type: object
+      description: The batch to be created with the list of the task items.
+      properties:
+        name:
+          type: string
+          description: The batch name.
+          example: Test batch
+        items:
+          type: array
+          example:
+            - id: '30'
+              query: toloka kit
+              website_url: 'https://toloka.ai/docs/toloka-kit'
+            - id: '31'
+              query: crowd kit
+              website_url: 'https://toloka.ai/docs/crowd-kit'
+          items:
+            type: object
+            description: |
+              Task item data following the project template schema
+              (`input_spec`). The maximum value is **10,000** items per request.
+        priority_order:
+          type: string
+          description: The batch priority. `ONE` is the highest value. The batch items with this `priority_order` value will be sent for labeling first in the queue.
+          enum:
+            - ONE
+            - TWO
+            - THREE
+            - FOUR
+            - FIVE
+          default: FIVE
+          example: ONE
+        force_new_original:
+          type: boolean
+          default: false
+          example: true
+          description: Whether to enable or disable the deduplication for all the items in the request. When set to `true`, all the items will be re-labeled regardless of whether pre-labeled duplicates exist.
+    BatchCreateSyncForm:
+      type: object
+      description: The batch to be created with the list of the task items.
+      properties:
+        name:
+          type: string
+          description: The batch name.
+          example: Test batch
+        items:
+          type: array
+          example:
+            - id: '30'
+              query: toloka kit
+              website_url: 'https://toloka.ai/docs/toloka-kit'
+            - id: '31'
+              query: crowd kit
+              website_url: 'https://toloka.ai/docs/crowd-kit'
+          items:
+            type: object
+            description: |
+              Task item data following the project template schema
+              (`input_spec`). The maximum value is **10,000** items per request.
+    BatchPatchForm:
+      type: object
+      description: The parameters of the batch properties update.
+      properties:
+        name:
+          type: string
+          description: The batch name.
+          example: Test batch
+        priority_order:
+          type: string
+          description: The batch priority. `ONE` is the highest value. The batch items with this `priority_order` value will be sent for labeling first in the queue. If the priority is not specified in the request the current `priority_order` value will not change.
+          enum:
+            - ONE
+            - TWO
+            - THREE
+            - FOUR
+            - FIVE
+          default: FIVE
+          example: THREE
+    ItemImport:
+      type: object
+      description: The meta information on asynchronous loading operation (possible via UI).
+      properties:
+        id:
+          type: string
+        records_count:
+          type: integer
+          description: The number of items in the loading operation.
+        records_processed:
+          type: integer
+          description: The number of successfully loaded items in the loading operation.
+        errors:
+          type: object
+          description: Errors during the loading operation.
+    RequestError:
+      type: object
+      description: The error which occurred while sending the request.
+      required:
+        - request_id
+        - code
+        - message
+      properties:
+        request_id:
+          type: string
+          example: 337d68d1-974d-42b1-a2d0-6234f6373eed
+          description: |
+            The internal ID of the HTTP request where the error occurred. Specify it when contacting support.
+        code:
+          type: string
+          description: The error string code.
+          example: DOES_NOT_EXIST
+        message:
+          type: string
+          description: The detailed description of the error.
+          example: The object doesn't exist
+        payload:
+          type: object
+          description: |
+            Additional information about the error. It has a different
+            structure for different errors.
+          nullable: true
+          example:
+            instruction_class: dog
+            instruction_field: example
+    ItemError:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: string
+          description: The error string code.
+          example: DOES_NOT_EXIST
+        message:
+          type: string
+          description: The detailed description of the error.
+          example: The object doesn't exist
+        payload:
+          type: object
+          description: |
+            The additional information about the error. It has a different
+            structure for different errors.
+          nullable: true
+          example:
+            instruction_class: dog
+            instruction_field: example

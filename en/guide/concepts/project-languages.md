@@ -107,3 +107,5 @@ Interface elements can only be translated in the Template Builder editor.
     ![](../_images/keys-translated.png)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

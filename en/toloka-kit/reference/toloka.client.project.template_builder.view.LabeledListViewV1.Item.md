@@ -1,5 +1,5 @@
 # Item
-`toloka.client.project.template_builder.view.LabeledListViewV1.Item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L258)
+`toloka.client.project.template_builder.view.LabeledListViewV1.Item` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L279)
 
 ```python
 Item(
@@ -12,13 +12,13 @@ Item(
 )
 ```
 
-Item.
+A labeled list item.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>List item content.</p>
-`label`|**Optional\[Any\]**|<p>A label displayed next to a list item.</p>
-`center_label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If true, a label is center-aligned relative to the content of a list item (content). Use it if the list consists of large items, such as images or multi-line text. By default, false (the label is aligned to the top of the content block).</p>
-`hint`|**Optional\[Any\]**|<p>A pop-up hint displayed next to a label.</p>
+`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The content of the item.</p>
+`label`|**Optional\[Any\]**|<p>An item label.</p>
+`center_label`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Label vertical alignment.</p> <ul> <li>`True` — The label is centered.</li> <li>`False` — The label is aligned to the top of the item content.</li> </ul> <p>Default value: `False`.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>

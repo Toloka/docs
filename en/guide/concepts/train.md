@@ -189,7 +189,7 @@ If these buttons don't work, make sure that all the main pools that the training
 
 ## For developers {#for-developers}
 
-- [Toloka API: Training](../../api/concepts/training.md)
+- [Toloka API: Training](https://toloka.ai/docs/api/api-reference/#tag--training)
 - [Toloka-Kit: Creating training](../../toloka-kit/reference/toloka.client.TolokaClient.create_training.md)
 
 ## Troubleshooting {#troubleshooting}

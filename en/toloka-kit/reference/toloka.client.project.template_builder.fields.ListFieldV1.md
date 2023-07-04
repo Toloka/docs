@@ -1,5 +1,5 @@
 # ListFieldV1
-`toloka.client.project.template_builder.fields.ListFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L306)
+`toloka.client.project.template_builder.fields.ListFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L296)
 
 ```python
 ListFieldV1(
@@ -19,31 +19,25 @@ ListFieldV1(
 )
 ```
 
-A component that allows a Toloker to add and remove list items, such as text fields to fill in.
+A component that allows a Toloker to add and remove list items, such as text fields.
 
 
-This way you can allow a Toloker to give multiple answers to a question.
+Use RelativeData(toloka.client.project.template_builder.data.RelativeData.md) in list items,
+otherwise all list items will change the same data.
 
-The list items can contain any component, including a list of other components. For example, this allows you to
-create a table where you can add and delete rows.
-
-To add a new list item, the Toloker clicks the button. To remove an item, they click on the x on the right (it appears
-when hovering over a list item).
-
-To prevent a Toloker from adding too many list items, set the maximum list length. You can also use the editable
-property to block Tolokers from changing a component, like when a certain event occurs.
+For more information, see [field.list](https://toloka.ai/docs/template-builder/reference/field.list).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`render`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Interface template for list items, such as a text field. In nested field.* components, use data.relative for recording responses, otherwise all the list items will have the same value.</p>
-`button_label`|**Optional\[Any\]**|<p>Text on the button for adding list items.</p>
-`direction`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListDirection](toloka.client.project.template_builder.base.ListDirection.md)\]\]**|<p>The direction of the list.</p>
-`editable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>A property that indicates whether adding and removing list items is allowed. Set false to disable. By default it is `True` (allowed).</p>
-`max_length`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Maximum number of list items.</p>
-`size`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListSize](toloka.client.project.template_builder.base.ListSize.md)\]\]**|<p>The distance between list items. Acceptable values in ascending order: s, m (default).</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`render`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A template for the list item.</p>
+`button_label`|**Optional\[Any\]**|<p>A text on a button that adds the list item.</p>
+`direction`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListDirection](toloka.client.project.template_builder.base.ListDirection.md)\]\]**|<p>The direction of the list:</p> <ul> <li>`horizontal`</li> <li>`vertical`</li> </ul>
+`editable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — A Toloker can add or remove list items.</li> <li>`False` — The list can&#x27;t be changed.</li> </ul> <p>Default value: `True`.</p>
+`max_length`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The maximum number of list items.</p>
+`size`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [ListSize](toloka.client.project.template_builder.base.ListSize.md)\]\]**|<p>The distance between list items:</p> <ul> <li>`s` — Small.</li> <li>`m` — Medium.</li> </ul> <p>Default value: `m`.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

@@ -10,8 +10,8 @@ To allow selecting multiple options, use the [field.checkbox-group](field.checkb
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.select" | Set component type ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `type`<span style="color: red">\*</span> | "field.select" | Set component type. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `hint` | _string_ | Hint text. ||
 || `options`<span style="color: red">\*</span> | _array_ | Options to choose from. ||

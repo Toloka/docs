@@ -492,3 +492,5 @@ pre {
 [Другой вопрос](support.md#help)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

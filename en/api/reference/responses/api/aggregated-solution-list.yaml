@@ -1,0 +1,10 @@
+success:
+  description: The list of aggregation results and their properties in the `items` array.
+  value:
+    items:
+    - confidence: 1
+      pool_id: '36502086'
+      task_id: 00022cfa46--637cf3fb6e13181a0164e7e6
+      output_values:
+        result: cat
+    has_more: true

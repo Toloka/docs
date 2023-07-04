@@ -1,0 +1,77 @@
+single_task_suite_body:
+  description: The task suite that you want to create.
+  summary: Single task suite
+  value:
+    pool_id: '1238218'
+    tasks:
+    - input_values:
+        image_url: https://example.com/image1.png
+      known_solutions:
+      - output_values:
+          color: black
+        correctness_weight: 0.95
+      - output_values:
+          color: gray
+        correctness_weight: 0.7
+      message_on_unknown_solution: The elephant is black
+    - input_values:
+        image_url: https://example.com/image2.png
+      known_solutions:
+      - correctness_weight: 1
+        output_values:
+          color: white
+      message_on_unknown_solution: The elephant is white
+    infinite_overlap: false
+    reserved_for: []
+    unavailable_for: []
+    issuing_order_override: 3
+multiple_task_suites_body:
+  description: The set of task suites that you want to create.
+  summary: Multiple task suites
+  value:
+    - pool_id: '1238218'
+      tasks:
+      - input_values:
+          image_url: https://example.com/image1.png
+        known_solutions:
+        - output_values:
+            color: black
+          correctness_weight: 0.95
+        - output_values:
+            color: gray
+          correctness_weight: 0.7
+        message_on_unknown_solution: The elephant is black
+      - input_values:
+          image_url: https://example.com/image2.png
+        known_solutions:
+        - correctness_weight: 1
+          output_values:
+            color: white
+        message_on_unknown_solution: The elephant is white
+      infinite_overlap: false
+      reserved_for: []
+      unavailable_for: []
+      issuing_order_override: 3
+    - pool_id: '1238219'
+      tasks:
+      - input_values:
+          image_url: https://example.com/image3.png
+        known_solutions:
+        - output_values:
+            color: black
+          correctness_weight: 0.95
+        - output_values:
+            color: gray
+          correctness_weight: 0.7
+        message_on_unknown_solution: The elephant is black
+      - input_values:
+          image_url: https://example.com/image4.png
+        known_solutions:
+        - correctness_weight: 1
+          output_values:
+            color: white
+        message_on_unknown_solution: The elephant is white
+      infinite_overlap: false
+      reserved_for: []
+      unavailable_for: []
+      issuing_order_override: 3

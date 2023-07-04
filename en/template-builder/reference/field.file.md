@@ -14,8 +14,8 @@ In the task review mode, the uploaded images will appear automatically. You can 
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.file" | Set component type ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `type`<span style="color: red">\*</span> | "field.file" | Set component type. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `accept` | _array_ | A list of file types that will be suggested to a Toloker when uploading. By default, you can upload any files.
 
@@ -30,4 +30,3 @@ Specify the types in the [MIME Type](https://developer.mozilla.org/en-US/docs/We
   |#
 
 {% include [contact-support](../_includes/contact-support.md) %}
-

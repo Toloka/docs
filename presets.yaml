@@ -138,5 +138,5 @@ default:
   yadisk-client: https://disk.yandex.com/client/disk
   yandex-cloud-free-trial: https://cloud.yandex.com/en-ru/docs/free-trial/
   yandex-id: https://id.yandex.com/about
-  yandex-toloka: https://platform.toloka.ai/for-requesters/
+  yandex-toloka: https://platform.toloka.ai/auth?role=REQUESTER
   yandex-tts: https://cloud.yandex.com/en-ru/docs/storage/operations/buckets/lifecycles

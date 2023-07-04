@@ -14,8 +14,8 @@ You can disable labeling using the `disabled` property. For example, use this if
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.image-annotation" | Set component type ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `type`<span style="color: red">\*</span> | "field.image-annotation" | Set component type. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | Determines whether adding and deleting areas is allowed:
 

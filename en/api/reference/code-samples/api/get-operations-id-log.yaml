@@ -1,0 +1,52 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X GET 'https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    operation_log = toloka_client.get_operation_log('5c04458e-63c1-46c1-ba0d-6f0756a5358b')
+    for entry in operation_log:
+      if not entry.success:
+        print(entry)
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+    }
+    response = requests.get(url, headers=headers)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'GET',
+      'url': 'https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      }
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.get("https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .asString();

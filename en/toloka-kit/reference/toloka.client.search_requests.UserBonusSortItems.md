@@ -5,17 +5,17 @@
 UserBonusSortItems(self, items=None)
 ```
 
-Keys for sorting rewards in search results.
+Keys for sorting bonuses in search results.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.UserBonusSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — The ID of a reward.</li> <li>`&#x27;created&#x27;` — The date of granting a reward.</li> </ul>
+`items`|**Optional\[List\[[SortItem](toloka.client.search_requests.UserBonusSortItems.SortItem.md)\]\]**|<p>A list of sorting keys. Supported values:</p> <ul> <li>`&#x27;id&#x27;` — The ID of a bonus.</li> <li>`&#x27;created&#x27;` — The date of granting a bonus.</li> </ul>
 
 **Examples:**
 
-The example shows how to find rewards sorted by granting date in descending order. Rewards with equal granting dates are sorted by IDs in ascending order.
+The example shows how to find bonuses sorted by granting date in descending order. Bonuses with equal granting dates are sorted by IDs in ascending order.
 
 ```python
 sort = toloka.client.search_requests.UserBonusSortItems(['-created', 'id'])

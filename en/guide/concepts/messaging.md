@@ -4,7 +4,7 @@ In Toloka, you can exchange information with Tolokers through messages and recei
 
 ## Message types
 
-There are several types of messages. To switch between them, select one of the following on the right of the screen:
+There are several types of messages. To switch between them, select one of the following options in the upper-left part of the page:
 
 - **Inbox**: Messages you received.
 
@@ -59,7 +59,7 @@ If the issue is related to how the platform works in general (such as money with
 
 #### In the interface
 
-1. [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
+1. (Optional, required if you want to send a message to a group of Tolokers with a certain skill) [Assign a skill](nav-assign.md) to everyone who completed your tasks. The skill should be hidden.
 
 1. Go to the [Messages]({{ messages }}) page and send notifications to Tolokers with the skill. To do this, click **Contact** → **Group of Tolokers** → **+ Add filter**.
 
@@ -82,7 +82,7 @@ curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
      -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
 ```
 
-Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -102,7 +102,7 @@ Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/mess
 
 ## Technical limitations
 
-- If there are more than 1000 recipients in the mailing list, an error may occur when sending the message. To avoid this, use the [API](../../api/concepts/messages.md).
+- If there are more than 1000 recipients in the mailing list, an error may occur when sending the message. To avoid this, use the [API](https://toloka.ai/docs/api/api-reference/#tag--message-thread).
 
 - Send your emails in small batches. To do this, use [filters](filters.md).
 
@@ -131,7 +131,7 @@ To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as
 
 ## For developers {#for-developers}
 
-- [Toloka API: Messages for Tolokers](../../api/concepts/messages.md)
+- [Toloka API: Messages for Tolokers](https://toloka.ai/docs/api/api-reference/#tag--message-thread)
 - [Toloka-Kit recipe: Send messages](../../toloka-kit/recipes/send-messages.md)
 - [Toloka-Kit recipe: Get list of message threads](../../toloka-kit/recipes/get-message-threads.md)
 - [Toloka-Kit recipe: Reply to message thread](../../toloka-kit/recipes/reply-to-message-thread.md)

@@ -1,5 +1,5 @@
 # GroupViewV1
-`toloka.client.project.template_builder.view.GroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L176)
+`toloka.client.project.template_builder.view.GroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L183)
 
 ```python
 GroupViewV1(
@@ -13,13 +13,20 @@ GroupViewV1(
 )
 ```
 
-Groups components visually into framed blocks.
+A view with a frame.
+
+
+For more information, see [view.group](https://toloka.ai/docs/template-builder/reference/view.group).
+
+    Attributes:
+        content: A content.
+        label: A header.
+        hint: A hint. To insert a line break in the hint, use `\n`.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Content of a group block.</p>
-`hint`|**Optional\[Any\]**|<p>Explanation of the group heading. To insert a new line, use .</p>
-`label`|**Optional\[Any\]**|<p>Group heading.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

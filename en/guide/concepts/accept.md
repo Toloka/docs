@@ -2,7 +2,7 @@
 
 You started a pool with [manual review](offline-accept.md), and the Tolokers completed all your tasks. What next?
 
-- Review the Tolokers' responses before the end of the **Review period** that you specified. At the end of the period, unchecked responses will be accepted automatically.
+- Review the Tolokers' responses before the end of the **Review period in days** that you specified. At the end of the period, unchecked responses will be accepted automatically.
 
 - If a Toloker didn't complete the task well, reject their response.
 
@@ -125,7 +125,7 @@ Place a separate task for Tolokers to review the responses. To learn how to do i
 
 {% note tip "How to work via Toloka API" %}
 
-To change the status of the received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the task suite assignment that you want to accept or reject:
+To change the status of the received responses using Toloka API, send a `PATCH` request to the resource `/assignments/{id}`. Use the `id` path parameter to specify the assignment that you want to accept or reject:
 
 ```bash
 curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a7842a596ac0a' \
@@ -134,7 +134,7 @@ curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a784
      -d '{"status":"ACCEPTED", "public_comment":"OK"}'
 ```
 
-Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -188,7 +188,7 @@ d) the result of the Task does not comply with the Instruction.
 
 ## For developers {#for-developers}
 
-- [Toloka API: Checking completed tasks](../../api/concepts/accept.md)
+- [Toloka API: Checking completed tasks](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-)
 - [Toloka-Kit recipe: Accept responses](../../toloka-kit/recipes/accept-responses.md)
 - [Toloka-Kit recipe: Reject responses](../../toloka-kit/recipes/reject-responses.md)
 
@@ -205,3 +205,5 @@ d) the result of the Task does not comply with the Instruction.
 {% include [faq-reject-part](../_includes/faq/result-questions/reject-part.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

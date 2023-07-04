@@ -1,5 +1,5 @@
 # RejectedAssignmentsCount
-`toloka.client.conditions.RejectedAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/conditions.py#L274)
+`toloka.client.conditions.RejectedAssignmentsCount` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/conditions.py#L274)
 
 ```python
 RejectedAssignmentsCount(

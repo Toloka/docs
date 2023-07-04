@@ -24,9 +24,9 @@ To filter Tolokers without a skill set the `"operator": "EQ"` parameter and excl
 
 #|
 || Key parameter | Value description ||
-|| **integer**
+|| _integer_
 
-Skill ID. | **float**
+Skill ID. | _float_
 
 Fractional value of the skill. Minimum — 0, maximum — 100.
 
@@ -43,5 +43,6 @@ Value of "operator":
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/filters.md)
+- [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

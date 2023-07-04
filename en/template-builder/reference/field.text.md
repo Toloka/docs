@@ -8,8 +8,8 @@ A field for entering a short text, not more than a line. To add a field for ente
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.text" | Set component type ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `type`<span style="color: red">\*</span> | "field.text" | Set component type. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `disabled` | _boolean_ | If `true`, editing is not available. ||
 || `hint` | _string_ | Hint text. ||

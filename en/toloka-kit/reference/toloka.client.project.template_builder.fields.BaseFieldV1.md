@@ -1,5 +1,5 @@
 # BaseFieldV1
-`toloka.client.project.template_builder.fields.BaseFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L59)
+`toloka.client.project.template_builder.fields.BaseFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L59)
 
 ```python
 BaseFieldV1(
@@ -13,13 +13,16 @@ BaseFieldV1(
 )
 ```
 
-Fields for entering data, such as a text field or drop-down list.
+A base class for input data fields.
+
+
+Input fields are used to get data from Tolokers.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

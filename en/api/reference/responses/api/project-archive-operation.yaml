@@ -1,0 +1,13 @@
+success:
+  description: The information about the project archiving progress.
+  value:
+    id: 57068577e4b0bf7b07a0256f
+    type: PROJECT.ARCHIVE
+    status: SUCCESS
+    submitted: '2022-04-07T16:06:15.902'
+    started: '2022-04-07T16:06:15.902'
+    finished: '2022-04-07T16:06:15.902'
+    progress: 100
+    parameters:
+      project_id: '1'
+    details: {}

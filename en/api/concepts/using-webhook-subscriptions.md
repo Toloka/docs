@@ -1,6 +1,6 @@
 # Notification format
 
-When an event that a [subscription is created](put-webhook-subscriptions.md) for occurs, a notification is sent to the URL specified in the subscription. It will contain all data about the object as of the event time.
+When an event that a [subscription is created](https://toloka.ai/docs/api/api-reference/#put-/webhook-subscriptions) for occurs, a notification is sent to the URL specified in the subscription. It will contain all data about the object as of the event time.
 
 Notifications are sent in JSON format.
 
@@ -14,7 +14,7 @@ Notifications are sent in JSON format.
 }
 ```
 
-Data included in a notification depends on the [event type](./put-webhook-subscriptions.md#event).
+Data included in a notification depends on the [event type](https://toloka.ai/docs/api/api-reference/#put-/webhook-subscriptions#event).
 
 If the **secret_key** parameter is specified when creating a subscription, an additional header — **Toloka-Signature** — appears in the event notification headers. It confirms that the requests were sent via the Toloka API. For more information, see [Event authentication](authentication.md).
 
@@ -34,25 +34,25 @@ If the **secret_key** parameter is specified when creating a subscription, an ad
 
 #|
 || Parameter | Overview ||
-|| **uuid** | **string**
+|| `uuid` | _string_
 
 Unique event ID. ||
-|| **event_time** | **string**
+|| `event_time` | _string_
 
 Time when the event occurs. ||
-|| **project_id** | **string**
+|| `project_id` | _string_
 
 ID of the project that the pool was created for. ||
-|| **pool_id** | **string**
+|| `pool_id` | _string_
 
 ID of the pool that the subscription was created for. ||
-|| **close_reason** | **string**
+|| `close_reason` | _string_
 
 Reason for closing the pool. ||
-|| **webhook_subscription_id** | **string**
+|| `webhook_subscription_id` | _string_
 
 ID of the subscription. ||
-|| **type** | **string**
+|| `type` | _string_
 
 Event type.
 
@@ -76,28 +76,28 @@ Possible value: `POOL_CLOSED` — The pool is closed. ||
 
 #|
 || Parameter | Overview ||
-|| **uuid** | **string**
+|| `uuid` | _string_
 
 Unique event ID. ||
-|| **event_time** | **string**
+|| `event_time` | _string_
 
 Time when the event occurs. ||
-|| **project_id** | **string**
+|| `project_id` | _string_
 
 ID of the project that the pool was created for. ||
-|| **pool_id** | **string**
+|| `pool_id` | _string_
 
 ID of the pool that the subscription was created for. ||
-|| **task_suite_id** | **string**
+|| `task_suite_id` | _string_
 
 ID of a task suite. ||
-|| **assignment_id** | **string**
+|| `assignment_id` | _string_
 
-ID of the task suite assignment to a Toloker. ||
-|| **webhook_subscription_id** | **string**
+ID of the assignment to a Toloker. ||
+|| `webhook_subscription_id` | _string_
 
 ID of the subscription. ||
-|| **type** | **string**
+|| `type` | _string_
 
 Event type.
 
@@ -133,36 +133,36 @@ Acceptable values:
 
 #|
 || Parameter | Overview ||
-|| **uuid** | **string**
+|| `uuid` | _string_
 
 Unique event ID. ||
-|| **event_time** | **string**
+|| `event_time` | _string_
 
 Time when the event occurs. ||
-|| **project_id** | **string**
+|| `project_id` | _string_
 
 ID of the project that the pool was created for. ||
-|| **pool_id** | **string**
+|| `pool_id` | _string_
 
 ID of the pool that the subscription was created for. ||
-|| **task_id** | **string**
+|| `task_id` | _string_
 
 Task ID. ||
-|| **confidence** | **integer**
+|| `confidence` | _integer_
 
 Confidence in the aggregate response. ||
-|| **webhook_subscription_id** | **string**
+|| `webhook_subscription_id` | _string_
 
 ID of the subscription. ||
-|| **type** | **string**
+|| `type` | _string_
 
 Event type.
 
 Possible value: `DYNAMIC_OVERLAP_COMPLETED` — An aggregated score appeared after dynamic overlap. ||
-|| **assignment_ids[]** | **array of strings**
+|| `assignment_ids[]` | _array of strings_
 
-IDs of task suite assignments to Tolokers. ||
-|| **output_values[]** | **array of objects**
+IDs of assignments to Tolokers. ||
+|| `output_values[]` | _array of objects_
 
 Output data fields that contain the task text (`field_one`) and response. ||
 |#

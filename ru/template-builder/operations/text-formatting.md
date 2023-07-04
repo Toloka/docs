@@ -156,3 +156,5 @@ With a reference later in the document defining the URL location:
 ```
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

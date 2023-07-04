@@ -62,7 +62,7 @@ To learn about pools and their settings, see [Pool](pool-main.md).
 
 ## Task {#task}
 
-A task is created for a single data item that requires labeling, like a photo to classify, or a comment to review.
+A task is created for a single data unit that requires labeling, like a photo to classify, or a comment to review.
 
 In Toloka, there are three types of tasks: general, training, and control tasks. General tasks are the tasks with the actual data you want to get labeled. Training tasks have predefined answers and hints for Tolokers, which help them learn how to do the task correctly. Control tasks have predefined answers, used to check whether Tolokers answer correctly. You need to create training tasks and control tasks using actual data so that they are relevant to your project.
 
@@ -86,7 +86,7 @@ To learn more, see [How Tolokers see pools](pool-main.md).
 
 ## Toloka API and SDK {#api}
 
-If you need to post similar tasks on a regular basis, you can automate working with Toloka by using the [Toloka API](../../api/index.md) and [Python SDK](../../toloka-kit/python-sdk.md).
+If you need to post similar tasks on a regular basis, you can automate working with Toloka by using the [Toloka API](https://toloka.ai/docs/api/api-reference/) and [Python SDK](../../toloka-kit/python-sdk.md).
 
 The Toloka API has some features that are not yet available in the web interface. For example, you can use the API to specify overlap for individual tasks and add multiple correct responses to control tasks.
 
@@ -106,3 +106,5 @@ You can use the Python SDK to integrate the Toloka API into applications written
 {% include [faq-start-new-project](../_includes/faq/register-and-start/start-new-project.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

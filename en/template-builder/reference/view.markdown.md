@@ -40,7 +40,7 @@ Links with Markdown are appended with `target="_blank"` (the link opens in a new
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.markdown" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.markdown" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `content` | _string_ | Text in Markdown. ||
 || `hint` | _string_ | Hint text. ||
@@ -48,3 +48,5 @@ Links with Markdown are appended with `target="_blank"` (the link opens in a new
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

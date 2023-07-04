@@ -14,8 +14,8 @@ You can set the following map properties: scale, position of the map center, lab
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "field.map" | Set component type ||
-|| `data`<span style="color: red">\*</span> | _writable_ | Data with values that will be processed or changed. ||
+|| `type`<span style="color: red">\*</span> | "field.map" | Set component type. ||
+|| `data`<span style="color: red">\*</span> | _writable_ | {% include [toloka-tb-source-data-with-values](../_includes/toloka-tb-source/id-toloka-tb-source/data-with-values.md) %} ||
 || `label` | _string_ | Label above the component. ||
 || `center`<span style="color: red">\*</span> | _string_ | Determines the position of the map center. Specify the coordinates in the string format, for example, "29.748713,-95.404287", or use the [data.location](data.location.md) component to set the center of the map to the Toloker's current position. ||
 || `editableMarkerLabel` | _string_ | The label for the marker that Toloker places or edits ||

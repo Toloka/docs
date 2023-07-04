@@ -10,7 +10,7 @@ This component is available in property values with the `string` type, for examp
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "helper.text-transform" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "helper.text-transform" | Set component type. ||
 || `data`<span style="color: red">\*</span> | _any_ | The text string in which you want to change the case. ||
 || `transformation`<span style="color: red">\*</span> | _string_ | Conversion mode:
 

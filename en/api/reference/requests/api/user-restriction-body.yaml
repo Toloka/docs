@@ -1,0 +1,8 @@
+user_restriction_body:
+  description: The pool that you want to create.
+  value:
+    scope: PROJECT
+    user_id: f25a5f41-94e8-49bf-977f-3611087a16b3
+    project_id: 10
+    private_comment: Many mistakes
+    will_expire: '2030-03-28T18:08:07'

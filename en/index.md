@@ -79,7 +79,8 @@ h3 {
 <div class="grid-container">
     <div class="grid-item">
         <h3>REST API</h3>
-        <p><a href="api/">Toloka API</a></p>
+        <p><a href="https://toloka.ai/docs/api/api-reference/">Toloka API</a></p>
+        <p><a href="https://toloka.ai/docs/api/apps-reference/">Apps API</a></p>
     </div>
     <div class="grid-item">
         <h3>Python SDK</h3>

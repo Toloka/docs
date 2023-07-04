@@ -1,5 +1,5 @@
 # Interlocutor
-`toloka.client.message_thread.Interlocutor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/message_thread.py#L47)
+`toloka.client.message_thread.Interlocutor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/message_thread.py#L47)
 
 ```python
 Interlocutor(
@@ -11,12 +11,12 @@ Interlocutor(
 )
 ```
 
-Information about the sender or recipient.
+Information about a message sender or recipient.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`id`|**Optional\[str\]**|<p>ID of the sender or recipient.</p>
-`role`|**Optional\[[InterlocutorRole](toloka.client.message_thread.Interlocutor.InterlocutorRole.md)\]**|<p>Role of the sender or recipient in Toloka.</p>
-`myself`|**Optional\[bool\]**|<p>Marks a sender or recipient with your ID. If the ID belongs to you, the value is `True`.</p>
+`id`|**Optional\[str\]**|<p>The ID of the sender or recipient.</p>
+`role`|**Optional\[[InterlocutorRole](toloka.client.message_thread.Interlocutor.InterlocutorRole.md)\]**|<p>The role in Toloka.</p>
+`myself`|**Optional\[bool\]**|<p>A flag that is set to `True` when the ID is yours.</p>

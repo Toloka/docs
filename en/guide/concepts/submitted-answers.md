@@ -25,11 +25,11 @@ All fields in this rule are required. If you don't fill in at least one of them,
 {% endnote %}
 
 #|
-||**Field**  | **Overview** ||
+||**Field** | **Overview**||
 ||**If** | A condition for performing the action in the **then** field:
 
 - **submitted task suites** — The number of task suites in the pool completed by the Toloker.||
-||**then** | Action to perform for the condition **If**:
+||**then** | Action to perform for the **If** condition:
 
 - **suspend** — Suspend the Toloker's access to the pool for the specified number of days. Only the requester can view the reason.
 
@@ -74,3 +74,5 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 {% include [faq-two-text-versions](../_includes/faq/pool-setup/two-text-versions.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

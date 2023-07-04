@@ -6,15 +6,19 @@ In this [project](../../glossary.md#project), Tolokers compare images of shoes w
 
 To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
-#### In the interface:
+In the interface:
 
-1. Choose a template:
+1. Choose a preset:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
-    1. Select the **Image comparison (Side-by-side)** template.
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
-1. Provide general information:
+    1. Click **Do it myself**.
+
+    1. Select the **Image comparison (Side-by-side)** preset.
+
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
     1. In the **Name for Tolokers** field, enter `Which object is similar to the original one?`.
 
@@ -22,9 +26,7 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     1. Optionally add a **Private comment**.
 
-    1. Save the changes.
-
-1. Edit the task interface in the editor you selected:
+1. Edit the [task interface](../../glossary.md#task-interface) in the editor you selected:
 
    {% list tabs %}
 
@@ -231,23 +233,17 @@ To create a project, open [Toloka for requesters]({{ yandex-toloka }}).
 
     {% endlist %}
 
-1. Save the changes.
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-1. In **Instructions for Tolokers**, enter the [instructions](../../glossary.md#instructions).
+    Instructions text:
 
-    1. **Instructions:**
+    ```plaintext
+    Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
+    Rely on your own sense of style, but also remember that the shoes look alike if
+    they are the same color, fabric, length, and style.
+    ```
 
-        ```plaintext
-        Look at 2 pictures with different shoes and decide which pair of shoes looks most similar to the original pair.
-        Rely on your own sense of style, but also remember that the shoes look alike if
-        they are the same color, fabric, length, and style.
-        ```
-
-    1. Save the changes.
-
-1. To go back to the **Projects** page, click **Finish editing**.
-
-Learn more about working with the project in the [Project](../concepts/project.md) section.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create_pool}
 
@@ -255,7 +251,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Which shoes look more alike**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -309,8 +305,6 @@ To create a [pool](../../glossary.md#pool):
 
         The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
-    1. Turn on the **Keep task order** option.
-
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
     1. Download the file received in the [third project](item_look_similar.md).
@@ -331,11 +325,11 @@ To create a [pool](../../glossary.md#pool):
 
     1. Choose **Set manually**.
 
-    1. In the **Tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
+    1. In the **Number of tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
 
     1. Click **Combine tasks into suites**.
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
@@ -362,3 +356,5 @@ To get the results:
 - Learn more about [decomposition](../concepts/solution-architecture.md).
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

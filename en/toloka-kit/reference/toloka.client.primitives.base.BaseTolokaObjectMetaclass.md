@@ -1,5 +1,5 @@
 # BaseTolokaObjectMetaclass
-`toloka.client.primitives.base.BaseTolokaObjectMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/primitives/base.py#L117)
+`toloka.client.primitives.base.BaseTolokaObjectMetaclass` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/primitives/base.py#L119)
 
 ## Methods Summary
 

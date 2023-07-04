@@ -1,0 +1,91 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X POST 'https://toloka.dev/api/v1/pools' \
+         -H 'Content-Type: application/json' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -d '{"project_id":"83859","private_name":"First pool","will_expire":"2030-01-01T00:00:00.000Z","reward_per_assignment":0.05,"assignment_max_duration_seconds":300,"auto_accept_solutions":false,"defaults":{"default_overlap_for_new_task_suites":1}}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+    from toloka.client.pool import Pool
+    from datetime import datetime
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    new_pool = Pool(
+      project_id='83859',
+      private_name='First pool',
+      may_contain_adult_content=False,
+      will_expire=datetime(2030, 1, 1),
+      reward_per_assignment=0.05,
+      assignment_max_duration_seconds=60*5,
+      auto_accept_solutions=False,
+      defaults=Pool.Defaults(default_overlap_for_new_task_suites=1)
+    )
+    new_pool = toloka_client.create_pool(new_pool)
+    print(new_pool.id)
+  description: More details on this in the [Create pool](https://toloka.ai/docs/toloka-kit/recipes/create-pool/) Toloka-Kit recipe
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/pools"
+    headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+    }
+    payload = {
+      "project_id": "83859",
+      "private_name": "First pool",
+      "will_expire": "2030-01-01T00:00:00.000Z",
+      "reward_per_assignment": 0.05,
+      "assignment_max_duration_seconds": 300,
+      "auto_accept_solutions": False,
+      "defaults": {
+        "default_overlap_for_new_task_suites": 1
+      }
+    }
+    response = requests.post(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://toloka.dev/api/v1/pools',
+      'qs': {},
+      'headers': {
+        'Content-Type': 'application/json',
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      },
+      'body': JSON.stringify({
+        "project_id": "83859",
+        "private_name": "First pool",
+        "will_expire": "2030-01-01T00:00:00.000Z",
+        "reward_per_assignment": 0.05,
+        "assignment_max_duration_seconds": 300,
+        "auto_accept_solutions": false,
+        "defaults": {
+          "default_overlap_for_new_task_suites": 1
+        }
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/pools")
+      .header("Content-Type", "application/json")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .body("{\"project_id\":\"83859\",\"private_name\":\"First pool\",\"will_expire\":\"2030-01-01T00:00:00.000Z\",\"reward_per_assignment\":0.05,\"assignment_max_duration_seconds\":300,\"auto_accept_solutions\":false,\"defaults\":{\"default_overlap_for_new_task_suites\":1}}")
+      .asString();

@@ -18,19 +18,45 @@ h3 {
   padding-top: 16px !important;
   margin-top: 0 !important;
 }
+@media only screen and (max-width: 1024px) {
+  h2 {
+    padding-top: 32px !important;
+    margin-top: 0 !important;
+  }
+  h3 {
+    padding-top: 16px !important;
+    margin-top: 0 !important;
+  }
+}
 </style>
 
-Manage projects using Toloka API. Integrate Toloka methods into your own applications and automate your interaction with the Toloka platform.
+Manage projects and apps using Toloka API. Integrate Toloka methods into your own applications and automate your interaction with the Toloka platform.
 
-## [Toloka API](index.md)
-
-Get access to projects with the help of Toloka API. Manage projects, pool, upload tasks, and get the results.
-
-- [Accessing the API](concepts/access.md)
-- [Quick start](concepts/quickstart.md)
-- [Projects](concepts/project.md)
-- [Pools](concepts/pool.md)
-- [Tasks](concepts/upload-tasks.md)
+<div class="grid-container">
+    <div class="grid-item">
+        <h2><a href="https://toloka.ai/docs/api/api-reference">Toloka API</a></h2>
+        <p>Get access to projects with the help of Toloka API. Manage projects, pool, upload tasks, and get the results.</p>
+        <ul>
+            <li><a href="https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api">Accessing the API</a></li>
+            <li><a href="./concepts/quickstart">Quick start</a></li>
+            <li><a href="https://toloka.ai/docs/api/api-reference/#tag--project">Projects</a></li>
+            <li><a href="https://toloka.ai/docs/api/api-reference/#tag--pool">Pools</a></li>
+            <li><a href="./concepts/upload-tasks">Tasks</a></li>
+            <li><a href="https://toloka.ai/docs/api/api-reference">API reference</a></li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h2><a href="https://toloka.ai/docs/api/apps-reference">Apps API</a></h2>
+        <p>Apps API is used to power Toloka bespoke solutions. It has all the means to run your project and get the labeling results programmatically.</p>
+        <ul>
+            <li><a href="https://toloka.ai/docs/api/apps-reference/#overview--accessing-the-api">Accessing the API</a></li>
+            <li><a href="../toloka-apps/api/concepts/quickstart-api">Quick start</a></li>
+            <li><a href="../toloka-apps/api/concepts/streaming-items">Stream processing of task items</a></li>
+            <li><a href="../toloka-apps/api/concepts/getting-items">Iterating results</a></li>
+            <li><a href="https://toloka.ai/docs/api/apps-reference">API reference</a></li>
+        </ul>
+    </div>
+</div>
 
 ## Related pages
 
@@ -51,6 +77,15 @@ Get access to projects with the help of Toloka API. Manage projects, pool, uploa
             <li><a href="../guide/concepts/pool-main">Managing a pool</a></li>
             <li><a href="../guide/concepts/pool">Adding tasks to a pool</a></li>
             <li><a href="../guide/concepts/result-of-eval">Receiving responses</a></li>
+        </ul>
+    </div>
+    <div class="grid-item">
+        <h3>Bespoke solutions</h3>
+        <ul>
+            <li><a href="../toloka-apps/concepts/quickstart">Getting started</a></li>
+            <li><a href="../toloka-apps/concepts/product-search-relevance">Product search relevance</a></li>
+            <li><a href="../toloka-apps/concepts/add-task">Uploading task items</a></li>
+            <li><a href="../toloka-apps/concepts/download-results">Downloading the results</a></li>
         </ul>
     </div>
 </div>

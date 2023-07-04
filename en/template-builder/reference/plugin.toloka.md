@@ -6,7 +6,7 @@ A plugin with extra settings for tasks in Toloka.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "plugin.toloka" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "plugin.toloka" | Set component type. ||
 || `layout`<span style="color: red">\*</span> | _object_ | Settings for the task appearance in Toloka. [Learn more](../operations/set-plugin-toloka.md) ||
 || `layout.kind`<span style="color: red">\*</span> | _string_ | How to display tasks:
 

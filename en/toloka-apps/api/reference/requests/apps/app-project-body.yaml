@@ -1,0 +1,25 @@
+app_project_body:
+  description: The app project that you want to create.
+  value:
+    app_id: 2eN4l59qL2xHB5b8Jqp6
+    parent_app_project_id: xNnK4wYdlMPCQ0zPL315
+    name: My new project
+    parameters:
+      default_language: en
+      name: Product relevance project
+      instruction_classes:
+      - description: The product is relevant to the query.
+        label: Relevant
+        value: relevant
+      - description: The product is not completely relevant to the query.
+        label: Irrelevant
+        value: irrelevant
+      instruction_examples:
+      - description: The product exactly matches the query.
+        label: relevant
+        query: some search query
+        screenshot_url: https://example.com/1
+      - description: The product shape matches but the product color does not.
+        label: irrelevant
+        query: other search query
+        screenshot_url: https://example.com/2

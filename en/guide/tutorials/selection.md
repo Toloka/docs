@@ -14,7 +14,7 @@ Before you begin:
 
 - {% include [tutorials-top-up-tutorial](../_includes/tutorials/top-up-tutorial.md) %}
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
 {% include [toloka-requester-source-use-preset](../_includes/toloka-requester-source/id-toloka-requester-source/use-preset.md) %}
 
@@ -24,13 +24,11 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
+    1. Click **Do it myself**.
+
     1. Select the **Object recognition & detection** preset.
 
 1. Click **Choose this preset** in the pop-up tab.
-
-## Create a project {#project}
-
-{% include [tutorials-who-are-tolokers](../_includes/tutorials/who-are-tolokers.md) %}
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
@@ -38,7 +36,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-project-step-1.png)
+    ![Create a project. Step 1](../_images/tutorials/selection/create-project-step-1.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -50,7 +48,7 @@ Before you begin:
 
         - **Choose the shape for outlining objects in photos**: All tasks in a project use the same shape.
 
-        [![Create a project. Visual editor](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-visual-editor.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-visual-editor.png)
+        ![Create a project. Visual editor](../_images/tutorials/selection/selection-visual-editor.png =700x)
 
     1. Select the **I want to outline multiple types of objects** checkbox if you need to detect more than one category of objects in an image. Replace the samples with your types:
 
@@ -72,21 +70,19 @@ Before you begin:
 
     In this type of project, Tolokers will select objects in images with the shape you’ve specified in the **Config** section.
 
-    [![Create a project. Selection instructions](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-instructions.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-instructions.png)
+    ![Create a project. Selection instructions](../_images/tutorials/selection/selection-instructions.png =700x)
 
     {% include [toloka-requester-source-instruction-check](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-check.md) %}
 
     {% include [toloka-requester-source-instruction-note](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-note.md) %}
 
-1. To save your data and continue, click **Create a project**.
-
-    {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#pool}
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -104,7 +100,7 @@ Before you begin:
 
         For example, add the **Languages** filter:
 
-        [![Create a pool. Step 3.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-pool-step-3.2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/create-pool-step-3.2.png)
+        ![Create a pool. Step 3.2](../_images/tutorials/selection/create-pool-step-3.2.png =700x)
 
     1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** filter and select the desired value: **Toloka web version** or **Toloka for mobile**.
 
@@ -124,7 +120,7 @@ Before you begin:
 
     1. Click **Add a quality control rule → Results of assignment review**, and enter the following values:
 
-        [![Create a pool. Selection results rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-rule.png)
+        ![Create a pool. Selection results rule](../_images/tutorials/selection/selection-results-rule.png =700x)
 
         This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
@@ -150,24 +146,24 @@ Before you begin:
 
         - A prepared dataset
 
-            1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
+          1. {% include [toloka-requester-source-download-template](../_includes/toloka-requester-source/id-toloka-requester-source/download-template.md) %}
 
-                For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
+              For this type of project, the file with tasks must have one parameter. Its name equals `INPUT:image`, and the values are links to the images.
 
-                ```plaintext
-                INPUT:image
-                https://tlk.s3.yandex.net/sdc/photos/0c7b15d0f4e5db0416189afe6486f3cb.jpg
-                https://tlk.s3.yandex.net/sdc/photos/3e5d32e31dfd50fe826fd46b761481cf.jpg
-                https://tlk.s3.yandex.net/sdc/photos/0fb80721932aa59ecc684141433170b6.jpg
-                ```
+              ```plaintext
+              INPUT:image
+              https://tlk.s3.yandex.net/sdc/photos/0c7b15d0f4e5db0416189afe6486f3cb.jpg
+              https://tlk.s3.yandex.net/sdc/photos/3e5d32e31dfd50fe826fd46b761481cf.jpg
+              https://tlk.s3.yandex.net/sdc/photos/0fb80721932aa59ecc684141433170b6.jpg
+              ```
 
-            1. Open the downloaded file, and replace the sample links with links to your images.
+          1. Open the downloaded file, and replace the sample links with links to your images.
 
-            1. Click **Select prepared dataset**, and upload the file you’ve just made.
+          1. Click **Select prepared dataset**, and upload the file you’ve just made.
 
         - Media files
 
-            {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+          {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
         {% endlist %}
 
@@ -183,11 +179,11 @@ Before you begin:
 
         For example, you can add 8 general tasks per suite:
 
-        [![Create a pool. Step 3](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-upload-data-step-3.png =636x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-upload-data-step-3.png)
+        ![Create a pool. Step 3](../_images/tutorials/selection/selection-upload-data-step-3.png =636x)
 
     1. Click **Combine tasks into suites**.
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
@@ -199,7 +195,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/start-labeling-step-2.png)
+    ![Start labeling. Step 2](../_images/tutorials/selection/start-labeling-step-2.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -211,7 +207,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. Go to the pool, and click **Review assignments**.
 
-    [![See results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-review-results.png)
+    ![See results. Step 1](../_images/tutorials/selection/selection-review-results.png =700x)
 
 1. Choose an assignment.
 
@@ -225,7 +221,7 @@ After the specified time period, all responses are automatically accepted, regar
 
 1. After checking all the assignments, click **Download results**.
 
-    [![See results. Step 4](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-download.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/selection/selection-results-download.png)
+    ![See results. Step 4](../_images/tutorials/selection/selection-results-download.png =700x)
 
     You will get the TSV file with the labeling results. The point coordinates in the file are presented in JSON.
 
@@ -330,4 +326,4 @@ For pre-selection of users, you can use “examination tasks”. Review the assi
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

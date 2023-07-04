@@ -1,5 +1,5 @@
 # AlertViewV1
-`toloka.client.project.template_builder.view.AlertViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L77)
+`toloka.client.project.template_builder.view.AlertViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L78)
 
 ```python
 AlertViewV1(
@@ -14,17 +14,17 @@ AlertViewV1(
 )
 ```
 
-The component creates a color block to highlight important information.
+A view used to highlight important information.
 
 
-You can use both plain text and other visual components inside it.
+For more information, see [view.alert](https://toloka.ai/docs/template-builder/reference/view.alert).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Content of the block with important information.</p>
-`theme`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Theme](toloka.client.project.template_builder.view.AlertViewV1.Theme.md)\]\]**|<p>Determines the block color.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`content`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The content.</p>
+`theme`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Theme](toloka.client.project.template_builder.view.AlertViewV1.Theme.md)\]\]**|<p>The theme that sets the background color. The default color is blue.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

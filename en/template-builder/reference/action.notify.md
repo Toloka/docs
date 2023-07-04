@@ -4,11 +4,22 @@ The component creates a message in the lower-left corner of the screen.
 
 You can set the how long the message will be active, the delay before displaying it, and the background color.
 
+[![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/k5MTl8tI4DbqYH)
+
+{% cut "Components used in the example" %}
+
+- [view.list](view.list.md): Displays data in a list.
+- [view.text](view.text.md): Displays a text.
+- [view.action-button](view.action-button.md): Displays a button that calls an action.
+
+{% endcut %}
+
+
 ## Component properties {#properties}
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "action.notify" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "action.notify" | Set component type. ||
 || `payload`<span style="color: red">\*</span> | _object_ | Parameters for the message. ||
 || `payload.content`<span style="color: red">\*</span> | _string_ | Message text. ||
 || `payload.delay` | _number_ | The duration of the delay (in milliseconds) before the message appears. ||

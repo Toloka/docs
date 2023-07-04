@@ -1,7 +1,5 @@
 # Processing rejected and accepted assignments
 
-## Overview {#about}
-
 You can use this rule to:
 
 - Resend rejected task suites for recompletion to other Tolokers.
@@ -18,49 +16,53 @@ Re-assign task suites that didn't pass manual review.
 
 ```json
 {
-  "configs": [{
-    "collector_config": {
-      "type": "ASSIGNMENTS_ASSESSMENT"
-    },
-    "rules": [{
-      "conditions": [{
-          "key": "rejected_assignments_count",
-          "operator": "GTE",
-          "value": "1"
-        },
+  "configs": [
+    {
+      "collector_config": {
+        "type": "ASSIGNMENTS_ASSESSMENT"
+      },
+      "rules": [
         {
-          "key": "assessment_event",
-          "operator": "EQ",
-          "value": "REJECT"
+          "conditions": [
+            {
+              "key": "rejected_assignments_count",
+              "operator": "GTE",
+              "value": "1"
+            },
+            {
+              "key": "assessment_event",
+              "operator": "EQ",
+              "value": "REJECT"
+            }
+          ],
+          "action": {
+            "type": "CHANGE_OVERLAP",
+            "parameters": {
+              "delta": 1,
+              "open_pool": true,
+            }
+          }
         }
-      ],
-      "action": {
-        "type": "CHANGE_OVERLAP",
-        "parameters": {
-          "delta": 1,
-          "open_pool": true,
-        }
-      }
-    }]
-  }]
+      ]
+    }
+  ]
 }
 ```
 
 #|
 || Parameter | Overview ||
-|| **configs[]** | **array of objects \| required**
+|| `configs[]` | _array of objects_ \| **required**
 
 Array of quality control settings. ||
-|| **configs.collector_config** | **object \| required**
+|| `configs[].collector_config` | _object_ \| **required**
 
 Parameters for collecting statistics (for example, the number of tasks skipped in the pool). ||
-|| **configs.collector_config.type** | **string \| required**
+|| `configs[].collector_config.type` | _string_ \| **required**
 
 Criteria for the quality control rule:
 
 - `GOLDEN_SET` — The number of correct and incorrect responses in the control tasks.
 - `MAJORITY_VOTE` — The percentage of responses that matched the majority vote.
-- `CAPTCHA` — The number of captchas entered successfully and unsuccessfully.
 - `INCOME` — Payment for tasks completed by the Toloker over the past 24 hours.
 - `SKIPPED_IN_ROW_ASSIGNMENTS` — The number of task suites skipped in a row.
 - `ANSWER_COUNT` — The number of task suites completed by the Toloker in the pool.
@@ -68,22 +70,36 @@ Criteria for the quality control rule:
 - `ACCEPTANCE_RATE` — The percentage of Toloker responses that were rejected during manual review.
 - `ASSIGNMENTS_ASSESSMENT` — The number of assignments accepted or rejected with manual review enabled.
 - `USERS_ASSESSMENT` — The Toloker's skill value and their bans. ||
-|| **configs.collector_config. parameters.history_size** | **integer \| required**
+|| `configs[].collector_config.parameters` | _object_ \| **required if**
+
+Required if `configs[].collector_config.type` is equal to one of the values:
+
+- `GOLDEN_SET`
+
+- `MAJORITY_VOTE`
+
+- `ASSIGNMENT_SUBMIT_TIME`
+
+Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
+|| `configs[].collector_config.parameters.history_size` | _integer_ \| **required**
 
 The maximum number of the Toloker's recent responses in the project to use for calculating the percentage of correct responses.
 
 If this field is omitted, the calculation is based on all the Toloker's responses in the pool. ||
-|| **configs.rules.conditions** | **object \| required**
+|| `configs[].rules` | _object_ \| **required**
 
-Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
-|| **configs.rules.conditions.key** | **string \| required**
+{% include [configs-rules](../_includes/configs-rules.md) %} ||
+|| `configs[].rules.conditions` | _object_ \| **required**
+
+Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the `AND` operator. ||
+|| `configs[].rules.conditions.key` | _string_ \| **required**
 
 Values that are checked in the condition:
 
 - `pending_assignments_count` — The number of task suites that are completed and awaiting review.
 - `accepted_assignments_count` — The number of task suites accepted after the review.
 - `rejected_assignments_count` — The number of task suites rejected after the review. ||
-|| **configs.rules.conditions. operator** | **string \| required**
+|| `configs[].rules.conditions.operator` | _string_ \| **required**
 
 Comparison operator (the `key` data is compared with the threshold value from `value`):
 
@@ -93,36 +109,31 @@ Comparison operator (the `key` data is compared with the threshold value from `v
 - `LT` ("Less than") — Less than.
 - `GTE` ("Greater than equal to") — Greater than or equal to.
 - `LTE` ("Less than equal to") — Less than or equal to. ||
-|| **configs.rules.conditions. value** | **string \| required**
+|| `configs[].rules.conditions.value` | _string_ \| **required**
 
 The number of task suites with a specific status. ||
-|| **configs.rules.action** | **object \| required**
+|| `configs[].rules.action` | _object_ \| **required**
 
 The action to perform if conditions are met (for example, block access to the project). ||
-|| **configs.rules.action.type** | **string \| required**
+|| `configs[].rules.action.type` | _string_ \| **required**
 
 `CHANGE_OVERLAP` — Change the overlap. For example, to re-assign a task suite to other Tolokers or cancel the recompletion of accepted task suites. ||
-|| **configs.rules.action. parameters** | **object \| required**
+|| `configs[].rules.action.parameters` | _object_ \| **required**
 
 Action parameters. ||
-|| **configs.rules.action. parameters.scope** | **string \| required**
+|| `configs[].rules.action.parameters.scope` | _string_ \| **required**
 
 Scope:
 
 - `POOL` — pool. Affects the Toloker's rating.
 - `PROJECT` — The project. Affects the Toloker's rating.
 - `ALL_PROJECTS` — All the requester's projects. ||
-|| **configs.collector_config. parameters** | **object \| required if**
-
-Required if `configs.collector_config.type=``GOLDEN_SET`, `MAJORITY_VOTE`, `CAPTCHA`, `ASSIGNMENT_SUBMIT_TIME`.
-
-Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
-|| **configs.rules.action. parameters.skill_id** | **string \| required if**
+|| `configs[].rules.action.parameters.skill_id` | _string_ \| **required if**
 
 Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.
 
 ID of the skill to update as tasks are completed. ||
-|| **configs.rules.action. parameters.from_field** | **string \| required if**
+|| `configs[].rules.action.parameters.from_field` | _string_ \| **required if**
 
 Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.
 
@@ -130,42 +141,31 @@ The value to assign to the skill:
 
 - `correct_answers_rate` — The percentage of correct responses.
 - `wrong_answers_rate` — The percentage of incorrect responses. ||
-|| **configs.rules.action. parameters.skill_value** | **integer \| required if**
+|| `configs[].rules.action.parameters.skill_value` | _integer_ \| **required if**
 
 Required if `type=SET_SKILL_FROM_OUTPUT_FIELD`.
 
 A fixed value to assign to the skill (a number from 0 to 100). ||
-|| **configs.rules.action. parameters.delta** | **integer \| required if**
+|| `configs[].rules.action.parameters.delta` | _integer_ \| **required if**
 
 Required if `type=CHANGE_OVERLAP`.
 
 The value determines the amount to change the overlap by. ||
-|| **configs.rules.action. parameters.public_comment** | **string \| required if**
+|| `configs[].rules.action.parameters.public_comment` | _string_ \| **required if**
 
 Required if `type=REJECT_ALL_ASSIGNMENTS`.
 
 Comments (the reason for rejecting responses). Available to the requester and the Toloker. ||
-|| **configs.rules.conditions.key** | **string**
+|| `configs[].rules.action.parameters.duration_unit` | _string_
 
-Changing the task suite acceptance status. ||
-|| **configs.rules.conditions. value** | **string**
+{% include [duration-unit](../_includes/duration-unit.md) %} ||
+|| `configs[].rules.action.parameters.duration` | _integer_
 
-The value can be `ACCEPT`, `ACCEPT_AFTER_REJECT`, or `REJECT` (task suites get accepted, accepted after rejection, or rejected, respectively). ||
-|| **configs.rules.action. parameters.duration_unit** | **string**
-
-Ban duration unit:
-
-- `MINUTES` — Minutes
-- `HOURS` — Hours
-- `DAYS` — Days
-- `PERMANENT` — Permanent ban ||
-|| **configs.rules.action. parameters.duration** | **integer**
-
-Ban duration. ||
-|| **configs.rules. action.parameters. private_comment** | **string**
+{% include [duration](../_includes/duration.md) %} ||
+|| `configs[].rules.action.parameters.private_comment` | _string_
 
 Comments (the reason for blocking access). Visible only to the requester. ||
-|| **configs.rules.action. parameters.open_pool** | **boolean**
+|| `configs[].rules.action.parameters.open_pool` | _boolean_
 
 Determines whether to re-open a closed pool:
 
@@ -176,5 +176,6 @@ Determines whether to re-open a closed pool:
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/reassessment-after-accepting.md)
+- [Toloka-Kit recipe: Use quality control rules](../../toloka-kit/recipes/use-quality-control-rules.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}

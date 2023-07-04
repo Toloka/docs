@@ -42,31 +42,29 @@ For now, all surveys conducted using this type of project must be in English and
 
 {% endnote %}
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
-Pick a preset depending on your survey length:
+1. Pick a preset depending on your survey length:
 
-* For short surveys that take 15 minutes or less — [Short survey]({{ survey-qualtrics-short }}).
+    * For short surveys that take 15 minutes or less — [Short survey]({{ survey-qualtrics-short }}).
 
-* For medium surveys that take 15–30 minutes — [Medium survey]({{ survey-qualtrics-medium }}).
+    * For medium surveys that take 15–30 minutes — [Medium survey]({{ survey-qualtrics-medium }}).
 
-* For long surveys that take 30–60 minutes — [Long survey]({{ survey-qualtrics-long }}).
+    * For long surveys that take 30–60 minutes — [Long survey]({{ survey-qualtrics-long }}).
 
-Another way to choose a preset is to do the following:
+    Another way to choose a preset is to do the following:
 
-1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
 
-    [![Create project button](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-create-project.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-create-project.png)
+        ![Create project button](../_images/tutorials/survey-qualtrics/qualtrics-survey-create-project.png =700x)
 
-1. In the left menu, click **Social science research**. Select the **Short survey**, **Medium survey**, or **Long survey** preset.
+    1. In the left menu, click **Social science research**. Select the **Short survey**, **Medium survey**, or **Long survey** preset.
 
-    [![Social science research](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-social-science.png)
+        ![Social science research](../_images/tutorials/survey-qualtrics/qualtrics-survey-social-science.png =700x)
 
 1. Click **Choose solution** in the pop-up tab.
 
-## Create a project {#project}
-
-1. Add the general information on your project.
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
     * **Project name visible to Tolokers**: In 2–5 words, state the idea of the project.
 
@@ -74,13 +72,13 @@ Another way to choose a preset is to do the following:
 
     * **Project description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. Tolokers will find the detailed instructions after they start the survey.
 
-    [![Qualtrics survey description](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-description.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-description.png)
+    ![Qualtrics survey description](../_images/tutorials/survey-qualtrics/qualtrics-survey-description.png =700x)
 
     Note that the task interface and detailed instructions are preconfigured: they are standard for all the Qualtrics survey projects.
 
     {% cut "How your task will look for Tolokers" %}
 
-    [![Social science research](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-task-interface.png =400x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-task-interface.png)
+    ![Social science research](../_images/tutorials/survey-qualtrics/qualtrics-survey-task-interface.png =400x)
 
     {% endcut %}
 
@@ -94,7 +92,7 @@ Another way to choose a preset is to do the following:
 
     * **Age** (optional): Enter the age of Tolokers between 18 and 90.
 
-    [![Survey audience](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-audience.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-audience.png)
+    ![Survey audience](../_images/tutorials/survey-qualtrics/qualtrics-survey-audience.png =700x)
 
     {% note info %}
 
@@ -110,7 +108,7 @@ Another way to choose a preset is to do the following:
 
     * **IRB approval / exemption number**: The study number approved by the IRB.
 
-    [![Survey approval](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-approval.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-approval.png)
+    ![Survey approval](../_images/tutorials/survey-qualtrics/qualtrics-survey-approval.png =700x)
 
 1. Revise the settings carefully. You will not be able to change them later.
 
@@ -124,7 +122,7 @@ Toloka controls the data collection completion by exchanging a unique code with 
 
 1. After you embed the code to your survey, select **My Qualtrics survey has an embedded completion code from Toloka**.
 
-    [![Embed code](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-embed-code.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-embed-code.png)
+    ![Embed code](../_images/tutorials/survey-qualtrics/qualtrics-survey-embed-code.png =700x)
 
 1. Click **Launch survey**.
 
@@ -132,7 +130,7 @@ Toloka controls the data collection completion by exchanging a unique code with 
 
 In the pop-up tab, check the parameters and click **Launch**.
 
-[![Launch survey](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-launch.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/survey-qualtrics/qualtrics-survey-launch.png)
+![Launch survey](../_images/tutorials/survey-qualtrics/qualtrics-survey-launch.png =700x)
 
 Responses are stored on Quatrics. Go there to track the progress of data collection and get the results.
 
@@ -148,4 +146,4 @@ Responses are stored on Quatrics. Go there to track the progress of data collect
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

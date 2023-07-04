@@ -1,5 +1,5 @@
 # HotkeysPluginV1
-`toloka.client.project.template_builder.plugins.HotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L79)
+`toloka.client.project.template_builder.plugins.HotkeysPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L75)
 
 ```python
 HotkeysPluginV1(
@@ -47,17 +47,20 @@ HotkeysPluginV1(
 )
 ```
 
-Lets you set keyboard shortcuts for actions.
+Hotkeys for actions.
 
-## Parameters Description
 
-| Parameters | Type | Description |
-| :----------| :----| :-----------|
-`key_ + [a-z|0-9|up|down]`|**-**|<p>An action that is triggered when you press the specified keyboard key. The keyboard shortcut is set in the key, and the action is specified in the value</p>
+You can use as hotkeys:
+* Letters
+* Numbers
+* Up and down arrows
+
+Choose a hotkey using a named parameter of the `HotkeysPluginV1` and assign an action to it.
+
 
 **Examples:**
 
-How to create hotkeys for classification buttons.
+Creating hotkeys for classification buttons.
 
 ```python
 hot_keys_plugin = tb.HotkeysPluginV1(

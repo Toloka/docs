@@ -4,34 +4,40 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 ## Create a project {#create-project}
 
-#### In the interface:
+In the interface:
 
 1. Choose a preset:
 
-    1. Click **Create project**.
+    1. {% include [tutorials-create-project-button](../_includes/tutorials/create-project-button.md) %}
+
+        {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
+
+    1. Click **Do it myself**.
+
     1. Select the **Object recognition & detection** preset.
-    1. Click **Choose this preset**.
 
-1. Provide general information:
+1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
-    1. In the **Name for Tolokers** field, enter `Are the traffic signs outlined correctly?`.
+    1. In the **Name to show Tolokers** field, enter `Are the traffic signs outlined correctly?`.
+
     1. In the **Description for Tolokers** field, enter `Look at the image and decide whether the traffic signs are outlined correctly or not`.
+
     1. Optionally add a **Private comment**.
 
-1. Edit the task interface. The output data format depends on the interface editor, so choose the same editor as in [Project 2](image-segmentation-project2.md#interface-tb-html).
+1. Edit the [task interface](../../glossary.md#task-interface). The output data format depends on the interface editor, so choose the same editor as in [project 2](image-segmentation-project2.md).
 
    {% list tabs %}
 
     - Template Builder
 
-      1. Create a template based on the [Checking the selected area](https://ya.cc/t/Z9GC6HzT3ttEf6) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
+      1. Create a template based on the [Checking the selected area](https://ya.cc/t/AKDvkBw44CFb73) example that uses [Component for image labeling](../../template-builder/reference/field.image-annotation.md).
 
       1. To see the input and output data fields, click **Show specifications** in the **Data specification** section.
 
           Input data fields used in the project:
 
           - `image` — image address;
-          - `result` — an array with the selected area coordinates;
+          - `selection` — an array with the selected area coordinates;
           - `assignment_id` — task ID.
 
           The Toloker's response will be recorded in the `verdict` output data field.
@@ -49,7 +55,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
               "hidden": false,
               "required": true
             },
-            "result": {
+            "selection": {
               "type": "array_json",
               "hidden": false,
               "required": false
@@ -84,7 +90,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
           1. Connect the $TOLOKA_ASSETS/js/image-annotation.js library (click ![](../_images/settings.svg) in the **Task interface** block on the project page).
 
-          1. In the **html** block, replace the current code with the following:
+          1. In the **HTML** block, replace the current code with the following:
 
               ```plaintext
               <!-- editor for selecting objects that lets you add an area in advance -->
@@ -95,7 +101,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
               {{field type="radio" name="result" value="BAD" label="Incorrect" hotkey="2"}}
               ```
 
-          1. In the **css** block, replace the code with the following:
+          1. In the **CSS** block, replace the code with the following:
 
               ```css
               /* hide the button for polygon selection */
@@ -173,17 +179,15 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
    {% endlist %}
 
-1. Save the changes.
+1. {% include [toloka-requester-source-instructions](../_includes/toloka-requester-source/id-toloka-requester-source/instructions.md) %}
 
-1. Write instructions for Tolokers:
-
-    **Instructions:**
+    Instructions text:
 
     ```plaintext
-    Look at the image and answer the question: **Are all traffic signs outlined correctly?**
-    If there are, click **Yes**.
-    If there isn't, click **No**.
-    For example, road signs are outlined correctly, so the correct answer is **Yes**.
+    Look at the image and answer the question: "Are all traffic signs outlined correctly?"
+    If there are, click "Yes".
+    If there isn't, click "No".
+    For example, road signs are outlined correctly, so the correct answer is "Yes".
     ```
 
     {% note tip %}
@@ -192,13 +196,13 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
     {% endnote %}
 
-1. Click **Create project**.
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#create_pool}
 
 1. Open the project page titled **Are the traffic signs outlined correctly?**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -258,11 +262,9 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
         The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
-    1. Turn on the **Keep task order** option.
-
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
-    1. Prepare a [file](../../glossary.md#tsv) with tasks.
+    1. Prepare a [file with tasks](../../glossary.md#tsv).
 
         1. In the text or spreadsheet editor, open the file that you received after aggregating the results in [project 2](image-segmentation-project2.md).
 
@@ -272,13 +274,9 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
         1. Rename the `ASSIGNMENT:assignment_id` column to `INPUT:assignment_id`.
 
-        1. Delete the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
+        1. Delete the `ACCEPT:verdict:` and `ACCEPT:comment:` columns.
 
-        1. Add input data, for example:
-        ```
-        [{""type"":""rectangle"",""data"":{""p1"":{""x"":0.2421,""y"":0.98871},""p2"":{""x"":0.93663,""y"":0.8776}}}]
-        ```
-        and save the file.
+        1. Save the file.
 
         {% note tip %}
 
@@ -298,7 +296,7 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
         1. Choose **Set manually**.
 
-        1. In the **Tasks per suite** field, specify `10`.
+        1. In the **Number of tasks per suite** field, specify `10`.
 
         1. Click **Combine tasks into suites**.
 
@@ -334,74 +332,71 @@ In this [project](../../glossary.md#project), Tolokers will determine if traffic
 
 ## Check the completed tasks {#check_results}
 
-Since the [manual review](image-segmentation-project2.md) option is enabled in the pool settings for **project 2**, you should check the Tolokers' responses within the time limit set in the **Review period** field.
+Since the [manual review](image-segmentation-project2.md) option is enabled in the pool settings for [project 2](image-segmentation-project2.md), you should check the Tolokers' responses within the time limit set in the **Review period** field.
 
-You can check the results in two ways:
-
-- In the results file.
-- In the pool interface.
+You can check the results in two ways.
 
 {% list tabs %}
 
-- Review assignments in the results file
+- In the results file
 
-    1. In the text or spreadsheet editor, open the file you received after aggregating the results.
+  1. In the text or spreadsheet editor, open the file you received after aggregating the results.
 
-    1. Prepare the file:
+  1. Prepare the file:
 
-        1. Add a column named `ACCEPT:verdict` with the review results.
+      1. Add a column named `ACCEPT:verdict` with the review results.
 
-        1. Add a column named `ACCEPT:comment` with comments for Tolokers if responses were rejected. For example, comment on which part of the instructions wasn't followed.
+      1. Add a column named `ACCEPT:comment` with comments for Tolokers if responses were rejected. For example, comment on which part of the instructions wasn't followed.
 
-        1. Rename the `INPUT:assignment_id` column to `ASSIGNMENT:assignment_id`.
+      1. Rename the `INPUT:assignment_id` column to `ASSIGNMENT:assignment_id`.
 
-    1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
+  1. Fill in the `ACCEPT:verdict:` and `ACCEPT:comment:` columns:
 
-        - If the aggregate result of the assignment is OK, put `+` to accept it.
+      - If the aggregate result of the assignment is OK, put `+` to accept it.
 
-        - If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Enter the reason for rejecting the task in the `ACCEPT:comment:` field, for example, `The object isn't selected or is selected incorrectly.`
+      - If the aggregate result of the assignment is incorrect or it doesn't open, put `-` to reject it. Enter the reason for rejecting the task in the `ACCEPT:comment:` field, for example, `The object isn't selected or is selected incorrectly.`
 
-        {% note tip %}
+      {% note tip %}
 
-        You can use the awk commands to outline images on Linux and MacOS devices:
+      You can use the awk commands to outline images on Linux and MacOS devices:
 
-        ```shell
-        awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
-        ```
+      ```shell
+      awk 'BEGIN {FS=OFS="\t";} NR>1 {if($4~"OK"){ print $1, "+", ""; }else{ print $1, "-", "The object isn't selected or is selected incorrectly.";}}' <post_accept_res>.tsv > <review_res>.tsv
+      ```
 
-        {% endnote %}
+      {% endnote %}
 
-    1. Delete all the other columns.
+  1. Delete all the other columns.
 
-    1. Save the file in `TSV` format.
+  1. Save the file in `TSV` format.
 
-    1. Open the pool page in [project 2](image-segmentation-project2.md).
+  1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-    1. Click **Review assignments**.
+  1. Click **Review assignments**.
 
-    1. Click **Upload results**.
+  1. Click **Upload results**.
 
-    1. In the window that opens, choose the results file you want to upload and click **Open**.
+  1. In the window that opens, choose the results file you want to upload and click **Open**.
 
-    1. In the window that opens, compare the number of tasks in the **Processed successfully** and **Total submitted** fields on the pool page.
+  1. In the window that opens, compare the number of tasks in the **Processed successfully** and **Total submitted** fields on the pool page.
 
-    1. Click **Add**.
+  1. Click **Add**.
 
-    1. In the window that opens, click **Close**.
+  1. In the window that opens, click **Close**.
 
-    1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the **Recompletion of the rejected tasks** option.
+  1. When setting up a pool in the [second project](image-segmentation-project2.md) you turned on the **Recompletion of the rejected tasks** option.
 
-        In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
+      In this case, the pool automatically reopens and the assignments are reassigned to other Tolokers. When they're completed, send the results for review. Then download the results, check them, and upload the reviewed results. You can reject assignments as many times as you want to get more accurate results.
 
-- Review assignments in the pool interface
+- In the pool interface
 
-    1. Open the pool page in [project 2](image-segmentation-project2.md).
+  1. Open the pool page in [project 2](image-segmentation-project2.md).
 
-    1. Click **View assignments**.
+  1. Click **View assignments**.
 
-    1. Hover over the line of the assignment you want to check.
+  1. Hover over the line of the assignment you want to check.
 
-    1. In the **Status** column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
+  1. In the **Status** column, you will see the buttons for accepting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-yes.svg)) or rejecting (![](../_images/tutorials/image-segmentation/wsdm-tutorial-button-no.svg)) the completed assignment. If you reject the assignment, enter a comment in the window that opens and click **Done**.
 
 {% endlist %}
 

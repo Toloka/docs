@@ -32,9 +32,9 @@ It includes both interested and engaged Tolokers.||
 ||**Submitted assignments per Toloker** | The average number of task suites per Toloker.||
 ||**Expired task suites** | The number of expired task suites.
 
-Includes the pages that Tolokers failed to complete on time or decided to skip. You specify the time allotted for a task suite when [setting up a pool](pool-main.md#table_n3q_vhz_jlb).
+Includes the pages that Tolokers failed to complete on time. You specify the time allotted for a task suite when [setting up a pool](pool-main.md#table_n3q_vhz_jlb).
 
-When the Toloker decides not to do the task (clicks **Exit**), the task gets the expired status. In this case, the Toloker can return to the task again, unless it was completed by someone else or the requester deleted it from the pool.||
+The task can also get the expired status when the Toloker clicks **Exit**. In this case, the Toloker can return to the task again, unless it was completed by someone else or the requester deleted it from the pool.||
 ||**Skipped task suites** | The number of task suites skipped by Tolokers. Includes the pages that the Tolokers decided to skip and moved on to the next tasks.
 
 When the Toloker clicks **Skip**, the task gets the skipped status. In this case, the Toloker can no longer return to the task.||

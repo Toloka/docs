@@ -1,0 +1,8 @@
+success:
+  description: The detailed information about the aggregation result.
+  value:
+    confidence: 0.937152
+    output_values:
+      result: OK
+    pool_id: '1491600'
+    task_id: 000016c290--64382dfc97aa9547ff8a2299

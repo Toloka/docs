@@ -1,0 +1,15 @@
+success:
+  description: The detailed information about the skill.
+  value:
+    id: '37825'
+    name: product search relevance
+    public_name:
+      EN: product search relevance
+    private_comment: ''
+    hidden: true
+    deprecated: false
+    owner:
+      id: 6c6e20dc86cca2ae787afcb2629de162
+      myself: true
+    created: '2022-01-25T09:19:16.455'
+    global: false

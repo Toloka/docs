@@ -1,5 +1,5 @@
 # Payload
-`toloka.client.project.template_builder.actions.NotifyActionV1.Payload` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/actions.py#L54)
+`toloka.client.project.template_builder.actions.NotifyActionV1.Payload` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/actions.py#L54)
 
 ```python
 Payload(
@@ -12,13 +12,13 @@ Payload(
 )
 ```
 
-Parameters for the message.
+Popup parameters.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`content`|**Optional\[Any\]**|<p>Message text</p>
-`theme`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Theme](toloka.client.project.template_builder.actions.NotifyActionV1.Payload.Theme.md)\]\]**|<p>The background color of the message.</p>
-`delay`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The duration of the delay (in milliseconds) before the message appears.</p>
-`duration`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The duration of the message activity (in milliseconds), which includes the duration of the delay before displaying it. For example, if duration is 1000 and delay is 400, the message will be displayed for 600 milliseconds.</p>
+`content`|**Optional\[Any\]**|<p>Popup content. You can assign text or other components to the `content`.</p>
+`theme`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Theme](toloka.client.project.template_builder.actions.NotifyActionV1.Payload.Theme.md)\]\]**|<p>A background color.</p>
+`delay`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>A delay in milliseconds before showing the popup.</p>
+`duration`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>A duration in milliseconds of showing the popup. It includes the delay.</p>

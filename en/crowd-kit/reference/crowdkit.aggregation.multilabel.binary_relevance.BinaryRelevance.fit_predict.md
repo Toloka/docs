@@ -1,5 +1,5 @@
 # fit_predict
-`crowdkit.aggregation.multilabel.binary_relevance.BinaryRelevance.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/aggregation/multilabel/binary_relevance.py#L105)
+`crowdkit.aggregation.multilabel.binary_relevance.BinaryRelevance.fit_predict` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/aggregation/multilabel/binary_relevance.py#L108)
 
 ```python
 fit_predict(self, data: DataFrame)

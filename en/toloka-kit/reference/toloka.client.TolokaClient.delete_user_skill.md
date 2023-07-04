@@ -1,5 +1,5 @@
 # delete_user_skill
-`toloka.client.TolokaClient.delete_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3373)
+`toloka.client.TolokaClient.delete_user_skill` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3473)
 
 ```python
 delete_user_skill(self, user_skill_id: str)

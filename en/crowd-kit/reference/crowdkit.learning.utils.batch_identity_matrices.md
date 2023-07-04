@@ -1,5 +1,5 @@
 # batch_identity_matrices
-`crowdkit.learning.utils.batch_identity_matrices` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/utils.py#L30)
+`crowdkit.learning.utils.batch_identity_matrices` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/learning/utils.py#L30)
 
 ```python
 batch_identity_matrices(

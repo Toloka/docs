@@ -1,5 +1,5 @@
 # RunState
-`toloka.streaming.pipeline.Pipeline.RunState` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/pipeline.py#L255)
+`toloka.streaming.pipeline.Pipeline.RunState` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/pipeline.py#L259)
 
 ```python
 RunState(
@@ -24,4 +24,4 @@ State of a single Pipeline run.
 
 | Method | Description |
 | :------| :-----------|
-[add_new_observers](toloka.streaming.pipeline.Pipeline.RunState.add_new_observers.md)| None
+[update_observers](toloka.streaming.pipeline.Pipeline.RunState.update_observers.md)| None

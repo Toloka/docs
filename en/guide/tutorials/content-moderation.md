@@ -4,7 +4,7 @@ In this tutorial, you will learn how to run content moderation in Toloka. We wil
 
 Content moderation is a type of data labeling task with a text and a number of response options. Tolokers read the text and choose one of the given answer options. After that, they can specify their answer using an additional question with checkboxes.
 
-[![Sentiment analysis and content moderation](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-preview-interface.png =400x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-preview-interface.png)
+![Sentiment analysis and content moderation](../_images/tutorials/content-moderation/content-moderation-preview-interface.png =400x)
 
 Use this preset when you need to:
 
@@ -22,7 +22,7 @@ Before you begin:
 
 - {% include [tutorials-top-up-tutorial](../_includes/tutorials/top-up-tutorial.md) %}
 
-## Choose a preset {#preset}
+## Create a project {#project}
 
 {% include [toloka-requester-source-use-preset](../_includes/toloka-requester-source/id-toloka-requester-source/use-preset.md) %}
 
@@ -32,13 +32,11 @@ Before you begin:
 
         {% include [tutorials-choose-preset-image](../_includes/tutorials/choose-preset-image.md) %}
 
+    1. Click **Do it myself**.
+
     1. Select the **Sentiment analysis & Content moderation** preset.
 
 1. Click **Choose this preset** in the pop-up tab.
-
-## Create a project {#project}
-
-{% include [tutorials-who-are-tolokers](../_includes/tutorials/who-are-tolokers.md) %}
 
 1. {% include [tutorials-add-name-description](../_includes/tutorials/add-name-description.md) %}
 
@@ -46,7 +44,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-create-project-step-1.png)
+    ![Create a project. Step 1](../_images/tutorials/content-moderation/content-moderation-create-project-step-1.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -54,7 +52,7 @@ Before you begin:
 
     1. Write the first question Tolokers will see in your task. All tasks in a project use the same question.
 
-        [![Create a project. Config question](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-question-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-question-1.png)
+        ![Create a project. Config question](../_images/tutorials/content-moderation/content-moderation-config-question-1.png =700x)
 
     1. Set answer options. In the `options` list, replace the sample answers with your values in the following properties:
 
@@ -62,19 +60,19 @@ Before you begin:
 
         - `value`: This is the value you will see in the file with the labeling results.
 
-        [![Create a project. Config answer options](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-answer-options-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-answer-options-1.png)
+        ![Create a project. Config answer options](../_images/tutorials/content-moderation/content-moderation-config-answer-options-1.png =700x)
 
     1. When a Toloker selects an option which requires additional information, the second question with checkboxes appears. You can change the condition under which the additional question becomes visible. To to that, replace the value of the `to` propertу with one of the values you’ve already specified in the `value` properties in the previous step:
 
-        [![Create a project. Config answer options](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-condition.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-config-condition.png)
+        ![Create a project. Config answer options](../_images/tutorials/content-moderation/content-moderation-config-condition.png =700x)
 
     1. Configure the text and the answer options for the additional question:
 
-        [![Create a project. Config condition](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/config-answer-options-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/config-answer-options-2.png)
+        ![Create a project. Config condition](../_images/tutorials/content-moderation/config-answer-options-2.png =700x)
 
     1. In the **Input data example** section, add a sample text. It is only used to display the task interface preview on the right.
 
-        [![Create a project. Input data example](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-input-example.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-input-example.png)
+        ![Create a project. Input data example](../_images/tutorials/content-moderation/content-moderation-input-example.png =700x)
 
     1. {% include [toloka-requester-source-specification-definition](../_includes/toloka-requester-source/id-toloka-requester-source/specification-definition.md) %}
 
@@ -91,15 +89,13 @@ Before you begin:
 
     {% include [toloka-requester-source-instruction-note](../_includes/toloka-requester-source/id-toloka-requester-source/instruction-note.md) %}
 
-1. To save your data and continue, click **Create a project**.
-
-    {% include [tutorials-create-project-image](../_includes/tutorials/create-project-image.md) %}
+1. {% include [save-project](../_includes/tutorials/save-project.md) %}
 
 ## Create a pool {#pool}
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -117,7 +113,7 @@ Before you begin:
 
         For example, add the **Languages** filter:
 
-        [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-language-filter.png)
+        ![Create a pool. Languages filter](../_images/tutorials/content-moderation/content-moderation-language-filter.png =700x)
 
     1. Tasks in pools will automatically be available in the web version of Toloka and the mobile app. If you want to change the default settings and limit the visibility of the task for any of the versions, add the **Client** filter and select the desired value: **Toloka web version** or **Toloka for mobile**.
 
@@ -129,7 +125,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, edit the pre-configured **Fast responses** rule. Specify the following values:
 
-        [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-fast-responses.png)
+        ![Create a pool. Fast responses rule](../_images/tutorials/content-moderation/content-moderation-fast-responses.png =700x)
 
         These settings mean that a Toloker who completes a task suite in less than 20 seconds will be suspended and won't be able to access your tasks for 10 days.
 
@@ -145,7 +141,7 @@ Before you begin:
 
     1. Click **Add a quality control rule → Control tasks**, and enter the following values:
 
-        [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-control-rule.png)
+        ![Create a pool. Control tasks rule](../_images/tutorials/content-moderation/content-moderation-control-rule.png =700x)
 
         This means that a Toloker who gives more than 40% of incorrect responses will be blocked and won't be able to complete tasks in this project for 10 days.
 
@@ -192,7 +188,7 @@ Before you begin:
 
         For example, you can add 9 general tasks and 1 control task per suite:
 
-        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-smart-mixing.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-smart-mixing.png)
+        ![Upload data. Tasks per suite](../_images/tutorials/content-moderation/content-moderation-smart-mixing.png =700x)
 
     1. Click **Combine tasks into suites**.
 
@@ -202,9 +198,9 @@ Before you begin:
 
     1. Note the **Distribution of correct responses for control tasks** graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
-        [![Upload data. Distribution of correct responses for control tasks](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-distibution.png =440x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-distibution.png)
+        ![Upload data. Distribution of correct responses for control tasks](../_images/tutorials/content-moderation/content-moderation-distibution.png =440x)
 
-1. {% include [tutorials-upload-tasks](../_includes/tutorials/double-check.md) %}
+1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
     {% include [toloka-requester-source-step-enabled](../_includes/toloka-requester-source/id-toloka-requester-source/step-enabled.md) %}
 
@@ -216,7 +212,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-start-labeling.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-start-labeling.png)
+    ![Start labeling. Step 2](../_images/tutorials/content-moderation/content-moderation-start-labeling.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -224,11 +220,10 @@ Before you begin:
 
 1. You can see the labeling progress on the pool page. Wait until the labeling is completed. Refresh the page to check the progress.
 
-    [![See the results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-1.png)
-
+    ![See the results. Step 1](../_images/tutorials/content-moderation/content-moderation-see-results-step-1.png =700x)
 1. When the labeling is complete, click the arrow next to the **Download results** button and choose **Run Dawid-Skene model** from the drop-down menu. Click **Yes** in the pop-up window.
 
-    [![See the results. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/content-moderation/content-moderation-see-results-step-2.png)
+    ![See the results. Step 2](../_images/tutorials/content-moderation/content-moderation-see-results-step-2.png =700x)
 
 1. Open the same drop-down menu again, and click **View aggregations list**.
 
@@ -256,4 +251,4 @@ Before you begin:
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

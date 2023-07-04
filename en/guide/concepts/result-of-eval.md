@@ -51,7 +51,7 @@ curl -X GET 'https://toloka.dev/api/v1/assignments?pool_id=1085757' \
      -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
 ```
 
-Refer to the [Get list of responses](https://toloka.ai/docs/api/api-reference/#get-/assignments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests in [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
+Refer to the [Get list of responses](https://toloka.ai/docs/api/api-reference/#get-/assignments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
 
 {% endnote %}
 
@@ -79,8 +79,8 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 
 ## For developers {#for-developers}
 
-- [Toloka API: Getting responses](../../api/concepts/get-response.md)
-- [Toloka API: Files in responses](../../api/concepts/attachments.md)
+- [Toloka API: Getting responses](https://toloka.ai/docs/api/api-reference/#get-/assignments)
+- [Toloka API: Files in responses](https://toloka.ai/docs/api/api-reference/#get-/attachments)
 - [Toloka-Kit recipe: Get list of responses](../../toloka-kit/recipes/get-responses.md)
 - [Toloka-Kit recipe: Get list of files in responses](../../toloka-kit/recipes/get-attachments.md)
 - [Toloka-Kit recipe: Download attachments](../../toloka-kit/recipes/download-attachment.md)
@@ -122,3 +122,5 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 {% include [faq-get-time](../_includes/faq/result-questions/get-time.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

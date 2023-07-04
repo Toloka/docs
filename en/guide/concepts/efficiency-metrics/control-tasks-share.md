@@ -20,15 +20,15 @@ The indicator estimation criteria depends on the pool type.
 
 - Pool with general tasks
 
-    - A good indicator is `30%`.
+  - A good indicator is `30%`.
 
-    - A low indicator is `< 30%`.
+  - A low indicator is `< 30%`.
 
 - Exam pools
 
-    - A good indicator is `100%`.
+  - A good indicator is `100%`.
 
-    - A low indicator is `> 90%`.
+  - A low indicator is `> 90%`.
 
 {% endlist %}
 

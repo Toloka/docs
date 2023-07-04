@@ -1,0 +1,7 @@
+user_skill_body:
+  description: The Toloker skill properties that you want to change.
+  value:
+    skill_id: 11051
+    user_id: 1ad097faba0eff85a04fe30bc04d53db
+    value: 50
+    reason: High-quality performance of tasks

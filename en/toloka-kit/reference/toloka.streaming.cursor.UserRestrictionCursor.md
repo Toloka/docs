@@ -1,10 +1,11 @@
 # UserRestrictionCursor
-`toloka.streaming.cursor.UserRestrictionCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/cursor.py#L369)
+`toloka.streaming.cursor.UserRestrictionCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L403)
 
 ```python
 UserRestrictionCursor(
     self,
     toloka_client: Union[TolokaClient, AsyncTolokaClient],
+    time_lag: timedelta = ...,
     scope: Optional[UserRestriction.Scope] = None,
     user_id: Optional[str] = None,
     project_id: Optional[str] = None,
@@ -28,6 +29,7 @@ Iterator over Toloker restrictions by create time.
 | :----------| :----| :-----------|
 `toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search Toloker restrictions.</p>
 `request`|**[UserRestrictionSearchRequest](toloka.client.search_requests.UserRestrictionSearchRequest.md)**|<p>Base request to search Toloker restrictions.</p>
+`_time_lag`|**-**|<p>Time lag between cursor time field upper bound and real time. Default is 1 minute. This lag is required to keep cursor consistent. Lowering this value will make cursor process events faster, but raises probability of missing some events in case of concurrent operations.</p>
 
 **Examples:**
 

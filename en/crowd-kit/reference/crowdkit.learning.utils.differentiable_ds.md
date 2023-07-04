@@ -1,5 +1,5 @@
 # differentiable_ds
-`crowdkit.learning.utils.differentiable_ds` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.0/crowdkit/learning/utils.py#L10)
+`crowdkit.learning.utils.differentiable_ds` | [Source code](https://github.com/Toloka/crowd-kit/blob/v1.2.1/crowdkit/learning/utils.py#L10)
 
 ```python
 differentiable_ds(outputs: Tensor, confusion_matrices: Tensor)

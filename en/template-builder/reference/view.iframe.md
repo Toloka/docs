@@ -6,7 +6,7 @@ Displays the web page at the URL in an iframe window.
 
 #|
 || **Name** | **Type** | **Description** ||
-|| `type`<span style="color: red">\*</span> | "view.iframe" | Set component type ||
+|| `type`<span style="color: red">\*</span> | "view.iframe" | Set component type. ||
 || `label` | _string_ | Label above the component. ||
 || `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||
 || `hint` | _string_ | Hint text. ||

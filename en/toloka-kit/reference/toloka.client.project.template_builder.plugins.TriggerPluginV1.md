@@ -1,5 +1,5 @@
 # TriggerPluginV1
-`toloka.client.project.template_builder.plugins.TriggerPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L137)
+`toloka.client.project.template_builder.plugins.TriggerPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L136)
 
 ```python
 TriggerPluginV1(
@@ -13,34 +13,29 @@ TriggerPluginV1(
 )
 ```
 
-Use this to configure triggers that trigger a specific action when an event occurs.
+A plugin for triggering actions when events occur.
 
 
-The action is set in the action property, and the event is described in the other fields.
-
-The event can be triggered immediately when the task is loaded ("fireImmediately": true) or when data changes in
-the property specified in onChangeOf.
-
-You can also set conditions in the conditions property that must be met in order for the trigger to fire.
+For more information, see [plugin.trigger](https://toloka.ai/docs/template-builder/reference/plugin.trigger).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`action`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The action to perform when the trigger fires.</p>
-`condition`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The condition that must be met in order to fire the trigger.</p>
-`fire_immediately`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Flag indicating whether the trigger should be fired immediately after the task is loaded.</p>
-`on_change_of`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The data that triggers the action when changed.</p>
+`action`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>An action to trigger.</p>
+`condition`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A condition that must be met in order to trigger the action.</p>
+`fire_immediately`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True` then the action is triggered immediately after the task is loaded.</p>
+`on_change_of`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The data change event that triggers the action.</p>
 
 **Examples:**
 
-How to save Toloker's coordinates to the output.
+How to save Toloker's coordinates.
 
 ```python
 coordinates_save_plugin = tb.plugins.TriggerPluginV1(
     fire_immediately=True,
     action=tb.actions.SetActionV1(
-        data=tb.data.OutputData(path='performer_coordinates'),
+        data=tb.data.OutputData(path='toloker_coordinates'),
         payload=tb.data.LocationData()
     ),
 )

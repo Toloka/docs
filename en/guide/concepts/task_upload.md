@@ -10,28 +10,28 @@ To upload [file with tasks](../../glossary.md#tsv) to a [pool](pool-main.md):
 
     - A prepared dataset
 
-        1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
+      1. Download the template and replace the sample data in it with [your own data](pool_csv.md).
 
-        1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
+      1. Click **Select prepared dataset** and choose your [file with tasks](../../glossary.md#tsv).
 
-        {% cut "Use sample data" %}
+      {% cut "Use sample data" %}
 
-        If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
+      If you want to see what your project will look like after the launch, but you don't have any labeling tasks yet, you can upload ready-made sample data to the pool. Sample data is available for the templates:
 
-        - **Image classification**
-        - **Product search relevance**
-        - **Object recognition & detection**
-        - **Clickbait or not?**
+      - **Image classification**
+      - **Product search relevance**
+      - **Object recognition & detection**
+      - **Clickbait or not?**
 
-        Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
+      Click **Use sample data** next to **Attach the prepared file with data**. This lets you avoid any additional actions with files.
 
-        Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
+      Once you've finished working with the sample data and everything looks good, prepare your data and upload it to the pool.
 
-        {% endcut %}
+      {% endcut %}
 
     - Media files
 
-        {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
+      {% include [media-files](../_includes/toloka-requester-source/id-toloka-requester-source/media-files.md) %}
 
     {% endlist %}
 
@@ -150,7 +150,7 @@ For example, if 1 column is set in the input data, and two more `\t\t` tabs are 
 
 ## For developers {#for-developers}
 
-- [Toloka API: Tasks](../../api/concepts/tasks.md)
+- [Toloka API: Tasks](https://toloka.ai/docs/api/api-reference/#tag--task)
 - [Toloka-Kit recipe: Upload tasks](../../toloka-kit/recipes/upload-tasks.md)
 
 ## Troubleshooting {#troubleshooting}

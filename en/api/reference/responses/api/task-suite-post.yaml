@@ -1,0 +1,87 @@
+single_task_suite:
+  description: The details about the task suite creation result.
+  summary: Create a single task suite
+  value:
+    pool_id: "36502086"
+    tasks:
+      - id: "00022cfa46--637cf3f76e13181a0164e729"
+        input_values:
+          image: "https://example.com/image1.jpg"
+      - id: "00022cfa46--637cf3ed6e13181a0164e5a2"
+        input_values:
+          image: "https://example.com/image2.jpg"
+    overlap: 1
+    infinite_overlap: false
+    reserved_for: []
+    unavailable_for: []
+    issuing_order_override: 0
+    id: "00022cfa46--637cf41c9376542ef7b52bde"
+    mixed: true
+    automerged: false
+    created: "2022-11-22T16:09:00.308"
+    remaining_overlap: 0
+multiple_task_suites:
+  summary: Create multiple task suites synchronously
+  value:
+    items:
+      0:
+        pool_id: "36502086"
+        tasks:
+          - id: "00022cfa46--637cf3f76e13181a0164e729"
+            input_values:
+              image: "https://example.com/image1.jpg"
+          - id: "00022cfa46--637cf3ed6e13181a0164e5a2"
+            input_values:
+              image: "https://example.com/image2.jpg"
+        overlap: 1
+        infinite_overlap: false
+        reserved_for: []
+        unavailable_for: []
+        issuing_order_override: 0
+        id: "00022cfa46--637cf41c9376542ef7b52bde"
+        mixed: true
+        automerged: false
+        created: "2022-11-22T16:09:00.308"
+        remaining_overlap: 0
+      2:
+        pool_id: "36502086"
+        tasks:
+          - id: "00022cfa46--637cf3f26e13181a0164e655"
+            input_values:
+              image: "https://example.com/image3.jpg"
+          - id: "00022cfa46--637cf3f66e13181a0164e704"
+            input_values:
+              image: "https://example.com/image4.jpg"
+        overlap: 1
+        infinite_overlap: false
+        reserved_for: []
+        unavailable_for: []
+        issuing_order_override: 0
+        id: "00022cfa46--637cf41c19c2d72a00e109d5"
+        mixed: true
+        automerged: false
+        created: "2022-11-22T16:09:00.308"
+        remaining_overlap: 0
+    validation_errors:
+      1: {}
+      3: {}
+async:
+  summary: Create multiple task suites asynchronously
+  value:
+    id: 57068577e4b0bf7b07a0256f
+    type: TASK_SUITE.BATCH_CREATE
+    status: FAIL
+    submitted: "2022-04-07T16:06:15.902"
+    started: "2022-04-07T16:06:15.902"
+    finished: "2022-04-07T16:06:15.902"
+    progress: 100
+    parameters:
+      open_pool: false
+      allow_defaults: false
+      skip_invalid_items: false
+    details:
+      total_count: 2
+      valid_count: 0
+      failed_count: 2
+      success_count: 0
+      not_valid_count: 2

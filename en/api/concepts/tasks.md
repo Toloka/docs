@@ -1,29 +1,4 @@
-# Overview
-
-## Description {#description}
-
-To upload tasks to a pool, you need to create JSON objects that contain:
-
-- The input data for the tasks (such as text or image URLs).
-- Correct responses (for control tasks).
-- Hints (for training tasks).
-
-Toloka automatically combines tasks into suites. You only need to specify the number of tasks to include in each suite (the `mixer_config` key in the [pool](pool.md)).
-
-If you want to create the task suites yourself, follow the instructions in [Overview](task-suite.md).
-
-## Methods {#methods}
-
-Method | Endpoint | Overview
------ | ----- | -----
-POST | [/tasks](create-task.md) | Creates one or multiple tasks.
-POST | [/tasks](create-tasks-batch.md) | Creates multiple tasks.
-GET | [/tasks/<task_id>](get-task.md) | Gets task data.
-GET | [/tasks](get-tasks-list.md) | Gets the list of tasks in the pool.
-PATCH | [/tasks/<task_id>](edit-task-overlap.md) | Changes the task overlap.
-PATCH | [/tasks/<task_id>/set-overlap-or-min](set-min-task-overlap.md) | Stops assigning a task to Tolokers.
-
-## Merging tasks {#task-merge}
+# Merging tasks
 
 {% note alert "Restriction" %}
 
@@ -48,7 +23,7 @@ The response will be recorded with a zero price, and the overlap will be reduc
 
 This option is only available for general tasks without manual review that were uploaded using ["smart mixing"](../../guide/concepts/task_upload.md).
 
-To activate task merging in a project, specify `"assignments_automerge_enabled": true` in the [project](project.md).
+To activate task merging in a project, specify `"assignments_automerge_enabled": true` in the [project](https://toloka.ai/docs/api/api-reference/#tag--project).
 
 ## See also {#see-also}
 

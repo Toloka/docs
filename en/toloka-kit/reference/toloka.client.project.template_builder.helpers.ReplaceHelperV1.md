@@ -1,5 +1,5 @@
 # ReplaceHelperV1
-`toloka.client.project.template_builder.helpers.ReplaceHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L152)
+`toloka.client.project.template_builder.helpers.ReplaceHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/helpers.py#L117)
 
 ```python
 ReplaceHelperV1(
@@ -12,16 +12,15 @@ ReplaceHelperV1(
 )
 ```
 
-Allows you to replace some parts of the string with others.
+Replaces a substring in a string.
 
 
-This helper function returns a string in which all occurrences of `find` in `data` are replaced with `replace`.
-Because the helper.replace helper returns a string, it can be used in properties that accept string values.
+For more information, see [helper.replace](https://toloka.ai/docs/template-builder/reference/helper.replace).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[Any\]**|<p>Data to perform the replacement on.</p>
-`find`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The value to search for — the string whose occurrences must be found in data and replaced with the string from replace.</p>
-`replace`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>The value to insert in place of the matches of the find value.</p>
+`data`|**Optional\[Any\]**|<p>An input string.</p>
+`find`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A substring to look for.</p>
+`replace`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]**|<p>A substring to replace with.</p>

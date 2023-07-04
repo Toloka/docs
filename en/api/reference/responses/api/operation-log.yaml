@@ -1,0 +1,40 @@
+success:
+  description: The operation log in the JSON format.
+  summary: Bonus issuing successful
+  value:
+    type: "USER_BONUS_PERSIST"
+    success: true
+    input:
+      id: 65
+      amount: 1.5
+      created: "2021-02-02T12:51:00"
+      user_id: "ec00d2407f7241258d0faba610110d95"
+      public_title:
+        EN: "Good job!"
+      public_message:
+        EN: "Ten tasks completed"
+      private_comment: "pool_123456"
+      without_message: false
+    output:
+      user_bonus_id: "2128"
+fail:
+  description: The operation log in the JSON format.
+  summary: Bonus issuing failed
+  value:
+    type: "USER_BONUS_VALIDATE"
+    success: false
+    input:
+      id: 65
+      amount: 1.5
+      created: "2021-02-02T12:51:00"
+      user_id: "ec00d2407f7241258d0faba610110d95"
+      public_title:
+        EN: "Good job!"
+      public_message:
+        EN: "Ten tasks completed"
+      private_comment: "pool_123456"
+      without_message: false
+    output:
+      user_id:
+        code: "ENTITY_DOES_NOT_EXIST"
+        message: "Entity does not exist"

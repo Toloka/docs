@@ -1,5 +1,5 @@
 # get_app_items
-`toloka.async_client.client.AsyncTolokaClient.get_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
 
 Finds all App task items that match certain criteria in an App project.
 
@@ -37,3 +37,12 @@ If you need to sort items use the [find_app_items](toloka.client.TolokaClient.fi
 * **Yield type:**
 
   [AsyncGenAdapter](toloka.util.async_utils.AsyncGenAdapter.md)\[[AppItem](toloka.client.app.AppItem.md), None\]
+
+**Examples:**
+
+
+```python
+items = toloka_client.get_app_items('Q2d15QBjpwWuDz8Z321g')
+for item in items:
+    print(item.id, item.status, item.finished_at)
+```

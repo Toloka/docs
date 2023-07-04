@@ -1,22 +1,21 @@
 # upsert_webhook_subscriptions
-`toloka.async_client.client.AsyncTolokaClient.upsert_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/async_client/client.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.upsert_webhook_subscriptions` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/async_client/client.py#L0)
 
 ```python
 async upsert_webhook_subscriptions(self, subscriptions: List[WebhookSubscription])
 ```
 
-Creates (upsert) many webhook-subscriptions.
+Creates (upsert) webhook subscriptions.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`subscriptions`|**List\[[WebhookSubscription](toloka.client.webhook_subscription.WebhookSubscription.md)\]**|<p>List of webhook-subscriptions, that will be created.</p>
+`subscriptions`|**List\[[WebhookSubscription](toloka.client.webhook_subscription.WebhookSubscription.md)\]**|<p>A list of webhook subscriptions to be created.</p>
 
 * **Returns:**
 
-  Result of subscriptions creation.
-Contains created subscriptions in `items` and problems in "validation_errors".
+  The result of the operation.
 
 * **Return type:**
 

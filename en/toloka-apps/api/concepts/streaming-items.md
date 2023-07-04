@@ -40,7 +40,7 @@ Project ID.||
 ||**Key**|**Overview**||
 ||**items**|**array of objects**
 
-Array of task items according to the `input_spec` value of the bespoke solution.
+Array of task items according to the `input_spec` value of the solution.
 
 You can upload an array from a single task item or from several task items within a single request.||
 |#

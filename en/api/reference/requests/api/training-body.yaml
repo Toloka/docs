@@ -1,0 +1,14 @@
+training_body:
+  description: The training pool that you want to create.
+  value:
+    project_id: '118252'
+    private_name: Simple training pool
+    may_contain_adult_content: false
+    assignment_max_duration_seconds: 600
+    mix_tasks_in_creation_order: true
+    shuffle_tasks_in_task_suite: true
+    training_tasks_in_task_suite_count: 3
+    task_suites_required_to_pass: 1
+    retry_training_after_days: 7
+    inherited_instructions: true
+    public_instructions: ''

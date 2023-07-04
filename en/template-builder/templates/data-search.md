@@ -74,6 +74,6 @@ In this example, the following fields are added:
 
 ## See also {#see-also}
 
-- [Tutorials — searching for product characteristics](../../guide/tutorials/internet-search.md)
+- [Tutorials: Searching for product characteristics](../../guide/tutorials/internet-search.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

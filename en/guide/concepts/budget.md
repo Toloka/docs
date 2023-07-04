@@ -16,7 +16,7 @@ Money in the account is spent on the following items:
 
 - [Fee](#comission)
 
-- [Rewards for Tolokers](bonus.md)
+- [Bonuses for Tolokers](bonus.md)
 
 You can [track spending](#track-budget) in your profile. You can also download a task report in a PDF file. To monitor the funds available in your account, [set up notifications](#money-notification).
 
@@ -26,7 +26,7 @@ The price of a task is set by the requester in the [pool settings](../../glossar
 
 ## Fees {#comission}
 
-The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [rewards](bonus.md).
+The requester is charged a fee for using Toloka — a percentage of the cost of tasks including [bonuses](bonus.md).
 
 The amount by project is shown in your [profile]({{ profile }}) (on the **Spent** tab). You can see total fees for the pool tasks on the pool page (the **Budget spent (+ markup)** and **Approximate budget (+ markup)** fields).
 
@@ -129,3 +129,5 @@ If you want to create main and secondary accounts, [write to support](../trouble
 [Refund money transferred to the Toloka account](../troubleshooting/support.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}
