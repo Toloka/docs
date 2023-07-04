@@ -11,7 +11,7 @@
 ```http
 GET /api/app/v0/apps
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 {% cut "Ответ" %}
@@ -67,7 +67,7 @@ Authorization: OAuth <OAuth token>
 ```http
 GET /api/app/v0/apps/2eN4l59qL2xHB5b8Jqp6
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 {% cut "Ответ" %}
@@ -210,7 +210,7 @@ Authorization: OAuth <OAuth token>
 ```http
 POST /api/app/v0/app-projects
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 {% cut "Тело запроса" %}
@@ -317,7 +317,7 @@ Authorization: OAuth <OAuth token>
 ```http
 POST /api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 {% cut "Тело запроса" %}
@@ -374,7 +374,7 @@ GET https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj
 ```http
 POST /api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches/z1Qy7aryrj9har9yKdY0/start
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 ## Проверьте статус элементов разметки проекта
@@ -390,7 +390,7 @@ Authorization: OAuth <OAuth token>
 ```http
 GET /api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/items?batch_id=z1Qy7aryrj9har9yKdY0
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 {% cut "Ответ" %}

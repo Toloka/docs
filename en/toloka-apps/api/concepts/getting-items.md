@@ -20,7 +20,7 @@ First, you need to get an item to start with. To do this, you must know the IDs 
 
   ```bash
   curl -X GET 'https://toloka.dev/api/app/v0/app-projects/8lvN9kBN4wwsj47ZqNal/items?batch_id=7d0YYJ2Av5OhnLVwAygZ&sort=id&limit=1' \
-      -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
   ```
 
   The response prints the details of the first item which include the item ID, input and output data.
@@ -59,7 +59,7 @@ First, you need to get an item to start with. To do this, you must know the IDs 
   import toloka.client as toloka
 
   # Instantiate the TolokaClient class object
-  toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+  toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
   # Get the first item in the batch
   items = toloka_client.find_app_items(
@@ -107,7 +107,7 @@ In cURL requests, we must manually iterate through the items, while in Toloka-Ki
 
   ```bash
   curl -X GET 'https://toloka.dev/api/app/v0/app-projects/8lvN9kBN4wwsj47ZqNal/items?batch_id=7d0YYJ2Av5OhnLVwAygZ&sort=id&limit=1&after_id=QPVvLYdlRPBH9pl7KzBV' \
-       -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
   ```
 
   The response prints the details of the second item which include the item ID, input and output data.
@@ -202,7 +202,7 @@ Parameter | Description
 import toloka.client as toloka
 
 # Instantiate the TolokaClient class object
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 # Get the first item in the batch
 items = toloka_client.find_app_items(

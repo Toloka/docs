@@ -16,7 +16,7 @@ For example, a cURL request to the Toloka API which gets the requester informati
 
 ```bash
 curl -X GET 'https://toloka.dev/api/v1/requester' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 {% endcut %}

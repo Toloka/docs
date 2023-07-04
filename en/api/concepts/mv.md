@@ -10,13 +10,13 @@ For majority vote verification based on Toloker responses, you can set up the fo
 - Skill value updates.
 - Toloker account blocking.
 
-To set up the verification, define key values in the `quality_control.configs` array (pool parameters).
+To set up the verification, define key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
-The pool is set up to use verification with an overlap of "5". The calculation uses tasks in which three or more Tolokers submitted the same response. The percentage of correct responses (those that match the majority vote) is stored as skill level 43. You can apply the skill for [filtering Tolokers](filter-skill.md). The skill is first calculated after two tasks that coincide with the majority vote have been completed.
+The pool is set up to use verification with an overlap of **5**. The calculation uses tasks in which three or more Tolokers submitted the same response. The percentage of correct responses (those that match the majority vote) is stored as skill level **43**. You can apply the skill for [filtering Tolokers](filter-skill.md). The skill is first calculated after **2** tasks that coincide with the majority vote have been completed.
 
-You can ban a Toloker from accessing the tasks in the project for a given number of days, hours, minutes (at a time or in total) or forever.
+You can ban a Toloker from accessing the tasks in the project for a given number of days, hours, minutes (at a time or in total), or permanently.
 
 ### Ban for 10 days
 
@@ -162,9 +162,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||

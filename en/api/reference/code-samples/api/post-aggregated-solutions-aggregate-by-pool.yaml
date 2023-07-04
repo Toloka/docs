@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{"pool_id":"1238218", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"12648", "fields":[{"name":"result"}]}'
 - lang: py
@@ -12,7 +12,7 @@
     from toloka.client.aggregation import PoolAggregatedSolutionRequest
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     aggregation_operation = toloka_client.aggregate_solutions_by_pool(
       type='WEIGHTED_DYNAMIC_OVERLAP',
@@ -28,7 +28,7 @@
 
     url = "https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -53,7 +53,7 @@
       'url': 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -76,7 +76,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .header("Content-Type", "application/json")
       .body("{\"pool_id\":\"1238218\", \"type\":\"WEIGHTED_DYNAMIC_OVERLAP\", \"answer_weight_skill_id\":\"12648\", \"fields\":[{\"name\":\"result\"}]}")
       .asString();

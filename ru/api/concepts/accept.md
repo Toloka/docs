@@ -20,7 +20,7 @@
 
     ```bash
     PATCH https://toloka.dev/api/v1/assignments/<task_suite_assignment_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 
@@ -28,7 +28,7 @@
 
     ```bash
     PATCH https://sandbox.toloka.dev/api/v1/assignments/<task_suite_assignment_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 

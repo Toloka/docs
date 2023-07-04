@@ -9,7 +9,7 @@
 ```http
 GET /api/app/v0/apps
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 ## Получение OAuth-токена

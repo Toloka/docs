@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/message-threads/61ebc4f06643ea4a616c4b5d/reply' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{"text":{"EN":"Thank you!"}}'
 - lang: py
@@ -12,7 +12,7 @@
     from toloka.client.message_thread import MessageThreadReply
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     message_reply = MessageThreadReply(text={'EN': 'Thank you!'})
     toloka_client.reply_message_thread(
@@ -27,7 +27,7 @@
 
     url = "https://toloka.dev/api/v1/message-threads/61ebc4f06643ea4a616c4b5d/reply"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -47,7 +47,7 @@
       'url': 'https://toloka.dev/api/v1/message-threads/61ebc4f06643ea4a616c4b5d/reply',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -65,7 +65,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/message-threads/61ebc4f06643ea4a616c4b5d/reply")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .header("Content-Type", "application/json")
       .body("{\"text\":{\"EN\":\"Thank you!\"}}")
       .asString();

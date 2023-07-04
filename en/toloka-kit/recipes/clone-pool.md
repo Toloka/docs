@@ -35,7 +35,7 @@ You should get an output with the created pool ID which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 cloned_pool = toloka_client.clone_pool('32267581')
 print(cloned_pool.id)

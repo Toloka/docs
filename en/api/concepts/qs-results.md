@@ -2,15 +2,15 @@
 
 {% include [announce](../_includes/announce.md) %}
 
-This example was created in the sandbox. Therefore, you need to perform tasks as a trusted user to process the results:
+This example was created in the sandbox. Therefore, you need to complete tasks as a trusted Toloker to process the results:
 
 1. Register as a Toloker in the [Toloka sandbox](https://sandbox.toloka.yandex.com/).
 
-1. Log in to the sandbox with the requester's username and follow the **Add trusted users** link on the [Users](https://sandbox.toloka.yandex.com/requester/workers) page.
+1. Log in to the sandbox with the requester's username and follow the **Add trusted Tolokers** link on the [Users](https://sandbox.toloka.yandex.com/requester/workers) page.
 
-1. Click **![Grant access](../../guide/_images/grant-access.svg) Grant access** and enter the username of the account you created.
+1. Click **+ Add user** and enter the username of the account you created.
 
-1. Perform the tasks in the sandbox under the username of a trusted user.
+1. Complete the tasks in the sandbox under the username of a trusted Toloker.
 
 If at least one task from the pool is completed, you can get responses.
 
@@ -22,7 +22,7 @@ In the example given, Tolokers were not required to upload any files as a respon
 
 In the `pool_id` query parameter, replace `{pool_id}` with the ID of the pool you want to get responses for (the ID received in response to the [add pool request](qs-placement.md#pool)).
 
-Next, use the `GET` method:
+Next, use the `GET` [method](https://toloka.ai/docs/api/api-reference/#get-/assignments):
 
 {% list tabs %}
 
@@ -31,9 +31,8 @@ Next, use the `GET` method:
     Send a request from the command line using the cURL utility:
 
     ```bash
-    curl -X GET \
-         -H 'Authorization: OAuth <OAuth token>' \
-    https://sandbox.toloka.dev/api/v1/assignments?pool_id={pool_id}
+    curl -X GET 'https://sandbox.toloka.dev/api/v1/assignments?pool_id={pool_id}' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
     ```
 
 - Postman
@@ -49,7 +48,7 @@ Next, use the `GET` method:
     1. Headers
 
         ```bash
-        Authorization: OAuth <OAuth token>
+        Authorization: OAuth PlaceYourRealOAuthToken_Here
         ```
 
 {% endlist %}

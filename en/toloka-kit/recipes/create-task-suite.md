@@ -67,7 +67,7 @@ import toloka.client as toloka
 from toloka.client.task import Task
 from toloka.client.task_suite import TaskSuite
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 tasks = [
     toloka.task.Task(input_values={'image': 'https://example.com/image_1.png'}),

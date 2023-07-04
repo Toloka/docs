@@ -11,7 +11,7 @@ This mode is suitable, for example, for moderation tasks.
 ```http
 POST /app-projects/{app_project_id}/items/bulk
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 ### Path parameters {#create-item-path-params}
@@ -66,7 +66,7 @@ After the request is completed, find the last labeled item with the latest `fini
 ```http
 GET /app-projects/{app_project_id}/items?sort=finished&after_id={last_saved_item_id}
 Host: https://toloka.dev
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 ### Path parameters {#get-result-path-params}

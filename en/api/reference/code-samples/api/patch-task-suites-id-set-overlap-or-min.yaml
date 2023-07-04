@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X PATCH 'https://toloka.dev/api/v1/task-suites/000012e4ca--62eadb541b54e36b45b7a117/set-overlap-or-min' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{"overlap":0}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     toloka_client.patch_task_suite_overlap_or_min(
                   '000012e4ca--62eadb541b54e36b45b7a117', overlap=0)
@@ -22,7 +22,7 @@
 
     url = "https://toloka.dev/api/v1/task-suites/000012e4ca--62eadb541b54e36b45b7a117/set-overlap-or-min"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -40,7 +40,7 @@
       'url': 'https://toloka.dev/api/v1/task-suites/000012e4ca--62eadb541b54e36b45b7a117/set-overlap-or-min',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -56,7 +56,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.patch("https://toloka.dev/api/v1/task-suites/000012e4ca--62eadb541b54e36b45b7a117/set-overlap-or-min")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .header("Content-Type", "application/json")
       .body("{\"overlap\":0}")
       .asString();

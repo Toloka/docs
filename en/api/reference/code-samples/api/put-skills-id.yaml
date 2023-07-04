@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X PUT 'https://toloka.dev/api/v1/skills/11294' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{"name":"Programmer","public_name":{"EN":"Programmer"},"public_requester_description":{"EN":"You are an expert in programming languages"},"private_comment":"Got at least 5 right responses on control tasks with C++ or Python","hidden":true,"deprecated":false}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     skill = toloka_client.get_skill('11294')
     skill.private_comment = 'Got at least 5 right responses on control tasks with C++ or Python'
@@ -24,7 +24,7 @@
 
     url = "https://toloka.dev/api/v1/skills/11294"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -51,7 +51,7 @@
       'url': 'https://toloka.dev/api/v1/skills/11294',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -76,7 +76,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.put("https://toloka.dev/api/v1/skills/11294")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .header("Content-Type", "application/json")
       .body("{\"name\":\"Programmer\",\"public_name\":{\"EN\":\"Programmer\"},\"public_requester_description\":{\"EN\":\"You are an expert in programming languages\"},\"private_comment\":\"Got at least 5 right responses on control tasks with C++ or Python\",\"hidden\":true,\"deprecated\":false}")
       .asString();

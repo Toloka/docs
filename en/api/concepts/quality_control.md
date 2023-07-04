@@ -4,7 +4,7 @@ Quality control rules help regulate access to a project or pool: you can filter 
 
 A rule consists of two parts: the condition ("If"), and the action to perform when the condition is met ("then"). If there are multiple conditions, they are combined using AND.
 
-To define quality control rules, add an array of `quality_control.configs` JSON objects to the pool.
+To define quality control rules, add an array of `quality_control.configs` JSON objects to the [pool](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Quality control rules {#quality-control-blocks}
 

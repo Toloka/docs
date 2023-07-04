@@ -2,7 +2,7 @@
 
 Control tasks contain correct responses. They are used for calculating the Toloker's percentage of correct responses. Depending on the result, you can either change the Toloker's skill value, or block access to tasks.
 
-Add [tasks](https://toloka.ai/docs/api/api-reference/#tag--task) with correct responses to the pool. Set key values in the `quality_control.configs` array in the pool settings.
+Add [tasks](https://toloka.ai/docs/api/api-reference/#tag--task) with correct responses to the pool. Set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
@@ -10,11 +10,11 @@ Let's say that the following settings are made in the project:
 
 - Calculating the skill value equal to the percentage of correct responses in control tasks. You can use the skill value for [filtering Tolokers](filter-skill.md).
 
-- Denying access to the project if less than 75% of the Toloker's responses are correct.
+- Denying access to the project if less than **75%** of the Toloker's responses are correct.
 
-The first skill calculation is made when 7 control tasks are completed. The calculation uses the last 10 responses from the project's control tasks.
+The first skill calculation is made when **7** control tasks are completed. The calculation uses the last **10** responses from the project's control tasks.
 
-You can ban a Toloker from accessing the tasks in the project for a given number of days, hours, minutes (at a time or in total) or forever.
+You can ban a Toloker from accessing the tasks in the project for a given number of days, hours, minutes (at a time or in total), or permanently.
 
 ### Ban for 10 days
 
@@ -159,9 +159,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
@@ -261,7 +259,7 @@ Determines whether to re-open a closed pool:
 
 - `true` — Open the pool after making changes if it is closed.
 - `false` — Don't open the pool after making changes, if it is closed. ||
-|| `configs[].rules.action.parameters.duration_unit_ | _string_
+|| `configs[].rules.action.parameters.duration_unit` | _string_
 
 {% include [duration-unit](../_includes/duration-unit.md) %} ||
 || `configs[].rules.action.parameters.duration` | _integer_

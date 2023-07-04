@@ -6,6 +6,8 @@ Toloka can resend tasks for completion if:
 - The requester banned the Toloker from tasks.
 - The tasks didn't pass review during post-acceptance.
 
+Set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
+
 ## Request body {#body}
 
 Re-assign task suites if a quality control rule or skill filter was triggered.
@@ -71,9 +73,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||

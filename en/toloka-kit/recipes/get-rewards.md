@@ -29,7 +29,7 @@ You should get an output with the bonus IDs, public titles, and amount which loo
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 for bonus in toloka_client.get_user_bonuses():
     print(bonus.id, bonus.public_title.get('EN'), bonus.amount)

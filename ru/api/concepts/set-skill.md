@@ -18,7 +18,7 @@
 
     ```bash
     PUT https://toloka.dev/api/v1/user-skills
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 
@@ -26,7 +26,7 @@
 
     ```bash
     PUT https://sandbox.toloka.dev/api/v1/user-skills
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 

@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X DELETE 'https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     toloka_client.delete_webhook_subscription('62ee14ada451956b21388859')
 - lang: python
@@ -19,7 +19,7 @@
 
     url = "https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
     }
     response = requests.delete(url, headers=headers)
 
@@ -33,7 +33,7 @@
       'url': 'https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
       }
     };
     request(options, function (error, response) {
@@ -45,5 +45,5 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.delete("https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .asString();

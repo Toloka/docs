@@ -57,7 +57,7 @@ Elephant color (advanced)
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 project = toloka_client.get_project('118252')
 project.public_name = "Elephant color (advanced)"

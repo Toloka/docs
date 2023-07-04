@@ -18,7 +18,7 @@
 
     ```bash
     POST https://toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
 
     // одна страница заданий
@@ -32,7 +32,7 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/task-suites
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
 
     // одна страница заданий

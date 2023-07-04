@@ -25,7 +25,7 @@ The attachment will be saved to the specified `out` destination.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 with open(attachment_id + '.jpg', 'wb') as attachment_file:
     toloka_client.download_attachment('fr.5867be74-249b-4264-9ed0-aa5d4c201846', out=attachment_file)

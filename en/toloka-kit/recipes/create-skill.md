@@ -49,7 +49,7 @@ You should get an output with the created skill ID which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 new_skill = toloka_client.create_skill(
     hidden=False,

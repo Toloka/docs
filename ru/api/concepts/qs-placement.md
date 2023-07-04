@@ -37,7 +37,7 @@
 
     ```bash
     curl -X POST \
-         -H 'Authorization: OAuth <OAuth token>' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{
                "public_name": "Cat or dog",
@@ -100,7 +100,7 @@
   1. Headers
 
     ```bash
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 
@@ -199,7 +199,7 @@
 
     ```bash
     curl -X POST \
-         -H 'Authorization: OAuth <OAuth token>' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{
                "project_id": "<project id>",
@@ -285,7 +285,7 @@
   1. Headers
 
     ```bash
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 
@@ -404,7 +404,7 @@
 
     ```bash
     curl -X POST \
-         -H 'Authorization: OAuth <OAuth token>' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '[
                {
@@ -445,7 +445,7 @@
   1. Headers
 
     ```bash
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 
@@ -499,7 +499,7 @@
 
     ```bash
     curl -X POST \
-      -H 'Authorization: OAuth <OAuth token>' \
+      -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
       -H 'Content-Type: application/json' \
     https://sandbox.toloka.dev/api/v1/pools/<pool_id>/open
     ```
@@ -517,7 +517,7 @@
   1. Headers
 
         ```bash
-        Authorization: OAuth <OAuth token>
+        Authorization: OAuth PlaceYourRealOAuthToken_Here
         Content-Type: application/json
         ```
 

@@ -30,7 +30,7 @@ You should get an output with the response IDs and statuses which looks like thi
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 for assignment in toloka_client.get_assignments(pool_id='1085757'):
     print(assignment.id, assignment.status)

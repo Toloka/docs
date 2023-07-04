@@ -6,13 +6,13 @@ You can restrict the total amount of compensation per Toloker in a pool. When th
 
 - Protect yourself from robots (for this purpose, the threshold should be higher, such as 10% of the price for the entire pool).
 
-Set key values in the `quality_control.configs` array in the pool settings.
+Set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
-The Toloker is banned from the requester's projects when the Toloker's daily earnings on tasks in the pool reaches 20 dollars.
+The Toloker is banned from the requester's projects when the Toloker's daily earnings on tasks in the pool reaches **20** dollars.
 
-You can ban a Toloker for a given number of days, hours, minutes (at a time or in total) or forever.
+You can ban a Toloker for a given number of days, hours, minutes (at a time or in total), or permanently.
 
 ### Ban for 10 days
 
@@ -133,9 +133,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||

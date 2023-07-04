@@ -1,8 +1,10 @@
 # Overview
 
-You can choose which Tolokers will have access to pool tasks. For example, you can select Tolokers by region, skill, or type of browser (desktop or mobile).
+You can choose which Tolokers will have access to pool tasks. For example, you can select Tolokers by region, skill, or browser type (desktop or mobile).
 
-To set up Toloker filtering for a pool, add the `filter` JSON object to the pool. A [sample filter in JSON](#request-example) with a [parameter description](#params) is shown below.
+To set up Toloker filtering for a pool, add the `filter` JSON object to the `assignments_issuing_config` attribute when [creating](https://toloka.ai/docs/api/api-reference/#post-/pools) or [editing](https://toloka.ai/docs/api/api-reference/#put-/pools/-id-) a pool.
+
+A [sample filter in JSON](#request-example) with a [parameter description](#params) is shown below.
 
 {% note info %}
 
@@ -16,29 +18,29 @@ This example selects Tolokers from US or United Kingdom for completing tasks (it
 
 ```json
 {
-  "filter" : {
-    "and":[
+  "filter": {
+    "and": [
       {
-        "or":[
+        "or": [
           {
-            "category":"computed",
-            "key":"region_by_ip",
-            "operator":"IN",
-            "value":84
+            "category": "computed",
+            "key": "region_by_ip",
+            "operator": "IN",
+            "value": 84
           },
           {
-            "category":"computed",
-            "key":"region_by_ip",
-            "operator":"IN",
-            "value":102
+            "category": "computed",
+            "key": "region_by_ip",
+            "operator": "IN",
+            "value": 102
           }
         ]
       },
       {
-        "category":"skill",
-        "key":"2",
-        "operator":"GTE",
-        "value":"60"
+        "category": "skill",
+        "key": "2",
+        "operator": "GTE",
+        "value": "60"
       }
     ]
   }
@@ -76,7 +78,7 @@ The `operator` value must be lowercase.
 {% endnote %} ||
 || `value` | _boolean_, _string_, _list of strings_, _integer_ \| **required**
 
-The value of the attribute from the `key` field. For example, the ID of the region specified in the profile, or the minimum skill value. To choose the correct value, see the descriptions of filters in the sections [Filter by profile data](filter-profile.md), [Filter by calculated data](filter-computed.md), [Filter by skills](filter-skill.md). ||
+The value of the attribute from the `key` field. For example, the ID of the region specified in the profile, or the minimum skill value. To choose the correct value, see the descriptions of filters in the [Filter by profile data](filter-profile.md), [Filter by calculated data](filter-computed.md), [Filter by skills](filter-skill.md) sections. ||
 |#
 
 ## See also {#see-also}
