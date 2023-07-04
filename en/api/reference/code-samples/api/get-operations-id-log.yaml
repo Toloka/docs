@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X GET 'https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     operation_log = toloka_client.get_operation_log('5c04458e-63c1-46c1-ba0d-6f0756a5358b')
     for entry in operation_log:
@@ -22,7 +22,7 @@
 
     url = "https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
     }
     response = requests.get(url, headers=headers)
 
@@ -36,7 +36,7 @@
       'url': 'https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
       }
     };
     request(options, function (error, response) {
@@ -48,5 +48,5 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.get("https://toloka.dev/api/v1/operations/5c04458e-63c1-46c1-ba0d-6f0756a5358b/log")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .asString();

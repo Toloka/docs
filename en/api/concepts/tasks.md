@@ -1,16 +1,16 @@
 # Merging tasks
 
+Merging saves you money if the same task was uploaded to different pools.
+
 {% note alert "Restriction" %}
 
-- You can only merge tasks with identical input data. The order of fields in the JSON object must also match.
+- You can only merge tasks with **identical input data**. The order of fields in the JSON object must also match.
 
-- You can only merge tasks in open pools. If a new pool got a task that was previously completed in a pool that has been closed or archived, the tasks won't be merged.
+- You can only merge tasks in **open pools**. If a new pool got a task that was previously completed in a pool that has been closed or archived, the tasks won't be merged.
 
-- You can only merge your general tasks.
+- You can only merge **general tasks**.
 
 {% endnote %}
-
-Merging saves you money if the same task was uploaded to different pools.
 
 The response to the task received will be automatically assigned to another task if:
 
@@ -21,7 +21,7 @@ The response to the task received will be automatically assigned to another tas
 
 The response will be recorded with a zero price, and the overlap will be reduced by one.
 
-This option is only available for general tasks without manual review that were uploaded using ["smart mixing"](../../guide/concepts/task_upload.md).
+This option is only available for general tasks without manual review that were uploaded using ["smart mixing"](../../guide/concepts/distribute-tasks-by-pages.md#smart-mixing).
 
 To activate task merging in a project, specify `"assignments_automerge_enabled": true` in the [project](https://toloka.ai/docs/api/api-reference/#tag--project).
 

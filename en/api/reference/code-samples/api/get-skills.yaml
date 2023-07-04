@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X GET 'https://toloka.dev/api/v1/skills' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     for skill in toloka_client.get_skills():
       print(skill.id, skill.name, skill.private_comment)
@@ -21,7 +21,7 @@
 
     url = "https://toloka.dev/api/v1/skills"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
     }
     response = requests.get(url, headers=headers)
 
@@ -35,7 +35,7 @@
       'url': 'https://toloka.dev/api/v1/skills',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
       }
     };
     request(options, function (error, response) {
@@ -47,5 +47,5 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.get("https://toloka.dev/api/v1/skills")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .asString();

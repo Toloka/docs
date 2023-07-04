@@ -129,7 +129,7 @@ To change the status of the received responses using Toloka API, send a `PATCH` 
 
 ```bash
 curl -X PATCH 'https://toloka.dev/api/v1/assignments/0001d38f5b--61c8be211c3a7842a596ac0a' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
      -H 'Content-Type: application/json' \
      -d '{"status":"ACCEPTED", "public_comment":"OK"}'
 ```

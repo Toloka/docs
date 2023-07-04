@@ -14,14 +14,14 @@
 
     ```bash
     POST https://toloka.dev/api/v1/projects/<project_id>/archive
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 - Песочница
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/projects/<project_id>/archive
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 {% endlist %}

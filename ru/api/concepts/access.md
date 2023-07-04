@@ -8,7 +8,7 @@
 
 ```bash
 GET https://sandbox.toloka.dev/api/v1/assignments?pool_id=12345
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 ## URL ресурса {#urls}

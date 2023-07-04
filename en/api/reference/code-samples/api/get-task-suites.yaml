@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X GET 'https://toloka.dev/api/v1/task-suites?pool_id=1227652' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     for task_suite in toloka_client.get_task_suites(pool_id='1227652'):
       print(task_suite.id, task_suite.created.date())
@@ -23,7 +23,7 @@
       'pool_id': '1227652'
     }
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
     }
     response = requests.get(url, params=params, headers=headers)
 
@@ -37,7 +37,7 @@
       'url': 'https://toloka.dev/api/v1/task-suites',
       'qs': {'pool_id': '1227652'},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
       }
     };
     request(options, function (error, response) {
@@ -50,5 +50,5 @@
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.get("https://toloka.dev/api/v1/task-suites")
       .queryString("pool_id", "1227652")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .asString();

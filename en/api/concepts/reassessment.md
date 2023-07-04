@@ -4,11 +4,13 @@ You can use this rule to:
 
 - Resend rejected task suites for recompletion to other Tolokers.
 
-    If you rejected a task suite, you may want it to be completed by a different Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](../../glossary.md#overlap) for this task suite only. This is especially helpful if you have the overlap value set to 1.
+    If you rejected a task suite, you may want it to be completed by a different Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](../../glossary.md#overlap) for this task suite only. This is especially helpful if you have the overlap value set to **1**.
 
 - Save money on re-completing task suites that you have already accepted.
 
     If you reviewed and accepted a task suite, it may not make sense for other Tolokers to complete it. To avoid this, you can reduce the overlap only for accepted task suites.
+
+Set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
@@ -75,9 +77,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||

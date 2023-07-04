@@ -12,7 +12,7 @@
 
     ```bash
     POST https://toloka.dev/api/v1/message-threads/<thread_id>/reply
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 
@@ -20,7 +20,7 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/message-threads/<thread_id>/reply
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 

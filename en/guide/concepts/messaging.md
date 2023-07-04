@@ -77,7 +77,7 @@ To send a message using Toloka API, send a `POST` request with the information a
 
 ```bash
 curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
      -H 'Content-Type: application/json' \
      -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
 ```

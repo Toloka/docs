@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/app/v0/app-projects' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{"app_id":"J5Ep73Zrw47SA47pd64y", "parent_app_project_id":"xNnK4wYdlMPCQ0zPL315", "name":"My new project", "parameters":{"default_language":"en","name":"Product relevance project","instruction_classes":[{"description":"The product is relevant to the query.","label":"Relevant","value":"relevant"},{"description":"The product is not completely relevant to the query.","label":"Irrelevant","value":"irrelevant"}],"instruction_examples":[{"description":"The product exactly matches the query.","label":"relevant","query":"some search query","screenshot_url":"https://example.com/1"},{"description":"The product shape matches but the product color does not.","label":"irrelevant","query":"other search query","screenshot_url":"https://example.com/2"}]}}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     app_project = toloka.client.AppProject(
       app_id='9lZaMl363jahzra1rrYq',
@@ -94,7 +94,7 @@
     })
     headers = {
       'Content-Type': 'application/json',
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
@@ -109,7 +109,7 @@
       'url': 'https://toloka.dev/api/app/v0/app-projects',
       'headers': {
         'Content-Type': 'application/json',
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
       },
       body: JSON.stringify({
         "app_id": "J5Ep73Zrw47SA47pd64y",
@@ -158,6 +158,6 @@
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/app/v0/app-projects")
       .header("Content-Type", "application/json")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .body("{\"app_id\":\"J5Ep73Zrw47SA47pd64y\", \"parent_app_project_id\":\"xNnK4wYdlMPCQ0zPL315\", \"name\":\"My new project\", \"parameters\":{\"default_language\":\"en\",\"name\":\"Product relevance project\",\"instruction_classes\":[{\"description\":\"The product is relevant to the query.\",\"label\":\"Relevant\",\"value\":\"relevant\"},{\"description\":\"The product is not completely relevant to the query.\",\"label\":\"Irrelevant\",\"value\":\"irrelevant\"}],\"instruction_examples\":[{\"description\":\"The product exactly matches the query.\",\"label\":\"relevant\",\"query\":\"some search query\",\"screenshot_url\":\"https://example.com/1\"},{\"description\":\"The product shape matches but the product color does not.\",\"label\":\"irrelevant\",\"query\":\"other search query\",\"screenshot_url\":\"https://example.com/2\"}]}}")
       .asString();

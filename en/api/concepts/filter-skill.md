@@ -1,24 +1,47 @@
 # Filter by skills
 
-To use a skill value for selecting Tolokers, define the `filter` object in the pool parameters.
+To use a skill value for selecting Tolokers, define the `assignments_issuing_config.filter` object in the [pool parameters](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 To filter Tolokers without a skill set the `"operator": "EQ"` parameter and exclude the `value` parameter.
 
 ## Sample filter in JSON {#request-example}
 
-```json
-{
-  "filter" : {
-    "and" : [ {
-      "category": "skill",
-      "key": 55,
-      "operator": "GT",
-      "value": 59.7
-      }
-    ]
+{% list tabs %}
+
+- Filter Tolokers with skill
+
+  ```json
+  {
+    "filter": {
+      "and": [
+        {
+          "category": "skill",
+          "key": 1124,
+          "operator": "GT",
+          "value": 59.7
+        }
+      ]
+    }
   }
-}
-```
+  ```
+
+- Filter Tolokers without skill
+
+  ```json
+  {
+    "filter": {
+      "and": [
+        {
+          "category": "skill",
+          "key": 1124,
+          "operator": "EQ",
+        }
+      ]
+    }
+  }
+  ```
+
+{% endlist %}
 
 ## Key, value parameters {#params}
 
@@ -26,11 +49,13 @@ To filter Tolokers without a skill set the `"operator": "EQ"` parameter and excl
 || Key parameter | Value description ||
 || _integer_
 
-Skill ID. | _float_
+The ID of the skill you want to use to filter Tolokers.
 
-Fractional value of the skill. Minimum — 0, maximum — 100.
+You can get the list of all available skills using the [Get list of skills](https://toloka.ai/docs/api/api-reference/#get-/skills) method. | _float_
 
-Value of "operator":
+The fractional value of the skill. Minimum — `0`, maximum — `100`.
+
+Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to.

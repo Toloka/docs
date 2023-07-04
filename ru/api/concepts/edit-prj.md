@@ -14,7 +14,7 @@
 
     ```bash
     PUT https://toloka.dev/api/v1/projects/<project_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
 
     {<project parameters, including updated ones>}
@@ -24,7 +24,7 @@
 
     ```bash
     PUT https://sandbox.toloka.dev/api/v1/projects/<project_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
 
     {<project parameters, including updated ones>}

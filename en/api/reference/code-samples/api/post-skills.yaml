@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/skills' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{"name":"Programmer","public_name":{"EN":"Programmer"},"public_requester_description":{"EN":"You are an expert in programming languages"}}'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     new_skill = toloka_client.create_skill(
       name = 'Programmer',
@@ -29,7 +29,7 @@
 
     url = "https://toloka.dev/api/v1/skills"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -53,7 +53,7 @@
       'url': 'https://toloka.dev/api/v1/skills',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -75,7 +75,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/skills")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .header("Content-Type", "application/json")
       .body("{\"name\":\"Programmer\",\"public_name\":{\"EN\":\"Programmer\"},\"public_requester_description\":{\"EN\":\"You are an expert in programming languages\"}}")
       .asString();

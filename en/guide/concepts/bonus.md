@@ -98,7 +98,7 @@ To issue bonuses using Toloka API, send a `POST` request with the information ab
 
 ```bash
 curl -X POST 'https://toloka.dev/api/v1/user-bonuses' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
      -H 'Content-Type: application/json' \
      -d '{"user_id":"fac97860c7929add8048ed2ef63b66fd", "amount":0.5, "public_title":{"EN":"Perfect job!"}, "public_message":{"EN":"You are the best!"}}'
 ```

@@ -46,7 +46,7 @@ You should get an output with the message ID and topic which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 message_thread = toloka_client.compose_message_thread(
     recipients_select_type='DIRECT',

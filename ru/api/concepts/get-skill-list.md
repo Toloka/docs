@@ -12,14 +12,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/skills
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/skills
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 {% endlist %}
@@ -72,14 +72,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/skills?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 {% endlist %}
@@ -92,14 +92,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/skills?sort=id&limit=10&id_gt=<ID of the last skill from the previous response>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 {% endlist %}
