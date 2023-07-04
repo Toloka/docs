@@ -1,5 +1,5 @@
 # LinkOpenedConditionV1
-`toloka.client.project.template_builder.conditions.LinkOpenedConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/conditions.py#L166)
+`toloka.client.project.template_builder.conditions.LinkOpenedConditionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/conditions.py#L143)
 
 ```python
 LinkOpenedConditionV1(
@@ -11,17 +11,14 @@ LinkOpenedConditionV1(
 )
 ```
 
-Checks that the Toloker clicked the link.
+Checks that a Toloker clicked a link.
 
 
-Important: To trigger the condition, the Toloker must follow the link from the Toloka interface — you must give Tolokers
-this option. The condition will not work if the Toloker opens the link from the browser address bar.
-
-This condition can be used in the view.link component and also anywhere you can use (conditions).
+For more information, see [condition.link-opened](https://toloka.ai/docs/template-builder/reference/condition.link-opened).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`url`|**Optional\[Any\]**|<p>The link that must be clicked.</p>
-`hint`|**Optional\[Any\]**|<p>Validation error message that a Toloker will see.</p>
+`url`|**Optional\[Any\]**|<p>The link URL.</p>
+`hint`|**Optional\[Any\]**|<p>A hint that is shown if the condition is not met.</p>

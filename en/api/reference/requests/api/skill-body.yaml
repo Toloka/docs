@@ -1,0 +1,11 @@
+skill_body:
+  description: The skill that you want to create.
+  value:
+    name: Programmer
+    public_name:
+      EN: Programmer
+    public_requester_description:
+      EN: You are an expert in programming languages
+    private_comment: Got at least 5 right responses on control tasks with C++ or Python
+    hidden: true
+    deprecated: false

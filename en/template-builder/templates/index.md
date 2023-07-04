@@ -16,6 +16,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 
 - [Text recognition from an image (OCR)](text-recognition.md)
 
+- [Product recognition in images](product-recognition-in-images.md)
+
 - [Accessories recommendations](accessories-recommendations.md)
 
 ## Video
@@ -35,6 +37,8 @@ From the Toloka platform interface, select the **Projects** tab, click **Create 
 - [Sentiment analysis & Content moderation](content-moderation.md)
 
 - [Named entity recognition (NER)](named-entity-recognition.md)
+
+- [Product category classification](product-category-classification.md)
 
 ## Audio
 

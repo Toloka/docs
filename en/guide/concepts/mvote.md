@@ -18,7 +18,7 @@ Let's say we set up this rule in a pool with `overlap=5`:
 
 ![](../_images/control-rules/mvote/qcr-mvote_example1_2.png =700x)
 
-It is activated when at least three of the tasks completed by the Toloker reach full overlap. When responses have been received from all five task Tolokers, the system determines which response was selected by the majority. If the Toloker's responses to two out of three tasks differ from the responses of the majority, the Toloker is banned from the project for 10 days. To collect all the responses needed to trigger the rule, enable **Keep task order** in [the pool settings](pool_poolparams.md#keeptaskorder).
+It is activated when at least three of the tasks completed by the Toloker reach full overlap. When responses have been received from all five task Tolokers, the system determines which response was selected by the majority. If the Toloker's responses to two out of three tasks differ from the responses of the majority, the Toloker is banned from the project for 10 days. To collect all the responses needed to trigger the rule, enable **Keep task order from uploaded data** in [the pool settings](pool_poolparams.md#keeptaskorder).
 
 ![](../_images/control-rules/mvote/save-order-tasks-yes.png =700x)
 
@@ -277,3 +277,5 @@ The assignments submitted by banned Tolokers will be taken into account if they 
 {% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

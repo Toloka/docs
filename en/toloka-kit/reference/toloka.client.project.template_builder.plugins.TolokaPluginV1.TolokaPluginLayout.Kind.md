@@ -1,11 +1,11 @@
 # Kind
-`toloka.client.project.template_builder.plugins.TolokaPluginV1.TolokaPluginLayout.Kind` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L193)
+`toloka.client.project.template_builder.plugins.TolokaPluginV1.TolokaPluginLayout.Kind` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L189)
 
-An enumeration.
+A task block layout mode.
 
 ## Attributes Description
 
 | Name | Value | Description |
 | :------| :-----------| :----------| 
-`PAGER`|'pager'|<p>display only one task on the page, with a button to switch between tasks at the bottom.</p>
-`SCROLL`|'scroll'|<p>(default) display multiple tasks on the page at the same time.</p>
+`PAGER`|'pager'|<p>A single task is displayed on a page. Buttons at the bottom of the page show other tasks from a task suite.</p>
+`SCROLL`|'scroll'|<p>All tasks from a task suite are displayed on a page. It is the default mode.</p>

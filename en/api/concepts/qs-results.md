@@ -8,7 +8,7 @@ This example was created in the sandbox. Therefore, you need to perform tasks as
 
 1. Log in to the sandbox with the requester's username and follow the **Add trusted users** link on the [Users](https://sandbox.toloka.yandex.com/requester/workers) page.
 
-1. Click **Add user** and enter the username of the account you created.
+1. Click **![Grant access](../../guide/_images/grant-access.svg) Grant access** and enter the username of the account you created.
 
 1. Perform the tasks in the sandbox under the username of a trusted user.
 
@@ -20,7 +20,7 @@ In the example given, Tolokers were not required to upload any files as a respon
 
 ### Request {#get-responses-request}
 
-In the `pool_id` query parameter, replace `<pool id>` with the ID of the pool you want to get responses for (the ID received in response to the [add pool request](qs-placement.md#pool)).
+In the `pool_id` query parameter, replace `{pool_id}` with the ID of the pool you want to get responses for (the ID received in response to the [add pool request](qs-placement.md#pool)).
 
 Next, use the `GET` method:
 
@@ -33,7 +33,7 @@ Next, use the `GET` method:
     ```bash
     curl -X GET \
          -H 'Authorization: OAuth <OAuth token>' \
-    https://sandbox.toloka.dev/api/v1/assignments?pool_id=<pool id>
+    https://sandbox.toloka.dev/api/v1/assignments?pool_id={pool_id}
     ```
 
 - Postman
@@ -43,7 +43,7 @@ Next, use the `GET` method:
     1. Request URL
 
         ```bash
-        https://sandbox.toloka.dev/api/v1/assignments?pool_id=<pool id>
+        https://sandbox.toloka.dev/api/v1/assignments?pool_id={pool_id}
         ```
 
     1. Headers
@@ -72,7 +72,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5bc",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/3.jpg"
+            "image": "https://example.com/image_3.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -85,7 +85,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbaa52cc70d7118c5b8",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/1.jpg"
+            "image": "https://example.com/image_1.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -98,7 +98,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5ba",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/2.jpg"
+            "image": "https://example.com/image_2.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -147,7 +147,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5ba",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/2.jpg"
+            "image": "https://example.com/image_2.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -160,7 +160,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbba52cc70d7118c5bc",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/3.jpg"
+            "image": "https://example.com/image_3.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -173,7 +173,7 @@ Toloker responses are returned in the `items` array in the following format:
         {
           "id": "00000f80eb--617d0cbaa52cc70d7118c5b8",
           "input_values": {
-            "image": "https://sandbox.toloka.dev/api/proxy/thgn1/photos/1.jpg"
+            "image": "https://example.com/image_1.jpg"
           },
           "pool_id": "9876543",
           "overlap": 2,
@@ -218,9 +218,11 @@ Toloker responses are returned in the `items` array in the following format:
 
 ## Learn more {#links-qs-results}
 
-- [HTTP methods used for processing Toloker responses](get-response.md)
-- [HTTP methods used for processing files in Toloker responses](attachments.md)
-- [Response aggregation](aggregated-solutions.md)
-- [Using libraries](libraries.md)
+- [HTTP methods used for processing Toloker responses](https://toloka.ai/docs/api/api-reference/#tag--assignment)
+- [HTTP methods used for processing files in Toloker responses](https://toloka.ai/docs/api/api-reference/#tag--attachment)
+- [Response aggregation](https://toloka.ai/docs/api/api-reference/#tag--aggregated-solution)
+- [Using libraries](../../toloka-kit/python-sdk.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

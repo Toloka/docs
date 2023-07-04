@@ -24,7 +24,7 @@ You can remove a skill only manually. It can't be done using quality control rul
 
 ## For developers {#for-developers}
 
-- [Toloka API: Removing skill from Toloker](../../api/concepts/delete-skill.md)
+- [Toloka API: Removing skill from Toloker](https://toloka.ai/docs/api/api-reference/#delete-/user-skills/-id-)
 - [Toloka-Kit recipe: Remove skill from Toloker](../../toloka-kit/recipes/delete-user-skill.md)
 
 ## Troubleshooting {#troubleshooting}

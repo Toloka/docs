@@ -164,3 +164,5 @@
 Очищается история только того правила, для которого сработал бан.
 
 {% endnote %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -1,5 +1,5 @@
 # DateFieldV1
-`toloka.client.project.template_builder.fields.DateFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L174)
+`toloka.client.project.template_builder.fields.DateFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L184)
 
 ```python
 DateFieldV1(
@@ -18,21 +18,21 @@ DateFieldV1(
 )
 ```
 
-A component for entering the date and time in the desired format and range.
+A field for entering a date and time.
 
 
-You can set a list of dates that the Toloker cannot select.
+For more information, see [field.date](https://toloka.ai/docs/template-builder/reference/field.date).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`format`|**Optional\[Any\]**|<p>Format of the date entered by the Toloker:</p> <ul> <li>date-time — date and time.</li> <li>date — date only.</li> </ul>
-`block_list`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Any\]\]\]**|<p>List of dates that the Toloker cannot select.</p> <ul> <li>block_list[]: Date that the Toloker cannot select.</li> </ul>
-`max`|**Optional\[Any\]**|<p>The latest date and time in the YYYY-MM-DD hh:mm format that the Toloker can select. Where:</p> <ul> <li>YYYY is the year.</li> <li>MM is the month.</li> <li>DD is the day.</li> <li>hh is the time in hours.</li> <li>mm is the time in minutes.</li> </ul>
-`min`|**Optional\[Any\]**|<p>The earliest date and time in the YYYY-MM-DD hh:mm format that the Toloker can select. Where:</p> <ul> <li>YYYY is the year.</li> <li>MM is the month.</li> <li>DD is the day.</li> <li>hh is the time in hours.</li> <li>mm is the time in minutes.</li> </ul>
-`placeholder`|**Optional\[Any\]**|<p>A semi-transparent label that is shown in the box when it is empty.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`format`|**Optional\[Any\]**|<p>The format of the field:</p> <ul> <li>`date-time` — Date and time.</li> <li>`date` — Date only.</li> </ul>
+`block_list`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Any\]\]\]**|<p>A list of dates that a Toloker can&#x27;t select.</p>
+`max`|**Optional\[Any\]**|<p>The latest date and time in the `YYYY-MM-DD hh:mm` format that a Toloker can select.</p>
+`min`|**Optional\[Any\]**|<p>The earliest date and time in the `YYYY-MM-DD hh:mm` format that a Toloker can select.</p>
+`placeholder`|**Optional\[Any\]**|<p>A text that is shown when no date is entered.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

@@ -1,0 +1,15 @@
+success:
+  description: The detailed information about the file.
+  value:
+    id: '0983459b-e26f-42f3-a5fd-6e3feee913e7'
+    attachment_type: ASSIGNMENT_ATTACHMENT
+    name: 37540601.jpg
+    details:
+      user_id: ae1d5431cfc59e25b4abbbe75666d59b
+      assignment_id: 5241f238-6640-43e4-80bb-3283893cd221
+      pool_id: '154'
+    owner:
+      id: 6c6e20dc86cca2ae787afcb2629de162
+      myself: true
+    created: '2016-05-25T16:14:27.748'
+    media_type: image/jpeg

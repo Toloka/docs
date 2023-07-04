@@ -1,0 +1,12 @@
+success:
+  description: The information about the pool closing progress.
+  value:
+    id: '019587fd-b536-49f8-b6dc-01ffc25f8594'
+    type: POOL.CLOSE
+    status: SUCCESS
+    submitted: '2022-04-07T16:06:15.902'
+    started: '2022-04-07T16:06:15.902'
+    finished: '2022-04-07T16:06:15.902'
+    progress: 100
+    parameters:
+      pool_id: '21'

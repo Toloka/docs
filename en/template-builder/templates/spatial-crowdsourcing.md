@@ -196,6 +196,6 @@ In this example, the text is highlighted with a blue border.
 
 ## See also {#see-also}
 
-- [Tutorials — collecting offline data](../../guide/tutorials/walk.md)
+- [Tutorials: Collecting offline data](../../guide/tutorials/walk.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

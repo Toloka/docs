@@ -1,19 +1,22 @@
 # ToggleActionV1
-`toloka.client.project.template_builder.actions.ToggleActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/actions.py#L158)
+`toloka.client.project.template_builder.actions.ToggleActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/actions.py#L185)
 
 ```python
 ToggleActionV1(
     self,
-    data: Optional[BaseComponent] = None,
+    data: Optional[Union[BaseComponent, RefComponent]] = None,
     *,
     version: Optional[str] = '1.0.0'
 )
 ```
 
-The component changes the value in the data from true to false and vice versa.
+The action toggles the value of a boolean data field.
+
+
+For more information, see [action.toggle](https://toloka.ai/docs/template-builder/reference/action.toggle).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data in which the value will be changed. The data type must be boolean.</p>
+`data`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [RefComponent](toloka.client.project.template_builder.base.RefComponent.md)\]\]**|<p>The data field.</p>

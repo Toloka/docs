@@ -52,3 +52,5 @@
 - [Написать приветствие на нескольких языках](https://ya.cc/t/DlWy7BtH3tvqiK).
 
 [![](../_images/buttons/contact-support.svg)](../concepts/support.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

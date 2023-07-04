@@ -1,5 +1,5 @@
 # find_app_items
-`toloka.client.TolokaClient.find_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3750)
+`toloka.client.TolokaClient.find_app_items` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3940)
 
 Finds task items that match certain criteria in an App project.
 
@@ -38,3 +38,18 @@ To iterate over all matching items you may use the [get_app_items](toloka.client
 * **Return type:**
 
   [AppItemSearchResult](toloka.client.search_results.AppItemSearchResult.md)
+
+**Examples:**
+
+Finding items in an App project that were created starting some date.
+```python
+search = toloka_client.find_app_items(
+    app_project_id = 'Q2d15QBjpwWuDz8Z321g',
+    created_gte = '2022-06-16',
+    sort = 'created')
+for app_item in search.content:
+    print(app_item.id, app_item.created_at)
+
+if search.has_more:
+    print('...')
+```

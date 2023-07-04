@@ -4,9 +4,9 @@ Every requester wants to optimize expenses. This section describes the main ways
 
 ## Decompose tasks {#decomposition}
 
-Use [decomposition](solution-architecture.md) to simplify the tasks: 
+Use [decomposition](solution-architecture.md) to simplify the tasks:
 
-- Simpler [tasks](../../glossary.md#task) cost less. 
+- Simpler [tasks](../../glossary.md#task) cost less.
 - If a task is complex, you won't get good results immediately. Instead, you'll have to resend tasks to the [pool](../../glossary.md#pool) so that other Tolokers can redo them.
 
 ## Use dynamic overlap {#din-price}
@@ -68,7 +68,7 @@ In this case, you can set up automatic acceptance of tasks and automatic rejecti
 
     - `correct responses (%) ≥ X`;
     - `number of responses = Y`.
-    
+
 1. Select the **accept all assignments from this Toloker in the pool** value in the **then** field.
 
 1. Add a description of the new rule to the instructions.
@@ -103,13 +103,13 @@ Using the Toloka API, you can set the frequency of assigning control tasks. For 
 
 To do this, use the `golden_task_distribution_function` key.
 
-[Learn more](../../api/concepts/create-pool.md)
+[Learn more](https://toloka.ai/docs/api/api-reference/#post-/pools)
 
 #### Set up preliminary responses
 
 In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap. In `baseline_solutions`, preliminary responses are used, that is, data that simulates Toloker responses. For example, you need to determine what an image shows: a cat or a dog. Suppose your neural network determined that the image may show a dog with a probability of 80% and a cat with a probability of 40%. You can use the neural network's responses. Depending on the responses of Tolokers, the overlap will increase or remain unchanged.
 
-[Learn more](../../api/concepts/create-task.md)
+[Learn more](https://toloka.ai/docs/api/api-reference/#post-/tasks)
 
 ## See also {#see-also}
 
@@ -121,3 +121,5 @@ In addition to dynamic overlap, use `baseline_solutions` to speed up the overlap
 - [Template Builder: Configure keyboard shortcuts](../../template-builder/best-practices/hotkeys.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

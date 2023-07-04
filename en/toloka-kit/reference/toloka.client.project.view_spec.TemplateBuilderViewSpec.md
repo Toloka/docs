@@ -1,5 +1,5 @@
 # TemplateBuilderViewSpec
-`toloka.client.project.view_spec.TemplateBuilderViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/view_spec.py#L122)
+`toloka.client.project.view_spec.TemplateBuilderViewSpec` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/view_spec.py#L122)
 
 ```python
 TemplateBuilderViewSpec(
@@ -17,7 +17,7 @@ TemplateBuilderViewSpec(
 A task interface defined with the [TemplateBuilder](toloka.client.project.template_builder.TemplateBuilder.md).
 
 
-See also [Template Builder](https://toloka.ai/en/docs/template-builder/) in the guide.
+See also [Template Builder](https://toloka.ai/docs/template-builder/) in the guide.
 
 ## Parameters Description
 

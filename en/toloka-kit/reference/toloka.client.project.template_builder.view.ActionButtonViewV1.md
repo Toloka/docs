@@ -1,5 +1,5 @@
 # ActionButtonViewV1
-`toloka.client.project.template_builder.view.ActionButtonViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L64)
+`toloka.client.project.template_builder.view.ActionButtonViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L64)
 
 ```python
 ActionButtonViewV1(
@@ -13,16 +13,16 @@ ActionButtonViewV1(
 )
 ```
 
-Button that calls an action.
+A button that calls an action.
 
 
-When clicking the button, an action specified in the action property is called.
+For more information, see [view.action-button](https://toloka.ai/docs/template-builder/reference/view.action-button).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`action`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Action called when clicking the button.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Button text.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`action`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>The action.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label on the button.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

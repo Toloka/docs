@@ -14,7 +14,7 @@ To create a Toloker account:
 
 {% note info %}
 
-You can use the same phone number to create a new account. For a step-by-step description of the registration process, see [Registration and login]({{ user-documentation }}).
+For a step-by-step description of the registration process, see [Registration and login]({{ user-documentation }}).
 
 {% endnote %}
 

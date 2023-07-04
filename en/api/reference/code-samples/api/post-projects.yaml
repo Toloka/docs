@@ -1,0 +1,270 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X POST 'https://toloka.dev/api/v1/projects' \
+         -H 'Content-Type: application/json' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -d '{"public_name":"Elephant color","public_description":"What color is the elephant in the picture?","public_instructions":"<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\"disc/img1.png>\"","private_comment":"My first project","task_spec":{"input_spec":{"image":{"type":"URL","required":true,"hidden":false}},"output_spec":{"result":{"type":"string","required":true,"hidden":false}},"view_spec":{"assets":{"script_urls":["library1.js","library2.js"]},"markup":"<task interface code>","script":"<JavaScript code>","styles":"<CSS code>","settings":{"showSkip":true,"showTimer":true,"showTitle":true,"showSubmit":true,"showFullscreen":true,"showInstructions":true,"showFinish":true,"showMessage":true,"showReward":true}}},"assignments_issuing_type":"AUTOMATED","assignments_automerge_enabled":false,"max_active_assignments_count":15,"quality_control":{"configs":[{"collector_config":{"type":"SKIPPED_IN_ROW_ASSIGNMENTS"},"rules":[{"conditions":[{"key":"skipped_in_row_count","operator":"GTE","value":10}],"action":{"type":"REJECT_ALL_ASSIGNMENTS","parameters":{"public_comment":"Skipped more than 10 task suites in a row"}}}]}]},"localization_config":{"default_language":"EN"}}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+    import toloka.client.project.field_spec as field_spec
+    import toloka.client.collectors as collectors
+    import toloka.client.conditions as conditions
+    import toloka.client.actions as actions
+    from toloka.client.project.task_spec import TaskSpec
+    from toloka.client.project.view_spec import ClassicViewSpec
+    from toloka.client.quality_control import QualityControl
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    task_spec = TaskSpec(
+      input_spec = {'image': field_spec.UrlSpec()},
+      output_spec = {'result': field_spec.StringSpec()},
+      view_spec = ClassicViewSpec(
+        assets = {
+          'script_urls': ['library1.js', 'library2.js']
+        },
+        markup = '''{{img src=image width="400px" height="300px"}}
+                    <p class="headerClass">Elephant color:</p>
+                    {{field type="input" name="result"}}
+                ''',
+        script = '',
+        styles = '.headerClass { font-size: 22px; };',
+        settings = {
+          'showSkip': True,
+          'showTimer': True,
+          'showTitle': True,
+          'showSubmit': True,
+          'showFullscreen': True,
+          'showInstructions': True,
+          'showFinish': True,
+          'showMessage': True,
+          'showReward': True
+        }
+      )
+    )
+
+    quality_control = QualityControl(
+      configs = [
+        QualityControl.QualityControlConfig(
+          collector_config = collectors.SkippedInRowAssignments(),
+          rules = [
+            QualityControl.QualityControlConfig.RuleConfig(
+              conditions = [conditions.SkippedInRowCount >= 10],
+              action = actions.RejectAllAssignments(
+                public_comment = 'Skipped more than 10 task suites in a row'
+              )
+            )
+          ]
+        )
+      ]
+    )
+
+    new_project = toloka.client.project.Project(
+      public_name = 'Elephant color',
+      public_description = 'What color is the elephant in the picture?',
+      public_instructions = '<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src="disc/img1.png>"',
+      private_comment = 'My first project',
+      localization_config = {'default_language': 'EN'},
+      assignments_automerge_enabled = False,
+      max_active_assignments_count = 15,
+      quality_control = quality_control,
+      task_spec = task_spec
+    )
+    new_project = toloka_client.create_project(new_project)
+    print(new_project.id)
+  description: More details on this in the [Create project](https://toloka.ai/docs/toloka-kit/recipes/create-project/) Toloka-Kit recipe
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/projects"
+    headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+    }
+    payload = {
+      "public_name": "Elephant color",
+      "public_description": "What color is the elephant in the picture?",
+      "public_instructions": "<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\"disc/img1.png>\"",
+      "private_comment": "My first project",
+      "task_spec": {
+        "input_spec": {
+          "image": {
+            "type": "URL",
+            "required": True,
+            "hidden": False
+          }
+        },
+        "output_spec": {
+          "result": {
+            "type": "string",
+            "required": True,
+            "hidden": False
+          }
+        },
+        "view_spec": {
+          "assets": {
+            "script_urls": [
+              "library1.js",
+              "library2.js"
+            ]
+          },
+          "markup": "<task interface code>",
+          "script": "<JavaScript code>",
+          "styles": "<CSS code>",
+          "settings": {
+            "showSkip": True,
+            "showTimer": True,
+            "showTitle": True,
+            "showSubmit": True,
+            "showFullscreen": True,
+            "showInstructions": True,
+            "showFinish": True,
+            "showMessage": True,
+            "showReward": True
+          }
+        }
+      },
+      "assignments_issuing_type": "AUTOMATED",
+      "assignments_automerge_enabled": False,
+      "max_active_assignments_count": 15,
+      "quality_control": {
+        "configs": [
+          {
+            "collector_config": {
+              "type": "SKIPPED_IN_ROW_ASSIGNMENTS"
+            },
+            "rules": [
+              {
+                "conditions": [
+                  {
+                    "key": "skipped_in_row_count",
+                    "operator": "GTE",
+                    "value": 10
+                  }
+                ],
+                "action": {
+                  "type": "REJECT_ALL_ASSIGNMENTS",
+                  "parameters": {
+                    "public_comment": "Skipped more than 10 task suites in a row"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "localization_config": {
+        "default_language": "EN"
+      }
+    }
+    response = requests.post(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://toloka.dev/api/v1/projects',
+      'qs': {},
+      'headers': {
+        'Content-Type': 'application/json',
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      },
+      'body': JSON.stringify({
+        "public_name": "Elephant color",
+        "public_description": "What color is the elephant in the picture?",
+        "public_instructions": "<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\"disc/img1.png>\"",
+        "private_comment": "My first project",
+        "task_spec": {
+          "input_spec": {
+            "image": {
+              "type": "URL",
+              "required": true,
+              "hidden": false
+            }
+          },
+          "output_spec": {
+            "result": {
+              "type": "string",
+              "required": true,
+              "hidden": false
+            }
+          },
+          "view_spec": {
+            "assets": {
+              "script_urls": [
+                "library1.js",
+                "library2.js"
+              ]
+            },
+            "markup": "<task interface code>",
+            "script": "<JavaScript code>",
+            "styles": "<CSS code>",
+            "settings": {
+              "showSkip": true,
+              "showTimer": true,
+              "showTitle": true,
+              "showSubmit": true,
+              "showFullscreen": true,
+              "showInstructions": true,
+              "showFinish": true,
+              "showMessage": true,
+              "showReward": true
+            }
+          }
+        },
+        "assignments_issuing_type": "AUTOMATED",
+        "assignments_automerge_enabled": false,
+        "max_active_assignments_count": 15,
+        "quality_control": {
+          "configs": [
+            {
+              "collector_config": {
+                "type": "SKIPPED_IN_ROW_ASSIGNMENTS"
+              },
+              "rules": [
+                {
+                  "conditions": [
+                    {
+                      "key": "skipped_in_row_count",
+                      "operator": "GTE",
+                      "value": 10
+                    }
+                  ],
+                  "action": {
+                    "type": "REJECT_ALL_ASSIGNMENTS",
+                    "parameters": {
+                      "public_comment": "Skipped more than 10 task suites in a row"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        "localization_config": {
+          "default_language": "EN"
+        }
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/projects")
+      .header("Content-Type", "application/json")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .body("{\"public_name\":\"Elephant color\",\"public_description\":\"What color is the elephant in the picture?\",\"public_instructions\":\"<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\\\"disc/img1.png>\\\"\",\"private_comment\":\"My first project\",\"task_spec\":{\"input_spec\":{\"image\":{\"type\":\"URL\",\"required\":true,\"hidden\":false}},\"output_spec\":{\"result\":{\"type\":\"string\",\"required\":true,\"hidden\":false}},\"view_spec\":{\"assets\":{\"script_urls\":[\"library1.js\",\"library2.js\"]},\"markup\":\"<task interface code>\",\"script\":\"<JavaScript code>\",\"styles\":\"<CSS code>\",\"settings\":{\"showSkip\":true,\"showTimer\":true,\"showTitle\":true,\"showSubmit\":true,\"showFullscreen\":true,\"showInstructions\":true,\"showFinish\":true,\"showMessage\":true,\"showReward\":true}}},\"assignments_issuing_type\":\"AUTOMATED\",\"assignments_automerge_enabled\":false,\"max_active_assignments_count\":15,\"quality_control\":{\"configs\":[{\"collector_config\":{\"type\":\"SKIPPED_IN_ROW_ASSIGNMENTS\"},\"rules\":[{\"conditions\":[{\"key\":\"skipped_in_row_count\",\"operator\":\"GTE\",\"value\":10}],\"action\":{\"type\":\"REJECT_ALL_ASSIGNMENTS\",\"parameters\":{\"public_comment\":\"Skipped more than 10 task suites in a row\"}}}]}]},\"localization_config\":{\"default_language\":\"EN\"}}")
+      .asString();

@@ -1,17 +1,14 @@
 # PoolAnalyticsRequest
-`toloka.client.analytics_request.PoolAnalyticsRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L39)
+`toloka.client.analytics_request.PoolAnalyticsRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L39)
 
 ```python
 PoolAnalyticsRequest(self, *, subject_id: str)
 ```
 
-Base class for all analytics requests about pools
-
-
-Right now you can get analytics only about pool.
+A base class for analytics requests about pools.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`subject_id`|**str**|<p>ID of the object you want to get analytics about.</p>
+`subject_id`|**str**|<p>The ID of a pool to get analytics about.</p>

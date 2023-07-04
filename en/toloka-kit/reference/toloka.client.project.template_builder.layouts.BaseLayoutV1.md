@@ -1,5 +1,5 @@
 # BaseLayoutV1
-`toloka.client.project.template_builder.layouts.BaseLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/layouts.py#L27)
+`toloka.client.project.template_builder.layouts.BaseLayoutV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/layouts.py#L27)
 
 ```python
 BaseLayoutV1(
@@ -10,13 +10,13 @@ BaseLayoutV1(
 )
 ```
 
-Options for positioning elements in the interface, such as in columns or side-by-side.
+A base component for layouts.
 
 
-If you have more than one element in the interface, these components will help you arrange them the way you want.
+Layout components are used for positioning elements in the interface, such as in columns or side-by-side.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

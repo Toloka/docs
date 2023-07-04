@@ -1,5 +1,5 @@
 # UserSkillCursor
-`toloka.streaming.cursor.UserSkillCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/streaming/cursor.py#L331)
+`toloka.streaming.cursor.UserSkillCursor` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/streaming/cursor.py#L363)
 
 ```python
 UserSkillCursor(
@@ -19,7 +19,8 @@ UserSkillCursor(
     modified_lt: Optional[datetime] = None,
     modified_lte: Optional[datetime] = None,
     modified_gt: Optional[datetime] = None,
-    modified_gte: Optional[datetime] = None
+    modified_gte: Optional[datetime] = None,
+    time_lag: timedelta = ...
 )
 ```
 
@@ -30,8 +31,9 @@ Iterator over UserSkillEvent objects of a selected event_type.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `toloka_client`|**Union\[[TolokaClient](toloka.client.TolokaClient.md), [AsyncTolokaClient](toloka.async_client.client.AsyncTolokaClient.md)\]**|<p>TolokaClient object that is being used to search skills.</p>
-`request`|**[UserSkillSearchRequest](toloka.client.search_requests.UserSkillSearchRequest.md)**|<p>Base request to search skills by.</p>
 `event_type`|**Any**|<p>Skill event type to search.</p>
+`request`|**[UserSkillSearchRequest](toloka.client.search_requests.UserSkillSearchRequest.md)**|<p>Base request to search skills by.</p>
+`_time_lag`|**-**|<p>Time lag between cursor time field upper bound and real time. Default is 1 minute. This lag is required to keep cursor consistent. Lowering this value will make cursor process events faster, but raises probability of missing some events in case of concurrent operations.</p>
 
 **Examples:**
 

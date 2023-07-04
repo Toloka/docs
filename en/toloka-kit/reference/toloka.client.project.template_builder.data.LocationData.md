@@ -1,12 +1,14 @@
 # LocationData
-`toloka.client.project.template_builder.data.LocationData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/data.py#L73)
+`toloka.client.project.template_builder.data.LocationData` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/data.py#L79)
 
 ```python
 LocationData(self)
 ```
 
-This component sends the device coordinates
+Device coordinates.
 
 
-To find out if the transmitted coordinates match the ones that you specified, use the conditions.DistanceConditionV1.
+Use this component with the [DistanceConditionV1](toloka.client.project.template_builder.conditions.DistanceConditionV1.md) condition.
+
+For more information, see [data.location](https://toloka.ai/docs/template-builder/reference/data.location/).
 

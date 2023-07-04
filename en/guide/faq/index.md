@@ -2,17 +2,29 @@
 
 {% list tabs %}
 
-- Registration
+- General
 
   {% include [faq-task-suitable](../_includes/faq/register-and-start/task-suitable.md) %}
 
   {% include [faq-start-new-project](../_includes/faq/register-and-start/start-new-project.md) %}
 
+  {% include [faq-requirements](../_includes/faq/general/requirements.md) %}
+
+  {% include [faq-pricing](../_includes/faq/general/pricing.md) %}
+
+  {% include [faq-time-result](../_includes/faq/general/time-result.md) %}
+
+  {% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
+
   {% include [faq-partnership](../_includes/faq/register-and-start/partnership.md) %}
+
+- Registration
 
   {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
-  {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
+  {% include [faq-email-authorization](../_includes/faq/register-and-start/email-authorization.md) %}
+
+  {% include [faq-same-email-registration](../_includes/faq/register-and-start/same-email-registration.md) %}
 
   {% include [faq-delete-account](../_includes/faq/account/delete-account.md) %}
 
@@ -48,8 +60,6 @@
 
   {% include [faq-image-expand](../_includes/faq/project-settings/image-expand.md) %}
 
-  {% include [faq-shortcut](../_includes/faq/project-settings/shortcut.md) %}
-
   {% include [faq-loading-audio-files](../_includes/faq/project-settings/loading-audio-files.md) %}
 
   {% include [faq-mobile-task-display](../_includes/faq/project-settings/mobile-task-display.md) %}
@@ -63,8 +73,6 @@
   {% include [faq-pass-value](../_includes/faq/project-settings/pass-value.md) %}
 
   {% include [faq-link-not-required](../_includes/faq/project-settings/link-not-required.md) %}
-
-  {% include [faq-checkbox-selected](../_includes/faq/project-settings/checkbox-selected.md) %}
 
   {% include [faq-calendar](../_includes/faq/project-settings/calendar.md) %}
 
@@ -89,8 +97,6 @@
   {% include [faq-own-colors](../_includes/faq/project-settings/own-colors.md) %}
 
   {% include [faq-validate-data](../_includes/faq/project-settings/validate-data.md) %}
-
-  {% include [faq-assigment-validation](../_includes/faq/project-settings/assigment-validation.md) %}
 
   {% include [faq-line-by-line](../_includes/faq/project-settings/line-by-line.md) %}
 
@@ -125,8 +131,6 @@
   {% include [faq-control-product](../_includes/faq/project-settings/control-product.md) %}
 
   **Other questions**
-
-  {% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
 
   {% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
 
@@ -206,8 +210,6 @@
 
   {% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
-  {% include [faq-set-skill](../_includes/faq/pool-setup/set-skill.md) %}
-
   {% include [faq-review-training](../_includes/faq/pool-setup/review-training.md) %}
 
   {% include [faq-questions-are-control](../_includes/faq/pool-setup/questions-are-control.md) %}
@@ -285,8 +287,6 @@
   {% include [faq-properly-structure-json](../_includes/faq/adding-tasks-to-the-pool/properly-structure-json.md) %}
 
   {% include [faq-missing-headers](../_includes/faq/adding-tasks-to-the-pool/missing-headers.md) %}
-
-  {% include [faq-link-golden-field](../_includes/faq/adding-tasks-to-the-pool/link-golden-field.md) %}
 
   {% include [faq-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/smart-mixing.md) %}
 
@@ -470,7 +470,7 @@
 
   **Area selection**
 
-  {% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
+  {% include [faq-shortcut](../_includes/faq/project-settings/shortcut.md) %}
 
   {% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
 
@@ -502,19 +502,41 @@
 
   {% include [faq-auto-acceptance](../_includes/faq/api/auto-acceptance.md) %}
 
+  {% include [faq-toloka-kit-new-domain](../_includes/faq/api/toloka-kit-new-domain.md) %}
+
+  {% include [faq-java-sdk-new-domain](../_includes/faq/api/java-sdk-new-domain.md) %}
+
+  {% include [faq-toloka-kit-new-token](../_includes/faq/api/toloka-kit-new-token.md) %}
+
+  {% include [faq-java-sdk-new-token](../_includes/faq/api/java-sdk-new-token.md) %}
+
+  {% include [faq-reissue-token](../_includes/faq/api/reissue-token.md) %}
+
 - All
 
-  ### Registration {#register-and-start}
+  ### General {#general}
 
   {% include [faq-task-suitable](../_includes/faq/register-and-start/task-suitable.md) %}
 
   {% include [faq-start-new-project](../_includes/faq/register-and-start/start-new-project.md) %}
 
+  {% include [faq-requirements](../_includes/faq/general/requirements.md) %}
+
+  {% include [faq-pricing](../_includes/faq/general/pricing.md) %}
+
+  {% include [faq-time-result](../_includes/faq/general/time-result.md) %}
+
+  {% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
+
   {% include [faq-partnership](../_includes/faq/register-and-start/partnership.md) %}
+
+  ### Registration {#register-and-start}
 
   {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
 
-  {% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
+  {% include [faq-email-authorization](../_includes/faq/register-and-start/email-authorization.md) %}
+
+  {% include [faq-same-email-registration](../_includes/faq/register-and-start/same-email-registration.md) %}
 
   {% include [faq-delete-account](../_includes/faq/account/delete-account.md) %}
 
@@ -550,8 +572,6 @@
 
   {% include [faq-image-expand](../_includes/faq/project-settings/image-expand.md) %}
 
-  {% include [faq-shortcut](../_includes/faq/project-settings/shortcut.md) %}
-
   {% include [faq-loading-audio-files](../_includes/faq/project-settings/loading-audio-files.md) %}
 
   {% include [faq-mobile-task-display](../_includes/faq/project-settings/mobile-task-display.md) %}
@@ -565,8 +585,6 @@
   {% include [faq-pass-value](../_includes/faq/project-settings/pass-value.md) %}
 
   {% include [faq-link-not-required](../_includes/faq/project-settings/link-not-required.md) %}
-
-  {% include [faq-checkbox-selected](../_includes/faq/project-settings/checkbox-selected.md) %}
 
   {% include [faq-calendar](../_includes/faq/project-settings/calendar.md) %}
 
@@ -591,8 +609,6 @@
   {% include [faq-own-colors](../_includes/faq/project-settings/own-colors.md) %}
 
   {% include [faq-validate-data](../_includes/faq/project-settings/validate-data.md) %}
-
-  {% include [faq-assigment-validation](../_includes/faq/project-settings/assigment-validation.md) %}
 
   {% include [faq-line-by-line](../_includes/faq/project-settings/line-by-line.md) %}
 
@@ -627,8 +643,6 @@
   {% include [faq-control-product](../_includes/faq/project-settings/control-product.md) %}
 
   **Other questions**
-
-  {% include [faq-labeling-speed](../_includes/faq/project-settings/labeling-speed.md) %}
 
   {% include [faq-many-classes](../_includes/faq/project-settings/many-classes.md) %}
 
@@ -708,8 +722,6 @@
 
   {% include [faq-multiple-fields](../_includes/faq/pool-setup/multiple-fields.md) %}
 
-  {% include [faq-set-skill](../_includes/faq/pool-setup/set-skill.md) %}
-
   {% include [faq-review-training](../_includes/faq/pool-setup/review-training.md) %}
 
   {% include [faq-questions-are-control](../_includes/faq/pool-setup/questions-are-control.md) %}
@@ -787,8 +799,6 @@
   {% include [faq-properly-structure-json](../_includes/faq/adding-tasks-to-the-pool/properly-structure-json.md) %}
 
   {% include [faq-missing-headers](../_includes/faq/adding-tasks-to-the-pool/missing-headers.md) %}
-
-  {% include [faq-link-golden-field](../_includes/faq/adding-tasks-to-the-pool/link-golden-field.md) %}
 
   {% include [faq-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/smart-mixing.md) %}
 
@@ -972,7 +982,7 @@
 
   **Area selection**
 
-  {% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
+  {% include [faq-shortcut](../_includes/faq/project-settings/shortcut.md) %}
 
   {% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
 
@@ -1003,6 +1013,16 @@
   ### API {#api}
 
   {% include [faq-auto-acceptance](../_includes/faq/api/auto-acceptance.md) %}
+
+  {% include [faq-toloka-kit-new-domain](../_includes/faq/api/toloka-kit-new-domain.md) %}
+
+  {% include [faq-java-sdk-new-domain](../_includes/faq/api/java-sdk-new-domain.md) %}
+
+  {% include [faq-toloka-kit-new-token](../_includes/faq/api/toloka-kit-new-token.md) %}
+
+  {% include [faq-java-sdk-new-token](../_includes/faq/api/java-sdk-new-token.md) %}
+
+  {% include [faq-reissue-token](../_includes/faq/api/reissue-token.md) %}
 
 {% endlist %}
 

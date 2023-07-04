@@ -9,6 +9,9 @@ items:
         href: guide/concepts/overview.md
       - name: Registration
         href: guide/concepts/access.md
+      - name: Migrating to new social authorization
+        href: guide/concepts/migrate-new-auth.md
+        hidden: true
       - name: Your first project
         href: guide/concepts/first-project.md
       - name: Data security
@@ -26,6 +29,9 @@ items:
         href: guide/concepts/save-money.md
       - name: Sandbox
         href: guide/concepts/sandbox.md
+      - name: Generating API tokens
+        href: guide/concepts/api-token.md
+        hidden: true
   - name: Tutorials
     items:
       - name: List of examples
@@ -387,6 +393,9 @@ items:
         items:
           - name: Editing the profile
             href: guide/concepts/edit-profile.md
+          - name: Authorization methods
+            href: guide/concepts/authorization-methods.md
+            hidden: true
           - name: Notifications
             href: guide/concepts/notifications.md
           - name: About money
@@ -401,7 +410,7 @@ items:
                 href: guide/concepts/refund.md
               - name: Payment documents
                 href: guide/concepts/documents.md
-          - name: Shared access to the requester's account
+          - name: Shared access to the account
             href: guide/concepts/multiple-access.md
   - name: Useful recommendations
     items:
@@ -431,9 +440,238 @@ items:
             href: api/rest-api.md
           - name: Toloka API
             items:
-              - include:
-                  path: _includes/toloka-api-toc.yaml
-                  mode: link
+              - name: How to use
+                items:
+                - name: Overview
+                  href: api/index.md
+                - name: API migration
+                  href: api/api-migration.md
+                  hidden: true
+                - name: Accessing the API
+                  href: https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api
+                - name: Rate limiting
+                  href: https://toloka.ai/docs/api/api-reference/#overview--rate-limiting
+                - name: Quick start
+                  items:
+                    - name: Overview
+                      href: api/concepts/quickstart.md
+                    - name: Posting tasks
+                      href: api/concepts/qs-placement.md
+                    - name: Receiving responses
+                      href: api/concepts/qs-results.md
+                - include:
+                    path: _includes/toloka-api-toc.yaml
+                    mode: link
+              - name: API reference
+                items:
+                  - name: Project
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--project
+                      - name: Get list of projects
+                        href: https://toloka.ai/docs/api/api-reference/#get-/projects
+                      - name: Create project
+                        href: https://toloka.ai/docs/api/api-reference/#post-/projects
+                      - name: Get project by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/projects/-id-
+                      - name: Edit project
+                        href: https://toloka.ai/docs/api/api-reference/#put-/projects/-id-
+                      - name: Archive project
+                        href: https://toloka.ai/docs/api/api-reference/#post-/projects/-id-/archive
+                  - name: Pool
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--pool
+                      - name: Get list of pools
+                        href: https://toloka.ai/docs/api/api-reference/#get-/pools
+                      - name: Create pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/pools
+                      - name: Get pool by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/pools/-id-
+                      - name: Edit pool
+                        href: https://toloka.ai/docs/api/api-reference/#put-/pools/-id-
+                      - name: Change pool priority
+                        href: https://toloka.ai/docs/api/api-reference/#patch-/pools/-id-
+                      - name: Archive pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/archive
+                      - name: Clone pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/clone
+                      - name: Close pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/close
+                      - name: Close pool for editing
+                        href: https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/close-for-update
+                      - name: Open pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/open
+                  - name: Training
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--training
+                      - name: Get list of training pools
+                        href: https://toloka.ai/docs/api/api-reference/#get-/trainings
+                      - name: Create training pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/trainings
+                      - name: Get training by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/trainings/-id-
+                      - name: Edit training pool
+                        href: https://toloka.ai/docs/api/api-reference/#put-/trainings/-id-
+                      - name: Archive training pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/trainings/-id-/archive
+                      - name: Clone training pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/trainings/-id-/clone
+                      - name: Close training
+                        href: https://toloka.ai/docs/api/api-reference/#post-/trainings/-id-/close
+                      - name: Close training for editing
+                        href: https://toloka.ai/docs/api/api-reference/#post-/trainings/-id-/close-for-update
+                      - name: Open training
+                        href: https://toloka.ai/docs/api/api-reference/#post-/trainings/-id-/open
+                  - name: Webhook-subscription
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--webhook-subscription
+                      - name: Get list of subscriptions
+                        href: https://toloka.ai/docs/api/api-reference/#get-/webhook-subscriptions
+                      - name: Create subscription
+                        href: https://toloka.ai/docs/api/api-reference/#put-/webhook-subscriptions
+                      - name: Get subscription by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/webhook-subscriptions/-id-
+                      - name: Delete subscription
+                        href: https://toloka.ai/docs/api/api-reference/#delete-/webhook-subscriptions/-id-
+                      - name: Send test notification
+                        href: https://toloka.ai/docs/api/api-reference/#post-/webhook-subscriptions/-id-/test
+                  - name: Skill
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--skill
+                      - name: Get list of skills
+                        href: https://toloka.ai/docs/api/api-reference/#get-/skills
+                      - name: Create skill
+                        href: https://toloka.ai/docs/api/api-reference/#post-/skills
+                      - name: Get skill by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/skills/-id-
+                      - name: Edit skill
+                        href: https://toloka.ai/docs/api/api-reference/#put-/skills/-id-
+                      - name: Get list of Toloker skills
+                        href: https://toloka.ai/docs/api/api-reference/#get-/user-skills
+                      - name: Set skill
+                        href: https://toloka.ai/docs/api/api-reference/#put-/user-skills
+                      - name: Get Toloker skill by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/user-skills/-id-
+                      - name: Remove skill from Toloker
+                        href: https://toloka.ai/docs/api/api-reference/#delete-/user-skills/-id-
+                  - name: User-restriction
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--user-restriction
+                      - name: Get list of bans
+                        href: https://toloka.ai/docs/api/api-reference/#get-/user-restrictions
+                      - name: Block access to tasks
+                        href: https://toloka.ai/docs/api/api-reference/#put-/user-restrictions
+                      - name: Get ban by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/user-restrictions/-id-
+                      - name: Unblock access
+                        href: https://toloka.ai/docs/api/api-reference/#delete-/user-restrictions/-id-
+                  - name: Task
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--task
+                      - name: Get list of tasks
+                        href: https://toloka.ai/docs/api/api-reference/#get-/tasks
+                      - name: Create single/multiple tasks
+                        href: https://toloka.ai/docs/api/api-reference/#post-/tasks
+                      - name: Get task by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/tasks/-id-
+                      - name: Edit task
+                        href: https://toloka.ai/docs/api/api-reference/#patch-/tasks/-id-
+                      - name: Stop assigning task
+                        href: https://toloka.ai/docs/api/api-reference/#patch-/tasks/-id-/set-overlap-or-min
+                  - name: Task-suite
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--task-suite
+                      - name: Get list of task suites
+                        href: https://toloka.ai/docs/api/api-reference/#get-/task-suites
+                      - name: Create single/multiple task suites
+                        href: https://toloka.ai/docs/api/api-reference/#post-/task-suites
+                      - name: Get task suite by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/task-suites/-id-
+                      - name: Edit task suite overlap or priority
+                        href: https://toloka.ai/docs/api/api-reference/#patch-/task-suites/-id-
+                      - name: Stop assigning task suite
+                        href: https://toloka.ai/docs/api/api-reference/#patch-/task-suites/-id-/set-overlap-or-min
+                  - name: Operation
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--operation
+                      - name: Get list of operations
+                        href: https://toloka.ai/docs/api/api-reference/#get-/operations
+                      - name: Get operation by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/operations/-id-
+                      - name: Get operation log
+                        href: https://toloka.ai/docs/api/api-reference/#get-/operations/-id-/log
+                  - name: Assignment
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--assignment
+                      - name: Get list of responses
+                        href: https://toloka.ai/docs/api/api-reference/#get-/assignments
+                      - name: Get response by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/assignments/-id-
+                      - name: Update response
+                        href: https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-
+                  - name: Attachment
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--attachment
+                      - name: Get list of files
+                        href: https://toloka.ai/docs/api/api-reference/#get-/attachments
+                      - name: Get file metadata
+                        href: https://toloka.ai/docs/api/api-reference/#get-/attachments/-id-
+                      - name: Download file
+                        href: https://toloka.ai/docs/api/api-reference/#get-/attachments/-id-/download
+                  - name: Aggregated-solution
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--aggregated-solution
+                      - name: Get list of aggregated results
+                        href: https://toloka.ai/docs/api/api-reference/#get-/aggregated-solutions/-operationId-
+                      - name: Aggregate responses in pool
+                        href: https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-pool
+                      - name: Aggregate responses to single task
+                        href: https://toloka.ai/docs/api/api-reference/#post-/aggregated-solutions/aggregate-by-task
+                  - name: User-bonus
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--user-bonus
+                      - name: Get list of bonuses
+                        href: https://toloka.ai/docs/api/api-reference/#get-/user-bonuses
+                      - name: Issue bonuses
+                        href: https://toloka.ai/docs/api/api-reference/#post-/user-bonuses
+                      - name: Get bonus by ID
+                        href: https://toloka.ai/docs/api/api-reference/#get-/user-bonuses/-userBonusId-
+                  - name: Message-thread
+                    items:
+                      - name: Overview
+                        href: https://toloka.ai/docs/api/api-reference/#tag--message-thread
+                      - name: Get list of message threads
+                        href: https://toloka.ai/docs/api/api-reference/#get-/message-threads
+                      - name: Add message thread
+                        href: https://toloka.ai/docs/api/api-reference/#post-/message-threads/-id-/add-to-folders
+                      - name: Remove message thread
+                        href: https://toloka.ai/docs/api/api-reference/#post-/message-threads/-id-/remove-from-folders
+                      - name: Reply to message thread
+                        href: https://toloka.ai/docs/api/api-reference/#post-/message-threads/-id-/reply
+                      - name: Send message
+                        href: https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose
+                  - name: User-metadata
+                    items:
+                      - name: Get Toloker metadata
+                        href: https://toloka.ai/docs/api/api-reference/#tag--user-metadata
+                  - name: Requester
+                    items:
+                      - name: Get account balance
+                        href: https://toloka.ai/docs/api/api-reference/#tag--requester
+                  - name: All classes and methods
+                    href: https://toloka.ai/docs/api/api-reference/api-list.html
           - name: Apps API
             items:
               - name: How to use
@@ -507,6 +745,8 @@ items:
                         href: https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/-batch_id-/stop
                       - name: Start sync batch processing
                         href: https://toloka.ai/docs/api/apps-reference/#post-/app-projects/-app_project_id-/batches/sync
+                  - name: All classes and methods
+                    href: https://toloka.ai/docs/api/apps-reference/apps-list.html
       - name: Python SDK
         items:
           - name: Overview
@@ -521,7 +761,7 @@ items:
               - include:
                   path: _includes/crowd-kit-toc.yaml
                   mode: link
-  - name: Frequently asked questions
+  - name: FAQ
     href: guide/faq/index.md
   - name: Troubleshooting
     href: guide/troubleshooting/troubleshooting.md
@@ -555,6 +795,4 @@ items:
     items:
       - name: Toloka SSO authentication
         href: guide/sso/authentication.md
-      - name: Generating API tokens
-        href: guide/sso/api-token.md
 base: en

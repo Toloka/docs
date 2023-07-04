@@ -1,5 +1,5 @@
 # LinkGroupViewV1
-`toloka.client.project.template_builder.view.LinkGroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L299)
+`toloka.client.project.template_builder.view.LinkGroupViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L317)
 
 ```python
 LinkGroupViewV1(
@@ -13,24 +13,22 @@ LinkGroupViewV1(
 )
 ```
 
-Puts links into groups
+A group of links.
 
 
-The most important link in a group can be highlighted with a border: set the theme property to primary for this link.
-This only groups links, unlike GroupViewV1.
+For more information, see [view.link-group](https://toloka.ai/docs/template-builder/reference/view.link-group).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`links`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Link](toloka.client.project.template_builder.view.LinkGroupViewV1.Link.md)\]\]\]\]**|<p>Array of links that make up a group.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`links`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Link](toloka.client.project.template_builder.view.LinkGroupViewV1.Link.md)\]\]\]\]**|<p>A list of links.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>
 
 **Examples:**
 
-How to add several links.
 
 ```python
 links = tb.view.LinkGroupViewV1(

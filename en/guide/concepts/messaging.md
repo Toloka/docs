@@ -102,7 +102,7 @@ Refer to the [Send message](https://toloka.ai/docs/api/api-reference/#post-/mess
 
 ## Technical limitations
 
-- If there are more than 1000 recipients in the mailing list, an error may occur when sending the message. To avoid this, use the [API](../../api/concepts/messages.md).
+- If there are more than 1000 recipients in the mailing list, an error may occur when sending the message. To avoid this, use the [API](https://toloka.ai/docs/api/api-reference/#tag--message-thread).
 
 - Send your emails in small batches. To do this, use [filters](filters.md).
 
@@ -131,7 +131,7 @@ To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as
 
 ## For developers {#for-developers}
 
-- [Toloka API: Messages for Tolokers](../../api/concepts/messages.md)
+- [Toloka API: Messages for Tolokers](https://toloka.ai/docs/api/api-reference/#tag--message-thread)
 - [Toloka-Kit recipe: Send messages](../../toloka-kit/recipes/send-messages.md)
 - [Toloka-Kit recipe: Get list of message threads](../../toloka-kit/recipes/get-message-threads.md)
 - [Toloka-Kit recipe: Reply to message thread](../../toloka-kit/recipes/reply-to-message-thread.md)

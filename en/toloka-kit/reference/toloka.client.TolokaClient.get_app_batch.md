@@ -1,5 +1,5 @@
 # get_app_batch
-`toloka.client.TolokaClient.get_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3940)
+`toloka.client.TolokaClient.get_app_batch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L4197)
 
 ```python
 get_app_batch(
@@ -25,3 +25,11 @@ Gets information from Toloka about a batch in an App project.
 * **Return type:**
 
   [AppBatch](toloka.client.app.AppBatch.md)
+
+**Examples:**
+
+
+```python
+batch = toloka_client.get_app_batch(app_project_id = 'Q2d15QBjpwWuDz8Z321g', app_batch_id = '4Va2BBWKL88S4QyAgVje')
+print(batch.status, batch.items_count, batch.cost)
+```

@@ -1,5 +1,5 @@
 # TextTransformHelperV1
-`toloka.client.project.template_builder.helpers.TextTransformHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L235)
+`toloka.client.project.template_builder.helpers.TextTransformHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/helpers.py#L187)
 
 ```python
 TextTransformHelperV1(
@@ -11,17 +11,14 @@ TextTransformHelperV1(
 )
 ```
 
-Allows you to change the case of the text, like make all letters uppercase.
+Converts a text to uppercase, lowercase, or capitalize it.
 
 
-For example, you can use this component to automatically process input data.
-
-This component is available in property values with the string type, for example in the content property in the
-view.text component.
+For more information, see [helper.text-transform](https://toloka.ai/docs/template-builder/reference/helper.text-transform).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[Any\]**|<p>The text string in which you want to change the case.</p>
-`transformation`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Transformation](toloka.client.project.template_builder.helpers.TextTransformHelperV1.Transformation.md)\]\]**|<p>Conversion mode.</p>
+`data`|**Optional\[Any\]**|<p>A text to convert.</p>
+`transformation`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Transformation](toloka.client.project.template_builder.helpers.TextTransformHelperV1.Transformation.md)\]\]**|<p>A conversion mode:</p> <ul> <li>`uppercase` — Makes all letters uppercase.</li> <li>`lowercase` — Makes all letters lowercase.</li> <li>`capitalize` — Capitalizes the first letter in the text, and leaves the rest lowercase. Note, that if there are several sentences, the rest of them are not capitalized.</li> </ul>

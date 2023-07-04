@@ -1,5 +1,5 @@
 # AssignmentEventsInPool
-`toloka.metrics.pool_metrics.AssignmentEventsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/pool_metrics.py#L56)
+`toloka.metrics.pool_metrics.AssignmentEventsInPool` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/pool_metrics.py#L56)
 
 ```python
 AssignmentEventsInPool(
@@ -11,6 +11,7 @@ AssignmentEventsInPool(
     rejected_name: Optional[str] = None,
     skipped_name: Optional[str] = None,
     expired_name: Optional[str] = None,
+    cursor_time_lag: timedelta = ...,
     join_events: bool = False,
     *,
     toloka_client: Optional[TolokaClient] = None,
@@ -39,6 +40,7 @@ Metrics starts gathering if they name are set. If the metric name is set to None
 `skipped_name`|**Optional\[str\]**|<p>Metric name for a count of skipped events. Default None.</p>
 `expired_name`|**Optional\[str\]**|<p>Metric name for a count of expired events. Default None.</p>
 `join_events`|**bool**|<p>Count all events in one point.  Default `False`.</p>
+`cursor_time_lag`|**timedelta**|<p>Time lag for cursor. This controls time lag between assignments being added and this metric being updated. See BaseCursor.time_lag for details and reasoning behind this.</p>
 
 **Examples:**
 

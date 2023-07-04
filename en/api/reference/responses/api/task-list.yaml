@@ -1,0 +1,34 @@
+success:
+  description: The list of tasks and their properties in the `items` array.
+  value:
+    items:
+    - id: '000248a756--6422ca21e5997032541d856b'
+      created: '2023-03-28T11:06:09.827'
+      pool_id: '38315862'
+      input_values:
+        image_url: https://example.com/image1.jpg
+      known_solutions:
+      - output_values:
+          result: OK
+          like: false
+        correctness_weight: 0.8
+      - output_values:
+          result: OK
+          like: true
+        correctness_weight: 1
+      baseline_solutions:
+      - output_values:
+          result: OK
+          like: false
+        confidence_weight: 0.8
+      - output_values:
+          result: OK
+          like: true
+        confidence_weight: 1
+      message_on_unknown_solution: The cat is in a good mood.
+      overlap: 3
+      infinite_overlap: false
+      remaining_overlap: 3
+      reserved_for: []
+      unavailable_for: []
+    has_more: true

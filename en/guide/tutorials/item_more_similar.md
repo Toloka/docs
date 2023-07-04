@@ -251,7 +251,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Which shoes look more alike**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -305,8 +305,6 @@ To create a [pool](../../glossary.md#pool):
 
         The time should be long enough to read the instructions and wait for task data to load. For example, `600` seconds.
 
-    1. Turn on the **Keep task order** option.
-
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
     1. Download the file received in the [third project](item_look_similar.md).
@@ -327,7 +325,7 @@ To create a [pool](../../glossary.md#pool):
 
     1. Choose **Set manually**.
 
-    1. In the **Tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
+    1. In the **Number of tasks per suite** field, specify`1`. You can experiment with the number of tasks per suite.
 
     1. Click **Combine tasks into suites**.
 
@@ -358,3 +356,5 @@ To get the results:
 - Learn more about [decomposition](../concepts/solution-architecture.md).
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

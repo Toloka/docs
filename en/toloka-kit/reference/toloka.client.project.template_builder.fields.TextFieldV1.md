@@ -1,5 +1,5 @@
 # TextFieldV1
-`toloka.client.project.template_builder.fields.TextFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L481)
+`toloka.client.project.template_builder.fields.TextFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L464)
 
 ```python
 TextFieldV1(
@@ -15,15 +15,18 @@ TextFieldV1(
 )
 ```
 
-A component that allows entering a single line of text.
+A field for entering a single text line.
+
+
+For more information, see [field.text](https://toloka.ai/docs/template-builder/reference/field.text).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, editing is not available.</p>
-`placeholder`|**Optional\[Any\]**|<p>A semi-transparent label that is shown in the box when it is empty.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`disabled`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Disabling the field:</p> <ul> <li>`True` — A Toloker can&#x27;t enter a text in the field.</li> <li>`False` — Editing the field is allowed.</li> </ul> <p>Default value: `False`.</p>
+`placeholder`|**Optional\[Any\]**|<p>A text that is shown if no value is entered.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

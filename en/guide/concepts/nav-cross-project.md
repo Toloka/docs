@@ -14,7 +14,7 @@ This is a special type of [skills](../../glossary.md#skill) in Toloka that show 
 
 - Projects created from certain templates are taken into account. For example, if the project is based on the **Video comparison (Side-by-side)** template, then the Tolokers will receive the **Video SbS** global skill.
 
-- Global skills are assigned according to the percentage of correct answers. 
+- Global skills are assigned according to the percentage of correct answers.
 
 - Global skills are updated daily by the Toloka team.
 
@@ -33,3 +33,5 @@ For example, the restriction `Global skills: Video SbS (monthly) > 80` means “
 - [{#T}](nav-delete.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

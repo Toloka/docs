@@ -1,5 +1,5 @@
 # AppItemImport
-`toloka.client.app.AppItemImport` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/app/__init__.py#L184)
+`toloka.client.app.AppItemImport` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L186)
 
 ```python
 AppItemImport(
@@ -19,6 +19,6 @@ Meta-information on asynchronous loading operation (possible via UI).
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `id`|**Optional\[str\]**|
-`records_count`|**Optional\[int\]**|<p>Number of items in the loading operation.</p>
-`records_processed`|**Optional\[int\]**|<p>Number of successfully loaded items in the loading operation.</p>
+`records_count`|**Optional\[int\]**|<p>The number of items in the loading operation.</p>
+`records_processed`|**Optional\[int\]**|<p>The number of successfully loaded items in the loading operation.</p>
 `errors`|**Optional\[Dict\]**|<p>Errors during the loading operation.</p>

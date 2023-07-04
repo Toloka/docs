@@ -165,7 +165,7 @@ To create a pool:
 
 1. Open the page of the project titled **Are these shoes similar to each other?**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -229,8 +229,6 @@ To create a pool:
 
         The time should be long enough to read the instructions and wait for task data to load. For example, `300` seconds.
 
-    1. Turn on the **Keep task order** option.
-
 1. {% include [tutorials-upload-tasks](../_includes/tutorials/upload-tasks.md) %}
 
     1. Wait for the pool from project 2 to complete.
@@ -276,6 +274,8 @@ To create a pool:
         1. In the **Training tasks** field, specify `0`.
 
         1. In the **Control tasks** field, specify `1`.
+
+        1. Turn on the **Keep task order from uploaded data** option.
 
         1. Click **Upload**.
 
@@ -391,3 +391,5 @@ To check submitted assignments:
 - Create [Project 4](item_more_similar.md) to compare matching images.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

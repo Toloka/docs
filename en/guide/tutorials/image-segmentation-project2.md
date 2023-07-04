@@ -102,7 +102,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. Open the project page **Outline the traffic signs in the image**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -262,7 +262,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
         1. Choose **Set manually**.
 
-        1. In the **Tasks per suite** field, specify `1`.
+        1. In the **Number of tasks per suite** field, specify `1`.
 
         1. Click **Combine tasks into suites**.
 
@@ -291,3 +291,5 @@ A pool is a set of paid tasks sent out for completion at the same time.
 - Create [Project 3](image-segmentation-project3.md) to review assignments.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

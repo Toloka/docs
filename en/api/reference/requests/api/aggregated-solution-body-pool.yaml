@@ -1,0 +1,19 @@
+dawid_skene:
+  description: The `DAWID_SKENE` aggregation
+  summary: DAWID_SKENE aggregation
+  value:
+    type: DAWID_SKENE
+    pool_id: 1491600
+    task_id: 000016c290--64382dfc97aa9547ff8a2299
+    fields:
+    - name: result
+weighted_dynamic_overlap:
+  description: The `WEIGHTED_DYNAMIC_OVERLAP` aggregation
+  summary: WEIGHTED_DYNAMIC_OVERLAP aggregation
+  value:
+    type: WEIGHTED_DYNAMIC_OVERLAP
+    pool_id: '1238218'
+    task_id: 000012e4ca--62e97a75dbab805456309d81
+    fields:
+    - name: result
+    answer_weight_skill_id: '12648'

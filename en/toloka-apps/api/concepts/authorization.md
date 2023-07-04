@@ -14,10 +14,12 @@ Authorization: OAuth <OAuth token>
 
 - [Register](../../../guide/concepts/access.md) in Toloka.
 
-- Get an OAuth token in the [requester interface](https://platform.toloka.ai/requester/profile/integration).
+- Go to [Profile → Integrations](https://platform.toloka.ai/requester/profile/integration):
 
-[![Accessing the API](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/get-oauth-token.png)
+![List of tokens](../../../guide/_images/sso/token-list.png =700x)
+
+Refer to the [Generating API tokens](../../../guide/concepts/api-token.md) section to learn how to issue OAuth tokens.
 
 {% include [contact-support](../../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../../_includes/image-styles.md) %}
+{% include [image-styles-internal](../../../../_includes/image-styles-internal.md) %}

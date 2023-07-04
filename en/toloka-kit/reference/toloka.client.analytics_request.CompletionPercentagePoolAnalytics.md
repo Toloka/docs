@@ -1,14 +1,14 @@
 # CompletionPercentagePoolAnalytics
-`toloka.client.analytics_request.CompletionPercentagePoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L110)
+`toloka.client.analytics_request.CompletionPercentagePoolAnalytics` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L111)
 
 ```python
 CompletionPercentagePoolAnalytics(self, *, subject_id: str)
 ```
 
-Approximate percentage of completed tasks in the pool
+Calculates the percentage of completed tasks in a pool.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`subject_id`|**str**|<p>ID of the object you want to get analytics about.</p>
+`subject_id`|**str**|<p>The ID of a pool to get analytics about.</p>

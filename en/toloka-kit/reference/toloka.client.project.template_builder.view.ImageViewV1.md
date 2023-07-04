@@ -1,5 +1,5 @@
 # ImageViewV1
-`toloka.client.project.template_builder.view.ImageViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/view.py#L211)
+`toloka.client.project.template_builder.view.ImageViewV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/view.py#L221)
 
 ```python
 ImageViewV1(
@@ -22,21 +22,25 @@ ImageViewV1(
 )
 ```
 
-Displays an image.
+A component for displaying an image.
+
+
+For more information, see [view.image](https://toloka.ai/docs/template-builder/reference/view.image).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`url`|**Optional\[Any\]**|<p>Image link.</p>
-`full_height`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If true, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels.</p>
-`max_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Maximum width of the element in pixels, must be greater than min_width.</p>
-`min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>Minimum width of the element in pixels. Takes priority over max_width.</p>
-`no_border`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Controls the display of a frame around an image. By default, true (the frame is hidden). Set false to display the frame.</p>
-`no_lazy_load`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Disables lazy loading. If true, images start loading immediately, even if they aren&#x27;t in the viewport. Useful for icons. By default, false (lazy loading is enabled). In this mode, images start loading only when a Toloker scrolls to them.</p>
-`popup`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Specifies whether opening a full-size image with a click is allowed. By default, it is true (allowed).</p>
-`ratio`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]\]\]**|<p>An array of two numbers that sets the relative dimensions of the sides: width (first number) to height (second number). Not valid if full_height=true.</p>
-`scrollable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>When set to true, an image has scroll bars if it doesn&#x27;t fit in the parent element. If false, the image fits in the parent element and, when clicked, opens in its original size in the module window. Images in SVG format with no size specified always fit in their parent elements.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`url`|**Optional\[Any\]**|<p>The URL of the image.</p>
+`full_height`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, the component takes up all the vertical free space. Note, that the minimum height required by the component is 400 pixels.</p>
+`max_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The maximum width of the component in pixels.</p>
+`min_width`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]**|<p>The minimum width of the component in pixels. It takes priority over the `max_width`.</p>
+`no_border`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Displaying borders around the image.</p> <ul> <li>`True` — The borders are hidden.</li> <li>`False` — The borders are visible.</li> </ul> <p>Default value: `True`.</p>
+`no_lazy_load`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Loading mode:</p> <ul> <li>`False` — The component starts loading the image when the component becomes visible to a Toloker.</li> <li>`True` — The image is loaded immediately. This mode is useful for icons.</li> </ul> <p>Default value: `False` — lazy loading is enabled.</p>
+`popup`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, a Toloker can open a full sized image in a popup. It is a default behavior.</p>
+`ratio`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), float\]\]\]\]**|<p>A list with the aspect ratio of the component. Specify the relative width first and then the relative height. This setting is not used if `full_height=True`.</p>
+`rotatable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>If `True`, an image can be rotated.</p>
+`scrollable`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>The way of displaying an image which is larger than the component:</p> <ul> <li>`True` — Scroll bars are shown.</li> <li>`False` — The image is scaled to fit the component.</li> </ul> <p>Note, that images in SVG format with no size specified always fit the component.</p>
+`hint`|**Optional\[Any\]**|<p>A hint text.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

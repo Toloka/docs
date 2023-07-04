@@ -40,7 +40,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-create-project-step-1.png)
+    ![Create a project. Step 1](../_images/tutorials/record-audio/voice-recording-create-project-step-1.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with layout and validation pre-configured.
 
@@ -52,7 +52,7 @@ Before you begin:
 
     1. In the **Input data example** section, you can change the sample text. This text is only used to display the task interface preview on the right.
 
-        [![Create a project. Input data example](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-input-example.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-input-example.png)
+        ![Create a project. Input data example](../_images/tutorials/record-audio/voice-recording-input-example.png =700x)
 
     1. {% include [toloka-requester-source-specification-definition](../_includes/toloka-requester-source/id-toloka-requester-source/specification-definition.md) %}
 
@@ -76,7 +76,7 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -94,7 +94,7 @@ Before you begin:
 
         1. For example, add the **Languages** filter:
 
-            [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-language-filter.png)
+            ![Create a pool. Languages filter](../_images/tutorials/record-audio/voice-recording-language-filter.png =700x)
 
         1. It is best to launch voice recording tasks in the Toloka mobile app so that Tolokers can record audio directly in a task using the device's built-in voice recorder. Add the **Client** filter and select **Toloka for mobile**.
 
@@ -120,13 +120,13 @@ Before you begin:
 
         1. Add the **Results of assignment review** quality control rule and enter the following values:
 
-            [![Create a pool. Results of assignment review](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-offline-accept.png)
+            ![Create a pool. Results of assignment review](../_images/tutorials/record-audio/voice-recording-offline-accept.png =700x)
 
             This means that if 35% or more of a Toloker's responses are rejected, the Toloker is banned and can't access your tasks for 15 days. The rule takes effect after 3 responses of the Toloker are reviewed.
 
         1. Add the [Processing rejected and accepted assignments](../concepts/reassessment-after-accepting.md) rule:
 
-            [![Create a pool. Processing rejected and accepted assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/record-audio-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/record-audio-rejected.png)
+            ![Create a pool. Processing rejected and accepted assignments](../_images/tutorials/record-audio/record-audio-rejected.png =700x)
 
             This means that if you reject assignments during the review, they'll be sent for re-completion to another Toloker.
 
@@ -179,7 +179,7 @@ Before you begin:
 
         For example, you can add 5 general tasks per suite:
 
-        [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-upload-data.png)
+        ![Upload data. Tasks per suite](../_images/tutorials/record-audio/voice-recording-upload-data.png =700x)
 
     1. Click **Combine tasks into suites**.
 
@@ -195,7 +195,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-start-labeling-step-2.png)
+    ![Start labeling. Step 2](../_images/tutorials/record-audio/voice-recording-start-labeling-step-2.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -207,7 +207,7 @@ After the time period specified in step 4.1 of [creating the pool](#pool), all r
 
 1. Go to the pool, and click **Review assignments**.
 
-    [![See the results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-review-results.png)
+    ![See the results. Step 1](../_images/tutorials/record-audio/voice-recording-review-results.png =700x)
 
 1. Choose an assignment.
 
@@ -221,13 +221,13 @@ After the time period specified in step 4.1 of [creating the pool](#pool), all r
 
 1. After checking all the assignments, click **Download results**.
 
-    [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-results-download.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-results-download.png)
+    ![See the results. Download results](../_images/tutorials/record-audio/voice-recording-results-download.png =700x)
 
     You will get the TSV file with the labeling results.
 
 1. To download the recordings, click the arrow next to the **Download results** button. Choose **Download attachments** from the drop-down menu.
 
-    [![See the results. Download attachments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-download-attachments.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/record-audio/voice-recording-download-attachments.png)
+    ![See the results. Download attachments](../_images/tutorials/record-audio/voice-recording-download-attachments.png =700x)
 
 ## Troubleshooting {#troubleshooting}
 
@@ -253,4 +253,4 @@ The `popup` property of the component [view.image](../../template-builder/refere
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

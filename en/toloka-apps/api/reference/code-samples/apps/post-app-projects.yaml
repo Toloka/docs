@@ -1,0 +1,163 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X POST 'https://toloka.dev/api/app/v0/app-projects' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Content-Type: application/json' \
+         -d '{"app_id":"J5Ep73Zrw47SA47pd64y", "parent_app_project_id":"xNnK4wYdlMPCQ0zPL315", "name":"My new project", "parameters":{"default_language":"en","name":"Product relevance project","instruction_classes":[{"description":"The product is relevant to the query.","label":"Relevant","value":"relevant"},{"description":"The product is not completely relevant to the query.","label":"Irrelevant","value":"irrelevant"}],"instruction_examples":[{"description":"The product exactly matches the query.","label":"relevant","query":"some search query","screenshot_url":"https://example.com/1"},{"description":"The product shape matches but the product color does not.","label":"irrelevant","query":"other search query","screenshot_url":"https://example.com/2"}]}}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    app_project = toloka.client.AppProject(
+      app_id='9lZaMl363jahzra1rrYq',
+      name='Example project (product relevance)',
+      parameters={
+        "default_language": "en",
+        "name": "Product relevance project",
+        "instruction_classes": [
+          {
+            "description": "The product is relevant to the query.",
+            "label": "Relevant",
+            "value": "relevant"
+          },
+          {
+            "description": "The product is not completely relevant to the query.",
+            "label": "Irrelevant",
+            "value": "irrelevant"
+          }
+        ],
+        "instruction_examples": [
+          {
+            "description": "The product exactly matches the query.",
+            "label": "relevant",
+            "query": "some search query",
+            "screenshot_url": "https://example.com/1"
+          },
+          {
+            "description": "The product shape matches but the product color does not.",
+            "label": "irrelevant",
+            "query": "other search query",
+            "screenshot_url": "https://example.com/2"
+          }
+        ]
+      }
+    )
+    app_project = toloka_client.create_app_project(app_project)
+    print(app_project.created, app_project.status)
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+    import json
+
+    url = "https://toloka.dev/api/app/v0/app-projects"
+
+    payload = json.dumps({
+      "app_id": "J5Ep73Zrw47SA47pd64y",
+      "parent_app_project_id": "xNnK4wYdlMPCQ0zPL315",
+      "name": "My new project",
+      "parameters": {
+        "default_language": "en",
+        "name": "Product relevance project",
+        "instruction_classes": [
+          {
+            "description": "The product is relevant to the query.",
+            "label": "Relevant",
+            "value": "relevant"
+          },
+          {
+            "description": "The product is not completely relevant to the query.",
+            "label": "Irrelevant",
+            "value": "irrelevant"
+          }
+        ],
+        "instruction_examples": [
+          {
+            "description": "The product exactly matches the query.",
+            "label": "relevant",
+            "query": "some search query",
+            "screenshot_url": "https://example.com/1"
+          },
+          {
+            "description": "The product shape matches but the product color does not.",
+            "label": "irrelevant",
+            "query": "other search query",
+            "screenshot_url": "https://example.com/2"
+          }
+        ]
+      }
+    })
+    headers = {
+      'Content-Type': 'application/json',
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+    }
+
+    response = requests.request("POST", url, headers=headers, data=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://toloka.dev/api/app/v0/app-projects',
+      'headers': {
+        'Content-Type': 'application/json',
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      },
+      body: JSON.stringify({
+        "app_id": "J5Ep73Zrw47SA47pd64y",
+        "parent_app_project_id": "xNnK4wYdlMPCQ0zPL315",
+        "name": "My new project",
+        "parameters": {
+          "default_language": "en",
+          "name": "Product relevance project",
+          "instruction_classes": [
+            {
+              "description": "The product is relevant to the query.",
+              "label": "Relevant",
+              "value": "relevant"
+            },
+            {
+              "description": "The product is not completely relevant to the query.",
+              "label": "Irrelevant",
+              "value": "irrelevant"
+            }
+          ],
+          "instruction_examples": [
+            {
+              "description": "The product exactly matches the query.",
+              "label": "relevant",
+              "query": "some search query",
+              "screenshot_url": "https://example.com/1"
+            },
+            {
+              "description": "The product shape matches but the product color does not.",
+              "label": "irrelevant",
+              "query": "other search query",
+              "screenshot_url": "https://example.com/2"
+            }
+          ]
+        }
+      })
+
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: 'Java'
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.post("https://toloka.dev/api/app/v0/app-projects")
+      .header("Content-Type", "application/json")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .body("{\"app_id\":\"J5Ep73Zrw47SA47pd64y\", \"parent_app_project_id\":\"xNnK4wYdlMPCQ0zPL315\", \"name\":\"My new project\", \"parameters\":{\"default_language\":\"en\",\"name\":\"Product relevance project\",\"instruction_classes\":[{\"description\":\"The product is relevant to the query.\",\"label\":\"Relevant\",\"value\":\"relevant\"},{\"description\":\"The product is not completely relevant to the query.\",\"label\":\"Irrelevant\",\"value\":\"irrelevant\"}],\"instruction_examples\":[{\"description\":\"The product exactly matches the query.\",\"label\":\"relevant\",\"query\":\"some search query\",\"screenshot_url\":\"https://example.com/1\"},{\"description\":\"The product shape matches but the product color does not.\",\"label\":\"irrelevant\",\"query\":\"other search query\",\"screenshot_url\":\"https://example.com/2\"}]}}")
+      .asString();

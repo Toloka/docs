@@ -27,10 +27,10 @@ Task markup is available only for [training pools](train.md) and [pools](../../g
 1. Create a control or a training task from another type of task clicking the appropriate button.
 
     ![Create control or training tasks](../_images/location-job/task-edit/create-from-tasks.png =700x)
-    
+
 1. Select the correct response in the task preview block.
 
-1. Select the [output data fields](incoming.md) that should be checked. 
+1. Select the [output data fields](incoming.md) that should be checked.
 
 1. Add a hint if you're creating a training task.
 
@@ -114,7 +114,7 @@ The response statistics is shown in the **Responses** and **Correct** fields  at
 
 {% note tip %}
 
-If you set the overlap to 0 [via the API](../../api/concepts/set-min-task-overlap.md), the task won't be visible to Tolokers, and you won't have to delete it.
+If you set the overlap to 0 [via the API](https://toloka.ai/docs/api/api-reference/#patch-/tasks/-id-/set-overlap-or-min), the task won't be visible to Tolokers, and you won't have to delete it.
 
 {% endnote %}
 

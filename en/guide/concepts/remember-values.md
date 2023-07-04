@@ -165,3 +165,5 @@ When the ban or pause is lifted and the Toloker starts performing tasks, the cal
 Only the history of the rule which triggered the ban will be cleared.
 
 {% endnote %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -1,5 +1,5 @@
 # ConcatArraysHelperV1
-`toloka.client.project.template_builder.helpers.ConcatArraysHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/helpers.py#L31)
+`toloka.client.project.template_builder.helpers.ConcatArraysHelperV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/helpers.py#L30)
 
 ```python
 ConcatArraysHelperV1(
@@ -10,16 +10,13 @@ ConcatArraysHelperV1(
 )
 ```
 
-Merging multiple arrays into a single array.
+Concatenates multiple arrays into a single array.
 
 
-For example, let's say you have multiple arrays:
-`([1, 2, 3], [4, 5, 6], [7, 8, 9])`
-Their elements can be combined into a single array to show simultaneously:
-`[1, 2, 3, 4, 5, 6, 7, 8, 9]`
+For more information, see [helper.concat-arrays](https://toloka.ai/docs/template-builder/reference/helper.concat-arrays).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`items`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Any\]\]\]**|<p>Arrays to combine.</p>
+`items`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Any\]\]\]**|<p>Arrays to concatenate.</p>

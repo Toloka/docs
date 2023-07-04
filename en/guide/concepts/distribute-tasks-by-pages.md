@@ -10,11 +10,11 @@ The Toloker receives payment for a task suite, so the labeling cost and quality 
 
 ## Set manually {#by-empty-row}
 
-Enter the number of tasks per suite. The order of tasks depends on the [**Keep task order**](pool-main.md) pool setting.
+Enter the number of tasks per suite.
 
 ## Smart mixing {#smart-mixing}
 
-Specify how many tasks of each type should be in each task suite. For example, 8 general tasks, 1 training and 1 control task. If necessary, specify the minimum number of tasks for each type in additional settings.
+Specify how many tasks of each type should be in each task suite. For example, 8 general tasks, 1 training and 1 control task. If necessary, specify the minimum number of tasks for each type in [pool settings](pool-main.md). The order of tasks depends on the **Keep task order from uploaded data** pool setting.
 
 #### When to use
 
@@ -132,7 +132,7 @@ If another overlap value is set, control tasks may end during labeling and the p
 
 ## For developers {#for-developers}
 
-- [Toloka API: Task suites](../../api/concepts/task-suite.md)
+- [Toloka API: Task suites](https://toloka.ai/docs/api/api-reference/#tag--task-suite)
 - [Toloka-Kit recipe: Group tasks in task suites](../../toloka-kit/recipes/create-task-suite.md)
 
 ## Troubleshooting {#troubleshooting}
@@ -148,3 +148,5 @@ If another overlap value is set, control tasks may end during labeling and the p
 {% include [faq-upload-accepted-assignments](../_includes/faq/adding-tasks-to-the-pool/upload-accepted-assignments.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -1,5 +1,5 @@
 # EmailFieldV1
-`toloka.client.project.template_builder.fields.EmailFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L214)
+`toloka.client.project.template_builder.fields.EmailFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L210)
 
 ```python
 EmailFieldV1(
@@ -14,17 +14,17 @@ EmailFieldV1(
 )
 ```
 
-Creates a field for entering an email address.
+A field for entering an email address.
 
 
-Checks that the text contains the @ character. You can set other conditions yourself.
+For more information, see [field.email](https://toloka.ai/docs/template-builder/reference/field.email).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`placeholder`|**Optional\[Any\]**|<p>A semi-transparent label that is shown in an empty field.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`placeholder`|**Optional\[Any\]**|<p>A text that is shown when no address is entered.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

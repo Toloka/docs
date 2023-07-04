@@ -273,13 +273,9 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
 
 {% include [troubleshooting-submit-doesnt-work](../_includes/troubleshooting/project-settings/submit-doesnt-work.md) %}
 
-{% include [faq-checkbox-selected](../_includes/faq/project-settings/checkbox-selected.md) %}
-
 {% include [faq-different-numbers](../_includes/faq/project-settings/different-numbers.md) %}
 
 {% include [faq-deselect-radio](../_includes/faq/project-settings/deselect-radio.md) %}
-
-{% include [faq-assigment-validation](../_includes/faq/project-settings/assigment-validation.md) %}
 
 {% include [faq-change-background](../_includes/faq/project-settings/change-background.md) %}
 
@@ -344,3 +340,5 @@ Read the [article]({{ toloka-knowledge-base }}) on how to make the task interfac
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -1,5 +1,5 @@
 # City
-`toloka.client.filter.City` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/filter.py#L356)
+`toloka.client.filter.City` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L356)
 
 ```python
 City(
@@ -16,4 +16,4 @@ Filtering Tolokers by a city specified in their profiles.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `operator`|**[InclusionOperator](toloka.client.primitives.operators.InclusionOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
-`value`|**int**|<p>The [ID](https://toloka.ai/en/docs/api/concepts/regions) of the city.</p>
+`value`|**int**|<p>The [ID](https://toloka.ai/docs/api/regions) of the city.</p>

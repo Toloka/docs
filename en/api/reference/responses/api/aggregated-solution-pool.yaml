@@ -1,0 +1,40 @@
+dawid_skene:
+  description: The information about the result aggregation progress.
+  summary: DAWID_SKENE aggregation
+  value:
+    id: "5530b051-f9b1-445c-b54c-ac56f9b09ada"
+    type: "SOLUTION.AGGREGATE"
+    status: "RUNNING"
+    submitted: "2023-04-13T16:39:12.422"
+    started: "2023-04-13T16:39:12.478"
+    progress: 0
+    parameters:
+      pool_id: "1491600"
+      algorithm: "DAWID_SKENE"
+      pool_name: "Image classification"
+      project_id: "133047"
+      input_fields:
+        - "image"
+      requester_id: "6c6e20dc86cca2ae787afcb2629de162"
+      missing_output_fields: []
+      aggregated_output_fields:
+        - "result"
+    details: {}
+weighted_dynamic_overlap:
+  description: The information about the result aggregation progress.
+  summary: WEIGHTED_DYNAMIC_OVERLAP aggregation
+  value:
+    id: "430fa011-6053-4664-b0b7-0c4e50ea91ed"
+    type: "SOLUTION.AGGREGATE"
+    status: "PENDING"
+    submitted: "2023-04-13T16:37:58.126"
+    progress: 0
+    parameters:
+      pool_id: "1491600"
+      algorithm: "WEIGHTED_DYNAMIC_OVERLAP"
+      pool_name: "Image classification"
+      project_id: "133047"
+      requester_id: "6c6e20dc86cca2ae787afcb2629de162"
+      aggregated_fields:
+        - name: "result"
+      answer_weight_skill_id: 12648

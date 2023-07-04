@@ -1,0 +1,651 @@
+components:
+  schemas:
+    TaskSpec:
+      required:
+        - input_spec
+        - output_spec
+      type: object
+      description: Parameters for input and output data and the task interface.
+      properties:
+        input_spec:
+          $ref: '#/components/schemas/InputSpecNode'
+        output_spec:
+          $ref: '#/components/schemas/OutputSpecNode'
+        view_spec:
+          $ref: '#/components/schemas/ViewSpecNode'
+
+    InputSpecNode:
+      required:
+        - <ID>
+      type: object
+      description: Contains JSON with the input data properties. Use it to define the data type (string, integer, URL, and so on) and specify validation parameters (such as the string length).
+      properties:
+        <ID>:
+          $ref: '#/components/schemas/InputSpecNodeID'
+
+    InputSpecNodeID:
+      description: The ID of the object to display in the task, and its properties.
+      allOf:
+        - $ref: '#/components/schemas/SpecNodeID'
+        - type: object
+          required:
+            - type
+          properties:
+            hidden:
+              type: boolean
+              description: Whether to hide field with the input value from the Toloker or not.
+              default: false
+            required:
+              type: boolean
+              description: Whether the object or input field is required.
+              default: true
+            type:
+              type: string
+              description: |
+                Data type:
+
+                - `boolean` — Boolean data type (`true`/`false`).
+                - `coordinates` — Geographical coordinates, such as "53.910236, 27.531110").
+                - `float` — Floating-point number.
+                - `integer` — Integer.
+                - `json` — JSON object.
+                - `string` — String.
+                - `url` — URL of an image, page, and so on.
+
+    OutputSpecNode:
+      required:
+        - <ID>
+      type: object
+      description: Contains JSON with the response validation parameters. Use them to define the data type (string, integer, URL, and so on) and specify validation parameters (such as the string length).
+      properties:
+        <ID>:
+          $ref: '#/components/schemas/OutputSpecNodeID'
+
+    OutputSpecNodeID:
+      description: The ID of the object to display in the task, and its properties.
+      allOf:
+        - $ref: '#/components/schemas/SpecNodeID'
+        - type: object
+          required:
+            - type
+          properties:
+            current_location:
+              type: string
+              description: "Only for output data of the coordinates type: populate the field with the Toloker's current coordinates in the field (`true`/`false`). Used in tasks for the mobile app."
+            hidden:
+              type: boolean
+              description: Whether to hide field with the output value from the Toloker or not.
+              default: false
+            required:
+              type: boolean
+              description: Whether the object or output field is required.
+              default: true
+            type:
+              type: string
+              description: |
+                Data type:
+
+                - `boolean` — Boolean data type (`true`/`false`).
+                - `coordinates` — Geographical coordinates, such as "53.910236, 27.531110").
+                - `file` — File (only for output data).
+                - `float` — Floating-point number.
+                - `integer` — Integer.
+                - `json` — JSON object.
+                - `string` — String.
+                - `url` — URL of an image, page, and so on.
+
+    SpecNodeID:
+      type: object
+      description: The ID of the object to display in the task, and its properties.
+      properties:
+        allowed_values:
+          oneOf:
+            - type: array
+              description: An array of string values.
+              items:
+                type: string
+            - type: array
+              description: An array of integer values.
+              items:
+                type: integer
+            - type: array
+              description: An array of float values.
+              items:
+                type: number
+          description: |
+            Allowed values.
+
+            Setting acceptable values improves the quality of [response aggregation](#tag--aggregated-solution).
+        max_length:
+          type: integer
+          description: Maximum length of the string.
+        max_value:
+          type: number
+          description: Maximum value of the number.
+        min_length:
+          type: integer
+          description: Minimum length of the string.
+        min_value:
+          type: number
+          description: Minimum value of the number.
+
+    ViewSpecNode:
+      required:
+        - settings
+      type: object
+      description: Description of the task interface.
+      properties:
+        markup:
+          type: string
+          description: |
+            HTML markup of the task.
+
+            For more information, see the [HTML block](https://toloka.ai/docs/guide/spec/#html) section.
+          example: "<task interface code>"
+        script:
+          type: string
+          description: |
+            JavaScript code of the task.
+
+            For more information, see the [JavaScript block](https://toloka.ai/docs/guide/spec/#js) section.
+          example: "<JavaScript code>"
+        styles:
+          type: string
+          description: |
+            CSS styles of the task.
+
+            For more information, see the [CSS block](https://toloka.ai/docs/guide/spec/#css) section.
+          example: "<CSS code>"
+        settings:
+          type: object
+          description: Whether to display common interface elements in the task.
+          properties:
+            showTimer:
+              type: boolean
+              default: true
+              description: Whether to show the remaining time.
+              example: true
+            showTitle:
+              type: boolean
+              default: true
+              description: Whether to show the project name in task titles.
+              example: true
+            showInstructions:
+              type: boolean
+              default: true
+              description: Whether to show the **Instructions** button.
+              example: true
+            showFullscreen:
+              type: boolean
+              default: true
+              description: Whether to show the **Fullscreen** button.
+              example: true
+            showSubmit:
+              type: boolean
+              default: true
+              description: Whether to show the **Submit** button.
+              example: true
+            showSkip:
+              type: boolean
+              default: true
+              description: Whether to show the **Skip** button.
+              example: true
+            showFinish:
+              type: boolean
+              default: true
+              description: Whether to show the **Exit** button.
+              example: true
+            showMessage:
+              type: boolean
+              default: true
+              description: Whether to show the **Contact requester** button.
+              example: true
+            showReward:
+              type: boolean
+              default: true
+              description: Whether to show the price per task suite.
+              example: true
+        config:
+          type: array
+          description: "[Configuration for Template Builder](https://toloka.ai/docs/api/tb-config/)."
+          example: "{\"view\": {\"type\": \"view.list\", \"items\": [{\"type\": \"view.image\", \"ratio\": [1, 1], \"rotatable\": true, \"url\": {\"type\": \"data.input\", \"path\": \"image\"}}, {\"type\": \"field.button-radio-group\", \"label\": \"What type of shoes do you see?\", \"options\": [{\"label\": \"Boots\", \"value\": \"boots\" }, {\"label\": \"Sneakers\", \"value\": \"sneakers\"}, {\"label\": \"Other\", \"value\": \"other\"}], \"validation\": {\"type\": \"condition.required\", \"hint\": \"choose one of the options\"}, \"data\": {\"type\": \"data.output\", \"path\": \"result\"}}]}, \"plugins\": [{\"type\": \"plugin.toloka\", \"layout\": {\"kind\": \"scroll\", \"taskWidth\": 500}}, {\"1\": {\"type\": \"action.set\", \"data\": {\"type\": \"data.output\", \"path\": \"result\"}, \"payload\": \"boots\"}, \"2\": {\"type\": \"action.set\", \"data\": {\"type\": \"data.output\", \"path\": \"result\"}, \"payload\": \"sneakers\"}, \"3\": {\"type\": \"action.set\", \"data\": {\"type\": \"data.output\", \"path\": \"result\"}, \"payload\": \"other\"}, \"type\": \"plugin.hotkeys\"}]}"
+          items:
+            type: object
+        lock:
+          type: object
+          description: |
+            **Required** if `type` is set to `tb`.
+
+            The set of the Template Builder component versions that will be used to create the project task interface.
+          example:
+            core: "1.15.0"
+            view.list: "1.2.0"
+            action.set: "1.0.8"
+            view.image: "1.4.0"
+            plugin.toloka: "1.1.8"
+            plugin.hotkeys: "1.3.0"
+            condition.required: "1.1.6"
+            field.button-radio-group: "1.3.1"
+        assets:
+          type: object
+          description: |
+            Linked files:
+
+            - CSS styles
+            - JavaScript libraries
+            - Toloka assets with the `$TOLOKA_ASSETS` prefix. Add items in the order they should be linked when running the task interface.
+          properties:
+            script_urls:
+              type: array
+              description: |
+                Links to JavaScript libraries and Toloka assets.
+
+                Toloka assets:
+
+                - `$TOLOKA_ASSETS/js/toloka-handlebars-templates.js` — Handlebars (see the [description on the template engine website](https://handlebarsjs.com/)).
+                - `$TOLOKA_ASSETS/js/image-annotation.js` — Image labeling interface (more information about [image with area selection](https://toloka.ai/docs/guide/t-components/image-annotation.md/)).
+
+                Note that the image labeling interface should only be connected together with the Handlebars helpers. The order of connection matters:
+
+                  ```json
+                  "script_urls": [
+                    "$TOLOKA_ASSETS/js/toloka-handlebars-templates.js",
+                    "$TOLOKA_ASSETS/js/image-annotation.js"
+                  ]
+                  ```
+              example:
+                - "library1.js"
+                - "library2.js"
+              items:
+                type: string
+            style_urls:
+              type: array
+              description: Links to CSS libraries.
+              example:
+                - "style1.css"
+                - "style2.css"
+              items:
+                type: string
+        type:
+          type: string
+          description: |
+            Editor type used to create the project interface:
+
+            - `classic` — the [HTML/CSS/JS editor](https://toloka.ai/docs/guide/spec/) which allows using HTML, CSS, and JavaScript elements to create the task interface.
+            - `tb` — the [Template Builder editor](https://toloka.ai/docs/template-builder/) which allows using elements with JSON syntax for the task interface.
+
+            Depending on the editor type, the following parameters are used:
+
+            - `assets`, `markup`, `script`, and `styles` when the value is set to `classic`.
+            - `config`, `lock` when the value is set to `tb`.
+        localizationConfig:
+          type: object
+          description: |
+            Editor configuration.
+
+            In the Template Builder, add to this field the keys for the properties of text components that you need to translate into other languages.
+
+            For more information, see [Translating the task interface](https://toloka.ai/docs/guide/project-languages/#interface-translate).
+          properties:
+            keys:
+              type: string
+              description: |
+                Keys in the source language.
+
+                  ```json
+                  "key": "<key name>",
+                  "defaultValue": "<source text>"
+                  ```
+
+                For more information, see [Translating the task interface](https://toloka.ai/docs/guide/project-languages/#interface-translate).
+    ParametersObjectNode:
+      type: object
+      description: The parameters specific for the current operation.
+      properties:
+        project_id:
+          type: string
+          description: The ID of the project for which you want to get the current state data.
+          example: 83859
+        pool_id:
+          type: string
+          description: The ID of the pool for which you want to get the current state data.
+          example: 32267581
+        training_id:
+          type: string
+          description: The ID of the training pool for which you want to get the current state data.
+          example: 1239110
+        open_pool:
+          type: boolean
+          description: |
+            _Returned for tasks and task suites._
+
+            Whether the pool will be opened immediately after creating the tasks or task suites, if the pool is closed.
+        allow_defaults:
+          type: boolean
+          description: |
+            _Returned for tasks and task suites._
+
+            Overlap settings:
+
+            - `true` — Use the overlap that is set in the pool parameters (in the `defaults.default_overlap_for_new_tasks` key).
+            - `false` — Use the overlap that is set in the task/task suite parameters (in the `overlap` field).
+        skip_invalid_items:
+          type: boolean
+          description: |
+            _Returned for tasks and task suites._
+
+            Validation parameters for JSON objects:
+
+            - `true` — Create the tasks that passed validation. Skip the rest of the tasks (errors will be listed in the response to the request).
+            - `false` — If one or more tasks didn't pass validation, stop the operation and don't create any tasks.
+    DetailsObjectNode:
+      type: object
+      description: Details of the operation completion or other objects created during the operation.
+      properties:
+        total_count:
+          type: integer
+          description: The number of items in the request.
+        valid_count:
+          type: integer
+          description: The number of items that passed validation.
+        not_valid_count:
+          type: integer
+          description: The number of items that failed validation.
+        success_count:
+          type: integer
+          description: The number of items successfully created or uploaded.
+        failed_count:
+          type: integer
+          description: The number of items that couldn't be created or uploaded.
+    OperationLog:
+      type: object
+      description: The operation log in the JSON format.
+      properties:
+        type:
+          type: string
+          description: |
+            The type of the operation step. It depends on:
+
+            - The type of the operation for which the log is requested.
+            - The execution result (`success: true/false`).
+
+            The `type` values for a successful asynchronous operation:
+
+            - `USER_BONUS_PERSIST` — Issuing a bonus.
+            - `TASK_CREATE` — Creating a task.
+            - `TASK_SUITE_CREATE` — Creating a task suite.
+
+            The `type` values for a failed asynchronous operation:
+
+            - `USER_BONUS_VALIDATE` — Issuing a bonus.
+            - `TASK_VALIDATE` — Creating a task.
+            - `TASK_SUITE_VALIDATE` — Creating a task suite.
+
+            The type of the operation step determines the `input` and `output` values.
+        success:
+          type: boolean
+          description: |
+            The operation step result:
+
+            - `true` — Completed successfully.
+            - `false` — Not completed.
+        input:
+          type: object
+          description: |
+            The data in the `input` is copied from the input data passed when creating the operation.
+        output:
+          type: object
+          description: |
+            Output values at the operation step.
+
+            The data in the output for a successful operation:
+
+            - For the `USER_BONUS_PERSIST` action — `user_bonus_id` (the ID of the issued bonus).
+            - For the `TASK_CREATE` action — `task_id` (the ID of the created task).
+            - For the `TASK_SUITE_CREATE` action — `task_suite_id` (the ID of the created task suite).
+
+            Data in the output for a failed operation:
+
+            - `code` — The name of the error.
+            - `message` — The explanation of how to fix the error.
+            - `payload` — The error reason if `code = VALIDATION_ERROR`.
+    RealSettings:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/Settings'
+        - type: object
+          description: Selective review of general tasks. To make sure selective review is enabled, don't forget to set up task display in `mixer_config`.
+    GoldenSettings:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/Settings'
+        - type: object
+          description: Selective review of control tasks. To make sure selective review is enabled, don't forget to set up display of this type of task in `mixer_config`.
+          properties:
+            task_distribution_function:
+              allOf:
+                - $ref: '#/components/schemas/GoldenTaskDistributionFunction'
+                - type: object
+                  properties:
+                    distribution:
+                      description: |
+                        **Required** if selective review is used.
+
+                        The distribution of control tasks with selective review within an interval.
+                    intervals:
+                      description: |
+                        **Required** if selective review is used.
+
+                        Interval limits and frequency of control tasks with selective review.
+                      items:
+                        $ref: '#/components/schemas/GoldenTaskSelectiveInterval'
+    TrainingSettings:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/Settings'
+        - type: object
+          description: Selective review of training tasks. To make sure selective review is enabled, don't forget to set up display of this type of task in `mixer_config`.
+          properties:
+            task_distribution_function:
+              allOf:
+                - $ref: '#/components/schemas/TrainingTaskDistributionFunction'
+                - type: object
+                  properties:
+                    distribution:
+                      description: |
+                        **Required** if selective review is used.
+
+                        The distribution of training tasks with selective review within an interval.
+                    intervals:
+                      description: |
+                        **Required** if selective review is used.
+
+                        Interval limits and frequency of training tasks with selective review.
+                      items:
+                        $ref: '#/components/schemas/TrainingTaskSelectiveInterval'
+    HasMore:
+      type: boolean
+      description: |
+        Shows whether the list is complete.
+
+        Acceptable values:
+
+        - `true` — Not all elements are included in the output due to restrictions in the [limit](#overview--filtering-requests) parameter.
+
+            You can get the rest of the results by using the `_lt(e)` and `_gt(e)` parameters.
+
+            Learn more about [filtering requests parameters](#overview--filtering-requests).
+
+        - `false` — The output contains all the items.
+      example: true
+    DynamicPricingInterval:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/Interval'
+        - type: object
+          properties:
+            reward_per_assignment:
+              type: number
+              description: |
+                **Required** if dynamic pricing is used.
+
+                The price per task suite set for the selected skill value interval.
+              format: int32
+    QualityControlInterval:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/Interval'
+        - type: object
+          properties:
+            frequency:
+              maximum: 10000000
+              minimum: 1
+              type: integer
+              description: |
+                **Required** if selective review is used.
+
+                The frequency of tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be majority vote tasks.
+              format: int32
+    GoldenTaskInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The start of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The frequency of control tasks in an interval. The first task in an interval is a control task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be control tasks.
+    GoldenTaskSelectiveInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if selective review is used.
+
+                The start of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if selective review is used.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if selective review is used.
+
+                The frequency of control tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be majority vote tasks.
+    TrainingTaskInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The start of the interval (number of tasks completed by the Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The frequency of training tasks in an interval. The first task in an interval is a training task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be training tasks.
+    TrainingTaskSelectiveInterval:
+      allOf:
+        - $ref: '#/components/schemas/QualityControlInterval'
+        - type: object
+          properties:
+            from:
+              description: |
+                **Required** if selective review is used.
+
+                The start of the interval (number of tasks completed by the Toloker in the project or in the pool).
+            to:
+              description: |
+                **Required** if selective review is used.
+
+                The end of the interval (the number of tasks completed by a Toloker in the project or in the pool).
+            frequency:
+              description: |
+                **Required** if selective review is used.
+
+                The frequency of training tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be majority vote tasks.
+    GoldenTaskDistributionFunction:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/TaskDistributionFunction'
+        - type: object
+          description: |
+            Vary the frequency of control tasks. The option allows you to change the frequency of checking as the Toloker completes more tasks.
+
+            If it is filled in, use `real_task_count` to specify the maximum number of tasks per task suite. To use the option, set the `golden_task_count:0` and `min_golden_tasks_count:null` parameter values.
+          properties:
+            distribution:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The distribution of control tasks within an interval.
+            intervals:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The interval boundaries and the number of control tasks in an interval.
+              items:
+                $ref: '#/components/schemas/GoldenTaskInterval'
+            scope:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                How to count tasks completed by the Toloker:
+
+                - `POOL` — Count the completed pool tasks.
+                - `PROJECT` — Count the completed project tasks.
+            window_days:
+              description: |
+                **Required** if control tasks are assigned at a variable rate.
+
+                The period in which completed tasks are counted (number of days).
+    TrainingTaskDistributionFunction:
+      allOf:
+        - $ref: '../../fullApi.yaml#/components/schemas/TaskDistributionFunction'
+        - type: object
+          description: |
+            Issue training tasks with uneven frequency. This option allows you to change the frequency of training tasks as the Toloker completes more tasks.
+
+            If it is filled in, then in `real_task_count` specify the maximum number of tasks to put in a task suite. To use the option, set parameter values `training_task_count:0` and `min_training_tasks_count:null`.
+          properties:
+            distribution:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The distribution of training tasks within an interval.
+            intervals:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The interval boundaries and the number of training tasks in an interval.
+              items:
+                $ref: '#/components/schemas/TrainingTaskInterval'
+            scope:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                How to count tasks completed by the Toloker:
+
+                - `POOL` — Count the completed pool tasks.
+                - `PROJECT` — Count the completed project tasks.
+            window_days:
+              description: |
+                **Required** if training tasks are assigned at a variable rate.
+
+                The period in which completed tasks are counted (number of days).

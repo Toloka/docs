@@ -213,17 +213,17 @@ This means that you successfully created the project with the parameters that yo
 
 1. In the upper-right corner of the project page click ![Project actions](../../guide/_images/drop-down.svg) → **![Preview](../../guide/_images/preview.svg) Preview**:
 
-    [![What the project interface might look like](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/project_look.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/project_look.png)
+    ![What the project interface might look like](../_images/learn-basics/project_look.png =700x)
 
 1. In the upper part of the preview page click **Change input data**, and insert an image URL into the `image` field, then click **Apply**:
 
-    [![What the task interface might look like and how to insert images in the preview](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/task_look.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/task_look.png)
+    ![What the task interface might look like and how to insert images in the preview](../_images/learn-basics/task_look.png =700x)
 
 1. In the upper part of the preview demonstration click **Instructions**. Make sure the instructions are shown and that they say what you want them to.
 
 1. Select an option in your task. In the lower-left corner of the preview demonstration click **Submit**, then **View responses**. In the appeared result window, check that your results are written in expected format and that the entered data is correct:
 
-    [![What the results might look like](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/results_preview.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/results_preview.png)
+    ![What the results might look like](../_images/learn-basics/results_preview.png =700x)
 
 {% note info %}
 
@@ -389,11 +389,11 @@ You will get an output which looks like this:
 
 Open your project page. You will see your new pool:
 
-[![Project interface with a pool](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/project_with_pool.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/project_with_pool.png)
+![Project interface with a pool](../_images/learn-basics/project_with_pool.png =700x)
 
 The pool interface looks like this:
 
-[![Pool interface](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/pool_preview.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/pool_preview.png)
+![Pool interface](../_images/learn-basics/pool_preview.png =700x)
 
 Right now the pool is empty and closed. It has no tasks or task suites.
 
@@ -739,7 +739,7 @@ Name: agg_label, Length: 202, dtype: object
 
 If you prefer to run the code using [Jupyter Notebook](https://colab.research.google.com/github/Toloka/toloka-kit/blob/main/examples/0.getting_started/0.learn_the_basics/learn_the_basics.ipynb), you will have a visual preview for the images from your tasks:
 
-[![Possible results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/possible_results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/learn-basics/possible_results.png)
+![Possible results](../_images/learn-basics/possible_results.png =700x)
 
 ### Complete code
 
@@ -776,7 +776,7 @@ print(predicted_answers)
 
 - [Toloka-Kit recipe list](./use-cases.md)
 - [Toloka documentation](../../index.md)
-- [Toloka API documentation](../../api/index.md)
+- [Toloka API documentation](https://toloka.ai/docs/api/api-reference/)
 - [Toloka homepage](https://toloka.ai/)
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

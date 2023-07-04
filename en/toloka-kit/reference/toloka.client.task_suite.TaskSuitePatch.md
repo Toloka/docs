@@ -1,5 +1,5 @@
 # TaskSuitePatch
-`toloka.client.task_suite.TaskSuitePatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/task_suite.py#L118)
+`toloka.client.task_suite.TaskSuitePatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/task_suite.py#L122)
 
 ```python
 TaskSuitePatch(

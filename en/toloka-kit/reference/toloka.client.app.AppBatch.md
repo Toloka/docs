@@ -1,5 +1,5 @@
 # AppBatch
-`toloka.client.app.AppBatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/app/__init__.py#L199)
+`toloka.client.app.AppBatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L201)
 
 ```python
 AppBatch(
@@ -48,6 +48,6 @@ A batch contains task items that are sent for labeling together.
 `read_only`|**Optional\[bool\]**|
 `last_items_import`|**Optional\[[AppItemImport](toloka.client.app.AppItemImport.md)\]**|<p>Meta-information on asynchronous loading operation (possible via UI).</p>
 `confidence_avg`|**Optional\[float\]**|<p>Average labeling quality.</p>
-`items_processed_count`|**Optional\[int\]**|<p>Number of labeled items.</p>
+`items_processed_count`|**Optional\[int\]**|<p>The number of labeled items.</p>
 `eta`|**Optional\[datetime\]**|<p>Expected date and time when batch processing will be completed.</p>
 `items_per_state`|**Optional\[Dict\]**|<p>Statistics on the number of items in each state.</p>

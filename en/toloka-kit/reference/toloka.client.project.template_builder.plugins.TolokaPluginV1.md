@@ -1,5 +1,5 @@
 # TolokaPluginV1
-`toloka.client.project.template_builder.plugins.TolokaPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/plugins.py#L171)
+`toloka.client.project.template_builder.plugins.TolokaPluginV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/plugins.py#L166)
 
 ```python
 TolokaPluginV1(
@@ -14,6 +14,9 @@ TolokaPluginV1(
 
 A plugin with extra settings for tasks in Toloka.
 
+
+For more information, see [plugin.toloka](https://toloka.ai/docs/template-builder/reference/plugin.toloka).
+
 ## Parameters Description
 
 | Parameters | Type | Description |
@@ -23,11 +26,11 @@ A plugin with extra settings for tasks in Toloka.
 
 **Examples:**
 
-How to set the task width on the task page.
+Setting the width of the task block on a page.
 
 ```python
 task_width_plugin = tb.plugins.TolokaPluginV1(
-    'scroll',
+    kind='scroll',
     task_width=400,
 )
 ```

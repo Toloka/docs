@@ -1,5 +1,5 @@
 # unarchive_app_project
-`toloka.client.TolokaClient.unarchive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3657)
+`toloka.client.TolokaClient.unarchive_app_project` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3822)
 
 ```python
 unarchive_app_project(self, app_project_id: str)
@@ -23,3 +23,10 @@ Previous project status, which was before archiving, is restored.
 * **Return type:**
 
   [AppProject](toloka.client.app.AppProject.md)
+
+**Examples:**
+
+
+```python
+toloka_client.unarchive_app_project('Q2d15QBjpwWuDz8Z321g')
+```

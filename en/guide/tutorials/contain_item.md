@@ -159,7 +159,7 @@ To create a [pool](../../glossary.md#pool):
 
 1. Open the page of the project titled **Are there shoes in the photo?**.
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -268,3 +268,5 @@ To get the results:
 - Create [Project 2](find_an_item_in_store.md) to search for similar items in an online store.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

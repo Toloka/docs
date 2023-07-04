@@ -145,3 +145,5 @@ For example, if you want to use images in the `image` field, specify the file li
 - [{#T}](task_upload.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

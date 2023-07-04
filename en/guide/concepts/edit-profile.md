@@ -8,15 +8,21 @@
 
 1. You can edit the following fields:
 
-    - **FIRST NAME**
-
     - **LAST NAME**
+
+    - **FIRST NAME**
 
     - **DISPLAY NAME**
 
     - **EMAIL**
 
     - **PHONE**
+
+    {% note warning %}
+
+    Please note that the display name is the name that the Tolokers see as the author of the tasks. It must be unique for every client.
+
+    {% endnote %}
 
 1. Click **Save**.
 

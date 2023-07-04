@@ -1,0 +1,7 @@
+subscription_body:
+  description: The subscription that you want to create.
+  value:
+    event_type: ASSIGNMENT_CREATED
+    webhook_url: https://example.com/toloka-webhook
+    pool_id: '1080020'
+    secret_key: '12345'

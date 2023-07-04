@@ -4,7 +4,7 @@ You can see an example in the comments for this [project]({{ how-to-insert-a-cal
 
 To add libraries:
 
-1. Click the “gear button” in project editing mode.
+1. Click the gear button in project editing mode.
 
 1. In the field that opens on the left, enter the links and press **Enter**.
 

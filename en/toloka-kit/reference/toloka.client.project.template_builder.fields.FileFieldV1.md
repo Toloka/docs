@@ -1,5 +1,5 @@
 # FileFieldV1
-`toloka.client.project.template_builder.fields.FileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L226)
+`toloka.client.project.template_builder.fields.FileFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L223)
 
 ```python
 FileFieldV1(
@@ -15,22 +15,18 @@ FileFieldV1(
 )
 ```
 
-This component can be used for uploading files. It's displayed in the interface as an upload button.
+A component for uploading files.
 
 
-You can restrict the file types to upload in the "accept" property. By default, only one file can be uploaded,
-but you can allow multiple files in the "multiple" property.
-
-If a Toloker logs in from a mobile device, it's more convenient to use field.media-file — it's adapted for mobile
-devices and makes it easier to upload photos and videos.
+For more information, see [field.file](https://toloka.ai/docs/template-builder/reference/field.file).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`accept`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]\]\]**|<p>A list of file types that can be uploaded. By default, you can upload any files. Specify the types in the [certain format](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). For example, you can allow only images to be uploaded by adding the image/jpeg and image/png types.</p>
-`multiple`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<p>Determines whether multiple files can be uploaded:</p> <ul> <li>`False` (default) — forbidden.</li> <li>`True` — allowed.</li> </ul>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`accept`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), List\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), str\]\]\]\]**|<p>A list of file types that can be uploaded. Use [MIME types](https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types). For example, `image/jpeg`. By default, you can upload any files.</p>
+`multiple`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), bool\]\]**|<ul> <li>`True` — Multiple files can be uploaded.</li> <li>`False` — A single file can be uploaded.</li> </ul> <p>Default value: `False`.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

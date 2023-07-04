@@ -1,17 +1,17 @@
 # AnalyticsRequest
-`toloka.client.analytics_request.AnalyticsRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/analytics_request.py#L24)
+`toloka.client.analytics_request.AnalyticsRequest` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/analytics_request.py#L24)
 
 ```python
 AnalyticsRequest(self, *, subject_id: str)
 ```
 
-Base class for all analytics requests in Toloka
+A base class for analytics requests.
 
 
-How to use this requests and get some useful information see in example in "TolokaClient.get_analytics".
+Make analytics requests to Toloka with the [get_analytics](toloka.client.TolokaClient.get_analytics.md) method.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`subject_id`|**str**|<p>ID of the object you want to get analytics about.</p>
+`subject_id`|**str**|<p>The ID of an object to get analytics about.</p>

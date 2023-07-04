@@ -13,7 +13,7 @@
     ```bash
     PUT https://toloka.dev/api/v1/webhook-subscriptions
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 - Песочница
@@ -21,7 +21,7 @@
     ```bash
     PUT https://sandbox.toloka.dev/api/v1/webhook-subscriptions
     Authorization: OAuth <OAuth token>
-    Content-Type: application/JSON
+    Content-Type: application/json
     ```
 
 {% endlist %}

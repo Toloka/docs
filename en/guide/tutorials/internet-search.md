@@ -44,7 +44,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-create-project-step-1.png)
+    ![Create a project. Step 1](../_images/tutorials/internet-search/internet-search-create-project-step-1.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like.
 
@@ -52,7 +52,7 @@ Before you begin:
 
     1. In the **Config** section, you can edit the code to change the appearance and layout of the task elements. For example, to configure the field label which specifies the object Tolokers should find information about, replace the sample text with your value in the `label` property.
 
-        [![Create a project. Config text](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-text.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-text.png)
+        ![Create a project. Config text](../_images/tutorials/internet-search/internet-search-config-text.png =700x)
 
     1. To configure the sources where Tolokers should search for information, edit the `view.link-group` component.
 
@@ -60,7 +60,7 @@ Before you begin:
 
         - The second and third `url` components contain the links to the search queries. You can change the [search engines](../../template-builder/reference/helper.search-query.md) Tolokers will use in your tasks.
 
-            [![Create a project. Config links](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-links.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-config-links.png)
+            ![Create a project. Config links](../_images/tutorials/internet-search/internet-search-config-links.png =700x)
 
             {% note info %}
 
@@ -90,7 +90,7 @@ Before you begin:
 
 {% include [toloka-requester-source-what-is-pool](../_includes/toloka-requester-source/id-toloka-requester-source/what-is-pool.md) %}
 
-1. Click **Add a pool** on the project page.
+1. Click **Create new pool** on the project page.
 
 1. {% include [toloka-requester-pool-type](../_includes/toloka-requester-source/id-toloka-requester-source/pool-type.md) %}
 
@@ -106,7 +106,7 @@ Before you begin:
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
-        [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-language-filter.png)
+        ![Create a pool. Languages filter](../_images/tutorials/internet-search/internet-search-language-filter.png =700x)
 
     1. Use the **Speed/quality balance** slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
@@ -114,11 +114,11 @@ Before you begin:
 
     1. Click the **Add skill** button. Enter the skill name and description, and leave the skill not public.
 
-        [![Create a pool. Add skill](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-add.png =458x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-add.png)
+        ![Create a pool. Add skill](../_images/tutorials/internet-search/internet-search-skill-add.png =458x)
 
     1. Click **Add filter → My skills** and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill or those whose skill value is 65 and higher.
 
-        [![Create a pool. My skills filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-skill-filter.png)
+        ![Create a pool. My skills filter](../_images/tutorials/internet-search/internet-search-skill-filter.png =700x)
 
         Later in this tutorial, you will add a rule that assigns this skill to Tolokers according to how accurate their responses are.
 
@@ -126,7 +126,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, edit the pre-configured **Fast responses** rule. Specify the following values:
 
-        [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-fast-responses.png)
+        ![Create a pool. Fast responses rule](../_images/tutorials/internet-search/internet-search-fast-responses.png =700x)
 
         These settings mean that a Toloker who completes a task suite in less than 10 seconds will be suspended and won't be able to access tasks of the project for 1 day.
 
@@ -136,7 +136,7 @@ Before you begin:
 
     1. Click **Add a quality control rule → Control tasks**, and enter the following values:
 
-        [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-control-rule.png)
+        ![Create a pool. Control tasks rule](../_images/tutorials/internet-search/internet-search-control-rule.png =700x)
 
         This means that a Toloker who gives 3 or more responses to the control tasks will be assigned the skill you’ve created before. The skill value is equal to the percent of correct responses. As you’ve set the filter to select Tolokers whose skill value is 65 or more in step 3.5, the rule allows you to filter out Tolokers who have shown poor results.
 
@@ -187,7 +187,7 @@ Before you begin:
 
             For example, you can add 2 general tasks and 1 control task per suite:
 
-            [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-data.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-upload-data.png)
+            ![Upload data. Tasks per suite](../_images/tutorials/internet-search/internet-search-upload-data.png =700x)
 
     1. Click **Combine tasks into suites**.
 
@@ -209,7 +209,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-start-labeling-step-2.png)
+    ![Start labeling](../_images/tutorials/internet-search/internet-search-start-labeling-step-2.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -217,11 +217,11 @@ Before you begin:
 
 1. {% include [toloka-requester-source-labeling-progress](../_includes/toloka-requester-source/id-toloka-requester-source/labeling-progress.md) %}
 
-    [![See the results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-1.png)
+    ![See the results. Step 1](../_images/tutorials/internet-search/internet-search-see-results-step-1.png =700x)
 
 1. Click the arrow next to the **Download results** button and choose **Run Dawid-Skene model** from the drop-down menu. Click **Yes** in the pop-up window.
 
-    [![See the results. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/internet-search/internet-search-see-results-step-2.png)
+    ![See the results. Step 2](../_images/tutorials/internet-search/internet-search-see-results-step-2.png =700x)
 
 1. Open the same drop-down menu again, and click **View aggregations list**.
 
@@ -250,4 +250,4 @@ Before you begin:
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -1,5 +1,5 @@
 # ButtonRadioFieldV1
-`toloka.client.project.template_builder.fields.ButtonRadioFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/fields.py#L87)
+`toloka.client.project.template_builder.fields.ButtonRadioFieldV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/fields.py#L91)
 
 ```python
 ButtonRadioFieldV1(
@@ -14,19 +14,17 @@ ButtonRadioFieldV1(
 )
 ```
 
-A component in the form of a button.
+A button to choose an answer.
 
 
-A Toloker makes a choice by clicking on it.
-
-The size of the button depends on the size of the label.
+For more information, see [field.button-radio](https://toloka.ai/docs/template-builder/reference/field.button-radio).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Data with values that will be processed or changed.</p>
-`value_to_set`|**Optional\[Any\]**|<p>The value of the output data when the button is clicked.</p>
-`hint`|**Optional\[Any\]**|<p>Hint text.</p>
-`label`|**Optional\[Any\]**|<p>Label above the component.</p>
-`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation based on condition.</p>
+`data`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>A data path.</p>
+`value_to_set`|**Optional\[Any\]**|<p>A value to write to data.</p>
+`hint`|**Optional\[Any\]**|<p>A hint.</p>
+`label`|**Optional\[Any\]**|<p>A label above the component.</p>
+`validation`|**Optional\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md)\]**|<p>Validation rules.</p>

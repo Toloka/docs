@@ -1,0 +1,29 @@
+success:
+  description: The list of operations and their properties in the `items` array.
+  value:
+    items:
+    - id: 07700135-c34a-4df0-ae55-d44081dea432
+      type: ANALYTICS
+      status: SUCCESS
+      submitted: '2022-11-22T16:11:38.874'
+      started: '2022-11-22T16:11:39.005'
+      finished: '2022-11-22T16:11:39.633'
+      progress: 100
+      parameters:
+        value:
+        - name: completion_percentage
+          subject: POOL
+          subject_id: '36502086'
+      details:
+        value:
+        - result:
+            type: NORMAL
+            value: 96
+            infinite: false
+            approximate: false
+          request:
+            name: completion_percentage
+            subject: POOL
+            subject_id: '36502086'
+          finished: '2022-11-22T16:11:39.348'
+    has_more: true

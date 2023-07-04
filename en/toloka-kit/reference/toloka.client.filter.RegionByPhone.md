@@ -1,5 +1,5 @@
 # RegionByPhone
-`toloka.client.filter.RegionByPhone` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/filter.py#L486)
+`toloka.client.filter.RegionByPhone` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/filter.py#L486)
 
 ```python
 RegionByPhone(
@@ -16,4 +16,4 @@ Filtering Tolokers by a region which is determined by their mobile phone number.
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
 `operator`|**[InclusionOperator](toloka.client.primitives.operators.InclusionOperator.md)**|<p>An operator used in a condition. Allowed set of operators depends on the filter.</p>
-`value`|**int**|<p>The ID from the [list of regions](https://toloka.ai/en/docs/api/concepts/regions).</p>
+`value`|**int**|<p>The ID from the [list of regions](https://toloka.ai/docs/api/regions).</p>

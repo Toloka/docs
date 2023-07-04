@@ -1,5 +1,5 @@
 # validate_condition
-`toloka.client.collectors.CollectorConfig.validate_condition` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/collectors.py#L66)
+`toloka.client.collectors.CollectorConfig.validate_condition` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/collectors.py#L66)
 
 ```python
 validate_condition(self, conditions: List[RuleCondition])

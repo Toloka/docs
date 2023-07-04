@@ -1,5 +1,5 @@
 # App
-`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/app/__init__.py#L91)
+`toloka.client.app.App` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/app/__init__.py#L93)
 
 ```python
 App(
@@ -19,7 +19,7 @@ App(
 )
 ```
 
-An [App](https://toloka.ai/en/docs/toloka-apps/concepts/) solution.
+An [App](https://toloka.ai/docs/api/apps-reference/#tag--app) solution.
 
 
 Each App solution targets specific type of tasks which can be solved using Toloka.

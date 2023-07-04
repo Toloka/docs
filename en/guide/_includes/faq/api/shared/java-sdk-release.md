@@ -1,0 +1,1 @@
+Refer to our [GitHub repository](https://github.com/Toloka/toloka-java-sdk/releases) for the list of available releases.

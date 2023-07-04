@@ -1,5 +1,5 @@
 # Training
-`toloka.client.training.Training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/training.py#L11)
+`toloka.client.training.Training` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/training.py#L11)
 
 ```python
 Training(
@@ -38,7 +38,7 @@ To link a training to a general pool set the
 [Pool](toloka.client.pool.Pool.md).[quality_control](toloka.client.quality_control.QualityControl.md).[training_requirement](toloka.client.quality_control.QualityControl.TrainingRequirement.md)
 parameter.
 
-For more information, see [Adding a training](https://toloka.ai/en/docs/guide/concepts/train).
+For more information, see [Adding a training](https://toloka.ai/docs/guide/train).
 
 ## Parameters Description
 

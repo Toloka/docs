@@ -1,9 +1,10 @@
 # NewMessageThreads
-`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/metrics/metrics.py#L353)
+`toloka.metrics.metrics.NewMessageThreads` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/metrics/metrics.py#L361)
 
 ```python
 NewMessageThreads(
     self,
+    cursor_time_lag: timedelta = ...,
     count_name: Optional[str] = None,
     projects_name: Dict[str, str] = ...,
     pools_name: Dict[str, str] = ...,
@@ -25,6 +26,7 @@ NewMessageThreads instance. You can gather all in one instance.
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
+`cursor_time_lag`|**timedelta**|<p>Time lag for cursor. This controls time lag between message threads being created and this metric being updated. See BaseCursor.time_lag for details and reasoning behind this.</p>
 `count_name`|**Optional\[str\]**|<p>Metric name for a count of new messages.</p>
 `projects_name`|**Dict\[str, str\]**|<p>Dictionary that allows count messages on exact projects. {project_id: line_name}</p>
 `pools_name`|**Dict\[str, str\]**|<p>Dictionary that allows count messages on exact pools. {pool_id: line_name}</p>

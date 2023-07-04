@@ -1,0 +1,82 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X PUT 'https://toloka.dev/api/v1/skills/11294' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Content-Type: application/json' \
+         -d '{"name":"Programmer","public_name":{"EN":"Programmer"},"public_requester_description":{"EN":"You are an expert in programming languages"},"private_comment":"Got at least 5 right responses on control tasks with C++ or Python","hidden":true,"deprecated":false}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    skill = toloka_client.get_skill('11294')
+    skill.private_comment = 'Got at least 5 right responses on control tasks with C++ or Python'
+    toloka_client.update_skill(skill.id, skill)
+  description: More details on this in the [Edit skill](https://toloka.ai/docs/toloka-kit/recipes/edit-skill/) Toloka-Kit recipe
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/skills/11294"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Content-Type': 'application/json'
+    }
+    payload = {
+      "name": "Programmer",
+      "public_name": {
+        "EN": "Programmer"
+      },
+      "public_requester_description": {
+        "EN": "You are an expert in programming languages"
+      },
+      "private_comment": "Got at least 5 right responses on control tasks with C++ or Python",
+      "hidden": True,
+      "deprecated": False
+    }
+    response = requests.put(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'PUT',
+      'url': 'https://toloka.dev/api/v1/skills/11294',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Content-Type': 'application/json'
+      },
+      'body': JSON.stringify({
+        "name": "Programmer",
+        "public_name": {
+          "EN": "Programmer"
+        },
+        "public_requester_description": {
+          "EN": "You are an expert in programming languages"
+        },
+        "private_comment": "Got at least 5 right responses on control tasks with C++ or Python",
+        "hidden": true,
+        "deprecated": false
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.put("https://toloka.dev/api/v1/skills/11294")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Content-Type", "application/json")
+      .body("{\"name\":\"Programmer\",\"public_name\":{\"EN\":\"Programmer\"},\"public_requester_description\":{\"EN\":\"You are an expert in programming languages\"},\"private_comment\":\"Got at least 5 right responses on control tasks with C++ or Python\",\"hidden\":true,\"deprecated\":false}")
+      .asString();

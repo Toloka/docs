@@ -1,5 +1,5 @@
 # ComposeDetails
-`toloka.client.message_thread.MessageThread.ComposeDetails` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/message_thread.py#L103)
+`toloka.client.message_thread.MessageThread.ComposeDetails` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/message_thread.py#L105)
 
 ```python
 ComposeDetails(
@@ -11,12 +11,12 @@ ComposeDetails(
 )
 ```
 
-For messages that you sent: details of the POST request for creating the message.
+The details of selecting recipients.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`recipients_select_type`|**Optional\[[RecipientsSelectType](toloka.client.message_thread.RecipientsSelectType.md)\]**|<p>Method for specifying recipients.</p>
-`recipients_ids`|**Optional\[List\[str\]\]**|<p>List of recipients IDs.</p>
-`recipients_filter`|**Optional\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>Condition to filter recipients.</p>
+`recipients_select_type`|**Optional\[[RecipientsSelectType](toloka.client.message_thread.RecipientsSelectType.md)\]**|<p>The way of specifying message recipients.</p>
+`recipients_ids`|**Optional\[List\[str\]\]**|<p>A list of Toloker IDs. It is filled if `recipients_select_type` is `DIRECT`.</p>
+`recipients_filter`|**Optional\[[FilterCondition](toloka.client.filter.FilterCondition.md)\]**|<p>A filter for selecting Tolokers. It is set if `recipients_select_type` is `FILTER`.</p>

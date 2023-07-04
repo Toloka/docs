@@ -1,5 +1,5 @@
 # get_app_projects
-`toloka.async_client.client.AsyncTolokaClient.get_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.get_app_projects` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
 
 Finds all App projects that match certain criteria.
 
@@ -39,3 +39,12 @@ If you need to sort App projects use the [find_app_projects](toloka.client.Tolok
 * **Yield type:**
 
   [AsyncGenAdapter](toloka.util.async_utils.AsyncGenAdapter.md)\[[AppProject](toloka.client.app.AppProject.md), None\]
+
+**Examples:**
+
+
+```python
+app_projects = toloka_client.get_app_projects(scope='MY')
+for app_project in app_projects:
+    print(app_project.id, app_project.status, app_project.name)
+```

@@ -1,5 +1,5 @@
 # GoldenSetCorrectAnswersRate
-`toloka.client.conditions.GoldenSetCorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/conditions.py#L197)
+`toloka.client.conditions.GoldenSetCorrectAnswersRate` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/conditions.py#L197)
 
 ```python
 GoldenSetCorrectAnswersRate(

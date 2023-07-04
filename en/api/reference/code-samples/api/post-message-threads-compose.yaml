@@ -1,0 +1,82 @@
+- lang: shell
+  label: 'cURL'
+  source: |
+    curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
+         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Content-Type: application/json' \
+         -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
+- lang: py
+  label: 'Python: Toloka-Kit'
+  source: |
+    import toloka.client
+
+    toloka_client = toloka.client.TolokaClient(
+      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+
+    message_text = "Amazing job! We have just trained our first model."
+    toloka_client.compose_message_thread(
+      recipients_select_type = 'ALL',
+      topic = {'EN': 'Thank you!'},
+      text = {'EN': message_text},
+      answerable = False
+    )
+  description: More details on this in the [Send messages](https://toloka.ai/docs/toloka-kit/recipes/send-messages/) Toloka-Kit recipe
+- lang: python
+  label: 'Python: Requests'
+  source: |
+    import requests
+
+    url = "https://toloka.dev/api/v1/message-threads/compose"
+    headers = {
+      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Content-Type': 'application/json'
+    }
+    payload = {
+      "topic": {
+        "EN": "Thank you!"
+      },
+      "text": {
+        "EN": "Amazing job! We have just trained our first model."
+      },
+      "recipients_select_type": "ALL",
+      "answerable": False
+    }
+    response = requests.post(url, headers=headers, json=payload)
+
+    print(response.text)
+- lang: js
+  label: 'Nodejs'
+  source: |
+    var request = require('request');
+    var options = {
+      'method': 'POST',
+      'url': 'https://toloka.dev/api/v1/message-threads/compose',
+      'qs': {},
+      'headers': {
+        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Content-Type': 'application/json'
+      },
+      'body': JSON.stringify({
+        "topic": {
+          "EN": "Thank you!"
+        },
+        "text": {
+          "EN": "Amazing job! We have just trained our first model."
+        },
+        "recipients_select_type": "ALL",
+        "answerable": false
+      })
+    };
+    request(options, function (error, response) {
+      if (error) throw new Error(error);
+      console.log(response.body);
+    });
+- lang: java
+  label: Java
+  source: |
+    Unirest.setTimeouts(0, 0);
+    HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/message-threads/compose")
+      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Content-Type", "application/json")
+      .body("{\"topic\":{\"EN\":\"Thank you!\"},\"text\":{\"EN\":\"Amazing job! We have just trained our first model.\"},\"recipients_select_type\":\"ALL\",\"answerable\":false}")
+      .asString();

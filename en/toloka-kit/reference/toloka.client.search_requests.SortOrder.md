@@ -1,5 +1,5 @@
 # SortOrder
-`toloka.client.search_requests.SortOrder` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/search_requests.py#L70)
+`toloka.client.search_requests.SortOrder` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/search_requests.py#L70)
 
 An enumeration.
 

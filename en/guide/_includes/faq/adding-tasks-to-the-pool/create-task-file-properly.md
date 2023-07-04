@@ -8,6 +8,6 @@ If you are creating a training task, you also need to fill in the `HINT:text` co
 
 The file format must be TSV, XLSX or JSON, and the encoding must be UTF-8.
 
-For more information about creating the file, see the [Guide](../../../../guide/concepts/pool_csv.md). If there are errors during the upload, look up the error description on this [page](../../../../guide/concepts/task_upload.md).
+For more information about creating the file, see this [guide](../../../../guide/concepts/pool_csv.md). If there are errors during the upload, look up the error description on this [page](../../../../guide/concepts/task_upload.md#table-with-errors).
 
 {% endcut %}

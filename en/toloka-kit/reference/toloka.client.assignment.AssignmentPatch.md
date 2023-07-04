@@ -1,5 +1,5 @@
 # AssignmentPatch
-`toloka.client.assignment.AssignmentPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/assignment.py#L110)
+`toloka.client.assignment.AssignmentPatch` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/assignment.py#L110)
 
 ```python
 AssignmentPatch(

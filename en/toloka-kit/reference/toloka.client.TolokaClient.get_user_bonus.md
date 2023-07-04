@@ -1,21 +1,21 @@
 # get_user_bonus
-`toloka.client.TolokaClient.get_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L3079)
+`toloka.client.TolokaClient.get_user_bonus` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L3179)
 
 ```python
 get_user_bonus(self, user_bonus_id: str)
 ```
 
-Gets information about a Toloker's reward.
+Gets information about a Toloker's bonus.
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`user_bonus_id`|**str**|<p>The ID of the reward.</p>
+`user_bonus_id`|**str**|<p>The ID of the bonus.</p>
 
 * **Returns:**
 
-  The information about the reward.
+  The information about the bonus.
 
 * **Return type:**
 

@@ -122,7 +122,7 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 
 ## For developers {#for-developers}
 
-- [Toloka API: Creating project](../../api/concepts/create-prj.md)
+- [Toloka API: Creating project](https://toloka.ai/docs/api/api-reference/#post-/projects)
 - [Toloka-Kit recipe: Create project](../../toloka-kit/recipes/create-project.md)
 
 ## Troubleshooting {#troubleshooting}
@@ -152,8 +152,6 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 {% include [faq-input-data-labeling-image](../_includes/faq/questions-about-templates/input-data-labeling-image.md) %}
 
 {% include [faq-mark-triangles](../_includes/faq/questions-about-templates/mark-triangles.md) %}
-
-{% include [faq-shortcut-adding-polygon](../_includes/faq/questions-about-templates/shortcut-adding-polygon.md) %}
 
 {% include [faq-large-number-objects](../_includes/faq/questions-about-templates/large-number-objects.md) %}
 

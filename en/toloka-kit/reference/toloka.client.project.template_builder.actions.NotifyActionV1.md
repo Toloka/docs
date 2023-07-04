@@ -1,5 +1,5 @@
 # NotifyActionV1
-`toloka.client.project.template_builder.actions.NotifyActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/project/template_builder/actions.py#L46)
+`toloka.client.project.template_builder.actions.NotifyActionV1` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/project/template_builder/actions.py#L45)
 
 ```python
 NotifyActionV1(
@@ -10,13 +10,13 @@ NotifyActionV1(
 )
 ```
 
-The component creates a message in the lower-left corner of the screen.
+The action shows a popup message.
 
 
-You can set the how long the message will be active, the delay before displaying it, and the background color.
+For more information, see [action.notify](https://toloka.ai/docs/template-builder/reference/action.notify).
 
 ## Parameters Description
 
 | Parameters | Type | Description |
 | :----------| :----| :-----------|
-`payload`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Payload](toloka.client.project.template_builder.actions.NotifyActionV1.Payload.md)\]\]**|<p>Parameters for the message.</p>
+`payload`|**Optional\[Union\[[BaseComponent](toloka.client.project.template_builder.base.BaseComponent.md), [Payload](toloka.client.project.template_builder.actions.NotifyActionV1.Payload.md)\]\]**|<p>Popup parameters.</p>

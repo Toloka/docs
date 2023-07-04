@@ -1,5 +1,5 @@
 # patch_task_suite
-`toloka.async_client.client.AsyncTolokaClient.patch_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.1.4/src/client/__init__.py#L0)
+`toloka.async_client.client.AsyncTolokaClient.patch_task_suite` | [Source code](https://github.com/Toloka/toloka-kit/blob/v1.2.0/src/client/__init__.py#L0)
 
 Changes task suite parameter values in Toloka.
 

@@ -1,6 +1,6 @@
 # Bonuses
 
-To motivate Tolokers to complete your project tasks quickly and provide high-quality responses, you can give extra bonuses for individual tasks, or bonus one or more trusted users (in addition to paying them for [task completion](../../glossary.md#completed-tasks)).
+To motivate Tolokers to complete your project tasks quickly and provide high-quality responses, you can give extra bonuses for individual tasks, or bonus one or more trusted Tolokers (in addition to paying them for [task completion](../../glossary.md#completed-tasks)).
 
 The bonus amount can be from $0.005 to $100 per Toloker per time.
 
@@ -26,7 +26,7 @@ To issue a bonus for a specific pool task, use [online task review](accept.md#ac
 
 1. Fill in the fields in the **Issue bonus** window that appears:
 
-    - **Bonus per user** in dollars.
+    - **Bonus per Toloker** in dollars.
 
     - **Topic** and **Message** for Tolokers. Specify what exactly the bonus is credited for. To send messages in different languages, use the button for switching languages.
 
@@ -42,7 +42,7 @@ To issue a bonus for a specific pool task, use [online task review](accept.md#ac
 
 To issue bonuses to Tolokers:
 
-1. Go to the [Tolokers]({{ users }}) page.
+1. Go to the [Users]({{ users }}) page.
 
 1. Choose the Tolokers who will receive the bonus.
 
@@ -113,7 +113,7 @@ Refer to the [Issue bonuses](https://toloka.ai/docs/api/api-reference/#post-/use
 
 ## For developers {#for-developers}
 
-- [Toloka API: Issuing bonuses](../../api/concepts/bonus.md)
+- [Toloka API: Issuing bonuses](https://toloka.ai/docs/api/api-reference/#post-/user-bonuses)
 - [Toloka-Kit recipe: Issue bonuses to Tolokers](../../toloka-kit/recipes/assign-reward.md)
 - [Toloka-Kit recipe: Get list of all bonuses issued](../../toloka-kit/recipes/get-rewards.md)
 - [Toloka-Kit recipe: Get bonus details](../../toloka-kit/recipes/get-reward-by-id.md)
@@ -125,3 +125,5 @@ Refer to the [Issue bonuses](https://toloka.ai/docs/api/api-reference/#post-/use
 {% include [faq-stat-rewards](../_includes/faq/users/stat-rewards.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}
