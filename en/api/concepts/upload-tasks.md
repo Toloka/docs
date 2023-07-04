@@ -29,7 +29,7 @@ With this method, Toloka will split tasks into suites according to the "smart mi
       -d '{
             "pool_id": "1",
             "input_values": {
-              "image_url": "www.images/image1.ru"
+              "image_url": "https://example.com/image_1.jpg"
             },
             "known_solutions": [
               {
@@ -81,7 +81,7 @@ With this method, Toloka will split tasks into suites according to the "smart mi
             {
               "pool_id": "1",
               "input_values": {
-                "image_url": "www.images/image1.ru"
+                "image_url": "https://example.com/image_1.jpg"
               },
               "known_solutions": [
                 {
@@ -162,7 +162,7 @@ This method won't work if you created a pool using [smart mixing](../../guide/co
                 "id": "49a333ea-2728-4c1c-ab1f-8ab1bfe4ee7e",
                 "origin_task_id": "e3da7fe1-828d-4d9c-b49d-42c0eb5fcfde",
                 "input_values": {
-                  "image_url": "www.image1.ru"
+                  "image_url": "https://example.com/image_1.jpg"
                 },
                 "known_solutions": [
                   {
@@ -182,7 +182,7 @@ This method won't work if you created a pool using [smart mixing](../../guide/co
               },
               {
                 "input_values": {
-                  "image_url": "www.image2.ru"
+                  "image_url": "https://example.com/image_2.jpg"
                 },
                 "known_solutions": [
                   {
@@ -222,7 +222,7 @@ This method won't work if you created a pool using [smart mixing](../../guide/co
                   "id": "49a333ea-2728-4c1c-ab1f-8ab1bfe4ee7e",
                   "origin_task_id": "e3da7fe1-828d-4d9c-b49d-42c0eb5fcfde",
                   "input_values": {
-                    "image_url": "www.image1.ru"
+                    "image_url": "https://example.com/image_1.jpg"
                   },
                   "known_solutions": [
                     {
@@ -242,7 +242,7 @@ This method won't work if you created a pool using [smart mixing](../../guide/co
                 },
                 {
                   "input_values": {
-                    "image_url": "www.image2.ru"
+                    "image_url": "https://example.com/image_2.jpg"
                   },
                   "known_solutions": [
                     {
