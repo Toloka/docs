@@ -331,7 +331,7 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
    },
    {
        "id": "2",
-       "text": "I don’t like hooney."
+       "text": "I don’t like honey."
    }
   ]
 }
@@ -428,10 +428,10 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
             "status": "COMPLETED",
             "input_data": {
                 "id": "2",
-                "text": "I don’t like hooney."
+                "text": "I don’t like honey."
             },
             "output_data": {
-                "text": "I don’t like hooney.",
+                "text": "I don’t like honey.",
                 "result": [
                     "BAD"
                 ],

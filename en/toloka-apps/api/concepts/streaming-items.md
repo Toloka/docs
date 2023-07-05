@@ -8,10 +8,18 @@ This mode is suitable, for example, for moderation tasks.
 
 ### HTTP request {#create-item-request}
 
-```http
-POST /app-projects/{app_project_id}/items/bulk
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+```bash
+curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{app_project_id}/items/bulk' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+     -H 'Content-Type: application/json' \
+     -d '{
+           "items": [
+             {
+               "id": "1",
+               "image_url": "https://example.com/dogs_1.jpg"
+             }
+           ]
+         }'
 ```
 
 ### Path parameters {#create-item-path-params}
@@ -23,18 +31,7 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 Project ID.||
 |#
 
-### Request body {#create-item-body}
-
-```json
-{
-   "items":[
-      {
-         "id": "1",
-         "image_url": "https://tlk.s3.yandex.net/dataset/cats_vs_dogs/dogs/048e5760fc5a46faa434922b2447a527.jpg"
-      }
-   ]
-}
-```
+### Request body parameters {#create-item-body}
 
 #|
 ||**Key**|**Overview**||
@@ -63,10 +60,9 @@ After the request is completed, find the last labeled item with the latest `fini
 
 ### HTTP request {#get-result-request}
 
-```http
-GET /app-projects/{app_project_id}/items?sort=finished&after_id={last_saved_item_id}
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+```bash
+curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{app_project_id}/items?sort=finished&after_id={last_saved_item_id}' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
 ```
 
 ### Path parameters {#get-result-path-params}
@@ -89,48 +85,44 @@ Contains already processed task items.
 200 OK
 
 {
-    "content": [
-        {
-            "id": "QlvdZj5d53QHj5Nvx9Vd",
-            "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
-            "status": "COMPLETED",
-            "input_data": {
-                "id": "1",
-                "text": "Kate likes dogs."
-            },
-            "output_data": {
-                "text": "Kate likes dogs.",
-                "result": [
-                    "OK"
-                ],
-                "confidence": 0.9998542274
-            },
-            "errors": [],
-            "created_at": "2021-10-03T09:49:14.028",
-            "started_at": "2021-10-03T10:10:27.561182",
-            "finished_at": "2021-10-03T11:24:46.818213"
-        },
-        {
-            "id": "nbeya74y4PpU1NkbaxA4",
-            "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
-            "status": "COMPLETED",
-            "input_data": {
-                "id": "2",
-                "text": "I don’t like hooney."
-            },
-            "output_data": {
-                "text": "I don’t like hooney.",
-                "result": [
-                    "BAD"
-                ],
-                "confidence": 0.9998542274
-            },
-            "errors": [],
-            "created_at": "2021-10-03T09:49:14.028",
-            "started_at": "2021-10-03T10:10:27.561182",
-            "finished_at": "2021-10-03T11:24:47.704265"
-        }
-    ],
-    "has_more": false
+  "content": [
+    {
+      "id": "QlvdZj5d53QHj5Nvx9Vd",
+      "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
+      "status": "COMPLETED",
+      "input_data": {
+        "id": "1",
+        "text": "Kate likes dogs."
+      },
+      "output_data": {
+        "text": "Kate likes dogs.",
+        "result": ["OK"],
+        "confidence": 0.9998542274
+      },
+      "errors": [],
+      "created_at": "2021-10-03T09:49:14.028",
+      "started_at": "2021-10-03T10:10:27.561182",
+      "finished_at": "2021-10-03T11:24:46.818213"
+    },
+    {
+      "id": "nbeya74y4PpU1NkbaxA4",
+      "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
+      "status": "COMPLETED",
+      "input_data": {
+        "id": "2",
+        "text": "I don’t like honey."
+      },
+      "output_data": {
+        "text": "I don’t like honey.",
+        "result": ["BAD"],
+        "confidence": 0.9998542274
+      },
+      "errors": [],
+      "created_at": "2021-10-03T09:49:14.028",
+      "started_at": "2021-10-03T10:10:27.561182",
+      "finished_at": "2021-10-03T11:24:47.704265"
+    }
+  ],
+  "has_more": false
 }
 ```

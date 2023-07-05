@@ -118,10 +118,10 @@ ID элемента, относительно которого будут зап
             "status": "COMPLETED",
             "input_data": {
                 "id": "2",
-                "text": "I don’t like hooney."
+                "text": "I don’t like honey."
             },
             "output_data": {
-                "text": "I don’t like hooney.",
+                "text": "I don’t like honey.",
                 "result": [
                     "BAD"
                 ],
