@@ -4,12 +4,13 @@
 
 Request a list of solutions and choose the one that fits your goals.
 
-In this example, we'll run the "Text Classification" solution.
+In this example, we'll run the **Text Classification** solution.
 
-```http
-GET /api/app/v0/apps
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+First, get the list of the available solutions to find the ID of the **Text Classification** solution.
+
+```bash
+curl -X GET 'https://toloka.dev/api/app/v0/apps' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 {% cut "Response" %}
@@ -18,39 +19,39 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 200 OK
 
 {
-    "content": [
+  "content": [
+    {
+      "id": "qQAbNn1RPP5CyJRj5995",
+      "name": "Image Classification",
+      "image": "https://labs-images-testing.s3.yandex.net/large/4-NEW-img-classification.png",
+      "description": "This solution helps you classify images. For example, you can divide them into categories or evaluate their quality.",
+      "examples": [
         {
-            "id": "qQAbNn1RPP5CyJRj5995",
-            "name": "Image Classification",
-            "image": "https://labs-images-testing.s3.yandex.net/large/4-NEW-img-classification.png",
-            "description": "This solution helps you classify images. For example, you can divide them into categories or evaluate their quality.",
-            "examples": [
-                {
-                    "name": "Was the driver wearing a seatbelt?"
-                },
-                {
-                    "name": "Is there any illegal content/porn/profanity in the picture?"
-                }
-            ],
-            "default_item_price": 0.07
+          "name": "Was the driver wearing a seatbelt?"
         },
         {
-            "id": "2eN4l59qL2xHB5b8Jqp6",
-            "name": "Text Classification",
-            "image": "https://labs-images-testing.s3.yandex.net/large/1-NEW-text-classification.png",
-            "description": "This solution helps you classify texts. For example, you can divide reviews into categories or evaluate their grammatical correctness.",
-            "examples": [
-                {
-                    "name": "Evaluate the sentiment of a review"
-                },
-                {
-                    "name": "Select a category for an ad"
-                }
-            ],
-            "default_item_price": 0.07
+          "name": "Is there any illegal content/porn/profanity in the picture?"
         }
-    ],
-    "has_more": false
+      ],
+      "default_item_price": 0.07
+    },
+    {
+      "id": "2eN4l59qL2xHB5b8Jqp6",
+      "name": "Text Classification",
+      "image": "https://labs-images-testing.s3.yandex.net/large/1-NEW-text-classification.png",
+      "description": "This solution helps you classify texts. For example, you can divide reviews into categories or evaluate their grammatical correctness.",
+      "examples": [
+        {
+          "name": "Evaluate the sentiment of a review"
+        },
+        {
+          "name": "Select a category for an ad"
+        }
+      ],
+      "default_item_price": 0.07
+    }
+  ],
+  "has_more": false
 }
 ```
 
@@ -60,12 +61,11 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 
 Request information about the solution to check the spec parameters and input data.
 
-For example, to view the "Text Classification" solution specs, specify its `id` in the request: `2eN4l59qL2xHB5b8Jqp6`.
+For example, to view the **Text Classification** solution specs, specify its `id` in the request: `2eN4l59qL2xHB5b8Jqp6`.
 
-```http
-GET /api/app/v0/apps/2eN4l59qL2xHB5b8Jqp6
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+```bash
+curl -X GET 'https://toloka.dev/api/app/v0/apps/2eN4l59qL2xHB5b8Jqp6' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 {% cut "Response" %}
@@ -74,128 +74,120 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 200 OK
 
 {
-    "id": "2eN4l59qL2xHB5b8Jqp6",
-    "name": "Text Classification",
-    "image": "https://labs-images-testing.s3.yandex.net/large/1-NEW-text-classification.png",
-    "description": "This solution helps you classify texts. For example, you can divide reviews into categories or evaluate their grammatical correctness.",
-    "param_spec": {
-        "fields": {
+  "id": "2eN4l59qL2xHB5b8Jqp6",
+  "name": "Text Classification",
+  "image": "https://labs-images-testing.s3.yandex.net/large/1-NEW-text-classification.png",
+  "description": "This solution helps you classify texts. For example, you can divide reviews into categories or evaluate their grammatical correctness.",
+  "param_spec": {
+    "fields": {
+      "type": "object",
+      "required": [
+        "default_language",
+        "name",
+        "option_multiple_choice",
+        "option_other",
+        "instruction_classes",
+        "instruction_examples",
+        "instruction_intro"
+      ],
+      "properties": {
+        "name": {
+          "type": "string"
+        },
+        "option_other": {
+          "type": "boolean"
+        },
+        "default_language": {
+          "type": "string"
+        },
+        "instruction_intro": {
+          "type": "string"
+        },
+        "instruction_classes": {
+          "type": "array",
+          "items": {
             "type": "object",
-            "required": [
-                "default_language",
-                "name",
-                "option_multiple_choice",
-                "option_other",
-                "instruction_classes",
-                "instruction_examples",
-                "instruction_intro"
-            ],
+            "required": ["label", "value", "description"],
             "properties": {
-                "name": {
-                    "type": "string"
-                },
-                "option_other": {
-                    "type": "boolean"
-                },
-                "default_language": {
-                    "type": "string"
-                },
-                "instruction_intro": {
-                    "type": "string"
-                },
-                "instruction_classes": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "required": [
-                            "label",
-                            "value",
-                            "description"
-                        ],
-                        "properties": {
-                            "label": {
-                                "type": "string"
-                            },
-                            "value": {
-                                "type": "string"
-                            },
-                            "description": {
-                                "type": "string"
-                            }
-                        }
-                    }
-                },
-                "instruction_examples": {
-                    "type": "array",
-                    "items": {
-                        "type": "object",
-                        "required": [
-                            "text",
-                            "label",
-                            "description"
-                        ],
-                        "properties": {
-                            "text": {
-                                "type": "string"
-                            },
-                            "label": {
-                                "type": "string"
-                            },
-                            "description": {
-                                "type": "string"
-                            }
-                        }
-                    }
-                },
-                "option_multiple_choice": {
-                    "type": "boolean"
-                }
+              "label": {
+                "type": "string"
+              },
+              "value": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
             }
-        }
-    },
-    "input_spec": {
-        "id": {
-            "type": "string",
-            "required": false
+          }
         },
-        "text": {
-            "type": "string",
-            "required": true
-        }
-    },
-    "output_spec": {
-        "result": {
-            "type": "array_string",
-            "required": true
+        "instruction_examples": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["text", "label", "description"],
+            "properties": {
+              "text": {
+                "type": "string"
+              },
+              "label": {
+                "type": "string"
+              },
+              "description": {
+                "type": "string"
+              }
+            }
+          }
         },
-        "confidence": {
-            "type": "float",
-            "required": false
+        "option_multiple_choice": {
+          "type": "boolean"
         }
+      }
+    }
+  },
+  "input_spec": {
+    "id": {
+      "type": "string",
+      "required": false
     },
-    "examples": [
-        {
-            "name": "Evaluate the sentiment of a review"
-        },
-        {
-            "name": "Select a category for an ad"
-        }
+    "text": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "output_spec": {
+    "result": {
+      "type": "array_string",
+      "required": true
+    },
+    "confidence": {
+      "type": "float",
+      "required": false
+    }
+  },
+  "examples": [
+    {
+      "name": "Evaluate the sentiment of a review"
+    },
+    {
+      "name": "Select a category for an ad"
+    }
+  ],
+  "constraints_description": "For tasks with a single response, you can specify up to 12 classes, and for tasks with multiple responses, up to 8. The data file size must be 7 MB max.",
+  "input_format_info": {
+    "input_fields": [
+      {
+        "name": "text",
+        "description": "Text"
+      },
+      {
+        "name": "id",
+        "description": "Optional identificator"
+      }
     ],
-    "constraints_description": "For tasks with a single response, you can specify up to 12 classes, and for tasks with multiple responses, up to 8. The data file size must be 7 MB max.",
-    "input_format_info": {
-        "input_fields": [
-            {
-                "name": "text",
-                "description": "Text"
-            },
-            {
-                "name": "id",
-                "description": "Optional identificator"
-            }
-        ],
-        "format_description": "Prepare data in TSV-file: Single file for all your data"
-    },
-    "default_item_price": 0.07
+    "format_description": "Prepare data in TSV-file: Single file for all your data"
+  },
+  "default_item_price": 0.07
 }
 ```
 
@@ -205,53 +197,46 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 
 Create an object named `parameters`. It should match the JSON schema in the solution's `param_spec`.
 
-```http
-POST /api/app/v0/app-projects
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+```bash
+curl -X POST 'https://toloka.dev/api/app/v0/app-projects' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+     -H 'Content-Type: application/json' \
+     -d '{
+           "app_id": "2eN4l59qL2xHB5b8Jqp6",
+           "name": "Text Classification",
+           "parameters": {
+             "name": "Text Classification",
+             "instruction_classes": [
+               {
+                 "label": "Correct",
+                 "value": "OK",
+                 "description": "There are no errors in the text"
+               },
+               {
+                 "label": "Mistake",
+                 "value": "BAD",
+                 "description": "There are errors in the text"
+               }
+             ],
+             "instruction_examples": [
+               {
+                 "text": "It’s raining.",
+                 "label": "Correct",
+                 "description": "There are no errors in the text"
+               },
+               {
+                 "text": "There is my hause.",
+                 "label": "Mistake",
+                 "description": "There are errors in the text"
+               }
+             ],
+             "default_language": "en",
+             "option_other": false,
+             "option_multiple_choice": false,
+             "instruction_intro": "Are there any errors in the text"
+           }
+         }'
 ```
-
-{% cut "Request body" %}
-
-```json
-{
-    "app_id": "2eN4l59qL2xHB5b8Jqp6",
-    "name": "Text Classification",
-    "parameters": {
-        "name": "Text Classification",
-        "instruction_classes": [
-            {
-                "label": "Correct",
-                "value": "OK",
-                "description": "There are no errors in the text"
-            },
-            {
-                "label": "Mistake",
-                "value": "BAD",
-                "description": "There are errors in the text"
-            }
-        ],
-        "instruction_examples": [
-            {
-                "text": "It’s raining.",
-                "label": "Correct",
-                "description": "There are no errors in the text"
-            },
-            {
-                "text": "There is my hause.",
-                "label": "Mistake",
-                "description": "There are errors in the text"
-            }
-        ],
-        "default_language": "en",
-        "option_other": false,
-        "option_multiple_choice": false,
-        "instruction_intro": "Are there any errors in the text"
-    }
-}
-```
-
-{% endcut %}
 
 {% cut "Response" %}
 
@@ -259,46 +244,46 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 200 OK
 
 {
-    "id": "6Vv8kdlrjLYu7ZgPdezj",
-    "app_id": "2eN4l59qL2xHB5b8Jqp6",
-    "parent_app_project_id": "",
-    "status": "CREATING",
-    "created": "2021-10-03T09:19:44.378888",
+  "id": "6Vv8kdlrjLYu7ZgPdezj",
+  "app_id": "2eN4l59qL2xHB5b8Jqp6",
+  "parent_app_project_id": "",
+  "status": "CREATING",
+  "created": "2021-10-03T09:19:44.378888",
+  "name": "Text Classification",
+  "parameters": {
     "name": "Text Classification",
-    "parameters": {
-        "name": "Text Classification",
-        "option_other": false,
-        "default_language": "en",
-        "instruction_intro": "Are there any errors in the text",
-        "instruction_classes": [
-            {
-                "label": "Correct",
-                "value": "OK",
-                "description": "There are no errors in the text"
-            },
-            {
-                "label": "Mistake",
-                "value": "BAD",
-                "description": "There are errors in the text"
-            }
-        ],
-        "instruction_examples": [
-            {
-                "text": "It’s raining.",
-                "label": "Correct",
-                "description": "There are no errors in the text"
-            },
-            {
-                "text": "There is my hause.",
-                "label": "Mistake",
-                "description": "There are errors in the text"
-            }
-        ],
-        "option_multiple_choice": false
-    },
-    "errors": [],
-    "item_price": 0.0700,
-    "read_only": false
+    "option_other": false,
+    "default_language": "en",
+    "instruction_intro": "Are there any errors in the text",
+    "instruction_classes": [
+      {
+        "label": "Correct",
+        "value": "OK",
+        "description": "There are no errors in the text"
+      },
+      {
+        "label": "Mistake",
+        "value": "BAD",
+        "description": "There are errors in the text"
+      }
+    ],
+    "instruction_examples": [
+      {
+        "text": "It’s raining.",
+        "label": "Correct",
+        "description": "There are no errors in the text"
+      },
+      {
+        "text": "There is my hause.",
+        "label": "Mistake",
+        "description": "There are errors in the text"
+      }
+    ],
+    "option_multiple_choice": false
+  },
+  "errors": [],
+  "item_price": 0.0700,
+  "read_only": false
 }
 ```
 
@@ -312,30 +297,23 @@ The project gets the `CREATING` status. You don't have to wait until it's modera
 
 Let's create a batch and upload task items to it. We'll use the schema from the project template. It's specified in the `input_spec` parameter. In this case, it's `id` and `text`.
 
-```http
-POST /api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+```bash
+curl -X POST 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+     -H 'Content-Type: application/json' \
+     -d '{
+           "items": [
+             {
+               "id": "1",
+               "text": "Kate likes dogs."
+             },
+             {
+               "id": "2",
+               "text": "I don’t like honey."
+             }
+           ]
+         }'
 ```
-
-{% cut "Request body" %}
-
-```json
-{
-  "items": [
-   {
-       "id": "1",
-       "text": "Kate likes dogs."
-   },
-   {
-       "id": "2",
-       "text": "I don’t like hooney."
-   }
-  ]
-}
-```
-
-{% endcut %}
 
 {% cut "Response" %}
 
@@ -343,15 +321,15 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 200 OK
 
 {
-    "id": "z1Qy7aryrj9har9yKdY0",
-    "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
-    "status": "NEW",
-    "name": "",
-    "items_count": 2,
-    "item_price": 0.0700,
-    "cost": 0.1400,
-    "created_at": "2021-10-03T09:49:14.028",
-    "read_only": false
+  "id": "z1Qy7aryrj9har9yKdY0",
+  "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
+  "status": "NEW",
+  "name": "",
+  "items_count": 2,
+  "item_price": 0.0700,
+  "cost": 0.1400,
+  "created_at": "2021-10-03T09:49:14.028",
+  "read_only": false
 }
 ```
 
@@ -363,16 +341,16 @@ At this stage, you need to wait until the project's status changes to `READY`.
 
 To find out the status of the project, use the request:
 
-```http
-GET https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj
+```bash
+curl -X GET 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 ## Start processing the batch
 
-```http
-POST /api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches/z1Qy7aryrj9har9yKdY0/start
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+```bash
+curl -X POST 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/batches/z1Qy7aryrj9har9yKdY0/start' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 ## Check the status of the project's task items
@@ -385,10 +363,9 @@ Check the status of the task items from time to time:
 
 The expected status is `COMPLETED`.
 
-```http
-GET /api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/items?batch_id=z1Qy7aryrj9har9yKdY0
-Host: https://toloka.dev
-Authorization: OAuth PlaceYourRealOAuthToken_Here
+```bash
+curl -X GET 'https://toloka.dev/api/app/v0/app-projects/6Vv8kdlrjLYu7ZgPdezj/items?batch_id=z1Qy7aryrj9har9yKdY0' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 {% cut "Response" %}
@@ -397,51 +374,47 @@ Authorization: OAuth PlaceYourRealOAuthToken_Here
 200 OK
 
 {
-    "content": [
-        {
-            "id": "QlvdZj5d53QHj5Nvx9Vd",
-            "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
-            "batch_id": "z1Qy7aryrj9har9yKdY0",
-            "status": "COMPLETED",
-            "input_data": {
-                "id": "1",
-                "text": "Kate likes dogs."
-            },
-            "output_data": {
-                "text": "Kate likes dogs.",
-                "result": [
-                    "OK"
-                ],
-                "confidence": 0.9998542274
-            },
-            "errors": [],
-            "created_at": "2021-10-03T09:49:14.028",
-            "started_at": "2021-10-03T10:10:27.561182",
-            "finished_at": "2021-10-03T11:24:46.818213"
-        },
-        {
-            "id": "nbeya74y4PpU1NkbaxA4",
-            "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
-            "batch_id": "z1Qy7aryrj9har9yKdY0",
-            "status": "COMPLETED",
-            "input_data": {
-                "id": "2",
-                "text": "I don’t like hooney."
-            },
-            "output_data": {
-                "text": "I don’t like hooney.",
-                "result": [
-                    "BAD"
-                ],
-                "confidence": 0.9998542274
-            },
-            "errors": [],
-            "created_at": "2021-10-03T09:49:14.028",
-            "started_at": "2021-10-03T10:10:27.561182",
-            "finished_at": "2021-10-03T11:24:47.704265"
-        }
-    ],
-    "has_more": false
+  "content": [
+    {
+      "id": "QlvdZj5d53QHj5Nvx9Vd",
+      "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
+      "batch_id": "z1Qy7aryrj9har9yKdY0",
+      "status": "COMPLETED",
+      "input_data": {
+        "id": "1",
+        "text": "Kate likes dogs."
+      },
+      "output_data": {
+        "text": "Kate likes dogs.",
+        "result": ["OK"],
+        "confidence": 0.9998542274
+      },
+      "errors": [],
+      "created_at": "2021-10-03T09:49:14.028",
+      "started_at": "2021-10-03T10:10:27.561182",
+      "finished_at": "2021-10-03T11:24:46.818213"
+    },
+    {
+      "id": "nbeya74y4PpU1NkbaxA4",
+      "app_project_id": "6Vv8kdlrjLYu7ZgPdezj",
+      "batch_id": "z1Qy7aryrj9har9yKdY0",
+      "status": "COMPLETED",
+      "input_data": {
+        "id": "2",
+        "text": "I don’t like honey."
+      },
+      "output_data": {
+        "text": "I don’t like honey.",
+        "result": ["BAD"],
+        "confidence": 0.9998542274
+      },
+      "errors": [],
+      "created_at": "2021-10-03T09:49:14.028",
+      "started_at": "2021-10-03T10:10:27.561182",
+      "finished_at": "2021-10-03T11:24:47.704265"
+    }
+  ],
+  "has_more": false
 }
 ```
 
