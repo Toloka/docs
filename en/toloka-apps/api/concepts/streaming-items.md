@@ -6,7 +6,7 @@ This mode is suitable, for example, for moderation tasks.
 
 ## Add a task item {#create-item}
 
-### HTTP request {#create-item-request}
+### Request {#create-item-request}
 
 ```bash
 curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{app_project_id}/items/bulk' \
@@ -22,7 +22,7 @@ curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{app_project_id}/items/
          }'
 ```
 
-### Path parameters {#create-item-path-params}
+#### Path parameters {#create-item-path-params}
 
 #|
 ||**Parameter**|**Overview**||
@@ -31,7 +31,7 @@ curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{app_project_id}/items/
 Project ID.||
 |#
 
-### Request body parameters {#create-item-body}
+#### Body parameters {#create-item-body}
 
 #|
 ||**Key**|**Overview**||
@@ -58,14 +58,14 @@ To get the results, request the list of task items sorted by processing completi
 
 After the request is completed, find the last labeled item with the latest `finished_at` value. Use its ID as `last_saved_item_id` in the next request.
 
-### HTTP request {#get-result-request}
+### Request {#get-result-request}
 
 ```bash
 curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{app_project_id}/items?sort=finished&after_id={last_saved_item_id}' \
      -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
 ```
 
-### Path parameters {#get-result-path-params}
+#### Path parameters {#get-result-path-params}
 
 #|
 ||**Parameter**|**Overview**||
