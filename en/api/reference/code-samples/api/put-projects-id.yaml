@@ -3,7 +3,7 @@
   source: |
     curl -X PUT 'https://toloka.dev/api/v1/projects/118252' \
          -H 'Content-Type: application/json' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -d '{"id":"118252","public_name":"Elephant color (advanced)","public_description":"What color is the elephant in the picture?","public_instructions":"<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\"disc/img1.png>\"","private_comment":"My first project","task_spec":{"input_spec":{"image":{"type":"URL","required":true,"hidden":false}},"output_spec":{"result":{"type":"string","required":true,"hidden":false}},"view_spec":{"assets":{"script_urls":["library1.js","library2.js"]},"markup":"<task interface code>","script":"<JavaScript code>","styles":"<CSS code>","settings":{"showSkip":true,"showTimer":true,"showTitle":true,"showSubmit":true,"showFullscreen":true,"showInstructions":true,"showFinish":true,"showMessage":true,"showReward":true}}},"assignments_issuing_type":"AUTOMATED","assignments_automerge_enabled":false,"max_active_assignments_count":15,"quality_control":{"configs":[{"collector_config":{"type":"SKIPPED_IN_ROW_ASSIGNMENTS"},"rules":[{"conditions":[{"key":"skipped_in_row_count","operator":"GTE","value":10}],"action":{"type":"REJECT_ALL_ASSIGNMENTS","parameters":{"public_comment":"Skipped more than 10 task suites in a row"}}}]}]},"localization_config":{"default_language":"EN"}}'
 - lang: py
   label: 'Python: Toloka-Kit'
@@ -11,7 +11,7 @@
     import toloka
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     project = toloka_client.get_project('118252')
     project.public_name = "Elephant color (advanced)"
@@ -25,7 +25,7 @@
     url = "https://toloka.dev/api/v1/projects/118252"
     headers = {
       'Content-Type': 'application/json',
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
     }
     payload = {
       "id": "118252",
@@ -117,7 +117,7 @@
       'qs': {},
       'headers': {
         'Content-Type': 'application/json',
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
       },
       'body': JSON.stringify({
         "id": "118252",
@@ -207,6 +207,6 @@
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.put("https://toloka.dev/api/v1/projects/118252")
       .header("Content-Type", "application/json")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .body("{\"id\":\"118252\",\"public_name\":\"Elephant color (advanced)\",\"public_description\":\"What color is the elephant in the picture?\",\"public_instructions\":\"<p>Look at the picture and decide what color the elephant is.</p> You can zoom in or out using the buttons:</p> <img src=\\\"disc/img1.png>\\\"\",\"private_comment\":\"My first project\",\"task_spec\":{\"input_spec\":{\"image\":{\"type\":\"URL\",\"required\":true,\"hidden\":false}},\"output_spec\":{\"result\":{\"type\":\"string\",\"required\":true,\"hidden\":false}},\"view_spec\":{\"assets\":{\"script_urls\":[\"library1.js\",\"library2.js\"]},\"markup\":\"<task interface code>\",\"script\":\"<JavaScript code>\",\"styles\":\"<CSS code>\",\"settings\":{\"showSkip\":true,\"showTimer\":true,\"showTitle\":true,\"showSubmit\":true,\"showFullscreen\":true,\"showInstructions\":true,\"showFinish\":true,\"showMessage\":true,\"showReward\":true}}},\"assignments_issuing_type\":\"AUTOMATED\",\"assignments_automerge_enabled\":false,\"max_active_assignments_count\":15,\"quality_control\":{\"configs\":[{\"collector_config\":{\"type\":\"SKIPPED_IN_ROW_ASSIGNMENTS\"},\"rules\":[{\"conditions\":[{\"key\":\"skipped_in_row_count\",\"operator\":\"GTE\",\"value\":10}],\"action\":{\"type\":\"REJECT_ALL_ASSIGNMENTS\",\"parameters\":{\"public_comment\":\"Skipped more than 10 task suites in a row\"}}}]}]},\"localization_config\":{\"default_language\":\"EN\"}}")
       .asString();

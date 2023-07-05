@@ -35,7 +35,7 @@ Image classification Status.CLOSED CloseReason.NOT_ENOUGH_BALANCE
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 pool = toloka_client.get_pool('36545959')
 print(pool.private_name, pool.status, pool.last_close_reason)

@@ -30,7 +30,7 @@ You should get an output with the message thread IDs and topics which looks like
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for message_thread in toloka_client.get_message_threads(folder=['INBOX', 'UNREAD']):
     topic=message_thread.topic

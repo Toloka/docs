@@ -1,13 +1,7 @@
 {% cut "My Toloka token expired. How or where can I find its lifetime?" %}
 
-You can see the token expiration time on the **Integrations** tab of the [Profile]({{ profile }}).
+If you use old OAuth tokens, you can see the token expiration time on the **Integrations** tab of the [Profile]({{ profile }}).
 
-Click **Get the OAuth-token** to get a new token.
-
-If token expiration time is `0`:
-
-1. Go to Yandex ID.
-2. Log out from your account.
-3. Log in Toloka again.
+The new API keys don't have expiration time. You can issue up to 50 new ones if you need to. Refer to the [Generating API keys](../../../concepts/api-token.md) section for more details.
 
 {% endcut %}

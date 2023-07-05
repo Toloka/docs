@@ -35,7 +35,7 @@ Perfect job! 0.500
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 bonus = toloka_client.get_user_bonus('3139')
 print(bonus.public_title['EN'], bonus.amount)

@@ -35,7 +35,7 @@ You should get an output with the project ID and the updated status which looks 
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 archived_project = toloka_client.archive_project('117493')
 print(archived_project.id, archived_project.status)

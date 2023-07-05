@@ -3,7 +3,7 @@
   source: |
     curl -X PATCH 'https://toloka.dev/api/v1/pools/32267581' \
          -H 'Content-Type: application/json' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -d '{"priority":0}'
 - lang: py
   label: 'Python: Toloka-Kit'
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     toloka_client.patch_pool(pool_id='32267581', priority=0)
   description: More details on this in the [Change pool priority](https://toloka.ai/docs/toloka-kit/recipes/change-pool-priority/) Toloka-Kit recipe
@@ -23,7 +23,7 @@
     url = "https://toloka.dev/api/v1/pools/32267581"
     headers = {
       'Content-Type': 'application/json',
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
     }
     payload = {
       "priority": 0
@@ -41,7 +41,7 @@
       'qs': {},
       'headers': {
         'Content-Type': 'application/json',
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
       },
       'body': JSON.stringify({
         "priority": 0
@@ -57,6 +57,6 @@
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.patch("https://toloka.dev/api/v1/pools/32267581")
       .header("Content-Type", "application/json")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .body("{\"priority\":0}")
       .asString();

@@ -33,7 +33,7 @@ You should get an output with the skill IDs, names, and private comments which l
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for task in toloka_client.get_tasks(pool_id='1227652'):
     print(task.id, task.created.date(), task.overlap)

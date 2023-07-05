@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X PUT 'https://toloka.dev/api/v1/' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '[{"webhook_url":"https://example.com/toloka-webhook", "event_type":"ASSIGNMENT_CREATED", "pool_id":"1080020"}]'
 - lang: py
@@ -11,7 +11,7 @@
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     result = toloka_client.upsert_webhook_subscriptions([
         {
@@ -27,7 +27,7 @@
 
     url = "https://toloka.dev/api/v1/"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     payload = [
@@ -49,7 +49,7 @@
       'url': 'https://toloka.dev/api/v1/',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify([
@@ -69,7 +69,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.put("https://toloka.dev/api/v1/")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .body("[{\"webhook_url\":\"https://example.com/toloka-webhook\", \"event_type\":\"ASSIGNMENT_CREATED\", \"pool_id\":\"1080020\"}]")
       .asString();

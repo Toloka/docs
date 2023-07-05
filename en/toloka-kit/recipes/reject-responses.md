@@ -37,7 +37,7 @@ Status.REJECTED The answer is not clear
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 rejected_assignment = toloka_client.reject_assignment('0001d38f5b--61c8be2074fdb82592f97887', 'The answer is not clear')
 print(rejected_assignment.status, rejected_assignment.public_comment)

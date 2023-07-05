@@ -91,8 +91,8 @@ If the markup process failed for some reason, contact support. Go to the tab for
 ## See also {#see-also}
 
 - [{#T}](distribute-tasks-by-pages.md)
-- [Efficiency indicators: Control tasks](./efficiency-metrics/control-tasks-share.md)
-- [Efficiency indicators: Control task balance](./efficiency-metrics/control-tasks-balance.md)
+- [Efficiency indicators: Control tasks](efficiency-metrics/control-tasks-share.md)
+- [Efficiency indicators: Control task balance](efficiency-metrics/control-tasks-balance.md)
 
 ## Troubleshooting {#troubleshooting}
 

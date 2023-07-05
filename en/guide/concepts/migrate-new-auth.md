@@ -48,15 +48,15 @@ You can switch to the old authorization page using the **Use legacy Toloka accou
 
 {% include [remove-social-account](../_includes/remove-social-account.md) %}
 
-## Updating OAuth tokens {#update-token}
+## Updating API keys {#update-token}
 
-After you migrate to the new authorization scheme, the existing OAuth tokens will continue to work until they expire. After that, you can issue new authentication tokens.
+After you migrate to the new authorization scheme, the existing OAuth keys will continue to work until they expire. After that, you can issue new authentication keys.
 
-New tokens have no TTL and don't expire, you don't need to reissue them. One account can have up to 50 new OAuth tokens.
+New keys have no TTL and don't expire, you don't need to reissue them. One account can have up to 50 new API keys.
 
-[Toloka API](https://toloka.ai/docs/api/api-reference/), [Toloka-Kit](../../toloka-kit/index.md), and [Toloka Java SDK](https://github.com/toloka/toloka-java-sdk/) support both old and new OAuth tokens.
+[Toloka API](https://toloka.ai/docs/api/api-reference/), [Toloka-Kit](../../toloka-kit/index.md), and [Toloka Java SDK](https://github.com/toloka/toloka-java-sdk/) support both old and new API keys.
 
-Refer to the [Generating API tokens](api-token.md) section to learn how to issue OAuth tokens.
+Refer to the [Generating API keys](api-token.md) section to learn how to issue API keys.
 
 {% include [contact-support](../_includes/contact-support.md) %}
 

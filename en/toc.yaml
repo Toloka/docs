@@ -29,7 +29,7 @@ items:
         href: guide/concepts/save-money.md
       - name: Sandbox
         href: guide/concepts/sandbox.md
-      - name: Generating API tokens
+      - name: Generating API keys
         href: guide/concepts/api-token.md
         hidden: true
   - name: Tutorials

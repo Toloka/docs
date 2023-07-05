@@ -30,7 +30,7 @@ fr.cd9cdda5-4af6-4be9-b351-678b2b4e189f 37540601-sneaker-search.jpg
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for attachment in toloka_client.get_attachments(pool_id='1085757'):
     print(attachment.id, attachment.name)

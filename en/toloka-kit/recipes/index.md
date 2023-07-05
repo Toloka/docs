@@ -1,6 +1,6 @@
 # Recipes for Toloka-Kit common tasks
 
-Before you can start using Toloka-Kit, you need to [register with Toloka](../../guide/concepts/access.md), [get an OAuth token](../registration.md), and [install the Toloka-Kit](../quick-start.md) Python library. After that, you can create projects, pools, upload tasks, and get results.
+Before you can start using Toloka-Kit, you need to [register with Toloka](../../guide/concepts/access.md), [get an API key](../registration.md), and [install the Toloka-Kit](../quick-start.md) Python library. After that, you can create projects, pools, upload tasks, and get results.
 
 Use the list of recipes below to find out how to start working with Toloka-Kit.
 

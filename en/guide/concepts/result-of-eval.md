@@ -48,7 +48,7 @@ To get the list of the responses using Toloka API, send a `GET` request with eit
 
 ```bash
 curl -X GET 'https://toloka.dev/api/v1/assignments?pool_id=1085757' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 Refer to the [Get list of responses](https://toloka.ai/docs/api/api-reference/#get-/assignments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.

@@ -12,14 +12,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/user-bonuses
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/user-bonuses
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}
@@ -78,14 +78,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/user-bonuses?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/user-bonuses?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}
@@ -98,14 +98,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/user-bonuses?sort=id&limit=10&id_gt=<ID of the last bonus from the previous response>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

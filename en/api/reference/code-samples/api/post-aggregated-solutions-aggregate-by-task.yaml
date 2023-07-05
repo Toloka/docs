@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{"pool_id":"1238218","task_id":"000012e4ca--62e97a75dbab805456309d81", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"12648", "fields":[{"name":"result"}]}'
 - lang: py
@@ -12,7 +12,7 @@
     from toloka.client.aggregation import PoolAggregatedSolutionRequest
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     aggregation = toloka_client.aggregate_solutions_by_task(
       pool_id='1238218',
@@ -28,7 +28,7 @@
 
     url = "https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -54,7 +54,7 @@
       'url': 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -78,7 +78,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-task")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .body("{\"pool_id\":\"1238218\",\"task_id\":\"000012e4ca--62e97a75dbab805456309d81\", \"type\":\"WEIGHTED_DYNAMIC_OVERLAP\", \"answer_weight_skill_id\":\"12648\", \"fields\":[{\"name\":\"result\"}]}")
       .asString();

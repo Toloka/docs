@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859/test' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json'
 - lang: py
   label: 'Python: Toloka-Kit'
@@ -15,7 +15,7 @@
 
     url = "https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859/test"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     response = requests.post(url, headers=headers)
@@ -30,7 +30,7 @@
       'url': 'https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859/test',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       }
     };
@@ -43,6 +43,6 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/webhook-subscriptions/62ee14ada451956b21388859/test")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .asString();

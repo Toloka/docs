@@ -39,7 +39,7 @@ You should get an output with the message ID and creation time which looks like 
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 message_reply = toloka.message_thread.MessageThreadReply(text={'EN': 'Thank you!'})
 response_to_thread = toloka_client.reply_message_thread(

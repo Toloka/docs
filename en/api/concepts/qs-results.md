@@ -32,7 +32,7 @@ Next, use the `GET` [method](https://toloka.ai/docs/api/api-reference/#get-/assi
 
     ```bash
     curl -X GET 'https://sandbox.toloka.dev/api/v1/assignments?pool_id={pool_id}' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
     ```
 
 - Postman
@@ -48,7 +48,7 @@ Next, use the `GET` [method](https://toloka.ai/docs/api/api-reference/#get-/assi
     1. Headers
 
         ```bash
-        Authorization: OAuth PlaceYourRealOAuthToken_Here
+        Authorization: ApiKey PlaceYourRealApiKey_Here
         ```
 
 {% endlist %}
