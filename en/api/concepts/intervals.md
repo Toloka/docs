@@ -41,7 +41,13 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
 
   With the sample request below, the **1st**, **4th**, and **6th** tasks in the first task suite and the **11th** task from the second task suite will be a **control task**, like in the figure above.
 
-  We use the `mixer_config.golden_task_distribution_function.intervals` parameter to set such scheme. The `mixer_config.real_tasks_count` sets the maximum number of general tasks in a task suite to **7** to match the scheme in the figure above.
+  Use the `mixer_config.golden_task_distribution_function.intervals` parameter to set such scheme.
+
+  Additionally, set the following parameters:
+
+  - Set the `mixer_config.real_tasks_count` value to **7** to specify the maximum number of general tasks in a task suite and match the scheme in the figure above.
+
+  - Set the `mixer_config.golden_tasks_count` value to **0** and the `mixer_config.min_golden_tasks_count` value to **null** for the smart mixing to work.
 
   #### Sample request
 
@@ -90,7 +96,13 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
 
   With the sample request below, the **1st**, **4th**, and **6th** tasks in the first task suite and the **11th** task from the second task suite will be a **training task**, like in the figure above.
 
-  We use the `mixer_config.training_task_distribution_function.intervals` parameter to set such scheme. The `mixer_config.real_tasks_count` sets the maximum number of general tasks in a task suite to **7** to match the scheme in the figure above.
+  Use the `mixer_config.training_task_distribution_function.intervals` parameter to set such scheme.
+
+  Additionally, set the following parameters:
+
+  - Set the `mixer_config.real_tasks_count` value to **7** to specify the maximum number of general tasks in a task suite and match the scheme in the figure above.
+
+  - Set the `mixer_config.training_tasks_count` value to **0** and the `mixer_config.min_training_tasks_count` value to **null** for the smart mixing to work.
 
   #### Sample request
 
