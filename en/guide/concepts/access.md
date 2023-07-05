@@ -1,30 +1,8 @@
 # Registration
 
-## Registering in Toloka {#concept_ntn_h5l_vlb}
+## Social authorization in Toloka {#social-auth}
 
-Most clients currently need a Yandex ID with a linked and confirmed phone number to register in Toloka. If you don't have a Yandex ID, [sign up for one](https://passport.toloka.ai/).
-
-{% note alert "Restriction" %}
-
-- If you're already registered as a Toloker, you'll need another Yandex ID.
-
-- You can only register one requester account and one Toloker account per phone number in [each version](#register) of Toloka.
-
-{% endnote %}
-
-Once you have a Yandex ID,
-
-1. Go to the [Toloka website](https://toloka.ai/) and click the **Log in** link in the upper-right corner.
-
-1. Choose **Log in as a Requester** button and enter your Yandex ID credentials.
-
-1. At the **Tell us a little about yourself** page, the system will invite you to enter some additional information (email address used for notifications, company name, country of origin, and some other optional information).
-
-1. When done, accept the Toloka Terms of Use and click **Get started**.
-
-## Social authorization registration (currently in beta) {#social-auth}
-
-Some Toloka clients have an option to register and access Toloka using social authorization. If you are one of these clients and registered in Toloka using Yandex ID, please [migrate to the new social authorization](migrate-new-auth.md) scheme.
+Toloka clients can to register and access Toloka using social authorization. If registered in Toloka using Yandex ID, please [migrate to the new social authorization](migrate-new-auth.md) scheme.
 
 To register in Toloka as a client and post tasks for Tolokers, you need to have one of the following supported social accounts:
 
@@ -55,7 +33,7 @@ Toloka has two versions: production and sandbox. You need to register in each on
 
 The registration and sign-in processes are similar for both versions.
 
-## Authorizing in Toloka with social services (currently in beta) {#authorize}
+## Authorizing in Toloka with social services {#authorize}
 
 Toloka uses social authorization both for the **registration** and **signing in**.
 
