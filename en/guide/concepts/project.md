@@ -75,7 +75,11 @@ To create a project in the interface:
 
     You can prepare instructions in HTML format, then copy and paste into the editor. Click **<>** to switch to HTML mode.
 
-1. Optionally, add translations to other languages.
+1. Optionally, if your project assumes the collection of any personal data:
+
+    {% include [personal-data](../_includes/toloka-requester-source/id-toloka-requester-source/personal-data.md) %}
+
+1. Optionally, add translations to other languages:
 
     1. Select the source language and the target languages.
 
