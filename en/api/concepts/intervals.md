@@ -8,6 +8,8 @@ Toloka allows you to set intervals for tasks for the following purposes:
 
 ![Task distribution intervals](../_images/intervals.png =700x)
 
+In this example, we have a pool with two task suites each containing maximum of seven tasks.
+
 In Toloka API, use the following JSON format to set the intervals:
 
 ```json
@@ -37,9 +39,9 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
 
 - Control task distribution intervals
 
-  With the sample request below, the **1st**, **4th**, and **6th** tasks in the first task suite and the **11th** task from the second task suite will be a **control task**, like in the image above.
+  With the sample request below, the **1st**, **4th**, and **6th** tasks in the first task suite and the **11th** task from the second task suite will be a **control task**, like in the figure above.
 
-  We use the `mixer_config.golden_task_distribution_function.intervals` parameter to set such scheme.
+  We use the `mixer_config.golden_task_distribution_function.intervals` parameter to set such scheme. The `mixer_config.real_tasks_count` sets the maximum number of general tasks in a task suite to **7** to match the scheme in the figure above.
 
   #### Sample request
 
@@ -55,6 +57,7 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
             "assignment_max_duration_seconds": 600,
             "auto_accept_solutions": false,
             "mixer_config": {
+              "golden_tasks_count": 0,
               "golden_task_distribution_function": {
                 "distribution": "UNIFORM",
                 "intervals": [
@@ -73,7 +76,9 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
                     "frequency": 8
                   }
                 ]
-              }
+              },
+              "min_golden_tasks_count": null,
+              "real_tasks_count": 7
             },
             "defaults": {
               "default_overlap_for_new_task_suites": 1
@@ -83,9 +88,9 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
 
 - Training task distribution intervals
 
-  With the sample request below, the **1st**, **4th**, and **6th** tasks in the first task suite and the **11th** task from the second task suite will be a **training task**, like in the image above.
+  With the sample request below, the **1st**, **4th**, and **6th** tasks in the first task suite and the **11th** task from the second task suite will be a **training task**, like in the figure above.
 
-  We use the `mixer_config.training_task_distribution_function.intervals` parameter to set such scheme.
+  We use the `mixer_config.training_task_distribution_function.intervals` parameter to set such scheme. The `mixer_config.real_tasks_count` sets the maximum number of general tasks in a task suite to **7** to match the scheme in the figure above.
 
   #### Sample request
 
@@ -101,6 +106,7 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
             "assignment_max_duration_seconds": 600,
             "auto_accept_solutions": false,
             "mixer_config": {
+              "training_tasks_count": 0,
               "training_task_distribution_function": {
                 "distribution": "UNIFORM",
                 "intervals": [
@@ -119,7 +125,9 @@ When you use [smart mixing](../../guide/concepts/distribute-tasks-by-pages.md#sm
                     "frequency": 8
                   }
                 ]
-              }
+              },
+              "min_training_tasks_count": null,
+              "real_tasks_count": 7
             },
             "defaults": {
               "default_overlap_for_new_task_suites": 1
@@ -137,7 +145,7 @@ The sample requests below contain the intervals for the general, control, and tr
 
 - General task check intervals
 
-  With the sample request below, the **1st**, **4th**, and **6th** general tasks in the first task suite and the **11th** general task from the second task suite will be selected for majority vote check.
+  With the sample request below, the **1st**, **4th**, and **6th** general tasks in the first task suite and the **11th** general task from the second task suite will be selected for majority vote check, like in the figure above.
 
   We use the `quality_control.checkpoints_config.real_settings.intervals` parameter to set such scheme.
 
@@ -190,7 +198,7 @@ The sample requests below contain the intervals for the general, control, and tr
 
 - Control task check intervals
 
-  With the sample request below, the **1st**, **4th**, and **6th** control tasks in the first task suite and the **11th** control task from the second task suite will be selected for majority vote check.
+  With the sample request below, the **1st**, **4th**, and **6th** control tasks in the first task suite and the **11th** control task from the second task suite will be selected for majority vote check, like in the figure above.
 
   We use the `quality_control.checkpoints_config.golden_settings.intervals` parameter to set such scheme.
 
@@ -243,7 +251,7 @@ The sample requests below contain the intervals for the general, control, and tr
 
 - Training task check intervals
 
-  With the sample request below, the **1st**, **4th**, and **6th** training tasks in the first task suite and the **11th** training task from the second task suite will be selected for majority vote check.
+  With the sample request below, the **1st**, **4th**, and **6th** training tasks in the first task suite and the **11th** training task from the second task suite will be selected for majority vote check, like in the figure above.
 
   We use the `quality_control.checkpoints_config.training_settings.intervals` parameter to set such scheme.
 
