@@ -1,17 +1,20 @@
-# @toloka/condition.distance
+# condition.distance
 
 This component checks whether the sent coordinates match the ones that you specified.
 
 For example, you want a Toloker to take a photo of a specific place. The `condition.distance` component checks whether the photo was taken at the location that you specified.
 
-The device coordinates are sent using the [data.location](data.location.md) component. You can use it without `condition.distance` component if you need to read a Toloker's device coordinates without comparing them to the specified ones.
+The device coordinates are sent using the [data.location](data.location.md) component. You can use it without the `condition.distance` component if you need to read a Toloker's device coordinates without comparing them to the specified ones.
 
 [![View example in the sandbox](../_images/buttons/view-example.svg)](https://ya.cc/t/xyD-vvUV4K8eKb)
 
 {% cut "Components used in the example" %}
 
 - [view.list](view.list.md): Displays data in a list.
-- [field.media-file](field.media-file.md): Adds buttons for different types of uploads: uploading photos or videos, selecting files from the file manager or choosing from the gallery.
+- [field.media-file](field.media-file.md): Adds buttons for different types of uploads.
+- [condition.all](../reference/condition.all.md): Checks that all child conditions are met.
+- [condition.required](../reference/condition.required.md): Checks that the data is filled in.
+- [data.location](../reference/data.location.md): Sends the device coordinates.
 - [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
 
 {% endcut %}
