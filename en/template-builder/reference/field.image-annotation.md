@@ -22,7 +22,7 @@ You can disable labeling using the `disabled` property. For example, use this if
 - `false` (default) — Allowed.
 - `true` — Not allowed.
 
-You can use this feature when creating an interface to check whether the selection is correct, or if you need to allow selection only when a certain [condition](../reference/helper.if.md) is met. ||
+You can use this feature when creating an interface to check whether the selection is correct, or if you need to allow selection only when a certain [condition](helper.if.md) is met. ||
 || `fullHeight` | _boolean_ | If `true`, the element takes up all the vertical free space. The element is set to a minimum height of 400 pixels. ||
 || `hint` | _string_ | Hint text. ||
 || `image`<span style="color: red">\*</span> | _string_ | The image you want to select areas in. ||

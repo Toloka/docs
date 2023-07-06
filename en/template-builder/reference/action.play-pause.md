@@ -12,7 +12,7 @@ For example, this component will allow you to play two videos simultaneously.
 - [view.video](view.text.md): Adds a player for video playback.
 - [view.list](view.list.md): Displays data in a list.
 - [field.radio-group](field.radio-group.md): Adds a component for selecting one value out of several options.
-- [condition.required](../reference/condition.required.md): Checks that the data is filled in.
+- [condition.required](condition.required.md): Checks that the data is filled in.
 - [view.action-button](view.action-button.md): Displays a button that calls an action.
 - [action.bulk](action.bulk.md): Calls multiple [actions](actions.md) at the same time.
 
@@ -28,7 +28,7 @@ You can also stop or start playback for some event ([plugin.trigger](plugin.trig
 - [view.video](view.text.md): Adds a player for video playback.
 - [view.list](view.list.md): Displays data in a list.
 - [field.radio-group](field.radio-group.md): Adds a component for selecting one value out of several options.
-- [condition.required](../reference/condition.required.md): Checks that the data is filled in.
+- [condition.required](condition.required.md): Checks that the data is filled in.
 - [view.action-button](view.action-button.md): Displays a button that calls an action.
 - [plugin.hotkeys](plugin.hotkeys.md): Sets keyboard shortcuts for actions.
 - [action.bulk](action.bulk.md): Calls multiple [actions](actions.md) at the same time.

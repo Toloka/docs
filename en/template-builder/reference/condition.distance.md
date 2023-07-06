@@ -12,10 +12,10 @@ The device coordinates are sent using the [data.location](data.location.md) comp
 
 - [view.list](view.list.md): Displays data in a list.
 - [field.media-file](field.media-file.md): Adds buttons for different types of uploads.
-- [condition.all](../reference/condition.all.md): Checks that all child conditions are met.
-- [condition.required](../reference/condition.required.md): Checks that the data is filled in.
-- [data.location](../reference/data.location.md): Sends the device coordinates.
-- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+- [condition.all](condition.all.md): Checks that all child conditions are met.
+- [condition.required](condition.required.md): Checks that the data is filled in.
+- [data.location](data.location.md): Sends the device coordinates.
+- [plugin.toloka](plugin.toloka.md): Customizes the task layout.
 
 {% endcut %}
 

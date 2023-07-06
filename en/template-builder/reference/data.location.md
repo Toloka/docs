@@ -12,10 +12,10 @@ To find out if the transmitted coordinates match the ones that you specified, us
 
 - [view.list](view.list.md): Displays data in a list.
 - [field.media-file](field.media-file.md): Adds buttons for different types of uploads.
-- [condition.all](../reference/condition.all.md): Checks that all child conditions are met.
-- [condition.required](../reference/condition.required.md): Checks that the data is filled in.
-- [condition.distance](../reference/condition.distance.md): Checks whether the sent coordinates match the ones that you specified.
-- [plugin.toloka](../reference/plugin.toloka.md): Customizes the task layout.
+- [condition.all](condition.all.md): Checks that all child conditions are met.
+- [condition.required](condition.required.md): Checks that the data is filled in.
+- [condition.distance](condition.distance.md): Checks whether the sent coordinates match the ones that you specified.
+- [plugin.toloka](plugin.toloka.md): Customizes the task layout.
 
 {% endcut %}
 
