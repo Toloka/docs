@@ -57,6 +57,12 @@ After uploading the tasks with **smart mixing** you will be able to [mark up tas
 | Task suites are distributed to Tolokers in the same order                                              | No           | Yes          |
 | Within identical task suites, control tasks are the same for all Tolokers                              | Yes          | No           |
 
+{% note info %}
+
+Please note that the above table is correct if you have **more than one task** per task suite. When you choose to have only one task in a task suite the platform will sort not tasks but task suites. In this case, the **Set manually** option will not keep the order of the tasks and, on the contrary, **Smart mixing** option will preserve the task order.
+
+{% endnote %}
+
 ## Control tasks {#gs}
 
 #### How many control tasks do I need to add?
