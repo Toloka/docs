@@ -155,3 +155,5 @@
 
 - [База знаний](https://toloka.ai/ru/knowledgebase/)
 - [API Толоки](../../api/index.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

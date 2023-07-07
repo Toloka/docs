@@ -8,7 +8,7 @@
 
 ```bash
 GET https://sandbox.toloka.dev/api/v1/assignments?pool_id=12345
-Authorization: OAuth <OAuth token>
+Authorization: OAuth PlaceYourRealOAuthToken_Here
 ```
 
 ## URL ресурса {#urls}
@@ -25,6 +25,6 @@ Authorization: OAuth <OAuth token>
 
 - В боевой версии Толоки: [https://platform.toloka.ai/ru/requester/profile/integration]({{ requester-profile-integration }}).
 
-[![Доступ к API](https://yastatic.net/s3/doc-binary/src/support/toloka/ru/api/get-oauth-token.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/ru/api/get-oauth-token.png)
+![Доступ к API](../_images/get-oauth-token.png =700x)
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

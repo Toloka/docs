@@ -45,3 +45,5 @@ Yes, if there is an intersection of the values in the **Experiment group (1-100)
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

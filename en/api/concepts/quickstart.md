@@ -10,7 +10,7 @@ For example, create a project with tasks where Tolokers will determine the type 
 
 {% cut "Sample result" %}
 
-[![Sample result](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/shoes-interface.png =390x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/api/shoes-interface.png)
+![Sample result](../_images/shoes-interface.png =390x)
 
 {% endcut %}
 
@@ -36,4 +36,4 @@ The sample project described under "Quick start" is for the sandbox. To set up t
 
 Read the [instructions on how to post tasks](./qs-placement.md).
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

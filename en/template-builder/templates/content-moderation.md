@@ -327,6 +327,6 @@ If you want that Tolokers give an extended response, add a text field using the 
 
 ## See also {#see-also}
 
-- [Tutorials — sentiment analysis and content moderation](../../guide/tutorials/content-moderation.md)
+- [Tutorials: Sentiment analysis and content moderation](../../guide/tutorials/content-moderation.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

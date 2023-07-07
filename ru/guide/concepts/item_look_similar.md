@@ -392,3 +392,5 @@
 - Создайте [Проект 4](item_more_similar.md) для сравнения подходящих изображений.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

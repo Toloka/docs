@@ -449,3 +449,5 @@ After that, you can continue creating or editing the project in Toloka.
 - Check the [list of available components](reference/index.md).
 
 {% include [contact-support](_includes/contact-support.md) %}
+
+{% include [image-styles](../../_includes/image-styles-internal.md) %}

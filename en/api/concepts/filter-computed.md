@@ -1,27 +1,30 @@
 # Filter by computed data
 
-You can use data received from or computed by Toloka to select Tolokers. For example, a device's technical characteristics or the type of client app.
+You can use data received from or computed by Toloka to select Tolokers. For example, a device technical characteristics or the type of client app.
 
-Define the `filter` object in the pool parameters.
+Define the `assignments_issuing_config.filter` object in the [pool parameters](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Sample filter in JSON {#request-example}
 
-This example selects Tolokers with the Windows OS and Yandex Browser.
+This example selects Tolokers with the Windows OS and Chrome browser.
 
 ```json
 {
-  "filter" : {
-    "and" : [ {
-      "operator" : "EQ",
-      "category" : "computed",
-      "key" : "os_family",
-      "value" : "WINDOWS"
-    }, {
-      "operator" : "EQ",
-      "category" : "computed",
-      "key" : "user_agent_family",
-      "value" : "CHROME"
-    } ]
+  "filter": {
+    "and": [
+      {
+        "operator": "EQ",
+        "category": "computed",
+        "key": "os_family",
+        "value": "WINDOWS"
+      },
+      {
+        "operator": "EQ",
+        "category": "computed",
+        "key": "user_agent_family",
+        "value": "CHROME"
+      }
+    ]
   }
 }
 ```
@@ -34,22 +37,22 @@ This example selects Tolokers with the Windows OS and Yandex Browser.
 
 The Toloker's region detected from the mobile phone number (the [region ID in the search database](regions.md)).
 
-Value of "operator":
+Value of `operator`:
 
 - `IN` — The region is equal to the one specified or is a part of it.
 - `NOT_IN` — The region is not equal to the one specified and is not a part of it.
 
-Value of "value" if data couldn't be extracted — `null`. ||
+Value of `value` if data couldn't be extracted — `null`. ||
 || `region_by_ip` | _integer_
 
 The Toloker's region detected from the IP address (the [region ID in the search database](regions.md)).
 
-Value of "operator":
+Value of `operator`:
 
 - `IN` — The region is equal to the one specified or is a part of it.
 - `NOT_IN` — The region is not equal to the one specified and is not a part of it.
 
-Value of "value" if data couldn't be extracted — `null`. ||
+Value of `value` if data couldn't be extracted — `null`. ||
 || `device_category` | _string_
 
 Type of device:
@@ -60,25 +63,25 @@ Type of device:
 
 The complete list is available on the [UADetector library page](http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/ReadableDeviceCategory.Category.html).
 
-Value of "operator":
+Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to.
 
-Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
+Value of `value` if data couldn't be extracted — `UNKNOWN`. ||
 || `client_type` | _string_
 
 Type of client application:
 
-- `BROWSER` — Web browser.
+- `BROWSER` — A web browser.
 - `TOLOKA_APP` — Toloka mobile app.
 
-Value of "operator":
+Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to.
 
-Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
+Value of `value` if data couldn't be extracted — `UNKNOWN`. ||
 || `os_family` | _string_
 
 The OS family, for example:
@@ -91,12 +94,12 @@ The OS family, for example:
 
 The complete list is available on the [UADetector library page](http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/OperatingSystemFamily.html).
 
-Value of "operator":
+Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to.
 
-Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
+Value of `value` if data couldn't be extracted — `UNKNOWN`. ||
 || `user_agent_type` | _string_
 
 Browser type:
@@ -107,40 +110,40 @@ Browser type:
 
 The complete list is available on the [UADetector library page](http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentType.html).
 
-Value of "operator":
+Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to.
 
-Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
+Value of `value` if data couldn't be extracted — `UNKNOWN`. ||
 || `user_agent_family` | _string_
 
 The browser family, for example:
 
-- `IE`
-- `IE_MOBILE`
-- `YANDEX_BROWSER`
-- `FIREFOX`
-- `MOBILE_FIREFOX`
 - `CHROME`
 - `CHROME_MOBILE`
 - `CHROMIUM`
-- `SAFARI`
+- `FIREFOX`
+- `IE`
+- `IE_MOBILE`
+- `MOBILE_FIREFOX`
 - `MOBILE_SAFARI`
+- `SAFARI`
+- `YANDEX_BROWSER`
 
 The complete list is available on the [UADetector library page](http://uadetector.sourceforge.net/modules/uadetector-core/apidocs/net/sf/uadetector/UserAgentFamily.html).
 
-Value of "operator":
+Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to.
 
-Value of "value" if data couldn't be extracted — `UNKNOWN`. ||
+Value of `value` if data couldn't be extracted — `UNKNOWN`. ||
 || `user_agent_version` | _float_
 
 Full browser version: `<Major version>.<Minor version>.`
 
-Value of "operator":
+Value of `operator`:
 
 - `EQ` — Equal to.
 - `NE` — Not equal to.
@@ -149,7 +152,7 @@ Value of "operator":
 - `GTE` — Greater than or equal to.
 - `LTE` — Less than or equal to.
 
-Value of "value" if data couldn't be extracted — `null`.||
+Value of `value` if data couldn't be extracted — `null`.||
 |#
 
 ## See also {#see-also}

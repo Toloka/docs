@@ -1,6 +1,6 @@
 # Configuration for Template Builder
 
-If, when creating a project, you specified the Editor type — Template Builder (`"type": "tb"`) in the Task Interface parameters (`view_spec`), then specify the configuration for Template Builder in serialized JSON format in the `config` parameter.
+If, when [creating a project](https://toloka.ai/docs/api/api-reference/#post-/projects), you specified the Editor type — Template Builder (`"type": "tb"`) in the Task Interface parameters (`view_spec`), then specify the configuration for Template Builder in serialized JSON format in the `config` parameter.
 
 ## Configuration example
 

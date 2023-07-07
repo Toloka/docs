@@ -61,3 +61,5 @@ Refer to the [Generating API tokens](api-token.md) section to learn how to issue
 {% include [contact-support](../_includes/contact-support.md) %}
 
 {% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

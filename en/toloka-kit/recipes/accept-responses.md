@@ -37,7 +37,7 @@ Status.ACCEPTED OK
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 accepted_assignment = toloka_client.accept_assignment('0001d38f5b--61c8be211c3a7842a596ac0a', 'OK')
 print(accepted_assignment.status, accepted_assignment.public_comment)

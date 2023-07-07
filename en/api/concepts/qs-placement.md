@@ -32,7 +32,7 @@ Choose a platform to get an OAuth token:
 
 ### Request {#project-request}
 
-Use the `POST /api/v1/projects` method:
+Use the `POST /api/v1/projects` [method](https://toloka.ai/docs/api/api-reference/#post-/projects):
 
 {% list tabs %}
 
@@ -41,8 +41,8 @@ Use the `POST /api/v1/projects` method:
     Send a request from the command line using the cURL utility:
 
     ```bash
-    curl -X POST \
-         -H 'Authorization: OAuth <OAuth token>' \
+    curl -X POST 'https://sandbox.toloka.dev/api/v1/projects' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{
                "public_name": "Categories of shoes",
@@ -88,8 +88,7 @@ Use the `POST /api/v1/projects` method:
                  }
                },
                "assignments_issuing_type": "AUTOMATED"
-             }' \
-    https://sandbox.toloka.dev/api/v1/projects
+             }'
     ```
 
 - Postman
@@ -105,7 +104,7 @@ Use the `POST /api/v1/projects` method:
     1. Headers
 
         ```bash
-        Authorization: OAuth <OAuth token>
+        Authorization: OAuth PlaceYourRealOAuthToken_Here
         Content-Type: application/json
         ```
 
@@ -166,7 +165,7 @@ Use the `POST /api/v1/projects` method:
 
 {% endlist %}
 
-The example shows the basic parameters that are necessary to create a simple project. For a more detailed description of all request parameters, see [Create a project](https://toloka.ai/docs/api/api-reference/#post-/projects).
+The example shows the basic parameters that are necessary to create a simple project. For a more detailed description of all request parameters, see [Create project](https://toloka.ai/docs/api/api-reference/#post-/projects).
 
 ### Response {#project-response}
 
@@ -183,7 +182,7 @@ In response to the  request, you will receive a JSON object for the created pr
 
 {% note info %}
 
-You'll need the `id` to create pools in the project: specify it in the add pool request.
+You'll need the `id` to create pools in the project: specify it in the [add pool](#pool) request.
 
 {% endnote %}
 
@@ -196,7 +195,7 @@ In the given code example, substitute the parameter values:
 - In the `project_id` parameter, replace `{project_id}` with the ID of the project that the pool was created for (the ID received in response to the add project request).
 - In `will_expire`, replace `{close_date}` with the UTC date and time in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`, specifying when the pool needs to be closed even if some task suites are not completed.
 
-Next, send a POST request to `/api/v1/pools`:
+Next, send a `POST` [request](https://toloka.ai/docs/api/api-reference/#post-/pools) to `/api/v1/pools`:
 
 {% list tabs %}
 
@@ -205,8 +204,8 @@ Next, send a POST request to `/api/v1/pools`:
     Send a request from the command line using the cURL utility:
 
     ```bash
-    curl -X POST \
-         -H 'Authorization: OAuth <OAuth token>' \
+    curl -X POST 'https://sandbox.toloka.dev/api/v1/pools' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{
                "project_id": "{project_id}",
@@ -275,8 +274,7 @@ Next, send a POST request to `/api/v1/pools`:
                "defaults": {
                  "default_overlap_for_new_task_suites": 3
                }
-             }' \
-    https://sandbox.toloka.dev/api/v1/pools
+             }'
     ```
 
 - Postman
@@ -292,7 +290,7 @@ Next, send a POST request to `/api/v1/pools`:
     1. Headers
 
         ```bash
-        Authorization: OAuth <OAuth token>
+        Authorization: OAuth PlaceYourRealOAuthToken_Here
         Content-Type: application/json
         ```
 
@@ -371,7 +369,7 @@ Next, send a POST request to `/api/v1/pools`:
 
 {% endlist %}
 
-The example shows the basic parameters that are necessary to create a simple pool. For a more detailed description of all request parameters, see [Create a pool](https://toloka.ai/docs/api/api-reference/#post-/pools).
+The example shows the basic parameters that are necessary to create a simple pool. For a more detailed description of all request parameters, see [Create pool](https://toloka.ai/docs/api/api-reference/#post-/pools).
 
 ### Response {#pool-response}
 
@@ -388,7 +386,7 @@ In response to the  request, you will receive a JSON object for the created po
 
 {% note info %}
 
-You'll need the `id` to add tasks to the pool: specify it in the upload tasks request.
+You'll need the `id` to add tasks to the pool: specify it in the [upload tasks](#task) request.
 
 {% endnote %}
 
@@ -398,10 +396,10 @@ You'll need the `id` to add tasks to the pool: specify it in the upload tasks re
 
 In the given code example, substitute the parameter values:
 
-- In `input_values`, replace `<proxy name>`/`<folder name>`/`<file name N>.<type>` with specific values for the input data set in the project's `input_spec` parameter (in this example, these are paths to the images for labeling; place the image files on Yandex Disk and add it as a data source proxy).
+- In `input_values`, replace `https://example.com/image_1.jpg`–`https://example.com/image_3.jpg` with specific values for the input data set in the project's `input_spec` parameter (in this example, these are paths to the images for labeling; replace the example image links with the real ones).
 - In the `pool_id` parameter, replace `{pool_id}` with the ID of the pool to upload the task to (the ID received in response to the add pool request).
 
-Next, send a POST request to `/api/v1/tasks`:
+Next, send a `POST` [request](https://toloka.ai/docs/api/api-reference/#post-/tasks) to `/api/v1/tasks`:
 
 {% list tabs %}
 
@@ -410,33 +408,32 @@ Next, send a POST request to `/api/v1/tasks`:
     Send a request from the command line using the cURL utility:
 
     ```bash
-    curl -X POST \
-         -H 'Authorization: OAuth <OAuth token>' \
+    curl -X POST 'https://sandbox.toloka.dev/api/v1/tasks' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '[
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+                   "image": "https://example.com/image_1.jpg"
                  },
                  "pool_id": "{pool_id}",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+                   "image": "https://example.com/image_2.jpg"
                  },
                  "pool_id": "{pool_id}",
                  "overlap": 2
                },
                {
                  "input_values": {
-                   "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+                   "image": "https://example.com/image_3.jpg"
                  },
                  "pool_id": "{pool_id}",
                  "overlap": 2
                }
-             ]' \
-    https://sandbox.toloka.dev/api/v1/tasks
+             ]'
     ```
 
 - Postman
@@ -452,7 +449,7 @@ Next, send a POST request to `/api/v1/tasks`:
     1. Headers
 
         ```bash
-        Authorization: OAuth <OAuth token>
+        Authorization: OAuth PlaceYourRealOAuthToken_Here
         Content-Type: application/json
         ```
 
@@ -462,21 +459,21 @@ Next, send a POST request to `/api/v1/tasks`:
         [
           {
             "input_values": {
-              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 1>.<type>"
+              "image": "https://example.com/image_1.jpg"
             },
             "pool_id": "{pool_id}",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 2>.<type>"
+              "image": "https://example.com/image_2.jpg"
             },
             "pool_id": "{pool_id}",
             "overlap": 2
           },
           {
             "input_values": {
-              "image": "https://sandbox.toloka.dev/api/proxy/<proxy name>/<folder name>/<file name 3>.<type>"
+              "image": "https://example.com/image_3.jpg"
             },
             "pool_id": "{pool_id}",
             "overlap": 2
@@ -486,17 +483,17 @@ Next, send a POST request to `/api/v1/tasks`:
 
 {% endlist %}
 
-The example shows the basic parameters that are necessary to upload simple tasks. For a more detailed description of each task parameter, see [Create one or multiple tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks).
+The example shows the basic parameters that are necessary to upload simple tasks. For a more detailed description of each task parameter, see [Create single/multiple tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks).
 
 ## Start the pool {#pool-run}
 
 ### Before starting the pool {#pool-run-before}
 
-Before you start the pool, go to the Toloka interface, select the pool, click **Preview**, and check that the tasks are displayed properly.
+Before you start the pool, go to the [Toloka interface](https://platform.toloka.ai/), select the pool, click **Preview**, and check that the tasks are displayed properly.
 
 ### Request {#pool-run-request}
 
-In the `{pool_id}` path parameter, insert the ID of the pool to start (the ID received in response to the add pool request) and use the `POST` method:
+In the `{pool_id}` path parameter, insert the ID of the pool to start (the ID received in response to the [add pool request](#pool)) and use the `POST` [method](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/open):
 
 {% list tabs %}
 
@@ -505,10 +502,9 @@ In the `{pool_id}` path parameter, insert the ID of the pool to start (the ID re
     Send a request from the command line using the cURL utility:
 
     ```bash
-    curl -X POST \
-         -H 'Authorization: OAuth <OAuth token>' \
-         -H 'Content-Type: application/json' \
-    https://sandbox.toloka.dev/api/v1/pools/{pool_id}/open
+    curl -X POST 'https://sandbox.toloka.dev/api/v1/pools/{pool_id}/open' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Content-Type: application/json'
     ```
 
 - Postman
@@ -524,7 +520,7 @@ In the `{pool_id}` path parameter, insert the ID of the pool to start (the ID re
     1. Headers
 
         ```bash
-        Authorization: OAuth <OAuth token>
+        Authorization: OAuth PlaceYourRealOAuthToken_Here
         Content-Type: application/json
         ```
 

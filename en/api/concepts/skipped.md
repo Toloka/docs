@@ -1,10 +1,10 @@
 # Skipped assignments
 
-Skipping tasks is considered an indirect indicator of the quality of responses. You can block access to a pool or project if a Toloker skips multiple task suites in a row. To do this, set key values in the `quality_control.configs` array in the pool settings.
+Skipping tasks is considered an indirect indicator of the quality of responses. You can block access to a pool or project if a Toloker skips multiple task suites in a row. To do this, set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
-You can block a Toloker from accessing the project for a given number of days, hours, minutes (at a time or in total) or forever, if they skip 10 task suites in a row.
+You can block a Toloker from accessing the project for a given number of days, hours, minutes (at a time or in total), or permanently, if they skip **10** task suites in a row.
 
 ### Ban for 10 days
 
@@ -125,9 +125,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
@@ -136,7 +134,7 @@ Parameters for collecting data (depends on the quality control rule specified in
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
 || `configs[].rules.conditions` | _object_ \| **required**
 
-Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
+Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the `AND` operator. ||
 || `configs[].rules.conditions.key` | _string_ \| **required**
 
 Values that are checked in the condition:

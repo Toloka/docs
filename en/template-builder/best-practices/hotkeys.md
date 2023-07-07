@@ -101,3 +101,5 @@ Keep in mind the following:
 - If you use a conditional operator to select an action, such as [helper.if](../reference/helper.if.md), the same conditional operator (**helper.if**) must be called under the same rules when the shortcut key is pressed.
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

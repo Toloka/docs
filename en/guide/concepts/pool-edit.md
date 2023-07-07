@@ -142,6 +142,48 @@ The minimum required level that you can set is 5. Tolokers who complete training
 
 {% endcut %}
 
+## Smart mixing
+
+{% note info %}
+
+When editing a pool, the **Smart mixing** section is available only if you have already uploaded tasks to the pool using [smart mixing](../../glossary.md#smart-mixing). 
+
+{% endnote %}
+
+### General tasks
+
+The number of general tasks per suite.
+
+### Control tasks
+
+The number of control tasks per suite.
+
+### Training tasks
+
+The number of training tasks per suite.
+
+### Min general tasks
+
+The minimum number of general tasks per suite.
+
+### Min control tasks
+
+The minimum number of control tasks per suite.
+
+### Min training tasks
+
+The minimum number of training tasks per suite.
+
+### Allow partial task suites
+
+The setting determines the output in the last task suite if it has less than the required number of general tasks.
+
+By default, the option is enabled.
+
+### Keep task order from uploaded data
+
+{% include [keep-task-order](../_includes/toloka-requester-source/id-toloka-requester-source/keep-task-order.md) %}
+
 ## Dynamic pricing and overlap {#pool-dynamic-price-info}
 
 ### Dynamic pricing
@@ -154,11 +196,9 @@ You can use this parameter if you specify fixed values for the [input data](../.
 
 You set the range, the service analyzes the responses, their consistency, the level of Tolokers' skills and, if necessary, increases the overlap within the range you specified. [Learn more](dynamic-overlap.md).
 
-## Optional pool settings {#pool-additional-settings-info}
+## Optional settings {#pool-additional-settings-info}
 
-Click **Show advanced settings** to edit optional pool settings.
-
-### Priority
+### Pool priority within the project
 
 Number from 0 to 100. Allows you to rank a pool within a project. First, a Toloker is assigned tasks from a pool with higher priority.
 
@@ -199,56 +239,6 @@ Specify the pool type:
 If the price per task suite is zero, you must select the pool type.
 
 {% endnote %}
-
-### Keep task order
-
-#### Option disabled (default value)
-
-The uploaded tasks are grouped in pages and given to Tolokers in random order. Within the page, the task order is always random.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per suite when uploading the [file](../../glossary.md#tsv) with image links to the pool, the system can generate them as follows:
-
-Tasks in the file | Page 1 | Page 2 | Page 3
------ | ----- | ----- | -----
-Image 1 | Image 2 | Image 6 | Image 4
-Image 2 | Image 5 | Image 1 | Image 3
-Image 3 |  |  |
-Image 4 |  |  |
-Image 5 |  |  |
-Image 6 |  |  |
-
-{% endcut %}
-
-#### Option enabled
-
-Tasks will be grouped on pages in the order they are listed in the task file.
-
-{% cut "Example" %}
-
-If you specified 2 tasks per suite when uploading the file with image links to the pool, you're equally likely to get pages where the first link goes first and the second goes second, and the other way around:
-
-Tasks in the file | Page 1 | Page 2 | Page 3
------ | ----- | ----- | -----
-Image 1 | Image 1 | Image 3 | Image 5
-Image 2 | Image 2 | Image 4 | Image 6
-Image 3 | _or_ | _or_ | _or_
-Image 4 | Image 2 | Image 4 | Image 6
-Image 5 | Image 1 | Image 3 | Image 5
-Image 6 |  |  |
-
-{% endcut %}
-
-If the pool has an overlap, the next task is distributed only when the previous task is completed by the necessary number of Tolokers.
-
-Use this parameter to:
-
-- Speed up collection of responses for [majority vote](mvote.md) check.
-
-- Assign tasks by priority.
-
-    Put important tasks in the beginning of the file. They will be completed faster and with the necessary overlap.
 
 ## What's next {#what_next}
 
@@ -296,3 +286,5 @@ Yes. Open edit mode for the pool and set a new overlap value. You don't need to 
 {% include [faq-edit-uploaded-tasks](../_includes/faq/adding-tasks-to-the-pool/edit-uploaded-tasks.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

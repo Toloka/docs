@@ -1,12 +1,12 @@
 # Fast responses
 
-You can ban a Toloker who responds too quickly. To do this, set key values in the `quality_control.configs` array in the pool settings.
+You can ban a Toloker who responds too quickly. To do this, set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
-In the example below, the Toloker is blocked from accessing the task suites if 4 out of 10 responses were given too quickly. The minimum response time is 3 seconds.
+In the example below, the Toloker is blocked from accessing the task suites if **4** out of **10** responses were given too quickly. The minimum response time is **3** seconds.
 
-You can ban a Toloker from your project for a given number of days, hours, minutes (at a time or in total) or permanently.
+You can ban a Toloker from your project for a given number of days, hours, minutes (at a time or in total), or permanently.
 
 ### Ban for 10 days
 
@@ -136,9 +136,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
@@ -155,7 +153,7 @@ If this field is omitted, the calculation is based on all the Toloker's response
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
 || `configs[].rules.conditions` | _object_ \| **required**
 
-Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
+Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the `AND` operator. ||
 || `configs[].rules.conditions.key` | _string_ \| **required**
 
 Values that are checked in the condition:

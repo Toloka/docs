@@ -50,3 +50,5 @@ The [helper.transform](../reference/helper.transform.md) component lets you conv
 - [Say hello in multiple languages](https://tb.toloka.dev/editor?config=N4Igxg9gdgZglgcxALhMAOlABF9IBucApgO57JYbY64gAuAngA5Hm2GkB0ANnAM508AGkw1acOkQC2fNgG1RYyoqW1GLNnnhFuAE06SAHoJAjqqvNwCGAIx2aQAdQAWVuln5YGEAK4AnLCgrKSIAfmEVJTwmazAiZwg9Ij8HACkIZygI8yiQXTcrNipVMTx1VhRafLorTjgoST8g7mySmmi3ZwcgkLxIsQBffqwBs1VikrLmCoo8Zx0WPzqYVsnwaF0JOGgi4dL6aYdIKE26bahOPyIARx84K91VtrxqwsqJtpwpjUqXgrqGslmk9Ph06F1fiAehU9jQhjlBmM1uCiFl3rCvgcfrMCMQSDx+CYkc8QBJpLJ0QjkYdIfNuIsDH4rFA+DAIH4pCCSWSZPIMbkABI6bgQLmgkCAfBBAAIggA4QQBMIIBWEEAQiBikkAIR80CsWD4yTexM+mIFiX1-P2Aqs3BFfSpqgAugbuQ1RZTDftyg4OPijESze11oCGrtbeKPbSFslOAArCD1VXinkUigKEOGj5uixYmZVf4isCW+MZsEQnE8m0Z1SjP3javU7E5moAxrA0y1zNMTrdYIw1OfeEVmgOtu0GwMBxCWi1-tu6dtWdKec4ed2xTwgamUlQJg+OgoNDrgZAA&locale=en).
 
 [![image](../_images/buttons/contact-support.svg)](../concepts/support.md)
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -44,7 +44,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/create-project-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/create-project-step-1.png)
+    ![Create a project. Step 1](../_images/tutorials/side-by-side/create-project-step-1.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like. This preset has a task template with validation, keyboard shortcuts, and task layout pre-configured.
 
@@ -54,7 +54,7 @@ Before you begin:
 
         1. Write a question Tolokers will see in your task. All tasks in a project use the same question.
 
-            [![Create a project. Step 2.1.1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.1.1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.1.1.png)
+            ![Create a project. Step 2.1.1](../_images/tutorials/side-by-side/image-comparison-step-2.1.1.png =700x)
 
         1. Set answer options. In the `options` list, replace the sample answers with your values in the following properties:
 
@@ -62,11 +62,11 @@ Before you begin:
 
             - `value`: This is the value you will see in the file with the labeling results.
 
-            [![Create a project. Step 2.1.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.1.2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.1.2.png)
+            ![Create a project. Step 2.1.2](../_images/tutorials/side-by-side/image-comparison-step-2.1.2.png =700x)
 
         1. Configure keyboard shortcuts for the answers. Replace the values of the `payload` properties with the values you’ve already specified in the `value` properties.
 
-            [![Create a project. Step 2.1.3](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.1.3.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.1.3.png)
+            ![Create a project. Step 2.1.3](../_images/tutorials/side-by-side/image-comparison-step-2.1.3.png =700x)
 
         {% note info %}
 
@@ -76,7 +76,7 @@ Before you begin:
 
     1. In the **Input data example** section, add links to sample images. These images are only used to display the task interface preview on the right.
 
-        [![Create a project. Step 2.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-step-2.2.png)
+        ![Create a project. Step 2.2](../_images/tutorials/side-by-side/image-comparison-step-2.2.png =700x)
 
     1. {% include [toloka-requester-source-specification-definition](../_includes/toloka-requester-source/id-toloka-requester-source/specification-definition.md) %}
 
@@ -116,7 +116,7 @@ Before you begin:
 
     1. {% include [toloka-requester-source-filters](../_includes/toloka-requester-source/id-toloka-requester-source/filters.md) %}
 
-        [![Create a pool. Step 3.2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/create-pool-step-3.2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/create-pool-step-3.2.png)
+        ![Create a pool. Step 3.2](../_images/tutorials/side-by-side/create-pool-step-3.2.png =700x)
 
     1. Use the **Speed/quality balance** slider to change the number of Tolokers who can see your tasks. Move the slider to the right to exclude Tolokers with lower ratings from participating in your project.
 
@@ -132,7 +132,7 @@ Before you begin:
 
     1. To filter out Tolokers who often make mistakes in the control tasks, click **Add a quality control rule → Control tasks**. Enter the following values:
 
-        [![Create a pool. Control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/image-comparison-control-rule.png)
+        ![Create a pool. Control rule](../_images/tutorials/side-by-side/image-comparison-control-rule.png =700x)
 
         This means that if a Toloker completed more than three control tasks and gave incorrect answers in more than 60% of them, they will be blocked and won't be able to complete tasks on this project for 10 days.
 
@@ -177,7 +177,7 @@ Before you begin:
 
         For example, you can add 9 general tasks and 1 control task per suite:
 
-        [![Upload your file. Step 3](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.png)
+        ![Upload your file. Step 3](../_images/tutorials/side-by-side/upload-data-step-3.png =700x)
 
     1. Click **Combine tasks into suites**.
 
@@ -189,7 +189,7 @@ Before you begin:
 
     1. Note the **Distribution of correct responses for control tasks** graph on the right side of the page. It shows how many control tasks of each type you have. We recommend adding an equal quantity of each correct response.
 
-        [![Upload your file. Step 5.4](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.4.png =340x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/upload-data-step-3.4.png)
+        ![Upload your file. Step 5.4](../_images/tutorials/side-by-side/upload-data-step-3.4.png =340x)
 
 1. {% include [tutorials-double-check](../_includes/tutorials/double-check.md) %}
 
@@ -203,7 +203,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/start-labeling-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/start-labeling-step-2.png)
+    ![Start labeling. Step 2](../_images/tutorials/side-by-side/start-labeling-step-2.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -211,11 +211,11 @@ Before you begin:
 
 1. {% include [toloka-requester-source-labeling-progress](../_includes/toloka-requester-source/id-toloka-requester-source/labeling-progress.md) %}
 
-    [![See the results. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/see-results-step-1.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/see-results-step-1.png)
+    ![See the results. Step 1](../_images/tutorials/side-by-side/see-results-step-1.png =700x)
 
 1. When the labeling is complete, click the arrow next to the **Download results** button and choose **Run Dawid-Skene model** from the drop-down menu. Click **Yes** in the pop-up window.
 
-    [![See the results. Step 2](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/see-results-step-2.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/side-by-side/see-results-step-2.png)
+    ![See the results. Step 2](../_images/tutorials/side-by-side/see-results-step-2.png =700x)
 
 1. Open the same drop-down menu again, and click **View aggregations list**.
 
@@ -274,4 +274,4 @@ The `popup` property of the component [view.image](../../template-builder/refere
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

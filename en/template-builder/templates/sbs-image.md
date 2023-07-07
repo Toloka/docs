@@ -193,6 +193,6 @@ To enhance Toloker's experience, you can highlight different types of data withÂ
 
 ## See also {#see-also}
 
-- [Tutorials â€” image comparison (side-by-side)](../../guide/tutorials/side-by-side.md)
+- [Tutorials: Image comparison (side-by-side)](../../guide/tutorials/side-by-side.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}

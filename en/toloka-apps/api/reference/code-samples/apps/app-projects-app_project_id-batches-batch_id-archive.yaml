@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje/archive' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
@@ -16,7 +16,7 @@
 
     payload={}
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
     }
 
     response = requests.request("POST", url, headers=headers, data=payload)
@@ -30,7 +30,7 @@
       'method': 'POST',
       'url': 'https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje/archive',
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
       }
     };
     request(options, function (error, response) {
@@ -42,5 +42,5 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/app/v0/app-projects/Q2d15QBjpwWuDz8Z321g/batches/4Va2BBWKL88S4QyAgVje/archive")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .asString();

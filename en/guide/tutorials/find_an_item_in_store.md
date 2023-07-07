@@ -266,7 +266,7 @@ To create a [pool](../../glossary.md#pool):
 
         1. Choose **Set manually**.
 
-        1. In the **Tasks per suite** field, specify`1`.
+        1. In the **Number of tasks per suite** field, specify`1`.
 
         1. Click **Combine tasks into suites**.
 
@@ -281,3 +281,5 @@ To create a [pool](../../glossary.md#pool):
 - Create [Project 3](item_look_similar.md) to compare the original image with the results from Project 2.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

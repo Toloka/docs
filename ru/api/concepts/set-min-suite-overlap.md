@@ -12,7 +12,7 @@
 
     ```bash
     PATCH https://toloka.dev/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 
@@ -20,7 +20,7 @@
 
     ```bash
     PATCH https://sandbox.toloka.dev/api/v1/task-suites/<task_suite_id>/set-overlap-or-min
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
     ```
 

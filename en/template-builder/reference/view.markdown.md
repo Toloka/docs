@@ -48,3 +48,5 @@ Links with Markdown are appended with `target="_blank"` (the link opens in a new
 |#
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

@@ -29,7 +29,7 @@ You can archive only batches which are currently in statuses other than **Proces
 
   ```bash
   curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{project_id}/batches/{batch_id}/archive' \
-       -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
   ```
 
   Where `{project_id}` is the ID of the project with which the batch is associated, and `{batch_id}` is the ID of the batch you want to archive.
@@ -54,7 +54,7 @@ Send the following `POST` request:
 
 ```bash
 curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{project_id}/batches/{batch_id}/unarchive' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 Where `{project_id}` is the ID of the project with which the batch is associated, and `{batch_id}` is the ID of the batch you want to unarchive.

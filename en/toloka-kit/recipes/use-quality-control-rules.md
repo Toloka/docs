@@ -69,7 +69,7 @@ new_pool.quality_control.[add_action](*add_action)(
 
 The image below shows how the created **Fast responses** quality control rule looks in the pool interface.
 
-[!['Fast responses' quality control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-fast-responses.png)
+!['Fast responses' quality control rule](../_images/recipes/quality-control-rule-fast-responses.png =700x)
 
 {% endcut %}
 
@@ -104,7 +104,7 @@ new_pool.quality_control.[add_action](*add_action)(
 
 The image below shows how the created **Majority vote** quality control rule looks in the pool interface.
 
-[!['Majority vote' quality control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-majority-vote.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-majority-vote.png)
+!['Majority vote' quality control rule](../_images/recipes/quality-control-rule-majority-vote.png =700x)
 
 {% endcut %}
 
@@ -141,7 +141,7 @@ new_pool.quality_control.[add_action](*add_action)(
 
 The image below shows how the created **Skipped assignments** quality control rule looks in the pool interface.
 
-[!['Skipped assignments' quality control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-skipped-assignments.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-skipped-assignments.png)
+!['Skipped assignments' quality control rule](../_images/recipes/quality-control-rule-skipped-assignments.png =700x)
 
 {% endcut %}
 
@@ -175,7 +175,7 @@ new_pool.quality_control.[add_action](*add_action)(
 
 The image below shows how the created **Control tasks** quality control rule looks in the pool interface.
 
-[!['Control tasks' quality control rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-control-tasks.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/quality-control-rule-control-tasks.png)
+!['Control tasks' quality control rule](../_images/recipes/quality-control-rule-control-tasks.png =700x)
 
 {% endcut %}
 
@@ -214,7 +214,7 @@ You should get an output with the created pool ID which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 new_pool = toloka.pool.Pool(
     project_id='133047',
@@ -313,4 +313,4 @@ print(new_pool.id)
 [*GoldenSetAnswersCount]: [GoldenSetAnswersCount](../reference/toloka.client.conditions.GoldenSetAnswersCount.md) condition class
 [*ApproveAllAssignments]: [ApproveAllAssignments](../reference/toloka.client.actions.ApproveAllAssignments.md) action class
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

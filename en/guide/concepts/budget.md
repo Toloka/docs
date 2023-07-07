@@ -129,3 +129,5 @@ If you want to create main and secondary accounts, [write to support](../trouble
 [Refund money transferred to the Toloka account](../troubleshooting/support.md)
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

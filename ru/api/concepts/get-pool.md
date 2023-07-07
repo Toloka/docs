@@ -14,14 +14,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/pools/<pool_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/pools/<pool_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     ```
 
 {% endlist %}

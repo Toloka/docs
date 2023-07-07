@@ -212,3 +212,5 @@ Skills help identify how well Tolokers do your tasks. You can ban Tolokers with 
 {% include [faq-using-smart-mixing](../_includes/faq/adding-tasks-to-the-pool/using-smart-mixing.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

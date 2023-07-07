@@ -35,7 +35,7 @@ You should get an output with the pool ID and the updated status which looks lik
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 archived_pool = toloka_client.archive_pool('1443992')
 print(archived_pool.id, archived_pool.status)

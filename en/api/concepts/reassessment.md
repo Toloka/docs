@@ -4,11 +4,13 @@ You can use this rule to:
 
 - Resend rejected task suites for recompletion to other Tolokers.
 
-    If you rejected a task suite, you may want it to be completed by a different Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](../../glossary.md#overlap) for this task suite only. This is especially helpful if you have the overlap value set to 1.
+    If you rejected a task suite, you may want it to be completed by a different Toloker instead of the one whose response you rejected. To do this, you can increase the [overlap](../../glossary.md#overlap) for this task suite only. This is especially helpful if you have the overlap value set to **1**.
 
 - Save money on re-completing task suites that you have already accepted.
 
     If you reviewed and accepted a task suite, it may not make sense for other Tolokers to complete it. To avoid this, you can reduce the overlap only for accepted task suites.
+
+Set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
@@ -75,9 +77,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
@@ -91,7 +91,7 @@ If this field is omitted, the calculation is based on all the Toloker's response
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
 || `configs[].rules.conditions` | _object_ \| **required**
 
-Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
+Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the `AND` operator. ||
 || `configs[].rules.conditions.key` | _string_ \| **required**
 
 Values that are checked in the condition:
@@ -103,12 +103,12 @@ Values that are checked in the condition:
 
 Comparison operator (the `key` data is compared with the threshold value from `value`):
 
-- `EQ` ("Equal") — Equal to.
-- `NE` ("Not equal to") — Not equal to.
-- `GT` ("Greater than") — Greater than.
-- `LT` ("Less than") — Less than.
-- `GTE` ("Greater than equal to") — Greater than or equal to.
-- `LTE` ("Less than equal to") — Less than or equal to. ||
+- `EQ` — Equal to.
+- `NE` — Not equal to.
+- `GT` — Greater than.
+- `LT` — Less than.
+- `GTE` — Greater than or equal to.
+- `LTE` — Less than or equal to. ||
 || `configs[].rules.conditions.value` | _string_ \| **required**
 
 The number of task suites with a specific status. ||

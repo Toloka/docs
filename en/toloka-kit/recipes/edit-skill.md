@@ -57,7 +57,7 @@ You should get an output with the updated skill private comment which looks like
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 skill = toloka_client.get_skill('11294')
 skill.private_comment = 'Got at least 5 right responses on control tasks with C++ or Python'

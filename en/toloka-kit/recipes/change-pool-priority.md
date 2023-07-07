@@ -35,7 +35,7 @@ You should get an output with the pool ID and the updated priority which looks l
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 patched_pool = toloka_client.patch_pool(pool_id='1443815', priority=0)
 print(patched_pool.id, patched_pool.priority)

@@ -39,7 +39,7 @@ You should get an output with the ID of the skill-Toloker pair (this allows [rem
 import toloka.client as toloka
 from decimal import Decimal
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 user_skill = toloka_client.set_user_skill(
                 user_id='1ad097faba0eff85a04fe30bc04d53db',

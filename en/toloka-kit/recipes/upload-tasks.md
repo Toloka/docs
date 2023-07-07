@@ -90,7 +90,7 @@ You should get an output with the number of the created tasks which looks like t
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 control_task = toloka.task.Task(
     input_values={'image': 'https://example.com/image_example.png'},

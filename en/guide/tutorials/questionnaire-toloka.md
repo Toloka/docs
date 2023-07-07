@@ -42,7 +42,7 @@ Before you begin:
 
     - **Description for Tolokers**: In a couple of sentences, explain what you expect Tolokers to do. This is just an overview. You will write instructions later.
 
-    [![Create a project. Step 1](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-create-project-step-1-toloka.png)
+    ![Create a project. Step 1](../_images/tutorials/questionnaire/survey-create-project-step-1-toloka.png =700x)
 
 1. In the **Task interface** section, set up what your tasks will look like.
 
@@ -56,7 +56,7 @@ Before you begin:
 
         - `value`: This is the value you will see in the file with the survey results.
 
-        [![Create a project. Config question answer](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-answer.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-answer.png)
+        ![Create a project. Config question answer](../_images/tutorials/questionnaire/survey-config-question-answer.png =700x)
 
         {% note info %}
 
@@ -66,7 +66,7 @@ Before you begin:
 
     1. The example code contains one question with an obvious answer to check how attentive a Toloker is. You can change this question if needed:
 
-        [![Create a project. Config question attention](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-config-question-attention.png)
+        ![Create a project. Config question attention](../_images/tutorials/questionnaire/survey-config-question-attention.png =700x)
 
     1. Click **Data specification → Show specifications**. In the following sections, you will see the parameters which match the task interface you set up in **Template Builder**:
 
@@ -100,7 +100,7 @@ Before you begin:
 
     1. Select Tolokers who knows the language of your survey:
 
-        [![Create a pool. Languages filter](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-language-filter.png)
+        ![Create a pool. Languages filter](../_images/tutorials/questionnaire/survey-language-filter.png =700x)
 
         Also you can select Tolokers based on their location, age, gender, and other parameters. Use the **Add filter** button and configure the filters you need.
 
@@ -110,11 +110,11 @@ Before you begin:
 
         1. Click the **Add skill** button. Enter the skill name and description, and leave the skill not public.
 
-            [![Create a pool. Add skill](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png =405x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-add.png)
+            ![Create a pool. Add skill](../_images/tutorials/questionnaire/survey-skill-add.png =405x)
 
         1. Click **Add filter → My skills** and select your skill from the previous step. Configure the filter to recruit Tolokers without the skill.
 
-            [![Create a pool. My skills](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-skill-filter.png)
+            ![Create a pool. My skills](../_images/tutorials/questionnaire/survey-skill-filter.png =700x)
 
         You will add a rule that assigns this skill to Tolokers who have already taken one survey later.
 
@@ -126,7 +126,7 @@ Before you begin:
 
     1. To filter out Tolokers who complete tasks too fast, click **Add a quality control rule → Fast responses**. Specify the following values:
 
-        [![Create a pool. Fast responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-fast-responses.png)
+        ![Create a pool. Fast responses rule](../_images/tutorials/questionnaire/survey-fast-responses.png =700x)
 
         These settings mean that a Toloker who completes a task suite in less than 15 seconds will be blocked and won’t be able to access your tasks anymore.
 
@@ -140,17 +140,17 @@ Before you begin:
 
     1. Add the rule which assigns a skill after one submitted survey. As you’ve set the filter to select Tolokers without this skill in step 3.4, the rule allows you to filter out Tolokers who have already completed your survey.
 
-        [![Create a pool. Submitted responses rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-accomplished.png)
+        ![Create a pool. Submitted responses rule](../_images/tutorials/questionnaire/survey-accomplished.png =700x)
 
     1. To get the required number of responses, add the **Processing rejected and accepted assignments** rule. Enter the following values:
 
-        [![Create a pool. Processing rejected and accepted assignments rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-rejected.png)
+        ![Create a pool. Processing rejected and accepted assignments rule](../_images/tutorials/questionnaire/survey-rejected.png =700x)
 
         This means that if you reject a Toloker’s response during the review, a new survey task will be sent to another Toloker.
 
     1. To automatically accept tasks from those who give correct answers to the attention check question, use the **Control tasks** rule:
 
-        [![Create a pool. Control tasks rule](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-control-rule.png)
+        ![Create a pool. Control tasks rule](../_images/tutorials/questionnaire/survey-control-rule.png =700x)
 
         The rule will work if you specify the correct answer to the attention check question in the file with tasks. You will do that later in this tutorial.
 
@@ -186,7 +186,7 @@ Before you begin:
 
             Go to the **Set manually** tab. Set one task per suite, that is a Toloker will see only one task with your survey on the page:
 
-            [![Upload data. Tasks per suite](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png =570x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-number-tasks.png)
+            ![Upload data. Tasks per suite](../_images/tutorials/questionnaire/survey-number-tasks.png =570x)
 
     1. Click **Combine tasks into suites**.
 
@@ -206,7 +206,7 @@ Before you begin:
 
 1. {% include [toloka-requester-source-start-button](../_includes/toloka-requester-source/id-toloka-requester-source/start-button.md) %}
 
-    [![Start labeling](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-start-labeling-toloka.png)
+    ![Start labeling](../_images/tutorials/questionnaire/survey-start-labeling-toloka.png =700x)
 
 1. In the pop-up panel, review the budget and click **Launch**.
 
@@ -220,7 +220,7 @@ Review the rest of the tasks during the time period specified in the **Review pe
 
 1. Go to the pool, and click **Review assignments**.
 
-    [![See the results. Review assignments](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/survey-review-results.png)
+    ![See the results. Review assignments](../_images/tutorials/questionnaire/survey-review-results.png =700x)
 
 1. Choose an assignment.
 
@@ -230,7 +230,7 @@ Review the rest of the tasks during the time period specified in the **Review pe
 
 1. After checking all the assignments, сlick the **Download results** button.
 
-    [![See the results. Download results](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-results.png)
+    ![See the results. Download results](../_images/tutorials/questionnaire/questionnaire-download-results.png =700x)
 
 1. In the **Download results** dialog, do the following:
 
@@ -242,7 +242,7 @@ Review the rest of the tasks during the time period specified in the **Review pe
 
     1. Click **Download results**.
 
-    [![See the results. Download settings](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png =458x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/guide/tutorials/questionnaire/questionnaire-download-settings.png)
+    ![See the results. Download settings](../_images/tutorials/questionnaire/questionnaire-download-settings.png =458x)
 
 You will get the TSV file. To process the survey results, you can open the file in Excel and save it in the XLSX format.
 
@@ -283,4 +283,4 @@ In the task interface settings, use the `field.text` or `field.textarea` compone
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

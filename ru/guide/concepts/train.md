@@ -332,3 +332,5 @@
 Другой вариант отбора исполнителей для проекта такого типа — отложенная приемка.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

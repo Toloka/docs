@@ -18,7 +18,7 @@
 
     ```bash
     PUT https://toloka.dev/api/v1/trainings/<training_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
 
     {<training parameters, including updated ones>}
@@ -28,7 +28,7 @@
 
     ```bash
     PUT https://sandbox.toloka.dev/api/v1/trainings/<training_id>
-    Authorization: OAuth <OAuth token>
+    Authorization: OAuth PlaceYourRealOAuthToken_Here
     Content-Type: application/json
 
     {<training parameters, including updated ones>}

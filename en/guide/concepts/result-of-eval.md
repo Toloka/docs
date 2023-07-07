@@ -48,7 +48,7 @@ To get the list of the responses using Toloka API, send a `GET` request with eit
 
 ```bash
 curl -X GET 'https://toloka.dev/api/v1/assignments?pool_id=1085757' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE'
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
 ```
 
 Refer to the [Get list of responses](https://toloka.ai/docs/api/api-reference/#get-/assignments) section of the Toloka API documentation for more details about the request, its parameters, and possible responses. You will find examples of the requests for [Toloka-Kit](../../toloka-kit/index.md) and other code samples there.
@@ -122,3 +122,5 @@ You can download all files in the pool in one archive up to 4 GB in size. If the
 {% include [faq-get-time](../_includes/faq/result-questions/get-time.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

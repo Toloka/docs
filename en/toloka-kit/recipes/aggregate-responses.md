@@ -68,7 +68,7 @@ You should get an output with the task IDs and the `result` output data values w
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 aggregation_operation = toloka_client.aggregate_solutions_by_pool(
     type=toloka.aggregation.AggregatedSolutionType.DAWID_SKENE,

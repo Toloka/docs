@@ -184,7 +184,7 @@ tags:
       You can issue bonuses to one or more Tolokers (in addition to payment for
       completed tasks).
 
-      The bonus amount can be from $0.001 to $100 per Toloker per time.
+      The bonus amount can be from $0.005 to $100 per Toloker per time.
 
       ### See also
 
@@ -2557,7 +2557,7 @@ paths:
           description: |
             The operation ID for asynchronously loading one or more task suites (if `async_mode=true`).
 
-            We recommend sending the ID in the `POST` request to avoid accidental errors, such as creating the operation multiple times for the same task suites.
+            <aside class="warning">We recommend sending <code>operation_id</code> in the <code>POST</code> request to avoid accidental errors, such as creating the operation multiple times for the same task suites.</aside>
 
             The ID should conform to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122).
 
@@ -2901,7 +2901,7 @@ paths:
           description: |
             The operation ID for a scheduled upload of one or more tasks (if `async_mode=true` is set).
 
-            We recommended sending the ID in the `POST` request to avoid accidental errors, such as creating the operation multiple times for the same tasks.
+            <aside class="warning">We recommend sending <code>operation_id</code> in the <code>POST</code> request to avoid accidental errors, such as creating the operation multiple times for the same tasks.</aside>
 
             The ID should conform to the [RFC4122 standard](https://tools.ietf.org/html/rfc4122).
 
@@ -3628,7 +3628,7 @@ paths:
       description: |
         Issues bonuses to Tolokers.
 
-        The bonus amount can be from $0.001 to $100 per Toloker per time.
+        The bonus amount can be from $0.005 to $100 per Toloker per time.
 
         <aside class="warning"><strong>Restriction</strong>: You can send a maximum of <strong>10,000</strong> requests per day. Refer to the <a href="#overview--rate-limiting">Rate limiting</a> section for the complete list of the request limitations in Toloka API.</aside>
 
@@ -3648,12 +3648,6 @@ paths:
           schema:
             type: boolean
             default: false
-        - name: assignment_id
-          description: The ID of the Toloker's response to the task a bonus is issued for.
-          in: query
-          example: 000015fccc--63bfc4c358d7a46c32a7b233
-          schema:
-            type: string
         - name: skip_invalid_items
           description: |
             Validation parameters for JSON objects:
@@ -3845,13 +3839,22 @@ paths:
           example: f25a5f41-94e8-49bf-977f-3611087a16b3
           schema:
             type: string
-        - name: project_id
+        - name: pool_id
           description: |
             **Required** if `scope=POOL`.
 
             The ID of the pool that is blocked.
           in: query
-          example: 10
+          example: 32267581
+          schema:
+            type: string
+        - name: project_id
+          description: |
+            **Required** if `scope=PROJECT`.
+
+            The ID of the project that is blocked.
+          in: query
+          example: 83859
           schema:
             type: string
         - name: sort
@@ -5889,12 +5892,28 @@ components:
             The balance type. Possible values:
 
             - `BEST_CONCURRENT_USERS_BY_QUALITY` — Active Tolokers with access to the task.
-            - `TOP_PERCENTAGE_BY_QUALITY` — Users with the best task completion quality.
+            - `TOP_PERCENTAGE_BY_QUALITY` — Tolokers with the best task completion quality.
           enum:
             - BEST_CONCURRENT_USERS_BY_QUALITY
             - TOP_PERCENTAGE_BY_QUALITY
-      discriminator:
-        propertyName: type
+        count:
+          maximum: 100
+          minimum: 0
+          type: integer
+          format: int64
+          description: |
+            The field is used together with the balance `type` set to `BEST_CONCURRENT_USERS_BY_QUALITY`.
+
+            The number of active Tolokers the task is available to.
+        percent:
+          maximum: 100
+          minimum: 10
+          type: integer
+          format: int32
+          description: |
+            The field is used together with the balance `type` set to `TOP_PERCENTAGE_BY_QUALITY`.
+
+            The percentage of Tolokers with the best task completion quality. Possible values are **10**, **20**, **30**, **40**...**100**.
     ActionConfigDtoV1:
       required:
         - parameters
@@ -6035,7 +6054,7 @@ components:
               description: |
                 **Required** if dynamic overlap is used.
 
-                The maximum overlap. Must be higher than the values in `defaults`. Minimum — 1. Maximum — 30000.
+                The maximum overlap. Must be higher than the values in `defaults`.
               format: int64
             min_confidence:
               maximum: 1
@@ -6044,7 +6063,7 @@ components:
               description: |
                 **Required** if dynamic overlap is used.
 
-                The minimum confidence of the aggregated response. Values from 0 to 1.
+                The minimum confidence of the aggregated response.
             answer_weight_skill_id:
               type: string
               description: |
@@ -6061,18 +6080,6 @@ components:
                 Don't specify several fields if their values depend on each other.
               items:
                 $ref: '#/components/schemas/Field'
-    BestConcurrentUsersCherryPickingConfig:
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/AbstractUsersCherryPickingConfig'
-        - type: object
-          properties:
-            count:
-              maximum: 100
-              minimum: 0
-              type: integer
-              format: int64
-              description: The number of active Tolokers the task is available to. The field is shown if the balance type is set to `BEST_CONCURRENT_USERS_BY_QUALITY`.
     CheckpointsConfig:
       type: object
       description: |
@@ -6270,7 +6277,7 @@ components:
           minimum: 0
           type: integer
           description: |
-            The waiting time (in seconds) after adding a task or increasing the overlap before assigning the last task suite in the pool. Minimum — 0, maximum — 86,400 seconds (one day).
+            The waiting time (in seconds) after adding a task or increasing the overlap before assigning the last task suite in the pool. Minimum — **0**, maximum — **86,400** seconds (one day).
 
             This parameter can be used if the pool has `force_last_assignment` set to `true`.
           format: int32
@@ -6284,7 +6291,7 @@ components:
             The number of control tasks per suite.
           format: int32
         golden_task_distribution_function:
-          $ref: '#/components/schemas/TaskDistributionFunction'
+          $ref: './parts/api/additional.yaml#/components/schemas/GoldenTaskDistributionFunction'
         min_golden_tasks_count:
           maximum: 500
           minimum: 0
@@ -6340,7 +6347,7 @@ components:
             The number of training tasks per suite.
           format: int32
         training_task_distribution_function:
-          $ref: '#/components/schemas/TaskDistributionFunction'
+          $ref: './parts/api/additional.yaml#/components/schemas/TrainingTaskDistributionFunction'
     OneFieldConditionDtoV1:
       required:
         - key
@@ -6378,12 +6385,12 @@ components:
           description: |
             The comparison operator (the `key` data is compared with the threshold value from `value`):
 
-            - `EQ` (Equal) — Equal to.
-            - `GT` (Greater than) — Greater than.
-            - `GTE` (Greater than equal to) — Greater than or equal to.
-            - `LT` (Less than) — Less than.
-            - `LTE` (Less than equal to) — Less than or equal to.
-            - `NE` (Not equal to) — Not equal to.
+            - `EQ` — Equal to.
+            - `GT` — Greater than.
+            - `GTE` — Greater than or equal to.
+            - `LT` — Less than.
+            - `LTE` — Less than or equal to.
+            - `NE` — Not equal to.
           enum:
             - EQ
             - GT
@@ -6471,7 +6478,7 @@ components:
           default: 0
           type: integer
           description: |
-            The waiting time (in seconds) before automatic closure of the pool after all tasks are completed. Minimum — `0`, maximum — `259,200` seconds (three days).
+            The waiting time (in seconds) before automatic closure of the pool after all tasks are completed. Minimum — **0**, maximum — **259,200** seconds (three days).
 
             Use it if:
 
@@ -6483,7 +6490,7 @@ components:
           minimum: 0
           type: number
           description: |
-            The payment per task suite in U.S. dollars. For cents, use the dot (`"."`) as the separator. The minimum payment is $0.01.
+            The payment per task suite in U.S. dollars. For cents, use the dot (`"."`) as the separator. The minimum payment is **$0.01**.
 
             Only training and control tasks can be uploaded to zero-price pools.
         dynamic_pricing_config:
@@ -6609,7 +6616,7 @@ components:
           $ref: '#/components/schemas/ActionConfigDtoV1'
         conditions:
           type: array
-          description: Conditions (for example, _10 task suites skipped in a row_). Multiple conditions are combined with the "OR" operator.
+          description: Conditions (for example, _10 task suites skipped in a row_). Multiple conditions are combined with the `AND` operator.
           items:
             $ref: '#/components/schemas/OneFieldConditionDtoV1'
     Settings:
@@ -6638,7 +6645,7 @@ components:
       description: |
         **Required** if selective review is used.
 
-        The distribution of tasks with selective review. More information about [how verification tasks are assigned](https://toloka.ai/docs/guide/pool-main/).
+        The distribution of tasks with selective review. More information about [how verification tasks are assigned](https://toloka.ai/docs/guide/selective-mvote/).
       properties:
         distribution:
           type: string
@@ -6681,18 +6688,6 @@ components:
 
             The period in which completed tasks are counted (number of days).
           format: int64
-    TopPercentageUsersCherryPickingConfig:
-      type: object
-      allOf:
-        - $ref: '#/components/schemas/AbstractUsersCherryPickingConfig'
-        - type: object
-          properties:
-            percent:
-              maximum: 100
-              minimum: 10
-              type: integer
-              format: int32
-              description: The percentage of Tolokers with the best task completion quality. The field is shown if the balance type is set to `TOP_PERCENTAGE_BY_QUALITY`. Possible values are 10, 20, 30, 40...100.
     TrainingConfig:
       type: object
       description: Additional settings for linked training.
@@ -6757,7 +6752,7 @@ components:
           type: integer
           format: int64
           description: |
-            The waiting time (in seconds) before automatic closure of the pool after all tasks are completed. Minimum — `0`, maximum — `259,200` seconds (three days).
+            The waiting time (in seconds) before automatic closure of the pool after all tasks are completed. Minimum — **0**, maximum — **259,200** seconds (three days).
 
             Use it if:
 

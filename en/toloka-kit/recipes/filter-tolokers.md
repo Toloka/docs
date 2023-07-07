@@ -63,7 +63,7 @@ See the [Filters](../reference/toloka.client.filter.AdultAllowed.md) section of 
 
 The image below shows how the selected filters look in the pool interface.
 
-[![Filters used for pool](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/filters.png =700x)](https://yastatic.net/s3/doc-binary/src/support/toloka/en/toloka-kit/recipes/filters.png)
+![Filters used for pool](../_images/recipes/filters.png =700x)
 
 {% endcut %}
 
@@ -94,7 +94,7 @@ You should get an output with the created pool ID which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 new_pool = toloka.pool.Pool(
     project_id='133047',
@@ -156,4 +156,4 @@ print(new_pool.id)
 [*OSFamily]: [OSFamily](../reference/toloka.client.filter.OSFamily.md) class
 [*Skill]: [Skill](../reference/toloka.client.filter.Skill.md) class
 
-{% include [image-styles](../../../_includes/image-styles.md) %}
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

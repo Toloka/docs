@@ -1,12 +1,12 @@
 # Rejected tasks
 
-You can block access to tasks for Tolokers whose responses were rejected by the requester during manual review. To do this, set key values in the `quality_control.configs` array in the pool settings.
+You can block access to tasks for Tolokers whose responses were rejected by the requester during manual review. To do this, set key values in the `quality_control.configs` array in the [pool settings](https://toloka.ai/docs/api/api-reference/#tag--pool).
 
 ## Request body {#body}
 
-Access to tasks is blocked if 40% of the tasks completed were rejected by the requester. This condition is checked for the first time after 10 tasks have been completed.
+Access to tasks is blocked if **40%** of the tasks completed were rejected by the requester. This condition is checked for the first time after **10** tasks have been completed.
 
-You can ban a Toloker from your project for a given number of days, hours, minutes (at a time or in total) or permanently.
+You can ban a Toloker from your project for a given number of days, hours, minutes (at a time or in total), or permanently.
 
 ### Ban for 10 days
 
@@ -135,9 +135,7 @@ Criteria for the quality control rule:
 Required if `configs[].collector_config.type` is equal to one of the values:
 
 - `GOLDEN_SET`
-
 - `MAJORITY_VOTE`
-
 - `ASSIGNMENT_SUBMIT_TIME`
 
 Parameters for collecting data (depends on the quality control rule specified in the `type` key). ||
@@ -146,7 +144,7 @@ Parameters for collecting data (depends on the quality control rule specified in
 {% include [configs-rules](../_includes/configs-rules.md) %} ||
 || `configs[].rules.conditions` | _object_ \| **required**
 
-Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the "OR" operator. ||
+Conditions (for example, 10 task suites skipped in a row). Multiple conditions are combined with the `AND` operator. ||
 || `configs[].rules.conditions.key` | _string_ \| **required**
 
 Values that are checked in the condition:

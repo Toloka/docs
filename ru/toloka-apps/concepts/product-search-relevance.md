@@ -184,3 +184,5 @@
 Более 500 000 | [Обратитесь к нам](support.md), чтобы получить особое предложение.
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

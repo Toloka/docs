@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/tasks' \
-         -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
          -H 'Content-Type: application/json' \
          -d '{"input_values":{"image":"https://example.com/image_example.png"},"known_solutions":[{"output_values":{"result":"pink"}}],"infinite_overlap":true,"pool_id":"1238218"}'
 - lang: py
@@ -12,7 +12,7 @@
     from toloka.client.task import Task, BaseTask
 
     toloka_client = toloka.client.TolokaClient(
-      'AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     control_task = Task(
                 input_values = {'image': 'https://example.com/image_example.png'},
@@ -42,7 +42,7 @@
 
     url = "https://toloka.dev/api/v1/tasks"
     headers = {
-      'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -71,7 +71,7 @@
       'url': 'https://toloka.dev/api/v1/tasks',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE',
+        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -98,7 +98,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/tasks")
-      .header("Authorization", "OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE")
+      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
       .header("Content-Type", "application/json")
       .body("{\"input_values\":{\"image\":\"https://example.com/image_example.png\"},\"known_solutions\":[{\"output_values\":{\"result\":\"pink\"}}],\"infinite_overlap\":true,\"pool_id\":\"1238218\"}")
       .asString();

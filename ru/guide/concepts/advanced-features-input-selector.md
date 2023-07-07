@@ -1804,3 +1804,5 @@ function extend(ParentClass, constructorFunction, prototypeHash) {
 {% endlist %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

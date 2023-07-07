@@ -41,7 +41,7 @@ To aggregate responses to all completed tasks in the pool using Toloka API, send
 
 ```bash
 curl -X POST 'https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
      -H 'Content-Type: application/json' \
      -d '{"pool_id":"1238218", "type":"WEIGHTED_DYNAMIC_OVERLAP", "answer_weight_skill_id":"91dbfd8f1bc3310fbbbd09f64b8ab6e5", "fields":[{"name":"result"}]}'
 ```

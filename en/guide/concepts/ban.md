@@ -56,7 +56,7 @@ To block a Toloker's access using Toloka API, send a `PUT` request with the info
 
 ```bash
 curl -X PUT 'https://toloka.dev/api/v1/user-restrictions' \
-     -H 'Authorization: OAuth AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE' \
+     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
      -H 'Content-Type: application/json' \
      -d '{"scope":"ALL_PROJECTS","user_id":"1ad097faba0eff85a04fe30bc04d53db","will_expire":"2030-01-01T00:00:00.000Z"}'
 ```

@@ -150,3 +150,5 @@ Cделайте следующие шаги перед запуском пула
     - [Статья в блоге Толоки]({{ toloka-blog-pool }}).
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+{% include [image-styles](../../../_includes/image-styles-internal.md) %}

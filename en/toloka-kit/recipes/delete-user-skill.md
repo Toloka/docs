@@ -23,7 +23,7 @@ If everything goes as expected, the request will return an empty response.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('AQC2AGAJgyNSA8CtpdO9MWy_QEB6s6kDjHUoElE', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
 toloka_client.delete_user_skill(user_skill_id='54116339')
 ```
