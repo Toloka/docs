@@ -30,6 +30,20 @@ To accept or reject one task:
 
 1. Check the responses, click **Accept** or **Decline**. For rejected responses, enter a comment (specify the reason).
 
+{% cut "Online review statistics" %}
+
+You can view the number of task suites by type on the online review page:
+
+- **Total**
+
+- **Unreviewed**
+
+- **Accepted**
+
+- **Rejected**
+
+{% endcut %}
+
 {% endcut %}
 
 {% cut "In the TSV file with the results. You will need the file to filter the results and process them programmatically." %}

@@ -1,8 +1,8 @@
 # Manual review
 
-Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed [tasks](../../glossary.md#task).
+Manual review is a [pool](../../glossary.md#pool) setting that allows you to check responses and not pay for poorly completed [tasks](../../glossary.md#task). You can review responses manually or with the help of Tolokers by posting a separate review task.
 
-You can find the [Review methods](accept.md#acception) in the **Working with results → Reviewing Tolokers' responses** section.
+Learn more about [manual review methods](accept.md#acception).
 
 ## How does it work? {#how-it-works}
 
@@ -16,7 +16,7 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
 - Put a low rating to your project.
 
-{% cut "To get fewer appeals and maintain a high rating for your projects:" %}
+{% cut "How to get fewer appeals and maintain a high rating for your projects" %}
 
 - Write a clear instruction with a clear algorithm of actions, requirements for results and possible reasons for their rejection.
 
@@ -34,7 +34,19 @@ As the Tolokers complete the tasks, their responses come for review. You can acc
 
 {% endcut %}
 
-You can review responses manually or with the help of Tolokers by posting a separate review task.
+{% cut "How to get the review statistics" %}
+
+You can view the number of task suites by type on the pool page under the project name:
+
+- **Accepted**
+
+- **Rejected**
+
+- **Unreviewed**
+
+- **Completed**
+
+{% endcut %}
 
 {% cut "Pool status and the review results" %}
 
