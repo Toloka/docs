@@ -2,9 +2,9 @@
 
 For this type of project, you can use the **Searching for products in an online store** preset.
 
-You can use this preset to find products in online stores.
+You can use this preset to make Tolokers find products in online stores.
 
-Take a look at the example: the labeling interface includes text data, a text input area, a button containing a website link, and a checkbox Toloker can select if the product isn't on sale in the online store.
+Take a look at the example: the labeling interface includes text data, a text input area, a button containing a website link, and a checkbox Toloker can select if the product isn't on sale in the online store. Note that validation, keyboard shortcuts and task layout are already configured in this Template Builder sample code.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/dZpF0xTT4K2qE7)
 
@@ -13,6 +13,22 @@ Take a look at the example: the labeling interface includes text data, a text in
 - [view.list](../reference/view.list.md): Displays data in a list.
 
 - [view.link](../reference/view.link.md): A link to the site.
+
+  {% cut "Show code" %}
+  ```json
+  {
+    "type": "view.link",
+    "url": {
+      "type": "data.input",
+      "path": "url"
+    },
+    "content": {
+      "type": "data.input",
+      "path": "name"
+    }
+  }
+  ```
+  {% endcut %}
 
 - [view.action-button](../reference/view.action-button.md): Adds a button that calls an action.
 
@@ -42,7 +58,7 @@ Take a look at the example: the labeling interface includes text data, a text in
   ```
   {% endcut %}
 
-- [field.text](../reference/field.text.md): Adds a field for entering a short text. In this example, Toloker enters a link to the product's page in the online store.
+- [field.text](../reference/field.text.md): Adds a field for entering a short text. In this example, Toloker needs to enter a link to the product's page in the online store. If Toloker doesn't find the product, he chooses **The store doesn't sell the product** checkbox and the text field disappears.
 
   {% cut "Show code" %}
   ```json
@@ -79,7 +95,7 @@ Take a look at the example: the labeling interface includes text data, a text in
 
 - [field.checkbox](../reference/field.checkbox.md): Adds a checkbox.
 
-  In this example, Toloker can select the **The store doesn't sell the product** checkbox if he cannot find the product in the online store.
+  In this example, Toloker selects **The store doesn't sell the product** checkbox if he cannot find the product in the online store.
 
   {% cut "Show code" %}
   ```json
@@ -109,7 +125,7 @@ Take a look at the example: the labeling interface includes text data, a text in
   ```
   {% endcut %}
 
-- [plugin.hotkeys](../reference/plugin.hotkeys.md): [Keyboard shortcuts](../best-practices/hotkeys.md).
+- [plugin.hotkeys](../reference/plugin.hotkeys.md): Customizes the [keyboard shortcuts](../best-practices/hotkeys.md).
 
   {% cut "Show code" %}
   ```json
@@ -155,13 +171,24 @@ To add a detailed description to the task, use the [view.text](../reference/view
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/HOtz4PAW4K5HwT)
 
+If you need to display formatted text, use the [view.markdown](../reference/view.markdown.md) component. Note that this setting is resource-intensive and might overload Tolokers' devices that aren't powerful enough.
+
+{% cut "Show code" %}
+
+```json
+{
+  "type": "view.markdown",
+  "content": "**Find a product in an online store and enter the link to the page with this product.**"
+}
+```
+{% endcut %}
+
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/3V4Hyqjg4KHqaN)
+
+
 ## Add a layout {#add-layout}
 
-To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). 
-
-You can place it in the [view.list](../reference/view.list.md) along with the other components.
-
-In this example, the description is highlighted with a blue border.
+To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the other components. In this example, the description is highlighted with a blue border.
 
 {% cut "Show code" %}
 
