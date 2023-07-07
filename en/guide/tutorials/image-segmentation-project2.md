@@ -276,7 +276,7 @@ A pool is a set of paid tasks sent out for completion at the same time.
 
 1. On the pool page, click **Download results**. In the window that opens:
 
-    1. In **Status** leave only the **Unreviewed** option enabled.
+    1. In **Status** leave only the **Submitted** option enabled.
 
     1. In **Columns** leave only the **assignment ID** option enabled.
 
