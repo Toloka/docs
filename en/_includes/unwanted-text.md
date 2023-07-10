@@ -30,7 +30,10 @@ You can't post tasks that:
 
       {% include [collect-personal-data](../guide/_includes/toloka-requester-source/id-toloka-requester-source/collect-personal-data.md) %}
 
-      If your tasks contain personal information, then pseudonymize, anonymize or remove it before transmitting to Toloka. For example, you can cover up people's faces in photos, cut out the document fields that are filled, and change the pitch of the voice in speech recordings.
+    - To learn how to select a legal basis and/or to determine a data processing purpose for your project, you may read these [instructions](../guide/concepts/personal-data-processing.md) (hereinafter – the “Instructions”). Please be informed that the information presented herein and in the Instructions should not be taken as legal advice. We recommend that you seek legal advice on what you need to do to comply with the requirements of the applicable privacy legislation.
+
+
+    - If your tasks contain personal information, then pseudonymize, anonymize or remove it before transmitting to Toloka. For example, you can cover up people's faces in photos, cut out the document fields that are filled, and change the pitch of the voice in speech recordings.
 
     - Make Tolokers take pictures or videos of people on the street, cars, and other vehicles with licence plates. In accordance with Section 3.5 of the [User Agreement]({{ useragreement }}), such tasks are prohibited. If you're launching field tasks, mention this in the instructions for Tolokers and specify the purpose of collecting information (for example, monitoring prices or checking a company's business hours). If the responses you receive contain photos or videos that violate the terms of Section 3.5 of the [User Agreement]({{ useragreement }}), don't use them. However, you can ask Tolokers to take a selfie or a video of themselves.
 
@@ -67,6 +70,9 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
 1. Do not request data that can be used to identify the Toloker or a third party. This includes their first and last name, phone number, email address, registration or residence address, and pages on social networks. You can ask questions regarding the respondents' gender, age, education level, region or city of residence, and income level. To preserve the anonymity of requesters and annotators, make sure you communicate with annotators only via private messages in your Toloka account. However, the survey may include the researcher's name, organization, and email address as a standard practice for scientific research.
 
     {% include [collect-personal-data](../guide/_includes/toloka-requester-source/id-toloka-requester-source/collect-personal-data.md) %}
+
+    - To learn how to select a legal basis and/or to determine a data processing purpose for your project, you may read these [instructions](../guide/concepts/personal-data-processing.md) (hereinafter – the “Instructions”). Please be informed that the information presented herein and in the Instructions should not be taken as legal advice. We recommend that you seek legal advice on what you need to do to comply with the requirements of the applicable privacy legislation.
+
 
 1. The amount that the Toloker earns for completing the survey (including bonuses) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
 
