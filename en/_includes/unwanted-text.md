@@ -71,8 +71,7 @@ The guidelines for conducting surveys in Toloka are based on the [Ethical Princi
 
     {% include [collect-personal-data](../guide/_includes/toloka-requester-source/id-toloka-requester-source/collect-personal-data.md) %}
 
-    - To learn how to select a legal basis and/or to determine a data processing purpose for your project, you may read these [instructions](../guide/concepts/personal-data-processing.md) (hereinafter – the “Instructions”). Please be informed that the information presented herein and in the Instructions should not be taken as legal advice. We recommend that you seek legal advice on what you need to do to comply with the requirements of the applicable privacy legislation.
-
+    To learn how to select a legal basis and/or to determine a data processing purpose for your project, you may read these [instructions](../guide/concepts/personal-data-processing.md) (hereinafter – the “Instructions”). Please be informed that the information presented herein and in the Instructions should not be taken as legal advice. We recommend that you seek legal advice on what you need to do to comply with the requirements of the applicable privacy legislation.
 
 1. The amount that the Toloker earns for completing the survey (including bonuses) should not depend on their political or religious beliefs, race, nationality, gender, social standing, or other criteria. Set the price based on how long it should take Tolokers to complete the survey.
 
