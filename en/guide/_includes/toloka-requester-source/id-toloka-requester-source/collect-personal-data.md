@@ -1,11 +1,9 @@
-If you want to collect personal information, make sure your task contains consent to personal data processing. This includes:
+If you want to collect personal data, determine the legal basis for its processing. In case of using consent as a legal basis, make sure your task includes:
 
-  - The terms of the Privacy Notice.
+- The link to your  privacy policy.
 
-  - The purpose of personal data processing (how the data will be used in general and for scientific/research purposes specifically).
+- The purpose of personal data processing (how the data will be used in general and for scientific/research purposes specifically).
 
-  - Company name and legal address of the researcher.
+- Company name and legal address of the requestor.
 
-  - How to withdraw consent (for example, by sending an email request).
-
-To learn how to select a data processing purpose for your project, see these [instructions](../../../../guide/concepts/personal-data-processing.md).
+- How to withdraw consent (for example, by sending an email request).
