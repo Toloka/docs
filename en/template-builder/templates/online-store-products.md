@@ -2,9 +2,9 @@
 
 For this type of project, you can use the **Searching for products in an online store** preset.
 
-You can use this preset to make Tolokers find products in online stores.
+You can use this preset if you need to check if some product is avialable in an online store. If Toloker finds the product, he inserts the link into the text input area. If he doesn't find it, he selects **The store doesn't sell the product** option. 
 
-Take a look at the example: the labeling interface includes text data, a text input area, a button containing a website link, and a checkbox Toloker can select if the product isn't on sale in the online store. Note that validation, keyboard shortcuts and task layout are already configured in this Template Builder sample code.
+Take a look at the example: the labeling interface includes text data, a text input area, a button, by clicking on which an online store page is getting opened, and a checkbox Toloker can select if the product isn't on sale in the online store. Note that validation, keyboard shortcuts and task layout are already configured in this Template Builder sample code.
 
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/dZpF0xTT4K2qE7)
 
@@ -12,7 +12,7 @@ Take a look at the example: the labeling interface includes text data, a text in
 
 - [view.list](../reference/view.list.md): Displays data in a list.
 
-- [view.link](../reference/view.link.md): A link to the site.
+- [view.link](../reference/view.link.md): Adds a link to the site.
 
   {% cut "Show code" %}
   ```json
@@ -58,7 +58,9 @@ Take a look at the example: the labeling interface includes text data, a text in
   ```
   {% endcut %}
 
-- [field.text](../reference/field.text.md): Adds a field for entering a short text. In this example, Toloker needs to enter a link to the product's page in the online store. If Toloker doesn't find the product, he chooses **The store doesn't sell the product** checkbox and the text field disappears.
+- [field.text](../reference/field.text.md): Adds a field for entering a short text. 
+
+A combination of [helper.if](../reference/helper.if.md) and [condition.equals](../reference/condition.equals.md) displays the response field when the checkbox is not selected.
 
   {% cut "Show code" %}
   ```json
@@ -168,7 +170,6 @@ To add a detailed description to the task, use the [view.text](../reference/view
 ```
 {% endcut %}
 
-
 [![](../_images/buttons/view-example.svg)](https://ya.cc/t/HOtz4PAW4K5HwT)
 
 If you need to display formatted text, use the [view.markdown](../reference/view.markdown.md) component. Note that this setting is resource-intensive and might overload Tolokers' devices that aren't powerful enough.
@@ -188,7 +189,7 @@ If you need to display formatted text, use the [view.markdown](../reference/view
 
 ## Add a layout {#add-layout}
 
-To enhance Toloker's experience, you can highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place it in the [view.list](../reference/view.list.md) along with the other components. In this example, the description is highlighted with a blue border.
+To enhance Toloker's experience, highlight different types of data with colors using [view.alert](../reference/view.alert.md). You can place this component in the [view.list](../reference/view.list.md) along with the other components. In this example, the description is highlighted with a blue border.
 
 {% cut "Show code" %}
 
@@ -228,7 +229,7 @@ You can add an image that matches the text data to your task using [view.image](
 
 ## Add a field for comments {#add-text-area}
 
-To ask Tolokers to clarify their choice if they selected the **The store doesn't sell the product** checkbox add a text field using [field.textarea](../reference/field.textarea.md).
+To ask Tolokers to leave their comments on the product, add a text field using [field.textarea](../reference/field.textarea.md).
 
 {% cut "Show code" %}
 
@@ -236,7 +237,7 @@ To ask Tolokers to clarify their choice if they selected the **The store doesn't
 {
   "type": "field.textarea",
   "label": "Leave your comment",
-  "hint": "There is no such product in a store, the product doesn't exist, the product name is incorrect etc.",
+  "hint": "Describe how long it took to find a product, tell if actual product name is different from the name in the query, tell why you didn't find the product etc.",
   "placeholder": "Enter text",
   "data": {
     "type": "data.output",
@@ -246,6 +247,6 @@ To ask Tolokers to clarify their choice if they selected the **The store doesn't
 ```
 {% endcut %}
 
-[![](../_images/buttons/view-example.svg)](https://ya.cc/t/ecWnPMnb4K6AXf)
+[![](../_images/buttons/view-example.svg)](https://ya.cc/t/LsjI38xe4KovuZ)
 
 {% include [contact-support](../_includes/contact-support.md) %}
