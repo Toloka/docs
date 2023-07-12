@@ -2,7 +2,7 @@
 
 These instructions describe the procedure for selecting a personal data processing purpose when using the Toloka for Customers.
 
-_Disclaimer: The information presented herein should not be taken as legal advice. We recommend that you seek legal advise on what you need to do to comply with the requirements of the applicable privacy legislation._
+_Disclaimer: The information presented herein should not be taken as legal advice. We recommend that you seek legal advice on what you need to do to comply with the requirements of the applicable privacy legislation._
 
 ## Choosing the purpose of personal data processing
 
