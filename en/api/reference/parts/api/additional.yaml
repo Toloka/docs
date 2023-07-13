@@ -499,7 +499,7 @@ components:
               description: |
                 **Required** if selective review is used.
 
-                The frequency of tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be majority vote tasks.
+                The frequency of tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be majority vote tasks. [Learn more](https://toloka.ai/docs/api/intervals/)
               format: int32
     GoldenTaskInterval:
       allOf:
@@ -520,7 +520,7 @@ components:
               description: |
                 **Required** if control tasks are assigned at a variable rate.
 
-                The frequency of control tasks in an interval. The first task in an interval is a control task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be control tasks.
+                The frequency of control tasks in an interval. The first task in an interval is a control task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be control tasks. [Learn more](https://toloka.ai/docs/api/intervals/)
     GoldenTaskSelectiveInterval:
       allOf:
         - $ref: '#/components/schemas/QualityControlInterval'
@@ -540,7 +540,7 @@ components:
               description: |
                 **Required** if selective review is used.
 
-                The frequency of control tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be majority vote tasks.
+                The frequency of control tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be majority vote tasks. [Learn more](https://toloka.ai/docs/api/intervals/)
     TrainingTaskInterval:
       allOf:
         - $ref: '#/components/schemas/QualityControlInterval'
@@ -560,7 +560,7 @@ components:
               description: |
                 **Required** if training tasks are assigned at a variable rate.
 
-                The frequency of training tasks in an interval. The first task in an interval is a training task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be training tasks.
+                The frequency of training tasks in an interval. The first task in an interval is a training task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be training tasks. [Learn more](https://toloka.ai/docs/api/intervals/)
     TrainingTaskSelectiveInterval:
       allOf:
         - $ref: '#/components/schemas/QualityControlInterval'
@@ -580,7 +580,7 @@ components:
               description: |
                 **Required** if selective review is used.
 
-                The frequency of training tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7` and so on will be majority vote tasks.
+                The frequency of training tasks with selective review within an interval. The first task in an interval is a majority vote task. For example, if you set `frequency: 3`, then tasks number `1`, `4`, `7`, and so on, will be majority vote tasks. [Learn more](https://toloka.ai/docs/api/intervals/)
     GoldenTaskDistributionFunction:
       allOf:
         - $ref: '../../fullApi.yaml#/components/schemas/TaskDistributionFunction'
@@ -588,7 +588,7 @@ components:
           description: |
             Vary the frequency of control tasks. The option allows you to change the frequency of checking as the Toloker completes more tasks.
 
-            If it is filled in, use `real_task_count` to specify the maximum number of tasks per task suite. To use the option, set the `golden_task_count:0` and `min_golden_tasks_count:null` parameter values.
+            If it is filled in, use `real_tasks_count` to specify the maximum number of tasks per task suite. To use the option, set the `golden_tasks_count:0` and `min_golden_tasks_count:null` parameter values.
           properties:
             distribution:
               description: |
@@ -622,7 +622,7 @@ components:
           description: |
             Issue training tasks with uneven frequency. This option allows you to change the frequency of training tasks as the Toloker completes more tasks.
 
-            If it is filled in, then in `real_task_count` specify the maximum number of tasks to put in a task suite. To use the option, set parameter values `training_task_count:0` and `min_training_tasks_count:null`.
+            If it is filled in, then in `real_tasks_count` specify the maximum number of tasks to put in a task suite. To use the option, set parameter values `training_tasks_count:0` and `min_training_tasks_count:null`.
           properties:
             distribution:
               description: |
