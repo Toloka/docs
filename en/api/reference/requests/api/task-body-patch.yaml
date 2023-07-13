@@ -1,5 +1,31 @@
-task_body:
+task_overlap:
   description: The task properties that you want to change.
+  summary: Numeric overlap value
   value:
     overlap: 5
     infinite_overlap: false
+infinite_overlap:
+  description: Infinite overlap for the task.
+  summary: Infinite overlap
+  value:
+    overlap: null
+    infinite_overlap: true
+preliminary_responses:
+  description: Simulated Toloker responses to calculate confidence
+  summary: Preliminary responses
+  value:
+    baseline_solutions:
+    - output_values:
+        result: "OK"
+        like: false
+      confidence_weight: 0.5
+responses_control_training:
+  description: Responses and hints for control tasks and training tasks.
+  summary: Responses and hints for control and training tasks
+  value:
+    known_solutions:
+    - output_values:
+        result: "OK"
+        like: true
+      correctness_weight: 0.8
+    message_on_unknown_solution: "The cat is in a good mood."

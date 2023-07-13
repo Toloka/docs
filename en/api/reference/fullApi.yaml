@@ -2195,6 +2195,16 @@ paths:
           example: "search relevance"
           schema:
             type: string
+        - name: global
+          description: |
+            The indicator of a global skill:
+
+            - `true` — The skill is global, shows general competencies of Tolokers, and is available to all Tolokers.
+            - `false` — The skill is created by the requester and can be assigned to Tolokers both manually and automatically: using quality control rules or after training.
+          in: query
+          example: true
+          schema:
+            type: boolean
         - name: sort
           description: |
             The parameters to sort by:
@@ -6026,7 +6036,7 @@ components:
           description: |
             For pools that don't use “smart mixing” .
 
-            Assign task suites in the order in which they were uploaded. For example, for a pool with an overlap of 5, the first task suite is assigned to five Tolokers, then the second task suite, and so on.
+            Assign task suites in the order in which they were uploaded. For example, for a pool with an overlap of `5`, the first task suite is assigned to five Tolokers, then the second task suite, and so on.
 
             This parameter is available when the project has `"assignments_issuing_type": "AUTOMATED"`.
     BasicDynamicOverlapConfig:
