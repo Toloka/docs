@@ -2,24 +2,17 @@
 
 {% include [index-abstract-quickstart](../_includes/abstract-quickstart.md) %}
 
-## Choose a bespoke solution {#choose-app-project}
-
-1. Open the [page](https://platform.toloka.ai/requester/templates) with examples of tasks that are available in Toloka.
-1. Choose a solution that fits your task.
-
 ## Fill out a form {#set-application}
 
-Once you choose a bespoke solution, you need to fill out a form. In the form, you'll be requested any information that is necessary to create a project: its name, instructions, sample tasks, and so on.
+1. Contact your dedicated manager and discuss the project you want to create.
 
-It will take about 30 minutes to fill out the form. To make sure you get good results, fill out the application form carefully.
+OR
 
-Once you fill out the form, you'll see your project on the **Bespoke** tab in the **Pending** status. You don't have to wait until it's moderated and can immediately start uploading task items.
+1. Fill out the [form](https://toloka.ai/talk-to-us/) providing information about your planned project.
 
-{% cut "Task items" %}
+1. The Toloka team will contact you and discuss the details of your project and the contract associated with it.
 
-A task item is a labeling unit — in other words, data uploaded to a batch. The batch consists of task items, and the project consists of batches.
-
-{% endcut %}
+Once all the details are agreed upon, you'll see your project on the **Bespoke** tab. You can then [start uploading](#new-batch) [task items](*task-item) into it.
 
 ## Upload task items {#new-batch}
 
@@ -83,3 +76,5 @@ If you can't find a solution that fits your goals, [contact us](../../guide/trou
 {% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
+
+[*task-item]: A labeling unit — in other words, data uploaded to a batch. The batch consists of task items, and the project consists of batches.
