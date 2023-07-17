@@ -40,24 +40,7 @@ Your items are uploaded to a batch. A batch is a set of data for labeling that y
 
 1. Click **Create batch** again. Done! You created a batch.
 
-## Send the data for labeling {#section_fr2_gfv_wqb}
-
-1. Wait until the project passes moderation: its status will change to **Active**.
 1. Send the batch for labeling by clicking **Launch**.
-
-## Are there any errors? {#errors}
-
-If there are errors in the project, its status changes to **Rejected**. No worries:
-
-1. Go to the rejected project.
-1. Click **Show errors**. Read the error description.
-1. Click **Clone project** to create a duplicate for editing and fix the errors in it.
-
-{% note tip %}
-
-If you need help with setting up your project, [contact us](../../guide/troubleshooting/support.md).
-
-{% endnote %}
 
 ## What's next {#whats-next}
 
@@ -66,14 +49,6 @@ If you need help with setting up your project, [contact us](../../guide/troubles
 - [Upload more items to the batch or create a new one](add-task.md)
 
 - [Rename the batch](add-task.md#rename)
-
-## Troubleshooting {#troubleshooting}
-
-{% cut "I didn't find a suitable bespoke solution" %}
-
-If you can't find a solution that fits your goals, [contact us](../../guide/troubleshooting/support.md).
-
-{% endcut %}
 
 {% include [contact-support](../_includes/contact-support.md) %}
 
