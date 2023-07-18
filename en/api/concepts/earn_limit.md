@@ -48,7 +48,7 @@ You can ban a Toloker for a given number of days, hours, minutes (at a time or i
 }
 ```
 
-To set a different ban period, change the [duration-unit](*duration-unit) and [duration](*duration) parameters for the `action` key:
+To set a different ban period, change the [duration_unit](*duration-unit) and [duration](*duration) parameters for the `action` key:
 
 {% list tabs %}
 
