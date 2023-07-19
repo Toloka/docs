@@ -157,9 +157,9 @@ print(new_project.id)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-projects.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-projects.md)
 - [Toloka API: Create project](https://toloka.ai/docs/api/api-reference/#post-/projects)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

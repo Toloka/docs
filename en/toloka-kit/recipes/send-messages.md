@@ -68,8 +68,8 @@ print(message_thread.id, message_thread.topic.get('EN') or list(message_thread.t
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka-Kit: MessageThread class](../reference/toloka.client.message_thread.MessageThread.md)
 - [Toloka API: Send message](https://toloka.ai/docs/api/api-reference/#post-/message-threads/compose)
 

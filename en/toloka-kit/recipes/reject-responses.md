@@ -10,7 +10,7 @@ _Reject Toloker responses with the IDs specified in the request._
 
 ### 3. Reject Toloker response {#step-three}
 
-[Find out](./get-responses.md) the ID of the Toloker response that your want to reject and use the [reject_assignment()](../reference/toloka.client.TolokaClient.reject_assignment.md) method to reject the response and leave a comment.
+[Find out](get-responses.md) the ID of the Toloker response that your want to reject and use the [reject_assignment()](../reference/toloka.client.TolokaClient.reject_assignment.md) method to reject the response and leave a comment.
 
 ```python
 rejected_assignment = toloka_client.[reject_assignment](*reject_assignment)('0001d38f5b--61c8be2074fdb82592f97887', 'The answer is not clear')
@@ -53,8 +53,9 @@ print(rejected_assignment.status, rejected_assignment.public_comment)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-responses.md)
 - [Toloka-Kit: Assignment class](../reference/toloka.client.assignment.Assignment.md)
 - [Toloka API: Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-)
 

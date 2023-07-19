@@ -12,7 +12,7 @@ _Set overlap for tasks at pool, task suite, and task levels._
 
 Create a pool and set the default overlap value for all the tasks which will be uploaded without additionally specifying it. Use the `default_overlap_for_new_task_suites` value of the [Defaults](../reference/toloka.client.pool.Pool.Defaults.md) class for that.
 
-Refer to the [{#T}](./create-pool.md) recipe for more information on how to create a pool and what parameters you can use.
+Refer to the [{#T}](create-pool.md) recipe for more information on how to create a pool and what parameters you can use.
 
 ```python
 new_pool = toloka.pool.[Pool](*Pool)(
@@ -30,7 +30,7 @@ new_pool = toloka_client.[create_pool](*create_pool)(new_pool)
 
 Another way to set overlap is specify it when creating a task suite. Use the `overlap` parameter of the [TaskSuite](../reference/toloka.client.task_suite.TaskSuite.md) class object to set a specific overlap value to the tasks inside a task suite.
 
-Refer to the [{#T}](./create-task-suite.md) recipe for more information on how to create a task suite and what parameters you can use.
+Refer to the [{#T}](create-task-suite.md) recipe for more information on how to create a task suite and what parameters you can use.
 
 ```python
 tasks = [
@@ -46,7 +46,7 @@ toloka_client.[create_task_suite](*create_task_suite)(new_task_suite)
 
 Now, create and upload two tasks: one without the `overlap` parameter (it will be equal to the default value, set at [step 3](#step-three)) and one with the `overlap` parameter set to `2`.
 
-Refer to the [{#T}](./upload-tasks.md) recipe for more information on how to upload tasks.
+Refer to the [{#T}](upload-tasks.md) recipe for more information on how to upload tasks.
 
 ```python
 tasks = [
@@ -143,8 +143,8 @@ for task in toloka_client.get_tasks(pool_id=new_pool.id):
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API: Create pool](https://toloka.ai/docs/api/api-reference/#post-/pools)
 - [Toloka API: Create single/multiple task suites](https://toloka.ai/docs/api/api-reference/#post-/task-suites)
 - [Toloka API: Create single/multiple tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks)

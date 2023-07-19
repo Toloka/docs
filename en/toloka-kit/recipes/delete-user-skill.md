@@ -10,7 +10,7 @@ _Remove the skill from the Toloker using the ID of the "skill-Toloker" pair._
 
 ### 3. Remove Toloker skill {#step-three}
 
-[Find out](./get-user-skills.md#step-three) the ID of the "skill-Toloker" pair. This ID is unique for each Toloker having a skill assigned to them. Use the `delete_user_skill()` method to remove the skill from the Toloker.
+[Find out](get-user-skills.md#step-three) the ID of the "skill-Toloker" pair. This ID is unique for each Toloker having a skill assigned to them. Use the `delete_user_skill()` method to remove the skill from the Toloker.
 
 ```python
 toloka_client.[delete_user_skill](*delete_user_skill)(user_skill_id='54116339')
@@ -38,9 +38,9 @@ toloka_client.delete_user_skill(user_skill_id='54116339')
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-user-skills.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-user-skills.md)
 - [Toloka API: Remove skill from Toloker](https://toloka.ai/docs/api/api-reference/#delete-/user-skills/-id-)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

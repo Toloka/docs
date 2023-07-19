@@ -12,7 +12,7 @@ _Create a pool in a project in Toloka._
 
 First, specify the parameters you want your pool to have. In this example, we use the following pool settings:
 
-- the ID of the project in which the pool is created, [find it out](./get-projects.md) before creating the pool
+- the ID of the project in which the pool is created, [find it out](get-projects.md) before creating the pool
 - the pool name you will see in the list and use to distinguish the pool from other ones
 - whether or not the pool can contain adult content
 - the date when the pool is going to expire and will be closed
@@ -99,9 +99,9 @@ print(new_pool.id)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-projects.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-projects.md)
 - [Toloka API: Create pool](https://toloka.ai/docs/api/api-reference/#post-/pools)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

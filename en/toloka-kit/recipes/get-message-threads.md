@@ -47,8 +47,8 @@ for message_thread in toloka_client.get_message_threads(folder=['INBOX', 'UNREAD
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API:  Get list of message threads](https://toloka.ai/docs/api/api-reference/#get-/message-threads)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

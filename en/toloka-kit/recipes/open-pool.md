@@ -10,7 +10,7 @@ _Open a closed pool in Toloka._
 
 ### 3. Open pool {#step-three}
 
-[Find out](./get-pools.md) the ID of the pool you want to open. Then call the `open_pool()` method.
+[Find out](get-pools.md) the ID of the pool you want to open. Then call the `open_pool()` method.
 
 ```python
 opened_pool = toloka_client.[open_pool](*open_pool)('1442472')
@@ -51,9 +51,9 @@ print(opened_pool.id, opened_pool.status)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-pools.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-pools.md)
 - [Toloka-Kit: Pool class](../reference/toloka.client.pool.Pool.md)
 - [Toloka API: Open pool](https://toloka.ai/docs/api/api-reference/#post-/pools/-id-/open)
 

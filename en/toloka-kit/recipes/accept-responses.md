@@ -10,7 +10,7 @@ _Accept Toloker responses with the IDs specified in the request._
 
 ### 3. Accept Toloker response {#step-three}
 
-[Find out](./get-responses.md) the ID of the Toloker response that your want to accept and use the [accept_assignment()](../reference/toloka.client.TolokaClient.accept_assignment.md) method to accept the response and leave a comment.
+[Find out](get-responses.md) the ID of the Toloker response that your want to accept and use the [accept_assignment()](../reference/toloka.client.TolokaClient.accept_assignment.md) method to accept the response and leave a comment.
 
 ```python
 accepted_assignment = toloka_client.[accept_assignment](*accept_assignment)('0001d38f5b--61c8be211c3a7842a596ac0a', 'OK')
@@ -53,8 +53,9 @@ print(accepted_assignment.status, accepted_assignment.public_comment)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-responses.md)
 - [Toloka-Kit: Assignment class](../reference/toloka.client.assignment.Assignment.md)
 - [Toloka API: Update response](https://toloka.ai/docs/api/api-reference/#patch-/assignments/-id-)
 

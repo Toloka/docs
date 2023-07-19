@@ -10,6 +10,8 @@ _Assign an existing skill to Tolokers an set its level._
 
 ### 3. Assign skill to Toloker {#step-three}
 
+[Find out](get-skills.md) the ID of the skill which you want to assign. Then assign the skill to the Toloker with the ID specified in the request.
+
 ```python
 from decimal import Decimal
 
@@ -27,7 +29,7 @@ The `set_user_skill()` request will return the [UserSkill](../reference/toloka.c
 print(user_skill.id, user_skill.skill_id, user_skill.user_id, user_skill.value)
 ```
 
-You should get an output with the ID of the skill-Toloker pair (this allows [removing skills from Tolokers](./delete-user-skill.md) later), assigned skill ID, Toloker ID, and the skill level the Toloker received which looks like this.
+You should get an output with the ID of the skill-Toloker pair (this allows [removing skills from Tolokers](delete-user-skill.md) later), assigned skill ID, Toloker ID, and the skill level the Toloker received which looks like this.
 
 ```bash
 54132692 12648 1ad097faba0eff85a04fe30bc04d53db 50
@@ -58,8 +60,9 @@ print(user_skill.id, user_skill.skill_id, user_skill.user_id, user_skill.value)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-skills.md)
 - [Toloka-Kit: UserSkill class](../reference/toloka.client.user_skill.UserSkill.md)
 - [Toloka API: Set skill](https://toloka.ai/docs/api/api-reference/#put-/user-skills)
 

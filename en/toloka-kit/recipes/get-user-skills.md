@@ -54,8 +54,8 @@ for user_skill in toloka_client.get_user_skills(user_id='fac97860c7929add8048ed2
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API: Get list of Toloker skills](https://toloka.ai/docs/api/api-reference/#get-/user-skills)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

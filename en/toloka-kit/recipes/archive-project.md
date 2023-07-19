@@ -10,7 +10,7 @@ _Move the project which you no longer use into archive._
 
 ### 3. Archive project {#step-three}
 
-[Find out](./get-projects.md) the ID of the project which you want to archive. Then call the `archive_project()` method.
+[Find out](get-projects.md) the ID of the project which you want to archive. Then call the `archive_project()` method.
 
 ```python
 archived_project = toloka_client.[archive_project](*archive_project)('117493')
@@ -51,9 +51,9 @@ print(archived_project.id, archived_project.status)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-projects.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-projects.md)
 - [Toloka-Kit: Project class](../reference/toloka.client.project.Project.md)
 - [Toloka API: Archive project](https://toloka.ai/docs/api/api-reference/#post-/projects/-id-/archive)
 

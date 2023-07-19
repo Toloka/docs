@@ -53,9 +53,9 @@ for project in toloka_client.get_projects(
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-project-by-id.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-project-by-id.md)
 - [Toloka API: Get list of projects](https://toloka.ai/docs/api/api-reference/#get-/projects)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

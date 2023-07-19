@@ -72,8 +72,8 @@ print(new_skill.id)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API: Create skill](https://toloka.ai/docs/api/api-reference/#post-/skills)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

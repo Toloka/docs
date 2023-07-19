@@ -10,7 +10,7 @@ _Increase the overlap of a task when you need more Tolokers to complete it._
 
 ### 3. Change task overlap {#step-three}
 
-[Find out](./get-tasks.md) the ID of the task which you want to modify. Then change the task overlap calling the `patch_task()` method.
+[Find out](get-tasks.md) the ID of the task which you want to modify. Then change the task overlap calling the `patch_task()` method.
 
 ```python
 task = toloka_client.[patch_task](*patch_task)('00022da5a7--6388b40547c84000494cdc5a', overlap=5)
@@ -51,9 +51,9 @@ print(task.id, task.overlap)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-tasks.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-tasks.md)
 - [Toloka-Kit: Task class](../reference/toloka.client.task.Task.md)
 - [Toloka API: Edit task](https://toloka.ai/docs/api/api-reference/#patch-/tasks/-id-)
 

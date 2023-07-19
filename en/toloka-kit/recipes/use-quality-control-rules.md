@@ -12,7 +12,7 @@ _Use quality control rules to restrict access to the tasks for the Tolokers who 
 
 Create a pool and set the default overlap value for all the tasks which will be uploaded without additionally specifying it. Use the `default_overlap_for_new_task_suites` value of the [Defaults](../reference/toloka.client.pool.Pool.Defaults.md) class for that.
 
-Refer to the [{#T}](./create-pool.md) recipe for more information on how to create a pool and what parameters you can use.
+Refer to the [{#T}](create-pool.md) recipe for more information on how to create a pool and what parameters you can use.
 
 ```python
 new_pool = toloka.pool.[Pool](*Pool)(
@@ -287,8 +287,8 @@ print(new_pool.id)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [{#T}](../../guide/concepts/control.md)
 - [{#T}](../../guide/concepts/quick-answers.md)
 - [{#T}](../../guide/concepts/mvote.md)

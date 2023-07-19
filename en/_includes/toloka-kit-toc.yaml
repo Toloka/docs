@@ -95,6 +95,14 @@ items:
           href: ../toloka-kit/recipes/get-rewards.md
         - name: Get bonus details
           href: ../toloka-kit/recipes/get-reward-by-id.md
+      - name: Banning Tolokers
+        items:
+        - name: Ban Tolokers
+          href: ../toloka-kit/recipes/ban-tolokers.md
+        - name: Get list of bans
+          href: ../toloka-kit/recipes/get-restrictions.md
+        - name: Remove ban from Toloker
+          href: ../toloka-kit/recipes/delete-restriction.md
       - name: Messages
         items:
         - name: Send messages
