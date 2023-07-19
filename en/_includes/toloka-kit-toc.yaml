@@ -45,6 +45,8 @@ items:
             href: ../toloka-kit/recipes/set-overlap.md
           - name: Filter Tolokers
             href: ../toloka-kit/recipes/filter-tolokers.md
+          - name: Filter Tolokers with confirmed language knowledge
+            href: ../toloka-kit/recipes/filter-tolokers-languages.md
           - name: Use quality control rules
             href: ../toloka-kit/recipes/use-quality-control-rules.md
       - name: Skills
