@@ -12,7 +12,7 @@ It allows you to:
 
 ## List of recipes
 
-We recommend that you start with our [sample project](./learn-basics.md) recipe. It describes the typical workflow for the Toloka-Kit usage and explains the main entities (classes and methods) that Toloka-Kit uses to create and set up projects, manage pools, and upload tasks. It also contains the option to download results and aggregate them using our [Crowd-Kit library](../../crowd-kit/index.md).
+We recommend that you start with our [sample project](learn-basics.md) recipe. It describes the typical workflow for the Toloka-Kit usage and explains the main entities (classes and methods) that Toloka-Kit uses to create and set up projects, manage pools, and upload tasks. It also contains the option to download results and aggregate them using our [Crowd-Kit library](../../crowd-kit/index.md).
 
 **Recipe** | **Description and tags**
 ------ | --------------------

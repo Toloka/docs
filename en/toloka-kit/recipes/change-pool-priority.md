@@ -10,7 +10,7 @@ _Change the priority of the pool and offer it to Tolokers before other pools._
 
 ### 3. Change pool priority {#step-three}
 
-[Find out](./get-pools.md) the ID of the pool for which you want to change the priority. Then call the `patch_pool()` method.
+[Find out](get-pools.md) the ID of the pool for which you want to change the priority. Then call the `patch_pool()` method.
 
 ```python
 patched_pool = toloka_client.[patch_pool](*patch_pool)(pool_id='1443815', priority=0)
@@ -51,9 +51,9 @@ print(patched_pool.id, patched_pool.priority)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
-- [{#T}](./get-pools.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-pools.md)
 - [Toloka-Kit: Pool class](../reference/toloka.client.pool.Pool.md)
 - [Toloka API: Change pool priority](https://toloka.ai/docs/api/api-reference/#patch-/pools/-id-)
 

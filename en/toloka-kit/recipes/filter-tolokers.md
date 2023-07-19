@@ -138,8 +138,8 @@ print(new_pool.id)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [{#T}](../../guide/concepts/filters.md)
 - [Toloka API: Create pool](https://toloka.ai/docs/api/api-reference/#post-/pools)
 

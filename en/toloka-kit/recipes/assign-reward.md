@@ -72,8 +72,8 @@ print(new_bonus.created)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API: Issue bonuses](https://toloka.ai/docs/api/api-reference/#post-/user-bonuses)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

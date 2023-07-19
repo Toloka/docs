@@ -10,7 +10,7 @@ _Get the detailed information about the project with the ID specified in the req
 
 ### 3. Get project information {#step-three}
 
-[Find out](./get-projects.md) the ID of the project for which you want to get the detailed information. Then get this info calling the `get_project()` method.
+[Find out](get-projects.md) the ID of the project for which you want to get the detailed information. Then get this info calling the `get_project()` method.
 
 ```python
 project = toloka_client.[get_project](*get_project)('83859')
@@ -51,8 +51,9 @@ print(project.public_name, project.status)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-projects.md)
 - [Toloka-Kit: Project class](../reference/toloka.client.project.Project.md)
 - [Toloka API: Get project by ID](https://toloka.ai/docs/api/api-reference/#get-/projects/-id-)
 

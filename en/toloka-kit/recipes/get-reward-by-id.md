@@ -10,7 +10,7 @@ _Get the detailed information about the bonus with the ID specified in the reque
 
 ### 3. Get bonus information {#step-three}
 
-[Find out](./get-rewards.md) the ID of the bonus for which you want to get the detailed information. Then get this info calling the `get_user_bonus()` method.
+[Find out](get-rewards.md) the ID of the bonus for which you want to get the detailed information. Then get this info calling the `get_user_bonus()` method.
 
 ```python
 bonus = toloka_client.[get_user_bonus](*get_user_bonus)('3139')
@@ -51,8 +51,9 @@ print(bonus.public_title['EN'], bonus.amount)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-rewards.md)
 - [Toloka-Kit: UserBonus class](../reference/toloka.client.user_bonus.UserBonus.md)
 - [Toloka API: Get bonus by ID](https://toloka.ai/docs/api/api-reference/#get-/user-bonuses/-userBonusId-)
 

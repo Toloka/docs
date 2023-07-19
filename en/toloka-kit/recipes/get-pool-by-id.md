@@ -10,7 +10,7 @@ _Get the detailed information about the pool with the ID specified in the reques
 
 ### 3. Get pool information {#step-three}
 
-[Find out](./get-pools.md) the ID of the pool for which you want to get the detailed information. Then get this info calling the `get_pool()` method.
+[Find out](get-pools.md) the ID of the pool for which you want to get the detailed information. Then get this info calling the `get_pool()` method.
 
 ```python
 pool = toloka_client.[get_pool](*get_pool)('36545959')
@@ -51,8 +51,9 @@ print(pool.private_name, pool.status, pool.last_close_reason)
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
+- [{#T}](get-pools.md)
 - [Toloka-Kit: Pool class](../reference/toloka.client.pool.Pool.md)
 - [Toloka API: Get pool by ID](https://toloka.ai/docs/api/api-reference/#get-/pools/-id-)
 

@@ -45,8 +45,8 @@ for bonus in toloka_client.get_user_bonuses():
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [Toloka API: Get list of bonuses](https://toloka.ai/docs/api/api-reference/#get-/user-bonuses)
 
 [*TolokaClient]: [TolokaClient](../reference/toloka.client.TolokaClient.md) class

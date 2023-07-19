@@ -255,6 +255,29 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
     </div>
 </div>
 
+## Banning Tolokers
+
+<div class="recipe_blocks">
+    <div class="recipe_block">
+        <p class="recipe_block_heading">Ban Tolokers</p>
+        <p class="recipe_block_description">Restrict the access to tasks for Tolokers</p>
+        <p class="recipe_steps">4 steps</p>
+        <a class="recipe_button" href="./ban-tolokers">Go to recipe</a>
+    </div>
+    <div class="recipe_block">
+        <p class="recipe_block_heading">Get list of bans</p>
+        <p class="recipe_block_description">Get the list of all the Toloker bans</p>
+        <p class="recipe_steps">3 steps</p>
+        <a class="recipe_button" href="./get-restrictions">Go to recipe</a>
+    </div>
+    <div class="recipe_block">
+        <p class="recipe_block_heading">Remove ban from Toloker</p>
+        <p class="recipe_block_description">Remove restriction from Tolokers and restore their access to tasks</p>
+        <p class="recipe_steps">3 steps</p>
+        <a class="recipe_button" href="./delete-restriction">Go to recipe</a>
+    </div>
+</div>
+
 ## Messages
 
 <div class="recipe_blocks">
@@ -282,8 +305,8 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
 
 If you feel rather confident as a Toloka-Kit user and want to try a more complex scenario, refer to the following pages:
 
-- [your first complete project](./learn-basics.md)
-- [more usage examples](./use-cases.md)
+- [your first complete project](learn-basics.md)
+- [more usage examples](use-cases.md)
 
 <style scoped>
 .recipe_blocks {

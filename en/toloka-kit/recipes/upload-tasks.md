@@ -12,7 +12,7 @@ _Create and upload control and general tasks to the pool._
 
 In this recipe we create a control task first. The main difference between a control and general task in Toloka is that a control task has a known answer to it. For this answer, the `known_solutions` parameter of the [Task](../reference/toloka.client.task.Task.md) class object is used.
 
-[Find out](./get-pools.md) the ID of the pool where you want to upload the created tasks. For control tasks, set `infinite_overlap` to `True`.
+[Find out](get-pools.md) the ID of the pool where you want to upload the created tasks. For control tasks, set `infinite_overlap` to `True`.
 
 ```python
 control_task = toloka.task.[Task](*Task)(
@@ -27,7 +27,7 @@ control_task = toloka.task.[Task](*Task)(
 
 {% note info %}
 
-You need to know what values are allowed for the output data (`output_values`). You set the output data when you [create a project](./create-project.md#step-three).
+You need to know what values are allowed for the output data (`output_values`). You set the output data when you [create a project](create-project.md#step-three).
 
 {% endnote %}
 
@@ -128,9 +128,10 @@ print(len(result.items))
 ## See also {#see-also}
 
 - [{#T}](../../guide/concepts/overview.md)
-- [{#T}](./learn-basics.md)
-- [{#T}](./use-cases.md)
+- [{#T}](learn-basics.md)
+- [{#T}](use-cases.md)
 - [{#T}](../../guide/concepts/goldenset.md)
+- [{#T}](get-pools.md)
 - [Toloka-Kit: TaskBatchCreateResult class](../reference/toloka.client.batch_create_results.TaskBatchCreateResult.md)
 - [Toloka API: Create single/multiple tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks)
 

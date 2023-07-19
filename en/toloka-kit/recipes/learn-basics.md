@@ -774,7 +774,7 @@ print(predicted_answers)
 
 ## Useful links
 
-- [Toloka-Kit recipe list](./use-cases.md)
+- [Toloka-Kit recipe list](use-cases.md)
 - [Toloka documentation](../../index.md)
 - [Toloka API documentation](https://toloka.ai/docs/api/api-reference/)
 - [Toloka homepage](https://toloka.ai/)
