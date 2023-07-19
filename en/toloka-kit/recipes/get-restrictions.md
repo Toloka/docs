@@ -35,7 +35,7 @@ import toloka.client as toloka
 
 toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
-for restriction in toloka_client.[get_user_restrictions](*get_user_restrictions)(scope='PROJECT', project_id='120798'):
+for restriction in toloka_client.get_user_restrictions(scope='PROJECT', project_id='120798'):
     print(restriction.id, restriction.user_id, restriction.created)
 ```
 
