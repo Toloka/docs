@@ -1,6 +1,6 @@
 # Ban Tolokers
 
-_Restrict the access to the tasks for Tolokers._
+_Restrict the access to tasks for Tolokers._
 
 ## Steps to follow
 

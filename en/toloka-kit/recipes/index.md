@@ -260,7 +260,7 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
 <div class="recipe_blocks">
     <div class="recipe_block">
         <p class="recipe_block_heading">Ban Tolokers</p>
-        <p class="recipe_block_description">Restrict the access to the tasks for Tolokers</p>
+        <p class="recipe_block_description">Restrict the access to tasks for Tolokers</p>
         <p class="recipe_steps">4 steps</p>
         <a class="recipe_button" href="./ban-tolokers">Go to recipe</a>
     </div>
