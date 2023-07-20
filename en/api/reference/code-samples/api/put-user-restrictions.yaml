@@ -19,6 +19,7 @@
       user_id='1ad097faba0eff85a04fe30bc04d53db',
       will_expire=datetime(2030, 1, 1)
     ) )
+  description: More details on this in the [Ban Tolokers](https://toloka.ai/docs/toloka-kit/recipes/ban-tolokers/) Toloka-Kit recipe
 - lang: python
   label: 'Python: Requests'
   source: |

@@ -13,6 +13,7 @@
 
     for restriction in toloka_client.get_user_restrictions():
       print(restriction.id, restriction.private_comment)
+  description: More details on this in the [Get list of bans](https://toloka.ai/docs/toloka-kit/recipes/get-restrictions/) Toloka-Kit recipe
 - lang: python
   label: 'Python: Requests'
   source: |

@@ -3807,7 +3807,12 @@ paths:
       tags:
         - user-restriction
       summary: Unblock access
-      description: Removes a ban.
+      description: |
+        Removes a ban.
+
+        ### See also
+
+        - [Toloka-Kit recipe: Remove ban from Toloker](https://toloka.ai/docs/toloka-kit/recipes/delete-restriction/)
       operationId: deleteUserRestriction
       parameters:
         - name: id
@@ -3827,7 +3832,12 @@ paths:
       tags:
         - user-restriction
       summary: Get list of bans
-      description: Gets the list of Toloker bans.
+      description: |
+        Gets the list of Toloker bans.
+
+        ### See also
+
+        - [Toloka-Kit recipe: Get list of bans](https://toloka.ai/docs/toloka-kit/recipes/get-restrictions/)
       operationId: getUserRestrictions
       parameters:
         - name: scope
@@ -3949,7 +3959,12 @@ paths:
       tags:
         - user-restriction
       summary: Block access to tasks
-      description: Blocks a Toloker from accessing tasks.
+      description: |
+        Blocks a Toloker from accessing tasks.
+
+        ### See also
+
+        - [Toloka-Kit recipe: Ban Tolokers](https://toloka.ai/docs/toloka-kit/recipes/ban-tolokers/)
       operationId: upsertUserRestriction
       requestBody:
         required: true

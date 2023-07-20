@@ -12,6 +12,7 @@
       'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
 
     toloka_client.delete_user_restriction('19038')
+  description: More details on this in the [Remove ban from Toloker](https://toloka.ai/docs/toloka-kit/recipes/delete-restriction/) Toloka-Kit recipe
 - lang: python
   label: 'Python: Requests'
   source: |
