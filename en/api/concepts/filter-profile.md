@@ -120,5 +120,6 @@ Value of `operator`:
 
 - [{#T}](../../guide/concepts/filters.md)
 - [Toloka-Kit recipe: Filter Tolokers](../../toloka-kit/recipes/filter-tolokers.md)
+- [Toloka-Kit recipe: Filter Tolokers with confirmed language knowledge](../../toloka-kit/recipes/filter-tolokers-languages.md)
 
 {% include [contact-support](../../guide/_includes/contact-support.md) %}
