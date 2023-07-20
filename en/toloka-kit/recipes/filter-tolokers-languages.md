@@ -2,6 +2,12 @@
 
 _Use pool filters to filter the Tolokers with various languages for which they passed the language test._
 
+{% note warning %}
+
+Please note that this recipe will only currently work for the Toloka **production environment**, not for sandbox.
+
+{% endnote %}
+
 ## Steps to follow
 
 {% include [import](../_includes/recipes/import.md) %}
