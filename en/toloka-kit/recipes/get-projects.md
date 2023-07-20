@@ -13,6 +13,8 @@ _Get all the projects with a certain status created after a specified date._
 Iterate through all the projects with the `ACTIVE` status created after October 1, 2022, calling the `get_projects()` method.
 
 ```python
+from datetime import datetime
+
 for project in toloka_client.[get_projects](*get_projects)(
                   status='ACTIVE',
                     created_gte=datetime(2022, 10, 1)):
