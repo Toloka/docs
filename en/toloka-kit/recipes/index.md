@@ -108,6 +108,12 @@ Use the list of recipes below to find out how to start working with Toloka-Kit.
         <a class="recipe_button" href="./filter-tolokers">Go to recipe</a>
     </div>
     <div class="recipe_block">
+        <p class="recipe_block_heading">Filter Tolokers with confirmed language knowledge</p>
+        <p class="recipe_block_description">Use pool filters to filter the Tolokers with various languages for which they passed the language test</p>
+        <p class="recipe_steps">4 steps</p>
+        <a class="recipe_button" href="./filter-tolokers-languages">Go to recipe</a>
+    </div>
+    <div class="recipe_block">
         <p class="recipe_block_heading">Use quality control rules</p>
         <p class="recipe_block_description">Use quality control rules to restrict access to the tasks for the Tolokers who try and breach them</p>
         <p class="recipe_steps">9 steps</p>
