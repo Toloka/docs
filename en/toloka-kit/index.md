@@ -15,7 +15,7 @@ Main advantages of Toloka are:
 
 To use the library you need to:
 
-* Install Python 3.7+
+* Install Python 3.8+
 * [Register](../guide/concepts/access.md) as a requester in Toloka or in the Sandbox — the Toloka testing environment.
 * [Top up your account](../guide/concepts/refill.md). You can also test your pipelines in the Sandbox for free.
 
