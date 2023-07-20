@@ -44,7 +44,7 @@ The batch can be in one of the following statuses:
 Batch status | Description
 ------------ | -----------
 New | The processing of the batch items has not been started.
-Queued | The batch is ready for labeling but is currently queued because other batches with higher priority are being labeled.
+Queued | The batch is ready for labeling but is currently queued because other batches with higher priority are being labeled. Labeling of these batches will automatically start once the labeling of the batches with higher priority finishes.
 Processing | Batch items are [being processed](#start-batch) by Tolokers.
 Completed | Labeling of all batch items is completed.
 Error | An error occurred during processing.
