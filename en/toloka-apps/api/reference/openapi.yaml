@@ -1,4 +1,4 @@
-openapi: 3.0.2
+openapi: 3.0.3
 servers:
   - url: 'https://sandbox.toloka.dev/api/app/v0'
     description: Toloka sandbox server URL.
@@ -6,7 +6,7 @@ servers:
     description: Toloka default server URL.
 info:
   title: Apps API
-  version: '0.12'
+  version: '0.13'
   description:
     $ref: './parts/apps/info-description.md'
 security:
@@ -1771,8 +1771,21 @@ components:
           description: |
             The state of the batch, calculated based on the states of items
             comprising it.
+
+            - `NEW` — The processing of the batch items has not been started.
+            - `QUEUED` — The batch is ready for labeling but is currently queued because other batches with higher priority are being labeled. Labeling of these batches will automatically start once the labeling of the batches with higher priority finishes.
+            - `PROCESSING` — Batch items are [being processed](#start-batch) by Tolokers.
+            - `COMPLETED` — Labeling of all batch items is completed.
+            - `ERROR` — An error occurred during processing.
+            - `CANCELLED` — Batch processing canceled.
+            - `NO_MONEY` — There is not enough money for processing the task items in the batch.
+            - `ARCHIVE` — The batch is [archived](archive-batch.md).
+            - `LOADING` — Tasks are [loading](add-task.md) to the batch.
+            - `STOPPING` — The batch is [stopping](#stop-batch).
+            - `STOPPED` — The batch has [stopped](#stop-batch).
           enum:
             - NEW
+            - QUEUED
             - PROCESSING
             - COMPLETED
             - ERROR
@@ -1814,6 +1827,7 @@ components:
           description: 'The date and time when batch processing was completed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
         read_only:
           type: boolean
+          description: Whether the batch can be updated or not.
         last_items_import:
           $ref: '#/components/schemas/ItemImport'
         confidence_avg:
@@ -1823,13 +1837,35 @@ components:
         items_processed_count:
           type: integer
           description: The number of labeled items.
+        items_per_state:
+          type: object
+          description: The statistics on the number of items in each status.
+        current_time:
+          type: string
+          format: date-time
+          description: |
+            The server-side date and time when the response was formed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+        etd:
+          type: string
+          format: date-time
+          description: |
+            The expected date and time when processing of the queued batch will be started, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+
+            The parameter is present in the response when the batch status is equal to `QUEUED`, otherwise it's `null`.
         eta:
           type: string
           format: date-time
-          description: 'The expected date and time when batch processing will be completed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.'
-        items_per_state:
-          type: object
-          description: The statistics on the number of items in each state.
+          description: |
+            The expected date and time when batch processing will be completed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+
+            The parameter is present in the response when the batch status is equal to `QUEUED` or `PROCESSING`, otherwise it's `null`.
+        app_project_eta:
+          type: string
+          format: date-time
+          description: |
+            The expected date and time when processing of all the batches associated with the project will be completed, in UTC in the ISO 8601 format: `YYYY-MM-DDThh:mm:ss[.sss]`.
+
+            The parameter is present in the response when the project contains batches in the status equal to `QUEUED` or `PROCESSING`, otherwise it's `null`.
         priority_order:
           type: string
           description: The batch priority. `ONE` is the highest value. The batch items with this `priority_order` value will be sent for labeling first in the queue.

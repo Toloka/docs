@@ -20,7 +20,8 @@ success:
         errors: {}
       items_processed_count: 0
       items_per_state:
-        NEW: 7
+        NEW: 6
+        QUEUED: 1
         PROCESSING: 0
         COMPLETED: 0
         ERROR: 0
@@ -28,5 +29,9 @@ success:
         NO_MONEY: 0
         ARCHIVE: 0
         STOPPED: 0
+      current_time: '2023-04-17T08:58:38.692'
+      etd: '2023-04-17T08:58:38.692'
+      eta: '2023-04-17T08:58:38.692'
+      app_project_eta: '2023-04-17T08:58:38.692'
       priority_order: FIVE
     has_more: true
