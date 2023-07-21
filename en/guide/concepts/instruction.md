@@ -1,18 +1,18 @@
 # Writing instructions
 
-When selecting a task, the Toloker is first shown the instructions that you wrote. Describe what needs to be done and give examples in them.
+When selecting a [task](../../glossary.md#task)., the Toloker is first shown the instructions that you wrote. Describe what needs to be done and give examples in them.
 
 ## Why instructions are important {#section_fj5_tl3_bnb}
 
 Good instructions help the Toloker complete the task correctly. The clarity and completeness of the instructions affect response quality and the [project's rating](project_rating_stat.md). Unclear or overly complex instructions, on the contrary, will scare off Tolokers.
 
-If the Toloker completed the task according to the instructions, and you rejected it, they can file an appeal. It is important to make the instructions both clear and accurate.
+If the Toloker completed the task according to the instructions, and you rejected it, they can [file an appeal](accept.md#appeal). It is important to make the instructions both clear and accurate.
 
 Learn more about how to write simple and clear instructions on the [Toloka]({{ toloka-instruction }}) website.
 
 ## Creating instructions {#create}
 
-Write text, format it, and insert pictures, links and tables in the visual editor or using [HTML markup](#html). To switch modes, click ![](../_images/code.svg).
+Write text in the **Instructions for Tolokers** field and format it. Insert pictures, links and tables in the visual editor or using [HTML markup](#html). To switch modes, click ![](../_images/code.svg).
 
 To expand the editor to full screen, click ![](../_images/fullscreen.svg).
 
@@ -22,7 +22,7 @@ To view the instructions as seen by the Toloker, click ![](../_images/preview.sv
 
 The HTML markup mode allows you to create user-friendly instructions. Declare and apply [CSS styles](#css) and use [allowed HTML tags](#html-yes).
 
-#### CSS styles
+### CSS styles
 
 Declare styles in the `style` container or use the `style` attribute in tags to assign a style.
 
@@ -32,7 +32,7 @@ The `style` container can be placed at the beginning or at the end of the instru
 
 {% endnote %}
 
-#### Supported HTML tags
+### Supported HTML tags
 
 The HTML markup supports basic tags:
 
@@ -59,7 +59,7 @@ The HTML markup supports basic tags:
 
 {% endcut %}
 
-#### Unsupported HTML tags
+### Unsupported HTML tags
 
 You can't insert the following in the instructions:
 
@@ -77,7 +77,7 @@ Tags that are not supported are removed from the instructions when saving the [p
 
 ## Editing the instructions {#edit}
 
-To change the instructions, go to project editing, make changes and save the project.
+To change the instructions, [go to project editing](edit-project.md), make changes and save the project.
 
 {% note info %}
 
@@ -87,7 +87,7 @@ If you edit instructions in a project that already has completed tasks, you shou
 
 ## What's next {#what_next}
 
-- [Create a task pool in the project](pool-main.md).
+- [Create a task pool](pool-main.md) in the project.
 - Learn more about how to set up a project:
 
     - [Input and output data](incoming.md).
