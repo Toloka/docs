@@ -18,7 +18,7 @@ Get an API key for your version. Go to [Profile → Integrations](https://platfo
 
 ![List of keys](../guide/_images/sso/token-list.png =700x)
 
-Refer to the [Generating API key](../guide/concepts/api-token.md) section to learn how to issue API keys.
+Refer to the [Generating API keys](../guide/concepts/api-token.md) section to learn how to issue API keys.
 
 ## Top up account {#top-up}
 

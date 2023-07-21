@@ -6,6 +6,12 @@ You can connect and remove social accounts and use them for social authorization
 
 {% include [connect-social-account](../_includes/connect-social-account.md) %}
 
+{% cut "For former Yandex ID clients" %}
+
+{% include [connect-social-account-ru](../_includes/connect-social-account-ru.md) %}
+
+{% endcut %}
+
 ## Removing social accounts {#remove-auth}
 
 {% include [remove-social-account](../_includes/remove-social-account.md) %}

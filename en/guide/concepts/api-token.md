@@ -1,6 +1,6 @@
 # Generating API keys
 
-After you login to the platform using [social authorization](access.md#social-auth) or [single sign-on](../sso/authentication.md) (SSO) authentication method, you can generate new keys. You can use them for API requests or for the integration applications. The previously generated keys will continue to work, but will be deprecated with time.
+After you login to the platform using [social authorization](access.md#social-auth) or [single sign-on](../sso/authentication.md) (SSO) authentication method, you can generate new keys. You can use them for API requests or for the integration applications. We recommend that you generate new keys as the previously generated tokens will be deprecated with time.
 
 {% note info %}
 

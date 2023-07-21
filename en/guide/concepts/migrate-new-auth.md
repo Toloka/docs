@@ -6,6 +6,28 @@ If you have previously registered using Yandex ID, you need to confirm it or con
 
 Follow the steps below to connect a new social account to your Toloka profile.
 
+1. Log in using the **Use Toloka legacy account** link at the new login page.
+
+{% list tabs %}
+
+- In the popup window
+
+  1. Click the notification banner in the upper part of the Toloka platform. The popup window will appear:
+
+      ![Update your authorization method](../_images/register/migration-1.png =320x)
+
+  1. Choose **Connect** next to one of the social services to connect them.
+
+  1. Follow the authorization steps for the selected service. Once you sign in to the selected service, you will be redirected back to Toloka.
+
+- In the settings
+
+  {% include [connect-social-account](../_includes/connect-social-account.md) %}
+
+{% endlist %}
+
+{% cut "For former Yandex ID clients" %}
+
 {% list tabs %}
 
 - In the popup window
@@ -20,9 +42,11 @@ Follow the steps below to connect a new social account to your Toloka profile.
 
 - In the settings
 
-  {% include [connect-social-account](../_includes/connect-social-account.md) %}
+  {% include [connect-social-account](../_includes/connect-social-account-ru.md) %}
 
 {% endlist %}
+
+{% endcut %}
 
 Next time you log in, use the connected social account to do that.
 
