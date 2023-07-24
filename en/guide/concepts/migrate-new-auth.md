@@ -1,12 +1,10 @@
 # Migrating to new social authorization
 
-If you have previously registered using Yandex ID, you need to confirm it or connect another social account to continue using Toloka. You can connect a single social account or choose to connect them all to your Toloka profile and use any of them to sign in to Toloka.
+If you have previously registered using an email address, you need to confirm it or connect another social account to continue using Toloka. You can connect a single social account or choose to connect them all to your Toloka profile and use any of them to sign in to Toloka.
 
 ## Connecting social accounts {#connect-account}
 
-Follow the steps below to connect a new social account to your Toloka profile.
-
-1. Log in using the **Use Toloka legacy account** link at the new login page.
+Log in using the **[Use Toloka legacy account](https://passport.toloka.ai/auth?origin=toloka_requesters&retpath=https%3A%2F%2Fplatform.toloka.ai%2Fauth%2Fsignup%3Frole%3DREQUESTER)** link at the new login page. Then follow the steps below to connect a new social account to your Toloka profile.
 
 {% list tabs %}
 
