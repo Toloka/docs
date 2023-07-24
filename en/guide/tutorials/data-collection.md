@@ -2,7 +2,7 @@
 
 {% note tip %}
 
-Run the project in the [Sandbox]({{ sandbox }}) first. This helps you avoid making mistakes and spending money on a task that isn't working right.
+Run the project in the [sandbox]({{ sandbox }}) first. This helps you avoid making mistakes and spending money on a task that isn't working right.
 
 {% endnote %}
 

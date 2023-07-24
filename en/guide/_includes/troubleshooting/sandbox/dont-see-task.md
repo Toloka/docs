@@ -1,4 +1,4 @@
-{% cut "Why don't I see my task in the Sandbox?" %}
+{% cut "Why don't I see my task in the sandbox?" %}
 
 Make sure that:
 

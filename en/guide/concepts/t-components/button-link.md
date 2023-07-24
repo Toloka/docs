@@ -17,7 +17,7 @@ Variations of button use:
 To add the button with the link to the [task interface](../../../glossary.md#task-interface), use the `{{field type="button-clicked" name="output field name>"}}` component. Example:
 
 ```plaintext
-{{field type="button-clicked" name="ads" label="Click me" href="https://yandex.ru" action=true}}
+{{field type="button-clicked" name="ads" label="Click me" href="https://toloka.ai" action=true}}
 ```
 
 For a complete list of parameters, see the [table](#parameters).

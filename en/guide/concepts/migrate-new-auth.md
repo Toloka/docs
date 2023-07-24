@@ -40,7 +40,7 @@ Log in using the **[Use Toloka legacy account](https://passport.toloka.ai/auth?o
 
 - In the settings
 
-  {% include [connect-social-account](../_includes/connect-social-account-ru.md) %}
+  {% include [connect-social-account-ru](../_includes/connect-social-account-ru.md) %}
 
 {% endlist %}
 
@@ -48,11 +48,7 @@ Log in using the **[Use Toloka legacy account](https://passport.toloka.ai/auth?o
 
 Next time you log in, use the connected social account to do that.
 
-{% note info %}
-
-Please [contact our support team](../troubleshooting/support.md) if you have any issues with social accounts connection.
-
-{% endnote %}
+{% include [register-social-account-issues](../_includes/register/social-account-issues.md) %}
 
 ## Logging in to existing account using social authorization {#login-old-auth}
 
@@ -72,7 +68,7 @@ You can switch to the old authorization page using the **Use legacy Toloka accou
 
 ## Updating API keys {#update-token}
 
-After you migrate to the new authorization scheme, the existing OAuth keys will continue to work until they expire. After that, you can issue new authentication keys.
+After you migrate to the new authorization scheme, the existing OAuth tokens will continue to work until they expire. After that, you can issue new authentication keys.
 
 New keys have no TTL and don't expire, you don't need to reissue them. One account can have up to 50 new API keys.
 
@@ -83,5 +79,3 @@ Refer to the [Generating API keys](api-token.md) section to learn how to issue A
 {% include [contact-support](../_includes/contact-support.md) %}
 
 {% include [image-styles-internal](../../../_includes/image-styles-internal.md) %}
-
-{% include [image-styles](../../../_includes/image-styles-internal.md) %}

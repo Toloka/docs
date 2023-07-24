@@ -150,7 +150,7 @@ Each project requires its own approach. Methods that are effective in one case m
 
 1. Write clear instructions. If you create control tasks, make sure they don't have any outdated, ambiguous, or incorrect responses.
 
-1. Test your project in the testing environment, the [Sandbox](sandbox.md). Running and completing tasks in it will help you understand the rules and estimate how much time it will take to complete a single task.
+1. Test your project in the testing environment, the [sandbox](sandbox.md). Running and completing tasks in it will help you understand the rules and estimate how much time it will take to complete a single task.
 
 1. Launch the first real project with a small number of tasks. Analyze the results and adjust the settings if necessary.
 

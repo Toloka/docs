@@ -8,9 +8,9 @@ Before you start using Toloka-Kit library, register in either the production or 
 
 1. Toloka has two versions:
 
-    - The [production](https://platform.toloka.ai/for-requesters/) version is used by default in [this example](recipes/learn-basics.md).
+    - The [production](https://platform.toloka.ai/auth?role=REQUESTER) version is used by default in [this example](recipes/learn-basics.md).
 
-    - The [sandbox](https://platform.sandbox.toloka.ai/for-requesters/) version is a testing environment for Toloka. [Learn more](../guide/concepts/sandbox.md)
+    - The [sandbox](https://platform.sandbox.toloka.ai/auth?role=REQUESTER) version is a testing environment for Toloka. [Learn more](../guide/concepts/sandbox.md)
 
 ## Getting API key {#oauth-token}
 
