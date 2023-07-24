@@ -1,8 +1,6 @@
 # Registration
 
-## Social authorization in Toloka {#social-auth}
-
-Toloka clients can register and access Toloka using social authorization. If you registered in Toloka using Yandex ID, please [migrate to the new social authorization](migrate-new-auth.md) scheme.
+Toloka clients register and access Toloka using social authorization. If you registered in Toloka using Yandex ID, please [migrate to the new social authorization](migrate-new-auth.md) scheme.
 
 To register in Toloka as a client and post tasks for Tolokers, you need to have one of the following supported social accounts:
 
@@ -33,7 +31,7 @@ Toloka has two versions: production and sandbox. You need to register in each on
 
 The registration and sign-in processes are similar for both versions.
 
-## Authorizing in Toloka with social services {#authorize}
+## Authorizing in Toloka {#authorize}
 
 Toloka uses social authorization both for the **registration** and **signing in**.
 
