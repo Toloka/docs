@@ -33,7 +33,7 @@ You should get an output with the ban IDs, Toloker IDs, and ban creation dates w
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for restriction in toloka_client.get_user_restrictions(scope='PROJECT', project_id='120798'):
     print(restriction.id, restriction.user_id, restriction.created)

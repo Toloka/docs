@@ -126,8 +126,8 @@ If you set the overlap to 0 [via the API](https://toloka.ai/docs/api/api-referen
 
 ## See also {#see-also}
 
-- [Efficiency indicators: Control tasks](./efficiency-metrics/control-tasks-share.md)
-- [Efficiency indicators: Control task balance](./efficiency-metrics/control-tasks-balance.md)
+- [Efficiency indicators: Control tasks](efficiency-metrics/control-tasks-share.md)
+- [Efficiency indicators: Control task balance](efficiency-metrics/control-tasks-balance.md)
 
 ## Troubleshooting {#troubleshooting}
 

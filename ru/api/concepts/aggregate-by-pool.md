@@ -12,7 +12,7 @@
 
     ```bash
     POST https://toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 
@@ -20,7 +20,7 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/aggregated-solutions/aggregate-by-pool
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 

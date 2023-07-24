@@ -12,14 +12,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/user-restrictions
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/user-restrictions
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}
@@ -85,24 +85,24 @@
 
     ```bash
     GET https://toloka.dev/api/v1/user-restrictions?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
     ```bash
     GET https://toloka.dev/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/user-restrictions?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/user-restrictions?sort=id&limit=10&id_gt=<id last ban from the answer to the previous query>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

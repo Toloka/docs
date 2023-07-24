@@ -12,14 +12,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/assignments
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/assignments
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}
@@ -127,14 +127,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/assignments?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}
@@ -147,14 +147,14 @@
 
     ```bash
     GET >https://toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/assignments?sort=id&limit=10&id_gt=<ID of the last task suite from the previous response>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

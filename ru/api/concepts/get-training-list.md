@@ -12,14 +12,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/trainings
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/trainings
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}
@@ -84,14 +84,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/trainings?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/trainings?sort=id&limit=10
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}
@@ -104,14 +104,14 @@
 
     ```bash
     GET https://toloka.dev/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     GET https://sandbox.toloka.dev/api/v1/trainings?sort=id&limit=10&id_gt=<id of the last training from the previous response>
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

@@ -35,7 +35,7 @@ You should get an output with the pool ID and the updated status which looks lik
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 closed_pool = toloka_client.close_pool('1443858')
 print(closed_pool.id, closed_pool.status)

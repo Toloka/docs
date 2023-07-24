@@ -76,7 +76,7 @@ If you already have a pool with the quality control settings you need, you can c
 
 ## See also {#see-also}
 
-- [Efficiency indicators: Bans](./efficiency-metrics/ban-rate.md)
+- [Efficiency indicators: Bans](efficiency-metrics/ban-rate.md)
 - [Crowdsourcing concepts: Quality control](https://toloka.ai/knowledgebase/quality-control/)
 
 ## Troubleshooting {#troubleshooting}

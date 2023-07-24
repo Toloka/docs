@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X GET 'https://toloka.dev/api/app/v0/app-projects' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     app_projects = toloka_client.get_app_projects()
     for app_project in app_projects:
@@ -23,7 +23,7 @@
 
     payload = {}
     headers = {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
     }
 
     response = requests.request("GET", url, headers=headers, data=payload)
@@ -37,7 +37,7 @@
       'method': 'GET',
       'url': 'https://toloka.dev/api/app/v0/app-projects',
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
       }
     };
     request(options, function (error, response) {
@@ -49,5 +49,5 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.get("https://toloka.dev/api/app/v0/app-projects")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .asString();

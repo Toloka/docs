@@ -22,14 +22,14 @@
 
     ```bash
     POST https://toloka.dev/api/v1/pools/<pool_id>/close-for-update
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/pools/<pool_id>/close-for-update
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

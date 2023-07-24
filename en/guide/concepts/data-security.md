@@ -97,14 +97,10 @@ For instance, you can store text comments on your server and use the file with t
 
 {% include [troubleshooting-trusted-user-banned](../_includes/troubleshooting/users/trusted-user-banned.md) %}
 
-{% include [troubleshooting-phone-belongs-another-user](../_includes/troubleshooting/register-and-start/phone-belongs-another-user.md) %}
-
 {% include [faq-give-access](../_includes/faq/project-settings/give-access.md) %}
 
 {% include [faq-ban-and-reject](../_includes/faq/users/ban-and-reject.md) %}
 
 {% include [faq-change-account-type](../_includes/faq/register-and-start/change-account-type.md) %}
-
-{% include [faq-change-phone-number](../_includes/faq/register-and-start/change-phone-number.md) %}
 
 {% include [contact-support](../_includes/contact-support.md) %}

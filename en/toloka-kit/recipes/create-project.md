@@ -103,7 +103,7 @@ You should get an output with the created project ID which looks like this.
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 task_spec = toloka.project.task_spec.TaskSpec(
     input_spec={'image': toloka.project.field_spec.UrlSpec()},

@@ -14,18 +14,18 @@ For example, create a project with tasks where Tolokers will determine the type 
 
 {% endcut %}
 
-The sample project described under "Quick start" is for the sandbox. To set up tasks in the Toloka production version, change the [resource URL](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) and [OAuth token](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) in all requests.
+The sample project described under "Quick start" is for the sandbox. To set up tasks in the Toloka production version, change the [resource URL](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) and [API key](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) in all requests.
 
 ## Steps to follow {#algorithm}
 
 1. Post your tasks.
 
-    - [Choose a platform and get a token](./qs-placement.md#start).
-    - [Create a project](./qs-placement.md#project) (`POST /api/v1/projects`).
-    - [Add a pool](./qs-placement.md#pool) (`POST /api/v1/pools`).
-    - [Upload the tasks](./qs-placement.md#task) (`POST /api/v1/tasks`).
-    - [Start (open) the pool](./qs-placement.md#pool-run) (`POST /api/v1/pools/{pool_id}/open`).
-    - [Check the tasks from the Toloker's interface](./qs-placement.md#check).
+    - [Choose a platform and get an API key](qs-placement.md#start).
+    - [Create a project](qs-placement.md#project) (`POST /api/v1/projects`).
+    - [Add a pool](qs-placement.md#pool) (`POST /api/v1/pools`).
+    - [Upload the tasks](qs-placement.md#task) (`POST /api/v1/tasks`).
+    - [Start (open) the pool](qs-placement.md#pool-run) (`POST /api/v1/pools/{pool_id}/open`).
+    - [Check the tasks from the Toloker's interface](qs-placement.md#check).
 
 1. Get the required results after the tasks are completed by the Tolokers.
 
@@ -34,6 +34,6 @@ The sample project described under "Quick start" is for the sandbox. To set up t
 
 ## What's next {#what-next}
 
-Read the [instructions on how to post tasks](./qs-placement.md).
+Read the [instructions on how to post tasks](qs-placement.md).
 
 {% include [image-styles](../../../_includes/image-styles-internal.md) %}

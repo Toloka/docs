@@ -80,7 +80,7 @@ You should get an output with the IDs of the bans and the ban creation date and 
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 pool_restriction = toloka_client.set_user_restriction(
     toloka.user_restriction.PoolUserRestriction(

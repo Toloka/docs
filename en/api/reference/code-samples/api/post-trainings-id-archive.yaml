@@ -2,14 +2,14 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/trainings/1245598/archive' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 - lang: py
   label: 'Python: Toloka-Kit'
   source: |
     import toloka.client
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     toloka_client.archive_training('1245598')
 - lang: python
@@ -19,7 +19,7 @@
 
     url = "https://toloka.dev/api/v1/trainings/1245598/archive"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
     }
     response = requests.post(url, headers=headers)
 
@@ -33,7 +33,7 @@
       'url': 'https://toloka.dev/api/v1/trainings/1245598/archive',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here'
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here'
       }
     };
     request(options, function (error, response) {
@@ -45,5 +45,5 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/trainings/1245598/archive")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .asString();

@@ -2,7 +2,7 @@
   label: 'cURL'
   source: |
     curl -X POST 'https://toloka.dev/api/v1/user-bonuses' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{"user_id":"fac97860c7929add8048ed2ef63b66fd", "amount":0.5, "public_title":{"EN":"Perfect job!"}, "public_message":{"EN":"You are the best!"}}'
 - lang: py
@@ -13,7 +13,7 @@
     from toloka.client.user_bonus import UserBonus
 
     toloka_client = toloka.client.TolokaClient(
-      'PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+      'PlaceYourRealApiKey_Here', 'PRODUCTION')
 
     new_bonus = toloka_client.create_user_bonus(UserBonus(
         user_id = 'fac97860c7929add8048ed2ef63b66fd',
@@ -30,7 +30,7 @@
 
     url = "https://toloka.dev/api/v1/user-bonuses"
     headers = {
-      'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+      'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
       'Content-Type': 'application/json'
     }
     payload = {
@@ -55,7 +55,7 @@
       'url': 'https://toloka.dev/api/v1/user-bonuses',
       'qs': {},
       'headers': {
-        'Authorization': 'OAuth PlaceYourRealOAuthToken_Here',
+        'Authorization': 'ApiKey PlaceYourRealApiKey_Here',
         'Content-Type': 'application/json'
       },
       'body': JSON.stringify({
@@ -78,7 +78,7 @@
   source: |
     Unirest.setTimeouts(0, 0);
     HttpResponse<String> response = Unirest.post("https://toloka.dev/api/v1/user-bonuses")
-      .header("Authorization", "OAuth PlaceYourRealOAuthToken_Here")
+      .header("Authorization", "ApiKey PlaceYourRealApiKey_Here")
       .header("Content-Type", "application/json")
       .body("{\"user_id\":\"fac97860c7929add8048ed2ef63b66fd\", \"amount\":0.5, \"public_title\":{\"EN\":\"Perfect job!\"}, \"public_message\":{\"EN\":\"You are the best!\"}}")
       .asString();

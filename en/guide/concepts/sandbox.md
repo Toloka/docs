@@ -24,7 +24,7 @@ Once you have [access to the sandbox](#sandbox-access) approved, follow the step
 
     {% note tip %}
 
-    To avoid confusion, use the same Yandex ID that you used in the Toloka production version to register as a requester.
+    To avoid confusion, use the same social account that you used in the Toloka production version to register as a requester.
 
     {% endnote %}
 

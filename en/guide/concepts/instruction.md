@@ -98,7 +98,7 @@ If you edit instructions in a project that already has completed tasks, you shou
 ## See also {#see-also}
 
 - [{#T}](edit-project.md)
-- [Efficiency indicators: Quality of instructions](./efficiency-metrics/instruction-quality.md)
+- [Efficiency indicators: Quality of instructions](efficiency-metrics/instruction-quality.md)
 
 ## Troubleshooting {#troubleshooting}
 

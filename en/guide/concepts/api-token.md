@@ -1,56 +1,56 @@
-# Generating API tokens
+# Generating API keys
 
-After you login to the platform using [social authorization](access.md#social-auth) or [single sign-on](../sso/authentication.md) (SSO) authentication method, you can generate new tokens. You can use them for API requests or for the integration applications. The previously generated tokens will continue to work, but will be deprecated with time.
+After you login to the platform using [social authorization](access.md#social-auth) or [single sign-on](../sso/authentication.md) (SSO) authentication method, you can generate new keys. You can use them for API requests or for the integration applications. We recommend that you generate new keys as the previously generated tokens will be deprecated with time.
 
 {% note info %}
 
-If your company uses SSO authentication method, each SSO user can generate their own tokens.
+If your company uses SSO authentication method, each SSO user can generate their own keys.
 
 {% endnote %}
 
-## Generating tokens
+## Generating keys
 
 1. Go to [Profile → Integrations](https://platform.toloka.ai/requester/profile/integration). Click **![Plus sign](../_images/plus-sign.svg) Generate token**:
 
-    ![Generate token](../_images/sso/add-token.png =700x)
+    ![Generate key](../_images/sso/add-token.png =700x)
 
-1. Enter a unique name or description for the token. Uniqueness is not required, but it will allow you to distinguish this token in case you have several ones. Click **Generate**:
+1. Enter a unique name or description for the key. Uniqueness is not required, but it will allow you to distinguish this key in case you have several ones. Click **Generate**:
 
-    ![Enter token name](../_images/sso/token-name.png =700x)
+    ![Enter key name](../_images/sso/token-name.png =700x)
 
-1. A new token will be generated. Click **Copy and close** to copy the token into the clipboard and close the dialog window:
+1. A new key will be generated. Click **Copy and close** to copy the key into the clipboard and close the dialog window:
 
     ![Copy and close](../_images/sso/copy-token.png =700x)
 
     {% note warning %}
 
-    You will not be able to view or copy the token after you close this window. This is done for security reasons. If you lose it, you will need to delete it and generate a new one.
+    You will not be able to view or copy the key after you close this window. This is done for security reasons. If you lose it, you will need to delete it and generate a new one.
 
     {% endnote %}
 
-1. Your newly generated token will be added to the list of the tokens associated with your account:
+1. Your newly generated key will be added to the list of the keys associated with your account:
 
-    ![List of tokens](../_images/sso/token-list.png =700x)
+    ![List of keys](../_images/sso/token-list.png =700x)
 
-    Here you can view the details about your generated tokens: their names, first characters, creation date, and usage information.
+    Here you can view the details about your generated keys: their names, first characters, creation date, and usage information.
 
-    Click ![Delete button](../_images/delete-token.svg) in the token upper-right corner to delete it.
+    Click ![Delete button](../_images/delete-token.svg) in the key upper-right corner to delete it.
 
 {% note info %}
 
-You can generate up to **50** tokens.
+You can generate up to **50** keys.
 
 {% endnote %}
 
-## Testing tokens
+## Testing keys
 
-To test the created token, use the following shell command:
+To test the created key, use the following shell command:
 
 ```bash
-curl -X GET 'https://toloka.dev/api/v1/requester' -H 'Authorization: ApiKey PlaceYourRealApiKeyToken_Here'
+curl -X GET 'https://toloka.dev/api/v1/requester' -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
-Replace the `PlaceYourRealApiKeyToken_Here` substring with the API token that you received and copied at the previous steps.
+Replace the `PlaceYourRealApiKey_Here` substring with the API key that you received and copied at the previous steps.
 
 If you entered a correct value, you will receive a response like this with the `200` status code and basic information about your account:
 
@@ -68,11 +68,11 @@ If you entered a correct value, you will receive a response like this with the `
 }
 ```
 
-Now you can use the created API token to send other API requests: get the list of the existing [projects](https://toloka.ai/docs/api/api-reference/#get-/projects), [pools](https://toloka.ai/docs/api/api-reference/#get-/pools), [upload tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks), and other requests.
+Now you can use the created API key to send other API requests: get the list of the existing [projects](https://toloka.ai/docs/api/api-reference/#get-/projects), [pools](https://toloka.ai/docs/api/api-reference/#get-/pools), [upload tasks](https://toloka.ai/docs/api/api-reference/#post-/tasks), and other requests.
 
 {% note info %}
 
-The new API tokens work when you send requests to the `toloka.dev` domain and require [Toloka Java SDK](https://github.com/Toloka/toloka-java-sdk/releases) version 0.0.6 or later and [Toloka-Kit](https://github.com/Toloka/toloka-kit/releases) version 1.2.0 or later.
+The new API keys work when you send requests to the `toloka.dev` domain and require [Toloka Java SDK](https://github.com/Toloka/toloka-java-sdk/releases) version 0.0.6 or later and [Toloka-Kit](https://github.com/Toloka/toloka-kit/releases) version 1.2.0 or later.
 
 {% endnote %}
 

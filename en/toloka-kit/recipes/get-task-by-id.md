@@ -35,7 +35,7 @@ You should get an output with the task ID, overlap, and creation date which look
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 task = toloka_client.get_task('000012bb84--62d80429f20bf20e50f36a27')
 print(task.id, task.overlap, task.created.date())

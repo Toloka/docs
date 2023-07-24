@@ -29,7 +29,7 @@ You should get an output that contains the IDs of the pools, their statuses, and
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 for pool in toloka_client.get_pools(project_id='118252', status='CLOSED'):
     print(pool.id, pool.status, pool.private_name)

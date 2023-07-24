@@ -81,7 +81,7 @@ You can stop labeling if it isn't completed.
 
   ```bash
   curl -X POST 'https://toloka.dev/api/app/v0/app-projects/{project_id}/batches/{batch_id}/stop' \
-       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
   ```
 
   Where `{project_id}` is the ID of the project with which the batch is associated, and `{batch_id}` is the ID of the batch you want to pause.

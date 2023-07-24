@@ -24,7 +24,7 @@ With this method, Toloka will split tasks into suites according to the "smart mi
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/tasks' \
-      -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+      -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
       -H 'Content-Type: application/json' \
       -d '{
             "pool_id": "1",
@@ -75,7 +75,7 @@ With this method, Toloka will split tasks into suites according to the "smart mi
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/tasks' \
-      -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+      -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
       -H 'Content-Type: application/json' \
       -d '[
             {
@@ -152,7 +152,7 @@ This method won't work if you created a pool using [smart mixing](../../guide/co
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/task-suites' \
-      -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+      -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
       -H 'Content-Type: application/json' \
       -d '{
             "id": "63614047-38c3-4ad4-8a86-99c5c651a9b8",
@@ -211,7 +211,7 @@ This method won't work if you created a pool using [smart mixing](../../guide/co
 
   ```bash
   curl -X POST 'https://toloka.dev/api/v1/task-suites' \
-      -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+      -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
       -H 'Content-Type: application/json' \
       -d '[
             {

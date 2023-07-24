@@ -14,105 +14,105 @@ Make sure you're [registered](../concepts/access.md) as a requester.
 
   - **Images**
 
-      - [Image classification](./image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
+      - [Image classification](image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
 
-      - [Side-by-side image comparison](./side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
+      - [Side-by-side image comparison](side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
 
-      - [Object recognition and area selection](./selection.md) — The Toloker labels the areas on an image that contain the specified object. These tasks are easier to run in the web version.
+      - [Object recognition and area selection](selection.md) — The Toloker labels the areas on an image that contain the specified object. These tasks are easier to run in the web version.
 
-      - [Object recognition and area selection (example with decomposition)](./image-segmentation-overview.md) — An example of dividing a task for selecting objects into three projects: filtering out inappropriate images, selecting objects, and reviewing assignments.
+      - [Object recognition and area selection (example with decomposition)](image-segmentation-overview.md) — An example of dividing a task for selecting objects into three projects: filtering out inappropriate images, selecting objects, and reviewing assignments.
 
   - **Video**
 
-      - [Video classification](./video-moderation.md) — A multiple choice task. For example, moderation of content, evaluation of video for noise and defects, or video classification by specified categories.
+      - [Video classification](video-moderation.md) — A multiple choice task. For example, moderation of content, evaluation of video for noise and defects, or video classification by specified categories.
 
   - **Audio**
 
-      - [Audio transcription](./transcript-audio.md) — The Toloker receives an audio recording and types the text they hear. Checking such tasks can be assigned to other Tolokers as a classification task.
+      - [Audio transcription](transcript-audio.md) — The Toloker receives an audio recording and types the text they hear. Checking such tasks can be assigned to other Tolokers as a classification task.
 
-      - [Audio classification](./audio-classification.md) — A multiple choice task. For example, evaluation of audio recordings for noise and defects, or audio classification by specified categories.
+      - [Audio classification](audio-classification.md) — A multiple choice task. For example, evaluation of audio recordings for noise and defects, or audio classification by specified categories.
 
-      - [Voice recording](./record-audio.md) — The Toloker receives a phrase or text fragment to record and has to attach the audio file as the response. These tasks are easier to run in the mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
+      - [Voice recording](record-audio.md) — The Toloker receives a phrase or text fragment to record and has to attach the audio file as the response. These tasks are easier to run in the mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
 
   - **Texts**
 
-      - [Sentiment analysis and content moderation](./content-moderation.md) — The Toloker checks the text for compliance with the rules.
+      - [Sentiment analysis and content moderation](content-moderation.md) — The Toloker checks the text for compliance with the rules.
 
   - **Data enrichment**
 
-      - [Searching for product characteristics](./internet-search.md) — A task in which Tolokers search for data about businesses online.
+      - [Searching for product characteristics](internet-search.md) — A task in which Tolokers search for data about businesses online.
 
-      - [Product photo search (example with decomposition)](./data-collection.md) — Type of task for searching and processing relevant data. For example, find similar shoes in an online store or determine which of the found objects is more similar to the original one.
+      - [Product photo search (example with decomposition)](data-collection.md) — Type of task for searching and processing relevant data. For example, find similar shoes in an online store or determine which of the found objects is more similar to the original one.
 
   - **Surveys**
 
-      - [Survey with Toloka template](./questionnaire-toloka.md) — Create a form with questions and run a survey in Toloka.
+      - [Survey with Toloka template](questionnaire-toloka.md) — Create a form with questions and run a survey in Toloka.
 
-      - [Survey on third-party platform](./questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
+      - [Survey on third-party platform](questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
 
-      - [Survey based on Qualtrics](./questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.
+      - [Survey based on Qualtrics](questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.
 
   - **Field tasks**
 
       Field tasks are completed in the Toloka mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
 
-      - [Collect offline data](./walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
+      - [Collect offline data](walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
 
-      - [Monitor prices](./price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
+      - [Monitor prices](price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
 
-      - [Monitor products](./audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
+      - [Monitor products](audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
 
-      - [Collect data on businesses](./monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
+      - [Collect data on businesses](monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
 
-      - [Monitoring field objects](./monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
+      - [Monitoring field objects](monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
 
 - By complexity
 
   - **Level 1. Tutorials using a single project** are suitable for beginners. Go through **at least one** tutorial that is most similar to your task.
 
-      - [Image classification](./image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
+      - [Image classification](image-classification.md) — A multiple choice task. Examples are moderating content or grouping images by category.
 
-      - [Side-by-side image comparison](./side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
+      - [Side-by-side image comparison](side-by-side.md) — The Toloker compares pairs of images, illustrations, or interfaces.
 
-      - [Object recognition and area selection](./selection.md) — The Toloker labels the areas on an image that contain the specified object. These tasks are easier to run in the web version.
+      - [Object recognition and area selection](selection.md) — The Toloker labels the areas on an image that contain the specified object. These tasks are easier to run in the web version.
 
-      - [Audio transcription](./transcript-audio.md) — The Toloker receives an audio recording and types the text they hear. Checking such tasks can be assigned to other Tolokers as a classification task.
+      - [Audio transcription](transcript-audio.md) — The Toloker receives an audio recording and types the text they hear. Checking such tasks can be assigned to other Tolokers as a classification task.
 
-      - [Audio classification](./audio-classification.md) — A multiple choice task. For example, evaluation of audio recordings for noise and defects, or audio classification by specified categories.
+      - [Audio classification](audio-classification.md) — A multiple choice task. For example, evaluation of audio recordings for noise and defects, or audio classification by specified categories.
 
-      - [Voice recording](./record-audio.md) — The Toloker receives a phrase or text fragment to record and has to attach the audio file as the response. These tasks are easier to run in the mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
+      - [Voice recording](record-audio.md) — The Toloker receives a phrase or text fragment to record and has to attach the audio file as the response. These tasks are easier to run in the mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
 
-      - [Video classification](./video-moderation.md) — A multiple choice task. For example, moderation of content, evaluation of video for noise and defects, or video classification by specified categories.
+      - [Video classification](video-moderation.md) — A multiple choice task. For example, moderation of content, evaluation of video for noise and defects, or video classification by specified categories.
 
-      - [Sentiment analysis and content moderation](./content-moderation.md) — The Toloker checks the text for compliance with the rules.
+      - [Sentiment analysis and content moderation](content-moderation.md) — The Toloker checks the text for compliance with the rules.
 
-      - [Survey with Toloka template](./questionnaire-toloka.md) — Set requirements for respondents and take a poll.
+      - [Survey with Toloka template](questionnaire-toloka.md) — Set requirements for respondents and take a poll.
 
-      - [Survey on third-party platform](./questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
+      - [Survey on third-party platform](questionnaire-other.md) — Use Toloka to run a survey created on any third-party platform.
 
-      - [Survey based on Qualtrics](./questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.
+      - [Survey based on Qualtrics](questionnaire-qualtrics.md) — Use Toloka to conduct your academic Qualtrics-based survey.
 
-      - [Searching for product characteristics](./internet-search.md) — A task in which Tolokers search for data about businesses online.
+      - [Searching for product characteristics](internet-search.md) — A task in which Tolokers search for data about businesses online.
 
   - **Level 2. Field tutorials** — If you need to post field tasks, go through a tutorial at this level. If not, you can skip it.
 
       Field tasks are completed in the Toloka mobile app for [Android]({{ android-app }}) and [iOS]({{ ios-app }}).
 
-      - [Collect offline data](./walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
+      - [Collect offline data](walk.md) — The Toloker goes to a specified point on the map, checks something, and takes photos.
 
-      - [Monitor prices](./price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
+      - [Monitor prices](price-tag.md) — The Toloker goes to the location and takes photos of the store's front, a particular product on the shelf, and the price tag.
 
-      - [Monitor products](./audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
+      - [Monitor products](audit-of-planogram-of-product-placement-in-store.md) — The Toloker goes to the store, takes a photo of the front, finds the relevant section inside, and takes a photo of the rack with a certain brand of products.
 
-      - [Collect data on businesses](./monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
+      - [Collect data on businesses](monitoring-objects-in-organizations.md) — The Toloker goes to the point, takes a picture of the outside of the organization, and photographs a particular object inside from different angles.
 
-      - [Monitoring field objects](./monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
+      - [Monitoring field objects](monitoring.md) — The Toloker goes to the point, finds an object on the street, photographs it from different angles, and takes a picture of the address sign.
 
   - **Level 3. Tutorials using several projects** — Learn how to decompose a task.
 
-      - [Object recognition and area selection (example with decomposition)](./image-segmentation-overview.md) — An example of dividing a task for selecting objects into three projects: filtering out inappropriate images, selecting objects, and reviewing assignments.
+      - [Object recognition and area selection (example with decomposition)](image-segmentation-overview.md) — An example of dividing a task for selecting objects into three projects: filtering out inappropriate images, selecting objects, and reviewing assignments.
 
-      - [Product photo search (example with decomposition)](./data-collection.md) — Type of task for searching and processing relevant data. For example, find similar shoes in an online store or determine which of the found objects is more similar to the original one.
+      - [Product photo search (example with decomposition)](data-collection.md) — Type of task for searching and processing relevant data. For example, find similar shoes in an online store or determine which of the found objects is more similar to the original one.
 
 {% endlist %}
 

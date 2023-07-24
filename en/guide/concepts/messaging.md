@@ -77,7 +77,7 @@ To send a message using Toloka API, send a `POST` request with the information a
 
 ```bash
 curl -X POST 'https://toloka.dev/api/v1/message-threads/compose' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
      -H 'Content-Type: application/json' \
      -d '{"topic":{"EN":"Thank you!"},"text":{"EN":"Amazing job! We have just trained our first model."},"recipients_select_type":"ALL","answerable":false}'
 ```
@@ -127,7 +127,7 @@ To mark multiple messages at once, click {% if locale == "ru-ru" %}**Mark all as
 - [{#T}](users.md)
 - [{#T}](bonus.md)
 - [{#T}](ban.md)
-- [Efficiency indicators: Communication issues](./efficiency-metrics/communication.md)
+- [Efficiency indicators: Communication issues](efficiency-metrics/communication.md)
 
 ## For developers {#for-developers}
 

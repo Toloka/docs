@@ -32,7 +32,7 @@
 
   ```bash
   curl -X GET \
-       -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+       -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
   https://sandbox.toloka.dev/api/v1/assignments?pool_id=<pool id>
   ```
 
@@ -49,7 +49,7 @@
   1. Headers
 
       ```bash
-      Authorization: OAuth PlaceYourRealOAuthToken_Here
+      Authorization: ApiKey PlaceYourRealApiKey_Here
       ```
 
 {% endlist %}

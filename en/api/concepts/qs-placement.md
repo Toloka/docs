@@ -4,7 +4,7 @@
 
 ## Before you start {#start}
 
-Choose a platform to get an OAuth token:
+Choose a platform to get an API key:
 
 {% list tabs %}
 
@@ -12,7 +12,7 @@ Choose a platform to get an OAuth token:
 
     1. [Register](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) on the selected platform if you haven't done this before.
 
-    1. Get an OAuth token in the [requester interface](https://sandbox.toloka.yandex.com/requester/profile/integration).
+    1. Get an API key in the [requester interface](https://sandbox.toloka.yandex.com/requester/profile/integration).
 
     1. All examples use the sandbox URL: `https://sandbox.toloka.dev/api/v1/{resource_path}`. If you decide to switch to the production version, replace the resource URL with `https://toloka.dev/api/v1/{resource_path}`.
 
@@ -20,7 +20,7 @@ Choose a platform to get an OAuth token:
 
     1. [Register](https://toloka.ai/docs/api/api-reference/#overview--accessing-the-api) on the selected platform if you haven't done this before.
 
-    1. Get an OAuth token in the [requester interface](https://platform.toloka.ai/requester/profile/integration).
+    1. Get an API key in the [requester interface](https://platform.toloka.ai/requester/profile/integration).
 
     1. To send requests, replace the resource URL in the examples with `https://toloka.dev/api/v1/{resource_path}`, since all the examples are given for the sandbox.
 
@@ -42,7 +42,7 @@ Use the `POST /api/v1/projects` [method](https://toloka.ai/docs/api/api-referenc
 
     ```bash
     curl -X POST 'https://sandbox.toloka.dev/api/v1/projects' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{
                "public_name": "Categories of shoes",
@@ -104,7 +104,7 @@ Use the `POST /api/v1/projects` [method](https://toloka.ai/docs/api/api-referenc
     1. Headers
 
         ```bash
-        Authorization: OAuth PlaceYourRealOAuthToken_Here
+        Authorization: ApiKey PlaceYourRealApiKey_Here
         Content-Type: application/json
         ```
 
@@ -205,7 +205,7 @@ Next, send a `POST` [request](https://toloka.ai/docs/api/api-reference/#post-/po
 
     ```bash
     curl -X POST 'https://sandbox.toloka.dev/api/v1/pools' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '{
                "project_id": "{project_id}",
@@ -290,7 +290,7 @@ Next, send a `POST` [request](https://toloka.ai/docs/api/api-reference/#post-/po
     1. Headers
 
         ```bash
-        Authorization: OAuth PlaceYourRealOAuthToken_Here
+        Authorization: ApiKey PlaceYourRealApiKey_Here
         Content-Type: application/json
         ```
 
@@ -409,7 +409,7 @@ Next, send a `POST` [request](https://toloka.ai/docs/api/api-reference/#post-/ta
 
     ```bash
     curl -X POST 'https://sandbox.toloka.dev/api/v1/tasks' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json' \
          -d '[
                {
@@ -449,7 +449,7 @@ Next, send a `POST` [request](https://toloka.ai/docs/api/api-reference/#post-/ta
     1. Headers
 
         ```bash
-        Authorization: OAuth PlaceYourRealOAuthToken_Here
+        Authorization: ApiKey PlaceYourRealApiKey_Here
         Content-Type: application/json
         ```
 
@@ -503,7 +503,7 @@ In the `{pool_id}` path parameter, insert the ID of the pool to start (the ID re
 
     ```bash
     curl -X POST 'https://sandbox.toloka.dev/api/v1/pools/{pool_id}/open' \
-         -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here' \
+         -H 'Authorization: ApiKey PlaceYourRealApiKey_Here' \
          -H 'Content-Type: application/json'
     ```
 
@@ -520,7 +520,7 @@ In the `{pool_id}` path parameter, insert the ID of the pool to start (the ID re
     1. Headers
 
         ```bash
-        Authorization: OAuth PlaceYourRealOAuthToken_Here
+        Authorization: ApiKey PlaceYourRealApiKey_Here
         Content-Type: application/json
         ```
 

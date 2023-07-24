@@ -23,7 +23,7 @@ Specify the received token in your requests as a part of the `Authorization` hea
 
 ```bash
 curl -X GET 'https://toloka.dev/api/app/v0/apps' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 ## Filtering requests
@@ -34,7 +34,7 @@ Some `GET` methods allow you to filter the requests using special parameters. Su
 
 ```shell
 curl -X GET 'https://toloka.dev/api/app/v0/apps?limit=100' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 Parameter | Overview
@@ -57,7 +57,7 @@ Parameter | Overview
 
 ```shell
 curl -X GET 'https://toloka.dev/api/app/v0/app-projects?created_lte=2022-01-01T00%3A00%3A00' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 Parameter | Overview
@@ -88,7 +88,7 @@ Toloka objects that can be sorted:
 
 ```shell
 curl -X GET 'https://toloka.dev/api/app/v0/app-projects?sort=id,-created' \
-     -H 'Authorization: OAuth PlaceYourRealOAuthToken_Here'
+     -H 'Authorization: ApiKey PlaceYourRealApiKey_Here'
 ```
 
 ### Sorting direction

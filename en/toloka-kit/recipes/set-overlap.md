@@ -92,7 +92,7 @@ aaf9b554-cb3b-477e-ba48-d2581004a7ac 3
 ```python
 import toloka.client as toloka
 
-toloka_client = toloka.TolokaClient('PlaceYourRealOAuthToken_Here', 'PRODUCTION')
+toloka_client = toloka.TolokaClient('PlaceYourRealApiKey_Here', 'PRODUCTION')
 
 new_pool = toloka.pool.Pool(
     project_id='133047',

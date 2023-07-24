@@ -14,7 +14,7 @@
 
     ```bash
     PATCH https://sandbox.toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 
@@ -22,7 +22,7 @@
 
     ```bash
     PATCH https://toloka.dev/api/v1/tasks/<task_id>/set-overlap-or-min
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 

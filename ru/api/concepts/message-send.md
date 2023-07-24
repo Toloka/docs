@@ -17,7 +17,7 @@
 
     ```bash
     POST https://toloka.dev/api/v1/message-threads/compose
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 
@@ -25,7 +25,7 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/message-threads/compose
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
     ```
 

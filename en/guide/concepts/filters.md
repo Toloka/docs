@@ -206,7 +206,7 @@ Add a global level filter, enter a value from 0 to 100, and use a set of operato
 
 ## See also {#see-also}
 
-- [Efficiency indicators: Project availability](./efficiency-metrics/available-performers.md)
+- [Efficiency indicators: Project availability](efficiency-metrics/available-performers.md)
 
 ## For developers {#for-developers}
 

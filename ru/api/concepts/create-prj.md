@@ -18,7 +18,7 @@
 
     ```bash
     POST https://toloka.dev/api/v1/projects
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
 
     {<project parameters>}
@@ -28,7 +28,7 @@
 
     ```bash
     POST https://sandbox.toloka.dev/api/v1/projects
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     Content-Type: application/json
 
     {<project parameters>}

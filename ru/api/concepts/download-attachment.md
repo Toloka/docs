@@ -12,14 +12,14 @@
 
     ```plaintext
     GET https://toloka.dev/api/v1/attachments/<file_id>/download
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 - Песочница
 
     ```plaintext
     GET https://sandbox.toloka.dev/api/v1/attachments/<file_id>/download
-    Authorization: OAuth PlaceYourRealOAuthToken_Here
+    Authorization: ApiKey PlaceYourRealApiKey_Here
     ```
 
 {% endlist %}

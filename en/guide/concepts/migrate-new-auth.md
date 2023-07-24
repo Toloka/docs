@@ -6,6 +6,28 @@ If you have previously registered using Yandex ID, you need to confirm it or con
 
 Follow the steps below to connect a new social account to your Toloka profile.
 
+1. Log in using the **Use Toloka legacy account** link at the new login page.
+
+{% list tabs %}
+
+- In the popup window
+
+  1. Click the notification banner in the upper part of the Toloka platform. The popup window will appear:
+
+      ![Update your authorization method](../_images/register/migration-1.png =320x)
+
+  1. Choose **Connect** next to one of the social services to connect them.
+
+  1. Follow the authorization steps for the selected service. Once you sign in to the selected service, you will be redirected back to Toloka.
+
+- In the settings
+
+  {% include [connect-social-account](../_includes/connect-social-account.md) %}
+
+{% endlist %}
+
+{% cut "For former Yandex ID clients" %}
+
 {% list tabs %}
 
 - In the popup window
@@ -20,9 +42,11 @@ Follow the steps below to connect a new social account to your Toloka profile.
 
 - In the settings
 
-  {% include [connect-social-account](../_includes/connect-social-account.md) %}
+  {% include [connect-social-account](../_includes/connect-social-account-ru.md) %}
 
 {% endlist %}
+
+{% endcut %}
 
 Next time you log in, use the connected social account to do that.
 
@@ -48,15 +72,15 @@ You can switch to the old authorization page using the **Use legacy Toloka accou
 
 {% include [remove-social-account](../_includes/remove-social-account.md) %}
 
-## Updating OAuth tokens {#update-token}
+## Updating API keys {#update-token}
 
-After you migrate to the new authorization scheme, the existing OAuth tokens will continue to work until they expire. After that, you can issue new authentication tokens.
+After you migrate to the new authorization scheme, the existing OAuth keys will continue to work until they expire. After that, you can issue new authentication keys.
 
-New tokens have no TTL and don't expire, you don't need to reissue them. One account can have up to 50 new OAuth tokens.
+New keys have no TTL and don't expire, you don't need to reissue them. One account can have up to 50 new API keys.
 
-[Toloka API](https://toloka.ai/docs/api/api-reference/), [Toloka-Kit](../../toloka-kit/index.md), and [Toloka Java SDK](https://github.com/toloka/toloka-java-sdk/) support both old and new OAuth tokens.
+[Toloka API](https://toloka.ai/docs/api/api-reference/), [Toloka-Kit](../../toloka-kit/index.md), and [Toloka Java SDK](https://github.com/toloka/toloka-java-sdk/) support both old and new API keys.
 
-Refer to the [Generating API tokens](api-token.md) section to learn how to issue OAuth tokens.
+Refer to the [Generating API keys](api-token.md) section to learn how to issue API keys.
 
 {% include [contact-support](../_includes/contact-support.md) %}
 

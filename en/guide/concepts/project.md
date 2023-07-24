@@ -122,7 +122,7 @@ If you need to change the project settings, [open edit mode](edit-project.md).
 
 ## See also {#see-also}
 
-- [Efficiency indicators: Quality of interface](./efficiency-metrics/interface-quality.md)
+- [Efficiency indicators: Quality of interface](efficiency-metrics/interface-quality.md)
 
 ## For developers {#for-developers}
 
