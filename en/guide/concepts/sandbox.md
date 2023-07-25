@@ -54,11 +54,21 @@ Follow the steps below to run a project there.
 
 To complete your tasks in the sandbox:
 
-1. Register as a Toloker (see the instructions in the [user documentation]({{ user-documentation }})).
+1. Register in the sandbox as a Toloker:
 
-1. Log in to the [sandbox]({{ sandbox }}) using the requester account.
+    1. Go to the [Toloker sandbox sign-in page](https://we.sandbox.toloka.ai/auth?role=TOLOKER).
 
-1. Open the [Tolokers](https://platform.sandbox.toloka.ai/requester/workers) page and click **Add trusted Tolokers**.
+    1. Click a social service where you have an account.
+
+    1. You will be redirected to the selected service authorization page. Follow the service steps to sign in using your social account.
+
+    1. Once you sign in to the selected service, you will be redirected back to Toloka. The system will invite you to enter your phone number and will send you a confirmation code to make sure that the phone number you entered is correct and belongs to you.
+
+    1. If all is good, you will get access to the sandbox as a Toloker.
+
+1. Now log in to the [sandbox]({{ sandbox }}) using the requester account.
+
+1. Open the [Users](https://platform.sandbox.toloka.ai/requester/workers) page and click **Add trusted Tolokers**.
 
 1. Click **Add Toloker** and enter the phone number of the created Toloker or the email address of the social account that the Toloker used when registering.
 
@@ -72,9 +82,9 @@ To complete your tasks in the sandbox:
 
     {% endcut %}
 
-1. Log in to the sandbox using the Toloker account and test your tasks. Make sure that the buttons and task response validation are set up correctly, and assess how long it takes to complete the tasks. Make sure that the [Toloker selection](filters.md) and [quality control](control.md) work.
+1. [Log in to the sandbox](https://we.sandbox.toloka.ai/auth?role=TOLOKER) using the Toloker account and test your tasks. Make sure that the buttons and task response validation are set up correctly, and assess how long it takes to complete the tasks. Make sure that the [Toloker selection](filters.md) and [quality control](control.md) work.
 
-## How to move a task to the production version of Toloka {#export}
+## How to move projects to the production version of Toloka {#export}
 
 {% note alert "Restriction" %}
 
@@ -82,7 +92,7 @@ Note that you can move only project and [pool](../../glossary.md#pool) settings.
 
 {% endnote %}
 
-To move tasks from the sandbox to the production version:
+To move projects from the sandbox to the production version:
 
 1. Link the sandbox and production version accounts:
 
