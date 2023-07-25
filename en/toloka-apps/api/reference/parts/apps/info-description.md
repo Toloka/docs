@@ -11,15 +11,17 @@ In Toloka, bespoke solutions have the apps API technology under the hood. That's
 
 ## Accessing the API
 
-Working with the apps API requires an OAuth access token. [Register](https://toloka.ai/docs/guide/access) in Toloka and get an OAuth token in the requester interface:
+Working with the apps API requires an access key. [Register](https://toloka.ai/docs/guide/access) in Toloka and get an API key in the requester interface:
 
-- In the sandbox for debugging tasks: [Profile → Integrations → Get OAuth token](https://sandbox.toloka.yandex.com/requester/profile/integration).
+- In the sandbox for debugging tasks: [Profile → Integrations → Generate token](https://sandbox.toloka.yandex.com/requester/profile/integration).
 
-- In the production version of Toloka: [Profile → Integrations → Get OAuth token](https://platform.toloka.ai/requester/profile/integration).
+- In the production version of Toloka: [Profile → Integrations → Generate token](https://platform.toloka.ai/requester/profile/integration).
 
-![Get OAuth token](https://tlkfrontprod.azureedge.net/portal-production/static/uploaded/images/5f63afe572e474f714d22bfea90da628/5f63afe572e474f714d22bfea90da628_original_jpeg.jpeg)
+![Generate key](https://tlkfrontprod.azureedge.net/portal-production/static/uploaded/images/1607657d66218b0c6c251dcd523e3057/1607657d66218b0c6c251dcd523e3057_original_jpeg.jpeg)
 
-Specify the received token in your requests as a part of the `Authorization` header, for example:
+Refer to the [Generating API keys](https://toloka.ai/docs/guide/api-token) section to learn how to issue an API key.
+
+Specify the received key in your requests as a part of the `Authorization` header, for example:
 
 ```bash
 curl -X GET 'https://toloka.dev/api/app/v0/apps' \
