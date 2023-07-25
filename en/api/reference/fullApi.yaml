@@ -5413,7 +5413,7 @@ components:
           description: |
             Checks who the object belongs to:
 
-            - `true` — The requester whose OAuth token is specified in the request.
+            - `true` — The requester whose API key is specified in the request.
             - `false` — Another account (employee or owner).
         company_id:
           type: string

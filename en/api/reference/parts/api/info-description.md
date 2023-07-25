@@ -17,21 +17,23 @@ You can:
 
 Requests are sent to the Toloka API over the HTTPS protocol. The service returns data in JSON format.
 
-For debugging tasks, Toloka provides a testing environment — the sandbox. Once you have tested the settings, you can use the project and pool in the production version of Toloka (the only thing you need to change is the request URL and the OAuth token).
+For debugging tasks, Toloka provides a testing environment — the sandbox. Once you have tested the settings, you can use the project and pool in the production version of Toloka (the only thing you need to change is the request URL and the API key).
 
 <aside class="note">If you use <a href="https://toloka.ai/pricing">bespoke solutions</a> and want to integrate your application with them or automate your requests, visit the <a href="https://toloka.ai/docs/api/apps-reference/">apps API documentation</a> to learn how you can do that.</aside>
 
 ## Accessing the API
 
-Working with the Toloka API requires an OAuth access token. [Register](https://toloka.ai/docs/guide/access) in Toloka and get an OAuth token in the requester interface:
+Working with the Toloka API requires an access key. [Register](https://toloka.ai/docs/guide/access) in Toloka and get an API key in the requester interface:
 
-- In the sandbox for debugging tasks: [Profile → Integrations → Get OAuth token](https://sandbox.toloka.yandex.com/requester/profile/integration).
+- In the sandbox for debugging tasks: [Profile → Integrations → Generate token](https://sandbox.toloka.yandex.com/requester/profile/integration).
 
-- In the production version of Toloka: [Profile → Integrations → Get OAuth token](https://platform.toloka.ai/requester/profile/integration).
+- In the production version of Toloka: [Profile → Integrations → Generate token](https://platform.toloka.ai/requester/profile/integration).
 
-![Get OAuth token](https://tlkfrontprod.azureedge.net/portal-production/static/uploaded/images/5f63afe572e474f714d22bfea90da628/5f63afe572e474f714d22bfea90da628_original_jpeg.jpeg)
+![Generate key](https://tlkfrontprod.azureedge.net/portal-production/static/uploaded/images/1607657d66218b0c6c251dcd523e3057/1607657d66218b0c6c251dcd523e3057_original_jpeg.jpeg)
 
-Specify the received token in your requests as a part of the `Authorization` header, for example:
+Refer to the [Generating API keys](https://toloka.ai/docs/guide/api-token) section to learn how to issue an API key.
+
+Specify the received key in your requests as a part of the `Authorization` header, for example:
 
 ```bash
 curl -X GET 'https://toloka.dev/api/v1/projects' \
