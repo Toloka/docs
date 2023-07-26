@@ -62,7 +62,7 @@ You can create a task interface in the [Template Builder](../../template-builder
 
 Check the tasks before launching your project:
 
-- Create tasks in the [sandbox](../../glossary.md#sandbox) and try to do them yourself.
+- Create tasks in the [sandbox](sandbox.md) and try to do them yourself.
 
 - Launch the project for a limited audience of Tolokers and analyze their feedback.
 

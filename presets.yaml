@@ -84,7 +84,7 @@ default:
   restore: https://passport.toloka.ai/passport?mode=restore
   safari-mobile: https://support.apple.com/guide/safari-developer/simulate-responsive-web-content-apple-devices-dev84bd42758/mac
   sandbox: https://platform.sandbox.toloka.ai/auth?role=REQUESTER
-  sandbox-for-performers: https://platform.sandbox.toloka.ai/tasks
+  sandbox-for-performers: https://we.sandbox.toloka.ai/tasks
   sandbox-profile: https://platform.sandbox.toloka.ai/requester/profile
   sandbox-profile-integration: https://platform.sandbox.toloka.ai/requester/profile/integration
   selection-of-images-groups: https://codepen.io/Toloka_projects/pen/KJELbO

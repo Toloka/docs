@@ -191,7 +191,7 @@ To check if the data from text comments or checkboxes is received correctly, fil
 
 {% note tip %}
 
-Use the [sandbox](../../glossary.md#sandbox) to check if files, images, audio, or videos submitted from the task suite are received correctly. To do this, complete the project creation, create the same project in the sandbox, and [complete](sandbox.md) it from a trusted user account.
+Use the [sandbox](sandbox.md) to check if files, images, audio, or videos submitted from the task suite are received correctly. To do this, complete the project creation, create the same project in the sandbox, and complete it from a trusted user account.
 
 {% endnote %}
 
